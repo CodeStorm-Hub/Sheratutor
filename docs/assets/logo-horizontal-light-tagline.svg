@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="172" viewBox="0 0 620 172">
+  <circle cx="70" cy="70" r="58" fill="#14182B"/>
+  <g transform="rotate(-6 70 70)">
+    <rect x="46.562" y="40.938" width="46.875" height="58.125" rx="3.75" fill="#FFFFFF"/>
+    <rect x="46.562" y="40.938" width="46.875" height="8.625" rx="3.75" fill="#F2F4FA"/>
+    <line x1="52.938" y1="54.062" x2="87.062" y2="54.062" stroke="#D7DEEF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="52.938" y1="60.438" x2="87.062" y2="60.438" stroke="#D7DEEF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="52.938" y1="66.812" x2="78.25" y2="66.812" stroke="#D7DEEF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="52.938" y1="73.188" x2="87.062" y2="73.188" stroke="#D7DEEF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="52.938" y1="79.562" x2="82.0" y2="79.562" stroke="#D7DEEF" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 54.812,86.312 L 55.694,89.224 L 58.735,89.162 L 56.239,90.901 L 57.237,93.775 L 54.812,91.938 L 52.388,93.775 L 53.386,90.901 L 50.89,89.162 L 53.931,89.224 Z" fill="#FFC93C"/>
+  </g>
+  <path d="M 52.188,71.875 L 65.312,85.938 L 92.5,53.125" fill="none" stroke="#FF6B57" stroke-width="6.375" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 98.125,37.75 L 99.186,40.814 L 102.25,41.875 L 99.186,42.936 L 98.125,46.0 L 97.064,42.936 L 94.0,41.875 L 97.064,40.814 Z" fill="#23D9A5"/>
+
+  <text x="152" y="90" font-family="Baloo 2" font-weight="800" font-size="60" fill="#14182B">Shera<tspan fill="#FF6B57">Tutor</tspan></text>
+  <text x="154" y="122" font-family="Baloo 2" font-weight="700" font-size="30" fill="#5A6180">for <tspan fill="#14182B" font-weight="800">Shera</tspan><tspan fill="#FF6B57" font-weight="800">Students</tspan></text>
+</svg>

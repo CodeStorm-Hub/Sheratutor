@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BoardMate AI — Pitch Deck</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14182B;
+    --ink-2:#1E2340;
+    --paper:#FFFFFF;
+    --paper-2:#F4F5FB;
+    --coral:#FF6B57;
+    --coral-deep:#E6503D;
+    --mint:#23D9A5;
+    --mint-deep:#0FB98A;
+    --sun:#FFC93C;
+    --peri:#7C8CFF;
+    --ink-soft:#5A6180;
+    --line:#E7E9F3;
+    --line-dark:rgba(255,255,255,0.12);
+    --disp:'Baloo 2', 'Poppins', sans-serif;
+    --body:'Inter', sans-serif;
+    --mono:'Space Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--body);
+    background:var(--paper);
+    color:var(--ink);
+    overflow-x:hidden;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; scroll-behavior:auto !important;}
+  }
+
+  /* ---------- Scroll deck ---------- */
+  .deck{
+    height:100vh;
+    overflow-y:scroll;
+    scroll-snap-type:y mandatory;
+  }
+  section.slide{
+    position:relative;
+    min-height:100vh;
+    scroll-snap-align:start;
+    scroll-snap-stop:always;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:6vh 7vw;
+    overflow:hidden;
+  }
+  .dark{background:var(--ink); color:var(--paper);}
+  .light{background:var(--paper); color:var(--ink);}
+  .tint{background:var(--paper-2); color:var(--ink);}
+
+  .eyebrow{
+    font-family:var(--mono);
+    font-size:13px;
+    letter-spacing:0.14em;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-bottom:14px;
+    opacity:0;
+    transform:translateY(14px);
+    transition:opacity 1.15s cubic-bezier(.16,1,.3,1), transform 1.15s cubic-bezier(.16,1,.3,1);
+  }
+  .dark .eyebrow{color:var(--mint);}
+  .light .eyebrow, .tint .eyebrow{color:var(--coral-deep);}
+
+  h1.headline{
+    font-family:var(--disp);
+    font-weight:800;
+    font-size:clamp(32px, 4.6vw, 58px);
+    line-height:1.06;
+    letter-spacing:-0.01em;
+    max-width:14ch;
+  }
+  h1.headline .word{
+    display:inline-block;
+    opacity:0;
+    transform:translateY(28px) rotate(1.5deg);
+    transition:opacity 1.3s cubic-bezier(.16,1,.3,1), transform 1.3s cubic-bezier(.16,1,.3,1);
+  }
+  .sub{
+    font-size:clamp(14px,1.35vw,18px);
+    color:var(--ink-soft);
+    max-width:58ch;
+    margin-top:18px;
+    line-height:1.55;
+    opacity:0;
+    transform:translateY(16px);
+    transition:opacity 1.3s cubic-bezier(.16,1,.3,1) .35s, transform 1.3s cubic-bezier(.16,1,.3,1) .35s;
+  }
+  .dark .sub{color:#B9BEDA;}
+
+  .slide.in-view .eyebrow{ opacity:1; transform:translateY(0); }
+  .slide.in-view h1.headline .word{ opacity:1; transform:translateY(0) rotate(0deg); }
+  .slide.in-view .sub{ opacity:1; transform:translateY(0); }
+
+  /* generic staggered reveal for children with .rise */
+  .rise{
+    opacity:0; transform:translateY(28px) scale(0.98);
+    transition:opacity 1.2s cubic-bezier(.16,1,.3,1), transform 1.2s cubic-bezier(.16,1,.3,1);
+  }
+  .slide.in-view .rise{opacity:1; transform:translateY(0) scale(1);}
+
+  footer.brand{
+    position:absolute; left:7vw; bottom:5vh;
+    font-family:var(--mono); font-size:11px; letter-spacing:0.12em;
+    color:var(--ink-soft); text-transform:uppercase;
+  }
+  .dark footer.brand{color:#7A81A5;}
+  .pagenum{
+    position:absolute; right:7vw; bottom:5vh;
+    font-family:var(--mono); font-size:11px; color:var(--ink-soft);
+  }
+  .dark .pagenum{color:#7A81A5;}
+
+  /* ---------- Nav dots ---------- */
+  .navdots{
+    position:fixed; right:18px; top:50%; transform:translateY(-50%);
+    display:flex; flex-direction:column; gap:11px; z-index:50;
+    background:rgba(20,24,43,0.55); backdrop-filter:blur(6px);
+    padding:14px 9px; border-radius:20px;
+  }
+  .navdots button{
+    width:8px; height:8px; border-radius:50%; border:2px solid rgba(255,255,255,0.55);
+    background:transparent; cursor:pointer; padding:0;
+    transition:transform .5s cubic-bezier(.34,1.56,.64,1), background .4s ease, border-color .4s ease;
+  }
+  .navdots button:hover{ border-color:var(--sun); transform:scale(1.25); }
+  .navdots button.active{ background:var(--coral); border-color:var(--coral); transform:scale(1.4); }
+
+  .topbar{
+    position:fixed; top:0; left:0; width:100%; height:3px; background:transparent; z-index:60;
+  }
+  .topbar-fill{height:100%; width:0%; background:linear-gradient(90deg,var(--coral),var(--sun),var(--mint)); transition:width .1s linear;}
+
+  .logo-fixed{
+    position:fixed; top:20px; left:24px; z-index:50;
+    font-family:var(--disp); font-weight:800; font-size:15px; letter-spacing:0.01em;
+    color:var(--ink);
+    background:rgba(255,255,255,0.85); backdrop-filter:blur(6px);
+    padding:9px 16px; border-radius:100px;
+    box-shadow:0 4px 14px rgba(20,24,43,0.08);
+  }
+  .logo-fixed span{color:var(--coral);}
+
+  /* ---------- Stamp motif ---------- */
+  .stamp{
+    position:relative; display:inline-flex; align-items:center; justify-content:center;
+    width:96px; height:96px; border-radius:50%;
+    border:3px solid currentColor;
+    font-family:var(--disp); font-weight:800; font-size:22px;
+    transform:rotate(-9deg) scale(0.5); opacity:0;
+    transition:transform .7s cubic-bezier(.2,1.8,.35,1), opacity .4s ease;
+  }
+  .stamp::before, .stamp::after{
+    content:""; position:absolute; inset:-6px; border-radius:50%;
+    border:1px dashed currentColor; opacity:0.5;
+  }
+  .stamp::after{ inset:6px; border-style:solid; border-width:1px; opacity:0.35;}
+  .slide.in-view .stamp{
+    transform:rotate(-9deg) scale(1); opacity:1;
+    animation:stamp-pulse 4.2s ease-in-out 1.3s infinite;
+  }
+  @keyframes stamp-pulse{
+    0%,100%{ transform:rotate(-9deg) scale(1); }
+    50%{ transform:rotate(-7deg) scale(1.05); }
+  }
+
+  /* ---------- floating doodles ---------- */
+  .doodle{
+    position:absolute; opacity:0.16; pointer-events:none;
+    animation:float 9s ease-in-out infinite;
+  }
+  @keyframes float{
+    0%,100%{ transform:translateY(0) rotate(0deg); }
+    50%{ transform:translateY(-22px) rotate(6deg); }
+  }
+  .blob{
+    position:absolute; border-radius:50%; filter:blur(2px); opacity:0.5; pointer-events:none;
+    animation:drift 14s ease-in-out infinite;
+  }
+  @keyframes drift{
+    0%,100%{ transform:translate(0,0) scale(1); }
+    50%{ transform:translate(20px,-30px) scale(1.08); }
+  }
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    font-family:var(--body); font-weight:700; font-size:15px;
+    padding:14px 28px; border-radius:100px; border:none; cursor:pointer;
+    display:inline-flex; align-items:center; gap:10px;
+    background:var(--coral); color:white;
+    transition:transform .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);
+    box-shadow:0 8px 24px rgba(255,107,87,0.35);
+  }
+  .btn:hover{ transform:translateY(-3px) scale(1.035); box-shadow:0 14px 32px rgba(255,107,87,0.45); }
+  .btn:active{ transform:translateY(-1px) scale(0.99); }
+
+  /* ---------- Cards ---------- */
+  .card{
+    background:var(--paper); border-radius:22px; padding:26px;
+    box-shadow:0 10px 30px rgba(20,24,43,0.06);
+    border:1px solid var(--line);
+    transition:transform .6s cubic-bezier(.16,1,.3,1), box-shadow .6s cubic-bezier(.16,1,.3,1), border-color .6s ease;
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 20px 46px rgba(20,24,43,0.14);
+    border-color:rgba(255,107,87,0.25);
+  }
+  .dark .card{ background:var(--ink-2); border-color:var(--line-dark); box-shadow:none; }
+  .dark .card:hover{ box-shadow:0 20px 46px rgba(0,0,0,0.35); border-color:rgba(35,217,165,0.3); }
+
+  .icon-chip{
+    width:56px; height:56px; border-radius:16px;
+    display:flex; align-items:center; justify-content:center;
+    font-size:26px; margin-bottom:14px;
+    transition:transform .45s cubic-bezier(.34,1.56,.64,1);
+  }
+  .card:hover .icon-chip{ transform:rotate(-8deg) scale(1.08); }
+
+  .grid{ display:grid; gap:22px; }
+  .grid-3{ grid-template-columns:repeat(3,1fr); }
+  .grid-4{ grid-template-columns:repeat(4,1fr); }
+  .grid-2{ grid-template-columns:repeat(2,1fr); }
+  @media (max-width:900px){
+    .grid-3,.grid-4,.grid-2{ grid-template-columns:1fr; }
+  }
+
+  .stat-num{
+    font-family:var(--mono); font-weight:700; font-size:clamp(30px,3.6vw,46px);
+    display:block;
+  }
+  .stat-label{ font-size:13px; color:var(--ink-soft); margin-top:6px; line-height:1.4;}
+  .dark .stat-label{ color:#B9BEDA; }
+
+  /* Pipeline arrows */
+  .flow-row{ display:flex; align-items:stretch; gap:0; }
+  .flow-arrow{ display:flex; align-items:center; justify-content:center; width:44px; color:var(--mint); font-size:22px; }
+  @media (max-width:900px){ .flow-row{ flex-direction:column; } .flow-arrow{ width:auto; height:30px; transform:rotate(90deg);} }
+
+  /* Roadmap track */
+  .track{
+    position:relative; height:6px; background:var(--line); border-radius:6px; margin:50px 0 10px;
+  }
+  .track-fill{ position:absolute; top:0; left:0; height:100%; width:0%; background:linear-gradient(90deg,var(--coral),var(--sun),var(--mint)); border-radius:6px; transition:width 2.2s cubic-bezier(.16,1,.3,1); }
+  .track-node{
+    position:absolute; top:50%; transform:translate(-50%,-50%);
+    width:20px; height:20px; border-radius:50%; background:var(--paper); border:3px solid var(--ink-soft);
+  }
+  .track-node.on{ border-color:var(--coral); }
+
+  /* toggle-flip cards for business model */
+  .flip-card{ perspective:1200px; height:340px; }
+  .flip-inner{
+    position:relative; width:100%; height:100%; transition:transform .3s ease; transform-style:preserve-3d;
+  }
+
+  a.link-pill{
+    display:inline-flex; align-items:center; gap:8px; text-decoration:none;
+    font-family:var(--mono); font-size:13px; font-weight:700; color:var(--ink);
+    background:var(--paper-2); border:1px solid var(--line); border-radius:100px; padding:10px 18px;
+  }
+
+  ::selection{ background:var(--sun); color:var(--ink); }
+
+  /* scrollbar hint */
+  .scrollhint{
+    position:absolute; bottom:6vh; left:50%; transform:translateX(-50%);
+    display:flex; flex-direction:column; align-items:center; gap:6px;
+    font-family:var(--mono); font-size:11px; color:var(--ink-soft); opacity:0.7;
+  }
+  .dark .scrollhint{ color:#7A81A5; }
+  .scrollhint .chev{ animation:bob 1.6s ease-in-out infinite; }
+  @keyframes bob{ 0%,100%{transform:translateY(0);} 50%{transform:translateY(6px);} }
+
+  ul.bullets{ list-style:none; }
+  ul.bullets li{ position:relative; padding-left:22px; margin-bottom:12px; line-height:1.5; font-size:15px; }
+  ul.bullets li::before{ content:"\2726"; position:absolute; left:0; color:var(--coral); font-size:12px; top:4px; }
+  .dark ul.bullets li::before{ color:var(--sun); }
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="topbar-fill" id="topbarFill"></div></div>
+<div class="logo-fixed" id="logoFixed">Board<span>Mate</span> AI</div>
+<div class="navdots" id="navdots"></div>
+
+<div class="deck" id="deck">
+
+  <!-- 1. HERO -->
+  <section class="slide dark" id="s1" data-title="Hero">
+    <div class="blob" style="width:520px;height:520px; background:radial-gradient(circle at 30% 30%, #2A3163, transparent 70%); top:-160px; right:-140px;"></div>
+    <div class="blob" style="width:360px;height:360px; background:radial-gradient(circle at 30% 30%, #24304F, transparent 70%); bottom:-120px; left:-80px;"></div>
+    <div class="doodle" style="top:14%; left:8%; font-size:34px;">✏️</div>
+    <div class="doodle" style="top:70%; left:14%; font-size:30px; animation-delay:2s;">📐</div>
+    <div class="doodle" style="top:22%; right:12%; font-size:32px; animation-delay:1s;">🧮</div>
+    <div class="doodle" style="top:66%; right:18%; font-size:28px; animation-delay:3s;">📘</div>
+
+    <div class="eyebrow">Bangladesh's First AI Board Examiner</div>
+    <h1 class="headline" style="max-width:16ch;">Study smarter.<br>Show up brilliant.</h1>
+    <p class="sub">BoardMate is the Super AI Teacher for every SSC &amp; HSC student — mock exams, vision-graded feedback, and a study plan that adapts every day.</p>
+
+    <div class="rise" style="margin-top:34px; display:flex; align-items:center; gap:24px;">
+      <div class="stamp" style="color:var(--mint);">A+</div>
+      <div style="font-family:var(--mono); font-size:12px; color:#9AA1C7; max-width:22ch;">Graded like a real board examiner — in seconds, not weeks.</div>
+    </div>
+
+    <div class="scrollhint"><span>SCROLL TO EXPLORE</span><span class="chev">⌄</span></div>
+    <div class="pagenum">01 / 12</div>
+  </section>
+
+  <!-- 2. PROBLEM -->
+  <section class="slide light" id="s2" data-title="Problem">
+    <div class="eyebrow">The Problem</div>
+    <h1 class="headline">Board exams decide futures. Feedback doesn't scale.</h1>
+    <p class="sub">Millions of students, a handful of examiners, and no time to explain <em>why</em> an answer lost marks.</p>
+
+    <div class="grid grid-3 rise" id="problemStats" style="margin-top:44px;"></div>
+
+    <ul class="bullets rise" style="margin-top:36px; max-width:60ch;">
+      <li>Coaching centers grade weekly mock tests by hand — slow, inconsistent, expensive at scale.</li>
+      <li>Students get a mark, not a reason — "wrong answer," not which step broke down.</li>
+      <li>Personalized, board-standard tutoring is out of reach for most families.</li>
+    </ul>
+    <footer class="brand">BoardMate AI</footer>
+    <div class="pagenum">02 / 12</div>
+  </section>
+
+  <!-- 3. SOLUTION -->
+  <section class="slide light" id="s3" data-title="Solution">
+    <div class="eyebrow">The Solution</div>
+    <h1 class="headline">A super AI teacher, on demand</h1>
+    <p class="sub">Everything the best-resourced student gets from a private tutor — built to work for every student.</p>
+
+    <div class="grid grid-3 rise" id="featureGrid" style="margin-top:38px;"></div>
+    <div class="pagenum">03 / 12</div>
+  </section>
+
+  <!-- 4. VISION PIPELINE -->
+  <section class="slide dark" id="s4" data-title="Pipeline">
+    <div class="eyebrow">The Differentiator</div>
+    <h1 class="headline">From photo to feedback in seconds</h1>
+    <p class="sub">A pipeline built to read messy Bangla &amp; English handwriting — and grade it the way a real examiner would.</p>
+
+    <div class="flow-row rise" id="pipelineFlow" style="margin-top:44px;"></div>
+    <footer class="brand">BoardMate AI</footer>
+    <div class="pagenum">04 / 12</div>
+  </section>
+
+  <!-- 5. PRODUCT TOUR -->
+  <section class="slide light" id="s5" data-title="Product">
+    <div class="eyebrow">Product</div>
+    <h1 class="headline">Built for daily momentum, not one-off cramming</h1>
+
+    <div class="grid grid-2 rise" style="margin-top:40px; align-items:stretch;">
+      <div>
+        <h3 style="font-family:var(--disp); font-size:22px; margin-bottom:16px;">A calm, single workspace</h3>
+        <ul class="bullets">
+          <li>Today's momentum score, updated after every session</li>
+          <li>Board-prediction estimate based on real performance</li>
+          <li>Weekly understanding heatmap across chapters</li>
+          <li>AI-surfaced "quick win" patterns — 3 fixes worth doing today</li>
+        </ul>
+      </div>
+      <div class="card" style="background:var(--ink); border:none;">
+        <div style="color:#fff; font-family:var(--disp); font-weight:700; font-size:18px;">Good evening, Afsana</div>
+        <div style="display:flex; gap:14px; margin-top:18px;">
+          <div style="flex:1;">
+            <div style="font-family:var(--mono); font-size:11px; color:#9AA1C7;">BOARD PREDICTION</div>
+            <div style="font-family:var(--disp); font-weight:800; font-size:34px; color:var(--mint);">A+</div>
+            <div style="font-size:11px; color:#9AA1C7;">Top 8% this week</div>
+          </div>
+          <div style="flex:1; background:var(--ink-2); border-radius:14px; padding:12px;">
+            <div style="font-family:var(--mono); font-size:10px; color:#9AA1C7;">TODAY'S MOMENTUM</div>
+            <div class="counter" data-target="78" style="font-family:var(--mono); font-weight:700; font-size:26px; color:#fff;">0</div>
+            <div style="font-size:10px; color:var(--mint);">+12% from yesterday</div>
+          </div>
+        </div>
+        <div style="margin-top:14px; background:var(--ink-2); border-radius:12px; padding:12px 14px;">
+          <div style="font-size:12px; font-weight:700; color:#fff;">Physics: Newton's laws</div>
+          <div style="font-size:10.5px; color:#9AA1C7; margin-top:2px;">25 min · Chapter 4</div>
+        </div>
+        <div style="margin-top:10px; background:var(--mint-deep); border-radius:12px; padding:12px 14px;">
+          <div style="font-size:11px; color:#DFFCF3;">AI found a pattern</div>
+          <div style="font-size:13.5px; font-weight:700; color:#fff;">3 quick wins in Physics</div>
+        </div>
+        <div style="margin-top:12px; font-size:9.5px; color:#7A81A5; font-style:italic;">Illustrative product experience — live demo at boardmate-ai.vercel.app</div>
+      </div>
+    </div>
+    <div class="pagenum">05 / 12</div>
+  </section>
+
+  <!-- 6. TECH -->
+  <section class="slide tint" id="s6" data-title="Technology">
+    <div class="eyebrow">Technology</div>
+    <h1 class="headline">A lean stack, built to ship web-first and scale to mobile</h1>
+
+    <div class="grid grid-4 rise" id="techGrid" style="margin-top:40px;"></div>
+    <p class="rise" style="margin-top:30px; font-size:13px; color:var(--ink-soft); max-width:80ch; font-style:italic;">Why it matters: RAG grounding in official NCTB textbooks keeps grading and tutoring accurate — preventing the hallucination that would break trust with students and coaching centers.</p>
+    <div class="pagenum">06 / 12</div>
+  </section>
+
+  <!-- 7. BUSINESS MODEL -->
+  <section class="slide light" id="s7" data-title="Business Model">
+    <div class="eyebrow">Business Model</div>
+    <h1 class="headline">A dual engine: B2B revenue, B2C volume</h1>
+
+    <div class="grid grid-2 rise" style="margin-top:40px;">
+      <div class="card" style="background:var(--ink); border:none; color:#fff;">
+        <div class="icon-chip" style="background:var(--mint); color:var(--ink);">🏢</div>
+        <div style="font-family:var(--disp); font-weight:700; font-size:20px;">B2B · Coaching centers</div>
+        <div style="font-family:var(--mono); font-size:10.5px; color:var(--mint); letter-spacing:0.1em; margin:4px 0 14px;">PRIMARY REVENUE DRIVER</div>
+        <ul class="bullets" style="color:#D7DAF0;">
+          <li>Targeted outbound to coaching center owners &amp; directors</li>
+          <li>Positioned as a white-label teaching assistant for mock tests</li>
+          <li>Cuts manual grading labor, gives parents richer analytics</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="icon-chip" style="background:var(--sun); color:var(--ink);">🎓</div>
+        <div style="font-family:var(--disp); font-weight:700; font-size:20px;">B2C · Freemium app</div>
+        <div style="font-family:var(--mono); font-size:10.5px; color:var(--coral-deep); letter-spacing:0.1em; margin:4px 0 14px;">VOLUME DRIVER</div>
+        <ul class="bullets">
+          <li>Free tier: 3 mock tests &amp; basic assessments / month</li>
+          <li>Premium: unlimited grading, adaptive planner, parental analytics</li>
+          <li>Direct-to-student acquisition builds the top of funnel</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pagenum">07 / 12</div>
+  </section>
+
+  <!-- 8. MARKET -->
+  <section class="slide dark" id="s8" data-title="Market">
+    <div class="eyebrow">Market Opportunity</div>
+    <h1 class="headline">A national exam system, sat by millions every year</h1>
+
+    <div class="grid grid-4 rise" id="marketGrid" style="margin-top:40px;"></div>
+    <p class="rise" style="margin-top:26px; max-width:80ch; color:#B9BEDA; font-style:italic; font-size:13.5px;">Beyond the annual cohort: every student studies 2–3 years before their boards — and every coaching center serving them needs a faster way to grade.</p>
+    <p class="rise" style="margin-top:20px; font-family:var(--mono); font-size:10px; color:#7A81A5;">Sources: 2025 SSC/HSC board results reporting (Inter-Education Board Coordination Committee).</p>
+    <footer class="brand">BoardMate AI</footer>
+    <div class="pagenum">08 / 12</div>
+  </section>
+
+  <!-- 9. ROADMAP -->
+  <section class="slide light" id="s9" data-title="Roadmap">
+    <div class="eyebrow">Roadmap</div>
+    <h1 class="headline">From investor demo to mobile launch in 20 weeks</h1>
+
+    <div class="track rise" id="roadmapTrack"></div>
+    <div class="grid grid-4 rise" id="roadmapGrid" style="margin-top:26px;"></div>
+    <div class="pagenum">09 / 12</div>
+  </section>
+
+  <!-- 10. WHY NOW -->
+  <section class="slide tint" id="s10" data-title="Why Now">
+    <div class="eyebrow">Why Now, Why Us</div>
+    <h1 class="headline">The moat is curriculum grounding and distribution</h1>
+
+    <div id="moatRows" style="margin-top:34px; display:flex; flex-direction:column; gap:20px;"></div>
+    <div class="pagenum">10 / 12</div>
+  </section>
+
+  <!-- 11. THE ASK -->
+  <section class="slide dark" id="s11" data-title="The Ask">
+    <div class="eyebrow">The Ask</div>
+    <h1 class="headline">Raising a seed round to fund Phases 1–3</h1>
+    <p class="sub">Capital takes BoardMate from investor demo through a live B2B pilot with real coaching centers and real handwriting.</p>
+
+    <div class="grid grid-3 rise" id="askGrid" style="margin-top:36px;"></div>
+    <p class="rise" style="margin-top:22px; font-size:12.5px; color:#7A81A5; font-style:italic;">Round size and terms to be confirmed with lead investor.</p>
+    <div class="pagenum">11 / 12</div>
+  </section>
+
+  <!-- 12. CLOSING -->
+  <section class="slide light" id="s12" data-title="Closing">
+    <canvas id="confetti" style="position:absolute; inset:0; pointer-events:none;"></canvas>
+    <div class="rise" style="display:flex; align-items:center; gap:30px;">
+      <div class="stamp" style="color:var(--coral);">✓</div>
+      <div>
+        <h1 class="headline" style="opacity:1; transform:none; transition:none; max-width:16ch;">Let's give every student a board examiner in their pocket.</h1>
+      </div>
+    </div>
+    <div class="rise" style="margin-top:34px; display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+      <a class="btn" href="https://boardmate-ai.vercel.app/" target="_blank" rel="noopener">See the live demo →</a>
+      <span class="link-pill">boardmate-ai.vercel.app</span>
+    </div>
+    <footer class="brand">BoardMate AI · Built for Bangladesh's next generation</footer>
+    <div class="pagenum">12 / 12</div>
+  </section>
+
+</div>
+
+<script>
+// ---------------- DATA ----------------
+const problemStats = [
+  {n:"3.2M+", l:"students sit SSC &amp; HSC board exams every year", c:"var(--coral-deep)"},
+  {n:"1:60+", l:"typical student-to-teacher ratio at exam time", c:"var(--peri)"},
+  {n:"68%", l:"SSC pass rate in 2025 — most students lack the feedback to close the gap", c:"var(--mint-deep)"}
+];
+
+const HEX = { coral:"#FF6B57", coralDeep:"#E6503D", mint:"#23D9A5", mintDeep:"#0FB98A", sun:"#FFC93C", peri:"#7C8CFF" };
+
+const features = [
+  {icon:"📝", t:"Custom mock exams", d:"MCQs &amp; Creative Questions by chapter, difficulty, or past board paper.", bg:HEX.coral},
+  {icon:"📸", t:"Vision-powered grading", d:"Photos of handwritten answers, read and marked like a board examiner.", bg:HEX.peri},
+  {icon:"📊", t:"Granular gap analysis", d:"Pinpoints the exact step or concept that cost the mark.", bg:HEX.mintDeep},
+  {icon:"💬", t:"ELI5 tutor chatbot", d:"Explains hard topics in Bangla &amp; English, in plain language.", bg:HEX.sun},
+  {icon:"🗓️", t:"Adaptive study planner", d:"Daily plan that reallocates time to weak chapters automatically.", bg:HEX.coralDeep},
+  {icon:"🛡️", t:"Curriculum-grounded RAG", d:"Every answer is grounded in NCTB textbooks — no hallucination.", bg:HEX.mint}
+];
+
+const pipeline = [
+  {icon:"📷", t:"Capture", d:"Student photographs a handwritten answer sheet"},
+  {icon:"🧠", t:"Read", d:"Vision model transcribes Bangla/English text, equations &amp; diagrams"},
+  {icon:"📚", t:"Ground", d:"Cross-checked vs. NCTB curriculum in a Supabase vector database"},
+  {icon:"✅", t:"Grade &amp; explain", d:"A structured score plus the exact step that lost marks"}
+];
+
+const techLayers = [
+  {icon:"🖥️", t:"Frontend", d:"Next.js + React + Shadcn/Tailwind (web); Flutter &amp; Dart (mobile, Phase 2)"},
+  {icon:"⚡", t:"AI orchestration", d:"n8n: image → OCR/vision → vector DB → LLM → structured grade"},
+  {icon:"🗄️", t:"Data &amp; backend", d:"Supabase for auth, relational data &amp; pgvector curriculum embeddings"},
+  {icon:"🧩", t:"Microservices", d:"Node.js &amp; Python for extraction and vector-chunking logic"}
+];
+
+const marketStats = [
+  {n:"~1.93M", l:"students appeared for SSC exams in 2025"},
+  {n:"~1.25M", l:"students appeared for HSC exams in 2025"},
+  {n:"11", l:"education boards nationwide, one shared NCTB curriculum"},
+  {n:"29,000+", l:"schools &amp; colleges feeding the SSC/HSC pipeline"}
+];
+
+const roadmap = [
+  {w:"WEEKS 1–3", t:"Demo &amp; seed funding", d:"Finalize the web demo, build the investor pitch, secure capital &amp; cloud credits"},
+  {w:"WEEKS 4–8", t:"RAG pipeline &amp; MVP", d:"Digitize Physics, Chemistry, Math, English; wire n8n to the vision models"},
+  {w:"WEEKS 9–12", t:"Web beta &amp; B2B pilot", d:"Launch the web app; onboard 2–3 coaching centers; calibrate real grading"},
+  {w:"WEEKS 13–20", t:"Mobile &amp; scaling", d:"Ship the Flutter app; launch B2C premium; expand into Humanities &amp; Commerce"}
+];
+
+const moat = [
+  {icon:"🛡️", t:"Grounded, not generic", d:"Grading rubrics are pinned to NCTB textbooks and board papers — not open-ended LLM guesswork."},
+  {icon:"🤝", t:"B2B distribution first", d:"Coaching centers already own the grading workload and parents' trust — faster than winning students one by one."},
+  {icon:"🎓", t:"Vision-first for handwriting", d:"A purpose-built pipeline for Bangla &amp; English handwritten answers — the bottleneck generic ed-tech skips."},
+  {icon:"🔍", t:"Freemium funnel underneath", d:"The B2C app captures students outside any coaching center and upsells once the habit sticks."}
+];
+
+const askUses = [
+  {icon:"📚", t:"Curriculum &amp; RAG buildout", d:"Digitizing &amp; embedding NCTB textbooks and past board papers"},
+  {icon:"⚡", t:"Cloud, API &amp; infrastructure", d:"Vision/OCR usage, Supabase hosting, n8n workflow infra through beta"},
+  {icon:"🤝", t:"B2B pilot &amp; sales", d:"Outbound to coaching centers, onboarding, first white-label pilots"}
+];
+
+// ---------------- RENDER HELPERS ----------------
+function statCard(n,l,color,i){
+  return `<div class="card rise" style="transition-delay:${(i||0)*160}ms"><span class="stat-num" style="color:${color||'var(--coral)'}">${n}</span><div class="stat-label">${l}</div></div>`;
+}
+document.getElementById('problemStats').innerHTML = problemStats.map((s,i)=>statCard(s.n,s.l,s.c,i)).join('');
+document.getElementById('marketGrid').innerHTML = marketStats.map((s,i)=>statCard(s.n,s.l,'var(--mint)',i)).join('');
+
+document.getElementById('featureGrid').innerHTML = features.map((f,i)=>`
+  <div class="card rise" style="transition-delay:${i*160}ms">
+    <div class="icon-chip" style="background:${f.bg}1A; color:${f.bg};">${f.icon}</div>
+    <div style="font-family:var(--disp); font-weight:700; font-size:17px; margin-bottom:8px;">${f.t}</div>
+    <div style="font-size:13.5px; color:var(--ink-soft); line-height:1.5;">${f.d}</div>
+  </div>
+`).join('');
+
+document.getElementById('pipelineFlow').innerHTML = pipeline.map((p,i)=>`
+  ${i>0? `<div class="flow-arrow rise" style="transition-delay:${i*260-70}ms">→</div>`:''}
+  <div class="card rise" style="flex:1; background:var(--ink-2); border:none; text-align:center; transition-delay:${i*260}ms">
+    <div style="font-family:var(--mono); font-size:11px; color:#7A81A5; text-align:left;">0${i+1}</div>
+    <div style="font-size:34px; margin:6px 0;">${p.icon}</div>
+    <div style="font-family:var(--disp); font-weight:700; font-size:16px; color:#fff;">${p.t}</div>
+    <div style="font-size:12px; color:#B9BEDA; margin-top:8px; line-height:1.5;">${p.d}</div>
+  </div>
+`).join('');
+
+document.getElementById('techGrid').innerHTML = techLayers.map((l,i)=>`
+  <div class="card rise" style="transition-delay:${i*160}ms">
+    <div class="icon-chip" style="background:var(--ink); color:#fff;">${l.icon}</div>
+    <div style="font-family:var(--disp); font-weight:700; font-size:16px; margin-bottom:8px;">${l.t}</div>
+    <div style="font-size:12.5px; color:var(--ink-soft); line-height:1.5;">${l.d}</div>
+  </div>
+`).join('');
+
+document.getElementById('roadmapGrid').innerHTML = roadmap.map((r,i)=>`
+  <div class="card rise" style="transition-delay:${i*180}ms; ${i%2===0? 'background:var(--ink); color:#fff; border:none;':''}">
+    <div style="font-family:var(--mono); font-size:10.5px; letter-spacing:0.08em; color:${i%2===0?'var(--mint)':'var(--coral-deep)'};">${r.w}</div>
+    <div style="font-family:var(--disp); font-weight:700; font-size:17px; margin:8px 0 12px; ${i%2===0?'color:#fff;':''}">${r.t}</div>
+    <div style="font-size:12.5px; ${i%2===0?'color:#B9BEDA;':'color:var(--ink-soft);'} line-height:1.5;">${r.d}</div>
+  </div>
+`).join('');
+document.getElementById('roadmapTrack').innerHTML = `<div class="track-fill" id="trackFill"></div>` +
+  roadmap.map((r,i)=>`<div class="track-node ${i===0?'on':''}" style="left:${(i/(roadmap.length-1))*100}%"></div>`).join('');
+
+document.getElementById('moatRows').innerHTML = moat.map((m,i)=>`
+  <div class="rise" style="transition-delay:${i*190}ms; display:flex; gap:20px; align-items:flex-start; background:var(--paper); border:1px solid var(--line); border-radius:18px; padding:20px 24px; transition-property:opacity,transform,box-shadow; ${'' }">
+    <div class="icon-chip" style="background:${i%2===0? HEX.coral+'1A' : HEX.mint+'1A'}; color:${i%2===0? HEX.coralDeep : HEX.mintDeep}; flex-shrink:0; margin-bottom:0;">${m.icon}</div>
+    <div>
+      <div style="font-family:var(--disp); font-weight:700; font-size:16.5px; margin-bottom:6px;">${m.t}</div>
+      <div style="font-size:13.5px; color:var(--ink-soft); line-height:1.55;">${m.d}</div>
+    </div>
+  </div>
+`).join('');
+
+document.getElementById('askGrid').innerHTML = askUses.map((a,i)=>`
+  <div class="card rise" style="transition-delay:${i*180}ms; background:var(--ink-2); border:none;">
+    <div class="icon-chip" style="background:var(--mint); color:var(--ink);">${a.icon}</div>
+    <div style="font-family:var(--disp); font-weight:700; font-size:16px; color:#fff; margin-bottom:8px;">${a.t}</div>
+    <div style="font-size:12.5px; color:#B9BEDA; line-height:1.5;">${a.d}</div>
+  </div>
+`).join('');
+
+// ---------------- HEADLINE WORD-SPLIT ----------------
+document.querySelectorAll('h1.headline').forEach(h=>{
+  const html = h.innerHTML;
+  const lines = html.split(/<br\s*\/?>/i);
+  let wi = 0;
+  h.innerHTML = lines.map(line=>{
+    const words = line.trim().split(/\s+/).filter(Boolean);
+    return words.map(w=>{
+      const span = `<span class="word" style="transition-delay:${wi*80}ms">${w}</span>`;
+      wi++;
+      return span;
+    }).join(' ');
+  }).join('<br>');
+});
+
+// ---------------- NAV DOTS ----------------
+const slides = Array.from(document.querySelectorAll('section.slide'));
+const navdots = document.getElementById('navdots');
+slides.forEach((s,i)=>{
+  const b = document.createElement('button');
+  b.title = s.dataset.title;
+  b.addEventListener('click', ()=> s.scrollIntoView({behavior:'smooth'}));
+  navdots.appendChild(b);
+});
+const dotEls = Array.from(navdots.children);
+
+// ---------------- IN-VIEW OBSERVER ----------------
+const deck = document.getElementById('deck');
+const counters = new Set();
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    const idx = slides.indexOf(entry.target);
+    if(entry.isIntersecting && entry.intersectionRatio > 0.55){
+      entry.target.classList.add('in-view');
+      dotEls.forEach((d,i)=> d.classList.toggle('active', i===idx));
+      if(entry.target.id === 's9'){
+        document.getElementById('trackFill').style.width = '100%';
+      }
+      entry.target.querySelectorAll('.counter').forEach(el=>{
+        if(!counters.has(el)){
+          counters.add(el);
+          animateCounter(el);
+        }
+      });
+      if(entry.target.id === 's12'){ burstConfetti(); }
+    } else {
+      entry.target.classList.remove('in-view');
+    }
+  });
+}, {root:deck, threshold:[0,0.55,1]});
+slides.forEach(s=> io.observe(s));
+
+function animateCounter(el){
+  const target = parseInt(el.dataset.target,10);
+  const dur = 1700; const start = performance.now();
+  function easeOutExpo(t){ return t===1 ? 1 : 1 - Math.pow(2,-10*t); }
+  function step(t){
+    const p = Math.min(1,(t-start)/dur);
+    const eased = easeOutExpo(p);
+    el.textContent = Math.round(target*eased) + (el.dataset.suffix||'');
+    if(p<1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// ---------------- PARALLAX (lerp-smoothed, independent of ambient float keyframes) ----------------
+const parallaxEls = Array.from(document.querySelectorAll('.blob, .doodle')).map(el=>{
+  const wrap = document.createElement('div');
+  wrap.style.position = 'absolute';
+  wrap.style.inset = '0';
+  wrap.style.pointerEvents = 'none';
+  wrap.style.willChange = 'transform';
+  el.parentNode.insertBefore(wrap, el);
+  wrap.appendChild(el);
+  return { wrap, speed: 0.05 + Math.random()*0.09, current: 0, target: 0 };
+});
+function parallaxLoop(){
+  const y = deck.scrollTop;
+  parallaxEls.forEach(p=>{
+    p.target = y * p.speed * 0.12;
+    p.current += (p.target - p.current) * 0.045; // gentle lerp for buttery motion
+    p.wrap.style.transform = `translateY(${p.current}px)`;
+  });
+  requestAnimationFrame(parallaxLoop);
+}
+requestAnimationFrame(parallaxLoop);
+
+// ---------------- TOP PROGRESS BAR ----------------
+deck.addEventListener('scroll', ()=>{
+  const p = deck.scrollTop / (deck.scrollHeight - deck.clientHeight);
+  document.getElementById('topbarFill').style.width = (p*100)+'%';
+}, { passive:true });
+
+// ---------------- KEYBOARD NAV ----------------
+window.addEventListener('keydown', (e)=>{
+  const cur = slides.findIndex(s=>s.classList.contains('in-view'));
+  let target = cur;
+  if(['ArrowDown','PageDown',' '].includes(e.key)){ target = Math.min(slides.length-1, (cur<0?0:cur)+1); e.preventDefault(); }
+  if(['ArrowUp','PageUp'].includes(e.key)){ target = Math.max(0, (cur<0?0:cur)-1); e.preventDefault(); }
+  if(target!==cur) slides[target].scrollIntoView({behavior:'smooth'});
+});
+
+// ---------------- CONFETTI ----------------
+function burstConfetti(){
+  const canvas = document.getElementById('confetti');
+  if(!canvas || canvas.dataset.done) return;
+  canvas.dataset.done = "1";
+  const dpr = window.devicePixelRatio||1;
+  const resize = ()=>{ canvas.width = canvas.clientWidth*dpr; canvas.height = canvas.clientHeight*dpr; };
+  resize();
+  const ctx = canvas.getContext('2d');
+  const colors = ['#FF6B57','#FFC93C','#23D9A5','#7C8CFF'];
+  const parts = Array.from({length:70}).map(()=>({
+    x: canvas.width/2, y: canvas.height*0.35,
+    vx: (Math.random()-0.5)*10*dpr, vy: (Math.random()-1.6)*10*dpr,
+    size: (Math.random()*6+4)*dpr, color: colors[Math.floor(Math.random()*colors.length)],
+    rot: Math.random()*Math.PI, vr:(Math.random()-0.5)*0.3, life:0
+  }));
+  function frame(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    let alive=false;
+    parts.forEach(p=>{
+      p.vy += 0.28*dpr; p.x+=p.vx; p.y+=p.vy; p.rot+=p.vr; p.life++;
+      if(p.life<140){ alive=true; }
+      ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.rot);
+      ctx.fillStyle=p.color; ctx.globalAlpha = Math.max(0,1-p.life/140);
+      ctx.fillRect(-p.size/2,-p.size/2,p.size,p.size*0.6);
+      ctx.restore();
+    });
+    if(alive) requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="120" viewBox="0 0 480 120">
+  <circle cx="52" cy="52" r="44" fill="#14182B"/>
+  <g transform="rotate(-6 52 52)">
+    <rect x="34.422" y="30.203" width="35.156" height="43.594" rx="2.81" fill="#FFFFFF"/>
+    <rect x="34.422" y="30.203" width="35.156" height="6.469" rx="2.81" fill="#F2F4FA"/>
+    <line x1="39.203" y1="40.047" x2="64.797" y2="40.047" stroke="#D7DEEF" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="39.203" y1="44.828" x2="64.797" y2="44.828" stroke="#D7DEEF" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="39.203" y1="49.609" x2="58.188" y2="49.609" stroke="#D7DEEF" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="39.203" y1="54.391" x2="64.797" y2="54.391" stroke="#D7DEEF" stroke-width="1.1" stroke-linecap="round"/>
+    <line x1="39.203" y1="59.172" x2="61.0" y2="59.172" stroke="#D7DEEF" stroke-width="1.1" stroke-linecap="round"/>
+    <path d="M 40.609,64.234 L 41.27,66.418 L 43.551,66.372 L 41.68,67.675 L 42.428,69.831 L 40.609,68.453 L 38.791,69.831 L 39.539,67.675 L 37.668,66.372 L 39.948,66.418 Z" fill="#FFC93C"/>
+  </g>
+  <path d="M 38.641,53.406 L 48.484,63.953 L 68.875,39.344" fill="none" stroke="#FF6B57" stroke-width="4.781" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 73.094,27.812 L 73.89,30.11 L 76.188,30.906 L 73.89,31.702 L 73.094,34.0 L 72.298,31.702 L 70.0,30.906 L 72.298,30.11 Z" fill="#23D9A5"/>
+
+  <text x="112" y="60" font-family="Baloo 2" font-weight="800" font-size="40" fill="#14182B">Shera<tspan fill="#FF6B57">Tutor</tspan></text>
+  <text x="113" y="84" font-family="Space Mono" font-weight="700" font-size="14" letter-spacing="2.5" fill="#5A6180">SHERATUTOR.AI</text>
+</svg>
