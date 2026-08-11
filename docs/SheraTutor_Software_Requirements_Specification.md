@@ -522,37 +522,23 @@ erDiagram
 ## 8. Implementation & Phased Rollout Plan
 
 ```mermaid
-flowchart TD
-    subgraph P1 ["Phase 1: Demo, Waitlist & Seed Funding (Weeks 1–3)"]
-        A1["Finalize Web Demo"] --> A2["Launch Student Waitlist Landing Page"]
-        A2 --> A3["B2C Digital Marketing Push"]
-        A3 --> A4["Investor Pitch & Cloud Credits"]
-    end
-
-    subgraph P2 ["Phase 2: RAG Pipeline & MVP (Weeks 4–8)"]
-        B1["Digitize NCTB Curriculum (Physics/Chem/Math/Eng)"] --> B2["Build pgvector Vector Database"]
-        B2 --> B3["Construct n8n AI Grading Workflow"]
-    end
-
-    subgraph P3 ["Phase 3: Web Beta & B2B Pilot (Weeks 9–12)"]
-        C1["Launch Web Application"] --> C2["Onboard 2–3 Coaching Centers"]
-        C2 --> C3["Calibrate OCR & Rubrics on Real Student Handwriting"]
-    end
-
-    subgraph P4 ["Phase 4: Mobile & Scaling (Weeks 13–20)"]
-        D1["Ship Flutter Mobile App (iOS/Android)"] --> D2["Expand Subject Coverage (Humanities/Commerce)"]
-        D2 --> D3["Initiate School B2B Sales Motion"]
-    end
-
-    subgraph P5 ["Phase 5: Government Engagement (Post-Week 20)"]
-        E1["Present Pilot Accuracy & Adoption Data to Education Boards"] --> E2["Standardized Testing & National Analytics Integration"]
-    end
-
-    subgraph P6 ["Phase 6: Global Expansion (Long-Term)"]
-        F1["Adapt Free-for-Students / Paid-for-Institutions Model to South Asia"]
-    end
-
-    P1 --> P2 --> P3 --> P4 --> P5 --> P6
+gantt
+    title SheraTutor Development Roadmap (Bangladesh Phase)
+    dateFormat  YYYY-MM-DD
+    section Phase 1
+    Demo & Waitlist Landing Page          :done,    p1, 2026-08-01, 2026-08-21
+    Seed Pitch & Investor Outreach        :active,  p1_2, 2026-08-15, 2026-08-31
+    section Phase 2
+    NCTB Digitization & RAG Pipeline      :         p2, 2026-09-01, 2026-10-05
+    Supabase DB & n8n Core Building       :         p2_2, 2026-09-15, 2026-10-15
+    section Phase 3
+    Web Beta Launch & Coaching Pilots     :         p3, 2026-10-16, 2026-11-15
+    Handwriting OCR Model Calibration     :         p3_2, 2026-11-01, 2026-11-30
+    section Phase 4
+    Flutter Mobile App Release            :         p4, 2026-12-01, 2027-01-15
+    School B2B Commercial Onboarding      :         p4_2, 2027-01-01, 2027-02-28
+    section Phase 5
+    Education Board / Govt Engagement     :         p5, 2027-03-01, 2027-06-30
 ```
 
 ---
