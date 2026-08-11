@@ -1,0 +1,10 @@
+# Ingestion pipeline dependencies.
+#
+# marker-pdf model weights are OpenRAIL-M: free for research/personal use and
+# startups under $5M funding/revenue (docs/review §1.6) — track this as the
+# company scales, it is not a permanent free pass.
+marker-pdf[full]>=1.0.0
+supabase>=2.9.0
+google-genai>=0.5.0
+python-dotenv>=1.0.0
+tenacity>=9.0.0

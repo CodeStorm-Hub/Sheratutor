@@ -128,3 +128,21 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Ingestion source material — large binaries, don't commit. Re-download via
+# ingestion/textbooks/SOURCE_MANIFEST.tsv + download_gdrive.sh, or fetch from
+# an authoritative NCTB source once the licensing conversation (docs/review §2.2) lands.
+ingestion/textbooks/*.pdf
+ingestion/output/
+
+# Next.js
+web/.next/
+web/out/
+web/node_modules/
+web/.env*.local
+web/.env
+!web/.env.example
+
+# Supabase local dev
+supabase/.branches
+supabase/.temp
