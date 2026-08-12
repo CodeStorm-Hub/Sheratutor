@@ -50,24 +50,42 @@ implementation instead uses:
 - **A resumable `ingestion_jobs` table** instead of relying on Colab session
   state, which can terminate without warning.
 
+## Status: live on Supabase, RAG proven end-to-end
+
+Database, app, and RAG pipeline are running against a real Supabase project
+(**SheraTutor**, ap-south-1, ref `qjottictwewysfcjirma`) — not a local stub.
+All 9 migrations are applied, the vertical-slice seed data is loaded, and
+`web/.env.local` already points at it. See
+[`ingestion/local_dev/RAG_TEST_RESULTS.md`](ingestion/local_dev/RAG_TEST_RESULTS.md)
+for a full end-to-end retrieval test (real OCR, real embeddings, real HNSW
+index, real query — not a mock) and the two migration bugs it caught that a
+read-only review couldn't have.
+
 ## Getting started
 
 ```bash
-# 1. Database — once Supabase is authenticated (`supabase link`):
-supabase db push          # applies supabase/migrations/*.sql
-supabase db execute -f supabase/seed.sql
-
-# 2. Web app
+# 1. Web app — .env.local already has the live project's URL + anon key.
+#    Only SUPABASE_SERVICE_ROLE_KEY needs filling in (grab it from the
+#    Supabase dashboard — never exposed via the MCP, by design).
 cd web
-cp .env.example .env.local   # fill in Supabase + Gemini credentials
 npm install
 npm run dev
 
-# 3. Curriculum ingestion (after the DB is up)
+# 2. Curriculum ingestion — production path (needs GOOGLE_GENAI_API_KEY,
+#    not available when this was built; see ingestion/local_dev/ for the
+#    no-API-key path that was actually used to prove the pipeline).
 cd ingestion
 pip install -r requirements.txt
 cp .env.example .env
 python ingest.py --pdf textbooks/physics_en.pdf --subject-code SSC-PHY --language en --chapter-no 3
+```
+
+To point this at a different (or fresh local) Supabase project instead:
+
+```bash
+supabase link                              # once authenticated
+supabase db push                           # applies supabase/migrations/*.sql
+supabase db execute -f supabase/seed.sql
 ```
 
 ## What's implemented vs. what's next
