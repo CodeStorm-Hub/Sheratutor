@@ -36,14 +36,21 @@ import sys
 import tempfile
 from pathlib import Path
 
+import requests
 from dotenv import load_dotenv
 from supabase import Client, create_client
 from tenacity import retry, stop_after_attempt, wait_exponential
 
 load_dotenv()
 
-EMBEDDING_MODEL_NAME = os.environ.get("INGEST_EMBEDDING_MODEL", "gemini-embedding-001")
-EMBEDDING_MODEL_VERSION = os.environ.get("INGEST_EMBEDDING_MODEL_VERSION", "001")
+# Provider pivot (2026-08-13): no GOOGLE_GENAI_API_KEY available. NVIDIA NIM's
+# llama-nemotron-embed-1b-v2 replaces gemini-embedding-001 — free, verified
+# live against the real NIM catalog (its predecessor, llama-3.2-nv-embedqa-1b-v2,
+# returned HTTP 410 retired-2026-05-18 on first real test; don't trust a model
+# id from documentation without checking /v1/models). Matches web/src/ai/genkit.ts.
+NIM_BASE_URL = "https://integrate.api.nvidia.com/v1"
+EMBEDDING_MODEL_NAME = os.environ.get("INGEST_EMBEDDING_MODEL", "nvidia/llama-nemotron-embed-1b-v2")
+EMBEDDING_MODEL_VERSION = os.environ.get("INGEST_EMBEDDING_MODEL_VERSION", "v2")
 
 
 def sha256_of_file(path: Path) -> str:
@@ -94,24 +101,34 @@ EMBEDDING_DIMENSIONS = 1024  # must match chunk_embeddings.embedding's vector(10
 
 
 @retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=2, min=4, max=60))
-def embed_text(client, text: str) -> list[float]:
+def embed_text(nim_api_key: str, text: str) -> list[float]:
     """
     Wrapped in retry/backoff — embedding API rate limits are the real
-    throughput ceiling for ingestion, not GPU time (docs/review §5.4).
+    throughput ceiling for ingestion, not GPU time (docs/review §5.4); NIM's
+    free tier is ~40 RPM.
 
-    gemini-embedding-001 defaults to 3072 dims; output_dimensionality trims it
-    via Matryoshka truncation to match the schema. BGE-M3 (self-hostable,
-    native 1024-dim, explicit Bengali coverage) is the other finalist from
-    docs/review §7.2 — benchmark both against a real Bangla retrieval set
-    before locking this in; swapping later means a new (model_name,
-    model_version) row, not a migration, by design.
+    input_type="passage" because this is the ingestion (indexing) side —
+    NV-EmbedQA is an asymmetric retrieval model, so the query side
+    (web/src/ai/flows/retrieve-grounding.ts) must use input_type="query" or
+    retrieval quality measurably degrades. `dimensions` truncates the
+    model's native embedding size (documented up to 2048) to match the
+    schema's vector(1024) via Matryoshka truncation, swapping later means a
+    new (model_name, model_version) row, not a migration, by design.
     """
-    result = client.models.embed_content(
-        model=EMBEDDING_MODEL_NAME,
-        contents=text,
-        config={"output_dimensionality": EMBEDDING_DIMENSIONS},
+    res = requests.post(
+        f"{NIM_BASE_URL}/embeddings",
+        headers={"Authorization": f"Bearer {nim_api_key}", "Content-Type": "application/json"},
+        json={
+            "input": text,
+            "model": EMBEDDING_MODEL_NAME,
+            "input_type": "passage",
+            "truncate": "END",
+            "dimensions": EMBEDDING_DIMENSIONS,
+        },
+        timeout=60,
     )
-    return result.embeddings[0].values
+    res.raise_for_status()
+    return res.json()["data"][0]["embedding"]
 
 
 def ingest_pdf(
@@ -120,7 +137,7 @@ def ingest_pdf(
     subject_code: str,
     language_tag: str,
     chapter_no: int,
-    genai_client,
+    nim_api_key: str,
 ) -> None:
     checksum = sha256_of_file(pdf_path)
 
@@ -188,7 +205,7 @@ def ingest_pdf(
                 if not content:
                     continue
 
-                embedding = embed_text(genai_client, content)
+                embedding = embed_text(nim_api_key, content)
 
                 inserted = (
                     supabase.table("curriculum_chunks")
@@ -241,12 +258,10 @@ def main() -> None:
         print(f"PDF not found: {args.pdf}", file=sys.stderr)
         sys.exit(1)
 
-    from google import genai
-
-    genai_client = genai.Client(api_key=os.environ["GOOGLE_GENAI_API_KEY"])
+    nim_api_key = os.environ["NVIDIA_NIM_API_KEY"]
     supabase = get_supabase()
 
-    ingest_pdf(supabase, args.pdf, args.subject_code, args.language, args.chapter_no, genai_client)
+    ingest_pdf(supabase, args.pdf, args.subject_code, args.language, args.chapter_no, nim_api_key)
 
 
 if __name__ == "__main__":

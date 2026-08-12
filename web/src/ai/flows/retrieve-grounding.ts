@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, MODELS } from "@/ai/genkit";
+import { ai, nimEmbedder, EMBED_MODEL_NAME, EMBED_MODEL_VERSION } from "@/ai/genkit";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 
 const GroundingChunkSchema = z.object({
@@ -32,9 +32,13 @@ export const retrieveGroundingFlow = ai.defineFlow(
     }),
   },
   async ({ queryText, chapterId, languageTag, matchCount }) => {
+    // input_type: "query" — NV-EmbedQA is an asymmetric retrieval model, and
+    // ingestion embeds with input_type "passage" (see ingest.py). Using the
+    // wrong side measurably hurts retrieval quality for this model family.
     const embedResponse = await ai.embed({
-      embedder: MODELS.embedding,
+      embedder: nimEmbedder,
       content: queryText,
+      options: { inputType: "query" },
     });
     const embedding = embedResponse[0]?.embedding;
     if (!embedding) throw new Error("retrieveGrounding: embedding failed");
@@ -45,6 +49,8 @@ export const retrieveGroundingFlow = ai.defineFlow(
       p_chapter_id: chapterId,
       p_language_tag: languageTag,
       match_count: matchCount,
+      p_model_name: EMBED_MODEL_NAME,
+      p_model_version: EMBED_MODEL_VERSION,
     });
 
     if (error) throw new Error(`retrieveGrounding: ${error.message}`);

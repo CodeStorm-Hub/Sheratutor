@@ -49,11 +49,11 @@ the pilot. Before any B2B commercial launch, the NCTB licensing conversation
 flagged in the review (§2.2) needs to land — this is a real legal dependency,
 not a formality.
 
-## Running it (production path, once `GOOGLE_GENAI_API_KEY` is available)
+## Running it (production path)
 
 ```bash
 pip install -r requirements.txt
-cp .env.example .env   # fill in Supabase + Gemini credentials
+cp .env.example .env   # fill in Supabase + NVIDIA_NIM_API_KEY (build.nvidia.com, free)
 
 python ingest.py \
   --pdf textbooks/physics_en.pdf \
@@ -93,6 +93,47 @@ execute` once you have a connection string). See `local_dev/README.md`.
   (L4/A100 on any cloud) instead; at current pricing the full run costs
   roughly $30-80 one time, not "free" once you count the engineering time
   spent working around Colab's limits.
+
+## Golden dataset (docs/review §8.1, §9.1 — the highest-priority missing artifact)
+
+Schema lives in `supabase/migrations/00000000000011_golden_set.sql`
+(`golden_set_items`, `golden_set_human_grades`, `golden_set_model_runs`) and
+the eval harness is `web/scripts/eval-golden-set.ts` (`npm run
+eval:golden-set` from `web/`) — both are built and tested against the live
+project, but the table is empty. Populating it is a data-collection task, not
+a coding one:
+
+1. **Collect ~30 real handwritten scripts** against ~10 real questions
+   (start with the seeded Physics "Force and Motion" chapter — a rubric and
+   one question already exist). Hand-typed rubrics are fine; this is
+   deliberately RAG-independent so grading quality can be measured before a
+   single textbook chapter is ingested (docs/review §9.1's revised
+   sequencing — "does AI grading of Bangla scripts work at all?" comes
+   before curriculum digitization, not after).
+2. **Human-transcribe each script verbatim** into `golden_set_items.human_transcription`
+   — this is the ground truth the harness compares model output against for
+   transcription fidelity (character error rate). Upload the script image to
+   the `submission-pages` bucket (or any URL the vision model can fetch) and
+   set `script_image_url`.
+3. **3 examiners grade every script blind** (no visibility into each other's
+   marks, no visibility into any AI output) into `golden_set_human_grades`.
+   The spread between examiners becomes the agreement *ceiling* the harness
+   compares AI performance against — see docs/review §6.1, which replaces
+   the original, statistically-unachievable "Pearson r >= 0.95 vs. humans"
+   requirement with quadratic-weighted kappa measured against this band.
+4. **Run `npm run eval:golden-set`** from `web/`. It runs the real
+   `transcribePageFlow` + `evaluateRubricFlow` against every active item, and
+   reports per-item CER (watch for anomalously *low* CER specifically on
+   wrong-answer scripts — that's the "model silently corrected the mistake"
+   signature from docs/review §3) plus aggregate MAE-in-marks and
+   AI-vs-human QWK against the human-human QWK ceiling.
+
+This is also the intended benchmark for provider decisions that are
+currently unresolved: NIM's `llama-nemotron-embed-1b-v2` vs. Fireworks'
+`qwen3-embedding-8b` for retrieval quality, and whether the Fireworks credit
+is better spent on OCR fidelity or grading-reasoning quality (see
+`web/src/ai/genkit.ts` for the current provider wiring). Don't guess — run
+both through this harness and compare the numbers.
 
 ## Known gaps (next steps, not yet built)
 

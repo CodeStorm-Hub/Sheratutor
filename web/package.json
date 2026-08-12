@@ -6,11 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "eval:golden-set": "tsx scripts/eval-golden-set.ts"
   },
   "dependencies": {
-    "@genkit-ai/google-genai": "^1.41.0",
-    "@genkit-ai/googleai": "^1.28.0",
+    "@genkit-ai/compat-oai": "^1.41.0",
     "@genkit-ai/next": "^1.41.0",
     "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.112.3",
@@ -35,9 +35,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv": "^16.4.5",
     "eslint": "^9",
     "eslint-config-next": "16.3.0",
     "tailwindcss": "^4",
+    "tsx": "^4.19.2",
     "typescript": "^5"
   }
 }
