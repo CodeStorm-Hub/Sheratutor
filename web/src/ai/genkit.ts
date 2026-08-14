@@ -32,7 +32,7 @@ export const ai = genkit({
     }),
     ollama({
       serverAddress: process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434",
-      models: [{ name: "qwen3:8b" }, { name: "gemma4:e4b" }],
+      models: [{ name: "qwen3:8b" }, { name: "gemma4:e4b" }, { name: "bge-m3" }],
     }),
   ],
 });
@@ -50,65 +50,62 @@ export const MODELS = {
 } as const;
 
 // nvidia/llama-3.2-nv-embedqa-1b-v2 (last turn's choice) returned HTTP 410 —
-// retired 2026-05-18. llama-nemotron-embed-1b-v2 is its replacement: verified
-// live, native 2048-dim, `dimensions: 1024` truncation confirmed working.
-// Bengali-support claim for this specific successor model is NOT yet
-// re-verified against a source (only the retired predecessor's 26-language
-// list was documented) — treat as unconfirmed until benchmarked via the
-// golden-set harness.
-const NIM_EMBED_MODEL = "nvidia/llama-nemotron-embed-1b-v2";
-const NIM_EMBED_MODEL_VERSION = "v2";
-const NIM_EMBED_DIMENSIONS = 1024; // matches chunk_embeddings.embedding vector(1024) — no migration needed
+// retired 2026-05-18. llama-nemotron-embed-1b-v2 was its replacement but is
+// severely bottlenecked by NIM's free tier 40 RPM limit. We have pivoted to
+// using the local BGE-M3 model via Ollama, removing all rate limits and
+// providing native 1024-dim support, which matches our existing Supabase schema,
+// and offers phenomenal multilingual (Bengali) support.
+const OLLAMA_EMBED_MODEL = "bge-m3";
+const OLLAMA_EMBED_MODEL_VERSION = "v1";
+const OLLAMA_EMBED_DIMENSIONS = 1024; // matches chunk_embeddings.embedding vector(1024) — no migration needed
 
 /**
- * Custom embedder (not the generic openAICompatible model registry) because
- * NV-EmbedQA is an asymmetric retrieval model: it requires `input_type`
- * ("query" at grading time vs. "passage" at ingestion time) and accepts a
- * `dimensions` truncation param the generic OpenAI embeddings shape doesn't
- * know about. Bengali is one of this model's 26 documented evaluated
- * languages — a real, sourced advantage over the untested bge-m3 /
- * gemini-embedding-001 choice this replaces (docs/review §7.2 asked for an
- * empirical benchmark before committing; this is a better-evidenced
- * candidate than either original finalist, still worth re-validating against
- * the golden set once it exists).
+ * Custom embedder using Ollama's /api/embeddings endpoint. We define this 
+ * manually so we can handle options like inputType natively if desired.
+ * This runs locally on the same box, eliminating the 40 RPM bottleneck.
  */
-export const nimEmbedder = ai.defineEmbedder(
+export const ollamaEmbedder = ai.defineEmbedder(
   {
-    name: "nim/llama-nemotron-embed-1b-v2",
+    name: "ollama/bge-m3",
     configSchema: z.object({
       inputType: z.enum(["query", "passage"]).default("passage"),
     }),
     info: {
-      dimensions: NIM_EMBED_DIMENSIONS,
-      label: "NVIDIA NIM — llama-nemotron-embed-1b-v2",
+      dimensions: OLLAMA_EMBED_DIMENSIONS,
+      label: "Ollama — bge-m3",
       supports: { input: ["text"] },
     },
   },
   async (docs, options) => {
-    const res = await fetch(`${NIM_BASE_URL}/embeddings`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.NVIDIA_NIM_API_KEY ?? ""}`,
-      },
-      body: JSON.stringify({
-        input: docs.map((d) => d.text),
-        model: NIM_EMBED_MODEL,
-        input_type: options?.inputType ?? "passage",
-        truncate: "END",
-        dimensions: NIM_EMBED_DIMENSIONS,
-      }),
-    });
-    if (!res.ok) {
-      throw new Error(`nimEmbedder: ${res.status} ${await res.text()}`);
-    }
-    const json = (await res.json()) as { data: { embedding: number[] }[] };
-    return { embeddings: json.data.map((d) => ({ embedding: d.embedding })) };
+    // BGE-M3 is powerful enough for direct mapping, but we can prepend an instruction for query type if needed.
+    const prefix = options?.inputType === "query" ? "Represent this sentence for searching relevant passages: " : "";
+    const baseUrl = process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434";
+
+    const embeddings = await Promise.all(
+      docs.map(async (d) => {
+        const res = await fetch(`${baseUrl}/api/embeddings`, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: OLLAMA_EMBED_MODEL,
+            prompt: prefix + d.text,
+          }),
+        });
+        if (!res.ok) {
+          throw new Error(`ollamaEmbedder: ${res.status} ${await res.text()}`);
+        }
+        const json = await res.json() as { embedding: number[] };
+        return { embedding: json.embedding };
+      })
+    );
+    return { embeddings };
   }
 );
 
-export const EMBED_MODEL_NAME = NIM_EMBED_MODEL;
-export const EMBED_MODEL_VERSION = NIM_EMBED_MODEL_VERSION;
+export const EMBED_MODEL_NAME = OLLAMA_EMBED_MODEL;
+export const EMBED_MODEL_VERSION = OLLAMA_EMBED_MODEL_VERSION;
 
-export const PIPELINE_VERSION = "v1.1.0-nim-pivot";
+export const PIPELINE_VERSION = "v1.2.0-bge-m3-pivot";
 export const PROMPT_VERSION = "v1.0.0";

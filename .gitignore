@@ -146,3 +146,5 @@ web/.env
 # Supabase local dev
 supabase/.branches
 supabase/.temp
+/.claude/extracted_sessions
+/.claude/sessions

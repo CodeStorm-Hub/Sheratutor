@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, nimEmbedder, EMBED_MODEL_NAME, EMBED_MODEL_VERSION } from "@/ai/genkit";
+import { ai, ollamaEmbedder, EMBED_MODEL_NAME, EMBED_MODEL_VERSION } from "@/ai/genkit";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 
 const GroundingChunkSchema = z.object({
@@ -32,11 +32,10 @@ export const retrieveGroundingFlow = ai.defineFlow(
     }),
   },
   async ({ queryText, chapterId, languageTag, matchCount }) => {
-    // input_type: "query" — NV-EmbedQA is an asymmetric retrieval model, and
-    // ingestion embeds with input_type "passage" (see ingest.py). Using the
-    // wrong side measurably hurts retrieval quality for this model family.
+    // input_type: "query" is handled explicitly by BGE-M3 (or similar instruction models)
+    // The ollamaEmbedder prepends instructions if inputType="query" is passed.
     const embedResponse = await ai.embed({
-      embedder: nimEmbedder,
+      embedder: ollamaEmbedder,
       content: queryText,
       options: { inputType: "query" },
     });

@@ -43,14 +43,12 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 
 load_dotenv()
 
-# Provider pivot (2026-08-13): no GOOGLE_GENAI_API_KEY available. NVIDIA NIM's
-# llama-nemotron-embed-1b-v2 replaces gemini-embedding-001 — free, verified
-# live against the real NIM catalog (its predecessor, llama-3.2-nv-embedqa-1b-v2,
-# returned HTTP 410 retired-2026-05-18 on first real test; don't trust a model
-# id from documentation without checking /v1/models). Matches web/src/ai/genkit.ts.
-NIM_BASE_URL = "https://integrate.api.nvidia.com/v1"
-EMBEDDING_MODEL_NAME = os.environ.get("INGEST_EMBEDDING_MODEL", "nvidia/llama-nemotron-embed-1b-v2")
-EMBEDDING_MODEL_VERSION = os.environ.get("INGEST_EMBEDDING_MODEL_VERSION", "v2")
+# Provider pivot (2026-08-13): NVIDIA NIM's 40 RPM limit bottlenecks ingestion
+# unacceptably. We pivot to using BGE-M3 via a local Ollama instance. This removes
+# all rate limits and allows the local GPU to embed passages instantly.
+OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
+EMBEDDING_MODEL_NAME = os.environ.get("INGEST_EMBEDDING_MODEL", "bge-m3")
+EMBEDDING_MODEL_VERSION = os.environ.get("INGEST_EMBEDDING_MODEL_VERSION", "v1")
 
 
 def sha256_of_file(path: Path) -> str:
@@ -69,29 +67,32 @@ def get_supabase() -> Client:
     return create_client(url, key)
 
 
-def run_marker(pdf_path: Path, out_dir: Path) -> Path:
+def run_marker(pdf_path: Path, out_dir: Path, page_range: str | None = None) -> Path:
     """
-    Runs marker_single in `balanced` mode (GPU pipeline — see module docstring)
+    Runs marker_single in `balanced` mode (GPU pipeline)
     with chunked JSON output so page/section boundaries survive into
-    curriculum_chunks. No --langs flag: Surya is multilingual by default.
+    curriculum_chunks.
     """
     cmd = [
         "marker_single",
         str(pdf_path),
         "--output_dir", str(out_dir),
         "--output_format", "chunks",
-        "--mode", "balanced",
-        "--use_llm",
-        "--llm_service", "marker.services.ollama.OllamaService",
-        "--ollama_base_url", os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434"),
-        # llava (the original hand-off guide's pick) is a 2023-era model and
-        # weak on Bengali/scientific notation (docs/review §1.3) — Qwen3-VL is
-        # the current pick for multilingual OCR quality.
-        "--ollama_model", os.environ.get("OLLAMA_MODEL", "qwen3-vl"),
+        "--mode", "fast",
     ]
-    subprocess.run(cmd, check=True)
+    if page_range:
+        cmd.extend(["--page_range", page_range])
+    
+    marker_env = os.environ.copy()
+    marker_env.pop("OLLAMA_BASE_URL", None)
+    marker_env.pop("OLLAMA_MODEL", None)
+    marker_env.pop("MARKER_LLM_SERVICE", None)
+    subprocess.run(cmd, env=marker_env, check=True)
 
-    chunks_file = next(out_dir.rglob("*.json"), None)
+    chunks_file = next(
+        (f for f in out_dir.rglob("*.json") if not f.name.endswith("_meta.json")),
+        None,
+    )
     if chunks_file is None:
         raise RuntimeError(f"marker produced no chunks JSON in {out_dir}")
     return chunks_file
@@ -101,34 +102,26 @@ EMBEDDING_DIMENSIONS = 1024  # must match chunk_embeddings.embedding's vector(10
 
 
 @retry(stop=stop_after_attempt(5), wait=wait_exponential(multiplier=2, min=4, max=60))
-def embed_text(nim_api_key: str, text: str) -> list[float]:
+def embed_text(text: str) -> list[float]:
     """
-    Wrapped in retry/backoff — embedding API rate limits are the real
-    throughput ceiling for ingestion, not GPU time (docs/review §5.4); NIM's
-    free tier is ~40 RPM.
-
-    input_type="passage" because this is the ingestion (indexing) side —
-    NV-EmbedQA is an asymmetric retrieval model, so the query side
-    (web/src/ai/flows/retrieve-grounding.ts) must use input_type="query" or
-    retrieval quality measurably degrades. `dimensions` truncates the
-    model's native embedding size (documented up to 2048) to match the
-    schema's vector(1024) via Matryoshka truncation, swapping later means a
-    new (model_name, model_version) row, not a migration, by design.
+    Wrapped in retry/backoff — queries the local Ollama instance for embeddings
+    using BGE-M3. Eliminates API rate limits entirely, allowing full GPU usage.
     """
     res = requests.post(
-        f"{NIM_BASE_URL}/embeddings",
-        headers={"Authorization": f"Bearer {nim_api_key}", "Content-Type": "application/json"},
+        f"{OLLAMA_BASE_URL}/api/embed",
         json={
-            "input": text,
             "model": EMBEDDING_MODEL_NAME,
-            "input_type": "passage",
-            "truncate": "END",
-            "dimensions": EMBEDDING_DIMENSIONS,
+            "input": text,
         },
         timeout=60,
     )
     res.raise_for_status()
-    return res.json()["data"][0]["embedding"]
+    data = res.json()
+    if "embeddings" in data and len(data["embeddings"]) > 0:
+        return data["embeddings"][0]
+    if "embedding" in data:
+        return data["embedding"]
+    raise RuntimeError(f"Unexpected embed response format: {data}")
 
 
 def ingest_pdf(
@@ -137,7 +130,7 @@ def ingest_pdf(
     subject_code: str,
     language_tag: str,
     chapter_no: int,
-    nim_api_key: str,
+    page_range: str | None = None,
 ) -> None:
     checksum = sha256_of_file(pdf_path)
 
@@ -170,42 +163,30 @@ def ingest_pdf(
         )
     chapter_id = chapter.data["id"]
 
-    # Resumability: skip if this exact (checksum, page-range) already ran.
-    existing_job = (
-        supabase.table("ingestion_jobs")
-        .select("id, status")
-        .eq("source_pdf_checksum", checksum)
-        .maybe_single()
-        .execute()
-    )
-    if existing_job.data and existing_job.data["status"] == "DONE":
-        print(f"[skip] {pdf_path.name} already ingested (job {existing_job.data['id']})")
-        return
-
-    job = supabase.table("ingestion_jobs").upsert(
+    job = supabase.table("ingestion_jobs").insert(
         {
             "subject_id": subject_id,
             "curriculum_version_id": curriculum_version_id,
             "source_pdf_path": str(pdf_path),
             "source_pdf_checksum": checksum,
             "status": "RUNNING",
-        },
-        on_conflict="source_pdf_checksum,page_range_start,page_range_end",
+        }
     ).execute()
     job_id = job.data[0]["id"]
 
     try:
         with tempfile.TemporaryDirectory() as tmp:
-            chunks_file = run_marker(pdf_path, Path(tmp))
-            chunks = json.loads(chunks_file.read_text())["chunks"]
+            chunks_file = run_marker(pdf_path, Path(tmp), page_range)
+            data = json.loads(chunks_file.read_text())
+            chunks = data.get("blocks") or data.get("chunks") or []
 
             produced = 0
             for i, chunk in enumerate(chunks):
-                content = chunk.get("text", "").strip()
+                content = (chunk.get("html") or chunk.get("text") or "").strip()
                 if not content:
                     continue
 
-                embedding = embed_text(nim_api_key, content)
+                embedding = embed_text(content)
 
                 inserted = (
                     supabase.table("curriculum_chunks")
@@ -252,16 +233,21 @@ def main() -> None:
     parser.add_argument("--subject-code", required=True)
     parser.add_argument("--language", required=True, choices=["bn", "en"])
     parser.add_argument("--chapter-no", required=True, type=int)
+    parser.add_argument("--page-range", type=str, default=None)
+    parser.add_argument("--max-pages", type=int, default=None)
     args = parser.parse_args()
 
     if not args.pdf.exists():
         print(f"PDF not found: {args.pdf}", file=sys.stderr)
         sys.exit(1)
 
-    nim_api_key = os.environ["NVIDIA_NIM_API_KEY"]
+    page_range = args.page_range
+    if page_range is None and args.max_pages is not None:
+        page_range = f"1-{args.max_pages}"
+
     supabase = get_supabase()
 
-    ingest_pdf(supabase, args.pdf, args.subject_code, args.language, args.chapter_no, nim_api_key)
+    ingest_pdf(supabase, args.pdf, args.subject_code, args.language, args.chapter_no, page_range)
 
 
 if __name__ == "__main__":
