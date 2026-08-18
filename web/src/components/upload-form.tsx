@@ -17,7 +17,14 @@ import {
 // Loosely typed on purpose: `Database` is a placeholder until
 // `supabase gen types` runs against the real project (see
 // src/lib/supabase/types.ts), so the exact join shape isn't known yet.
-type Paper = { id: string; title: string; subjects: { name_en: string } | { name_en: string }[] | null };
+type Question = { id: string; question_number: number; question_text_en: string | null };
+type Paper = {
+  id: string;
+  title: string;
+  subjects: { name_en: string } | { name_en: string }[] | null;
+  questions: Question[] | null;
+};
+type PageEntry = { file: File; questionId: string | null };
 
 function subjectName(subjects: Paper["subjects"]): string {
   if (!subjects) return "";
@@ -26,14 +33,25 @@ function subjectName(subjects: Paper["subjects"]): string {
 
 export function UploadForm({ papers }: { papers: Paper[] }) {
   const router = useRouter();
-  const [files, setFiles] = useState<File[]>([]);
+  const [pages, setPages] = useState<PageEntry[]>([]);
   const [paperId, setPaperId] = useState<string>(papers[0]?.id ?? "");
   const [status, setStatus] = useState<"idle" | "uploading" | "error">("idle");
   const [error, setError] = useState<string | null>(null);
 
+  const selectedPaper = papers.find((p) => p.id === paperId);
+  const questions = (selectedPaper?.questions ?? []).slice().sort((a, b) => a.question_number - b.question_number);
+
+  function handleFilesChosen(fileList: FileList | null) {
+    setPages(Array.from(fileList ?? []).map((file) => ({ file, questionId: null })));
+  }
+
+  function setPageQuestion(index: number, questionId: string | null) {
+    setPages((prev) => prev.map((p, i) => (i === index ? { ...p, questionId } : p)));
+  }
+
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!paperId || files.length === 0) {
+    if (!paperId || pages.length === 0) {
       setError("Select a paper and at least one page image.");
       return;
     }
@@ -50,7 +68,7 @@ export function UploadForm({ papers }: { papers: Paper[] }) {
 
       // Downscale/re-encode before upload — required on Bangladeshi metered
       // mobile data, where a 12MP HEIC can be ~8-15MB (docs/review §8.5).
-      const compressed = await Promise.all(files.map((f) => compressImage(f)));
+      const compressed = await Promise.all(pages.map((p) => compressImage(p.file)));
 
       const pageUrls: string[] = [];
       for (let i = 0; i < compressed.length; i++) {
@@ -72,6 +90,7 @@ export function UploadForm({ papers }: { papers: Paper[] }) {
         body: JSON.stringify({
           questionPaperId: paperId,
           pageUrls,
+          pageQuestionIds: pages.map((p) => p.questionId),
           submissionType: "WEB_UPLOAD",
         }),
       });
@@ -95,7 +114,13 @@ export function UploadForm({ papers }: { papers: Paper[] }) {
             No mock exams available yet for the vertical-slice pilot subjects. Check back soon.
           </p>
         ) : (
-          <Select value={paperId} onValueChange={setPaperId}>
+          <Select
+            value={paperId}
+            onValueChange={(v) => {
+              setPaperId(v);
+              setPages([]);
+            }}
+          >
             <SelectTrigger id="paper" className="w-full">
               <SelectValue />
             </SelectTrigger>
@@ -118,12 +143,40 @@ export function UploadForm({ papers }: { papers: Paper[] }) {
           type="file"
           accept="image/*,.pdf,.heic"
           multiple
-          onChange={(e) => setFiles(Array.from(e.target.files ?? []))}
+          onChange={(e) => handleFilesChosen(e.target.files)}
         />
-        {files.length > 0 && (
-          <p className="text-xs text-muted-foreground">{files.length} page(s) selected.</p>
+        {pages.length > 0 && (
+          <p className="text-xs text-muted-foreground">{pages.length} page(s) selected.</p>
         )}
       </div>
+
+      {pages.length > 0 && questions.length > 0 && (
+        <div className="space-y-2 rounded-lg border border-border p-3">
+          <p className="text-xs font-medium text-muted-foreground">
+            Which question does each page answer? (Helps us grade accurately — leave as &quot;Not sure&quot; if one page covers more than one question.)
+          </p>
+          {pages.map((p, i) => (
+            <div key={i} className="flex items-center justify-between gap-2 text-sm">
+              <span className="truncate text-muted-foreground shrink-0">
+                Page {i + 1} — {p.file.name}
+              </span>
+              <Select value={p.questionId ?? "unsure"} onValueChange={(v) => setPageQuestion(i, v === "unsure" ? null : v)}>
+                <SelectTrigger className="h-8 text-xs w-40 shrink-0">
+                  <SelectValue />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="unsure">Not sure / multiple</SelectItem>
+                  {questions.map((q) => (
+                    <SelectItem key={q.id} value={q.id}>
+                      Question {q.question_number}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          ))}
+        </div>
+      )}
 
       {error && <p className="text-sm text-destructive">{error}</p>}
 

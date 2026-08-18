@@ -13,6 +13,8 @@ traces back to a specific finding in that document; comments reference it
 by section (e.g. `docs/review §7.9`) rather than re-explaining the reasoning
 inline.
 
+**Test User**: verify.tester@sheratutor.ai / VerifyPass123!
+
 ## Layout
 
 ```
@@ -43,31 +45,52 @@ implementation instead uses:
 - **8 books** (Physics/Chemistry/Math/English, bn+en), not 66 — matches the
   AI-strategy doc's own subject prioritization; Humanities/Commerce follow
   once grading is proven, not before.
-- **Current Gemini model IDs**, read from env, never hardcoded — 1.5 and 2.0
-  are already shut down; pin via `GENKIT_*_MODEL` env vars.
+- **NVIDIA NIM** (not Gemini) for vision/OCR + reasoning, free and
+  OpenAI-compatible — no Google GenAI key was available; model IDs are still
+  read from env, never hardcoded, via `GENKIT_*_MODEL`. Fireworks AI is
+  registered as a second provider but held back as a benchmark option, not a
+  default — see `web/src/ai/genkit.ts`.
 - **`marker_single --mode balanced`**, no `--langs` flag, Qwen3-VL instead
   of llava for local captioning.
 - **A resumable `ingestion_jobs` table** instead of relying on Colab session
   state, which can terminate without warning.
 
+## Status: live on Supabase, RAG proven end-to-end
+
+Database, app, and RAG pipeline are running against a real Supabase project
+(**SheraTutor**, ap-south-1, ref `qjottictwewysfcjirma`) — not a local stub.
+All 9 migrations are applied, the vertical-slice seed data is loaded, and
+`web/.env.local` already points at it. See
+[`ingestion/local_dev/RAG_TEST_RESULTS.md`](ingestion/local_dev/RAG_TEST_RESULTS.md)
+for a full end-to-end retrieval test (real OCR, real embeddings, real HNSW
+index, real query — not a mock) and the two migration bugs it caught that a
+read-only review couldn't have.
+
 ## Getting started
 
 ```bash
-# 1. Database — once Supabase is authenticated (`supabase link`):
-supabase db push          # applies supabase/migrations/*.sql
-supabase db execute -f supabase/seed.sql
-
-# 2. Web app
+# 1. Web app — .env.local already has the live project's URL + anon key.
+#    Only SUPABASE_SERVICE_ROLE_KEY needs filling in (grab it from the
+#    Supabase dashboard — never exposed via the MCP, by design).
 cd web
-cp .env.example .env.local   # fill in Supabase + Gemini credentials
 npm install
 npm run dev
 
-# 3. Curriculum ingestion (after the DB is up)
+# 2. Curriculum ingestion — production path (needs NVIDIA_NIM_API_KEY, free
+#    at build.nvidia.com; see ingestion/local_dev/ for how the pipeline was
+#    originally proven end-to-end before that key was available).
 cd ingestion
 pip install -r requirements.txt
 cp .env.example .env
 python ingest.py --pdf textbooks/physics_en.pdf --subject-code SSC-PHY --language en --chapter-no 3
+```
+
+To point this at a different (or fresh local) Supabase project instead:
+
+```bash
+supabase link                              # once authenticated
+supabase db push                           # applies supabase/migrations/*.sql
+supabase db execute -f supabase/seed.sql
 ```
 
 ## What's implemented vs. what's next
@@ -76,8 +99,11 @@ python ingest.py --pdf textbooks/physics_en.pdf --subject-code SSC-PHY --languag
 capture, email/Google auth, onboarding with an under-18 age gate, student
 dashboard (momentum score, weakness heatmap, quick wins), script upload with
 client-side downscaling, the full 4-layer Genkit grading pipeline with
-provenance tracking, evaluation breakdown UI, and the "Explain it simply"
-tutor chat with a minor-safety pre-filter.
+provenance tracking, evaluation breakdown UI, the "Explain it simply"
+tutor chat with a minor-safety pre-filter, and the golden-set schema + eval
+harness (`web/scripts/eval-golden-set.ts`, see `ingestion/README.md` "Golden
+dataset") for measuring transcription fidelity and grading agreement once
+real graded scripts are collected.
 
 **Explicitly not implemented yet** (tracked in the review, not silently
 skipped): a real production job queue (grading currently dispatches via
@@ -85,6 +111,8 @@ Next's `after()`, adequate for the vertical slice — see
 `src/app/api/submissions/route.ts` for the swap-to-`pgmq` note), the B2B
 institutional dashboard, the question-paper generator (FR-GEN-*), guardian
 consent is checkbox-acknowledgement for the pilot rather than verified
-SMS-OTP (see `src/app/actions/onboarding.ts`), and the golden evaluation set
-the review recommends building before scaling ingestion past the vertical
-slice.
+SMS-OTP (see `src/app/actions/onboarding.ts`), and the golden evaluation
+set's actual *data* — the schema and eval harness exist (see above), but
+populating `golden_set_items`/`golden_set_human_grades` with ~30 real
+scripts and 3-examiner blind grades is a data-collection step, not a coding
+one (`ingestion/README.md` "Golden dataset" has the process).

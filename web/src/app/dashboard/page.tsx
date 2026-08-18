@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
+import { submissionStatusLabel } from "@/lib/submission-status";
 
 const HEATMAP_COLOR: Record<string, string> = {
   low: "bg-mint/20 text-mint-deep border-mint/30", // mastered
@@ -129,7 +130,12 @@ export default async function DashboardPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle className="eyebrow text-xs text-muted-foreground">Recent submissions</CardTitle>
+          <div className="flex items-center justify-between">
+            <CardTitle className="eyebrow text-xs text-muted-foreground">Recent submissions</CardTitle>
+            <Link href="/dashboard/submissions" className="text-xs font-medium text-primary hover:underline">
+              View all
+            </Link>
+          </div>
         </CardHeader>
         <CardContent className="space-y-2">
           {(submissions ?? []).length === 0 && (
@@ -141,7 +147,7 @@ export default async function DashboardPage() {
               href={`/dashboard/submissions/${s.id}`}
               className="flex items-center justify-between text-sm rounded-lg border border-border p-3 hover:bg-muted transition-colors"
             >
-              <span className="capitalize">{s.status.toLowerCase().replace("_", " ")}</span>
+              <span>{submissionStatusLabel(s.status)}</span>
               <span className="text-muted-foreground">
                 {s.total_score_obtained != null ? `${s.total_score_obtained}/${s.max_possible_score}` : "—"}
               </span>

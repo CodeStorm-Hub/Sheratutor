@@ -35,6 +35,19 @@ export const RubricEvaluationSchema = z.object({
         "confidence means the model may be grading without solid curriculum grounding " +
         "— route to human review rather than silently trusting the score."
     ),
+  transcript_mismatch_detected: z
+    .boolean()
+    .default(false)
+    .describe(
+      "Set true only when pageImageUrls were provided and, on cross-checking the " +
+        "transcript against the actual photographed page(s), the transcript looks " +
+        "silently corrected/cleaned up versus what the student actually wrote " +
+        "(docs/review §3 — VLM over-correction risk)."
+    ),
+  transcript_mismatch_note: z
+    .string()
+    .optional()
+    .describe("If transcript_mismatch_detected, a short note on what differs."),
 });
 
 export type RubricEvaluation = z.infer<typeof RubricEvaluationSchema>;

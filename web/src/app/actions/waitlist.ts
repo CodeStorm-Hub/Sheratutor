@@ -1,7 +1,7 @@
 "use server";
 
 import { z } from "zod";
-import { getServiceRoleClient } from "@/lib/supabase/service-role";
+import { createClient } from "@/lib/supabase/server";
 
 const WaitlistInputSchema = z.object({
   fullName: z.string().min(2, "Enter your full name"),
@@ -48,7 +48,11 @@ export async function joinWaitlist(_prev: WaitlistState, formData: FormData): Pr
     };
   }
 
-  const supabase = getServiceRoleClient();
+  // Public unauthenticated insert — RLS's waitlist_signups_insert_public
+  // policy already permits this for `anon`, so this never needs the
+  // service-role key (which bypasses RLS entirely and shouldn't be reached
+  // for from a form a stranger on the internet can submit).
+  const supabase = await createClient();
   const { error } = await supabase.from("waitlist_signups").insert({
     full_name: parsed.data.fullName,
     phone: parsed.data.phone,

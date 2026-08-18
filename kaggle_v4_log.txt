@@ -1,0 +1,138 @@
+0.7s 1 === [1/6] Ensuring Pure-Python GPU OCR Dependencies ===
+0.7s 2 Installing surya-ocr==0.14.7...
+4.6s 3 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.5/48.5 kB 3.2 MB/s eta 0:00:00
+4.8s 4 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.9/40.9 kB 2.0 MB/s eta 0:00:00
+6.6s 5 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 175.5/175.5 kB 6.3 MB/s eta 0:00:00
+6.6s 6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.8/2.8 MB 68.0 MB/s eta 0:00:00
+6.7s 7 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 85.0 MB/s eta 0:00:00
+6.7s 8 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.2/226.2 kB 16.5 MB/s eta 0:00:00
+6.8s 9 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 102.6 MB/s eta 0:00:00
+6.9s 10 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 566.4/566.4 kB 37.2 MB/s eta 0:00:00
+6.9s 11 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 99.4/99.4 kB 6.8 MB/s eta 0:00:00
+7.0s 12 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.1/3.1 MB 96.2 MB/s eta 0:00:00
+7.0s 13 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.3/5.3 MB 116.4 MB/s eta 0:00:00
+7.0s 14 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 470.6/470.6 kB 32.5 MB/s eta 0:00:00
+21.2s 15 ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+21.2s 16 dopamine-rl 4.1.2 requires gym<=0.25.2, but you have gym 0.26.2 which is incompatible.
+21.4s 17 Installing pymupdf...
+23.3s 18 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 25.8/25.8 MB 70.2 MB/s eta 0:00:00
+26.6s 19 Installing Pillow...
+43.4s 20 /usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning:
+43.4s 21 Found GPU0 Tesla P100-PCIE-16GB which is of cuda capability 6.0.
+43.4s 22 Minimum and Maximum cuda capability supported by this version of PyTorch is
+43.4s 23 (7.0) - (12.0)
+43.4s 24 
+43.4s 25 queued_call()
+43.4s 26 /usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning:
+43.4s 27 Please install PyTorch with a following CUDA
+43.4s 28 configurations:  12.6 following instructions at
+43.4s 29 https://pytorch.org/get-started/locally/
+43.4s 30 
+43.4s 31 queued_call()
+43.4s 32 /usr/local/lib/python3.12/dist-packages/torch/cuda/__init__.py:435: UserWarning:
+43.4s 33 Tesla P100-PCIE-16GB with CUDA capability sm_60 is not compatible with the current PyTorch installation.
+43.4s 34 The current PyTorch install supports CUDA capabilities sm_70 sm_75 sm_80 sm_86 sm_90 sm_100 sm_120.
+43.4s 35 If you want to use the Tesla P100-PCIE-16GB GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+43.4s 36 
+43.4s 37 queued_call()
+71.4s 38 Installing supabase...
+73.4s 39 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 3.4 MB/s eta 0:00:00
+76.2s 40 PyTorch Version: 2.10.0+cu128
+76.2s 41 CUDA Available: True
+76.2s 42 GPU Device: Tesla P100-PCIE-16GB
+76.2s 43 === [2/6] Connecting to Supabase & Ensuring Schema ===
+77.5s 44 Subject SSC-PHY ID: 5c4d9443-cc92-4ab1-b602-b2caf9f79850
+82.3s 45 Seeded 14 chapters.
+82.3s 46 === [3/6] Locating Input PDFs ===
+82.3s 47 Discovered 2 PDF files: ['/kaggle/input/datasets/syed181/sheratutor-physics-textbooks/physics_bn.pdf', '/kaggle/input/datasets/syed181/sheratutor-physics-textbooks/physics_en.pdf']
+82.3s 48 Bangla PDF: /kaggle/input/datasets/syed181/sheratutor-physics-textbooks/physics_bn.pdf
+82.3s 49 English PDF: /kaggle/input/datasets/syed181/sheratutor-physics-textbooks/physics_en.pdf
+82.3s 50 === [4/6] Initializing Surya OCR & BGE-M3 on PyTorch ===
+82.9s 51 Downloading text_detection model to /root/.cache/datalab/models/text_detection/2025_05_07:   0%|          | 0/6 [00:00<?, ?it/s]Downloading text_detection model to /root/.cache/datalab/models/text_detection/2025_05_07:  17%|█▋        | 1/6 [00:00<00:02,  2.24it/s]Downloading text_detection model to /root/.cache/datalab/models/text_detection/2025_05_07: 100%|██████████| 6/6 [00:00<00:00, 13.42it/s]
+129.8s 52 Downloading text_recognition model to /root/.cache/datalab/models/text_recognition/2025_05_16:   0%|          | 0/10 [00:00<?, ?it/s]Downloading text_recognition model to /root/.cache/datalab/models/text_recognition/2025_05_16:  10%|█         | 1/10 [00:46<06:58, 46.47s/it]Downloading text_recognition model to /root/.cache/datalab/models/text_recognition/2025_05_16: 100%|██████████| 10/10 [00:46<00:00,  4.65s/it]
+131.6s 53 Surya OCR Predictors initialized.
+149.5s 54 BGE-M3 Embedding model loaded on cuda (Dim: 1024)
+149.5s 55 
+149.5s 56 === [5/6] OCR & Ingesting BN (physics_bn.pdf) ===
+150.4s 57 Total Pages to Process: 366
+150.8s 58 OCR BN:   0%|          | 0/46 [00:00<?, ?it/s]
+152.9s 59 Detecting bboxes:   0%|          | 0/1 [00:00<?, ?it/s][ADetecting bboxes:   0%|          | 0/1 [00:02<?, ?it/s]
+152.9s 60 OCR BN:   0%|          | 0/46 [00:02<?, ?it/s]
+152.9s 61 Traceback (most recent call last):
+152.9s 62 File "/kaggle/src/script.py", line 310, in <module>
+152.9s 63 main()
+152.9s 64 File "/kaggle/src/script.py", line 226, in main
+152.9s 65 batch_results = rec_predictor(images, det_predictor=det_predictor)
+152.9s 66 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 67 File "/usr/local/lib/python3.12/dist-packages/surya/recognition/__init__.py", line 818, in __call__
+152.9s 68 flat = self.detect_and_slice_bboxes(
+152.9s 69 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 70 File "/usr/local/lib/python3.12/dist-packages/surya/recognition/__init__.py", line 146, in detect_and_slice_bboxes
+152.9s 71 det_predictions = det_predictor(images, batch_size=detection_batch_size)
+152.9s 72 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 73 File "/usr/local/lib/python3.12/dist-packages/surya/detection/__init__.py", line 42, in __call__
+152.9s 74 for preds, orig_sizes in detection_generator:
+152.9s 75 ^^^^^^^^^^^^^^^^^^^
+152.9s 76 File "/usr/local/lib/python3.12/dist-packages/surya/detection/__init__.py", line 116, in batch_detection
+152.9s 77 pred = self.model(
+152.9s 78 ^^^^^^^^^^^
+152.9s 79 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+152.9s 80 return self._call_impl(*args, **kwargs)
+152.9s 81 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 82 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+152.9s 83 return forward_call(*args, **kwargs)
+152.9s 84 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 85 File "/usr/local/lib/python3.12/dist-packages/surya/detection/model/encoderdecoder.py", line 740, in forward
+152.9s 86 encoder_hidden_states = self.vit(
+152.9s 87 ^^^^^^^^^
+152.9s 88 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+152.9s 89 return self._call_impl(*args, **kwargs)
+152.9s 90 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 91 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+152.9s 92 return forward_call(*args, **kwargs)
+152.9s 93 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 94 File "/usr/local/lib/python3.12/dist-packages/surya/detection/model/encoderdecoder.py", line 624, in forward
+152.9s 95 x = self.stem(x)
+152.9s 96 ^^^^^^^^^^^^
+152.9s 97 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+152.9s 98 return self._call_impl(*args, **kwargs)
+152.9s 99 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 100 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+152.9s 101 return forward_call(*args, **kwargs)
+152.9s 102 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 103 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/container.py", line 253, in forward
+152.9s 104 input = module(input)
+152.9s 105 ^^^^^^^^^^^^^
+152.9s 106 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+152.9s 107 return self._call_impl(*args, **kwargs)
+152.9s 108 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 109 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+152.9s 110 return forward_call(*args, **kwargs)
+152.9s 111 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 112 File "/usr/local/lib/python3.12/dist-packages/surya/detection/model/encoderdecoder.py", line 84, in forward
+152.9s 113 x = self.norm(x)
+152.9s 114 ^^^^^^^^^^^^
+152.9s 115 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1776, in _wrapped_call_impl
+152.9s 116 return self._call_impl(*args, **kwargs)
+152.9s 117 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 118 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1787, in _call_impl
+152.9s 119 return forward_call(*args, **kwargs)
+152.9s 120 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+152.9s 121 File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/batchnorm.py", line 194, in forward
+152.9s 122 return F.batch_norm(
+152.9s 123 ^^^^^^^^^^^^^
+152.9s 124 File "/usr/local/lib/python3.12/dist-packages/torch/nn/functional.py", line 2846, in batch_norm
+152.9s 125 return torch.batch_norm(
+152.9s 126 ^^^^^^^^^^^^^^^^^
+152.9s 127 torch.AcceleratorError: CUDA error: no kernel image is available for execution on the device
+152.9s 128 Search for `cudaErrorNoKernelImageForDevice' in https://docs.nvidia.com/cuda/cuda-runtime-api/group__CUDART__TYPES.html for more information.
+152.9s 129 CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+152.9s 130 For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+152.9s 131 Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+152.9s 132 
+160.7s 133 /usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\|'
+160.7s 134 cells[i][c] = re.sub('\\\\\|', '|', cell)
+161.0s 135 /usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\_'
+161.0s 136 text = re.sub(r'_', '\_', text) # Escape underscores in display text
+167.1s 137 [NbConvertApp] Converting notebook __script__.ipynb to html
+168.0s 138 [NbConvertApp] Writing 334440 bytes to __results__.html

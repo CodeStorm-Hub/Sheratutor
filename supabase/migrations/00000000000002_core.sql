@@ -46,10 +46,15 @@ create table public.student_profiles (
   target_exam_year int,
   overall_momentum_score numeric(5, 2) not null default 0,
   -- PDPA 2026: anyone under 18 is a "child"; verifiable guardian consent required.
+  -- NOT a generated column: current_date isn't IMMUTABLE, so Postgres rejects
+  -- age-based logic in a GENERATED ALWAYS AS STORED expression (caught when
+  -- this migration was actually applied, not just read). Set explicitly by
+  -- the app at signup from date_of_birth — which is also the semantically
+  -- correct choice: this should record "were they a minor when they
+  -- consented" for the audit trail, not silently flip to false a year later
+  -- when a recomputed-on-read value would cross 18.
   date_of_birth date,
-  is_minor boolean generated always as (
-    date_of_birth is not null and date_of_birth > (current_date - interval '18 years')
-  ) stored,
+  is_minor boolean not null default true,
   guardian_phone text,
   guardian_consent_at timestamptz,
   guardian_consent_method text, -- e.g. 'SMS_OTP'
@@ -78,6 +83,7 @@ create index idx_student_profiles_user on public.student_profiles (user_id);
 create or replace function private.set_updated_at()
 returns trigger
 language plpgsql
+set search_path = ''
 as $$
 begin
   new.updated_at = now();
