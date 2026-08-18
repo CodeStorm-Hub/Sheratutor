@@ -13,6 +13,8 @@ traces back to a specific finding in that document; comments reference it
 by section (e.g. `docs/review §7.9`) rather than re-explaining the reasoning
 inline.
 
+**Test User**: verify.tester@sheratutor.ai / VerifyPass123!
+
 ## Layout
 
 ```
