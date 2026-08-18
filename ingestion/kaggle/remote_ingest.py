@@ -222,19 +222,40 @@ def main():
         num_pages = len(doc)
         print(f"Total Pages to Process: {num_pages}", flush=True)
 
+        # Check existing ingested pages for this curriculum version to enable intelligent resume
+        existing_res = supabase.table("curriculum_chunks").select("source_book_page_ref,chunk_index").eq("curriculum_version_id", cur_version_id).execute()
+        existing_pages = set()
+        max_chunk_idx = -1
+        if existing_res.data:
+            for row in existing_res.data:
+                try:
+                    existing_pages.add(int(row["source_book_page_ref"]))
+                except (ValueError, TypeError):
+                    pass
+                if row.get("chunk_index") is not None and row["chunk_index"] > max_chunk_idx:
+                    max_chunk_idx = row["chunk_index"]
+
+        print(f"Found {len(existing_pages)} already ingested pages in Supabase for {lang.upper()}.", flush=True)
+        if len(existing_pages) >= num_pages:
+            print(f"All {num_pages} pages already fully ingested for {lang.upper()}! Skipping to next target.", flush=True)
+            continue
+
+        pages_to_process = [p for p in range(num_pages) if (p + 1) not in existing_pages]
+        print(f"Remaining pages to process for {lang.upper()}: {len(pages_to_process)} / {num_pages} (Pages {min(pages_to_process)+1} to {max(pages_to_process)+1})", flush=True)
+
         processed_chunks = []
         last_stimulus_id = None
-        global_chunk_idx = 0
+        global_chunk_idx = max_chunk_idx + 1
         current_chapter_no = 1
 
-        # Process in page batches for speed and memory efficiency
+        # Process remaining pages in batches for speed and memory efficiency
         page_batch_size = 4
-        for start_p in tqdm(range(0, num_pages, page_batch_size), desc=f"OCR {lang.upper()}"):
-            end_p = min(start_p + page_batch_size, num_pages)
+        for b_start in tqdm(range(0, len(pages_to_process), page_batch_size), desc=f"OCR {lang.upper()} (Resuming)"):
+            batch_page_indices = pages_to_process[b_start:b_start + page_batch_size]
             images = []
             page_numbers = []
 
-            for p_num in range(start_p, end_p):
+            for p_num in batch_page_indices:
                 pix = doc[p_num].get_pixmap(dpi=150)
                 img = Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
                 images.append(img)
