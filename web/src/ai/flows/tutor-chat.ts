@@ -34,18 +34,25 @@ export const ChatMessageSchema = z.object({
 });
 
 /**
- * Layer 5 / FR-CHAT-01-02: "Explain it simply" — pre-loaded with the exact
- * question, the student's answer chunk, rubric deduction details, and grounded textbook context.
- * Supports multi-turn conversation history and renders formulas using LaTeX.
- * Scoped system prompt refuses to wander into unrelated territory; minor-safety pre-filter protects against distress.
+ * Layer 5 / FR-CHAT-01-02: "Explain it simply" AI tutor. Two modes:
+ *   'rubric'  — pre-loaded with the exact question, the student's answer
+ *               chunk, and rubric deduction details (the original per-step panel).
+ *   'general' — open subject tutoring from the standalone /dashboard/tutor
+ *               page, grounded against a chosen subject/chapter instead of
+ *               a specific graded question.
+ * Both support multi-turn history, render formulas in LaTeX, and share the
+ * same minor-safety pre-filter and off-topic redirect rules.
  */
 export const tutorChatFlow = ai.defineFlow(
   {
     name: "tutorChat",
     inputSchema: z.object({
-      questionText: z.string(),
-      studentAnswerChunk: z.string(),
-      rubricFailureReason: z.string(),
+      mode: z.enum(["rubric", "general"]).default("rubric"),
+      questionText: z.string().optional(),
+      studentAnswerChunk: z.string().optional(),
+      rubricFailureReason: z.string().optional(),
+      subjectName: z.string().optional(),
+      chapterName: z.string().optional(),
       groundedContext: z.string().optional(),
       history: z.array(ChatMessageSchema).optional().default([]),
       studentMessage: z.string(),
@@ -57,9 +64,12 @@ export const tutorChatFlow = ai.defineFlow(
     }),
   },
   async ({
+    mode,
     questionText,
     studentAnswerChunk,
     rubricFailureReason,
+    subjectName,
+    chapterName,
     groundedContext,
     history = [],
     studentMessage,
@@ -85,20 +95,39 @@ export const tutorChatFlow = ai.defineFlow(
       ? `\n\nOFFICIAL NCTB TEXTBOOK CONTEXT:\n${groundedContext}\n`
       : "";
 
+    const roleIntro =
+      mode === "rubric"
+        ? `Your job is to explain why marks were deducted and help the student understand ` +
+          `the underlying concept thoroughly using plain-language analogies, clear step-by-step logic, and encouraging feedback.`
+        : `Your job is to answer the student's subject questions directly and thoroughly, using plain-language ` +
+          `analogies, clear step-by-step logic, and encouraging feedback — like a patient one-on-one tutor.`;
+
+    const academicContext =
+      mode === "rubric"
+        ? `ACADEMIC CONTEXT:\n` +
+          `QUESTION: ${questionText ?? ""}\n` +
+          `STUDENT'S ANSWER (discussed snippet): ${studentAnswerChunk ?? ""}\n` +
+          `WHY MARKS WERE LOST / RUBRIC DEDUCTION: ${rubricFailureReason ?? ""}`
+        : `ACADEMIC CONTEXT:\n` +
+          `SUBJECT: ${subjectName ?? "General"}\n` +
+          `CHAPTER: ${chapterName ?? "General"}\n` +
+          `The student is asking a free-form question about this chapter — there is no graded answer to reference.`;
+
+    const rule5 =
+      mode === "rubric"
+        ? `5. If the student asks about anything unrelated to this academic topic (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying this question.\n\n`
+        : `5. If the student asks about anything unrelated to this subject/chapter (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
+
     const prompt =
       `You are SheraTutor's "Explain it simply" AI tutor, talking to a Bangladeshi SSC ` +
-      `student (age 13-19). Your job is to explain why marks were deducted and help the student understand ` +
-      `the underlying concept thoroughly using plain-language analogies, clear step-by-step logic, and encouraging feedback.\n\n` +
+      `student (age 13-19). ${roleIntro}\n\n` +
       `RULES:\n` +
       `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}.\n` +
       `2. Format any mathematical formulas, physical quantities, and equations using standard LaTeX ($...$ for inline, $$...$$ for block equations). Examples: $s = ut + \\frac{1}{2}at^2$, $F = ma$, $v = \\frac{s}{t}$, $\\text{ms}^{-1}$.\n` +
       `3. Always adhere to official NCTB textbook physics terminology.\n` +
       `4. If the student asks for real-life analogies, give relatable examples (e.g. Dhaka traffic, bicycle motion, cricket ball throwing, electric fans).\n` +
-      `5. If the student asks about anything unrelated to this academic topic (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying this question.\n\n` +
-      `ACADEMIC CONTEXT:\n` +
-      `QUESTION: ${questionText}\n` +
-      `STUDENT'S ANSWER (discussed snippet): ${studentAnswerChunk}\n` +
-      `WHY MARKS WERE LOST / RUBRIC DEDUCTION: ${rubricFailureReason}` +
+      rule5 +
+      academicContext +
       textbookSection +
       historyPrompt +
       `\n\nSTUDENT: ${studentMessage}\n\nAI TUTOR:`;

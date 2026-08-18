@@ -4,14 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { ExplainSimplyButton } from "@/components/explain-simply-button";
-
-const STATUS_LABEL: Record<string, string> = {
-  QUEUED: "Queued",
-  OCR_PROCESSING: "Reading your handwriting…",
-  EVALUATING: "Grading against the rubric…",
-  COMPLETED: "Graded",
-  FAILED: "Something went wrong",
-};
+import { submissionStatusLabel } from "@/lib/submission-status";
 
 export default async function SubmissionPage({ params }: PageProps<"/dashboard/submissions/[id]">) {
   const { id } = await params;
@@ -50,7 +43,7 @@ export default async function SubmissionPage({ params }: PageProps<"/dashboard/s
           <div className="flex items-center justify-between">
             <CardTitle className="eyebrow text-xs text-muted-foreground">Status</CardTitle>
             <Badge variant={submission.status === "COMPLETED" ? "default" : "secondary"}>
-              {STATUS_LABEL[submission.status] ?? submission.status}
+              {submissionStatusLabel(submission.status)}
             </Badge>
           </div>
         </CardHeader>
@@ -89,6 +82,9 @@ export default async function SubmissionPage({ params }: PageProps<"/dashboard/s
                       stepName={String(criterion.step_name)}
                       observation={String(criterion.observation)}
                       studentAnswerChunk={String(criterion.observation)}
+                      submissionId={id}
+                      questionId={r.question_id}
+                      rubricStepIndex={idx}
                     />
                   </div>
                 </div>
