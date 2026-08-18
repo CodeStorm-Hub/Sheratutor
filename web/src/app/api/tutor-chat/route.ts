@@ -10,13 +10,22 @@ export async function POST(request: Request) {
   } = await supabase.auth.getUser();
   if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
 
-  const { questionText, studentAnswerChunk, rubricFailureReason, studentMessage, languagePreference } =
-    await request.json();
+  const {
+    questionText,
+    studentAnswerChunk,
+    rubricFailureReason,
+    groundedContext,
+    history,
+    studentMessage,
+    languagePreference,
+  } = await request.json();
 
   const result = await tutorChatFlow({
     questionText,
     studentAnswerChunk,
     rubricFailureReason,
+    groundedContext,
+    history: history ?? [],
     studentMessage,
     languagePreference: languagePreference ?? "bn",
   });

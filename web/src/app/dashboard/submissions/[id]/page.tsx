@@ -85,9 +85,10 @@ export default async function SubmissionPage({ params }: PageProps<"/dashboard/s
                       {String(criterion.awarded_marks)}/{String(criterion.max_step_marks)}
                     </Badge>
                     <ExplainSimplyButton
-                      questionText={r.questions?.question_text_en ?? ""}
+                      questionText={r.questions?.question_text_bn || r.questions?.question_text_en || ""}
                       stepName={String(criterion.step_name)}
                       observation={String(criterion.observation)}
+                      studentAnswerChunk={String(criterion.observation)}
                     />
                   </div>
                 </div>

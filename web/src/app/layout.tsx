@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Baloo_2, Baloo_Da_2, Inter, Hind_Siliguri, Space_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
+import "katex/dist/katex.min.css";
 import "./globals.css";
 
 // Display: Baloo 2 for Latin, Baloo Da 2 for Bengali — same superfamily, so
