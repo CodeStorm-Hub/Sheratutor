@@ -1,0 +1,13 @@
+{
+  "id": "syed181/sheratutor-physics-ingest",
+  "title": "SheraTutor Physics Ingest",
+  "code_file": "remote_ingest.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": [
+    "syed181/sheratutor-physics-textbooks"
+  ]
+}

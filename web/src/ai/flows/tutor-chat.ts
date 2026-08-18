@@ -28,20 +28,33 @@ export const SAFE_ESCALATION_MESSAGE_BN =
   "তোমার কথা শুনে আমি চিন্তিত। আমি একজন AI টিউটর, এই বিষয়ে সাহায্য করতে পারবো না। " +
   "অনুগ্রহ করে এখনই কাছের কোনো বিশ্বস্ত বড় মানুষ, শিক্ষক বা Kaan Pete Roi (হেল্পলাইন: ০৯৬১৩৪২৭৮০০) এর সাথে কথা বলো।";
 
+export const ChatMessageSchema = z.object({
+  role: z.enum(["student", "tutor"]),
+  text: z.string(),
+});
+
 /**
- * Layer 5 / FR-CHAT-01-02: "Explain it simply" — pre-loaded with the exact
- * question, the student's answer chunk, and the rubric failure reason.
- * Scoped system prompt refuses to wander into unrelated territory; a minor
- * talking to an open-ended agent with no topic boundary was flagged as a
- * real risk in review, not just a nice-to-have.
+ * Layer 5 / FR-CHAT-01-02: "Explain it simply" AI tutor. Two modes:
+ *   'rubric'  — pre-loaded with the exact question, the student's answer
+ *               chunk, and rubric deduction details (the original per-step panel).
+ *   'general' — open subject tutoring from the standalone /dashboard/tutor
+ *               page, grounded against a chosen subject/chapter instead of
+ *               a specific graded question.
+ * Both support multi-turn history, render formulas in LaTeX, and share the
+ * same minor-safety pre-filter and off-topic redirect rules.
  */
 export const tutorChatFlow = ai.defineFlow(
   {
     name: "tutorChat",
     inputSchema: z.object({
-      questionText: z.string(),
-      studentAnswerChunk: z.string(),
-      rubricFailureReason: z.string(),
+      mode: z.enum(["rubric", "general"]).default("rubric"),
+      questionText: z.string().optional(),
+      studentAnswerChunk: z.string().optional(),
+      rubricFailureReason: z.string().optional(),
+      subjectName: z.string().optional(),
+      chapterName: z.string().optional(),
+      groundedContext: z.string().optional(),
+      history: z.array(ChatMessageSchema).optional().default([]),
       studentMessage: z.string(),
       languagePreference: z.enum(["bn", "en"]).default("bn"),
     }),
@@ -50,25 +63,78 @@ export const tutorChatFlow = ai.defineFlow(
       safety: SafetyCheckResult,
     }),
   },
-  async ({ questionText, studentAnswerChunk, rubricFailureReason, studentMessage, languagePreference }) => {
+  async ({
+    mode,
+    questionText,
+    studentAnswerChunk,
+    rubricFailureReason,
+    subjectName,
+    chapterName,
+    groundedContext,
+    history = [],
+    studentMessage,
+    languagePreference,
+  }) => {
     const safety = preFilterSafety(studentMessage);
     if (safety.flagged) {
       return { reply: SAFE_ESCALATION_MESSAGE_BN, safety };
     }
 
+    const historyPrompt =
+      history.length > 0
+        ? `\n\nCONVERSATION HISTORY:\n` +
+          history
+            .map(
+              (m) =>
+                `${m.role === "student" ? "STUDENT" : "AI TUTOR"}: ${m.text}`
+            )
+            .join("\n")
+        : "";
+
+    const textbookSection = groundedContext
+      ? `\n\nOFFICIAL NCTB TEXTBOOK CONTEXT:\n${groundedContext}\n`
+      : "";
+
+    const roleIntro =
+      mode === "rubric"
+        ? `Your job is to explain why marks were deducted and help the student understand ` +
+          `the underlying concept thoroughly using plain-language analogies, clear step-by-step logic, and encouraging feedback.`
+        : `Your job is to answer the student's subject questions directly and thoroughly, using plain-language ` +
+          `analogies, clear step-by-step logic, and encouraging feedback — like a patient one-on-one tutor.`;
+
+    const academicContext =
+      mode === "rubric"
+        ? `ACADEMIC CONTEXT:\n` +
+          `QUESTION: ${questionText ?? ""}\n` +
+          `STUDENT'S ANSWER (discussed snippet): ${studentAnswerChunk ?? ""}\n` +
+          `WHY MARKS WERE LOST / RUBRIC DEDUCTION: ${rubricFailureReason ?? ""}`
+        : `ACADEMIC CONTEXT:\n` +
+          `SUBJECT: ${subjectName ?? "General"}\n` +
+          `CHAPTER: ${chapterName ?? "General"}\n` +
+          `The student is asking a free-form question about this chapter — there is no graded answer to reference.`;
+
+    const rule5 =
+      mode === "rubric"
+        ? `5. If the student asks about anything unrelated to this academic topic (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying this question.\n\n`
+        : `5. If the student asks about anything unrelated to this subject/chapter (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
+
+    const prompt =
+      `You are SheraTutor's "Explain it simply" AI tutor, talking to a Bangladeshi SSC ` +
+      `student (age 13-19). ${roleIntro}\n\n` +
+      `RULES:\n` +
+      `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}.\n` +
+      `2. Format any mathematical formulas, physical quantities, and equations using standard LaTeX ($...$ for inline, $$...$$ for block equations). Examples: $s = ut + \\frac{1}{2}at^2$, $F = ma$, $v = \\frac{s}{t}$, $\\text{ms}^{-1}$.\n` +
+      `3. Always adhere to official NCTB textbook physics terminology.\n` +
+      `4. If the student asks for real-life analogies, give relatable examples (e.g. Dhaka traffic, bicycle motion, cricket ball throwing, electric fans).\n` +
+      rule5 +
+      academicContext +
+      textbookSection +
+      historyPrompt +
+      `\n\nSTUDENT: ${studentMessage}\n\nAI TUTOR:`;
+
     const { text } = await ai.generate({
       model: MODELS.reasoning,
-      prompt:
-        `You are SheraTutor's "Explain it simply" AI tutor, talking to a Bangladeshi SSC ` +
-        `student (age 13-19). Stay strictly scoped to explaining the academic concept below using ` +
-        `plain-language analogies appropriate for a teenager. Reply in ${languagePreference === "bn" ? "natural conversational Bangla" : "plain English"}.\n\n` +
-        `If the student asks about anything unrelated to this academic topic (personal advice, ` +
-        `other subjects entirely unprompted, anything inappropriate), gently redirect them back to ` +
-        `studying this question rather than answering off-topic.\n\n` +
-        `QUESTION: ${questionText}\n` +
-        `STUDENT'S ANSWER (the part being discussed): ${studentAnswerChunk}\n` +
-        `WHY MARKS WERE LOST: ${rubricFailureReason}\n\n` +
-        `STUDENT: ${studentMessage}`,
+      prompt,
       config: { temperature: 0.5 },
     });
 
