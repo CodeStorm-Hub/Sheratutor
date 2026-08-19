@@ -57,15 +57,18 @@ export const ai = genkit({
 });
 
 export const MODELS = {
-  // nvidia/nemotron-nano-12b-v2-vl — verified live against this NIM account
-  // 2026-08-13: image_url content, text chat, and response_format
-  // json_schema all confirmed working via direct curl tests. NOT
+  // nvidia/nemotron-nano-12b-v2-vl (2026-08-13 pick) carries a `deprecation:
+  // 2026-08-26T09:00:00Z` response header — confirmed live 2026-08-19, one
+  // week before it stops working. Replaced with
+  // nvidia/nemotron-3-nano-omni-30b-a3b-reasoning: no deprecation header,
+  // and verified live against this NIM account — image_url content, text
+  // chat, and response_format json_schema all confirmed working. NOT
   // qwen/qwen3.6-* — that model does not exist on this account's /v1/models
   // catalog (404), despite web documentation suggesting it should. NIM's
   // catalog is account/region-gated; verify against the live /v1/models
   // endpoint before trusting third-party docs on model availability again.
-  vision: process.env.GENKIT_VISION_MODEL ?? "nim/nvidia/nemotron-nano-12b-v2-vl",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/nvidia/nemotron-nano-12b-v2-vl",
+  vision: process.env.GENKIT_VISION_MODEL ?? "nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
 } as const;
 
 // Local dev uses BGE-M3 via Ollama (no rate limit, native 1024-dim, strong
