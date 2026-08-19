@@ -18,7 +18,7 @@ type SessionSummary = {
 
 const WELCOME: TutorChatMessage = {
   role: "assistant",
-  text: "নমস্কার! একটি বিষয় ও অধ্যায় বেছে নাও, তারপর তোমার প্রশ্ন লেখো — আমি NCTB পাঠ্যবই অনুযায়ী সহজ করে বুঝিয়ে দেবো।",
+  text: "একটি বিষয় ও অধ্যায় বেছে নাও, তারপর তোমার প্রশ্ন লেখো — আমি NCTB পাঠ্যবই অনুযায়ী সহজ করে বুঝিয়ে দেবো।",
 };
 
 export function TutorPageClient({
