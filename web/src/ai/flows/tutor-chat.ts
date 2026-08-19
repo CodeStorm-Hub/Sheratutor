@@ -28,6 +28,21 @@ export const SAFE_ESCALATION_MESSAGE_BN =
   "তোমার কথা শুনে আমি চিন্তিত। আমি একজন AI টিউটর, এই বিষয়ে সাহায্য করতে পারবো না। " +
   "অনুগ্রহ করে এখনই কাছের কোনো বিশ্বস্ত বড় মানুষ, শিক্ষক বা Kaan Pete Roi (হেল্পলাইন: ০৯৬১৩৪২৭৮০০) এর সাথে কথা বলো।";
 
+/**
+ * Safety net for models that ignore rule #2 and wrap math in plain ()/[]
+ * instead of $/$$ — remark-math only recognizes dollar delimiters, so
+ * anything else renders as literal text. Only touches parens/brackets that
+ * contain a LaTeX command (a backslash + letters, e.g. \frac, \Delta) so
+ * ordinary prose parentheses are left alone.
+ */
+function normalizeLatexDelimiters(text: string): string {
+  return text
+    .replace(/\\\[([\s\S]*?)\\\]/g, (_, inner) => `$$${inner}$$`)
+    .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner}$`)
+    .replace(/\(([^()\n]*\\[a-zA-Z][^()\n]*)\)/g, (_, inner) => `$${inner}$`)
+    .replace(/\[([^[\]\n]*\\[a-zA-Z][^[\]\n]*)\]/g, (_, inner) => `$$${inner}$$`);
+}
+
 export const ChatMessageSchema = z.object({
   role: z.enum(["student", "tutor"]),
   text: z.string(),
@@ -123,7 +138,9 @@ export const tutorChatFlow = ai.defineFlow(
       `student (age 13-19). ${roleIntro}\n\n` +
       `RULES:\n` +
       `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}.\n` +
-      `2. Format any mathematical formulas, physical quantities, and equations using standard LaTeX ($...$ for inline, $$...$$ for block equations). Examples: $s = ut + \\frac{1}{2}at^2$, $F = ma$, $v = \\frac{s}{t}$, $\\text{ms}^{-1}$.\n` +
+      `2. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters — $...$ for inline, $$...$$ for a standalone block equation. NEVER wrap math in plain parentheses () or square brackets [] instead of $ — those render as literal text, not math, and are wrong. ` +
+      `Correct: $a = \\frac{\\Delta v}{\\Delta t}$, $s = ut + \\frac{1}{2}at^2$, $F = ma$, $\\text{ms}^{-1}$. ` +
+      `Incorrect — do not do this: (a = \\frac{\\Delta v}{\\Delta t}), [F = ma].\n` +
       `3. Always adhere to official NCTB textbook physics terminology.\n` +
       `4. If the student asks for real-life analogies, give relatable examples (e.g. Dhaka traffic, bicycle motion, cricket ball throwing, electric fans).\n` +
       rule5 +
@@ -151,6 +168,6 @@ export const tutorChatFlow = ai.defineFlow(
       throw err;
     }
 
-    return { reply: text, safety };
+    return { reply: normalizeLatexDelimiters(text), safety };
   }
 );
