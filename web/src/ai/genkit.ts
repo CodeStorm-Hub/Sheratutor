@@ -12,6 +12,25 @@ import { ollama } from "genkitx-ollama";
  * and shows where NIM quality actually falls short (see ingestion/README.md
  * "Golden dataset" section). Swap a MODELS.* value to `fireworks/...` any
  * time; the plugin is already registered below.
+ *
+ * Embedder pivot (2026-08-19): local Ollama (bge-m3) has no reachable
+ * equivalent on Vercel — 127.0.0.1:11434 only exists on a dev machine, and
+ * Ollama can't be hosted ON Vercel either (needs a persistent daemon holding
+ * model weights in memory; Vercel functions are stateless/short-lived). True
+ * bge-m3 isn't available hosted for free anywhere reachable from Vercel
+ * either (checked NIM's and Alibaba's live /v1/models catalogs — neither
+ * carries it). Tried Alibaba Model Studio's text-embedding-v4 first, but its
+ * free quota status turned out to be uncertain (pay-as-you-go pricing behind
+ * it) — reverted in favor of NIM. Tried nv-embedqa-e5-v5 next (1024-dim
+ * native) but it has only a 512-token context — most real textbook chunks
+ * here (median 1579 chars) blew past that and got rejected outright. Settled
+ * on llama-nemotron-embed-1b-v2 with `dimensions: 1024` in the request body
+ * (Matryoshka truncation — verified live against the actual longest chunk in
+ * this corpus, 3261 chars, no error) — same 1024-dim column, real context
+ * room, and NIM's free tier is a fixed request/credit allowance with no card
+ * on file, so no billing-surprise risk. `process.env.VERCEL` is set
+ * automatically on every Vercel environment, so no new env var is needed to
+ * pick the right embedder.
  */
 
 const NIM_BASE_URL = "https://integrate.api.nvidia.com/v1";
@@ -49,15 +68,19 @@ export const MODELS = {
   reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/nvidia/nemotron-nano-12b-v2-vl",
 } as const;
 
-// nvidia/llama-3.2-nv-embedqa-1b-v2 (last turn's choice) returned HTTP 410 —
-// retired 2026-05-18. llama-nemotron-embed-1b-v2 was its replacement but is
-// severely bottlenecked by NIM's free tier 40 RPM limit. We have pivoted to
-// using the local BGE-M3 model via Ollama, removing all rate limits and
-// providing native 1024-dim support, which matches our existing Supabase schema,
-// and offers phenomenal multilingual (Bengali) support.
+// Local dev uses BGE-M3 via Ollama (no rate limit, native 1024-dim, strong
+// Bengali support). Production (no reachable Ollama) uses NIM's
+// llama-nemotron-embed-1b-v2, native 2048-dim truncated to 1024 via the
+// `dimensions` param — see the embedder-pivot note above for why, and why
+// not nv-embedqa-e5-v5 (1024 native, but 512-token context, too small for
+// this corpus's real chunks).
 const OLLAMA_EMBED_MODEL = "bge-m3";
 const OLLAMA_EMBED_MODEL_VERSION = "v1";
 const OLLAMA_EMBED_DIMENSIONS = 1024; // matches chunk_embeddings.embedding vector(1024) — no migration needed
+
+const NIM_EMBED_MODEL = "nvidia/llama-nemotron-embed-1b-v2";
+const NIM_EMBED_MODEL_VERSION = "v1";
+const NIM_EMBED_DIMENSIONS = 1024; // truncated via `dimensions` param — native is 2048; matches OLLAMA_EMBED_DIMENSIONS
 
 /**
  * Custom embedder using Ollama's /api/embeddings endpoint. We define this 
@@ -104,8 +127,55 @@ export const ollamaEmbedder = ai.defineEmbedder(
   }
 );
 
-export const EMBED_MODEL_NAME = OLLAMA_EMBED_MODEL;
-export const EMBED_MODEL_VERSION = OLLAMA_EMBED_MODEL_VERSION;
+/**
+ * Query embedder using NIM's hosted llama-nemotron-embed-1b-v2 (/embeddings,
+ * OpenAI-style body, native 2048-dim truncated to 1024 via `dimensions`).
+ * Used instead of ollamaEmbedder wherever Ollama isn't reachable — i.e.
+ * every Vercel environment. NIM's input_type values differ from Ollama's, so
+ * this is a separate embedder rather than a baseUrl swap on ollamaEmbedder.
+ */
+export const nimEmbedder = ai.defineEmbedder(
+  {
+    name: "nim/llama-nemotron-embed-1b-v2",
+    configSchema: z.object({
+      inputType: z.enum(["query", "passage"]).default("passage"),
+    }),
+    info: {
+      dimensions: NIM_EMBED_DIMENSIONS,
+      label: "NIM — llama-nemotron-embed-1b-v2",
+      supports: { input: ["text"] },
+    },
+  },
+  async (docs, options) => {
+    const res = await fetch(`${NIM_BASE_URL}/embeddings`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${process.env.NVIDIA_NIM_API_KEY ?? "unset"}`,
+      },
+      body: JSON.stringify({
+        model: NIM_EMBED_MODEL,
+        input: docs.map((d) => d.text),
+        input_type: options?.inputType ?? "passage",
+        dimensions: NIM_EMBED_DIMENSIONS,
+      }),
+    });
+    if (!res.ok) {
+      throw new Error(`nimEmbedder: ${res.status} ${await res.text()}`);
+    }
+    const json = (await res.json()) as { data: { embedding: number[] }[] };
+    return { embeddings: json.data.map((d) => ({ embedding: d.embedding })) };
+  }
+);
+
+// Vercel sets `VERCEL` on every deployed environment (production, preview,
+// and its own dev proxy) — nothing exists at that address there, so this is
+// the one reliable signal to route embeddings to NIM instead of Ollama.
+const IS_VERCEL = Boolean(process.env.VERCEL);
+
+export const activeEmbedder = IS_VERCEL ? nimEmbedder : ollamaEmbedder;
+export const EMBED_MODEL_NAME = IS_VERCEL ? NIM_EMBED_MODEL : OLLAMA_EMBED_MODEL;
+export const EMBED_MODEL_VERSION = IS_VERCEL ? NIM_EMBED_MODEL_VERSION : OLLAMA_EMBED_MODEL_VERSION;
 
 export const PIPELINE_VERSION = "v1.2.0-bge-m3-pivot";
 export const PROMPT_VERSION = "v1.0.0";

@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, ollamaEmbedder, EMBED_MODEL_NAME, EMBED_MODEL_VERSION } from "@/ai/genkit";
+import { ai, activeEmbedder, EMBED_MODEL_NAME, EMBED_MODEL_VERSION } from "@/ai/genkit";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 
 const GroundingChunkSchema = z.object({
@@ -37,7 +37,7 @@ export const retrieveGroundingFlow = ai.defineFlow(
   async ({ queryText, chapterId, languageTag, matchCount }) => {
     // 1. Embed query with BGE-M3
     const embedResponse = await ai.embed({
-      embedder: ollamaEmbedder,
+      embedder: activeEmbedder,
       content: queryText,
       options: { inputType: "query" },
     });

@@ -132,11 +132,24 @@ export const tutorChatFlow = ai.defineFlow(
       historyPrompt +
       `\n\nSTUDENT: ${studentMessage}\n\nAI TUTOR:`;
 
-    const { text } = await ai.generate({
-      model: MODELS.reasoning,
-      prompt,
-      config: { temperature: 0.5 },
-    });
+    let text: string;
+    try {
+      ({ text } = await ai.generate({
+        model: MODELS.reasoning,
+        prompt,
+        config: { temperature: 0.5 },
+      }));
+    } catch (err) {
+      // The OpenAI SDK's APIConnectionError (surfaced by genkit as "Connection
+      // error.") hides the actual network failure — log err.cause so a prod
+      // 500 shows the real reason (DNS, timeout, refused, TLS) instead of
+      // just that generic message.
+      console.error("tutorChatFlow: ai.generate failed", {
+        message: err instanceof Error ? err.message : err,
+        cause: err instanceof Error ? err.cause : undefined,
+      });
+      throw err;
+    }
 
     return { reply: text, safety };
   }
