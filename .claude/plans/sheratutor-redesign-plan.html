@@ -1,0 +1,313 @@
+<title>SheraTutor Redesign Plan</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wdth,wght@75..125,300..800&family=Noto+Sans+Bengali:wght@400;500;600;700&family=Tiro+Bangla&family=Space+Mono:wght@700&display=swap">
+<style>
+  :root {
+    --paper: #f7f8f5;
+    --card: #ffffff;
+    --ink: #14251f;
+    --ink-soft: #52655d;
+    --line: #dde4dd;
+    --green: #006a4e;
+    --green-soft: #e2f0e9;
+    --red: #d92638;
+    --red-soft: #fdeaec;
+    --chalk-yellow: #b97f08;
+    --yellow-soft: #fbf3dc;
+    --mono: "Space Mono", monospace;
+    --display: "Anek Bangla", "Noto Sans Bengali", sans-serif;
+    --body: "Noto Sans Bengali", system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #0f1c17;
+      --card: #16261f;
+      --ink: #e8efe9;
+      --ink-soft: #9db3a8;
+      --line: #27392f;
+      --green: #34b98a;
+      --green-soft: #123527;
+      --red: #ff6b7a;
+      --red-soft: #3a1a1f;
+      --chalk-yellow: #e6c35c;
+      --yellow-soft: #33290f;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #0f1c17;
+    --card: #16261f;
+    --ink: #e8efe9;
+    --ink-soft: #9db3a8;
+    --line: #27392f;
+    --green: #34b98a;
+    --green-soft: #123527;
+    --red: #ff6b7a;
+    --red-soft: #3a1a1f;
+    --chalk-yellow: #e6c35c;
+    --yellow-soft: #33290f;
+  }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--body);
+    line-height: 1.65;
+    margin: 0;
+    padding: 2.5rem 1.25rem 5rem;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  h1, h2, h3, h4 { font-family: var(--display); line-height: 1.2; text-wrap: balance; }
+  h1 { font-size: 2.4rem; font-weight: 800; margin: 0.4rem 0 0.6rem; }
+  h2 {
+    font-size: 1.5rem; font-weight: 700; margin: 3rem 0 0.8rem;
+    padding-left: 0.9rem; border-left: 3px solid var(--red);
+  }
+  h3 { font-size: 1.12rem; font-weight: 700; margin: 1.8rem 0 0.5rem; }
+  p, li { max-width: 70ch; }
+  a { color: var(--green); }
+  .eyebrow {
+    font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--red); font-weight: 700;
+  }
+  .lede { font-size: 1.08rem; color: var(--ink-soft); max-width: 62ch; }
+  table {
+    border-collapse: collapse; width: 100%; font-size: 0.88rem;
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden;
+  }
+  .table-scroll { overflow-x: auto; margin: 1rem 0; }
+  th, td { padding: 0.55rem 0.8rem; text-align: left; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-family: var(--display); font-weight: 700; font-size: 0.8rem; background: var(--green-soft); }
+  tr:last-child td { border-bottom: 0; }
+  code, .code {
+    font-family: var(--mono); font-size: 0.82em; background: var(--green-soft);
+    padding: 0.1em 0.35em; border-radius: 4px;
+  }
+  pre {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 1rem; overflow-x: auto; font-size: 0.82rem;
+  }
+  pre code { background: none; padding: 0; }
+  .pill {
+    display: inline-block; font-family: var(--mono); font-size: 0.68rem; font-weight: 700;
+    padding: 0.15em 0.6em; border-radius: 99px; letter-spacing: 0.05em;
+  }
+  .pill.go { background: var(--green-soft); color: var(--green); }
+  .pill.hold { background: var(--yellow-soft); color: var(--chalk-yellow); }
+  .pill.risk { background: var(--red-soft); color: var(--red); }
+  .swatches { display: flex; flex-wrap: wrap; gap: 0.7rem; margin: 1rem 0; }
+  .sw { width: 128px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--card); }
+  .sw .chip { height: 56px; }
+  .sw .meta { padding: 0.4rem 0.55rem; font-size: 0.7rem; font-family: var(--mono); }
+  .fontcard {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 1.1rem 1.3rem; margin: 0.8rem 0;
+  }
+  .fontcard .sample-display { font-family: var(--display); font-size: 1.7rem; font-weight: 700; }
+  .fontcard .sample-serif { font-family: "Tiro Bangla", serif; font-size: 1.5rem; }
+  .fontcard .sample-body { font-size: 1rem; }
+  .fontcard .label { font-family: var(--mono); font-size: 0.68rem; color: var(--ink-soft); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 0.3rem; }
+  .note {
+    background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--green);
+    border-radius: 8px; padding: 0.8rem 1rem; font-size: 0.9rem; margin: 1rem 0;
+  }
+  .note.warn { border-left-color: var(--red); }
+  .phase {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 1rem 1.3rem; margin: 0.8rem 0;
+  }
+  .phase h4 { margin: 0 0 0.4rem; font-size: 1rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.25rem 0; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+  footer { margin-top: 3rem; font-size: 0.8rem; color: var(--ink-soft); }
+</style>
+
+<div class="wrap">
+  <span class="eyebrow">Redesign &amp; Modernization Plan · 21 Aug 2026</span>
+  <h1>SheraTutor Redesign Plan</h1>
+  <p class="lede">A full UI/UX redesign and dependency-modernization plan for the SheraTutor web app (Next.js 16 App Router) — Bangladesh's AI board examiner for SSC &amp; HSC students. Bangla-first, mobile-first, built on a new "খাতা" (exam script) visual identity.</p>
+
+  <h2>1 · What exists today — full inventory</h2>
+
+  <h3>Pages (12 routes)</h3>
+  <div class="table-scroll"><table>
+    <tr><th>Route</th><th>What it does</th><th>Notes from the audit</th></tr>
+    <tr><td><code>/</code></td><td>Landing + waitlist form</td><td>Static hero, 3 value cards, no product visuals, no Bangla copy despite <code>lang="bn"</code></td></tr>
+    <tr><td><code>/login</code>, <code>/signup</code></td><td>Email auth (Supabase)</td><td>Plain centered forms, English-only</td></tr>
+    <tr><td><code>/onboarding</code></td><td>Exam profile + PDPA-2026 guardian consent</td><td>One long form; the consent block is legally load-bearing but visually buried</td></tr>
+    <tr><td><code>/dashboard</code></td><td>Momentum score, quick wins, weakness heatmap, recent submissions</td><td>The heatmap encodes meaning only through color — inaccessible and unexplained</td></tr>
+    <tr><td><code>/dashboard/upload</code></td><td>Multi-page script photo upload</td><td>Desktop-file-picker mindset; students will use a phone camera</td></tr>
+    <tr><td><code>/dashboard/submissions</code> + <code>/[id]</code></td><td>List + graded result with per-rubric-step breakdown, transcript flagging, "explain simply"</td><td>The product's hero moment, rendered as generic cards</td></tr>
+    <tr><td><code>/dashboard/tutor</code></td><td>RAG tutor chat (Bangla), sessions sidebar</td><td>Fixed 256 px sidebar — breaks on mobile; only truly Bangla page</td></tr>
+    <tr><td><code>/dashboard/study-plan</code></td><td>14-day weakness-weighted plan</td><td>Grid of day cards; no notion of "today"</td></tr>
+    <tr><td><code>/dashboard/practice/generate</code></td><td>AI question-paper generator</td><td>Unlinked from the nav — effectively a hidden feature</td></tr>
+    <tr><td><code>/dashboard/profile</code></td><td>Profile edit</td><td>Basic form</td></tr>
+  </table></div>
+
+  <h3>Components</h3>
+  <p>7 app components (<code>dashboard-nav</code>, <code>upload-form</code>, <code>tutor-chat-panel</code>, <code>tutor-page-client</code>, <code>page-transcription-card</code>, <code>explain-simply-button</code>, <code>waitlist-form</code>, <code>logo</code>) + 17 shadcn/ui primitives (avatar, badge, button, card, checkbox, dialog, dropdown-menu, input, label, progress, scroll-area, select, separator, sheet, skeleton, sonner, tabs, textarea) — already on the modern unified <code>radix-ui</code> package and Tailwind v4 <code>@theme</code> tokens.</p>
+
+  <h3>Backend surface (redesign must not break)</h3>
+  <ul>
+    <li><strong>API routes:</strong> <code>/api/tutor-chat</code> (+ sessions), <code>/api/submissions</code> (+ page flagging), <code>/api/internal/process-grading-queue</code>, <code>/auth/callback</code></li>
+    <li><strong>Server actions:</strong> auth, onboarding, profile, study-plan, waitlist, generate-paper</li>
+    <li><strong>Genkit flows:</strong> <code>tutor-chat</code>, <code>grade-submission</code>, <code>transcribe</code>, <code>evaluate-rubric</code>, <code>retrieve-grounding</code>, <code>generate-question-paper</code> — running on NVIDIA NIM (default) / Ollama (local dev) / Fireworks (registered, held back), with a Vercel-aware embedder switch</li>
+    <li><strong>Supabase:</strong> SSR auth via <code>@supabase/ssr</code> middleware, tables incl. <code>student_profiles</code>, <code>exam_submissions</code>, <code>grading_results</code>, <code>submission_pages</code>, <code>weakness_logs</code>, <code>study_plans</code>, <code>chapters/subjects</code>, <code>chunk_embeddings</code> (pgvector 1024-dim)</li>
+  </ul>
+
+  <h2>2 · Package audit — what to update, what to hold</h2>
+  <p>Verified against the npm registry on 21 Aug 2026. The stack is remarkably current; only two safe bumps exist, and three tempting majors should be deliberately held.</p>
+  <div class="table-scroll"><table>
+    <tr><th>Package</th><th>Current</th><th>Latest</th><th>Verdict</th></tr>
+    <tr><td>next + eslint-config-next</td><td>16.3.0</td><td>16.3.1</td><td><span class="pill go">UPDATE</span> patch release</td></tr>
+    <tr><td>lucide-react</td><td>1.31.0</td><td>1.33.0</td><td><span class="pill go">UPDATE</span></td></tr>
+    <tr><td>shadcn (CLI)</td><td>4.17.0</td><td>4.18.0</td><td><span class="pill go">UPDATE</span></td></tr>
+    <tr><td>dotenv</td><td>16.6.1</td><td>17.4.2</td><td><span class="pill go">UPDATE</span> dev-only, trivial major</td></tr>
+    <tr><td>@types/node</td><td>20.x</td><td>26.x</td><td><span class="pill go">UPDATE to 24.x</span> — match the Node 24 runtime actually in use, not "latest"</td></tr>
+    <tr><td>genkit / @genkit-ai/next / compat-oai / genkitx-ollama</td><td>1.41.0</td><td>1.41.0</td><td><span class="pill go">CURRENT</span> already latest</td></tr>
+    <tr><td>react / react-dom</td><td>19.2.8</td><td>19.2.8</td><td><span class="pill go">CURRENT</span></td></tr>
+    <tr><td>tailwindcss, supabase-js, @supabase/ssr, sonner, next-themes, katex, react-markdown, radix-ui, tw-animate-css, cva, clsx, tailwind-merge</td><td>—</td><td>—</td><td><span class="pill go">CURRENT</span></td></tr>
+    <tr><td>zod</td><td>3.25.76</td><td>4.4.3</td><td><span class="pill hold">HOLD</span> <code>@genkit-ai/next</code> peer-requires <code>zod ^3.24.1</code> and <code>@genkit-ai/core</code> depends on zod 3. Upgrading breaks Genkit. If you want Zod-4 APIs in app code, import from the <code>zod/v4</code> subpath (shipped inside 3.25.x) — no package change needed.</td></tr>
+    <tr><td>typescript</td><td>5.9.3</td><td>7.0.2</td><td><span class="pill hold">HOLD</span> TS 7 is the Go-native compiler (tsgo); its programmatic API breaks typescript-eslint and editor tooling until 7.1 stabilizes it. Stay on 5.9, revisit at 7.1.</td></tr>
+    <tr><td>eslint</td><td>9.39.5</td><td>10.8.1</td><td><span class="pill hold">HOLD / TEST</span> Bump only after confirming <code>eslint-config-next@16.3.1</code> declares eslint 10 peer support; flat config already in place so migration is mechanical when green.</td></tr>
+  </table></div>
+
+  <pre><code># Safe update set (run in web/)
+npm install next@16.3.1 eslint-config-next@16.3.1 lucide-react@latest shadcn@latest
+npm install -D dotenv@latest @types/node@24</code></pre>
+
+  <div class="note warn"><strong>Adjacent risk found during audit:</strong> the default NIM model note in <code>src/ai/genkit.ts</code> says the <em>previous</em> vision model carried a deprecation header for 26 Aug 2026 and was already swapped. Genkit 1.41's new official <code>genkit-plugin-middleware</code> package (smart retries, model fallbacks) is purpose-built for exactly this NIM churn — worth adopting during Phase 0.</div>
+
+  <h2>3 · Research digest (what "current" looks like)</h2>
+  <ul>
+    <li><strong>Next.js 16.3:</strong> Cache Components (<code>"use cache"</code>) make caching explicit and opt-in; <em>Instant Navigations</em> (client-side caching + Suspense + partial prefetching) makes App Router transitions feel native-app fast — directly relevant for the dashboard-tab feel on mobile. Turbopack disk caching is on by default. <code>next lint</code> is gone; run ESLint directly. Best practice: put <code>"use cache"</code> next to the data access, wrap dynamic reads in Suspense.</li>
+    <li><strong>shadcn/ui (Feb 2026):</strong> unified <code>radix-ui</code> package, <code>data-slot</code> attributes on every primitive, <code>tw-animate-css</code>, Tailwind v4 <code>@theme inline</code> tokens — this codebase already follows all of it. The redesign is a re-theming + composition job, not a component-library migration.</li>
+    <li><strong>Genkit 1.41:</strong> current latest; new middleware plugin (retries, model fallbacks, tool approval); flows + <code>@genkit-ai/next</code> handlers remain the recommended Next.js integration. Streaming flow responses to the client is supported and should replace the tutor's current blocking JSON round-trip.</li>
+    <li><strong>EdTech UX 2026:</strong> mobile-first with large CTAs; progressive disclosure (3–5 items first); AI feedback made visible and explainable; gamified momentum without dark patterns; onboarding that shows value in the first seconds; cross-device continuity.</li>
+    <li><strong>Bangla web typography:</strong> Google Fonts' Bengali coverage is now strong — <em>Noto Sans Bengali</em> (most reliable rendering, full weight axis), <em>Anek Bangla</em> (variable width+weight, contemporary UI voice, with a matching <em>Anek Latin</em> superfamily), <em>Tiro Bangla</em> (a text serif designed for Bangla literature), plus the current Hind Siliguri / Baloo Da 2. Subset with <code>next/font</code>, always declare Bengali-capable fallbacks, and test conjuncts (যুক্তাক্ষর) at small sizes.</li>
+  </ul>
+
+  <h2>4 · The new identity — «খাতা» (the exam script)</h2>
+  <p>The current brand (coral/mint/navy, bouncy Baloo) reads as a generic Western ed-app. The product's actual world is more specific and more powerful: <strong>the ruled exam khata, the examiner's red pen, and the blackboard</strong>. Every Bangladeshi student knows the red margin line down a script page and what red ink in it means. That becomes the brand.</p>
+
+  <h3>Palette</h3>
+  <div class="swatches">
+    <div class="sw"><div class="chip" style="background:#f7f8f5"></div><div class="meta">Paper #F7F8F5<br>ground (light)</div></div>
+    <div class="sw"><div class="chip" style="background:#14251f"></div><div class="meta">Slate Ink #14251F<br>text</div></div>
+    <div class="sw"><div class="chip" style="background:#006a4e"></div><div class="meta">Bottle Green #006A4E<br>primary / brand</div></div>
+    <div class="sw"><div class="chip" style="background:#d92638"></div><div class="meta">Examiner Red #D92638<br>marks, gaps, CTAs — used sparingly</div></div>
+    <div class="sw"><div class="chip" style="background:#b97f08"></div><div class="meta">Chalk Ochre #B97F08<br>review / warning</div></div>
+    <div class="sw"><div class="chip" style="background:#0f1c17"></div><div class="meta">Blackboard #0F1C17<br>ground (dark)</div></div>
+  </div>
+  <p>Light theme = paper khata; dark theme = blackboard with chalk-tinted text. The green/red pairing quietly echoes the flag without literalism. Semantic scale for mastery: green (mastered) / ochre (review) / red (critical gap) — replacing today's mint/sunshine/coral, and never encoded by color alone (always paired with a mark glyph: ✓, △, ✗).</p>
+
+  <h3>Typography — Bangla-first</h3>
+  <div class="fontcard">
+    <div class="label">Display &amp; UI — Anek Bangla + Anek Latin (variable wdth/wght, one superfamily, one voice in both scripts)</div>
+    <div class="sample-display">তোমার খাতা, বোর্ড পরীক্ষকের চোখে · Graded like the board</div>
+  </div>
+  <div class="fontcard">
+    <div class="label">Body — Noto Sans Bengali (best conjunct rendering at small sizes, full weight range) + Noto Sans for Latin</div>
+    <div class="sample-body">প্রতিটি ধাপে কোথায় নম্বর কাটা গেল, তা সঙ্গে সঙ্গে দেখো। যুক্তাক্ষর পরীক্ষা: ক্ষ, জ্ঞ, ত্র, শ্রু, ন্ত্র।</div>
+  </div>
+  <div class="fontcard">
+    <div class="label">Editorial serif (landing hero only) — Tiro Bangla, the "textbook" voice</div>
+    <div class="sample-serif">প্রশ্ন সহজ, উত্তর তোমার।</div>
+  </div>
+  <p>Marks, scores and stats keep a tabular treatment (<code>font-variant-numeric: tabular-nums</code>) with optional Bengali numerals (০–৯) via a user toggle. All loaded through <code>next/font/google</code> with <code>bengali</code> + <code>latin</code> subsets and <code>display: swap</code>.</p>
+
+  <h3>Signature element</h3>
+  <p>The <strong>red margin rule</strong>: a single 2–3 px examiner-red line marking key surfaces (section headers, the score column of a graded answer, the active nav item) — exactly like the margin of a khata page. It is the one bold gesture; everything else stays quiet paper-and-ink.</p>
+
+  <h2>5 · Page-by-page redesign</h2>
+
+  <h3>App shell (mobile-first)</h3>
+  <ul>
+    <li><strong>Mobile (&lt;768 px):</strong> replace the hamburger sheet with a 5-item bottom tab bar — বাড়ি (Home), খাতা জমা দাও (Upload, center, raised, red), ফলাফল (Results), টিউটর (Tutor), আরও (More → study plan, practice, profile). Thumb-reach, 48 px+ targets, <code>env(safe-area-inset-bottom)</code>.</li>
+    <li><strong>Desktop:</strong> keep the sidebar, add Practice Generator (currently orphaned) to the nav, active item carries the red margin rule.</li>
+    <li>Enable Next 16.3 <em>Instant Navigations</em> + per-tab <code>loading.tsx</code> skeletons so tab switches feel app-native.</li>
+  </ul>
+
+  <h3>Landing page</h3>
+  <ul>
+    <li>Bangla-first copy with English toggle; hero set in Tiro Bangla over paper texture.</li>
+    <li>Hero shows the product, not claims: a marked khata page — handwritten answer, red rubric annotations, score — as the first visual (static image or lightweight animated reveal).</li>
+    <li>Keep waitlist form above the fold on mobile; add a "how it works" strip (ছবি তোলো → AI পরীক্ষক দেখে → ধাপে ধাপে ফল) and a trust section for the free-forever promise.</li>
+  </ul>
+
+  <h3>Auth + onboarding</h3>
+  <ul>
+    <li>Split onboarding into a 3-step wizard (exam → board/group → consent) with progress marks; Bangla labels with English board names preserved.</li>
+    <li>Guardian consent becomes its own dignified step (not a grey box): plain-Bangla explanation of PDPA 2026, phone field with <code>inputmode="tel"</code> and ০১ prefix hint.</li>
+  </ul>
+
+  <h3>Dashboard</h3>
+  <ul>
+    <li>Progressive disclosure: today's 3 quick wins first, then momentum, then heatmap.</li>
+    <li>Heatmap cells get mark glyphs + Bangla chapter titles (<code>title_bn</code> is already in the query but unused — today it renders English only).</li>
+    <li>Momentum becomes a drawn-stroke progress arc with the score in tabular figures; empty states written as invitations ("প্রথম খাতা জমা দাও — ৫ মিনিটেই ফল").</li>
+  </ul>
+
+  <h3>Upload — camera-first</h3>
+  <ul>
+    <li>Primary action opens the camera (<code>capture="environment"</code>); gallery picker secondary.</li>
+    <li>Page-by-page capture flow with thumbnail strip, reorder, retake; client-side downscale/compress before upload (Bangladesh mobile data is expensive); clear per-page upload progress and resumability.</li>
+  </ul>
+
+  <h3>Submission detail — the marked script (hero feature)</h3>
+  <ul>
+    <li>Design it as a digital khata: each question a "script section" with the score in a red-ruled margin column, rubric steps as examiner ticks (✓ full, △ partial with reason, ✗ missed step highlighted).</li>
+    <li>"সহজ করে বুঝাও" (explain simply) stays per-step; transcript-mismatch flagging surfaced as "আমার লেখা ভুল পড়া হয়েছে" with the page image side-by-side on desktop, stacked on mobile.</li>
+    <li>Grading-in-progress state becomes a staged timeline (uploaded → transcribed → grading → done) driven by the existing queue statuses.</li>
+  </ul>
+
+  <h3>Tutor chat</h3>
+  <ul>
+    <li>Mobile: full-screen chat; sessions move into a slide-in drawer; subject/chapter pickers collapse into a single context chip.</li>
+    <li>Stream responses via Genkit streaming flows instead of blocking JSON; render markdown + KaTeX (deps already installed but the panel renders plain text today).</li>
+    <li>Desktop keeps the two-pane layout with the khata paper background.</li>
+  </ul>
+
+  <h3>Study plan</h3>
+  <ul>
+    <li>"আজকের পড়া" (today) card first and large, rest of the 14-day cycle as a compact horizontal scroller on mobile / grid on desktop; rest days styled as breathing room, not 50 %-opacity cards.</li>
+    <li>Each chapter links to tutor chat pre-scoped to that chapter (route already supports it).</li>
+  </ul>
+
+  <h3>Practice generator + profile</h3>
+  <ul>
+    <li>Promote generator into nav; result renders as a printable board-style question paper (Tiro Bangla, proper ক/খ/গ numbering) with a print stylesheet.</li>
+    <li>Profile gains language preference (বাংলা/English), Bengali-numeral toggle, and theme control (light "paper" / dark "blackboard" / system via existing <code>next-themes</code>).</li>
+  </ul>
+
+  <h2>6 · Bangla-first localization strategy</h2>
+  <ul>
+    <li>Today only the tutor page is Bangla while <code>&lt;html lang="bn"&gt;</code> — the reverse of correct. Flip the default: UI copy in Bangla, English as the toggle. Centralize strings in a lightweight dictionary (<code>src/lib/i18n/bn.ts</code> / <code>en.ts</code>) — no heavy i18n framework needed at this scale.</li>
+    <li>Mark Latin-only fragments with <code>lang="en"</code> spans so the existing <code>:lang()</code> font switching keeps working.</li>
+    <li>Database already stores <code>title_bn</code>/<code>name_bn</code> everywhere — render them.</li>
+  </ul>
+
+  <h2>7 · Responsive, accessibility &amp; performance bar</h2>
+  <ul>
+    <li>Target device: low-end Android, 360×800, spotty 4G. Budget: &lt;200 KB JS on landing, LCP &lt;2.5 s on Slow 4G, font subsets only (Bengali subset of Noto Sans Bengali ≈ heavier than Latin fonts — preload the body face, lazy-load Tiro Bangla).</li>
+    <li>All touch targets ≥44 px; forms use correct <code>inputmode</code>; bottom-bar pages get scroll-padding.</li>
+    <li>WCAG 2.1 AA: mark glyphs alongside every color encoding, visible focus rings (green on paper, chalk on blackboard), <code>prefers-reduced-motion</code> respected on all transitions.</li>
+    <li>Use <code>"use cache"</code> on subject/chapter lookups and landing content; keep grading data dynamic with Suspense boundaries.</li>
+  </ul>
+
+  <h2>8 · Implementation roadmap</h2>
+  <div class="phase"><h4>Phase 0 — Foundations (½ day)</h4>Safe package bumps (table above) · adopt <code>genkit-plugin-middleware</code> retries/fallbacks · verify build + eval script still green.</div>
+  <div class="phase"><h4>Phase 1 — Design system (1–2 days)</h4>New tokens in <code>globals.css</code> (khata palette, both themes) · font swap in <code>layout.tsx</code> (Anek Bangla/Latin, Noto Sans Bengali, Tiro Bangla) · re-theme the 17 shadcn primitives · build the margin-rule + mark-glyph primitives · string dictionary scaffold.</div>
+  <div class="phase"><h4>Phase 2 — Shell + high-traffic pages (2–3 days)</h4>Bottom tab bar + sidebar · dashboard · upload (camera-first) · submission detail as marked script.</div>
+  <div class="phase"><h4>Phase 3 — Conversion + remaining pages (2 days)</h4>Landing · auth + onboarding wizard · tutor chat (streaming + markdown/KaTeX) · study plan · practice generator promotion · profile settings.</div>
+  <div class="phase"><h4>Phase 4 — Polish &amp; proof (1 day)</h4>Instant Navigations + <code>use cache</code> pass · Lighthouse mobile run on throttled profile · a11y sweep · dark-mode sweep · real-device Bangla conjunct check.</div>
+
+  <h2>Sources</h2>
+  <ul style="font-size:0.85rem">
+    <li><a href="https://nextjs.org/blog/next-16">Next.js 16 announcement</a> · <a href="https://nextjs.org/docs/app/api-reference/config/next-config-js/cacheComponents">Cache Components docs</a> · <a href="https://appwrite.io/blog/post/nextjs-163-brings-client-side-caching-to-the-app-router">Next.js 16.3 client-side caching</a> · <a href="https://nextjs.org/docs/app/guides/upgrading/version-16">v16 upgrade guide</a></li>
+    <li><a href="https://ui.shadcn.com/docs/changelog/2026-02-radix-ui">shadcn/ui Feb 2026 — unified radix-ui</a> · <a href="https://ui.shadcn.com/docs/tailwind-v4">shadcn/ui Tailwind v4</a></li>
+    <li><a href="https://genkit.dev/">Genkit</a> · <a href="https://github.com/genkit-ai/genkit/releases">Genkit releases</a> · Genkit MCP docs (<code>js/app-frameworks/nextjs.md</code>)</li>
+    <li><a href="https://devencyclopedia.com/blog/typescript-7-broke-eslint-ts-jest-ts-morph">TypeScript 7 tooling breakage</a> · <a href="https://www.npmjs.com/package/eslint-config-next">eslint-config-next</a></li>
+    <li><a href="https://thefinch.design/edtech-app-ux-2026/">EdTech UX 2026</a> · <a href="https://lollypop.design/blog/2025/august/top-education-app-design-trends-2025/">Education app design trends</a> · <a href="https://fontadvice.com/font-collections/bengali-fonts/">Bengali font guides</a></li>
+  </ul>
+
+  <footer>Prepared for the SheraTutor team · audit of <code>web/</code> at commit d015c1f · package versions verified live against the npm registry.</footer>
+</div>
