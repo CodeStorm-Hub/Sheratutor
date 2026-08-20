@@ -59,20 +59,20 @@ export default async function DashboardPage() {
 
   return (
     <div className="space-y-8">
-      <div className="flex items-center justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h1 className="font-heading font-bold text-2xl">Welcome back</h1>
           <p className="text-sm text-muted-foreground">
             {profile.exam_type} {profile.target_exam_year} &middot; {profile.academic_group?.replace("_", " ")}
           </p>
         </div>
-        <Button asChild size="lg">
+        <Button asChild size="lg" className="w-full sm:w-auto">
           <Link href="/dashboard/upload">Upload a script</Link>
         </Button>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
-        <Card>
+      <div className="grid md:grid-cols-2 2xl:grid-cols-3 gap-6">
+        <Card className="shadow-sm">
           <CardHeader>
             <CardTitle className="eyebrow text-xs text-muted-foreground">Momentum Score</CardTitle>
           </CardHeader>
@@ -84,7 +84,7 @@ export default async function DashboardPage() {
           </CardContent>
         </Card>
 
-        <Card>
+        <Card className="shadow-sm 2xl:col-span-2">
           <CardHeader>
             <CardTitle className="eyebrow text-xs text-muted-foreground">AI Quick Wins</CardTitle>
           </CardHeader>
@@ -106,7 +106,7 @@ export default async function DashboardPage() {
         </Card>
       </div>
 
-      <Card>
+      <Card className="shadow-sm">
         <CardHeader>
           <CardTitle className="eyebrow text-xs text-muted-foreground">Subject Understanding Heatmap</CardTitle>
         </CardHeader>
@@ -114,11 +114,12 @@ export default async function DashboardPage() {
           {(weaknesses ?? []).length === 0 ? (
             <p className="text-sm text-muted-foreground">No data yet — your heatmap fills in as you get graded.</p>
           ) : (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 2xl:grid-cols-6 gap-3">
               {(weaknesses ?? []).map((w) => (
                 <div
                   key={w.id}
-                  className={`rounded-lg border p-3 text-sm font-medium ${HEATMAP_COLOR[bucket(Number(w.weakness_score))]}`}
+                  className={`rounded-lg border p-3 text-sm font-medium truncate ${HEATMAP_COLOR[bucket(Number(w.weakness_score))]}`}
+                  title={w.chapters?.title_en ?? "Chapter"}
                 >
                   {w.chapters?.title_en ?? "Chapter"}
                 </div>
@@ -128,7 +129,7 @@ export default async function DashboardPage() {
         </CardContent>
       </Card>
 
-      <Card>
+      <Card className="shadow-sm">
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="eyebrow text-xs text-muted-foreground">Recent submissions</CardTitle>

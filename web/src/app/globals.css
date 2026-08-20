@@ -63,6 +63,24 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  --shadow-color: var(--color-elevation-shadow);
+  --shadow-xs: 0 1px 2px 0 var(--shadow-color);
+  --shadow-sm: 0 1px 3px 0 var(--shadow-color), 0 1px 2px -1px var(--shadow-color);
+  --shadow-md: 0 4px 6px -1px var(--shadow-color), 0 2px 4px -2px var(--shadow-color);
+  --shadow-lg: 0 10px 15px -3px var(--shadow-color), 0 4px 6px -4px var(--shadow-color);
+  --shadow-xl: 0 20px 25px -5px var(--shadow-color), 0 8px 10px -6px var(--shadow-color);
+
+  --spacing-3xs: 0.25rem;
+  --spacing-2xs: 0.5rem;
+  --spacing-xs: 0.75rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  --color-card-raised: var(--card-raised);
 }
 
 :root {
@@ -98,6 +116,8 @@
   --sidebar-accent-foreground: var(--color-ink-navy);
   --sidebar-border: var(--color-line-gray);
   --sidebar-ring: var(--color-coral);
+  --color-elevation-shadow: oklch(0.2 0.03 260 / 10%);
+  --card-raised: var(--color-paper-white);
 }
 
 .dark {
@@ -132,6 +152,8 @@
   --sidebar-accent-foreground: var(--color-paper-white);
   --sidebar-border: oklch(1 0 0 / 12%);
   --sidebar-ring: var(--color-coral);
+  --color-elevation-shadow: oklch(0 0 0 / 45%);
+  --card-raised: oklch(0.24 0.045 275);
 }
 
 @layer base {

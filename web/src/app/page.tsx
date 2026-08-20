@@ -21,12 +21,12 @@ export default function LandingPage() {
             Coming to Bangladesh
           </Badge>
 
-          <h1 className="font-heading font-extrabold text-4xl md:text-6xl leading-[1.05] max-w-3xl text-balance">
+          <h1 className="font-heading font-extrabold text-4xl sm:text-5xl md:text-6xl leading-[1.05] max-w-3xl text-balance">
             Graded like a real board examiner.{" "}
             <span className="text-primary">Free, for every student.</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl text-balance">
+          <p className="text-lg sm:text-xl md:text-xl text-muted-foreground max-w-2xl text-balance">
             Photograph your handwritten answer script. SheraTutor reads your
             Bangla and English, grades it against the actual NCTB rubric, and
             shows you exactly which step cost you the mark — instantly.
@@ -37,7 +37,7 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section className="w-full max-w-5xl grid md:grid-cols-3 gap-6 pb-20">
+        <section className="w-full max-w-5xl grid sm:grid-cols-2 lg:grid-cols-3 gap-6 pb-20">
           {[
             {
               eyebrow: "The Problem",
@@ -60,7 +60,7 @@ export default function LandingPage() {
           ].map((card) => (
             <div
               key={card.title}
-              className="rounded-2xl border border-border bg-card p-6 text-left flex flex-col gap-2"
+              className="rounded-2xl border border-border bg-card p-6 text-left flex flex-col gap-2 shadow-sm"
             >
               <span className="eyebrow text-xs text-primary">{card.eyebrow}</span>
               <h3 className="font-heading font-bold text-xl">{card.title}</h3>

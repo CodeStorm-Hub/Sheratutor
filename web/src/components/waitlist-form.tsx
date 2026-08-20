@@ -47,7 +47,7 @@ export function WaitlistForm() {
         <Input id="email" name="email" type="email" autoComplete="email" />
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="space-y-1.5">
           <Label htmlFor="examType">Exam</Label>
           <Select name="examType" defaultValue="SSC" required>

@@ -17,7 +17,7 @@ export default async function TutorPage() {
     .limit(50);
 
   return (
-    <div className="max-w-4xl mx-auto h-[calc(100vh-8rem)] min-h-[32rem]">
+    <div className="max-w-4xl mx-auto h-[calc(100dvh-8rem)] min-h-[32rem]">
       <TutorPageClient subjects={subjects ?? []} initialSessions={sessionsData ?? []} />
     </div>
   );

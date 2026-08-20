@@ -57,7 +57,7 @@ export default async function SubmissionsListPage({
       </div>
 
       {(submissions ?? []).length === 0 ? (
-        <Card>
+        <Card className="shadow-sm">
           <CardContent className="py-12 text-center text-sm text-muted-foreground">
             No submissions yet. Upload a script to get graded.
           </CardContent>

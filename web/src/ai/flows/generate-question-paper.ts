@@ -1,5 +1,7 @@
 import { z } from "genkit";
 import { ai, MODELS } from "@/ai/genkit";
+import { withRetry } from "@/ai/retry";
+import { FlowOutputError } from "@/ai/errors";
 import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
 
 /**
@@ -70,22 +72,24 @@ export const generateQuestionPaperFlow = ai.defineFlow(
       )
       .join("\n\n---\n\n");
 
-    const { output } = await ai.generate({
-      model: MODELS.reasoning,
-      prompt:
-        `You are writing a ${difficulty} board-standard ${paperType} mock exam paper for a Bangladeshi ` +
-        `SSC (grade 9-10) student, worth exactly ${totalMarks} total marks, covering these chapters. ` +
-        `Base every question on the retrieved curriculum context below — do not invent topics outside it.\n\n` +
-        `For each question, write both question_text_bn (natural Bangla, NCTB terminology) and ` +
-        `question_text_en (plain English). Assign each question to the chapter_id its content is grounded in. ` +
-        `Give each question a rubric_criteria array of grading steps whose max_step_marks sum to that ` +
-        `question's max_marks, and whose max_marks across all questions sum to exactly ${totalMarks}.\n\n` +
-        `RETRIEVED CURRICULUM CONTEXT:\n${groundingContext}`,
-      output: { schema: GeneratedPaperSchema },
-      config: { temperature: 0.6 },
-    });
+    const { output } = await withRetry(() =>
+      ai.generate({
+        model: MODELS.reasoning,
+        prompt:
+          `You are writing a ${difficulty} board-standard ${paperType} mock exam paper for a Bangladeshi ` +
+          `SSC (grade 9-10) student, worth exactly ${totalMarks} total marks, covering these chapters. ` +
+          `Base every question on the retrieved curriculum context below — do not invent topics outside it.\n\n` +
+          `For each question, write both question_text_bn (natural Bangla, NCTB terminology) and ` +
+          `question_text_en (plain English). Assign each question to the chapter_id its content is grounded in. ` +
+          `Give each question a rubric_criteria array of grading steps whose max_step_marks sum to that ` +
+          `question's max_marks, and whose max_marks across all questions sum to exactly ${totalMarks}.\n\n` +
+          `RETRIEVED CURRICULUM CONTEXT:\n${groundingContext}`,
+        output: { schema: GeneratedPaperSchema },
+        config: { temperature: 0.6 },
+      })
+    );
 
-    if (!output) throw new Error("generateQuestionPaper: model returned no structured output");
+    if (!output) throw new FlowOutputError("generateQuestionPaper");
     return output;
   }
 );

@@ -1,6 +1,15 @@
 import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
+import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
+
+const CreateSubmissionSchema = z.object({
+  questionPaperId: z.string().min(1),
+  pageUrls: z.array(z.string().min(1)).min(1),
+  pageQuestionIds: z.array(z.string().nullable()).optional(),
+  submissionType: z.enum(["MOBILE_PHOTO", "WEB_UPLOAD", "BATCH_SCAN"]).default("WEB_UPLOAD"),
+  idempotencyKey: z.string().optional(),
+});
 
 /**
  * Creates a submission + its pages, then enqueues grading.
@@ -30,18 +39,15 @@ export async function POST(request: Request) {
     .maybeSingle();
   if (!profile) return NextResponse.json({ error: "complete onboarding first" }, { status: 400 });
 
-  const body = await request.json();
-  const { questionPaperId, pageUrls, pageQuestionIds, submissionType, idempotencyKey } = body as {
-    questionPaperId: string;
-    pageUrls: string[];
-    pageQuestionIds?: (string | null)[];
-    submissionType: "MOBILE_PHOTO" | "WEB_UPLOAD" | "BATCH_SCAN";
-    idempotencyKey?: string;
-  };
-
-  if (!questionPaperId || !pageUrls?.length) {
-    return NextResponse.json({ error: "questionPaperId and pageUrls are required" }, { status: 400 });
+  const rawBody = await request.json().catch(() => null);
+  const parsed = CreateSubmissionSchema.safeParse(rawBody);
+  if (!parsed.success) {
+    return NextResponse.json(
+      { error: "invalid_request", message: parsed.error.issues[0]?.message ?? "Invalid request body" },
+      { status: 400 }
+    );
   }
+  const { questionPaperId, pageUrls, pageQuestionIds, submissionType, idempotencyKey } = parsed.data;
 
   const key = idempotencyKey ?? randomUUID();
 
@@ -59,7 +65,7 @@ export async function POST(request: Request) {
     .insert({
       student_id: profile.id,
       question_paper_id: questionPaperId,
-      submission_type: submissionType ?? "WEB_UPLOAD",
+      submission_type: submissionType,
       idempotency_key: key,
       status: "QUEUED",
     })

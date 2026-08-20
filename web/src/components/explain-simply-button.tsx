@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/sheet";
 import { Sparkles, Lightbulb, Car, Calculator, HelpCircle } from "lucide-react";
 import { TutorChatPanel, type TutorChatMessage } from "@/components/tutor-chat-panel";
+import { streamTutorChatRequest } from "@/lib/tutor-chat-stream";
 
 const QUICK_CHIPS = [
   { label: "সহজ ভাষায় বুঝিয়ে দাও", icon: Lightbulb, prompt: "আমাকে এই বিষয়টি একদম সহজ ভাষায় বুঝিয়ে বলো।" },
@@ -83,11 +84,22 @@ export function ExplainSimplyButton({
     setMessages(updatedHistory);
     setPending(true);
 
+    let assistantStarted = false;
+    function appendOrUpdateAssistant(text: string) {
+      setMessages((prev) => {
+        if (!assistantStarted) {
+          assistantStarted = true;
+          return [...prev, { role: "assistant", text }];
+        }
+        const next = [...prev];
+        next[next.length - 1] = { role: "assistant", text };
+        return next;
+      });
+    }
+
     try {
-      const res = await fetch("/api/tutor-chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      await streamTutorChatRequest(
+        {
           sessionId,
           mode: "rubric",
           submissionId,
@@ -99,23 +111,17 @@ export function ExplainSimplyButton({
           groundedContext,
           studentMessage: query,
           languagePreference: "bn",
-        }),
-      });
-
-      if (res.status === 429) {
-        const json = await res.json();
-        setMessages([...updatedHistory, { role: "assistant", text: json.message }]);
-        return;
-      }
-      if (!res.ok) throw new Error("Failed to fetch response");
-      const json = await res.json();
-      setSessionId(json.sessionId);
-      setMessages([...updatedHistory, { role: "assistant", text: json.reply }]);
+        },
+        {
+          onSession: (id) => setSessionId(id),
+          onChunk: appendOrUpdateAssistant,
+          onDone: appendOrUpdateAssistant,
+          onRateLimited: (message) => appendOrUpdateAssistant(message),
+          onError: (message) => appendOrUpdateAssistant(message),
+        }
+      );
     } catch {
-      setMessages([
-        ...updatedHistory,
-        { role: "assistant", text: "দুঃখিত, সংযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করো।" },
-      ]);
+      appendOrUpdateAssistant("দুঃখিত, সংযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করো।");
     } finally {
       setPending(false);
     }

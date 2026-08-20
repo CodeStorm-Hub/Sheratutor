@@ -46,7 +46,7 @@ export default async function SubmissionPage({ params }: PageProps<"/dashboard/s
         <p className="text-sm text-muted-foreground">{submission.question_papers?.title}</p>
       </div>
 
-      <Card>
+      <Card className="shadow-sm">
         <CardHeader>
           <div className="flex items-center justify-between">
             <CardTitle className="eyebrow text-xs text-muted-foreground">Status</CardTitle>
@@ -66,7 +66,7 @@ export default async function SubmissionPage({ params }: PageProps<"/dashboard/s
       </Card>
 
       {(results ?? []).map((r) => (
-        <Card key={r.id}>
+        <Card key={r.id} className="shadow-sm">
           <CardHeader>
             <div className="flex items-center gap-2 flex-wrap">
               <CardTitle className="text-base font-heading">
@@ -87,7 +87,7 @@ export default async function SubmissionPage({ params }: PageProps<"/dashboard/s
           <CardContent className="space-y-3">
             {(r.rubric_breakdown_json as Array<Record<string, unknown>>)?.map(
               (criterion, idx: number) => (
-                <div key={idx} className="flex items-start justify-between gap-3 border-b border-border last:border-0 pb-2 last:pb-0">
+                <div key={idx} className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-3 border-b border-border last:border-0 pb-2 last:pb-0">
                   <div className="flex-1">
                     <p className="text-sm font-medium">{String(criterion.step_name)}</p>
                     <p className="text-xs text-muted-foreground">{String(criterion.observation)}</p>
@@ -115,7 +115,7 @@ export default async function SubmissionPage({ params }: PageProps<"/dashboard/s
       ))}
 
       {(pages ?? []).length > 0 && (
-        <Card>
+        <Card className="shadow-sm">
           <CardHeader>
             <CardTitle className="eyebrow text-xs text-muted-foreground">Your scanned pages</CardTitle>
             <p className="text-xs text-muted-foreground">

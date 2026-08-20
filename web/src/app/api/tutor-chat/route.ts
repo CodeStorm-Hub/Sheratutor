@@ -1,8 +1,35 @@
 import { NextResponse } from "next/server";
+import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
-import { tutorChatFlow } from "@/ai/flows/tutor-chat";
+import { streamTutorChat } from "@/ai/flows/tutor-chat";
 import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
+
+type SseEvent =
+  | { type: "session"; sessionId: string }
+  | { type: "chunk"; text: string }
+  | { type: "done"; reply: string; safety: { flagged: boolean; category: string } }
+  | { type: "error"; message: string };
+
+function sseLine(event: SseEvent): string {
+  return `data: ${JSON.stringify(event)}\n\n`;
+}
+
+const TutorChatBodySchema = z.object({
+  sessionId: z.string().optional(),
+  mode: z.enum(["rubric", "general"]).default("rubric"),
+  submissionId: z.string().optional(),
+  questionId: z.string().optional(),
+  rubricStepIndex: z.number().int().optional(),
+  questionText: z.string().optional(),
+  studentAnswerChunk: z.string().optional(),
+  rubricFailureReason: z.string().optional(),
+  groundedContext: z.string().optional(),
+  subjectId: z.string().optional(),
+  chapterId: z.string().optional(),
+  studentMessage: z.string().min(1, "studentMessage is required"),
+  languagePreference: z.enum(["bn", "en"]).default("bn"),
+});
 
 // No new env var — a fixed, generous daily cap on a free LLM endpoint
 // (docs/review §8.4 item 15 — no abuse/quota design existed at all).
@@ -31,10 +58,17 @@ export async function POST(request: Request) {
     .maybeSingle();
   if (!profile) return NextResponse.json({ error: "complete onboarding first" }, { status: 400 });
 
-  const body = await request.json();
+  const rawBody = await request.json().catch(() => null);
+  const parsedBody = TutorChatBodySchema.safeParse(rawBody);
+  if (!parsedBody.success) {
+    return NextResponse.json(
+      { error: "invalid_request", message: parsedBody.error.issues[0]?.message ?? "Invalid request body" },
+      { status: 400 }
+    );
+  }
   const {
     sessionId: incomingSessionId,
-    mode = "rubric" as ChatMode,
+    mode,
     submissionId,
     questionId,
     rubricStepIndex,
@@ -45,24 +79,10 @@ export async function POST(request: Request) {
     subjectId,
     chapterId,
     studentMessage,
-    languagePreference = "bn",
-  } = body as {
-    sessionId?: string;
-    mode?: ChatMode;
-    submissionId?: string;
-    questionId?: string;
-    rubricStepIndex?: number;
-    questionText?: string;
-    studentAnswerChunk?: string;
-    rubricFailureReason?: string;
-    groundedContext?: string;
-    subjectId?: string;
-    chapterId?: string;
-    studentMessage: string;
-    languagePreference?: "bn" | "en";
-  };
+    languagePreference,
+  } = parsedBody.data;
 
-  if (!studentMessage?.trim()) {
+  if (!studentMessage.trim()) {
     return NextResponse.json({ error: "studentMessage is required" }, { status: 400 });
   }
 
@@ -92,10 +112,14 @@ export async function POST(request: Request) {
   let session: ChatSession | null = null;
 
   if (incomingSessionId) {
+    // Defense-in-depth: filter by student_id explicitly rather than relying
+    // solely on RLS, since other paths in this codebase (retrieveGroundingFlow)
+    // use the service-role client that bypasses RLS entirely.
     const { data } = await supabase
       .from("tutor_chat_sessions")
       .select("id, mode, context_json")
       .eq("id", incomingSessionId)
+      .eq("student_id", profile.id)
       .maybeSingle();
     if (!data) return NextResponse.json({ error: "session not found" }, { status: 404 });
     session = data as ChatSession;
@@ -211,36 +235,72 @@ export async function POST(request: Request) {
     }
   }
 
-  const result = await tutorChatFlow({
-    mode: session.mode,
-    questionText: ctx.questionText,
-    studentAnswerChunk: ctx.studentAnswerChunk,
-    rubricFailureReason: ctx.rubricFailureReason,
-    subjectName: ctx.subjectName,
-    chapterName: ctx.chapterName,
-    groundedContext,
-    history,
-    studentMessage,
-    languagePreference,
+  const sessionId = session.id;
+  const sessionMode = session.mode;
+
+  const stream = new ReadableStream<Uint8Array>({
+    async start(controller) {
+      const encoder = new TextEncoder();
+      const send = (event: SseEvent) => controller.enqueue(encoder.encode(sseLine(event)));
+
+      send({ type: "session", sessionId });
+
+      try {
+        let finalReply = "";
+        let finalSafety: { flagged: boolean; category: string } = { flagged: false, category: "none" };
+
+        for await (const event of streamTutorChat({
+          mode: sessionMode,
+          questionText: ctx.questionText,
+          studentAnswerChunk: ctx.studentAnswerChunk,
+          rubricFailureReason: ctx.rubricFailureReason,
+          subjectName: ctx.subjectName,
+          chapterName: ctx.chapterName,
+          groundedContext,
+          history,
+          studentMessage,
+          languagePreference,
+        })) {
+          if (event.type === "chunk") {
+            send({ type: "chunk", text: event.text });
+          } else {
+            finalReply = event.reply;
+            finalSafety = event.safety;
+            send({ type: "done", reply: event.reply, safety: event.safety });
+          }
+        }
+
+        await supabase.from("tutor_chat_messages").insert([
+          { session_id: sessionId, role: "student", content: studentMessage, safety_category: finalSafety.category },
+          { session_id: sessionId, role: "tutor", content: finalReply, safety_category: "none" },
+        ]);
+
+        await supabase.from("tutor_chat_sessions").update({ updated_at: new Date().toISOString() }).eq("id", sessionId);
+
+        if (finalSafety.flagged) {
+          const service = getServiceRoleClient();
+          await service.from("audit_log").insert({
+            actor_id: user.id,
+            action: "SAFETY_ESCALATION",
+            entity_type: "tutor_chat",
+            entity_id: user.id,
+            detail_json: { category: finalSafety.category, session_id: sessionId },
+          });
+        }
+      } catch (err) {
+        console.error(`tutor-chat stream failed for session ${sessionId}:`, err);
+        send({ type: "error", message: "দুঃখিত, সংযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করো।" });
+      } finally {
+        controller.close();
+      }
+    },
   });
 
-  await supabase.from("tutor_chat_messages").insert([
-    { session_id: session.id, role: "student", content: studentMessage, safety_category: result.safety.category },
-    { session_id: session.id, role: "tutor", content: result.reply, safety_category: "none" },
-  ]);
-
-  await supabase.from("tutor_chat_sessions").update({ updated_at: new Date().toISOString() }).eq("id", session.id);
-
-  if (result.safety.flagged) {
-    const service = getServiceRoleClient();
-    await service.from("audit_log").insert({
-      actor_id: user.id,
-      action: "SAFETY_ESCALATION",
-      entity_type: "tutor_chat",
-      entity_id: user.id,
-      detail_json: { category: result.safety.category, session_id: session.id },
-    });
-  }
-
-  return NextResponse.json({ sessionId: session.id, reply: result.reply, safety: result.safety });
+  return new Response(stream, {
+    headers: {
+      "Content-Type": "text/event-stream",
+      "Cache-Control": "no-cache, no-transform",
+      Connection: "keep-alive",
+    },
+  });
 }

@@ -9,12 +9,20 @@ export async function GET(_request: Request, { params }: { params: Promise<{ ses
   } = await supabase.auth.getUser();
   if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
 
-  // RLS scopes both selects to the caller's own student_profiles row — a
-  // session/message belonging to someone else simply won't be returned.
+  const { data: profile } = await supabase
+    .from("student_profiles")
+    .select("id")
+    .eq("user_id", user.id)
+    .maybeSingle();
+  if (!profile) return NextResponse.json({ error: "complete onboarding first" }, { status: 400 });
+
+  // Filtered by student_id explicitly, not just RLS, as defense-in-depth —
+  // see the same fix in /api/tutor-chat/route.ts.
   const { data: session } = await supabase
     .from("tutor_chat_sessions")
     .select("id, mode, title, context_json")
     .eq("id", sessionId)
+    .eq("student_id", profile.id)
     .maybeSingle();
   if (!session) return NextResponse.json({ error: "not found" }, { status: 404 });
 

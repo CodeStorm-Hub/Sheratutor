@@ -42,7 +42,7 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
         {subjectChapters.length === 0 ? (
           <p className="text-sm text-muted-foreground">No chapters available for this subject yet.</p>
         ) : (
-          <div className="grid grid-cols-2 gap-2 max-h-56 overflow-y-auto rounded-lg border border-border p-3">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 max-h-56 overflow-y-auto rounded-lg border border-border p-3">
             {subjectChapters.map((c) => (
               <div key={c.id} className="flex items-start gap-2">
                 <Checkbox id={`chapter-${c.id}`} name="chapterIds" value={c.id} />
@@ -55,7 +55,7 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
         )}
       </div>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <div className="space-y-1.5">
           <Label htmlFor="paperType">Paper type</Label>
           <Select name="paperType" defaultValue="CQ" required>

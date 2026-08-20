@@ -25,7 +25,7 @@ export default async function ProfilePage() {
         <p className="text-sm text-muted-foreground">{user?.email}</p>
       </div>
 
-      <Card>
+      <Card className="shadow-sm">
         <CardHeader>
           <CardTitle className="eyebrow text-xs text-muted-foreground">Exam details</CardTitle>
         </CardHeader>

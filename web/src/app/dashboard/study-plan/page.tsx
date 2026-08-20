@@ -1,9 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Sparkles } from "lucide-react";
 import { createClient } from "@/lib/supabase/server";
-import { generateStudyPlan } from "@/app/actions/study-plan";
+import { GenerateStudyPlanButton } from "@/app/dashboard/study-plan/generate-study-plan-button";
 
 type ScheduleDay = {
   day: number;
@@ -42,35 +40,23 @@ export default async function StudyPlanPage() {
             A 14-day revision cycle, weighted toward your weakest chapters.
           </p>
         </div>
-        {plan && (
-          <form action={generateStudyPlan}>
-            <Button type="submit" size="sm" variant="outline" className="gap-1.5">
-              <Sparkles className="w-3.5 h-3.5" />
-              Regenerate
-            </Button>
-          </form>
-        )}
+        {plan && <GenerateStudyPlanButton label="Regenerate" size="sm" />}
       </div>
 
       {!schedule ? (
-        <Card>
+        <Card className="shadow-sm">
           <CardContent className="py-16 text-center space-y-4">
             <p className="text-sm text-muted-foreground max-w-sm mx-auto">
               You don&apos;t have an active study plan yet. Generate one based on your weakness heatmap —
               upload a few scripts first for a plan tailored to your actual gaps.
             </p>
-            <form action={generateStudyPlan}>
-              <Button type="submit" className="gap-1.5">
-                <Sparkles className="w-4 h-4" />
-                Generate my study plan
-              </Button>
-            </form>
+            <GenerateStudyPlanButton label="Generate my study plan" />
           </CardContent>
         </Card>
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {schedule.days.map((d) => (
-            <Card key={d.day} className={d.chapters.length === 0 ? "opacity-50" : ""}>
+            <Card key={d.day} className={`shadow-sm ${d.chapters.length === 0 ? "opacity-50" : ""}`}>
               <CardHeader className="pb-2">
                 <CardTitle className="eyebrow text-xs text-muted-foreground">Day {d.day}</CardTitle>
               </CardHeader>

@@ -1,5 +1,7 @@
 import { z } from "genkit";
 import { ai, MODELS, PROMPT_VERSION } from "@/ai/genkit";
+import { withRetry } from "@/ai/retry";
+import { FlowOutputError } from "@/ai/errors";
 import { RubricEvaluationSchema } from "@/ai/schemas/rubric";
 
 /**
@@ -78,14 +80,16 @@ export const evaluateRubricFlow = ai.defineFlow(
       ? [{ text: promptText }, ...pageImageUrls.map((url) => ({ media: { url } }))]
       : promptText;
 
-    const { output } = await ai.generate({
-      model: pageImageUrls?.length ? MODELS.vision : MODELS.reasoning,
-      prompt,
-      output: { schema: RubricEvaluationSchema },
-      config: { temperature: 0.2 },
-    });
+    const { output } = await withRetry(() =>
+      ai.generate({
+        model: pageImageUrls?.length ? MODELS.vision : MODELS.reasoning,
+        prompt,
+        output: { schema: RubricEvaluationSchema },
+        config: { temperature: 0.2 },
+      })
+    );
 
-    if (!output) throw new Error("evaluateRubric: model returned no structured output");
+    if (!output) throw new FlowOutputError("evaluateRubric");
     return { ...output, question_id: questionId };
   }
 );

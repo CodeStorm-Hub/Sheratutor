@@ -14,19 +14,7 @@ type QueueMessage = {
   message: { submissionId: string };
 };
 
-/**
- * Drains the `grading_queue` pgmq queue (supabase/migrations/
- * 00000000000018_grading_queue.sql). Not reachable without the worker
- * secret — this is meant to be invoked by a scheduler (pg_cron + pg_net in
- * production, see that migration's commented-out cron block; manually or
- * via an external scheduler until that's activated).
- */
-export async function POST(request: Request) {
-  const secret = request.headers.get("x-worker-secret");
-  if (!secret || secret !== process.env.INTERNAL_WORKER_SECRET) {
-    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
-  }
-
+async function drainGradingQueue() {
   const supabase = getServiceRoleClient();
 
   const { data: messages, error } = await supabase.rpc("read_grading_jobs", {
@@ -80,4 +68,27 @@ export async function POST(request: Request) {
   }
 
   return NextResponse.json({ processed: results.length, results });
+}
+
+/**
+ * Drains the `grading_queue` pgmq queue (supabase/migrations/
+ * 00000000000018_grading_queue.sql). Two entry points, both gated:
+ *   - POST + x-worker-secret: manual/external-scheduler invocation.
+ *   - GET + Vercel Cron's Authorization: Bearer CRON_SECRET header: the
+ *     scheduled trigger wired in vercel.json (crons always send GET).
+ */
+export async function POST(request: Request) {
+  const secret = request.headers.get("x-worker-secret");
+  if (!secret || secret !== process.env.INTERNAL_WORKER_SECRET) {
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  }
+  return drainGradingQueue();
+}
+
+export async function GET(request: Request) {
+  const authHeader = request.headers.get("authorization");
+  if (!process.env.CRON_SECRET || authHeader !== `Bearer ${process.env.CRON_SECRET}`) {
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  }
+  return drainGradingQueue();
 }

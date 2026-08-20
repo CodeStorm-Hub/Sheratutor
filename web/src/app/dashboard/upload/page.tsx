@@ -16,7 +16,7 @@ export default async function UploadPage() {
 
   return (
     <div className="max-w-lg mx-auto space-y-6">
-      <div className="flex items-start justify-between gap-4">
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
         <div>
           <h1 className="font-heading font-bold text-2xl">Upload your answer script</h1>
           <p className="text-sm text-muted-foreground">
@@ -25,7 +25,7 @@ export default async function UploadPage() {
         </div>
         <Link
           href="/dashboard/practice/generate"
-          className="text-xs font-medium text-primary hover:underline shrink-0 whitespace-nowrap"
+          className="text-xs font-medium text-primary hover:underline shrink-0"
         >
           Generate a practice paper
         </Link>

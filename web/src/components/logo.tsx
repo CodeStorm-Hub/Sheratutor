@@ -5,10 +5,23 @@ import { cn } from "@/lib/utils";
  * ink-navy/white (theme-dependent), "Tutor" in coral, Baloo 2 ExtraBold.
  * Recreated as styled text — no image asset needed.
  */
-export function Logo({ className, tagline = false }: { className?: string; tagline?: boolean }) {
+export function Logo({
+  className,
+  tagline = false,
+  compact = false,
+}: {
+  className?: string;
+  tagline?: boolean;
+  compact?: boolean;
+}) {
   return (
     <span className={cn("inline-flex flex-col leading-none", className)}>
-      <span className="font-heading font-extrabold text-2xl tracking-tight">
+      <span
+        className={cn(
+          "font-heading font-extrabold tracking-tight",
+          compact ? "text-lg" : "text-2xl"
+        )}
+      >
         <span className="text-foreground">Shera</span>
         <span className="text-primary">Tutor</span>
       </span>

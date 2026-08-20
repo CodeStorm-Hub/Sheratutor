@@ -71,7 +71,7 @@ export function PageTranscriptionCard({ submissionId, page }: { submissionId: st
           size="sm"
           disabled={flagged || pending}
           onClick={handleFlag}
-          className="h-7 text-[11px] gap-1"
+          className="h-11 sm:h-9 whitespace-normal text-left text-xs gap-1.5"
         >
           {pending ? <Loader2 className="w-3 h-3 animate-spin" /> : <Flag className="w-3 h-3" />}
           {flagged ? "এটা আমার লেখা নয় বলে জানানো হয়েছে" : "এই লেখাটি আমি লিখিনি"}

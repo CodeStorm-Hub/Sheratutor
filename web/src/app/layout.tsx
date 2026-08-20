@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Baloo_2, Baloo_Da_2, Inter, Hind_Siliguri, Space_Mono } from "next/font/google";
+import { Baloo_2, Baloo_Da_2, Inter, Noto_Sans_Bengali, Space_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import "katex/dist/katex.min.css";
 import "./globals.css";
@@ -22,14 +22,17 @@ const balooDisplayBn = Baloo_Da_2({
   display: "swap",
 });
 
-// Body: Inter for Latin, Hind Siliguri for Bengali (Inter has no Bengali coverage).
+// Body: Inter for Latin, Noto Sans Bengali for Bengali (Inter has no Bengali
+// coverage). Noto Sans Bengali is Google-hosted, purpose-built for UI
+// legibility at small sizes — a safer engineering choice than self-hosted
+// print-era faces (SolaimanLipi/Kalpurush) for now; see redesign plan §1.
 const inter = Inter({
   variable: "--font-body",
   subsets: ["latin"],
   display: "swap",
 });
 
-const hindSiliguri = Hind_Siliguri({
+const notoSansBengali = Noto_Sans_Bengali({
   variable: "--font-body-bn",
   weight: ["400", "500", "600", "700"],
   subsets: ["bengali"],
@@ -54,7 +57,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="bn"
-      className={`${balooDisplay.variable} ${balooDisplayBn.variable} ${inter.variable} ${hindSiliguri.variable} ${spaceMono.variable} h-full antialiased`}
+      className={`${balooDisplay.variable} ${balooDisplayBn.variable} ${inter.variable} ${notoSansBengali.variable} ${spaceMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-body">
         {children}

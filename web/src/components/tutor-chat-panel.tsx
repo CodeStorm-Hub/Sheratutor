@@ -86,7 +86,7 @@ export function TutorChatPanel({
           </div>
         ))}
 
-        {pending && (
+        {pending && messages[messages.length - 1]?.role !== "assistant" && (
           <div className="flex gap-2.5 items-start">
             <div className="w-7 h-7 rounded-full shrink-0 bg-mint-deep text-white flex items-center justify-center">
               <Bot className="w-3.5 h-3.5" />

@@ -4,8 +4,10 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { MessageSquarePlus, Sparkles, BookOpen } from "lucide-react";
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { MessageSquarePlus, Sparkles, BookOpen, History } from "lucide-react";
 import { TutorChatPanel, type TutorChatMessage } from "@/components/tutor-chat-panel";
+import { streamTutorChatRequest } from "@/lib/tutor-chat-stream";
 
 type Chapter = { id: string; chapter_no: number; title_en: string; title_bn: string };
 type Subject = { id: string; name_en: string; name_bn: string; chapters: Chapter[] };
@@ -35,6 +37,7 @@ export function TutorPageClient({
   const [subjectId, setSubjectId] = useState<string>(subjects[0]?.id ?? "");
   const [chapterId, setChapterId] = useState<string>(subjects[0]?.chapters?.[0]?.id ?? "");
   const [loadingSession, setLoadingSession] = useState(false);
+  const [historyOpen, setHistoryOpen] = useState(false);
 
   const selectedSubject = subjects.find((s) => s.id === subjectId);
 
@@ -44,6 +47,7 @@ export function TutorPageClient({
   }
 
   async function openSession(id: string) {
+    setHistoryOpen(false);
     if (id === activeSessionId) return;
     setLoadingSession(true);
     try {
@@ -67,85 +71,116 @@ export function TutorPageClient({
     setMessages(updatedHistory);
     setPending(true);
 
+    let assistantStarted = false;
+    function appendOrUpdateAssistant(text: string) {
+      setMessages((prev) => {
+        if (!assistantStarted) {
+          assistantStarted = true;
+          return [...prev, { role: "assistant", text }];
+        }
+        const next = [...prev];
+        next[next.length - 1] = { role: "assistant", text };
+        return next;
+      });
+    }
+
+    const isNewSession = !activeSessionId;
+
     try {
-      const res = await fetch("/api/tutor-chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
+      await streamTutorChatRequest(
+        {
           sessionId: activeSessionId,
           mode: "general",
           subjectId,
           chapterId,
           studentMessage: query,
           languagePreference: "bn",
-        }),
-      });
-
-      if (res.status === 429) {
-        const json = await res.json();
-        setMessages([...updatedHistory, { role: "assistant", text: json.message }]);
-        return;
-      }
-      if (!res.ok) throw new Error("Failed to fetch response");
-      const json = await res.json();
-
-      if (!activeSessionId) {
-        setActiveSessionId(json.sessionId);
-        setSessions((prev) => [
-          {
-            id: json.sessionId,
-            title: query.slice(0, 40),
-            context_json: { subjectName: selectedSubject?.name_en, chapterName: selectedSubject?.chapters.find((c) => c.id === chapterId)?.title_en },
-            updated_at: new Date().toISOString(),
+        },
+        {
+          onSession: (sessionId) => {
+            if (isNewSession) {
+              setActiveSessionId(sessionId);
+              setSessions((prev) => [
+                {
+                  id: sessionId,
+                  title: query.slice(0, 40),
+                  context_json: {
+                    subjectName: selectedSubject?.name_en,
+                    chapterName: selectedSubject?.chapters.find((c) => c.id === chapterId)?.title_en,
+                  },
+                  updated_at: new Date().toISOString(),
+                },
+                ...prev,
+              ]);
+            }
           },
-          ...prev,
-        ]);
-      }
-      setMessages([...updatedHistory, { role: "assistant", text: json.reply }]);
+          onChunk: appendOrUpdateAssistant,
+          onDone: appendOrUpdateAssistant,
+          onRateLimited: (message) => appendOrUpdateAssistant(message),
+          onError: (message) => appendOrUpdateAssistant(message),
+        }
+      );
     } catch {
-      setMessages([
-        ...updatedHistory,
-        { role: "assistant", text: "দুঃখিত, সংযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করো।" },
-      ]);
+      appendOrUpdateAssistant("দুঃখিত, সংযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করো।");
     } finally {
       setPending(false);
     }
   }
 
+  const sessionList = (
+    <>
+      <div className="p-3 border-b border-border">
+        <Button size="sm" className="w-full gap-1.5" variant="outline" onClick={startNewConversation}>
+          <MessageSquarePlus className="w-3.5 h-3.5" />
+          নতুন কথোপকথন
+        </Button>
+      </div>
+      <ScrollArea className="flex-1">
+        <div className="p-2 space-y-1">
+          {sessions.length === 0 && (
+            <p className="text-xs text-muted-foreground p-2">এখনও কোনো কথোপকথন নেই।</p>
+          )}
+          {sessions.map((s) => (
+            <button
+              key={s.id}
+              onClick={() => openSession(s.id)}
+              className={`w-full text-left text-xs rounded-lg p-2.5 transition-colors ${
+                s.id === activeSessionId ? "bg-mint/15 text-mint-deep dark:text-mint" : "hover:bg-muted"
+              }`}
+            >
+              <p className="font-medium truncate">{s.title || "কথোপকথন"}</p>
+              <p className="text-muted-foreground truncate mt-0.5">
+                {s.context_json?.subjectName ?? ""} {s.context_json?.chapterName ? `• ${s.context_json.chapterName}` : ""}
+              </p>
+            </button>
+          ))}
+        </div>
+      </ScrollArea>
+    </>
+  );
+
   return (
     <div className="flex h-full border border-border rounded-xl overflow-hidden bg-card">
-      <div className="w-64 shrink-0 border-r border-border flex flex-col bg-muted/20">
-        <div className="p-3 border-b border-border">
-          <Button size="sm" className="w-full gap-1.5" variant="outline" onClick={startNewConversation}>
-            <MessageSquarePlus className="w-3.5 h-3.5" />
-            নতুন কথোপকথন
-          </Button>
-        </div>
-        <ScrollArea className="flex-1">
-          <div className="p-2 space-y-1">
-            {sessions.length === 0 && (
-              <p className="text-xs text-muted-foreground p-2">এখনও কোনো কথোপকথন নেই।</p>
-            )}
-            {sessions.map((s) => (
-              <button
-                key={s.id}
-                onClick={() => openSession(s.id)}
-                className={`w-full text-left text-xs rounded-lg p-2.5 transition-colors ${
-                  s.id === activeSessionId ? "bg-mint/15 text-mint-deep dark:text-mint" : "hover:bg-muted"
-                }`}
-              >
-                <p className="font-medium truncate">{s.title || "কথোপকথন"}</p>
-                <p className="text-muted-foreground truncate mt-0.5">
-                  {s.context_json?.subjectName ?? ""} {s.context_json?.chapterName ? `• ${s.context_json.chapterName}` : ""}
-                </p>
-              </button>
-            ))}
-          </div>
-        </ScrollArea>
+      {/* Session history: persistent column on md:+, Sheet drawer below md: */}
+      <div className="hidden md:flex md:w-64 md:shrink-0 border-r border-border flex-col bg-muted/20">
+        {sessionList}
       </div>
 
       <div className="flex-1 flex flex-col min-w-0">
         <div className="p-3 border-b border-border bg-muted/30 flex items-center gap-2">
+          <Sheet open={historyOpen} onOpenChange={setHistoryOpen}>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon" className="md:hidden shrink-0 h-9 w-9" aria-label="কথোপকথনের ইতিহাস">
+                <History className="w-4 h-4" />
+              </Button>
+            </SheetTrigger>
+            <SheetContent side="left" className="w-72 p-0 flex flex-col">
+              <SheetHeader className="p-4 border-b border-border">
+                <SheetTitle>কথোপকথনের ইতিহাস</SheetTitle>
+              </SheetHeader>
+              {sessionList}
+            </SheetContent>
+          </Sheet>
           <div className="w-8 h-8 rounded-full bg-mint/10 flex items-center justify-center text-mint-deep dark:text-mint shrink-0">
             <Sparkles className="w-4 h-4" />
           </div>
@@ -158,7 +193,7 @@ export function TutorPageClient({
                 setChapterId(subjects.find((s) => s.id === v)?.chapters?.[0]?.id ?? "");
               }}
             >
-              <SelectTrigger className="h-8 text-xs w-36" size="sm">
+              <SelectTrigger className="h-9 text-xs w-28 sm:w-36" size="sm">
                 <BookOpen className="w-3 h-3" />
                 <SelectValue placeholder="বিষয়" />
               </SelectTrigger>
@@ -171,7 +206,7 @@ export function TutorPageClient({
               </SelectContent>
             </Select>
             <Select value={chapterId} disabled={!!activeSessionId} onValueChange={setChapterId}>
-              <SelectTrigger className="h-8 text-xs flex-1 min-w-0" size="sm">
+              <SelectTrigger className="h-9 text-xs flex-1 min-w-0" size="sm">
                 <SelectValue placeholder="অধ্যায়" />
               </SelectTrigger>
               <SelectContent>

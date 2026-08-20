@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, MODELS, PIPELINE_VERSION, PROMPT_VERSION } from "@/ai/genkit";
+import { ai, MODELS, MODEL_VERSIONS, PIPELINE_VERSION, PROMPT_VERSION } from "@/ai/genkit";
 import { transcribePageFlow } from "@/ai/flows/transcribe";
 import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
 import { evaluateRubricFlow } from "@/ai/flows/evaluate-rubric";
@@ -163,7 +163,7 @@ export const gradeSubmissionFlow = ai.defineFlow(
         explanation_summary_bn: evaluation.deduction_summary_bn,
         explanation_summary_en: evaluation.deduction_summary_en,
         model_name: MODELS.reasoning,
-        model_version: "unpinned", // resolved model version isn't surfaced by the SDK yet; track via Genkit trace ID in the interim
+        model_version: MODEL_VERSIONS.reasoning,
         prompt_version: PROMPT_VERSION,
         rubric_version_id: question.rubrics?.id ?? null,
         pipeline_version: PIPELINE_VERSION,

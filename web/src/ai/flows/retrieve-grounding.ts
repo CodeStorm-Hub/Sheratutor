@@ -1,5 +1,6 @@
 import { z } from "genkit";
 import { ai, activeEmbedder, EMBED_MODEL_NAME, EMBED_MODEL_VERSION } from "@/ai/genkit";
+import { withRetry } from "@/ai/retry";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 
 const GroundingChunkSchema = z.object({
@@ -36,16 +37,24 @@ export const retrieveGroundingFlow = ai.defineFlow(
   },
   async ({ queryText, chapterId, languageTag, matchCount }) => {
     // 1. Embed query with BGE-M3
-    const embedResponse = await ai.embed({
-      embedder: activeEmbedder,
-      content: queryText,
-      options: { inputType: "query" },
-    });
+    const embedResponse = await withRetry(() =>
+      ai.embed({
+        embedder: activeEmbedder,
+        content: queryText,
+        options: { inputType: "query" },
+      })
+    );
     const embedding = embedResponse[0]?.embedding;
     if (!embedding) throw new Error("retrieveGrounding: embedding failed");
 
+    // Service-role (RLS-bypassing) client is intentional here, not an
+    // oversight: curriculum_chunks is global NCTB reference content with no
+    // per-student or per-tenant column — every student reads the same rows,
+    // so there is no tenant-scoping policy for this read to bypass. If a
+    // tenant-scoped field is ever added to this table, switch to the
+    // request-scoped user client instead.
     const supabase = getServiceRoleClient();
-    
+
     // 2. Execute Hybrid Search (Dense HNSW + Sparse FTS) via RPC
     const { data, error } = await supabase.rpc("match_curriculum_chunks", {
       query_embedding: embedding,

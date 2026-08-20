@@ -36,11 +36,24 @@ import { ollama } from "genkitx-ollama";
 const NIM_BASE_URL = "https://integrate.api.nvidia.com/v1";
 const FIREWORKS_BASE_URL = "https://api.fireworks.ai/inference/v1";
 
+// NIM is the actually-used default provider for every flow (vision +
+// reasoning), so a missing key here should fail loudly at boot rather than
+// surface as a confusing 401 deep inside the first request. Fireworks stays
+// "unset"-tolerant since it's deliberately registered-but-not-defaulted (see
+// provider-pivot note above) and shouldn't block boot for a provider nothing
+// calls yet.
+const NVIDIA_NIM_API_KEY = process.env.NVIDIA_NIM_API_KEY;
+if (!NVIDIA_NIM_API_KEY) {
+  throw new Error(
+    "NVIDIA_NIM_API_KEY is not set. Every AI flow in this app defaults to NIM — set it in .env.local (or the deployment's env vars) before starting the server."
+  );
+}
+
 export const ai = genkit({
   plugins: [
     openAICompatible({
       name: "nim",
-      apiKey: process.env.NVIDIA_NIM_API_KEY ?? "unset",
+      apiKey: NVIDIA_NIM_API_KEY,
       baseURL: NIM_BASE_URL,
     }),
     // Registered, not defaulted — see provider-pivot note above.
@@ -69,6 +82,16 @@ export const MODELS = {
   // endpoint before trusting third-party docs on model availability again.
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
   reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+} as const;
+
+// The Genkit SDK doesn't surface a resolved/pinned version string from the
+// provider at call time, so grading provenance (grade-submission.ts) can't
+// read one off the response. This is the source of truth instead — bump it
+// whenever a MODELS.* value changes, so grading_results.model_version stays
+// meaningful for audit trails rather than a literal "unpinned".
+export const MODEL_VERSIONS = {
+  vision: "nemotron-3-nano-omni-30b-a3b-reasoning-2026-08-19",
+  reasoning: "nemotron-3-nano-omni-30b-a3b-reasoning-2026-08-19",
 } as const;
 
 // Local dev uses BGE-M3 via Ollama (no rate limit, native 1024-dim, strong

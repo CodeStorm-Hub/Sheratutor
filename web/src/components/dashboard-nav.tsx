@@ -1,16 +1,24 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Logo } from "@/components/logo";
+import {
+  Sidebar,
+  SidebarContent,
+  SidebarFooter,
+  SidebarHeader,
+  SidebarMenu,
+  SidebarMenuButton,
+  SidebarMenuItem,
+  SidebarRail,
+  SidebarTrigger,
+} from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { signOut } from "@/app/actions/auth";
-import { LayoutDashboard, Upload, FileText, Sparkles, CalendarDays, User, LogOut, Menu } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { LayoutDashboard, Upload, FileText, Sparkles, CalendarDays, User, LogOut } from "lucide-react";
 
-const NAV_LINKS = [
+export const NAV_LINKS = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/dashboard/upload", label: "Upload script", icon: Upload },
   { href: "/dashboard/submissions", label: "Submissions", icon: FileText },
@@ -19,80 +27,58 @@ const NAV_LINKS = [
   { href: "/dashboard/profile", label: "Profile", icon: User },
 ];
 
-function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
-  const pathname = usePathname();
-  return (
-    <nav className="flex-1 flex flex-col gap-1 p-3">
-      {NAV_LINKS.map(({ href, label, icon: Icon }) => {
-        const active = href === "/dashboard" ? pathname === href : pathname.startsWith(href);
-        return (
-          <Link
-            key={href}
-            href={href}
-            onClick={onNavigate}
-            className={cn(
-              "flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
-              active
-                ? "bg-primary/10 text-primary"
-                : "text-muted-foreground hover:bg-muted hover:text-foreground"
-            )}
-          >
-            <Icon className="w-4 h-4 shrink-0" />
-            {label}
-          </Link>
-        );
-      })}
-    </nav>
-  );
-}
-
-function SignOutButton() {
-  return (
-    <form action={signOut} className="p-3 border-t border-border">
-      <Button variant="ghost" size="sm" type="submit" className="w-full justify-start gap-2.5 text-muted-foreground">
-        <LogOut className="w-4 h-4" />
-        Sign out
-      </Button>
-    </form>
-  );
-}
-
 export function DashboardNav() {
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
-    <>
-      {/* Desktop sidebar */}
-      <aside className="hidden md:flex md:w-60 md:flex-col md:border-r md:border-border md:shrink-0">
-        <Link href="/dashboard" className="p-4 border-b border-border">
-          <Logo />
+    <Sidebar collapsible="icon">
+      <SidebarHeader className="border-b border-sidebar-border">
+        <Link href="/dashboard" className="flex items-center gap-2 px-2 py-1.5 group-data-[collapsible=icon]:justify-center">
+          <Logo compact />
         </Link>
-        <NavLinks />
-        <SignOutButton />
-      </aside>
+      </SidebarHeader>
+      <SidebarContent>
+        <SidebarMenu className="p-2 gap-1">
+          {NAV_LINKS.map(({ href, label, icon: Icon }) => {
+            const active = href === "/dashboard" ? pathname === href : pathname.startsWith(href);
+            return (
+              <SidebarMenuItem key={href}>
+                <SidebarMenuButton asChild isActive={active} tooltip={label}>
+                  <Link href={href}>
+                    <Icon />
+                    <span>{label}</span>
+                  </Link>
+                </SidebarMenuButton>
+              </SidebarMenuItem>
+            );
+          })}
+        </SidebarMenu>
+      </SidebarContent>
+      <SidebarFooter className="border-t border-sidebar-border">
+        <form action={signOut}>
+          <Button
+            variant="ghost"
+            size="sm"
+            type="submit"
+            className="w-full justify-start gap-2.5 text-muted-foreground group-data-[collapsible=icon]:justify-center group-data-[collapsible=icon]:px-0"
+          >
+            <LogOut className="w-4 h-4" />
+            <span className="group-data-[collapsible=icon]:hidden">Sign out</span>
+          </Button>
+        </form>
+      </SidebarFooter>
+      <SidebarRail />
+    </Sidebar>
+  );
+}
 
-      {/* Mobile top bar */}
-      <header className="flex md:hidden items-center justify-between px-4 py-3 border-b border-border">
-        <Link href="/dashboard">
-          <Logo />
-        </Link>
-        <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-          <SheetTrigger asChild>
-            <Button variant="ghost" size="icon">
-              <Menu className="w-5 h-5" />
-            </Button>
-          </SheetTrigger>
-          <SheetContent side="left" className="w-64 p-0 flex flex-col">
-            <SheetHeader className="p-4 border-b border-border">
-              <SheetTitle>
-                <Logo />
-              </SheetTitle>
-            </SheetHeader>
-            <NavLinks onNavigate={() => setMobileOpen(false)} />
-            <SignOutButton />
-          </SheetContent>
-        </Sheet>
-      </header>
-    </>
+export function DashboardMobileHeader() {
+  return (
+    <header className="flex md:hidden items-center justify-between px-4 py-3 border-b border-border">
+      <Link href="/dashboard">
+        <Logo compact />
+      </Link>
+      <SidebarTrigger />
+    </header>
   );
 }

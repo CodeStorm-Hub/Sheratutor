@@ -75,6 +75,21 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
     .select("id")
     .single();
   if (paperErr || !paper) return { status: "error", message: paperErr?.message ?? "Failed to save paper." };
+  const paperId: string = paper.id;
+
+  // @supabase/supabase-js has no multi-statement transaction API, so a
+  // mid-loop failure is rolled back manually here rather than left as an
+  // orphaned paper row with a partial question set.
+  const insertedRubricIds: string[] = [];
+
+  async function rollback(message: string): Promise<GeneratePaperState> {
+    await supabase.from("questions").delete().eq("question_paper_id", paperId);
+    if (insertedRubricIds.length > 0) {
+      await supabase.from("rubrics").delete().in("id", insertedRubricIds);
+    }
+    await supabase.from("question_papers").delete().eq("id", paperId);
+    return { status: "error", message };
+  }
 
   for (let i = 0; i < generated.questions.length; i++) {
     const q = generated.questions[i];
@@ -90,10 +105,11 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
       })
       .select("id")
       .single();
-    if (rubricErr || !rubric) return { status: "error", message: rubricErr?.message ?? "Failed to save rubric." };
+    if (rubricErr || !rubric) return rollback(rubricErr?.message ?? "Failed to save rubric.");
+    insertedRubricIds.push(rubric.id);
 
     const { error: questionErr } = await supabase.from("questions").insert({
-      question_paper_id: paper.id,
+      question_paper_id: paperId,
       chapter_id: q.chapter_id,
       rubric_id: rubric.id,
       question_number: i + 1,
@@ -101,8 +117,8 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
       question_text_en: q.question_text_en,
       max_marks: q.max_marks,
     });
-    if (questionErr) return { status: "error", message: questionErr.message };
+    if (questionErr) return rollback(questionErr.message);
   }
 
-  redirect(`/dashboard/upload?paperId=${paper.id}`);
+  redirect(`/dashboard/upload?paperId=${paperId}`);
 }

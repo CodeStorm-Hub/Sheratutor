@@ -11,25 +11,27 @@ type ScheduleDay = {
   chapters: { chapterId: string; title: string; subject: string; weaknessScore: number }[];
 };
 
+export type StudyPlanState = { status: "idle" | "error"; message?: string };
+
 /**
  * Deterministic, not AI-generated: this is a scheduling problem over
  * already-computed weakness_logs.weakness_score, not a text-generation
  * problem, so no LLM call is needed. Weaker chapters get more review slots
  * across a 14-day cycle, spread out rather than clustered.
  */
-export async function generateStudyPlan(): Promise<void> {
+export async function generateStudyPlan(_prev: StudyPlanState): Promise<StudyPlanState> {
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return;
+  if (!user) return { status: "error", message: "You must be logged in to generate a study plan." };
 
   const { data: profile } = await supabase
     .from("student_profiles")
     .select("id")
     .eq("user_id", user.id)
     .maybeSingle();
-  if (!profile) return;
+  if (!profile) return { status: "error", message: "Finish setting up your profile first." };
 
   type WeaknessRow = {
     chapter_id: string;
@@ -89,7 +91,9 @@ export async function generateStudyPlan(): Promise<void> {
     .update({ is_active: false })
     .eq("student_id", profile.id)
     .eq("is_active", true);
-  if (deactivateError) console.error("generateStudyPlan: deactivate failed:", deactivateError.message);
+  if (deactivateError) {
+    return { status: "error", message: "Couldn't update your existing plan. Please try again." };
+  }
 
   const { error: insertError } = await supabase.from("study_plans").insert({
     student_id: profile.id,
@@ -98,7 +102,10 @@ export async function generateStudyPlan(): Promise<void> {
     daily_schedule_json: { cycleDays: CYCLE_DAYS, days },
     is_active: true,
   });
-  if (insertError) console.error("generateStudyPlan: insert failed:", insertError.message);
+  if (insertError) {
+    return { status: "error", message: "Couldn't save your new plan. Please try again." };
+  }
 
   revalidatePath("/dashboard/study-plan");
+  return { status: "idle" };
 }
