@@ -16,7 +16,7 @@ export const TranscriptionSchema = z.object({
       "notation exactly as written. Do NOT silently correct spelling, unit " +
       "conversions, or arithmetic — the grading step needs to see the mistake."
   ),
-  latex_equations: z.array(z.string()).describe(
+  latex_equations: z.array(z.string()).default([]).describe(
     "Any mathematical equations found, transcribed as LaTeX, preserving the " +
       "student's actual working even if incorrect."
   ),
@@ -24,21 +24,23 @@ export const TranscriptionSchema = z.object({
     .array(
       z.object({
         description: z.string(),
-        approximate_region: z.string().optional(),
+        approximate_region: z.string().optional().nullable(),
       })
     )
+    .default([])
     .describe("Semantic descriptions of any diagrams/drawings on the page."),
   detected_language: z.enum(["bn", "en", "mixed"]),
   verbatim_confidence: z
+    .coerce
     .number()
-    .min(0)
-    .max(1)
+    .transform((n) => Math.max(0, Math.min(1, n)))
     .describe(
       "Self-reported confidence that this transcription is verbatim (not " +
         "silently corrected/normalized). Low confidence should route to human review."
     ),
   uncertain_spans: z
     .array(z.string())
+    .default([])
     .describe("Substrings the model was unsure how to read — illegible or ambiguous handwriting."),
 });
 

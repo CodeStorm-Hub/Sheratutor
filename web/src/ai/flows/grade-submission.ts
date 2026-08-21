@@ -62,8 +62,8 @@ export const gradeSubmissionFlow = ai.defineFlow(
       .order("page_number");
     if (pagesErr) throw new Error(`gradeSubmission: ${pagesErr.message}`);
 
-    // Layer 1: transcribe every page, verbatim.
-    for (const page of pages ?? []) {
+    // Layer 1: transcribe every page, verbatim (parallelized to save time).
+    await Promise.all((pages ?? []).map(async (page) => {
       const transcription = await transcribePageFlow({
         imageUrl: page.processed_image_url ?? page.original_image_url,
         expectedLanguage: "mixed",
@@ -82,7 +82,7 @@ export const gradeSubmissionFlow = ai.defineFlow(
       // Keep the in-memory copy in sync so the transcript builder below
       // (same run, no re-fetch) sees the freshly-written text.
       page.ocr_raw_text = transcription.transcribed_text;
-    }
+    }));
 
     await supabase.from("exam_submissions").update({ status: "EVALUATING" }).eq("id", submissionId);
 
@@ -153,7 +153,7 @@ export const gradeSubmissionFlow = ai.defineFlow(
         pageImageUrls: pageImageUrlsForQuestion(question.id),
       });
 
-      await supabase.from("grading_results").insert({
+      await supabase.from("grading_results").upsert({
         submission_id: submissionId,
         question_id: question.id,
         institution_id: submission.institution_id,
@@ -169,6 +169,8 @@ export const gradeSubmissionFlow = ai.defineFlow(
         pipeline_version: PIPELINE_VERSION,
         transcript_mismatch_detected: evaluation.transcript_mismatch_detected,
         transcript_mismatch_note: evaluation.transcript_mismatch_note,
+      }, {
+        onConflict: "submission_id,question_id"
       });
 
       totalScore += evaluation.score_obtained;

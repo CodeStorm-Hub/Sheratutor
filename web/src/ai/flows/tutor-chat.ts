@@ -2,7 +2,8 @@ import { z } from "genkit";
 import { ai, MODELS } from "@/ai/genkit";
 
 const SELF_HARM_PATTERNS = [
-  /suicid/i, /kill myself/i, /self.?harm/i, /want to die/i, /আত্মহত্যা/, /মরে যেতে/,
+  /\bsuicid/i, /\bkill myself\b/i, /\bself.?harm\b/i, /\bwant to die\b/i,
+  /আমি মরে যেতে চাই/, /নিজেকে শেষ করে/, /বাঁচতে ইচ্ছা করে না/, /আত্মহত্যা/,
 ];
 
 export const SafetyCheckResult = z.object({
@@ -38,9 +39,7 @@ export const SAFE_ESCALATION_MESSAGE_BN =
 function normalizeLatexDelimiters(text: string): string {
   return text
     .replace(/\\\[([\s\S]*?)\\\]/g, (_, inner) => `$$${inner}$$`)
-    .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner}$`)
-    .replace(/\(([^()\n]*\\[a-zA-Z][^()\n]*)\)/g, (_, inner) => `$${inner}$`)
-    .replace(/\[([^[\]\n]*\\[a-zA-Z][^[\]\n]*)\]/g, (_, inner) => `$$${inner}$$`);
+    .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner}$`);
 }
 
 /**
@@ -107,16 +106,7 @@ export const tutorChatFlow = ai.defineFlow(
       return { reply: SAFE_ESCALATION_MESSAGE_BN, safety };
     }
 
-    const historyPrompt =
-      history.length > 0
-        ? `\n\nCONVERSATION HISTORY:\n` +
-          history
-            .map(
-              (m) =>
-                `${m.role === "student" ? "STUDENT" : "AI TUTOR"}: ${m.text}`
-            )
-            .join("\n")
-        : "";
+    // history is passed as structured messages to ai.generate
 
     const textbookSection = groundedContext
       ? `\n\nOFFICIAL NCTB TEXTBOOK CONTEXT:\n${groundedContext}\n`
@@ -145,7 +135,7 @@ export const tutorChatFlow = ai.defineFlow(
         ? `6. If the student asks about anything unrelated to this academic topic (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying this question.\n\n`
         : `6. If the student asks about anything unrelated to this subject/chapter (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
 
-    const prompt =
+    const systemPrompt =
       `You are SheraTutor's "Explain it simply" AI tutor, talking to a Bangladeshi SSC ` +
       `student (age 13-19). ${roleIntro}\n\n` +
       `RULES:\n` +
@@ -160,15 +150,23 @@ export const tutorChatFlow = ai.defineFlow(
       `5. If the student asks for real-life analogies, give relatable examples (e.g. Dhaka traffic, bicycle motion, cricket ball throwing, electric fans).\n` +
       rule6 +
       academicContext +
-      textbookSection +
-      historyPrompt +
-      `\n\nSTUDENT: ${studentMessage}\n\nAI TUTOR:`;
+      textbookSection;
+      
+    // Construct structured messages for the Genkit / OpenAI chat interface
+    const messages = [
+      { role: "system" as const, content: [{ text: systemPrompt }] },
+      ...history.map((m) => ({
+        role: (m.role === "student" ? "user" : "model") as "user" | "model",
+        content: [{ text: m.text }],
+      })),
+      { role: "user" as const, content: [{ text: studentMessage }] },
+    ];
 
     let text: string;
     try {
       ({ text } = await ai.generate({
         model: MODELS.reasoning,
-        prompt,
+        messages,
         config: { temperature: 0.5 },
       }));
     } catch (err) {

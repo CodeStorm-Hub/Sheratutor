@@ -4,7 +4,7 @@ import { gradeSubmissionFlow } from "@/ai/flows/grade-submission";
 
 const MAX_ATTEMPTS = 3;
 const BATCH_SIZE = 5;
-const VISIBILITY_TIMEOUT_SECONDS = 120;
+const VISIBILITY_TIMEOUT_SECONDS = 300;
 
 type QueueMessage = {
   msg_id: number;

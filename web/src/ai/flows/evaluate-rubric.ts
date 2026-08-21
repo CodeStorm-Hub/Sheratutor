@@ -86,7 +86,22 @@ export const evaluateRubricFlow = ai.defineFlow(
     });
 
     if (!output) throw new Error("evaluateRubric: model returned no structured output");
-    return { ...output, question_id: questionId };
+    
+    // Safety check against LLM arithmetic errors:
+    // Ensure that score_obtained matches the sum of criteria_evaluations and respects max limits
+    let computedScore = 0;
+    const sanitizedCriteria = output.criteria_evaluations.map((c) => {
+      const awarded = Math.max(0, Math.min(c.awarded_marks, c.max_step_marks));
+      computedScore += awarded;
+      return { ...c, awarded_marks: awarded };
+    });
+    
+    return { 
+      ...output, 
+      question_id: questionId, 
+      score_obtained: Math.min(computedScore, maxMarks),
+      criteria_evaluations: sanitizedCriteria
+    };
   }
 );
 

@@ -21,11 +21,11 @@ const GeneratedQuestionSchema = z.object({
   chapter_id: z.string(),
   question_text_bn: z.string(),
   question_text_en: z.string(),
-  max_marks: z.number(),
+  max_marks: z.coerce.number(),
   rubric_criteria: z.array(
     z.object({
       step_name: z.string(),
-      max_step_marks: z.number(),
+      max_step_marks: z.coerce.number(),
       matching_rules: z.string(),
     })
   ),
@@ -48,14 +48,17 @@ export const generateQuestionPaperFlow = ai.defineFlow(
     outputSchema: GeneratedPaperSchema,
   },
   async ({ chapterIds, paperType, difficulty, totalMarks, languagePreference }) => {
+    console.log(`[generateQuestionPaper] Starting for chapterIds=${chapterIds}, totalMarks=${totalMarks}`);
     const groundingByChapter = await Promise.all(
       chapterIds.map(async (chapterId) => {
+        console.log(`[generateQuestionPaper] Retrieving grounding for ${chapterId}`);
         const grounding = await retrieveGroundingFlow({
           queryText: "important board-exam topics, formulas, and concepts for this chapter",
           chapterId,
           languageTag: languagePreference,
           matchCount: 4,
         });
+        console.log(`[generateQuestionPaper] Retrieved ${grounding.chunks.length} chunks for ${chapterId}`);
         return { chapterId, chunks: grounding.chunks };
       })
     );
@@ -70,7 +73,8 @@ export const generateQuestionPaperFlow = ai.defineFlow(
       )
       .join("\n\n---\n\n");
 
-    const { output } = await ai.generate({
+    console.log(`[generateQuestionPaper] Built grounding context, length: ${groundingContext.length}. Calling ai.generate...`);
+    const { text } = await ai.generate({
       model: MODELS.reasoning,
       prompt:
         `You are writing a ${difficulty} board-standard ${paperType} mock exam paper for a Bangladeshi ` +
@@ -80,12 +84,25 @@ export const generateQuestionPaperFlow = ai.defineFlow(
         `question_text_en (plain English). Assign each question to the chapter_id its content is grounded in. ` +
         `Give each question a rubric_criteria array of grading steps whose max_step_marks sum to that ` +
         `question's max_marks, and whose max_marks across all questions sum to exactly ${totalMarks}.\n\n` +
+        `You MUST output a valid JSON object matching this schema exactly, with NO markdown formatting or other text:\n` +
+        `{\n  "questions": [\n    {\n      "chapter_id": "string",\n      "question_text_bn": "string",\n      "question_text_en": "string",\n      "max_marks": number,\n      "rubric_criteria": [\n        {\n          "step_name": "string",\n          "max_step_marks": number,\n          "matching_rules": "string"\n        }\n      ]\n    }\n  ]\n}\n\n` +
         `RETRIEVED CURRICULUM CONTEXT:\n${groundingContext}`,
-      output: { schema: GeneratedPaperSchema },
       config: { temperature: 0.6 },
     });
+    console.log(`[generateQuestionPaper] ai.generate completed.`);
 
-    if (!output) throw new Error("generateQuestionPaper: model returned no structured output");
-    return output;
+    if (!text) throw new Error("generateQuestionPaper: model returned no text");
+    
+    // Clean markdown code blocks if the model wrapped it
+    let jsonStr = text.replace(/^```json\s*/i, "").replace(/\s*```$/i, "").trim();
+    console.log("Raw LLM Output:\n", jsonStr);
+    
+    // Fix invalid escapes that 8B models sometimes produce for LaTeX (e.g. \sqrt instead of \\sqrt)
+    // This doubles any backslash that isn't part of a valid JSON escape sequence.
+    jsonStr = jsonStr.replace(/\\(?!["\\/bfnrtu])/g, "\\\\");
+
+    const output = JSON.parse(jsonStr);
+    
+    return GeneratedPaperSchema.parse(output);
   }
 );

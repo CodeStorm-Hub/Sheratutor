@@ -51,7 +51,7 @@ export const ai = genkit({
     }),
     ollama({
       serverAddress: process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434",
-      models: [{ name: "qwen3:8b" }, { name: "gemma4:e4b" }, { name: "bge-m3" }],
+      models: [{ name: "qwen3:8b" }, { name: "gemma4:e4b" }, { name: "bge-m3" }, { name: "qwen2.5-coder:1.5b" }],
     }),
   ],
 });
@@ -67,8 +67,8 @@ export const MODELS = {
   // catalog (404), despite web documentation suggesting it should. NIM's
   // catalog is account/region-gated; verify against the live /v1/models
   // endpoint before trusting third-party docs on model availability again.
-  vision: process.env.GENKIT_VISION_MODEL ?? "nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+  vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/meta/llama-3.1-8b-instruct",
 } as const;
 
 // Local dev uses BGE-M3 via Ollama (no rate limit, native 1024-dim, strong
@@ -103,30 +103,22 @@ export const ollamaEmbedder = ai.defineEmbedder(
     },
   },
   async (docs, options) => {
-    // BGE-M3 is powerful enough for direct mapping, but we can prepend an instruction for query type if needed.
     const prefix = options?.inputType === "query" ? "Represent this sentence for searching relevant passages: " : "";
     const baseUrl = process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434";
 
-    const embeddings = await Promise.all(
-      docs.map(async (d) => {
-        const res = await fetch(`${baseUrl}/api/embeddings`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            model: OLLAMA_EMBED_MODEL,
-            prompt: prefix + d.text,
-          }),
-        });
-        if (!res.ok) {
-          throw new Error(`ollamaEmbedder: ${res.status} ${await res.text()}`);
-        }
-        const json = await res.json() as { embedding: number[] };
-        return { embedding: json.embedding };
-      })
-    );
-    return { embeddings };
+    const res = await fetch(`${baseUrl}/api/embed`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        model: OLLAMA_EMBED_MODEL,
+        input: docs.map((d) => prefix + d.text),
+      }),
+    });
+    if (!res.ok) {
+      throw new Error(`ollamaEmbedder: ${res.status} ${await res.text()}`);
+    }
+    const json = await res.json() as { embeddings: number[][] };
+    return { embeddings: json.embeddings.map(e => ({ embedding: e })) };
   }
 );
 
@@ -150,35 +142,42 @@ export const nimEmbedder = ai.defineEmbedder(
     },
   },
   async (docs, options) => {
-    const res = await fetch(`${NIM_BASE_URL}/embeddings`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.NVIDIA_NIM_API_KEY ?? "unset"}`,
-      },
-      body: JSON.stringify({
-        model: NIM_EMBED_MODEL,
-        input: docs.map((d) => d.text),
-        input_type: options?.inputType ?? "passage",
-        dimensions: NIM_EMBED_DIMENSIONS,
-      }),
-    });
-    if (!res.ok) {
-      throw new Error(`nimEmbedder: ${res.status} ${await res.text()}`);
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    try {
+      const res = await fetch(`${NIM_BASE_URL}/embeddings`, {
+        method: "POST",
+        signal: controller.signal,
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${process.env.NVIDIA_NIM_API_KEY ?? "unset"}`,
+        },
+        body: JSON.stringify({
+          model: NIM_EMBED_MODEL,
+          input: docs.map((d) => d.text),
+          input_type: options?.inputType ?? "passage",
+          dimensions: NIM_EMBED_DIMENSIONS,
+        }),
+      });
+      if (!res.ok) {
+        throw new Error(`nimEmbedder: ${res.status} ${await res.text()}`);
+      }
+      const json = (await res.json()) as { data: { embedding: number[] }[] };
+      return { embeddings: json.data.map((d) => ({ embedding: d.embedding })) };
+    } finally {
+      clearTimeout(timeout);
     }
-    const json = (await res.json()) as { data: { embedding: number[] }[] };
-    return { embeddings: json.data.map((d) => ({ embedding: d.embedding })) };
   }
 );
 
 // Vercel sets `VERCEL` on every deployed environment (production, preview,
 // and its own dev proxy) — nothing exists at that address there, so this is
 // the one reliable signal to route embeddings to NIM instead of Ollama.
-const IS_VERCEL = Boolean(process.env.VERCEL);
+const IS_PROD = Boolean(process.env.VERCEL) || process.env.ACTIVE_EMBEDDER === "nim" || Boolean(process.env.NVIDIA_NIM_API_KEY && process.env.NVIDIA_NIM_API_KEY !== "unset");
 
-export const activeEmbedder = IS_VERCEL ? nimEmbedder : ollamaEmbedder;
-export const EMBED_MODEL_NAME = IS_VERCEL ? NIM_EMBED_MODEL : OLLAMA_EMBED_MODEL;
-export const EMBED_MODEL_VERSION = IS_VERCEL ? NIM_EMBED_MODEL_VERSION : OLLAMA_EMBED_MODEL_VERSION;
+export const activeEmbedder = IS_PROD ? nimEmbedder : ollamaEmbedder;
+export const EMBED_MODEL_NAME = IS_PROD ? NIM_EMBED_MODEL : OLLAMA_EMBED_MODEL;
+export const EMBED_MODEL_VERSION = IS_PROD ? NIM_EMBED_MODEL_VERSION : OLLAMA_EMBED_MODEL_VERSION;
 
 export const PIPELINE_VERSION = "v1.2.0-bge-m3-pivot";
 export const PROMPT_VERSION = "v1.0.0";

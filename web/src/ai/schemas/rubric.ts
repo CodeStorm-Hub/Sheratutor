@@ -21,15 +21,15 @@ export const CriterionEvaluationSchema = z.object({
 
 export const RubricEvaluationSchema = z.object({
   question_id: z.string(),
-  max_marks: z.number(),
-  score_obtained: z.number(),
-  criteria_evaluations: z.array(CriterionEvaluationSchema),
-  deduction_summary_bn: z.string(),
-  deduction_summary_en: z.string(),
+  max_marks: z.coerce.number(),
+  score_obtained: z.coerce.number(),
+  criteria_evaluations: z.array(CriterionEvaluationSchema).default([]),
+  deduction_summary_bn: z.string().default(""),
+  deduction_summary_en: z.string().default(""),
   grounding_confidence: z
+    .coerce
     .number()
-    .min(0)
-    .max(1)
+    .transform((n) => Math.max(0, Math.min(1, n)))
     .describe(
       "How well the retrieved RAG context actually covered this question. Low " +
         "confidence means the model may be grading without solid curriculum grounding " +
