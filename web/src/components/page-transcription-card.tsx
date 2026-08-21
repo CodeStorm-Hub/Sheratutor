@@ -16,9 +16,9 @@ type Page = {
 
 function confidenceBadgeClass(confidence: number | null): string {
   if (confidence == null) return "bg-muted text-muted-foreground border-border";
-  if (confidence < 0.6) return "bg-coral/20 text-coral-deep border-coral/30";
-  if (confidence < 0.85) return "bg-sunshine/20 text-ink-navy dark:text-sunshine border-sunshine/40";
-  return "bg-mint/20 text-mint-deep border-mint/30";
+  if (confidence < 0.6) return "bg-red/20 text-red-deep border-red/30";
+  if (confidence < 0.85) return "bg-ochre/20 text-ochre-deep dark:text-ochre border-ochre/40";
+  return "bg-green/20 text-green-deep border-green/30";
 }
 
 /**
@@ -54,16 +54,16 @@ export function PageTranscriptionCard({ submissionId, page }: { submissionId: st
       </div>
       <div className="flex-1 min-w-0 space-y-1.5">
         <div className="flex items-center gap-2">
-          <span className="text-xs font-medium">Page {page.page_number}</span>
-          <Badge variant="outline" className={confidenceBadgeClass(page.transcription_confidence)}>
-            {page.transcription_confidence != null ? `${Math.round(page.transcription_confidence * 100)}% confidence` : "—"}
+          <span className="text-xs font-medium font-tabular">পৃষ্ঠা {page.page_number}</span>
+          <Badge variant="outline" className={`font-tabular ${confidenceBadgeClass(page.transcription_confidence)}`}>
+            {page.transcription_confidence != null ? `${Math.round(page.transcription_confidence * 100)}% নিশ্চয়তা` : "—"}
           </Badge>
           {lowConfidence && (
-            <span className="text-[11px] text-coral-deep dark:text-coral">Low confidence — please check</span>
+            <span className="text-[11px] text-red-deep dark:text-red">নিশ্চয়তা কম — দয়া করে যাচাই করো</span>
           )}
         </div>
         <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">
-          {page.ocr_raw_text || "Transcription pending…"}
+          {page.ocr_raw_text || "লেখা পড়া চলছে…"}
         </p>
         <Button
           type="button"

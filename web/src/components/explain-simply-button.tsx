@@ -133,9 +133,9 @@ export function ExplainSimplyButton({
         <Button
           variant="outline"
           size="sm"
-          className="gap-1.5 border-mint/30 text-mint-deep hover:bg-mint/10 dark:text-mint dark:hover:bg-mint/10 text-xs font-semibold"
+          className="gap-1.5 border-green/30 text-green-deep hover:bg-green/10 dark:text-green dark:hover:bg-green/10 text-xs font-semibold"
         >
-          <Sparkles className="w-3.5 h-3.5 text-mint-deep dark:text-mint" />
+          <Sparkles className="w-3.5 h-3.5 text-green-deep dark:text-green" />
           বুঝিয়ে বলো
         </Button>
       </SheetTrigger>
@@ -146,7 +146,7 @@ export function ExplainSimplyButton({
       >
         <SheetHeader className="p-4 border-b border-border bg-muted/30">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-mint/10 flex items-center justify-center text-mint-deep dark:text-mint">
+            <div className="w-8 h-8 rounded-full bg-green/10 flex items-center justify-center text-green-deep dark:text-green">
               <Sparkles className="w-4 h-4" />
             </div>
             <div>
@@ -154,7 +154,7 @@ export function ExplainSimplyButton({
                 SheraTutor — বুঝিয়ে বলো
               </SheetTitle>
               <SheetDescription className="text-xs text-muted-foreground">
-                Socratic AI Tutor • {stepName}
+                প্রশ্নোত্তরে শেখায় এমন AI টিউটর • {stepName}
               </SheetDescription>
             </div>
           </div>
