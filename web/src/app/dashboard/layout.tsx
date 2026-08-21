@@ -11,9 +11,9 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
   if (!user) redirect("/login");
 
   return (
-    <div className="min-h-full flex flex-col md:flex-row bg-background">
+    <div className="h-dvh flex flex-col md:flex-row bg-background overflow-hidden">
       <DashboardNav />
-      <main className="flex-1 px-6 py-8 overflow-y-auto">
+      <main className="flex-1 min-h-0 px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 overflow-y-auto">
         <div className="max-w-5xl mx-auto w-full">{children}</div>
       </main>
     </div>

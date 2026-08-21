@@ -22,7 +22,7 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
   return (
     <form action={formAction} className="space-y-5">
       <div className="space-y-1.5">
-        <Label htmlFor="subjectId">Subject</Label>
+        <Label htmlFor="subjectId">বিষয়</Label>
         <Select name="subjectId" value={subjectId} onValueChange={setSubjectId} required>
           <SelectTrigger id="subjectId" className="w-full">
             <SelectValue />
@@ -38,9 +38,9 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
       </div>
 
       <div className="space-y-1.5">
-        <Label>Chapters</Label>
+        <Label>অধ্যায়</Label>
         {subjectChapters.length === 0 ? (
-          <p className="text-sm text-muted-foreground">No chapters available for this subject yet.</p>
+          <p className="text-sm text-muted-foreground">এই বিষয়ের জন্য এখনও কোনো অধ্যায় নেই।</p>
         ) : (
           <div className="grid grid-cols-2 gap-2 max-h-56 overflow-y-auto rounded-lg border border-border p-3">
             {subjectChapters.map((c) => (
@@ -57,43 +57,43 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
 
       <div className="grid grid-cols-2 gap-3">
         <div className="space-y-1.5">
-          <Label htmlFor="paperType">Paper type</Label>
+          <Label htmlFor="paperType">প্রশ্নের ধরন</Label>
           <Select name="paperType" defaultValue="CQ" required>
             <SelectTrigger id="paperType" className="w-full">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="CQ">Creative Questions</SelectItem>
-              <SelectItem value="MCQ">MCQ</SelectItem>
-              <SelectItem value="MIXED">Mixed</SelectItem>
+              <SelectItem value="CQ">সৃজনশীল প্রশ্ন</SelectItem>
+              <SelectItem value="MCQ">বহুনির্বাচনী (MCQ)</SelectItem>
+              <SelectItem value="MIXED">মিশ্র</SelectItem>
             </SelectContent>
           </Select>
         </div>
         <div className="space-y-1.5">
-          <Label htmlFor="difficulty">Difficulty</Label>
+          <Label htmlFor="difficulty">কঠিনতা</Label>
           <Select name="difficulty" defaultValue="BOARD_STANDARD" required>
             <SelectTrigger id="difficulty" className="w-full">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="EASY">Easy</SelectItem>
-              <SelectItem value="MEDIUM">Medium</SelectItem>
-              <SelectItem value="HARD">Hard</SelectItem>
-              <SelectItem value="BOARD_STANDARD">Board Standard</SelectItem>
+              <SelectItem value="EASY">সহজ</SelectItem>
+              <SelectItem value="MEDIUM">মাঝারি</SelectItem>
+              <SelectItem value="HARD">কঠিন</SelectItem>
+              <SelectItem value="BOARD_STANDARD">বোর্ড মান</SelectItem>
             </SelectContent>
           </Select>
         </div>
       </div>
 
       <div className="space-y-1.5">
-        <Label htmlFor="totalMarks">Total marks</Label>
-        <Input id="totalMarks" name="totalMarks" type="number" defaultValue={25} min={5} max={100} required />
+        <Label htmlFor="totalMarks">মোট নম্বর</Label>
+        <Input id="totalMarks" name="totalMarks" type="number" inputMode="numeric" defaultValue={25} min={5} max={100} required />
       </div>
 
       {state.status === "error" && <p className="text-sm text-destructive">{state.message}</p>}
 
       <Button type="submit" className="w-full" size="lg" disabled={pending}>
-        {pending ? "Generating… this can take a minute" : "Generate paper"}
+        {pending ? "তৈরি হচ্ছে… এক মিনিট সময় লাগতে পারে" : "প্রশ্নপত্র তৈরি করো"}
       </Button>
     </form>
   );

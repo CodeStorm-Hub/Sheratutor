@@ -21,13 +21,13 @@ export default function SignUpPage() {
 
       <div className="w-full max-w-sm space-y-6">
         <div className="text-center space-y-1">
-          <h1 className="font-heading font-bold text-2xl">Create your account</h1>
-          <p className="text-sm text-muted-foreground">Free, forever. No card required.</p>
+          <h1 className="font-heading font-bold text-2xl">অ্যাকাউন্ট তৈরি করো</h1>
+          <p className="text-sm text-muted-foreground">চিরকাল বিনামূল্যে। কোনো কার্ডের প্রয়োজন নেই।</p>
         </div>
 
         <form action={signInWithGoogle}>
           <Button type="submit" variant="outline" className="w-full" size="lg">
-            Continue with Google
+            Google দিয়ে চালিয়ে যাও
           </Button>
         </form>
 
@@ -36,35 +36,35 @@ export default function SignUpPage() {
             <span className="w-full border-t border-border" />
           </div>
           <div className="relative flex justify-center text-xs uppercase">
-            <span className="bg-background px-2 text-muted-foreground">or</span>
+            <span className="bg-background px-2 text-muted-foreground">অথবা</span>
           </div>
         </div>
 
         <form action={formAction} className="space-y-4">
           <div className="space-y-1.5">
-            <Label htmlFor="fullName">Full name</Label>
+            <Label htmlFor="fullName">পুরো নাম</Label>
             <Input id="fullName" name="fullName" required autoComplete="name" />
           </div>
           <div className="space-y-1.5">
-            <Label htmlFor="email">Email</Label>
+            <Label htmlFor="email">ইমেইল</Label>
             <Input id="email" name="email" type="email" required autoComplete="email" />
           </div>
           <div className="space-y-1.5">
-            <Label htmlFor="password">Password</Label>
+            <Label htmlFor="password">পাসওয়ার্ড</Label>
             <Input id="password" name="password" type="password" required minLength={8} autoComplete="new-password" />
           </div>
 
           {state.status === "error" && <p className="text-sm text-destructive">{state.message}</p>}
 
           <Button type="submit" className="w-full" size="lg" disabled={pending}>
-            {pending ? "Creating account…" : "Sign up"}
+            {pending ? "অ্যাকাউন্ট তৈরি হচ্ছে…" : "সাইন আপ করো"}
           </Button>
         </form>
 
         <p className="text-center text-sm text-muted-foreground">
-          Already have an account?{" "}
+          আগে থেকেই অ্যাকাউন্ট আছে?{" "}
           <Link href="/login" className="text-primary font-medium hover:underline">
-            Log in
+            লগ ইন করো
           </Link>
         </p>
       </div>

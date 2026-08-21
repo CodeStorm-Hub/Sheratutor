@@ -42,12 +42,12 @@ export default function OnboardingPage() {
 
       <form action={formAction} className="w-full max-w-md space-y-5">
         <div className="text-center space-y-1 mb-2">
-          <h1 className="font-heading font-bold text-2xl">Tell us about your exam</h1>
-          <p className="text-sm text-muted-foreground">This helps us build your study plan.</p>
+          <h1 className="font-heading font-bold text-2xl">তোমার পরীক্ষা সম্পর্কে বলো</h1>
+          <p className="text-sm text-muted-foreground">এটি তোমার পড়ার পরিকল্পনা তৈরিতে সাহায্য করবে।</p>
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="dateOfBirth">Date of birth</Label>
+          <Label htmlFor="dateOfBirth">জন্ম তারিখ</Label>
           <Input
             id="dateOfBirth"
             name="dateOfBirth"
@@ -60,7 +60,7 @@ export default function OnboardingPage() {
 
         <div className="grid grid-cols-2 gap-3">
           <div className="space-y-1.5">
-            <Label htmlFor="examType">Exam</Label>
+            <Label htmlFor="examType">পরীক্ষা</Label>
             <Select name="examType" defaultValue="SSC" required>
               <SelectTrigger id="examType" className="w-full">
                 <SelectValue />
@@ -72,13 +72,13 @@ export default function OnboardingPage() {
             </Select>
           </div>
           <div className="space-y-1.5">
-            <Label htmlFor="targetExamYear">Target year</Label>
-            <Input id="targetExamYear" name="targetExamYear" type="number" defaultValue={2027} min={2026} max={2030} required />
+            <Label htmlFor="targetExamYear">পরীক্ষার বছর</Label>
+            <Input id="targetExamYear" name="targetExamYear" type="number" inputMode="numeric" defaultValue={2027} min={2026} max={2030} required />
           </div>
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="educationBoard">Education board</Label>
+          <Label htmlFor="educationBoard">শিক্ষা বোর্ড</Label>
           <Select name="educationBoard" defaultValue="DHAKA" required>
             <SelectTrigger id="educationBoard" className="w-full">
               <SelectValue />
@@ -94,15 +94,15 @@ export default function OnboardingPage() {
         </div>
 
         <div className="space-y-1.5">
-          <Label htmlFor="academicGroup">Group</Label>
+          <Label htmlFor="academicGroup">গ্রুপ</Label>
           <Select name="academicGroup" defaultValue="SCIENCE" required>
             <SelectTrigger id="academicGroup" className="w-full">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="SCIENCE">Science</SelectItem>
-              <SelectItem value="HUMANITIES">Humanities</SelectItem>
-              <SelectItem value="BUSINESS_STUDIES">Business Studies</SelectItem>
+              <SelectItem value="SCIENCE">বিজ্ঞান</SelectItem>
+              <SelectItem value="HUMANITIES">মানবিক</SelectItem>
+              <SelectItem value="BUSINESS_STUDIES">ব্যবসায় শিক্ষা</SelectItem>
             </SelectContent>
           </Select>
         </div>
@@ -110,20 +110,19 @@ export default function OnboardingPage() {
         {minor && (
           <div className="rounded-lg bg-muted p-4 space-y-3">
             <p className="text-xs text-muted-foreground leading-snug">
-              Since you&apos;re under 18, Bangladesh&apos;s Personal Data Protection Act,
-              2026 requires a parent or guardian&apos;s consent before we can create
-              your account.
+              তোমার বয়স ১৮ বছরের কম হওয়ায়, বাংলাদেশের ব্যক্তিগত তথ্য সুরক্ষা আইন,
+              ২০২৬ অনুযায়ী অ্যাকাউন্ট তৈরির আগে একজন অভিভাবকের সম্মতি প্রয়োজন।
             </p>
             <div className="space-y-1.5">
-              <Label htmlFor="guardianPhone">Parent/guardian phone number</Label>
-              <Input id="guardianPhone" name="guardianPhone" placeholder="01XXXXXXXXX" />
+              <Label htmlFor="guardianPhone">অভিভাবকের ফোন নম্বর</Label>
+              <Input id="guardianPhone" name="guardianPhone" placeholder="০১XXXXXXXXX" inputMode="tel" />
             </div>
             <div className="flex items-start gap-2">
               <Checkbox id="guardianConsentGiven" name="guardianConsentGiven" />
               <Label htmlFor="guardianConsentGiven" className="font-normal text-xs leading-snug">
-                I am this student&apos;s parent/guardian (or confirming with their
-                knowledge) and I consent to SheraTutor processing this student&apos;s
-                academic and performance data as described in the Privacy Policy.
+                আমি এই শিক্ষার্থীর অভিভাবক (অথবা তার জানা মতে নিশ্চিত করছি) এবং
+                গোপনীয়তা নীতিতে বর্ণিত অনুযায়ী SheraTutor-কে এই শিক্ষার্থীর
+                একাডেমিক ও পারফরম্যান্স তথ্য প্রক্রিয়াকরণে সম্মতি দিচ্ছি।
               </Label>
             </div>
           </div>
@@ -132,7 +131,7 @@ export default function OnboardingPage() {
         {state.status === "error" && <p className="text-sm text-destructive">{state.message}</p>}
 
         <Button type="submit" className="w-full" size="lg" disabled={pending}>
-          {pending ? "Saving…" : "Continue"}
+          {pending ? "সংরক্ষণ হচ্ছে…" : "চালিয়ে যাও"}
         </Button>
       </form>
     </div>

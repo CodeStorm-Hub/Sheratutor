@@ -18,16 +18,16 @@ export default async function UploadPage() {
     <div className="max-w-lg mx-auto space-y-6">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <h1 className="font-heading font-bold text-2xl">Upload your answer script</h1>
+          <h1 className="font-heading font-bold text-2xl">খাতা জমা দাও</h1>
           <p className="text-sm text-muted-foreground">
-            Photograph each page clearly, in order. JPG, PNG, HEIC, or PDF.
+            প্রতিটি পৃষ্ঠার ছবি স্পষ্টভাবে, ক্রম অনুযায়ী তোলো।
           </p>
         </div>
         <Link
           href="/dashboard/practice/generate"
           className="text-xs font-medium text-primary hover:underline shrink-0 whitespace-nowrap"
         >
-          Generate a practice paper
+          প্রশ্নপত্র তৈরি করো
         </Link>
       </div>
       <UploadForm papers={papers ?? []} />

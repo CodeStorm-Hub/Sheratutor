@@ -15,19 +15,19 @@ export default async function ProfilePage() {
     .maybeSingle();
 
   if (!profile) {
-    return <p className="text-sm text-muted-foreground">Finish setting up your profile first.</p>;
+    return <p className="text-sm text-muted-foreground">প্রথমে প্রোফাইল সম্পূর্ণ করো।</p>;
   }
 
   return (
     <div className="max-w-lg mx-auto space-y-6">
       <div>
-        <h1 className="font-heading font-bold text-2xl">Profile</h1>
+        <h1 className="font-heading font-bold text-2xl">প্রোফাইল</h1>
         <p className="text-sm text-muted-foreground">{user?.email}</p>
       </div>
 
       <Card>
         <CardHeader>
-          <CardTitle className="eyebrow text-xs text-muted-foreground">Exam details</CardTitle>
+          <CardTitle className="eyebrow text-xs text-muted-foreground">পরীক্ষার তথ্য</CardTitle>
         </CardHeader>
         <CardContent>
           <ProfileForm
