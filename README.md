@@ -116,3 +116,8 @@ set's actual *data* — the schema and eval harness exist (see above), but
 populating `golden_set_items`/`golden_set_human_grades` with ~30 real
 scripts and 3-examiner blind grades is a data-collection step, not a coding
 one (`ingestion/README.md` "Golden dataset" has the process).
+
+
+**Issues**
+1. In Sign Up: email rate limit exceeded
+2. In '/dashboard/practice/generate': UNKNOWN: Connection error.
