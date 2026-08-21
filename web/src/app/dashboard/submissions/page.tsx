@@ -26,11 +26,13 @@ export default async function SubmissionsListPage({
 
   if (!profile) {
     return (
-      <div className="text-center py-20">
-        <p className="text-muted-foreground mb-4">প্রথমে প্রোফাইল সম্পূর্ণ করো।</p>
-        <Button asChild>
-          <Link href="/onboarding">প্রোফাইল সম্পূর্ণ করো</Link>
-        </Button>
+      <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8">
+        <div className="text-center py-20">
+          <p className="text-muted-foreground mb-4">প্রথমে প্রোফাইল সম্পূর্ণ করো।</p>
+          <Button asChild>
+            <Link href="/onboarding">প্রোফাইল সম্পূর্ণ করো</Link>
+          </Button>
+        </div>
       </div>
     );
   }
@@ -45,7 +47,7 @@ export default async function SubmissionsListPage({
   const hasMore = (count ?? 0) > offset + PAGE_SIZE;
 
   return (
-    <div className="space-y-6">
+    <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-6">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="font-heading font-bold text-2xl">ফলাফল</h1>

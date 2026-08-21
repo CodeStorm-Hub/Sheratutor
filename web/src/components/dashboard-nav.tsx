@@ -18,6 +18,8 @@ import {
   LogOut,
   MoreHorizontal,
   FilePlus2,
+  PanelLeftClose,
+  PanelLeftOpen,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -50,7 +52,7 @@ function isActive(pathname: string, href: string) {
   return href === "/dashboard" ? pathname === href : pathname.startsWith(href);
 }
 
-function SidebarLinks() {
+function SidebarLinks({ collapsed }: { collapsed: boolean }) {
   const pathname = usePathname();
   return (
     <nav className="flex-1 flex flex-col gap-1 p-3">
@@ -60,15 +62,18 @@ function SidebarLinks() {
           <Link
             key={href}
             href={href}
+            title={collapsed ? label : undefined}
+            aria-label={collapsed ? label : undefined}
             className={cn(
               "flex items-center gap-2.5 rounded-r-lg rounded-l-sm border-l-3 px-3 py-2 text-sm font-medium transition-colors",
+              collapsed && "justify-center px-0",
               active
                 ? "border-l-red bg-primary/10 text-primary"
                 : "border-l-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
             )}
           >
             <Icon className="w-4 h-4 shrink-0" />
-            {label}
+            {!collapsed && label}
           </Link>
         );
       })}
@@ -76,14 +81,21 @@ function SidebarLinks() {
   );
 }
 
-function SignOutButton() {
+function SignOutButton({ collapsed }: { collapsed: boolean }) {
   return (
     <div className="p-3 border-t border-border space-y-2">
-      <ThemeToggle />
+      {!collapsed && <ThemeToggle />}
       <form action={signOut}>
-        <Button variant="ghost" size="sm" type="submit" className="w-full justify-start gap-2.5 text-muted-foreground">
+        <Button
+          variant="ghost"
+          size="sm"
+          type="submit"
+          title={collapsed ? "সাইন আউট" : undefined}
+          aria-label={collapsed ? "সাইন আউট" : undefined}
+          className={cn("w-full gap-2.5 text-muted-foreground", collapsed ? "justify-center px-0" : "justify-start")}
+        >
           <LogOut className="w-4 h-4" />
-          সাইন আউট
+          {!collapsed && "সাইন আউট"}
         </Button>
       </form>
     </div>
@@ -134,16 +146,36 @@ function MoreSheet({ open, onOpenChange }: { open: boolean; onOpenChange: (v: bo
 export function DashboardNav() {
   const pathname = usePathname();
   const [moreOpen, setMoreOpen] = useState(false);
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
     <>
-      {/* Desktop sidebar */}
-      <aside className="hidden md:flex md:w-60 md:flex-col md:border-r md:border-border md:shrink-0">
-        <Link href="/dashboard" className="p-4 border-b border-border">
-          <Logo />
-        </Link>
-        <SidebarLinks />
-        <SignOutButton />
+      {/* Desktop sidebar — collapses to an icon-only rail so pages that want
+          the width (like the tutor chat) can reclaim it on large screens. */}
+      <aside
+        className={cn(
+          "hidden md:flex md:flex-col md:border-r md:border-border md:shrink-0 transition-[width] duration-150",
+          collapsed ? "md:w-16" : "md:w-60"
+        )}
+      >
+        <div className={cn("flex items-center border-b border-border p-4", collapsed ? "justify-center" : "justify-between")}>
+          {!collapsed && (
+            <Link href="/dashboard">
+              <Logo />
+            </Link>
+          )}
+          <button
+            type="button"
+            onClick={() => setCollapsed((v) => !v)}
+            title={collapsed ? "সাইডবার খোলো" : "সাইডবার সংকুচিত করো"}
+            aria-label={collapsed ? "সাইডবার খোলো" : "সাইডবার সংকুচিত করো"}
+            className="text-muted-foreground hover:text-foreground hover:bg-muted rounded-md p-1.5 transition-colors shrink-0"
+          >
+            {collapsed ? <PanelLeftOpen className="w-4 h-4" /> : <PanelLeftClose className="w-4 h-4" />}
+          </button>
+        </div>
+        <SidebarLinks collapsed={collapsed} />
+        <SignOutButton collapsed={collapsed} />
       </aside>
 
       {/* Mobile top bar */}

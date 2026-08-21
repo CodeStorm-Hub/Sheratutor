@@ -15,7 +15,7 @@ export default async function UploadPage() {
     .limit(20);
 
   return (
-    <div className="max-w-lg mx-auto space-y-6">
+    <div className="max-w-lg mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-6">
       <div className="flex items-start justify-between gap-4">
         <div>
           <h1 className="font-heading font-bold text-2xl">খাতা জমা দাও</h1>

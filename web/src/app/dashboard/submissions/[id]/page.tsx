@@ -46,7 +46,7 @@ export default async function SubmissionPage({ params }: PageProps<"/dashboard/s
       : 0;
 
   return (
-    <div className="max-w-2xl mx-auto space-y-6">
+    <div className="max-w-2xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-6">
       <div>
         <h1 className="font-heading font-bold text-2xl">
           {submission.question_papers?.subjects?.name_en ?? "মূল্যায়ন"}
