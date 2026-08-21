@@ -1,9 +1,9 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Wordmark per docs/research-idea/03-design-system.md: "Shera" in
- * ink-navy/white (theme-dependent), "Tutor" in coral, Baloo 2 ExtraBold.
- * Recreated as styled text — no image asset needed.
+ * Wordmark for the "খাতা" identity: "Shera" in ink/paper (theme-dependent),
+ * "Tutor" in bottle green, Anek Latin ExtraBold. Recreated as styled text —
+ * no image asset needed.
  */
 export function Logo({ className, tagline = false }: { className?: string; tagline?: boolean }) {
   return (

@@ -13,7 +13,11 @@ function ScrollArea({
   return (
     <ScrollAreaPrimitive.Root
       data-slot="scroll-area"
-      className={cn("relative", className)}
+      // min-h-0 (and min-w-0) so a flex-1 ScrollArea inside a flex container
+      // actually shrinks to its allotted space instead of growing to fit its
+      // content — flex items default to min-height/width:auto, which blocks
+      // shrinking below content size and defeats the internal scroll entirely.
+      className={cn("relative min-h-0 min-w-0", className)}
       {...props}
     >
       <ScrollAreaPrimitive.Viewport

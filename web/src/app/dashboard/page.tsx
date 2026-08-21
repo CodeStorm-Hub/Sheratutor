@@ -5,18 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Progress } from "@/components/ui/progress";
 import { Badge } from "@/components/ui/badge";
 import { submissionStatusLabel } from "@/lib/submission-status";
-
-const HEATMAP_COLOR: Record<string, string> = {
-  low: "bg-mint/20 text-mint-deep border-mint/30", // mastered
-  mid: "bg-sunshine/20 text-ink-navy dark:text-sunshine border-sunshine/40", // review needed
-  high: "bg-coral/20 text-coral-deep border-coral/30", // critical gap
-};
-
-function bucket(score: number) {
-  if (score < 0.34) return "low";
-  if (score < 0.67) return "mid";
-  return "high";
-}
+import { MarkGlyph, levelFromScore, markGlyphClasses } from "@/components/mark-glyph";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -32,11 +21,13 @@ export default async function DashboardPage() {
 
   if (!profile) {
     return (
-      <div className="text-center py-20">
-        <p className="text-muted-foreground mb-4">Finish setting up your profile to see your dashboard.</p>
-        <Button asChild>
-          <Link href="/onboarding">Complete onboarding</Link>
-        </Button>
+      <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8">
+        <div className="text-center py-20">
+          <p className="text-muted-foreground mb-4">তোমার ড্যাশবোর্ড দেখতে প্রথমে প্রোফাইল সম্পূর্ণ করো।</p>
+          <Button asChild>
+            <Link href="/onboarding">প্রোফাইল সম্পূর্ণ করো</Link>
+          </Button>
+        </div>
       </div>
     );
   }
@@ -58,26 +49,54 @@ export default async function DashboardPage() {
   const quickWins = (weaknesses ?? []).slice(0, 3);
 
   return (
-    <div className="space-y-8">
-      <div className="flex items-center justify-between">
+    <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-8">
+      <div className="flex items-center justify-between gap-4">
         <div>
-          <h1 className="font-heading font-bold text-2xl">Welcome back</h1>
+          <h1 className="font-heading font-bold text-2xl">ফিরে আসার জন্য স্বাগতম</h1>
           <p className="text-sm text-muted-foreground">
             {profile.exam_type} {profile.target_exam_year} &middot; {profile.academic_group?.replace("_", " ")}
           </p>
         </div>
         <Button asChild size="lg">
-          <Link href="/dashboard/upload">Upload a script</Link>
+          <Link href="/dashboard/upload">খাতা জমা দাও</Link>
         </Button>
       </div>
+
+      {/* Quick wins surfaces first — the actionable item, not the score, is what a student should see on open. */}
+      <Card>
+        <CardHeader>
+          <CardTitle className="margin-rule text-sm font-heading font-bold">এখনই যা ঠিক করতে পারো</CardTitle>
+        </CardHeader>
+        <CardContent className="space-y-2.5">
+          {quickWins.length === 0 && (
+            <p className="text-sm text-muted-foreground">
+              একটি মক পরীক্ষার খাতা জমা দাও, তাহলে তোমার জন্য নির্দিষ্ট পরামর্শ পাবে।
+            </p>
+          )}
+          {quickWins.map((w) => {
+            const level = levelFromScore(Number(w.weakness_score));
+            return (
+              <div key={w.id} className="flex items-center justify-between gap-3 text-sm">
+                <div className="flex items-center gap-2.5 min-w-0">
+                  <MarkGlyph level={level} />
+                  <span className="truncate">{w.chapters?.title_bn || w.chapters?.title_en || "অধ্যায়"}</span>
+                </div>
+                <Badge variant="outline" className={`shrink-0 font-tabular ${markGlyphClasses(level)}`}>
+                  {(Number(w.weakness_score) * 100).toFixed(0)}% ঘাটতি
+                </Badge>
+              </div>
+            );
+          })}
+        </CardContent>
+      </Card>
 
       <div className="grid md:grid-cols-2 gap-6">
         <Card>
           <CardHeader>
-            <CardTitle className="eyebrow text-xs text-muted-foreground">Momentum Score</CardTitle>
+            <CardTitle className="eyebrow text-xs text-muted-foreground">মোমেন্টাম স্কোর</CardTitle>
           </CardHeader>
           <CardContent>
-            <p className="font-heading font-extrabold text-4xl text-primary">
+            <p className="font-heading font-extrabold text-4xl text-primary font-tabular">
               {Number(profile.overall_momentum_score ?? 0).toFixed(0)}
             </p>
             <Progress value={Number(profile.overall_momentum_score ?? 0)} className="mt-3" />
@@ -86,21 +105,28 @@ export default async function DashboardPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle className="eyebrow text-xs text-muted-foreground">AI Quick Wins</CardTitle>
+            <div className="flex items-center justify-between">
+              <CardTitle className="eyebrow text-xs text-muted-foreground">সাম্প্রতিক জমা</CardTitle>
+              <Link href="/dashboard/submissions" className="text-xs font-medium text-primary hover:underline">
+                সব দেখো
+              </Link>
+            </div>
           </CardHeader>
           <CardContent className="space-y-2">
-            {quickWins.length === 0 && (
-              <p className="text-sm text-muted-foreground">
-                Upload a mock exam to get personalized recommendations.
-              </p>
+            {(submissions ?? []).length === 0 && (
+              <p className="text-sm text-muted-foreground">এখনও কোনো খাতা জমা দাওনি।</p>
             )}
-            {quickWins.map((w) => (
-              <div key={w.id} className="flex items-center justify-between text-sm">
-                <span>{w.chapters?.title_en ?? "Chapter"}</span>
-                <Badge variant="outline" className={HEATMAP_COLOR[bucket(Number(w.weakness_score))]}>
-                  {(Number(w.weakness_score) * 100).toFixed(0)}% gap
-                </Badge>
-              </div>
+            {(submissions ?? []).slice(0, 3).map((s) => (
+              <Link
+                key={s.id}
+                href={`/dashboard/submissions/${s.id}`}
+                className="flex items-center justify-between text-sm rounded-lg border border-border p-2.5 hover:bg-muted transition-colors"
+              >
+                <span className="truncate">{submissionStatusLabel(s.status)}</span>
+                <span className="text-muted-foreground font-tabular shrink-0">
+                  {s.total_score_obtained != null ? `${s.total_score_obtained}/${s.max_possible_score}` : "—"}
+                </span>
+              </Link>
             ))}
           </CardContent>
         </Card>
@@ -108,51 +134,27 @@ export default async function DashboardPage() {
 
       <Card>
         <CardHeader>
-          <CardTitle className="eyebrow text-xs text-muted-foreground">Subject Understanding Heatmap</CardTitle>
+          <CardTitle className="eyebrow text-xs text-muted-foreground">বিষয়ভিত্তিক বোঝাপড়ার মানচিত্র</CardTitle>
         </CardHeader>
         <CardContent>
           {(weaknesses ?? []).length === 0 ? (
-            <p className="text-sm text-muted-foreground">No data yet — your heatmap fills in as you get graded.</p>
+            <p className="text-sm text-muted-foreground">এখনও কোনো তথ্য নেই — মূল্যায়ন হওয়ার সাথে সাথে এই মানচিত্র তৈরি হবে।</p>
           ) : (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {(weaknesses ?? []).map((w) => (
-                <div
-                  key={w.id}
-                  className={`rounded-lg border p-3 text-sm font-medium ${HEATMAP_COLOR[bucket(Number(w.weakness_score))]}`}
-                >
-                  {w.chapters?.title_en ?? "Chapter"}
-                </div>
-              ))}
+              {(weaknesses ?? []).map((w) => {
+                const level = levelFromScore(Number(w.weakness_score));
+                return (
+                  <div
+                    key={w.id}
+                    className={`flex items-center gap-2 rounded-lg border p-3 text-sm font-medium ${markGlyphClasses(level)}`}
+                  >
+                    <MarkGlyph level={level} />
+                    <span className="truncate">{w.chapters?.title_bn || w.chapters?.title_en || "অধ্যায়"}</span>
+                  </div>
+                );
+              })}
             </div>
           )}
-        </CardContent>
-      </Card>
-
-      <Card>
-        <CardHeader>
-          <div className="flex items-center justify-between">
-            <CardTitle className="eyebrow text-xs text-muted-foreground">Recent submissions</CardTitle>
-            <Link href="/dashboard/submissions" className="text-xs font-medium text-primary hover:underline">
-              View all
-            </Link>
-          </div>
-        </CardHeader>
-        <CardContent className="space-y-2">
-          {(submissions ?? []).length === 0 && (
-            <p className="text-sm text-muted-foreground">No submissions yet.</p>
-          )}
-          {(submissions ?? []).map((s) => (
-            <Link
-              key={s.id}
-              href={`/dashboard/submissions/${s.id}`}
-              className="flex items-center justify-between text-sm rounded-lg border border-border p-3 hover:bg-muted transition-colors"
-            >
-              <span>{submissionStatusLabel(s.status)}</span>
-              <span className="text-muted-foreground">
-                {s.total_score_obtained != null ? `${s.total_score_obtained}/${s.max_possible_score}` : "—"}
-              </span>
-            </Link>
-          ))}
         </CardContent>
       </Card>
     </div>

@@ -1,9 +1,9 @@
 export const SUBMISSION_STATUS_LABEL: Record<string, string> = {
-  QUEUED: "Queued",
-  OCR_PROCESSING: "Reading your handwriting…",
-  EVALUATING: "Grading against the rubric…",
-  COMPLETED: "Graded",
-  FAILED: "Something went wrong",
+  QUEUED: "সারিতে আছে",
+  OCR_PROCESSING: "তোমার হাতের লেখা পড়া হচ্ছে…",
+  EVALUATING: "রুব্রিক অনুযায়ী মূল্যায়ন হচ্ছে…",
+  COMPLETED: "ফলাফল তৈরি",
+  FAILED: "কিছু একটা সমস্যা হয়েছে",
 };
 
 export function submissionStatusLabel(status: string): string {
