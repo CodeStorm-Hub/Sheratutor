@@ -11,11 +11,12 @@ export default async function DashboardLayout({ children }: LayoutProps<"/dashbo
   if (!user) redirect("/login");
 
   return (
-    <div className="min-h-full flex flex-col md:flex-row bg-background">
+    <div className="h-dvh flex flex-col md:flex-row bg-background overflow-hidden">
       <DashboardNav />
-      <main className="flex-1 px-6 py-8 overflow-y-auto">
-        <div className="max-w-5xl mx-auto w-full">{children}</div>
-      </main>
+      {/* Padding and max-width live on each page now, not here — a full-bleed
+          page (like the tutor chat) needs to opt out of both, which isn't
+          possible when a shared wrapper forces them on every route. */}
+      <main className="flex-1 min-h-0 overflow-y-auto">{children}</main>
     </div>
   );
 }

@@ -149,3 +149,4 @@ supabase/.temp
 /.claude/extracted_sessions
 /.claude/sessions
 /ingestion/kaggle/dataset
+/web/mock-pages
