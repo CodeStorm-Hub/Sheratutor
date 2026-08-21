@@ -43,6 +43,18 @@ function normalizeLatexDelimiters(text: string): string {
     .replace(/\[([^[\]\n]*\\[a-zA-Z][^[\]\n]*)\]/g, (_, inner) => `$$${inner}$$`);
 }
 
+/**
+ * Safety net for models that ignore rule #1 and open with a greeting anyway
+ * (নমস্কার!, আসসালামু আলাইকুম!, হ্যালো, etc.) — strips one leading greeting
+ * clause so replies start on the actual answer instead of small talk.
+ */
+function stripLeadingGreeting(text: string): string {
+  return text.replace(
+    /^\s*(নমস্কার|আসসালামু আলাইকুম|হ্যালো|হাই|প্রিয় শিক্ষার্থী)[^,।!\n]*[,।!]\s*/i,
+    ""
+  );
+}
+
 export const ChatMessageSchema = z.object({
   role: z.enum(["student", "tutor"]),
   text: z.string(),
@@ -128,22 +140,25 @@ export const tutorChatFlow = ai.defineFlow(
           `CHAPTER: ${chapterName ?? "General"}\n` +
           `The student is asking a free-form question about this chapter — there is no graded answer to reference.`;
 
-    const rule5 =
+    const rule6 =
       mode === "rubric"
-        ? `5. If the student asks about anything unrelated to this academic topic (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying this question.\n\n`
-        : `5. If the student asks about anything unrelated to this subject/chapter (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
+        ? `6. If the student asks about anything unrelated to this academic topic (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying this question.\n\n`
+        : `6. If the student asks about anything unrelated to this subject/chapter (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
 
     const prompt =
       `You are SheraTutor's "Explain it simply" AI tutor, talking to a Bangladeshi SSC ` +
       `student (age 13-19). ${roleIntro}\n\n` +
       `RULES:\n` +
-      `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}.\n` +
-      `2. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters — $...$ for inline, $$...$$ for a standalone block equation. NEVER wrap math in plain parentheses () or square brackets [] instead of $ — those render as literal text, not math, and are wrong. ` +
+      `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}. ` +
+      `Do NOT open with a greeting or salutation of any kind (no "নমস্কার", "আসসালামু আলাইকুম", "হ্যালো", "Hello", etc.) — start the very first sentence with the actual answer. ` +
+      `This is a continuous tutoring conversation, not a fresh introduction each time.\n` +
+      `2. Write ONLY in Bangla script and English (for scientific terms, units, and LaTeX only) — never mix in any other script or language (no Hindi, Urdu, Arabic, or words from any other language), and never insert stray non-Bangla/non-English words into a sentence.\n` +
+      `3. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters — $...$ for inline, $$...$$ for a standalone block equation. NEVER wrap math in plain parentheses () or square brackets [] instead of $ — those render as literal text, not math, and are wrong. ` +
       `Correct: $a = \\frac{\\Delta v}{\\Delta t}$, $s = ut + \\frac{1}{2}at^2$, $F = ma$, $\\text{ms}^{-1}$. ` +
       `Incorrect — do not do this: (a = \\frac{\\Delta v}{\\Delta t}), [F = ma].\n` +
-      `3. Always adhere to official NCTB textbook physics terminology.\n` +
-      `4. If the student asks for real-life analogies, give relatable examples (e.g. Dhaka traffic, bicycle motion, cricket ball throwing, electric fans).\n` +
-      rule5 +
+      `4. Always adhere to official NCTB textbook physics terminology.\n` +
+      `5. If the student asks for real-life analogies, give relatable examples (e.g. Dhaka traffic, bicycle motion, cricket ball throwing, electric fans).\n` +
+      rule6 +
       academicContext +
       textbookSection +
       historyPrompt +
@@ -168,6 +183,6 @@ export const tutorChatFlow = ai.defineFlow(
       throw err;
     }
 
-    return { reply: normalizeLatexDelimiters(text), safety };
+    return { reply: stripLeadingGreeting(normalizeLatexDelimiters(text)), safety };
   }
 );

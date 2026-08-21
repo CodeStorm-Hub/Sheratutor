@@ -10,7 +10,7 @@ export default async function GeneratePracticePaperPage() {
     .order("chapter_no");
 
   return (
-    <div className="max-w-lg mx-auto space-y-6">
+    <div className="max-w-lg mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-6">
       <div>
         <h1 className="font-heading font-bold text-2xl">প্রশ্নপত্র তৈরি করো</h1>
         <p className="text-sm text-muted-foreground">

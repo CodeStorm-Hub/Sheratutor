@@ -95,7 +95,7 @@ export default async function StudyPlanPage() {
   const restOfCycle = schedule?.days.filter((d) => d.day !== todayDay) ?? [];
 
   return (
-    <div className="space-y-6">
+    <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-6">
       <div className="flex items-center justify-between">
         <div>
           <h1 className="font-heading font-bold text-2xl">পড়ার পরিকল্পনা</h1>
