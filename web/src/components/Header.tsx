@@ -63,8 +63,8 @@ export const Header: React.FC<HeaderProps> = ({
   setOpen,
   darkMode,
   setDarkMode,
-  userInitials = 'AR',
-  userName = 'Anam Rahman',
+  userInitials = 'ST',
+  userName = 'Student',
   userSub = 'HSC · Science',
 }) => {
   const pathname = usePathname();

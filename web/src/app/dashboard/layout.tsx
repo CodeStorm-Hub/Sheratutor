@@ -14,27 +14,42 @@ export default async function DashboardLayout({
 
   if (!user) redirect('/login');
 
-  const { data: profile } = await supabase
+  // Fetch user profile and student profile
+  const { data: userProfile } = await supabase
+    .from('profiles')
+    .select('full_name')
+    .eq('id', user.id)
+    .maybeSingle();
+
+  const { data: studentProfile } = await supabase
     .from('student_profiles')
-    .select('full_name, exam_type, academic_group, education_board')
+    .select('id, exam_type, academic_group, education_board, target_exam_year')
     .eq('user_id', user.id)
     .maybeSingle();
 
+  // Extract real full name
   const fullName =
+    userProfile?.full_name ||
     (user.user_metadata?.full_name as string) ||
-    profile?.full_name ||
-    'Anam Rahman';
+    (user.email ? user.email.split('@')[0] : 'Student');
 
-  const userSub = profile
-    ? `${profile.exam_type ?? 'HSC'} · ${(profile.academic_group ?? 'Science').replace('_', ' ')}`
-    : 'HSC · Science';
+  // Extract real exam & group subtitle
+  const examType = studentProfile?.exam_type || 'HSC';
+  const group = studentProfile?.academic_group
+    ? studentProfile.academic_group.replace('_', ' ')
+    : 'Science';
+  const board = studentProfile?.education_board
+    ? ` · ${studentProfile.education_board.charAt(0) + studentProfile.education_board.slice(1).toLowerCase()} Board`
+    : '';
 
-  const initials = fullName
-    .split(' ')
-    .map((n: string) => n[0])
-    .join('')
-    .slice(0, 2)
-    .toUpperCase() || 'AR';
+  const userSub = `${examType} · ${group}${board}`;
+
+  // Extract initials dynamically
+  const nameParts = fullName.trim().split(/\s+/);
+  const initials =
+    nameParts.length > 1
+      ? `${nameParts[0][0]}${nameParts[nameParts.length - 1][0]}`.toUpperCase()
+      : (nameParts[0]?.slice(0, 2) || 'ST').toUpperCase();
 
   return (
     <ClientShell
