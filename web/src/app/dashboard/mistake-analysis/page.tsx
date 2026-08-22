@@ -1,8 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
-import { PageHeader } from '@/components/PageHeader';
-import { ArrowUpRight, ChevronRight } from 'lucide-react';
+import { MistakesPageClient, MistakeItem } from '@/components/pages/MistakesPageClient';
 
 export default async function MistakeAnalysisPage() {
   const supabase = await createClient();
@@ -19,7 +17,7 @@ export default async function MistakeAnalysisPage() {
   // Fetch real weakness logs
   const { data: weaknesses } = await supabase
     .from('weakness_logs')
-    .select('*, chapters(title_en, subjects(name_en))')
+    .select('*, chapters(title_en, title_bn, subjects(name_en, name_bn))')
     .eq('student_id', profile?.id ?? '')
     .order('weakness_score', { ascending: false });
 
@@ -35,10 +33,11 @@ export default async function MistakeAnalysisPage() {
 
   const topSubject = weaknesses?.[0]?.chapters?.subjects?.name_en || 'Core Curriculum';
 
-  const dynamicMistakes =
+  const dynamicMistakes: MistakeItem[] =
     weaknesses && weaknesses.length > 0
       ? weaknesses.map((w, idx) => ({
           type: `${w.chapters?.title_en || 'Topic'} gap`,
+          type_bn: `${w.chapters?.title_bn || 'অধ্যায়'} ঘাটতি`,
           subject: w.chapters?.subjects?.name_en || 'Subject',
           count: `${Math.round(Number(w.weakness_score) * 10)} mistakes`,
           lostMarks: Math.round(Number(w.total_marks_lost || 0)),
@@ -47,6 +46,7 @@ export default async function MistakeAnalysisPage() {
       : [
           {
             type: 'Step-based derivations',
+            type_bn: 'ধাপভিত্তিক সমীকরণ প্রতিপাদন',
             subject: 'Physics',
             count: '8 mistakes',
             lostMarks: 6,
@@ -54,6 +54,7 @@ export default async function MistakeAnalysisPage() {
           },
           {
             type: 'Missing final units in calculation',
+            type_bn: 'হিসাবে শেষ একক বাদ দেওয়া',
             subject: 'Higher Math',
             count: '5 mistakes',
             lostMarks: 4,
@@ -61,6 +62,7 @@ export default async function MistakeAnalysisPage() {
           },
           {
             type: 'Chemical equation balance',
+            type_bn: 'রাসায়নিক সমীকরণ সমতাকরণ',
             subject: 'Chemistry',
             count: '4 mistakes',
             lostMarks: 2,
@@ -69,54 +71,11 @@ export default async function MistakeAnalysisPage() {
         ];
 
   return (
-    <>
-      <PageHeader
-        title="Mistake analysis"
-        description="Identified deduction patterns from your assessments, turned into your next score advantage."
-      >
-        <button type="button" className="primary-btn">
-          Download report <ArrowUpRight size={15} />
-        </button>
-      </PageHeader>
-
-      <div className="mistakes">
-        <div className="mistake-summary">
-          <div>
-            <span>MARKS RECOVERABLE</span>
-            <strong>+{displayMarksRecoverable}</strong>
-            <p>in your next {topSubject} assessment</p>
-          </div>
-          <div className="mistake-orbit">
-            <b>{weaknesses && weaknesses.length > 0 ? '78%' : '76%'}</b>
-            <small>conceptual</small>
-          </div>
-        </div>
-
-        {dynamicMistakes.map((x, i) => (
-          <article className="mistake-row" key={`${x.type}-${i}`}>
-            <span className={`mistake-dot ${x.color}`} />
-            <div>
-              <b>{x.type}</b>
-              <small>
-                {x.subject} · {x.count} · -{x.lostMarks} marks
-              </small>
-            </div>
-            <Link
-              href="/dashboard/tutor"
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              <p>
-                Practice this <ChevronRight size={16} />
-              </p>
-            </Link>
-          </article>
-        ))}
-      </div>
-    </>
+    <MistakesPageClient
+      displayMarksRecoverable={displayMarksRecoverable}
+      topSubject={topSubject}
+      conceptualPercent={weaknesses && weaknesses.length > 0 ? 78 : 76}
+      dynamicMistakes={dynamicMistakes}
+    />
   );
 }

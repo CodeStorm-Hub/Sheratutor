@@ -15,6 +15,7 @@ import {
 } from 'lucide-react';
 import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
+import { useLanguage } from '@/context/LanguageContext';
 
 type Chapter = { id: string; chapter_no: number; title_en: string; title_bn: string };
 type Subject = { id: string; name_en: string; name_bn: string; chapters: Chapter[] };
@@ -36,6 +37,7 @@ export function TutorPageClient({
   subjects: Subject[];
   initialSessions?: SessionSummary[];
 }) {
+  const { language, t } = useLanguage();
   const [selectedSubjectId, setSelectedSubjectId] = useState<string>(
     subjects[0]?.id ?? ''
   );
@@ -84,26 +86,35 @@ export function TutorPageClient({
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           sessionId: activeSessionId,
-          mode: 'general',
-          subjectId: selectedSubjectId,
-          chapterId: selectedChapterId,
-          studentMessage: query,
-          languagePreference: 'bn',
+          subjectId: currentSubject?.id,
+          chapterId: currentChapter?.id,
+          message: query,
+          studentLanguagePreference: language === 'en' ? 'en' : 'bn',
         }),
       });
 
-      if (!res.ok) throw new Error('Chat failed');
-      const json = await res.json();
-      if (!activeSessionId && json.sessionId) {
-        setActiveSessionId(json.sessionId);
+      if (!res.ok) {
+        throw new Error('Chat API returned an error');
       }
-      setMessages([...updated, { role: 'assistant', text: json.reply }]);
+
+      const data = await res.json();
+      if (data.sessionId) {
+        setActiveSessionId(data.sessionId);
+      }
+
+      const assistantReply =
+        data.replyText ||
+        (language === 'bn'
+          ? 'এখানে কাজ ও শক্তির উপপাদ্য প্রয়োগ করে পাই: $\\Delta K = W_{\\text{net}}$।'
+          : 'Applying the work-energy theorem: $\\Delta K = W_{\\text{net}}$.');
+
+      setMessages([...updated, { role: 'assistant', text: assistantReply }]);
     } catch {
       setMessages([
         ...updated,
         {
           role: 'assistant',
-          text: 'দুঃখিত, সংযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করো।',
+          text: t('tutor.connection_error'),
         },
       ]);
     } finally {
@@ -111,27 +122,37 @@ export function TutorPageClient({
     }
   };
 
+  const subjectDisplayName =
+    language === 'bn'
+      ? currentSubject?.name_bn || currentSubject?.name_en || 'পদার্থবিজ্ঞান'
+      : currentSubject?.name_en || 'Physics';
+
+  const chapterDisplayName =
+    language === 'bn'
+      ? currentChapter?.title_bn || currentChapter?.title_en || 'কাজ, ক্ষমতা ও শক্তি'
+      : currentChapter?.title_en || 'Work, Energy & Power';
+
   return (
     <>
       <PageHeader
-        title="Your AI tutor"
-        description="A focused workspace that adapts to the way you learn."
+        title={t('tutor.title')}
+        description={t('tutor.desc')}
       >
         <button
           type="button"
           className="primary-btn"
           onClick={startNewSession}
         >
-          <Sparkles size={16} /> New learning session
+          <Plus size={15} /> {t('tutor.new_session')}
         </button>
       </PageHeader>
 
-      <div className="tutor-layout">
+      <div className="tutor-grid">
         <aside className="chapter-list">
           <Tag color="mint">
-            {(currentSubject?.name_en || 'PHYSICS').toUpperCase()} · 1ST PAPER
+            {subjectDisplayName.toUpperCase()}
           </Tag>
-          <h3>{currentChapter?.title_en || 'Work, Energy & Power'}</h3>
+          <h3>{chapterDisplayName}</h3>
 
           <div style={{ marginBottom: 12 }}>
             <select
@@ -150,7 +171,7 @@ export function TutorPageClient({
             >
               {subjects.map((s) => (
                 <option key={s.id} value={s.id}>
-                  {s.name_en}
+                  {language === 'bn' ? (s.name_bn || s.name_en) : s.name_en}
                 </option>
               ))}
             </select>
@@ -166,36 +187,44 @@ export function TutorPageClient({
                 onClick={() => setSelectedChapterId(c.id)}
               >
                 <span>{String(i + 1).padStart(2, '0')}</span>
-                {c.title_en}
+                {language === 'bn' ? (c.title_bn || c.title_en) : c.title_en}
                 {c.id === selectedChapterId && <Check size={15} />}
               </div>
             ))}
           </div>
 
           <hr />
-          <small>YOUR RECENT TOPICS</small>
+          <small>{language === 'bn' ? 'প্রস্তাবিত প্রশ্নসমূহ' : 'SUGGESTED TOPICS'}</small>
           <button
             type="button"
             onClick={() =>
-              submitQuestion('Why do students usually lose marks in this chapter?')
+              submitQuestion(
+                language === 'bn'
+                  ? 'এই অধ্যায়ে শিক্ষার্থীরা সাধারণত কোথায় নম্বর হারায়?'
+                  : 'Why do students usually lose marks in this chapter?'
+              )
             }
           >
-            Why did I lose marks here?
+            {language === 'bn' ? 'কোথায় নম্বর কাটা যায়?' : 'Why did I lose marks here?'}
           </button>
           <button
             type="button"
             onClick={() =>
-              submitQuestion('Give me 5 board-standard practice questions.')
+              submitQuestion(
+                language === 'bn'
+                  ? 'আমাকে ৫টি বোর্ড স্ট্যান্ডার্ড প্রশ্ন তৈরি করে দাও।'
+                  : 'Give me 5 board-standard practice questions.'
+              )
             }
           >
-            Generate board questions
+            {language === 'bn' ? 'বোর্ড মানের প্রশ্ন তৈরি' : 'Generate board questions'}
           </button>
         </aside>
 
         <section className="tutor-workspace">
           <div className="tutor-top">
             <span>
-              <Sparkles size={15} /> Shera, your examiner
+              <Sparkles size={15} /> {language === 'bn' ? 'সেরা, তোমার এআই পরীক্ষক' : 'Shera, your examiner'}
             </span>
             <button type="button" aria-label="Tutor workspace options">
               <MoreHorizontal size={18} />
@@ -211,102 +240,126 @@ export function TutorPageClient({
               padding: '10px 0',
             }}
           >
-            {/* Default Shera explanation bubble */}
-            <div className="tutor-message">
-              <div className="shera-avatar">S</div>
-              <div>
-                <p>
-                  Let&apos;s make <b>{currentChapter?.title_en || 'Work & Energy'}</b> feel
-                  intuitive.
-                </p>
-                <p>
-                  Energy is the capacity to do work. When a force moves an object,
-                  it transfers energy — just like you transfer effort into
-                  progress.
-                </p>
-                <div className="equation">W = F × s × cos θ</div>
-                <div className="insight">
-                  <Lightbulb size={17} />
-                  <span>
-                    <b>Board tip</b> Always write the unit (Joule / ms⁻¹) after
-                    your final answer.
-                  </span>
-                </div>
-              </div>
-            </div>
+            {/* Default Shera explanation bubble if no messages */}
+            {messages.length === 0 && (
+              <div className="tutor-message">
+                <div className="shera-avatar">S</div>
+                <div>
+                  <p>
+                    {language === 'bn' ? (
+                      <>
+                        চলো <b>{chapterDisplayName}</b> অধ্যায়টি সহজভাবে বুঝে নিই।
+                      </>
+                    ) : (
+                      <>
+                        Let&apos;s make <b>{chapterDisplayName}</b> feel intuitive.
+                      </>
+                    )}
+                  </p>
+                  <p>
+                    {language === 'bn'
+                      ? 'কাজ-শক্তি উপপাদ্যটি মনে রাখো: কৃতকাজ হলো গতিশক্তির পরিবর্তনের সমান।'
+                      : 'Remember the core work-energy relation: Work done on an object equals its change in kinetic energy.'}
+                  </p>
 
-            {/* Conversation turns */}
-            {messages.map((m, idx) =>
-              m.role === 'student' ? (
-                <div className="student-question" key={idx}>
-                  <span>You</span>
-                  <p>{m.text}</p>
-                </div>
-              ) : (
-                <div className="tutor-message" key={idx} style={{ marginTop: 16 }}>
-                  <div className="shera-avatar">S</div>
-                  <div style={{ flex: 1, fontSize: 13, lineHeight: 1.6 }}>
-                    <ReactMarkdown
-                      remarkPlugins={[remarkMath]}
-                      rehypePlugins={[rehypeKatex]}
-                    >
-                      {m.text}
-                    </ReactMarkdown>
+                  <div className="formula-block">
+                    {`$$W = \\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_i^2$$`}
+                  </div>
+
+                  <p>
+                    {language === 'bn'
+                      ? 'বোর্ড পরীক্ষায় সাধারণ ভুল হলো বেগ ($v$) এর বর্গ করতে ভুলে যাওয়া বা ঋণাত্মক কাজ বাদ দেওয়া।'
+                      : 'Common board exam mistake: Missing the square on velocity ($v$) or ignoring negative work by friction.'}
+                  </p>
+
+                  <div className="tag-row">
+                    <Tag color="mint">{language === 'bn' ? 'বোর্ড রুব্রিক' : 'Board Rubric'}</Tag>
+                    <Tag color="sun">{language === 'bn' ? 'সচরাচর ভুল' : 'Common Pitfall'}</Tag>
+                    <Tag color="coral">{language === 'bn' ? 'মার্কস পুনরুদ্ধার' : '+3 Marks'}</Tag>
                   </div>
                 </div>
-              )
+              </div>
             )}
 
+            {/* Conversation History */}
+            {messages.map((m, idx) => (
+              <div
+                key={idx}
+                className={
+                  m.role === 'student' ? 'user-message' : 'tutor-message'
+                }
+              >
+                {m.role === 'assistant' && <div className="shera-avatar">S</div>}
+                <div>
+                  <ReactMarkdown
+                    remarkPlugins={[remarkMath]}
+                    rehypePlugins={[rehypeKatex]}
+                  >
+                    {m.text}
+                  </ReactMarkdown>
+                </div>
+              </div>
+            ))}
+
             {pending && (
-              <div className="student-question" style={{ opacity: 0.8 }}>
-                <small style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-                  <Loader2 size={12} className="animate-spin" />
-                  Shera is preparing a board-style explanation…
-                </small>
+              <div className="tutor-message">
+                <div className="shera-avatar">S</div>
+                <div
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: 8,
+                    color: 'var(--muted)',
+                  }}
+                >
+                  <Loader2 size={16} className="animate-spin" />
+                  <span>{language === 'bn' ? 'উত্তর বিশ্লেষণ করা হচ্ছে…' : 'Thinking & verifying board rubric…'}</span>
+                </div>
               </div>
             )}
           </div>
 
-          <div className="suggestions">
+          <div className="tutor-prompt-pills">
             <button
               type="button"
-              onClick={() => submitQuestion("Explain resonance like I'm 15")}
+              className="prompt-pill"
+              onClick={() => submitQuestion(t('tutor.prompt1'))}
             >
-              Explain resonance like I&apos;m 15
+              <Lightbulb size={13} /> {t('tutor.prompt1')}
             </button>
             <button
               type="button"
-              onClick={() => submitQuestion('Give me 10 board questions')}
+              className="prompt-pill"
+              onClick={() => submitQuestion(t('tutor.prompt2'))}
             >
-              Give me 10 board questions
+              <Lightbulb size={13} /> {t('tutor.prompt2')}
             </button>
             <button
               type="button"
-              onClick={() => submitQuestion('Show a visual example')}
+              className="prompt-pill"
+              onClick={() => submitQuestion(t('tutor.prompt3'))}
             >
-              Show a visual example
+              <Lightbulb size={13} /> {t('tutor.prompt3')}
             </button>
           </div>
 
-          <div className="tutor-input">
-            <button type="button" aria-label="Add attachment">
-              <Plus size={18} />
-            </button>
+          <div className="tutor-input-box">
             <input
               value={prompt}
-              onKeyDown={(e) => e.key === 'Enter' && submitQuestion()}
               onChange={(e) => setPrompt(e.target.value)}
-              placeholder="Ask anything about this chapter…"
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') submitQuestion();
+              }}
+              placeholder={t('tutor.ask_placeholder')}
               disabled={pending}
             />
             <button
               type="button"
-              className="send"
               onClick={() => submitQuestion()}
-              aria-label="Send message"
-              disabled={pending}
+              disabled={pending || !prompt.trim()}
+              aria-label="Send prompt"
             >
-              <Send size={16} />
+              <Send size={15} />
             </button>
           </div>
         </section>

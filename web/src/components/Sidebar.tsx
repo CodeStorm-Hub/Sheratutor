@@ -4,14 +4,22 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
+  BookOpen,
+  Calendar,
   ChevronDown,
   ChevronRight,
+  ClipboardCheck,
+  FileCheck2,
+  GraduationCap,
   HelpCircle,
+  Home,
+  LineChart,
   Settings,
+  Sparkles,
   Trophy,
   X,
 } from 'lucide-react';
-import { navItems } from '@/data/mockData';
+import { useLanguage } from '@/context/LanguageContext';
 
 interface SidebarProps {
   open: boolean;
@@ -30,6 +38,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 }) => {
   const pathname = usePathname();
   const router = useRouter();
+  const { language, t } = useLanguage();
 
   const isNavActive = (href?: string) => {
     if (!href) return false;
@@ -38,6 +47,20 @@ export const Sidebar: React.FC<SidebarProps> = ({
     }
     return pathname === href || pathname.startsWith(`${href}/`);
   };
+
+  const dynamicNavItems = [
+    { label: t('nav.home'), href: '/dashboard', icon: Home },
+    { group: true, label: t('nav.learning') },
+    { label: t('nav.tutor'), href: '/dashboard/tutor', icon: Sparkles },
+    { label: t('nav.exams'), href: '/dashboard/practice', icon: BookOpen },
+    { label: t('nav.simulator'), href: '/dashboard/board-simulator', icon: GraduationCap, isNew: true },
+    { group: true, label: t('nav.assessment') },
+    { label: t('nav.grading'), href: '/dashboard/upload', icon: FileCheck2 },
+    { label: t('nav.results'), href: '/dashboard/submissions', icon: ClipboardCheck },
+    { label: t('nav.mistakes'), href: '/dashboard/mistake-analysis', icon: LineChart },
+    { group: true, label: t('nav.planning') },
+    { label: t('nav.planner'), href: '/dashboard/study-plan', icon: Calendar },
+  ];
 
   return (
     <aside className={`sidebar ${open ? 'open ' : ''}${collapsed ? 'collapsed' : ''}`.trim()}>
@@ -80,21 +103,21 @@ export const Sidebar: React.FC<SidebarProps> = ({
       {/* Scrollable Navigation Menu Area */}
       <div className="sidebar-scroll">
         <nav>
-          {navItems.map((item, i) =>
+          {dynamicNavItems.map((item, i) =>
             item.group ? (
               <div className="nav-heading" key={`group-${i}`}>
                 {item.label}
               </div>
             ) : (
               <Link
-                key={item.label}
-                href={item.href}
+                key={`${item.label}-${item.href}`}
+                href={item.href || '#'}
                 className={isNavActive(item.href) ? 'active' : ''}
                 onClick={() => setOpen(false)}
               >
-                <item.icon size={18} />
+                {item.icon && <item.icon size={18} />}
                 <span>{item.label}</span>
-                {item.isNew && <i>New</i>}
+                {item.isNew && <i>{language === 'bn' ? 'নতুন' : 'New'}</i>}
               </Link>
             )
           )}
@@ -107,7 +130,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             onClick={() => setOpen(false)}
           >
             <Trophy size={18} />
-            <span>Achievements</span>
+            <span>{t('nav.achievements')}</span>
           </Link>
           <Link
             href="/dashboard/profile"
@@ -115,15 +138,15 @@ export const Sidebar: React.FC<SidebarProps> = ({
             onClick={() => setOpen(false)}
           >
             <Settings size={18} />
-            <span>Settings</span>
+            <span>{t('nav.settings')}</span>
           </Link>
 
           <div className="help-card">
             <div className="help-icon">
               <HelpCircle size={18} />
             </div>
-            <b>Need a hand?</b>
-            <p>Ask your personal examiner.</p>
+            <b>{t('nav.help_title')}</b>
+            <p>{t('nav.help_desc')}</p>
             <button
               type="button"
               onClick={() => {
@@ -131,7 +154,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 router.push('/dashboard/tutor');
               }}
             >
-              Get help <ChevronRight size={14} />
+              {t('nav.help_btn')} <ChevronRight size={14} />
             </button>
           </div>
         </div>

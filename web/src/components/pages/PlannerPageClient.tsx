@@ -5,8 +5,7 @@ import { Check, ChevronRight, Sparkles } from 'lucide-react';
 import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
 import { generateStudyPlan } from '@/app/actions/study-plan';
-
-const days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+import { useLanguage } from '@/context/LanguageContext';
 
 interface Task {
   title: string;
@@ -54,6 +53,9 @@ export function PlannerPageClient({
   masteryPercent = 72,
 }: PlannerClientProps) {
   const [tasks, setTasks] = useState<Task[]>(initialTasks);
+  const { language, t } = useLanguage();
+
+  const days = language === 'bn' ? ['সোম', 'মঙ্গল', 'বুধ', 'বৃহঃ', 'শুক্র', 'শনি', 'রবি'] : ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
   const toggleTask = (index: number) => {
     setTasks((prev) =>
@@ -66,12 +68,12 @@ export function PlannerPageClient({
   return (
     <>
       <PageHeader
-        title="Study planner"
-        description="A simple plan, shaped around your exam goals."
+        title={t('planner.title')}
+        description={t('planner.desc')}
       >
         <form action={generateStudyPlan}>
           <button type="submit" className="primary-btn">
-            <Sparkles size={16} /> Generate new plan
+            <Sparkles size={16} /> {t('planner.generate_new')}
           </button>
         </form>
       </PageHeader>
@@ -80,8 +82,8 @@ export function PlannerPageClient({
         <div className="streak">
           <span>🔥</span>
           <div>
-            <b>7 day streak</b>
-            <p>Your longest streak is 12 days — keep it up.</p>
+            <b>{language === 'bn' ? '৭ দিনের স্ট্রিক' : '7 day streak'}</b>
+            <p>{t('planner.streak_desc')}</p>
           </div>
         </div>
         <div className="calendar-strip">
@@ -99,7 +101,7 @@ export function PlannerPageClient({
 
       <div className="planner-grid">
         <section className="planner-tasks">
-          <h2>Today&apos;s Plan</h2>
+          <h2>{t('planner.todays_plan')}</h2>
           {tasks.map((task, i) => (
             <div className="plan-task" key={task.title}>
               <button
@@ -107,7 +109,7 @@ export function PlannerPageClient({
                 className={task.checked ? 'checked' : ''}
                 onClick={() => toggleTask(i)}
                 aria-label={`Mark ${task.title} as ${
-                  task.checked ? 'incomplete' : 'complete'
+                  task.checked ? t('common.incomplete') : t('common.complete')
                 }`}
               >
                 {task.checked && <Check size={15} />}
@@ -122,14 +124,15 @@ export function PlannerPageClient({
         </section>
 
         <aside className="recommendation">
-          <Tag color="coral">AI RECOMMENDATION</Tag>
+          <Tag color="coral">{t('planner.recommendation_badge')}</Tag>
           <h3>{recommendationTitle}</h3>
           <p>{recommendationBody}</p>
           <button type="button">
-            See recommended plan <ChevronRight size={15} />
+            {language === 'bn' ? 'প্রস্তাবিত প্ল্যান দেখুন' : 'See recommended plan'}{' '}
+            <ChevronRight size={15} />
           </button>
           <div className="mastery">
-            <span>Subject mastery</span>
+            <span>{t('planner.subject_mastery')}</span>
             <b>{masteryPercent}%</b>
             <i>
               <em style={{ width: `${masteryPercent}%` }} />

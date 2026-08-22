@@ -19,6 +19,8 @@ import {
   X,
 } from 'lucide-react';
 import { signOut } from '@/app/actions/auth';
+import { useLanguage } from '@/context/LanguageContext';
+import { LanguageToggle } from '@/components/LanguageToggle';
 
 interface HeaderProps {
   collapsed: boolean;
@@ -30,32 +32,6 @@ interface HeaderProps {
   userName?: string;
   userSub?: string;
 }
-
-const routeTitles: Record<string, string> = {
-  '/': 'Home',
-  '/dashboard': 'Home',
-  '/dashboard/tutor': 'AI Tutor',
-  '/dashboard/practice': 'Mock Exams',
-  '/dashboard/practice/generate': 'Question Paper Generator',
-  '/dashboard/board-simulator': 'Board Simulator',
-  '/dashboard/upload': 'AI Grading',
-  '/dashboard/submissions': 'Results',
-  '/dashboard/mistake-analysis': 'Mistake Analysis',
-  '/dashboard/study-plan': 'Study Planner',
-  '/dashboard/achievements': 'Achievements',
-  '/dashboard/profile': 'Settings',
-};
-
-const quickLinks = [
-  { label: 'AI Tutor', href: '/dashboard/tutor', icon: Sparkles, desc: 'Ask questions & learn concepts' },
-  { label: 'AI Grading', href: '/dashboard/upload', icon: User, desc: 'Submit written answer scripts' },
-  { label: 'Mock Exams', href: '/dashboard/practice', icon: LineChart, desc: 'Practice board question papers' },
-  { label: 'Board Simulator', href: '/dashboard/board-simulator', icon: Trophy, desc: 'Full timed board exam simulation' },
-  { label: 'Study Planner', href: '/dashboard/study-plan', icon: Calendar, desc: 'View today’s adaptive tasks' },
-  { label: 'Mistake Analysis', href: '/dashboard/mistake-analysis', icon: LineChart, desc: 'Review marks recovery' },
-  { label: 'Achievements', href: '/dashboard/achievements', icon: Trophy, desc: 'XP points & scholarship badges' },
-  { label: 'Profile & Settings', href: '/dashboard/profile', icon: User, desc: 'Board, group & preferences' },
-];
 
 export const Header: React.FC<HeaderProps> = ({
   collapsed,
@@ -69,6 +45,7 @@ export const Header: React.FC<HeaderProps> = ({
 }) => {
   const pathname = usePathname();
   const router = useRouter();
+  const { language, t } = useLanguage();
 
   const [profileOpen, setProfileOpen] = useState(false);
   const [notifOpen, setNotifOpen] = useState(false);
@@ -78,8 +55,75 @@ export const Header: React.FC<HeaderProps> = ({
   const profileRef = useRef<HTMLDivElement>(null);
   const notifRef = useRef<HTMLDivElement>(null);
 
+  // Dynamic route titles based on language
+  const routeTitles: Record<string, string> = {
+    '/': t('nav.home'),
+    '/dashboard': t('nav.home'),
+    '/dashboard/tutor': t('nav.tutor'),
+    '/dashboard/practice': t('nav.exams'),
+    '/dashboard/practice/generate': language === 'bn' ? 'প্রশ্নপত্র জেনারেটর' : 'Question Generator',
+    '/dashboard/board-simulator': t('nav.simulator'),
+    '/dashboard/upload': t('nav.grading'),
+    '/dashboard/submissions': t('nav.results'),
+    '/dashboard/mistake-analysis': t('nav.mistakes'),
+    '/dashboard/study-plan': t('nav.planner'),
+    '/dashboard/achievements': t('nav.achievements'),
+    '/dashboard/profile': t('nav.settings'),
+  };
+
+  const quickLinks = [
+    {
+      label: t('nav.tutor'),
+      href: '/dashboard/tutor',
+      icon: Sparkles,
+      desc: language === 'bn' ? 'প্রশ্ন জিজ্ঞাসা করুন ও ধারণা বুঝুন' : 'Ask questions & learn concepts',
+    },
+    {
+      label: t('nav.grading'),
+      href: '/dashboard/upload',
+      icon: User,
+      desc: language === 'bn' ? 'হাতে লেখা খাতা জমা দিন' : 'Submit written answer scripts',
+    },
+    {
+      label: t('nav.exams'),
+      href: '/dashboard/practice',
+      icon: LineChart,
+      desc: language === 'bn' ? 'বোর্ড স্ট্যান্ডার্ড প্রশ্ন অনুশীলন' : 'Practice board question papers',
+    },
+    {
+      label: t('nav.simulator'),
+      href: '/dashboard/board-simulator',
+      icon: Trophy,
+      desc: language === 'bn' ? 'টাইমারযুক্ত পূর্ণাঙ্গ বোর্ড পরীক্ষা' : 'Full timed board exam simulation',
+    },
+    {
+      label: t('nav.planner'),
+      href: '/dashboard/study-plan',
+      icon: Calendar,
+      desc: language === 'bn' ? 'আজকের অ্যাডাপ্টিভ কাজ দেখুন' : 'View today’s adaptive tasks',
+    },
+    {
+      label: t('nav.mistakes'),
+      href: '/dashboard/mistake-analysis',
+      icon: LineChart,
+      desc: language === 'bn' ? 'নম্বর পুনরুদ্ধারের বিশ্লেষণ' : 'Review marks recovery',
+    },
+    {
+      label: t('nav.achievements'),
+      href: '/dashboard/achievements',
+      icon: Trophy,
+      desc: language === 'bn' ? 'এক্সপি পয়েন্ট ও ব্যাজ' : 'XP points & scholarship badges',
+    },
+    {
+      label: t('nav.settings'),
+      href: '/dashboard/profile',
+      icon: User,
+      desc: language === 'bn' ? 'বোর্ড, বিভাগ ও পছন্দসমূহ' : 'Board, group & preferences',
+    },
+  ];
+
   // Determine current page title
-  let pageTitle = 'Workspace';
+  let pageTitle = t('common.workspace');
   for (const [route, title] of Object.entries(routeTitles)) {
     if (pathname === route || (route !== '/' && route !== '/dashboard' && pathname.startsWith(route))) {
       pageTitle = title;
@@ -101,13 +145,14 @@ export const Header: React.FC<HeaderProps> = ({
     return () => document.removeEventListener('mousedown', handleOutsideClick);
   }, []);
 
-  // Global ⌘ K / Ctrl K shortcut listener
+  // Keyboard shortcut for Cmd+K / Ctrl+K
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
+      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         setSearchOpen((prev) => !prev);
-      } else if (e.key === 'Escape') {
+      }
+      if (e.key === 'Escape') {
         setSearchOpen(false);
         setProfileOpen(false);
         setNotifOpen(false);
@@ -118,17 +163,18 @@ export const Header: React.FC<HeaderProps> = ({
   }, []);
 
   const toggleNav = () => {
-    if (typeof window !== 'undefined' && window.innerWidth <= 1050) {
+    if (window.innerWidth <= 1050) {
       setOpen(true);
     } else {
-      setCollapsed((prev) => !prev);
+      setCollapsed(!collapsed);
     }
   };
 
   const filteredLinks = quickLinks.filter(
-    (l) =>
-      l.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      l.desc.toLowerCase().includes(searchQuery.toLowerCase())
+    (item) =>
+      item.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      item.href.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
   return (
@@ -144,12 +190,15 @@ export const Header: React.FC<HeaderProps> = ({
         </button>
 
         <div className="crumb">
-          <span>Workspace</span>
+          <span>{t('common.workspace')}</span>
           <ChevronRight size={15} />
           <b>{pageTitle}</b>
         </div>
 
         <div className="header-actions">
+          {/* Global Language Switcher */}
+          <LanguageToggle />
+
           {/* Search Trigger */}
           <button
             type="button"
@@ -158,7 +207,7 @@ export const Header: React.FC<HeaderProps> = ({
             aria-label="Search workspace (⌘ K)"
           >
             <Search size={16} />
-            <span>Search anything</span>
+            <span>{t('common.search_placeholder')}</span>
             <kbd>⌘ K</kbd>
           </button>
 
@@ -167,7 +216,7 @@ export const Header: React.FC<HeaderProps> = ({
             type="button"
             className="round-btn theme-icon"
             onClick={() => setDarkMode(!darkMode)}
-            aria-label="Toggle dark mode"
+            aria-label="Toggle theme"
           >
             {darkMode ? <Sun size={17} /> : <Moon size={17} />}
           </button>
@@ -190,13 +239,13 @@ export const Header: React.FC<HeaderProps> = ({
             {notifOpen && (
               <div className="header-dropdown notif-dropdown">
                 <div className="dropdown-header">
-                  <b>Notifications</b>
+                  <b>{t('common.notifications')}</b>
                   <button
                     type="button"
                     className="small-link-btn"
                     onClick={() => setNotifOpen(false)}
                   >
-                    Mark all read
+                    {t('common.mark_all_read')}
                   </button>
                 </div>
 
@@ -204,27 +253,27 @@ export const Header: React.FC<HeaderProps> = ({
                   <div className="notif-item unread">
                     <span className="notif-badge mint">✓</span>
                     <div>
-                      <b>Physics 1st Paper Graded</b>
-                      <p>Score: 8/10 (A+) · Formula verified & feedback ready.</p>
-                      <time>10m ago</time>
+                      <b>{language === 'bn' ? 'পদার্থবিজ্ঞান ১ম পত্র মূল্যায়িত' : 'Physics 1st Paper Graded'}</b>
+                      <p>{language === 'bn' ? 'স্কোর: ৮/১০ (A+) · বোর্ড রুব্রিক যাচাইকৃত।' : 'Score: 8/10 (A+) · Formula verified & feedback ready.'}</p>
+                      <time>{language === 'bn' ? '১০ মিনিট আগে' : '10m ago'}</time>
                     </div>
                   </div>
 
                   <div className="notif-item unread">
                     <span className="notif-badge coral">⚡</span>
                     <div>
-                      <b>Trigonometry Review Needed</b>
-                      <p>AI detected 3 step-based error patterns to recover marks.</p>
-                      <time>1h ago</time>
+                      <b>{language === 'bn' ? 'ত্রিকোণমিতি রিভিশন প্রয়োজন' : 'Trigonometry Review Needed'}</b>
+                      <p>{language === 'bn' ? 'নম্বর পুনরুদ্ধারের ৩টি ধাপ শনাক্ত হয়েছে।' : 'AI detected 3 step-based error patterns to recover marks.'}</p>
+                      <time>{language === 'bn' ? '১ ঘণ্টা আগে' : '1h ago'}</time>
                     </div>
                   </div>
 
                   <div className="notif-item">
                     <span className="notif-badge sun">🔥</span>
                     <div>
-                      <b>7-Day Streak Active</b>
-                      <p>You&apos;re 120 XP away from Level 13!</p>
-                      <time>Yesterday</time>
+                      <b>{language === 'bn' ? '৭ দিনের স্ট্রিক সক্রিয়' : '7-Day Streak Active'}</b>
+                      <p>{language === 'bn' ? 'লেভেল ১৩ এ পৌঁছাতে আর ১২০ এক্সপি প্রয়োজন!' : "You're 120 XP away from Level 13!"}</p>
+                      <time>{language === 'bn' ? 'গতকাল' : 'Yesterday'}</time>
                     </div>
                   </div>
                 </div>
@@ -234,7 +283,7 @@ export const Header: React.FC<HeaderProps> = ({
                     href="/dashboard/submissions"
                     onClick={() => setNotifOpen(false)}
                   >
-                    See all assessments <ChevronRight size={14} />
+                    {t('common.see_all')} <ChevronRight size={14} />
                   </Link>
                 </div>
               </div>
@@ -278,7 +327,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => setProfileOpen(false)}
                   >
                     <User size={16} />
-                    <span>Profile & Settings</span>
+                    <span>{t('nav.settings')}</span>
                   </Link>
 
                   <Link
@@ -287,7 +336,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => setProfileOpen(false)}
                   >
                     <Calendar size={16} />
-                    <span>Study Planner</span>
+                    <span>{t('nav.planner')}</span>
                   </Link>
 
                   <Link
@@ -296,7 +345,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => setProfileOpen(false)}
                   >
                     <Trophy size={16} />
-                    <span>Achievements & XP</span>
+                    <span>{t('nav.achievements')}</span>
                   </Link>
 
                   <Link
@@ -305,7 +354,7 @@ export const Header: React.FC<HeaderProps> = ({
                     onClick={() => setProfileOpen(false)}
                   >
                     <LineChart size={16} />
-                    <span>My Assessments</span>
+                    <span>{t('nav.results')}</span>
                   </Link>
                 </div>
 
@@ -320,7 +369,7 @@ export const Header: React.FC<HeaderProps> = ({
                   <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
                     {darkMode ? <Sun size={16} /> : <Moon size={16} />}
                     <span style={{ fontSize: 13, fontWeight: 500 }}>
-                      {darkMode ? 'Light Theme' : 'Dark Theme'}
+                      {darkMode ? t('common.light_mode') : t('common.dark_mode')}
                     </span>
                   </div>
                   <div className={`theme-switch ${darkMode ? 'on' : ''}`}>
@@ -334,7 +383,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <form action={signOut} style={{ margin: 0, padding: 0 }}>
                   <button type="submit" className="signout-btn">
                     <LogOut size={16} />
-                    <span>Sign out</span>
+                    <span>{t('common.sign_out')}</span>
                   </button>
                 </form>
               </div>
@@ -357,7 +406,7 @@ export const Header: React.FC<HeaderProps> = ({
               <Search size={18} color="#69718c" />
               <input
                 autoFocus
-                placeholder="Search tools, subjects, exams, or settings…"
+                placeholder={language === 'bn' ? 'টুলস, বিষয়, পরীক্ষা বা সেটিংস খুঁজুন…' : 'Search tools, subjects, exams, or settings…'}
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
@@ -372,10 +421,10 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
 
             <div className="search-results-list">
-              <div className="search-group-title">QUICK NAVIGATION</div>
+              <div className="search-group-title">{t('common.search_title')}</div>
               {filteredLinks.length === 0 ? (
                 <div style={{ padding: '24px 16px', textAlign: 'center', color: 'var(--muted)', fontSize: 13 }}>
-                  No matching workspace tools found for &ldquo;{searchQuery}&rdquo;
+                  {t('common.search_empty')}
                 </div>
               ) : (
                 filteredLinks.map((item) => (
@@ -401,8 +450,8 @@ export const Header: React.FC<HeaderProps> = ({
             </div>
 
             <div className="search-modal-footer">
-              <span>Press <kbd>ESC</kbd> to close</span>
-              <span>Use <kbd>↑</kbd> <kbd>↓</kbd> to navigate</span>
+              <span>{t('common.search_footer_esc')}</span>
+              <span>{t('common.search_footer_nav')}</span>
             </div>
           </div>
         </div>
