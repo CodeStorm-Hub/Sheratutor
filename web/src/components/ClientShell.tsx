@@ -46,6 +46,8 @@ export const ClientShell: React.FC<{
             darkMode={darkMode}
             setDarkMode={setDarkMode}
             userInitials={userInitials}
+            userName={userName}
+            userSub={userSub}
           />
           {children}
         </div>
