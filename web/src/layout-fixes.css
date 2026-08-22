@@ -750,3 +750,65 @@
   background: #4a282d;
   color: #ffaaa1;
 }
+
+.app.dark .header-dropdown,
+.app.dark .search-modal {
+  background: #1a2030;
+  border-color: #2b3245;
+  color: #f4f7ff;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.45);
+}
+
+.app.dark .profile-name,
+.app.dark .dropdown-header,
+.app.dark .search-modal-head input {
+  color: #f4f7ff;
+}
+
+.app.dark .profile-link,
+.app.dark .profile-menu-row {
+  color: #b8c2d8;
+}
+
+.app.dark .profile-link:hover,
+.app.dark .profile-menu-row:hover,
+.app.dark .search-result-item:hover {
+  background: #242c40;
+  color: #fff;
+}
+
+.app.dark .dropdown-divider,
+.app.dark .dropdown-footer,
+.app.dark .search-modal-head,
+.app.dark .search-modal-footer {
+  border-color: #2b3245;
+}
+
+.app.dark .notif-item {
+  background: #202738;
+}
+
+.app.dark .notif-item.unread {
+  background: #242f48;
+}
+
+.app.dark .search-item-icon {
+  background: #252e42;
+  color: #f4f7ff;
+}
+
+.app.dark .search-modal-footer {
+  background: #151b29;
+  color: #8c96ac;
+}
+
+.app.dark .search-modal-footer kbd {
+  background: #222a3d;
+  border-color: #344057;
+  color: #fff;
+}
+
+.app.dark .signout-btn:hover {
+  background: #3d2327;
+}
+
