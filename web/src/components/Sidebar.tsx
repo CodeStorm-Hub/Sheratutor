@@ -25,7 +25,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
   open,
   setOpen,
   collapsed,
-  userName = 'Anam Rahman',
+  userName = 'Student',
   userSub = 'HSC · Science',
 }) => {
   const pathname = usePathname();

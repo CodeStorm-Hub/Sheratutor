@@ -14,10 +14,11 @@ export default async function StudyPlanPage() {
 
   const { data: profile } = await supabase
     .from('student_profiles')
-    .select('id')
-    .eq('user_id', user!.id)
+    .select('id, education_board, exam_type')
+    .eq('user_id', user?.id ?? '')
     .maybeSingle();
 
+  // Fetch real active study plan
   const { data: plans } = profile
     ? await supabase
         .from('study_plans')
@@ -28,31 +29,40 @@ export default async function StudyPlanPage() {
         .limit(1)
     : { data: null };
 
+  // Fetch real weakness logs to compute mastery & recommendations
+  const { data: weaknesses } = profile
+    ? await supabase
+        .from('weakness_logs')
+        .select('*, chapters(title_en, subjects(name_en))')
+        .eq('student_id', profile.id)
+        .order('weakness_score', { ascending: false })
+    : { data: null };
+
   const plan = plans?.[0];
   const schedule = plan?.daily_schedule_json as { cycleDays: number; days: ScheduleDay[] } | undefined;
 
   let dynamicTasks = [
     {
-      title: 'Physics MCQ practice',
-      subtitle: '25 min · Work & Energy',
+      title: 'Physics: Motion & Measurements Practice',
+      subtitle: '25 min · NCTB syllabus standard',
       time: '09:30',
       checked: true,
     },
     {
-      title: 'Math: Chapter 8 review',
-      subtitle: '35 min · Trigonometry',
+      title: 'Chemistry: Chemical Reactions Review',
+      subtitle: '35 min · Balancing equations',
       time: '11:00',
       checked: true,
     },
     {
-      title: 'Chemistry revision',
-      subtitle: '20 min · Periodic table',
+      title: 'Mathematics: Problem Solving Practice',
+      subtitle: '20 min · Board question drill',
       time: '16:30',
       checked: false,
     },
     {
-      title: 'English writing drill',
-      subtitle: '15 min · Formal letters',
+      title: 'English: Written Expression & Grammar',
+      subtitle: '15 min · Formal letter format',
       time: '19:00',
       checked: false,
     },
@@ -61,22 +71,37 @@ export default async function StudyPlanPage() {
   if (schedule?.days?.[0]?.chapters?.length) {
     dynamicTasks = schedule.days[0].chapters.map((c, i) => ({
       title: `${c.subject}: ${c.title}`,
-      subtitle: `${20 + i * 10} min · Adaptive Revision`,
-      time: `${9 + i * 2}:00`,
+      subtitle: `${20 + (i % 3) * 10} min · Adaptive Revision`,
+      time: `${9 + (i % 5) * 2}:30`,
       checked: i === 0,
     }));
   }
 
+  // Calculate real mastery percent from weaknesses
+  let masteryPercent = 75;
+  if (weaknesses && weaknesses.length > 0) {
+    const totalScore = weaknesses.reduce((acc, curr) => acc + Number(curr.weakness_score), 0);
+    const avgWeakness = totalScore / weaknesses.length;
+    masteryPercent = Math.max(10, Math.min(100, Math.round((1 - avgWeakness) * 100)));
+  }
+
+  const topWeakness = weaknesses?.[0];
+  const recTitle = topWeakness?.chapters?.title_en
+    ? `Sharpen your ${topWeakness.chapters.title_en}`
+    : schedule?.days?.[0]?.chapters?.[0]
+    ? `Sharpen your ${schedule.days[0].chapters[0].title}`
+    : 'Sharpen your core topics';
+
+  const recBody = topWeakness
+    ? `Identified conceptual gaps in ${topWeakness.chapters?.subjects?.name_en || 'this subject'}. A focused 30-minute review will help recover up to ${Math.round(Number(topWeakness.total_marks_lost || 6))} marks.`
+    : 'Step-based practice on recent topics will help strengthen board rubric alignment.';
+
   return (
     <PlannerPageClient
       initialTasks={dynamicTasks}
-      recommendationTitle={
-        schedule?.days?.[0]?.chapters?.[0]
-          ? `Sharpen your ${schedule.days[0].chapters[0].title}`
-          : 'Sharpen your trigonometry'
-      }
-      recommendationBody="Most recent mistakes are step-based errors. A focused 30-minute review will help you recover marks."
-      masteryPercent={72}
+      recommendationTitle={recTitle}
+      recommendationBody={recBody}
+      masteryPercent={masteryPercent}
     />
   );
 }

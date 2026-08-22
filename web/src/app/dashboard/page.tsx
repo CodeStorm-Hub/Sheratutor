@@ -3,9 +3,7 @@ import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
 import { ScoreRing } from '@/components/ScoreRing';
 import { BarChart } from '@/components/BarChart';
-import { subjects as defaultSubjects } from '@/data/mockData';
 import {
-  BookOpen,
   ChevronRight,
   ChevronDown,
   FileCheck2,
@@ -20,28 +18,91 @@ export default async function DashboardPage() {
     data: { user },
   } = await supabase.auth.getUser();
 
-  const { data: profile } = await supabase
-    .from('student_profiles')
-    .select('*')
-    .eq('user_id', user!.id)
+  // 1. Fetch real student & user profile
+  const { data: userProfile } = await supabase
+    .from('profiles')
+    .select('full_name')
+    .eq('id', user?.id ?? '')
     .maybeSingle();
 
+  const { data: studentProfile } = await supabase
+    .from('student_profiles')
+    .select('id, exam_type, academic_group, education_board, target_exam_year, overall_momentum_score')
+    .eq('user_id', user?.id ?? '')
+    .maybeSingle();
+
+  // 2. Fetch real student submissions
   const { data: submissions } = await supabase
     .from('exam_submissions')
-    .select('*')
-    .eq('student_id', profile?.id ?? '')
-    .order('submitted_at', { ascending: false })
-    .limit(5);
+    .select('*, question_papers(title, total_marks, subjects(name_en))')
+    .eq('student_id', studentProfile?.id ?? '')
+    .order('submitted_at', { ascending: false });
 
-  const firstName =
-    (user?.user_metadata?.full_name as string)?.split(' ')[0] ||
-    profile?.full_name?.split(' ')[0] ||
-    'Anam';
+  // 3. Fetch real curriculum subjects for student's level
+  const { data: dbSubjects } = await supabase
+    .from('subjects')
+    .select('id, name_en, name_bn, code, level, subject_group')
+    .order('name_en');
 
-  const readinessScore = profile?.overall_momentum_score
-    ? Math.round(Number(profile.overall_momentum_score))
-    : 82;
+  // 4. Fetch real weakness logs to compute per-subject mastery
+  const { data: weaknesses } = await supabase
+    .from('weakness_logs')
+    .select('*, chapters(title_en, subjects(id, name_en))')
+    .eq('student_id', studentProfile?.id ?? '');
 
+  // 5. Fetch real active study plan
+  const { data: activePlan } = await supabase
+    .from('study_plans')
+    .select('daily_schedule_json, start_date, end_date')
+    .eq('student_id', studentProfile?.id ?? '')
+    .eq('is_active', true)
+    .maybeSingle();
+
+  // First name
+  const fullName =
+    userProfile?.full_name ||
+    (user?.user_metadata?.full_name as string) ||
+    (user?.email ? user.email.split('@')[0] : 'Student');
+  const firstName = fullName.split(' ')[0] || 'Student';
+
+  // Calculate real metrics from completed submissions
+  const completedSubs = (submissions || []).filter((s) => s.status === 'COMPLETED');
+  const totalCompleted = completedSubs.length;
+
+  let totalObtained = 0;
+  let totalPossible = 0;
+  completedSubs.forEach((s) => {
+    totalObtained += Number(s.total_score_obtained || 0);
+    totalPossible += Number(s.max_possible_score || 10);
+  });
+
+  const avgScorePct =
+    totalPossible > 0 ? Math.round((totalObtained / totalPossible) * 100) : null;
+
+  // Grade Letter calculation
+  let gradeLetter = '—';
+  let gradeLabel = 'Complete an exam to see prediction';
+  if (avgScorePct !== null) {
+    if (avgScorePct >= 80) gradeLetter = 'A+';
+    else if (avgScorePct >= 70) gradeLetter = 'A';
+    else if (avgScorePct >= 60) gradeLetter = 'A-';
+    else if (avgScorePct >= 50) gradeLetter = 'B';
+    else if (avgScorePct >= 40) gradeLetter = 'C';
+    else gradeLetter = 'F';
+
+    gradeLabel = `Based on your ${totalCompleted} assessment${
+      totalCompleted === 1 ? '' : 's'
+    }`;
+  }
+
+  // Momentum / Readiness Score
+  const momentumScore = studentProfile?.overall_momentum_score
+    ? Math.round(Number(studentProfile.overall_momentum_score))
+    : avgScorePct !== null
+    ? avgScorePct
+    : 0;
+
+  // Format today's date
   const todayFormatted = new Date()
     .toLocaleDateString('en-GB', {
       weekday: 'long',
@@ -49,6 +110,89 @@ export default async function DashboardPage() {
       month: 'long',
     })
     .toUpperCase();
+
+  // Build real subject progress cards
+  const colorMap = ['mint', 'sun', 'coral', 'lilac'] as const;
+  const iconMap: Record<string, string> = {
+    Physics: '⌁',
+    Chemistry: '⚗',
+    Mathematics: '∿',
+    English: 'Aa',
+  };
+
+  const displaySubjects = (dbSubjects && dbSubjects.length > 0 ? dbSubjects : []).map(
+    (subj, idx) => {
+      // Check if student has weakness or scores for this subject
+      const subjectWeakness = (weaknesses || []).filter(
+        (w) => w.chapters?.subjects?.id === subj.id
+      );
+      const avgWeakness =
+        subjectWeakness.length > 0
+          ? subjectWeakness.reduce((acc, curr) => acc + Number(curr.weakness_score), 0) /
+            subjectWeakness.length
+          : 0.2;
+
+      const progressVal = Math.max(10, Math.min(100, Math.round((1 - avgWeakness) * 100)));
+
+      return {
+        subject: subj.name_en,
+        chapter: subj.name_bn || 'Core Curriculum',
+        value: progressVal,
+        color: colorMap[idx % colorMap.length],
+        icon: iconMap[subj.name_en] || '✦',
+        lesson: `${subj.level} · ${subj.subject_group || 'General'}`,
+      };
+    }
+  );
+
+  // Extract today's tasks from real active study plan if available
+  type PlanDay = { day: number; chapters: Array<{ title: string; subject: string; weaknessScore?: number }> };
+  const scheduleJson = activePlan?.daily_schedule_json as { days?: PlanDay[] } | null;
+  const day1Chapters = scheduleJson?.days?.[0]?.chapters || [];
+
+  const realTasks =
+    day1Chapters.length > 0
+      ? day1Chapters.slice(0, 4).map((ch, i) => ({
+          id: `task-${i}`,
+          title: `${ch.subject}: ${ch.title}`,
+          subtitle: `Focused revision · ${studentProfile?.education_board || 'Dhaka'} standard`,
+          time: `${20 + i * 10} min`,
+          complete: i === 0 && totalCompleted > 0,
+        }))
+      : [
+          {
+            id: 'task-0',
+            title: 'Physics: Motion & Force Review',
+            subtitle: '20 questions · NCTB standard',
+            time: '25 min',
+            complete: totalCompleted > 0,
+          },
+          {
+            id: 'task-1',
+            title: 'Chemistry: Structure of Matter',
+            subtitle: 'Concept review & chemical equations',
+            time: '30 min',
+            complete: false,
+          },
+          {
+            id: 'task-2',
+            title: 'Math: Problem Solving Practice',
+            subtitle: 'Formulas & step-by-step solutions',
+            time: '35 min',
+            complete: false,
+          },
+          {
+            id: 'task-3',
+            title: 'English: Sentence Structure Drill',
+            subtitle: 'Grammar & written exercises',
+            time: '15 min',
+            complete: false,
+          },
+        ];
+
+  // Target exam details
+  const targetYear = studentProfile?.target_exam_year || 2026;
+  const examLevel = studentProfile?.exam_type || 'HSC';
 
   return (
     <>
@@ -60,17 +204,29 @@ export default async function DashboardPage() {
           <h1>
             Good day, {firstName} <em>👋</em>
           </h1>
-          <p>Your board-exam journey is looking stronger every day.</p>
+          <p>
+            {totalCompleted > 0
+              ? `You have completed ${totalCompleted} evaluated assessment${
+                  totalCompleted === 1 ? '' : 's'
+                }. Keep your momentum going!`
+              : 'Welcome to your board exam prep workspace. Take your first practice test!'}
+          </p>
         </div>
-        <button type="button" className="focus-button">
+        <Link
+          href="/dashboard/practice"
+          className="focus-button"
+          style={{ textDecoration: 'none' }}
+        >
           <span className="focus-icon">
             <Play size={16} fill="currentColor" />
           </span>
           Start focus session
-        </button>
+        </Link>
       </section>
 
+      {/* Stats row */}
       <section className="stat-grid">
+        {/* Prediction Card */}
         <article className="prediction">
           <div className="stat-top">
             <span className="tag coral">BOARD PREDICTION</span>
@@ -78,76 +234,84 @@ export default async function DashboardPage() {
           </div>
           <div className="prediction-main">
             <div>
-              <div className="big-grade">A-</div>
-              <p>
-                Based on your last {submissions?.length ? submissions.length : 14}{' '}
-                assessments
-              </p>
+              <div className="big-grade">{gradeLetter}</div>
+              <p>{gradeLabel}</p>
             </div>
             <div className="percentile">
-              <b>Top 12%</b>
-              <span>among HSC students</span>
+              <b>{avgScorePct !== null ? `${avgScorePct}% Avg` : 'Ready'}</b>
+              <span>
+                {totalCompleted > 0
+                  ? `in ${studentProfile?.education_board || 'Dhaka'} Board`
+                  : 'Start 1st assessment'}
+              </span>
               <div className="tiny-bars">
-                <i />
-                <i />
-                <i />
-                <i />
-                <i />
-                <i className="on" />
-                <i className="on" />
-                <i className="on" />
-                <i className="on" />
-                <i className="on" />
-                <i className="on" />
-                <i className="on" />
+                <i className={momentumScore > 10 ? 'on' : ''} />
+                <i className={momentumScore > 20 ? 'on' : ''} />
+                <i className={momentumScore > 30 ? 'on' : ''} />
+                <i className={momentumScore > 40 ? 'on' : ''} />
+                <i className={momentumScore > 50 ? 'on' : ''} />
+                <i className={momentumScore > 60 ? 'on' : ''} />
+                <i className={momentumScore > 70 ? 'on' : ''} />
+                <i className={momentumScore > 80 ? 'on' : ''} />
+                <i className={momentumScore > 90 ? 'on' : ''} />
+                <i className={momentumScore >= 95 ? 'on' : ''} />
               </div>
             </div>
           </div>
           <div className="prediction-footer">
             <span>
-              <Sparkles size={15} /> Keep this momentum going
+              <Sparkles size={15} />{' '}
+              {totalCompleted > 0
+                ? 'Evaluated via official board rubrics'
+                : 'AI-evaluated feedback ready'}
             </span>
             <Link href="/dashboard/submissions">
-              View forecast <ChevronRight size={15} />
+              View results <ChevronRight size={15} />
             </Link>
           </div>
         </article>
 
+        {/* Readiness Card */}
         <article className="readiness">
           <div className="stat-top">
             <span className="tag mint">EXAM READINESS</span>
             <MoreHorizontal size={20} />
           </div>
           <div className="readiness-content">
-            <ScoreRing value={readinessScore} />
+            <ScoreRing value={momentumScore} />
             <div>
-              <b>You&apos;re on track</b>
-              <p>+6% from last week</p>
+              <b>{momentumScore >= 70 ? "You're on track" : 'Building momentum'}</b>
+              <p>
+                {momentumScore > 0
+                  ? `${momentumScore}% syllabus mastery`
+                  : 'Take a test to calculate'}
+              </p>
               <div className="mini-progress">
-                <i />
+                <i style={{ width: `${Math.max(5, momentumScore)}%` }} />
               </div>
             </div>
           </div>
         </article>
 
+        {/* Next Exam Card */}
         <article className="next-exam">
           <div className="stat-top">
-            <span className="tag sun">NEXT EXAM</span>
+            <span className="tag sun">TARGET EXAM</span>
             <MoreHorizontal size={20} />
           </div>
           <div className="exam-info">
             <div className="physics-icon">ϟ</div>
             <div>
-              <b>Physics</b>
-              <p>1st Paper · Model Test</p>
+              <b>{examLevel} Examination</b>
+              <p>{studentProfile?.education_board || 'Dhaka'} Board · {targetYear}</p>
             </div>
           </div>
           <div className="exam-date">
-            <strong>12</strong>
+            <strong>{targetYear}</strong>
             <span>
-              days
+              Batch
               <br />
-              remaining
+              Target
             </span>
             <Link href="/dashboard/practice">
               <ChevronRight size={19} />
@@ -156,18 +320,19 @@ export default async function DashboardPage() {
         </article>
       </section>
 
+      {/* Continue Learning Subjects */}
       <section className="section-heading">
         <div>
-          <h2>Continue learning</h2>
-          <p>Pick up where you left off.</p>
+          <h2>Curriculum subjects</h2>
+          <p>Practice board standard questions and chapters.</p>
         </div>
         <Link href="/dashboard/tutor">
-          See all subjects <ChevronRight size={16} />
+          Ask AI Tutor <ChevronRight size={16} />
         </Link>
       </section>
 
       <section className="subjects">
-        {defaultSubjects.map((s) => (
+        {displaySubjects.map((s) => (
           <article className={`subject ${s.color}`} key={s.subject}>
             <div className="subject-top">
               <div className="subject-icon">{s.icon}</div>
@@ -190,103 +355,104 @@ export default async function DashboardPage() {
         ))}
       </section>
 
+      {/* Lower grid: Today's focus & Weekly progress */}
       <section className="lower-grid">
         <article className="focus-panel">
           <div className="panel-header">
             <div>
               <h2>Today&apos;s focus</h2>
-              <p>AI-curated for your best score.</p>
+              <p>
+                {activePlan
+                  ? 'AI-curated adaptive study schedule.'
+                  : 'Personalized revision plan for your syllabus.'}
+              </p>
             </div>
-            <button
-              type="button"
-              className="icon-button"
-              aria-label="Focus panel options"
-            >
-              <MoreHorizontal size={19} />
-            </button>
+            <Link href="/dashboard/study-plan" style={{ color: 'inherit' }}>
+              <button
+                type="button"
+                className="icon-button"
+                aria-label="View study plan"
+              >
+                <MoreHorizontal size={19} />
+              </button>
+            </Link>
           </div>
+
           <div className="task-list">
-            <div className="task complete">
-              <span>
-                <FileCheck2 size={16} />
-              </span>
-              <div>
-                <b>Physics MCQ practice</b>
-                <small>20 questions · Work & Energy</small>
+            {realTasks.map((t, idx) => (
+              <div
+                className={`task ${t.complete ? 'complete' : ''}`}
+                key={t.id}
+              >
+                <span>
+                  {t.complete ? (
+                    <FileCheck2 size={16} />
+                  ) : (
+                    idx + 1
+                  )}
+                </span>
+                <div>
+                  <b>{t.title}</b>
+                  <small>{t.subtitle}</small>
+                </div>
+                <time>{t.time}</time>
+                <Link href="/dashboard/practice">
+                  <button type="button" aria-label="Open task">
+                    <ChevronRight size={17} />
+                  </button>
+                </Link>
               </div>
-              <time>25 min</time>
-              <button type="button" aria-label="Open task">
-                <ChevronRight size={17} />
-              </button>
-            </div>
-            <div className="task complete">
-              <span>
-                <BookOpen size={16} />
-              </span>
-              <div>
-                <b>Math: Chapter 8 review</b>
-                <small>Trigonometric ratios</small>
-              </div>
-              <time>35 min</time>
-              <button type="button" aria-label="Open task">
-                <ChevronRight size={17} />
-              </button>
-            </div>
-            <div className="task">
-              <span>3</span>
-              <div>
-                <b>Chemistry revision</b>
-                <small>Periodic table & bonding</small>
-              </div>
-              <time>20 min</time>
-              <button type="button" aria-label="Open task">
-                <ChevronRight size={17} />
-              </button>
-            </div>
-            <div className="task">
-              <span>4</span>
-              <div>
-                <b>English writing drill</b>
-                <small>Formal letter practice</small>
-              </div>
-              <time>15 min</time>
-              <button type="button" aria-label="Open task">
-                <ChevronRight size={17} />
-              </button>
-            </div>
+            ))}
           </div>
-          <button
-            type="button"
-            className="continue"
+
+          <Link
+            href="/dashboard/study-plan"
+            style={{ textDecoration: 'none' }}
           >
-            <Play size={15} fill="currentColor" /> Continue today&apos;s plan{' '}
-            <span>1h 35m left</span>
-          </button>
+            <button type="button" className="continue">
+              <Play size={15} fill="currentColor" /> Go to full study planner{' '}
+              <span>{realTasks.length} tasks</span>
+            </button>
+          </Link>
         </article>
 
         <article className="progress-panel">
           <div className="panel-header">
             <div>
-              <h2>Weekly progress</h2>
-              <p>You&apos;re ahead of your usual pace.</p>
+              <h2>Assessment activity</h2>
+              <p>
+                {totalCompleted > 0
+                  ? `${totalCompleted} tests evaluated by AI examiner.`
+                  : 'Upload your first answer sheet to track score history.'}
+              </p>
             </div>
             <button type="button" className="week-select">
-              This week <ChevronDown size={15} />
+              This term <ChevronDown size={15} />
             </button>
           </div>
+
           <div className="chart-stat">
             <div>
-              <strong>11h 20m</strong>
-              <span>study time</span>
+              <strong>{totalCompleted}</strong>
+              <span>tests submitted</span>
             </div>
-            <div className="up">↗ 18%</div>
+            <div className="up">
+              {totalCompleted > 0 ? `Avg ${avgScorePct ?? 0}%` : 'New student'}
+            </div>
           </div>
+
           <BarChart />
+
           <div className="chart-footer">
             <span>
-              <i /> Study time
+              <i /> Assessment momentum
             </span>
-            <b>Goal: 14h</b>
+            <Link
+              href="/dashboard/submissions"
+              style={{ color: 'inherit', textDecoration: 'none', fontWeight: 600 }}
+            >
+              View all results &rarr;
+            </Link>
           </div>
         </article>
       </section>
