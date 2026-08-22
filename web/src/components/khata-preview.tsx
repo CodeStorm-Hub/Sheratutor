@@ -12,6 +12,10 @@ export function KhataPreview({ className }: { className?: string }) {
         justifyContent: 'center',
         alignItems: 'center',
         width: '100%',
+        maxWidth: '100%',
+        boxSizing: 'border-box',
+        overflow: 'hidden',
+        padding: '0 4px',
       }}
     >
       <svg
@@ -19,9 +23,10 @@ export function KhataPreview({ className }: { className?: string }) {
         className={className}
         style={{
           width: '100%',
-          maxWidth: 380,
+          maxWidth: 360,
           height: 'auto',
           filter: 'drop-shadow(0 14px 30px rgba(20, 24, 43, 0.08))',
+          boxSizing: 'border-box',
         }}
         role="img"
         aria-label="একটি পরীক্ষার খাতা, লাল কালিতে নম্বর দেওয়া"

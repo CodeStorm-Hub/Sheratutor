@@ -22,11 +22,12 @@ export function Logo({
         <span />
         <span />
       </div>
-      <span style={{ font: "700 24px 'Baloo 2', sans-serif" }}>
+      <span style={{ font: "700 22px 'Baloo 2', sans-serif", letterSpacing: '-0.3px' }}>
         Shera<span style={{ color: 'var(--coral)' }}>Tutor</span>
       </span>
       {tagline && (
         <span
+          className="logo-tagline"
           style={{
             fontSize: 10,
             color: 'var(--muted)',

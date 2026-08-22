@@ -1237,6 +1237,27 @@ h3 {
     width: 100%;
     justify-content: center;
   }
+  .stat-grid article {
+    min-height: 160px;
+    padding: 16px;
+  }
+  .prediction-main {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .percentile {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .prediction-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+  .prediction-footer a {
+    align-self: flex-start;
+  }
   .subjects {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -1247,10 +1268,6 @@ h3 {
   }
   .subject h3 {
     font-size: 15px;
-  }
-  .stat-grid article {
-    min-height: 160px;
-    padding: 16px;
   }
   .lower-grid {
     margin-top: 18px;
@@ -1269,6 +1286,290 @@ h3 {
     font-size: 18px;
   }
 }
+
+/* Extra Small Phones (<= 450px) */
+@media (max-width: 450px) {
+  .app main {
+    padding: 0 12px 24px;
+  }
+  .subjects {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .crumb span,
+  .crumb svg {
+    display: none;
+  }
+  .crumb b {
+    font-size: 14px;
+  }
+  .task {
+    padding: 10px 0;
+    gap: 8px;
+  }
+  .task b {
+    font-size: 12px;
+  }
+  .task small {
+    font-size: 10px;
+  }
+  .task time {
+    font-size: 9px;
+  }
+}
+
+/* ==========================================================================
+   Landing Page Responsive System
+   ========================================================================== */
+
+.landing-container {
+  min-height: 100vh;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.landing-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  gap: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+}
+
+.landing-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.landing-signin-btn {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+  padding: 6px 10px;
+  white-space: nowrap;
+}
+
+.landing-cta-btn {
+  text-decoration: none;
+  padding: 8px 13px;
+  font-size: 12px;
+  white-space: nowrap;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.landing-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.landing-hero {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 0 54px;
+  box-sizing: border-box;
+}
+
+.landing-hero-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.landing-hero-title {
+  font: 800 clamp(23px, 5.2vw, 42px)/1.2 'Baloo 2', sans-serif;
+  margin: 0;
+  color: var(--navy);
+  letter-spacing: -0.5px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.landing-hero-desc {
+  font-size: clamp(13px, 3.2vw, 16px);
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 0;
+  max-width: 520px;
+  word-break: break-word;
+}
+
+.landing-form-box {
+  width: 100%;
+  max-width: 460px;
+  box-sizing: border-box;
+}
+
+.waitlist-exam-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.landing-paper-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.landing-cards-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.landing-feature-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px;
+  background: var(--paper);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.landing-promise-card {
+  border-left: 4px solid var(--coral);
+  border-top: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-radius: 0 16px 16px 0;
+  padding: 22px 20px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.landing-footer {
+  border-top: 1px solid var(--border);
+  padding: 24px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--muted);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .landing-header {
+    padding: 14px 16px;
+  }
+  .landing-main {
+    padding: 0 16px;
+  }
+  .landing-hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 28px 0 36px;
+  }
+  .landing-hero-left {
+    align-items: stretch;
+    width: 100%;
+  }
+  .landing-hero-left .tag {
+    align-self: flex-start;
+  }
+  .landing-hero-title {
+    font-size: 28px;
+    line-height: 1.25;
+  }
+  .landing-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding-bottom: 36px;
+  }
+  .landing-footer {
+    padding: 20px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-tagline {
+    display: none !important;
+  }
+  .landing-header {
+    padding: 12px 14px;
+  }
+  .landing-signin-btn {
+    padding: 5px 6px;
+    font-size: 12px;
+  }
+  .landing-cta-btn {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  .landing-main {
+    padding: 0 14px;
+  }
+  .landing-hero {
+    padding: 20px 0 28px;
+    gap: 22px;
+  }
+  .landing-hero-title {
+    font-size: 24px;
+    line-height: 1.22;
+  }
+  .landing-hero-desc {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .waitlist-exam-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .landing-feature-card,
+  .landing-promise-card {
+    padding: 16px 14px;
+  }
+}
+
+
 
 /* ==========================================================================
    Header Dropdown Menus (Profile & Notifications) & Search Modal
