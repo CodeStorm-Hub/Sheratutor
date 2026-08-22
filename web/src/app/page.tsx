@@ -1,28 +1,66 @@
+'use client';
+
+import React from 'react';
 import Link from 'next/link';
 import { Logo } from '@/components/logo';
 import { WaitlistForm } from '@/components/waitlist-form';
 import { KhataPreview } from '@/components/khata-preview';
 import { Tag } from '@/components/Tag';
 import { Camera, ScanText, ClipboardCheck, ArrowRight } from 'lucide-react';
-
-const HOW_IT_WORKS = [
-  { icon: Camera, title: 'ছবি তোলো', body: 'তোমার হাতে লেখা উত্তরপত্র মোবাইলে ছবি তুলে জমা দাও।' },
-  { icon: ScanText, title: 'AI পরীক্ষক পড়ে', body: 'বাংলা ও ইংরেজি হাতের লেখা পড়ে NCTB রুব্রিক অনুযায়ী মূল্যায়ন করে।' },
-  { icon: ClipboardCheck, title: 'ধাপে ধাপে ফল', body: 'প্রতিটি ধাপে কোথায় নম্বর কাটা গেল, সঙ্গে সঙ্গে দেখো।' },
-];
+import { useLanguage } from '@/context/LanguageContext';
+import { LanguageToggle } from '@/components/LanguageToggle';
 
 export default function LandingPage() {
+  const { t } = useLanguage();
+
+  const howItWorks = [
+    {
+      icon: Camera,
+      title: t('landing.step1_title'),
+      body: t('landing.step1_desc'),
+    },
+    {
+      icon: ScanText,
+      title: t('landing.step2_title'),
+      body: t('landing.step2_desc'),
+    },
+    {
+      icon: ClipboardCheck,
+      title: t('landing.step3_title'),
+      body: t('landing.step3_desc'),
+    },
+  ];
+
+  const valueProps = [
+    {
+      eyebrow: t('landing.card1_eyebrow'),
+      title: t('landing.card1_title'),
+      body: t('landing.card1_desc'),
+    },
+    {
+      eyebrow: t('landing.card2_eyebrow'),
+      title: t('landing.card2_title'),
+      body: t('landing.card2_desc'),
+    },
+    {
+      eyebrow: t('landing.card3_eyebrow'),
+      title: t('landing.card3_title'),
+      body: t('landing.card3_desc'),
+    },
+  ];
+
   return (
     <div className="landing-container">
       {/* Responsive Header */}
       <header className="landing-header">
         <Logo tagline />
         <div className="landing-nav-actions">
+          <LanguageToggle />
           <Link href="/login" className="landing-signin-btn">
-            Sign in
+            {t('common.sign_in')}
           </Link>
           <Link href="/dashboard" className="primary-btn landing-cta-btn">
-            Open Workspace <ArrowRight size={15} />
+            <span>{t('common.open_workspace')}</span> <ArrowRight size={14} />
           </Link>
         </div>
       </header>
@@ -32,19 +70,17 @@ export default function LandingPage() {
         {/* Hero Section */}
         <section className="landing-hero">
           <div className="landing-hero-left">
-            <Tag color="sun">বাংলাদেশে আসছে</Tag>
+            <Tag color="sun">{t('landing.badge')}</Tag>
 
             <h1 className="landing-hero-title">
-              বোর্ড পরীক্ষকের মতোই মূল্যায়ন।{' '}
+              {t('landing.hero_title_1')}{' '}
               <span style={{ color: 'var(--coral)' }}>
-                প্রতিটি শিক্ষার্থীর জন্য চিরকাল বিনামূল্যে।
+                {t('landing.hero_title_2')}
               </span>
             </h1>
 
             <p className="landing-hero-desc">
-              তোমার হাতে লেখা উত্তরপত্রের ছবি তোলো। SheraTutor তোমার বাংলা ও ইংরেজি
-              পড়ে, আসল NCTB রুব্রিক অনুযায়ী মূল্যায়ন করে, আর ঠিক কোন ধাপে নম্বর
-              কাটা গেছে তা সঙ্গে সঙ্গে দেখায়।
+              {t('landing.hero_desc')}
             </p>
 
             <div className="landing-form-box">
@@ -59,7 +95,7 @@ export default function LandingPage() {
 
         {/* How it works */}
         <section className="landing-cards-grid">
-          {HOW_IT_WORKS.map((step, i) => (
+          {howItWorks.map((step, i) => (
             <div
               key={step.title}
               className="landing-feature-card"
@@ -82,23 +118,7 @@ export default function LandingPage() {
 
         {/* Problem / Solution / Promise */}
         <section className="landing-cards-grid">
-          {[
-            {
-              eyebrow: 'সমস্যা',
-              title: 'টাকা থাকলেই মেলে সূক্ষ্ম ফিডব্যাক',
-              body: 'প্রাইভেট টিউটর বোর্ড-মানের বিস্তারিত ফিডব্যাক দেয়। বাকিরা পায় শুধু পাস/ফেল নম্বর।',
-            },
-            {
-              eyebrow: 'সমাধান',
-              title: 'পকেটে একজন AI পরীক্ষক',
-              body: 'আসল NCTB পাঠ্যক্রম ও বোর্ডের অফিসিয়াল রুব্রিক দিয়ে মূল্যায়ন — সাধারণ কোনো AI অনুমান নয়।',
-            },
-            {
-              eyebrow: 'প্রতিশ্রুতি',
-              title: 'বিনামূল্যে মানে সত্যিই বিনামূল্যে',
-              body: 'কোনো প্রিমিয়াম প্ল্যান নেই, বিজ্ঞাপন নেই, ৩টি ফ্রি টেস্ট সীমা নেই। শিক্ষার্থী নয়, প্রতিষ্ঠান খরচ বহন করে।',
-            },
-          ].map((card) => (
+          {valueProps.map((card) => (
             <div
               key={card.title}
               className="landing-promise-card"
@@ -121,7 +141,7 @@ export default function LandingPage() {
       <footer className="landing-footer">
         <Logo tagline />
         <p style={{ margin: 0 }}>
-          &copy; {new Date().getFullYear()} SheraTutor &middot; বাংলাদেশের SSC ও HSC শিক্ষার্থীদের জন্য তৈরি।
+          &copy; {new Date().getFullYear()} SheraTutor &middot; {t('landing.footer_text')}
         </p>
       </footer>
     </div>

@@ -1,9 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Moon } from 'lucide-react';
+import { Globe, Moon } from 'lucide-react';
 import { PageHeader } from '@/components/PageHeader';
 import { useTheme } from '@/context/ThemeContext';
+import { useLanguage } from '@/context/LanguageContext';
+import { LanguageToggle } from '@/components/LanguageToggle';
 import { updateProfile } from '@/app/actions/profile';
 import { toast } from 'sonner';
 
@@ -19,8 +21,9 @@ interface ProfileData {
 export function SettingsPageClient({ profile }: { profile: ProfileData | null }) {
   const [activeTab, setActiveTab] = useState('profile');
   const { darkMode, toggleDarkMode } = useTheme();
+  const { language, t } = useLanguage();
 
-  const [fullName, setFullName] = useState(profile?.full_name || 'Anam Rahman');
+  const [fullName, setFullName] = useState(profile?.full_name || 'Student');
   const [examType, setExamType] = useState<'HSC' | 'SSC'>(profile?.exam_type || 'HSC');
   const [group, setGroup] = useState<'SCIENCE' | 'HUMANITIES' | 'BUSINESS_STUDIES'>('SCIENCE');
   const [board, setBoard] = useState(profile?.education_board || 'DHAKA');
@@ -43,12 +46,12 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
 
       const res = await updateProfile({ status: 'idle' }, formData);
       if (res.status === 'error') {
-        toast.error(res.message || 'Failed to update settings');
+        toast.error(res.message || (language === 'bn' ? 'সেটিংস সংরক্ষণে সমস্যা হয়েছে' : 'Failed to update settings'));
       } else {
-        toast.success('Settings updated successfully!');
+        toast.success(language === 'bn' ? 'সেটিংস সফলভাবে সংরক্ষিত হয়েছে!' : 'Settings updated successfully!');
       }
     } catch {
-      toast.error('Failed to update settings');
+      toast.error(language === 'bn' ? 'সেটিংস সংরক্ষণে সমস্যা হয়েছে' : 'Failed to update settings');
     } finally {
       setSaving(false);
     }
@@ -59,13 +62,13 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
     .map((n) => n[0])
     .join('')
     .slice(0, 2)
-    .toUpperCase() || 'AR';
+    .toUpperCase() || 'ST';
 
   return (
     <>
       <PageHeader
-        title="Settings"
-        description="Manage your account, preferences, and personal details."
+        title={t('settings.title')}
+        description={t('settings.desc')}
       >
         <button
           type="button"
@@ -73,7 +76,7 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
           onClick={handleSave}
           disabled={saving}
         >
-          {saving ? 'Saving…' : 'Save changes'}
+          {saving ? t('common.saving') : t('common.save_changes')}
         </button>
       </PageHeader>
 
@@ -84,55 +87,55 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
             className={activeTab === 'profile' ? 'active' : ''}
             onClick={() => setActiveTab('profile')}
           >
-            Profile
+            {t('settings.profile_tab')}
           </button>
           <button
             type="button"
             className={activeTab === 'learning' ? 'active' : ''}
             onClick={() => setActiveTab('learning')}
           >
-            Learning preferences
+            {t('settings.learning_tab')}
           </button>
           <button
             type="button"
             className={activeTab === 'notifications' ? 'active' : ''}
             onClick={() => setActiveTab('notifications')}
           >
-            Notifications
+            {t('settings.notifications_tab')}
           </button>
           <button
             type="button"
             className={activeTab === 'appearance' ? 'active' : ''}
             onClick={() => setActiveTab('appearance')}
           >
-            Appearance
+            {t('settings.appearance_tab')}
           </button>
           <button
             type="button"
             className={activeTab === 'privacy' ? 'active' : ''}
             onClick={() => setActiveTab('privacy')}
           >
-            Privacy & security
+            {t('settings.privacy_tab')}
           </button>
         </aside>
 
         <section>
-          <h2>Personal details</h2>
-          <p>Update your photo and personal information.</p>
+          <h2>{t('settings.personal_details')}</h2>
+          <p>{language === 'bn' ? 'তোমার ছবি ও ব্যক্তিগত তথ্য আপডেট করো।' : 'Update your photo and personal information.'}</p>
 
           <div className="profile-edit">
             <div className="large-avatar">{initials}</div>
             <div>
-              <b>Profile photo</b>
+              <b>{language === 'bn' ? 'প্রোফাইল ছবি' : 'Profile photo'}</b>
               <p style={{ margin: '2px 0 8px', fontSize: 11, color: '#68718a' }}>
-                Shown on your dashboard and report cards.
+                {language === 'bn' ? 'তোমার ড্যাশবোর্ড ও রিপোর্ট কার্ডে দেখানো হবে।' : 'Shown on your dashboard and report cards.'}
               </p>
-              <button type="button">Change avatar</button>
+              <button type="button">{t('settings.change_avatar')}</button>
             </div>
           </div>
 
           <label>
-            Full name
+            {t('settings.full_name')}
             <input
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
@@ -141,50 +144,50 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
           </label>
 
           <label>
-            Exam Type
+            {t('settings.exam_type')}
             <select
               value={examType}
               onChange={(e) => setExamType(e.target.value as 'HSC' | 'SSC')}
             >
-              <option value="HSC">HSC (Higher Secondary)</option>
-              <option value="SSC">SSC (Secondary School)</option>
+              <option value="HSC">{language === 'bn' ? 'HSC (উচ্চ মাধ্যমিক)' : 'HSC (Higher Secondary)'}</option>
+              <option value="SSC">{language === 'bn' ? 'SSC (মাধ্যমিক)' : 'SSC (Secondary School)'}</option>
             </select>
           </label>
 
           <label>
-            Academic Group
+            {t('settings.academic_group')}
             <select
               value={group}
               onChange={(e) => setGroup(e.target.value as 'SCIENCE' | 'HUMANITIES' | 'BUSINESS_STUDIES')}
             >
-              <option value="SCIENCE">Science</option>
-              <option value="HUMANITIES">Humanities</option>
-              <option value="BUSINESS_STUDIES">Business Studies</option>
+              <option value="SCIENCE">{language === 'bn' ? 'বিজ্ঞান' : 'Science'}</option>
+              <option value="HUMANITIES">{language === 'bn' ? 'মানবিক' : 'Humanities'}</option>
+              <option value="BUSINESS_STUDIES">{language === 'bn' ? 'ব্যবসায় শিক্ষা' : 'Business Studies'}</option>
             </select>
           </label>
 
           <label>
-            Target Board
+            {t('settings.target_board')}
             <select
               value={board}
               onChange={(e) => setBoard(e.target.value)}
             >
-              <option value="DHAKA">Dhaka Board</option>
-              <option value="CHITTAGONG">Chittagong Board</option>
-              <option value="RAJSHAHI">Rajshahi Board</option>
-              <option value="SYLHET">Sylhet Board</option>
-              <option value="BARISAL">Barisal Board</option>
-              <option value="COMILLA">Comilla Board</option>
-              <option value="DINAJPUR">Dinajpur Board</option>
-              <option value="JESSORE">Jessore Board</option>
-              <option value="MYMENSINGH">Mymensingh Board</option>
-              <option value="MADRASAH">Madrasah Board</option>
-              <option value="TECHNICAL">Technical Board</option>
+              <option value="DHAKA">{language === 'bn' ? 'ঢাকা বোর্ড' : 'Dhaka Board'}</option>
+              <option value="CHITTAGONG">{language === 'bn' ? 'চট্টগ্রাম বোর্ড' : 'Chittagong Board'}</option>
+              <option value="RAJSHAHI">{language === 'bn' ? 'রাজশাহী বোর্ড' : 'Rajshahi Board'}</option>
+              <option value="SYLHET">{language === 'bn' ? 'সিলেট বোর্ড' : 'Sylhet Board'}</option>
+              <option value="BARISAL">{language === 'bn' ? 'বরিশাল বোর্ড' : 'Barisal Board'}</option>
+              <option value="COMILLA">{language === 'bn' ? 'কুমিল্লা বোর্ড' : 'Comilla Board'}</option>
+              <option value="DINAJPUR">{language === 'bn' ? 'দিনাজপুর বোর্ড' : 'Dinajpur Board'}</option>
+              <option value="JESSORE">{language === 'bn' ? 'যশোর বোর্ড' : 'Jessore Board'}</option>
+              <option value="MYMENSINGH">{language === 'bn' ? 'ময়মনসিংহ বোর্ড' : 'Mymensingh Board'}</option>
+              <option value="MADRASAH">{language === 'bn' ? 'মাদ্রাসা বোর্ড' : 'Madrasah Board'}</option>
+              <option value="TECHNICAL">{language === 'bn' ? 'কারিগরি বোর্ড' : 'Technical Board'}</option>
             </select>
           </label>
 
           <label>
-            Target Exam Year
+            {t('settings.target_year')}
             <input
               type="number"
               value={targetExamYear}
@@ -202,16 +205,28 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
                 onChange={(e) => setOptIn(e.target.checked)}
                 style={{ width: 'auto', margin: 0 }}
               />
-              <span>Opt-in to anonymous AI training data improvement (PDPA compliant)</span>
+              <span>{t('settings.opt_in')}</span>
             </label>
           </div>
 
+          {/* Language Preference Section */}
+          <div className="appearance-toggle" style={{ marginBottom: 12 }}>
+            <div>
+              <b>
+                <Globe size={15} /> {language === 'bn' ? 'ভাষার পছন্দ' : 'Language'}
+              </b>
+              <small>{language === 'bn' ? 'ওয়েবসাইটের ভাষা বাংলা বা ইংরেজিতে পরিবর্তন করো।' : 'Switch website language between Bangla and English.'}</small>
+            </div>
+            <LanguageToggle showIcon={false} />
+          </div>
+
+          {/* Dark Mode Toggle */}
           <div className="appearance-toggle">
             <div>
               <b>
-                <Moon size={15} /> Dark mode
+                <Moon size={15} /> {darkMode ? t('common.light_mode') : t('common.dark_mode')}
               </b>
-              <small>Toggle between light and dark themes.</small>
+              <small>{language === 'bn' ? 'লাইট ও ডার্ক থিমের মধ্যে পরিবর্তন করো।' : 'Toggle between light and dark themes.'}</small>
             </div>
             <button
               type="button"
@@ -231,7 +246,7 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
               disabled={saving}
               style={{ width: '100%', justifyContent: 'center' }}
             >
-              {saving ? 'Saving changes…' : 'Save changes'}
+              {saving ? t('common.saving') : t('common.save_changes')}
             </button>
           </div>
         </section>

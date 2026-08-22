@@ -1572,6 +1572,101 @@ h3 {
 
 
 /* ==========================================================================
+   Bilingual Language Switcher (.lang-switch-container)
+   ========================================================================== */
+
+.lang-switch-container {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  background: var(--paper);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 4px 3px 8px;
+  font-family: inherit;
+  user-select: none;
+  height: 36px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.lang-globe-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  flex-shrink: 0;
+}
+
+.lang-switch-pill {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  background: rgba(0, 0, 0, 0.04);
+  border-radius: 16px;
+  padding: 2px;
+}
+
+.lang-opt-btn {
+  border: 0;
+  background: transparent;
+  padding: 4px 9px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  cursor: pointer;
+  border-radius: 13px;
+  transition: all 0.18s cubic-bezier(0.2, 0.8, 0.2, 1);
+  line-height: 1;
+  font-family: 'Baloo 2', 'Inter', sans-serif;
+  letter-spacing: -0.2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang-opt-btn:hover {
+  color: var(--navy);
+}
+
+.lang-opt-btn.active {
+  background: #fff;
+  color: var(--coral);
+  box-shadow: 0 2px 6px rgba(20, 24, 43, 0.1);
+}
+
+/* Dark mode overrides */
+.app.dark .lang-switch-container {
+  background: #171d36;
+  border-color: #2b3558;
+}
+
+.app.dark .lang-globe-icon {
+  color: #8c98ba;
+}
+
+.app.dark .lang-switch-pill {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.app.dark .lang-opt-btn {
+  color: #8c98ba;
+}
+
+.app.dark .lang-opt-btn:hover {
+  color: #fff;
+}
+
+.app.dark .lang-opt-btn.active {
+  background: #242c4c;
+  color: var(--coral);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+
+/* ==========================================================================
    Header Dropdown Menus (Profile & Notifications) & Search Modal
    ========================================================================== */
 

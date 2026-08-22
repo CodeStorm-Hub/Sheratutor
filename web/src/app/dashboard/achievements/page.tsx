@@ -1,8 +1,6 @@
 import React from 'react';
 import { createClient } from '@/lib/supabase/server';
-import { Tag } from '@/components/Tag';
-import { PageHeader } from '@/components/PageHeader';
-import { ArrowUpRight } from 'lucide-react';
+import { AchievementsPageClient, BadgeItem } from '@/components/pages/AchievementsPageClient';
 
 export default async function AchievementsPage() {
   const supabase = await createClient();
@@ -51,90 +49,68 @@ export default async function AchievementsPage() {
   const xpNeeded = 300 - levelProgress;
   const progressPct = Math.min(100, Math.round((levelProgress / 300) * 100));
 
-  const badges = [
+  const badges: BadgeItem[] = [
     {
       icon: '🔥',
       value: count > 0 ? `${count} Tests` : 'Ready',
       title: 'Practice Consistency',
+      title_bn: 'ধারাবাহিক অনুশীলন',
       description:
         count > 0
           ? `Submitted ${count} exam answer scripts for AI evaluation.`
           : 'Complete your first practice test to unlock.',
+      description_bn:
+        count > 0
+          ? `এআই মূল্যায়নের জন্য ${count}টি উত্তরপত্র জমা দেওয়া হয়েছে।`
+          : 'আনলক করতে তোমার প্রথম মক টেস্ট সম্পন্ন করো।',
       unlocked: count >= 1,
     },
     {
       icon: '⚡',
       value: avgPct > 0 ? `${avgPct}% Avg` : 'Pending',
       title: 'Accuracy Milestone',
+      title_bn: 'সঠিকতার মাইলফলক',
       description: hasHighScore
         ? 'Scored 80%+ (A+) on an evaluated board-standard paper.'
         : 'Score 80%+ on any mock exam to unlock.',
+      description_bn: hasHighScore
+        ? 'বোর্ড স্ট্যান্ডার্ড মূল্যায়নে ৮০%+ (A+) স্কোর অর্জন।'
+        : 'আনলক করতে যেকোনো মক পরীক্ষায় ৮০%+ নম্বর পাও।',
       unlocked: hasHighScore,
     },
     {
       icon: '✦',
       value: `${earnedXp} XP`,
       title: 'XP Growth',
+      title_bn: 'এক্সপি বৃদ্ধি',
       description: `Earned ${earnedXp} total learning experience points.`,
+      description_bn: `মোট ${earnedXp} এক্সপি পয়েন্ট অর্জিত হয়েছে।`,
       unlocked: earnedXp >= 100,
     },
     {
       icon: '✓',
       value: momentum >= 60 ? 'Ready' : 'In Progress',
       title: 'Board Exam Readiness',
+      title_bn: 'বোর্ড পরীক্ষার পূর্ণ প্রস্তুতি',
       description:
         momentum >= 60
           ? `Achieved ${momentum}% readiness for ${studentProfile?.education_board || 'Dhaka'} Board.`
           : 'Reach 60%+ syllabus readiness to earn board ready badge.',
+      description_bn:
+        momentum >= 60
+          ? `${studentProfile?.education_board || 'Dhaka'} বোর্ডের জন্য ${momentum}% প্রস্তুতি সম্পন্ন।`
+          : 'বোর্ড রেডি ব্যাজ পেতে ৬০%+ প্রস্তুতি অর্জন করো।',
       unlocked: momentum >= 60,
     },
   ];
 
   return (
-    <>
-      <PageHeader
-        title="Achievements"
-        description="Milestones and progress on your path to board examination excellence."
-      >
-        <button type="button" className="primary-btn">
-          Share achievements <ArrowUpRight size={15} />
-        </button>
-      </PageHeader>
-
-      <section className="achievement-hero">
-        <div>
-          <Tag color="sun">LEVEL {currentLevel}</Tag>
-          <h2>
-            {currentLevel >= 5
-              ? 'Board Scholar'
-              : currentLevel >= 3
-              ? 'Rising Scholar'
-              : 'Apprentice Learner'}
-          </h2>
-          <p>
-            {earnedXp} XP earned &nbsp;&middot;&nbsp; {xpNeeded} XP to Level {currentLevel + 1}
-          </p>
-          <i>
-            <em style={{ width: `${progressPct}%` }} />
-          </i>
-        </div>
-        <span>🏆</span>
-      </section>
-
-      <section className="achievement-grid">
-        {badges.map((a) => (
-          <article
-            key={a.title}
-            style={{ opacity: a.unlocked ? 1 : 0.65 }}
-          >
-            <span>{a.icon}</span>
-            <Tag color={a.unlocked ? 'mint' : 'lilac'}>{a.value}</Tag>
-            <h3>{a.title}</h3>
-            <b>{a.unlocked ? 'Unlocked' : 'Locked'}</b>
-            <p>{a.description}</p>
-          </article>
-        ))}
-      </section>
-    </>
+    <AchievementsPageClient
+      currentLevel={currentLevel}
+      earnedXp={earnedXp}
+      xpNeeded={xpNeeded}
+      progressPct={progressPct}
+      badges={badges}
+    />
   );
 }

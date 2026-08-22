@@ -6,6 +6,7 @@ import '@/pages.css';
 import '@/layout-fixes.css';
 import 'katex/dist/katex.min.css';
 import { ThemeProvider } from '@/context/ThemeContext';
+import { LanguageProvider } from '@/context/LanguageContext';
 import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
@@ -23,11 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="bn" suppressHydrationWarning>
       <body>
         <ThemeProvider>
-          {children}
-          <Toaster />
+          <LanguageProvider>
+            {children}
+            <Toaster />
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>

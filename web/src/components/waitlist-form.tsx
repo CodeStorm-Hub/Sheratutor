@@ -3,12 +3,14 @@
 import { useActionState, useState } from 'react';
 import { joinWaitlist, type WaitlistState } from '@/app/actions/waitlist';
 import { ArrowRight, CheckCircle2, ShieldCheck } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
 
 const initialState: WaitlistState = { status: 'idle' };
 
 export function WaitlistForm() {
   const [state, formAction, pending] = useActionState(joinWaitlist, initialState);
   const [isMinor, setIsMinor] = useState(true);
+  const { language, t } = useLanguage();
 
   if (state.status === 'success') {
     return (
@@ -33,7 +35,7 @@ export function WaitlistForm() {
             margin: 0,
           }}
         >
-          {state.message || 'ওয়েটলিস্টে সফলভাবে যুক্ত হয়েছ! আমরা শিগগিরই যোগাযোগ করব।'}
+          {state.message || t('form.success_msg')}
         </p>
       </div>
     );
@@ -62,12 +64,12 @@ export function WaitlistForm() {
             marginBottom: 6,
           }}
         >
-          তোমার নাম <span style={{ color: 'var(--coral)' }}>*</span>
+          {t('form.name_label')} <span style={{ color: 'var(--coral)' }}>*</span>
         </label>
         <input
           id="fullName"
           name="fullName"
-          placeholder="পুরো নাম লেখো"
+          placeholder={t('form.name_placeholder')}
           required
           autoComplete="name"
           style={{
@@ -96,12 +98,12 @@ export function WaitlistForm() {
             marginBottom: 6,
           }}
         >
-          ফোন নম্বর <span style={{ color: 'var(--coral)' }}>*</span>
+          {t('form.phone_label')} <span style={{ color: 'var(--coral)' }}>*</span>
         </label>
         <input
           id="phone"
           name="phone"
-          placeholder="০১XXXXXXXXX"
+          placeholder={t('form.phone_placeholder')}
           inputMode="tel"
           required
           autoComplete="tel"
@@ -131,7 +133,7 @@ export function WaitlistForm() {
             marginBottom: 6,
           }}
         >
-          ইমেইল (ঐচ্ছিক)
+          {t('form.email_label')}
         </label>
         <input
           id="email"
@@ -166,7 +168,7 @@ export function WaitlistForm() {
               marginBottom: 6,
             }}
           >
-            পরীক্ষা <span style={{ color: 'var(--coral)' }}>*</span>
+            {t('form.exam_label')} <span style={{ color: 'var(--coral)' }}>*</span>
           </label>
           <select
             id="examType"
@@ -186,8 +188,8 @@ export function WaitlistForm() {
               boxSizing: 'border-box',
             }}
           >
-            <option value="HSC">HSC (এইচএসসি)</option>
-            <option value="SSC">SSC (এসএসসি)</option>
+            <option value="HSC">{language === 'bn' ? 'HSC (এইচএসসি)' : 'HSC (Higher Secondary)'}</option>
+            <option value="SSC">{language === 'bn' ? 'SSC (এসএসসি)' : 'SSC (Secondary)'}</option>
           </select>
         </div>
 
@@ -202,7 +204,7 @@ export function WaitlistForm() {
               marginBottom: 6,
             }}
           >
-            পরীক্ষার বছর <span style={{ color: 'var(--coral)' }}>*</span>
+            {t('form.exam_year_label')} <span style={{ color: 'var(--coral)' }}>*</span>
           </label>
           <input
             id="targetExamYear"
@@ -247,7 +249,7 @@ export function WaitlistForm() {
             userSelect: 'none',
           }}
         >
-          আমার বয়স ১৮ বছরের কম
+          {t('form.minor_checkbox')}
         </label>
       </div>
 
@@ -269,8 +271,7 @@ export function WaitlistForm() {
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
             <ShieldCheck size={16} color="#69718c" style={{ flexShrink: 0, marginTop: 2 }} />
             <p style={{ fontSize: 11, color: 'var(--muted)', margin: 0, lineHeight: 1.45 }}>
-              বাংলাদেশের ব্যক্তিগত তথ্য সুরক্ষা আইন, ২০২৬ অনুযায়ী নাবালকের যোগাযোগের তথ্য
-              সংগ্রহের আগে অভিভাবকের সম্মতি প্রয়োজন।
+              {t('form.pdpa_notice')}
             </p>
           </div>
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: 2 }}>
@@ -290,8 +291,7 @@ export function WaitlistForm() {
                 userSelect: 'none',
               }}
             >
-              আমি এই শিক্ষার্থীর অভিভাবক, অথবা তার পক্ষে নিশ্চিত করছি — এবং শুধুমাত্র
-              বিজ্ঞপ্তির জন্য এই যোগাযোগের তথ্য সংরক্ষণে সম্মতি দিচ্ছি।
+              {t('form.consent_checkbox')}
             </label>
           </div>
         </div>
@@ -318,7 +318,7 @@ export function WaitlistForm() {
           boxSizing: 'border-box',
         }}
       >
-        {pending ? 'যোগ হচ্ছে…' : 'ওয়েটলিস্টে যোগ দাও'} <ArrowRight size={16} />
+        {pending ? t('form.submitting') : t('form.submit_btn')} <ArrowRight size={16} />
       </button>
     </form>
   );
