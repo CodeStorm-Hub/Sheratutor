@@ -1,23 +1,39 @@
-import { createClient } from "@/lib/supabase/server";
-import { GeneratePaperForm } from "./generate-paper-form";
+import React from 'react';
+import { createClient } from '@/lib/supabase/server';
+import { GeneratePaperForm } from './generate-paper-form';
+import { PageHeader } from '@/components/PageHeader';
 
 export default async function GeneratePracticePaperPage() {
   const supabase = await createClient();
-  const { data: subjects } = await supabase.from("subjects").select("id, name_en").order("name_en");
+  const { data: subjects } = await supabase
+    .from('subjects')
+    .select('id, name_en')
+    .order('name_en');
   const { data: chapters } = await supabase
-    .from("chapters")
-    .select("id, subject_id, chapter_no, title_en")
-    .order("chapter_no");
+    .from('chapters')
+    .select('id, subject_id, chapter_no, title_en')
+    .order('chapter_no');
 
   return (
-    <div className="max-w-lg mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-6">
-      <div>
-        <h1 className="font-heading font-bold text-2xl">প্রশ্নপত্র তৈরি করো</h1>
-        <p className="text-sm text-muted-foreground">
-          একটি বিষয় ও অধ্যায় বেছে নাও — SheraTutor আসল NCTB পাঠ্যক্রম অনুযায়ী একটি মক প্রশ্নপত্র তৈরি করবে।
-        </p>
+    <div style={{ maxWidth: 720, margin: '0 auto', width: '100%' }}>
+      <PageHeader
+        title="Generate question paper"
+        description="Choose a subject and chapter — SheraTutor will generate a board-standard mock exam paper tailored to your syllabus."
+      />
+      <div
+        style={{
+          border: '1px solid var(--border)',
+          borderRadius: 16,
+          background: '#fff',
+          padding: 24,
+          boxShadow: '0 8px 30px rgba(28, 35, 65, 0.04)',
+        }}
+      >
+        <GeneratePaperForm
+          subjects={subjects ?? []}
+          chapters={chapters ?? []}
+        />
       </div>
-      <GeneratePaperForm subjects={subjects ?? []} chapters={chapters ?? []} />
     </div>
   );
 }

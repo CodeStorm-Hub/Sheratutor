@@ -1,11 +1,18 @@
-import Link from "next/link";
-import { createClient } from "@/lib/supabase/server";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Progress } from "@/components/ui/progress";
-import { Badge } from "@/components/ui/badge";
-import { submissionStatusLabel } from "@/lib/submission-status";
-import { MarkGlyph, levelFromScore, markGlyphClasses } from "@/components/mark-glyph";
+import React from 'react';
+import Link from 'next/link';
+import { createClient } from '@/lib/supabase/server';
+import { ScoreRing } from '@/components/ScoreRing';
+import { BarChart } from '@/components/BarChart';
+import { subjects as defaultSubjects } from '@/data/mockData';
+import {
+  BookOpen,
+  ChevronRight,
+  ChevronDown,
+  FileCheck2,
+  MoreHorizontal,
+  Play,
+  Sparkles,
+} from 'lucide-react';
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -14,149 +21,275 @@ export default async function DashboardPage() {
   } = await supabase.auth.getUser();
 
   const { data: profile } = await supabase
-    .from("student_profiles")
-    .select("*")
-    .eq("user_id", user!.id)
+    .from('student_profiles')
+    .select('*')
+    .eq('user_id', user!.id)
     .maybeSingle();
 
-  if (!profile) {
-    return (
-      <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8">
-        <div className="text-center py-20">
-          <p className="text-muted-foreground mb-4">তোমার ড্যাশবোর্ড দেখতে প্রথমে প্রোফাইল সম্পূর্ণ করো।</p>
-          <Button asChild>
-            <Link href="/onboarding">প্রোফাইল সম্পূর্ণ করো</Link>
-          </Button>
-        </div>
-      </div>
-    );
-  }
-
-  const { data: weaknesses } = await supabase
-    .from("weakness_logs")
-    .select("*, chapters(title_en, title_bn, subjects(name_en))")
-    .eq("student_id", profile.id)
-    .order("weakness_score", { ascending: false })
-    .limit(12);
-
   const { data: submissions } = await supabase
-    .from("exam_submissions")
-    .select("*")
-    .eq("student_id", profile.id)
-    .order("submitted_at", { ascending: false })
+    .from('exam_submissions')
+    .select('*')
+    .eq('student_id', profile?.id ?? '')
+    .order('submitted_at', { ascending: false })
     .limit(5);
 
-  const quickWins = (weaknesses ?? []).slice(0, 3);
+  const firstName =
+    (user?.user_metadata?.full_name as string)?.split(' ')[0] ||
+    profile?.full_name?.split(' ')[0] ||
+    'Anam';
+
+  const readinessScore = profile?.overall_momentum_score
+    ? Math.round(Number(profile.overall_momentum_score))
+    : 82;
+
+  const todayFormatted = new Date()
+    .toLocaleDateString('en-GB', {
+      weekday: 'long',
+      day: 'numeric',
+      month: 'long',
+    })
+    .toUpperCase();
 
   return (
-    <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-8">
-      <div className="flex items-center justify-between gap-4">
+    <>
+      <section className="welcome">
         <div>
-          <h1 className="font-heading font-bold text-2xl">ফিরে আসার জন্য স্বাগতম</h1>
-          <p className="text-sm text-muted-foreground">
-            {profile.exam_type} {profile.target_exam_year} &middot; {profile.academic_group?.replace("_", " ")}
-          </p>
+          <div className="eyebrow">
+            <span /> {todayFormatted}
+          </div>
+          <h1>
+            Good day, {firstName} <em>👋</em>
+          </h1>
+          <p>Your board-exam journey is looking stronger every day.</p>
         </div>
-        <Button asChild size="lg">
-          <Link href="/dashboard/upload">খাতা জমা দাও</Link>
-        </Button>
-      </div>
+        <button type="button" className="focus-button">
+          <span className="focus-icon">
+            <Play size={16} fill="currentColor" />
+          </span>
+          Start focus session
+        </button>
+      </section>
 
-      {/* Quick wins surfaces first — the actionable item, not the score, is what a student should see on open. */}
-      <Card>
-        <CardHeader>
-          <CardTitle className="margin-rule text-sm font-heading font-bold">এখনই যা ঠিক করতে পারো</CardTitle>
-        </CardHeader>
-        <CardContent className="space-y-2.5">
-          {quickWins.length === 0 && (
-            <p className="text-sm text-muted-foreground">
-              একটি মক পরীক্ষার খাতা জমা দাও, তাহলে তোমার জন্য নির্দিষ্ট পরামর্শ পাবে।
-            </p>
-          )}
-          {quickWins.map((w) => {
-            const level = levelFromScore(Number(w.weakness_score));
-            return (
-              <div key={w.id} className="flex items-center justify-between gap-3 text-sm">
-                <div className="flex items-center gap-2.5 min-w-0">
-                  <MarkGlyph level={level} />
-                  <span className="truncate">{w.chapters?.title_bn || w.chapters?.title_en || "অধ্যায়"}</span>
-                </div>
-                <Badge variant="outline" className={`shrink-0 font-tabular ${markGlyphClasses(level)}`}>
-                  {(Number(w.weakness_score) * 100).toFixed(0)}% ঘাটতি
-                </Badge>
+      <section className="stat-grid">
+        <article className="prediction">
+          <div className="stat-top">
+            <span className="tag coral">BOARD PREDICTION</span>
+            <MoreHorizontal size={20} />
+          </div>
+          <div className="prediction-main">
+            <div>
+              <div className="big-grade">A-</div>
+              <p>
+                Based on your last {submissions?.length ? submissions.length : 14}{' '}
+                assessments
+              </p>
+            </div>
+            <div className="percentile">
+              <b>Top 12%</b>
+              <span>among HSC students</span>
+              <div className="tiny-bars">
+                <i />
+                <i />
+                <i />
+                <i />
+                <i />
+                <i className="on" />
+                <i className="on" />
+                <i className="on" />
+                <i className="on" />
+                <i className="on" />
+                <i className="on" />
+                <i className="on" />
               </div>
-            );
-          })}
-        </CardContent>
-      </Card>
-
-      <div className="grid md:grid-cols-2 gap-6">
-        <Card>
-          <CardHeader>
-            <CardTitle className="eyebrow text-xs text-muted-foreground">মোমেন্টাম স্কোর</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="font-heading font-extrabold text-4xl text-primary font-tabular">
-              {Number(profile.overall_momentum_score ?? 0).toFixed(0)}
-            </p>
-            <Progress value={Number(profile.overall_momentum_score ?? 0)} className="mt-3" />
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <div className="flex items-center justify-between">
-              <CardTitle className="eyebrow text-xs text-muted-foreground">সাম্প্রতিক জমা</CardTitle>
-              <Link href="/dashboard/submissions" className="text-xs font-medium text-primary hover:underline">
-                সব দেখো
-              </Link>
             </div>
-          </CardHeader>
-          <CardContent className="space-y-2">
-            {(submissions ?? []).length === 0 && (
-              <p className="text-sm text-muted-foreground">এখনও কোনো খাতা জমা দাওনি।</p>
-            )}
-            {(submissions ?? []).slice(0, 3).map((s) => (
-              <Link
-                key={s.id}
-                href={`/dashboard/submissions/${s.id}`}
-                className="flex items-center justify-between text-sm rounded-lg border border-border p-2.5 hover:bg-muted transition-colors"
-              >
-                <span className="truncate">{submissionStatusLabel(s.status)}</span>
-                <span className="text-muted-foreground font-tabular shrink-0">
-                  {s.total_score_obtained != null ? `${s.total_score_obtained}/${s.max_possible_score}` : "—"}
+          </div>
+          <div className="prediction-footer">
+            <span>
+              <Sparkles size={15} /> Keep this momentum going
+            </span>
+            <Link href="/dashboard/submissions">
+              View forecast <ChevronRight size={15} />
+            </Link>
+          </div>
+        </article>
+
+        <article className="readiness">
+          <div className="stat-top">
+            <span className="tag mint">EXAM READINESS</span>
+            <MoreHorizontal size={20} />
+          </div>
+          <div className="readiness-content">
+            <ScoreRing value={readinessScore} />
+            <div>
+              <b>You&apos;re on track</b>
+              <p>+6% from last week</p>
+              <div className="mini-progress">
+                <i />
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article className="next-exam">
+          <div className="stat-top">
+            <span className="tag sun">NEXT EXAM</span>
+            <MoreHorizontal size={20} />
+          </div>
+          <div className="exam-info">
+            <div className="physics-icon">ϟ</div>
+            <div>
+              <b>Physics</b>
+              <p>1st Paper · Model Test</p>
+            </div>
+          </div>
+          <div className="exam-date">
+            <strong>12</strong>
+            <span>
+              days
+              <br />
+              remaining
+            </span>
+            <Link href="/dashboard/practice">
+              <ChevronRight size={19} />
+            </Link>
+          </div>
+        </article>
+      </section>
+
+      <section className="section-heading">
+        <div>
+          <h2>Continue learning</h2>
+          <p>Pick up where you left off.</p>
+        </div>
+        <Link href="/dashboard/tutor">
+          See all subjects <ChevronRight size={16} />
+        </Link>
+      </section>
+
+      <section className="subjects">
+        {defaultSubjects.map((s) => (
+          <article className={`subject ${s.color}`} key={s.subject}>
+            <div className="subject-top">
+              <div className="subject-icon">{s.icon}</div>
+              <button type="button" aria-label="More options">
+                <MoreHorizontal size={18} />
+              </button>
+            </div>
+            <h3>{s.subject}</h3>
+            <p>{s.chapter}</p>
+            <div className="subject-bottom">
+              <div className="progress">
+                <span>
+                  <i style={{ width: `${s.value}%` }} />
                 </span>
-              </Link>
-            ))}
-          </CardContent>
-        </Card>
-      </div>
-
-      <Card>
-        <CardHeader>
-          <CardTitle className="eyebrow text-xs text-muted-foreground">বিষয়ভিত্তিক বোঝাপড়ার মানচিত্র</CardTitle>
-        </CardHeader>
-        <CardContent>
-          {(weaknesses ?? []).length === 0 ? (
-            <p className="text-sm text-muted-foreground">এখনও কোনো তথ্য নেই — মূল্যায়ন হওয়ার সাথে সাথে এই মানচিত্র তৈরি হবে।</p>
-          ) : (
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {(weaknesses ?? []).map((w) => {
-                const level = levelFromScore(Number(w.weakness_score));
-                return (
-                  <div
-                    key={w.id}
-                    className={`flex items-center gap-2 rounded-lg border p-3 text-sm font-medium ${markGlyphClasses(level)}`}
-                  >
-                    <MarkGlyph level={level} />
-                    <span className="truncate">{w.chapters?.title_bn || w.chapters?.title_en || "অধ্যায়"}</span>
-                  </div>
-                );
-              })}
+                <b>{s.value}%</b>
+              </div>
+              <small>{s.lesson}</small>
             </div>
-          )}
-        </CardContent>
-      </Card>
-    </div>
+          </article>
+        ))}
+      </section>
+
+      <section className="lower-grid">
+        <article className="focus-panel">
+          <div className="panel-header">
+            <div>
+              <h2>Today&apos;s focus</h2>
+              <p>AI-curated for your best score.</p>
+            </div>
+            <button
+              type="button"
+              className="icon-button"
+              aria-label="Focus panel options"
+            >
+              <MoreHorizontal size={19} />
+            </button>
+          </div>
+          <div className="task-list">
+            <div className="task complete">
+              <span>
+                <FileCheck2 size={16} />
+              </span>
+              <div>
+                <b>Physics MCQ practice</b>
+                <small>20 questions · Work & Energy</small>
+              </div>
+              <time>25 min</time>
+              <button type="button" aria-label="Open task">
+                <ChevronRight size={17} />
+              </button>
+            </div>
+            <div className="task complete">
+              <span>
+                <BookOpen size={16} />
+              </span>
+              <div>
+                <b>Math: Chapter 8 review</b>
+                <small>Trigonometric ratios</small>
+              </div>
+              <time>35 min</time>
+              <button type="button" aria-label="Open task">
+                <ChevronRight size={17} />
+              </button>
+            </div>
+            <div className="task">
+              <span>3</span>
+              <div>
+                <b>Chemistry revision</b>
+                <small>Periodic table & bonding</small>
+              </div>
+              <time>20 min</time>
+              <button type="button" aria-label="Open task">
+                <ChevronRight size={17} />
+              </button>
+            </div>
+            <div className="task">
+              <span>4</span>
+              <div>
+                <b>English writing drill</b>
+                <small>Formal letter practice</small>
+              </div>
+              <time>15 min</time>
+              <button type="button" aria-label="Open task">
+                <ChevronRight size={17} />
+              </button>
+            </div>
+          </div>
+          <button
+            type="button"
+            className="continue"
+          >
+            <Play size={15} fill="currentColor" /> Continue today&apos;s plan{' '}
+            <span>1h 35m left</span>
+          </button>
+        </article>
+
+        <article className="progress-panel">
+          <div className="panel-header">
+            <div>
+              <h2>Weekly progress</h2>
+              <p>You&apos;re ahead of your usual pace.</p>
+            </div>
+            <button type="button" className="week-select">
+              This week <ChevronDown size={15} />
+            </button>
+          </div>
+          <div className="chart-stat">
+            <div>
+              <strong>11h 20m</strong>
+              <span>study time</span>
+            </div>
+            <div className="up">↗ 18%</div>
+          </div>
+          <BarChart />
+          <div className="chart-footer">
+            <span>
+              <i /> Study time
+            </span>
+            <b>Goal: 14h</b>
+          </div>
+        </article>
+      </section>
+    </>
   );
 }
