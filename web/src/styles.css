@@ -1324,6 +1324,7 @@ h3 {
 
 .landing-container {
   min-height: 100vh;
+  min-height: 100dvh;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -1450,7 +1451,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 18px;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   box-sizing: border-box;
 }
 
@@ -1494,16 +1495,21 @@ h3 {
 }
 
 @media (max-width: 900px) {
+  .landing-container {
+    min-height: auto;
+    height: auto;
+  }
   .landing-header {
     padding: 14px 16px;
   }
   .landing-main {
+    flex: initial;
     padding: 0 16px;
   }
   .landing-hero {
     grid-template-columns: 1fr;
-    gap: 32px;
-    padding: 28px 0 36px;
+    gap: 28px;
+    padding: 24px 0 28px;
   }
   .landing-hero-left {
     align-items: stretch;
@@ -1516,10 +1522,14 @@ h3 {
     font-size: 28px;
     line-height: 1.25;
   }
+  .landing-paper-preview {
+    max-height: 440px;
+    contain: layout;
+  }
   .landing-cards-grid {
     grid-template-columns: 1fr;
     gap: 14px;
-    padding-bottom: 36px;
+    padding-bottom: 20px;
   }
   .landing-footer {
     padding: 20px 16px;
@@ -1548,8 +1558,8 @@ h3 {
     padding: 0 14px;
   }
   .landing-hero {
-    padding: 20px 0 28px;
-    gap: 22px;
+    padding: 18px 0 22px;
+    gap: 20px;
   }
   .landing-hero-title {
     font-size: 24px;
@@ -1562,6 +1572,10 @@ h3 {
   .waitlist-exam-row {
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+  .landing-cards-grid {
+    gap: 12px;
+    padding-bottom: 16px;
   }
   .landing-feature-card,
   .landing-promise-card {
