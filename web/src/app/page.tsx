@@ -1,100 +1,223 @@
-import { Logo } from "@/components/logo";
-import { WaitlistForm } from "@/components/waitlist-form";
-import { KhataPreview } from "@/components/khata-preview";
-import { Badge } from "@/components/ui/badge";
-import { Camera, ScanText, ClipboardCheck } from "lucide-react";
+import Link from 'next/link';
+import { Logo } from '@/components/logo';
+import { WaitlistForm } from '@/components/waitlist-form';
+import { KhataPreview } from '@/components/khata-preview';
+import { Tag } from '@/components/Tag';
+import { Camera, ScanText, ClipboardCheck, ArrowRight } from 'lucide-react';
 
 const HOW_IT_WORKS = [
-  { icon: Camera, title: "ছবি তোলো", body: "তোমার হাতে লেখা উত্তরপত্র মোবাইলে ছবি তুলে জমা দাও।" },
-  { icon: ScanText, title: "AI পরীক্ষক পড়ে", body: "বাংলা ও ইংরেজি হাতের লেখা পড়ে NCTB রুব্রিক অনুযায়ী মূল্যায়ন করে।" },
-  { icon: ClipboardCheck, title: "ধাপে ধাপে ফল", body: "প্রতিটি ধাপে কোথায় নম্বর কাটা গেল, সঙ্গে সঙ্গে দেখো।" },
+  { icon: Camera, title: 'ছবি তোলো', body: 'তোমার হাতে লেখা উত্তরপত্র মোবাইলে ছবি তুলে জমা দাও।' },
+  { icon: ScanText, title: 'AI পরীক্ষক পড়ে', body: 'বাংলা ও ইংরেজি হাতের লেখা পড়ে NCTB রুব্রিক অনুযায়ী মূল্যায়ন করে।' },
+  { icon: ClipboardCheck, title: 'ধাপে ধাপে ফল', body: 'প্রতিটি ধাপে কোথায় নম্বর কাটা গেল, সঙ্গে সঙ্গে দেখো।' },
 ];
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col min-h-full bg-background">
-      <header className="flex items-center justify-between px-6 md:px-12 py-6">
-        <Logo />
-        <a
-          href="https://sheratutor.ai"
-          className="eyebrow text-xs text-muted-foreground hover:text-foreground transition-colors"
-        >
-          sheratutor.ai
-        </a>
+    <div className="landing-container" style={{ minHeight: '100vh', background: '#fff', display: 'flex', flexDirection: 'column' }}>
+      <header
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          padding: '18px clamp(16px, 4vw, 40px)',
+          borderBottom: '1px solid var(--border)',
+          gap: 12,
+        }}
+      >
+        <Logo tagline />
+        <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+          <Link
+            href="/login"
+            style={{
+              fontSize: 13,
+              fontWeight: 600,
+              color: 'var(--navy)',
+              textDecoration: 'none',
+              padding: '8px 12px',
+            }}
+          >
+            Sign in
+          </Link>
+          <Link
+            href="/dashboard"
+            className="primary-btn"
+            style={{ textDecoration: 'none', padding: '9px 14px' }}
+          >
+            Open Workspace <ArrowRight size={15} />
+          </Link>
+        </div>
       </header>
 
-      <main className="flex-1 flex flex-col items-center px-6 md:px-12">
-        <section className="w-full max-w-5xl grid lg:grid-cols-[1.1fr_0.9fr] items-center gap-10 pt-8 pb-16">
-          <div className="flex flex-col items-start text-left gap-6">
-            <Badge className="eyebrow bg-ochre-soft text-ochre-deep dark:text-ochre border-ochre/40">
-              বাংলাদেশে আসছে
-            </Badge>
+      <main
+        style={{
+          flex: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          padding: '0 clamp(16px, 4vw, 40px)',
+          maxWidth: 1240,
+          margin: '0 auto',
+          width: '100%',
+        }}
+      >
+        {/* Hero Section */}
+        <section
+          className="landing-hero"
+          style={{
+            width: '100%',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 420px), 1fr))',
+            alignItems: 'center',
+            gap: 'clamp(28px, 5vw, 50px)',
+            padding: 'clamp(32px, 6vw, 64px) 0',
+          }}
+        >
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 18 }}>
+            <Tag color="sun">বাংলাদেশে আসছে</Tag>
 
-            <h1 className="font-serif font-normal text-4xl md:text-5xl leading-[1.15] text-balance">
-              বোর্ড পরীক্ষকের মতোই মূল্যায়ন।{" "}
-              <span className="text-primary">প্রতিটি শিক্ষার্থীর জন্য চিরকাল বিনামূল্যে।</span>
+            <h1
+              style={{
+                font: "800 clamp(28px, 5.5vw, 46px)/1.15 'Baloo 2', sans-serif",
+                margin: 0,
+                color: 'var(--navy)',
+                letterSpacing: '-0.5px',
+              }}
+            >
+              বোর্ড পরীক্ষকের মতোই মূল্যায়ন।{' '}
+              <span style={{ color: 'var(--coral)' }}>
+                প্রতিটি শিক্ষার্থীর জন্য চিরকাল বিনামূল্যে।
+              </span>
             </h1>
 
-            <p className="text-lg text-muted-foreground max-w-xl text-balance">
+            <p style={{ fontSize: 'clamp(14px, 2vw, 16px)', color: 'var(--muted)', lineHeight: 1.6, margin: 0, maxWidth: 520 }}>
               তোমার হাতে লেখা উত্তরপত্রের ছবি তোলো। SheraTutor তোমার বাংলা ও ইংরেজি
               পড়ে, আসল NCTB রুব্রিক অনুযায়ী মূল্যায়ন করে, আর ঠিক কোন ধাপে নম্বর
               কাটা গেছে তা সঙ্গে সঙ্গে দেখায়।
             </p>
 
-            <div className="w-full max-w-md">
+            <div style={{ width: '100%', maxWidth: 460 }}>
               <WaitlistForm />
             </div>
           </div>
 
-          <KhataPreview className="w-full max-w-xs mx-auto lg:max-w-none drop-shadow-sm" />
+          <div style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+            <KhataPreview className="w-full max-w-sm drop-shadow-sm" />
+          </div>
         </section>
 
-        <section className="w-full max-w-5xl grid sm:grid-cols-3 gap-6 pb-16">
+        {/* How it works */}
+        <section
+          style={{
+            width: '100%',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 260px), 1fr))',
+            gap: 20,
+            paddingBottom: 'clamp(36px, 5vw, 60px)',
+          }}
+        >
           {HOW_IT_WORKS.map((step, i) => (
-            <div key={step.title} className="flex flex-col gap-3">
-              <div className="flex items-center gap-3">
-                <span className="eyebrow text-xs text-red font-tabular">{`0${i + 1}`}</span>
-                <step.icon className="w-4 h-4 text-primary" />
+            <div
+              key={step.title}
+              style={{
+                border: '1px solid var(--border)',
+                borderRadius: 16,
+                padding: 22,
+                background: 'var(--paper)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 10,
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <span style={{ fontFamily: "'Space Mono', monospace", fontWeight: 700, color: 'var(--coral)', fontSize: 13 }}>
+                  {`0${i + 1}`}
+                </span>
+                <step.icon size={18} color="var(--mint)" />
               </div>
-              <h3 className="font-heading font-bold text-lg">{step.title}</h3>
-              <p className="text-sm text-muted-foreground">{step.body}</p>
+              <h3 style={{ font: "700 18px 'Baloo 2', sans-serif", margin: 0 }}>
+                {step.title}
+              </h3>
+              <p style={{ fontSize: 13, color: 'var(--muted)', margin: 0, lineHeight: 1.55 }}>
+                {step.body}
+              </p>
             </div>
           ))}
         </section>
 
-        <section className="w-full max-w-5xl grid md:grid-cols-3 gap-6 pb-20">
+        {/* Problem / Solution / Promise */}
+        <section
+          style={{
+            width: '100%',
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: 20,
+            paddingBottom: 'clamp(40px, 6vw, 70px)',
+          }}
+        >
           {[
             {
-              eyebrow: "সমস্যা",
-              title: "টাকা থাকলেই মেলে সূক্ষ্ম ফিডব্যাক",
-              body: "প্রাইভেট টিউটর বোর্ড-মানের বিস্তারিত ফিডব্যাক দেয়। বাকিরা পায় শুধু পাস/ফেল নম্বর।",
+              eyebrow: 'সমস্যা',
+              title: 'টাকা থাকলেই মেলে সূক্ষ্ম ফিডব্যাক',
+              body: 'প্রাইভেট টিউটর বোর্ড-মানের বিস্তারিত ফিডব্যাক দেয়। বাকিরা পায় শুধু পাস/ফেল নম্বর।',
             },
             {
-              eyebrow: "সমাধান",
-              title: "পকেটে একজন AI পরীক্ষক",
-              body: "আসল NCTB পাঠ্যক্রম ও বোর্ডের অফিসিয়াল রুব্রিক দিয়ে মূল্যায়ন — সাধারণ কোনো AI অনুমান নয়।",
+              eyebrow: 'সমাধান',
+              title: 'পকেটে একজন AI পরীক্ষক',
+              body: 'আসল NCTB পাঠ্যক্রম ও বোর্ডের অফিসিয়াল রুব্রিক দিয়ে মূল্যায়ন — সাধারণ কোনো AI অনুমান নয়।',
             },
             {
-              eyebrow: "প্রতিশ্রুতি",
-              title: "বিনামূল্যে মানে সত্যিই বিনামূল্যে",
-              body: "কোনো প্রিমিয়াম প্ল্যান নেই, বিজ্ঞাপন নেই, '৩টি ফ্রি টেস্ট' সীমা নেই। শিক্ষার্থী নয়, প্রতিষ্ঠান খরচ বহন করে।",
+              eyebrow: 'প্রতিশ্রুতি',
+              title: 'বিনামূল্যে মানে সত্যিই বিনামূল্যে',
+              body: 'কোনো প্রিমিয়াম প্ল্যান নেই, বিজ্ঞাপন নেই, ৩টি ফ্রি টেস্ট সীমা নেই। শিক্ষার্থী নয়, প্রতিষ্ঠান খরচ বহন করে।',
             },
           ].map((card) => (
             <div
               key={card.title}
-              className="margin-rule rounded-r-2xl border border-l-0 border-border bg-card py-5 pr-6 text-left flex flex-col gap-2"
+              style={{
+                borderLeft: '4px solid var(--coral)',
+                borderTop: '1px solid var(--border)',
+                borderRight: '1px solid var(--border)',
+                borderBottom: '1px solid var(--border)',
+                borderRadius: '0 16px 16px 0',
+                padding: '24px 22px',
+                background: '#fff',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: 8,
+              }}
             >
-              <span className="eyebrow text-xs text-red">{card.eyebrow}</span>
-              <h3 className="font-heading font-bold text-xl">{card.title}</h3>
-              <p className="text-sm text-muted-foreground">{card.body}</p>
+              <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 10, color: 'var(--coral)', fontWeight: 700 }}>
+                {card.eyebrow}
+              </span>
+              <h3 style={{ font: "700 18px 'Baloo 2', sans-serif", margin: 0 }}>
+                {card.title}
+              </h3>
+              <p style={{ fontSize: 13, color: 'var(--muted)', margin: 0, lineHeight: 1.55 }}>
+                {card.body}
+              </p>
             </div>
           ))}
         </section>
       </main>
 
-      <footer className="px-6 md:px-12 py-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
+      {/* Footer */}
+      <footer
+        style={{
+          borderTop: '1px solid var(--border)',
+          padding: '24px clamp(16px, 4vw, 40px)',
+          display: 'flex',
+          flexWrap: 'wrap',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          gap: 12,
+          fontSize: 12,
+          color: 'var(--muted)',
+        }}
+      >
         <Logo tagline />
-        <p>&copy; {new Date().getFullYear()} SheraTutor &middot; বাংলাদেশের SSC ও HSC শিক্ষার্থীদের জন্য তৈরি।</p>
+        <p style={{ margin: 0 }}>
+          &copy; {new Date().getFullYear()} SheraTutor &middot; বাংলাদেশের SSC ও HSC শিক্ষার্থীদের জন্য তৈরি।
+        </p>
       </footer>
     </div>
   );

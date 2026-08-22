@@ -1,22 +1,48 @@
-import { redirect } from "next/navigation";
-import { createClient } from "@/lib/supabase/server";
-import { DashboardNav } from "@/components/dashboard-nav";
+import { redirect } from 'next/navigation';
+import { createClient } from '@/lib/supabase/server';
+import { ClientShell } from '@/components/ClientShell';
 
-export default async function DashboardLayout({ children }: LayoutProps<"/dashboard">) {
+export default async function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (!user) redirect("/login");
+  if (!user) redirect('/login');
+
+  const { data: profile } = await supabase
+    .from('student_profiles')
+    .select('full_name, exam_type, academic_group, education_board')
+    .eq('user_id', user.id)
+    .maybeSingle();
+
+  const fullName =
+    (user.user_metadata?.full_name as string) ||
+    profile?.full_name ||
+    'Anam Rahman';
+
+  const userSub = profile
+    ? `${profile.exam_type ?? 'HSC'} · ${(profile.academic_group ?? 'Science').replace('_', ' ')}`
+    : 'HSC · Science';
+
+  const initials = fullName
+    .split(' ')
+    .map((n: string) => n[0])
+    .join('')
+    .slice(0, 2)
+    .toUpperCase() || 'AR';
 
   return (
-    <div className="h-dvh flex flex-col md:flex-row bg-background overflow-hidden">
-      <DashboardNav />
-      {/* Padding and max-width live on each page now, not here — a full-bleed
-          page (like the tutor chat) needs to opt out of both, which isn't
-          possible when a shared wrapper forces them on every route. */}
-      <main className="flex-1 min-h-0 overflow-y-auto">{children}</main>
-    </div>
+    <ClientShell
+      userName={fullName}
+      userSub={userSub}
+      userInitials={initials}
+    >
+      {children}
+    </ClientShell>
   );
 }

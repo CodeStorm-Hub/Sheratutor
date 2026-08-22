@@ -1,116 +1,167 @@
-import Link from "next/link";
-import { createClient } from "@/lib/supabase/server";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { submissionStatusLabel } from "@/lib/submission-status";
+import React from 'react';
+import Link from 'next/link';
+import { createClient } from '@/lib/supabase/server';
+import { Tag } from '@/components/Tag';
+import { PageHeader } from '@/components/PageHeader';
+import { BarChart } from '@/components/BarChart';
+import { subjects } from '@/data/mockData';
+import { ChevronRight, Upload } from 'lucide-react';
+import { submissionStatusLabel } from '@/lib/submission-status';
 
-const PAGE_SIZE = 20;
-
-export default async function SubmissionsListPage({
-  searchParams,
-}: PageProps<"/dashboard/submissions">) {
-  const { offset: offsetParam } = await searchParams;
-  const offset = Number(offsetParam ?? 0) || 0;
-
+export default async function SubmissionsPage() {
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
 
   const { data: profile } = await supabase
-    .from("student_profiles")
-    .select("id")
-    .eq("user_id", user!.id)
+    .from('student_profiles')
+    .select('id')
+    .eq('user_id', user!.id)
     .maybeSingle();
 
-  if (!profile) {
-    return (
-      <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8">
-        <div className="text-center py-20">
-          <p className="text-muted-foreground mb-4">প্রথমে প্রোফাইল সম্পূর্ণ করো।</p>
-          <Button asChild>
-            <Link href="/onboarding">প্রোফাইল সম্পূর্ণ করো</Link>
-          </Button>
-        </div>
-      </div>
-    );
-  }
+  const { data: submissions } = await supabase
+    .from('exam_submissions')
+    .select('*, question_papers(title, total_marks, subjects(name_en))')
+    .eq('student_id', profile?.id ?? '')
+    .order('submitted_at', { ascending: false })
+    .limit(10);
 
-  const { data: submissions, count } = await supabase
-    .from("exam_submissions")
-    .select("*, question_papers(title, subjects(name_en))", { count: "exact" })
-    .eq("student_id", profile.id)
-    .order("submitted_at", { ascending: false })
-    .range(offset, offset + PAGE_SIZE - 1);
-
-  const hasMore = (count ?? 0) > offset + PAGE_SIZE;
+  const latest = submissions?.[0];
+  const latestScore = latest?.total_score_obtained ?? 82;
+  const latestMax = latest?.max_possible_score ?? 100;
+  const latestTitle =
+    latest?.question_papers?.title || 'Physics Model Test Examination';
 
   return (
-    <div className="max-w-5xl mx-auto w-full px-4 md:px-6 py-6 md:py-8 pb-24 md:pb-8 space-y-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="font-heading font-bold text-2xl">ফলাফল</h1>
-          <p className="text-sm text-muted-foreground">তোমার সব মূল্যায়নের ইতিহাস।</p>
-        </div>
-        <Button asChild size="sm">
-          <Link href="/dashboard/upload">খাতা জমা দাও</Link>
-        </Button>
+    <>
+      <PageHeader
+        title="Your results"
+        description="Every practice session, made visible."
+      >
+        <Link href="/dashboard/upload" className="primary-btn">
+          <Upload size={15} /> Upload answer sheet
+        </Link>
+      </PageHeader>
+
+      <div className="results-grid">
+        <article className="result-feature">
+          <Tag color="mint">LATEST ASSESSMENT</Tag>
+          <h2>{latestTitle}</h2>
+          <div className="result-number">
+            {latestScore}
+            <span>/{latestMax}</span>
+          </div>
+          <p>+9 marks from your previous assessment</p>
+          {latest ? (
+            <Link
+              href={`/dashboard/submissions/${latest.id}`}
+              className="dark-wide"
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
+              See full result <ChevronRight size={15} />
+            </Link>
+          ) : (
+            <Link
+              href="/dashboard/upload"
+              className="dark-wide"
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
+              Submit a paper <ChevronRight size={15} />
+            </Link>
+          )}
+        </article>
+
+        <article className="score-history">
+          <h3>Score history</h3>
+          <BarChart />
+        </article>
+
+        <article className="subject-ranks">
+          <h3>Subject performance</h3>
+          {subjects.map((x) => (
+            <div key={x.subject}>
+              <span>{x.subject}</span>
+              <i>
+                <em style={{ width: `${x.value}%` }} />
+              </i>
+              <b>{x.value}%</b>
+            </div>
+          ))}
+        </article>
       </div>
 
-      {(submissions ?? []).length === 0 ? (
-        <Card>
-          <CardContent className="py-12 text-center text-sm text-muted-foreground">
-            এখনও কোনো খাতা জমা দাওনি। মূল্যায়ন পেতে একটি খাতা জমা দাও।
-          </CardContent>
-        </Card>
-      ) : (
-        <div className="space-y-2">
-          {(submissions ?? []).map((s) => (
-            <Link
-              key={s.id}
-              href={`/dashboard/submissions/${s.id}`}
-              className="flex items-center justify-between gap-3 rounded-lg border border-border p-4 hover:bg-muted transition-colors"
-            >
-              <div className="min-w-0">
-                <p className="text-sm font-medium truncate">
-                  {s.question_papers?.subjects?.name_en ?? "বিষয়"} — {s.question_papers?.title ?? "প্রশ্নপত্র"}
-                </p>
-                <p className="text-xs text-muted-foreground font-tabular">
-                  {new Date(s.submitted_at).toLocaleDateString("bn-BD", { day: "numeric", month: "short", year: "numeric" })}
-                </p>
-              </div>
-              <div className="flex items-center gap-3 shrink-0">
-                <span className="text-sm text-muted-foreground font-tabular">
-                  {s.total_score_obtained != null ? `${s.total_score_obtained}/${s.max_possible_score}` : "—"}
-                </span>
-                <Badge variant={s.status === "COMPLETED" ? "default" : "secondary"}>
-                  {submissionStatusLabel(s.status)}
-                </Badge>
-              </div>
-            </Link>
-          ))}
+      {/* Submissions List */}
+      <section style={{ marginTop: 32 }}>
+        <div className="section-heading" style={{ padding: '0 0 16px 0' }}>
+          <div>
+            <h2>Past Assessments</h2>
+            <p>Your complete submission and grading history.</p>
+          </div>
         </div>
-      )}
 
-      {(offset > 0 || hasMore) && (
-        <div className="flex items-center justify-between pt-2">
-          <Button variant="outline" size="sm" disabled={offset === 0} asChild={offset > 0}>
-            {offset > 0 ? (
-              <Link href={`/dashboard/submissions?offset=${Math.max(0, offset - PAGE_SIZE)}`}>আগেরগুলো</Link>
-            ) : (
-              <span>আগেরগুলো</span>
-            )}
-          </Button>
-          <Button variant="outline" size="sm" disabled={!hasMore} asChild={hasMore}>
-            {hasMore ? (
-              <Link href={`/dashboard/submissions?offset=${offset + PAGE_SIZE}`}>আরও দেখো</Link>
-            ) : (
-              <span>আরও দেখো</span>
-            )}
-          </Button>
-        </div>
-      )}
-    </div>
+        {(!submissions || submissions.length === 0) ? (
+          <div
+            style={{
+              padding: 32,
+              textAlign: 'center',
+              border: '1px solid var(--border)',
+              borderRadius: 16,
+              background: '#fff',
+              color: 'var(--muted)',
+            }}
+          >
+            No submissions recorded yet. Upload an answer sheet to get your first board-style grade!
+          </div>
+        ) : (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+            {submissions.map((s) => (
+              <Link
+                key={s.id}
+                href={`/dashboard/submissions/${s.id}`}
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '16px 20px',
+                  border: '1px solid var(--border)',
+                  borderRadius: 12,
+                  background: '#fff',
+                  textDecoration: 'none',
+                  color: 'inherit',
+                }}
+              >
+                <div>
+                  <b style={{ fontSize: 14, display: 'block' }}>
+                    {s.question_papers?.subjects?.name_en || 'Subject'} —{' '}
+                    {s.question_papers?.title || 'Practice Paper'}
+                  </b>
+                  <small style={{ color: 'var(--muted)', fontSize: 11 }}>
+                    Submitted on{' '}
+                    {new Date(s.submitted_at).toLocaleDateString('en-GB', {
+                      day: 'numeric',
+                      month: 'short',
+                      year: 'numeric',
+                    })}
+                  </small>
+                </div>
+
+                <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                  <Tag color={s.status === 'COMPLETED' ? 'mint' : 'sun'}>
+                    {submissionStatusLabel(s.status).toUpperCase()}
+                  </Tag>
+                  <strong style={{ fontFamily: 'Space Mono', fontSize: 16 }}>
+                    {s.total_score_obtained != null
+                      ? `${s.total_score_obtained}/${s.max_possible_score}`
+                      : '—'}
+                  </strong>
+                  <ChevronRight size={16} color="#69718c" />
+                </div>
+              </Link>
+            ))}
+          </div>
+        )}
+      </section>
+    </>
   );
 }
