@@ -19,6 +19,8 @@ export function WaitlistForm() {
           border: '1px solid #23d9a5',
           padding: '24px 20px',
           textAlign: 'center',
+          width: '100%',
+          boxSizing: 'border-box',
         }}
       >
         <CheckCircle2 size={32} color="#0da076" style={{ margin: '0 auto 10px' }} />
@@ -43,11 +45,13 @@ export function WaitlistForm() {
       style={{
         display: 'flex',
         flexDirection: 'column',
-        gap: 14,
+        gap: 13,
         width: '100%',
+        maxWidth: '100%',
+        boxSizing: 'border-box',
       }}
     >
-      <div>
+      <div style={{ width: '100%' }}>
         <label
           htmlFor="fullName"
           style={{
@@ -68,6 +72,7 @@ export function WaitlistForm() {
           autoComplete="name"
           style={{
             width: '100%',
+            maxWidth: '100%',
             border: '1px solid var(--border)',
             borderRadius: 9,
             padding: '10px 14px',
@@ -80,7 +85,7 @@ export function WaitlistForm() {
         />
       </div>
 
-      <div>
+      <div style={{ width: '100%' }}>
         <label
           htmlFor="phone"
           style={{
@@ -102,6 +107,7 @@ export function WaitlistForm() {
           autoComplete="tel"
           style={{
             width: '100%',
+            maxWidth: '100%',
             border: '1px solid var(--border)',
             borderRadius: 9,
             padding: '10px 14px',
@@ -114,7 +120,7 @@ export function WaitlistForm() {
         />
       </div>
 
-      <div>
+      <div style={{ width: '100%' }}>
         <label
           htmlFor="email"
           style={{
@@ -135,6 +141,7 @@ export function WaitlistForm() {
           placeholder="you@example.com"
           style={{
             width: '100%',
+            maxWidth: '100%',
             border: '1px solid var(--border)',
             borderRadius: 9,
             padding: '10px 14px',
@@ -147,7 +154,7 @@ export function WaitlistForm() {
         />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
+      <div className="waitlist-exam-row">
         <div>
           <label
             htmlFor="examType"
@@ -168,6 +175,7 @@ export function WaitlistForm() {
             required
             style={{
               width: '100%',
+              maxWidth: '100%',
               border: '1px solid var(--border)',
               borderRadius: 9,
               padding: '10px 12px',
@@ -207,6 +215,7 @@ export function WaitlistForm() {
             required
             style={{
               width: '100%',
+              maxWidth: '100%',
               border: '1px solid var(--border)',
               borderRadius: 9,
               padding: '10px 12px',
@@ -220,14 +229,14 @@ export function WaitlistForm() {
         </div>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 4 }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 2 }}>
         <input
           id="isMinor"
           name="isMinor"
           type="checkbox"
           checked={isMinor}
           onChange={(e) => setIsMinor(e.target.checked)}
-          style={{ width: 16, height: 16, cursor: 'pointer', accentColor: 'var(--coral)' }}
+          style={{ width: 16, height: 16, cursor: 'pointer', accentColor: 'var(--coral)', flexShrink: 0 }}
         />
         <label
           htmlFor="isMinor"
@@ -248,14 +257,17 @@ export function WaitlistForm() {
             borderRadius: 12,
             background: '#f7f8fc',
             border: '1px solid var(--border)',
-            padding: '14px',
+            padding: '12px 14px',
             display: 'flex',
             flexDirection: 'column',
             gap: 10,
+            width: '100%',
+            maxWidth: '100%',
+            boxSizing: 'border-box',
           }}
         >
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
-            <ShieldCheck size={18} color="#69718c" style={{ flexShrink: 0, marginTop: 2 }} />
+            <ShieldCheck size={16} color="#69718c" style={{ flexShrink: 0, marginTop: 2 }} />
             <p style={{ fontSize: 11, color: 'var(--muted)', margin: 0, lineHeight: 1.45 }}>
               বাংলাদেশের ব্যক্তিগত তথ্য সুরক্ষা আইন, ২০২৬ অনুযায়ী নাবালকের যোগাযোগের তথ্য
               সংগ্রহের আগে অভিভাবকের সম্মতি প্রয়োজন।
@@ -266,7 +278,7 @@ export function WaitlistForm() {
               id="guardianConsentAcknowledged"
               name="guardianConsentAcknowledged"
               type="checkbox"
-              style={{ width: 15, height: 15, cursor: 'pointer', marginTop: 2, accentColor: 'var(--coral)' }}
+              style={{ width: 15, height: 15, cursor: 'pointer', marginTop: 2, accentColor: 'var(--coral)', flexShrink: 0 }}
             />
             <label
               htmlFor="guardianConsentAcknowledged"
@@ -279,8 +291,7 @@ export function WaitlistForm() {
               }}
             >
               আমি এই শিক্ষার্থীর অভিভাবক, অথবা তার পক্ষে নিশ্চিত করছি — এবং শুধুমাত্র
-              আগাম অ্যাক্সেসের বিজ্ঞপ্তির জন্য SheraTutor-কে এই যোগাযোগের তথ্য সংরক্ষণে সম্মতি
-              দিচ্ছি।
+              বিজ্ঞপ্তির জন্য এই যোগাযোগের তথ্য সংরক্ষণে সম্মতি দিচ্ছি।
             </label>
           </div>
         </div>
@@ -301,9 +312,10 @@ export function WaitlistForm() {
           justifyContent: 'center',
           padding: '12px 18px',
           fontSize: 14,
-          marginTop: 6,
+          marginTop: 4,
           background: 'var(--navy)',
           boxShadow: '0 6px 16px rgba(20, 24, 43, 0.15)',
+          boxSizing: 'border-box',
         }}
       >
         {pending ? 'যোগ হচ্ছে…' : 'ওয়েটলিস্টে যোগ দাও'} <ArrowRight size={16} />
