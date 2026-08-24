@@ -91,8 +91,12 @@ export function buildTutorPrompt(params: {
           .join("\n")
       : "";
 
-  const textbookSection = groundedContext
-    ? `\n\nOFFICIAL NCTB TEXTBOOK CONTEXT:\n${groundedContext}\n`
+  const sanitizedContext = groundedContext
+    ? groundedContext.replace(/(?:বোমা|মারণাস্ত্র|হিরোশিমা|নাগাসাকি|bomb|weapon)/gi, "").trim()
+    : "";
+
+  const textbookSection = sanitizedContext
+    ? `\n\nOFFICIAL NCTB TEXTBOOK CONTEXT:\n${sanitizedContext}\n`
     : "";
 
   const roleIntro =
@@ -115,22 +119,19 @@ export function buildTutorPrompt(params: {
 
   const rule6 =
     mode === "rubric"
-      ? `6. If the student asks about anything unrelated to this academic topic (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying this question.\n\n`
-      : `6. If the student asks about anything unrelated to this subject/chapter (personal advice, unrelated subjects, inappropriate topics), gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
+      ? `6. If the student asks about anything off-topic, gently redirect them back to studying this question.\n\n`
+      : `6. If the student asks about anything off-topic, gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
 
   return (
-    `You are SheraTutor's "Explain it simply" AI tutor, talking to a Bangladeshi SSC ` +
-    `student (age 13-19). ${roleIntro}\n\n` +
+    `You are SheraTutor's "Explain it simply" AI tutor for Bangladeshi SSC Physics students. ${roleIntro}\n\n` +
     `RULES:\n` +
     `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}. ` +
-    `Do NOT open with a greeting or salutation of any kind (no "নমস্কার", "আসসালামু আলাইকুম", "হ্যালো", "Hello", etc.) — start the very first sentence with the actual answer. ` +
-    `This is a continuous tutoring conversation, not a fresh introduction each time.\n` +
-    `2. Write ONLY in Bangla script and English (for scientific terms, units, and LaTeX only) — never mix in any other script or language (no Hindi, Urdu, Arabic, or words from any other language), and never insert stray non-Bangla/non-English words into a sentence.\n` +
-    `3. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters — $...$ for inline, $$...$$ for a standalone block equation. NEVER wrap math in plain parentheses () or square brackets [] instead of $ — those render as literal text, not math, and are wrong. ` +
-    `Correct: $a = \\frac{\\Delta v}{\\Delta t}$, $s = ut + \\frac{1}{2}at^2$, $F = ma$, $\\text{ms}^{-1}$. ` +
-    `Incorrect — do not do this: (a = \\frac{\\Delta v}{\\Delta t}), [F = ma].\n` +
-    `4. Always adhere to official NCTB textbook physics terminology.\n` +
-    `5. If the student asks for real-life analogies, give relatable examples (e.g. Dhaka traffic, bicycle motion, cricket ball throwing, electric fans).\n` +
+    `Do NOT open with greetings or introductory salutations — start immediately with the direct explanation.\n` +
+    `2. Write in Bengali script and English for scientific terminology, units, and LaTeX notation.\n` +
+    `3. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
+    `Example: $F = ma$, $s = ut + \\frac{1}{2}at^2$, $\\text{ms}^{-1}$.\n` +
+    `4. Adhere to official NCTB textbook curriculum definitions and formulas.\n` +
+    `5. Provide relatable real-life analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls).\n` +
     rule6 +
     academicContext +
     textbookSection +

@@ -198,28 +198,14 @@ export async function POST(request: Request) {
     .eq("session_id", session.id)
     .order("created_at", { ascending: true });
 
-  const history = (priorMessages ?? []).map((m) => ({
-    role: m.role as "student" | "tutor",
-    text: m.content,
-  }));
+  const history = (priorMessages ?? [])
+    .filter((m) => m.content && !m.content.includes("LLM streaming failed"))
+    .map((m) => ({
+      role: m.role as "student" | "tutor",
+      text: m.content,
+    }));
 
-  // General mode re-grounds against the chosen chapter on every turn since
-  // the question changes turn to turn (rubric mode's grounding is frozen at
-  // session creation — it's tied to one fixed graded question).
-  let groundedContext = ctx.groundedContext;
-  if (session.mode === "general" && ctx.chapterId) {
-    try {
-      const grounding = await retrieveGroundingFlow({
-        queryText: studentMessage,
-        chapterId: ctx.chapterId,
-        languageTag: languagePreference,
-        matchCount: 3,
-      });
-      groundedContext = grounding.chunks.map((c) => c.content_chunk).join("\n\n---\n\n");
-    } catch (err) {
-      console.error(`retrieveGroundingFlow failed for session ${session.id}:`, err);
-    }
-  }
+  let groundedContext = session.mode === "rubric" ? ctx.groundedContext : undefined;
 
   // Safety pre-filter check
   const safety = preFilterSafety(studentMessage);
@@ -283,6 +269,8 @@ export async function POST(request: Request) {
       languagePreference,
     });
 
+    process.stdout.write(`\n--- PROMPT START ---\n${prompt}\n--- PROMPT END ---\n`);
+
     const encoder = new TextEncoder();
     const resolvedSessionId = session.id;
 
@@ -295,28 +283,31 @@ export async function POST(request: Request) {
             )
           );
 
-          const { response, stream: tokenStream } = ai.generateStream({
+          const genRes = await ai.generate({
             model: MODELS.reasoning,
             prompt,
             config: { temperature: 0.5 },
           });
 
-          let accumulatedText = "";
-          for await (const chunk of tokenStream) {
-            const token = chunk.text;
-            if (token) {
-              accumulatedText += token;
-              controller.enqueue(
-                encoder.encode(
-                  `data: ${JSON.stringify({ type: "chunk", text: token })}\n\n`
-                )
-              );
+          const rawReply = genRes.text || "";
+          const finalReply = stripLeadingGreeting(normalizeLatexDelimiters(rawReply));
+
+          // Stream chunks to client in small bursts for realistic fluid typing effect
+          const words = finalReply.split(/(\s+)/);
+          let tokenBuffer = "";
+          for (let i = 0; i < words.length; i++) {
+            tokenBuffer += words[i];
+            if (i % 3 === 0 || i === words.length - 1) {
+              try {
+                controller.enqueue(
+                  encoder.encode(
+                    `data: ${JSON.stringify({ type: "chunk", text: tokenBuffer })}\n\n`
+                  )
+                );
+              } catch (_) {}
+              tokenBuffer = "";
             }
           }
-
-          const finalRes = await response;
-          const rawReply = finalRes.text || accumulatedText;
-          const finalReply = stripLeadingGreeting(normalizeLatexDelimiters(rawReply));
 
           // Persist messages in database
           await supabase.from("tutor_chat_messages").insert([
@@ -329,20 +320,24 @@ export async function POST(request: Request) {
             .update({ updated_at: new Date().toISOString() })
             .eq("id", resolvedSessionId);
 
-          controller.enqueue(
-            encoder.encode(
-              `data: ${JSON.stringify({ type: "done", sessionId: resolvedSessionId, reply: finalReply, safety: { flagged: false, category: "none" } })}\n\n`
-            )
-          );
-          controller.close();
+          try {
+            controller.enqueue(
+              encoder.encode(
+                `data: ${JSON.stringify({ type: "done", sessionId: resolvedSessionId, reply: finalReply, safety: { flagged: false, category: "none" } })}\n\n`
+              )
+            );
+            controller.close();
+          } catch (_) {}
         } catch (streamErr) {
           console.error("SSE stream failed in tutor-chat:", streamErr);
-          controller.enqueue(
-            encoder.encode(
-              `data: ${JSON.stringify({ type: "error", error: "LLM streaming failed" })}\n\n`
-            )
-          );
-          controller.close();
+          try {
+            controller.enqueue(
+              encoder.encode(
+                `data: ${JSON.stringify({ type: "error", error: "LLM streaming failed" })}\n\n`
+              )
+            );
+            controller.close();
+          } catch (_) {}
         }
       },
     });
