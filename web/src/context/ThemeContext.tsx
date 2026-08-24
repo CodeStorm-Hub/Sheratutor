@@ -15,16 +15,19 @@ const ThemeContext = createContext<ThemeContextType>({
 });
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [darkMode, setDarkModeState] = useState<boolean>(() => {
-    if (typeof window === 'undefined') return false;
-    const saved = localStorage.getItem('shera-theme');
-    return saved === 'dark' || (!saved && window.matchMedia?.('(prefers-color-scheme: dark)').matches);
-  });
+  const [darkMode, setDarkModeState] = useState<boolean>(false);
 
   const setDarkMode = (dark: boolean) => {
     setDarkModeState(dark);
-    if (typeof window !== 'undefined') {
+    try {
       localStorage.setItem('shera-theme', dark ? 'dark' : 'light');
+      if (dark) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch {
+      // ignore
     }
   };
 
@@ -33,12 +36,19 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   };
 
   useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+    try {
+      const saved = localStorage.getItem('shera-theme');
+      const isDark = saved === 'dark' || (!saved && window.matchMedia?.('(prefers-color-scheme: dark)').matches);
+      if (isDark) {
+        setDarkModeState(true);
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch {
+      // ignore
     }
-  }, [darkMode]);
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ darkMode, setDarkMode, toggleDarkMode }}>
