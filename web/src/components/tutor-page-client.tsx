@@ -85,6 +85,7 @@ export function TutorPageClient({
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          mode: 'general',
           sessionId: activeSessionId,
           subjectId: currentSubject?.id,
           chapterId: currentChapter?.id,

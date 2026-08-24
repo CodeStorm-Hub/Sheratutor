@@ -15,24 +15,28 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  // Default to Bangla ('bn') with lazy initialization from localStorage
-  const [language, setLanguageState] = useState<Language>(() => {
-    if (typeof window !== 'undefined') {
-      const saved = localStorage.getItem('sheratutor_lang') as Language | null;
-      if (saved === 'en' || saved === 'bn') return saved;
-    }
-    return 'bn';
-  });
+  // Always initialize with 'bn' on both server and initial client render to avoid SSR hydration mismatches
+  const [language, setLanguageState] = useState<Language>('bn');
 
   useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
+    try {
+      const saved = localStorage.getItem('sheratutor_lang') as Language | null;
+      if (saved === 'en' || saved === 'bn') {
+        setLanguageState(saved);
+        document.documentElement.lang = saved;
+      }
+    } catch {
+      // ignore in environments with restricted storage
+    }
+  }, []);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    if (typeof window !== 'undefined') {
+    try {
       localStorage.setItem('sheratutor_lang', lang);
       document.documentElement.lang = lang;
+    } catch {
+      // ignore
     }
   };
 
