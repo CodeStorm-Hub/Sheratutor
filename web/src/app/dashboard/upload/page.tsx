@@ -5,7 +5,12 @@ import { UploadForm } from '@/components/upload-form';
 import { PageHeader } from '@/components/PageHeader';
 import { Sparkles } from 'lucide-react';
 
-export default async function UploadPage({ searchParams }: { searchParams: { paperId?: string } }) {
+export default async function UploadPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ paperId?: string }>;
+}) {
+  const resolvedSearchParams = await searchParams;
   const supabase = await createClient();
   const {
     data: { user },
@@ -38,7 +43,7 @@ export default async function UploadPage({ searchParams }: { searchParams: { pap
           boxShadow: '0 8px 30px rgba(28, 35, 65, 0.04)',
         }}
       >
-        <UploadForm papers={papers ?? []} initialPaperId={searchParams.paperId} />
+        <UploadForm papers={papers ?? []} initialPaperId={resolvedSearchParams?.paperId} />
       </div>
     </div>
   );
