@@ -274,7 +274,7 @@ body {
    Main Canvas & Layout Structure
    ========================================================================== */
 
-.app main {
+.app > main {
   margin-left: 280px;
   width: calc(100% - 280px);
   min-height: 100vh;

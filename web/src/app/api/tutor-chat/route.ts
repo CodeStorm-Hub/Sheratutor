@@ -1,8 +1,16 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
-import { tutorChatFlow } from "@/ai/flows/tutor-chat";
+import {
+  tutorChatFlow,
+  buildTutorPrompt,
+  preFilterSafety,
+  normalizeLatexDelimiters,
+  stripLeadingGreeting,
+  SAFE_ESCALATION_MESSAGE_BN,
+} from "@/ai/flows/tutor-chat";
 import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
+import { ai, MODELS } from "@/ai/genkit";
 
 // No new env var — a fixed, generous daily cap on a free LLM endpoint
 // (docs/review §8.4 item 15 — no abuse/quota design existed at all).
@@ -46,6 +54,7 @@ export async function POST(request: Request) {
     chapterId,
     studentMessage,
     languagePreference = "bn",
+    stream = false,
   } = body as {
     sessionId?: string;
     mode?: ChatMode;
@@ -60,6 +69,7 @@ export async function POST(request: Request) {
     chapterId?: string;
     studentMessage: string;
     languagePreference?: "bn" | "en";
+    stream?: boolean;
   };
 
   if (!studentMessage?.trim()) {
@@ -211,6 +221,142 @@ export async function POST(request: Request) {
     }
   }
 
+  // Safety pre-filter check
+  const safety = preFilterSafety(studentMessage);
+  if (safety.flagged) {
+    await supabase.from("tutor_chat_messages").insert([
+      { session_id: session.id, role: "student", content: studentMessage, safety_category: safety.category },
+      { session_id: session.id, role: "tutor", content: SAFE_ESCALATION_MESSAGE_BN, safety_category: "none" },
+    ]);
+    await supabase.from("tutor_chat_sessions").update({ updated_at: new Date().toISOString() }).eq("id", session.id);
+
+    const service = getServiceRoleClient();
+    await service.from("audit_log").insert({
+      actor_id: user.id,
+      action: "SAFETY_ESCALATION",
+      entity_type: "tutor_chat",
+      entity_id: user.id,
+      detail_json: { category: safety.category, session_id: session.id },
+    });
+
+    if (stream) {
+      const encoder = new TextEncoder();
+      const s = new ReadableStream({
+        start(controller) {
+          controller.enqueue(
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "chunk", text: SAFE_ESCALATION_MESSAGE_BN })}\n\n`
+            )
+          );
+          controller.enqueue(
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "done", sessionId: session?.id, reply: SAFE_ESCALATION_MESSAGE_BN, safety })}\n\n`
+            )
+          );
+          controller.close();
+        },
+      });
+      return new Response(s, {
+        headers: {
+          "Content-Type": "text/event-stream; charset=utf-8",
+          "Cache-Control": "no-cache, no-transform",
+          Connection: "keep-alive",
+        },
+      });
+    }
+
+    return NextResponse.json({ sessionId: session.id, reply: SAFE_ESCALATION_MESSAGE_BN, safety });
+  }
+
+  // Streaming Response Path
+  if (stream) {
+    const prompt = buildTutorPrompt({
+      mode: session.mode,
+      questionText: ctx.questionText,
+      studentAnswerChunk: ctx.studentAnswerChunk,
+      rubricFailureReason: ctx.rubricFailureReason,
+      subjectName: ctx.subjectName,
+      chapterName: ctx.chapterName,
+      groundedContext,
+      history,
+      studentMessage,
+      languagePreference,
+    });
+
+    const encoder = new TextEncoder();
+    const resolvedSessionId = session.id;
+
+    const streamResponse = new ReadableStream({
+      async start(controller) {
+        try {
+          controller.enqueue(
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "start", sessionId: resolvedSessionId })}\n\n`
+            )
+          );
+
+          const { response, stream: tokenStream } = ai.generateStream({
+            model: MODELS.reasoning,
+            prompt,
+            config: { temperature: 0.5 },
+          });
+
+          let accumulatedText = "";
+          for await (const chunk of tokenStream) {
+            const token = chunk.text;
+            if (token) {
+              accumulatedText += token;
+              controller.enqueue(
+                encoder.encode(
+                  `data: ${JSON.stringify({ type: "chunk", text: token })}\n\n`
+                )
+              );
+            }
+          }
+
+          const finalRes = await response;
+          const rawReply = finalRes.text || accumulatedText;
+          const finalReply = stripLeadingGreeting(normalizeLatexDelimiters(rawReply));
+
+          // Persist messages in database
+          await supabase.from("tutor_chat_messages").insert([
+            { session_id: resolvedSessionId, role: "student", content: studentMessage, safety_category: "none" },
+            { session_id: resolvedSessionId, role: "tutor", content: finalReply, safety_category: "none" },
+          ]);
+
+          await supabase
+            .from("tutor_chat_sessions")
+            .update({ updated_at: new Date().toISOString() })
+            .eq("id", resolvedSessionId);
+
+          controller.enqueue(
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "done", sessionId: resolvedSessionId, reply: finalReply, safety: { flagged: false, category: "none" } })}\n\n`
+            )
+          );
+          controller.close();
+        } catch (streamErr) {
+          console.error("SSE stream failed in tutor-chat:", streamErr);
+          controller.enqueue(
+            encoder.encode(
+              `data: ${JSON.stringify({ type: "error", error: "LLM streaming failed" })}\n\n`
+            )
+          );
+          controller.close();
+        }
+      },
+    });
+
+    return new Response(streamResponse, {
+      headers: {
+        "Content-Type": "text/event-stream; charset=utf-8",
+        "Cache-Control": "no-cache, no-transform",
+        Connection: "keep-alive",
+      },
+    });
+  }
+
+  // Non-streaming fallback
   const result = await tutorChatFlow({
     mode: session.mode,
     questionText: ctx.questionText,
