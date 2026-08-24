@@ -88,8 +88,8 @@ export function TutorPageClient({
           sessionId: activeSessionId,
           subjectId: currentSubject?.id,
           chapterId: currentChapter?.id,
-          message: query,
-          studentLanguagePreference: language === 'en' ? 'en' : 'bn',
+          studentMessage: query,
+          languagePreference: language === 'en' ? 'en' : 'bn',
         }),
       });
 
@@ -103,7 +103,7 @@ export function TutorPageClient({
       }
 
       const assistantReply =
-        data.replyText ||
+        data.reply ||
         (language === 'bn'
           ? 'এখানে কাজ ও শক্তির উপপাদ্য প্রয়োগ করে পাই: $\\Delta K = W_{\\text{net}}$।'
           : 'Applying the work-energy theorem: $\\Delta K = W_{\\text{net}}$.');
