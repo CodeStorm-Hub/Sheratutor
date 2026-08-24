@@ -248,6 +248,74 @@ export function TutorPageClient({
         let resolvedSessionId = activeSessionId;
         let buffer = '';
 
+        const processLine = (line: string) => {
+          const trimmed = line.trim();
+          if (trimmed.startsWith('data: ')) {
+            const jsonStr = trimmed.slice(6);
+            try {
+              const event = JSON.parse(jsonStr);
+              if (event.type === 'start' && event.sessionId) {
+                resolvedSessionId = event.sessionId;
+                setActiveSessionId(event.sessionId);
+              } else if (event.type === 'chunk' && event.text) {
+                accumulatedText += event.text;
+                setMessages((prev) => {
+                  const newArr = [...prev];
+                  const lastIdx = newArr.length - 1;
+                  if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
+                    newArr[lastIdx] = {
+                      ...newArr[lastIdx],
+                      text: accumulatedText,
+                      isStreaming: true,
+                    };
+                  }
+                  return newArr;
+                });
+              } else if (event.type === 'done') {
+                const finalReply = event.reply || accumulatedText;
+                if (event.sessionId) {
+                  resolvedSessionId = event.sessionId;
+                  setActiveSessionId(event.sessionId);
+                }
+                setMessages((prev) => {
+                  const newArr = [...prev];
+                  const lastIdx = newArr.length - 1;
+                  if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
+                    newArr[lastIdx] = {
+                      ...newArr[lastIdx],
+                      text: finalReply,
+                      isStreaming: false,
+                    };
+                  }
+                  return newArr;
+                });
+
+                // Update recent sessions list if new session
+                if (resolvedSessionId && !sessions.some((s) => s.id === resolvedSessionId)) {
+                  setSessions((prev) => [
+                    {
+                      id: resolvedSessionId!,
+                      title: query.slice(0, 40),
+                      context_json: {
+                        subjectName: currentSubject?.name_en,
+                        chapterName: currentChapter?.title_en,
+                        subjectId: currentSubject?.id,
+                        chapterId: currentChapter?.id,
+                      },
+                      updated_at: new Date().toISOString(),
+                    },
+                    ...prev,
+                  ]);
+                }
+              } else if (event.type === 'error') {
+                throw new Error(event.error || 'Stream error occurred');
+              }
+            } catch (parseErr) {
+              // Ignore parsing chunk split across network boundaries
+            }
+          }
+        };
+
         while (true) {
           const { done, value } = await reader.read();
           if (done) break;
@@ -257,72 +325,12 @@ export function TutorPageClient({
           buffer = lines.pop() ?? '';
 
           for (const line of lines) {
-            const trimmed = line.trim();
-            if (trimmed.startsWith('data: ')) {
-              const jsonStr = trimmed.slice(6);
-              try {
-                const event = JSON.parse(jsonStr);
-                if (event.type === 'start' && event.sessionId) {
-                  resolvedSessionId = event.sessionId;
-                  setActiveSessionId(event.sessionId);
-                } else if (event.type === 'chunk' && event.text) {
-                  accumulatedText += event.text;
-                  setMessages((prev) => {
-                    const newArr = [...prev];
-                    const lastIdx = newArr.length - 1;
-                    if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
-                      newArr[lastIdx] = {
-                        ...newArr[lastIdx],
-                        text: accumulatedText,
-                        isStreaming: true,
-                      };
-                    }
-                    return newArr;
-                  });
-                } else if (event.type === 'done') {
-                  const finalReply = event.reply || accumulatedText;
-                  if (event.sessionId) {
-                    resolvedSessionId = event.sessionId;
-                    setActiveSessionId(event.sessionId);
-                  }
-                  setMessages((prev) => {
-                    const newArr = [...prev];
-                    const lastIdx = newArr.length - 1;
-                    if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
-                      newArr[lastIdx] = {
-                        ...newArr[lastIdx],
-                        text: finalReply,
-                        isStreaming: false,
-                      };
-                    }
-                    return newArr;
-                  });
-
-                  // Update recent sessions list if new session
-                  if (resolvedSessionId && !sessions.some((s) => s.id === resolvedSessionId)) {
-                    setSessions((prev) => [
-                      {
-                        id: resolvedSessionId!,
-                        title: query.slice(0, 40),
-                        context_json: {
-                          subjectName: currentSubject?.name_en,
-                          chapterName: currentChapter?.title_en,
-                          subjectId: currentSubject?.id,
-                          chapterId: currentChapter?.id,
-                        },
-                        updated_at: new Date().toISOString(),
-                      },
-                      ...prev,
-                    ]);
-                  }
-                } else if (event.type === 'error') {
-                  throw new Error(event.error || 'Stream error occurred');
-                }
-              } catch (parseErr) {
-                // Ignore parsing chunk split across network boundaries
-              }
-            }
+            processLine(line);
           }
+        }
+
+        if (buffer.trim()) {
+          processLine(buffer);
         }
       }
     } catch (err: unknown) {

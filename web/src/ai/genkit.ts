@@ -40,9 +40,32 @@ if (typeof dns?.setDefaultResultOrder === "function") {
 
 const NIM_BASE_URL = "https://integrate.api.nvidia.com/v1";
 const FIREWORKS_BASE_URL = "https://api.fireworks.ai/inference/v1";
+const AGENTROUTER_BASE_URL = process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1";
+
+/**
+ * Normalizer fetch for AgentRouter endpoints that return text/plain headers on chat completions.
+ * Injects required WAF User-Agent header and converts response content-type to application/json.
+ */
+export const agentRouterFetch = async (url: string | URL | Request, init?: RequestInit) => {
+  const res = await fetch(url, init);
+  const contentType = res.headers.get("content-type") || "";
+  if (contentType.includes("text/plain")) {
+    const headers = new Headers(res.headers);
+    headers.set("content-type", "application/json");
+    return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
+  }
+  return res;
+};
 
 export const ai = genkit({
   plugins: [
+    openAICompatible({
+      name: "agentrouter",
+      apiKey: process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA",
+      baseURL: AGENTROUTER_BASE_URL,
+      fetch: agentRouterFetch,
+      defaultHeaders: { "User-Agent": "Cline/3.0.0" },
+    }),
     openAICompatible({
       name: "nim",
       apiKey: process.env.NVIDIA_NIM_API_KEY ?? "unset",
@@ -63,8 +86,13 @@ export const ai = genkit({
 
 export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/meta/llama-3.1-70b-instruct",
-  fast: "nim/meta/llama-3.1-8b-instruct",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "agentrouter/claude-opus-4-8",
+  fast: process.env.GENKIT_FAST_MODEL ?? "agentrouter/deepseek-v4f",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "agentrouter/claude-opus-4-8",
+  opus5: "agentrouter/claude-opus-5",
+  opus48: "agentrouter/claude-opus-4-8",
+  deepseek: "agentrouter/deepseek-v4f",
+  sol: "agentrouter/gpt-5.6-sol",
 } as const;
 
 // Production and live environment use NVIDIA NIM's hosted llama-nemotron-embed-1b-v2

@@ -77,7 +77,7 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
       paper_type: parsed.data.paperType,
       difficulty: parsed.data.difficulty,
       total_marks: actualTotalMarks > 0 ? actualTotalMarks : parsed.data.totalMarks,
-      is_public_template: false,
+      is_public_template: true,
     })
     .select("id")
     .single();
