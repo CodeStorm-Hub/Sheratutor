@@ -5,7 +5,7 @@ import { UploadForm } from '@/components/upload-form';
 import { PageHeader } from '@/components/PageHeader';
 import { Sparkles } from 'lucide-react';
 
-export default async function UploadPage() {
+export default async function UploadPage({ searchParams }: { searchParams: { paperId?: string } }) {
   const supabase = await createClient();
   const {
     data: { user },
@@ -15,6 +15,7 @@ export default async function UploadPage() {
     .from('question_papers')
     .select('id, title, subjects(name_en), questions(id, question_number, question_text_en)')
     .or(`is_public_template.eq.true,created_by_user_id.eq.${user!.id}`)
+    .order('created_at', { ascending: false })
     .limit(20);
 
   return (
@@ -37,7 +38,7 @@ export default async function UploadPage() {
           boxShadow: '0 8px 30px rgba(28, 35, 65, 0.04)',
         }}
       >
-        <UploadForm papers={papers ?? []} />
+        <UploadForm papers={papers ?? []} initialPaperId={searchParams.paperId} />
       </div>
     </div>
   );

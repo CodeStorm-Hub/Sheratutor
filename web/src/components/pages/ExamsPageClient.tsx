@@ -1,64 +1,96 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
-  ArrowUpRight,
-  BookOpen,
-  Check,
-  ChevronDown,
-  ChevronRight,
-  ClipboardCheck,
-  Clock3,
-  FileCheck2,
-  Play,
-  RotateCcw,
-  Sparkles,
-  Timer,
+  ArrowUpRight, BookOpen, Check, ChevronDown, ChevronRight,
+  ClipboardCheck, Clock3, FileCheck2, Play, RotateCcw,
+  Sparkles, Timer
 } from 'lucide-react';
 import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
+import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/context/LanguageContext';
 
-interface ExamPaperItem {
-  id: string;
-  title: string;
-  total_marks: number;
-  subjects?: { name_en: string } | Array<{ name_en: string }> | null;
-}
-
-interface ExamsPageProps {
-  simulator?: boolean;
-  papers?: ExamPaperItem[];
-}
-
-export const ExamsPageClient: React.FC<ExamsPageProps> = ({
-  simulator = false,
-  papers = [],
-}) => {
+export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] }) => {
   const { language, t } = useLanguage();
   const [started, setStarted] = useState(false);
-  const [answer, setAnswer] = useState('');
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [timeLeft, setTimeLeft] = useState(3 * 60 * 60); // Default 3 hours
 
-  const mcqOptions =
-    language === 'bn'
-      ? ['বেগ (Velocity)', 'বল (Force)', 'কাজ (Work)', 'ত্বরণ (Acceleration)']
-      : ['Velocity', 'Force', 'Work', 'Acceleration'];
+  const paper = papers[0];
+  const questions = (paper?.questions || []).sort((a: any, b: any) => a.question_number - b.question_number);
 
-  const defaultExamCards =
-    language === 'bn'
-      ? [
-          'পদার্থবিজ্ঞান ১ম পত্র — মডেল টেস্ট',
-          'উচ্চতর গণিত — অধ্যায় ৮',
-          'রসায়ন — বোর্ড প্র্যাকটিস',
-        ]
-      : [
-          'Physics 1st Paper — Model Test',
-          'Higher Math — Chapter 8',
-          'Chemistry — Board Practice',
-        ];
+  useEffect(() => {
+    if (started && timeLeft > 0) {
+      const timerId = setInterval(() => setTimeLeft(prev => prev - 1), 1000);
+      return () => clearInterval(timerId);
+    }
+  }, [started, timeLeft]);
+
+  const formatTime = (seconds: number) => {
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    const s = seconds % 60;
+    return `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
+
+  const handleMCQSelect = (questionId: string, option: string) => {
+    setAnswers(prev => ({ ...prev, [questionId]: option }));
+  };
+
+  const [selectedSubject, setSelectedSubject] = useState<string>('ALL');
+  const [selectedDifficulty, setSelectedDifficulty] = useState<string>('ALL');
+
+  // Filter papers based on active state
+  const filteredPapers = papers.filter((p: any) => {
+    const subObj = Array.isArray(p.subjects) ? p.subjects[0] : p.subjects;
+    const subName = subObj?.name_en || '';
+    if (selectedSubject !== 'ALL' && !subName.toLowerCase().includes(selectedSubject.toLowerCase())) {
+      return false;
+    }
+    if (selectedDifficulty !== 'ALL' && p.difficulty !== selectedDifficulty) {
+      return false;
+    }
+    return true;
+  });
+
+  const subjectOptions = [
+    { value: 'ALL', label_en: 'All Subjects', label_bn: 'সকল বিষয়' },
+    { value: 'Physics', label_en: 'Physics', label_bn: 'পদার্থবিজ্ঞান' },
+    { value: 'Chemistry', label_en: 'Chemistry', label_bn: 'রসায়ন' },
+    { value: 'Mathematics', label_en: 'Mathematics', label_bn: 'গণিত' },
+    { value: 'English', label_en: 'English', label_bn: 'ইংরেজি' },
+  ];
+
+  const difficultyOptions = [
+    { value: 'ALL', label_en: 'All Difficulties', label_bn: 'সকল মান' },
+    { value: 'EASY', label_en: 'Easy', label_bn: 'সহজ' },
+    { value: 'MEDIUM', label_en: 'Medium', label_bn: 'মাঝারি' },
+    { value: 'HARD', label_en: 'Hard', label_bn: 'কঠিন' },
+    { value: 'BOARD_STANDARD', label_en: 'Board Standard', label_bn: 'বোর্ড মান' },
+  ];
+
+  const handleResetFilters = () => {
+    setSelectedSubject('ALL');
+    setSelectedDifficulty('ALL');
+  };
+
+  const isFiltered = selectedSubject !== 'ALL' || selectedDifficulty !== 'ALL';
 
   if (simulator && started) {
+    if (!paper) {
+      return (
+        <div className="exam-screen">
+          <header>
+            <span className="exam-logo">SheraTutor <small>SIMULATOR</small></span>
+            <button type="button" onClick={() => setStarted(false)}>{t('simulator.exit')}</button>
+          </header>
+          <div className="exam-paper"><h2>{language === 'bn' ? 'সিমুলেট করার মতো কোনো প্রশ্নপত্র নেই।' : 'No paper available to simulate.'}</h2></div>
+        </div>
+      );
+    }
+
     return (
       <div className="exam-screen">
         <header>
@@ -66,7 +98,7 @@ export const ExamsPageClient: React.FC<ExamsPageProps> = ({
             SheraTutor <small>{t('simulator.title').toUpperCase()}</small>
           </span>
           <div className="exam-timer">
-            <Timer size={17} /> 02:59:48
+            <Timer size={17} /> {formatTime(timeLeft)}
           </div>
           <button type="button" onClick={() => setStarted(false)}>
             {t('simulator.exit')}
@@ -74,171 +106,284 @@ export const ExamsPageClient: React.FC<ExamsPageProps> = ({
         </header>
         <div className="exam-paper">
           <Tag color="sun">
-            {language === 'bn' ? 'পদার্থবিজ্ঞান ১ম পত্র' : 'PHYSICS 1ST PAPER'}
+            {paper.subjects?.name_en || 'MOCK EXAM'}
           </Tag>
-          <h1>{language === 'bn' ? 'এইচএসসি বোর্ড পরীক্ষা' : 'HSC Board Examination'}</h1>
+          <h1>{paper.title}</h1>
           <p>
-            {language === 'bn' ? 'সময়: ৩ ঘণ্টা' : 'Time: 3 hours'} &nbsp; · &nbsp; {language === 'bn' ? 'পূর্ণমান: ১০০' : 'Full marks: 100'}
+            {language === 'bn' 
+              ? `সময়: ${Math.round(paper.total_marks * 1.5)} মিনিট · পূর্ণমান: ${paper.total_marks}`
+              : `Time: ${Math.round(paper.total_marks * 1.5)} Minutes · Full marks: ${paper.total_marks}`}
           </p>
           <hr />
-          <h3>{language === 'bn' ? 'ক বিভাগ — বহুনির্বাচনী প্রশ্ন' : 'Part A — Multiple choice questions'}</h3>
-          <p>
-            <b>১.</b> {language === 'bn' ? 'নিচের কোনটি স্কেলার রাশি?' : 'Which of the following is a scalar quantity?'}
-          </p>
-          {mcqOptions.map((x, i) => (
-            <button
-              type="button"
-              className={`mcq ${answer === x ? 'selected' : ''}`.trim()}
-              onClick={() => setAnswer(x)}
-              key={x}
-            >
-              <span>{'ABCD'[i]}</span>
-              {x}
-            </button>
-          ))}
-          {answer && (
-            <p className="answer-confirmation">
-              <Check size={15} /> {language === 'bn' ? `উত্তর: ${answer} সংরক্ষিত হয়েছে` : `Answer ${answer} selected`}
-            </p>
-          )}
+
+          <div className="space-y-12">
+            {questions.map((q: any) => {
+              const subQuestions = typeof q.sub_questions_json === "string" 
+                ? JSON.parse(q.sub_questions_json) : q.sub_questions_json;
+              const mcqOptions = typeof q.mcq_options_json === "string" 
+                ? JSON.parse(q.mcq_options_json) : q.mcq_options_json;
+              
+              return (
+                <div key={q.id} className="mb-8">
+                  <div className="flex font-medium text-lg mb-4">
+                    <span className="w-8">{q.question_number}.</span>
+                    <div className="flex-1 whitespace-pre-wrap">
+                      {q.question_type === "CQ" ? (q.stimulus_bn || q.question_text_bn) : q.question_text_bn}
+                    </div>
+                    {q.question_type === "MCQ" && (
+                      <span className="text-right w-12 text-sm text-gray-500">[{q.max_marks}]</span>
+                    )}
+                  </div>
+
+                  {q.question_type === "CQ" && subQuestions && (
+                    <div className="pl-8 space-y-4">
+                      {subQuestions.map((sq: any) => (
+                        <div key={sq.part} className="flex border border-gray-100 p-4 rounded-lg bg-gray-50">
+                          <span className="font-bold mr-3">({sq.part})</span>
+                          <div className="flex-1">{sq.text_bn}</div>
+                          <span className="text-right font-bold text-gray-500">{sq.marks}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+
+                  {q.question_type === "MCQ" && mcqOptions && (
+                    <div className="pl-8 grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
+                      {mcqOptions.map((opt: string, idx: number) => {
+                        const prefix = ["ক", "খ", "গ", "ঘ"][idx] || idx + 1;
+                        const isSelected = answers[q.id] === opt;
+                        return (
+                          <button
+                            type="button"
+                            key={idx}
+                            onClick={() => handleMCQSelect(q.id, opt)}
+                            className={`flex items-center p-3 border rounded-lg transition-colors text-left ${isSelected ? 'border-primary bg-primary/10' : 'border-gray-200 hover:bg-gray-50'}`}
+                          >
+                            <span className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 font-medium ${isSelected ? 'bg-primary text-white' : 'bg-gray-100'}`}>
+                              {prefix}
+                            </span>
+                            <span className="flex-1">{opt}</span>
+                            {isSelected && <Check size={16} className="text-primary" />}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+          
+          <div className="mt-12 flex justify-end">
+            <Link href={`/dashboard/upload?paperId=${paper.id}`} className="primary-btn">
+              {language === 'bn' ? 'উত্তরপত্র জমা দাও' : 'Submit Answers'} <ArrowUpRight size={16} className="ml-2" />
+            </Link>
+          </div>
         </div>
       </div>
     );
   }
 
   return (
-    <>
+    <div className="space-y-6">
       <PageHeader
         title={simulator ? t('simulator.title') : t('exams.title')}
         description={simulator ? t('simulator.desc') : t('exams.desc')}
       >
         {simulator ? (
-          <button
-            type="button"
-            className="primary-btn"
-            onClick={() => setStarted(true)}
+          <Button 
+            type="button" 
+            onClick={() => {
+              if (paper) setTimeLeft(paper.total_marks * 1.5 * 60);
+              setStarted(true);
+            }}
+            className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 shadow-xs"
           >
             <Play size={16} /> {t('simulator.start_btn')}
-          </button>
+          </Button>
         ) : (
-          <Link href="/dashboard/practice/generate" className="primary-btn">
-            <Sparkles size={16} /> {t('exams.generate_btn')}
+          <Link href="/dashboard/practice/generate">
+            <Button className="gap-2 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full px-5 shadow-xs">
+              <Sparkles size={16} /> {t('exams.generate_btn')}
+            </Button>
           </Link>
         )}
       </PageHeader>
 
       {simulator ? (
-        <div className="simulator-hero">
-          <div className="simulator-copy">
+        <div className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-xs relative overflow-hidden flex flex-col md:flex-row gap-6 items-center justify-between">
+          <div className="space-y-4 max-w-xl">
             <Tag color="sun">{language === 'bn' ? 'বোর্ড সিমুলেশন' : 'BOARD SIMULATION'}</Tag>
-            <h2>{language === 'bn' ? 'পদার্থবিজ্ঞান বোর্ড পরীক্ষা' : 'Physics Board Exam'}</h2>
-            <p>
-              {t('simulator.hero_desc')}
-            </p>
-            <div>
-              <span>
-                <Clock3 size={16} /> {t('simulator.3_hours')}
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+              {paper?.title || (language === 'bn' ? 'পদার্থবিজ্ঞান বোর্ড পরীক্ষা' : 'Physics Board Exam')}
+            </h2>
+            <p className="text-sm text-muted-foreground leading-relaxed">{t('simulator.hero_desc')}</p>
+            <div className="flex flex-wrap gap-4 text-xs font-medium text-muted-foreground pt-1">
+              <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
+                <Clock3 size={15} className="text-primary" /> {paper ? `${Math.round(paper.total_marks * 1.5)} Min` : t('simulator.3_hours')}
               </span>
-              <span>
-                <ClipboardCheck size={16} /> {t('simulator.100_marks')}
+              <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
+                <ClipboardCheck size={15} className="text-primary" /> {paper?.total_marks || 100} {language === 'bn' ? 'নম্বর' : 'Marks'}
               </span>
-              <span>
-                <BookOpen size={16} /> {t('simulator.25_questions')}
+              <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
+                <BookOpen size={15} className="text-primary" /> {questions.length} {language === 'bn' ? 'টি প্রশ্ন' : 'Questions'}
               </span>
             </div>
-            <button
-              type="button"
-              className="dark-wide"
-              onClick={() => setStarted(true)}
-            >
-              {language === 'bn' ? 'পরীক্ষা শুরু করো' : 'Begin simulation'} <ArrowUpRight size={16} />
-            </button>
+            <div className="pt-2">
+              <Button 
+                type="button" 
+                size="lg"
+                onClick={() => {
+                  if (paper) setTimeLeft(paper.total_marks * 1.5 * 60);
+                  setStarted(true);
+                }}
+                className="gap-2 bg-foreground text-background hover:bg-foreground/90 rounded-full px-6 font-semibold shadow-xs"
+              >
+                {language === 'bn' ? 'পরীক্ষা শুরু করো' : 'Begin simulation'} <ArrowUpRight size={16} />
+              </Button>
+            </div>
           </div>
-          <div className="simulator-paper">
-            <b>{language === 'bn' ? 'এইচএসসি পরীক্ষা' : 'HSC EXAMINATION'}</b>
-            <strong>{language === 'bn' ? 'পদার্থবিজ্ঞান' : 'PHYSICS'}</strong>
-            <span>{language === 'bn' ? '১ম পত্র · ২০২৬' : '1st Paper · 2026'}</span>
-            <i>01</i>
+
+          <div className="w-full md:w-64 h-48 rounded-2xl bg-primary/5 border border-primary/20 flex flex-col items-center justify-center text-center p-4 relative select-none">
+            <span className="text-[10px] font-mono tracking-widest text-primary/80 uppercase mb-1">
+              {language === 'bn' ? 'এসএসসি পরীক্ষা' : 'SSC EXAMINATION'}
+            </span>
+            <strong className="text-lg font-bold text-foreground">
+              {paper?.subjects?.name_en?.toUpperCase() || 'PHYSICS'}
+            </strong>
+            <span className="text-xs text-muted-foreground mt-1">SSC · 2026</span>
+            <span className="absolute bottom-3 right-4 font-mono font-bold text-2xl text-primary/20">01</span>
           </div>
         </div>
       ) : (
-        <>
-          <div className="filter-row">
-            {(language === 'bn'
-              ? ['পদার্থবিজ্ঞান', 'সব অধ্যায়', 'ঢাকা বোর্ড', 'মাঝারি', 'সম্পূর্ণ টেস্ট']
-              : ['Physics', 'All chapters', 'Dhaka Board', 'Medium', 'Full test']
-            ).map((f) => (
-              <span className="chip" key={f}>
-                {f} <ChevronDown size={14} />
-              </span>
-            ))}
-            <button type="button" className="ghost-btn">
-              <RotateCcw size={14} /> {t('common.reset')}
-            </button>
+        <div className="space-y-6">
+          <div className="flex flex-wrap items-center justify-between gap-3 p-3 rounded-2xl bg-card border border-border/70 shadow-2xs">
+            <div className="flex flex-wrap items-center gap-2.5">
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-semibold text-muted-foreground ml-1">
+                  {language === 'bn' ? 'বিষয়:' : 'Subject:'}
+                </span>
+                <select
+                  value={selectedSubject}
+                  onChange={(e) => setSelectedSubject(e.target.value)}
+                  className="bg-muted/40 border border-border text-foreground text-xs font-medium py-1.5 px-3 rounded-lg cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary"
+                  aria-label="Filter by subject"
+                >
+                  {subjectOptions.map((opt) => (
+                    <option key={opt.value} value={opt.value}>
+                      {language === 'bn' ? opt.label_bn : opt.label_en}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs font-semibold text-muted-foreground">
+                  {language === 'bn' ? 'কঠিনতা:' : 'Difficulty:'}
+                </span>
+                <select
+                  value={selectedDifficulty}
+                  onChange={(e) => setSelectedDifficulty(e.target.value)}
+                  className="bg-muted/40 border border-border text-foreground text-xs font-medium py-1.5 px-3 rounded-lg cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary"
+                  aria-label="Filter by difficulty"
+                >
+                  {difficultyOptions.map((opt) => (
+                    <option key={opt.value} value={opt.value}>
+                      {language === 'bn' ? opt.label_bn : opt.label_en}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            {isFiltered && (
+              <button 
+                type="button" 
+                onClick={handleResetFilters} 
+                className="text-xs font-semibold flex items-center gap-1 text-muted-foreground hover:text-primary transition-colors py-1 px-2.5 rounded-md hover:bg-muted/50"
+              >
+                <RotateCcw size={13} /> {t('common.reset')}
+              </button>
+            )}
           </div>
 
-          <div className="exam-cards">
-            {papers.length > 0
-              ? papers.map((p) => {
-                  const subObj = Array.isArray(p.subjects) ? p.subjects[0] : p.subjects;
-                  return (
-                    <article className="exam-card-full" key={p.id}>
-                      <div className="exam-top">
-                        <Tag color="mint">
-                          {subObj?.name_en || (language === 'bn' ? 'এইচএসসি' : 'HSC')}
-                        </Tag>
-                        <time>{p.total_marks || 100} {language === 'bn' ? 'মার্কস' : 'marks'}</time>
-                      </div>
-                      <h3>{p.title}</h3>
-                      <p>
-                        {language === 'bn'
-                          ? 'আসল বোর্ড কাঠামোর বহুনির্বাচনী ও সৃজনশীল প্রশ্ন সেট।'
-                          : 'Board-standard question set with official NCTB marking rubric.'}
-                      </p>
-                      <div className="exam-card-foot">
-                        <span>
-                          <FileCheck2 size={16} /> {p.total_marks || 100} {language === 'bn' ? 'নম্বর' : 'Marks'}
+          {filteredPapers.length === 0 ? (
+            <div className="text-center py-16 px-4 border border-dashed border-border rounded-3xl my-6 bg-card/40">
+              <div className="w-12 h-12 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3">
+                <BookOpen size={22} />
+              </div>
+              <h3 className="text-base font-semibold text-foreground mb-1">
+                {language === 'bn' ? 'কোনো প্রশ্নপত্র পাওয়া যায়নি' : 'No Practice Papers Found'}
+              </h3>
+              <p className="text-xs text-muted-foreground max-w-sm mx-auto mb-4 leading-relaxed">
+                {language === 'bn'
+                  ? 'তোমার নির্বাচিত ফিল্টারে কোনো প্রশ্নপত্র নেই। নতুন কাস্টম প্রশ্নপত্র তৈরি করতে পারো।'
+                  : 'No papers match the selected filters. You can generate a brand new custom practice paper.'}
+              </p>
+              <Link href="/dashboard/practice/generate">
+                <Button size="sm" className="gap-1.5 bg-primary text-primary-foreground hover:bg-primary/90 rounded-full">
+                  <Sparkles size={14} /> {language === 'bn' ? 'কাস্টম প্রশ্নপত্র তৈরি করো' : 'Generate Custom Paper'}
+                </Button>
+              </Link>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+              {filteredPapers.map((p: any) => {
+                const subObj = Array.isArray(p.subjects) ? p.subjects[0] : p.subjects;
+                const subName = language === 'bn' ? (subObj?.name_bn || subObj?.name_en || 'পদার্থবিজ্ঞান') : (subObj?.name_en || 'Physics');
+                
+                const diffKey = p.difficulty || 'BOARD_STANDARD';
+                const difficultyBadge = {
+                  EASY: { label: language === 'bn' ? 'সহজ' : 'Easy', color: 'mint' as const },
+                  MEDIUM: { label: language === 'bn' ? 'মাঝারি' : 'Medium', color: 'sun' as const },
+                  HARD: { label: language === 'bn' ? 'কঠিন' : 'Hard', color: 'coral' as const },
+                  BOARD_STANDARD: { label: language === 'bn' ? 'বোর্ড মান' : 'Board Std', color: 'mint' as const },
+                }[diffKey as string] || { label: language === 'bn' ? 'বোর্ড মান' : 'Board Std', color: 'mint' as const };
+
+                return (
+                  <article 
+                    key={p.id}
+                    className="group bg-card border border-border/80 hover:border-primary/50 shadow-xs hover:shadow-md transition-all duration-200 rounded-2xl p-5 flex flex-col justify-between"
+                  >
+                    <div className="space-y-3">
+                      <div className="flex items-center justify-between gap-2">
+                        <Tag color={difficultyBadge.color}>{subName}</Tag>
+                        <span className="text-[11px] font-mono font-medium px-2 py-0.5 rounded-full bg-muted/60 text-muted-foreground border border-border/50">
+                          {difficultyBadge.label}
                         </span>
-                        <Link
-                          href={`/dashboard/practice/${p.id}`}
-                          className="start-link"
-                        >
-                          {language === 'bn' ? 'পরীক্ষা দাও' : 'Start exam'} <ChevronRight size={15} />
-                        </Link>
                       </div>
-                    </article>
-                  );
-                })
-              : defaultExamCards.map((title, i) => (
-                  <article className="exam-card-full" key={title}>
-                    <div className="exam-top">
-                      <Tag color={i === 0 ? 'mint' : i === 1 ? 'sun' : 'coral'}>
-                        {language === 'bn' ? 'এইচএসসি' : 'HSC'}
-                      </Tag>
-                      <time>100 {language === 'bn' ? 'মার্কস' : 'marks'}</time>
+
+                      <div>
+                        <h3 className="text-base font-bold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+                          {p.title}
+                        </h3>
+                        <p className="text-xs text-muted-foreground mt-1.5 line-clamp-2 leading-relaxed">
+                          {language === 'bn'
+                            ? 'এনসিটিবি পাঠ্যক্রম ও অফিশিয়াল মার্কিং রুব্রিক সমন্বিত বোর্ড মান প্রশ্নপত্র।'
+                            : 'Board-standard question set with official NCTB marking rubric.'}
+                        </p>
+                      </div>
                     </div>
-                    <h3>{title}</h3>
-                    <p>
-                      {language === 'bn'
-                        ? 'আসল বোর্ড কাঠামোর বহুনির্বাচনী ও সৃজনশীল প্রশ্ন সেট।'
-                        : 'Board-standard question set with official NCTB marking rubric.'}
-                    </p>
-                    <div className="exam-card-foot">
-                      <span>
-                        <FileCheck2 size={16} /> 100 {language === 'bn' ? 'নম্বর' : 'Marks'}
+
+                    <div className="pt-4 mt-4 border-t border-border/50 flex items-center justify-between">
+                      <span className="text-xs font-semibold text-muted-foreground flex items-center gap-1.5 font-mono">
+                        <FileCheck2 size={15} className="text-primary" /> {p.total_marks} {language === 'bn' ? 'নম্বর' : 'Marks'}
                       </span>
-                      <Link
-                        href="/dashboard/board-simulator"
-                        className="start-link"
+                      <Link 
+                        href={`/dashboard/practice/${p.id}`} 
+                        className="inline-flex items-center gap-1 text-xs font-semibold text-primary hover:text-primary/80 transition-colors"
                       >
-                        {language === 'bn' ? 'পরীক্ষা দাও' : 'Start exam'} <ChevronRight size={15} />
+                        <span>{language === 'bn' ? 'পরীক্ষা শুরু' : 'Start exam'}</span>
+                        <ChevronRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
                       </Link>
                     </div>
                   </article>
-                ))}
-          </div>
-        </>
+                );
+              })}
+            </div>
+          )}
+        </div>
       )}
-    </>
+    </div>
   );
 };

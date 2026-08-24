@@ -102,3 +102,35 @@ export async function generateStudyPlan(): Promise<void> {
 
   revalidatePath("/dashboard/study-plan");
 }
+
+export async function togglePlanTask(planId: string, day: number, taskId: string, completed: boolean) {
+  const supabase = await createClient();
+  const { data: { user } } = await supabase.auth.getUser();
+  if (!user) return { error: "unauthorized" };
+
+  const { data: plan } = await supabase
+    .from("study_plans")
+    .select("completed_tasks_json")
+    .eq("id", planId)
+    .single();
+    
+  if (!plan) return { error: "plan not found" };
+
+  const completedTasks = (plan.completed_tasks_json as Record<string, boolean>) || {};
+  const taskKey = `${day}-${taskId}`;
+  
+  if (completed) {
+    completedTasks[taskKey] = true;
+  } else {
+    delete completedTasks[taskKey];
+  }
+
+  const { error } = await supabase
+    .from("study_plans")
+    .update({ completed_tasks_json: completedTasks })
+    .eq("id", planId);
+
+  if (error) return { error: error.message };
+  revalidatePath("/dashboard"); // since PlannerPageClient is rendered on dashboard
+  return { success: true };
+}

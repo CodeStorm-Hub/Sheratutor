@@ -42,6 +42,7 @@ export default async function MistakeAnalysisPage() {
           count: `${Math.round(Number(w.weakness_score) * 10)} mistakes`,
           lostMarks: Math.round(Number(w.total_marks_lost || 0)),
           color: (idx === 0 ? 'coral' : idx === 1 ? 'sun' : 'mint') as 'coral' | 'sun' | 'mint',
+          tags: w.tags || [],
         }))
       : [
           {
@@ -50,7 +51,7 @@ export default async function MistakeAnalysisPage() {
             subject: 'Physics',
             count: '8 mistakes',
             lostMarks: 6,
-            color: 'coral' as const,
+            color: "coral", tags: ["Calculation", "Formula"] as const,
           },
           {
             type: 'Missing final units in calculation',
