@@ -36,7 +36,7 @@ flowchart LR
 
     subgraph Providers["External AI Providers"]
         NIM[NVIDIA NIM\nLlama vision/reasoning + embeddings]
-        Fireworks[Fireworks (configured, unused by default)]
+        Fireworks["Fireworks (configured, unused by default)"]
         Ollama[Ollama (local dev)]
     end
 
