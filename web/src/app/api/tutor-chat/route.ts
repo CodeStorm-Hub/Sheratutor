@@ -291,7 +291,7 @@ export async function POST(request: Request) {
             baseURL: process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1",
             defaultHeaders: { "User-Agent": "Cline/3.0.0" },
           });
-          const modelName = (process.env.GENKIT_REASONING_MODEL ?? "agentrouter/deepseek-v4f").replace(/^agentrouter\//, "");
+          const modelName = (process.env.GENKIT_REASONING_MODEL ?? "agentrouter/gpt-5.6-sol").replace(/^agentrouter\//, "");
 
           const stream = await client.chat.completions.create({
             model: modelName,
