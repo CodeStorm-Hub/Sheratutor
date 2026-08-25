@@ -43,11 +43,24 @@ const FIREWORKS_BASE_URL = "https://api.fireworks.ai/inference/v1";
 const AGENTROUTER_BASE_URL = process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1";
 
 /**
- * Normalizer fetch for AgentRouter endpoints that return text/plain headers on chat completions.
- * Injects required WAF User-Agent header and converts response content-type to application/json.
+ * Normalizer fetch for AgentRouter endpoints.
+ * Injects required WAF User-Agent header, catches upstream HTTP errors cleanly,
+ * and converts text/plain chat completion responses to application/json.
  */
 export const agentRouterFetch = async (url: string | URL | Request, init?: RequestInit) => {
   const res = await fetch(url, init);
+  if (!res.ok) {
+    const errorBody = await res.text();
+    let parsedMsg = errorBody;
+    try {
+      const json = JSON.parse(errorBody);
+      if (json.error?.message) {
+        parsedMsg = `${json.error.code ?? "API_ERROR"}: ${json.error.message}`;
+      }
+    } catch (_) {}
+    throw new Error(`AgentRouter HTTP ${res.status} (${res.statusText}): ${parsedMsg}`);
+  }
+
   const contentType = res.headers.get("content-type") || "";
   if (contentType.includes("text/plain")) {
     const headers = new Headers(res.headers);
@@ -86,9 +99,9 @@ export const ai = genkit({
 
 export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "agentrouter/claude-opus-4-8",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "agentrouter/deepseek-v4f",
   fast: process.env.GENKIT_FAST_MODEL ?? "agentrouter/deepseek-v4f",
-  paper: process.env.GENKIT_PAPER_MODEL ?? "agentrouter/claude-opus-4-8",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "agentrouter/deepseek-v4f",
   opus5: "agentrouter/claude-opus-5",
   opus48: "agentrouter/claude-opus-4-8",
   deepseek: "agentrouter/deepseek-v4f",

@@ -12,6 +12,8 @@ import {
 import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
 import { ai, MODELS } from "@/ai/genkit";
 
+export const maxDuration = 60;
+
 // No new env var — a fixed, generous daily cap on a free LLM endpoint
 // (docs/review §8.4 item 15 — no abuse/quota design existed at all).
 const TUTOR_CHAT_DAILY_LIMIT = 50;
@@ -283,31 +285,29 @@ export async function POST(request: Request) {
             )
           );
 
-          const genRes = await ai.generate({
+          const { response: genResponsePromise, stream: textStream } = ai.generateStream({
             model: MODELS.reasoning,
             prompt,
             config: { temperature: 0.5 },
           });
 
-          const rawReply = genRes.text || "";
-          const finalReply = stripLeadingGreeting(normalizeLatexDelimiters(rawReply));
-
-          // Stream chunks to client in small bursts for realistic fluid typing effect
-          const words = finalReply.split(/(\s+)/);
-          let tokenBuffer = "";
-          for (let i = 0; i < words.length; i++) {
-            tokenBuffer += words[i];
-            if (i % 3 === 0 || i === words.length - 1) {
+          let rawReply = "";
+          for await (const chunk of textStream) {
+            const chunkText = chunk.text;
+            if (chunkText) {
+              rawReply += chunkText;
               try {
                 controller.enqueue(
                   encoder.encode(
-                    `data: ${JSON.stringify({ type: "chunk", text: tokenBuffer })}\n\n`
+                    `data: ${JSON.stringify({ type: "chunk", text: chunkText })}\n\n`
                   )
                 );
               } catch (_) {}
-              tokenBuffer = "";
             }
           }
+
+          await genResponsePromise;
+          const finalReply = stripLeadingGreeting(normalizeLatexDelimiters(rawReply || ""));
 
           // Persist messages in database
           await supabase.from("tutor_chat_messages").insert([

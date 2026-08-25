@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 import { gradeSubmissionFlow } from "@/ai/flows/grade-submission";
 
+export const maxDuration = 60;
+
 const MAX_ATTEMPTS = 3;
 const BATCH_SIZE = 5;
 const VISIBILITY_TIMEOUT_SECONDS = 120;
