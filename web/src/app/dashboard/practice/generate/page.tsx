@@ -3,6 +3,8 @@ import { createClient } from '@/lib/supabase/server';
 import { GeneratePaperForm } from './generate-paper-form';
 import { PageHeader } from '@/components/PageHeader';
 
+export const maxDuration = 60;
+
 export default async function GeneratePracticePaperPage() {
   const supabase = await createClient();
   const { data: subjects } = await supabase

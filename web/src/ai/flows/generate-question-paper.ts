@@ -66,7 +66,7 @@ export const generateQuestionPaperFlow = ai.defineFlow(
       .in("id", cappedChapterIds);
 
     const chapterTitles = (chaptersData || [])
-      .map((c) => `[ID: ${c.id}] Chapter ${c.chapter_no}: ${c.title_bn ?? ""} (${c.title_en})`)
+      .map((c) => `[ID: ${c.id}] Chapter ${c.chapter_no}: ${c.title_en}`)
       .join("\n");
 
     let questionCountsInstruction = "";
