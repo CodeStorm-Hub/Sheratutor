@@ -99,12 +99,12 @@ export const ai = genkit({
 
 export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "agentrouter/deepseek-v4f",
-  fast: process.env.GENKIT_FAST_MODEL ?? "agentrouter/deepseek-v4f",
-  paper: process.env.GENKIT_PAPER_MODEL ?? "agentrouter/deepseek-v4f",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "agentrouter/gpt-5.6-sol",
+  fast: process.env.GENKIT_FAST_MODEL ?? "agentrouter/gpt-5.6-sol",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "agentrouter/gpt-5.6-sol",
   opus5: "agentrouter/claude-opus-5",
   opus48: "agentrouter/claude-opus-4-8",
-  deepseek: "agentrouter/deepseek-v4f",
+  deepseek: "agentrouter/deepseek-v4-flash",
   sol: "agentrouter/gpt-5.6-sol",
 } as const;
 
