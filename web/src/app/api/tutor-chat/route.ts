@@ -11,6 +11,7 @@ import {
 } from "@/ai/flows/tutor-chat";
 import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
 import { ai, MODELS } from "@/ai/genkit";
+import { OpenAI } from "openai";
 
 export const maxDuration = 60;
 
@@ -285,28 +286,40 @@ export async function POST(request: Request) {
             )
           );
 
-          const { response: genResponsePromise, stream: textStream } = ai.generateStream({
-            model: MODELS.reasoning,
-            prompt,
-            config: { temperature: 0.5 },
+          const client = new OpenAI({
+            apiKey: process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA",
+            baseURL: process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1",
+            defaultHeaders: { "User-Agent": "Cline/3.0.0" },
+          });
+          const modelName = (process.env.GENKIT_REASONING_MODEL ?? "agentrouter/deepseek-v4f").replace(/^agentrouter\//, "");
+
+          const stream = await client.chat.completions.create({
+            model: modelName,
+            messages: [
+              {
+                role: "user",
+                content: prompt,
+              },
+            ],
+            temperature: 0.5,
+            stream: true,
           });
 
           let rawReply = "";
-          for await (const chunk of textStream) {
-            const chunkText = chunk.text;
-            if (chunkText) {
-              rawReply += chunkText;
+          for await (const chunk of stream) {
+            const text = chunk.choices[0]?.delta?.content || "";
+            if (text) {
+              rawReply += text;
               try {
                 controller.enqueue(
                   encoder.encode(
-                    `data: ${JSON.stringify({ type: "chunk", text: chunkText })}\n\n`
+                    `data: ${JSON.stringify({ type: "chunk", text })}\n\n`
                   )
                 );
               } catch (_) {}
             }
           }
 
-          await genResponsePromise;
           const finalReply = stripLeadingGreeting(normalizeLatexDelimiters(rawReply || ""));
 
           // Persist messages in database
