@@ -136,6 +136,7 @@ ${chapterTitles}
       }
     } catch (genkitErr) {
       console.warn("Direct generation failed, trying OpenAI client fallback:", genkitErr);
+      const fallbackModel = (process.env.GENKIT_PAPER_MODEL ?? "agentrouter/deepseek-v4f").replace(/^agentrouter\//, "");
       const client = new OpenAI({
         apiKey: process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA",
         baseURL: process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1",
@@ -144,7 +145,7 @@ ${chapterTitles}
       });
 
       const completion = await client.chat.completions.create({
-        model: "claude-opus-4-8",
+        model: fallbackModel,
         messages: [
           {
             role: "system",
