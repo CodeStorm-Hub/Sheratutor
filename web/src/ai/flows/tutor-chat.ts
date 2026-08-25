@@ -127,11 +127,12 @@ export function buildTutorPrompt(params: {
     `RULES:\n` +
     `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}. ` +
     `Do NOT open with greetings or introductory salutations — start immediately with the direct explanation.\n` +
-    `2. Write in Bengali script and English for scientific terminology, units, and LaTeX notation.\n` +
-    `3. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
+    `2. Keep the explanation concise and focused (under 250 words, 2-3 short paragraphs or bullet points). Do NOT write an entire textbook chapter.\n` +
+    `3. Write in Bengali script and English for scientific terminology, units, and LaTeX notation.\n` +
+    `4. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
     `Example: $F = ma$, $s = ut + \\frac{1}{2}at^2$, $\\text{ms}^{-1}$.\n` +
-    `4. Adhere to official NCTB textbook curriculum definitions and formulas.\n` +
-    `5. Provide relatable real-life analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls).\n` +
+    `5. Adhere to official NCTB textbook curriculum definitions and formulas.\n` +
+    `6. Provide relatable real-life analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls).\n` +
     rule6 +
     academicContext +
     textbookSection +
