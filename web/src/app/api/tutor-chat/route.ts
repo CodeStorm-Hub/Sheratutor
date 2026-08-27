@@ -133,7 +133,7 @@ export async function POST(request: Request) {
       session = existing as ChatSession;
     } else {
       const contextJson = { questionText, studentAnswerChunk, rubricFailureReason, groundedContext: rubricGroundedContext };
-      const { data: created, error } = await supabase
+      let { data: created, error } = await supabase
         .from("tutor_chat_sessions")
         .insert({
           student_id: profile.id,
@@ -144,7 +144,24 @@ export async function POST(request: Request) {
           context_json: contextJson,
         })
         .select("id, mode, context_json")
-        .single();
+        .maybeSingle();
+
+      if (error && error.code === "23503") {
+        // Foreign key constraint failure (e.g. mock/seed submission or question ID)
+        const retry = await supabase
+          .from("tutor_chat_sessions")
+          .insert({
+            student_id: profile.id,
+            rubric_step_index: rubricStepIndex,
+            mode: "rubric",
+            context_json: contextJson,
+          })
+          .select("id, mode, context_json")
+          .single();
+        created = retry.data;
+        error = retry.error;
+      }
+
       if (error || !created) {
         return NextResponse.json({ error: error?.message ?? "failed to create session" }, { status: 500 });
       }
@@ -286,12 +303,17 @@ export async function POST(request: Request) {
             )
           );
 
+          const isNim = (process.env.GENKIT_REASONING_MODEL ?? "").startsWith("nim/") || Boolean(process.env.NVIDIA_NIM_API_KEY);
           const client = new OpenAI({
-            apiKey: process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA",
-            baseURL: process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1",
-            defaultHeaders: { "User-Agent": "Cline/3.0.0" },
+            apiKey: isNim
+              ? (process.env.NVIDIA_NIM_API_KEY ?? "")
+              : (process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA"),
+            baseURL: isNim
+              ? "https://integrate.api.nvidia.com/v1"
+              : (process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1"),
+            defaultHeaders: isNim ? undefined : { "User-Agent": "Cline/3.0.0" },
           });
-          const modelName = (process.env.GENKIT_REASONING_MODEL ?? "agentrouter/gpt-5.6-sol").replace(/^agentrouter\//, "");
+          const modelName = (process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b").replace(/^(?:nim|agentrouter)\//, "");
 
           const stream = await client.chat.completions.create({
             model: modelName,

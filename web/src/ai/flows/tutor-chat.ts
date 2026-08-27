@@ -1,5 +1,6 @@
 import { z } from "genkit";
 import { ai, MODELS } from "@/ai/genkit";
+import { OpenAI } from "openai";
 
 const SELF_HARM_PATTERNS = [
   /suicid/i, /kill myself/i, /self.?harm/i, /want to die/i, /আত্মহত্যা/, /মরে যেতে/,
@@ -206,23 +207,33 @@ export const tutorChatFlow = ai.defineFlow(
       languagePreference,
     });
 
-    let text: string;
+    let text: string = "";
     try {
-      ({ text } = await ai.generate({
+      const res = await ai.generate({
         model: MODELS.reasoning,
         prompt,
         config: { temperature: 0.5 },
-      }));
-    } catch (err) {
-      // The OpenAI SDK's APIConnectionError (surfaced by genkit as "Connection
-      // error.") hides the actual network failure — log err.cause so a prod
-      // 500 shows the real reason (DNS, timeout, refused, TLS) instead of
-      // just that generic message.
-      console.error("tutorChatFlow: ai.generate failed", {
-        message: err instanceof Error ? err.message : err,
-        cause: err instanceof Error ? err.cause : undefined,
       });
-      throw err;
+      text = res.text;
+    } catch (err) {
+      console.warn("tutorChatFlow ai.generate failed, falling back to direct NIM client:", err);
+      const isNim = (process.env.GENKIT_REASONING_MODEL ?? "").startsWith("nim/") || Boolean(process.env.NVIDIA_NIM_API_KEY);
+      const modelName = (process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b").replace(/^(?:nim|agentrouter)\//, "");
+      const client = new OpenAI({
+        apiKey: isNim
+          ? (process.env.NVIDIA_NIM_API_KEY ?? "")
+          : (process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA"),
+        baseURL: isNim
+          ? "https://integrate.api.nvidia.com/v1"
+          : (process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1"),
+        defaultHeaders: isNim ? undefined : { "User-Agent": "Cline/3.0.0" },
+      });
+      const completion = await client.chat.completions.create({
+        model: modelName,
+        messages: [{ role: "user", content: prompt }],
+        temperature: 0.5,
+      });
+      text = completion.choices?.[0]?.message?.content || "";
     }
 
     return { reply: stripLeadingGreeting(normalizeLatexDelimiters(text)), safety };

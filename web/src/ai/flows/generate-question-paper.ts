@@ -136,11 +136,16 @@ ${chapterTitles}
       }
     } catch (genkitErr) {
       console.warn("Direct generation failed, trying OpenAI client fallback:", genkitErr);
-      const fallbackModel = (process.env.GENKIT_PAPER_MODEL ?? "agentrouter/gpt-5.6-sol").replace(/^agentrouter\//, "");
+      const isNim = (process.env.GENKIT_PAPER_MODEL ?? "").startsWith("nim/") || Boolean(process.env.NVIDIA_NIM_API_KEY);
+      const fallbackModel = (process.env.GENKIT_PAPER_MODEL ?? "nim/nvidia/nemotron-3-nano-30b-a3b").replace(/^(?:nim|agentrouter)\//, "");
       const client = new OpenAI({
-        apiKey: process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA",
-        baseURL: process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1",
-        defaultHeaders: { "User-Agent": "Cline/3.0.0" },
+        apiKey: isNim
+          ? (process.env.NVIDIA_NIM_API_KEY ?? "")
+          : (process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA"),
+        baseURL: isNim
+          ? "https://integrate.api.nvidia.com/v1"
+          : (process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1"),
+        defaultHeaders: isNim ? undefined : { "User-Agent": "Cline/3.0.0" },
         timeout: 120000,
       });
 
