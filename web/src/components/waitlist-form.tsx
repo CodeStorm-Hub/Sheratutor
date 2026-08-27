@@ -80,8 +80,8 @@ export function WaitlistForm() {
             padding: '10px 14px',
             fontSize: 13,
             fontFamily: 'Inter, sans-serif',
-            background: '#fff',
-            color: 'var(--navy)',
+            background: 'var(--card)',
+            color: 'var(--foreground)',
             boxSizing: 'border-box',
           }}
         />
@@ -94,7 +94,7 @@ export function WaitlistForm() {
             display: 'block',
             fontSize: 12,
             fontWeight: 600,
-            color: 'var(--navy)',
+            color: 'var(--foreground)',
             marginBottom: 6,
           }}
         >
@@ -115,8 +115,8 @@ export function WaitlistForm() {
             padding: '10px 14px',
             fontSize: 13,
             fontFamily: 'Space Mono, monospace',
-            background: '#fff',
-            color: 'var(--navy)',
+            background: 'var(--card)',
+            color: 'var(--foreground)',
             boxSizing: 'border-box',
           }}
         />
@@ -129,7 +129,7 @@ export function WaitlistForm() {
             display: 'block',
             fontSize: 12,
             fontWeight: 600,
-            color: 'var(--navy)',
+            color: 'var(--foreground)',
             marginBottom: 6,
           }}
         >
@@ -149,8 +149,8 @@ export function WaitlistForm() {
             padding: '10px 14px',
             fontSize: 13,
             fontFamily: 'Inter, sans-serif',
-            background: '#fff',
-            color: 'var(--navy)',
+            background: 'var(--card)',
+            color: 'var(--foreground)',
             boxSizing: 'border-box',
           }}
         />
@@ -164,7 +164,7 @@ export function WaitlistForm() {
               display: 'block',
               fontSize: 12,
               fontWeight: 600,
-              color: 'var(--navy)',
+              color: 'var(--foreground)',
               marginBottom: 6,
             }}
           >
@@ -183,8 +183,8 @@ export function WaitlistForm() {
               padding: '10px 12px',
               fontSize: 13,
               fontFamily: 'Inter, sans-serif',
-              background: '#fff',
-              color: 'var(--navy)',
+              background: 'var(--card)',
+              color: 'var(--foreground)',
               boxSizing: 'border-box',
             }}
           >
@@ -200,7 +200,7 @@ export function WaitlistForm() {
               display: 'block',
               fontSize: 12,
               fontWeight: 600,
-              color: 'var(--navy)',
+              color: 'var(--foreground)',
               marginBottom: 6,
             }}
           >
@@ -223,8 +223,8 @@ export function WaitlistForm() {
               padding: '10px 12px',
               fontSize: 13,
               fontFamily: 'Space Mono, monospace',
-              background: '#fff',
-              color: 'var(--navy)',
+              background: 'var(--card)',
+              color: 'var(--foreground)',
               boxSizing: 'border-box',
             }}
           />

@@ -186,28 +186,28 @@ export function LandingRubricDemo() {
   const subject = DEMO_SUBJECTS.find((s) => s.id === activeSubjectId) || DEMO_SUBJECTS[0];
 
   return (
-    <div className="w-full bg-white rounded-2xl border border-[#dde4dd] shadow-[0_8px_30px_rgba(20,37,31,0.04)] overflow-hidden">
+    <div className="w-full bg-card rounded-2xl border border-border shadow-md overflow-hidden text-card-foreground">
       {/* Header Bar */}
-      <div className="bg-[#f7f8f5] border-b border-[#dde4dd] px-4 sm:px-6 py-4 flex flex-wrap items-center justify-between gap-3">
+      <div className="bg-muted/40 border-b border-border px-4 sm:px-6 py-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
-          <span className="w-2.5 h-2.5 rounded-full bg-[#d92638]" />
-          <span className="font-mono text-xs font-bold uppercase tracking-wider text-[#52655d]">
+          <span className="w-2.5 h-2.5 rounded-full bg-destructive" />
+          <span className="font-mono text-xs font-bold uppercase tracking-wider text-muted-foreground">
             {language === 'bn' ? 'NCTB বোর্ড মার্কিং রুব্রিক সিমুলেটর' : 'NCTB BOARD MARKING RUBRIC SIMULATOR'}
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#e2f0e9] text-[#00543d] font-mono text-xs font-bold">
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/15 text-primary font-mono text-xs font-bold">
             <Sparkles size={12} />
             {language === 'bn' ? subject.boardBn : subject.boardEn}
           </span>
-          <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-[#fdeaec] text-[#d92638] font-mono text-xs font-bold">
+          <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-destructive/15 text-destructive font-mono text-xs font-bold">
             {language === 'bn' ? `স্কোর: ${subject.totalScoreBn}` : `Score: ${subject.totalScoreEn}`}
           </span>
         </div>
       </div>
 
       {/* Subject Selector Tabs */}
-      <div className="flex border-b border-[#dde4dd] bg-[#ffffff] overflow-x-auto p-1.5 gap-1.5">
+      <div className="flex border-b border-border bg-card overflow-x-auto p-1.5 gap-1.5">
         {DEMO_SUBJECTS.map((s) => {
           const isActive = s.id === activeSubjectId;
           return (
@@ -217,8 +217,8 @@ export function LandingRubricDemo() {
               onClick={() => setActiveSubjectId(s.id)}
               className={`px-3.5 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-all duration-150 flex items-center gap-1.5 ${
                 isActive
-                  ? 'bg-[#006a4e] text-white shadow-sm'
-                  : 'text-[#52655d] hover:bg-[#f7f8f5] hover:text-[#14251f]'
+                  ? 'bg-primary text-primary-foreground shadow-xs'
+                  : 'text-muted-foreground hover:bg-muted hover:text-foreground'
               }`}
             >
               <BookOpen size={13} />
@@ -229,17 +229,17 @@ export function LandingRubricDemo() {
       </div>
 
       {/* CQ Prompt & Equation Strip */}
-      <div className="p-4 sm:p-6 bg-[#ffffff] border-b border-[#dde4dd]">
+      <div className="p-4 sm:p-6 bg-card border-b border-border">
         <div className="flex items-start gap-3">
-          <div className="w-1.5 h-12 bg-[#006a4e] rounded-full flex-shrink-0 mt-1" />
+          <div className="w-1.5 h-12 bg-primary rounded-full flex-shrink-0 mt-1" />
           <div className="flex-1 min-w-0">
-            <span className="font-mono text-xs font-bold text-[#b97f08] uppercase tracking-wider block mb-1">
+            <span className="font-mono text-xs font-bold text-accent-foreground uppercase tracking-wider block mb-1">
               {language === 'bn' ? 'সৃজনশীল প্রশ্ন উদ্দীপক' : 'QUESTION STIMULUS & PROBLEM'}
             </span>
-            <p className="text-sm font-medium text-[#14251f] leading-relaxed m-0">
+            <p className="text-sm font-medium text-foreground leading-relaxed m-0">
               {language === 'bn' ? subject.cqPromptBn : subject.cqPromptEn}
             </p>
-            <div className="mt-2.5 inline-block px-3 py-1.5 rounded-md bg-[#f7f8f5] border border-[#dde4dd] font-mono text-xs text-[#00543d]">
+            <div className="mt-2.5 inline-block px-3 py-1.5 rounded-md bg-muted/50 border border-border font-mono text-xs text-primary">
               {subject.formula}
             </div>
           </div>
@@ -247,15 +247,15 @@ export function LandingRubricDemo() {
       </div>
 
       {/* Granular Step-by-Step Examiner Evaluation */}
-      <div className="p-4 sm:p-6 bg-[#fafbf9] flex flex-col gap-3.5">
+      <div className="p-4 sm:p-6 bg-muted/20 flex flex-col gap-3.5">
         <div className="flex items-center justify-between">
-          <span className="font-mono text-xs font-bold text-[#14251f] uppercase tracking-wider">
+          <span className="font-mono text-xs font-bold text-foreground uppercase tracking-wider">
             {language === 'bn' ? 'বোর্ড পরীক্ষকের পুঙ্খানুপুঙ্খ ব্যবচ্ছেদ' : 'EXAMINER STEP BREAKDOWN'}
           </span>
           <button
             type="button"
             onClick={() => setShowRecovery(!showRecovery)}
-            className="text-xs text-[#006a4e] font-semibold hover:underline flex items-center gap-1"
+            className="text-xs text-primary font-semibold hover:underline flex items-center gap-1"
           >
             {showRecovery
               ? language === 'bn'
@@ -273,38 +273,38 @@ export function LandingRubricDemo() {
             return (
               <div
                 key={idx}
-                className={`rounded-xl p-3.5 sm:p-4 transition-all ${
+                className={`rounded-xl p-3.5 sm:p-4 transition-all bg-card ${
                   isDeduction
-                    ? 'bg-[#ffffff] border-l-[3px] border-l-[#d92638] border-t border-r border-b border-[#dde4dd] shadow-sm'
-                    : 'bg-[#ffffff] border border-[#dde4dd]'
+                    ? 'border-l-[3px] border-l-destructive border-t border-r border-b border-border shadow-xs'
+                    : 'border border-border'
                 }`}
               >
                 <div className="flex items-start justify-between gap-2 mb-1.5">
                   <div className="flex items-center gap-2 flex-wrap">
-                    <span className="font-mono text-xs font-bold text-[#52655d]">
+                    <span className="font-mono text-xs font-bold text-muted-foreground">
                       {step.stepCode}
                     </span>
-                    <span className="text-xs font-bold text-[#14251f]">
+                    <span className="text-xs font-bold text-foreground">
                       {language === 'bn' ? step.stepNameBn : step.stepNameEn}
                     </span>
                   </div>
                   <span
                     className={`font-mono text-xs font-bold px-2 py-0.5 rounded-full ${
                       isDeduction
-                        ? 'bg-[#fdeaec] text-[#d92638]'
-                        : 'bg-[#e2f0e9] text-[#00543d]'
+                        ? 'bg-destructive/15 text-destructive'
+                        : 'bg-primary/15 text-primary'
                     }`}
                   >
                     {step.mark}
                   </span>
                 </div>
 
-                <p className="text-xs text-[#52655d] leading-relaxed m-0">
+                <p className="text-xs text-muted-foreground leading-relaxed m-0">
                   {language === 'bn' ? step.detailBn : step.detailEn}
                 </p>
 
                 {showRecovery && step.recoveryBn && (
-                  <div className="mt-2.5 pt-2.5 border-t border-[#dde4dd] flex items-start gap-2 text-xs text-[#d92638] bg-[#fffbfb] -mx-3.5 -mb-3.5 p-3 rounded-b-xl">
+                  <div className="mt-2.5 pt-2.5 border-t border-border flex items-start gap-2 text-xs text-destructive bg-destructive/5 -mx-3.5 -mb-3.5 p-3 rounded-b-xl">
                     <AlertTriangle size={14} className="flex-shrink-0 mt-0.5" />
                     <span className="font-medium">
                       {language === 'bn' ? step.recoveryBn : step.recoveryEn}
