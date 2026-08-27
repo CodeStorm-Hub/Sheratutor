@@ -5,12 +5,13 @@
 @custom-variant dark (&:is(.dark, .dark *));
 
 /*
- * SheraTutor "খাতা" (exam script) design system. Light theme = ruled paper
- * khata; dark theme = blackboard with chalk-tinted text. Bottle green is the
- * brand primary; examiner red is a deliberately scarce accent for marks,
- * critical gaps, and the signature "margin rule" — never a general CTA
- * color, so it keeps its meaning ("the examiner marked this").
- * Bengali-script text should use the `-bn` font vars (see layout.tsx).
+ * SheraTutor Modern Dual-Theme Design System
+ * --------------------------------------------------------------------------
+ * Light Theme: "Academic Daylight" — Crisp porcelain canvas, pure floating cards,
+ *              deep Oxford Navy typography, and vibrant energetic accents.
+ * Dark Theme:  "Cosmic Study" — 4-tier stepped surface luminance (#0B0E17 canvas,
+ *              #121724 card, #1A2132 hover/input, #252E44 active), 1px hairline
+ *              borders, and luminous neon accents.
  */
 @theme inline {
   --color-background: var(--background);
@@ -18,25 +19,21 @@
   --font-sans: var(--font-body);
   --font-mono: var(--font-mono-eyebrow);
   --font-heading: var(--font-display);
-  --font-serif: var(--font-serif-bn);
+  --font-serif: var(--font-body-bn);
 
-  --color-ink: #14251f;
-  --color-ink-soft: #52655d;
-  --color-paper: #f7f8f5;
-  --color-paper-card: #ffffff;
-  --color-line: #dde4dd;
-  --color-blackboard: #0f1c17;
-  --color-blackboard-card: #16261f;
+  --color-surface-0: var(--surface-0);
+  --color-surface-1: var(--surface-1);
+  --color-surface-2: var(--surface-2);
+  --color-surface-3: var(--surface-3);
 
-  --color-green: #006a4e;
-  --color-green-deep: #00543d;
-  --color-green-soft: #e2f0e9;
-  --color-red: #d92638;
-  --color-red-deep: #b81e2e;
-  --color-red-soft: #fdeaec;
-  --color-ochre: #b97f08;
-  --color-ochre-deep: #8f6206;
-  --color-ochre-soft: #fbf3dc;
+  --color-navy: var(--navy);
+  --color-muted: var(--muted);
+  --color-paper: var(--paper);
+  --color-coral: var(--coral);
+  --color-mint: var(--mint);
+  --color-sun: var(--sun);
+  --color-border: var(--border);
+
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -45,19 +42,20 @@
   --color-sidebar-primary: var(--sidebar-primary);
   --color-sidebar-foreground: var(--sidebar-foreground);
   --color-sidebar: var(--sidebar);
-  --color-chart-5: var(--chart-5);
-  --color-chart-4: var(--chart-4);
-  --color-chart-3: var(--chart-3);
-  --color-chart-2: var(--chart-2);
+
   --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
   --color-ring: var(--ring);
   --color-input: var(--input);
-  --color-border: var(--border);
   --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
   --color-accent-foreground: var(--accent-foreground);
   --color-accent: var(--accent);
   --color-muted-foreground: var(--muted-foreground);
-  --color-muted: var(--muted);
   --color-secondary-foreground: var(--secondary-foreground);
   --color-secondary: var(--secondary);
   --color-primary-foreground: var(--primary-foreground);
@@ -66,6 +64,7 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -76,113 +75,171 @@
 }
 
 :root {
-  --background: var(--color-paper);
-  --foreground: var(--color-ink);
-  --card: var(--color-paper-card);
-  --card-foreground: var(--color-ink);
-  --popover: var(--color-paper-card);
-  --popover-foreground: var(--color-ink);
-  --primary: var(--color-green);
+  /* Light Theme Base */
+  --background: #f8f9fc;
+  --foreground: #0f172a;
+
+  /* Stepped Surfaces */
+  --surface-0: #f8f9fc;
+  --surface-1: #ffffff;
+  --surface-2: #f1f5f9;
+  --surface-3: #e2e8f0;
+
+  /* Card & Popover */
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+
+  /* Primary & Accents */
+  --primary: #14182b;
   --primary-foreground: #ffffff;
-  --secondary: var(--color-green-soft);
-  --secondary-foreground: var(--color-green-deep);
-  --muted: #eef0ea;
-  --muted-foreground: var(--color-ink-soft);
-  --accent: var(--color-ochre-soft);
-  --accent-foreground: var(--color-ochre);
-  --destructive: var(--color-red);
-  --border: var(--color-line);
-  --input: var(--color-line);
-  --ring: var(--color-green);
-  --chart-1: var(--color-green);
-  --chart-2: var(--color-ochre);
-  --chart-3: var(--color-red);
-  --chart-4: var(--color-ink-soft);
-  --chart-5: var(--color-ink);
-  --radius: 0.6rem;
-  --sidebar: var(--color-paper-card);
-  --sidebar-foreground: var(--color-ink);
-  --sidebar-primary: var(--color-green);
+  --secondary: #f1f5f9;
+  --secondary-foreground: #1e293b;
+
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #fff7f5;
+  --accent-foreground: #ff5a43;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #ff6b57;
+
+  /* Brand Tokens */
+  --navy: #14182b;
+  --paper: #f8f9fc;
+  --coral: #ff6b57;
+  --mint: #10b981;
+  --sun: #f59e0b;
+
+  /* Sidebar Tokens */
+  --sidebar: #ffffff;
+  --sidebar-foreground: #0f172a;
+  --sidebar-primary: #14182b;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: var(--color-green-soft);
-  --sidebar-accent-foreground: var(--color-green-deep);
-  --sidebar-border: var(--color-line);
-  --sidebar-ring: var(--color-green);
+  --sidebar-accent: #f1f5f9;
+  --sidebar-accent-foreground: #0f172a;
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: #ff6b57;
+
+  /* Charts */
+  --chart-1: #ff6b57;
+  --chart-2: #10b981;
+  --chart-3: #f59e0b;
+  --chart-4: #6366f1;
+  --chart-5: #0f172a;
+
+  --radius: 0.75rem;
 }
 
 .dark {
-  --color-paper: var(--color-blackboard);
-  --color-paper-card: var(--color-blackboard-card);
-  --color-ink: #e8efe9;
-  --color-ink-soft: #9db3a8;
-  --color-line: oklch(1 0 0 / 12%);
-  --color-green-soft: rgba(52, 185, 138, 0.15);
-  --color-ochre-soft: rgba(230, 195, 92, 0.15);
-  --color-red-soft: rgba(255, 107, 122, 0.15);
+  /* Dark Theme Base (Cosmic Slate - non-halation) */
+  --background: #0b0e17;
+  --foreground: #f1f5f9;
 
-  --background: var(--color-blackboard);
-  --foreground: #e8efe9;
-  --card: var(--color-blackboard-card);
-  --card-foreground: #e8efe9;
-  --popover: var(--color-blackboard-card);
-  --popover-foreground: #e8efe9;
-  --primary: #34b98a;
-  --primary-foreground: var(--color-blackboard);
-  --secondary: #123527;
-  --secondary-foreground: #9bebc9;
-  --muted: #1c2b23;
-  --muted-foreground: #9db3a8;
-  --accent: #33290f;
-  --accent-foreground: #e6c35c;
-  --destructive: #ff6b7a;
-  --border: oklch(1 0 0 / 12%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: #34b98a;
-  --chart-1: #34b98a;
-  --chart-2: #e6c35c;
-  --chart-3: #ff6b7a;
-  --chart-4: #9db3a8;
-  --chart-5: #e8efe9;
-  --sidebar: var(--color-blackboard-card);
-  --sidebar-foreground: #e8efe9;
-  --sidebar-primary: #34b98a;
-  --sidebar-primary-foreground: var(--color-blackboard);
-  --sidebar-accent: oklch(1 0 0 / 8%);
-  --sidebar-accent-foreground: #e8efe9;
-  --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: #34b98a;
+  /* Stepped Dark Surfaces */
+  --surface-0: #0b0e17;
+  --surface-1: #121724;
+  --surface-2: #1a2132;
+  --surface-3: #252e44;
+
+  /* Card & Popover */
+  --card: #121724;
+  --card-foreground: #f1f5f9;
+  --popover: #161c2c;
+  --popover-foreground: #f1f5f9;
+
+  /* Primary & Accents */
+  --primary: #f8fafc;
+  --primary-foreground: #0b0e17;
+  --secondary: #1a2132;
+  --secondary-foreground: #e2e8f0;
+
+  --muted: #171e2e;
+  --muted-foreground: #94a3b8;
+  --accent: #261b1d;
+  --accent-foreground: #ff7e6e;
+
+  --destructive: #f87171;
+  --destructive-foreground: #0b0e17;
+
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.12);
+  --ring: #ff6b57;
+
+  /* Brand Tokens */
+  --navy: #121724;
+  --paper: #0b0e17;
+  --coral: #ff6b57;
+  --mint: #2dd4bf;
+  --sun: #fbbf24;
+
+  /* Sidebar Tokens */
+  --sidebar: #121724;
+  --sidebar-foreground: #f1f5f9;
+  --sidebar-primary: #ff6b57;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1a2132;
+  --sidebar-accent-foreground: #f1f5f9;
+  --sidebar-border: rgba(255, 255, 255, 0.08);
+  --sidebar-ring: #ff6b57;
+
+  /* Charts */
+  --chart-1: #ff6b57;
+  --chart-2: #2dd4bf;
+  --chart-3: #fbbf24;
+  --chart-4: #818cf8;
+  --chart-5: #e2e8f0;
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
     scrollbar-width: thin;
-    scrollbar-color: rgba(150, 150, 150, 0.3) transparent;
+    scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
   }
+
   .dark * {
-    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
+    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
   }
+
+  ::selection {
+    background: rgba(255, 107, 87, 0.25);
+    color: inherit;
+  }
+
+  .dark ::selection {
+    background: rgba(255, 107, 87, 0.35);
+    color: #ffffff;
+  }
+
   body {
     @apply bg-background text-foreground;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
+
   html {
     @apply font-sans;
   }
+
   h1,
   h2,
   h3,
   h4 {
-    @apply font-heading;
+    @apply font-heading tracking-tight;
   }
-  /* Bengali-script text should override to the Bengali-covering face. */
+
+  /* Bengali script typography overrides */
   :lang(bn) {
     --font-sans: var(--font-body-bn);
     --font-heading: var(--font-display-bn);
   }
 
-  /* Respect reduced-motion: kill layout transitions and hover/active
-     transforms, but leave in-progress loading spinners alone — those
-     communicate "still working," not decoration. */
+  /* Accessible Reduced Motion */
   @media (prefers-reduced-motion: reduce) {
     *:not(.animate-spin):not(.animate-pulse) {
       transition-duration: 0.001ms !important;
@@ -192,24 +249,18 @@
   }
 }
 
-@utility eyebrow {
-  font-family: var(--font-mono-eyebrow);
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-}
-
-/*
- * The signature "খাতা" element: the examiner's red margin rule, run down
- * the left edge of a surface — section headers, the score column of a
- * graded answer, the active nav item. Used sparingly; it marks the one
- * place on a page where the examiner has spoken.
- */
-@utility margin-rule {
-  border-inline-start: 1px solid var(--color-red);
-  padding-inline-start: 0.75rem;
-}
-
 @utility font-tabular {
   font-variant-numeric: tabular-nums;
+}
+
+@utility glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  @variant dark {
+    background: rgba(18, 23, 36, 0.82);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
 }
