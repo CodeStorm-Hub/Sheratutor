@@ -43,9 +43,13 @@ Unlike generic AI tutors or Western-centric ed-tech platforms, SheraTutor is gro
 - **Name & Domain:** SheraTutor (`sheratutor.ai`), "Shera" meaning "best/top" in Bangla.
 - **Tagline:** "SheraTutor, for **Shera**Students"
 - **Visual Identity:**
-  - Dominant colors: Ink Navy (`#14182B`), Card Navy (`#1E2761`), Paper White (`#FFFFFF`), Paper Gray (`#F4F5FB`).
-  - Signature Accents: Coral (`#FF6B57`, primary action/wordmark), Mint (`#23D9A5`, AI indicator/sparkle), Sunshine (`#FFC93C`, merit star).
-  - Typography: Baloo 2 (headlines/wordmarks - energetic, youthful), Inter (clean UI body text), Space Mono (labels, precision exam stats).
+  - Creative North Star: "The Board Examiner's Khata & Classroom Blackboard".
+  - Light Theme (Khata Paper): Warm off-white paper (`#F7F8F5`), white card surface (`#FFFFFF`), crisp deep ink (`#14251F`), and 1px ruled dividing lines (`#DDE4DD`).
+  - Dark Theme (Blackboard): Low-strain deep slate canvas (`#0F1C17`), blackboard cards (`#16261F` / `#10221A`), and high-contrast chalk typography (`#E8EFE9` / `#A3B8AD`).
+  - Primary Brand Anchor: National Bottle Green (`#006A4E` / `#00543D`) representing academic excellence and verified progress.
+  - Signature Accents: Brand Coral (`#FF6B57`, student CTA & action), Mint (`#23D9A5`, AI indicator/sparkle), Sunshine Ochre (`#FFC93C` / `#B97F08`, merit marks & GPA-5 stars).
+  - Examiner Red Rule: Disciplined red (`#D92638`) strictly reserved for mark deductions, step gaps, and the signature margin rule.
+  - Typography: Baloo 2 (headlines/wordmarks - energetic, youthful), Inter (dense rubric body text), Noto Sans Bengali (native Bangla diacritic support), Space Mono (labels, precision exam stats).
   - Iconography: Tilted exam answer script with coral grading tick, mint AI sparkle, and sunshine merit star.
 - **Voice & Tone:** Warm, aspirational, energetic, encouraging, culturally rooted in Bangladeshi student life, avoiding generic corporate SaaS jargon.
 

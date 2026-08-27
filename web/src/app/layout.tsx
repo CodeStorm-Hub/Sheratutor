@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import React from 'react';
+import { Baloo_2, Inter, Space_Mono, Noto_Sans_Bengali } from 'next/font/google';
 import './globals.css';
 import '@/styles.css';
 import '@/pages.css';
@@ -8,6 +9,34 @@ import 'katex/dist/katex.min.css';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { Toaster } from '@/components/ui/sonner';
+
+const baloo2 = Baloo_2({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  variable: '--font-display',
+  display: 'swap',
+});
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-body',
+  display: 'swap',
+});
+
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-mono-eyebrow',
+  display: 'swap',
+});
+
+const notoSansBengali = Noto_Sans_Bengali({
+  subsets: ['bengali'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-body-bn',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'SheraTutor — HSC & SSC AI Learning Workspace',
@@ -24,7 +53,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="bn" suppressHydrationWarning>
+    <html
+      lang="bn"
+      suppressHydrationWarning
+      className={`${baloo2.variable} ${inter.variable} ${spaceMono.variable} ${notoSansBengali.variable}`}
+    >
       <body>
         <ThemeProvider>
           <LanguageProvider>
