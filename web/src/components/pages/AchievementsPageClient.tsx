@@ -1,22 +1,21 @@
 'use client';
 
 import React from 'react';
-import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
-import { ArrowUpRight } from 'lucide-react';
+import { Award, Share2 } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
 export interface BadgeItem {
   icon: string;
   value: string;
   title: string;
-  title_bn?: string;
+  title_bn: string;
   description: string;
-  description_bn?: string;
+  description_bn: string;
   unlocked: boolean;
 }
 
-interface AchievementsClientProps {
+interface Props {
   currentLevel: number;
   earnedXp: number;
   xpNeeded: number;
@@ -24,71 +23,75 @@ interface AchievementsClientProps {
   badges: BadgeItem[];
 }
 
-export function AchievementsPageClient({
-  currentLevel,
-  earnedXp,
-  xpNeeded,
-  progressPct,
-  badges,
-}: AchievementsClientProps) {
+export function AchievementsPageClient({ currentLevel, earnedXp, xpNeeded, progressPct, badges }: Props) {
   const { language, t } = useLanguage();
 
-  const getRankTitle = (lvl: number) => {
-    if (language === 'bn') {
-      if (lvl >= 5) return 'বোর্ড স্কলার';
-      if (lvl >= 3) return 'উদীয়মান শিক্ষার্থী';
-      return 'শিক্ষানবিস';
+  const handleShare = async () => {
+    if (navigator.share) {
+      try {
+        await navigator.share({
+          title: 'SheraTutor Level Up!',
+          text: `I just reached Level ${currentLevel} on SheraTutor with ${earnedXp} XP!`,
+          url: window.location.href,
+        });
+      } catch (err) {
+        console.error('Error sharing:', err);
+      }
+    } else {
+      alert(language === 'bn' ? 'শেয়ারিং অপশন সমর্থিত নয়' : 'Web Share API not supported in this browser');
     }
-    if (lvl >= 5) return 'Board Scholar';
-    if (lvl >= 3) return 'Rising Scholar';
-    return 'Apprentice Learner';
+  };
+
+  // Safe fallback for i18n
+  const safeT = (key: string) => {
+    try {
+      return (t as any)(key);
+    } catch {
+      return key;
+    }
   };
 
   return (
     <>
       <PageHeader
-        title={t('achievements.title')}
-        description={t('achievements.desc')}
+        title={safeT('achievements.title')}
+        description={safeT('achievements.desc')}
       >
-        <button type="button" className="primary-btn">
-          {t('achievements.share')} <ArrowUpRight size={15} />
+        <button type="button" className="ghost-btn" onClick={handleShare}>
+          <Share2 size={16} /> Share
         </button>
       </PageHeader>
 
-      <section className="achievement-hero">
-        <div>
-          <Tag color="sun">
-            {language === 'bn' ? `লেভেল ${currentLevel}` : `LEVEL ${currentLevel}`}
-          </Tag>
-          <h2>{getRankTitle(currentLevel)}</h2>
-          <p>
-            {earnedXp} {t('achievements.xp_earned')} &nbsp;&middot;&nbsp; {xpNeeded} {t('achievements.to_next_level')} {currentLevel + 1}
-          </p>
-          <i>
-            <em style={{ width: `${progressPct}%` }} />
-          </i>
+      <div className="achievements-hero">
+        <div className="level-badge">
+          <Award size={48} color="#fff" />
         </div>
-        <span>🏆</span>
-      </section>
+        <h1>{language === 'bn' ? `লেভেল ${currentLevel}: বোর্ড স্কলার` : `Level ${currentLevel}: Board Scholar`}</h1>
+        <p>{language === 'bn' ? 'অসাধারণ! তোমার প্রস্তুতি এগিয়ে যাচ্ছে।' : 'Incredible! Your preparation is moving forward.'}</p>
+        
+        <div className="xp-bar-container">
+          <div className="xp-meta">
+            <span>{earnedXp} XP</span>
+            <span>{xpNeeded} XP to Level {currentLevel + 1}</span>
+          </div>
+          <div className="xp-track">
+            <span style={{ width: `${progressPct}%` }} />
+          </div>
+        </div>
+      </div>
 
-      <section className="achievement-grid">
-        {badges.map((a) => {
-          const badgeTitle = language === 'bn' && a.title_bn ? a.title_bn : a.title;
-          const badgeDesc = language === 'bn' && a.description_bn ? a.description_bn : a.description;
-          return (
-            <article
-              key={a.title}
-              style={{ opacity: a.unlocked ? 1 : 0.65 }}
-            >
-              <span>{a.icon}</span>
-              <Tag color={a.unlocked ? 'mint' : 'lilac'}>{a.value}</Tag>
-              <h3>{badgeTitle}</h3>
-              <b>{a.unlocked ? t('common.unlocked') : t('common.locked')}</b>
-              <p>{badgeDesc}</p>
-            </article>
-          );
-        })}
-      </section>
+      <div className="badges-grid mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+        {badges.map((badge, idx) => (
+          <div key={idx} className={`p-6 border rounded-xl flex flex-col items-center text-center ${!badge.unlocked ? 'opacity-50 grayscale' : ''}`}>
+            <div className={`w-16 h-16 ${badge.unlocked ? 'bg-mint/20 text-mint' : 'bg-gray-100 text-gray-400'} rounded-full flex items-center justify-center mb-4 text-2xl`}>
+              {badge.icon}
+            </div>
+            <h3 className="font-bold">{language === 'bn' ? badge.title_bn : badge.title}</h3>
+            <p className="text-sm text-gray-500 mt-2">{language === 'bn' ? badge.description_bn : badge.description}</p>
+            <div className="mt-4 text-xs font-semibold">{badge.value}</div>
+          </div>
+        ))}
+      </div>
     </>
   );
 }

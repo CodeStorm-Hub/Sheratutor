@@ -1,12 +1,26 @@
 import { createClient } from '@/lib/supabase/server';
 import { ExamsPageClient } from '@/components/pages/ExamsPageClient';
 
-export default async function BoardSimulatorPage() {
+export default async function BoardSimulatorPage({ searchParams }: { searchParams: { paperId?: string } }) {
   const supabase = await createClient();
-  const { data: papers } = await supabase
+  
+  let query = supabase
     .from('question_papers')
-    .select('id, title, total_marks, subjects(name_en)')
-    .limit(6);
+    .select(`
+      id, title, total_marks, difficulty, paper_type,
+      subjects(name_en, name_bn),
+      questions(
+        id, question_number, question_type, max_marks,
+        stimulus_bn, stimulus_en, sub_questions_json,
+        mcq_options_json, mcq_correct_option, question_text_bn, question_text_en
+      )
+    `);
+    
+  if (searchParams.paperId) {
+    query = query.eq('id', searchParams.paperId);
+  }
+  
+  const { data: papers } = await query.limit(1);
 
   return <ExamsPageClient simulator={true} papers={papers ?? []} />;
 }

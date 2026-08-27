@@ -343,7 +343,7 @@ export function DashboardPageClient({
             </Link>
           </div>
 
-          <BarChart />
+          <BarChart data={hasSubmissions ? undefined : [0,0,0,0,0,0,0]} />
 
           <div className="progress-stats">
             <div>

@@ -32,10 +32,12 @@ function subjectName(subjects: Paper["subjects"]): string {
   return Array.isArray(subjects) ? (subjects[0]?.name_en ?? "") : subjects.name_en;
 }
 
-export function UploadForm({ papers }: { papers: Paper[] }) {
+export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initialPaperId?: string }) {
   const router = useRouter();
   const [pages, setPages] = useState<PageEntry[]>([]);
-  const [paperId, setPaperId] = useState<string>(papers[0]?.id ?? "");
+  // Use initialPaperId if it matches a paper, otherwise fallback to the first paper.
+  const matchedPaperId = initialPaperId && papers.some((p) => p.id === initialPaperId) ? initialPaperId : papers[0]?.id ?? "";
+  const [paperId, setPaperId] = useState<string>(matchedPaperId);
   const [status, setStatus] = useState<"idle" | "uploading" | "error">("idle");
   const [uploadProgress, setUploadProgress] = useState<{ done: number; total: number } | null>(null);
   const [error, setError] = useState<string | null>(null);
