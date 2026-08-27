@@ -16,9 +16,15 @@ const GeneratePaperSchema = z.object({
 export type GeneratePaperState = { status: "idle" | "error"; message?: string };
 
 export async function generatePaper(_prev: GeneratePaperState, formData: FormData): Promise<GeneratePaperState> {
+  const chapterIds = formData
+    .getAll("chapterIds")
+    .flatMap((c) => String(c).split(","))
+    .map((s) => s.trim())
+    .filter(Boolean);
+
   const raw = {
     subjectId: String(formData.get("subjectId") ?? ""),
-    chapterIds: formData.getAll("chapterIds").map(String),
+    chapterIds,
     paperType: String(formData.get("paperType") ?? ""),
     difficulty: String(formData.get("difficulty") ?? ""),
     totalMarks: String(formData.get("totalMarks") ?? ""),
@@ -59,6 +65,7 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
     return { status: "error", message: "Couldn't generate any questions — try different chapters." };
   }
 
+  const actualTotalMarks = generated.questions.reduce((sum, q) => sum + (q.max_marks || 0), 0);
   const title = `${subject.name_en} Practice — ${new Date().toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`;
 
   const { data: paper, error: paperErr } = await supabase
@@ -69,8 +76,8 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
       title,
       paper_type: parsed.data.paperType,
       difficulty: parsed.data.difficulty,
-      total_marks: parsed.data.totalMarks,
-      is_public_template: false,
+      total_marks: actualTotalMarks > 0 ? actualTotalMarks : parsed.data.totalMarks,
+      is_public_template: true,
     })
     .select("id")
     .single();
@@ -79,30 +86,65 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
   for (let i = 0; i < generated.questions.length; i++) {
     const q = generated.questions[i];
 
+    // Build criteria_json from sub_questions (for CQ) or a single rule (for MCQ)
+    let criteria_json: any = [];
+    if (q.question_type === "CQ" && q.sub_questions && q.sub_questions.length > 0) {
+      criteria_json = q.sub_questions.map((subq) => ({
+        step_name: `Part (${subq.part})`,
+        max_step_marks: subq.marks,
+        matching_rules: subq.rubric_step_rules || `Accurate scientific answer for part (${subq.part})`,
+      }));
+    } else if (q.question_type === "MCQ") {
+      criteria_json = [
+        {
+          step_name: "Correct Option",
+          max_step_marks: q.max_marks || 1,
+          matching_rules: `Student must select ${q.mcq_correct_option || 'the correct option'}`,
+        },
+      ];
+    }
+
     const { data: rubric, error: rubricErr } = await supabase
       .from("rubrics")
       .insert({
         chapter_id: q.chapter_id,
         title: `${title} — Q${i + 1}`,
-        criteria_json: q.rubric_criteria,
+        criteria_json,
         is_active: true,
         created_by: user.id,
       })
       .select("id")
       .single();
-    if (rubricErr || !rubric) return { status: "error", message: rubricErr?.message ?? "Failed to save rubric." };
+
+    if (rubricErr || !rubric) {
+      console.error("Failed to insert rubric:", rubricErr);
+      await supabase.from("question_papers").delete().eq("id", paper.id);
+      return { status: "error", message: rubricErr?.message ?? "Failed to save rubric." };
+    }
 
     const { error: questionErr } = await supabase.from("questions").insert({
       question_paper_id: paper.id,
       chapter_id: q.chapter_id,
       rubric_id: rubric.id,
       question_number: i + 1,
-      question_text_bn: q.question_text_bn,
-      question_text_en: q.question_text_en,
-      max_marks: q.max_marks,
+      max_marks: q.max_marks || (q.question_type === "CQ" ? 10 : 1),
+      question_type: q.question_type,
+      stimulus_bn: q.stimulus_bn || null,
+      stimulus_en: q.stimulus_en || null,
+      sub_questions_json: q.sub_questions ? JSON.stringify(q.sub_questions) : null,
+      mcq_options_json: q.mcq_options ? JSON.stringify(q.mcq_options) : null,
+      mcq_correct_option: q.mcq_correct_option || null,
+      question_text_bn: q.question_type === "MCQ" ? (q.mcq_question_bn || "") : (q.stimulus_bn || ""),
+      question_text_en: q.question_type === "MCQ" ? (q.mcq_question_en || "") : (q.stimulus_en || ""),
     });
-    if (questionErr) return { status: "error", message: questionErr.message };
+
+    if (questionErr) {
+      console.error("Failed to insert question:", questionErr);
+      await supabase.from("question_papers").delete().eq("id", paper.id);
+      return { status: "error", message: questionErr.message };
+    }
   }
 
-  redirect(`/dashboard/upload?paperId=${paper.id}`);
+  // Redirect to Question Paper Viewer
+  redirect(`/dashboard/practice/${paper.id}`);
 }

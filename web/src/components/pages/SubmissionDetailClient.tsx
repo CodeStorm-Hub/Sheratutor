@@ -1,10 +1,10 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
-import { Check, ChevronRight, Maximize2, Sparkles, Upload } from 'lucide-react';
+import { Check, ChevronRight, ChevronLeft, Maximize2, Sparkles, Upload } from 'lucide-react';
 import { ExplainSimplyButton } from '@/components/explain-simply-button';
 import { useLanguage } from '@/context/LanguageContext';
 
@@ -63,6 +63,7 @@ export function SubmissionDetailClient({
   pages,
 }: SubmissionDetailClientProps) {
   const { language, t } = useLanguage();
+  const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
   const gradingSteps = [
     { en: 'Upload sheet', bn: 'খাতা আপলোড' },
@@ -87,18 +88,12 @@ export function SubmissionDetailClient({
         </Link>
       </PageHeader>
 
-      {/* 5-Step Evaluation Progression */}
       <section className="grading-steps">
         {gradingSteps.map((step, i) => {
           const isDone = isComplete || i < 4;
           return (
-            <div
-              key={step.en}
-              className={`step-item ${isDone ? 'done' : ''}`}
-            >
-              <div className="step-circle">
-                {isDone ? <Check size={14} /> : i + 1}
-              </div>
+            <div key={step.en} className={`step-item ${isDone ? 'done' : ''}`}>
+              <div className="step-circle">{isDone ? <Check size={14} /> : i + 1}</div>
               <span>{language === 'bn' ? step.bn : step.en}</span>
             </div>
           );
@@ -106,15 +101,11 @@ export function SubmissionDetailClient({
       </section>
 
       <div className="eval-grid">
-        {/* Main Scorecard & Breakdown */}
         <section className="eval-card">
           <div className="eval-score-hero">
             <div>
               <Tag color="mint">{t('grading.examiner_result')}</Tag>
-              <h2>
-                {scoreObtained}
-                <small>/{maxScore}</small>
-              </h2>
+              <h2>{scoreObtained}<small>/{maxScore}</small></h2>
               <p>
                 {language === 'bn'
                   ? `বোর্ড মানদণ্ডে অর্জিত গ্রেড: ${letterGrade} (${scorePercent}%)`
@@ -126,9 +117,7 @@ export function SubmissionDetailClient({
               <small>{language === 'bn' ? 'বোর্ড মান' : 'Board Grade'}</small>
             </div>
           </div>
-
           <hr />
-
           <div className="rubric-breakdown">
             <h3>{t('grading.performance_breakdown')}</h3>
             <div className="rubric-bars">
@@ -136,78 +125,62 @@ export function SubmissionDetailClient({
                 <div className="rubric-bar-item" key={c.name}>
                   <div>
                     <span>{c.name}</span>
-                    <b>
-                      {c.awarded}/{c.max}
-                    </b>
+                    <b>{c.awarded}/{c.max}</b>
                   </div>
-                  <div className="bar-track">
-                    <span style={{ width: `${c.pct}%` }} />
-                  </div>
+                  <div className="bar-track"><span style={{ width: `${c.pct}%` }} /></div>
                 </div>
               ))}
             </div>
           </div>
-
           <div style={{ marginTop: 24 }}>
-            <Link
-              href="/dashboard/tutor"
-              className="primary-btn"
-              style={{ width: '100%', justifyContent: 'center' }}
-            >
+            <Link href="/dashboard/tutor" className="primary-btn" style={{ width: '100%', justifyContent: 'center' }}>
               <Sparkles size={15} /> {language === 'bn' ? 'টিউটরের সাথে রিভিশন করুন' : 'Review with AI Tutor'}
             </Link>
           </div>
         </section>
 
-        {/* Photographed Script Preview */}
-        <aside className="script-preview-card">
+        <aside className="script-preview-card flex flex-col h-full">
           <div className="script-header">
             <h3>{language === 'bn' ? 'আসল উত্তরপত্র' : 'Transcribed Script'}</h3>
-            <button type="button" aria-label="Expand image view">
-              <Maximize2 size={16} />
-            </button>
+            <button type="button" aria-label="Expand image view"><Maximize2 size={16} /></button>
           </div>
-
-          <div className="script-viewport">
-            {pages?.[0]?.original_image_url ? (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                src={pages[0].original_image_url}
-                alt="Original script page"
-                style={{ width: '100%', height: 'auto', borderRadius: 8 }}
-              />
+          
+          <div className="script-viewport flex-1 flex flex-col justify-between">
+            {pages && pages.length > 0 ? (
+              <div className="relative">
+                <img
+                  src={pages[currentPageIndex].original_image_url}
+                  alt={`Original script page ${currentPageIndex + 1}`}
+                  className="w-full h-auto rounded-lg"
+                />
+                <div className="flex justify-between mt-4">
+                  <button 
+                    disabled={currentPageIndex === 0} 
+                    onClick={() => setCurrentPageIndex(p => p - 1)}
+                    className="p-2 rounded bg-gray-100 disabled:opacity-50"
+                  ><ChevronLeft size={16} /></button>
+                  <span className="text-sm font-medium pt-2">Page {currentPageIndex + 1} of {pages.length}</span>
+                  <button 
+                    disabled={currentPageIndex === pages.length - 1} 
+                    onClick={() => setCurrentPageIndex(p => p + 1)}
+                    className="p-2 rounded bg-gray-100 disabled:opacity-50"
+                  ><ChevronRight size={16} /></button>
+                </div>
+              </div>
             ) : (
               <div className="mock-sheet">
                 <div className="sheet-line" style={{ width: '60%' }} />
                 <div className="sheet-line" style={{ width: '90%' }} />
                 <div className="sheet-line" style={{ width: '75%' }} />
-                <div className="sheet-line" style={{ width: '85%' }} />
-                <div className="sheet-annotation">
-                  <span>✓ {language === 'bn' ? 'সঠিক পদ্ধতি' : 'Correct approach'}</span>
-                </div>
+                <div className="sheet-annotation"><span>✓ Correct approach</span></div>
                 <div className="sheet-line" style={{ width: '70%' }} />
-                <div className="sheet-line" style={{ width: '95%' }} />
-                <div className="sheet-annotation error">
-                  <span>✗ {language === 'bn' ? '-১ সমতাকরণে ভুল' : '-1 Missing final unit'}</span>
-                </div>
+                <div className="sheet-annotation error"><span>✗ -1 Missing final unit</span></div>
               </div>
             )}
-          </div>
-
-          <div className="script-footer">
-            <small>
-              {language === 'bn'
-                ? 'পৃষ্ঠা ১ — AI দৃষ্টির মাধ্যমে স্ক্যানকৃত'
-                : 'Page 1 — Scanned via Vision AI'}
-            </small>
-            <Link href="/dashboard/tutor" className="tutor-cta">
-              {language === 'bn' ? 'টিউটরের সাথে রিভিশন' : 'Review with Tutor'} <ChevronRight size={14} />
-            </Link>
           </div>
         </aside>
       </div>
 
-      {/* Detailed Question Step-by-Step Breakdown */}
       {questionResults && questionResults.length > 0 && (
         <section style={{ marginTop: 32 }}>
           <div className="section-heading" style={{ padding: '0 0 16px 0' }}>
@@ -216,35 +189,16 @@ export function SubmissionDetailClient({
               <p>{language === 'bn' ? 'প্রতিটি প্রশ্নের প্রাপ্ত নম্বর ও চিহ্নিত ভুলসমূহ।' : 'Mark deductions and suggestions per question.'}</p>
             </div>
           </div>
-
           <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
             {questionResults.map((q, qIndex) => {
-              const qText =
-                language === 'bn'
+              const qText = language === 'bn'
                   ? q.question_text_bn || q.question_text_en || `প্রশ্ন ${q.question_number || qIndex + 1}`
                   : q.question_text_en || q.question_text_bn || `Question ${q.question_number || qIndex + 1}`;
-
               const firstObs = q.observations_json?.[0];
 
               return (
-                <div
-                  key={q.id}
-                  style={{
-                    border: '1px solid var(--border)',
-                    borderRadius: 14,
-                    background: '#fff',
-                    padding: '20px 22px',
-                  }}
-                >
-                  <div
-                    style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      marginBottom: 10,
-                      gap: 12,
-                    }}
-                  >
+                <div key={q.id} style={{ border: '1px solid var(--border)', borderRadius: 14, background: '#fff', padding: '20px 22px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10, gap: 12 }}>
                     <b style={{ fontSize: 15, color: 'var(--navy)', flex: 1 }}>
                       {language === 'bn' ? `প্রশ্ন ${q.question_number || qIndex + 1}: ` : `Question ${q.question_number || qIndex + 1}: `}
                       {qText}
@@ -255,31 +209,18 @@ export function SubmissionDetailClient({
                       </Tag>
                       <ExplainSimplyButton
                         questionText={qText}
-                        stepName={firstObs?.step || (language === 'bn' ? 'ধাপ বিশ্লেষণ' : 'Step evaluation')}
-                        observation={firstObs?.observation || (language === 'bn' ? 'বোর্ড রুব্রিক অনুযায়ী পর্যবেক্ষণ' : 'Evaluation note')}
+                        stepName={firstObs?.step || 'Step evaluation'}
+                        observation={firstObs?.observation || 'Evaluation note'}
                         submissionId={submissionId}
                         questionId={q.id}
                         rubricStepIndex={0}
                       />
                     </div>
                   </div>
-
                   {q.observations_json && q.observations_json.length > 0 && (
                     <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 8 }}>
                       {q.observations_json.map((obs, idx) => (
-                        <div
-                          key={idx}
-                          style={{
-                            display: 'flex',
-                            alignItems: 'flex-start',
-                            gap: 10,
-                            fontSize: 13,
-                            color: 'var(--muted)',
-                            background: '#f8f9fc',
-                            padding: '10px 14px',
-                            borderRadius: 8,
-                          }}
-                        >
+                        <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, fontSize: 13, color: 'var(--muted)', background: '#f8f9fc', padding: '10px 14px', borderRadius: 8 }}>
                           <span style={{ color: obs.marks_deducted > 0 ? 'var(--coral)' : 'var(--mint)', fontWeight: 700 }}>
                             {obs.marks_deducted > 0 ? `-${obs.marks_deducted}` : '✓'}
                           </span>

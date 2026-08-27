@@ -8,9 +8,7 @@ type ScheduleDay = {
 
 export default async function StudyPlanPage() {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { data: { user } } = await supabase.auth.getUser();
 
   const { data: profile } = await supabase
     .from('student_profiles')
@@ -18,7 +16,6 @@ export default async function StudyPlanPage() {
     .eq('user_id', user?.id ?? '')
     .maybeSingle();
 
-  // Fetch real active study plan
   const { data: plans } = profile
     ? await supabase
         .from('study_plans')
@@ -29,7 +26,6 @@ export default async function StudyPlanPage() {
         .limit(1)
     : { data: null };
 
-  // Fetch real weakness logs to compute mastery & recommendations
   const { data: weaknesses } = profile
     ? await supabase
         .from('weakness_logs')
@@ -40,27 +36,35 @@ export default async function StudyPlanPage() {
 
   const plan = plans?.[0];
   const schedule = plan?.daily_schedule_json as { cycleDays: number; days: ScheduleDay[] } | undefined;
+  const completedTasks = (plan?.completed_tasks_json as Record<string, boolean>) || {};
+
+  // For this exercise, assume today is day 1 of the cycle. In a real app, calculate offset from start_date.
+  const currentDay = 1;
 
   let dynamicTasks = [
     {
+      id: "fallback-1",
       title: 'Physics: Motion & Measurements Practice',
       subtitle: '25 min · NCTB syllabus standard',
       time: '09:30',
       checked: true,
     },
     {
+      id: "fallback-2",
       title: 'Chemistry: Chemical Reactions Review',
       subtitle: '35 min · Balancing equations',
       time: '11:00',
       checked: true,
     },
     {
+      id: "fallback-3",
       title: 'Mathematics: Problem Solving Practice',
       subtitle: '20 min · Board question drill',
       time: '16:30',
       checked: false,
     },
     {
+      id: "fallback-4",
       title: 'English: Written Expression & Grammar',
       subtitle: '15 min · Formal letter format',
       time: '19:00',
@@ -68,16 +72,20 @@ export default async function StudyPlanPage() {
     },
   ];
 
-  if (schedule?.days?.[0]?.chapters?.length) {
-    dynamicTasks = schedule.days[0].chapters.map((c, i) => ({
-      title: `${c.subject}: ${c.title}`,
-      subtitle: `${20 + (i % 3) * 10} min · Adaptive Revision`,
-      time: `${9 + (i % 5) * 2}:30`,
-      checked: i === 0,
-    }));
+  if (schedule?.days?.[currentDay - 1]?.chapters?.length) {
+    dynamicTasks = schedule.days[currentDay - 1].chapters.map((c, i) => {
+      const taskId = `task-${i}`;
+      const isChecked = !!completedTasks[`${currentDay}-${taskId}`];
+      return {
+        id: taskId,
+        title: `${c.subject}: ${c.title}`,
+        subtitle: `${20 + (i % 3) * 10} min · Adaptive Revision`,
+        time: `${9 + (i % 5) * 2}:30`,
+        checked: isChecked,
+      };
+    });
   }
 
-  // Calculate real mastery percent from weaknesses
   let masteryPercent = 75;
   if (weaknesses && weaknesses.length > 0) {
     const totalScore = weaknesses.reduce((acc, curr) => acc + Number(curr.weakness_score), 0);
@@ -98,6 +106,8 @@ export default async function StudyPlanPage() {
 
   return (
     <PlannerPageClient
+      planId={plan?.id}
+      currentDay={currentDay}
       initialTasks={dynamicTasks}
       recommendationTitle={recTitle}
       recommendationBody={recBody}

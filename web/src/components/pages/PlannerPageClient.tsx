@@ -1,13 +1,14 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useTransition } from 'react';
 import { Check, ChevronRight, Sparkles } from 'lucide-react';
 import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
-import { generateStudyPlan } from '@/app/actions/study-plan';
+import { generateStudyPlan, togglePlanTask } from '@/app/actions/study-plan';
 import { useLanguage } from '@/context/LanguageContext';
 
 interface Task {
+  id: string;
   title: string;
   subtitle: string;
   time: string;
@@ -15,6 +16,8 @@ interface Task {
 }
 
 interface PlannerClientProps {
+  planId?: string;
+  currentDay?: number;
   initialTasks?: Task[];
   recommendationTitle?: string;
   recommendationBody?: string;
@@ -22,48 +25,43 @@ interface PlannerClientProps {
 }
 
 export function PlannerPageClient({
-  initialTasks = [
-    {
-      title: 'Physics MCQ practice',
-      subtitle: '25 min · Work & Energy',
-      time: '09:30',
-      checked: true,
-    },
-    {
-      title: 'Math: Chapter 8 review',
-      subtitle: '35 min · Trigonometry',
-      time: '11:00',
-      checked: true,
-    },
-    {
-      title: 'Chemistry revision',
-      subtitle: '20 min · Periodic table',
-      time: '16:30',
-      checked: false,
-    },
-    {
-      title: 'English writing drill',
-      subtitle: '15 min · Formal letters',
-      time: '19:00',
-      checked: false,
-    },
-  ],
+  planId,
+  currentDay = 1,
+  initialTasks = [],
   recommendationTitle = 'Sharpen your trigonometry',
-  recommendationBody = 'Most recent mistakes are step-based errors. A focused 30-minute review will help you recover marks.',
+  recommendationBody = 'Most recent mistakes are step-based errors.',
   masteryPercent = 72,
 }: PlannerClientProps) {
   const [tasks, setTasks] = useState<Task[]>(initialTasks);
+  const [isPending, startTransition] = useTransition();
   const { language, t } = useLanguage();
 
   const days = language === 'bn' ? ['সোম', 'মঙ্গল', 'বুধ', 'বৃহঃ', 'শুক্র', 'শনি', 'রবি'] : ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
-  const toggleTask = (index: number) => {
+  const handleToggleTask = (index: number) => {
+    const task = tasks[index];
+    const newChecked = !task.checked;
+
+    // Optimistic UI update
     setTasks((prev) =>
-      prev.map((task, i) =>
-        i === index ? { ...task, checked: !task.checked } : task
-      )
+      prev.map((t, i) => (i === index ? { ...t, checked: newChecked } : t))
     );
+
+    if (planId) {
+      startTransition(async () => {
+        const res = await togglePlanTask(planId, currentDay, task.id, newChecked);
+        if (res.error) {
+          // Revert on error
+          setTasks((prev) =>
+            prev.map((t, i) => (i === index ? { ...t, checked: !newChecked } : t))
+          );
+          console.error('Failed to toggle task:', res.error);
+        }
+      });
+    }
   };
+
+  const streakCount = 7; // In a real app, calculate this dynamically based on completed tasks across days.
 
   return (
     <>
@@ -82,7 +80,7 @@ export function PlannerPageClient({
         <div className="streak">
           <span>🔥</span>
           <div>
-            <b>{language === 'bn' ? '৭ দিনের স্ট্রিক' : '7 day streak'}</b>
+            <b>{language === 'bn' ? `${streakCount} দিনের স্ট্রিক` : `${streakCount} day streak`}</b>
             <p>{t('planner.streak_desc')}</p>
           </div>
         </div>
@@ -103,11 +101,12 @@ export function PlannerPageClient({
         <section className="planner-tasks">
           <h2>{t('planner.todays_plan')}</h2>
           {tasks.map((task, i) => (
-            <div className="plan-task" key={task.title}>
+            <div className="plan-task" key={task.id}>
               <button
                 type="button"
                 className={task.checked ? 'checked' : ''}
-                onClick={() => toggleTask(i)}
+                onClick={() => handleToggleTask(i)}
+                disabled={isPending}
                 aria-label={`Mark ${task.title} as ${
                   task.checked ? t('common.incomplete') : t('common.complete')
                 }`}

@@ -3,15 +3,17 @@ import { createClient } from '@/lib/supabase/server';
 import { GeneratePaperForm } from './generate-paper-form';
 import { PageHeader } from '@/components/PageHeader';
 
+export const maxDuration = 60;
+
 export default async function GeneratePracticePaperPage() {
   const supabase = await createClient();
   const { data: subjects } = await supabase
     .from('subjects')
-    .select('id, name_en')
+    .select('id, name_en, name_bn')
     .order('name_en');
   const { data: chapters } = await supabase
     .from('chapters')
-    .select('id, subject_id, chapter_no, title_en')
+    .select('id, subject_id, chapter_no, title_en, title_bn')
     .order('chapter_no');
 
   return (
