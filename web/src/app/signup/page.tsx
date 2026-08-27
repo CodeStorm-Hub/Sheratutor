@@ -49,7 +49,7 @@ export default function SignupPage() {
             Create free account
           </h1>
           <p style={{ color: 'var(--muted)', fontSize: 13, margin: '6px 0 0' }}>
-            Get your personal AI examiner for HSC & SSC.
+            Get your personal AI examiner for HSC, SSC & University Admission Exam.
           </p>
         </div>
 

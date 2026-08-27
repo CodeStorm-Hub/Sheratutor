@@ -10,11 +10,12 @@ import { LanguageProvider } from '@/context/LanguageContext';
 import { Toaster } from '@/components/ui/sonner';
 
 export const metadata: Metadata = {
-  title: 'SheraTutor — HSC & SSC AI Learning Workspace',
+  title: 'SheraTutor — HSC, SSC & University Admission Exam AI Learning Workspace',
   description:
-    'A modern dashboard and learning workspace for Bangladeshi HSC & SSC students.',
+    'A modern dashboard and learning workspace for Bangladeshi HSC, SSC & University Admission Exam students.',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/logo-icon.svg',
+    shortcut: '/logo-icon.svg',
   },
 };
 

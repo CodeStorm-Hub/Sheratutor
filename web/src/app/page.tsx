@@ -9,6 +9,7 @@ import { Tag } from '@/components/Tag';
 import { Camera, ScanText, ClipboardCheck, ArrowRight } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function LandingPage() {
   const { t } = useLanguage();
@@ -56,6 +57,7 @@ export default function LandingPage() {
         <Logo tagline />
         <div className="landing-nav-actions">
           <LanguageToggle />
+          <ThemeToggle />
           <Link href="/login" className="landing-signin-btn">
             {t('common.sign_in')}
           </Link>
@@ -100,16 +102,16 @@ export default function LandingPage() {
               key={step.title}
               className="landing-feature-card"
             >
-              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                <span style={{ fontFamily: "'Space Mono', monospace", fontWeight: 700, color: 'var(--coral)', fontSize: 13 }}>
+              <div className="landing-card-header">
+                <span className="landing-card-step-num">
                   {`0${i + 1}`}
                 </span>
-                <step.icon size={18} color="var(--mint)" />
+                <step.icon size={18} className="landing-card-icon" />
               </div>
-              <h3 style={{ font: "700 18px 'Baloo 2', sans-serif", margin: 0, color: 'var(--navy)' }}>
+              <h3 className="landing-card-title">
                 {step.title}
               </h3>
-              <p style={{ fontSize: 13, color: 'var(--muted)', margin: 0, lineHeight: 1.55 }}>
+              <p className="landing-card-body">
                 {step.body}
               </p>
             </div>
@@ -123,13 +125,13 @@ export default function LandingPage() {
               key={card.title}
               className="landing-promise-card"
             >
-              <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 10, color: 'var(--coral)', fontWeight: 700 }}>
+              <span className="landing-card-eyebrow">
                 {card.eyebrow}
               </span>
-              <h3 style={{ font: "700 18px 'Baloo 2', sans-serif", margin: 0, color: 'var(--navy)' }}>
+              <h3 className="landing-card-title">
                 {card.title}
               </h3>
-              <p style={{ fontSize: 13, color: 'var(--muted)', margin: 0, lineHeight: 1.55 }}>
+              <p className="landing-card-body">
                 {card.body}
               </p>
             </div>
@@ -140,7 +142,7 @@ export default function LandingPage() {
       {/* Footer */}
       <footer className="landing-footer">
         <Logo tagline />
-        <p style={{ margin: 0 }}>
+        <p className="landing-footer-text">
           &copy; {new Date().getFullYear()} SheraTutor &middot; {t('landing.footer_text')}
         </p>
       </footer>

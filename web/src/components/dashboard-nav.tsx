@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Logo } from "@/components/logo";
+import { Logo, SheraTutorIcon } from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from "@/components/ui/sheet";
 import { signOut } from "@/app/actions/auth";
@@ -158,8 +158,12 @@ export function DashboardNav() {
           collapsed ? "md:w-16" : "md:w-60"
         )}
       >
-        <div className={cn("flex items-center border-b border-border p-4", collapsed ? "justify-center" : "justify-between")}>
-          {!collapsed && (
+        <div className={cn("flex items-center border-b border-border p-4", collapsed ? "flex-col gap-3 justify-center" : "justify-between")}>
+          {collapsed ? (
+            <Link href="/dashboard" title="SheraTutor" aria-label="SheraTutor">
+              <SheraTutorIcon size={28} />
+            </Link>
+          ) : (
             <Link href="/dashboard">
               <Logo />
             </Link>
