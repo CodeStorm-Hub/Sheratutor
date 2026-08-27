@@ -14,8 +14,8 @@ CREATE INDEX IF NOT EXISTS idx_submission_pages_inst ON public.submission_pages(
 
 -- 2. Add Mistake Taxonomy & Math Verification columns to grading_results
 ALTER TABLE public.grading_results 
-  ADD COLUMN IF NOT EXISTS mistake_category varchar(50) DEFAULT 'CONCEPTUAL_MISCONCEPTION',
-  ADD COLUMN IF NOT EXISTS arithmetic_verified boolean DEFAULT true;
+  ADD COLUMN IF NOT EXISTS mistake_category varchar(50) DEFAULT 'NONE',
+  ADD COLUMN IF NOT EXISTS arithmetic_verified boolean DEFAULT false;
 
 -- 3. Security hardening: Revoke public execution of internal helper functions
 REVOKE EXECUTE ON FUNCTION public.rls_auto_enable() FROM anon, authenticated;

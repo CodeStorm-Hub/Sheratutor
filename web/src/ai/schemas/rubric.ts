@@ -56,11 +56,11 @@ export const RubricEvaluationSchema = z.object({
       "CALCULATION_ERROR",
       "CONCEPTUAL_MISCONCEPTION",
     ])
-    .default("CONCEPTUAL_MISCONCEPTION")
+    .default("NONE")
     .describe("Primary category of student error for weakness taxonomy."),
   arithmetic_verified: z
     .boolean()
-    .default(true)
+    .default(false)
     .describe("Whether the student's mathematical calculations were verified for numerical accuracy."),
 });
 
