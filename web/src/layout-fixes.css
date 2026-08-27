@@ -304,15 +304,15 @@
   transform: translateX(18px);
 }
 
-/* App-wide dark theme. Accent colors remain familiar while surfaces gain contrast. */
+/* App-wide dark theme. Accent colors remain familiar while surfaces gain stepped contrast. */
 .app.dark,
 :is(.dark, .dark *) .app,
 .dark {
-  --navy: #f4f7ff;
-  --muted: var(--color-ink-soft, #9db3a8);
-  --border: var(--color-blackboard-card, #16261f);
-  background: var(--color-blackboard, #081611);
-  color: #f4f7ff;
+  --navy: #f8fafc;
+  --muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.08);
+  background: var(--background, #0b0e17);
+  color: #f1f5f9;
 }
 
 .app.dark .sidebar,
@@ -349,102 +349,90 @@
 :is(.dark, .dark *) .planner-top,
 .app.dark .planner-tasks,
 :is(.dark, .dark *) .planner-tasks {
-  background: var(--color-blackboard-card, #10221a);
-  color: #f4f7ff;
+  background: var(--card, #121724);
+  color: #f1f5f9;
   border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .app.dark .subject,
 :is(.dark, .dark *) .subject {
-  background: var(--color-blackboard-card, #10221a);
+  background: var(--card, #121724);
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .app.dark .subject.mint,
 :is(.dark, .dark *) .subject.mint {
-  background: rgba(52, 185, 138, 0.1);
-  border-color: rgba(52, 185, 138, 0.25);
+  background: rgba(45, 212, 191, 0.08);
+  border-color: rgba(45, 212, 191, 0.22);
 }
 
 .app.dark .subject.sun,
 :is(.dark, .dark *) .subject.sun {
-  background: rgba(230, 195, 92, 0.1);
-  border-color: rgba(230, 195, 92, 0.25);
+  background: rgba(251, 191, 36, 0.08);
+  border-color: rgba(251, 191, 36, 0.22);
 }
 
 .app.dark .subject.coral,
 :is(.dark, .dark *) .subject.coral {
-  background: rgba(255, 107, 122, 0.1);
-  border-color: rgba(255, 107, 122, 0.25);
+  background: rgba(255, 107, 87, 0.08);
+  border-color: rgba(255, 107, 87, 0.22);
 }
 
 .app.dark .subject.lilac,
 :is(.dark, .dark *) .subject.lilac {
-  background: rgba(167, 139, 250, 0.1);
-  border-color: rgba(167, 139, 250, 0.25);
+  background: rgba(167, 139, 250, 0.08);
+  border-color: rgba(167, 139, 250, 0.22);
 }
 
 .app.dark .subject h3,
 :is(.dark, .dark *) .subject h3 {
-  color: #f4f7ff;
+  color: #f1f5f9;
 }
 
 .app.dark .subject small,
 :is(.dark, .dark *) .subject small {
-  color: #9db3a8;
+  color: #94a3b8;
 }
 
 .app.dark .subject-footer span,
 :is(.dark, .dark *) .subject-footer span {
-  color: #9db3a8;
+  color: #94a3b8;
 }
 
 .app.dark .prediction,
 :is(.dark, .dark *) .prediction {
-  background: linear-gradient(135deg, #10221a, #00543d) !important;
-  border: 1px solid rgba(52, 185, 138, 0.2);
+  background: linear-gradient(135deg, #121724 0%, #1c1524 100%) !important;
+  border: 1px solid rgba(255, 107, 87, 0.25);
 }
 
 .app.dark .percentile,
-:is(.dark, .dark *) .percentile,
 .app.dark .suggestions button,
-:is(.dark, .dark *) .suggestions button,
 .app.dark .mcq,
-:is(.dark, .dark *) .mcq,
 .app.dark .filter-row button,
-:is(.dark, .dark *) .filter-row button,
 .app.dark .task button,
-:is(.dark, .dark *) .task button,
 .app.dark .week-select,
-:is(.dark, .dark *) .week-select,
 .app.dark .exam-grid article > div:last-child button,
-:is(.dark, .dark *) .exam-grid article > div:last-child button,
-.app.dark .profile-edit button,
-:is(.dark, .dark *) .profile-edit button {
+.app.dark .profile-edit button {
   background: rgba(255, 255, 255, 0.05);
-  color: var(--color-paper, #f7f8f5);
-  border-color: rgba(255, 255, 255, 0.1);
+  color: #f1f5f9;
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 .app.dark .school,
-:is(.dark, .dark *) .school,
 .app.dark .tutor-input,
-:is(.dark, .dark *) .tutor-input,
-.app.dark .equation,
-:is(.dark, .dark *) .equation {
+.app.dark .equation {
   background: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
-.app.dark .tutor-input input,
-:is(.dark, .dark *) .tutor-input input {
+.app.dark .tutor-input input {
   background: transparent;
   color: #fff;
 }
 
-.app.dark .settings-layout aside button.active,
-:is(.dark, .dark *) .settings-layout aside button.active {
-  background: var(--color-blackboard-card, #10221a);
+.app.dark .settings-layout aside button.active {
+  background: var(--card, #121724);
   color: #fff;
 }
 
