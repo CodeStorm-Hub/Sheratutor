@@ -99,13 +99,9 @@ export const ai = genkit({
 
 export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "agentrouter/gpt-5.6-sol",
-  fast: process.env.GENKIT_FAST_MODEL ?? "agentrouter/gpt-5.6-sol",
-  paper: process.env.GENKIT_PAPER_MODEL ?? "agentrouter/gpt-5.6-sol",
-  opus5: "agentrouter/claude-opus-5",
-  opus48: "agentrouter/claude-opus-4-8",
-  deepseek: "agentrouter/deepseek-v4-flash",
-  sol: "agentrouter/gpt-5.6-sol",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b",
+  fast: process.env.GENKIT_FAST_MODEL ?? "nim/openai/gpt-oss-20b",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "nim/nvidia/nemotron-3-nano-30b-a3b",
 } as const;
 
 // Production and live environment use NVIDIA NIM's hosted llama-nemotron-embed-1b-v2
