@@ -154,11 +154,18 @@ The SheraTutor palette operates with strict semantic role separation between bra
 
 **The Khata Contrast Rule.** The paper sheet element inside icons, preview cards, and badges must maintain authentic white/light-gray fill regardless of light or dark mode. Background contrast adapts around the paper, never inverting the khata itself.
 
+**The Dark Mode Chalk Elevation Rule.** In dark mode, depth is created via layered chalkboard tonal steps rather than heavy drop shadows:
+- **Base Canvas:** Deep Blackboard (`#0F1C17`)
+- **Layer 1 Surface (Cards & Panels):** Blackboard Card (`#16261F` / `#10221A`) with 1px border `oklch(1 0 0 / 12%)`
+- **Layer 2 Surface (Elevated Badges & Insets):** Inset Chalk Card (`rgba(255, 255, 255, 0.05)`)
+- **Layer 3 Surface (Modals & Popovers):** Raised Blackboard (`#1D332A`) with subtle border glow
+
 ## Typography
 
-**Display Font:** Baloo 2 (with sans-serif fallbacks)  
-**Body Font:** Inter (with system-ui fallbacks)  
-**Label/Mono Font:** Space Mono (with monospace fallbacks)  
+**Display Font:** Baloo 2 (`next/font/google` self-hosted, variable: `--font-display`)  
+**Body Font:** Inter (`next/font/google` self-hosted, variable: `--font-body`)  
+**Bengali Body Font:** Noto Sans Bengali (`next/font/google`, variable: `--font-body-bn`)  
+**Label/Mono Font:** Space Mono (`next/font/google`, variable: `--font-mono-eyebrow`)  
 
 The typographic pairing balances the lively, rounded curves of Baloo 2—which seamlessly supports both Latin and Bengali letterforms—with the neutral clarity of Inter for dense rubric text and Space Mono for score sheets.
 
@@ -170,17 +177,20 @@ The typographic pairing balances the lively, rounded curves of Baloo 2—which s
 - **Label** (700, `0.75rem` / `12px`, letter-spacing: `0.12em`, uppercase): Eyebrow tags (`MISTAKE ANALYSIS`, `DHAKA BOARD 2024`), rubric step codes, and tabular statistics.
 
 ### Named Rules
-**The Bengali Script Rule.** When rendering Bengali text (`:lang(bn)`), typography automatically prioritizes optimized Bengali typefaces with appropriate line-height compensation (`1.6`) to prevent vowel diacritic clipping.
+**The Bengali Script Rule.** When rendering Bengali text (`:lang(bn)`), typography automatically applies a line-height multiplier between `1.55` and `1.75` to ensure complex diacritics (*hoshonto*, *ro-khor*, *juktakkhor*) never clip or collide with adjacent lines.
+
+**The Zero-CLS Font Loading Rule.** All typefaces are self-hosted and preloaded at build time via `next/font/google` with `display: 'swap'` and automatic font fallback metrics, eliminating FOIT (Flash of Invisible Text) and layout shifts.
 
 **The Tabular Precision Rule.** All numerical scores, timers, and mark deductions utilize tabular numerals (`font-variant-numeric: tabular-nums`) to ensure strict columnar alignment in grade tables.
 
-## Layout
+## Layout & Mobile Ergonomics
 
 The spatial model employs an 8px base grid with a floating, collapsible navigation sidebar on desktop (fixed at `244px` width, inset `18px`), paired with a responsive fluid content canvas constrained to `1200px` max-width.
 
 - **Grid & Spacing Rhythm:** Spacing steps follow a predictable scale (`0.25rem`, `0.5rem`, `0.75rem`, `1rem`, `1.5rem`, `2rem`, `3rem`).
+- **Touch Target Floor:** All interactive elements (buttons, filter chips, icon actions, checklist toggles) enforce a minimum touch target of `44px × 44px` on mobile viewports to prevent mis-taps during hurried study sessions.
 - **Responsive Breakpoints:**
-  - Mobile (`<640px`): Full-bleed cards, bottom navigation or sheet drawer, single-column question review.
+  - Mobile (`<640px`): Full-bleed cards, bottom navigation or sheet drawer, single-column question review, sticky action CTA bar.
   - Tablet (`640px – 1024px`): Collapsed sidebar, two-column metric grids.
   - Desktop (`>1024px`): Permanent floating sidebar, multi-column exam review with dual-pane image transcription and rubric critique.
 
@@ -205,7 +215,7 @@ Form language is modern, friendly, and structured. Corner radii are tuned to avo
 ## Components
 
 ### Buttons
-- **Shape:** Smoothly rounded corners (`0.6rem` / 9.6px radius).
+- **Shape:** Smoothly rounded corners (`0.6rem` / 9.6px radius), `min-height: 40px` (desktop), `min-height: 44px` (mobile).
 - **Primary Institutional:** Solid Bottle Green background (`#006A4E`), white text, hover transitions to `#00543D`.
 - **Primary Student Action:** Solid Brand Coral (`#FF6B57`), white text, hover transitions to `#E6503D`.
 - **Outline / Ghost:** Transparent background with 1px border (`#DDE4DD`), text in Deep Ink, hover in `#EEF0EA`.
@@ -217,7 +227,7 @@ Form language is modern, friendly, and structured. Corner radii are tuned to avo
 - **Internal Padding:** Consistent `1rem` (16px) or `1.5rem` (24px).
 
 ### Badges & Chips
-- **Style:** Compact pill (`rounded-full`), `Space Mono` uppercase 11px font.
+- **Style:** Compact pill (`rounded-full`), `Space Mono` uppercase 11px / 12px font.
 - **Variants:**
   - **Success / Correct:** Soft Green (`#E2F0E9`) with Deep Green text (`#00543D`).
   - **Deduction / Mistake:** Soft Red (`#FDEAEC`) with Examiner Red text (`#D92638`).
@@ -225,7 +235,7 @@ Form language is modern, friendly, and structured. Corner radii are tuned to avo
   - **AI / Smart Hint:** Mint soft tint with Mint Deep text (`#0FB98A`).
 
 ### Inputs & Fields
-- **Style:** 1px border (`#DDE4DD`), `0.6rem` radius, Paper White fill.
+- **Style:** 1px border (`#DDE4DD`), `0.6rem` radius, Paper White fill on light, Blackboard Card fill on dark.
 - **Focus State:** 2px ring in Bottle Green (`#006A4E`) or Coral with zero offset blur.
 
 ### Signature Component: The Examiner Margin Rule & Mark Glyph
@@ -236,10 +246,11 @@ Form language is modern, friendly, and structured. Corner radii are tuned to avo
 
 ### Do:
 - **Do** preserve Examiner Red (`#D92638`) exclusively for scores, deductions, and rubric feedback.
-- **Do** format all mathematical and chemical equations using KaTeX with proper inline/block delimiters.
+- **Do** format all mathematical and chemical equations using KaTeX with proper inline/block delimiters and horizontal scroll containment.
 - **Do** use `Space Mono` uppercase tracking for eyebrow titles, exam codes, and score badges.
-- **Do** ensure Bengali text rendered via `Baloo 2` has sufficient vertical line-height (`1.5` to `1.6`) to avoid clipping diacritics.
-- **Do** keep card borders crisp (`1px solid #DDE4DD`) with subtle surface contrast.
+- **Do** ensure Bengali text rendered via `Baloo 2` has sufficient vertical line-height (`1.55` to `1.75`) to avoid clipping diacritics.
+- **Do** keep card borders crisp (`1px solid #DDE4DD` in light, `oklch(1 0 0 / 12%)` in dark) with subtle surface contrast.
+- **Do** maintain a minimum `44px × 44px` touch target size on mobile buttons and inputs.
 
 ### Don't:
 - **Don't** use Examiner Red for primary CTA buttons or general marketing elements.
