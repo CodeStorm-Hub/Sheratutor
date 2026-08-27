@@ -12,10 +12,10 @@ type ScheduleDay = {
 };
 
 /**
- * FSRS (Free Spaced Repetition Scheduler) Inspired Algorithm:
- * Computes optimal retention intervals (1, 3, 7, 14 days) based on
- * chapter weakness/difficulty scores. Weaker concepts get rapid initial
- * repetitions with expanding intervals to guarantee maximum board exam retention.
+ * Deterministic Spaced Repetition Scheduling Heuristic:
+ * Computes spaced review intervals over a 14-day cycle based on
+ * chapter weakness scores. Weaker topics receive more frequent initial
+ * review slots spread out across the cycle.
  */
 export async function generateStudyPlan(): Promise<void> {
   const supabase = await createClient();
@@ -105,7 +105,7 @@ export async function generateStudyPlan(): Promise<void> {
     student_id: profile.id,
     start_date: startDate.toISOString().slice(0, 10),
     end_date: endDate.toISOString().slice(0, 10),
-    daily_schedule_json: { cycleDays: CYCLE_DAYS, days, algorithm: "FSRS_v4" },
+    daily_schedule_json: { cycleDays: CYCLE_DAYS, days, algorithm: "spaced_repetition_v1" },
     is_active: true,
   });
   if (insertError) console.error("generateStudyPlan: insert failed:", insertError.message);
