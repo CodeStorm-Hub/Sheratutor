@@ -50,7 +50,7 @@ export default function LoginPage() {
 
         <div className="relative text-center my-5">
           <hr className="border-0 border-t border-border" />
-          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-card px-2.5 text-muted-foreground text-[11px] font-mono">
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-card px-2.5 text-muted-foreground text-xs font-mono tracking-wider">
             OR
           </span>
         </div>

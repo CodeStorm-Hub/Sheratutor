@@ -401,7 +401,7 @@
 
 .app.dark .prediction,
 :is(.dark, .dark *) .prediction {
-  background: linear-gradient(135deg, rgba(16, 34, 26, 0.95), rgba(18, 53, 39, 0.8)) !important;
+  background: linear-gradient(135deg, #10221a, #00543d) !important;
   border: 1px solid rgba(52, 185, 138, 0.2);
 }
 
