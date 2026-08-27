@@ -110,7 +110,7 @@ export function DashboardPageClient({
           <div className="prediction-main">
             <div className="big-grade" style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
               <b>{gradeLetter}</b>
-              <small style={{ fontSize: '18px', fontWeight: 600, opacity: 0.85 }}>
+              <small style={{ fontSize: '1.25rem', fontWeight: 600 }}>
                 {avgScorePct !== null ? `(${avgScorePct}%)` : 'N/A'}
               </small>
             </div>
@@ -350,23 +350,23 @@ export function DashboardPageClient({
 
           <div className="progress-stats">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <span style={{ fontSize: '12px', opacity: 0.85 }}>{t('dashboard.tests_submitted')}</span>
-              <strong style={{ fontSize: '18px' }}>{submissionsCount}{language === 'bn' ? 'টি' : ''}</strong>
-              <small style={{ fontSize: '11px', opacity: 0.75 }}>{t('dashboard.this_term')}</small>
+              <span style={{ fontSize: '0.75rem' }}>{t('dashboard.tests_submitted')}</span>
+              <strong style={{ fontSize: '1.25rem' }}>{submissionsCount}{language === 'bn' ? 'টি' : ''}</strong>
+              <small style={{ fontSize: '0.75rem' }}>{t('dashboard.this_term')}</small>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <span style={{ fontSize: '12px', opacity: 0.85 }}>{t('dashboard.avg_score')}</span>
-              <strong style={{ fontSize: '18px' }}>{avgScorePct !== null ? `${avgScorePct}%` : '—'}</strong>
-              <small style={{ fontSize: '11px', opacity: 0.75 }}>
+              <span style={{ fontSize: '0.75rem' }}>{t('dashboard.avg_score')}</span>
+              <strong style={{ fontSize: '1.25rem' }}>{avgScorePct !== null ? `${avgScorePct}%` : '—'}</strong>
+              <small style={{ fontSize: '0.75rem' }}>
                 {totalCompleted > 0
                   ? `${totalCompleted}${language === 'bn' ? 'টি মূল্যায়ন' : ' tests'}`
                   : t('dashboard.new_student')}
               </small>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <span style={{ fontSize: '12px', opacity: 0.85 }}>{t('dashboard.momentum_label')}</span>
-              <strong style={{ fontSize: '18px' }}>{momentumScore}%</strong>
-              <small style={{ fontSize: '11px', opacity: 0.75 }}>{language === 'bn' ? 'সক্রিয়' : 'Active'}</small>
+              <span style={{ fontSize: '0.75rem' }}>{t('dashboard.momentum_label')}</span>
+              <strong style={{ fontSize: '1.25rem' }}>{momentumScore}%</strong>
+              <small style={{ fontSize: '0.75rem' }}>{language === 'bn' ? 'সক্রিয়' : 'Active'}</small>
             </div>
           </div>
 
