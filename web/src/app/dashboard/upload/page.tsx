@@ -1,9 +1,6 @@
 import React from 'react';
-import Link from 'next/link';
 import { createClient } from '@/lib/supabase/server';
-import { UploadForm } from '@/components/upload-form';
-import { PageHeader } from '@/components/PageHeader';
-import { Sparkles } from 'lucide-react';
+import { UploadPageClient } from '@/components/pages/UploadPageClient';
 
 export default async function UploadPage({
   searchParams,
@@ -24,27 +21,9 @@ export default async function UploadPage({
     .limit(20);
 
   return (
-    <div style={{ maxWidth: 720, margin: '0 auto', width: '100%' }}>
-      <PageHeader
-        title="Upload answer sheet"
-        description="Take clear photos of your handwritten answer script in chronological order."
-      >
-        <Link href="/dashboard/practice/generate" className="primary-btn">
-          <Sparkles size={15} /> Generate question paper
-        </Link>
-      </PageHeader>
-
-      <div
-        style={{
-          border: '1px solid var(--border)',
-          borderRadius: 16,
-          background: '#fff',
-          padding: 24,
-          boxShadow: '0 8px 30px rgba(28, 35, 65, 0.04)',
-        }}
-      >
-        <UploadForm papers={papers ?? []} initialPaperId={resolvedSearchParams?.paperId} />
-      </div>
-    </div>
+    <UploadPageClient 
+      papers={papers ?? []} 
+      initialPaperId={resolvedSearchParams?.paperId} 
+    />
   );
 }

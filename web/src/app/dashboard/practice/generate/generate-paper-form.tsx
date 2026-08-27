@@ -127,9 +127,11 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
                     onCheckedChange={() => handleToggleChapter(c.id)}
                     className="mt-0.5" 
                   />
-                  <span className="font-medium text-xs leading-snug cursor-pointer flex-1 select-none">
-                    <span className="text-muted-foreground font-mono mr-1">[{c.chapter_no}]</span>
-                    {language === 'bn' ? (c.title_bn || c.title_en) : c.title_en}
+                  <span className="font-medium text-xs leading-snug cursor-pointer flex-1 select-none flex items-center">
+                    <span className="inline-flex items-center justify-center px-1.5 py-0.5 rounded text-xs font-mono font-bold bg-muted text-foreground mr-2 shrink-0">
+                      {c.chapter_no.toString().padStart(2, '0')}
+                    </span>
+                    <span>{language === 'bn' ? (c.title_bn || c.title_en) : c.title_en}</span>
                   </span>
                 </label>
               );

@@ -48,6 +48,20 @@ export const RubricEvaluationSchema = z.object({
     .string()
     .optional()
     .describe("If transcript_mismatch_detected, a short note on what differs."),
+  mistake_category: z
+    .enum([
+      "NONE",
+      "FORMULA_RECALL",
+      "UNIT_CONVERSION",
+      "CALCULATION_ERROR",
+      "CONCEPTUAL_MISCONCEPTION",
+    ])
+    .default("CONCEPTUAL_MISCONCEPTION")
+    .describe("Primary category of student error for weakness taxonomy."),
+  arithmetic_verified: z
+    .boolean()
+    .default(true)
+    .describe("Whether the student's mathematical calculations were verified for numerical accuracy."),
 });
 
 export type RubricEvaluation = z.infer<typeof RubricEvaluationSchema>;

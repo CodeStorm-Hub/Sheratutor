@@ -101,7 +101,7 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
                 <div className="large-avatar">{initials}</div>
                 <div>
                   <b>{language === 'bn' ? 'প্রোফাইল ছবি' : 'Profile photo'}</b>
-                  <p style={{ margin: '2px 0 8px', fontSize: 11, color: '#68718a' }}>
+                  <p style={{ margin: '2px 0 8px', fontSize: 12, color: 'var(--color-ink-soft, #52655d)' }}>
                     {language === 'bn' ? 'তোমার ড্যাশবোর্ড ও রিপোর্ট কার্ডে দেখানো হবে।' : 'Shown on your dashboard and report cards.'}
                   </p>
                   <button type="button">{t('settings.change_avatar')}</button>

@@ -14,6 +14,30 @@ const GroundingChunkSchema = z.object({
   similarity: z.number(),
 });
 
+const BENGALI_PHYSICS_SYNONYMS: Record<string, string[]> = {
+  "ত্বরণ": ["acceleration", "বেগের পরিবর্তন", "মন্দন"],
+  "বেগ": ["velocity", "দ্রুতি", "সরণ"],
+  "গতি": ["motion", "গতির সমীকরণ", "গতিবিদ্যা"],
+  "কাজ": ["work", "বল ও সরণ", "জুল"],
+  "শক্তি": ["energy", "গতিশক্তি", "বিভবশক্তি", "সংরক্ষণশীলতা"],
+  "ক্ষমতা": ["power", "কাজের হার", "ওয়াট"],
+  "চাপ": ["pressure", "ক্ষেত্রফল", "প্যাস্কেল"],
+  "ঘনত্ব": ["density", "ভর", "আয়তন"],
+  "আলো": ["light", "প্রতিফলন", "প্রতিসরণ", "দর্পণ"],
+  "শব্দ": ["sound", "তরঙ্গ", "কম্পাঙ্ক", "প্রতিধ্বনি"],
+  "বিদ্যুৎ": ["electricity", "তড়িৎ", "রোধ", "বর্তনী", "ওহমের সূত্র"],
+};
+
+export function expandBengaliPhysicsQuery(query: string): string {
+  let expanded = query;
+  for (const [term, synonyms] of Object.entries(BENGALI_PHYSICS_SYNONYMS)) {
+    if (query.includes(term)) {
+      expanded += ` ${synonyms.join(" ")}`;
+    }
+  }
+  return expanded.trim();
+}
+
 /**
  * Layer 2: Bilingual Hybrid RAG grounding.
  * Combines dense BGE-M3 (1024-dim) vector similarity with PostgreSQL full-text search (tsvector)
@@ -35,10 +59,12 @@ export const retrieveGroundingFlow = ai.defineFlow(
     }),
   },
   async ({ queryText, chapterId, languageTag, matchCount }) => {
+    const enrichedQuery = expandBengaliPhysicsQuery(queryText);
+
     // 1. Embed query with BGE-M3
     const embedResponse = await ai.embed({
       embedder: activeEmbedder,
-      content: queryText,
+      content: enrichedQuery,
       options: { inputType: "query" },
     });
     const embedding = embedResponse[0]?.embedding;
@@ -54,7 +80,7 @@ export const retrieveGroundingFlow = ai.defineFlow(
       match_count: matchCount,
       p_model_name: EMBED_MODEL_NAME,
       p_model_version: EMBED_MODEL_VERSION,
-      query_text: queryText,
+      query_text: enrichedQuery,
     });
 
     if (error) throw new Error(`retrieveGrounding: ${error.message}`);

@@ -59,7 +59,7 @@ export function PageTranscriptionCard({ submissionId, page }: { submissionId: st
             {page.transcription_confidence != null ? `${Math.round(page.transcription_confidence * 100)}% নিশ্চয়তা` : "—"}
           </Badge>
           {lowConfidence && (
-            <span className="text-[11px] text-red-deep dark:text-red">নিশ্চয়তা কম — দয়া করে যাচাই করো</span>
+            <span className="text-xs text-red-deep dark:text-red">নিশ্চয়তা কম — দয়া করে যাচাই করো</span>
           )}
         </div>
         <p className="text-xs text-muted-foreground leading-relaxed line-clamp-3">
@@ -71,7 +71,7 @@ export function PageTranscriptionCard({ submissionId, page }: { submissionId: st
           size="sm"
           disabled={flagged || pending}
           onClick={handleFlag}
-          className="h-7 text-[11px] gap-1"
+          className="h-7 text-xs gap-1"
         >
           {pending ? <Loader2 className="w-3 h-3 animate-spin" /> : <Flag className="w-3 h-3" />}
           {flagged ? "এটা আমার লেখা নয় বলে জানানো হয়েছে" : "এই লেখাটি আমি লিখিনি"}

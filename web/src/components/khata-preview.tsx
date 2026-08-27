@@ -140,19 +140,19 @@ export function KhataPreview({ className }: { className?: string }) {
             width="254"
             height="156"
             rx="14"
-            fill="#fff3f0"
-            stroke="#ffd6cf"
+            fill="#fdeaec"
+            stroke="#f5c2c7"
             strokeWidth="1.2"
           />
           <text
             x="18"
             y="32"
-            fill="#d85241"
+            fill="#d92638"
             style={{
               fontFamily: "'Space Mono', monospace",
-              fontSize: '11px',
+              fontSize: '12px',
               fontWeight: 700,
-              letterSpacing: '0.05em',
+              letterSpacing: '0.08em',
             }}
           >
             {scoreTitle}
@@ -160,34 +160,34 @@ export function KhataPreview({ className }: { className?: string }) {
           <text
             x="18"
             y="86"
-            fill="#14182b"
+            fill="#14251f"
             style={{
               fontFamily: "'Baloo 2', sans-serif",
-              fontSize: '44px',
+              fontSize: '36px',
               fontWeight: 800,
             }}
           >
             {scoreValue}
             <tspan
-              fill="#69718c"
+              fill="#52655d"
               style={{
                 fontFamily: "'Space Mono', monospace",
-                fontSize: '18px',
+                fontSize: '20px',
                 fontWeight: 600,
               }}
             >
               {' '}{scoreTotal}
             </tspan>
           </text>
-          <rect x="18" y="104" width="218" height="4" rx="2" fill="#ffd6cf" />
-          <rect x="18" y="104" width="185" height="4" rx="2" fill="#23d9a5" />
+          <rect x="18" y="104" width="218" height="4" rx="2" fill="#f5c2c7" />
+          <rect x="18" y="104" width="185" height="4" rx="2" fill="#006a4e" />
           <text
             x="18"
             y="130"
-            fill="#69718c"
+            fill="#52655d"
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: '10px',
+              fontSize: '12px',
               fontWeight: 500,
             }}
           >

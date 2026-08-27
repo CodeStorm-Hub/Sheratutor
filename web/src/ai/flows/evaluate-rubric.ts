@@ -69,6 +69,13 @@ export const evaluateRubricFlow = ai.defineFlow(
       `Write deduction_summary_bn in natural, conversational Bangla suitable for a 15-18 ` +
       `year old (not a literal translation of the English summary), and deduction_summary_en ` +
       `in plain English. The student's preferred language is ${studentLanguagePreference}.\n\n` +
+      `MISTAKE TAXONOMY CLASSIFICATION:\n` +
+      `- If no marks lost: mistake_category = "NONE"\n` +
+      `- If student used wrong formula or missed key formula: mistake_category = "FORMULA_RECALL"\n` +
+      `- If student missed units or made unit conversion error (e.g. cm to m, km/h to m/s): mistake_category = "UNIT_CONVERSION"\n` +
+      `- If formula was right but arithmetic/calculation was wrong: mistake_category = "CALCULATION_ERROR"\n` +
+      `- If student misunderstood core physics principle: mistake_category = "CONCEPTUAL_MISCONCEPTION"\n\n` +
+      `Verify all mathematical calculations step-by-step for exact numerical equality and set arithmetic_verified accordingly.\n\n` +
       `QUESTION (max ${maxMarks} marks): ${questionText}\n\n` +
       `OFFICIAL RUBRIC: ${JSON.stringify(rubricCriteria)}\n\n` +
       `RETRIEVED CURRICULUM CONTEXT:\n${groundingContext || "(none retrieved — grade conservatively and flag low grounding_confidence)"}\n\n` +

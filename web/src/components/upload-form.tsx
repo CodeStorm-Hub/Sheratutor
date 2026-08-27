@@ -130,7 +130,7 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
   return (
     <form onSubmit={handleSubmit} className="space-y-5">
       <div className="space-y-1.5">
-        <Label htmlFor="paper">প্রশ্নপত্র</Label>
+        <Label htmlFor="questionPaperSelect">প্রশ্নপত্র</Label>
         {papers.length === 0 ? (
           <p className="text-sm text-muted-foreground rounded-lg border border-border p-3">
             এই মুহূর্তে কোনো মক পরীক্ষা পাওয়া যাচ্ছে না। শীঘ্রই আবার দেখো।
@@ -142,7 +142,7 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
               setPaperId(v);
             }}
           >
-            <SelectTrigger id="paper" className="w-full">
+            <SelectTrigger id="questionPaperSelect" aria-label="প্রশ্নপত্র নির্বাচন করুন" className="w-full">
               <SelectValue />
             </SelectTrigger>
             <SelectContent>
@@ -182,6 +182,7 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
           type="file"
           accept="image/*"
           capture="environment"
+          aria-label="ক্যামেরা থেকে ছবি তুলুন"
           className="hidden"
           onChange={(e) => {
             addFiles(e.target.files);
@@ -193,6 +194,7 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
           type="file"
           accept="image/*,.pdf,.heic"
           multiple
+          aria-label="গ্যালারি থেকে ছবি বেছে নিন"
           className="hidden"
           onChange={(e) => {
             addFiles(e.target.files);
@@ -211,7 +213,7 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
                 <div className="relative w-20 h-24 rounded-lg overflow-hidden border border-border bg-muted">
                   {/* eslint-disable-next-line @next/next/no-img-element -- local object URL preview, no next/image benefit */}
                   <img src={p.previewUrl} alt={`পৃষ্ঠা ${i + 1}`} className="w-full h-full object-cover" />
-                  <span className="absolute top-1 left-1 bg-black/60 text-white text-[10px] font-tabular rounded px-1.5 py-0.5">
+                  <span className="absolute top-1 left-1 bg-black/60 text-white text-xs font-tabular rounded px-1.5 py-0.5">
                     {i + 1}
                   </span>
                   <button
@@ -225,7 +227,7 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
                 </div>
                 {questions.length > 0 && (
                   <Select value={p.questionId ?? "unsure"} onValueChange={(v) => setPageQuestion(i, v === "unsure" ? null : v)}>
-                    <SelectTrigger className="h-6 text-[10px] w-20 mt-1 px-1.5" size="sm">
+                    <SelectTrigger className="h-6 text-xs w-20 mt-1 px-1.5" size="sm">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
@@ -260,21 +262,53 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
   );
 }
 
-/** Client-side downscale to keep uploads usable on metered 3G/4G (docs/review §8.5). */
+/**
+ * Client-side downscale, contrast normalization, and WebP compression
+ * to keep uploads ultra-fast on metered 3G/4G connections in Bangladesh.
+ */
 async function compressImage(file: File, maxDim = 1800, quality = 0.82): Promise<Blob> {
-  if (!file.type.startsWith("image/")) return file; // PDFs/HEIC pass through untouched for now
+  if (!file.type.startsWith("image/")) return file;
 
-  const bitmap = await createImageBitmap(file);
-  const scale = Math.min(1, maxDim / Math.max(bitmap.width, bitmap.height));
-  const canvas = document.createElement("canvas");
-  canvas.width = Math.round(bitmap.width * scale);
-  canvas.height = Math.round(bitmap.height * scale);
+  try {
+    const bitmap = await createImageBitmap(file);
+    const scale = Math.min(1, maxDim / Math.max(bitmap.width, bitmap.height));
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.round(bitmap.width * scale);
+    canvas.height = Math.round(bitmap.height * scale);
 
-  const ctx = canvas.getContext("2d");
-  if (!ctx) return file;
-  ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
+    if (!ctx) return file;
 
-  return new Promise((resolve) => {
-    canvas.toBlob((blob) => resolve(blob ?? file), "image/jpeg", quality);
-  });
+    // Draw base resized image
+    ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+
+    // Apply slight contrast enhancement for faint pencil/ink on lined khata paper
+    const imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+    const d = imgData.data;
+    const contrast = 1.15; // 15% contrast boost
+    const intercept = 128 * (1 - contrast);
+    for (let i = 0; i < d.length; i += 4) {
+      d[i] = d[i] * contrast + intercept;     // R
+      d[i + 1] = d[i + 1] * contrast + intercept; // G
+      d[i + 2] = d[i + 2] * contrast + intercept; // B
+    }
+    ctx.putImageData(imgData, 0, 0);
+
+    return new Promise((resolve) => {
+      // Prefer WebP if supported, fallback to JPEG
+      canvas.toBlob(
+        (blob) => {
+          if (blob) {
+            resolve(blob);
+          } else {
+            canvas.toBlob((fallbackBlob) => resolve(fallbackBlob ?? file), "image/jpeg", quality);
+          }
+        },
+        "image/webp",
+        quality
+      );
+    });
+  } catch (_) {
+    return file;
+  }
 }

@@ -65,11 +65,11 @@ function SidebarLinks({ collapsed }: { collapsed: boolean }) {
             title={collapsed ? label : undefined}
             aria-label={collapsed ? label : undefined}
             className={cn(
-              "flex items-center gap-2.5 rounded-r-lg rounded-l-sm border-l-3 px-3 py-2 text-sm font-medium transition-colors",
+              "flex items-center gap-2.5 rounded-lg px-3 py-2 text-sm font-medium transition-colors",
               collapsed && "justify-center px-0",
               active
-                ? "border-l-red bg-primary/10 text-primary"
-                : "border-l-transparent text-muted-foreground hover:bg-muted hover:text-foreground"
+                ? "bg-primary/10 text-primary font-semibold"
+                : "text-muted-foreground hover:bg-muted hover:text-foreground"
             )}
           >
             <Icon className="w-4 h-4 shrink-0" />
@@ -198,7 +198,7 @@ export function DashboardNav() {
                 key={href}
                 href={href}
                 className={cn(
-                  "flex flex-col items-center justify-center gap-0.5 h-full text-[11px] font-medium",
+                  "flex flex-col items-center justify-center gap-0.5 h-full text-xs font-medium",
                   active ? "text-primary" : "text-muted-foreground"
                 )}
               >
@@ -217,7 +217,7 @@ export function DashboardNav() {
               <span className="flex items-center justify-center w-14 h-14 rounded-full bg-red text-white shadow-lg shadow-red/30 group-active:scale-95 transition-transform">
                 <Upload className="w-6 h-6" />
               </span>
-              <span className="text-[11px] font-medium text-red">জমা দাও</span>
+              <span className="text-xs font-medium text-red">জমা দাও</span>
             </Link>
           </div>
 
@@ -228,7 +228,7 @@ export function DashboardNav() {
                 key={href}
                 href={href}
                 className={cn(
-                  "flex flex-col items-center justify-center gap-0.5 h-full text-[11px] font-medium",
+                  "flex flex-col items-center justify-center gap-0.5 h-full text-xs font-medium",
                   active ? "text-primary" : "text-muted-foreground"
                 )}
               >
@@ -242,7 +242,7 @@ export function DashboardNav() {
             type="button"
             onClick={() => setMoreOpen(true)}
             className={cn(
-              "flex flex-col items-center justify-center gap-0.5 h-full text-[11px] font-medium",
+              "flex flex-col items-center justify-center gap-0.5 h-full text-xs font-medium",
               MORE_LINKS.some((l) => isActive(pathname, l.href)) ? "text-primary" : "text-muted-foreground"
             )}
           >

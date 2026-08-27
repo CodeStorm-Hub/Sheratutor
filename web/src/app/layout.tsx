@@ -32,7 +32,10 @@ export default function RootLayout({
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
-      </body>
+      {/* impeccable-live-start */}
+<script src="http://localhost:8400/live.js?token=4de4d515-5d59-4714-8898-7a07e0418a32"></script>
+{/* impeccable-live-end */}
+</body>
     </html>
   );
 }

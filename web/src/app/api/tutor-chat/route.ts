@@ -57,6 +57,7 @@ export async function POST(request: Request) {
     chapterId,
     studentMessage,
     languagePreference = "bn",
+    scaffoldingStyle = "socratic" as "socratic" | "direct",
     stream = false,
   } = body as {
     sessionId?: string;
@@ -72,6 +73,7 @@ export async function POST(request: Request) {
     chapterId?: string;
     studentMessage: string;
     languagePreference?: "bn" | "en";
+    scaffoldingStyle?: "socratic" | "direct";
     stream?: boolean;
   };
 
@@ -278,6 +280,7 @@ export async function POST(request: Request) {
   if (stream) {
     const prompt = buildTutorPrompt({
       mode: session.mode,
+      scaffoldingStyle,
       questionText: ctx.questionText,
       studentAnswerChunk: ctx.studentAnswerChunk,
       rubricFailureReason: ctx.rubricFailureReason,
@@ -389,6 +392,7 @@ export async function POST(request: Request) {
   // Non-streaming fallback
   const result = await tutorChatFlow({
     mode: session.mode,
+    scaffoldingStyle,
     questionText: ctx.questionText,
     studentAnswerChunk: ctx.studentAnswerChunk,
     rubricFailureReason: ctx.rubricFailureReason,

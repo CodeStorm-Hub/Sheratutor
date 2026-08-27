@@ -1,0 +1,9 @@
+# Next.js 16 & React 19 Project Rules
+
+- **Framework**: Next.js 16+ App Router, React 19, Turbopack.
+- **MCP Integration**: `next-devtools-mcp` is configured in `.mcp.json`. Use it for diagnostics (`get_errors`, `get_routes`, `get_page_metadata`, `get_logs`).
+- **Docs**: Look up version-accurate guides in `web/node_modules/next/dist/docs/`.
+- **RSC Pattern**: Keep components as Server Components by default; keep `'use client'` at interactive leaves.
+- **Caching**: Utilize `cacheComponents: true` with `'use cache'`, `cacheLife`, and `cacheTag`.
+- **Mutations**: Server Actions (`"use server"`) combined with React 19's `useActionState` and `useOptimistic`.
+- **Styling**: Tailwind CSS v4, shadcn/ui.

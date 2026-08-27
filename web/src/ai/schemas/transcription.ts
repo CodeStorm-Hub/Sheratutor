@@ -40,6 +40,17 @@ export const TranscriptionSchema = z.object({
   uncertain_spans: z
     .array(z.string())
     .describe("Substrings the model was unsure how to read — illegible or ambiguous handwriting."),
+  recognized_blocks: z
+    .array(
+      z.object({
+        question_label: z.string().optional().describe("Question part if labeled (e.g. '১(ক)', '2(b)')."),
+        box_2d: z.tuple([z.number(), z.number(), z.number(), z.number()]).optional().describe("[ymin, xmin, ymax, xmax] coordinates normalized 0-1000."),
+        snippet_text: z.string().describe("Text snippet contained within this block."),
+      })
+    )
+    .optional()
+    .default([])
+    .describe("Spatial blocks and regions identified on the handwritten script page."),
 });
 
 export type Transcription = z.infer<typeof TranscriptionSchema>;

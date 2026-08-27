@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-28T00:20:30.000Z",
+  "title": "Design System: SheraTutor",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Bottle Green",
+        "canonical": "#006a4e",
+        "tonalRamp": ["#00241a", "#003b2b", "#00543d", "#006a4e", "#1b8767", "#34b98a", "#9bebc9", "#e2f0e9"]
+      },
+      "accent-coral": {
+        "role": "secondary",
+        "displayName": "Brand Coral",
+        "canonical": "#ff6b57",
+        "tonalRamp": ["#4a150e", "#8c281a", "#b83522", "#e6503d", "#ff6b57", "#ff8f80", "#ffbcb3", "#fdeaec"]
+      },
+      "accent-mint": {
+        "role": "secondary",
+        "displayName": "Mint AI Accent",
+        "canonical": "#23d9a5",
+        "tonalRamp": ["#063b2c", "#0b664d", "#0fb98a", "#23d9a5", "#56e4bc", "#8df0d4", "#c6f7eb", "#eafbf7"]
+      },
+      "accent-sunshine": {
+        "role": "tertiary",
+        "displayName": "Sunshine Ochre",
+        "canonical": "#ffc93c",
+        "tonalRamp": ["#422c00", "#734e00", "#b97f08", "#e6a110", "#ffc93c", "#ffd76b", "#ffe59e", "#fbf3dc"]
+      },
+      "examiner-red": {
+        "role": "tertiary",
+        "displayName": "Examiner Red",
+        "canonical": "#d92638",
+        "tonalRamp": ["#45080e", "#7a111a", "#b81e2e", "#d92638", "#e64d5d", "#f27986", "#f9b3bb", "#fdeaec"]
+      },
+      "paper-bg": {
+        "role": "neutral",
+        "displayName": "Paper White & Khata Gray",
+        "canonical": "#f7f8f5",
+        "tonalRamp": ["#14251f", "#2c3b35", "#52655d", "#8c9b93", "#c5cec8", "#dde4dd", "#eef0ea", "#f7f8f5"]
+      },
+      "blackboard-bg": {
+        "role": "neutral",
+        "displayName": "Blackboard Dark",
+        "canonical": "#0f1c17",
+        "tonalRamp": ["#080f0c", "#0f1c17", "#16261f", "#22352c", "#34493e", "#51695c", "#7e978a", "#e8efe9"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Baloo 2 Display", "purpose": "High-impact hero banners and milestone stats." },
+      "headline": { "displayName": "Baloo 2 Headline", "purpose": "Subject titles, chapter headers, and modal headings." },
+      "title": { "displayName": "Inter Title", "purpose": "Card headers, question labels, and list item titles." },
+      "body": { "displayName": "Inter Body", "purpose": "Rubric explanations, tutor dialogue, and standard interface text." },
+      "label": { "displayName": "Space Mono Label", "purpose": "Eyebrow categories, exam tags, and tabular numerals." }
+    },
+    "shadows": [
+      { "name": "subtle-ambient", "value": "0 8px 30px rgba(28, 35, 65, 0.04)", "purpose": "Floating sidebar and dashboard widget container depth." },
+      { "name": "raised-popover", "value": "0 12px 32px rgba(0, 0, 0, 0.12)", "purpose": "Dropdown menus, tooltips, and floating tutor chat panel." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Default easing for interactive state transitions." },
+      { "name": "duration-fast", "value": "150ms", "purpose": "Hover and active micro-interactions." },
+      { "name": "duration-normal", "value": "250ms", "purpose": "Drawer, accordion, and tab switching transitions." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Institutional Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Standard high-priority submission and confirmation action.",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20 6 9 17l-5-5\"/></svg>Submit Script</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #006a4e; color: #ffffff; padding: 8px 16px; border-radius: 9.6px; border: none; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms ease; } .ds-btn-primary:hover { background: #00543d; transform: translateY(-1px); } .ds-btn-primary:focus-visible { outline: 2px solid #006a4e; outline-offset: 2px; }"
+    },
+    {
+      "name": "Student Action Coral Button",
+      "kind": "button",
+      "refersTo": "button-coral",
+      "description": "Vibrant CTA for student exploration and exam initiation.",
+      "html": "<button class=\"ds-btn-coral\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3Z\"/></svg>Start Mock Exam</button>",
+      "css": ".ds-btn-coral { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: #ff6b57; color: #ffffff; padding: 8px 16px; border-radius: 9.6px; border: none; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; cursor: pointer; transition: background 150ms cubic-bezier(0.4, 0, 0.2, 1), transform 150ms ease; } .ds-btn-coral:hover { background: #e6503d; transform: translateY(-1px); } .ds-btn-coral:focus-visible { outline: 2px solid #ff6b57; outline-offset: 2px; }"
+    },
+    {
+      "name": "Outline Secondary Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Subtle border button for navigation and secondary controls.",
+      "html": "<button class=\"ds-btn-outline\">View Solution</button>",
+      "css": ".ds-btn-outline { display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: transparent; color: #14251f; padding: 8px 16px; border-radius: 9.6px; border: 1px solid #dde4dd; font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 500; cursor: pointer; transition: background 150ms ease, border-color 150ms ease; } .ds-btn-outline:hover { background: #eef0ea; border-color: #c5cec8; }"
+    },
+    {
+      "name": "Examiner Margin Rule Card",
+      "kind": "card",
+      "refersTo": "card-paper",
+      "description": "Signature rubric card highlighting examiner feedback with red margin line.",
+      "html": "<div class=\"ds-margin-card\"><div class=\"ds-card-header\"><span class=\"ds-badge-deduction\">-1.0 MARK</span><span class=\"ds-step-tag\">STEP 2 · FORMULA ERROR</span></div><p class=\"ds-card-text\">Missed initial velocity vector decomposition (v_0x = v_0 \\cos\\theta). Full credit requires showing the trigonometric component step.</p></div>",
+      "css": ".ds-margin-card { background: #ffffff; border: 1px solid #dde4dd; border-left: 3px solid #d92638; border-radius: 12px; padding: 16px; font-family: 'Inter', sans-serif; } .ds-card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; } .ds-badge-deduction { background: #fdeaec; color: #d92638; font-family: 'Space Mono', monospace; font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 9999px; letter-spacing: 0.08em; } .ds-step-tag { color: #52655d; font-family: 'Space Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; } .ds-card-text { margin: 0; color: #14251f; font-size: 14px; line-height: 1.5; }"
+    },
+    {
+      "name": "Exam Eyebrow Tag",
+      "kind": "chip",
+      "refersTo": "badge-status",
+      "description": "Monospace uppercase tag for board identifiers and difficulty levels.",
+      "html": "<span class=\"ds-chip-merit\">DHAKA BOARD 2024</span>",
+      "css": ".ds-chip-merit { display: inline-flex; align-items: center; background: #fbf3dc; color: #b97f08; font-family: 'Space Mono', monospace; font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: 9999px; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(185, 127, 8, 0.2); }"
+    },
+    {
+      "name": "Text Input Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Clean border input with high focus contrast.",
+      "html": "<input type=\"text\" class=\"ds-input\" placeholder=\"Search chapter or topic...\" />",
+      "css": ".ds-input { width: 100%; height: 38px; padding: 8px 12px; background: #ffffff; border: 1px solid #dde4dd; border-radius: 9.6px; font-family: 'Inter', sans-serif; font-size: 14px; color: #14251f; outline: none; transition: border-color 150ms ease, box-shadow 150ms ease; } .ds-input:focus { border-color: #006a4e; box-shadow: 0 0 0 2px rgba(0, 106, 78, 0.2); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Board Examiner's Khata & Blackboard",
+    "overview": "SheraTutor's design system grounds digital exam preparation in the tactile reality of Bangladeshi academia. In light mode, the interface evokes the authentic ruled-paper exam script (খাতা)—warm off-white paper backgrounds (#F7F8F5), crisp ink typography (#14251F), subtle 1px ruled lines (#DDE4DD), and the authoritative presence of the examiner's red grading pen (#D92638). In dark mode, the environment seamlessly transitions into a calm, focused classroom chalkboard (#0F1C17) with chalk-tinted text and emerald accents.",
+    "keyCharacteristics": [
+      "Authentic Paper & Blackboard Dual Themes: Tactile paper textures in light mode and distraction-free chalkboard tones in dark mode.",
+      "Disciplined Examiner Red: Red is never used as a generic CTA; it is strictly preserved for marks, deductions, and the signature margin rule.",
+      "Culturally Attuned Typography: Energetic Baloo 2 paired with neutral Inter and monospace exam labels.",
+      "Diagnostic Clarity: Information density optimized for step-by-step mark breakdowns and KaTeX mathematical notation."
+    ],
+    "rules": [
+      {
+        "name": "The Examiner Red Rule",
+        "body": "Examiner Red (#D92638) is strictly reserved for mark deductions, step gaps, and the signature left margin rule. It is never used as a primary button background or generic brand decoration, preserving its psychological authority ('the board examiner marked this').",
+        "section": "colors"
+      },
+      {
+        "name": "The Khata Contrast Rule",
+        "body": "The paper sheet element inside icons, preview cards, and badges must maintain authentic white/light-gray fill regardless of light or dark mode. Background contrast adapts around the paper, never inverting the khata itself.",
+        "section": "colors"
+      },
+      {
+        "name": "The Bengali Script Rule",
+        "body": "When rendering Bengali text (:lang(bn)), typography automatically prioritizes optimized Bengali typefaces with appropriate line-height compensation (1.6) to prevent vowel diacritic clipping.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Precision Rule",
+        "body": "All numerical scores, timers, and mark deductions utilize tabular numerals (font-variant-numeric: tabular-nums) to ensure strict columnar alignment in grade tables.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-by-Default Rule",
+        "body": "Surfaces rest flat with clean 1px border lines. Shadows appear only to indicate elevation state, floating navigation, or focused overlay modals.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve Examiner Red (#D92638) exclusively for scores, deductions, and rubric feedback.",
+      "Do format all mathematical and chemical equations using KaTeX with proper inline/block delimiters.",
+      "Do use Space Mono uppercase tracking for eyebrow titles, exam codes, and score badges.",
+      "Do ensure Bengali text rendered via Baloo 2 has sufficient vertical line-height (1.5 to 1.6) to avoid clipping diacritics.",
+      "Do keep card borders crisp (1px solid #DDE4DD) with subtle surface contrast."
+    ],
+    "donts": [
+      "Don't use Examiner Red for primary CTA buttons or general marketing elements.",
+      "Don't invert the white/light-gray paper sheet graphic in the brand mark when in dark mode.",
+      "Don't use generic bright purple/blue AI gradient bubbles; use Mint (#23D9A5) and clean ink lines.",
+      "Don't place heavy, blurry drop shadows on standard grid cards.",
+      "Don't truncate mathematical formulas or script transcriptions on mobile viewports without horizontal scroll containers."
+    ]
+  }
+}
