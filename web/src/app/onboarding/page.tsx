@@ -35,7 +35,7 @@ export default function OnboardingPage() {
   }, [dob]);
 
   return (
-    <div className="min-h-full flex flex-col items-center justify-center px-6 py-12 bg-background">
+    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-background text-foreground">
       <div className="mb-8">
         <Logo />
       </div>
