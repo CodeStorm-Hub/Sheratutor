@@ -116,8 +116,8 @@ export function MistakesPageClient({
         </div>
 
         {allTags.length > 0 && (
-          <div className="bg-white p-4 rounded-xl border border-border shadow-sm">
-            <h3 className="text-sm font-semibold mb-3 text-navy">Weakness Tags Aggregator</h3>
+          <div className="bg-card p-4 rounded-xl border border-border shadow-xs">
+            <h3 className="text-sm font-semibold mb-3 text-foreground">Weakness Tags Aggregator</h3>
             <div className="flex flex-wrap gap-2">
               {allTags.map(tag => (
                 <Tag key={tag} color="sun">#{tag}</Tag>

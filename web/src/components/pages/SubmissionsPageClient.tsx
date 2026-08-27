@@ -119,8 +119,8 @@ export function SubmissionsPageClient({
               textAlign: 'center',
               border: '1px solid var(--border)',
               borderRadius: 16,
-              background: '#fff',
-              color: 'var(--muted)',
+              background: 'var(--card)',
+              color: 'var(--muted-foreground)',
             }}
           >
             {language === 'bn'
@@ -140,17 +140,17 @@ export function SubmissionsPageClient({
                   padding: '16px 20px',
                   border: '1px solid var(--border)',
                   borderRadius: 12,
-                  background: '#fff',
+                  background: 'var(--card)',
                   textDecoration: 'none',
                   color: 'inherit',
                 }}
               >
                 <div>
-                  <b style={{ fontSize: 14, display: 'block' }}>
+                  <b style={{ fontSize: 14, display: 'block', color: 'var(--foreground)' }}>
                     {s.question_papers?.subjects?.name_en || (language === 'bn' ? 'বিষয়' : 'Subject')} —{' '}
                     {s.question_papers?.title || (language === 'bn' ? 'অনুশীলন প্রশ্ন' : 'Practice Paper')}
                   </b>
-                  <small style={{ color: 'var(--muted)', fontSize: 11 }}>
+                  <small style={{ color: 'var(--muted-foreground)', fontSize: 11 }}>
                     {language === 'bn' ? 'জমা দেওয়া হয়েছে ' : 'Submitted on '}
                     {new Date(s.submitted_at).toLocaleDateString(language === 'bn' ? 'bn-BD' : 'en-GB', {
                       day: 'numeric',
@@ -166,12 +166,12 @@ export function SubmissionsPageClient({
                       ? (language === 'bn' ? 'সম্পূর্ণ' : 'COMPLETED')
                       : (language === 'bn' ? 'মূল্যায়ন চলমান' : 'EVALUATING')}
                   </Tag>
-                  <strong style={{ fontFamily: 'Space Mono', fontSize: 16 }}>
+                  <strong style={{ fontFamily: 'Space Mono', fontSize: 16, color: 'var(--foreground)' }}>
                     {s.total_score_obtained != null
                       ? `${s.total_score_obtained}/${s.max_possible_score}`
                       : '—'}
                   </strong>
-                  <ChevronRight size={16} color="#69718c" />
+                  <ChevronRight size={16} color="var(--muted-foreground)" />
                 </div>
               </Link>
             ))}

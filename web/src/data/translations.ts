@@ -139,11 +139,11 @@ export const translations = {
     'dashboard.activity_title': 'মূল্যায়ন কার্যক্রম',
     'dashboard.activity_desc': 'টি পরীক্ষা এআই পরীক্ষক দ্বারা মূল্যায়িত হয়েছে।',
     'dashboard.activity_empty': 'স্কোর ইতিহাস দেখতে তোমার প্রথম উত্তরপত্র আপলোড করো।',
-    'dashboard.tests_submitted': 'টি পরীক্ষা জমা দেওয়া হয়েছে',
+    'dashboard.tests_submitted': 'জমা দেওয়া পরীক্ষা',
     'dashboard.this_term': 'এই টার্ম',
-    'dashboard.avg_score': 'গড়',
+    'dashboard.avg_score': 'গড় স্কোর',
     'dashboard.new_student': 'নতুন শিক্ষার্থী',
-    'dashboard.momentum_label': 'মূল্যায়ন গতি',
+    'dashboard.momentum_label': 'প্রস্তুতি স্কোর',
     'dashboard.view_all_results': 'সব ফলাফল দেখুন',
 
     // AI Tutor

@@ -111,6 +111,15 @@
 }
 
 .dark {
+  --color-paper: var(--color-blackboard);
+  --color-paper-card: var(--color-blackboard-card);
+  --color-ink: #e8efe9;
+  --color-ink-soft: #9db3a8;
+  --color-line: oklch(1 0 0 / 12%);
+  --color-green-soft: rgba(52, 185, 138, 0.15);
+  --color-ochre-soft: rgba(230, 195, 92, 0.15);
+  --color-red-soft: rgba(255, 107, 122, 0.15);
+
   --background: var(--color-blackboard);
   --foreground: #e8efe9;
   --card: var(--color-blackboard-card);
@@ -147,6 +156,11 @@
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(150, 150, 150, 0.3) transparent;
+  }
+  .dark * {
+    scrollbar-color: rgba(255, 255, 255, 0.2) transparent;
   }
   body {
     @apply bg-background text-foreground;

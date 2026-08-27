@@ -250,9 +250,9 @@ export function SubmissionDetailClient({
               const firstObs = q.observations_json?.[0];
 
               return (
-                <div key={q.id} style={{ border: '1px solid var(--border)', borderRadius: 14, background: '#fff', padding: '20px 22px' }}>
+                <div key={q.id} style={{ border: '1px solid var(--border)', borderRadius: 14, background: 'var(--card)', padding: '20px 22px' }}>
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10, gap: 12 }}>
-                    <b style={{ fontSize: 15, color: 'var(--navy)', flex: 1 }}>
+                    <b style={{ fontSize: 15, color: 'var(--foreground)', flex: 1 }}>
                       {language === 'bn' ? `প্রশ্ন ${q.question_number || qIndex + 1}: ` : `Question ${q.question_number || qIndex + 1}: `}
                       {qText}
                     </b>
@@ -287,13 +287,13 @@ export function SubmissionDetailClient({
                   {q.observations_json && q.observations_json.length > 0 ? (
                     <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 8 }}>
                       {q.observations_json.map((obs, idx) => (
-                        <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, fontSize: 13, color: 'var(--muted)', background: '#f8f9fc', padding: '10px 14px', borderRadius: 8 }}>
+                        <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, fontSize: 13, color: 'var(--muted-foreground)', background: 'var(--muted)', padding: '10px 14px', borderRadius: 8 }}>
                           <span style={{ color: obs.marks_deducted > 0 ? 'var(--coral)' : 'var(--mint)', fontWeight: 700 }}>
                             {obs.marks_deducted > 0 ? `-${obs.marks_deducted}` : '✓'}
                           </span>
                           <div>
-                            <b style={{ color: 'var(--navy)', display: 'block' }}>{obs.step}</b>
-                            <p style={{ margin: 0 }}>{obs.observation}</p>
+                            <b style={{ color: 'var(--foreground)', display: 'block' }}>{obs.step}</b>
+                            <p style={{ margin: 0, color: 'var(--muted-foreground)' }}>{obs.observation}</p>
                           </div>
                         </div>
                       ))}

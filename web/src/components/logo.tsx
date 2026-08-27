@@ -22,8 +22,8 @@ export function Logo({
         <span />
         <span />
       </div>
-      <span style={{ font: "700 22px 'Baloo 2', sans-serif", letterSpacing: '-0.3px' }}>
-        Shera<span style={{ color: 'var(--coral)' }}>Tutor</span>
+      <span className="text-foreground" style={{ font: "700 22px 'Baloo 2', sans-serif", letterSpacing: '-0.3px', color: 'var(--foreground)' }}>
+        Shera<span style={{ color: 'var(--color-red, #ff6b57)' }}>Tutor</span>
       </span>
       {tagline && (
         <span

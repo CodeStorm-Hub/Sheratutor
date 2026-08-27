@@ -108,9 +108,11 @@ export function DashboardPageClient({
           </header>
 
           <div className="prediction-main">
-            <div className="big-grade">
+            <div className="big-grade" style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
               <b>{gradeLetter}</b>
-              <small>{avgScorePct !== null ? `${avgScorePct}%` : 'N/A'}</small>
+              <small style={{ fontSize: '18px', fontWeight: 600, opacity: 0.85 }}>
+                {avgScorePct !== null ? `(${avgScorePct}%)` : 'N/A'}
+              </small>
             </div>
 
             <div className="percentile">
@@ -204,7 +206,7 @@ export function DashboardPageClient({
             <b>
               {examType} · {targetExamBoard}
             </b>
-            <div className="exam-date">
+            <div className="exam-date" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
               <span>{language === 'bn' ? 'বোর্ড পরীক্ষা' : 'Board Exam'}</span>
               <p>{targetExamYear}</p>
             </div>
@@ -249,9 +251,10 @@ export function DashboardPageClient({
                 <div className="progress">
                   <span style={{ width: `${sub.progress}%` }} />
                 </div>
-                <div className="subject-footer">
+                <div className="subject-footer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
                   <span>{sub.progress}% {language === 'bn' ? 'দক্ষতা' : 'mastery'}</span>
-                  <span>{sub.chapterCount} {language === 'bn' ? 'অধ্যায়' : 'chapters'}</span>
+                  <span>·</span>
+                  <span>{sub.chapterCount} {language === 'bn' ? 'টি অধ্যায়' : 'chapters'}</span>
                 </div>
               </article>
             </Link>
@@ -346,24 +349,24 @@ export function DashboardPageClient({
           <BarChart data={hasSubmissions ? undefined : [0,0,0,0,0,0,0]} />
 
           <div className="progress-stats">
-            <div>
-              <span>{t('dashboard.tests_submitted')}</span>
-              <strong>{submissionsCount}</strong>
-              <small>{t('dashboard.this_term')}</small>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <span style={{ fontSize: '12px', opacity: 0.85 }}>{t('dashboard.tests_submitted')}</span>
+              <strong style={{ fontSize: '18px' }}>{submissionsCount}{language === 'bn' ? 'টি' : ''}</strong>
+              <small style={{ fontSize: '11px', opacity: 0.75 }}>{t('dashboard.this_term')}</small>
             </div>
-            <div>
-              <span>{t('dashboard.avg_score')}</span>
-              <strong>{avgScorePct !== null ? `${avgScorePct}%` : '—'}</strong>
-              <small>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <span style={{ fontSize: '12px', opacity: 0.85 }}>{t('dashboard.avg_score')}</span>
+              <strong style={{ fontSize: '18px' }}>{avgScorePct !== null ? `${avgScorePct}%` : '—'}</strong>
+              <small style={{ fontSize: '11px', opacity: 0.75 }}>
                 {totalCompleted > 0
-                  ? `${totalCompleted} ${language === 'bn' ? 'মূল্যায়ন' : 'tests'}`
+                  ? `${totalCompleted}${language === 'bn' ? 'টি মূল্যায়ন' : ' tests'}`
                   : t('dashboard.new_student')}
               </small>
             </div>
-            <div>
-              <span>{t('dashboard.momentum_label')}</span>
-              <strong>{momentumScore}%</strong>
-              <small>{language === 'bn' ? 'সক্রিয়' : 'Active'}</small>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
+              <span style={{ fontSize: '12px', opacity: 0.85 }}>{t('dashboard.momentum_label')}</span>
+              <strong style={{ fontSize: '18px' }}>{momentumScore}%</strong>
+              <small style={{ fontSize: '11px', opacity: 0.75 }}>{language === 'bn' ? 'সক্রিয়' : 'Active'}</small>
             </div>
           </div>
 
