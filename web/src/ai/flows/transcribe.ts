@@ -33,6 +33,8 @@ export const transcribePageFlow = ai.defineFlow(
             `formulas — the grading system needs to see the actual error to grade fairly. ` +
             `If the student wrote "÷100" transcribe "÷100" even if the correct step is "÷1000". ` +
             `If text is crossed out, note it but still transcribe what's legible underneath if relevant. ` +
+            `Identify distinct handwritten question blocks or sections in recognized_blocks with [ymin, xmin, ymax, xmax] ` +
+            `bounding coordinates normalized 0-1000 and their corresponding question labels (e.g. '১(ক)', '1(c)'). ` +
             `Report your own confidence that this transcription is truly verbatim (not silently ` +
             `auto-corrected) in verbatim_confidence, and list any illegible/ambiguous spans.`,
         },

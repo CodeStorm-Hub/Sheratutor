@@ -4,6 +4,7 @@ import { OpenAI } from "openai";
 
 const SELF_HARM_PATTERNS = [
   /suicid/i, /kill myself/i, /self.?harm/i, /want to die/i, /আত্মহত্যা/, /মরে যেতে/,
+  /মারধর/, /অত্যাচার/, /abuse/i, /bullying/i, /হতাশ হয়ে গেছি/,
 ];
 
 export const SafetyCheckResult = z.object({
@@ -58,6 +59,7 @@ export function stripLeadingGreeting(text: string): string {
 
 export function buildTutorPrompt(params: {
   mode: "rubric" | "general";
+  scaffoldingStyle?: "socratic" | "direct";
   questionText?: string;
   studentAnswerChunk?: string;
   rubricFailureReason?: string;
@@ -70,6 +72,7 @@ export function buildTutorPrompt(params: {
 }): string {
   const {
     mode,
+    scaffoldingStyle = "socratic",
     questionText,
     studentAnswerChunk,
     rubricFailureReason,
@@ -100,6 +103,16 @@ export function buildTutorPrompt(params: {
     ? `\n\nOFFICIAL NCTB TEXTBOOK CONTEXT:\n${sanitizedContext}\n`
     : "";
 
+  const socraticInstruction =
+    scaffoldingStyle === "socratic"
+      ? `SOCRATIC PEDAGOGY RULES:\n` +
+        `- Do NOT reveal the full direct solution or final mathematical calculation immediately.\n` +
+        `- Help the student discover their mistake by asking ONE clear, guiding question at a time.\n` +
+        `- Point them towards the relevant physical law or equation without solving it for them.\n` +
+        `- Encourage them to think: "উদ্দীপকে কী কী মান দেওয়া আছে এবং কোন সূত্রটি প্রযোজ্য?"\n\n`
+      : `DIRECT EXPLANATION RULES:\n` +
+        `- Give a clear, direct, and complete step-by-step breakdown of the concept and formula.\n\n`;
+
   const roleIntro =
     mode === "rubric"
       ? `Your job is to explain why marks were deducted and help the student understand ` +
@@ -124,16 +137,17 @@ export function buildTutorPrompt(params: {
       : `6. If the student asks about anything off-topic, gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
 
   return (
-    `You are SheraTutor's "Explain it simply" AI tutor for Bangladeshi SSC Physics students. ${roleIntro}\n\n` +
-    `RULES:\n` +
+    `You are SheraTutor's "Explain it simply" AI tutor for Bangladeshi SSC/HSC Physics students. ${roleIntro}\n\n` +
+    socraticInstruction +
+    `CORE RULES:\n` +
     `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}. ` +
-    `Do NOT open with greetings or introductory salutations — start immediately with the direct explanation.\n` +
-    `2. Keep the explanation concise and focused (under 250 words, 2-3 short paragraphs or bullet points). Do NOT write an entire textbook chapter.\n` +
+    `Do NOT open with greetings or introductory salutations — start immediately with the explanation or guiding question.\n` +
+    `2. Keep the response concise and focused (under 250 words, 2-3 short paragraphs or bullet points).\n` +
     `3. Write in Bengali script and English for scientific terminology, units, and LaTeX notation.\n` +
     `4. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
     `Example: $F = ma$, $s = ut + \\frac{1}{2}at^2$, $\\text{ms}^{-1}$.\n` +
     `5. Adhere to official NCTB textbook curriculum definitions and formulas.\n` +
-    `6. Provide relatable real-life analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls).\n` +
+    `6. Provide relatable real-life Bangladeshi analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls).\n` +
     rule6 +
     academicContext +
     textbookSection +
@@ -161,7 +175,8 @@ export const tutorChatFlow = ai.defineFlow(
   {
     name: "tutorChat",
     inputSchema: z.object({
-      mode: z.enum(["rubric", "general"]).default("rubric"),
+      mode: z.enum(["rubric", "general"]).optional().default("rubric"),
+      scaffoldingStyle: z.enum(["socratic", "direct"]).optional().default("socratic"),
       questionText: z.string().optional(),
       studentAnswerChunk: z.string().optional(),
       rubricFailureReason: z.string().optional(),
@@ -179,6 +194,7 @@ export const tutorChatFlow = ai.defineFlow(
   },
   async ({
     mode,
+    scaffoldingStyle = "socratic",
     questionText,
     studentAnswerChunk,
     rubricFailureReason,
@@ -196,6 +212,7 @@ export const tutorChatFlow = ai.defineFlow(
 
     const prompt = buildTutorPrompt({
       mode,
+      scaffoldingStyle,
       questionText,
       studentAnswerChunk,
       rubricFailureReason,

@@ -24,7 +24,7 @@ const BOARDS = [
 
 export default function OnboardingPage() {
   const [state, formAction, pending] = useActionState(completeOnboarding, initialState);
-  const [dob, setDob] = useState("");
+  const [dob, setDob] = useState("2008-01-15");
 
   const minor = useMemo(() => {
     if (!dob) return true; // default to the stricter path until known

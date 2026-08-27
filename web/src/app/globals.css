@@ -2,7 +2,7 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
+@custom-variant dark (&:is(.dark, .dark *));
 
 /*
  * SheraTutor "খাতা" (exam script) design system. Light theme = ruled paper
@@ -192,8 +192,8 @@
  * place on a page where the examiner has spoken.
  */
 @utility margin-rule {
-  border-left: 3px solid var(--color-red);
-  padding-left: 0.75rem;
+  border-inline-start: 1px solid var(--color-red);
+  padding-inline-start: 0.75rem;
 }
 
 @utility font-tabular {

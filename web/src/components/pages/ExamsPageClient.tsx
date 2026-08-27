@@ -17,9 +17,41 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
   const [started, setStarted] = useState(false);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [timeLeft, setTimeLeft] = useState(3 * 60 * 60); // Default 3 hours
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const [autoSavedTime, setAutoSavedTime] = useState<string | null>(null);
 
   const paper = papers[0];
   const questions = (paper?.questions || []).sort((a: any, b: any) => a.question_number - b.question_number);
+
+  // Restore auto-saved answers on mount/start
+  useEffect(() => {
+    if (paper?.id) {
+      try {
+        const saved = localStorage.getItem(`sheratutor_sim_${paper.id}`);
+        if (saved) {
+          const parsed = JSON.parse(saved);
+          if (parsed.answers && Object.keys(parsed.answers).length > 0) {
+            setAnswers(parsed.answers);
+            if (parsed.timeLeft) setTimeLeft(parsed.timeLeft);
+            setAutoSavedTime(parsed.savedAt ? new Date(parsed.savedAt).toLocaleTimeString() : 'Recently');
+          }
+        }
+      } catch (_) {}
+    }
+  }, [paper?.id]);
+
+  // Periodic LocalStorage auto-save
+  useEffect(() => {
+    if (started && paper?.id) {
+      try {
+        localStorage.setItem(
+          `sheratutor_sim_${paper.id}`,
+          JSON.stringify({ answers, timeLeft, savedAt: new Date().toISOString() })
+        );
+        setAutoSavedTime(new Date().toLocaleTimeString());
+      } catch (_) {}
+    }
+  }, [answers, timeLeft, started, paper?.id]);
 
   useEffect(() => {
     if (started && timeLeft > 0) {
@@ -37,6 +69,15 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
 
   const handleMCQSelect = (questionId: string, option: string) => {
     setAnswers(prev => ({ ...prev, [questionId]: option }));
+  };
+
+  const toggleFullscreen = () => {
+    if (typeof document === 'undefined') return;
+    if (!document.fullscreenElement) {
+      document.documentElement.requestFullscreen().then(() => setIsFullscreen(true)).catch(() => {});
+    } else {
+      document.exitFullscreen().then(() => setIsFullscreen(false)).catch(() => {});
+    }
   };
 
   const [selectedSubject, setSelectedSubject] = useState<string>('ALL');
@@ -245,7 +286,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
           </div>
 
           <div className="w-full md:w-64 h-48 rounded-2xl bg-primary/5 border border-primary/20 flex flex-col items-center justify-center text-center p-4 relative select-none">
-            <span className="text-[10px] font-mono tracking-widest text-primary/80 uppercase mb-1">
+            <span className="text-xs font-mono tracking-widest text-primary/80 uppercase mb-1">
               {language === 'bn' ? 'এসএসসি পরীক্ষা' : 'SSC EXAMINATION'}
             </span>
             <strong className="text-lg font-bold text-foreground">
@@ -348,7 +389,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
                     <div className="space-y-3">
                       <div className="flex items-center justify-between gap-2">
                         <Tag color={difficultyBadge.color}>{subName}</Tag>
-                        <span className="text-[11px] font-mono font-medium px-2 py-0.5 rounded-full bg-muted/60 text-muted-foreground border border-border/50">
+                        <span className="text-xs font-mono font-medium px-2 py-0.5 rounded-full bg-muted/60 text-muted-foreground border border-border/50">
                           {difficultyBadge.label}
                         </span>
                       </div>

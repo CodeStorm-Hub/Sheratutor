@@ -198,6 +198,22 @@ export function TutorPageClient({
     }
   };
 
+  const [scaffoldingStyle, setScaffoldingStyle] = useState<'socratic' | 'direct'>('socratic');
+
+  const playBanglaSpeech = (text: string) => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    const plain = text
+      .replace(/\$\$[\s\S]*?\$\$/g, 'সমীকরণ')
+      .replace(/\$([^$]+)\$/g, '$1')
+      .replace(/[*#_`]/g, '')
+      .trim();
+    const utterance = new SpeechSynthesisUtterance(plain);
+    utterance.lang = 'bn-BD';
+    utterance.rate = 0.95;
+    window.speechSynthesis.speak(utterance);
+  };
+
   // Submit Question with Real-time SSE Token Streaming
   const submitQuestion = async (textToSend?: string) => {
     const query = (textToSend ?? prompt).trim();
@@ -232,6 +248,7 @@ export function TutorPageClient({
           chapterId: currentChapter?.id,
           studentMessage: query,
           languagePreference: language === 'en' ? 'en' : 'bn',
+          scaffoldingStyle,
           stream: true,
         }),
       });
@@ -526,7 +543,7 @@ export function TutorPageClient({
               <div className="status-dot online" />
               <span className="text-xs font-semibold text-foreground">Shera AI Engine</span>
             </div>
-            <p className="text-[11px] text-muted-foreground mt-0.5">
+            <p className="text-xs text-muted-foreground mt-0.5">
               NCTB Curriculum • Llama 3.1 70B
             </p>
           </div>

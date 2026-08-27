@@ -19,6 +19,7 @@ async function main() {
   const groundedContext = grounding.chunks.map((c) => c.content_chunk).join("\n\n---\n\n");
   const res = await tutorChatFlow({
     mode: "general",
+    scaffoldingStyle: "socratic",
     subjectName: "Physics",
     chapterName: "Motion",
     groundedContext,

@@ -7,6 +7,7 @@ async function run() {
   console.log("=== Testing Tutor Chat Flow ===");
   const res = await tutorChatFlow({
     mode: "rubric",
+    scaffoldingStyle: "socratic",
     questionText: "একটি গাড়ি স্থির অবস্থান থেকে 2 ms⁻² সমত্বরণে চলা শুরু করলো। 10 সেকেন্ড পর গাড়িটি কত দূরত্ব অতিক্রম করবে?",
     studentAnswerChunk: "s = 20 m",
     rubricFailureReason: "হিসাবের শেষ লাইনে বর্গ করতে গিয়ে t² = 10² = 100 এর জায়গায় 20 লিখে ফেলায় দূরত্ব s = 20 m বের হয়েছে।",

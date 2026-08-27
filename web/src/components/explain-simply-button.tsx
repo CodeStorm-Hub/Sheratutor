@@ -161,12 +161,12 @@ export function ExplainSimplyButton({
 
           <div className="mt-2 text-xs bg-card/60 p-2.5 rounded-md border border-border/80 space-y-1">
             <div className="flex items-center gap-1.5 font-medium text-foreground">
-              <Badge variant="secondary" className="text-[10px] px-1.5 py-0 font-mono">
+              <Badge variant="secondary" className="text-xs px-1.5 py-0 font-mono">
                 মডেল ফিডব্যাক
               </Badge>
               <span className="truncate">{stepName}</span>
             </div>
-            <p className="text-muted-foreground text-[11px] leading-relaxed line-clamp-2">{observation}</p>
+            <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">{observation}</p>
           </div>
         </SheetHeader>
 

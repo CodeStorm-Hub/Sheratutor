@@ -43,6 +43,13 @@ export const Header: React.FC<HeaderProps> = ({
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
   const [notifications, setNotifications] = useState<any[]>([]);
+  const [isMac, setIsMac] = useState(true);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
+      setIsMac(/Mac|iPod|iPhone|iPad/.test(navigator.platform || navigator.userAgent));
+    }
+  }, []);
 
   const profileRef = useRef<HTMLDivElement>(null);
   const notifRef = useRef<HTMLDivElement>(null);
@@ -178,7 +185,7 @@ export const Header: React.FC<HeaderProps> = ({
           <button type="button" className="command" onClick={() => setSearchOpen(true)}>
             <Search size={16} />
             <span>{t('common.search_placeholder')}</span>
-            <kbd>⌘ K</kbd>
+            <kbd>{isMac ? '⌘ K' : 'Ctrl K'}</kbd>
           </button>
 
           <button 

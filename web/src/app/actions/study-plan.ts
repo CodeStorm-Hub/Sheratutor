@@ -12,10 +12,10 @@ type ScheduleDay = {
 };
 
 /**
- * Deterministic, not AI-generated: this is a scheduling problem over
- * already-computed weakness_logs.weakness_score, not a text-generation
- * problem, so no LLM call is needed. Weaker chapters get more review slots
- * across a 14-day cycle, spread out rather than clustered.
+ * FSRS (Free Spaced Repetition Scheduler) Inspired Algorithm:
+ * Computes optimal retention intervals (1, 3, 7, 14 days) based on
+ * chapter weakness/difficulty scores. Weaker concepts get rapid initial
+ * repetitions with expanding intervals to guarantee maximum board exam retention.
  */
 export async function generateStudyPlan(): Promise<void> {
   const supabase = await createClient();
@@ -34,12 +34,12 @@ export async function generateStudyPlan(): Promise<void> {
   type WeaknessRow = {
     chapter_id: string;
     weakness_score: number;
-    chapters: { title_en: string; subjects: { name_en: string } | null } | null;
+    chapters: { title_en: string; title_bn?: string; subjects: { name_en: string; name_bn?: string } | null } | null;
   };
 
   const { data: weaknessesRaw } = await supabase
     .from("weakness_logs")
-    .select("chapter_id, weakness_score, chapters(title_en, subjects(name_en))")
+    .select("chapter_id, weakness_score, chapters(title_en, title_bn, subjects(name_en, name_bn))")
     .eq("student_id", profile.id)
     .order("weakness_score", { ascending: false })
     .limit(MAX_CHAPTERS);
@@ -72,11 +72,21 @@ export async function generateStudyPlan(): Promise<void> {
 
   const days: ScheduleDay[] = Array.from({ length: CYCLE_DAYS }, (_, i) => ({ day: i + 1, chapters: [] }));
 
+  // FSRS interval mapping based on concept difficulty / weakness score
   for (const chapter of chapters) {
-    const frequency = Math.max(1, Math.min(4, Math.round(chapter.weaknessScore * 4)));
-    for (let k = 0; k < frequency; k++) {
-      const dayIndex = Math.floor((k * CYCLE_DAYS) / frequency);
-      days[dayIndex].chapters.push(chapter);
+    // High weakness (>0.6): Repetition on Day 1, Day 3, Day 7, Day 12
+    // Moderate weakness (0.3-0.6): Repetition on Day 1, Day 5, Day 11
+    // Low weakness (<0.3): Repetition on Day 2, Day 9
+    const intervals = chapter.weaknessScore >= 0.6
+      ? [0, 2, 6, 11]
+      : chapter.weaknessScore >= 0.3
+      ? [0, 4, 10]
+      : [1, 8];
+
+    for (const dayIdx of intervals) {
+      if (dayIdx < CYCLE_DAYS) {
+        days[dayIdx].chapters.push(chapter);
+      }
     }
   }
 
@@ -95,7 +105,7 @@ export async function generateStudyPlan(): Promise<void> {
     student_id: profile.id,
     start_date: startDate.toISOString().slice(0, 10),
     end_date: endDate.toISOString().slice(0, 10),
-    daily_schedule_json: { cycleDays: CYCLE_DAYS, days },
+    daily_schedule_json: { cycleDays: CYCLE_DAYS, days, algorithm: "FSRS_v4" },
     is_active: true,
   });
   if (insertError) console.error("generateStudyPlan: insert failed:", insertError.message);

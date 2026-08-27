@@ -169,6 +169,8 @@ export const gradeSubmissionFlow = ai.defineFlow(
         pipeline_version: PIPELINE_VERSION,
         transcript_mismatch_detected: evaluation.transcript_mismatch_detected,
         transcript_mismatch_note: evaluation.transcript_mismatch_note,
+        mistake_category: evaluation.mistake_category,
+        arithmetic_verified: evaluation.arithmetic_verified,
       });
 
       totalScore += evaluation.score_obtained;

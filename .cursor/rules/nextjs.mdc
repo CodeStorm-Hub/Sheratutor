@@ -1,0 +1,15 @@
+---
+description: Next.js 16+ App Router, Cache Components, React 19 and DevTools MCP Rules
+globs: ["web/**/*", "app/**/*", "components/**/*"]
+alwaysApply: true
+---
+
+# Next.js 16 & React 19 Guidelines
+
+- **Next.js Version**: 16+ with Turbopack and React 19.
+- **MCP Server**: Use `next-devtools-mcp` to inspect runtime errors (`get_errors`), routes (`get_routes`), server actions (`get_server_action_by_id`), and logs.
+- **Documentation**: Reference `web/node_modules/next/dist/docs/` for version-accurate Next.js 16 APIs.
+- **Server Components**: Default to React Server Components (RSC). Use `"use client"` only for interactivity, hooks, and browser events.
+- **Caching**: Use `'use cache'`, `cacheLife()`, and `cacheTag()` from `'next/cache'` (Cache Components model).
+- **Forms & Actions**: Use React 19 `useActionState` and Server Actions (`"use server"`).
+- **UI Stack**: Tailwind CSS v4, shadcn/ui (Radix UI), `lucide-react`, `next-themes`.
