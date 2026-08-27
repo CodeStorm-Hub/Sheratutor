@@ -529,11 +529,15 @@
 }
 
 .app.dark .sidebar-bottom > button.active,
+:is(.dark, .dark *) .sidebar-bottom > button.active,
 .app.dark .sidebar-bottom > a.active,
+:is(.dark, .dark *) .sidebar-bottom > a.active,
 .app.dark .sidebar nav button.active,
-.app.dark .sidebar nav a.active {
-  background: #f4f7ff;
-  color: #14251f;
+:is(.dark, .dark *) .sidebar nav button.active,
+.app.dark .sidebar nav a.active,
+:is(.dark, .dark *) .sidebar nav a.active {
+  background: rgba(52, 185, 138, 0.18) !important;
+  color: #ffffff !important;
   box-shadow: none;
 }
 
@@ -555,21 +559,33 @@
   color: #fff;
 }
 
-/* Explicit light surface keeps the focus CTA readable when --navy becomes text-colored. */
+/* Primary Focus CTA in dark mode */
 .app.dark .focus-button,
-.app.dark .continue {
-  background: #f4f7ff;
-  color: #14251f;
-  box-shadow: 0 6px 13px rgba(20, 37, 31, 0.15);
+:is(.dark, .dark *) .focus-button,
+.app.dark .continue,
+:is(.dark, .dark *) .continue {
+  background: #006a4e !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 16px rgba(0, 106, 78, 0.3);
 }
 
-.app.dark .focus-button .focus-icon {
-  background: #ff6b57;
+.app.dark .focus-button:hover,
+:is(.dark, .dark *) .focus-button:hover,
+.app.dark .continue:hover,
+:is(.dark, .dark *) .continue:hover {
+  background: #00543d !important;
+  color: #ffffff !important;
+}
+
+.app.dark .focus-button .focus-icon,
+:is(.dark, .dark *) .focus-button .focus-icon {
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
 }
 
-.app.dark .continue span {
-  color: var(--color-ink-soft, #52655d);
+.app.dark .continue span,
+:is(.dark, .dark *) .continue span {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 /* Desktop navigation can collapse without changing the page layout hierarchy. */
@@ -611,13 +627,15 @@
   width: 100%;
 }
 
-.app.dark .menu-btn {
+.app.dark .menu-btn,
+:is(.dark, .dark *) .menu-btn {
   background: var(--color-blackboard-card, #16261f);
   color: #f4f7ff;
-  border-color: var(--color-blackboard-card, #16261f);
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
-.app.dark .menu-btn:hover {
+.app.dark .menu-btn:hover,
+:is(.dark, .dark *) .menu-btn:hover {
   background: var(--color-blackboard-card, #16261f);
 }
 
@@ -635,58 +653,116 @@
   }
 }
 
-/* Ensure every secondary text and control remains legible on the dark surface. */
+/* Ensure every secondary text and control remains highly legible on the dark surface. */
 .app.dark .sidebar nav button,
+:is(.dark, .dark *) .sidebar nav button,
 .app.dark .sidebar nav a,
+:is(.dark, .dark *) .sidebar nav a,
 .app.dark .sidebar-bottom > button,
+:is(.dark, .dark *) .sidebar-bottom > button,
 .app.dark .sidebar-bottom > a,
+:is(.dark, .dark *) .sidebar-bottom > a,
 .app.dark .chapter-item,
+:is(.dark, .dark *) .chapter-item,
 .app.dark .chapter-list > button,
+:is(.dark, .dark *) .chapter-list > button,
 .app.dark .viewer-tools,
+:is(.dark, .dark *) .viewer-tools,
 .app.dark .filter-row button,
+:is(.dark, .dark *) .filter-row button,
 .app.dark .simulator-copy p,
+:is(.dark, .dark *) .simulator-copy p,
 .app.dark .exam-grid p,
+:is(.dark, .dark *) .exam-grid p,
 .app.dark .streak p,
+:is(.dark, .dark *) .streak p,
 .app.dark .calendar-strip > span,
+:is(.dark, .dark *) .calendar-strip > span,
 .app.dark .plan-task small,
+:is(.dark, .dark *) .plan-task small,
 .app.dark .plan-task > span,
+:is(.dark, .dark *) .plan-task > span,
 .app.dark .recommendation p,
+:is(.dark, .dark *) .recommendation p,
 .app.dark .mastery,
+:is(.dark, .dark *) .mastery,
 .app.dark .mistake-row small,
+:is(.dark, .dark *) .mistake-row small,
 .app.dark .mistake-row p,
+:is(.dark, .dark *) .mistake-row p,
 .app.dark .subject-ranks > div,
+:is(.dark, .dark *) .subject-ranks > div,
 .app.dark .breakdown > div,
+:is(.dark, .dark *) .breakdown > div,
 .app.dark .chart-labels,
+:is(.dark, .dark *) .chart-labels,
+.app.dark .chart-labels span,
+:is(.dark, .dark *) .chart-labels span,
 .app.dark .chart-stat span,
+:is(.dark, .dark *) .chart-stat span,
 .app.dark .chart-footer,
+:is(.dark, .dark *) .chart-footer,
 .app.dark .exam-logo small,
-.app.dark .exam-paper > p {
-  color: var(--color-line, #dde4dd);
+:is(.dark, .dark *) .exam-logo small,
+.app.dark .exam-paper > p,
+:is(.dark, .dark *) .exam-paper > p {
+  color: #a3b8ad !important;
 }
 
 .app.dark .chapter-item span,
+:is(.dark, .dark *) .chapter-item span,
 .app.dark .chapter-list small,
+:is(.dark, .dark *) .chapter-list small,
 .app.dark .grade-step,
+:is(.dark, .dark *) .grade-step,
 .app.dark .grade-score > span,
+:is(.dark, .dark *) .grade-score > span,
 .app.dark .result-number span,
+:is(.dark, .dark *) .result-number span,
 .app.dark .achievement-grid p,
+:is(.dark, .dark *) .achievement-grid p,
 .app.dark .subject small,
+:is(.dark, .dark *) .subject small,
+.app.dark .subject p,
+:is(.dark, .dark *) .subject p,
+.app.dark .subject-footer span,
+:is(.dark, .dark *) .subject-footer span,
 .app.dark .task small,
+:is(.dark, .dark *) .task small,
 .app.dark .task time,
+:is(.dark, .dark *) .task time,
 .app.dark .percentile span,
-.app.dark .prediction-footer {
-  color: var(--color-line, #dde4dd);
+:is(.dark, .dark *) .percentile span,
+.app.dark .percentile label,
+:is(.dark, .dark *) .percentile label,
+.app.dark .prediction-footer,
+:is(.dark, .dark *) .prediction-footer,
+.app.dark .panel-header small,
+:is(.dark, .dark *) .panel-header small,
+.app.dark .panel-header p,
+:is(.dark, .dark *) .panel-header p {
+  color: #a3b8ad !important;
 }
 
 .app.dark .section-heading > a,
+:is(.dark, .dark *) .section-heading > a,
 .app.dark .prediction-footer a,
+:is(.dark, .dark *) .prediction-footer a,
 .app.dark .task button,
+:is(.dark, .dark *) .task button,
 .app.dark .exam-date a,
+:is(.dark, .dark *) .exam-date a,
 .app.dark .subject-top button,
+:is(.dark, .dark *) .subject-top button,
 .app.dark .icon-button,
+:is(.dark, .dark *) .icon-button,
 .app.dark .week-select,
-.app.dark .recommendation > button {
-  color: var(--color-line, #dde4dd);
+:is(.dark, .dark *) .week-select,
+.app.dark .panel-footer a,
+:is(.dark, .dark *) .panel-footer a,
+.app.dark .recommendation > button,
+:is(.dark, .dark *) .recommendation > button {
+  color: #34b98a !important;
 }
 
 .app.dark .tag.coral {

@@ -231,65 +231,41 @@ export function WaitlistForm() {
         </div>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 2 }}>
+      <div className="flex items-center gap-2 mt-0.5">
         <input
           id="isMinor"
           name="isMinor"
           type="checkbox"
           checked={isMinor}
           onChange={(e) => setIsMinor(e.target.checked)}
-          style={{ width: 16, height: 16, cursor: 'pointer', accentColor: 'var(--coral)', flexShrink: 0 }}
+          className="w-4 h-4 cursor-pointer accent-primary shrink-0"
         />
         <label
           htmlFor="isMinor"
-          style={{
-            fontSize: 12,
-            color: 'var(--muted)',
-            cursor: 'pointer',
-            userSelect: 'none',
-          }}
+          className="text-xs text-foreground cursor-pointer select-none"
         >
           {t('form.minor_checkbox')}
         </label>
       </div>
 
       {isMinor && (
-        <div
-          style={{
-            borderRadius: 12,
-            background: '#f7f8fc',
-            border: '1px solid var(--border)',
-            padding: '12px 14px',
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 10,
-            width: '100%',
-            maxWidth: '100%',
-            boxSizing: 'border-box',
-          }}
-        >
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8 }}>
-            <ShieldCheck size={16} color="#69718c" style={{ flexShrink: 0, marginTop: 2 }} />
-            <p style={{ fontSize: 11, color: 'var(--muted)', margin: 0, lineHeight: 1.45 }}>
+        <div className="rounded-xl bg-card border border-border p-3.5 flex flex-col gap-2.5 w-full max-w-full box-border">
+          <div className="flex items-start gap-2">
+            <ShieldCheck size={16} className="text-muted-foreground shrink-0 mt-0.5" />
+            <p className="text-xs text-muted-foreground m-0 leading-relaxed">
               {t('form.pdpa_notice')}
             </p>
           </div>
-          <div style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginTop: 2 }}>
+          <div className="flex items-start gap-2 mt-0.5">
             <input
               id="guardianConsentAcknowledged"
               name="guardianConsentAcknowledged"
               type="checkbox"
-              style={{ width: 15, height: 15, cursor: 'pointer', marginTop: 2, accentColor: 'var(--coral)', flexShrink: 0 }}
+              className="w-4 h-4 cursor-pointer mt-0.5 accent-primary shrink-0"
             />
             <label
               htmlFor="guardianConsentAcknowledged"
-              style={{
-                fontSize: 11,
-                color: 'var(--navy)',
-                lineHeight: 1.4,
-                cursor: 'pointer',
-                userSelect: 'none',
-              }}
+              className="text-xs text-foreground leading-snug cursor-pointer select-none"
             >
               {t('form.consent_checkbox')}
             </label>
@@ -298,7 +274,7 @@ export function WaitlistForm() {
       )}
 
       {state.status === 'error' && (
-        <p style={{ color: 'var(--coral)', fontSize: 12, margin: '2px 0 0' }}>
+        <p className="text-destructive text-xs mt-1 mb-0">
           {state.message}
         </p>
       )}
@@ -306,17 +282,7 @@ export function WaitlistForm() {
       <button
         type="submit"
         disabled={pending}
-        className="primary-btn"
-        style={{
-          width: '100%',
-          justifyContent: 'center',
-          padding: '12px 18px',
-          fontSize: 14,
-          marginTop: 4,
-          background: 'var(--navy)',
-          boxShadow: '0 6px 16px rgba(20, 24, 43, 0.15)',
-          boxSizing: 'border-box',
-        }}
+        className="primary-btn w-full justify-center py-3 text-sm mt-1 font-semibold shadow-sm cursor-pointer"
       >
         {pending ? t('form.submitting') : t('form.submit_btn')} <ArrowRight size={16} />
       </button>
