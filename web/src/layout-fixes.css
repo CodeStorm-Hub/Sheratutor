@@ -2008,7 +2008,11 @@
 .dark .landing-step-card,
 :is(.dark, .dark *) .landing-step-card,
 .dark .landing-prop-card,
-:is(.dark, .dark *) .landing-prop-card {
+:is(.dark, .dark *) .landing-prop-card,
+.dark .landing-feature-card,
+:is(.dark, .dark *) .landing-feature-card,
+.dark .landing-promise-card,
+:is(.dark, .dark *) .landing-promise-card {
   background: var(--color-blackboard-card, #10221a);
   border-color: rgba(255, 255, 255, 0.08);
   color: #f4f7ff;

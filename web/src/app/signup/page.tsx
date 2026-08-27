@@ -18,99 +18,42 @@ export default function SignupPage() {
   );
 
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        background: 'var(--paper)',
-        padding: '32px 16px',
-      }}
-    >
-      <Link href="/" style={{ textDecoration: 'none', marginBottom: 24 }}>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-background text-foreground p-6 sm:p-8">
+      <Link href="/" className="no-underline mb-6">
         <Logo />
       </Link>
 
-      <div
-        style={{
-          width: '100%',
-          maxWidth: 400,
-          background: '#fff',
-          border: '1px solid var(--border)',
-          borderRadius: 18,
-          padding: '32px 28px',
-          boxShadow: '0 8px 30px rgba(28, 35, 65, 0.04)',
-        }}
-      >
-        <div style={{ textAlign: 'center', marginBottom: 24 }}>
-          <h1 style={{ font: "800 26px 'Baloo 2', sans-serif", margin: 0 }}>
+      <div className="w-full max-w-[400px] bg-card text-card-foreground border border-border rounded-2xl p-7 sm:p-8 shadow-md">
+        <div className="text-center mb-6">
+          <h1 className="font-heading font-bold text-2xl text-foreground m-0">
             Create free account
           </h1>
-          <p style={{ color: 'var(--muted)', fontSize: 13, margin: '6px 0 0' }}>
+          <p className="text-muted-foreground text-xs sm:text-sm mt-1.5 mb-0">
             Get your personal AI examiner for HSC & SSC.
           </p>
         </div>
 
-        <form action={signInWithGoogle} style={{ marginBottom: 18 }}>
+        <form action={signInWithGoogle} className="mb-5">
           <button
             type="submit"
-            style={{
-              width: '100%',
-              border: '1px solid var(--border)',
-              background: '#fff',
-              borderRadius: 10,
-              padding: '11px 14px',
-              font: '600 13px Inter',
-              color: 'var(--navy)',
-              cursor: 'pointer',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: 8,
-            }}
+            className="w-full flex items-center justify-center gap-2 border border-border bg-card hover:bg-muted/60 text-foreground font-semibold text-xs sm:text-sm py-2.5 px-4 rounded-xl transition-colors cursor-pointer"
           >
             Sign up with Google
           </button>
         </form>
 
-        <div
-          style={{
-            position: 'relative',
-            textAlign: 'center',
-            margin: '20px 0',
-          }}
-        >
-          <hr style={{ border: 0, borderTop: '1px solid var(--border)' }} />
-          <span
-            style={{
-              position: 'absolute',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              background: '#fff',
-              padding: '0 10px',
-              color: 'var(--muted)',
-              fontSize: 11,
-              fontFamily: 'Space Mono',
-            }}
-          >
+        <div className="relative text-center my-5">
+          <hr className="border-0 border-t border-border" />
+          <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-card px-2.5 text-muted-foreground text-[11px] font-mono">
             OR
           </span>
         </div>
 
-        <form action={formAction} style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+        <form action={formAction} className="flex flex-col gap-3.5">
           <div>
             <label
               htmlFor="fullName"
-              style={{
-                display: 'block',
-                fontSize: 11,
-                fontWeight: 600,
-                marginBottom: 6,
-                color: 'var(--navy)',
-              }}
+              className="block text-xs font-semibold mb-1.5 text-foreground"
             >
               Full name
             </label>
@@ -120,28 +63,14 @@ export default function SignupPage() {
               type="text"
               required
               placeholder="e.g. Anam Rahman"
-              style={{
-                width: '100%',
-                border: '1px solid var(--border)',
-                borderRadius: 9,
-                padding: '10px 12px',
-                fontSize: 13,
-                fontFamily: 'Inter',
-                boxSizing: 'border-box',
-              }}
+              className="w-full border border-border bg-background text-foreground placeholder:text-muted-foreground/60 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary transition-colors box-border"
             />
           </div>
 
           <div>
             <label
               htmlFor="email"
-              style={{
-                display: 'block',
-                fontSize: 11,
-                fontWeight: 600,
-                marginBottom: 6,
-                color: 'var(--navy)',
-              }}
+              className="block text-xs font-semibold mb-1.5 text-foreground"
             >
               Email address
             </label>
@@ -152,28 +81,14 @@ export default function SignupPage() {
               required
               autoComplete="email"
               placeholder="you@example.com"
-              style={{
-                width: '100%',
-                border: '1px solid var(--border)',
-                borderRadius: 9,
-                padding: '10px 12px',
-                fontSize: 13,
-                fontFamily: 'Inter',
-                boxSizing: 'border-box',
-              }}
+              className="w-full border border-border bg-background text-foreground placeholder:text-muted-foreground/60 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary transition-colors box-border"
             />
           </div>
 
           <div>
             <label
               htmlFor="password"
-              style={{
-                display: 'block',
-                fontSize: 11,
-                fontWeight: 600,
-                marginBottom: 6,
-                color: 'var(--navy)',
-              }}
+              className="block text-xs font-semibold mb-1.5 text-foreground"
             >
               Password (min 8 chars)
             </label>
@@ -184,20 +99,12 @@ export default function SignupPage() {
               required
               minLength={8}
               placeholder="••••••••"
-              style={{
-                width: '100%',
-                border: '1px solid var(--border)',
-                borderRadius: 9,
-                padding: '10px 12px',
-                fontSize: 13,
-                fontFamily: 'Inter',
-                boxSizing: 'border-box',
-              }}
+              className="w-full border border-border bg-background text-foreground placeholder:text-muted-foreground/60 rounded-xl px-3.5 py-2.5 text-sm focus:outline-none focus:ring-1 focus:ring-primary transition-colors box-border"
             />
           </div>
 
           {state.status === 'error' && (
-            <p style={{ color: 'var(--coral)', fontSize: 12, margin: '4px 0 0' }}>
+            <p className="text-destructive text-xs mt-1 mb-0">
               {state.message}
             </p>
           )}
@@ -205,34 +112,17 @@ export default function SignupPage() {
           <button
             type="submit"
             disabled={pending}
-            className="primary-btn"
-            style={{
-              width: '100%',
-              justifyContent: 'center',
-              padding: '12px',
-              marginTop: 6,
-            }}
+            className="primary-btn w-full justify-center py-2.5 mt-1.5 font-semibold text-sm shadow-xs"
           >
             {pending ? 'Creating account…' : 'Sign up'}
           </button>
         </form>
 
-        <p
-          style={{
-            textAlign: 'center',
-            fontSize: 12,
-            color: 'var(--muted)',
-            marginTop: 22,
-          }}
-        >
+        <p className="text-center text-xs text-muted-foreground mt-6 mb-0">
           Already have an account?{' '}
           <Link
             href="/login"
-            style={{
-              color: 'var(--coral)',
-              fontWeight: 600,
-              textDecoration: 'none',
-            }}
+            className="text-primary hover:underline font-semibold no-underline"
           >
             Sign in
           </Link>

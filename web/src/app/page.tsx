@@ -117,33 +117,33 @@ export default function LandingPage() {
             <div className="flex flex-wrap items-center gap-3 pt-2 w-full">
               <Link
                 href="/dashboard"
-                className="px-6 py-3.5 rounded-xl bg-[#006a4e] hover:bg-[#00543d] text-white font-semibold text-sm inline-flex items-center gap-2 shadow-[0_6px_20px_rgba(0,106,78,0.22)] transition-all duration-150"
+                className="px-6 py-3.5 rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-sm inline-flex items-center gap-2 shadow-md transition-all duration-150"
               >
                 <span>{t('landing.start_free_cta')}</span>
                 <ArrowRight size={16} />
               </Link>
               <a
                 href="#demo-section"
-                className="px-5 py-3.5 rounded-xl bg-white hover:bg-[#f7f8f5] text-[#14251f] font-semibold text-sm inline-flex items-center gap-2 border border-[#dde4dd] transition-all duration-150"
+                className="px-5 py-3.5 rounded-xl bg-card hover:bg-muted/80 text-foreground font-semibold text-sm inline-flex items-center gap-2 border border-border transition-all duration-150"
               >
                 <span>{t('landing.try_demo_cta')}</span>
               </a>
             </div>
 
             {/* Community Social Proof Banner */}
-            <div className="flex items-center gap-2 text-xs text-[#52655d] pt-1">
+            <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
               <span className="w-2 h-2 rounded-full bg-[#23d9a5] animate-pulse" />
               <span>
                 {language === 'bn' ? (
                   <>
-                    <strong className="text-[#14251f] font-bold">
+                    <strong className="text-foreground font-bold">
                       {studentCount.toLocaleString('bn-BD')}+
                     </strong>{' '}
                     জন শিক্ষার্থী ইতিমধ্যে যুক্ত হয়েছে
                   </>
                 ) : (
                   <>
-                    <strong className="text-[#14251f] font-bold">
+                    <strong className="text-foreground font-bold">
                       {studentCount.toLocaleString()}+
                     </strong>{' '}
                     students already practicing
@@ -161,13 +161,13 @@ export default function LandingPage() {
         {/* Interactive Rubric Demo Section */}
         <section id="demo-section" className="w-full py-10 flex flex-col gap-6">
           <div className="flex flex-col gap-2 max-w-2xl">
-            <span className="font-mono text-xs font-bold text-[#b97f08] uppercase tracking-wider">
+            <span className="font-mono text-xs font-bold text-accent-foreground uppercase tracking-wider">
               {language === 'bn' ? 'সরাসরি ডেমো' : 'LIVE INTERACTIVE DEMO'}
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#14251f] m-0 font-['Baloo_2']">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground m-0 font-heading">
               {t('landing.curriculum_title')}
             </h2>
-            <p className="text-sm text-[#52655d] m-0 leading-relaxed">
+            <p className="text-sm text-muted-foreground m-0 leading-relaxed">
               {t('landing.curriculum_subtitle')}
             </p>
           </div>
@@ -178,27 +178,27 @@ export default function LandingPage() {
         {/* How It Works Section */}
         <section className="w-full py-8 flex flex-col gap-6">
           <div className="flex flex-col gap-1 max-w-xl">
-            <span className="font-mono text-xs font-bold text-[#006a4e] uppercase tracking-wider">
+            <span className="font-mono text-xs font-bold text-primary uppercase tracking-wider">
               {language === 'bn' ? 'সহজ ৩টি ধাপ' : 'SIMPLE 3-STEP PROCESS'}
             </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#14251f] m-0 font-['Baloo_2']">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground m-0 font-heading">
               {t('landing.how_it_works')}
             </h2>
           </div>
 
           <div className="landing-cards-grid">
             {howItWorks.map((step) => (
-              <div key={step.title} className="landing-feature-card">
+              <div key={step.title} className="landing-feature-card bg-card text-card-foreground border border-border rounded-2xl p-6 flex flex-col gap-3 shadow-xs">
                 <div className="flex items-center justify-between">
-                  <span className="font-mono text-xs font-bold text-[#006a4e] bg-[#e2f0e9] px-2.5 py-1 rounded-full">
+                  <span className="font-mono text-xs font-bold text-primary bg-primary/15 px-2.5 py-1 rounded-full">
                     {step.stepNum}
                   </span>
-                  <step.icon size={20} className="text-[#006a4e]" />
+                  <step.icon size={20} className="text-primary" />
                 </div>
-                <h3 className="font-['Baloo_2'] font-bold text-lg text-[#14251f] m-0">
+                <h3 className="font-heading font-bold text-lg text-foreground m-0">
                   {step.title}
                 </h3>
-                <p className="text-xs text-[#52655d] m-0 leading-relaxed">
+                <p className="text-xs text-muted-foreground m-0 leading-relaxed">
                   {step.body}
                 </p>
               </div>
@@ -210,17 +210,17 @@ export default function LandingPage() {
         <section className="w-full py-6 flex flex-col gap-6">
           <div className="landing-cards-grid">
             {valueProps.map((card) => (
-              <div key={card.title} className="landing-promise-card">
+              <div key={card.title} className="landing-promise-card bg-card text-card-foreground border border-border rounded-2xl p-6 flex flex-col gap-3 shadow-xs">
                 <div className="flex items-center justify-between mb-1">
-                  <span className="font-mono text-xs font-bold text-[#d92638] uppercase tracking-wider">
+                  <span className="font-mono text-xs font-bold text-destructive uppercase tracking-wider">
                     {card.eyebrow}
                   </span>
-                  <card.icon size={16} className="text-[#52655d]" />
+                  <card.icon size={16} className="text-muted-foreground" />
                 </div>
-                <h3 className="font-['Baloo_2'] font-bold text-lg text-[#14251f] m-0">
+                <h3 className="font-heading font-bold text-lg text-foreground m-0">
                   {card.title}
                 </h3>
-                <p className="text-xs text-[#52655d] m-0 leading-relaxed">
+                <p className="text-xs text-muted-foreground m-0 leading-relaxed">
                   {card.body}
                 </p>
               </div>
@@ -229,25 +229,25 @@ export default function LandingPage() {
         </section>
 
         {/* Dedicated Early Access / Community Section */}
-        <section id="waitlist-section" className="w-full py-10 my-4 bg-white rounded-2xl border border-[#dde4dd] p-6 sm:p-10 shadow-[0_8px_30px_rgba(20,37,31,0.03)]">
+        <section id="waitlist-section" className="w-full py-10 my-4 bg-card text-card-foreground rounded-2xl border border-border p-6 sm:p-10 shadow-md">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div className="flex flex-col gap-3">
-              <span className="font-mono text-xs font-bold text-[#006a4e] uppercase tracking-wider">
+              <span className="font-mono text-xs font-bold text-primary uppercase tracking-wider">
                 {language === 'bn' ? 'অগ্রাধিকার তালিকা' : 'PRIORITY ACCESS'}
               </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-[#14251f] m-0 font-['Baloo_2']">
+              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground m-0 font-heading">
                 {t('landing.waitlist_section_title')}
               </h2>
-              <p className="text-sm text-[#52655d] m-0 leading-relaxed">
+              <p className="text-sm text-muted-foreground m-0 leading-relaxed">
                 {t('landing.waitlist_section_desc')}
               </p>
-              <div className="mt-4 flex flex-col gap-2 text-xs text-[#52655d]">
+              <div className="mt-4 flex flex-col gap-2 text-xs text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#006a4e]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span>{t('landing.boards_covered')}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#006a4e]" />
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                   <span>{language === 'bn' ? '১০০% ফ্রি — কোনো হিডেন চার্জ বা সাবস্ক্রিপশন নেই' : '100% Free for Students — No Hidden Subscriptions'}</span>
                 </div>
               </div>
@@ -265,12 +265,12 @@ export default function LandingPage() {
         <div className="w-full max-w-[1240px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 py-4">
           <div className="flex flex-col items-center sm:items-start gap-1.5">
             <Logo tagline />
-            <p className="text-xs text-[#52655d] m-0">
+            <p className="text-xs text-muted-foreground m-0">
               &copy; {new Date().getFullYear()} SheraTutor &middot; {t('landing.footer_text')}
             </p>
           </div>
 
-          <div className="flex items-center gap-4 text-xs text-[#52655d] flex-wrap justify-center">
+          <div className="flex items-center gap-4 text-xs text-muted-foreground flex-wrap justify-center">
             <span>{t('landing.footer_boards')}</span>
             <span>&middot;</span>
             <span>{t('landing.footer_privacy')}</span>
