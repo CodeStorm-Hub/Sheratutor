@@ -51,13 +51,13 @@ export const BarChart: React.FC<BarChartProps> = ({ data = [20, 40, 30, 70, 50, 
       <svg viewBox="0 0 570 150" preserveAspectRatio="none">
         <defs>
           <linearGradient id="fade" x1="0" x2="0" y1="0" y2="1">
-            <stop stopColor="#23d9a5" stopOpacity=".24" />
-            <stop offset="1" stopColor="#23d9a5" stopOpacity="0" />
+            <stop style={{ stopColor: 'var(--mint)' }} stopOpacity=".24" />
+            <stop offset="1" style={{ stopColor: 'var(--mint)' }} stopOpacity="0" />
           </linearGradient>
         </defs>
         <path d={fillD} fill="url(#fade)" />
-        <path d={d} fill="none" stroke="#23d9a5" strokeWidth="3" strokeLinecap="round" />
-        <circle cx={points[points.length - 1].x} cy={points[points.length - 1].y} r="5" fill="#fff" stroke="#23d9a5" strokeWidth="3" />
+        <path d={d} fill="none" stroke="var(--mint)" strokeWidth="3" strokeLinecap="round" />
+        <circle cx={points[points.length - 1].x} cy={points[points.length - 1].y} r="5" fill="var(--card)" stroke="var(--mint)" strokeWidth="3" />
       </svg>
       <div className="chart-labels">
         {adjustedDays.map(d => <span key={d}>{d}</span>)}

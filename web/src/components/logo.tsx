@@ -23,14 +23,14 @@ export function Logo({
         <span />
       </div>
       <span className="text-foreground" style={{ font: "700 22px 'Baloo 2', sans-serif", letterSpacing: '-0.3px', color: 'var(--foreground)' }}>
-        Shera<span style={{ color: 'var(--color-red, #ff6b57)' }}>Tutor</span>
+        Shera<span style={{ color: 'var(--coral)' }}>Tutor</span>
       </span>
       {tagline && (
         <span
           className="logo-tagline"
           style={{
             fontSize: 10,
-            color: 'var(--muted)',
+            color: 'var(--muted-foreground)',
             fontFamily: 'Space Mono',
             marginLeft: 4,
           }}

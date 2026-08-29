@@ -77,7 +77,7 @@ export function MistakesPageClient({
       
       <div className="hidden print:block mb-8 pb-4 border-b">
         <h1 className="text-2xl font-bold">SheraTutor Mistake Analysis Report</h1>
-        <p className="text-gray-500">Generated on {new Date().toLocaleDateString()}</p>
+        <p className="text-muted-foreground">Generated on {new Date().toLocaleDateString()}</p>
       </div>
 
       <div className="mistakes">

@@ -97,14 +97,14 @@ export default function LandingPage() {
           <div className="landing-hero-left">
             <div className="flex items-center gap-2">
               <Tag color="sun">{t('landing.badge')}</Tag>
-              <span className="font-mono text-xs text-[#52655d] font-bold">
+              <span className="font-mono text-xs text-muted-foreground font-bold">
                 {language === 'bn' ? 'SSC ও HSC ২০২৬-২০২৭' : 'SSC & HSC 2026-2027'}
               </span>
             </div>
 
             <h1 className="landing-hero-title">
               {t('landing.hero_title_1')}{' '}
-              <span className="text-[#006a4e] block sm:inline">
+              <span className="text-coral block sm:inline">
                 {t('landing.hero_title_2')}
               </span>
             </h1>
@@ -132,7 +132,7 @@ export default function LandingPage() {
 
             {/* Community Social Proof Banner */}
             <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
-              <span className="w-2 h-2 rounded-full bg-[#23d9a5] animate-pulse" />
+              <span className="w-2 h-2 rounded-full bg-mint animate-pulse" />
               <span>
                 {language === 'bn' ? (
                   <>

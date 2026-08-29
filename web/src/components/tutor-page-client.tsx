@@ -617,7 +617,7 @@ export function TutorPageClient({
 
                   <div className="tutor-formula-preview">
                     <div className="flex items-center gap-1.5 text-xs font-semibold text-foreground mb-1.5">
-                      <Calculator size={14} className="text-emerald-500" />
+                      <Calculator size={14} className="text-mint" />
                       <span>{language === 'bn' ? 'অধ্যায়ের মূল সূত্রমালা' : 'Core Concept Highlight'}</span>
                     </div>
                     <div className="formula-box">
@@ -662,7 +662,7 @@ export function TutorPageClient({
                         onClick={() => submitQuestion(qp.prompt)}
                         className="starter-prompt-card"
                       >
-                        <div className="flex items-center gap-1.5 text-xs font-semibold text-emerald-600 dark:text-emerald-400 mb-1">
+                        <div className="flex items-center gap-1.5 text-xs font-semibold text-mint mb-1">
                           <Lightbulb size={14} />
                           <span>{qp.label}</span>
                         </div>
@@ -712,7 +712,7 @@ export function TutorPageClient({
                                 <code className="bg-muted/80 text-foreground px-1.5 py-0.5 rounded text-xs font-mono border border-border/40" {...props} />
                               ),
                               strong: ({ ...props }) => (
-                                <strong className="font-semibold text-emerald-600 dark:text-emerald-400" {...props} />
+                                <strong className="font-semibold text-mint" {...props} />
                               ),
                             }}
                           >
@@ -743,8 +743,8 @@ export function TutorPageClient({
                         >
                           {copiedIndex === idx ? (
                             <>
-                              <Check size={12} className="text-emerald-500" />
-                              <span className="text-emerald-500">{language === 'bn' ? 'কপি হয়েছে' : 'Copied'}</span>
+                              <Check size={12} className="text-mint" />
+                              <span className="text-mint">{language === 'bn' ? 'কপি হয়েছে' : 'Copied'}</span>
                             </>
                           ) : (
                             <>
