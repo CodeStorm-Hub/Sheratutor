@@ -172,17 +172,17 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
                       {q.question_type === "CQ" ? (q.stimulus_bn || q.question_text_bn) : q.question_text_bn}
                     </div>
                     {q.question_type === "MCQ" && (
-                      <span className="text-right w-12 text-sm text-gray-500">[{q.max_marks}]</span>
+                      <span className="text-right w-12 text-sm text-muted-foreground">[{q.max_marks}]</span>
                     )}
                   </div>
 
                   {q.question_type === "CQ" && subQuestions && (
                     <div className="pl-8 space-y-4">
                       {subQuestions.map((sq: any) => (
-                        <div key={sq.part} className="flex border border-gray-100 p-4 rounded-lg bg-gray-50">
+                        <div key={sq.part} className="flex border border-border p-4 rounded-lg bg-muted">
                           <span className="font-bold mr-3">({sq.part})</span>
                           <div className="flex-1">{sq.text_bn}</div>
-                          <span className="text-right font-bold text-gray-500">{sq.marks}</span>
+                          <span className="text-right font-bold text-muted-foreground">{sq.marks}</span>
                         </div>
                       ))}
                     </div>
@@ -198,9 +198,9 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
                             type="button"
                             key={idx}
                             onClick={() => handleMCQSelect(q.id, opt)}
-                            className={`flex items-center p-3 border rounded-lg transition-colors text-left ${isSelected ? 'border-primary bg-primary/10' : 'border-gray-200 hover:bg-gray-50'}`}
+                            className={`flex items-center p-3 border rounded-lg transition-colors text-left ${isSelected ? 'border-primary bg-primary/10' : 'border-border hover:bg-muted'}`}
                           >
-                            <span className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 font-medium ${isSelected ? 'bg-primary text-white' : 'bg-gray-100'}`}>
+                            <span className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 font-medium ${isSelected ? 'bg-primary text-primary-foreground' : 'bg-secondary'}`}>
                               {prefix}
                             </span>
                             <span className="flex-1">{opt}</span>

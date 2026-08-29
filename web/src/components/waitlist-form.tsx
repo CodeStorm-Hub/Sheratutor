@@ -17,21 +17,21 @@ export function WaitlistForm() {
       <div
         style={{
           borderRadius: 16,
-          background: 'var(--color-green-soft, #e2f0e9)',
-          border: '1px solid var(--color-green, #006a4e)',
+          background: 'color-mix(in srgb, var(--mint) 14%, var(--card))',
+          border: '1px solid color-mix(in srgb, var(--mint) 45%, transparent)',
           padding: '24px 20px',
           textAlign: 'center',
           width: '100%',
           boxSizing: 'border-box',
         }}
       >
-        <CheckCircle2 size={32} color="#006a4e" style={{ margin: '0 auto 10px' }} />
+        <CheckCircle2 size={32} color="var(--mint)" style={{ margin: '0 auto 10px' }} />
         <p
           style={{
             fontFamily: "'Baloo 2', sans-serif",
             fontWeight: 700,
             fontSize: 18,
-            color: '#00543d',
+            color: 'var(--foreground)',
             margin: 0,
           }}
         >

@@ -235,7 +235,7 @@ export const Header: React.FC<HeaderProps> = ({
                   ))}
                   
                   {notifications.length === 0 && (
-                    <div className="p-4 text-center text-sm text-gray-500">
+                    <div className="p-4 text-center text-sm text-muted-foreground">
                       No new notifications
                     </div>
                   )}
@@ -310,7 +310,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="search-modal-backdrop" onClick={() => setSearchOpen(false)}>
           <div className="search-modal" onClick={(e) => e.stopPropagation()}>
             <div className="search-modal-head">
-              <Search size={18} color="#69718c" />
+              <Search size={18} color="var(--muted-foreground)" />
               <input autoFocus placeholder={language === 'bn' ? 'টুলস, বিষয়, পরীক্ষা বা সেটিংস খুঁজুন…' : 'Search tools, subjects, exams, or settings…'} value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
               <button type="button" className="modal-close-btn" onClick={() => setSearchOpen(false)}>
                 <X size={18} />
@@ -319,7 +319,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="search-results-list">
               <div className="search-group-title">{t('common.search_title')}</div>
               {filteredLinks.length === 0 ? (
-                <div style={{ padding: '24px 16px', textAlign: 'center', color: 'var(--muted)', fontSize: 13 }}>{t('common.search_empty')}</div>
+                <div style={{ padding: '24px 16px', textAlign: 'center', color: 'var(--muted-foreground)', fontSize: 13 }}>{t('common.search_empty')}</div>
               ) : (
                 filteredLinks.map((item) => (
                   <div key={item.href} className="search-result-item" onClick={() => { setSearchOpen(false); router.push(item.href); }}>
@@ -328,7 +328,7 @@ export const Header: React.FC<HeaderProps> = ({
                       <b>{item.label}</b>
                       <small>{item.desc}</small>
                     </div>
-                    <ChevronRight size={16} color="#9aa1b3" />
+                    <ChevronRight size={16} color="var(--muted-foreground)" />
                   </div>
                 ))
               )}

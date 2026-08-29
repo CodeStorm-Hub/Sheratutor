@@ -279,7 +279,7 @@ export function SubmissionDetailClient({
                     </div>
                   </div>
                   {q.transcript_mismatch_detected && (
-                    <div style={{ background: 'var(--color-ochre-soft, #fbf3dc)', border: '1px solid var(--color-ochre, #b97f08)', padding: '8px 12px', borderRadius: 8, marginBottom: 10, display: 'flex', alignItems: 'center', gap: 8, fontSize: 12, color: 'var(--color-ochre, #b97f08)' }}>
+                    <div style={{ background: 'color-mix(in srgb, var(--sun) 14%, var(--card))', border: '1px solid color-mix(in srgb, var(--sun) 45%, transparent)', padding: '8px 12px', borderRadius: 8, marginBottom: 10, display: 'flex', alignItems: 'center', gap: 8, fontSize: 12, color: 'var(--sun)' }}>
                       <AlertTriangle size={14} />
                       <span>{q.transcript_mismatch_note || (language === 'bn' ? 'হাতে লেখা উত্তর ও ট্রান্সক্রিপশনের মধ্যে অমিল শনাক্ত হয়েছে।' : 'Handwriting vs OCR mismatch detected.')}</span>
                     </div>

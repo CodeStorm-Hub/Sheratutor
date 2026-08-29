@@ -72,7 +72,7 @@ export function KhataPreview({ className }: { className?: string }) {
           y1="20"
           x2="76"
           y2="420"
-          stroke="#ff6b57"
+          stroke="var(--coral)"
           strokeWidth="2.5"
           strokeLinecap="round"
         />
@@ -100,7 +100,7 @@ export function KhataPreview({ className }: { className?: string }) {
         <path
           d="M38 90 L46 98 L60 82"
           fill="none"
-          stroke="#23d9a5"
+          stroke="var(--mint)"
           strokeWidth="3.2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -110,14 +110,14 @@ export function KhataPreview({ className }: { className?: string }) {
         <path
           d="M48 150 L57 166 L39 166 Z"
           fill="none"
-          stroke="#ffc93c"
+          stroke="var(--sun)"
           strokeWidth="2.8"
           strokeLinecap="round"
           strokeLinejoin="round"
         />
 
         {/* Step 3 Error Cross */}
-        <g stroke="#ff6b57" strokeWidth="3" strokeLinecap="round">
+        <g stroke="var(--coral)" strokeWidth="3" strokeLinecap="round">
           <line x1="40" y1="220" x2="56" y2="236" />
           <line x1="56" y1="220" x2="40" y2="236" />
         </g>
@@ -127,7 +127,7 @@ export function KhataPreview({ className }: { className?: string }) {
           <path
             d="M38 90 L46 98 L60 82"
             fill="none"
-            stroke="#23d9a5"
+            stroke="var(--mint)"
             strokeWidth="3.2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -180,7 +180,7 @@ export function KhataPreview({ className }: { className?: string }) {
             </tspan>
           </text>
           <rect x="18" y="104" width="218" height="4" rx="2" fill="#f5c2c7" />
-          <rect x="18" y="104" width="185" height="4" rx="2" fill="#006a4e" />
+          <rect x="18" y="104" width="185" height="4" rx="2" fill="var(--mint)" />
           <text
             x="18"
             y="130"
