@@ -1,20 +1,31 @@
 "use server";
 
 import type { Route } from "next";
+import { z } from "zod";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
 export type AuthState = { status: "idle" | "error"; message?: string };
 
+const CredentialsSchema = z.object({
+  email: z.string().email("Enter a valid email address."),
+  password: z.string().min(8, "Password must be at least 8 characters."),
+});
+
 export async function signUpWithEmail(_prev: AuthState, formData: FormData): Promise<AuthState> {
-  const email = String(formData.get("email") ?? "");
-  const password = String(formData.get("password") ?? "");
-  const fullName = String(formData.get("fullName") ?? "");
+  const parsed = CredentialsSchema.safeParse({
+    email: formData.get("email"),
+    password: formData.get("password"),
+  });
+  if (!parsed.success) {
+    return { status: "error", message: parsed.error.issues[0]?.message ?? "Check your details." };
+  }
+  const fullName = String(formData.get("fullName") ?? "").trim();
 
   const supabase = await createClient();
   const { error } = await supabase.auth.signUp({
-    email,
-    password,
+    email: parsed.data.email,
+    password: parsed.data.password,
     options: { data: { full_name: fullName } },
   });
 
@@ -23,11 +34,19 @@ export async function signUpWithEmail(_prev: AuthState, formData: FormData): Pro
 }
 
 export async function signInWithEmail(_prev: AuthState, formData: FormData): Promise<AuthState> {
-  const email = String(formData.get("email") ?? "");
-  const password = String(formData.get("password") ?? "");
+  const parsed = CredentialsSchema.safeParse({
+    email: formData.get("email"),
+    password: formData.get("password"),
+  });
+  if (!parsed.success) {
+    return { status: "error", message: parsed.error.issues[0]?.message ?? "Check your details." };
+  }
 
   const supabase = await createClient();
-  const { error } = await supabase.auth.signInWithPassword({ email, password });
+  const { error } = await supabase.auth.signInWithPassword({
+    email: parsed.data.email,
+    password: parsed.data.password,
+  });
 
   if (error) return { status: "error", message: error.message };
   redirect("/dashboard");
