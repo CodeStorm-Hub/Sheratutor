@@ -57,31 +57,42 @@ export function AchievementsPageClient({ currentLevel, earnedXp, xpNeeded, progr
         title={safeT('achievements.title')}
         description={safeT('achievements.desc')}
       >
-        <button type="button" className="ghost-btn" onClick={handleShare}>
+        <button
+          type="button"
+          onClick={handleShare}
+          className="inline-flex shrink-0 items-center gap-2 rounded-lg border border-border bg-card px-3.5 py-2 text-xs font-semibold transition-colors hover:bg-accent"
+        >
           <Share2 size={16} /> Share
         </button>
       </PageHeader>
 
-      <div className="achievements-hero">
-        <div className="level-badge">
-          <Award size={48} color="#fff" />
+      <div className="flex flex-col items-center rounded-2xl border border-border bg-card px-6 py-10 text-center shadow-xs">
+        <div className="mb-4 grid size-20 place-items-center rounded-full bg-cta text-cta-foreground">
+          <Award size={40} />
         </div>
-        <h1>{language === 'bn' ? `লেভেল ${currentLevel}: বোর্ড স্কলার` : `Level ${currentLevel}: Board Scholar`}</h1>
-        <p>{language === 'bn' ? 'অসাধারণ! তোমার প্রস্তুতি এগিয়ে যাচ্ছে।' : 'Incredible! Your preparation is moving forward.'}</p>
-        
-        <div className="xp-bar-container" style={{ width: '100%', maxWidth: '480px', margin: '0 auto' }}>
-          <div className="xp-meta" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 8, fontSize: 13, fontWeight: 600 }}>
+        <h2 className="font-heading text-xl font-bold">
+          {language === 'bn' ? `লেভেল ${currentLevel}: বোর্ড স্কলার` : `Level ${currentLevel}: Board Scholar`}
+        </h2>
+        <p className="mt-1 text-sm text-muted-foreground">
+          {language === 'bn' ? 'অসাধারণ! তোমার প্রস্তুতি এগিয়ে যাচ্ছে।' : 'Incredible! Your preparation is moving forward.'}
+        </p>
+
+        <div className="mx-auto mt-6 w-full max-w-[480px]">
+          <div className="mb-2 flex items-center justify-between text-sm font-semibold font-tabular">
             <span>{earnedXp} XP</span>
-            <span>·</span>
+            <span className="text-muted-foreground">·</span>
             <span>{xpNeeded} XP to Level {currentLevel + 1}</span>
           </div>
-          <div className="xp-track">
-            <span style={{ width: `${progressPct}%` }} />
+          <div className="h-2.5 overflow-hidden rounded-full bg-surface-2">
+            <span
+              className="block h-full rounded-full bg-cta transition-[width] duration-500"
+              style={{ width: `${progressPct}%` }}
+            />
           </div>
         </div>
       </div>
 
-      <div className="badges-grid mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
         {badges.map((badge, idx) => (
           <div key={idx} className={`p-6 bg-card border border-border text-foreground rounded-2xl flex flex-col items-center text-center shadow-xs transition-colors ${!badge.unlocked ? 'opacity-50 grayscale' : ''}`}>
             <div className={`w-16 h-16 ${badge.unlocked ? 'bg-primary/15 text-primary' : 'bg-muted text-muted-foreground'} rounded-full flex items-center justify-center mb-4 text-2xl`}>

@@ -16,9 +16,9 @@ export function levelFromScore(score: number): MasteryLevel {
 }
 
 const LEVEL_STYLE: Record<MasteryLevel, { className: string; icon: typeof Check; label: string }> = {
-  mastered: { className: "bg-green-soft text-green dark:text-primary border-green/30", icon: Check, label: "রপ্ত" },
-  review: { className: "bg-ochre-soft text-ochre-deep dark:text-ochre border-ochre/40", icon: Triangle, label: "ঝালাই দরকার" },
-  gap: { className: "bg-red-soft text-red dark:text-destructive border-red/30", icon: X, label: "দুর্বলতা" },
+  mastered: { className: "bg-green-soft text-green border-green/30", icon: Check, label: "রপ্ত" },
+  review: { className: "bg-ochre-soft text-ochre border-ochre/40", icon: Triangle, label: "ঝালাই দরকার" },
+  gap: { className: "bg-red-soft text-red border-red/30", icon: X, label: "দুর্বলতা" },
 };
 
 export function MarkGlyph({ level, className }: { level: MasteryLevel; className?: string }) {
