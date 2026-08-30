@@ -3,6 +3,8 @@ import type { NextConfig } from 'next';
 const nextConfig: NextConfig = {
   // Statically-typed <Link href> / router calls (stable in Next 16).
   typedRoutes: true,
+  // Don't advertise the framework.
+  poweredByHeader: false,
 
   images: {
     formats: ['image/avif', 'image/webp'],

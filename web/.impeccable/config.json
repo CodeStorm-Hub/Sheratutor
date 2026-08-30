@@ -9,6 +9,15 @@
         "value": "rgba(18, 23, 36, 0.82)",
         "createdAt": "2026-08-29T14:39:22.353Z",
         "reason": "translucent form of dark --card #121724 (rgb 18,23,36) for .glass-panel backdrop-blur; pre-existing, not part of color-alignment task"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "*",
+        "files": [
+          "src/app/global-error.tsx"
+        ],
+        "createdAt": "2026-08-30T18:00:32.488Z",
+        "reason": "Next.js global-error.tsx renders without globals.css/CSS vars — inline literals are the documented pattern"
       }
     ]
   }
