@@ -18,7 +18,7 @@ export const Tag: React.FC<TagProps> = ({ children, color = 'mint', className })
   return (
     <span
       className={cn(
-        'inline-block rounded-md px-[7px] py-[5px] font-mono text-[9px] font-bold tracking-[0.05em]',
+        'inline-block rounded-md px-[7px] py-[5px] font-mono text-3xs font-bold tracking-[0.05em]',
         COLORS[color],
         className,
       )}

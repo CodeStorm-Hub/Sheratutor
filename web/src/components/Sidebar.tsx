@@ -65,7 +65,7 @@ export function SidebarContent({
 
   const linkClass = (href: string) =>
     cn(
-      'group flex items-center gap-3 rounded-lg border-l-2 border-transparent px-3 py-2 text-[13px] font-medium transition-colors',
+      'group flex items-center gap-3 rounded-lg border-l-2 border-transparent px-3 py-2 text-sm font-medium transition-colors',
       isActive(href)
         ? 'border-l-cta bg-sidebar-accent text-foreground'
         : 'text-sidebar-foreground/70 hover:bg-sidebar-accent hover:text-foreground',
@@ -106,7 +106,7 @@ export function SidebarContent({
           item.group ? (
             <p
               key={`g-${i}`}
-              className="mt-4 mb-1.5 px-2.5 font-mono text-[11px] font-bold tracking-[0.09em] text-muted-foreground uppercase first:mt-1"
+              className="mt-4 mb-1.5 px-2.5 font-mono text-2xs font-bold tracking-[0.09em] text-muted-foreground uppercase first:mt-1"
             >
               {item.label}
             </p>
@@ -121,7 +121,7 @@ export function SidebarContent({
               <item.icon className="size-[18px] flex-none" />
               <span className="flex-1">{item.label}</span>
               {item.isNew && (
-                <span className="rounded-md bg-cta/15 px-1.5 py-0.5 font-mono text-[9px] font-bold tracking-wide text-cta uppercase">
+                <span className="rounded-md bg-cta/15 px-1.5 py-0.5 font-mono text-3xs font-bold tracking-wide text-cta uppercase">
                   {language === 'bn' ? 'নতুন' : 'New'}
                 </span>
               )}
@@ -158,7 +158,7 @@ export function SidebarContent({
               onNavigate?.();
               router.push('/dashboard/tutor');
             }}
-            className="mt-2 font-mono text-[11px] font-semibold text-heading hover:text-cta"
+            className="mt-2 font-mono text-2xs font-semibold text-heading hover:text-cta"
           >
             {t('nav.help_btn')} →
           </button>

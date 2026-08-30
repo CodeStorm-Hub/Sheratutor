@@ -145,7 +145,7 @@ export function SubmissionDetailClient({
             <div key={step.en} className="flex items-center gap-2">
               <span
                 className={cn(
-                  'grid size-6 flex-none place-items-center rounded-full text-[11px] font-bold',
+                  'grid size-6 flex-none place-items-center rounded-full text-2xs font-bold',
                   isDone ? 'bg-accent2 text-white' : 'bg-surface-2 text-muted-foreground',
                 )}
               >
@@ -176,7 +176,7 @@ export function SubmissionDetailClient({
             </div>
             <div className="grid size-16 flex-none place-items-center rounded-xl border-2 border-mark text-center">
               <b className="font-heading text-xl leading-none text-mark">{letterGrade}</b>
-              <small className="text-[9px] text-muted-foreground">
+              <small className="text-3xs text-muted-foreground">
                 {language === 'bn' ? 'বোর্ড মান' : 'Board Grade'}
               </small>
             </div>
@@ -337,7 +337,7 @@ export function SubmissionDetailClient({
                       {q.observations_json.map((obs, idx) => (
                         <div
                           key={idx}
-                          className="flex items-start gap-2.5 rounded-lg bg-muted px-3.5 py-2.5 text-[13px] text-muted-foreground"
+                          className="flex items-start gap-2.5 rounded-lg bg-muted px-3.5 py-2.5 text-sm text-muted-foreground"
                         >
                           <span className={cn('font-bold', obs.marks_deducted > 0 ? 'text-mark' : 'text-accent2')}>
                             {obs.marks_deducted > 0 ? `-${obs.marks_deducted}` : '✓'}

@@ -152,7 +152,7 @@ export function SubmissionsPageClient({
                     {s.question_papers?.subjects?.name_en || (language === 'bn' ? 'বিষয়' : 'Subject')} —{' '}
                     {s.question_papers?.title || (language === 'bn' ? 'অনুশীলন প্রশ্ন' : 'Practice Paper')}
                   </b>
-                  <small className="text-[11px] text-muted-foreground">
+                  <small className="text-2xs text-muted-foreground">
                     {language === 'bn' ? 'জমা দেওয়া হয়েছে ' : 'Submitted on '}
                     {new Date(s.submitted_at).toLocaleDateString(language === 'bn' ? 'bn-BD' : 'en-GB', {
                       day: 'numeric',

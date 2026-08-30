@@ -455,7 +455,7 @@ export function TutorPageClient({
           {/* Subject selector */}
           <div className="rounded-xl border border-border p-3">
             <div className="mb-2 flex items-center justify-between">
-              <span className="font-mono text-[11px] font-bold tracking-wide text-muted-foreground uppercase">
+              <span className="font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
                 {language === 'bn' ? 'বিষয় নির্বাচন' : 'SELECT SUBJECT'}
               </span>
               <span className="rounded-full border border-border bg-surface-2 px-2.5 py-0.5 text-xs font-semibold text-green">
@@ -477,7 +477,7 @@ export function TutorPageClient({
           </div>
 
           {/* Chapters */}
-          <div className="flex items-center gap-2 font-mono text-[11px] font-bold tracking-wide text-muted-foreground uppercase">
+          <div className="flex items-center gap-2 font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
             <BookOpen size={14} />
             <span>{language === 'bn' ? 'অধ্যায়সমূহ' : 'CHAPTERS'}</span>
           </div>
@@ -526,7 +526,7 @@ export function TutorPageClient({
           {/* Recent chats */}
           {sessions.length > 0 && (
             <div>
-              <div className="mt-3 flex items-center gap-2 font-mono text-[11px] font-bold tracking-wide text-muted-foreground uppercase">
+              <div className="mt-3 flex items-center gap-2 font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
                 <Clock size={14} />
                 <span>{language === 'bn' ? 'পূর্বের আলোচনা' : 'RECENT CHATS'}</span>
               </div>
@@ -660,7 +660,7 @@ export function TutorPageClient({
                 </div>
 
                 <div>
-                  <span className="font-mono text-[11px] font-bold tracking-wide text-muted-foreground uppercase">
+                  <span className="font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
                     {language === 'bn' ? 'প্রস্তাবিত কিছু প্রশ্ন' : 'SUGGESTED QUESTIONS'}
                   </span>
                   <div className="mt-2 grid grid-cols-1 gap-2.5 sm:grid-cols-3">

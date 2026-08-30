@@ -22,7 +22,7 @@ export function Logo({
         Shera<span className="text-coral">Tutor</span>
       </span>
       {tagline && (
-        <span className="ml-1 hidden font-mono text-[10px] text-muted-foreground sm:inline">
+        <span className="ml-1 hidden font-mono text-3xs text-muted-foreground sm:inline">
           HSC &amp; SSC
         </span>
       )}

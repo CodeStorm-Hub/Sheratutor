@@ -40,10 +40,10 @@ export interface DashboardClientProps {
 }
 
 const cardClass = 'rounded-2xl border border-border bg-surface-1 p-5';
-const cardLabelClass = 'font-mono text-[10px] font-bold tracking-[0.08em] text-muted-foreground uppercase';
+const cardLabelClass = 'font-mono text-3xs font-bold tracking-[0.08em] text-muted-foreground uppercase';
 const iconBtnClass =
   'grid size-8 shrink-0 place-items-center rounded-lg text-muted-foreground transition-colors hover:bg-accent hover:text-foreground';
-const panelFooterLinkClass = 'flex items-center gap-1 pt-3 text-[13px] font-semibold hover:text-cta';
+const panelFooterLinkClass = 'flex items-center gap-1 pt-3 text-sm font-semibold hover:text-cta';
 
 const subjectIconColor: Record<string, string> = {
   mint: 'bg-green-soft text-green',
@@ -121,7 +121,7 @@ export function DashboardPageClient({
               <span className="text-xl font-semibold">{avgScorePct !== null ? `(${avgScorePct}%)` : 'N/A'}</span>
             </div>
             <div className="w-[131px] shrink-0 rounded-lg border border-border bg-surface-1 px-2.5 pt-2.5 pb-1.5">
-              <label className="block text-[10px] leading-tight text-muted-foreground">
+              <label className="block text-3xs leading-tight text-muted-foreground">
                 {totalCompleted > 0
                   ? `${t('dashboard.percentile_top')} ${percentileRank}% ${t('dashboard.percentile_board')}`
                   : t('dashboard.percentile_ready')}
@@ -137,7 +137,7 @@ export function DashboardPageClient({
             </div>
           </div>
 
-          <div className="mt-4 flex items-center justify-between gap-2 text-[11px] text-muted-foreground">
+          <div className="mt-4 flex items-center justify-between gap-2 text-2xs text-muted-foreground">
             <span>
               {totalCompleted > 0
                 ? t('dashboard.prediction_footer_rubric')
@@ -232,7 +232,7 @@ export function DashboardPageClient({
                     <span className="block h-full rounded bg-accent2" style={{ width: `${sub.progress}%` }} />
                   </span>
                 </div>
-                <div className="mt-2 flex items-center gap-1.5 text-[11px] text-muted-foreground">
+                <div className="mt-2 flex items-center gap-1.5 text-2xs text-muted-foreground">
                   <span>{sub.progress}% {language === 'bn' ? 'দক্ষতা' : 'mastery'}</span>
                   <span>·</span>
                   <span>{sub.chapterCount} {language === 'bn' ? 'টি অধ্যায়' : 'chapters'}</span>
@@ -256,7 +256,7 @@ export function DashboardPageClient({
             </div>
             <Link
               href="/dashboard/study-plan"
-              className="flex shrink-0 items-center gap-1 rounded-full border border-border px-2.5 py-1 text-[11px] font-semibold text-muted-foreground hover:bg-accent"
+              className="flex shrink-0 items-center gap-1 rounded-full border border-border px-2.5 py-1 text-2xs font-semibold text-muted-foreground hover:bg-accent"
             >
               {todayTasks.length} {t('dashboard.tasks_count')} <ChevronDown size={14} />
             </Link>
@@ -279,7 +279,7 @@ export function DashboardPageClient({
                   <b className="block text-xs font-semibold">{tItem.title}</b>
                   <small className="text-xs text-muted-foreground">{tItem.subtitle}</small>
                 </div>
-                <time className="font-mono text-[10px] text-muted-foreground">{tItem.time}</time>
+                <time className="font-mono text-3xs text-muted-foreground">{tItem.time}</time>
                 <button type="button" aria-label="More task options" className="text-muted-foreground">
                   <ChevronRight size={15} />
                 </button>

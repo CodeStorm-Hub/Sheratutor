@@ -33,11 +33,13 @@ typography:
   bodyBn:   { fontFamily: "'Noto Sans Bengali', sans-serif", var: "--font-body-bn", weights: [400, 600, 700] }
   label:    { fontFamily: "'Space Mono', monospace", var: "--font-mono-eyebrow", weights: [400, 700] }
   scale:
-    display:  "clamp(2rem, 5vw, 3.25rem) / 1.15 / -0.02em"
-    headline: "clamp(1.5rem, 3.5vw, 2.25rem) / 1.25 / -0.01em"
-    title:    "1.25rem / 1.4"
-    body:     "0.875rem / 1.5"
-    label:    "0.75rem / 1.3 / 0.12em uppercase"
+    display:  "text-display  — clamp(2rem, 5vw, 3.25rem) / 1.15 / -0.02em"
+    headline: "text-headline — clamp(1.5rem, 3.5vw, 2.25rem) / 1.25 / -0.01em"
+    title:    "text-xl       — 1.25rem / 1.4"
+    body:     "text-sm       — 0.875rem / 1.5"
+    label:    "text-xs       — 0.75rem / 1.3 / 0.12em uppercase (Space Mono eyebrows)"
+    meta:     "text-2xs      — 0.6875rem  (metadata rows, eyebrows in dense cards)"
+    micro:    "text-3xs      — 0.625rem   (mono badges, chart-axis labels)"
 radius:
   base: "0.75rem"   # --radius; sm/md/lg/xl derive via calc()
 ---

@@ -134,7 +134,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
         <div className={screenClass}>
           <header className={screenHeaderClass}>
             <span className={logoClass}>
-              SheraTutor <small className="ml-1.5 font-mono text-[9px] text-muted-foreground">SIMULATOR</small>
+              SheraTutor <small className="ml-1.5 font-mono text-3xs text-muted-foreground">SIMULATOR</small>
             </span>
             <button type="button" className={exitBtnClass} onClick={() => setStarted(false)}>
               {t('simulator.exit')}
@@ -154,7 +154,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
         <header className={screenHeaderClass}>
           <span className={logoClass}>
             SheraTutor{' '}
-            <small className="ml-1.5 font-mono text-[9px] text-muted-foreground">
+            <small className="ml-1.5 font-mono text-3xs text-muted-foreground">
               {t('simulator.title').toUpperCase()}
             </small>
           </span>
