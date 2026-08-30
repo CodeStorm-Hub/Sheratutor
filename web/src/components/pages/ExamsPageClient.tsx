@@ -119,43 +119,65 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
 
   const isFiltered = selectedSubject !== 'ALL' || selectedDifficulty !== 'ALL';
 
+  const screenClass = 'fixed inset-0 z-50 overflow-y-auto bg-surface-2';
+  const screenHeaderClass =
+    'sticky top-0 z-10 flex items-center justify-between gap-4 border-b border-border bg-surface-1 px-6 py-3 sm:px-10';
+  const logoClass = 'font-heading text-xl font-bold';
+  const exitBtnClass =
+    'rounded-lg border border-border bg-surface-1 px-3 py-1.5 text-xs font-medium transition-colors hover:bg-accent';
+  const paperClass =
+    'mx-auto my-10 max-w-[730px] rounded-2xl bg-surface-1 px-6 py-10 shadow-lg sm:px-14 sm:py-12';
+
   if (simulator && started) {
     if (!paper) {
       return (
-        <div className="exam-screen">
-          <header>
-            <span className="exam-logo">SheraTutor <small>SIMULATOR</small></span>
-            <button type="button" onClick={() => setStarted(false)}>{t('simulator.exit')}</button>
+        <div className={screenClass}>
+          <header className={screenHeaderClass}>
+            <span className={logoClass}>
+              SheraTutor <small className="ml-1.5 font-mono text-[9px] text-muted-foreground">SIMULATOR</small>
+            </span>
+            <button type="button" className={exitBtnClass} onClick={() => setStarted(false)}>
+              {t('simulator.exit')}
+            </button>
           </header>
-          <div className="exam-paper"><h2>{language === 'bn' ? 'সিমুলেট করার মতো কোনো প্রশ্নপত্র নেই।' : 'No paper available to simulate.'}</h2></div>
+          <div className={paperClass}>
+            <h2 className="font-heading text-lg font-bold">
+              {language === 'bn' ? 'সিমুলেট করার মতো কোনো প্রশ্নপত্র নেই।' : 'No paper available to simulate.'}
+            </h2>
+          </div>
         </div>
       );
     }
 
     return (
-      <div className="exam-screen">
-        <header>
-          <span className="exam-logo">
-            SheraTutor <small>{t('simulator.title').toUpperCase()}</small>
+      <div className={screenClass}>
+        <header className={screenHeaderClass}>
+          <span className={logoClass}>
+            SheraTutor{' '}
+            <small className="ml-1.5 font-mono text-[9px] text-muted-foreground">
+              {t('simulator.title').toUpperCase()}
+            </small>
           </span>
-          <div className="exam-timer">
+          <div className="flex items-center gap-1.5 font-mono text-sm font-bold text-mark">
             <Timer size={17} /> {formatTime(timeLeft)}
           </div>
-          <button type="button" onClick={() => setStarted(false)}>
+          <button type="button" className={exitBtnClass} onClick={() => setStarted(false)}>
             {t('simulator.exit')}
           </button>
         </header>
-        <div className="exam-paper">
+        <div className={paperClass}>
           <Tag color="sun">
             {paper.subjects?.name_en || 'MOCK EXAM'}
           </Tag>
-          <h1>{paper.title}</h1>
-          <p>
-            {language === 'bn' 
+          <h1 className="mt-4 mb-0.5 font-heading text-[clamp(1.5rem,4vw,2rem)] font-extrabold">
+            {paper.title}
+          </h1>
+          <p className="text-xs text-muted-foreground">
+            {language === 'bn'
               ? `সময়: ${Math.round(paper.total_marks * 1.5)} মিনিট · পূর্ণমান: ${paper.total_marks}`
               : `Time: ${Math.round(paper.total_marks * 1.5)} Minutes · Full marks: ${paper.total_marks}`}
           </p>
-          <hr />
+          <hr className="my-6 border-t border-border" />
 
           <div className="space-y-12">
             {questions.map((q: any) => {
@@ -216,8 +238,11 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
           </div>
           
           <div className="mt-12 flex justify-end">
-            <Link href={`/dashboard/upload?paperId=${paper.id}`} className="primary-btn">
-              {language === 'bn' ? 'উত্তরপত্র জমা দাও' : 'Submit Answers'} <ArrowUpRight size={16} className="ml-2" />
+            <Link
+              href={`/dashboard/upload?paperId=${paper.id}`}
+              className="inline-flex items-center gap-2 rounded-lg bg-cta px-4 py-2.5 text-xs font-semibold text-cta-foreground shadow-xs transition-colors hover:opacity-90"
+            >
+              {language === 'bn' ? 'উত্তরপত্র জমা দাও' : 'Submit Answers'} <ArrowUpRight size={16} />
             </Link>
           </div>
         </div>

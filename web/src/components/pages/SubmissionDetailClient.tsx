@@ -5,10 +5,20 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
-import { Check, ChevronRight, ChevronLeft, Maximize2, Sparkles, Upload, Printer, AlertTriangle } from 'lucide-react';
+import {
+  Check,
+  ChevronRight,
+  ChevronLeft,
+  Maximize2,
+  Sparkles,
+  Upload,
+  Printer,
+  AlertTriangle,
+} from 'lucide-react';
 import { ExplainSimplyButton } from '@/components/explain-simply-button';
 import { useLanguage } from '@/context/LanguageContext';
 import { createClient } from '@/lib/supabase/client';
+import { cn } from '@/lib/utils';
 
 export interface CriterionItem {
   name: string;
@@ -28,11 +38,7 @@ export interface QuestionResultItem {
   mistake_category?: string | null;
   transcript_mismatch_detected?: boolean;
   transcript_mismatch_note?: string | null;
-  observations_json?: Array<{
-    step: string;
-    observation: string;
-    marks_deducted: number;
-  }> | null;
+  observations_json?: Array<{ step: string; observation: string; marks_deducted: number }> | null;
 }
 
 export interface PageItem {
@@ -55,10 +61,15 @@ interface SubmissionDetailClientProps {
   pages: PageItem[];
 }
 
+const btnPrimary =
+  'inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-cta px-4 py-2.5 text-xs font-semibold text-cta-foreground shadow-xs transition-colors hover:opacity-90';
+const btnOutline =
+  'inline-flex shrink-0 items-center gap-1.5 rounded-lg border border-border bg-card px-4 py-2.5 text-xs font-semibold transition-colors hover:bg-accent';
+const cardClass = 'rounded-2xl border border-border bg-surface-1 p-5';
+
 export function SubmissionDetailClient({
   submissionId,
   paperTitle,
-  subjectName,
   scoreObtained,
   maxScore,
   scorePercent,
@@ -72,32 +83,23 @@ export function SubmissionDetailClient({
   const { language, t } = useLanguage();
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [isComplete, setIsComplete] = useState(initialIsComplete);
-  const [isZoomed, setIsZoomed] = useState(false);
 
-  // Supabase Realtime channel subscription for zero-latency status transitions
   useEffect(() => {
     if (isComplete) return;
-
     const supabase = createClient();
     const channel = supabase
       .channel(`submission-realtime-${submissionId}`)
       .on(
         'postgres_changes',
-        {
-          event: 'UPDATE',
-          schema: 'public',
-          table: 'exam_submissions',
-          filter: `id=eq.${submissionId}`,
-        },
-        (payload: any) => {
+        { event: 'UPDATE', schema: 'public', table: 'exam_submissions', filter: `id=eq.${submissionId}` },
+        (payload: { new?: { status?: string } }) => {
           if (payload.new && payload.new.status === 'COMPLETED') {
             setIsComplete(true);
             router.refresh();
           }
-        }
+        },
       )
       .subscribe();
-
     return () => {
       supabase.removeChannel(channel);
     };
@@ -112,9 +114,7 @@ export function SubmissionDetailClient({
   ];
 
   const handlePrint = () => {
-    if (typeof window !== 'undefined') {
-      window.print();
-    }
+    if (typeof window !== 'undefined') window.print();
   };
 
   return (
@@ -127,107 +127,140 @@ export function SubmissionDetailClient({
             : `${paperTitle} — Step-by-step breakdown of your written answers.`
         }
       >
-        <div style={{ display: 'flex', gap: 10 }}>
-          <button type="button" onClick={handlePrint} className="secondary-btn" style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+        <div className="flex flex-wrap gap-2">
+          <button type="button" onClick={handlePrint} className={btnOutline}>
             <Printer size={15} /> {language === 'bn' ? 'প্রিন্ট / PDF' : 'Print / PDF'}
           </button>
-          <Link href="/dashboard/upload" className="primary-btn">
+          <Link href="/dashboard/upload" className={btnPrimary}>
             <Upload size={15} /> {language === 'bn' ? 'আরেকটি খাতা আপলোড' : 'Upload another sheet'}
           </Link>
         </div>
       </PageHeader>
 
-      <section className="grading-steps">
+      {/* Grading progress */}
+      <section className="flex flex-wrap gap-x-6 gap-y-3 rounded-2xl border border-border bg-surface-1 p-5">
         {gradingSteps.map((step, i) => {
           const isDone = isComplete || i < 4;
           return (
-            <div key={step.en} className={`step-item ${isDone ? 'done' : ''}`}>
-              <div className="step-circle">{isDone ? <Check size={14} /> : i + 1}</div>
-              <span>{language === 'bn' ? step.bn : step.en}</span>
+            <div key={step.en} className="flex items-center gap-2">
+              <span
+                className={cn(
+                  'grid size-6 flex-none place-items-center rounded-full text-[11px] font-bold',
+                  isDone ? 'bg-accent2 text-white' : 'bg-surface-2 text-muted-foreground',
+                )}
+              >
+                {isDone ? <Check size={13} /> : i + 1}
+              </span>
+              <span className={cn('text-xs', isDone ? 'font-medium text-foreground' : 'text-muted-foreground')}>
+                {language === 'bn' ? step.bn : step.en}
+              </span>
             </div>
           );
         })}
       </section>
 
-      <div className="eval-grid">
-        <section className="eval-card">
-          <div className="eval-score-hero">
+      <div className="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
+        <section className={cardClass}>
+          <div className="flex items-start justify-between gap-4">
             <div>
               <Tag color="mint">{t('grading.examiner_result')}</Tag>
-              <h2>{scoreObtained}<small>/{maxScore}</small></h2>
-              <p>
+              <h2 className="mt-3 font-mono text-4xl font-bold">
+                {scoreObtained}
+                <small className="text-lg text-muted-foreground">/{maxScore}</small>
+              </h2>
+              <p className="mt-1 text-xs text-muted-foreground">
                 {language === 'bn'
                   ? `বোর্ড মানদণ্ডে অর্জিত গ্রেড: ${letterGrade} (${scorePercent}%)`
                   : `Achieved Grade ${letterGrade} (${scorePercent}%) against standard NCTB rubric.`}
               </p>
             </div>
-            <div className="grade-stamp">
-              <b>{letterGrade}</b>
-              <small>{language === 'bn' ? 'বোর্ড মান' : 'Board Grade'}</small>
+            <div className="grid size-16 flex-none place-items-center rounded-xl border-2 border-mark text-center">
+              <b className="font-heading text-xl leading-none text-mark">{letterGrade}</b>
+              <small className="text-[9px] text-muted-foreground">
+                {language === 'bn' ? 'বোর্ড মান' : 'Board Grade'}
+              </small>
             </div>
           </div>
-          <hr />
-          <div className="rubric-breakdown">
-            <h3>{t('grading.performance_breakdown')}</h3>
-            <div className="rubric-bars">
-              {criteria.map((c) => (
-                <div className="rubric-bar-item" key={c.name}>
-                  <div>
-                    <span>{c.name}</span>
-                    <b>{c.awarded}/{c.max}</b>
-                  </div>
-                  <div className="bar-track"><span style={{ width: `${c.pct}%` }} /></div>
+
+          <hr className="my-5 border-border" />
+
+          <h3 className="text-sm font-semibold">{t('grading.performance_breakdown')}</h3>
+          <div className="mt-3 space-y-3">
+            {criteria.map((c) => (
+              <div key={c.name}>
+                <div className="flex items-center justify-between text-xs">
+                  <span className="text-muted-foreground">{c.name}</span>
+                  <b className="font-mono">
+                    {c.awarded}/{c.max}
+                  </b>
                 </div>
-              ))}
-            </div>
+                <div className="mt-1 h-1.5 overflow-hidden rounded bg-surface-2">
+                  <span className="block h-full rounded bg-accent2" style={{ width: `${c.pct}%` }} />
+                </div>
+              </div>
+            ))}
           </div>
-          <div style={{ marginTop: 24 }}>
-            <Link href="/dashboard/tutor" className="primary-btn" style={{ width: '100%', justifyContent: 'center' }}>
-              <Sparkles size={15} /> {language === 'bn' ? 'টিউটরের সাথে রিভিশন করুন' : 'Review with AI Tutor'}
-            </Link>
-          </div>
+
+          <Link href="/dashboard/tutor" className={cn(btnPrimary, 'mt-6 w-full justify-center')}>
+            <Sparkles size={15} /> {language === 'bn' ? 'টিউটরের সাথে রিভিশন করুন' : 'Review with AI Tutor'}
+          </Link>
         </section>
 
-        <aside className="script-preview-card flex flex-col h-full">
-          <div className="script-header">
-            <h3>{language === 'bn' ? 'আসল উত্তরপত্র' : 'Transcribed Script'}</h3>
-            <button type="button" aria-label="Expand image view"><Maximize2 size={16} /></button>
+        <aside className={cn(cardClass, 'flex flex-col')}>
+          <div className="mb-3 flex items-center justify-between">
+            <h3 className="text-sm font-semibold">
+              {language === 'bn' ? 'আসল উত্তরপত্র' : 'Transcribed Script'}
+            </h3>
+            <button type="button" aria-label="Expand image view" className="text-muted-foreground hover:text-foreground">
+              <Maximize2 size={16} />
+            </button>
           </div>
-          
-          <div className="script-viewport flex-1 flex flex-col justify-between">
+
+          <div className="flex flex-1 flex-col justify-between">
             {pages && pages.length > 0 ? (
-              <div className="relative">
+              <div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src={pages[currentPageIndex].original_image_url}
                   alt={`Original script page ${currentPageIndex + 1}`}
-                  className="w-full h-auto rounded-lg"
+                  className="h-auto w-full rounded-lg border border-border"
                 />
-                <div className="flex justify-between mt-4">
-                  <button 
+                <div className="mt-4 flex items-center justify-between">
+                  <button
                     type="button"
-                    disabled={currentPageIndex === 0} 
-                    onClick={() => setCurrentPageIndex(p => p - 1)}
+                    disabled={currentPageIndex === 0}
+                    onClick={() => setCurrentPageIndex((p) => p - 1)}
                     aria-label={language === 'bn' ? 'পূর্ববর্তী পৃষ্ঠা' : 'Previous page'}
-                    className="p-2 rounded bg-muted hover:bg-muted/80 disabled:opacity-50 transition-colors"
-                  ><ChevronLeft size={16} /></button>
-                  <span className="text-sm font-medium pt-2">Page {currentPageIndex + 1} of {pages.length}</span>
-                  <button 
+                    className="rounded-lg bg-muted p-2 transition-colors hover:bg-accent disabled:opacity-50"
+                  >
+                    <ChevronLeft size={16} />
+                  </button>
+                  <span className="text-sm font-medium">
+                    Page {currentPageIndex + 1} of {pages.length}
+                  </span>
+                  <button
                     type="button"
-                    disabled={currentPageIndex === pages.length - 1} 
-                    onClick={() => setCurrentPageIndex(p => p + 1)}
+                    disabled={currentPageIndex === pages.length - 1}
+                    onClick={() => setCurrentPageIndex((p) => p + 1)}
                     aria-label={language === 'bn' ? 'পরবর্তী পৃষ্ঠা' : 'Next page'}
-                    className="p-2 rounded bg-muted hover:bg-muted/80 disabled:opacity-50 transition-colors"
-                  ><ChevronRight size={16} /></button>
+                    className="rounded-lg bg-muted p-2 transition-colors hover:bg-accent disabled:opacity-50"
+                  >
+                    <ChevronRight size={16} />
+                  </button>
                 </div>
               </div>
             ) : (
-              <div className="mock-sheet">
-                <div className="sheet-line" style={{ width: '60%' }} />
-                <div className="sheet-line" style={{ width: '90%' }} />
-                <div className="sheet-line" style={{ width: '75%' }} />
-                <div className="sheet-annotation"><span>✓ Correct approach</span></div>
-                <div className="sheet-line" style={{ width: '70%' }} />
-                <div className="sheet-annotation error"><span>✗ -1 Missing final unit</span></div>
+              <div className="space-y-3 rounded-xl border border-border bg-surface-2 p-5">
+                <div className="h-2 rounded bg-border" style={{ width: '60%' }} />
+                <div className="h-2 rounded bg-border" style={{ width: '90%' }} />
+                <div className="h-2 rounded bg-border" style={{ width: '75%' }} />
+                <div className="rounded-md border-l-2 border-accent2 bg-green-soft px-2 py-1 text-xs text-green">
+                  ✓ Correct approach
+                </div>
+                <div className="h-2 rounded bg-border" style={{ width: '70%' }} />
+                <div className="rounded-md border-l-2 border-mark bg-red-soft px-2 py-1 text-xs text-mark">
+                  ✗ -1 Missing final unit
+                </div>
               </div>
             )}
           </div>
@@ -235,28 +268,36 @@ export function SubmissionDetailClient({
       </div>
 
       {questionResults && questionResults.length > 0 && (
-        <section style={{ marginTop: 32 }}>
-          <div className="section-heading" style={{ padding: '0 0 16px 0' }}>
-            <div>
-              <h2>{language === 'bn' ? 'প্রশ্নভিত্তিক মূল্যায়নের ধাপ' : 'Question Step-by-Step Breakdown'}</h2>
-              <p>{language === 'bn' ? 'প্রতিটি প্রশ্নের প্রাপ্ত নম্বর ও চিহ্নিত ভুলসমূহ।' : 'Mark deductions and suggestions per question.'}</p>
-            </div>
+        <section className="mt-8">
+          <div className="pb-4">
+            <h2 className="font-heading text-xl leading-tight font-bold">
+              {language === 'bn' ? 'প্রশ্নভিত্তিক মূল্যায়নের ধাপ' : 'Question Step-by-Step Breakdown'}
+            </h2>
+            <p className="mt-1 text-xs text-muted-foreground">
+              {language === 'bn'
+                ? 'প্রতিটি প্রশ্নের প্রাপ্ত নম্বর ও চিহ্নিত ভুলসমূহ।'
+                : 'Mark deductions and suggestions per question.'}
+            </p>
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 14 }}>
+
+          <div className="flex flex-col gap-3.5">
             {questionResults.map((q, qIndex) => {
-              const qText = language === 'bn'
+              const qText =
+                language === 'bn'
                   ? q.question_text_bn || q.question_text_en || `প্রশ্ন ${q.question_number || qIndex + 1}`
                   : q.question_text_en || q.question_text_bn || `Question ${q.question_number || qIndex + 1}`;
               const firstObs = q.observations_json?.[0];
 
               return (
-                <div key={q.id} style={{ border: '1px solid var(--border)', borderRadius: 14, background: 'var(--card)', padding: '20px 22px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10, gap: 12 }}>
-                    <b style={{ fontSize: 15, color: 'var(--foreground)', flex: 1 }}>
-                      {language === 'bn' ? `প্রশ্ন ${q.question_number || qIndex + 1}: ` : `Question ${q.question_number || qIndex + 1}: `}
+                <div key={q.id} className="rounded-2xl border border-border bg-card px-5 py-5">
+                  <div className="mb-2.5 flex flex-wrap items-center justify-between gap-3">
+                    <b className="min-w-0 flex-1 text-[15px] text-foreground">
+                      {language === 'bn'
+                        ? `প্রশ্ন ${q.question_number || qIndex + 1}: `
+                        : `Question ${q.question_number || qIndex + 1}: `}
                       {qText}
                     </b>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 10, flexWrap: 'wrap' }}>
+                    <div className="flex flex-wrap items-center gap-2.5">
                       {q.mistake_category && q.mistake_category !== 'NONE' && (
                         <Tag color="sun">
                           {q.mistake_category === 'FORMULA_RECALL' && (language === 'bn' ? 'সূত্রের ভুল' : 'Formula Error')}
@@ -278,31 +319,41 @@ export function SubmissionDetailClient({
                       />
                     </div>
                   </div>
+
                   {q.transcript_mismatch_detected && (
-                    <div style={{ background: 'color-mix(in srgb, var(--sun) 14%, var(--card))', border: '1px solid color-mix(in srgb, var(--sun) 45%, transparent)', padding: '8px 12px', borderRadius: 8, marginBottom: 10, display: 'flex', alignItems: 'center', gap: 8, fontSize: 12, color: 'var(--sun)' }}>
+                    <div className="mb-2.5 flex items-center gap-2 rounded-lg border border-warning/45 bg-warning/10 px-3 py-2 text-xs text-warning">
                       <AlertTriangle size={14} />
-                      <span>{q.transcript_mismatch_note || (language === 'bn' ? 'হাতে লেখা উত্তর ও ট্রান্সক্রিপশনের মধ্যে অমিল শনাক্ত হয়েছে।' : 'Handwriting vs OCR mismatch detected.')}</span>
+                      <span>
+                        {q.transcript_mismatch_note ||
+                          (language === 'bn'
+                            ? 'হাতে লেখা উত্তর ও ট্রান্সক্রিপশনের মধ্যে অমিল শনাক্ত হয়েছে।'
+                            : 'Handwriting vs OCR mismatch detected.')}
+                      </span>
                     </div>
                   )}
+
                   {q.observations_json && q.observations_json.length > 0 ? (
-                    <div style={{ marginTop: 12, display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    <div className="mt-3 flex flex-col gap-2">
                       {q.observations_json.map((obs, idx) => (
-                        <div key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: 10, fontSize: 13, color: 'var(--muted-foreground)', background: 'var(--muted)', padding: '10px 14px', borderRadius: 8 }}>
-                          <span style={{ color: obs.marks_deducted > 0 ? 'var(--coral)' : 'var(--mint)', fontWeight: 700 }}>
+                        <div
+                          key={idx}
+                          className="flex items-start gap-2.5 rounded-lg bg-muted px-3.5 py-2.5 text-[13px] text-muted-foreground"
+                        >
+                          <span className={cn('font-bold', obs.marks_deducted > 0 ? 'text-mark' : 'text-accent2')}>
                             {obs.marks_deducted > 0 ? `-${obs.marks_deducted}` : '✓'}
                           </span>
                           <div>
-                            <b style={{ color: 'var(--foreground)', display: 'block' }}>{obs.step}</b>
-                            <p style={{ margin: 0, color: 'var(--muted-foreground)' }}>{obs.observation}</p>
+                            <b className="block text-foreground">{obs.step}</b>
+                            <p className="text-muted-foreground">{obs.observation}</p>
                           </div>
                         </div>
                       ))}
                     </div>
                   ) : (
-                    <div className="mt-3 p-3.5 rounded-xl border border-dashed border-border bg-muted/20 flex items-center justify-between gap-3 text-xs text-muted-foreground">
+                    <div className="mt-3 flex items-center justify-between gap-3 rounded-xl border border-dashed border-border bg-muted/20 p-3.5 text-xs text-muted-foreground">
                       <span>
-                        {language === 'bn' 
-                          ? 'এই প্রশ্নের প্রতিটি ধাপের বিস্তারিত AI মূল্যায়ন প্রক্রিয়াধীন রয়েছে বা কোনো নম্বর কর্তন চিহ্নিত হয়নি।' 
+                        {language === 'bn'
+                          ? 'এই প্রশ্নের প্রতিটি ধাপের বিস্তারিত AI মূল্যায়ন প্রক্রিয়াধীন রয়েছে বা কোনো নম্বর কর্তন চিহ্নিত হয়নি।'
                           : 'Detailed step-by-step rubric evaluation is processing or no deductions were recorded.'}
                       </span>
                     </div>
