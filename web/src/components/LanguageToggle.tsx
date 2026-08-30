@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import { useRouter } from 'next/navigation';
 import { useLanguage } from '@/context/LanguageContext';
 import { Languages } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -15,11 +16,18 @@ export const LanguageToggle: React.FC<LanguageToggleProps> = ({
   showIcon = true,
 }) => {
   const { language, setLanguage } = useLanguage();
+  const router = useRouter();
+
+  const choose = (value: 'bn' | 'en') => {
+    setLanguage(value);
+    // Server components (e.g. the landing page) read the lang cookie — re-render them.
+    router.refresh();
+  };
 
   const opt = (value: 'bn' | 'en', label: string, title: string) => (
     <button
       type="button"
-      onClick={() => setLanguage(value)}
+      onClick={() => choose(value)}
       aria-pressed={language === value}
       title={title}
       className={cn(

@@ -1,14 +1,18 @@
-'use client';
-
 import React from 'react';
-import { useLanguage } from '@/context/LanguageContext';
 
 /**
  * A stylized marked exam script (khata) preview with ruled lines,
  * margin rule, teacher's tick marks, and examiner score card.
+ * Server-safe — pass the current language in.
  */
-export function KhataPreview({ className }: { className?: string }) {
-  const { language } = useLanguage();
+export function KhataPreview({
+  className,
+  lang = 'bn',
+}: {
+  className?: string;
+  lang?: 'bn' | 'en';
+}) {
+  const language = lang;
 
   const scoreTitle = language === 'bn' ? 'পরীক্ষকের মূল্যায়ন' : 'EXAMINER SCORE';
   const scoreValue = language === 'bn' ? '৮৭' : '87';
