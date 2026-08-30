@@ -6,7 +6,7 @@ import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Bot, User, Loader2, Send, Volume2, Sparkles, HelpCircle, type LucideIcon } from "lucide-react";
+import { Bot, User, Loader2, Send, Volume2, Sparkles, type LucideIcon } from "lucide-react";
 
 export type TutorChatMessage = { role: "assistant" | "student"; text: string };
 export type TutorChatQuickChip = { label: string; icon: LucideIcon; prompt: string };

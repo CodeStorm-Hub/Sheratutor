@@ -77,7 +77,7 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
     { id: 'privacy', label: t('settings.privacy_tab') },
   ];
 
-  const SaveBlock = () => (
+  const saveBlock = () => (
     <div className="mt-6">
       <button type="button" className={cn(saveBtnClass, 'w-full')} onClick={handleSave} disabled={saving}>
         {saving ? t('common.saving') : t('common.save_changes')}
@@ -148,7 +148,7 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
                 />
               </label>
 
-              <SaveBlock />
+              {saveBlock()}
             </>
           )}
 
@@ -207,7 +207,7 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
                 />
               </label>
 
-              <SaveBlock />
+              {saveBlock()}
             </>
           )}
 
@@ -278,7 +278,7 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
                 <span>{t('settings.opt_in')}</span>
               </label>
 
-              <SaveBlock />
+              {saveBlock()}
             </>
           )}
 

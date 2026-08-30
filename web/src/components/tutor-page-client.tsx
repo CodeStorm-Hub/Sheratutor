@@ -198,21 +198,8 @@ export function TutorPageClient({
     }
   };
 
-  const [scaffoldingStyle, setScaffoldingStyle] = useState<'socratic' | 'direct'>('socratic');
+  const [scaffoldingStyle] = useState<'socratic' | 'direct'>('socratic');
 
-  const playBanglaSpeech = (text: string) => {
-    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
-    window.speechSynthesis.cancel();
-    const plain = text
-      .replace(/\$\$[\s\S]*?\$\$/g, 'সমীকরণ')
-      .replace(/\$([^$]+)\$/g, '$1')
-      .replace(/[*#_`]/g, '')
-      .trim();
-    const utterance = new SpeechSynthesisUtterance(plain);
-    utterance.lang = 'bn-BD';
-    utterance.rate = 0.95;
-    window.speechSynthesis.speak(utterance);
-  };
 
   // Submit Question with Real-time SSE Token Streaming
   const submitQuestion = async (textToSend?: string) => {
@@ -327,7 +314,7 @@ export function TutorPageClient({
               } else if (event.type === 'error') {
                 throw new Error(event.error || 'Stream error occurred');
               }
-            } catch (parseErr) {
+            } catch {
               // Ignore parsing chunk split across network boundaries
             }
           }
@@ -437,7 +424,9 @@ export function TutorPageClient({
 
       <div className="relative grid h-[calc(100vh-240px)] max-h-[850px] min-h-[560px] w-full gap-5 lg:grid-cols-[310px_minmax(0,1fr)]">
         {mobileSidebarOpen && (
-          <div
+          <button
+            type="button"
+            aria-label={language === 'bn' ? 'মেনু বন্ধ করো' : 'Close menu'}
             className="fixed inset-0 z-40 bg-black/30 lg:hidden"
             onClick={() => setMobileSidebarOpen(false)}
           />

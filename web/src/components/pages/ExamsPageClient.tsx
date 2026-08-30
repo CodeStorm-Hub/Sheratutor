@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
-  ArrowUpRight, BookOpen, Check, ChevronDown, ChevronRight,
+  ArrowUpRight, BookOpen, Check, ChevronRight,
   ClipboardCheck, Clock3, FileCheck2, Play, RotateCcw,
   Sparkles, Timer
 } from 'lucide-react';
@@ -17,8 +17,6 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
   const [started, setStarted] = useState(false);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [timeLeft, setTimeLeft] = useState(3 * 60 * 60); // Default 3 hours
-  const [isFullscreen, setIsFullscreen] = useState(false);
-  const [autoSavedTime, setAutoSavedTime] = useState<string | null>(null);
 
   const paper = papers[0];
   const questions = (paper?.questions || []).sort((a: any, b: any) => a.question_number - b.question_number);
@@ -33,10 +31,9 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
           if (parsed.answers && Object.keys(parsed.answers).length > 0) {
             setAnswers(parsed.answers);
             if (parsed.timeLeft) setTimeLeft(parsed.timeLeft);
-            setAutoSavedTime(parsed.savedAt ? new Date(parsed.savedAt).toLocaleTimeString() : 'Recently');
           }
         }
-      } catch (_) {}
+      } catch {}
     }
   }, [paper?.id]);
 
@@ -48,8 +45,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
           `sheratutor_sim_${paper.id}`,
           JSON.stringify({ answers, timeLeft, savedAt: new Date().toISOString() })
         );
-        setAutoSavedTime(new Date().toLocaleTimeString());
-      } catch (_) {}
+      } catch {}
     }
   }, [answers, timeLeft, started, paper?.id]);
 
@@ -71,14 +67,6 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
     setAnswers(prev => ({ ...prev, [questionId]: option }));
   };
 
-  const toggleFullscreen = () => {
-    if (typeof document === 'undefined') return;
-    if (!document.fullscreenElement) {
-      document.documentElement.requestFullscreen().then(() => setIsFullscreen(true)).catch(() => {});
-    } else {
-      document.exitFullscreen().then(() => setIsFullscreen(false)).catch(() => {});
-    }
-  };
 
   const [selectedSubject, setSelectedSubject] = useState<string>('ALL');
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('ALL');
