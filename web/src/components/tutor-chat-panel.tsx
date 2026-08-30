@@ -3,6 +3,7 @@
 import { useRef, useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
+import 'katex/dist/katex.min.css';
 import rehypeKatex from "rehype-katex";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";

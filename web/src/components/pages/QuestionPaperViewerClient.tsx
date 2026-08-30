@@ -3,6 +3,7 @@
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkMath from "remark-math";
+import 'katex/dist/katex.min.css';
 import rehypeKatex from "rehype-katex";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";

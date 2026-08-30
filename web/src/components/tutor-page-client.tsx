@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
+import 'katex/dist/katex.min.css';
 import rehypeKatex from 'rehype-katex';
 import {
   Sparkles,
