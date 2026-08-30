@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import React from 'react';
-import { cookies } from 'next/headers';
 import {
   Baloo_2,
   Baloo_Da_2,
@@ -12,10 +11,6 @@ import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { Toaster } from '@/components/ui/sonner';
-
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
 
 const baloo2 = Baloo_2({
   subsets: ['latin'],
@@ -61,17 +56,14 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function RootLayout({
+export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const cookieStore = await cookies();
-  const lang = cookieStore.get('sheratutor_lang')?.value === 'en' ? 'en' : 'bn';
-
   return (
     <html
-      lang={lang}
+      lang="bn"
       suppressHydrationWarning
       className={`${baloo2.variable} ${balooDa2.variable} ${inter.variable} ${spaceMono.variable} ${notoSansBengali.variable}`}
     >

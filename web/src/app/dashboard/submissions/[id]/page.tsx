@@ -28,17 +28,18 @@ export default async function SubmissionDetailPage({
 
   if (!submission) notFound();
 
-  const { data: results } = await supabase
-    .from('grading_results')
-    .select('*, questions(id, question_number, question_text_bn, question_text_en, max_marks)')
-    .eq('submission_id', id)
-    .order('created_at');
-
-  const { data: pages } = await supabase
-    .from('submission_pages')
-    .select('id, page_number, original_image_url, ocr_raw_text, transcription_confidence, student_flagged_mismatch')
-    .eq('submission_id', id)
-    .order('page_number');
+  const [{ data: results }, { data: pages }] = await Promise.all([
+    supabase
+      .from('grading_results')
+      .select('*, questions(id, question_number, question_text_bn, question_text_en, max_marks)')
+      .eq('submission_id', id)
+      .order('created_at'),
+    supabase
+      .from('submission_pages')
+      .select('id, page_number, original_image_url, ocr_raw_text, transcription_confidence, student_flagged_mismatch')
+      .eq('submission_id', id)
+      .order('page_number'),
+  ]);
 
   const subjectName =
     submission.question_papers?.subjects?.name_en || 'Physics';

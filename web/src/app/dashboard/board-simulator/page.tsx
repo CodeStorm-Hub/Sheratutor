@@ -5,8 +5,9 @@ import { ExamsPageClient } from '@/components/pages/ExamsPageClient';
 // See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
 export const instant = false;
 
-export default async function BoardSimulatorPage({ searchParams }: { searchParams: { paperId?: string } }) {
+export default async function BoardSimulatorPage({ searchParams }: { searchParams: Promise<{ paperId?: string }> }) {
   const supabase = await createClient();
+  const { paperId } = await searchParams;
   
   let query = supabase
     .from('question_papers')
@@ -20,8 +21,8 @@ export default async function BoardSimulatorPage({ searchParams }: { searchParam
       )
     `);
     
-  if (searchParams.paperId) {
-    query = query.eq('id', searchParams.paperId);
+  if (paperId) {
+    query = query.eq('id', paperId);
   }
   
   const { data: papers } = await query.limit(1);

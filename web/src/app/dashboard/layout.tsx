@@ -17,18 +17,19 @@ export default async function DashboardLayout({
 
   if (!user) redirect('/login');
 
-  // Fetch user profile and student profile
-  const { data: userProfile } = await supabase
-    .from('profiles')
-    .select('full_name')
-    .eq('id', user.id)
-    .maybeSingle();
-
-  const { data: studentProfile } = await supabase
-    .from('student_profiles')
-    .select('id, exam_type, academic_group, education_board, target_exam_year')
-    .eq('user_id', user.id)
-    .maybeSingle();
+  // Fetch user profile and student profile in parallel
+  const [{ data: userProfile }, { data: studentProfile }] = await Promise.all([
+    supabase
+      .from('profiles')
+      .select('full_name')
+      .eq('id', user.id)
+      .maybeSingle(),
+    supabase
+      .from('student_profiles')
+      .select('id, exam_type, academic_group, education_board, target_exam_year')
+      .eq('user_id', user.id)
+      .maybeSingle(),
+  ]);
 
   // Extract real full name
   const fullName =

@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
+import { apiError } from "@/lib/api";
 
 /**
  * GET /api/tutor-chat/sessions
@@ -11,14 +12,14 @@ export async function GET(request: Request) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  if (!user) return apiError(401, "unauthorized");
 
   const { data: profile } = await supabase
     .from("student_profiles")
     .select("id")
     .eq("user_id", user.id)
     .maybeSingle();
-  if (!profile) return NextResponse.json({ error: "complete onboarding first" }, { status: 400 });
+  if (!profile) return apiError(400, "complete onboarding first");
 
   const { searchParams } = new URL(request.url);
   const mode = searchParams.get("mode");
@@ -31,7 +32,7 @@ export async function GET(request: Request) {
       .eq("mode", "general")
       .order("updated_at", { ascending: false })
       .limit(50);
-    if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+    if (error) return apiError(500, error.message);
     return NextResponse.json({ sessions: sessions ?? [] });
   }
 
@@ -39,10 +40,11 @@ export async function GET(request: Request) {
   const questionId = searchParams.get("questionId");
   const rubricStepIndex = searchParams.get("rubricStepIndex");
 
-  if (!submissionId || !questionId || rubricStepIndex == null) {
-    return NextResponse.json(
-      { error: "pass mode=general, or submissionId+questionId+rubricStepIndex" },
-      { status: 400 }
+  const stepIndex = Number(rubricStepIndex);
+  if (!submissionId || !questionId || rubricStepIndex == null || !Number.isInteger(stepIndex) || stepIndex < 0) {
+    return apiError(
+      400,
+      "pass mode=general, or submissionId+questionId+rubricStepIndex (non-negative integer)",
     );
   }
 
@@ -52,10 +54,10 @@ export async function GET(request: Request) {
     .eq("student_id", profile.id)
     .eq("submission_id", submissionId)
     .eq("question_id", questionId)
-    .eq("rubric_step_index", Number(rubricStepIndex))
+    .eq("rubric_step_index", stepIndex)
     .eq("mode", "rubric")
     .maybeSingle();
-  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  if (error) return apiError(500, error.message);
 
   return NextResponse.json({ session: session ?? null });
 }

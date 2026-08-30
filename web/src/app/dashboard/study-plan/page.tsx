@@ -21,23 +21,22 @@ export default async function StudyPlanPage() {
     .eq('user_id', user?.id ?? '')
     .maybeSingle();
 
-  const { data: plans } = profile
-    ? await supabase
-        .from('study_plans')
-        .select('*')
-        .eq('student_id', profile.id)
-        .eq('is_active', true)
-        .order('created_at', { ascending: false })
-        .limit(1)
-    : { data: null };
-
-  const { data: weaknesses } = profile
-    ? await supabase
-        .from('weakness_logs')
-        .select('*, chapters(title_en, subjects(name_en))')
-        .eq('student_id', profile.id)
-        .order('weakness_score', { ascending: false })
-    : { data: null };
+  const [{ data: plans }, { data: weaknesses }] = profile
+    ? await Promise.all([
+        supabase
+          .from('study_plans')
+          .select('*')
+          .eq('student_id', profile.id)
+          .eq('is_active', true)
+          .order('created_at', { ascending: false })
+          .limit(1),
+        supabase
+          .from('weakness_logs')
+          .select('*, chapters(title_en, subjects(name_en))')
+          .eq('student_id', profile.id)
+          .order('weakness_score', { ascending: false }),
+      ])
+    : [{ data: null }, { data: null }];
 
   const plan = plans?.[0];
   const schedule = plan?.daily_schedule_json as { cycleDays: number; days: ScheduleDay[] } | undefined;

@@ -74,7 +74,7 @@ export const ai = genkit({
   plugins: [
     openAICompatible({
       name: "agentrouter",
-      apiKey: process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA",
+      apiKey: process.env.AGENTROUTER_API_KEY ?? "",
       baseURL: AGENTROUTER_BASE_URL,
       fetch: agentRouterFetch,
       defaultHeaders: { "User-Agent": "Cline/3.0.0" },

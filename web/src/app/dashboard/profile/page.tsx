@@ -10,17 +10,18 @@ export default async function ProfilePage() {
   const supabase = await createClient();
   const { user } = await getUser();
 
-  const { data: userProfile } = await supabase
-    .from('profiles')
-    .select('full_name')
-    .eq('id', user?.id ?? '')
-    .maybeSingle();
-
-  const { data: studentProfile } = await supabase
-    .from('student_profiles')
-    .select('*')
-    .eq('user_id', user?.id ?? '')
-    .maybeSingle();
+  const [{ data: userProfile }, { data: studentProfile }] = await Promise.all([
+    supabase
+      .from('profiles')
+      .select('full_name')
+      .eq('id', user?.id ?? '')
+      .maybeSingle(),
+    supabase
+      .from('student_profiles')
+      .select('*')
+      .eq('user_id', user?.id ?? '')
+      .maybeSingle(),
+  ]);
 
   const resolvedProfile = {
     full_name:
