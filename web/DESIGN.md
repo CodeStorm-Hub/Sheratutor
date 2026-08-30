@@ -28,7 +28,7 @@ colors:
   dark-foreground:   "#f1f5f9"
 typography:
   display:  { fontFamily: "'Baloo 2', sans-serif", var: "--font-display", weights: [600, 700] }
-  displayBn:{ fontFamily: "'Baloo Da 2', sans-serif", var: "--font-display-bn", weights: [600, 700] }
+  displayBn: { fontFamily: "'Baloo Da 2', sans-serif", var: "--font-display-bn", weights: [600, 700] }
   body:     { fontFamily: "Inter, -apple-system, sans-serif", var: "--font-body", weights: [400, 500, 600] }
   bodyBn:   { fontFamily: "'Noto Sans Bengali', sans-serif", var: "--font-body-bn", weights: [400, 600, 700] }
   label:    { fontFamily: "'Space Mono', monospace", var: "--font-mono-eyebrow", weights: [400, 700] }

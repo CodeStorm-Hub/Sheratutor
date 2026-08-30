@@ -1,6 +1,8 @@
 import { createClient } from "@/lib/supabase/server";
 import { notFound } from "next/navigation";
-import QuestionPaperViewerClient from "@/components/pages/QuestionPaperViewerClient";
+import QuestionPaperViewerClient, {
+  type Question,
+} from "@/components/pages/QuestionPaperViewerClient";
 
 // TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
 // See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
@@ -36,7 +38,9 @@ export default async function QuestionPaperPage({ params }: { params: Promise<{ 
     notFound();
   }
 
-  const sortedQuestions = (paper.questions as any[]).sort((a, b) => a.question_number - b.question_number);
+  const sortedQuestions = [...((paper.questions ?? []) as Question[])].sort(
+    (a, b) => a.question_number - b.question_number,
+  );
 
   return <QuestionPaperViewerClient paper={paper} questions={sortedQuestions} />;
 }

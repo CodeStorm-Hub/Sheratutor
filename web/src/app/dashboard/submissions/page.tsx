@@ -1,5 +1,6 @@
 import React from 'react';
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { SubmissionsPageClient, SubmissionItem } from '@/components/pages/SubmissionsPageClient';
 
 // TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
@@ -8,9 +9,7 @@ export const instant = false;
 
 export default async function SubmissionsPage() {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
   const { data: profile } = await supabase
     .from('student_profiles')

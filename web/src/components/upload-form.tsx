@@ -20,7 +20,7 @@ import { useLanguage } from "@/context/LanguageContext";
 // `supabase gen types` runs against the real project (see
 // src/lib/supabase/types.ts), so the exact join shape isn't known yet.
 type Question = { id: string; question_number: number; question_text_en: string | null };
-type Paper = {
+export type Paper = {
   id: string;
   title: string;
   subjects: { name_en: string } | { name_en: string }[] | null;
