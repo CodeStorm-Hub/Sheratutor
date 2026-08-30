@@ -6,6 +6,7 @@ import { WaitlistForm } from '@/components/waitlist-form';
 import { KhataPreview } from '@/components/khata-preview';
 import { LandingRubricDemo } from '@/components/landing-rubric-demo';
 import { StudentCount } from '@/components/landing/student-count';
+import { CopyrightYear } from '@/components/landing/copyright-year';
 import { Tag } from '@/components/Tag';
 import {
   ArrowRight,
@@ -205,7 +206,7 @@ export default async function LandingPage() {
           <div className="flex flex-col items-center gap-1.5 sm:items-start">
             <Logo tagline />
             <p className="text-xs text-muted-foreground">
-              &copy; {new Date().getFullYear()} SheraTutor &middot; {t('landing.footer_text')}
+              &copy; <CopyrightYear /> SheraTutor &middot; {t('landing.footer_text')}
             </p>
           </div>
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
