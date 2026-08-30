@@ -2,6 +2,10 @@ import React from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { GeneratePageClient } from '@/components/pages/GeneratePageClient';
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export const maxDuration = 60;
 
 export default async function GeneratePracticePaperPage() {
