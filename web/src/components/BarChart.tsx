@@ -31,7 +31,6 @@ export const BarChart: React.FC<BarChartProps> = ({ data = [20, 40, 30, 70, 50, 
 
   const fillD = `${d} L${width},150 L0,150 Z`;
 
-  const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   
   // Rotate days so today is the last day
   const today = new Date().getDay();

@@ -316,7 +316,7 @@ async function compressImage(file: File, maxDim = 1800, quality = 0.82): Promise
         quality
       );
     });
-  } catch (_) {
+  } catch {
     return file;
   }
 }

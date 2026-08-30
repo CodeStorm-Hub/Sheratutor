@@ -31,6 +31,11 @@ export default function GlobalError({
         <p style={{ fontSize: '0.875rem', color: '#94a3b8', maxWidth: '28rem' }}>
           A critical error occurred while loading the app.
         </p>
+        {error?.digest ? (
+          <p style={{ fontSize: '0.75rem', color: '#64748b', fontFamily: 'ui-monospace, monospace' }}>
+            ref: {error.digest}
+          </p>
+        ) : null}
         <button
           type="button"
           onClick={() => retry()}
