@@ -283,7 +283,9 @@ body {
    Header Component
    ========================================================================== */
 
-header {
+/* legacy dashboard header — superseded by the shadcn shell in Header.tsx.
+   Scoped to a dead class so it no longer targets the new <header>. */
+.legacy-dashboard-header {
   height: 76px;
   border-bottom: 1px solid var(--border);
   display: flex;
