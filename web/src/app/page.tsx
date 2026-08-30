@@ -14,7 +14,7 @@ import { createClient } from '@/lib/supabase/client';
 
 export default function LandingPage() {
   const { t, language } = useLanguage();
-  const [studentCount, setStudentCount] = useState(2892);
+  const [studentCount, setStudentCount] = useState<number | null>(null);
 
   useEffect(() => {
     const fetchCount = async () => {
@@ -24,10 +24,10 @@ export default function LandingPage() {
           .from('student_profiles')
           .select('*', { count: 'exact', head: true });
         if (count !== null && count > 0) {
-          setStudentCount(2892 + count);
+          setStudentCount(count);
         }
       } catch {
-        // use fallback count
+        // leave the social-proof line hidden if the count is unavailable
       }
     };
     fetchCount();
@@ -131,26 +131,28 @@ export default function LandingPage() {
             </div>
 
             {/* Community Social Proof Banner */}
-            <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
-              <span className="w-2 h-2 rounded-full bg-mint animate-pulse" />
-              <span>
-                {language === 'bn' ? (
-                  <>
-                    <strong className="text-foreground font-bold">
-                      {studentCount.toLocaleString('bn-BD')}+
-                    </strong>{' '}
-                    জন শিক্ষার্থী ইতিমধ্যে যুক্ত হয়েছে
-                  </>
-                ) : (
-                  <>
-                    <strong className="text-foreground font-bold">
-                      {studentCount.toLocaleString()}+
-                    </strong>{' '}
-                    students already practicing
-                  </>
-                )}
-              </span>
-            </div>
+            {studentCount !== null && (
+              <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
+                <span className="w-2 h-2 rounded-full bg-mint animate-pulse" />
+                <span>
+                  {language === 'bn' ? (
+                    <>
+                      <strong className="text-foreground font-bold">
+                        {studentCount.toLocaleString('bn-BD')}+
+                      </strong>{' '}
+                      জন শিক্ষার্থী ইতিমধ্যে যুক্ত হয়েছে
+                    </>
+                  ) : (
+                    <>
+                      <strong className="text-foreground font-bold">
+                        {studentCount.toLocaleString()}+
+                      </strong>{' '}
+                      students already practicing
+                    </>
+                  )}
+                </span>
+              </div>
+            )}
           </div>
 
           <div className="landing-paper-preview">

@@ -24,6 +24,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
       if (saved === 'en' || saved === 'bn') {
         setLanguageState(saved);
         document.documentElement.lang = saved;
+        // Keep the cookie in sync so the server renders <html lang> correctly.
+        document.cookie = `sheratutor_lang=${saved}; path=/; max-age=31536000; samesite=lax`;
       }
     } catch {
       // ignore in environments with restricted storage
@@ -34,6 +36,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
     setLanguageState(lang);
     try {
       localStorage.setItem('sheratutor_lang', lang);
+      document.cookie = `sheratutor_lang=${lang}; path=/; max-age=31536000; samesite=lax`;
       document.documentElement.lang = lang;
     } catch {
       // ignore
