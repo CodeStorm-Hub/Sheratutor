@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { signOut } from '@/app/actions/auth';
 import { useLanguage } from '@/context/LanguageContext';
+import { useTheme } from '@/context/ThemeContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { createClient } from '@/lib/supabase/client';
 
@@ -26,8 +27,6 @@ interface HeaderProps {
   collapsed: boolean;
   setCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  darkMode: boolean;
-  setDarkMode: (val: boolean) => void;
   userInitials?: string;
   userName?: string;
   userSub?: string;
@@ -37,8 +36,6 @@ export const Header: React.FC<HeaderProps> = ({
   collapsed,
   setCollapsed,
   setOpen,
-  darkMode,
-  setDarkMode,
   userInitials = 'ST',
   userName = 'Student',
   userSub = 'HSC · Science',
@@ -46,6 +43,7 @@ export const Header: React.FC<HeaderProps> = ({
   const pathname = usePathname();
   const router = useRouter();
   const { language, t } = useLanguage();
+  const { mounted: themeMounted, darkMode, setDarkMode } = useTheme();
   const supabase = createClient();
 
   const [profileOpen, setProfileOpen] = useState(false);
@@ -197,13 +195,15 @@ export const Header: React.FC<HeaderProps> = ({
             <kbd>{isMac ? '⌘ K' : 'Ctrl K'}</kbd>
           </button>
 
-          <button 
-            type="button" 
-            className="round-btn theme-icon" 
+          <button
+            type="button"
+            className="round-btn theme-icon"
             onClick={() => setDarkMode(!darkMode)}
             aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            suppressHydrationWarning
           >
-            {darkMode ? <Sun size={17} /> : <Moon size={17} />}
+            {/* Gate on mount: the resolved theme is unknown during SSR. */}
+            {themeMounted && darkMode ? <Sun size={17} /> : <Moon size={17} />}
           </button>
 
           <div style={{ position: 'relative' }} ref={notifRef}>
@@ -331,7 +331,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <div style={{ padding: '24px 16px', textAlign: 'center', color: 'var(--muted-foreground)', fontSize: 13 }}>{t('common.search_empty')}</div>
               ) : (
                 filteredLinks.map((item) => (
-                  <div key={item.href} className="search-result-item" onClick={() => { setSearchOpen(false); router.push(item.href); }}>
+                  <div key={item.href} className="search-result-item" onClick={() => { setSearchOpen(false); router.push(item.href as Route); }}>
                     <div className="search-item-icon"><item.icon size={17} /></div>
                     <div style={{ flex: 1, minWidth: 0 }}>
                       <b>{item.label}</b>

@@ -3,7 +3,6 @@
 import React, { useState } from 'react';
 import { Sidebar } from '@/components/Sidebar';
 import { Header } from '@/components/Header';
-import { useTheme } from '@/context/ThemeContext';
 
 export const ClientShell: React.FC<{
   children: React.ReactNode;
@@ -13,14 +12,12 @@ export const ClientShell: React.FC<{
 }> = ({ children, userName, userSub, userInitials }) => {
   const [open, setOpen] = useState(false);
   const [collapsed, setCollapsed] = useState(false);
-  const { darkMode, setDarkMode } = useTheme();
 
+  // Theme is applied by next-themes on <html> (the legacy `.dark` descendant
+  // selectors match from there); no need to mirror it onto `.app`, which would
+  // only reintroduce a hydration mismatch.
   return (
-    <div
-      className={`app ${darkMode ? 'dark ' : ''}${
-        collapsed ? 'nav-collapsed' : ''
-      }`.trim()}
-    >
+    <div className={`app ${collapsed ? 'nav-collapsed' : ''}`.trim()}>
       {/* Mobile Drawer Backdrop */}
       {open && (
         <div
@@ -43,8 +40,6 @@ export const ClientShell: React.FC<{
             collapsed={collapsed}
             setCollapsed={setCollapsed}
             setOpen={setOpen}
-            darkMode={darkMode}
-            setDarkMode={setDarkMode}
             userInitials={userInitials}
             userName={userName}
             userSub={userSub}
