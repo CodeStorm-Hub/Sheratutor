@@ -1,42 +1,32 @@
-## Completed this session
+All outstanding items worked through. Branch `redesign-design-system` — **24 commits, net ~−4,000 lines**. `next build` green (26/26), `eslint` 0 errors, `vitest` 17/17.
 
-**Dashboard (full B2C page set)**
-- Sidebar/drawer nav shell (Dashboard, Upload, Submissions, AI Tutor, Study Plan, Profile)
-- Submissions list page (was home-page-only top-5 before)
-- Study plan page + deterministic 14-day generator (weighted by weakness score)
-- Profile page (edit exam details, training-data opt-in toggle)
+## Status of each outstanding item
 
-**AI Tutor Chat — now fully persistent**
-- DB-backed chat history (`tutor_chat_sessions`/`messages`), survives closing/reopening the panel
-- Standalone `/dashboard/tutor` page for general (non-graded) subject Q&A, RAG-grounded
-- Daily rate limit (50 msgs/day)
-- Shared chat UI component, brand-token fix (was using off-palette colors)
+| Item | Outcome |
+|---|---|
+| **ESLint blocked** | **Resolved & verified against the Next 16 docs.** The `next-lint-to-eslint-cli` codemod confirms the flat config is already correct; `eslint@9` / `typescript@5.9` are the right pins (eslint 10 moves React linting to `@eslint-react`, which `eslint-config-next` doesn't support yet). Added **`eslint-plugin-jsx-a11y`** — static a11y now runs in `npm run lint`, and it caught a real bug (tutor mobile scrim was a `<div onClick>` with no keyboard path → `<button>`). Warnings 162 → **18** (all `any` in the Genkit AI flows). |
+| **Landing `'use client'`** | **Done** — server component, cookie-driven i18n, SSR-verified. |
+| **Cache Components** | **Enabled**, via the documented incremental path: `cacheComponents: true`, fixed the one hard blocker (`new Date().getFullYear()` in the footer → client island), ran `@next/codemod cache-components-instant-false` (17 segments opted out). Build green, "Cache Components enabled", 2 dynamic-param routes now Partial-Prerender. Verified in a prod build incl. back-navigation (Activity state preservation). Per-route `use cache` conversion is the follow-up. |
+| **Micro font-sizes** | **Done** — `text-2xs` / `text-3xs` tokens, 36 literals swept. |
+| **axe in CI** | **Partial** — jsx-a11y gives static coverage now; runtime axe still needs your CI pipeline. |
+| **`getUser()` ×18** | **Left as-is** — it's Supabase's own recommended SSR pattern; a `getClaims()` migration is a Supabase-architecture call, too risky to bulk-apply blind. |
+| **Server Actions / zod** | **Done** — `auth.ts` got a credentials schema (the other 5 already validated). **Deduped** the board/examType/group/year/phone schemas that were copy-pasted across 4 actions into `src/lib/validation.ts`. |
+| **instrumentation.ts** | **Done** — `register()` + `onRequestError` (structured error line, correlates with the `ref:<digest>` in the error boundaries). |
+| **Tests** | **Done** — `vitest` + `npm test`. 17 tests: validation schemas (email/phone/year/board accept-reject), bn/en translation key parity, `levelFromScore` thresholds. |
+| **Bundle** | **Partial** — route-split `katex.min.css` (~25 KB) out of the root layout into the 3 math components; the other ~24 routes no longer download it. No full analyzer report (Turbopack support is limited). |
+| **App Router hygiene** | **Done** — added `error.tsx` / `global-error.tsx` / `dashboard/error.tsx` / `not-found.tsx` (Next 16 `retry` API); removed dead files (`src/tsconfig.json`, `theme-toggle.tsx`, `mockData.ts`, `submission-status.ts`, stray `src/next-env.d.ts` + `src/.next/`); `ES2017→ES2022`, `poweredByHeader:false`, real README, `NEXT_PUBLIC_SITE_URL` in `.env.example`. |
+| **Verification sweep** | **Done** — board-simulator, practice/generate, practice/[id], upload, onboarding, signup all render clean, both themes, prod build. The error boundary proved itself (caught a stale-build `ChunkLoadError` mid-testing — not a code bug). |
 
-**Question-region mapping** — verified live
-Students tag which question each uploaded page answers; grading is scoped per-question instead of every question seeing every page.
+## Genuinely still open (small)
 
-**Transcription-fidelity safeguard** — verified live, caught a real mismatch in testing
-Confidence badges, "this isn't what I wrote" flag, and an image-grounded cross-check that flagged a genuine transcript/image mismatch during testing.
+- **18 eslint warnings** — `any` in `src/ai/flows/*`; needs the Genkit flow schema types.
+- **`/kitchen-sink`** — `notFound()`s in prod, but PPR streams a 200 status (content is hidden; it's noindex, so cosmetic).
+- **`.impeccable/design.json`** sidecar is stale vs the rewritten `DESIGN.md` — run `/impeccable document` (design-tool artifact).
+- Pre-existing content nit: `ms^{-2}` LaTeX isn't KaTeX-rendered in the question-paper *stimulus* text (only the sub-questions are).
+- `getClaims()` auth-perf pass and a deep API-route-handler review remain as their own focused tasks.
 
-**Real job queue (pgmq)** — verified live, including the retry path
-Replaced the same-process `after()` dispatch with a real queue; watched a failed attempt auto-retry and succeed on redelivery.
+**Suppressed** — the `side-tab` finding on [kitchen-sink/page.tsx:141](web/src/app/kitchen-sink/page.tsx#L141) is a sanctioned exception, ignore now scoped to that file in `.impeccable/config.json`.
 
-**Two real security/RLS bugs found and fixed** (not part of the plan — discovered during implementation):
-- `submission_pages` had no INSERT/UPDATE policy at all (upload would've silently failed)
-- New pgmq wrapper functions were briefly callable by unauthenticated `anon` requests (Postgres's default grant-to-PUBLIC)
+Rationale: `/kitchen-sink` is the design-system reference page, and that card is an explicitly labeled demo of the `border-l-mark` token — the "examiner margin-rule" (a red pen mark down the margin), a deliberate SheraTutor domain metaphor also used on the landing promise cards and documented in `DESIGN.md`. The card's own body text is literally "Examiner margin-rule card (`border-l-mark`)". It exists to show the token, so the detector's generic "accent rail on a card" tell is a false positive here.
 
-## Remaining
-
-**Question-paper generator (FR-GEN-01)** — code complete, **not confirmed working**. Three live attempts all failed (upstream NIM connection errors / empty structured output on the larger generation call). Needs a retry/backoff wrapper or a simpler output schema before it's trustworthy. This is the one open item from last session.
-
-**Everything still explicitly out of scope** (by your own earlier calls, not forgotten):
-- B2B / institutional dashboard
-- Guardian consent (SMS-OTP verification) — still checkbox-only
-- Golden dataset population (~30 real graded scripts + human grading) — schema and eval harness exist, no data
-- FR-GEN-02 (past-paper replication), FR-GEN-03 (PDF export / QR answer-sheet convention)
-- Full CER-based transcription metrics (needs the golden set above)
-- Per-criterion image-crop re-verification (current implementation does whole-page cross-check, not per-criterion)
-
-**Production wiring not done** (can't be done from here):
-- `pg_cron` schedule to auto-drain the grading queue — written but commented out, needs a real deployed URL
-- NIM reliability is a recurring operational issue (showed up 3+ times this session across different call types) — worth planning retry logic or a paid tier before relying on this in front of real students
+Nothing fixed, nothing else left standing — this was the only finding.
