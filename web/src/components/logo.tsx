@@ -9,33 +9,21 @@ export function Logo({
   tagline?: boolean;
 }) {
   return (
-    <div
-      className={cn(
-        'brand',
-        'inline-flex items-center gap-2 select-none',
-        className
-      )}
-      style={{ padding: 0 }}
-    >
-      <div className="brand-mark">
-        <span />
-        <span />
-        <span />
-      </div>
-      <span className="text-foreground" style={{ font: "700 22px 'Baloo 2', sans-serif", letterSpacing: '-0.3px', color: 'var(--foreground)' }}>
-        Shera<span style={{ color: 'var(--coral)' }}>Tutor</span>
+    <div className={cn('inline-flex items-center gap-2 select-none', className)}>
+      <span
+        aria-hidden
+        className="flex size-[30px] shrink-0 -rotate-3 items-end gap-[2px] rounded-lg bg-navy p-1.5"
+      >
+        <span className="h-[9px] w-[5px] rounded-sm bg-surface-1" />
+        <span className="h-[15px] w-[5px] rounded-sm bg-sun" />
+        <span className="h-[19px] w-[5px] rounded-sm bg-coral" />
+      </span>
+      <span className="font-heading text-[22px] leading-none font-bold tracking-tight text-foreground">
+        Shera<span className="text-coral">Tutor</span>
       </span>
       {tagline && (
-        <span
-          className="logo-tagline"
-          style={{
-            fontSize: 10,
-            color: 'var(--muted-foreground)',
-            fontFamily: 'Space Mono',
-            marginLeft: 4,
-          }}
-        >
-          HSC & SSC
+        <span className="ml-1 hidden font-mono text-[10px] text-muted-foreground sm:inline">
+          HSC &amp; SSC
         </span>
       )}
     </div>
