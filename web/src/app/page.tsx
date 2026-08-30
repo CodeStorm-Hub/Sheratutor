@@ -76,25 +76,25 @@ export default function LandingPage() {
   ];
 
   return (
-    <div className="landing-container">
+    <div className="flex min-h-dvh w-full flex-col overflow-x-hidden bg-surface-1">
       {/* Sticky Header */}
-      <header className="landing-header">
+      <header className="flex w-full items-center justify-between gap-2.5 border-b border-border px-6 py-4">
         <Logo tagline />
-        <div className="landing-nav-actions">
+        <div className="flex shrink-0 items-center gap-2">
           <LanguageToggle />
-          <Link href="/login" className="landing-signin-btn">
+          <Link href="/login" className="whitespace-nowrap px-2.5 py-1.5 text-xs font-semibold text-navy hover:text-cta">
             {t('common.sign_in')}
           </Link>
-          <Link href="/dashboard" className="primary-btn landing-cta-btn">
+          <Link href="/dashboard" className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg bg-cta px-3.5 py-2 text-xs font-semibold text-cta-foreground transition-colors hover:opacity-90">
             <span>{t('common.open_workspace')}</span> <ArrowRight size={14} />
           </Link>
         </div>
       </header>
 
-      <main className="landing-main">
+      <main className="mx-auto flex w-full max-w-[1240px] flex-1 flex-col items-center px-6">
         {/* Hero Section */}
-        <section className="landing-hero">
-          <div className="landing-hero-left">
+        <section className="grid w-full items-center gap-10 py-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="flex w-full flex-col items-start gap-4">
             <div className="flex items-center gap-2">
               <Tag color="sun">{t('landing.badge')}</Tag>
               <span className="font-mono text-xs text-muted-foreground font-bold">
@@ -102,14 +102,14 @@ export default function LandingPage() {
               </span>
             </div>
 
-            <h1 className="landing-hero-title">
+            <h1 className="font-heading text-[clamp(1.5rem,5.2vw,2.625rem)] leading-tight font-extrabold tracking-tight break-words text-navy">
               {t('landing.hero_title_1')}{' '}
               <span className="text-coral block sm:inline">
                 {t('landing.hero_title_2')}
               </span>
             </h1>
 
-            <p className="landing-hero-desc">
+            <p className="max-w-[520px] text-[clamp(0.875rem,3.2vw,1.25rem)] leading-relaxed text-muted-foreground">
               {t('landing.hero_desc')}
             </p>
 
@@ -155,7 +155,7 @@ export default function LandingPage() {
             )}
           </div>
 
-          <div className="landing-paper-preview">
+          <div className="flex w-full items-center justify-center overflow-hidden">
             <KhataPreview className="w-full max-w-sm drop-shadow-sm" />
           </div>
         </section>
@@ -188,9 +188,9 @@ export default function LandingPage() {
             </h2>
           </div>
 
-          <div className="landing-cards-grid">
+          <div className="grid w-full gap-4 pb-10 sm:grid-cols-2 lg:grid-cols-3">
             {howItWorks.map((step) => (
-              <div key={step.title} className="landing-feature-card bg-card text-card-foreground border border-border rounded-2xl p-6 flex flex-col gap-3 shadow-xs">
+              <div key={step.title} className="flex flex-col gap-3 rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-xs">
                 <div className="flex items-center justify-between">
                   <span className="font-mono text-xs font-bold text-primary bg-primary/15 px-2.5 py-1 rounded-full">
                     {step.stepNum}
@@ -210,9 +210,9 @@ export default function LandingPage() {
 
         {/* Value Proposition Cards (Examiner Margin Rule) */}
         <section className="w-full py-6 flex flex-col gap-6">
-          <div className="landing-cards-grid">
+          <div className="grid w-full gap-4 pb-10 sm:grid-cols-2 lg:grid-cols-3">
             {valueProps.map((card) => (
-              <div key={card.title} className="landing-promise-card bg-card text-card-foreground border border-border rounded-2xl p-6 flex flex-col gap-3 shadow-xs">
+              <div key={card.title} className="flex flex-col gap-3 rounded-r-2xl border border-l-2 border-border border-l-mark bg-card p-6 text-card-foreground shadow-xs">
                 <div className="flex items-center justify-between mb-1">
                   <span className="font-mono text-xs font-bold text-destructive uppercase tracking-wider">
                     {card.eyebrow}
@@ -263,7 +263,7 @@ export default function LandingPage() {
       </main>
 
       {/* Trust & Rich Footer */}
-      <footer className="landing-footer">
+      <footer className="flex w-full flex-wrap items-center justify-between gap-3 border-t border-border px-6 py-6 text-xs text-muted-foreground">
         <div className="w-full max-w-[1240px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 py-4">
           <div className="flex flex-col items-center sm:items-start gap-1.5">
             <Logo tagline />

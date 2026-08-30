@@ -9,9 +9,6 @@ import {
   Noto_Sans_Bengali,
 } from 'next/font/google';
 import './globals.css';
-import '@/styles.css';
-import '@/pages.css';
-import '@/layout-fixes.css';
 import 'katex/dist/katex.min.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/context/LanguageContext';
