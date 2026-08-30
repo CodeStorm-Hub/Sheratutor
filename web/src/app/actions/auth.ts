@@ -1,5 +1,6 @@
 "use server";
 
+import type { Route } from "next";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 
@@ -42,7 +43,8 @@ export async function signInWithGoogle() {
   });
 
   if (error || !data.url) redirect("/login?error=oauth");
-  redirect(data.url);
+  // Supabase returns an absolute external OAuth URL, which typedRoutes can't model.
+  redirect(data.url as Route);
 }
 
 export async function signOut() {

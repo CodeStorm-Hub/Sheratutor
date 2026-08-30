@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import type { Route } from 'next';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
@@ -111,7 +112,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             ) : (
               <Link
                 key={`${item.label}-${item.href}`}
-                href={item.href || '#'}
+                href={(item.href || '#') as Route}
                 className={isNavActive(item.href) ? 'active' : ''}
                 onClick={() => setOpen(false)}
               >

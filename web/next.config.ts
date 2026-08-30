@@ -1,8 +1,8 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  // `typedRoutes: true` is the target but currently surfaces type errors on
-  // the app's many `href={string}` call sites — enable once those are typed.
+  // Statically-typed <Link href> / router calls (stable in Next 16).
+  typedRoutes: true,
 
   images: {
     formats: ['image/avif', 'image/webp'],
