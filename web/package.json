@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "eval:golden-set": "tsx scripts/eval-golden-set.ts",
-    "reembed:nim": "tsx --env-file=.env.local scripts/reembed-nim.ts"
+    "reembed:nim": "tsx --env-file=.env.local scripts/reembed-nim.ts",
+    "test:chat": "tsx --env-file=.env.local scripts/test-tutor-chat.ts",
+    "test:grounding": "tsx --env-file=.env.local scripts/test-general-chat.ts"
   },
   "dependencies": {
     "@genkit-ai/compat-oai": "^1.41.0",

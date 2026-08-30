@@ -18,7 +18,10 @@ const eslintConfig = defineConfig([
     // (bg-cta / text-muted-foreground / border-border …), never a raw literal.
     // globals.css owns every hex; components reference tokens only.
     files: ["src/**/*.tsx", "src/**/*.ts"],
-    ignores: ["src/components/ui/**"], // vendored shadcn primitives
+    ignores: [
+      "src/components/ui/**", // vendored shadcn primitives
+      "src/app/global-error.tsx", // runs without the stylesheet — inline literals are correct
+    ],
     rules: {
       // Pre-existing debt (mostly in src/ai/flows) — visible as warnings so
       // `next lint` still passes; tighten to "error" as they're paid down.
