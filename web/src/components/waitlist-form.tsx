@@ -156,7 +156,7 @@ export function WaitlistForm() {
         />
       </div>
 
-      <div className="waitlist-exam-row">
+      <div className="grid w-full grid-cols-2 gap-2.5">
         <div>
           <label
             htmlFor="examType"
@@ -282,7 +282,7 @@ export function WaitlistForm() {
       <button
         type="submit"
         disabled={pending}
-        className="primary-btn w-full justify-center py-3 text-sm mt-1 font-semibold shadow-sm cursor-pointer"
+        className="mt-1 inline-flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-cta px-4 py-3 text-sm font-semibold text-cta-foreground shadow-sm transition-colors hover:opacity-90 disabled:opacity-60"
       >
         {pending ? t('form.submitting') : t('form.submit_btn')} <ArrowRight size={16} />
       </button>
