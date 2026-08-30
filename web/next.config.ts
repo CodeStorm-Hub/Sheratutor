@@ -14,10 +14,12 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // NOTE: Cache Components (`cacheComponents: true` + `'use cache'`) is the
-  // intended target per AGENTS.md, but every Supabase-backed page reads
-  // `cookies()`/auth and would need explicit `'use cache'` / Suspense
-  // boundaries first. Tracked as a follow-up, not enabled here.
+  // Cache Components: PPR + `use cache` unified. Data is dynamic by default;
+  // routes opt into caching. Enabled with per-route validation deferred via
+  // `export const instant = false` on each segment (the documented incremental
+  // path) — convert routes to `use cache` / <Suspense> one at a time.
+  // Guide: node_modules/next/dist/docs/01-app/02-guides/migrating-to-cache-components.md
+  cacheComponents: true,
 };
 
 export default nextConfig;
