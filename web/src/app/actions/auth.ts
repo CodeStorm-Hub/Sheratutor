@@ -1,16 +1,11 @@
 "use server";
 
 import type { Route } from "next";
-import { z } from "zod";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { credentials as CredentialsSchema } from "@/lib/validation";
 
 export type AuthState = { status: "idle" | "error"; message?: string };
-
-const CredentialsSchema = z.object({
-  email: z.string().email("Enter a valid email address."),
-  password: z.string().min(8, "Password must be at least 8 characters."),
-});
 
 export async function signUpWithEmail(_prev: AuthState, formData: FormData): Promise<AuthState> {
   const parsed = CredentialsSchema.safeParse({
