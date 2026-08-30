@@ -33,7 +33,7 @@
 .dark .sidebar-bottom > button:hover,
 .dark .sidebar-bottom > a:hover {
   color: var(--foreground, var(--foreground));
-  background: var(--muted, #1c2b23);
+  background: var(--muted, var(--surface-2));
 }
 
 .sidebar nav button.active,
@@ -41,7 +41,7 @@
 .sidebar-bottom > button.active,
 .sidebar-bottom > a.active {
   background: var(--foreground);
-  color: #fff;
+  color: var(--cta-foreground);
   box-shadow: 0 5px 12px rgba(20, 37, 31, 0.08);
 }
 
@@ -50,7 +50,7 @@
   font: 700 8px 'Space Mono', monospace;
   font-style: normal;
   color: var(--color-red-soft, var(--red-wash));
-  background: #ffedea;
+  background: var(--coral-wash);
   padding: 3px 5px;
   border-radius: 0.36rem;
   margin-left: auto;
@@ -110,7 +110,7 @@
   border: 1px solid var(--border);
   border-radius: 1.08rem;
   padding: 18px;
-  background: #fff;
+  background: var(--surface-1);
 }
 
 .chapter-list h3,
@@ -133,7 +133,7 @@
 }
 
 .chapter-item:hover {
-  background: #f4f6fb;
+  background: var(--surface-2);
 }
 
 .chapter-item span {
@@ -148,7 +148,7 @@
 }
 
 .chapter-item.active {
-  background: #eafff8;
+  background: var(--surface-2);
   color: var(--foreground);
   font-weight: 600;
 }
@@ -188,7 +188,7 @@
   display: flex;
   flex-direction: column;
   padding: 18px;
-  background: #fff;
+  background: var(--surface-1);
 }
 
 .tutor-top {
@@ -247,7 +247,7 @@
 .equation {
   display: inline-block;
   background: var(--background);
-  border: 1px solid #eceef3;
+  border: 1px solid var(--border);
   border-radius: 0.6rem;
   padding: 10px 14px;
   font: 14px 'Space Mono', monospace;
@@ -282,8 +282,8 @@
 }
 
 .suggestions button {
-  border: 1px solid #e4e7ef;
-  background: white;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
   border-radius: 1.08rem;
   padding: 7px 12px;
   color: var(--color-ink-soft, var(--muted-foreground));
@@ -299,7 +299,7 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  background: #fff;
+  background: var(--surface-1);
 }
 
 .tutor-input input {
@@ -314,7 +314,7 @@
 
 .tutor-input button {
   border: 0;
-  background: #f4f5f9;
+  background: var(--surface-2);
   border-radius: 0.6rem;
   width: 34px;
   height: 34px;
@@ -327,7 +327,7 @@
 
 .tutor-input button.send {
   background: var(--cta);
-  color: #fff;
+  color: var(--cta-foreground);
 }
 
 /* ==========================================================================
@@ -385,14 +385,14 @@
 
 .grade-step.current > span {
   background: var(--cta);
-  color: #fff;
+  color: var(--cta-foreground);
   border: 0;
 }
 
 .paper-view {
   border: 1px solid var(--border);
   border-radius: 1.08rem;
-  background: #f5f6fb;
+  background: var(--surface-2);
   overflow: hidden;
   padding: 14px;
 }
@@ -414,7 +414,7 @@
 
 .viewer-tools button {
   border: 0;
-  background: #fff;
+  background: var(--surface-1);
   width: 24px;
   height: 24px;
   border-radius: 0.48rem;
@@ -555,7 +555,7 @@
 .subject-ranks i {
   grid-column: 1 / 3;
   height: 4px;
-  background: #edf0f4;
+  background: var(--surface-2);
   border-radius: 0.36rem;
 }
 
@@ -602,8 +602,8 @@
 }
 
 .filter-row button {
-  border: 1px solid #e3e6ed;
-  background: #fff;
+  border: 1px solid var(--border);
+  background: var(--surface-1);
   border-radius: 0.6rem;
   padding: 8px 12px;
   display: flex;
@@ -633,7 +633,7 @@
   border-radius: 1.08rem;
   padding: 18px;
   min-height: 230px;
-  background: #fff;
+  background: var(--surface-1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -650,17 +650,17 @@
 }
 
 .exam-icon.i0 {
-  background: #ffebe8;
+  background: var(--coral-wash);
   color: var(--mark-deduction);
 }
 
 .exam-icon.i1 {
-  background: #e5fbf4;
+  background: var(--surface-2);
   color: var(--color-green, var(--primary));
 }
 
 .exam-icon.i2 {
-  background: #fff5d9;
+  background: var(--coral-wash);
   color: var(--warning);
 }
 
@@ -687,7 +687,7 @@
 
 .exam-grid article > div:last-child button {
   border: 0;
-  background: #f4f5f9;
+  background: var(--surface-2);
   border-radius: 0.6rem;
   padding: 7px 10px;
   display: flex;
@@ -750,7 +750,7 @@
   justify-self: center;
   width: 230px;
   height: 285px;
-  background: #fffdfa;
+  background: var(--surface-1);
   box-shadow: 12px 12px 0 var(--color-ochre-soft, var(--coral-wash));
   padding: 26px;
   display: flex;
@@ -784,7 +784,7 @@
 }
 
 .exam-screen {
-  background: #f7f5f1;
+  background: var(--surface-2);
   min-height: 100vh;
   margin: 0 -42px -42px;
   padding-bottom: 40px;
@@ -792,7 +792,7 @@
 
 .exam-screen header {
   padding: 0 42px;
-  background: #fff;
+  background: var(--surface-1);
 }
 
 .exam-logo {
@@ -816,7 +816,7 @@
 
 .exam-screen header button {
   border: 1px solid var(--color-ink-soft, var(--muted-foreground));
-  background: #fff;
+  background: var(--surface-1);
   border-radius: 0.6rem;
   padding: 7px 12px;
   font: 12px var(--font-sans), sans-serif;
@@ -825,7 +825,7 @@
 
 .exam-paper {
   max-width: 730px;
-  background: #fff;
+  background: var(--surface-1);
   margin: 40px auto;
   padding: 50px 60px;
   box-shadow: 0 9px 30px rgba(20, 37, 31, 0.05);
@@ -855,8 +855,8 @@
 
 .mcq {
   width: 100%;
-  border: 1px solid var(--border, #e2e8f0);
-  background: var(--card, #fff);
+  border: 1px solid var(--border, var(--border));
+  background: var(--card, var(--surface-1));
   border-radius: 0.6rem;
   padding: 12px 14px;
   text-align: left;
@@ -874,7 +874,7 @@
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: #f2f3f7;
+  background: var(--surface-2);
   margin-right: 12px;
   font: 11px 'Space Mono', monospace;
   flex-shrink: 0;
@@ -891,7 +891,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 18px 22px;
-  background: #fff;
+  background: var(--surface-1);
   gap: 16px;
 }
 
@@ -938,13 +938,13 @@
 }
 
 .calendar-strip .done {
-  background: #e4f9f1;
+  background: var(--surface-2);
   color: var(--color-green, var(--primary));
 }
 
 .calendar-strip .today {
   background: var(--foreground);
-  color: #fff;
+  color: var(--cta-foreground);
 }
 
 .planner-grid {
@@ -960,7 +960,7 @@
   border: 1px solid var(--border);
   border-radius: 1.08rem;
   padding: 22px;
-  background: #fff;
+  background: var(--surface-1);
 }
 
 .planner-tasks h2 {
@@ -972,7 +972,7 @@
   display: flex;
   align-items: center;
   padding: 13px 0;
-  border-bottom: 1px solid #eff0f4;
+  border-bottom: 1px solid var(--border);
   gap: 12px;
 }
 
@@ -981,8 +981,8 @@
   border-radius: 0.48rem;
   width: 26px;
   height: 26px;
-  background: #fff;
-  color: #fff;
+  background: var(--surface-1);
+  color: var(--cta-foreground);
   display: grid;
   place-items: center;
   cursor: pointer;
@@ -1071,7 +1071,7 @@
 
 .mistake-summary {
   background: var(--foreground);
-  color: #fff;
+  color: var(--cta-foreground);
   border-radius: 1.08rem;
   padding: 28px;
   display: flex;
@@ -1116,17 +1116,17 @@
 
 .mistake-orbit small {
   font-size: 12px;
-  color: var(--muted, #64748b);
+  color: var(--muted, var(--muted-foreground));
 }
 
 .mistake-row {
   display: flex;
   align-items: center;
-  border: 1px solid var(--border, #e2e8f0);
+  border: 1px solid var(--border, var(--border));
   border-radius: 0.84rem;
   padding: 16px 18px;
   margin: 10px 0;
-  background: var(--card, #fff);
+  background: var(--card, var(--surface-1));
   gap: 12px;
 }
 
@@ -1162,7 +1162,7 @@
 .mistake-row small {
   display: block;
   font-size: 12px;
-  color: var(--muted, #64748b);
+  color: var(--muted, var(--muted-foreground));
   margin-top: 2px;
 }
 
@@ -1191,11 +1191,11 @@
   border: 1px solid var(--border);
   border-radius: 1.08rem;
   padding: 20px;
-  background: #fff;
+  background: var(--surface-1);
 }
 
 .result-feature {
-  background: #eefff9 !important;
+  background: var(--surface-2) !important;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1249,7 +1249,7 @@
    ========================================================================== */
 
 .achievement-hero {
-  background: #fff5df;
+  background: var(--coral-wash);
   border-radius: 1.08rem;
   padding: 28px 36px;
   display: flex;
@@ -1304,7 +1304,7 @@
   border-radius: 1.08rem;
   padding: 18px;
   min-height: 190px;
-  background: #fff;
+  background: var(--surface-1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1352,7 +1352,7 @@
 .settings-layout aside button {
   width: 100%;
   border: 0;
-  background: #fff;
+  background: var(--surface-1);
   padding: 10px 12px;
   text-align: left;
   border-radius: 0.6rem;
@@ -1366,7 +1366,7 @@
 }
 
 .settings-layout aside button.active {
-  background: #f1f2f7;
+  background: var(--surface-2);
   color: var(--foreground);
   font-weight: 600;
 }
@@ -1404,7 +1404,7 @@
 
 .profile-edit button {
   border: 1px solid var(--color-ink-soft, var(--muted-foreground));
-  background: #fff;
+  background: var(--surface-1);
   border-radius: 0.6rem;
   padding: 8px 12px;
   font: 12px var(--font-sans), sans-serif;
@@ -1428,7 +1428,7 @@
   margin-top: 7px;
   padding: 10px 12px;
   font: 13px var(--font-sans), sans-serif;
-  background: #fff;
+  background: var(--surface-1);
   color: var(--foreground);
   box-sizing: border-box;
 }
