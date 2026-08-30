@@ -29,6 +29,8 @@ interface SubmissionsClientProps {
   latestId?: string;
 }
 
+const cardClass = 'rounded-2xl border border-border bg-surface-1 p-5';
+
 export function SubmissionsPageClient({
   submissions,
   latestTitle,
@@ -49,108 +51,108 @@ export function SubmissionsPageClient({
     <>
       <PageHeader
         title={t('nav.results')}
-        description={language === 'bn' ? 'তোমার প্রতিটি অনুশীলনের বিস্তারিত মূল্যায়ন ও ফলাফল।' : 'Every practice session, made visible.'}
+        description={
+          language === 'bn'
+            ? 'তোমার প্রতিটি অনুশীলনের বিস্তারিত মূল্যায়ন ও ফলাফল।'
+            : 'Every practice session, made visible.'
+        }
       >
-        <Link href="/dashboard/upload" className="primary-btn">
+        <Link
+          href="/dashboard/upload"
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-cta px-4 py-2.5 text-xs font-semibold text-cta-foreground shadow-xs transition-colors hover:opacity-90"
+        >
           <Upload size={15} /> {language === 'bn' ? 'নতুন খাতা জমা দিন' : 'Upload answer sheet'}
         </Link>
       </PageHeader>
 
-      <div className="results-grid">
-        <article className="result-feature">
-          <Tag color="mint">{language === 'bn' ? 'সর্বশেষ মূল্যায়ন' : 'LATEST ASSESSMENT'}</Tag>
-          <h2>{latestTitle}</h2>
-          <div className="result-number">
-            {latestScore}
-            <span>/{latestMax}</span>
+      <div className="grid gap-4 lg:grid-cols-[0.85fr_1.2fr_0.9fr]">
+        <article className="flex flex-col justify-between rounded-2xl border border-border bg-surface-2 p-5">
+          <div>
+            <Tag color="mint">{language === 'bn' ? 'সর্বশেষ মূল্যায়ন' : 'LATEST ASSESSMENT'}</Tag>
+            <h2 className="mt-4 font-heading text-xl font-bold">{latestTitle}</h2>
+            <div className="mt-3 mb-1 font-mono text-[42px] leading-none font-bold tracking-[-0.06em]">
+              {latestScore}
+              <span className="text-sm tracking-normal text-muted-foreground">/{latestMax}</span>
+            </div>
+            <p className="mb-3.5 text-xs text-green">
+              {language === 'bn' ? 'পূর্ববর্তী মূল্যায়নের চেয়ে +৯ নম্বর বৃদ্ধি' : '+9 marks from your previous assessment'}
+            </p>
           </div>
-          <p>{language === 'bn' ? 'পূর্ববর্তী মূল্যায়নের চেয়ে +৯ নম্বর বৃদ্ধি' : '+9 marks from your previous assessment'}</p>
-          {latestId ? (
-            <Link
-              href={`/dashboard/submissions/${latestId}`}
-              className="dark-wide"
-              style={{ display: 'flex', alignItems: 'center' }}
-            >
-              {language === 'bn' ? 'সম্পূর্ণ ফলাফল দেখুন' : 'See full result'} <ChevronRight size={15} />
-            </Link>
-          ) : (
-            <Link
-              href="/dashboard/upload"
-              className="dark-wide"
-              style={{ display: 'flex', alignItems: 'center' }}
-            >
-              {language === 'bn' ? 'উত্তরপত্র জমা দিন' : 'Submit a paper'} <ChevronRight size={15} />
-            </Link>
-          )}
+          <Link
+            href={latestId ? `/dashboard/submissions/${latestId}` : '/dashboard/upload'}
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-cta px-4 py-2.5 text-xs font-semibold text-cta-foreground transition-colors hover:opacity-90"
+          >
+            {latestId
+              ? language === 'bn'
+                ? 'সম্পূর্ণ ফলাফল দেখুন'
+                : 'See full result'
+              : language === 'bn'
+                ? 'উত্তরপত্র জমা দিন'
+                : 'Submit a paper'}
+            <ChevronRight size={15} />
+          </Link>
         </article>
 
-        <article className="score-history">
-          <h3>{language === 'bn' ? 'স্কোর ইতিহাস' : 'Score history'}</h3>
+        <article className={cardClass}>
+          <h3 className="mb-3 font-heading text-[17px] font-bold">
+            {language === 'bn' ? 'স্কোর ইতিহাস' : 'Score history'}
+          </h3>
           <BarChart />
         </article>
 
-        <article className="subject-ranks">
-          <h3>{language === 'bn' ? 'বিষয়ভিত্তিক অগ্রগতি' : 'Subject performance'}</h3>
+        <article className={cardClass}>
+          <h3 className="mb-3 font-heading text-[17px] font-bold">
+            {language === 'bn' ? 'বিষয়ভিত্তিক অগ্রগতি' : 'Subject performance'}
+          </h3>
           {mockSubjects.map((x) => (
-            <div key={x.subject}>
+            <div
+              key={x.subject}
+              className="my-4 grid grid-cols-[80px_1fr_36px] items-center gap-2 text-xs text-muted-foreground"
+            >
               <span>{x.subject}</span>
-              <i>
-                <em style={{ width: `${x.value}%` }} />
-              </i>
-              <b>{x.value}%</b>
+              <span className="h-1 overflow-hidden rounded bg-surface-2">
+                <span className="block h-full rounded bg-accent2" style={{ width: `${x.value}%` }} />
+              </span>
+              <b className="text-right font-mono text-foreground">{x.value}%</b>
             </div>
           ))}
         </article>
       </div>
 
-      {/* Submissions List */}
-      <section style={{ marginTop: 32 }}>
-        <div className="section-heading" style={{ padding: '0 0 16px 0' }}>
+      <section className="mt-8">
+        <div className="flex items-end justify-between pb-4">
           <div>
-            <h2>{language === 'bn' ? 'পূর্ববর্তী মূল্যায়নসমূহ' : 'Past Assessments'}</h2>
-            <p>{language === 'bn' ? 'তোমার সম্পূর্ণ উত্তরপত্র জমাদান ও গ্রেডিং ইতিহাস।' : 'Your complete submission and grading history.'}</p>
+            <h2 className="font-heading text-xl leading-tight font-bold">
+              {language === 'bn' ? 'পূর্ববর্তী মূল্যায়নসমূহ' : 'Past Assessments'}
+            </h2>
+            <p className="mt-1 text-xs text-muted-foreground">
+              {language === 'bn'
+                ? 'তোমার সম্পূর্ণ উত্তরপত্র জমাদান ও গ্রেডিং ইতিহাস।'
+                : 'Your complete submission and grading history.'}
+            </p>
           </div>
         </div>
 
-        {(!submissions || submissions.length === 0) ? (
-          <div
-            style={{
-              padding: 32,
-              textAlign: 'center',
-              border: '1px solid var(--border)',
-              borderRadius: 16,
-              background: 'var(--card)',
-              color: 'var(--muted-foreground)',
-            }}
-          >
+        {!submissions || submissions.length === 0 ? (
+          <div className="rounded-2xl border border-border bg-card p-8 text-center text-sm text-muted-foreground">
             {language === 'bn'
               ? 'এখনো কোনো উত্তরপত্র জমা দেওয়া হয়নি। প্রথম বোর্ড স্ট্যান্ডার্ড মূল্যায়ন দেখতে একটি খাতা আপলোড করো!'
               : 'No submissions recorded yet. Upload an answer sheet to get your first board-style grade!'}
           </div>
         ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
+          <div className="flex flex-col gap-2.5">
             {submissions.map((s) => (
               <Link
                 key={s.id}
                 href={`/dashboard/submissions/${s.id}`}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '16px 20px',
-                  border: '1px solid var(--border)',
-                  borderRadius: 12,
-                  background: 'var(--card)',
-                  textDecoration: 'none',
-                  color: 'inherit',
-                }}
+                className="flex items-center justify-between rounded-xl border border-border bg-card px-5 py-4 transition-colors hover:bg-accent"
               >
-                <div>
-                  <b style={{ fontSize: 14, display: 'block', color: 'var(--foreground)' }}>
+                <div className="min-w-0">
+                  <b className="block truncate text-sm text-foreground">
                     {s.question_papers?.subjects?.name_en || (language === 'bn' ? 'বিষয়' : 'Subject')} —{' '}
                     {s.question_papers?.title || (language === 'bn' ? 'অনুশীলন প্রশ্ন' : 'Practice Paper')}
                   </b>
-                  <small style={{ color: 'var(--muted-foreground)', fontSize: 11 }}>
+                  <small className="text-[11px] text-muted-foreground">
                     {language === 'bn' ? 'জমা দেওয়া হয়েছে ' : 'Submitted on '}
                     {new Date(s.submitted_at).toLocaleDateString(language === 'bn' ? 'bn-BD' : 'en-GB', {
                       day: 'numeric',
@@ -160,18 +162,22 @@ export function SubmissionsPageClient({
                   </small>
                 </div>
 
-                <div style={{ display: 'flex', alignItems: 'center', gap: 16 }}>
+                <div className="flex flex-none items-center gap-4">
                   <Tag color={s.status === 'COMPLETED' ? 'mint' : 'sun'}>
                     {s.status === 'COMPLETED'
-                      ? (language === 'bn' ? 'সম্পূর্ণ' : 'COMPLETED')
-                      : (language === 'bn' ? 'মূল্যায়ন চলমান' : 'EVALUATING')}
+                      ? language === 'bn'
+                        ? 'সম্পূর্ণ'
+                        : 'COMPLETED'
+                      : language === 'bn'
+                        ? 'মূল্যায়ন চলমান'
+                        : 'EVALUATING'}
                   </Tag>
-                  <strong style={{ fontFamily: 'Space Mono', fontSize: 16, color: 'var(--foreground)' }}>
+                  <strong className="font-mono text-base text-foreground">
                     {s.total_score_obtained != null
                       ? `${s.total_score_obtained}/${s.max_possible_score}`
                       : '—'}
                   </strong>
-                  <ChevronRight size={16} color="var(--muted-foreground)" />
+                  <ChevronRight size={16} className="text-muted-foreground" />
                 </div>
               </Link>
             ))}
