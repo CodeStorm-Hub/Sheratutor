@@ -1,7 +1,23 @@
 import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
+import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
+import { apiError } from "@/lib/api";
+import { startOfDhakaDayUtcIso } from "@/lib/time";
+
+const RequestBody = z.object({
+  questionPaperId: z.string().min(1),
+  pageUrls: z.array(z.string().min(1)).min(1, "at least one page is required").max(50),
+  pageQuestionIds: z.array(z.string().min(1).nullable()).optional(),
+  submissionType: z.enum(["MOBILE_PHOTO", "WEB_UPLOAD", "BATCH_SCAN"]).default("WEB_UPLOAD"),
+  idempotencyKey: z.string().min(1).max(200).optional(),
+});
+
+// Each submission triggers OCR + a grading-flow LLM run, so cap the expensive
+// path per student per Asia/Dhaka day. Generous for a real practising student;
+// deduplicated retries (same idempotency key) do not count against it.
+const SUBMISSIONS_DAILY_LIMIT = 20;
 
 /**
  * Creates a submission + its pages, then enqueues grading.
@@ -28,27 +44,26 @@ export async function POST(request: Request) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  if (!user) return apiError(401, "unauthorized");
 
   const { data: profile } = await supabase
     .from("student_profiles")
     .select("id")
     .eq("user_id", user.id)
     .maybeSingle();
-  if (!profile) return NextResponse.json({ error: "complete onboarding first" }, { status: 400 });
+  if (!profile) return apiError(400, "complete onboarding first");
 
-  const body = await request.json();
-  const { questionPaperId, pageUrls, pageQuestionIds, submissionType, idempotencyKey } = body as {
-    questionPaperId: string;
-    pageUrls: string[];
-    pageQuestionIds?: (string | null)[];
-    submissionType: "MOBILE_PHOTO" | "WEB_UPLOAD" | "BATCH_SCAN";
-    idempotencyKey?: string;
-  };
-
-  if (!questionPaperId || !pageUrls?.length) {
-    return NextResponse.json({ error: "questionPaperId and pageUrls are required" }, { status: 400 });
+  let rawBody: unknown;
+  try {
+    rawBody = await request.json();
+  } catch {
+    return apiError(400, "invalid JSON body");
   }
+  const parsed = RequestBody.safeParse(rawBody);
+  if (!parsed.success) {
+    return apiError(400, parsed.error.issues[0]?.message ?? "invalid request");
+  }
+  const { questionPaperId, pageUrls, pageQuestionIds, submissionType, idempotencyKey } = parsed.data;
 
   const key = idempotencyKey ?? randomUUID();
 
@@ -61,12 +76,23 @@ export async function POST(request: Request) {
     .maybeSingle();
   if (existing) return NextResponse.json({ submissionId: existing.id, deduped: true });
 
+  const { count: todaysSubmissions } = await supabase
+    .from("exam_submissions")
+    .select("id", { count: "exact", head: true })
+    .eq("student_id", profile.id)
+    .gte("created_at", startOfDhakaDayUtcIso());
+  if ((todaysSubmissions ?? 0) >= SUBMISSIONS_DAILY_LIMIT) {
+    return apiError(429, "rate_limited", {
+      message: "আজকের জমা দেওয়ার সীমা শেষ হয়েছে, আগামীকাল আবার চেষ্টা করো।",
+    });
+  }
+
   const { data: submission, error: subErr } = await supabase
     .from("exam_submissions")
     .insert({
       student_id: profile.id,
       question_paper_id: questionPaperId,
-      submission_type: submissionType ?? "WEB_UPLOAD",
+      submission_type: submissionType,
       idempotency_key: key,
       status: "QUEUED",
     })
@@ -74,7 +100,7 @@ export async function POST(request: Request) {
     .single();
 
   if (subErr || !submission) {
-    return NextResponse.json({ error: subErr?.message ?? "failed to create submission" }, { status: 500 });
+    return apiError(500, subErr?.message ?? "failed to create submission");
   }
 
   const pageRows = pageUrls.map((url, i) => ({
@@ -86,7 +112,7 @@ export async function POST(request: Request) {
 
   const { error: pagesErr } = await supabase.from("submission_pages").insert(pageRows);
   if (pagesErr) {
-    return NextResponse.json({ error: pagesErr.message }, { status: 500 });
+    return apiError(500, pagesErr.message);
   }
 
   const { error: enqueueErr } = await getServiceRoleClient().rpc("enqueue_grading_job", {

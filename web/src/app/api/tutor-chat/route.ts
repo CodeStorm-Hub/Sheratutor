@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
+import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
+import { apiError } from "@/lib/api";
+import { startOfDhakaDayUtcIso } from "@/lib/time";
 import {
   tutorChatFlow,
   buildTutorPrompt,
@@ -15,16 +18,27 @@ import { OpenAI } from "openai";
 
 export const maxDuration = 60;
 
+const RequestBody = z.object({
+  sessionId: z.string().min(1).optional(),
+  mode: z.enum(["rubric", "general"]).default("rubric"),
+  submissionId: z.string().min(1).optional(),
+  questionId: z.string().min(1).optional(),
+  rubricStepIndex: z.number().int().min(0).optional(),
+  questionText: z.string().max(20_000).optional(),
+  studentAnswerChunk: z.string().max(20_000).optional(),
+  rubricFailureReason: z.string().max(8_000).optional(),
+  groundedContext: z.string().max(50_000).optional(),
+  subjectId: z.string().min(1).optional(),
+  chapterId: z.string().min(1).optional(),
+  studentMessage: z.string().trim().min(1, "studentMessage is required").max(4_000),
+  languagePreference: z.enum(["bn", "en"]).default("bn"),
+  scaffoldingStyle: z.enum(["socratic", "direct"]).default("socratic"),
+  stream: z.boolean().default(false),
+});
+
 // No new env var — a fixed, generous daily cap on a free LLM endpoint
 // (docs/review §8.4 item 15 — no abuse/quota design existed at all).
 const TUTOR_CHAT_DAILY_LIMIT = 50;
-
-function startOfDhakaDayUtcIso(): string {
-  const DHAKA_OFFSET_MS = 6 * 60 * 60 * 1000; // Asia/Dhaka is UTC+6, no DST
-  const dhakaNow = new Date(Date.now() + DHAKA_OFFSET_MS);
-  const dhakaMidnight = Date.UTC(dhakaNow.getUTCFullYear(), dhakaNow.getUTCMonth(), dhakaNow.getUTCDate());
-  return new Date(dhakaMidnight - DHAKA_OFFSET_MS).toISOString();
-}
 
 type ChatMode = "rubric" | "general";
 
@@ -33,19 +47,28 @@ export async function POST(request: Request) {
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  if (!user) return apiError(401, "unauthorized");
 
   const { data: profile } = await supabase
     .from("student_profiles")
     .select("id")
     .eq("user_id", user.id)
     .maybeSingle();
-  if (!profile) return NextResponse.json({ error: "complete onboarding first" }, { status: 400 });
+  if (!profile) return apiError(400, "complete onboarding first");
 
-  const body = await request.json();
+  let rawBody: unknown;
+  try {
+    rawBody = await request.json();
+  } catch {
+    return apiError(400, "invalid JSON body");
+  }
+  const parsed = RequestBody.safeParse(rawBody);
+  if (!parsed.success) {
+    return apiError(400, parsed.error.issues[0]?.message ?? "invalid request");
+  }
   const {
     sessionId: incomingSessionId,
-    mode = "rubric" as ChatMode,
+    mode,
     submissionId,
     questionId,
     rubricStepIndex,
@@ -56,30 +79,10 @@ export async function POST(request: Request) {
     subjectId,
     chapterId,
     studentMessage,
-    languagePreference = "bn",
-    scaffoldingStyle = "socratic" as "socratic" | "direct",
-    stream = false,
-  } = body as {
-    sessionId?: string;
-    mode?: ChatMode;
-    submissionId?: string;
-    questionId?: string;
-    rubricStepIndex?: number;
-    questionText?: string;
-    studentAnswerChunk?: string;
-    rubricFailureReason?: string;
-    groundedContext?: string;
-    subjectId?: string;
-    chapterId?: string;
-    studentMessage: string;
-    languagePreference?: "bn" | "en";
-    scaffoldingStyle?: "socratic" | "direct";
-    stream?: boolean;
-  };
-
-  if (!studentMessage?.trim()) {
-    return NextResponse.json({ error: "studentMessage is required" }, { status: 400 });
-  }
+    languagePreference,
+    scaffoldingStyle,
+    stream,
+  } = parsed.data;
 
   // Rate limit: count today's (Asia/Dhaka) student-authored messages across
   // every session this student owns.
@@ -91,10 +94,9 @@ export async function POST(request: Request) {
     .gte("created_at", startOfDhakaDayUtcIso());
 
   if ((todaysMessageCount ?? 0) >= TUTOR_CHAT_DAILY_LIMIT) {
-    return NextResponse.json(
-      { error: "rate_limited", message: "আজকের জন্য প্রশ্নের সীমা শেষ, আগামীকাল আবার চেষ্টা করো।" },
-      { status: 429 }
-    );
+    return apiError(429, "rate_limited", {
+      message: "আজকের জন্য প্রশ্নের সীমা শেষ, আগামীকাল আবার চেষ্টা করো।",
+    });
   }
 
   type ChatSession = {
@@ -107,18 +109,21 @@ export async function POST(request: Request) {
   let session: ChatSession | null = null;
 
   if (incomingSessionId) {
+    // RLS already scopes this to the caller; the student_id filter is
+    // belt-and-suspenders and makes the ownership requirement explicit.
     const { data } = await supabase
       .from("tutor_chat_sessions")
       .select("id, mode, context_json")
       .eq("id", incomingSessionId)
+      .eq("student_id", profile.id)
       .maybeSingle();
-    if (!data) return NextResponse.json({ error: "session not found" }, { status: 404 });
+    if (!data) return apiError(404, "session not found");
     session = data as ChatSession;
   } else if (mode === "rubric") {
     if (!submissionId || !questionId || rubricStepIndex == null) {
-      return NextResponse.json(
-        { error: "submissionId, questionId, and rubricStepIndex are required for a new rubric session" },
-        { status: 400 }
+      return apiError(
+        400,
+        "submissionId, questionId, and rubricStepIndex are required for a new rubric session",
       );
     }
     const { data: existing } = await supabase
@@ -165,13 +170,13 @@ export async function POST(request: Request) {
       }
 
       if (error || !created) {
-        return NextResponse.json({ error: error?.message ?? "failed to create session" }, { status: 500 });
+        return apiError(500, error?.message ?? "failed to create session");
       }
       session = created as ChatSession;
     }
   } else {
     if (!chapterId) {
-      return NextResponse.json({ error: "chapterId is required for a new general session" }, { status: 400 });
+      return apiError(400, "chapterId is required for a new general session");
     }
     const { data: chapter } = await supabase
       .from("chapters")
@@ -196,12 +201,12 @@ export async function POST(request: Request) {
       .select("id, mode, context_json")
       .single();
     if (error || !created) {
-      return NextResponse.json({ error: error?.message ?? "failed to create session" }, { status: 500 });
+      return apiError(500, error?.message ?? "failed to create session");
     }
     session = created as ChatSession;
   }
 
-  if (!session) return NextResponse.json({ error: "failed to resolve session" }, { status: 500 });
+  if (!session) return apiError(500, "failed to resolve session");
 
   const ctx = (session.context_json ?? {}) as {
     questionText?: string;
@@ -292,10 +297,17 @@ export async function POST(request: Request) {
       languagePreference,
     });
 
-    process.stdout.write(`\n--- PROMPT START ---\n${prompt}\n--- PROMPT END ---\n`);
+    if (process.env.TUTOR_CHAT_DEBUG === "1") {
+      process.stdout.write(`\n--- PROMPT START ---\n${prompt}\n--- PROMPT END ---\n`);
+    }
 
     const encoder = new TextEncoder();
     const resolvedSessionId = session.id;
+
+    // If the browser disconnects mid-stream, abort the upstream LLM request so
+    // we stop consuming (and paying for) tokens nobody will read.
+    const upstreamAbort = new AbortController();
+    request.signal.addEventListener("abort", () => upstreamAbort.abort(), { once: true });
 
     const streamResponse = new ReadableStream({
       async start(controller) {
@@ -310,7 +322,7 @@ export async function POST(request: Request) {
           const client = new OpenAI({
             apiKey: isNim
               ? (process.env.NVIDIA_NIM_API_KEY ?? "")
-              : (process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA"),
+              : (process.env.AGENTROUTER_API_KEY ?? ""),
             baseURL: isNim
               ? "https://integrate.api.nvidia.com/v1"
               : (process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1"),
@@ -318,20 +330,24 @@ export async function POST(request: Request) {
           });
           const modelName = (process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b").replace(/^(?:nim|agentrouter)\//, "");
 
-          const stream = await client.chat.completions.create({
-            model: modelName,
-            messages: [
-              {
-                role: "user",
-                content: prompt,
-              },
-            ],
-            temperature: 0.5,
-            stream: true,
-          });
+          const stream = await client.chat.completions.create(
+            {
+              model: modelName,
+              messages: [
+                {
+                  role: "user",
+                  content: prompt,
+                },
+              ],
+              temperature: 0.5,
+              stream: true,
+            },
+            { signal: upstreamAbort.signal },
+          );
 
           let rawReply = "";
           for await (const chunk of stream) {
+            if (upstreamAbort.signal.aborted) break;
             const text = chunk.choices[0]?.delta?.content || "";
             if (text) {
               rawReply += text;
@@ -341,8 +357,17 @@ export async function POST(request: Request) {
                     `data: ${JSON.stringify({ type: "chunk", text })}\n\n`
                   )
                 );
-              } catch (_) {}
+              } catch {}
             }
+          }
+
+          // Client went away — don't persist a half-turn or try to write to a
+          // closed stream.
+          if (upstreamAbort.signal.aborted) {
+            try {
+              controller.close();
+            } catch {}
+            return;
           }
 
           const finalReply = stripLeadingGreeting(normalizeLatexDelimiters(rawReply || ""));
@@ -365,8 +390,16 @@ export async function POST(request: Request) {
               )
             );
             controller.close();
-          } catch (_) {}
+          } catch {}
         } catch (streamErr) {
+          // An abort (client disconnect) surfaces here as a rejection — that's
+          // expected, not an error worth reporting.
+          if (upstreamAbort.signal.aborted) {
+            try {
+              controller.close();
+            } catch {}
+            return;
+          }
           console.error("SSE stream failed in tutor-chat:", streamErr);
           try {
             controller.enqueue(
@@ -375,8 +408,12 @@ export async function POST(request: Request) {
               )
             );
             controller.close();
-          } catch (_) {}
+          } catch {}
         }
+      },
+      cancel() {
+        // Consumer (browser) cancelled the stream — abort the upstream LLM call.
+        upstreamAbort.abort();
       },
     });
 

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 import { gradeSubmissionFlow } from "@/ai/flows/grade-submission";
+import { apiError } from "@/lib/api";
 
 export const maxDuration = 60;
 
@@ -26,7 +27,7 @@ type QueueMessage = {
 export async function POST(request: Request) {
   const secret = request.headers.get("x-worker-secret");
   if (!secret || secret !== process.env.INTERNAL_WORKER_SECRET) {
-    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+    return apiError(401, "unauthorized");
   }
 
   const supabase = getServiceRoleClient();
@@ -35,7 +36,7 @@ export async function POST(request: Request) {
     p_qty: BATCH_SIZE,
     p_vt: VISIBILITY_TIMEOUT_SECONDS,
   });
-  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
+  if (error) return apiError(500, error.message);
 
   const results: { submissionId: string; status: "graded" | "failed" | "failed_terminal" }[] = [];
 

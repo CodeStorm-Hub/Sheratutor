@@ -16,45 +16,52 @@ export default async function DashboardPage() {
   const supabase = await createClient();
   const { user } = await getUser();
 
-  // 1. Fetch real student & user profile
-  const { data: userProfile } = await supabase
-    .from('profiles')
-    .select('full_name')
-    .eq('id', user?.id ?? '')
-    .maybeSingle();
+  // 1. Fetch user profile, student profile, and curriculum subjects in parallel
+  const [
+    { data: userProfile },
+    { data: studentProfile },
+    { data: dbSubjects },
+  ] = await Promise.all([
+    supabase
+      .from('profiles')
+      .select('full_name')
+      .eq('id', user?.id ?? '')
+      .maybeSingle(),
+    supabase
+      .from('student_profiles')
+      .select('id, exam_type, academic_group, education_board, target_exam_year, overall_momentum_score')
+      .eq('user_id', user?.id ?? '')
+      .maybeSingle(),
+    supabase
+      .from('subjects')
+      .select('id, name_en, name_bn, code, level, subject_group')
+      .order('name_en'),
+  ]);
 
-  const { data: studentProfile } = await supabase
-    .from('student_profiles')
-    .select('id, exam_type, academic_group, education_board, target_exam_year, overall_momentum_score')
-    .eq('user_id', user?.id ?? '')
-    .maybeSingle();
+  const studentId = studentProfile?.id ?? '';
 
-  // 2. Fetch real student submissions
-  const { data: submissions } = await supabase
-    .from('exam_submissions')
-    .select('*, question_papers(title, total_marks, subjects(name_en))')
-    .eq('student_id', studentProfile?.id ?? '')
-    .order('submitted_at', { ascending: false });
-
-  // 3. Fetch real curriculum subjects for student's level
-  const { data: dbSubjects } = await supabase
-    .from('subjects')
-    .select('id, name_en, name_bn, code, level, subject_group')
-    .order('name_en');
-
-  // 4. Fetch real weakness logs to compute per-subject mastery
-  const { data: weaknesses } = await supabase
-    .from('weakness_logs')
-    .select('*, chapters(title_en, subjects(id, name_en))')
-    .eq('student_id', studentProfile?.id ?? '');
-
-  // 5. Fetch real active study plan
-  const { data: activePlan } = await supabase
-    .from('study_plans')
-    .select('daily_schedule_json, start_date, end_date')
-    .eq('student_id', studentProfile?.id ?? '')
-    .eq('is_active', true)
-    .maybeSingle();
+  // 2. Fetch student submissions, weaknesses, and active study plan in parallel
+  const [
+    { data: submissions },
+    { data: weaknesses },
+    { data: activePlan },
+  ] = await Promise.all([
+    supabase
+      .from('exam_submissions')
+      .select('*, question_papers(title, total_marks, subjects(name_en))')
+      .eq('student_id', studentId)
+      .order('submitted_at', { ascending: false }),
+    supabase
+      .from('weakness_logs')
+      .select('*, chapters(title_en, subjects(id, name_en))')
+      .eq('student_id', studentId),
+    supabase
+      .from('study_plans')
+      .select('daily_schedule_json, start_date, end_date')
+      .eq('student_id', studentId)
+      .eq('is_active', true)
+      .maybeSingle(),
+  ]);
 
   // First name
   const fullName =

@@ -1,10 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import ReactMarkdown from 'react-markdown';
-import remarkMath from 'remark-math';
-import 'katex/dist/katex.min.css';
-import rehypeKatex from 'rehype-katex';
+import { RenderMathText } from '@/components/render-math-text';
 import {
   Sparkles,
   Send,
@@ -627,12 +624,8 @@ export function TutorPageClient({
                       <span>{language === 'bn' ? 'অধ্যায়ের মূল সূত্রমালা' : 'Core Concept Highlight'}</span>
                     </div>
                     <div className="flex flex-col gap-1 overflow-x-auto py-1 text-sm">
-                      <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
-                        {`$$W = \\vec{F} \\cdot \\vec{s} = F s \\cos\\theta$$`}
-                      </ReactMarkdown>
-                      <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
-                        {`$$\\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_i^2$$`}
-                      </ReactMarkdown>
+                      <RenderMathText text={`$$W = \\vec{F} \\cdot \\vec{s} = F s \\cos\\theta$$`} inline={false} />
+                      <RenderMathText text={`$$\\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_i^2$$`} inline={false} />
                     </div>
                   </div>
 
@@ -698,22 +691,7 @@ export function TutorPageClient({
                     >
                       {m.text ? (
                         <div className="break-words">
-                          <ReactMarkdown
-                            remarkPlugins={[remarkMath]}
-                            rehypePlugins={[rehypeKatex]}
-                            components={{
-                              p: ({ ...props }) => <p className="mb-2.5 leading-relaxed last:mb-0" {...props} />,
-                              ul: ({ ...props }) => <ul className="mb-2.5 list-disc space-y-1 pl-5" {...props} />,
-                              ol: ({ ...props }) => <ol className="mb-2.5 list-decimal space-y-1 pl-5" {...props} />,
-                              li: ({ ...props }) => <li className="leading-relaxed" {...props} />,
-                              code: ({ ...props }) => (
-                                <code className="rounded border border-border/40 bg-muted/80 px-1.5 py-0.5 font-mono text-xs text-foreground" {...props} />
-                              ),
-                              strong: ({ ...props }) => <strong className="font-semibold text-mint" {...props} />,
-                            }}
-                          >
-                            {m.text}
-                          </ReactMarkdown>
+                          <RenderMathText text={m.text} inline={false} />
                           {m.isStreaming && (
                             <span className="ml-1 inline-block h-3.5 w-1.5 animate-pulse bg-green align-middle" />
                           )}

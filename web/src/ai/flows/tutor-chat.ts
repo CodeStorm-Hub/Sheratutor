@@ -239,7 +239,7 @@ export const tutorChatFlow = ai.defineFlow(
       const client = new OpenAI({
         apiKey: isNim
           ? (process.env.NVIDIA_NIM_API_KEY ?? "")
-          : (process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA"),
+          : (process.env.AGENTROUTER_API_KEY ?? ""),
         baseURL: isNim
           ? "https://integrate.api.nvidia.com/v1"
           : (process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1"),

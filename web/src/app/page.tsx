@@ -21,11 +21,6 @@ import {
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { translations, type Language, type TranslationKey } from '@/data/translations';
 
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-
-
-
 async function CachedLandingUI({ lang }: { lang: Language }) {
   'use cache';
   cacheLife('hours');
@@ -229,8 +224,16 @@ async function CachedLandingUI({ lang }: { lang: Language }) {
   );
 }
 
-export default async function LandingPage() {
+async function DynamicLanding() {
   const cookieStore = await cookies();
   const lang: Language = cookieStore.get('sheratutor_lang')?.value === 'en' ? 'en' : 'bn';
   return <CachedLandingUI lang={lang} />;
+}
+
+export default function LandingPage() {
+  return (
+    <React.Suspense fallback={<CachedLandingUI lang="bn" />}>
+      <DynamicLanding />
+    </React.Suspense>
+  );
 }
