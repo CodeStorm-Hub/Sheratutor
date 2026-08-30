@@ -136,7 +136,7 @@ export function PlannerPageClient({
           <Tag color="coral">{t('planner.recommendation_badge')}</Tag>
           <h3 className="mt-3.5 mb-2 font-heading text-xl leading-tight font-bold">{recommendationTitle}</h3>
           <p className="text-xs leading-relaxed text-muted-foreground">{recommendationBody}</p>
-          <button type="button" className="mt-1.5 flex items-center gap-1 py-1.5 text-xs font-semibold text-navy hover:text-cta">
+          <button type="button" className="mt-1.5 flex items-center gap-1 py-1.5 text-xs font-semibold text-heading hover:text-cta">
             {language === 'bn' ? 'প্রস্তাবিত প্ল্যান দেখুন' : 'See recommended plan'}
             <ChevronRight size={15} />
           </button>

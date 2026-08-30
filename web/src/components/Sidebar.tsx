@@ -158,7 +158,7 @@ export function SidebarContent({
               onNavigate?.();
               router.push('/dashboard/tutor');
             }}
-            className="mt-2 font-mono text-[11px] font-semibold text-navy hover:text-cta"
+            className="mt-2 font-mono text-[11px] font-semibold text-heading hover:text-cta"
           >
             {t('nav.help_btn')} →
           </button>
