@@ -1,25 +1,39 @@
 import type { Metadata } from 'next';
 import React from 'react';
-import { Baloo_2, Inter, Space_Mono, Noto_Sans_Bengali } from 'next/font/google';
+import { cookies } from 'next/headers';
+import {
+  Baloo_2,
+  Baloo_Da_2,
+  Inter,
+  Space_Mono,
+  Noto_Sans_Bengali,
+} from 'next/font/google';
 import './globals.css';
 import '@/styles.css';
 import '@/pages.css';
 import '@/layout-fixes.css';
 import 'katex/dist/katex.min.css';
-import { ThemeProvider } from '@/context/ThemeContext';
+import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { Toaster } from '@/components/ui/sonner';
 
 const baloo2 = Baloo_2({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'],
+  weight: ['600', '700'],
   variable: '--font-display',
+  display: 'swap',
+});
+
+const balooDa2 = Baloo_Da_2({
+  subsets: ['bengali', 'latin'],
+  weight: ['600', '700'],
+  variable: '--font-display-bn',
   display: 'swap',
 });
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '500', '600'],
   variable: '--font-body',
   display: 'swap',
 });
@@ -33,7 +47,7 @@ const spaceMono = Space_Mono({
 
 const notoSansBengali = Noto_Sans_Bengali({
   subsets: ['bengali'],
-  weight: ['400', '500', '600', '700'],
+  weight: ['400', '600', '700'],
   variable: '--font-body-bn',
   display: 'swap',
 });
@@ -47,28 +61,28 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const cookieStore = await cookies();
+  const lang = cookieStore.get('sheratutor_lang')?.value === 'en' ? 'en' : 'bn';
+
   return (
     <html
-      lang="bn"
+      lang={lang}
       suppressHydrationWarning
-      className={`${baloo2.variable} ${inter.variable} ${spaceMono.variable} ${notoSansBengali.variable}`}
+      className={`${baloo2.variable} ${balooDa2.variable} ${inter.variable} ${spaceMono.variable} ${notoSansBengali.variable}`}
     >
-      <body>
+      <body suppressHydrationWarning>
         <ThemeProvider>
           <LanguageProvider>
             {children}
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
-      {/* impeccable-live-start */}
-<script src="http://localhost:8400/live.js?token=4de4d515-5d59-4714-8898-7a07e0418a32"></script>
-{/* impeccable-live-end */}
-</body>
+      </body>
     </html>
   );
 }

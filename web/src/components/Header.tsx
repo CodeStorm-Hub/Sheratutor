@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import type { Route } from 'next';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
@@ -11,6 +12,15 @@ import { signOut } from '@/app/actions/auth';
 import { useLanguage } from '@/context/LanguageContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { createClient } from '@/lib/supabase/client';
+
+interface NotificationItem {
+  id: string;
+  title: string;
+  desc: string;
+  time: string;
+  unread: boolean;
+  href: string;
+}
 
 interface HeaderProps {
   collapsed: boolean;
@@ -42,7 +52,7 @@ export const Header: React.FC<HeaderProps> = ({
   const [notifOpen, setNotifOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [notifications, setNotifications] = useState<any[]>([]);
+  const [notifications, setNotifications] = useState<NotificationItem[]>([]);
   const [isMac, setIsMac] = useState(true);
 
   useEffect(() => {
@@ -68,7 +78,6 @@ export const Header: React.FC<HeaderProps> = ({
           filter: 'status=eq.GRADED'
         },
         (payload) => {
-          console.log('Submission graded!', payload);
           setNotifications(prev => [{
             id: payload.new.id,
             title: language === 'bn' ? 'খাতা মূল্যায়ন সম্পন্ন হয়েছে!' : 'Paper Grading Complete!',
@@ -222,7 +231,7 @@ export const Header: React.FC<HeaderProps> = ({
 
                 <div className="notif-list">
                   {notifications.map(n => (
-                    <Link href={n.href} key={n.id} onClick={() => setNotifOpen(false)} style={{textDecoration: 'none'}}>
+                    <Link href={n.href as Route} key={n.id} onClick={() => setNotifOpen(false)} style={{textDecoration: 'none'}}>
                       <div className={`notif-item ${n.unread ? 'unread' : ''}`}>
                         <span className="notif-badge mint">✓</span>
                         <div>

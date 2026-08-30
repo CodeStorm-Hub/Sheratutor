@@ -1,60 +1,23 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useState } from 'react';
+/**
+ * Compatibility shim. The app now themes through `next-themes`
+ * (`ThemeProvider` in `@/components/theme-provider`, wired in the root layout,
+ * with a pre-paint script in the layout `<head>` that removes the FOUC).
+ *
+ * This hook keeps the old `{ darkMode, setDarkMode, toggleDarkMode }` surface
+ * so existing call sites (`ClientShell`, `SettingsPageClient`) keep working.
+ * New code should use `useTheme` from `next-themes` directly.
+ */
+import { useTheme as useNextTheme } from 'next-themes';
 
-interface ThemeContextType {
-  darkMode: boolean;
-  setDarkMode: (dark: boolean) => void;
-  toggleDarkMode: () => void;
-}
+export const useTheme = () => {
+  const { theme, resolvedTheme, setTheme } = useNextTheme();
+  const darkMode = (resolvedTheme ?? theme) === 'dark';
 
-const ThemeContext = createContext<ThemeContextType>({
-  darkMode: false,
-  setDarkMode: () => {},
-  toggleDarkMode: () => {},
-});
-
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [darkMode, setDarkModeState] = useState<boolean>(false);
-
-  const setDarkMode = (dark: boolean) => {
-    setDarkModeState(dark);
-    try {
-      localStorage.setItem('shera-theme', dark ? 'dark' : 'light');
-      if (dark) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    } catch {
-      // ignore
-    }
+  return {
+    darkMode,
+    setDarkMode: (dark: boolean) => setTheme(dark ? 'dark' : 'light'),
+    toggleDarkMode: () => setTheme(darkMode ? 'light' : 'dark'),
   };
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem('shera-theme');
-      const isDark = saved === 'dark' || (!saved && window.matchMedia?.('(prefers-color-scheme: dark)').matches);
-      if (isDark) {
-        setDarkModeState(true);
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
-
-  return (
-    <ThemeContext.Provider value={{ darkMode, setDarkMode, toggleDarkMode }}>
-      {children}
-    </ThemeContext.Provider>
-  );
 };
-
-export const useTheme = () => useContext(ThemeContext);
