@@ -6,6 +6,10 @@ import { Tag } from '@/components/Tag';
 import { ScoreRing } from '@/components/ScoreRing';
 import { MarkGlyph } from '@/components/mark-glyph';
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export const metadata: Metadata = {
   title: 'Kitchen Sink — SheraTutor Design System',
   robots: { index: false, follow: false },

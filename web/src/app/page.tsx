@@ -20,6 +20,10 @@ import {
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { translations, type Language, type TranslationKey } from '@/data/translations';
 
+// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
+// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
+export const instant = false;
+
 export default async function LandingPage() {
   const cookieStore = await cookies();
   const lang: Language = cookieStore.get('sheratutor_lang')?.value === 'en' ? 'en' : 'bn';
