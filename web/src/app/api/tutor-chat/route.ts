@@ -227,7 +227,7 @@ export async function POST(request: Request) {
       text: m.content,
     }));
 
-  let groundedContext = session.mode === "rubric" ? ctx.groundedContext : undefined;
+  const groundedContext = session.mode === "rubric" ? ctx.groundedContext : undefined;
 
   // Safety pre-filter check
   const safety = preFilterSafety(studentMessage);

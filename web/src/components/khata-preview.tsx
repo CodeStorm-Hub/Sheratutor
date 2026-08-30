@@ -51,8 +51,8 @@ export function KhataPreview({ className }: { className?: string }) {
           width="352"
           height="432"
           rx="18"
-          fill="#fffdfa"
-          stroke="#e9ebf3"
+          fill="var(--surface-1)"
+          stroke="var(--border)"
           strokeWidth="1.5"
         />
 
@@ -62,7 +62,7 @@ export function KhataPreview({ className }: { className?: string }) {
           y1="56"
           x2="340"
           y2="56"
-          stroke="#e9ebf3"
+          stroke="var(--border)"
           strokeWidth="1.2"
         />
 
@@ -78,22 +78,22 @@ export function KhataPreview({ className }: { className?: string }) {
         />
 
         {/* Ruled Notebook Writing Lines */}
-        <line x1="96" y1="92" x2="330" y2="92" stroke="#f0f2f8" strokeWidth="1.5" />
-        <line x1="96" y1="126" x2="330" y2="126" stroke="#f0f2f8" strokeWidth="1.5" />
-        <line x1="96" y1="160" x2="330" y2="160" stroke="#f0f2f8" strokeWidth="1.5" />
-        <line x1="96" y1="194" x2="330" y2="194" stroke="#f0f2f8" strokeWidth="1.5" />
-        <line x1="96" y1="228" x2="330" y2="228" stroke="#f0f2f8" strokeWidth="1.5" />
-        <line x1="96" y1="262" x2="330" y2="262" stroke="#f0f2f8" strokeWidth="1.5" />
-        <line x1="96" y1="296" x2="330" y2="296" stroke="#f0f2f8" strokeWidth="1.5" />
-        <line x1="96" y1="330" x2="330" y2="330" stroke="#f0f2f8" strokeWidth="1.5" />
+        <line x1="96" y1="92" x2="330" y2="92" stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="96" y1="126" x2="330" y2="126" stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="96" y1="160" x2="330" y2="160" stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="96" y1="194" x2="330" y2="194" stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="96" y1="228" x2="330" y2="228" stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="96" y1="262" x2="330" y2="262" stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="96" y1="296" x2="330" y2="296" stroke="var(--border)" strokeWidth="1.5" />
+        <line x1="96" y1="330" x2="330" y2="330" stroke="var(--border)" strokeWidth="1.5" />
 
         {/* Simulated Student Handwriting Blocks */}
-        <rect x="96" y="86" width="84" height="4.5" rx="2.2" fill="#adb5bd" />
-        <rect x="96" y="120" width="118" height="4.5" rx="2.2" fill="#adb5bd" />
-        <rect x="96" y="154" width="68" height="4.5" rx="2.2" fill="#adb5bd" />
-        <rect x="96" y="188" width="104" height="4.5" rx="2.2" fill="#adb5bd" />
-        <rect x="96" y="222" width="144" height="4.5" rx="2.2" fill="#adb5bd" />
-        <rect x="96" y="256" width="54" height="4.5" rx="2.2" fill="#adb5bd" />
+        <rect x="96" y="86" width="84" height="4.5" rx="2.2" fill="var(--muted-foreground)" />
+        <rect x="96" y="120" width="118" height="4.5" rx="2.2" fill="var(--muted-foreground)" />
+        <rect x="96" y="154" width="68" height="4.5" rx="2.2" fill="var(--muted-foreground)" />
+        <rect x="96" y="188" width="104" height="4.5" rx="2.2" fill="var(--muted-foreground)" />
+        <rect x="96" y="222" width="144" height="4.5" rx="2.2" fill="var(--muted-foreground)" />
+        <rect x="96" y="256" width="54" height="4.5" rx="2.2" fill="var(--muted-foreground)" />
 
         {/* Left Margin Teacher Annotation Marks */}
         {/* Step 1 Checkmark */}
@@ -140,14 +140,14 @@ export function KhataPreview({ className }: { className?: string }) {
             width="254"
             height="156"
             rx="14"
-            fill="#fdeaec"
-            stroke="#f5c2c7"
+            fill="var(--red-wash)"
+            stroke="var(--border)"
             strokeWidth="1.2"
           />
           <text
             x="18"
             y="32"
-            fill="#d92638"
+            fill="var(--mark-deduction)"
             style={{
               fontFamily: "'Space Mono', monospace",
               fontSize: '12px',
@@ -160,7 +160,7 @@ export function KhataPreview({ className }: { className?: string }) {
           <text
             x="18"
             y="86"
-            fill="#14251f"
+            fill="var(--foreground)"
             style={{
               fontFamily: "'Baloo 2', sans-serif",
               fontSize: '36px',
@@ -169,7 +169,7 @@ export function KhataPreview({ className }: { className?: string }) {
           >
             {scoreValue}
             <tspan
-              fill="#52655d"
+              fill="var(--muted-foreground)"
               style={{
                 fontFamily: "'Space Mono', monospace",
                 fontSize: '20px',
@@ -179,12 +179,12 @@ export function KhataPreview({ className }: { className?: string }) {
               {' '}{scoreTotal}
             </tspan>
           </text>
-          <rect x="18" y="104" width="218" height="4" rx="2" fill="#f5c2c7" />
+          <rect x="18" y="104" width="218" height="4" rx="2" fill="var(--border)" />
           <rect x="18" y="104" width="185" height="4" rx="2" fill="var(--mint)" />
           <text
             x="18"
             y="130"
-            fill="#52655d"
+            fill="var(--muted-foreground)"
             style={{
               fontFamily: "'Inter', sans-serif",
               fontSize: '12px',
