@@ -89,7 +89,7 @@ export function PlannerPageClient({
             <span
               key={`day-${i}`}
               className={cn(
-                'grid h-11 w-[38px] flex-none place-items-center rounded-lg font-mono text-[10px]',
+                'grid h-11 w-[38px] flex-none place-items-center rounded-lg font-mono text-3xs',
                 i === 3
                   ? 'bg-foreground text-cta-foreground'
                   : i < 3
@@ -127,7 +127,7 @@ export function PlannerPageClient({
                 <b className="block text-xs font-semibold">{task.title}</b>
                 <small className="text-xs text-muted-foreground">{task.subtitle}</small>
               </div>
-              <span className="font-mono text-[11px] text-muted-foreground">{task.time}</span>
+              <span className="font-mono text-2xs text-muted-foreground">{task.time}</span>
             </div>
           ))}
         </section>
@@ -143,7 +143,7 @@ export function PlannerPageClient({
           <div className="mt-6 border-t border-border pt-3.5">
             <div className="flex items-center justify-between text-xs text-muted-foreground">
               <span>{t('planner.subject_mastery')}</span>
-              <b className="font-mono text-[11px] text-foreground">{masteryPercent}%</b>
+              <b className="font-mono text-2xs text-foreground">{masteryPercent}%</b>
             </div>
             <div className="mt-2 h-1 overflow-hidden rounded bg-surface-2">
               <span className="block h-full rounded bg-accent2" style={{ width: `${masteryPercent}%` }} />

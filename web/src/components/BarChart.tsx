@@ -63,7 +63,7 @@ export const BarChart: React.FC<BarChartProps> = ({ data = [20, 40, 30, 70, 50, 
         <path d={d} fill="none" stroke="var(--mint)" strokeWidth="3" strokeLinecap="round" />
         <circle cx={points[points.length - 1].x} cy={points[points.length - 1].y} r="5" fill="var(--card)" stroke="var(--mint)" strokeWidth="3" />
       </svg>
-      <div className="absolute inset-x-0 bottom-0 flex justify-between font-mono text-[9px] text-muted-foreground">
+      <div className="absolute inset-x-0 bottom-0 flex justify-between font-mono text-3xs text-muted-foreground">
         {adjustedDays.map(d => <span key={d}>{d}</span>)}
       </div>
     </div>

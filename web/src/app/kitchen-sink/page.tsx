@@ -64,7 +64,7 @@ export default function KitchenSinkPage() {
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-6 py-12">
       <header>
-        <p className="font-mono text-[11px] font-bold tracking-[0.12em] text-muted-foreground uppercase">
+        <p className="font-mono text-2xs font-bold tracking-[0.12em] text-muted-foreground uppercase">
           Design system reference
         </p>
         <h1 className="mt-1 font-heading text-3xl font-extrabold">Kitchen Sink</h1>
@@ -100,7 +100,7 @@ export default function KitchenSinkPage() {
         <p className="text-headline">Headline — clamp(1.5rem, 3.5vw, 2.25rem)</p>
         <p className="font-heading text-xl font-bold">Title — 1.25rem</p>
         <p className="text-sm">Body — 0.875rem. অনুচ্ছেদ বাংলায়ও পড়া যায়।</p>
-        <p className="font-mono text-[11px] font-bold tracking-[0.12em] uppercase">Label — Space Mono</p>
+        <p className="font-mono text-2xs font-bold tracking-[0.12em] uppercase">Label — Space Mono</p>
         <p className="font-tabular text-lg">Tabular nums: 1,234,567 · 98.6% · 7/10</p>
       </Section>
 

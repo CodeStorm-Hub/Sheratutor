@@ -195,7 +195,7 @@ export const Header: React.FC<HeaderProps> = ({
             <span className="hidden max-w-[160px] truncate lg:inline">
               {t('common.search_placeholder')}
             </span>
-            <kbd className="ml-1 rounded border border-border px-1 font-mono text-[10px] font-medium">
+            <kbd className="ml-1 rounded border border-border px-1 font-mono text-3xs font-medium">
               {isMac ? '⌘K' : 'Ctrl K'}
             </kbd>
           </button>
@@ -256,13 +256,13 @@ export const Header: React.FC<HeaderProps> = ({
                   {notifications.map((n) => (
                     <DropdownMenuItem key={n.id} asChild className="items-start gap-2.5 py-2">
                       <Link href={n.href as Route}>
-                        <span className="mt-0.5 grid size-5 flex-none place-items-center rounded-full bg-accent2/15 text-[11px] text-accent2">
+                        <span className="mt-0.5 grid size-5 flex-none place-items-center rounded-full bg-accent2/15 text-2xs text-accent2">
                           ✓
                         </span>
                         <span className="min-w-0">
-                          <span className="block truncate text-[13px] font-semibold">{n.title}</span>
+                          <span className="block truncate text-sm font-semibold">{n.title}</span>
                           <span className="block text-xs text-muted-foreground">{n.desc}</span>
-                          <span className="mt-0.5 block font-mono text-[10px] text-muted-foreground">{n.time}</span>
+                          <span className="mt-0.5 block font-mono text-3xs text-muted-foreground">{n.time}</span>
                         </span>
                       </Link>
                     </DropdownMenuItem>
@@ -346,7 +346,7 @@ export const Header: React.FC<HeaderProps> = ({
             />
           </div>
           <div className="max-h-80 overflow-y-auto p-2">
-            <p className="px-2 py-1.5 font-mono text-[11px] font-bold tracking-wide text-muted-foreground uppercase">
+            <p className="px-2 py-1.5 font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
               {t('common.search_title', 'Quick links')}
             </p>
             {filtered.length === 0 ? (
@@ -368,7 +368,7 @@ export const Header: React.FC<HeaderProps> = ({
                     <item.icon className="size-[17px]" />
                   </span>
                   <span className="min-w-0 flex-1">
-                    <span className="block truncate text-[13px] font-semibold">{item.label}</span>
+                    <span className="block truncate text-sm font-semibold">{item.label}</span>
                     <span className="block truncate text-xs text-muted-foreground">{item.desc}</span>
                   </span>
                   <ChevronRight className="size-4 flex-none text-muted-foreground" />

@@ -84,7 +84,7 @@ export function MistakesPageClient({
 
       <div className="flex flex-col gap-5 rounded-2xl bg-foreground px-7 py-6 text-cta-foreground sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <span className="font-mono text-[10px] tracking-wide text-cta-foreground/70 uppercase">
+          <span className="font-mono text-3xs tracking-wide text-cta-foreground/70 uppercase">
             {t('mistakes.marks_recoverable')}
           </span>
           <strong className="my-1.5 block font-mono text-4xl font-bold">+{displayMarksRecoverable}</strong>
