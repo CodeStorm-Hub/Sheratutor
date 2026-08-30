@@ -10,7 +10,9 @@
     "eval:golden-set": "tsx scripts/eval-golden-set.ts",
     "reembed:nim": "tsx --env-file=.env.local scripts/reembed-nim.ts",
     "test:chat": "tsx --env-file=.env.local scripts/test-tutor-chat.ts",
-    "test:grounding": "tsx --env-file=.env.local scripts/test-general-chat.ts"
+    "test:grounding": "tsx --env-file=.env.local scripts/test-general-chat.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@genkit-ai/compat-oai": "^1.41.0",
@@ -50,6 +52,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "tailwindcss": "^4",
     "tsx": "^4.23.12",
-    "typescript": "5.9.3"
+    "typescript": "5.9.3",
+    "vitest": "^4.1.11"
   }
 }

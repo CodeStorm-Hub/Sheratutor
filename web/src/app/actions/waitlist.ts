@@ -2,15 +2,14 @@
 
 import { z } from "zod";
 import { createClient } from "@/lib/supabase/server";
+import { bdPhone, examType, targetExamYear } from "@/lib/validation";
 
 const WaitlistInputSchema = z.object({
   fullName: z.string().min(2, "Enter your full name"),
-  phone: z
-    .string()
-    .regex(/^(\+?880|0)1[3-9]\d{8}$/, "Enter a valid Bangladeshi phone number"),
+  phone: bdPhone,
   email: z.string().email().optional().or(z.literal("")),
-  examType: z.enum(["SSC", "HSC"]),
-  targetExamYear: z.coerce.number().int().min(2026).max(2030),
+  examType,
+  targetExamYear,
   isMinor: z.boolean(),
   guardianConsentAcknowledged: z.boolean(),
 });

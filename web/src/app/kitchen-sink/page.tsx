@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -65,6 +66,9 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 }
 
 export default function KitchenSinkPage() {
+  // Design-system reference — dev only.
+  if (process.env.NODE_ENV === 'production') notFound();
+
   return (
     <div className="mx-auto max-w-4xl space-y-8 px-6 py-12">
       <header>
