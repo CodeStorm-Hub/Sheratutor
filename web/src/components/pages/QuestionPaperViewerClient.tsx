@@ -1,10 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
-import remarkMath from "remark-math";
-import 'katex/dist/katex.min.css';
-import rehypeKatex from "rehype-katex";
+import { RenderMathText } from "@/components/render-math-text";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PrinterIcon, ArrowLeft, Upload, Clock, Award, BarChart2 } from "lucide-react";
@@ -17,41 +14,27 @@ interface SubQuestion {
   marks: number;
 }
 
-interface Question {
+export interface Question {
   id: string;
   question_number: number;
   question_type: "CQ" | "MCQ";
   max_marks: number;
   stimulus_bn: string | null;
   stimulus_en: string | null;
-  sub_questions_json: any | null;
-  mcq_options_json: any | null;
+  sub_questions_json: unknown | null;
+  mcq_options_json: unknown | null;
   mcq_correct_option: string | null;
   question_text_bn: string | null;
   question_text_en?: string | null;
 }
 
-interface Paper {
+export interface Paper {
   id: string;
   title: string;
   paper_type: string;
   difficulty: string;
   total_marks: number;
   subject: { name_en: string; name_bn: string } | null;
-}
-
-function RenderMathText({ text }: { text: string }) {
-  return (
-    <ReactMarkdown
-      remarkPlugins={[remarkMath]}
-      rehypePlugins={[rehypeKatex]}
-      components={{
-        p: ({ ...props }) => <span className="leading-relaxed inline" {...props} />,
-      }}
-    >
-      {text}
-    </ReactMarkdown>
-  );
 }
 
 export default function QuestionPaperViewerClient({

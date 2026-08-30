@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { cookies } from 'next/headers';
+import { cacheLife } from 'next/cache';
 import { Logo } from '@/components/logo';
 import { WaitlistForm } from '@/components/waitlist-form';
 import { KhataPreview } from '@/components/khata-preview';
@@ -22,11 +23,13 @@ import { translations, type Language, type TranslationKey } from '@/data/transla
 
 // TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
 // See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
 
-export default async function LandingPage() {
-  const cookieStore = await cookies();
-  const lang: Language = cookieStore.get('sheratutor_lang')?.value === 'en' ? 'en' : 'bn';
+
+
+async function CachedLandingUI({ lang }: { lang: Language }) {
+  'use cache';
+  cacheLife('hours');
+
   const isBn = lang === 'bn';
   const dict = translations[lang] as Record<string, string>;
   const en = translations.en as Record<string, string>;
@@ -224,4 +227,10 @@ export default async function LandingPage() {
       </footer>
     </div>
   );
+}
+
+export default async function LandingPage() {
+  const cookieStore = await cookies();
+  const lang: Language = cookieStore.get('sheratutor_lang')?.value === 'en' ? 'en' : 'bn';
+  return <CachedLandingUI lang={lang} />;
 }

@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
 import { createClient } from "@/lib/supabase/server";
+import { getServiceRoleClient } from "@/lib/supabase/service-role";
 
 /**
  * Creates a submission + its pages, then enqueues grading.
@@ -15,6 +16,12 @@ import { createClient } from "@/lib/supabase/server";
  * pointed at the deployed app's URL — see that migration's commented-out
  * cron block. Until that's activated, the queue must be drained manually
  * (or by an external scheduler hitting the worker route).
+ *
+ * The enqueue RPC runs through the service-role client: the submission row
+ * above is already created and ownership-checked under the caller's RLS
+ * session, so the queue push is a trusted server-side step and
+ * `enqueue_grading_job` no longer needs to be exposed to `authenticated`
+ * (migration 00000000000026).
  */
 export async function POST(request: Request) {
   const supabase = await createClient();
@@ -82,7 +89,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: pagesErr.message }, { status: 500 });
   }
 
-  const { error: enqueueErr } = await supabase.rpc("enqueue_grading_job", { p_submission_id: submission.id });
+  const { error: enqueueErr } = await getServiceRoleClient().rpc("enqueue_grading_job", {
+    p_submission_id: submission.id,
+  });
   if (enqueueErr) {
     console.error(`enqueue_grading_job failed for ${submission.id}:`, enqueueErr);
   }

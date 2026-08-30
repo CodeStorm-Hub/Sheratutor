@@ -45,7 +45,7 @@ export function AchievementsPageClient({ currentLevel, earnedXp, xpNeeded, progr
   // Safe fallback for i18n
   const safeT = (key: string) => {
     try {
-      return (t as any)(key);
+      return (t as (k: string) => string)(key);
     } catch {
       return key;
     }

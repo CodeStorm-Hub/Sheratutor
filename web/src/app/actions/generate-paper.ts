@@ -87,7 +87,7 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
     const q = generated.questions[i];
 
     // Build criteria_json from sub_questions (for CQ) or a single rule (for MCQ)
-    let criteria_json: any = [];
+    let criteria_json: Array<{ step_name: string; max_step_marks: number; matching_rules: string }> = [];
     if (q.question_type === "CQ" && q.sub_questions && q.sub_questions.length > 0) {
       criteria_json = q.sub_questions.map((subq) => ({
         step_name: `Part (${subq.part})`,

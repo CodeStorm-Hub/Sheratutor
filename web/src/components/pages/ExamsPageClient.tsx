@@ -10,16 +10,49 @@ import {
 import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
 import { Button } from '@/components/ui/button';
+import { RenderMathText } from '@/components/render-math-text';
 import { useLanguage } from '@/context/LanguageContext';
 
-export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] }) => {
+type SimSubject = { name_en?: string; name_bn?: string };
+type SimSubQuestion = { part: string; text_bn: string; text_en?: string; marks: number };
+
+type SimQuestion = {
+  id: string;
+  question_number: number;
+  question_type: 'CQ' | 'MCQ';
+  max_marks: number;
+  stimulus_bn?: string | null;
+  question_text_bn?: string | null;
+  mcq_correct_option?: string | null;
+  sub_questions_json?: string | SimSubQuestion[] | null;
+  mcq_options_json?: string | string[] | null;
+};
+
+type SimPaper = {
+  id: string;
+  title: string;
+  total_marks: number;
+  difficulty?: string | null;
+  paper_type?: string | null;
+  subjects?: SimSubject | SimSubject[] | null;
+  questions?: SimQuestion[];
+};
+
+type ExamsPageClientProps = { simulator?: boolean; papers?: SimPaper[] };
+
+const subjectOf = (s: SimPaper['subjects']): SimSubject | undefined =>
+  Array.isArray(s) ? s[0] : s ?? undefined;
+
+export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = false, papers = [] }) => {
   const { language, t } = useLanguage();
   const [started, setStarted] = useState(false);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [timeLeft, setTimeLeft] = useState(3 * 60 * 60); // Default 3 hours
 
   const paper = papers[0];
-  const questions = (paper?.questions || []).sort((a: any, b: any) => a.question_number - b.question_number);
+  const questions = [...(paper?.questions ?? [])].sort(
+    (a, b) => a.question_number - b.question_number,
+  );
 
   // Restore auto-saved answers on mount/start
   useEffect(() => {
@@ -72,8 +105,8 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
   const [selectedDifficulty, setSelectedDifficulty] = useState<string>('ALL');
 
   // Filter papers based on active state
-  const filteredPapers = papers.filter((p: any) => {
-    const subObj = Array.isArray(p.subjects) ? p.subjects[0] : p.subjects;
+  const filteredPapers = papers.filter((p) => {
+    const subObj = subjectOf(p.subjects);
     const subName = subObj?.name_en || '';
     if (selectedSubject !== 'ALL' && !subName.toLowerCase().includes(selectedSubject.toLowerCase())) {
       return false;
@@ -155,7 +188,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
         </header>
         <div className={paperClass}>
           <Tag color="sun">
-            {paper.subjects?.name_en || 'MOCK EXAM'}
+            {subjectOf(paper.subjects)?.name_en || 'MOCK EXAM'}
           </Tag>
           <h1 className="mt-4 mb-0.5 font-heading text-[clamp(1.5rem,4vw,2rem)] font-extrabold">
             {paper.title}
@@ -168,18 +201,24 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
           <hr className="my-6 border-t border-border" />
 
           <div className="space-y-12">
-            {questions.map((q: any) => {
-              const subQuestions = typeof q.sub_questions_json === "string" 
-                ? JSON.parse(q.sub_questions_json) : q.sub_questions_json;
-              const mcqOptions = typeof q.mcq_options_json === "string" 
-                ? JSON.parse(q.mcq_options_json) : q.mcq_options_json;
-              
+            {questions.map((q) => {
+              const subQuestions: SimSubQuestion[] =
+                typeof q.sub_questions_json === "string"
+                  ? JSON.parse(q.sub_questions_json)
+                  : q.sub_questions_json ?? [];
+              const mcqOptions: string[] =
+                typeof q.mcq_options_json === "string"
+                  ? JSON.parse(q.mcq_options_json)
+                  : q.mcq_options_json ?? [];
+              const prompt =
+                (q.question_type === "CQ" ? q.stimulus_bn || q.question_text_bn : q.question_text_bn) || "";
+
               return (
                 <div key={q.id} className="mb-8">
                   <div className="flex font-medium text-lg mb-4">
                     <span className="w-8">{q.question_number}.</span>
                     <div className="flex-1 whitespace-pre-wrap">
-                      {q.question_type === "CQ" ? (q.stimulus_bn || q.question_text_bn) : q.question_text_bn}
+                      <RenderMathText text={prompt} />
                     </div>
                     {q.question_type === "MCQ" && (
                       <span className="text-right w-12 text-sm text-muted-foreground">[{q.max_marks}]</span>
@@ -188,10 +227,10 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
 
                   {q.question_type === "CQ" && subQuestions && (
                     <div className="pl-8 space-y-4">
-                      {subQuestions.map((sq: any) => (
+                      {subQuestions.map((sq: SimSubQuestion) => (
                         <div key={sq.part} className="flex border border-border p-4 rounded-lg bg-muted">
                           <span className="font-bold mr-3">({sq.part})</span>
-                          <div className="flex-1">{sq.text_bn}</div>
+                          <div className="flex-1"><RenderMathText text={sq.text_bn || ""} /></div>
                           <span className="text-right font-bold text-muted-foreground">{sq.marks}</span>
                         </div>
                       ))}
@@ -200,7 +239,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
 
                   {q.question_type === "MCQ" && mcqOptions && (
                     <div className="pl-8 grid grid-cols-1 md:grid-cols-2 gap-3 mt-4">
-                      {mcqOptions.map((opt: string, idx: number) => {
+                      {mcqOptions.map((opt, idx) => {
                         const prefix = ["ক", "খ", "গ", "ঘ"][idx] || idx + 1;
                         const isSelected = answers[q.id] === opt;
                         return (
@@ -213,7 +252,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
                             <span className={`w-8 h-8 rounded-full flex items-center justify-center mr-3 font-medium ${isSelected ? 'bg-primary text-primary-foreground' : 'bg-secondary'}`}>
                               {prefix}
                             </span>
-                            <span className="flex-1">{opt}</span>
+                            <span className="flex-1"><RenderMathText text={opt || ""} /></span>
                             {isSelected && <Check size={16} className="text-primary" />}
                           </button>
                         );
@@ -303,7 +342,7 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
               {language === 'bn' ? 'এসএসসি পরীক্ষা' : 'SSC EXAMINATION'}
             </span>
             <strong className="text-lg font-bold text-foreground">
-              {paper?.subjects?.name_en?.toUpperCase() || 'PHYSICS'}
+              {subjectOf(paper?.subjects)?.name_en?.toUpperCase() || 'PHYSICS'}
             </strong>
             <span className="text-xs text-muted-foreground mt-1">SSC · 2026</span>
             <span className="absolute bottom-3 right-4 font-mono font-bold text-2xl text-primary/20">01</span>
@@ -382,8 +421,8 @@ export const ExamsPageClient: React.FC<any> = ({ simulator = false, papers = [] 
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-              {filteredPapers.map((p: any) => {
-                const subObj = Array.isArray(p.subjects) ? p.subjects[0] : p.subjects;
+              {filteredPapers.map((p) => {
+                const subObj = subjectOf(p.subjects);
                 const subName = language === 'bn' ? (subObj?.name_bn || subObj?.name_en || 'পদার্থবিজ্ঞান') : (subObj?.name_en || 'Physics');
                 
                 const diffKey = p.difficulty || 'BOARD_STANDARD';

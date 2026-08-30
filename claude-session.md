@@ -30,3 +30,56 @@ All outstanding items worked through. Branch `redesign-design-system` — **24 c
 Rationale: `/kitchen-sink` is the design-system reference page, and that card is an explicitly labeled demo of the `border-l-mark` token — the "examiner margin-rule" (a red pen mark down the margin), a deliberate SheraTutor domain metaphor also used on the landing promise cards and documented in `DESIGN.md`. The card's own body text is literally "Examiner margin-rule card (`border-l-mark`)". It exists to show the token, so the detector's generic "accent rail on a card" tell is a false positive here.
 
 Nothing fixed, nothing else left standing — this was the only finding.
+
+
+Here are the specific color tokens and typography details used in the mock UI project:
+
+### Color Tokens
+
+These are defined as CSS custom properties in `src/styles.css` and overridden for dark mode in `src/layout-fixes.css`.
+
+**Base Theme (Light Mode)**
+```css
+:root {
+  --navy: #14182b;    /* Primary text, dark backgrounds */
+  --muted: #69718c;   /* Secondary text, subtle elements */
+  --paper: #f4f5fb;   /* Light surface backgrounds */
+  --coral: #ff6b57;   /* Primary actions, warnings, negative indicators */
+  --mint: #23d9a5;    /* Success, progress, positive indicators */
+  --sun: #ffc93c;     /* Highlights, neutral tags */
+  --border: #e9ebf3;  /* Dividers, card outlines */
+}
+```
+
+**Dark Mode Overrides (`.app.dark`)**
+```css
+.app.dark {
+  --navy: #f4f7ff;    /* Becomes light text/surfaces */
+  --muted: #aab3c8;   /* Lighter secondary text */
+  --border: #2b3245;  /* Darker borders */
+  
+  /* Note: The accent colors (coral, mint, sun) remain the same 
+     to maintain brand familiarity in dark mode */
+}
+```
+
+---
+
+### Typography
+
+The project imports three font families from Google Fonts:
+
+**1. Inter** 
+* **Weights:** 400, 500, 600, 700
+* **Usage:** Base body text, inputs, standard buttons, filters, and standard UI copy.
+* **Example:** `font: 14px Inter, Arial, sans-serif;`
+
+**2. Baloo 2** 
+* **Weights:** 600, 700, 800
+* **Usage:** Brand logo, page titles, section headings, large scores/grades, and prominent feature text. This gives the app a slightly playful/approachable feel.
+* **Example:** `font: 700 22px 'Baloo 2';`
+
+**3. Space Mono** 
+* **Weights:** 400, 700
+* **Usage:** Eyebrow text, tags, data numbers, percentiles, timestamps, and small uppercase labels. It is used to present structural or "technical" data clearly.
+* **Example:** `font: 700 10px 'Space Mono';`

@@ -1,4 +1,5 @@
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { PlannerPageClient } from '@/components/pages/PlannerPageClient';
 
 // TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
@@ -12,7 +13,7 @@ type ScheduleDay = {
 
 export default async function StudyPlanPage() {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
   const { data: profile } = await supabase
     .from('student_profiles')

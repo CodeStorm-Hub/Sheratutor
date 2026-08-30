@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { UploadForm } from '@/components/upload-form';
+import { UploadForm, type Paper } from '@/components/upload-form';
 import { PageHeader } from '@/components/PageHeader';
 import { Sparkles } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
@@ -11,7 +11,7 @@ export function UploadPageClient({
   papers,
   initialPaperId,
 }: {
-  papers: any[];
+  papers: Paper[];
   initialPaperId?: string;
 }) {
   const { language } = useLanguage();

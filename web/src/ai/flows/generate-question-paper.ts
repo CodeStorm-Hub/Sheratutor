@@ -3,7 +3,7 @@ import { ai, MODELS } from "@/ai/genkit";
 import { OpenAI } from "openai";
 
 // Helper to extract JSON from model output that might include markdown or commentary
-export function extractJsonFromResponse(response: string): any {
+export function extractJsonFromResponse(response: string): unknown {
   let cleanText = response.replace(/<thought>[\s\S]*?<\/thought>/gi, "").trim();
   const match = cleanText.match(/```(?:json)?\s*([\s\S]*?)\s*```/i);
   if (match && match[1]) {
@@ -54,7 +54,7 @@ export const generateQuestionPaperFlow = ai.defineFlow(
     }),
     outputSchema: GeneratedPaperSchema,
   },
-  async ({ chapterIds, paperType, difficulty, totalMarks, languagePreference }) => {
+  async ({ chapterIds, paperType, difficulty, totalMarks, languagePreference: _languagePreference }) => {
     // Limit to 3 chapters to prevent context overload and timeouts
     const cappedChapterIds = chapterIds.slice(0, 3);
 

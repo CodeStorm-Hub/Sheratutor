@@ -1,5 +1,6 @@
 import React from 'react';
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { DashboardPageClient } from '@/components/pages/DashboardPageClient';
 
 // TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
@@ -13,9 +14,7 @@ type ScheduleDay = {
 
 export default async function DashboardPage() {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
   // 1. Fetch real student & user profile
   const { data: userProfile } = await supabase

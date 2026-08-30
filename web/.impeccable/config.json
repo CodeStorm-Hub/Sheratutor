@@ -18,6 +18,24 @@
         ],
         "createdAt": "2026-08-30T18:00:32.488Z",
         "reason": "Next.js global-error.tsx renders without globals.css/CSS vars — inline literals are the documented pattern"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "web/src/app/page.tsx"
+        ],
+        "createdAt": "2026-08-30T21:14:08.061Z",
+        "reason": "border-l-mark on value-prop cards is the examiner margin-rule — a deliberate SheraTutor domain metaphor (red pen mark down a graded script's margin), documented in DESIGN.md, matches user-chosen design direction; rounded-r-2xl flat left edge reinforces it"
+      },
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "web/src/components/Sidebar.tsx"
+        ],
+        "createdAt": "2026-08-30T21:14:08.108Z",
+        "reason": "border-l-cta marks the ACTIVE nav item (every item has border-l-2 border-transparent; active turns coral) — a conventional sidebar selected-state affordance, not an accent rail on a card"
       }
     ]
   }
