@@ -82,7 +82,7 @@ export default function LandingPage() {
         <Logo tagline />
         <div className="flex shrink-0 items-center gap-2">
           <LanguageToggle />
-          <Link href="/login" className="whitespace-nowrap px-2.5 py-1.5 text-xs font-semibold text-navy hover:text-cta">
+          <Link href="/login" className="whitespace-nowrap px-2.5 py-1.5 text-xs font-semibold text-heading hover:text-cta">
             {t('common.sign_in')}
           </Link>
           <Link href="/dashboard" className="inline-flex shrink-0 items-center gap-1.5 whitespace-nowrap rounded-lg bg-cta px-3.5 py-2 text-xs font-semibold text-cta-foreground transition-colors hover:opacity-90">
@@ -102,7 +102,7 @@ export default function LandingPage() {
               </span>
             </div>
 
-            <h1 className="font-heading text-[clamp(1.5rem,5.2vw,2.625rem)] leading-tight font-extrabold tracking-tight break-words text-navy">
+            <h1 className="font-heading text-[clamp(1.5rem,5.2vw,2.625rem)] leading-tight font-extrabold tracking-tight break-words text-heading">
               {t('landing.hero_title_1')}{' '}
               <span className="text-coral block sm:inline">
                 {t('landing.hero_title_2')}
