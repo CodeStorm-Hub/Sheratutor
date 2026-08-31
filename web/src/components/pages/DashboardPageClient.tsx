@@ -75,7 +75,7 @@ export function DashboardPageClient({
       <section className="flex flex-col gap-4 pt-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <h1 className="font-heading text-[clamp(1.75rem,4vw,2.25rem)] leading-tight font-extrabold">
-            {t('dashboard.greeting')} {firstName}
+            {t('dashboard.greeting')}, {firstName}
           </h1>
           <p className="mt-1 text-sm text-muted-foreground">
             {totalCompleted > 0

@@ -99,8 +99,8 @@ export const ai = genkit({
 
 export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b",
-  fast: process.env.GENKIT_FAST_MODEL ?? "nim/openai/gpt-oss-20b",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
+  fast: process.env.GENKIT_FAST_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
   paper: process.env.GENKIT_PAPER_MODEL ?? "nim/nvidia/nemotron-3-nano-30b-a3b",
 } as const;
 

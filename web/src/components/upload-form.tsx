@@ -141,6 +141,7 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
           </p>
         ) : (
           <Select
+            name="questionPaperSelect"
             value={paperId}
             onValueChange={(v) => {
               setPaperId(v);
@@ -164,25 +165,25 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
       <div className="space-y-2">
         <Label>{language === 'bn' ? 'পৃষ্ঠার ছবি' : 'Page Photos'}</Label>
         <div className="grid grid-cols-2 gap-3">
-          <button
-            type="button"
-            onClick={() => cameraInputRef.current?.click()}
-            className="flex flex-col items-center justify-center gap-1.5 rounded-xl border-2 border-dashed border-primary/40 bg-primary/5 py-6 text-primary hover:bg-primary/10 transition-colors"
+          <label
+            htmlFor="camera-photo-input"
+            className="flex flex-col items-center justify-center gap-1.5 rounded-xl border-2 border-dashed border-primary/40 bg-primary/5 py-6 text-primary hover:bg-primary/10 transition-colors cursor-pointer"
           >
             <Camera className="w-6 h-6" />
             <span className="text-sm font-medium">{language === 'bn' ? 'ক্যামেরায় তোলো' : 'Take with Camera'}</span>
-          </button>
-          <button
-            type="button"
-            onClick={() => galleryInputRef.current?.click()}
-            className="flex flex-col items-center justify-center gap-1.5 rounded-xl border-2 border-dashed border-border py-6 text-muted-foreground hover:bg-muted transition-colors"
+          </label>
+          <label
+            htmlFor="gallery-photo-input"
+            className="flex flex-col items-center justify-center gap-1.5 rounded-xl border-2 border-dashed border-border py-6 text-muted-foreground hover:bg-muted transition-colors cursor-pointer"
           >
             <ImagePlus className="w-6 h-6" />
             <span className="text-sm font-medium">{language === 'bn' ? 'গ্যালারি থেকে বেছে নাও' : 'Choose from Gallery'}</span>
-          </button>
+          </label>
         </div>
         <input
           ref={cameraInputRef}
+          id="camera-photo-input"
+          name="camera-photo-input"
           type="file"
           accept="image/*"
           capture="environment"
@@ -195,6 +196,8 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
         />
         <input
           ref={galleryInputRef}
+          id="gallery-photo-input"
+          name="gallery-photo-input"
           type="file"
           accept="image/*,.pdf,.heic"
           multiple

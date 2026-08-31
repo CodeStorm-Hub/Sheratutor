@@ -19,17 +19,17 @@ import { OpenAI } from "openai";
 export const maxDuration = 60;
 
 const RequestBody = z.object({
-  sessionId: z.string().min(1).optional(),
+  sessionId: z.string().min(1).nullish(),
   mode: z.enum(["rubric", "general"]).default("rubric"),
-  submissionId: z.string().min(1).optional(),
-  questionId: z.string().min(1).optional(),
-  rubricStepIndex: z.number().int().min(0).optional(),
-  questionText: z.string().max(20_000).optional(),
-  studentAnswerChunk: z.string().max(20_000).optional(),
-  rubricFailureReason: z.string().max(8_000).optional(),
-  groundedContext: z.string().max(50_000).optional(),
-  subjectId: z.string().min(1).optional(),
-  chapterId: z.string().min(1).optional(),
+  submissionId: z.string().min(1).nullish(),
+  questionId: z.string().min(1).nullish(),
+  rubricStepIndex: z.number().int().min(0).nullish(),
+  questionText: z.string().max(20_000).nullish(),
+  studentAnswerChunk: z.string().max(20_000).nullish(),
+  rubricFailureReason: z.string().max(8_000).nullish(),
+  groundedContext: z.string().max(50_000).nullish(),
+  subjectId: z.string().min(1).nullish(),
+  chapterId: z.string().min(1).nullish(),
   studentMessage: z.string().trim().min(1, "studentMessage is required").max(4_000),
   languagePreference: z.enum(["bn", "en"]).default("bn"),
   scaffoldingStyle: z.enum(["socratic", "direct"]).default("socratic"),
@@ -328,7 +328,7 @@ export async function POST(request: Request) {
               : (process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1"),
             defaultHeaders: isNim ? undefined : { "User-Agent": "Cline/3.0.0" },
           });
-          const modelName = (process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b").replace(/^(?:nim|agentrouter)\//, "");
+          const modelName = (process.env.GENKIT_REASONING_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct").replace(/^(?:nim|agentrouter)\//, "");
 
           const stream = await client.chat.completions.create(
             {
