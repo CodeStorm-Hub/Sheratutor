@@ -18,6 +18,7 @@ import {
   Trophy,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { LogoMark } from '@/components/logo';
 import { useLanguage } from '@/context/LanguageContext';
 
 type NavEntry =
@@ -78,14 +79,7 @@ export function SidebarContent({
         onClick={onNavigate}
         className="flex items-center gap-2 px-2 pt-1 pb-3"
       >
-        <span
-          aria-hidden
-          className="flex size-8 flex-none -rotate-3 items-end gap-[2px] rounded-lg bg-navy p-1.5"
-        >
-          <span className="h-2 w-1 rounded-sm bg-surface-1" />
-          <span className="h-3.5 w-1 rounded-sm bg-sun" />
-          <span className="h-[18px] w-1 rounded-sm bg-cta" />
-        </span>
+        <LogoMark className="size-8 flex-none" />
         <span className="font-heading text-lg font-bold tracking-tight">
           Shera<span className="text-coral">Tutor</span>
         </span>

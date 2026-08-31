@@ -17,10 +17,8 @@ export function KhataPreview({
   const scoreTitle = language === 'bn' ? 'পরীক্ষকের মূল্যায়ন' : 'EXAMINER SCORE';
   const scoreValue = language === 'bn' ? '৮৭' : '87';
   const scoreTotal = language === 'bn' ? '/১০০ (A+)' : '/100 (A+)';
-  const noteText =
-    language === 'bn'
-      ? '✓ ৩য় প্রশ্নে ২টি ধাপ ছাড়া পড়েছে (+৭ মার্কস পুনরুদ্ধার সম্ভব)'
-      : '✓ 2 steps missed in Q3 (+7 marks recoverable)';
+  const noteLine1 = language === 'bn' ? '৩য় প্রশ্নে ২ ধাপ বাদ পড়েছে' : '2 steps missed in Q3';
+  const noteLine2 = language === 'bn' ? '+৭ মার্কস পুনরুদ্ধারযোগ্য' : '+7 marks recoverable';
 
   return (
     <div
@@ -122,12 +120,12 @@ export function KhataPreview({
 
         {/* Step 3 Error Cross */}
         <g stroke="var(--coral)" strokeWidth="3" strokeLinecap="round">
-          <line x1="40" y1="220" x2="56" y2="236" />
-          <line x1="56" y1="220" x2="40" y2="236" />
+          <line x1="40" y1="190" x2="56" y2="206" />
+          <line x1="56" y1="190" x2="40" y2="206" />
         </g>
 
         {/* Step 4 Checkmark */}
-        <g transform="translate(0, 142)">
+        <g transform="translate(0, 155)">
           <path
             d="M38 90 L46 98 L60 82"
             fill="none"
@@ -138,11 +136,11 @@ export function KhataPreview({
           />
         </g>
 
-        {/* Floating Score Card */}
-        <g transform="translate(80, 240)">
+        {/* Floating Score Card — clears the margin annotations above it */}
+        <g transform="translate(98, 272)">
           <rect
-            width="254"
-            height="156"
+            width="244"
+            height="146"
             rx="14"
             fill="var(--red-wash)"
             stroke="var(--border)"
@@ -150,11 +148,11 @@ export function KhataPreview({
           />
           <text
             x="18"
-            y="32"
+            y="30"
             fill="var(--mark-deduction)"
             style={{
               fontFamily: "'Space Mono', monospace",
-              fontSize: '12px',
+              fontSize: '11px',
               fontWeight: 700,
               letterSpacing: '0.08em',
             }}
@@ -163,11 +161,11 @@ export function KhataPreview({
           </text>
           <text
             x="18"
-            y="86"
+            y="78"
             fill="var(--foreground)"
             style={{
               fontFamily: "'Baloo 2', sans-serif",
-              fontSize: '36px',
+              fontSize: '34px',
               fontWeight: 800,
             }}
           >
@@ -176,26 +174,28 @@ export function KhataPreview({
               fill="var(--muted-foreground)"
               style={{
                 fontFamily: "'Space Mono', monospace",
-                fontSize: '20px',
+                fontSize: '18px',
                 fontWeight: 600,
               }}
             >
               {' '}{scoreTotal}
             </tspan>
           </text>
-          <rect x="18" y="104" width="218" height="4" rx="2" fill="var(--border)" />
-          <rect x="18" y="104" width="185" height="4" rx="2" fill="var(--mint)" />
+          <rect x="18" y="94" width="208" height="4" rx="2" fill="var(--border)" />
+          <rect x="18" y="94" width="176" height="4" rx="2" fill="var(--mint)" />
           <text
             x="18"
-            y="130"
+            y="120"
             fill="var(--muted-foreground)"
             style={{
               fontFamily: "'Inter', sans-serif",
-              fontSize: '12px',
+              fontSize: '10.5px',
               fontWeight: 500,
             }}
           >
-            {noteText}
+            <tspan x="18" dy="0" fill="var(--mint)">✓ </tspan>
+            <tspan>{noteLine1}</tspan>
+            <tspan x="18" dy="15">{noteLine2}</tspan>
           </text>
         </g>
       </svg>
