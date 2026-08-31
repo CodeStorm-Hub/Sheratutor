@@ -76,3 +76,8 @@ src/plugins/impeccable-live.client.ts
 
 # impeccable session artifacts
 .impeccable/critique/
+
+# MCP Configuration files
+*mcp*.json
+.mcp.json
+
