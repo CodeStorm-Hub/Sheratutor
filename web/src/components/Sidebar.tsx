@@ -146,16 +146,13 @@ export function SidebarContent({
           </span>
           <p className="mt-2 text-xs font-semibold">{t('nav.help_title')}</p>
           <p className="mt-0.5 text-xs text-muted-foreground">{t('nav.help_desc')}</p>
-          <button
-            type="button"
-            onClick={() => {
-              onNavigate?.();
-              router.push('/dashboard/tutor');
-            }}
-            className="mt-2 font-mono text-2xs font-semibold text-heading hover:text-cta"
+          <Link
+            href="/dashboard/tutor"
+            onClick={onNavigate}
+            className="mt-2 font-mono text-2xs font-semibold inline-block text-heading hover:text-cta"
           >
             {t('nav.help_btn')} →
-          </button>
+          </Link>
         </div>
       </div>
     </div>

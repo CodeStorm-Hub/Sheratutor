@@ -353,10 +353,12 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
           <div className="flex flex-wrap items-center justify-between gap-3 p-3 rounded-2xl bg-card border border-border/70 shadow-2xs">
             <div className="flex flex-wrap items-center gap-2.5">
               <div className="flex items-center gap-1.5">
-                <span className="text-xs font-semibold text-muted-foreground ml-1">
+                <label htmlFor="filter-subject" className="text-xs font-semibold text-muted-foreground ml-1">
                   {language === 'bn' ? 'বিষয়:' : 'Subject:'}
-                </span>
+                </label>
                 <select
+                  id="filter-subject"
+                  name="subject"
                   value={selectedSubject}
                   onChange={(e) => setSelectedSubject(e.target.value)}
                   className="bg-muted/40 border border-border text-foreground text-xs font-medium py-1.5 px-3 rounded-lg cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary"
@@ -371,10 +373,12 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
               </div>
 
               <div className="flex items-center gap-1.5">
-                <span className="text-xs font-semibold text-muted-foreground">
+                <label htmlFor="filter-difficulty" className="text-xs font-semibold text-muted-foreground">
                   {language === 'bn' ? 'কঠিনতা:' : 'Difficulty:'}
-                </span>
+                </label>
                 <select
+                  id="filter-difficulty"
+                  name="difficulty"
                   value={selectedDifficulty}
                   onChange={(e) => setSelectedDifficulty(e.target.value)}
                   className="bg-muted/40 border border-border text-foreground text-xs font-medium py-1.5 px-3 rounded-lg cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary"

@@ -336,6 +336,9 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-2.5 border-b border-border px-4">
             <Search className="size-4 flex-none text-muted-foreground" />
             <input
+              id="global-search-input"
+              name="search"
+              aria-label={language === 'bn' ? 'অনুসন্ধান' : 'Search'}
               autoFocus
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
@@ -355,13 +358,10 @@ export const Header: React.FC<HeaderProps> = ({
               </p>
             ) : (
               filtered.map((item) => (
-                <button
+                <Link
                   key={item.href}
-                  type="button"
-                  onClick={() => {
-                    setSearchOpen(false);
-                    router.push(item.href as Route);
-                  }}
+                  href={item.href as Route}
+                  onClick={() => setSearchOpen(false)}
                   className="flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left transition-colors hover:bg-accent"
                 >
                   <span className="grid size-8 flex-none place-items-center rounded-lg bg-accent text-muted-foreground">
@@ -372,7 +372,7 @@ export const Header: React.FC<HeaderProps> = ({
                     <span className="block truncate text-xs text-muted-foreground">{item.desc}</span>
                   </span>
                   <ChevronRight className="size-4 flex-none text-muted-foreground" />
-                </button>
+                </Link>
               ))
             )}
           </div>

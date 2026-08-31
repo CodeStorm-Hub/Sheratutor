@@ -1,23 +1,27 @@
 import React from 'react';
+import { cacheLife } from 'next/cache';
 import { createClient } from '@/lib/supabase/server';
+import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 import { GeneratePageClient } from '@/components/pages/GeneratePageClient';
-
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
 
 export const maxDuration = 60;
 
+async function getCurriculumMetadata() {
+  'use cache';
+  cacheLife('days');
+  const supabase = createSupabaseClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
+  const [{ data: subjects }, { data: chapters }] = await Promise.all([
+    supabase.from('subjects').select('id, name_en, name_bn').order('name_en'),
+    supabase.from('chapters').select('id, subject_id, chapter_no, title_en, title_bn').order('chapter_no')
+  ]);
+  return { subjects, chapters };
+}
+
 export default async function GeneratePracticePaperPage() {
-  const supabase = await createClient();
-  const { data: subjects } = await supabase
-    .from('subjects')
-    .select('id, name_en, name_bn')
-    .order('name_en');
-  const { data: chapters } = await supabase
-    .from('chapters')
-    .select('id, subject_id, chapter_no, title_en, title_bn')
-    .order('chapter_no');
+  const { subjects, chapters } = await getCurriculumMetadata();
 
   return (
     <GeneratePageClient

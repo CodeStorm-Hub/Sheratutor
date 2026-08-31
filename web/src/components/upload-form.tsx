@@ -163,7 +163,7 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
       </div>
 
       <div className="space-y-2">
-        <Label>{language === 'bn' ? 'পৃষ্ঠার ছবি' : 'Page Photos'}</Label>
+        <Label htmlFor="camera-photo-input">{language === 'bn' ? 'পৃষ্ঠার ছবি' : 'Page Photos'}</Label>
         <div className="grid grid-cols-2 gap-3">
           <label
             htmlFor="camera-photo-input"

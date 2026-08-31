@@ -32,12 +32,18 @@ export const BarChart: React.FC<BarChartProps> = ({ data = [20, 40, 30, 70, 50, 
   const fillD = `${d} L${width},150 L0,150 Z`;
 
   
-  // Rotate days so today is the last day
-  const today = new Date().getDay();
-  const adjustedDays = Array.from({length: 7}, (_, i) => {
-    const dayIdx = (today + i + 1) % 7;
-    return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][dayIdx];
-  });
+  const [adjustedDays, setAdjustedDays] = React.useState<string[]>([
+    "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
+  ]);
+
+  React.useEffect(() => {
+    const today = new Date().getDay();
+    const days = Array.from({ length: 7 }, (_, i) => {
+      const dayIdx = (today + i + 1) % 7;
+      return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][dayIdx];
+    });
+    setAdjustedDays(days);
+  }, []);
 
   return (
     <div className="relative mt-1.5 h-[147px]">

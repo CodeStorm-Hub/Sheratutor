@@ -1,13 +1,22 @@
+import { Suspense } from 'react';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { getUser } from '@/lib/supabase/auth';
 import { ClientShell } from '@/components/ClientShell';
 
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
+function ShellFallback({ children }: { children: React.ReactNode }) {
+  return (
+    <ClientShell
+      userName=""
+      userSub="Loading..."
+      userInitials=""
+    >
+      {children}
+    </ClientShell>
+  );
+}
 
-export default async function DashboardLayout({
+async function AuthenticatedDashboardShell({
   children,
 }: {
   children: React.ReactNode;
@@ -63,5 +72,17 @@ export default async function DashboardLayout({
     >
       {children}
     </ClientShell>
+  );
+}
+
+export default function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <Suspense fallback={<ShellFallback>{children}</ShellFallback>}>
+      <AuthenticatedDashboardShell>{children}</AuthenticatedDashboardShell>
+    </Suspense>
   );
 }

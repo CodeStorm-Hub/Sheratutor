@@ -1,13 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { getUser } from '@/lib/supabase/auth';
 import { MistakesPageClient, MistakeItem } from '@/components/pages/MistakesPageClient';
+import DashboardLoading from '../loading';
 
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
-
-export default async function MistakeAnalysisPage() {
+async function MistakesContent() {
   const supabase = await createClient();
   const { user } = await getUser();
 
@@ -81,5 +78,13 @@ export default async function MistakeAnalysisPage() {
       conceptualPercent={weaknesses && weaknesses.length > 0 ? 78 : 76}
       dynamicMistakes={dynamicMistakes}
     />
+  );
+}
+
+export default function MistakeAnalysisPage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <MistakesContent />
+    </Suspense>
   );
 }

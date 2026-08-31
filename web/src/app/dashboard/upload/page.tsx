@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { getUser } from '@/lib/supabase/auth';
 import { UploadPageClient } from '@/components/pages/UploadPageClient';
+import DashboardLoading from '../loading';
 
-
-export default async function UploadPage({
+async function UploadContent({
   searchParams,
 }: {
   searchParams: Promise<{ paperId?: string }>;
@@ -26,5 +26,17 @@ export default async function UploadPage({
       papers={papers ?? []} 
       initialPaperId={resolvedSearchParams?.paperId} 
     />
+  );
+}
+
+export default function UploadPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ paperId?: string }>;
+}) {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <UploadContent searchParams={searchParams} />
+    </Suspense>
   );
 }
