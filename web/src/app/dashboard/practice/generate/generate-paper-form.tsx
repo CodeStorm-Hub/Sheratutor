@@ -111,7 +111,7 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
               return (
                 <label 
                   key={c.id} 
-                  className={`flex items-start gap-2.5 p-2 rounded-lg cursor-pointer border transition-colors ${isChecked ? 'bg-primary/10 border-primary/40' : 'bg-card border-border/60 hover:bg-muted/30'}`}
+                  className={`flex items-start gap-2.5 p-2 rounded-lg cursor-pointer border transition-colors [content-visibility:auto] [contain-intrinsic-size:auto_40px] ${isChecked ? 'bg-primary/10 border-primary/40' : 'bg-card border-border/60 hover:bg-muted/30'}`}
                 >
                   <input
                     type="checkbox"

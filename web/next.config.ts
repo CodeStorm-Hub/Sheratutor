@@ -20,6 +20,10 @@ const nextConfig: NextConfig = {
   // path) — convert routes to `use cache` / <Suspense> one at a time.
   // Guide: node_modules/next/dist/docs/01-app/02-guides/migrating-to-cache-components.md
   cacheComponents: true,
+
+  experimental: {
+    optimizePackageImports: ['lucide-react', 'recharts', 'katex'],
+  },
 };
 
 export default nextConfig;
