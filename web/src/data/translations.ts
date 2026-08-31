@@ -108,7 +108,7 @@ export const translations = {
     'khata.note': '✓ ৩য় প্রশ্নে ২টি ধাপ ছাড়া পড়েছে (+৭ মার্কস পুনরুদ্ধার সম্ভব)',
 
     // Dashboard Home
-    'dashboard.greeting': 'শুভ দিন,',
+    'dashboard.greeting': 'শুভ দিন',
     'dashboard.welcome_active': 'টি সম্পন্ন মূল্যায়ন রয়েছে। তোমার গতি ধরে রাখো!',
     'dashboard.welcome_new': 'বোর্ড পরীক্ষার প্রস্তুতি ওয়ার্কস্পেসে স্বাগতম। তোমার প্রথম মক টেস্ট শুরু করো!',
     'dashboard.focus_btn': 'ফোকাস সেশন শুরু করো',
@@ -344,7 +344,7 @@ export const translations = {
     'khata.note': '✓ 2 steps missed in Question 3 (+7 marks recoverable)',
 
     // Dashboard Home
-    'dashboard.greeting': 'Good day,',
+    'dashboard.greeting': 'Good day',
     'dashboard.welcome_active': 'completed evaluated assessments. Keep your momentum going!',
     'dashboard.welcome_new': 'Welcome to your board exam prep workspace. Take your first practice test!',
     'dashboard.focus_btn': 'Start Focus Session',
