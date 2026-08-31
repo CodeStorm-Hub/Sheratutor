@@ -1,11 +1,9 @@
+import { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { ExamsPageClient } from '@/components/pages/ExamsPageClient';
+import DashboardLoading from '../loading';
 
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
-
-export default async function BoardSimulatorPage({ searchParams }: { searchParams: Promise<{ paperId?: string }> }) {
+async function BoardSimulatorContent({ searchParams }: { searchParams: Promise<{ paperId?: string }> }) {
   const supabase = await createClient();
   const { paperId } = await searchParams;
   
@@ -28,4 +26,12 @@ export default async function BoardSimulatorPage({ searchParams }: { searchParam
   const { data: papers } = await query.limit(1);
 
   return <ExamsPageClient simulator={true} papers={papers ?? []} />;
+}
+
+export default function BoardSimulatorPage({ searchParams }: { searchParams: Promise<{ paperId?: string }> }) {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <BoardSimulatorContent searchParams={searchParams} />
+    </Suspense>
+  );
 }

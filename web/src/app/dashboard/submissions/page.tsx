@@ -1,13 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { getUser } from '@/lib/supabase/auth';
 import { SubmissionsPageClient, SubmissionItem } from '@/components/pages/SubmissionsPageClient';
+import DashboardLoading from '../loading';
 
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
-
-export default async function SubmissionsPage() {
+async function SubmissionsContent() {
   const supabase = await createClient();
   const { user } = await getUser();
 
@@ -38,5 +35,13 @@ export default async function SubmissionsPage() {
       latestMax={Number(latestMax)}
       latestId={latest?.id}
     />
+  );
+}
+
+export default function SubmissionsPage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <SubmissionsContent />
+    </Suspense>
   );
 }

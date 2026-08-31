@@ -1,18 +1,15 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { getUser } from '@/lib/supabase/auth';
 import { DashboardPageClient } from '@/components/pages/DashboardPageClient';
-
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
+import DashboardLoading from './loading';
 
 type ScheduleDay = {
   day: number;
   chapters: { chapterId: string; title: string; subject: string; weaknessScore: number }[];
 };
 
-export default async function DashboardPage() {
+async function DashboardContent() {
   const supabase = await createClient();
   const { user } = await getUser();
 
@@ -202,5 +199,13 @@ export default async function DashboardPage() {
       submissionsCount={submissions?.length || 0}
       hasSubmissions={!!(submissions && submissions.length > 0)}
     />
+  );
+}
+
+export default function DashboardPage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <DashboardContent />
+    </Suspense>
   );
 }

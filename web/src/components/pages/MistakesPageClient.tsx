@@ -79,7 +79,9 @@ export function MistakesPageClient({
 
       <div className="mb-8 hidden border-b pb-4 print:block">
         <h1 className="text-2xl font-bold">SheraTutor Mistake Analysis Report</h1>
-        <p className="text-muted-foreground">Generated on {new Date().toLocaleDateString()}</p>
+        <p className="text-muted-foreground" suppressHydrationWarning>
+          Generated on {new Date().toLocaleDateString()}
+        </p>
       </div>
 
       <div className="flex flex-col gap-5 rounded-2xl bg-foreground px-7 py-6 text-cta-foreground sm:flex-row sm:items-center sm:justify-between">

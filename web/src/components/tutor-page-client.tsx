@@ -450,6 +450,8 @@ export function TutorPageClient({
               </span>
             </div>
             <select
+              id="tutor-subject"
+              name="subject"
               value={selectedSubjectId}
               onChange={(e) => handleSubjectChange(e.target.value)}
               aria-label="Select Subject"
@@ -788,6 +790,8 @@ export function TutorPageClient({
             >
               <textarea
                 ref={textareaRef}
+                id="tutor-prompt"
+                name="prompt"
                 value={prompt}
                 onChange={handleTextareaInput}
                 onKeyDown={(e) => {

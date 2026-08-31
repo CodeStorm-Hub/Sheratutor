@@ -1,12 +1,10 @@
+import { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { getUser } from '@/lib/supabase/auth';
 import { SettingsPageClient } from '@/components/pages/SettingsPageClient';
+import DashboardLoading from '../loading';
 
-// TODO: Cache Components adoption. Refactor this route so this opt-out can be removed.
-// See: https://nextjs.org/docs/app/guides/migrating-to-cache-components
-export const instant = false;
-
-export default async function ProfilePage() {
+async function ProfileContent() {
   const supabase = await createClient();
   const { user } = await getUser();
 
@@ -36,4 +34,12 @@ export default async function ProfilePage() {
   };
 
   return <SettingsPageClient profile={resolvedProfile} />;
+}
+
+export default function ProfilePage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <ProfileContent />
+    </Suspense>
+  );
 }

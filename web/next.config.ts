@@ -20,6 +20,15 @@ const nextConfig: NextConfig = {
   // path) — convert routes to `use cache` / <Suspense> one at a time.
   // Guide: node_modules/next/dist/docs/01-app/02-guides/migrating-to-cache-components.md
   cacheComponents: true,
+  partialPrefetching: true,
+
+  // Runtime visibility for AI coding agents (Step 2 of Next.js AI Agents guide)
+  logging: {
+    fetches: {
+      fullUrl: true,
+    },
+    browserToTerminal: true,
+  },
 
   experimental: {
     optimizePackageImports: ['lucide-react', 'recharts', 'katex'],
