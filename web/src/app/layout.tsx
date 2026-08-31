@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   description:
     'A modern dashboard and learning workspace for Bangladeshi HSC & SSC students.',
   icons: {
-    icon: '/favicon.ico',
+    icon: '/icon.svg',
   },
 };
 

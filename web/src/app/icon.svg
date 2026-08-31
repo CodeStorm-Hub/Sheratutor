@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2761"/>
+      <stop offset="100%" stop-color="#14182B"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="256" cy="256" r="222" fill="none" stroke="#2A3163" stroke-width="3"/>
+
+  <!-- answer script, slightly tilted -->
+  <g transform="rotate(-6 256 256)">
+    <rect x="131" y="101" width="250" height="310" rx="20" fill="#FFFFFF"/>
+    <rect x="131" y="101" width="250" height="46" rx="20" fill="#F2F4FA"/>
+    <line x1="165" y1="171" x2="347" y2="171" stroke="#D7DEEF" stroke-width="8" stroke-linecap="round"/>
+    <line x1="165" y1="205" x2="347" y2="205" stroke="#D7DEEF" stroke-width="8" stroke-linecap="round"/>
+    <line x1="165" y1="239" x2="300" y2="239" stroke="#D7DEEF" stroke-width="8" stroke-linecap="round"/>
+    <line x1="165" y1="273" x2="347" y2="273" stroke="#D7DEEF" stroke-width="8" stroke-linecap="round"/>
+    <line x1="165" y1="307" x2="320" y2="307" stroke="#D7DEEF" stroke-width="8" stroke-linecap="round"/>
+    <!-- Shera star, tucked in the corner of the script like a merit mark -->
+    <path d="M 175.0,343.0 L 179.7,358.53 L 195.92,358.2 L 182.61,367.47 L 187.93,382.8 L 175.0,373.0 L 162.07,382.8 L 167.39,367.47 L 154.08,358.2 L 170.3,358.53 Z" fill="#FFC93C"/>
+  </g>
+
+  <!-- bold AI grading tick, stamped confidently over the script -->
+  <path d="M 161,266 L 231,341 L 376,166" fill="none" stroke="#FF6B57" stroke-width="34" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- AI sparkle accent -->
+  <path d="M 406.0,84.0 L 411.66,100.34 L 428.0,106.0 L 411.66,111.66 L 406.0,128.0 L 400.34,111.66 L 384.0,106.0 L 400.34,100.34 Z" fill="#23D9A5"/>
+</svg>

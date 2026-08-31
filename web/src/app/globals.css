@@ -17,8 +17,9 @@
  *   3. Component  — per-component exceptions live next to the component.
  *
  * Light: crisp porcelain canvas, navy display type, coral primary action.
- * Dark:  neutralised deep slate (chroma pulled down so it reads calm, not
- *        "cosmic blue"), hairline borders, coral held slightly desaturated.
+ * Dark:  deep brand-navy canvas built from the logo badge gradient
+ *        (#1E2761 → #14182B) — indigo hue 278 with real chroma so it reads
+ *        "cosmic study", coral/sun/mint accents kept vivid on top.
  */
 
 @theme inline {
@@ -136,12 +137,17 @@
   --slate-900: oklch(0.208 0.040 266);
   --slate-950: oklch(0.204 0.040 277);
 
-  /* neutralised dark canvas ramp — low chroma, calm not cosmic */
-  --ink-900: oklch(0.165 0.012 255);
-  --ink-850: oklch(0.196 0.013 255);
-  --ink-800: oklch(0.223 0.014 255);
-  --ink-750: oklch(0.262 0.016 255);
-  --ink-700: oklch(0.322 0.018 255);
+  /* Brand-navy dark canvas ramp — the SheraTutor logo badge gradient
+     (#1E2761 → #14182B) resolved into a scale. Hue 278, real chroma so it
+     reads as deep indigo "cosmic study", not neutral graphite. ink-900 is
+     the page canvas; ink-850 the raised panel/card (≈ the badge navy). The
+     step between them is wide enough that cards lift off the page without a
+     heavy border. */
+  --ink-900: oklch(0.171 0.044 278);
+  --ink-850: oklch(0.223 0.055 278);
+  --ink-800: oklch(0.262 0.058 278);
+  --ink-750: oklch(0.303 0.055 278);
+  --ink-700: oklch(0.362 0.050 278);
 
   --coral-300: oklch(0.820 0.090 33);
   --coral-400: oklch(0.760 0.140 33);
@@ -186,13 +192,14 @@
   --popover: var(--white);
   --popover-foreground: var(--slate-900);
 
-  /* Primary action = coral. Display type = navy (--heading). */
+  /* Primary action = coral. Display type = brand navy (--heading), the
+     SheraTutor logo indigo (#1E2761 / #14182B) — not a neutral near-black. */
   --primary: var(--coral-500);
   --primary-foreground: var(--white);
   --cta: var(--coral-500);
   --cta-foreground: var(--white);
-  --heading: var(--slate-950);
-  --navy: var(--slate-950);
+  --heading: oklch(0.27 0.10 273);
+  --navy: oklch(0.27 0.10 273);
 
   --secondary: var(--slate-100);
   --secondary-foreground: var(--slate-800);
@@ -265,17 +272,19 @@
   --popover-foreground: var(--slate-100);
 
   --primary: var(--coral-400);
-  --primary-foreground: oklch(0.205 0.02 30);
+  /* text on coral = deep brand navy, the SheraTutor colour pairing */
+  --primary-foreground: oklch(0.19 0.045 278);
   --cta: var(--coral-400);
-  --cta-foreground: oklch(0.205 0.02 30);
+  --cta-foreground: oklch(0.19 0.045 278);
   --heading: var(--slate-50);
-  --navy: var(--ink-850);
+  /* brand badge navy (#1E2761), nudged brighter so it carries white text */
+  --navy: oklch(0.34 0.10 277);
 
   --secondary: var(--ink-750);
   --secondary-foreground: var(--slate-200);
 
   --muted: var(--ink-800);
-  --muted-foreground: var(--slate-400);
+  --muted-foreground: oklch(0.72 0.035 278);
 
   --accent: var(--ink-750);
   --accent-foreground: var(--slate-100);
@@ -293,9 +302,9 @@
   --mark-deduction: var(--red-400);
   --mark-deduction-foreground: oklch(0.2 0.02 20);
 
-  --border: oklch(1 0 0 / 8%);
-  --input: oklch(1 0 0 / 12%);
-  --ring: var(--slate-300);
+  --border: oklch(0.9 0.03 278 / 12%);
+  --input: oklch(0.9 0.03 278 / 16%);
+  --ring: oklch(0.82 0.04 278);
 
   --paper: var(--ink-900);
   --coral: var(--coral-400);
@@ -305,11 +314,11 @@
   --sidebar: var(--ink-850);
   --sidebar-foreground: var(--slate-100);
   --sidebar-primary: var(--coral-400);
-  --sidebar-primary-foreground: oklch(0.205 0.02 30);
+  --sidebar-primary-foreground: oklch(0.19 0.045 278);
   --sidebar-accent: var(--ink-750);
   --sidebar-accent-foreground: var(--slate-100);
-  --sidebar-border: oklch(1 0 0 / 8%);
-  --sidebar-ring: var(--slate-300);
+  --sidebar-border: oklch(0.9 0.03 278 / 12%);
+  --sidebar-ring: oklch(0.82 0.04 278);
 
   --chart-1: var(--coral-400);
   --chart-2: var(--emerald-400);
@@ -347,6 +356,16 @@
 
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
+  }
+
+  /* In-page anchor targets (e.g. the "Join the Waitlist" CTA → #waitlist-section)
+     land with breathing room and a brief coral ring so the eye catches them. */
+  :target {
+    scroll-margin-top: 2rem;
+  }
+  #waitlist-section:target {
+    animation: anchor-land 1.4s ease-out;
   }
 
   h1, h2, h3, h4 {
@@ -372,6 +391,12 @@
       scroll-behavior: auto !important;
     }
   }
+}
+
+@keyframes anchor-land {
+  0%   { box-shadow: 0 0 0 0 color-mix(in oklch, var(--cta) 55%, transparent); }
+  40%  { box-shadow: 0 0 0 4px color-mix(in oklch, var(--cta) 40%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in oklch, var(--cta) 0%, transparent); }
 }
 
 @utility font-tabular {

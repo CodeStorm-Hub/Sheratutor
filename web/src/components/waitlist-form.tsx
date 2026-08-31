@@ -9,8 +9,12 @@ const initialState: WaitlistState = { status: 'idle' };
 
 export function WaitlistForm() {
   const [state, formAction, pending] = useActionState(joinWaitlist, initialState);
+  const [role, setRole] = useState<'student' | 'guardian'>('student');
   const [isMinor, setIsMinor] = useState(true);
   const { language, t } = useLanguage();
+
+  const isGuardian = role === 'guardian';
+  const showConsent = isGuardian || isMinor;
 
   if (state.status === 'success') {
     return (
@@ -53,6 +57,32 @@ export function WaitlistForm() {
         boxSizing: 'border-box',
       }}
     >
+      <input type="hidden" name="signupRole" value={role} />
+
+      <div
+        role="radiogroup"
+        aria-label={t('form.role_student') + ' / ' + t('form.role_guardian')}
+        className="grid w-full grid-cols-2 gap-2 rounded-xl border border-border bg-muted/40 p-1"
+      >
+        {(['student', 'guardian'] as const).map((r) => (
+          <button
+            key={r}
+            type="button"
+            role="radio"
+            aria-checked={role === r}
+            onClick={() => setRole(r)}
+            className={
+              'cursor-pointer rounded-lg px-3 py-2 text-xs font-semibold transition-colors ' +
+              (role === r
+                ? 'bg-cta text-cta-foreground shadow-sm'
+                : 'text-muted-foreground hover:text-foreground')
+            }
+          >
+            {r === 'student' ? t('form.role_student') : t('form.role_guardian')}
+          </button>
+        ))}
+      </div>
+
       <div style={{ width: '100%' }}>
         <label
           htmlFor="fullName"
@@ -60,11 +90,12 @@ export function WaitlistForm() {
             display: 'block',
             fontSize: 12,
             fontWeight: 600,
-            color: 'var(--navy)',
+            color: 'var(--foreground)',
             marginBottom: 6,
           }}
         >
-          {t('form.name_label')} <span style={{ color: 'var(--coral)' }}>*</span>
+          {isGuardian ? t('form.name_label_guardian') : t('form.name_label')}{' '}
+          <span style={{ color: 'var(--coral)' }}>*</span>
         </label>
         <input
           id="fullName"
@@ -80,7 +111,7 @@ export function WaitlistForm() {
             padding: '10px 14px',
             fontSize: 13,
             fontFamily: 'Inter, sans-serif',
-            background: 'var(--card)',
+            background: 'var(--background)',
             color: 'var(--foreground)',
             boxSizing: 'border-box',
           }}
@@ -115,7 +146,7 @@ export function WaitlistForm() {
             padding: '10px 14px',
             fontSize: 13,
             fontFamily: 'Space Mono, monospace',
-            background: 'var(--card)',
+            background: 'var(--background)',
             color: 'var(--foreground)',
             boxSizing: 'border-box',
           }}
@@ -149,7 +180,7 @@ export function WaitlistForm() {
             padding: '10px 14px',
             fontSize: 13,
             fontFamily: 'Inter, sans-serif',
-            background: 'var(--card)',
+            background: 'var(--background)',
             color: 'var(--foreground)',
             boxSizing: 'border-box',
           }}
@@ -183,7 +214,7 @@ export function WaitlistForm() {
               padding: '10px 12px',
               fontSize: 13,
               fontFamily: 'Inter, sans-serif',
-              background: 'var(--card)',
+              background: 'var(--background)',
               color: 'var(--foreground)',
               boxSizing: 'border-box',
             }}
@@ -223,7 +254,7 @@ export function WaitlistForm() {
               padding: '10px 12px',
               fontSize: 13,
               fontFamily: 'Space Mono, monospace',
-              background: 'var(--card)',
+              background: 'var(--background)',
               color: 'var(--foreground)',
               boxSizing: 'border-box',
             }}
@@ -231,24 +262,28 @@ export function WaitlistForm() {
         </div>
       </div>
 
-      <div className="flex items-center gap-2 mt-0.5">
-        <input
-          id="isMinor"
-          name="isMinor"
-          type="checkbox"
-          checked={isMinor}
-          onChange={(e) => setIsMinor(e.target.checked)}
-          className="w-4 h-4 cursor-pointer accent-primary shrink-0"
-        />
-        <label
-          htmlFor="isMinor"
-          className="text-xs text-foreground cursor-pointer select-none"
-        >
-          {t('form.minor_checkbox')}
-        </label>
-      </div>
+      {isGuardian ? (
+        <input type="hidden" name="isMinor" value="on" />
+      ) : (
+        <div className="flex items-center gap-2 mt-0.5">
+          <input
+            id="isMinor"
+            name="isMinor"
+            type="checkbox"
+            checked={isMinor}
+            onChange={(e) => setIsMinor(e.target.checked)}
+            className="w-4 h-4 cursor-pointer accent-primary shrink-0"
+          />
+          <label
+            htmlFor="isMinor"
+            className="text-xs text-foreground cursor-pointer select-none"
+          >
+            {t('form.minor_checkbox')}
+          </label>
+        </div>
+      )}
 
-      {isMinor && (
+      {showConsent && (
         <div className="rounded-xl bg-card border border-border p-3.5 flex flex-col gap-2.5 w-full max-w-full box-border">
           <div className="flex items-start gap-2">
             <ShieldCheck size={16} className="text-muted-foreground shrink-0 mt-0.5" />
@@ -267,7 +302,7 @@ export function WaitlistForm() {
               htmlFor="guardianConsentAcknowledged"
               className="text-xs text-foreground leading-snug cursor-pointer select-none"
             >
-              {t('form.consent_checkbox')}
+              {isGuardian ? t('form.consent_checkbox_guardian') : t('form.consent_checkbox')}
             </label>
           </div>
         </div>

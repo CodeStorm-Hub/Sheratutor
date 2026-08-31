@@ -10,6 +10,7 @@ const WaitlistInputSchema = z.object({
   email: z.string().email().optional().or(z.literal("")),
   examType,
   targetExamYear,
+  signupRole: z.enum(["student", "guardian"]).default("student"),
   isMinor: z.boolean(),
   guardianConsentAcknowledged: z.boolean(),
 });
@@ -20,7 +21,9 @@ export type WaitlistState = {
 };
 
 export async function joinWaitlist(_prev: WaitlistState, formData: FormData): Promise<WaitlistState> {
-  const isMinor = formData.get("isMinor") === "on";
+  const signupRole = formData.get("signupRole") === "guardian" ? "guardian" : "student";
+  // A parent/guardian signup is always on behalf of a student we treat as a minor.
+  const isMinor = signupRole === "guardian" || formData.get("isMinor") === "on";
   const guardianConsentAcknowledged = formData.get("guardianConsentAcknowledged") === "on";
 
   const parsed = WaitlistInputSchema.safeParse({
@@ -29,6 +32,7 @@ export async function joinWaitlist(_prev: WaitlistState, formData: FormData): Pr
     email: formData.get("email") || "",
     examType: formData.get("examType"),
     targetExamYear: formData.get("targetExamYear"),
+    signupRole,
     isMinor,
     guardianConsentAcknowledged,
   });
@@ -58,6 +62,7 @@ export async function joinWaitlist(_prev: WaitlistState, formData: FormData): Pr
     email: parsed.data.email || null,
     exam_type: parsed.data.examType,
     target_exam_year: parsed.data.targetExamYear,
+    signup_role: parsed.data.signupRole,
     is_minor: parsed.data.isMinor,
     guardian_consent_acknowledged: parsed.data.guardianConsentAcknowledged,
   });
