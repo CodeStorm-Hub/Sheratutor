@@ -61,8 +61,9 @@ export async function joinWaitlist(_prev: WaitlistState, formData: FormData): Pr
     };
   }
 
+  const verifyToken = crypto.randomUUID();
   const supabase = await createClient();
-  const { data: inserted, error } = await supabase
+  const { error } = await supabase
     .from("waitlist_signups")
     .insert({
       full_name: parsed.data.fullName,
@@ -73,9 +74,9 @@ export async function joinWaitlist(_prev: WaitlistState, formData: FormData): Pr
       signup_role: parsed.data.signupRole,
       is_minor: parsed.data.isMinor,
       guardian_consent_acknowledged: parsed.data.guardianConsentAcknowledged,
-    })
-    .select("verify_token")
-    .maybeSingle();
+      verify_token: verifyToken,
+      email_verified: false,
+    });
 
   if (error) {
     if (error.code === "23505") {
@@ -85,22 +86,19 @@ export async function joinWaitlist(_prev: WaitlistState, formData: FormData): Pr
   }
 
   // Send double opt-in verification email asynchronously in the background
-  if (inserted?.verify_token) {
-    const token = inserted.verify_token;
-    after(async () => {
-      try {
-        await sendWaitlistVerification({
-          to: parsed.data.email,
-          fullName: parsed.data.fullName,
-          verifyToken: token,
-          examType: parsed.data.examType,
-          targetExamYear: parsed.data.targetExamYear,
-        });
-      } catch (err) {
-        console.error("[WaitlistEmailSendFailed]", err);
-      }
-    });
-  }
+  after(async () => {
+    try {
+      await sendWaitlistVerification({
+        to: parsed.data.email,
+        fullName: parsed.data.fullName,
+        verifyToken,
+        examType: parsed.data.examType,
+        targetExamYear: parsed.data.targetExamYear,
+      });
+    } catch (err) {
+      console.error("[WaitlistEmailSendFailed]", err);
+    }
+  });
 
   return {
     status: "success",
