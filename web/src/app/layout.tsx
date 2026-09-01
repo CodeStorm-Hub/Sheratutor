@@ -109,7 +109,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="bn"
+      lang="en"
       suppressHydrationWarning
       className={`${baloo2.variable} ${balooDa2.variable} ${inter.variable} ${spaceMono.variable} ${notoSansBengali.variable}`}
     >

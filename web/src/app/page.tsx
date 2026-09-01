@@ -303,13 +303,13 @@ async function CachedLandingUI({ lang }: { lang: Language }) {
 
 async function DynamicLanding() {
   const cookieStore = await cookies();
-  const lang: Language = cookieStore.get('sheratutor_lang')?.value === 'en' ? 'en' : 'bn';
+  const lang: Language = cookieStore.get('sheratutor_lang')?.value === 'bn' ? 'bn' : 'en';
   return <CachedLandingUI lang={lang} />;
 }
 
 export default function LandingPage() {
   return (
-    <React.Suspense fallback={<CachedLandingUI lang="bn" />}>
+    <React.Suspense fallback={<CachedLandingUI lang="en" />}>
       <DynamicLanding />
     </React.Suspense>
   );
