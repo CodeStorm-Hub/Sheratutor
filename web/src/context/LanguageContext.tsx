@@ -15,8 +15,8 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  // Always initialize with 'bn' on both server and initial client render to avoid SSR hydration mismatches
-  const [language, setLanguageState] = useState<Language>('bn');
+  // Always initialize with 'en' on both server and initial client render to avoid SSR hydration mismatches
+  const [language, setLanguageState] = useState<Language>('en');
 
   const setLanguageCookie = (lang: Language) => {
     const isSecure = typeof window !== 'undefined' && window.location.protocol === 'https:';
