@@ -19,6 +19,10 @@ export const educationBoard = z.enum([
 
 export const examType = z.enum(['SSC', 'HSC']);
 
+/** The landing waitlist also accepts university-admission aspirants, who have no
+ *  SSC/HSC profile yet. Kept separate so onboarding / profile stay SSC-or-HSC. */
+export const waitlistExamType = z.enum(['SSC', 'HSC', 'ADMISSION']);
+
 export const academicGroup = z.enum(['SCIENCE', 'HUMANITIES', 'BUSINESS_STUDIES']);
 
 export const targetExamYear = z.coerce.number().int().min(2026).max(2030);

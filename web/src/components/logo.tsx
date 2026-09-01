@@ -64,7 +64,7 @@ export function Logo({
       </span>
       {tagline && (
         <span className="ml-1 hidden font-mono text-3xs text-muted-foreground sm:inline">
-          HSC &amp; SSC
+          SSC, HSC &amp; University Admission
         </span>
       )}
     </div>

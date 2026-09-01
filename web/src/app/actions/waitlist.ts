@@ -3,14 +3,14 @@
 import { z } from "zod";
 import { after } from "next/server";
 import { createClient } from "@/lib/supabase/server";
-import { bdPhone, examType, targetExamYear } from "@/lib/validation";
+import { bdPhone, waitlistExamType, targetExamYear } from "@/lib/validation";
 import { sendWaitlistVerification } from "@/lib/email/send-waitlist-verification";
 
 const WaitlistInputSchema = z.object({
   fullName: z.string().min(2, "Enter your full name"),
   email: z.string().email("Please enter a valid email address"),
   phone: bdPhone.optional().or(z.literal("")),
-  examType,
+  examType: waitlistExamType,
   targetExamYear,
   signupRole: z.enum(["student", "guardian"]).default("student"),
   isMinor: z.boolean(),

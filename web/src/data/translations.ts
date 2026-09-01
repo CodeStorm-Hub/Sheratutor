@@ -4,7 +4,7 @@ export const translations = {
   bn: {
     // Brand & Common
     'brand.name': 'SheraTutor',
-    'brand.tagline': 'HSC ও SSC',
+    'brand.tagline': 'SSC, HSC ও ভর্তি পরীক্ষা',
     'common.sign_in': 'সাইন ইন',
     'common.open_workspace': 'ওয়ার্কস্পেস খুলুন',
     'common.workspace': 'ওয়ার্কস্পেস',
@@ -248,7 +248,7 @@ export const translations = {
   en: {
     // Brand & Common
     'brand.name': 'SheraTutor',
-    'brand.tagline': 'HSC & SSC',
+    'brand.tagline': 'SSC, HSC & University Admission',
     'common.sign_in': 'Sign in',
     'common.open_workspace': 'Open Workspace',
     'common.workspace': 'Workspace',

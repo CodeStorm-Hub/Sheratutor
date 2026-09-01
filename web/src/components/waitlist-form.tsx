@@ -230,6 +230,7 @@ export function WaitlistForm() {
           >
             <option value="HSC">{language === 'bn' ? 'HSC (এইচএসসি)' : 'HSC (Higher Secondary)'}</option>
             <option value="SSC">{language === 'bn' ? 'SSC (এসএসসি)' : 'SSC (Secondary)'}</option>
+            <option value="ADMISSION">{language === 'bn' ? 'বিশ্ববিদ্যালয় ভর্তি' : 'University Admission'}</option>
           </select>
         </div>
 
