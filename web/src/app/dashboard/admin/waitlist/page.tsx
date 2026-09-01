@@ -10,6 +10,8 @@ export const metadata = {
   description: 'Manage and export waitlist registrations and double opt-in verifications.',
 };
 
+export const instant = false;
+
 export default async function AdminWaitlistPage() {
   const { user } = await getUser();
 
