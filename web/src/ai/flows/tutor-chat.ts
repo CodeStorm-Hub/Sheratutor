@@ -31,18 +31,16 @@ export const SAFE_ESCALATION_MESSAGE_BN =
   "অনুগ্রহ করে এখনই কাছের কোনো বিশ্বস্ত বড় মানুষ, শিক্ষক বা Kaan Pete Roi (হেল্পলাইন: ০৯৬১৩৪২৭৮০০) এর সাথে কথা বলো।";
 
 /**
- * Safety net for models that ignore rule #2 and wrap math in plain ()/[]
- * instead of $/$$ — remark-math only recognizes dollar delimiters, so
- * anything else renders as literal text. Only touches parens/brackets that
- * contain a LaTeX command (a backslash + letters, e.g. \frac, \Delta) so
- * ordinary prose parentheses are left alone.
+ * Normalizes standard LaTeX delimiters (\[ ... \] and \( ... \)) to dollar
+ * delimiters ($$ ... $$ and $ ... $) supported by remark-math.
+ * Does NOT replace generic parentheses or brackets to prevent corrupting
+ * inner LaTeX commands like \left(...\right) or Bengali text in parentheses.
  */
 export function normalizeLatexDelimiters(text: string): string {
+  if (!text) return "";
   return text
-    .replace(/\\\[([\s\S]*?)\\\]/g, (_, inner) => `$$${inner}$$`)
-    .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner}$`)
-    .replace(/\(([^()\n]*\\[a-zA-Z][^()\n]*)\)/g, (_, inner) => `$${inner}$`)
-    .replace(/\[([^[\]\n]*\\[a-zA-Z][^[\]\n]*)\]/g, (_, inner) => `$$${inner}$$`);
+    .replace(/\\\[([\s\S]*?)\\\]/g, (_, inner) => `\n$$\n${inner.trim()}\n$$\n`)
+    .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner.trim()}$`);
 }
 
 /**
@@ -144,8 +142,9 @@ export function buildTutorPrompt(params: {
     `Do NOT open with greetings or introductory salutations — start immediately with the explanation or guiding question.\n` +
     `2. Keep the response concise and focused (under 250 words, 2-3 short paragraphs or bullet points).\n` +
     `3. Write in Bengali script and English for scientific terminology, units, and LaTeX notation.\n` +
-    `4. Every formula, physical quantity, and equation MUST be wrapped in LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
-    `Example: $F = ma$, $s = ut + \\frac{1}{2}at^2$, $\\text{ms}^{-1}$.\n` +
+    `4. Every mathematical formula, physical quantity, and equation MUST be wrapped in standard LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
+    `Example: $F = ma$, $s = ut + \\frac{1}{2}at^2$, $\\text{ms}^{-1}$, $\\tan^{-1}\\left(\\frac{1}{5}\\right)$. ` +
+    `CRITICAL: NEVER insert dollar signs inside LaTeX function arguments (like \\left(...\\) or \\frac{...}{...}), and never wrap Bengali prose or sentences in dollar signs.\n` +
     `5. Adhere to official NCTB textbook curriculum definitions and formulas.\n` +
     `6. Provide relatable real-life Bangladeshi analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls).\n` +
     rule6 +
