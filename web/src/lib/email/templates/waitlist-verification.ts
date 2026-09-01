@@ -13,6 +13,12 @@ export function renderWaitlistVerificationEmail({
 }: WaitlistVerificationTemplateOptions) {
   const subject = 'Confirm your SheraTutor priority waitlist spot | সেরাটিউটর ওয়েটলিস্ট নিশ্চিত করুন';
 
+  // 'ADMISSION' aspirants have no board exam; keep the target line readable.
+  const targetLabel =
+    examType === 'ADMISSION'
+      ? `University Admission (${targetExamYear || 2026})`
+      : `${examType || 'HSC'} Examination (${targetExamYear || 2026})`;
+
   const html = `
 <!DOCTYPE html>
 <html lang="bn">
@@ -141,7 +147,7 @@ export function renderWaitlistVerificationEmail({
       </p>
 
       <div class="highlight-box">
-        <strong>Selected Target:</strong> ${examType || 'HSC'} Examination (${targetExamYear || 2026})
+        <strong>Selected Target:</strong> ${targetLabel}
       </div>
 
       <div class="btn-wrap">
@@ -174,7 +180,7 @@ SheraTutor — Confirm your priority waitlist spot
 
 Hello ${fullName || 'there'},
 
-Thank you for requesting early access to SheraTutor (${examType || 'HSC'} ${targetExamYear || 2026}).
+Thank you for requesting early access to SheraTutor (${targetLabel}).
 
 Please verify your email to secure your priority waitlist position:
 ${verifyUrl}
