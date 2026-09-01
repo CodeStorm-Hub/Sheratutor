@@ -12,6 +12,10 @@ export default function MathMarkdownView({
   text: string;
   inline?: boolean;
 }) {
+  const sanitizedText = (text || '')
+    .replace(/\\\[([\s\S]*?)\\\]/g, (_, inner) => `\n$$\n${inner.trim()}\n$$\n`)
+    .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner.trim()}$`);
+
   return (
     <ReactMarkdown
       remarkPlugins={[remarkMath]}
@@ -40,7 +44,7 @@ export default function MathMarkdownView({
         ),
       }}
     >
-      {text}
+      {sanitizedText}
     </ReactMarkdown>
   );
 }
