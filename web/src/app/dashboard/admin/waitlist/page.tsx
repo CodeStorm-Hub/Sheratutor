@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { redirect } from 'next/navigation';
+import { connection } from 'next/server';
 import { getUser } from '@/lib/supabase/auth';
 import { getServiceRoleClient } from '@/lib/supabase/service-role';
 import { WaitlistTable, type WaitlistRecord } from './waitlist-table';
 import { Users, ShieldAlert } from 'lucide-react';
+import DashboardLoading from '../../loading';
 
 export const metadata = {
   title: 'Waitlist Operations — SheraTutor Admin',
   description: 'Manage and export waitlist registrations and double opt-in verifications.',
 };
 
-export const instant = false;
-
-export default async function AdminWaitlistPage() {
+async function WaitlistContent() {
+  await connection();
   const { user } = await getUser();
 
   if (!user) {
@@ -92,3 +93,12 @@ export default async function AdminWaitlistPage() {
     </div>
   );
 }
+
+export default function AdminWaitlistPage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <WaitlistContent />
+    </Suspense>
+  );
+}
+
