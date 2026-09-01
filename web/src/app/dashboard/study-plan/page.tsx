@@ -1,14 +1,17 @@
+import { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { PlannerPageClient } from '@/components/pages/PlannerPageClient';
+import DashboardLoading from '../loading';
 
 type ScheduleDay = {
   day: number;
   chapters: { chapterId: string; title: string; subject: string; weaknessScore: number }[];
 };
 
-export default async function StudyPlanPage() {
+async function StudyPlanContent() {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
   const { data: profile } = await supabase
     .from('student_profiles')
@@ -16,23 +19,22 @@ export default async function StudyPlanPage() {
     .eq('user_id', user?.id ?? '')
     .maybeSingle();
 
-  const { data: plans } = profile
-    ? await supabase
-        .from('study_plans')
-        .select('*')
-        .eq('student_id', profile.id)
-        .eq('is_active', true)
-        .order('created_at', { ascending: false })
-        .limit(1)
-    : { data: null };
-
-  const { data: weaknesses } = profile
-    ? await supabase
-        .from('weakness_logs')
-        .select('*, chapters(title_en, subjects(name_en))')
-        .eq('student_id', profile.id)
-        .order('weakness_score', { ascending: false })
-    : { data: null };
+  const [{ data: plans }, { data: weaknesses }] = profile
+    ? await Promise.all([
+        supabase
+          .from('study_plans')
+          .select('*')
+          .eq('student_id', profile.id)
+          .eq('is_active', true)
+          .order('created_at', { ascending: false })
+          .limit(1),
+        supabase
+          .from('weakness_logs')
+          .select('*, chapters(title_en, subjects(name_en))')
+          .eq('student_id', profile.id)
+          .order('weakness_score', { ascending: false }),
+      ])
+    : [{ data: null }, { data: null }];
 
   const plan = plans?.[0];
   const schedule = plan?.daily_schedule_json as { cycleDays: number; days: ScheduleDay[] } | undefined;
@@ -44,29 +46,29 @@ export default async function StudyPlanPage() {
   let dynamicTasks = [
     {
       id: "fallback-1",
-      title: 'Physics: Motion & Measurements Practice',
-      subtitle: '25 min · NCTB syllabus standard',
+      title: 'Physics: Motion & Kinematics Practice',
+      subtitle: '25 min · NCTB Chapter 2 standard',
       time: '09:30',
       checked: true,
     },
     {
       id: "fallback-2",
-      title: 'Chemistry: Chemical Reactions Review',
-      subtitle: '35 min · Balancing equations',
+      title: 'Physics: Work, Power & Energy Formulas',
+      subtitle: '35 min · Kinetic & Potential energy calculations',
       time: '11:00',
       checked: true,
     },
     {
       id: "fallback-3",
-      title: 'Mathematics: Problem Solving Practice',
-      subtitle: '20 min · Board question drill',
+      title: 'Physics: Light Reflection & Ray Diagrams',
+      subtitle: '20 min · Mirror formula derivations',
       time: '16:30',
       checked: false,
     },
     {
       id: "fallback-4",
-      title: 'English: Written Expression & Grammar',
-      subtitle: '15 min · Formal letter format',
+      title: 'Physics: Current Electricity & Ohm\'s Law',
+      subtitle: '15 min · Resistance and Circuit drills',
       time: '19:00',
       checked: false,
     },
@@ -113,5 +115,13 @@ export default async function StudyPlanPage() {
       recommendationBody={recBody}
       masteryPercent={masteryPercent}
     />
+  );
+}
+
+export default function StudyPlanPage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <StudyPlanContent />
+    </Suspense>
   );
 }

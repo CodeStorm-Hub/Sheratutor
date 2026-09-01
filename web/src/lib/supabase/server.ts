@@ -1,9 +1,11 @@
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
+import { connection } from "next/server";
 import type { Database } from "@/lib/supabase/types";
 
 /** Server Component / Route Handler client — respects the caller's session and RLS. */
 export async function createClient() {
+  await connection();
   const cookieStore = await cookies();
 
   return createServerClient<Database>(

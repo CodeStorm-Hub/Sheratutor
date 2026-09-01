@@ -1,6 +1,6 @@
 "use client";
 
-import { useActionState, useMemo, useState } from "react";
+import { useActionState, useEffect, useState } from "react";
 import { completeOnboarding, type OnboardingState } from "@/app/actions/onboarding";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -25,13 +25,17 @@ const BOARDS = [
 export default function OnboardingPage() {
   const [state, formAction, pending] = useActionState(completeOnboarding, initialState);
   const [dob, setDob] = useState("2008-01-15");
+  const [minor, setMinor] = useState(true);
 
-  const minor = useMemo(() => {
-    if (!dob) return true; // default to the stricter path until known
+  useEffect(() => {
+    if (!dob) {
+      setMinor(true);
+      return;
+    }
     const d = new Date(dob);
     const cutoff = new Date();
     cutoff.setFullYear(cutoff.getFullYear() - 18);
-    return d > cutoff;
+    setMinor(d > cutoff);
   }, [dob]);
 
   return (

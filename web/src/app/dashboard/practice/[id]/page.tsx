@@ -1,10 +1,20 @@
+import { Suspense } from 'react';
+import { cacheLife } from 'next/cache';
 import { createClient } from "@/lib/supabase/server";
+import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 import { notFound } from "next/navigation";
-import QuestionPaperViewerClient from "@/components/pages/QuestionPaperViewerClient";
+import QuestionPaperViewerClient, {
+  type Question,
+} from "@/components/pages/QuestionPaperViewerClient";
+import DashboardLoading from '../../loading';
 
-export default async function QuestionPaperPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const supabase = await createClient();
+async function getQuestionPaper(id: string) {
+  'use cache';
+  cacheLife('days');
+  const supabase = createSupabaseClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
   
   const { data: paper } = await supabase
     .from("question_papers")
@@ -27,12 +37,30 @@ export default async function QuestionPaperPage({ params }: { params: Promise<{ 
     `)
     .eq("id", id)
     .single();
+    
+  return paper;
+}
+
+async function QuestionPaperContent({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params;
+  
+  const paper = await getQuestionPaper(id);
 
   if (!paper) {
     notFound();
   }
 
-  const sortedQuestions = (paper.questions as any[]).sort((a, b) => a.question_number - b.question_number);
+  const sortedQuestions = [...((paper.questions ?? []) as Question[])].sort(
+    (a, b) => a.question_number - b.question_number,
+  );
 
   return <QuestionPaperViewerClient paper={paper} questions={sortedQuestions} />;
+}
+
+export default function QuestionPaperPage({ params }: { params: Promise<{ id: string }> }) {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <QuestionPaperContent params={params} />
+    </Suspense>
+  );
 }

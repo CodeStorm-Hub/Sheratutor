@@ -1,8 +1,11 @@
+import { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
 import { ExamsPageClient } from '@/components/pages/ExamsPageClient';
+import DashboardLoading from '../loading';
 
-export default async function BoardSimulatorPage({ searchParams }: { searchParams: { paperId?: string } }) {
+async function BoardSimulatorContent({ searchParams }: { searchParams: Promise<{ paperId?: string }> }) {
   const supabase = await createClient();
+  const { paperId } = await searchParams;
   
   let query = supabase
     .from('question_papers')
@@ -16,11 +19,19 @@ export default async function BoardSimulatorPage({ searchParams }: { searchParam
       )
     `);
     
-  if (searchParams.paperId) {
-    query = query.eq('id', searchParams.paperId);
+  if (paperId) {
+    query = query.eq('id', paperId);
   }
   
   const { data: papers } = await query.limit(1);
 
   return <ExamsPageClient simulator={true} papers={papers ?? []} />;
+}
+
+export default function BoardSimulatorPage({ searchParams }: { searchParams: Promise<{ paperId?: string }> }) {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <BoardSimulatorContent searchParams={searchParams} />
+    </Suspense>
+  );
 }

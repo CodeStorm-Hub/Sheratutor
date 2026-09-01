@@ -1,258 +1,274 @@
-'use client';
-
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Link from 'next/link';
+import type { Route } from 'next';
+import { cookies } from 'next/headers';
+import { cacheLife } from 'next/cache';
 import { Logo } from '@/components/logo';
 import { WaitlistForm } from '@/components/waitlist-form';
 import { KhataPreview } from '@/components/khata-preview';
 import { LandingRubricDemo } from '@/components/landing-rubric-demo';
-import { Tag } from '@/components/Tag';
-import { Camera, ScanText, ClipboardCheck, ArrowRight, BookCheck, ShieldCheck, Award } from 'lucide-react';
-import { useLanguage } from '@/context/LanguageContext';
+import { StudentCount } from '@/components/landing/student-count';
+import { CopyrightYear } from '@/components/landing/copyright-year';
+import {
+  ArrowRight,
+  BookCheck,
+  ShieldCheck,
+  Award,
+  Camera,
+  ScanText,
+  ClipboardCheck,
+} from 'lucide-react';
 import { LanguageToggle } from '@/components/LanguageToggle';
-import { createClient } from '@/lib/supabase/client';
+import { ThemeToggle } from '@/components/ThemeToggle';
+import { cn } from '@/lib/utils';
+import { translations, type Language, type TranslationKey } from '@/data/translations';
 
-export default function LandingPage() {
-  const { t, language } = useLanguage();
-  const [studentCount, setStudentCount] = useState(2892);
+type Accent = 'mint' | 'sun' | 'coral' | 'mark' | 'indigo';
 
-  useEffect(() => {
-    const fetchCount = async () => {
-      try {
-        const supabase = createClient();
-        const { count } = await supabase
-          .from('student_profiles')
-          .select('*', { count: 'exact', head: true });
-        if (count !== null && count > 0) {
-          setStudentCount(2892 + count);
-        }
-      } catch {
-        // use fallback count
-      }
-    };
-    fetchCount();
-  }, []);
+/** Per-section accent palette — all drawn from the brand tokens.
+ * Class strings are spelled out in full so Tailwind's scanner picks them up. */
+const ACCENT: Record<
+  Accent,
+  { text: string; chip: string; soft: string; bar: string; ring: string; iconWrap: string }
+> = {
+  mint: { text: 'text-mint', chip: 'border-mint/45 bg-mint/15 text-mint', soft: 'bg-mint/15 text-mint', bar: 'bg-mint', ring: 'border-mint/25', iconWrap: 'bg-mint/12 text-mint' },
+  sun: { text: 'text-sun', chip: 'border-sun/50 bg-sun/18 text-sun', soft: 'bg-sun/18 text-sun', bar: 'bg-sun', ring: 'border-sun/30', iconWrap: 'bg-sun/15 text-sun' },
+  coral: { text: 'text-coral', chip: 'border-coral/45 bg-coral/15 text-coral', soft: 'bg-coral/15 text-coral', bar: 'bg-coral', ring: 'border-coral/25', iconWrap: 'bg-coral/12 text-coral' },
+  mark: { text: 'text-mark', chip: 'border-mark/45 bg-mark/15 text-mark', soft: 'bg-mark/15 text-mark', bar: 'bg-mark', ring: 'border-mark/25', iconWrap: 'bg-mark/12 text-mark' },
+  indigo: { text: 'text-navy', chip: 'border-navy/40 bg-navy/12 text-navy', soft: 'bg-navy/15 text-navy', bar: 'bg-navy', ring: 'border-navy/25', iconWrap: 'bg-navy/12 text-navy' },
+};
+
+function SectionHeading({
+  kicker,
+  title,
+  sub,
+  accent,
+  size = 'lg',
+  className,
+}: {
+  kicker?: string;
+  title: string;
+  sub?: string;
+  accent: Accent;
+  size?: 'lg' | 'md';
+  className?: string;
+}) {
+  const a = ACCENT[accent];
+  return (
+    <div className={cn('flex max-w-2xl flex-col items-start gap-4', className)}>
+      {kicker ? (
+        <span
+          className={cn(
+            'inline-flex items-center gap-2 rounded-full border px-3 py-1.5 font-mono text-[0.72rem] font-bold tracking-[0.18em] uppercase',
+            a.chip,
+          )}
+        >
+          <span className="size-2 rounded-full bg-current" />
+          {kicker}
+        </span>
+      ) : null}
+      <h2
+        className={cn(
+          'font-heading font-extrabold tracking-[-0.02em] text-balance text-heading',
+          size === 'lg'
+            ? 'text-[clamp(2rem,5.2vw,3rem)] leading-[1.04]'
+            : 'text-[clamp(1.6rem,3.6vw,2.15rem)] leading-[1.08]',
+        )}
+      >
+        {title}
+      </h2>
+      <span className={cn('h-1 rounded-full', a.bar, size === 'lg' ? 'w-20' : 'w-14')} />
+      {sub ? (
+        <p className="max-w-xl text-[0.9375rem] leading-relaxed text-muted-foreground">{sub}</p>
+      ) : null}
+    </div>
+  );
+}
+
+async function CachedLandingUI({ lang }: { lang: Language }) {
+  'use cache';
+  cacheLife('hours');
+
+  const isBn = lang === 'bn';
+  const dict = translations[lang] as Record<string, string>;
+  const en = translations.en as Record<string, string>;
+  const t = (key: TranslationKey | string) => dict[key] ?? en[key] ?? key;
 
   const howItWorks = [
-    {
-      icon: Camera,
-      title: t('landing.step1_title'),
-      body: t('landing.step1_desc'),
-      stepNum: '01',
-    },
-    {
-      icon: ScanText,
-      title: t('landing.step2_title'),
-      body: t('landing.step2_desc'),
-      stepNum: '02',
-    },
-    {
-      icon: ClipboardCheck,
-      title: t('landing.step3_title'),
-      body: t('landing.step3_desc'),
-      stepNum: '03',
-    },
+    { icon: Camera, title: t('landing.step1_title'), body: t('landing.step1_desc'), stepNum: '01', accent: 'coral' as Accent },
+    { icon: ScanText, title: t('landing.step2_title'), body: t('landing.step2_desc'), stepNum: '02', accent: 'sun' as Accent },
+    { icon: ClipboardCheck, title: t('landing.step3_title'), body: t('landing.step3_desc'), stepNum: '03', accent: 'mint' as Accent },
   ];
 
   const valueProps = [
-    {
-      eyebrow: t('landing.card1_eyebrow'),
-      title: t('landing.card1_title'),
-      body: t('landing.card1_desc'),
-      icon: BookCheck,
-    },
-    {
-      eyebrow: t('landing.card2_eyebrow'),
-      title: t('landing.card2_title'),
-      body: t('landing.card2_desc'),
-      icon: Award,
-    },
-    {
-      eyebrow: t('landing.card3_eyebrow'),
-      title: t('landing.card3_title'),
-      body: t('landing.card3_desc'),
-      icon: ShieldCheck,
-    },
+    { eyebrow: t('landing.card1_eyebrow'), title: t('landing.card1_title'), body: t('landing.card1_desc'), icon: BookCheck, accent: 'mark' as Accent },
+    { eyebrow: t('landing.card2_eyebrow'), title: t('landing.card2_title'), body: t('landing.card2_desc'), icon: Award, accent: 'mint' as Accent },
+    { eyebrow: t('landing.card3_eyebrow'), title: t('landing.card3_title'), body: t('landing.card3_desc'), icon: ShieldCheck, accent: 'coral' as Accent },
   ];
 
   return (
-    <div className="landing-container">
-      {/* Sticky Header */}
-      <header className="landing-header">
-        <Logo tagline />
-        <div className="landing-nav-actions">
-          <LanguageToggle />
-          <Link href="/login" className="landing-signin-btn">
-            {t('common.sign_in')}
-          </Link>
-          <Link href="/dashboard" className="primary-btn landing-cta-btn">
-            <span>{t('common.open_workspace')}</span> <ArrowRight size={14} />
-          </Link>
+    <div className="flex min-h-dvh w-full scroll-smooth flex-col overflow-x-hidden bg-background">
+      <header className="w-full border-b border-border">
+        <div className="mx-auto flex w-full max-w-[1240px] items-center justify-between gap-2 px-4 py-3.5 sm:gap-2.5 sm:px-6 sm:py-4">
+          <Logo tagline />
+          <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+            <ThemeToggle />
+            <LanguageToggle />
+          </div>
         </div>
       </header>
 
-      <main className="landing-main">
-        {/* Hero Section */}
-        <section className="landing-hero">
-          <div className="landing-hero-left">
-            <div className="flex items-center gap-2">
-              <Tag color="sun">{t('landing.badge')}</Tag>
-              <span className="font-mono text-xs text-muted-foreground font-bold">
-                {language === 'bn' ? 'SSC ও HSC ২০২৬-২০২৭' : 'SSC & HSC 2026-2027'}
+      <main className="mx-auto flex w-full max-w-[1240px] flex-1 flex-col items-center px-4 sm:px-6">
+        <section className="grid w-full items-center gap-10 py-12 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="flex w-full flex-col items-start gap-4">
+            <span className="inline-flex items-center gap-2 rounded-full border border-coral/40 bg-coral/10 px-3 py-1.5 text-xs font-bold tracking-tight text-coral">
+              <span className="relative flex size-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-coral/70" />
+                <span className="relative inline-flex size-2 rounded-full bg-coral" />
               </span>
-            </div>
+              {t('landing.badge')}
+            </span>
 
-            <h1 className="landing-hero-title">
+            <h1 className="font-heading text-[clamp(1.5rem,5.2vw,2.625rem)] leading-tight font-extrabold tracking-tight break-words text-heading">
               {t('landing.hero_title_1')}{' '}
-              <span className="text-coral block sm:inline">
-                {t('landing.hero_title_2')}
-              </span>
+              <span className="block text-coral sm:inline">{t('landing.hero_title_2')}</span>
             </h1>
 
-            <p className="landing-hero-desc">
+            <p className="text-[clamp(1.125rem,3.8vw,1.625rem)] leading-[1.7]">
+              <span className="box-decoration-clone rounded-md bg-coral/15 px-2 py-1 font-heading font-extrabold tracking-tight text-heading">
+                {t('landing.hero_tagline')}
+              </span>
+            </p>
+
+            <p className="max-w-[520px] text-[clamp(0.875rem,3.2vw,1.25rem)] leading-relaxed text-muted-foreground">
               {t('landing.hero_desc')}
             </p>
 
-            {/* Clear Primary CTAs */}
-            <div className="flex flex-wrap items-center gap-3 pt-2 w-full">
-              <Link
-                href="/dashboard"
-                className="px-6 py-3.5 rounded-xl bg-primary hover:bg-primary/90 text-primary-foreground font-semibold text-sm inline-flex items-center gap-2 shadow-md transition-all duration-150"
-              >
-                <span>{t('landing.start_free_cta')}</span>
-                <ArrowRight size={16} />
-              </Link>
+            <p className="text-[clamp(0.9375rem,3vw,1.125rem)] font-semibold text-coral">
+              {t('landing.hero_pitch')}
+            </p>
+
+            <div className="flex w-full flex-wrap items-center gap-3 pt-2">
               <a
-                href="#demo-section"
-                className="px-5 py-3.5 rounded-xl bg-card hover:bg-muted/80 text-foreground font-semibold text-sm inline-flex items-center gap-2 border border-border transition-all duration-150"
+                href="#waitlist-section"
+                className="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-primary-foreground shadow-md transition-all hover:opacity-90"
               >
-                <span>{t('landing.try_demo_cta')}</span>
+                <span>{t('landing.waitlist_cta')}</span>
+                <ArrowRight size={16} />
               </a>
             </div>
 
-            {/* Community Social Proof Banner */}
-            <div className="flex items-center gap-2 text-xs text-muted-foreground pt-1">
-              <span className="w-2 h-2 rounded-full bg-mint animate-pulse" />
-              <span>
-                {language === 'bn' ? (
-                  <>
-                    <strong className="text-foreground font-bold">
-                      {studentCount.toLocaleString('bn-BD')}+
-                    </strong>{' '}
-                    জন শিক্ষার্থী ইতিমধ্যে যুক্ত হয়েছে
-                  </>
-                ) : (
-                  <>
-                    <strong className="text-foreground font-bold">
-                      {studentCount.toLocaleString()}+
-                    </strong>{' '}
-                    students already practicing
-                  </>
-                )}
-              </span>
-            </div>
+            <StudentCount lang={lang} />
           </div>
 
-          <div className="landing-paper-preview">
-            <KhataPreview className="w-full max-w-sm drop-shadow-sm" />
+          <div className="flex w-full items-center justify-center overflow-hidden">
+            <KhataPreview className="w-full max-w-sm drop-shadow-sm" lang={lang} />
           </div>
         </section>
 
-        {/* Interactive Rubric Demo Section */}
-        <section id="demo-section" className="w-full py-10 flex flex-col gap-6">
-          <div className="flex flex-col gap-2 max-w-2xl">
-            <span className="font-mono text-xs font-bold text-accent-foreground uppercase tracking-wider">
-              {language === 'bn' ? 'সরাসরি ডেমো' : 'LIVE INTERACTIVE DEMO'}
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground m-0 font-heading">
-              {t('landing.curriculum_title')}
-            </h2>
-            <p className="text-sm text-muted-foreground m-0 leading-relaxed">
-              {t('landing.curriculum_subtitle')}
-            </p>
-          </div>
-
+        <section id="demo-section" className="flex w-full flex-col gap-6 py-10">
+          <SectionHeading
+            accent="mint"
+            title={t('landing.curriculum_title')}
+            sub={t('landing.curriculum_subtitle')}
+          />
           <LandingRubricDemo />
         </section>
 
-        {/* How It Works Section */}
-        <section className="w-full py-8 flex flex-col gap-6">
-          <div className="flex flex-col gap-1 max-w-xl">
-            <span className="font-mono text-xs font-bold text-primary uppercase tracking-wider">
-              {language === 'bn' ? 'সহজ ৩টি ধাপ' : 'SIMPLE 3-STEP PROCESS'}
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground m-0 font-heading">
-              {t('landing.how_it_works')}
-            </h2>
-          </div>
+        <section className="flex w-full flex-col gap-6 py-8">
+          <SectionHeading
+            accent="sun"
+            kicker={isBn ? 'সহজ ৩টি ধাপ' : 'SIMPLE 3-STEP PROCESS'}
+            title={t('landing.how_it_works')}
+          />
 
-          <div className="landing-cards-grid">
-            {howItWorks.map((step) => (
-              <div key={step.title} className="landing-feature-card bg-card text-card-foreground border border-border rounded-2xl p-6 flex flex-col gap-3 shadow-xs">
-                <div className="flex items-center justify-between">
-                  <span className="font-mono text-xs font-bold text-primary bg-primary/15 px-2.5 py-1 rounded-full">
-                    {step.stepNum}
-                  </span>
-                  <step.icon size={20} className="text-primary" />
+          <div className="grid w-full gap-4 pb-10 sm:grid-cols-2 lg:grid-cols-3">
+            {howItWorks.map((step) => {
+              const a = ACCENT[step.accent];
+              return (
+                <div
+                  key={step.title}
+                  className="flex flex-col gap-3 rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-xs"
+                >
+                  <div className="flex items-center justify-between">
+                    <span
+                      className={cn(
+                        'inline-flex size-8 items-center justify-center rounded-full font-mono text-xs font-bold',
+                        a.soft,
+                      )}
+                    >
+                      {step.stepNum}
+                    </span>
+                    <step.icon size={20} className={a.text} />
+                  </div>
+                  <h3 className="font-heading text-lg font-bold text-heading">{step.title}</h3>
+                  <p className="text-xs leading-relaxed text-muted-foreground">{step.body}</p>
                 </div>
-                <h3 className="font-heading font-bold text-lg text-foreground m-0">
-                  {step.title}
-                </h3>
-                <p className="text-xs text-muted-foreground m-0 leading-relaxed">
-                  {step.body}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
-        {/* Value Proposition Cards (Examiner Margin Rule) */}
-        <section className="w-full py-6 flex flex-col gap-6">
-          <div className="landing-cards-grid">
-            {valueProps.map((card) => (
-              <div key={card.title} className="landing-promise-card bg-card text-card-foreground border border-border rounded-2xl p-6 flex flex-col gap-3 shadow-xs">
-                <div className="flex items-center justify-between mb-1">
-                  <span className="font-mono text-xs font-bold text-destructive uppercase tracking-wider">
-                    {card.eyebrow}
-                  </span>
-                  <card.icon size={16} className="text-muted-foreground" />
+        <section className="flex w-full flex-col gap-6 py-6">
+          <SectionHeading
+            accent="mark"
+            kicker={t('landing.problem_kicker')}
+            title={t('landing.problem_title')}
+          />
+          <div className="grid w-full gap-4 pb-10 sm:grid-cols-2 lg:grid-cols-3">
+            {valueProps.map((card) => {
+              const a = ACCENT[card.accent];
+              return (
+                <div
+                  key={card.title}
+                  className={cn(
+                    'flex flex-col gap-3 rounded-2xl border bg-card p-6 text-card-foreground shadow-xs',
+                    a.ring,
+                  )}
+                >
+                  <div className="mb-1 flex items-center justify-between">
+                    <span className={cn('font-mono text-xs font-bold tracking-wider uppercase', a.text)}>
+                      {card.eyebrow}
+                    </span>
+                    <span className={cn('inline-flex size-7 items-center justify-center rounded-lg', a.iconWrap)}>
+                      <card.icon size={15} />
+                    </span>
+                  </div>
+                  <h3 className="font-heading text-lg font-bold text-heading">{card.title}</h3>
+                  <p className="text-xs leading-relaxed text-muted-foreground">{card.body}</p>
                 </div>
-                <h3 className="font-heading font-bold text-lg text-foreground m-0">
-                  {card.title}
-                </h3>
-                <p className="text-xs text-muted-foreground m-0 leading-relaxed">
-                  {card.body}
-                </p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
 
-        {/* Dedicated Early Access / Community Section */}
-        <section id="waitlist-section" className="w-full py-10 my-4 bg-card text-card-foreground rounded-2xl border border-border p-6 sm:p-10 shadow-md">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        <section
+          id="waitlist"
+          className="my-4 w-full rounded-2xl border border-border bg-card p-6 py-10 text-card-foreground shadow-md sm:p-10"
+        >
+          <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
             <div className="flex flex-col gap-3">
-              <span className="font-mono text-xs font-bold text-primary uppercase tracking-wider">
-                {language === 'bn' ? 'অগ্রাধিকার তালিকা' : 'PRIORITY ACCESS'}
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-extrabold text-foreground m-0 font-heading">
-                {t('landing.waitlist_section_title')}
-              </h2>
-              <p className="text-sm text-muted-foreground m-0 leading-relaxed">
-                {t('landing.waitlist_section_desc')}
-              </p>
+              <SectionHeading
+                accent="coral"
+                size="md"
+                kicker={isBn ? 'অগ্রাধিকার তালিকা' : 'PRIORITY ACCESS'}
+                title={t('landing.waitlist_section_title')}
+              />
               <div className="mt-4 flex flex-col gap-2 text-xs text-muted-foreground">
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  <span className="size-1.5 rounded-full bg-primary" />
                   <span>{t('landing.boards_covered')}</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
-                  <span>{language === 'bn' ? '১০০% ফ্রি — কোনো হিডেন চার্জ বা সাবস্ক্রিপশন নেই' : '100% Free for Students — No Hidden Subscriptions'}</span>
+                  <span className="size-1.5 rounded-full bg-primary" />
+                  <span>
+                    {isBn
+                      ? '১০০% ফ্রি — কোনো হিডেন চার্জ বা সাবস্ক্রিপশন নেই'
+                      : '100% Free for Students — No Hidden Subscriptions'}
+                  </span>
                 </div>
               </div>
             </div>
-
             <div className="w-full">
               <WaitlistForm />
             </div>
@@ -260,25 +276,41 @@ export default function LandingPage() {
         </section>
       </main>
 
-      {/* Trust & Rich Footer */}
-      <footer className="landing-footer">
-        <div className="w-full max-w-[1240px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-6 py-4">
-          <div className="flex flex-col items-center sm:items-start gap-1.5">
+      <footer className="w-full border-t border-border">
+        <div className="mx-auto flex w-full max-w-[1240px] flex-col items-center justify-between gap-6 px-6 py-6 text-xs text-muted-foreground sm:flex-row">
+          <div className="flex flex-col items-center gap-1.5 sm:items-start">
             <Logo tagline />
-            <p className="text-xs text-muted-foreground m-0">
-              &copy; {new Date().getFullYear()} SheraTutor &middot; {t('landing.footer_text')}
+            <p className="text-xs text-muted-foreground">
+              &copy; <CopyrightYear /> SheraTutor &middot; {t('landing.footer_text')}
             </p>
           </div>
-
-          <div className="flex items-center gap-4 text-xs text-muted-foreground flex-wrap justify-center">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
             <span>{t('landing.footer_boards')}</span>
             <span>&middot;</span>
-            <span>{t('landing.footer_privacy')}</span>
+            <Link href={'/privacy' as Route} className="transition-colors hover:text-foreground">
+              {t('landing.footer_privacy')}
+            </Link>
             <span>&middot;</span>
-            <span>{t('landing.footer_terms')}</span>
+            <Link href={'/terms' as Route} className="transition-colors hover:text-foreground">
+              {t('landing.footer_terms')}
+            </Link>
           </div>
         </div>
       </footer>
     </div>
+  );
+}
+
+async function DynamicLanding() {
+  const cookieStore = await cookies();
+  const lang: Language = cookieStore.get('sheratutor_lang')?.value === 'en' ? 'en' : 'bn';
+  return <CachedLandingUI lang={lang} />;
+}
+
+export default function LandingPage() {
+  return (
+    <React.Suspense fallback={<CachedLandingUI lang="bn" />}>
+      <DynamicLanding />
+    </React.Suspense>
   );
 }

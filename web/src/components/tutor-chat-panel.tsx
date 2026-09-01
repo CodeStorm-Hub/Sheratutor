@@ -1,12 +1,10 @@
 "use client";
 
 import { useRef, useEffect, useState } from "react";
-import ReactMarkdown from "react-markdown";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
+import { RenderMathText } from "@/components/render-math-text";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Bot, User, Loader2, Send, Volume2, Sparkles, HelpCircle, type LucideIcon } from "lucide-react";
+import { Bot, User, Loader2, Send, Volume2, Sparkles, type LucideIcon } from "lucide-react";
 
 export type TutorChatMessage = { role: "assistant" | "student"; text: string };
 export type TutorChatQuickChip = { label: string; icon: LucideIcon; prompt: string };
@@ -144,20 +142,7 @@ export function TutorChatPanel({
                   : "bg-muted/70 text-foreground border border-border/50 rounded-tl-xs"
               }`}
             >
-              <ReactMarkdown
-                remarkPlugins={[remarkMath]}
-                rehypePlugins={[rehypeKatex]}
-                components={{
-                  p: ({ ...props }) => <p className="mb-2 last:mb-0" {...props} />,
-                  ul: ({ ...props }) => <ul className="list-disc pl-4 mb-2 space-y-1" {...props} />,
-                  ol: ({ ...props }) => <ol className="list-decimal pl-4 mb-2 space-y-1" {...props} />,
-                  li: ({ ...props }) => <li className="text-xs leading-relaxed" {...props} />,
-                  strong: ({ ...props }) => <strong className="font-semibold text-green-deep dark:text-green" {...props} />,
-                  code: ({ ...props }) => <code className="bg-muted px-1 py-0.5 rounded text-xs font-mono" {...props} />,
-                }}
-              >
-                {m.text}
-              </ReactMarkdown>
+              <RenderMathText text={m.text} inline={false} />
 
               {m.role === "assistant" && (
                 <button

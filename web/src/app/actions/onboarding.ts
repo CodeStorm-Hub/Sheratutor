@@ -3,16 +3,14 @@
 import { z } from "zod";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
+import { educationBoard, examType, academicGroup, targetExamYear } from "@/lib/validation";
 
 const OnboardingSchema = z.object({
   dateOfBirth: z.string().date(),
-  educationBoard: z.enum([
-    "DHAKA", "RAJSHAHI", "COMILLA", "BARISAL", "SYLHET",
-    "CHITTAGONG", "JESSORE", "DINAJPUR", "MYMENSINGH", "MADRASAH", "TECHNICAL",
-  ]),
-  examType: z.enum(["SSC", "HSC"]),
-  academicGroup: z.enum(["SCIENCE", "HUMANITIES", "BUSINESS_STUDIES"]),
-  targetExamYear: z.coerce.number().int().min(2026).max(2030),
+  educationBoard,
+  examType,
+  academicGroup,
+  targetExamYear,
   guardianPhone: z.string().optional(),
   guardianConsentGiven: z.boolean(),
 });

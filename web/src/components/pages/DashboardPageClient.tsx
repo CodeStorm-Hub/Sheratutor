@@ -13,6 +13,7 @@ import {
   Sparkles,
 } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import { cn } from '@/lib/utils';
 
 export interface DashboardClientProps {
   firstName: string;
@@ -32,16 +33,23 @@ export interface DashboardClientProps {
     progress: number;
     chapterCount: number;
   }>;
-  todayTasks: Array<{
-    title: string;
-    subtitle: string;
-    time: string;
-    checked: boolean;
-  }>;
+  todayTasks: Array<{ title: string; subtitle: string; time: string; checked: boolean }>;
   hasActivePlan: boolean;
   submissionsCount: number;
   hasSubmissions: boolean;
 }
+
+const cardClass = 'rounded-2xl border border-border bg-surface-1 p-5';
+const cardLabelClass = 'font-mono text-3xs font-bold tracking-[0.08em] text-muted-foreground uppercase';
+const iconBtnClass =
+  'grid size-8 shrink-0 place-items-center rounded-lg text-muted-foreground transition-colors hover:bg-accent hover:text-foreground';
+const panelFooterLinkClass = 'flex items-center gap-1 pt-3 text-sm font-semibold hover:text-cta';
+
+const subjectIconColor: Record<string, string> = {
+  mint: 'bg-green-soft text-green',
+  coral: 'bg-coral-soft text-cta',
+  sun: 'bg-ochre-soft text-ochre',
+};
 
 export function DashboardPageClient({
   firstName,
@@ -62,14 +70,14 @@ export function DashboardPageClient({
   const { language, t } = useLanguage();
 
   return (
-    <>
-      {/* Welcome & Action Banner */}
-      <section className="welcome">
+    <div className="space-y-7">
+      {/* Welcome & action banner */}
+      <section className="flex flex-col gap-4 pt-6 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1>
-            {t('dashboard.greeting')} {firstName}
+          <h1 className="font-heading text-[clamp(1.75rem,4vw,2.25rem)] leading-tight font-extrabold">
+            {t('dashboard.greeting')}, {firstName}
           </h1>
-          <p>
+          <p className="mt-1 text-sm text-muted-foreground">
             {totalCompleted > 0
               ? `${language === 'bn' ? 'তোমার' : 'You have'} ${totalCompleted} ${t('dashboard.welcome_active')}`
               : t('dashboard.welcome_new')}
@@ -77,181 +85,154 @@ export function DashboardPageClient({
         </div>
         <Link
           href="/dashboard/practice"
-          className="focus-button"
-          style={{ textDecoration: 'none' }}
+          className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-cta px-4 py-2.5 text-xs font-semibold text-cta-foreground shadow-xs transition-colors hover:opacity-90"
         >
           <Play size={16} fill="currentColor" />
           <span>{t('dashboard.focus_btn')}</span>
         </Link>
       </section>
 
-      {/* Primary Overview Stat Grid */}
-      <section className="stat-grid">
-        {/* Card 1: Real Board Prediction */}
-        <article className="prediction">
-          <header>
+      {/* Overview stat grid */}
+      <section className="grid gap-4 lg:grid-cols-[1.28fr_0.9fr_0.9fr]">
+        {/* Board prediction */}
+        <article
+          className={cn(cardClass, 'flex min-h-[186px] flex-col')}
+          style={{
+            backgroundImage: 'linear-gradient(120deg, var(--surface-1) 69%, var(--red-wash))',
+          }}
+        >
+          <header className="flex items-start justify-between gap-2">
             <div>
-              <span>{t('dashboard.prediction_title')}</span>
-              <p>
+              <span className={cardLabelClass}>{t('dashboard.prediction_title')}</span>
+              <p className="mt-0.5 text-xs text-muted-foreground">
                 {totalCompleted > 0
                   ? `${t('dashboard.prediction_desc')} (${totalCompleted})`
                   : t('dashboard.prediction_new')}
               </p>
             </div>
-            <button
-              type="button"
-              className="icon-btn"
-              aria-label="Prediction options"
-            >
+            <button type="button" className={iconBtnClass} aria-label="Prediction options">
               <MoreHorizontal size={17} />
             </button>
           </header>
 
-          <div className="prediction-main">
-            <div className="big-grade" style={{ display: 'flex', alignItems: 'baseline', gap: '8px' }}>
-              <b>{gradeLetter}</b>
-              <small style={{ fontSize: '1.25rem', fontWeight: 600 }}>
-                {avgScorePct !== null ? `(${avgScorePct}%)` : 'N/A'}
-              </small>
+          <div className="mt-auto flex items-center gap-4 pt-4">
+            <div className="flex items-baseline gap-2 font-heading text-[56px] leading-none font-extrabold tracking-tighter">
+              {gradeLetter}
+              <span className="text-xl font-semibold">{avgScorePct !== null ? `(${avgScorePct}%)` : 'N/A'}</span>
             </div>
-
-            <div className="percentile">
-              <label>
+            <div className="w-[131px] shrink-0 rounded-lg border border-border bg-surface-1 px-2.5 pt-2.5 pb-1.5">
+              <label className="block text-3xs leading-tight text-muted-foreground">
                 {totalCompleted > 0
                   ? `${t('dashboard.percentile_top')} ${percentileRank}% ${t('dashboard.percentile_board')}`
                   : t('dashboard.percentile_ready')}
               </label>
-              <div className="bar">
+              <div className="mt-2 h-1 overflow-hidden rounded bg-surface-2">
                 <span
+                  className="block h-full rounded bg-cta"
                   style={{
-                    width: `${
-                      totalCompleted > 0
-                        ? Math.max(15, 100 - percentileRank)
-                        : 20
-                    }%`,
+                    width: `${totalCompleted > 0 ? Math.max(15, 100 - percentileRank) : 20}%`,
                   }}
                 />
               </div>
             </div>
           </div>
 
-          <div className="prediction-footer">
+          <div className="mt-4 flex items-center justify-between gap-2 text-2xs text-muted-foreground">
             <span>
               {totalCompleted > 0
                 ? t('dashboard.prediction_footer_rubric')
                 : t('dashboard.prediction_footer_ready')}
             </span>
-            <Link
-              href="/dashboard/submissions"
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 4,
-              }}
-            >
-              <p>
-                {t('dashboard.view_results')} <ChevronRight size={14} />
-              </p>
+            <Link href="/dashboard/submissions" className="flex items-center gap-1 font-semibold hover:text-cta">
+              {t('dashboard.view_results')} <ChevronRight size={14} />
             </Link>
           </div>
         </article>
 
-        {/* Card 2: Exam Readiness */}
-        <article className="readiness">
-          <header>
+        {/* Exam readiness */}
+        <article className={cn(cardClass, 'flex min-h-[186px] flex-col')}>
+          <header className="flex items-start justify-between gap-2">
             <div>
-              <span>{t('dashboard.readiness_title')}</span>
-              <p>
-                {momentumScore > 0
-                  ? t('dashboard.readiness_track')
-                  : t('dashboard.readiness_building')}
+              <span className={cardLabelClass}>{t('dashboard.readiness_title')}</span>
+              <p className="mt-0.5 text-xs text-muted-foreground">
+                {momentumScore > 0 ? t('dashboard.readiness_track') : t('dashboard.readiness_building')}
               </p>
             </div>
-            <button
-              type="button"
-              className="icon-btn"
-              aria-label="Readiness options"
-            >
+            <button type="button" className={iconBtnClass} aria-label="Readiness options">
               <MoreHorizontal size={17} />
             </button>
           </header>
-
-          <div className="readiness-content">
+          <div className="flex flex-1 items-center justify-center gap-4">
             <ScoreRing value={momentumScore} />
-            <p>
-              {momentumScore > 0
-                ? t('dashboard.readiness_mastery')
-                : t('dashboard.readiness_calc')}
+            <p className="max-w-[120px] text-xs text-muted-foreground">
+              {momentumScore > 0 ? t('dashboard.readiness_mastery') : t('dashboard.readiness_calc')}
             </p>
           </div>
         </article>
 
-        {/* Card 3: Target Exam */}
-        <article className="exam-card">
-          <header>
+        {/* Target exam */}
+        <article className={cn(cardClass, 'flex min-h-[186px] flex-col')}>
+          <header className="flex items-start justify-between gap-2">
             <div>
-              <span>{t('dashboard.target_exam_title')}</span>
-              <p>
+              <span className={cardLabelClass}>{t('dashboard.target_exam_title')}</span>
+              <p className="mt-0.5 text-xs text-muted-foreground">
                 {targetExamYear} {t('dashboard.target_batch')}
               </p>
             </div>
-            <button type="button" className="icon-btn" aria-label="Exam details">
+            <button type="button" className={iconBtnClass} aria-label="Exam details">
               <MoreHorizontal size={17} />
             </button>
           </header>
-
-          <div className="exam-info">
-            <b>
+          <div className="mt-auto">
+            <b className="text-sm">
               {examType} · {targetExamBoard}
             </b>
-            <div className="exam-date" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <div className="mt-1 flex items-center gap-1.5 text-xs text-muted-foreground">
               <span>{language === 'bn' ? 'বোর্ড পরীক্ষা' : 'Board Exam'}</span>
-              <p>{targetExamYear}</p>
+              <span className="font-mono font-semibold text-foreground">{targetExamYear}</span>
             </div>
           </div>
         </article>
       </section>
 
-      {/* Curriculum Subjects Section */}
-      <section className="section-heading">
+      {/* Curriculum subjects */}
+      <section className="flex items-end justify-between gap-3">
         <div>
-          <h2>{t('dashboard.subjects_title')}</h2>
-          <p>{t('dashboard.subjects_desc')}</p>
+          <h2 className="font-heading text-xl leading-tight font-bold">{t('dashboard.subjects_title')}</h2>
+          <p className="mt-1 text-xs text-muted-foreground">{t('dashboard.subjects_desc')}</p>
         </div>
-        <Link
-          href="/dashboard/tutor"
-          className="link-with-icon"
-          style={{ textDecoration: 'none' }}
-        >
+        <Link href="/dashboard/tutor" className="flex shrink-0 items-center gap-1 text-xs font-semibold text-green hover:underline">
           {t('dashboard.ask_tutor')} <ChevronRight size={15} />
         </Link>
       </section>
 
-      <section className="subjects">
+      <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {displaySubjects.map((sub, idx) => {
-          const colors = ['mint', 'coral', 'sun', 'mint'];
-          const color = colors[idx % colors.length];
-          const displayName = language === 'bn' ? (sub.name_bn || sub.name_en) : sub.name_en;
-          const subTitle = language === 'bn' ? sub.name_en : (sub.name_bn || sub.code);
+          const color = ['mint', 'coral', 'sun', 'mint'][idx % 4];
+          const displayName = language === 'bn' ? sub.name_bn || sub.name_en : sub.name_en;
+          const subTitle = language === 'bn' ? sub.name_en : sub.name_bn || sub.code;
 
           return (
-            <Link
-              key={sub.id}
-              href="/dashboard/practice"
-              style={{ textDecoration: 'none', color: 'inherit' }}
-            >
-              <article className={`subject ${color}`}>
-                <div className="subject-icon">
+            <Link key={sub.id} href="/dashboard/practice">
+              <article
+                className={cn(
+                  cardClass,
+                  'flex min-h-[183px] flex-col justify-between transition-colors hover:border-cta/40',
+                )}
+              >
+                <div className={cn('grid size-9 place-items-center rounded-lg', subjectIconColor[color])}>
                   <Sparkles size={20} />
                 </div>
-                <h3>{displayName}</h3>
-                <small>{subTitle}</small>
-                <div className="progress">
-                  <span style={{ width: `${sub.progress}%` }} />
+                <div className="mt-3">
+                  <h3 className="font-heading font-bold">{displayName}</h3>
+                  <small className="text-xs text-muted-foreground">{subTitle}</small>
                 </div>
-                <div className="subject-footer" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', gap: '8px' }}>
+                <div className="mt-3 flex items-center gap-2">
+                  <span className="h-1.5 flex-1 overflow-hidden rounded bg-border">
+                    <span className="block h-full rounded bg-accent2" style={{ width: `${sub.progress}%` }} />
+                  </span>
+                </div>
+                <div className="mt-2 flex items-center gap-1.5 text-2xs text-muted-foreground">
                   <span>{sub.progress}% {language === 'bn' ? 'দক্ষতা' : 'mastery'}</span>
                   <span>·</span>
                   <span>{sub.chapterCount} {language === 'bn' ? 'টি অধ্যায়' : 'chapters'}</span>
@@ -262,76 +243,61 @@ export function DashboardPageClient({
         })}
       </section>
 
-      {/* Lower Dual Grid: Focus Plan & Performance Track */}
-      <section className="lower-grid">
-        {/* Today's Focus Checklist */}
-        <article className="focus-panel">
-          <div className="panel-header">
+      {/* Lower dual grid */}
+      <section className="grid gap-4 lg:grid-cols-[1.08fr_0.92fr]">
+        {/* Today's focus checklist */}
+        <article className={cardClass}>
+          <div className="flex items-start justify-between gap-3">
             <div>
-              <h2>{t('dashboard.todays_focus_title')}</h2>
-              <p>
-                {hasActivePlan
-                  ? t('dashboard.todays_focus_adaptive')
-                  : t('dashboard.todays_focus_custom')}
+              <h2 className="font-heading text-xl leading-tight font-bold">{t('dashboard.todays_focus_title')}</h2>
+              <p className="mt-1 text-xs text-muted-foreground">
+                {hasActivePlan ? t('dashboard.todays_focus_adaptive') : t('dashboard.todays_focus_custom')}
               </p>
             </div>
             <Link
               href="/dashboard/study-plan"
-              className="chip"
-              style={{ textDecoration: 'none' }}
+              className="flex shrink-0 items-center gap-1 rounded-full border border-border px-2.5 py-1 text-2xs font-semibold text-muted-foreground hover:bg-accent"
             >
               {todayTasks.length} {t('dashboard.tasks_count')} <ChevronDown size={14} />
             </Link>
           </div>
 
-          <div className="task-list">
+          <div className="mt-4">
             {todayTasks.map((tItem, i) => (
-              <div
-                className={`task ${tItem.checked ? 'completed' : ''}`}
-                key={`${tItem.title}-${i}`}
-              >
-                <span className={tItem.checked ? 'check' : ''}>
+              <div key={`${tItem.title}-${i}`} className="flex items-center gap-2.5 border-b border-border py-2.5 last:border-0">
+                <span
+                  className={cn(
+                    'grid size-[26px] flex-none place-items-center rounded-md border text-xs',
+                    tItem.checked
+                      ? 'border-accent2 bg-accent2 text-white'
+                      : 'border-muted-foreground text-muted-foreground',
+                  )}
+                >
                   {tItem.checked ? '✓' : ''}
                 </span>
-                <div>
-                  <b>{tItem.title}</b>
-                  <small>{tItem.subtitle}</small>
+                <div className="min-w-0 flex-1">
+                  <b className="block text-xs font-semibold">{tItem.title}</b>
+                  <small className="text-xs text-muted-foreground">{tItem.subtitle}</small>
                 </div>
-                <time>{tItem.time}</time>
-                <button
-                  type="button"
-                  aria-label="More task options"
-                >
+                <time className="font-mono text-3xs text-muted-foreground">{tItem.time}</time>
+                <button type="button" aria-label="More task options" className="text-muted-foreground">
                   <ChevronRight size={15} />
                 </button>
               </div>
             ))}
           </div>
 
-          <div className="panel-footer">
-            <Link
-              href="/dashboard/study-plan"
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 4,
-                fontWeight: 600,
-                fontSize: 13,
-              }}
-            >
-              {t('dashboard.view_full_plan')} <ChevronRight size={14} />
-            </Link>
-          </div>
+          <Link href="/dashboard/study-plan" className={panelFooterLinkClass}>
+            {t('dashboard.view_full_plan')} <ChevronRight size={14} />
+          </Link>
         </article>
 
-        {/* Assessment Tracker Panel */}
-        <article className="progress-panel">
-          <div className="panel-header">
+        {/* Assessment tracker */}
+        <article className={cardClass}>
+          <div className="flex items-start justify-between gap-3">
             <div>
-              <h2>{t('dashboard.activity_title')}</h2>
-              <p>
+              <h2 className="font-heading text-xl leading-tight font-bold">{t('dashboard.activity_title')}</h2>
+              <p className="mt-1 text-xs text-muted-foreground">
                 {hasSubmissions
                   ? `${submissionsCount} ${t('dashboard.activity_desc')}`
                   : t('dashboard.activity_empty')}
@@ -339,55 +305,48 @@ export function DashboardPageClient({
             </div>
             <Link
               href="/dashboard/upload"
-              className="primary-btn sm"
-              style={{ textDecoration: 'none' }}
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-cta px-3 py-1.5 text-xs font-semibold text-cta-foreground transition-colors hover:opacity-90"
             >
               <FileCheck2 size={14} /> {language === 'bn' ? 'খাতা জমা' : 'Upload'}
             </Link>
           </div>
 
-          <BarChart data={hasSubmissions ? undefined : [0,0,0,0,0,0,0]} />
+          <BarChart data={hasSubmissions ? undefined : [0, 0, 0, 0, 0, 0, 0]} />
 
-          <div className="progress-stats">
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <span style={{ fontSize: '0.75rem' }}>{t('dashboard.tests_submitted')}</span>
-              <strong style={{ fontSize: '1.25rem' }}>{submissionsCount}{language === 'bn' ? 'টি' : ''}</strong>
-              <small style={{ fontSize: '0.75rem' }}>{t('dashboard.this_term')}</small>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <span style={{ fontSize: '0.75rem' }}>{t('dashboard.avg_score')}</span>
-              <strong style={{ fontSize: '1.25rem' }}>{avgScorePct !== null ? `${avgScorePct}%` : '—'}</strong>
-              <small style={{ fontSize: '0.75rem' }}>
-                {totalCompleted > 0
-                  ? `${totalCompleted}${language === 'bn' ? 'টি মূল্যায়ন' : ' tests'}`
-                  : t('dashboard.new_student')}
-              </small>
-            </div>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <span style={{ fontSize: '0.75rem' }}>{t('dashboard.momentum_label')}</span>
-              <strong style={{ fontSize: '1.25rem' }}>{momentumScore}%</strong>
-              <small style={{ fontSize: '0.75rem' }}>{language === 'bn' ? 'সক্রিয়' : 'Active'}</small>
-            </div>
+          <div className="mt-4 grid grid-cols-3 gap-3 font-tabular">
+            {[
+              {
+                label: t('dashboard.tests_submitted'),
+                value: `${submissionsCount}${language === 'bn' ? 'টি' : ''}`,
+                sub: t('dashboard.this_term'),
+              },
+              {
+                label: t('dashboard.avg_score'),
+                value: avgScorePct !== null ? `${avgScorePct}%` : '—',
+                sub:
+                  totalCompleted > 0
+                    ? `${totalCompleted}${language === 'bn' ? 'টি মূল্যায়ন' : ' tests'}`
+                    : t('dashboard.new_student'),
+              },
+              {
+                label: t('dashboard.momentum_label'),
+                value: `${momentumScore}%`,
+                sub: language === 'bn' ? 'সক্রিয়' : 'Active',
+              },
+            ].map((s) => (
+              <div key={s.label} className="flex flex-col gap-1">
+                <span className="text-xs text-muted-foreground">{s.label}</span>
+                <strong className="text-xl">{s.value}</strong>
+                <small className="text-xs text-muted-foreground">{s.sub}</small>
+              </div>
+            ))}
           </div>
 
-          <div className="panel-footer">
-            <Link
-              href="/dashboard/submissions"
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-                display: 'flex',
-                alignItems: 'center',
-                gap: 4,
-                fontWeight: 600,
-                fontSize: 13,
-              }}
-            >
-              {t('dashboard.view_all_results')}
-            </Link>
-          </div>
+          <Link href="/dashboard/submissions" className={panelFooterLinkClass}>
+            {t('dashboard.view_all_results')}
+          </Link>
         </article>
       </section>
-    </>
+    </div>
   );
 }

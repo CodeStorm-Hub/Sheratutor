@@ -1,0 +1,673 @@
+<title>SheraTutor Design System Redesign</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Space+Mono:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+  /* ============ TOKENS ============ */
+  :root {
+    --paper:        #f6f5ef;   /* warm khata ground, hue-biased, not slate */
+    --paper-card:   #fffdf8;
+    --paper-sunk:   #efeee5;
+    --ink:          #1a2a23;   /* deep green-black */
+    --ink-soft:     #55655c;
+    --ink-faint:    #8a9790;
+    --rule:         #dcded2;   /* 1px ruled line */
+    --rule-strong:  #c6c9ba;
+    --green:        #0a6a4e;   /* national bottle green */
+    --green-deep:   #084f3b;
+    --green-wash:   #e4efe9;
+    --red:          #d42a38;   /* examiner's pen — findings */
+    --red-wash:     #fbe9ea;
+    --ochre:        #b07d09;   /* merit / recommendations */
+    --ochre-wash:   #f7eed6;
+    --mint:         #12a67e;
+    --shadow:       0 1px 2px rgba(26,42,35,.04), 0 12px 32px rgba(26,42,35,.06);
+    --maxw: 74ch;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper:       #10201a;  /* blackboard */
+      --paper-card:  #17281f;
+      --paper-sunk:  #0c1913;
+      --ink:         #e7ede7;  /* chalk */
+      --ink-soft:    #a6b6ac;
+      --ink-faint:   #6f7f75;
+      --rule:        rgba(255,255,255,.10);
+      --rule-strong: rgba(255,255,255,.16);
+      --green:       #3fb488;
+      --green-deep:  #2e9a72;
+      --green-wash:  rgba(63,180,136,.13);
+      --red:         #ff6b74;
+      --red-wash:    rgba(255,107,116,.13);
+      --ochre:       #e6b451;
+      --ochre-wash:  rgba(230,180,81,.13);
+      --mint:        #3fd0a6;
+      --shadow:      0 1px 2px rgba(0,0,0,.3), 0 14px 34px rgba(0,0,0,.36);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper:#10201a; --paper-card:#17281f; --paper-sunk:#0c1913;
+    --ink:#e7ede7; --ink-soft:#a6b6ac; --ink-faint:#6f7f75;
+    --rule:rgba(255,255,255,.10); --rule-strong:rgba(255,255,255,.16);
+    --green:#3fb488; --green-deep:#2e9a72; --green-wash:rgba(63,180,136,.13);
+    --red:#ff6b74; --red-wash:rgba(255,107,116,.13);
+    --ochre:#e6b451; --ochre-wash:rgba(230,180,81,.13);
+    --mint:#3fd0a6;
+    --shadow:0 1px 2px rgba(0,0,0,.3), 0 14px 34px rgba(0,0,0,.36);
+  }
+
+  /* ============ BASE ============ */
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 1.02rem/1.62 "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-feature-settings: "ss01";
+  }
+  .wrap { max-width: 960px; margin: 0 auto; padding: 0 clamp(1.1rem, 4vw, 2.6rem); }
+  .col { max-width: var(--maxw); }
+
+  h1, h2, h3, h4 { font-family: "Baloo 2", ui-sans-serif, system-ui, sans-serif; font-weight: 700; line-height: 1.16; text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+  h1 { font-size: clamp(2rem, 5.4vw, 3.05rem); }
+  h2 { font-size: clamp(1.5rem, 3.6vw, 2.05rem); }
+  h3 { font-size: 1.24rem; line-height: 1.3; }
+  h4 { font-size: 1.02rem; font-weight: 600; }
+  p { margin: 0 0 1rem; }
+  a { color: var(--green); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 600; }
+  code, .mono { font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 0.86em; }
+  code {
+    background: var(--paper-sunk); border: 1px solid var(--rule);
+    padding: 0.08em 0.38em; border-radius: 5px; color: var(--ink);
+    word-break: break-word;
+  }
+
+  .eyebrow {
+    font-family: "Space Mono", ui-monospace, monospace;
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.16em;
+    text-transform: uppercase; color: var(--green);
+  }
+
+  /* ============ MASTHEAD ============ */
+  header.masthead { padding: clamp(3rem, 8vw, 5.5rem) 0 2.2rem; border-bottom: 1px solid var(--rule); }
+  .masthead .kicker { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 1.4rem; }
+  .glyph {
+    width: 30px; height: 30px; flex: none; border-radius: 7px;
+    background: var(--green); transform: rotate(-4deg);
+    display: flex; align-items: flex-end; gap: 2.5px; padding: 6px;
+  }
+  .glyph i { width: 4px; background: #fffdf8; border-radius: 2px; display: block; }
+  .glyph i:nth-child(1){ height: 8px; }
+  .glyph i:nth-child(2){ height: 14px; background: var(--ochre); }
+  .glyph i:nth-child(3){ height: 19px; background: var(--red); }
+  header.masthead p.dek { font-size: clamp(1.05rem, 2vw, 1.22rem); color: var(--ink-soft); max-width: 60ch; margin-top: 1.1rem; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 0.5rem 1.4rem; margin-top: 1.6rem; font-family: "Space Mono", monospace; font-size: 0.74rem; color: var(--ink-faint); letter-spacing: 0.04em; }
+
+  /* ============ MARK SHEET ============ */
+  .marksheet {
+    margin: 2.4rem 0 0; border: 1px solid var(--rule-strong); border-radius: 14px;
+    background: var(--paper-card); box-shadow: var(--shadow); overflow: hidden;
+  }
+  .marksheet .ms-head {
+    display: flex; justify-content: space-between; align-items: baseline;
+    padding: 1rem 1.3rem; border-bottom: 1px solid var(--rule);
+    font-family: "Space Mono", monospace; font-size: 0.72rem; letter-spacing: 0.12em;
+    text-transform: uppercase; color: var(--ink-faint);
+  }
+  .ms-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .ms-cell { padding: 1.15rem 1.3rem; border-right: 1px solid var(--rule); }
+  .ms-cell:last-child { border-right: 0; }
+  .ms-cell .n { font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 2rem; font-variant-numeric: tabular-nums; line-height: 1; }
+  .ms-cell .l { display: block; margin-top: 0.35rem; font-size: 0.78rem; color: var(--ink-soft); }
+  .ms-cell.crit .n { color: var(--red); }
+  .ms-cell.high .n { color: var(--ochre); }
+  .ms-cell.med  .n { color: var(--green); }
+  .verdict { padding: 1.15rem 1.3rem; border-top: 1px solid var(--rule); font-size: 0.95rem; color: var(--ink-soft); }
+  .verdict b { color: var(--ink); }
+
+  /* ============ SECTIONS ============ */
+  section { padding: clamp(2.6rem, 6vw, 4rem) 0; border-bottom: 1px solid var(--rule); }
+  section > .col > .eyebrow { display: block; margin-bottom: 0.6rem; }
+  section h2 { margin-bottom: 0.9rem; }
+  section .lead { font-size: 1.08rem; color: var(--ink-soft); margin-bottom: 1.6rem; }
+
+  /* palette comparison */
+  .compare { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; margin: 1.5rem 0; }
+  @media (max-width: 640px){ .compare { grid-template-columns: 1fr; } }
+  .compare .box { border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; background: var(--paper-card); }
+  .compare .box h4 { padding: 0.75rem 0.95rem; border-bottom: 1px solid var(--rule); font-family: "Space Mono", monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; }
+  .compare .box.bad h4 { color: var(--red); }
+  .compare .box.good h4 { color: var(--green); }
+  .sw { display: flex; align-items: center; gap: 0.6rem; padding: 0.42rem 0.95rem; font-family: "JetBrains Mono", monospace; font-size: 0.76rem; color: var(--ink-soft); }
+  .sw span.chip { width: 20px; height: 20px; border-radius: 5px; border: 1px solid rgba(0,0,0,.12); flex: none; }
+  .compare .box .cap { padding: 0.6rem 0.95rem 0.85rem; font-size: 0.82rem; color: var(--ink-faint); }
+
+  /* ============ FINDINGS ============ */
+  .finding {
+    position: relative; margin: 1.4rem 0; padding: 0.15rem 0 0.15rem 1.25rem;
+    border-left: 3px solid var(--red);
+  }
+  .finding.fix { border-left-color: var(--green); }
+  .finding .fhead { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; margin-bottom: 0.5rem; }
+  .fid {
+    font-family: "Space Mono", monospace; font-weight: 700; font-size: 0.8rem;
+    color: var(--red); letter-spacing: 0.05em;
+  }
+  .finding.fix .fid { color: var(--green); }
+  .sev {
+    font-family: "Space Mono", monospace; font-size: 0.63rem; font-weight: 700;
+    letter-spacing: 0.12em; text-transform: uppercase;
+    padding: 0.18em 0.55em; border-radius: 999px; border: 1px solid currentColor;
+  }
+  .sev.critical { color: var(--red); background: var(--red-wash); }
+  .sev.high { color: var(--ochre); background: var(--ochre-wash); }
+  .sev.medium { color: var(--green); background: var(--green-wash); }
+  .finding h3 { font-family: "Hanken Grotesk", sans-serif; font-weight: 600; font-size: 1.06rem; line-height: 1.4; }
+  .finding p { margin: 0.45rem 0 0; font-size: 0.96rem; color: var(--ink-soft); }
+  .finding .ev {
+    margin-top: 0.7rem; padding: 0.7rem 0.9rem; background: var(--paper-sunk);
+    border: 1px solid var(--rule); border-radius: 9px;
+    font-family: "JetBrains Mono", monospace; font-size: 0.78rem; line-height: 1.6;
+    color: var(--ink-soft); overflow-x: auto; white-space: pre;
+  }
+  .finding .path { font-family: "Space Mono", monospace; font-size: 0.72rem; color: var(--ink-faint); letter-spacing: 0.02em; }
+
+  /* ============ TABLES ============ */
+  .tbl-scroll { overflow-x: auto; margin: 1.4rem 0; border: 1px solid var(--rule); border-radius: 12px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; min-width: 520px; }
+  th, td { text-align: left; padding: 0.7rem 0.95rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { font-family: "Space Mono", monospace; font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-faint); background: var(--paper-sunk); }
+  tr:last-child td { border-bottom: 0; }
+  td.mono, th.mono { font-family: "JetBrains Mono", monospace; font-size: 0.8rem; }
+  td .chip { display: inline-block; width: 14px; height: 14px; border-radius: 4px; vertical-align: -2px; margin-right: 0.45rem; border: 1px solid rgba(0,0,0,.12); }
+
+  /* ============ ROADMAP ============ */
+  .phase { display: grid; grid-template-columns: auto 1fr; gap: 1.1rem; margin: 1.5rem 0; }
+  .phase .num {
+    font-family: "Baloo 2", sans-serif; font-weight: 700; font-size: 1.1rem;
+    width: 2.4rem; height: 2.4rem; border-radius: 50%; flex: none;
+    display: grid; place-items: center; background: var(--green); color: #fffdf8;
+  }
+  .phase h3 { margin-bottom: 0.3rem; }
+  .phase .scope { font-size: 0.95rem; color: var(--ink-soft); }
+  .phase .tags { margin-top: 0.55rem; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .tag {
+    font-family: "Space Mono", monospace; font-size: 0.66rem; letter-spacing: 0.06em;
+    padding: 0.2em 0.6em; border-radius: 6px; background: var(--paper-sunk);
+    border: 1px solid var(--rule); color: var(--ink-soft);
+  }
+
+  ul.clean { padding-left: 1.15rem; margin: 0.6rem 0 1rem; }
+  ul.clean li { margin: 0.3rem 0; color: var(--ink-soft); }
+  ul.clean li strong { color: var(--ink); }
+
+  footer { padding: 3rem 0 4rem; color: var(--ink-faint); font-family: "Space Mono", monospace; font-size: 0.74rem; letter-spacing: 0.04em; }
+
+  /* theme toggle */
+  .toggle {
+    position: fixed; top: 0.9rem; right: 0.9rem; z-index: 20;
+    font-family: "Space Mono", monospace; font-size: 0.64rem; letter-spacing: 0.1em;
+    text-transform: uppercase; padding: 0.5em 0.8em; border-radius: 999px;
+    background: var(--paper-card); color: var(--ink-soft);
+    border: 1px solid var(--rule-strong); cursor: pointer; box-shadow: var(--shadow);
+  }
+  .toggle:hover { color: var(--ink); }
+  :focus-visible { outline: 2px solid var(--green); outline-offset: 2px; border-radius: 3px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+
+<button class="toggle" id="tg" aria-label="Toggle colour theme">Theme</button>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="col">
+      <div class="kicker">
+        <span class="glyph" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="eyebrow">Design system audit &amp; redesign plan</span>
+      </div>
+      <h1>SheraTutor <code style="font-size:.6em;vertical-align:.15em">web/</code> — marking the script</h1>
+      <p class="dek">The codebase carries two design systems: the shipped <em>Academic Daylight / Cosmic Study</em> theme in <code>globals.css</code>, and a superseded <em>Khata &amp; Blackboard</em> identity still described in <code>DESIGN.md</code>. The team has chosen the shipped direction — this plan formalizes it, hardens its weak spots, and retires the ~5,800 lines of parallel CSS.</p>
+      <div class="meta-row">
+        <span>NEXT.JS 16 · REACT 19 · TAILWIND V4 · SHADCN</span>
+        <span>SCOPE: /web</span>
+        <span>REVIEWED: 2026-08-30</span>
+      </div>
+    </div>
+
+    <div class="marksheet">
+      <div class="ms-head"><span>Assessment summary</span><span>22 findings</span></div>
+      <div class="ms-grid">
+        <div class="ms-cell crit"><span class="n">5</span><span class="l">Critical</span></div>
+        <div class="ms-cell high"><span class="n">8</span><span class="l">High</span></div>
+        <div class="ms-cell med"><span class="n">9</span><span class="l">Medium</span></div>
+        <div class="ms-cell"><span class="n">~5.8k</span><span class="l">Lines of bespoke CSS to retire</span></div>
+      </div>
+      <div class="verdict"><b>Verdict:</b> the foundation is salvageable but the styling layer is not. The shadcn/Tailwind token base in <code>globals.css</code> is the adopted direction and is sound in structure; everything in <code>styles.css</code>, <code>pages.css</code> and <code>layout-fixes.css</code> should be migrated out and deleted. <code>DESIGN.md</code> and <code>PRODUCT.md</code> are now stale and must be rewritten to match the shipped palette, then locked so code and spec can't diverge again.</div>
+    </div>
+  </header>
+
+  <!-- ============ CORE DIAGNOSIS ============ -->
+  <section>
+    <div class="col">
+      <span class="eyebrow">The core problem</span>
+      <h2>A split-brain codebase</h2>
+      <p class="lead">Two unrelated styling architectures are wired into the same tree, and they disagree on colour, spacing, elevation and dark-mode strategy.</p>
+
+      <h4>1 · Two component vocabularies</h4>
+      <p>shadcn/ui primitives (<code>Button</code>, <code>Card</code>, <code>Dialog</code>…) style themselves from Tailwind v4 <code>@theme</code> tokens. In parallel, <code>Sidebar.tsx</code>, <code>Header.tsx</code> and every <code>components/pages/*Client.tsx</code> use hand-written semantic classes (<code>.sidebar</code>, <code>.app main</code>, <code>.stat-grid article</code>, <code>.primary-btn</code>) resolved by ~5,800 lines of global CSS. The two layers share no tokens — <code>styles.css</code>, <code>pages.css</code> and <code>layout-fixes.css</code> contain <strong>zero</strong> references to <code>--card</code>, <code>--primary</code> or <code>--surface-*</code>.</p>
+
+      <h4>2 · The spec no longer matches the code</h4>
+      <p><code>DESIGN.md</code> and <code>PRODUCT.md</code> still describe the culturally-grounded <em>Khata &amp; Blackboard</em> palette. <code>globals.css</code> ships a different system. <strong>The team has chosen to keep the shipped system</strong> — so the resolution is to rewrite the docs to match the code, not the reverse.</p>
+
+      <div class="compare">
+        <div class="box good">
+          <h4>Shipped in globals.css — adopted</h4>
+          <div class="sw"><span class="chip" style="background:#14182b"></span> --primary&nbsp; #14182b <em>(near-black navy)</em></div>
+          <div class="sw"><span class="chip" style="background:#ff6b57"></span> --coral&nbsp; #FF6B57 <em>(accent / CTA)</em></div>
+          <div class="sw"><span class="chip" style="background:#f8f9fc"></span> --background&nbsp; #f8f9fc</div>
+          <div class="sw"><span class="chip" style="background:#64748b"></span> --muted-foreground&nbsp; #64748b</div>
+          <div class="sw"><span class="chip" style="background:#0b0e17"></span> dark bg&nbsp; #0b0e17 <em>("Cosmic Slate")</em></div>
+          <div class="cap">Formalize this into a 3-layer OKLCH system and fix its weak spots (below). Regenerate <code>DESIGN.md</code> from it.</div>
+        </div>
+        <div class="box bad">
+          <h4>DESIGN.md — superseded</h4>
+          <div class="sw"><span class="chip" style="background:#006a4e"></span> primary&nbsp; #006A4E <em>(bottle green)</em></div>
+          <div class="sw"><span class="chip" style="background:#f7f8f5"></span> paper-bg&nbsp; #F7F8F5 <em>(warm khata)</em></div>
+          <div class="sw"><span class="chip" style="background:#14251f"></span> ink&nbsp; #14251F</div>
+          <div class="sw"><span class="chip" style="background:#d92638"></span> examiner-red&nbsp; #D92638 <em>(reserved)</em></div>
+          <div class="sw"><span class="chip" style="background:#0f1c17"></span> blackboard&nbsp; #0F1C17</div>
+          <div class="cap">Not the direction. One idea worth keeping regardless of palette: a reserved red token for marks &amp; deductions only — see M-01.</div>
+        </div>
+      </div>
+      <p style="font-size:.92rem;color:var(--ink-faint)">Until the spec is rewritten, any next engineer reading <code>DESIGN.md</code> will "correct" the code back toward bottle green. Rewriting the docs and adding a token-lint gate is step one.</p>
+    </div>
+  </section>
+
+  <!-- ============ FINDINGS A: architecture ============ -->
+  <section>
+    <div class="col">
+      <span class="eyebrow">Findings · A — Architecture &amp; CSS system</span>
+      <h2>Where the debt lives</h2>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">C-01</span><span class="sev critical">Critical</span></div>
+        <h3>Spec and code describe different design systems</h3>
+        <p class="path">src/app/globals.css : 77–197 vs DESIGN.md / PRODUCT.md front-matter</p>
+        <p><code>globals.css</code> ships "Academic Daylight / Cosmic Study" (navy-black primary, slate neutrals, coral accent). <code>DESIGN.md</code> and <code>PRODUCT.md</code> still document "Khata &amp; Blackboard" (bottle green, warm paper, reserved examiner red). <strong>Resolution: the shipped system is adopted</strong> — rewrite both docs from the shipped tokens, and add a lint gate (see Phase 7) so the next reader of <code>DESIGN.md</code> doesn't revert the code. Critical because the divergence actively invites regressions until closed.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">C-02</span><span class="sev critical">Critical</span></div>
+        <h3>~5,800 lines of hand-written global CSS bypass the token layer</h3>
+        <p class="path">src/styles.css (2,120) · src/pages.css (1,593) · src/layout-fixes.css (2,087)</p>
+        <p>Semantic selectors (<code>.sidebar nav a.active { background:#14251f }</code>) with <strong>644 hard-coded hex values</strong>, imported as four unscoped global sheets in <code>layout.tsx</code> whose cascade order is load-bearing. This is the single largest obstacle to any redesign — it cannot be re-themed via tokens.</p>
+        <div class="ev">src/app/layout.tsx
+  import './globals.css';
+  import '@/styles.css';        // redefines :root --navy/--coral/--paper …
+  import '@/pages.css';
+  import '@/layout-fixes.css';  // 2,087 lines, 429 ".dark" rules, 27 !important</div>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">H-01</span><span class="sev high">High</span></div>
+        <h3><code>layout-fixes.css</code> is a 2,087-line patch file maintaining a second dark theme by hand</h3>
+        <p class="path">src/layout-fixes.css — 429 <code>.dark</code> selectors, 27 <code>!important</code></p>
+        <p>A file named "fixes" this large is a standing signal that the layout primitives underneath it don't work. Every dark-mode value here is a manual override of a light value elsewhere, with no shared variable between them.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">H-02</span><span class="sev high">High</span></div>
+        <h3>Duplicate, drifted <code>:root</code> token blocks</h3>
+        <p class="path">src/styles.css : 2–10</p>
+        <p><code>styles.css</code> re-declares <code>--navy</code>, <code>--muted</code>, <code>--paper</code>, <code>--coral</code>, <code>--border</code> with its own values, shadowing <code>globals.css</code>. Two sources of truth for the same names guarantees the drift already visible between them.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-01</span><span class="sev medium">Medium</span></div>
+        <h3>Only one semantic status colour; no reserved "mark" token</h3>
+        <p class="path">src/app/globals.css — only <code>--destructive: #ef4444</code></p>
+        <p>A grading product needs <code>--success</code> / <code>--warning</code> / <code>--destructive</code> as distinct semantic tokens, plus — worth keeping from the old spec regardless of palette — a <em>reserved</em> <code>--mark-deduction</code> used only for score losses and the margin-rule component, so "the examiner marked this" reads differently from a generic error toast. These are aesthetic-neutral; they fit the shipped direction fine.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-02</span><span class="sev medium">Medium</span></div>
+        <h3>No OKLCH; sRGB hex only</h3>
+        <p>The W3C Design Tokens spec (stable, Oct 2025) and shadcn's own current defaults use OKLCH for perceptually-even ramps and reliable contrast. All ~50 tokens here are hex, so tint/shade steps are eyeballed and dark-mode lightness is inconsistent.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDINGS B: theming ============ -->
+  <section>
+    <div class="col">
+      <span class="eyebrow">Findings · B — Theming mechanism</span>
+      <h2>Two theme engines, neither wired cleanly</h2>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">C-03</span><span class="sev critical">Critical</span></div>
+        <h3>Theme flash (FOUC) on every cold load</h3>
+        <p class="path">src/context/ThemeContext.tsx : 39–50</p>
+        <p>The <code>.dark</code> class is added inside a <code>useEffect</code>, i.e. after hydration. There is no blocking inline script in <code>&lt;head&gt;</code>, so dark-mode users get a full-white flash on every hard navigation. <code>suppressHydrationWarning</code> is set on <code>&lt;html&gt;</code> but nothing writes the class early enough for it to matter.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">H-03</span><span class="sev high">High</span></div>
+        <h3>Custom <code>ThemeContext</code> and <code>next-themes</code> coexist and disagree</h3>
+        <p class="path">src/context/ThemeContext.tsx (wired) · src/components/theme-provider.tsx, theme-toggle.tsx (dead) · src/components/ui/sonner.tsx (reads next-themes)</p>
+        <p>The app is themed by the custom context, but <code>sonner.tsx</code> calls <code>useTheme()</code> from <code>next-themes</code> — which was never initialised — so toasts always render in the default ("system") theme regardless of the user's choice. <code>theme-provider.tsx</code> / <code>theme-toggle.tsx</code> are imported nowhere.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-03</span><span class="sev medium">Medium</span></div>
+        <h3><code>darkMode</code> boolean threaded through props</h3>
+        <p class="path">ClientShell.tsx → Header.tsx</p>
+        <p>Theme state is passed <code>ClientShell → Header</code> as props and the <code>.dark</code> class is toggled both on <code>document.documentElement</code> and on the <code>.app</code> wrapper div. A single provider + <code>useTheme()</code> hook removes all of it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDINGS C: typography / i18n ============ -->
+  <section>
+    <div class="col">
+      <span class="eyebrow">Findings · C — Typography &amp; localisation</span>
+      <h2>The Bengali path is broken</h2>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">C-04</span><span class="sev critical">Critical</span></div>
+        <h3><code>&lt;html lang="bn"&gt;</code> is hard-coded for all users</h3>
+        <p class="path">src/app/layout.tsx : 57</p>
+        <p>Every visitor — including the English UI — is served with <code>lang="bn"</code>, which triggers the <code>:lang(bn)</code> override in <code>globals.css</code>: <code>--font-sans</code> is swapped to Noto Sans Bengali and Bengali line-height is applied globally. English copy renders in the Bengali body font. The <code>LanguageContext</code> toggle swaps translation strings only; it never updates <code>lang</code> or <code>dir</code>. This is also an SEO / hreflang and screen-reader-pronunciation bug.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">H-04</span><span class="sev high">High</span></div>
+        <h3><code>--font-display-bn</code> is referenced but never defined; Baloo 2 is latin-only</h3>
+        <p class="path">globals.css : 239 vs layout.tsx : 13–39</p>
+        <p><code>:lang(bn) { --font-heading: var(--font-display-bn) }</code> points at a variable that <code>layout.tsx</code> never creates (only <code>--font-display</code>, <code>--font-body</code>, <code>--font-mono-eyebrow</code>, <code>--font-body-bn</code> exist). Bengali headings silently fall back to a system font. Separately, <code>Baloo_2({ subsets: ['latin'] })</code> cannot render Bengali at all — a Bengali display face (Anek Bangla, Baloo Da 2, Hind Siliguri) is needed.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-04</span><span class="sev medium">Medium</span></div>
+        <h3>15 font weights across 4 families for a stated low-bandwidth audience</h3>
+        <p class="path">layout.tsx : 13–39 · PRODUCT.md "varying internet bandwidth across divisional and rural Bangladesh"</p>
+        <p>Baloo 2 ×5, Inter ×4, Space Mono ×2, Noto Sans Bengali ×4 all load on first paint. Trim to the weights actually used (typically 2 per family) and lazy-load the Bengali faces behind the language toggle.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-05</span><span class="sev medium">Medium</span></div>
+        <h3>Type scale &amp; numeric rules live only in prose</h3>
+        <p><code>DESIGN.md</code> defines <code>clamp()</code> display sizes, a 65–75ch measure and a <code>tabular-nums</code> rule for all scores/timers. None are encoded as tokens or utilities, so they aren't enforced anywhere.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDINGS D: layout ============ -->
+  <section>
+    <div class="col">
+      <span class="eyebrow">Findings · D — Layout, grid &amp; responsiveness</span>
+      <h2>One breakpoint, and an off-by-36px shell</h2>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">H-05</span><span class="sev high">High</span></div>
+        <h3>Sidebar / main offset mismatch and a single 1050px breakpoint</h3>
+        <p class="path">styles.css <code>.sidebar { width:244px; inset:18px }</code> vs layout-fixes.css <code>.app main { width: calc(100% - 280px) }</code></p>
+        <p>244 + 18 + 18 = 280, but only if the insets are counted as gutter — the numbers are maintained independently and already disagree in the collapsed state (main width doesn't respond to <code>.collapsed</code>). The entire shell flips at one <code>@media (max-width:1050px)</code>; <code>DESIGN.md</code> asks for distinct mobile (&lt;640), tablet (640–1024) and desktop behaviours. There is no real tablet layout.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">H-06</span><span class="sev high">High</span></div>
+        <h3>Hand-built overlays instead of the Radix primitives already in the bundle</h3>
+        <p class="path">src/components/Header.tsx : 88–110, 235–270</p>
+        <p>The profile menu, notification menu and ⌘K search modal are custom: manual outside-click <code>useEffect</code>, manual <code>Escape</code> handling, a backdrop <code>&lt;div onClick&gt;</code>, no focus trap, no <code>role</code>/<code>aria-expanded</code>/<code>aria-modal</code>, no scroll lock. <code>radix-ui</code> (<code>DropdownMenu</code>, <code>Dialog</code>) and shadcn <code>Command</code> are already installed.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-06</span><span class="sev medium">Medium</span></div>
+        <h3>Content max-width removed</h3>
+        <p class="path">src/layout-fixes.css : 1–5 — <code>.app main { max-width: none }</code></p>
+        <p>Comment reads "use the full desktop canvas". On a 1440px+ monitor this produces 140+ character line lengths in rubric feedback and tutor dialogue, against <code>DESIGN.md</code>'s explicit 1200px / 65–75ch rule.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-07</span><span class="sev medium">Medium</span></div>
+        <h3>Breakpoint logic duplicated in JavaScript</h3>
+        <p class="path">Header.tsx : 158 — <code>if (window.innerWidth &lt;= 1050)</code></p>
+        <p>A JS copy of the CSS breakpoint, read once in a click handler with no <code>resize</code> listener and SSR-fragile. Should be a CSS-driven state or a <code>matchMedia</code> hook.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDINGS E: components / a11y / config ============ -->
+  <section>
+    <div class="col">
+      <span class="eyebrow">Findings · E — Components, a11y &amp; config</span>
+      <h2>Loose ends</h2>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">C-05</span><span class="sev critical">Critical</span></div>
+        <h3>A <code>localhost:8400</code> dev script is committed into the production layout</h3>
+        <p class="path">src/app/layout.tsx : 68–70 (committed in 2ccf61c)</p>
+        <p><code>&lt;script src="http://localhost:8400/live.js?token=4de4d515…"&gt;</code> — an Impeccable live-preview hook. In production it is a blocked mixed-content request, a guaranteed console error, and it leaks a token. Remove it and add the marker pair to <code>.gitignore</code> tooling.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">H-07</span><span class="sev high">High</span></div>
+        <h3>Two button systems; primary role unassigned</h3>
+        <p class="path">shadcn <code>Button</code> (<code>variant=default</code> → <code>bg-primary</code> = black) vs <code>.primary-btn</code> / <code>.landing-cta-btn</code> (13 uses)</p>
+        <p><code>DESIGN.md</code> defines <em>two</em> primaries — bottle green (institutional) and coral (student CTA). Neither is a button variant. The shadcn default resolves to near-black; the landing page hand-rolls its own.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">H-08</span><span class="sev high">High</span></div>
+        <h3><code>next.config.ts</code> is empty; the marketing page is fully client-rendered</h3>
+        <p class="path">next.config.ts (no options) · src/app/page.tsx : 1 <code>'use client'</code></p>
+        <p>No <code>images</code> config, no <code>cacheComponents</code> (despite <code>AGENTS.md</code> mandating the Cache Components model), no <code>typedRoutes</code>. The primary acquisition surface renders client-side for a <code>useLanguage</code> hook and a vanity counter, costing LCP and SEO.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-08</span><span class="sev medium">Medium</span></div>
+        <h3>Non-semantic interactive elements &amp; invisible focus</h3>
+        <p class="path">Sidebar.tsx <code>.school</code> (div with chevron, no button role) · <code>&lt;i&gt;</code> used as "New" badge and unread dot · globals.css <code>--ring: #ff6b57</code></p>
+        <p>The user-switcher looks actionable but isn't keyboard-reachable. The coral focus ring is near-invisible on coral buttons — focus colour should contrast with the control it's on.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-09</span><span class="sev medium">Medium</span></div>
+        <h3>Reduced-motion override is brittle and contested</h3>
+        <p class="path">globals.css : 244 <code>*:not(.animate-spin):not(.animate-pulse)</code> vs layout-fixes.css page-in / card-in / float / draw-chart keyframes on <code>.app main &gt; *</code></p>
+        <p>The global reduce rule and the "fixes" animations fight over the same elements; class-exclusion selectors are fragile. Motion should be opt-in per component and gated once, centrally.</p>
+      </div>
+
+      <div class="finding">
+        <div class="fhead"><span class="fid">M-10</span><span class="sev medium">Medium</span></div>
+        <h3>Shipped debug &amp; fabricated data</h3>
+        <p class="path">Header.tsx : 71 <code>console.log('Submission graded!', payload)</code> · <code>notifications: any[]</code> · page.tsx : 17 <code>useState(2892)</code> then <code>2892 + count</code></p>
+        <p>Console noise in a realtime handler, untyped notification objects, and a hard-coded student-count base that inflates the real number on the landing page.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TARGET ARCHITECTURE ============ -->
+  <section>
+    <div class="col">
+      <span class="eyebrow">The redesign · 1</span>
+      <h2>Target architecture</h2>
+      <p class="lead">Keep the framework. Replace the styling layer with one token-driven system and let shadcn own every primitive.</p>
+
+      <div class="tbl-scroll">
+        <table>
+          <thead><tr><th>Layer</th><th>Now</th><th>Target</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">Framework</td><td>Next.js 16, React 19</td><td>Unchanged — adopt Cache Components, <code>typedRoutes</code>, RSC the landing page</td></tr>
+            <tr><td class="mono">Styling</td><td>Tailwind v4 + 4 global sheets</td><td>Tailwind v4 <code>@theme</code> only; <code>globals.css</code> the single stylesheet</td></tr>
+            <tr><td class="mono">Tokens</td><td>~50 hex vars, 1 drifted duplicate set</td><td>3-layer OKLCH: primitive → semantic → component; light in <code>:root</code>, dark re-declares raw vars only</td></tr>
+            <tr><td class="mono">Components</td><td>shadcn + ~5.8k lines bespoke CSS</td><td>shadcn/ui exclusively; app shell from the <code>sidebar</code> block; <code>Command</code> for ⌘K</td></tr>
+            <tr><td class="mono">Theme</td><td>custom context + dead next-themes</td><td><code>next-themes</code>, <code>attribute="class"</code>, <code>disableTransitionOnChange</code>, inline anti-FOUC script</td></tr>
+            <tr><td class="mono">i18n</td><td><code>lang="bn"</code> hard-coded, strings only</td><td><code>[lang]</code> route segment or synced <code>&lt;html lang/dir&gt;</code>; per-locale font subsets</td></tr>
+            <tr><td class="mono">Fonts</td><td><code>next/font</code>, 15 weights</td><td><code>next/font</code>, 2 weights/family + real Bengali display face, lazy Bengali</td></tr>
+            <tr><td class="mono">Charts</td><td>hand-rolled SVG, hard-coded colours</td><td>shadcn charts (Recharts) reading chart tokens, or token-driven custom SVG</td></tr>
+            <tr><td class="mono">Governance</td><td>prose <code>DESIGN.md</code> only</td><td><code>/kitchen-sink</code> route, ESLint "no raw hex in tsx", axe CI, token table generated from CSS</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Three-layer token model</h3>
+      <ul class="clean">
+        <li><strong>Primitive</strong> — raw OKLCH ramps: <code>--slate-50 … --slate-900</code>, <code>--coral-*</code>, <code>--emerald-*</code>, <code>--amber-*</code>, <code>--indigo-*</code>. No component ever references these directly.</li>
+        <li><strong>Semantic</strong> — intent names mapped from primitives: <code>--background</code>, <code>--surface-1/2/3</code>, <code>--heading</code> (= slate-950), <code>--cta</code> (= coral-500), <code>--secondary-accent</code> (= emerald-500), <code>--success</code>, <code>--warning</code>, <code>--mark-deduction</code> (<em>reserved</em>), <code>--rule</code>, <code>--ring</code>. Only these appear in <code>@theme inline</code>; dark-mode overrides re-declare <em>only this layer's</em> source vars.</li>
+        <li><strong>Component</strong> — where a primitive needs a per-component exception: <code>--btn-cta-bg</code>, <code>--sidebar-active-bg</code>, <code>--score-ring-track</code>.</li>
+      </ul>
+
+      <h3>Hardening the shipped direction</h3>
+      <p style="font-size:.97rem;color:var(--ink-soft)">Adopt "Academic Daylight / Cosmic Study" as-is in structure, but fix these before formalizing:</p>
+      <ul class="clean">
+        <li><strong>Action colour.</strong> <code>--primary: #14182b</code> is right for headings, flat as the only button colour on a product for teenagers. Promote <strong>coral</strong> (or introduce a green) to the primary action role; keep navy for type and <code>--foreground</code>.</li>
+        <li><strong>Secondary accent.</strong> Coral is currently CTA + <code>chart-1</code> + focus ring + wordmark. <code>--chart-2/3/4</code> (mint / amber / indigo) exist but never appear in UI — pick one as a real secondary so not everything interactive is coral.</li>
+        <li><strong>Dark temperature.</strong> <code>#0b0e17</code> is a cool blue-black against a warm coral. Nudge the dark neutrals a few degrees warmer, or drop coral chroma slightly in dark, so they read as one set.</li>
+        <li><strong>Rename the shadcn accent slot.</strong> <code>--accent: #fff7f5 / #ff5a43</code> is a coral tint occupying the generic "accent" token — it collides with brand coral. Give brand coral its own name (<code>--cta</code>) and let <code>--accent</code> be a true neutral hover.</li>
+        <li><strong>Status tokens.</strong> Add <code>--success</code> / <code>--warning</code> and a reserved <code>--mark-deduction</code> (M-01).</li>
+        <li><strong>Contrast audit.</strong> Verify every text/surface pair at WCAG 2.2 — <code>--muted-foreground #64748b</code> on <code>--surface-2 #f1f5f9</code> is the marginal one.</li>
+      </ul>
+
+      <h3>Formalized palette (shipped values → 3-layer OKLCH)</h3>
+      <div class="tbl-scroll">
+        <table>
+          <thead><tr><th>Semantic token</th><th>Role</th><th class="mono">Light (from)</th><th class="mono">Dark (from)</th></tr></thead>
+          <tbody>
+            <tr><td class="mono">--background</td><td><span class="chip" style="background:#f8f9fc"></span>App canvas</td><td class="mono">#f8f9fc</td><td class="mono">#0b0e17</td></tr>
+            <tr><td class="mono">--surface-1</td><td><span class="chip" style="background:#ffffff"></span>Card</td><td class="mono">#ffffff</td><td class="mono">#121724</td></tr>
+            <tr><td class="mono">--surface-2 / 3</td><td><span class="chip" style="background:#f1f5f9"></span>Sunk / hover / active</td><td class="mono">#f1f5f9 · #e2e8f0</td><td class="mono">#1a2132 · #252e44</td></tr>
+            <tr><td class="mono">--foreground</td><td><span class="chip" style="background:#0f172a"></span>Body text (navy-black)</td><td class="mono">#0f172a</td><td class="mono">#f1f5f9</td></tr>
+            <tr><td class="mono">--muted-foreground</td><td><span class="chip" style="background:#64748b"></span>Secondary text — recheck contrast</td><td class="mono">#64748b</td><td class="mono">#94a3b8</td></tr>
+            <tr><td class="mono">--cta</td><td><span class="chip" style="background:#ff6b57"></span>Primary action (promoted from accent)</td><td class="mono">#ff6b57</td><td class="mono">#ff6b57 → lower chroma</td></tr>
+            <tr><td class="mono">--secondary-accent</td><td><span class="chip" style="background:#10b981"></span>Second accent — from unused chart-2</td><td class="mono">#10b981</td><td class="mono">#2dd4bf</td></tr>
+            <tr><td class="mono">--heading</td><td><span class="chip" style="background:#14182b"></span>Display type (ex-<code>--primary</code>)</td><td class="mono">#14182b</td><td class="mono">#f8fafc</td></tr>
+            <tr><td class="mono">--success / --warning</td><td><span class="chip" style="background:#10b981"></span><span class="chip" style="background:#f59e0b"></span>New — status</td><td class="mono">#10b981 · #f59e0b</td><td class="mono">#34d399 · #fbbf24</td></tr>
+            <tr><td class="mono">--mark-deduction</td><td><span class="chip" style="background:#ef4444"></span>New — reserved for score loss / margin rule</td><td class="mono">#dc2626</td><td class="mono">#f87171</td></tr>
+            <tr><td class="mono">--rule</td><td><span class="chip" style="background:#e2e8f0"></span>1px border</td><td class="mono">#e2e8f0</td><td class="mono">rgba(255 255 255 / .08)</td></tr>
+            <tr><td class="mono">--ring</td><td>Focus — must contrast with the control it sits on</td><td class="mono">contextual</td><td class="mono">contextual</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.9rem;color:var(--ink-faint)">Convert each to OKLCH primitives (<code>--slate-*</code>, <code>--coral-*</code>, <code>--emerald-*</code> ramps), keep sRGB hex fallbacks via <code>@supports</code>, derive tints with <code>color-mix(in oklch, …)</code>, and lock L for text pairs to hold WCAG 2.2 (4.5:1 body / 3:1 UI).</p>
+    </div>
+  </section>
+
+  <!-- ============ ROADMAP ============ -->
+  <section>
+    <div class="col">
+      <span class="eyebrow">The redesign · 2</span>
+      <h2>Migration roadmap</h2>
+      <p class="lead">Sequenced so the app stays shippable after every phase. Effort is rough, for one experienced front-end engineer.</p>
+
+      <div class="phase">
+        <div class="num">1</div>
+        <div>
+          <h3>Stop the bleeding <span style="font-weight:400;color:var(--ink-faint);font-size:.85rem">· ~1 day</span></h3>
+          <p class="scope">Remove the <code>localhost:8400</code> script (C-05). Delete dead <code>theme-provider.tsx</code> / <code>theme-toggle.tsx</code>. Fix <code>&lt;html lang&gt;</code> to follow <code>LanguageContext</code> (C-04). Strip <code>console.log</code> / <code>any[]</code> / vanity counter (M-10). Freeze <code>styles.css</code>/<code>pages.css</code>/<code>layout-fixes.css</code> — no new rules.</p>
+          <div class="tags"><span class="tag">C-05</span><span class="tag">C-04</span><span class="tag">M-10</span><span class="tag">no visual change</span></div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="num">2</div>
+        <div>
+          <h3>Formalize the shipped palette <span style="font-weight:400;color:var(--ink-faint);font-size:.85rem">· 2–3 days</span></h3>
+          <p class="scope">Convert the <code>globals.css</code> values into a 3-layer OKLCH system and apply the six hardening fixes: promote <code>--cta</code>, add <code>--secondary-accent</code> / <code>--success</code> / <code>--warning</code> / <code>--mark-deduction</code>, split <code>--heading</code> from <code>--primary</code>, warm the dark neutrals, contrast-audit every pair (C-01, M-01, M-02). Delete the duplicate <code>:root</code> in <code>styles.css</code> (H-02). Encode the type scale and <code>tabular-nums</code> as utilities (M-05). Rewrite <code>DESIGN.md</code> + <code>PRODUCT.md</code> from the new tokens; align <code>components.json</code> baseColor.</p>
+          <div class="tags"><span class="tag">C-01</span><span class="tag">M-01</span><span class="tag">M-02</span><span class="tag">H-02</span><span class="tag">M-05</span><span class="tag">docs rewrite</span></div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="num">3</div>
+        <div>
+          <h3>One theme engine <span style="font-weight:400;color:var(--ink-faint);font-size:.85rem">· 1 day</span></h3>
+          <p class="scope">Replace <code>ThemeContext</code> with <code>next-themes</code> (<code>attribute="class"</code>, <code>disableTransitionOnChange</code>) + the standard inline anti-FOUC script (C-03, H-03, M-03). Point <code>sonner</code> at the real provider. Rebuild <code>theme-toggle</code> on shadcn <code>DropdownMenu</code>.</p>
+          <div class="tags"><span class="tag">C-03</span><span class="tag">H-03</span><span class="tag">M-03</span></div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="num">4</div>
+        <div>
+          <h3>Replace the app shell <span style="font-weight:400;color:var(--ink-faint);font-size:.85rem">· 3–5 days</span></h3>
+          <p class="scope">Rebuild <code>Sidebar</code> + <code>Header</code> on the shadcn <code>sidebar</code> block, <code>DropdownMenu</code>, <code>Sheet</code> (mobile drawer) and <code>Command</code> (⌘K) — deletes H-06, H-05, M-07 and the bulk of <code>styles.css</code>. Real breakpoints (640 / 1024). Restore the max-measure content column (M-06). Collapsed/expanded driven by <code>data-state</code>, not prop-threaded width math.</p>
+          <div class="tags"><span class="tag">H-05</span><span class="tag">H-06</span><span class="tag">M-06</span><span class="tag">M-07</span><span class="tag">–styles.css</span></div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="num">5</div>
+        <div>
+          <h3>Migrate the page clients <span style="font-weight:400;color:var(--ink-faint);font-size:.85rem">· 5–8 days</span></h3>
+          <p class="scope">Convert each <code>components/pages/*Client.tsx</code> from <code>.stat-grid</code> / <code>.exam-grid</code> semantic CSS to Tailwind utilities + <code>Card</code> / <code>Badge</code> / <code>Tabs</code>. One PR per page. Standardise the two button systems on green/coral variants (H-07). Retire <code>pages.css</code> and <code>layout-fixes.css</code> page-by-page; delete when the last reference goes.</p>
+          <div class="tags"><span class="tag">C-02</span><span class="tag">H-07</span><span class="tag">–pages.css</span><span class="tag">–layout-fixes.css</span></div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="num">6</div>
+        <div>
+          <h3>Typography &amp; localisation <span style="font-weight:400;color:var(--ink-faint);font-size:.85rem">· 2 days</span></h3>
+          <p class="scope">Add a Bengali display face and define <code>--font-display-bn</code> (H-04). Trim weights to 2/family; lazy-load Bengali behind the toggle (M-04). Wire <code>lang</code>/<code>dir</code> and <code>:lang(bn)</code> line-height tokens properly. Optionally introduce a <code>[lang]</code> route segment.</p>
+          <div class="tags"><span class="tag">H-04</span><span class="tag">M-04</span></div>
+        </div>
+      </div>
+
+      <div class="phase">
+        <div class="num">7</div>
+        <div>
+          <h3>Polish, config &amp; governance <span style="font-weight:400;color:var(--ink-faint);font-size:.85rem">· 2–3 days</span></h3>
+          <p class="scope">Populate <code>next.config.ts</code> (images, <code>cacheComponents</code>, <code>typedRoutes</code>) and RSC the landing page (H-08). Token-drive the charts. Centralise motion behind one reduced-motion gate (M-09). Fix focus-ring contrast &amp; non-semantic controls (M-08). Add <code>/kitchen-sink</code>, an ESLint no-raw-hex rule, and axe in CI. Add a check that fails the build if <code>DESIGN.md</code>'s token table drifts from <code>globals.css</code>, so spec and code can't diverge again.</p>
+          <div class="tags"><span class="tag">H-08</span><span class="tag">M-08</span><span class="tag">M-09</span><span class="tag">governance</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-bottom:0">
+    <div class="col">
+      <span class="eyebrow">If you do only three things</span>
+      <h2>Highest leverage, least risk</h2>
+      <ul class="clean">
+        <li><strong>Phase 1 + 2</strong> — remove the prod dev-script, then formalize + harden the shipped palette and rewrite the docs from it. Gives shadcn surfaces a coherent, contrast-checked system; ~4 days; low risk.</li>
+        <li><strong>Phase 3</strong> — one theme engine kills the FOUC and the toast-theme bug for ~1 day.</li>
+        <li><strong>Phase 4</strong> — the shadcn <code>sidebar</code> block deletes roughly a third of the bespoke CSS in a single, well-scoped change.</li>
+      </ul>
+      <p style="color:var(--ink-faint);font-size:.9rem">Total: ~3–4 focused weeks to retire all ~5,800 lines and land on a single token-driven system on the current stack.</p>
+    </div>
+  </section>
+
+  <footer>
+    SHERATUTOR /WEB · DESIGN SYSTEM AUDIT · 22 FINDINGS (5 CRITICAL / 8 HIGH / 9 MEDIUM) · GENERATED 2026-08-30
+  </footer>
+</div>
+
+<script>
+  (function () {
+    var b = document.getElementById('tg');
+    var root = document.documentElement;
+    function cur() {
+      var t = null;
+      try { t = localStorage.getItem('audit-theme'); } catch (e) {}
+      if (t) return t;
+      return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    function apply(t) {
+      root.setAttribute('data-theme', t);
+      b.textContent = t === 'dark' ? 'Light' : 'Dark';
+    }
+    apply(cur());
+    b.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      try { localStorage.setItem('audit-theme', next); } catch (e) {}
+      apply(next);
+    });
+  })();
+</script>

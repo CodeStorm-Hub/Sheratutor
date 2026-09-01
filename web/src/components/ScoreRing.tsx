@@ -5,11 +5,19 @@ interface ScoreRingProps {
 }
 
 export const ScoreRing: React.FC<ScoreRingProps> = ({ value }) => {
+  const pct = Math.max(0, Math.min(100, Number(value) || 0));
+
   return (
-    <div className="score-ring" style={{ '--score': Number(value) } as React.CSSProperties}>
-      <div>
-        <strong>{value}</strong>
-        <span>%</span>
+    <div
+      className="relative grid size-[98px] shrink-0 place-items-center rounded-full"
+      style={{
+        background: `conic-gradient(var(--mint) ${pct}%, var(--surface-2) 0)`,
+      }}
+    >
+      <div className="absolute inset-2 rounded-full bg-surface-1" />
+      <div className="relative z-10 flex items-baseline font-mono">
+        <strong className="text-2xl font-bold">{value}</strong>
+        <span className="text-xs">%</span>
       </div>
     </div>
   );

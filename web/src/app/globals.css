@@ -5,14 +5,23 @@
 @custom-variant dark (&:is(.dark, .dark *));
 
 /*
- * SheraTutor Modern Dual-Theme Design System
- * --------------------------------------------------------------------------
- * Light Theme: "Academic Daylight" — Crisp porcelain canvas, pure floating cards,
- *              deep Oxford Navy typography, and vibrant energetic accents.
- * Dark Theme:  "Cosmic Study" — 4-tier stepped surface luminance (#0B0E17 canvas,
- *              #121724 card, #1A2132 hover/input, #252E44 active), 1px hairline
- *              borders, and luminous neon accents.
+ * SheraTutor Design System — "Academic Daylight / Cosmic Study"
+ * ---------------------------------------------------------------------------
+ * Three token layers:
+ *   1. Primitive  — raw OKLCH ramps (--slate-*, --coral-*, --emerald-* …).
+ *                   Never referenced by components directly.
+ *   2. Semantic   — intent names mapped from primitives (--background,
+ *                   --primary, --cta, --heading, --success …). Only these are
+ *                   exposed to Tailwind via `@theme inline`, and only these
+ *                   are re-declared for dark mode.
+ *   3. Component  — per-component exceptions live next to the component.
+ *
+ * Light: crisp porcelain canvas, navy display type, coral primary action.
+ * Dark:  deep brand-navy canvas built from the logo badge gradient
+ *        (#1E2761 → #14182B) — indigo hue 278 with real chroma so it reads
+ *        "cosmic study", coral/sun/mint accents kept vivid on top.
  */
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -26,13 +35,36 @@
   --color-surface-2: var(--surface-2);
   --color-surface-3: var(--surface-3);
 
+  --color-heading: var(--heading);
   --color-navy: var(--navy);
   --color-muted: var(--muted);
   --color-paper: var(--paper);
   --color-coral: var(--coral);
+  --color-cta: var(--cta);
+  --color-cta-foreground: var(--cta-foreground);
   --color-mint: var(--mint);
   --color-sun: var(--sun);
+  --color-accent2: var(--accent2);
+  --color-success: var(--success);
+  --color-success-foreground: var(--success-foreground);
+  --color-warning: var(--warning);
+  --color-warning-foreground: var(--warning-foreground);
+  --color-mark: var(--mark-deduction);
+  --color-mark-foreground: var(--mark-deduction-foreground);
   --color-border: var(--border);
+
+  /* semantic aliases used across the dashboard components */
+  --color-green: var(--success);
+  --color-green-deep: var(--success);
+  --color-green-soft: var(--success-wash);
+  --color-ochre: var(--warning);
+  --color-ochre-deep: var(--warning);
+  --color-ochre-soft: var(--warning-wash);
+  --color-red: var(--mark-deduction);
+  --color-red-deep: var(--mark-deduction);
+  --color-red-soft: var(--red-wash);
+  --color-mint-soft: var(--success-wash);
+  --color-coral-soft: var(--coral-wash);
 
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -72,194 +104,328 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+
+  /* Type scale (DESIGN.md hierarchy, now enforceable as utilities) */
+  --text-3xs: 0.625rem;    /* 10px — dense mono badges, chart labels */
+  --text-3xs--line-height: 1.4;
+  --text-2xs: 0.6875rem;   /* 11px — eyebrows, metadata rows */
+  --text-2xs--line-height: 1.45;
+  --text-display: clamp(2rem, 5vw, 3.25rem);
+  --text-display--line-height: 1.15;
+  --text-display--letter-spacing: -0.02em;
+  --text-headline: clamp(1.5rem, 3.5vw, 2.25rem);
+  --text-headline--line-height: 1.25;
+  --text-headline--letter-spacing: -0.01em;
 }
 
+/* ========================================================================
+   LAYER 1 — PRIMITIVES  (raw ramps, OKLCH)
+   ======================================================================== */
 :root {
-  /* Light Theme Base */
-  --background: #f8f9fc;
-  --foreground: #0f172a;
+  --white: oklch(1 0 0);
+  --black: oklch(0 0 0);
 
-  /* Stepped Surfaces */
-  --surface-0: #f8f9fc;
-  --surface-1: #ffffff;
-  --surface-2: #f1f5f9;
-  --surface-3: #e2e8f0;
+  --slate-50:  oklch(0.984 0.003 265);
+  --slate-100: oklch(0.968 0.007 260);
+  --slate-200: oklch(0.929 0.012 261);
+  --slate-300: oklch(0.869 0.020 259);
+  --slate-400: oklch(0.704 0.032 257);
+  --slate-500: oklch(0.554 0.041 257);
+  --slate-600: oklch(0.446 0.037 258);
+  --slate-700: oklch(0.372 0.038 259);
+  --slate-800: oklch(0.279 0.038 260);
+  --slate-900: oklch(0.208 0.040 266);
+  --slate-950: oklch(0.204 0.040 277);
 
-  /* Card & Popover */
-  --card: #ffffff;
-  --card-foreground: #0f172a;
-  --popover: #ffffff;
-  --popover-foreground: #0f172a;
+  /* Brand-navy dark canvas ramp — the SheraTutor logo badge gradient
+     (#1E2761 → #14182B) resolved into a scale. Hue 278, real chroma so it
+     reads as deep indigo "cosmic study", not neutral graphite. ink-900 is
+     the page canvas; ink-850 the raised panel/card (≈ the badge navy). The
+     step between them is wide enough that cards lift off the page without a
+     heavy border. */
+  --ink-900: oklch(0.171 0.044 278);
+  --ink-850: oklch(0.223 0.055 278);
+  --ink-800: oklch(0.262 0.058 278);
+  --ink-750: oklch(0.303 0.055 278);
+  --ink-700: oklch(0.362 0.050 278);
 
-  /* Primary & Accents */
-  --primary: #14182b;
-  --primary-foreground: #ffffff;
-  --secondary: #f1f5f9;
-  --secondary-foreground: #1e293b;
+  --coral-300: oklch(0.820 0.090 33);
+  --coral-400: oklch(0.760 0.140 33);
+  --coral-500: oklch(0.706 0.164 33);
+  --coral-600: oklch(0.640 0.176 31);
+  --coral-700: oklch(0.560 0.160 30);
+  --coral-wash: oklch(0.970 0.017 40);
 
-  --muted: #f1f5f9;
-  --muted-foreground: #64748b;
-  --accent: #fff7f5;
-  --accent-foreground: #ff5a43;
+  --emerald-400: oklch(0.765 0.160 163);
+  --emerald-500: oklch(0.696 0.170 162);
+  --emerald-600: oklch(0.596 0.145 163);
+  --teal-400:    oklch(0.800 0.130 190);
 
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
+  --amber-400: oklch(0.828 0.150 78);
+  --amber-500: oklch(0.769 0.166 70);
 
-  --border: #e2e8f0;
-  --input: #e2e8f0;
-  --ring: #ff6b57;
+  --indigo-400: oklch(0.673 0.180 277);
+  --indigo-500: oklch(0.585 0.220 277);
 
-  /* Brand Tokens */
-  --navy: #14182b;
-  --paper: #f8f9fc;
-  --coral: #ff6b57;
-  --mint: #10b981;
-  --sun: #f59e0b;
+  --red-400: oklch(0.704 0.191 22);
+  --red-500: oklch(0.637 0.237 25);
+  --red-600: oklch(0.577 0.245 27);
+  --red-wash: oklch(0.958 0.023 20);
+  --success-wash: oklch(0.960 0.028 165);
+  --warning-wash: oklch(0.965 0.043 90);
+}
 
-  /* Sidebar Tokens */
-  --sidebar: #ffffff;
-  --sidebar-foreground: #0f172a;
-  --sidebar-primary: #14182b;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #f1f5f9;
-  --sidebar-accent-foreground: #0f172a;
-  --sidebar-border: #e2e8f0;
-  --sidebar-ring: #ff6b57;
+/* ========================================================================
+   LAYER 2 — SEMANTIC  (light)
+   ======================================================================== */
+:root {
+  --background: var(--slate-50);
+  --foreground: var(--slate-900);
 
-  /* Charts */
-  --chart-1: #ff6b57;
-  --chart-2: #10b981;
-  --chart-3: #f59e0b;
-  --chart-4: #6366f1;
-  --chart-5: #0f172a;
+  --surface-0: var(--slate-50);
+  --surface-1: var(--white);
+  --surface-2: var(--slate-100);
+  --surface-3: var(--slate-200);
+
+  --card: var(--white);
+  --card-foreground: var(--slate-900);
+  --popover: var(--white);
+  --popover-foreground: var(--slate-900);
+
+  /* Primary action = coral. Display type = brand navy (--heading), the
+     SheraTutor logo indigo (#1E2761 / #14182B) — not a neutral near-black. */
+  --primary: var(--coral-500);
+  --primary-foreground: var(--white);
+  --cta: var(--coral-500);
+  --cta-foreground: var(--white);
+  --heading: oklch(0.27 0.10 273);
+  --navy: oklch(0.27 0.10 273);
+
+  --secondary: var(--slate-100);
+  --secondary-foreground: var(--slate-800);
+
+  --muted: var(--slate-100);
+  --muted-foreground: var(--slate-600);
+
+  /* true neutral hover slot (was a coral tint) */
+  --accent: var(--slate-100);
+  --accent-foreground: var(--slate-900);
+
+  /* second accent — promoted from the previously-unused chart-2 */
+  --accent2: var(--emerald-500);
+
+  --success: var(--emerald-600);
+  --success-foreground: var(--white);
+  --warning: var(--amber-500);
+  --warning-foreground: var(--slate-950);
+
+  --destructive: var(--red-500);
+  --destructive-foreground: var(--white);
+
+  /* reserved — score loss, deductions, the margin-rule component only */
+  --mark-deduction: var(--red-600);
+  --mark-deduction-foreground: var(--white);
+
+  --border: var(--slate-200);
+  --input: var(--slate-200);
+  /* focus ring must contrast with the control it sits on (coral / white) */
+  --ring: var(--slate-950);
+
+  --paper: var(--slate-50);
+  --coral: var(--coral-500);
+  --mint: var(--emerald-500);
+  --sun: var(--amber-500);
+
+  --sidebar: var(--white);
+  --sidebar-foreground: var(--slate-900);
+  --sidebar-primary: var(--coral-500);
+  --sidebar-primary-foreground: var(--white);
+  --sidebar-accent: var(--slate-100);
+  --sidebar-accent-foreground: var(--slate-900);
+  --sidebar-border: var(--slate-200);
+  --sidebar-ring: var(--slate-950);
+
+  --chart-1: var(--coral-500);
+  --chart-2: var(--emerald-500);
+  --chart-3: var(--amber-500);
+  --chart-4: var(--indigo-500);
+  --chart-5: var(--slate-900);
 
   --radius: 0.75rem;
 }
 
+/* ========================================================================
+   LAYER 2 — SEMANTIC  (dark)  — only raw values change; names are stable
+   ======================================================================== */
 .dark {
-  /* Dark Theme Base (Cosmic Slate - non-halation) */
-  --background: #0b0e17;
-  --foreground: #f1f5f9;
+  --background: var(--ink-900);
+  --foreground: var(--slate-100);
 
-  /* Stepped Dark Surfaces */
-  --surface-0: #0b0e17;
-  --surface-1: #121724;
-  --surface-2: #1a2132;
-  --surface-3: #252e44;
+  --surface-0: var(--ink-900);
+  --surface-1: var(--ink-850);
+  --surface-2: var(--ink-750);
+  --surface-3: var(--ink-700);
 
-  /* Card & Popover */
-  --card: #121724;
-  --card-foreground: #f1f5f9;
-  --popover: #161c2c;
-  --popover-foreground: #f1f5f9;
+  --card: var(--ink-850);
+  --card-foreground: var(--slate-100);
+  --popover: var(--ink-800);
+  --popover-foreground: var(--slate-100);
 
-  /* Primary & Accents */
-  --primary: #f8fafc;
-  --primary-foreground: #0b0e17;
-  --secondary: #1a2132;
-  --secondary-foreground: #e2e8f0;
+  --primary: var(--coral-400);
+  /* text on coral = deep brand navy, the SheraTutor colour pairing */
+  --primary-foreground: oklch(0.19 0.045 278);
+  --cta: var(--coral-400);
+  --cta-foreground: oklch(0.19 0.045 278);
+  --heading: var(--slate-50);
+  /* brand badge navy (#1E2761), nudged brighter so it carries white text */
+  --navy: oklch(0.34 0.10 277);
 
-  --muted: #171e2e;
-  --muted-foreground: #94a3b8;
-  --accent: #261b1d;
-  --accent-foreground: #ff7e6e;
+  --secondary: var(--ink-750);
+  --secondary-foreground: var(--slate-200);
 
-  --destructive: #f87171;
-  --destructive-foreground: #0b0e17;
+  --muted: var(--ink-800);
+  --muted-foreground: oklch(0.72 0.035 278);
 
-  --border: rgba(255, 255, 255, 0.08);
-  --input: rgba(255, 255, 255, 0.12);
-  --ring: #ff6b57;
+  --accent: var(--ink-750);
+  --accent-foreground: var(--slate-100);
 
-  /* Brand Tokens */
-  --navy: #121724;
-  --paper: #0b0e17;
-  --coral: #ff6b57;
-  --mint: #2dd4bf;
-  --sun: #fbbf24;
+  --accent2: var(--emerald-400);
 
-  /* Sidebar Tokens */
-  --sidebar: #121724;
-  --sidebar-foreground: #f1f5f9;
-  --sidebar-primary: #ff6b57;
-  --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #1a2132;
-  --sidebar-accent-foreground: #f1f5f9;
-  --sidebar-border: rgba(255, 255, 255, 0.08);
-  --sidebar-ring: #ff6b57;
+  --success: var(--emerald-400);
+  --success-foreground: oklch(0.2 0.02 160);
+  --warning: var(--amber-400);
+  --warning-foreground: oklch(0.2 0.02 70);
 
-  /* Charts */
-  --chart-1: #ff6b57;
-  --chart-2: #2dd4bf;
-  --chart-3: #fbbf24;
-  --chart-4: #818cf8;
-  --chart-5: #e2e8f0;
+  --destructive: var(--red-400);
+  --destructive-foreground: oklch(0.2 0.02 20);
+
+  --mark-deduction: var(--red-400);
+  --mark-deduction-foreground: oklch(0.2 0.02 20);
+
+  --border: oklch(0.9 0.03 278 / 12%);
+  --input: oklch(0.9 0.03 278 / 16%);
+  --ring: oklch(0.82 0.04 278);
+
+  --paper: var(--ink-900);
+  --coral: var(--coral-400);
+  --mint: var(--emerald-400);
+  --sun: var(--amber-400);
+
+  --sidebar: var(--ink-850);
+  --sidebar-foreground: var(--slate-100);
+  --sidebar-primary: var(--coral-400);
+  --sidebar-primary-foreground: oklch(0.19 0.045 278);
+  --sidebar-accent: var(--ink-750);
+  --sidebar-accent-foreground: var(--slate-100);
+  --sidebar-border: oklch(0.9 0.03 278 / 12%);
+  --sidebar-ring: oklch(0.82 0.04 278);
+
+  --chart-1: var(--coral-400);
+  --chart-2: var(--emerald-400);
+  --chart-3: var(--amber-400);
+  --chart-4: var(--indigo-400);
+  --chart-5: var(--slate-200);
+
+  /* tint washes used by the legacy sheets — keep them subtle on dark */
+  --red-wash: oklch(0.30 0.06 22);
+  --coral-wash: oklch(0.30 0.05 40);
+  --success-wash: oklch(0.30 0.05 165);
+  --warning-wash: oklch(0.32 0.05 85);
 }
 
 @layer base {
   * {
     @apply border-border outline-ring/50;
     scrollbar-width: thin;
-    scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
-  }
-
-  .dark * {
-    scrollbar-color: rgba(255, 255, 255, 0.15) transparent;
+    scrollbar-color: color-mix(in oklch, var(--muted-foreground) 40%, transparent) transparent;
   }
 
   ::selection {
-    background: rgba(255, 107, 87, 0.25);
+    background: color-mix(in oklch, var(--cta) 25%, transparent);
     color: inherit;
   }
-
   .dark ::selection {
-    background: rgba(255, 107, 87, 0.35);
-    color: #ffffff;
+    background: color-mix(in oklch, var(--cta) 38%, transparent);
+    color: var(--foreground);
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
   }
 
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
   }
 
-  h1,
-  h2,
-  h3,
-  h4 {
+  /* In-page anchor targets (e.g. the "Join the Waitlist" CTA → #waitlist-section)
+     land with breathing room and a brief coral ring so the eye catches them. */
+  :target {
+    scroll-margin-top: 2rem;
+  }
+  #waitlist-section:target {
+    animation: anchor-land 1.4s ease-out;
+  }
+
+  h1, h2, h3, h4 {
     @apply font-heading tracking-tight;
+    color: var(--heading);
   }
 
   /* Bengali script typography overrides */
   :lang(bn) {
     --font-sans: var(--font-body-bn);
     --font-heading: var(--font-display-bn);
+    line-height: 1.65;
+  }
+  :lang(bn) h1, :lang(bn) h2, :lang(bn) h3, :lang(bn) h4 {
+    line-height: 1.4;
   }
 
-  /* Accessible Reduced Motion */
   @media (prefers-reduced-motion: reduce) {
     *:not(.animate-spin):not(.animate-pulse) {
       transition-duration: 0.001ms !important;
       animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
       scroll-behavior: auto !important;
     }
   }
+}
+
+@keyframes anchor-land {
+  0%   { box-shadow: 0 0 0 0 color-mix(in oklch, var(--cta) 55%, transparent); }
+  40%  { box-shadow: 0 0 0 4px color-mix(in oklch, var(--cta) 40%, transparent); }
+  100% { box-shadow: 0 0 0 0 color-mix(in oklch, var(--cta) 0%, transparent); }
 }
 
 @utility font-tabular {
   font-variant-numeric: tabular-nums;
 }
 
+@utility text-display {
+  font-family: var(--font-heading);
+  font-size: var(--text-display);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@utility text-headline {
+  font-family: var(--font-heading);
+  font-size: var(--text-headline);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
 @utility glass-panel {
-  background: rgba(255, 255, 255, 0.85);
+  background: color-mix(in oklch, var(--surface-1) 85%, transparent);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 
   @variant dark {
-    background: rgba(18, 23, 36, 0.82);
+    background: color-mix(in oklch, var(--surface-1) 82%, transparent);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
   }

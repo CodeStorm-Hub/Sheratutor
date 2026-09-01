@@ -1,57 +1,65 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { DashboardPageClient } from '@/components/pages/DashboardPageClient';
+import DashboardLoading from './loading';
 
 type ScheduleDay = {
   day: number;
   chapters: { chapterId: string; title: string; subject: string; weaknessScore: number }[];
 };
 
-export default async function DashboardPage() {
+async function DashboardContent() {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
-  // 1. Fetch real student & user profile
-  const { data: userProfile } = await supabase
-    .from('profiles')
-    .select('full_name')
-    .eq('id', user?.id ?? '')
-    .maybeSingle();
+  // 1. Fetch user profile, student profile, and curriculum subjects in parallel
+  const [
+    { data: userProfile },
+    { data: studentProfile },
+    { data: dbSubjects },
+  ] = await Promise.all([
+    supabase
+      .from('profiles')
+      .select('full_name')
+      .eq('id', user?.id ?? '')
+      .maybeSingle(),
+    supabase
+      .from('student_profiles')
+      .select('id, exam_type, academic_group, education_board, target_exam_year, overall_momentum_score')
+      .eq('user_id', user?.id ?? '')
+      .maybeSingle(),
+    supabase
+      .from('subjects')
+      .select('id, name_en, name_bn, code, level, subject_group')
+      .eq('code', 'SSC-PHY')
+      .order('name_en'),
+  ]);
 
-  const { data: studentProfile } = await supabase
-    .from('student_profiles')
-    .select('id, exam_type, academic_group, education_board, target_exam_year, overall_momentum_score')
-    .eq('user_id', user?.id ?? '')
-    .maybeSingle();
+  const studentId = studentProfile?.id ?? '';
 
-  // 2. Fetch real student submissions
-  const { data: submissions } = await supabase
-    .from('exam_submissions')
-    .select('*, question_papers(title, total_marks, subjects(name_en))')
-    .eq('student_id', studentProfile?.id ?? '')
-    .order('submitted_at', { ascending: false });
-
-  // 3. Fetch real curriculum subjects for student's level
-  const { data: dbSubjects } = await supabase
-    .from('subjects')
-    .select('id, name_en, name_bn, code, level, subject_group')
-    .order('name_en');
-
-  // 4. Fetch real weakness logs to compute per-subject mastery
-  const { data: weaknesses } = await supabase
-    .from('weakness_logs')
-    .select('*, chapters(title_en, subjects(id, name_en))')
-    .eq('student_id', studentProfile?.id ?? '');
-
-  // 5. Fetch real active study plan
-  const { data: activePlan } = await supabase
-    .from('study_plans')
-    .select('daily_schedule_json, start_date, end_date')
-    .eq('student_id', studentProfile?.id ?? '')
-    .eq('is_active', true)
-    .maybeSingle();
+  // 2. Fetch student submissions, weaknesses, and active study plan in parallel
+  const [
+    { data: submissions },
+    { data: weaknesses },
+    { data: activePlan },
+  ] = await Promise.all([
+    supabase
+      .from('exam_submissions')
+      .select('*, question_papers(title, total_marks, subjects(name_en))')
+      .eq('student_id', studentId)
+      .order('submitted_at', { ascending: false }),
+    supabase
+      .from('weakness_logs')
+      .select('*, chapters(title_en, subjects(id, name_en))')
+      .eq('student_id', studentId),
+    supabase
+      .from('study_plans')
+      .select('daily_schedule_json, start_date, end_date')
+      .eq('student_id', studentId)
+      .eq('is_active', true)
+      .maybeSingle(),
+  ]);
 
   // First name
   const fullName =
@@ -98,19 +106,16 @@ export default async function DashboardPage() {
 
   // Real curriculum subjects
   const defaultSubjectList = [
-    { id: '1', name_en: 'Physics', name_bn: 'পদার্থবিজ্ঞান', code: 'PHY', progress: 78, chapterCount: 8 },
-    { id: '2', name_en: 'Chemistry', name_bn: 'রসায়ন', code: 'CHEM', progress: 65, chapterCount: 6 },
-    { id: '3', name_en: 'Mathematics', name_bn: 'উচ্চতর গণিত', code: 'MATH', progress: 84, chapterCount: 10 },
-    { id: '4', name_en: 'English', name_bn: 'ইংরেজি', code: 'ENG', progress: 90, chapterCount: 5 },
+    { id: '1', name_en: 'Physics', name_bn: 'পদার্থবিজ্ঞান', code: 'PHY', progress: 78, chapterCount: 14 },
   ];
 
   const displaySubjects =
     dbSubjects && dbSubjects.length > 0
-      ? dbSubjects.slice(0, 4).map((sub, idx) => {
+      ? dbSubjects.map((sub) => {
           const subWeaknesses = (weaknesses || []).filter(
             (w) => w.chapters?.subjects?.id === sub.id
           );
-          let progress = 70 + (idx % 3) * 8;
+          let progress = 78;
           if (subWeaknesses.length > 0) {
             const avgWeakness =
               subWeaknesses.reduce((a, b) => a + Number(b.weakness_score), 0) /
@@ -123,7 +128,7 @@ export default async function DashboardPage() {
             name_bn: sub.name_bn || sub.name_en,
             code: sub.code,
             progress,
-            chapterCount: 4 + (idx % 4) * 2,
+            chapterCount: 14,
           };
         })
       : defaultSubjectList;
@@ -137,20 +142,20 @@ export default async function DashboardPage() {
       checked: true,
     },
     {
-      title: 'Chemistry: Structure of Matter',
-      subtitle: '35 min · Periodic table revision',
+      title: 'Physics: Work, Power & Energy Formulas',
+      subtitle: '35 min · Kinetic & Potential energy',
       time: '11:00',
       checked: true,
     },
     {
-      title: 'Higher Math: Problem Solving Practice',
-      subtitle: '20 min · Board question drill',
+      title: 'Physics: Light Reflection & Ray Diagrams',
+      subtitle: '20 min · Mirror formula derivation',
       time: '16:30',
       checked: false,
     },
     {
-      title: 'English: Sentence Structure & Translation',
-      subtitle: '15 min · Formal writing',
+      title: 'Physics: Current Electricity & Ohm\'s Law',
+      subtitle: '15 min · Circuit calculations',
       time: '19:00',
       checked: false,
     },
@@ -192,5 +197,13 @@ export default async function DashboardPage() {
       submissionsCount={submissions?.length || 0}
       hasSubmissions={!!(submissions && submissions.length > 0)}
     />
+  );
+}
+
+export default function DashboardPage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <DashboardContent />
+    </Suspense>
   );
 }

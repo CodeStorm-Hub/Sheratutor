@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "web/src/app/kitchen-sink/page.tsx"
+        ],
+        "createdAt": "2026-08-30T19:14:17.811Z",
+        "reason": "kitchen-sink is the design-system reference page; this card is a labeled demo of the border-l-mark examiner margin-rule token, a deliberate SheraTutor domain metaphor documented in DESIGN.md"
+      }
+    ]
+  }
+}

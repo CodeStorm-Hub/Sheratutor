@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { MistakesPageClient, MistakeItem } from '@/components/pages/MistakesPageClient';
+import DashboardLoading from '../loading';
 
-export default async function MistakeAnalysisPage() {
+async function MistakesContent() {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
   const { data: profile } = await supabase
     .from('student_profiles')
@@ -46,7 +46,7 @@ export default async function MistakeAnalysisPage() {
         }))
       : [
           {
-            type: 'Step-based derivations',
+            type: 'Step-based equation derivations',
             type_bn: 'ধাপভিত্তিক সমীকরণ প্রতিপাদন',
             subject: 'Physics',
             count: '8 mistakes',
@@ -54,20 +54,22 @@ export default async function MistakeAnalysisPage() {
             color: "coral", tags: ["Calculation", "Formula"] as const,
           },
           {
-            type: 'Missing final units in calculation',
-            type_bn: 'হিসাবে শেষ একক বাদ দেওয়া',
-            subject: 'Higher Math',
+            type: 'Missing SI units in final answer',
+            type_bn: 'হিসাবে শেষ SI একক বাদ দেওয়া',
+            subject: 'Physics',
             count: '5 mistakes',
             lostMarks: 4,
             color: 'sun' as const,
+            tags: ["Units", "Marks Loss"] as const,
           },
           {
-            type: 'Chemical equation balance',
-            type_bn: 'রাসায়নিক সমীকরণ সমতাকরণ',
-            subject: 'Chemistry',
+            type: 'Vector sign and direction convention',
+            type_bn: 'ভেক্টরের দিক ও চিহ্নের ভুল',
+            subject: 'Physics',
             count: '4 mistakes',
-            lostMarks: 2,
+            lostMarks: 3,
             color: 'mint' as const,
+            tags: ["Motion", "Concept"] as const,
           },
         ];
 
@@ -78,5 +80,13 @@ export default async function MistakeAnalysisPage() {
       conceptualPercent={weaknesses && weaknesses.length > 0 ? 78 : 76}
       dynamicMistakes={dynamicMistakes}
     />
+  );
+}
+
+export default function MistakeAnalysisPage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <MistakesContent />
+    </Suspense>
   );
 }
