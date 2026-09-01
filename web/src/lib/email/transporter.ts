@@ -7,7 +7,7 @@ export function getEmailTransporter(): nodemailer.Transporter {
     return transporter;
   }
 
-  const host = process.env.ZOHO_SMTP_HOST || 'smtppro.zoho.com';
+  const host = process.env.ZOHO_SMTP_HOST || 'smtp.zoho.com';
   const port = parseInt(process.env.ZOHO_SMTP_PORT || '465', 10);
   const user = process.env.ZOHO_SMTP_USER || 'support@sheratutor.tech';
   const pass = process.env.ZOHO_SMTP_PASS || '';
