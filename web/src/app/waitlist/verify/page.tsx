@@ -140,7 +140,7 @@ async function VerifyContent({ searchParams }: VerifyPageProps) {
 
           <div className="mt-8">
             <Link
-              href={'/#waitlist' as Route}
+              href={'/#waitlist-section' as Route}
               className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-cta px-5 py-3.5 text-sm font-semibold text-cta-foreground shadow-sm transition hover:opacity-90"
             >
               ওয়েটলিস্টে পুনরায় যোগ দাও <ArrowRight size={16} />
