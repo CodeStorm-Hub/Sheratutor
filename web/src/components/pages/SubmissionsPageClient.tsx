@@ -41,10 +41,10 @@ export function SubmissionsPageClient({
   const { language, t } = useLanguage();
 
   const mockSubjects = [
-    { subject: language === 'bn' ? 'পদার্থবিজ্ঞান' : 'Physics', value: 84 },
-    { subject: language === 'bn' ? 'উচ্চতর গণিত' : 'Higher Math', value: 78 },
-    { subject: language === 'bn' ? 'রসায়ন' : 'Chemistry', value: 71 },
-    { subject: language === 'bn' ? 'ইংরেজি' : 'English', value: 92 },
+    { subject: language === 'bn' ? 'গতি (Motion)' : 'Motion', value: 84 },
+    { subject: language === 'bn' ? 'বল (Force)' : 'Force', value: 78 },
+    { subject: language === 'bn' ? 'কাজ ও শক্তি (Work & Energy)' : 'Work & Energy', value: 88 },
+    { subject: language === 'bn' ? 'আলোর প্রতিফলন (Light)' : 'Optics & Light', value: 92 },
   ];
 
   return (

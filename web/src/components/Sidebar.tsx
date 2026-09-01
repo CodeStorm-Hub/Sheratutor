@@ -16,6 +16,7 @@ import {
   Settings,
   Sparkles,
   Trophy,
+  Users,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { LogoMark } from '@/components/logo';
@@ -28,12 +29,14 @@ type NavEntry =
 interface SidebarContentProps {
   userName?: string;
   userSub?: string;
+  isAdmin?: boolean;
   onNavigate?: () => void;
 }
 
 export function SidebarContent({
   userName = 'Student',
   userSub = 'HSC · Science',
+  isAdmin = false,
   onNavigate,
 }: SidebarContentProps) {
   const pathname = usePathname();
@@ -57,6 +60,12 @@ export function SidebarContent({
     { label: t('nav.mistakes'), href: '/dashboard/mistake-analysis', icon: LineChart },
     { group: true, label: t('nav.planning') },
     { label: t('nav.planner'), href: '/dashboard/study-plan', icon: Calendar },
+    ...(isAdmin
+      ? [
+          { group: true as const, label: 'ADMINISTRATION' },
+          { label: 'Waitlist Ops', href: '/dashboard/admin/waitlist', icon: Users },
+        ]
+      : []),
   ];
 
   const bottom: NavEntry[] = [

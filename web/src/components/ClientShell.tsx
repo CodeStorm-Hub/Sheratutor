@@ -10,7 +10,8 @@ export const ClientShell: React.FC<{
   userName?: string;
   userSub?: string;
   userInitials?: string;
-}> = ({ children, userName, userSub, userInitials }) => {
+  isAdmin?: boolean;
+}> = ({ children, userName, userSub, userInitials, isAdmin = false }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
@@ -18,13 +19,11 @@ export const ClientShell: React.FC<{
       {/* Desktop sidebar */}
       <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 border-r border-sidebar-border bg-sidebar lg:block">
         <Suspense fallback={<div className="h-full w-full bg-sidebar" />}>
-          <SidebarContent userName={userName} userSub={userSub} />
+          <SidebarContent userName={userName} userSub={userSub} isAdmin={isAdmin} />
         </Suspense>
       </aside>
 
-      {/* Mobile drawer. Explicit transform/opacity per data-state so the panel
-          is reliably visible when open regardless of the shared sheet's
-          enter-animation utilities. */}
+      {/* Mobile drawer */}
       <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
         <SheetContent
           side="left"
@@ -36,6 +35,7 @@ export const ClientShell: React.FC<{
             <SidebarContent
               userName={userName}
               userSub={userSub}
+              isAdmin={isAdmin}
               onNavigate={() => setMobileOpen(false)}
             />
           </Suspense>

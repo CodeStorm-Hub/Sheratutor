@@ -11,6 +11,7 @@ import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { LanguageProvider } from '@/context/LanguageContext';
 import { Toaster } from '@/components/ui/sonner';
+import { Analytics } from '@vercel/analytics/react';
 
 const baloo2 = Baloo_2({
   subsets: ['latin'],
@@ -47,10 +48,54 @@ const notoSansBengali = Noto_Sans_Bengali({
   display: 'swap',
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://sheratutor.tech';
+
 export const metadata: Metadata = {
-  title: 'SheraTutor — HSC & SSC AI Learning Workspace',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'SheraTutor — HSC & SSC AI Diagnostic Learning Workspace',
+    template: '%s | SheraTutor',
+  },
   description:
-    'A modern dashboard and learning workspace for Bangladeshi HSC & SSC students.',
+    'A private AI tutor that evaluates handwritten Bangla and English exam scripts just like an authentic NCTB Board Examiner. Free forever for every HSC & SSC student across Bangladesh.',
+  keywords: [
+    'SheraTutor',
+    'HSC preparation',
+    'SSC preparation',
+    'NCTB rubric',
+    'Bangla AI OCR',
+    'Handwritten exam evaluation',
+    'Education Board Bangladesh',
+    'Dhaka Board HSC',
+    'Creative Question grading',
+    'সেরাটিউটর',
+  ],
+  authors: [{ name: 'SheraTutor Team' }],
+  creator: 'SheraTutor',
+  publisher: 'SheraTutor',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'SheraTutor — HSC & SSC AI Diagnostic Learning Workspace',
+    description:
+      'Photograph your handwritten exam scripts. SheraTutor evaluates against official NCTB rubrics and pinpoints mark recoveries instantly.',
+    url: siteUrl,
+    siteName: 'SheraTutor',
+    locale: 'bn_BD',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SheraTutor — Authentic NCTB AI Examiner',
+    description:
+      'Evaluates handwritten SSC & HSC exam scripts with official NCTB board rubrics. 100% free for students.',
+  },
   icons: {
     icon: '/icon.svg',
   },
@@ -74,6 +119,7 @@ export default function RootLayout({
             <Toaster />
           </LanguageProvider>
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );

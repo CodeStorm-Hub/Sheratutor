@@ -26,6 +26,13 @@ async function AuthenticatedDashboardShell({
 
   if (!user) redirect('/login');
 
+  // Check admin status
+  const adminEmails = [
+    'syed.salman.reza.181@gmail.com',
+    ...(process.env.ADMIN_EMAILS ? process.env.ADMIN_EMAILS.split(',').map((e) => e.trim().toLowerCase()) : []),
+  ];
+  const isAdmin = Boolean(user.email && adminEmails.includes(user.email.toLowerCase()));
+
   // Fetch user profile and student profile in parallel
   const [{ data: userProfile }, { data: studentProfile }] = await Promise.all([
     supabase
@@ -69,6 +76,7 @@ async function AuthenticatedDashboardShell({
       userName={fullName}
       userSub={userSub}
       userInitials={initials}
+      isAdmin={isAdmin}
     >
       {children}
     </ClientShell>

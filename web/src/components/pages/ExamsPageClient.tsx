@@ -118,11 +118,8 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
   });
 
   const subjectOptions = [
-    { value: 'ALL', label_en: 'All Subjects', label_bn: 'সকল বিষয়' },
+    { value: 'ALL', label_en: 'All Papers (Physics)', label_bn: 'সকল পদার্থবিজ্ঞান প্রশ্নপত্র' },
     { value: 'Physics', label_en: 'Physics', label_bn: 'পদার্থবিজ্ঞান' },
-    { value: 'Chemistry', label_en: 'Chemistry', label_bn: 'রসায়ন' },
-    { value: 'Mathematics', label_en: 'Mathematics', label_bn: 'গণিত' },
-    { value: 'English', label_en: 'English', label_bn: 'ইংরেজি' },
   ];
 
   const difficultyOptions = [

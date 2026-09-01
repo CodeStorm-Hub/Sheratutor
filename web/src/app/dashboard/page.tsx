@@ -32,6 +32,7 @@ async function DashboardContent() {
     supabase
       .from('subjects')
       .select('id, name_en, name_bn, code, level, subject_group')
+      .eq('code', 'SSC-PHY')
       .order('name_en'),
   ]);
 
@@ -105,19 +106,16 @@ async function DashboardContent() {
 
   // Real curriculum subjects
   const defaultSubjectList = [
-    { id: '1', name_en: 'Physics', name_bn: 'পদার্থবিজ্ঞান', code: 'PHY', progress: 78, chapterCount: 8 },
-    { id: '2', name_en: 'Chemistry', name_bn: 'রসায়ন', code: 'CHEM', progress: 65, chapterCount: 6 },
-    { id: '3', name_en: 'Mathematics', name_bn: 'উচ্চতর গণিত', code: 'MATH', progress: 84, chapterCount: 10 },
-    { id: '4', name_en: 'English', name_bn: 'ইংরেজি', code: 'ENG', progress: 90, chapterCount: 5 },
+    { id: '1', name_en: 'Physics', name_bn: 'পদার্থবিজ্ঞান', code: 'PHY', progress: 78, chapterCount: 14 },
   ];
 
   const displaySubjects =
     dbSubjects && dbSubjects.length > 0
-      ? dbSubjects.slice(0, 4).map((sub, idx) => {
+      ? dbSubjects.map((sub) => {
           const subWeaknesses = (weaknesses || []).filter(
             (w) => w.chapters?.subjects?.id === sub.id
           );
-          let progress = 70 + (idx % 3) * 8;
+          let progress = 78;
           if (subWeaknesses.length > 0) {
             const avgWeakness =
               subWeaknesses.reduce((a, b) => a + Number(b.weakness_score), 0) /
@@ -130,7 +128,7 @@ async function DashboardContent() {
             name_bn: sub.name_bn || sub.name_en,
             code: sub.code,
             progress,
-            chapterCount: 4 + (idx % 4) * 2,
+            chapterCount: 14,
           };
         })
       : defaultSubjectList;
@@ -144,20 +142,20 @@ async function DashboardContent() {
       checked: true,
     },
     {
-      title: 'Chemistry: Structure of Matter',
-      subtitle: '35 min · Periodic table revision',
+      title: 'Physics: Work, Power & Energy Formulas',
+      subtitle: '35 min · Kinetic & Potential energy',
       time: '11:00',
       checked: true,
     },
     {
-      title: 'Higher Math: Problem Solving Practice',
-      subtitle: '20 min · Board question drill',
+      title: 'Physics: Light Reflection & Ray Diagrams',
+      subtitle: '20 min · Mirror formula derivation',
       time: '16:30',
       checked: false,
     },
     {
-      title: 'English: Sentence Structure & Translation',
-      subtitle: '15 min · Formal writing',
+      title: 'Physics: Current Electricity & Ohm\'s Law',
+      subtitle: '15 min · Circuit calculations',
       time: '19:00',
       checked: false,
     },

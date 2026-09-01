@@ -15,6 +15,7 @@ async function getSubjects() {
   const { data: subjects } = await supabase
     .from('subjects')
     .select('id, name_en, name_bn, chapters(id, chapter_no, title_en, title_bn)')
+    .eq('code', 'SSC-PHY')
     .order('name_en');
   return subjects ?? [];
 }
