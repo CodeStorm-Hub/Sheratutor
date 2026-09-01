@@ -107,7 +107,7 @@ async function CachedLandingUI({ lang }: { lang: Language }) {
   ];
 
   return (
-    <div className="flex min-h-dvh w-full scroll-smooth flex-col overflow-x-hidden bg-background">
+    <div className="flex min-h-dvh w-full flex-col overflow-x-clip bg-background">
       <header className="w-full border-b border-border">
         <div className="mx-auto flex w-full max-w-[1240px] items-center justify-between gap-2 px-4 py-3.5 sm:gap-2.5 sm:px-6 sm:py-4">
           <Logo tagline />
@@ -243,8 +243,8 @@ async function CachedLandingUI({ lang }: { lang: Language }) {
         </section>
 
         <section
-          id="waitlist"
-          className="my-4 w-full rounded-2xl border border-border bg-card p-6 py-10 text-card-foreground shadow-md sm:p-10"
+          id="waitlist-section"
+          className="my-4 w-full scroll-mt-8 rounded-2xl border border-border bg-card p-6 py-10 text-card-foreground shadow-md sm:p-10"
         >
           <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
             <div className="flex flex-col gap-3">
