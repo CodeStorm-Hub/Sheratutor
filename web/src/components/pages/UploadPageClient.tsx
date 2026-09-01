@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { UploadForm } from '@/components/upload-form';
+import { UploadForm, type Paper } from '@/components/upload-form';
 import { PageHeader } from '@/components/PageHeader';
 import { Sparkles } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
@@ -11,7 +11,7 @@ export function UploadPageClient({
   papers,
   initialPaperId,
 }: {
-  papers: any[];
+  papers: Paper[];
   initialPaperId?: string;
 }) {
   const { language } = useLanguage();
@@ -26,8 +26,11 @@ export function UploadPageClient({
             : 'Take clear photos of your handwritten answer script in chronological order.'
         }
       >
-        <Link href="/dashboard/practice/generate" className="primary-btn text-xs font-semibold">
-          <Sparkles size={14} className="mr-1.5" />
+        <Link
+          href="/dashboard/practice/generate"
+          className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-cta px-4 py-2.5 text-xs font-semibold text-cta-foreground shadow-xs transition-colors hover:opacity-90"
+        >
+          <Sparkles size={14} />
           {language === 'bn' ? 'নতুন প্রশ্নপত্র তৈরি করো' : 'Generate Question Paper'}
         </Link>
       </PageHeader>

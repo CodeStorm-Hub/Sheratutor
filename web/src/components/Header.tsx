@@ -1,34 +1,60 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
+import type { Route } from 'next';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
-  Bell, Calendar, ChevronRight, LineChart, LogOut, Menu, Moon, Search,
-  Sparkles, Sun, Trophy, User, X
+  Bell,
+  Calendar,
+  ChevronRight,
+  LineChart,
+  LogOut,
+  Menu,
+  Monitor,
+  Moon,
+  Search,
+  Sparkles,
+  Sun,
+  Trophy,
+  User,
 } from 'lucide-react';
 import { signOut } from '@/app/actions/auth';
 import { useLanguage } from '@/context/LanguageContext';
+import { useTheme } from '@/context/ThemeContext';
 import { LanguageToggle } from '@/components/LanguageToggle';
 import { createClient } from '@/lib/supabase/client';
+import { cn } from '@/lib/utils';
+import { Button } from '@/components/ui/button';
+import { Avatar, AvatarFallback } from '@/components/ui/avatar';
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
+interface NotificationItem {
+  id: string;
+  title: string;
+  desc: string;
+  time: string;
+  unread: boolean;
+  href: string;
+}
 
 interface HeaderProps {
-  collapsed: boolean;
-  setCollapsed: React.Dispatch<React.SetStateAction<boolean>>;
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  darkMode: boolean;
-  setDarkMode: (val: boolean) => void;
+  onMenuClick: () => void;
   userInitials?: string;
   userName?: string;
   userSub?: string;
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  collapsed,
-  setCollapsed,
-  setOpen,
-  darkMode,
-  setDarkMode,
+  onMenuClick,
   userInitials = 'ST',
   userName = 'Student',
   userSub = 'HSC · Science',
@@ -36,89 +62,63 @@ export const Header: React.FC<HeaderProps> = ({
   const pathname = usePathname();
   const router = useRouter();
   const { language, t } = useLanguage();
+  const { mounted: themeMounted, resolvedTheme, theme, setTheme } = useTheme();
   const supabase = createClient();
 
-  const [profileOpen, setProfileOpen] = useState(false);
-  const [notifOpen, setNotifOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [notifications, setNotifications] = useState<any[]>([]);
+  const [notifications, setNotifications] = useState<NotificationItem[]>([]);
   const [isMac, setIsMac] = useState(true);
 
   useEffect(() => {
-    if (typeof window !== 'undefined' && typeof navigator !== 'undefined') {
+    if (typeof navigator !== 'undefined') {
       setIsMac(/Mac|iPod|iPhone|iPad/.test(navigator.platform || navigator.userAgent));
     }
   }, []);
 
-  const profileRef = useRef<HTMLDivElement>(null);
-  const notifRef = useRef<HTMLDivElement>(null);
-
+  // Live "grading complete" notifications.
   useEffect(() => {
-    // Initial fetch of unread notifications could go here
-
-    // Listen for grading completion
-    const channel = supabase.channel('schema-db-changes')
+    const channel = supabase
+      .channel('schema-db-changes')
       .on(
         'postgres_changes',
-        {
-          event: 'UPDATE',
-          schema: 'public',
-          table: 'exam_submissions',
-          filter: 'status=eq.GRADED'
-        },
+        { event: 'UPDATE', schema: 'public', table: 'exam_submissions', filter: 'status=eq.GRADED' },
         (payload) => {
-          console.log('Submission graded!', payload);
-          setNotifications(prev => [{
-            id: payload.new.id,
-            title: language === 'bn' ? 'খাতা মূল্যায়ন সম্পন্ন হয়েছে!' : 'Paper Grading Complete!',
-            desc: language === 'bn' ? 'তোমার পরীক্ষার খাতাটি মূল্যায়ন করা হয়েছে। ফলাফল দেখতে ক্লিক করো।' : 'Your exam paper has been graded. Click to view results.',
-            time: 'Just now',
-            unread: true,
-            href: `/dashboard/submissions/${payload.new.id}`
-          }, ...prev]);
-        }
+          setNotifications((prev) => [
+            {
+              id: String(payload.new.id),
+              title: language === 'bn' ? 'খাতা মূল্যায়ন সম্পন্ন হয়েছে!' : 'Paper grading complete',
+              desc:
+                language === 'bn'
+                  ? 'তোমার পরীক্ষার খাতাটি মূল্যায়ন করা হয়েছে। ফলাফল দেখতে ক্লিক করো।'
+                  : 'Your exam paper has been graded. Tap to see the result.',
+              time: language === 'bn' ? 'এইমাত্র' : 'Just now',
+              unread: true,
+              href: `/dashboard/submissions/${payload.new.id}`,
+            },
+            ...prev,
+          ]);
+        },
       )
       .subscribe();
-
     return () => {
       supabase.removeChannel(channel);
     };
   }, [supabase, language]);
 
-  // Handle outside click to close dropdowns
+  // ⌘K / Ctrl-K opens search.
   useEffect(() => {
-    const handleOutsideClick = (e: MouseEvent) => {
-      if (profileRef.current && !profileRef.current.contains(e.target as Node)) {
-        setProfileOpen(false);
-      }
-      if (notifRef.current && !notifRef.current.contains(e.target as Node)) {
-        setNotifOpen(false);
-      }
-    };
-    document.addEventListener('mousedown', handleOutsideClick);
-    return () => document.removeEventListener('mousedown', handleOutsideClick);
-  }, []);
-
-  // Keyboard shortcut for Cmd+K / Ctrl+K
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
         e.preventDefault();
-        setSearchOpen((prev) => !prev);
-      }
-      if (e.key === 'Escape') {
-        setSearchOpen(false);
-        setProfileOpen(false);
-        setNotifOpen(false);
+        setSearchOpen((v) => !v);
       }
     };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
   }, []);
 
   const routeTitles: Record<string, string> = {
-    '/': t('nav.home'),
     '/dashboard': t('nav.home'),
     '/dashboard/tutor': t('nav.tutor'),
     '/dashboard/practice': t('nav.exams'),
@@ -133,213 +133,251 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   const quickLinks = [
-    { label: t('nav.tutor'), href: '/dashboard/tutor', icon: Sparkles, desc: language === 'bn' ? 'প্রশ্ন জিজ্ঞাসা করুন ও ধারণা বুঝুন' : 'Ask questions & learn concepts' },
-    { label: t('nav.grading'), href: '/dashboard/upload', icon: User, desc: language === 'bn' ? 'হাতে লেখা খাতা জমা দিন' : 'Submit written answer scripts' },
+    { label: t('nav.tutor'), href: '/dashboard/tutor', icon: Sparkles, desc: language === 'bn' ? 'প্রশ্ন জিজ্ঞাসা করো ও ধারণা বোঝো' : 'Ask questions & learn concepts' },
+    { label: t('nav.grading'), href: '/dashboard/upload', icon: User, desc: language === 'bn' ? 'হাতে লেখা খাতা জমা দাও' : 'Submit written answer scripts' },
     { label: t('nav.exams'), href: '/dashboard/practice', icon: LineChart, desc: language === 'bn' ? 'বোর্ড স্ট্যান্ডার্ড প্রশ্ন অনুশীলন' : 'Practice board question papers' },
     { label: t('nav.simulator'), href: '/dashboard/board-simulator', icon: Trophy, desc: language === 'bn' ? 'টাইমারযুক্ত পূর্ণাঙ্গ বোর্ড পরীক্ষা' : 'Full timed board exam simulation' },
-    { label: t('nav.planner'), href: '/dashboard/study-plan', icon: Calendar, desc: language === 'bn' ? 'আজকের অ্যাডাপ্টিভ কাজ দেখুন' : 'View today’s adaptive tasks' },
+    { label: t('nav.planner'), href: '/dashboard/study-plan', icon: Calendar, desc: language === 'bn' ? 'আজকের অ্যাডাপ্টিভ কাজ দেখো' : "View today's adaptive tasks" },
     { label: t('nav.mistakes'), href: '/dashboard/mistake-analysis', icon: LineChart, desc: language === 'bn' ? 'নম্বর পুনরুদ্ধারের বিশ্লেষণ' : 'Review marks recovery' },
-    { label: t('nav.achievements'), href: '/dashboard/achievements', icon: Trophy, desc: language === 'bn' ? 'এক্সপি পয়েন্ট ও ব্যাজ' : 'XP points & scholarship badges' },
+    { label: t('nav.achievements'), href: '/dashboard/achievements', icon: Trophy, desc: language === 'bn' ? 'এক্সপি পয়েন্ট ও ব্যাজ' : 'XP points & badges' },
     { label: t('nav.settings'), href: '/dashboard/profile', icon: User, desc: language === 'bn' ? 'বোর্ড, বিভাগ ও পছন্দসমূহ' : 'Board, group & preferences' },
   ];
 
   let pageTitle = t('common.workspace');
   for (const [route, title] of Object.entries(routeTitles)) {
-    if (pathname === route || (route !== '/' && route !== '/dashboard' && pathname.startsWith(route))) {
+    if (pathname === route || (route !== '/dashboard' && pathname.startsWith(route))) {
       pageTitle = title;
       break;
     }
   }
 
-  const toggleNav = () => {
-    if (window.innerWidth <= 1050) {
-      setOpen(true);
-    } else {
-      setCollapsed(!collapsed);
-    }
-  };
+  const filtered = quickLinks.filter((item) => {
+    const q = searchQuery.toLowerCase();
+    return (
+      item.label.toLowerCase().includes(q) ||
+      item.desc.toLowerCase().includes(q) ||
+      item.href.toLowerCase().includes(q)
+    );
+  });
 
-  const filteredLinks = quickLinks.filter(
-    (item) =>
-      item.label.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.desc.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      item.href.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const hasUnread = notifications.some((n) => n.unread);
+  const themeChoice = theme ?? 'system';
 
   return (
     <>
-      <header>
-        <button type="button" className="menu-btn" onClick={toggleNav} aria-label="Toggle navigation menu">
-          <Menu size={21} />
-        </button>
+      <header className="sticky top-0 z-30 flex h-16 items-center gap-3 border-b border-border bg-background/85 px-4 backdrop-blur-md sm:px-6 lg:px-10">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="lg:hidden"
+          onClick={onMenuClick}
+          aria-label={language === 'bn' ? 'মেনু খোলো' : 'Open menu'}
+        >
+          <Menu className="size-5" />
+        </Button>
 
-        <div className="crumb">
-          <span>{t('common.workspace')}</span>
-          <ChevronRight size={15} />
-          <b>{pageTitle}</b>
+        <div className="flex min-w-0 items-center gap-1.5 text-xs text-muted-foreground">
+          <span className="hidden sm:inline">{t('common.workspace')}</span>
+          <ChevronRight className="hidden size-3.5 sm:inline" />
+          <span className="truncate font-semibold text-foreground">{pageTitle}</span>
         </div>
 
-        <div className="header-actions">
+        <div className="ml-auto flex items-center gap-1.5 sm:gap-2">
           <LanguageToggle />
 
-          <button type="button" className="command" onClick={() => setSearchOpen(true)}>
-            <Search size={16} />
-            <span>{t('common.search_placeholder')}</span>
-            <kbd>{isMac ? '⌘ K' : 'Ctrl K'}</kbd>
-          </button>
-
-          <button 
-            type="button" 
-            className="round-btn theme-icon" 
-            onClick={() => setDarkMode(!darkMode)}
-            aria-label={darkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+          <button
+            type="button"
+            onClick={() => setSearchOpen(true)}
+            aria-label={language === 'bn' ? 'খোঁজো' : 'Search'}
+            className="hidden items-center gap-2 rounded-lg border border-border bg-surface-1 px-2.5 py-1.5 text-xs text-muted-foreground transition-colors hover:bg-accent hover:text-foreground md:flex"
           >
-            {darkMode ? <Sun size={17} /> : <Moon size={17} />}
+            <Search className="size-4" />
+            <span className="hidden max-w-[160px] truncate lg:inline">
+              {t('common.search_placeholder')}
+            </span>
+            <kbd className="ml-1 rounded border border-border px-1 font-mono text-3xs font-medium">
+              {isMac ? '⌘K' : 'Ctrl K'}
+            </kbd>
           </button>
 
-          <div style={{ position: 'relative' }} ref={notifRef}>
-            <button
-              type="button"
-              className="round-btn"
-              onClick={() => {
-                setNotifOpen(!notifOpen);
-                setProfileOpen(false);
-              }}
-              aria-label="View notifications"
-            >
-              <Bell size={18} />
-              {notifications.some(n => n.unread) && <i />}
-            </button>
+          {/* Theme */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="icon" aria-label={language === 'bn' ? 'থিম' : 'Theme'} suppressHydrationWarning>
+                {themeMounted && resolvedTheme === 'dark' ? <Sun className="size-[18px]" /> : <Moon className="size-[18px]" />}
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end">
+              {([
+                ['light', Sun, t('common.light_mode', 'Light')],
+                ['dark', Moon, t('common.dark_mode', 'Dark')],
+                ['system', Monitor, language === 'bn' ? 'সিস্টেম' : 'System'],
+              ] as const).map(([value, Icon, label]) => (
+                <DropdownMenuItem
+                  key={value}
+                  onClick={() => setTheme(value)}
+                  className={cn(themeChoice === value && 'bg-accent text-accent-foreground')}
+                >
+                  <Icon className="size-4" />
+                  {label}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
 
-            {notifOpen && (
-              <div className="header-dropdown notif-dropdown">
-                <div className="dropdown-header">
-                  <b>{t('common.notifications')}</b>
-                  <button type="button" className="small-link-btn" onClick={() => setNotifications(prev => prev.map(n => ({...n, unread: false})))}>
-                    {t('common.mark_all_read')}
+          {/* Notifications */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="icon" className="relative" aria-label={t('common.notifications', 'Notifications')}>
+                <Bell className="size-[18px]" />
+                {hasUnread && <span className="absolute top-1.5 right-1.5 size-2 rounded-full bg-cta ring-2 ring-background" />}
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-80">
+              <div className="flex items-center justify-between px-1 py-1">
+                <DropdownMenuLabel className="p-0">{t('common.notifications', 'Notifications')}</DropdownMenuLabel>
+                {hasUnread && (
+                  <button
+                    type="button"
+                    className="text-xs font-medium text-cta hover:underline"
+                    onClick={() => setNotifications((prev) => prev.map((n) => ({ ...n, unread: false })))}
+                  >
+                    {t('common.mark_all_read', 'Mark all read')}
                   </button>
-                </div>
-
-                <div className="notif-list">
-                  {notifications.map(n => (
-                    <Link href={n.href} key={n.id} onClick={() => setNotifOpen(false)} style={{textDecoration: 'none'}}>
-                      <div className={`notif-item ${n.unread ? 'unread' : ''}`}>
-                        <span className="notif-badge mint">✓</span>
-                        <div>
-                          <b>{n.title}</b>
-                          <p>{n.desc}</p>
-                          <time>{n.time}</time>
-                        </div>
-                      </div>
-                    </Link>
+                )}
+              </div>
+              <DropdownMenuSeparator />
+              {notifications.length === 0 ? (
+                <p className="px-2 py-6 text-center text-sm text-muted-foreground">
+                  {language === 'bn' ? 'নতুন কোনো নোটিফিকেশন নেই' : 'No new notifications'}
+                </p>
+              ) : (
+                <div className="max-h-72 overflow-y-auto">
+                  {notifications.map((n) => (
+                    <DropdownMenuItem key={n.id} asChild className="items-start gap-2.5 py-2">
+                      <Link href={n.href as Route}>
+                        <span className="mt-0.5 grid size-5 flex-none place-items-center rounded-full bg-accent2/15 text-2xs text-accent2">
+                          ✓
+                        </span>
+                        <span className="min-w-0">
+                          <span className="block truncate text-sm font-semibold">{n.title}</span>
+                          <span className="block text-xs text-muted-foreground">{n.desc}</span>
+                          <span className="mt-0.5 block font-mono text-3xs text-muted-foreground">{n.time}</span>
+                        </span>
+                      </Link>
+                    </DropdownMenuItem>
                   ))}
-                  
-                  {notifications.length === 0 && (
-                    <div className="p-4 text-center text-sm text-muted-foreground">
-                      No new notifications
-                    </div>
-                  )}
                 </div>
+              )}
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild>
+                <Link href="/dashboard/submissions" className="justify-between">
+                  {t('common.see_all', 'See all')}
+                  <ChevronRight className="size-3.5" />
+                </Link>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
 
-                <div className="dropdown-footer">
-                  <Link href="/dashboard/submissions" onClick={() => setNotifOpen(false)}>
-                    {t('common.see_all')} <ChevronRight size={14} />
-                  </Link>
+          {/* Profile */}
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button
+                type="button"
+                aria-label={language === 'bn' ? 'অ্যাকাউন্ট মেনু' : 'Account menu'}
+                className="rounded-full outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                <Avatar className="size-9">
+                  <AvatarFallback className="bg-navy text-xs font-bold text-surface-1">
+                    {userInitials}
+                  </AvatarFallback>
+                </Avatar>
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-60">
+              <div className="flex items-center gap-2.5 p-2">
+                <Avatar className="size-10">
+                  <AvatarFallback className="bg-navy text-xs font-bold text-surface-1">{userInitials}</AvatarFallback>
+                </Avatar>
+                <div className="min-w-0">
+                  <p className="truncate text-sm font-semibold">{userName}</p>
+                  <p className="truncate text-xs text-muted-foreground">{userSub}</p>
                 </div>
               </div>
-            )}
-          </div>
-
-          <div style={{ position: 'relative' }} ref={profileRef}>
-            <button
-              type="button"
-              className="avatar-btn"
-              onClick={() => {
-                setProfileOpen(!profileOpen);
-                setNotifOpen(false);
-              }}
-            >
-              <div className="avatar">{userInitials}</div>
-            </button>
-
-            {profileOpen && (
-              <div className="header-dropdown profile-dropdown">
-                <div className="profile-menu-head">
-                  <div className="avatar" style={{ width: 42, height: 42, fontSize: 13 }}>{userInitials}</div>
-                  <div style={{ minWidth: 0, flex: 1 }}>
-                    <b className="profile-name">{userName}</b>
-                    <small className="profile-sub">{userSub}</small>
-                  </div>
-                </div>
-                <div className="dropdown-divider" />
-                <div className="profile-menu-links">
-                  <Link href="/dashboard/profile" className="profile-link" onClick={() => setProfileOpen(false)}>
-                    <User size={16} /><span>{t('nav.settings')}</span>
+              <DropdownMenuSeparator />
+              {[
+                { href: '/dashboard/profile', icon: User, label: t('nav.settings') },
+                { href: '/dashboard/study-plan', icon: Calendar, label: t('nav.planner') },
+                { href: '/dashboard/achievements', icon: Trophy, label: t('nav.achievements') },
+                { href: '/dashboard/submissions', icon: LineChart, label: t('nav.results') },
+              ].map((row) => (
+                <DropdownMenuItem key={row.href} asChild>
+                  <Link href={row.href as Route}>
+                    <row.icon className="size-4" />
+                    {row.label}
                   </Link>
-                  <Link href="/dashboard/study-plan" className="profile-link" onClick={() => setProfileOpen(false)}>
-                    <Calendar size={16} /><span>{t('nav.planner')}</span>
-                  </Link>
-                  <Link href="/dashboard/achievements" className="profile-link" onClick={() => setProfileOpen(false)}>
-                    <Trophy size={16} /><span>{t('nav.achievements')}</span>
-                  </Link>
-                  <Link href="/dashboard/submissions" className="profile-link" onClick={() => setProfileOpen(false)}>
-                    <LineChart size={16} /><span>{t('nav.results')}</span>
-                  </Link>
-                </div>
-                <div className="dropdown-divider" />
-                <div className="profile-menu-row" onClick={() => setDarkMode(!darkMode)} style={{ cursor: 'pointer' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-                    {darkMode ? <Sun size={16} /> : <Moon size={16} />}
-                    <span style={{ fontSize: 13, fontWeight: 500 }}>{darkMode ? t('common.light_mode') : t('common.dark_mode')}</span>
-                  </div>
-                  <div className={`theme-switch ${darkMode ? 'on' : ''}`}><i /></div>
-                </div>
-                <div className="dropdown-divider" />
-                <form action={signOut} style={{ margin: 0, padding: 0 }}>
-                  <button type="submit" className="signout-btn">
-                    <LogOut size={16} /><span>{t('common.sign_out')}</span>
-                  </button>
-                </form>
-              </div>
-            )}
-          </div>
+                </DropdownMenuItem>
+              ))}
+              <DropdownMenuSeparator />
+              <DropdownMenuItem asChild variant="destructive">
+                <button type="button" className="w-full" onClick={() => signOut()}>
+                  <LogOut className="size-4" />
+                  {t('common.sign_out', 'Sign out')}
+                </button>
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
       </header>
-      
-      {searchOpen && (
-        <div className="search-modal-backdrop" onClick={() => setSearchOpen(false)}>
-          <div className="search-modal" onClick={(e) => e.stopPropagation()}>
-            <div className="search-modal-head">
-              <Search size={18} color="var(--muted-foreground)" />
-              <input autoFocus placeholder={language === 'bn' ? 'টুলস, বিষয়, পরীক্ষা বা সেটিংস খুঁজুন…' : 'Search tools, subjects, exams, or settings…'} value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} />
-              <button type="button" className="modal-close-btn" onClick={() => setSearchOpen(false)}>
-                <X size={18} />
-              </button>
-            </div>
-            <div className="search-results-list">
-              <div className="search-group-title">{t('common.search_title')}</div>
-              {filteredLinks.length === 0 ? (
-                <div style={{ padding: '24px 16px', textAlign: 'center', color: 'var(--muted-foreground)', fontSize: 13 }}>{t('common.search_empty')}</div>
-              ) : (
-                filteredLinks.map((item) => (
-                  <div key={item.href} className="search-result-item" onClick={() => { setSearchOpen(false); router.push(item.href); }}>
-                    <div className="search-item-icon"><item.icon size={17} /></div>
-                    <div style={{ flex: 1, minWidth: 0 }}>
-                      <b>{item.label}</b>
-                      <small>{item.desc}</small>
-                    </div>
-                    <ChevronRight size={16} color="var(--muted-foreground)" />
-                  </div>
-                ))
-              )}
-            </div>
-            <div className="search-modal-footer">
-              <span>{t('common.search_footer_esc')}</span>
-              <span>{t('common.search_footer_nav')}</span>
-            </div>
+
+      <Dialog open={searchOpen} onOpenChange={setSearchOpen}>
+        <DialogContent showCloseButton={false} className="gap-0 overflow-hidden p-0 sm:max-w-lg">
+          <DialogTitle className="sr-only">{t('common.search_title', 'Search')}</DialogTitle>
+          <div className="flex items-center gap-2.5 border-b border-border px-4">
+            <Search className="size-4 flex-none text-muted-foreground" />
+            <input
+              id="global-search-input"
+              name="search"
+              aria-label={language === 'bn' ? 'অনুসন্ধান' : 'Search'}
+              autoFocus
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={
+                language === 'bn' ? 'টুল, বিষয়, পরীক্ষা বা সেটিংস খোঁজো…' : 'Search tools, exams, or settings…'
+              }
+              className="h-12 flex-1 bg-transparent text-sm outline-none placeholder:text-muted-foreground/70"
+            />
           </div>
-        </div>
-      )}
+          <div className="max-h-80 overflow-y-auto p-2">
+            <p className="px-2 py-1.5 font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
+              {t('common.search_title', 'Quick links')}
+            </p>
+            {filtered.length === 0 ? (
+              <p className="px-2 py-6 text-center text-sm text-muted-foreground">
+                {t('common.search_empty', 'Nothing found')}
+              </p>
+            ) : (
+              filtered.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href as Route}
+                  onClick={() => setSearchOpen(false)}
+                  className="flex w-full items-center gap-3 rounded-lg px-2 py-2 text-left transition-colors hover:bg-accent"
+                >
+                  <span className="grid size-8 flex-none place-items-center rounded-lg bg-accent text-muted-foreground">
+                    <item.icon className="size-[17px]" />
+                  </span>
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate text-sm font-semibold">{item.label}</span>
+                    <span className="block truncate text-xs text-muted-foreground">{item.desc}</span>
+                  </span>
+                  <ChevronRight className="size-4 flex-none text-muted-foreground" />
+                </Link>
+              ))
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </>
   );
 };

@@ -1,9 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
-import ReactMarkdown from 'react-markdown';
-import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import { RenderMathText } from '@/components/render-math-text';
 import {
   Sparkles,
   Send,
@@ -27,10 +25,10 @@ import {
   Flame,
   Compass,
 } from 'lucide-react';
-import { Tag } from '@/components/Tag';
 import { PageHeader } from '@/components/PageHeader';
 import { useLanguage } from '@/context/LanguageContext';
 import { toast } from 'sonner';
+import { cn } from '@/lib/utils';
 
 type Chapter = { id: string; chapter_no: number; title_en: string; title_bn: string };
 type Subject = { id: string; name_en: string; name_bn: string; chapters: Chapter[] };
@@ -75,6 +73,20 @@ export function TutorPageClient({
   );
   const currentChapter =
     sortedChapters.find((c) => c.id === selectedChapterId) || sortedChapters[0];
+
+  // Keep state in sync when subjects are provided or updated
+  useEffect(() => {
+    if ((!selectedSubjectId || !subjects.some(s => s.id === selectedSubjectId)) && subjects.length > 0) {
+      const initSub = subjects.find((s) => s.chapters && s.chapters.length > 0) || subjects[0];
+      if (initSub) {
+        setSelectedSubjectId(initSub.id);
+        const chs = (initSub.chapters ?? []).slice().sort((a, b) => (a.chapter_no || 0) - (b.chapter_no || 0));
+        if (chs.length > 0) {
+          setSelectedChapterId(chs[0].id);
+        }
+      }
+    }
+  }, [subjects, selectedSubjectId]);
 
   // Sessions and messages state
   const [sessions, setSessions] = useState<SessionSummary[]>(initialSessions);
@@ -198,21 +210,8 @@ export function TutorPageClient({
     }
   };
 
-  const [scaffoldingStyle, setScaffoldingStyle] = useState<'socratic' | 'direct'>('socratic');
+  const [scaffoldingStyle] = useState<'socratic' | 'direct'>('socratic');
 
-  const playBanglaSpeech = (text: string) => {
-    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
-    window.speechSynthesis.cancel();
-    const plain = text
-      .replace(/\$\$[\s\S]*?\$\$/g, 'সমীকরণ')
-      .replace(/\$([^$]+)\$/g, '$1')
-      .replace(/[*#_`]/g, '')
-      .trim();
-    const utterance = new SpeechSynthesisUtterance(plain);
-    utterance.lang = 'bn-BD';
-    utterance.rate = 0.95;
-    window.speechSynthesis.speak(utterance);
-  };
 
   // Submit Question with Real-time SSE Token Streaming
   const submitQuestion = async (textToSend?: string) => {
@@ -327,7 +326,7 @@ export function TutorPageClient({
               } else if (event.type === 'error') {
                 throw new Error(event.error || 'Stream error occurred');
               }
-            } catch (parseErr) {
+            } catch {
               // Ignore parsing chunk split across network boundaries
             }
           }
@@ -404,24 +403,29 @@ export function TutorPageClient({
           { label: 'Board CQ Question', prompt: `Generate a standard board-style Creative Question (CQ) with step-by-step solutions for ${chapterDisplayName}.` },
         ];
 
+  const hintTag = (tone: 'mint' | 'sun' | 'coral') =>
+    cn(
+      'inline-flex items-center gap-1.5 rounded-full px-2.5 py-1 text-xs font-semibold',
+      tone === 'mint' && 'bg-green-soft text-green',
+      tone === 'sun' && 'bg-ochre-soft text-ochre',
+      tone === 'coral' && 'bg-coral-soft text-cta',
+    );
+
   return (
-    <div className="tutor-workspace-root">
-      <PageHeader
-        title={t('tutor.title')}
-        description={t('tutor.desc')}
-      >
+    <div className="flex flex-col gap-4">
+      <PageHeader title={t('tutor.title')} description={t('tutor.desc')}>
         <div className="flex items-center gap-2">
           <button
             type="button"
-            className="mobile-sidebar-toggle"
-            onClick={() => setMobileSidebarOpen(!mobileSidebarOpen)}
+            className="grid size-9 place-items-center rounded-lg border border-border lg:hidden"
+            onClick={() => setMobileSidebarOpen((v) => !v)}
             aria-label="Toggle navigation drawer"
           >
             {mobileSidebarOpen ? <X size={18} /> : <Menu size={18} />}
           </button>
           <button
             type="button"
-            className="tutor-new-chat-btn"
+            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-cta px-4 py-2 text-sm font-semibold text-cta-foreground shadow-sm transition-colors hover:opacity-90"
             onClick={startNewSession}
           >
             <Plus size={16} />
@@ -430,53 +434,62 @@ export function TutorPageClient({
         </div>
       </PageHeader>
 
-      <div className="tutor-layout-container">
-        {/* Backdrop for mobile drawer */}
+      <div className="relative grid h-[calc(100vh-240px)] max-h-[850px] min-h-[560px] w-full gap-5 lg:grid-cols-[310px_minmax(0,1fr)]">
         {mobileSidebarOpen && (
-          <div
-            className="tutor-sidebar-backdrop"
+          <button
+            type="button"
+            aria-label={language === 'bn' ? 'মেনু বন্ধ করো' : 'Close menu'}
+            className="fixed inset-0 z-40 bg-black/30 lg:hidden"
             onClick={() => setMobileSidebarOpen(false)}
           />
         )}
 
-        {/* Left Navigation Sidebar */}
-        <aside className={`tutor-sidebar-panel ${mobileSidebarOpen ? 'open' : ''}`}>
-          {/* Subject Selector */}
-          <div className="tutor-subject-card">
-            <div className="flex items-center justify-between mb-2">
-              <span className="tutor-section-label">
+        {/* Left navigation sidebar */}
+        <aside
+          className={cn(
+            'flex h-full flex-col gap-3.5 overflow-y-auto rounded-2xl border border-border bg-surface-1 p-4',
+            mobileSidebarOpen
+              ? 'fixed inset-y-0 left-0 z-50 w-[300px] max-w-[85vw] lg:static lg:w-auto'
+              : 'hidden lg:flex',
+          )}
+        >
+          {/* Subject selector */}
+          <div className="rounded-xl border border-border p-3">
+            <div className="mb-2 flex items-center justify-between">
+              <span className="font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
                 {language === 'bn' ? 'বিষয় নির্বাচন' : 'SELECT SUBJECT'}
               </span>
-              <span className="tutor-pill-tag mint">{subjectDisplayName}</span>
+              <span className="rounded-full border border-border bg-surface-2 px-2.5 py-0.5 text-xs font-semibold text-green">
+                {subjectDisplayName}
+              </span>
             </div>
-
-            <div className="relative">
-              <select
-                value={selectedSubjectId}
-                onChange={(e) => handleSubjectChange(e.target.value)}
-                className="tutor-subject-select"
-                aria-label="Select Subject"
-              >
-                {subjects.map((s) => (
-                  <option key={s.id} value={s.id}>
-                    {language === 'bn' ? s.name_bn || s.name_en : s.name_en}
-                  </option>
-                ))}
-              </select>
-            </div>
+            <select
+              id="tutor-subject"
+              name="subject"
+              value={selectedSubjectId}
+              onChange={(e) => handleSubjectChange(e.target.value)}
+              aria-label="Select Subject"
+              className="w-full rounded-lg border border-border bg-background text-foreground px-3 py-2 text-sm font-medium outline-none transition-colors focus:border-cta"
+            >
+              {subjects.map((s) => (
+                <option key={s.id} value={s.id} className="bg-background text-foreground">
+                  {language === 'bn' ? s.name_bn || s.name_en : s.name_en}
+                </option>
+              ))}
+            </select>
           </div>
 
-          {/* Chapters List */}
-          <div className="tutor-section-header">
+          {/* Chapters */}
+          <div className="flex items-center gap-2 font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
             <BookOpen size={14} />
             <span>{language === 'bn' ? 'অধ্যায়সমূহ' : 'CHAPTERS'}</span>
           </div>
 
-          <div className="tutor-chapters-scroll">
+          <div className="flex max-h-[220px] flex-col gap-1.5 overflow-y-auto pr-1">
             {sortedChapters.length === 0 ? (
-              <div className="tutor-no-chapters">
-                <Compass size={20} className="text-muted-foreground mb-1.5 opacity-60" />
-                <p className="text-xs text-muted-foreground text-center leading-relaxed">
+              <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-border px-3 py-5">
+                <Compass size={20} className="mb-1.5 text-muted-foreground opacity-60" />
+                <p className="text-center text-xs leading-relaxed text-muted-foreground">
                   {language === 'bn'
                     ? 'এই বিষয়ের অধ্যায় শীঘ্রই যুক্ত হচ্ছে।'
                     : 'No chapters available yet for this subject.'}
@@ -493,29 +506,34 @@ export function TutorPageClient({
                       setSelectedChapterId(c.id);
                       setMobileSidebarOpen(false);
                     }}
-                    className={`tutor-chapter-card ${isSelected ? 'active' : ''}`}
+                    className={cn(
+                      'flex w-full items-center gap-2.5 rounded-lg border px-2.5 py-2 text-left text-xs font-medium transition-colors',
+                      isSelected
+                        ? 'border-cta/40 bg-surface-2 text-foreground'
+                        : 'border-transparent text-muted-foreground hover:bg-surface-2 hover:text-foreground',
+                    )}
                   >
-                    <span className="chapter-badge">
+                    <span className="rounded bg-foreground/5 px-1.5 py-0.5 font-mono text-xs">
                       {String(c.chapter_no || i + 1).padStart(2, '0')}
                     </span>
-                    <span className="chapter-title">
+                    <span className="flex-1 truncate">
                       {language === 'bn' ? c.title_bn || c.title_en : c.title_en}
                     </span>
-                    {isSelected && <Check size={14} className="chapter-check" />}
+                    {isSelected && <Check size={14} className="shrink-0 text-green" />}
                   </button>
                 );
               })
             )}
           </div>
 
-          {/* Recent Chat History */}
+          {/* Recent chats */}
           {sessions.length > 0 && (
-            <div className="tutor-recent-sessions">
-              <div className="tutor-section-header mt-3">
+            <div>
+              <div className="mt-3 flex items-center gap-2 font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
                 <Clock size={14} />
                 <span>{language === 'bn' ? 'পূর্বের আলোচনা' : 'RECENT CHATS'}</span>
               </div>
-              <div className="tutor-sessions-list">
+              <div className="mt-2 flex max-h-[160px] flex-col gap-1 overflow-y-auto">
                 {sessions.slice(0, 8).map((sess) => {
                   const isActive = sess.id === activeSessionId;
                   return (
@@ -523,13 +541,18 @@ export function TutorPageClient({
                       key={sess.id}
                       type="button"
                       onClick={() => selectSession(sess)}
-                      className={`tutor-session-item ${isActive ? 'active' : ''}`}
+                      className={cn(
+                        'flex w-full items-center gap-2 rounded-lg border px-2.5 py-1.5 text-xs transition-colors',
+                        isActive
+                          ? 'border-cta/40 bg-surface-2 text-foreground'
+                          : 'border-transparent text-muted-foreground hover:bg-surface-1 hover:text-foreground',
+                      )}
                     >
                       <MessageSquare size={13} className="shrink-0 opacity-70" />
-                      <span className="truncate flex-1 text-left">
+                      <span className="flex-1 truncate text-left">
                         {sess.title || (language === 'bn' ? 'প্রশ্নোত্তর সেশন' : 'Tutoring session')}
                       </span>
-                      <ChevronRight size={12} className="opacity-40 shrink-0" />
+                      <ChevronRight size={12} className="shrink-0 opacity-40" />
                     </button>
                   );
                 })}
@@ -537,32 +560,31 @@ export function TutorPageClient({
             </div>
           )}
 
-          {/* AI Tutor Info Badge */}
-          <div className="tutor-model-badge mt-auto">
+          {/* Model badge */}
+          <div className="mt-auto rounded-xl border border-border bg-surface-1 p-3">
             <div className="flex items-center gap-2">
-              <div className="status-dot online" />
+              <span className="size-[7px] animate-pulse rounded-full bg-green" />
               <span className="text-xs font-semibold text-foreground">Shera AI Engine</span>
             </div>
-            <p className="text-xs text-muted-foreground mt-0.5">
-              NCTB Curriculum • Llama 3.1 70B
-            </p>
+            <p className="mt-0.5 text-xs text-muted-foreground">NCTB Curriculum • Llama 3.1 70B</p>
           </div>
         </aside>
 
-        {/* Main Tutor Chat Canvas */}
-        <section className="tutor-chat-canvas">
-          {/* Chat Header Bar */}
-          <div className="tutor-canvas-header">
-            <div className="flex items-center gap-3">
-              <div className="shera-glow-avatar">
+        {/* Chat canvas */}
+        <section className="relative flex h-full min-h-0 flex-col overflow-hidden rounded-2xl border border-border bg-surface-1">
+          <div className="flex flex-shrink-0 items-center justify-between gap-3 border-b border-border bg-surface-1/90 px-4 py-3.5 backdrop-blur-sm sm:px-6">
+            <div className="flex min-w-0 items-center gap-3">
+              <div className="grid size-8 flex-none place-items-center rounded-lg bg-cta text-cta-foreground">
                 <Sparkles size={16} />
               </div>
-              <div>
+              <div className="min-w-0">
                 <div className="flex items-center gap-2">
-                  <h2 className="tutor-canvas-title">{chapterDisplayName}</h2>
-                  <span className="tutor-pill-tag mint">{subjectDisplayName}</span>
+                  <h2 className="truncate text-sm font-bold">{chapterDisplayName}</h2>
+                  <span className="hidden rounded-full border border-border bg-surface-2 px-2 py-0.5 text-xs font-semibold text-green sm:inline">
+                    {subjectDisplayName}
+                  </span>
                 </div>
-                <p className="text-xs text-muted-foreground">
+                <p className="truncate text-xs text-muted-foreground">
                   {language === 'bn'
                     ? 'সহজ উদাহরণ, নিখুঁত সূত্র ও বোর্ড রুব্রিকের সাহায্যে বোঝানো হবে'
                     : 'Interactive Socratic tutoring with KaTeX formula rendering & NCTB rubrics'}
@@ -570,44 +592,41 @@ export function TutorPageClient({
               </div>
             </div>
 
-            <div className="flex items-center gap-2">
-              {messages.length > 0 && (
-                <button
-                  type="button"
-                  onClick={startNewSession}
-                  className="tutor-clear-btn"
-                  title={language === 'bn' ? 'নতুন সেশন শুরু করুন' : 'New session'}
-                >
-                  <Plus size={14} />
-                  <span className="hidden sm:inline">{language === 'bn' ? 'নতুন আলাপ' : 'New'}</span>
-                </button>
-              )}
-            </div>
+            {messages.length > 0 && (
+              <button
+                type="button"
+                onClick={startNewSession}
+                className="inline-flex flex-none items-center gap-1.5 rounded-lg border border-border bg-surface-1 px-3 py-1.5 text-xs font-medium transition-colors hover:bg-accent"
+                title={language === 'bn' ? 'নতুন সেশন শুরু করুন' : 'New session'}
+              >
+                <Plus size={14} />
+                <span className="hidden sm:inline">{language === 'bn' ? 'নতুন আলাপ' : 'New'}</span>
+              </button>
+            )}
           </div>
 
-          {/* Messages Scroll Area */}
+          {/* Messages */}
           <div
             ref={chatScrollContainerRef}
             onScroll={handleScroll}
-            className="tutor-messages-scroll"
+            className="flex flex-1 flex-col gap-5 overflow-y-auto px-4 py-5 sm:px-6"
             role="log"
             aria-live="polite"
           >
-            {/* Welcome State when no messages */}
             {messages.length === 0 && (
-              <div className="tutor-welcome-wrapper">
-                <div className="tutor-welcome-card">
-                  <div className="flex items-start gap-3 mb-3">
-                    <div className="shera-glow-avatar-lg">
+              <div className="flex flex-col gap-5">
+                <div className="rounded-2xl border border-border bg-surface-1 p-5">
+                  <div className="mb-3 flex items-start gap-3">
+                    <div className="grid size-10 flex-none place-items-center rounded-xl bg-cta text-cta-foreground">
                       <GraduationCap size={22} />
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-foreground">
+                      <h3 className="font-heading text-base font-bold">
                         {language === 'bn'
                           ? `চলো "${chapterDisplayName}" অধ্যায়টি সহজভাবে বুঝে নিই!`
                           : `Let's master "${chapterDisplayName}" together!`}
                       </h3>
-                      <p className="text-xs text-muted-foreground mt-0.5">
+                      <p className="mt-0.5 text-xs text-muted-foreground">
                         {language === 'bn'
                           ? 'তোমার যেকোনো দ্বিধা বা জটিল সূত্রের ব্যাখ্যা জিজ্ঞেস করতে পারো।'
                           : 'Ask any concept, formula derivation, or board exam question.'}
@@ -615,60 +634,47 @@ export function TutorPageClient({
                     </div>
                   </div>
 
-                  <div className="tutor-formula-preview">
-                    <div className="flex items-center gap-1.5 text-xs font-semibold text-foreground mb-1.5">
+                  <div className="my-3.5 rounded-xl border border-border bg-background px-5 py-3.5">
+                    <div className="mb-1.5 flex items-center gap-1.5 text-xs font-semibold text-foreground">
                       <Calculator size={14} className="text-mint" />
                       <span>{language === 'bn' ? 'অধ্যায়ের মূল সূত্রমালা' : 'Core Concept Highlight'}</span>
                     </div>
-                    <div className="formula-box">
-                      <ReactMarkdown
-                        remarkPlugins={[remarkMath]}
-                        rehypePlugins={[rehypeKatex]}
-                      >
-                        {`$$W = \\vec{F} \\cdot \\vec{s} = F s \\cos\\theta$$`}
-                      </ReactMarkdown>
-                      <ReactMarkdown
-                        remarkPlugins={[remarkMath]}
-                        rehypePlugins={[rehypeKatex]}
-                      >
-                        {`$$\\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_i^2$$`}
-                      </ReactMarkdown>
+                    <div className="flex flex-col gap-1 overflow-x-auto py-1 text-sm">
+                      <RenderMathText text={`$$W = \\vec{F} \\cdot \\vec{s} = F s \\cos\\theta$$`} inline={false} />
+                      <RenderMathText text={`$$\\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_i^2$$`} inline={false} />
                     </div>
                   </div>
 
-                  <div className="tutor-hints-row">
-                    <span className="hint-tag mint">
+                  <div className="flex flex-wrap gap-2">
+                    <span className={hintTag('mint')}>
                       <Check size={12} /> {language === 'bn' ? 'বোর্ড রুব্রিক মেনে ব্যাখ্যা' : 'NCTB Rubric Verified'}
                     </span>
-                    <span className="hint-tag sun">
+                    <span className={hintTag('sun')}>
                       <Flame size={12} /> {language === 'bn' ? 'সচরাচর ভুলের সতর্কতা' : 'Mistake Detection'}
                     </span>
-                    <span className="hint-tag coral">
+                    <span className={hintTag('coral')}>
                       <Sparkles size={12} /> {language === 'bn' ? 'রিয়েল-টাইম স্ট্রিমিং' : 'Real-time Streaming'}
                     </span>
                   </div>
                 </div>
 
-                {/* Quick starter question cards */}
-                <div className="tutor-starter-prompts">
-                  <span className="tutor-section-label">
+                <div>
+                  <span className="font-mono text-2xs font-bold tracking-wide text-muted-foreground uppercase">
                     {language === 'bn' ? 'প্রস্তাবিত কিছু প্রশ্ন' : 'SUGGESTED QUESTIONS'}
                   </span>
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mt-2">
+                  <div className="mt-2 grid grid-cols-1 gap-2.5 sm:grid-cols-3">
                     {quickPrompts.map((qp, idx) => (
                       <button
                         key={idx}
                         type="button"
                         onClick={() => submitQuestion(qp.prompt)}
-                        className="starter-prompt-card"
+                        className="w-full rounded-xl border border-border bg-surface-1 p-3.5 text-left transition-colors hover:border-cta/40"
                       >
-                        <div className="flex items-center gap-1.5 text-xs font-semibold text-mint mb-1">
+                        <div className="mb-1 flex items-center gap-1.5 text-xs font-semibold text-mint">
                           <Lightbulb size={14} />
                           <span>{qp.label}</span>
                         </div>
-                        <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">
-                          {qp.prompt}
-                        </p>
+                        <p className="line-clamp-2 text-xs leading-relaxed text-muted-foreground">{qp.prompt}</p>
                       </button>
                     ))}
                   </div>
@@ -676,69 +682,54 @@ export function TutorPageClient({
               </div>
             )}
 
-            {/* Conversation Messages */}
             {messages.map((m, idx) => {
               const isAssistant = m.role === 'assistant';
               return (
-                <div
-                  key={idx}
-                  className={`tutor-message-row ${isAssistant ? 'assistant' : 'student'}`}
-                >
-                  <div className="message-avatar-wrap">
+                <div key={idx} className={cn('flex w-full gap-3.5', !isAssistant && 'flex-row-reverse')}>
+                  <div className="flex-none">
                     {isAssistant ? (
-                      <div className="shera-chat-avatar">
+                      <div className="grid size-[30px] place-items-center rounded-lg bg-cta text-cta-foreground">
                         <Bot size={15} />
                       </div>
                     ) : (
-                      <div className="user-chat-avatar">
+                      <div className="grid size-[30px] place-items-center rounded-lg bg-navy text-surface-1">
                         <User size={15} />
                       </div>
                     )}
                   </div>
 
-                  <div className="message-content-wrap">
-                    <div className="message-bubble">
+                  <div className={cn('flex max-w-[88%] flex-col gap-1.5', !isAssistant && 'items-end')}>
+                    <div
+                      className={cn(
+                        'rounded-2xl px-4 py-3 text-sm leading-relaxed',
+                        isAssistant ? 'bg-surface-2' : 'bg-cta text-cta-foreground',
+                      )}
+                    >
                       {m.text ? (
-                        <div className="prose-content">
-                          <ReactMarkdown
-                            remarkPlugins={[remarkMath]}
-                            rehypePlugins={[rehypeKatex]}
-                            components={{
-                              p: ({ ...props }) => <p className="mb-2.5 last:mb-0 leading-relaxed" {...props} />,
-                              ul: ({ ...props }) => <ul className="list-disc pl-5 mb-2.5 space-y-1" {...props} />,
-                              ol: ({ ...props }) => <ol className="list-decimal pl-5 mb-2.5 space-y-1" {...props} />,
-                              li: ({ ...props }) => <li className="leading-relaxed" {...props} />,
-                              code: ({ ...props }) => (
-                                <code className="bg-muted/80 text-foreground px-1.5 py-0.5 rounded text-xs font-mono border border-border/40" {...props} />
-                              ),
-                              strong: ({ ...props }) => (
-                                <strong className="font-semibold text-mint" {...props} />
-                              ),
-                            }}
-                          >
-                            {m.text}
-                          </ReactMarkdown>
-                          {m.isStreaming && <span className="streaming-cursor" />}
+                        <div className="break-words">
+                          <RenderMathText text={m.text} inline={false} />
+                          {m.isStreaming && (
+                            <span className="ml-1 inline-block h-3.5 w-1.5 animate-pulse bg-green align-middle" />
+                          )}
                         </div>
                       ) : (
-                        <div className="flex items-center gap-2 text-xs text-muted-foreground py-1">
-                          <div className="typing-indicator">
-                            <span />
-                            <span />
-                            <span />
-                          </div>
+                        <div className="flex items-center gap-2 py-1 text-xs text-muted-foreground">
+                          <span className="flex gap-1">
+                            <span className="size-1.5 animate-bounce rounded-full bg-muted-foreground [animation-delay:-0.3s]" />
+                            <span className="size-1.5 animate-bounce rounded-full bg-muted-foreground [animation-delay:-0.15s]" />
+                            <span className="size-1.5 animate-bounce rounded-full bg-muted-foreground" />
+                          </span>
                           <span>{language === 'bn' ? 'টিউটর চিন্তা করছে ও লিখছে…' : 'Generating response…'}</span>
                         </div>
                       )}
                     </div>
 
-                    {/* Actions row for assistant messages */}
                     {isAssistant && m.text && !m.isStreaming && (
-                      <div className="message-actions-bar">
+                      <div className="flex items-center gap-2 pl-1">
                         <button
                           type="button"
                           onClick={() => copyMessage(m.text, idx)}
-                          className="msg-action-btn"
+                          className="inline-flex items-center gap-1 rounded-md border border-border px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-accent"
                           title="Copy response"
                         >
                           {copiedIndex === idx ? (
@@ -763,61 +754,58 @@ export function TutorPageClient({
             <div ref={messagesEndRef} />
           </div>
 
-          {/* Floating Scroll to Bottom Button */}
           {showScrollBottom && (
             <button
               type="button"
               onClick={() => scrollToBottom(true)}
-              className="scroll-bottom-floating-btn"
+              className="absolute right-6 bottom-[92px] z-20 grid size-9 place-items-center rounded-full border border-border bg-surface-1 shadow-md transition-colors hover:bg-accent"
               aria-label="Scroll to newest messages"
             >
               <ArrowDown size={16} />
             </button>
           )}
 
-          {/* Quick Suggestions Chips above input */}
           {messages.length > 0 && !isGenerating && (
-            <div className="tutor-chips-bar">
-              <div className="chips-container">
-                <span className="chips-label">
+            <div className="flex-shrink-0 border-t border-border bg-surface-1 px-4 py-2 sm:px-6">
+              <div className="flex items-center gap-2 overflow-x-auto">
+                <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold whitespace-nowrap text-muted-foreground">
                   <HelpCircle size={12} /> {language === 'bn' ? 'পরবর্তী প্রশ্ন:' : 'Follow-up:'}
                 </span>
-                <button
-                  type="button"
-                  onClick={() => submitQuestion(language === 'bn' ? 'এটি একটি বাস্তব জীবনের উদাহরণ দিয়ে বুঝিয়ে দাও।' : 'Explain this with a real-life analogy.')}
-                  className="quick-chip-btn"
-                >
-                  {language === 'bn' ? 'বাস্তব উদাহরণ' : 'Real-life example'}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => submitQuestion(language === 'bn' ? 'এই সূত্রের একক ও মাত্রা কীভাবে বের করবো?' : 'How to derive the units and dimensions?')}
-                  className="quick-chip-btn"
-                >
-                  {language === 'bn' ? 'একক ও মাত্রা' : 'Units & dimensions'}
-                </button>
-                <button
-                  type="button"
-                  onClick={() => submitQuestion(language === 'bn' ? 'বোর্ডে এই সংক্রান্ত ৩ বা ৪ নম্বরের প্রশ্ন কেমন হয়?' : 'What does a 3 or 4 mark board question look like?')}
-                  className="quick-chip-btn"
-                >
-                  {language === 'bn' ? 'বোর্ড ৩/৪ নম্বর প্রশ্ন' : 'Board 3-4 mark CQ'}
-                </button>
+                {[
+                  language === 'bn' ? 'এটি একটি বাস্তব জীবনের উদাহরণ দিয়ে বুঝিয়ে দাও।' : 'Explain this with a real-life analogy.',
+                  language === 'bn' ? 'এই সূত্রের একক ও মাত্রা কীভাবে বের করবো?' : 'How to derive the units and dimensions?',
+                  language === 'bn' ? 'বোর্ডে এই সংক্রান্ত ৩ বা ৪ নম্বরের প্রশ্ন কেমন হয়?' : 'What does a 3 or 4 mark board question look like?',
+                ].map((q, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => submitQuestion(q)}
+                    className="inline-flex shrink-0 items-center gap-1 rounded-full border border-border bg-surface-1 px-2.5 py-1 text-xs font-medium whitespace-nowrap transition-colors hover:bg-accent"
+                  >
+                    {[
+                      language === 'bn' ? 'বাস্তব উদাহরণ' : 'Real-life example',
+                      language === 'bn' ? 'একক ও মাত্রা' : 'Units & dimensions',
+                      language === 'bn' ? 'বোর্ড ৩/৪ নম্বর প্রশ্ন' : 'Board 3-4 mark CQ',
+                    ][i]}
+                  </button>
+                ))}
               </div>
             </div>
           )}
 
-          {/* Bottom Input Dock */}
-          <div className="tutor-input-dock">
+          {/* Input dock */}
+          <div className="flex-shrink-0 border-t border-border bg-surface-1 px-4 pt-3 pb-2.5 sm:px-6">
             <form
               onSubmit={(e) => {
                 e.preventDefault();
                 submitQuestion();
               }}
-              className="tutor-input-wrapper"
+              className="flex items-end gap-2.5 rounded-2xl border border-border bg-surface-1 px-3 py-2 transition-colors focus-within:border-cta"
             >
               <textarea
                 ref={textareaRef}
+                id="tutor-prompt"
+                name="prompt"
                 value={prompt}
                 onChange={handleTextareaInput}
                 onKeyDown={(e) => {
@@ -829,16 +817,15 @@ export function TutorPageClient({
                 placeholder={t('tutor.ask_placeholder')}
                 disabled={isGenerating}
                 rows={1}
-                className="tutor-chat-textarea"
                 aria-label="Type your message"
+                className="max-h-[120px] flex-1 resize-none border-0 bg-transparent py-1 text-sm leading-normal outline-none"
               />
-
-              <div className="input-action-buttons">
+              <div className="flex-none">
                 {isGenerating ? (
                   <button
                     type="button"
                     onClick={stopGeneration}
-                    className="stop-gen-btn"
+                    className="inline-flex items-center gap-1.5 rounded-lg bg-mark px-2.5 py-1.5 text-cta-foreground"
                     title={language === 'bn' ? 'উত্তর তৈরি থামান' : 'Stop generating'}
                   >
                     <Square size={14} />
@@ -848,16 +835,20 @@ export function TutorPageClient({
                   <button
                     type="submit"
                     disabled={!prompt.trim()}
-                    className="send-btn"
                     aria-label="Send message"
+                    className="grid size-8 place-items-center rounded-lg bg-cta text-cta-foreground transition-opacity disabled:opacity-50"
                   >
                     <Send size={15} />
                   </button>
                 )}
               </div>
             </form>
-            <div className="input-footer-hint">
-              <span>{language === 'bn' ? 'Enter চাপুন পাঠাতে • Shift + Enter নতুন লাইনের জন্য' : 'Press Enter to send • Shift + Enter for new line'}</span>
+            <div className="mt-1 text-center text-xs text-muted-foreground">
+              <span>
+                {language === 'bn'
+                  ? 'Enter চাপুন পাঠাতে • Shift + Enter নতুন লাইনের জন্য'
+                  : 'Press Enter to send • Shift + Enter for new line'}
+              </span>
             </div>
           </div>
         </section>

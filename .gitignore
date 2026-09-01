@@ -150,3 +150,14 @@ supabase/.temp
 /.claude/sessions
 /ingestion/kaggle/dataset
 /web/mock-pages
+
+# MCP Configuration files (contains local settings and access tokens)
+*mcp*.json
+.mcp.json
+mcp_config.json
+.claude/mcp.json
+.cursor/mcp.json
+.agent/mcp_config.json
+web/.mcp.json
+
+

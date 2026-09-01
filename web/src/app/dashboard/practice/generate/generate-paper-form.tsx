@@ -108,21 +108,16 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 max-h-64 overflow-y-auto rounded-xl border border-border p-3.5 bg-muted/10">
             {subjectChapters.map((c) => {
               const isChecked = selectedChapters.has(c.id);
+              const chapterId = `chapter-${c.id}`;
               return (
                 <label 
                   key={c.id} 
-                  className={`flex items-start gap-2.5 p-2 rounded-lg cursor-pointer border transition-colors ${isChecked ? 'bg-primary/10 border-primary/40' : 'bg-card border-border/60 hover:bg-muted/30'}`}
+                  htmlFor={chapterId}
+                  className={`flex items-start gap-2.5 p-2 rounded-lg cursor-pointer border transition-colors [content-visibility:auto] [contain-intrinsic-size:auto_40px] ${isChecked ? 'bg-primary/10 border-primary/40' : 'bg-card border-border/60 hover:bg-muted/30'}`}
                 >
-                  <input
-                    type="checkbox"
-                    name="chapterIds"
-                    value={c.id}
-                    checked={isChecked}
-                    onChange={() => handleToggleChapter(c.id)}
-                    className="sr-only"
-                  />
                   <Checkbox 
-                    id={`chapter-${c.id}`} 
+                    id={chapterId} 
+                    name="chapterCheck"
                     checked={isChecked}
                     onCheckedChange={() => handleToggleChapter(c.id)}
                     className="mt-0.5" 

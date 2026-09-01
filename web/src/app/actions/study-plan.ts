@@ -141,6 +141,7 @@ export async function togglePlanTask(planId: string, day: number, taskId: string
     .eq("id", planId);
 
   if (error) return { error: error.message };
-  revalidatePath("/dashboard"); // since PlannerPageClient is rendered on dashboard
+  revalidatePath("/dashboard");
+  revalidatePath("/dashboard/study-plan");
   return { success: true };
 }

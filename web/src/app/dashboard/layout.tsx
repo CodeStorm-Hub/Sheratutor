@@ -1,31 +1,51 @@
+import { Suspense } from 'react';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { ClientShell } from '@/components/ClientShell';
 
-export default async function DashboardLayout({
+function ShellFallback({ children }: { children: React.ReactNode }) {
+  return (
+    <ClientShell
+      userName=""
+      userSub="Loading..."
+      userInitials=""
+    >
+      {children}
+    </ClientShell>
+  );
+}
+
+async function AuthenticatedDashboardShell({
   children,
 }: {
   children: React.ReactNode;
 }) {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
   if (!user) redirect('/login');
 
-  // Fetch user profile and student profile
-  const { data: userProfile } = await supabase
-    .from('profiles')
-    .select('full_name')
-    .eq('id', user.id)
-    .maybeSingle();
+  // Check admin status
+  const adminEmails = [
+    'syed.salman.reza.181@gmail.com',
+    ...(process.env.ADMIN_EMAILS ? process.env.ADMIN_EMAILS.split(',').map((e) => e.trim().toLowerCase()) : []),
+  ];
+  const isAdmin = Boolean(user.email && adminEmails.includes(user.email.toLowerCase()));
 
-  const { data: studentProfile } = await supabase
-    .from('student_profiles')
-    .select('id, exam_type, academic_group, education_board, target_exam_year')
-    .eq('user_id', user.id)
-    .maybeSingle();
+  // Fetch user profile and student profile in parallel
+  const [{ data: userProfile }, { data: studentProfile }] = await Promise.all([
+    supabase
+      .from('profiles')
+      .select('full_name')
+      .eq('id', user.id)
+      .maybeSingle(),
+    supabase
+      .from('student_profiles')
+      .select('id, exam_type, academic_group, education_board, target_exam_year')
+      .eq('user_id', user.id)
+      .maybeSingle(),
+  ]);
 
   // Extract real full name
   const fullName =
@@ -56,8 +76,21 @@ export default async function DashboardLayout({
       userName={fullName}
       userSub={userSub}
       userInitials={initials}
+      isAdmin={isAdmin}
     >
       {children}
     </ClientShell>
+  );
+}
+
+export default function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <Suspense fallback={<ShellFallback>{children}</ShellFallback>}>
+      <AuthenticatedDashboardShell>{children}</AuthenticatedDashboardShell>
+    </Suspense>
   );
 }

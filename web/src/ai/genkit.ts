@@ -74,7 +74,7 @@ export const ai = genkit({
   plugins: [
     openAICompatible({
       name: "agentrouter",
-      apiKey: process.env.AGENTROUTER_API_KEY ?? "sk-fyHCgfRhMoqHHOzdjK8vYfC0rcXQjqRUkMKTrMkVRbIfyVXA",
+      apiKey: process.env.AGENTROUTER_API_KEY ?? "",
       baseURL: AGENTROUTER_BASE_URL,
       fetch: agentRouterFetch,
       defaultHeaders: { "User-Agent": "Cline/3.0.0" },
@@ -99,8 +99,8 @@ export const ai = genkit({
 
 export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b",
-  fast: process.env.GENKIT_FAST_MODEL ?? "nim/openai/gpt-oss-20b",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
+  fast: process.env.GENKIT_FAST_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
   paper: process.env.GENKIT_PAPER_MODEL ?? "nim/nvidia/nemotron-3-nano-30b-a3b",
 } as const;
 
@@ -111,7 +111,6 @@ const NIM_EMBED_MODEL_VERSION = "v1";
 const NIM_EMBED_DIMENSIONS = 1024;
 
 const OLLAMA_EMBED_MODEL = "bge-m3";
-const OLLAMA_EMBED_MODEL_VERSION = "v1";
 const OLLAMA_EMBED_DIMENSIONS = 1024;
 
 /**

@@ -1,23 +1,25 @@
+import { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { SettingsPageClient } from '@/components/pages/SettingsPageClient';
+import DashboardLoading from '../loading';
 
-export default async function ProfilePage() {
+async function ProfileContent() {
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
-  const { data: userProfile } = await supabase
-    .from('profiles')
-    .select('full_name')
-    .eq('id', user?.id ?? '')
-    .maybeSingle();
-
-  const { data: studentProfile } = await supabase
-    .from('student_profiles')
-    .select('*')
-    .eq('user_id', user?.id ?? '')
-    .maybeSingle();
+  const [{ data: userProfile }, { data: studentProfile }] = await Promise.all([
+    supabase
+      .from('profiles')
+      .select('full_name')
+      .eq('id', user?.id ?? '')
+      .maybeSingle(),
+    supabase
+      .from('student_profiles')
+      .select('*')
+      .eq('user_id', user?.id ?? '')
+      .maybeSingle(),
+  ]);
 
   const resolvedProfile = {
     full_name:
@@ -32,4 +34,12 @@ export default async function ProfilePage() {
   };
 
   return <SettingsPageClient profile={resolvedProfile} />;
+}
+
+export default function ProfilePage() {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <ProfileContent />
+    </Suspense>
+  );
 }

@@ -31,24 +31,33 @@ export const BarChart: React.FC<BarChartProps> = ({ data = [20, 40, 30, 70, 50, 
 
   const fillD = `${d} L${width},150 L0,150 Z`;
 
-  const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   
-  // Rotate days so today is the last day
-  const today = new Date().getDay();
-  const adjustedDays = Array.from({length: 7}, (_, i) => {
-    const dayIdx = (today + i + 1) % 7;
-    return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][dayIdx];
-  });
+  const [adjustedDays, setAdjustedDays] = React.useState<string[]>([
+    "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"
+  ]);
+
+  React.useEffect(() => {
+    const today = new Date().getDay();
+    const days = Array.from({ length: 7 }, (_, i) => {
+      const dayIdx = (today + i + 1) % 7;
+      return ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"][dayIdx];
+    });
+    setAdjustedDays(days);
+  }, []);
 
   return (
-    <div className="chart">
-      <div className="chart-grid">
-        <i />
-        <i />
-        <i />
-        <i />
+    <div className="relative mt-1.5 h-[147px]">
+      <div className="pointer-events-none absolute inset-x-0 top-[9px] bottom-[30px] flex flex-col justify-between">
+        <i className="border-t border-dashed border-border" />
+        <i className="border-t border-dashed border-border" />
+        <i className="border-t border-dashed border-border" />
+        <i className="border-t border-dashed border-border" />
       </div>
-      <svg viewBox="0 0 570 150" preserveAspectRatio="none">
+      <svg
+        viewBox="0 0 570 150"
+        preserveAspectRatio="none"
+        className="absolute inset-x-0 bottom-[15px] h-[118px] w-full"
+      >
         <defs>
           <linearGradient id="fade" x1="0" x2="0" y1="0" y2="1">
             <stop style={{ stopColor: 'var(--mint)' }} stopOpacity=".24" />
@@ -59,7 +68,7 @@ export const BarChart: React.FC<BarChartProps> = ({ data = [20, 40, 30, 70, 50, 
         <path d={d} fill="none" stroke="var(--mint)" strokeWidth="3" strokeLinecap="round" />
         <circle cx={points[points.length - 1].x} cy={points[points.length - 1].y} r="5" fill="var(--card)" stroke="var(--mint)" strokeWidth="3" />
       </svg>
-      <div className="chart-labels">
+      <div className="absolute inset-x-0 bottom-0 flex justify-between font-mono text-3xs text-muted-foreground">
         {adjustedDays.map(d => <span key={d}>{d}</span>)}
       </div>
     </div>

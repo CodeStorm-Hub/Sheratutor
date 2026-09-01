@@ -1,60 +1,33 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useState } from 'react';
+/**
+ * Compatibility shim over `next-themes` (`ThemeProvider` in
+ * `@/components/theme-provider`, wired in the root layout, which injects a
+ * pre-paint script that removes the FOUC).
+ *
+ * Keeps the old `{ darkMode, setDarkMode, toggleDarkMode }` surface so existing
+ * call sites keep working, and also passes through `theme` / `setTheme` for the
+ * three-way (light / dark / system) switcher. `mounted` is required by anything
+ * that renders theme-dependent markup, or it will hydration-mismatch.
+ */
+import { useEffect, useState } from 'react';
+import { useTheme as useNextTheme } from 'next-themes';
 
-interface ThemeContextType {
-  darkMode: boolean;
-  setDarkMode: (dark: boolean) => void;
-  toggleDarkMode: () => void;
-}
+export const useTheme = () => {
+  const { theme, resolvedTheme, setTheme, systemTheme } = useNextTheme();
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
 
-const ThemeContext = createContext<ThemeContextType>({
-  darkMode: false,
-  setDarkMode: () => {},
-  toggleDarkMode: () => {},
-});
+  const darkMode = mounted && (resolvedTheme ?? theme) === 'dark';
 
-export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [darkMode, setDarkModeState] = useState<boolean>(false);
-
-  const setDarkMode = (dark: boolean) => {
-    setDarkModeState(dark);
-    try {
-      localStorage.setItem('shera-theme', dark ? 'dark' : 'light');
-      if (dark) {
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    } catch {
-      // ignore
-    }
+  return {
+    mounted,
+    theme,
+    systemTheme,
+    resolvedTheme,
+    setTheme,
+    darkMode,
+    setDarkMode: (dark: boolean) => setTheme(dark ? 'dark' : 'light'),
+    toggleDarkMode: () => setTheme(darkMode ? 'light' : 'dark'),
   };
-
-  const toggleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
-
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem('shera-theme');
-      const isDark = saved === 'dark' || (!saved && window.matchMedia?.('(prefers-color-scheme: dark)').matches);
-      if (isDark) {
-        setDarkModeState(true);
-        document.documentElement.classList.add('dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-      }
-    } catch {
-      // ignore
-    }
-  }, []);
-
-  return (
-    <ThemeContext.Provider value={{ darkMode, setDarkMode, toggleDarkMode }}>
-      {children}
-    </ThemeContext.Provider>
-  );
 };
-
-export const useTheme = () => useContext(ThemeContext);

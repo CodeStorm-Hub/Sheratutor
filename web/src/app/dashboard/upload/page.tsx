@@ -1,22 +1,30 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { createClient } from '@/lib/supabase/server';
+import { getUser } from '@/lib/supabase/auth';
 import { UploadPageClient } from '@/components/pages/UploadPageClient';
+import DashboardLoading from '../loading';
 
-export default async function UploadPage({
+async function UploadContent({
   searchParams,
 }: {
   searchParams: Promise<{ paperId?: string }>;
 }) {
   const resolvedSearchParams = await searchParams;
+  
   const supabase = await createClient();
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
+  const { user } = await getUser();
 
-  const { data: papers } = await supabase
+  let query = supabase
     .from('question_papers')
-    .select('id, title, subjects(name_en), questions(id, question_number, question_text_en)')
-    .or(`is_public_template.eq.true,created_by_user_id.eq.${user!.id}`)
+    .select('id, title, subjects(name_en), questions(id, question_number, question_text_en)');
+
+  if (user?.id) {
+    query = query.or(`is_public_template.eq.true,created_by_user_id.eq.${user.id}`);
+  } else {
+    query = query.eq('is_public_template', true);
+  }
+
+  const { data: papers } = await query
     .order('created_at', { ascending: false })
     .limit(20);
 
@@ -25,5 +33,17 @@ export default async function UploadPage({
       papers={papers ?? []} 
       initialPaperId={resolvedSearchParams?.paperId} 
     />
+  );
+}
+
+export default function UploadPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ paperId?: string }>;
+}) {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <UploadContent searchParams={searchParams} />
+    </Suspense>
   );
 }

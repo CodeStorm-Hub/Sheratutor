@@ -1,9 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import ReactMarkdown from "react-markdown";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
+import { RenderMathText } from "@/components/render-math-text";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { PrinterIcon, ArrowLeft, Upload, Clock, Award, BarChart2 } from "lucide-react";
@@ -16,41 +14,27 @@ interface SubQuestion {
   marks: number;
 }
 
-interface Question {
+export interface Question {
   id: string;
   question_number: number;
   question_type: "CQ" | "MCQ";
   max_marks: number;
   stimulus_bn: string | null;
   stimulus_en: string | null;
-  sub_questions_json: any | null;
-  mcq_options_json: any | null;
+  sub_questions_json: unknown | null;
+  mcq_options_json: unknown | null;
   mcq_correct_option: string | null;
   question_text_bn: string | null;
   question_text_en?: string | null;
 }
 
-interface Paper {
+export interface Paper {
   id: string;
   title: string;
   paper_type: string;
   difficulty: string;
   total_marks: number;
   subject: { name_en: string; name_bn: string } | null;
-}
-
-function RenderMathText({ text }: { text: string }) {
-  return (
-    <ReactMarkdown
-      remarkPlugins={[remarkMath]}
-      rehypePlugins={[rehypeKatex]}
-      components={{
-        p: ({ ...props }) => <span className="leading-relaxed inline" {...props} />,
-      }}
-    >
-      {text}
-    </ReactMarkdown>
-  );
 }
 
 export default function QuestionPaperViewerClient({
@@ -114,7 +98,7 @@ export default function QuestionPaperViewerClient({
           <div className="text-xs font-semibold tracking-wider text-muted-foreground uppercase mb-1 font-mono">
             {language === 'bn' ? 'এসএসসি মক পরীক্ষা ২০২৬' : 'SSC MOCK EXAMINATION 2026'}
           </div>
-          <CardTitle className="text-xl sm:text-2xl font-bold text-navy dark:text-foreground">
+          <CardTitle className="text-xl sm:text-2xl font-bold text-heading">
             {language === 'bn' ? (paper.subject?.name_bn || paper.subject?.name_en || 'পদার্থবিজ্ঞান') : (paper.subject?.name_en || 'Physics')} — {paperTypeLabel}
           </CardTitle>
           <div className="flex flex-wrap justify-center sm:justify-between items-center gap-3 text-xs text-muted-foreground mt-4 pt-3 border-t border-border/40 print:text-black">
@@ -164,7 +148,7 @@ export default function QuestionPaperViewerClient({
                       const sqText = language === 'bn' ? sq.text_bn : (sq.text_en || sq.text_bn);
                       return (
                         <div key={sq.part} className="flex items-start text-xs sm:text-sm text-foreground/90 gap-2 bg-muted/20 p-2.5 rounded-lg border border-border/40">
-                          <span className="w-7 shrink-0 font-bold text-navy dark:text-foreground">({sq.part})</span>
+                          <span className="w-7 shrink-0 font-bold text-heading">({sq.part})</span>
                           <div className="flex-1 leading-relaxed">
                             <RenderMathText text={sqText || ""} />
                           </div>

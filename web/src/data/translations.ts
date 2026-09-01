@@ -50,10 +50,12 @@ export const translations = {
     'nav.help_btn': 'সাহায্য নাও',
 
     // Landing Page
-    'landing.badge': 'বাংলাদেশে আসছে',
-    'landing.hero_title_1': 'বোর্ড পরীক্ষকের মতোই মূল্যায়ন।',
+    'landing.badge': 'বাংলাদেশের শিক্ষাকে আধুনিক করছি',
+    'landing.hero_title_1': 'বোর্ড পরীক্ষকের মতোই মূল্যায়ন করে এমন এক ব্যক্তিগত এআই টিউটর।',
     'landing.hero_title_2': 'প্রতিটি শিক্ষার্থীর জন্য চিরকাল বিনামূল্যে।',
+    'landing.hero_tagline': 'মানসম্মত শিক্ষা কোনো বিলাসিতা নয়।',
     'landing.hero_desc': 'তোমার হাতে লেখা উত্তরপত্রের ছবি তোলো। SheraTutor তোমার বাংলা ও ইংরেজি পড়ে, আসল NCTB রুব্রিক অনুযায়ী মূল্যায়ন করে, আর ঠিক কোন ধাপে নম্বর কাটা গেছে তা সঙ্গে সঙ্গে দেখায়।',
+    'landing.hero_pitch': 'কোচিং সেন্টার আর প্রাইভেট টিউটরের পেছনে আর টাকা নষ্ট নয়।',
     'landing.try_demo_cta': 'নমুনা খাতা দেখুন',
     'landing.start_free_cta': 'বিনামূল্যে প্রস্তুতি শুরু করো',
     'landing.curriculum_title': 'NCTB বোর্ডের আসল মার্কিং রুব্রিক্স',
@@ -64,8 +66,8 @@ export const translations = {
     'landing.subject_bangla': 'বাংলা ১ম পত্র',
     'landing.cq_sample_q': 'সৃজনশীল প্রশ্ন (গ): প্রক্ষেপকের সর্বোচ্চ উচ্চতা ও বেগ নির্ণয়',
     'landing.boards_covered': 'ঢাকা, চট্টগ্রাম, রাজশাহীসহ সকল ১১টি শিক্ষা বোর্ড কাভার্ড',
+    'landing.waitlist_cta': 'ওয়েটলিস্টে যোগ দাও',
     'landing.waitlist_section_title': 'বোর্ড পরীক্ষার সেরা প্রস্তুতির সুযোগ নাও',
-    'landing.waitlist_section_desc': 'ইতিমধ্যে সারা বাংলাদেশের ২৮০০+ শিক্ষার্থী শেরাটউটর ওয়ার্কস্পেসের সাথে যুক্ত হয়েছে।',
     'landing.footer_privacy': 'গোপনীয়তা নীতি (PDPA ২০২৬)',
     'landing.footer_terms': 'ব্যবহারের শর্তাবলি',
     'landing.footer_boards': '১১টি শিক্ষা বোর্ড',
@@ -85,14 +87,20 @@ export const translations = {
     'landing.card3_eyebrow': 'প্রতিশ্রুতি',
     'landing.card3_title': 'বিনামূল্যে মানে সত্যিই বিনামূল্যে',
     'landing.card3_desc': 'কোনো প্রিমিয়াম প্ল্যান নেই, বিজ্ঞাপন নেই, ৩টি ফ্রি টেস্ট সীমা নেই। শিক্ষার্থী নয়, প্রতিষ্ঠান খরচ বহন করে।',
+    'landing.problem_kicker': 'সমস্যাটা কোথায়',
+    'landing.problem_title': 'যে সমস্যা আমরা দূর করছি',
     'landing.footer_text': 'বাংলাদেশের SSC ও HSC শিক্ষার্থীদের জন্য তৈরি।',
 
     // Waitlist Form
+    'form.role_student': 'শিক্ষার্থী হিসেবে যোগ দাও',
+    'form.role_guardian': 'অভিভাবক হিসেবে যোগ দাও',
     'form.name_label': 'তোমার নাম',
+    'form.name_label_guardian': 'আপনার নাম (অভিভাবক / আইনি অভিভাবক)',
+    'form.consent_checkbox_guardian': 'আমি এই শিক্ষার্থীর পিতা-মাতা বা আইনি অভিভাবক এবং শুধুমাত্র আর্লি-অ্যাক্সেস বিজ্ঞপ্তির জন্য এই যোগাযোগের তথ্য সংরক্ষণে সম্মতি দিচ্ছি।',
     'form.name_placeholder': 'পুরো নাম লেখো',
-    'form.phone_label': 'ফোন নম্বর',
+    'form.phone_label': 'ফোন নম্বর (ঐচ্ছিক)',
     'form.phone_placeholder': '০১XXXXXXXXX',
-    'form.email_label': 'ইমেইল (ঐচ্ছিক)',
+    'form.email_label': 'ইমেইল',
     'form.exam_label': 'পরীক্ষা',
     'form.exam_year_label': 'পরীক্ষার বছর',
     'form.minor_checkbox': 'আমার বয়স ১৮ বছরের কম',
@@ -100,7 +108,7 @@ export const translations = {
     'form.consent_checkbox': 'আমি এই শিক্ষার্থীর অভিভাবক, অথবা তার পক্ষে নিশ্চিত করছি — এবং শুধুমাত্র বিজ্ঞপ্তির জন্য এই যোগাযোগের তথ্য সংরক্ষণে সম্মতি দিচ্ছি।',
     'form.submit_btn': 'ওয়েটলিস্টে যোগ দাও',
     'form.submitting': 'যোগ হচ্ছে…',
-    'form.success_msg': 'ওয়েটলিস্টে সফলভাবে যুক্ত হয়েছ! আমরা শিগগিরই যোগাযোগ করব।',
+    'form.success_msg': 'ওয়েটলিস্টে সফলভাবে যুক্ত হয়েছ! তোমার স্পট নিশ্চিত করতে ইনবক্স চেক করো।',
 
     // Khata Preview
     'khata.examiner_score': 'পরীক্ষকের স্কোর',
@@ -108,7 +116,7 @@ export const translations = {
     'khata.note': '✓ ৩য় প্রশ্নে ২টি ধাপ ছাড়া পড়েছে (+৭ মার্কস পুনরুদ্ধার সম্ভব)',
 
     // Dashboard Home
-    'dashboard.greeting': 'শুভ দিন,',
+    'dashboard.greeting': 'শুভ দিন',
     'dashboard.welcome_active': 'টি সম্পন্ন মূল্যায়ন রয়েছে। তোমার গতি ধরে রাখো!',
     'dashboard.welcome_new': 'বোর্ড পরীক্ষার প্রস্তুতি ওয়ার্কস্পেসে স্বাগতম। তোমার প্রথম মক টেস্ট শুরু করো!',
     'dashboard.focus_btn': 'ফোকাস সেশন শুরু করো',
@@ -286,10 +294,12 @@ export const translations = {
     'nav.help_btn': 'Get help',
 
     // Landing Page
-    'landing.badge': 'Coming to Bangladesh',
-    'landing.hero_title_1': 'Evaluation Just Like a Board Examiner.',
-    'landing.hero_title_2': 'Forever Free for Every Student.',
+    'landing.badge': "Modernising Bangladesh's Education",
+    'landing.hero_title_1': 'A Private AI Tutor that Evaluates Just Like a Board Examiner.',
+    'landing.hero_title_2': 'Free Forever for Every Student.',
+    'landing.hero_tagline': "Quality Education Shouldn't be a Luxury.",
     'landing.hero_desc': 'Photograph your handwritten exam scripts. SheraTutor reads Bengali & English handwriting, evaluates against official NCTB rubrics, and instantly shows where marks were deducted.',
+    'landing.hero_pitch': 'No more wasting money on coaching centers and private tutors.',
     'landing.try_demo_cta': 'See Evaluated Khata',
     'landing.start_free_cta': 'Start Free Practice',
     'landing.curriculum_title': 'Authentic NCTB Board Marking Rubrics',
@@ -300,8 +310,8 @@ export const translations = {
     'landing.subject_bangla': 'Bangla 1st Paper',
     'landing.cq_sample_q': 'Creative Question (c): Maximum projectile height & velocity calculation',
     'landing.boards_covered': 'Covering all 11 Bangladesh Education Boards (Dhaka, Chittagong, Rajshahi, etc.)',
+    'landing.waitlist_cta': 'Join the Waitlist',
     'landing.waitlist_section_title': 'Get Priority Access to SheraTutor',
-    'landing.waitlist_section_desc': 'Over 2,800+ SSC & HSC candidates across Bangladesh have already joined.',
     'landing.footer_privacy': 'Privacy Policy (PDPA 2026)',
     'landing.footer_terms': 'Terms of Service',
     'landing.footer_boards': '11 Education Boards',
@@ -321,14 +331,20 @@ export const translations = {
     'landing.card3_eyebrow': 'PROMISE',
     'landing.card3_title': 'Free means genuinely free',
     'landing.card3_desc': 'No paywalls, no ads, no 3-free-tests limit. Funded by institutions, never charging students.',
+    'landing.problem_kicker': 'THE GAP',
+    'landing.problem_title': "The problem we're here to fix",
     'landing.footer_text': 'Built for SSC & HSC students across Bangladesh.',
 
     // Waitlist Form
+    'form.role_student': 'Join as Student',
+    'form.role_guardian': 'Join as Parent / Legal Guardian',
     'form.name_label': 'Your Full Name',
+    'form.name_label_guardian': 'Your Name (Parent / Legal Guardian)',
     'form.name_placeholder': 'Enter your full name',
-    'form.phone_label': 'Phone Number',
+    'form.consent_checkbox_guardian': 'I am the parent or legal guardian of this student and consent to storing these contact details solely for early-access notices.',
+    'form.phone_label': 'Phone Number (Optional)',
     'form.phone_placeholder': '01XXXXXXXXX',
-    'form.email_label': 'Email (Optional)',
+    'form.email_label': 'Email',
     'form.exam_label': 'Examination',
     'form.exam_year_label': 'Target Exam Year',
     'form.minor_checkbox': 'I am under 18 years of age',
@@ -336,7 +352,7 @@ export const translations = {
     'form.consent_checkbox': 'I am the legal guardian of this student, or confirming on their behalf — granting consent to store contact details solely for early access notices.',
     'form.submit_btn': 'Join Waitlist',
     'form.submitting': 'Joining…',
-    'form.success_msg': 'Successfully joined the waitlist! We will contact you soon.',
+    'form.success_msg': 'Successfully joined the waitlist! Please check your inbox to confirm your spot.',
 
     // Khata Preview
     'khata.examiner_score': 'EXAMINER SCORE',
@@ -344,7 +360,7 @@ export const translations = {
     'khata.note': '✓ 2 steps missed in Question 3 (+7 marks recoverable)',
 
     // Dashboard Home
-    'dashboard.greeting': 'Good day,',
+    'dashboard.greeting': 'Good day',
     'dashboard.welcome_active': 'completed evaluated assessments. Keep your momentum going!',
     'dashboard.welcome_new': 'Welcome to your board exam prep workspace. Take your first practice test!',
     'dashboard.focus_btn': 'Start Focus Session',

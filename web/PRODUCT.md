@@ -40,17 +40,16 @@ Unlike generic AI tutors or Western-centric ed-tech platforms, SheraTutor is gro
 
 ## Brand Commitments
 
-- **Name & Domain:** SheraTutor (`sheratutor.ai`), "Shera" meaning "best/top" in Bangla.
+- **Name & Domain:** SheraTutor (`sheratutor.tech`), "Shera" meaning "best/top" in Bangla.
 - **Tagline:** "SheraTutor, for **Shera**Students"
-- **Visual Identity:**
-  - Creative North Star: "The Board Examiner's Khata & Classroom Blackboard".
-  - Light Theme (Khata Paper): Warm off-white paper (`#F7F8F5`), white card surface (`#FFFFFF`), crisp deep ink (`#14251F`), and 1px ruled dividing lines (`#DDE4DD`).
-  - Dark Theme (Blackboard): Low-strain deep slate canvas (`#0F1C17`), blackboard cards (`#16261F` / `#10221A`), and high-contrast chalk typography (`#E8EFE9` / `#A3B8AD`).
-  - Primary Brand Anchor: National Bottle Green (`#006A4E` / `#00543D`) representing academic excellence and verified progress.
-  - Signature Accents: Brand Coral (`#FF6B57`, student CTA & action), Mint (`#23D9A5`, AI indicator/sparkle), Sunshine Ochre (`#FFC93C` / `#B97F08`, merit marks & GPA-5 stars).
-  - Examiner Red Rule: Disciplined red (`#D92638`) strictly reserved for mark deductions, step gaps, and the signature margin rule.
-  - Typography: Baloo 2 (headlines/wordmarks - energetic, youthful), Inter (dense rubric body text), Noto Sans Bengali (native Bangla diacritic support), Space Mono (labels, precision exam stats).
-  - Iconography: Tilted exam answer script with coral grading tick, mint AI sparkle, and sunshine merit star.
+- **Visual Identity:** "Academic Daylight / Cosmic Study" — see `DESIGN.md` for the full token system.
+  - Light theme: crisp near-white canvas (`#F8F9FC`), white cards, navy display type (`#14182B`), 1px slate lines.
+  - Dark theme: calm, low-chroma deep slate (`#0D0F16`) — neutralised, not "cosmic blue", for long study sessions.
+  - Primary action: Brand Coral (`#FF6B57`), the single energetic accent — used for every primary CTA.
+  - Secondary accent: Emerald (`#10B981`) for progress, success, charts. Amber (`#F59E0B`) for warnings / merit.
+  - Reserved: disciplined red (`#DC2626` → `--mark-deduction`) only for marks lost, step gaps, and the margin rule.
+  - Typography: Baloo 2 (display, Latin), Baloo Da 2 (Bengali display), Inter (body), Noto Sans Bengali (Bengali body), Space Mono (labels & tabular stats). All self-hosted via `next/font`.
+  - Tokens are a 3-layer OKLCH system in `src/app/globals.css`; that file is the source of truth.
 - **Voice & Tone:** Warm, aspirational, energetic, encouraging, culturally rooted in Bangladeshi student life, avoiding generic corporate SaaS jargon.
 
 ## Evidence on Hand

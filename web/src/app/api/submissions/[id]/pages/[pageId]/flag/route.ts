@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
+import { apiError } from "@/lib/api";
 
 /**
  * docs/review §3 mitigation #4: student-facing "this isn't what I wrote"
@@ -12,7 +13,7 @@ export async function POST(_request: Request, { params }: { params: Promise<{ id
   const {
     data: { user },
   } = await supabase.auth.getUser();
-  if (!user) return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  if (!user) return apiError(401, "unauthorized");
 
   // RLS (submission_pages_select) scopes this to the caller's own submission —
   // an update on a page that doesn't belong to them affects zero rows.
@@ -24,8 +25,8 @@ export async function POST(_request: Request, { params }: { params: Promise<{ id
     .select("id")
     .maybeSingle();
 
-  if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  if (!updated) return NextResponse.json({ error: "not found" }, { status: 404 });
+  if (error) return apiError(500, error.message);
+  if (!updated) return apiError(404, "not found");
 
   const service = getServiceRoleClient();
   await service.from("audit_log").insert({

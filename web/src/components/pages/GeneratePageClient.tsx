@@ -9,8 +9,8 @@ export function GeneratePageClient({
   subjects,
   chapters,
 }: {
-  subjects: any[];
-  chapters: any[];
+  subjects: { id: string; name_en: string; name_bn: string }[];
+  chapters: { id: string; chapter_no: number; title_en: string; title_bn: string; subject_id: string }[];
 }) {
   const { language } = useLanguage();
 

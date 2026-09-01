@@ -191,16 +191,16 @@ export function LandingRubricDemo() {
       <div className="bg-muted/40 border-b border-border px-4 sm:px-6 py-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <span className="w-2.5 h-2.5 rounded-full bg-destructive" />
-          <span className="font-mono text-xs font-bold uppercase tracking-wider text-muted-foreground">
+          <span className="text-[0.7rem] font-bold uppercase tracking-[0.12em] text-muted-foreground">
             {language === 'bn' ? 'NCTB বোর্ড মার্কিং রুব্রিক সিমুলেটর' : 'NCTB BOARD MARKING RUBRIC SIMULATOR'}
           </span>
         </div>
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/15 text-primary font-mono text-xs font-bold">
+          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/15 text-primary text-xs font-semibold">
             <Sparkles size={12} />
             {language === 'bn' ? subject.boardBn : subject.boardEn}
           </span>
-          <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-destructive/15 text-destructive font-mono text-xs font-bold">
+          <span className="inline-flex items-center px-2.5 py-1 rounded-full bg-destructive/15 text-destructive text-xs font-bold tabular-nums">
             {language === 'bn' ? `স্কোর: ${subject.totalScoreBn}` : `Score: ${subject.totalScoreEn}`}
           </span>
         </div>
@@ -215,7 +215,7 @@ export function LandingRubricDemo() {
               key={s.id}
               type="button"
               onClick={() => setActiveSubjectId(s.id)}
-              className={`px-3.5 py-2 rounded-lg text-xs font-semibold whitespace-nowrap transition-all duration-150 flex items-center gap-1.5 ${
+              className={`px-3.5 py-2 rounded-lg text-[13px] font-semibold whitespace-nowrap transition-all duration-150 flex items-center gap-1.5 ${
                 isActive
                   ? 'bg-primary text-primary-foreground shadow-xs'
                   : 'text-muted-foreground hover:bg-muted hover:text-foreground'
@@ -233,13 +233,13 @@ export function LandingRubricDemo() {
         <div className="flex items-start gap-3">
           <div className="w-1.5 h-12 bg-primary rounded-full flex-shrink-0 mt-1" />
           <div className="flex-1 min-w-0">
-            <span className="font-mono text-xs font-bold text-accent-foreground uppercase tracking-wider block mb-1">
+            <span className="block mb-1.5 text-[0.7rem] font-bold text-accent-foreground uppercase tracking-[0.12em]">
               {language === 'bn' ? 'সৃজনশীল প্রশ্ন উদ্দীপক' : 'QUESTION STIMULUS & PROBLEM'}
             </span>
-            <p className="text-sm font-medium text-foreground leading-relaxed m-0">
+            <p className="text-[15px] font-medium text-foreground leading-relaxed m-0">
               {language === 'bn' ? subject.cqPromptBn : subject.cqPromptEn}
             </p>
-            <div className="mt-2.5 inline-block px-3 py-1.5 rounded-md bg-muted/50 border border-border font-mono text-xs text-primary">
+            <div className="mt-3 inline-block px-3 py-2 rounded-md bg-muted border border-border font-mono text-[13px] text-foreground">
               {subject.formula}
             </div>
           </div>
@@ -249,13 +249,13 @@ export function LandingRubricDemo() {
       {/* Granular Step-by-Step Examiner Evaluation */}
       <div className="p-4 sm:p-6 bg-muted/20 flex flex-col gap-3.5">
         <div className="flex items-center justify-between">
-          <span className="font-mono text-xs font-bold text-foreground uppercase tracking-wider">
+          <span className="text-[0.7rem] font-bold text-foreground uppercase tracking-[0.12em]">
             {language === 'bn' ? 'বোর্ড পরীক্ষকের পুঙ্খানুপুঙ্খ ব্যবচ্ছেদ' : 'EXAMINER STEP BREAKDOWN'}
           </span>
           <button
             type="button"
             onClick={() => setShowRecovery(!showRecovery)}
-            className="text-xs text-primary font-semibold hover:underline flex items-center gap-1"
+            className="text-[13px] text-primary font-semibold hover:underline flex items-center gap-1"
           >
             {showRecovery
               ? language === 'bn'
@@ -280,16 +280,16 @@ export function LandingRubricDemo() {
                 }`}
               >
                 <div className="flex items-start justify-between gap-2 mb-1.5">
-                  <div className="flex items-center gap-2 flex-wrap">
-                    <span className="font-mono text-xs font-bold text-muted-foreground">
+                  <div className="flex items-baseline gap-2 flex-wrap">
+                    <span className="text-xs font-semibold text-muted-foreground">
                       {step.stepCode}
                     </span>
-                    <span className="text-xs font-bold text-foreground">
+                    <span className="text-[13px] font-bold text-foreground">
                       {language === 'bn' ? step.stepNameBn : step.stepNameEn}
                     </span>
                   </div>
                   <span
-                    className={`font-mono text-xs font-bold px-2 py-0.5 rounded-full ${
+                    className={`text-xs font-bold tabular-nums px-2 py-0.5 rounded-full ${
                       isDeduction
                         ? 'bg-destructive/15 text-destructive'
                         : 'bg-primary/15 text-primary'
@@ -299,12 +299,12 @@ export function LandingRubricDemo() {
                   </span>
                 </div>
 
-                <p className="text-xs text-muted-foreground leading-relaxed m-0">
+                <p className="text-[13px] text-muted-foreground leading-relaxed m-0">
                   {language === 'bn' ? step.detailBn : step.detailEn}
                 </p>
 
                 {showRecovery && step.recoveryBn && (
-                  <div className="mt-2.5 pt-2.5 border-t border-border flex items-start gap-2 text-xs text-destructive bg-destructive/5 -mx-3.5 -mb-3.5 p-3 rounded-b-xl">
+                  <div className="mt-2.5 pt-2.5 border-t border-border flex items-start gap-2 text-[13px] text-destructive bg-destructive/5 -mx-3.5 -mb-3.5 p-3 rounded-b-xl">
                     <AlertTriangle size={14} className="flex-shrink-0 mt-0.5" />
                     <span className="font-medium">
                       {language === 'bn' ? step.recoveryBn : step.recoveryEn}
