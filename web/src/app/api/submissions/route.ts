@@ -72,6 +72,7 @@ export async function POST(request: Request) {
   const { data: existing } = await supabase
     .from("exam_submissions")
     .select("id")
+    .eq("student_id", profile.id)
     .eq("idempotency_key", key)
     .maybeSingle();
   if (existing) return NextResponse.json({ submissionId: existing.id, deduped: true });

@@ -3,7 +3,7 @@
 import dynamic from 'next/dynamic';
 
 const DynamicMathView = dynamic(() => import('./math-markdown-view'), {
-  ssr: true,
+  ssr: false,
   loading: () => <span className="inline leading-relaxed opacity-90" />,
 });
 

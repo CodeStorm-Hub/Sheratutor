@@ -18,6 +18,11 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
   // Always initialize with 'bn' on both server and initial client render to avoid SSR hydration mismatches
   const [language, setLanguageState] = useState<Language>('bn');
 
+  const setLanguageCookie = (lang: Language) => {
+    const isSecure = typeof window !== 'undefined' && window.location.protocol === 'https:';
+    document.cookie = `sheratutor_lang=${encodeURIComponent(lang)}; path=/; max-age=31536000; SameSite=Lax${isSecure ? '; Secure' : ''}`;
+  };
+
   useEffect(() => {
     try {
       const saved = localStorage.getItem('sheratutor_lang') as Language | null;
@@ -25,7 +30,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
         setLanguageState(saved);
         document.documentElement.lang = saved;
         // Keep the cookie in sync so the server renders <html lang> correctly.
-        document.cookie = `sheratutor_lang=${saved}; path=/; max-age=31536000; samesite=lax`;
+        setLanguageCookie(saved);
       }
     } catch {
       // ignore in environments with restricted storage
@@ -36,7 +41,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({
     setLanguageState(lang);
     try {
       localStorage.setItem('sheratutor_lang', lang);
-      document.cookie = `sheratutor_lang=${lang}; path=/; max-age=31536000; samesite=lax`;
+      setLanguageCookie(lang);
       document.documentElement.lang = lang;
     } catch {
       // ignore
