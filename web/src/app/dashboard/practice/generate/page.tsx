@@ -13,11 +13,22 @@ async function getCurriculumMetadata() {
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
   );
-  const [{ data: subjects }, { data: chapters }] = await Promise.all([
-    supabase.from('subjects').select('id, name_en, name_bn').order('name_en'),
-    supabase.from('chapters').select('id, subject_id, chapter_no, title_en, title_bn').order('chapter_no')
-  ]);
-  return { subjects, chapters };
+  const { data: subjects } = await supabase
+    .from('subjects')
+    .select('id, name_en, name_bn')
+    .eq('code', 'SSC-PHY')
+    .order('name_en');
+  
+  const physicsSubjectId = subjects?.[0]?.id;
+  const { data: chapters } = physicsSubjectId
+    ? await supabase
+        .from('chapters')
+        .select('id, subject_id, chapter_no, title_en, title_bn')
+        .eq('subject_id', physicsSubjectId)
+        .order('chapter_no')
+    : { data: [] };
+
+  return { subjects: subjects ?? [], chapters: chapters ?? [] };
 }
 
 export default async function GeneratePracticePaperPage() {

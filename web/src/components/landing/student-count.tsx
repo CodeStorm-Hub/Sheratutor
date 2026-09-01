@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { createClient } from '@/lib/supabase/client';
 
-/** Live social-proof line — client island; stays hidden until a real count loads. */
+/** Live social-proof line — client island; shows waitlist count when available */
 export function StudentCount({ lang }: { lang: 'bn' | 'en' }) {
   const [count, setCount] = useState<number | null>(null);
 
@@ -12,7 +12,7 @@ export function StudentCount({ lang }: { lang: 'bn' | 'en' }) {
       try {
         const supabase = createClient();
         const { count: c } = await supabase
-          .from('student_profiles')
+          .from('waitlist_signups')
           .select('*', { count: 'exact', head: true });
         if (c !== null && c > 0) setCount(c);
       } catch {
@@ -30,7 +30,7 @@ export function StudentCount({ lang }: { lang: 'bn' | 'en' }) {
         <strong className="font-bold text-foreground">
           {count.toLocaleString(lang === 'bn' ? 'bn-BD' : 'en-US')}+
         </strong>{' '}
-        {lang === 'bn' ? 'জন শিক্ষার্থী ইতিমধ্যে যুক্ত হয়েছে' : 'students already practicing'}
+        {lang === 'bn' ? 'জন শিক্ষার্থী ও অভিভাবক ওয়েটলিস্টে যুক্ত' : 'students & parents on the priority waitlist'}
       </span>
     </div>
   );

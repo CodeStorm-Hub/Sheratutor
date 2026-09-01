@@ -14,10 +14,17 @@ async function UploadContent({
   const supabase = await createClient();
   const { user } = await getUser();
 
-  const { data: papers } = await supabase
+  let query = supabase
     .from('question_papers')
-    .select('id, title, subjects(name_en), questions(id, question_number, question_text_en)')
-    .or(`is_public_template.eq.true,created_by_user_id.eq.${user!.id}`)
+    .select('id, title, subjects(name_en), questions(id, question_number, question_text_en)');
+
+  if (user?.id) {
+    query = query.or(`is_public_template.eq.true,created_by_user_id.eq.${user.id}`);
+  } else {
+    query = query.eq('is_public_template', true);
+  }
+
+  const { data: papers } = await query
     .order('created_at', { ascending: false })
     .limit(20);
 

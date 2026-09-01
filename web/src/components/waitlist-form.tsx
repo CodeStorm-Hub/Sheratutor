@@ -58,6 +58,15 @@ export function WaitlistForm() {
       }}
     >
       <input type="hidden" name="signupRole" value={role} />
+      {/* Honeypot field for bot suppression */}
+      <input
+        type="text"
+        name="website"
+        tabIndex={-1}
+        autoComplete="off"
+        style={{ display: 'none', position: 'absolute', opacity: 0, pointerEvents: 'none' }}
+        aria-hidden="true"
+      />
 
       <div
         role="radiogroup"
@@ -120,41 +129,6 @@ export function WaitlistForm() {
 
       <div style={{ width: '100%' }}>
         <label
-          htmlFor="phone"
-          style={{
-            display: 'block',
-            fontSize: 12,
-            fontWeight: 600,
-            color: 'var(--foreground)',
-            marginBottom: 6,
-          }}
-        >
-          {t('form.phone_label')} <span style={{ color: 'var(--coral)' }}>*</span>
-        </label>
-        <input
-          id="phone"
-          name="phone"
-          placeholder={t('form.phone_placeholder')}
-          inputMode="tel"
-          required
-          autoComplete="tel"
-          style={{
-            width: '100%',
-            maxWidth: '100%',
-            border: '1px solid var(--border)',
-            borderRadius: 9,
-            padding: '10px 14px',
-            fontSize: 13,
-            fontFamily: 'Space Mono, monospace',
-            background: 'var(--background)',
-            color: 'var(--foreground)',
-            boxSizing: 'border-box',
-          }}
-        />
-      </div>
-
-      <div style={{ width: '100%' }}>
-        <label
           htmlFor="email"
           style={{
             display: 'block',
@@ -164,12 +138,13 @@ export function WaitlistForm() {
             marginBottom: 6,
           }}
         >
-          {t('form.email_label')}
+          {t('form.email_label')} <span style={{ color: 'var(--coral)' }}>*</span>
         </label>
         <input
           id="email"
           name="email"
           type="email"
+          required
           autoComplete="email"
           placeholder="you@example.com"
           style={{
@@ -180,6 +155,40 @@ export function WaitlistForm() {
             padding: '10px 14px',
             fontSize: 13,
             fontFamily: 'Inter, sans-serif',
+            background: 'var(--background)',
+            color: 'var(--foreground)',
+            boxSizing: 'border-box',
+          }}
+        />
+      </div>
+
+      <div style={{ width: '100%' }}>
+        <label
+          htmlFor="phone"
+          style={{
+            display: 'block',
+            fontSize: 12,
+            fontWeight: 600,
+            color: 'var(--foreground)',
+            marginBottom: 6,
+          }}
+        >
+          {t('form.phone_label')}
+        </label>
+        <input
+          id="phone"
+          name="phone"
+          placeholder={t('form.phone_placeholder')}
+          inputMode="tel"
+          autoComplete="tel"
+          style={{
+            width: '100%',
+            maxWidth: '100%',
+            border: '1px solid var(--border)',
+            borderRadius: 9,
+            padding: '10px 14px',
+            fontSize: 13,
+            fontFamily: 'Space Mono, monospace',
             background: 'var(--background)',
             color: 'var(--foreground)',
             boxSizing: 'border-box',

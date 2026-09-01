@@ -74,6 +74,20 @@ export function TutorPageClient({
   const currentChapter =
     sortedChapters.find((c) => c.id === selectedChapterId) || sortedChapters[0];
 
+  // Keep state in sync when subjects are provided or updated
+  useEffect(() => {
+    if ((!selectedSubjectId || !subjects.some(s => s.id === selectedSubjectId)) && subjects.length > 0) {
+      const initSub = subjects.find((s) => s.chapters && s.chapters.length > 0) || subjects[0];
+      if (initSub) {
+        setSelectedSubjectId(initSub.id);
+        const chs = (initSub.chapters ?? []).slice().sort((a, b) => (a.chapter_no || 0) - (b.chapter_no || 0));
+        if (chs.length > 0) {
+          setSelectedChapterId(chs[0].id);
+        }
+      }
+    }
+  }, [subjects, selectedSubjectId]);
+
   // Sessions and messages state
   const [sessions, setSessions] = useState<SessionSummary[]>(initialSessions);
   const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
@@ -455,10 +469,10 @@ export function TutorPageClient({
               value={selectedSubjectId}
               onChange={(e) => handleSubjectChange(e.target.value)}
               aria-label="Select Subject"
-              className="w-full rounded-lg border border-border bg-background px-3 py-2 text-sm font-medium outline-none transition-colors focus:border-cta"
+              className="w-full rounded-lg border border-border bg-background text-foreground px-3 py-2 text-sm font-medium outline-none transition-colors focus:border-cta"
             >
               {subjects.map((s) => (
-                <option key={s.id} value={s.id}>
+                <option key={s.id} value={s.id} className="bg-background text-foreground">
                   {language === 'bn' ? s.name_bn || s.name_en : s.name_en}
                 </option>
               ))}

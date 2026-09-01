@@ -1,4 +1,6 @@
 import React from 'react';
+import Link from 'next/link';
+import type { Route } from 'next';
 import { cookies } from 'next/headers';
 import { cacheLife } from 'next/cache';
 import { Logo } from '@/components/logo';
@@ -241,7 +243,7 @@ async function CachedLandingUI({ lang }: { lang: Language }) {
         </section>
 
         <section
-          id="waitlist-section"
+          id="waitlist"
           className="my-4 w-full rounded-2xl border border-border bg-card p-6 py-10 text-card-foreground shadow-md sm:p-10"
         >
           <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-2">
@@ -285,9 +287,13 @@ async function CachedLandingUI({ lang }: { lang: Language }) {
           <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-muted-foreground">
             <span>{t('landing.footer_boards')}</span>
             <span>&middot;</span>
-            <span>{t('landing.footer_privacy')}</span>
+            <Link href={'/privacy' as Route} className="transition-colors hover:text-foreground">
+              {t('landing.footer_privacy')}
+            </Link>
             <span>&middot;</span>
-            <span>{t('landing.footer_terms')}</span>
+            <Link href={'/terms' as Route} className="transition-colors hover:text-foreground">
+              {t('landing.footer_terms')}
+            </Link>
           </div>
         </div>
       </footer>

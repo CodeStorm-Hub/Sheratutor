@@ -98,9 +98,9 @@ export const translations = {
     'form.name_label_guardian': 'আপনার নাম (অভিভাবক / আইনি অভিভাবক)',
     'form.consent_checkbox_guardian': 'আমি এই শিক্ষার্থীর পিতা-মাতা বা আইনি অভিভাবক এবং শুধুমাত্র আর্লি-অ্যাক্সেস বিজ্ঞপ্তির জন্য এই যোগাযোগের তথ্য সংরক্ষণে সম্মতি দিচ্ছি।',
     'form.name_placeholder': 'পুরো নাম লেখো',
-    'form.phone_label': 'ফোন নম্বর',
+    'form.phone_label': 'ফোন নম্বর (ঐচ্ছিক)',
     'form.phone_placeholder': '০১XXXXXXXXX',
-    'form.email_label': 'ইমেইল (ঐচ্ছিক)',
+    'form.email_label': 'ইমেইল',
     'form.exam_label': 'পরীক্ষা',
     'form.exam_year_label': 'পরীক্ষার বছর',
     'form.minor_checkbox': 'আমার বয়স ১৮ বছরের কম',
@@ -108,7 +108,7 @@ export const translations = {
     'form.consent_checkbox': 'আমি এই শিক্ষার্থীর অভিভাবক, অথবা তার পক্ষে নিশ্চিত করছি — এবং শুধুমাত্র বিজ্ঞপ্তির জন্য এই যোগাযোগের তথ্য সংরক্ষণে সম্মতি দিচ্ছি।',
     'form.submit_btn': 'ওয়েটলিস্টে যোগ দাও',
     'form.submitting': 'যোগ হচ্ছে…',
-    'form.success_msg': 'ওয়েটলিস্টে সফলভাবে যুক্ত হয়েছ! আমরা শিগগিরই যোগাযোগ করব।',
+    'form.success_msg': 'ওয়েটলিস্টে সফলভাবে যুক্ত হয়েছ! তোমার স্পট নিশ্চিত করতে ইনবক্স চেক করো।',
 
     // Khata Preview
     'khata.examiner_score': 'পরীক্ষকের স্কোর',
@@ -342,9 +342,9 @@ export const translations = {
     'form.name_label_guardian': 'Your Name (Parent / Legal Guardian)',
     'form.name_placeholder': 'Enter your full name',
     'form.consent_checkbox_guardian': 'I am the parent or legal guardian of this student and consent to storing these contact details solely for early-access notices.',
-    'form.phone_label': 'Phone Number',
+    'form.phone_label': 'Phone Number (Optional)',
     'form.phone_placeholder': '01XXXXXXXXX',
-    'form.email_label': 'Email (Optional)',
+    'form.email_label': 'Email',
     'form.exam_label': 'Examination',
     'form.exam_year_label': 'Target Exam Year',
     'form.minor_checkbox': 'I am under 18 years of age',
@@ -352,7 +352,7 @@ export const translations = {
     'form.consent_checkbox': 'I am the legal guardian of this student, or confirming on their behalf — granting consent to store contact details solely for early access notices.',
     'form.submit_btn': 'Join Waitlist',
     'form.submitting': 'Joining…',
-    'form.success_msg': 'Successfully joined the waitlist! We will contact you soon.',
+    'form.success_msg': 'Successfully joined the waitlist! Please check your inbox to confirm your spot.',
 
     // Khata Preview
     'khata.examiner_score': 'EXAMINER SCORE',

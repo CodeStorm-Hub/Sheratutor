@@ -46,7 +46,7 @@ async function MistakesContent() {
         }))
       : [
           {
-            type: 'Step-based derivations',
+            type: 'Step-based equation derivations',
             type_bn: 'ধাপভিত্তিক সমীকরণ প্রতিপাদন',
             subject: 'Physics',
             count: '8 mistakes',
@@ -54,20 +54,22 @@ async function MistakesContent() {
             color: "coral", tags: ["Calculation", "Formula"] as const,
           },
           {
-            type: 'Missing final units in calculation',
-            type_bn: 'হিসাবে শেষ একক বাদ দেওয়া',
-            subject: 'Higher Math',
+            type: 'Missing SI units in final answer',
+            type_bn: 'হিসাবে শেষ SI একক বাদ দেওয়া',
+            subject: 'Physics',
             count: '5 mistakes',
             lostMarks: 4,
             color: 'sun' as const,
+            tags: ["Units", "Marks Loss"] as const,
           },
           {
-            type: 'Chemical equation balance',
-            type_bn: 'রাসায়নিক সমীকরণ সমতাকরণ',
-            subject: 'Chemistry',
+            type: 'Vector sign and direction convention',
+            type_bn: 'ভেক্টরের দিক ও চিহ্নের ভুল',
+            subject: 'Physics',
             count: '4 mistakes',
-            lostMarks: 2,
+            lostMarks: 3,
             color: 'mint' as const,
+            tags: ["Motion", "Concept"] as const,
           },
         ];
 

@@ -40,7 +40,7 @@ Unlike generic AI tutors or Western-centric ed-tech platforms, SheraTutor is gro
 
 ## Brand Commitments
 
-- **Name & Domain:** SheraTutor (`sheratutor.ai`), "Shera" meaning "best/top" in Bangla.
+- **Name & Domain:** SheraTutor (`sheratutor.tech`), "Shera" meaning "best/top" in Bangla.
 - **Tagline:** "SheraTutor, for **Shera**Students"
 - **Visual Identity:** "Academic Daylight / Cosmic Study" — see `DESIGN.md` for the full token system.
   - Light theme: crisp near-white canvas (`#F8F9FC`), white cards, navy display type (`#14182B`), 1px slate lines.
