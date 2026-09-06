@@ -160,4 +160,7 @@ mcp_config.json
 .agent/mcp_config.json
 web/.mcp.json
 
-
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
