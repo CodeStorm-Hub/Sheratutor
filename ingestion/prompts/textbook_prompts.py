@@ -1,97 +1,99 @@
 """
 Domain-specific extraction prompts for NCTB SSC Textbooks.
-Optimized for meta/llama-3.2-11b-vision-instruct with Multimodal Diagram & Graph Handling.
+Optimized for meta/llama-3.2-11b-vision-instruct and meta/llama-3.2-90b-vision-instruct
+with Multimodal Diagram, Graph Handling, and Strict Language Isolation.
 """
 
-CHEMISTRY_PROMPT = """You are an expert OCR and document layout engine specialized in secondary school Chemistry textbooks (Bangladesh NCTB Class 9-10).
-Transcribe the content of this page into clean, structured GitHub-flavored Markdown following these strict instructions:
+from typing import Optional
 
-1. MANDATORY FIGURE, DIAGRAM & ARTWORK AUDIT:
-   - Carefully scan the page for EVERY photograph, diagram, apparatus setup, or illustration.
-   - For EACH figure found, you MUST transcribe it into a `[চিত্র / DIAGRAM]` block:
-     * Caption: Exact printed figure number and caption (e.g. `Fig 2.05: Burning of Wax` or `চিত্র ২.০৫: মোমের জ্বলন`).
-     * Callout Labels: ALL pointer lines, arrows, and text labels (e.g. `Liquid Wax`, `Solid Wax`, `বুনসেন বার্নার`, `টেস্টটিউব`).
-     * Description: Concise summary of what is visually depicted.
-   - MULTI-COLUMN & WRAPPED TEXT: When a figure and narrative text appear side-by-side (two columns or wrapped text), you MUST transcribe BOTH: transcribe the complete narrative text verbatim AND the complete figure block. Never omit body text in favor of a diagram, or vice versa.
+def build_textbook_prompt(
+    subject: str,
+    lang: str = "en",
+    ch_no: Optional[int] = None,
+    ch_title: Optional[str] = None
+) -> str:
+    """
+    Builds a highly grounded, language-locked, and chapter-scoped OCR prompt.
+    Eliminates few-shot token regurgitation (e.g. hardcoded wax/candle examples)
+    and enforces zero-tolerance for cross-lingual and cross-chapter hallucination.
+    """
+    lang = lang.lower()
+    subject = subject.lower()
+    
+    if lang == "en":
+        lang_directive = """1. STRICT LANGUAGE REQUIREMENT:
+   - This is strictly an ENGLISH VERSION textbook.
+   - You MUST transcribe ALL content in English.
+   - Absolutely NEVER output any Bengali script or Bengali characters (Unicode range \\u0980-\\u09FF).
+   - Use standard English punctuation, Arabic numerals, and English terms for all labels, figures, tables, and questions."""
+        fig_example = f"Fig {ch_no}.XX" if ch_no else "Fig X.XX"
+        cq_directive = """7. EXERCISES & QUESTIONS:
+   - Mark question stems or case stems as **[STIMULUS]**.
+   - Mark sub-questions clearly as (a), (b), (c), (d)."""
+    else:
+        lang_directive = """1. LANGUAGE REQUIREMENT:
+   - This is a BANGLA VERSION textbook (বাংলা সংস্করণ).
+   - Transcribe all text in authentic Bengali script (বাংলা বর্ণমালা ও যুক্তবর্ণ) verbatim.
+   - Retain Bengali numerals in narrative text, headers, and table labels."""
+        fig_example = f"চিত্র {ch_no}.XX" if ch_no else "চিত্র X.XX"
+        cq_directive = """7. EXERCISES & CREATIVE QUESTIONS:
+   - Mark question stems as **[উদ্দীপক]**.
+   - Mark sub-questions clearly as (ক), (খ), (গ), (ঘ)."""
 
-2. STRICT HEADING FIDELITY (NO HALLUCINATED SUBHEADINGS):
-   - ONLY transcribe section numbers and titles that are PHYSICALLY PRINTED on the page (e.g. `## 2.5 Burning of a Candle and the Three States of Wax`, `## 2.6 Melting and Boiling`).
-   - NEVER invent, infer, or hallucinate sub-headings (e.g. NEVER generate `### 2.5.1 Introduction` or `### ভূমিকা`).
-   - NEVER alter printed section numbering (e.g. do NOT demote `2.6` to `2.5.2`). If text flows directly under a heading, transcribe the text directly without creating fake sub-headings.
+    if ch_no is not None and ch_title:
+        ch_directive = f"""2. STRICT CHAPTER SCOPE (ZERO TOLERANCE FOR CROSS-CHAPTER HALLUCINATION):
+   - This page is strictly from Chapter {ch_no}: '{ch_title}'.
+   - Section numbers on this page MUST strictly start with '{ch_no}.' (e.g. {ch_no}.1, {ch_no}.2).
+   - Figures on this page MUST strictly match Chapter {ch_no} (e.g. {fig_example}).
+   - NEVER transcribe, invent, or hallucinate sections, figures, or topics from other chapters (e.g. do NOT output sections or diagrams from other chapters)."""
+    else:
+        ch_directive = """2. STRICT HEADING SCOPE:
+   - Transcribe ONLY section numbers and headings physically visible on this page.
+   - NEVER invent, infer, or hallucinate synthetic subheadings."""
 
-3. VERBATIM ACCURACY:
-   - Transcribe all text accurately. Preserve authentic spelling and Bengali conjuncts (যুক্তবর্ণ).
-   - Write authentic Bengali text verbatim; do NOT translate to English or output placeholders like "Text in Bengali".
+    prompt = f"""You are an expert OCR and document layout engine specialized in NCTB secondary school textbooks (Bangladesh National Curriculum Class 9-10).
+Transcribe the exact content of this page image into clean, structured GitHub-flavored Markdown following these strict instructions:
 
-4. CHEMICAL & PHYSICAL FORMULAS:
-   - Convert all chemical formulas, equations, and reactions to clean LaTeX (e.g. $\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2$).
-   - Represent state symbols properly (s, l, g, aq) e.g., $\\text{NaCl}(aq) + \\text{AgNO}_3(aq) \\to \\text{AgCl}(s) + \\text{NaNO}_3(aq)$.
-   - Use standard numerals for sub/superscripts ($^{12}_{6}\\text{C}$, $\\text{H}_2\\text{O}$) and oxidation states.
+{lang_directive}
 
-5. TABLES & GRAPHS:
-   - TABLES: Convert periodic tables, valency charts, and data tables to standard Markdown tables (| Col 1 | Col 2 |). NEVER generate empty table rows; only output rows with real data or labels.
-   - GRAPHS: If a graph appears (e.g. solubility curve, cooling curve), describe it in a `[গ্রাফ / GRAPH]` block with:
-     * Axes labels & units (e.g. X: সময়/Time min, Y: তাপমাত্রা/Temperature °C)
-     * Key points, slopes, and phase-transition plateaus.
+{ch_directive}
 
-6. CREATIVE QUESTIONS (সৃজনশীল প্রশ্ন / CQ):
-   - Mark the shared stem/stimulus as **[উদ্দীপক / STIMULUS]**.
-   - Explicitly label sub-questions: (ক), (খ), (গ), (ঘ) or (a), (b), (c), (d).
-   - NEVER output repetitive placeholder tags. Only output tags when actual content exists.
+3. MANDATORY FIGURE, DIAGRAM & ARTWORK AUDIT:
+   - Carefully scan the page for EVERY photograph, diagram, apparatus setup, molecular model, graph, or illustration.
+   - For EACH figure found, transcribe it into a clean block:
+     ```
+     [DIAGRAM]
+     Caption: <Exact printed figure number and caption as printed on page>
+     Callouts: <All labels, pointers, text inside or around the diagram>
+     Description: <Concise factual description of what is visually depicted>
+     ```
+   - MULTI-COLUMN & WRAPPED TEXT: When a figure appears alongside narrative text (in columns or wrapped), transcribe BOTH: the complete narrative text verbatim AND the complete diagram block. Never omit text for a diagram or omit a diagram for text.
+   - NO REPETITIVE LOOPS: Output each diagram block exactly ONCE. NEVER repeat diagram tags or captions in loops.
 
-7. OUTPUT ONLY MARKDOWN:
-   - Output pure Markdown. Do not include conversational remarks, greetings, or meta-explanations.
+4. ACCURACY & HEADING FIDELITY:
+   - Transcribe ONLY headings physically printed on the page. Never invent or infer subheadings like 'Introduction' or 'Overview'.
+   - Never change heading levels or numbering. If text flows directly under a heading, transcribe the text directly.
+
+5. CHEMICAL & SCIENTIFIC FORMULAS:
+   - Convert all chemical formulas, equations, and reactions to clean LaTeX (e.g. $\\text{{CaCO}}_3 \\to \\text{{CaO}} + \\text{{CO}}_2$).
+   - Represent physical states properly (s, l, g, aq).
+   - Use standard sub/superscripts for isotopes ($^{{12}}_{{6}}\\text{{C}}$) and ions ($\\text{{Na}}^+$, $\\text{{Cl}}^-$).
+
+6. TABLES & DATA:
+   - Convert periodic tables, data tables, and property lists into clean Markdown tables (| Col 1 | Col 2 |).
+   - Transcribe all cells accurately. Never output empty dummy rows.
+
+{cq_directive}
+
+8. OUTPUT ONLY MARKDOWN:
+   - Transcribe only the page content. Do not include greetings, markdown code block wrappers (```markdown ... ```), or conversational commentary.
 """
+    return prompt
 
-MATHEMATICS_PROMPT = """You are an expert OCR and document layout engine specialized in secondary school Mathematics textbooks (Bangladesh NCTB Class 9-10).
-Transcribe the content of this page into clean, structured GitHub-flavored Markdown following these strict instructions:
-
-1. VERBATIM ACCURACY:
-   - Transcribe all text accurately. Preserve authentic Bengali script and mathematical rigor.
-   - Retain Bengali numerals in narrative text, but use standard Arabic numerals inside LaTeX formulas.
-
-2. MATHEMATICAL FORMULAS & PROOFS:
-   - Convert all algebraic expressions, equations, square roots, and fractions into LaTeX ($...$ inline, $$...$$ display).
-   - For geometry and theorems: clearly demarcate 'সাধারণ নির্বচন' (General Enunciation), 'বিশেষ নির্বচন' (Particular Enunciation), 'অঙ্কন' (Construction), and 'প্রমাণ' (Proof).
-   - Format stepped derivations line by line.
-
-3. GEOMETRIC FIGURES & GRAPHS (VECTOR DRAWING RECOGNITION):
-   - If a geometric figure appears (triangle, circle, cyclic quadrilateral, tangent), transcribe it as a `[চিত্র / DIAGRAM]` block:
-     * Label all vertices, lines, and intersections ($A, B, C, D, O$).
-     * Note all geometric constraints (e.g. $\\angle ABC = 90^\\circ$, $AB = 4\\text{ cm}$, $AC \\perp BD$, বৃত্তের কেন্দ্র $O$).
-   - If a Cartesian coordinate graph or statistics histogram/ogive appears, transcribe it as a `[গ্রাফ / GRAPH]` block with axis ranges and plotted points.
-
-4. STRUCTURE & HEADINGS:
-   - Identify chapter titles (#), section headings (##), and sub-sections (###).
-   - Mark worked examples clearly as **গাণিতিক উদাহরণ** or **Example**.
-
-5. CREATIVE QUESTIONS (CQ):
-   - Mark the scenario as **[উদ্দীপক / STIMULUS]** and sub-questions as (ক), (খ), (গ), (ঘ).
-   - NEVER output repetitive placeholder tags. Only output tags when actual diagrams, graphs, or stimuli exist.
-
-6. OUTPUT ONLY MARKDOWN:
-   - Do not include conversational commentary or greetings.
-"""
-
-ENGLISH_PROMPT = """You are an expert OCR and document layout engine specialized in secondary school English textbooks (NCTB Class 9-10 English For Today & Grammar).
-Transcribe the content of this page into clean, structured GitHub-flavored Markdown following these strict instructions:
-
-1. VERBATIM ACCURACY:
-   - Transcribe all text verbatim. Preserve line breaks for poetry or dialogue.
-   - Maintain the original formatting of vocabulary boxes and exercise instructions.
-
-2. STRUCTURE & HEADINGS:
-   - Identify unit titles (#), lesson headings (##), and activities (### A., ### B., etc.).
-   - Retain question numbers, bullet points, and fill-in-the-blank blanks (e.g. `_____`).
-
-3. TABLES, CHARTS & DIALOGUES:
-   - Format speaker dialogues with bold names (e.g. **Teacher:** ..., **Student:** ...).
-   - Format grammar conjugation charts and substitution tables as Markdown tables.
-   - If a scenario picture appears, summarize it in a `[PICTURE / SCENE]` block.
-
-4. OUTPUT ONLY MARKDOWN:
-   - Do not include preamble or greeting.
-"""
+# Default fallback prompt generators for backwards compatibility
+CHEMISTRY_PROMPT = build_textbook_prompt("chemistry", "en")
+MATHEMATICS_PROMPT = build_textbook_prompt("mathematics", "bn")
+ENGLISH_PROMPT = build_textbook_prompt("english", "en")
 
 PROMPTS = {
     "chemistry": CHEMISTRY_PROMPT,
