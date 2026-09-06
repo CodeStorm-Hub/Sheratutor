@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genkit Architecture & Next.js Full-Stack Explorer</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    /* Custom scrollbar and smooth transitions */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--muted-foreground); }
+    .code-block { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+</head>
+<body class="bg-transparent text-[var(--foreground)] antialiased p-4 sm:p-6 select-none">
+  <div class="max-w-7xl mx-auto space-y-6">
+
+    <!-- Header Section -->
+    <header class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1">
+          <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">Google Genkit v1.x / 2026</span>
+          <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">Next.js App Router Native</span>
+          <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-purple-500/10 text-purple-500 border border-purple-500/20">TypeScript First</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--foreground)] flex items-center gap-3">
+          Genkit Architecture & Next.js Deep Dive
+        </h1>
+        <p class="text-sm text-[var(--muted-foreground)] mt-1">
+          Comprehensive module graph, execution pipeline, and streaming runtime for full-stack TypeScript applications.
+        </p>
+      </div>
+
+      <!-- Quick Stats / Navigation Bar -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0">
+        <button onclick="switchTab('architecture')" id="tab-btn-architecture" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-transparent bg-[var(--primary)] text-[var(--primary-foreground)] shadow-xs">
+          Layered Stack
+        </button>
+        <button onclick="switchTab('nextjs')" id="tab-btn-nextjs" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-[var(--border)] hover:bg-[var(--accent)] text-[var(--muted-foreground)]">
+          Next.js Pipeline
+        </button>
+        <button onclick="switchTab('modules')" id="tab-btn-modules" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-[var(--border)] hover:bg-[var(--accent)] text-[var(--muted-foreground)]">
+          Package Matrix
+        </button>
+        <button onclick="switchTab('agents')" id="tab-btn-agents" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-[var(--border)] hover:bg-[var(--accent)] text-[var(--muted-foreground)]">
+          Agents & Sessions
+        </button>
+        <button onclick="switchTab('code')" id="tab-btn-code" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-[var(--border)] hover:bg-[var(--accent)] text-[var(--muted-foreground)]">
+          Code Recipes
+        </button>
+      </div>
+    </header>
+
+    <!-- TAB 1: ARCHITECTURE STACK -->
+    <div id="tab-architecture" class="tab-content space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: Interactive Layers Diagram -->
+        <div class="lg:col-span-8 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-base font-semibold text-[var(--foreground)]">System Architectural Layers</h2>
+            <span class="text-xs text-[var(--muted-foreground)]">Click any layer or component to inspect internals</span>
+          </div>
+
+          <div class="space-y-3">
+            <!-- Layer 1: Client / Presentation -->
+            <div onclick="selectLayer('layer-client')" class="layer-card cursor-pointer p-4 rounded-xl border border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-blue-500">Layer 1: Frontend & Presentation</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-400">Browser / Edge</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2.5">React Client Components, Hooks, and Streaming UI consumers.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">@genkit-ai/next/client</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">useChat (@ai-sdk/react)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">@genkit-ai/a2ui (Surfaces)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">remoteAgent() client</div>
+              </div>
+            </div>
+
+            <!-- Layer 2: Serving / Ingestion -->
+            <div onclick="selectLayer('layer-serving')" class="layer-card cursor-pointer p-4 rounded-xl border border-emerald-500/30 bg-emerald-500/5 hover:bg-emerald-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-emerald-500">Layer 2: Serving & App Transport</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">Next.js Route Handlers</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2.5">HTTP endpoint adapters, SSE streaming, authentication context, and durable connections.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">appRoute()</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">GenkitChatTransport</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">StreamManager</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">contextProvider</div>
+              </div>
+            </div>
+
+            <!-- Layer 3: Agentic & Workflow Orchestration -->
+            <div onclick="selectLayer('layer-orchestration')" class="layer-card cursor-pointer p-4 rounded-xl border border-purple-500/30 bg-purple-500/5 hover:bg-purple-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-purple-500">Layer 3: Agent & Workflow Engine</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-400">Flows & Agents</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2.5">Multi-turn loop, session persistence, JSON patch state deltas, and human-in-the-loop interrupts.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">defineFlow()</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">defineAgent()</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">SessionStore</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">interrupt() & abort</div>
+              </div>
+            </div>
+
+            <!-- Layer 4: AI Primitives & Generative Features -->
+            <div onclick="selectLayer('layer-ai')" class="layer-card cursor-pointer p-4 rounded-xl border border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Layer 4: AI Capabilities & RAG</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400">@genkit-ai/ai</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2.5">Prompt management, tool execution loop, vector retrieval, embeddings, and evaluation.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">generateStream()</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">defineTool()</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">defineRetriever()</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">Dotprompt (.prompt)</div>
+              </div>
+            </div>
+
+            <!-- Layer 5: Core Kernel & Reflection -->
+            <div onclick="selectLayer('layer-core')" class="layer-card cursor-pointer p-4 rounded-xl border border-rose-500/30 bg-rose-500/5 hover:bg-rose-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-rose-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-rose-500">Layer 5: Core Kernel, Registry & DevTools</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/10 text-rose-400">@genkit-ai/core</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2.5">Central Action Registry, OpenTelemetry tracing, async context propagation, and reflection API.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">Action & Registry</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">ReflectionServer</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">OpenTelemetry / Spans</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">Zod Schema System</div>
+              </div>
+            </div>
+
+            <!-- Layer 6: Providers & Plugins -->
+            <div onclick="selectLayer('layer-plugins')" class="layer-card cursor-pointer p-4 rounded-xl border border-cyan-500/30 bg-cyan-500/5 hover:bg-cyan-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-cyan-500">Layer 6: Ecosystem, Plugins & MCP</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400">External Integrations</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2.5">Model vendors, Model Context Protocol (MCP), vector stores, and cloud backends.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">google-genai / vertexai</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">@genkit-ai/mcp (Host/Svr)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">anthropic / ollama / oai</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center">pinecone / chroma / pg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Inspector Panel -->
+        <div class="lg:col-span-4 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm flex flex-col justify-between" id="layer-inspector">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between border-b border-[var(--border)] pb-3">
+              <h3 id="inspector-title" class="text-sm font-bold text-[var(--foreground)] uppercase tracking-wider">Layer Details</h3>
+              <span id="inspector-badge" class="text-[11px] font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-500">Presentation</span>
+            </div>
+            <p id="inspector-desc" class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Click any layer to view its architectural role, TypeScript packages, lifecycle hooks, and integration points with Next.js.
+            </p>
+            <div id="inspector-details" class="space-y-3 text-xs">
+              <div class="p-3 rounded-xl bg-[var(--accent)] border border-[var(--border)]">
+                <div class="font-semibold mb-1 text-[var(--foreground)]">Key Responsibilities</div>
+                <ul id="inspector-responsibilities" class="list-disc list-inside text-[var(--muted-foreground)] space-y-1">
+                  <li>Client-side streaming consumption with AsyncIterable</li>
+                  <li>Type inference without leaking server bundles via import type</li>
+                  <li>Direct integration with React 19 and useChat hooks</li>
+                </ul>
+              </div>
+              <div class="p-3 rounded-xl bg-[var(--accent)] border border-[var(--border)]">
+                <div class="font-semibold mb-1 text-[var(--foreground)]">Associated Packages</div>
+                <div id="inspector-packages" class="flex flex-wrap gap-1.5 font-mono text-[11px]">
+                  <span class="px-2 py-0.5 rounded bg-[var(--card)] border border-[var(--border)]">@genkit-ai/next</span>
+                  <span class="px-2 py-0.5 rounded bg-[var(--card)] border border-[var(--border)]">@genkit-ai/vercel-ai</span>
+                  <span class="px-2 py-0.5 rounded bg-[var(--card)] border border-[var(--border)]">@genkit-ai/a2ui</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-[var(--border)] text-[11px] text-[var(--muted-foreground)]">
+            Tip: Genkit enforces a strict unidirectional execution graph from Action invocation to Telemetry export.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 2: NEXT.JS APP ROUTER PIPELINE -->
+    <div id="tab-nextjs" class="tab-content hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-6">
+        <div>
+          <h2 class="text-lg font-bold text-[var(--foreground)]">Next.js App Router Full-Stack Architecture</h2>
+          <p class="text-xs text-[var(--muted-foreground)] mt-1">
+            How Genkit achieves zero-CORS full-stack AI, streaming structured outputs, and type safety with zero client-bundle bloat.
+          </p>
+        </div>
+
+        <!-- Visual Flow Pipeline -->
+        <div class="relative grid grid-cols-1 md:grid-cols-4 gap-4">
+          <!-- Step 1 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] relative">
+            <div class="text-[10px] font-mono text-blue-500 font-bold mb-1">STEP 1 • CLIENT</div>
+            <h4 class="text-sm font-semibold text-[var(--foreground)]">streamFlow() Call</h4>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1">
+              Browser sends HTTP POST with <code class="text-[11px] px-1 bg-[var(--card)] rounded">Accept: text/event-stream</code>. Flow types are imported as <code class="text-[11px] px-1 bg-[var(--card)] rounded">import type</code> so no Genkit runtime is bundled in client JS.
+            </p>
+            <div class="mt-3 text-[10px] font-mono p-2 rounded bg-[var(--card)] border border-[var(--border)] text-blue-400">
+              POST /api/generate<br/>
+              { "data": { "prompt": "..." } }
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] relative">
+            <div class="text-[10px] font-mono text-emerald-500 font-bold mb-1">STEP 2 • ROUTE HANDLER</div>
+            <h4 class="text-sm font-semibold text-[var(--foreground)]">appRoute() Adapter</h4>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1">
+              <code class="text-[11px] px-1 bg-[var(--card)] rounded">appRoute(flow)</code> intercepts NextRequest, runs <code class="text-[11px] px-1 bg-[var(--card)] rounded">contextProvider</code> for auth/headers, parses body with Zod, and initializes a Web <code class="text-[11px] px-1 bg-[var(--card)] rounded">TransformStream</code>.
+            </p>
+            <div class="mt-3 text-[10px] font-mono p-2 rounded bg-[var(--card)] border border-[var(--border)] text-emerald-400">
+              NextResponse(readable, {<br/>
+              &nbsp;&nbsp;headers: 'text/event-stream'<br/>
+              })
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] relative">
+            <div class="text-[10px] font-mono text-purple-500 font-bold mb-1">STEP 3 • SERVER RUNTIME</div>
+            <h4 class="text-sm font-semibold text-[var(--foreground)]">Action Execution Loop</h4>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1">
+              Genkit executes flow inside OpenTelemetry root span. Model generates tokens & executes tools. Chunks are dispatched via <code class="text-[11px] px-1 bg-[var(--card)] rounded">AsyncTaskQueue</code> to guarantee sequential delivery.
+            </p>
+            <div class="mt-3 text-[10px] font-mono p-2 rounded bg-[var(--card)] border border-[var(--border)] text-purple-400">
+              data: {"message": "Hello"}\n\n<br/>
+              data: {"result": {...}}\n\nEND
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] relative">
+            <div class="text-[10px] font-mono text-amber-500 font-bold mb-1">STEP 4 • CLIENT REACT STATE</div>
+            <h4 class="text-sm font-semibold text-[var(--foreground)]">AsyncIterable Render</h4>
+            <p class="text-xs text-[var(--muted-foreground)] mt-1">
+              Client's <code class="text-[11px] px-1 bg-[var(--card)] rounded">for await (const chunk of stream)</code> yields typed chunks in real time, re-rendering React UI with incremental data or structured JSON diffs.
+            </p>
+            <div class="mt-3 text-[10px] font-mono p-2 rounded bg-[var(--card)] border border-[var(--border)] text-amber-400">
+              setRecipe(chunk);<br/>
+              const final = await output;
+            </div>
+          </div>
+        </div>
+
+        <!-- Code comparison & Architecture Highlights -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4 border-t border-[var(--border)]">
+          <div class="space-y-3">
+            <h3 class="text-sm font-semibold text-[var(--foreground)] flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              Why Next.js App Router + Genkit is Optimal
+            </h3>
+            <ul class="text-xs text-[var(--muted-foreground)] space-y-2.5">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span><strong>No CORS overhead:</strong> Frontend and AI backend run under the same origin in dev and production.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span><strong>Zero bundle leakage:</strong> Heavy AI dependencies (Node APIs, SDKs, API keys) remain 100% on the server; clients only get schema types.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span><strong>Durable Reconnection:</strong> The <code class="font-mono text-[11px] px-1 bg-[var(--accent)] rounded">StreamManager</code> and <code class="font-mono text-[11px] px-1 bg-[var(--accent)] rounded">x-genkit-stream-id</code> header allow clients to reconnect to an in-flight stream seamlessly.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-500 font-bold">✓</span>
+                <span><strong>Dual Integration Paths:</strong> Choose between lightweight native <code class="font-mono text-[11px] px-1 bg-[var(--accent)] rounded">@genkit-ai/next/client</code> or rich Vercel AI SDK <code class="font-mono text-[11px] px-1 bg-[var(--accent)] rounded">useChat</code> with <code class="font-mono text-[11px] px-1 bg-[var(--accent)] rounded">GenkitChatTransport</code>.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="space-y-3">
+            <h3 class="text-sm font-semibold text-[var(--foreground)] flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+              Wire Protocol & Server-Sent Events (SSE)
+            </h3>
+            <div class="p-3 rounded-xl bg-[var(--accent)] border border-[var(--border)] code-block text-[11px] space-y-1.5">
+              <div class="text-[var(--muted-foreground)]">// Inbound POST /api/myFlow</div>
+              <div class="text-blue-400">Content-Type: application/json</div>
+              <div class="text-blue-400">Accept: text/event-stream</div>
+              <div class="text-blue-400">x-genkit-stream-id: 8f92-uuid-optional</div>
+              <div class="text-[var(--foreground)] pt-1">{"data": {"prompt": "recipe for soup"}}</div>
+              <div class="border-t border-[var(--border)] my-1 pt-1 text-[var(--muted-foreground)]">// Outbound HTTP 200 chunked stream</div>
+              <div class="text-emerald-400">data: {"message": {"title": "Tomato Basil"}}\n\n</div>
+              <div class="text-emerald-400">data: {"message": {"servings": 4}}\n\n</div>
+              <div class="text-purple-400">data: {"result": {"title": "Tomato Basil", "servings": 4, "steps": [...]}}\n\n</div>
+              <div class="text-rose-400 font-bold">END</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 3: PACKAGE MATRIX -->
+    <div id="tab-modules" class="tab-content hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h2 class="text-base font-bold text-[var(--foreground)]">Genkit Monorepo Modules Directory</h2>
+            <p class="text-xs text-[var(--muted-foreground)]">Breakdown of internal core libraries, plugins, serving adapters, and integrations.</p>
+          </div>
+          <!-- Filter Buttons -->
+          <div class="flex items-center gap-1.5 overflow-x-auto">
+            <button onclick="filterModules('all')" class="mod-filter active px-2.5 py-1 text-xs rounded-md bg-[var(--accent)] font-semibold border border-[var(--border)]">All</button>
+            <button onclick="filterModules('core')" class="mod-filter px-2.5 py-1 text-xs rounded-md hover:bg-[var(--accent)] text-[var(--muted-foreground)] border border-transparent">Core</button>
+            <button onclick="filterModules('serving')" class="mod-filter px-2.5 py-1 text-xs rounded-md hover:bg-[var(--accent)] text-[var(--muted-foreground)] border border-transparent">Serving/Next</button>
+            <button onclick="filterModules('plugins')" class="mod-filter px-2.5 py-1 text-xs rounded-md hover:bg-[var(--accent)] text-[var(--muted-foreground)] border border-transparent">Model Plugins</button>
+            <button onclick="filterModules('rag')" class="mod-filter px-2.5 py-1 text-xs rounded-md hover:bg-[var(--accent)] text-[var(--muted-foreground)] border border-transparent">RAG & Tools</button>
+          </div>
+        </div>
+
+        <!-- Modules Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="modules-container">
+          <!-- Populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 4: AGENTS & SESSIONS -->
+    <div id="tab-agents" class="tab-content hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-6">
+        <div>
+          <h2 class="text-lg font-bold text-[var(--foreground)]">Agent Architecture, Sessions & Interrupts</h2>
+          <p class="text-xs text-[var(--muted-foreground)] mt-1">
+            How Genkit manages conversational turns, memory, JSON-patch state synchronization, and human approvals.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Card 1: Session & State -->
+          <div class="p-5 rounded-xl border border-[var(--border)] bg-[var(--accent)] space-y-3">
+            <div class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-500 flex items-center justify-center font-bold text-sm">1</div>
+            <h3 class="text-sm font-semibold text-[var(--foreground)]">Session Management & Snapshots</h3>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Every turn is bound to a <code class="font-mono text-[11px] px-1 bg-[var(--card)] rounded">Session</code>. State can be server-persisted (<code class="font-mono text-[11px] px-1 bg-[var(--card)] rounded">SessionStore</code>) or client-managed.
+            </p>
+            <div class="text-xs space-y-1.5 pt-2 border-t border-[var(--border)]">
+              <div class="font-semibold text-[var(--foreground)]">Snapshot Immutability:</div>
+              <p class="text-[var(--muted-foreground)]">Turns generate immutable snapshot IDs. Clients receive JSON Patches (<code class="font-mono text-[11px]">diff</code>) reducing payload transfer overhead across long chats.</p>
+            </div>
+          </div>
+
+          <!-- Card 2: Interrupts -->
+          <div class="p-5 rounded-xl border border-[var(--border)] bg-[var(--accent)] space-y-3">
+            <div class="w-8 h-8 rounded-lg bg-purple-500/10 text-purple-500 flex items-center justify-center font-bold text-sm">2</div>
+            <h3 class="text-sm font-semibold text-[var(--foreground)]">Human-in-the-Loop Interrupts</h3>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Tools can pause execution by returning an <code class="font-mono text-[11px] px-1 bg-[var(--card)] rounded">interrupt()</code> request (e.g., asking user approval to transfer funds or delete records).
+            </p>
+            <div class="text-xs space-y-1.5 pt-2 border-t border-[var(--border)]">
+              <div class="font-semibold text-[var(--foreground)]">Resuming Turns:</div>
+              <p class="text-[var(--muted-foreground)]">Client responds to the interrupt via <code class="font-mono text-[11px]">chat.resume()</code>. The agent picks up exactly where it paused without re-running earlier tools.</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Background & Detached -->
+          <div class="p-5 rounded-xl border border-[var(--border)] bg-[var(--accent)] space-y-3">
+            <div class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold text-sm">3</div>
+            <h3 class="text-sm font-semibold text-[var(--foreground)]">Detached Background Workers</h3>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Long-running operations run in background mode with periodic heartbeats (30s interval, 60s timeout).
+            </p>
+            <div class="text-xs space-y-1.5 pt-2 border-t border-[var(--border)]">
+              <div class="font-semibold text-[var(--foreground)]">Cancellation:</div>
+              <p class="text-[var(--muted-foreground)]">Clients can abort running agents via the companion <code class="font-mono text-[11px]">/abort</code> endpoint, preventing zombie LLM executions.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Endpoints Layout -->
+        <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--card)]">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[var(--foreground)] mb-3">Next.js App Router Agent Endpoint Trio</h4>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-mono">
+            <div class="p-3 rounded-lg bg-[var(--accent)] border border-[var(--border)]">
+              <span class="text-emerald-400 font-bold">POST</span> /api/agent/route.ts<br/>
+              <span class="text-[var(--muted-foreground)] text-[11px]">appRoute(myAgent)</span>
+            </div>
+            <div class="p-3 rounded-lg bg-[var(--accent)] border border-[var(--border)]">
+              <span class="text-blue-400 font-bold">POST</span> /api/agent/getSnapshot/route.ts<br/>
+              <span class="text-[var(--muted-foreground)] text-[11px]">appRoute(myAgent.getSnapshotDataAction)</span>
+            </div>
+            <div class="p-3 rounded-lg bg-[var(--accent)] border border-[var(--border)]">
+              <span class="text-rose-400 font-bold">POST</span> /api/agent/abort/route.ts<br/>
+              <span class="text-[var(--muted-foreground)] text-[11px]">appRoute(myAgent.abortAgentAction)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 5: CODE RECIPES -->
+    <div id="tab-code" class="tab-content hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div>
+            <h2 class="text-base font-bold text-[var(--foreground)]">Production Next.js & TypeScript Code Patterns</h2>
+            <p class="text-xs text-[var(--muted-foreground)]">Ready-to-use patterns for Full-Stack App Router implementation.</p>
+          </div>
+          <!-- Code Selector -->
+          <div class="flex items-center gap-1.5 overflow-x-auto">
+            <button onclick="showCode('route')" id="code-btn-route" class="code-btn active px-2.5 py-1 text-xs rounded-md bg-[var(--accent)] font-semibold border border-[var(--border)]">Route Handler</button>
+            <button onclick="showCode('client')" id="code-btn-client" class="code-btn px-2.5 py-1 text-xs rounded-md hover:bg-[var(--accent)] text-[var(--muted-foreground)] border border-transparent">React Client</button>
+            <button onclick="showCode('usechat')" id="code-btn-usechat" class="code-btn px-2.5 py-1 text-xs rounded-md hover:bg-[var(--accent)] text-[var(--muted-foreground)] border border-transparent">Vercel useChat</button>
+            <button onclick="showCode('flow')" id="code-btn-flow" class="code-btn px-2.5 py-1 text-xs rounded-md hover:bg-[var(--accent)] text-[var(--muted-foreground)] border border-transparent">Flow + Tools</button>
+            <button onclick="showCode('mcp')" id="code-btn-mcp" class="code-btn px-2.5 py-1 text-xs rounded-md hover:bg-[var(--accent)] text-[var(--muted-foreground)] border border-transparent">MCP Host</button>
+          </div>
+        </div>
+
+        <div class="relative">
+          <pre class="p-4 rounded-xl bg-[var(--accent)] border border-[var(--border)] code-block text-xs text-[var(--foreground)] overflow-x-auto max-h-[500px]"><code id="code-display">// Loading code snippet...</code></pre>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Tab switching logic
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => {
+        el.classList.remove('bg-[var(--primary)]', 'text-[var(--primary-foreground)]', 'shadow-xs');
+        el.classList.add('border-[var(--border)]', 'text-[var(--muted-foreground)]');
+      });
+
+      const activeContent = document.getElementById('tab-' + tabId);
+      const activeBtn = document.getElementById('tab-btn-' + tabId);
+      if (activeContent) activeContent.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.remove('border-[var(--border)]', 'text-[var(--muted-foreground)]');
+        activeBtn.classList.add('bg-[var(--primary)]', 'text-[var(--primary-foreground)]', 'shadow-xs');
+      }
+    }
+
+    // Layer Inspector Data
+    const layerData = {
+      'layer-client': {
+        title: 'Layer 1: Frontend & Presentation',
+        badge: 'Browser / Edge',
+        desc: 'Responsible for real-time user interfaces, streaming partial JSON or markdown, handling human-in-the-loop prompts, and maintaining client React state.',
+        responsibilities: [
+          'Consumes SSE streams via AsyncIterable with streamFlow()',
+          'Zero-runtime overhead: types imported via "import type"',
+          'Integrates directly with Vercel AI SDK useChat via GenkitChatTransport',
+          'Renders generative surfaces incrementally with @genkit-ai/a2ui'
+        ],
+        packages: ['@genkit-ai/next/client', '@genkit-ai/vercel-ai/client', '@genkit-ai/a2ui/client']
+      },
+      'layer-serving': {
+        title: 'Layer 2: Serving & App Transport',
+        badge: 'Next.js App Router',
+        desc: 'Bridges Genkit Actions into standard Web Fetch Request and Response primitives. Formats SSE data envelopes and extracts request context.',
+        responsibilities: [
+          'appRoute(flow) adapts flows to Next.js App Router POST handlers',
+          'Delivers Server-Sent Events (SSE) chunks with AsyncTaskQueue ordering',
+          'StreamManager enables durable stream reconnection (x-genkit-stream-id)',
+          'contextProvider extracts auth tokens and tenant IDs safely'
+        ],
+        packages: ['@genkit-ai/next', '@genkit-ai/fetch', '@genkit-ai/express', '@genkit-ai/fastify']
+      },
+      'layer-orchestration': {
+        title: 'Layer 3: Agent & Workflow Engine',
+        badge: 'Flows & Agents',
+        desc: 'Orchestrates business workflows, multi-turn conversations, persistence, and state synchronization across client and server.',
+        responsibilities: [
+          'defineFlow: Durable, observable units with Zod input/output schemas',
+          'defineAgent: Multi-turn chat loop, tool-calling coordinator',
+          'SessionStore & SessionSnapshot: Persistence with JSON patch state deltas',
+          'Human-in-the-loop interrupts and background worker heartbeats'
+        ],
+        packages: ['genkit/beta', '@genkit-ai/core', '@genkit-ai/ai/agent', 'session-stores']
+      },
+      'layer-ai': {
+        title: 'Layer 4: AI Capabilities & RAG',
+        badge: '@genkit-ai/ai',
+        desc: 'Provides model-agnostic generation, prompt management, tool registries, embeddings, retrieval-augmented generation, and evaluation.',
+        responsibilities: [
+          'generate() & generateStream(): Standardized LLM interface',
+          'defineTool(): Strongly typed tools with auto-execution in model loop',
+          'Dotprompt (.prompt): Structured Handlebars prompt templates',
+          'RAG subsystem: defineRetriever, defineIndexer, defineEmbedder, defineReranker'
+        ],
+        packages: ['@genkit-ai/ai', 'genkit', 'dotprompt']
+      },
+      'layer-core': {
+        title: 'Layer 5: Core Kernel & Reflection',
+        badge: '@genkit-ai/core',
+        desc: 'The foundational substrate of Genkit: manages action registration, telemetry, async context, and dev reflection.',
+        responsibilities: [
+          'Registry: Thread-safe, centralized dictionary for actions, tools, and plugins',
+          'ReflectionServer: Local REST server for Dev UI introspection',
+          'OpenTelemetry: Built-in spans, tracing, token tracking, latency metrics',
+          'Schema validation: Bidirectional Zod to JSON-Schema transpilation'
+        ],
+        packages: ['@genkit-ai/core', 'genkit-tools', 'genkit-cli']
+      },
+      'layer-plugins': {
+        title: 'Layer 6: Ecosystem & Plugins',
+        badge: 'Integrations',
+        desc: 'Pluggable adapters for model providers, vector stores, cloud services, and Model Context Protocol (MCP) clients/servers.',
+        responsibilities: [
+          'Model plugins: @genkit-ai/google-genai, vertexai, anthropic, ollama, compat-oai',
+          '@genkit-ai/mcp: Connect to any MCP server as client, or export tools as MCP server',
+          'Vector stores: pinecone, chroma, cloud-sql-pg, dev-local-vectorstore',
+          'Observability plugins: @genkit-ai/google-cloud, OpenTelemetry OTLP exporters'
+        ],
+        packages: ['@genkit-ai/google-genai', '@genkit-ai/mcp', '@genkit-ai/anthropic', '@genkit-ai/pinecone']
+      }
+    };
+
+    function selectLayer(layerKey) {
+      const data = layerData[layerKey];
+      if (!data) return;
+
+      document.getElementById('inspector-title').textContent = data.title;
+      document.getElementById('inspector-badge').textContent = data.badge;
+      document.getElementById('inspector-desc').textContent = data.desc;
+
+      const respList = document.getElementById('inspector-responsibilities');
+      respList.innerHTML = data.responsibilities.map(r => `<li>${r}</li>`).join('');
+
+      const pkgList = document.getElementById('inspector-packages');
+      pkgList.innerHTML = data.packages.map(p => `<span class="px-2 py-0.5 rounded bg-[var(--card)] border border-[var(--border)]">${p}</span>`).join('');
+    }
+
+    // Module Catalog Data
+    const modulesData = [
+      { name: 'genkit', type: 'core', desc: 'Main entry point. Bundles Genkit class, ai instance initializer, and beta APIs.', exports: 'genkit, z, Genkit, GenkitAI' },
+      { name: '@genkit-ai/core', type: 'core', desc: 'Kernel engine: Registry, Action definition, Flow runtime, Reflection server, and Tracing.', exports: 'defineAction, defineFlow, Registry, ReflectionServer' },
+      { name: '@genkit-ai/ai', type: 'core', desc: 'AI primitives: generate, prompts, tools, RAG, agents, session stores, and formats.', exports: 'generate, defineTool, defineAgent, defineRetriever' },
+      { name: '@genkit-ai/next', type: 'serving', desc: 'Next.js App Router adapter: appRoute() for route handlers, and client streaming helpers.', exports: 'appRoute, runFlow, streamFlow' },
+      { name: '@genkit-ai/vercel-ai', type: 'serving', desc: 'Vercel AI SDK integration: GenkitChatTransport connects Genkit agents to useChat().', exports: 'GenkitChatTransport, GenkitModelAdapter' },
+      { name: '@genkit-ai/mcp', type: 'rag', desc: 'Model Context Protocol integration. Consume MCP tools as host or expose Genkit tools as MCP server.', exports: 'createMcpHost, createMcpClient, createMcpServer' },
+      { name: '@genkit-ai/google-genai', type: 'plugins', desc: 'Official Google Gemini provider plugin using @google/genai SDK (Gemini 2.5/2.0/1.5).', exports: 'googleAI, gemini25Flash, gemini20Pro' },
+      { name: '@genkit-ai/vertexai', type: 'plugins', desc: 'Google Cloud Vertex AI enterprise plugin with IAM auth and VPC controls.', exports: 'vertexAI' },
+      { name: '@genkit-ai/anthropic', type: 'plugins', desc: 'Anthropic Claude model plugin (Claude 3.7 Sonnet, Opus, Haiku).', exports: 'anthropic' },
+      { name: '@genkit-ai/compat-oai', type: 'plugins', desc: 'OpenAI-compatible model provider for OpenAI, Groq, Mistral, and local LLMs.', exports: 'openai' },
+      { name: '@genkit-ai/a2ui', type: 'serving', desc: 'Agent-to-UI streaming UI protocol middleware for streaming interactive widgets.', exports: 'a2ui, a2uiEnvelopesFromParts' },
+      { name: '@genkit-ai/pinecone', type: 'rag', desc: 'Vector database plugin for enterprise RAG indexing and similarity search.', exports: 'pinecone' }
+    ];
+
+    function renderModules(filter = 'all') {
+      const container = document.getElementById('modules-container');
+      const filtered = filter === 'all' ? modulesData : modulesData.filter(m => m.type === filter);
+      container.innerHTML = filtered.map(m => `
+        <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] hover:border-blue-500/40 transition-all flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-1.5">
+              <span class="font-mono text-xs font-bold text-[var(--foreground)]">${m.name}</span>
+              <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-[var(--card)] border border-[var(--border)] text-[var(--muted-foreground)]">${m.type}</span>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">${m.desc}</p>
+          </div>
+          <div class="mt-3 pt-2.5 border-t border-[var(--border)] text-[10px] font-mono text-[var(--muted-foreground)] truncate">
+            Exports: <span class="text-[var(--foreground)]">${m.exports}</span>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterModules(type) {
+      document.querySelectorAll('.mod-filter').forEach(btn => {
+        btn.classList.remove('bg-[var(--accent)]', 'font-semibold', 'text-[var(--foreground)]');
+        btn.classList.add('text-[var(--muted-foreground)]');
+      });
+      event.target.classList.add('bg-[var(--accent)]', 'font-semibold', 'text-[var(--foreground)]');
+      event.target.classList.remove('text-[var(--muted-foreground)]');
+      renderModules(type);
+    }
+
+    // Code snippets
+    const codeSnippets = {
+      route: `// src/app/api/recipe/route.ts
+// Next.js App Router Route Handler powered by Genkit
+import { appRoute } from '@genkit-ai/next';
+import { recipeFlow } from '@/genkit/recipeFlow';
+
+// appRoute handles POST requests, SSE stream negotiation,
+// Zod payload validation, and context extraction automatically.
+export const POST = appRoute(recipeFlow, {
+  // Optional: Extract auth token or request context
+  contextProvider: async (req) => {
+    return {
+      auth: req.headers['authorization'] ? { authenticated: true } : null,
+      userId: req.headers['x-user-id'] ?? 'guest',
+    };
+  },
+});`,
+
+      client: `// src/app/page.tsx
+// Client Component consuming the Genkit stream
+'use client';
+
+import { useState } from 'react';
+import { streamFlow } from '@genkit-ai/next/client';
+import type { recipeFlow, PartialRecipe } from '@/genkit/recipeFlow';
+
+export default function RecipePage() {
+  const [recipe, setRecipe] = useState<PartialRecipe | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  async function generate(craving: string) {
+    setLoading(true);
+    setRecipe(null);
+    try {
+      // Fully typed: input, output, and stream chunk are inferred
+      const result = streamFlow<typeof recipeFlow>({
+        url: '/api/recipe',
+        input: { craving },
+      });
+
+      // Stream incremental updates (partial JSON) as they arrive
+      for await (const chunk of result.stream) {
+        setRecipe(chunk);
+      }
+
+      // Await the finalized validated output
+      const finalRecipe = await result.output;
+      console.log('Complete:', finalRecipe);
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  return (
+    <div>
+      <button onClick={() => generate('Thai Green Curry')}>Generate</button>
+      {recipe && <h2>{recipe.title}</h2>}
+    </div>
+  );
+}`,
+
+      usechat: `// src/app/chat/page.tsx
+// Connecting Genkit Agents to Vercel AI SDK (useChat)
+'use client';
+
+import { useChat } from '@ai-sdk/react';
+import { GenkitChatTransport } from '@genkit-ai/vercel-ai/client';
+import { useMemo } from 'react';
+
+export default function AssistantChat() {
+  // Transport connects to Next.js route mounted with appRoute(agent)
+  const transport = useMemo(
+    () => new GenkitChatTransport({ url: '/api/assistant' }),
+    []
+  );
+  const sessionId = useMemo(() => crypto.randomUUID(), []);
+
+  const { messages, input, handleInputChange, handleSubmit, status } =
+    useChat({
+      id: sessionId,
+      transport,
+    });
+
+  return (
+    <div class="chat-container">
+      {messages.map((m) => (
+        <div key={m.id} class={m.role}>
+          {m.parts.filter(p => p.type === 'text').map(p => p.text).join('')}
+        </div>
+      ))}
+      <form onSubmit={handleSubmit}>
+        <input value={input} onChange={handleInputChange} />
+        <button type="submit" disabled={status !== 'ready'}>Send</button>
+      </form>
+    </div>
+  );
+}`,
+
+      flow: `// src/genkit/recipeFlow.ts
+// Flow with Tool Calling and Structured Streaming
+import { genkit, z } from 'genkit';
+import { googleAI } from '@genkit-ai/google-genai';
+
+const ai = genkit({
+  plugins: [googleAI()],
+  model: 'googleai/gemini-2.5-flash',
+});
+
+// Zod schema for structured output
+export const RecipeSchema = z.object({
+  title: z.string(),
+  servings: z.number(),
+  ingredients: z.array(z.string()),
+  steps: z.array(z.string()),
+});
+
+export type PartialRecipe = z.infer<typeof RecipeSchema.partial()>;
+
+// Tool the model can invoke autonomously
+const groceryPriceLookup = ai.defineTool(
+  {
+    name: 'groceryPriceLookup',
+    description: 'Look up real-time grocery sale prices',
+    inputSchema: z.object({ item: z.string() }),
+    outputSchema: z.object({ onSale: z.boolean(), price: z.number() }),
+  },
+  async ({ item }) => ({ onSale: true, price: 3.49 })
+);
+
+export const recipeFlow = ai.defineFlow(
+  {
+    name: 'recipeFlow',
+    inputSchema: z.object({ craving: z.string() }),
+    outputSchema: RecipeSchema,
+    streamSchema: RecipeSchema.partial(),
+  },
+  async ({ craving }, { sendChunk }) => {
+    const { response, stream } = ai.generateStream({
+      prompt: \`Draft a recipe for: \${craving}\`,
+      tools: [groceryPriceLookup],
+      output: { schema: RecipeSchema },
+    });
+
+    for await (const chunk of stream) {
+      if (chunk.output) {
+        sendChunk(chunk.output);
+      }
+    }
+
+    const { output } = await response;
+    return output!;
+  }
+);`,
+
+      mcp: `// src/genkit/mcpHost.ts
+// Model Context Protocol (MCP) Host in Genkit
+import { genkit } from 'genkit';
+import { googleAI } from '@genkit-ai/google-genai';
+import { createMcpHost } from '@genkit-ai/mcp';
+
+const mcpHost = createMcpHost({
+  name: 'developerMcpHost',
+  mcpServers: {
+    filesystem: {
+      command: 'npx',
+      args: ['-y', '@modelcontextprotocol/server-filesystem', process.cwd()],
+    },
+    github: {
+      url: 'https://mcp.company.internal/github',
+    },
+  },
+});
+
+const ai = genkit({ plugins: [googleAI()] });
+
+export async function askCodebase(prompt: string) {
+  // Dynamically retrieves active tools from external MCP servers
+  const tools = await mcpHost.getActiveTools(ai);
+
+  const { text } = await ai.generate({
+    model: 'googleai/gemini-2.5-pro',
+    prompt,
+    tools,
+  });
+
+  return text;
+}`
+    };
+
+    function showCode(key) {
+      document.querySelectorAll('.code-btn').forEach(btn => {
+        btn.classList.remove('bg-[var(--accent)]', 'font-semibold', 'text-[var(--foreground)]');
+        btn.classList.add('text-[var(--muted-foreground)]');
+      });
+      document.getElementById('code-btn-' + key).classList.add('bg-[var(--accent)]', 'font-semibold', 'text-[var(--foreground)]');
+      document.getElementById('code-btn-' + key).classList.remove('text-[var(--muted-foreground)]');
+      document.getElementById('code-display').textContent = codeSnippets[key];
+    }
+
+    // Initial load
+    renderModules();
+    showCode('route');
+    selectLayer('layer-serving');
+  </script>
+</body>
+</html>

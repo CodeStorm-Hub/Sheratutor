@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheraTutor + Genkit Full-Stack Integration Explorer</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--muted-foreground); }
+    .code-block { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+  </style>
+</head>
+<body class="bg-transparent text-[var(--foreground)] antialiased p-4 sm:p-6 select-none">
+  <div class="max-w-7xl mx-auto space-y-6">
+
+    <!-- Header Section -->
+    <header class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-1.5 flex-wrap">
+          <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">SheraTutor B2C (SSC & HSC)</span>
+          <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-blue-500/10 text-blue-500 border border-blue-500/20">Genkit v1.41.0 Production Stack</span>
+          <span class="px-2.5 py-0.5 text-xs font-semibold rounded-full bg-purple-500/10 text-purple-500 border border-purple-500/20">Next.js 16 + React 19 + Supabase</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--foreground)] flex items-center gap-3">
+          SheraTutor + Genkit Architecture & Integration
+        </h1>
+        <p class="text-sm text-[var(--muted-foreground)] mt-1">
+          Full-stack integration plan: Modernizing NCTB Physics RAG, Socratic AI Tutor, handwritten grading, and durable sessions.
+        </p>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-1 md:pb-0">
+        <button onclick="switchTab('blueprint')" id="tab-btn-blueprint" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-transparent bg-[var(--primary)] text-[var(--primary-foreground)] shadow-xs">
+          System Blueprint
+        </button>
+        <button onclick="switchTab('modules')" id="tab-btn-modules" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-[var(--border)] hover:bg-[var(--accent)] text-[var(--muted-foreground)]">
+          Module Mapping
+        </button>
+        <button onclick="switchTab('tutor')" id="tab-btn-tutor" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-[var(--border)] hover:bg-[var(--accent)] text-[var(--muted-foreground)]">
+          Tutor Modernization
+        </button>
+        <button onclick="switchTab('tools')" id="tab-btn-tools" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-[var(--border)] hover:bg-[var(--accent)] text-[var(--muted-foreground)]">
+          Agent Tools & A2UI
+        </button>
+        <button onclick="switchTab('roadmap')" id="tab-btn-roadmap" class="tab-btn px-3.5 py-2 text-xs font-semibold rounded-lg transition-all border border-[var(--border)] hover:bg-[var(--accent)] text-[var(--muted-foreground)]">
+          Rollout Roadmap
+        </button>
+      </div>
+    </header>
+
+    <!-- TAB 1: SYSTEM BLUEPRINT -->
+    <div id="tab-blueprint" class="tab-content space-y-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+        
+        <!-- Left: Interactive Layers Diagram -->
+        <div class="lg:col-span-8 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-4">
+          <div class="flex items-center justify-between">
+            <h2 class="text-base font-semibold text-[var(--foreground)]">SheraTutor 5-Tier Genkit Integrated Architecture</h2>
+            <span class="text-xs text-[var(--muted-foreground)]">Click any tier to inspect integration targets</span>
+          </div>
+
+          <div class="space-y-3">
+            <!-- Tier 1: Presentation -->
+            <div onclick="selectTier('tier-ui')" class="tier-card cursor-pointer p-4 rounded-xl border border-blue-500/30 bg-blue-500/5 hover:bg-blue-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-blue-500">Tier 1: Next.js 16 UI & Client SDK</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-blue-500/10 text-blue-400">React 19 / Tailwind v4</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2">Student Dashboard, Tutor Panel, KaTeX formula renderer, Khata transcription viewer.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">GenkitChatTransport</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">streamFlow() Typed</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">RenderMathText (KaTeX)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">A2UI Formula Surfaces</div>
+              </div>
+            </div>
+
+            <!-- Tier 2: Next.js App Router Serving -->
+            <div onclick="selectTier('tier-serving')" class="tier-card cursor-pointer p-4 rounded-xl border border-emerald-500/30 bg-emerald-500/5 hover:bg-emerald-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-emerald-500">Tier 2: Serving Adapters (@genkit-ai/next)</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400">Next.js App Router</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2">Eliminates 400+ lines of custom SSE string-splitting with native appRoute handlers.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">/api/tutor-chat (appRoute)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">contextProvider (Auth)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">StreamManager (Durable)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">/api/submissions (Queue)</div>
+              </div>
+            </div>
+
+            <!-- Tier 3: Agentic Workflows & Socratic Orchestration -->
+            <div onclick="selectTier('tier-agents')" class="tier-card cursor-pointer p-4 rounded-xl border border-purple-500/30 bg-purple-500/5 hover:bg-purple-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-purple-500">Tier 3: Socratic Agents & Flow Orchestration</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-400">genkit/beta</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2">Stateful AI tutoring, JSON-Patch session synchronization, and autonomous pedagogical tools.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">tutorAgent (defineAgent)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">SupabaseSessionStore</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">Pedagogical Tools</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">Quiz Generation Interrupt</div>
+              </div>
+            </div>
+
+            <!-- Tier 4: AI Workflows & RAG Pipeline -->
+            <div onclick="selectTier('tier-flows')" class="tier-card cursor-pointer p-4 rounded-xl border border-amber-500/30 bg-amber-500/5 hover:bg-amber-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-amber-500">Tier 4: Core Educational AI Flows</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-amber-500/10 text-amber-400">@genkit-ai/ai</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2">The five specialized academic flows powering SheraTutor's competitive moat.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">transcribePageFlow</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">retrieveGroundingFlow</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">evaluateRubricFlow</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">generateQuestionPaper</div>
+              </div>
+            </div>
+
+            <!-- Tier 5: Data & Infrastructure -->
+            <div onclick="selectTier('tier-data')" class="tier-card cursor-pointer p-4 rounded-xl border border-cyan-500/30 bg-cyan-500/5 hover:bg-cyan-500/10 transition-all">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-cyan-500"></span>
+                  <span class="text-xs font-bold uppercase tracking-wider text-cyan-500">Tier 5: Supabase DB & Model Adapters</span>
+                </div>
+                <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400">Supabase + NVIDIA NIM</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 mb-2">HNSW vector index (1024-dim), full-text search, pgmq queue, and multimodal LLMs.</p>
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs font-mono">
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">match_curriculum RPC</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">NVIDIA NIM (Llama 3.2)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">Nemotron Embed (1024)</div>
+                <div class="p-2 rounded-lg bg-[var(--card)] border border-[var(--border)] text-center text-[11px]">pgmq Grading Queue</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Tier Inspector Panel -->
+        <div class="lg:col-span-4 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm flex flex-col justify-between" id="tier-inspector">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between border-b border-[var(--border)] pb-3">
+              <h3 id="tier-title" class="text-sm font-bold text-[var(--foreground)] uppercase tracking-wider">Tier Inspection</h3>
+              <span id="tier-badge" class="text-[11px] font-mono px-2 py-0.5 rounded bg-purple-500/10 text-purple-500">Orchestration</span>
+            </div>
+            <p id="tier-desc" class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Click any tier to explore how Genkit primitives transform SheraTutor's codebase.
+            </p>
+            <div class="space-y-3 text-xs">
+              <div class="p-3 rounded-xl bg-[var(--accent)] border border-[var(--border)]">
+                <div class="font-semibold mb-1 text-[var(--foreground)]">SheraTutor Pain Point Solved</div>
+                <p id="tier-pain" class="text-[var(--muted-foreground)] leading-relaxed">
+                  Currently, tutor chat manually handles database message writes, session resolution, and raw OpenAI SSE connections.
+                </p>
+              </div>
+              <div class="p-3 rounded-xl bg-[var(--accent)] border border-[var(--border)]">
+                <div class="font-semibold mb-1 text-[var(--foreground)]">Genkit Integrated Solution</div>
+                <p id="tier-solution" class="text-[var(--muted-foreground)] leading-relaxed">
+                  Migrate to defineAgent with SupabaseSessionStore and appRoute, enabling Socratic tools, JSON patch syncing, and auto-abort.
+                </p>
+              </div>
+              <div class="p-3 rounded-xl bg-[var(--accent)] border border-[var(--border)]">
+                <div class="font-semibold mb-1 text-[var(--foreground)]">Key Target Files</div>
+                <div id="tier-files" class="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                  <span class="px-2 py-0.5 rounded bg-[var(--card)] border border-[var(--border)]">src/ai/flows/tutor-chat.ts</span>
+                  <span class="px-2 py-0.5 rounded bg-[var(--card)] border border-[var(--border)]">src/app/api/tutor-chat/route.ts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4 border-t border-[var(--border)] text-[11px] text-[var(--muted-foreground)]">
+            Status: SheraTutor already has Genkit 1.41.0 installed in web/package.json.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 2: MODULE MAPPING MATRIX -->
+    <div id="tab-modules" class="tab-content hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-4">
+        <div>
+          <h2 class="text-base font-bold text-[var(--foreground)]">Genkit Modules ➔ SheraTutor Project Integration Matrix</h2>
+          <p class="text-xs text-[var(--muted-foreground)]">Direct mapping between Genkit monorepo packages and SheraTutor features.</p>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs border-collapse">
+            <thead>
+              <tr class="border-b border-[var(--border)] bg-[var(--accent)] text-[var(--foreground)]">
+                <th class="p-3 font-semibold">Genkit Package</th>
+                <th class="p-3 font-semibold">SheraTutor Target File</th>
+                <th class="p-3 font-semibold">Current State</th>
+                <th class="p-3 font-semibold">Integrated Enhancement</th>
+                <th class="p-3 font-semibold">Impact</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[var(--border)] text-[var(--muted-foreground)]">
+              <tr class="hover:bg-[var(--accent)]/50 transition-colors">
+                <td class="p-3 font-mono font-bold text-emerald-500">@genkit-ai/next</td>
+                <td class="p-3 font-mono text-[11px]">src/app/api/tutor-chat/route.ts</td>
+                <td class="p-3">460-line custom POST with manual SSE stream & OpenAI client</td>
+                <td class="p-3 font-medium text-[var(--foreground)]">Wrap flow with <code class="font-mono text-[11px]">appRoute(tutorChatAgent)</code> + contextProvider</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-500 font-semibold">Deletes 350+ lines</span></td>
+              </tr>
+              <tr class="hover:bg-[var(--accent)]/50 transition-colors">
+                <td class="p-3 font-mono font-bold text-blue-500">@genkit-ai/vercel-ai</td>
+                <td class="p-3 font-mono text-[11px]">src/components/tutor-page-client.tsx</td>
+                <td class="p-3">859-line client with manual getReader() & TextDecoder loops</td>
+                <td class="p-3 font-medium text-[var(--foreground)]">Connect <code class="font-mono text-[11px]">useChat</code> via <code class="font-mono text-[11px]">GenkitChatTransport</code></td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-blue-500/10 text-blue-500 font-semibold">Robust UX, auto-retry</span></td>
+              </tr>
+              <tr class="hover:bg-[var(--accent)]/50 transition-colors">
+                <td class="p-3 font-mono font-bold text-purple-500">genkit/beta (Agents)</td>
+                <td class="p-3 font-mono text-[11px]">src/ai/flows/tutor-chat.ts</td>
+                <td class="p-3">Single-turn flow with DB history stitched into prompt string</td>
+                <td class="p-3 font-medium text-[var(--foreground)]">Implement <code class="font-mono text-[11px]">defineAgent</code> + <code class="font-mono text-[11px]">SupabaseSessionStore</code></td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-purple-500/10 text-purple-500 font-semibold">JSON-Patch deltas</span></td>
+              </tr>
+              <tr class="hover:bg-[var(--accent)]/50 transition-colors">
+                <td class="p-3 font-mono font-bold text-amber-500">@genkit-ai/ai (Tools)</td>
+                <td class="p-3 font-mono text-[11px]">src/ai/tools/tutor-tools.ts</td>
+                <td class="p-3">No tools registered; LLM cannot calculate or search dynamically</td>
+                <td class="p-3 font-medium text-[var(--foreground)]">Register <code class="font-mono text-[11px]">retrieveCurriculumTool</code> & <code class="font-mono text-[11px]">mathSolverTool</code></td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-amber-500/10 text-amber-500 font-semibold">0% formula hallucinations</span></td>
+              </tr>
+              <tr class="hover:bg-[var(--accent)]/50 transition-colors">
+                <td class="p-3 font-mono font-bold text-cyan-500">@genkit-ai/mcp</td>
+                <td class="p-3 font-mono text-[11px]">src/ai/mcp/server.ts</td>
+                <td class="p-3">Curriculum data locked inside internal Supabase tables</td>
+                <td class="p-3 font-medium text-[var(--foreground)]">Expose SheraTutor NCTB knowledge as an MCP server</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-500 font-semibold">Integrate Cursor/Claude</span></td>
+              </tr>
+              <tr class="hover:bg-[var(--accent)]/50 transition-colors">
+                <td class="p-3 font-mono font-bold text-rose-500">@genkit-ai/a2ui</td>
+                <td class="p-3 font-mono text-[11px]">src/components/render-math-text.tsx</td>
+                <td class="p-3">Renders markdown and LaTeX; cannot render interactive widgets</td>
+                <td class="p-3 font-medium text-[var(--foreground)]">Stream interactive formula cards & rubric deduction breakdown</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-rose-500/10 text-rose-500 font-semibold">Interactive UI surfaces</span></td>
+              </tr>
+              <tr class="hover:bg-[var(--accent)]/50 transition-colors">
+                <td class="p-3 font-mono font-bold text-emerald-500">@genkit-ai/ai/evaluator</td>
+                <td class="p-3 font-mono text-[11px]">scripts/eval-golden-set.ts</td>
+                <td class="p-3">Custom evaluation script with basic string comparison</td>
+                <td class="p-3 font-medium text-[var(--foreground)]">Native <code class="font-mono text-[11px]">defineEvaluator</code> for rubric adherence & hallucinations</td>
+                <td class="p-3"><span class="px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-500 font-semibold">Automated Benchmarking</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 3: TUTOR MODERNIZATION -->
+    <div id="tab-tutor" class="tab-content hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-4">
+        <div>
+          <h2 class="text-base font-bold text-[var(--foreground)]">Tutor Chat & Route Handler Modernization (Before vs After)</h2>
+          <p class="text-xs text-[var(--muted-foreground)]">See how adopting @genkit-ai/next dramatically simplifies server code while boosting reliability.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- BEFORE -->
+          <div class="p-4 rounded-xl border border-rose-500/30 bg-rose-500/5 space-y-2">
+            <div class="flex items-center justify-between text-xs font-semibold text-rose-500">
+              <span>CURRENT: 464 Lines in src/app/api/tutor-chat/route.ts</span>
+              <span class="font-mono text-[10px] px-2 py-0.5 rounded bg-rose-500/10">Fragile & Redundant</span>
+            </div>
+            <pre class="p-3 rounded-lg bg-[var(--card)] border border-[var(--border)] code-block text-[11px] text-[var(--foreground)] overflow-x-auto max-h-[360px]"><code>// MANUAL SSE STREAM & DIRECT OPENAI CALL
+export async function POST(request: Request) {
+  // 1. Manual user auth & student profile lookup
+  // 2. Manual daily quota count query
+  // 3. Manual session create or fetch logic (80+ lines)
+  // 4. Manual database prior message select query
+  // 5. Manual safety check & audit log insertion
+  // 6. Manual SSE stream:
+  const streamResponse = new ReadableStream({
+    async start(controller) {
+      const client = new OpenAI({ ... });
+      const stream = await client.chat.completions.create({
+        model: "meta/llama-3.2-11b-vision-instruct",
+        messages: [{ role: "user", content: prompt }],
+        stream: true,
+      });
+      for await (const chunk of stream) {
+        controller.enqueue(
+          encoder.encode(`data: ${JSON.stringify({
+            type: "chunk",
+            text: chunk.choices[0]?.delta?.content
+          })}\n\n`)
+        );
+      }
+      // 7. Manual message insert into Supabase
+    }
+  });
+  return new Response(streamResponse, { ... });
+}</code></pre>
+          </div>
+
+          <!-- AFTER -->
+          <div class="p-4 rounded-xl border border-emerald-500/30 bg-emerald-500/5 space-y-2">
+            <div class="flex items-center justify-between text-xs font-semibold text-emerald-500">
+              <span>MODERNIZED: ~35 Lines with @genkit-ai/next</span>
+              <span class="font-mono text-[10px] px-2 py-0.5 rounded bg-emerald-500/10">Clean & Robust</span>
+            </div>
+            <pre class="p-3 rounded-lg bg-[var(--card)] border border-[var(--border)] code-block text-[11px] text-[var(--foreground)] overflow-x-auto max-h-[360px]"><code>// NATIVE GENKIT APP ROUTE HANDLER
+import { appRoute } from "@genkit-ai/next";
+import { tutorAgent } from "@/ai/agents/tutor-agent";
+import { createClient } from "@/lib/supabase/server";
+
+export const POST = appRoute(tutorAgent, {
+  // Safe authentication & student profile extraction
+  contextProvider: async (req) => {
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) throw new Error("Unauthorized");
+
+    const { data: profile } = await supabase
+      .from("student_profiles")
+      .select("id")
+      .eq("user_id", user.id)
+      .single();
+
+    return {
+      userId: user.id,
+      studentId: profile?.id,
+    };
+  },
+});
+
+// GET /api/tutor-chat/getSnapshot
+// Allows client to resume chat from any previous turn or snapshot
+export const GET = appRoute(tutorAgent.getSnapshotDataAction);</code></pre>
+          </div>
+        </div>
+
+        <!-- Key Architectural Gains -->
+        <div class="p-4 rounded-xl bg-[var(--accent)] border border-[var(--border)] space-y-2">
+          <div class="text-xs font-bold uppercase tracking-wider text-[var(--foreground)]">Key Architectural Gains:</div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs text-[var(--muted-foreground)]">
+            <div>
+              <strong class="text-[var(--foreground)]">Durable Streaming:</strong> Built-in <code class="font-mono text-[11px]">x-genkit-stream-id</code> handles unstable student mobile data in Bangladesh without token loss.
+            </div>
+            <div>
+              <strong class="text-[var(--foreground)]">Session Abstraction:</strong> <code class="font-mono text-[11px]">SupabaseSessionStore</code> manages message ordering, timestamps, and turn trees automatically.
+            </div>
+            <div>
+              <strong class="text-[var(--foreground)]">OpenTelemetry Traces:</strong> Every turn records token count, latency, and tool invocations viewable in the Genkit Dev UI.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 4: AGENT TOOLS & A2UI -->
+    <div id="tab-tools" class="tab-content hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-6">
+        <div>
+          <h2 class="text-base font-bold text-[var(--foreground)]">Socratic Pedagogical Tools & Generative UI (A2UI)</h2>
+          <p class="text-xs text-[var(--muted-foreground)]">Empower the AI Tutor with dynamic textbook search, mathematical calculation, and interactive widgets.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <!-- Tool 1 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] space-y-2.5">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <h3 class="text-xs font-bold text-[var(--foreground)] uppercase tracking-wider">Tool 1: Textbook Search</h3>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              When a student asks an unexpected physics question, the agent autonomously invokes the RAG pipeline to pull NCTB definitions.
+            </p>
+            <div class="p-2.5 rounded-lg bg-[var(--card)] border border-[var(--border)] code-block text-[10px] text-emerald-400">
+              searchTextbookCurriculum({<br/>
+              &nbsp;&nbsp;query: "গতিশক্তি ও ভরবেগ সম্পর্ক",<br/>
+              &nbsp;&nbsp;chapterId: "ch-04"<br/>
+              })
+            </div>
+          </div>
+
+          <!-- Tool 2 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] space-y-2.5">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-blue-500"></span>
+              <h3 class="text-xs font-bold text-[var(--foreground)] uppercase tracking-wider">Tool 2: Math & Formula Solver</h3>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              Eliminates LLM arithmetic errors. Evaluates kinematic equations ($v^2 = u^2 + 2as$) with exact numerical precision.
+            </p>
+            <div class="p-2.5 rounded-lg bg-[var(--card)] border border-[var(--border)] code-block text-[10px] text-blue-400">
+              verifyPhysicsCalculation({<br/>
+              &nbsp;&nbsp;formula: "v^2 = u^2 + 2*a*s",<br/>
+              &nbsp;&nbsp;variables: { u: 0, a: 9.8, s: 20 }<br/>
+              }) ➔ 19.8 m/s
+            </div>
+          </div>
+
+          <!-- Tool 3 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] space-y-2.5">
+            <div class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-purple-500"></span>
+              <h3 class="text-xs font-bold text-[var(--foreground)] uppercase tracking-wider">Tool 3: Socratic Interrupts</h3>
+            </div>
+            <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+              When a student struggles with a concept, the tutor suggests generating a tailored 3-question mini-quiz and waits for confirmation.
+            </p>
+            <div class="p-2.5 rounded-lg bg-[var(--card)] border border-[var(--border)] code-block text-[10px] text-purple-400">
+              return interrupt({<br/>
+              &nbsp;&nbsp;prompt: "Generate a 3-question quiz on Work & Energy?",<br/>
+              &nbsp;&nbsp;action: "confirm_practice_quiz"<br/>
+              })
+            </div>
+          </div>
+        </div>
+
+        <!-- A2UI Interactive Surface Preview -->
+        <div class="p-5 rounded-xl border border-rose-500/30 bg-rose-500/5 space-y-3">
+          <div class="flex items-center justify-between">
+            <h4 class="text-xs font-bold uppercase tracking-wider text-rose-500 flex items-center gap-2">
+              <span>Streaming Generative UI (@genkit-ai/a2ui) in Socratic Tutoring</span>
+            </h4>
+            <span class="text-[10px] font-mono px-2 py-0.5 rounded bg-rose-500/10 text-rose-400">Experimental Edge</span>
+          </div>
+          <p class="text-xs text-[var(--muted-foreground)] leading-relaxed">
+            Instead of dumping long text walls, the tutor streams an interactive <strong>Step-by-Step Formula Card</strong> directly into the student's chat window:
+          </p>
+
+          <!-- Mock Interactive Card -->
+          <div class="max-w-md mx-auto p-4 rounded-xl bg-[var(--card)] border border-[var(--border)] shadow-xs space-y-3">
+            <div class="flex items-center justify-between border-b border-[var(--border)] pb-2">
+              <span class="text-xs font-bold text-emerald-500">গতিশক্তির সূত্র ও বিশ্লেষণ</span>
+              <span class="text-[10px] font-mono px-1.5 py-0.5 rounded bg-[var(--accent)] text-[var(--muted-foreground)]">NCTB Ch-04</span>
+            </div>
+            <div class="space-y-1.5 text-xs">
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>প্রদত্ত মান:</span>
+                <span class="font-mono text-[var(--foreground)]">$m = 500\text{ g} = 0.5\text{ kg}$, $v = 10\text{ ms}^{-1}$</span>
+              </div>
+              <div class="flex justify-between text-[var(--muted-foreground)]">
+                <span>প্রযোজ্য সূত্র:</span>
+                <span class="font-mono text-[var(--foreground)]">$E_k = \frac{1}{2}mv^2$</span>
+              </div>
+              <div class="flex justify-between font-semibold text-[var(--foreground)] pt-1 border-t border-[var(--border)]">
+                <span>ফলাফল:</span>
+                <span class="font-mono text-emerald-500">$E_k = 25\text{ Joules}$</span>
+              </div>
+            </div>
+            <div class="flex gap-2 pt-1">
+              <button class="flex-1 py-1 text-[11px] font-semibold rounded-lg bg-[var(--accent)] hover:bg-[var(--border)] text-[var(--foreground)] transition-colors">অন্য মান দিয়ে চেষ্টা করো</button>
+              <button class="flex-1 py-1 text-[11px] font-semibold rounded-lg bg-emerald-500 text-white shadow-xs">সংশ্লিষ্ট প্রশ্ন দেখো</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- TAB 5: ROLLOUT ROADMAP -->
+    <div id="tab-roadmap" class="tab-content hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm space-y-6">
+        <div>
+          <h2 class="text-base font-bold text-[var(--foreground)]">SheraTutor Genkit Modernization: 4-Phase Implementation Plan</h2>
+          <p class="text-xs text-[var(--muted-foreground)]">A non-breaking, incremental migration path preserving all current features.</p>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Phase 1 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold text-xs">P1</span>
+                <h3 class="text-sm font-semibold text-[var(--foreground)]">Tutor Chat & Route Handler Modernization</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)]">
+                Refactor <code class="font-mono text-[11px]">src/app/api/tutor-chat/route.ts</code> to use <code class="font-mono text-[11px]">appRoute</code>. Replace manual client decoding in <code class="font-mono text-[11px]">tutor-page-client.tsx</code> with typed <code class="font-mono text-[11px]">streamFlow</code>.
+              </p>
+            </div>
+            <div class="text-xs font-mono px-3 py-1.5 rounded-lg bg-[var(--card)] border border-[var(--border)] shrink-0 text-emerald-500 font-semibold">
+              Immediate ROI • 3-4 Days
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center font-bold text-xs">P2</span>
+                <h3 class="text-sm font-semibold text-[var(--foreground)]">SupabaseSessionStore & Socratic Agent</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)]">
+                Implement Genkit's <code class="font-mono text-[11px]">SessionStore</code> interface on top of <code class="font-mono text-[11px]">tutor_chat_sessions</code>. Equip the agent with <code class="font-mono text-[11px]">searchTextbookCurriculum</code> and <code class="font-mono text-[11px]">verifyPhysicsCalculation</code> tools.
+              </p>
+            </div>
+            <div class="text-xs font-mono px-3 py-1.5 rounded-lg bg-[var(--card)] border border-[var(--border)] shrink-0 text-blue-500 font-semibold">
+              High Impact • 4-5 Days
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-purple-500/10 text-purple-500 flex items-center justify-center font-bold text-xs">P3</span>
+                <h3 class="text-sm font-semibold text-[var(--foreground)]">Vercel AI SDK (useChat) & Interrupts</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)]">
+                Adopt <code class="font-mono text-[11px]">@genkit-ai/vercel-ai</code> <code class="font-mono text-[11px]">GenkitChatTransport</code>. Add human-in-the-loop confirmation interrupts for test generation and mistake remediation.
+              </p>
+            </div>
+            <div class="text-xs font-mono px-3 py-1.5 rounded-lg bg-[var(--card)] border border-[var(--border)] shrink-0 text-purple-500 font-semibold">
+              UX Polish • 3-4 Days
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--accent)] flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="space-y-1">
+              <div class="flex items-center gap-2">
+                <span class="w-6 h-6 rounded-full bg-amber-500/10 text-amber-500 flex items-center justify-center font-bold text-xs">P4</span>
+                <h3 class="text-sm font-semibold text-[var(--foreground)]">Genkit MCP Server & Automated Evaluators</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)]">
+                Expose SheraTutor's curriculum via <code class="font-mono text-[11px]">@genkit-ai/mcp</code>. Port golden dataset evaluation to <code class="font-mono text-[11px]">defineEvaluator</code> for automated regression checks.
+              </p>
+            </div>
+            <div class="text-xs font-mono px-3 py-1.5 rounded-lg bg-[var(--card)] border border-[var(--border)] shrink-0 text-amber-500 font-semibold">
+              Ecosystem & QA • 4-5 Days
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(el => {
+        el.classList.remove('bg-[var(--primary)]', 'text-[var(--primary-foreground)]', 'shadow-xs');
+        el.classList.add('border-[var(--border)]', 'text-[var(--muted-foreground)]');
+      });
+
+      const activeContent = document.getElementById('tab-' + tabId);
+      const activeBtn = document.getElementById('tab-btn-' + tabId);
+      if (activeContent) activeContent.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.remove('border-[var(--border)]', 'text-[var(--muted-foreground)]');
+        activeBtn.classList.add('bg-[var(--primary)]', 'text-[var(--primary-foreground)]', 'shadow-xs');
+      }
+    }
+
+    const tierData = {
+      'tier-ui': {
+        title: 'Tier 1: Next.js 16 UI & Client SDK',
+        badge: 'Presentation',
+        desc: 'The student-facing React 19 interface in SheraTutor. Consists of the Socratic Tutor Chat, Khata Scanned Submission Viewer, and Quiz Generators.',
+        pain: 'Client components manually parse SSE buffers and handle JSON decoding, leading to complex component state management (850+ lines).',
+        solution: 'Use @genkit-ai/next/client or GenkitChatTransport with useChat, cutting ~400 lines of boilerplate while gaining optimistic UI and auto-retry.',
+        files: ['src/components/tutor-page-client.tsx', 'src/components/tutor-chat-panel.tsx']
+      },
+      'tier-serving': {
+        title: 'Tier 2: Serving Adapters (@genkit-ai/next)',
+        badge: 'Route Handlers',
+        desc: 'Translates Next.js Web Request/Response primitives to Genkit Action invocations, managing streaming headers and auth context.',
+        pain: 'Current route handlers (tutor-chat/route.ts) manually split SSE strings and maintain duplicate OpenAI SDK calls alongside Genkit.',
+        solution: 'Standardize on appRoute(tutorChatAgent, { contextProvider }), unifying streaming, error mapping, and durable connection resumption.',
+        files: ['src/app/api/tutor-chat/route.ts', 'src/app/api/submissions/route.ts']
+      },
+      'tier-agents': {
+        title: 'Tier 3: Socratic Agents & Orchestration',
+        badge: 'Orchestration',
+        desc: 'Stateful conversational engine that understands student misconceptions, chooses when to give Socratic hints, and tracks multi-turn history.',
+        pain: 'Conversations are reconstructed from raw DB queries on every turn, lacking tool-calling capability or human-in-the-loop interrupts.',
+        solution: 'Adopt defineAgent with SupabaseSessionStore, JSON-patch diffs, and pedagogical tools for textbook search and math verification.',
+        files: ['src/ai/flows/tutor-chat.ts', 'src/lib/supabase/session-store.ts']
+      },
+      'tier-flows': {
+        title: 'Tier 4: Core Educational AI Flows',
+        badge: 'AI Workflows',
+        desc: 'The five specialized AI workflows that power SheraTutor: handwritten OCR, RAG retrieval, rubric evaluation, paper generation, and tutoring.',
+        pain: 'Flows currently operate in silos without shared dynamic tool invocation or standardized OpenTelemetry span telemetry.',
+        solution: 'Register all flows in the central Genkit Registry and expose them to both the Dev UI and the Tutor Agent as callable tools.',
+        files: ['src/ai/flows/retrieve-grounding.ts', 'src/ai/flows/evaluate-rubric.ts', 'src/ai/flows/grade-submission.ts']
+      },
+      'tier-data': {
+        title: 'Tier 5: Supabase DB & Model Adapters',
+        badge: 'Data & Models',
+        desc: 'Stores curriculum chunks, HNSW vector embeddings, student profiles, and runs inference across NVIDIA NIM and local Ollama.',
+        pain: 'Ad-hoc model switching and raw HTTP embedding logic inside flows instead of standardized Genkit plugins.',
+        solution: 'Cleanly encapsulate NIM and Ollama through Genkit embedders and model refs, preserving full provenance in Supabase audit logs.',
+        files: ['src/ai/genkit.ts', 'supabase/migrations/00000000000014_tutor_chat.sql']
+      }
+    };
+
+    function selectTier(tierKey) {
+      const data = tierData[tierKey];
+      if (!data) return;
+
+      document.getElementById('tier-title').textContent = data.title;
+      document.getElementById('tier-badge').textContent = data.badge;
+      document.getElementById('tier-desc').textContent = data.desc;
+      document.getElementById('tier-pain').textContent = data.pain;
+      document.getElementById('tier-solution').textContent = data.solution;
+
+      const fileContainer = document.getElementById('tier-files');
+      fileContainer.innerHTML = data.files.map(f => `<span class="px-2 py-0.5 rounded bg-[var(--card)] border border-[var(--border)]">${f}</span>`).join('');
+    }
+
+    // Default selection
+    selectTier('tier-agents');
+  </script>
+</body>
+</html>
