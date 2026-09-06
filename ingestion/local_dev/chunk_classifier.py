@@ -78,6 +78,22 @@ def classify_text_block(text: str) -> str:
     return "theory"
 
 
+def unpack_cq_blocks(block: str) -> List[tuple[str, str]]:
+    """Unpacks a block into stimulus and individual sub-questions."""
+    # Split on subquestion markers like (ক), (খ), (গ), (ঘ) or (a), (b), (c), (d)
+    pattern = r"(?=(?:^|\n)\s*[\(（]?[কখগঘabcdABCD][\)）][\.\s])"
+    parts = [p.strip() for p in re.split(pattern, block) if p.strip()]
+    
+    if len(parts) <= 1:
+        return [(classify_text_block(block), block)]
+    
+    results = []
+    for part in parts:
+        ptype = classify_text_block(part)
+        results.append((ptype, part))
+    return results
+
+
 def build_hierarchical_chunks(
     markdown_text: str,
     subject_code: str,
@@ -102,10 +118,18 @@ def build_hierarchical_chunks(
     current_block = ""
 
     for p in paragraphs:
-        # If paragraph introduces a new section, capture it
         sec_no, sec_title = extract_section_metadata(p)
         if sec_no:
             current_sec_no, current_sec_title = sec_no, sec_title
+
+        p_type = classify_text_block(p)
+
+        if p_type in ("cq_stimulus", "cq_subquestion"):
+            if current_block:
+                raw_blocks.append(current_block)
+                current_block = ""
+            raw_blocks.append(p)
+            continue
 
         if len(current_block) + len(p) <= max_chunk_chars:
             current_block = f"{current_block}\n\n{p}" if current_block else p
@@ -117,13 +141,18 @@ def build_hierarchical_chunks(
     if current_block:
         raw_blocks.append(current_block)
 
-    # Secondary pass: classify and link parent-child CQ stimuli
+    # Flatten any merged CQ blocks
+    final_blocks: List[tuple[str, str]] = []
+    for block in raw_blocks:
+        unpacked = unpack_cq_blocks(block)
+        final_blocks.extend(unpacked)
+
+    # Link parent-child CQ stimuli
     classified_chunks: List[ClassifiedChunk] = []
     active_stimulus_id: Optional[str] = None
     chunk_counter = start_chunk_index
 
-    for idx, block in enumerate(raw_blocks):
-        c_type = classify_text_block(block)
+    for c_type, block in final_blocks:
         chunk_uuid = str(uuid.uuid4())
         
         parent_id = None
@@ -132,8 +161,7 @@ def build_hierarchical_chunks(
         elif c_type == "cq_subquestion":
             parent_id = active_stimulus_id
         else:
-            # Non-CQ block clears active stimulus if it's new theory
-            if c_type == "theory" and len(block) > 400:
+            if c_type == "theory" and len(block) > 350:
                 active_stimulus_id = None
 
         classified_chunks.append(
