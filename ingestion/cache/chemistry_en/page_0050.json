@@ -1,0 +1,10 @@
+{
+  "page_no": 50,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 3,
+  "markdown": "**Chapter 3: Structure of Matter**\n\n**3.7 Orbital Electronic Configuration of Atoms**\n\nThe Bohr model states about the principal energy level. Each principal energy level can contain 2n² electrons at the highest, where n = 1, 2, 3 etc. According to this formula:\n\n| n | 2n² |\n| --- | --- |\n| 1 | 2 |\n| 2 | 8 |\n| 3 | 18 |\n\n**Success of Bohr's Model**\n\na. Rutherford compared the orbits of electrons around nucleus to that of the planets in the solar system. It did not mention anything about the size of the energy levels. Bohr's atomic model specifies the circular size of the energy levels.\n\nb. Rutherford's model does not mention about the changes in structure of atom when they absorb or emit energy. The Bohr model states that the electron moves from lower to upper energy level when the atom absorbs energy and it moves from upper to lower energy level when the atom emits energy.\n\nc. The Rutherford model doesn't explain the atomic spectra but the Bohr model can explain the atomic spectra of hydrogen (H) atom with one electron.\n\n**Limitations of Bohr's Model**\n\na. Although the Bohr model can explain the spectrum of hydrogen containing one electron, it cannot explain the spectrum of ions or atoms containing more than one electron.\n\nb. When electrons are transferred from one energy level to another, according to Bohr, there will be a single line in the spectrum. But highly sensitive apparatus shows every line consists of several fine lines. Why each line is the summation of various lines is not explained.\n\nc. The Bohr model specifies that orbits of electrons in an atom is circular. However, later on, it was proved that the orbits can be of oval shape too.",
+  "char_count": 1673,
+  "extraction_time_s": 10.35,
+  "timestamp": 1788727082.513327
+}
