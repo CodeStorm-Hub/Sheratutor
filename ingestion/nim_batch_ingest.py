@@ -96,12 +96,19 @@ def render_page_jpeg(pdf_path: str, page_no: int, dpi: int = 130, quality: int =
         raise FileNotFoundError(f"pdftoppm failed to generate JPEG for page {page_no}")
     return matches[0]
 
-def extract_with_nim(image_path: Path, prompt: str, max_retries: int = 3, timeout: int = 75) -> str:
-    """Sends page JPEG to NVIDIA NIM vision model with retry, rate limit handling, and 75s timeout."""
+def extract_with_nim(
+    image_path: Path,
+    prompt: str,
+    max_retries: int = 3,
+    timeout: int = 80,
+    model: Optional[str] = None
+) -> str:
+    """Sends page JPEG to NVIDIA NIM vision model with retry, rate limit handling, and timeout."""
     if not NIM_API_KEY:
         raise ValueError("NVIDIA_NIM_API_KEY not found in environment or web/.env.local")
         
     img_b64 = base64.b64encode(image_path.read_bytes()).decode("utf-8")
+    chosen_model = model or NIM_MODEL
     
     headers = {
         "Authorization": f"Bearer {NIM_API_KEY}",
@@ -109,7 +116,7 @@ def extract_with_nim(image_path: Path, prompt: str, max_retries: int = 3, timeou
     }
     
     payload = {
-        "model": NIM_MODEL,
+        "model": chosen_model,
         "messages": [
             {
                 "role": "user",
@@ -120,8 +127,7 @@ def extract_with_nim(image_path: Path, prompt: str, max_retries: int = 3, timeou
             }
         ],
         "temperature": 0.0,
-        "presence_penalty": 0.15,
-        "max_tokens": 1500,
+        "max_tokens": 2500,
         "stream": True
     }
     
@@ -151,7 +157,7 @@ def extract_with_nim(image_path: Path, prompt: str, max_retries: int = 3, timeou
                     continue
                 return normalize_math_digits(normalized)
             elif resp.status_code == 429:
-                wait_s = attempt * 6
+                wait_s = attempt * 8
                 print(f"    [Rate limit 429] Backing off for {wait_s}s (attempt {attempt}/{max_retries})...", flush=True)
                 time.sleep(wait_s)
             else:
@@ -161,7 +167,59 @@ def extract_with_nim(image_path: Path, prompt: str, max_retries: int = 3, timeou
             print(f"    [Network/Timeout error] {e} (attempt {attempt}/{max_retries})", flush=True)
             time.sleep(3)
             
-    raise RuntimeError(f"Failed to extract page after {max_retries} attempts")
+    raise RuntimeError(f"Failed to extract page after {max_retries} attempts with {chosen_model}")
+
+def clean_and_validate_markdown(
+    markdown: str,
+    lang: str,
+    ch_no: Optional[int] = None
+) -> Tuple[bool, str, str]:
+    """
+    Validates and cleans markdown content for a page:
+    1. Removes conversational wrappers (e.g. ```markdown ... ```).
+    2. Enforces language isolation: If lang == 'en', detects any Bengali characters (\\u0980-\\u09FF).
+    3. Enforces chapter scoping: Checks for section headers or figures belonging to other chapters.
+    4. Deduplicates consecutive identical lines and repetitive loops.
+    Returns (is_valid, cleaned_markdown, error_message).
+    """
+    if not markdown:
+        return False, "", "Empty markdown content"
+        
+    cleaned = markdown.strip()
+    # Strip markdown fence wrappers if any
+    cleaned = re.sub(r"^```(?:markdown)?\s*\n", "", cleaned, flags=re.IGNORECASE)
+    cleaned = re.sub(r"\n```\s*$", "", cleaned).strip()
+    
+    # Deduplicate consecutive identical lines (prevents degenerate loops)
+    lines = cleaned.split("\n")
+    dedup_lines = []
+    for line in lines:
+        if not dedup_lines or line != dedup_lines[-1] or not line.strip():
+            dedup_lines.append(line)
+    cleaned = "\n".join(dedup_lines)
+    
+    # 1. Language check: EN version must not have Bengali characters
+    if lang.lower() == "en":
+        bn_chars = re.findall(r"[\u0980-\u09ff]", cleaned)
+        if len(bn_chars) > 0:
+            sample = "".join(bn_chars[:12])
+            return False, cleaned, f"Language contamination: {len(bn_chars)} Bengali chars found in EN page (sample: '{sample}')"
+            
+    # 2. Chapter scoping: Check for section headers belonging to other chapters
+    if ch_no is not None:
+        # Check section headers like ## 2.5 or **2.5
+        sec_matches = re.findall(r"(?:^|\n)(?:#{1,4}|\*\*)\s*(\d+)\.(\d+)", cleaned)
+        wrong_secs = [f"{m[0]}.{m[1]}" for m in sec_matches if int(m[0]) != ch_no and int(m[0]) in range(1, 13)]
+        if wrong_secs:
+            return False, cleaned, f"Chapter scope violation: Foreign section(s) {list(set(wrong_secs))} found in Chapter {ch_no}"
+            
+        # Check figure captions like Fig 2.05 or চিত্র 2.05
+        fig_matches = re.findall(r"(?i)(?:Fig(?:ure)?|চিত্র)\.?\s*(\d+)[\.\:]\d+", cleaned)
+        wrong_figs = [m for m in fig_matches if int(m) != ch_no and int(m) in range(1, 13)]
+        if wrong_figs:
+            return False, cleaned, f"Chapter scope violation: Foreign figure(s) matching Chapter {list(set(wrong_figs))} found in Chapter {ch_no}"
+            
+    return True, cleaned, ""
 
 def classify_chunk(text: str) -> str:
     """Classifies text block into pedagogical type."""
