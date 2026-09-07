@@ -266,13 +266,16 @@ export function TutorPageClient({
           textPart = chunk;
         } else if (chunk && typeof chunk === 'object') {
           const chunkObj = chunk as Record<string, unknown>;
-          const modelChunk = chunkObj.modelChunk as { content?: Array<{ text?: string }> } | undefined;
+          const msgObj = chunkObj.message as Record<string, unknown> | undefined;
+          const modelChunk = (chunkObj.modelChunk || msgObj?.modelChunk) as { content?: Array<{ text?: string }> } | undefined;
           if (Array.isArray(modelChunk?.content)) {
             textPart = modelChunk.content.map((c) => c.text || '').join('');
           } else if (typeof chunkObj.text === 'string') {
             textPart = chunkObj.text;
           } else if (Array.isArray(chunkObj.content)) {
             textPart = (chunkObj.content as Array<{ text?: string }>).map((c) => c.text || '').join('');
+          } else if (typeof msgObj?.text === 'string') {
+            textPart = msgObj.text;
           }
         }
 
@@ -312,6 +315,8 @@ export function TutorPageClient({
         finalReply = finalMsg;
       } else if (Array.isArray(finalMsg?.content)) {
         finalReply = finalMsg.content.map((c) => c.text || '').join('');
+      } else if (finalOutput && typeof (finalOutput as Record<string, unknown>).text === 'string') {
+        finalReply = (finalOutput as Record<string, unknown>).text as string;
       }
 
       if (!finalReply) {
