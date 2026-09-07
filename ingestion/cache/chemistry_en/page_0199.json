@@ -1,0 +1,10 @@
+{
+  "page_no": 199,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 8,
+  "markdown": "**Chapter 8: Chemistry and Energy**\n\n**8.1 Introduction**\n\nYou have seen in the Daniell cell, in anode, metallic zinc donates two electrons to become zinc ion. This electron is conducted through the connecting wire towards the cathode. As a result, the ion in the anode solution increases.\n\n**Oxidation half reaction in anode:**\n\nZn → Zn²⁺ + 2 e⁻\n\nOn the other hand, the Cu²⁺ ion in the CuSO₄ solution at the cathode accepts the two electrons and turns into charge neutral Cu atom without changing the composition of SO₄²⁻ ion. As a result, the solution becomes negatively charged and the flow of electricity stops within a while. The salt bridge comes into effect at this stage. A chemical substance named agar-agar mixed with KCl is put inside a U-shaped tube. It creates a gel like substance which is called the salt bridge.\n\n**Both K⁺ and Cl⁻ ions in this substance have the same velocity. Two cotton buds at the two faces of the bridge (like in the fig) help connect the two solutions externally.**\n\nNow, the surplus charges in the anode are joined by the same number of Cl⁻ ion from the bridge in the anode solution. Similarly, the reduced number of positive charges in cathode solution is joined by K⁺ ions from the bridge. Thus, the charge neutrality of both the solutions is maintained and the flow of electricity is continued.\n\n**Fig 8.09: Salt bridge in Cell.**\n\n[DIAGRAM]\nCaption: Fig 8.09: Salt bridge in Cell.\nCallouts: \n* Zn²⁺\n* SO₄²⁻\n* Cu²⁺\n* K⁺\n* Cl⁻\nDescription: The salt bridge is a U-shaped tube filled with a gel-like substance made of agar-agar mixed with KCl. It connects the two solutions in the Daniell cell, allowing the flow of electricity to continue.\n\n**8.2 Conclusion**\n\nIn conclusion, the salt bridge plays a crucial role in maintaining the charge neutrality of the solutions in the Daniell cell. By connecting the two solutions, it allows the flow of electricity to continue, making it an essential component of the cell.",
+  "char_count": 1953,
+  "extraction_time_s": 19.72,
+  "timestamp": 1788736379.5179467
+}

@@ -1,0 +1,10 @@
+{
+  "page_no": 35,
+  "subject": "chemistry",
+  "lang": "bn",
+  "chapter_no": 2,
+  "markdown": "[DIAGRAM]\nCaption: চিত্র 2.10: জলীয় বাষ্পকে শীতলকরণের লেখচিত্র।\nCallouts:\n* Y অক্ষ: তাপমাত্রা (°C) (140, 120, 100, 80, 60, 40, 20, 0, -20, -40)\n* X অক্ষ: (তাপ বর্জন) সময়\n* 100°C: স্ফুটনাঙ্ক (জলীয় বাষ্প ও পানি)\n* 0°C: গলনাঙ্ক (পানি ও বরফ)\n* -40°C: কঠিন বরফ\nDescription: জলীয় বাষ্পকে ক্রমান্বয়ে শীতল করার লেখচিত্র যেখানে 140°C বাষ্প শীতল হয়ে 100°C এ ঘনীভবন এবং 0°C এ বরফে কঠিনীভবন প্রদর্শিত হয়েছে।\n\n**\n\n\n*   **Caption:** বিপরীতক্রমে জলীয় বাষ্পকে ক্রমান্বয়ে শীতল করা হলে প্রাপ্ত ফলাফল একটি গ্রাফ পেপারের X অক্ষের Y অক্ষের Y-AXIS-এর Y-Axis\n*   **Callouts:**\n    *   140\n    *   120\n    *   100\n    *   80\n    *   60\n    *   40\n    *   20\n    *   -20\n    *   -40\n*   **Description:** The diagram shows a graph with the x-axis labeled \"Y\" and the y-axis labeled \"X\". The graph has several points plotted on it, including (140, 0), (120, 0), (100, 0), (80, 0), (60, 0), (40, 0), (20, 0), (-20, 0), and (-40, 0). The graph appears to be showing some kind of relationship between the variables represented by the x and y axes.\n\n### Table\n\n| Col1 | Col2 |\n| --- | --- |\n|     |     |\n\n### Conclusion\n\nThere are no tables on this page.\n\nge\n\n১.\n\nবিপরীতক্রমে",
+  "char_count": 1152,
+  "extraction_time_s": 20.37,
+  "timestamp": 1788730009.3307474
+}

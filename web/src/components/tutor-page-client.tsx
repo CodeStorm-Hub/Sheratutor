@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useRef, useEffect, useCallback } from 'react';
+import { streamFlow } from '@genkit-ai/next/client';
 import { RenderMathText } from '@/components/render-math-text';
 import {
   Sparkles,
@@ -199,14 +200,14 @@ export function TutorPageClient({
     if (abortControllerRef.current) {
       abortControllerRef.current.abort();
       setIsGenerating(false);
-      setMessages((prev) => {
-        const last = prev[prev.length - 1];
-        if (last && last.role === 'assistant') {
-          return [...prev.slice(0, -1), { ...last, isStreaming: false }];
-        }
-        return prev;
-      });
       toast.info(language === 'bn' ? 'উত্তর তৈরি বন্ধ করা হয়েছে' : 'Generation stopped');
+    }
+    if (activeSessionId) {
+      fetch('/api/tutor-chat/abort', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ data: { snapshotId: activeSessionId } }),
+      }).catch(() => {});
     }
   };
 
@@ -236,118 +237,133 @@ export function TutorPageClient({
     abortControllerRef.current = controller;
 
     try {
-      const res = await fetch('/api/tutor-chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        signal: controller.signal,
-        body: JSON.stringify({
-          mode: 'general',
-          sessionId: activeSessionId,
-          subjectId: currentSubject?.id,
-          chapterId: currentChapter?.id,
-          studentMessage: query,
-          languagePreference: language === 'en' ? 'en' : 'bn',
-          scaffoldingStyle,
-          stream: true,
-        }),
+      const { stream, output } = streamFlow({
+        url: '/api/tutor-chat',
+        input: {
+          message: {
+            role: 'user',
+            content: [{ text: query }],
+          },
+        },
+        init: {
+          sessionId: activeSessionId ?? undefined,
+          state: {
+            sessionId: activeSessionId ?? undefined,
+            custom: {
+              sessionId: activeSessionId ?? undefined,
+              mode: 'general',
+              subjectId: currentSubject?.id,
+              chapterId: currentChapter?.id,
+              studentMessage: query,
+              languagePreference: language === 'en' ? 'en' : 'bn',
+              scaffoldingStyle,
+            },
+          },
+        },
+        abortSignal: controller.signal,
       });
 
-      if (!res.ok) {
-        throw new Error(`Chat API error (${res.status})`);
+      let accumulatedText = '';
+      for await (const chunk of stream) {
+        let textPart = '';
+        if (typeof chunk === 'string') {
+          textPart = chunk;
+        } else if (chunk && typeof chunk === 'object') {
+          const chunkObj = chunk as Record<string, unknown>;
+          const modelChunk = chunkObj.modelChunk as { content?: Array<{ text?: string }> } | undefined;
+          if (Array.isArray(modelChunk?.content)) {
+            textPart = modelChunk.content.map((c) => c.text || '').join('');
+          } else if (typeof chunkObj.text === 'string') {
+            textPart = chunkObj.text;
+          } else if (Array.isArray(chunkObj.content)) {
+            textPart = (chunkObj.content as Array<{ text?: string }>).map((c) => c.text || '').join('');
+          }
+        }
+
+        if (textPart) {
+          accumulatedText += textPart;
+          setMessages((prev) => {
+            const newArr = [...prev];
+            const lastIdx = newArr.length - 1;
+            if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
+              newArr[lastIdx] = {
+                ...newArr[lastIdx],
+                text: accumulatedText,
+                isStreaming: true,
+              };
+            }
+            return newArr;
+          });
+        }
       }
 
-      // Read Server-Sent Events stream
-      if (res.body) {
-        const reader = res.body.getReader();
-        const decoder = new TextDecoder('utf-8');
-        let accumulatedText = '';
-        let resolvedSessionId = activeSessionId;
-        let buffer = '';
-
-        const processLine = (line: string) => {
-          const trimmed = line.trim();
-          if (trimmed.startsWith('data: ')) {
-            const jsonStr = trimmed.slice(6);
-            try {
-              const event = JSON.parse(jsonStr);
-              if (event.type === 'start' && event.sessionId) {
-                resolvedSessionId = event.sessionId;
-                setActiveSessionId(event.sessionId);
-              } else if (event.type === 'chunk' && event.text) {
-                accumulatedText += event.text;
-                setMessages((prev) => {
-                  const newArr = [...prev];
-                  const lastIdx = newArr.length - 1;
-                  if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
-                    newArr[lastIdx] = {
-                      ...newArr[lastIdx],
-                      text: accumulatedText,
-                      isStreaming: true,
-                    };
-                  }
-                  return newArr;
-                });
-              } else if (event.type === 'done') {
-                const finalReply = event.reply || accumulatedText;
-                if (event.sessionId) {
-                  resolvedSessionId = event.sessionId;
-                  setActiveSessionId(event.sessionId);
-                }
-                setMessages((prev) => {
-                  const newArr = [...prev];
-                  const lastIdx = newArr.length - 1;
-                  if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
-                    newArr[lastIdx] = {
-                      ...newArr[lastIdx],
-                      text: finalReply,
-                      isStreaming: false,
-                    };
-                  }
-                  return newArr;
-                });
-
-                // Update recent sessions list if new session
-                if (resolvedSessionId && !sessions.some((s) => s.id === resolvedSessionId)) {
-                  setSessions((prev) => [
-                    {
-                      id: resolvedSessionId!,
-                      title: query.slice(0, 40),
-                      context_json: {
-                        subjectName: currentSubject?.name_en,
-                        chapterName: currentChapter?.title_en,
-                        subjectId: currentSubject?.id,
-                        chapterId: currentChapter?.id,
-                      },
-                      updated_at: new Date().toISOString(),
-                    },
-                    ...prev,
-                  ]);
-                }
-              } else if (event.type === 'error') {
-                throw new Error(event.error || 'Stream error occurred');
-              }
-            } catch {
-              // Ignore parsing chunk split across network boundaries
-            }
-          }
+      const finalOutput = (await output) as {
+        sessionId?: string;
+        finishReason?: string;
+        message?: {
+          role?: string;
+          content?: Array<{
+            text?: string;
+            toolRequest?: { name?: string; input?: { topic?: string; reason?: string } };
+          }>;
         };
+      } | null;
 
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
+      const finalMsg = finalOutput?.message;
+      let finalReply = '';
 
-          buffer += decoder.decode(value, { stream: true });
-          const lines = buffer.split('\n');
-          buffer = lines.pop() ?? '';
+      if (typeof finalMsg === 'string') {
+        finalReply = finalMsg;
+      } else if (Array.isArray(finalMsg?.content)) {
+        finalReply = finalMsg.content.map((c) => c.text || '').join('');
+      }
 
-          for (const line of lines) {
-            processLine(line);
-          }
+      if (!finalReply) {
+        // If an interrupt occurred (such as practice quiz proposal), surface it politely
+        const toolReq = finalMsg?.content?.find((c) => c.toolRequest)?.toolRequest;
+        if (toolReq?.name === 'requestPracticeQuizInterrupt') {
+          const reason = toolReq.input?.reason || (language === 'bn' ? 'তুমি কি এই বিষয়ে একটি ছোট প্র্যাকটিস কুইজ দিতে চাও?' : 'Would you like to take a quick practice quiz on this topic?');
+          const topic = toolReq.input?.topic ? `[${toolReq.input.topic}] ` : '';
+          finalReply = `${topic}${reason}\n\n${language === 'bn' ? '(কুইজ শুরু করতে "হ্যাঁ" অথবা চালিয়ে যেতে "না" লিখো)' : '(Reply "yes" to begin or "no" to continue discussion)'}`;
+        } else {
+          finalReply = accumulatedText;
         }
+      }
 
-        if (buffer.trim()) {
-          processLine(buffer);
+      const resolvedSessionId = finalOutput?.sessionId || activeSessionId;
+      if (resolvedSessionId) {
+        setActiveSessionId(resolvedSessionId);
+      }
+
+      setMessages((prev) => {
+        const newArr = [...prev];
+        const lastIdx = newArr.length - 1;
+        if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
+          newArr[lastIdx] = {
+            ...newArr[lastIdx],
+            text: finalReply || accumulatedText,
+            isStreaming: false,
+          };
         }
+        return newArr;
+      });
+
+      // Update recent sessions list if new session
+      if (resolvedSessionId && !sessions.some((s) => s.id === resolvedSessionId)) {
+        setSessions((prev) => [
+          {
+            id: resolvedSessionId!,
+            title: query.slice(0, 40),
+            context_json: {
+              subjectName: currentSubject?.name_en,
+              chapterName: currentChapter?.title_en,
+              subjectId: currentSubject?.id,
+              chapterId: currentChapter?.id,
+            },
+            updated_at: new Date().toISOString(),
+          },
+          ...prev,
+        ]);
       }
     } catch (err: unknown) {
       if ((err as Error)?.name === 'AbortError') {

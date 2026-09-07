@@ -1,0 +1,10 @@
+{
+  "page_no": 256,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 10,
+  "markdown": "**Mineral Resources: Metal-Nonmetal**\n\n**Chapter 10**\n\n**Section 10.1**\n\nWhen iron comes in contact with H+ of open air, it donates electrons and turns into Fe2+. It is oxidation.\n\n2Fe → 2Fe2+ + 4e-\n\nThe electrons donated by Fe are accepted by O2 and H+ to produce H2O by reduction.\n\nO2 + 4H+ + 4e- → 2H2O\n\nAt this stage, Fe2+, H+ and O2 undergo a reaction and produce Fe3+ and water.\n\n4Fe2+ + 4H+ + O2 → 4Fe3+ + 2H2O\n\nThen, Fe3+ undergoes a reaction with OH- and produces Fe(OH)3.\n\nFe3+ + 3OH- → Fe(OH)3\n\nThis ferric hydroxide turns into hydrated ferric oxide or rust Fe2O3·3H2O.\n\n2Fe(OH)3 → Fe2O3·3H2O\n\n**Experiment of the Formation of Rust**\n\n* Take four test tubes and mark them 1 to 4.\n* Take the necessary measures to make them similar to the figure.\n* Boil the water of test tube 3 for a minute and add 1 mL cooking oil or olive oil to the water. The oil will restrict the air from entering the water.\n* Preserve the test tubes in this situation for a week and observe.\n\n**[DIAGRAM] Caption: Fig 10.1 Callouts: None Description: A diagram showing four test tubes with different substances.**\n\n**[DIAGRAM] Caption: Fig 10.2 Callouts: None Description: A diagram showing the formation of rust.**\n\n**[DIAGRAM] Caption: Fig 10.3 Callouts: None Description: A diagram showing the reaction between Fe3+ and OH-.**\n\n**[DIAGRAM] Caption: Fig 10.4 Callouts: None Description: A diagram showing the formation of hydrated ferric oxide or rust.**\n\n**[DIAGRAM] Caption: Fig 10.5 Callouts: None Description: A diagram showing the experiment of the formation of rust.**",
+  "char_count": 1561,
+  "extraction_time_s": 20.13,
+  "timestamp": 1788740177.061932
+}

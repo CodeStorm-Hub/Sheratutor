@@ -1,0 +1,10 @@
+{
+  "page_no": 118,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**Chapter 6: Concept of Mole and Chemical Calculation**\n\n**6.1 Molar Volume of Gas**\n\nThe volume that 1 mole of a gaseous substance occupies is called the molar volume of that gas. 0°C temperature and 1 atm pressure together is called the standard temperature and pressure or the standard condition. The volume of 1 mole gas in this standard condition is 22.4 liter.\n\nIf n = mole number\nw = mass in gram\nV = Volume in liter\nN = Number of molecules\nM = Molecular mass\n\nn = w / M\nn = V / 22.4\nn = N / 6.023 × 10^23\n\n**Example**\n\nProblem: How many molecules are there in 1 liter CO2 gas at standard temperature and pressure?\n\nSolution: 1 mole CO2 = 44 g CO2 = 6.023×10^23 no CO2 molecules = 22.4 liter CO2 gas at standard temperature and pressure\n\nAt standard temperature and pressure 22.4 liter CO2 gas contains = 6.023×10^23 no CO2 molecules\n\nTherefore, 1 liter CO2 gas contains = 6.023 ×10^23 / 22.4 = 2.69 ×10^22 molecules\n\n**Individual Task: How many H atoms are there in 5 liter CH4 gas at standard condition?**\n\n**[STIMULUS]**\n\n(a) 5 × 6.023 × 10^23\n(b) 2.69 × 10^22\n(c) 1.35 × 10^23\n(d) 3.38 × 10^22",
+  "char_count": 1104,
+  "extraction_time_s": 13.99,
+  "timestamp": 1788731445.6244395
+}

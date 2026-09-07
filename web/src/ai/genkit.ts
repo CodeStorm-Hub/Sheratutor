@@ -1,5 +1,5 @@
 import dns from "node:dns";
-import { genkit, z } from "genkit";
+import { genkit, z } from "genkit/beta";
 import { openAICompatible } from "@genkit-ai/compat-oai";
 import { ollama } from "genkitx-ollama";
 

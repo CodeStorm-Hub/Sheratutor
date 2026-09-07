@@ -1,0 +1,10 @@
+{
+  "page_no": 96,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 5,
+  "markdown": "**Chemical Bond**\n\n**5.7 Inert Gases and their Stability**\n\nYou have learned about the inert gases or Group-18 elements from the periodic table. Electronic configuration of these gases are presented again below for your convenience:\n\n| Element | Electronic Configuration |\n| --- | --- |\n| He(2) | 1s² |\n| Ne(10) | 1s²2s²2p⁶ |\n| Ar(18) | 1s²2s²2p⁶3s²3p⁶ |\n| Kr(36) | 1s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶ |\n| Xe(54) | 1s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶d¹⁰5s²5p⁶ |\n| Rn(86) | 1s²2p⁶3s²3p⁶3d¹⁰4s²4p⁶d¹⁰4f¹⁴5s²5p⁶d¹⁰6s²6p⁶ |\n\nHelium has 2 electrons in its outermost energy level. Since it required this number of electrons to fulfill its outermost energy level, helium's electronic configuration is stable. Other inert gases have 8 electrons (ns² np⁶) in their outermost energy level. Any element having 8 electrons in its outermost energy level has got the highest level of stability. Two electrons in the outermost energy level forms a duet while 8 electrons form an octet. Since these gases fulfill both the duet and octet condition, they are stable. This stability drives them not to donate any electron to other elements. They do not receive electrons from other elements either. Chemically, they lack affinity or become inert. No other element has this fulfilled electronic configuration at its outermost energy level. As a result, they are not that stable. They tend to fulfill the duet or octet rules at their outermost energy level. That is why, they donate, accept or share electrons with other atoms and create mutual bonds.\n\n**Note:** The above transcription is based on the provided instructions and does not include any additional information or commentary.",
+  "char_count": 1640,
+  "extraction_time_s": 13.62,
+  "timestamp": 1788730041.2645571
+}

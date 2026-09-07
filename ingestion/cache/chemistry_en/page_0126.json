@@ -1,0 +1,10 @@
+{
+  "page_no": 126,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**Concept of Mole and Chemical Counting**\n\n**Problem:**\nFind out the percent composition of aluminum, sulfur, and oxygen in Al2(SO4)3.\n\n**Solution:**\nThe molecular mass of Al2(SO4)3 = 27 × 2 + (32 × 1 + 16 × 4) × 3 = 342\nThe percent composition of Al = 27 × 2 × 100 / 342 = 15.78%\nThe percent composition of S = 32 × 3 × 100 / 342 = 28.07%\nThe percent composition of O = 16 × 12 × 100 / 342 = 56.14%\n\n**Task:**\nFind out the percent composition of Na and Cl in NaCl.\n\n**Forma-16, Chemistry Class-9-10**",
+  "char_count": 501,
+  "extraction_time_s": 6.21,
+  "timestamp": 1788731842.0842705
+}

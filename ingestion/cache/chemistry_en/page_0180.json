@@ -1,0 +1,10 @@
+{
+  "page_no": 180,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 8,
+  "markdown": "**Chemistry and Energy**\n\n**Table 8.01: Bond and Bond Energy**\n\n| Bond | Bond Energy (kJ/mol) | Bond | Bond Energy (kJ/mol) |\n| --- | --- | --- | --- |\n| C-H | 414 | N-H | 391 |\n| C-Cl | 326 | O-H | 464 |\n| C-C | 344 | O=O | 498 |\n| C=C | 615 | C=C | 812 |\n| N=N | 946 | Cl-Cl | 244 |\n| Br-Br | 193 | I-I | 151 |\n| O-O | 143 | H-H | 436 |\n| H-Cl | 431 | H-Br | 366 |\n| H-I | 299 | H-F | 563 |\n| C=O | 724 | C-O | 350 |\n\nWhen the table says, the bond energy of O=O is 498 kJ/mol, we understand, 498 kilojoule heat is required to break an O=O bond. On the other hand, the formation of an O=O bond evolves 498 kilojoule heat.\n\n**Example**\n\nProblem: Determine the heat change in the reaction CH4 + Cl2 → CH3Cl + HCl. Given, bond energy of C-H = 414 kJ/mol, bond energy of C-Cl = 244 kJ/mol and bond energy of H-Cl = 431 kJ/mol.\n\nSolution: In the reaction CH4 + Cl2 → CH3Cl + HCl 1 mole C-H bond and 1 mole Cl-Cl bond has been broken among the reactants while 1 mole H-Cl bond and 1 mole C-Cl bond has been formed. Therefore, Total bond energy applied on reactants to break bonds = (414 + 244) kJ = 658 kJ\n\n**Problem:**\n\nDetermine the heat change in the reaction CH4 + Cl2 → CH3Cl + HCl. Given, bond energy of C-H = 414 kJ/mol, bond energy of C-Cl = 244 kJ/mol and bond energy of H-Cl = 431 kJ/mol.\n\n**Solution:**\n\nIn the reaction CH4 + Cl2 → CH3Cl + HCl 1 mole C-H bond and 1 mole Cl-Cl bond has been broken among the reactants while 1 mole H-Cl bond and 1 mole C-Cl bond has been formed. Therefore, Total bond energy applied on reactants to break bonds = (414 + 244) kJ = 658 kJ",
+  "char_count": 1575,
+  "extraction_time_s": 27.01,
+  "timestamp": 1788735202.3604872
+}

@@ -1,0 +1,10 @@
+{
+  "page_no": 116,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**6.1 Mole**\n\nThe word mole is the unit of any chemical measurement. Suppose,\n\n12 nos of O2 = 1 dozen of O2\n100 nos of O2 = 1 hundred of O2\n1000 nos of O2 = 1 thousand of O2\n\nSimilarly, 6.023 × 10^23 nos O2 = 1 mole O2\n\n1 mole atom contains 6.02×10^23 atoms\n1 mole molecule contains 6.02 × 10^23 molecules\n1 mole ion contains 6.02×10^23 ions\n\nTherefore, the number 6.02×10^23 is used in the case with atoms, molecules and ions etc. This number is called the Avogadro number.\n\nThe amount of a chemical substance that contains as many as the Avogadro number (6.02×10^23) of molecules, atoms or ions is called the mole of the substance. For example, 12 grams of C contains 6.02×10^23 number of C atoms.\n\nThe expression of atomic mass of atoms and the molecular mass of molecules into gram unit is called one mole of a chemical substance.\n\nTherefore,\n\n12 grams of C = 1 mole C atom.\n\nAgain, 18 grams of H2O contains 6.02×10^23 number of H2O molecules. Therefore,\n\n18 grams of H2O = 1 mole H2O.\n\n**The Process of Determining the Molecular Mass of a Molecule**\n\nThe summation of atomic masses of all atoms that constitute a molecule denotes the molecular mass of the molecule. Cl2 molecule, for example, has two Cl atoms.\n\nTherefore, the molecular mass of Cl2 = atomic mass of Cl × 2 = 2 ×35.5 = 71\n\nOne mole Cl2 = 71 g Cl2.\n\n**[STIMULUS]**\n\n(a) What is the number of molecules in 1 mole of O2?\n\n(b) What is the number of atoms in 1 mole of O2?\n\n(c) What is the number of molecules in 1 mole of H2O?\n\n(d) What is the number of atoms in 1 mole of H2O?\n\n**[STIMULUS]**\n\n(a) What is the molecular mass of Cl2?\n\n(b) What is the molecular mass of H2O?\n\n(c) What is the molecular mass of O2?\n\n(d) What is the molecular mass of C?",
+  "char_count": 1717,
+  "extraction_time_s": 16.73,
+  "timestamp": 1788731356.8185077
+}

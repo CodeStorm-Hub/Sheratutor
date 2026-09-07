@@ -1,0 +1,10 @@
+{
+  "page_no": 200,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 8,
+  "markdown": "**Chemistry and Energy**\n\n**Chapter 8**\n\n**Section 8.10: Dry Cell**\n\nA small container made of zinc is used as an anode in a dry cell. The container is filled with a paste of manganese dioxide (MnO2), ammonium chloride (NH4Cl), zinc chloride (ZnCl2) and distilled water. A carbon (graphite) stick is inserted at the center of the container to act as a cathode. When two wires connect the two edges (positive and negative) of a bulb or electronic item with the zinc container and the carbon stick, the following reaction occurs:\n\nZinc at the anode donates two electrons and becomes Zn2+: Anode reaction, Zn → Zn2+ + 2e-\n\nThese two electrons come to the carbon rod through the connector and combine with ammonium ion (NH4+) and manganese dioxide (MnO2) to produce ammonia gas (NH3), dimanganese tri-oxide. The reaction:\n\nCathode reaction, 2NH4+ + 2MnO2 + 2e- → 2NH3 + Mn2O3 + H2O\n\n**Fig 8.10: Dry cell.**\n\n[DIAGRAM]\nCaption: Fig 8.10: Dry cell.\nCallouts: \n* Carbon rod\n* MnO2, NH4Cl, ZnCl2 and distilled water\n* Zinc pot\n* Paper\n* Outer jacket\n* Washer and seal\n* Metallic cap\nDescription: A dry cell consists of a zinc container, a carbon stick, and a paste of manganese dioxide, ammonium chloride, and zinc chloride. The carbon stick is inserted at the center of the container to act as a cathode. When two wires connect the two edges (positive and negative) of a bulb or electronic item with the zinc container and the carbon stick, the following reaction occurs.\n\n**Zinc at the anode donates two electrons and becomes Zn2+: Anode reaction, Zn → Zn2+ + 2e-**\n\nThese two electrons come to the carbon rod through the connector and combine with ammonium ion (NH4+) and manganese dioxide (MnO2) to produce ammonia gas (NH3), dimanganese tri-oxide. The reaction:\n\n**Cathode reaction, 2NH4+ + 2MnO2 + 2e- → 2NH3 + Mn2O3 + H2O**",
+  "char_count": 1822,
+  "extraction_time_s": 13.58,
+  "timestamp": 1788736406.6424162
+}

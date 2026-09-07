@@ -1,0 +1,10 @@
+{
+  "page_no": 20,
+  "subject": "chemistry",
+  "lang": "bn",
+  "chapter_no": 1,
+  "markdown": "[DIAGRAM]\nCaption: সুজনশীল প্রশ্ন\nCallouts:\n* A\n* B\nDescription: The diagram shows two images, one of a man holding a cup and the other of a man spraying something in a field.\n\n\n| Col 1 | Col 2 |\n| --- | --- |\n| চিত্র A: গুধ সেবনের ছবি | চিত্র B: সবজিক্ষেতে কীটনাশক ছিটানোর ছবি |\n\n\nThere are both diagrams and tables on this page.\n\n\n```markdown\n[DIAGRAM]\nCallouts:\n* A\n* B\nDescription: The diagram shows two images, one of a man holding a cup and the other of a man spraying something in a field.\n\n| Col 1 | Col 2 |\n| --- | --- |\n| চিত্র A: গুধ সেবনের ছবি | চিত্র B: সবজিক্ষেতে কীটনাশক ছিটানোর ছবি |\n\nরসায়নের ধারণা ১৫\n\n2. নিচের সাংকেতিক fet কী প্রকাশ করে?\n\n&\n\n(ক) বিস্ফোরক পদার্থ (খ) দাহ্য পদার্থ\n(A) তেজস্কিয় রশি  (ঘে) আগুনের শিখা\n\n3. নিচের কোন feet তেজস্কিয় রশ্মি নির্দেশ করে?\n\n৫ (2) &\nগ) ঞ (ঘ) &\n4. কপারের সার্থে অন্য কোন গলিয়ে ব্রোঞ্জ তৈরি করা হয়?\n\n(ক) লোহা (2) জিংক\n(গ) টিন (ঘ) লেড\n\nA B\n\nচিত্র a: ওষুধ সেবনের ছবি চিত্র ৪:",
+  "char_count": 931,
+  "extraction_time_s": 14.04,
+  "timestamp": 1788729613.585275
+}

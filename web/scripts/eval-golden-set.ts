@@ -32,8 +32,57 @@ import { config } from "dotenv";
 config({ path: ".env.local" });
 import { transcribePageFlow } from "../src/ai/flows/transcribe";
 import { evaluateRubricFlow } from "../src/ai/flows/evaluate-rubric";
-import { MODELS, PIPELINE_VERSION, PROMPT_VERSION } from "../src/ai/genkit";
+import { ai, MODELS, PIPELINE_VERSION, PROMPT_VERSION } from "../src/ai/genkit";
 import { getServiceRoleClient } from "../src/lib/supabase/service-role";
+
+/**
+ * Genkit Evaluator: Transcription Character Error Rate (CER).
+ */
+export const transcriptionCerEvaluator = ai.defineEvaluator(
+  {
+    name: "transcriptionCer",
+    displayName: "Transcription CER Evaluator",
+    definition: "Evaluates character-level transcription error against human ground truth.",
+  },
+  async (datapoint) => {
+    const cer = characterErrorRate(
+      String(datapoint.reference ?? ""),
+      String(datapoint.output ?? "")
+    );
+    return {
+      testCaseId: datapoint.testCaseId ?? "unknown",
+      evaluation: {
+        score: cer,
+        status: cer <= 0.15 ? "PASS" : "FAIL",
+        details: { reasoning: `CER: ${(cer * 100).toFixed(1)}%` },
+      },
+    };
+  }
+);
+
+/**
+ * Genkit Evaluator: Rubric Mark Deviation.
+ */
+export const rubricDeviationEvaluator = ai.defineEvaluator(
+  {
+    name: "rubricDeviation",
+    displayName: "Rubric Mark Deviation Evaluator",
+    definition: "Evaluates mark deviation between model score and human examiner consensus.",
+  },
+  async (datapoint) => {
+    const aiScore = Number(datapoint.output ?? 0);
+    const humanScore = Number(datapoint.reference ?? 0);
+    const deviation = Math.abs(aiScore - humanScore);
+    return {
+      testCaseId: datapoint.testCaseId ?? "unknown",
+      evaluation: {
+        score: deviation,
+        status: deviation <= 1 ? "PASS" : "FAIL",
+        details: { reasoning: `Absolute mark deviation: ${deviation.toFixed(2)}` },
+      },
+    };
+  }
+);
 
 /** Levenshtein-distance-based character error rate: edits / reference length. */
 function characterErrorRate(reference: string, hypothesis: string): number {
@@ -208,7 +257,9 @@ async function main() {
   );
 }
 
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});
+if (typeof process !== "undefined" && process.argv[1]?.endsWith("eval-golden-set.ts")) {
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
+}

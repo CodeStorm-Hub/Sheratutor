@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@genkit-ai/compat-oai": "^1.41.0",
+    "@genkit-ai/mcp": "^1.41.0",
     "@genkit-ai/next": "^1.41.0",
     "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.112.3",
