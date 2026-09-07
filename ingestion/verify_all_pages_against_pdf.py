@@ -173,7 +173,12 @@ def audit_single_page(
             warnings.append(f"PDF has {pdf_page_has_images} images but JSON has 0 explicit figure callouts")
             
     # 6. Degenerative Loops & Repetition
-    lines = [l.strip() for l in markdown.splitlines() if len(l.strip()) > 15]
+    # Exclude standard repetitive MCQ options like "d. i, ii and iii" or markdown table syntax
+    mcq_pat = re.compile(r"^(?:[a-d]\.\s*|\|\s*)*(?:i|ii|iii|\(?i+\)?)[,\s]*(?:i|ii|iii|\(?i+\)?)*")
+    lines = [
+        l.strip() for l in markdown.splitlines() 
+        if len(l.strip()) > 15 and not mcq_pat.match(l.strip().lower())
+    ]
     line_counts = {}
     for l in lines:
         line_counts[l] = line_counts.get(l, 0) + 1
