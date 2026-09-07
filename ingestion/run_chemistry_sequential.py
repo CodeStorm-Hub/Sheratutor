@@ -350,10 +350,10 @@ def run_edition_chapter_by_chapter(lang: str, delay_s: float = 2.0):
         )
         
         # Check existing pages for this chapter
-        r_chk = requests.get(
-            f"{sb_url}/rest/v1/curriculum_chunks?curriculum_version_id=eq.{curriculum_version_id}&select=source_book_page_ref",
-            headers=sb_headers
-        )
+        url_chk = f"{sb_url}/rest/v1/curriculum_chunks?curriculum_version_id=eq.{curriculum_version_id}&select=source_book_page_ref"
+        if chapter_id:
+            url_chk += f"&chapter_id=eq.{chapter_id}"
+        r_chk = requests.get(url_chk, headers=sb_headers)
         existing_in_db = set()
         for r in r_chk.json() or []:
             try:

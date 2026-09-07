@@ -133,7 +133,8 @@ def extract_with_nim(
     
     for attempt in range(1, max_retries + 1):
         try:
-            resp = requests.post(NIM_BASE_URL, headers=headers, json=payload, stream=True, timeout=timeout)
+            req_timeout = (15, timeout) if isinstance(timeout, (int, float)) else timeout
+            resp = requests.post(NIM_BASE_URL, headers=headers, json=payload, stream=True, timeout=req_timeout)
             if resp.status_code == 200:
                 collected = []
                 for line in resp.iter_lines():
