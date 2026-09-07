@@ -57,10 +57,14 @@ const contextProvider = async (_req: { method: string; headers: Record<string, s
     });
   }
 
+  const inputObj = _req.input as { metadata?: Record<string, unknown> } | undefined;
+  const metadata = inputObj?.metadata ?? {};
+
   return {
     auth: { user, uid: user.id },
     userId: user.id,
     studentId: profile.id,
+    ...metadata,
   };
 };
 
@@ -205,37 +209,40 @@ export async function POST(req: Request) {
   const rawState = (rawInit.state as Record<string, unknown> | undefined) || {};
   const rawCustom = (rawState.custom as Record<string, unknown> | undefined) || {};
 
-  const normalizedInit = {
-    ...rawInit,
-    sessionId: resolvedSessionId,
-    state: {
-      ...rawState,
-      sessionId: resolvedSessionId,
-      custom: {
-        ...rawCustom,
-        studentId: profile.id,
-        sessionId: resolvedSessionId,
-        mode: rawCustom.mode || body?.mode || "general",
-        studentMessage: rawText,
-        submissionId: rawCustom.submissionId || body?.submissionId,
-        questionId: rawCustom.questionId || body?.questionId,
-        rubricStepIndex: rawCustom.rubricStepIndex ?? body?.rubricStepIndex,
-        questionText: rawCustom.questionText || body?.questionText,
-        studentAnswerChunk: rawCustom.studentAnswerChunk || body?.studentAnswerChunk,
-        rubricFailureReason: rawCustom.rubricFailureReason || body?.rubricFailureReason,
-        groundedContext: rawCustom.groundedContext || body?.groundedContext,
-        subjectId: rawCustom.subjectId || body?.subjectId,
-        chapterId: rawCustom.chapterId || body?.chapterId,
-      },
-    },
-  };
+  // Server-managed agent: init MUST only contain sessionId or snapshotId (no state)
+  const normalizedInit: { sessionId?: string; snapshotId?: string } = {};
+  if (resolvedSessionId) {
+    normalizedInit.sessionId = resolvedSessionId;
+  }
+  const snapshotId = (body?.snapshotId as string) || (rawInit.snapshotId as string);
+  if (snapshotId) {
+    normalizedInit.snapshotId = snapshotId;
+  }
 
   const rawData = (body?.data as Record<string, unknown> | undefined) || {};
+  const metadata = {
+    studentId: profile.id,
+    sessionId: resolvedSessionId,
+    mode: rawCustom.mode || body?.mode || "general",
+    studentMessage: rawText,
+    submissionId: rawCustom.submissionId || body?.submissionId,
+    questionId: rawCustom.questionId || body?.questionId,
+    rubricStepIndex: rawCustom.rubricStepIndex ?? body?.rubricStepIndex,
+    questionText: rawCustom.questionText || body?.questionText,
+    studentAnswerChunk: rawCustom.studentAnswerChunk || body?.studentAnswerChunk,
+    rubricFailureReason: rawCustom.rubricFailureReason || body?.rubricFailureReason,
+    groundedContext: rawCustom.groundedContext || body?.groundedContext,
+    subjectId: rawCustom.subjectId || body?.subjectId,
+    chapterId: rawCustom.chapterId || body?.chapterId,
+    ...((rawData.metadata as Record<string, unknown>) || {}),
+  };
+
   const normalizedPayload = {
     data: {
       message: normalizedMessage,
       resume: rawData.resume || body?.resume,
       detach: rawData.detach || body?.detach,
+      metadata,
     },
     init: normalizedInit,
   };
