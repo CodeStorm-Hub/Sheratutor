@@ -109,9 +109,10 @@ export const ai = genkit({
  *
  *   reasoning / fast : openai/gpt-oss-20b — real reasoning model, clean
  *       OpenAI-compat `content`, solid at Socratic tutoring + tools.
- *   paper           : nvidia/nemotron-3-nano-omni-30b-a3b-reasoning — verified
- *       to return valid full-CQ JSON; gpt-oss-20b was intermittently throwing
- *       "Connection error" on the long paper prompt.
+ *   paper           : meta/llama-3.2-11b-vision-instruct — smallest/fastest
+ *       working model, and paper generation runs as a server action bounded
+ *       by Vercel's 60s function limit; the 30b reasoning models emit long
+ *       think traces and time out on the big NCTB prompt.
  *   vision          : meta/llama-3.2-11b-vision-instruct — the only working
  *       vision model on the free tier (90b variant 404s).
  */
@@ -119,7 +120,7 @@ export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
   reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b",
   fast: process.env.GENKIT_FAST_MODEL ?? "nim/openai/gpt-oss-20b",
-  paper: process.env.GENKIT_PAPER_MODEL ?? "nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
 } as const;
 
 // Fallback reasoning model, deliberately a DIFFERENT live NIM model from
