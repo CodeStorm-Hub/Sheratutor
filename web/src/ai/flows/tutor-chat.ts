@@ -133,7 +133,8 @@ export function buildTutorPrompt(params: {
     `Example: $F = ma$, $s = ut + \\frac{1}{2}at^2$, $\\text{ms}^{-1}$, $\\tan^{-1}\\left(\\frac{1}{5}\\right)$. ` +
     `CRITICAL: NEVER insert dollar signs inside LaTeX function arguments (like \\left(...\\) or \\frac{...}{...}), and never wrap Bengali prose or sentences in dollar signs.\n` +
     `5. Adhere to official NCTB textbook curriculum definitions and formulas.\n` +
-    `6. Provide relatable real-life Bangladeshi analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls).\n` +
+    `6. Provide relatable real-life Bangladeshi analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls). ` +
+    `Any number you put in an analogy MUST be arithmetically consistent with the solution above — re-check it; if unsure, keep the analogy qualitative with no numbers.\n` +
     rule6 +
     academicContext +
     textbookSection +
@@ -215,7 +216,7 @@ export const tutorChatFlow = ai.defineFlow(
       const res = await ai.generate({
         model: MODELS.reasoning,
         prompt,
-        config: { temperature: 0.5 },
+        config: { temperature: 0.3 },
       });
       text = res.text;
     } catch (err) {
@@ -234,7 +235,7 @@ export const tutorChatFlow = ai.defineFlow(
       const completion = await client.chat.completions.create({
         model: modelName,
         messages: [{ role: "user", content: prompt }],
-        temperature: 0.5,
+        temperature: 0.3,
       });
       text = completion.choices?.[0]?.message?.content || "";
     }

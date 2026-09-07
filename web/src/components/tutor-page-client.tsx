@@ -236,17 +236,15 @@ export function TutorPageClient({
     setIsGenerating(true);
 
     // Setup abort controller + a hard client-side timeout. The route caps at
-    // maxDuration=60s; give the stream a little past that, then abort with a
-    // clear "took too long" message instead of leaving the bubble stuck on
-    // "Generating response…" forever.
+    // maxDuration=60s; give the stream a little past that, then surface a clear
+    // "took too long" message instead of leaving the bubble stuck on
+    // "Generating response…" forever. `streamFlow` does not reliably honour
+    // `abortSignal`, so the real unblock is the Promise.race below — the
+    // AbortController is just a best-effort cancel of the underlying fetch.
     const controller = new AbortController();
     abortControllerRef.current = controller;
     let timedOut = false;
-    const TUTOR_TIMEOUT_MS = 75_000;
-    const timeoutId = setTimeout(() => {
-      timedOut = true;
-      controller.abort();
-    }, TUTOR_TIMEOUT_MS);
+    const TUTOR_TIMEOUT_MS = 72_000;
 
     try {
       const { stream, output } = streamFlow({
@@ -272,43 +270,7 @@ export function TutorPageClient({
       });
 
       let accumulatedText = '';
-      for await (const chunk of stream) {
-        let textPart = '';
-        if (typeof chunk === 'string') {
-          textPart = chunk;
-        } else if (chunk && typeof chunk === 'object') {
-          const chunkObj = chunk as Record<string, unknown>;
-          const msgObj = chunkObj.message as Record<string, unknown> | undefined;
-          const modelChunk = (chunkObj.modelChunk || msgObj?.modelChunk) as { content?: Array<{ text?: string }> } | undefined;
-          if (Array.isArray(modelChunk?.content)) {
-            textPart = modelChunk.content.map((c) => c.text || '').join('');
-          } else if (typeof chunkObj.text === 'string') {
-            textPart = chunkObj.text;
-          } else if (Array.isArray(chunkObj.content)) {
-            textPart = (chunkObj.content as Array<{ text?: string }>).map((c) => c.text || '').join('');
-          } else if (typeof msgObj?.text === 'string') {
-            textPart = msgObj.text;
-          }
-        }
-
-        if (textPart) {
-          accumulatedText += textPart;
-          setMessages((prev) => {
-            const newArr = [...prev];
-            const lastIdx = newArr.length - 1;
-            if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
-              newArr[lastIdx] = {
-                ...newArr[lastIdx],
-                text: accumulatedText,
-                isStreaming: true,
-              };
-            }
-            return newArr;
-          });
-        }
-      }
-
-      const finalOutput = (await output) as {
+      type FinalOutput = {
         sessionId?: string;
         finishReason?: string;
         message?: {
@@ -319,16 +281,73 @@ export function TutorPageClient({
           }>;
         };
       } | null;
+      const outBox: { value: FinalOutput } = { value: null };
 
-      const finalMsg = finalOutput?.message;
+      // `streamFlow`'s abortSignal is unreliable, so race the whole
+      // consume-the-stream operation against a wall-clock timeout. If the
+      // timeout wins we throw TIMEOUT (handled in catch); the background
+      // consume promise is left to settle on its own and ignored.
+      const TIMEOUT = Symbol('tutor-timeout');
+      const consume = (async () => {
+        for await (const chunk of stream) {
+          let textPart = '';
+          if (typeof chunk === 'string') {
+            textPart = chunk;
+          } else if (chunk && typeof chunk === 'object') {
+            const chunkObj = chunk as Record<string, unknown>;
+            const msgObj = chunkObj.message as Record<string, unknown> | undefined;
+            const modelChunk = (chunkObj.modelChunk || msgObj?.modelChunk) as { content?: Array<{ text?: string }> } | undefined;
+            if (Array.isArray(modelChunk?.content)) {
+              textPart = modelChunk.content.map((c) => c.text || '').join('');
+            } else if (typeof chunkObj.text === 'string') {
+              textPart = chunkObj.text;
+            } else if (Array.isArray(chunkObj.content)) {
+              textPart = (chunkObj.content as Array<{ text?: string }>).map((c) => c.text || '').join('');
+            } else if (typeof msgObj?.text === 'string') {
+              textPart = msgObj.text;
+            }
+          }
+
+          if (textPart) {
+            accumulatedText += textPart;
+            setMessages((prev) => {
+              const newArr = [...prev];
+              const lastIdx = newArr.length - 1;
+              if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
+                newArr[lastIdx] = { ...newArr[lastIdx], text: accumulatedText, isStreaming: true };
+              }
+              return newArr;
+            });
+          }
+        }
+        outBox.value = (await output) as FinalOutput;
+      })();
+
+      await Promise.race([
+        consume,
+        new Promise((_, reject) =>
+          setTimeout(() => {
+            timedOut = true;
+            try {
+              controller.abort();
+            } catch {
+              /* ignore */
+            }
+            reject(TIMEOUT);
+          }, TUTOR_TIMEOUT_MS)
+        ),
+      ]);
+
+      const fo = outBox.value;
+      const finalMsg = fo?.message;
       let finalReply = '';
 
       if (typeof finalMsg === 'string') {
         finalReply = finalMsg;
       } else if (Array.isArray(finalMsg?.content)) {
         finalReply = finalMsg.content.map((c) => c.text || '').join('');
-      } else if (finalOutput && typeof (finalOutput as Record<string, unknown>).text === 'string') {
-        finalReply = (finalOutput as Record<string, unknown>).text as string;
+      } else if (fo && typeof (fo as Record<string, unknown>).text === 'string') {
+        finalReply = (fo as Record<string, unknown>).text as string;
       }
 
       if (!finalReply) {
@@ -343,7 +362,7 @@ export function TutorPageClient({
         }
       }
 
-      const resolvedSessionId = finalOutput?.sessionId || activeSessionId;
+      const resolvedSessionId = fo?.sessionId || activeSessionId;
       if (resolvedSessionId) {
         setActiveSessionId(resolvedSessionId);
       }
@@ -409,7 +428,6 @@ export function TutorPageClient({
           : language === 'bn' ? 'সংযোগ সমস্যা হয়েছে' : 'Connection error'
       );
     } finally {
-      clearTimeout(timeoutId);
       setIsGenerating(false);
       abortControllerRef.current = null;
     }

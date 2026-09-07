@@ -179,6 +179,7 @@ export async function POST(req: Request) {
 
   // ---- Resolve or create the chat session
   let sessionId: string | null = null;
+  let isNewSession = false;
   if (resolvedSessionId && isUuid(resolvedSessionId)) {
     const { data: s } = await service
       .from("tutor_chat_sessions")
@@ -211,39 +212,55 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "could not start chat session" }, { status: 500 });
     }
     sessionId = created.id;
+    isNewSession = true;
   }
 
-  // ---- Load recent history BEFORE the new student turn is written
-  const { data: historyRows } = await service
+  // ---- All pre-LLM work runs concurrently: history load, the student-message
+  // write, and RAG grounding. Grounding only happens on the FIRST turn of a
+  // session (follow-ups lean on conversation context, like a real tutor) and
+  // is time-capped so a slow embedder can't eat into the LLM budget — the
+  // route's total is bounded by Vercel's 60s function limit.
+  const wantGrounding =
+    !groundedContext &&
+    isNewSession &&
+    mode === "general" &&
+    typeof chapterId === "string" &&
+    isUuid(chapterId);
+
+  const historyP = service
     .from("tutor_chat_messages")
     .select("role, content")
     .eq("session_id", sessionId)
     .order("created_at", { ascending: true })
-    .limit(HISTORY_TURNS);
-  const history = (historyRows ?? []).map((m) => ({
-    role: (m.role === "student" ? "student" : "tutor") as "student" | "tutor",
-    text: m.content as string,
-  }));
+    .limit(HISTORY_TURNS)
+    .then(({ data }) =>
+      (data ?? []).map((m) => ({
+        role: (m.role === "student" ? "student" : "tutor") as "student" | "tutor",
+        text: m.content as string,
+      }))
+    );
 
-  await service
+  const studentInsertP = service
     .from("tutor_chat_messages")
     .insert({ session_id: sessionId, role: "student", content: rawText, safety_category: "none" });
 
-  // ---- RAG grounding for general chapter questions (the agent used to do
-  // this via a tool; we call the retrieval flow directly now).
-  if (!groundedContext && mode === "general" && typeof chapterId === "string" && isUuid(chapterId)) {
-    try {
-      const g = await retrieveGroundingFlow({
-        queryText: rawText,
-        chapterId,
-        languageTag: languagePreference,
-        matchCount: 4,
-      });
-      groundedContext = g.chunks.map((c) => c.content_chunk).join("\n\n---\n\n");
-    } catch (gErr) {
-      console.error("tutor-chat: grounding failed (continuing ungrounded):", gErr);
-    }
-  }
+  const groundingP: Promise<string> = wantGrounding
+    ? Promise.race([
+        retrieveGroundingFlow({
+          queryText: rawText,
+          chapterId: chapterId as string,
+          languageTag: languagePreference,
+          matchCount: 3,
+        }).then((g) => g.chunks.map((c) => c.content_chunk).join("\n\n---\n\n")),
+        new Promise<string>((resolve) => setTimeout(() => resolve(""), 12_000)),
+      ]).catch((gErr) => {
+        console.error("tutor-chat: grounding failed (continuing ungrounded):", gErr);
+        return "";
+      })
+    : Promise.resolve("");
+
+  const [history, groundedFromRag] = await Promise.all([historyP, groundingP, studentInsertP]);
+  if (groundedFromRag) groundedContext = groundedFromRag;
 
   // ---- Generate
   let reply = "";
@@ -272,13 +289,15 @@ export async function POST(req: Request) {
         : "Sorry, I couldn't put together an answer just now. Please try again.";
   }
 
-  await service
-    .from("tutor_chat_messages")
-    .insert({ session_id: sessionId, role: "tutor", content: reply, safety_category: "none" });
-  await service
-    .from("tutor_chat_sessions")
-    .update({ updated_at: new Date().toISOString() })
-    .eq("id", sessionId);
+  await Promise.all([
+    service
+      .from("tutor_chat_messages")
+      .insert({ session_id: sessionId, role: "tutor", content: reply, safety_category: "none" }),
+    service
+      .from("tutor_chat_sessions")
+      .update({ updated_at: new Date().toISOString() })
+      .eq("id", sessionId),
+  ]);
 
   // ---- Respond (single-shot SSE — matches the client's streamFlow parser)
   if (req.headers.get("accept") === "text/event-stream") {
