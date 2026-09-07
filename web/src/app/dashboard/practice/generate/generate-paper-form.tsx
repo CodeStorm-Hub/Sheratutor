@@ -175,7 +175,7 @@ export function GeneratePaperForm({ subjects, chapters }: { subjects: Subject[];
             {language === 'bn' ? 'মোট নম্বর' : 'Total Marks'}
           </Label>
           <span className="text-xs text-muted-foreground">
-            {language === 'bn' ? 'বোর্ড মান: ২৫-১০০ নম্বর' : 'Standard: 25–100 marks'}
+            {language === 'bn' ? '৫–১০০ (বোর্ড মান সাধারণত ২৫–৭০)' : '5–100 (board papers are usually 25–70)'}
           </span>
         </div>
         <Input 

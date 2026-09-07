@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, MODELS } from "@/ai/genkit";
+import { ai, MODELS, FALLBACK_REASONING_MODEL } from "@/ai/genkit";
 import { OpenAI } from "openai";
 
 // Helper to extract JSON from model output that might include markdown or commentary
@@ -117,6 +117,10 @@ CORE NCTB PHYSICS RULES:
   ]
 }
 
+The JSON above is only a STRUCTURE example. Do NOT reuse its scenario, numbers,
+names or sub-question wording — invent a fresh, original stimulus with
+different quantities for every question, appropriate to the chapter(s) below.
+
 CURRICULUM CHAPTERS:
 ${chapterTitles}
 `;
@@ -134,17 +138,14 @@ ${chapterTitles}
         generatedPaper = GeneratedPaperSchema.parse(parsedJson);
       }
     } catch (genkitErr) {
-      console.warn("Direct generation failed, trying OpenAI client fallback:", genkitErr);
-      const isNim = (process.env.GENKIT_PAPER_MODEL ?? "").startsWith("nim/") || Boolean(process.env.NVIDIA_NIM_API_KEY);
-      const fallbackModel = (process.env.GENKIT_PAPER_MODEL ?? "nim/nvidia/nemotron-3-nano-30b-a3b").replace(/^(?:nim|agentrouter)\//, "");
+      console.warn("Direct generation failed, trying NIM OpenAI-client fallback:", genkitErr);
+      // Fall back to a DIFFERENT live NIM model than MODELS.paper so a
+      // per-model outage (e.g. the retired nemotron-3-nano-30b-a3b that used
+      // to 410 here) still has a working path. Always NIM now — no AgentRouter.
+      const fallbackModel = FALLBACK_REASONING_MODEL.replace(/^(?:nim|agentrouter)\//, "");
       const client = new OpenAI({
-        apiKey: isNim
-          ? (process.env.NVIDIA_NIM_API_KEY ?? "")
-          : (process.env.AGENTROUTER_API_KEY ?? ""),
-        baseURL: isNim
-          ? "https://integrate.api.nvidia.com/v1"
-          : (process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1"),
-        defaultHeaders: isNim ? undefined : { "User-Agent": "Cline/3.0.0" },
+        apiKey: process.env.NVIDIA_NIM_API_KEY ?? "",
+        baseURL: "https://integrate.api.nvidia.com/v1",
         timeout: 120000,
       });
 

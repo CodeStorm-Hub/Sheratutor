@@ -30,30 +30,16 @@ export const SAFE_ESCALATION_MESSAGE_BN =
   "তোমার কথা শুনে আমি চিন্তিত। আমি একজন AI টিউটর, এই বিষয়ে সাহায্য করতে পারবো না। " +
   "অনুগ্রহ করে এখনই কাছের কোনো বিশ্বস্ত বড় মানুষ, শিক্ষক বা Kaan Pete Roi (হেল্পলাইন: ০৯৬১৩৪২৭৮০০) এর সাথে কথা বলো।";
 
-/**
- * Normalizes standard LaTeX delimiters (\[ ... \] and \( ... \)) to dollar
- * delimiters ($$ ... $$ and $ ... $) supported by remark-math.
- * Does NOT replace generic parentheses or brackets to prevent corrupting
- * inner LaTeX commands like \left(...\right) or Bengali text in parentheses.
- */
-export function normalizeLatexDelimiters(text: string): string {
-  if (!text) return "";
-  return text
-    .replace(/\\\[([\s\S]*?)\\\]/g, (_, inner) => `\n$$\n${inner.trim()}\n$$\n`)
-    .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner.trim()}$`);
-}
-
-/**
- * Safety net for models that ignore rule #1 and open with a greeting anyway
- * (নমস্কার!, আসসালামু আলাইকুম!, হ্যালো, etc.) — strips one leading greeting
- * clause so replies start on the actual answer instead of small talk.
- */
-export function stripLeadingGreeting(text: string): string {
-  return text.replace(
-    /^\s*(নমস্কার|আসসালামু আলাইকুম|হ্যালো|হাই|প্রিয় শিক্ষার্থী)[^,।!\n]*[,।!]\s*/i,
-    ""
-  );
-}
+// Text scrubbers live in a browser-safe module (no genkit/node imports) so
+// the tutor client component can share them. Re-exported here for server use
+// and for the existing unit tests that import them from this file.
+export {
+  normalizeLatexDelimiters,
+  stripLeadingGreeting,
+  sanitizeTutorReply,
+  isLowEffortTutorReply,
+} from "@/lib/tutor-format";
+import { sanitizeTutorReply } from "@/lib/tutor-format";
 
 export function buildTutorPrompt(params: {
   mode: "rubric" | "general";
@@ -104,12 +90,13 @@ export function buildTutorPrompt(params: {
   const socraticInstruction =
     scaffoldingStyle === "socratic"
       ? `SOCRATIC PEDAGOGY RULES:\n` +
-        `- Do NOT reveal the full direct solution or final mathematical calculation immediately.\n` +
-        `- Help the student discover their mistake by asking ONE clear, guiding question at a time.\n` +
-        `- Point them towards the relevant physical law or equation without solving it for them.\n` +
+        `- FIRST give 2-3 sentences that actually teach: state the relevant concept, law or formula and what each symbol means. Never reply with only a question.\n` +
+        `- THEN end with ONE clear guiding question that nudges the student to take the next step themselves, instead of computing the final numeric answer for them.\n` +
+        `- Point them towards the relevant physical law or equation; set up the substitution but stop before the final arithmetic.\n` +
         `- Encourage them to think: "উদ্দীপকে কী কী মান দেওয়া আছে এবং কোন সূত্রটি প্রযোজ্য?"\n\n`
       : `DIRECT EXPLANATION RULES:\n` +
-        `- Give a clear, direct, and complete step-by-step breakdown of the concept and formula.\n\n`;
+        `- Give a clear, complete, step-by-step breakdown: state the formula, substitute the given values, show each line of arithmetic, and give the final answer with units.\n` +
+        `- Then add one short real-life Bangladeshi analogy.\n\n`;
 
   const roleIntro =
     mode === "rubric"
@@ -252,6 +239,6 @@ export const tutorChatFlow = ai.defineFlow(
       text = completion.choices?.[0]?.message?.content || "";
     }
 
-    return { reply: stripLeadingGreeting(normalizeLatexDelimiters(text)), safety };
+    return { reply: sanitizeTutorReply(text), safety };
   }
 );

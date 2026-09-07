@@ -127,6 +127,7 @@ def extract_with_nim(
             }
         ],
         "temperature": 0.0,
+        "presence_penalty": 0.5,
         "max_tokens": 2500,
         "stream": True
     }
@@ -191,13 +192,46 @@ def clean_and_validate_markdown(
     cleaned = re.sub(r"^```(?:markdown)?\s*\n", "", cleaned, flags=re.IGNORECASE)
     cleaned = re.sub(r"\n```\s*$", "", cleaned).strip()
     
-    # Deduplicate consecutive identical lines (prevents degenerate loops)
-    lines = cleaned.split("\n")
-    dedup_lines = []
-    for line in lines:
-        if not dedup_lines or line != dedup_lines[-1] or not line.strip():
-            dedup_lines.append(line)
-    cleaned = "\n".join(dedup_lines)
+    # Strip LLM preambles / COT leakage
+    cot_pats = [
+        r"(?i)^\s*here is the (?:transcription|markdown|text)[^\n]*\n+",
+        r"(?i)^\s*certainly[,!][^\n]*\n+",
+        r"(?i)^\s*based on the (?:image|provided|page)[^\n]*\n+",
+        r"(?i)<\s*think\s*>.*?<\s*/\s*think\s*>",
+        r"(?i)\btranscription:\s*\n",
+    ]
+    for pat in cot_pats:
+        cleaned = re.sub(pat, "", cleaned, flags=re.DOTALL).strip()
+        
+    # Multi-line cycle loop collapsing (k from 1 to 60)
+    lines = [l.rstrip() for l in cleaned.splitlines()]
+    changed = True
+    while changed:
+        changed = False
+        max_k = min(len(lines) // 2, 60)
+        for k in range(1, max_k + 1):
+            i = 0
+            new_lines = []
+            while i < len(lines):
+                pattern = lines[i:i+k]
+                if any(p.strip() for p in pattern):
+                    repeats = 0
+                    while i + (repeats + 1) * k <= len(lines) and lines[i + repeats * k : i + (repeats + 1) * k] == pattern:
+                        repeats += 1
+                    if repeats > 1:
+                        new_lines.extend(pattern)
+                        i += repeats * k
+                        rem = len(lines) - i
+                        if 0 < rem < k and lines[i:i+rem] == pattern[:rem]:
+                            i += rem
+                        changed = True
+                        continue
+                new_lines.append(lines[i])
+                i += 1
+            lines = new_lines
+            if changed:
+                break
+    cleaned = "\n".join(lines).strip()
     
     # 1. Language check: EN version must not have Bengali characters
     if lang.lower() == "en":

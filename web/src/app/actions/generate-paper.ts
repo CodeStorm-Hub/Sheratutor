@@ -58,7 +58,15 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
       languagePreference: "bn",
     });
   } catch (err) {
-    return { status: "error", message: err instanceof Error ? err.message : "Generation failed." };
+    // Log the raw upstream error (model 4xx/5xx, JSON parse, schema) but never
+    // surface it verbatim — users were seeing things like "410 status code
+    // (no body)". Give a plain, actionable message instead.
+    console.error("generateQuestionPaperFlow failed:", err);
+    return {
+      status: "error",
+      message:
+        "The question generator is temporarily unavailable. Please try again in a minute — if it keeps failing, pick fewer chapters or a lower mark total.",
+    };
   }
 
   if (generated.questions.length === 0) {

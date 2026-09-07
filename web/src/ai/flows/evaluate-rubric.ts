@@ -79,6 +79,7 @@ export const evaluateRubricFlow = ai.defineFlow(
       `QUESTION (max ${maxMarks} marks): ${questionText}\n\n` +
       `OFFICIAL RUBRIC: ${JSON.stringify(rubricCriteria)}\n\n` +
       `RETRIEVED CURRICULUM CONTEXT:\n${groundingContext || "(none retrieved — grade conservatively and flag low grounding_confidence)"}\n\n` +
+      `CRITICAL JSON INSTRUCTION:\nOutput ONLY a direct raw JSON object conforming to the required schema. Do NOT wrap output inside a "properties" key or schema meta-definitions. Start directly with the root object containing question_id: "${questionId}", max_marks, score_obtained, criteria_evaluations, etc.\n\n` +
       `STUDENT'S TRANSCRIBED ANSWER (verbatim, including any errors):\n${transcribedAnswer}`;
 
     const prompt = pageImageUrls?.length
