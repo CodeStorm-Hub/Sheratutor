@@ -1,0 +1,10 @@
+{
+  "page_no": 124,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**Chapter 6: Concept of Mole and Chemical Calculation**\n\n**Problem: A 250 mL solution has 20g substance dissolved in it and its molarity is 0.75. What is the molecular mass of the solute in the solution?**\n\n**Solution: Given here, w = 20 g, V = 250mL, S = 0.7 molar, M = ?**\n\nWe know,\n\nw = SVM / 1000\n20 = 0.75 × 250 × M / 1000\nM = 1000 × 20 / 0.75 × 250 = 106\n\n**Problem: How will you prepare 200mL semimolar Na2CO3 solution?**\n\n**Solution: V = 200mL, S = 0.5 molar, M = 23×2 + 12 + 16×3 = 106**\n\nWe know,\n\nw = SVM / 1000\n0.5 × 200 × 106 / 1000 = 10.6 g\n\nNow, take 10.6 g Na2CO3 in a pot and pour 200mL water in it. Thus we can prepare the solution.\n\n**Individual Task**\n\n**Task: Find out the molarity of the solution when there is 4 g NaOH in a 100mL solution.**\n\n**Task: Find out the molarity of the solution when there is 4 g HCl in a 100mL solution.**",
+  "char_count": 856,
+  "extraction_time_s": 12.3,
+  "timestamp": 1788731781.3203466
+}

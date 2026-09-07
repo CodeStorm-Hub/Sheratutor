@@ -1,0 +1,10 @@
+{
+  "page_no": 81,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 4,
+  "markdown": "**Chapter 4: Periodic Table**\n\n**4.9 Reactions Occurring in the Elements of the Same Group**\n\nAn experiment will tell you that elements of the same group exhibit the same kind of properties.\n\nThe gases F2, Cl2, Br2, I2, etc. belonging to Group-17 react with Hydrogen and produce HF (g), HCl (g), HBr (g), HI (g) gases respectively.\n\n2HF (g) → 2H2(g) + F2(g)\n2H2(g) + Cl2(g) → 2HCl (g)\n2H2(g) + Br2(g) → 2HBr (g)\n2H2(g) + I2(g) → 2HI (g)\n\nAgain, if we dissolve these produced gases into water, they produce hydrohalide acids, i.e. Hydrofluoric acid, Hydrochloric acid, Hydrobromic acid, Hydroiodic acid.\n\nHF(g) + H2O (l) → HF (aq)\nHCl(g) + H2O (l) → HCl (aq)\nHBr(g) + H2O (l) → HBr (aq)\nHI(g) + H2O (l) → HI (aq)\n\nThese hydrohalide acids react with any carbonate salt and produce Carbon dioxide gas, e.g. Calcium Carbonate and Hydrofluoric acid produce Carbon dioxide:\n\nCaCO3 + 2HF → CaF2 + H2O + CO2\n\n[DIAGRAM]\nCaption: Fig 4.9\nCallouts: None\nDescription: A diagram showing the reaction between calcium carbonate and hydrofluoric acid to produce carbon dioxide.\n\n**Table 4.9: Properties of Group-17 Elements**\n\n| Element | Atomic Number | Atomic Mass | Electron Configuration |\n| --- | --- | --- | --- |\n| Fluorine | 9 | 18.998 | 1s2 2s2 2p5 |\n| Chlorine | 17 | 35.453 | 1s2 2s2 2p6 3s2 3p5 |\n| Bromine | 35 | 79.904 | 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p5 |\n| Iodine | 53 | 126.904 | 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p5 |\n\n**Question 4.9.1**\nWhat is the product of the reaction between hydrogen and fluorine?\n\n**[STIMULUS]**\n(a) HF\n(b) H2\n(c) F2\n(d) H2O\n\n**Question 4.9.2**\nWhat is the product of the reaction between hydrogen and chlorine?\n\n**[STIMULUS]**\n(a) HCl\n(b) H2\n(c) Cl2\n(d) H2O",
+  "char_count": 1693,
+  "extraction_time_s": 20.75,
+  "timestamp": 1788729237.7472765
+}

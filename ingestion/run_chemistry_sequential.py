@@ -229,16 +229,17 @@ def verify_chapter(
     cache_dir: Path,
     curriculum_version_id: str,
     sb_url: str,
-    sb_headers: Dict[str, str]
+    sb_headers: Dict[str, str],
+    chapter_id: Optional[str] = None
 ) -> bool:
     """Verifies that all pages and diagrams of a chapter are captured without omissions or cross-chapter/lingual contamination."""
     log(f"\n--- [AUDIT & VERIFICATION GATE: Chapter {ch_no} ({ch_title}) - {lang.upper()}] ---")
     
     # Query database for chunks in this chapter
-    r = requests.get(
-        f"{sb_url}/rest/v1/curriculum_chunks?curriculum_version_id=eq.{curriculum_version_id}&select=source_book_page_ref,chunk_type,content_chunk,section_no",
-        headers=sb_headers
-    )
+    url = f"{sb_url}/rest/v1/curriculum_chunks?curriculum_version_id=eq.{curriculum_version_id}&select=source_book_page_ref,chunk_type,content_chunk,section_no"
+    if chapter_id:
+        url += f"&chapter_id=eq.{chapter_id}"
+    r = requests.get(url, headers=sb_headers)
     all_chunks = r.json() or []
     
     chapter_pages = set(range(start_p, end_p + 1))
@@ -416,7 +417,8 @@ def run_edition_chapter_by_chapter(lang: str, delay_s: float = 2.0):
             cache_dir=cache_dir,
             curriculum_version_id=curriculum_version_id,
             sb_url=sb_url,
-            sb_headers=sb_headers
+            sb_headers=sb_headers,
+            chapter_id=chapter_id
         )
         if not verified:
             log(f"  [WARNING] Chapter {ch_no} verification flagged gaps. Recovering...")

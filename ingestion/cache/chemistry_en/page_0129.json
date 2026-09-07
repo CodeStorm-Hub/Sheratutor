@@ -1,0 +1,10 @@
+{
+  "page_no": 129,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**Chapter 6: Determining the Molecular Formula of a Compound from Percent Composition**\n\n**6.2.2: Determining the Molecular Formula of a Compound from Percent Composition**\n\nIf we want to determine the molecular formula of a compound from its percent composition, we need to determine the empirical formula first. If the total mass of the empirical formula of that compound is equal to its molecular mass then the empirical formula itself is also the molecular formula. But when the empirical formula and molecular mass of the compound varies from each other, then we need to find out how many times greater the molecular mass is from the empirical formula.\n\nIf molecular mass is n times greater than the empirical formula, then\n\n**Molecular Formula = (Empirical Formula)n**\n\nHere, n = Molecular Mass of Compound / Mass of Empirical Formula\n\nSuppose, percent composition of a compound is C = 92.31%, H = 7.69%. The molecular mass of the compound is 78. Determine its molecular formula.\n\nLet's divide the percent composition of elements with their respective atomic masses:\n\nC = 92.31 / 12 = 7.69\nH = 7.69 / 1 = 7.69\n\n**[STIMULUS]**\n\n(a) What is the empirical formula of the compound?\n\n(b) What is the molecular formula of the compound?\n\n(c) What is the value of n?\n\n(d) What is the mass of the empirical formula?\n\n**Answer:**\n\n(a) CH\n\n(b) C7H6\n\n(c) 10\n\n(d) 12",
+  "char_count": 1359,
+  "extraction_time_s": 10.16,
+  "timestamp": 1788732045.5784562
+}

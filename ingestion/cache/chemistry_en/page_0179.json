@@ -1,0 +1,10 @@
+{
+  "page_no": 179,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 8,
+  "markdown": "**Chapter 8: Chemistry and Energy**\n\n**8.1.3 Calculation of Heat Change in Chemical Reactions Using the Bond Energy**\n\nThe value of $\\Delta H$ in a chemical reaction is determined in two ways. We have just seen one in the above discussion. In the other, it is determined using the bond energy- deduce the total bond energy of products from the total bond energy of the reactants. The result in both the ways is the same.\n\nThe energy required to break the bonds of the atoms of a compound and separate them is called the bond energy. Again, the energy required to form the bonds of atoms of a compound and combine them is called the bond energy.\n\nDuring chemical reaction, breaking the bonds of reactants and formation of new bonds of products take place. Energy is needed to break the bonds and energy is released in bond formation.\n\nIn any reaction, if the total bond energy of reactants is $B_1$, and the total bond energy of products is $B_2$, then the heat change in that reaction is:\n\n$$\\Delta H = B_1 - B_2$$\n\n**[DIAGRAM] Caption: Fig 8.1.3 Callouts: None Description: A diagram illustrating the calculation of heat change in chemical reactions using bond energy.**\n\n**[STIMULUS]**\n\n(a) What is the value of $\\Delta H$ in a chemical reaction?\n\n(b) How is the value of $\\Delta H$ determined?\n\n(c) What is the energy required to break the bonds of the atoms of a compound and separate them?\n\n(d) What is the energy required to form the bonds of atoms of a compound and combine them?\n\n**[STIMULUS]**\n\n(a) What is the total bond energy of reactants?\n\n(b) What is the total bond energy of products?\n\n(c) What is the heat change in that reaction?\n\n(d) What is the formula for calculating the heat change in a chemical reaction?",
+  "char_count": 1727,
+  "extraction_time_s": 23.55,
+  "timestamp": 1788735160.214027
+}

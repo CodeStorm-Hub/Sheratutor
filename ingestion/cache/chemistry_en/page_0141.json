@@ -1,0 +1,10 @@
+{
+  "page_no": 141,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**Chapter 6: Concept of Mole & Chemical Calculation**\n\n**6.1 Preparation of 0.1 molar sodium carbonate solution in a 250mL volumetric flask.**\n\n**Principle:** Sodium carbonate (Na2CO3) is a primary standard substance because it is found in pure and dry state, it can be directly weighed on a balance, its molar solution is long lasting. To prepare 0.1 molar sodium carbonate solution in a volumetric flask, the following calculation is necessary:\n\nHere, V = 250mL, S = 0.1 molar, M = 23×2 + 12 + 16×3 = 106, w = ?\n\nw = S × M × V / 1000\nw = 0.1 × 106 × 250 / 1000\nw = 2.65 gram\n\nIf we weigh and put 2.65 grams of Na2CO3 inside a volumetric flask and fill the flask with 250mL water, the 0.1 molar sodium carbonate solution will be prepared. However, this molar solution preparation is very tough as to weigh 2.65 gram sodium carbonate is really tough. Therefore, the solution is made at a nearer molarity.\n\n**Necessary Instruments:**\n\n* 250mL volumetric flask\n* funnel\n* weighing bottle\n* chemical balance\n* wash bottle\n\n**Chemicals:**\n\n* Pure sodium carbonate\n* water\n\n**Procedure**\n\n1. A funnel is inserted in the mouth of a clean 250mL volumetric flask.\n2. A dry weighing bottle is weighed on the chemical balance.\n\n**[STIMULUS]**\n\nPrepare 0.1 molar sodium carbonate solution in a 250mL volumetric flask.",
+  "char_count": 1306,
+  "extraction_time_s": 24.09,
+  "timestamp": 1788733306.7261822
+}

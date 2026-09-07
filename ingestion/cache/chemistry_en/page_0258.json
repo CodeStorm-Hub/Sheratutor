@@ -1,0 +1,10 @@
+{
+  "page_no": 258,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 10,
+  "markdown": "**Mineral Resources: Metal-Nonmetal**\n\n**Chapter 10**\n\n**Electroplating**\n\nGenerally speaking, the method of laying a coating of less reactive metal on more reactive metals by electrolysis is called electroplating. In this method, the metal that will be the coating is connected to the positive charge of the battery and the metal that will get the coating is connected to the negative charge. Then the electroplating is done through electrolysis. For example, to add a coating of copper on iron, a solution of CuSO4 is taken. The copper rod is connected to the positive charge while the iron rod is connected to the negative charge. As electricity is passed in the cell, Cu donates two electrons which go into the solution as Cu2+.\n\nCu → Cu2+ + 2e-\n\nNow, this Cu2+ accepts two electrons from the Fe rod to become Cu and attaches to the Fe rod.\n\nCu2+ + 2e- → Cu\n\n**Galvanizing**\n\nThe method of laying zinc coating on any metal is called galvanizing. It does not require electrolysis. Zinc is coated anyway on any metal.\n\n**Recycling of Metals**\n\nThe amount of every element is definite in the world. After using metallic products, instead of discarding them, they are sent to the factories for making that metal. Usable metal is made from that trashed metal. This method is called Recycling of metal. For example, trashed aluminum utensils are sent to aluminum factories to recycle new aluminum. Trashed iron is sent to steel mills for recycling. 21% of the total copper used in America is recycled copper. 60% of aluminum used in Europe is recycled aluminum.\n\n**[DIAGRAM] Caption: Fig 10.1 Callouts: None Description: A diagram showing the process of electroplating.**\n\n**[DIAGRAM] Caption: Fig 10.2 Callouts: None Description: A diagram showing the process of galvanizing.**\n\n**[DIAGRAM] Caption: Fig 10.3 Callouts: None Description: A diagram showing the process of recycling metals.**",
+  "char_count": 1888,
+  "extraction_time_s": 12.81,
+  "timestamp": 1788740221.114332
+}

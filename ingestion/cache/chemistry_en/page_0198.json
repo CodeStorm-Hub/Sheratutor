@@ -1,0 +1,10 @@
+{
+  "page_no": 198,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 8,
+  "markdown": "**Chemistry and Energy**\n\n**Chapter 8: Identification of Anodes and Cathodes in Galvanic Cells**\n\n**Table 8.04: Electrode and Reaction**\n\n| Electrode | Reaction |\n| --- | --- |\n| Zn|Zn²⁺ | Zn(s) → Zn²⁺(aq) + 2e⁻ |\n| Cu|Cu²⁺ | Cu(s) → Cu²⁺(aq) + 2e⁻ |\n| Fe|Fe²⁺ | Fe(s) → Fe²⁺(aq) + 2e⁻ |\n| Ag|Ag⁺ | Ag(s) → Ag⁺(aq) + e⁻ |\n\n**Table 8.05: Electrode**\n\n| Electrode |  |\n| --- | --- |\n| Li|Li⁺ |  |\n| K|K⁺ |  |\n| Na|Na⁺ |  |\n| Mg|Mg²⁺ |  |\n| Al|Al³⁺ |  |\n| Zn|Zn²⁺ |  |\n| Fe|Fe²⁺ |  |\n| Ni|Ni²⁺ |  |\n| Sn|Sn²⁺ |  |\n| Pb|Pb²⁺ |  |\n| H₂|H⁺ |  |\n| Cu|Cu²⁺ |  |\n| Ag|Ag⁺ |  |\n\n**Oxidation half reaction at anode:**\n\nCu → Cu²⁺ + 2 e⁻\n\nAgain, silver ion accepts electron and turns into silver atom.\n\n**Reduction half reaction at cathode:**\n\n2Ag⁺ + 2e⁻ → 2Ag\n\nAdding the two half reactions, we get the total reaction of the cell:\n\nCu + 2Ag⁺ → Cu²⁺ + 2Ag\n\n**Forma-25, Chemistry Class-9-10**",
+  "char_count": 878,
+  "extraction_time_s": 17.5,
+  "timestamp": 1788736349.1446295
+}

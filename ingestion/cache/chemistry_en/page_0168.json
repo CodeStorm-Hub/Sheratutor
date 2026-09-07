@@ -1,0 +1,10 @@
+{
+  "page_no": 168,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 7,
+  "markdown": "**Chemical Reactions**\n\n**Chapter 7**\n\n**7.1**\n\n*   At the equilibrium of reversible reactions, if any of the factors (temperature, pressure and concentration of reactant) is changed, the equilibrium position will shift in such a way that the effect of factor is neutralized.\n\n**Explanation of Le Chatelier's Principle:**\n\n*   The effect of temperature, pressure and concentration of reactants in equilibrium can be explained by the Le Chatelier's principle.\n\n**Effect of Heat**\n\n*   Let us consider a reversible reaction:\n\n    $\\text{N}_2 + 3\\text{H}_2 \\rightleftharpoons 2\\text{NH}_3 + 92 \\text{ kJ}$\n*   The forward part of this reaction is exothermic; when reactants $\\text{N}_2$ and $\\text{H}_2$ react to produce $\\text{NH}_3$, they also evolve heat. Conversely in the backward part, when $\\text{NH}_3$ converts to $\\text{N}_2$ and $\\text{H}_2$, it absorbs heat. Therefore, heat is required to be applied. Now we shall see according to Le Chatellier's principle, what will happen as we apply heat to this reversible reaction. According to the principle, if heat is applied, the effect due to that heat has to be neutralized. Application of heat will increase the forward reaction, increasing production of heat and that will not neutralize the heat. If the reverse reaction is increased, that will absorb more heat and neutralize the excess heat. Therefore, according to Le Chatellier's principle, we can say that, if heat is increased, the reverse reaction will also increase. In other words, the effect of application of heat in exothermic reactions will drive the equilibrium state to the left side, meaning, $\\text{NH}_3$ converts into $\\text{N}_2$ and $\\text{H}_2$.\n\n**7.2**\n\n*   In the same way, we can say, decrease of temperature in equilibrium will increase the exothermic forward reaction and neutralize the effect of lesser heat.",
+  "char_count": 1845,
+  "extraction_time_s": 20.11,
+  "timestamp": 1788734524.7064204
+}

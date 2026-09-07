@@ -1,0 +1,10 @@
+{
+  "page_no": 57,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 3,
+  "markdown": "**Chapter 3: Structure of Matter**\n\n**3.9.1 Determining the Average Relative Mass of an Element from Percentage of Isotope**\n\nMost of the elements in nature have more than one isotope. We calculate the average relative mass of those elements having more than one isotope from their percentage of availability in nature. The steps in this calculation are:\n\n**Step 1: Multiply the mass numbers of all isotopes of that element with the percentage of natural availability of those isotopes.**\n\n**Step 2: Get the summation of all the results of step 1.**\n\n**Step 3: Divide the total of step 2 by 100. This will give the average relative mass of that element.**\n\nSuppose, an element A has 2 isotopes. If the mass number and natural availability of one of these isotopes are p and m respectively while the same of the other are q and n, then,\n\nThe average relative atomic mass of that element is = (p × m + q × n) / 100\n\nExample: There are two isotopes of chlorine in nature, 35Cl and 37Cl.\n\nNaturally available percentage of 35Cl = 75%\n\nNaturally available percentage of 37Cl = 25%\n\nSo, the average relative atomic mass of chlorine = (35 × 75 + 37 × 25) / 100 = 35.5\n\n**[DIAGRAM] Caption: Fig 3.9.1 Callouts: None Description: A diagram illustrating the calculation of the average relative mass of an element from the percentage of its isotopes.**\n\n**[DIAGRAM] Caption: Fig 3.9.2 Callouts: None Description: A diagram showing the calculation of the average relative mass of chlorine from the percentage of its isotopes.**\n\n**[DIAGRAM] Caption: Fig 3.9.3 Callouts: None Description: A diagram illustrating the calculation of the average relative mass of an element from the percentage of its isotopes.**\n\n**[DIAGRAM] Caption: Fig 3.9.4 Callouts: None Description: A diagram showing the calculation of the average relative mass of chlorine from the percentage of its isotopes.**",
+  "char_count": 1870,
+  "extraction_time_s": 24.54,
+  "timestamp": 1788727507.5721288
+}

@@ -1,0 +1,10 @@
+{
+  "page_no": 205,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 8,
+  "markdown": "**Chapter 8: Chemistry and Energy**\n\n**Section 8.16: Electricity Production in a Galvanic Cell**\n\n**Experiment**\n\n**Make a Galvanic Cell to Produce Electricity**\n\n**Principle:**\n\nThe electrochemical cell where electricity is generated through a chemical reaction is called a Galvanic cell. Two rods, one zinc rod partially dipped in zinc sulphate (ZnSO4) solution and one copper rod in copper sulphate (CuSO4) solution, are connected by a copper wire to make the Galvanic cell. Here in the cell, the zinc atom donates two electrons and turns into zinc ion (Zn2+). The electrons reach the copper rod through the connecting wire. Copper ion (Cu2+) from copper sulphate solution accepts these two electrons and turns into metallic copper. The flow of electrons through the copper wire generates electricity. The zinc rod acts as an anode and the copper rod as a cathode in the cell.\n\n**Fig 8.16: Electricity Production in a Galvanic Cell**\n\n[DIAGRAM]\nCaption: Fig 8.16: Electricity Production in a Galvanic Cell\nCallouts: Zinc (Anode), Salt bridge, Copper (Cathode)\nDescription: The diagram shows a galvanic cell with a zinc rod partially dipped in zinc sulphate solution and a copper rod in copper sulphate solution. The two rods are connected by a copper wire, and the electrons flow from the zinc rod to the copper rod, generating electricity.\n\n**Equation:**\n\nZn → Zn2+ + 2e-\nCu2+ + 2e- → Cu\n\n**Reaction in Anode:**\n\nZn → Zn2+ + 2e-\n\n**Reaction in Cathode:**\n\nCu2+ + 2e- → Cu\n\n**Reaction in Cell:**\n\nZn + Cu2+ → Zn2+ + Cu\n\n**Conclusion:**\n\nIn this experiment, we have successfully made a galvanic cell to produce electricity. The zinc rod acts as an anode and the copper rod as a cathode. The electrons flow from the zinc rod to the copper rod, generating electricity. This experiment demonstrates the principle of electrochemical cells and how they can be used to produce electricity.",
+  "char_count": 1885,
+  "extraction_time_s": 21.09,
+  "timestamp": 1788736724.7024736
+}

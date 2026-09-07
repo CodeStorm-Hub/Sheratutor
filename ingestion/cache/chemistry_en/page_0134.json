@@ -1,0 +1,10 @@
+{
+  "page_no": 134,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**Concept of Mole and Chemical Counting**\n\n**6.1**\n\nNow, a brief check will tell us that all atoms of various elements present on both the sides of the equation are equal. Therefore, the balancing of the equation is done. When the balancing of the equation is done, it can be written with equal (=) sign too.\n\n**6.2**\n\nMg + 2HCl = MgCl2 + H2\n\n**Example 2**\n\nNa2CO3 + HCl → NaCl + H2O + CO2\n\nThis is not a balanced equation as the left side has two Na while the right has one. Therefore, we multiply NaCl with 2:\n\nNa2CO3 + HCl → 2NaCl + H2O + CO2\n\nStill it is not balanced. Now the right has two Cl while the left has one Cl. Multiply HCl on the left with 2:\n\nNa2CO3 + 2HCl → 2NaCl + H2O + CO2\n\nNow, number of atoms of every element on both sides are equal.\n\nNa2CO3 + 2HCl = 2NaCl + H2O + CO2\n\n**Example 3**\n\nAluminum oxide reacts with hydrochloric acid and produces aluminum chloride and water.\n\nAl2O3 + HCl → AlCl3 + H2O\n\nTo strike a balance of Al on both sides, let us multiply AlCl3 with 2:\n\nAl2O3 + HCl → 2AlCl3 + H2O\n\nTo balance the number of Cl, multiply HCl on the left with 6:\n\nAl2O3 + 6HCl → 2AlCl3 + H2O\n\n**Forma-17, Chemistry Class-9-10**",
+  "char_count": 1149,
+  "extraction_time_s": 20.08,
+  "timestamp": 1788732552.4349575
+}

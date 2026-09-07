@@ -1,0 +1,10 @@
+{
+  "page_no": 123,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**Chapter 6: Concept of Mole & Chemical Calculation**\n\n**Problem: What is the molarity of the solution when there is 20 g Na2CO3 in 250 mL solution?**\n\n**Solution:**\n\n*   Molecular mass of Na2CO3 = 23 × 2 + 12 + 16 × 3 = 106\n*   1 molarity in 1 liter solution requires 106 gram\n*   1 molarity in 250mL solution requires 106 × 250 / 1000 = 26.5 gram\n*   26.5 g Na2CO3 in 250mL makes the molarity 1 molar\n*   1 g Na2CO3 in 250mL makes the molarity 1 / 26.5 molar\n*   20 g Na2CO3 in 250mL makes the molarity 1 × 20 / 26.5 = 0.75 molar\n\n**Alternative Way**\n\n*   w = SVM / 1000\n*   20 = S × 250 × 106 / 1000\n*   S = 0.75 molar\n\n**Problem: What is the volume of the solution in milliter when 20 g Na2CO3 is dissolved in 0.75 molar Na2CO3 solution?**\n\n**Solution:**\n\n*   Given here, S = 0.75 molar, w = 20 g, M = 23 × 2 + 12 + 16 × 3 = 106, V = ?\n*   We know, w = SVM / 1000\n*   20 = 0.75 × 106 × V / 1000\n*   V = 20 × 1000 / (0.75 × 106) = 26.5 mL\n\n**[STIMULUS]**\n\n*   What is the molarity of the solution when there is 20 g Na2CO3 in 250 mL solution?\n*   (a) 1 molar\n*   (b) 0.75 molar\n*   (c) 1.5 molar\n*   (d) 2 molar\n\n**[STIMULUS]**\n\n*   What is the volume of the solution in milliter when 20 g Na2CO3 is dissolved in 0.75 molar Na2CO3 solution?\n*   (a) 20 mL\n*   (b) 25 mL\n*   (c) 26.5 mL\n*   (d) 30 mL",
+  "char_count": 1301,
+  "extraction_time_s": 42.06,
+  "timestamp": 1788731761.4748263
+}

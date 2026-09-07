@@ -1,0 +1,10 @@
+{
+  "page_no": 122,
+  "subject": "chemistry",
+  "lang": "en",
+  "chapter_no": 6,
+  "markdown": "**Chapter 6: Concept of Mole and Chemical Calculation**\n\n**6.1 Molecular Mass of Solute = M**\n\nThen w = SVM/1000\n\nTo solve the molarity related problem, we can use the above equation\n\n**Example**\n\nProblem: How will you prepare 0.2 molar NaCl solution in a volumetric flask of 250 mL?\n\nSolution: Given, a volume of solution V = 250mL, molarity of solution S = 0.2 molar, molecular mass of NaCl = 23 + 35.5 = 58.5\n\nTherefore, 1 mole NaCl = 58.5 g\n\n0.2 molar NaCl solution in 1 liter or 1000mL requires 58.5×0.2 = 11.7 g\n\n250 mL solution requires = 11.7×250/1000 = 2.925 g\n\nAdd 2.925 gram NaCl in a 250 mL volumetric flask. Pour 250 mL water inside the flask. That will complete the preparation of 0.2 molar solution.\n\n**Alternative Solution**\n\nWe know, w = SVM/1000\n\nTherefore, w = 0.2 × 250 × 58.5/1000 = 2.925 g\n\nNow, follow the procedure of adding the solute and solvent to complete the preparation.\n\n**Problem: How much Na2CO3 is there in a 2 liter 0.1 molar Na2CO3 solution?**\n\nSolution: Molecular mass of Na2CO3 = 23×2 + 12 + 16×3 = 106\n\nTherefore, the amount of Na2CO3 necessary in a 1 liter 1 molar solution = 106 g\n\nthe amount of Na2CO3 necessary in a 1 liter 0.1 molar solution = 10.6 g\n\nthe amount of Na2CO3 necessary in a 2 liter 0.1 molar solution = 10.6 × 2g = 21.2 g",
+  "char_count": 1279,
+  "extraction_time_s": 47.86,
+  "timestamp": 1788731706.8568232
+}
