@@ -91,10 +91,9 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
     .single();
   if (paperErr || !paper) return { status: "error", message: paperErr?.message ?? "Failed to save paper." };
 
-  for (let i = 0; i < generated.questions.length; i++) {
-    const q = generated.questions[i];
-
-    // Build criteria_json from sub_questions (for CQ) or a single rule (for MCQ)
+  // Bulk-insert rubrics then questions (2 round-trips, not 2·N) so the whole
+  // action stays inside Vercel's 60s function limit for large MCQ papers.
+  const rubricRows = generated.questions.map((q, i) => {
     let criteria_json: Array<{ step_name: string; max_step_marks: number; matching_rules: string }> = [];
     if (q.question_type === "CQ" && q.sub_questions && q.sub_questions.length > 0) {
       criteria_json = q.sub_questions.map((subq) => ({
@@ -107,50 +106,41 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
         {
           step_name: "Correct Option",
           max_step_marks: q.max_marks || 1,
-          matching_rules: `Student must select ${q.mcq_correct_option || 'the correct option'}`,
+          matching_rules: `Student must select ${q.mcq_correct_option || "the correct option"}`,
         },
       ];
     }
+    return { chapter_id: q.chapter_id, title: `${title} — Q${i + 1}`, criteria_json, is_active: true, created_by: user.id };
+  });
 
-    const { data: rubric, error: rubricErr } = await supabase
-      .from("rubrics")
-      .insert({
-        chapter_id: q.chapter_id,
-        title: `${title} — Q${i + 1}`,
-        criteria_json,
-        is_active: true,
-        created_by: user.id,
-      })
-      .select("id")
-      .single();
+  const { data: rubrics, error: rubricErr } = await supabase.from("rubrics").insert(rubricRows).select("id");
+  if (rubricErr || !rubrics || rubrics.length !== generated.questions.length) {
+    console.error("Failed to insert rubrics:", rubricErr);
+    await supabase.from("question_papers").delete().eq("id", paper.id);
+    return { status: "error", message: rubricErr?.message ?? "Failed to save rubrics." };
+  }
 
-    if (rubricErr || !rubric) {
-      console.error("Failed to insert rubric:", rubricErr);
-      await supabase.from("question_papers").delete().eq("id", paper.id);
-      return { status: "error", message: rubricErr?.message ?? "Failed to save rubric." };
-    }
+  const questionRows = generated.questions.map((q, i) => ({
+    question_paper_id: paper.id,
+    chapter_id: q.chapter_id,
+    rubric_id: rubrics[i].id,
+    question_number: i + 1,
+    max_marks: q.max_marks || (q.question_type === "CQ" ? 10 : 1),
+    question_type: q.question_type,
+    stimulus_bn: q.stimulus_bn || null,
+    stimulus_en: q.stimulus_en || null,
+    sub_questions_json: q.sub_questions ? JSON.stringify(q.sub_questions) : null,
+    mcq_options_json: q.mcq_options ? JSON.stringify(q.mcq_options) : null,
+    mcq_correct_option: q.mcq_correct_option || null,
+    question_text_bn: q.question_type === "MCQ" ? q.mcq_question_bn || "" : q.stimulus_bn || "",
+    question_text_en: q.question_type === "MCQ" ? q.mcq_question_en || "" : q.stimulus_en || "",
+  }));
 
-    const { error: questionErr } = await supabase.from("questions").insert({
-      question_paper_id: paper.id,
-      chapter_id: q.chapter_id,
-      rubric_id: rubric.id,
-      question_number: i + 1,
-      max_marks: q.max_marks || (q.question_type === "CQ" ? 10 : 1),
-      question_type: q.question_type,
-      stimulus_bn: q.stimulus_bn || null,
-      stimulus_en: q.stimulus_en || null,
-      sub_questions_json: q.sub_questions ? JSON.stringify(q.sub_questions) : null,
-      mcq_options_json: q.mcq_options ? JSON.stringify(q.mcq_options) : null,
-      mcq_correct_option: q.mcq_correct_option || null,
-      question_text_bn: q.question_type === "MCQ" ? (q.mcq_question_bn || "") : (q.stimulus_bn || ""),
-      question_text_en: q.question_type === "MCQ" ? (q.mcq_question_en || "") : (q.stimulus_en || ""),
-    });
-
-    if (questionErr) {
-      console.error("Failed to insert question:", questionErr);
-      await supabase.from("question_papers").delete().eq("id", paper.id);
-      return { status: "error", message: questionErr.message };
-    }
+  const { error: questionErr } = await supabase.from("questions").insert(questionRows);
+  if (questionErr) {
+    console.error("Failed to insert questions:", questionErr);
+    await supabase.from("question_papers").delete().eq("id", paper.id);
+    return { status: "error", message: questionErr.message };
   }
 
   // Redirect to Question Paper Viewer
