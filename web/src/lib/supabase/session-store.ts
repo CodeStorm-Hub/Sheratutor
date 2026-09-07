@@ -122,7 +122,8 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
         .from("tutor_chat_messages")
         .select("id, role, content, created_at")
         .eq("session_id", sessionRow.id)
-        .order("created_at", { ascending: true });
+        .order("created_at", { ascending: true })
+        .order("id", { ascending: true });
 
       const messages = (messagesData ?? [])
         .filter((m) => m.content && !m.content.includes("LLM streaming failed"))
@@ -165,7 +166,7 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
   async saveSnapshot(
     snapshotId: string | undefined,
     mutator: SnapshotMutator<S>,
-    _options?: SessionStoreOptions
+    options?: SessionStoreOptions
   ): Promise<string | null> {
     const current = snapshotId ? await this.getSnapshot({ snapshotId }) : undefined;
     const mutated = mutator(current ? structuredClone(current) : undefined);
@@ -202,6 +203,7 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
     try {
       const supabase = getServiceRoleClient();
       const customState = (mutated.state?.custom ?? {}) as Record<string, unknown>;
+      const ctx = (options?.context ?? {}) as Record<string, unknown>;
 
       let dbSessionId = isUuid(sessionId) ? sessionId : undefined;
       let existingSession: { id: string } | null = null;
@@ -227,6 +229,44 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
         }
       }
 
+      let studentId = (customState.studentId || customState.student_id || ctx.studentId) as string | undefined;
+      if (!studentId && ctx.userId) {
+        const { data: prof } = await supabase
+          .from("student_profiles")
+          .select("id")
+          .eq("user_id", ctx.userId)
+          .maybeSingle();
+        if (prof?.id) studentId = prof.id;
+      }
+      if (!studentId) {
+        const { data: firstProf } = await supabase
+          .from("student_profiles")
+          .select("id")
+          .limit(1)
+          .maybeSingle();
+        if (firstProf?.id) studentId = firstProf.id;
+      }
+
+      const mode = (customState.mode || ctx.mode || "general") as string;
+      const submissionId = (customState.submissionId || ctx.submissionId || null) as string | null;
+      const questionId = (customState.questionId || ctx.questionId || null) as string | null;
+      const rubricStepIndex =
+        typeof customState.rubricStepIndex === "number"
+          ? customState.rubricStepIndex
+          : typeof ctx.rubricStepIndex === "number"
+          ? ctx.rubricStepIndex
+          : null;
+
+      const firstMessageText = mutated.state?.messages?.[0]
+        ? extractTextFromContent(mutated.state.messages[0].content)
+        : "";
+      const title = (
+        (customState.title as string) ||
+        (customState.studentMessage as string) ||
+        firstMessageText ||
+        "Tutor Session"
+      ).slice(0, 40);
+
       const contextJsonToSave = {
         ...customState,
         sessionId,
@@ -235,6 +275,8 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
         status: mutated.status,
         finishReason: mutated.finishReason,
         artifacts: mutated.state?.artifacts,
+        studentId,
+        mode,
       };
 
       if (existingSession && dbSessionId) {
@@ -245,31 +287,27 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
             context_json: contextJsonToSave,
           })
           .eq("id", dbSessionId);
-      } else if (dbSessionId) {
-        const studentId = (customState.studentId || customState.student_id) as string | undefined;
-        if (studentId) {
-          await supabase.from("tutor_chat_sessions").insert({
-            id: dbSessionId,
-            student_id: studentId,
-            mode: (customState.mode as string) || "general",
-            title: ((customState.studentMessage as string) || "Tutor Session").slice(0, 40),
-            submission_id: (customState.submissionId as string) || null,
-            question_id: (customState.questionId as string) || null,
-            rubric_step_index: typeof customState.rubricStepIndex === "number" ? customState.rubricStepIndex : null,
-            context_json: contextJsonToSave,
-          });
-        }
+      } else if (dbSessionId && studentId) {
+        await supabase.from("tutor_chat_sessions").insert({
+          id: dbSessionId,
+          student_id: studentId,
+          mode,
+          title,
+          submission_id: submissionId,
+          question_id: questionId,
+          rubric_step_index: rubricStepIndex,
+          context_json: contextJsonToSave,
+        });
       }
 
       // Persist any newly appended textual messages
       if (mutated.state?.messages && mutated.state.messages.length > 0 && dbSessionId) {
-        const { data: existingMsgs } = await supabase
+        const { count } = await supabase
           .from("tutor_chat_messages")
-          .select("id, content, role")
-          .eq("session_id", dbSessionId)
-          .order("created_at", { ascending: true });
+          .select("id", { count: "exact", head: true })
+          .eq("session_id", dbSessionId);
 
-        const existingCount = existingMsgs?.length ?? 0;
+        const existingCount = count ?? 0;
         // Filter to only textual messages so indices align with rows in tutor_chat_messages
         const textualMessages = mutated.state.messages.filter(
           (msg) => extractTextFromContent(msg.content).trim().length > 0
@@ -277,18 +315,19 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
         const newMessages = textualMessages.slice(existingCount);
 
         if (newMessages.length > 0) {
-          const rowsToInsert = newMessages
-            .map((msg) => {
-              const text = extractTextFromContent(msg.content);
-              return {
-                session_id: dbSessionId!,
-                role: msg.role === "user" ? "student" : "tutor",
-                content: text,
-                safety_category: "none",
-              };
-            });
+          const baseTime = Date.now();
+          const rowsToInsert = newMessages.map((msg, idx) => ({
+            session_id: dbSessionId!,
+            role: msg.role === "user" ? "student" : "tutor",
+            content: extractTextFromContent(msg.content),
+            safety_category: "none",
+            created_at: new Date(baseTime + idx * 50).toISOString(),
+          }));
 
-          await supabase.from("tutor_chat_messages").insert(rowsToInsert);
+          const { error: insertErr } = await supabase.from("tutor_chat_messages").insert(rowsToInsert);
+          if (insertErr) {
+            console.error("Failed to insert tutor_chat_messages:", insertErr);
+          }
         }
       }
     } catch (err) {

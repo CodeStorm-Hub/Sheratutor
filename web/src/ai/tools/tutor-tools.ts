@@ -32,7 +32,10 @@ export const searchTextbookCurriculum = ai.defineTool(
   },
   async ({ query, chapterId, language = "bn" }) => {
     try {
-      if (chapterId) {
+      const isUuid = (val?: string | null) =>
+        !!val && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(val);
+
+      if (chapterId && isUuid(chapterId)) {
         try {
           const result = await retrieveGroundingFlow({
             queryText: query,
@@ -63,17 +66,29 @@ export const searchTextbookCurriculum = ai.defineTool(
         .from("curriculum_chunks")
         .select("content_chunk, source_book_page_ref, section_title");
 
-      const isUuid = (val?: string | null) =>
-        !!val && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(val);
-
       if (chapterId && isUuid(chapterId)) {
         queryBuilder = queryBuilder.eq("chapter_id", chapterId);
       }
 
-      const cleanQuery = query.trim();
-      const { data: chunks } = await queryBuilder
-        .or(`content_chunk.ilike.%${cleanQuery}%,section_title.ilike.%${cleanQuery}%`)
-        .limit(3);
+      // Extract significant keywords rather than searching the verbatim full sentence
+      const stopwords = new Set(["কীভাবে", "করব", "হলে", "কত", "বের", "যদি", "একটি", "এবং", "বা", "কোনো", "হলে", "কি", "কী"]);
+      const keywords = query
+        .replace(/[,%?!।=+\-*\/()]/g, " ")
+        .split(/\s+/)
+        .filter((w) => w.length > 1 && !stopwords.has(w))
+        .slice(0, 3);
+
+      if (keywords.length > 0) {
+        const orConditions = keywords
+          .map((kw) => `content_chunk.ilike.%${kw}%,section_title.ilike.%${kw}%`)
+          .join(",");
+        queryBuilder = queryBuilder.or(orConditions);
+      } else {
+        const cleanQuery = query.replace(/[,%]/g, " ").trim().slice(0, 30);
+        queryBuilder = queryBuilder.or(`content_chunk.ilike.%${cleanQuery}%,section_title.ilike.%${cleanQuery}%`);
+      }
+
+      const { data: chunks } = await queryBuilder.limit(3);
 
       if (chunks && chunks.length > 0) {
         return {
@@ -615,7 +630,7 @@ export const verifyPhysicsCalculation = ai.defineTool(
 export const requestPracticeQuizInterrupt = ai.defineInterrupt({
   name: "requestPracticeQuizInterrupt",
   description:
-    "Prompts the student for confirmation before generating an interactive 3-question remedial practice quiz.",
+    "Prompts the student for confirmation before generating an interactive 3-question remedial practice quiz. ONLY call this tool when the student explicitly and directly asks for a practice quiz or test (e.g., 'কুইজ দাও', 'টেস্ট নাও'). DO NOT call this tool for general explanations, formula questions, or standard math queries.",
   inputSchema: z.object({
     topic: z.string().describe("Specific physics topic (e.g. 'গতিশক্তি ও কাজ')"),
     reason: z.string().describe("Pedagogical reason why practice questions will clarify the misconception"),

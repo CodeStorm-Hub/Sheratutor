@@ -244,21 +244,17 @@ export function TutorPageClient({
             role: 'user',
             content: [{ text: query }],
           },
+          metadata: {
+            mode: 'general',
+            subjectId: currentSubject?.id,
+            chapterId: currentChapter?.id,
+            studentMessage: query,
+            languagePreference: language === 'en' ? 'en' : 'bn',
+            scaffoldingStyle,
+          },
         },
         init: {
           sessionId: activeSessionId ?? undefined,
-          state: {
-            sessionId: activeSessionId ?? undefined,
-            custom: {
-              sessionId: activeSessionId ?? undefined,
-              mode: 'general',
-              subjectId: currentSubject?.id,
-              chapterId: currentChapter?.id,
-              studentMessage: query,
-              languagePreference: language === 'en' ? 'en' : 'bn',
-              scaffoldingStyle,
-            },
-          },
         },
         abortSignal: controller.signal,
       });
