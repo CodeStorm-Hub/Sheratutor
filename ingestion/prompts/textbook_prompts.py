@@ -58,9 +58,10 @@ Transcribe the exact content of this page image into clean, structured GitHub-fl
 
 {ch_directive}
 
-3. MANDATORY FIGURE, DIAGRAM & ARTWORK AUDIT:
-   - Carefully scan the page for EVERY photograph, diagram, apparatus setup, molecular model, graph, or illustration.
-   - For EACH figure found, transcribe it into a clean block:
+3. FIGURE & DIAGRAM AUDIT:
+   - Carefully check if any photograph, diagram, molecular model, graph, or apparatus illustration is physically printed on this page.
+   - If NO photograph, diagram, or illustration is physically printed on this page, do NOT output any [DIAGRAM] blocks. Absolutely NEVER invent, assume, or hallucinate synthetic diagrams.
+   - For EACH real printed figure found, transcribe it into a clean block:
      ```
      [DIAGRAM]
      Caption: <Exact printed figure number and caption as printed on page>

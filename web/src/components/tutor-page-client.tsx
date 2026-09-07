@@ -30,6 +30,7 @@ import { PageHeader } from '@/components/PageHeader';
 import { useLanguage } from '@/context/LanguageContext';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
+import { sanitizeTutorReply } from '@/lib/tutor-format';
 
 type Chapter = { id: string; chapter_no: number; title_en: string; title_bn: string };
 type Subject = { id: string; name_en: string; name_bn: string; chapters: Chapter[] };
@@ -211,7 +212,9 @@ export function TutorPageClient({
     }
   };
 
-  const [scaffoldingStyle] = useState<'socratic' | 'direct'>('socratic');
+  // The standalone "explain it simply" tutor gives full worked explanations.
+  // (Socratic nudging is used in rubric mode, from the results page.)
+  const [scaffoldingStyle] = useState<'socratic' | 'direct'>('direct');
 
 
   // Submit Question with Real-time SSE Token Streaming
@@ -232,9 +235,18 @@ export function TutorPageClient({
     setMessages(updatedMessages);
     setIsGenerating(true);
 
-    // Setup abort controller
+    // Setup abort controller + a hard client-side timeout. The route caps at
+    // maxDuration=60s; give the stream a little past that, then abort with a
+    // clear "took too long" message instead of leaving the bubble stuck on
+    // "Generating response…" forever.
     const controller = new AbortController();
     abortControllerRef.current = controller;
+    let timedOut = false;
+    const TUTOR_TIMEOUT_MS = 75_000;
+    const timeoutId = setTimeout(() => {
+      timedOut = true;
+      controller.abort();
+    }, TUTOR_TIMEOUT_MS);
 
     try {
       const { stream, output } = streamFlow({
@@ -336,13 +348,18 @@ export function TutorPageClient({
         setActiveSessionId(resolvedSessionId);
       }
 
+      const cleanedReply = sanitizeTutorReply(finalReply || accumulatedText);
       setMessages((prev) => {
         const newArr = [...prev];
         const lastIdx = newArr.length - 1;
         if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
           newArr[lastIdx] = {
             ...newArr[lastIdx],
-            text: finalReply || accumulatedText,
+            text:
+              cleanedReply ||
+              (language === 'bn'
+                ? 'দুঃখিত, এই মুহূর্তে উত্তর তৈরি করা গেল না। আবার চেষ্টা করো।'
+                : "Sorry, I couldn't put together an answer just now. Please try again."),
             isStreaming: false,
           };
         }
@@ -367,26 +384,32 @@ export function TutorPageClient({
         ]);
       }
     } catch (err: unknown) {
-      if ((err as Error)?.name === 'AbortError') {
+      if ((err as Error)?.name === 'AbortError' && !timedOut) {
+        // User pressed Stop — leave whatever streamed so far as-is.
         return;
       }
+      const message = timedOut
+        ? language === 'bn'
+          ? 'উত্তর তৈরি করতে অনেক সময় লাগছে। একটু পরে আবার চেষ্টা করো, অথবা প্রশ্নটি ছোট করে জিজ্ঞাসা করো।'
+          : 'This is taking too long to answer. Please try again in a moment, or ask a shorter question.'
+        : language === 'bn'
+          ? 'দুঃখিত, সংযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করো।'
+          : 'Sorry, a connection error occurred. Please try again.';
       setMessages((prev) => {
         const newArr = [...prev];
         const lastIdx = newArr.length - 1;
         if (lastIdx >= 0 && newArr[lastIdx].role === 'assistant') {
-          newArr[lastIdx] = {
-            ...newArr[lastIdx],
-            text:
-              language === 'bn'
-                ? 'দুঃখিত, সংযোগে সমস্যা হয়েছে। অনুগ্রহ করে আবার চেষ্টা করো।'
-                : 'Sorry, a connection error occurred. Please try again.',
-            isStreaming: false,
-          };
+          newArr[lastIdx] = { ...newArr[lastIdx], text: message, isStreaming: false };
         }
         return newArr;
       });
-      toast.error(language === 'bn' ? 'সংযোগ সমস্যা হয়েছে' : 'Connection error');
+      toast.error(
+        timedOut
+          ? language === 'bn' ? 'সময় শেষ হয়ে গেছে' : 'Request timed out'
+          : language === 'bn' ? 'সংযোগ সমস্যা হয়েছে' : 'Connection error'
+      );
     } finally {
+      clearTimeout(timeoutId);
       setIsGenerating(false);
       abortControllerRef.current = null;
     }
@@ -583,7 +606,7 @@ export function TutorPageClient({
               <span className="size-[7px] animate-pulse rounded-full bg-green" />
               <span className="text-xs font-semibold text-foreground">Shera AI Engine</span>
             </div>
-            <p className="mt-0.5 text-xs text-muted-foreground">NCTB Curriculum • Llama 3.1 70B</p>
+            <p className="mt-0.5 text-xs text-muted-foreground">NCTB Curriculum • NVIDIA NIM</p>
           </div>
         </aside>
 

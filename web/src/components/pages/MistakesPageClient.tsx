@@ -59,7 +59,11 @@ export function MistakesPageClient({
     selectedCategory === 'ALL' ? true : m.mistakeCategory === selectedCategory,
   );
 
-  const allTags = Array.from(new Set(dynamicMistakes.flatMap((m) => m.tags || [])));
+  // weakness_logs.tags rows sometimes already carry a leading "#", so
+  // normalise before we prepend our own (was rendering "##Calculation").
+  const allTags = Array.from(
+    new Set(dynamicMistakes.flatMap((m) => (m.tags || []).map((t) => t.replace(/^#+/, '').trim())).filter(Boolean))
+  );
 
   return (
     <div className="mx-auto max-w-[800px] space-y-4 print:max-w-full">

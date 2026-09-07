@@ -59,9 +59,9 @@ async function SubmissionDetailContent({ params }: { params: Promise<{ id: strin
   (results ?? []).forEach((r) => {
     const list = (r.rubric_breakdown_json as Array<Record<string, unknown>>) || [];
     list.forEach((c) => {
-      const name = String(c.criterion_name || c.name || 'Criteria');
-      const awarded = Number(c.marks_awarded ?? c.awarded ?? 1);
-      const max = Number(c.max_marks ?? c.max ?? 1);
+      const name = String(c.step_name ?? c.criterion_name ?? c.name ?? 'Criteria');
+      const awarded = Number(c.awarded_marks ?? c.marks_awarded ?? c.awarded ?? 1);
+      const max = Number(c.max_step_marks ?? c.max_marks ?? c.max ?? 1);
       const existing = allCriteria.find((x) => x.name === name);
       if (existing) {
         existing.awarded += awarded;
@@ -93,13 +93,13 @@ async function SubmissionDetailContent({ params }: { params: Promise<{ id: strin
     question_number: r.questions?.question_number,
     question_text_en: r.questions?.question_text_en,
     question_text_bn: r.questions?.question_text_bn,
-    marks_awarded: Number(r.marks_awarded ?? 0),
+    marks_awarded: Number(r.score_obtained ?? 0),
     max_marks: Number(r.max_marks ?? r.questions?.max_marks ?? 10),
-    observations_json: (r.observations_json as Array<{
-      step: string;
-      observation: string;
-      marks_deducted: number;
-    }>) || null,
+    observations_json: ((r.rubric_breakdown_json as Array<Record<string, unknown>>) || []).map((step) => ({
+      step: String(step.step_name ?? step.name ?? step.step ?? 'Step'),
+      observation: String(step.observation ?? step.comment ?? ''),
+      marks_deducted: Number(step.max_step_marks ?? step.max ?? 0) - Number(step.awarded_marks ?? step.awarded ?? 0),
+    })) || null,
   }));
 
   return (

@@ -97,17 +97,43 @@ export const ai = genkit({
   ],
 });
 
+/**
+ * Model IDs (2026-09-07 re-pin). Every default is a model that is *live on
+ * NVIDIA NIM's free hosted endpoint right now* — verified against
+ * `GET https://integrate.api.nvidia.com/v1/models` plus a real completion
+ * call per ID. The previous defaults (`nvidia/nemotron-3-nano-30b-a3b`,
+ * `nvidia/llama-nemotron-embed-1b-v2`) had been retired upstream and every
+ * call returned HTTP 410 Gone / 404. Do NOT set a model here without a
+ * live 200 from that account first — the catalog lists many IDs the free
+ * tier cannot actually serve.
+ *
+ *   reasoning / fast : openai/gpt-oss-20b — real reasoning model, clean
+ *       OpenAI-compat `content`, solid at Socratic tutoring + tools.
+ *   paper           : nvidia/nemotron-3-nano-omni-30b-a3b-reasoning — verified
+ *       to return valid full-CQ JSON; gpt-oss-20b was intermittently throwing
+ *       "Connection error" on the long paper prompt.
+ *   vision          : meta/llama-3.2-11b-vision-instruct — the only working
+ *       vision model on the free tier (90b variant 404s).
+ */
 export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  fast: process.env.GENKIT_FAST_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  paper: process.env.GENKIT_PAPER_MODEL ?? "nim/nvidia/nemotron-3-nano-30b-a3b",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b",
+  fast: process.env.GENKIT_FAST_MODEL ?? "nim/openai/gpt-oss-20b",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "nim/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning",
 } as const;
 
-// Production and live environment use NVIDIA NIM's hosted llama-nemotron-embed-1b-v2
-// (1024-dim Matryoshka truncation) matching chunk_embeddings.embedding vector(1024)
-const NIM_EMBED_MODEL = "nvidia/llama-nemotron-embed-1b-v2";
-const NIM_EMBED_MODEL_VERSION = "v1";
+// Fallback reasoning model, deliberately a DIFFERENT live NIM model from
+// MODELS.reasoning / MODELS.paper so a per-model outage still has a working
+// path (this is what actually rescued paper generation in testing).
+export const FALLBACK_REASONING_MODEL =
+  process.env.GENKIT_FALLBACK_REASONING_MODEL ?? "nim/openai/gpt-oss-20b";
+
+// NIM's hosted llama-nemotron-embed-vl-1b-v2 with `dimensions: 1024`
+// (Matryoshka truncation, verified) — successor to the retired
+// llama-nemotron-embed-1b-v2, same vector(1024) column. Used for BOTH local
+// dev and production (no Ollama split) so dev exercises the exact prod path.
+const NIM_EMBED_MODEL = "nvidia/llama-nemotron-embed-vl-1b-v2";
+const NIM_EMBED_MODEL_VERSION = "v2";
 const NIM_EMBED_DIMENSIONS = 1024;
 
 const OLLAMA_EMBED_MODEL = "bge-m3";
@@ -215,10 +241,16 @@ export const nimEmbedder = ai.defineEmbedder(
   }
 );
 
-// We always use NVIDIA NIM free endpoints for all integrations
+// NIM everywhere. `ollamaEmbedder` stays defined for optional fully-offline
+// experiments, but it is NOT the active path anymore: local dev and prod both
+// embed + query through NIM so the model, dimensions and stored `model_name`
+// are identical in every environment. (Previously local used Ollama/bge-m3
+// while prod used a since-retired NIM model — dev "passed" while prod's RAG
+// returned zero rows.)
+export const isLocalOllamaEmbed = false;
 export const activeEmbedder = nimEmbedder;
 export const EMBED_MODEL_NAME = NIM_EMBED_MODEL;
 export const EMBED_MODEL_VERSION = NIM_EMBED_MODEL_VERSION;
 
-export const PIPELINE_VERSION = "v1.3.0-nim-standard";
+export const PIPELINE_VERSION = "v1.4.0-nim-only";
 export const PROMPT_VERSION = "v1.1.0";
