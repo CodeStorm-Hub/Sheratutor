@@ -1,0 +1,1271 @@
+<!-- Title: Region availability for Foundry Models sold by Azure | Category: Models/Quota limits and region availability/Region availability for Foundry Models sold by Azure | URL: foundry-models/concepts/models-sold-directly-by-azure-region-availability -->
+
+---
+layout: Conceptual
+title: Region availability for Foundry Models sold by Azure - Microsoft Foundry | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability
+breadcrumb_path: ../../../breadcrumb/azure-ai/toc.json
+feedback_help_link_url: https://learn.microsoft.com/answers/tags/133/azure
+feedback_help_link_type: get-help-at-qna
+feedback_product_url: https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4
+feedback_system: Standard
+permissioned-type: public
+recommendations: true
+recommendation_types:
+- Training
+- Certification
+uhfHeaderId: azure-ai-foundry
+ms.suite: office
+zone_pivot_group_filename: zone-pivots/azure-ai/zone-pivot-groups.json
+author: msakande
+learn_banner_products:
+- azure
+manager: mcleans
+ms.author: mopeakande
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 90-days
+ms.service: microsoft-foundry
+description: Find region availability, capabilities, and deployments types available for Microsoft Foundry Models sold by Azure, to inform their use in AI applications.
+ms.date: 2026-09-03T00:00:00.0000000Z
+ms.subservice: foundry-model-inference
+ms.topic: product-comparison
+ms.custom:
+- classic-and-new
+ai-usage: ai-assisted
+zone_pivot_groups: adm-region-availability
+locale: en-us
+document_id: f46d989a-0a7d-469a-69ff-72f44d770d4a
+document_version_independent_id: d9c98c2c-d76f-15af-2307-4c62bc8992f1
+updated_at: 2026-09-04T15:59:00.0000000Z
+original_content_git_url: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/live/articles/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability.md
+gitcommit: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/febf1b49f8c3ce178f343cb1bd15218d253f4887/articles/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability.md
+git_commit_id: febf1b49f8c3ce178f343cb1bd15218d253f4887
+site_name: Docs
+depot_name: Learn.azure-ai
+page_type: conceptual
+toc_rel: ../../toc.json
+word_count: 9181
+asset_id: foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: articles/foundry/foundry-models/concepts/models-sold-directly-by-azure-region-availability.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/cbd33d8f-e9af-440e-8f1e-fc69e07b902b
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/de19c5b8-e208-412e-9238-db3f631dea5b
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3820371b-086e-47fb-9d1f-b215f569127a
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ea7bf5d6-7154-4ba9-8ebc-59117ccacd49
+platformId: 1f5d979b-d019-8077-8fe3-90b16fcb5210
+---
+
+# Region availability for Foundry Models sold by Azure - Microsoft Foundry | Microsoft Learn
+
+Microsoft Foundry provides customers with choices on the hosting structure that fits their business and usage patterns. In Foundry Models sold by Azure, model offerings include both Azure OpenAI models and models from other providers. This article introduces regional availability across both collections.
+
+Serverless API deployment in Microsoft Foundry includes three deployment categories: *standard* (pay-per-token), *provisioned* (reserved capacity), and *batch* (for asynchronous requests). Within these categories, you can choose global, data zone, or regional deployment types based on your compliance requirements. For all deployment types, data stored at rest remains in the designated Azure geography (Americas, Europe, Asia Pacific, and Middle East and Africa). However, inferencing data is processed as follows:
+
+- **Global** types: Might be processed in any Azure region where the model is deployed
+- **Data Zone** types: Processed anywhere within the Microsoft-specified data zone (US, EU, or Asia Pacific (APAC))
+- **Standard/Regional** types: Processed in the region associated with your deployment (not available for batch deployments)
+
+All deployments can perform the exact same inference operations, but the billing, scale, and performance are substantially different. To learn more about Microsoft Foundry deployment types, including *batch* deployment types, see [Deployment types for Microsoft Foundry Models](deployment-types).
+
+Tip
+
+Use the tabs at the top of this page to switch deployment categories: [Standard deployment options](models-sold-directly-by-azure-region-availability?pivots=standard), [Provisioned deployment options](models-sold-directly-by-azure-region-availability?pivots=provisioned), and [Batch deployment options](models-sold-directly-by-azure-region-availability?pivots=batch).
+
+::: zone pivot="standard"
+
+## Global Standard
+
+For **global deployments**, Azure OpenAI can process prompts and responses in any Azure region where you deploy the model.
+
+#### Availability for Azure OpenAI in Foundry Models
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| codex-mini | 2025-05-16 | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| computer-use-preview | 2025-03-11 | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-4.1 | 2025-04-14 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini-transcribe | 2025-03-20 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-4o-mini-transcribe | 2025-12-15 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-4o-mini-tts | 2025-03-20 | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-4o-mini-tts | 2025-12-15 | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-4o-transcribe | 2025-03-20 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-4o-transcribe-diarize | 2025-10-15 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-5 | 2025-08-07 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-codex | 2025-09-15 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-nano | 2025-08-07 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-pro | 2025-10-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex-max | 2025-12-04 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex-mini | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2-codex | 2026-01-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-nano | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-pro | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-audio | 2025-08-28 | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-audio-1.5 | 2026-02-23 | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-audio-mini | 2025-10-06 | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-audio-mini | 2025-12-15 | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-chat-latest | 2026-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-chat-latest | 2026-05-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-chat-latest | 2026-05-28 | - | - | - | - | - | ✅ | - | ✅ | - | ✅ |
+| gpt-chat-latest | 2026-06-24 | - | - | - | - | - | ✅ | - | ✅ | - | ✅ |
+| gpt-image-1 | 2025-04-15 | - | - | - | - | - | ✅ | - | - | - | ✅ |
+| gpt-image-1-mini | 2025-10-06 | - | - | - | - | - | ✅ | - | - | - | ✅ |
+| gpt-image-1.5 | 2025-12-16 | - | - | - | - | - | ✅ | - | - | - | ✅ |
+| gpt-image-2 | 2026-04-21 | - | - | - | - | - | ✅ | - | - | - | ✅ |
+| gpt-realtime | 2025-08-28 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime-1.5 | 2026-02-23 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime-2 | 2026-05-06 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime-2.1 | 2026-07-07 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime-2.1-mini | 2026-07-07 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime-mini | 2025-10-06 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime-mini | 2025-12-15 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime-translate | 2026-05-06 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime-whisper | 2026-05-06 | - | ✅ | - | ✅ | - | ✅ | - | - | - | - |
+| model-router | 2025-05-19 | - | - | - | - | - | ✅ | - | - | - | ✅ |
+| model-router | 2025-08-07 | - | - | - | - | - | ✅ | - | - | - | ✅ |
+| model-router | 2025-11-18 | - | - | - | - | - | ✅ | - | - | - | ✅ |
+| o1 | 2024-12-17 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-deep-research | 2025-06-26 | - | - | - | - | - | - | - | - | ✅ | - |
+| o3-mini | 2025-01-31 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-pro | 2025-06-10 | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| o4-mini | 2025-04-16 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| sora-2 | 2025-10-06 | - | - | - | - | - | ✅ | - | - | - | - |
+| sora-2 | 2025-12-08 | - | - | - | - | - | ✅ | - | - | - | - |
+| text-embedding-3-large | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-3-small | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| codex-mini | 2025-05-16 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| computer-use-preview | 2025-03-11 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4o-mini-transcribe | 2025-03-20 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-4o-mini-transcribe | 2025-12-15 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-4o-transcribe | 2025-03-20 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-4o-transcribe-diarize | 2025-10-15 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-5-codex | 2025-09-15 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-5-nano | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-5-pro | 2025-10-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex-max | 2025-12-04 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex-mini | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2-codex | 2026-01-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-nano | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-pro | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-audio | 2025-08-28 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-audio-1.5 | 2026-02-23 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-audio-mini | 2025-10-06 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-audio-mini | 2025-12-15 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-chat-latest | 2026-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-chat-latest | 2026-05-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-chat-latest | 2026-05-28 | - | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-chat-latest | 2026-06-24 | - | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-image-1 | 2025-04-15 | - | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-image-1-mini | 2025-10-06 | - | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-image-1.5 | 2025-12-16 | - | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-image-2 | 2026-04-21 | - | - | - | - | ✅ | - | ✅ | - | - | - | - |
+| gpt-realtime | 2025-08-28 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-realtime-1.5 | 2026-02-23 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-realtime-2 | 2026-05-06 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-realtime-2.1 | 2026-07-07 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-realtime-2.1-mini | 2026-07-07 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-realtime-mini | 2025-10-06 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-realtime-mini | 2025-12-15 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-realtime-translate | 2026-05-06 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-realtime-whisper | 2026-05-06 | ✅ | - | - | - | - | - | ✅ | - | - | - | - |
+| model-router | 2025-05-19 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| model-router | 2025-08-07 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| model-router | 2025-11-18 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| o1 | 2024-12-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| o3-deep-research | 2025-06-26 | - | - | - | ✅ | - | - | - | - | - | - | - |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| o3-pro | 2025-06-10 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| sora-2 | 2025-10-06 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| sora-2 | 2025-12-08 | - | - | - | - | - | - | ✅ | - | - | - | - |
+| text-embedding-3-large | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-3-small | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
+| --- | --- | --- | --- | --- | --- | --- |
+| computer-use-preview | 2025-02-11 | - | - | - | - | ✅ |
+| computer-use-preview | 2025-03-11 | - | - | - | - | ✅ |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o-mini-transcribe | 2025-03-20 | - | - | - | - | ✅ |
+| gpt-4o-mini-transcribe | 2025-12-15 | - | - | - | - | ✅ |
+| gpt-4o-transcribe | 2025-03-20 | - | - | - | - | ✅ |
+| gpt-4o-transcribe-diarize | 2025-10-15 | - | - | - | - | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-codex | 2025-09-15 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-nano | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-pro | 2025-10-06 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex-max | 2025-12-04 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex-mini | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2-codex | 2026-01-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-nano | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-pro | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-chat-latest | 2026-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-chat-latest | 2026-05-05 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-realtime | 2025-08-28 | - | - | - | - | ✅ |
+| gpt-realtime-1.5 | 2026-02-23 | - | - | - | - | ✅ |
+| gpt-realtime-2 | 2026-05-06 | - | - | - | - | ✅ |
+| gpt-realtime-2.1 | 2026-07-07 | - | - | - | - | ✅ |
+| gpt-realtime-2.1-mini | 2026-07-07 | - | - | - | - | ✅ |
+| gpt-realtime-mini | 2025-10-06 | - | - | - | - | ✅ |
+| gpt-realtime-mini | 2025-12-15 | - | - | - | - | ✅ |
+| gpt-realtime-translate | 2026-05-06 | - | - | - | - | ✅ |
+| gpt-realtime-whisper | 2026-05-06 | - | - | - | - | ✅ |
+| model-router | 2025-05-19 | ✅ | - | - | - | ✅ |
+| model-router | 2025-08-07 | ✅ | - | - | - | ✅ |
+| model-router | 2025-11-18 | ✅ | - | - | - | ✅ |
+| o1 | 2024-12-17 | ✅ | ✅ | ✅ | - | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | - | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-3-large | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-3-small | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+| **Model** | **Version** | **southafricanorth** | **uaenorth** |
+| --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ |
+| gpt-5-codex | 2025-09-15 | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ |
+| gpt-5-nano | 2025-08-07 | ✅ | ✅ |
+| gpt-5-pro | 2025-10-06 | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ |
+| gpt-5.1-codex-max | 2025-12-04 | ✅ | ✅ |
+| gpt-5.1-codex-mini | 2025-11-13 | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ |
+| gpt-5.2-codex | 2026-01-14 | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ |
+| gpt-5.4-nano | 2026-03-17 | ✅ | ✅ |
+| gpt-5.4-pro | 2026-03-05 | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ |
+| gpt-chat-latest | 2026-08-06 | ✅ | ✅ |
+| gpt-chat-latest | 2026-05-05 | ✅ | ✅ |
+| gpt-image-1 | 2025-04-15 | - | ✅ |
+| gpt-image-1-mini | 2025-10-06 | - | ✅ |
+| gpt-image-1.5 | 2025-12-16 | - | ✅ |
+| gpt-image-2 | 2026-04-21 | - | ✅ |
+| o1 | 2024-12-17 | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ |
+| text-embedding-3-large | 1 | ✅ | ✅ |
+| text-embedding-3-small | 1 | ✅ | ✅ |
+| text-embedding-ada-002 | 2 | ✅ | ✅ |
+
+---
+
+#### Availability for other Foundry Models sold by Azure
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westcentralus** | **westus** | **westus2** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| cohere-command-a | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-command-a-plus-05-2026 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-rerank-v4.0-fast | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-rerank-v4.0-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V3.2-Speciale | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Flash | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Flash-0731 | 2026-07-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Pro | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX-1.1-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.1-Kontext-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.2-flex | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.2-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-1-fast-non-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-1-fast-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-20-non-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-20-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4.3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4.6 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.6 | 2026-04-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.7-Code | 2026-06-12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-4-Maverick-17B-128E-Instruct-FP8 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| MAI-Image-2.5 | 2026-06-02 | - | - | - | - | ✅ | - | - | - | ✅ | ✅ | - | - |
+| MAI-Image-2.5-Flash | 2026-06-02 | - | - | - | - | ✅ | - | - | - | ✅ | ✅ | - | - |
+| MAI-Image-2.5-Pro | 2026-06-19 | - | - | - | - | ✅ | - | - | - | ✅ | ✅ | - | - |
+| MAI-Image-2.6 | 2026-07-31 | - | - | - | - | ✅ | - | - | - | ✅ | ✅ | - | - |
+| MAI-Image-2.6-Flash | 2026-07-31 | - | - | - | - | ✅ | - | - | - | ✅ | ✅ | - | - |
+| MAI-Thinking-1 | 2026-06-01 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Mistral-Large-3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| mistral-medium-3-5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-mini-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-mini-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-multimodal-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **ukwest** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| cohere-command-a | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-command-a-plus-05-2026 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-rerank-v4.0-fast | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-rerank-v4.0-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V3.2-Speciale | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Flash | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Flash-0731 | 2026-07-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Pro | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX-1.1-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.1-Kontext-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.2-flex | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.2-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-1-fast-non-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-1-fast-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-20-non-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-20-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4.3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4.6 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.6 | 2026-04-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.7-Code | 2026-06-12 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-4-Maverick-17B-128E-Instruct-FP8 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| MAI-Image-2.5 | 2026-06-02 | - | - | - | - | - | - | ✅ | - | - | - | - | ✅ |
+| MAI-Image-2.5-Flash | 2026-06-02 | - | - | - | - | - | - | ✅ | - | - | - | - | ✅ |
+| MAI-Image-2.5-Pro | 2026-06-19 | - | - | - | - | - | - | ✅ | - | - | - | - | ✅ |
+| MAI-Image-2.6 | 2026-07-31 | - | - | - | - | - | - | ✅ | - | - | - | - | ✅ |
+| MAI-Image-2.6-Flash | 2026-07-31 | - | - | - | - | - | - | ✅ | - | - | - | - | ✅ |
+| MAI-Thinking-1 | 2026-06-01 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Mistral-Large-3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| mistral-medium-3-5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 3 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 4 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 5 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 6 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 7 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-mini-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-mini-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-multimodal-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **japanwest** | **koreacentral** | **southindia** |
+| --- | --- | --- | --- | --- | --- | --- |
+| cohere-command-a | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-command-a-plus-05-2026 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-rerank-v4.0-fast | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-rerank-v4.0-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V3.2-Speciale | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Flash | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Flash-0731 | 2026-07-31 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Pro | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX-1.1-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.1-Kontext-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.2-flex | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.2-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-1-fast-non-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-1-fast-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-20-non-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-20-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4.3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4.6 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.6 | 2026-04-20 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Kimi-K2.7-Code | 2026-06-12 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 2 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 3 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 4 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-4-Maverick-17B-128E-Instruct-FP8 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| MAI-Image-2.5 | 2026-06-02 | - | - | - | - | ✅ |
+| MAI-Image-2.5-Flash | 2026-06-02 | - | - | - | - | ✅ |
+| MAI-Image-2.5-Pro | 2026-06-19 | - | - | - | - | ✅ |
+| MAI-Image-2.6 | 2026-07-31 | - | - | - | - | ✅ |
+| MAI-Image-2.6-Flash | 2026-07-31 | - | - | - | - | ✅ |
+| MAI-Thinking-1 | 2026-06-01 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Mistral-Large-3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| mistral-medium-3-5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 3 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 4 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 5 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 6 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4 | 7 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-mini-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-mini-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-multimodal-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Phi-4-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+| **Model** | **Version** | **southafricanorth** | **uaenorth** |
+| --- | --- | --- | --- |
+| cohere-command-a | 1 | ✅ | ✅ |
+| Cohere-command-a-plus-05-2026 | 1 | ✅ | ✅ |
+| Cohere-rerank-v4.0-fast | 1 | ✅ | ✅ |
+| Cohere-rerank-v4.0-pro | 1 | ✅ | ✅ |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ |
+| DeepSeek-V3.2-Speciale | 1 | ✅ | ✅ |
+| DeepSeek-V4-Flash | 2026-04-23 | ✅ | ✅ |
+| DeepSeek-V4-Flash-0731 | 2026-07-31 | ✅ | ✅ |
+| DeepSeek-V4-Pro | 2026-04-23 | ✅ | ✅ |
+| FLUX-1.1-pro | 1 | ✅ | ✅ |
+| FLUX.1-Kontext-pro | 1 | ✅ | ✅ |
+| FLUX.2-flex | 1 | ✅ | ✅ |
+| FLUX.2-pro | 1 | ✅ | ✅ |
+| grok-4-1-fast-non-reasoning | 1 | ✅ | ✅ |
+| grok-4-1-fast-reasoning | 1 | ✅ | ✅ |
+| grok-4-20-non-reasoning | 1 | ✅ | ✅ |
+| grok-4-20-reasoning | 1 | ✅ | ✅ |
+| grok-4.3 | 1 | ✅ | ✅ |
+| grok-4.6 | 1 | ✅ | ✅ |
+| Kimi-K2.5 | 1 | ✅ | ✅ |
+| Kimi-K2.6 | 2026-04-20 | ✅ | ✅ |
+| Kimi-K2.7-Code | 2026-06-12 | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 1 | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 2 | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 3 | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 4 | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 5 | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ |
+| Llama-4-Maverick-17B-128E-Instruct-FP8 | 1 | ✅ | ✅ |
+| MAI-Image-2.5 | 2026-06-02 | - | ✅ |
+| MAI-Image-2.5-Flash | 2026-06-02 | - | ✅ |
+| MAI-Image-2.5-Pro | 2026-06-19 | - | ✅ |
+| MAI-Image-2.6 | 2026-07-31 | - | ✅ |
+| MAI-Image-2.6-Flash | 2026-07-31 | - | ✅ |
+| MAI-Thinking-1 | 2026-06-01 | ✅ | ✅ |
+| Mistral-Large-3 | 1 | ✅ | ✅ |
+| mistral-medium-3-5 | 1 | ✅ | ✅ |
+| Phi-4 | 2 | ✅ | ✅ |
+| Phi-4 | 3 | ✅ | ✅ |
+| Phi-4 | 4 | ✅ | ✅ |
+| Phi-4 | 5 | ✅ | ✅ |
+| Phi-4 | 6 | ✅ | ✅ |
+| Phi-4 | 7 | ✅ | ✅ |
+| Phi-4-mini-instruct | 1 | ✅ | ✅ |
+| Phi-4-mini-reasoning | 1 | ✅ | ✅ |
+| Phi-4-multimodal-instruct | 1 | ✅ | ✅ |
+| Phi-4-reasoning | 1 | ✅ | ✅ |
+
+---
+
+## Data Zone Standard
+
+For **Data Zone** deployments, Microsoft processes prompts and responses anywhere within the specified data zone: United States (data processed anywhere within the US), European Union (data processed within any EU member nation), or Asia Pacific (data processed within any Asia Pacific nation).
+
+#### Availability for Azure OpenAI in Foundry Models
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-nano | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-nano | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-image-1.5 | 2025-12-16 | - | - | ✅ | - | - | - | ✅ |
+| model-router | 2025-05-19 | - | - | ✅ | - | - | - | ✅ |
+| model-router | 2025-08-07 | - | - | ✅ | - | - | - | ✅ |
+| model-router | 2025-11-18 | - | - | ✅ | - | - | - | ✅ |
+| o1 | 2024-12-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-3-large | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-3-small | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5-nano | 2025-08-07 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | - | - | - | - | - | ✅ | - | - |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-image-1.5 | 2025-12-16 | - | - | - | - | ✅ | - | ✅ | - | - |
+| model-router | 2025-05-19 | - | - | - | - | - | - | ✅ | - | - |
+| model-router | 2025-08-07 | - | - | - | - | - | - | ✅ | - | - |
+| model-router | 2025-11-18 | - | - | - | - | - | - | ✅ | - | - |
+| o1 | 2024-12-17 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| text-embedding-3-large | 1 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| text-embedding-3-small | 1 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
+| --- | --- | --- | --- | --- | --- | --- |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| model-router | 2025-05-19 | ✅ | - | - | - | ✅ |
+| model-router | 2025-08-07 | ✅ | - | - | - | ✅ |
+| model-router | 2025-11-18 | ✅ | - | - | - | ✅ |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+#### Availability for other Foundry Models sold by Azure
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westcentralus** | **westus** | **westus2** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DeepSeek-V4-Flash | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Pro | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX-1.1-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.1-Kontext-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.2-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-1-fast-non-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-1-fast-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-20-non-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4-20-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| grok-4.3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Mistral-Large-3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| mistral-medium-3-5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **polandcentral** | **spaincentral** | **swedencentral** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Cohere-rerank-v4.0-fast | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Cohere-rerank-v4.0-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| DeepSeek-V4-Flash | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX-1.1-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.1-Kontext-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| FLUX.2-pro | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Mistral-Large-3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| mistral-medium-3-5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+Not available
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+## Standard/Regional
+
+For **Standard/Regional** deployments, Azure OpenAI processes prompts and responses in the region associated with your deployment.
+
+#### Availability for Azure OpenAI in Foundry Models
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **brazilsouth** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | - | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o1 | 2024-12-17 | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-3-large | 1 | - | ✅ | - | ✅ | ✅ | - | - | - | ✅ |
+| text-embedding-3-small | 1 | - | ✅ | - | ✅ | ✅ | - | - | ✅ | - |
+| text-embedding-ada-002 | 1 | - | - | - | ✅ | - | - | ✅ | - | - |
+| text-embedding-ada-002 | 2 | ✅ | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| tts | 001 | - | - | - | - | - | ✅ | - | - | ✅ |
+| tts-hd | 001 | - | - | - | - | - | ✅ | - | - | ✅ |
+| whisper | 001 | - | - | - | - | ✅ | ✅ | - | - | - |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **uksouth** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | - | - | - | - | - | ✅ | ✅ | - | - |
+| gpt-4.1-mini | 2025-04-14 | ✅ | - | - | - | - | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | - | - | - | - | - | ✅ | - | - | - |
+| gpt-4o | 2024-08-06 | - | - | - | - | - | ✅ | - | - | - |
+| gpt-4o | 2024-11-20 | ✅ | - | ✅ | - | - | ✅ | ✅ | ✅ | - |
+| gpt-4o-mini | 2024-07-18 | - | - | - | - | - | ✅ | - | - | - |
+| gpt-5.1 | 2025-11-13 | - | - | - | - | - | ✅ | - | - | - |
+| o1 | 2024-12-17 | - | - | - | - | - | ✅ | - | - | - |
+| o4-mini | 2025-04-16 | - | - | - | - | - | ✅ | - | - | - |
+| text-embedding-3-large | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - |
+| text-embedding-3-small | 1 | - | - | - | - | - | - | ✅ | - | - |
+| text-embedding-ada-002 | 2 | ✅ | - | ✅ | - | - | ✅ | ✅ | ✅ | ✅ |
+| tts | 001 | - | - | - | - | - | ✅ | - | - | - |
+| tts-hd | 001 | - | - | - | - | - | ✅ | - | - | - |
+| whisper | 001 | - | - | ✅ | - | - | ✅ | ✅ | - | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
+| --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | - | - | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | - | - | ✅ |
+| text-embedding-3-large | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| text-embedding-3-small | 1 | ✅ | ✅ | - | - | - |
+| text-embedding-ada-002 | 2 | ✅ | ✅ | - | - | ✅ |
+| whisper | 001 | - | - | - | - | ✅ |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+| **Model** | **Version** | **southafricanorth** | **uaenorth** |
+| --- | --- | --- | --- |
+| text-embedding-3-large | 1 | ✅ | ✅ |
+| text-embedding-3-small | 1 | - | ✅ |
+| text-embedding-ada-002 | 2 | ✅ | ✅ |
+| whisper | 001 | - | ✅ |
+
+---
+
+#### Availability for other Foundry Models sold by Azure
+
+# [Americas](#tab/az-americas)
+Not available
+
+# [Europe](#tab/az-europe)
+Not available
+
+# [Asia Pacific](#tab/az-apac)
+Not available
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+::: zone-end
+
+::: zone pivot="provisioned"
+
+## Global Provisioned Managed
+
+For **Global deployments**, prompts and responses can be processed in any Azure region where the model is deployed.
+
+#### Availability for Azure OpenAI in Foundry Models
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2-codex | 2026-01-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | - | - | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o1 | 2024-12-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2-codex | 2026-01-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | - | - | - | ✅ | - | - | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o1 | 2024-12-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
+| --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2-codex | 2026-01-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | - | - | - | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o1 | 2024-12-17 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+| **Model** | **Version** | **southafricanorth** | **uaenorth** |
+| --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ |
+| gpt-5.2-codex | 2026-01-14 | ✅ | ✅ |
+| gpt-5.3-codex | 2026-02-24 | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | - | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ |
+| o1 | 2024-12-17 | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ |
+
+---
+
+#### Availability for other Foundry Models sold by Azure
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westcentralus** | **westus** | **westus2** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **ukwest** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **japanwest** | **koreacentral** | **southindia** |
+| --- | --- | --- | --- | --- | --- | --- |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+| **Model** | **Version** | **southafricanorth** | **uaenorth** |
+| --- | --- | --- | --- |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ |
+
+---
+
+## Data Zone Provisioned Managed
+
+For **Data Zone** deployments, prompts and responses are processed anywhere within the Microsoft-specified data zone: United States (data processed anywhere within the US) or European Union (data processed within any EU member nation).
+
+#### Availability for Azure OpenAI in Foundry Models
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-luna | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-6-astra | 2026-09-03 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o1 | 2024-12-17 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.1-codex | 2025-11-13 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.5 | 2026-04-24 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.6-sol | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.6-terra | 2026-07-09 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o1 | 2024-12-17 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
+| --- | --- | --- | --- | --- | --- | --- |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+#### Availability for other Foundry Models sold by Azure
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **polandcentral** | **spaincentral** | **swedencentral** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+Not available
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+## Regional Provisioned Managed
+
+For **Standard/Regional** deployments, prompts and responses are processed in the region associated with your deployment.
+
+#### Availability for Azure OpenAI in Foundry Models
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | - | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5-mini | 2025-08-07 | - | - | ✅ | - | - | ✅ | - | - | - | ✅ |
+| gpt-5.1 | 2025-11-13 | - | - | ✅ | - | ✅ | ✅ | - | - | - | ✅ |
+| gpt-5.2 | 2025-12-11 | - | ✅ | ✅ | - | - | - | - | - | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | - | - | - | ✅ | - | - | - | - | - | ✅ |
+| gpt-5.4-mini | 2026-03-17 | - | - | - | - | - | - | - | - | - | ✅ |
+| gpt-5.5 | 2026-04-24 | - | - | - | - | ✅ | - | - | - | - | - |
+| gpt-5.6-luna | 2026-07-09 | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-5.6-sol | 2026-07-09 | - | - | - | - | - | - | - | - | ✅ | - |
+| gpt-5.6-terra | 2026-07-09 | - | - | - | - | - | - | - | - | ✅ | - |
+| o1 | 2024-12-17 | - | - | - | - | - | - | - | - | - | ✅ |
+| o3 | 2025-04-16 | - | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | - | - | ✅ | - | - | ✅ | - | ✅ | - | - |
+| o4-mini | 2025-04-16 | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | - | ✅ | - | - | - | ✅ | ✅ | - | ✅ | - |
+| gpt-4.1-mini | 2025-04-14 | - | - | - | - | - | ✅ | ✅ | - | ✅ | - |
+| gpt-4.1-nano | 2025-04-14 | - | - | - | - | - | ✅ | - | - | - | - |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | - |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | - |
+| gpt-4o | 2024-11-20 | - | ✅ | - | ✅ | - | ✅ | ✅ | - | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | - | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | - |
+| gpt-5 | 2025-08-07 | - | - | - | - | - | - | - | - | ✅ | - |
+| gpt-5-mini | 2025-08-07 | - | - | - | - | - | ✅ | - | - | ✅ | - |
+| gpt-5.1 | 2025-11-13 | - | - | - | - | - | ✅ | ✅ | - | ✅ | - |
+| gpt-5.2 | 2025-12-11 | - | - | - | - | - | ✅ | - | - | ✅ | - |
+| gpt-5.3-codex | 2026-02-24 | - | - | - | - | - | - | - | - | ✅ | - |
+| gpt-5.4 | 2026-03-05 | - | ✅ | - | - | - | ✅ | - | - | ✅ | - |
+| gpt-5.4-mini | 2026-03-17 | - | - | - | - | - | ✅ | - | - | ✅ | - |
+| gpt-5.6-luna | 2026-07-09 | - | - | - | - | - | - | - | - | ✅ | - |
+| gpt-5.6-sol | 2026-07-09 | - | - | - | - | - | - | - | - | ✅ | - |
+| o1 | 2024-12-17 | - | - | - | - | - | - | - | - | ✅ | - |
+| o3 | 2025-04-16 | - | - | - | - | - | - | - | - | - | ✅ |
+| o3-mini | 2025-01-31 | - | - | - | - | - | ✅ | ✅ | - | - | - |
+| o4-mini | 2025-04-16 | - | - | - | - | - | - | - | - | - | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
+| --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5-mini | 2025-08-07 | ✅ | ✅ | ✅ | - | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | - | - | ✅ |
+| gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | - | - |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | - | - |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o1 | 2024-12-17 | - | ✅ | - | - | - |
+| o3 | 2025-04-16 | ✅ | - | - | - | - |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | - | ✅ |
+| o4-mini | 2025-04-16 | - | ✅ | - | - | - |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+| **Model** | **Version** | **southafricanorth** | **uaenorth** |
+| --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | - | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | - | ✅ |
+| gpt-4o | 2024-11-20 | - | ✅ |
+| gpt-5-mini | 2025-08-07 | - | ✅ |
+| gpt-5.1 | 2025-11-13 | - | ✅ |
+| o1 | 2024-12-17 | - | ✅ |
+| o3-mini | 2025-01-31 | - | ✅ |
+| o4-mini | 2025-04-16 | - | ✅ |
+
+---
+
+#### Availability for other Foundry Models sold by Azure
+
+# [Americas](#tab/az-americas)
+Not available
+
+# [Europe](#tab/az-europe)
+Not available
+
+# [Asia Pacific](#tab/az-apac)
+Not available
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+::: zone-end
+
+::: zone pivot="batch"
+
+## Global Batch
+
+For **Global deployments**, prompts and responses can be processed in any Azure region where the model is deployed.
+
+#### Availability for Azure OpenAI in Foundry Models
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **brazilsouth** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **norwayeast** | **polandcentral** | **swedencentral** | **switzerlandnorth** | **uksouth** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+| **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southindia** |
+| --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-05-13 | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ |
+
+# [Middle East &amp; Africa](#tab/az-mea)
+| **Model** | **Version** | **southafricanorth** |
+| --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ |
+| gpt-4o | 2024-05-13 | ✅ |
+| gpt-4o | 2024-08-06 | ✅ |
+| gpt-4o | 2024-11-20 | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ |
+| gpt-5 | 2025-08-07 | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ |
+| o3 | 2025-04-16 | ✅ |
+| o3-mini | 2025-01-31 | ✅ |
+| o4-mini | 2025-04-16 | ✅ |
+
+---
+
+#### Availability for other Foundry Models sold by Azure
+
+# [Americas](#tab/az-americas)
+Not available
+
+# [Europe](#tab/az-europe)
+Not available
+
+# [Asia Pacific](#tab/az-apac)
+Not available
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+## Data Zone Batch
+
+For **Data Zone** deployments, prompts and responses are processed anywhere within the Microsoft-specified data zone: United States (data processed anywhere within the US) or European Union (data processed within any EU member nation).
+
+#### Availability for Azure OpenAI in Foundry Models
+
+# [Americas](#tab/az-americas)
+| **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5 | 2025-08-07 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.1 | 2025-11-13 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4 | 2026-03-05 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-5.4-mini | 2026-03-17 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Europe](#tab/az-europe)
+| **Model** | **Version** | **francecentral** | **germanywestcentral** | **polandcentral** | **swedencentral** | **westeurope** |
+| --- | --- | --- | --- | --- | --- | --- |
+| gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4.1-nano | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-08-06 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o | 2024-11-20 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| gpt-4o-mini | 2024-07-18 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
+| o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
+
+# [Asia Pacific](#tab/az-apac)
+Not available
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+#### Availability for other Foundry Models sold by Azure
+
+# [Americas](#tab/az-americas)
+Not available
+
+# [Europe](#tab/az-europe)
+Not available
+
+# [Asia Pacific](#tab/az-apac)
+Not available
+
+# [Middle East &amp; Africa](#tab/az-mea)
+Not available
+
+---
+
+::: zone-end

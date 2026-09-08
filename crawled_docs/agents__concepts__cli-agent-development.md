@@ -1,0 +1,184 @@
+<!-- Title: Overview | Category: Developer tools and integrations/Azure Developer CLI/Overview | URL: agents/concepts/cli-agent-development -->
+
+---
+layout: Conceptual
+title: Agent development with the Azure Developer CLI - Microsoft Foundry | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/cli-agent-development
+breadcrumb_path: ../../../breadcrumb/azure-ai/toc.json
+feedback_help_link_url: https://learn.microsoft.com/answers/tags/133/azure
+feedback_help_link_type: get-help-at-qna
+feedback_product_url: https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4
+feedback_system: Standard
+permissioned-type: public
+recommendations: true
+recommendation_types:
+- Training
+- Certification
+uhfHeaderId: azure-ai-foundry
+ms.suite: office
+author: aahill
+learn_banner_products:
+- azure
+manager: mcleans
+ms.author: aahi
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 90-days
+ms.service: microsoft-foundry
+description: Understand the end-to-end developer workflow for building, deploying, and operating hosted agents on Microsoft Foundry with the Azure Developer CLI.
+ms.manager: mcleans
+ms.subservice: foundry-agent-service
+ms.topic: concept-article
+ms.date: 2026-08-19T00:00:00.0000000Z
+ms.custom: dev-focus, doc-kit-assisted
+ai-usage: ai-assisted
+locale: en-us
+document_id: b3818fd4-f78a-c047-8ef6-3f7681fa9cc8
+document_version_independent_id: 9435e6a7-f6c9-cbdc-89b9-14c6362dd017
+updated_at: 2026-08-27T06:04:00.0000000Z
+original_content_git_url: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/live/articles/foundry/agents/concepts/cli-agent-development.md
+gitcommit: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/98b7b1700c3cf43ecb2c8c80f728ff55c355ff8d/articles/foundry/agents/concepts/cli-agent-development.md
+git_commit_id: 98b7b1700c3cf43ecb2c8c80f728ff55c355ff8d
+site_name: Docs
+depot_name: Learn.azure-ai
+page_type: conceptual
+toc_rel: ../../toc.json
+word_count: 1137
+asset_id: foundry/agents/concepts/cli-agent-development
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: articles/foundry/agents/concepts/cli-agent-development.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/de19c5b8-e208-412e-9238-db3f631dea5b
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ea7bf5d6-7154-4ba9-8ebc-59117ccacd49
+platformId: 948f8769-f118-d4db-3ead-a52dd5a8930d
+---
+
+# Agent development with the Azure Developer CLI - Microsoft Foundry | Microsoft Learn
+
+Important
+
+Items marked (preview) in this article are currently in public preview. This preview is provided without a service-level agreement, and we don't recommend it for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
+The Azure Developer CLI (`azd`) and its `azd ai agent` extension give you a single command-line workflow to go from idea to a production-ready hosted agent on Microsoft Foundry. This article explains the developer journey, the files that define an agent, and the core concepts you encounter along the way.
+
+This article is for developers who prefer a terminal-first, scriptable workflow over the Foundry portal or language SDKs.
+
+## The developer journey
+
+The `azd ai` workflow follows the same lifecycle whether you build a small prototype or a production agent. You scaffold a project once, then mix and match commands as your project grows.
+
+| Stage | What you do | Where to learn more |
+| --- | --- | --- |
+| Install | Install `azd` and the Foundry extensions. | [Set up your developer environment](../../how-to/develop/install-cli-sdk) |
+| Scaffold | Initialize a project from a template or your existing code. | [Quickstart: Deploy a hosted agent](../quickstarts/quickstart-hosted-agent) |
+| Define | Configure the agent, model deployment dependencies, protocols, tools, and environment in `azure.yaml`. | [Author azure.yaml for hosted agents](../how-to/author-azure-yaml) |
+| Develop | Write agent logic, add tools using a toolbox, and test locally. | [Toolbox overview](toolbox-overview) |
+| Deploy | Provision infrastructure and deploy to Foundry. | [Deploy a hosted agent](../how-to/deploy-hosted-agent) |
+| Operate | Monitor logs, manage versions, and automate runs. | [Manage hosted agents](../how-to/manage-hosted-agent) |
+| Evaluate | Measure agent quality and improve the prompt. | [Run agent evaluations with the azd CLI](../../observability/how-to/azure-developer-cli-evaluation) |
+
+## Agent types
+
+The `azd ai agent` extension focuses on hosted agents.
+
+| Type | Description | When to use |
+| --- | --- | --- |
+| Hosted agent | A containerized application you build in code, package as a Docker image, and deploy to Foundry. | You need custom logic, framework integration, or full control over behavior. |
+| Prompt agent | An agent defined entirely through instructions and tool configurations, with no custom code. | You want a quick, config-driven agent without writing application code. |
+
+Hosted agents give you full control over the runtime, framework, and tool integrations, while Foundry handles infrastructure, scaling, and session management.
+
+## Configuration files
+
+A hosted agent project uses one `azure.yaml` file at the project root to declare both the agent and its provisioning and deployment model. The file uses a split-service model, where each named service has a `host` value such as `azure.ai.project`, `azure.ai.agent`, `azure.ai.connection`, `azure.ai.toolbox`, `azure.ai.skill`, or `azure.ai.routine`.
+
+| File | Purpose | Who maintains it |
+| --- | --- | --- |
+| `azure.yaml` | Declares the Foundry project, model deployments, hosted agent service, dependencies, protocols, tools, environment variables, container resources, and deployment settings. Agent identity, model, protocols, tools, and environment values live in the `azure.ai.agent` service. | Initialization generates it. You customize it as needed. |
+
+The `azure.ai.agent` service defines your hosted agent inline and uses `uses:` to reference other services, such as the project, connections, toolboxes, skills, and routines. There is no standalone `agent.yaml` or `agent.manifest.yaml` file in the current hosted-agent `azd` project model.
+
+### Variable substitution
+
+Use `${VAR_NAME}` in `azure.yaml` for values that differ by `azd` environment. The placeholder resolves from `.azure/<env>/.env` at deploy or run time, so the same `azure.yaml` works across environments such as dev, staging, and production.
+
+## Where the CLI runs
+
+The `azd ai` commands work both inside and outside an `azd` project directory:
+
+- Inside an `azd` project, commands resolve the Foundry project endpoint from the active `azd` environment.
+- Outside an `azd` project, set the active context once with `azd ai project set <endpoint>`, or pass `--project-endpoint` on an individual resource command (`connection`, `toolbox`, `skill`, or `routine`). As a fallback, `azd ai` reads the `FOUNDRY_PROJECT_ENDPOINT` environment variable.
+- An in-project environment always takes precedence over the global context, so changing directories into a project retargets the CLI at that project's endpoint.
+
+## Protocols
+
+A protocol defines the HTTP contract between Foundry and your agent container. Your agent listens on port 8088 and serves a health probe, regardless of protocol.
+
+| Protocol | API style | When to use |
+| --- | --- | --- |
+| `responses` | OpenAI Responses API (`POST /responses`) | The standard choice, compatible with the OpenAI API ecosystem. |
+| `invocations` | Custom JSON contract (`POST /invocations`) | When you need full control over request and response payloads. |
+
+For the full specification, see [Hosted agent runtime contract](hosted-agent-contract).
+
+## Sessions and conversations
+
+| Concept | Description |
+| --- | --- |
+| Session | An isolated execution environment for a single agent interaction. Each session runs in its own sandbox with dedicated resources. |
+| Conversation | A sequence of messages within a session. Foundry manages conversation history and can hydrate it across requests. |
+
+Sessions are identified by a `session_id`. When you run `azd ai agent invoke`, Foundry reuses the session from your last invocation by default. Use `--new-session` to start fresh, or `--session-id <id>` to target a specific session.
+
+## Resources on a Foundry project
+
+A Foundry project hosts more than agents. It also holds shared resources that agents reference at runtime. The CLI manages each one through a dedicated command group.
+
+| Resource | What it is | Managed with |
+| --- | --- | --- |
+| Connection | Links a Foundry project to an external resource, such as an MCP server, Azure AI Search, or Grounding with Bing. | `azd ai connection` commands |
+| Toolbox | A named collection of tools that agents use at runtime. | `azd ai toolbox` commands |
+| Skill | A reusable behavioral guideline shared across agents on the project. | `azd ai skill` commands |
+| Routine | A trigger plus an action that invokes an agent. | `azd ai routine` commands |
+
+These resources are shared across developers and agents on the same project. Each command group exposes the standard `create`, `update`, `delete`, `show`, and `list` verbs.
+
+## Evaluate and improve an agent
+
+After an agent runs, two related workflows help you measure and improve its quality:
+
+- Evaluation runs your agent against a dataset, scores the responses with one or more evaluators, and reports an aggregate quality signal. You manage it with `azd ai agent eval`.
+- Optimization iteratively rewrites your agent's prompt to lift an evaluation signal. It uses an evaluation as its objective function and produces a candidate prompt that you review and accept. You manage it with `azd ai agent optimize`.
+
+For details, see [Run agent evaluations with the azd CLI](../../observability/how-to/azure-developer-cli-evaluation) and [Optimize agent prompts](../../observability/how-to/prompt-optimizer).
+
+## Deployment lifecycle
+
+The full developer loop condenses into a short sequence of commands. Scaffold once, then use the direct commands as your project grows.
+
+```bash
+# Scaffold a project from a template or your existing code
+azd ai agent init
+
+# Run locally and invoke
+azd ai agent run
+azd ai agent invoke --local "Hello, world!"
+
+# Provision infrastructure and deploy the agent
+azd up
+
+# Extend the project with shared resources at any time
+azd ai connection create my-search --kind cognitive-search --target https://... --auth-type api-key --key "..."
+azd ai routine create daily-digest --trigger recurring --cron "0 7 * * *" --agent-name my-agent
+
+# Evaluate quality
+azd ai agent eval generate
+azd ai agent eval run
+
+# Tear down all Azure resources
+azd down
+```

@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Foundry: Architecture & System Deep Dive</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    /* Custom scrollbar and smooth transitions */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(150, 150, 150, 0.3); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(150, 150, 150, 0.5); }
+    .badge { display: inline-flex; align-items: center; padding: 0.15rem 0.5rem; border-radius: 9999px; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.04em; }
+    .tab-btn.active {
+      background: var(--card);
+      color: var(--foreground);
+      border-bottom: 2px solid #3b82f6;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .flow-line {
+      stroke-dasharray: 6;
+      animation: dash 1.5s linear infinite;
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -12; }
+    }
+    .node-glow:hover {
+      filter: drop-shadow(0 0 8px rgba(59, 130, 246, 0.4));
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased font-sans p-3 sm:p-6 min-h-screen">
+
+  <!-- Header Banner -->
+  <header class="max-w-7xl mx-auto mb-6 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="badge bg-blue-500/10 text-blue-500 border border-blue-500/20">Microsoft AI Cloud</span>
+          <span class="badge bg-emerald-500/10 text-emerald-500 border border-emerald-500/20">Enterprise Ready</span>
+          <span class="badge bg-purple-500/10 text-purple-500 border border-purple-500/20">539+ Documentation Topics Analyzed</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--foreground)] flex items-center gap-3">
+          <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+          </svg>
+          Microsoft Foundry Architecture & Systems Explorer
+        </h1>
+        <p class="text-[var(--muted-foreground)] text-sm sm:text-base mt-1 max-w-3xl">
+          Comprehensive, interactive dissection of Microsoft Foundry (formerly Azure AI Studio) — unifying agents, 10,000+ models, toolboxes, enterprise knowledge (Foundry IQ), OpenTelemetry observability, and centralized fleet control.
+        </p>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="grid grid-cols-3 gap-3 bg-[var(--background)] p-3 rounded-xl border border-[var(--border)] shrink-0 text-center">
+        <div class="px-2">
+          <div class="text-xl font-bold text-blue-600 dark:text-blue-400">10k+</div>
+          <div class="text-xs text-[var(--muted-foreground)]">Catalog Models</div>
+        </div>
+        <div class="px-2 border-x border-[var(--border)]">
+          <div class="text-xl font-bold text-emerald-600 dark:text-emerald-400">4</div>
+          <div class="text-xs text-[var(--muted-foreground)]">Intervention Points</div>
+        </div>
+        <div class="px-2">
+          <div class="text-xl font-bold text-purple-600 dark:text-purple-400">MCP</div>
+          <div class="text-xs text-[var(--muted-foreground)]">Native Hub &amp; Tools</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="flex flex-wrap gap-1 mt-6 border-b border-[var(--border)] pt-2" id="navTabs">
+      <button onclick="switchTab('architecture')" id="tab-architecture" class="tab-btn active px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+        Architecture Topology
+      </button>
+      <button onclick="switchTab('agents')" id="tab-agents" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+        Agent Runtimes &amp; Lifecycle
+      </button>
+      <button onclick="switchTab('models')" id="tab-models" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1.5 3 3.5 3h9c2 0 3.5-1 3.5-3V7c0-2-1.5-3-3.5-3h-9C5.5 4 4 5 4 7z"/></svg>
+        Models &amp; Intelligent Router
+      </button>
+      <button onclick="switchTab('toolboxes')" id="tab-toolboxes" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"/></svg>
+        Toolboxes, MCP &amp; Foundry IQ
+      </button>
+      <button onclick="switchTab('observability')" id="tab-observability" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        Observability &amp; Red Teaming
+      </button>
+      <button onclick="switchTab('controlplane')" id="tab-controlplane" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        Control Plane &amp; Guardrails
+      </button>
+      <button onclick="switchTab('sdkstudio')" id="tab-sdkstudio" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        SDK &amp; Protocol Studio
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto">
+
+    <!-- ============================================================== -->
+    <!-- TAB 1: ARCHITECTURE TOPOLOGY -->
+    <!-- ============================================================== -->
+    <div id="view-architecture" class="space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Layered Resource Architecture &amp; Boundary Model</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Click any architectural block to inspect security boundaries, endpoints, and connected resource governance.</p>
+          </div>
+          <div class="flex items-center gap-2 text-xs">
+            <span class="inline-block w-3 h-3 rounded-sm bg-blue-600"></span> Governance Scope
+            <span class="inline-block w-3 h-3 rounded-sm bg-purple-600 ml-2"></span> Project Dev Scope
+            <span class="inline-block w-3 h-3 rounded-sm bg-amber-600 ml-2"></span> Connected Services
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6">
+          <!-- Interactive Diagram Canvas -->
+          <div class="lg:col-span-8 space-y-4">
+            
+            <!-- Level 1: Top-Level Foundry Resource (Governance Plane) -->
+            <div onclick="selectArchNode('top_resource')" class="node-glow cursor-pointer bg-blue-50/50 dark:bg-blue-950/20 border-2 border-blue-500/60 rounded-xl p-5 transition-all">
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2">
+                  <div class="p-2 bg-blue-600 text-white rounded-lg shadow-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-[var(--foreground)] text-base">Top-Level Foundry Resource</h3>
+                    <div class="text-xs font-mono text-blue-600 dark:text-blue-400">Microsoft.CognitiveServices/accounts (kind: AIServices)</div>
+                  </div>
+                </div>
+                <span class="badge bg-blue-500/20 text-blue-600 dark:text-blue-300">Central Governance</span>
+              </div>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+                <div class="bg-[var(--card)] p-2.5 rounded-lg border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Unified Security</div>
+                  <div class="text-[var(--muted-foreground)]">Entra ID, RBAC, Customer Managed Keys (CMK), Network Perimeter</div>
+                </div>
+                <div class="bg-[var(--card)] p-2.5 rounded-lg border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Model Deployments</div>
+                  <div class="text-[var(--muted-foreground)]">Global, Data Zone, Regional PTU &amp; Pay-As-You-Go deployments</div>
+                </div>
+                <div class="bg-[var(--card)] p-2.5 rounded-lg border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Foundry Tools</div>
+                  <div class="text-[var(--muted-foreground)]">Speech, Translator, Language, Document Intelligence, Vision</div>
+                </div>
+              </div>
+
+              <!-- Level 2: Nested Projects (Subresources) -->
+              <div class="mt-4 pt-4 border-t border-blue-200 dark:border-blue-900/60">
+                <div class="text-xs font-semibold text-[var(--muted-foreground)] uppercase tracking-wider mb-2">Development Scopes (Subresources: Microsoft.CognitiveServices/accounts/projects)</div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  
+                  <div onclick="event.stopPropagation(); selectArchNode('project_a')" class="bg-purple-50/70 dark:bg-purple-950/30 border border-purple-500/50 hover:border-purple-500 rounded-lg p-3 cursor-pointer transition-all">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="font-semibold text-sm text-purple-700 dark:text-purple-300 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-purple-500"></span> Project Alpha (Customer Service)
+                      </span>
+                      <span class="badge bg-purple-500/15 text-purple-600 text-[0.65rem]">Endpoint Scoped</span>
+                    </div>
+                    <p class="text-xs text-[var(--muted-foreground)]">Prompt Agents, Session State, Toolboxes, Evaluation Runs</p>
+                  </div>
+
+                  <div onclick="event.stopPropagation(); selectArchNode('project_b')" class="bg-purple-50/70 dark:bg-purple-950/30 border border-purple-500/50 hover:border-purple-500 rounded-lg p-3 cursor-pointer transition-all">
+                    <div class="flex items-center justify-between mb-1">
+                      <span class="font-semibold text-sm text-purple-700 dark:text-purple-300 flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-purple-500"></span> Project Beta (Internal Operations)
+                      </span>
+                      <span class="badge bg-purple-500/15 text-purple-600 text-[0.65rem]">Endpoint Scoped</span>
+                    </div>
+                    <p class="text-xs text-[var(--muted-foreground)]">Hosted Agents (LangGraph/Agent Framework), Durable Tasks</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Level 3: Connected External Azure Resources -->
+            <div class="border border-dashed border-amber-500/60 bg-amber-50/30 dark:bg-amber-950/15 rounded-xl p-4">
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 bg-amber-600 text-white rounded-lg text-xs">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+                  </span>
+                  <div>
+                    <h4 class="font-bold text-sm text-[var(--foreground)]">Connected Azure Services (Independent Governance Boundaries)</h4>
+                    <div class="text-xs text-[var(--muted-foreground)]">Referenced via ARM Connections with separate RBAC, VNet &amp; CMK</div>
+                  </div>
+                </div>
+                <span class="badge bg-amber-500/20 text-amber-600">BYO Resources</span>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs">
+                <div onclick="selectArchNode('conn_storage')" class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg hover:border-amber-500 cursor-pointer transition-colors">
+                  <div class="font-semibold text-[var(--foreground)]">Azure Storage</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Files, datasets &amp; conversation state</div>
+                </div>
+                <div onclick="selectArchNode('conn_search')" class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg hover:border-amber-500 cursor-pointer transition-colors">
+                  <div class="font-semibold text-[var(--foreground)]">Azure AI Search</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Vector indexes &amp; Foundry IQ</div>
+                </div>
+                <div onclick="selectArchNode('conn_keyvault')" class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg hover:border-amber-500 cursor-pointer transition-colors">
+                  <div class="font-semibold text-[var(--foreground)]">Azure Key Vault</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Customer-managed keys &amp; secrets</div>
+                </div>
+                <div onclick="selectArchNode('conn_appinsights')" class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg hover:border-amber-500 cursor-pointer transition-colors">
+                  <div class="font-semibold text-[var(--foreground)]">App Insights</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">OTel traces &amp; GenAI telemetry</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Level 4: Network Isolation Strip -->
+            <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+              <div class="flex items-center gap-3">
+                <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-500">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                </div>
+                <div>
+                  <span class="font-bold text-[var(--foreground)]">Network Isolation Modes:</span>
+                  <span class="text-[var(--muted-foreground)] ml-1">Private Link / Endpoints &bull; Managed Virtual Network (VNet) &bull; BYO Customer Subnet Injection (Microsoft.App/environments)</span>
+                </div>
+              </div>
+              <button onclick="selectArchNode('networking')" class="shrink-0 px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-semibold hover:bg-emerald-500/20 transition-colors">Inspect Networking</button>
+            </div>
+
+          </div>
+
+          <!-- Inspector Panel -->
+          <div class="lg:col-span-4 bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between" id="archInspector">
+            <div id="inspectorContent">
+              <div class="flex items-center justify-between pb-3 border-b border-[var(--border)] mb-4">
+                <h3 class="font-bold text-base text-[var(--foreground)]" id="inspTitle">Top-Level Foundry Resource</h3>
+                <span class="badge bg-blue-500/15 text-blue-600" id="inspBadge">ARM Root</span>
+              </div>
+              <p class="text-sm text-[var(--muted-foreground)] mb-4" id="inspDesc">
+                The primary governance anchor deployed as <code>Microsoft.CognitiveServices/accounts</code> with kind <code>AIServices</code>. Unifies models, agents, tools, policies, and networking under one boundary.
+              </p>
+              
+              <div class="space-y-3 text-xs">
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Unified Endpoint Structure</div>
+                  <div class="font-mono text-blue-600 dark:text-blue-400 break-all text-[0.72rem]" id="inspEndpoint">https://&lt;resource&gt;.services.ai.azure.com</div>
+                </div>
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Key Responsibilities</div>
+                  <ul class="list-disc list-inside space-y-1 text-[var(--muted-foreground)]" id="inspPoints">
+                    <li>Multi-model deployments &amp; quota management</li>
+                    <li>Centralized RBAC (Foundry Administrator / Contributor)</li>
+                    <li>Firewall, Private Endpoints &amp; Virtual Networks</li>
+                    <li>Connected Azure services configuration</li>
+                  </ul>
+                </div>
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Azure OpenAI Upgrade Path</div>
+                  <div class="text-[var(--muted-foreground)]" id="inspUpgrade">
+                    In-place non-destructive upgrade preserves existing keys, custom domains, model deployments, and OpenAI v1 API routes.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[var(--border)] text-[0.7rem] text-[var(--muted-foreground)] flex items-center justify-between">
+              <span>ARM Resource Provider Model</span>
+              <span class="font-mono">2026 GA Architecture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 2: AGENT RUNTIMES & LIFECYCLE -->
+    <!-- ============================================================== -->
+    <div id="view-agents" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Foundry Agent Service: Spectrum from Declarative to Full-Code</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Compare Prompt Agents, Hosted Agents, and Ephemeral Responses API alongside the 7-phase agent lifecycle.</p>
+          </div>
+          <span class="badge bg-purple-500/15 text-purple-600">Unified Agent Runtime</span>
+        </div>
+
+        <!-- 3 Agent Archetypes Comparison -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+          <!-- Prompt Agents -->
+          <div class="bg-[var(--background)] border-2 border-blue-500/40 rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-bold text-base text-[var(--foreground)]">Prompt Agents</h3>
+                <span class="badge bg-blue-500/10 text-blue-500">Declarative</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-4">Configured via Portal, SDK, or REST. Managed zero-container execution with built-in tools.</p>
+              
+              <ul class="space-y-2 text-xs text-[var(--muted-foreground)] mb-4">
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> No containers, zero app code to maintain</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Managed state storage (Threads, Runs, Files)</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Automatic autoscaling with request volume</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-blue-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Ideal for fast prototyping &amp; standard tasks</li>
+              </ul>
+            </div>
+            <div class="p-2.5 bg-[var(--card)] rounded-lg text-[0.75rem] border border-[var(--border)] font-mono text-blue-600 dark:text-blue-400">
+              agent = project.agents.create_agent(...)
+            </div>
+          </div>
+
+          <!-- Hosted Agents -->
+          <div class="bg-[var(--background)] border-2 border-purple-500/50 rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-bold text-base text-[var(--foreground)]">Hosted Agents</h3>
+                <span class="badge bg-purple-500/10 text-purple-500">Full Code</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-4">Bring container image or zip file. Built with Agent Framework, LangGraph, or custom code.</p>
+              
+              <ul class="space-y-2 text-xs text-[var(--muted-foreground)] mb-4">
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Managed endpoint with dedicated Entra identity</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Long-running tasks &amp; durable state storage</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> MicroVM isolation &amp; BYO VNet injection</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-purple-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Complex multi-agent &amp; custom protocols</li>
+              </ul>
+            </div>
+            <div class="p-2.5 bg-[var(--card)] rounded-lg text-[0.75rem] border border-[var(--border)] font-mono text-purple-600 dark:text-purple-400">
+              azd deploy / container image deployment
+            </div>
+          </div>
+
+          <!-- Responses API Ephemeral Agents -->
+          <div class="bg-[var(--background)] border-2 border-emerald-500/40 rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-bold text-base text-[var(--foreground)]">Responses API</h3>
+                <span class="badge bg-emerald-500/10 text-emerald-500">Ephemeral / In-App</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-4">Agent instructions and tool definitions live entirely in client application code.</p>
+              
+              <ul class="space-y-2 text-xs text-[var(--muted-foreground)] mb-4">
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> No agent resource created or managed in Azure</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Versions alongside app git repo &amp; pull requests</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Full access to Foundry models, tools, and telemetry</li>
+                <li class="flex items-center gap-2"><svg class="w-3.5 h-3.5 text-emerald-500 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> Ideal for existing microservices &amp; CI/CD</li>
+              </ul>
+            </div>
+            <div class="p-2.5 bg-[var(--card)] rounded-lg text-[0.75rem] border border-[var(--border)] font-mono text-emerald-600 dark:text-emerald-400">
+              openai.responses.create(model=..., tools=...)
+            </div>
+          </div>
+        </div>
+
+        <!-- 7-Phase Agent Lifecycle Flow -->
+        <div class="mt-8 pt-6 border-t border-[var(--border)]">
+          <h3 class="font-bold text-base text-[var(--foreground)] mb-2">The 7-Phase Agent Production Lifecycle</h3>
+          <p class="text-xs text-[var(--muted-foreground)] mb-4">Click through each phase to inspect operational requirements, telemetry, and platform tools.</p>
+          
+          <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2 text-center" id="lifecycleSteps">
+            <button onclick="selectLifecycle(1)" class="lifecycle-btn p-3 bg-blue-500/10 border-2 border-blue-500 rounded-xl cursor-pointer text-left transition-all">
+              <div class="text-[0.65rem] uppercase font-bold text-blue-500">Phase 1</div>
+              <div class="font-bold text-xs text-[var(--foreground)] mt-0.5">1. Create</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Prompt / Code</div>
+            </button>
+            <button onclick="selectLifecycle(2)" class="lifecycle-btn p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer text-left transition-all hover:border-blue-400">
+              <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)]">Phase 2</div>
+              <div class="font-bold text-xs text-[var(--foreground)] mt-0.5">2. Test</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Agent Playground</div>
+            </button>
+            <button onclick="selectLifecycle(3)" class="lifecycle-btn p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer text-left transition-all hover:border-blue-400">
+              <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)]">Phase 3</div>
+              <div class="font-bold text-xs text-[var(--foreground)] mt-0.5">3. Trace</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">OTel &amp; Spans</div>
+            </button>
+            <button onclick="selectLifecycle(4)" class="lifecycle-btn p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer text-left transition-all hover:border-blue-400">
+              <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)]">Phase 4</div>
+              <div class="font-bold text-xs text-[var(--foreground)] mt-0.5">4. Evaluate</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Rubrics &amp; Safety</div>
+            </button>
+            <button onclick="selectLifecycle(5)" class="lifecycle-btn p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer text-left transition-all hover:border-blue-400">
+              <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)]">Phase 5</div>
+              <div class="font-bold text-xs text-[var(--foreground)] mt-0.5">5. Optimize</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Agent Optimizer</div>
+            </button>
+            <button onclick="selectLifecycle(6)" class="lifecycle-btn p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer text-left transition-all hover:border-blue-400">
+              <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)]">Phase 6</div>
+              <div class="font-bold text-xs text-[var(--foreground)] mt-0.5">6. Publish</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Teams &amp; M365</div>
+            </button>
+            <button onclick="selectLifecycle(7)" class="lifecycle-btn p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer text-left transition-all hover:border-blue-400">
+              <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)]">Phase 7</div>
+              <div class="font-bold text-xs text-[var(--foreground)] mt-0.5">7. Monitor</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Fleet Health</div>
+            </button>
+          </div>
+
+          <!-- Lifecycle Detail Box -->
+          <div class="mt-4 p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4" id="lifecycleDetails">
+            <div>
+              <span class="badge bg-blue-500/10 text-blue-500 mb-1" id="lcPhaseBadge">Phase 1: Creation &amp; Authoring</span>
+              <h4 class="font-bold text-sm text-[var(--foreground)]" id="lcPhaseTitle">Agent Specification and Binding</h4>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 max-w-2xl" id="lcPhaseDesc">
+                Developer establishes system instructions, model selection (e.g. GPT-4o, DeepSeek-R1, Claude 3.5), tool connections (code interpreter, search, MCP endpoints), and assigns a dedicated Entra ID managed identity.
+              </p>
+            </div>
+            <div class="text-xs font-mono bg-[var(--card)] px-3 py-2 rounded-lg border border-[var(--border)] text-blue-600 dark:text-blue-400 shrink-0" id="lcPhaseArtifact">
+              Artifact: Agent Manifest / Definition
+            </div>
+          </div>
+        </div>
+
+        <!-- Long-Running Durable Tasks Deep-Dive Card -->
+        <div class="mt-6 p-5 bg-purple-50/30 dark:bg-purple-950/15 border border-purple-500/30 rounded-xl">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="badge bg-purple-500/20 text-purple-600">Preview Feature</span>
+            <h4 class="font-bold text-sm text-[var(--foreground)]">Durable State Management for Long-Running Hosted Agents</h4>
+          </div>
+          <p class="text-xs text-[var(--muted-foreground)] mb-3">
+            To survive infrastructure restarts, process crashes, and human-in-the-loop approvals, long-running agents decouple state into two distinct tiers:
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+            <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+              <span class="font-bold text-purple-600 dark:text-purple-400">1. Checkpoint Index (Task Metadata):</span>
+              <p class="text-[var(--muted-foreground)] mt-1">Lightweight key-value namespace (<code class="text-blue-500">ctx.metadata</code>) tracking workflow step numbers, session watermarks, idempotency keys, and explicit flushes. Fast, low-latency recovery anchor.</p>
+            </div>
+            <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+              <span class="font-bold text-purple-600 dark:text-purple-400">2. Checkpoint Store (Durable State Store):</span>
+              <p class="text-[var(--muted-foreground)] mt-1">Bulk persistent storage (<code class="text-blue-500">FoundryStateStore</code>, Blob, Cosmos DB) holding large conversation histories, LangGraph framework checkpoints, and intermediate artifact generation.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 3: MODELS & INTELLIGENT ROUTER -->
+    <!-- ============================================================== -->
+    <div id="view-models" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Model Ecosystem, Deployments &amp; Model Router</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">10,000+ open and proprietary models across OpenAI, Anthropic, Meta, DeepSeek, Mistral, and Microsoft Phi.</p>
+          </div>
+          <span class="badge bg-blue-500/15 text-blue-600">Model Factory</span>
+        </div>
+
+        <!-- Model Router Visual Pipeline -->
+        <div class="mt-6 bg-[var(--background)] border border-[var(--border)] rounded-xl p-5">
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex items-center gap-2">
+              <div class="p-1.5 bg-blue-600 text-white rounded-md text-xs font-bold">ROUTER</div>
+              <h3 class="font-bold text-sm text-[var(--foreground)]">Model Router: Dynamic Real-Time Prompt Routing</h3>
+            </div>
+            <span class="badge bg-blue-500/20 text-blue-600">Automatic Cost &amp; Latency Optimization</span>
+          </div>
+          <p class="text-xs text-[var(--muted-foreground)] mb-4">
+            Model Router is a specialized, pre-trained neural router deployed as a single endpoint. Instead of hardcoding model choices, prompts are dynamically routed based on complexity, quality thresholds, and latency requirements.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-3 text-center text-xs">
+            <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+              <div class="text-[0.65rem] uppercase font-bold text-blue-500 mb-1">Step 1: Input</div>
+              <div class="font-semibold text-[var(--foreground)]">Single Unified Request</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Client calls single router deployment endpoint</div>
+            </div>
+            <div class="p-3 bg-blue-500/10 border-2 border-blue-500/50 rounded-lg">
+              <div class="text-[0.65rem] uppercase font-bold text-blue-600 mb-1">Step 2: Analysis</div>
+              <div class="font-semibold text-[var(--foreground)]">Complexity Scoring</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Prompt features, reasoning depth, token count analyzed</div>
+            </div>
+            <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+              <div class="text-[0.65rem] uppercase font-bold text-blue-500 mb-1">Step 3: Routing</div>
+              <div class="font-semibold text-[var(--foreground)]">Dynamic Path Selection</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Route to Small/Fast vs Frontier Reasoning model</div>
+            </div>
+            <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+              <div class="text-[0.65rem] uppercase font-bold text-blue-500 mb-1">Step 4: Return</div>
+              <div class="font-semibold text-[var(--foreground)]">Transparent Response</div>
+              <div class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Output returned with metadata &amp; telemetry trace</div>
+            </div>
+          </div>
+
+          <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div class="p-3 bg-[var(--card)] rounded-lg border border-[var(--border)]">
+              <div class="font-semibold text-emerald-600 dark:text-emerald-400">Path A: Low-Complexity Prompts (e.g. 70% of traffic)</div>
+              <div class="text-[var(--muted-foreground)] text-[0.72rem] mt-0.5">Routed to <strong>GPT-4o-mini / Phi-4 / Mistral Small</strong>. Saves up to 80% on token cost with sub-second response times.</div>
+            </div>
+            <div class="p-3 bg-[var(--card)] rounded-lg border border-[var(--border)]">
+              <div class="font-semibold text-purple-600 dark:text-purple-400">Path B: High-Complexity &amp; Multi-Step Reasoning</div>
+              <div class="text-[var(--muted-foreground)] text-[0.72rem] mt-0.5">Routed to <strong>GPT-4o / DeepSeek-R1 / Claude 3.5 Sonnet</strong>. Preserves maximum reasoning accuracy for intricate coding and analysis.</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deployment Types Matrix -->
+        <div class="mt-6">
+          <h3 class="font-bold text-base text-[var(--foreground)] mb-3">Model Deployment Types &amp; Data Boundary Scopes</h3>
+          <div class="overflow-x-auto border border-[var(--border)] rounded-xl">
+            <table class="w-full text-left text-xs border-collapse">
+              <thead>
+                <tr class="bg-[var(--background)] border-b border-[var(--border)] text-[var(--muted-foreground)]">
+                  <th class="p-3 font-semibold">Deployment Type</th>
+                  <th class="p-3 font-semibold">Data Processing Boundary</th>
+                  <th class="p-3 font-semibold">Billing Model</th>
+                  <th class="p-3 font-semibold">Best Suited For</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[var(--border)]">
+                <tr class="hover:bg-[var(--background)]/50">
+                  <td class="p-3 font-medium text-[var(--foreground)]">Global Standard</td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Cross-region, Azure-managed global pool</td>
+                  <td class="p-3"><span class="badge bg-blue-500/10 text-blue-500">Pay-Per-Token</span></td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Highest availability and highest quota throughput limits</td>
+                </tr>
+                <tr class="hover:bg-[var(--background)]/50">
+                  <td class="p-3 font-medium text-[var(--foreground)]">Global Provisioned (PTU)</td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Cross-region, reserved GPU capacity</td>
+                  <td class="p-3"><span class="badge bg-purple-500/10 text-purple-500">Hourly Reserved</span></td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Predictable sustained high-volume inference, guaranteed latency</td>
+                </tr>
+                <tr class="hover:bg-[var(--background)]/50">
+                  <td class="p-3 font-medium text-[var(--foreground)]">Data Zone Standard</td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Strictly within US or EU geographic boundary</td>
+                  <td class="p-3"><span class="badge bg-blue-500/10 text-blue-500">Pay-Per-Token</span></td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Strict geographic compliance with multi-region burst capability</td>
+                </tr>
+                <tr class="hover:bg-[var(--background)]/50">
+                  <td class="p-3 font-medium text-[var(--foreground)]">Regional Standard</td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Single designated Azure region (e.g. East US 2)</td>
+                  <td class="p-3"><span class="badge bg-blue-500/10 text-blue-500">Pay-Per-Token</span></td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Strict regional data sovereignty and co-located private services</td>
+                </tr>
+                <tr class="hover:bg-[var(--background)]/50">
+                  <td class="p-3 font-medium text-[var(--foreground)]">Developer (Preview)</td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Any region, no SLA, 24-hr max lifecycle</td>
+                  <td class="p-3"><span class="badge bg-amber-500/10 text-amber-500">Low-Cost Token</span></td>
+                  <td class="p-3 text-[var(--muted-foreground)]">Ephemeral fine-tuned model evaluation and sandbox testing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 4: TOOLBOXES, MCP & FOUNDRY IQ -->
+    <!-- ============================================================== -->
+    <div id="view-toolboxes" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Toolboxes, Model Context Protocol (MCP) &amp; Foundry IQ</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Curate tools once behind a managed MCP endpoint and empower agents with permission-aware enterprise retrieval.</p>
+          </div>
+          <span class="badge bg-emerald-500/15 text-emerald-600">Knowledge &amp; Action Plane</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
+          
+          <!-- Left: Foundry Toolbox & MCP Server -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 bg-emerald-600 text-white rounded-lg text-xs font-bold">TOOLBOX</div>
+                  <h3 class="font-bold text-base text-[var(--foreground)]">Foundry Toolbox &amp; MCP Server</h3>
+                </div>
+                <span class="badge bg-emerald-500/20 text-emerald-600">Standard MCP Gateway</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-4">
+                Curate a bundle of tools (built-in + remote) once. Foundry exposes them via a single managed MCP-compatible endpoint (<code class="text-blue-500">https://mcp.ai.azure.com</code>) with centralized Entra auth, version snapshots, and rate-limiting.
+              </p>
+
+              <div class="space-y-2.5 text-xs">
+                <div class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)] flex items-center justify-between">
+                    <span>Built-In Agent Tools</span>
+                    <span class="badge bg-blue-500/10 text-blue-500 text-[0.65rem]">Managed</span>
+                  </div>
+                  <div class="text-[var(--muted-foreground)] mt-1">Code Interpreter (sandboxed Python), Web Search (Bing Grounding), File Search (Vector &amp; Hybrid), Browser Automation (Headless browser runtime).</div>
+                </div>
+
+                <div class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)] flex items-center justify-between">
+                    <span>Enterprise Remote MCP Servers</span>
+                    <span class="badge bg-purple-500/10 text-purple-500 text-[0.65rem]">Remote Hub</span>
+                  </div>
+                  <div class="text-[var(--muted-foreground)] mt-1">Azure DevOps MCP Server, Azure Functions MCP webhook (<code class="text-blue-500">/runtime/webhooks/mcp</code>), GitHub MCP, and custom OpenAPI endpoints.</div>
+                </div>
+
+                <div class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)] flex items-center justify-between">
+                    <span>Authentication &amp; Identity Modes</span>
+                    <span class="badge bg-amber-500/10 text-amber-500 text-[0.65rem]">Security</span>
+                  </div>
+                  <div class="text-[var(--muted-foreground)] mt-1">Microsoft Entra Managed Identity (agent/project), OAuth On-Behalf-Of (OBO) user token passthrough, or API Key via Key Vault.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-emerald-500/10 rounded-lg border border-emerald-500/20 text-xs">
+              <span class="font-bold text-emerald-700 dark:text-emerald-300">Toolbox Versioning:</span>
+              <span class="text-[var(--muted-foreground)] ml-1">Create immutable version snapshots, test against staging agents, and promote to default without altering consumer code.</span>
+            </div>
+          </div>
+
+          <!-- Right: Foundry IQ Enterprise Knowledge Retrieval -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 bg-blue-600 text-white rounded-lg text-xs font-bold">IQ</div>
+                  <h3 class="font-bold text-base text-[var(--foreground)]">Foundry IQ: Agentic Retrieval Engine</h3>
+                </div>
+                <span class="badge bg-blue-500/20 text-blue-600">Permission-Aware RAG</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-4">
+                Unifies scattered corporate knowledge (SharePoint, Azure Blob, OneLake, Web) into a multi-source knowledge base. Employs LLM-powered query planning with end-to-end security trimming.
+              </p>
+
+              <div class="space-y-2.5 text-xs">
+                <div class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)]">Multi-Source Connectivity</div>
+                  <div class="text-[var(--muted-foreground)] mt-1">Simultaneously orchestrates searches across internal blob storage, SharePoint sites, Microsoft Fabric OneLake, and public web search.</div>
+                </div>
+
+                <div class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)]">Agentic Query Planning</div>
+                  <div class="text-[var(--muted-foreground)] mt-1">An internal LLM decomposes complex questions, identifies optimal data sources, fires parallel searches, and aggregates synthesized citations.</div>
+                </div>
+
+                <div class="p-2.5 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)]">ACL Synchronization &amp; Purview Labels</div>
+                  <div class="text-[var(--muted-foreground)] mt-1">Queries execute under caller's Microsoft Entra ID. Automatically honors Microsoft Purview sensitivity labels and source file permissions so agents never leak unauthorized data.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-blue-500/10 rounded-lg border border-blue-500/20 text-xs">
+              <span class="font-bold text-blue-700 dark:text-blue-300">Grounding Guarantee:</span>
+              <span class="text-[var(--muted-foreground)] ml-1">Returns extractive grounding citations with source URIs and offsets, enabling deterministic hallucination verification.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 5: OBSERVABILITY & RED TEAMING -->
+    <!-- ============================================================== -->
+    <div id="view-observability" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Observability, Evaluation &amp; AI Red Teaming</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Native OpenTelemetry tracing, GenAI semantic conventions, multi-metric evaluation, and automated PyRIT adversarial red teaming.</p>
+          </div>
+          <span class="badge bg-purple-500/15 text-purple-600">Trust &amp; Verification</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+          
+          <!-- Column 1: OpenTelemetry Agent Tracing -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="p-1 bg-blue-600 text-white rounded text-xs font-bold">OTEL</span>
+                <h3 class="font-bold text-sm text-[var(--foreground)]">OpenTelemetry Native Tracing</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Server-side and client-side tracing sends spans to Azure Application Insights formatted according to GenAI Semantic Conventions.
+              </p>
+              <ul class="space-y-2 text-xs text-[var(--muted-foreground)]">
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">Spans Captured:</strong>
+                  <div>Model prompts, completions, latency, input/output token counts, and temperature.</div>
+                </li>
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">Tool Invocations:</strong>
+                  <div>Tool call inputs, proposed arguments, execution duration, and tool response payloads.</div>
+                </li>
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">Server-Side Auto-Instrumentation:</strong>
+                  <div>Zero code changes required for Prompt &amp; Hosted agents once Application Insights is connected.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-blue-500">gen_ai.system / gen_ai.request.model</div>
+          </div>
+
+          <!-- Column 2: Evaluator Ecosystem -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="p-1 bg-purple-600 text-white rounded text-xs font-bold">EVAL</span>
+                <h3 class="font-bold text-sm text-[var(--foreground)]">Multi-Dimensional Evaluators</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Pre-production batch evaluations and continuous online evaluation with automated quality scoring.
+              </p>
+              <div class="space-y-2 text-xs text-[var(--muted-foreground)]">
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-purple-600 dark:text-purple-400">Quality Evaluators</div>
+                  <div>Groundedness, Relevance, Coherence, Fluency, and Task Completion Rate (0.0 – 5.0 score).</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-rose-600 dark:text-rose-400">Safety &amp; Risk Evaluators</div>
+                  <div>Hate &amp; Fairness, Violence, Sexual content, Self-harm, and Protected Material (code &amp; text).</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-emerald-600 dark:text-emerald-400">Agent Optimizer (Preview)</div>
+                  <div>Automated feedback loop that optimizes agent instructions and tool descriptions to maximize benchmark scores.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-purple-500">GroundednessEvaluator / SafetyEvaluator</div>
+          </div>
+
+          <!-- Column 3: AI Red Teaming Agent -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="p-1 bg-rose-600 text-white rounded text-xs font-bold">RED TEAM</span>
+                <h3 class="font-bold text-sm text-[var(--foreground)]">AI Red Teaming Agent (PyRIT)</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Automated adversary simulating multi-turn attacks to surface vulnerabilities before malicious users find them.
+              </p>
+              <ul class="space-y-2 text-xs text-[var(--muted-foreground)]">
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">Automated Adversarial Probing:</strong>
+                  <div>Simulates jailbreaks, prompt injection, system prompt extraction, and conversation evasion.</div>
+                </li>
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">Attack Success Rate (ASR):</strong>
+                  <div>Quantifies risk probability across attack taxonomies to gate CI/CD deployment pipelines.</div>
+                </li>
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">Continuous Audit Scorecards:</strong>
+                  <div>Maintains historical audit trail in Foundry dashboard for compliance and executive reporting.</div>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-rose-500">PyRIT / AttackSuccessRate / AdversarialScans</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 6: CONTROL PLANE & GUARDRAILS -->
+    <!-- ============================================================== -->
+    <div id="view-controlplane" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Foundry Control Plane &amp; The 4 Guardrail Intervention Points</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Enterprise fleet governance, token quotas, and full-spectrum security scanning across agent inference steps.</p>
+          </div>
+          <span class="badge bg-rose-500/15 text-rose-600">Fleet Control &amp; Defense</span>
+        </div>
+
+        <!-- 4 Intervention Points Diagram -->
+        <div class="mt-6 bg-[var(--background)] border border-[var(--border)] rounded-xl p-5">
+          <div class="flex items-center justify-between mb-3">
+            <h3 class="font-bold text-sm text-[var(--foreground)]">Inline Defense: The 4 Intervention Points</h3>
+            <span class="text-xs text-[var(--muted-foreground)]">~50-100ms latency per intervention point &bull; Annotate or Block actions</span>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
+            
+            <div class="p-3 bg-[var(--card)] border-2 border-blue-500/50 rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-blue-600">Point 1</span>
+                <span class="badge bg-blue-500/10 text-blue-500 text-[0.65rem]">Prompt</span>
+              </div>
+              <h4 class="font-bold text-[var(--foreground)] mb-1">User Input</h4>
+              <p class="text-[var(--muted-foreground)] text-[0.72rem] mb-2">Evaluates incoming user query before LLM inference.</p>
+              <div class="bg-[var(--background)] p-2 rounded text-[0.7rem] space-y-1">
+                <div class="font-semibold text-[var(--foreground)]">Active Controls:</div>
+                <div class="text-rose-500">&bull; Direct Jailbreak / Prompt Shields</div>
+                <div class="text-rose-500">&bull; Content Safety (Hate, Violence)</div>
+              </div>
+            </div>
+
+            <div class="p-3 bg-[var(--card)] border-2 border-purple-500/50 rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-purple-600">Point 2</span>
+                <span class="badge bg-purple-500/10 text-purple-500 text-[0.65rem]">Preview</span>
+              </div>
+              <h4 class="font-bold text-[var(--foreground)] mb-1">Tool Call</h4>
+              <p class="text-[var(--muted-foreground)] text-[0.72rem] mb-2">Evaluates proposed tool action generated by LLM.</p>
+              <div class="bg-[var(--background)] p-2 rounded text-[0.7rem] space-y-1">
+                <div class="font-semibold text-[var(--foreground)]">Active Controls:</div>
+                <div class="text-purple-500">&bull; Unauthorized Action Detection</div>
+                <div class="text-purple-500">&bull; Malformed Param Validation</div>
+              </div>
+            </div>
+
+            <div class="p-3 bg-[var(--card)] border-2 border-amber-500/50 rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-amber-600">Point 3</span>
+                <span class="badge bg-amber-500/10 text-amber-500 text-[0.65rem]">Preview</span>
+              </div>
+              <h4 class="font-bold text-[var(--foreground)] mb-1">Tool Response</h4>
+              <p class="text-[var(--muted-foreground)] text-[0.72rem] mb-2">Scans external payload returned by tools/APIs.</p>
+              <div class="bg-[var(--background)] p-2 rounded text-[0.7rem] space-y-1">
+                <div class="font-semibold text-[var(--foreground)]">Active Controls:</div>
+                <div class="text-amber-500">&bull; Indirect Prompt Injection (XPIA)</div>
+                <div class="text-amber-500">&bull; Hidden Prompt Payloads in Data</div>
+              </div>
+            </div>
+
+            <div class="p-3 bg-[var(--card)] border-2 border-emerald-500/50 rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-emerald-600">Point 4</span>
+                <span class="badge bg-emerald-500/10 text-emerald-500 text-[0.65rem]">Egress</span>
+              </div>
+              <h4 class="font-bold text-[var(--foreground)] mb-1">Output</h4>
+              <p class="text-[var(--muted-foreground)] text-[0.72rem] mb-2">Final verification before sending response to user.</p>
+              <div class="bg-[var(--background)] p-2 rounded text-[0.7rem] space-y-1">
+                <div class="font-semibold text-[var(--foreground)]">Active Controls:</div>
+                <div class="text-emerald-500">&bull; Protected Material (Code &amp; Text)</div>
+                <div class="text-emerald-500">&bull; Groundedness Detection</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Control Plane Fleet Governance -->
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div class="p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl">
+            <h4 class="font-bold text-sm text-[var(--foreground)] mb-1">Cross-Fleet Inventory &amp; Registry</h4>
+            <p class="text-[var(--muted-foreground)] mb-3">Register and catalog agents built in Foundry, Copilot Studio, or non-Microsoft frameworks into the Entra Agent Registry for single-pane governance.</p>
+            <div class="p-2 bg-[var(--card)] rounded font-mono text-blue-500 text-[0.7rem]">Entra Agent Registry / Fleet View</div>
+          </div>
+
+          <div class="p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl">
+            <h4 class="font-bold text-sm text-[var(--foreground)] mb-1">Token Limit Enforcements</h4>
+            <p class="text-[var(--muted-foreground)] mb-3">Configure organization-wide or per-team token ceilings and rate-limits across models to eliminate runaway costs and prevent denial-of-wallet spikes.</p>
+            <div class="p-2 bg-[var(--card)] rounded font-mono text-emerald-500 text-[0.7rem]">AI Gateway / Token Quota Policies</div>
+          </div>
+
+          <div class="p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl">
+            <h4 class="font-bold text-sm text-[var(--foreground)] mb-1">Defender &amp; Purview Integration</h4>
+            <p class="text-[var(--muted-foreground)] mb-3">Direct integration with Microsoft Defender for Cloud and Microsoft Purview for automated sensitivity classification, data loss prevention (DLP), and threat detection.</p>
+            <div class="p-2 bg-[var(--card)] rounded font-mono text-purple-500 text-[0.7rem]">Defender for AI / Purview Labels</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 7: SDK & PROTOCOL STUDIO -->
+    <!-- ============================================================== -->
+    <div id="view-sdkstudio" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Developer SDKs, APIs &amp; Interoperability Protocols</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Explore code patterns across Foundry SDK, Agent Framework, OpenAI SDK, Anthropic SDK, and MCP remote endpoints.</p>
+          </div>
+          <div class="flex items-center gap-1">
+            <button onclick="switchCode('foundry_sdk')" id="cbtn-foundry_sdk" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-blue-600 text-white">Foundry SDK</button>
+            <button onclick="switchCode('responses_api')" id="cbtn-responses_api" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]">Responses API</button>
+            <button onclick="switchCode('agent_framework')" id="cbtn-agent_framework" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]">Agent Framework</button>
+            <button onclick="switchCode('anthropic')" id="cbtn-anthropic" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]">Anthropic Foundry</button>
+            <button onclick="switchCode('mcp_config')" id="cbtn-mcp_config" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]">MCP Remote</button>
+          </div>
+        </div>
+
+        <div class="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-8 bg-[var(--background)] rounded-xl border border-[var(--border)] p-4 font-mono text-xs overflow-x-auto">
+            <pre id="codeDisplay" class="text-[var(--foreground)] leading-relaxed">
+from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+
+# Connect to Foundry Project via project-scoped endpoint
+project_endpoint = "https://my-foundry-resource.services.ai.azure.com/api/projects/customer-service"
+
+project = AIProjectClient(
+    endpoint=project_endpoint,
+    credential=DefaultAzureCredential()
+)
+
+# Access project models and unified platform tools
+openai = project.get_openai_client()
+response = openai.responses.create(
+    model="gpt-4o",
+    input="Analyze customer warranty issue and query inventory.",
+    tools=[{"type": "web_search"}, {"type": "code_interpreter"}]
+)
+
+print(response.output_text)
+            </pre>
+          </div>
+
+          <div class="lg:col-span-4 space-y-3 text-xs" id="codeMeta">
+            <div class="p-3 bg-[var(--background)] rounded-xl border border-[var(--border)]">
+              <h4 class="font-bold text-sm text-[var(--foreground)] mb-1" id="codeMetaTitle">Foundry SDK (Python / C# / JS / Java)</h4>
+              <p class="text-[var(--muted-foreground)]" id="codeMetaDesc">
+                Thin-client SDK wrapping all project-level REST APIs. Connects with Entra ID token provider to invoke models, manage toolboxes, trigger evaluations, and retrieve traces.
+              </p>
+            </div>
+            
+            <div class="p-3 bg-[var(--background)] rounded-xl border border-[var(--border)]">
+              <h4 class="font-bold text-[var(--foreground)] mb-1">Endpoints &amp; Scopes</h4>
+              <div class="font-mono text-blue-600 dark:text-blue-400 text-[0.7rem] break-all" id="codeMetaEndpoint">
+                https://&lt;resource&gt;.services.ai.azure.com/api/projects/&lt;project&gt;
+              </div>
+            </div>
+
+            <div class="p-3 bg-[var(--background)] rounded-xl border border-[var(--border)]">
+              <h4 class="font-bold text-[var(--foreground)] mb-1">Supported Protocols</h4>
+              <ul class="space-y-1 text-[var(--muted-foreground)] text-[0.72rem]">
+                <li>&bull; <strong>OpenResponses Protocol:</strong> Universal schema for agent invocation</li>
+                <li>&bull; <strong>Activity Protocol:</strong> Teams and Microsoft 365 Copilot chat events</li>
+                <li>&bull; <strong>A2A Protocol (Preview):</strong> Inter-agent peer communication</li>
+                <li>&bull; <strong>MCP:</strong> Model Context Protocol client and server endpoints</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Interactive Logic -->
+  <script>
+    // Tab Switching
+    function switchTab(tabId) {
+      const views = ['architecture', 'agents', 'models', 'toolboxes', 'observability', 'controlplane', 'sdkstudio'];
+      views.forEach(v => {
+        const el = document.getElementById('view-' + v);
+        const btn = document.getElementById('tab-' + v);
+        if (el) el.classList.add('hidden');
+        if (btn) {
+          btn.classList.remove('active');
+          btn.classList.remove('text-[var(--foreground)]');
+          btn.classList.add('text-[var(--muted-foreground)]');
+        }
+      });
+      const activeEl = document.getElementById('view-' + tabId);
+      const activeBtn = document.getElementById('tab-' + tabId);
+      if (activeEl) activeEl.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+        activeBtn.classList.remove('text-[var(--muted-foreground)]');
+      }
+    }
+
+    // Architecture Node Inspector Data
+    const archNodes = {
+      top_resource: {
+        title: "Top-Level Foundry Resource",
+        badge: "ARM Root (AIServices)",
+        desc: "The primary administrative and security umbrella (Microsoft.CognitiveServices/accounts, kind: AIServices). Houses shared model quotas, global firewall rules, Key Vault customer-managed keys, and centralized billing.",
+        endpoint: "https://<resource-name>.services.ai.azure.com",
+        points: [
+          "Global, Data-Zone, and Regional Model Deployments",
+          "Centralized Role-Based Access Control (RBAC)",
+          "Private Link & Virtual Network isolation",
+          "Foundry Tools APIs (Speech, Language, Document Intelligence)"
+        ],
+        upgrade: "Existing Azure OpenAI resources upgrade in-place non-destructively, retaining custom domains, API keys, and model deployments."
+      },
+      project_a: {
+        title: "Foundry Project Scope",
+        badge: "Subresource (AIServices/projects)",
+        desc: "Development sandboxes created inside the Foundry resource. Allows engineering teams to build, test, and evaluate agents and pipelines without requiring administrative Azure subscription permissions.",
+        endpoint: "https://<resource-name>.services.ai.azure.com/api/projects/<project-name>",
+        points: [
+          "Project-scoped Agent definitions (Prompt & Hosted)",
+          "Toolbox bindings and MCP remote integrations",
+          "Dedicated evaluation datasets, runs & scorecards",
+          "Inherits models and network routes from parent resource"
+        ],
+        upgrade: "Multiple projects can share the same GPU quota without noisy neighbor disruptions."
+      },
+      project_b: {
+        title: "Hosted Agent Workspace (Project Beta)",
+        badge: "Subresource (AIServices/projects)",
+        desc: "Specialized project configured for code-first Hosted Agents running containerized microservices or LangGraph state machines.",
+        endpoint: "https://<resource-name>.services.ai.azure.com/api/projects/project-beta",
+        points: [
+          "Container compute hosting with autoscale instances",
+          "Durable task checkpoint store & state persistence",
+          "Dedicated Microsoft Entra Managed Identity per agent",
+          "Direct integration with Azure Developer CLI (azd)"
+        ],
+        upgrade: "Supports custom communication protocols, webhook endpoints, and human-in-the-loop approvals."
+      },
+      conn_storage: {
+        title: "Connected Azure Storage Account",
+        badge: "Connected Resource",
+        desc: "External Azure Blob Storage connected to Foundry via ARM connection. Used for evaluation input/output datasets, batch inference results, and customer-managed agent threads.",
+        endpoint: "https://<storage-account>.blob.core.windows.net",
+        points: [
+          "Supports BYO Storage architecture for complete data isolation",
+          "Encrypted with Microsoft or Customer-Managed Keys (CMK)",
+          "Secured via Storage Blob Data Contributor RBAC",
+          "Private endpoints supported for private subnet traffic"
+        ],
+        upgrade: "Basic mode uses Microsoft-managed storage; Standard enterprise mode uses your own storage."
+      },
+      conn_search: {
+        title: "Azure AI Search (Foundry IQ Engine)",
+        badge: "Connected Resource",
+        desc: "Enterprise vector and hybrid search service powering Foundry IQ. Hosts vector indexes, semantic ranking, and document chunking for retrieval-augmented generation (RAG).",
+        endpoint: "https://<search-service>.search.windows.net",
+        points: [
+          "Semantic ranker and hybrid vector-keyword retrieval",
+          "Automatic indexers with incremental delta refresh",
+          "Document-level ACL synchronization from SharePoint & OneLake",
+          "Query-time security trimming using caller's Entra token"
+        ],
+        upgrade: "Integrates seamlessly with Foundry Agent Service as a first-class retrieval tool."
+      },
+      conn_keyvault: {
+        title: "Azure Key Vault Connection",
+        badge: "Security Boundary",
+        desc: "Centralized secret and encryption key management. Stores API keys for 3rd-party models/tools and hosts FIPS 140-2 Level 2 encryption keys for Customer-Managed Keys (CMK).",
+        endpoint: "https://<keyvault-name>.vault.azure.net",
+        points: [
+          "Customer-Managed Encryption Keys (CMK) with soft-delete",
+          "Secure credential store for external database connection strings",
+          "Managed Identity keyless retrieval with zero plain-text secrets",
+          "Automatic key rotation support"
+        ],
+        upgrade: "One Key Vault connection serves all child projects under the parent Foundry resource."
+      },
+      conn_appinsights: {
+        title: "Application Insights & Log Analytics",
+        badge: "Observability Store",
+        desc: "OpenTelemetry telemetry sink for all agent traces, prompt payloads, model latencies, token consumption, and evaluation run logs.",
+        endpoint: "https://<region>.livediagnostics.monitor.azure.com",
+        points: [
+          "Compliant with OpenTelemetry GenAI Semantic Conventions",
+          "Automatic server-side agent execution span capture",
+          "Kusto Query Language (KQL) analytics over trace datasets",
+          "Pre-built operational and cost monitoring dashboards"
+        ],
+        upgrade: "Access controlled via Log Analytics Reader and Azure Monitor Contributor roles."
+      },
+      networking: {
+        title: "Network Security & Private Link Architecture",
+        badge: "Network Isolation",
+        desc: "Comprehensive enterprise perimeter defense ensuring zero public Internet exposure for model inference and agent data paths.",
+        endpoint: "Private DNS Zones: privatelink.services.ai.azure.com",
+        points: [
+          "Private Endpoints for inbound API traffic isolation",
+          "Managed Virtual Network (Managed VNet) for outbound control",
+          "BYO VNet Subnet Injection (Microsoft.App/environments delegation)",
+          "Network Security Perimeters (NSP) and Azure Firewall inspection"
+        ],
+        upgrade: "Enables agents to securely reach on-premises corporate SAP, SQL, and intranet APIs."
+      }
+    };
+
+    function selectArchNode(key) {
+      const data = archNodes[key];
+      if (!data) return;
+      document.getElementById('inspTitle').textContent = data.title;
+      document.getElementById('inspBadge').textContent = data.badge;
+      document.getElementById('inspDesc').textContent = data.desc;
+      document.getElementById('inspEndpoint').textContent = data.endpoint;
+      document.getElementById('inspUpgrade').textContent = data.upgrade;
+      
+      const ul = document.getElementById('inspPoints');
+      ul.innerHTML = '';
+      data.points.forEach(pt => {
+        const li = document.createElement('li');
+        li.textContent = pt;
+        ul.appendChild(li);
+      });
+    }
+
+    // Lifecycle interactive step details
+    const lifecycleData = {
+      1: {
+        title: "1. Create: Agent Specification & Binding",
+        badge: "Phase 1: Creation & Authoring",
+        desc: "Developer defines system instructions, chooses model deployment (GPT-4o, DeepSeek-R1, Claude 3.5), configures tools (code interpreter, web search, MCP remote endpoints), and establishes a dedicated Entra managed identity.",
+        artifact: "Artifact: Agent Definition / Config"
+      },
+      2: {
+        title: "2. Test: Interactive Agent Playground",
+        badge: "Phase 2: Validation",
+        desc: "Exercise agent logic in the browser or terminal. Validate tool calling arguments, authentication handshakes, and multi-turn conversational context in real-time before saving versions.",
+        artifact: "Artifact: Chat Session Traces"
+      },
+      3: {
+        title: "3. Trace: OpenTelemetry Inspection",
+        badge: "Phase 3: Observability",
+        desc: "Inspect granular execution spans in Application Insights. Measure exact latency, prompt/completion token consumption, tool response payloads, and intermediate reasoning steps.",
+        artifact: "Telemetry: GenAI OTel Spans"
+      },
+      4: {
+        title: "4. Evaluate: Safety & Quality Benchmarking",
+        badge: "Phase 4: Verification",
+        desc: "Execute automated evaluations against ground-truth datasets. Compute Groundedness, Relevance, Coherence, and Content Safety scores. Enforce minimum passing thresholds (e.g. >= 85% task completion) to gate release.",
+        artifact: "Scorecard: Evaluation Report"
+      },
+      5: {
+        title: "5. Optimize: Agent Optimizer Automation",
+        badge: "Phase 5: Self-Improvement",
+        desc: "The Agent Optimizer (preview) analyzes evaluation failures and automatically re-engineers system instructions, tool descriptions, and model hyper-parameters to raise accuracy benchmark scores.",
+        artifact: "Artifact: Optimized Agent Config"
+      },
+      6: {
+        title: "6. Publish: Enterprise Distribution",
+        badge: "Phase 6: Deployment",
+        desc: "Snapshot immutable agent version and generate production endpoints. Publish agent directly into Microsoft Teams, Microsoft 365 Copilot, and the Entra Agent Registry for enterprise discovery.",
+        artifact: "Endpoints: Production URI & Manifest"
+      },
+      7: {
+        title: "7. Monitor: Production Fleet Oversight",
+        badge: "Phase 7: Day-2 Operations",
+        desc: "Foundry Control Plane continuously tracks fleet error rates, token quota utilization, drift, Defender security alerts, and cost anomalies across thousands of active agent sessions.",
+        artifact: "Dashboard: Fleet Health & Alerts"
+      }
+    };
+
+    function selectLifecycle(stepNum) {
+      const data = lifecycleData[stepNum];
+      if (!data) return;
+      document.getElementById('lcPhaseBadge').textContent = data.badge;
+      document.getElementById('lcPhaseTitle').textContent = data.title;
+      document.getElementById('lcPhaseDesc').textContent = data.desc;
+      document.getElementById('lcPhaseArtifact').textContent = data.artifact;
+
+      // Update button highlights
+      const btns = document.querySelectorAll('.lifecycle-btn');
+      btns.forEach((btn, idx) => {
+        if (idx + 1 === stepNum) {
+          btn.className = "lifecycle-btn p-3 bg-blue-500/10 border-2 border-blue-500 rounded-xl cursor-pointer text-left transition-all";
+        } else {
+          btn.className = "lifecycle-btn p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer text-left transition-all hover:border-blue-400";
+        }
+      });
+    }
+
+    // Code studio switcher
+    const codeSnippets = {
+      foundry_sdk: {
+        title: "Foundry SDK (azure-ai-projects)",
+        desc: "The recommended official Python SDK for managing agents, toolboxes, evaluations, and project endpoints with Microsoft Entra ID authentication.",
+        endpoint: "https://<resource>.services.ai.azure.com/api/projects/<project>",
+        code: `from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+
+# Connect to Foundry Project via project-scoped endpoint
+project_endpoint = "https://my-foundry.services.ai.azure.com/api/projects/customer-service"
+
+project = AIProjectClient(
+    endpoint=project_endpoint,
+    credential=DefaultAzureCredential()
+)
+
+# 1. Create a prompt agent with built-in tools
+agent = project.agents.create_agent(
+    model="gpt-4o",
+    name="support-assistant",
+    instructions="You are a helpful customer support agent. Query knowledge bases and verify orders.",
+    tools=[{"type": "web_search"}, {"type": "code_interpreter"}]
+)
+
+# 2. Create thread and trigger execution run
+thread = project.agents.create_thread()
+message = project.agents.create_message(
+    thread_id=thread.id,
+    role="user",
+    content="Check the status of order #98214"
+)
+run = project.agents.create_and_process_run(
+    thread_id=thread.id,
+    assistant_id=agent.id
+)
+
+messages = project.agents.list_messages(thread_id=thread.id)
+print(messages.data[0].content[0].text.value)`
+      },
+      responses_api: {
+        title: "Responses API (Ephemeral Agents)",
+        desc: "Assemble agents directly in your code without maintaining a persistent agent resource in Azure. Code versions cleanly with your app repository.",
+        endpoint: "https://<resource>.services.ai.azure.com/api/projects/<project>",
+        code: `from azure.ai.projects import AIProjectClient
+from azure.identity import DefaultAzureCredential
+
+project = AIProjectClient(
+    endpoint="https://my-foundry.services.ai.azure.com/api/projects/inventory-app",
+    credential=DefaultAzureCredential()
+)
+
+openai = project.get_openai_client()
+
+# Direct Responses API call with dynamic tools
+response = openai.responses.create(
+    model="gpt-4o",
+    input="Summarize return policy and check warehouse stock for item #334",
+    tools=[
+        {"type": "web_search"},
+        {
+            "type": "function",
+            "name": "check_stock",
+            "description": "Check item inventory in real time",
+            "parameters": {
+                "type": "object",
+                "properties": {"item_id": {"type": "string"}},
+                "required": ["item_id"]
+            }
+        }
+    ]
+)
+
+print(response.output_text)`
+      },
+      agent_framework: {
+        title: "Microsoft Agent Framework (Multi-Agent)",
+        desc: "Enterprise multi-agent framework in Python and C#/.NET. Uses FoundryChatClient over the project endpoint with built-in state checkpointing.",
+        endpoint: "FoundryChatClient / Responses API",
+        code: `from agent_framework import Agent, Workflow
+from agent_framework_foundry import FoundryChatClient
+from azure.identity import DefaultAzureCredential
+
+# Configure Foundry Chat Client backed by project endpoint
+client = FoundryChatClient(
+    project_endpoint="https://my-foundry.services.ai.azure.com/api/projects/finance",
+    model="gpt-4o",
+    credential=DefaultAzureCredential()
+)
+
+researcher = Agent(
+    name="Researcher",
+    instructions="Find relevant financial disclosures and 10-K filings.",
+    chat_client=client
+)
+
+auditor = Agent(
+    name="Auditor",
+    instructions="Audit calculations for compliance and consistency.",
+    chat_client=client
+)
+
+workflow = Workflow(agents=[researcher, auditor])
+result = workflow.run("Analyze Q4 gross margins for irregularities.")
+print(result)`
+      },
+      anthropic: {
+        title: "Anthropic Claude on Foundry",
+        desc: "First-class integration for Claude 3.5 Sonnet, Haiku, and Opus hosted directly on Foundry with Microsoft Entra keyless token authentication.",
+        endpoint: "https://<resource>.services.ai.azure.com/anthropic",
+        code: `from anthropic import AnthropicFoundry
+from azure.identity import DefaultAzureCredential, get_bearer_token_provider
+
+# Obtain Entra ID bearer token provider for Azure AI Foundry
+token_provider = get_bearer_token_provider(
+    DefaultAzureCredential(), "https://ai.azure.com/.default"
+)
+
+# Connect to Foundry Anthropic Endpoint
+client = AnthropicFoundry(
+    azure_ad_token_provider=token_provider,
+    base_url="https://my-foundry.services.ai.azure.com/anthropic"
+)
+
+message = client.messages.create(
+    model="claude-3-5-sonnet",
+    max_tokens=1024,
+    messages=[
+        {"role": "user", "content": "Generate a robust TypeScript parser for OpenAPI 3.1 schemas."}
+    ]
+)
+
+print(message.content[0].text)`
+      },
+      mcp_config: {
+        title: "Foundry Remote MCP Server Client Setup",
+        desc: "Connect Visual Studio Code, Cursor, or AI coding agents to Foundry MCP Server (https://mcp.ai.azure.com) with Entra authentication.",
+        endpoint: "https://mcp.ai.azure.com",
+        code: `// VS Code or Cursor mcp.json configuration
+{
+  "servers": {
+    "foundry-mcp-remote": {
+      "type": "http",
+      "url": "https://mcp.ai.azure.com"
+    }
+  }
+}
+
+// Once started, GitHub Copilot or your agent authenticates via Entra ID
+// Available tools exposed by Foundry MCP Server:
+// - list_foundry_projects: Discover accessible projects
+// - get_model_deployments: Query active model endpoints
+// - execute_agent_eval: Trigger cloud evaluation runs
+// - query_foundry_iq: Query enterprise knowledge bases`
+      }
+    };
+
+    function switchCode(key) {
+      const data = codeSnippets[key];
+      if (!data) return;
+      document.getElementById('codeDisplay').textContent = data.code;
+      document.getElementById('codeMetaTitle').textContent = data.title;
+      document.getElementById('codeMetaDesc').textContent = data.desc;
+      document.getElementById('codeMetaEndpoint').textContent = data.endpoint;
+
+      // Update button highlights
+      const btns = document.querySelectorAll('.code-btn');
+      btns.forEach(b => {
+        b.className = "code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]";
+      });
+      const active = document.getElementById('cbtn-' + key);
+      if (active) {
+        active.className = "code-btn px-2.5 py-1 text-xs font-semibold rounded bg-blue-600 text-white";
+      }
+    }
+  </script>
+</body>
+</html>

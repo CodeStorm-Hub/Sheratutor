@@ -1,0 +1,151 @@
+<!-- Title: What's new in Model Router | Category: Models/Explore Foundry Models/Model Router/What's new in Model Router | URL: foundry-models/whats-new-model-router -->
+
+---
+layout: Conceptual
+title: What's new in model router in Microsoft Foundry Models - Microsoft Foundry | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/azure/foundry/foundry-models/whats-new-model-router
+breadcrumb_path: ../../breadcrumb/azure-ai/toc.json
+feedback_help_link_url: https://learn.microsoft.com/answers/tags/133/azure
+feedback_help_link_type: get-help-at-qna
+feedback_product_url: https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4
+feedback_system: Standard
+permissioned-type: public
+recommendations: true
+recommendation_types:
+- Training
+- Certification
+uhfHeaderId: azure-ai-foundry
+ms.suite: office
+author: PatrickFarley
+learn_banner_products:
+- azure
+manager: mcleans
+ms.author: pafarley
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 90-days
+ms.service: microsoft-foundry
+description: Learn about the latest model router releases in Microsoft Foundry Models, including supported models, routing features, deployment options, and observability.
+ms.date: 2026-09-01T00:00:00.0000000Z
+ms.subservice: foundry-model-inference
+ms.topic: whats-new
+ai-usage: ai-assisted
+ms.custom:
+- classic-and-new
+- doc-kit-assisted
+- references_regions
+locale: en-us
+document_id: cf0887c7-31e6-2dda-abdb-0b3ff15171c4
+document_version_independent_id: 4e66f050-5f26-8b40-3f6c-1dce4fce7b40
+updated_at: 2026-09-02T22:17:00.0000000Z
+original_content_git_url: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/live/articles/foundry/foundry-models/whats-new-model-router.md
+gitcommit: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/69e912118f8ddcc742dc027dc0a00f7607e1df3d/articles/foundry/foundry-models/whats-new-model-router.md
+git_commit_id: 69e912118f8ddcc742dc027dc0a00f7607e1df3d
+site_name: Docs
+depot_name: Learn.azure-ai
+page_type: conceptual
+toc_rel: ../toc.json
+word_count: 893
+asset_id: foundry/foundry-models/whats-new-model-router
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: articles/foundry/foundry-models/whats-new-model-router.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/de19c5b8-e208-412e-9238-db3f631dea5b
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/cbd33d8f-e9af-440e-8f1e-fc69e07b902b
+- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ea7bf5d6-7154-4ba9-8ebc-59117ccacd49
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3820371b-086e-47fb-9d1f-b215f569127a
+- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+platformId: 92e3ba56-375a-4146-b863-c4991a4f3f7a
+---
+
+# What's new in model router in Microsoft Foundry Models - Microsoft Foundry | Microsoft Learn
+
+This article summarizes the latest model router releases and major documentation updates, including new supported models, routing features, deployment options, and observability.
+
+## September 2026
+
+### Per-request routing metadata (preview)
+
+Chat Completions responses from model router identify the serving model and can now include preview observability metadata when the client opts in to the preview response contract. The metadata reports the routing mode, routing-trace latency, ordered model attempts, HTTP status, and returned errors. Multiple attempts can show when automatic fallback occurred for an individual request. For setup and parsing guidance, see [Monitor model router](../openai/how-to/monitor-model-router).
+
+### Model router expands to 32 regions
+
+Model router is now available in 32 Azure regions. The four additional regions are Canada Central, North Europe, Norway East, and UAE North. North Europe and Norway East support both Global Standard and Data Zone Standard deployments. Canada Central and UAE North support Global Standard deployments only. For the full list, see [Supported regions](../openai/concepts/model-router#supported-regions).
+
+## August 2026
+
+### Model router expands to 28 regions
+
+Model router is now available in 28 Azure regions. Global Standard was available in all 28 regions, while Data Zone Standard was available in 21. For the full list, see [Supported regions](../openai/concepts/model-router#supported-regions).
+
+### Model refresh adds GPT-5.6 family and Claude Opus 4.8
+
+Model router version `2025-11-18` now supports 27 models. The routing pool adds `gpt-5.6-sol`, `gpt-5.6-terra`, and `gpt-5.6-luna` version `2026-07-09`, and `claude-opus-4-8` version `1`. To use `claude-opus-4-8` with model router, first deploy it to your Foundry resource.
+
+The routing pool removes the retired `gpt-5-chat`, `gpt-5.2-chat`, `gpt-5.3-chat`, `DeepSeek-V3.1`, and `claude-opus-4.1` models.
+
+Configuring a custom model subset is optional. If you previously configured a subset that contains any of these removed models, replace them with models from the current [supported models](../openai/concepts/model-router) list. If you use the default routing pool, no action is required.
+
+### Agentic routing expands to more model providers
+
+For agentic requests, model router can now select eligible open-source (OSS) and Anthropic models in addition to OpenAI models. Model and tool compatibility determine which models are eligible for each request. For more information, see [Use model router with Foundry agents](../openai/how-to/model-router-agents).
+
+## July 2026
+
+### Regional expansion
+
+Model router is now available in three additional regions: **Australia East**, **South India**, and **West US 3**, with both Global Standard and Data Zone Standard deployment types. For the full list of supported regions, see the [Model router concepts guide](/en-us/azure/ai-foundry/openai/concepts/model-router).
+
+## May 2026
+
+### Seven new models added
+
+Model router now supports 28 models. Version `2025-11-18` adds support for seven new models: `gpt-5.4`, `gpt-5.4-mini`, `gpt-5.4-nano`, `gpt-5.3-chat`, `gpt-5.5`, `claude-opus-4-7`, and `grok-4.1-fast-reasoning`. To use `claude-opus-4-7` in your model router deployment, you need to first deploy it to your Foundry resource (see [Deploy and use Claude models](/en-us/azure/ai-foundry/foundry-models/how-to/use-foundry-models-claude?tabs=python)). `grok-4.1-fast-reasoning` model router support is in preview.
+
+### Increased quota limits
+
+Model router quota limits increased across Tier 1 through Tier 6 for both GlobalStandard and DataZoneStandard deployment types. For the updated limits, see [Quotas and limits](/en-us/azure/ai-foundry/openai/quotas-limits).
+
+## March 2026
+
+### Four new models added
+
+Version `2025-11-18` of model router adds support for four new models: `gpt-5.2`, `gpt-5.2-chat`, `Deepseek-v3.2`, and `claude-opus-4-6`. To use `claude-opus-4-6` in your model router deployment, you need to first deploy it to your Foundry resource (see [Deploy and use Claude models](/en-us/azure/ai-foundry/foundry-models/how-to/use-foundry-models-claude?tabs=python)). `Deepseek-v3.2` and `claude-opus-4-6` model router support is in preview.
+
+### Automatic failover
+
+Model router now includes built-in automatic failover. When a routed model experiences endpoint instability, model router transparently redirects the request to the next most appropriate model, so transient issues with any single model don't disrupt your application. Failover is enabled for default model router deployments — no additional configuration is required. For more information on the failover feature and how it works with routing mode and model subsets, see the [Model router concepts guide](../openai/concepts/model-router).
+
+## November 2025
+
+### Anthropic models added
+
+Version `2025-11-18` of model router adds support for three Anthropic models: `claude-haiku-4-5`, `claude-opus-4-1`, and `claude-sonnet-4-5`. To include these in your model router deployment, you need to first deploy them yourself to your Foundry resource (see [Deploy and use Claude models](/en-us/azure/ai-foundry/foundry-models/how-to/use-foundry-models-claude?tabs=python)).
+
+### Model router GA version
+
+A new model router model is now available. Version `2025-11-18` includes support for all underlying models in previous versions, as well as 10 new language models.
+
+It also includes new features that make it more versatile and effective.
+
+- **Routing profiles** let you skew model router's choices to optimize for quality or cost while maintaining a baseline level of performance.
+- Model router supports **custom subsets**: you can specify which underlying models to include in routing decisions. This gives you more control over cost, compliance, and performance characteristics.
+- Model router supports **Global Standard** and **Data Zone Standard** deployment types.
+
+For more information on model router and its capabilities, see the [Model router concepts guide](../openai/concepts/model-router).
+
+## August 2025
+
+### New version of model router (preview)
+
+- Model router now supports GPT-5 series models.
+- Model router for Microsoft Foundry is a deployable AI chat model that automatically selects the best underlying chat model to respond to a given prompt. For more information on how model router works and its advantages and limitations, see the [Model router concepts guide](../openai/concepts/model-router). To use model router with the Completions API, follow the [How-to guide](../openai/how-to/model-router).
+
+## May 2025
+
+### Model router (preview)
+
+Model router for Foundry is a deployable AI chat model that automatically selects the best underlying chat model to respond to a given prompt. For more information on how model router works and its advantages and limitations, see the [Model router concepts guide](../openai/concepts/model-router). To use model router with the Completions API, follow the [How-to guide](../openai/how-to/model-router).

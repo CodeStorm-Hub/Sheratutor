@@ -1,0 +1,112 @@
+<!-- Title: Foundry Agent Canvas | Category: Developer tools and integrations/Coding agents/Foundry Agent Canvas | URL: agents/concepts/foundry-agent-canvas -->
+
+---
+layout: Conceptual
+title: What is Microsoft Foundry Canvas? - Microsoft Foundry | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/foundry-canvas
+breadcrumb_path: ../../../breadcrumb/azure-ai/toc.json
+feedback_help_link_url: https://learn.microsoft.com/answers/tags/133/azure
+feedback_help_link_type: get-help-at-qna
+feedback_product_url: https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4
+feedback_system: Standard
+permissioned-type: public
+recommendations: true
+recommendation_types:
+- Training
+- Certification
+uhfHeaderId: azure-ai-foundry
+ms.suite: office
+author: MuyangAmigo
+learn_banner_products:
+- azure
+manager: mcleans
+ms.author: junjieli
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 90-days
+ms.service: microsoft-foundry
+description: Learn how Microsoft Foundry Canvas, a GitHub Copilot App extension, helps you design, configure, test, and deploy Foundry hosted agents from a side panel.
+ms.manager: mcleans
+ms.subservice: foundry-agent-service
+ms.topic: concept-article
+ms.date: 2026-07-21T00:00:00.0000000Z
+ms.custom: dev-focus, doc-kit-assisted
+ai-usage: ai-assisted
+locale: en-us
+document_id: 37a591c5-5695-d91c-87c8-64c4d3a3eb95
+document_version_independent_id: 4819814b-bb85-7f79-d220-e3bc45a1921f
+updated_at: 2026-07-24T23:55:00.0000000Z
+original_content_git_url: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/live/articles/foundry/agents/concepts/foundry-canvas.md
+gitcommit: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/3656e6f4a57f3d768296a562878f412c2c58182a/articles/foundry/agents/concepts/foundry-canvas.md
+git_commit_id: 3656e6f4a57f3d768296a562878f412c2c58182a
+site_name: Docs
+depot_name: Learn.azure-ai
+page_type: conceptual
+toc_rel: ../../toc.json
+word_count: 717
+asset_id: foundry/agents/concepts/foundry-canvas
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: articles/foundry/agents/concepts/foundry-canvas.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/46e3c7c4-fe77-4a6e-b40a-44c569819fa5
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/de19c5b8-e208-412e-9238-db3f631dea5b
+- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/d0c6fab8-2d7d-4bb0-bf40-589e08d7c132
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/ea7bf5d6-7154-4ba9-8ebc-59117ccacd49
+- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+platformId: 31f93dfe-baca-2593-53c0-ea37f7c77447
+---
+
+# What is Microsoft Foundry Canvas? - Microsoft Foundry | Microsoft Learn
+
+Important
+
+Items marked (preview) in this article are currently in public preview. This preview is provided without a service-level agreement, and we don't recommend it for production workloads. Certain features might not be supported or might have constrained capabilities. For more information, see [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/).
+
+Microsoft Foundry Canvas is a GitHub Copilot App extension that you use to design, configure, test, and deploy Foundry hosted agents from a side panel. It pairs a visual canvas with the Copilot chat session, so you can browse your Foundry project resources, assemble an agent, and hand off each step to Copilot without leaving your editor.
+
+The canvas is for developers who want a guided, visual way to build hosted agents while keeping the flexibility of a Copilot-driven, code-based workflow.
+
+## How the canvas fits your workflow
+
+You open the canvas from a Copilot conversation. When you ask Copilot to create a Foundry hosted agent, the canvas opens in the right panel and connects to your Foundry project. As you make choices in the canvas, such as picking a model or connecting a toolbox, the canvas sends a ready-to-run prompt to your current Copilot session with the project, subscription, and endpoint already attached. Copilot then scaffolds and edits the agent code in your workspace.
+
+This split keeps the visual experience and the code in sync: the canvas surfaces what's available in your project, and Copilot does the file edits and command runs. You stay in control of the generated code the whole time.
+
+[![Screenshot of Microsoft Foundry Canvas open in the right panel of the GitHub Copilot App. The canvas shows three stages: Create new hosted agents, Build current hosted agent, and Deploy and test. The Create stage is expanded with Inspire me, Help me decide, and Hello world options next to the Copilot conversation.](../media/agent-canvas/agent-canvas-overview.png)](../media/agent-canvas/agent-canvas-overview.png#lightbox)
+
+## What you can do with the canvas
+
+If you're new to building hosted agents on Foundry, the canvas guides you through the process so you can assemble a working agent without piecing together the workflow yourself. It puts the whole path, from an idea to a deployed agent, in one guided surface.
+
+With the canvas, you can:
+
+- **Start an agent in seconds.** Scaffold a working hosted agent from a generated idea with **Inspire me**, or from a **Hello world** sample prompt, with no boilerplate to write yourself.
+- **Build from your own project resources.** Browse the deployed models, Foundry Toolboxes and tools, skills, and guardrails that already exist in your Foundry project, and add them to the agent.
+- **Stay grounded in your project.** The canvas signs you in to Azure, finds your subscriptions and Foundry projects, and keeps your selection so every choice targets the right project.
+- **Keep Copilot in the loop.** Each choice you make becomes a ready-to-run prompt for Copilot, which writes and edits the agent code in your workspace, so you keep full control of the generated code.
+- **Test before you ship.** Run the agent locally in an embedded Agent Inspector, and send any errors straight back to Copilot as fix requests.
+- **Deploy without leaving the editor.** Publish the finished agent to Foundry Agent Service with **Deploy to Foundry**.
+
+## Install Microsoft Foundry Canvas
+
+To install the canvas, in the GitHub Copilot App, open **Settings** &gt; **Plugins**, search for `microsoft-foundry`, and select **Install**.
+
+[![Screenshot of the Plugins page in the GitHub Copilot App Settings, with foundry entered in the search box and the microsoft-foundry plugin listed under awesome-copilot.](../media/agent-canvas/agent-canvas-install.png)](../media/agent-canvas/agent-canvas-install.png#lightbox)
+
+## How agent building works
+
+After you install the canvas, you build a hosted agent by moving through a few stages in the side panel. The canvas surfaces the choices, and Copilot makes the matching code and command changes in your workspace.
+
+- **Start the canvas.** Ask Copilot to create a Foundry hosted agent. The canvas opens in the right panel and connects to Foundry.
+- **Choose a project.** Sign in to Azure, then select a subscription and Foundry project. The canvas keeps this selection when you reopen it.
+- **Scaffold the agent.** Generate a starting point by using **Inspire me**, or begin from the **Hello world** sample prompt.
+- **Configure the agent.** Wire a deployed model, and connect any toolboxes, skills, and guardrails from the project.
+- **Test locally.** Select **Inspect Locally** to run the agent and open the embedded Agent Inspector. Send any errors back to Copilot as fix requests.
+- **Deploy.** Select **Deploy to Foundry** to publish the agent to Foundry Agent Service.
+
+Because **Inspect Locally** and **Deploy to Foundry** run the underlying Azure Developer CLI (`azd`) commands, you can drop back to the terminal at any point.
+
+For the full step-by-step walkthrough, see [Quickstart: Deploy your first hosted agent](../quickstarts/quickstart-hosted-agent?pivots=canvas).
