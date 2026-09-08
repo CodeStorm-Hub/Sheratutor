@@ -107,7 +107,7 @@ nav:
       - 'Chemistry Pipeline Overhaul Plan': 'antigravity-docs/Ground-Truth Chemistry Ingestion Pipeline: Overhaul & Corpus Ingestion Plan.md'
       - 'Multimodal Verification Walkthrough': 'antigravity-docs/Walkthrough: Ground-Truth Multimodal Textbook Ingestion & Verification.md'
 
-  - 'Genkit & System Architecture':
+  - 'System & AI Architecture':
       - 'System Architecture Report': 'antigravity-docs/SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md'
       - 'Full Codebase Anatomy Report': 'antigravity-docs/SHERATUTOR_CODEBASE_REPORT.md'
       - 'Google Genkit Architecture Deep Dive': 'antigravity-docs/genkit_architecture_report.md'
@@ -120,7 +120,7 @@ nav:
       - 'GitHub Pages Architecture Plan': 'antigravity-docs/Implementation Plan: Publish SheraTutor Documentation to GitHub Pages.md'
       - 'Docs Redesign Implementation Plan': 'antigravity-docs/Implementation Plan: SheraTutor Docs Redesign, Contrast Fix, Explorers Hub & Full Corpus Audit.md'
 
-  - 'Interactive Visual Explorers':
+  - 'Visual Explorers':
       - 'Explorers Showcase Hub': 'antigravity-docs/explorers.md'
       - 'SheraTutor Architecture Explorer': 'antigravity-docs/sheratutor_interactive_explorer.html'
       - 'Genkit Architecture Explorer': 'antigravity-docs/genkit_interactive_explorer.html'
@@ -130,7 +130,7 @@ nav:
       - 'Corpus Audit & Architecture Dashboard': 'antigravity-docs/sheratutor_docs_audit_dashboard.html'
       - 'BoardMate AI Pitch Deck App': 'pitch/BoardMate_AI_Pitch_Deck.html'
 
-  - 'Azure Foundry Reference (63 Docs)':
+  - 'Azure Foundry Reference':
       - 'Foundry Overview': 'crawled_docs/what-is-foundry.md'
       - 'Agents & Canvas':
           - 'Agents Overview': 'crawled_docs/agents__overview.md'

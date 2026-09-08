@@ -118,8 +118,9 @@ h1 {
 
 .md-tabs__link {
   transition: all 0.2s ease !important;
-  font-size: 0.875rem !important;
-  padding: 0.85rem 1.1rem !important;
+  font-size: 0.825rem !important;
+  padding: 0.75rem 0.75rem !important;
+  white-space: nowrap !important;
 }
 
 [data-md-color-scheme="slate"] .md-tabs__link {
