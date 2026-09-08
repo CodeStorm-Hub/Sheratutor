@@ -63,7 +63,7 @@ Find the row closest to what you're trying to do.
 | I want to | Start here | Why |
 | --- | --- | --- |
 | Send a prompt to a model, with no agent or tools | [Build with models and agents](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/get-started-code) | The shortest path to a working call. Add an agent later only if you need tools or orchestration. |
-| Build my first agent | [Choose how to build](what-is-foundry.md#start-by-building-an-agent) | Decides prompt agent versus hosted agent before you invest in either. That choice shapes everything after it. |
+| Build my first agent | [Choose how to build](../index.md#start-by-building-an-agent) | Decides prompt agent versus hosted agent before you invest in either. That choice shapes everything after it. |
 | Host an agent I already wrote | [Deploy a hosted agent](https://learn.microsoft.com/en-us/azure/foundry/agents/quickstarts/quickstart-hosted-agent) | Runs your existing code or container with a managed endpoint, scaling, and identity. |
 | Use an open-source framework with Foundry | [Frameworks for hosted agents](https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/framework-hosted-agents) | Shows how LangGraph, Microsoft Agent Framework, and Semantic Kernel map onto Foundry hosting. |
 | Evaluate agent quality | [Evaluate generative AI apps](https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app) | Establishes a baseline score first, so later changes are measurable rather than anecdotal. |

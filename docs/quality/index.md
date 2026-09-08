@@ -1,0 +1,75 @@
+---
+title: Quality Assurance, Testing & Audits
+description: Automated end-to-end browser testing suites, database persistence audits, codebase reviews, and technical gap analyses.
+---
+
+# Quality Assurance, Testing & Audits
+
+<div class="sheratutor-hero-badge">
+  <span class="badge-tag">ENTERPRISE QA &amp; COMPLIANCE</span>
+  <span class="badge-status">7 TEST SUITES &bull; FULL COVERAGE</span>
+</div>
+
+Welcome to the **SheraTutor Quality Assurance & Audits Hub**. To maintain mission-critical reliability for students taking high-stakes board exams, SheraTutor enforces automated browser testing suites, database persistence audits, and systematic codebase gap analyses.
+
+---
+
+## Testing & Audit Directory
+
+<div class="grid cards" markdown>
+
+-   :material-test-tube: **[Automated Browser Testing Report](automated-testing-report.md)**
+
+    ---
+
+    Comprehensive test report for Suites 1–7 covering student registration, exam photo upload, OCR extraction, rubric grading, and persistence verification.
+
+    [:octicons-arrow-right-24: View Test Report](automated-testing-report.md)
+
+-   :material-clipboard-play-outline: **[Browser Testing Walkthrough](automated-testing-walkthrough.md)**
+
+    ---
+
+    Step-by-step reproduction guide and walkthrough of automated browser testing runs with console logs, network payloads, and assertions.
+
+    [:octicons-arrow-right-24: Open Test Walkthrough](automated-testing-walkthrough.md)
+
+-   :material-file-document-edit-outline: **[Comprehensive QA Test Plan](automated-testing-plan.md)**
+
+    ---
+
+    Architectural test plan defining test environments, data fixtures, edge case testing (poor lighting, skewed handwriting), and performance SLAs.
+
+    [:octicons-arrow-right-24: Inspect Test Plan](automated-testing-plan.md)
+
+-   :material-shield-search: **[Codebase Review & Gap Analysis](codebase-gap-analysis.md)**
+
+    ---
+
+    Detailed review of the SheraTutor codebase identifying architectural gaps, state persistence risks, edge cases, and remediation roadmaps.
+
+    [:octicons-arrow-right-24: Read Gap Analysis](codebase-gap-analysis.md)
+
+-   :material-chart-timeline-variant: **[SSC Phase Technical Review](ssc-technical-review.md)**
+
+    ---
+
+    Milestone technical evaluation of the SSC Phase release, measuring system readiness, security posture, and production scalability.
+
+    [:octicons-arrow-right-24: View Technical Review](ssc-technical-review.md)
+
+</div>
+
+---
+
+## Test Suite Coverage Matrix
+
+| Suite | Domain | Scope | Status |
+|---|---|---|---|
+| **Suite 1** | Authentication & Profiles | Phone OTP, Supabase Auth SSR, candidate profile onboarding | :white_check_mark: PASSED |
+| **Suite 2** | Handwriting Script Upload | High-res camera upload, file validation, Supabase Storage | :white_check_mark: PASSED |
+| **Suite 3** | Vision OCR Pipeline | NVIDIA NIM Bangla extraction, LaTeX mathematical parsing | :white_check_mark: PASSED |
+| **Suite 4** | Curriculum Grounding | BGE-M3 vector search against 57 NCTB textbooks, pgvector recall | :white_check_mark: PASSED |
+| **Suite 5** | Rubric Examiner Engine | Board examiner prompt, step-by-step mark deduction, feedback | :white_check_mark: PASSED |
+| **Suite 6** | State Persistence | Session recovery, offline draft saving, Supabase sync | :white_check_mark: PASSED |
+| **Suite 7** | Responsiveness & A11y | Mobile 375px, Tablet 768px, Desktop 1440px, WCAG AA audits | :white_check_mark: PASSED |

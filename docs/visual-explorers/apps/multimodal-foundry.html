@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NCTB Multimodal Vector Database Explorer | Microsoft AI Foundry</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card: #111827;
+      --card-hover: #1f293d;
+      --border: #1e293b;
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.2);
+      --secondary: #818cf8;
+      --accent: #10b981;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+    }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    .glow-border {
+      border: 1px solid var(--border);
+      transition: all 0.25s ease-in-out;
+    }
+    .glow-border:hover {
+      border-color: var(--primary);
+      box-shadow: 0 0 15px var(--primary-glow);
+    }
+    .tab-active {
+      border-bottom: 2px solid var(--primary);
+      color: var(--primary);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body class="p-6 antialiased">
+  <!-- Header -->
+  <header class="max-w-7xl mx-auto mb-8">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-[var(--border)]">
+      <div>
+        <div class="flex items-center gap-3">
+          <span class="px-2.5 py-1 rounded text-xs font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">Azure AI Foundry</span>
+          <span class="px-2.5 py-1 rounded text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">NCTB Multimodal RAG</span>
+          <span class="px-2.5 py-1 rounded text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Bangla & English</span>
+        </div>
+        <h1 class="text-3xl font-bold mt-2 text-white">NCTB Multimodal Vector Database Architecture</h1>
+        <p class="text-[var(--muted)] text-sm mt-1">Grounding SheraTutor in Textbook Theory, Geometric Vector Proofs, Scientific Apparatus & Formulae</p>
+      </div>
+      <div class="flex items-center gap-4 bg-[var(--card)] px-4 py-2.5 rounded-xl border border-[var(--border)]">
+        <div class="text-right">
+          <div class="text-xs text-[var(--muted)]">Inspected Pilot Slice</div>
+          <div class="text-lg font-bold text-sky-400">2,697 Pages <span class="text-xs font-normal text-slate-400">(8 Books)</span></div>
+        </div>
+        <div class="h-8 w-px bg-[var(--border)]"></div>
+        <div class="text-right">
+          <div class="text-xs text-[var(--muted)]">Full NCTB Catalog</div>
+          <div class="text-lg font-bold text-emerald-400">15,000+ Pages <span class="text-xs font-normal text-slate-400">(66 Books)</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="flex gap-8 mt-6 border-b border-[var(--border)] text-sm font-medium">
+      <button onclick="switchTab('pipeline')" id="tab-btn-pipeline" class="pb-3 tab-active text-white transition-colors">1. Ingestion Pipeline & Architecture</button>
+      <button onclick="switchTab('vector-vs-raster')" id="tab-btn-vector-vs-raster" class="pb-3 text-[var(--muted)] hover:text-white transition-colors">2. Vector vs Raster Visualizer</button>
+      <button onclick="switchTab('simulator')" id="tab-btn-simulator" class="pb-3 text-[var(--muted)] hover:text-white transition-colors">3. Bilingual Multi-Vector Query Simulator</button>
+      <button onclick="switchTab('calculator')" id="tab-btn-calculator" class="pb-3 text-[var(--muted)] hover:text-white transition-colors">4. Azure Scale & Cost Estimator</button>
+      <button onclick="switchTab('code')" id="tab-btn-code" class="pb-3 text-[var(--muted)] hover:text-white transition-colors">5. Production Code</button>
+    </nav>
+  </header>
+
+  <!-- Main Container -->
+  <main class="max-w-7xl mx-auto">
+    <!-- TAB 1: Pipeline & Architecture -->
+    <section id="tab-pipeline" class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+        <!-- Stage 1 -->
+        <div onclick="selectPipelineStage(1)" class="cursor-pointer glow-border bg-[var(--card)] p-4 rounded-xl border border-[var(--border)] relative overflow-hidden" id="stage-card-1">
+          <div class="text-xs font-bold text-sky-400 uppercase tracking-wider">Stage 1</div>
+          <div class="text-base font-semibold text-white mt-1">Doc Intelligence Layout</div>
+          <p class="text-xs text-[var(--muted)] mt-2">v4.0 Layout API with figures & formulas detection.</p>
+          <div class="mt-4 flex items-center gap-1.5 text-[10px] text-emerald-400 font-mono bg-emerald-500/10 px-2 py-1 rounded">
+            <span>✓ LaTeX formulas</span>
+          </div>
+        </div>
+
+        <!-- Stage 2 -->
+        <div onclick="selectPipelineStage(2)" class="cursor-pointer glow-border bg-[var(--card)] p-4 rounded-xl border border-[var(--border)] relative overflow-hidden" id="stage-card-2">
+          <div class="text-xs font-bold text-indigo-400 uppercase tracking-wider">Stage 2</div>
+          <div class="text-base font-semibold text-white mt-1">Visual Cropper & Storage</div>
+          <p class="text-xs text-[var(--muted)] mt-2">Vector path & raster polygon cropping to Azure Blob.</p>
+          <div class="mt-4 flex items-center gap-1.5 text-[10px] text-sky-400 font-mono bg-sky-500/10 px-2 py-1 rounded">
+            <span>✓ 300 DPI Asset Isolation</span>
+          </div>
+        </div>
+
+        <!-- Stage 3 -->
+        <div onclick="selectPipelineStage(3)" class="cursor-pointer glow-border bg-[var(--card)] p-4 rounded-xl border border-[var(--border)] relative overflow-hidden" id="stage-card-3">
+          <div class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Stage 3</div>
+          <div class="text-base font-semibold text-white mt-1">GPT-4o Vision Enrichment</div>
+          <p class="text-xs text-[var(--muted)] mt-2">Generates scientific dual-language captions & labels.</p>
+          <div class="mt-4 flex items-center gap-1.5 text-[10px] text-indigo-400 font-mono bg-indigo-500/10 px-2 py-1 rounded">
+            <span>✓ BN + EN Metadata</span>
+          </div>
+        </div>
+
+        <!-- Stage 4 -->
+        <div onclick="selectPipelineStage(4)" class="cursor-pointer glow-border bg-[var(--card)] p-4 rounded-xl border border-[var(--border)] relative overflow-hidden" id="stage-card-4">
+          <div class="text-xs font-bold text-amber-400 uppercase tracking-wider">Stage 4</div>
+          <div class="text-base font-semibold text-white mt-1">Dual Vectorization</div>
+          <p class="text-xs text-[var(--muted)] mt-2">Matryoshka 1024-dim text & visual embeddings.</p>
+          <div class="mt-4 flex items-center gap-1.5 text-[10px] text-amber-400 font-mono bg-amber-500/10 px-2 py-1 rounded">
+            <span>✓ text-embedding-3-large</span>
+          </div>
+        </div>
+
+        <!-- Stage 5 -->
+        <div onclick="selectPipelineStage(5)" class="cursor-pointer glow-border bg-[var(--card)] p-4 rounded-xl border border-[var(--border)] relative overflow-hidden" id="stage-card-5">
+          <div class="text-xs font-bold text-purple-400 uppercase tracking-wider">Stage 5</div>
+          <div class="text-base font-semibold text-white mt-1">Azure AI Search & IQ</div>
+          <p class="text-xs text-[var(--muted)] mt-2">HNSW + BM25 + Semantic Ranker for SheraTutor.</p>
+          <div class="mt-4 flex items-center gap-1.5 text-[10px] text-purple-400 font-mono bg-purple-500/10 px-2 py-1 rounded">
+            <span>✓ Reciprocal Rank Fusion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Box -->
+      <div id="stage-detail-box" class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 glow-border">
+        <!-- Content dynamic via JS -->
+      </div>
+    </section>
+
+    <!-- TAB 2: Vector vs Raster Visualizer -->
+    <section id="tab-vector-vs-raster" class="hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5">
+        <h2 class="text-lg font-semibold text-white">Why Standard PDF Parsers Miss NCTB Diagrams</h2>
+        <p class="text-sm text-[var(--muted)] mt-1">
+          NCTB textbooks render complex geometry, ray diagrams, and graphs using PDF vector drawing commands (<code class="text-amber-400">m, l, c, re, W*</code>) rather than embedded PNG/JPEG streams. PyPDF and traditional OCR engines find 0 images on these pages. Azure Document Intelligence Layout visually segments page renders to capture them with precision.
+        </p>
+      </div>
+
+      <!-- Interactive Comparison Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Visualizer 1: Physics Ray Diagram -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 glow-border">
+          <div class="flex items-center justify-between pb-3 border-b border-[var(--border)]">
+            <span class="text-xs font-bold text-sky-400">Physics Class 9-10 (Chapter 6: Reflection)</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-amber-500/10 text-amber-300">Vector Path Drawing</span>
+          </div>
+          <!-- Canvas Ray Diagram Simulation -->
+          <div class="my-4 h-48 bg-slate-950 rounded-lg flex items-center justify-center relative overflow-hidden border border-slate-800">
+            <svg viewBox="0 0 400 180" class="w-full h-full">
+              <!-- Principal Axis -->
+              <line x1="20" y1="90" x2="380" y2="90" stroke="#64748b" stroke-width="1.5" stroke-dasharray="4 4" />
+              <text x="360" y="85" fill="#94a3b8" font-size="10">Principal Axis</text>
+              <!-- Concave Mirror -->
+              <path d="M 280 20 Q 260 90 280 160" fill="none" stroke="#38bdf8" stroke-width="4" />
+              <!-- Object AB -->
+              <line x1="80" y1="90" x2="80" y2="40" stroke="#f43f5e" stroke-width="2.5" />
+              <polygon points="80,35 76,43 84,43" fill="#f43f5e" />
+              <text x="75" y="105" fill="#f8fafc" font-size="10">A (Object)</text>
+              <text x="75" y="32" fill="#f8fafc" font-size="10">B</text>
+              <!-- Center C and Focus F -->
+              <circle cx="160" cy="90" r="3" fill="#38bdf8" />
+              <text x="155" y="105" fill="#38bdf8" font-size="10">C</text>
+              <circle cx="215" cy="90" r="3" fill="#38bdf8" />
+              <text x="212" y="105" fill="#38bdf8" font-size="10">F</text>
+              <circle cx="270" cy="90" r="3" fill="#38bdf8" />
+              <text x="275" y="105" fill="#38bdf8" font-size="10">P</text>
+              <!-- Parallel Incident Ray -->
+              <line x1="80" y1="40" x2="265" y2="40" stroke="#fbbf24" stroke-width="1.5" />
+              <!-- Reflected Ray through Focus -->
+              <line x1="265" y1="40" x2="40" y2="152.5" stroke="#fbbf24" stroke-width="1.5" />
+              <!-- Incident ray through Center C -->
+              <line x1="80" y1="40" x2="270" y2="90" stroke="#34d399" stroke-width="1.5" />
+              <!-- Image formed at intersection -->
+              <line x1="160" y1="90" x2="160" y2="140" stroke="#a855f7" stroke-width="2" stroke-dasharray="2 2" />
+              <text x="145" y="155" fill="#a855f7" font-size="10">A'B' (Real Image)</text>
+            </svg>
+          </div>
+          <div class="text-xs space-y-1">
+            <div class="text-rose-400 font-semibold">❌ pypdf extraction result: <span class="text-[var(--muted)] font-normal">0 images extracted (Lines are PDF vector curves).</span></div>
+            <div class="text-emerald-400 font-semibold">✓ Document Intelligence: <span class="text-[var(--muted)] font-normal">Detected as Figure 6.04; bounding polygon [1.2, 3.4, 6.8, 5.9] cropped cleanly at 300 DPI.</span></div>
+            <div class="text-sky-400 font-semibold">✓ GPT-4o-mini Vision: <span class="text-[var(--muted)] font-normal">Classified as "ray_diagram", focal length relation \(\frac{1}{f} = \frac{1}{u} + \frac{1}{v}\) tagged.</span></div>
+          </div>
+        </div>
+
+        <!-- Visualizer 2: Math Circle Theorem Vector Geometry -->
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 glow-border">
+          <div class="flex items-center justify-between pb-3 border-b border-[var(--border)]">
+            <span class="text-xs font-bold text-emerald-400">Mathematics Class 9-10 (Chapter 8: Circles)</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300">Geometric Vector Proof</span>
+          </div>
+          <!-- Canvas Circle Theorem -->
+          <div class="my-4 h-48 bg-slate-950 rounded-lg flex items-center justify-center relative overflow-hidden border border-slate-800">
+            <svg viewBox="0 0 400 180" class="w-full h-full">
+              <!-- Circle -->
+              <circle cx="200" cy="90" r="70" fill="none" stroke="#818cf8" stroke-width="2" />
+              <circle cx="200" cy="90" r="3" fill="#f43f5e" />
+              <text x="205" y="90" fill="#f43f5e" font-size="11">O (Center)</text>
+              <!-- Arc Points A and B -->
+              <circle cx="140" cy="125" r="3" fill="#38bdf8" />
+              <text x="125" y="135" fill="#38bdf8" font-size="11">A</text>
+              <circle cx="260" cy="125" r="3" fill="#38bdf8" />
+              <text x="268" y="135" fill="#38bdf8" font-size="11">B</text>
+              <!-- Inscribed Point P -->
+              <circle cx="200" cy="20" r="3" fill="#34d399" />
+              <text x="195" y="15" fill="#34d399" font-size="11">P</text>
+              <!-- Central Angle Lines OA, OB -->
+              <line x1="200" y1="90" x2="140" y2="125" stroke="#f43f5e" stroke-width="1.5" />
+              <line x1="200" y1="90" x2="260" y2="125" stroke="#f43f5e" stroke-width="1.5" />
+              <!-- Inscribed Angle Lines PA, PB -->
+              <line x1="200" y1="20" x2="140" y2="125" stroke="#34d399" stroke-width="1.5" stroke-dasharray="3 3" />
+              <line x1="200" y1="20" x2="260" y2="125" stroke="#34d399" stroke-width="1.5" stroke-dasharray="3 3" />
+              <text x="20" y="30" fill="#94a3b8" font-size="11">Theorem: \(\angle AOB = 2 \angle APB\)</text>
+              <text x="20" y="50" fill="#94a3b8" font-size="10">বৃত্তের একই চাপের উপর দণ্ডায়মান কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ।</text>
+            </svg>
+          </div>
+          <div class="text-xs space-y-1">
+            <div class="text-rose-400 font-semibold">❌ pypdf extraction result: <span class="text-[var(--muted)] font-normal">0 images extracted (Drawings are SVG/PDF primitives).</span></div>
+            <div class="text-emerald-400 font-semibold">✓ Document Intelligence: <span class="text-[var(--muted)] font-normal">Isolated as Geometric Figure with vertices A, B, P, O annotated.</span></div>
+            <div class="text-sky-400 font-semibold">✓ Multi-vector Representation: <span class="text-[var(--muted)] font-normal">Indexed by geometric property, LaTeX relationship, and Bangla/English theorem names.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 3: Bilingual Multi-Vector Query Simulator -->
+    <section id="tab-simulator" class="hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5">
+        <h2 class="text-lg font-semibold text-white">Interactive Bilingual Multimodal Search Console</h2>
+        <p class="text-sm text-[var(--muted)] mt-1">
+          Simulate student inquiries in Bangla or English. Watch how Azure AI Search executes Hybrid Search (BM25 + Dense Vector), retrieves the corresponding textbook diagram, and applies the Microsoft Semantic Ranker.
+        </p>
+      </div>
+
+      <!-- Query Input Bar -->
+      <div class="flex flex-col md:flex-row gap-3">
+        <div class="flex-1 relative">
+          <input id="search-input" type="text" value="উত্তল লেন্সে বস্তুর অবস্থান ও প্রতিবিম্বের চিত্র" class="w-full bg-[var(--card)] border border-[var(--border)] text-white text-sm rounded-xl px-4 py-3 focus:outline-none focus:border-sky-500" placeholder="Ask in Bangla or English (e.g., 'wheatstone bridge circuit' or 'লবণ সেতু')...">
+        </div>
+        <button onclick="runSimulatedQuery()" class="bg-sky-500 hover:bg-sky-400 text-slate-950 font-semibold px-6 py-3 rounded-xl text-sm transition-all shadow-lg shadow-sky-500/20">
+          Execute Hybrid Search
+        </button>
+      </div>
+
+      <!-- Quick Preset Buttons -->
+      <div class="flex flex-wrap items-center gap-2 text-xs">
+        <span class="text-[var(--muted)]">Presets:</span>
+        <button onclick="setQuery('উত্তল লেন্সে বস্তুর অবস্থান ও প্রতিবিম্বের চিত্র')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">🇧🇩 উত্তল লেন্স প্রতিবিম্ব (Physics Ch. 6)</button>
+        <button onclick="setQuery('Wheatstone bridge balance condition circuit')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">🇬🇧 Wheatstone Bridge (Physics Ch. 11)</button>
+        <button onclick="setQuery('বৃত্তের কেন্দ্রস্থ কোণ পরিধিস্থ কোণের দ্বিগুণ')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">🇧🇩 বৃত্ত উপপাদ্য (Math Ch. 8)</button>
+        <button onclick="setQuery('তড়িৎ রাসায়নিক কোষে লবণ সেতুর ভূমিকা')" class="bg-slate-800 hover:bg-slate-700 text-slate-300 px-3 py-1.5 rounded-lg border border-slate-700 transition-colors">🇧🇩 লবণ সেতু (Chemistry Ch. 8)</button>
+      </div>
+
+      <!-- Results Grid -->
+      <div id="search-results-area" class="space-y-4">
+        <!-- Results rendered dynamically via JS -->
+      </div>
+    </section>
+
+    <!-- TAB 4: Cost & Capacity Calculator -->
+    <section id="tab-calculator" class="hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5">
+        <h2 class="text-lg font-semibold text-white">NCTB Corpus Scale & Azure Cost Estimator</h2>
+        <p class="text-sm text-[var(--muted)] mt-1">
+          Adjust the sliders below to calculate exact ingestion and monthly recurring costs across the 8-book pilot slice up to the entire 66-textbook NCTB catalog.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Sliders Box -->
+        <div class="md:col-span-1 bg-[var(--card)] border border-[var(--border)] p-5 rounded-xl space-y-5">
+          <div>
+            <div class="flex justify-between text-xs mb-1.5">
+              <span class="text-[var(--muted)]">Total Textbook Pages</span>
+              <span id="pages-val" class="font-bold text-sky-400">2,697 pages</span>
+            </div>
+            <input type="range" id="pages-slider" min="1000" max="25000" step="500" value="2697" oninput="updateCostCalculator()" class="w-full accent-sky-400">
+            <div class="flex justify-between text-[10px] text-slate-500 mt-1">
+              <span>Pilot (2.7k)</span>
+              <span>Full 66 Books (15k)</span>
+              <span>25k Pages</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs mb-1.5">
+              <span class="text-[var(--muted)]">Average Diagrams / 100 Pages</span>
+              <span id="diagrams-val" class="font-bold text-emerald-400">30 figures</span>
+            </div>
+            <input type="range" id="diagrams-slider" min="10" max="60" step="5" value="30" oninput="updateCostCalculator()" class="w-full accent-emerald-400">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs mb-1.5">
+              <span class="text-[var(--muted)]">Chunks per Page</span>
+              <span id="chunks-val" class="font-bold text-indigo-400">3 chunks</span>
+            </div>
+            <input type="range" id="chunks-slider" min="1" max="5" step="1" value="3" oninput="updateCostCalculator()" class="w-full accent-indigo-400">
+          </div>
+        </div>
+
+        <!-- Cost Breakdown Table -->
+        <div class="md:col-span-2 bg-[var(--card)] border border-[var(--border)] p-5 rounded-xl">
+          <div class="text-sm font-semibold text-white mb-4">Itemized Azure Ingestion & Operational Costs</div>
+          <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs">
+              <thead class="border-b border-[var(--border)] text-[var(--muted)]">
+                <tr>
+                  <th class="pb-2 font-medium">Service Component</th>
+                  <th class="pb-2 font-medium">Volume</th>
+                  <th class="pb-2 font-medium">Azure Unit Rate</th>
+                  <th class="pb-2 font-medium text-right">Estimated Cost</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-800 font-mono">
+                <tr>
+                  <td class="py-2.5 text-white font-sans">Azure Document Intelligence (Layout + Figures)</td>
+                  <td class="py-2.5 text-slate-300" id="row-docintel-vol">2,697 pages</td>
+                  <td class="py-2.5 text-slate-400">$10.00 / 1,000 pages</td>
+                  <td class="py-2.5 text-right font-bold text-sky-400" id="row-docintel-cost">$26.97</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 text-white font-sans">GPT-4o-mini Vision Enrichment</td>
+                  <td class="py-2.5 text-slate-300" id="row-vision-vol">809 figures</td>
+                  <td class="py-2.5 text-slate-400">$0.00035 / figure</td>
+                  <td class="py-2.5 text-right font-bold text-emerald-400" id="row-vision-cost">$0.28</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 text-white font-sans">Azure OpenAI text-embedding-3-large (1024-dim)</td>
+                  <td class="py-2.5 text-slate-300" id="row-embed-vol">8,091 chunks</td>
+                  <td class="py-2.5 text-slate-400">$0.00013 / 1k tokens</td>
+                  <td class="py-2.5 text-right font-bold text-indigo-400" id="row-embed-cost">$0.21</td>
+                </tr>
+                <tr>
+                  <td class="py-2.5 text-white font-sans">Azure Blob Storage (Hot GRS)</td>
+                  <td class="py-2.5 text-slate-300" id="row-blob-vol">~4.5 GB</td>
+                  <td class="py-2.5 text-slate-400">$0.018 / GB / mo</td>
+                  <td class="py-2.5 text-right font-bold text-slate-300" id="row-blob-cost">$0.08 / mo</td>
+                </tr>
+                <tr class="border-t border-slate-700 bg-slate-900/50">
+                  <td class="py-3 text-white font-semibold font-sans">One-Time Ingestion Total</td>
+                  <td colspan="2" class="py-3 text-slate-400 text-right font-sans">Full Corpus Ingest & Vectorization</td>
+                  <td class="py-3 text-right font-bold text-lg text-emerald-400" id="total-ingestion-cost">$27.46</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-white font-semibold font-sans">Monthly Search Index (Azure AI Search Basic)</td>
+                  <td colspan="2" class="py-3 text-slate-400 text-right font-sans">1 Search Unit (supports up to 25M vectors)</td>
+                  <td class="py-3 text-right font-bold text-lg text-purple-400">$73.00 / mo</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAB 5: Production Code -->
+    <section id="tab-code" class="hidden space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5">
+        <h2 class="text-lg font-semibold text-white">Production Ingestion & Query Snippets</h2>
+        <p class="text-sm text-[var(--muted)] mt-1">Ready-to-run Python modules using official Azure SDKs for Microsoft Foundry, Document Intelligence, and AI Search.</p>
+      </div>
+
+      <div class="bg-slate-950 border border-slate-800 rounded-xl p-4 overflow-x-auto text-xs font-mono text-slate-300 leading-relaxed">
+<pre><code class="text-emerald-400"># 1. Document Intelligence Ingestion with Figures & LaTeX:</code>
+<span class="text-sky-400">from</span> azure.ai.documentintelligence <span class="text-sky-400">import</span> DocumentIntelligenceClient
+<span class="text-sky-400">from</span> azure.ai.documentintelligence.models <span class="text-sky-400">import</span> AnalysisFeature, AnalyzeOutputOption, ContentFormat
+
+poller = doc_intel_client.begin_analyze_document(
+    model_id=<span class="text-amber-300">"prebuilt-layout"</span>,
+    analyze_request=open(<span class="text-amber-300">"ingestion/textbooks/physics_bn.pdf"</span>, <span class="text-amber-300">"rb"</span>),
+    output_content_format=ContentFormat.MARKDOWN,
+    features=[AnalysisFeature.FORMULAS, AnalysisFeature.OCR_HIGH_RESOLUTION],
+    output=[AnalyzeOutputOption.FIGURES],
+    content_type=<span class="text-amber-300">"application/pdf"</span>
+)
+result = poller.result()
+
+<code class="text-emerald-400"># 2. Hybrid Multimodal Vector Search with Semantic Ranker:</code>
+<span class="text-sky-400">from</span> azure.search.documents.models <span class="text-sky-400">import</span> VectorizedQuery
+
+query_vector = openai_client.embeddings.create(
+    model=<span class="text-amber-300">"text-embedding-3-large"</span>, 
+    input=user_query, 
+    dimensions=1024
+).data[0].embedding
+
+search_results = search_client.search(
+    search_text=user_query,
+    vector_queries=[VectorizedQuery(vector=query_vector, k_nearest_neighbors=5, fields=<span class="text-amber-300">"text_vector, visual_vector"</span>)],
+    query_type=<span class="text-amber-300">"semantic"</span>,
+    semantic_configuration_name=<span class="text-amber-300">"curriculum-semantic-config"</span>,
+    top=5
+)
+</pre>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const stageDetails = {
+      1: {
+        title: "Stage 1: Azure Document Intelligence Layout v4.0",
+        tag: "Prebuilt-Layout API with Figures & High-Resolution OCR",
+        desc: "Analyzes raw multi-column NCTB textbook PDFs. Unlike standard OCR, it detects reading order across complex layouts, produces clean Markdown headings (#, ##), converts formulas into KaTeX-compatible LaTeX expressions, and outputs bounding polygons for both vector drawings and embedded photos.",
+        params: ["outputContentFormat: markdown", "features: [formulas, ocrHighResolution]", "output: [figures]"],
+        output: "Markdown stream + List of Detected Figures with polygon coordinates."
+      },
+      2: {
+        title: "Stage 2: Visual Cropping & Azure Blob Storage",
+        tag: "High-DPI Polygon Cropping Pipeline",
+        desc: "Iterates over the figure bounding regions. Renders corresponding PDF pages at 300 DPI using pdf2image, applies a 10px buffer around polygon vertices, crops the diagram/apparatus/geometry drawing, and saves it into Azure Blob Storage with hierarchical pathing (e.g. curriculum-assets/figures/physics/ch6/fig_6_4.png).",
+        params: ["Render DPI: 300 DPI", "Format: Lossless PNG", "Container: curriculum-assets/figures/{subject}/{chapter}/"],
+        output: "Permanent CDN Blob URLs for every diagram in NCTB textbooks."
+      },
+      3: {
+        title: "Stage 3: Vision Enrichment via GPT-4o-mini",
+        tag: "Structured Scientific & Pedagogical Metadata",
+        desc: "Sends cropped diagrams to GPT-4o-mini Vision hosted on Microsoft Foundry. Extracts dual-language scientific descriptions (Bangla & English), detects component labels (axes, focal points, apparatus names), tags diagram types (circuit, ray diagram, apparatus, geometry proof), and binds them to textbook concepts.",
+        params: ["Model: gpt-4o-mini-vision", "Response Format: json_object", "Temperature: 0.1"],
+        output: "JSON with caption_bn, caption_en, visual_type, labels_detected, mathematical_relations."
+      },
+      4: {
+        title: "Stage 4: Dual Multi-Vector Embeddings",
+        tag: "Matryoshka 1024-dim Vector Generation",
+        desc: "Generates synchronized high-dimensional vector representations. Text chunks with embedded figure captions are vectorized using text-embedding-3-large (1024 dimensions). Visual captions and multi-modal embeddings share the same latent coordinate space, allowing cross-lingual text-to-image semantic matching.",
+        params: ["Model: text-embedding-3-large", "Dimensions: 1024 (Matryoshka)", "Cross-lingual alignment: Cosine similarity"],
+        output: "text_vector and visual_vector float arrays."
+      },
+      5: {
+        title: "Stage 5: Azure AI Search & Microsoft Foundry IQ",
+        tag: "Enterprise Multi-Vector Hybrid Search Engine",
+        desc: "Stores chunks, vectors, and figure URLs in an Azure AI Search index. Supports BM25 full-text queries, dense HNSW vector queries, and Microsoft Semantic Ranker re-ranking. Connects directly to Microsoft Foundry IQ to act as an authoritative Knowledge Base for the SheraTutor agent.",
+        params: ["Algorithm: HNSW with efSearch=500", "Tokenizers: bn.microsoft + en.microsoft", "Ranking: Reciprocal Rank Fusion (RRF)"],
+        output: "Instant, grounded multimodal context for student prompts and test scoring."
+      }
+    };
+
+    function selectPipelineStage(idx) {
+      for (let i = 1; i <= 5; i++) {
+        const el = document.getElementById(`stage-card-${i}`);
+        if (i === idx) {
+          el.classList.add("border-sky-500", "shadow-[0_0_15px_rgba(56,189,248,0.25)]");
+        } else {
+          el.classList.remove("border-sky-500", "shadow-[0_0_15px_rgba(56,189,248,0.25)]");
+        }
+      }
+
+      const d = stageDetails[idx];
+      document.getElementById("stage-detail-box").innerHTML = `
+        <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-4">
+          <div>
+            <div class="text-xs text-sky-400 font-mono">${d.tag}</div>
+            <h3 class="text-lg font-bold text-white mt-0.5">${d.title}</h3>
+          </div>
+          <span class="px-2.5 py-1 rounded text-xs font-semibold bg-slate-800 text-slate-300 border border-slate-700">Stage ${idx} / 5</span>
+        </div>
+        <p class="text-sm text-slate-300 leading-relaxed mb-4">${d.desc}</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-mono">
+          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+            <div class="text-slate-400 font-semibold mb-1">Key Parameters / Flags:</div>
+            <ul class="text-sky-300 space-y-1">
+              ${d.params.map(p => `<li>• ${p}</li>`).join('')}
+            </ul>
+          </div>
+          <div class="bg-slate-950 p-3 rounded-lg border border-slate-800">
+            <div class="text-slate-400 font-semibold mb-1">Output Artifacts:</div>
+            <div class="text-emerald-400 font-sans">${d.output}</div>
+          </div>
+        </div>
+      `;
+    }
+
+    function switchTab(tabId) {
+      const tabs = ['pipeline', 'vector-vs-raster', 'simulator', 'calculator', 'code'];
+      tabs.forEach(t => {
+        const btn = document.getElementById(`tab-btn-${t}`);
+        const sec = document.getElementById(`tab-${t}`);
+        if (t === tabId) {
+          btn.classList.add('tab-active', 'text-white');
+          btn.classList.remove('text-[var(--muted)]');
+          sec.classList.remove('hidden');
+        } else {
+          btn.classList.remove('tab-active', 'text-white');
+          btn.classList.add('text-[var(--muted)]');
+          sec.classList.add('hidden');
+        }
+      });
+    }
+
+    const mockSimulatedData = {
+      "উত্তল লেন্সে বস্তুর অবস্থান ও প্রতিবিম্বের চিত্র": {
+        subject: "Physics (Class 9-10)",
+        chapter: "Chapter 6: আলোর প্রতিফলন ও প্রতিসরণ (Refraction & Reflection)",
+        page: 184,
+        text_match: "লক্ষ্যবস্তু যদি বক্রতার কেন্দ্র (2F) এবং প্রধান ফোকাস (F) এর মাঝে অবস্থিত হয়, তবে প্রতিবিম্ব বক্রতার কেন্দ্রের বাইরে (Beyond 2F) গঠিত হয়। প্রতিবিম্বটি হবে বাস্তব, উল্টো এবং বিবর্ধিত (Magnified)।",
+        latex: "\\frac{1}{f} = \\frac{1}{u} + \\frac{1}{v}, \\quad m = \\frac{v}{u}",
+        fig_caption_bn: "চিত্র ৬.০৮: উত্তল লেন্সে লক্ষ্যবস্তুর বিভিন্ন অবস্থানের জন্য প্রতিবিম্বের গঠন।",
+        fig_caption_en: "Fig 6.08: Formation of image by a convex lens for an object placed between F and 2F.",
+        visual_type: "Ray Diagram (আলোক রশ্মি চিত্র)",
+        labels: ["Principal Axis", "Focus (F)", "Center (2F)", "Optical Center (O)", "Virtual Axis"],
+        scores: { bm25: 14.82, cosine: 0.892, semantic: 3.84 }
+      },
+      "Wheatstone bridge balance condition circuit": {
+        subject: "Physics (Class 9-10 / 11-12)",
+        chapter: "Chapter 11: চল তড়িৎ (Current Electricity)",
+        page: 295,
+        text_match: "A Wheatstone bridge consists of four resistances P, Q, R, and S connected in a closed loop. When the galvanometer shows zero deflection (null point), the bridge is balanced.",
+        latex: "\\frac{P}{Q} = \\frac{R}{S}, \\quad I_g = 0",
+        fig_caption_bn: "চিত্র ১১.১৪: হুইটস্টোন ব্রিজের বর্তনী ও গ্যালভানোমিটার সংযোগ।",
+        fig_caption_en: "Fig 11.14: Wheatstone bridge circuit diagram with galvanometer null deflection.",
+        visual_type: "Electrical Circuit Diagram (বর্তনী চিত্র)",
+        labels: ["Resistors P, Q, R, S", "Galvanometer (G)", "Key K1, K2", "EMF Source (E)"],
+        scores: { bm25: 16.41, cosine: 0.915, semantic: 3.96 }
+      },
+      "বৃত্তের কেন্দ্রস্থ কোণ পরিধিস্থ কোণের দ্বিগুণ": {
+        subject: "Mathematics (Class 9-10)",
+        chapter: "Chapter 8: বৃত্ত (Circles - Theorem 20)",
+        page: 152,
+        text_match: "উপপাদ্য ২০: বৃত্তের একই চাপের উপর দণ্ডায়মান কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ। মনে করি, O কেন্দ্রবিশিষ্ট বৃত্তে একই চাপ AB এর উপর দণ্ডায়মান কেন্দ্রস্থ কোণ ∠AOB এবং বৃত্তস্থ কোণ ∠APB। প্রমাণ করতে হবে যে, ∠AOB = 2∠APB।",
+        latex: "\\angle AOB = 2 \\angle APB",
+        fig_caption_bn: "চিত্র ৮.০৩: বৃত্তের একই চাপের ওপর দণ্ডায়মান কেন্দ্রস্থ কোণ ও পরিধিস্থ কোণ।",
+        fig_caption_en: "Fig 8.03: Geometric theorem showing central angle subtended by an arc is double the inscribed angle.",
+        visual_type: "Geometric Theorem Proof (জ্যামিতিক উপপাদ্য)",
+        labels: ["Center O", "Arc AB", "Inscribed Angle ∠APB", "Central Angle ∠AOB"],
+        scores: { bm25: 18.25, cosine: 0.931, semantic: 4.12 }
+      },
+      "তড়িৎ রাসায়নিক কোষে লবণ সেতুর ভূমিকা": {
+        subject: "Chemistry (Class 9-10 / 11-12)",
+        chapter: "Chapter 8: তড়িৎ রসায়ন (Electrochemistry)",
+        page: 215,
+        text_match: "লবণ সেতু (Salt Bridge) হলো উল্টানো U-আকৃতির একটি কাচনল যা পটাশিয়াম ক্লোরাইড (KCl) বা অ্যামোনিয়াম নাইট্রেট দ্রবণে পূর্ণ থাকে। এটি দুটি অর্ধকোষের মধ্যে তড়িৎ সংযোগ রক্ষা করে এবং দ্রবণদ্বয়ের তড়িৎ নিরপেক্ষতা বজায় রাখে।",
+        latex: "Zn(s) + Cu^{2+}(aq) \\rightarrow Zn^{2+}(aq) + Cu(s)",
+        fig_caption_bn: "চিত্র ৮.০৫: ড্যানিয়েল কোষে লবণ সেতুর অবস্থান এবং আয়ন সঞ্চালন।",
+        fig_caption_en: "Fig 8.05: Daniel cell galvanic setup highlighting the salt bridge and ion flow.",
+        visual_type: "Chemical Apparatus Setup (রাসায়নিক পরীক্ষণ ব্যবস্থা)",
+        labels: ["Salt Bridge (U-tube)", "Zinc Anode", "Copper Cathode", "KCl Agar-agar", "Voltmeter"],
+        scores: { bm25: 15.60, cosine: 0.884, semantic: 3.79 }
+      }
+    };
+
+    function setQuery(q) {
+      document.getElementById('search-input').value = q;
+      runSimulatedQuery();
+    }
+
+    function runSimulatedQuery() {
+      const q = document.getElementById('search-input').value.trim();
+      const match = mockSimulatedData[q] || mockSimulatedData["উত্তল লেন্সে বস্তুর অবস্থান ও প্রতিবিম্বের চিত্র"];
+      
+      const resContainer = document.getElementById('search-results-area');
+      resContainer.innerHTML = `
+        <div class="bg-[var(--card)] border border-[var(--border)] rounded-xl p-5 glow-border">
+          <div class="flex flex-wrap items-center justify-between gap-2 border-b border-[var(--border)] pb-3">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 rounded text-xs font-semibold bg-sky-500/10 text-sky-400 border border-sky-500/20">${match.subject}</span>
+              <span class="text-xs text-[var(--muted)] font-mono">${match.chapter} • Page ${match.page}</span>
+            </div>
+            <div class="flex items-center gap-3 text-xs font-mono">
+              <span class="text-slate-400">BM25: <strong class="text-white">${match.scores.bm25}</strong></span>
+              <span class="text-slate-400">Cosine: <strong class="text-sky-400">${match.scores.cosine}</strong></span>
+              <span class="text-slate-400">Semantic Rank: <strong class="text-emerald-400">${match.scores.semantic} / 4.0</strong></span>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-4">
+            <div class="lg:col-span-2 space-y-3">
+              <div class="text-xs text-[var(--muted)] font-semibold uppercase tracking-wider">Retrieved Text Chunk & LaTeX</div>
+              <p class="text-sm text-slate-200 leading-relaxed">${match.text_match}</p>
+              <div class="bg-slate-950 px-3 py-2 rounded-lg border border-slate-800 text-xs font-mono text-emerald-400">
+                ${match.latex}
+              </div>
+
+              <div class="pt-2">
+                <div class="text-xs text-[var(--muted)] font-semibold uppercase tracking-wider mb-1.5">Detected Labels in Index</div>
+                <div class="flex flex-wrap gap-1.5">
+                  ${match.labels.map(l => `<span class="bg-slate-800 text-slate-300 px-2 py-0.5 rounded text-[11px] border border-slate-700">${l}</span>`).join('')}
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-1 bg-slate-950 border border-slate-800 rounded-xl p-4 flex flex-col justify-between">
+              <div>
+                <div class="flex items-center justify-between text-xs mb-2">
+                  <span class="font-semibold text-sky-400">Visual Entity Grounding</span>
+                  <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 font-mono">${match.visual_type}</span>
+                </div>
+                <div class="h-28 bg-slate-900 rounded-lg flex items-center justify-center border border-slate-800 text-slate-500 text-xs text-center p-2">
+                  <span>[Cropped High-DPI Diagram Rendered from Blob Storage]</span>
+                </div>
+                <div class="text-[11px] text-slate-300 mt-2 font-medium">${match.fig_caption_bn}</div>
+                <div class="text-[10px] text-slate-400 mt-1 italic">${match.fig_caption_en}</div>
+              </div>
+              <div class="mt-3 pt-3 border-t border-slate-800 flex justify-between text-[11px]">
+                <span class="text-emerald-400">✓ Grounded for AI Socratic Tutor</span>
+                <span class="text-slate-500 font-mono">Blob ID: #fig_${match.page}_01</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function updateCostCalculator() {
+      const pages = parseInt(document.getElementById('pages-slider').value);
+      const diagramRate = parseInt(document.getElementById('diagrams-slider').value) / 100;
+      const chunkRate = parseInt(document.getElementById('chunks-slider').value);
+
+      document.getElementById('pages-val').innerText = pages.toLocaleString() + ' pages';
+      document.getElementById('diagrams-val').innerText = (diagramRate * 100) + ' figures';
+      document.getElementById('chunks-val').innerText = chunkRate + ' chunks';
+
+      const totalFigures = Math.round(pages * diagramRate);
+      const totalChunks = Math.round(pages * chunkRate);
+      const storageGb = ((pages * 0.2) + (totalFigures * 0.5) / 1024).toFixed(1);
+
+      const docIntelCost = (pages / 1000) * 10.0;
+      const visionCost = totalFigures * 0.00035;
+      const embedCost = (totalChunks * 350 / 1000) * 0.00013;
+      const blobCost = storageGb * 0.018;
+      const totalIngest = docIntelCost + visionCost + embedCost;
+
+      document.getElementById('row-docintel-vol').innerText = pages.toLocaleString() + ' pages';
+      document.getElementById('row-docintel-cost').innerText = '$' + docIntelCost.toFixed(2);
+
+      document.getElementById('row-vision-vol').innerText = totalFigures.toLocaleString() + ' figures';
+      document.getElementById('row-vision-cost').innerText = '$' + visionCost.toFixed(2);
+
+      document.getElementById('row-embed-vol').innerText = totalChunks.toLocaleString() + ' chunks';
+      document.getElementById('row-embed-cost').innerText = '$' + embedCost.toFixed(2);
+
+      document.getElementById('row-blob-vol').innerText = '~' + storageGb + ' GB';
+      document.getElementById('row-blob-cost').innerText = '$' + blobCost.toFixed(2) + ' / mo';
+
+      document.getElementById('total-ingestion-cost').innerText = '$' + totalIngest.toFixed(2);
+    }
+
+    // Initialize default state
+    selectPipelineStage(1);
+    runSimulatedQuery();
+    updateCostCalculator();
+  </script>
+</body>
+</html>

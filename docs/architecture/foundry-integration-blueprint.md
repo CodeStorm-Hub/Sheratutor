@@ -338,9 +338,9 @@ export async function evaluateRubricFlow({
 
 ## 5. Summary of Visual & Architectural Artifacts
 
-1. **Interactive Visual Refactoring Blueprint**: [`foundry_interactive_explorer.html`](foundry_interactive_explorer.html)
+1. **Interactive Visual Refactoring Blueprint**: [`foundry_interactive_explorer.html`](../visual-explorers/apps/azure-foundry.html)
    - Dynamic interactive dashboard comparing Current vs. Target Architecture, Foundry IQ Agentic RAG workflow, Model Router real-time cost simulator, SFT/RFT/DPO customization matrix, 4-Point Content Shields, and Side-by-Side Code Diffs.
-2. **Technical Architecture Report**: [`SHERATUTOR_MICROSOFT_FOUNDRY_INTEGRATION_BLUEPRINT.md`](SHERATUTOR_MICROSOFT_FOUNDRY_INTEGRATION_BLUEPRINT.md)
+2. **Technical Architecture Report**: [`SHERATUTOR_MICROSOFT_FOUNDRY_INTEGRATION_BLUEPRINT.md`](foundry-integration-blueprint.md)
    - Comprehensive technical reference outlining all phases, APIs, data contracts, and architectural advantages.
 
 <!-- GOAL_COMPLETE -->

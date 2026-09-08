@@ -286,9 +286,9 @@ SheraTutor exposes its verified NCTB curriculum search and rubric grading capabi
 
 ## 6. Created Artifacts Reference
 
-1. **Interactive Visual Explorer**: [`sheratutor_interactive_explorer.html`](sheratutor_interactive_explorer.html)
+1. **Interactive Visual Explorer**: [`sheratutor_interactive_explorer.html`](../visual-explorers/apps/sheratutor-architecture.html)
    - Multi-tab interactive explorer featuring the System Topology Map, 4-Layer Grading Pipeline Simulator, Socratic Tutor Inspector, Database ERD & pgmq Queue visualizer, NCTB Ingestion overview, and Live Code Studio.
-2. **Architectural Report**: [`SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md`](SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md)
+2. **Architectural Report**: [`SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md`](system-architecture.md)
    - Comprehensive technical documentation detailing every layer, data model, state machine, and design decision.
 
 <!-- GOAL_COMPLETE -->

@@ -120,7 +120,7 @@ Hugging Face hub includes hundreds of models for real-time inference with manage
 
 Important
 
-To work with models that are deployable on managed computes, such as Hugging Face models, use a hub-based project in the Foundry portal (classic). To learn more about the available Foundry portals, see [What is Microsoft Foundry?](what-is-foundry.md)
+To work with models that are deployable on managed computes, such as Hugging Face models, use a hub-based project in the Foundry portal (classic). To learn more about the available Foundry portals, see [What is Microsoft Foundry?](../index.md)
 
 Characteristics of Models from partners and community:
 
@@ -200,7 +200,7 @@ The capability to deploy models as managed compute builds on platform capabiliti
 
 Important
 
-To work with models that are deployable on managed computes, use a hub-based project in the Foundry portal (classic). To learn more about the available Foundry portals, see [What is Microsoft Foundry?](what-is-foundry.md)
+To work with models that are deployable on managed computes, use a hub-based project in the Foundry portal (classic). To learn more about the available Foundry portals, see [What is Microsoft Foundry?](../index.md)
 
 ![Diagram that shows the life cycle of large language model (LLM) operations with managed compute.](https://learn.microsoft.com/en-us/azure/foundry/../foundry-classic/media/explore/llmops-life-cycle.png)
 

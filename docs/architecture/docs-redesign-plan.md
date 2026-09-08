@@ -40,7 +40,7 @@ Redesign the SheraTutor documentation website, fix critical dark-on-dark link vi
 
 ### Interactive Visual Explorers Showcase Hub
 
-#### [NEW] [`docs/antigravity-docs/explorers.md`](file:///home/syed/workspace/Sheratutor/docs/antigravity-docs/explorers.md)
+#### [NEW] [`docs/antigravity-docs/explorers.md`](../visual-explorers/index.md)
 - Hero banner introducing the visual interactive apps.
 - 6 interactive showcase cards featuring live iframe previews, action buttons ("Launch Fullscreen", "View Source"), and architectural badges.
 - Download section for the Whitepaper PDF and Pitch Deck PPTX.
@@ -67,13 +67,13 @@ Redesign the SheraTutor documentation website, fix critical dark-on-dark link vi
 
 ### Full Corpus Audit & Broken Link Resolution Across `docs/`
 
-#### [MODIFY] [`docs/NCTB_Class_9_10_Textbook_Corpus_Complete_Report.md`](file:///home/syed/workspace/Sheratutor/docs/NCTB_Class_9_10_Textbook_Corpus_Complete_Report.md)
+#### [MODIFY] [`docs/NCTB_Class_9_10_Textbook_Corpus_Complete_Report.md`](../pipelines/textbook-corpus-report.md)
 - Replace developer `file:///home/kratzer/...` path with GitHub repository URL.
 
-#### [MODIFY] [`docs/PHYSICS_AUDIT_FINDINGS.md`](file:///home/syed/workspace/Sheratutor/docs/PHYSICS_AUDIT_FINDINGS.md)
+#### [MODIFY] [`docs/PHYSICS_AUDIT_FINDINGS.md`](../pipelines/physics-live-audit.md)
 - Replace developer `file:///home/syed/...` paths with GitHub repository URLs.
 
-#### [MODIFY] [`docs/antigravity-docs/SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md`](file:///home/syed/workspace/Sheratutor/docs/antigravity-docs/SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md)
+#### [MODIFY] [`docs/antigravity-docs/SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md`](system-architecture.md)
 - Replace `file:///home/syed/.gemini/...` paths with site-relative links.
 
 #### [MODIFY] [`docs/crawled_docs/*.md`](file:///home/syed/workspace/Sheratutor/docs/crawled_docs/)

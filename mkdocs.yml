@@ -15,15 +15,15 @@ theme:
     text: Inter
     code: Space Mono
   palette:
-    # Light Mode
+    # Light Mode (Editorial)
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: custom
-      accent: deep orange
+      accent: teal
       toggle:
         icon: material/weather-night
         name: Switch to dark mode
-    # Dark Mode
+    # Dark Mode (Obsidian)
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
@@ -45,8 +45,8 @@ theme:
     - content.code.annotate
 
 extra_css:
-  - stylesheets/sheratutor.css
-  - https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap
+  - stylesheets/sheratutor-modern.css
+  - https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
@@ -77,129 +77,133 @@ markdown_extensions:
   - def_list
 
 nav:
-  - 'Overview & Vision':
-      - 'Portal Home': 'index.md'
-      - 'Full Project Documentation': 'SheraTutor_Full_Project_Documentation.md'
-      - 'Research Index & Facts': 'research-idea/00-README.md'
-      - 'Project Overview': 'research-idea/01-project-overview.md'
-      - 'Market Analysis': 'research-idea/02-market-analysis.md'
-      - 'Design System & Tokens': 'research-idea/03-design-system.md'
-      - 'Technology Stack & AI Strategy': 'research-idea/04-tech-stack-and-ai.md'
-      - 'Business Model': 'research-idea/05-business-model.md'
-      - 'Pitch Deck Presentation': 'pitch/BoardMate_AI_Pitch_Deck.html'
+  - 'Overview & Strategy':
+      - 'Section Index': 'overview/index.md'
+      - 'Vision & Mission': 'overview/vision-and-mission.md'
+      - 'Research Index & Facts': 'overview/research-index.md'
+      - 'Project Summary': 'overview/project-summary.md'
+      - 'Software Requirements (SRS)': 'overview/software-requirements-spec.md'
+      - 'Market Analysis': 'overview/market-analysis.md'
+      - 'Business Model': 'overview/business-model.md'
+      - 'Design System & Tokens': 'overview/design-system.md'
+      - 'Technology Stack & AI': 'overview/tech-stack-and-ai.md'
+      - 'Launch Checklist': 'overview/launch-checklist.md'
 
-  - 'Specifications & Audits':
-      - 'Software Requirements Specification': 'SheraTutor_Software_Requirements_Specification.md'
-      - 'Launch Checklist': 'LAUNCH_CHECKLIST.md'
-      - 'Codebase Review & Gap Analysis': 'review/SheraTutor_Codebase_Review_and_Gap_Analysis.md'
-      - 'SSC Phase Strategic Review': 'review/SSC_Phase_Technical_Review.md'
-      - 'Automated Browser Testing Plan': 'antigravity-docs/Comprehensive Automated Browser Testing Plan (Suites 1–7) Plan.md'
-      - 'Automated Browser Testing Report': 'Complete_Automated_Browser_Testing_and_Persistence_Audit_Report.md'
-      - 'Browser Testing Walkthrough': 'Automated Browser Testing Walkthrough (Suites 1–7).md'
-      - 'Physics Live Database Audit': 'PHYSICS_AUDIT_FINDINGS.md'
+  - 'Architecture & AI':
+      - 'Section Index': 'architecture/index.md'
+      - 'System Architecture': 'architecture/system-architecture.md'
+      - 'Codebase Anatomy': 'architecture/codebase-anatomy.md'
+      - 'Google Genkit Deep Dive': 'architecture/genkit-architecture.md'
+      - 'Genkit Integration Plan': 'architecture/genkit-integration-plan.md'
+      - 'Foundry Integration Blueprint': 'architecture/foundry-integration-blueprint.md'
+      - 'Multimodal Vector DB Foundry': 'architecture/multimodal-vector-foundry.md'
+      - 'Microsoft Foundry Deep Dive': 'architecture/microsoft-foundry-deep-dive.md'
+      - 'Developer Hand-Off Guide (B2C)': 'architecture/developer-handoff-guide.md'
+      - 'LLM, RAG & Vector Guide': 'architecture/llm-rag-vector-guide.md'
+      - 'GitHub Pages Architecture': 'architecture/github-pages-architecture.md'
+      - 'GitHub Pages Deployment': 'architecture/github-pages-deployment.md'
+      - 'Docs Redesign Plan': 'architecture/docs-redesign-plan.md'
 
-  - 'Ingestion & RAG Pipelines':
-      - 'NCTB Textbook Corpus Complete Report': 'NCTB_Class_9_10_Textbook_Corpus_Complete_Report.md'
-      - 'Full Corpus Ingestion & Verification Report': 'antigravity-docs/SheraTutor: End-to-End RAG Ingestion Pipeline, Vision LLM Extraction & Full-Corpus Physical Verification Report.md'
-      - 'Multimodal Ingestion Blueprint (NIM + Supabase)': 'antigravity-docs/Implementation Plan: Comprehensive Multimodal Textbook Ingestion (NVIDIA NIM Vision + Visual Assets + BGE-M3 + Supabase).md'
-      - 'Local Vision Extraction Plan': 'antigravity-docs/Implementation Plan: Complete Local Vision Extraction & RAG Pipeline for NCTB Textbooks.md'
-      - 'Bilingual Physics RAG Pipeline': 'antigravity-docs/Implementation Plan: NCTB SSC Physics Bilingual RAG Pipeline.md'
-      - 'Chemistry Pipeline Overhaul Plan': 'antigravity-docs/Ground-Truth Chemistry Ingestion Pipeline: Overhaul & Corpus Ingestion Plan.md'
-      - 'Multimodal Verification Walkthrough': 'antigravity-docs/Walkthrough: Ground-Truth Multimodal Textbook Ingestion & Verification.md'
+  - 'Curriculum & RAG':
+      - 'Section Index': 'pipelines/index.md'
+      - 'NCTB Textbook Corpus Complete Report': 'pipelines/textbook-corpus-report.md'
+      - 'Multimodal Ingestion & Verification': 'pipelines/multimodal-ingestion-report.md'
+      - 'Multimodal Ingestion Blueprint': 'pipelines/multimodal-ingestion-blueprint.md'
+      - 'Local Vision Extraction Plan': 'pipelines/local-vision-extraction.md'
+      - 'Bilingual Physics RAG Pipeline': 'pipelines/physics-rag-pipeline.md'
+      - 'Chemistry Pipeline Overhaul': 'pipelines/chemistry-ingestion-pipeline.md'
+      - 'Physics Live Database Audit': 'pipelines/physics-live-audit.md'
+      - 'Multimodal Verification Walkthrough': 'pipelines/multimodal-verification.md'
 
-  - 'System & AI Architecture':
-      - 'System Architecture Report': 'antigravity-docs/SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md'
-      - 'Full Codebase Anatomy Report': 'antigravity-docs/SHERATUTOR_CODEBASE_REPORT.md'
-      - 'Google Genkit Architecture Deep Dive': 'antigravity-docs/genkit_architecture_report.md'
-      - 'SheraTutor + Genkit Integration Plan': 'antigravity-docs/sheratutor_genkit_integration_plan.md'
-      - 'Developer Hand-Off Guide (B2C)': 'antigravity-docs/Developer_Hand-Off_Guide_ SheraTutor_B2C_Web_Portal_(SSC_Phase).md'
-      - 'LLM, RAG & Vector Databases Guide': 'antigravity-docs/Python with practical experience in LLMs, RAG pipelines, vector databases, and AI orchestration.md'
-      - 'Microsoft Foundry Deep Dive': 'antigravity-docs/microsoft_foundry_deep_dive.md'
-      - 'Foundry Integration Blueprint': 'antigravity-docs/SHERATUTOR_MICROSOFT_FOUNDRY_INTEGRATION_BLUEPRINT.md'
-      - 'GitHub Pages Deployment Guide': 'antigravity-docs/Walkthrough: SheraTutor Documentation Website & GitHub Pages Deployment.md'
-      - 'GitHub Pages Architecture Plan': 'antigravity-docs/Implementation Plan: Publish SheraTutor Documentation to GitHub Pages.md'
-      - 'Docs Redesign Implementation Plan': 'antigravity-docs/Implementation Plan: SheraTutor Docs Redesign, Contrast Fix, Explorers Hub & Full Corpus Audit.md'
+  - 'Quality & Testing':
+      - 'Section Index': 'quality/index.md'
+      - 'Automated Browser Testing Report': 'quality/automated-testing-report.md'
+      - 'Browser Testing Walkthrough': 'quality/automated-testing-walkthrough.md'
+      - 'Comprehensive QA Test Plan': 'quality/automated-testing-plan.md'
+      - 'Codebase Review & Gap Analysis': 'quality/codebase-gap-analysis.md'
+      - 'SSC Phase Technical Review': 'quality/ssc-technical-review.md'
 
   - 'Visual Explorers':
-      - 'Explorers Showcase Hub': 'antigravity-docs/explorers.md'
-      - 'SheraTutor Architecture Explorer': 'antigravity-docs/sheratutor_interactive_explorer.html'
-      - 'Genkit Architecture Explorer': 'antigravity-docs/genkit_interactive_explorer.html'
-      - 'SheraTutor + Genkit Integration Explorer': 'antigravity-docs/sheratutor_genkit_integration_explorer.html'
-      - 'Microsoft Foundry Explorer': 'antigravity-docs/foundry_interactive_explorer.html'
-      - 'Foundry Transformation Blueprint': 'antigravity-docs/sheratutor_foundry_refactoring_blueprint.html'
-      - 'Corpus Audit & Architecture Dashboard': 'antigravity-docs/sheratutor_docs_audit_dashboard.html'
-      - 'BoardMate AI Pitch Deck App': 'pitch/BoardMate_AI_Pitch_Deck.html'
+      - 'Explorers Showcase Hub': 'visual-explorers/index.md'
+      - 'SheraTutor Architecture Explorer': 'visual-explorers/apps/sheratutor-architecture.html'
+      - 'Genkit Architecture Explorer': 'visual-explorers/apps/genkit-architecture.html'
+      - 'SheraTutor + Genkit Integration Explorer': 'visual-explorers/apps/genkit-integration.html'
+      - 'Azure Foundry Explorer': 'visual-explorers/apps/azure-foundry.html'
+      - 'NCTB Multimodal Foundry Explorer': 'visual-explorers/apps/multimodal-foundry.html'
+      - 'Foundry Transformation Blueprint': 'visual-explorers/apps/foundry-transformation.html'
+      - 'Corpus Audit & Telemetry Dashboard': 'visual-explorers/apps/corpus-audit-dashboard.html'
+      - 'BoardMate AI Pitch Deck App': 'visual-explorers/apps/boardmate-pitch-deck.html'
 
   - 'Azure Foundry Reference':
-      - 'Foundry Overview': 'crawled_docs/what-is-foundry.md'
+      - 'Foundry Overview': 'azure-foundry/index.md'
       - 'Agents & Canvas':
-          - 'Agents Overview': 'crawled_docs/agents__overview.md'
-          - 'Agent Canvas': 'crawled_docs/agents__concepts__foundry-agent-canvas.md'
-          - 'Deploy Hosted Agent': 'crawled_docs/agents__how-to__deploy-hosted-agent.md'
-          - 'Deploy Hosted Agent Code': 'crawled_docs/agents__how-to__deploy-hosted-agent-code.md'
-          - 'Manage Task State': 'crawled_docs/agents__how-to__manage-task-state.md'
-          - 'CLI Agent Development': 'crawled_docs/agents__concepts__cli-agent-development.md'
-          - 'Toolbox Overview': 'crawled_docs/agents__concepts__toolbox-overview.md'
-          - 'Tools Governance': 'crawled_docs/agents__how-to__tools__governance.md'
-          - 'Networking Options': 'crawled_docs/agents__concepts__networking-options.md'
-          - 'Networking Deep Dive': 'crawled_docs/agents__concepts__agents-networking-deep-dive.md'
-          - 'Prompt Agent Quickstart': 'crawled_docs/agents__quickstarts__prompt-agent.md'
-          - 'What is Foundry IQ': 'crawled_docs/agents__concepts__what-is-foundry-iq.md'
+          - 'Agents Overview': 'azure-foundry/docs/agents__overview.md'
+          - 'Agent Canvas': 'azure-foundry/docs/agents__concepts__foundry-agent-canvas.md'
+          - 'Deploy Hosted Agent': 'azure-foundry/docs/agents__how-to__deploy-hosted-agent.md'
+          - 'Deploy Hosted Agent Code': 'azure-foundry/docs/agents__how-to__deploy-hosted-agent-code.md'
+          - 'Manage Task State': 'azure-foundry/docs/agents__how-to__manage-task-state.md'
+          - 'CLI Agent Development': 'azure-foundry/docs/agents__concepts__cli-agent-development.md'
+          - 'Toolbox Overview': 'azure-foundry/docs/agents__concepts__toolbox-overview.md'
+          - 'Tools Governance': 'azure-foundry/docs/agents__how-to__tools__governance.md'
+          - 'Networking Options': 'azure-foundry/docs/agents__concepts__networking-options.md'
+          - 'Networking Deep Dive': 'azure-foundry/docs/agents__concepts__agents-networking-deep-dive.md'
+          - 'Prompt Agent Quickstart': 'azure-foundry/docs/agents__quickstarts__prompt-agent.md'
+          - 'What is Foundry IQ': 'azure-foundry/docs/agents__concepts__what-is-foundry-iq.md'
       - 'Model Router & OpenAI':
-          - 'Model Router Concepts': 'crawled_docs/openai__concepts__model-router.md'
-          - 'How Model Router Works': 'crawled_docs/openai__concepts__model-router-how-it-works.md'
-          - 'How to Use Model Router': 'crawled_docs/openai__how-to__model-router.md'
-          - 'Model Router for Agents': 'crawled_docs/openai__how-to__model-router-agents.md'
-          - 'Evaluate Model Router': 'crawled_docs/openai__how-to__evaluate-model-router.md'
-          - 'Monitor Model Router': 'crawled_docs/openai__how-to__monitor-model-router.md'
-          - "What's New in Model Router": 'crawled_docs/foundry-models__whats-new-model-router.md'
-          - 'Model Router Policy': 'crawled_docs/how-to__model-router-policy.md'
-          - 'Model Retirement Schedule': 'crawled_docs/openai__concepts__model-retirement-schedule.md'
-          - 'Model Retirements Support Policy': 'crawled_docs/openai__concepts__model-retirements.md'
-          - 'Retired Models Reference': 'crawled_docs/openai__concepts__retired-models.md'
+          - 'Model Router Concepts': 'azure-foundry/docs/openai__concepts__model-router.md'
+          - 'How Model Router Works': 'azure-foundry/docs/openai__concepts__model-router-how-it-works.md'
+          - 'How to Use Model Router': 'azure-foundry/docs/openai__how-to__model-router.md'
+          - 'Model Router for Agents': 'azure-foundry/docs/openai__how-to__model-router-agents.md'
+          - 'Evaluate Model Router': 'azure-foundry/docs/openai__how-to__evaluate-model-router.md'
+          - 'Monitor Model Router': 'azure-foundry/docs/openai__how-to__monitor-model-router.md'
+          - "What's New in Model Router": 'azure-foundry/docs/foundry-models__whats-new-model-router.md'
+          - 'Model Router Policy': 'azure-foundry/docs/how-to__model-router-policy.md'
+          - 'Model Retirement Schedule': 'azure-foundry/docs/openai__concepts__model-retirement-schedule.md'
+          - 'Model Retirements Support Policy': 'azure-foundry/docs/openai__concepts__model-retirements.md'
+          - 'Retired Models Reference': 'azure-foundry/docs/openai__concepts__retired-models.md'
       - 'Foundry Models & Endpoints':
-          - 'Foundry Models Overview': 'crawled_docs/concepts__foundry-models-overview.md'
-          - 'Deployment Types': 'crawled_docs/foundry-models__concepts__deployment-types.md'
-          - 'Endpoints Reference': 'crawled_docs/foundry-models__concepts__endpoints.md'
-          - 'Claude Hosting Comparison': 'crawled_docs/foundry-models__concepts__claude-models-hosting-comparison.md'
-          - 'Models from Partners': 'crawled_docs/foundry-models__concepts__models-from-partners.md'
-          - 'Models Sold by Azure': 'crawled_docs/foundry-models__concepts__models-sold-directly-by-azure.md'
-          - 'Region Availability': 'crawled_docs/foundry-models__concepts__models-sold-directly-by-azure-region-availability.md'
-          - 'Model Migration': 'crawled_docs/foundry-models__concepts__model-migration.md'
-          - 'Model Versioning': 'crawled_docs/foundry-models__concepts__model-versions.md'
+          - 'Foundry Models Overview': 'azure-foundry/docs/concepts__foundry-models-overview.md'
+          - 'Deployment Types': 'azure-foundry/docs/foundry-models__concepts__deployment-types.md'
+          - 'Endpoints Reference': 'azure-foundry/docs/foundry-models__concepts__endpoints.md'
+          - 'Claude Hosting Comparison': 'azure-foundry/docs/foundry-models__concepts__claude-models-hosting-comparison.md'
+          - 'Models from Partners': 'azure-foundry/docs/foundry-models__concepts__models-from-partners.md'
+          - 'Models Sold by Azure': 'azure-foundry/docs/foundry-models__concepts__models-sold-directly-by-azure.md'
+          - 'Region Availability': 'azure-foundry/docs/foundry-models__concepts__models-sold-directly-by-azure-region-availability.md'
+          - 'Model Migration': 'azure-foundry/docs/foundry-models__concepts__model-migration.md'
+          - 'Model Versioning': 'azure-foundry/docs/foundry-models__concepts__model-versions.md'
       - 'Foundry Concepts & Architecture':
-          - 'Architecture Overview': 'crawled_docs/concepts__architecture.md'
-          - 'Capabilities': 'crawled_docs/concepts__capabilities.md'
-          - 'Capability Reference': 'crawled_docs/concepts__capability-reference.md'
-          - 'Concept Playgrounds': 'crawled_docs/concepts__concept-playgrounds.md'
-          - 'Deployments Overview': 'crawled_docs/concepts__deployments-overview.md'
-          - 'Instant Models': 'crawled_docs/concepts__instant-models.md'
-          - 'Managed Compute Overview': 'crawled_docs/concepts__managed-compute-overview.md'
-          - 'Model Benchmarks': 'crawled_docs/concepts__model-benchmarks.md'
-          - 'Manage Costs': 'crawled_docs/concepts__manage-costs.md'
-          - 'AI Red Teaming Agent': 'crawled_docs/concepts__ai-red-teaming-agent.md'
+          - 'Architecture Overview': 'azure-foundry/docs/concepts__architecture.md'
+          - 'Capabilities': 'azure-foundry/docs/concepts__capabilities.md'
+          - 'Capability Reference': 'azure-foundry/docs/concepts__capability-reference.md'
+          - 'Concept Playgrounds': 'azure-foundry/docs/concepts__concept-playgrounds.md'
+          - 'Deployments Overview': 'azure-foundry/docs/concepts__deployments-overview.md'
+          - 'Instant Models': 'azure-foundry/docs/concepts__instant-models.md'
+          - 'Managed Compute Overview': 'azure-foundry/docs/concepts__managed-compute-overview.md'
+          - 'Model Benchmarks': 'azure-foundry/docs/concepts__model-benchmarks.md'
+          - 'Manage Costs': 'azure-foundry/docs/concepts__manage-costs.md'
+          - 'AI Red Teaming Agent': 'azure-foundry/docs/concepts__ai-red-teaming-agent.md'
       - 'Development & Tooling':
-          - 'SDK Overview': 'crawled_docs/how-to__develop__sdk-overview.md'
-          - 'Visual Studio Code Toolkit': 'crawled_docs/how-to__develop__get-started-projects-visual-studio-code.md'
-          - 'LangChain Hosted Agents': 'crawled_docs/how-to__develop__langchain-hosted-agents.md'
-          - 'LangChain Toolbox': 'crawled_docs/how-to__develop__langchain-toolbox.md'
-          - 'LangChain Traces': 'crawled_docs/how-to__develop__langchain-traces.md'
-          - 'Add Project Connection': 'crawled_docs/how-to__connections-add.md'
+          - 'SDK Overview': 'azure-foundry/docs/how-to__develop__sdk-overview.md'
+          - 'Visual Studio Code Toolkit': 'azure-foundry/docs/how-to__develop__get-started-projects-visual-studio-code.md'
+          - 'LangChain Hosted Agents': 'azure-foundry/docs/how-to__develop__langchain-hosted-agents.md'
+          - 'LangChain Toolbox': 'azure-foundry/docs/how-to__develop__langchain-toolbox.md'
+          - 'LangChain Traces': 'azure-foundry/docs/how-to__develop__langchain-traces.md'
+          - 'Add Project Connection': 'azure-foundry/docs/how-to__connections-add.md'
       - 'Model Context Protocol (MCP)':
-          - 'MCP Getting Started': 'crawled_docs/mcp__get-started.md'
-          - 'Available MCP Tools': 'crawled_docs/mcp__available-tools.md'
-          - 'MCP Security Best Practices': 'crawled_docs/mcp__security-best-practices.md'
+          - 'MCP Getting Started': 'azure-foundry/docs/mcp__get-started.md'
+          - 'Available MCP Tools': 'azure-foundry/docs/mcp__available-tools.md'
+          - 'MCP Security Best Practices': 'azure-foundry/docs/mcp__security-best-practices.md'
       - 'Observability & Evaluation':
-          - 'Evaluate Agents': 'crawled_docs/observability__how-to__evaluate-agent.md'
-          - 'Trace Agent Setup': 'crawled_docs/observability__how-to__trace-agent-setup.md'
-          - 'Trace Data Handling': 'crawled_docs/observability__concepts__trace-data.md'
+          - 'Evaluate Agents': 'azure-foundry/docs/observability__how-to__evaluate-agent.md'
+          - 'Trace Agent Setup': 'azure-foundry/docs/observability__how-to__trace-agent-setup.md'
+          - 'Trace Data Handling': 'azure-foundry/docs/observability__concepts__trace-data.md'
       - 'Control Plane & Governance':
-          - 'Control Plane Overview': 'crawled_docs/control-plane__overview.md'
-          - 'Manage Agents in Control Plane': 'crawled_docs/control-plane__how-to-manage-agents.md'
-          - 'Enforce Model Limits': 'crawled_docs/control-plane__how-to-enforce-limits-models.md'
-          - 'Guardrails Intervention Points': 'crawled_docs/guardrails__intervention-points.md'
+          - 'Control Plane Overview': 'azure-foundry/docs/control-plane__overview.md'
+          - 'Manage Agents in Control Plane': 'azure-foundry/docs/control-plane__how-to-manage-agents.md'
+          - 'Enforce Model Limits': 'azure-foundry/docs/control-plane__how-to-enforce-limits-models.md'
+          - 'Guardrails Intervention Points': 'azure-foundry/docs/guardrails__intervention-points.md'
       - 'Government Cloud Reference':
-          - 'Models Sold in Azure Gov': 'crawled_docs/foundry-models__concepts__models-sold-directly-by-azure-gov.md'
-          - 'Model Versioning in Gov': 'crawled_docs/foundry-models__concepts__model-versions-gov.md'
-          - 'Model Retirements in Gov': 'crawled_docs/openai__concepts__model-retirements-gov.md'
-          - 'Retirement Schedule in Gov': 'crawled_docs/openai__concepts__model-retirement-schedule-gov.md'
+          - 'Models Sold in Azure Gov': 'azure-foundry/docs/foundry-models__concepts__models-sold-directly-by-azure-gov.md'
+          - 'Model Versioning in Gov': 'azure-foundry/docs/foundry-models__concepts__model-versions-gov.md'
+          - 'Model Retirements in Gov': 'azure-foundry/docs/openai__concepts__model-retirements-gov.md'
+          - 'Retirement Schedule in Gov': 'azure-foundry/docs/openai__concepts__model-retirement-schedule-gov.md'
