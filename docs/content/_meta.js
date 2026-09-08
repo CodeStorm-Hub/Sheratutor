@@ -7,6 +7,9 @@ export default {
       sidebar: false,
     },
   },
+  404: {
+    display: 'hidden',
+  },
   overview: {
     title: 'Product Strategy',
     type: 'page',
