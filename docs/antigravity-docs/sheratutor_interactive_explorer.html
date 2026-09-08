@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheraTutor: Architecture & Codebase Deep Dive</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    /* Custom scrollbars & smooth interactions */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: rgba(150, 150, 150, 0.3); border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: rgba(150, 150, 150, 0.5); }
+    
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.15rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+    
+    .tab-btn.active {
+      background: var(--card);
+      color: var(--foreground);
+      border-bottom: 2px solid #059669; /* SheraTutor Bottle Green */
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+
+    .khata-border {
+      border-left: 3px solid #dc2626; /* Examiner Red margin line */
+    }
+
+    .node-glow:hover {
+      filter: drop-shadow(0 0 8px rgba(5, 150, 105, 0.4));
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-[var(--background)] text-[var(--foreground)] antialiased font-sans p-3 sm:p-6 min-h-screen">
+
+  <!-- Header Banner -->
+  <header class="max-w-7xl mx-auto mb-6 bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6 shadow-sm">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+      <div>
+        <div class="flex flex-wrap items-center gap-2 mb-2">
+          <span class="badge bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">SheraTutor SSC Phase</span>
+          <span class="badge bg-blue-500/15 text-blue-600 dark:text-blue-400 border border-blue-500/20">Next.js 16 + React 19</span>
+          <span class="badge bg-purple-500/15 text-purple-600 dark:text-purple-400 border border-purple-500/20">Genkit 1.41 + NVIDIA NIM</span>
+          <span class="badge bg-amber-500/15 text-amber-600 dark:text-amber-400 border border-amber-500/20">Supabase pgvector + pgmq</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-[var(--foreground)] flex items-center gap-3">
+          <span class="p-2 bg-emerald-600 text-white rounded-xl shadow-sm text-lg font-mono">সেরা</span>
+          SheraTutor Codebase Architecture &amp; System Explorer
+        </h1>
+        <p class="text-[var(--muted-foreground)] text-sm sm:text-base mt-1 max-w-3xl">
+          Complete structural analysis of Bangladesh's first AI board examiner — handwritten script OCR, NCTB curriculum RAG, rubric-grounded scoring, autonomous Socratic tutoring, and enterprise pgmq queueing.
+        </p>
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="grid grid-cols-4 gap-2 bg-[var(--background)] p-3 rounded-xl border border-[var(--border)] shrink-0 text-center">
+        <div class="px-2">
+          <div class="text-lg font-bold text-emerald-600 dark:text-emerald-400">4 Layers</div>
+          <div class="text-[0.68rem] text-[var(--muted-foreground)]">Grading Pipeline</div>
+        </div>
+        <div class="px-2 border-l border-[var(--border)]">
+          <div class="text-lg font-bold text-blue-600 dark:text-blue-400">23 Tables</div>
+          <div class="text-[0.68rem] text-[var(--muted-foreground)]">100% RLS Protected</div>
+        </div>
+        <div class="px-2 border-l border-[var(--border)]">
+          <div class="text-lg font-bold text-purple-600 dark:text-purple-400">34 Migrations</div>
+          <div class="text-[0.68rem] text-[var(--muted-foreground)]">Schema Evolution</div>
+        </div>
+        <div class="px-2 border-l border-[var(--border)]">
+          <div class="text-lg font-bold text-amber-600 dark:text-amber-400">MCP</div>
+          <div class="text-[0.68rem] text-[var(--muted-foreground)]">Native Server Hub</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation Tabs -->
+    <nav class="flex flex-wrap gap-1 mt-6 border-b border-[var(--border)] pt-2" id="navTabs">
+      <button onclick="switchTab('topology')" id="tab-topology" class="tab-btn active px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors flex items-center gap-2">
+        <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+        System Topology
+      </button>
+      <button onclick="switchTab('grading')" id="tab-grading" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        4-Layer Grading Pipeline
+      </button>
+      <button onclick="switchTab('tutor')" id="tab-tutor" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/></svg>
+        Socratic Tutor Agent &amp; HITL
+      </button>
+      <button onclick="switchTab('database')" id="tab-database" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"/></svg>
+        Database &amp; pgmq Queue
+      </button>
+      <button onclick="switchTab('ingestion')" id="tab-ingestion" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+        NCTB Ingestion &amp; Verification
+      </button>
+      <button onclick="switchTab('code')" id="tab-code" class="tab-btn px-4 py-2.5 text-sm font-medium rounded-t-lg transition-colors text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2">
+        <svg class="w-4 h-4 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        Code &amp; Contract Studio
+      </button>
+    </nav>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="max-w-7xl mx-auto">
+
+    <!-- ============================================================== -->
+    <!-- TAB 1: SYSTEM TOPOLOGY -->
+    <!-- ============================================================== -->
+    <div id="view-topology" class="space-y-6">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Full-Stack System Topology &amp; Module Interaction</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Click any architectural layer to inspect its components, data contracts, and security boundaries.</p>
+          </div>
+          <span class="badge bg-emerald-500/15 text-emerald-600">Enterprise Web Architecture</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6">
+          <!-- Architecture Canvas -->
+          <div class="lg:col-span-8 space-y-4">
+            
+            <!-- Tier 1: Client Layer -->
+            <div onclick="selectModule('client')" class="node-glow cursor-pointer bg-blue-50/50 dark:bg-blue-950/20 border-2 border-blue-500/50 rounded-xl p-4 transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 bg-blue-600 text-white rounded-lg text-xs font-bold">CLIENT</div>
+                  <h3 class="font-bold text-sm text-[var(--foreground)]">Client Layer: Student Browser (Khata Design System)</h3>
+                </div>
+                <span class="badge bg-blue-500/20 text-blue-600">React 19 Server+Client</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Ruled-paper light mode &amp; blackboard/chalk dark mode. Client-side image compression, KaTeX math rendering, and Realtime WebSocket notifications on grading completion.
+              </p>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">Script Upload</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Multi-page client downscaling &amp; question mapping</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">Evaluation Breakdown</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Mark glyphs, deduction steps, dispute flagging</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">Socratic Tutor Drawer</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Inline "Explain Simply" contextual assistant</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tier 2: Next.js Edge & App Server -->
+            <div onclick="selectModule('server')" class="node-glow cursor-pointer bg-emerald-50/50 dark:bg-emerald-950/20 border-2 border-emerald-500/50 rounded-xl p-4 transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 bg-emerald-600 text-white rounded-lg text-xs font-bold">EDGE / SERVER</div>
+                  <h3 class="font-bold text-sm text-[var(--foreground)]">Next.js 16 Server Architecture (proxy.ts &amp; Server Actions)</h3>
+                </div>
+                <span class="badge bg-emerald-500/20 text-emerald-600">App Router</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Cookie-based session refresh via <code>@supabase/ssr</code>, PDPA minor-consent gating in Server Actions, and authenticated Route Handlers.
+              </p>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">Middleware (proxy.ts)</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Zero-overhead session update on every route</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">Server Actions</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]"><code>onboarding</code> (DOB gate), <code>generate-paper</code>, <code>study-plan</code></div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">API Routes</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]"><code>/api/submissions</code>, <code>/api/tutor-chat</code>, <code>/api/internal/*</code></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tier 3: Genkit AI Orchestration -->
+            <div onclick="selectModule('genkit')" class="node-glow cursor-pointer bg-purple-50/50 dark:bg-purple-950/20 border-2 border-purple-500/50 rounded-xl p-4 transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 bg-purple-600 text-white rounded-lg text-xs font-bold">GENKIT AI</div>
+                  <h3 class="font-bold text-sm text-[var(--foreground)]">AI Orchestration Tier (web/src/ai/)</h3>
+                </div>
+                <span class="badge bg-purple-500/20 text-purple-600">Genkit 1.41 + NVIDIA NIM</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Type-safe AI flows with Zod validation, verbatim OCR guardrails, hybrid dense+FTS RAG, and autonomous Socratic agents.
+              </p>
+              <div class="grid grid-cols-4 gap-2 text-xs">
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">L1: Transcribe</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Llama 3.2 Vision verbatim OCR</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">L2: Retrieve</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Dense + FTS RRF Grounding</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">L3/4: Evaluate</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Rubric citation &amp; deduction</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">Tutor Agent</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">HITL interrupts &amp; calculator</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tier 4: Database, Queue & Background Worker -->
+            <div onclick="selectModule('database')" class="node-glow cursor-pointer bg-amber-50/50 dark:bg-amber-950/20 border-2 border-amber-500/50 rounded-xl p-4 transition-all">
+              <div class="flex items-center justify-between mb-2">
+                <div class="flex items-center gap-2">
+                  <div class="p-1.5 bg-amber-600 text-white rounded-lg text-xs font-bold">DATABASE &amp; QUEUE</div>
+                  <h3 class="font-bold text-sm text-[var(--foreground)]">Supabase Postgres 17 (pgvector + pgmq + pg_cron + Vault)</h3>
+                </div>
+                <span class="badge bg-amber-500/20 text-amber-600">Reliable State &amp; RLS</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Full-provenance storage, asynchronous grading queue with retry backoff, and automated 60s pg_cron worker calling internal endpoint with Vault secrets.
+              </p>
+              <div class="grid grid-cols-3 gap-2 text-xs">
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">23 RLS Tables</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Tenant &amp; student isolation; PDPA check constraints</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">pgmq Grading Queue</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Asynchronous job dispatch with 120s visibility timeout</div>
+                </div>
+                <div class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-[var(--foreground)]">pg_cron + Vault</div>
+                  <div class="text-[var(--muted-foreground)] text-[0.7rem]">Autonomous 60s trigger via net.http_post + decrypted secret</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Inspector Details Panel -->
+          <div class="lg:col-span-4 bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between" id="moduleInspector">
+            <div id="modInspContent">
+              <div class="flex items-center justify-between pb-3 border-b border-[var(--border)] mb-4">
+                <h3 class="font-bold text-base text-[var(--foreground)]" id="modInspTitle">Client Layer: Student Browser</h3>
+                <span class="badge bg-blue-500/15 text-blue-600" id="modInspBadge">Frontend UI</span>
+              </div>
+              <p class="text-sm text-[var(--muted-foreground)] mb-4" id="modInspDesc">
+                React 19 and Next.js 16 client components styled with the signature "খাতা" (exam-notebook) aesthetic. Supports responsive handwritten script uploads, bilingual Bangla/English switching, and KaTeX math formatting.
+              </p>
+              
+              <div class="space-y-3 text-xs">
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Key Files</div>
+                  <div class="font-mono text-blue-600 dark:text-blue-400 break-all text-[0.7rem]" id="modInspFiles">
+                    web/src/components/upload-form.tsx<br>
+                    web/src/components/pages/*.tsx<br>
+                    web/src/context/LanguageContext.tsx
+                  </div>
+                </div>
+
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Engineering Guarantees</div>
+                  <ul class="list-disc list-inside space-y-1 text-[var(--muted-foreground)]" id="modInspPoints">
+                    <li>Client-side canvas image downscaling to prevent Vercel 4.5MB payload limits</li>
+                    <li>Page-to-question tagging allowing non-sequential student uploads</li>
+                    <li>Live WebSocket subscriptions for real-time grading notifications</li>
+                    <li>Dispute mechanism ("This isn't what I wrote") for OCR error correction</li>
+                  </ul>
+                </div>
+
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-semibold text-[var(--foreground)] mb-1">Integration Surface</div>
+                  <div class="text-[var(--muted-foreground)]" id="modInspIntegration">
+                    Communicates with Next.js Server Actions and Route Handlers via JSON POST and Server-Sent Events (SSE).
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-[var(--border)] text-[0.7rem] text-[var(--muted-foreground)] flex items-center justify-between">
+              <span>SheraTutor Architecture</span>
+              <span class="font-mono">SSC Vertical Slice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 2: 4-LAYER GRADING PIPELINE -->
+    <!-- ============================================================== -->
+    <div id="view-grading" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">The 4-Layer Board-Examiner Grading Pipeline</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Step-by-step interactive simulator showing how handwritten scripts are graded against official NCTB rubrics.</p>
+          </div>
+          <span class="badge bg-red-500/15 text-red-600">Core AI Engine</span>
+        </div>
+
+        <!-- Pipeline Steps Stepper -->
+        <div class="mt-6 grid grid-cols-1 sm:grid-cols-4 gap-3 text-left">
+          <button onclick="selectGradingStep(1)" class="grading-btn p-4 bg-emerald-500/10 border-2 border-emerald-500 rounded-xl cursor-pointer transition-all">
+            <div class="text-[0.65rem] uppercase font-bold text-emerald-600 mb-1">Layer 1</div>
+            <h4 class="font-bold text-sm text-[var(--foreground)]">Verbatim OCR</h4>
+            <p class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Vision LLM extracts exact student writing with anti-correction constraints.</p>
+          </button>
+
+          <button onclick="selectGradingStep(2)" class="grading-btn p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer transition-all hover:border-emerald-400">
+            <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)] mb-1">Layer 2</div>
+            <h4 class="font-bold text-sm text-[var(--foreground)]">Hybrid RAG</h4>
+            <p class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">pgvector HNSW + FTS RRF retrieves official textbook definitions and CQ stimuli.</p>
+          </button>
+
+          <button onclick="selectGradingStep(3)" class="grading-btn p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer transition-all hover:border-emerald-400">
+            <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)] mb-1">Layer 3+4</div>
+            <h4 class="font-bold text-sm text-[var(--foreground)]">Rubric Evaluation</h4>
+            <p class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Step-by-step mark deduction with rule citation &amp; photo cross-verification.</p>
+          </button>
+
+          <button onclick="selectGradingStep(4)" class="grading-btn p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer transition-all hover:border-emerald-400">
+            <div class="text-[0.65rem] uppercase font-bold text-[var(--muted-foreground)] mb-1">Persistence</div>
+            <h4 class="font-bold text-sm text-[var(--foreground)]">Full Provenance</h4>
+            <p class="text-[0.7rem] text-[var(--muted-foreground)] mt-1">Atomic Supabase write with prompt/model/rubric versions and audit trail.</p>
+          </button>
+        </div>
+
+        <!-- Detailed Simulator Canvas -->
+        <div class="mt-6 bg-[var(--background)] border border-[var(--border)] rounded-xl p-5" id="gradingCanvas">
+          <div class="flex items-center justify-between pb-3 border-b border-[var(--border)] mb-4">
+            <div>
+              <span class="badge bg-emerald-500/10 text-emerald-600 mb-1" id="grStepBadge">Layer 1: Vision Transcription</span>
+              <h3 class="font-bold text-base text-[var(--foreground)]" id="grStepTitle">transcribe.ts (Llama-3.2-11b-vision-instruct)</h3>
+            </div>
+            <div class="font-mono text-xs text-blue-600 dark:text-blue-400" id="grFileRef">web/src/ai/flows/transcribe.ts</div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs">
+            <div class="p-4 bg-[var(--card)] border border-[var(--border)] rounded-xl">
+              <h4 class="font-bold text-[var(--foreground)] mb-2">Input Artifacts &amp; Constraints</h4>
+              <div class="text-[var(--muted-foreground)] space-y-2 leading-relaxed" id="grInputs">
+                <p><strong>Input:</strong> Uploaded page JPEG/PNG signed URL from <code>exam-submissions</code> bucket.</p>
+                <p><strong>Anti-Correction Prompting:</strong> The Vision LLM is explicitly forbidden from fixing student arithmetic errors, misspellings, or missing units. If a student wrote <code>5 + 3 = 9</code>, the OCR transcript MUST read <code>5 + 3 = 9</code>.</p>
+                <p><strong>Uncertain Spans:</strong> Bounding text fragments where image blur or handwriting legibility is low are flagged in <code>ocr_uncertain_spans</code>.</p>
+              </div>
+            </div>
+
+            <div class="p-4 bg-[var(--card)] border border-[var(--border)] rounded-xl">
+              <h4 class="font-bold text-[var(--foreground)] mb-2">Generated Output Schema</h4>
+              <pre class="bg-[var(--background)] p-3 rounded font-mono text-[0.7rem] text-emerald-600 dark:text-emerald-400 overflow-x-auto leading-tight" id="grSchema">
+{
+  "verbatim_text": "আমরা জানি, W = Fs\nবা, W = 50 × 10 = 500 J",
+  "math_expressions": ["W = Fs", "W = 50 × 10 = 500 J"],
+  "detected_language": "bn",
+  "confidence_score": 0.94,
+  "uncertain_spans": []
+}
+              </pre>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 3: SOCRATIC TUTOR AGENT & HITL -->
+    <!-- ============================================================== -->
+    <div id="view-tutor" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Autonomous Socratic Tutor Agent (Genkit defineAgent)</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Multi-turn pedagogical agent powered by SupabaseSessionStore, tool calling, and Human-In-The-Loop interrupts.</p>
+          </div>
+          <span class="badge bg-purple-500/15 text-purple-600">tutorAgent</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mt-6">
+          
+          <!-- Column 1: Agent Definition & Socratic Prompt -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="p-1.5 bg-purple-600 text-white rounded-lg text-xs font-bold">AGENT</span>
+                <h3 class="font-bold text-sm text-[var(--foreground)]">Socratic Pedagogy Engine</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Defined via <code>ai.defineAgent</code> in <code>web/src/ai/agents/tutor-agent.ts</code>. Guided by strict pedagogical rules:
+              </p>
+              <ul class="space-y-2 text-xs text-[var(--muted-foreground)]">
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">One Leading Question at a Time:</strong> Never dumps the final answer. Patiently guides the student to isolate variables and formulas.
+                </li>
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">No Repetitive Greetings:</strong> Forbids opening with "হ্যালো!" or "আসসালামু আলাইকুম!". Dives straight into guidance.
+                </li>
+                <li class="p-2 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <strong class="text-[var(--foreground)]">Strict LaTeX Demarcation:</strong> All math expressions wrapped in <code>$formula$</code>; Bengali text strictly excluded from LaTeX tags.
+                </li>
+              </ul>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-purple-500">model: MODELS.reasoning (gpt-oss-20b)</div>
+          </div>
+
+          <!-- Column 2: Autonomous Tool Calling -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="p-1.5 bg-blue-600 text-white rounded-lg text-xs font-bold">TOOLS</span>
+                <h3 class="font-bold text-sm text-[var(--foreground)]">Deterministic Tool Calling</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Agent invokes at most one tool per turn to ground explanations in factual calculations and curriculum:
+              </p>
+              <div class="space-y-2 text-xs text-[var(--muted-foreground)]">
+                <div class="p-2.5 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-blue-600 dark:text-blue-400">verifyPhysicsCalculation</div>
+                  <div class="text-[0.7rem] mt-0.5">Sandboxed calculator computing kinematics ($v=u+at$, $s=ut+\frac{1}{2}at^2$), dynamics ($F=ma$), energy ($E_k=\frac{1}{2}mv^2$), and electricity ($V=IR$). Prevents arithmetic hallucinations.</div>
+                </div>
+                <div class="p-2.5 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-emerald-600 dark:text-emerald-400">searchTextbookCurriculum</div>
+                  <div class="text-[0.7rem] mt-0.5">RAG tool querying official NCTB textbook passages when students request formal definitions or laws.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-blue-500">tutor-tools.ts (642 LOC)</div>
+          </div>
+
+          <!-- Column 3: HITL Interrupt & Crisis Safety -->
+          <div class="bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="p-1.5 bg-rose-600 text-white rounded-lg text-xs font-bold">HITL &amp; SAFETY</span>
+                <h3 class="font-bold text-sm text-[var(--foreground)]">Interrupts &amp; Safety Pre-Filter</h3>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">
+                Enterprise safeguards protecting student wellbeing and controlling interactive flows:
+              </p>
+              <div class="space-y-2 text-xs text-[var(--muted-foreground)]">
+                <div class="p-2.5 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-amber-600 dark:text-amber-400">requestPracticeQuizInterrupt</div>
+                  <div class="text-[0.7rem] mt-0.5">Genkit <code>ai.defineInterrupt</code> primitive. Halts execution and requests explicit student consent before generating diagnostic practice quizzes.</div>
+                </div>
+                <div class="p-2.5 bg-[var(--card)] rounded border border-[var(--border)]">
+                  <div class="font-semibold text-rose-600 dark:text-rose-400">Crisis Pre-Filter (preFilterSafety)</div>
+                  <div class="text-[0.7rem] mt-0.5">Regex pre-filter screening self-harm indicators. Short-circuits to Kaan Pete Roi helpline (০৯৬১৩৪২৭৮০০) and writes <code>SAFETY_ESCALATION</code> to <code>audit_log</code>.</div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-rose-500">Daily limit: 50 msgs/student (Asia/Dhaka)</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 4: DATABASE & PGMQ QUEUE -->
+    <!-- ============================================================== -->
+    <div id="view-database" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Supabase PostgreSQL 17 Architecture &amp; Asynchronous Queue</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">23 RLS-hardened tables across 8 entity domains, pgvector HNSW indexing, and autonomous pg_cron queue processing.</p>
+          </div>
+          <span class="badge bg-blue-500/15 text-blue-600">34 Database Migrations</span>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 mt-6">
+          <!-- Left: Table Domain Matrix -->
+          <div class="lg:col-span-6 space-y-3 text-xs">
+            <div class="p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-sm text-[var(--foreground)]">1. Identity &amp; Tenancy</span>
+                <span class="badge bg-blue-500/10 text-blue-500 text-[0.65rem]">4 Tables</span>
+              </div>
+              <div class="font-mono text-blue-600 dark:text-blue-400 mb-1">institutions, profiles, student_profiles, teacher_profiles</div>
+              <p class="text-[var(--muted-foreground)]">Roles: STUDENT, TEACHER, INST_ADMIN, GOVT_ADMIN. Minor guardian consent gate + training data opt-in.</p>
+            </div>
+
+            <div class="p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-sm text-[var(--foreground)]">2. Curriculum Knowledge Base</span>
+                <span class="badge bg-emerald-500/10 text-emerald-500 text-[0.65rem]">6 Tables</span>
+              </div>
+              <div class="font-mono text-emerald-600 dark:text-emerald-400 mb-1">subjects, chapters, curriculum_versions, curriculum_chunks, chunk_embeddings, ingestion_jobs</div>
+              <p class="text-[var(--muted-foreground)]">pgvector(1024) HNSW cosine index + generated tsvector FTS column. Self-referencing parent_chunk_id for CQ stimuli.</p>
+            </div>
+
+            <div class="p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-sm text-[var(--foreground)]">3. Assessments &amp; Rubrics</span>
+                <span class="badge bg-purple-500/10 text-purple-500 text-[0.65rem]">3 Tables</span>
+              </div>
+              <div class="font-mono text-purple-600 dark:text-purple-400 mb-1">rubrics, question_papers, questions</div>
+              <p class="text-[var(--muted-foreground)]">CQ (ক/খ/গ/ঘ subparts) and MCQ support. Rubric versioning via immutable <code>superseded_by</code> references.</p>
+            </div>
+
+            <div class="p-3 bg-[var(--background)] border border-[var(--border)] rounded-xl">
+              <div class="flex items-center justify-between mb-1">
+                <span class="font-bold text-sm text-[var(--foreground)]">4. Submissions &amp; Provenance</span>
+                <span class="badge bg-rose-500/10 text-rose-500 text-[0.65rem]">4 Tables</span>
+              </div>
+              <div class="font-mono text-rose-600 dark:text-rose-400 mb-1">exam_submissions, submission_pages, grading_results, grading_corrections</div>
+              <p class="text-[var(--muted-foreground)]">Status machine (QUEUED -> OCR_PROCESSING -> EVALUATING -> COMPLETED|FAILED). Full provenance tracking.</p>
+            </div>
+          </div>
+
+          <!-- Right: Background Queue Architecture -->
+          <div class="lg:col-span-6 bg-[var(--background)] border border-[var(--border)] rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <div class="flex items-center gap-2">
+                  <span class="p-1.5 bg-amber-600 text-white rounded-lg text-xs font-bold">PGMQ</span>
+                  <h3 class="font-bold text-sm text-[var(--foreground)]">Asynchronous Queue &amp; pg_cron Pipeline</h3>
+                </div>
+                <span class="badge bg-amber-500/20 text-amber-600">Autonomous Worker</span>
+              </div>
+
+              <div class="space-y-3 text-xs">
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)] mb-1">1. Enqueue Job (enqueue_grading_job)</div>
+                  <p class="text-[var(--muted-foreground)]">When a student submits an exam, the API route calls this SECURITY DEFINER function to push a payload into pgmq's <code>grading_queue</code>.</p>
+                </div>
+
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)] mb-1">2. Scheduled Poller (pg_cron + pg_net)</div>
+                  <p class="text-[var(--muted-foreground)]">Configured in migration 034: fires every 60s (<code>* * * * *</code>) using <code>net.http_post</code> to trigger <code>/api/internal/process-grading-queue</code> with the bearer token retrieved securely from <code>vault.decrypted_secrets</code>.</p>
+                </div>
+
+                <div class="p-3 bg-[var(--card)] border border-[var(--border)] rounded-lg">
+                  <div class="font-bold text-[var(--foreground)] mb-1">3. Worker Execution &amp; Visibility Timeout</div>
+                  <p class="text-[var(--muted-foreground)]">Worker locks up to 5 jobs with a 120s visibility timeout. Runs <code>gradeSubmissionFlow</code> using service-role client. Retries up to 3 times before dead-lettering to FAILED.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-amber-500/10 rounded-lg border border-amber-500/20 text-xs">
+              <span class="font-bold text-amber-700 dark:text-amber-300">Fail-Closed Security:</span>
+              <span class="text-[var(--muted-foreground)] ml-1">If the secret is missing from Vault, the header is omitted and the worker endpoint returns 401 Unauthorized instead of accepting hardcoded credentials.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 5: NCTB INGESTION & VERIFICATION -->
+    <!-- ============================================================== -->
+    <div id="view-ingestion" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">NCTB Textbook Ingestion &amp; Physical Verification Pipeline</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Offline Python pipeline converting official curriculum PDFs into structured, formula-preserved vector chunks.</p>
+          </div>
+          <span class="badge bg-amber-500/15 text-amber-600">8 Books Vertical Slice</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 text-xs">
+          
+          <div class="p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-bold text-sm text-[var(--foreground)]">1. Extraction &amp; OCR</h3>
+                <span class="badge bg-blue-500/10 text-blue-500">Marker / Surya</span>
+              </div>
+              <p class="text-[var(--muted-foreground)] mb-3">
+                Uses <code>marker_single --mode balanced</code>, Surya layout detection, and PyMuPDF to extract text, mathematical formulas, and tables from double-column Bengali textbooks.
+              </p>
+              <ul class="space-y-1 text-[var(--muted-foreground)]">
+                <li>&bull; Converts complex fractions to clean LaTeX</li>
+                <li>&bull; Detects figure captions and table cells</li>
+                <li>&bull; Eliminates header/footer page noise</li>
+              </ul>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-blue-500">ingest.py / nim_batch_ingest.py</div>
+          </div>
+
+          <div class="p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-bold text-sm text-[var(--foreground)]">2. Semantic Chunking</h3>
+                <span class="badge bg-emerald-500/10 text-emerald-500">Hierarchical</span>
+              </div>
+              <p class="text-[var(--muted-foreground)] mb-3">
+                Chunks along section headings rather than arbitrary character boundaries. Differentiates chunk types:
+              </p>
+              <ul class="space-y-1 text-[var(--muted-foreground)]">
+                <li>&bull; <code>theory</code>: Definitional laws &amp; principles</li>
+                <li>&bull; <code>worked_example</code>: Problem-solving steps</li>
+                <li>&bull; <code>cq_stimulus</code>: Scenario passages</li>
+                <li>&bull; <code>cq_subquestion</code>: Links to parent stimulus</li>
+              </ul>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-emerald-500">parent_chunk_id self-relation</div>
+          </div>
+
+          <div class="p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <h3 class="font-bold text-sm text-[var(--foreground)]">3. Physical Verification</h3>
+                <span class="badge bg-purple-500/10 text-purple-500">Full Audit</span>
+              </div>
+              <p class="text-[var(--muted-foreground)] mb-3">
+                Automated auditing script (<code>verify_all_pages_against_pdf.py</code>) checks database chunks against source PDF pages:
+              </p>
+              <ul class="space-y-1 text-[var(--muted-foreground)]">
+                <li>&bull; Verified 100% page coverage across Physics &amp; Chemistry</li>
+                <li>&bull; Checked formula fidelity and character hallucination</li>
+                <li>&bull; Generates <code>full_audit_results.json</code></li>
+              </ul>
+            </div>
+            <div class="mt-4 text-[0.7rem] font-mono text-purple-500">verify_all_pages_against_pdf.py</div>
+          </div>
+
+        </div>
+
+        <div class="mt-6 p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div>
+            <h4 class="font-bold text-sm text-[var(--foreground)]">Active Embedding Model: llama-nemotron-embed-vl-1b-v2</h4>
+            <p class="text-xs text-[var(--muted-foreground)] mt-0.5">
+              1024-dimension Matryoshka-truncated vector representations stored in <code>chunk_embeddings</code>. Allows long-context textbook passages (up to 3,261 characters) without token cutoff errors.
+            </p>
+          </div>
+          <span class="badge bg-emerald-500/15 text-emerald-600 shrink-0">HNSW Indexed</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================== -->
+    <!-- TAB 6: CODE & CONTRACT STUDIO -->
+    <!-- ============================================================== -->
+    <div id="view-code" class="space-y-6 hidden">
+      <div class="bg-[var(--card)] border border-[var(--border)] rounded-2xl p-6">
+        <div class="flex flex-col md:flex-row md:items-center justify-between pb-4 border-b border-[var(--border)] gap-2">
+          <div>
+            <h2 class="text-xl font-bold text-[var(--foreground)]">Implementation Code &amp; Contract Studio</h2>
+            <p class="text-sm text-[var(--muted-foreground)]">Inspect live code files across Genkit configuration, tutor agent, grading orchestrator, and database migrations.</p>
+          </div>
+          <div class="flex flex-wrap gap-1">
+            <button onclick="switchCode('genkit')" id="cbtn-genkit" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-emerald-600 text-white">genkit.ts</button>
+            <button onclick="switchCode('tutor_agent')" id="cbtn-tutor_agent" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]">tutor-agent.ts</button>
+            <button onclick="switchCode('grade_flow')" id="cbtn-grade_flow" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]">grade-submission.ts</button>
+            <button onclick="switchCode('migration34')" id="cbtn-migration34" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]">migration 034.sql</button>
+            <button onclick="switchCode('mcp_server')" id="cbtn-mcp_server" class="code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]">mcp/server.ts</button>
+          </div>
+        </div>
+
+        <div class="mt-4 grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div class="lg:col-span-8 bg-[var(--background)] rounded-xl border border-[var(--border)] p-4 font-mono text-xs overflow-x-auto">
+            <pre id="codeSnippetDisplay" class="text-[var(--foreground)] leading-relaxed">
+// Loading snippet...
+            </pre>
+          </div>
+
+          <div class="lg:col-span-4 space-y-3 text-xs" id="codeSnippetMeta">
+            <div class="p-3 bg-[var(--background)] rounded-xl border border-[var(--border)]">
+              <h4 class="font-bold text-sm text-[var(--foreground)] mb-1" id="codeMetaTitle">genkit.ts Configuration</h4>
+              <p class="text-[var(--muted-foreground)]" id="codeMetaDesc">
+                Registers NVIDIA NIM, AgentRouter, and local Ollama plugins. Configures models, Matryoshka embedders, and provenance version strings.
+              </p>
+            </div>
+            
+            <div class="p-3 bg-[var(--background)] rounded-xl border border-[var(--border)]">
+              <h4 class="font-bold text-[var(--foreground)] mb-1">Source Path</h4>
+              <div class="font-mono text-emerald-600 dark:text-emerald-400 text-[0.7rem] break-all" id="codeMetaPath">
+                web/src/ai/genkit.ts
+              </div>
+            </div>
+
+            <div class="p-3 bg-[var(--background)] rounded-xl border border-[var(--border)]">
+              <h4 class="font-bold text-[var(--foreground)] mb-1">Key Architectural Role</h4>
+              <ul class="space-y-1 text-[var(--muted-foreground)] text-[0.72rem]" id="codeMetaBullets">
+                <li>&bull; Re-pinned models to live NVIDIA NIM free tier endpoints</li>
+                <li>&bull; Custom <code>agentRouterFetch</code> normalizer fixing WAF headers and text/plain outputs</li>
+                <li>&bull; Matryoshka 1024-dim embedder for long textbook context</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Interactive JavaScript Controller -->
+  <script>
+    // Tab Switching
+    function switchTab(tabId) {
+      const views = ['topology', 'grading', 'tutor', 'database', 'ingestion', 'code'];
+      views.forEach(v => {
+        const el = document.getElementById('view-' + v);
+        const btn = document.getElementById('tab-' + v);
+        if (el) el.classList.add('hidden');
+        if (btn) {
+          btn.classList.remove('active');
+          btn.classList.remove('text-[var(--foreground)]');
+          btn.classList.add('text-[var(--muted-foreground)]');
+        }
+      });
+      const activeEl = document.getElementById('view-' + tabId);
+      const activeBtn = document.getElementById('tab-' + tabId);
+      if (activeEl) activeEl.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.add('active');
+        activeBtn.classList.remove('text-[var(--muted-foreground)]');
+      }
+    }
+
+    // Topology Module Inspector Data
+    const moduleData = {
+      client: {
+        title: "Client Layer: Student Browser",
+        badge: "Frontend UI",
+        desc: "React 19 and Next.js 16 client components styled with the signature 'খাতা' (exam-notebook) aesthetic. Supports responsive handwritten script uploads, bilingual Bangla/English switching, and KaTeX math formatting.",
+        files: "web/src/components/upload-form.tsx<br>web/src/components/pages/*.tsx<br>web/src/context/LanguageContext.tsx",
+        points: [
+          "Client-side canvas image downscaling to prevent Vercel 4.5MB payload limits",
+          "Page-to-question tagging allowing non-sequential student uploads",
+          "Live WebSocket subscriptions for real-time grading notifications",
+          "Dispute mechanism ('This isn't what I wrote') for OCR error correction"
+        ],
+        integration: "Communicates with Next.js Server Actions and Route Handlers via JSON POST and Server-Sent Events (SSE)."
+      },
+      server: {
+        title: "Edge & Next.js Server Architecture",
+        badge: "App Router",
+        desc: "Next.js 16 App Router handling session validation, Server Actions, and API route routing. Enforces strict legal age gating for minors before creating profiles.",
+        files: "web/src/proxy.ts (middleware)<br>web/src/app/actions/onboarding.ts<br>web/src/app/api/submissions/route.ts",
+        points: [
+          "proxy.ts refreshes Supabase auth session tokens on every navigation",
+          "Onboarding computes DOB: requires guardian phone & explicit consent for minors (<18)",
+          "Submissions endpoint deduplicates via unique client idempotency keys",
+          "Enqueues grading tasks into pgmq via enqueue_grading_job RPC"
+        ],
+        integration: "Bridges browser requests with Supabase PostgreSQL and background AI flows."
+      },
+      genkit: {
+        title: "Genkit AI Orchestration Layer",
+        badge: "Genkit 1.41",
+        desc: "Google Genkit orchestration layer running on NVIDIA NIM endpoints. Executes 4-layer grading, practice paper generation, and Socratic tutoring.",
+        files: "web/src/ai/genkit.ts<br>web/src/ai/flows/*.ts<br>web/src/ai/agents/tutor-agent.ts",
+        points: [
+          "Zod-enforced structured output schemas for transcription and rubric scoring",
+          "Hybrid RAG combining dense vector similarity with Postgres tsvector FTS",
+          "Verbatim transcription prompt forbidding auto-correction of mistakes",
+          "Autonomous tutor agent with exact arithmetic calculator and HITL interrupts"
+        ],
+        integration: "Connects to NVIDIA NIM endpoints via OpenAI-compatible plugin with fallback routing."
+      },
+      database: {
+        title: "Supabase PostgreSQL 17 Tier",
+        badge: "Database & Queue",
+        desc: "23 normalized tables with 100% Row Level Security coverage. Features pgvector HNSW indexing, pgmq background queueing, and pg_cron autonomous execution.",
+        files: "supabase/migrations/*.sql<br>supabase/seed.sql<br>web/src/lib/supabase/*",
+        points: [
+          "Curriculum chunks indexed with 1024-dimension HNSW cosine distance",
+          "pgmq queue isolates long-running grading jobs from web request lifecycles",
+          "pg_cron schedules worker polling every 60s via net.http_post",
+          "Worker secrets stored in vault.decrypted_secrets with fail-closed security"
+        ],
+        integration: "Accessed via `@supabase/ssr` for student sessions and service-role client for background jobs."
+      }
+    };
+
+    function selectModule(key) {
+      const data = moduleData[key];
+      if (!data) return;
+      document.getElementById('modInspTitle').textContent = data.title;
+      document.getElementById('modInspBadge').textContent = data.badge;
+      document.getElementById('modInspDesc').textContent = data.desc;
+      document.getElementById('modInspFiles').innerHTML = data.files;
+      document.getElementById('modInspIntegration').textContent = data.integration;
+
+      const ul = document.getElementById('modInspPoints');
+      ul.innerHTML = '';
+      data.points.forEach(pt => {
+        const li = document.createElement('li');
+        li.textContent = pt;
+        ul.appendChild(li);
+      });
+    }
+
+    // Grading Stepper Data
+    const gradingStepData = {
+      1: {
+        badge: "Layer 1: Vision Transcription",
+        title: "transcribe.ts (Llama-3.2-11b-vision-instruct)",
+        file: "web/src/ai/flows/transcribe.ts",
+        inputs: "<p><strong>Input:</strong> Uploaded page JPEG/PNG signed URL from <code>exam-submissions</code> bucket.</p><p><strong>Anti-Correction Prompting:</strong> The Vision LLM is explicitly forbidden from fixing student arithmetic errors, misspellings, or missing units. If a student wrote <code>5 + 3 = 9</code>, the OCR transcript MUST read <code>5 + 3 = 9</code>.</p><p><strong>Uncertain Spans:</strong> Bounding text fragments where image blur or handwriting legibility is low are flagged in <code>ocr_uncertain_spans</code>.</p>",
+        schema: `{\n  "verbatim_text": "আমরা জানি, W = Fs\\nবা, W = 50 × 10 = 500 J",\n  "math_expressions": ["W = Fs", "W = 50 × 10 = 500 J"],\n  "detected_language": "bn",\n  "confidence_score": 0.94,\n  "uncertain_spans": []\n}`
+      },
+      2: {
+        badge: "Layer 2: Curriculum Grounding",
+        title: "retrieve-grounding.ts (Hybrid Dense + FTS)",
+        file: "web/src/ai/flows/retrieve-grounding.ts",
+        inputs: "<p><strong>Input:</strong> Question text + chapter UUID + language tag ('bn').</p><p><strong>Hybrid Search:</strong> Calls Supabase RPC <code>match_curriculum_chunks</code> blending dense cosine distance (NIM 1024-dim embedding) and full-text search (tsvector) using Reciprocal Rank Fusion (RRF).</p><p><strong>CQ Stimulus Resolution:</strong> For Creative Question sub-parts (গ or ঘ), automatically fetches the parent chunk containing the stimulus story or diagram.</p>",
+        schema: `{\n  "chunks": [\n    {\n      "id": "c71a82d0-...",\n      "content_chunk": "কাজ = বল × বলের দিকে সরণ। W = Fs ...",\n      "chunk_type": "theory",\n      "similarity": 0.89\n    }\n  ],\n  "parentStimulus": "একটি বস্তুর উপর ৫০ নিউটন বল প্রয়োগ করায়...",\n  "groundingConfidence": 0.91\n}`
+      },
+      3: {
+        badge: "Layer 3+4: Rubric Evaluation",
+        title: "evaluate-rubric.ts (GPT-OSS-20b / Vision)",
+        file: "web/src/ai/flows/evaluate-rubric.ts",
+        inputs: "<p><strong>Input:</strong> Official rubric JSON criteria + grounded curriculum text + verbatim student transcript + original page images.</p><p><strong>Step-by-Step Scoring:</strong> Scores each criteria step individually, requiring the LLM to cite which official rubric rule justified each deduction.</p><p><strong>Cross-Check:</strong> Inspects page image directly to detect if OCR made a transcription error that caused an unfair deduction (<code>transcript_mismatch_detected</code>).</p>",
+        schema: `{\n  "total_score": 3,\n  "max_marks": 4,\n  "step_evaluations": [\n    {\n      "step_name": "Part (গ)",\n      "score": 3,\n      "max_score": 4,\n      "deductions": [\n        {\n          "points_deducted": 1,\n          "cited_rubric_rule": "Rule 3.2: Missing SI unit in intermediate acceleration",\n          "feedback": "ত্বরণের একক ms⁻² উল্লেখ করা হয়নি।"\n        }\n      ]\n    }\n  ],\n  "transcript_mismatch_detected": false\n}`
+      },
+      4: {
+        badge: "Persistence & Audit",
+        title: "grade-submission.ts (Provenance Record)",
+        file: "web/src/ai/flows/grade-submission.ts",
+        inputs: "<p><strong>Orchestration:</strong> Loops across all questions in the submission. Uses the privileged service-role client to bypass RLS.</p><p><strong>Idempotent:</strong> If submission is already <code>COMPLETED</code>, returns immediately to protect against duplicate pgmq redeliveries.</p><p><strong>Provenance Audit:</strong> Records exact model name, prompt version, rubric version ID, and pipeline version on the <code>grading_results</code> row.</p>",
+        schema: `{\n  "submission_id": "8f3b21...",\n  "status": "COMPLETED",\n  "overall_score": 24,\n  "max_marks": 30,\n  "model_name": "nim/openai/gpt-oss-20b",\n  "prompt_version": "2026.08.13-v1",\n  "pipeline_version": "2026.08.13-bge-m3-pivot",\n  "weakness_updated": true\n}`
+      }
+    };
+
+    function selectGradingStep(stepNum) {
+      const data = gradingStepData[stepNum];
+      if (!data) return;
+      document.getElementById('grStepBadge').textContent = data.badge;
+      document.getElementById('grStepTitle').textContent = data.title;
+      document.getElementById('grFileRef').textContent = data.file;
+      document.getElementById('grInputs').innerHTML = data.inputs;
+      document.getElementById('grSchema').textContent = data.schema;
+
+      const btns = document.querySelectorAll('.grading-btn');
+      btns.forEach((btn, idx) => {
+        if (idx + 1 === stepNum) {
+          btn.className = "grading-btn p-4 bg-emerald-500/10 border-2 border-emerald-500 rounded-xl cursor-pointer transition-all";
+        } else {
+          btn.className = "grading-btn p-4 bg-[var(--background)] border border-[var(--border)] rounded-xl cursor-pointer transition-all hover:border-emerald-400";
+        }
+      });
+    }
+
+    // Code studio snippets
+    const codeData = {
+      genkit: {
+        title: "genkit.ts — Provider & Model Registry",
+        desc: "Registers NVIDIA NIM, AgentRouter, and local Ollama plugins. Configures models, Matryoshka embedders, and provenance version strings.",
+        path: "web/src/ai/genkit.ts",
+        bullets: [
+          "Re-pinned models to live NVIDIA NIM free tier endpoints",
+          "Custom agentRouterFetch normalizer fixing WAF headers and text/plain outputs",
+          "Matryoshka 1024-dim embedder for long textbook context"
+        ],
+        code: `export const ai = genkit({
+  plugins: [
+    openAICompatible({
+      name: "agentrouter",
+      apiKey: process.env.AGENTROUTER_API_KEY ?? "",
+      baseURL: AGENTROUTER_BASE_URL,
+      fetch: agentRouterFetch,
+      defaultHeaders: { "User-Agent": "Cline/3.0.0" },
+    }),
+    openAICompatible({
+      name: "nim",
+      apiKey: process.env.NVIDIA_NIM_API_KEY ?? "unset",
+      baseURL: NIM_BASE_URL,
+    }),
+    ollama({
+      serverAddress: process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434",
+      models: [{ name: "qwen3:8b" }, { name: "gemma4:e4b" }, { name: "bge-m3" }],
+    }),
+  ],
+});
+
+export const MODELS = {
+  vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b",
+  fast: process.env.GENKIT_FAST_MODEL ?? "nim/openai/gpt-oss-20b",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
+} as const;`
+      },
+      tutor_agent: {
+        title: "tutor-agent.ts — Socratic Pedagogical Agent",
+        desc: "Autonomous multi-turn agent with Supabase session storage, Socratic prompt rules, and math verification tools.",
+        path: "web/src/ai/agents/tutor-agent.ts",
+        bullets: [
+          "Enforces one leading question at a time (no complete solution dumping)",
+          "Restricts tool execution to at most one tool per turn",
+          "Requires strict LaTeX wrapping ($...$) with conversational Bangla"
+        ],
+        code: `export const tutorAgent = ai.defineAgent({
+  name: "tutorAgent",
+  model: MODELS.reasoning,
+  store: new SupabaseSessionStore(),
+  tools: [
+    searchTextbookCurriculum,
+    verifyPhysicsCalculation,
+    requestPracticeQuizInterrupt
+  ],
+  system: TUTOR_SYSTEM_INSTRUCTION,
+  config: {
+    temperature: 0.3,
+  },
+});`
+      },
+      grade_flow: {
+        title: "grade-submission.ts — Pipeline Orchestrator",
+        desc: "Coordinates verbatim transcription, hybrid curriculum grounding, and rubric scoring for queued submissions.",
+        path: "web/src/ai/flows/grade-submission.ts",
+        bullets: [
+          "Idempotent: short-circuits completed submissions",
+          "Bypasses RLS using the backend service-role client",
+          "Updates weakness_logs per chapter automatically on completion"
+        ],
+        code: `export const gradeSubmissionFlow = ai.defineFlow(
+  {
+    name: "gradeSubmissionFlow",
+    inputSchema: z.object({ submissionId: z.string().uuid() }),
+    outputSchema: z.object({ success: z.boolean(), totalMarksAwarded: z.number() }),
+  },
+  async ({ submissionId }) => {
+    const supabase = getServiceRoleClient();
+    // 1. Fetch submission + pages + questions
+    // 2. Layer 1: Transcribe each un-transcribed page
+    // 3. Layer 2: Hybrid RAG grounding per question
+    // 4. Layer 3+4: Evaluate against official rubric JSON
+    // 5. Atomic write to grading_results with provenance
+  }
+);`
+      },
+      migration34: {
+        title: "00000000000034_grading_cron_vault_secret.sql",
+        desc: "Configures pg_cron to autonomously invoke the grading queue worker every 60 seconds with Vault secrets.",
+        path: "supabase/migrations/00000000000034_grading_cron_vault_secret_and_cadence.sql",
+        bullets: [
+          "Swapped cadence from 6-field */30 to standard 5-field * * * * *",
+          "Reads x-worker-secret directly from vault.decrypted_secrets",
+          "Fails closed: if secret is absent, worker returns 401 Unauthorized"
+        ],
+        code: `create extension if not exists pg_net;
+create extension if not exists pg_cron;
+
+select cron.schedule(
+  'process-grading-queue',
+  '* * * * *',
+  $CRON$
+    select net.http_post(
+      url := 'https://sheratutor.tech/api/internal/process-grading-queue',
+      headers := jsonb_build_object(
+        'Content-Type', 'application/json',
+        'x-worker-secret', (
+          select decrypted_secret from vault.decrypted_secrets
+          where name = 'internal_worker_secret' limit 1
+        )
+      ),
+      body := '{}'::jsonb
+    );
+  $CRON$
+);`
+      },
+      mcp_server: {
+        title: "mcp/server.ts — Model Context Protocol Server",
+        desc: "Exposes SheraTutor curriculum retrieval and rubric evaluation tools to external MCP clients.",
+        path: "web/src/ai/mcp/server.ts",
+        bullets: [
+          "Uses @genkit-ai/mcp to expose Genkit tools as MCP tools",
+          "Exposes retrieveGroundingFlow and evaluateRubricFlow",
+          "Supports stdio transport for Cursor, Claude Desktop, and Antigravity"
+        ],
+        code: `import { ai } from "@/ai/genkit";
+import { createMcpServer } from "@genkit-ai/mcp";
+import "@/ai/flows/retrieve-grounding";
+import "@/ai/flows/evaluate-rubric";
+
+export function createSheraTutorMcpServer() {
+  return createMcpServer(ai, {
+    name: "sheratutor-mcp",
+    version: "1.0.0",
+  });
+}
+
+export const mcpServer = createSheraTutorMcpServer();`
+      }
+    };
+
+    function switchCode(key) {
+      const data = codeData[key];
+      if (!data) return;
+      document.getElementById('codeSnippetDisplay').textContent = data.code;
+      document.getElementById('codeMetaTitle').textContent = data.title;
+      document.getElementById('codeMetaDesc').textContent = data.desc;
+      document.getElementById('codeMetaPath').textContent = data.path;
+
+      const ul = document.getElementById('codeMetaBullets');
+      ul.innerHTML = '';
+      data.bullets.forEach(b => {
+        const li = document.createElement('li');
+        li.textContent = b;
+        ul.appendChild(li);
+      });
+
+      const btns = document.querySelectorAll('.code-btn');
+      btns.forEach(btn => {
+        btn.className = "code-btn px-2.5 py-1 text-xs font-semibold rounded bg-[var(--background)] text-[var(--muted-foreground)]";
+      });
+      const active = document.getElementById('cbtn-' + key);
+      if (active) {
+        active.className = "code-btn px-2.5 py-1 text-xs font-semibold rounded bg-emerald-600 text-white";
+      }
+    }
+
+    // Initialize code studio
+    switchCode('genkit');
+  </script>
+</body>
+</html>
