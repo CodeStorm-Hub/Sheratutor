@@ -1,65 +1,105 @@
-# Implementation Plan: Publish SheraTutor Documentation to GitHub Pages
+# Implementation Plan: Publish SheraTutor Documentation to GitHub Pages (v2 - Official GitHub Best Practices)
 
 Deploy the complete `docs/` directory (113 files, 85 markdown specifications, 5 interactive web apps, 14 brand assets) as a documentation website hosted on GitHub Pages under `https://codestorm-hub.github.io/Sheratutor/`.
 
 ## User Review Required
 
 > [!IMPORTANT]
-> **Zero Changes to Application Code**: Only documentation publishing files will be added. No code in `web/` or `ingestion/` will be modified.
+> **Branch Trigger Updated**: The deployment workflow will now trigger on pushes to **both `main` and `docs`** branches, as well as on manual trigger (`workflow_dispatch`).
 > 
-> **Repository Settings Action Required**: After pushing the workflow, GitHub Pages must be configured under:
-> `https://github.com/CodeStorm-Hub/Sheratutor/settings/pages`  
-> Set **Build and deployment > Source** to **GitHub Actions**.
+> **PR Quality Gate Added**: Pull requests targeting `main` or `docs` with documentation changes will automatically trigger a build validation (`mkdocs build --strict`) to catch broken links before merging, while skipping deployment.
+> 
+> **Repository Settings Action**: In GitHub:
+> 1. Go to `https://github.com/CodeStorm-Hub/Sheratutor/settings/pages`
+> 2. Set **Build and deployment > Source** to **GitHub Actions**.
+
+## Official GitHub Pages Best Practices & Improvements
+
+Based on official GitHub documentation (`docs.github.com/en/pages`) and `actions/deploy-pages` architecture:
+
+1. **`actions/configure-pages@v5` Integration**:
+   - Official GitHub Pages setup action that resolves base paths, repository parameters, and runner metadata before building.
+2. **Deterministic Concurrency Management**:
+   - `concurrency: { group: 'pages', cancel-in-progress: false }` ensures in-flight deployments are never killed halfway, preventing corrupt states.
+3. **Environment Deployment Protection**:
+   - Uses the official `github-pages` environment with dynamic deployment URL output (`url: ${{ steps.deployment.outputs.page_url }}`).
+4. **Branded 404 Page (`docs/404.md`)**:
+   - A custom, branded 404 page with search suggestions and quick navigation links when users land on missing routes.
+5. **Interactive HTML Explorer Iframe Wrappers**:
+   - Documentation pages with responsive iframe containers and full-screen external launch buttons for the 5 interactive visual explorers (`sheratutor_interactive_explorer.html`, etc.).
+6. **Mobile-Responsive Equation & Diagram Handling**:
+   - Custom CSS rules preventing wide LaTeX equations and Mermaid diagrams from causing horizontal layout breaks on mobile devices.
+
+---
 
 ## Proposed Changes
 
 ### Documentation Site Configuration & Assets
 
 #### [NEW] [`mkdocs.yml`](file:///home/syed/workspace/Sheratutor/mkdocs.yml)
-- Configure site title, repository link, and brand icons (`docs/assets/icon-badge.svg`).
-- Set theme to `material` with dark/light mode toggle palettes (`slate` and `default`).
-- Configure features: navigation tabs, sticky tabs, navigation sections, search indexing, and copy-code buttons.
-- Register markdown extensions: `pymdownx.superfences` (native Mermaid rendering), `pymdownx.arithmatex` (MathJax equation rendering), `tables`, `admonitions`, `details`, and `md_in_html`.
-- Structure the comprehensive 6-tier navigation bar mapping all 113 documents cleanly.
+- Configure `site_name: SheraTutor Documentation` and `site_url: https://codestorm-hub.github.io/Sheratutor/`.
+- Register SheraTutor theme tokens (`slate` dark / `default` light mode with seamless system preference toggle).
+- Enable search indexing with term suggestions, highlight, and shareable URLs.
+- Enable `pymdownx.superfences` (Mermaid diagrams) and `pymdownx.arithmatex` (MathJax equation rendering).
+- Enable `admonition`, `pymdownx.details` (collapsible callouts), `pymdownx.tabbed` (code tabs), and `md_in_html`.
+- Complete 6-tier navigation bar mapping all 113 documents across all 8 folders.
 
 #### [NEW] [`docs/index.md`](file:///home/syed/workspace/Sheratutor/docs/index.md)
-- Portal homepage welcoming visitors, featuring the SheraTutor tagline *"SheraTutor, for Shera Students"*, key metrics, and direct links to all documentation sections.
+- Portal homepage featuring brand tagline *"SheraTutor, for Shera Students"*, key metrics, and direct links to all documentation sections.
+
+#### [NEW] [`docs/404.md`](file:///home/syed/workspace/Sheratutor/docs/404.md)
+- Custom branded 404 error page directing lost visitors back to the home portal or key specifications.
 
 #### [NEW] [`docs/stylesheets/sheratutor.css`](file:///home/syed/workspace/Sheratutor/docs/stylesheets/sheratutor.css)
-- Implement SheraTutor's brand design system tokens from `docs/research-idea/03-design-system.md`:
+- Implement SheraTutor design tokens from `docs/research-idea/03-design-system.md`:
   - Primary dark background: `#14182B` (Ink Navy)
   - Card surfaces: `#1E2761` (Card Navy)
   - Primary accent: `#FF6B57` (Coral)
   - Secondary / dark accent: `#23D9A5` (Mint)
-  - Typography imports: `Baloo 2` for headlines, `Inter` for body, `Space Mono` for code tags.
+  - Fonts: `Baloo 2` for headlines, `Inter` for body, `Space Mono` for code and eyebrow tags.
+  - Responsive styles for Mermaid diagram viewports and iframe visualizer containers.
 
 ---
 
 ### CI/CD Deployment Automation
 
 #### [NEW] [`.github/workflows/deploy-docs.yml`](file:///home/syed/workspace/Sheratutor/.github/workflows/deploy-docs.yml)
-- Automated GitHub Actions workflow triggered on push to `main` or `azure-foundry` branches affecting `docs/**`, `mkdocs.yml`, or the workflow itself.
-- Python 3.12 runner environment with pip caching.
-- Builds static HTML site via `mkdocs build`.
-- Deploys static bundle directly to GitHub Pages using official GitHub Actions (`actions/upload-pages-artifact@v3` and `actions/deploy-pages@v4`).
+- Triggers:
+  - `push` to branches `main` and `docs` for path changes in `docs/**`, `mkdocs.yml`, and `.github/workflows/deploy-docs.yml`.
+  - `pull_request` to branches `main` and `docs` for validation testing.
+  - `workflow_dispatch` for manual triggers.
+- Permissions: `contents: read`, `pages: write`, `id-token: write`.
+- Concurrency: `group: 'pages'`, `cancel-in-progress: false`.
+- Build Job:
+  - `actions/checkout@v4` with full fetch depth.
+  - `actions/configure-pages@v5`.
+  - `actions/setup-python@v5` with Python 3.12 and pip cache.
+  - `pip install mkdocs-material`.
+  - `mkdocs build --strict`.
+  - `actions/upload-pages-artifact@v3` (only on `push` or `workflow_dispatch`).
+- Deploy Job:
+  - Runs in `github-pages` environment.
+  - Deploys via `actions/deploy-pages@v4`.
+  - Conditional: `if: github.event_name != 'pull_request'`.
 
 ---
 
 ## Verification Plan
 
 ### Automated Local Verification
-1. Run local test build in virtual environment:
+1. Run local test build with strict mode in virtual environment:
    ```bash
    /tmp/docs_venv/bin/mkdocs build -f /home/syed/workspace/Sheratutor/mkdocs.yml -d /tmp/site_test
    ```
 2. Verify:
-   - Exit code `0` (clean build without fatal errors).
-   - Generated `index.html`, CSS assets, and search index `search_index.json`.
+   - Exit code `0` (clean build without fatal errors or broken cross-references).
+   - Generated `index.html`, `404.html`, CSS assets, and search index `search_index.json`.
    - Native Mermaid diagram output and MathJax script tags.
    - All 5 interactive HTML explorers copied to output (`sheratutor_interactive_explorer.html`, `genkit_interactive_explorer.html`, etc.).
    - Brand asset SVGs/PNGs accessible.
-3. Remove temporary build directory `/tmp/site_test`.
+3. Clean up temporary test output.
 
 ### Manual / Post-Deployment Verification
-1. User verifies GitHub Actions run under `https://github.com/CodeStorm-Hub/Sheratutor/actions`.
-2. Inspect published website live at `https://codestorm-hub.github.io/Sheratutor/`.
+1. Verify git status shows only documentation publishing files.
+2. Verify workflow trigger under GitHub Actions when pushed to `docs`.
+3. Open `https://codestorm-hub.github.io/Sheratutor/` to verify live site.
