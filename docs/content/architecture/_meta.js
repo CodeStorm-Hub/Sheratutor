@@ -1,0 +1,15 @@
+export default {
+  index: 'Architecture Hub',
+  'system-architecture': 'System Architecture & Stack',
+  'codebase-anatomy': 'Codebase Anatomy & Actions',
+  'genkit-architecture': 'Genkit v1.41+ Flow Architecture',
+  'genkit-integration-plan': 'Genkit 7 Flows Integration Plan',
+  'foundry-integration-blueprint': 'Azure AI Foundry Blueprint',
+  'multimodal-vector-foundry': 'Multimodal Vector DB Blueprint',
+  'microsoft-foundry-deep-dive': 'Foundry Deep Dive & Architecture',
+  'llm-rag-vector-guide': 'LLM, RAG & Vector Best Practices',
+  'developer-handoff-guide': 'Developer Hand-Off Guide',
+  'github-pages-architecture': 'GitHub Pages Architecture',
+  'github-pages-deployment': 'GitHub Pages Deployment',
+  'docs-redesign-plan': 'Documentation Redesign Blueprint',
+}

@@ -1,0 +1,161 @@
+{/*  Title: Lifecycle and support policy (government) | Category: Models/Explore Foundry Models/Model versions and lifecycle/Lifecycle and support policy (government) | URL: openai/concepts/model-retirements-gov  */}
+
+---
+layout: Conceptual
+title: Foundry Models lifecycle and support policy in Azure Government - Microsoft Foundry | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/model-retirements-gov
+breadcrumb_path: ../../../breadcrumb/azure-ai/toc.json
+feedback_help_link_url: https://learn.microsoft.com/answers/tags/133/azure
+feedback_help_link_type: get-help-at-qna
+feedback_product_url: https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4
+feedback_system: Standard
+permissioned-type: public
+recommendations: true
+recommendation_types:
+- Training
+- Certification
+uhfHeaderId: azure-ai-foundry
+ms.suite: office
+author: challenp
+learn_banner_products:
+- azure
+manager: mcleans
+ms.author: chaparker
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 90-days
+ms.service: microsoft-foundry
+description: Learn about the Microsoft Foundry Models lifecycle and support policy, including model deprecations and retirements in Azure Government. Explore how these changes affect your deployments.
+ms.subservice: foundry-openai
+ms.topic: concept-article
+ms.date: 2026-07-24T00:00:00.0000000Z
+ms.custom:
+- classic-and-new
+locale: en-us
+document_id: 1ba0ce48-8ad6-5eb2-7dcd-409f6d25809c
+document_version_independent_id: 75187c74-b9f6-8bc6-0db0-32e59eaa2d57
+updated_at: 2026-07-28T17:15:00.0000000Z
+original_content_git_url: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/live/articles/foundry/openai/concepts/model-retirements-gov.md
+gitcommit: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/813fc6f95c0d4b188730654827c950a6f07062df/articles/foundry/openai/concepts/model-retirements-gov.md
+git_commit_id: 813fc6f95c0d4b188730654827c950a6f07062df
+site_name: Docs
+depot_name: Learn.azure-ai
+page_type: conceptual
+toc_rel: ../../toc.json
+word_count: 997
+asset_id: foundry/openai/concepts/model-retirements-gov
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: articles/foundry/openai/concepts/model-retirements-gov.md
+cmProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/653971be-c25b-47ce-b561-80221556af0c
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/15545907-caea-48c1-a546-e84930c5b845
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/cbd33d8f-e9af-440e-8f1e-fc69e07b902b
+spProducts:
+- https://authoring-docs-microsoft.poolparty.biz/devrel/f998336e-f087-4bda-99f7-4001451d0bd2
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/fd70c557-2c67-40b8-b517-cf047ce6d0c3
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/3820371b-086e-47fb-9d1f-b215f569127a
+platformId: 69eac2fa-2025-951e-6f80-521ce0dd833a
+---
+
+# Foundry Models lifecycle and support policy in Azure Government - Microsoft Foundry | Microsoft Learn
+
+Microsoft Foundry Models in Azure Government move through a predictable lifecycle - from preview to general availability (GA) to eventual retirement - giving you time to evaluate replacements and migrate workloads. This article explains each lifecycle stage, the overlap commitments Microsoft makes when a model retires, and how you're notified in Azure Government. For specific retirement dates, see [Model retirement schedule](https://learn.microsoft.com/en-us/azure/foundry/model-retirement-schedule-gov).
+
+This article focuses on where there are differences from Commercial for Azure Government. For general information, see [Foundry Models lifecycle and support policy](https://learn.microsoft.com/en-us/azure/foundry/model-retirements).
+
+## How model lifecycle works
+
+Microsoft Foundry continuously refreshes its model catalog with newer, more capable models. When a model is superseded, it moves through a predictable lifecycle that gives customers time to evaluate replacements and migrate. The lifecycle applies across Foundry Models in Azure Government [sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-gov).
+
+### Lifecycle stages
+
+Since preview models aren't delivered within Azure Government, every model in the Foundry catalog in Azure Government belongs to exactly one of four stages:
+
+| Stage | What it means | Can create new deployments? | Existing deployments work? |
+| --- | --- | --- | --- |
+| **Generally Available (GA)** | Production-ready. Weights and APIs are fixed. Runtime patches for security vulnerabilities don't affect outputs. No label shown (default state). | Yes | Yes |
+| **Legacy** | Newer, more capable models exist. You should plan on migrating workloads. This stage is **optional** - models might skip directly from GA to Deprecated. | Yes (until deprecation) | Yes |
+| **Deprecated** | Existing customers can continue to create and manage deployments. No longer available to new customers - new customers can't create deployments or access the model. "Existing customer" is determined at the subscription level: whether that Azure subscription ever deployed the specific model version. A new subscription under the same tenant doesn't inherit access. | - Existing customers: Yes. - New customers: **No** | Yes |
+| **Retired** | Removed from service. All inference requests return `410 Gone`. | **No** | **No** |
+
+## Model launch and availability
+
+New models become available through deployment types in a predictable order:
+
+| Order | Deployment type | When available |
+| --- | --- | --- |
+| 1 | **Data Zone Standard** | When first launched in Azure Government |
+| 2 | **Data Zone Provisioned** | After Data Zone Standard - provides reserved throughput |
+| 3 | **Standard** and **Provisioned** | Last - regional-only, as older models retire and capacity is reallocated |
+
+### Availability rollout at a glance
+
+```
+Data Zone Standard  ──►  Data Zone Provisioned  ──►   Standard
+                                                         and
+    (at launch)        (expands to Provisioned)      Provisioned   
+                                                     (as capacity
+                                                       permits)
+```
+
+Tip
+
+For a full comparison of deployment types, see [Deployment type comparison](https://learn.microsoft.com/en-us/azure/foundry/../foundry-models/concepts/deployment-types-gov).
+
+## Special considerations
+
+Several factors affect how the standard lifecycle applies to your deployments, including the region you operate in, the type of deployment, and security requirements.
+
+### Regional availability
+
+- Not all model and version combinations are available in all regions.
+- Successive model versions might not be available in the same regions. A newer version can appear in some regions before upgrades are scheduled in others.
+
+### Generally available (GA) replacement model overlap commitments
+
+Microsoft commits to meaningful overlap between a retiring GA model and its replacement so you can test, evaluate, and migrate with confidence. In Azure Government, this overlap relies on a two-step process that leverages the earlier availability in Commercial cloud.
+
+| Phase | Pattern |
+| --- | --- |
+| **Azure Government launch** | Each model launches per its own deployment type and region availability matrix. Microsoft sets the retirement date in Azure Government to match the Commercial Cloud date. You can find this date through the [Models API](https://learn.microsoft.com/en-us/rest/api/aiservices/accountmanagement/models). |
+| **Deprecated (existing customers only)** | At 12 months from Commercial launch, existing customers can continue to create and manage deployments. New customers can't access the model. |
+| **Replacement available in global standard** | Customers can use and test the replacement model in global standard in Commercial Cloud approximately 90 days before retirement. |
+| **Replacement available in Azure Government** | Replacement model becomes available to test in Azure Government where the predecessor is retiring approximately 30 days before retirement. |
+| **Model version retired** | At 18 months from Commercial launch, all inference returns `410 Gone`. If the Azure Government availability of the replacement is less than 30 days from this retirement date, the model's retirement date is extended in Azure Government to allow at least 30 days of overlap in the Azure Government cloud. |
+
+### Understanding automatic upgrades
+
+For **Data Zone Standard** and **Standard** deployment types, Microsoft manages automatic upgrades when a model version is retired and the deployment type and region align:
+
+- Auto-upgrades are scheduled on a **rolling, region-by-region** basis.
+- Microsoft publishes the upgrade schedule in advance in the [Model Retirement Schedule](https://learn.microsoft.com/en-us/azure/foundry/model-retirements-gov).
+- If the upgrade target isn't available in the same deployment type and region, Microsoft doesn't perform a model upgrade.
+
+Important
+
+**Provisioned deployments aren't auto-upgraded.** Provisioned customers must manually migrate to the replacement model.
+
+Use the [Models API](https://learn.microsoft.com/en-us/rest/api/aiservices/accountmanagement/models) to programmatically check `lifecycleStatus`, `deprecation`, and per-SKU `deprecationDate` for any model at any time.
+
+### Example: gpt-4o-0513 → gpt-4.1 upgrade
+
+When Microsoft retires gpt-4o version `2024-05-13` on **2026-03-31**, the service auto-upgrades the model to gpt-4.1 on the Standard and DataZone SKU if there's a matching offering.
+
+## Notifications
+
+Microsoft sets the retirement date for GA models programmatically at commercial launch to 18 months out - there's no separate "announcement." Legacy and Deprecated transitions follow the published timeline and are visible in real time via the [Models API](https://learn.microsoft.com/en-us/rest/api/aiservices/accountmanagement/models).
+
+### When you receive active notifications
+
+| Event | Timing | Applies to |
+| --- | --- | --- |
+| **Azure Government model retirement notice** | At least **60 days** before retirement | All GA models. Sent to subscription owners with active deployments. |
+| **Azure Government model retirement warning** | At least **30 days** before retirement | All GA models. Sent to subscription owners with active deployments. |
+
+### How you're notified
+
+| Channel | Details |
+| --- | --- |
+| **Email** | Sent automatically to subscription owners with active deployments. |
+| **Azure Service Health** | Health advisories appear for affected subscriptions. Go to [Service Health &gt; Health advisories](https://portal.azure.us/#blade/Microsoft_Azure_Health/AzureHealthBrowseBlade/healthAdvisories), filter by `Azure OpenAI Service`, and create an alert rule for email, text messages, or webhook notifications. |

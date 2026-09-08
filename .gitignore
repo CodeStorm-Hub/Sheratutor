@@ -164,6 +164,12 @@ web/.mcp.json
 __pycache__/
 *.py[cod]
 *$py.class
-package.json
+/package.json
 site/
 .venv-mkdocs/
+
+# Docs (Nextra)
+docs/.next/
+docs/out/
+docs/node_modules/
+

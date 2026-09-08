@@ -1,0 +1,141 @@
+{/*  Title: Enforce token limits | URL: control-plane/how-to-enforce-limits-models  */}
+
+---
+layout: Conceptual
+title: Enforce Token Limits for Models - Microsoft Foundry | Microsoft Learn
+canonicalUrl: https://learn.microsoft.com/en-us/azure/foundry/control-plane/how-to-enforce-limits-models
+breadcrumb_path: ../../breadcrumb/azure-ai/toc.json
+feedback_help_link_url: https://learn.microsoft.com/answers/tags/133/azure
+feedback_help_link_type: get-help-at-qna
+feedback_product_url: https://feedback.azure.com/d365community/forum/79b1327d-d925-ec11-b6e6-000d3a4f06a4
+feedback_system: Standard
+permissioned-type: public
+recommendations: true
+recommendation_types:
+- Training
+- Certification
+uhfHeaderId: azure-ai-foundry
+ms.suite: office
+author: santiagxf
+learn_banner_products:
+- azure
+manager: mcleans
+ms.author: lagayhar
+ms.collection: ce-skilling-ai-copilot
+ms.update-cycle: 90-days
+ms.service: microsoft-foundry
+description: Use Foundry Control Plane integration with AI Gateway to apply limits for model inference, including token limits.
+ms.reviewer: fasantia
+ms.subservice: foundry-control-plane
+ms.topic: how-to
+ms.custom: dev-focus, doc-kit-assisted
+ms.date: 2026-07-15T00:00:00.0000000Z
+ai-usage: ai-assisted
+locale: en-us
+document_id: 4517abeb-9080-1b1c-fd7e-d5b9a8c20cac
+document_version_independent_id: f3e1e808-f8a1-8d4e-027b-971ddf265111
+updated_at: 2026-08-13T22:15:00.0000000Z
+original_content_git_url: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/live/articles/foundry/control-plane/how-to-enforce-limits-models.md
+gitcommit: https://github.com/MicrosoftDocs/azure-ai-docs-pr/blob/90d4998eaaa0a8f955a89510ab3683f21dbf5c8a/articles/foundry/control-plane/how-to-enforce-limits-models.md
+git_commit_id: 90d4998eaaa0a8f955a89510ab3683f21dbf5c8a
+site_name: Docs
+depot_name: Learn.azure-ai
+page_type: conceptual
+toc_rel: ../toc.json
+word_count: 669
+asset_id: foundry/control-plane/how-to-enforce-limits-models
+moniker_range_name: 
+monikers: []
+item_type: Content
+source_path: articles/foundry/control-plane/how-to-enforce-limits-models.md
+cmProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/b96d6ca2-3a10-4cbe-9688-a712765ad324
+- https://authoring-docs-microsoft.poolparty.biz/devrel/bf4dbf7f-261c-4ae9-9fee-5989668a780a
+- https://authoring-docs-microsoft.poolparty.biz/devrel/68ec7f3a-2bc6-459f-b959-19beb729907d
+spProducts:
+- https://microsoft-devrel.poolparty.biz/DevRelOfferingOntology/74a8ae24-e88d-4772-8c51-76842d0aff90
+- https://authoring-docs-microsoft.poolparty.biz/devrel/1c4b5d48-3f26-4bd8-9592-816d9c1a3420
+- https://authoring-docs-microsoft.poolparty.biz/devrel/90370425-aca4-4a39-9533-d52e5e002a5d
+platformId: e170afc2-b194-f44e-958a-e21f82811d59
+---
+
+# Enforce Token Limits for Models - Microsoft Foundry | Microsoft Learn
+
+Microsoft Foundry Control Plane enforces tokens-per-minute (TPM) rate limits and total token quotas for model deployments at the project scope. This enforcement prevents runaway token consumption and aligns usage with organizational guardrails. Foundry Control Plane integrates with AI Gateway to provide advanced policy enforcement for models.
+
+This article explains how to configure token rate limiting and token quotas.
+
+## Prerequisites
+
+- An Azure account with an active subscription. If you don't have one, create a [free Azure account, which includes a free trial subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
+- A Foundry resource with AI Gateway configured. [Learn more about how to enable AI Gateway for a Foundry resource](https://learn.microsoft.com/en-us/azure/foundry/configuration/enable-ai-api-management-gateway-portal).
+- A Foundry project with a deployed model added to the configured AI Gateway. To enable AI Gateway for a project, you need the **API Management Service Contributor** role (or **Owner**) on the Azure API Management resource.
+
+## Understand AI Gateway
+
+When you use AI Gateway with Foundry Control Plane to provide advanced policy enforcement for models, the gateway sits between clients and model deployments. It makes all requests flow through the API Management instance that's associated with it.
+
+Limits apply at the project level. That is, each project can have its own TPM and quota settings.
+
+![Diagram of the logical flow of client requests passing through Azure API Management as an AI gateway before reaching model deployments within a project.](https://learn.microsoft.com/en-us/azure/foundry/media/enable-ai-api-management-gateway-portal/gateway-architecture-diagram.png)
+
+Use AI Gateway for:
+
+- Multiple-team token containment (prevent one project from monopolizing capacity).
+- Cost control by capping aggregate usage.
+- Compliance boundaries for regulated workloads (enforce predictable usage ceilings).
+
+## Configure token limits
+
+You can configure token limits for specific model deployments within your projects:
+
+1. Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.
+
+    ![](https://learn.microsoft.com/en-us/azure/foundry/media/version-banner/new-foundry.png)
+2. Select **Manage** &gt; **AI Gateway**.
+3. In the **AI Gateway** list, select the gateway that you want to use.
+4. On the gateway details pane that appears, select **Token management**.
+5. Select **+ Set limit** to create a new limit for a model deployment.
+6. Select the project and deployment that you want to restrict, and enter a value for **Limit (Token-per-minute)**.
+7. Select **Create** to save your changes.
+
+![Screenshot of the project settings pane that shows input boxes for tokens per minute and total token quota limits.](https://learn.microsoft.com/en-us/azure/foundry/media/enable-ai-api-management-gateway-portal/set-token-limits.png)
+
+## Understand quota windows
+
+Token limits have two complementary enforcement dimensions:
+
+- **TPM rate limit**: Limits token consumption to a configured maximum per minute. When requests exceed the TPM limit, the caller receives a `429 Too Many Requests` response status code.
+- **Total token quota**: Limits token consumption to a configured maximum per quota period (for example, hourly, daily, weekly, monthly, or yearly). When requests exceed the quota, the caller receives a `403 Forbidden` response status code.
+
+If you send many requests concurrently, token consumption can temporarily exceed the configured limits until responses are processed.
+
+Adjusting a quota or TPM value affects subsequent enforcement decisions.
+
+For more information, see [AI gateway in Azure API Management](https://learn.microsoft.com/en-us/azure/api-management/genai-gateway-capabilities) and [Limit large language model API token usage](https://learn.microsoft.com/en-us/azure/api-management/llm-token-limit-policy).
+
+## Verify enforcement
+
+1. Send test requests to a model deployment endpoint by using the project's gateway URL and key.
+2. Gradually increase request frequency until the TPM limit triggers.
+3. Track cumulative tokens until the quota triggers.
+4. Validate that:
+
+    - `429 Too Many Requests` (rate-limited response) is returned when requests exceed the TPM limit.
+    - `403 Forbidden` (quota error) is returned when requests exhaust the quota.
+
+## Adjust limits
+
+1. Return to the project's **AI Gateway** settings.
+2. Modify TPM or quota values.
+3. Save the changes. New limits apply immediately to subsequent requests.
+
+## Troubleshoot
+
+| Problem | Possible cause | Action |
+| --- | --- | --- |
+| API Management instance doesn't appear | Provisioning delay | Refresh after a few minutes. |
+| Limits aren't enforced | Misconfiguration or project not linked | Reopen settings and confirm that the enforcement toggle is on. Confirm that AI Gateway is enabled for the project and that correct limits are configured. |
+| Latency is high after enablement | API Management cold start or region mismatch | Check API Management region versus resource region. Call the model directly and compare the result with the call proxied through AI Gateway to identify if performance problems are related to the gateway. |
+
+If the **AI Gateway** pane is slow, retry after a brief interval.
