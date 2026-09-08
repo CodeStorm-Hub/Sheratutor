@@ -61,15 +61,15 @@ platformId: 644142d6-c27b-99e2-5ae1-71a094cc15f8
 
 # Deep dive into Foundry Agent Service networking - Microsoft Foundry | Microsoft Learn
 
-When you run Microsoft Foundry Agent Service with a bring-your-own virtual network (VNet), you're responsible for sizing the delegated subnet, planning IP allocation, and understanding how agent traffic flows through the platform. This article explains the network architecture behind hosted and prompt agents, the IP-allocation model, and the signals that indicate capacity issues. It's intended for cloud and network architects who already chose bring-your-own VNet for Foundry Agent Service. To configure the network, see [Set up private networking for Foundry Agent Service](../how-to/virtual-networks).
+When you run Microsoft Foundry Agent Service with a bring-your-own virtual network (VNet), you're responsible for sizing the delegated subnet, planning IP allocation, and understanding how agent traffic flows through the platform. This article explains the network architecture behind hosted and prompt agents, the IP-allocation model, and the signals that indicate capacity issues. It's intended for cloud and network architects who already chose bring-your-own VNet for Foundry Agent Service. To configure the network, see [Set up private networking for Foundry Agent Service](https://learn.microsoft.com/en-us/azure/foundry/how-to/virtual-networks).
 
-If you use a coding agent like GitHub Copilot to plan your VNet, subnet, and capacity model, the [Microsoft Foundry Skill](../../how-to/develop/use-microsoft-foundry-skill) can help you reason through the architecture and apply Foundry networking guidance in your own environment.
+If you use a coding agent like GitHub Copilot to plan your VNet, subnet, and capacity model, the [Microsoft Foundry Skill](https://learn.microsoft.com/en-us/azure/foundry/../how-to/develop/use-microsoft-foundry-skill) can help you reason through the architecture and apply Foundry networking guidance in your own environment.
 
 ## Network architecture overview
 
 The following diagram shows the two zones involved in any Foundry Agent Service request: the Microsoft-managed Foundry platform network on the left, and your customer VNet on the right.
 
-[![Architecture diagram showing the Foundry platform network on the left with the Foundry endpoint, a Micro VM host layer, the Tools Service, and the Data Proxy host layer. On the right, the customer VNet contains a delegated subnet that holds Micro VMs and the Data Proxy on Azure Container Apps, plus a separate private endpoint subnet for storage, SQL Database, and Key Vault. Arrows show Hosted agent traffic flowing through the Micro VM and prompt agent traffic flowing directly through the Tools Service. Both paths converge at the Data Proxy and egress to customer resources through private endpoints.](../media/networking-deep-dive/architecture.png)](../media/networking-deep-dive/architecture.png#lightbox)
+![Architecture diagram showing the Foundry platform network on the left with the Foundry endpoint, a Micro VM host layer, the Tools Service, and the Data Proxy host layer. On the right, the customer VNet contains a delegated subnet that holds Micro VMs and the Data Proxy on Azure Container Apps, plus a separate private endpoint subnet for storage, SQL Database, and Key Vault. Arrows show Hosted agent traffic flowing through the Micro VM and prompt agent traffic flowing directly through the Tools Service. Both paths converge at the Data Proxy and egress to customer resources through private endpoints.](https://learn.microsoft.com/en-us/azure/foundry/media/networking-deep-dive/architecture.png)
 
 The platform network hosts the Foundry endpoint, the Micro VM host layer that runs Hosted agents, the Tools Service, and the Data Proxy host layer. Your customer VNet contains a delegated subnet (where Micro VMs and the Data Proxy consume IPs) and a private endpoint subnet that connects to your storage, databases, and Key Vault.
 
@@ -129,9 +129,9 @@ Use a **/24 CIDR** range as the starting point for production workloads, and cho
 Plan subnet capacity in this order:
 
 1. Estimate peak concurrent hosted agent sessions across all projects in the account for the region. Projects in the account share subnet capacity. All Foundry accounts and projects in the subscription and region share the session quota separately.
-2. Check the region's default concurrent session quota in [Default service limits](limits-quotas-regions#default-service-limits).
+2. Check the region's default concurrent session quota in [Default service limits](https://learn.microsoft.com/en-us/azure/foundry/limits-quotas-regions#default-service-limits).
 3. Size the subnet so usable IPs meet or exceed the target by using the table in Subnet size and concurrent sessions. Keep the planned peak below 80% of usable IPs to absorb upgrade and scaling spikes.
-4. If the target exceeds the regional default, [request a limit increase](limits-quotas-regions#request-a-limit-increase). Specify the subscription, region, and expected concurrency. Increases depend on regional capacity.
+4. If the target exceeds the regional default, [request a limit increase](https://learn.microsoft.com/en-us/azure/foundry/limits-quotas-regions#request-a-limit-increase). Specify the subscription, region, and expected concurrency. Increases depend on regional capacity.
 5. If you need more sessions than the subnet's usable IPs allow and the subnet can't grow, request an increase to the IP-to-session mapping in the same support request.
 
 ### Supported IP ranges
@@ -166,9 +166,9 @@ The table shows common subnet sizes and isn't exhaustive. You can use a larger s
 
 The **Approximate concurrent sessions** column estimates capacity from usable subnet IPs under the default mapping. These values aren't production planning targets. Plan for lower concurrency so project-level networking components and the recommended 20% operational headroom also fit in the subnet. Your per-subscription regional session quota further limits actual concurrency. For example, in a region with a 1,000-session quota, a subnet larger than /22 adds IP headroom but doesn't increase concurrency unless you request a quota increase.
 
-A session represents hosted-agent compute and persisted file state, not conversation history. Session capacity therefore doesn't determine how many conversations your application can maintain. With the Responses protocol, a conversation is associated with a session, while other invocation patterns can reuse a session without platform-managed conversation history. For details, see [Sessions versus conversations](../how-to/manage-hosted-sessions#sessions-versus-conversations).
+A session represents hosted-agent compute and persisted file state, not conversation history. Session capacity therefore doesn't determine how many conversations your application can maintain. With the Responses protocol, a conversation is associated with a session, while other invocation patterns can reuse a session without platform-managed conversation history. For details, see [Sessions versus conversations](https://learn.microsoft.com/en-us/azure/foundry/how-to/manage-hosted-sessions#sessions-versus-conversations).
 
-To support more concurrent sessions within the same subnet, create an Azure support request. In the request, specify the subscription, region, and expected number of concurrent sessions. Based on your requirements and regional capacity, support can increase the mapping to **10 concurrent sessions per usable IP (1:10)**. For the default concurrent session quota available per region, see [Foundry Agent Service quotas](limits-quotas-regions#default-service-limits).
+To support more concurrent sessions within the same subnet, create an Azure support request. In the request, specify the subscription, region, and expected number of concurrent sessions. Based on your requirements and regional capacity, support can increase the mapping to **10 concurrent sessions per usable IP (1:10)**. For the default concurrent session quota available per region, see [Foundry Agent Service quotas](https://learn.microsoft.com/en-us/azure/foundry/limits-quotas-regions#default-service-limits).
 
 ### Project capacity
 
@@ -184,7 +184,7 @@ Platform upgrades run old and new infrastructure in parallel, which temporarily 
 
 ### Outbound connectivity
 
-Hosted agents run in microVMs attached to your delegated subnet and use that for outbound communication. Tool calls always route through the single-tenant data proxy. For source-code agent deployments, the provisioning step also requires outbound access to specific endpoints. See [Firewall requirements for private virtual networks](../how-to/deploy-hosted-agent-code#firewall-requirements-for-private-virtual-networks).
+Hosted agents run in microVMs attached to your delegated subnet and use that for outbound communication. Tool calls always route through the single-tenant data proxy. For source-code agent deployments, the provisioning step also requires outbound access to specific endpoints. See [Firewall requirements for private virtual networks](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-hosted-agent-code#firewall-requirements-for-private-virtual-networks).
 
 ### Performance and scaling
 
@@ -210,7 +210,7 @@ There's no hard limit on the number of prompt agents you can deploy per Foundry 
 
 Overlapping IP ranges cause routing failures, so all peered VNets must use **unique, non-overlapping IP ranges**. This rule applies to bidirectional peering configurations as well. Only RFC 1918 private IPv4 ranges are supported. CGNAT addresses (for example, `100.x.x.x`) aren't.
 
-If you can't avoid IP overlap, use [Managed virtual network](../../how-to/managed-virtual-network) instead of bring-your-own VNet. Managed VNet automates the network setup and eliminates IP overlap concerns.
+If you can't avoid IP overlap, use [Managed virtual network](https://learn.microsoft.com/en-us/azure/foundry/../how-to/managed-virtual-network) instead of bring-your-own VNet. Managed VNet automates the network setup and eliminates IP overlap concerns.
 
 ## Monitor IP usage and detect exhaustion
 

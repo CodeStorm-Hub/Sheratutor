@@ -66,12 +66,12 @@ If you don't have an Azure subscription, create a [free account](https://azure.m
 
 ## Prerequisites
 
-- A model deployed in Microsoft Foundry. If you don't have a model, first complete [Quickstart: Set up Microsoft Foundry resources](../../tutorials/quickstart-create-foundry-resources).
-- The required language runtimes, global tools, and Visual Studio Code extensions as described in [Prepare your development environment](../../how-to/develop/install-cli-sdk).
+- A model deployed in Microsoft Foundry. If you don't have a model, first complete [Quickstart: Set up Microsoft Foundry resources](https://learn.microsoft.com/en-us/azure/foundry/../tutorials/quickstart-create-foundry-resources).
+- The required language runtimes, global tools, and Visual Studio Code extensions as described in [Prepare your development environment](https://learn.microsoft.com/en-us/azure/foundry/../how-to/develop/install-cli-sdk).
 
 ## Set environment variables
 
-Store [your project endpoint](../../tutorials/quickstart-create-foundry-resources#get-your-project-connection-details) as an environment variable. Also set these values for use in your scripts.
+Store [your project endpoint](https://learn.microsoft.com/en-us/azure/foundry/../tutorials/quickstart-create-foundry-resources#get-your-project-connection-details) as an environment variable. Also set these values for use in your scripts.
 
 **Python and JavaScript**
 
@@ -91,7 +91,7 @@ AgentName = "MyAgent"
 
 Make sure you install the correct version of the packages as shown here.
 
-# [Python](#tab/python)
+# **Python**
 1. Install the current version of `azure-ai-projects`. This version uses the **Foundry projects (new) API**. The samples authenticate by using `DefaultAzureCredential`, which comes from `azure-identity`.
 
     ```
@@ -99,7 +99,7 @@ Make sure you install the correct version of the packages as shown here.
     ```
 2. Sign in using the CLI `az login` command to authenticate before running your Python scripts.
 
-# [C#](#tab/csharp)
+# **C#**
 1. Install packages:
 
     Add NuGet packages using the .NET CLI in the integrated terminal: These packages use the **Foundry projects (new) API**.
@@ -112,7 +112,7 @@ Make sure you install the correct version of the packages as shown here.
     ```
 2. Sign in using the CLI `az login` command to authenticate before running your C# scripts.
 
-# [TypeScript](#tab/typescript)
+# **TypeScript**
 1. Install the current version of `@azure/ai-projects`. This version uses the **Foundry projects (new) API**.:
 
     ```bash
@@ -120,7 +120,7 @@ Make sure you install the correct version of the packages as shown here.
     ```
 2. Sign in using the CLI `az login` command to authenticate before running your TypeScript scripts.
 
-# [Java](#tab/java)
+# **Java**
 ```xml
 <dependency>
     <groupId>com.azure</groupId>
@@ -141,7 +141,7 @@ Make sure you install the correct version of the packages as shown here.
 
 1. Sign in using the CLI `az login` command to authenticate before running your Java scripts.
 
-# [REST API](#tab/rest)
+# **REST API**
 1. Sign in using the CLI `az login` command to authenticate before running the next command.
 2. Get a temporary access token. It will expire in 60-90 minutes, you'll need to refresh after that.
 
@@ -150,20 +150,20 @@ Make sure you install the correct version of the packages as shown here.
     ```
 3. Save the results as the environment variable `AZURE_AI_AUTH_TOKEN`.
 
-# [Foundry portal](#tab/portal)
+# **Foundry portal**
 No installation is necessary to use the Foundry portal.
 
 ---
 
 Tip
 
-Code uses **Azure AI Projects 2.x** and is incompatible with Azure AI Projects 1.x. [See the Foundry (classic) documentation](../../../foundry-classic/) for the Azure AI Projects 1.x version.
+Code uses **Azure AI Projects 2.x** and is incompatible with Azure AI Projects 1.x. [See the Foundry (classic) documentation](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/) for the Azure AI Projects 1.x version.
 
 ## Create a prompt agent
 
 Create a prompt agent using your deployed model. The agent uses a `PromptAgentDefinition` with instructions that define the agent's behavior. You can update or delete agents anytime.
 
-# [Python](#tab/python)
+# **Python**
 ```python
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
@@ -190,7 +190,7 @@ agent = project.agents.create_version(
 print(f"Agent created (id: {agent.id}, name: {agent.name}, version: {agent.version})")
 ```
 
-# [C#](#tab/csharp)
+# **C#**
 ```csharp
 using Azure.Identity;
 using Azure.AI.Projects;
@@ -218,7 +218,7 @@ ProjectsAgentVersion agent = projectClient.AgentAdministrationClient.CreateAgent
 Console.WriteLine($"Agent created (id: {agent.Id}, name: {agent.Name}, version: {agent.Version})");
 ```
 
-# [TypeScript](#tab/typescript)
+# **TypeScript**
 ```typescript
 import { DefaultAzureCredential } from "@azure/identity";
 import { AIProjectClient } from "@azure/ai-projects";
@@ -243,7 +243,7 @@ async function main(): Promise<void> {
 main().catch(console.error);
 ```
 
-# [Java](#tab/java)
+# **Java**
 ```java
 package com.azure.ai.agents;
 
@@ -275,7 +275,7 @@ public class CreateAgent {
 }
 ```
 
-# [REST API](#tab/rest)
+# **REST API**
 Replace `YOUR-FOUNDRY-RESOURCE-NAME` with your values:
 
 ```console
@@ -300,7 +300,7 @@ The output confirms the agent was created. You see the agent name and ID printed
 
 Use the agent you created to interact by asking a question and a related follow-up. The conversation maintains history across these interactions.
 
-# [Python](#tab/python)
+# **Python**
 ```python
 from azure.identity import DefaultAzureCredential
 from azure.ai.projects import AIProjectClient
@@ -335,7 +335,7 @@ response = openai.responses.create(
 print(response.output_text)
 ```
 
-# [C#](#tab/csharp)
+# **C#**
 ```csharp
 using Azure.Identity;
 using Azure.AI.Projects;
@@ -368,7 +368,7 @@ response = responsesClient.CreateResponse("And what is the capital city?");
 Console.WriteLine(response.GetOutputText());
 ```
 
-# [TypeScript](#tab/typescript)
+# **TypeScript**
 ```typescript
 import { DefaultAzureCredential } from "@azure/identity";
 import { AIProjectClient } from "@azure/ai-projects";
@@ -405,7 +405,7 @@ async function main(): Promise<void> {
 main().catch(console.error);
 ```
 
-# [Java](#tab/java)
+# **Java**
 ```java
 package com.azure.ai.agents;
 
@@ -456,7 +456,7 @@ public class ChatWithAgent {
 }
 ```
 
-# [REST API](#tab/rest)
+# **REST API**
 Replace `YOUR-FOUNDRY-RESOURCE-NAME` with your values:
 
 ```console

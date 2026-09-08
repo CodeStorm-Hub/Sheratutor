@@ -19,7 +19,7 @@ The corpus comprises all official **Class 9–10 (SSC) textbooks for the 2026 Ac
 * **Unique PDF Files Downloaded:** **57 files** (~3.23 GiB / 3,467,707,358 bytes total).
   * **24 Subjects (48 files):** Distinct Bangla Version (BV) and English Version (EV) editions.
   * **9 Subjects (9 files):** Shared common curriculum editions serving both mediums identically (Bengali literature/grammar, English language/composition, and classical languages).
-* **Integrity Status:** 100% verified against [`CHECKSUMS.sha256`](file:///home/kratzer/workspace/Sheratutor/ingestion/textbooks/CHECKSUMS.sha256) with zero byte corruption or truncated headers.
+* **Integrity Status:** 100% verified against [`CHECKSUMS.sha256`](https://github.com/CodeStorm-Hub/Sheratutor/blob/docs/ingestion/textbooks/CHECKSUMS.sha256) with zero byte corruption or truncated headers.
 
 ---
 

@@ -53,7 +53,7 @@ platformId: 2a99ac5b-400b-31ef-f495-f3375d29e605
 
 Observability helps you understand how model router handles requests, verify routing behavior, and investigate latency, errors, and fallback. Request-level signals complement aggregate metrics and logs, giving developers and operators context to evaluate application performance.
 
-This article covers the per-request routing metadata preview for the Chat Completions API. The metadata identifies the serving model and describes routing attempts for an individual request. For aggregate metrics and logs, see [Monitor model deployments](../../foundry-models/how-to/monitor-models).
+This article covers the per-request routing metadata preview for the Chat Completions API. The metadata identifies the serving model and describes routing attempts for an individual request. For aggregate metrics and logs, see [Monitor model deployments](https://learn.microsoft.com/en-us/azure/foundry/../foundry-models/how-to/monitor-models).
 
 ## Prerequisites
 

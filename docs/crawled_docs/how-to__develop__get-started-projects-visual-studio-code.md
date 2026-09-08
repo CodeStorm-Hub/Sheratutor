@@ -74,7 +74,7 @@ Foundry Toolkit supports different roles and levels of AI development experience
 
 Foundry Toolkit separates resources that you have from actions that you can take. The extension has three main sections.
 
-[![Screenshot of Foundry Toolkit in Visual Studio Code with My Resources, Developer Tools, and Help and Feedback sections.](../../media/how-to/get-started-projects-vs-code/foundry-toolkit-overview.png)](../../media/how-to/get-started-projects-vs-code/foundry-toolkit-overview.png#lightbox)
+![Screenshot of Foundry Toolkit in Visual Studio Code with My Resources, Developer Tools, and Help and Feedback sections.](https://learn.microsoft.com/en-us/azure/foundry/../media/how-to/get-started-projects-vs-code/foundry-toolkit-overview.png)
 
 | Section | Purpose |
 | --- | --- |
@@ -119,4 +119,4 @@ Sign in to Azure and set a Foundry project to manage cloud resources from Visual
 - Browse tools and knowledge sources used by your agents.
 - Open evaluations, conversations, logs, and traces during development.
 
-For broader resource administration, use the [Foundry portal](https://ai.azure.com/). To automate a workflow in application code, use the [Microsoft Foundry SDKs](sdk-overview).
+For broader resource administration, use the [Foundry portal](https://ai.azure.com/). To automate a workflow in application code, use the [Microsoft Foundry SDKs](https://learn.microsoft.com/en-us/azure/foundry/sdk-overview).

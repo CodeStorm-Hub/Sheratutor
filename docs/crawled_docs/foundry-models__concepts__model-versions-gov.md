@@ -78,7 +78,7 @@ There are two different versions to consider when working with models:
 
 Note
 
-The following upgrade guidance only applies to Standard deployment types. For guidance on updating or migrating provisioned deployment types, review the [model management documentation](../../openai/how-to/working-with-models).
+The following upgrade guidance only applies to Standard deployment types. For guidance on updating or migrating provisioned deployment types, review the [model management documentation](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/working-with-models).
 
 You configure update policies when you deploy a model in the [Foundry portal](https://ai.azure.us). You can also change the policy later in the deployment settings. Update policies are configured per deployment and *vary* by model and provider.
 
@@ -109,8 +109,8 @@ Azure works closely with OpenAI to release new model versions. When a new versio
 
 As a customer of Azure OpenAI models, you might notice some changes in the model behavior and compatibility after a version upgrade. These changes might affect your applications and workflows that rely on the models. Here are some tips to help you prepare for version upgrades and minimize the impact:
 
-- Read [what's new](../../../foundry-classic/openai/whats-new) and [models](models-sold-directly-by-azure) to understand the changes and new features.
-- Read the documentation on [Deploy Foundry Models](../how-to/deploy-foundry-models) and [version upgrades](../../openai/how-to/working-with-models) to understand how to work with model versions.
+- Read [what's new](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/whats-new) and [models](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure) to understand the changes and new features.
+- Read the documentation on [Deploy Foundry Models](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-foundry-models) and [version upgrades](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/working-with-models) to understand how to work with model versions.
 - Test your applications and workflows with the new model version after release.
 - Update your code and configuration to use the new features and capabilities of the new model version.
 
@@ -126,4 +126,4 @@ When a model version reaches its retirement date, what happens next depends on t
 - **Upgrade once new default version becomes available**: The deployment automatically updates to the current default version. No action is required.
 - **Once the current version expires**: The deployment automatically updates to the next available version when the current version expires.
 
-Azure notifies you of upcoming retirements through email to subscription owners and contributors, Azure Service Health alerts, and the upcoming retirement tables in [Foundry Models lifecycle and support policy in Azure Government](../../openai/concepts/model-retirements-gov).
+Azure notifies you of upcoming retirements through email to subscription owners and contributors, Azure Service Health alerts, and the upcoming retirement tables in [Foundry Models lifecycle and support policy in Azure Government](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirements-gov).

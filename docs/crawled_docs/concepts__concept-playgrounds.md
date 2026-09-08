@@ -74,8 +74,8 @@ Microsoft Foundry playgrounds provide an on-demand, instant chat environment for
 ## Prerequisites
 
 - An Azure subscription. [Create one for free](https://azure.microsoft.com/free).
-- A [Microsoft Foundry resource](../../foundry-classic/how-to/create-azure-ai-resource).
-- At least one [deployed model](../../foundry-classic/how-to/deploy-models-managed) in your Foundry resource.
+- A [Microsoft Foundry resource](https://learn.microsoft.com/en-us/azure/foundry/../foundry-classic/how-to/create-azure-ai-resource).
+- At least one [deployed model](https://learn.microsoft.com/en-us/azure/foundry/../foundry-classic/how-to/deploy-models-managed) in your Foundry resource.
 
 ## Highlights of the Foundry playgrounds experience
 
@@ -143,13 +143,13 @@ In the agents playground, you can:
 - View tracing and evaluation data for agent responses through AgentOps.
 - Save and iterate on agent configurations before deploying.
 
-To get started with the agents playground, see [Understanding the agent development lifecycle](../agents/concepts/development-lifecycle).
+To get started with the agents playground, see [Understanding the agent development lifecycle](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/development-lifecycle).
 
 Important
 
 Evaluations in the agents playground are enabled by default for all Foundry projects and are included in consumption-based billing. To turn off playground evaluations, select metrics in the upper right of the agents playground and unselect all evaluators.
 
-[![Screenshot of the Foundry portal showing agents playground with the metrics selected.](../media/observability/agent-playground-evaluation-metrics.png)](../media/observability/agent-playground-evaluation-metrics.png#lightbox)
+![Screenshot of the Foundry portal showing agents playground with the metrics selected.](https://learn.microsoft.com/en-us/azure/foundry/media/observability/agent-playground-evaluation-metrics.png)
 
 ## Model playground
 
@@ -344,8 +344,8 @@ By using the images playground, you can explore and validate the following aspec
 
 | Issue | Resolution |
 | --- | --- |
-| Content safety warning on generation | Refine your prompt to avoid flagged content. Review [Azure AI Content Safety](/en-us/azure/ai-services/content-safety/overview) policies. |
-| Model not available in deployment list | Check [model regional availability](../reference/region-support) for your Foundry resource region. |
+| Content safety warning on generation | Refine your prompt to avoid flagged content. Review [Azure AI Content Safety](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) policies. |
+| Model not available in deployment list | Check [model regional availability](https://learn.microsoft.com/en-us/azure/foundry/reference/region-support) for your Foundry resource region. |
 | Quota exceeded error | Review your subscription quota and request increases through the Azure portal. |
 | Compare mode doesn't show **Tools** section | Close comparison models first. Tools are only available in single-model playground view. |
 | Video generation retained for limited time | Videos are retained for 24 hours. Download videos to your local computer for longer retention. |

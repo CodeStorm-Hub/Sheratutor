@@ -62,7 +62,7 @@ Note
 
 Some Foundry IQ features are now generally available, while others remain in preview. Availability depends on the Search Service REST API version you use. The Microsoft Foundry portal and Azure portal continue to provide preview-only access to all agentic retrieval features.
 
-For migration guidance, including a breakdown of what's generally available and what remains in preview, see [Migrate agentic retrieval code to the latest version](/en-us/azure/search/agentic-retrieval-how-to-migrate).
+For migration guidance, including a breakdown of what's generally available and what remains in preview, see [Migrate agentic retrieval code to the latest version](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-migrate).
 
 Agents need context from scattered enterprise content to accurately answer questions. The Foundry model powering an agent has a knowledge cutoff and can't access your proprietary data on its own. With Foundry IQ, you can create a configurable, multi-source *knowledge base* that provides agents with permission-aware responses based on your organization's data.
 
@@ -85,9 +85,9 @@ A Foundry IQ knowledge base contains knowledge sources and uses agentic retrieva
 
 | Component | Description |
 | --- | --- |
-| [Knowledge base](/en-us/azure/search/agentic-retrieval-how-to-create-knowledge-base) | Top-level resource that orchestrates agentic retrieval. Defines which knowledge sources to query and parameters that control retrieval behavior, including the retrieval reasoning effort (minimal, low, or medium) for LLM processing. |
-| [Knowledge sources](/en-us/azure/search/agentic-knowledge-source-overview) | Connections to indexed or remote content. A knowledge base references one or more knowledge sources. |
-| [Agentic retrieval](/en-us/azure/search/agentic-retrieval-overview) | Multi-query pipeline that decomposes complex questions into subqueries, executes them in parallel, semantically reranks results, and returns unified responses. Uses an optional LLM from Azure OpenAI in Foundry Models for query planning. |
+| [Knowledge base](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-knowledge-base) | Top-level resource that orchestrates agentic retrieval. Defines which knowledge sources to query and parameters that control retrieval behavior, including the retrieval reasoning effort (minimal, low, or medium) for LLM processing. |
+| [Knowledge sources](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-overview) | Connections to indexed or remote content. A knowledge base references one or more knowledge sources. |
+| [Agentic retrieval](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-overview) | Multi-query pipeline that decomposes complex questions into subqueries, executes them in parallel, semantically reranks results, and returns unified responses. Uses an optional LLM from Azure OpenAI in Foundry Models for query planning. |
 
 You can use Foundry IQ knowledge bases in Foundry Agent Service, Microsoft Agent Framework, or any custom application by calling the knowledge base REST API or supported Azure SDK client libraries from Azure AI Search.
 
@@ -95,10 +95,10 @@ You can use Foundry IQ knowledge bases in Foundry Agent Service, Microsoft Agent
 
 You can set up Foundry IQ through a portal or programmatically. The following steps outline the typical workflow for both approaches.
 
-# [Portal](#tab/portal)
+# **Portal**
 1. Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.
 
-    ![](../../media/version-banner/new-foundry.png)
+    ![](https://learn.microsoft.com/en-us/azure/foundry/../media/version-banner/new-foundry.png)
 2. Create a project or select an existing project.
 3. From the top menu, select **Build**.
 4. On the **Knowledge** tab:
@@ -115,17 +115,17 @@ You can set up Foundry IQ through a portal or programmatically. The following st
 Note
 
 - The playground provides a simplified workflow for proof-of-concept testing. When you move to code, configure managed identities and permissions to meet your organization's security requirements.
-- You can use the [Azure portal](/en-us/azure/search/get-started-portal-agentic-retrieval) to create knowledge bases and knowledge sources, but agent configuration and integration must be done in the Microsoft Foundry portal or programmatically.
+- You can use the [Azure portal](https://learn.microsoft.com/en-us/azure/search/get-started-portal-agentic-retrieval) to create knowledge bases and knowledge sources, but agent configuration and integration must be done in the Microsoft Foundry portal or programmatically.
 
-# [Programmatic](#tab/programmatic)
-1. [Create knowledge sources](/en-us/azure/search/agentic-knowledge-source-overview).
-2. [Create a knowledge base](/en-us/azure/search/agentic-retrieval-how-to-create-knowledge-base) that references your knowledge sources.
-3. [Connect an agent](/en-us/azure/foundry/agents/how-to/foundry-iq-connect) to your knowledge base.
+# **Programmatic**
+1. [Create knowledge sources](https://learn.microsoft.com/en-us/azure/search/agentic-knowledge-source-overview).
+2. [Create a knowledge base](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-knowledge-base) that references your knowledge sources.
+3. [Connect an agent](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/foundry-iq-connect) to your knowledge base.
 4. Send messages and refine your agent.
 
 Note
 
-For centralized guidance on these steps, see [Tutorial: Build an end-to-end agentic retrieval solution](/en-us/azure/search/agentic-retrieval-how-to-create-pipeline).
+For centralized guidance on these steps, see [Tutorial: Build an end-to-end agentic retrieval solution](https://learn.microsoft.com/en-us/azure/search/agentic-retrieval-how-to-create-pipeline).
 
 ---
 
@@ -133,8 +133,8 @@ For centralized guidance on these steps, see [Tutorial: Build an end-to-end agen
 
 Microsoft provides three IQ workloads that give agents access to different aspects of your organization:
 
-- [Fabric IQ](/en-us/fabric/iq/overview) is a semantic intelligence layer for Microsoft Fabric. It models business data (ontologies, semantic models, graphs, and data agents) so agents can reason over analytics in OneLake and Power BI.
-- [Work IQ](/en-us/microsoft-365-copilot/extensibility/workiq-overview) is a contextual intelligence layer for Microsoft 365. It captures collaboration signals from documents, meetings, chats, and workflows, providing agents with insight into how your organization operates.
+- [Fabric IQ](https://learn.microsoft.com/en-us/fabric/iq/overview) is a semantic intelligence layer for Microsoft Fabric. It models business data (ontologies, semantic models, graphs, and data agents) so agents can reason over analytics in OneLake and Power BI.
+- [Work IQ](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/workiq-overview) is a contextual intelligence layer for Microsoft 365. It captures collaboration signals from documents, meetings, chats, and workflows, providing agents with insight into how your organization operates.
 - Foundry IQ is a managed knowledge layer for enterprise data. It connects structured and unstructured data across Azure, SharePoint, OneLake, and the web so agents can access permission-aware knowledge.
 
 Each IQ workload is standalone, but you can use them together to provide comprehensive organizational context for agents.
@@ -143,11 +143,11 @@ Each IQ workload is standalone, but you can use them together to provide compreh
 
 - [Watch this session](https://www.youtube.com/watch?v=slDdNIQCJBQ) for an introduction to Foundry IQ, and then [watch this video](https://www.youtube.com/watch?v=uDVkcZwB0EU) for a deep dive.
 - For minimum costs and proof-of-concept testing, start with the Microsoft Foundry portal. You can use the free tier for Azure AI Search and a free allocation of tokens for agentic retrieval. [Watch this video](https://www.youtube.com/watch?v=bHL1jbWjJUc) for a quick demonstration of the portal.
-- For step-by-step integration guidance, learn how to [connect a Foundry IQ knowledge base to Foundry Agent Service](../how-to/foundry-iq-connect).
-- Review application code in the [Azure OpenAI demo](/en-us/samples/azure-samples/azure-search-openai-demo/azure-search-openai-demo/), which uses agentic retrieval.
+- For step-by-step integration guidance, learn how to [connect a Foundry IQ knowledge base to Foundry Agent Service](https://learn.microsoft.com/en-us/azure/foundry/how-to/foundry-iq-connect).
+- Review application code in the [Azure OpenAI demo](https://learn.microsoft.com/en-us/samples/azure-samples/azure-search-openai-demo/azure-search-openai-demo/), which uses agentic retrieval.
 
 ## Connect your Foundry IQ knowledge base to a Microsoft Copilot Studio agent
 
 After you connect your Foundry IQ knowledge base to an Agent Service agent, you can also add that agent to Microsoft Copilot Studio. This integration makes your enterprise knowledge available to Copilot Studio agents with grounded retrieval, source attribution, and centralized knowledge management.
 
-For configuration instructions, see [Connect to a Microsoft Foundry agent (preview)](/en-us/microsoft-copilot-studio/add-agent-foundry-agent).
+For configuration instructions, see [Connect to a Microsoft Foundry agent (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/add-agent-foundry-agent).

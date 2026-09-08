@@ -63,7 +63,7 @@ platformId: 8a28009e-306b-e94f-61b5-1194104e7ad3
 
 # How to use model router for Microsoft Foundry - Microsoft Foundry | Microsoft Learn
 
-Model router is a trained language model that selects the best large language model (LLM) to respond to a prompt in real time. It uses different preexisting models to deliver high performance and save on compute costs, all in one model deployment. To learn more about how model router works, its advantages, and limitations, see the [Model router concepts guide](../concepts/model-router). To understand the architecture and routing logic, see [How model router works](../concepts/model-router-how-it-works).
+Model router is a trained language model that selects the best large language model (LLM) to respond to a prompt in real time. It uses different preexisting models to deliver high performance and save on compute costs, all in one model deployment. To learn more about how model router works, its advantages, and limitations, see the [Model router concepts guide](https://learn.microsoft.com/en-us/azure/foundry/concepts/model-router). To understand the architecture and routing logic, see [How model router works](https://learn.microsoft.com/en-us/azure/foundry/concepts/model-router-how-it-works).
 
 ## Supported models
 
@@ -105,17 +105,17 @@ You don't need to separately deploy the supported large language models for use 
 
 ## Deploy a model router model
 
-Model router is packaged as a single Foundry model that you deploy. Start by following the steps in the [resource deployment guide](/en-us/azure/ai-foundry/openai/how-to/create-resource).
+Model router is packaged as a single Foundry model that you deploy. Start by following the steps in the [resource deployment guide](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/create-resource).
 
 To deploy programmatically without the portal, use the REST API examples in the deployment sections that follow.
 
 Note
 
-If your organization uses the [built-in Azure Policy for model deployment](/en-us/azure/ai-foundry/how-to/model-deployment-policy), make sure the policy's allowed publishers include `Microsoft` (the publisher of model router) and the publisher of each model you deploy for routing (for example, `Anthropic` for Claude models). Otherwise, the policy blocks the deployment.
+If your organization uses the [built-in Azure Policy for model deployment](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/model-deployment-policy), make sure the policy's allowed publishers include `Microsoft` (the publisher of model router) and the publisher of each model you deploy for routing (for example, `Anthropic` for Claude models). Otherwise, the policy blocks the deployment.
 
 By default, model router deploys with the **Balanced** routing mode and routes across the full supported model set. You only need to change the routing mode or select a model subset when you want custom routing behavior.
 
-![Screenshot of model router deploy screen.](media/working-with-models/model-router-deploy.png)
+![Screenshot of model router deploy screen.](https://learn.microsoft.com/en-us/azure/foundry/media/working-with-models/model-router-deploy.png)
 
 ### Default deployment
 
@@ -161,11 +161,11 @@ Your deployment settings apply to all underlying chat models that model router u
 
 Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.
 
-![](../../media/version-banner/new-foundry.png)
+![](https://learn.microsoft.com/en-us/azure/foundry/../media/version-banner/new-foundry.png)
 
 Use the **Routing mode** dropdown to select a routing profile. This sets the routing logic for your deployment.
 
-![Screenshot of model router routing mode selection.](media/working-with-models/model-router-routing-mode.png)
+![Screenshot of model router routing mode selection.](https://learn.microsoft.com/en-us/azure/foundry/media/working-with-models/model-router-routing-mode.png)
 
 **When to use each mode:**
 
@@ -181,19 +181,19 @@ Changes to the routing mode can take up to five minutes to take effect.
 
 Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.
 
-![](../../media/version-banner/new-foundry.png)
+![](https://learn.microsoft.com/en-us/azure/foundry/../media/version-banner/new-foundry.png)
 
 The latest version of model router supports custom subsets: you can specify which underlying models to include in routing decisions. This gives you more control over cost, compliance, and performance characteristics.
 
 In the model router deployment pane, select **Route to a subset of models**. Then select the underlying models you want to enable. You must select at least one model for routing. If no models are selected, the deployment uses the default model set for your routing mode.
 
-![Screenshot of model router subset selection.](media/working-with-models/model-router-model-subset.png)
+![Screenshot of model router subset selection.](https://learn.microsoft.com/en-us/azure/foundry/media/working-with-models/model-router-model-subset.png)
 
 New models introduced later are excluded by default until explicitly added.
 
 Important
 
-To include models by Anthropic (Claude) in your model router deployment, you need to deploy them yourself to your Foundry resource. See [Deploy and use Claude models](../../foundry-models/how-to/use-foundry-models-claude).
+To include models by Anthropic (Claude) in your model router deployment, you need to deploy them yourself to your Foundry resource. See [Deploy and use Claude models](https://learn.microsoft.com/en-us/azure/foundry/../foundry-models/how-to/use-foundry-models-claude).
 
 Note
 
@@ -231,7 +231,7 @@ curl -X PUT "https://management.azure.com/subscriptions/00000000-0000-0000-0000-
 
 Important
 
-If you include Anthropic Claude models in the `routing.models` array, you must first deploy them to the same Foundry account with a matching SKU. Otherwise the request fails with an `InvalidResourceProperties` error. Deploy Claude models from the Foundry model catalog before you reference them in a model router deployment. See [Deploy and use Claude models](../../foundry-models/how-to/use-foundry-models-claude).
+If you include Anthropic Claude models in the `routing.models` array, you must first deploy them to the same Foundry account with a matching SKU. Otherwise the request fails with an `InvalidResourceProperties` error. Deploy Claude models from the Foundry model catalog before you reference them in a model router deployment. See [Deploy and use Claude models](https://learn.microsoft.com/en-us/azure/foundry/../foundry-models/how-to/use-foundry-models-claude).
 
 ## Test model router with Foundry Responses and Chat Completions
 
@@ -246,7 +246,7 @@ Install the required packages before you run the samples:
 - **Chat Completions (Python)**: `pip install openai>=1.75.0`
 - **Chat Completions (JavaScript/TypeScript)**: `npm install openai @azure/identity`
 
-# [Foundry Responses](#tab/foundry-responses)
+# **Foundry Responses**
 **Python**
 
 ```python
@@ -285,7 +285,7 @@ console.log(`Responded model: ${response.model}`);
 console.log(response.output_text);
 ```
 
-# [Chat Completions](#tab/chat-completions)
+# **Chat Completions**
 **Python**
 
 ```python
@@ -357,8 +357,8 @@ For the full runnable samples, see [Model Router samples](https://github.com/mic
 
 - Reference: [OpenAI Responses API](https://platform.openai.com/docs/api-reference/responses) (`responses.create`, both languages)
 - Reference: [OpenAI Chat Completions API](https://platform.openai.com/docs/api-reference/chat) (`chat.completions.create`, both languages)
-- Reference: [`AIProjectClient`](/en-us/python/api/azure-ai-projects/azure.ai.projects.aiprojectclient) (Python)
-- Reference: [`AIProjectClient`](/en-us/javascript/api/@azure/ai-projects/aiprojectclient) (JavaScript/TypeScript)
+- Reference: [`AIProjectClient`](https://learn.microsoft.com/en-us/python/api/azure-ai-projects/azure.ai.projects.aiprojectclient) (Python)
+- Reference: [`AIProjectClient`](https://learn.microsoft.com/en-us/javascript/api/@azure/ai-projects/aiprojectclient) (JavaScript/TypeScript)
 - Reference: [`AzureOpenAI` (OpenAI Python SDK)](https://pypi.org/project/openai/)
 - Reference: [`AzureOpenAI` (OpenAI JavaScript/TypeScript SDK)](https://www.npmjs.com/package/openai)
 
@@ -368,31 +368,31 @@ In the [Foundry portal](https://ai.azure.com/?cid=learnDocs), go to your model r
 
 Important
 
-You can set the `Temperature` and `Top_P` parameters to the values you prefer (see the [concepts guide](/en-us/azure/ai-foundry/openai/concepts/prompt-engineering?tabs=chat#temperature-and-top_p-parameters)), but note that reasoning models (o-series) don't support these parameters. If model router selects a reasoning model for your prompt, it ignores the `Temperature` and `Top_P` input parameters.
+You can set the `Temperature` and `Top_P` parameters to the values you prefer (see the [concepts guide](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/prompt-engineering?tabs=chat#temperature-and-top_p-parameters)), but note that reasoning models (o-series) don't support these parameters. If model router selects a reasoning model for your prompt, it ignores the `Temperature` and `Top_P` input parameters.
 
 The parameters `stop`, `presence_penalty`, `frequency_penalty`, `logit_bias`, and `logprobs` are similarly dropped for o-series models but used otherwise.
 
 Important
 
-Starting with the `2025-11-18` (latest) version, the `reasoning_effort` parameter (see the [Reasoning models guide](/en-us/azure/ai-foundry/openai/how-to/reasoning?tabs=python-secure#reasoning-effort)) is now **supported** in model router. If the model router selects a reasoning model for your prompt, it uses your `reasoning_effort` input value with the underlying model.
+Starting with the `2025-11-18` (latest) version, the `reasoning_effort` parameter (see the [Reasoning models guide](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/reasoning?tabs=python-secure#reasoning-effort)) is now **supported** in model router. If the model router selects a reasoning model for your prompt, it uses your `reasoning_effort` input value with the underlying model.
 
 ## Connect model router to a Foundry agent
 
 Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.
 
-![](../../media/version-banner/new-foundry.png)
+![](https://learn.microsoft.com/en-us/azure/foundry/../media/version-banner/new-foundry.png)
 
 If you've created an AI agent in Foundry, you can connect your model router deployment to be used as the agent's base model. Select it from the **model** dropdown menu in the agent playground. Your agent will have all the tools and instructions you've configured for it, but the underlying model that processes its responses will be selected by model router.
 
-For detailed guidance on routing patterns, supported tool types, cost implications, and code examples for agents, see [Use model router with Foundry agents](model-router-agents).
+For detailed guidance on routing patterns, supported tool types, cost implications, and code examples for agents, see [Use model router with Foundry agents](https://learn.microsoft.com/en-us/azure/foundry/model-router-agents).
 
 Note
 
-For agentic requests, model router can select eligible OpenAI, open-source (OSS), and Anthropic models from your routing pool. Model and tool compatibility determine which models are eligible for each request. For current compatibility, see [Tool support by region and model](../../agents/concepts/limits-quotas-regions#tool-support-by-region-and-model).
+For agentic requests, model router can select eligible OpenAI, open-source (OSS), and Anthropic models from your routing pool. Model and tool compatibility determine which models are eligible for each request. For current compatibility, see [Tool support by region and model](https://learn.microsoft.com/en-us/azure/foundry/../agents/concepts/limits-quotas-regions#tool-support-by-region-and-model).
 
 ### Output format
 
-The standard Chat Completions response includes a `"model"` field that identifies the underlying model that served the request. You can also opt in to preview per-request metadata for routing attempts, status, and reported latency. For details, see [Monitor model router](monitor-model-router).
+The standard Chat Completions response includes a `"model"` field that identifies the underlying model that served the request. You can also opt in to preview per-request metadata for routing attempts, status, and reported latency. For details, see [Monitor model router](https://learn.microsoft.com/en-us/azure/foundry/monitor-model-router).
 
 The following example response was generated by using model router model version `2025-11-18`:
 
@@ -494,15 +494,15 @@ The following example response was generated by using model router model version
 
 ## Govern model router deployments with Azure Policy
 
-If your organization restricts which models developers can deploy, model router honors the same built-in Foundry model deployment policy that governs standard model deployments. Policy is enforced at deploy time across the Foundry portal, REST API, Azure CLI, and ARM templates. For the IT admin assignment steps and the developer experience, see [Govern model router deployments with Azure Policy](../../how-to/model-router-policy).
+If your organization restricts which models developers can deploy, model router honors the same built-in Foundry model deployment policy that governs standard model deployments. Policy is enforced at deploy time across the Foundry portal, REST API, Azure CLI, and ARM templates. For the IT admin assignment steps and the developer experience, see [Govern model router deployments with Azure Policy](https://learn.microsoft.com/en-us/azure/foundry/../how-to/model-router-policy).
 
 ## Evaluate model router for your workload
 
-Treat your initial deployment as a starting configuration. Before you send production traffic to model router, benchmark it against your current model for response quality, estimated cost, and latency. Use the results to decide whether to retain the configuration, change one routing lever, or keep a direct model deployment for part of the workload. For guidance, see [Evaluate model router for your workload](evaluate-model-router).
+Treat your initial deployment as a starting configuration. Before you send production traffic to model router, benchmark it against your current model for response quality, estimated cost, and latency. Use the results to decide whether to retain the configuration, change one routing lever, or keep a direct model deployment for part of the workload. For guidance, see [Evaluate model router for your workload](https://learn.microsoft.com/en-us/azure/foundry/evaluate-model-router).
 
 ## Monitor model router metrics
 
-To inspect the serving model, routing attempts, status, and reported latency for an individual Chat Completions request, see [Monitor model router](monitor-model-router).
+To inspect the serving model, routing attempts, status, and reported latency for an individual Chat Completions request, see [Monitor model router](https://learn.microsoft.com/en-us/azure/foundry/monitor-model-router).
 
 ### Monitor performance
 
@@ -533,7 +533,7 @@ You can monitor the costs of model router, which is the sum of the costs incurre
 
 ### Error codes
 
-For API error codes and troubleshooting, see the [Azure OpenAI REST API reference](../../../foundry-classic/openai/reference).
+For API error codes and troubleshooting, see the [Azure OpenAI REST API reference](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/reference).
 
 ## Resources
 

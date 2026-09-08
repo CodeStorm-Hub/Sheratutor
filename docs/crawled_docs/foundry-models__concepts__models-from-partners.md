@@ -73,9 +73,9 @@ Important
 
 Models from partners and community that are not sold by Azure are Non-Microsoft Products under the Product Terms.
 
-For a list of Foundry Models sold by Azure, see [Foundry Models sold by Azure](models-sold-directly-by-azure), and for a list of Foundry Models that are supported by the Foundry Agent Service, see [Models supported by Agent Service](../../agents/concepts/limits-quotas-regions).
+For a list of Foundry Models sold by Azure, see [Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure), and for a list of Foundry Models that are supported by the Foundry Agent Service, see [Models supported by Agent Service](https://learn.microsoft.com/en-us/azure/foundry/../agents/concepts/limits-quotas-regions).
 
-Foundry Models support several [deployment types](deployment-types) to a Foundry resource. Some models in the model catalog require a hub-based project hosted by a Foundry hub for deployment. Selecting those models in the catalog opens them up in the [Foundry (classic) portal experience](../../../foundry-classic/what-is-foundry).
+Foundry Models support several [deployment types](https://learn.microsoft.com/en-us/azure/foundry/deployment-types) to a Foundry resource. Some models in the model catalog require a hub-based project hosted by a Foundry hub for deployment. Selecting those models in the catalog opens them up in the [Foundry (classic) portal experience](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/what-is-foundry).
 
 ## Prerequisites
 
@@ -83,12 +83,12 @@ Foundry Models support several [deployment types](deployment-types) to a Foundry
 
     Important
 
-    The following Azure subscriptions can't be used to purchase software as a service (SaaS) offers in Marketplace: Student, Visual Studio Enterprise, or Free credit. For more information on purchasing SaaS offers, see [The SaaS purchase experience](/en-us/marketplace/purchase-saas-offer-in-azure-portal#the-saas-purchase-experience).
-- A [Microsoft Foundry project](../../how-to/create-projects).
+    The following Azure subscriptions can't be used to purchase software as a service (SaaS) offers in Marketplace: Student, Visual Studio Enterprise, or Free credit. For more information on purchasing SaaS offers, see [The SaaS purchase experience](https://learn.microsoft.com/en-us/marketplace/purchase-saas-offer-in-azure-portal#the-saas-purchase-experience).
+- A [Microsoft Foundry project](https://learn.microsoft.com/en-us/azure/foundry/../how-to/create-projects).
 
 ## Permissions required to subscribe to Models from partners and community
 
-[Foundry Models from partners and community](models-from-partners) available for deployment (for example, Cohere models) require Azure Marketplace. Model providers define the license terms and set the price for use of their models using Azure Marketplace.
+[Foundry Models from partners and community](https://learn.microsoft.com/en-us/azure/foundry/models-from-partners) available for deployment (for example, Cohere models) require Azure Marketplace. Model providers define the license terms and set the price for use of their models using Azure Marketplace.
 
 When deploying third-party models, ensure you have the following permissions in your account:
 
@@ -102,7 +102,7 @@ When deploying third-party models, ensure you have the following permissions in 
     - `Microsoft.SaaS/resources/read`
     - `Microsoft.SaaS/resources/write`
 
-The **Owner** and **Contributor** built-in roles on the Azure subscription include these permissions. If you don't have the required permissions, ask your subscription administrator to assign you the **Contributor** role, or [create a custom role](/en-us/azure/role-based-access-control/custom-roles) that includes the listed actions.
+The **Owner** and **Contributor** built-in roles on the Azure subscription include these permissions. If you don't have the required permissions, ask your subscription administrator to assign you the **Contributor** role, or [create a custom role](https://learn.microsoft.com/en-us/azure/role-based-access-control/custom-roles) that includes the listed actions.
 
 To verify your permissions, go to the [Azure portal](https://portal.azure.com), open your subscription, select **Access control (IAM)** &gt; **Check access**, and review your assigned roles.
 
@@ -120,35 +120,35 @@ Anthropic's flagship product is Claude, a frontier AI model trusted by leading e
 
 Note
 
-Microsoft Foundry offers Claude models in two versions: **Hosted on Azure** and **Hosted on Anthropic infrastructure** deployments. Both versions aren't available for every model. The lifecycle stage, such as Preview or Generally available, can differ between the two versions. For an overview of Claude models in Foundry, including per-model availability and lifecycle status, see [Claude models in Microsoft Foundry](claude-models). To learn how to use Claude models in Foundry, see [Deploy and use Claude models in Microsoft Foundry](../how-to/use-foundry-models-claude).
+Microsoft Foundry offers Claude models in two versions: **Hosted on Azure** and **Hosted on Anthropic infrastructure** deployments. Both versions aren't available for every model. The lifecycle stage, such as Preview or Generally available, can differ between the two versions. For an overview of Claude models in Foundry, including per-model availability and lifecycle status, see [Claude models in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/claude-models). To learn how to use Claude models in Foundry, see [Deploy and use Claude models in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-claude).
 
 #### Subscription type and region support
 
-To use Claude models in Microsoft Foundry, you must have a paid Azure subscription with a billing account in a country or region where Anthropic offers the models for purchase. For a list of common subscription-related errors, see [Common error messages and solutions](/en-us/marketplace/purchase-saas-offer-in-azure-portal#common-error-messages-and-solutions). The following subscription types are currently not supported:
+To use Claude models in Microsoft Foundry, you must have a paid Azure subscription with a billing account in a country or region where Anthropic offers the models for purchase. For a list of common subscription-related errors, see [Common error messages and solutions](https://learn.microsoft.com/en-us/marketplace/purchase-saas-offer-in-azure-portal#common-error-messages-and-solutions). The following subscription types are currently not supported:
 
 - Enterprise Accounts located in South Korea
 - Cloud Solution Provider subscriptions
 - Azure subscriptions that don't have an active pay-as-you-go billing method (for example, student, free trial, or startup credit–based accounts)
 - Sponsored subscriptions that only use Azure credits. ***Note**: If you have an account with a credit card on file, the credit card will be charged instead of Azure Credits.*
 
-For a list of supported regions, see [supported geographic locations](/en-us/partner-center/marketplace-offers/marketplace-geo-availability-currencies?tabs=g--h--i--j--k#supported-geographic-locations). Note that, Anthropic's "Supported Regions Policy" may apply for the availability in your region, check [supported regions](https://aka.ms/supported_anthropic_regions) for details.
+For a list of supported regions, see [supported geographic locations](https://learn.microsoft.com/en-us/partner-center/marketplace-offers/marketplace-geo-availability-currencies?tabs=g--h--i--j--k#supported-geographic-locations). Note that, Anthropic's "Supported Regions Policy" may apply for the availability in your region, check [supported regions](https://aka.ms/supported_anthropic_regions) for details.
 
 | Model | Type | Capabilities | Offer availability region |
 | --- | --- | --- | --- |
-| `claude-fable-5-1` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search, code execution, and more)  - **Response formats:** Text in various formats (for example, prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`, `temperature`, `thinking={"type":"enabled"}`, `thinking={"type":"disabled"}`, and `output_format` are **not supported**. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-fable-5` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search, code execution, and more)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`, `temperature`, `thinking={"type":"enabled"}`, `thinking={"type":"disabled"}`, and `output_format` are **not supported**. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-mythos-5-1`^1^ | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search, code execution, and more)  - **Response formats:** Text in various formats (for example, prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`, `temperature`, `thinking={"type":"enabled"}`, `thinking={"type":"disabled"}`, and `output_format` are **not supported**. Minimum cacheable prompt: 512 tokens. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-mythos-5`^1^ | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search, code execution, and more)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`, `temperature`, `thinking={"type":"enabled"}`, `thinking={"type":"disabled"}`, and `output_format` are **not supported**. Minimum cacheable prompt: 512 tokens. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-mythos-preview`^1^ | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`and `temperature` are **not supported**. Minimum cacheable prompt: 2048 tokens. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-opus-5` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_k`, `temperature`, and `thinking={"type":"enabled"}` are **not supported**. When `thinking={"type":"disabled"}`, `effort` is capped at `high`. `top_p` must be 0.99; when omitted, the default (0.99) is used. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia)  US (Hosted on Azure for Data Zone Standard) |
-| `claude-opus-4-8` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_k`, `temperature`, and `thinking={"type":"enabled"}` are **not supported**.`top_p` must be 0.99; when omitted, the default (0.99) is used. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia)  US (Hosted on Azure for Data Zone Standard) |
-| `claude-opus-4-7` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_k`, `temperature`, and `thinking={"type":"enabled"}` are **not supported**.`top_p` must be 0.99. When omitted, the default (0.99) is used. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-opus-4-6` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-opus-4-5` | Messages | - **Input:** text, image, and code  - **Output:** text (64,000 max tokens)  - **Context window:** 200,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-sonnet-5` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_k`, `temperature`, and `thinking={"type":"enabled"}` are **not supported**.`output_format` supported only for `thinking={"type":"adaptive"}`.`top_p` must be 0.99. When omitted, the default (0.99) is used. | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia)  US (Hosted on Azure for Data Zone Standard) |
-| `claude-sonnet-4-6` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-sonnet-4-5` | Messages | - **Input:** text, image, and code  - **Output:** text (64,000 max tokens)  - **Context window:** 200,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
-| `claude-haiku-4-5` | Messages | - **Input:** text and image  - **Output:** text (64,000 max tokens)  - **Context window:** 200,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-fable-5-1` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search, code execution, and more)  - **Response formats:** Text in various formats (for example, prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`, `temperature`, `thinking={"type":"enabled"}`, `thinking={"type":"disabled"}`, and `output_format` are **not supported**. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-fable-5` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search, code execution, and more)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`, `temperature`, `thinking={"type":"enabled"}`, `thinking={"type":"disabled"}`, and `output_format` are **not supported**. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-mythos-5-1`^1^ | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search, code execution, and more)  - **Response formats:** Text in various formats (for example, prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`, `temperature`, `thinking={"type":"enabled"}`, `thinking={"type":"disabled"}`, and `output_format` are **not supported**. Minimum cacheable prompt: 512 tokens. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-mythos-5`^1^ | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search, code execution, and more)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`, `temperature`, `thinking={"type":"enabled"}`, `thinking={"type":"disabled"}`, and `output_format` are **not supported**. Minimum cacheable prompt: 512 tokens. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-mythos-preview`^1^ | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_p` must be at least 0.99. Requests with `top_p` below this threshold are rejected with a 400 error. When `top_p` is omitted, the default (0.99) is used. `top_k`and `temperature` are **not supported**. Minimum cacheable prompt: 2048 tokens. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-opus-5` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_k`, `temperature`, and `thinking={"type":"enabled"}` are **not supported**. When `thinking={"type":"disabled"}`, `effort` is capped at `high`. `top_p` must be 0.99; when omitted, the default (0.99) is used. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia)  US (Hosted on Azure for Data Zone Standard) |
+| `claude-opus-4-8` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_k`, `temperature`, and `thinking={"type":"enabled"}` are **not supported**.`top_p` must be 0.99; when omitted, the default (0.99) is used. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia)  US (Hosted on Azure for Data Zone Standard) |
+| `claude-opus-4-7` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_k`, `temperature`, and `thinking={"type":"enabled"}` are **not supported**.`top_p` must be 0.99. When omitted, the default (0.99) is used. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-opus-4-6` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-opus-4-5` | Messages | - **Input:** text, image, and code  - **Output:** text (64,000 max tokens)  - **Context window:** 200,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-sonnet-5` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages)  - **Key parameters:**`top_k`, `temperature`, and `thinking={"type":"enabled"}` are **not supported**.`output_format` supported only for `thinking={"type":"adaptive"}`.`top_p` must be 0.99. When omitted, the default (0.99) is used. | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia)  US (Hosted on Azure for Data Zone Standard) |
+| `claude-sonnet-4-6` | Messages | - **Input:** text, image, and code  - **Output:** text, image, and code (128,000 max tokens)  - **Context window:** 1,000,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-sonnet-4-5` | Messages | - **Input:** text, image, and code  - **Output:** text (64,000 max tokens)  - **Context window:** 200,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
+| `claude-haiku-4-5` | Messages | - **Input:** text and image  - **Output:** text (64,000 max tokens)  - **Context window:** 200,000  - **Languages:**`en`, `fr`, `ar`, `zh`, `ja`, `ko`, `es`, `hi` - **Tool calling:** Yes (file search and code execution)  - **Response formats:** Text in various formats (e.g., prose, lists, Markdown tables, JSON, HTML, code in various programming languages) | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) (except Belarus and Russia) |
 
 ^1^**Claude Mythos 5-1**, **Claude Mythos 5**, and **Claude Mythos Preview** are only available as *gated research preview*. Access to the models is granted solely at Anthropic's discretion and prioritized for defensive cybersecurity use cases. See the [Claude Fable 5.1 & Claude Mythos 5.1 system card](https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card), [Claude Mythos 5 system card](https://www.anthropic.com/claude-mythos-5-system-card), and [Claude Mythos Preview system card](https://www.anthropic.com/claude-mythos-preview-system-card) for responsible use guidance.
 
@@ -156,12 +156,12 @@ For a list of supported regions, see [supported geographic locations](/en-us/par
 
 The Cohere family of models includes various models optimized for different use cases, including chat completions and embeddings. Cohere models are optimized for various use cases that include reasoning, summarization, and question answering.
 
-To deploy Cohere models in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](../how-to/deploy-foundry-models).
+To deploy Cohere models in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-foundry-models).
 
 | Model | Type | Capabilities | Offer availability region |
 | --- | --- | --- | --- |
-| `Cohere-embed-v3-english` | embeddings | - **Input:** text and images (512 tokens)  - **Output:** Vector (1024 dim.)  - **Languages:**`en` | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Japan  Qatar |
-| `Cohere-embed-v3-multilingual` | embeddings | - **Input:** text (512 tokens)  - **Output:** Vector (1024 dim.)  - **Languages:**`en`, `fr`, `es`, `it`, `de`, `pt-br`, `ja`, `ko`, `zh-cn`, and `ar` | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Japan  Qatar |
+| `Cohere-embed-v3-english` | embeddings | - **Input:** text and images (512 tokens)  - **Output:** Vector (1024 dim.)  - **Languages:**`en` | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Japan  Qatar |
+| `Cohere-embed-v3-multilingual` | embeddings | - **Input:** text (512 tokens)  - **Output:** Vector (1024 dim.)  - **Languages:**`en`, `fr`, `es`, `it`, `de`, `pt-br`, `ja`, `ko`, `zh-cn`, and `ar` | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Japan  Qatar |
 
 ## Meta
 
@@ -171,17 +171,17 @@ Meta Llama models and tools are a collection of pretrained and fine-tuned genera
 - Mid-size large language models (LLMs) like 7B, 8B, and 70B Base and Instruct models
 - High-performance models like Meta Llama 3.1-405B Instruct for synthetic data generation and distillation use cases.
 
-To deploy Meta Llama models in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](../how-to/deploy-foundry-models).
+To deploy Meta Llama models in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-foundry-models).
 
 | Model | Type | Capabilities | Offer availability region |
 | --- | --- | --- | --- |
-| `Llama-4-Scout-17B-16E-Instruct` | chat-completion | - **Input:** text and image (128,000 tokens)  - **Output:** text (8,192 tokens)  - **Languages:**`en` - **Tool calling:** No  - **Response formats:** Text | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) |
+| `Llama-4-Scout-17B-16E-Instruct` | chat-completion | - **Input:** text and image (128,000 tokens)  - **Output:** text (8,192 tokens)  - **Languages:**`en` - **Tool calling:** No  - **Response formats:** Text | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) |
 
 ## Microsoft
 
 Microsoft models include various model groups such as MAI models, Phi models, healthcare AI models, and more.
 
-To deploy Microsoft models in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](../how-to/deploy-foundry-models).
+To deploy Microsoft models in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-foundry-models).
 
 | Model | Type | Capabilities | Offer availability region |
 | --- | --- | --- | --- |
@@ -195,32 +195,32 @@ To deploy Microsoft models in Foundry, see [Deploy Microsoft Foundry Models in t
 
 Mistral AI offers models for code generation, general-purpose chat, and multimodal tasks, including Codestral, Ministral, Mistral Small, and Mistral Medium.
 
-To deploy Mistral AI models in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](../how-to/deploy-foundry-models).
+To deploy Mistral AI models in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-foundry-models).
 
 | Model | Type | Capabilities | Offer availability region |
 | --- | --- | --- | --- |
-| `Codestral-2501` | chat-completion | - **Input:** text (262,144 tokens)  - **Output:** text (4,096 tokens)  - **Languages:** en  - **Tool calling:** No  - **Response formats:** Text | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Brazil  Hong Kong SAR  Israel |
-| `Ministral-3B` | chat-completion | - **Input:** text (131,072 tokens)  - **Output:** text (4,096 tokens)  - **Languages:** fr, de, es, it, and en  - **Tool calling:** Yes  - **Response formats:** Text, JSON | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Brazil  Hong Kong SAR  Israel |
-| `Mistral-small-2503` | chat-completion | - **Input:** text (32,768 tokens)  - **Output:** text (4,096 tokens)  - **Languages:** fr, de, es, it, and en  - **Tool calling:** Yes  - **Response formats:** Text, JSON | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Brazil  Hong Kong SAR  Israel |
-| `Mistral-medium-2505` | chat-completion | - **Input:** text (128,000 tokens), image  - **Output:** text (128,000 tokens)  - **Tool calling:** No  - **Response formats:** Text, JSON | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Brazil  Hong Kong SAR  Israel |
+| `Codestral-2501` | chat-completion | - **Input:** text (262,144 tokens)  - **Output:** text (4,096 tokens)  - **Languages:** en  - **Tool calling:** No  - **Response formats:** Text | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Brazil  Hong Kong SAR  Israel |
+| `Ministral-3B` | chat-completion | - **Input:** text (131,072 tokens)  - **Output:** text (4,096 tokens)  - **Languages:** fr, de, es, it, and en  - **Tool calling:** Yes  - **Response formats:** Text, JSON | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Brazil  Hong Kong SAR  Israel |
+| `Mistral-small-2503` | chat-completion | - **Input:** text (32,768 tokens)  - **Output:** text (4,096 tokens)  - **Languages:** fr, de, es, it, and en  - **Tool calling:** Yes  - **Response formats:** Text, JSON | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Brazil  Hong Kong SAR  Israel |
+| `Mistral-medium-2505` | chat-completion | - **Input:** text (128,000 tokens), image  - **Output:** text (128,000 tokens)  - **Tool calling:** No  - **Response formats:** Text, JSON | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) Brazil  Hong Kong SAR  Israel |
 | `mistralai-Mistral-7B-Instruct-v01`^1^ | chat-completion | - **Input:** text  - **Output:** text  - **Languages:** en  - **Response formats:** Text | - |
 | `mistralai-Mistral-7B-Instruct-v0-2`^1^ | chat-completion | - **Input:** text  - **Output:** text  - **Languages:** en  - **Response formats:** Text | - |
 | `mistralai-Mixtral-8x7B-Instruct-v01`^1^ | chat-completion | - **Input:** text  - **Output:** text  - **Languages:** en  - **Response formats:** Text | - |
 | `mistralai-Mixtral-8x22B-Instruct-v0-1`^1^ | chat-completion | - **Input:** text (64,000 tokens)  - **Output:** text (4,096 tokens)  - **Languages:** fr, it, de, es, en  - **Response formats:** Text | - |
 
-^1^ These models require a hub-based project for deployment. Selecting them in the model catalog opens them up in the [Foundry (classic) portal experience](../../../foundry-classic/what-is-foundry).
+^1^ These models require a hub-based project for deployment. Selecting them in the model catalog opens them up in the [Foundry (classic) portal experience](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/what-is-foundry).
 
 ## NTT Data
 
 **tsuzumi** is an autoregressive language-optimized transformer. The tuned versions use supervised fine-tuning (SFT). tsuzumi handles both Japanese and English language with high efficiency.
 
-To deploy tsuzumi-7b in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](../how-to/deploy-foundry-models).
+To deploy tsuzumi-7b in Foundry, see [Deploy Microsoft Foundry Models in the Foundry portal](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-foundry-models).
 
 | Model | Type | Capabilities | Offer availability region |
 | --- | --- | --- | --- |
-| `tsuzumi-7b`^1^ | chat-completion | - **Input:** text (8,192 tokens)  - **Output:** text (8,192 tokens)  - **Languages:**`en` and `jp` - **Tool calling:** No  - **Response formats:** Text | [Microsoft Managed Countries/Regions](/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) |
+| `tsuzumi-7b`^1^ | chat-completion | - **Input:** text (8,192 tokens)  - **Output:** text (8,192 tokens)  - **Languages:**`en` and `jp` - **Tool calling:** No  - **Response formats:** Text | [Microsoft Managed Countries/Regions](https://learn.microsoft.com/en-us/partner-center/marketplace/tax-details-marketplace#microsoft-managed-countriesregions) |
 
-^1^ This model requires a hub-based project for deployment. Selecting the model in the model catalog opens it in the [Foundry (classic) portal experience](../../../foundry-classic/what-is-foundry).
+^1^ This model requires a hub-based project for deployment. Selecting the model in the model catalog opens it in the [Foundry (classic) portal experience](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/what-is-foundry).
 
 See [NTT Data models in the Foundry portal](https://ai.azure.com/explore/models?&amp;selectedCollection=NTT+Data/?cid=learnDocs).
 
@@ -228,13 +228,13 @@ See [NTT Data models in the Foundry portal](https://ai.azure.com/explore/models?
 
 Microsoft Foundry provides customers with choices on the hosting structure that fits their business and usage patterns. This section lists the regional availability for Foundry Models from partners and community, across all regions, for the Global Standard and Data Zone standard deployment types. To deploy your model in any of the Azure regions listed in the following tables, you must have a project or hub in that region.
 
-For billing-account country/region eligibility, see Country/region availability. To learn about all available model deployment types, see [Deployment types for Microsoft Foundry Models](deployment-types).
+For billing-account country/region eligibility, see Country/region availability. To learn about all available model deployment types, see [Deployment types for Microsoft Foundry Models](https://learn.microsoft.com/en-us/azure/foundry/deployment-types).
 
 ### Global standard
 
 For **global deployments**, Microsoft processes prompts and responses in any Azure region where you deploy the model.
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westcentralus** | **westus** | **westus2** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | claude-fable-5 | 1 | - | - | - | - | - | ✅ | - | - | - | - | - | - |
@@ -259,7 +259,7 @@ For **global deployments**, Microsoft processes prompts and responses in any Azu
 | mistral-medium-2505 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | mistral-small-2503 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **ukwest** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | claude-fable-5 | 1 | - | - | - | - | - | - | ✅ | - | - | - | - | - |
@@ -284,7 +284,7 @@ For **global deployments**, Microsoft processes prompts and responses in any Azu
 | mistral-medium-2505 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | mistral-small-2503 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **japanwest** | **koreacentral** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | Codestral-2501 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -294,7 +294,7 @@ For **global deployments**, Microsoft processes prompts and responses in any Azu
 | mistral-medium-2505 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | mistral-small-2503 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 | **Model** | **Version** | **southafricanorth** | **uaenorth** |
 | --- | --- | --- | --- |
 | Codestral-2501 | 2 | ✅ | ✅ |
@@ -310,20 +310,20 @@ For **global deployments**, Microsoft processes prompts and responses in any Azu
 
 For **Data Zone** deployments, Microsoft processes prompts and responses anywhere within the specified data zone: United States (data processed anywhere within the US), European Union (data processed within any EU member nation), or Asia Pacific (data processed within any Asia Pacific nation).
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | claude-opus-4-8 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | claude-opus-5 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | claude-sonnet-5 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 Not available
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 Not available
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
@@ -332,7 +332,7 @@ Not available
 
 If most of your infrastructure is in a particular region and you want to take advantage of models available only as serverless APIs, you can create a hub or project in a supported region and then consume the endpoint from another region.
 
-To learn how to configure an existing serverless API deployment in a different hub or project than the one where it was deployed, see [Consume serverless APIs from a different hub or project](../../../foundry-classic/how-to/deploy-models-serverless-connect).
+To learn how to configure an existing serverless API deployment in a different hub or project than the one where it was deployed, see [Consume serverless APIs from a different hub or project](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/how-to/deploy-models-serverless-connect).
 
 ## Troubleshooting
 
@@ -340,7 +340,7 @@ Use the following troubleshooting guide to find and solve errors when deploying 
 
 | Error | Description |
 | --- | --- |
-| Offer not available in your country/region | The model provider didn't make the specific model SKU available in the country/region where you registered your subscription. Each model provider decides which countries/regions are available, and availability can vary by model SKU. Deploy the model to a subscription with billing in a supported country/region. See [Region availability for models](../../../foundry-classic/how-to/deploy-models-serverless-availability). |
-| Marketplace purchase eligibility check failed | The model provider didn't make the specific model SKU available in your country/region, or the model isn't available in the region where you deployed the Foundry resource. See [Region availability for models](../../../foundry-classic/how-to/deploy-models-serverless-availability). |
+| Offer not available in your country/region | The model provider didn't make the specific model SKU available in the country/region where you registered your subscription. Each model provider decides which countries/regions are available, and availability can vary by model SKU. Deploy the model to a subscription with billing in a supported country/region. See [Region availability for models](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/how-to/deploy-models-serverless-availability). |
+| Marketplace purchase eligibility check failed | The model provider didn't make the specific model SKU available in your country/region, or the model isn't available in the region where you deployed the Foundry resource. See [Region availability for models](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/how-to/deploy-models-serverless-availability). |
 | Unable to create a model deployment | Azure Marketplace rejected the request to create a model subscription. This rejection can happen for multiple reasons, including subscribing to the model offering too often or from multiple subscriptions at the same time. Contact [support](https://go.microsoft.com/fwlink/?linkid=2101400&amp;clcid=0x409) and include your subscription ID. |
 | CSP subscription not supported | Cloud Solution Provider (CSP) subscriptions can't purchase third-party model offerings. Consider using models offered as a first-party consumption service. |

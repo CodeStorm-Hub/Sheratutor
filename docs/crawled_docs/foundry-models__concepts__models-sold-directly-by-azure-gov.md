@@ -62,11 +62,11 @@ platformId: 136d7ada-bac7-0dcb-b049-86c519cbf76e
 
 # Foundry Models sold by Azure in Azure Government - Microsoft Foundry | Microsoft Learn
 
-This article lists a selection of Microsoft Foundry Models sold by Azure in Azure Government along with their capabilities and [deployment types, and regions of availability](deployment-types-gov).
+This article lists a selection of Microsoft Foundry Models sold by Azure in Azure Government along with their capabilities and [deployment types, and regions of availability](https://learn.microsoft.com/en-us/azure/foundry/deployment-types-gov).
 
 Models sold by Azure include all Azure OpenAI models offered in Azure Government. These models are billed through your Azure subscription, covered by Azure service-level agreements, and supported by Microsoft.
 
-To learn more about attributes of all Foundry Models sold by Azure across all clouds, see [Models sold by Azure](models-sold-directly-by-azure).
+To learn more about attributes of all Foundry Models sold by Azure across all clouds, see [Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure).
 
 ## Azure OpenAI in Microsoft Foundry models in Azure Government
 
@@ -74,12 +74,12 @@ Azure OpenAI is powered by a diverse set of models with different capabilities a
 
 | Models | Description |
 | --- | --- |
-| [GPT-5.6 series](models-sold-directly-by-azure-gov#gpt-56) | **NEW**`gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna` |
-| [GPT-5.1 series](models-sold-directly-by-azure-gov#gpt-51) | `gpt-5.1` |
-| [GPT-4.1 series](models-sold-directly-by-azure-gov#gpt-41-series) | gpt-4.1, gpt-4.1-mini |
-| [o-series models](models-sold-directly-by-azure-gov#o-series-models) | [Reasoning models](../../openai/how-to/reasoning) with advanced problem solving and increased focus and capability. |
-| [GPT-4o](models-sold-directly-by-azure-gov#gpt-4o) | Capable Azure OpenAI models with multimodal versions, which can accept both text and images as input. |
-| [Embeddings](models-sold-directly-by-azure-gov#embeddings) | A set of models that can convert text into numerical vector form to facilitate text similarity. |
+| [GPT-5.6 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-gov#gpt-56) | **NEW**`gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna` |
+| [GPT-5.1 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-gov#gpt-51) | `gpt-5.1` |
+| [GPT-4.1 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-gov#gpt-41-series) | gpt-4.1, gpt-4.1-mini |
+| [o-series models](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-gov#o-series-models) | [Reasoning models](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) with advanced problem solving and increased focus and capability. |
+| [GPT-4o](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-gov#gpt-4o) | Capable Azure OpenAI models with multimodal versions, which can accept both text and images as input. |
+| [Embeddings](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-gov#embeddings) | A set of models that can convert text into numerical vector form to facilitate text similarity. |
 
 ## GPT-5.6
 
@@ -95,9 +95,9 @@ Azure OpenAI is powered by a diverse set of models with different capabilities a
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5.6-sol` (2026-07-09) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | June 2026 |
-| `gpt-5.6-terra` (2026-07-09) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | June 2026 |
-| `gpt-5.6-luna` (2026-07-09) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | June 2026 |
+| `gpt-5.6-sol` (2026-07-09) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | June 2026 |
+| `gpt-5.6-terra` (2026-07-09) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | June 2026 |
+| `gpt-5.6-luna` (2026-07-09) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | June 2026 |
 
 ## GPT-5.1
 
@@ -109,7 +109,7 @@ Azure OpenAI is powered by a diverse set of models with different capabilities a
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5.1` (2025-11-13) | - [Reasoning](../../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
+| `gpt-5.1` (2025-11-13) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
 
 Important
 
@@ -152,9 +152,9 @@ The Azure OpenAI o-series models are designed to tackle reasoning and problem-so
 
 | Model ID | Description | Max request (tokens) | Training data (up to) |
 | --- | --- | --- | --- |
-| `o3-mini` (2025-01-31) | - [Enhanced reasoning abilities](../../openai/how-to/reasoning).  - Structured outputs. - Text-only processing.  - Functions and tools. | Input: 200,000  Output: 100,000 | October 2023 |
+| `o3-mini` (2025-01-31) | - [Enhanced reasoning abilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Structured outputs. - Text-only processing.  - Functions and tools. | Input: 200,000  Output: 100,000 | October 2023 |
 
-To learn more about advanced o-series models, see [Getting started with reasoning models](../../openai/how-to/reasoning).
+To learn more about advanced o-series models, see [Getting started with reasoning models](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).
 
 ### Region availability
 
@@ -198,9 +198,9 @@ Azure OpenAI provides customers with choices on the hosting structure that fits 
 - **Standard**: Has a USGov datazone deployment option, routing traffic within Azure Government to provide higher throughput.
 - **Provisioned**: Also has a datazone deployment option, allowing customers to purchase and deploy provisioned throughput units across Azure Government infrastructure.
 
-All deployments can perform the exact same inference operations, but the billing, scale, and performance are substantially different. To learn more about Azure OpenAI deployment types, see our [Deployment types guide](deployment-types-gov).
+All deployments can perform the exact same inference operations, but the billing, scale, and performance are substantially different. To learn more about Azure OpenAI deployment types, see our [Deployment types guide](https://learn.microsoft.com/en-us/azure/foundry/deployment-types-gov).
 
-# [Data Zone Standard](#tab/datazone-standard)
+# **Data Zone Standard**
 ### Data Zone Standard model availability
 
 | **Region** | **gpt-5.6-sol**,**2026-07-09** | **gpt-5.6-terra**,**2026-07-09** | **gpt-5.6-luna**,**2026-07-09** | **gpt-5.1**,**2025-11-13** | **gpt-4.1**,**2025-04-14** | **gpt-4.1-mini**,**2025-04-14** | **o3-mini**,**2025-01-31** | **gpt-4o**,**2024-11-20** | **text-embedding-ada-002**,**2** | **text-embedding-3-large**,**1** | **text-embedding-3-small**,**1** |
@@ -208,7 +208,7 @@ All deployments can perform the exact same inference operations, but the billing
 | usgovarizona | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
 | usgovvirginia | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | - | ✅ | ✅ |
 
-# [Data Zone Provisioned managed](#tab/datazone-provisioned-managed)
+# **Data Zone Provisioned managed**
 ### Data Zone Provisioned managed model availability
 
 | **Region** | **gpt-5.6-sol**,**2026-07-09** | **gpt-5.6-terra**,**2026-07-09** | **gpt-5.6-luna**,**2026-07-09** | **gpt-5.1**,**2025-11-13** | **gpt-4.1**,**2025-04-14** | **gpt-4.1-mini**,**2025-04-14** | **o3-mini**,**2025-01-31** | **gpt-4o**,**2024-11-20** | **text-embedding-ada-002**,**2** | **text-embedding-3-large**,**1** | **text-embedding-3-small**,**1** |
@@ -216,7 +216,7 @@ All deployments can perform the exact same inference operations, but the billing
 | usgovarizona | ✅ | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | - | - |
 | usgovvirginia | ✅ | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | - | - |
 
-# [Standard](#tab/standard)
+# **Standard**
 ### Standard deployment model availability
 
 | **Region** | **gpt-5.1**,**2025-11-13** | **gpt-4.1**,**2025-04-14** | **gpt-4.1-mini**,**2025-04-14** | **o3-mini**,**2025-01-31** | **gpt-4o**,**2024-11-20** | **text-embedding-ada-002**,**2** | **text-embedding-3-large**,**1** | **text-embedding-3-small**,**1** |
@@ -224,7 +224,7 @@ All deployments can perform the exact same inference operations, but the billing
 | usgovarizona | - | ✅ | ✅ | - | ✅ | ✅ | ✅ | ✅ |
 | usgovvirginia | - | ✅ | ✅ | - | ✅ | - | - | - |
 
-# [Provisioned managed](#tab/provisioned)
+# **Provisioned managed**
 ### Provisioned deployment model availability
 
 | **Region** | **gpt-5.1**,**2025-11-13** | **gpt-4.1**,**2025-04-14** | **gpt-4.1-mini**,**2025-04-14** | **o3-mini**,**2025-01-31** | **gpt-4o**,**2024-11-20** | **text-embedding-ada-002**,**2** | **text-embedding-3-large**,**1** | **text-embedding-3-small**,**1** |
@@ -232,7 +232,7 @@ All deployments can perform the exact same inference operations, but the billing
 | usgovarizona | - | - | - | - | ✅ | - | - | - |
 | usgovvirginia |  | - | - | - | ✅ | - | - | - |
 
-For more information about provisioned deployments, see [Provisioned throughput in Azure Government](../../openai/concepts/provisioned-throughput-gov).
+For more information about provisioned deployments, see [Provisioned throughput in Azure Government](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/provisioned-throughput-gov).
 
 ---
 
@@ -257,4 +257,4 @@ When you send an array of inputs for embedding, the maximum number of input item
 
 ## Model retirement
 
-In some cases, models are retired in Azure Government earlier or later than in the commercial cloud. For the latest information on model retirements, refer to the [model retirement guide](../../openai/concepts/model-retirements-gov).
+In some cases, models are retired in Azure Government earlier or later than in the commercial cloud. For the latest information on model retirements, refer to the [model retirement guide](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirements-gov).

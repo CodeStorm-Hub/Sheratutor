@@ -61,7 +61,7 @@ platformId: 726bad1f-22ae-9cf4-f89c-eb9e6c6268bb
 
 # Manage state for long-running agents (preview) - Microsoft Foundry | Microsoft Learn
 
-A [long-running hosted agent](../concepts/long-running-agent-resilience) recovers from crashes only if its progress is durable. This article shows the two layers of durable state - small task metadata as a checkpoint *index*, and the Foundry state store as a checkpoint *store* - and how to back a framework checkpointer so framework-level recovery survives restarts.
+A [long-running hosted agent](https://learn.microsoft.com/en-us/azure/foundry/concepts/long-running-agent-resilience) recovers from crashes only if its progress is durable. This article shows the two layers of durable state - small task metadata as a checkpoint *index*, and the Foundry state store as a checkpoint *store* - and how to back a framework checkpointer so framework-level recovery survives restarts.
 
 Note
 

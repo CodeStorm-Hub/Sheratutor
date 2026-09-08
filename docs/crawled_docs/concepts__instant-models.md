@@ -64,8 +64,8 @@ Instant access to models lets you call any supported model by name — no deploy
 ## Prerequisites
 
 - An Azure subscription. [Create one for free](https://azure.microsoft.com/free/).
-- Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.![](../media/version-banner/new-foundry.png)
-- A Foundry project in **West US 3** (the only supported region for instant access during preview). If you need to create a project, see [Create a project](../how-to/create-projects).
+- Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.![](https://learn.microsoft.com/en-us/azure/foundry/media/version-banner/new-foundry.png)
+- A Foundry project in **West US 3** (the only supported region for instant access during preview). If you need to create a project, see [Create a project](https://learn.microsoft.com/en-us/azure/foundry/how-to/create-projects).
 - The **Foundry User** role on the project or account.
 
 Important
@@ -78,7 +78,7 @@ With instant access, the workflow is simple — use a supported instant model na
 
 Support for instant access continues to expand over time. The exact set changes frequently. See Supported models for ways to see the full list.
 
-# [Python](#tab/python)
+# **Python**
 For the `model` parameter, use the instant access model name, such as `"gpt-5-mini"`, instead of a deployed model name.
 
 ```python
@@ -109,7 +109,7 @@ if not response.output_text or not response.output_text.strip():
 print(f"Response output: {response.output_text}")
 ```
 
-# [C#](#tab/csharp)
+# **C#**
 For the `model` parameter, use the instant access model name, such as `"gpt-5-mini"`, instead of a deployed model name.
 
 ```csharp
@@ -142,7 +142,7 @@ if (string.IsNullOrWhiteSpace(outputText))
 Console.WriteLine(outputText);
 ```
 
-# [TypeScript](#tab/typescript)
+# **TypeScript**
 For the `model` parameter, use the instant access model name, such as `"gpt-5-mini"`, instead of a deployed model name.
 
 ```typescript
@@ -168,7 +168,7 @@ async function main(): Promise<void> {
 main().catch(console.error);
 ```
 
-# [Java](#tab/java)
+# **Java**
 For the `model` parameter, use the instant access model name, such as `"gpt-5-mini"`, instead of a deployed model name.
 
 ```java
@@ -200,7 +200,7 @@ public class CreateResponse {
 }
 ```
 
-# [REST API](#tab/rest)
+# **REST API**
 For the `model` parameter, use the instant access model name, such as `"gpt-5-mini"`, instead of a deployed model name.
 
 Also replace `YOUR-FOUNDRY-RESOURCE-NAME` with your values:
@@ -215,7 +215,7 @@ curl -X POST https://YOUR-FOUNDRY-RESOURCE-NAME.services.ai.azure.com/api/projec
 }'
 ```
 
-# [Foundry portal](#tab/portal)
+# **Foundry portal**
 1. On the Home page of your project, select **Test in playground**.
 2. Use the **Model** dropdown in the playground to switch among deployed and instant access models.
 
@@ -231,7 +231,7 @@ To reach the playground for instant access models, use one of these paths:
 4. From an instant access model details page, select **Open playground**.
 5. From a playground, use the **Model** dropdown to switch to other instant access or deployed models.
 
-![Diagram of navigation paths from Home to Playground, including Catalog and Model routes.](media/instant-models/playground-navigation-paths-flowchart.png)
+![Diagram of navigation paths from Home to Playground, including Catalog and Model routes.](https://learn.microsoft.com/en-us/azure/foundry/media/instant-models/playground-navigation-paths-flowchart.png)
 
 ### Why instant access matters
 
@@ -276,7 +276,7 @@ Note
 
 During the preview, instant access models are available in projects in **West US 3** only.
 
-Some instant access models might appear in the list even if your subscription has no quota for them. For more information, see [Quotas and limits for Foundry Models](../foundry-models/quotas-limits).
+Some instant access models might appear in the list even if your subscription has no quota for them. For more information, see [Quotas and limits for Foundry Models](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/quotas-limits).
 
 ## When to use instant access vs. deployments
 
@@ -284,14 +284,14 @@ Some instant access models might appear in the list even if your subscription ha
 | --- | --- |
 | Getting started, prototyping, or experimentation | Instant access |
 | Using the latest model immediately after release | Instant access |
-| Need reserved capacity or [predictable throughput](../foundry-models/concepts/deployment-types) | Deployment |
-| Require [provisioned throughput (PTU)](../openai/concepts/provisioned-throughput) | Deployment |
-| Need [data residency](../foundry-models/concepts/deployment-types) in a specific region | Deployment |
-| Custom [content filtering](../guardrails/guardrails-overview) policies per model | Deployment |
-| Custom [guardrails](../guardrails/guardrails-overview) per model | Deployment |
+| Need reserved capacity or [predictable throughput](foundry-models__concepts__deployment-types.md) | Deployment |
+| Require [provisioned throughput (PTU)](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput) | Deployment |
+| Need [data residency](foundry-models__concepts__deployment-types.md) in a specific region | Deployment |
+| Custom [content filtering](https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview) policies per model | Deployment |
+| Custom [guardrails](https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview) per model | Deployment |
 | Endpoint-specific configuration (for example, version locks per endpoint) | Deployment |
-| Fine-grained [quota](../how-to/quota) partitioning across teams | Deployment |
-| [Fine-tuned models](../fine-tuning/fine-tune-cli) | Deployment |
+| Fine-grained [quota](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota) partitioning across teams | Deployment |
+| [Fine-tuned models](https://learn.microsoft.com/en-us/azure/foundry/fine-tuning/fine-tune-cli) | Deployment |
 
 Instant access and deployments can coexist in the same project. You can start with instant access model and create a deployment later as your requirements evolve.
 
@@ -315,7 +315,7 @@ Instant access draws from a per-model **global quota** pool assigned to your sub
 - Other deployment types (Regional Standard, Provisioned) use separate regional quota and don't affect your instant model capacity.
 - If instant model requests are throttled, you can request a quota increase or create a deployment with reserved capacity.
 
-For more details on how global and regional quotas interact, see [Manage and increase quotas](../how-to/quota).
+For more details on how global and regional quotas interact, see [Manage and increase quotas](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota).
 
 ## Enterprise controls
 
@@ -327,7 +327,7 @@ For more details on how global and regional quotas interact, see [Manage and inc
 
 To remove instant access from an account, configure the settings through Bicep or ARM REST.
 
-# [REST API](#tab/rest-api)
+# **REST API**
 Update your account with:
 
 ```http
@@ -349,7 +349,7 @@ Use this request body to effectively shut off instant model access:
 }
 ```
 
-# [Bicep](#tab/bicep)
+# **Bicep**
 Update your existing account resource with an `instant` block:
 
 ```bicep
@@ -374,7 +374,7 @@ resource account 'Microsoft.CognitiveServices/accounts@2026-01-15-preview' = {
 
 Important
 
-All instant access models use default [guardrails](../guardrails/guardrails-overview) and content filters. However, you can't configure custom guardrails or Responsible AI (RAI) policies on a per-model basis for instant access. You can set a default RAI policy at the account level through the API, but that policy applies uniformly to all instant access models. If you need different content filtering policies for individual models, use a deployment.
+All instant access models use default [guardrails](https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview) and content filters. However, you can't configure custom guardrails or Responsible AI (RAI) policies on a per-model basis for instant access. You can set a default RAI policy at the account level through the API, but that policy applies uniformly to all instant access models. If you need different content filtering policies for individual models, use a deployment.
 
 ## Deployment name collisions
 
@@ -384,5 +384,5 @@ New deployments can't use a name that matches an existing model name. If you hav
 
 - Available in **West US 3** only.
 - Fine-tuned models aren't supported. To use a fine-tuned model, create a deployment.
-- [Guardrails](../guardrails/guardrails-overview), custom RAI policies, and content filters aren't configurable for instant access.
+- [Guardrails](https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview), custom RAI policies, and content filters aren't configurable for instant access.
 - Only the models listed in Supported models are eligible.

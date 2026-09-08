@@ -75,7 +75,7 @@ You open the canvas from a Copilot conversation. When you ask Copilot to create 
 
 This split keeps the visual experience and the code in sync: the canvas surfaces what's available in your project, and Copilot does the file edits and command runs. You stay in control of the generated code the whole time.
 
-[![Screenshot of Microsoft Foundry Canvas open in the right panel of the GitHub Copilot App. The canvas shows three stages: Create new hosted agents, Build current hosted agent, and Deploy and test. The Create stage is expanded with Inspire me, Help me decide, and Hello world options next to the Copilot conversation.](../media/agent-canvas/agent-canvas-overview.png)](../media/agent-canvas/agent-canvas-overview.png#lightbox)
+![Screenshot of Microsoft Foundry Canvas open in the right panel of the GitHub Copilot App. The canvas shows three stages: Create new hosted agents, Build current hosted agent, and Deploy and test. The Create stage is expanded with Inspire me, Help me decide, and Hello world options next to the Copilot conversation.](https://learn.microsoft.com/en-us/azure/foundry/media/agent-canvas/agent-canvas-overview.png)
 
 ## What you can do with the canvas
 
@@ -94,7 +94,7 @@ With the canvas, you can:
 
 To install the canvas, in the GitHub Copilot App, open **Settings** &gt; **Plugins**, search for `microsoft-foundry`, and select **Install**.
 
-[![Screenshot of the Plugins page in the GitHub Copilot App Settings, with foundry entered in the search box and the microsoft-foundry plugin listed under awesome-copilot.](../media/agent-canvas/agent-canvas-install.png)](../media/agent-canvas/agent-canvas-install.png#lightbox)
+![Screenshot of the Plugins page in the GitHub Copilot App Settings, with foundry entered in the search box and the microsoft-foundry plugin listed under awesome-copilot.](https://learn.microsoft.com/en-us/azure/foundry/media/agent-canvas/agent-canvas-install.png)
 
 ## How agent building works
 
@@ -109,4 +109,4 @@ After you install the canvas, you build a hosted agent by moving through a few s
 
 Because **Inspect Locally** and **Deploy to Foundry** run the underlying Azure Developer CLI (`azd`) commands, you can drop back to the terminal at any point.
 
-For the full step-by-step walkthrough, see [Quickstart: Deploy your first hosted agent](../quickstarts/quickstart-hosted-agent?pivots=canvas).
+For the full step-by-step walkthrough, see [Quickstart: Deploy your first hosted agent](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-hosted-agent?pivots=canvas).

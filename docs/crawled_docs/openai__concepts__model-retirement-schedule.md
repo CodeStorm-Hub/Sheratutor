@@ -63,9 +63,9 @@ platformId: 0db2680d-a86d-a1d2-c29d-86c72c1e9f2a
 
 # Model retirement schedule - Microsoft Foundry | Microsoft Learn
 
-This article lists the retirement schedule for Foundry Models, including the current lifecycle stage, retirement date, and suggested replacement. Use it to plan migrations before a model is deprecated or retired. For details on what each lifecycle stage means and how notifications work, see [Microsoft Foundry Models lifecycle and support policy](model-retirements).
+This article lists the retirement schedule for Foundry Models, including the current lifecycle stage, retirement date, and suggested replacement. Use it to plan migrations before a model is deprecated or retired. For details on what each lifecycle stage means and how notifications work, see [Microsoft Foundry Models lifecycle and support policy](https://learn.microsoft.com/en-us/azure/foundry/model-retirements).
 
-The **Replacement** column identifies Microsoft's recommended replacement and, where supported, the target for automatic upgrades at retirement. You don't need to wait for a replacement to be listed before evaluating or manually migrating to another compatible model. Evaluate available models using your application and data, comparing quality, latency, and cost. For selection criteria and the full migration process, see [Model migration process](../../foundry-models/concepts/model-migration).
+The **Replacement** column identifies Microsoft's recommended replacement and, where supported, the target for automatic upgrades at retirement. You don't need to wait for a replacement to be listed before evaluating or manually migrating to another compatible model. Evaluate available models using your application and data, comparing quality, latency, and cost. For selection criteria and the full migration process, see [Model migration process](https://learn.microsoft.com/en-us/azure/foundry/../foundry-models/concepts/model-migration).
 
 ## Foundry Models sold by Azure
 
@@ -268,7 +268,7 @@ This section lists the retirement lifecycle for Foundry Models sold by partners 
 
 ### Anthropic
 
-Microsoft Foundry offers Claude models in [two versions](../../foundry-models/concepts/claude-models#how-claude-models-are-hosted-and-billed):
+Microsoft Foundry offers Claude models in [two versions](https://learn.microsoft.com/en-us/azure/foundry/../foundry-models/concepts/claude-models#how-claude-models-are-hosted-and-billed):
 
 - Version 1: Hosted on Anthropic infrastructure
 - Version 2: Hosted on Azure

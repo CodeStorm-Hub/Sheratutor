@@ -85,7 +85,7 @@ That's five types, five authentication models, and five owning teams - for *one*
 - Credentials are duplicated and each agent manages its own secrets and token refresh.
 - Governance is inconsistent or missing, with little visibility into what tools exist or who's using them.
 
-[![Diagram showing multiple agents each wiring their own tools with different authentication models and duplicated credentials.](../media/tools/toolbox/toolbox-before.png)](../media/tools/toolbox/toolbox-before.png#lightbox)
+![Diagram showing multiple agents each wiring their own tools with different authentication models and duplicated credentials.](https://learn.microsoft.com/en-us/azure/foundry/media/tools/toolbox/toolbox-before.png)
 
 Without a centralized approach, each agent must be configured with its own tool definitions, credentials, and integration logic. As organizations create more agents, this model can lead to duplicated tool implementations, inconsistent security controls, and increased operational overhead.
 
@@ -97,12 +97,12 @@ Toolbox covers the full tool lifecycle through four pillars - **Build**, **Disco
 
 | Pillar | Value proposition |
 | --- | --- |
-| **Build** | Create reusable collections of tools and [skills (preview)](../how-to/tools/skills), publish once, and configure authentication centrally so any team can use the same tools without duplicating per-agent configuration or credentials. |
-| **Discover** | Use [tool search (preview)](../how-to/tools/tool-search) to help agents find the most relevant tools at runtime. A single toolbox can hold hundreds of tools without flooding the model's context, inflating token cost, or degrading selection accuracy. |
+| **Build** | Create reusable collections of tools and [skills (preview)](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/skills), publish once, and configure authentication centrally so any team can use the same tools without duplicating per-agent configuration or credentials. |
+| **Discover** | Use [tool search (preview)](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/tool-search) to help agents find the most relevant tools at runtime. A single toolbox can hold hundreds of tools without flooding the model's context, inflating token cost, or degrading selection accuracy. |
 | **Consume** | Connect agents to a single MCP-compatible endpoint that provides access to the tools in a toolbox. Agents can discover and invoke tools across protocols and authentication models without requiring custom integrations. |
 | **Govern** | Apply authentication, authorization, guardrails, observability, and version management at the toolbox level. Centralized governance helps organizations maintain consistent security and operational controls across agents and tools. |
 
-[![Diagram showing Toolbox as one MCP-compatible endpoint in Microsoft Foundry. On the left, Foundry Agent Service (prompt and hosted agents), Microsoft Agent Framework, LangGraph, and GitHub Copilot connect into Toolbox, which provides Build (curated tools, skills, and agents), Discover (reduce token consumption and context window with tool search), and Consume (unified endpoint with governance and guardrails). On the right, Toolbox connects to MCP, A2A, OpenAPI, Microsoft IQ, Skills, Agents (A2A), and more. Governed by default.](../media/tools/toolbox/toolbox-architecture.png)](../media/tools/toolbox/toolbox-architecture.png#lightbox)
+![Diagram showing Toolbox as one MCP-compatible endpoint in Microsoft Foundry. On the left, Foundry Agent Service (prompt and hosted agents), Microsoft Agent Framework, LangGraph, and GitHub Copilot connect into Toolbox, which provides Build (curated tools, skills, and agents), Discover (reduce token consumption and context window with tool search), and Consume (unified endpoint with governance and guardrails). On the right, Toolbox connects to MCP, A2A, OpenAPI, Microsoft IQ, Skills, Agents (A2A), and more. Governed by default.](https://learn.microsoft.com/en-us/azure/foundry/media/tools/toolbox/toolbox-architecture.png)
 
 ### Foundry-homed, not Foundry-bound
 
@@ -142,7 +142,7 @@ You control how tools are surfaced.
 - **Add context** to improve tool discovery using the terms your organization uses.
 - **Auto-pin** frequently used tools.
 
-Learn more: [Tool search (preview)](../how-to/tools/tool-search).
+Learn more: [Tool search (preview)](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/tool-search).
 
 ### Skills (preview)
 
@@ -152,7 +152,7 @@ Tools define **what** an agent can do. Skills define **how** it performs a task.
 - Skills are **versioned and immutable**. You can attach a specific skill version to a toolbox to ensure consistent and predictable behavior across environments.
 - Skills **reduce the setup required** to use shared workflows. Agents discover and load skills automatically through MCP resources at startup.
 
-See [Skills (preview)](../how-to/tools/skills).
+See [Skills (preview)](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/skills).
 
 ## Supported tools
 
@@ -160,28 +160,28 @@ The following tools are supported.
 
 | Tool | Toolbox | Direct tool integration |
 | --- | --- | --- |
-| [Model Context Protocol (MCP)](../how-to/tools/model-context-protocol) | ✅ Yes | ✅ Yes |
-| [Web search](../how-to/tools/web-search) | ✅ Yes | ✅ Yes |
-| [Azure AI Search](../how-to/tools/ai-search) | ✅ Yes | ✅ Yes |
-| [Code interpreter](../how-to/tools/code-interpreter) | ✅ Yes | ✅ Yes |
-| [File search](../how-to/tools/file-search) | ✅ Yes | ✅ Yes |
-| [OpenAPI](../how-to/tools/openapi) | ✅ Yes | ✅ Yes |
-| [Agent-to-agent (A2A)](../how-to/tools/agent-to-agent) | ✅ Yes | ✅ Yes |
-| [Browser automation](../how-to/tools/browser-automation) | ✅ Yes | ✅ Yes |
-| [Fabric IQ](../how-to/tools/fabric-iq) | ✅ Yes | ✅ Yes |
-| [Work IQ](../how-to/tools/work-iq) | ✅ Yes | ✅ Yes |
-| [Tool search](../how-to/tools/tool-search) | ✅ Yes | ❌ No |
-| [Skills](../how-to/tools/skills) | ✅ Yes | ❌ No |
-| [Reminder tool](../how-to/tools/reminder-tool) | ✅ Yes | ❌ No |
-| [Function calling](../how-to/tools/function-calling) | ❌ No (client-side execution) | ✅ Yes |
-| [Grounding with Bing](../how-to/tools/bing-tools) | ❌ No | ✅ Yes |
-| [Computer use](../how-to/tools/computer-use) | ❌ No | ✅ Yes |
-| [Image generation](../how-to/tools/image-generation) | ❌ No | ✅ Yes |
-| [SharePoint](../how-to/tools/sharepoint) | ❌ No | ✅ Yes |
-| [Fabric data agent](../how-to/tools/fabric) | ❌ No | ✅ Yes |
-| [Azure Functions](../how-to/tools/azure-functions) | ❌ No | ✅ Yes |
+| [Model Context Protocol (MCP)](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/model-context-protocol) | ✅ Yes | ✅ Yes |
+| [Web search](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/web-search) | ✅ Yes | ✅ Yes |
+| [Azure AI Search](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/ai-search) | ✅ Yes | ✅ Yes |
+| [Code interpreter](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/code-interpreter) | ✅ Yes | ✅ Yes |
+| [File search](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/file-search) | ✅ Yes | ✅ Yes |
+| [OpenAPI](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/openapi) | ✅ Yes | ✅ Yes |
+| [Agent-to-agent (A2A)](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/agent-to-agent) | ✅ Yes | ✅ Yes |
+| [Browser automation](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/browser-automation) | ✅ Yes | ✅ Yes |
+| [Fabric IQ](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/fabric-iq) | ✅ Yes | ✅ Yes |
+| [Work IQ](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/work-iq) | ✅ Yes | ✅ Yes |
+| [Tool search](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/tool-search) | ✅ Yes | ❌ No |
+| [Skills](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/skills) | ✅ Yes | ❌ No |
+| [Reminder tool](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/reminder-tool) | ✅ Yes | ❌ No |
+| [Function calling](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/function-calling) | ❌ No (client-side execution) | ✅ Yes |
+| [Grounding with Bing](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/bing-tools) | ❌ No | ✅ Yes |
+| [Computer use](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/computer-use) | ❌ No | ✅ Yes |
+| [Image generation](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/image-generation) | ❌ No | ✅ Yes |
+| [SharePoint](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/sharepoint) | ❌ No | ✅ Yes |
+| [Fabric data agent](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/fabric) | ❌ No | ✅ Yes |
+| [Azure Functions](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/azure-functions) | ❌ No | ✅ Yes |
 
 ## Get started
 
-- [Create and manage a toolbox in Foundry](../how-to/tools/toolbox) - set up a toolbox and integrate it into your agent.
-- [Toolbox quickstart](../quickstarts/quickstart-toolbox-agent) - build a toolbox and use it with a hosted agent end to end.
+- [Create and manage a toolbox in Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/tools/toolbox) - set up a toolbox and integrate it into your agent.
+- [Toolbox quickstart](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-toolbox-agent) - build a toolbox and use it with a hosted agent end to end.

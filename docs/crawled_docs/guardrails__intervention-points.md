@@ -86,7 +86,7 @@ When creating a guardrail, you select which controls to enable and at which inte
 3. Select "Tool response" as the intervention point.
 4. Choose "Annotate and block" as the action.
 
-For detailed steps, see [Create a guardrail](how-to-create-guardrails).
+For detailed steps, see [Create a guardrail](https://learn.microsoft.com/en-us/azure/foundry/how-to-create-guardrails).
 
 ## Supported tools
 

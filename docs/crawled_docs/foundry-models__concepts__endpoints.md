@@ -72,10 +72,10 @@ This article explains how the Foundry services organize models and how to use th
 ## Prerequisites
 
 - An Azure subscription. If you don't have one, create a [free account](https://azure.microsoft.com/free/).
-- A Microsoft Foundry resource. If you don't have one, [create a resource and deploy a model](../how-to/create-model-deployments).
-- At least one [model deployment](../how-to/create-model-deployments) in your resource.
+- A Microsoft Foundry resource. If you don't have one, [create a resource and deploy a model](https://learn.microsoft.com/en-us/azure/foundry/how-to/create-model-deployments).
+- At least one [model deployment](https://learn.microsoft.com/en-us/azure/foundry/how-to/create-model-deployments) in your resource.
 - The latest version of the OpenAI SDK for your language (Python, JavaScript, C#, or Java), or a REST client such as `curl`.
-- To use keyless authentication, the required [Microsoft Entra ID role assignments](../how-to/configure-entra-id) on the resource.
+- To use keyless authentication, the required [Microsoft Entra ID role assignments](https://learn.microsoft.com/en-us/azure/foundry/how-to/configure-entra-id) on the resource.
 
 ## Deployments
 
@@ -93,23 +93,23 @@ A deployment defines:
 
 A Foundry resource can have many model deployments. You only pay for inference performed on model deployments. Deployments are Azure resources, so they're subject to Azure policies.
 
-For more information about creating deployments, see [Add and configure model deployments](../how-to/create-model-deployments).
+For more information about creating deployments, see [Add and configure model deployments](https://learn.microsoft.com/en-us/azure/foundry/how-to/create-model-deployments).
 
 ## Azure OpenAI inference endpoint
 
 The **Azure OpenAI API** exposes the full capabilities of OpenAI models and supports more features like assistants, threads, files, and batch inference. You can also use it to access non-OpenAI models.
 
-Azure OpenAI endpoints are formatted as `https://<resource-name>.openai.azure.com`. Endpoints map to deployments, and each deployment has its own associated URL. However, you can use the same authentication mechanism to consume more than one deployment. For more information, see the reference page for [Azure OpenAI API](/en-us/rest/api/microsoft-foundry/azureopenai/responses).
+Azure OpenAI endpoints are formatted as `https://<resource-name>.openai.azure.com`. Endpoints map to deployments, and each deployment has its own associated URL. However, you can use the same authentication mechanism to consume more than one deployment. For more information, see the reference page for [Azure OpenAI API](https://learn.microsoft.com/en-us/rest/api/microsoft-foundry/azureopenai/responses).
 
-[![An illustration showing how Azure OpenAI deployments contain a single URL for each deployment.](../media/endpoint/endpoint-openai.png)](../media/endpoint/endpoint-openai.png#lightbox)
+![An illustration showing how Azure OpenAI deployments contain a single URL for each deployment.](https://learn.microsoft.com/en-us/azure/foundry/media/endpoint/endpoint-openai.png)
 
 Deployment URLs are formed by concatenating the **Azure OpenAI** base URL and the route `/deployments/<model-deployment-name>`. When you use the OpenAI v1 API, call the `/openai/v1/` route on the base URL, `https://<resource-name>.openai.azure.com/openai/v1/`, and pass the deployment name in the `model` field of your request. The `/openai/v1/` route uses implicit versioning, so you don't pass an `api-version`.
 
-The following examples use the [Responses API](/en-us/rest/api/microsoft-foundry/azureopenai/responses?view=rest-microsoft-foundry-v1&amp;preserve-view=true), which supports the latest inference features.
+The following examples use the [Responses API](https://learn.microsoft.com/en-us/rest/api/microsoft-foundry/azureopenai/responses?view=rest-microsoft-foundry-v1&amp;preserve-view=true), which supports the latest inference features.
 
 Note
 
-The Responses API works with Azure OpenAI models and with [Foundry Models sold by Azure](models-sold-directly-by-azure) that support it, such as DeepSeek, Llama, and Grok models. If a deployment doesn't support the Responses API, the request returns `400 Model not supported`. In that case, use the Chat Completions API by calling `client.chat.completions.create` instead.
+The Responses API works with Azure OpenAI models and with [Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure) that support it, such as DeepSeek, Llama, and Grok models. If a deployment doesn't support the Responses API, the request returns `400 Model not supported`. In that case, use the Chat Completions API by calling `client.chat.completions.create` instead.
 
 ### Use API key authentication
 
@@ -117,7 +117,7 @@ You can authenticate inference requests with an API key from your Foundry resour
 
 In the following example, `deepseek-v3-0324` is the name of a model deployment in the Microsoft Foundry resource. Replace it with your own deployment name, and store your API key in the `AZURE_INFERENCE_CREDENTIAL` environment variable.
 
-# [Python](#tab/python)
+# **Python**
 Install the `openai` package by using pip:
 
 ```bash
@@ -143,7 +143,7 @@ response = client.responses.create(
 print(response.output_text)
 ```
 
-# [JavaScript](#tab/javascript)
+# **JavaScript**
 Install the `openai` package by using npm:
 
 ```bash
@@ -168,7 +168,7 @@ const response = await client.responses.create({
 console.log(response.output_text);
 ```
 
-# [C#](#tab/csharp)
+# **C#**
 Install the OpenAI library:
 
 ```dotnetcli
@@ -197,7 +197,7 @@ OpenAIResponse response = responseClient.CreateResponse(
 Console.WriteLine(response.GetOutputText());
 ```
 
-# [Java](#tab/java)
+# **Java**
 Add the OpenAI Java SDK to your project. Check the [OpenAI Java repository](https://github.com/openai/openai-java) for the latest version.
 
 Create a client that points to the Azure OpenAI v1 endpoint, and then generate a response:
@@ -227,7 +227,7 @@ response.output().stream()
     .forEach(outputText -> System.out.println(outputText.text()));
 ```
 
-# [REST](#tab/rest)
+# **REST**
 Send requests directly to the v1 route. The `/openai/v1/` path uses implicit versioning, so you don't include an `api-version` query parameter. Pass your key in the `Authorization` header as a bearer token:
 
 ```bash
@@ -242,15 +242,15 @@ curl -X POST https://<resource>.openai.azure.com/openai/v1/responses \
 
 ---
 
-For more information about how to use the **Azure OpenAI endpoint**, see [Azure OpenAI SDK language support](../../openai/supported-languages).
+For more information about how to use the **Azure OpenAI endpoint**, see [Azure OpenAI SDK language support](https://learn.microsoft.com/en-us/azure/foundry/../openai/supported-languages).
 
 ### Use keyless authentication
 
 Deployed Foundry Models support keyless authorization with Microsoft Entra ID. Keyless authorization enhances security, simplifies the user experience, reduces operational complexity, and provides robust compliance support. Use keyless authorization if your organization uses secure and scalable identity management solutions.
 
-To use keyless authentication, [configure your resource and grant access to users](../how-to/configure-entra-id) to perform inference. After you configure the resource and grant access, authenticate as follows:
+To use keyless authentication, [configure your resource and grant access to users](https://learn.microsoft.com/en-us/azure/foundry/how-to/configure-entra-id) to perform inference. After you configure the resource and grant access, authenticate as follows:
 
-# [Python](#tab/python)
+# **Python**
 Install the OpenAI SDK using a package manager like pip:
 
 ```bash
@@ -295,9 +295,9 @@ Expected output
 Azure AI is a comprehensive suite of artificial intelligence services and tools from Microsoft that enables developers to build intelligent applications. It includes services for natural language processing, computer vision, speech recognition, and machine learning capabilities.
 ```
 
-Reference: [OpenAI Python SDK](https://github.com/openai/openai-python) and [DefaultAzureCredential class](/en-us/python/api/azure-identity/azure.identity.defaultazurecredential).
+Reference: [OpenAI Python SDK](https://github.com/openai/openai-python) and [DefaultAzureCredential class](https://learn.microsoft.com/en-us/python/api/azure-identity/azure.identity.defaultazurecredential).
 
-# [C#](#tab/csharp)
+# **C#**
 Install the OpenAI SDK:
 
 ```dotnetcli
@@ -347,9 +347,9 @@ Expected output:
 Azure AI is a comprehensive suite of artificial intelligence services and tools from Microsoft that enables developers to build intelligent applications. It includes services for natural language processing, computer vision, speech recognition, and machine learning capabilities.
 ```
 
-Reference: [OpenAI .NET SDK](https://github.com/openai/openai-dotnet) and [DefaultAzureCredential class](/en-us/dotnet/api/azure.identity.defaultazurecredential).
+Reference: [OpenAI .NET SDK](https://github.com/openai/openai-dotnet) and [DefaultAzureCredential class](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential).
 
-# [JavaScript](#tab/javascript)
+# **JavaScript**
 Install the OpenAI SDK with npm:
 
 ```bash
@@ -394,9 +394,9 @@ Expected output:
 Azure AI is a comprehensive suite of artificial intelligence services and tools from Microsoft that enables developers to build intelligent applications. It includes services for natural language processing, computer vision, speech recognition, and machine learning capabilities.
 ```
 
-Reference: [OpenAI Node.js SDK](https://github.com/openai/openai-node) and [DefaultAzureCredential class](/en-us/javascript/api/@azure/identity/defaultazurecredential).
+Reference: [OpenAI Node.js SDK](https://github.com/openai/openai-node) and [DefaultAzureCredential class](https://learn.microsoft.com/en-us/javascript/api/@azure/identity/defaultazurecredential).
 
-# [Java](#tab/java)
+# **Java**
 Add the OpenAI SDK to your project. Check the [OpenAI Java GitHub repository](https://github.com/openai/openai-java) for the latest version and installation instructions.
 
 For Microsoft Entra ID authentication, also add:
@@ -456,12 +456,12 @@ Expected output:
 Azure AI is a comprehensive suite of artificial intelligence services and tools from Microsoft that enables developers to build intelligent applications. It includes services for natural language processing, computer vision, speech recognition, and machine learning capabilities.
 ```
 
-Reference: [OpenAI Java SDK](https://github.com/openai/openai-java) and [DefaultAzureCredential class](/en-us/java/api/com.azure.identity.defaultazurecredential).
+Reference: [OpenAI Java SDK](https://github.com/openai/openai-java) and [DefaultAzureCredential class](https://learn.microsoft.com/en-us/java/api/com.azure.identity.defaultazurecredential).
 
-# [REST](#tab/rest)
-Explore the API design in the [reference section](/en-us/rest/api/microsoft-foundry/azureopenai/responses?view=rest-microsoft-foundry-v1&amp;preserve-view=true) to see which parameters are available. Insert the authentication (bearer) token in the `Authorization` header.
+# **REST**
+Explore the API design in the [reference section](https://learn.microsoft.com/en-us/rest/api/microsoft-foundry/azureopenai/responses?view=rest-microsoft-foundry-v1&amp;preserve-view=true) to see which parameters are available. Insert the authentication (bearer) token in the `Authorization` header.
 
-For example, the [Responses API](/en-us/rest/api/microsoft-foundry/azureopenai/responses?view=rest-microsoft-foundry-v1&amp;preserve-view=true) reference section details how to use the `/responses` route to generate predictions. The `/openai/v1/` path is included in the root of the URL:
+For example, the [Responses API](https://learn.microsoft.com/en-us/rest/api/microsoft-foundry/azureopenai/responses?view=rest-microsoft-foundry-v1&amp;preserve-view=true) reference section details how to use the `/responses` route to generate predictions. The `/openai/v1/` path is included in the root of the URL:
 
 **Request**
 
@@ -521,6 +521,6 @@ az account get-access-token --resource https://ai.azure.com --query "accessToken
 
 This command outputs an access token that you can store in the `$AZURE_OPENAI_AUTH_TOKEN` environment variable.
 
-Reference: [Responses API](/en-us/rest/api/microsoft-foundry/azureopenai/responses?view=rest-microsoft-foundry-v1&amp;preserve-view=true)
+Reference: [Responses API](https://learn.microsoft.com/en-us/rest/api/microsoft-foundry/azureopenai/responses?view=rest-microsoft-foundry-v1&amp;preserve-view=true)
 
 ---

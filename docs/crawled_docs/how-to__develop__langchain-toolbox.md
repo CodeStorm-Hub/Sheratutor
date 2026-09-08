@@ -69,7 +69,7 @@ You learn how to load tools, identify tools that require approval, load toolbox 
 ## Prerequisites
 
 - An Azure subscription. [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
-- A [Foundry project](../create-projects).
+- A [Foundry project](https://learn.microsoft.com/en-us/azure/foundry/create-projects).
 - A deployed chat model (for example, `gpt-4.1`) in your project.
 - A toolbox configured in your Foundry project. Note its name.
 - Python 3.10 or later.
@@ -181,13 +181,13 @@ for name in tools_needing_approval:
 
 **What this snippet does:** Inspects the toolbox metadata and returns the names of tools whose configuration sets `require_approval` to `always`. Use this list to gate sensitive operations behind an approval workflow.
 
-This capability is independent of OAuth consent handling. For more information about human-in-the-loop approvals, see [Use Foundry Agent Service with LangGraph](langchain-agents).
+This capability is independent of OAuth consent handling. For more information about human-in-the-loop approvals, see [Use Foundry Agent Service with LangGraph](https://learn.microsoft.com/en-us/azure/foundry/langchain-agents).
 
 ### Handle OAuth consent
 
 Toolbox in Microsoft Foundry can handle on-behalf-of workflows. You can configure the authorization requirements when you add the tools to your toolbox.
 
-![Screenshot of how to configure an MCP server with an on-behalf-of workflow.](../media/langchain-toolbox/toolbox-oauth.png)
+![Screenshot of how to configure an MCP server with an on-behalf-of workflow.](https://learn.microsoft.com/en-us/azure/foundry/media/langchain-toolbox/toolbox-oauth.png)
 
 When a toolbox tool connects to a service that hasn't been authorized yet, the Foundry gateway requires OAuth consent. Instead of raising an exception, `get_tools()`/`aget_tools()` returns a fallback tool that surfaces the consent URL so your agent can present it to the user.
 

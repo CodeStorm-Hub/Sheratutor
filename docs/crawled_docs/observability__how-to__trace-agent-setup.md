@@ -71,28 +71,28 @@ Use tracing to debug your AI agents and monitor their behavior in production. Tr
 
 The recommended starting point is **server-side tracing**. Foundry enables it automatically after you connect an Application Insights resource to your project. No code changes are required, and traces are available within minutes of enabling it. Server-side tracing works for any agent hosted in Foundry. When you need visibility into your own application code - for example, to trace custom logic surrounding an agent call - you can add client-side instrumentation as a second step.
 
-The [Microsoft Foundry Skill](../../how-to/develop/use-microsoft-foundry-skill) can help choose server-side or client-side tracing and troubleshoot missing telemetry.
+The [Microsoft Foundry Skill](https://learn.microsoft.com/en-us/azure/foundry/../how-to/develop/use-microsoft-foundry-skill) can help choose server-side or client-side tracing and troubleshoot missing telemetry.
 
 ## Prerequisites
 
-- A [Foundry project](../../how-to/create-projects).
-- An [Azure Monitor Application Insights resource](/en-us/azure/azure-monitor/app/app-insights-overview) to store traces (create a new one or connect an existing one).
+- A [Foundry project](https://learn.microsoft.com/en-us/azure/foundry/../how-to/create-projects).
+- An [Azure Monitor Application Insights resource](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) to store traces (create a new one or connect an existing one).
 - Access to the Application Insights resource connected to your project.
-- The [Log Analytics Reader role](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#log-analytics-reader) on the connected Application Insights resource (required to query telemetry). If the underlying Log Analytics tables are [protected](/en-us/azure/azure-monitor/logs/protected-tables-configure), also assign the [Privileged Monitoring Data Reader role](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader).
+- The [Log Analytics Reader role](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#log-analytics-reader) on the connected Application Insights resource (required to query telemetry). If the underlying Log Analytics tables are [protected](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure), also assign the [Privileged Monitoring Data Reader role](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader).
 
 ## Connect Application Insights to your Foundry project
 
-Foundry stores traces in [Application Insights](/en-us/azure/azure-monitor/app/app-insights-overview) by using [OpenTelemetry semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/).
+Foundry stores traces in [Application Insights](https://learn.microsoft.com/en-us/azure/azure-monitor/app/app-insights-overview) by using [OpenTelemetry semantic conventions](https://opentelemetry.io/docs/specs/semconv/gen-ai/).
 
 1. Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.
 
-    ![](../../media/version-banner/new-foundry.png)
+    ![](https://learn.microsoft.com/en-us/azure/foundry/../media/version-banner/new-foundry.png)
 2. Open your Foundry project.
 3. In the left navigation, select **Agents**.
 4. At the top, select **Traces**.
 5. On the right, select **Connect** to create or connect an Application Insights resource.
 
-    [![Screenshot of the Agents tab showing traces and the connect button.](../../media/observability/tracing/traces-connect.png)](../../media/observability/tracing/traces-connect.png#lightbox)
+    ![Screenshot of the Agents tab showing traces and the connect button.](https://learn.microsoft.com/en-us/azure/foundry/../media/observability/tracing/traces-connect.png)
 
 - To connect an existing resource, select the resource, and then select **Connect**.
 - To create a new resource, select **Create new**, and then complete the wizard.
@@ -103,11 +103,11 @@ A confirmation message appears when the connection succeeds.
 
 If you don't see the message bar or **Connect** button, use this alternative way to enable Azure Monitor Application Insights.
 
-1. Select **Manage** in the upper-right navigation, and then select **Project details**. [![Screenshot of the Manage section with the Project details option highlighted.](../../media/observability/tracing/project-details.png)](../../media/observability/tracing/project-details.png#lightbox)
-2. Select the **Connected resources** tab, and then select **Add connection**. [![Screenshot of Project details with the Connected resources tab selected and the Add connection button highlighted.](../../media/observability/tracing/connected-resources-add-connection.png)](../../media/observability/tracing/connected-resources-add-connection.png#lightbox)
-3. In **Choose a connection**, select **Application Insights**. [![Screenshot of Choose a connection with Application Insights highlighted.](../../media/observability/tracing/choose-connection.png)](../../media/observability/tracing/choose-connection.png#lightbox)
+1. Select **Manage** in the upper-right navigation, and then select **Project details**. ![Screenshot of the Manage section with the Project details option highlighted.](https://learn.microsoft.com/en-us/azure/foundry/../media/observability/tracing/project-details.png)
+2. Select the **Connected resources** tab, and then select **Add connection**. ![Screenshot of Project details with the Connected resources tab selected and the Add connection button highlighted.](https://learn.microsoft.com/en-us/azure/foundry/../media/observability/tracing/connected-resources-add-connection.png)
+3. In **Choose a connection**, select **Application Insights**. ![Screenshot of Choose a connection with Application Insights highlighted.](https://learn.microsoft.com/en-us/azure/foundry/../media/observability/tracing/choose-connection.png)
 
-For Entra-authenticated trace ingestion, see [Configure Microsoft Entra authentication for Foundry Agent trace ingestion (preview)](trace-ingestion-entra-authentication).
+For Entra-authenticated trace ingestion, see [Configure Microsoft Entra authentication for Foundry Agent trace ingestion (preview)](https://learn.microsoft.com/en-us/azure/foundry/trace-ingestion-entra-authentication).
 
 After you connect the resource, your project is ready to use tracing.
 
@@ -115,9 +115,9 @@ Important
 
 Make sure you have the permissions you need to query telemetry.
 
-- For log-based queries, start by assigning the [Log Analytics Reader role](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#log-analytics-reader). If the underlying Log Analytics tables are [protected](/en-us/azure/azure-monitor/logs/protected-tables-configure), also assign the [Privileged Monitoring Data Reader role](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader).
-- To learn how to assign roles, see [Assign Azure roles using the Azure portal](/en-us/azure/role-based-access-control/role-assignments-portal).
-- To manage access at scale, use [Microsoft Entra groups](../../concepts/rbac-foundry#use-microsoft-entra-groups-with-foundry).
+- For log-based queries, start by assigning the [Log Analytics Reader role](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#log-analytics-reader). If the underlying Log Analytics tables are [protected](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure), also assign the [Privileged Monitoring Data Reader role](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader).
+- To learn how to assign roles, see [Assign Azure roles using the Azure portal](https://learn.microsoft.com/en-us/azure/role-based-access-control/role-assignments-portal).
+- To manage access at scale, use [Microsoft Entra groups](https://learn.microsoft.com/en-us/azure/foundry/../concepts/rbac-foundry#use-microsoft-entra-groups-with-foundry).
 
 ## Instrument AI agents
 
@@ -128,20 +128,20 @@ Choose the approach that matches how you build and run your agent.
 Start with server-side traces. Foundry logs traces for common agent and workflow scenarios without changing your code.
 
 - Foundry automatically logs server-side traces for Prompt agents, Host agents, and workflows in the Foundry portal. After tracing is enabled in your Foundry project, you have access to out-of-the-box traces for the past 90 days.
-- Foundry also supports easy [integration](trace-agent-framework) with top agent frameworks.
+- Foundry also supports easy [integration](https://learn.microsoft.com/en-us/azure/foundry/trace-agent-framework) with top agent frameworks.
 
 ### Client-side traces with the Microsoft Foundry SDK
 
 Install OpenTelemetry and the Azure SDK tracing plugin by using the following steps:
 
-# [Python](#tab/python)
+# **Python**
 ```bash
 pip install azure-ai-projects azure-identity opentelemetry-sdk azure-core-tracing-opentelemetry
 ```
 
-Reference: [azure-ai-projects](/en-us/python/api/overview/azure/ai-projects-readme), [azure-core-tracing-opentelemetry](/en-us/python/api/overview/azure/core-tracing-opentelemetry-readme)
+Reference: [azure-ai-projects](https://learn.microsoft.com/en-us/python/api/overview/azure/ai-projects-readme), [azure-core-tracing-opentelemetry](https://learn.microsoft.com/en-us/python/api/overview/azure/core-tracing-opentelemetry-readme)
 
-# [C#](#tab/csharp)
+# **C#**
 ```dotnetcli
 dotnet add package Azure.AI.Projects
 dotnet add package Azure.AI.Projects.Agents
@@ -165,7 +165,7 @@ AIProjectClient projectClient = new(
    tokenProvider: new DefaultAzureCredential());
 ```
 
-Reference: [`AIProjectClient`](/en-us/dotnet/api/azure.ai.projects.aiprojectclient), [`DefaultAzureCredential`](/en-us/dotnet/api/azure.identity.defaultazurecredential)
+Reference: [`AIProjectClient`](https://learn.microsoft.com/en-us/dotnet/api/azure.ai.projects.aiprojectclient), [`DefaultAzureCredential`](https://learn.microsoft.com/en-us/dotnet/api/azure.identity.defaultazurecredential)
 
 ---
 
@@ -175,7 +175,7 @@ To use a project's endpoint in your application, you need to configure Microsoft
 
 After running your agent, you can view and analyze traces in Foundry portal.
 
-For end-to-end Python and .NET examples that export traces to Azure Monitor or the console, see [Configure client-side tracing](trace-agent-client-side).
+For end-to-end Python and .NET examples that export traces to Azure Monitor or the console, see [Configure client-side tracing](https://learn.microsoft.com/en-us/azure/foundry/trace-agent-client-side).
 
 ### Trace locally with the Microsoft Foundry Toolkit for Visual Studio Code extension
 
@@ -197,7 +197,7 @@ Select a trace to step through each span, identify problems, and observe how you
 
 Your traces are sent to Azure Monitor Application Insights, so you can view them there.
 
-For more information on how to send traces to Azure Monitor and create an Azure Monitor resource, see [Azure Monitor OpenTelemetry documentation](/en-us/azure/azure-monitor/app/opentelemetry-enable).
+For more information on how to send traces to Azure Monitor and create an Azure Monitor resource, see [Azure Monitor OpenTelemetry documentation](https://learn.microsoft.com/en-us/azure/azure-monitor/app/opentelemetry-enable).
 
 ### View conversation results
 
@@ -210,7 +210,7 @@ Search by Response ID or by a Trace ID that maps to this conversation. Then sele
 - Ordered actions, run steps, and tool calls
 - Inputs and outputs between a user and an agent
 
-[![Screenshot of the Conversation details pane in Foundry showing a conversation ID with a trace timeline and run-step details.](../../media/observability/tracing/conversation.png)](../../media/observability/tracing/conversation.png#lightbox)
+![Screenshot of the Conversation details pane in Foundry showing a conversation ID with a trace timeline and run-step details.](https://learn.microsoft.com/en-us/azure/foundry/../media/observability/tracing/conversation.png)
 
 ## Verify tracing works
 
@@ -230,7 +230,7 @@ Tracing can capture sensitive information, such as user inputs, model outputs, a
 - Redact or minimize personal data and other sensitive content before it appears in telemetry.
 - Treat trace data as production telemetry and apply the same access controls and retention policies you use for logs and metrics.
 
-For more guidance, see [Security and privacy](../concepts/trace-agent-concept#security-and-privacy).
+For more guidance, see [Security and privacy](https://learn.microsoft.com/en-us/azure/foundry/concepts/trace-agent-concept#security-and-privacy).
 
 ## Data retention and cost
 
@@ -241,6 +241,6 @@ Foundry stores traces in the Application Insights resource connected to your pro
 | Issue | Cause | Resolution |
 | --- | --- | --- |
 | You don't see any traces in the Foundry portal | Tracing isn't connected, there is no recent traffic, or ingestion is delayed | Confirm the Application Insights connection, generate new agent traffic, and refresh after a few minutes. |
-| You see authorization errors when you query or view telemetry | Missing RBAC permissions on Application Insights or Log Analytics | Confirm access in **Access control (IAM)** for the connected resources. For log queries, assign the [Log Analytics Reader role](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#log-analytics-reader). If the tables are [protected](/en-us/azure/azure-monitor/logs/protected-tables-configure), also assign [Privileged Monitoring Data Reader](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader). |
+| You see authorization errors when you query or view telemetry | Missing RBAC permissions on Application Insights or Log Analytics | Confirm access in **Access control (IAM)** for the connected resources. For log queries, assign the [Log Analytics Reader role](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#log-analytics-reader). If the tables are [protected](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure), also assign [Privileged Monitoring Data Reader](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader). |
 | Client-side traces don't appear | Instrumentation isn't installed or configured | Recheck your package installation and follow the SDK guidance linked in Client-side traces with the Microsoft Foundry SDK. |
 | Sensitive content appears in traces | Prompts, tool arguments, or outputs contain sensitive data | Redact sensitive data before it enters telemetry and follow the guidance in Security and privacy. |

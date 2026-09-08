@@ -67,9 +67,9 @@ platformId: 32c167ba-e4f2-db4e-103a-4efa0e77f7aa
 
 Model router is a trained language model that intelligently routes your prompts in real time to the most suitable large language model (LLM). You deploy model router like any other Foundry model. Thus, it delivers high performance while saving on costs, reducing latencies, and increasing responsiveness, while maintaining comparable quality, all packaged as a single model deployment.
 
-Model router works both as a drop-in model deployment and as an optimization layer. In a traditional hill-climbing workflow, you compare individual models and build routing logic as you search for a better balance of quality, cost, and latency. Model router shortens that model-navigation journey by managing per-request model selection behind one deployment. Evaluation remains important: compare model router with your current baseline to confirm that managed routing improves the outcomes that matter for your workload. For guidance, see [Evaluate model router for your workload](../how-to/evaluate-model-router).
+Model router works both as a drop-in model deployment and as an optimization layer. In a traditional hill-climbing workflow, you compare individual models and build routing logic as you search for a better balance of quality, cost, and latency. Model router shortens that model-navigation journey by managing per-request model selection behind one deployment. Evaluation remains important: compare model router with your current baseline to confirm that managed routing improves the outcomes that matter for your workload. For guidance, see [Evaluate model router for your workload](https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-model-router).
 
-To try model router quickly, follow [How to use model router](../how-to/model-router). After you deploy model router, send a request to the deployment. Model router selects an underlying model for each request based on your routing settings. For a deep dive into the routing pipeline, training, and decision logic, see [How model router works](model-router-how-it-works).
+To try model router quickly, follow [How to use model router](https://learn.microsoft.com/en-us/azure/foundry/how-to/model-router). After you deploy model router, send a request to the deployment. Model router selects an underlying model for each request based on your routing settings. For a deep dive into the routing pipeline, training, and decision logic, see [How model router works](https://learn.microsoft.com/en-us/azure/foundry/model-router-how-it-works).
 
 Note
 
@@ -116,7 +116,7 @@ Tip
 
 You don't need to wait for a new version number to access newly supported models. The `2025-11-18` version is updated in place as new models become available.
 
-If you select **Auto-update** at the deployment step (see [Model updates](../how-to/working-with-models#model-updates)), your model router deployment automatically updates when new versions become available. When that happens, the set of underlying models also changes, which could affect the overall performance of the model and costs.
+If you select **Auto-update** at the deployment step (see [Model updates](https://learn.microsoft.com/en-us/azure/foundry/how-to/working-with-models#model-updates)), your model router deployment automatically updates when new versions become available. When that happens, the set of underlying models also changes, which could affect the overall performance of the model and costs.
 
 ## Supported models
 
@@ -213,7 +213,7 @@ Available routing modes:
 
 ## Govern model router deployments
 
-If your organization uses Azure Policy to control which models can be deployed, model router honors the same built-in Foundry model deployment policy that governs standard model deployments. The policy applies to the model subset that a developer can include in a model router deployment, and it's enforced consistently across the Foundry portal, REST API, Azure CLI, and ARM templates. For the IT admin assignment steps and the developer experience, see [Govern model router deployments with Azure Policy](../../how-to/model-router-policy).
+If your organization uses Azure Policy to control which models can be deployed, model router honors the same built-in Foundry model deployment policy that governs standard model deployments. The policy applies to the model subset that a developer can include in a model router deployment, and it's enforced consistently across the Foundry portal, REST API, Azure CLI, and ARM templates. For the IT admin assignment steps and the developer experience, see [Govern model router deployments with Azure Policy](https://learn.microsoft.com/en-us/azure/foundry/../how-to/model-router-policy).
 
 ## Model subset
 
@@ -230,7 +230,7 @@ For custom deployment configurations:
 - Your selected routing mode (Balanced, Cost, or Quality) continues to apply during failover.
 - Your configured model subset also works as your fallback set to prevent your prompts from getting processed by unapproved models. Therefore, be sure to select model subsets with at least two models to benefit from the fallback capability.
 
-To inspect ordered model attempts and determine whether fallback occurred for an individual Chat Completions request, see [Monitor model router](../how-to/monitor-model-router).
+To inspect ordered model attempts and determine whether fallback occurred for an individual Chat Completions request, see [Monitor model router](https://learn.microsoft.com/en-us/azure/foundry/how-to/monitor-model-router).
 
 ## Prompt caching
 
@@ -238,7 +238,7 @@ Model router supports prompt caching because requests are processed by the under
 
 Cache behavior depends on which underlying model the router selects for a given request. Because routing decisions might vary, caching benefits apply only when the same model handles consecutive requests with overlapping prompt prefixes.
 
-For details on how prompt caching works and which models support it, see [Prompt caching](../how-to/prompt-caching).
+For details on how prompt caching works and which models support it, see [Prompt caching](https://learn.microsoft.com/en-us/azure/foundry/how-to/prompt-caching).
 
 ## Limitations
 
@@ -246,17 +246,17 @@ To overcome the limits on context window and parameters, use the Model subset fe
 
 Note
 
-The context window limit listed for model router is the limit of the smallest underlying model. Other underlying models are compatible with larger context windows, which means an API call with a larger context will succeed only if the prompt happens to be routed to the right model. To review context windows for the underlying models, see [Azure OpenAI in Microsoft Foundry models](../../foundry-models/concepts/models-sold-directly-by-azure).
+The context window limit listed for model router is the limit of the smallest underlying model. Other underlying models are compatible with larger context windows, which means an API call with a larger context will succeed only if the prompt happens to be routed to the right model. To review context windows for the underlying models, see [Azure OpenAI in Microsoft Foundry models](https://learn.microsoft.com/en-us/azure/foundry/../foundry-models/concepts/models-sold-directly-by-azure).
 
 To shorten the context window, you can do one of the following:
 
 - Summarize the prompt before passing it to the model
 - Truncate the prompt into more relevant parts
-- Use document embeddings and have the chat model retrieve relevant sections. For more information, see [What is Azure AI Search?](../../../search/search-what-is-azure-search)
+- Use document embeddings and have the chat model retrieve relevant sections. For more information, see [What is Azure AI Search?](https://learn.microsoft.com/en-us/azure/foundry/../../search/search-what-is-azure-search)
 
 ### Quota tiers
 
-Model router limits scale with your subscription's usage tier. For information on how tiers work, see [Quota tiers](../quotas-limits#quota-tiers).
+Model router limits scale with your subscription's usage tier. For information on how tiers work, see [Quota tiers](https://learn.microsoft.com/en-us/azure/foundry/quotas-limits#quota-tiers).
 
 | Tier | GlobalStandard RPM | GlobalStandard TPM | DataZoneStandard RPM | DataZoneStandard TPM |
 | --- | --- | --- | --- | --- |
@@ -267,9 +267,9 @@ Model router limits scale with your subscription's usage tier. For information o
 | Tier 5 | 10,000 | 10,000,000 | 3,000 | 3,000,000 |
 | Tier 6 | 15,000 | 15,000,000 | 4,000 | 4,000,000 |
 
-For other rate limit information, see [Quotas and limits](../quotas-limits).
+For other rate limit information, see [Quotas and limits](https://learn.microsoft.com/en-us/azure/foundry/quotas-limits).
 
-Model router accepts image inputs for [Vision enabled chats](../how-to/gpt-with-vision) (all of the underlying models can accept image input), but the routing decision is based on the text input only.
+Model router accepts image inputs for [Vision enabled chats](https://learn.microsoft.com/en-us/azure/foundry/how-to/gpt-with-vision) (all of the underlying models can accept image input), but the routing decision is based on the text input only.
 
 Model router doesn't process audio input.
 
@@ -277,12 +277,12 @@ Model router doesn't process audio input.
 
 | Issue | Resolution |
 | --- | --- |
-| Deployment fails | Verify your Foundry resource is in a [supported region](model-router#supported-regions). |
+| Deployment fails | Verify your Foundry resource is in a [supported region](https://learn.microsoft.com/en-us/azure/foundry/model-router#supported-regions). |
 | Claude models not routing | Ensure Claude models are deployed separately before enabling in model router. |
 | Context exceeded error | Reduce prompt size or use model subset to select models with larger context windows. |
 | Unexpected model selection | Review your routing mode setting (Balanced, Cost, Quality) and model subset configuration. |
 
-For detailed deployment troubleshooting, see [How to use model router](../how-to/model-router).
+For detailed deployment troubleshooting, see [How to use model router](https://learn.microsoft.com/en-us/azure/foundry/how-to/model-router).
 
 ## Billing information
 

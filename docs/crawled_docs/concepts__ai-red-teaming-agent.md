@@ -62,7 +62,7 @@ The AI Red Teaming Agent is a powerful tool designed to help organizations proac
 
 Traditional red teaming involves exploiting the cyber kill chain and describes the process by which a system is tested for security vulnerabilities. However, with the rise of generative AI, the term AI red teaming has been coined to describe probing for novel risks (both content and security related) that these systems present and refers to simulating the behavior of an adversarial user who is trying to cause your AI system to misbehave in a particular way.
 
-The AI Red Teaming Agent leverages Microsoft's open-source framework for Python Risk Identification Tool's ([PyRIT](https://github.com/microsoft/PyRIT)) AI red teaming capabilities along with Microsoft Foundry's [Risk and Safety Evaluations](evaluation-evaluators/risk-safety-evaluators) to help you automatically assess safety issues in three ways:
+The AI Red Teaming Agent leverages Microsoft's open-source framework for Python Risk Identification Tool's ([PyRIT](https://github.com/microsoft/PyRIT)) AI red teaming capabilities along with Microsoft Foundry's [Risk and Safety Evaluations](https://learn.microsoft.com/en-us/azure/foundry/evaluation-evaluators/risk-safety-evaluators) to help you automatically assess safety issues in three ways:
 
 - **Automated scans for content risks:** Firstly, you can automatically scan your model and application endpoints for safety risks by simulating adversarial probing.
 - **Evaluate probing success:** Next, you can evaluate and score each attack-response pair to generate insightful metrics such as Attack Success Rate (ASR).
@@ -78,7 +78,7 @@ When thinking about AI-related safety risks developing trustworthy AI systems, M
 - Measure: Evaluate risks at scale.
 - Manage: Mitigate risks in production and monitor with a plan for incident response.
 
-[![Diagram of how to use AI Red Teaming Agent showing proactive to reactive and less costly to more costly.](../media/evaluations/red-teaming-agent/map-measure-mitigate-ai-red-teaming.png)](../media/evaluations/red-teaming-agent/map-measure-mitigate-ai-red-teaming.png#lightbox)
+![Diagram of how to use AI Red Teaming Agent showing proactive to reactive and less costly to more costly.](https://learn.microsoft.com/en-us/azure/foundry/media/evaluations/red-teaming-agent/map-measure-mitigate-ai-red-teaming.png)
 
 AI Red Teaming Agent can be used to run automated scans and simulate adversarial probing to help accelerate the identification and evaluation of known risks at scale. This helps teams "shift left" from costly reactive incidents to more proactive testing frameworks that can catch issues before deployment. Manual AI red teaming process is time and resource intensive. It relies on the creativity of safety and security expertise to simulate adversarial probing. This process can create a bottleneck for many organizations to accelerate AI adoption. With the AI Red Teaming Agent, organizations can now leverage Microsoft's deep expertise to scale and accelerate their AI development with Trustworthy AI at the forefront.
 
@@ -89,7 +89,7 @@ Use the AI Red Teaming Agent to run automated scans throughout the design, devel
 - Pre-deployment: Before deploying GenAI applications and agents to production.
 - Post-deployment: Monitor your Gen AI applications and agents after deployment with scheduled continuous red teaming runs on synthetic adversarial data.
 
-In production, we recommend implementing **safety guardrails** such as [Azure AI Content Safety filters](../../ai-services/content-safety/overview) or implementing safety system messages using our [templates](../openai/concepts/safety-system-message-templates). For agentic workflows, we recommend leveraging [Foundry Control Plane](../control-plane/overview) to apply guardrails and govern your fleet of agents.
+In production, we recommend implementing **safety guardrails** such as [Azure AI Content Safety filters](https://learn.microsoft.com/en-us/azure/foundry/../ai-services/content-safety/overview) or implementing safety system messages using our [templates](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/safety-system-message-templates). For agentic workflows, we recommend leveraging [Foundry Control Plane](control-plane__overview.md) to apply guardrails and govern your fleet of agents.
 
 ## How AI Red Teaming works
 
@@ -97,13 +97,13 @@ The AI Red Teaming Agent helps automate simulation of adversarial probing of you
 
 The diagram shows that a direct ask to your AI system on how to loot a bank triggers a refusal response. However, applying an attack strategy such as flipping all the characters can help trick the model into answering the question.
 
-[![Diagram of how AI Red Teaming Agent works.](../media/evaluations/red-teaming-agent/how-ai-red-teaming-works.png)](../media/evaluations/red-teaming-agent/how-ai-red-teaming-works.png#lightbox)
+![Diagram of how AI Red Teaming Agent works.](https://learn.microsoft.com/en-us/azure/foundry/media/evaluations/red-teaming-agent/how-ai-red-teaming-works.png)
 
 Additionally, the AI Red Teaming Agent provides users with a fine-tuned adversarial large language model dedicated to the task of simulating adversarial attacks and evaluating responses that might have harmful content in them with the Risk and Safety Evaluators. The key metric to assess the risk posture of your AI system is Attack Success Rate (ASR) which calculates the percentage of successful attacks over the number of total attacks.
 
 ## Supported risk categories
 
-The following risk categories are supported in the AI Red Teaming Agent from [Risk and Safety Evaluations](evaluation-evaluators/risk-safety-evaluators). Only text-based scenarios are supported.
+The following risk categories are supported in the AI Red Teaming Agent from [Risk and Safety Evaluations](https://learn.microsoft.com/en-us/azure/foundry/evaluation-evaluators/risk-safety-evaluators). Only text-based scenarios are supported.
 
 | **Risk category** | **Supported target(s)** | **Local or cloud red teaming** | **Description** |
 | --- | --- | --- | --- |
@@ -179,7 +179,7 @@ The AI Red Teaming Agent currently supported red teaming Foundry agents with Azu
 | Connected Agent tool calls | Not Supported |
 | Computer Use tool calls | Not Supported |
 
-For a list of tools and how to connect them by using a Foundry Toolbox, see [Foundry Toolbox overview](../agents/concepts/toolbox-overview).
+For a list of tools and how to connect them by using a Foundry Toolbox, see [Foundry Toolbox overview](agents__concepts__toolbox-overview.md).
 
 ## Supported attack strategies
 
@@ -226,16 +226,16 @@ AI Red Teaming Agent has several important limitations to consider when running 
 
 Get started with our documentation on how to run an automated scan for safety risks with the AI Red Teaming Agent
 
-- [Run AI Red Teaming Agent in the cloud](../how-to/develop/run-ai-red-teaming-cloud).
-- [Run AI Red Teaming Agent locally](../how-to/develop/run-scans-ai-red-teaming-agent).
+- [Run AI Red Teaming Agent in the cloud](https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/run-ai-red-teaming-cloud).
+- [Run AI Red Teaming Agent locally](https://learn.microsoft.com/en-us/azure/foundry/how-to/develop/run-scans-ai-red-teaming-agent).
 
 Learn more about the tools used by the AI Red Teaming Agent.
 
-- [Azure AI Risk and Safety Evaluations](safety-evaluations-transparency-note)
+- [Azure AI Risk and Safety Evaluations](https://learn.microsoft.com/en-us/azure/foundry/safety-evaluations-transparency-note)
 - [PyRIT: Python Risk Identification Tool](https://github.com/microsoft/PyRIT)
 
 The most effective strategies for risk assessment combine automated tools that surface potential risks with expert human analysis for deeper insights. If your organization is just starting with AI red teaming, explore the resources created by the Microsoft AI red team:
 
-- [Planning red teaming for large language models (LLMs) and their applications](../openai/concepts/red-teaming)
+- [Planning red teaming for large language models (LLMs) and their applications](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/red-teaming)
 - [Three takeaways from red teaming 100 generative AI products](https://www.microsoft.com/security/blog/2025/01/13/3-takeaways-from-red-teaming-100-generative-ai-products/)
 - [Microsoft AI Red Team building future of safer AI](https://www.microsoft.com/security/blog/2023/08/07/microsoft-ai-red-team-building-future-of-safer-ai/)

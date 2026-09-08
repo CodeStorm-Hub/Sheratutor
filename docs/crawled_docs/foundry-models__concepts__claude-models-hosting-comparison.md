@@ -63,7 +63,7 @@ platformId: aa31f7b5-fba7-3a9f-262a-f56900b6ef8a
 
 Microsoft Foundry offers Claude models in two hosting configurations: **Hosted on Azure** and **Hosted on Anthropic infrastructure**. This article outlines how the various aspects are impacted by the hosting option you choose.
 
-For model availability and capabilities, see [Claude models in Microsoft Foundry](claude-models). For detailed data handling information, see [Data, privacy, and security for Claude models](../../responsible-ai/claude-models/data-privacy).
+For model availability and capabilities, see [Claude models in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/claude-models). For detailed data handling information, see [Data, privacy, and security for Claude models](https://learn.microsoft.com/en-us/azure/foundry/../responsible-ai/claude-models/data-privacy).
 
 ## At a glance
 
@@ -139,7 +139,7 @@ Both hosting options use the same Azure Marketplace purchasing flow:
 3. Deploy a Claude model from the Foundry catalog. If the model is available in both versions, you land on the Azure-hosted version by default.
 4. Usage is metered and billed in Claude Consumption Units (CCU).
 
-For step-by-step instructions, see [Deploy and use Claude models in Microsoft Foundry](../how-to/use-foundry-models-claude).
+For step-by-step instructions, see [Deploy and use Claude models in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-claude).
 
 ### Billing
 
@@ -150,7 +150,7 @@ Both hosting options use **Claude Consumption Units (CCU)** for billing, with th
 - **Hourly metering**, invoiced monthly in arrears
 - **Pay-as-you-go** — no prepaid CCU credits
 
-For a full explanation of CCU billing, see [Claude Consumption Units (CCU) billing in Microsoft Foundry](claude-models-billing).
+For a full explanation of CCU billing, see [Claude Consumption Units (CCU) billing in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/claude-models-billing).
 
 ### Subscription type restrictions
 
@@ -166,7 +166,7 @@ The following subscription types aren't supported for Claude models:
 
 To request a quota increase beyond your default rate limits, submit the [quota increase request form](https://aka.ms/oai/stuquotarequest).
 
-For current default rate limits by subscription type, see [Claude models in Microsoft Foundry — Quotas and rate limits](claude-models#quotas-and-rate-limits).
+For current default rate limits by subscription type, see [Claude models in Microsoft Foundry — Quotas and rate limits](https://learn.microsoft.com/en-us/azure/foundry/claude-models#quotas-and-rate-limits).
 
 ## Choose the right option for your workload
 

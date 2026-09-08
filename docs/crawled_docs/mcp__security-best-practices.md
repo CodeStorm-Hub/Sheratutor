@@ -79,9 +79,9 @@ This feature is currently in public preview. This preview is provided without a 
 ## Prerequisites
 
 - An Azure account with an active subscription.
-- A [Foundry project](../quickstarts/get-started-code) with Contributor or higher role.
-- To configure Conditional Access policies, you need the [Conditional Access Administrator](/en-us/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator) role in Microsoft Entra ID.
-- [Azure CLI](/en-us/cli/azure/install-azure-cli) (required only for the `az ad sp create` command).
+- A [Foundry project](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/get-started-code) with Contributor or higher role.
+- To configure Conditional Access policies, you need the [Conditional Access Administrator](https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference#conditional-access-administrator) role in Microsoft Entra ID.
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) (required only for the `az ad sp create` command).
 
 ## Interpreting the response
 
@@ -158,7 +158,7 @@ Azure role-based access control (RBAC) applies to all operations on Foundry reso
 | Delete | Contributor | Delete deployments, remove datasets |
 | Manage access | Owner or User Access Administrator | Assign roles, manage permissions |
 
-For more information on role assignments, see [Role-based access control for Microsoft Foundry](../concepts/rbac-foundry).
+For more information on role assignments, see [Role-based access control for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry).
 
 ### Control access with Conditional Access policies
 
@@ -173,18 +173,18 @@ Tenant admins can use Conditional Access policies to grant or block access to Fo
     The application ID in this command represents Foundry MCP Server. You can verify this application ID by searching for "Foundry MCP Server" in the Entra ID enterprise applications list.
 2. Find the enterprise application for Foundry MCP Server using the application ID. Open the [Azure portal Entra ID page](https://portal.azure.com/#view/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/%7E/Overview) and search for the application ID `fcdfa2de-b65b-4b54-9a1c-81c8a18282d9`.
 
-    ![Screenshot of MCP app in Entra ID.](../media/mcp/foundry-find-mcp-app.png)
+    ![Screenshot of MCP app in Entra ID.](https://learn.microsoft.com/en-us/azure/foundry/media/mcp/foundry-find-mcp-app.png)
 3. Select **Conditional Access** under **Security** on the left pane of the selected app, then select **New Policy** to configure access control.
 
     1. Under **Users**, select **Specific users included** and add the users or groups you want to restrict.
     2. Under **Target resources**, confirm the Foundry MCP Server application is selected.
 
-    ![Screenshot of conditional access options for the app configuration.](../media/mcp/foundry-conditional-access.png)
+    ![Screenshot of conditional access options for the app configuration.](https://learn.microsoft.com/en-us/azure/foundry/media/mcp/foundry-conditional-access.png)
 
-    ![Screenshot of creating a new conditional access policy for the app.](../media/mcp/foundry-new-access-policy.png)
+    ![Screenshot of creating a new conditional access policy for the app.](https://learn.microsoft.com/en-us/azure/foundry/media/mcp/foundry-new-access-policy.png)
 4. Select **Grant**, then choose **Block access**.
 
-    ![A screenshot showing how to block app access.](../media/mcp/foundry-block-access.png)
+    ![A screenshot showing how to block app access.](https://learn.microsoft.com/en-us/azure/foundry/media/mcp/foundry-block-access.png)
 
 After the policy is in place, designated users and groups can't obtain the Entra token needed to connect.
 
@@ -194,7 +194,7 @@ Foundry MCP Server currently doesn't support network isolation. It exposes the p
 
 Note
 
-This limitation applies to the hosted Foundry MCP Server (`mcp.ai.azure.com`). If you build your own MCP server and connect it to Foundry Agent Service, Agent Service supports [private MCP server endpoints](../agents/how-to/tools/model-context-protocol#public-and-private-mcp-server-endpoints) through Standard Agent Setup with private networking.
+This limitation applies to the hosted Foundry MCP Server (`mcp.ai.azure.com`). If you build your own MCP server and connect it to Foundry Agent Service, Agent Service supports [private MCP server endpoints](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol#public-and-private-mcp-server-endpoints) through Standard Agent Setup with private networking.
 
 ### Data residency
 
@@ -216,7 +216,7 @@ If you receive a `401 Unauthorized` error or the sign-in prompt doesn't appear:
 2. Sign back in with a Microsoft account that has access to your Azure subscription.
 3. Verify your access token is valid by running `az account get-access-token --resource https://mcp.ai.azure.com` in the terminal.
 
-If the token request fails, confirm your account has the required Entra ID permissions. For more information, see [Manage users and authentication in Entra ID](/en-us/entra/fundamentals/how-to-manage-user-profile-info).
+If the token request fails, confirm your account has the required Entra ID permissions. For more information, see [Manage users and authentication in Entra ID](https://learn.microsoft.com/en-us/entra/fundamentals/how-to-manage-user-profile-info).
 
 ### Permission errors
 
@@ -226,7 +226,7 @@ If you see `403 Forbidden` or "Access denied" errors when running MCP tools:
 2. Select **Access control (IAM)** and verify your account has Contributor or higher role.
 3. If you recently received a role assignment, wait a few minutes for propagation and try again.
 
-For more information, see [Role-based access control for Microsoft Foundry](../concepts/rbac-foundry).
+For more information, see [Role-based access control for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry).
 
 ### Server connectivity issues
 
@@ -236,7 +236,7 @@ If the MCP server fails to start or times out:
 2. Check for proxy or firewall rules that might block the endpoint.
 3. Try opening `https://mcp.ai.azure.com` in a browser to confirm reachability.
 
-If your Foundry resources use Azure Private Links, the hosted Foundry MCP Server can't reach them through the public endpoint. Disable Private Link, use SDKs/REST APIs, or use a [custom MCP server with private networking](../agents/how-to/tools/model-context-protocol#public-and-private-mcp-server-endpoints) through Foundry Agent Service.
+If your Foundry resources use Azure Private Links, the hosted Foundry MCP Server can't reach them through the public endpoint. Disable Private Link, use SDKs/REST APIs, or use a [custom MCP server with private networking](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol#public-and-private-mcp-server-endpoints) through Foundry Agent Service.
 
 ### Tool discovery problems
 

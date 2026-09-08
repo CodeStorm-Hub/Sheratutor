@@ -69,9 +69,9 @@ This article explains how to view your agent inventory, monitor agent health, an
 ## Prerequisites
 
 - An Azure account with an active subscription. If you don't have one, create a [free Azure account, which includes a free trial subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
-- A Foundry project. If you don't have one, [create a project](../how-to/create-projects).
+- A Foundry project. If you don't have one, [create a project](https://learn.microsoft.com/en-us/azure/foundry/how-to/create-projects).
 
-- [Application Insights configured](monitoring-across-fleet#configure-monitoring) for observability metrics (optional but recommended).
+- [Application Insights configured](https://learn.microsoft.com/en-us/azure/foundry/monitoring-across-fleet#configure-monitoring) for observability metrics (optional but recommended).
 
 ## Agent inventory
 
@@ -79,7 +79,7 @@ The **Assets** pane provides a unified, searchable table of all AI assets across
 
 Foundry Control Plane automatically discovers supported agents within resources in the selected subscription and displays them on the **Agents** tab. To view them, select **Operate** &gt; **Assets** &gt; **Agents**.
 
-[![Screenshot of the tab that contains an inventory of agents.](media/how-to-manage-agents/inventory-all-agents.png)](media/how-to-manage-agents/inventory-all-agents.png#lightbox)
+![Screenshot of the tab that contains an inventory of agents.](https://learn.microsoft.com/en-us/azure/foundry/media/how-to-manage-agents/inventory-all-agents.png)
 
 The following information appears:
 
@@ -90,13 +90,13 @@ The following information appears:
 | **Project** | The Foundry project associated with the agent. For custom agents, it's the project where the agent was registered. | FoundryCustom |
 | **Status** | Refers to a broad range of conditions, including operational, health, or lifecycle status of the agent. Agents transition to different values, depending on the platform and lifecycle operations. Possible values are: <br>- Running<br>- Stopped<br>- Blocked<br>- Unknown | All |
 | **Version** | The version of the agent asset. | Foundry |
-| **Published as** | Indicates if the agent was [published as an agent application](../agents/how-to/agent-applications). Published agents in Foundry have their own endpoint for invocation. | Foundry |
+| **Published as** | Indicates if the agent was [published as an agent application](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/agent-applications). Published agents in Foundry have their own endpoint for invocation. | Foundry |
 | **Error rate** | The proportion of failed runs compared to successful ones in the last month. This column requires observability configured. | All |
 | **Estimated cost** | The estimated cost of the agent executions in the last month, based on the number of tokens consumed. This column requires observability configured. | Foundry |
 | **Token usage** | The estimated tokens consumed by the runs in the last month. This column requires observability configured. | Foundry |
 | **Runs** | The number of executions in the last month. This column requires observability configured. | All |
-| **Monitoring features** | The number of monitoring features that are enabled in the agent. See [The three stages of AI application lifecycle evaluation](../concepts/observability#the-three-stages-of-ai-application-lifecycle-evaluation). | Foundry |
-| **Entra ID** | The Microsoft Entra Agent ID application and object ID associated with the agent. An agent identity is a special service principal in Microsoft Entra ID. It represents an identity that the agent identity blueprint created and is authorized to impersonate. See [Agent identity concepts in Microsoft Foundry](../agents/concepts/agent-identity). | Foundry |
+| **Monitoring features** | The number of monitoring features that are enabled in the agent. See [The three stages of AI application lifecycle evaluation](https://learn.microsoft.com/en-us/azure/foundry/concepts/observability#the-three-stages-of-ai-application-lifecycle-evaluation). | Foundry |
+| **Entra ID** | The Microsoft Entra Agent ID application and object ID associated with the agent. An agent identity is a special service principal in Microsoft Entra ID. It represents an identity that the agent identity blueprint created and is authorized to impersonate. See [Agent identity concepts in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/agent-identity). | Foundry |
 
 ### Permissions model
 
@@ -118,10 +118,10 @@ These roles are the minimum requirements. Custom roles with equivalent permissio
 
 Foundry Control Plane automatically discovers agents in the following platforms:
 
-- Foundry agents, including [prompt-based agents](../agents/overview), [workflows](../agents/concepts/workflow), and [hosted agents](../agents/concepts/hosted-agents)
-- [Azure SRE Agent](/en-us/azure/sre-agent/)
-- [Azure Logic Apps agent loops](/en-us/azure/logic-apps/agent-workflows-concepts)
-- [Custom agents](register-custom-agent)
+- Foundry agents, including [prompt-based agents](agents__overview.md), [workflows](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/workflow), and [hosted agents](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/hosted-agents)
+- [Azure SRE Agent](https://learn.microsoft.com/en-us/azure/sre-agent/)
+- [Azure Logic Apps agent loops](https://learn.microsoft.com/en-us/azure/logic-apps/agent-workflows-concepts)
+- [Custom agents](https://learn.microsoft.com/en-us/azure/foundry/register-custom-agent)
 
 ### Foundry agents
 
@@ -130,11 +130,11 @@ Foundry Control Plane helps you manage agents across all your Foundry projects. 
 For each agent, the information includes:
 
 - The latest version of the agent.
-- Versions [published as agent applications](../agents/how-to/agent-applications).
+- Versions [published as agent applications](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/agent-applications).
 
 You can monitor versions consumed by your users and new versions under development. The following example shows multiple Foundry agents listed. Version 6 of the `format-agent` agent was published, but version 7 (latest) is still under development.
 
-[![Screenshot of multiple Foundry agents listed in an inventory.](media/how-to-manage-agents/inventory-foundry-agent.png)](media/how-to-manage-agents/inventory-foundry-agent.png#lightbox)
+![Screenshot of multiple Foundry agents listed in an inventory.](https://learn.microsoft.com/en-us/azure/foundry/media/how-to-manage-agents/inventory-foundry-agent.png)
 
 Note
 
@@ -142,13 +142,13 @@ Classic agents and Azure OpenAI assistants aren't supported.
 
 ### Azure SRE Agent
 
-Azure SRE Agent helps you maintain the health and performance of your Azure resources through AI-powered monitoring and assistance. Agents continuously watch your resources for problems, provide troubleshooting help, and suggest remediation steps in a natural-language chat interface. [Learn more about Azure SRE Agent](/en-us/azure/sre-agent/).
+Azure SRE Agent helps you maintain the health and performance of your Azure resources through AI-powered monitoring and assistance. Agents continuously watch your resources for problems, provide troubleshooting help, and suggest remediation steps in a natural-language chat interface. [Learn more about Azure SRE Agent](https://learn.microsoft.com/en-us/azure/sre-agent/).
 
 Foundry Control Plane discovers Azure SRE Agent resources in your subscription and displays them in the inventory.
 
 ### Azure Logic Apps agent loop
 
-Azure Logic Apps supports workflows that complete tasks by using agent loops with large language models (LLMs). An agent loop uses an iterative process to solve complex, multistep problems. [Learn more about workflows with AI agents and models in Logic Apps](/en-us/azure/logic-apps/agent-workflows-concepts).
+Azure Logic Apps supports workflows that complete tasks by using agent loops with large language models (LLMs). An agent loop uses an iterative process to solve complex, multistep problems. [Learn more about workflows with AI agents and models in Logic Apps](https://learn.microsoft.com/en-us/azure/logic-apps/agent-workflows-concepts).
 
 Foundry Control Plane discovers Logic Apps resources that contain agent loop workflows and lists them in the inventory.
 
@@ -162,7 +162,7 @@ For agentic platforms that Foundry Control Plane doesn't support, you can manual
 
 Registering custom agents that run in Azure compute services or other cloud environments can help you gain visibility into their operations and control their behavior. You can register a custom agent in Foundry Control Plane and develop the agent in the technology of your choice, for both platform and infrastructure solutions.
 
-[Learn how to register an agent in Foundry Control Plane](register-custom-agent) to enable management.
+[Learn how to register an agent in Foundry Control Plane](https://learn.microsoft.com/en-us/azure/foundry/register-custom-agent) to enable management.
 
 ## Observability of agents
 
@@ -172,7 +172,7 @@ Foundry Control Plane uses the Application Insights resources that host your age
 - Compute usage metrics, including token usage and cost.
 - Collect execution traces.
 
-If you don't see such information for your agent, you need to [configure Application Insights](monitoring-across-fleet#configure-monitoring). Ensure that you also have [the appropriate permissions to view Application Insights data and cost metrics](monitoring-across-fleet#prerequisites).
+If you don't see such information for your agent, you need to [configure Application Insights](https://learn.microsoft.com/en-us/azure/foundry/monitoring-across-fleet#configure-monitoring). Ensure that you also have [the appropriate permissions to view Application Insights data and cost metrics](https://learn.microsoft.com/en-us/azure/foundry/monitoring-across-fleet#prerequisites).
 
 Tip
 
@@ -191,14 +191,14 @@ To view them:
 
     Two columns contain IDs associated with the call: **Trace ID** and **Conversation ID**. Traces are stored in Application Insights and contain data to diagnose behavior. The **Conversation ID** column applies for Foundry agents. It contains the *conversation* associated with the trace. Conversations are stored in the Foundry service.
 
-    [![Screenshot of the traces associated with one agent.](media/how-to-manage-agents/inventory-traces-list.png)](media/how-to-manage-agents/inventory-traces-list.png#lightbox)
+    ![Screenshot of the traces associated with one agent.](https://learn.microsoft.com/en-us/azure/foundry/media/how-to-manage-agents/inventory-traces-list.png)
 5. To see the details, select a value in the **Trace ID** column.
 
-    [![Screenshot of a single trace with LLM calls.](media/how-to-manage-agents/inventory-traces-view.png)](media/how-to-manage-agents/inventory-traces-view.png#lightbox)
+    ![Screenshot of a single trace with LLM calls.](https://learn.microsoft.com/en-us/azure/foundry/media/how-to-manage-agents/inventory-traces-view.png)
 
     Tip
 
-    Custom agents require extra configuration to show details, including tools and LLM spans. Learn more at [Instrument custom code agents](register-custom-agent#instrument-custom-code-agents).
+    Custom agents require extra configuration to show details, including tools and LLM spans. Learn more at [Instrument custom code agents](https://learn.microsoft.com/en-us/azure/foundry/register-custom-agent#instrument-custom-code-agents).
 
 ## Lifecycle operations
 
@@ -228,7 +228,7 @@ To stop an agent:
 3. Select the agent that you want to stop. The information pane appears.
 4. Select **Update status**, and then select **Stop**.
 
-    [![Screenshot of steps for stopping an agent.](media/how-to-manage-agents/how-to-manage-agents-stop.png)](media/how-to-manage-agents/how-to-manage-agents-stop.png#lightbox)
+    ![Screenshot of steps for stopping an agent.](https://learn.microsoft.com/en-us/azure/foundry/media/how-to-manage-agents/how-to-manage-agents-stop.png)
 5. Confirm the operation.
 
 Note
@@ -244,7 +244,7 @@ To start the agent:
 
 ### Block and unblock agents
 
-For [custom agents](register-custom-agent), Foundry doesn't have access to the underlying infrastructure where the agent runs, so start and stop operations aren't available. However, Foundry can block incoming requests to the agent. Blocking prevents clients from using the agent. This capability allows administrators to disable an agent if it misbehaves.
+For [custom agents](https://learn.microsoft.com/en-us/azure/foundry/register-custom-agent), Foundry doesn't have access to the underlying infrastructure where the agent runs, so start and stop operations aren't available. However, Foundry can block incoming requests to the agent. Blocking prevents clients from using the agent. This capability allows administrators to disable an agent if it misbehaves.
 
 To block incoming requests to your agent:
 
@@ -253,7 +253,7 @@ To block incoming requests to your agent:
 3. Select the agent that you want to block. The information pane appears.
 4. Select **Update status**, and then select **Block**.
 
-    [![Screenshot of steps for blocking incoming requests to an agent.](media/register-custom-agent/register-custom-agent-block.png)](media/register-custom-agent/register-custom-agent-block.png#lightbox)
+    ![Screenshot of steps for blocking incoming requests to an agent.](https://learn.microsoft.com/en-us/azure/foundry/media/register-custom-agent/register-custom-agent-block.png)
 5. Confirm the operation.
 
 After you block the agent, the **Status** value of the agent in Foundry is **Blocked**. Agents in the **Blocked** state run in their associated infrastructure but can't take incoming requests. Foundry blocks any attempt to communicate with the agent.
@@ -284,8 +284,8 @@ To troubleshoot an **Unknown** status:
 
 If metrics like error rate, token usage, or cost don't appear for an agent:
 
-1. Verify that [Application Insights is configured](monitoring-across-fleet#configure-monitoring) for the resource that hosts the agent.
-2. Confirm you have the [required permissions](monitoring-across-fleet#prerequisites) to view Application Insights data and cost metrics.
+1. Verify that [Application Insights is configured](https://learn.microsoft.com/en-us/azure/foundry/monitoring-across-fleet#configure-monitoring) for the resource that hosts the agent.
+2. Confirm you have the [required permissions](https://learn.microsoft.com/en-us/azure/foundry/monitoring-across-fleet#prerequisites) to view Application Insights data and cost metrics.
 3. Run the agent after you configure Application Insights. Metrics and traces are collected only for runs that occur after configuration. Past runs aren't retroactively captured.
 4. Wait up to 15 minutes for data to propagate after the first post-configuration run.
 
@@ -296,4 +296,4 @@ If an expected agent doesn't appear in the **Assets** pane:
 1. Confirm the agent is in a supported platform.
 2. Verify you have RBAC permissions on the resource that hosts the agent.
 3. Check that the agent is within the currently selected subscription.
-4. For custom agents, verify the agent is [registered in a Foundry project](register-custom-agent).
+4. For custom agents, verify the agent is [registered in a Foundry project](https://learn.microsoft.com/en-us/azure/foundry/register-custom-agent).

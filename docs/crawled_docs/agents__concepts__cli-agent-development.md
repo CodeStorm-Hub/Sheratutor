@@ -73,13 +73,13 @@ The `azd ai` workflow follows the same lifecycle whether you build a small proto
 
 | Stage | What you do | Where to learn more |
 | --- | --- | --- |
-| Install | Install `azd` and the Foundry extensions. | [Set up your developer environment](../../how-to/develop/install-cli-sdk) |
-| Scaffold | Initialize a project from a template or your existing code. | [Quickstart: Deploy a hosted agent](../quickstarts/quickstart-hosted-agent) |
-| Define | Configure the agent, model deployment dependencies, protocols, tools, and environment in `azure.yaml`. | [Author azure.yaml for hosted agents](../how-to/author-azure-yaml) |
-| Develop | Write agent logic, add tools using a toolbox, and test locally. | [Toolbox overview](toolbox-overview) |
-| Deploy | Provision infrastructure and deploy to Foundry. | [Deploy a hosted agent](../how-to/deploy-hosted-agent) |
-| Operate | Monitor logs, manage versions, and automate runs. | [Manage hosted agents](../how-to/manage-hosted-agent) |
-| Evaluate | Measure agent quality and improve the prompt. | [Run agent evaluations with the azd CLI](../../observability/how-to/azure-developer-cli-evaluation) |
+| Install | Install `azd` and the Foundry extensions. | [Set up your developer environment](https://learn.microsoft.com/en-us/azure/foundry/../how-to/develop/install-cli-sdk) |
+| Scaffold | Initialize a project from a template or your existing code. | [Quickstart: Deploy a hosted agent](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-hosted-agent) |
+| Define | Configure the agent, model deployment dependencies, protocols, tools, and environment in `azure.yaml`. | [Author azure.yaml for hosted agents](https://learn.microsoft.com/en-us/azure/foundry/how-to/author-azure-yaml) |
+| Develop | Write agent logic, add tools using a toolbox, and test locally. | [Toolbox overview](https://learn.microsoft.com/en-us/azure/foundry/toolbox-overview) |
+| Deploy | Provision infrastructure and deploy to Foundry. | [Deploy a hosted agent](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-hosted-agent) |
+| Operate | Monitor logs, manage versions, and automate runs. | [Manage hosted agents](https://learn.microsoft.com/en-us/azure/foundry/how-to/manage-hosted-agent) |
+| Evaluate | Measure agent quality and improve the prompt. | [Run agent evaluations with the azd CLI](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/azure-developer-cli-evaluation) |
 
 ## Agent types
 
@@ -123,7 +123,7 @@ A protocol defines the HTTP contract between Foundry and your agent container. Y
 | `responses` | OpenAI Responses API (`POST /responses`) | The standard choice, compatible with the OpenAI API ecosystem. |
 | `invocations` | Custom JSON contract (`POST /invocations`) | When you need full control over request and response payloads. |
 
-For the full specification, see [Hosted agent runtime contract](hosted-agent-contract).
+For the full specification, see [Hosted agent runtime contract](https://learn.microsoft.com/en-us/azure/foundry/hosted-agent-contract).
 
 ## Sessions and conversations
 
@@ -154,7 +154,7 @@ After an agent runs, two related workflows help you measure and improve its qual
 - Evaluation runs your agent against a dataset, scores the responses with one or more evaluators, and reports an aggregate quality signal. You manage it with `azd ai agent eval`.
 - Optimization iteratively rewrites your agent's prompt to lift an evaluation signal. It uses an evaluation as its objective function and produces a candidate prompt that you review and accept. You manage it with `azd ai agent optimize`.
 
-For details, see [Run agent evaluations with the azd CLI](../../observability/how-to/azure-developer-cli-evaluation) and [Optimize agent prompts](../../observability/how-to/prompt-optimizer).
+For details, see [Run agent evaluations with the azd CLI](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/azure-developer-cli-evaluation) and [Optimize agent prompts](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/prompt-optimizer).
 
 ## Deployment lifecycle
 

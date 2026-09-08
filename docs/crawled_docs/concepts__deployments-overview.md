@@ -63,20 +63,20 @@ Microsoft Foundry Models is the hub for discovering and deploying a wide range o
 
 Tip
 
-You don't always need to create a deployment. With [instant access (preview)](instant-models), you call supported models by name and start running inference immediately — no deployment required.
+You don't always need to create a deployment. With [instant access (preview)](https://learn.microsoft.com/en-us/azure/foundry/instant-models), you call supported models by name and start running inference immediately — no deployment required.
 
 ## Deployment options
 
 Foundry provides two deployment options:
 
-- **Serverless API** — For Foundry Models, including [Foundry Models sold by Azure](../foundry-models/concepts/models-sold-directly-by-azure) and [select Models from partners and community](../foundry-models/concepts/models-from-partners). This option is the preferred and most capable deployment path. It includes the standard, provisioned throughput, batch, and developer deployment types.
+- **Serverless API** — For Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure.md) and [select Models from partners and community](foundry-models__concepts__models-from-partners.md). This option is the preferred and most capable deployment path. It includes the standard, provisioned throughput, batch, and developer deployment types.
 - **Managed compute (preview)** — For open-source, partner, and custom models that run on dedicated GPU capacity that Foundry manages for you.
 
 Foundry selects the appropriate deployment option based on the model you choose.
 
-If you only need to try a supported model, you can skip deployment entirely and use [instant access (preview)](instant-models), which calls models by name without creating a Serverless API or managed compute deployment.
+If you only need to try a supported model, you can skip deployment entirely and use [instant access (preview)](https://learn.microsoft.com/en-us/azure/foundry/instant-models), which calls models by name without creating a Serverless API or managed compute deployment.
 
-[![Diagram that shows choosing between instant access, Serverless API deployment types by launch order, and managed compute.](media/deployments-overview/deployment-options-hierarchy.png)](media/deployments-overview/deployment-options-hierarchy.png#lightbox)
+![Diagram that shows choosing between instant access, Serverless API deployment types by launch order, and managed compute.](https://learn.microsoft.com/en-us/azure/foundry/media/deployments-overview/deployment-options-hierarchy.png)
 
 For a full capability comparison, see Deployment option comparison.
 
@@ -86,18 +86,18 @@ Serverless API is **the preferred deployment option** in Foundry. It supports th
 
 ### Which models use serverless API deployments?
 
-All Foundry Models, including [Foundry Models sold by Azure](../foundry-models/concepts/models-sold-directly-by-azure) and [select Models from partners and community](../foundry-models/concepts/models-from-partners), use serverless API deployments. Foundry Models sold by Azure include all Azure OpenAI models and selected models from top providers that are billed through your Azure subscription, covered by Azure service-level agreements, and supported by Microsoft. Models from partners and community that use serverless API deployments include Anthropic models and specific models from partners like Mistral, Cohere, and Meta.
+All Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure.md) and [select Models from partners and community](foundry-models__concepts__models-from-partners.md), use serverless API deployments. Foundry Models sold by Azure include all Azure OpenAI models and selected models from top providers that are billed through your Azure subscription, covered by Azure service-level agreements, and supported by Microsoft. Models from partners and community that use serverless API deployments include Anthropic models and specific models from partners like Mistral, Cohere, and Meta.
 
 ### Serverless API capabilities
 
 Serverless API deployments support:
 
-- **Multiple deployment types (or deployment SKUs)** — Global Standard, Data Zone Standard, Standard (single region), provisioned, batch, and more. Each type controls where data is processed and how you pay. For details, see [Deployment types for Microsoft Foundry Models](../foundry-models/concepts/deployment-types).
+- **Multiple deployment types (or deployment SKUs)** — Global Standard, Data Zone Standard, Standard (single region), provisioned, batch, and more. Each type controls where data is processed and how you pay. For details, see [Deployment types for Microsoft Foundry Models](foundry-models__concepts__deployment-types.md).
 - **Data processing flexibility** — Choose regional, data zone (US, EU, or APAC), or global processing based on your compliance requirements.
 - **Content filtering** — Built-in Azure AI Content Safety filters with customizable configurations.
 - **Keyless authentication** — Microsoft Entra ID (recommended) and key-based authentication.
 - **Private networking** — Virtual network integration for secure access.
-- **Provisioned throughput** — Reserve capacity with provisioned throughput units (PTUs) for predictable, low-latency performance. For details, see [Provisioned throughput](../openai/concepts/provisioned-throughput).
+- **Provisioned throughput** — Reserve capacity with provisioned throughput units (PTUs) for predictable, low-latency performance. For details, see [Provisioned throughput](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput).
 
 ### Resource requirements
 
@@ -106,7 +106,7 @@ Serverless API deployments are available in:
 - **Foundry resources** — The primary resource type for new Foundry projects. No AI Hub required.
 - **Azure OpenAI resources** — If you use Azure OpenAI resources, the model catalog shows only Azure OpenAI models for deployment. Upgrade to a Foundry resource for access to the full set of Foundry Models.
 
-To get started with serverless API deployment, see [Deploy Microsoft Foundry Models in the Foundry portal](../foundry-models/how-to/deploy-foundry-models) or [Deploy models using Azure CLI and Bicep](../foundry-models/how-to/create-model-deployments).
+To get started with serverless API deployment, see [Deploy Microsoft Foundry Models in the Foundry portal](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/deploy-foundry-models) or [Deploy models using Azure CLI and Bicep](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/how-to/create-model-deployments).
 
 ## Managed compute deployment (preview)
 
@@ -153,7 +153,7 @@ Managed compute is currently available for global deployment. For rate estimates
 
 ### Get started
 
-To get started with managed compute deployment, see [Deploy open-source models with managed compute](../how-to/deploy-models-managed).
+To get started with managed compute deployment, see [Deploy open-source models with managed compute](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-models-managed).
 
 ## Deployment option comparison
 
@@ -165,15 +165,15 @@ Instant access (preview) isn't a deployment option in this comparison. It calls 
 
 | Capability | Serverless API | Managed compute |
 | --- | --- | --- |
-| Which models can be deployed? | All Foundry Models, including [Foundry Models sold by Azure](../foundry-models/concepts/models-sold-directly-by-azure) and [select Models from partners and community](../foundry-models/concepts/models-from-partners) | Open-source and partner models from the model catalog, NVIDIA NIM, and industry models |
+| Which models can be deployed? | All Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure.md) and [select Models from partners and community](foundry-models__concepts__models-from-partners.md) | Open-source and partner models from the model catalog, NVIDIA NIM, and industry models |
 | Deployment resource | Foundry resource | Foundry project |
 | Requires AI Hub | No | No |
 | Data processing options | Regional, data zone, global | Global |
 | Private networking | Yes | Yes |
 | Content filtering | Built-in and customizable | Not available in public preview |
 | Keyless authentication | Yes (Microsoft Entra ID and key-based) | Yes (Microsoft Entra ID and key-based) |
-| Billing | Token usage or [provisioned throughput units](../openai/concepts/provisioned-throughput) | Hourly per accelerator SKU |
+| Billing | Token usage or [provisioned throughput units](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput) | Hourly per accelerator SKU |
 
 Tip
 
-For detailed pricing information, see [Plan and manage costs for Microsoft Foundry](manage-costs).
+For detailed pricing information, see [Plan and manage costs for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/manage-costs).

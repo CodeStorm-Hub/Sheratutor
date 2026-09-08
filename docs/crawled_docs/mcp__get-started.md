@@ -80,7 +80,7 @@ This feature is currently in public preview. This preview is provided without a 
 ## Prerequisites
 
 - Azure account with an active subscription. If you don't have one, [create a free Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
-- A Foundry project. If you don't have a project, create one with the [Microsoft Foundry SDK Quickstart](/en-us/azure/ai-foundry/quickstarts/get-started-code?tabs=python#first-run-experience).
+- A Foundry project. If you don't have a project, create one with the [Microsoft Foundry SDK Quickstart](https://learn.microsoft.com/en-us/azure/ai-foundry/quickstarts/get-started-code?tabs=python#first-run-experience).
 - [Visual Studio Code](https://code.visualstudio.com/download) (version 1.99 or later).
 - A [GitHub Copilot](https://github.com/features/copilot) subscription (Individual, Business, or Enterprise).
 - [GitHub Copilot](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) Visual Studio Code extension.
@@ -90,7 +90,7 @@ This feature is currently in public preview. This preview is provided without a 
 
 Select an option to install Foundry MCP Server in Visual Studio Code.
 
-# [User profile](#tab/user)
+# **User profile**
 Install Foundry MCP Server in your user profile so it's available to all workspaces in Visual Studio Code.
 
 1. Open the **Command Palette** (Ctrl+Shift+P).
@@ -117,11 +117,11 @@ Install Foundry MCP Server in your user profile so it's available to all workspa
 11. Open GitHub Copilot and select **Agent Mode**.
 12. Select the tools icon, search for *Foundry* to filter the list, and confirm the server appears.
 
-    ![Screenshot of GitHub Copilot Agent Mode tools list showing Foundry MCP Server tool.](../media/mcp/foundry-mcp-server-tools.png)
+    ![Screenshot of GitHub Copilot Agent Mode tools list showing Foundry MCP Server tool.](https://learn.microsoft.com/en-us/azure/foundry/media/mcp/foundry-mcp-server-tools.png)
 
     Learn more about Agent Mode in the [Visual Studio Code documentation](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode).
 
-# [Workspace install](#tab/workspace)
+# **Workspace install**
 Install Foundry MCP Server for a specific workspace to scope it to that folder:
 
 1. Open an empty folder or an existing project folder in Visual Studio Code.
@@ -145,7 +145,7 @@ Install Foundry MCP Server for a specific workspace to scope it to that folder:
 8. Open GitHub Copilot and select Agent Mode.
 9. Select the tools icon, search for *Foundry* to filter the results, and confirm the server appears.
 
-    ![A screenshot showing Foundry MCP Server as GitHub Copilot tool.](../media/mcp/foundry-mcp-server-tools.png)
+    ![A screenshot showing Foundry MCP Server as GitHub Copilot tool.](https://learn.microsoft.com/en-us/azure/foundry/media/mcp/foundry-mcp-server-tools.png)
 
     To learn more about Agent Mode, visit the [Visual Studio Code documentation](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode).
 
@@ -161,7 +161,7 @@ Install Foundry MCP Server for a specific workspace to scope it to that folder:
     - **Current workspace** always runs the command for the current Visual Studio Code workspace.
     - **Always allow** sets the operation to always run for any GitHub Copilot Agent Mode session or any Visual Studio Code workspace.
 
-    ![Screenshot of options to run Foundry MCP Server operations.](../media/mcp/foundry-mcp-server-run-tool.png)
+    ![Screenshot of options to run Foundry MCP Server operations.](https://learn.microsoft.com/en-us/azure/foundry/media/mcp/foundry-mcp-server-run-tool.png)
 
     The response resembles the following shortened output. Your actual results vary based on current model availability.
 
@@ -193,7 +193,7 @@ Install Foundry MCP Server for a specific workspace to scope it to that folder:
 | Foundry tools don't appear in Agent Mode | Confirm the server is running (green indicator in **MCP: List Servers**). Check that you selected **Agent Mode** in the Copilot chat panel, then select the tools icon and search for *Foundry*. |
 | "Access denied" or permission errors | Verify you have Contributor or higher role on the Foundry project. The server uses On-Behalf-Of flow with your Entra ID credentials. |
 
-If these steps don't resolve a product or service issue, create an [Azure support request](https://portal.azure.com). Select **Technical** for **Issue type**, **Microsoft Foundry** for **Service**, and **Foundry MCP Server** for **Problem type**. For documentation feedback, use the feedback controls on this page. For how-to questions, ask the community on [Microsoft Q&A](/en-us/answers/tags/133/azure).
+If these steps don't resolve a product or service issue, create an [Azure support request](https://portal.azure.com). Select **Technical** for **Issue type**, **Microsoft Foundry** for **Service**, and **Foundry MCP Server** for **Problem type**. For documentation feedback, use the feedback controls on this page. For how-to questions, ask the community on [Microsoft Q&A](https://learn.microsoft.com/en-us/answers/tags/133/azure).
 
 ## Clean up resources
 

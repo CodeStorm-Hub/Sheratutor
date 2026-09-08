@@ -64,12 +64,12 @@ platformId: 6ccea7a7-1634-941a-3f3c-f4219594fbdc
 
 Model router is a purpose-built, trained machine-learning model that analyzes each prompt in real time and routes it to the most suitable large language model (LLM). It's a lightweight ML model designed to predict which model performs best for a given prompt at minimal latency.
 
-This article explains the capabilities, routing modes, and best practices that power model router. For supported models and version information, see the [model router overview](model-router). For deployment and usage steps, see [Use model router](../how-to/model-router).
+This article explains the capabilities, routing modes, and best practices that power model router. For supported models and version information, see the [model router overview](https://learn.microsoft.com/en-us/azure/foundry/model-router). For deployment and usage steps, see [Use model router](https://learn.microsoft.com/en-us/azure/foundry/how-to/model-router).
 
 ## Prerequisites
 
-- Familiarity with LLMs and the [Chat Completions API](/en-us/azure/ai-foundry/openai/how-to/chatgpt)
-- Understanding of the [model router overview](model-router)
+- Familiarity with LLMs and the [Chat Completions API](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/chatgpt)
+- Understanding of the [model router overview](https://learn.microsoft.com/en-us/azure/foundry/model-router)
 
 ## Model router as an optimization layer
 
@@ -77,7 +77,7 @@ Choosing the right model for every prompt is difficult to do manually. Tradition
 
 Model router is a purpose-built ML model trained on hundreds of thousands of examples across diverse scenarios, from simple prompts to complex agentic workflows. Rather than relying on static rules or manual selection, it matches each prompt to the best-suited eligible model based on the configured routing mode and model subset.
 
-Managed routing doesn't remove the need for evaluation. Compare model router with a meaningful workload baseline, and reevaluate after you change a routing mode or model subset. For evaluation guidance, see [Evaluate model router for your workload](../how-to/evaluate-model-router).
+Managed routing doesn't remove the need for evaluation. Compare model router with a meaningful workload baseline, and reevaluate after you change a routing mode or model subset. For evaluation guidance, see [Evaluate model router for your workload](https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-model-router).
 
 ## How requests are routed
 
@@ -125,7 +125,7 @@ When you customize the model pool using model subsets, the router automatically 
 
 ## Routing modes in depth
 
-Model router exposes three routing modes that control the cost-quality tradeoff. For the mode descriptions and configuration steps, see the [model router overview](model-router#routing-mode) and the [how-to guide](../how-to/model-router#optional-change-the-routing-mode).
+Model router exposes three routing modes that control the cost-quality tradeoff. For the mode descriptions and configuration steps, see the [model router overview](https://learn.microsoft.com/en-us/azure/foundry/model-router#routing-mode) and the [how-to guide](https://learn.microsoft.com/en-us/azure/foundry/how-to/model-router#optional-change-the-routing-mode).
 
 - **Balanced (default):** Optimizes for the best combination of quality and cost. Most workloads should start here.
 - **Cost:** Aggressively favors cheaper models, accepting slightly lower quality on complex prompts.
@@ -143,7 +143,7 @@ Each routing mode produces a different distribution of traffic across underlying
 
 The [ModelRouter-Distribution repository](https://github.com/guygregory/ModelRouter-Distribution) lets you run routing experiments against your own prompt corpus to preview how each mode distributes your workload before choosing.
 
-![Bar chart that shows routing distribution across model tiers for Cost, Balanced, and Quality modes, with Cost mode heavily favoring nano-class models and Quality mode favoring frontier models.](../media/model-router-how-it-works/routing-distribution-colors.png)
+![Bar chart that shows routing distribution across model tiers for Cost, Balanced, and Quality modes, with Cost mode heavily favoring nano-class models and Quality mode favoring frontier models.](https://learn.microsoft.com/en-us/azure/foundry/media/model-router-how-it-works/routing-distribution-colors.png)
 
 | Color | Mode | Description |
 | --- | --- | --- |

@@ -67,7 +67,7 @@ platformId: dcb4f1b9-5bec-e12d-d694-445d58655dc9
 
 Microsoft Foundry organizes AI workloads through a layered architecture: a top-level Foundry resource for governance, projects for development isolation, and connected Azure services for storage, search, and secrets management.
 
-This article provides IT operations and security teams with details on the Foundry resource and underlying Azure service architecture, its components, and its relation with other Azure resource types. Use this information to guide how to [customize](../how-to/configure-private-link) your Foundry deployment to your organization's requirements. For more information on how to roll out Foundry in your organization, see [Foundry Rollout](planning).
+This article provides IT operations and security teams with details on the Foundry resource and underlying Azure service architecture, its components, and its relation with other Azure resource types. Use this information to guide how to [customize](https://learn.microsoft.com/en-us/azure/foundry/how-to/configure-private-link) your Foundry deployment to your organization's requirements. For more information on how to roll out Foundry in your organization, see [Foundry Rollout](https://learn.microsoft.com/en-us/azure/foundry/planning).
 
 ## When to use this architecture
 
@@ -82,7 +82,7 @@ For single-developer exploration, a Foundry resource with one project is the rec
 
 ## Azure AI resource types and providers
 
-Within the Azure AI product family, you can use these [Azure resource providers](/en-us/azure/azure-resource-manager/management/resource-providers-and-types) that support user needs at different layers in the stack.
+Within the Azure AI product family, you can use these [Azure resource providers](https://learn.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types) that support user needs at different layers in the stack.
 
 | Resource provider | Purpose | Supported services |
 | --- | --- | --- |
@@ -101,13 +101,13 @@ Use the following table to identify which resource type matches your workload. I
 | Azure Language in Foundry Tools | `Microsoft.CognitiveServices/accounts` | `Language` | Language |
 | Azure Vision in Foundry Tools | `Microsoft.CognitiveServices/accounts` | `Vision` | Vision |
 
-Resource types under the same provider namespaces share the same management APIs, and use similar [Azure role-based access control (Azure RBAC)](/en-us/azure/role-based-access-control/overview) actions, networking configurations, and aliases for Azure Policy configuration. If you're upgrading from Azure OpenAI to Foundry, your existing custom Azure policies and Azure RBAC actions continue to apply.
+Resource types under the same provider namespaces share the same management APIs, and use similar [Azure role-based access control (Azure RBAC)](https://learn.microsoft.com/en-us/azure/role-based-access-control/overview) actions, networking configurations, and aliases for Azure Policy configuration. If you're upgrading from Azure OpenAI to Foundry, your existing custom Azure policies and Azure RBAC actions continue to apply.
 
 ## Foundry resource hierarchy
 
 The following diagram shows a Foundry resource with model deployments, security settings, connections, and two projects. Connected Azure services such as Storage, Key Vault, and Azure AI Search are separate Azure resources under their own governance boundaries:
 
-![Diagram showing the Foundry resource hierarchy with a governance boundary containing model deployments, security settings, connections, and two projects. Connected resources like Storage, Key Vault, and Azure AI Search are shown as separate governance boundaries.](../media/architecture/architecture.svg)
+![Diagram showing the Foundry resource hierarchy with a governance boundary containing model deployments, security settings, connections, and two projects. Connected resources like Storage, Key Vault, and Azure AI Search are shown as separate governance boundaries.](https://learn.microsoft.com/en-us/azure/foundry/media/architecture/architecture.svg)
 
 Important
 
@@ -136,7 +136,7 @@ The top-level Foundry resource scopes management operations such as configuring 
 
 ### Role-based access control
 
-Azure RBAC actions reflect this separation of concerns. Control plane actions, such as creating deployments and projects, are distinct from data plane actions, such as building agents, running evaluations, and uploading files. You can scope RBAC assignments at both the top-level resource and individual project level. Assign [managed identities](/en-us/entra/identity/managed-identities-azure-resources/overview) at either scope to support secure automation and service access. For more information, see [Role-based access control for Microsoft Foundry](rbac-foundry).
+Azure RBAC actions reflect this separation of concerns. Control plane actions, such as creating deployments and projects, are distinct from data plane actions, such as building agents, running evaluations, and uploading files. You can scope RBAC assignments at both the top-level resource and individual project level. Assign [managed identities](https://learn.microsoft.com/en-us/entra/identity/managed-identities-azure-resources/overview) at either scope to support secure automation and service access. For more information, see [Role-based access control for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/rbac-foundry).
 
 Common starter assignments for least-privilege onboarding include:
 
@@ -147,7 +147,7 @@ Common starter assignments for least-privilege onboarding include:
     The Foundry RBAC roles were recently renamed. **Foundry User**, **Foundry Owner**, **Foundry Account Owner**, and **Foundry Project Manager** were previously named Azure AI User, Azure AI Owner, Azure AI Account Owner, and Azure AI Project Manager. You might still see the previous names in some places while the rename rolls out. The role IDs and core permissions are unchanged by the rename.
 - **Foundry User** for each project managed identity at the Foundry resource scope.
 
-For role definitions and scope planning guidance, see [Role-based access control for Microsoft Foundry](rbac-foundry).
+For role definitions and scope planning guidance, see [Role-based access control for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/rbac-foundry).
 
 ## Monitoring and observability
 
@@ -159,7 +159,7 @@ Key monitoring capabilities include:
 - **Project-level metrics**: Evaluation run outcomes, agent invocation counts, and file operation activity.
 - **Diagnostic logging**: Enable diagnostic settings to route logs to Log Analytics, Storage, or Event Hubs for analysis and retention.
 
-For more information, see [Azure Monitor overview](/en-us/azure/azure-monitor/overview).
+For more information, see [Azure Monitor overview](https://learn.microsoft.com/en-us/azure/azure-monitor/overview).
 
 ## Computing infrastructure
 
@@ -181,7 +181,7 @@ Foundry supports multiple deployment types for model hosting, grouped by data-pr
 | Regional Provisioned | Single region | Hourly reserved capacity |
 | Developer | Any Azure region (no data residency guarantee) | Pay-per-token (fine-tuned model evaluation only; 24-hour lifetime; no SLA) |
 
-For details on how to choose the right deployment type, see [Deployment types for Foundry Models](../foundry-models/concepts/deployment-types).
+For details on how to choose the right deployment type, see [Deployment types for Foundry Models](foundry-models__concepts__deployment-types.md).
 
 ### Agents, evaluations, and batch processing
 
@@ -189,18 +189,18 @@ Agents, evaluations, and batch jobs are fully managed by Microsoft. Agent worklo
 
 ### Virtual network integration
 
-When your agents connect with external systems, you can isolate network traffic using [container injection](../agents/how-to/virtual-networks), where the platform injects a subnet into your virtual network, enabling local communication with your Azure resources within the same virtual network.
+When your agents connect with external systems, you can isolate network traffic using [container injection](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/virtual-networks), where the platform injects a subnet into your virtual network, enabling local communication with your Azure resources within the same virtual network.
 
 Foundry supports two networking models for outbound isolation:
 
 | Model | How it works | Trade-off |
 | --- | --- | --- |
 | **Customer-managed VNet (BYO)** | You provide the VNet and a dedicated subnet delegated to `Microsoft.App/environments`. The platform injects into your subnet, enabling local communication with your private Azure resources. | Full control over network configuration; requires your own network management. |
-| **Managed VNet** | Foundry manages the VNet on your behalf. | Simpler setup; limits customization options. For details, see [Configure managed virtual network](../how-to/managed-virtual-network). |
+| **Managed VNet** | Foundry manages the VNet on your behalf. | Simpler setup; limits customization options. For details, see [Configure managed virtual network](https://learn.microsoft.com/en-us/azure/foundry/how-to/managed-virtual-network). |
 
 Note
 
-Some network-isolated scenarios require the SDK or CLI instead of the portal. For example, deployments with private endpoints that block all public access aren't configurable through the portal UI. For details, see [How to configure a private link for Foundry](../how-to/configure-private-link).
+Some network-isolated scenarios require the SDK or CLI instead of the portal. For example, deployments with private endpoints that block all public access aren't configurable through the portal UI. For details, see [How to configure a private link for Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/configure-private-link).
 
 ### Tenant isolation
 
@@ -208,11 +208,11 @@ Workloads run in logically isolated environments per Foundry resource. Customer 
 
 ### Content safety and guardrails
 
-Foundry integrates content safety controls into the model and agent inference pipeline. Guardrails define risks to detect, intervention points to scan, and response actions when a risk is detected. Intervention points include user input, output, tool calls (preview), and tool responses (preview). Content filters run inline with model requests and can be configured per deployment. For more information, see [Guardrails and controls overview](../guardrails/guardrails-overview) and [Content filtering severity levels](../openai/concepts/content-filter-severity-levels).
+Foundry integrates content safety controls into the model and agent inference pipeline. Guardrails define risks to detect, intervention points to scan, and response actions when a risk is detected. Intervention points include user input, output, tool calls (preview), and tool responses (preview). Content filters run inline with model requests and can be configured per deployment. For more information, see [Guardrails and controls overview](https://learn.microsoft.com/en-us/azure/foundry/guardrails/guardrails-overview) and [Content filtering severity levels](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/content-filter-severity-levels).
 
 ### Regional availability
 
-Compute capabilities vary by Azure region. Model availability, deployment type options, and feature support such as Agents or evaluations might differ across regions. Confirm that your target region supports the required capabilities before provisioning. For current availability, see [Feature availability across cloud regions](../reference/region-support).
+Compute capabilities vary by Azure region. Model availability, deployment type options, and feature support such as Agents or evaluations might differ across regions. Confirm that your target region supports the required capabilities before provisioning. For current availability, see [Feature availability across cloud regions](https://learn.microsoft.com/en-us/azure/foundry/reference/region-support).
 
 ## Data storage
 
@@ -224,12 +224,12 @@ In the default setup, Foundry uses Microsoft-managed storage accounts that are l
 
 ### Bring your own storage
 
-You can optionally connect your own Azure Storage accounts. Foundry tools such as evaluations and batch processing can read inputs from and write outputs to these accounts. For details on supported scenarios, see [Bring-your-own resources with the Agent service](../agents/how-to/use-your-own-resources).
+You can optionally connect your own Azure Storage accounts. Foundry tools such as evaluations and batch processing can read inputs from and write outputs to these accounts. For details on supported scenarios, see [Bring-your-own resources with the Agent service](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/use-your-own-resources).
 
 ### Agent state storage
 
-- With the [basic agent setup](../agents/how-to/use-your-own-resources), the Agent service stores threads, messages, and files in Microsoft-managed multitenant storage, with logical separation.
-- With the [standard agent setup](../agents/how-to/use-your-own-resources), you bring your own Azure resources for all customer data—including files, conversations, and vector stores. In this configuration, data is isolated by project within your storage accounts.
+- With the [basic agent setup](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/use-your-own-resources), the Agent service stores threads, messages, and files in Microsoft-managed multitenant storage, with logical separation.
+- With the [standard agent setup](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/use-your-own-resources), you bring your own Azure resources for all customer data—including files, conversations, and vector stores. In this configuration, data is isolated by project within your storage accounts.
 
 ### Customer-managed key encryption
 
@@ -243,20 +243,20 @@ To use your own keys instead, confirm these prerequisites before enabling custom
 
 ### Bring your own Key Vault
 
-By default, Foundry stores all API key-based connection secrets in a managed Azure Key Vault. If you prefer to manage secrets yourself, connect your key vault to the Foundry resource. One Azure Key Vault connection manages all project and resource level connection secrets. For more information, see [how to set up an Azure Key Vault connection to Foundry](../how-to/set-up-key-vault-connection).
+By default, Foundry stores all API key-based connection secrets in a managed Azure Key Vault. If you prefer to manage secrets yourself, connect your key vault to the Foundry resource. One Azure Key Vault connection manages all project and resource level connection secrets. For more information, see [how to set up an Azure Key Vault connection to Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/set-up-key-vault-connection).
 
-To learn more about data encryption, see [customer-managed keys for encryption with Foundry](customer-managed-keys).
+To learn more about data encryption, see [customer-managed keys for encryption with Foundry](https://learn.microsoft.com/en-us/azure/foundry/customer-managed-keys).
 
 ### Data residency and compliance
 
-Foundry stores all data at rest in the designated Azure geography. Inferencing data (prompts and completions) is processed according to the deployment type: global deployments might route to any Azure region, data zone deployments stay within the US or EU zone, and standard or regional deployments process in the deployment region. For details, see [Deployment types](../foundry-models/concepts/deployment-types). Foundry doesn't support automatic cross-region failover. If your organization requires multi-region availability, deploy separate Foundry resources in each target region and manage data synchronization and routing at the application layer. For compliance certification details, see [Azure compliance documentation](/en-us/azure/compliance/).
+Foundry stores all data at rest in the designated Azure geography. Inferencing data (prompts and completions) is processed according to the deployment type: global deployments might route to any Azure region, data zone deployments stay within the US or EU zone, and standard or regional deployments process in the deployment region. For details, see [Deployment types](foundry-models__concepts__deployment-types.md). Foundry doesn't support automatic cross-region failover. If your organization requires multi-region availability, deploy separate Foundry resources in each target region and manage data synchronization and routing at the application layer. For compliance certification details, see [Azure compliance documentation](https://learn.microsoft.com/en-us/azure/compliance/).
 
 ## Validate architecture decisions
 
 Before rollout, validate the following for your target environment:
 
-- Verify that required models and features are available in your deployment regions. For details, see [Feature availability across cloud regions](../reference/region-support).
-- Check that role assignments are scoped correctly at both the Foundry resource and project levels. For details, see [Role-based access control for Microsoft Foundry](rbac-foundry).
-- Validate network isolation requirements and private access paths. For details, see [How to configure a private link for Foundry](../how-to/configure-private-link).
-- Confirm encryption and secret-management requirements, including customer-managed keys and Azure Key Vault integration. For details, see [Customer-managed keys for encryption with Foundry](customer-managed-keys) and [how to set up an Azure Key Vault connection to Foundry](../how-to/set-up-key-vault-connection).
-- Review quotas and limits for your target resources, including model deployment limits and rate limits. For details, see [Azure OpenAI quotas and limits](../openai/quotas-limits) and [Agent Service limits, quotas, and regions](../agents/concepts/limits-quotas-regions).
+- Verify that required models and features are available in your deployment regions. For details, see [Feature availability across cloud regions](https://learn.microsoft.com/en-us/azure/foundry/reference/region-support).
+- Check that role assignments are scoped correctly at both the Foundry resource and project levels. For details, see [Role-based access control for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/rbac-foundry).
+- Validate network isolation requirements and private access paths. For details, see [How to configure a private link for Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/configure-private-link).
+- Confirm encryption and secret-management requirements, including customer-managed keys and Azure Key Vault integration. For details, see [Customer-managed keys for encryption with Foundry](https://learn.microsoft.com/en-us/azure/foundry/customer-managed-keys) and [how to set up an Azure Key Vault connection to Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/set-up-key-vault-connection).
+- Review quotas and limits for your target resources, including model deployment limits and rate limits. For details, see [Azure OpenAI quotas and limits](https://learn.microsoft.com/en-us/azure/foundry/openai/quotas-limits) and [Agent Service limits, quotas, and regions](https://learn.microsoft.com/en-us/azure/foundry/agents/concepts/limits-quotas-regions).

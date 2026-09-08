@@ -73,7 +73,7 @@ A successful migration preserves the application's behavior or improves it in me
 
 A migration usually starts for one of four reasons:
 
-- **A model is retiring.** On Foundry, every generally available model ships with a retirement date, and older families are replaced over time. For retirement policy and dates, see the [Foundry Models lifecycle and support policy](../../openai/concepts/model-retirements) and [Model retirement schedule](../../openai/concepts/model-retirement-schedule).
+- **A model is retiring.** On Foundry, every generally available model ships with a retirement date, and older families are replaced over time. For retirement policy and dates, see the [Foundry Models lifecycle and support policy](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirements) and [Model retirement schedule](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirement-schedule).
 - **A better model is available.** A newer model offers higher quality, lower cost, better latency, or a capability (such as structured output or improved tool calling) that your workload needs.
 - **A cost or latency problem forces a change.** The current model's latency or unit cost no longer meets your needs.
 - **A capability gap blocks the product.** The current model can't do something your product now requires.
@@ -111,7 +111,7 @@ A migration moves through six phases. Each phase produces an output that the nex
 
 **Discover → Assess → Adapt → Validate → Roll out → Retire**
 
-![Circular diagram of the six-phase model migration process showing Discover, Assess, Adapt, Validate, Roll out, and Retire arranged clockwise.](../media/model-migration/model-migration-process.png)
+![Circular diagram of the six-phase model migration process showing Discover, Assess, Adapt, Validate, Roll out, and Retire arranged clockwise.](https://learn.microsoft.com/en-us/azure/foundry/media/model-migration/model-migration-process.png)
 
 The following table describes each phase and the Foundry features and tools that support it. Features are available in both Microsoft Foundry and Azure OpenAI unless marked **Foundry only**, which means Azure OpenAI has no equivalent.
 
@@ -119,12 +119,12 @@ The per-phase sections later in this article explain why each phase exists, what
 
 | Phase | Description | Features and tools |
 | --- | --- | --- |
-| **Discover** | Learn that a model change is coming or needed, and decide whether to act. | - [Model retirement schedule](../../openai/concepts/model-retirement-schedule)<br>- [Lifecycle policy](../../openai/concepts/model-retirements)<br>- Azure Service Health alerts<br>- Models API (`lifecycleStatus`) |
-| **Assess** | Choose the target model and confirm it's operationally available. | - [Model leaderboards and benchmarks](../../concepts/model-benchmarks) (quality, safety, cost, throughput)<br>- [Side-by-side compare](../../how-to/benchmark-model-in-catalog)<br>- Trade-off charts |
-| **Adapt** | Replay the current workload on the new model, diagnose behavioral changes, and re-engineer prompts, parameters, tool definitions, output schemas, and the calling code around them. | - [Prompt Optimizer](../../observability/how-to/prompt-optimizer) (**Foundry only**): the **Optimize** button under system instructions in the Agent playground<br>- [Agent optimization](../../agents/how-to/optimize-agent-targets) (**Foundry only**)<br>- [Simulator](../../observability/how-to/evaluation-dataset-synthetic) for synthetic data |
-| **Validate** | Score the adapted workload against a quality rubric to decide whether it's safe to ship. | - [Azure AI Evaluation SDK](../../observability/how-to/cloud-evaluation) (30+ evaluators, LLM-as-judge, graders)<br>- [Portal evaluation](../../how-to/evaluate-generative-ai-app) |
-| **Roll out** | Promote to production through staged exposure, monitor live behavior, and commit or roll back. | - [Auto-upgrade with `versionUpgradeOption`](../../openai/concepts/model-retirements)<br>- Provisioned in-place and side-by-side migration<br>- [Continuous evaluation](../../observability/how-to/how-to-monitor-agents-dashboard#set-up-continuous-evaluation)<br>- Azure Monitor alerts |
-| **Retire** | Decommission the old deployment, free capacity, archive evals, and update downstream documentation. | - [Models API](../../openai/concepts/retired-models) to confirm retirement<br>- [Observability dashboard](../../concepts/observability) for deployment count |
+| **Discover** | Learn that a model change is coming or needed, and decide whether to act. | - [Model retirement schedule](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirement-schedule)<br>- [Lifecycle policy](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirements)<br>- Azure Service Health alerts<br>- Models API (`lifecycleStatus`) |
+| **Assess** | Choose the target model and confirm it's operationally available. | - [Model leaderboards and benchmarks](https://learn.microsoft.com/en-us/azure/foundry/../concepts/model-benchmarks) (quality, safety, cost, throughput)<br>- [Side-by-side compare](https://learn.microsoft.com/en-us/azure/foundry/../how-to/benchmark-model-in-catalog)<br>- Trade-off charts |
+| **Adapt** | Replay the current workload on the new model, diagnose behavioral changes, and re-engineer prompts, parameters, tool definitions, output schemas, and the calling code around them. | - [Prompt Optimizer](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/prompt-optimizer) (**Foundry only**): the **Optimize** button under system instructions in the Agent playground<br>- [Agent optimization](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/optimize-agent-targets) (**Foundry only**)<br>- [Simulator](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/evaluation-dataset-synthetic) for synthetic data |
+| **Validate** | Score the adapted workload against a quality rubric to decide whether it's safe to ship. | - [Azure AI Evaluation SDK](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/cloud-evaluation) (30+ evaluators, LLM-as-judge, graders)<br>- [Portal evaluation](https://learn.microsoft.com/en-us/azure/foundry/../how-to/evaluate-generative-ai-app) |
+| **Roll out** | Promote to production through staged exposure, monitor live behavior, and commit or roll back. | - [Auto-upgrade with `versionUpgradeOption`](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirements)<br>- Provisioned in-place and side-by-side migration<br>- [Continuous evaluation](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/how-to-monitor-agents-dashboard#set-up-continuous-evaluation)<br>- Azure Monitor alerts |
+| **Retire** | Decommission the old deployment, free capacity, archive evals, and update downstream documentation. | - [Models API](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/retired-models) to confirm retirement<br>- [Observability dashboard](https://learn.microsoft.com/en-us/azure/foundry/../concepts/observability) for deployment count |
 
 ## Before you migrate: Prepare a test dataset
 
@@ -133,11 +133,11 @@ This preparation step assembles a set of representative inputs, expected outputs
 ### What to consider
 
 - **Build the dataset before you pick a target.** The dataset describes your *workload*, not the candidate model, so you can assemble it in parallel with Discover.
-- **Gather inputs from real or synthetic sources.** Use captured production traffic or curated domain examples as CSV or JSONL. When you don't have representative data yet, generate synthetic and adversarial inputs with the [Simulator](../../observability/how-to/evaluation-dataset-synthetic).
+- **Gather inputs from real or synthetic sources.** Use captured production traffic or curated domain examples as CSV or JSONL. When you don't have representative data yet, generate synthetic and adversarial inputs with the [Simulator](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/evaluation-dataset-synthetic).
 - **Instrument capture before you need it.** Production content capture is opt-in and never retroactive, so you can't evaluate traffic you didn't record. Start logging prompts, responses, latency, and token counts now.
 - **Freeze the dataset.** Keep the inputs, ground truths, and success criteria fixed for the whole migration. If any of them change, you can no longer compare source and target results.
 
-You also need an inventory of the model deployments your workload uses, including their deployment types (Standard, Provisioned, or Batch). For each source model, note its retirement date and suggested replacement from the [Model retirement schedule](../../openai/concepts/model-retirement-schedule).
+You also need an inventory of the model deployments your workload uses, including their deployment types (Standard, Provisioned, or Batch). For each source model, note its retirement date and suggested replacement from the [Model retirement schedule](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirement-schedule).
 
 ## Phase 1: Discover
 
@@ -202,9 +202,9 @@ For agentic and workflow workloads, schema and tool-call work often outweighs pr
 
 Three Foundry features support this phase:
 
-- **[Prompt Optimizer](../../observability/how-to/prompt-optimizer)** is the **Optimize** button directly below the system instructions field in the Agent playground. It restructures your instructions using prompt-engineering best practices, shows per-paragraph reasoning for each change, and supports an iterate loop: add a suggestion such as *"keep the JSON schema exactly"* and re-optimize. Available in **Foundry only**, not Azure OpenAI.
-- **[Agent optimization](../../agents/how-to/optimize-agent-targets)** tunes instructions, tools, and model selection together for agent workloads. Available in **Foundry only**, not Azure OpenAI.
-- **[Simulator](../../observability/how-to/evaluation-dataset-synthetic)** generates synthetic and adversarial inputs when you don't have production data to replay.
+- **[Prompt Optimizer](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/prompt-optimizer)** is the **Optimize** button directly below the system instructions field in the Agent playground. It restructures your instructions using prompt-engineering best practices, shows per-paragraph reasoning for each change, and supports an iterate loop: add a suggestion such as *"keep the JSON schema exactly"* and re-optimize. Available in **Foundry only**, not Azure OpenAI.
+- **[Agent optimization](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/optimize-agent-targets)** tunes instructions, tools, and model selection together for agent workloads. Available in **Foundry only**, not Azure OpenAI.
+- **[Simulator](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/evaluation-dataset-synthetic)** generates synthetic and adversarial inputs when you don't have production data to replay.
 
 ### Where it commonly breaks
 
@@ -236,8 +236,8 @@ Validate is one phase, but it has two touchpoints, so don't treat it as a single
 
 Two Foundry features support this phase:
 
-- **[Azure AI Evaluation SDK](../../observability/how-to/cloud-evaluation)** includes more than 30 built-in evaluators, covering groundedness, relevance, retrieval, coherence, fluency, reference-based metrics (F1, BLEU, and ROUGE), safety, agent, and Azure OpenAI graders. It also includes a custom LLM-as-judge for task-specific rubrics.
-- **[Portal evaluation](../../how-to/evaluate-generative-ai-app)** runs the same evaluators over model, agent, dataset, and trace targets.
+- **[Azure AI Evaluation SDK](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/cloud-evaluation)** includes more than 30 built-in evaluators, covering groundedness, relevance, retrieval, coherence, fluency, reference-based metrics (F1, BLEU, and ROUGE), safety, agent, and Azure OpenAI graders. It also includes a custom LLM-as-judge for task-specific rubrics.
+- **[Portal evaluation](https://learn.microsoft.com/en-us/azure/foundry/../how-to/evaluate-generative-ai-app)** runs the same evaluators over model, agent, dataset, and trace targets.
 
 Run the identical set of evaluators against **both** source and target on the frozen dataset so the numbers are comparable.
 
@@ -275,7 +275,7 @@ The purpose of this phase is to promote the validated configuration to productio
 | Batch | Side-by-side: deploy the new model, resubmit jobs, then retire the old deployment. | Ensure target-model quota |
 | Fine-tuned (**out of scope for this article**) | Not auto-upgraded; separate training and deployment retirement clock. Re-tune or distill onto the replacement base model. | Ensure target-model quota |
 
-After traffic moves, wire up [continuous evaluation](../../observability/how-to/how-to-monitor-agents-dashboard#set-up-continuous-evaluation) to score a sampled percentage of production traffic on the Foundry Observability dashboard, connected to traces for root-cause analysis, plus Azure Monitor alerts when quality drops.
+After traffic moves, wire up [continuous evaluation](https://learn.microsoft.com/en-us/azure/foundry/../observability/how-to/how-to-monitor-agents-dashboard#set-up-continuous-evaluation) to score a sampled percentage of production traffic on the Foundry Observability dashboard, connected to traces for root-cause analysis, plus Azure Monitor alerts when quality drops.
 
 ### Where it commonly breaks
 
@@ -301,7 +301,7 @@ Teams skip retirement, which leads to an accumulation of zombie deployments. Tea
 
 ### What you bring
 
-The [observability dashboard](../../concepts/observability) shows the deployment count trending down, but deciding which deployments are still load-bearing is a judgment call your team makes. Make retirement an explicit tracked task rather than a hope.
+The [observability dashboard](https://learn.microsoft.com/en-us/azure/foundry/../concepts/observability) shows the deployment count trending down, but deciding which deployments are still load-bearing is a judgment call your team makes. Make retirement an explicit tracked task rather than a hope.
 
 ## Migration is rarely binary
 

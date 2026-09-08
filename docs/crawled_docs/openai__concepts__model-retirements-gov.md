@@ -60,13 +60,13 @@ platformId: 69eac2fa-2025-951e-6f80-521ce0dd833a
 
 # Foundry Models lifecycle and support policy in Azure Government - Microsoft Foundry | Microsoft Learn
 
-Microsoft Foundry Models in Azure Government move through a predictable lifecycle - from preview to general availability (GA) to eventual retirement - giving you time to evaluate replacements and migrate workloads. This article explains each lifecycle stage, the overlap commitments Microsoft makes when a model retires, and how you're notified in Azure Government. For specific retirement dates, see [Model retirement schedule](model-retirement-schedule-gov).
+Microsoft Foundry Models in Azure Government move through a predictable lifecycle - from preview to general availability (GA) to eventual retirement - giving you time to evaluate replacements and migrate workloads. This article explains each lifecycle stage, the overlap commitments Microsoft makes when a model retires, and how you're notified in Azure Government. For specific retirement dates, see [Model retirement schedule](https://learn.microsoft.com/en-us/azure/foundry/model-retirement-schedule-gov).
 
-This article focuses on where there are differences from Commercial for Azure Government. For general information, see [Foundry Models lifecycle and support policy](model-retirements).
+This article focuses on where there are differences from Commercial for Azure Government. For general information, see [Foundry Models lifecycle and support policy](https://learn.microsoft.com/en-us/azure/foundry/model-retirements).
 
 ## How model lifecycle works
 
-Microsoft Foundry continuously refreshes its model catalog with newer, more capable models. When a model is superseded, it moves through a predictable lifecycle that gives customers time to evaluate replacements and migrate. The lifecycle applies across Foundry Models in Azure Government [sold by Azure](/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-gov).
+Microsoft Foundry continuously refreshes its model catalog with newer, more capable models. When a model is superseded, it moves through a predictable lifecycle that gives customers time to evaluate replacements and migrate. The lifecycle applies across Foundry Models in Azure Government [sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/concepts/models-sold-directly-by-azure-gov).
 
 ### Lifecycle stages
 
@@ -101,7 +101,7 @@ Data Zone Standard  ──►  Data Zone Provisioned  ──►   Standard
 
 Tip
 
-For a full comparison of deployment types, see [Deployment type comparison](../../foundry-models/concepts/deployment-types-gov).
+For a full comparison of deployment types, see [Deployment type comparison](https://learn.microsoft.com/en-us/azure/foundry/../foundry-models/concepts/deployment-types-gov).
 
 ## Special considerations
 
@@ -118,7 +118,7 @@ Microsoft commits to meaningful overlap between a retiring GA model and its repl
 
 | Phase | Pattern |
 | --- | --- |
-| **Azure Government launch** | Each model launches per its own deployment type and region availability matrix. Microsoft sets the retirement date in Azure Government to match the Commercial Cloud date. You can find this date through the [Models API](/en-us/rest/api/aiservices/accountmanagement/models). |
+| **Azure Government launch** | Each model launches per its own deployment type and region availability matrix. Microsoft sets the retirement date in Azure Government to match the Commercial Cloud date. You can find this date through the [Models API](https://learn.microsoft.com/en-us/rest/api/aiservices/accountmanagement/models). |
 | **Deprecated (existing customers only)** | At 12 months from Commercial launch, existing customers can continue to create and manage deployments. New customers can't access the model. |
 | **Replacement available in global standard** | Customers can use and test the replacement model in global standard in Commercial Cloud approximately 90 days before retirement. |
 | **Replacement available in Azure Government** | Replacement model becomes available to test in Azure Government where the predecessor is retiring approximately 30 days before retirement. |
@@ -129,14 +129,14 @@ Microsoft commits to meaningful overlap between a retiring GA model and its repl
 For **Data Zone Standard** and **Standard** deployment types, Microsoft manages automatic upgrades when a model version is retired and the deployment type and region align:
 
 - Auto-upgrades are scheduled on a **rolling, region-by-region** basis.
-- Microsoft publishes the upgrade schedule in advance in the [Model Retirement Schedule](model-retirements-gov).
+- Microsoft publishes the upgrade schedule in advance in the [Model Retirement Schedule](https://learn.microsoft.com/en-us/azure/foundry/model-retirements-gov).
 - If the upgrade target isn't available in the same deployment type and region, Microsoft doesn't perform a model upgrade.
 
 Important
 
 **Provisioned deployments aren't auto-upgraded.** Provisioned customers must manually migrate to the replacement model.
 
-Use the [Models API](/en-us/rest/api/aiservices/accountmanagement/models) to programmatically check `lifecycleStatus`, `deprecation`, and per-SKU `deprecationDate` for any model at any time.
+Use the [Models API](https://learn.microsoft.com/en-us/rest/api/aiservices/accountmanagement/models) to programmatically check `lifecycleStatus`, `deprecation`, and per-SKU `deprecationDate` for any model at any time.
 
 ### Example: gpt-4o-0513 → gpt-4.1 upgrade
 
@@ -144,7 +144,7 @@ When Microsoft retires gpt-4o version `2024-05-13` on **2026-03-31**, the servic
 
 ## Notifications
 
-Microsoft sets the retirement date for GA models programmatically at commercial launch to 18 months out - there's no separate "announcement." Legacy and Deprecated transitions follow the published timeline and are visible in real time via the [Models API](/en-us/rest/api/aiservices/accountmanagement/models).
+Microsoft sets the retirement date for GA models programmatically at commercial launch to 18 months out - there's no separate "announcement." Legacy and Deprecated transitions follow the published timeline and are visible in real time via the [Models API](https://learn.microsoft.com/en-us/rest/api/aiservices/accountmanagement/models).
 
 ### When you receive active notifications
 

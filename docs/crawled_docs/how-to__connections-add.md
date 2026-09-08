@@ -76,9 +76,9 @@ Connections let you authenticate to Microsoft and other resources within your Fo
 
 ## Prerequisites
 
-- If you don't have one, [create a project](create-projects).
+- If you don't have one, [create a project](https://learn.microsoft.com/en-us/azure/foundry/create-projects).
 - Make sure you can open your project in Microsoft Foundry.
-- Make sure you have permissions to add connections to the project or resource. Adding connections requires the **Foundry User**, **Foundry Owner**, or Azure **Contributor** role (or higher). For details, see [Role-based access control](../concepts/rbac-foundry).
+- Make sure you have permissions to add connections to the project or resource. Adding connections requires the **Foundry User**, **Foundry Owner**, or Azure **Contributor** role (or higher). For details, see [Role-based access control](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry).
 
     Important
 
@@ -127,12 +127,12 @@ It supports three connection types: **Jobs**, **Genie**, and **Other**. You can 
 
 Use the portal or a Bicep template to add a connection.
 
-# [Foundry portal](#tab/foundry-portal)
+# **Foundry portal**
 Follow these steps to create a new connection that's available for the current project.
 
 1. Sign in to [Microsoft Foundry](https://ai.azure.com/?cid=learnDocs). Make sure the **New Foundry** toggle is on. These steps refer to **Foundry (new)**.
 
-    ![](../media/version-banner/new-foundry.png)
+    ![](https://learn.microsoft.com/en-us/azure/foundry/media/version-banner/new-foundry.png)
 2. Select **Manage** in the upper-right navigation.
 3. Select **Project details** in the left pane.
 4. Select the **Connected resources** tab.
@@ -142,10 +142,10 @@ Follow these steps to create a new connection that's available for the current p
 
     Tip
 
-    Different connection types support different authentication methods. Using Microsoft Entra ID might require specific Azure role-based access permissions for your developers. For more information, visit [Role-based access control](../concepts/rbac-foundry).
+    Different connection types support different authentication methods. Using Microsoft Entra ID might require specific Azure role-based access permissions for your developers. For more information, visit [Role-based access control](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry).
 8. Confirm that your new connection appears in the connected resources list.
 
-# [Bicep](#tab/bicep)
+# **Bicep**
 Use [Connection templates](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/01-connections) to create connections through infrastructure deployment.
 
 After deployment, return to your project and verify that the new connection appears in connected resources.
@@ -154,17 +154,17 @@ After deployment, return to your project and verify that the new connection appe
 
 ## Network isolation
 
-For end-to-end [network isolation](configure-private-link) with Foundry, you need private endpoints to connect to your connected resource. For example, if your Azure Storage account is set to public network access as **Disabled**, then a private endpoint should be deployed in your virtual network to access in Foundry.
+For end-to-end [network isolation](https://learn.microsoft.com/en-us/azure/foundry/configure-private-link) with Foundry, you need private endpoints to connect to your connected resource. For example, if your Azure Storage account is set to public network access as **Disabled**, then a private endpoint should be deployed in your virtual network to access in Foundry.
 
 For more on how to set private endpoints to your connected resources, see the following documentation:
 
 | Private resource | Documentation |
 | --- | --- |
-| Azure Storage | [Use private endpoints](/en-us/azure/storage/common/storage-private-endpoints) |
-| Azure Cosmos DB | [Configure Azure Private Link for Azure Cosmos DB](/en-us/azure/cosmos-db/how-to-configure-private-endpoints?tabs=arm-bicep) |
-| Azure AI Search | [Create a private endpoint for a secure connection](/en-us/azure/search/service-create-private-endpoint) |
-| Azure OpenAI | [Configure virtual networks for Azure AI services](/en-us/azure/ai-services/cognitive-services-virtual-networks) |
-| Application Insights | [Use Azure Private Link to connect networks to Azure Monitor](/en-us/azure/azure-monitor/logs/private-link-security) |
+| Azure Storage | [Use private endpoints](https://learn.microsoft.com/en-us/azure/storage/common/storage-private-endpoints) |
+| Azure Cosmos DB | [Configure Azure Private Link for Azure Cosmos DB](https://learn.microsoft.com/en-us/azure/cosmos-db/how-to-configure-private-endpoints?tabs=arm-bicep) |
+| Azure AI Search | [Create a private endpoint for a secure connection](https://learn.microsoft.com/en-us/azure/search/service-create-private-endpoint) |
+| Azure OpenAI | [Configure virtual networks for Azure AI services](https://learn.microsoft.com/en-us/azure/ai-services/cognitive-services-virtual-networks) |
+| Application Insights | [Use Azure Private Link to connect networks to Azure Monitor](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/private-link-security) |
 
 Note
 

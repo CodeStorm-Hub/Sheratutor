@@ -35,7 +35,7 @@ flowchart TD
 ```
 
 ### 1. Document Ingestion & Parsing
-* **Files**: [`ingestion/kaggle/remote_ingest.py`](file:///home/syed/workspace/Sheratutor/ingestion/kaggle/remote_ingest.py), [`ingestion/ingest.py`](file:///home/syed/workspace/Sheratutor/ingestion/ingest.py).
+* **Files**: [`ingestion/kaggle/remote_ingest.py`](https://github.com/CodeStorm-Hub/Sheratutor/blob/docs/ingestion/kaggle/remote_ingest.py), [`ingestion/ingest.py`](https://github.com/CodeStorm-Hub/Sheratutor/blob/docs/ingestion/ingest.py).
 * **Engines**: PyMuPDF rasterization at 150 DPI + Surya OCR (`surya-ocr`) for multilingual font recognition.
 * **Math Normalization**: `normalize_math_digits()` converts Bengali numerals (`০-৯`) to standard digits (`0-9`) inside `$..$`, `$$..$$`, and `<math>..</math>` blocks.
 * **Resumption**: Processes pages in 4-page batches with 40-page checkpoints, querying `curriculum_chunks.source_book_page_ref` to avoid duplicate insertions.
@@ -51,7 +51,7 @@ flowchart TD
 * **Dual Embedders**:
   - `BAAI/bge-m3`: 1024-dim dense vectors with native Bengali and English support for ingestion and offline development.
   - `nvidia/llama-nemotron-embed-1b-v2`: 1024-dim truncated via Matryoshka learning for production cloud runtime on Vercel.
-* **Dynamic Routing**: [`web/src/ai/genkit.ts`](file:///home/syed/workspace/Sheratutor/web/src/ai/genkit.ts) switches between `ollamaEmbedder` and `nimEmbedder` based on `process.env.VERCEL`.
+* **Dynamic Routing**: [`web/src/ai/genkit.ts`](https://github.com/CodeStorm-Hub/Sheratutor/blob/docs/web/src/ai/genkit.ts) switches between `ollamaEmbedder` and `nimEmbedder` based on `process.env.VERCEL`.
 
 ### 4. Vector Database Indexing
 * **Dense HNSW Index**:

@@ -104,7 +104,7 @@ The leaderboards help you compare models across multiple dimensions so you can c
 
 Tip
 
-Leaderboard benchmarks provide standardized comparisons across models using public datasets. To evaluate model performance on your specific data and use case, see [Evaluate your generative AI apps](../how-to/evaluate-generative-ai-app).
+Leaderboard benchmarks provide standardized comparisons across models using public datasets. To evaluate model performance on your specific data and use case, see [Evaluate your generative AI apps](https://learn.microsoft.com/en-us/azure/foundry/how-to/evaluate-generative-ai-app).
 
 ## Quality benchmarks of language models
 

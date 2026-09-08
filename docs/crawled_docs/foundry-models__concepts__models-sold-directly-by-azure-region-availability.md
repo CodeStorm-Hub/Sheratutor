@@ -71,11 +71,11 @@ Serverless API deployment in Microsoft Foundry includes three deployment categor
 - **Data Zone** types: Processed anywhere within the Microsoft-specified data zone (US, EU, or Asia Pacific (APAC))
 - **Standard/Regional** types: Processed in the region associated with your deployment (not available for batch deployments)
 
-All deployments can perform the exact same inference operations, but the billing, scale, and performance are substantially different. To learn more about Microsoft Foundry deployment types, including *batch* deployment types, see [Deployment types for Microsoft Foundry Models](deployment-types).
+All deployments can perform the exact same inference operations, but the billing, scale, and performance are substantially different. To learn more about Microsoft Foundry deployment types, including *batch* deployment types, see [Deployment types for Microsoft Foundry Models](https://learn.microsoft.com/en-us/azure/foundry/deployment-types).
 
 Tip
 
-Use the tabs at the top of this page to switch deployment categories: [Standard deployment options](models-sold-directly-by-azure-region-availability?pivots=standard), [Provisioned deployment options](models-sold-directly-by-azure-region-availability?pivots=provisioned), and [Batch deployment options](models-sold-directly-by-azure-region-availability?pivots=batch).
+Use the tabs at the top of this page to switch deployment categories: [Standard deployment options](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability?pivots=standard), [Provisioned deployment options](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability?pivots=provisioned), and [Batch deployment options](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability?pivots=batch).
 
 ::: zone pivot="standard"
 
@@ -85,7 +85,7 @@ For **global deployments**, Azure OpenAI can process prompts and responses in an
 
 #### Availability for Azure OpenAI in Foundry Models
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | codex-mini | 2025-05-16 | - | - | - | ✅ | - | ✅ | - | - | - | - |
@@ -160,7 +160,7 @@ For **global deployments**, Azure OpenAI can process prompts and responses in an
 | text-embedding-3-small | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | codex-mini | 2025-05-16 | - | - | - | - | - | - | ✅ | - | - | - | - |
@@ -233,7 +233,7 @@ For **global deployments**, Azure OpenAI can process prompts and responses in an
 | text-embedding-3-small | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | computer-use-preview | 2025-02-11 | - | - | - | - | ✅ |
@@ -292,7 +292,7 @@ For **global deployments**, Azure OpenAI can process prompts and responses in an
 | text-embedding-3-small | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 | **Model** | **Version** | **southafricanorth** | **uaenorth** |
 | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ |
@@ -341,7 +341,7 @@ For **global deployments**, Azure OpenAI can process prompts and responses in an
 
 #### Availability for other Foundry Models sold by Azure
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westcentralus** | **westus** | **westus2** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | cohere-command-a | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -392,7 +392,7 @@ For **global deployments**, Azure OpenAI can process prompts and responses in an
 | Phi-4-multimodal-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Phi-4-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **ukwest** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | cohere-command-a | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -443,7 +443,7 @@ For **global deployments**, Azure OpenAI can process prompts and responses in an
 | Phi-4-multimodal-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Phi-4-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **japanwest** | **koreacentral** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | cohere-command-a | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -494,7 +494,7 @@ For **global deployments**, Azure OpenAI can process prompts and responses in an
 | Phi-4-multimodal-instruct | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Phi-4-reasoning | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 | **Model** | **Version** | **southafricanorth** | **uaenorth** |
 | --- | --- | --- | --- |
 | cohere-command-a | 1 | ✅ | ✅ |
@@ -553,7 +553,7 @@ For **Data Zone** deployments, Microsoft processes prompts and responses anywher
 
 #### Availability for Azure OpenAI in Foundry Models
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -589,7 +589,7 @@ For **Data Zone** deployments, Microsoft processes prompts and responses anywher
 | text-embedding-3-small | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
@@ -621,7 +621,7 @@ For **Data Zone** deployments, Microsoft processes prompts and responses anywher
 | text-embedding-3-small | 1 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
 | text-embedding-ada-002 | 2 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -633,14 +633,14 @@ For **Data Zone** deployments, Microsoft processes prompts and responses anywher
 | model-router | 2025-08-07 | ✅ | - | - | - | ✅ |
 | model-router | 2025-11-18 | ✅ | - | - | - | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
 
 #### Availability for other Foundry Models sold by Azure
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westcentralus** | **westus** | **westus2** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | DeepSeek-V4-Flash | 2026-04-23 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -656,7 +656,7 @@ Not available
 | Mistral-Large-3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | mistral-medium-3-5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **polandcentral** | **spaincentral** | **swedencentral** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Cohere-rerank-v4.0-fast | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -668,10 +668,10 @@ Not available
 | Mistral-Large-3 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | mistral-medium-3-5 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 Not available
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
@@ -682,7 +682,7 @@ For **Standard/Regional** deployments, Azure OpenAI processes prompts and respon
 
 #### Availability for Azure OpenAI in Foundry Models
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **brazilsouth** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -702,7 +702,7 @@ For **Standard/Regional** deployments, Azure OpenAI processes prompts and respon
 | tts-hd | 001 | - | - | - | - | - | ✅ | - | - | ✅ |
 | whisper | 001 | - | - | - | - | ✅ | ✅ | - | - | - |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **uksouth** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | - | - | - | - | - | ✅ | ✅ | - | - |
@@ -721,7 +721,7 @@ For **Standard/Regional** deployments, Azure OpenAI processes prompts and respon
 | tts-hd | 001 | - | - | - | - | - | ✅ | - | - | - |
 | whisper | 001 | - | - | ✅ | - | - | ✅ | ✅ | - | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1-mini | 2025-04-14 | ✅ | ✅ | - | - | ✅ |
@@ -731,7 +731,7 @@ For **Standard/Regional** deployments, Azure OpenAI processes prompts and respon
 | text-embedding-ada-002 | 2 | ✅ | ✅ | - | - | ✅ |
 | whisper | 001 | - | - | - | - | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 | **Model** | **Version** | **southafricanorth** | **uaenorth** |
 | --- | --- | --- | --- |
 | text-embedding-3-large | 1 | ✅ | ✅ |
@@ -743,16 +743,16 @@ For **Standard/Regional** deployments, Azure OpenAI processes prompts and respon
 
 #### Availability for other Foundry Models sold by Azure
 
-# [Americas](#tab/az-americas)
+# **Americas**
 Not available
 
-# [Europe](#tab/az-europe)
+# **Europe**
 Not available
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 Not available
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
@@ -767,7 +767,7 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 
 #### Availability for Azure OpenAI in Foundry Models
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -796,7 +796,7 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 | o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -825,7 +825,7 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 | o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -854,7 +854,7 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 | o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 | **Model** | **Version** | **southafricanorth** | **uaenorth** |
 | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ |
@@ -887,25 +887,25 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 
 #### Availability for other Foundry Models sold by Azure
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westcentralus** | **westus** | **westus2** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **ukwest** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **japanwest** | **koreacentral** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 | **Model** | **Version** | **southafricanorth** | **uaenorth** |
 | --- | --- | --- | --- |
 | DeepSeek-V3.2 | 1 | ✅ | ✅ |
@@ -919,7 +919,7 @@ For **Data Zone** deployments, prompts and responses are processed anywhere with
 
 #### Availability for Azure OpenAI in Foundry Models
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -946,7 +946,7 @@ For **Data Zone** deployments, prompts and responses are processed anywhere with
 | o3-mini | 2025-01-31 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
@@ -971,34 +971,34 @@ For **Data Zone** deployments, prompts and responses are processed anywhere with
 | o3-mini | 2025-01-31 | ✅ | ✅ | - | - | ✅ | ✅ | ✅ | - | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | - | ✅ | ✅ | ✅ | - | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | gpt-5.2 | 2025-12-11 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
 
 #### Availability for other Foundry Models sold by Azure
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **italynorth** | **polandcentral** | **spaincentral** | **swedencentral** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | DeepSeek-V3.2 | 1 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | Llama-3.3-70B-Instruct | 9 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 Not available
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
@@ -1009,7 +1009,7 @@ For **Standard/Regional** deployments, prompts and responses are processed in th
 
 #### Availability for Azure OpenAI in Foundry Models
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **brazilsouth** | **canadacentral** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -1034,7 +1034,7 @@ For **Standard/Regional** deployments, prompts and responses are processed in th
 | o3-mini | 2025-01-31 | - | - | ✅ | - | - | ✅ | - | ✅ | - | - |
 | o4-mini | 2025-04-16 | - | - | - | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **norwayeast** | **polandcentral** | **spaincentral** | **swedencentral** | **switzerlandnorth** | **switzerlandwest** | **uksouth** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | - | ✅ | - | - | - | ✅ | ✅ | - | ✅ | - |
@@ -1058,7 +1058,7 @@ For **Standard/Regional** deployments, prompts and responses are processed in th
 | o3-mini | 2025-01-31 | - | - | - | - | - | ✅ | ✅ | - | - | - |
 | o4-mini | 2025-04-16 | - | - | - | - | - | - | - | - | - | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southeastasia** | **southindia** |
 | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -1078,7 +1078,7 @@ For **Standard/Regional** deployments, prompts and responses are processed in th
 | o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | - | ✅ |
 | o4-mini | 2025-04-16 | - | ✅ | - | - | - |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 | **Model** | **Version** | **southafricanorth** | **uaenorth** |
 | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | - | ✅ |
@@ -1095,16 +1095,16 @@ For **Standard/Regional** deployments, prompts and responses are processed in th
 
 #### Availability for other Foundry Models sold by Azure
 
-# [Americas](#tab/az-americas)
+# **Americas**
 Not available
 
-# [Europe](#tab/az-europe)
+# **Europe**
 Not available
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 Not available
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
@@ -1119,7 +1119,7 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 
 #### Availability for Azure OpenAI in Foundry Models
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **brazilsouth** | **canadaeast** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -1137,7 +1137,7 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 | o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **norwayeast** | **polandcentral** | **swedencentral** | **switzerlandnorth** | **uksouth** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -1155,7 +1155,7 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 | o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 | **Model** | **Version** | **australiaeast** | **japaneast** | **koreacentral** | **southindia** |
 | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ |
@@ -1173,7 +1173,7 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 | o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ |
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 | **Model** | **Version** | **southafricanorth** |
 | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ |
@@ -1195,16 +1195,16 @@ For **Global deployments**, prompts and responses can be processed in any Azure 
 
 #### Availability for other Foundry Models sold by Azure
 
-# [Americas](#tab/az-americas)
+# **Americas**
 Not available
 
-# [Europe](#tab/az-europe)
+# **Europe**
 Not available
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 Not available
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
@@ -1215,7 +1215,7 @@ For **Data Zone** deployments, prompts and responses are processed anywhere with
 
 #### Availability for Azure OpenAI in Foundry Models
 
-# [Americas](#tab/az-americas)
+# **Americas**
 | **Model** | **Version** | **centralus** | **eastus** | **eastus2** | **northcentralus** | **southcentralus** | **westus** | **westus3** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -1232,7 +1232,7 @@ For **Data Zone** deployments, prompts and responses are processed anywhere with
 | o3-mini | 2025-01-31 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Europe](#tab/az-europe)
+# **Europe**
 | **Model** | **Version** | **francecentral** | **germanywestcentral** | **polandcentral** | **swedencentral** | **westeurope** |
 | --- | --- | --- | --- | --- | --- | --- |
 | gpt-4.1 | 2025-04-14 | ✅ | ✅ | ✅ | ✅ | ✅ |
@@ -1244,26 +1244,26 @@ For **Data Zone** deployments, prompts and responses are processed anywhere with
 | o3 | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
 | o4-mini | 2025-04-16 | ✅ | ✅ | ✅ | ✅ | ✅ |
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 Not available
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---
 
 #### Availability for other Foundry Models sold by Azure
 
-# [Americas](#tab/az-americas)
+# **Americas**
 Not available
 
-# [Europe](#tab/az-europe)
+# **Europe**
 Not available
 
-# [Asia Pacific](#tab/az-apac)
+# **Asia Pacific**
 Not available
 
-# [Middle East &amp; Africa](#tab/az-mea)
+# **Middle East &amp; Africa**
 Not available
 
 ---

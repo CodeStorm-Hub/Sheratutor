@@ -72,7 +72,7 @@ This data is used to provide visibility into how agents run, enabling troublesho
 
 Important
 
-When you enable AppInsights for a project, AppInsights logs traces to help monitor and evaluate user-level interactions with agents. Project members with the Log Analytics Reader role in AppInsights can view trace data, which might contain personal data and customer content. If the underlying Log Analytics tables are [protected](/en-us/azure/azure-monitor/logs/protected-tables-configure) (their protection level is set to **Protected**), members need the [Privileged Monitoring Data Reader](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role to view that trace data. Review what trace data is collected and who can view and use this data. More information is in the following section.
+When you enable AppInsights for a project, AppInsights logs traces to help monitor and evaluate user-level interactions with agents. Project members with the Log Analytics Reader role in AppInsights can view trace data, which might contain personal data and customer content. If the underlying Log Analytics tables are [protected](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure) (their protection level is set to **Protected**), members need the [Privileged Monitoring Data Reader](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role to view that trace data. Review what trace data is collected and who can view and use this data. More information is in the following section.
 
 Default state:
 
@@ -93,7 +93,7 @@ Tracing is enabled when a project is connected to an Azure Monitor Application I
 When you enable tracing:
 
 - Trace data begins to be collected and stored for all agents within the project.
-- To view traces in the Foundry Tracing UI, users need access to the Foundry project and read permission on the connected Application Insights or Log Analytics workspace. For example, roles such as Log Analytics Reader, Monitoring Reader, or Reader at the Application Insights resource, Log Analytics workspace, or an appropriate parent scope can grant this access. If the underlying Log Analytics tables are [protected](/en-us/azure/azure-monitor/logs/protected-tables-configure), assignees also need the [Privileged Monitoring Data Reader](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role to read that data.
+- To view traces in the Foundry Tracing UI, users need access to the Foundry project and read permission on the connected Application Insights or Log Analytics workspace. For example, roles such as Log Analytics Reader, Monitoring Reader, or Reader at the Application Insights resource, Log Analytics workspace, or an appropriate parent scope can grant this access. If the underlying Log Analytics tables are [protected](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure), assignees also need the [Privileged Monitoring Data Reader](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role to read that data.
 
 ## Disable tracing
 
@@ -113,14 +113,14 @@ Exact steps on how to disable tracing depend on the UI or SDK surface and should
 ## Where data is stored
 
 - The Application Insights resource connected to the Foundry project stores trace data.
-- Your Application Insights and Log Analytics configuration governs data retention and storage. For more information, see [Manage data retention in a Log Analytics workspace](/en-us/azure/azure-monitor/logs/data-retention-configure).
+- Your Application Insights and Log Analytics configuration governs data retention and storage. For more information, see [Manage data retention in a Log Analytics workspace](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/data-retention-configure).
 
 ## Data sharing considerations
 
 - Trace data may be accessible to users with appropriate permissions on the connected telemetry resource.
 - Depending on the configuration, users within the same project or tenant might see data.
-- To view traces in the Foundry Tracing UI, users need access to the Foundry project and read permission on the connected Application Insights or Log Analytics workspace. For example, roles such as Log Analytics Reader, Monitoring Reader, or Reader at the Application Insights resource, Log Analytics workspace, or an appropriate parent scope can grant this access. If the underlying Log Analytics tables are [protected](/en-us/azure/azure-monitor/logs/protected-tables-configure), assignees also need the [Privileged Monitoring Data Reader](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role to read that data.
-- For additional considerations and important information specific to hosted agents, review [hosted agents](../../agents/concepts/hosted-agents) and [hosted agent's platform-injected environment variables](../../agents/how-to/deploy-hosted-agent#platform-injected-environment-variables).
+- To view traces in the Foundry Tracing UI, users need access to the Foundry project and read permission on the connected Application Insights or Log Analytics workspace. For example, roles such as Log Analytics Reader, Monitoring Reader, or Reader at the Application Insights resource, Log Analytics workspace, or an appropriate parent scope can grant this access. If the underlying Log Analytics tables are [protected](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure), assignees also need the [Privileged Monitoring Data Reader](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role to read that data.
+- For additional considerations and important information specific to hosted agents, review [hosted agents](https://learn.microsoft.com/en-us/azure/foundry/../agents/concepts/hosted-agents) and [hosted agent's platform-injected environment variables](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/deploy-hosted-agent#platform-injected-environment-variables).
 
 Customers are responsible for configuring access controls and ensuring compliance with their organizational policies.
 
@@ -140,7 +140,7 @@ Tracing can capture personal data including:
 ### Data protection controls
 
 - Personal data redaction: Redact personal data, such as email addresses and phone numbers.
-- Restrict access to trace data by carefully managing which users are granted the RBAC **Log Analytics Reader** role. When the underlying Log Analytics tables are [protected](/en-us/azure/azure-monitor/logs/protected-tables-configure), also manage who has the [Privileged Monitoring Data Reader](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role, because it grants read access to protected tables.
+- Restrict access to trace data by carefully managing which users are granted the RBAC **Log Analytics Reader** role. When the underlying Log Analytics tables are [protected](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure), also manage who has the [Privileged Monitoring Data Reader](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role, because it grants read access to protected tables.
 - Configurable policies: Control what data is captured and visible.
 
 These controls help you manage risk and comply with privacy requirements.

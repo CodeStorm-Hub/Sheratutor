@@ -52,13 +52,13 @@ description: Complete Technical Architecture, Curriculum Corpus, and Ingestion S
 
     [:octicons-arrow-right-24: Explore System Architecture](antigravity-docs/SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md)
 
--   :material-television-play: **[Interactive Visual Explorers](antigravity-docs/sheratutor_interactive_explorer.html)**
+-   :material-television-play: **[Interactive Visual Explorers](antigravity-docs/explorers.md)**
 
     ---
 
-    Self-contained interactive visualizers for SheraTutor system architecture, Google Genkit flows, Microsoft Foundry topologies, and the BoardMate AI pitch deck.
+    7 self-contained interactive visualizers for SheraTutor system architecture, Google Genkit flows, Microsoft Foundry topologies, corpus quality audits, and the BoardMate AI pitch deck.
 
-    [:octicons-arrow-right-24: Launch Visual Explorers](antigravity-docs/sheratutor_interactive_explorer.html)
+    [:octicons-arrow-right-24: Open Explorers Showcase](antigravity-docs/explorers.md)
 
 -   :material-microsoft-azure: **[Azure Foundry Reference](crawled_docs/what-is-foundry.md)**
 

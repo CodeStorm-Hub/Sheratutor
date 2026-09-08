@@ -60,7 +60,7 @@ platformId: b59c1008-5b99-0d07-2594-386901fa0b45
 
 # Model retirement schedule in Azure Government - Microsoft Foundry | Microsoft Learn
 
-This article lists the retirement schedule for Foundry Models in Azure Government - their current lifecycle stage, retirement date, and suggested replacement. Use it to plan migrations before a model is deprecated or retired. For details on what each lifecycle stage means and how notifications work, see [Microsoft Foundry Models lifecycle and support policy in Azure Government](model-retirements-gov).
+This article lists the retirement schedule for Foundry Models in Azure Government - their current lifecycle stage, retirement date, and suggested replacement. Use it to plan migrations before a model is deprecated or retired. For details on what each lifecycle stage means and how notifications work, see [Microsoft Foundry Models lifecycle and support policy in Azure Government](https://learn.microsoft.com/en-us/azure/foundry/model-retirements-gov).
 
 ## Foundry Models sold by Azure in Azure Government
 

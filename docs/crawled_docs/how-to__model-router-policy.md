@@ -70,9 +70,9 @@ This article shows IT admins how to assign a policy that governs model router, a
 ## Prerequisites
 
 - An Azure account with an active subscription. If you don't have one, create a [free Azure account](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
-- A Foundry resource in a region that supports model router. To learn more, see [Use model router for Microsoft Foundry](../openai/how-to/model-router).
-- Permissions to assign Azure Policy. To create and assign policies, you must be an [Owner](/en-us/azure/role-based-access-control/built-in-roles#owner) or [Resource Policy Contributor](/en-us/azure/role-based-access-control/built-in-roles#resource-policy-contributor) at the subscription or resource group level.
-- Familiarity with Azure Policy. To learn more, see [What is Azure Policy?](/en-us/azure/governance/policy/overview).
+- A Foundry resource in a region that supports model router. To learn more, see [Use model router for Microsoft Foundry](openai__how-to__model-router.md).
+- Permissions to assign Azure Policy. To create and assign policies, you must be an [Owner](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#owner) or [Resource Policy Contributor](https://learn.microsoft.com/en-us/azure/role-based-access-control/built-in-roles#resource-policy-contributor) at the subscription or resource group level.
+- Familiarity with Azure Policy. To learn more, see [What is Azure Policy?](https://learn.microsoft.com/en-us/azure/governance/policy/overview).
 
 ## How model router honors Azure Policy
 
@@ -95,13 +95,13 @@ Model discoverability is preserved. Unapproved models remain visible in the mode
 
 The following screenshot shows the deployment pane in the Foundry portal when a policy is active. The restriction banner explains that the organization's policy excludes certain models from routing, and developers can select **View blocked** to see which models are blocked.
 
-[![Screenshot of the Deploy model-router pane with the policy restriction banner at the top of the model list, and a View blocked button.](media/model-router-policy/deploy-pane-all-models.png)](media/model-router-policy/deploy-pane-all-models.png#lightbox)
+![Screenshot of the Deploy model-router pane with the policy restriction banner at the top of the model list, and a View blocked button.](https://learn.microsoft.com/en-us/azure/foundry/media/model-router-policy/deploy-pane-all-models.png)
 
 ## Assign a policy that governs model router
 
 Model router honors built-in Foundry policy definitions for approved-models governance and, in public preview, for additional routing standards.
 
-**Approved-models governance**: Model router uses the same built-in Foundry policy that governs other model deployments - **Foundry model deployments should only use approved models** (previously named *Cognitive Services Deployments should only use approved Registry Models*). To assign or update this policy, follow the steps in [Built-in policy for model deployment](model-deployment-policy). The publisher names and asset IDs that you allow apply to model router selections automatically.
+**Approved-models governance**: Model router uses the same built-in Foundry policy that governs other model deployments - **Foundry model deployments should only use approved models** (previously named *Cognitive Services Deployments should only use approved Registry Models*). To assign or update this policy, follow the steps in [Built-in policy for model deployment](https://learn.microsoft.com/en-us/azure/foundry/model-deployment-policy). The publisher names and asset IDs that you allow apply to model router selections automatically.
 
 **Model router-specific governance (preview)**: Additional built-in policy definitions are available in public preview to extend governance to other aspects of model router deployments, including deployment regions, required routing rules, and logging configurations. You can assign these definitions from the Azure Policy **Definitions** catalog alongside the approved-models policy to enforce a broader set of routing standards across your environment.
 
@@ -122,24 +122,24 @@ The following sections describe what a developer experiences when a policy that 
 
     When a policy is active, a restriction banner appears at the top of the model details page. The banner tells you that your organization's policy excludes certain models from routing.
 
-    [![Screenshot of the model-router details page with a restriction banner that explains some models are restricted by organizational policy.](media/model-router-policy/model-card-restriction-banner.png)](media/model-router-policy/model-card-restriction-banner.png#lightbox)
+    ![Screenshot of the model-router details page with a restriction banner that explains some models are restricted by organizational policy.](https://learn.microsoft.com/en-us/azure/foundry/media/model-router-policy/model-card-restriction-banner.png)
 3. To preview which models are excluded, select **View blocked**. The **Models blocked by IT Admin** dialog lists the models that your organization's policy excludes from routing.
 
-    [![Screenshot of the Models blocked by IT Admin dialog showing a list of blocked models and their versions.](media/model-router-policy/blocked-models-dialog.png)](media/model-router-policy/blocked-models-dialog.png#lightbox)
+    ![Screenshot of the Models blocked by IT Admin dialog showing a list of blocked models and their versions.](https://learn.microsoft.com/en-us/azure/foundry/media/model-router-policy/blocked-models-dialog.png)
 4. In the deployment pane, choose **Custom settings** to expand model subset configuration.
 5. In the **Models subset** section, select **Route to a subset of models**.
 
     When a policy is active, an informational banner appears at the top of the model list that tells you the selection is governed by your organization's Azure Policy. The banner asks you to contact your IT administrator to request changes.
 6. Select from the enabled (approved) models. Unapproved models remain visible but their checkboxes are disabled.
 
-    [![Screenshot of the Deploy model-router pane with Route to a subset of models selected and a list of selectable models with checkboxes.](media/model-router-policy/deploy-pane-subset-selection.png)](media/model-router-policy/deploy-pane-subset-selection.png#lightbox)
+    ![Screenshot of the Deploy model-router pane with Route to a subset of models selected and a list of selectable models with checkboxes.](https://learn.microsoft.com/en-us/azure/foundry/media/model-router-policy/deploy-pane-subset-selection.png)
 
     To review the full list of blocked models from the deployment pane, select **View blocked** in the restriction banner.
 
-    [![Screenshot of the Models blocked by IT Admin dialog opened from the Deploy model-router pane, listing the blocked models.](media/model-router-policy/deploy-pane-blocked-models-dialog.png)](media/model-router-policy/deploy-pane-blocked-models-dialog.png#lightbox)
+    ![Screenshot of the Models blocked by IT Admin dialog opened from the Deploy model-router pane, listing the blocked models.](https://learn.microsoft.com/en-us/azure/foundry/media/model-router-policy/deploy-pane-blocked-models-dialog.png)
 7. Select **Deploy**. The deployment uses the compliant model subset.
 
-For the full deployment walkthrough that doesn't include policy steps, see [Use model router for Microsoft Foundry](../openai/how-to/model-router).
+For the full deployment walkthrough that doesn't include policy steps, see [Use model router for Microsoft Foundry](openai__how-to__model-router.md).
 
 ### REST API, Azure CLI, and ARM templates
 
@@ -149,7 +149,7 @@ To stay compliant on the command line:
 
 1. Identify the approved model asset IDs and publisher names from the policy assignment, or from your IT administrator.
 2. When you author the request body for the model router deployment, include only those approved models in the model subset.
-3. Submit the deployment by using the REST API examples in [Use model router for Microsoft Foundry](../openai/how-to/model-router#configure-custom-settings-with-the-rest-api).
+3. Submit the deployment by using the REST API examples in [Use model router for Microsoft Foundry](openai__how-to__model-router.md#configure-custom-settings-with-the-rest-api).
 
 If the request fails, inspect the response message to see which model triggered the policy. Update the request body to remove the noncompliant model and resubmit.
 
@@ -164,7 +164,7 @@ When you assign a new policy, or when you update an existing policy to disallow 
     - Update the model router deployment to remove the disallowed model from the model subset.
     - Delete the model router deployment and create a new one that uses only approved models.
 
-Compliance results can take up to 24 hours to appear after a policy change. To force evaluation sooner, trigger an [on-demand evaluation scan](/en-us/azure/governance/policy/how-to/get-compliance-data#on-demand-evaluation-scan).
+Compliance results can take up to 24 hours to appear after a policy change. To force evaluation sooner, trigger an [on-demand evaluation scan](https://learn.microsoft.com/en-us/azure/governance/policy/how-to/get-compliance-data#on-demand-evaluation-scan).
 
 ## Troubleshoot
 
@@ -173,5 +173,5 @@ Compliance results can take up to 24 hours to appear after a policy change. To f
 | Model subset checkboxes are unexpectedly disabled in the Foundry portal | A policy assignment at the subscription or resource group scope restricts the affected models. | Check the banner at the top of the model subset list. Contact your IT administrator to request a model approval or a policy update. |
 | API or CLI deployment fails with a policy violation, but the same models work in the portal for a different project | The policy assignment scope or parameters differ between projects. | Compare the policy assignment scope and the **Allowed Asset Ids** parameter values for both projects in the **Policy** &gt; **Assignments** view. |
 | Approved model is blocked unexpectedly | The model asset ID or publisher name in the policy parameters doesn't exactly match the model. | Asset IDs and publisher names are case-sensitive. Compare the parameter values against the model card in the [model catalog](https://ai.azure.com/explore/models). |
-| Compliance dashboard doesn't show a recent change | Compliance evaluation hasn't completed yet. | Wait for the next evaluation cycle (up to 24 hours) or trigger an [on-demand evaluation scan](/en-us/azure/governance/policy/how-to/get-compliance-data#on-demand-evaluation-scan). |
+| Compliance dashboard doesn't show a recent change | Compliance evaluation hasn't completed yet. | Wait for the next evaluation cycle (up to 24 hours) or trigger an [on-demand evaluation scan](https://learn.microsoft.com/en-us/azure/governance/policy/how-to/get-compliance-data#on-demand-evaluation-scan). |
 | Policy banner doesn't appear in the model subset selector | The policy assignment hasn't propagated, or no policy is assigned at the resource scope. | Allow up to 15 minutes for a new assignment to propagate. Verify that an assignment exists at the subscription or resource group scope. |

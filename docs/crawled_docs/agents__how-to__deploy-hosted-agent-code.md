@@ -61,11 +61,11 @@ platformId: 385c9d81-f72c-1285-d12d-3b9e16d95c2b
 
 # Deploy a hosted agent from source code - Microsoft Foundry | Microsoft Learn
 
-This article shows you how to deploy a [Hosted agent](../concepts/hosted-agents) in Foundry Agent Service from Python or .NET source code, without building or pushing a container image. You upload a `.zip` of your code (and optionally your dependencies), and Agent Service either runs it as-is or builds your dependencies for you in the cloud.
+This article shows you how to deploy a [Hosted agent](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agents) in Foundry Agent Service from Python or .NET source code, without building or pushing a container image. You upload a `.zip` of your code (and optionally your dependencies), and Agent Service either runs it as-is or builds your dependencies for you in the cloud.
 
 Tip
 
-For most scenarios, deploy with the **Azure Developer CLI (azd)** or the **Foundry Toolkit for VS Code**. These tools do the heavy lifting for you: they package your source, upload it, poll for `active`, and configure role-based access control automatically. To get started, follow the [Quickstart: Deploy your first hosted agent](../quickstarts/quickstart-hosted-agent) and choose **Code** (or **Source Code (ZIP upload)**) when prompted for a deployment method.
+For most scenarios, deploy with the **Azure Developer CLI (azd)** or the **Foundry Toolkit for VS Code**. These tools do the heavy lifting for you: they package your source, upload it, poll for `active`, and configure role-based access control automatically. To get started, follow the [Quickstart: Deploy your first hosted agent](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-hosted-agent) and choose **Code** (or **Source Code (ZIP upload)**) when prompted for a deployment method.
 
 Use the SDK and REST procedures in this article when you need to deploy source-code agents programmatically—from the Python SDK or .NET SDK in your own applications, or directly over the REST API for custom tooling, language-agnostic automation, or integration with existing continuous-delivery systems. In this article, you complete the following tasks:
 
@@ -73,16 +73,16 @@ Use the SDK and REST procedures in this article when you need to deploy source-c
 - Create the agent, wait for it to reach `active`, and invoke it.
 - Update, version, download, and stream logs for the deployed agent.
 
-If you need full control of the runtime image or you already have a working Dockerfile, use the container-based path: [Deploy a hosted agent](deploy-hosted-agent).
+If you need full control of the runtime image or you already have a working Dockerfile, use the container-based path: [Deploy a hosted agent](https://learn.microsoft.com/en-us/azure/foundry/deploy-hosted-agent).
 
-If you use a coding agent like GitHub Copilot to package and deploy source code, the [Microsoft Foundry Skill](../../how-to/develop/use-microsoft-foundry-skill) can help prepare your project and follow the required `azd`, SDK, or REST steps.
+If you use a coding agent like GitHub Copilot to package and deploy source code, the [Microsoft Foundry Skill](https://learn.microsoft.com/en-us/azure/foundry/../how-to/develop/use-microsoft-foundry-skill) can help prepare your project and follow the required `azd`, SDK, or REST steps.
 
 ## Prerequisites
 
-- A [Microsoft Foundry project](../../how-to/create-projects) in a supported region.
-- [Azure CLI](/en-us/cli/azure/install-azure-cli) version 2.80 or later, signed in to the tenant that owns the project.
+- A [Microsoft Foundry project](https://learn.microsoft.com/en-us/azure/foundry/../how-to/create-projects) in a supported region.
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) version 2.80 or later, signed in to the tenant that owns the project.
 
-# [Python](#tab/python)
+# **Python**
 - `pip` from Python 3.13 or later, to package your source locally.
 - The `azure-ai-projects` version 2.2.0 or later and `azure-identity` packages.
 
@@ -90,7 +90,7 @@ If you use a coding agent like GitHub Copilot to package and deploy source code,
     pip install "azure-ai-projects>=2.2.0" azure-identity
     ```
 
-# [C#](#tab/csharp)
+# **C#**
 - The .NET 10 SDK, to package your source locally.
 - The `Azure.AI.Projects.Agents` and `Azure.Identity` packages.
 
@@ -103,7 +103,7 @@ If you use a coding agent like GitHub Copilot to package and deploy source code,
 
     The source-code deployment APIs for .NET are currently available only in a prerelease version of `Azure.AI.Projects.Agents`. Use the `--prerelease` flag to install it. These APIs aren't yet included in the stable (GA) release.
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 - Node.js 22 or later, to package your source locally.
 - The `@azure/ai-projects` and `@azure/identity` packages. You run the caller in Node.js, but the hosted runtime you deploy is still Python or .NET source code.
 
@@ -111,7 +111,7 @@ If you use a coding agent like GitHub Copilot to package and deploy source code,
     npm install @azure/ai-projects @azure/identity
     ```
 
-# [REST API](#tab/rest)
+# **REST API**
 - A command-line HTTP client such as `curl` (the REST examples in this article use `curl`).
 - To package your source locally, install the toolchain for your agent's language: `pip` from Python 3.13 or later, or the .NET 10 SDK.
 
@@ -141,13 +141,13 @@ After a language end-of-life date, you can still create, update, and run hosted 
 
 ### Required permissions
 
-You need the **Foundry Project Manager** role at the project scope to deploy a hosted agent. This role grants the data-plane permissions to create and update agents, plus the ability to create role assignments for the platform-created agent identity if needed. For a detailed breakdown of the permissions involved, see [Hosted agent permissions reference](../concepts/hosted-agent-permissions).
+You need the **Foundry Project Manager** role at the project scope to deploy a hosted agent. This role grants the data-plane permissions to create and update agents, plus the ability to create role assignments for the platform-created agent identity if needed. For a detailed breakdown of the permissions involved, see [Hosted agent permissions reference](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agent-permissions).
 
 Important
 
 The Foundry RBAC roles were recently renamed. **Foundry User**, **Foundry Owner**, **Foundry Account Owner**, and **Foundry Project Manager** were previously named Azure AI User, Azure AI Owner, Azure AI Account Owner, and Azure AI Project Manager. You might still see the previous names in some places while the rename rolls out. The role IDs and core permissions are unchanged by the rename.
 
-Your agent runs as a platform-assigned managed identity that's separate from your user identity. This identity can access model inferencing through the project endpoint and session storage by default. For external resources (for example, your own Azure Storage), assign RBAC roles manually to the agent's Microsoft Entra ID. For more information, see [Agent access beyond defaults](../concepts/hosted-agent-permissions#agent-access-beyond-defaults).
+Your agent runs as a platform-assigned managed identity that's separate from your user identity. This identity can access model inferencing through the project endpoint and session storage by default. For external resources (for example, your own Azure Storage), assign RBAC roles manually to the agent's Microsoft Entra ID. For more information, see [Agent access beyond defaults](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agent-permissions#agent-access-beyond-defaults).
 
 ## Deployment lifecycle
 
@@ -183,13 +183,13 @@ All source-code deployments require outbound access to:
 - `mcr.microsoft.com`
 - `*.login.microsoft.com`
 
-For network configuration, see [Deploy a hosted agent in a virtual network](virtual-networks).
+For network configuration, see [Deploy a hosted agent in a virtual network](https://learn.microsoft.com/en-us/azure/foundry/virtual-networks).
 
 ## Deploy using the Azure Developer CLI or VS Code
 
 The Azure Developer CLI (`azd`) and the Foundry Toolkit for VS Code automate the full source-code deployment lifecycle—they package your source into a zip, compute the SHA-256, upload it, poll for `active`, and configure role-based access control for you. These tools are the recommended path for most customers, and the fastest inner loop.
 
-For a step-by-step walkthrough, see the [Quickstart: Deploy your first hosted agent](../quickstarts/quickstart-hosted-agent). Choose **Code** (or **Source Code (ZIP upload)**) when the quickstart asks for a deployment method.
+For a step-by-step walkthrough, see the [Quickstart: Deploy your first hosted agent](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-hosted-agent). Choose **Code** (or **Source Code (ZIP upload)**) when the quickstart asks for a deployment method.
 
 ### Select source-code deployment
 
@@ -226,7 +226,7 @@ Use the SDK or REST paths in the following sections when you need to deploy prog
 
 Select your language or interface. Each tab walks through the same lifecycle: create the agent, poll until it reaches `active`, invoke it, and download the deployed code.
 
-# [Python](#tab/python)
+# **Python**
 Use the Python SDK to deploy source-code agents from your own applications or automation. You build the zip yourself and pass its bytes and SHA-256 to the SDK, which uploads it and exposes the same create, poll, invoke, and download operations as the REST API. Code-deployment requires `azure-ai-projects` version 2.2.0 or later.
 
 ### Build the zip
@@ -340,7 +340,7 @@ print(f"Downloaded {out_path} (matches upload: {sha.hexdigest() == code_zip_sha2
 
 For a complete runnable example, see the [Python hosted-agent samples](https://github.com/microsoft-foundry/foundry-samples/tree/main/samples/python/hosted-agents).
 
-# [C#](#tab/csharp)
+# **C#**
 Use the .NET SDK to deploy source-code agents from your own applications or automation. Unlike the Python and REST paths, the .NET SDK zips a source folder for you—you pass a folder path instead of building the zip yourself.
 
 ### Create the agent
@@ -409,7 +409,7 @@ Console.WriteLine("Downloaded agent code to ./downloaded");
 
 For a complete runnable example, see the [.NET hosted-agent samples](https://github.com/microsoft-foundry/foundry-samples/tree/main/samples/csharp/hosted-agents).
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 Use the JavaScript/TypeScript SDK to deploy source-code agents from your own applications or automation. The SDK caller runs in Node.js, but the hosted runtime it deploys can be Python or .NET source code—there's no Node.js Hosted agent runtime. You build the zip yourself and pass its bytes and SHA-256 to the SDK, which uploads it and exposes the same create, poll, invoke, and download operations as the REST API.
 
 ### Build the zip
@@ -555,9 +555,9 @@ console.log(
 );
 ```
 
-Reference: [AIProjectClient](/en-us/javascript/api/overview/azure/ai-projects-readme)
+Reference: [AIProjectClient](https://learn.microsoft.com/en-us/javascript/api/overview/azure/ai-projects-readme)
 
-# [REST API](#tab/rest)
+# **REST API**
 You can use the [REST API](https://ai.azure.com/api-reference/agents) for direct HTTP-based deployments or custom tooling. The sections walk through a first deployment in order: set up variables, build a zip, create the agent, poll until `active`, and invoke it. Update, version, download, and log-streaming endpoints are grouped under Ongoing operations.
 
 ## Deploy using the REST API
@@ -654,7 +654,7 @@ This metadata matches the hello-world zip.
 
 For the Invocations protocol, replace the `protocol_versions` entry with `{ "protocol": "invocations", "version": "1.0.0" }`. For the Invocations (WebSocket) protocol, use `{ "protocol": "invocations_ws", "version": "1.0.0" }`. For `bundled` mode, set `"dependency_resolution": "bundled"` and follow Build Linux dependencies locally.
 
-`code_configuration` and `container_configuration` are mutually exclusive in the agent definition: include `code_configuration` for source-code deploy (this article) or `container_configuration` for image-based deploy. See [Deploy a hosted agent (container)](deploy-hosted-agent) for the image variant.
+`code_configuration` and `container_configuration` are mutually exclusive in the agent definition: include `code_configuration` for source-code deploy (this article) or `container_configuration` for image-based deploy. See [Deploy a hosted agent (container)](https://learn.microsoft.com/en-us/azure/foundry/deploy-hosted-agent) for the image variant.
 
 ### Create the agent
 
@@ -713,7 +713,7 @@ curl -X POST "$ENDPOINT/agents/$AGENT/endpoint/protocols/invocations?api-version
 
 **Invocations (WebSocket) protocol:**
 
-Connect over a WebSocket upgrade instead of a REST `POST`. For the endpoint format and client examples, see [Build a voice agent with hosted agents](build-voice-agent#connect-a-client).
+Connect over a WebSocket upgrade instead of a REST `POST`. For the endpoint format and client examples, see [Build a voice agent with hosted agents](https://learn.microsoft.com/en-us/azure/foundry/build-voice-agent#connect-a-client).
 
 Useful response headers:
 
@@ -791,7 +791,7 @@ The zip must be **flat at the root**—no top-level wrapper folder.
 
 Select the tab for your agent's language.
 
-# [Python](#tab/python)
+# **Python**
 ### Python layout (remote build mode)
 
 The service installs dependencies in the cloud from `requirements.txt`.
@@ -842,7 +842,7 @@ tar -a -c -f agent-code.zip main.py requirements.txt packages
 
 `--only-binary=:all:` forces wheels (no source builds). The `--python-version` must match the `runtime` value in the agent definition.
 
-# [C#](#tab/csharp)
+# **C#**
 ### .NET layout (remote build mode)
 
 Zip the project sources only—no `bin/`, `obj/`, or `publish/` output. Agent Service runs `dotnet restore` and `dotnet publish` for you during provisioning.
@@ -876,10 +876,10 @@ cd publish && zip -r ../agent-code.zip .
 
 Use `--self-contained true` if you want to ship the .NET runtime in the zip. The `runtime` you set in the agent definition must match the `TargetFramework`.
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 The JavaScript/TypeScript SDK uploads Python or .NET source packages. There isn't a Node.js hosted runtime. Build the zip by following the Python or C# tab for the runtime you deploy, and then upload it with `project.agents.createVersionFromCode()`.
 
-# [REST API](#tab/rest)
+# **REST API**
 See the Python or C# tabs.
 
 ---
@@ -898,7 +898,7 @@ Common packaging mistakes that cause `session_creation_failed` or `ModuleNotFoun
 | --- | --- |
 | Maximum zip size (multipart upload) | 250 MB |
 
-For the supported `cpu` and `memory` combinations, see [Sandbox sizes](../concepts/hosted-agents#sandbox-sizes).
+For the supported `cpu` and `memory` combinations, see [Sandbox sizes](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agents#sandbox-sizes).
 
 ## Troubleshooting
 
@@ -907,7 +907,7 @@ For the supported `cpu` and `memory` combinations, see [Sandbox sizes](../concep
 | `401 Unauthorized` | Missing or wrong-scope token | Acquire a token with `--resource https://ai.azure.com`. |
 | `403 Forbidden` | Caller lacks Role Based Access Control on the project | Grant **Foundry Agent Consumer** (to invoke only) or **Foundry User** (to also develop) at project scope. |
 | `409 conflict` on Create (`Agent '<name>' already exists`) | Agent name already exists | Use Update (POST `/agents/{name}`), or pick a new name. |
-| `400 bad_request` (`CPU and Memory must be specified as a valid resource tier`) on Create or Update | `cpu`/`memory` aren't one of the supported tiers | Set `cpu` and `memory` to a valid pair from [Sandbox sizes](../concepts/hosted-agents#sandbox-sizes). |
+| `400 bad_request` (`CPU and Memory must be specified as a valid resource tier`) on Create or Update | `cpu`/`memory` aren't one of the supported tiers | Set `cpu` and `memory` to a valid pair from [Sandbox sizes](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agents#sandbox-sizes). |
 | `400 bad_request` (`Agent version is still being provisioned`) on invoke | A new version is mid-deploy and the active version is being swapped in | Poll the version `status` until `active`, then retry. |
 | `424 session_not_ready` on invoke | Container started but `/readiness` didn't return HTTP 200 within the timeout | Stream logs with `:logstream`, fix the readiness probe or startup error, redeploy. |
 | `409 conflict` on DELETE agent (`Agent has active sessions`) | Open sessions block deletion | Wait for sessions to go idle, or append `&force=true` to cascade-delete sessions. |
@@ -915,15 +915,15 @@ For the supported `cpu` and `memory` combinations, see [Sandbox sizes](../concep
 | Deployment fails in a private virtual network | Required outbound endpoints are blocked by the firewall | Allow the endpoints in Firewall requirements for private virtual networks, then redeploy. |
 | Version transitions to `failed` | Bad zip layout, syntax error, or (`remote_build`) a restore/compile failure | Read the version's `error` object first—`error.code` classifies the failure and `error.message` contains the underlying restore or compile error line (pip for Python, NuGet for .NET) plus a troubleshooting link. Verify the folder structure. Use `:logstream` only after the container starts. |
 | `ModuleNotFoundError` at runtime | `packages/` missing, contains raw `.whl` files, or has Windows binaries | Rebuild with `pip install --target packages/ --platform manylinux2014_x86_64 --only-binary=:all:`. |
-| `409 AgentNotCodeBased` on download | Agent is image-based | Use the [container-based deploy doc](deploy-hosted-agent). |
+| `409 AgentNotCodeBased` on download | Agent is image-based | Use the [container-based deploy doc](https://learn.microsoft.com/en-us/azure/foundry/deploy-hosted-agent). |
 
 ## Clean up resources
 
-If you scaffolded the project from the [Quickstart](../quickstarts/quickstart-hosted-agent) with `azd`, run `azd down` from the project root to remove the entire provisioned environment.
+If you scaffolded the project from the [Quickstart](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-hosted-agent) with `azd`, run `azd down` from the project root to remove the entire provisioned environment.
 
 To delete an agent you deployed with the SDK or REST API, use the matching path below.
 
-# [Python](#tab/python)
+# **Python**
 ```python
 # Delete one version
 project.agents.delete_version(agent_name=AGENT_NAME, agent_version=created.version)
@@ -932,13 +932,13 @@ project.agents.delete_version(agent_name=AGENT_NAME, agent_version=created.versi
 project.agents.delete(agent_name=AGENT_NAME)
 ```
 
-# [C#](#tab/csharp)
+# **C#**
 ```csharp
 // Delete the agent and all its versions (force cascades to active sessions)
 agentsClient.DeleteAgent(agentName: "my-code-agent", force: true);
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 ```typescript
 // Delete one version
 await project.agents.deleteVersion(agentName, created.version);
@@ -947,9 +947,9 @@ await project.agents.deleteVersion(agentName, created.version);
 await project.agents.delete(agentName, { force: true });
 ```
 
-Reference: [AIProjectClient](/en-us/javascript/api/overview/azure/ai-projects-readme)
+Reference: [AIProjectClient](https://learn.microsoft.com/en-us/javascript/api/overview/azure/ai-projects-readme)
 
-# [REST API](#tab/rest)
+# **REST API**
 ```bash
 # Delete one version
 curl -X DELETE "$ENDPOINT/agents/$AGENT/versions/$AGENT_VERSION?api-version=$API_VERSION" \

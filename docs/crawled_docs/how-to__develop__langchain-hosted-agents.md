@@ -62,7 +62,7 @@ platformId: 86e56da2-ab6e-d45f-cd87-7ea5a8df3678
 
 # Host LangGraph agents as Foundry hosted agents - Microsoft Foundry | Microsoft Learn
 
-Use the `langchain_azure_ai.agents.hosting` package to expose a compiled LangGraph graph through the protocols for Microsoft Foundry [hosted agents](../../agents/overview#hosted-agents). The hosting package lets you keep your LangChain and LangGraph agent logic in code while Foundry manages the hosted runtime, sessions, scale, identity, and protocol endpoints.
+Use the `langchain_azure_ai.agents.hosting` package to expose a compiled LangGraph graph through the protocols for Microsoft Foundry [hosted agents](https://learn.microsoft.com/en-us/azure/foundry/../agents/overview#hosted-agents). The hosting package lets you keep your LangChain and LangGraph agent logic in code while Foundry manages the hosted runtime, sessions, scale, identity, and protocol endpoints.
 
 In this article, you create a minimal LangGraph agent, expose it through either the Responses or Invocations protocol, test it through HTTP, and deploy it to Foundry with the Azure Developer CLI or the Foundry Toolkit Visual Studio Code extension.
 
@@ -71,7 +71,7 @@ You also learn how to migrate an existing LangGraph project without changing its
 ## Prerequisites
 
 - An Azure subscription. [Create one for free](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
-- A [Foundry project](../create-projects).
+- A [Foundry project](https://learn.microsoft.com/en-us/azure/foundry/create-projects).
 - A deployed chat model, such as `gpt-4.1` or `gpt-5-mini`.
 - Python 3.10 or later.
 - Azure CLI signed in (`az login`) so `DefaultAzureCredential` can authenticate.
@@ -98,7 +98,7 @@ Hosted agents can expose one or more protocols. Start with Responses for most co
 | Responses | `ResponsesHostServer` | `/responses` | You want OpenAI-compatible chat, streaming, response history, and conversation threading. |
 | Invocations | `InvocationsHostServer` | `/invocations` | You want a custom JSON shape, a webhook-style endpoint, or non-conversational processing. |
 
-For background on protocol behavior and sessions, see [Hosted agents](../../agents/concepts/hosted-agents) and [Manage Hosted agent sessions](../../agents/how-to/manage-hosted-sessions).
+For background on protocol behavior and sessions, see [Hosted agents](https://learn.microsoft.com/en-us/azure/foundry/../agents/concepts/hosted-agents) and [Manage Hosted agent sessions](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/manage-hosted-sessions).
 
 ## Configure environment variables
 
@@ -236,7 +236,7 @@ Content-Type: application/json
 }
 ```
 
-When the agent runs in Foundry, the same pattern works through the Hosted agent Responses endpoint. If later turns also need the same hosted sandbox filesystem, include `agent_session_id` or use a `conversation` ID. For details, see [Manage Hosted agent sessions](../../agents/how-to/manage-hosted-sessions).
+When the agent runs in Foundry, the same pattern works through the Hosted agent Responses endpoint. If later turns also need the same hosted sandbox filesystem, include `agent_session_id` or use a `conversation` ID. For details, see [Manage Hosted agent sessions](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/manage-hosted-sessions).
 
 ### Human-in-the-loop
 
@@ -357,11 +357,11 @@ if __name__ == "__main__":
 
 You can deploy by using the Azure Developer CLI or the Foundry Toolkit Visual Studio Code extension. The Azure Developer CLI flow uses sample `azure.yaml` files and Docker. The extension flow provides a guided deployment experience in Visual Studio Code.
 
-Hosted agent deployment requires the **Foundry Project Manager** role on the project. For details, see [Deploy a Hosted agent](../../agents/how-to/deploy-hosted-agent#required-permissions).
+Hosted agent deployment requires the **Foundry Project Manager** role on the project. For details, see [Deploy a Hosted agent](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/deploy-hosted-agent#required-permissions).
 
 ### Deploy with Azure Developer CLI
 
-The `langchain-azure-ai` source repository includes Hosted agent samples that you can run and deploy by using the Azure Developer CLI. The flow uses each sample's `azure.yaml`, `Dockerfile`, and `main.py`. For details about the hosted-agent configuration in `azure.yaml`, see [Author azure.yaml for hosted agents](../../agents/how-to/author-azure-yaml).
+The `langchain-azure-ai` source repository includes Hosted agent samples that you can run and deploy by using the Azure Developer CLI. The flow uses each sample's `azure.yaml`, `Dockerfile`, and `main.py`. For details about the hosted-agent configuration in `azure.yaml`, see [Author azure.yaml for hosted agents](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/author-azure-yaml).
 
 Install the AI agent extension and sign in before you initialize a sample:
 
@@ -370,7 +370,7 @@ azd ext install azure.ai.agents
 azd auth login
 ```
 
-Docker must be running locally because `azd ai agent run` builds the container image declared in the sample's Dockerfile. For command details, see the [Azure Developer CLI reference](/en-us/azure/developer/azure-developer-cli/reference).
+Docker must be running locally because `azd ai agent run` builds the container image declared in the sample's Dockerfile. For command details, see the [Azure Developer CLI reference](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/reference).
 
 #### Initialize from a sample azure.yaml
 
@@ -437,11 +437,11 @@ The Foundry hosting infrastructure injects runtime environment variables into th
 - `FOUNDRY_MODEL_NAME`: The model deployment name selected during `azd ai agent init`.
 - `APPLICATIONINSIGHTS_CONNECTION_STRING`: The connection string for the project's Application Insights instance.
 
-For complete deployment concepts, permissions, and management details, see [Deploy a Hosted agent](../../agents/how-to/deploy-hosted-agent) and [Manage Hosted agent lifecycle](../../agents/how-to/manage-hosted-agent).
+For complete deployment concepts, permissions, and management details, see [Deploy a Hosted agent](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/deploy-hosted-agent) and [Manage Hosted agent lifecycle](https://learn.microsoft.com/en-us/azure/foundry/../agents/how-to/manage-hosted-agent).
 
 ### Deploy with Foundry Toolkit Visual Studio Code extension
 
-For extension-based deployment, see [Quickstart: Deploy your first hosted agent](../../agents/quickstarts/quickstart-hosted-agent?pivots=vscode).
+For extension-based deployment, see [Quickstart: Deploy your first hosted agent](https://learn.microsoft.com/en-us/azure/foundry/../agents/quickstarts/quickstart-hosted-agent?pivots=vscode).
 
 ## Host an existing agent
 

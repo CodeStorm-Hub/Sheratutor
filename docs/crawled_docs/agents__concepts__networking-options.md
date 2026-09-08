@@ -92,7 +92,7 @@ With BYO virtual network, you can bring your own data resources or use platform-
 
 Note
 
-Network isolation applies at the Foundry account and project level. It covers hosted agents, prompt agents, and the other Foundry resources in the account. The two agent types consume network resources differently inside an isolated setup. For details, see [Deep dive into Foundry Agent Service networking](agents-networking-deep-dive).
+Network isolation applies at the Foundry account and project level. It covers hosted agents, prompt agents, and the other Foundry resources in the account. The two agent types consume network resources differently inside an isolated setup. For details, see [Deep dive into Foundry Agent Service networking](https://learn.microsoft.com/en-us/azure/foundry/agents-networking-deep-dive).
 
 ## Networking options by scenario
 
@@ -100,14 +100,14 @@ The following table maps common goals to a recommended option and a deployment t
 
 | Your goal | Recommended option | Deploy with |
 | --- | --- | --- |
-| Fastest path to a working agent, no isolation | Public, Microsoft-managed storage | [Deploy your first hosted agent quickstart](../quickstarts/quickstart-hosted-agent) (Azure Developer CLI or VS Code) |
+| Fastest path to a working agent, no isolation | Public, Microsoft-managed storage | [Deploy your first hosted agent quickstart](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-hosted-agent) (Azure Developer CLI or VS Code) |
 | Keep agent data in your own Azure resources, no isolation | Public, bring-your-own storage (standard) | [`41-standard-agent-setup`](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/41-standard-agent-setup) |
 | Restrict who can call the endpoint, public egress is acceptable | Public egress with a private endpoint | [`10-private-network-basic`](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/10-private-network-basic) |
 | Full isolation with no public egress, you control the network and want to bring your own data resources | BYO virtual network with bring-your-own data resources (network-secured standard) | [`15-private-network-standard-agent-setup`](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/15-private-network-standard-agent-setup) |
 | Full isolation with no public egress, you control the network but don't want to manage data resources | BYO virtual network with platform-managed data resources | [`11-private-network-basic-vnet`](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/11-private-network-basic-vnet) |
 | Full isolation, but you can't manage IP ranges or your IP space overlaps | Managed virtual network | [`18-managed-virtual-network`](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/18-managed-virtual-network) |
 | Full isolation behind an API gateway | BYO virtual network with Azure API Management | [`16-private-network-standard-agent-apim-setup`](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/16-private-network-standard-agent-apim-setup) |
-| Reach on-premises resources from agents | BYO virtual network plus VPN or ExpressRoute | [`15-private-network-standard-agent-setup`](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/15-private-network-standard-agent-setup) plus [Access on-premises resources](../../how-to/access-on-premises-resources) |
+| Reach on-premises resources from agents | BYO virtual network plus VPN or ExpressRoute | [`15-private-network-standard-agent-setup`](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep/15-private-network-standard-agent-setup) plus [Access on-premises resources](https://learn.microsoft.com/en-us/azure/foundry/../how-to/access-on-premises-resources) |
 
 For the full template catalog and what each one provisions, see the [infrastructure setup README](https://github.com/microsoft-foundry/foundry-samples/tree/main/infrastructure/infrastructure-setup-bicep#readme).
 
@@ -115,7 +115,7 @@ For the full template catalog and what each one provisions, see the [infrastruct
 
 Both BYO virtual network and managed virtual network provide full isolation. The difference is who runs the network: with managed virtual network, Microsoft handles the requirements in this section for you. Choose BYO virtual network when you want full control of a network you already manage - your own IP ranges, firewall, peering, and routing.
 
-When you choose BYO virtual network, plan for these requirements before you deploy. The [setup how-to](../how-to/virtual-networks) and the [deep dive](agents-networking-deep-dive) cover them in full.
+When you choose BYO virtual network, plan for these requirements before you deploy. The [setup how-to](https://learn.microsoft.com/en-us/azure/foundry/how-to/virtual-networks) and the [deep dive](https://learn.microsoft.com/en-us/azure/foundry/agents-networking-deep-dive) cover them in full.
 
 - **A dedicated, delegated subnet.** Delegate a subnet to `Microsoft.App/environments`. The subnet can't be shared by more than one Foundry resource. Size it for the scale you expect; see Plan your subnet size.
 - **RFC 1918 address space only.** Use `10.0.0.0/8`, `172.16.0.0/12`, or `192.168.0.0/16`. Public and CGNAT ranges aren't supported. Class A (`10.x`) ranges are only available in certain regions.
@@ -129,11 +129,11 @@ Important
 
 Set the virtual network configuration when you create the Foundry account. Network injection is part of the create-resource flow and can't be added to an existing account. The network configuration takes effect when you create the first hosted agent, and you can't change the network injection afterward. To move to a different network configuration, create new projects. The configuration applies at the account level, so it covers both hosted and prompt agents. Decide on a BYO virtual network before you create the account.
 
-For a topology diagram of the BYO virtual network option - the delegated subnet, hosted-agent Micro VMs, and private endpoints to your data resources - see [Deep dive into Foundry Agent Service networking](agents-networking-deep-dive#network-architecture-overview).
+For a topology diagram of the BYO virtual network option - the delegated subnet, hosted-agent Micro VMs, and private endpoints to your data resources - see [Deep dive into Foundry Agent Service networking](https://learn.microsoft.com/en-us/azure/foundry/agents-networking-deep-dive#network-architecture-overview).
 
 ### Tool support with network isolation
 
-Not all agent tools support network isolation. Some tools aren't supported behind a virtual network, and some reach their destination over the public internet rather than your private network. Before you commit to an isolated setup, check [Agent tools with network isolation](../../how-to/configure-private-link#agent-tools-with-network-isolation) to confirm that the tools your agents use are supported.
+Not all agent tools support network isolation. Some tools aren't supported behind a virtual network, and some reach their destination over the public internet rather than your private network. Before you commit to an isolated setup, check [Agent tools with network isolation](https://learn.microsoft.com/en-us/azure/foundry/../how-to/configure-private-link#agent-tools-with-network-isolation) to confirm that the tools your agents use are supported.
 
 ### Plan your subnet size
 
@@ -147,7 +147,7 @@ The subnet must be at least /27, and you can't change its size after you assign 
 | **/24** | Recommended for production with hosted agents. Leaves headroom to scale hosted agents across projects, support concurrent sessions, and absorb in-place upgrades. |
 | **/27** | Supported minimum. Works for production when you run prompt agents, or for smaller hosted-agent deployments. Leaves less headroom for scaling hosted agents and concurrent sessions. |
 
-For the IP-allocation model, concurrent-session limits, and sizing math, see [Deep dive into Foundry Agent Service networking](agents-networking-deep-dive).
+For the IP-allocation model, concurrent-session limits, and sizing math, see [Deep dive into Foundry Agent Service networking](https://learn.microsoft.com/en-us/azure/foundry/agents-networking-deep-dive).
 
 ## Hosted agents compared to prompt agents
 

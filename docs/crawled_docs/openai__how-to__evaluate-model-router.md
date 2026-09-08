@@ -69,7 +69,7 @@ Use the [Model Router Auto Evaluation toolkit](https://github.com/microsoft-foun
 
 ## Prerequisites
 
-- A model router deployment. To create one, see [Use model router](model-router#deploy-a-model-router-model).
+- A model router deployment. To create one, see [Use model router](https://learn.microsoft.com/en-us/azure/foundry/model-router#deploy-a-model-router-model).
 - A baseline model deployment that represents your current solution or another model that you want to compare.
 - A set of representative prompts from your workload. Remove secrets, personal data, and other sensitive information before you use production prompts.
 - For automated quality scoring, a judge model deployment that meets the requirements in the toolkit quickstart.
@@ -132,7 +132,7 @@ Evaluation is most useful when it informs the next product decision. The followi
 
 | Observation | What to consider next |
 | --- | --- |
-| Quality falls below workload requirements | Try [Quality mode](model-router#optional-change-the-routing-mode) or constrain the [model subset](model-router#optional-route-to-a-model-subset). |
+| Quality falls below workload requirements | Try [Quality mode](https://learn.microsoft.com/en-us/azure/foundry/model-router#optional-change-the-routing-mode) or constrain the [model subset](https://learn.microsoft.com/en-us/azure/foundry/model-router#optional-route-to-a-model-subset). |
 | Quality remains acceptable but savings are limited | Try Cost mode, and recheck high-impact categories for regressions. |
 | One category performs differently from the rest | Evaluate that category separately before you change settings for the entire workload. |
 | Results remain uncertain | Add representative prompts, review inconclusive cases, and repeat the comparison. |

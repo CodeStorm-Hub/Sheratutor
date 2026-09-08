@@ -68,9 +68,9 @@ This article is intended for enterprise administrators and AI developers who man
 To explore Foundry Control Plane, you need:
 
 - An Azure account with an active subscription. If you don't have one, create a [free Azure account, which includes a free trial subscription](https://azure.microsoft.com/pricing/purchase-options/azure-account?cid=msft_learn).
-- A Foundry project. If you don't have one, [create a project](../how-to/create-projects).
+- A Foundry project. If you don't have one, [create a project](https://learn.microsoft.com/en-us/azure/foundry/how-to/create-projects).
 
-- An [AI gateway configured](../configuration/enable-ai-api-management-gateway-portal) for advanced governance features.
+- An [AI gateway configured](https://learn.microsoft.com/en-us/azure/foundry/configuration/enable-ai-api-management-gateway-portal) for advanced governance features.
 - Appropriate Azure role-based access control (RBAC) permissions for your subscription.
 
 ## When to use Foundry Control Plane
@@ -91,21 +91,21 @@ Foundry Control Plane consolidates *inventory, observability, compliance, and se
 
 The following diagram shows how Foundry Control Plane provides unified fleet visibility with agents, models, and tools listed across projects in a subscription.
 
-[![Diagram that depicts Foundry Control Plane unified fleet visibility with agents, models, and tools listed across projects in a subscription.](media/overview/control-plane-overall.png)](media/overview/control-plane-overall.png#lightbox)
+![Diagram that depicts Foundry Control Plane unified fleet visibility with agents, models, and tools listed across projects in a subscription.](https://learn.microsoft.com/en-us/azure/foundry/media/overview/control-plane-overall.png)
 
 Foundry Control Plane supports the following tasks.
 
 ### Manage your multi-platform agent fleet
 
-- Track key performance indicators such as active agents, run completion, compliance posture, cost efficiency, and prohibited behaviors across [supported agent platforms](how-to-manage-agents#supported-agent-platforms).
+- Track key performance indicators such as active agents, run completion, compliance posture, cost efficiency, and prohibited behaviors across [supported agent platforms](https://learn.microsoft.com/en-us/azure/foundry/how-to-manage-agents#supported-agent-platforms).
 - Use deep links to evaluation and monitoring experiences for rapid debugging, diagnosis, and remediation.
 - Visualize fleet health through dashboards that surface trends and anomalies.
 
 ### Monitor and improve agent performance
 
 - Correlate alerts, evaluation results, and trace data to identify problems quickly.
-- [Continuously evaluate](../observability/how-to/how-to-monitor-agents-dashboard#set-up-continuous-evaluation) agent performance, quality, and risk dimensions. Risk dimensions might include [task adherence, intent resolution, tool call success](../concepts/evaluation-evaluators/agent-evaluators), [groundedness](../concepts/evaluation-evaluators/rag-evaluators), sensitive data leakage, and exposure to jailbreak and cross-domain prompt injection attacks (XPIAs).
-- Use the [AI Red Teaming Agent](../concepts/ai-red-teaming-agent) and [cluster analysis](../observability/how-to/cluster-analysis) for automated vulnerability probing and error root-cause discovery.
+- [Continuously evaluate](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard#set-up-continuous-evaluation) agent performance, quality, and risk dimensions. Risk dimensions might include [task adherence, intent resolution, tool call success](https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/agent-evaluators), [groundedness](https://learn.microsoft.com/en-us/azure/foundry/concepts/evaluation-evaluators/rag-evaluators), sensitive data leakage, and exposure to jailbreak and cross-domain prompt injection attacks (XPIAs).
+- Use the [AI Red Teaming Agent](concepts__ai-red-teaming-agent.md) and [cluster analysis](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/cluster-analysis) for automated vulnerability probing and error root-cause discovery.
 - View recommendations for prompt refinements, model version upgrades, and configuration changes.
 
 ### Enforce compliance guardrails
@@ -129,13 +129,13 @@ You access the capabilities described previously through panes by selecting **Op
 
 Each pane within **Operate** is designed around a specific job. These panes help various roles, from builders to administrators, manage AI systems at scale.
 
-[![Screenshot that shows the Operate toolbar button and the Overview pane in the Foundry workspace.](media/overview/control-plane-operate.png)](media/overview/control-plane-operate.png#lightbox)
+![Screenshot that shows the Operate toolbar button and the Overview pane in the Foundry workspace.](https://learn.microsoft.com/en-us/azure/foundry/media/overview/control-plane-operate.png)
 
 ### Overview
 
 Use the **Overview** pane to understand fleet health, performance, and compliance at a glance.
 
-[![Animation of the Overview pane that displays trend-based health scores, alert summaries, and aggregated compliance metrics for a fleet.](media/overview/control-plane-overview.gif)](media/overview/control-plane-overview.gif#lightbox)
+![Animation of the Overview pane that displays trend-based health scores, alert summaries, and aggregated compliance metrics for a fleet.](https://learn.microsoft.com/en-us/azure/foundry/media/overview/control-plane-overview.gif)
 
 This pane provides a high-level snapshot of your AI resources by aggregating key operational and compliance metrics in one view. You can:
 
@@ -147,23 +147,23 @@ This pane provides a high-level snapshot of your AI resources by aggregating key
 
 Use the **Assets** pane to track, analyze, and manage every agent, model, and tool from one place.
 
-[![Screenshot of an agent inventory table with filters and sort options applied to display metadata and health indicators for AI assets.](media/overview/assets-view.png)](media/overview/assets-view.png#lightbox)
+![Screenshot of an agent inventory table with filters and sort options applied to display metadata and health indicators for AI assets.](https://learn.microsoft.com/en-us/azure/foundry/media/overview/assets-view.png)
 
 This pane provides a unified, searchable table of all AI assets across projects within a subscription. It brings together critical metadata and health indicators, so you can assess and act on your AI resources efficiently. You can:
 
 - Filter and sort by key attributes such as version, tags, health score (percentage), cost, alerts, and token usage to locate assets quickly.
-- Drill down from any entry in the agent inventory table into the [Evaluation](../observability/how-to/how-to-monitor-agents-dashboard#set-up-continuous-evaluation) or [Monitoring](../observability/how-to/how-to-monitor-agents-dashboard) tab for pre-deployment and post-deployment insights.
+- Drill down from any entry in the agent inventory table into the [Evaluation](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard#set-up-continuous-evaluation) or [Monitoring](https://learn.microsoft.com/en-us/azure/foundry/observability/how-to/how-to-monitor-agents-dashboard) tab for pre-deployment and post-deployment insights.
 - Surface inline recommendations to refine prompts, upgrade models, or optimize configurations based on performance and cost signals.
 - Correlate runtime logs with evaluation results to uncover root causes of errors or performance degradation.
 - Visualize drift, latency, and error clusters across runs or builds to detect emerging issues early.
-- Integrate with the [AI Red Teaming Agent](../concepts/ai-red-teaming-agent) to automate vulnerability probing, regression testing, and issue reproduction.
+- Integrate with the [AI Red Teaming Agent](concepts__ai-red-teaming-agent.md) to automate vulnerability probing, regression testing, and issue reproduction.
 - Observe and modify model and agent guardrails.
 
 ### Compliance
 
 Use the **Compliance** pane to govern your AI systems and enforce the right guardrails.
 
-[![Screenshot of the Compliance pane that shows options to define, apply, and monitor AI compliance policies with Azure Policy, Microsoft Defender, and Microsoft Purview integrations.](media/overview/compliance.png)](media/overview/compliance.png#lightbox)
+![Screenshot of the Compliance pane that shows options to define, apply, and monitor AI compliance policies with Azure Policy, Microsoft Defender, and Microsoft Purview integrations.](https://learn.microsoft.com/en-us/azure/foundry/media/overview/compliance.png)
 
 The **Compliance** pane lets you define, apply, and continuously monitor guardrails and compliance policies across your AI resources. It provides a unified interface to operationalize responsible AI principles while helping to ensure enterprise-grade safety and regulatory alignment. You can:
 
@@ -177,13 +177,13 @@ Policy management in Foundry enables administrators and developers alike to embe
 
 Use the **Quota** pane, on the **Manage** toolbar button, to view, adjust, and request quotas.
 
-[![Screenshot of the Quota pane in the Manage section that shows model deployments, their quota usage, and usage patterns with options to adjust or request additional quotas.](media/overview/quota-view.png)](media/overview/quota-view.png#lightbox)
+![Screenshot of the Quota pane in the Manage section that shows model deployments, their quota usage, and usage patterns with options to adjust or request additional quotas.](https://learn.microsoft.com/en-us/azure/foundry/media/overview/quota-view.png)
 
 The **Quota** pane shows your model deployments and how much quota each deployment consumes. It gives insights into usage patterns and helps you manage resources effectively.
 
 By default, the quota view displays only models with active deployments. Turn on the **Show all** toggle to see the full list of available models and regions, including models you haven't deployed yet. Use **Show all** to explore available quota before you create a deployment, or to check which regions have capacity for a specific model.
 
-For more information, see [Manage and increase quotas for resources](../how-to/quota).
+For more information, see [Manage and increase quotas for resources](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota).
 
 ### Project and resource management
 
@@ -204,8 +204,8 @@ From **Manage**, administrators and power users can:
 
 Foundry Control Plane is available in the [Foundry portal](https://ai.azure.com). To start using Foundry Control Plane, explore these resources:
 
-- [Configure an AI gateway](../configuration/enable-ai-api-management-gateway-portal): Enable advanced governance features in your Foundry projects.
-- [Configure monitoring for your agent fleet](monitoring-across-fleet): Enable metrics and diagnostic information with observability features.
-- [Discover agents in your subscription](how-to-manage-agents): See which agents are available and manage them centrally.
-- [Register custom agents](register-custom-agent): Bring external agents into the Foundry Control Plane registry.
-- [Apply a guardrail policy for models](quickstart-create-guardrail-policy): Create and assign guardrail policies to enforce safety standards across model deployments.
+- [Configure an AI gateway](https://learn.microsoft.com/en-us/azure/foundry/configuration/enable-ai-api-management-gateway-portal): Enable advanced governance features in your Foundry projects.
+- [Configure monitoring for your agent fleet](https://learn.microsoft.com/en-us/azure/foundry/monitoring-across-fleet): Enable metrics and diagnostic information with observability features.
+- [Discover agents in your subscription](https://learn.microsoft.com/en-us/azure/foundry/how-to-manage-agents): See which agents are available and manage them centrally.
+- [Register custom agents](https://learn.microsoft.com/en-us/azure/foundry/register-custom-agent): Bring external agents into the Foundry Control Plane registry.
+- [Apply a guardrail policy for models](https://learn.microsoft.com/en-us/azure/foundry/quickstart-create-guardrail-policy): Create and assign guardrail policies to enforce safety standards across model deployments.

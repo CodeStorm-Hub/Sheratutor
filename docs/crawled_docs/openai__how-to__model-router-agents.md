@@ -70,12 +70,12 @@ Tip
 
 Get hands-on with the [Foundry Agent Lab](https://github.com/microsoft-foundry/Foundry-Agent-Lab). Its progressive demos show model router across function tools, web search, code interpretation, RAG, MCP, and Toolbox, with session logs that explain each routing decision.
 
-For general model router concepts, see the [model router overview](../concepts/model-router). For deployment steps, see [Use model router](model-router).
+For general model router concepts, see the [model router overview](https://learn.microsoft.com/en-us/azure/foundry/concepts/model-router). For deployment steps, see [Use model router](https://learn.microsoft.com/en-us/azure/foundry/model-router).
 
 ## Prerequisites
 
-- A Microsoft Foundry project with a model router deployment. See [Deploy a model router model](model-router#deploy-a-model-router-model).
-- Familiarity with [Foundry Agent Service](/en-us/azure/ai-foundry/agents/overview).
+- A Microsoft Foundry project with a model router deployment. See [Deploy a model router model](https://learn.microsoft.com/en-us/azure/foundry/model-router#deploy-a-model-router-model).
+- Familiarity with [Foundry Agent Service](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/overview).
 - Azure CLI installed and authenticated (`az login`).
 
 ## Why use model router for agents
@@ -101,7 +101,7 @@ Key benefits for agent workloads:
 
 Model router works with supported Foundry Agent Service tools. When an agent uses tools, model router can select eligible OpenAI, open-source (OSS), and Anthropic models from the configured routing pool. A model is eligible only when it supports the requested tool and deployment configuration.
 
-Tool support varies by model and region. For the current compatibility matrix, see [Tool support by region and model](../../agents/concepts/limits-quotas-regions#tool-support-by-region-and-model).
+Tool support varies by model and region. For the current compatibility matrix, see [Tool support by region and model](https://learn.microsoft.com/en-us/azure/foundry/../agents/concepts/limits-quotas-regions#tool-support-by-region-and-model).
 
 To route agentic requests to Claude models, deploy the Claude models separately and include them in the model router deployment.
 
@@ -169,11 +169,11 @@ You can create multiple model router deployments, each with its own routing mode
 | `router-balanced` | Balanced | gpt-5-mini, gpt-4.1, gpt-4.1-mini | General assistant — mixed-complexity conversations |
 | `router-efficient` | Cost | gpt-5-nano, gpt-4.1-nano | Triage agent — classification and simple Q&A |
 
-To set up each deployment with a specific model subset, see [Route to a model subset](model-router#optional-route-to-a-model-subset). To change the routing mode, see [Change the routing mode](model-router#optional-change-the-routing-mode).
+To set up each deployment with a specific model subset, see [Route to a model subset](https://learn.microsoft.com/en-us/azure/foundry/model-router#optional-route-to-a-model-subset). To change the routing mode, see [Change the routing mode](https://learn.microsoft.com/en-us/azure/foundry/model-router#optional-change-the-routing-mode).
 
 The following example creates three agents, each pointing to a different model router deployment:
 
-# [Python](#tab/python)
+# **Python**
 ```python
 import os
 from azure.ai.projects import AIProjectClient
@@ -206,7 +206,7 @@ triage_agent = project.agents.create_agent(
 )
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 ```typescript
 import { DefaultAzureCredential } from "@azure/identity";
 import { AIProjectClient } from "@azure/ai-projects";
@@ -244,8 +244,8 @@ const triageAgent = await project.agents.createVersion("triage-agent", {
 
 Each agent makes independent routing decisions within its assigned model pool. The research agent never uses a nano-tier model, and the triage agent never incurs frontier-model costs.
 
-- Reference: [`AIProjectClient.agents.create_agent`](/en-us/python/api/azure-ai-projects/azure.ai.projects.aiprojectclient) (Python)
-- Reference: [`AIProjectClient.agents.createVersion`](/en-us/javascript/api/@azure/ai-projects/aiprojectclient) (JavaScript/TypeScript)
+- Reference: [`AIProjectClient.agents.create_agent`](https://learn.microsoft.com/en-us/python/api/azure-ai-projects/azure.ai.projects.aiprojectclient) (Python)
+- Reference: [`AIProjectClient.agents.createVersion`](https://learn.microsoft.com/en-us/javascript/api/@azure/ai-projects/aiprojectclient) (JavaScript/TypeScript)
 
 ## Get started
 
@@ -257,7 +257,7 @@ In the [Foundry portal](https://ai.azure.com/?cid=learnDocs), select your model 
 
 For programmatic agent creation, specify your model router deployment name:
 
-# [Python](#tab/python)
+# **Python**
 ```python
 import os
 from azure.ai.projects import AIProjectClient
@@ -275,7 +275,7 @@ agent = project.agents.create_agent(
 )
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 ```typescript
 import { DefaultAzureCredential } from "@azure/identity";
 import { AIProjectClient } from "@azure/ai-projects";
@@ -294,8 +294,8 @@ const agent = await project.agents.createVersion("my-agent", {
 
 ---
 
-- Reference: [`AIProjectClient.agents.create_agent`](/en-us/python/api/azure-ai-projects/azure.ai.projects.aiprojectclient) (Python)
-- Reference: [`AIProjectClient.agents.createVersion`](/en-us/javascript/api/@azure/ai-projects/aiprojectclient) (JavaScript/TypeScript)
+- Reference: [`AIProjectClient.agents.create_agent`](https://learn.microsoft.com/en-us/python/api/azure-ai-projects/azure.ai.projects.aiprojectclient) (Python)
+- Reference: [`AIProjectClient.agents.createVersion`](https://learn.microsoft.com/en-us/javascript/api/@azure/ai-projects/aiprojectclient) (JavaScript/TypeScript)
 
 ### Observe routing decisions
 
@@ -316,7 +316,7 @@ for message in project.agents.messages.list(thread_id=thread.id):
 
 After observing your agent's routing distribution:
 
-- **Switch routing mode** — Use Quality mode for critical agents (legal, medical) or Cost mode for high-volume agents (classification, triage). See [Change the routing mode](model-router#optional-change-the-routing-mode).
-- **Constrain the model pool** — Use model subset to limit which models the router can select. See [Route to a model subset](model-router#optional-route-to-a-model-subset).
+- **Switch routing mode** — Use Quality mode for critical agents (legal, medical) or Cost mode for high-volume agents (classification, triage). See [Change the routing mode](https://learn.microsoft.com/en-us/azure/foundry/model-router#optional-change-the-routing-mode).
+- **Constrain the model pool** — Use model subset to limit which models the router can select. See [Route to a model subset](https://learn.microsoft.com/en-us/azure/foundry/model-router#optional-route-to-a-model-subset).
 
-Evaluate changes with representative multi-turn traces, including tool calls, retrieval, and complex handoffs from your agent workload. Keep the baseline, instructions, tools, and trace set fixed while you change one routing setting. For guidance on defining acceptance criteria and interpreting tradeoffs, see [Evaluate model router for your workload](evaluate-model-router).
+Evaluate changes with representative multi-turn traces, including tool calls, retrieval, and complex handoffs from your agent workload. Keep the baseline, instructions, tools, and trace set fixed while you change one routing setting. For guidance on defining acceptance criteria and interpreting tradeoffs, see [Evaluate model router for your workload](https://learn.microsoft.com/en-us/azure/foundry/evaluate-model-router).

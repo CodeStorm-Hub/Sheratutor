@@ -61,7 +61,7 @@ platformId: b312d480-28eb-6055-be0e-7ed51e7cc887
 
 Evaluation is essential for ensuring your agent meets quality and safety standards before deployment. By running evaluations during development, you establish a baseline for your agent's performance and can set acceptance thresholds, such as an 85% task adherence passing rate, before releasing it to users.
 
-In this article, you learn how to run an agent-targeted evaluation against a [Foundry agent](../../agents/overview) or [hosted agent](../../agents/concepts/hosted-agents). You use a [rubric evaluator](../../concepts/evaluation-evaluators/rubric-evaluators) generated from your agent's context as the primary measure, and layer in built-in evaluators for content safety and other risks. Specifically, you:
+In this article, you learn how to run an agent-targeted evaluation against a [Foundry agent](https://learn.microsoft.com/en-us/azure/foundry/../agents/overview) or [hosted agent](https://learn.microsoft.com/en-us/azure/foundry/../agents/concepts/hosted-agents). You use a [rubric evaluator](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-evaluators/rubric-evaluators) generated from your agent's context as the primary measure, and layer in built-in evaluators for content safety and other risks. Specifically, you:
 
 - Set up the SDK client for evaluation.
 - Generate a rubric evaluator tailored to your agent, and pair it with built-in evaluators.
@@ -70,12 +70,12 @@ In this article, you learn how to run an agent-targeted evaluation against a [Fo
 
 Tip
 
-For general-purpose evaluation of generative AI models and applications, including custom evaluators, different data sources, and additional SDK options, see [Run evaluations from the SDK](cloud-evaluation).
+For general-purpose evaluation of generative AI models and applications, including custom evaluators, different data sources, and additional SDK options, see [Run evaluations from the SDK](https://learn.microsoft.com/en-us/azure/foundry/cloud-evaluation).
 
 ## Prerequisites
 
 - Python 3.8 or later.
-- A [Foundry project](../../how-to/create-projects) with an [agent](../../agents/overview) or [hosted agent](../../agents/concepts/hosted-agents).
+- A [Foundry project](https://learn.microsoft.com/en-us/azure/foundry/../how-to/create-projects) with an [agent](https://learn.microsoft.com/en-us/azure/foundry/../agents/overview) or [hosted agent](https://learn.microsoft.com/en-us/azure/foundry/../agents/concepts/hosted-agents).
 - An Azure OpenAI deployment with a GPT model that supports chat completion (for example, `gpt-4o` or `gpt-4o-mini`).
 - **Foundry User** role on the Foundry project.
 
@@ -85,13 +85,13 @@ For general-purpose evaluation of generative AI models and applications, includi
 
 Note
 
-Some evaluation features - including rubric generation, synthetic and trace-based dataset creation, and risk and safety evaluators - have regional restrictions. See [Rate limits, region support, and enterprise features for evaluation](../../concepts/evaluation-regions-limits-virtual-network) for the full list.
+Some evaluation features - including rubric generation, synthetic and trace-based dataset creation, and risk and safety evaluators - have regional restrictions. See [Rate limits, region support, and enterprise features for evaluation](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-regions-limits-virtual-network) for the full list.
 
 ## Set up the client
 
 Install the Foundry SDK and set up authentication:
 
-# [Python](#tab/python)
+# **Python**
 ```bash
 pip install "azure-ai-projects>=2.4.0" azure-identity
 ```
@@ -111,7 +111,7 @@ project_client = AIProjectClient(endpoint=endpoint, credential=credential)
 client = project_client.get_openai_client()
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 ```bash
 npm install @azure/ai-projects @azure/identity dotenv
 ```
@@ -133,21 +133,21 @@ const projectClient = new AIProjectClient(
 const client = projectClient.getOpenAIClient();
 ```
 
-Reference: [AIProjectClient class](/en-us/javascript/api/@azure/ai-projects/aiprojectclient)
+Reference: [AIProjectClient class](https://learn.microsoft.com/en-us/javascript/api/@azure/ai-projects/aiprojectclient)
 
 ---
 
 ## Choose evaluators
 
-Evaluators score your agent's responses. The recommended primary measure for agent evaluation is a *rubric evaluator*—a set of weighted scoring dimensions that an LLM judge applies to every response, so you can express the exact criteria that matter (for example, policy enforcement, tool usage accuracy, or communication clarity) and score consistently at scale. For details, see [Rubric evaluators](../../concepts/evaluation-evaluators/rubric-evaluators).
+Evaluators score your agent's responses. The recommended primary measure for agent evaluation is a *rubric evaluator*—a set of weighted scoring dimensions that an LLM judge applies to every response, so you can express the exact criteria that matter (for example, policy enforcement, tool usage accuracy, or communication clarity) and score consistently at scale. For details, see [Rubric evaluators](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-evaluators/rubric-evaluators).
 
 Pair your rubric with additional evaluators to get full coverage of your evaluation scope:
 
-- [Agent evaluators](../../concepts/evaluation-evaluators/agent-evaluators) — Evaluate how effectively agents handle tasks, tools, and user intent.
-- [Quality evaluators](../../concepts/evaluation-evaluators/general-purpose-evaluators) — Measure the overall quality of generated responses.
-- [Text similarity evaluators](../../concepts/evaluation-evaluators/textual-similarity-evaluators) — Compare generated text against reference answers using NLP metrics.
-- [Safety evaluators](../../concepts/evaluation-evaluators/risk-safety-evaluators) — Identify potential content and security risks in generated output.
-- [Custom evaluators](../../concepts/evaluation-evaluators/custom-evaluators) — Build your own evaluators when the rubric and built-ins don't cover your criteria.
+- [Agent evaluators](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-evaluators/agent-evaluators) — Evaluate how effectively agents handle tasks, tools, and user intent.
+- [Quality evaluators](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-evaluators/general-purpose-evaluators) — Measure the overall quality of generated responses.
+- [Text similarity evaluators](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-evaluators/textual-similarity-evaluators) — Compare generated text against reference answers using NLP metrics.
+- [Safety evaluators](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-evaluators/risk-safety-evaluators) — Identify potential content and security risks in generated output.
+- [Custom evaluators](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-evaluators/custom-evaluators) — Build your own evaluators when the rubric and built-ins don't cover your criteria.
 
 You can author a rubric by hand, or generate one from the agent's context—its name, instructions, and tools. The following sample generates a rubric and prints its dimensions so you can review them before use.
 
@@ -199,11 +199,11 @@ Create a JSONL file with test queries for your agent. Each line contains a JSON 
 
 Tip
 
-If you don't have a hand-curated dataset, you can bootstrap one. Use [Generate a synthetic evaluation dataset](evaluation-dataset-synthetic) when you're prelaunch or have low traffic, or [Convert agent traces into evaluation datasets](traces-to-dataset) to build a dataset from real production traffic.
+If you don't have a hand-curated dataset, you can bootstrap one. Use [Generate a synthetic evaluation dataset](https://learn.microsoft.com/en-us/azure/foundry/evaluation-dataset-synthetic) when you're prelaunch or have low traffic, or [Convert agent traces into evaluation datasets](https://learn.microsoft.com/en-us/azure/foundry/traces-to-dataset) to build a dataset from real production traffic.
 
 Upload this file as a dataset in your project:
 
-# [Python](#tab/python)
+# **Python**
 ```python
 dataset = project_client.datasets.upload_file(
     name="agent-test-queries",
@@ -212,7 +212,7 @@ dataset = project_client.datasets.upload_file(
 )
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 ```typescript
 const dataset = await projectClient.datasets.uploadFile(
   "agent-test-queries",
@@ -221,7 +221,7 @@ const dataset = await projectClient.datasets.uploadFile(
 );
 ```
 
-Reference: [datasets.uploadFile](/en-us/javascript/api/@azure/ai-projects/aiprojectclient)
+Reference: [datasets.uploadFile](https://learn.microsoft.com/en-us/javascript/api/@azure/ai-projects/aiprojectclient)
 
 ---
 
@@ -234,9 +234,9 @@ First, configure your testing criteria. Reference the generated rubric evaluator
 - `{{item.X}}` references fields from your test data, like `query`.
 - `{{sample.output_items}}` references the full agent response, including tool calls.
 - `{{sample.output_text}}` references just the response message text.
-- `initialization_parameters={"deployment_name": <model>}` supplies the judge model. Typically required for LLM judge evaluators. For per-evaluator parameters, see [built-in evaluators](../../concepts/observability#what-are-evaluators).
+- `initialization_parameters={"deployment_name": <model>}` supplies the judge model. Typically required for LLM judge evaluators. For per-evaluator parameters, see [built-in evaluators](https://learn.microsoft.com/en-us/azure/foundry/../concepts/observability#what-are-evaluators).
 
-# [Python](#tab/python)
+# **Python**
 ```python
 from azure.ai.projects.models import TestingCriterionAzureAIEvaluator
 
@@ -283,7 +283,7 @@ testing_criteria.append(
 )
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 The JavaScript/TypeScript SDK samples don't yet demonstrate rubric evaluator generation, so this example starts directly with built-in evaluators: Violence (content safety) and Coherence (LLM judge quality). Use the same `data_mapping` pattern to add more built-in evaluators:
 
 ```typescript
@@ -314,7 +314,7 @@ const testingCriteria = [
 
 Next, create the evaluation. An evaluation defines the test data schema and testing criteria. It serves as a container for multiple runs. All runs under the same evaluation conform to the same schema and produce the same set of metrics. This consistency is important for comparing results across runs.
 
-# [Python](#tab/python)
+# **Python**
 ```python
 from openai.types.eval_create_params import DataSourceConfigCustom
 
@@ -335,7 +335,7 @@ evaluation = client.evals.create(
 )
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 ```typescript
 const dataSourceConfig = {
   type: "custom",
@@ -358,7 +358,7 @@ const evaluation = await client.evals.create({
 
 Finally, create a run that sends your test queries to the agent and applies the evaluators:
 
-# [Python](#tab/python)
+# **Python**
 ```python
 eval_run = client.evals.runs.create(
     eval_id=evaluation.id,
@@ -384,7 +384,7 @@ eval_run = client.evals.runs.create(
 print(f"Evaluation run started: {eval_run.id}")
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 ```typescript
 const evalRun = await client.evals.runs.create(evaluation.id, {
   name: "Agent Evaluation Run",
@@ -419,17 +419,17 @@ console.log(`Evaluation run started: ${evalRun.id}`);
 
 Tip
 
-This sample works for both prompt agents and hosted agents that use the responses protocol. For hosted agents that use the invocations protocol, the `input_messages` format is different — provide a freeform JSON object instead of the structured template. For details and code samples, see [Hosted agent invocations protocol](cloud-evaluation-targets#hosted-agent-invocations-protocol) in the cloud evaluation guide.
+This sample works for both prompt agents and hosted agents that use the responses protocol. For hosted agents that use the invocations protocol, the `input_messages` format is different — provide a freeform JSON object instead of the structured template. For details and code samples, see [Hosted agent invocations protocol](https://learn.microsoft.com/en-us/azure/foundry/cloud-evaluation-targets#hosted-agent-invocations-protocol) in the cloud evaluation guide.
 
 Tip
 
-To evaluate agent interactions that already occurred using traces from Application Insights, see [Trace evaluation](cloud-evaluation-deployed-interactions#evaluate-traces-preview) in the cloud evaluation guide.
+To evaluate agent interactions that already occurred using traces from Application Insights, see [Trace evaluation](https://learn.microsoft.com/en-us/azure/foundry/cloud-evaluation-deployed-interactions#evaluate-traces-preview) in the cloud evaluation guide.
 
 ## Interpret results
 
 Evaluations typically complete in a few minutes, depending on the number of queries. Poll for completion and retrieve the report URL to view the results in the Microsoft Foundry portal under the **Evaluations** tab:
 
-# [Python](#tab/python)
+# **Python**
 ```python
 import time
 
@@ -444,7 +444,7 @@ print(f"Status: {run.status}")
 print(f"Report URL: {run.report_url}")
 ```
 
-# [JavaScript/TypeScript](#tab/javascript)
+# **JavaScript/TypeScript**
 ```typescript
 // Wait for completion
 let run = evalRun;
@@ -461,7 +461,7 @@ console.log(`Report URL: ${run.report_url}`);
 
 ---
 
-[![Screenshot showing evaluation results for an agent in the Microsoft Foundry portal.](../../media/observability/agent-evaluation-results.png)](../../media/observability/agent-evaluation-results.png#lightbox)
+![Screenshot showing evaluation results for an agent in the Microsoft Foundry portal.](https://learn.microsoft.com/en-us/azure/foundry/../media/observability/agent-evaluation-results.png)
 
 ### Aggregated results
 
@@ -572,18 +572,18 @@ Each evaluation run returns output items per row in your test dataset, providing
 }
 ```
 
-The `properties.dimension_scores` array shows the per-dimension breakdown the LLM judge produced. Each dimension's `score` is on a 1–5 scale. The top-level `score` is the weighted average of applicable dimension scores, normalized to a 0–1 range. For the full output schema, see [Rubric evaluators](../../concepts/evaluation-evaluators/rubric-evaluators#example-output).
+The `properties.dimension_scores` array shows the per-dimension breakdown the LLM judge produced. Each dimension's `score` is on a 1–5 scale. The top-level `score` is the weighted average of applicable dimension scores, normalized to a 0–1 range. For the full output schema, see [Rubric evaluators](https://learn.microsoft.com/en-us/azure/foundry/../concepts/evaluation-evaluators/rubric-evaluators#example-output).
 
 ## Integrate into your workflow
 
-- **CI/CD pipeline**: Use evaluation as a quality gate in your deployment pipeline. For detailed integration, see [Run evaluations with GitHub Actions](../../how-to/evaluation-github-action).
-- **Production monitoring**: Monitor your agent in production by using continuous evaluation. For setup instructions, see [Set up continuous evaluation](how-to-monitor-agents-dashboard#set-up-continuous-evaluation).
+- **CI/CD pipeline**: Use evaluation as a quality gate in your deployment pipeline. For detailed integration, see [Run evaluations with GitHub Actions](https://learn.microsoft.com/en-us/azure/foundry/../how-to/evaluation-github-action).
+- **Production monitoring**: Monitor your agent in production by using continuous evaluation. For setup instructions, see [Set up continuous evaluation](https://learn.microsoft.com/en-us/azure/foundry/how-to-monitor-agents-dashboard#set-up-continuous-evaluation).
 
 ## Optimize and compare versions
 
 Use evaluation to iterate and improve your agent:
 
-1. Run evaluation to identify weak areas. Use [cluster analysis](cluster-analysis) to find patterns and errors.
+1. Run evaluation to identify weak areas. Use [cluster analysis](https://learn.microsoft.com/en-us/azure/foundry/cluster-analysis) to find patterns and errors.
 2. Adjust agent instructions or tools based on findings.
-3. Reevaluate and [compare runs](../../how-to/evaluate-results#compare-the-evaluation-results) to measure improvement.
+3. Reevaluate and [compare runs](https://learn.microsoft.com/en-us/azure/foundry/../how-to/evaluate-results#compare-the-evaluation-results) to measure improvement.
 4. Repeat until quality thresholds are met.

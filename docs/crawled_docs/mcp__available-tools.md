@@ -66,7 +66,7 @@ This reference documents 79 Foundry MCP Server tools across 17 categories that l
 
 Tip
 
-Before using these tools, complete the [Foundry MCP Server setup](get-started).
+Before using these tools, complete the [Foundry MCP Server setup](https://learn.microsoft.com/en-us/azure/foundry/get-started).
 
 Note
 
@@ -76,7 +76,7 @@ This feature is currently in public preview. This preview is provided without a 
 
 When you type a natural-language prompt in an MCP-compliant client (for example, GitHub Copilot Agent Mode), the language model selects the appropriate tool and formulates the required parameters on your behalf. You don't call tools directly — you describe what you want, and the model translates your intent into a tool call.
 
-Each tool is classified as **read** (retrieves information) or **write** (creates, updates, or deletes resources). Write operations affect live resources and billing immediately. Review the [security best practices](security-best-practices) before running write operations.
+Each tool is classified as **read** (retrieves information) or **write** (creates, updates, or deletes resources). Write operations affect live resources and billing immediately. Review the [security best practices](https://learn.microsoft.com/en-us/azure/foundry/security-best-practices) before running write operations.
 
 ### Permissions
 
@@ -88,7 +88,7 @@ All operations run with the authenticated user's permissions through the Microso
 | Write tools | **Contributor** on the Foundry project or account | Required for creating, updating, and deleting resources. |
 | Conditional Access admin | **Conditional Access Administrator** in Entra ID | Only needed if configuring tenant-level access policies. |
 
-For more information, see [Role-based access control for Microsoft Foundry](../concepts/rbac-foundry).
+For more information, see [Role-based access control for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry).
 
 ### Key identifiers
 
@@ -493,7 +493,7 @@ Example prompts:
 
 Foundry MCP Server is in public preview. The following limitations apply:
 
-- **No network isolation** — Foundry MCP Server uses the public endpoint `https://mcp.ai.azure.com`. Resources behind Azure Private Links aren't accessible. For private MCP connectivity, [build your own MCP server](build-your-own-mcp-server) and connect it to Agent Service with [private networking](../agents/how-to/tools/model-context-protocol#public-and-private-mcp-server-endpoints).
+- **No network isolation** — Foundry MCP Server uses the public endpoint `https://mcp.ai.azure.com`. Resources behind Azure Private Links aren't accessible. For private MCP connectivity, [build your own MCP server](https://learn.microsoft.com/en-us/azure/foundry/build-your-own-mcp-server) and connect it to Agent Service with [private networking](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol#public-and-private-mcp-server-endpoints).
 - **Data residency** — Requests and responses might be processed in EU or US data centers. The server itself doesn't store data, but cross-region processing can occur.
 - **No SLA** — Preview features don't include a service-level agreement. Don't use the server for production workloads that require guaranteed availability.
 - **Tool set might change** — Tools, parameters, and return values might change during the preview period without notice.
@@ -504,10 +504,10 @@ For more information, see [Supplemental Terms of Use for Microsoft Azure Preview
 
 | Error | Cause | Resolution |
 | --- | --- | --- |
-| Access denied | Insufficient Azure RBAC role on the Foundry project or account. | Assign at least **Reader** for read tools or **Contributor** for write tools. See [RBAC for Microsoft Foundry](../concepts/rbac-foundry). |
+| Access denied | Insufficient Azure RBAC role on the Foundry project or account. | Assign at least **Reader** for read tools or **Contributor** for write tools. See [RBAC for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/concepts/rbac-foundry). |
 | Authentication failure | Expired or invalid Entra ID token. | Sign out and sign back in to your Azure account in Visual Studio Code, or the tool you're using. |
 | Quota exceeded | Not enough capacity to create a deployment or run an evaluation. | Use `model_quota_list` to check available quota before the operation. |
 | Resource not found | The specified deployment, dataset, agent, or connection doesn't exist. | Use the corresponding `get` or `list` tool to verify the resource name. |
-| Private endpoint not reachable | Foundry resources use Azure Private Links that the hosted Foundry MCP Server can't reach. | Remove private endpoint restrictions, use SDKs/REST APIs, or use a [custom MCP server with Agent Service private networking](../agents/how-to/tools/model-context-protocol#public-and-private-mcp-server-endpoints). |
+| Private endpoint not reachable | Foundry resources use Azure Private Links that the hosted Foundry MCP Server can't reach. | Remove private endpoint restrictions, use SDKs/REST APIs, or use a [custom MCP server with Agent Service private networking](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/tools/model-context-protocol#public-and-private-mcp-server-endpoints). |
 
-For more troubleshooting guidance, see [Foundry MCP Server security and best practices](security-best-practices#troubleshooting).
+For more troubleshooting guidance, see [Foundry MCP Server security and best practices](https://learn.microsoft.com/en-us/azure/foundry/security-best-practices#troubleshooting).

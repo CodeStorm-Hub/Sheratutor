@@ -71,7 +71,7 @@ Managed compute (preview) is a deployment type in Microsoft Foundry that hosts o
 
 Managed compute uses the same Foundry resource, project, endpoint, authentication, network configuration, SDKs, observability, and billing surface as any other deployment type in Foundry. After you deploy a model with managed compute, your application code is the same as any other Foundry model; only the deployment name changes.
 
-This article explains managed compute deployment type in Foundry, the concepts you work with (model instances, deployment templates, accelerator families, runtimes), the catalog you can deploy from, inference endpoints, scaling, billing and quota, access control, and current limitations. For step-by-step deployment instructions, see [Deploy open-source models with managed compute](../how-to/deploy-models-managed).
+This article explains managed compute deployment type in Foundry, the concepts you work with (model instances, deployment templates, accelerator families, runtimes), the catalog you can deploy from, inference endpoints, scaling, billing and quota, access control, and current limitations. For step-by-step deployment instructions, see [Deploy open-source models with managed compute](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-models-managed).
 
 ## Where managed compute fits in Foundry
 
@@ -79,8 +79,8 @@ Foundry offers three deployment types. Managed compute is the deployment type to
 
 | Deployment type | What it serves | Billing | Best for |
 | --- | --- | --- | --- |
-| Standard pay-per-token | [Foundry Models sold by Azure](../foundry-models/concepts/models-sold-directly-by-azure) | Per input and output token | Lowest-friction path to get started; bursty traffic on hosted models with no capacity planning. |
-| [Provisioned throughput](../openai/concepts/provisioned-throughput) | Foundry Models sold by Azure | Reserved throughput units | Predictable, sustained load on select Foundry Models sold by Azure with consistent latency. |
+| Standard pay-per-token | [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure.md) | Per input and output token | Lowest-friction path to get started; bursty traffic on hosted models with no capacity planning. |
+| [Provisioned throughput](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/provisioned-throughput) | Foundry Models sold by Azure | Reserved throughput units | Predictable, sustained load on select Foundry Models sold by Azure with consistent latency. |
 | Managed compute | Open-source and community models from the Foundry catalog | Hourly per accelerator family | Hosting open-source models on dedicated GPUs with Foundry-managed runtimes, private networking, and the same SDKs as the other deployment types. |
 
 All three deployment types share a single Foundry endpoint, the same authentication patterns (Microsoft Entra ID and key), the same SDKs, the same observability surface, and a single bill. You can mix all three deployment types in a single Foundry project and call them from the same client code.
@@ -189,7 +189,7 @@ Managed compute deployments use the same authentication patterns as the rest of 
 - **Microsoft Entra ID (recommended).** Acquire a token for the `https://ai.azure.com/.default` scope and pass it as a bearer token in the `Authorization` header. To call a managed compute deployment with Entra ID, the calling identity needs the **Foundry User** role on the Foundry account scope. The OpenAI SDK in token-based mode and `DefaultAzureCredential` work without any managed-compute-specific configuration.
 - **Account API key.** Pass the Foundry account key as `Authorization: Bearer <key>`. The OpenAI SDK sends the key in this form automatically when you set the `api_key` argument. Keys grant the same access on managed compute deployments as they do on pay-per-token and PTU deployments on the same account.
 
-Both authentication options work on both endpoint routes. For end-to-end client code samples (OpenAI SDK with Entra ID or API key), see [Send a test request](../how-to/deploy-models-managed#send-a-test-request).
+Both authentication options work on both endpoint routes. For end-to-end client code samples (OpenAI SDK with Entra ID or API key), see [Send a test request](https://learn.microsoft.com/en-us/azure/foundry/how-to/deploy-models-managed#send-a-test-request).
 
 ## Scaling
 
@@ -211,11 +211,11 @@ Managed compute (preview) currently supports **Global** deployment, set through 
 
 Managed compute quota is granted per accelerator family per region through the Foundry quota process. Managed compute quota is **separate from Azure VM quota**. While Azure VM quota is an infrastructure-as-a-service allocation tied to specific regional VM SKUs, managed compute is a managed PaaS offering. Existing Azure VM quota can't be applied to a managed compute deployment.
 
-For details on viewing usage, attributing cost to a project, and requesting quota, see [Plan and manage costs for Microsoft Foundry](manage-costs) and [Manage and increase quotas](../how-to/quota).
+For details on viewing usage, attributing cost to a project, and requesting quota, see [Plan and manage costs for Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/manage-costs) and [Manage and increase quotas](https://learn.microsoft.com/en-us/azure/foundry/how-to/quota).
 
 ## Access control
 
-Managed compute uses Foundry's role-based access control (RBAC) model. The set of Azure resource provider operations required to create, read, update, and delete a managed compute deployment is documented in [Role-based access control for Microsoft Foundry — managed compute control-plane operations](rbac-foundry#managed-compute-control-plane-operations), along with the built-in roles that grant each operation.
+Managed compute uses Foundry's role-based access control (RBAC) model. The set of Azure resource provider operations required to create, read, update, and delete a managed compute deployment is documented in [Role-based access control for Microsoft Foundry — managed compute control-plane operations](https://learn.microsoft.com/en-us/azure/foundry/rbac-foundry#managed-compute-control-plane-operations), along with the built-in roles that grant each operation.
 
 At a glance:
 
@@ -229,6 +229,6 @@ Inference (data plane) on the unified Foundry endpoint follows the standard Foun
 
 Managed compute is in **public preview**. Note the following before deploying production workloads:
 
-- **Content filtering**: Built-in Azure AI Content Safety filters aren't part of the managed compute data path in public preview. If you need request-level or response-level filtering, call the [Azure AI Content Safety APIs](/en-us/azure/ai-services/content-safety/overview) directly from your application.
-- **Region availability**: Managed compute launches with Global scope. Data Zone deployments and additional regions are rolling out — see the [general availability matrix](general-availability) for current coverage.
+- **Content filtering**: Built-in Azure AI Content Safety filters aren't part of the managed compute data path in public preview. If you need request-level or response-level filtering, call the [Azure AI Content Safety APIs](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview) directly from your application.
+- **Region availability**: Managed compute launches with Global scope. Data Zone deployments and additional regions are rolling out — see the [general availability matrix](https://learn.microsoft.com/en-us/azure/foundry/general-availability) for current coverage.
 - **Pricing**: Hourly rates by accelerator family and region, reserved capacity, and commitment discounts are evolving for managed compute deployment in preview. For current rates, see the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/).

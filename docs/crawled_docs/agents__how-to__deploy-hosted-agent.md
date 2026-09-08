@@ -65,13 +65,13 @@ platformId: 4d0098e3-2768-25d6-1070-7816f41fb6bd
 
 This article shows you how to deploy a containerized agent to Foundry Agent Service by using the Azure Developer CLI (`azd`), the Python SDK, or the REST API. Choose a deployment method by using the selector at the top of the article. Use the SDK or REST approaches when you want to manage agent deployments directly from your own applications or services.
 
-If you're deploying for the first time or want a guided walkthrough, see the [Quickstart: Create and deploy a Hosted agent](../quickstarts/quickstart-hosted-agent). The **Azure Developer CLI (azd)** and **VS Code extension** handle building, pushing, versioning, and RBAC configuration automatically.
+If you're deploying for the first time or want a guided walkthrough, see the [Quickstart: Create and deploy a Hosted agent](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-hosted-agent). The **Azure Developer CLI (azd)** and **VS Code extension** handle building, pushing, versioning, and RBAC configuration automatically.
 
 Tip
 
-Prefer a Docker-less inner loop? You can also [deploy a hosted agent directly from source code](deploy-hosted-agent-code) - upload a `.zip` of your Python or .NET code and the platform builds and hosts it for you.
+Prefer a Docker-less inner loop? You can also [deploy a hosted agent directly from source code](https://learn.microsoft.com/en-us/azure/foundry/deploy-hosted-agent-code) - upload a `.zip` of your Python or .NET code and the platform builds and hosts it for you.
 
-If you use a coding agent like GitHub Copilot, the [Microsoft Foundry Skill](../../how-to/develop/use-microsoft-foundry-skill) can help you plan the container deployment flow, prepare `azd` commands, and connect the SDK or REST steps to your project.
+If you use a coding agent like GitHub Copilot, the [Microsoft Foundry Skill](https://learn.microsoft.com/en-us/azure/foundry/../how-to/develop/use-microsoft-foundry-skill) can help you plan the container deployment flow, prepare `azd` commands, and connect the SDK or REST steps to your project.
 
 ## Deployment lifecycle
 
@@ -84,28 +84,28 @@ Every Hosted agent deployment follows this sequence:
 
 ## Prerequisites
 
-- A [Microsoft Foundry project](../../how-to/create-projects).
-- Agent code using a [supported framework](../concepts/hosted-agents#language-support).
+- A [Microsoft Foundry project](https://learn.microsoft.com/en-us/azure/foundry/../how-to/create-projects).
+- Agent code using a [supported framework](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agents#language-support).
 - [Docker Desktop](https://docs.docker.com/get-docker/) installed for local container development.
-- [Azure CLI](/en-us/cli/azure/install-azure-cli) version 2.80 or later.
+- [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli) version 2.80 or later.
 
 ### Required permissions
 
-You need the **Foundry Project Manager** role at the project scope to deploy a hosted agent. This role grants the data-plane permissions to create and update agents, plus the ability to create role assignments for the platform-created agent identity if needed. For a detailed breakdown of the permissions involved, see [Hosted agent permissions reference](../concepts/hosted-agent-permissions).
+You need the **Foundry Project Manager** role at the project scope to deploy a hosted agent. This role grants the data-plane permissions to create and update agents, plus the ability to create role assignments for the platform-created agent identity if needed. For a detailed breakdown of the permissions involved, see [Hosted agent permissions reference](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agent-permissions).
 
 Important
 
 The Foundry RBAC roles were recently renamed. **Foundry User**, **Foundry Owner**, **Foundry Account Owner**, and **Foundry Project Manager** were previously named Azure AI User, Azure AI Owner, Azure AI Account Owner, and Azure AI Project Manager. You might still see the previous names in some places while the rename rolls out. The role IDs and core permissions are unchanged by the rename.
 
-The platform creates a dedicated Microsoft Entra agent identity for each hosted agent at deploy time. This identity is a service principal that your running container uses to call models and tools. You don't need to configure managed identities manually. The agent identity can access model inferencing through the project endpoint and session storage by default. For external resources (for example, your own Azure Storage), assign RBAC roles manually to the agent's Microsoft Entra ID. For more information, see [Agent access beyond defaults](../concepts/hosted-agent-permissions#agent-access-beyond-defaults).
+The platform creates a dedicated Microsoft Entra agent identity for each hosted agent at deploy time. This identity is a service principal that your running container uses to call models and tools. You don't need to configure managed identities manually. The agent identity can access model inferencing through the project endpoint and session storage by default. For external resources (for example, your own Azure Storage), assign RBAC roles manually to the agent's Microsoft Entra ID. For more information, see [Agent access beyond defaults](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agent-permissions#agent-access-beyond-defaults).
 
 If you use `azd` or the VS Code extension, the tooling handles most RBAC assignments automatically, including **Container Registry Repository Reader** for the project managed identity (image pulls).
 
-For more information, see [Authentication and authorization](../../concepts/authentication-authorization-foundry).
+For more information, see [Authentication and authorization](https://learn.microsoft.com/en-us/azure/foundry/../concepts/authentication-authorization-foundry).
 
 Important
 
-Support for placing your Hosted agent's Azure Container Registry behind a private network (private endpoint with public network access disabled) depends on when the Foundry project was created. Projects created after June 25, 2026 support a private registry. Projects created before that date require the registry to be reachable over its public endpoint so the platform can pull the image. Existing projects aren't affected. For the full list of network constraints, see [Limitations](virtual-networks#limitations).
+Support for placing your Hosted agent's Azure Container Registry behind a private network (private endpoint with public network access disabled) depends on when the Foundry project was created. Projects created after June 25, 2026 support a private registry. Projects created before that date require the registry to be reachable over its public endpoint so the platform can pull the image. Existing projects aren't affected. For the full list of network constraints, see [Limitations](https://learn.microsoft.com/en-us/azure/foundry/virtual-networks#limitations).
 
 ## Container requirements
 
@@ -125,7 +125,7 @@ Hosted agents communicate with the Foundry gateway through protocol libraries. C
 | **Invocations** | `azure-ai-agentserver-invocations` | `Azure.AI.AgentServer.Invocations` | `/invocations` | Webhook receivers, non-conversational processing, custom async workflows |
 | **Invocations (WebSocket)** | `azure-ai-agentserver-invocations` | `Azure.AI.AgentServer.Invocations` | `/invocations_ws` | Bidirectional streaming: real-time voice agents, interactive media |
 
-The WebSocket protocol uses the identifier `invocations_ws` and ships in the same `azure-ai-agentserver-invocations` package as the HTTP `/invocations` route, so one container can serve both. Use it when you need persistent, full-duplex streaming - for example, sending microphone PCM to the agent and receiving synthesized audio back. For voice scenarios, see [Build a voice agent with hosted agents](build-voice-agent).
+The WebSocket protocol uses the identifier `invocations_ws` and ships in the same `azure-ai-agentserver-invocations` package as the HTTP `/invocations` route, so one container can serve both. Use it when you need persistent, full-duplex streaming - for example, sending microphone PCM to the agent and receiving synthesized audio back. For voice scenarios, see [Build a voice agent with hosted agents](https://learn.microsoft.com/en-us/azure/foundry/build-voice-agent).
 
 A single container can expose **multiple protocols simultaneously** by declaring them when you create the agent - in the `protocols` field of the `azure.ai.agent` service in `azure.yaml`, an SDK call, or a REST API request - and importing the required libraries. Use the protocol libraries within your existing framework, whether that's Microsoft Agent Framework, LangChain, or custom code.
 
@@ -203,7 +203,7 @@ Variables that you declare yourself, such as `MODEL_DEPLOYMENT_NAME` or toolbox 
 
 Important
 
-When you deploy your hosted agent to Foundry Agent Service, the platform automatically injects an Application Insights connection string into your agent container as an environment variable, enabling OpenTelemetry tracing by default. To view distributed traces, requests, and dependencies, open the Application Insights resource provisioned during setup in the Azure portal and navigate to Investigate &gt; Transaction search or Performance. Use `azd ai agent monitor` for live console logs. When AppInsights is enabled, this project logs traces to help monitor and evaluate user level interactions with agents. Project members provided with Log Analytics Reader role in AppInsights can view trace data, which might contain personal data and/or Customer Content. If the underlying Log Analytics tables are [protected](/en-us/azure/azure-monitor/logs/protected-tables-configure), members instead need the [Privileged Monitoring Data Reader](/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role to view that trace data. Review what trace data is collected and who can view and use this data. Additional Azure Monitor App Insights [pricing](https://azure.microsoft.com/pricing/details/monitor/) might apply. [Learn more](../../observability/concepts/trace-data#disable-tracing).
+When you deploy your hosted agent to Foundry Agent Service, the platform automatically injects an Application Insights connection string into your agent container as an environment variable, enabling OpenTelemetry tracing by default. To view distributed traces, requests, and dependencies, open the Application Insights resource provisioned during setup in the Azure portal and navigate to Investigate &gt; Transaction search or Performance. Use `azd ai agent monitor` for live console logs. When AppInsights is enabled, this project logs traces to help monitor and evaluate user level interactions with agents. Project members provided with Log Analytics Reader role in AppInsights can view trace data, which might contain personal data and/or Customer Content. If the underlying Log Analytics tables are [protected](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/protected-tables-configure), members instead need the [Privileged Monitoring Data Reader](https://learn.microsoft.com/en-us/azure/azure-monitor/logs/manage-access?tabs=portal#privileged-monitoring-data-reader) role to view that trace data. Review what trace data is collected and who can view and use this data. Additional Azure Monitor App Insights [pricing](https://azure.microsoft.com/pricing/details/monitor/) might apply. [Learn more](https://learn.microsoft.com/en-us/azure/foundry/../observability/concepts/trace-data#disable-tracing).
 
 ### Reference project connections in environment variables
 
@@ -228,7 +228,7 @@ The field name to use depends on the connection category:
 
 #### Example
 
-First, create a `CustomKeys` connection on the project that holds the secret. See [Add a new connection in Microsoft Foundry](../../how-to/connections-add). Then reference it from the `env` map in the `azure.ai.agent` service in `azure.yaml`:
+First, create a `CustomKeys` connection on the project that holds the secret. See [Add a new connection in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/../how-to/connections-add). Then reference it from the `env` map in the `azure.ai.agent` service in `azure.yaml`:
 
 ```yaml
 services:
@@ -253,7 +253,7 @@ A GET on the agent version returns the literal `${{...}}` text--the resolved sec
 - **Create the connection before you deploy the version.** If the connection or the referenced field is missing at sandbox start, the placeholder doesn't resolve and the variable is empty.
 - **Secrets are write-only.** GET on a connection returns `credentials: null`. Verify resolution by reading the env var from inside your running container, not by inspecting the connection.
 - **Record `CustomKeys` field names yourself.** The management API never echoes them back after creation. Keep them next to your agent source (for example, in IaC templates or alongside `azure.yaml`) so you can construct placeholders later without guessing.
-- **Foundry manages the backing secret name.** When you create the connection, Foundry stores the value in Key Vault under a name it chooses -- you can't reference a preexisting Key Vault secret by name. To attach your own Key Vault as the backing store, see [Set up a Key Vault connection](../../how-to/set-up-key-vault-connection).
+- **Foundry manages the backing secret name.** When you create the connection, Foundry stores the value in Key Vault under a name it chooses -- you can't reference a preexisting Key Vault secret by name. To attach your own Key Vault as the backing store, see [Set up a Key Vault connection](https://learn.microsoft.com/en-us/azure/foundry/../how-to/set-up-key-vault-connection).
 
 ## Package and test your agent locally
 
@@ -286,7 +286,7 @@ Content-Type: application/json
 
 ## Deploy using the Azure Developer CLI or VS Code
 
-The Azure Developer CLI (`azd`) and the Microsoft Foundry Toolkit for Visual Studio Code automate the full deployment lifecycle: building the container, pushing it to Azure Container Registry, creating the agent version, and assigning RBAC roles. For a guided first-time walkthrough, see the [Quickstart: Create and deploy a Hosted agent](../quickstarts/quickstart-hosted-agent).
+The Azure Developer CLI (`azd`) and the Microsoft Foundry Toolkit for Visual Studio Code automate the full deployment lifecycle: building the container, pushing it to Azure Container Registry, creating the agent version, and assigning RBAC roles. For a guided first-time walkthrough, see the [Quickstart: Create and deploy a Hosted agent](https://learn.microsoft.com/en-us/azure/foundry/quickstarts/quickstart-hosted-agent).
 
 ### Deploy with one command
 
@@ -329,7 +329,7 @@ The output includes the agent name, version, protocols, container resources, env
 
 By default, `azd` builds container images remotely in Azure Container Registry. To build images locally, set `remoteBuild: false` in `azure.yaml`. Local builds require Docker Desktop.
 
-To screen prompts and responses against a content safety policy, [add a content safety guardrail to your agent](add-hosted-agent-guardrails).
+To screen prompts and responses against a content safety policy, [add a content safety guardrail to your agent](https://learn.microsoft.com/en-us/azure/foundry/add-hosted-agent-guardrails).
 
 ::: zone-end
 
@@ -342,7 +342,7 @@ Use the SDK when you want to manage agent deployments directly from Python code.
 ### Additional prerequisites
 
 - [Python 3.10 or later](https://www.python.org/downloads/)
-- A container image in [Azure Container Registry](/en-us/azure/container-registry/container-registry-get-started-portal)
+- A container image in [Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal)
 - **Container Registry Repository Writer** or **AcrPush** role on the container registry (to push images)
 - Azure AI Projects SDK version 2.3.0 or later
 
@@ -377,7 +377,7 @@ Grant your project's managed identity access to pull images:
 
 1. In the [Azure portal](https://portal.azure.com), go to your Foundry project resource.
 2. Select **Identity** and copy the **Object (principal) ID** under **System assigned**.
-3. Assign the **Container Registry Repository Reader** role to this identity on your container registry. See [Azure Container Registry roles and permissions](/en-us/azure/container-registry/container-registry-roles).
+3. Assign the **Container Registry Repository Reader** role to this identity on your container registry. See [Azure Container Registry roles and permissions](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-roles).
 
 ### Create a hosted agent version
 
@@ -444,7 +444,7 @@ Key parameters:
 | `memory` | Memory allocation (for example, `"2Gi"`) |
 | `protocol_versions` | Protocols the container exposes (`responses`, `invocations`, or both) |
 
-To set when session compute goes idle, see [Manage session idleness](manage-hosted-sessions#manage-session-idleness).
+To set when session compute goes idle, see [Manage session idleness](https://learn.microsoft.com/en-us/azure/foundry/manage-hosted-sessions#manage-session-idleness).
 
 ### Poll for version status
 
@@ -530,7 +530,7 @@ Use the SDK when you want to manage agent deployments directly from Node.js code
 ### Additional prerequisites
 
 - [Node.js 22 or later](https://nodejs.org/)
-- A container image in [Azure Container Registry](/en-us/azure/container-registry/container-registry-get-started-portal)
+- A container image in [Azure Container Registry](https://learn.microsoft.com/en-us/azure/container-registry/container-registry-get-started-portal)
 - **Container Registry Repository Writer** or **AcrPush** role on the container registry (to push images)
 - The `@azure/ai-projects` and `@azure/identity` packages
 
@@ -664,7 +664,7 @@ const response = await fetch(`${url}?api-version=v1`, {
 console.log(await response.json());
 ```
 
-Reference: [AIProjectClient](/en-us/javascript/api/overview/azure/ai-projects-readme)
+Reference: [AIProjectClient](https://learn.microsoft.com/en-us/javascript/api/overview/azure/ai-projects-readme)
 
 ::: zone-end
 
@@ -711,9 +711,9 @@ curl -X POST "$BASE_URL/agents?api-version=$API_VERSION" \
 
 Creating an agent also creates version `1` and triggers provisioning.
 
-To set when session compute goes idle, see [Manage session idleness](manage-hosted-sessions#manage-session-idleness).
+To set when session compute goes idle, see [Manage session idleness](https://learn.microsoft.com/en-us/azure/foundry/manage-hosted-sessions#manage-session-idleness).
 
-To screen prompts and responses against a content safety policy, include a `rai_config` object in the `definition`. See [Add a content safety guardrail to a hosted agent](add-hosted-agent-guardrails).
+To screen prompts and responses against a content safety policy, include a `rai_config` object in the `definition`. See [Add a content safety guardrail to a hosted agent](https://learn.microsoft.com/en-us/azure/foundry/add-hosted-agent-guardrails).
 
 ### Poll for version status
 
@@ -833,7 +833,7 @@ Or delete the entire agent and all its versions:
 await project.agents.delete("my-agent", { force: true });
 ```
 
-Reference: [AIProjectClient](/en-us/javascript/api/overview/azure/ai-projects-readme)
+Reference: [AIProjectClient](https://learn.microsoft.com/en-us/javascript/api/overview/azure/ai-projects-readme)
 
 ::: zone-end
 
@@ -876,4 +876,4 @@ Provisioning errors surface on the version object's `error.code` and `error.mess
 
 For 5xx errors, contact Microsoft support.
 
-For detailed RBAC requirements and permission troubleshooting, see [Hosted agent permissions reference](../concepts/hosted-agent-permissions).
+For detailed RBAC requirements and permission troubleshooting, see [Hosted agent permissions reference](https://learn.microsoft.com/en-us/azure/foundry/concepts/hosted-agent-permissions).

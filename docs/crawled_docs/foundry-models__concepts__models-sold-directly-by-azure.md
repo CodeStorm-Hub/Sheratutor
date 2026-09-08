@@ -69,13 +69,13 @@ platformId: 3bc60d4a-b3c8-dcfb-b686-571a6805ff5b
 
 # Foundry Models sold by Azure - Microsoft Foundry | Microsoft Learn
 
-Microsoft Foundry Models in the model catalog comprise two main categories, namely *Foundry Models sold by Azure* and *Foundry Models from partners and community*. This article lists a selection of Foundry Models sold by Azure, along with their capabilities, [deployment types](deployment-types), and regions of availability, **excluding deprecated and retired models**.
+Microsoft Foundry Models in the model catalog comprise two main categories, namely *Foundry Models sold by Azure* and *Foundry Models from partners and community*. This article lists a selection of Foundry Models sold by Azure, along with their capabilities, [deployment types](https://learn.microsoft.com/en-us/azure/foundry/deployment-types), and regions of availability, **excluding deprecated and retired models**.
 
-Models sold by Azure are also hosted by Azure and operated by Azure as part of the Foundry Models service. They include all Azure OpenAI models and specific, [selected models from top providers](models-sold-directly-by-azure?pivots=azure-direct-others). These models are billed through your Azure subscription, covered by Azure service-level agreements, and supported by Microsoft. To see a list of Foundry Models that are supported by the Foundry Agent Service, see [Models supported by Agent Service](../../agents/concepts/limits-quotas-regions), and for a list of Foundry Models from partners, see [Foundry Models from partners and community](models-from-partners).
+Models sold by Azure are also hosted by Azure and operated by Azure as part of the Foundry Models service. They include all Azure OpenAI models and specific, [selected models from top providers](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure?pivots=azure-direct-others). These models are billed through your Azure subscription, covered by Azure service-level agreements, and supported by Microsoft. To see a list of Foundry Models that are supported by the Foundry Agent Service, see [Models supported by Agent Service](https://learn.microsoft.com/en-us/azure/foundry/../agents/concepts/limits-quotas-regions), and for a list of Foundry Models from partners, see [Foundry Models from partners and community](https://learn.microsoft.com/en-us/azure/foundry/models-from-partners).
 
 Tip
 
-Use the tabs at the top of this page to switch between [Azure OpenAI models](models-sold-directly-by-azure?pivots=azure-openai) and [Other model collections](models-sold-directly-by-azure?pivots=azure-direct-others) from providers like Cohere, DeepSeek, Meta, Mistral AI, and xAI.
+Use the tabs at the top of this page to switch between [Azure OpenAI models](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure?pivots=azure-openai) and [Other model collections](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure?pivots=azure-direct-others) from providers like Cohere, DeepSeek, Meta, Mistral AI, and xAI.
 
 ::: zone pivot="azure-openai"
 
@@ -83,33 +83,33 @@ Use the tabs at the top of this page to switch between [Azure OpenAI models](mod
 
 Azure OpenAI is powered by a diverse set of models with different capabilities and price points. Model availability varies by region and cloud.
 
-- To see **region availability for Azure OpenAI in Microsoft Foundry models grouped by deployment category**, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
-- For **Azure Government model availability**, refer to [Azure OpenAI in Azure Government](models-sold-directly-by-azure-gov).
+- To see **region availability for Azure OpenAI in Microsoft Foundry models grouped by deployment category**, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
+- For **Azure Government model availability**, refer to [Azure OpenAI in Azure Government](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-gov).
 
 ### Model highlights
 
 | Models | Description |
 | --- | --- |
-| [GPT-6 series](models-sold-directly-by-azure#gpt-6) | **NEW**`gpt-6-astra` |
-| [GPT-5.6 series](models-sold-directly-by-azure#gpt-56) | **NEW**`gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna` |
-| [GPT-chat-latest (preview)](models-sold-directly-by-azure#gpt-chat-latest) | **NEW**`gpt-chat-latest`**Preview** |
-| [GPT-5.5 series](models-sold-directly-by-azure#gpt-55) | `gpt-5.5` |
-| [GPT-5.4 series](models-sold-directly-by-azure#gpt-54) | `gpt-5.4-mini`, `gpt-5.4-nano`, `gpt-5.4`, `gpt-5.4-pro` |
-| [GPT-5.3 series](models-sold-directly-by-azure#gpt-53) | `gpt-5.3-chat`, `gpt-5.3-codex` |
-| [GPT-5.2 series](models-sold-directly-by-azure#gpt-52) | `gpt-5.2-codex`, `gpt-5.2`, `gpt-5.2-chat`**Preview** |
-| [GPT-5.1 series](models-sold-directly-by-azure#gpt-51) | `gpt-5.1`, `gpt-5.1-chat`**Preview**, `gpt-5.1-codex`, `gpt-5.1-codex-mini` |
-| [Sora](/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?pivots=azure-openai&amp;tabs=global-standard-aoai%2Cstandard-chat-completions%2Cglobal-standard#video-generation-models) | **NEW** sora-2 |
-| [GPT-5 series](models-sold-directly-by-azure#gpt-5) | `gpt-5`, `gpt-5-mini`, `gpt-5-nano`, `gpt-5-chat`**Preview** |
-| [gpt-oss](models-sold-directly-by-azure#gpt-oss) | open-weight reasoning models |
-| [codex-mini](models-sold-directly-by-azure#o-series-models) | Fine-tuned version of `o4-mini`. |
-| [GPT-4.1 series](models-sold-directly-by-azure#gpt-41-series) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano` |
-| [computer-use-preview](models-sold-directly-by-azure#computer-use-preview) | An experimental model trained for use with the Responses API computer use tool. |
-| [o-series models](models-sold-directly-by-azure#o-series-models) | [Reasoning models](../../openai/how-to/reasoning) with advanced problem solving and increased focus and capability. |
-| [GPT-4o, GPT-4o mini, and GPT-4 Turbo](models-sold-directly-by-azure#gpt-4o-and-gpt-4-turbo) | Capable Azure OpenAI models with multimodal versions, which can accept both text and images as input. |
-| [Embeddings](models-sold-directly-by-azure#embeddings) | A set of models that can convert text into numerical vector form to facilitate text similarity. |
-| [Image generation](models-sold-directly-by-azure#image-generation-models) | A series of models that can generate original images from natural language. |
-| [`Video generation`](models-sold-directly-by-azure#video-generation-models) | A model that can generate original video scenes from text instructions. |
-| [Audio](models-sold-directly-by-azure#audio-models) | A series of models for speech to text, translation, and text to speech. GPT-4o audio models support either low latency *speech in, speech out* conversational interactions or audio generation. |
+| [GPT-6 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-6) | **NEW**`gpt-6-astra` |
+| [GPT-5.6 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-56) | **NEW**`gpt-5.6-sol`, `gpt-5.6-terra`, `gpt-5.6-luna` |
+| [GPT-chat-latest (preview)](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-chat-latest) | **NEW**`gpt-chat-latest`**Preview** |
+| [GPT-5.5 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-55) | `gpt-5.5` |
+| [GPT-5.4 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-54) | `gpt-5.4-mini`, `gpt-5.4-nano`, `gpt-5.4`, `gpt-5.4-pro` |
+| [GPT-5.3 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-53) | `gpt-5.3-chat`, `gpt-5.3-codex` |
+| [GPT-5.2 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-52) | `gpt-5.2-codex`, `gpt-5.2`, `gpt-5.2-chat`**Preview** |
+| [GPT-5.1 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-51) | `gpt-5.1`, `gpt-5.1-chat`**Preview**, `gpt-5.1-codex`, `gpt-5.1-codex-mini` |
+| [Sora](https://learn.microsoft.com/en-us/azure/ai-foundry/foundry-models/concepts/models-sold-directly-by-azure?pivots=azure-openai&amp;tabs=global-standard-aoai%2Cstandard-chat-completions%2Cglobal-standard#video-generation-models) | **NEW** sora-2 |
+| [GPT-5 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-5) | `gpt-5`, `gpt-5-mini`, `gpt-5-nano`, `gpt-5-chat`**Preview** |
+| [gpt-oss](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-oss) | open-weight reasoning models |
+| [codex-mini](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#o-series-models) | Fine-tuned version of `o4-mini`. |
+| [GPT-4.1 series](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-41-series) | `gpt-4.1`, `gpt-4.1-mini`, `gpt-4.1-nano` |
+| [computer-use-preview](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#computer-use-preview) | An experimental model trained for use with the Responses API computer use tool. |
+| [o-series models](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#o-series-models) | [Reasoning models](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) with advanced problem solving and increased focus and capability. |
+| [GPT-4o, GPT-4o mini, and GPT-4 Turbo](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#gpt-4o-and-gpt-4-turbo) | Capable Azure OpenAI models with multimodal versions, which can accept both text and images as input. |
+| [Embeddings](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#embeddings) | A set of models that can convert text into numerical vector form to facilitate text similarity. |
+| [Image generation](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#image-generation-models) | A series of models that can generate original images from natural language. |
+| [`Video generation`](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#video-generation-models) | A model that can generate original video scenes from text instructions. |
+| [Audio](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure#audio-models) | A series of models for speech to text, translation, and text to speech. GPT-4o audio models support either low latency *speech in, speech out* conversational interactions or audio generation. |
 
 ### Understand model token limits
 
@@ -119,30 +119,30 @@ The **Max Output Tokens** column sets an upper limit, not a guaranteed output si
 
 ## GPT-chat-latest
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-chat-latest` (2026-08-06)**Preview** | - [Reasoning](../../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 400,000Input: 272,000Output: 128,000 | 128,000 | February 2026 |
-| `gpt-chat-latest` (2026-06-24)**Preview** | - [Reasoning](../../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
-| `gpt-chat-latest` (2026-05-28)**Preview** | - [Reasoning](../../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
-| `gpt-chat-latest` (2026-05-05)**Preview** | - [Reasoning](../../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
+| `gpt-chat-latest` (2026-08-06)**Preview** | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 400,000Input: 272,000Output: 128,000 | 128,000 | February 2026 |
+| `gpt-chat-latest` (2026-06-24)**Preview** | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
+| `gpt-chat-latest` (2026-05-28)**Preview** | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
+| `gpt-chat-latest` (2026-05-05)**Preview** | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
 
 `gpt-chat-latest` uses a fixed, nonzero reasoning level, so it can generate reasoning tokens for some requests. Unlike other reasoning models, you can't configure this level with the `reasoning_effort` parameter.
 
-You might also see this model referred to by OpenAI as GPT-5.5 Instant or in the OpenAI API as `chat-latest`. In Microsoft Foundry, the product name for this release is `gpt-chat-latest`. The model continues to follow the existing [Preview lifecycle](../../openai/concepts/model-retirements) and standard notice periods. The team is also evaluating ways to simplify how customers access continuously updated models over time, but current behavior remains unchanged as that work continues.
+You might also see this model referred to by OpenAI as GPT-5.5 Instant or in the OpenAI API as `chat-latest`. In Microsoft Foundry, the product name for this release is `gpt-chat-latest`. The model continues to follow the existing [Preview lifecycle](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirements) and standard notice periods. The team is also evaluating ways to simplify how customers access continuously updated models over time, but current behavior remains unchanged as that work continues.
 
 ## GPT-6
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-6-astra` (2026-09-03) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - [Multi-agent orchestration](../../openai/how-to/responses-multi-agent) (preview). - Chat Completions API.  - Streaming.  - Structured outputs.  - Text and image input with text output.  - Functions, tools, and parallel tool calling (Responses API only).  - Reasoning effort and verbosity.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | April 2026 |
+| `gpt-6-astra` (2026-09-03) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - [Multi-agent orchestration](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses-multi-agent) (preview). - Chat Completions API.  - Streaming.  - Structured outputs.  - Text and image input with text output.  - Functions, tools, and parallel tool calling (Responses API only).  - Reasoning effort and verbosity.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | April 2026 |
 
 Note
 
@@ -150,42 +150,42 @@ In certain circumstances, Astra may apply enhanced safety controls when safety s
 
 Keep the following in mind when you deploy and call the `gpt-6-astra` model:
 
-- Some [quota tiers](../../openai/quotas-limits) require quota requests for `gpt-6-astra` to deploy this model. Tier 5 and Tier 6 subscriptions have quota by default. See [Microsoft Foundry Models quotas and limits](/en-us/azure/foundry/foundry-models/quotas-limits) for more information about quotas and limits in Microsoft Foundry.
+- Some [quota tiers](https://learn.microsoft.com/en-us/azure/foundry/../openai/quotas-limits) require quota requests for `gpt-6-astra` to deploy this model. Tier 5 and Tier 6 subscriptions have quota by default. See [Microsoft Foundry Models quotas and limits](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/quotas-limits) for more information about quotas and limits in Microsoft Foundry.
 - Standard pay-as-you-go deployments of the GPT-6 model family and later models use separate rates for short-context and long-context requests. Each GPT-6 model handles both types of requests. For GPT-6 models, prompts with more than 272,000 input tokens use long-context pricing for the full request, not only for tokens beyond the threshold. Later models might use different thresholds. For current rates, see [Azure OpenAI pricing](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
-- Tool calling requires the Responses API. If you use tools with Chat Completions, follow the [Responses API migration guide](/en-us/azure/developer/ai/how-to/azure-openai-to-responses).
+- Tool calling requires the Responses API. If you use tools with Chat Completions, follow the [Responses API migration guide](https://learn.microsoft.com/en-us/azure/developer/ai/how-to/azure-openai-to-responses).
 - The model doesn't support the `none` reasoning effort level.
 - The model doesn't support custom `temperature` or `top_p` values or log probabilities (`logprobs`).
 - Azure OpenAI doesn't currently support mid-conversation reasoning effort changes (`configuration_update`) or mid-turn steering (`response.steer`) for GPT-6 Astra.
 
 ## GPT-5.6
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5.6-sol` (2026-07-09) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - [Multi-agent orchestration](../../openai/how-to/responses-multi-agent) (preview). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | February 2026 |
-| `gpt-5.6-terra` (2026-07-09) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - [Multi-agent orchestration](../../openai/how-to/responses-multi-agent) (preview). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | February 2026 |
-| `gpt-5.6-luna` (2026-07-09) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - [Multi-agent orchestration](../../openai/how-to/responses-multi-agent) (preview). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | February 2026 |
+| `gpt-5.6-sol` (2026-07-09) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - [Multi-agent orchestration](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses-multi-agent) (preview). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | February 2026 |
+| `gpt-5.6-terra` (2026-07-09) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - [Multi-agent orchestration](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses-multi-agent) (preview). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | February 2026 |
+| `gpt-5.6-luna` (2026-07-09) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - [Multi-agent orchestration](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses-multi-agent) (preview). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | February 2026 |
 
 Note
 
 Keep the following in mind when you deploy and call the `gpt-5.6` models:
 
-- Some [quota tiers](../../openai/quotas-limits) require quota requests for `gpt-5.6` to deploy this model. Tier 5 and Tier 6 subscriptions have quota by default. See [Microsoft Foundry Models quotas and limits](/en-us/azure/foundry/foundry-models/quotas-limits) for more information about quotas and limits in Microsoft Foundry.
+- Some [quota tiers](https://learn.microsoft.com/en-us/azure/foundry/../openai/quotas-limits) require quota requests for `gpt-5.6` to deploy this model. Tier 5 and Tier 6 subscriptions have quota by default. See [Microsoft Foundry Models quotas and limits](https://learn.microsoft.com/en-us/azure/foundry/foundry-models/quotas-limits) for more information about quotas and limits in Microsoft Foundry.
 - Standard pay-as-you-go deployments of the GPT-5.6 model family and later models use separate rates for short-context and long-context requests. Each GPT-5.6 model handles both types of requests. For GPT-5.6, prompts with more than 272,000 input tokens use long-context pricing for the full request, not only for tokens beyond the threshold. Later models might use different thresholds. For current rates, see [Azure OpenAI pricing](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service/).
-- These models support the Chat Completions API and function tools, but not both at the same time unless `reasoning_effort` is `none`. Use the Responses API for tool calling. For more information, see [Tool calling with reasoning models](../../openai/how-to/reasoning#tool-calling-with-reasoning-models).
+- These models support the Chat Completions API and function tools, but not both at the same time unless `reasoning_effort` is `none`. Use the Responses API for tool calling. For more information, see [Tool calling with reasoning models](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning#tool-calling-with-reasoning-models).
 
 ## GPT-5.5
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5.5` (2026-04-24) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | December 2025 |
+| `gpt-5.5` (2026-04-24) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | December 2025 |
 
 ### Responses API token budget
 
@@ -205,44 +205,44 @@ Reaching the available token budget doesn't necessarily produce an HTTP error. A
 
 Note
 
-Some [quota tiers](../../openai/quotas-limits) will require quota requests for `gpt-5.5` to be able to deploy this model. Tier 5 and Tier 6 subscriptions have quota by default.
+Some [quota tiers](https://learn.microsoft.com/en-us/azure/foundry/../openai/quotas-limits) will require quota requests for `gpt-5.5` to be able to deploy this model. Tier 5 and Tier 6 subscriptions have quota by default.
 
 ## GPT-5.4
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5.4` (2026-03-05) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | August 2025 |
-| `gpt-5.4-pro` (2026-03-05) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - Text and image processing.  - Functions & tools  - [Full summary of capabilities](../../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | August 2025 |
-| `gpt-5.4-mini` (2026-03-17) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](../../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | August 2025 |
-| `gpt-5.4-nano` (2026-03-17) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | August 2025 |
+| `gpt-5.4` (2026-03-05) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | August 2025 |
+| `gpt-5.4-pro` (2026-03-05) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Text and image processing.  - Functions & tools  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 1,050,000 Input: 922,000Output: 128,000 | 128,000 | August 2025 |
+| `gpt-5.4-mini` (2026-03-17) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Computer use](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/how-to/computer-use) - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | August 2025 |
+| `gpt-5.4-nano` (2026-03-17) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses). - Chat Completions API.  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | August 2025 |
 
 ## GPT-5.3
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5.3-codex` (2026-02-24) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning).  - Optimized for [Codex CLI & Codex VS Code extension](../../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | August 2025 |
-| `gpt-5.3-chat` (2026-03-03)**Preview** | - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
+| `gpt-5.3-codex` (2026-02-24) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Optimized for [Codex CLI & Codex VS Code extension](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | August 2025 |
+| `gpt-5.3-chat` (2026-03-03)**Preview** | - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
 
 ## GPT-5.2
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5.2-codex` (2026-01-14) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning).  - Optimized for [Codex CLI & Codex VS Code extension](../../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 |  |
-| `gpt-5.2` (2025-12-11) | - [Reasoning](../../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | August 2025 |
-| `gpt-5.2-chat` (2025-12-11)**Preview** | - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
-| `gpt-5.2-chat` (2026-02-10)**Preview** | - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
+| `gpt-5.2-codex` (2026-01-14) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Optimized for [Codex CLI & Codex VS Code extension](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 |  |
+| `gpt-5.2` (2025-12-11) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | August 2025 |
+| `gpt-5.2-chat` (2025-12-11)**Preview** | - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
+| `gpt-5.2-chat` (2026-02-10)**Preview** | - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | August 2025 |
 
 Caution
 
@@ -250,17 +250,17 @@ We don't recommend using preview models in production. We'll upgrade all deploym
 
 ## GPT-5.1
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5.1` (2025-11-13) | - [Reasoning](../../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
-| `gpt-5.1-chat` (2025-11-13) **Preview** | - [Reasoning](../../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | September 30, 2024 |
-| `gpt-5.1-codex` (2025-11-13) | - [Responses API](../../openai/how-to/responses) only.  - Text and image processing  - Structured outputs.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning) - Optimized for [Codex CLI & Codex VS Code extension](../../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
-| `gpt-5.1-codex-mini` (2025-11-13) | - [Responses API](../../openai/how-to/responses) only.  - Text and image processing  - Structured outputs.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning) - Optimized for [Codex CLI & Codex VS Code extension](../../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
-| `gpt-5.1-codex-max` (2025-12-04) | - [Responses API](../../openai/how-to/responses) only.  - Text and image processing  - Structured outputs. - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning) - Optimized for [Codex CLI & Codex VS Code extension](../../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
+| `gpt-5.1` (2025-11-13) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
+| `gpt-5.1-chat` (2025-11-13) **Preview** | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs  - Functions, tools, and parallel tool calling. | 128,000 Input: 111,616  Output: 16,384 | 16,384 | September 30, 2024 |
+| `gpt-5.1-codex` (2025-11-13) | - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses) only.  - Text and image processing  - Structured outputs.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Optimized for [Codex CLI & Codex VS Code extension](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
+| `gpt-5.1-codex-mini` (2025-11-13) | - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses) only.  - Text and image processing  - Structured outputs.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Optimized for [Codex CLI & Codex VS Code extension](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
+| `gpt-5.1-codex-max` (2025-12-04) | - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses) only.  - Text and image processing  - Structured outputs. - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Optimized for [Codex CLI & Codex VS Code extension](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
 
 Caution
 
@@ -269,24 +269,24 @@ We don't recommend using preview models in production. We'll upgrade all deploym
 Important
 
 - `gpt-5.1``reasoning_effort` defaults to `none`. When upgrading from previous reasoning models to `gpt-5.1`, keep in mind that you may need to update your code to explicitly pass a `reasoning_effort` level if you want reasoning to occur.
-- `gpt-5.1-chat` adds built-in reasoning capabilities. Like other [reasoning models](../../openai/how-to/reasoning) it does not support parameters like `temperature`. If you upgrade from using `gpt-5-chat` (which is not a reasoning model) to `gpt-5.1-chat` make sure you remove any custom parameters like `temperature` from your code which are not supported by reasoning models.
+- `gpt-5.1-chat` adds built-in reasoning capabilities. Like other [reasoning models](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) it does not support parameters like `temperature`. If you upgrade from using `gpt-5-chat` (which is not a reasoning model) to `gpt-5.1-chat` make sure you remove any custom parameters like `temperature` from your code which are not supported by reasoning models.
 - `gpt-5.1-codex-max` adds support for setting `reasoning_effort` to `xhigh`. Reasoning effort `none` is not supported with `gpt-5.1-codex-max`.
 
 ## GPT-5
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-5` (2025-08-07) | - [Reasoning](../../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
-| `gpt-5-mini` (2025-08-07) | - [Reasoning](../../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | May 31, 2024 |
-| `gpt-5-nano` (2025-08-07) | - [Reasoning](../../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | May 31, 2024 |
-| `gpt-5-chat` (2025-08-07)**Preview** | - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - **Input**: Text/Image  - **Output**: Text only | 128,000 | 16,384 | September 30, 2024 |
-| `gpt-5-chat` (2025-10-03)**Preview**^1^ | - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - **Input**: Text/Image  - **Output**: Text only | 128,000 | 16,384 | September 30, 2024 |
-| `gpt-5-codex` (2025-09-11) | - [Responses API](../../openai/how-to/responses) only.  - **Input**: Text/Image  - **Output**: Text only  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](../../openai/how-to/reasoning) - Optimized for [Codex CLI & Codex VS Code extension](../../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | - |
-| `gpt-5-pro` (2025-10-06) | - [Reasoning](../../openai/how-to/reasoning) - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions and tools  - [Full summary of capabilities](../../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
+| `gpt-5` (2025-08-07) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
+| `gpt-5-mini` (2025-08-07) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | May 31, 2024 |
+| `gpt-5-nano` (2025-08-07) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | May 31, 2024 |
+| `gpt-5-chat` (2025-08-07)**Preview** | - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - **Input**: Text/Image  - **Output**: Text only | 128,000 | 16,384 | September 30, 2024 |
+| `gpt-5-chat` (2025-10-03)**Preview**^1^ | - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - **Input**: Text/Image  - **Output**: Text only | 128,000 | 16,384 | September 30, 2024 |
+| `gpt-5-codex` (2025-09-11) | - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses) only.  - **Input**: Text/Image  - **Output**: Text only  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling.  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - Optimized for [Codex CLI & Codex VS Code extension](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/codex) | 400,000Input: 272,000Output: 128,000 | 128,000 | - |
+| `gpt-5-pro` (2025-10-06) | - [Reasoning](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning) - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions and tools  - [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | 400,000Input: 272,000Output: 128,000 | 128,000 | September 30, 2024 |
 
 Note
 
@@ -303,16 +303,16 @@ We don't recommend using preview models in production. We'll upgrade all deploym
 
 ## gpt-oss
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context Window | Max Output Tokens | Training Data (up to) |
 | --- | --- | --- | --- | --- |
-| `gpt-oss-120b`^1^ (Preview) | - Text in/text out only  - Chat Completions API  - Streaming  - Function calling  - Structured outputs  - Reasoning  - Available for deployment^1^ and via [managed compute](../../../foundry-classic/how-to/deploy-models-managed) | 131,072 | 131,072 | May 31, 2024 |
-| `gpt-oss-20b` (Preview) | - Text in/text out only  - Chat Completions API  - Streaming  - Function calling  - Structured outputs  - Reasoning  - Available via [managed compute](../../../foundry-classic/how-to/deploy-models-managed) and [Foundry Local](../../../foundry-local/what-is-foundry-local) | 131,072 | 131,072 | May 31, 2024 |
+| `gpt-oss-120b`^1^ (Preview) | - Text in/text out only  - Chat Completions API  - Streaming  - Function calling  - Structured outputs  - Reasoning  - Available for deployment^1^ and via [managed compute](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/how-to/deploy-models-managed) | 131,072 | 131,072 | May 31, 2024 |
+| `gpt-oss-20b` (Preview) | - Text in/text out only  - Chat Completions API  - Streaming  - Function calling  - Structured outputs  - Reasoning  - Available via [managed compute](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/how-to/deploy-models-managed) and [Foundry Local](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-local/what-is-foundry-local) | 131,072 | 131,072 | May 31, 2024 |
 
-^1^ Unlike other Azure OpenAI models, `gpt-oss-120b` requires a [Foundry project](/en-us/azure/ai-foundry/quickstarts/get-started-code?tabs=azure-ai-foundry) to deploy the model.
+^1^ Unlike other Azure OpenAI models, `gpt-oss-120b` requires a [Foundry project](https://learn.microsoft.com/en-us/azure/ai-foundry/quickstarts/get-started-code?tabs=azure-ai-foundry) to deploy the model.
 
 ### Deploy with code
 
@@ -330,7 +330,7 @@ az cognitiveservices account deployment create \
 
 ## GPT-4.1 series
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
@@ -342,7 +342,7 @@ For model availability across all regions, grouped by deployment category, see [
 
 Note
 
-Provisioned managed deployments of GPT-4.1 series models support context lengths less than 128,000 tokens. A request that exceeds this limit returns an HTTP 400 error. To handle long-context requests on a provisioned deployment, enable [spillover](../../openai/how-to/spillover-traffic-management), which routes those requests to a corresponding standard deployment.
+Provisioned managed deployments of GPT-4.1 series models support context lengths less than 128,000 tokens. A request that exceeds this limit returns an HTTP 400 error. To handle long-context requests on a provisioned deployment, enable [spillover](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/spillover-traffic-management), which routes those requests to a corresponding standard deployment.
 
 ### Known issue
 
@@ -361,7 +361,7 @@ Here's the error message for the Responses API:
 
 ## computer-use-preview
 
-An experimental model trained for use with the [Responses API](../../openai/how-to/responses) computer use tool.
+An experimental model trained for use with the [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses) computer use tool.
 
 It can be used with third-party libraries to allow the model to control mouse and keyboard input, while getting context from screenshots of the current environment.
 
@@ -373,30 +373,30 @@ Registration is required to access `computer-use-preview`. Access is granted bas
 
 To request access, go to [`computer-use-preview` limited access model application](https://aka.ms/oai/cuaaccess). When access is granted, you need to create a deployment for the model.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Context window | Max output tokens | Training data (up to) |
 | --- | --- | --- | --- | --- |
-| `computer-use-preview` (2025-03-11) | Specialized model for use with the [Responses API](../../openai/how-to/responses) computer use tool - Tools - Streaming- Text (input/output)- Image (input) | 8,192 | 1,024 | October 2023 |
+| `computer-use-preview` (2025-03-11) | Specialized model for use with the [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses) computer use tool - Tools - Streaming- Text (input/output)- Image (input) | 8,192 | 1,024 | October 2023 |
 
 ## O-Series models
 
 The Azure OpenAI O-Series models are designed to tackle reasoning and problem-solving tasks with increased focus and capability. These models spend more time processing and understanding the user's request, making them exceptionally strong in areas like science, coding, and math, compared to previous iterations.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
 | Model ID | Description | Max request (tokens) | Training data (up to) |
 | --- | --- | --- | --- |
-| `codex-mini` (2025-05-16) | Fine-tuned version of `o4-mini`.  - [Responses API](../../openai/how-to/responses). - Structured outputs. - Text and image processing.  - Functions and tools.[Full summary of capabilities](../../openai/how-to/reasoning). | Input: 200,000  Output: 100,000 | May 31, 2024 |
-| `o3-pro` (2025-06-10) | - [Responses API](../../openai/how-to/responses). - Structured outputs. - Text and image processing.  - Functions and tools.[Full summary of capabilities](../../openai/how-to/reasoning). | Input: 200,000  Output: 100,000 | May 31, 2024 |
-| `o4-mini` (2025-04-16) | - *New* reasoning model, offering [enhanced reasoning abilities](../../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](../../openai/how-to/responses). - Structured outputs. - Text and image processing.  - Functions and tools.[Full summary of capabilities](../../openai/how-to/reasoning). | Input: 200,000  Output: 100,000 | May 31, 2024 |
-| `o3` (2025-04-16) | - *New* reasoning model, offering [enhanced reasoning abilities](../../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](../../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling. [Full summary of capabilities](../../openai/how-to/reasoning). | Input: 200,000  Output: 100,000 | May 31, 2024 |
-| `o3-mini` (2025-01-31) | - [Enhanced reasoning abilities](../../openai/how-to/reasoning).  - Structured outputs. - Text-only processing.  - Functions and tools. | Input: 200,000  Output: 100,000 | October 2023 |
-| `o1` (2024-12-17) | - [Enhanced reasoning abilities](../../openai/how-to/reasoning).  - Structured outputs. - Text and image processing.  - Functions and tools. | Input: 200,000  Output: 100,000 | October 2023 |
+| `codex-mini` (2025-05-16) | Fine-tuned version of `o4-mini`.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses). - Structured outputs. - Text and image processing.  - Functions and tools.[Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | Input: 200,000  Output: 100,000 | May 31, 2024 |
+| `o3-pro` (2025-06-10) | - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses). - Structured outputs. - Text and image processing.  - Functions and tools.[Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | Input: 200,000  Output: 100,000 | May 31, 2024 |
+| `o4-mini` (2025-04-16) | - *New* reasoning model, offering [enhanced reasoning abilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses). - Structured outputs. - Text and image processing.  - Functions and tools.[Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | Input: 200,000  Output: 100,000 | May 31, 2024 |
+| `o3` (2025-04-16) | - *New* reasoning model, offering [enhanced reasoning abilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Chat Completions API.  - [Responses API](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/responses).  - Structured outputs. - Text and image processing.  - Functions, tools, and parallel tool calling. [Full summary of capabilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning). | Input: 200,000  Output: 100,000 | May 31, 2024 |
+| `o3-mini` (2025-01-31) | - [Enhanced reasoning abilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Structured outputs. - Text-only processing.  - Functions and tools. | Input: 200,000  Output: 100,000 | October 2023 |
+| `o1` (2024-12-17) | - [Enhanced reasoning abilities](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).  - Structured outputs. - Text and image processing.  - Functions and tools. | Input: 200,000  Output: 100,000 | October 2023 |
 | `o1-preview`^1^ (2024-09-12) | Older preview version. | Input: 128,000  Output: 32,768 | October 2023 |
 | `o1-mini`^2^ (2024-09-12) | A faster and more cost-efficient option in the o1 series, ideal for coding tasks that require speed and lower resource consumption.  - Global Standard deployment available by default.  - Standard (regional) deployments are currently only available for select customers who received access as part of the `o1-preview` limited access release. | Input: 128,000  Output: 65,536 | October 2023 |
 
@@ -404,21 +404,21 @@ For model availability across all regions, grouped by deployment category, see [
 
 ^2^`o1-mini` is currently available to all customers for Global Standard deployment. Select customers were granted standard (regional) deployment access to `o1-mini` as part of the `o1-preview` limited access release. At this time, access to `o1-mini` standard (regional) deployments isn't being expanded.
 
-`o3-deep-research` is currently only available with Foundry Agent Service. To learn more, see the [Deep Research tool guidance](/en-us/azure/ai-foundry/agents/how-to/tools/deep-research).
+`o3-deep-research` is currently only available with Foundry Agent Service. To learn more, see the [Deep Research tool guidance](https://learn.microsoft.com/en-us/azure/ai-foundry/agents/how-to/tools/deep-research).
 
-To learn more about advanced o-series models, see [Getting started with reasoning models](../../openai/how-to/reasoning).
+To learn more about advanced o-series models, see [Getting started with reasoning models](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/reasoning).
 
 ## GPT-4o and GPT-4 Turbo
 
 GPT-4o integrates text and images in a single model, which enables it to handle multiple data types simultaneously. This multimodal approach enhances accuracy and responsiveness in human-computer interactions. GPT-4o matches GPT-4 Turbo in English text and coding tasks while offering superior performance in non-English language tasks and vision tasks, setting new benchmarks for AI capabilities.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ## GPT-4 and GPT-4 Turbo models
 
-You can use these models only with the Chat Completions API. To learn how Azure OpenAI handles model version upgrades, see [Model versions](../../../foundry-classic/openai/concepts/model-versions). To learn how to view and configure the model version settings of your GPT-4 deployments, see [Working with models](../../openai/how-to/working-with-models).
+You can use these models only with the Chat Completions API. To learn how Azure OpenAI handles model version upgrades, see [Model versions](https://learn.microsoft.com/en-us/azure/foundry/../../foundry-classic/openai/concepts/model-versions). To learn how to view and configure the model version settings of your GPT-4 deployments, see [Working with models](https://learn.microsoft.com/en-us/azure/foundry/../openai/how-to/working-with-models).
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
@@ -430,7 +430,7 @@ For model availability across all regions, grouped by deployment category, see [
 | `gpt-4o` (2024-05-13)  GPT-4o (Omni) | - Text and image processing.  - JSON Mode.  - Parallel function calling.  - Enhanced accuracy and responsiveness.  - Parity with English text and coding tasks compared to GPT-4 Turbo with Vision.  - Superior performance in non-English languages and in vision tasks. | Input: 128,000  Output: 4,096 | October 2023 |
 | `gpt-4`^1^ (turbo-2024-04-09) GPT-4 Turbo with Vision | New generally available model.  - Replacement for all previous GPT-4 preview models (`vision-preview`, `1106-Preview`, `0125-Preview`).  - Feature availability is currently different, depending on the method of input and the deployment type. | Input: 128,000  Output: 4,096 | December 2023 |
 
-^1^ The provisioned version of `gpt-4` version `turbo-2024-04-09` is currently limited to text only. For more information on provisioned deployments, see [Provisioned guidance](../../openai/concepts/provisioned-throughput).
+^1^ The provisioned version of `gpt-4` version `turbo-2024-04-09` is currently limited to text only. For more information on provisioned deployments, see [Provisioned guidance](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/provisioned-throughput).
 
 Caution
 
@@ -444,7 +444,7 @@ We don't recommend that you use preview models in production. We'll upgrade all 
 - `text-embedding-3-small`
 - `text-embedding-ada-002`
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### Capabilities
 
@@ -476,7 +476,7 @@ When you send an array of inputs for embedding, the maximum number of input item
 
 The image generation models generate images from text prompts that the user provides. Image generation models include `gpt-image-1`, `gpt-image-1-mini`, `gpt-image-1.5`, and `gpt-image-2`.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model ID | Max request (characters) |
 | --- | --- |
@@ -493,13 +493,13 @@ Sora-2 is an AI model from OpenAI that creates realistic and imaginative video s
 | --- | --- |
 | `sora-2` | 4,000 |
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ## Audio models
 
 Audio models in Azure OpenAI are available via the `realtime`, `completions`, and `audio` APIs.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 ### GPT-4o audio models
 
@@ -625,7 +625,7 @@ Global training provides [more affordable](https://aka.ms/aoai-pricing) training
 
 ## Assistants (preview)
 
-For Assistants, you need a combination of a supported model and a supported region. Certain tools and capabilities require the latest models. The following models are available in the Assistants API, SDK, and Foundry. The following table is for standard deployment. For information on provisioned throughput unit availability, see [Provisioned throughput models](models-sold-directly-by-azure-region-availability?pivots=provisioned). The listed models and regions can be used with both Assistants v1 and v2. You can use [Global Standard models](models-sold-directly-by-azure-region-availability) if they're supported in the following regions.
+For Assistants, you need a combination of a supported model and a supported region. Certain tools and capabilities require the latest models. The following models are available in the Assistants API, SDK, and Foundry. The following table is for standard deployment. For information on provisioned throughput unit availability, see [Provisioned throughput models](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability?pivots=provisioned). The listed models and regions can be used with both Assistants v1 and v2. You can use [Global Standard models](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability) if they're supported in the following regions.
 
 | Region | gpt-4o, 2024-05-13 | gpt-4o, 2024-08-06 | gpt-4o-mini, 2024-07-18 | gpt-4, 0613 | gpt-4, 1106-Preview | gpt-4, 0125-Preview | gpt-4, turbo-2024-04-09 | gpt-4-32k, 0613 | gpt-35-turbo, 0613 | gpt-35-turbo, 1106 | gpt-35-turbo, 0125 | gpt-35-turbo-16k, 0613 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -643,7 +643,7 @@ For Assistants, you need a combination of a supported model and a supported regi
 
 ## Model retirement
 
-For the latest information on model retirements, refer to the [Model retirement schedule](../../openai/concepts/model-retirement-schedule).
+For the latest information on model retirements, refer to the [Model retirement schedule](https://learn.microsoft.com/en-us/azure/foundry/../openai/concepts/model-retirement-schedule).
 
 ::: zone-end
 
@@ -653,18 +653,18 @@ For the latest information on model retirements, refer to the [Model retirement 
 
 Black Forest Labs (BFL) FLUX models bring state-of-the-art image generation to Microsoft Foundry, enabling you to generate and edit high-quality images from text prompts and reference images. FLUX models support a range of capabilities including text-to-image generation, multi-reference image editing, and in-context generation and editing.
 
-You can run these models through the BFL service provider API and through the [images/generations and images/edits endpoints](../../openai/reference-preview).
+You can run these models through the BFL service provider API and through the [images/generations and images/edits endpoints](https://learn.microsoft.com/en-us/azure/foundry/../openai/reference-preview).
 
-To work with FLUX models in Foundry, see [Deploy and use FLUX models in Microsoft Foundry](../how-to/use-foundry-models-flux).
+To work with FLUX models in Foundry, see [Deploy and use FLUX models in Microsoft Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-flux).
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model | Type & API endpoint | Capabilities |
 | --- | --- | --- |
 | `FLUX.2-flex` | **Image generation** - [BFL service provider API](https://docs.bfl.ai/flux_2/flux2_text_to_image): `<resource-name>/providers/blackforestlabs/v1/flux-2-flex` | - **Input:** text and image (32,000 tokens and up to 10 images^i^)  - **Output:** One Image  - **Tool calling:** No  - **Response formats:** Image (PNG and JPG)  - **Key features:** Fine-grained control; multi-reference support for up to 10 images  - **Additional parameters:**`guidance`: Controls how closely the output follows the prompt. Minimum: 1.5, maximum: 10, default: 4.5. Higher = closer prompt adherence. `steps`: Number of inference steps. Maximum: 50, default: 50. Higher = more detail, slower. |
 | `FLUX.2-pro` | **Image generation** - [BFL service provider API](https://docs.bfl.ai/flux_2/flux2_text_to_image): `<resource-name>/providers/blackforestlabs/v1/flux-2-pro` | - **Input:** text and image (32,000 tokens and up to 8 images^ii^)  - **Output:** One Image  - **Tool calling:** No  - **Response formats:** Image (PNG and JPG)  - **Key features:** Multi-reference support for up to 8 images; more grounded in real-world knowledge; greater output flexibility; enhanced performance  - **Additional parameters:***(In provider-specific API only)* Supports all parameters. |
-| `FLUX.1-Kontext-pro` | **Image generation** - [Image API](../../openai/reference-preview): `https://<resource-name>/openai/deployments/{deployment-id}/images/generations` and `https://<resource-name>/openai/deployments/{deployment-id}/images/edits` - [BFL service provider API](https://docs.bfl.ai/kontext/kontext_text_to_image): `<resource-name>/providers/blackforestlabs/v1/flux-kontext-pro?api-version=preview` | - **Input:** text and image (5,000 tokens and 1 image)  - **Output:** One Image  - **Tool calling:** No  - **Response formats:** Image (PNG and JPG)  - **Key features:** Character consistency, advanced editing  - **Additional parameters:***(In provider-specific API only)*`seed`, `aspect ratio`, `input_image`, `prompt_unsampling`, `safety_tolerance`, `output_format` |
-| `FLUX-1.1-pro` | **Image generation** - [Image API](../../openai/reference-preview): `https://<resource-name>/openai/deployments/{deployment-id}/images/generations` - [BFL service provider API](https://docs.bfl.ai/flux_models/flux_1_1_pro): `<resource-name>/providers/blackforestlabs/v1/flux-pro-1.1?api-version=preview` | - **Input:** text (5,000 tokens and 1 image)  - **Output:** One Image  - **Tool calling:** No  - **Response formats:** Image (PNG and JPG)  - **Key features:** Fast inference speed, strong prompt adherence, competitive pricing, scalable generation  - **Additional parameters:***(In provider-specific API only)*`width`, `height`, `prompt_unsampling`, `seed`, `safety_tolerance`, `output_format` |
+| `FLUX.1-Kontext-pro` | **Image generation** - [Image API](https://learn.microsoft.com/en-us/azure/foundry/../openai/reference-preview): `https://<resource-name>/openai/deployments/{deployment-id}/images/generations` and `https://<resource-name>/openai/deployments/{deployment-id}/images/edits` - [BFL service provider API](https://docs.bfl.ai/kontext/kontext_text_to_image): `<resource-name>/providers/blackforestlabs/v1/flux-kontext-pro?api-version=preview` | - **Input:** text and image (5,000 tokens and 1 image)  - **Output:** One Image  - **Tool calling:** No  - **Response formats:** Image (PNG and JPG)  - **Key features:** Character consistency, advanced editing  - **Additional parameters:***(In provider-specific API only)*`seed`, `aspect ratio`, `input_image`, `prompt_unsampling`, `safety_tolerance`, `output_format` |
+| `FLUX-1.1-pro` | **Image generation** - [Image API](https://learn.microsoft.com/en-us/azure/foundry/../openai/reference-preview): `https://<resource-name>/openai/deployments/{deployment-id}/images/generations` - [BFL service provider API](https://docs.bfl.ai/flux_models/flux_1_1_pro): `<resource-name>/providers/blackforestlabs/v1/flux-pro-1.1?api-version=preview` | - **Input:** text (5,000 tokens and 1 image)  - **Output:** One Image  - **Tool calling:** No  - **Response formats:** Image (PNG and JPG)  - **Key features:** Fast inference speed, strong prompt adherence, competitive pricing, scalable generation  - **Additional parameters:***(In provider-specific API only)*`width`, `height`, `prompt_unsampling`, `seed`, `safety_tolerance`, `output_format` |
 
 ^i,ii^ Support for **multiple reference images** is available for FLUX.2 [pro] (Preview) and FLUX.2 [flex] (Preview) by using the API, but *not* in the playground.
 
@@ -672,7 +672,7 @@ For model availability across all regions, grouped by deployment category, see [
 
 The Cohere family of models includes various models optimized for different use cases, including chat completions, rerank/text classification, and embeddings. Cohere models are optimized for various use cases that include reasoning, summarization, and question answering.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model | Type | Capabilities |
 | --- | --- | --- |
@@ -687,7 +687,7 @@ For model availability across all regions, grouped by deployment category, see [
 
 The DeepSeek family of models includes several reasoning models, which excel at reasoning tasks by using a step-by-step training process, such as language, scientific reasoning, and coding tasks.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model | Type | Capabilities |
 | --- | --- | --- |
@@ -705,35 +705,35 @@ Meta Llama models and tools are a collection of pretrained and fine-tuned genera
 - Mid-size large language models (LLMs) like 7B, 8B, and 70B Base and Instruct models
 - High-performance models like Meta Llama 3.1-405B Instruct for synthetic data generation and distillation use cases.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model | Type | Capabilities |
 | --- | --- | --- |
 | `Llama-4-Maverick-17B-128E-Instruct-FP8` | chat-completion | - **Input:** text and images (1M tokens)  - **Output:** text (1M tokens)  - **Languages:**`ar`, `en`, `fr`, `de`, `hi`, `id`, `it`, `pt`, `es`, `tl`, `th`, and `vi` - **Tool calling:** No  - **Response formats:** Text |
 | `Llama-3.3-70B-Instruct` | chat-completion | - **Input:** text (128,000 tokens)  - **Output:** text (8,192 tokens)  - **Languages:**`en`, `de`, `fr`, `it`, `pt`, `hi`, `es`, and `th` - **Tool calling:** No  - **Response formats:** Text |
 
-Several Meta models are also available [from partners and community](models-from-partners#meta).
+Several Meta models are also available [from partners and community](https://learn.microsoft.com/en-us/azure/foundry/models-from-partners#meta).
 
 ## Microsoft models sold by Azure
 
-Microsoft models include various model groups such as Model Router, MAI models, Phi models, healthcare AI models, and more. Several Microsoft models are also available [from partners and community](models-from-partners#microsoft).
+Microsoft models include various model groups such as Model Router, MAI models, Phi models, healthcare AI models, and more. Several Microsoft models are also available [from partners and community](https://learn.microsoft.com/en-us/azure/foundry/models-from-partners#microsoft).
 
 To work with MAI models, see these how-to articles:
 
-- MAI models available in Foundry: [MAI-Image models](../how-to/use-foundry-models-mai-image) and [MAI-Thinking models](../how-to/use-foundry-models-mai-thinking).
-- MAI models available through Azure Speech in Foundry Tools: [MAI-Voice](/en-us/azure/ai-services/speech-service/mai-voices) and [MAI-Transcribe](/en-us/azure/ai-services/speech-service/mai-transcribe).
+- MAI models available in Foundry: [MAI-Image models](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-mai-image) and [MAI-Thinking models](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-mai-thinking).
+- MAI models available through Azure Speech in Foundry Tools: [MAI-Voice](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-voices) and [MAI-Transcribe](https://learn.microsoft.com/en-us/azure/ai-services/speech-service/mai-transcribe).
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model | Type | Capabilities |
 | --- | --- | --- |
-| `MAI-Thinking-1`**Preview** | chat-completion  (with reasoning content). See [API endpoints](../how-to/use-foundry-models-mai-thinking#api-endpoints) for details. | - **Input:** text.  - **Output:** text (up to 64,000 tokens).  - **Context length:** 256,000 tokens  - **Tool calling:** Yes.  - **Response formats:** Text.  - **Key features:** OpenAI Chat Completions compatibility; Encrypted Chain-of-Thought |
-| `MAI-Image-2.6-Flash`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](../how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate realistic imagery with consistent visual structure. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
-| `MAI-Image-2.6`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](../how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate realistic imagery with consistent visual structure. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
-| `MAI-Image-2.5-Pro`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](../how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate more photo-realistic imagery with consistent visual structure than previous models. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
-| `MAI-Image-2.5-Flash`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](../how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate realistic imagery with consistent visual structure. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
-| `MAI-Image-2.5`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](../how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate realistic imagery with consistent visual structure. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
-| `model-router`^1^ | chat-completion | More details in [Model router overview](/en-us/azure/ai-foundry/openai/how-to/model-router).  - **Input:** text, image  - **Output:** text (max output tokens varies^2^) **Context window:** 200,000^3^ - **Languages:**`en` |
+| `MAI-Thinking-1`**Preview** | chat-completion  (with reasoning content). See [API endpoints](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-mai-thinking#api-endpoints) for details. | - **Input:** text.  - **Output:** text (up to 64,000 tokens).  - **Context length:** 256,000 tokens  - **Tool calling:** Yes.  - **Response formats:** Text.  - **Key features:** OpenAI Chat Completions compatibility; Encrypted Chain-of-Thought |
+| `MAI-Image-2.6-Flash`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate realistic imagery with consistent visual structure. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
+| `MAI-Image-2.6`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate realistic imagery with consistent visual structure. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
+| `MAI-Image-2.5-Pro`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate more photo-realistic imagery with consistent visual structure than previous models. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
+| `MAI-Image-2.5-Flash`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate realistic imagery with consistent visual structure. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
+| `MAI-Image-2.5`**Preview** | Image-to-Image and Text-to-Image. See [API endpoints](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-mai#api-endpoints) for details. | - **Input:** text, image (JPEG or PNG format for image editing workflows)  - **Output:** One image  - **Context length**: 32,000 tokens  - **Tool calling:** No  - **Response formats:** Image (PNG)  - **Languages:**`en` - **Key features:** High-quality text-to-image generation; Image editing that supports precise, surgical edits without disrupting the rest of the image; Capability to generate realistic imagery with consistent visual structure. Well suited for tasks such as concept visualization, creative content generation, image editing workflows, and production design.  - **Parameters:**`width`, `height`, `prompt` Minimum 768×768 pixels; maximum total pixel count 1,048,576 (equivalent to 1024×1024). Either dimension can exceed 1024 as long as the total pixel count stays within the limit (for example, 768×1365 is a valid size). |
+| `model-router`^1^ | chat-completion | More details in [Model router overview](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/how-to/model-router).  - **Input:** text, image  - **Output:** text (max output tokens varies^2^) **Context window:** 200,000^3^ - **Languages:**`en` |
 
 ^1^**Model router version**`2025-11-18`.
 
@@ -743,7 +743,7 @@ For model availability across all regions, grouped by deployment category, see [
 
 ## Mistral models sold by Azure
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model | Type | Capabilities |
 | --- | --- | --- |
@@ -752,13 +752,13 @@ For model availability across all regions, grouped by deployment category, see [
 | `mistral-ocr-4-0`**Preview** | Image-to-Text | - **Input:** image or PDF pages (30 pages, max 30MB PDF file)  - **Output:** text  - **Languages:**`en` - **Tool calling:** no  - **Response formats:** Text, JSON, Markdown |
 | `Mistral-Large-3`**Preview** | chat-completion | - **Input:** text, image  - **Output:** text  - **Languages:**`en`, `fr`, `de`, `es`, `it`, `pt`, `nl`, `zh`, `ja`, `ko`, and `ar` - **Tool calling:** Yes  - **Response formats:** Text, JSON |
 
-Several Mistral models are also available [from partners and community](models-from-partners#mistral-ai).
+Several Mistral models are also available [from partners and community](https://learn.microsoft.com/en-us/azure/foundry/models-from-partners#mistral-ai).
 
 ## Moonshot AI models sold by Azure
 
 Moonshot AI models include Kimi K2.6 (Preview) and Kimi K2.5 (Preview), multimodal reasoning models that accept text and image input.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model | Type | Capabilities |
 | --- | --- | --- |
@@ -772,11 +772,11 @@ See [this model collection in the Foundry portal](https://ai.azure.com/explore/m
 
 SpaceXAI's Grok models in Foundry Models include a diverse set of reasoning and non-reasoning models designed for enterprise use cases such as data extraction, coding, text summarization, and agentic applications.
 
-To work with Grok models, see [Deploy and use Grok models in Foundry](../how-to/use-foundry-models-grok).
+To work with Grok models, see [Deploy and use Grok models in Foundry](https://learn.microsoft.com/en-us/azure/foundry/how-to/use-foundry-models-grok).
 
 [Registration is required for access to](https://aka.ms/xai/grok-4)`grok-code-fast-1` and `grok-4`.
 
-For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](models-sold-directly-by-azure-region-availability).
+For model availability across all regions, grouped by deployment category, see [Region availability for Foundry Models sold by Azure](https://learn.microsoft.com/en-us/azure/foundry/models-sold-directly-by-azure-region-availability).
 
 | Model | Type | Capabilities |
 | --- | --- | --- |

@@ -115,13 +115,19 @@ nav:
       - 'Developer Hand-Off Guide (B2C)': 'antigravity-docs/Developer_Hand-Off_Guide_ SheraTutor_B2C_Web_Portal_(SSC_Phase).md'
       - 'LLM, RAG & Vector Databases Guide': 'antigravity-docs/Python with practical experience in LLMs, RAG pipelines, vector databases, and AI orchestration.md'
       - 'Microsoft Foundry Deep Dive': 'antigravity-docs/microsoft_foundry_deep_dive.md'
+      - 'Foundry Integration Blueprint': 'antigravity-docs/SHERATUTOR_MICROSOFT_FOUNDRY_INTEGRATION_BLUEPRINT.md'
+      - 'GitHub Pages Deployment Guide': 'antigravity-docs/Walkthrough: SheraTutor Documentation Website & GitHub Pages Deployment.md'
+      - 'GitHub Pages Architecture Plan': 'antigravity-docs/Implementation Plan: Publish SheraTutor Documentation to GitHub Pages.md'
+      - 'Docs Redesign Implementation Plan': 'antigravity-docs/Implementation Plan: SheraTutor Docs Redesign, Contrast Fix, Explorers Hub & Full Corpus Audit.md'
 
   - 'Interactive Visual Explorers':
-      - 'Corpus Audit & Architecture Dashboard': 'antigravity-docs/sheratutor_docs_audit_dashboard.html'
+      - 'Explorers Showcase Hub': 'antigravity-docs/explorers.md'
       - 'SheraTutor Architecture Explorer': 'antigravity-docs/sheratutor_interactive_explorer.html'
       - 'Genkit Architecture Explorer': 'antigravity-docs/genkit_interactive_explorer.html'
       - 'SheraTutor + Genkit Integration Explorer': 'antigravity-docs/sheratutor_genkit_integration_explorer.html'
       - 'Microsoft Foundry Explorer': 'antigravity-docs/foundry_interactive_explorer.html'
+      - 'Foundry Transformation Blueprint': 'antigravity-docs/sheratutor_foundry_refactoring_blueprint.html'
+      - 'Corpus Audit & Architecture Dashboard': 'antigravity-docs/sheratutor_docs_audit_dashboard.html'
       - 'BoardMate AI Pitch Deck App': 'pitch/BoardMate_AI_Pitch_Deck.html'
 
   - 'Azure Foundry Reference (63 Docs)':
