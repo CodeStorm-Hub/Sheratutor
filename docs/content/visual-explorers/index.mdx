@@ -3,12 +3,9 @@ title: Interactive Visual Explorers Hub
 description: Interactive visualizers, architectural explorers, simulation dashboards, and pitch decks for SheraTutor AI.
 ---
 
-# Interactive Visual Explorers
+import { Tabs } from 'nextra/components'
 
-<div className="sheratutor-hero-badge">
-  <span className="badge-tag">ENTERPRISE SYSTEM VISUALIZERS</span>
-  <span className="badge-status">8 INTERACTIVE APPLICATIONS AVAILABLE</span>
-</div>
+# Interactive Visual Explorers
 
 Welcome to the **SheraTutor Interactive Visual Explorers Hub**. Each visualizer below is a standalone, interactive single-page application engineered to demonstrate our system topology, Google Genkit AI flows, Microsoft Azure AI Foundry blueprints, NCTB corpus audit telemetry, and the BoardMate AI institutional presentation.
 
@@ -18,111 +15,103 @@ Launch any explorer in a **dedicated fullscreen tab** or interact directly via t
 
 ## Visualizer Directory
 
-<div className="grid cards">
+<div className="grid cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '16px', margin: '24px 0' }}>
 
--   🏛️ **[SheraTutor Architecture Explorer](/Sheratutor/apps/sheratutor-architecture.html)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    🏛️ [SheraTutor Architecture Explorer](/apps/sheratutor-architecture.html)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     Interactive component mapping of the Next.js 16 App Router frontend, React 19 Server Components, Supabase PostgreSQL 17 database, pgvector indexing, and NVIDIA NIM vision extraction pipeline.
+  </p>
+  <a href="/Sheratutor/apps/sheratutor-architecture.html" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ↗ Launch Fullscreen App
+  </a>
+</div>
 
-    <span className="tech-badge">Next.js 16</span>
-    <span className="tech-badge">React 19</span>
-    <span className="tech-badge">Supabase pgvector</span>
-    <span className="tech-badge">NVIDIA NIM</span>
-
-    [↗ Launch Fullscreen App](/Sheratutor/apps/sheratutor-architecture.html)
-
--   ⚡ **[Google Genkit Architecture Explorer](/Sheratutor/apps/genkit-architecture.html)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    ⚡ [Google Genkit Architecture Explorer](/apps/genkit-architecture.html)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     Interactive architecture visualization of Google Genkit v1.41+ flow engine, Reflection API, state management, and OpenTelemetry instrumentation.
+  </p>
+  <a href="/Sheratutor/apps/genkit-architecture.html" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ↗ Launch Fullscreen App
+  </a>
+</div>
 
-    <span className="tech-badge">Genkit v1.41+</span>
-    <span className="tech-badge">TypeScript</span>
-    <span className="tech-badge">Reflection API</span>
-    <span className="tech-badge">OpenTelemetry</span>
-
-    [↗ Launch Fullscreen App](/Sheratutor/apps/genkit-architecture.html)
-
--   🔄 **[SheraTutor + Genkit Integration](/Sheratutor/apps/genkit-integration.html)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    🔄 [SheraTutor + Genkit Integration](/apps/genkit-integration.html)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     Step-by-step interactive simulator of all 7 production Genkit AI flows, demonstrating handwritten exam parsing, rubric grading, and bilingual tutoring.
+  </p>
+  <a href="/Sheratutor/apps/genkit-integration.html" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ↗ Launch Fullscreen App
+  </a>
+</div>
 
-    <span className="tech-badge">7 AI Flows</span>
-    <span className="tech-badge">SSE Streaming</span>
-    <span className="tech-badge">Bilingual RAG</span>
-    <span className="tech-badge">LaTeX Parser</span>
-
-    [↗ Launch Fullscreen App](/Sheratutor/apps/genkit-integration.html)
-
--   ☁️ **[Azure Foundry Architecture Explorer](/Sheratutor/apps/azure-foundry.html)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    ☁️ [Azure Foundry Architecture Explorer](/apps/azure-foundry.html)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     Visual topology of Microsoft Azure AI Foundry Agent Service, Agent Canvas orchestration, Model Router latency switching, and MCP server connectivity.
+  </p>
+  <a href="/Sheratutor/apps/azure-foundry.html" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ↗ Launch Fullscreen App
+  </a>
+</div>
 
-    <span className="tech-badge">Azure Foundry</span>
-    <span className="tech-badge">Agent Canvas</span>
-    <span className="tech-badge">Model Router</span>
-    <span className="tech-badge">MCP Tooling</span>
-
-    [↗ Launch Fullscreen App](/Sheratutor/apps/azure-foundry.html)
-
--   🗄️ **[NCTB Multimodal Foundry Explorer](/Sheratutor/apps/multimodal-foundry.html)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    🗄️ [NCTB Multimodal Foundry Explorer](/apps/multimodal-foundry.html)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     Interactive explorer for the NCTB Multimodal Vector Database on Azure AI Foundry, showing hybrid vector indexing, reciprocal rank fusion, and Supabase integration.
+  </p>
+  <a href="/Sheratutor/apps/multimodal-foundry.html" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ↗ Launch Fullscreen App
+  </a>
+</div>
 
-    <span className="tech-badge">Azure AI Search</span>
-    <span className="tech-badge">pgvector</span>
-    <span className="tech-badge">BGE-M3</span>
-    <span className="tech-badge">Hybrid RAG</span>
-
-    [↗ Launch Fullscreen App](/Sheratutor/apps/multimodal-foundry.html)
-
--   🔀 **[Foundry Transformation Blueprint](/Sheratutor/apps/foundry-transformation.html)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    🔀 [Foundry Transformation Blueprint](/apps/foundry-transformation.html)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     Interactive side-by-side architecture migration matrix comparing the current stack with the enterprise Microsoft Azure AI Foundry target architecture.
+  </p>
+  <a href="/Sheratutor/apps/foundry-transformation.html" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ↗ Launch Fullscreen App
+  </a>
+</div>
 
-    <span className="tech-badge">Architecture Diff</span>
-    <span className="tech-badge">Side-by-Side</span>
-    <span className="tech-badge">Foundry IQ</span>
-    <span className="tech-badge">Cost Matrix</span>
-
-    [↗ Launch Fullscreen App](/Sheratutor/apps/foundry-transformation.html)
-
--   📈 **[Corpus Audit & Telemetry Dashboard](/Sheratutor/apps/corpus-audit-dashboard.html)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    📈 [Corpus Audit & Telemetry Dashboard](/apps/corpus-audit-dashboard.html)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     Live interactive analytics dashboard auditing all 57 NCTB textbooks, 6,432 curriculum pages, OCR quality distributions, and checksum integrity.
+  </p>
+  <a href="/Sheratutor/apps/corpus-audit-dashboard.html" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ↗ Launch Fullscreen App
+  </a>
+</div>
 
-    <span className="tech-badge">Chart.js</span>
-    <span className="tech-badge">57 Textbooks</span>
-    <span className="tech-badge">6,432 Pages</span>
-    <span className="tech-badge">Telemetry</span>
-
-    [↗ Launch Fullscreen App](/Sheratutor/apps/corpus-audit-dashboard.html)
-
--   📽️ **[BoardMate AI Interactive Pitch Deck](/Sheratutor/apps/boardmate-pitch-deck.html)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    📽️ [BoardMate AI Interactive Pitch Deck](/apps/boardmate-pitch-deck.html)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     Interactive investor and institutional pitch presentation covering Bangladesh EdTech market sizing, business model, product demos, and unit economics.
-
-    <span className="tech-badge">Interactive Pitch</span>
-    <span className="tech-badge">Financial Model</span>
-    <span className="tech-badge">B2B SaaS</span>
-    <span className="tech-badge">Keynote Style</span>
-
-    [↗ Launch Fullscreen App](/Sheratutor/apps/boardmate-pitch-deck.html)
+  </p>
+  <a href="/Sheratutor/apps/boardmate-pitch-deck.html" target="_blank" rel="noopener noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ↗ Launch Fullscreen App
+  </a>
+</div>
 
 </div>
 
@@ -130,23 +119,31 @@ Launch any explorer in a **dedicated fullscreen tab** or interact directly via t
 
 ## Executive Asset Downloads
 
-<div className="grid cards">
+<div className="grid cards" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '16px', margin: '24px 0' }}>
 
--   📕 **[SheraTutor Executive Whitepaper (PDF)](/Sheratutor/downloads/SheraTutor-Whitepaper.pdf)**
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    📕 [SheraTutor Executive Whitepaper (PDF)](/downloads/SheraTutor-Whitepaper.pdf)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
+    Comprehensive 25-page technical and product whitepaper detailing the HSC &amp; SSC AI learning workspace architecture, curriculum corpus, and dual-engine RAG methodology.
+  </p>
+  <a href="/Sheratutor/downloads/SheraTutor-Whitepaper.pdf" target="_blank" rel="noopener noreferrer" download style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ⬇ Download Whitepaper PDF (Direct)
+  </a>
+</div>
 
-    ---
-
-    Comprehensive 25-page technical and product whitepaper detailing the HSC & SSC AI learning workspace architecture, curriculum corpus, and dual-engine RAG methodology.
-
-    [⬇ Download Whitepaper PDF (Direct)](/Sheratutor/downloads/SheraTutor-Whitepaper.pdf)
-
--   📙 **[BoardMate AI Investor Pitch Deck (PPTX)](/Sheratutor/downloads/BoardMate-Pitch-Deck.pptx)**
-
-    ---
-
+<div style={{ border: '1px solid #334155', borderRadius: '12px', padding: '20px', background: 'rgba(30, 41, 59, 0.3)' }}>
+  <div style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '8px' }}>
+    📙 [BoardMate AI Investor Pitch Deck (PPTX)](/downloads/BoardMate-Pitch-Deck.pptx)
+  </div>
+  <p style={{ fontSize: '0.9rem', color: '#94a3b8', lineHeight: 1.5, marginBottom: '16px' }}>
     The complete institutional slide presentation formatted in high-resolution Microsoft PowerPoint (`.pptx`) for investor roadshows and education board presentations.
-
-    [⬇ Download Pitch Deck PPTX (Direct)](/Sheratutor/downloads/BoardMate-Pitch-Deck.pptx)
+  </p>
+  <a href="/Sheratutor/downloads/BoardMate-Pitch-Deck.pptx" target="_blank" rel="noopener noreferrer" download style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', fontWeight: 500, color: '#38bdf8' }}>
+    ⬇ Download Pitch Deck PPTX (Direct)
+  </a>
+</div>
 
 </div>
 
@@ -154,44 +151,91 @@ Launch any explorer in a **dedicated fullscreen tab** or interact directly via t
 
 ## Embedded Interactive Visualizers
 
-=== "SheraTutor Full Architecture"
+<Tabs items={[
+  'SheraTutor Architecture',
+  'Google Genkit Architecture',
+  'SheraTutor + Genkit Flows',
+  'Azure AI Foundry Topology',
+  'NCTB Multimodal Vector DB',
+  'Corpus Audit Dashboard',
+  'BoardMate AI Pitch Deck'
+]}>
 
-    <div className="explorer-container">
-      <iframe src="apps/sheratutor-architecture.html" loading="lazy" title="SheraTutor Architecture Explorer"></iframe>
+<Tabs.Tab>
+  <div style={{ marginTop: '12px' }}>
+    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+      <a href="/Sheratutor/apps/sheratutor-architecture.html" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', color: '#38bdf8', textDecoration: 'underline' }}>
+        ↗ Open in Fullscreen Window
+      </a>
     </div>
+    <iframe src="/Sheratutor/apps/sheratutor-architecture.html" loading="lazy" title="SheraTutor Architecture Explorer" style={{ width: '100%', height: '750px', border: '1px solid #334155', borderRadius: '12px', background: '#0f172a' }}></iframe>
+  </div>
+</Tabs.Tab>
 
-=== "Google Genkit Architecture"
-
-    <div className="explorer-container">
-      <iframe src="apps/genkit-architecture.html" loading="lazy" title="Google Genkit Architecture Explorer"></iframe>
+<Tabs.Tab>
+  <div style={{ marginTop: '12px' }}>
+    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+      <a href="/Sheratutor/apps/genkit-architecture.html" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', color: '#38bdf8', textDecoration: 'underline' }}>
+        ↗ Open in Fullscreen Window
+      </a>
     </div>
+    <iframe src="/Sheratutor/apps/genkit-architecture.html" loading="lazy" title="Google Genkit Architecture Explorer" style={{ width: '100%', height: '750px', border: '1px solid #334155', borderRadius: '12px', background: '#0f172a' }}></iframe>
+  </div>
+</Tabs.Tab>
 
-=== "SheraTutor + Genkit Flows"
-
-    <div className="explorer-container">
-      <iframe src="apps/genkit-integration.html" loading="lazy" title="SheraTutor + Genkit Integration Explorer"></iframe>
+<Tabs.Tab>
+  <div style={{ marginTop: '12px' }}>
+    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+      <a href="/Sheratutor/apps/genkit-integration.html" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', color: '#38bdf8', textDecoration: 'underline' }}>
+        ↗ Open in Fullscreen Window
+      </a>
     </div>
+    <iframe src="/Sheratutor/apps/genkit-integration.html" loading="lazy" title="SheraTutor + Genkit Integration Explorer" style={{ width: '100%', height: '750px', border: '1px solid #334155', borderRadius: '12px', background: '#0f172a' }}></iframe>
+  </div>
+</Tabs.Tab>
 
-=== "Azure AI Foundry Topology"
-
-    <div className="explorer-container">
-      <iframe src="apps/azure-foundry.html" loading="lazy" title="Microsoft Azure Foundry Deep Dive"></iframe>
+<Tabs.Tab>
+  <div style={{ marginTop: '12px' }}>
+    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+      <a href="/Sheratutor/apps/azure-foundry.html" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', color: '#38bdf8', textDecoration: 'underline' }}>
+        ↗ Open in Fullscreen Window
+      </a>
     </div>
+    <iframe src="/Sheratutor/apps/azure-foundry.html" loading="lazy" title="Microsoft Azure Foundry Deep Dive" style={{ width: '100%', height: '750px', border: '1px solid #334155', borderRadius: '12px', background: '#0f172a' }}></iframe>
+  </div>
+</Tabs.Tab>
 
-=== "NCTB Multimodal Vector DB"
-
-    <div className="explorer-container">
-      <iframe src="apps/multimodal-foundry.html" loading="lazy" title="NCTB Multimodal Foundry Explorer"></iframe>
+<Tabs.Tab>
+  <div style={{ marginTop: '12px' }}>
+    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+      <a href="/Sheratutor/apps/multimodal-foundry.html" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', color: '#38bdf8', textDecoration: 'underline' }}>
+        ↗ Open in Fullscreen Window
+      </a>
     </div>
+    <iframe src="/Sheratutor/apps/multimodal-foundry.html" loading="lazy" title="NCTB Multimodal Foundry Explorer" style={{ width: '100%', height: '750px', border: '1px solid #334155', borderRadius: '12px', background: '#0f172a' }}></iframe>
+  </div>
+</Tabs.Tab>
 
-=== "Corpus Audit Dashboard"
-
-    <div className="explorer-container">
-      <iframe src="apps/corpus-audit-dashboard.html" loading="lazy" title="Corpus Audit & Architecture Dashboard"></iframe>
+<Tabs.Tab>
+  <div style={{ marginTop: '12px' }}>
+    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+      <a href="/Sheratutor/apps/corpus-audit-dashboard.html" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', color: '#38bdf8', textDecoration: 'underline' }}>
+        ↗ Open in Fullscreen Window
+      </a>
     </div>
+    <iframe src="/Sheratutor/apps/corpus-audit-dashboard.html" loading="lazy" title="Corpus Audit & Architecture Dashboard" style={{ width: '100%', height: '750px', border: '1px solid #334155', borderRadius: '12px', background: '#0f172a' }}></iframe>
+  </div>
+</Tabs.Tab>
 
-=== "BoardMate AI Pitch Deck"
-
-    <div className="explorer-container">
-      <iframe src="apps/boardmate-pitch-deck.html" loading="lazy" title="BoardMate AI Interactive Pitch Deck"></iframe>
+<Tabs.Tab>
+  <div style={{ marginTop: '12px' }}>
+    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px' }}>
+      <a href="/Sheratutor/apps/boardmate-pitch-deck.html" target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', color: '#38bdf8', textDecoration: 'underline' }}>
+        ↗ Open in Fullscreen Window
+      </a>
     </div>
+    <iframe src="/Sheratutor/apps/boardmate-pitch-deck.html" loading="lazy" title="BoardMate AI Interactive Pitch Deck" style={{ width: '100%', height: '750px', border: '1px solid #334155', borderRadius: '12px', background: '#0f172a' }}></iframe>
+  </div>
+</Tabs.Tab>
+
+</Tabs>
