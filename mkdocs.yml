@@ -1,0 +1,194 @@
+site_name: SheraTutor Documentation
+site_description: Comprehensive Technical Architecture, Curriculum Corpus, and Ingestion Specifications for SheraTutor AI
+site_url: https://codestorm-hub.github.io/Sheratutor/
+repo_url: https://github.com/CodeStorm-Hub/Sheratutor
+repo_name: CodeStorm-Hub/Sheratutor
+edit_uri: edit/docs/docs/
+
+docs_dir: docs
+
+theme:
+  name: material
+  logo: assets/icon-badge.svg
+  favicon: assets/icon-badge.png
+  font:
+    text: Inter
+    code: Space Mono
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+extra_css:
+  - stylesheets/sheratutor.css
+  - https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - def_list
+
+nav:
+  - 'Overview & Vision':
+      - 'Portal Home': 'index.md'
+      - 'Full Project Documentation': 'SheraTutor_Full_Project_Documentation.md'
+      - 'Project Overview': 'research-idea/01-project-overview.md'
+      - 'Market Analysis': 'research-idea/02-market-analysis.md'
+      - 'Design System & Tokens': 'research-idea/03-design-system.md'
+      - 'Technology Stack & AI Strategy': 'research-idea/04-tech-stack-and-ai.md'
+      - 'Business Model': 'research-idea/05-business-model.md'
+      - 'Pitch Deck Presentation': 'pitch/BoardMate_AI_Pitch_Deck.html'
+
+  - 'Specifications & Audits':
+      - 'Software Requirements Specification': 'SheraTutor_Software_Requirements_Specification.md'
+      - 'Launch Checklist': 'LAUNCH_CHECKLIST.md'
+      - 'Codebase Review & Gap Analysis': 'review/SheraTutor_Codebase_Review_and_Gap_Analysis.md'
+      - 'SSC Phase Strategic Review': 'review/SSC_Phase_Technical_Review.md'
+      - 'Automated Browser Testing Report': 'Complete_Automated_Browser_Testing_and_Persistence_Audit_Report.md'
+      - 'Browser Testing Walkthrough': 'Automated Browser Testing Walkthrough (Suites 1–7).md'
+      - 'Physics Live Database Audit': 'PHYSICS_AUDIT_FINDINGS.md'
+
+  - 'Ingestion & RAG Pipelines':
+      - 'NCTB Textbook Corpus Complete Report': 'NCTB_Class_9_10_Textbook_Corpus_Complete_Report.md'
+      - 'Full Corpus Ingestion & Verification Report': 'antigravity-docs/SheraTutor: End-to-End RAG Ingestion Pipeline, Vision LLM Extraction & Full-Corpus Physical Verification Report.md'
+      - 'Multimodal Ingestion Blueprint (NIM + Supabase)': 'antigravity-docs/Implementation Plan: Comprehensive Multimodal Textbook Ingestion (NVIDIA NIM Vision + Visual Assets + BGE-M3 + Supabase).md'
+      - 'Local Vision Extraction Plan': 'antigravity-docs/Implementation Plan: Complete Local Vision Extraction & RAG Pipeline for NCTB Textbooks.md'
+      - 'Bilingual Physics RAG Pipeline': 'antigravity-docs/Implementation Plan: NCTB SSC Physics Bilingual RAG Pipeline.md'
+      - 'Chemistry Pipeline Overhaul Plan': 'antigravity-docs/Ground-Truth Chemistry Ingestion Pipeline: Overhaul & Corpus Ingestion Plan.md'
+      - 'Multimodal Verification Walkthrough': 'antigravity-docs/Walkthrough: Ground-Truth Multimodal Textbook Ingestion & Verification.md'
+
+  - 'Genkit & System Architecture':
+      - 'System Architecture Report': 'antigravity-docs/SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md'
+      - 'Full Codebase Anatomy Report': 'antigravity-docs/SHERATUTOR_CODEBASE_REPORT.md'
+      - 'Google Genkit Architecture Deep Dive': 'antigravity-docs/genkit_architecture_report.md'
+      - 'SheraTutor + Genkit Integration Plan': 'antigravity-docs/sheratutor_genkit_integration_plan.md'
+      - 'Developer Hand-Off Guide (B2C)': 'antigravity-docs/Developer_Hand-Off_Guide_ SheraTutor_B2C_Web_Portal_(SSC_Phase).md'
+      - 'LLM, RAG & Vector Databases Guide': 'antigravity-docs/Python with practical experience in LLMs, RAG pipelines, vector databases, and AI orchestration.md'
+      - 'Microsoft Foundry Deep Dive': 'antigravity-docs/microsoft_foundry_deep_dive.md'
+
+  - 'Interactive Visual Explorers':
+      - 'Corpus Audit & Architecture Dashboard': 'antigravity-docs/sheratutor_docs_audit_dashboard.html'
+      - 'SheraTutor Architecture Explorer': 'antigravity-docs/sheratutor_interactive_explorer.html'
+      - 'Genkit Architecture Explorer': 'antigravity-docs/genkit_interactive_explorer.html'
+      - 'SheraTutor + Genkit Integration Explorer': 'antigravity-docs/sheratutor_genkit_integration_explorer.html'
+      - 'Microsoft Foundry Explorer': 'antigravity-docs/foundry_interactive_explorer.html'
+      - 'BoardMate AI Pitch Deck App': 'pitch/BoardMate_AI_Pitch_Deck.html'
+
+  - 'Azure Foundry Reference (63 Docs)':
+      - 'Foundry Overview': 'crawled_docs/what-is-foundry.md'
+      - 'Agents & Canvas':
+          - 'Agents Overview': 'crawled_docs/agents__overview.md'
+          - 'Agent Canvas': 'crawled_docs/agents__concepts__foundry-agent-canvas.md'
+          - 'Deploy Hosted Agent': 'crawled_docs/agents__how-to__deploy-hosted-agent.md'
+          - 'Deploy Hosted Agent Code': 'crawled_docs/agents__how-to__deploy-hosted-agent-code.md'
+          - 'Manage Task State': 'crawled_docs/agents__how-to__manage-task-state.md'
+          - 'CLI Agent Development': 'crawled_docs/agents__concepts__cli-agent-development.md'
+          - 'Toolbox Overview': 'crawled_docs/agents__concepts__toolbox-overview.md'
+          - 'Tools Governance': 'crawled_docs/agents__how-to__tools__governance.md'
+          - 'Networking Options': 'crawled_docs/agents__concepts__networking-options.md'
+          - 'Networking Deep Dive': 'crawled_docs/agents__concepts__agents-networking-deep-dive.md'
+          - 'Prompt Agent Quickstart': 'crawled_docs/agents__quickstarts__prompt-agent.md'
+          - 'What is Foundry IQ': 'crawled_docs/agents__concepts__what-is-foundry-iq.md'
+      - 'Model Router & OpenAI':
+          - 'Model Router Concepts': 'crawled_docs/openai__concepts__model-router.md'
+          - 'How Model Router Works': 'crawled_docs/openai__concepts__model-router-how-it-works.md'
+          - 'How to Use Model Router': 'crawled_docs/openai__how-to__model-router.md'
+          - 'Model Router for Agents': 'crawled_docs/openai__how-to__model-router-agents.md'
+          - 'Evaluate Model Router': 'crawled_docs/openai__how-to__evaluate-model-router.md'
+          - 'Monitor Model Router': 'crawled_docs/openai__how-to__monitor-model-router.md'
+          - "What's New in Model Router": 'crawled_docs/foundry-models__whats-new-model-router.md'
+          - 'Model Router Policy': 'crawled_docs/how-to__model-router-policy.md'
+          - 'Model Retirement Schedule': 'crawled_docs/openai__concepts__model-retirement-schedule.md'
+          - 'Model Retirements Support Policy': 'crawled_docs/openai__concepts__model-retirements.md'
+          - 'Retired Models Reference': 'crawled_docs/openai__concepts__retired-models.md'
+      - 'Foundry Models & Endpoints':
+          - 'Foundry Models Overview': 'crawled_docs/concepts__foundry-models-overview.md'
+          - 'Deployment Types': 'crawled_docs/foundry-models__concepts__deployment-types.md'
+          - 'Endpoints Reference': 'crawled_docs/foundry-models__concepts__endpoints.md'
+          - 'Claude Hosting Comparison': 'crawled_docs/foundry-models__concepts__claude-models-hosting-comparison.md'
+          - 'Models from Partners': 'crawled_docs/foundry-models__concepts__models-from-partners.md'
+          - 'Models Sold by Azure': 'crawled_docs/foundry-models__concepts__models-sold-directly-by-azure.md'
+          - 'Region Availability': 'crawled_docs/foundry-models__concepts__models-sold-directly-by-azure-region-availability.md'
+          - 'Model Migration': 'crawled_docs/foundry-models__concepts__model-migration.md'
+          - 'Model Versioning': 'crawled_docs/foundry-models__concepts__model-versions.md'
+      - 'Foundry Concepts & Architecture':
+          - 'Architecture Overview': 'crawled_docs/concepts__architecture.md'
+          - 'Capabilities': 'crawled_docs/concepts__capabilities.md'
+          - 'Capability Reference': 'crawled_docs/concepts__capability-reference.md'
+          - 'Concept Playgrounds': 'crawled_docs/concepts__concept-playgrounds.md'
+          - 'Deployments Overview': 'crawled_docs/concepts__deployments-overview.md'
+          - 'Instant Models': 'crawled_docs/concepts__instant-models.md'
+          - 'Managed Compute Overview': 'crawled_docs/concepts__managed-compute-overview.md'
+          - 'Model Benchmarks': 'crawled_docs/concepts__model-benchmarks.md'
+          - 'Manage Costs': 'crawled_docs/concepts__manage-costs.md'
+          - 'AI Red Teaming Agent': 'crawled_docs/concepts__ai-red-teaming-agent.md'
+      - 'Development & Tooling':
+          - 'SDK Overview': 'crawled_docs/how-to__develop__sdk-overview.md'
+          - 'Visual Studio Code Toolkit': 'crawled_docs/how-to__develop__get-started-projects-visual-studio-code.md'
+          - 'LangChain Hosted Agents': 'crawled_docs/how-to__develop__langchain-hosted-agents.md'
+          - 'LangChain Toolbox': 'crawled_docs/how-to__develop__langchain-toolbox.md'
+          - 'LangChain Traces': 'crawled_docs/how-to__develop__langchain-traces.md'
+          - 'Add Project Connection': 'crawled_docs/how-to__connections-add.md'
+      - 'Model Context Protocol (MCP)':
+          - 'MCP Getting Started': 'crawled_docs/mcp__get-started.md'
+          - 'Available MCP Tools': 'crawled_docs/mcp__available-tools.md'
+          - 'MCP Security Best Practices': 'crawled_docs/mcp__security-best-practices.md'
+      - 'Observability & Evaluation':
+          - 'Evaluate Agents': 'crawled_docs/observability__how-to__evaluate-agent.md'
+          - 'Trace Agent Setup': 'crawled_docs/observability__how-to__trace-agent-setup.md'
+          - 'Trace Data Handling': 'crawled_docs/observability__concepts__trace-data.md'
+      - 'Control Plane & Governance':
+          - 'Control Plane Overview': 'crawled_docs/control-plane__overview.md'
+          - 'Manage Agents in Control Plane': 'crawled_docs/control-plane__how-to-manage-agents.md'
+          - 'Enforce Model Limits': 'crawled_docs/control-plane__how-to-enforce-limits-models.md'
+          - 'Guardrails Intervention Points': 'crawled_docs/guardrails__intervention-points.md'
+      - 'Government Cloud Reference':
+          - 'Models Sold in Azure Gov': 'crawled_docs/foundry-models__concepts__models-sold-directly-by-azure-gov.md'
+          - 'Model Versioning in Gov': 'crawled_docs/foundry-models__concepts__model-versions-gov.md'
+          - 'Model Retirements in Gov': 'crawled_docs/openai__concepts__model-retirements-gov.md'
+          - 'Retirement Schedule in Gov': 'crawled_docs/openai__concepts__model-retirement-schedule-gov.md'
