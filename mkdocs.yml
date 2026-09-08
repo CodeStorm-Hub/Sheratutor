@@ -52,6 +52,9 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - admonition
   - pymdownx.details
   - pymdownx.superfences:
@@ -77,6 +80,7 @@ nav:
   - 'Overview & Vision':
       - 'Portal Home': 'index.md'
       - 'Full Project Documentation': 'SheraTutor_Full_Project_Documentation.md'
+      - 'Research Index & Facts': 'research-idea/00-README.md'
       - 'Project Overview': 'research-idea/01-project-overview.md'
       - 'Market Analysis': 'research-idea/02-market-analysis.md'
       - 'Design System & Tokens': 'research-idea/03-design-system.md'
@@ -89,6 +93,7 @@ nav:
       - 'Launch Checklist': 'LAUNCH_CHECKLIST.md'
       - 'Codebase Review & Gap Analysis': 'review/SheraTutor_Codebase_Review_and_Gap_Analysis.md'
       - 'SSC Phase Strategic Review': 'review/SSC_Phase_Technical_Review.md'
+      - 'Automated Browser Testing Plan': 'antigravity-docs/Comprehensive Automated Browser Testing Plan (Suites 1–7) Plan.md'
       - 'Automated Browser Testing Report': 'Complete_Automated_Browser_Testing_and_Persistence_Audit_Report.md'
       - 'Browser Testing Walkthrough': 'Automated Browser Testing Walkthrough (Suites 1–7).md'
       - 'Physics Live Database Audit': 'PHYSICS_AUDIT_FINDINGS.md'

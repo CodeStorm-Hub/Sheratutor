@@ -38,16 +38,18 @@ h1 {
   font-family: 'Space Mono', monospace !important;
 }
 
-/* Custom SheraTutor Hero Badge Lockup */
+/* Custom SheraTutor Hero Badge Lockup (Responsive) */
 .sheratutor-hero-badge {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
   padding: 0.35rem 0.75rem;
   border-radius: 9999px;
   background: rgba(255, 107, 87, 0.08);
   border: 1px solid rgba(255, 107, 87, 0.25);
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  max-width: 100%;
 }
 
 .badge-tag {
@@ -61,20 +63,45 @@ h1 {
 .badge-status {
   font-size: 0.65rem;
   font-weight: 700;
-  padding: 0.15rem 0.45rem;
+  padding: 0.15rem 0.5rem;
   border-radius: 9999px;
   background: rgba(35, 217, 165, 0.15);
   color: #23D9A5;
   border: 1px solid rgba(35, 217, 165, 0.3);
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
-/* Mermaid Diagram Responsive Container */
+/* Enhanced Grid Cards with Coral / Mint Accent Accents */
+.md-typeset .grid.cards > ul > li {
+  border-radius: 0.85rem;
+  border: 1px solid rgba(120, 130, 160, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  border-color: #FF6B57;
+  box-shadow: 0 8px 24px -6px rgba(255, 107, 87, 0.15);
+}
+
+/* Card Icons */
+.md-typeset .grid.cards > ul > li .twemoji {
+  color: #FF6B57;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li .twemoji {
+  color: #23D9A5;
+}
+
+/* Mermaid Diagram Responsive Container with Subtle Card Styling */
 .mermaid {
   background: transparent !important;
   display: flex;
   justify-content: center;
-  padding: 1.25rem 0;
+  padding: 1.25rem 0.5rem;
   overflow-x: auto;
   border-radius: 0.75rem;
 }
