@@ -69,7 +69,7 @@ This article summarizes the latest model router releases and major documentation
 
 ### Per-request routing metadata (preview)
 
-Chat Completions responses from model router identify the serving model and can now include preview observability metadata when the client opts in to the preview response contract. The metadata reports the routing mode, routing-trace latency, ordered model attempts, HTTP status, and returned errors. Multiple attempts can show when automatic fallback occurred for an individual request. For setup and parsing guidance, see [Monitor model router](openai__how-to__monitor-model-router.md).
+Chat Completions responses from model router identify the serving model and can now include preview observability metadata when the client opts in to the preview response contract. The metadata reports the routing mode, routing-trace latency, ordered model attempts, HTTP status, and returned errors. Multiple attempts can show when automatic fallback occurred for an individual request. For setup and parsing guidance, see [Monitor model router](openai__how-to__monitor-model-router).
 
 ### Model router expands to 32 regions
 
@@ -87,11 +87,11 @@ Model router version `2025-11-18` now supports 27 models. The routing pool adds 
 
 The routing pool removes the retired `gpt-5-chat`, `gpt-5.2-chat`, `gpt-5.3-chat`, `DeepSeek-V3.1`, and `claude-opus-4.1` models.
 
-Configuring a custom model subset is optional. If you previously configured a subset that contains any of these removed models, replace them with models from the current [supported models](openai__concepts__model-router.md) list. If you use the default routing pool, no action is required.
+Configuring a custom model subset is optional. If you previously configured a subset that contains any of these removed models, replace them with models from the current [supported models](openai__concepts__model-router) list. If you use the default routing pool, no action is required.
 
 ### Agentic routing expands to more model providers
 
-For agentic requests, model router can now select eligible open-source (OSS) and Anthropic models in addition to OpenAI models. Model and tool compatibility determine which models are eligible for each request. For more information, see [Use model router with Foundry agents](openai__how-to__model-router-agents.md).
+For agentic requests, model router can now select eligible open-source (OSS) and Anthropic models in addition to OpenAI models. Model and tool compatibility determine which models are eligible for each request. For more information, see [Use model router with Foundry agents](openai__how-to__model-router-agents).
 
 ## July 2026
 
@@ -117,7 +117,7 @@ Version `2025-11-18` of model router adds support for four new models: `gpt-5.2`
 
 ### Automatic failover
 
-Model router now includes built-in automatic failover. When a routed model experiences endpoint instability, model router transparently redirects the request to the next most appropriate model, so transient issues with any single model don't disrupt your application. Failover is enabled for default model router deployments — no additional configuration is required. For more information on the failover feature and how it works with routing mode and model subsets, see the [Model router concepts guide](openai__concepts__model-router.md).
+Model router now includes built-in automatic failover. When a routed model experiences endpoint instability, model router transparently redirects the request to the next most appropriate model, so transient issues with any single model don't disrupt your application. Failover is enabled for default model router deployments — no additional configuration is required. For more information on the failover feature and how it works with routing mode and model subsets, see the [Model router concepts guide](openai__concepts__model-router).
 
 ## November 2025
 
@@ -135,17 +135,17 @@ It also includes new features that make it more versatile and effective.
 - Model router supports **custom subsets**: you can specify which underlying models to include in routing decisions. This gives you more control over cost, compliance, and performance characteristics.
 - Model router supports **Global Standard** and **Data Zone Standard** deployment types.
 
-For more information on model router and its capabilities, see the [Model router concepts guide](openai__concepts__model-router.md).
+For more information on model router and its capabilities, see the [Model router concepts guide](openai__concepts__model-router).
 
 ## August 2025
 
 ### New version of model router (preview)
 
 - Model router now supports GPT-5 series models.
-- Model router for Microsoft Foundry is a deployable AI chat model that automatically selects the best underlying chat model to respond to a given prompt. For more information on how model router works and its advantages and limitations, see the [Model router concepts guide](openai__concepts__model-router.md). To use model router with the Completions API, follow the [How-to guide](openai__how-to__model-router.md).
+- Model router for Microsoft Foundry is a deployable AI chat model that automatically selects the best underlying chat model to respond to a given prompt. For more information on how model router works and its advantages and limitations, see the [Model router concepts guide](openai__concepts__model-router). To use model router with the Completions API, follow the [How-to guide](openai__how-to__model-router).
 
 ## May 2025
 
 ### Model router (preview)
 
-Model router for Foundry is a deployable AI chat model that automatically selects the best underlying chat model to respond to a given prompt. For more information on how model router works and its advantages and limitations, see the [Model router concepts guide](openai__concepts__model-router.md). To use model router with the Completions API, follow the [How-to guide](openai__how-to__model-router.md).
+Model router for Foundry is a deployable AI chat model that automatically selects the best underlying chat model to respond to a given prompt. For more information on how model router works and its advantages and limitations, see the [Model router concepts guide](openai__concepts__model-router). To use model router with the Completions API, follow the [How-to guide](openai__how-to__model-router).

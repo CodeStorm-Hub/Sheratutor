@@ -65,7 +65,7 @@ Model selection can make this process slow. Model router shortens that journey. 
 
 Tip
 
-Use the [Model Router Auto Evaluation toolkit](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation) to automate the comparison. Review the toolkit's [evaluation methodology](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/docs/methodology.md) to understand how it calculates and aggregates the results.
+Use the [Model Router Auto Evaluation toolkit](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation) to automate the comparison. Review the toolkit's [evaluation methodology](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/docs/methodology) to understand how it calculates and aggregates the results.
 
 ## Prerequisites
 
@@ -101,13 +101,13 @@ The following practices help make the comparison useful:
 - **Plan for human review.** Automated scores are estimates. Qualified reviewers should inspect high-impact, regulated, or domain-specific results and cases where the comparison is inconclusive.
 - **Treat small or unbalanced samples cautiously.** Add representative prompts when important categories contain too few examples or results remain uncertain.
 
-For current input schemas and dataset preparation guidance, see [Create a custom evaluation dataset](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/docs/how-to-custom-dataset.md).
+For current input schemas and dataset preparation guidance, see [Create a custom evaluation dataset](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/docs/how-to-custom-dataset).
 
 ## Run a comparison
 
-To configure your deployments and run the comparison, follow the toolkit [quickstart](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/QUICKSTART.md). You can explore the report with mock data before you connect your deployments.
+To configure your deployments and run the comparison, follow the toolkit [quickstart](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/QUICKSTART). You can explore the report with mock data before you connect your deployments.
 
-Use the repository guidance as the source of truth for current commands, input formats, judging behavior, statistical methods, pricing calculations, and report fields. For details about why the toolkit calculates its results as it does, see the [evaluation methodology](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/docs/methodology.md).
+Use the repository guidance as the source of truth for current commands, input formats, judging behavior, statistical methods, pricing calculations, and report fields. For details about why the toolkit calculates its results as it does, see the [evaluation methodology](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/docs/methodology).
 
 Record the context for each run, including:
 
@@ -124,7 +124,7 @@ A lower estimated cost doesn't justify a quality regression in an important cate
 
 Consider both workload-level and category-level results. Model distribution can also help explain why quality, cost, or latency changed by showing which underlying models handled different parts of the workload.
 
-For metric and report definitions, see [Interpret evaluation results](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/docs/how-to-interpret-results.md).
+For metric and report definitions, see [Interpret evaluation results](https://github.com/microsoft-foundry/Model-Router-Auto-Evaluation/blob/main/docs/how-to-interpret-results).
 
 ## Choose what to try next
 

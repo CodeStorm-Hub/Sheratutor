@@ -181,7 +181,7 @@ Foundry supports multiple deployment types for model hosting, grouped by data-pr
 | Regional Provisioned | Single region | Hourly reserved capacity |
 | Developer | Any Azure region (no data residency guarantee) | Pay-per-token (fine-tuned model evaluation only; 24-hour lifetime; no SLA) |
 
-For details on how to choose the right deployment type, see [Deployment types for Foundry Models](foundry-models__concepts__deployment-types.md).
+For details on how to choose the right deployment type, see [Deployment types for Foundry Models](foundry-models__concepts__deployment-types).
 
 ### Agents, evaluations, and batch processing
 
@@ -249,7 +249,7 @@ To learn more about data encryption, see [customer-managed keys for encryption w
 
 ### Data residency and compliance
 
-Foundry stores all data at rest in the designated Azure geography. Inferencing data (prompts and completions) is processed according to the deployment type: global deployments might route to any Azure region, data zone deployments stay within the US or EU zone, and standard or regional deployments process in the deployment region. For details, see [Deployment types](foundry-models__concepts__deployment-types.md). Foundry doesn't support automatic cross-region failover. If your organization requires multi-region availability, deploy separate Foundry resources in each target region and manage data synchronization and routing at the application layer. For compliance certification details, see [Azure compliance documentation](https://learn.microsoft.com/en-us/azure/compliance/).
+Foundry stores all data at rest in the designated Azure geography. Inferencing data (prompts and completions) is processed according to the deployment type: global deployments might route to any Azure region, data zone deployments stay within the US or EU zone, and standard or regional deployments process in the deployment region. For details, see [Deployment types](foundry-models__concepts__deployment-types). Foundry doesn't support automatic cross-region failover. If your organization requires multi-region availability, deploy separate Foundry resources in each target region and manage data synchronization and routing at the application layer. For compliance certification details, see [Azure compliance documentation](https://learn.microsoft.com/en-us/azure/compliance/).
 
 ## Validate architecture decisions
 

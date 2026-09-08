@@ -89,7 +89,7 @@ Use the AI Red Teaming Agent to run automated scans throughout the design, devel
 - Pre-deployment: Before deploying GenAI applications and agents to production.
 - Post-deployment: Monitor your Gen AI applications and agents after deployment with scheduled continuous red teaming runs on synthetic adversarial data.
 
-In production, we recommend implementing **safety guardrails** such as [Azure AI Content Safety filters](https://learn.microsoft.com/en-us/azure/foundry/../ai-services/content-safety/overview) or implementing safety system messages using our [templates](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/safety-system-message-templates). For agentic workflows, we recommend leveraging [Foundry Control Plane](control-plane__overview.md) to apply guardrails and govern your fleet of agents.
+In production, we recommend implementing **safety guardrails** such as [Azure AI Content Safety filters](https://learn.microsoft.com/en-us/azure/foundry/../ai-services/content-safety/overview) or implementing safety system messages using our [templates](https://learn.microsoft.com/en-us/azure/foundry/openai/concepts/safety-system-message-templates). For agentic workflows, we recommend leveraging [Foundry Control Plane](control-plane__overview) to apply guardrails and govern your fleet of agents.
 
 ## How AI Red Teaming works
 
@@ -179,7 +179,7 @@ The AI Red Teaming Agent currently supported red teaming Foundry agents with Azu
 | Connected Agent tool calls | Not Supported |
 | Computer Use tool calls | Not Supported |
 
-For a list of tools and how to connect them by using a Foundry Toolbox, see [Foundry Toolbox overview](agents__concepts__toolbox-overview.md).
+For a list of tools and how to connect them by using a Foundry Toolbox, see [Foundry Toolbox overview](agents__concepts__toolbox-overview).
 
 ## Supported attack strategies
 

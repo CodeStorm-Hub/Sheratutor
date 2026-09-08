@@ -69,7 +69,7 @@ You don't always need to create a deployment. With [instant access (preview)](ht
 
 Foundry provides two deployment options:
 
-- **Serverless API** — For Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure.md) and [select Models from partners and community](foundry-models__concepts__models-from-partners.md). This option is the preferred and most capable deployment path. It includes the standard, provisioned throughput, batch, and developer deployment types.
+- **Serverless API** — For Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure) and [select Models from partners and community](foundry-models__concepts__models-from-partners). This option is the preferred and most capable deployment path. It includes the standard, provisioned throughput, batch, and developer deployment types.
 - **Managed compute (preview)** — For open-source, partner, and custom models that run on dedicated GPU capacity that Foundry manages for you.
 
 Foundry selects the appropriate deployment option based on the model you choose.
@@ -86,13 +86,13 @@ Serverless API is **the preferred deployment option** in Foundry. It supports th
 
 ### Which models use serverless API deployments?
 
-All Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure.md) and [select Models from partners and community](foundry-models__concepts__models-from-partners.md), use serverless API deployments. Foundry Models sold by Azure include all Azure OpenAI models and selected models from top providers that are billed through your Azure subscription, covered by Azure service-level agreements, and supported by Microsoft. Models from partners and community that use serverless API deployments include Anthropic models and specific models from partners like Mistral, Cohere, and Meta.
+All Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure) and [select Models from partners and community](foundry-models__concepts__models-from-partners), use serverless API deployments. Foundry Models sold by Azure include all Azure OpenAI models and selected models from top providers that are billed through your Azure subscription, covered by Azure service-level agreements, and supported by Microsoft. Models from partners and community that use serverless API deployments include Anthropic models and specific models from partners like Mistral, Cohere, and Meta.
 
 ### Serverless API capabilities
 
 Serverless API deployments support:
 
-- **Multiple deployment types (or deployment SKUs)** — Global Standard, Data Zone Standard, Standard (single region), provisioned, batch, and more. Each type controls where data is processed and how you pay. For details, see [Deployment types for Microsoft Foundry Models](foundry-models__concepts__deployment-types.md).
+- **Multiple deployment types (or deployment SKUs)** — Global Standard, Data Zone Standard, Standard (single region), provisioned, batch, and more. Each type controls where data is processed and how you pay. For details, see [Deployment types for Microsoft Foundry Models](foundry-models__concepts__deployment-types).
 - **Data processing flexibility** — Choose regional, data zone (US, EU, or APAC), or global processing based on your compliance requirements.
 - **Content filtering** — Built-in Azure AI Content Safety filters with customizable configurations.
 - **Keyless authentication** — Microsoft Entra ID (recommended) and key-based authentication.
@@ -165,7 +165,7 @@ Instant access (preview) isn't a deployment option in this comparison. It calls 
 
 | Capability | Serverless API | Managed compute |
 | --- | --- | --- |
-| Which models can be deployed? | All Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure.md) and [select Models from partners and community](foundry-models__concepts__models-from-partners.md) | Open-source and partner models from the model catalog, NVIDIA NIM, and industry models |
+| Which models can be deployed? | All Foundry Models, including [Foundry Models sold by Azure](foundry-models__concepts__models-sold-directly-by-azure) and [select Models from partners and community](foundry-models__concepts__models-from-partners) | Open-source and partner models from the model catalog, NVIDIA NIM, and industry models |
 | Deployment resource | Foundry resource | Foundry project |
 | Requires AI Hub | No | No |
 | Data processing options | Regional, data zone, global | Global |
