@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SheraTutor Documentation Audit & GitHub Pages Publishing Architecture</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    /* Custom scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(120, 120, 140, 0.3);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(120, 120, 140, 0.5);
+    }
+    .sh-coral { color: #FF6B57; }
+    .sh-mint { color: #23D9A5; }
+    .sh-navy { color: #14182B; }
+    .bg-sh-coral { background-color: #FF6B57; }
+    .bg-sh-mint { background-color: #23D9A5; }
+    .bg-sh-navy { background-color: #14182B; }
+    .border-sh-coral { border-color: rgba(255, 107, 87, 0.3); }
+    .border-sh-mint { border-color: rgba(35, 217, 165, 0.3); }
+  </style>
+</head>
+<body class="bg-transparent text-[var(--foreground)] antialiased p-2 md:p-4">
+
+  <!-- Main Container Card -->
+  <div class="bg-[var(--card)] text-[var(--foreground)] border border-[var(--border)] rounded-2xl shadow-xl overflow-hidden max-w-7xl mx-auto flex flex-col min-h-[780px]">
+    
+    <!-- Top Header Banner -->
+    <header class="border-b border-[var(--border)] bg-gradient-to-r from-[var(--card)] via-[var(--card)] to-slate-900/10 dark:to-slate-800/30 px-6 py-5">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-3.5">
+          <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-[#14182B] to-[#1E2761] border border-white/10 flex items-center justify-center shadow-md shadow-coral-500/10">
+            <span class="text-xl font-black text-[#FF6B57]">S</span>
+            <span class="text-xl font-bold text-[#23D9A5] ml-0.5">T</span>
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <h1 class="text-xl md:text-2xl font-black tracking-tight flex items-center gap-1.5">
+                Shera<span class="text-[#FF6B57]">Tutor</span>
+                <span class="text-xs px-2 py-0.5 rounded-full font-bold uppercase tracking-wider bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">Audit Complete</span>
+              </h1>
+              <span class="hidden md:inline-block text-xs font-mono px-2 py-0.5 rounded bg-[var(--muted)] text-[var(--muted-foreground)]">docs/ v2.0</span>
+            </div>
+            <p class="text-xs md:text-sm text-[var(--muted-foreground)] mt-0.5">
+              Comprehensive Documentation Audit & GitHub Pages Publishing Architecture
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-2.5 flex-wrap">
+          <div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-[var(--border)] bg-[var(--background)] text-xs font-mono">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-[var(--muted-foreground)]">Deploy Target:</span>
+            <span class="font-semibold text-[#FF6B57]">codestorm-hub.github.io/Sheratutor/</span>
+          </div>
+          <button onclick="switchTab('blueprint')" class="px-3.5 py-1.5 rounded-lg bg-[#FF6B57] hover:bg-[#E6503D] text-white font-semibold text-xs transition shadow-sm flex items-center gap-1.5">
+            <span>Publish Blueprint</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-2.5 mt-5 pt-4 border-t border-[var(--border)]/70">
+        <div class="p-2.5 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)]">Total Files</div>
+          <div class="text-lg font-black text-[var(--foreground)] mt-0.5">113</div>
+          <div class="text-[10px] text-emerald-500 font-medium">8 Folders Scanned</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)]">Markdown Specs</div>
+          <div class="text-lg font-black text-blue-500 mt-0.5">85</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">~11,200 Total Lines</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)]">Interactive Apps</div>
+          <div class="text-lg font-black text-[#23D9A5] mt-0.5">5</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">Standalone SPAs</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)]">Brand Assets</div>
+          <div class="text-lg font-black text-purple-500 mt-0.5">14</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">SVG & Retina PNG</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)]">Mermaid Charts</div>
+          <div class="text-lg font-black text-amber-500 mt-0.5">9</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">Native Rendered</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)]">LaTeX Math Docs</div>
+          <div class="text-lg font-black text-pink-500 mt-0.5">25</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">MathJax Support</div>
+        </div>
+        <div class="p-2.5 rounded-xl bg-[var(--background)] border border-[var(--border)]">
+          <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)]">Foundry Lib</div>
+          <div class="text-lg font-black text-indigo-500 mt-0.5">63</div>
+          <div class="text-[10px] text-[var(--muted-foreground)]">Technical Guides</div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation Tabs Bar -->
+    <nav class="flex border-b border-[var(--border)] px-6 bg-[var(--card)] gap-1 overflow-x-auto text-xs font-semibold">
+      <button id="tab-btn-explorer" onclick="switchTab('explorer')" class="tab-btn active px-4 py-3 border-b-2 border-[#FF6B57] text-[#FF6B57] flex items-center gap-2 transition whitespace-nowrap">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"/></svg>
+        <span>File & Folder Explorer (113)</span>
+      </button>
+      <button id="tab-btn-comparison" onclick="switchTab('comparison')" class="tab-btn px-4 py-3 border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2 transition whitespace-nowrap">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+        <span>Engine Benchmark Matrix</span>
+      </button>
+      <button id="tab-btn-sitemap" onclick="switchTab('sitemap')" class="tab-btn px-4 py-3 border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2 transition whitespace-nowrap">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+        <span>Information Architecture</span>
+      </button>
+      <button id="tab-btn-blueprint" onclick="switchTab('blueprint')" class="tab-btn px-4 py-3 border-b-2 border-transparent text-[var(--muted-foreground)] hover:text-[var(--foreground)] flex items-center gap-2 transition whitespace-nowrap">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+        <span>Turnkey Publishing Blueprint</span>
+      </button>
+    </nav>
+
+    <!-- Tab Contents Container -->
+    <main class="p-6 flex-1 flex flex-col overflow-hidden">
+      
+      <!-- ========================================================== -->
+      <!-- TAB 1: FILE & FOLDER EXPLORER -->
+      <!-- ========================================================== -->
+      <section id="view-explorer" class="tab-view flex flex-col md:flex-row gap-5 flex-1 min-h-0">
+        
+        <!-- Left Side: Controls & File List -->
+        <div class="flex-1 flex flex-col min-w-0">
+          
+          <!-- Search & Filters -->
+          <div class="flex flex-col sm:flex-row gap-2.5 mb-4">
+            <div class="relative flex-1">
+              <input 
+                type="text" 
+                id="search-input" 
+                placeholder="Search across all 113 documents (name, title, headings, keywords)..." 
+                oninput="filterFiles()"
+                class="w-full pl-9 pr-4 py-2 bg-[var(--background)] border border-[var(--border)] rounded-xl text-xs text-[var(--foreground)] placeholder-[var(--muted-foreground)] focus:outline-none focus:ring-1 focus:ring-[#FF6B57]"
+              />
+              <svg class="w-4 h-4 absolute left-3 top-2.5 text-[var(--muted-foreground)]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+            </div>
+
+            <div class="flex gap-2">
+              <select id="filter-category" onchange="filterFiles()" class="bg-[var(--background)] border border-[var(--border)] rounded-xl px-3 py-2 text-xs text-[var(--foreground)] focus:outline-none focus:ring-1 focus:ring-[#FF6B57]">
+                <option value="all">All Folders (8)</option>
+                <option value="Core Specs & Audits">Core Specs & Audits (7)</option>
+                <option value="Architecture & Ingestion">Architecture & Ingestion (19)</option>
+                <option value="Strategy & Design">Strategy & Design (6)</option>
+                <option value="Code Audits & Gaps">Code Audits & Gaps (2)</option>
+                <option value="Pitch & Presentations">Pitch & Presentations (2)</option>
+                <option value="Brand Assets (SVG/PNG)">Brand Assets (14)</option>
+                <option value="Foundry Technical Library">Foundry Technical Library (63)</option>
+              </select>
+
+              <select id="filter-tag" onchange="filterFiles()" class="bg-[var(--background)] border border-[var(--border)] rounded-xl px-3 py-2 text-xs text-[var(--foreground)] focus:outline-none focus:ring-1 focus:ring-[#FF6B57]">
+                <option value="all">All Types</option>
+                <option value="Mermaid">Mermaid Diagrams</option>
+                <option value="Math ($)">LaTeX Math ($)</option>
+                <option value="Interactive HTML">Interactive HTML</option>
+                <option value="Table">Data Tables</option>
+                <option value="Image Asset">Logos / Icons</option>
+                <option value="Document Asset">PDF / PPTX</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Counter Bar -->
+          <div class="flex items-center justify-between text-xs text-[var(--muted-foreground)] mb-2 px-1">
+            <span id="match-counter">Showing 113 of 113 items</span>
+            <span class="text-[11px]">Click an item to inspect detailed anatomy</span>
+          </div>
+
+          <!-- Scrollable File List -->
+          <div id="file-list-container" class="flex-1 overflow-y-auto space-y-2 pr-1 max-h-[560px]">
+            <!-- Dynamically populated by JS -->
+          </div>
+        </div>
+
+        <!-- Right Side: File Inspector Pane -->
+        <div id="inspector-pane" class="w-full md:w-[420px] shrink-0 border border-[var(--border)] bg-[var(--background)] rounded-2xl p-5 flex flex-col justify-between overflow-y-auto max-h-[640px]">
+          <!-- Populated by JS on file select -->
+          <div class="text-center py-16 text-[var(--muted-foreground)]">
+            <svg class="w-12 h-12 mx-auto mb-3 opacity-40" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <p class="text-sm font-semibold">Select any document from the list</p>
+            <p class="text-xs mt-1">Review its heading hierarchy, technical role, and publishing placement.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- TAB 2: ENGINE BENCHMARK MATRIX -->
+      <!-- ========================================================== -->
+      <section id="view-comparison" class="tab-view hidden flex-1 overflow-y-auto space-y-6 max-h-[660px] pr-1">
+        
+        <!-- Highlight Recommendation Banner -->
+        <div class="p-5 rounded-2xl bg-gradient-to-r from-emerald-500/10 via-emerald-500/5 to-transparent border border-emerald-500/30 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div class="flex items-start gap-3.5">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-500 flex items-center justify-center font-black text-lg shrink-0">
+              ✓
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
+                <h3 class="font-bold text-base text-[var(--foreground)]">Recommended Choice: Material for MkDocs</h3>
+                <span class="text-xs font-bold px-2 py-0.5 rounded-full bg-emerald-500 text-white">Score: 9.8 / 10</span>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mt-1 leading-relaxed">
+                Why it wins: <strong>27 files in this corpus contain unescaped CLI angle brackets</strong> (e.g. <code>&lt;resource-name&gt;</code>). Strict MDX parsers (Docusaurus, standard Astro) fatal-crash on these unless every file is manually rewritten. Material for MkDocs handles pure Markdown flawlessly, natively renders <strong>all 9 Mermaid diagrams</strong>, renders LaTeX via MathJax, and passes HTML explorers directly into the site.
+              </p>
+            </div>
+          </div>
+          <button onclick="switchTab('blueprint')" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold whitespace-nowrap transition shadow-sm">
+            View Deployment Setup
+          </button>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="border border-[var(--border)] rounded-2xl overflow-hidden bg-[var(--background)]">
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs text-left border-collapse">
+              <thead>
+                <tr class="border-b border-[var(--border)] bg-[var(--card)] font-bold text-[var(--muted-foreground)]">
+                  <th class="p-3.5 pl-4">Engine</th>
+                  <th class="p-3.5">MDX / JSX Parser Risk</th>
+                  <th class="p-3.5">Mermaid Support</th>
+                  <th class="p-3.5">LaTeX Math</th>
+                  <th class="p-3.5">Offline Search</th>
+                  <th class="p-3.5">Interactive HTML</th>
+                  <th class="p-3.5">GitHub Actions Build</th>
+                  <th class="p-3.5 pr-4 text-right">Verdict</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-[var(--border)]">
+                <tr class="bg-emerald-500/[0.04]">
+                  <td class="p-3.5 pl-4 font-bold text-[var(--foreground)] flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                    Material for MkDocs
+                  </td>
+                  <td class="p-3.5 text-emerald-500 font-semibold">Zero Risk (CommonMark)</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Built-in (Superfences)</td>
+                  <td class="p-3.5 text-[var(--foreground)]">MathJax / KaTeX</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Instant Built-in</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Native Passthrough</td>
+                  <td class="p-3.5 text-emerald-500 font-semibold">~25s (Python 3)</td>
+                  <td class="p-3.5 pr-4 text-right font-black text-emerald-500">9.8 / 10</td>
+                </tr>
+                <tr>
+                  <td class="p-3.5 pl-4 font-bold text-[var(--foreground)] flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-blue-500"></span>
+                    VitePress (Vue 3 / Vite)
+                  </td>
+                  <td class="p-3.5 text-amber-500">Low (Markdown-it)</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Via Plugin</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Via Plugin</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Minisearch Built-in</td>
+                  <td class="p-3.5 text-[var(--foreground)]">via public/</td>
+                  <td class="p-3.5 text-[var(--foreground)]">~40s (Node 20)</td>
+                  <td class="p-3.5 pr-4 text-right font-black text-blue-500">9.1 / 10</td>
+                </tr>
+                <tr>
+                  <td class="p-3.5 pl-4 font-bold text-[var(--foreground)] flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-purple-500"></span>
+                    Starlight (Astro)
+                  </td>
+                  <td class="p-3.5 text-red-500 font-semibold">High (MDX crash on &lt;param&gt;)</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Via Astro Plugin</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Remark/Rehype</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Pagefind Built-in</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Requires Config</td>
+                  <td class="p-3.5 text-[var(--foreground)]">~45s (Node 20)</td>
+                  <td class="p-3.5 pr-4 text-right font-black text-purple-500">8.2 / 10</td>
+                </tr>
+                <tr>
+                  <td class="p-3.5 pl-4 font-bold text-[var(--foreground)] flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-orange-500"></span>
+                    Docusaurus 3 (React)
+                  </td>
+                  <td class="p-3.5 text-red-500 font-semibold">Critical (Strict JSX parser)</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Theme Plugin</td>
+                  <td class="p-3.5 text-[var(--foreground)]">KaTeX Plugin</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Plugin Required</td>
+                  <td class="p-3.5 text-[var(--foreground)]">JSX Wrapper</td>
+                  <td class="p-3.5 text-[var(--foreground)]">~85s (Node 20)</td>
+                  <td class="p-3.5 pr-4 text-right font-black text-orange-500">7.5 / 10</td>
+                </tr>
+                <tr>
+                  <td class="p-3.5 pl-4 font-bold text-[var(--foreground)] flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
+                    Fumadocs (Next.js)
+                  </td>
+                  <td class="p-3.5 text-red-500 font-semibold">High (Next.js MDX)</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Remark Plugin</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Built-in</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Orama / FlexSearch</td>
+                  <td class="p-3.5 text-[var(--foreground)]">Next.js App Route</td>
+                  <td class="p-3.5 text-[var(--foreground)]">~60s (Next export)</td>
+                  <td class="p-3.5 pr-4 text-right font-black text-indigo-500">7.8 / 10</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Deep Dive Analysis Cards -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--background)]">
+            <h4 class="font-bold text-[var(--foreground)] flex items-center gap-1.5 text-sm">
+              <span class="text-amber-500">⚠</span> The Unescaped Angle Bracket Problem
+            </h4>
+            <p class="text-[var(--muted-foreground)] mt-2 leading-relaxed">
+              27 files in <code>docs/crawled_docs/</code> and <code>docs/PHYSICS_AUDIT_FINDINGS.md</code> contain code snippets like <code>az cognitiveservices account &lt;resource-name&gt;</code>. React/MDX compilers interpret <code>&lt;resource-name&gt;</code> as an unclosed JSX tag and throw fatal syntax errors during static compilation. MkDocs parses standard CommonMark and does not treat them as JSX.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--background)]">
+            <h4 class="font-bold text-[var(--foreground)] flex items-center gap-1.5 text-sm">
+              <span class="text-[#23D9A5]">⚡</span> 5 Interactive Single-Page Web Apps
+            </h4>
+            <p class="text-[var(--muted-foreground)] mt-2 leading-relaxed">
+              SheraTutor includes 5 complex standalone HTML applications (architecture visualizer, Genkit explorer, Foundry explorer, and pitch deck). In MkDocs, these HTML files reside directly in the docs tree and are statically copied as standalone web pages with zero code modifications or build step wrapping.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-xl border border-[var(--border)] bg-[var(--background)]">
+            <h4 class="font-bold text-[var(--foreground)] flex items-center gap-1.5 text-sm">
+              <span class="text-[#FF6B57]">🎨</span> Native SheraTutor Design System
+            </h4>
+            <p class="text-[var(--muted-foreground)] mt-2 leading-relaxed">
+              Material for MkDocs allows complete CSS token overriding using CSS variables. We inject SheraTutor's exact brand colors (Ink Navy <code>#14182B</code>, Coral <code>#FF6B57</code>, Mint <code>#23D9A5</code>) and Google Fonts (<code>Baloo 2</code> for headlines, <code>Inter</code> for body, <code>Space Mono</code> for code tags) cleanly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- TAB 3: INFORMATION ARCHITECTURE & SITEMAP -->
+      <!-- ========================================================== -->
+      <section id="view-sitemap" class="tab-view hidden flex-1 overflow-y-auto space-y-5 max-h-[660px] pr-1">
+        
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="font-bold text-base text-[var(--foreground)]">6-Tier Information Architecture</h3>
+            <p class="text-xs text-[var(--muted-foreground)] mt-0.5">How all 113 files map into a clean, intuitive top-level navigation bar</p>
+          </div>
+          <span class="text-xs font-mono px-2.5 py-1 rounded-lg bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">mkdocs.yml navigation tree</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          
+          <!-- Section 1 -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)] flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-6 h-6 rounded-lg bg-blue-500/10 text-blue-500 font-bold flex items-center justify-center text-xs">1</span>
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Overview & Vision</h4>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">Core product thesis, business models, market sizing, and brand design tokens.</p>
+              <ul class="space-y-1.5 text-xs text-[var(--muted-foreground)] font-mono">
+                <li class="flex items-center gap-1.5"><span class="text-blue-500">•</span> index.md (Portal Home)</li>
+                <li class="flex items-center gap-1.5"><span class="text-blue-500">•</span> SheraTutor_Full_Project_Documentation.md</li>
+                <li class="flex items-center gap-1.5"><span class="text-blue-500">•</span> 01-project-overview.md</li>
+                <li class="flex items-center gap-1.5"><span class="text-blue-500">•</span> 02-market-analysis.md</li>
+                <li class="flex items-center gap-1.5"><span class="text-blue-500">•</span> 03-design-system.md</li>
+                <li class="flex items-center gap-1.5"><span class="text-blue-500">•</span> 04-tech-stack-and-ai.md</li>
+                <li class="flex items-center gap-1.5"><span class="text-blue-500">•</span> 05-business-model.md</li>
+                <li class="flex items-center gap-1.5"><span class="text-blue-500">•</span> BoardMate_AI_Pitch_Deck.html</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[var(--border)] text-[11px] text-blue-400 font-semibold">8 Primary Documents</div>
+          </div>
+
+          <!-- Section 2 -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)] flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-6 h-6 rounded-lg bg-amber-500/10 text-amber-500 font-bold flex items-center justify-center text-xs">2</span>
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Specifications & Audits</h4>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">IEEE SRS, launch readiness checklists, gap analysis, and browser testing suites.</p>
+              <ul class="space-y-1.5 text-xs text-[var(--muted-foreground)] font-mono">
+                <li class="flex items-center gap-1.5"><span class="text-amber-500">•</span> Software Requirements (SRS)</li>
+                <li class="flex items-center gap-1.5"><span class="text-amber-500">•</span> LAUNCH_CHECKLIST.md</li>
+                <li class="flex items-center gap-1.5"><span class="text-amber-500">•</span> Codebase Review & Gap Analysis</li>
+                <li class="flex items-center gap-1.5"><span class="text-amber-500">•</span> SSC Phase Technical Review</li>
+                <li class="flex items-center gap-1.5"><span class="text-amber-500">•</span> Automated Browser Testing Report</li>
+                <li class="flex items-center gap-1.5"><span class="text-amber-500">•</span> Browser Testing Walkthrough</li>
+                <li class="flex items-center gap-1.5"><span class="text-amber-500">•</span> PHYSICS_AUDIT_FINDINGS.md</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[var(--border)] text-[11px] text-amber-400 font-semibold">7 Core System Specs</div>
+          </div>
+
+          <!-- Section 3 -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)] flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-6 h-6 rounded-lg bg-emerald-500/10 text-emerald-500 font-bold flex items-center justify-center text-xs">3</span>
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Ingestion & RAG Pipelines</h4>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">57 NCTB textbook catalog, Vision LLM extraction, chemistry overhauls, and RAG.</p>
+              <ul class="space-y-1.5 text-xs text-[var(--muted-foreground)] font-mono">
+                <li class="flex items-center gap-1.5"><span class="text-emerald-500">•</span> NCTB Textbook Corpus Report (57 books)</li>
+                <li class="flex items-center gap-1.5"><span class="text-emerald-500">•</span> End-to-End RAG Ingestion Report</li>
+                <li class="flex items-center gap-1.5"><span class="text-emerald-500">•</span> Multimodal Ingestion (NIM + Supabase)</li>
+                <li class="flex items-center gap-1.5"><span class="text-emerald-500">•</span> Complete Local Vision Extraction Plan</li>
+                <li class="flex items-center gap-1.5"><span class="text-emerald-500">•</span> Bilingual Physics RAG Pipeline</li>
+                <li class="flex items-center gap-1.5"><span class="text-emerald-500">•</span> Chemistry Pipeline Overhaul</li>
+                <li class="flex items-center gap-1.5"><span class="text-emerald-500">•</span> Multimodal Verification Walkthrough</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[var(--border)] text-[11px] text-emerald-400 font-semibold">7 Ingestion Engineering Docs</div>
+          </div>
+
+          <!-- Section 4 -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)] flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-6 h-6 rounded-lg bg-purple-500/10 text-purple-500 font-bold flex items-center justify-center text-xs">4</span>
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Genkit & System Architecture</h4>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">Next.js 16 App Router, React 19, Supabase Postgres 17, and Google Genkit AI flows.</p>
+              <ul class="space-y-1.5 text-xs text-[var(--muted-foreground)] font-mono">
+                <li class="flex items-center gap-1.5"><span class="text-purple-500">•</span> System Architecture Report</li>
+                <li class="flex items-center gap-1.5"><span class="text-purple-500">•</span> Full Codebase Report</li>
+                <li class="flex items-center gap-1.5"><span class="text-purple-500">•</span> Google Genkit Architecture Deep Dive</li>
+                <li class="flex items-center gap-1.5"><span class="text-purple-500">•</span> SheraTutor + Genkit Integration Plan</li>
+                <li class="flex items-center gap-1.5"><span class="text-purple-500">•</span> Developer Hand-Off Guide (B2C)</li>
+                <li class="flex items-center gap-1.5"><span class="text-purple-500">•</span> Practical LLM, RAG & Vector Guide</li>
+                <li class="flex items-center gap-1.5"><span class="text-purple-500">•</span> Microsoft Foundry Deep Dive</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[var(--border)] text-[11px] text-purple-400 font-semibold">7 Architecture Blueprints</div>
+          </div>
+
+          <!-- Section 5 -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)] flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-6 h-6 rounded-lg bg-[#23D9A5]/15 text-[#23D9A5] font-bold flex items-center justify-center text-xs">5</span>
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Interactive Visual Explorers</h4>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">Single-page interactive visualizations embedded directly in the docs portal.</p>
+              <ul class="space-y-1.5 text-xs text-[var(--muted-foreground)] font-mono">
+                <li class="flex items-center gap-1.5"><span class="text-[#23D9A5]">⚡</span> SheraTutor Architecture Explorer</li>
+                <li class="flex items-center gap-1.5"><span class="text-[#23D9A5]">⚡</span> Genkit Architecture Explorer</li>
+                <li class="flex items-center gap-1.5"><span class="text-[#23D9A5]">⚡</span> SheraTutor + Genkit Integration</li>
+                <li class="flex items-center gap-1.5"><span class="text-[#23D9A5]">⚡</span> Microsoft Foundry Explorer</li>
+                <li class="flex items-center gap-1.5"><span class="text-[#23D9A5]">⚡</span> BoardMate AI Pitch Deck App</li>
+                <li class="flex items-center gap-1.5"><span class="text-[#23D9A5]">📄</span> Whitepaper PDF & PPTX Deck</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[var(--border)] text-[11px] text-[#23D9A5] font-semibold">5 Standalone Interactive Web Apps</div>
+          </div>
+
+          <!-- Section 6 -->
+          <div class="border border-[var(--border)] rounded-xl p-4 bg-[var(--background)] flex flex-col justify-between">
+            <div>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="w-6 h-6 rounded-lg bg-indigo-500/10 text-indigo-500 font-bold flex items-center justify-center text-xs">6</span>
+                <h4 class="font-bold text-sm text-[var(--foreground)]">Azure Foundry Reference</h4>
+              </div>
+              <p class="text-xs text-[var(--muted-foreground)] mb-3">Comprehensive 63-document technical reference categorized across 10 sub-domains.</p>
+              <ul class="space-y-1.5 text-xs text-[var(--muted-foreground)] font-mono">
+                <li class="flex items-center gap-1.5"><span class="text-indigo-500">•</span> Agents & Canvas (12 docs)</li>
+                <li class="flex items-center gap-1.5"><span class="text-indigo-500">•</span> Model Router & OpenAI (11 docs)</li>
+                <li class="flex items-center gap-1.5"><span class="text-indigo-500">•</span> Foundry Models & Endpoints (11 docs)</li>
+                <li class="flex items-center gap-1.5"><span class="text-indigo-500">•</span> Architecture & Concepts (11 docs)</li>
+                <li class="flex items-center gap-1.5"><span class="text-indigo-500">•</span> Tooling & SDKs (7 docs)</li>
+                <li class="flex items-center gap-1.5"><span class="text-indigo-500">•</span> MCP Protocols & Tools (3 docs)</li>
+                <li class="flex items-center gap-1.5"><span class="text-indigo-500">•</span> Observability & Traces (3 docs)</li>
+                <li class="flex items-center gap-1.5"><span class="text-indigo-500">•</span> Governance & Guardrails (4 docs)</li>
+              </ul>
+            </div>
+            <div class="mt-4 pt-3 border-t border-[var(--border)] text-[11px] text-indigo-400 font-semibold">63 Reference Documents</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ========================================================== -->
+      <!-- TAB 4: TURNKEY PUBLISHING BLUEPRINT -->
+      <!-- ========================================================== -->
+      <section id="view-blueprint" class="tab-view hidden flex-1 overflow-y-auto space-y-6 max-h-[660px] pr-1">
+        
+        <!-- Checklist & Status -->
+        <div class="p-5 rounded-2xl border border-[var(--border)] bg-[var(--background)]">
+          <h3 class="font-bold text-sm text-[var(--foreground)] mb-3 flex items-center gap-2">
+            <span class="w-5 h-5 rounded-full bg-emerald-500 text-white flex items-center justify-center text-xs font-bold">✓</span>
+            5-Minute GitHub Pages Deployment Checklist
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-[var(--card)] cursor-pointer">
+              <input type="checkbox" checked class="rounded text-[#FF6B57] focus:ring-0">
+              <span><strong>Step 1:</strong> Add <code>mkdocs.yml</code> configuration to repository root</span>
+            </label>
+            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-[var(--card)] cursor-pointer">
+              <input type="checkbox" checked class="rounded text-[#FF6B57] focus:ring-0">
+              <span><strong>Step 2:</strong> Add brand styling at <code>docs/stylesheets/sheratutor.css</code></span>
+            </label>
+            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-[var(--card)] cursor-pointer">
+              <input type="checkbox" checked class="rounded text-[#FF6B57] focus:ring-0">
+              <span><strong>Step 3:</strong> Create GitHub Action <code>.github/workflows/deploy-docs.yml</code></span>
+            </label>
+            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-[var(--card)] cursor-pointer">
+              <input type="checkbox" class="rounded text-[#FF6B57] focus:ring-0">
+              <span><strong>Step 4:</strong> In GitHub Settings &gt; Pages, set Source to <strong>GitHub Actions</strong></span>
+            </label>
+            <label class="flex items-center gap-2.5 p-2 rounded-lg hover:bg-[var(--card)] cursor-pointer sm:col-span-2">
+              <input type="checkbox" class="rounded text-[#FF6B57] focus:ring-0">
+              <span><strong>Step 5:</strong> Push commits &mdash; live at <code>https://codestorm-hub.github.io/Sheratutor/</code></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Code Snippet Switcher -->
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <div class="flex gap-2">
+              <button onclick="switchSnippet('mkdocs')" id="btn-snip-mkdocs" class="snip-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-[#FF6B57] text-white">mkdocs.yml</button>
+              <button onclick="switchSnippet('action')" id="btn-snip-action" class="snip-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">deploy-docs.yml (GitHub Action)</button>
+              <button onclick="switchSnippet('css')" id="btn-snip-css" class="snip-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">sheratutor.css (Brand Tokens)</button>
+              <button onclick="switchSnippet('index')" id="btn-snip-index" class="snip-btn px-3 py-1.5 rounded-lg text-xs font-bold bg-[var(--background)] border border-[var(--border)] text-[var(--muted-foreground)]">docs/index.md (Home)</button>
+            </div>
+            <button onclick="copyCurrentSnippet()" class="px-3 py-1.5 rounded-lg bg-[var(--card)] border border-[var(--border)] text-xs font-semibold text-[var(--foreground)] hover:bg-[var(--muted)] flex items-center gap-1.5 transition">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"/></svg>
+              <span id="copy-btn-text">Copy Code</span>
+            </button>
+          </div>
+
+          <!-- Code Box -->
+          <pre id="code-display" class="p-4 rounded-xl bg-slate-950 text-slate-200 font-mono text-xs overflow-x-auto border border-slate-800 leading-relaxed max-h-[440px]"></pre>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- Footer Status -->
+    <footer class="border-t border-[var(--border)] px-6 py-3 bg-[var(--card)] text-xs text-[var(--muted-foreground)] flex items-center justify-between">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+        <span>SheraTutor Documentation Corpus Physical Audit &bull; 113 Files Verified</span>
+      </div>
+      <div>Repository: <code class="font-mono text-[11px] text-[var(--foreground)]">CodeStorm-Hub/Sheratutor</code></div>
+    </footer>
+
+  </div>
+
+  <!-- JavaScript Application Logic -->
+  <script>
+    const allFiles = [{"filename": "Automated Browser Testing Walkthrough (Suites 1\u20137).md", "folder": ".", "category": "Core Specs & Audits", "badgeClass": "bg-blue-500/10 text-blue-400 border-blue-500/20", "size": 5165, "lines": 57, "ext": ".md", "title": "Automated Browser Testing Walkthrough (Suites 1\u20137)", "snippet": "An end-to-end automated browser testing suite was executed against the live Next.js development server (`http://localhost:3001`) using **Chrome DevTools MCP**, **`next-dev-loop`**, and **`next-devtools` MCP** with the authenticated test user account ", "h2s": ["\ud83d\udcca Summary of Test Results", "\ud83d\udd0d Detailed Suite Findings"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "Complete_Automated_Browser_Testing_and_Persistence_Audit_Report.md", "folder": ".", "category": "Core Specs & Audits", "badgeClass": "bg-blue-500/10 text-blue-400 border-blue-500/20", "size": 12883, "lines": 193, "ext": ".md", "title": "Complete Automated Browser Testing & Persistence Audit Report", "snippet": "**Application**: SheraTutor Web Application (`web/`)", "h2s": ["1. Executive Summary", "2. Integrated Tooling & Testing Architecture", "3. Inventory of Errors, Timeouts & Runtime Friction Points", "4. Suite-by-Suite Execution & Verification Matrix", "5. Post-Test Persistence & Revisit Audit", "6. Next-DevTools MCP Diagnostic Health Check", "7. Actionable Recommendations"], "tags": ["Mermaid", "Math ($)", "Table"], "has_mermaid": true, "has_math": true}, {"filename": "LAUNCH_CHECKLIST.md", "folder": ".", "category": "Core Specs & Audits", "badgeClass": "bg-blue-500/10 text-blue-400 border-blue-500/20", "size": 20551, "lines": 276, "ext": ".md", "title": "SheraTutor \u2014 Launch Checklist", "snippet": "**Priority:** `P0` blocker \u00b7 `P1` needed for a credible launch \u00b7 `P2` fast-follow", "h2s": ["0. TL;DR decisions still open", "1. Domain cutover to `sheratutor.tech` \u2014 P0 / A", "2. Email infrastructure (Zoho) \u2014 P0 / A", "3. Waitlist form \u2014 email required, phone optional \u2014 P1 / A", "4. Legal / compliance \u2014 P0 / A", "5. Analytics & waitlist ops \u2014 P0 / A", "6. Anti-abuse on the public form \u2014 P1 / A", "7. SEO / social / metadata \u2014 P1 / A"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "NCTB_Class_9_10_Textbook_Corpus_Complete_Report.md", "folder": ".", "category": "Core Specs & Audits", "badgeClass": "bg-blue-500/10 text-blue-400 border-blue-500/20", "size": 22477, "lines": 250, "ext": ".md", "title": "NCTB Class 9\u201310 (SSC Academic Year 2026) Textbooks: Complete Ingestion & Corpus Audit Report", "snippet": "**Author:** AI Research & Engineering Systems", "h2s": ["Executive Summary", "1. Academic & Pedagogical Classification", "2. Exhaustive Catalog of All 57 Textbook PDFs", "3. Detailed Discipline Complexity Profiles & Ingestion Challenges", "4. Technical Architecture: Database Schema & Chunk Storage", "5. Proven End-to-End Status: The Physics Vertical Slice", "6. Execution Roadmap for Scaling from 1 Book to All 57 Books", "7. Compliance & Intellectual Property Checklist"], "tags": ["Mermaid", "Math ($)", "Table"], "has_mermaid": true, "has_math": true}, {"filename": "PHYSICS_AUDIT_FINDINGS.md", "folder": ".", "category": "Core Specs & Audits", "badgeClass": "bg-blue-500/10 text-blue-400 border-blue-500/20", "size": 19146, "lines": 267, "ext": ".md", "title": "NCTB SSC Physics: Codebase, Live Database & Comprehensive Browser UI/UX Audit Findings", "snippet": "**Date:** 2026-08-23", "h2s": ["1. Executive Summary", "2. Five-Stage Pipeline Implementation & Architecture", "3. Live Database Verification Metrics", "4. Browser Automation & Page-by-Page Testing Results", "5. Comprehensive Summary of Identified Issues", "6. Actionable Recommendations & Implementation Plan (Physics Phase)"], "tags": ["Mermaid", "Math ($)", "Table"], "has_mermaid": true, "has_math": true}, {"filename": "SheraTutor_Full_Project_Documentation.md", "folder": ".", "category": "Core Specs & Audits", "badgeClass": "bg-blue-500/10 text-blue-400 border-blue-500/20", "size": 21001, "lines": 231, "ext": ".md", "title": "SheraTutor \u2014 Full Project Documentation", "snippet": "**\"SheraTutor, for Shera Students.\"**", "h2s": ["1. Vision & Mission", "2. Product Overview", "3. Features", "4. Technology Stack", "5. AI Model Strategy \u2014 Building the \"Super AI Tutor\"", "6. Market Size & Opportunity", "7. Business Model", "8. Roadmap (Bangladesh Phase)"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "SheraTutor_Software_Requirements_Specification.md", "folder": ".", "category": "Core Specs & Audits", "badgeClass": "bg-blue-500/10 text-blue-400 border-blue-500/20", "size": 25637, "lines": 560, "ext": ".md", "title": "Software Requirements Specification (SRS)", "snippet": "**Document Standard:** IEEE Std 830-1998 / ISO/IEC/IEEE 29148", "h2s": ["SheraTutor \u2014 AI-Powered Board Examiner & Learning Platform", "Executive Summary & Document Control", "1. Introduction", "2. Overall Description", "3. External Interface Requirements", "4. Detailed Functional Requirements (FR)", "5. Non-Functional Requirements (NFR)", "6. System Architecture & Entity-Relationship Model"], "tags": ["Mermaid", "Table"], "has_mermaid": true, "has_math": false}, {"filename": "icon-appstore-fullbleed.png", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 88286, "lines": 0, "ext": ".png", "title": "icon-appstore-fullbleed.png", "snippet": "Binary/Asset file (.png)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "icon-appstore-fullbleed.svg", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 1623, "lines": 0, "ext": ".svg", "title": "icon-appstore-fullbleed.svg", "snippet": "Binary/Asset file (.svg)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "icon-badge.png", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 110748, "lines": 0, "ext": ".png", "title": "icon-badge.png", "snippet": "Binary/Asset file (.png)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "icon-badge.svg", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 1853, "lines": 0, "ext": ".svg", "title": "icon-badge.svg", "snippet": "Binary/Asset file (.svg)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-footer-light.png", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 22611, "lines": 0, "ext": ".png", "title": "logo-footer-light.png", "snippet": "Binary/Asset file (.png)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-footer-light.svg", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 1740, "lines": 0, "ext": ".svg", "title": "logo-footer-light.svg", "snippet": "Binary/Asset file (.svg)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-horizontal-dark-tagline.png", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 38336, "lines": 0, "ext": ".png", "title": "logo-horizontal-dark-tagline.png", "snippet": "Binary/Asset file (.png)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-horizontal-dark-tagline.svg", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 1818, "lines": 0, "ext": ".svg", "title": "logo-horizontal-dark-tagline.svg", "snippet": "Binary/Asset file (.svg)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-horizontal-dark.png", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 26297, "lines": 0, "ext": ".png", "title": "logo-horizontal-dark.png", "snippet": "Binary/Asset file (.png)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-horizontal-dark.svg", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 1603, "lines": 0, "ext": ".svg", "title": "logo-horizontal-dark.svg", "snippet": "Binary/Asset file (.svg)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-horizontal-light-tagline.png", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 38365, "lines": 0, "ext": ".png", "title": "logo-horizontal-light-tagline.png", "snippet": "Binary/Asset file (.png)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-horizontal-light-tagline.svg", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 1818, "lines": 0, "ext": ".svg", "title": "logo-horizontal-light-tagline.svg", "snippet": "Binary/Asset file (.svg)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-horizontal-light.png", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 26874, "lines": 0, "ext": ".png", "title": "logo-horizontal-light.png", "snippet": "Binary/Asset file (.png)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "logo-horizontal-light.svg", "folder": "assets", "category": "Brand Assets (SVG/PNG)", "badgeClass": "bg-cyan-500/10 text-cyan-400 border-cyan-500/20", "size": 1603, "lines": 0, "ext": ".svg", "title": "logo-horizontal-light.svg", "snippet": "Binary/Asset file (.svg)", "h2s": [], "tags": ["Image Asset"], "has_mermaid": false, "has_math": false}, {"filename": "agents__concepts__agents-networking-deep-dive.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 19135, "lines": 242, "ext": ".md", "title": "Deep dive into Foundry Agent Service networking - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Agents networking deep dive | URL: agents/concepts/agents-networking-deep-dive --\u003e", "h2s": ["Network architecture overview", "Key concepts", "How traffic flows", "Subnet sizing and IP allocation", "Prompt agents networking behavior", "VNet peering and IP overlap", "Monitor IP usage and detect exhaustion", "Quick reference"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "agents__concepts__cli-agent-development.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 11191, "lines": 184, "ext": ".md", "title": "Agent development with the Azure Developer CLI - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Overview | Category: Developer tools and integrations/Azure Developer CLI/Overview | URL: agents/concepts/cli-agent-development --\u003e", "h2s": ["The developer journey", "Agent types", "Configuration files", "Where the CLI runs", "Protocols", "Sessions and conversations", "Resources on a Foundry project", "Evaluate and improve an agent"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "agents__concepts__foundry-agent-canvas.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 8130, "lines": 112, "ext": ".md", "title": "What is Microsoft Foundry Canvas? - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Foundry Agent Canvas | Category: Developer tools and integrations/Coding agents/Foundry Agent Canvas | URL: agents/concepts/foundry-agent-canvas --\u003e", "h2s": ["How the canvas fits your workflow", "What you can do with the canvas", "Install Microsoft Foundry Canvas", "How agent building works"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "agents__concepts__networking-options.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 14440, "lines": 154, "ext": ".md", "title": "Networking options for Foundry Agent Service - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Networking Options and Isolation | URL: agents/concepts/networking-options --\u003e", "h2s": ["Default networking behavior", "Networking options", "Networking options by scenario", "Bring-your-own virtual network requirements", "Hosted agents compared to prompt agents"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "agents__concepts__toolbox-overview.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 13432, "lines": 187, "ext": ".md", "title": "What is Toolbox in Microsoft Foundry? - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Add tools and knowledge with Toolbox | Category: Get started/What do you want to build?/Add tools and knowledge with Toolbox | URL: agents/concepts/toolbox-overview --\u003e", "h2s": ["Why use a toolbox?", "The tool lifecycle - Build, Discover, Consume, and Govern", "Key capabilities", "Supported tools", "Get started"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "agents__concepts__what-is-foundry-iq.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 10543, "lines": 153, "ext": ".md", "title": "What is Foundry IQ? - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: What is Foundry IQ | URL: agents/concepts/what-is-foundry-iq --\u003e", "h2s": ["Capabilities", "Components", "Workflow", "Relationship to Fabric IQ and Work IQ", "Get started", "Connect your Foundry IQ knowledge base to a Microsoft Copilot Studio agent"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "agents__how-to__deploy-hosted-agent-code.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 44821, "lines": 971, "ext": ".md", "title": "Deploy a hosted agent from source code - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Host an existing agent | Category: Get started/What do you want to build?/Host an existing agent | URL: agents/how-to/deploy-hosted-agent-code --\u003e", "h2s": ["Prerequisites", "Deployment lifecycle", "Choose how dependencies are resolved", "Deploy using the Azure Developer CLI or VS Code", "Deploy from source code", "Deploy using the REST API", "Package the zip manually", "Troubleshooting"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "agents__how-to__deploy-hosted-agent.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 37356, "lines": 879, "ext": ".md", "title": "Deploy a hosted agent - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Deploy hosted agent | URL: agents/how-to/deploy-hosted-agent --\u003e", "h2s": ["Deployment lifecycle", "Prerequisites", "Container requirements", "Package and test your agent locally", "Deploy using the Azure Developer CLI or VS Code", "Deploy using the Python SDK", "Deploy using the JavaScript/TypeScript SDK", "Deploy using the REST API"], "tags": ["Math ($)", "Table", "Callout"], "has_mermaid": false, "has_math": true}, {"filename": "agents__how-to__manage-task-state.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 7961, "lines": 157, "ext": ".md", "title": "Manage state for long-running agents (preview) - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Manage task state durable agents | URL: agents/how-to/manage-task-state --\u003e", "h2s": ["Two layers of state", "Use task metadata for watermarks", "Store bulk state in the Foundry state store", "Back a framework checkpointer", "Keep inputs small"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "agents__how-to__tools__governance.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 12164, "lines": 225, "ext": ".md", "title": "Govern MCP Tools by Using an AI Gateway - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Govern MCP tools with AI gateway | URL: agents/how-to/tools/governance --\u003e", "h2s": ["Prerequisites", "Key benefits", "Govern a tool", "Verify that governance is working", "Security considerations", "Troubleshooting", "Limitations"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "agents__overview.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 17615, "lines": 219, "ext": ".md", "title": "What is Microsoft Foundry Agent Service? - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Foundry Agent Service Overview | URL: agents/overview --\u003e", "h2s": ["Agent Service at a glance", "Choose how to build", "Agent types", "Model support", "Tools and toolboxes", "Development lifecycle", "Enterprise capabilities", "Publishing and sharing"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "agents__quickstarts__prompt-agent.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 19809, "lines": 511, "ext": ".md", "title": "Quickstart: Create a prompt agent - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Build a prompt agent | Category: Get started/What do you want to build?/Build a prompt agent | URL: agents/quickstarts/prompt-agent --\u003e", "h2s": ["Prerequisites", "Set environment variables", "Install packages and authenticate", "Create a prompt agent", "Chat with the agent", "Clean up resources"], "tags": ["Math ($)"], "has_mermaid": false, "has_math": true}, {"filename": "concepts__ai-red-teaming-agent.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 22680, "lines": 241, "ext": ".md", "title": "AI Red Teaming Agent - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: AI Red Teaming Agent | URL: concepts/ai-red-teaming-agent --\u003e", "h2s": ["When to use AI Red Teaming Agent", "How AI Red Teaming works", "Supported risk categories", "Agentic risks", "Supported attack strategies", "Known limitations of AI Red Teaming Agent", "Learn more"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "concepts__architecture.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 20592, "lines": 262, "ext": ".md", "title": "Microsoft Foundry architecture - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Service architecture | URL: concepts/architecture --\u003e", "h2s": ["When to use this architecture", "Azure AI resource types and providers", "Foundry resource hierarchy", "Security-driven separation of concerns", "Monitoring and observability", "Computing infrastructure", "Data storage", "Validate architecture decisions"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "concepts__capabilities.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 9174, "lines": 97, "ext": ".md", "title": "Microsoft Foundry product and capability map - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Product and capability map | Category: Product and capability map | URL: concepts/capabilities --\u003e", "h2s": ["Start with your goal", "Major products and capabilities"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "concepts__capability-reference.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 18204, "lines": 238, "ext": ".md", "title": "Microsoft Foundry capability reference - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Capability reference | Category: Capability reference | URL: concepts/capability-reference --\u003e", "h2s": ["Build surfaces and developer tools", "Models", "Agents", "Tools", "Knowledge and retrieval", "Observability", "Evaluation and optimization", "Trust and safety"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "concepts__concept-playgrounds.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 24278, "lines": 351, "ext": ".md", "title": "Microsoft Foundry Playgrounds - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Playgrounds and quick evaluation | Category: Developer tools and integrations/Playgrounds and quick evaluation | URL: concepts/concept-playgrounds --\u003e", "h2s": ["Prerequisites", "Highlights of the Foundry playgrounds experience", "Summary of playground capabilities", "Why use playgrounds before production", "Open in VS Code capability", "Agents playground", "Model playground", "Video playground"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "concepts__deployments-overview.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 12603, "lines": 179, "ext": ".md", "title": "Deployment overview for Microsoft Foundry Models - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Overview | Category: Models/Offers, deployment types, and pricing/Overview | URL: concepts/deployments-overview --\u003e", "h2s": ["Deployment options", "Serverless API", "Managed compute deployment (preview)", "Deployment option comparison"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "concepts__foundry-models-overview.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 28648, "lines": 318, "ext": ".md", "title": "Microsoft Foundry Models overview - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Overview | Category: Models/Overview | URL: concepts/foundry-models-overview --\u003e", "h2s": ["Models sold by Azure", "Models from partners and community", "Choosing between models sold by Azure and models from partners and community", "Overview of model catalog capabilities", "Model deployment options: managed compute and serverless deployments", "Managed compute", "Serverless deployments", "Regional availability for Foundry Models"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "concepts__instant-models.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 17626, "lines": 388, "ext": ".md", "title": "Instant access to models in Microsoft Foundry (preview) - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Instant access models (preview) | Category: Models/Offers, deployment types, and pricing/Instant access models (preview) | URL: concepts/instant-models --\u003e", "h2s": ["Prerequisites", "Start using models instantly", "Playground for instant access models", "Supported models", "When to use instant access vs. deployments", "Model versions", "How quota is consumed", "Enterprise controls"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "concepts__manage-costs.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 30736, "lines": 459, "ext": ".md", "title": "Plan and Manage Costs - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Plan and manage costs | URL: concepts/manage-costs --\u003e", "h2s": ["Prerequisites", "Estimate costs before using Foundry", "Validate your cost plan before rollout", "Costs associated with Foundry", "Understand billing models for Foundry", "Understand the billing model for Foundry Models", "Monitor costs", "Monitor in Foundry portal"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "concepts__managed-compute-overview.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 19096, "lines": 234, "ext": ".md", "title": "Managed compute in Microsoft Foundry - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Managed compute (preview) | Category: Models/Offers, deployment types, and pricing/Managed compute (preview) | URL: concepts/managed-compute-overview --\u003e", "h2s": ["Where managed compute fits in Foundry", "Key concepts", "Supported models", "Inference endpoints", "Scaling", "Billing, quota, and deployment scopes", "Access control", "Limitations"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "concepts__model-benchmarks.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 25088, "lines": 282, "ext": ".md", "title": "Model benchmarks and leaderboards in Microsoft Foundry - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Model leaderboards | Category: Models/Explore Foundry Models/Benchmark models/Model leaderboards | URL: concepts/model-benchmarks --\u003e", "h2s": ["Model benchmarking scope", "Interpret leaderboard results", "Quality benchmarks of language models", "Safety benchmarks of language models", "Performance benchmarks of language models", "Cost benchmarks of language models", "Scenario leaderboard benchmarking", "Quality benchmarks of embedding models"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "control-plane__how-to-enforce-limits-models.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 8207, "lines": 141, "ext": ".md", "title": "Enforce Token Limits for Models - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Enforce token limits | URL: control-plane/how-to-enforce-limits-models --\u003e", "h2s": ["Prerequisites", "Understand AI Gateway", "Configure token limits", "Understand quota windows", "Verify enforcement", "Adjust limits", "Troubleshoot"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "control-plane__how-to-manage-agents.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 18836, "lines": 299, "ext": ".md", "title": "Manage agents at scale in Microsoft Foundry Control Plane - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Manage Agents at Scale | URL: control-plane/how-to-manage-agents --\u003e", "h2s": ["Prerequisites", "Agent inventory", "Supported agent platforms", "Observability of agents", "Lifecycle operations", "Troubleshooting"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "control-plane__overview.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 15252, "lines": 211, "ext": ".md", "title": "What is Microsoft Foundry Control Plane? - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Foundry Control Plane Overview | URL: control-plane/overview --\u003e", "h2s": ["Prerequisites", "When to use Foundry Control Plane", "Foundry Control Plane capabilities", "Key features", "Get started with Foundry Control Plane"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__claude-models-hosting-comparison.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 10735, "lines": 180, "ext": ".md", "title": "Compare hosting options for Claude models in Microsoft Foundry - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Claude hosting comparison | URL: foundry-models/concepts/claude-models-hosting-comparison --\u003e", "h2s": ["At a glance", "Model and API differences", "Data processing and residency", "Hosted on Azure", "Hosted on Anthropic Infrastructure", "Support path", "Purchasing, billing, and quotas", "Choose the right option for your workload"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__deployment-types.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 19846, "lines": 302, "ext": ".md", "title": "Understanding deployment types in Microsoft Foundry Models - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Deployment types | Category: Models/Offers, deployment types, and pricing/Deployment types | URL: foundry-models/concepts/deployment-types --\u003e", "h2s": ["Start with Global Standard", "Deployment type comparison", "Choose the right deployment type", "Data processing locations", "Global Standard", "Global Provisioned", "Global Batch", "Data Zone Standard"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__endpoints.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 22362, "lines": 526, "ext": ".md", "title": "Endpoints for Microsoft Foundry Models - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Endpoints for Foundry Models | Category: Developer tools and integrations/SDKs and APIs/Endpoints for Foundry Models | URL: foundry-models/concepts/endpoints --\u003e", "h2s": ["Prerequisites", "Deployments", "Azure OpenAI inference endpoint"], "tags": ["Math ($)"], "has_mermaid": false, "has_math": true}, {"filename": "foundry-models__concepts__model-migration.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 28153, "lines": 308, "ext": ".md", "title": "Model migration: upgrade or switch models in Microsoft Foundry - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Model upgrades and switches | Category: Models/Explore Foundry Models/Model versions and lifecycle/Model upgrades and switches | URL: foundry-models/concepts/model-migration --\u003e", "h2s": ["What model migration means", "When to migrate", "Who should use the migration process", "Migration phases", "Before you migrate: Prepare a test dataset", "Phase 1: Discover", "Phase 2: Assess", "Phase 3: Adapt"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__model-versions-gov.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 8859, "lines": 129, "ext": ".md", "title": "Model versioning in Microsoft Foundry Models in Azure Government - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Model versions (government) | Category: Models/Explore Foundry Models/Model versions and lifecycle/Model versions (government) | URL: foundry-models/concepts/model-versions-gov --\u003e", "h2s": ["How model versions work", "Azure OpenAI model upgrades", "What happens when models are retired"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__model-versions.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 9805, "lines": 139, "ext": ".md", "title": "Model versioning in Microsoft Foundry Models - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Model versions | Category: Models/Explore Foundry Models/Model versions and lifecycle/Model versions | URL: foundry-models/concepts/model-versions --\u003e", "h2s": ["How model versions work", "Azure OpenAI model upgrades", "Partner model upgrades", "What happens when models are retired"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__models-from-partners.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 38482, "lines": 346, "ext": ".md", "title": "Foundry Models from partners and community - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Foundry Models sold from partners and community | Category: Models/Explore Foundry Models/Foundry Models sold from partners and community | URL: foundry-models/concepts/models-from-partners --\u003e", "h2s": ["Prerequisites", "Permissions required to subscribe to Models from partners and community", "Country/region availability", "Anthropic", "Cohere", "Meta", "Microsoft", "Mistral AI"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__models-sold-directly-by-azure-gov.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 17836, "lines": 260, "ext": ".md", "title": "Foundry Models sold by Azure in Azure Government - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Foundry Models sold by Azure (government) | Category: Models/Explore Foundry Models/Foundry Models sold by Azure (government) | URL: foundry-models/concepts/models-sold-directly-by-azure-gov --\u003e", "h2s": ["Azure OpenAI in Microsoft Foundry models in Azure Government", "GPT-5.6", "GPT-5.1", "GPT-4.1 series", "o-series models", "GPT-4o", "Embeddings", "Model summary table and region availability"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__models-sold-directly-by-azure-region-availability.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 78795, "lines": 1271, "ext": ".md", "title": "Region availability for Foundry Models sold by Azure - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Region availability for Foundry Models sold by Azure | Category: Models/Quota limits and region availability/Region availability for Foundry Models sold by Azure | URL: foundry-models/concepts/models-sold-directly-by-azure-region-availabi", "h2s": ["Global Standard", "Data Zone Standard", "Standard/Regional", "Global Provisioned Managed", "Data Zone Provisioned Managed", "Regional Provisioned Managed", "Global Batch", "Data Zone Batch"], "tags": ["Table", "Callout"], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__concepts__models-sold-directly-by-azure.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 79226, "lines": 792, "ext": ".md", "title": "Foundry Models sold by Azure - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Foundry Models sold by Azure | Category: Models/Explore Foundry Models/Foundry Models sold by Azure | URL: foundry-models/concepts/models-sold-directly-by-azure --\u003e", "h2s": ["Azure OpenAI in Microsoft Foundry models", "GPT-chat-latest", "GPT-6", "GPT-5.6", "GPT-5.5", "GPT-5.4", "GPT-5.3", "GPT-5.2"], "tags": ["Table", "Callout"], "has_mermaid": false, "has_math": false}, {"filename": "foundry-models__whats-new-model-router.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 10082, "lines": 151, "ext": ".md", "title": "What's new in model router in Microsoft Foundry Models - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: What's new in Model Router | Category: Models/Explore Foundry Models/Model Router/What's new in Model Router | URL: foundry-models/whats-new-model-router --\u003e", "h2s": ["September 2026", "August 2026", "July 2026", "May 2026", "March 2026", "November 2025", "August 2025", "May 2025"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "guardrails__intervention-points.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 6519, "lines": 93, "ext": ".md", "title": "Intervention points concepts - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Guardrails Intervention Points | URL: guardrails/intervention-points --\u003e", "h2s": ["Intervention points", "Configure controls at intervention points", "Supported tools"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "how-to__connections-add.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 12873, "lines": 171, "ext": ".md", "title": "Add a new connection to your project - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Connections and resources | URL: how-to/connections-add --\u003e", "h2s": ["Prerequisites", "Connection types", "Create a new connection", "Network isolation"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "how-to__develop__get-started-projects-visual-studio-code.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 6988, "lines": 122, "ext": ".md", "title": "Microsoft Foundry Toolkit for Visual Studio Code overview - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Overview | Category: Developer tools and integrations/Foundry Toolkit for Visual Studio Code/Overview | URL: how-to/develop/get-started-projects-visual-studio-code --\u003e", "h2s": ["Who should use Foundry Toolkit", "How the Toolkit workspace is organized", "Work with models", "Build and operate agents", "Manage Foundry resources"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "how-to__develop__langchain-hosted-agents.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 20900, "lines": 494, "ext": ".md", "title": "Host LangGraph agents as Foundry hosted agents - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Host LangGraph agents as Foundry hosted agents | Category: Developer tools and integrations/Develop with LangChain and LangGraph/Host LangGraph agents as Foundry hosted agents | URL: how-to/develop/langchain-hosted-agents --\u003e", "h2s": ["Prerequisites", "Install the package", "Choose a hosting protocol", "Configure environment variables", "Responses protocol", "Invocations protocol", "Deploy", "Host an existing agent"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "how-to__develop__langchain-toolbox.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 11981, "lines": 282, "ext": ".md", "title": "Use Foundry Toolbox with LangChain - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Use Foundry Toolbox | Category: Developer tools and integrations/Develop with LangChain and LangGraph/Use Foundry Toolbox | URL: how-to/develop/langchain-toolbox --\u003e", "h2s": ["Prerequisites", "Connect to a toolbox", "Load tools from a toolbox", "Load skills from a toolbox"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "how-to__develop__langchain-traces.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 18886, "lines": 425, "ext": ".md", "title": "Trace LangChain and LangGraph apps with Microsoft Foundry and Azure Monitor - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Trace with Foundry Observability | Category: Developer tools and integrations/Develop with LangChain and LangGraph/Trace with Foundry Observability | URL: how-to/develop/langchain-traces --\u003e", "h2s": ["Prerequisites", "Create the tracer", "Trace an agent", "Trace a LangChain runnable", "Trace a LangGraph graph", "Understand trace structure", "View traces in Azure Monitor", "View traces in Foundry Control Plane"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "how-to__develop__sdk-overview.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 72911, "lines": 970, "ext": ".md", "title": "Get started with Microsoft Foundry SDKs and endpoints - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Microsoft Foundry SDKs | Category: Developer tools and integrations/SDKs and APIs/Microsoft Foundry SDKs | URL: how-to/develop/sdk-overview --\u003e", "h2s": ["Prerequisites", "Foundry SDK", "Troubleshooting", "OpenAI SDK", "Anthropic SDK", "Agent Framework", "Foundry Tools SDKs"], "tags": ["Math ($)", "Table", "Callout"], "has_mermaid": false, "has_math": true}, {"filename": "how-to__model-router-policy.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 14789, "lines": 177, "ext": ".md", "title": "Govern model router deployments with Azure Policy - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Govern model router with Azure Policy | Category: Models/Explore Foundry Models/Model Router/Govern model router with Azure Policy | URL: how-to/model-router-policy --\u003e", "h2s": ["Prerequisites", "How model router honors Azure Policy", "Assign a policy that governs model router", "Deploy model router with a policy in effect", "Audit existing model router deployments", "Troubleshoot"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "mcp__available-tools.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 39258, "lines": 513, "ext": ".md", "title": "Explore available tools and example prompts for Foundry MCP Server (preview) - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Available tools and sample prompts | Category: Developer tools and integrations/Foundry MCP Server (preview)/Available tools and sample prompts | URL: mcp/available-tools --\u003e", "h2s": ["How tools work", "Agent management", "Hosted agent sessions and files", "Toolbox management", "Dataset management", "Data generation jobs", "Evaluation operations", "Trace evaluation"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "mcp__get-started.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 11205, "lines": 203, "ext": ".md", "title": "Get started using Foundry MCP Server with Visual Studio Code - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Get started with Foundry MCP Server | Category: Developer tools and integrations/Foundry MCP Server (preview)/Get started with Foundry MCP Server | URL: mcp/get-started --\u003e", "h2s": ["Prerequisites", "Install and start Foundry MCP Server", "Use prompts to test Foundry MCP Server", "Troubleshooting", "Clean up resources"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "mcp__security-best-practices.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 15094, "lines": 248, "ext": ".md", "title": "Explore Foundry MCP Server best practices and security guidance - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Best practices and security guidance | Category: Developer tools and integrations/Foundry MCP Server (preview)/Best practices and security guidance | URL: mcp/security-best-practices --\u003e", "h2s": ["Prerequisites", "Interpreting the response", "Impact of write operations", "Best practices for safe execution", "Security and governance", "Troubleshooting"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "observability__concepts__trace-data.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 9439, "lines": 162, "ext": ".md", "title": "Microsoft Foundry Tracing and Data Handling - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Observability and Trace Data | URL: observability/concepts/trace-data --\u003e", "h2s": ["Enable tracing", "Disable tracing", "Where data is stored", "Data sharing considerations", "Privacy", "Summary"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "observability__how-to__evaluate-agent.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 23800, "lines": 589, "ext": ".md", "title": "Evaluate your AI agents - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Evaluate agentic workflows | URL: observability/how-to/evaluate-agent --\u003e", "h2s": ["Prerequisites", "Set up the client", "Choose evaluators", "Create a test dataset", "Run an evaluation", "Interpret results", "Integrate into your workflow", "Optimize and compare versions"], "tags": ["Math ($)"], "has_mermaid": false, "has_math": true}, {"filename": "observability__how-to__trace-agent-setup.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 15485, "lines": 246, "ext": ".md", "title": "Set Up Tracing for AI Agents in Microsoft Foundry - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Trace your agents | URL: observability/how-to/trace-agent-setup --\u003e", "h2s": ["Prerequisites", "Connect Application Insights to your Foundry project", "Instrument AI agents", "View and analyze traces", "Verify tracing works", "Security and privacy", "Data retention and cost", "Troubleshooting"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__concepts__model-retirement-schedule-gov.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 4124, "lines": 81, "ext": ".md", "title": "Model retirement schedule in Azure Government - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Retirement schedule (government) | Category: Models/Explore Foundry Models/Model versions and lifecycle/Retirement schedule (government) | URL: openai/concepts/model-retirement-schedule-gov --\u003e", "h2s": ["Foundry Models sold by Azure in Azure Government"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__concepts__model-retirement-schedule.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 17808, "lines": 378, "ext": ".md", "title": "Model retirement schedule - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Retirement schedule | Category: Models/Explore Foundry Models/Model versions and lifecycle/Retirement schedule | URL: openai/concepts/model-retirement-schedule --\u003e", "h2s": ["Foundry Models sold by Azure", "Foundry Models from partners and community"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__concepts__model-retirements-gov.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 10689, "lines": 161, "ext": ".md", "title": "Foundry Models lifecycle and support policy in Azure Government - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Lifecycle and support policy (government) | Category: Models/Explore Foundry Models/Model versions and lifecycle/Lifecycle and support policy (government) | URL: openai/concepts/model-retirements-gov --\u003e", "h2s": ["How model lifecycle works", "Model launch and availability", "Special considerations", "Notifications"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__concepts__model-retirements.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 23656, "lines": 280, "ext": ".md", "title": "Foundry Models lifecycle and support policy - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Lifecycle and support policy | Category: Models/Explore Foundry Models/Model versions and lifecycle/Lifecycle and support policy | URL: openai/concepts/model-retirements --\u003e", "h2s": ["How model lifecycle works", "Model launch and availability", "Lifecycle and availability variations", "Lifecycle timeline commitments", "Automatic upgrades", "Migration to a replacement model", "Notifications", "Fine-tuned models"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__concepts__model-router-how-it-works.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 14438, "lines": 197, "ext": ".md", "title": "How model router works in Microsoft Foundry - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: How model router works | Category: Models/Explore Foundry Models/Model Router/How model router works | URL: openai/concepts/model-router-how-it-works --\u003e", "h2s": ["Prerequisites", "Model router as an optimization layer", "How requests are routed", "Key design deliverables", "Model overview", "Intelligent prompt routing", "Routing modes in depth", "Observe routing behavior"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__concepts__model-router.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 16921, "lines": 291, "ext": ".md", "title": "Model router for Microsoft Foundry concepts - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Overview | Category: Models/Explore Foundry Models/Model Router/Overview | URL: openai/concepts/model-router --\u003e", "h2s": ["How model router works", "Why use model router?", "Versioning", "Supported models", "Supported regions", "Routing mode", "Govern model router deployments", "Model subset"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__concepts__retired-models.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 11174, "lines": 223, "ext": ".md", "title": "Retired Microsoft Foundry Models - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Retired models | Category: Models/Explore Foundry Models/Model versions and lifecycle/Retired models | URL: openai/concepts/retired-models --\u003e", "h2s": ["Azure OpenAI", "AI21 Labs", "Bria", "Cohere", "Core42", "DeepSeek", "Gretel", "Meta"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__how-to__evaluate-model-router.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 11268, "lines": 160, "ext": ".md", "title": "Evaluate model router for your workload - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Evaluate model router | Category: Models/Explore Foundry Models/Model Router/Evaluate model router | URL: openai/how-to/evaluate-model-router --\u003e", "h2s": ["Prerequisites", "Define the deployment decision", "Design a fair workload comparison", "Run a comparison", "Read the tradeoffs together", "Choose what to try next", "Validate under production-like traffic", "Monitor and repeat the evaluation"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__how-to__model-router-agents.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 16594, "lines": 322, "ext": ".md", "title": "Use model router with Foundry agents - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Use model router with agents | Category: Models/Explore Foundry Models/Model Router/Use model router with agents | URL: openai/how-to/model-router-agents --\u003e", "h2s": ["Prerequisites", "Why use model router for agents", "Supported tool types", "How routing works with agents", "Routing patterns for agent scenarios", "Cost implications", "Tailor model subsets per agent", "Get started"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "openai__how-to__model-router.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 27911, "lines": 551, "ext": ".md", "title": "How to use model router for Microsoft Foundry - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Get started with model router | Category: Models/Explore Foundry Models/Model Router/Get started with model router | URL: openai/how-to/model-router --\u003e", "h2s": ["Supported models", "Deploy a model router model", "Test model router with Foundry Responses and Chat Completions", "Test model router in the playground", "Connect model router to a Foundry agent", "Govern model router deployments with Azure Policy", "Evaluate model router for your workload", "Monitor model router metrics"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "openai__how-to__monitor-model-router.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 9222, "lines": 213, "ext": ".md", "title": "Monitor model router in Microsoft Foundry - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: Monitor model router | Category: Models/Explore Foundry Models/Model Router/Monitor model router | URL: openai/how-to/monitor-model-router --\u003e", "h2s": ["Prerequisites", "Enable per-request routing metadata", "Send a Chat Completions request", "Understand routing metadata", "Extract routing and fallback information", "Interpret the results"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "what-is-foundry.md", "folder": "crawled_docs", "category": "Foundry Technical Library", "badgeClass": "bg-indigo-500/10 text-indigo-400 border-indigo-500/20", "size": 10164, "lines": 153, "ext": ".md", "title": "What is Microsoft Foundry? - Microsoft Foundry | Microsoft Learn", "snippet": "\u003c!-- Title: What is Microsoft Foundry? | Category: What is Microsoft Foundry? | URL: what-is-foundry --\u003e", "h2s": ["Get started", "What you can build", "Enterprise-ready platform", "Start by building an agent", "Choose your developer surface", "Recommended path for new developers", "Evolution of Foundry"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "00-README.md", "folder": "research-idea", "category": "Strategy & Design", "badgeClass": "bg-purple-500/10 text-purple-400 border-purple-500/20", "size": 1362, "lines": 20, "ext": ".md", "title": "SheraTutor \u2014 Documentation Index", "snippet": "**\"SheraTutor, for Shera Students.\"**", "h2s": [], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "01-project-overview.md", "folder": "research-idea", "category": "Strategy & Design", "badgeClass": "bg-purple-500/10 text-purple-400 border-purple-500/20", "size": 7726, "lines": 84, "ext": ".md", "title": "SheraTutor \u2014 Project Overview", "snippet": "**Vision:** Modernize Bangladesh's education system by giving every SSC and HSC student access to the kind of personalized, board-standard feedback that today only the wealthiest families can buy through private tutors \u2014 then take the same model glob", "h2s": ["Vision & Mission", "Product Overview", "Features", "Roadmap (Bangladesh Phase)", "Why This Is Defensible", "Key Risks & Open Questions (worth tracking honestly)"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "02-market-analysis.md", "folder": "research-idea", "category": "Strategy & Design", "badgeClass": "bg-purple-500/10 text-purple-400 border-purple-500/20", "size": 4387, "lines": 53, "ext": ".md", "title": "SheraTutor \u2014 Market Analysis", "snippet": "| Metric | 2025 figure | Source |", "h2s": ["Market Size (Bangladesh SSC/HSC, 2025 data)", "Target Market Segmentation", "Competitive Positioning Notes", "Sources"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "03-design-system.md", "folder": "research-idea", "category": "Strategy & Design", "badgeClass": "bg-purple-500/10 text-purple-400 border-purple-500/20", "size": 6015, "lines": 79, "ext": ".md", "title": "SheraTutor \u2014 Design System", "snippet": "- **Name:** SheraTutor (\"Shera\" = Bangla for \"best/top\")", "h2s": ["Brand Name & Domain", "Color Palette", "Typography", "Logo & Icon System", "Tone & Voice", "Applied Examples"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "04-tech-stack-and-ai.md", "folder": "research-idea", "category": "Strategy & Design", "badgeClass": "bg-purple-500/10 text-purple-400 border-purple-500/20", "size": 6357, "lines": 61, "ext": ".md", "title": "SheraTutor \u2014 Technology Stack & AI Strategy", "snippet": "| Layer | Technology | Purpose |", "h2s": ["Technology Stack", "AI Model Strategy \u2014 Building the \"Super AI Tutor\"", "Notes for Engineering Planning"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "05-business-model.md", "folder": "research-idea", "category": "Strategy & Design", "badgeClass": "bg-purple-500/10 text-purple-400 border-purple-500/20", "size": 4674, "lines": 54, "ext": ".md", "title": "SheraTutor \u2014 Business Model", "snippet": "This is a deliberate two-sided model, not a freemium funnel:", "h2s": ["The Core Structure: Free-for-Students, Paid-by-Institutions", "B2B Revenue Streams (detail)", "Go-to-Market Sequencing", "B2C Pre-Launch: The Waitlist", "The Ask (Seed Round)"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "BoardMate_AI_Pitch_Deck.html", "folder": "pitch", "category": "Pitch & Presentations", "badgeClass": "bg-rose-500/10 text-rose-400 border-rose-500/20", "size": 36289, "lines": 0, "ext": ".html", "title": "BoardMate AI \u2014 Pitch Deck", "snippet": "Interactive HTML application", "h2s": [], "tags": ["Interactive HTML"], "has_mermaid": false, "has_math": false}, {"filename": "BoardMate_AI_Pitch_Deck.pptx", "folder": "pitch", "category": "Pitch & Presentations", "badgeClass": "bg-rose-500/10 text-rose-400 border-rose-500/20", "size": 372951, "lines": 0, "ext": ".pptx", "title": "BoardMate_AI_Pitch_Deck.pptx", "snippet": "Binary/Asset file (.pptx)", "h2s": [], "tags": ["Document Asset"], "has_mermaid": false, "has_math": false}, {"filename": "Comprehensive Automated Browser Testing Plan (Suites 1\u20137) Plan.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 6978, "lines": 133, "ext": ".md", "title": "Comprehensive Automated Browser Testing Plan (Suites 1\u20137)", "snippet": "Execute an end-to-end, dual-layer automated testing workflow against the local Next.js development server on `http://localhost:3001` using the authenticated test account (`syed.salman.reza.181@gmail.com`).", "h2s": ["Integrated with `next-dev-loop`, `next-devtools` MCP & `chrome-devtools` MCP", "\ud83d\udee0\ufe0f Integrated Skills & MCP Tooling Architecture", "\ud83e\uddea Comprehensive Test Suites & Verification Steps", "Verification Plan"], "tags": ["Math ($)"], "has_mermaid": false, "has_math": true}, {"filename": "Developer_Hand-Off_Guide_ SheraTutor_B2C_Web_Portal_(SSC_Phase).md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 7362, "lines": 95, "ext": ".md", "title": "**Developer Hand-Off Guide: SheraTutor B2C Web Portal (SSC Phase)**", "snippet": "This document serves as the complete technical blueprint and execution plan for building the initial student-facing (B2C) web portal for SheraTutor. The target scope is the SSC curriculum, which encompasses 33 subjects across both Bangla and English ", "h2s": ["**1\\. Core Architecture & Tech Stack**", "**2\\. Phase 1: The Golden Dataset Extraction (The 66 Textbooks)**", "**3\\. Phase 2: Database Schema & RBAC Isolation**", "**4\\. Phase 3: Genkit Orchestration (The 4-Layer AI Engine)**", "**5\\. Phase 4: B2C Frontend Implementation (Next.js)**", "**6\\. Execution Strategy: The \"Vertical Slice\"**"], "tags": [], "has_mermaid": false, "has_math": false}, {"filename": "Ground-Truth Chemistry Ingestion Pipeline: Overhaul & Corpus Ingestion Plan.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 9916, "lines": 106, "ext": ".md", "title": "Ground-Truth Chemistry Ingestion Pipeline: Overhaul & Corpus Ingestion Plan", "snippet": "During the previous run, an automated audit revealed that 58 out of 67 cached pages in `ingestion/cache/chemistry_en/` suffered from severe anomalies: Bengali text contamination, prompt token regurgitation (e.g. Chapter 2 wax candle diagrams inserted", "h2s": ["Overview", "1. Codebase Architecture Review (`ingestion/`)", "2. PDF Structural Analysis: Both BN & EN Editions Page-by-Page", "3. Proposed Changes & Technical Architecture", "4. Verification & Testing Plan"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "Implementation Plan: Complete Local Vision Extraction & RAG Pipeline for NCTB Textbooks.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 7582, "lines": 136, "ext": ".md", "title": "Implementation Plan: Complete Local Vision Extraction & RAG Pipeline for NCTB Textbooks (Excluding Physics)", "snippet": "A production-grade, resource-optimized pipeline for extracting all NCTB Class 9\u201310 secondary textbooks (both Bengali and English editions) locally using vision-language models via Ollama, generating multilingual embeddings with `bge-m3`, and storing/", "h2s": ["Target Scope: Phase 2 Core Subjects + Remaining 32 Subjects", "User Review Required", "Proposed Changes", "Verification Plan"], "tags": ["Math ($)", "Callout"], "has_mermaid": false, "has_math": true}, {"filename": "Implementation Plan: Comprehensive Multimodal Textbook Ingestion (NVIDIA NIM Vision + Visual Assets + BGE-M3 + Supabase).md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 15395, "lines": 188, "ext": ".md", "title": "Implementation Plan: Comprehensive Multimodal Textbook Ingestion (NVIDIA NIM Vision + Visual Assets + BGE-M3 + Supabase)", "snippet": "A production-grade ingestion and multimodal RAG pipeline for the remaining 1,961 pages of NCTB Class 9\u201310 textbooks (**Chemistry**, **Mathematics**, and **English**). This plan details how visual content\u2014including tables, charts, graphs, raster photo", "h2s": ["1. Visual Content Analysis Across Textbooks", "2. 3-Tier Multimodal Ingestion Architecture", "3. Detailed Handling of Visual Elements", "4. Database Schema Alignment", "5. Phased Ingestion & Rollout Plan", "6. Verification Plan"], "tags": ["Mermaid", "Math ($)", "Table"], "has_mermaid": true, "has_math": true}, {"filename": "Implementation Plan: NCTB SSC Physics Bilingual RAG Pipeline.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 6152, "lines": 127, "ext": ".md", "title": "Implementation Plan: NCTB SSC Physics Bilingual RAG Pipeline", "snippet": "A production-grade, bilingual RAG ingestion and retrieval architecture for the 14 chapters of NCTB SSC Physics in both Bengali (`physics_bn.pdf`, 366 pages) and English (`physics_en.pdf`, 370 pages), executed headlessly via Kaggle Free Remote GPU (`s", "h2s": ["User Review Required", "Architecture Overview", "Proposed Changes", "Verification Plan"], "tags": ["Mermaid", "Math ($)", "Table", "Callout"], "has_mermaid": true, "has_math": true}, {"filename": "Python with practical experience in LLMs, RAG pipelines, vector databases, and AI orchestration.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 21372, "lines": 285, "ext": ".md", "title": "Python with practical experience in LLMs, RAG pipelines, vector databases, and AI orchestration.md", "snippet": "*User prompt: Python with practical experience in LLMs, RAG pipelines, vector databases, and AI orchestration frameworks such as LangChain, LangGraph, or LlamaIndex.*", "h2s": [], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "SHERATUTOR_CODEBASE_REPORT.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 25802, "lines": 292, "ext": ".md", "title": "SheraTutor \u2014 Full Codebase Report", "snippet": "**Generated:** 2026-08-24 \u00b7 **Branch:** `backend` \u00b7 **Scope:** `web/` (Next.js app), `supabase/` (Postgres schema), `ingestion/` (offline pipeline)", "h2s": ["1. What SheraTutor Is", "2. Architecture Overview", "3. Database Schema (Supabase Postgres, project `qjottictwewysfcjirma`)", "4. Backend", "5. Frontend", "6. Feature Summary (plain-language)", "7. Notable Engineering Observations"], "tags": ["Mermaid", "Table"], "has_mermaid": true, "has_math": false}, {"filename": "SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 19619, "lines": 294, "ext": ".md", "title": "SheraTutor: Comprehensive Codebase Architecture & Systems Report", "snippet": "**SheraTutor** is Bangladesh's first AI board examiner and learning companion, engineered specifically for secondary and higher-secondary students (**NCTB SSC & HSC curriculum**, currently vertically sliced to **Physics & Chemistry**).", "h2s": ["1. Executive Summary & Vision", "2. Full-Stack Architectural Topology", "3. Deep Dive: Module Breakdown & Implementations", "4. Key Workflows & State Machines", "5. Security, Compliance & Multi-Tenancy", "6. Created Artifacts Reference"], "tags": ["Mermaid", "Math ($)", "Table"], "has_mermaid": true, "has_math": true}, {"filename": "SheraTutor \u2014 HSC & SSC AI Learning Workspace.pdf", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 585090, "lines": 0, "ext": ".pdf", "title": "SheraTutor \u2014 HSC & SSC AI Learning Workspace.pdf", "snippet": "Binary/Asset file (.pdf)", "h2s": [], "tags": ["Document Asset"], "has_mermaid": false, "has_math": false}, {"filename": "SheraTutor: End-to-End RAG Ingestion Pipeline, Vision LLM Extraction & Full-Corpus Physical Verification Report.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 19402, "lines": 273, "ext": ".md", "title": "SheraTutor: End-to-End RAG Ingestion Pipeline, Vision LLM Extraction & Full-Corpus Physical Verification Report", "snippet": "This report provides a comprehensive, chronological record of all architectural decisions, implementations, debugging cycles, remediation scripts, database synchronizations, and verification gates executed during the **Codebase Review And Analysis** ", "h2s": ["Executive Summary", "Architecture & System Topology", "Phase 1: Codebase Review, Hardware Profiling & LLM Selection", "Phase 2: Ingestion Pipeline Implementation", "Phase 3: Problems Encountered, Root Cause Analysis & Fixes", "Phase 4: Master Verification Gate & Full-Corpus Audit", "Phase 5: Database Vector & Corpus Synchronization", "Phase 6: Human-in-the-Loop Real PDF Page-by-Page Audit Findings"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "Walkthrough: Ground-Truth Multimodal Textbook Ingestion & Verification.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 5757, "lines": 94, "ext": ".md", "title": "Walkthrough: Ground-Truth Multimodal Textbook Ingestion & Verification", "snippet": "This document details the diagnosis, architectural overhaul, benchmark verification, and active execution of the full sequential corpus ingestion for **NCTB Secondary Chemistry (English & Bangla editions)** across all 12 chapters (PDF Pages 6 to 309)", "h2s": ["1. Audit of the Initial Attempt (58 / 67 Flawed Pages)", "2. Engineered Solution & Architecture Upgrades", "3. Empirical Revalidation Benchmark Results", "4. Current Ingestion Status (`/goal` Sequential Run)"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "foundry_interactive_explorer.html", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 89160, "lines": 0, "ext": ".html", "title": "Microsoft Foundry: Architecture & System Deep Dive", "snippet": "Interactive HTML application", "h2s": [], "tags": ["Interactive HTML"], "has_mermaid": false, "has_math": false}, {"filename": "genkit_architecture_report.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 15373, "lines": 269, "ext": ".md", "title": "Google Genkit Architecture & Next.js Full-Stack Deep Dive", "snippet": "This report provides an in-depth architectural and implementation breakdown of the **Google Genkit** framework (specifically the TypeScript/JavaScript ecosystem), based on direct source analysis of the [`genkit`](https://github.com/genkit-ai/genkit) ", "h2s": ["1. Architectural Overview & System Stack", "2. Core Kernel: `@genkit-ai/core`", "3. Next.js App Router Full-Stack Implementation", "4. Full-Stack Agents, Sessions & Interrupts", "5. Model Context Protocol (MCP) Integration", "6. Summary Comparison: Genkit with Next.js App Router"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "genkit_interactive_explorer.html", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 49211, "lines": 0, "ext": ".html", "title": "Genkit Architecture & Next.js Full-Stack Explorer", "snippet": "Interactive HTML application", "h2s": [], "tags": ["Interactive HTML"], "has_mermaid": false, "has_math": false}, {"filename": "microsoft_foundry_deep_dive.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 18364, "lines": 286, "ext": ".md", "title": "Microsoft Foundry: Comprehensive Architecture, Concepts, Workflows, and Service Integrations", "snippet": "**Microsoft Foundry** (formerly known across preview iterations as Azure AI Studio) represents Microsoft's unified enterprise platform for building, evaluating, deploying, and governing agentic AI applications and frontier models. Spanning **539+ doc", "h2s": ["Executive Summary", "1. Architectural Breakdown", "2. Core Components & Technical Capabilities", "3. End-to-End Workflows", "4. Service Integrations Matrix", "5. Developer Code Quick Reference"], "tags": ["Table"], "has_mermaid": false, "has_math": false}, {"filename": "sheratutor_genkit_integration_explorer.html", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 42565, "lines": 0, "ext": ".html", "title": "SheraTutor + Genkit Full-Stack Integration Explorer", "snippet": "Interactive HTML application", "h2s": [], "tags": ["Interactive HTML"], "has_mermaid": false, "has_math": false}, {"filename": "sheratutor_genkit_integration_plan.md", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 16773, "lines": 315, "ext": ".md", "title": "SheraTutor + Genkit Full-Stack Architecture & Integration Blueprint", "snippet": "This document presents a comprehensive, actionable technical blueprint for modernizing and integrating **Google Genkit v1.41.0** across the entire **SheraTutor** codebase (`web/`, `supabase/`, `ingestion/`). It grounds the architectural principles re", "h2s": ["1. Executive Summary & SheraTutor System Context", "2. Current Codebase Audit & Integration Opportunities", "3. Module-by-Module Implementation Plan", "4. Phased Implementation Roadmap"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "sheratutor_interactive_explorer.html", "folder": "antigravity-docs", "category": "Architecture & Ingestion", "badgeClass": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20", "size": 65663, "lines": 0, "ext": ".html", "title": "SheraTutor: Architecture & Codebase Deep Dive", "snippet": "Interactive HTML application", "h2s": [], "tags": ["Interactive HTML"], "has_mermaid": false, "has_math": false}, {"filename": "SSC_Phase_Technical_Review.md", "folder": "review", "category": "Code Audits & Gaps", "badgeClass": "bg-amber-500/10 text-amber-400 border-amber-500/20", "size": 38343, "lines": 364, "ext": ".md", "title": "SheraTutor SSC Phase \u2014 Technical & Strategic Review", "snippet": "**Reviewed:** `docs/SheraTutor_Full_Project_Documentation.md`, `docs/SheraTutor_Software_Requirements_Specification.md`, `docs/research-idea/*`, `Developer_Hand-Off_Guide_ SheraTutor_B2C_Web_Portal_(SSC_Phase).md`", "h2s": ["0. Severity index", "1. Things in the hand-off guide that will not work as written", "2. Blocking legal and compliance gaps", "3. The technical risk nobody has named: transcription fidelity", "4. The missing module: which answer belongs to which question, and to whom", "5. Infrastructure and architecture", "6. Requirements that cannot pass verification as written", "7. Data model review"], "tags": ["Math ($)", "Table"], "has_mermaid": false, "has_math": true}, {"filename": "SheraTutor_Codebase_Review_and_Gap_Analysis.md", "folder": "review", "category": "Code Audits & Gaps", "badgeClass": "bg-amber-500/10 text-amber-400 border-amber-500/20", "size": 19797, "lines": 277, "ext": ".md", "title": "SheraTutor: In-Depth Codebase Review & Feature Gap Analysis", "snippet": "An exhaustive audit of the `@web` codebase (`/home/syed/workspace/Sheratutor/web`) and the live **PostgreSQL 17** database on Supabase (`qjottictwewysfcjirma`) was conducted to compare existing implementations against the **SheraTutor Product Archite", "h2s": ["1. Implementation Status Overview", "2. Module-by-Module Review: Implemented vs. Gaps", "3. Deep Dive: Exam Question Generation Pipeline Analysis", "4. Prioritized Remediation Roadmap"], "tags": ["Mermaid", "Math ($)"], "has_mermaid": true, "has_math": true}];
+
+    let selectedFile = allFiles[0];
+
+    function renderFileList(items) {
+      const container = document.getElementById('file-list-container');
+      if (items.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 text-[var(--muted-foreground)]">
+            <p class="text-sm font-semibold">No matching documents found</p>
+            <p class="text-xs mt-1">Try relaxing your search terms or filter selections.</p>
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = items.map((f, idx) => {
+        const isSelected = selectedFile && selectedFile.filename === f.filename;
+        const tagBadges = f.tags.map(t => {
+          let color = 'bg-slate-500/10 text-slate-400 border-slate-500/20';
+          if (t === 'Mermaid') color = 'bg-amber-500/10 text-amber-500 border-amber-500/20';
+          if (t.includes('Math')) color = 'bg-pink-500/10 text-pink-500 border-pink-500/20';
+          if (t === 'Interactive HTML') color = 'bg-[#23D9A5]/15 text-[#23D9A5] border-[#23D9A5]/30';
+          return `<span class="px-1.5 py-0.5 rounded text-[10px] font-mono border ${color}">${t}</span>`;
+        }).join(' ');
+
+        return `
+          <div 
+            onclick="selectFileByName('${f.filename.replace(/'/g, "\\'")}')" 
+            class="p-3 rounded-xl border transition cursor-pointer flex flex-col gap-1.5 ${isSelected ? 'bg-[var(--card)] border-[#FF6B57] shadow-sm' : 'bg-[var(--background)] border-[var(--border)] hover:border-[var(--muted-foreground)]/40'}"
+          >
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2 min-w-0">
+                <span class="px-2 py-0.5 rounded text-[10px] font-bold border ${f.badgeClass} shrink-0">${f.category}</span>
+                <span class="font-bold text-xs truncate text-[var(--foreground)]">${f.title}</span>
+              </div>
+              <span class="text-[10px] font-mono text-[var(--muted-foreground)] shrink-0">${(f.size / 1024).toFixed(1)} KB</span>
+            </div>
+
+            <div class="flex items-center justify-between gap-2 text-[11px] text-[var(--muted-foreground)]">
+              <span class="font-mono text-[10px] truncate max-w-[280px]">${f.folder !== '.' ? f.folder + '/' : ''}${f.filename}</span>
+              <div class="flex items-center gap-1 shrink-0">
+                ${tagBadges}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    function selectFileByName(name) {
+      const found = allFiles.find(f => f.filename === name);
+      if (found) {
+        selectedFile = found;
+        renderFileList(getFilteredFiles());
+        renderInspector(found);
+      }
+    }
+
+    function renderInspector(f) {
+      const pane = document.getElementById('inspector-pane');
+      if (!f) return;
+
+      const headingsHtml = (f.h2s && f.h2s.length > 0) 
+        ? f.h2s.map(h => `<li class="truncate text-[var(--foreground)]">&bull; ${h}</li>`).join('') 
+        : '<li class="text-[var(--muted-foreground)] italic">Single section document</li>';
+
+      const tagPills = f.tags.map(t => `<span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-[var(--card)] border border-[var(--border)]">${t}</span>`).join(' ');
+
+      pane.innerHTML = `
+        <div class="space-y-4">
+          <div>
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="px-2 py-0.5 rounded text-[10px] font-bold border ${f.badgeClass}">${f.category}</span>
+              <span class="text-[10px] font-mono text-[var(--muted-foreground)]">${f.ext.toUpperCase()}</span>
+            </div>
+            <h3 class="font-black text-base text-[var(--foreground)] leading-snug">${f.title}</h3>
+            <p class="font-mono text-[11px] text-[var(--muted-foreground)] mt-1 break-all">${f.folder !== '.' ? f.folder + '/' : ''}${f.filename}</p>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2 text-xs">
+            <div class="p-2.5 rounded-xl border border-[var(--border)] bg-[var(--card)]">
+              <div class="text-[10px] uppercase font-bold text-[var(--muted-foreground)]">File Size</div>
+              <div class="text-sm font-black text-[var(--foreground)] mt-0.5">${(f.size / 1024).toFixed(1)} KB</div>
+            </div>
+            <div class="p-2.5 rounded-xl border border-[var(--border)] bg-[var(--card)]">
+              <div class="text-[10px] uppercase font-bold text-[var(--muted-foreground)]">Lines of Code</div>
+              <div class="text-sm font-black text-[var(--foreground)] mt-0.5">${f.lines > 0 ? f.lines : 'Binary / Static'}</div>
+            </div>
+          </div>
+
+          <div>
+            <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)] mb-1.5">Document Features</div>
+            <div class="flex flex-wrap gap-1.5">
+              ${tagPills || '<span class="text-xs text-[var(--muted-foreground)]">Standard documentation file</span>'}
+            </div>
+          </div>
+
+          <div>
+            <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)] mb-1.5">Key Subsections (${f.h2s ? f.h2s.length : 0})</div>
+            <ul class="space-y-1 text-xs max-h-36 overflow-y-auto pr-1">
+              ${headingsHtml}
+            </ul>
+          </div>
+
+          ${f.snippet ? `
+            <div>
+              <div class="text-[10px] uppercase font-bold tracking-wider text-[var(--muted-foreground)] mb-1">Snippet Preview</div>
+              <p class="text-xs text-[var(--muted-foreground)] italic bg-[var(--card)] p-3 rounded-xl border border-[var(--border)] leading-relaxed">
+                "${f.snippet.replace(/"/g, '&quot;')}..."
+              </p>
+            </div>
+          ` : ''}
+        </div>
+
+        <div class="mt-4 pt-3 border-t border-[var(--border)] flex items-center justify-between text-xs">
+          <span class="text-[var(--muted-foreground)]">Site Route:</span>
+          <span class="font-mono text-[#FF6B57] font-semibold">${f.folder !== '.' ? f.folder + '/' : ''}${f.filename.replace('.md', '/')}</span>
+        </div>
+      `;
+    }
+
+    function getFilteredFiles() {
+      const query = (document.getElementById('search-input').value || '').toLowerCase().trim();
+      const cat = document.getElementById('filter-category').value;
+      const tag = document.getElementById('filter-tag').value;
+
+      return allFiles.filter(f => {
+        const matchQuery = !query || 
+          f.filename.toLowerCase().includes(query) || 
+          f.title.toLowerCase().includes(query) || 
+          (f.snippet && f.snippet.toLowerCase().includes(query)) ||
+          (f.h2s && f.h2s.some(h => h.toLowerCase().includes(query)));
+        
+        const matchCat = (cat === 'all') || (f.category === cat);
+        const matchTag = (tag === 'all') || (f.tags.includes(tag));
+
+        return matchQuery && matchCat && matchTag;
+      });
+    }
+
+    function filterFiles() {
+      const filtered = getFilteredFiles();
+      document.getElementById('match-counter').innerText = `Showing ${filtered.length} of ${allFiles.length} items`;
+      renderFileList(filtered);
+      if (filtered.length > 0 && (!selectedFile || !filtered.some(f => f.filename === selectedFile.filename))) {
+        selectedFile = filtered[0];
+        renderInspector(selectedFile);
+      }
+    }
+
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('border-[#FF6B57]', 'text-[#FF6B57]', 'active');
+        btn.classList.add('border-transparent', 'text-[var(--muted-foreground)]');
+      });
+      document.querySelectorAll('.tab-view').forEach(view => view.classList.add('hidden'));
+
+      const activeBtn = document.getElementById(`tab-btn-${tabId}`);
+      const activeView = document.getElementById(`view-${tabId}`);
+      if (activeBtn && activeView) {
+        activeBtn.classList.remove('border-transparent', 'text-[var(--muted-foreground)]');
+        activeBtn.classList.add('border-[#FF6B57]', 'text-[#FF6B57]', 'active');
+        activeView.classList.remove('hidden');
+      }
+    }
+
+    // Snippets data
+    const snippets = {
+      mkdocs: `site_name: SheraTutor Documentation
+site_description: Technical Architecture, Curriculum Corpus, and Ingestion Specs for SheraTutor AI
+site_url: https://codestorm-hub.github.io/Sheratutor/
+repo_url: https://github.com/CodeStorm-Hub/Sheratutor
+repo_name: CodeStorm-Hub/Sheratutor
+
+docs_dir: docs
+
+theme:
+  name: material
+  logo: assets/icon-badge.svg
+  favicon: assets/icon-badge.png
+  font:
+    text: Inter
+    code: Space Mono
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: teal
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+extra_css:
+  - stylesheets/sheratutor.css
+  - https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@700&display=swap
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html`,
+
+      action: `name: Deploy SheraTutor Documentation to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - azure-foundry
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - '.github/workflows/deploy-docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install MkDocs Material & Extensions
+        run: |
+          python -m pip install --upgrade pip
+          pip install mkdocs-material pymdownx-superfences
+
+      - name: Build Static Documentation Site
+        run: mkdocs build --strict
+
+      - name: Upload GitHub Pages Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/
+
+  deploy:
+    environment:
+      name: github-pages
+      url: \${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4`,
+
+      css: `:root {
+  --md-primary-fg-color:        #14182B; /* Ink Navy */
+  --md-primary-fg-color--light:  #1E2761; /* Card Navy */
+  --md-primary-fg-color--dark:   #0A0D18;
+  --md-accent-fg-color:         #FF6B57; /* Coral */
+  --md-accent-fg-color--transparent: rgba(255, 107, 87, 0.1);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color:        #14182B; /* Ink Navy */
+  --md-default-bg-color--light:  #1E2761;
+  --md-default-fg-color:        #F4F5FB;
+  --md-accent-fg-color:         #23D9A5; /* Mint accent in dark mode */
+}
+
+/* Headings in Baloo 2 per SheraTutor Design System */
+h1, h2, h3, .md-header__title, .md-nav__title {
+  font-family: 'Baloo 2', system-ui, sans-serif !important;
+  font-weight: 700;
+}
+
+/* Space Mono for metadata and badges */
+.md-tag, code, kbd {
+  font-family: 'Space Mono', monospace !important;
+}
+
+.mermaid {
+  background: transparent !important;
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}`,
+
+      index: `---
+layout: home
+title: SheraTutor Documentation Portal
+---
+
+# SheraTutor Documentation Portal
+
+> **"SheraTutor, for Shera Students."**  
+> Bangladesh's premier AI-powered board examiner and personalized learning workspace for SSC and HSC candidates.
+
+---
+
+## Documentation Sections
+
+- [**Product Vision & Strategy**](SheraTutor_Full_Project_Documentation.md): Core platform capabilities, market analysis, and business models.
+- [**Software Requirements Specification**](SheraTutor_Software_Requirements_Specification.md): IEEE Std 830-compliant functional and security requirements.
+- [**Multimodal Textbook Ingestion**](NCTB_Class_9_10_Textbook_Corpus_Complete_Report.md): 57-textbook NCTB curriculum corpus, Vision-Language OCR, and vector RAG pipelines.
+- [**Google Genkit & Full-Stack Architecture**](antigravity-docs/SHERATUTOR_SYSTEM_ARCHITECTURE_REPORT.md): Next.js 16 App Router, React 19, Supabase pgvector, and Genkit v1.41+.
+- [**Interactive Architecture Explorers**](antigravity-docs/sheratutor_interactive_explorer.html): Visual interactive diagrams and pitch decks.
+- [**Microsoft Azure AI Foundry Knowledge Base**](crawled_docs/what-is-foundry.md): 63 technical reference guides covering Model Router, Agent Canvas, MCP, and observability.`
+    };
+
+    let currentSnippetKey = 'mkdocs';
+
+    function switchSnippet(key) {
+      currentSnippetKey = key;
+      document.querySelectorAll('.snip-btn').forEach(btn => {
+        btn.classList.remove('bg-[#FF6B57]', 'text-white');
+        btn.classList.add('bg-[var(--background)]', 'text-[var(--muted-foreground)]');
+      });
+      const active = document.getElementById(`btn-snip-${key}`);
+      if (active) {
+        active.classList.remove('bg-[var(--background)]', 'text-[var(--muted-foreground)]');
+        active.classList.add('bg-[#FF6B57]', 'text-white');
+      }
+      document.getElementById('code-display').innerText = snippets[key];
+    }
+
+    function copyCurrentSnippet() {
+      const text = snippets[currentSnippetKey];
+      navigator.clipboard.writeText(text).then(() => {
+        const btnText = document.getElementById('copy-btn-text');
+        btnText.innerText = 'Copied!';
+        setTimeout(() => btnText.innerText = 'Copy Code', 2000);
+      });
+    }
+
+    // Initial load
+    document.addEventListener('DOMContentLoaded', () => {
+      filterFiles();
+      switchSnippet('mkdocs');
+    });
+  </script>
+</body>
+</html>
