@@ -1,0 +1,19 @@
+{
+  "page_no": 67,
+  "chapter_no": 4,
+  "chapter_title": "পর্যায় সারণি (Periodic Table)",
+  "lang": "bn",
+  "markdown": "[DIAGRAM: পর্যায় সারণির মূল নকশা ও গ্রুপ-পর্যায় বিন্যাস]\n\n৬২\n\n1\n\n1 1\n\nH at সংখ্যা 6\n\nHydr 2\n\n00517\n\nহাইড্রোজেন পারমাণবিক সংখ্যা | 24 52 | পারমাণবিক ভর\n\n3 7 4 9\n\nLi 1739 y Cr oer\n\nপর্যায় সংখ্যা 4\n\nLithium | Beryllium Chromium\n\n11 257] 12 24\n\nNa 1৬5\n\nSodium Magnesium 3 4 5 6 7 8 9\n\nসোডিয়াম ] ম্যাগনেসিয়াম\n\n19 39 20 40 2] 45 | 22 48 23 51 24 52 125 55 26 56 |27 58\n\nK Ca Sc |Ti ৬ Cr Mn Fe (Co\n\nPotassium | Calcium Scandium | Titanium | Vanadium Chromium |Manganese |Iron Cobalt\n\n37. 85.5 | 38 88 39 89 | 40 91 41 93 42 96 43 98 44101145103\n\nRb | Sr )? Zr |Nb |Mo 10 [ডিএ [Rh\n\nRubidium | Strontium | Yttrium Zirconium | Niobium Molybdenum |Technetium |Ruthenium |Rhodium\n\nবুবিডিয়াম  স্ট্রোনসিয়াম | Sir | জিরকোনিয়াম | নিওবিয়াম.. 1 মলিবডেনাম (টেকনেসিয়াম | রুথেনিয়াম রোডিয়াম\n\n55 133 56 137 72 178.5 73 181 74 184 75 186 176 190 177 192\n\n05 1734 [118 W Re Os Ir\n\nCaesium | Barium Hafnium | Tantalum Tungsten |Rhenium Osmium _ |Iridium\n\n87 223 88 226 104 261 | 105 262 106 263 107 262 108 265 1109 266\n\nFr |Ra Rf |Db Sg |Bh 75 1৬1\n\nFrancium | Radium utherfordium| Dubnium Seaborgium |Bohrium |Hassium |Metrenium",
+  "diagrams": [
+    {
+      "figure_id": "p067_fig_01",
+      "caption": "পর্যায় সারণির মূল নকশা ও গ্রুপ-পর্যায় বিন্যাস",
+      "type": "scientific_diagram",
+      "local_path": "ingestion/output/figures_verified/chemistry/bn/ch_04/p067_fig_01.png"
+    }
+  ],
+  "tables_present": true,
+  "has_equations": false,
+  "verified": true,
+  "timestamp": 1788917152.6198053
+}
