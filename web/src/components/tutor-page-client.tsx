@@ -33,7 +33,7 @@ import { cn } from '@/lib/utils';
 import { sanitizeTutorReply } from '@/lib/tutor-format';
 
 type Chapter = { id: string; chapter_no: number; title_en: string; title_bn: string };
-type Subject = { id: string; name_en: string; name_bn: string; chapters: Chapter[] };
+type Subject = { id: string; code?: string; name_en: string; name_bn: string; chapters: Chapter[] };
 type SessionSummary = {
   id: string;
   title: string | null;
@@ -116,6 +116,7 @@ export function TutorPageClient({
     } else {
       setSelectedChapterId('');
     }
+    startNewSession();
   };
 
   // Scroll to bottom helper
@@ -257,7 +258,10 @@ export function TutorPageClient({
           metadata: {
             mode: 'general',
             subjectId: currentSubject?.id,
+            subjectCode: currentSubject?.code,
+            subjectName: currentSubject ? (language === 'bn' ? currentSubject.name_bn : currentSubject.name_en) : undefined,
             chapterId: currentChapter?.id,
+            chapterName: currentChapter ? (language === 'bn' ? currentChapter.title_bn : currentChapter.title_en) : undefined,
             studentMessage: query,
             languagePreference: language === 'en' ? 'en' : 'bn',
             scaffoldingStyle,
@@ -561,7 +565,10 @@ export function TutorPageClient({
                     key={c.id}
                     type="button"
                     onClick={() => {
-                      setSelectedChapterId(c.id);
+                      if (c.id !== selectedChapterId) {
+                        setSelectedChapterId(c.id);
+                        startNewSession();
+                      }
                       setMobileSidebarOpen(false);
                     }}
                     className={cn(
@@ -624,7 +631,7 @@ export function TutorPageClient({
               <span className="size-[7px] animate-pulse rounded-full bg-green" />
               <span className="text-xs font-semibold text-foreground">Shera AI Engine</span>
             </div>
-            <p className="mt-0.5 text-xs text-muted-foreground">NCTB Curriculum • NVIDIA NIM</p>
+            <p className="mt-0.5 text-xs text-muted-foreground">NCTB Curriculum • Google Gemini & Genkit</p>
           </div>
         </aside>
 
@@ -698,8 +705,22 @@ export function TutorPageClient({
                       <span>{language === 'bn' ? 'অধ্যায়ের মূল সূত্রমালা' : 'Core Concept Highlight'}</span>
                     </div>
                     <div className="flex flex-col gap-1 overflow-x-auto py-1 text-sm">
-                      <RenderMathText text={`$$W = \\vec{F} \\cdot \\vec{s} = F s \\cos\\theta$$`} inline={false} />
-                      <RenderMathText text={`$$\\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_i^2$$`} inline={false} />
+                      {currentSubject?.code === 'SSC-CHEM' ? (
+                        <>
+                          <RenderMathText text={`$$2H_2(g) + O_2(g) \\rightarrow 2H_2O(l) \\quad [\\Delta H = -572\\text{ kJ}]$$`} inline={false} />
+                          <RenderMathText text={`$$n = \\frac{W}{M} = \\frac{V}{22.4\\text{ L}} = \\frac{N}{N_A} = S \\times V_{(L)}$$`} inline={false} />
+                        </>
+                      ) : currentSubject?.code === 'SSC-MATH' ? (
+                        <>
+                          <RenderMathText text={`$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$`} inline={false} />
+                          <RenderMathText text={`$$\\sin^2\\theta + \\cos^2\\theta = 1, \\quad A = \\pi r^2$$`} inline={false} />
+                        </>
+                      ) : (
+                        <>
+                          <RenderMathText text={`$$W = \\vec{F} \\cdot \\vec{s} = F s \\cos\\theta$$`} inline={false} />
+                          <RenderMathText text={`$$\\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_i^2$$`} inline={false} />
+                        </>
+                      )}
                     </div>
                   </div>
 

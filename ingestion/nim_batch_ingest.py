@@ -25,6 +25,7 @@ import requests
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from prompts.textbook_prompts import PROMPTS
 
+CACHE_VERIFIED_DIR = Path(__file__).resolve().parent / "cache_verified"
 CACHE_BASE_DIR = Path(__file__).resolve().parent / "cache"
 
 def load_env():
@@ -423,7 +424,8 @@ def process_subject_batch(
     if not pdf_path or not Path(pdf_path).exists():
         raise FileNotFoundError(f"PDF not found for subject={subject}, lang={lang} at {pdf_path}")
         
-    cache_dir = CACHE_BASE_DIR / f"{subj_key}_{lang}"
+    verified_cache_dir = CACHE_VERIFIED_DIR / f"{subj_key}_{lang}"
+    cache_dir = verified_cache_dir if verified_cache_dir.exists() else (CACHE_BASE_DIR / f"{subj_key}_{lang}")
     cache_dir.mkdir(parents=True, exist_ok=True)
     
     prompt = PROMPTS.get(subj_key, PROMPTS["chemistry"])
@@ -492,10 +494,16 @@ def process_subject_batch(
             print(f"  [Page {p_num:03d}] Already in Supabase. Skipping.", flush=True)
             continue
             
+        verified_file = verified_cache_dir / f"page_{p_num:04d}.json"
         cache_file = cache_dir / f"page_{p_num:04d}.json"
         
-        # 1. Check cache
-        if cache_file.exists():
+        # 1. Check verified cache first, then standard cache
+        if verified_file.exists():
+            print(f"  [Page {p_num:03d}] Loading from VERIFIED ground-truth cache ({verified_file.name})...", flush=True)
+            page_data = json.loads(verified_file.read_text(encoding="utf-8"))
+            markdown_text = page_data["markdown"]
+            elapsed_s = page_data.get("extraction_time_s", 0.0)
+        elif cache_file.exists():
             print(f"  [Page {p_num:03d}] Loading from disk cache...", flush=True)
             page_data = json.loads(cache_file.read_text(encoding="utf-8"))
             markdown_text = page_data["markdown"]

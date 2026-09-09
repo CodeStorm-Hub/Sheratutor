@@ -175,50 +175,72 @@ def ingest_pdf(
     job_id = job.data[0]["id"]
 
     try:
-        with tempfile.TemporaryDirectory() as tmp:
-            chunks_file = run_marker(pdf_path, Path(tmp), page_range)
-            data = json.loads(chunks_file.read_text())
-            chunks = data.get("blocks") or data.get("chunks") or []
+        # Check if verified cache exists for this subject/language/chapter
+        subj_name = "chemistry" if "CHEM" in subject_code else ("mathematics" if "MATH" in subject_code else "physics")
+        verified_cache_dir = Path(__file__).resolve().parent / "cache_verified" / f"{subj_name}_{language_tag}"
+        
+        chunks = []
+        if verified_cache_dir.exists():
+            print(f"[cache_verified] Found verified cache at {verified_cache_dir}. Loading chapter {chapter_no}...", flush=True)
+            for p_file in sorted(verified_cache_dir.glob("page_*.json")):
+                p_data = json.loads(p_file.read_text(encoding="utf-8"))
+                if p_data.get("chapter_no") == chapter_no:
+                    text = p_data.get("markdown", "").strip()
+                    if text:
+                        chunks.append({
+                            "text": text,
+                            "page": p_data.get("page_no"),
+                            "diagrams": [d.get("local_path") for d in p_data.get("diagrams", []) if d.get("local_path")]
+                        })
+            print(f"[cache_verified] Loaded {len(chunks)} verified pages for Chapter {chapter_no}. (marker_single bypassed!)", flush=True)
 
-            produced = 0
-            for i, chunk in enumerate(chunks):
-                content = (chunk.get("html") or chunk.get("text") or "").strip()
-                if not content:
-                    continue
+        if not chunks:
+            with tempfile.TemporaryDirectory() as tmp:
+                chunks_file = run_marker(pdf_path, Path(tmp), page_range)
+                data = json.loads(chunks_file.read_text())
+                chunks = data.get("blocks") or data.get("chunks") or []
 
-                embedding = embed_text(content)
+        produced = 0
+        for i, chunk in enumerate(chunks):
+            content = (chunk.get("html") or chunk.get("text") or "").strip()
+            if not content:
+                continue
 
-                inserted = (
-                    supabase.table("curriculum_chunks")
-                    .insert(
-                        {
-                            "chapter_id": chapter_id,
-                            "curriculum_version_id": curriculum_version_id,
-                            "content_chunk": content,
-                            "content_format": "markdown",
-                            "source_book_page_ref": str(chunk.get("page", "")),
-                            "chunk_index": i,
-                        }
-                    )
-                    .execute()
-                )
-                chunk_id = inserted.data[0]["id"]
+            embedding = embed_text(content)
 
-                supabase.table("chunk_embeddings").insert(
-                    {
-                        "chunk_id": chunk_id,
-                        "model_name": EMBEDDING_MODEL_NAME,
-                        "model_version": EMBEDDING_MODEL_VERSION,
-                        "embedding": embedding,
-                    }
-                ).execute()
+            chunk_payload = {
+                "chapter_id": chapter_id,
+                "curriculum_version_id": curriculum_version_id,
+                "content_chunk": content,
+                "content_format": "markdown",
+                "source_book_page_ref": str(chunk.get("page", "")),
+                "chunk_index": i,
+            }
+            if chunk.get("diagrams"):
+                chunk_payload["diagram_image_urls"] = chunk["diagrams"]
 
-                produced += 1
+            inserted = (
+                supabase.table("curriculum_chunks")
+                .insert(chunk_payload)
+                .execute()
+            )
+            chunk_id = inserted.data[0]["id"]
 
-            supabase.table("ingestion_jobs").update(
-                {"status": "DONE", "chunks_produced": produced}
-            ).eq("id", job_id).execute()
-            print(f"[done] {pdf_path.name}: {produced} chunks")
+            supabase.table("chunk_embeddings").insert(
+                {
+                    "chunk_id": chunk_id,
+                    "model_name": EMBEDDING_MODEL_NAME,
+                    "model_version": EMBEDDING_MODEL_VERSION,
+                    "embedding": embedding,
+                }
+            ).execute()
+
+            produced += 1
+
+        supabase.table("ingestion_jobs").update(
+            {"status": "DONE", "chunks_produced": produced}
+        ).eq("id", job_id).execute()
+        print(f"[done] {pdf_path.name}: {produced} chunks")
 
     except Exception as exc:  # noqa: BLE001 — deliberately broad: any failure must mark the job FAILED, not silently vanish
         supabase.table("ingestion_jobs").update(

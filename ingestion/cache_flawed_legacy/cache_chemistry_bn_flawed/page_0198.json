@@ -1,0 +1,12 @@
+{
+  "page_no": 198,
+  "subject": "chemistry",
+  "lang": "bn",
+  "chapter_no": 8,
+  "markdown": "**চিত্র 8.04: তৈরিক্ষার ও তাদের বিক্রিয়া**\n\n| তৈরিক্ষার | বিক্রিয়া |\n| --- | --- |\n| Zn|Zn²⁺ | Zn(s) → Zn²⁺(aq) + 2e⁻ |\n| Cu|Cu²⁺ | Cu(s) → Cu²⁺(aq) + 2e⁻ |\n| Fe|Fe²⁺ | Fe(s) → Fe²⁺(aq) + 2e⁻ |\n| Ag|Ag⁺ | Ag(s) → Ag⁺(aq) + e⁻ |\n\n**চিত্র 8.05:**\n\n| তৈরিক্ষার | বিক্রিয়া |\n| --- | --- |\n| Li|Li⁺ | Li(s) → Li⁺(aq) + e⁻ |\n| K|K⁺ | K(s) → K⁺(aq) + e⁻ |\n| Na|Na⁺ | Na(s) → Na⁺(aq) + e⁻ |\n| Mg|Mg²⁺ | Mg(s) → Mg²⁺(aq) + 2e⁻ |\n| Al|Al³⁺ | Al(s) → Al³⁺(aq) + 3e⁻ |\n| Zn|Zn²⁺ | Zn(s) → Zn²⁺(aq) + 2e⁻ |\n| Fe|Fe²⁺ | Fe(s) → Fe²⁺(aq) + 2e⁻ |\n| Ni|Ni²⁺ | Ni(s) → Ni²⁺(aq) + 2e⁻ |\n| Sn|Sn²⁺ | Sn(s) → Sn²⁺(aq) + 2e⁻ |\n| Pb|Pb²⁺ | Pb(s) → Pb²⁺(aq) + 2e⁻ |\n| H₂|H⁺ | H₂(g) → 2H⁺(aq) + 2e⁻ |\n| Cu|Cu²⁺ | Cu(s) → Cu²⁺(aq) + 2e⁻ |\n| Ag|Ag⁺ | Ag(s) → Ag⁺(aq) + e⁻ |\n| Au|Au³⁺ | Au(s) → Au³⁺(aq) + 3e⁻ |\n\n**অনুদ্দে জারণ অধিক্রিয়া:**\n\nCu → Cu²⁺ + 2 e⁻\n\nএই কোষে সিলভার আয়ন ইলেকট্রন গ্রহণ করে ধাতব সিলভার আয়নের পরমাণু ইলেকট্রন ত্যাগ করে।\n\n**ক্যাথোডে বিজারণ অধিক্রিয়া:**\n\n2Ag⁺ + 2e⁻ → 2Ag\n\nএখন অর্ধবিক্রিয়া দুইটি যোগ করলে কোষ বিক্রিয়া পাওয়া যাবে।",
+  "char_count": 1032,
+  "extraction_time_s": 40.24,
+  "timestamp": 1788759053.6865602,
+  "model": "meta/llama-3.2-11b-vision-instruct",
+  "verified_pure_vision": true
+}

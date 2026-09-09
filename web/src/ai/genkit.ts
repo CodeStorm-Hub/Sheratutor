@@ -1,5 +1,6 @@
 import dns from "node:dns";
 import { genkit, z } from "genkit/beta";
+import { googleAI } from "@genkit-ai/google-genai";
 import { openAICompatible } from "@genkit-ai/compat-oai";
 import { ollama } from "genkitx-ollama";
 
@@ -70,8 +71,117 @@ export const agentRouterFetch = async (url: string | URL | Request, init?: Reque
   return res;
 };
 
+export const GEMINI_API_KEYS = [
+  process.env.GEMINI_API_KEY || process.env.GCP_API_KEY || "",
+  process.env.GEMINI_API_KEY_SECONDARY || "",
+].filter(Boolean);
+
+let geminiKeyIndex = 0;
+export function getNextGeminiApiKey(): string {
+  if (GEMINI_API_KEYS.length === 0) return "";
+  const key = GEMINI_API_KEYS[geminiKeyIndex % GEMINI_API_KEYS.length];
+  geminiKeyIndex++;
+  return key;
+}
+
+/**
+ * Robust embedding with automated failover across Gemini API keys
+ */
+export async function embedWithGeminiFallback(
+  text: string,
+  outputDimensionality: number = 1024
+): Promise<number[]> {
+  // 1. Try Genkit primary embedder first
+  try {
+    const embedResponse = await ai.embed({
+      embedder: activeEmbedder,
+      content: text,
+      options: { outputDimensionality },
+    });
+    if (embedResponse[0]?.embedding) {
+      return embedResponse[0].embedding;
+    }
+  } catch (primaryErr) {
+    console.warn("Primary ai.embed failed, checking secondary Gemini keys:", primaryErr);
+  }
+
+  // 2. Failover across all configured Gemini API keys directly
+  for (const key of GEMINI_API_KEYS) {
+    try {
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-2:embedContent?key=${key}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            content: { parts: [{ text }] },
+            outputDimensionality,
+          }),
+        }
+      );
+      if (!res.ok) continue;
+      const data = (await res.json()) as { embedding?: { values?: number[] } };
+      if (data.embedding?.values) {
+        return data.embedding.values;
+      }
+    } catch (_) {}
+  }
+
+  throw new Error("embedWithGeminiFallback: All Gemini embedding keys exhausted or failed");
+}
+
+/**
+ * Robust text generation with automated failover across Gemini API keys and NIM
+ */
+export async function generateWithGeminiFallback(
+  prompt: string,
+  config?: { temperature?: number }
+): Promise<string> {
+  // 1. Try Genkit primary generate
+  try {
+    const res = await ai.generate({
+      model: MODELS.reasoning,
+      prompt,
+      config: { temperature: config?.temperature ?? 0.3 },
+    });
+    if (res.text) return res.text;
+  } catch (primaryErr) {
+    console.warn("Primary ai.generate failed, checking secondary Gemini keys:", primaryErr);
+  }
+
+  // 2. Failover across all configured Gemini API keys directly
+  for (const key of GEMINI_API_KEYS) {
+    try {
+      const res = await fetch(
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash-lite:generateContent?key=${key}`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            contents: [{ parts: [{ text: prompt }] }],
+            generationConfig: {
+              temperature: config?.temperature ?? 0.3,
+            },
+          }),
+        }
+      );
+      if (!res.ok) continue;
+      const data = (await res.json()) as {
+        candidates?: { content?: { parts?: { text?: string }[] } }[];
+      };
+      const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (text) return text;
+    } catch (_) {}
+  }
+
+  throw new Error("generateWithGeminiFallback: All Gemini generation keys exhausted or failed");
+}
+
 export const ai = genkit({
   plugins: [
+    googleAI({
+      apiKey: process.env.GEMINI_API_KEY || process.env.GCP_API_KEY,
+    }),
     openAICompatible({
       name: "agentrouter",
       apiKey: process.env.AGENTROUTER_API_KEY ?? "",
@@ -98,36 +208,20 @@ export const ai = genkit({
 });
 
 /**
- * Model IDs (2026-09-07 re-pin). Every default is a model that is *live on
- * NVIDIA NIM's free hosted endpoint right now* — verified against
- * `GET https://integrate.api.nvidia.com/v1/models` plus a real completion
- * call per ID. The previous defaults (`nvidia/nemotron-3-nano-30b-a3b`,
- * `nvidia/llama-nemotron-embed-1b-v2`) had been retired upstream and every
- * call returned HTTP 410 Gone / 404. Do NOT set a model here without a
- * live 200 from that account first — the catalog lists many IDs the free
- * tier cannot actually serve.
- *
- *   reasoning / fast : openai/gpt-oss-20b — real reasoning model, clean
- *       OpenAI-compat `content`, solid at Socratic tutoring + tools.
- *   paper           : meta/llama-3.2-11b-vision-instruct — smallest/fastest
- *       working model, and paper generation runs as a server action bounded
- *       by Vercel's 60s function limit; the 30b reasoning models emit long
- *       think traces and time out on the big NCTB prompt.
- *   vision          : meta/llama-3.2-11b-vision-instruct — the only working
- *       vision model on the free tier (90b variant 404s).
+ * Model IDs: Powered by Google Gemini.
+ * - Primary reasoning/fast: gemini-3.5-flash-lite (500 RPD, ~3s latency, full LaTeX/KaTeX).
+ * - Fallback: gemini-2.5-flash.
  */
 export const MODELS = {
-  vision: process.env.GENKIT_VISION_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
-  reasoning: process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b",
-  fast: process.env.GENKIT_FAST_MODEL ?? "nim/openai/gpt-oss-20b",
-  paper: process.env.GENKIT_PAPER_MODEL ?? "nim/meta/llama-3.2-11b-vision-instruct",
+  vision: process.env.GENKIT_VISION_MODEL ?? "googleai/gemini-3.5-flash-lite",
+  reasoning: process.env.GENKIT_REASONING_MODEL ?? "googleai/gemini-3.5-flash-lite",
+  fast: process.env.GENKIT_FAST_MODEL ?? "googleai/gemini-3.5-flash-lite",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "googleai/gemini-3.5-flash-lite",
 } as const;
 
-// Fallback reasoning model, deliberately a DIFFERENT live NIM model from
-// MODELS.reasoning / MODELS.paper so a per-model outage still has a working
-// path (this is what actually rescued paper generation in testing).
+// Fallback reasoning model
 export const FALLBACK_REASONING_MODEL =
-  process.env.GENKIT_FALLBACK_REASONING_MODEL ?? "nim/openai/gpt-oss-20b";
+  process.env.GENKIT_FALLBACK_REASONING_MODEL ?? "googleai/gemini-2.5-flash";
 
 // NIM's hosted llama-nemotron-embed-vl-1b-v2 with `dimensions: 1024`
 // (Matryoshka truncation, verified) — successor to the retired
@@ -242,16 +336,13 @@ export const nimEmbedder = ai.defineEmbedder(
   }
 );
 
-// NIM everywhere. `ollamaEmbedder` stays defined for optional fully-offline
-// experiments, but it is NOT the active path anymore: local dev and prod both
-// embed + query through NIM so the model, dimensions and stored `model_name`
-// are identical in every environment. (Previously local used Ollama/bge-m3
-// while prod used a since-retired NIM model — dev "passed" while prod's RAG
-// returned zero rows.)
-export const isLocalOllamaEmbed = false;
-export const activeEmbedder = nimEmbedder;
-export const EMBED_MODEL_NAME = NIM_EMBED_MODEL;
-export const EMBED_MODEL_VERSION = NIM_EMBED_MODEL_VERSION;
+export const geminiEmbedder = googleAI.embedder("gemini-embedding-2");
 
-export const PIPELINE_VERSION = "v1.4.0-nim-only";
-export const PROMPT_VERSION = "v1.1.0";
+// Active embedder: gemini-embedding-2 matching our 304 ingested Supabase curriculum chunks
+export const isLocalOllamaEmbed = false;
+export const activeEmbedder = geminiEmbedder;
+export const EMBED_MODEL_NAME = "gemini-embedding-2";
+export const EMBED_MODEL_VERSION = "v1";
+
+export const PIPELINE_VERSION = "v1.5.0-gemini";
+export const PROMPT_VERSION = "v1.2.0";

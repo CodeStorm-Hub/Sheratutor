@@ -23,6 +23,8 @@ create index if not exists idx_curriculum_chunks_fts
   on public.curriculum_chunks using gin (fts_doc);
 
 -- 3. Update match_curriculum_chunks for Hybrid Retrieval + Metadata
+drop function if exists public.match_curriculum_chunks(extensions.vector, uuid, public.language_tag, integer, text, text);
+drop function if exists public.match_curriculum_chunks(vector, uuid, language_tag, integer, text, text);
 create or replace function public.match_curriculum_chunks(
   query_embedding extensions.vector(1024),
   p_chapter_id uuid,
@@ -41,6 +43,7 @@ returns table (
   section_title text,
   official_rubric_rules jsonb,
   source_book_page_ref text,
+  diagram_image_urls text[],
   similarity float
 )
 language sql
@@ -58,6 +61,7 @@ as $$
       cc.section_title,
       cc.official_rubric_rules,
       cc.source_book_page_ref,
+      cc.diagram_image_urls,
       1 - (ce.embedding <=> query_embedding) as similarity,
       row_number() over (order by ce.embedding <=> query_embedding) as dense_rank
     from public.curriculum_chunks cc
@@ -73,6 +77,8 @@ as $$
   sparse_search as (
     select
       cc.id as chunk_id,
+      cc.source_book_page_ref,
+      cc.diagram_image_urls,
       row_number() over (order by ts_rank_cd(cc.fts_doc, plainto_tsquery('simple', coalesce(query_text, ''))) desc) as sparse_rank
     from public.curriculum_chunks cc
     join public.curriculum_versions cv on cv.id = cc.curriculum_version_id
@@ -93,6 +99,7 @@ as $$
       d.section_title,
       d.official_rubric_rules,
       d.source_book_page_ref,
+      d.diagram_image_urls,
       d.similarity,
       -- Reciprocal Rank Fusion (k=60)
       (1.0 / (60 + d.dense_rank)) + coalesce(1.0 / (60 + s.sparse_rank), 0.0) as rrf_score

@@ -1,10 +1,19 @@
 {
   "page_no": 46,
-  "subject": "chemistry",
-  "lang": "bn",
   "chapter_no": 3,
-  "markdown": "**Diagram Analysis**\n\n[DIAGRAM]\nCaption: ভরসংখ্যা (Mass Number)\nCallouts:\n*   ভরসংখ্যা (A)\n*   23Na\n*   পারমাণবিক সংখ্যা (Z)\nDescription: The diagram illustrates the concept of mass number, which is the sum of protons and neutrons in an atom's nucleus. The mass number is represented by the symbol A, and it is equal to the atomic number Z plus the number of neutrons. In this case, the mass number of sodium (Na) is 23, which means that it has 11 protons and 12 neutrons in its nucleus.\n\n**Table Analysis**\n\n| মৌলের প্রতীক | পারমাণবিক সংখ্যা | ভরসংখ্যা | ইন্লেক্ট্রন সংখ্যা | নিউট্রন সংখ্যা |\n| --- | --- | --- | --- | --- |\n| H | 1 | 1 | 1 | 0 |\n| He | 2 | 4 | 2 | 2 |\n\nThis table provides information about the atomic structure of hydrogen (H) and helium (He). The columns represent the following:\n\n*   **Molecular Symbol**: The chemical symbol for each element.\n*   **Atomic Number**: The number of protons in an atom's nucleus.\n*   **Mass Number**: The sum of protons and neutrons in an atom's nucleus.\n*   **Electron Count**: The number of electrons in a neutral atom.\n*   **Neutron Count**: The number of\n\nপদার্থের গঠন\n\n3.5.2 ভরসংখ্যা (Mass Number)\n\nকোনো পরমাণুর নিউক্লিয়াসে উপস্থিত প্রোটন ও নিউট্রন সংখ্যার যোগফলকে এ পরমাণুর ভরসংখ্যা বলে।\nভরসংখ্যাকে A দিয়ে প্রকাশ করা হয়। যেহেতু ভরসংখ্যা হলো ধোটন সংখ্যা ও HAGA সংখ্যার\nযোগফল, কাজেই ভরসংখ্যা থেকে প্রোটন সংখ্যা বিয়োগ করলে নিউট্রন সংখ্যা পাওয়া যায়।\nসোডিয়ামের (Na) ভরসংখ্যা হলো 23, এর প্রোটন সংখ্যা 11, ফলে এর নিউন্রন সংখ্যা হচ্ছে 23 -11\n\n=12\n\nকোনো পরমাণুর পারমাণবিক সংখ্যা পরমাণুর প্রতীকের নিচে বাম পাশে লেখা হয়, পরমাণুর ভরসংখ্যা\nপ্রতীকের বাম পাশে উপরের দিকে লেখা হয়। যেমন_ সোডিয়াম পরমাণুর প্রতীক Na, এর পারমাণবিক\n\nসংখ্যা 1] এবং ভরসংখ্যা 231 এটাকে নিম্োন্তভাবে প্রকাশ করা যায়:\n\nভরসংখ্যা (A)\n\nপারমাণবিক সংখ্যা\nবা প্রোটন সংখ্যা (2)\n\n™ “Na\n\nটেবিল 3.05: মৌলের সংক্ষিপ্ত প্রকাশ।\n\nমৌলের | পারমাণবিক সংখ্যা) ভরসংখ্যা ইলেকট্রন | নিউট্রন সংখ্যা | সংক্ষিপ্ত\nপ্রতীক | বা প্রোটন সংখ্যা £ A সংখ্যা Rez প্রকাশ\nH 1 A i 0 1\niH\nHe 2 4 2 2 He\n\n(জল\n\nশিক্ষার্থীর কাজ: fui এবং 28 মৌলের ভর সংখ্যা, প্রোটন সংখ্যা এবং ইলেকট্রন সংখ্যা\n\nগণনা করো।\n\nফর্মা নং-৬, রসায়ন_ ৯ম-১০ম শ্রেণি",
-  "char_count": 2122,
-  "extraction_time_s": 35.27,
-  "timestamp": 1788730325.6122468
+  "chapter_title": "পদার্থের গঠন (Structure of Matter)",
+  "lang": "bn",
+  "markdown": "[DIAGRAM: মৌলের প্রতীক ও নিউক্লীয় সংকেত কাঠামো (ভরসংখ্যা A, পারমাণবিক সংখ্যা Z, আধান)]\n\nপদার্থের গঠন\n\n3.5.2 ভরসংখ্যা (Mass Number)\n\nকোনো পরমাণুর নিউক্লিয়াসে উপস্থিত প্রোটন ও নিউন্ন সংখ্যার যোগফলকে এ পরমাণুর ভরসংখ্যা বলে।\n\nভরসংখ্যাকে A দিয়ে প্রকাশ করা হয়। যেহেতু ভরসংখ্যা হলো প্রোটন সংখ্যা ও নিউট্রন সংখ্যার\n\nযোগফল, কাজেই ভরসংখ্যা থেকে প্রোটন সংখ্যা বিয়োগ করলে নিউট্রন সংখ্যা পাওয়া যায়।\n\nসোডিয়ামের (Na) ভরসংখ্যা হলো 23, এর প্রোটন সংখ্যা 11, ফলে এর নিউট্রন সংখ্যা হচ্ছে 23 -11\n\n= 129\n\nকোনো পরমাণুর পারমাণবিক সংখ্যা পরমাণুর প্রতীকের নিচে বাম পাশে লেখা হয়, পরমাণুর ভরসংখ্যা\n\nপ্রতীকের বাম পাশে উপরের দিকে লেখা হয়। যেমন_ সোডিয়াম পরমাণুর প্রতীক Na, এর পারমাণবিক\n\nসংখ্যা 11 এবং ভরসংখ্যা 231 এটাকে নিমোন্তুভাবে প্রকাশ করা যায়:\n\n/৮\n\nভরসংখ্যা (A)\n\nপারমাণবিক সংখ্যা\n\nবা প্রোটন সংখ্যা (2)\n\n১৯ 7739\n\n~\n\n/\n\nটেবিল 3.05: মৌলের সংক্ষিপ্ত প্রকাশ।\n\nমৌলের | পারমাণবিক সংখ্যা । ভরসং ইলেকট্রন | নিউট্রন সংখ্যা | সংক্ষিপ্ত\n\nপ্রতীক বা প্রোটন সংখ্যা 7 A সংখ্যা A-Z প্রকাশ\n\nH 1 1 1 0 1\n\n111\n\nHe 2 4 2 2 ? He\n\n(বট) eer\n\nশিক্ষার্থীর কাজ: রঃ এবং “Be মৌলের ভর সংখ্যা, প্রোটন সংখ্যা এবং ইলেকট্রন সংখ্যা\n\nগণনা PCA |\n\nফর্মা নং-৬, PU\n\n৯ম-১০ম শ্রেণি",
+  "diagrams": [
+    {
+      "figure_id": "p046_fig_01",
+      "caption": "মৌলের প্রতীক ও নিউক্লীয় সংকেত কাঠামো (ভরসংখ্যা A, পারমাণবিক সংখ্যা Z, আধান)",
+      "type": "scientific_diagram",
+      "local_path": "ingestion/output/figures_verified/chemistry/bn/ch_03/p046_fig_01.png"
+    }
+  ],
+  "tables_present": true,
+  "has_equations": true,
+  "verified": true,
+  "timestamp": 1788916923.5062017
 }

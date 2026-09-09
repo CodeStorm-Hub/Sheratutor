@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, MODELS } from "@/ai/genkit";
+import { ai, MODELS, generateWithGeminiFallback } from "@/ai/genkit";
 import { OpenAI } from "openai";
 
 const SELF_HARM_PATTERNS = [
@@ -50,6 +50,7 @@ export function buildTutorPrompt(params: {
   subjectName?: string;
   chapterName?: string;
   groundedContext?: string;
+  diagramUrls?: string[];
   history?: { role: "student" | "tutor"; text: string }[];
   studentMessage: string;
   languagePreference: "bn" | "en";
@@ -63,6 +64,7 @@ export function buildTutorPrompt(params: {
     subjectName,
     chapterName,
     groundedContext,
+    diagramUrls = [],
     history = [],
     studentMessage,
     languagePreference,
@@ -86,6 +88,13 @@ export function buildTutorPrompt(params: {
   const textbookSection = sanitizedContext
     ? `\n\nOFFICIAL NCTB TEXTBOOK CONTEXT:\n${sanitizedContext}\n`
     : "";
+
+  const diagramSection =
+    diagramUrls && diagramUrls.length > 0
+      ? `\n\nOFFICIAL NCTB DIAGRAM ASSETS (MANDATORY: Copy one EXACT URL verbatim from this list to embed as ![ক্যাপশন](URL)):\n` +
+        diagramUrls.map((u) => `- ${u}`).join("\n") +
+        "\n"
+      : "";
 
   const socraticInstruction =
     scaffoldingStyle === "socratic"
@@ -114,30 +123,31 @@ export function buildTutorPrompt(params: {
       : `ACADEMIC CONTEXT:\n` +
         `SUBJECT: ${subjectName ?? "General"}\n` +
         `CHAPTER: ${chapterName ?? "General"}\n` +
-        `The student is asking a free-form question about this chapter — there is no graded answer to reference.`;
+        `The student is asking a free-form question about this curriculum topic.`;
 
   const rule6 =
     mode === "rubric"
       ? `6. If the student asks about anything off-topic, gently redirect them back to studying this question.\n\n`
-      : `6. If the student asks about anything off-topic, gently redirect them back to studying ${chapterName ?? "this chapter"}.\n\n`;
+      : `6. If the student asks about anything off-topic, gently redirect them back to studying ${chapterName ?? "this topic"}.\n\n`;
 
   return (
-    `You are SheraTutor's "Explain it simply" AI tutor for Bangladeshi SSC/HSC Physics students. ${roleIntro}\n\n` +
+    `You are SheraTutor's "Explain it simply" AI tutor for Bangladeshi SSC/HSC students. ${roleIntro}\n\n` +
     socraticInstruction +
     `CORE RULES:\n` +
     `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}. ` +
     `Do NOT open with greetings or introductory salutations — start immediately with the explanation or guiding question.\n` +
-    `2. Keep the response concise and focused (under 250 words, 2-3 short paragraphs or bullet points).\n` +
+    `2. Keep the response concise and focused (under 300 words, structured in clear paragraphs or bullet points).\n` +
     `3. Write in Bengali script and English for scientific terminology, units, and LaTeX notation.\n` +
-    `4. Every mathematical formula, physical quantity, and equation MUST be wrapped in standard LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
-    `Example: $F = ma$, $s = ut + \\frac{1}{2}at^2$, $\\text{ms}^{-1}$, $\\tan^{-1}\\left(\\frac{1}{5}\\right)$. ` +
-    `CRITICAL: NEVER insert dollar signs inside LaTeX function arguments (like \\left(...\\) or \\frac{...}{...}), and never wrap Bengali prose or sentences in dollar signs.\n` +
-    `5. Adhere to official NCTB textbook curriculum definitions and formulas.\n` +
-    `6. Provide relatable real-life Bangladeshi analogies (e.g. Dhaka traffic, bicycle/rickshaw motion, cricket balls). ` +
-    `Any number you put in an analogy MUST be arithmetically consistent with the solution above — re-check it; if unsure, keep the analogy qualitative with no numbers.\n` +
+    `4. Every mathematical formula, chemical symbol, ion, and equation MUST be wrapped in standard LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
+    `Example: $NH_3$, $HCl$, $Zn \\rightarrow Zn^{2+} + 2e^-$, $F = ma$, $\\text{ms}^{-1}$. ` +
+    `CRITICAL: NEVER insert dollar signs inside LaTeX function arguments, and never wrap Bengali prose in dollar signs.\n` +
+    `5. Adhere strictly to official NCTB textbook curriculum definitions and formulas.\n` +
+    `6. If official diagram URLs are provided in the OFFICIAL NCTB DIAGRAM ASSETS section below, you MUST embed the primary relevant diagram using standard Markdown: ![ক্যাপশন](EXACT_URL_FROM_LIST). ` +
+    `CRITICAL: Copy the EXACT URL verbatim from the list below. NEVER invent, modify, or hallucinate external image links (such as ibb.co or imgur). If no URL is provided below, do NOT output any image markdown.\n` +
     rule6 +
     academicContext +
     textbookSection +
+    diagramSection +
     historyPrompt +
     `\n\nSTUDENT: ${studentMessage}\n\nAI TUTOR:`
   );
@@ -170,6 +180,7 @@ export const tutorChatFlow = ai.defineFlow(
       subjectName: z.string().optional(),
       chapterName: z.string().optional(),
       groundedContext: z.string().optional(),
+      diagramUrls: z.array(z.string()).optional(),
       history: z.array(ChatMessageSchema).optional().default([]),
       studentMessage: z.string(),
       languagePreference: z.enum(["bn", "en"]).default("bn"),
@@ -188,6 +199,7 @@ export const tutorChatFlow = ai.defineFlow(
     subjectName,
     chapterName,
     groundedContext,
+    diagramUrls,
     history = [],
     studentMessage,
     languagePreference,
@@ -206,6 +218,7 @@ export const tutorChatFlow = ai.defineFlow(
       subjectName,
       chapterName,
       groundedContext,
+      diagramUrls,
       history,
       studentMessage,
       languagePreference,
@@ -213,14 +226,9 @@ export const tutorChatFlow = ai.defineFlow(
 
     let text: string = "";
     try {
-      const res = await ai.generate({
-        model: MODELS.reasoning,
-        prompt,
-        config: { temperature: 0.3 },
-      });
-      text = res.text;
+      text = await generateWithGeminiFallback(prompt, { temperature: 0.3 });
     } catch (err) {
-      console.warn("tutorChatFlow ai.generate failed, falling back to direct NIM client:", err);
+      console.warn("tutorChatFlow Gemini generation failed, falling back to direct NIM/AgentRouter client:", err);
       const isNim = (process.env.GENKIT_REASONING_MODEL ?? "").startsWith("nim/") || Boolean(process.env.NVIDIA_NIM_API_KEY);
       const modelName = (process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b").replace(/^(?:nim|agentrouter)\//, "");
       const client = new OpenAI({
@@ -238,6 +246,21 @@ export const tutorChatFlow = ai.defineFlow(
         temperature: 0.3,
       });
       text = completion.choices?.[0]?.message?.content || "";
+    }
+
+    // Guarantee authentic diagram rendering: if official diagrams are available and not yet embedded, inject
+    if (diagramUrls && diagramUrls.length > 0) {
+      const hasImage = /!\[.*?\]\(https?:\/\/[^\s)]+\)/.test(text);
+      if (!hasImage) {
+        const primaryDiagram = diagramUrls[0];
+        const caption = chapterName ? `${chapterName} চিত্র` : "NCTB পাঠ্যবই চিত্র";
+        const firstBreak = text.indexOf("\n\n");
+        if (firstBreak !== -1) {
+          text = `${text.slice(0, firstBreak)}\n\n![${caption}](${primaryDiagram})\n\n${text.slice(firstBreak + 2)}`;
+        } else {
+          text = `![${caption}](${primaryDiagram})\n\n${text}`;
+        }
+      }
     }
 
     return { reply: sanitizeTutorReply(text), safety };

@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, activeEmbedder, EMBED_MODEL_NAME, EMBED_MODEL_VERSION } from "@/ai/genkit";
+import { ai, embedWithGeminiFallback, EMBED_MODEL_NAME, EMBED_MODEL_VERSION } from "@/ai/genkit";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 
 const GroundingChunkSchema = z.object({
@@ -9,10 +9,16 @@ const GroundingChunkSchema = z.object({
   parent_chunk_id: z.string().nullable().optional(),
   section_no: z.string().nullable().optional(),
   section_title: z.string().nullable().optional(),
-  official_rubric_rules: z.unknown().nullable(),
+  chapter_no: z.number().nullable().optional(),
+  chapter_title: z.string().nullable().optional(),
+  diagram_image_urls: z.array(z.string()).nullable().optional(),
+  official_rubric_rules: z.unknown().nullable().optional(),
   source_book_page_ref: z.string().nullable(),
   similarity: z.number(),
 });
+
+const isUuid = (val?: string | null): boolean =>
+  !!val && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(val);
 
 const BENGALI_PHYSICS_SYNONYMS: Record<string, string[]> = {
   "ত্বরণ": ["acceleration", "বেগের পরিবর্তন", "মন্দন"],
@@ -26,6 +32,11 @@ const BENGALI_PHYSICS_SYNONYMS: Record<string, string[]> = {
   "আলো": ["light", "প্রতিফলন", "প্রতিসরণ", "দর্পণ"],
   "শব্দ": ["sound", "তরঙ্গ", "কম্পাঙ্ক", "প্রতিধ্বনি"],
   "বিদ্যুৎ": ["electricity", "তড়িৎ", "রোধ", "বর্তনী", "ওহমের সূত্র"],
+  // Chemistry expansion
+  "পরমাণু": ["atom", "নিউক্লিয়াস", "রাদারফোর্ড", "বোর", "ইলেকট্রন"],
+  "পর্যায়": ["periodic table", "পর্যায় সারণি", "আয়নীকরণ", "পারমাণবিক ব্যাসার্ধ"],
+  "বিক্রিয়া": ["reaction", "জারণ", "বিজারণ", "অ্যানোড", "ক্যাথোড", "ড্রাই সেল"],
+  "ব্যাপন": ["diffusion", "নিঃসরণ", "অ্যামোনিয়া", "হাইড্রোক্লোরিক"],
 };
 
 export function expandBengaliPhysicsQuery(query: string): string {
@@ -39,49 +50,68 @@ export function expandBengaliPhysicsQuery(query: string): string {
 }
 
 /**
- * Layer 2: Bilingual Hybrid RAG grounding.
- * Combines dense BGE-M3 (1024-dim) vector similarity with PostgreSQL full-text search (tsvector)
- * via Reciprocal Rank Fusion (RRF), scoped to (chapter, language).
- * Automatically resolves parent stimulus context for Creative Question (CQ) sub-questions.
+ * Layer 2: Multimodal Bilingual Hybrid RAG grounding.
+ * Uses gemini-embedding-2 (1024-dim) with pgvector HNSW + full-text search.
+ * Supports both chapter-scoped and global curriculum-wide queries with authentic diagrams.
  */
 export const retrieveGroundingFlow = ai.defineFlow(
   {
     name: "retrieveGrounding",
     inputSchema: z.object({
       queryText: z.string(),
-      chapterId: z.string(),
-      languageTag: z.enum(["bn", "en"]),
-      matchCount: z.number().default(5),
+      chapterId: z.string().nullable().optional(),
+      subjectCode: z.string().optional(),
+      languageTag: z.enum(["bn", "en"]).optional(),
+      matchCount: z.number().optional(),
     }),
     outputSchema: z.object({
       chunks: z.array(GroundingChunkSchema),
       groundingConfidence: z.number().min(0).max(1),
     }),
   },
-  async ({ queryText, chapterId, languageTag, matchCount }) => {
+  async ({ queryText, chapterId, subjectCode = "SSC-CHEM", languageTag = "bn", matchCount = 4 }) => {
+    const hasBengali = /[\u0980-\u09FF]/.test(queryText);
+    const effectiveLanguageTag = hasBengali ? "bn" : languageTag;
     const enrichedQuery = expandBengaliPhysicsQuery(queryText);
 
-    // 1. Embed query with BGE-M3
-    const embedResponse = await ai.embed({
-      embedder: activeEmbedder,
-      content: enrichedQuery,
-      options: { inputType: "query" },
-    });
-    const embedding = embedResponse[0]?.embedding;
-    if (!embedding) throw new Error("retrieveGrounding: embedding failed");
+    // 1. Embed query with gemini-embedding-2 (1024 dimensions) with automatic key failover
+    const embedding = await embedWithGeminiFallback(enrichedQuery, 1024);
+    if (!embedding || embedding.length === 0) throw new Error("retrieveGrounding: embedding failed");
 
     const supabase = getServiceRoleClient();
     
-    // 2. Execute Hybrid Search (Dense HNSW + Sparse FTS) via RPC
-    const { data, error } = await supabase.rpc("match_curriculum_chunks", {
-      query_embedding: embedding,
-      p_chapter_id: chapterId,
-      p_language_tag: languageTag,
-      match_count: matchCount,
-      p_model_name: EMBED_MODEL_NAME,
-      p_model_version: EMBED_MODEL_VERSION,
-      query_text: enrichedQuery,
-    });
+    // 2. Execute Hybrid Search via RPC (Chapter-specific or Global)
+    const runRpc = (lang: string) =>
+      isUuid(chapterId)
+        ? supabase.rpc("match_curriculum_chunks", {
+            query_embedding: embedding,
+            p_chapter_id: chapterId as string,
+            p_language_tag: lang,
+            match_count: matchCount,
+            p_model_name: EMBED_MODEL_NAME,
+            p_model_version: EMBED_MODEL_VERSION,
+            query_text: enrichedQuery,
+          })
+        : supabase.rpc("match_curriculum_chunks_global", {
+            query_embedding: embedding,
+            p_subject_code: subjectCode,
+            p_language_tag: lang,
+            match_count: matchCount,
+            p_model_name: EMBED_MODEL_NAME,
+            p_model_version: EMBED_MODEL_VERSION,
+            query_text: enrichedQuery,
+          });
+
+    let { data, error } = await runRpc(effectiveLanguageTag);
+    // Fallback: If 0 chunks retrieved and language was en, retry with bn
+    if ((!data || data.length === 0) && effectiveLanguageTag !== "bn") {
+      const fallbackRes = await runRpc("bn");
+      if (fallbackRes.data && fallbackRes.data.length > 0) {
+        data = fallbackRes.data;
+        error = fallbackRes.error;
+      }
+    }
+    console.log("retrieveGroundingFlow RPC result count:", data?.length, "error:", error?.message, "diagrams:", data?.map((d: any) => d.diagram_image_urls));
 
     if (error) throw new Error(`retrieveGrounding: ${error.message}`);
 

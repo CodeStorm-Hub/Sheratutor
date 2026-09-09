@@ -32,29 +32,29 @@ SUBJECT_PDF_MAP = {
     "SSC-CHEM": {
         "name_en": "Chemistry",
         "name_bn": "রসায়ন",
-        "bn": "Secondary (BV)-2026_Class 9-10_Chemistry_compressed.pdf",
-        "en": "Chemistry 9, com_compressed.pdf",
+        "bn": "chemistry_bn.pdf",
+        "en": "chemistry_en.pdf",
         # Default page ranges for sample/pilot chapters
         "sample_chapter_pages": {
-            1: (1, 15),   # Chapter 1: Concepts of Chemistry (রসায়নের ধারণা)
-            2: (16, 35),  # Chapter 2: States of Matter (পদার্থের অবস্থা)
+            1: (6, 21),   # Chapter 1: Concepts of Chemistry (রসায়নের ধারণা)
+            2: (22, 39),  # Chapter 2: States of Matter (পদার্থের অবস্থা)
         }
     },
     "SSC-MATH": {
         "name_en": "Mathematics",
         "name_bn": "গণিত",
-        "bn": "Secondary (BV)-2026_Class 9-10_Math_compressed.pdf",
-        "en": "Math-9, com _compressed.pdf",
+        "bn": "mathematics_bn.pdf",
+        "en": "mathematics_en.pdf",
         "sample_chapter_pages": {
-            1: (1, 20),   # Chapter 1: Real Numbers (বাস্তব সংখ্যা)
-            2: (21, 40),  # Chapter 2: Sets and Functions (সেট ও ফাংশন)
+            1: (1, 20),
+            2: (21, 40),
         }
     },
     "SSC-ENG": {
         "name_en": "English",
         "name_bn": "ইংরেজি",
-        "bn": "Secondary (BV)-2026_Class 9-10_English For Today_compressed.pdf",
-        "en": "Secondary (BV)-2026_Class 9-10_English For Today_compressed.pdf",
+        "bn": "english_for_today.pdf",
+        "en": "english_grammar_and_composition.pdf",
         "sample_chapter_pages": {
             1: (1, 18),
         }
@@ -98,20 +98,58 @@ def run_batch_ingest(
     print(f"Pages: {start_page} to {end_page} | Model: {vision_model} | Target: {target}")
     print("=" * 70)
 
-    # 2. Extract pages using Vision Model
-    print(f"\n[1/4] Running Vision Extraction ({vision_model})...")
-    
-    def on_progress(cur, tot, data):
-        print(f"  -> Page {cur}/{tot} transcribed: {data['char_count']} chars ({data['elapsed_seconds']}s)")
+    # 2. Extract pages (prioritizing cache_verified ground-truth)
+    CACHE_VERIFIED_DIR = SCRIPT_DIR / "cache_verified"
+    CACHE_BASE_DIR = SCRIPT_DIR / "cache"
+    subj_prefix = "chemistry" if "CHEM" in subject_code else ("mathematics" if "MATH" in subject_code else "english")
+    verified_cache_dir = CACHE_VERIFIED_DIR / f"{subj_prefix}_{language}"
+    base_cache_dir = CACHE_BASE_DIR / f"{subj_prefix}_{language}"
 
-    extracted_pages = extract_pdf_pages(
-        str(pdf_path),
-        start_page=start_page - 1,
-        end_page=end_page - 1,
-        model_name=vision_model,
-        dpi=dpi,
-        progress_callback=on_progress
-    )
+    extracted_pages = []
+    missing_pages = []
+
+    print(f"\n[1/4] Checking verified cache for pages {start_page}..{end_page}...")
+    for p_no in range(start_page, end_page + 1):
+        v_file = verified_cache_dir / f"page_{p_no:04d}.json"
+        b_file = base_cache_dir / f"page_{p_no:04d}.json"
+        
+        found_file = v_file if v_file.exists() else (b_file if b_file.exists() else None)
+        if found_file:
+            try:
+                p_data = json.loads(found_file.read_text(encoding="utf-8"))
+                extracted_pages.append({
+                    "page_no": p_no,
+                    "zero_index": p_no - 1,
+                    "markdown": p_data["markdown"],
+                    "char_count": len(p_data["markdown"]),
+                    "elapsed_seconds": 0.0,
+                    "source": "verified_cache" if found_file == v_file else "disk_cache"
+                })
+            except Exception:
+                missing_pages.append(p_no)
+        else:
+            missing_pages.append(p_no)
+
+    if len(extracted_pages) == (end_page - start_page + 1):
+        print(f"  -> All {len(extracted_pages)} pages loaded directly from VERIFIED ground-truth cache! (0 Vision API calls needed)")
+    else:
+        print(f"  -> {len(extracted_pages)} pages loaded from cache. Extracting {len(missing_pages)} remaining pages via Vision Model ({vision_model})...")
+        if missing_pages:
+            def on_progress(cur, tot, data):
+                print(f"  -> Page {cur}/{tot} transcribed: {data['char_count']} chars ({data['elapsed_seconds']}s)")
+
+            fresh_pages = extract_pdf_pages(
+                str(pdf_path),
+                start_page=min(missing_pages) - 1,
+                end_page=max(missing_pages) - 1,
+                model_name=vision_model,
+                dpi=dpi,
+                progress_callback=on_progress
+            )
+            fresh_map = {p["page_no"]: p for p in fresh_pages}
+            all_p = {p["page_no"]: p for p in extracted_pages}
+            all_p.update(fresh_map)
+            extracted_pages = [all_p[p_no] for p_no in range(start_page, end_page + 1) if p_no in all_p]
 
     # 3. Classify & Structure Chunks
     print(f"\n[2/4] Classifying chunks and building CQ hierarchy...")

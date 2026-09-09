@@ -14,10 +14,15 @@ async function getSubjects() {
   );
   const { data: subjects } = await supabase
     .from('subjects')
-    .select('id, name_en, name_bn, chapters(id, chapter_no, title_en, title_bn)')
-    .eq('code', 'SSC-PHY')
+    .select('id, code, name_en, name_bn, chapters(id, chapter_no, title_en, title_bn)')
     .order('name_en');
-  return subjects ?? [];
+
+  // Order subjects so Chemistry (SSC-CHEM with verified multimodal RAG) appears first
+  return (subjects ?? []).slice().sort((a, b) => {
+    if (a.code === 'SSC-CHEM') return -1;
+    if (b.code === 'SSC-CHEM') return 1;
+    return (a.name_en || '').localeCompare(b.name_en || '');
+  });
 }
 
 async function TutorContent() {

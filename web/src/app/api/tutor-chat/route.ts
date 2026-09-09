@@ -152,11 +152,18 @@ export async function POST(req: Request) {
   const rawCustom = (rawState.custom as Record<string, unknown> | undefined) || {};
   const rawData = (body?.data as Record<string, unknown> | undefined) || {};
   const inlineMeta = (rawData.metadata as Record<string, unknown> | undefined) || {};
+  const rawInput = (body?.input as Record<string, unknown> | undefined) || {};
+  const inputMeta = (rawInput.metadata as Record<string, unknown> | undefined) || {};
+  const bodyMeta = (body?.metadata as Record<string, unknown> | undefined) || {};
 
   const pick = <T = string>(key: string): T | undefined =>
     (rawCustom[key] ??
       (body as Record<string, unknown> | null)?.[key] ??
-      inlineMeta[key]) as T | undefined;
+      inlineMeta[key] ??
+      inputMeta[key] ??
+      bodyMeta[key] ??
+      rawInput[key] ??
+      rawData[key]) as T | undefined;
 
   const mode: "rubric" | "general" = pick("mode") === "rubric" ? "rubric" : "general";
   const languagePreference: "bn" | "en" =
@@ -168,6 +175,7 @@ export async function POST(req: Request) {
     (mode === "rubric" ? "socratic" : "direct");
 
   const chapterId = pick("chapterId");
+  const subjectCode = (pick("subjectCode") as string) || "SSC-CHEM";
   const subjectName = pick("subjectName");
   const chapterName = pick("chapterName");
   const questionText = pick("questionText");
@@ -215,17 +223,10 @@ export async function POST(req: Request) {
     isNewSession = true;
   }
 
-  // ---- All pre-LLM work runs concurrently: history load, the student-message
-  // write, and RAG grounding. Grounding only happens on the FIRST turn of a
-  // session (follow-ups lean on conversation context, like a real tutor) and
-  // is time-capped so a slow embedder can't eat into the LLM budget — the
-  // route's total is bounded by Vercel's 60s function limit.
-  const wantGrounding =
-    !groundedContext &&
-    isNewSession &&
-    mode === "general" &&
-    typeof chapterId === "string" &&
-    isUuid(chapterId);
+  // ---- All pre-LLM work runs concurrently: history load, student-message
+  // write, and RAG grounding. For general tutoring, every query is grounded
+  // against the official NCTB curriculum chunks and authentic diagrams.
+  const wantGrounding = !groundedContext && mode === "general";
 
   const historyP = service
     .from("tutor_chat_messages")
@@ -244,23 +245,37 @@ export async function POST(req: Request) {
     .from("tutor_chat_messages")
     .insert({ session_id: sessionId, role: "student", content: rawText, safety_category: "none" });
 
-  const groundingP: Promise<string> = wantGrounding
+  let diagramUrls: string[] = [];
+  const groundingP: Promise<{ context: string; diagrams: string[] }> = wantGrounding
     ? Promise.race([
         retrieveGroundingFlow({
           queryText: rawText,
-          chapterId: chapterId as string,
+          chapterId: typeof chapterId === "string" ? chapterId : undefined,
+          subjectCode,
           languageTag: languagePreference,
           matchCount: 3,
-        }).then((g) => g.chunks.map((c) => c.content_chunk).join("\n\n---\n\n")),
-        new Promise<string>((resolve) => setTimeout(() => resolve(""), 12_000)),
+        }).then((g) => {
+          const diagrams = g.chunks
+            .flatMap((c) => c.diagram_image_urls ?? [])
+            .filter((u): u is string => Boolean(u));
+          return {
+            context: g.chunks.map((c) => c.content_chunk).join("\n\n---\n\n"),
+            diagrams,
+          };
+        }),
+        new Promise<{ context: string; diagrams: string[] }>((resolve) =>
+          setTimeout(() => resolve({ context: "", diagrams: [] }), 12_000)
+        ),
       ]).catch((gErr) => {
         console.error("tutor-chat: grounding failed (continuing ungrounded):", gErr);
-        return "";
+        return { context: "", diagrams: [] };
       })
-    : Promise.resolve("");
+    : Promise.resolve({ context: "", diagrams: [] });
 
-  const [history, groundedFromRag] = await Promise.all([historyP, groundingP, studentInsertP]);
-  if (groundedFromRag) groundedContext = groundedFromRag;
+  const [history, ragResult] = await Promise.all([historyP, groundingP, studentInsertP]);
+  console.log("tutor-chat route resolved chapterId:", chapterId, "diagrams:", ragResult.diagrams);
+  if (ragResult.context) groundedContext = ragResult.context;
+  if (ragResult.diagrams && ragResult.diagrams.length > 0) diagramUrls = ragResult.diagrams;
 
   // ---- Generate
   let reply = "";
@@ -274,6 +289,7 @@ export async function POST(req: Request) {
       subjectName: subjectName as string | undefined,
       chapterName: chapterName as string | undefined,
       groundedContext: groundedContext || undefined,
+      diagramUrls: diagramUrls.length > 0 ? diagramUrls : undefined,
       history,
       studentMessage: rawText,
       languagePreference,

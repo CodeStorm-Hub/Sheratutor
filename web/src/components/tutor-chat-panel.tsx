@@ -10,14 +10,16 @@ export type TutorChatMessage = { role: "assistant" | "student"; text: string };
 export type TutorChatQuickChip = { label: string; icon: LucideIcon; prompt: string };
 
 const MATH_SYMBOLS = [
+  { label: "NH₃", insert: "$NH_3$ " },
+  { label: "HCl", insert: "$HCl$ " },
+  { label: "Zn²⁺", insert: "$\\text{Zn}^{2+}$ " },
+  { label: "→ (বিক্রিয়া)", insert: "$\\rightarrow$ " },
   { label: "F=ma", insert: "$F = ma$ " },
   { label: "v=u+at", insert: "$v = u + at$ " },
   { label: "s=ut+½at²", insert: "$s = ut + \\frac{1}{2}at^2$ " },
   { label: "ms⁻¹", insert: "$\\text{ms}^{-1}$ " },
-  { label: "ms⁻²", insert: "$\\text{ms}^{-2}$ " },
   { label: "Δ (Delta)", insert: "$\\Delta$ " },
   { label: "θ (Theta)", insert: "$\\theta$ " },
-  { label: "λ (Lambda)", insert: "$\\lambda$ " },
   { label: "Ω (Ohm)", insert: "$\\Omega$ " },
 ];
 

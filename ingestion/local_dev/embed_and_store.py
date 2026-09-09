@@ -12,8 +12,12 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 import requests
-import chromadb
-from chromadb.config import Settings
+try:
+    import chromadb
+    from chromadb.config import Settings
+except ImportError:
+    chromadb = None
+    Settings = None
 
 from chunk_classifier import ClassifiedChunk
 

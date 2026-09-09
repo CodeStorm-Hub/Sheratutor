@@ -1,0 +1,12 @@
+{
+  "page_no": 182,
+  "subject": "chemistry",
+  "lang": "bn",
+  "chapter_no": 8,
+  "markdown": "**চিত্র 8.03: সালোকসংক্রেয়ণ প্রক্রিয়া**\n\nসূর্যালোক\n\nক্রোরোফিল\n\n6CO2 + 12H2O → C6H12O6 + 6O2 + 6H2O\n\nকার্বন ডাই-অক্সাইড\n\nপানি\n\nচিত্র 8.03: সালোকসংক্রেয়ণ প্রক্রিয়া\n\nসূর্যালোক\n\nক্রোরোফিল\n\n6CO2 + 12H2O → C6H12O6 + 6O2 + 6H2O\n\nকার্বন ডাই-অক্সাইড\n\nপানি\n\n**চিত্র 8.03: সালোকসংক্রেয়ণ প্রক্রিয়া**",
+  "char_count": 293,
+  "extraction_time_s": 21.27,
+  "timestamp": 1788758074.7537115,
+  "model": "meta/llama-3.2-11b-vision-instruct",
+  "verified_pure_vision": true
+}
