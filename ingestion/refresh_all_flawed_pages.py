@@ -39,7 +39,7 @@ from nim_batch_ingest import (
 
 load_env()
 
-SECONDARY_BN_NIM_KEY = "REDACTED_NVIDIA_NIM_KEY"
+SECONDARY_BN_NIM_KEY = os.getenv("SECONDARY_NVIDIA_NIM_API_KEY") or os.getenv("NVIDIA_NIM_API_KEY")
 
 CHEMISTRY_CHAPTERS = [
     (1, 6, 21, "Concepts of Chemistry", "রসায়নের ধারণা"),

@@ -72,7 +72,7 @@ print(f"PyTorch Version: {torch.__version__} | Active Device: {target_device}", 
 
 # Supabase Configuration
 SUPABASE_URL = os.environ.get("NEXT_PUBLIC_SUPABASE_URL", "https://qjottictwewysfcjirma.supabase.co")
-SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "REDACTED_SUPABASE_SERVICE_ROLE_KEY")
+SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
 EMBEDDING_MODEL_NAME = "bge-m3"
 EMBEDDING_MODEL_VERSION = "v1"
 

@@ -21,7 +21,7 @@ from typing import Dict, Any, List, Optional, Tuple
 import requests
 
 # Secondary NVIDIA NIM Account API Key
-BANGLA_NIM_KEY = "REDACTED_NVIDIA_NIM_KEY"
+BANGLA_NIM_KEY = os.getenv("SECONDARY_NVIDIA_NIM_API_KEY") or os.getenv("NVIDIA_NIM_API_KEY")
 NIM_BASE_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 NIM_MODEL = "meta/llama-3.2-11b-vision-instruct"
 

@@ -16,10 +16,10 @@ REPO_DIR = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO_DIR))
 
 # Ensure secondary NIM API key is used
-os.environ["NVIDIA_NIM_API_KEY"] = "REDACTED_NVIDIA_NIM_KEY"
+os.environ["NVIDIA_NIM_API_KEY"] = os.getenv("SECONDARY_NVIDIA_NIM_API_KEY", os.getenv("NVIDIA_NIM_API_KEY", ""))
 
 import ingestion.nim_batch_ingest as nbi
-nbi.NIM_API_KEY = "REDACTED_NVIDIA_NIM_KEY"
+nbi.NIM_API_KEY = os.getenv("SECONDARY_NVIDIA_NIM_API_KEY", os.getenv("NVIDIA_NIM_API_KEY", ""))
 from ingestion.nim_batch_ingest import (
     render_page_jpeg,
     extract_with_nim,

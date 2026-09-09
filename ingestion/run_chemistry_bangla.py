@@ -2,7 +2,7 @@
 """
 SheraTutor: Dedicated Bangla Ingestion & Verification Worker for NCTB Chemistry (Bangla Edition).
 Features:
-- Uses Secondary NVIDIA NIM API key: REDACTED_NVIDIA_NIM_KEY
+- Uses Secondary NVIDIA NIM API key: <SECONDARY_NVIDIA_NIM_KEY>
 - Uses same model as English worker: meta/llama-3.2-11b-vision-instruct
 - Frequency penalty (0.35) and presence penalty (0.2) to prevent repetition loops.
 - Active multi-line and phrase-repetition detector and loop-truncator.
