@@ -88,23 +88,24 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
       if (!user) throw new Error(language === 'bn' ? "তুমি সাইন ইন করা নেই।" : "You are not signed in.");
 
       const submissionFolder = crypto.randomUUID();
-      const pageUrls: string[] = [];
+      // Store private-bucket object paths (not getPublicUrl). The API validates
+      // ownership and grading signs URLs server-side via the service role.
+      const pagePaths: string[] = [];
 
       // Sequential, not parallel — each page compresses + uploads one at a
       // time so we can show real progress on metered mobile data instead of
       // a single opaque spinner (docs/review §8.5).
       for (let i = 0; i < pages.length; i++) {
         const compressed = await compressImage(pages[i].file);
-        const path = `${user.id}/${submissionFolder}/${i + 1}.jpg`;
+        const contentType = compressed.type === "image/webp" ? "image/webp" : "image/jpeg";
+        const ext = contentType === "image/webp" ? "webp" : "jpg";
+        const path = `${user.id}/${submissionFolder}/${i + 1}.${ext}`;
         const { error: uploadErr } = await supabase.storage
           .from("submission-pages")
-          .upload(path, compressed, { contentType: "image/jpeg" });
+          .upload(path, compressed, { contentType });
         if (uploadErr) throw uploadErr;
 
-        const {
-          data: { publicUrl },
-        } = supabase.storage.from("submission-pages").getPublicUrl(path);
-        pageUrls.push(publicUrl);
+        pagePaths.push(path);
         setUploadProgress({ done: i + 1, total: pages.length });
       }
 
@@ -112,9 +113,9 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          paperId,
-          pageUrls,
-          questionAssignments: pages.map((p) => p.questionId),
+          questionPaperId: paperId,
+          pagePaths,
+          pageQuestionIds: pages.map((p) => p.questionId),
         }),
       });
 
@@ -123,8 +124,10 @@ export function UploadForm({ papers, initialPaperId }: { papers: Paper[]; initia
         throw new Error(body?.error ?? (language === 'bn' ? "জমা দেওয়া ব্যর্থ হয়েছে।" : "Submission failed."));
       }
 
-      const { id } = (await res.json()) as { id: string };
-      router.push(`/dashboard/submissions/${id}`);
+      const json = (await res.json()) as { submissionId?: string; id?: string };
+      const submissionId = json.submissionId ?? json.id;
+      if (!submissionId) throw new Error(language === "bn" ? "জমা দেওয়া ব্যর্থ হয়েছে।" : "Submission failed.");
+      router.push(`/dashboard/submissions/${submissionId}`);
     } catch (err) {
       setStatus("error");
       setError(err instanceof Error ? err.message : (language === 'bn' ? "আপলোড ব্যর্থ হয়েছে। আবার চেষ্টা করো।" : "Upload failed. Please try again."));

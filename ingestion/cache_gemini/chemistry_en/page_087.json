@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 87,
+  "pdf_page_no": 92,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bond",
+  "sections": [
+    {
+      "section_no": "5.3",
+      "section_title": "Radicals and Their Valencies",
+      "chunk_type": "theory",
+      "content_markdown": "Sometimes, a bundle of atoms from more than one element combine together, receive positive or negative charges and act as an ion of an element. They are called radicals.\n\nRadicals may be of positive or negative charge. The number of charge of the radicals is their valency. For example, three $\\text{H}$ atoms and one $\\text{H}^+$ combine with one $\\text{N}$ atom to produce the radical named Ammonium ($\\text{NH}_4^+$) ion. Since its number of charge is $+1$, so its valency is also $1$. Charge may be positive or negative but valency is always the number only.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.3",
+      "section_title": "Radicals and Their Valencies",
+      "chunk_type": "table",
+      "content_markdown": "### Table 5.04: Radicals and Their Valencies.\n\n| Radical | Formula | Charge | Valency |\n| :--- | :---: | :---: | :---: |\n| Ammonium | $\\text{NH}_4^+$ | $+1$ | $1$ |\n| Carbonate | $\\text{CO}_3^{2-}$ | $-2$ | $2$ |\n| Hydrogen Carbonate | $\\text{HCO}_3^-$ | $-1$ | $1$ |\n| Sulfate | $\\text{SO}_4^{2-}$ | $-2$ | $2$ |\n| Hydrogen Sulfate | $\\text{HSO}_4^-$ | $-1$ | $1$ |\n| Sulfite | $\\text{SO}_3^{2-}$ | $-2$ | $2$ |\n| Nitrate | $\\text{NO}_3^-$ | $-1$ | $1$ |\n| Nitrite | $\\text{NO}_2^-$ | $-1$ | $1$ |\n| Phosphate | $\\text{PO}_4^{3-}$ | $-3$ | $3$ |\n| Hydroxide | $\\text{OH}^-$ | $-1$ | $1$ |\n| Phosphonium | $\\text{PH}_4^+$ | $+1$ | $1$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.4",
+      "section_title": "Chemical Formula of Compounds",
+      "chunk_type": "theory",
+      "content_markdown": "The symbols and numbers belonging to the atoms that together produce a molecule of the compound are used to express a compound. For instance, two hydrogen ($\\text{H}$) atoms and an oxygen ($\\text{O}$) atom combine into a molecule of water",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

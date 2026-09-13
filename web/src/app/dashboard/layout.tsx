@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { createClient } from '@/lib/supabase/server';
 import { getUser } from '@/lib/supabase/auth';
 import { ClientShell } from '@/components/ClientShell';
+import { isDashboardAdmin } from '@/lib/auth/is-dashboard-admin';
 
 function ShellFallback({ children }: { children: React.ReactNode }) {
   return (
@@ -26,18 +27,13 @@ async function AuthenticatedDashboardShell({
 
   if (!user) redirect('/login');
 
-  // Check admin status
-  const adminEmails = [
-    'syed.salman.reza.181@gmail.com',
-    ...(process.env.ADMIN_EMAILS ? process.env.ADMIN_EMAILS.split(',').map((e) => e.trim().toLowerCase()) : []),
-  ];
-  const isAdmin = Boolean(user.email && adminEmails.includes(user.email.toLowerCase()));
+  const isAdmin = await isDashboardAdmin(user);
 
   // Fetch user profile and student profile in parallel
   const [{ data: userProfile }, { data: studentProfile }] = await Promise.all([
     supabase
       .from('profiles')
-      .select('full_name')
+      .select('full_name, role')
       .eq('id', user.id)
       .maybeSingle(),
     supabase
@@ -46,6 +42,11 @@ async function AuthenticatedDashboardShell({
       .eq('user_id', user.id)
       .maybeSingle(),
   ]);
+
+  // Students must complete onboarding before using the dashboard (admins exempt).
+  if (!studentProfile && !isAdmin) {
+    redirect('/onboarding');
+  }
 
   // Extract real full name
   const fullName =

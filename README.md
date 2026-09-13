@@ -13,7 +13,15 @@ traces back to a specific finding in that document; comments reference it
 by section (e.g. `docs/review §7.9`) rather than re-explaining the reasoning
 inline.
 
-**Test User**: verify.tester@sheratutor.tech / VerifyPass123!
+**Demo login** (dashboard): credentials are issued out-of-band by maintainers —
+do not commit passwords here.
+
+Previously published test credentials have been rotated and removed.
+
+**Auth hardening (dashboard):** enable *Leaked password protection* in Supabase
+Auth → Providers → Email
+([docs](https://supabase.com/docs/guides/auth/password-security#password-strength-and-leaked-password-protection)).
+This cannot be toggled from SQL migrations.
 
 ## Layout
 

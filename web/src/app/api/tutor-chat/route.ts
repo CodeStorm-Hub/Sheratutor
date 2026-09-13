@@ -12,6 +12,7 @@ import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
 
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 import { isUuid } from "@/lib/supabase/session-store";
+import { loadTrustedRubricContext } from "@/lib/tutor/trusted-rubric-context";
 
 export const maxDuration = 60;
 const TUTOR_CHAT_DAILY_LIMIT = 50;
@@ -176,56 +177,112 @@ export async function POST(req: Request) {
 
   const chapterId = pick("chapterId");
   const subjectCode = (pick("subjectCode") as string) || "SSC-CHEM";
-  const subjectName = pick("subjectName");
-  const chapterName = pick("chapterName");
-  const questionText = pick("questionText");
-  const studentAnswerChunk = pick("studentAnswerChunk");
-  const rubricFailureReason = pick("rubricFailureReason");
+  let subjectName = pick("subjectName") as string | undefined;
+  let chapterName = pick("chapterName") as string | undefined;
+  // Client-supplied academic frame is ignored for rubric mode (loaded from DB).
+  let questionText = pick("questionText") as string | undefined;
+  let studentAnswerChunk = pick("studentAnswerChunk") as string | undefined;
+  let rubricFailureReason = pick("rubricFailureReason") as string | undefined;
   let groundedContext = (pick("groundedContext") as string) || "";
   const rawHintRung = pick<number | string>("hintRung");
   const hintRung = typeof rawHintRung === "number" ? rawHintRung : (typeof rawHintRung === "string" ? parseInt(rawHintRung, 10) : 3);
 
   const service = getServiceRoleClient();
 
+  const submissionIdPick = pick("submissionId") as string | undefined;
+  const questionIdPick = pick("questionId") as string | undefined;
+  const rubricStepRaw = pick<number | string>("rubricStepIndex");
+  const rubricStepIndex =
+    rubricStepRaw == null || rubricStepRaw === "" ? NaN : Number(rubricStepRaw);
+
   // ---- Resolve or create the chat session
   let sessionId: string | null = null;
-  let isNewSession = false;
+  let sessionContext: Record<string, unknown> | null = null;
   if (resolvedSessionId && isUuid(resolvedSessionId)) {
     const { data: s } = await service
       .from("tutor_chat_sessions")
-      .select("id")
+      .select("id, context_json, mode, submission_id, question_id, rubric_step_index")
       .eq("id", resolvedSessionId)
       .eq("student_id", profile.id)
       .maybeSingle();
-    if (s) sessionId = s.id;
+    if (s) {
+      sessionId = s.id;
+      sessionContext = (s.context_json as Record<string, unknown>) ?? null;
+    }
   }
   if (!sessionId) {
-    const rubricStepRaw = pick<number | string>("rubricStepIndex");
-    const rubricStepIndex =
-      rubricStepRaw == null || rubricStepRaw === "" ? NaN : Number(rubricStepRaw);
-    let insertData: any = {
+    let insertData: Record<string, unknown> = {
       student_id: profile.id,
       mode,
       title: (rawText || "Tutor Session").slice(0, 40),
-      submission_id: mode === "rubric" ? ((pick("submissionId") as string) ?? null) : null,
-      question_id: mode === "rubric" ? ((pick("questionId") as string) ?? null) : null,
+      submission_id: mode === "rubric" ? (submissionIdPick ?? null) : null,
+      question_id: mode === "rubric" ? (questionIdPick ?? null) : null,
       rubric_step_index:
         mode === "rubric" && Number.isInteger(rubricStepIndex) ? rubricStepIndex : null,
       context_json: { subjectName, chapterName, subjectId: pick("subjectId"), chapterId },
     };
+
+    if (
+      mode === "rubric" &&
+      submissionIdPick &&
+      questionIdPick &&
+      isUuid(submissionIdPick) &&
+      isUuid(questionIdPick)
+    ) {
+      const trusted = await loadTrustedRubricContext({
+        studentProfileId: profile.id,
+        submissionId: submissionIdPick,
+        questionId: questionIdPick,
+        rubricStepIndex: Number.isInteger(rubricStepIndex) ? rubricStepIndex : null,
+      });
+      if (!trusted) {
+        return NextResponse.json({ error: "grading context not found" }, { status: 404 });
+      }
+      questionText = trusted.questionText;
+      studentAnswerChunk = trusted.studentAnswerChunk;
+      rubricFailureReason = trusted.rubricFailureReason;
+      groundedContext = trusted.groundedContext;
+      subjectName = trusted.subjectName ?? subjectName;
+      chapterName = trusted.chapterName ?? chapterName;
+      insertData = {
+        ...insertData,
+        context_json: {
+          subjectName,
+          chapterName,
+          subjectId: pick("subjectId"),
+          chapterId,
+          questionText,
+          studentAnswerChunk,
+          rubricFailureReason,
+          groundedContext,
+          trustedFromGrading: true,
+        },
+      };
+    } else if (mode === "rubric") {
+      // Rubric mode requires owned submission + question — never accept free-form client frame alone.
+      return NextResponse.json(
+        { error: "rubric mode requires submissionId and questionId" },
+        { status: 400 }
+      );
+    }
+
     let { data: created, error: createErr } = await service
       .from("tutor_chat_sessions")
       .insert(insertData)
-      .select("id")
+      .select("id, context_json")
       .single();
 
     if (createErr && createErr.code === "23503") {
-      // Mock questionId or submissionId in demo/testing mode: strip foreign keys and retry
+      if (mode === "rubric") {
+        console.error("tutor-chat: rubric session FK invalid:", createErr);
+        return NextResponse.json({ error: "invalid submission or question" }, { status: 400 });
+      }
+      // General-mode mock IDs in demos: strip foreign keys and retry
       const safeInsert = { ...insertData, submission_id: null, question_id: null };
       const retry = await service
         .from("tutor_chat_sessions")
         .insert(safeInsert)
-        .select("id")
+        .select("id, context_json")
         .single();
       created = retry.data;
       createErr = retry.error;
@@ -236,7 +293,44 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "could not start chat session" }, { status: 500 });
     }
     sessionId = created.id;
-    isNewSession = true;
+    sessionContext = (created.context_json as Record<string, unknown>) ?? null;
+  }
+
+  // Continuing rubric sessions: prefer server-stored trusted context over client body.
+  if (mode === "rubric" && sessionContext?.trustedFromGrading) {
+    questionText = (sessionContext.questionText as string) || questionText;
+    studentAnswerChunk = (sessionContext.studentAnswerChunk as string) || studentAnswerChunk;
+    rubricFailureReason = (sessionContext.rubricFailureReason as string) || rubricFailureReason;
+    groundedContext = (sessionContext.groundedContext as string) || groundedContext;
+    subjectName = (sessionContext.subjectName as string) || subjectName;
+    chapterName = (sessionContext.chapterName as string) || chapterName;
+  } else if (
+    mode === "rubric" &&
+    submissionIdPick &&
+    questionIdPick &&
+    isUuid(submissionIdPick) &&
+    isUuid(questionIdPick)
+  ) {
+    const trusted = await loadTrustedRubricContext({
+      studentProfileId: profile.id,
+      submissionId: submissionIdPick,
+      questionId: questionIdPick,
+      rubricStepIndex: Number.isInteger(rubricStepIndex) ? rubricStepIndex : null,
+    });
+    if (trusted) {
+      questionText = trusted.questionText;
+      studentAnswerChunk = trusted.studentAnswerChunk;
+      rubricFailureReason = trusted.rubricFailureReason;
+      groundedContext = trusted.groundedContext;
+      subjectName = trusted.subjectName ?? subjectName;
+      chapterName = trusted.chapterName ?? chapterName;
+    }
+  }
+
+  // General mode may still receive subject/chapter metadata from the client;
+  // curriculum grounding is always re-fetched server-side below when empty.
+  if (mode === "general") {
+    groundedContext = "";
   }
 
   // ---- All pre-LLM work runs concurrently: history load, student-message

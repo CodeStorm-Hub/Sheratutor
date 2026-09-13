@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 114,
+  "pdf_page_no": 119,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole & Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Problem: What is the volume of 5 mole $\\text{CO}_2$ gas at standard temperature and pressure?\n\nSolution: Here, it is given, mole $n = 5$, we require to find out volume $V = ?$\n\nWe know $n = \\frac{V}{22.4}$\n\nOr $5 = \\frac{V}{22.4}$\n\nTherefore $V = 5 \\times 22.4 = 112$ liter",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "What is the volume of 5 $\\text{CO}_2$ molecules at standard condition?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Problem: What is the volume of 10 g Hydrogen gas at standard condition?\n\nSolution: Here, it is given, mass $w = 10$ g, molecular mass of $\\text{H}_2$, $M = 2$. We require to find out volume $V = ?$\n\n$n = \\frac{w}{M} = \\frac{V}{22.4}$\n\n$\\frac{10}{2} = \\frac{V}{22.4}$\n\nTherefore $V = 22.4 \\times 22.4$ liter = 112 liter",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.1.2",
+      "section_title": "Mole and Molecular Formula",
+      "chunk_type": "theory",
+      "content_markdown": "There is a relation between mole and molecular formula. The quantity in gram determined when we express the molecular mass of a substance gotten from its molecular formula is called 1 mole of that substance. For example, molecular formula of water is $\\text{H}_2\\text{O}$ and its molecular mass is 18. Therefore 18 gram is called 1 gram molecular mass water or 1 mole water. It is clear here that, mole is also the gram molecular mass.\n\nMolecular formula provides some other information too. For example, in the case with $\\text{H}_2\\text{O}$:\n\n1. $\\text{H}_2\\text{O}$ is water.\n2. The formula of 1 molecule water is $\\text{H}_2\\text{O}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

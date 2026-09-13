@@ -4,6 +4,7 @@ import { z } from "zod";
 import { redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { generateQuestionPaperFlow } from "@/ai/flows/generate-question-paper";
+import { startOfDhakaDayUtcIso } from "@/lib/time";
 
 const GeneratePaperSchema = z.object({
   subjectId: z.string().min(1),
@@ -14,6 +15,8 @@ const GeneratePaperSchema = z.object({
 });
 
 export type GeneratePaperState = { status: "idle" | "error"; message?: string };
+
+const PAPER_GEN_DAILY_LIMIT = 10;
 
 export async function generatePaper(_prev: GeneratePaperState, formData: FormData): Promise<GeneratePaperState> {
   const chapterIds = formData
@@ -40,6 +43,18 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
     data: { user },
   } = await supabase.auth.getUser();
   if (!user) redirect("/login");
+
+  const { count: todaysPapers } = await supabase
+    .from("question_papers")
+    .select("id", { count: "exact", head: true })
+    .eq("created_by_user_id", user.id)
+    .gte("created_at", startOfDhakaDayUtcIso());
+  if ((todaysPapers ?? 0) >= PAPER_GEN_DAILY_LIMIT) {
+    return {
+      status: "error",
+      message: "আজকের প্রশ্নপত্র তৈরির সীমা শেষ হয়েছে, আগামীকাল আবার চেষ্টা করো।",
+    };
+  }
 
   const { data: subject } = await supabase
     .from("subjects")
@@ -91,7 +106,7 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
       paper_type: parsed.data.paperType,
       difficulty: parsed.data.difficulty,
       total_marks: paperTotalMarks,
-      is_public_template: true,
+      is_public_template: false,
     })
     .select("id")
     .single();

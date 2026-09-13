@@ -8,6 +8,7 @@ import {
   PageItem,
 } from '@/components/pages/SubmissionDetailClient';
 import DashboardLoading from '../../loading';
+import { resolveSubmissionPageUrl } from '@/lib/storage/submission-pages';
 
 async function SubmissionDetailContent({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
@@ -102,6 +103,13 @@ async function SubmissionDetailContent({ params }: { params: Promise<{ id: strin
     })) || null,
   }));
 
+  const signedPages: PageItem[] = await Promise.all(
+    (pages || []).map(async (page) => ({
+      ...(page as PageItem),
+      original_image_url: await resolveSubmissionPageUrl(supabase, page.original_image_url),
+    }))
+  );
+
   return (
     <SubmissionDetailClient
       submissionId={id}
@@ -114,7 +122,7 @@ async function SubmissionDetailContent({ params }: { params: Promise<{ id: strin
       isComplete={isComplete}
       criteria={finalCriteria}
       questionResults={questionResults}
-      pages={(pages || []) as PageItem[]}
+      pages={signedPages}
     />
   );
 }

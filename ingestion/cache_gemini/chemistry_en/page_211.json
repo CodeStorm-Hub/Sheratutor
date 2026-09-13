@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 211,
+  "pdf_page_no": 216,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**(vi) Reaction between Dilute Acids and Metallic Bicarbonates:** Metallic hydrogen carbonates or metallic bicarbonates also undergo reactions with dilute acids and produce salts, water and carbon dioxide. For Example:\n\n$$\\text{Ca(HCO}_3)_2 + 2\\text{HCl} \\longrightarrow \\text{CaCl}_2 + 2\\text{H}_2\\text{O} + 2\\text{CO}_2$$\n\n$$2\\text{NaHCO}_3 + \\text{H}_2\\text{SO}_4 \\longrightarrow \\text{Na}_2\\text{SO}_4 + 2\\text{H}_2\\text{O} + 2\\text{CO}_2$$\n\n$$\\text{NaHCO}_3 + \\text{HNO}_3 \\longrightarrow \\text{NaNO}_3 + \\text{H}_2\\text{O} + \\text{CO}_2$$\n\n**(vii) Reaction between Dilute Acids and Metal's Hydroxides (Alkali):** Dilute acids undergo reactions with metal's hydroxides and produce salt and water. It is a neutralizing reaction. For example, if dilute $\\text{HCl}$ solution is slowly added to dilute $\\text{NaOH}$ solution, it produces $\\text{NaCl}$ (salt) and water.\n\n$$\\text{NaOH} + \\text{HCl} \\longrightarrow \\text{NaCl} + \\text{H}_2\\text{O}$$\n\n**(viii) Reaction between Dilute Acids and Metal's Oxides:** Acids undergo reactions with metal's oxides and produce salt and water. The oxides are usually of alkaline nature. That is why the reactions here are also neutralizing reactions.\n\n$$\\text{CaO} + 2\\text{HCl} \\longrightarrow \\text{CaCl}_2 + \\text{H}_2\\text{O}$$\n\nIn the same way, copper oxide undergoes a reaction with dilute sulfuric acid and forms copper sulfate and water.\n\n$$\\text{H}_2\\text{SO}_4 + \\text{CuO} \\longrightarrow \\text{CuSO}_4 + \\text{H}_2\\text{O}$$\n\nOr, calcium oxide and nitric acid undergo a reaction to produce calcium nitrate and water.\n\n$$2\\text{HNO}_3 + \\text{CaO} \\longrightarrow \\text{Ca(NO}_3)_2 + \\text{H}_2\\text{O}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1.2",
+      "section_title": "The Role of Water in Chemical Properties of Acids",
+      "chunk_type": "theory",
+      "content_markdown": "In all the discussions above, we have used the phrase 'Dilute acid'. Dilute acid solution means acid has been added to water to make an acidic solution. The question is whether an acid can maintain its properties when added to water or they undergo changes. Suppose, you have taken some oxalic acid lattice and put a dry blue litmus paper on them. You will observe no change in the colour of litmus. The reason here is that dehydrated oxalic acid lattice does not contain any hydrogen ion. When you dissolve this dehydrated oxalic acid in water, it",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

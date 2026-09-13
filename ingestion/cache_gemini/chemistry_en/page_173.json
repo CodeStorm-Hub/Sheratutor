@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 173,
+  "pdf_page_no": 178,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again, dry lime is calcium oxide ($\\text{CaO}$). When water is poured in it, calcium hydroxide $\\text{Ca(OH)}_2$ is produced. Alongside, $63.95\\text{ kJ/mol}$ heat is produced. That's the reason of it being heated.\n\n$$\\text{CaO(s)} + \\text{H}_2\\text{O(l)} \\longrightarrow \\text{Ca(OH)}_2\\text{(aq)} + 63.95\\text{ kJ/mol}$$\n$$\\text{Calcium Oxide} \\quad \\text{Water} \\quad \\text{Calcium hydroxide} \\quad \\text{heat}$$\n\nOr,\n\n$$\\text{CaO(s)} + \\text{H}_2\\text{O(l)} \\longrightarrow \\text{Ca(OH)}_2\\text{(aq)} \\quad ; \\quad \\Delta H = -63.95\\text{ kJ/mol}$$\n$$\\text{Calcium Oxide} \\quad \\text{Water} \\quad \\text{Calcium hydroxide} \\quad \\text{heat}$$\n\nIn both the above reactions, the total internal energy of reactants ($E_1$) is greater than the total internal energy of products ($E_2$). That extra energy has evolved as heat in the reaction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Endothermic Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "Chemical reactions in which heat is absorbed are called endothermic reactions. They are also called heat absorbing reactions. In the equation of endothermic reactions, on the left side, the heat may be recorded. If it is written with the expression $\\Delta H$, the value will be positive ($+$). In villages, the outer shells of snails or oysters are gathered and burnt to produce edible lime. Actually, these casts contain about $98\\%$ calcium carbonate. The heat from the fire transforms this calcium carbonate into calcium oxide and carbon dioxide. The calcium oxide is lime which remains as left over and the carbon dioxide mixes in the air.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.02: Preparation of lime from Oysters.",
+      "figure_no": "8.02",
+      "box_2d": [
+        540,
+        595,
+        860,
+        898
+      ],
+      "description": "A diagram showing the preparation of lime from oyster shells in a heated container.",
+      "reading_order_anchor": "In villages, the outer shells of snails or oysters are gathered and burnt to produce edible lime."
+    }
+  ]
+}

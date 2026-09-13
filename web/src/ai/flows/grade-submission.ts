@@ -4,6 +4,10 @@ import { transcribePageFlow } from "@/ai/flows/transcribe";
 import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
 import { evaluateRubricFlow } from "@/ai/flows/evaluate-rubric";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
+import {
+  GRADING_SIGNED_URL_TTL_SEC,
+  resolveSubmissionPageUrl,
+} from "@/lib/storage/submission-pages";
 
 /**
  * Orchestrates all 4 layers for one submission and writes results with full
@@ -62,12 +66,19 @@ export const gradeSubmissionFlow = ai.defineFlow(
       .order("page_number");
     if (pagesErr) throw new Error(`gradeSubmission: ${pagesErr.message}`);
 
-    // Layer 1: transcribe every page concurrently to stay well within Vercel's 60s timeout
+    // Layer 1: transcribe every page concurrently to stay well within Vercel's 60s timeout.
+    // Pages store private-bucket paths (or legacy http URLs); sign paths before vision.
     const allPages = pages ?? [];
     await Promise.all(
       allPages.map(async (page) => {
+        const stored = page.processed_image_url ?? page.original_image_url;
+        const imageUrl = await resolveSubmissionPageUrl(
+          supabase,
+          stored,
+          GRADING_SIGNED_URL_TTL_SEC
+        );
         const transcription = await transcribePageFlow({
-          imageUrl: page.processed_image_url ?? page.original_image_url,
+          imageUrl,
           expectedLanguage: "mixed",
         });
 
@@ -109,11 +120,15 @@ export const gradeSubmissionFlow = ai.defineFlow(
       return matched.map((p) => p.ocr_raw_text).join("\n\n---\n\n");
     }
 
-    function pageImageUrlsForQuestion(questionId: string): string[] | undefined {
+    async function pageImageUrlsForQuestion(questionId: string): Promise<string[] | undefined> {
       if (!hasQuestionMapping) return undefined;
       const matched = allPages.filter((p) => p.question_id === questionId);
-      const urls = matched.map((p) => p.original_image_url);
-      return urls.length > 0 ? urls : undefined;
+      if (matched.length === 0) return undefined;
+      return Promise.all(
+        matched.map((p) =>
+          resolveSubmissionPageUrl(supabase, p.original_image_url, GRADING_SIGNED_URL_TTL_SEC)
+        )
+      );
     }
 
     let totalScore = 0;
@@ -147,7 +162,7 @@ export const gradeSubmissionFlow = ai.defineFlow(
             source_book_page_ref: c.source_book_page_ref,
           })),
           studentLanguagePreference: "bn",
-          pageImageUrls: pageImageUrlsForQuestion(question.id),
+          pageImageUrls: await pageImageUrlsForQuestion(question.id),
         });
 
         await supabase.from("grading_results").insert({

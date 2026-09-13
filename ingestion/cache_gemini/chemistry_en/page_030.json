@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 30,
+  "pdf_page_no": 35,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again, collect the data of cooling the water vapor and set them on a graph sheet with X axis telling time and Y axis telling temperature. It will be like fig 2.10.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The graph shows the initial temperature of water vapor is $140^\\circ\\text{C}$. When in the process of cooling it to $100^\\circ\\text{C}$, the vapor starts to turn into water. It remains $100^\\circ\\text{C}$ until all the vapor is turned into water. Further cooling starts to decrease the temperature of water. When it reaches $0^\\circ\\text{C}$, the water starts to transform into ice. It remains the same until all the water is turned into ice and then the temperature of ice decreases from $0^\\circ\\text{C}$. The fig 2.10 shows a decrease of temperature of ice to $-40^\\circ\\text{C}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.10: Cooling curve of vapor.",
+      "figure_no": "2.10",
+      "box_2d": [
+        250,
+        200,
+        580,
+        810
+      ],
+      "description": "A line graph showing the temperature of water as it cools over time from vapor at 140 degrees Celsius, condensing to liquid water at 100 degrees Celsius, cooling to 0 degrees Celsius, freezing to ice, and further cooling to -40 degrees Celsius.",
+      "reading_order_anchor": "Again, collect the data of cooling the water vapor and set them on a graph sheet with X axis telling time and Y axis telling temperature. It will be like fig 2.10."
+    }
+  ]
+}

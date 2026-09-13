@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation';
 import { connection } from 'next/server';
 import { getUser } from '@/lib/supabase/auth';
 import { getServiceRoleClient } from '@/lib/supabase/service-role';
+import { isDashboardAdmin } from '@/lib/auth/is-dashboard-admin';
 import { WaitlistTable, type WaitlistRecord } from './waitlist-table';
 import { Users, ShieldAlert } from 'lucide-react';
 import DashboardLoading from '../../loading';
@@ -20,12 +21,7 @@ async function WaitlistContent() {
     redirect('/login');
   }
 
-  const adminEmails = [
-    'syed.salman.reza.181@gmail.com',
-    ...(process.env.ADMIN_EMAILS ? process.env.ADMIN_EMAILS.split(',').map((e) => e.trim().toLowerCase()) : []),
-  ];
-
-  const isAdmin = Boolean(user.email && adminEmails.includes(user.email.toLowerCase()));
+  const isAdmin = await isDashboardAdmin(user);
 
   if (!isAdmin) {
     return (

@@ -5,10 +5,12 @@ import { createClient } from "@/lib/supabase/server";
 import { getServiceRoleClient } from "@/lib/supabase/service-role";
 import { apiError } from "@/lib/api";
 import { startOfDhakaDayUtcIso } from "@/lib/time";
+import { isOwnedSubmissionPagePath } from "@/lib/storage/submission-pages";
 
 const RequestBody = z.object({
   questionPaperId: z.string().min(1),
-  pageUrls: z.array(z.string().min(1)).min(1, "at least one page is required").max(50),
+  /** Private-bucket object paths owned by the caller (`{uid}/{folder}/{n}.ext`). */
+  pagePaths: z.array(z.string().min(1)).min(1, "at least one page is required").max(50),
   pageQuestionIds: z.array(z.string().min(1).nullable()).optional(),
   submissionType: z.enum(["MOBILE_PHOTO", "WEB_UPLOAD", "BATCH_SCAN"]).default("WEB_UPLOAD"),
   idempotencyKey: z.string().min(1).max(200).optional(),
@@ -63,7 +65,16 @@ export async function POST(request: Request) {
   if (!parsed.success) {
     return apiError(400, parsed.error.issues[0]?.message ?? "invalid request");
   }
-  const { questionPaperId, pageUrls, pageQuestionIds, submissionType, idempotencyKey } = parsed.data;
+  const { questionPaperId, pagePaths, pageQuestionIds, submissionType, idempotencyKey } =
+    parsed.data;
+
+  for (const path of pagePaths) {
+    if (!isOwnedSubmissionPagePath(user.id, path)) {
+      return apiError(400, "invalid page path", {
+        message: "Each page must be a storage path under your own uploads folder.",
+      });
+    }
+  }
 
   const key = idempotencyKey ?? randomUUID();
 
@@ -75,7 +86,7 @@ export async function POST(request: Request) {
     .eq("student_id", profile.id)
     .eq("idempotency_key", key)
     .maybeSingle();
-  if (existing) return NextResponse.json({ submissionId: existing.id, deduped: true });
+  if (existing) return NextResponse.json({ submissionId: existing.id, id: existing.id, deduped: true });
 
   const { count: todaysSubmissions } = await supabase
     .from("exam_submissions")
@@ -104,10 +115,11 @@ export async function POST(request: Request) {
     return apiError(500, subErr?.message ?? "failed to create submission");
   }
 
-  const pageRows = pageUrls.map((url, i) => ({
+  // Persist private-bucket paths; OCR resolves signed URLs at grading time.
+  const pageRows = pagePaths.map((path, i) => ({
     submission_id: submission.id,
     page_number: i + 1,
-    original_image_url: url,
+    original_image_url: path,
     question_id: pageQuestionIds?.[i] ?? null,
   }));
 
@@ -123,5 +135,5 @@ export async function POST(request: Request) {
     console.error(`enqueue_grading_job failed for ${submission.id}:`, enqueueErr);
   }
 
-  return NextResponse.json({ submissionId: submission.id });
+  return NextResponse.json({ submissionId: submission.id, id: submission.id });
 }
