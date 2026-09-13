@@ -25,12 +25,42 @@ import {
   ChevronRight,
   Flame,
   Compass,
+  Volume2,
+  Mic,
+  MicOff,
+  AlertCircle,
+  CheckCircle2,
+  RotateCcw,
 } from 'lucide-react';
 import { PageHeader } from '@/components/PageHeader';
 import { useLanguage } from '@/context/LanguageContext';
 import { toast } from 'sonner';
 import { cn } from '@/lib/utils';
-import { sanitizeTutorReply } from '@/lib/tutor-format';
+import {
+  sanitizeTutorReply,
+  parseTutorDirectives,
+  type HintRung,
+} from '@/lib/tutor-format';
+
+const MATH_SYMBOLS = [
+  { label: 'ms⁻¹', insert: '$\\text{ms}^{-1}$ ' },
+  { label: 'ms⁻²', insert: '$\\text{ms}^{-2}$ ' },
+  { label: 'kg', insert: '$\\text{kg}$ ' },
+  { label: 'N', insert: '$\\text{N}$ ' },
+  { label: 'J', insert: '$\\text{J}$ ' },
+  { label: 'W', insert: '$\\text{W}$ ' },
+  { label: 'Pa', insert: '$\\text{Pa}$ ' },
+  { label: 'F=ma', insert: '$F = ma$ ' },
+  { label: 'v=u+at', insert: '$v = u + at$ ' },
+  { label: 's=ut+½at²', insert: '$s = ut + \\frac{1}{2}at^2$ ' },
+  { label: 'θ', insert: '$\\theta$ ' },
+  { label: 'λ', insert: '$\\lambda$ ' },
+  { label: 'Δ', insert: '$\\Delta$ ' },
+  { label: '→', insert: '$\\rightarrow$ ' },
+  { label: '⇌', insert: '$\\rightleftharpoons$ ' },
+  { label: 'Zn²⁺', insert: '$\\text{Zn}^{2+}$ ' },
+  { label: 'NH₃', insert: '$NH_3$ ' },
+];
 
 type Chapter = { id: string; chapter_no: number; title_en: string; title_bn: string };
 type Subject = { id: string; code?: string; name_en: string; name_bn: string; chapters: Chapter[] };
@@ -100,11 +130,93 @@ export function TutorPageClient({
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
   const [showScrollBottom, setShowScrollBottom] = useState(false);
 
+  // Socratic Scaffolding & Hint Ladder State
+  const [activeHintRung, setActiveHintRung] = useState<HintRung>(0);
+  const [isListening, setIsListening] = useState(false);
+  const [ticketAnswers, setTicketAnswers] = useState<Record<string, { selected: string; isCorrect: boolean }>>({});
+  const [showFormulaBar, setShowFormulaBar] = useState(false);
+
   // References
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const chatScrollContainerRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
   const abortControllerRef = useRef<AbortController | null>(null);
+
+  // Web Speech API Voice Recognition
+  const handleVoiceInput = () => {
+    if (typeof window === 'undefined') return;
+    const SpeechRecognition =
+      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+
+    if (!SpeechRecognition) {
+      toast.error(
+        language === 'bn'
+          ? 'তোমার ব্রাউজারে স্পিচ রিকগনিশন সাপোর্ট নেই। অনুগ্রহ করে গুগল ক্রোম ব্যবহার করো।'
+          : 'Speech recognition is not supported in this browser. Please use Google Chrome.'
+      );
+      return;
+    }
+
+    if (isListening) {
+      setIsListening(false);
+      return;
+    }
+
+    try {
+      const recognition = new SpeechRecognition();
+      recognition.lang = language === 'bn' ? 'bn-BD' : 'en-US';
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 1;
+
+      recognition.onstart = () => setIsListening(true);
+      recognition.onend = () => setIsListening(false);
+      recognition.onerror = () => setIsListening(false);
+
+      recognition.onresult = (event: any) => {
+        const transcript = event.results[0][0].transcript;
+        if (transcript) {
+          setPrompt((prev) => (prev ? `${prev} ${transcript}` : transcript));
+        }
+      };
+
+      recognition.start();
+    } catch {
+      setIsListening(false);
+    }
+  };
+
+  // Text-to-Speech audio reader
+  const playBanglaSpeech = (text: string) => {
+    if (typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+    window.speechSynthesis.cancel();
+    const plain = text
+      .replace(/\$\$[\s\S]*?\$\$/g, language === 'bn' ? 'সমীকরণ' : 'equation')
+      .replace(/\$([^$]+)\$/g, '$1')
+      .replace(/[*#_`]/g, '')
+      .replace(/:::[\s\S]*?:::/g, '')
+      .trim();
+    const utterance = new SpeechSynthesisUtterance(plain);
+    utterance.lang = language === 'bn' ? 'bn-BD' : 'en-US';
+    utterance.rate = 0.95;
+    window.speechSynthesis.speak(utterance);
+  };
+
+  // Formula symbol inserter
+  const handleInsertSymbol = (symbol: string) => {
+    const el = textareaRef.current;
+    if (!el) {
+      setPrompt((prev) => `${prev} ${symbol}`.trim());
+      return;
+    }
+    const start = el.selectionStart;
+    const end = el.selectionEnd;
+    const next = prompt.substring(0, start) + symbol + prompt.substring(end);
+    setPrompt(next);
+    setTimeout(() => {
+      el.focus();
+      el.selectionStart = el.selectionEnd = start + symbol.length;
+    }, 0);
+  };
 
   // Subject change handler
   const handleSubjectChange = (id: string) => {
@@ -157,6 +269,8 @@ export function TutorPageClient({
       setIsGenerating(false);
     }
     setActiveSessionId(null);
+    setActiveHintRung(0);
+    setTicketAnswers({});
     setMessages([]);
     setPrompt('');
     setMobileSidebarOpen(false);
@@ -213,15 +327,17 @@ export function TutorPageClient({
     }
   };
 
-  // The standalone "explain it simply" tutor gives full worked explanations.
-  // (Socratic nudging is used in rubric mode, from the results page.)
-  const [scaffoldingStyle] = useState<'socratic' | 'direct'>('direct');
+  // The tutor defaults to Socratic scaffolding (nudging & step-by-step guidance).
+  // Students can toggle to 'direct' if they need a fully worked explanation.
+  const [scaffoldingStyle, setScaffoldingStyle] = useState<'socratic' | 'direct'>('socratic');
 
 
   // Submit Question with Real-time SSE Token Streaming
-  const submitQuestion = async (textToSend?: string) => {
+  const submitQuestion = async (textToSend?: string, rungToUse?: HintRung) => {
     const query = (textToSend ?? prompt).trim();
     if (!query || isGenerating) return;
+
+    const targetRung = rungToUse !== undefined ? rungToUse : activeHintRung;
 
     // Reset prompt and textarea
     setPrompt('');
@@ -265,6 +381,7 @@ export function TutorPageClient({
             studentMessage: query,
             languagePreference: language === 'en' ? 'en' : 'bn',
             scaffoldingStyle,
+            hintRung: targetRung,
           },
         },
         init: {
@@ -670,6 +787,84 @@ export function TutorPageClient({
             )}
           </div>
 
+          {/* Hint Ladder Stepper & Formula Bar Toggle */}
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-border/60 bg-surface-2/40 px-4 py-2 sm:px-6 text-xs">
+            <div className="flex items-center gap-1.5 overflow-x-auto scrollbar-none">
+              <span className="font-mono text-2xs font-bold uppercase tracking-wider text-muted-foreground shrink-0">
+                {language === 'bn' ? 'সহায়তা স্তর:' : 'Ladder:'}
+              </span>
+              {[
+                { rung: 1, label: language === 'bn' ? '১. ধারণা ও সূত্র' : '1. Concept' },
+                { rung: 3, label: language === 'bn' ? '২. মান বসানো' : '2. Values' },
+                { rung: 5, label: language === 'bn' ? '৩. বিকল্প উদাহরণ' : '3. Analogous' },
+                { rung: 7, label: language === 'bn' ? '৪. কুইজ ও সমাপ্তি' : '4. Exit Quiz' },
+              ].map((step) => {
+                const isReached = activeHintRung >= step.rung;
+                return (
+                  <button
+                    key={step.rung}
+                    type="button"
+                    onClick={() => setActiveHintRung(step.rung as HintRung)}
+                    className={cn(
+                      'inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-2xs font-medium transition-colors shrink-0',
+                      isReached
+                        ? 'border border-cta/40 bg-cta/15 text-cta font-semibold shadow-xs'
+                        : 'border border-border/80 bg-surface-1 text-muted-foreground hover:bg-surface-2'
+                    )}
+                  >
+                    <span>{step.label}</span>
+                    {isReached && <Check size={11} />}
+                  </button>
+                );
+              })}
+            </div>
+
+            <div className="flex items-center gap-1.5 ml-auto shrink-0">
+              <div className="flex items-center rounded-lg border border-border bg-surface-1 p-0.5 text-2xs">
+                <button
+                  type="button"
+                  onClick={() => setScaffoldingStyle('socratic')}
+                  className={cn(
+                    'rounded-md px-2 py-0.5 font-medium transition-colors',
+                    scaffoldingStyle === 'socratic'
+                      ? 'bg-cta text-cta-foreground font-semibold shadow-xs'
+                      : 'text-muted-foreground hover:text-foreground'
+                  )}
+                  title={language === 'bn' ? 'সক্রেটিক গাইড (ধাপে ধাপে ক্লু)' : 'Socratic Guide (Step-by-step)'}
+                >
+                  {language === 'bn' ? 'সক্রেটিক গাইড' : 'Socratic'}
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setScaffoldingStyle('direct')}
+                  className={cn(
+                    'rounded-md px-2 py-0.5 font-medium transition-colors',
+                    scaffoldingStyle === 'direct'
+                      ? 'bg-cta text-cta-foreground font-semibold shadow-xs'
+                      : 'text-muted-foreground hover:text-foreground'
+                  )}
+                  title={language === 'bn' ? 'সরাসরি ব্যাখ্যা (সম্পূর্ণ উত্তর)' : 'Direct Explanation (Full answer)'}
+                >
+                  {language === 'bn' ? 'সরাসরি ব্যাখ্যা' : 'Direct'}
+                </button>
+              </div>
+
+              <button
+                type="button"
+                onClick={() => setShowFormulaBar((v) => !v)}
+                className={cn(
+                  'inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1 text-2xs font-medium transition-colors shrink-0',
+                  showFormulaBar
+                    ? 'border-mint bg-mint-soft text-mint font-semibold'
+                    : 'border-border bg-surface-1 text-muted-foreground hover:bg-surface-2 hover:text-foreground'
+                )}
+              >
+                <Calculator size={13} />
+                <span>{language === 'bn' ? 'টুলবার' : 'Toolbar'}</span>
+              </button>
+            </div>
+          </div>
+
           {/* Messages */}
           <div
             ref={chatScrollContainerRef}
@@ -763,6 +958,10 @@ export function TutorPageClient({
 
             {messages.map((m, idx) => {
               const isAssistant = m.role === 'assistant';
+              const { cleanText, exitTicket, diagrams, analogousExamples } = isAssistant
+                ? parseTutorDirectives(m.text)
+                : { cleanText: m.text, exitTicket: undefined, diagrams: [], analogousExamples: [] };
+
               return (
                 <div key={idx} className={cn('flex w-full gap-3.5', !isAssistant && 'flex-row-reverse')}>
                   <div className="flex-none">
@@ -785,8 +984,92 @@ export function TutorPageClient({
                       )}
                     >
                       {m.text ? (
-                        <div className="break-words">
-                          <RenderMathText text={m.text} inline={false} />
+                        <div className="break-words space-y-3">
+                          <RenderMathText text={cleanText} inline={false} />
+
+                          {/* Analogous Example Cards */}
+                          {analogousExamples.map((ex, exIdx) => (
+                            <div key={exIdx} className="rounded-xl border border-ochre/30 bg-ochre-soft/30 p-3 text-xs text-foreground">
+                              <div className="mb-1.5 flex items-center gap-1.5 font-semibold text-ochre">
+                                <RotateCcw size={13} />
+                                <span>{ex.title || (language === 'bn' ? 'অনুরূপ উদাহরণ (ভিন্ন সংখ্যা দিয়ে)' : 'Analogous Example')}</span>
+                              </div>
+                              <div className="rounded-lg bg-background/80 p-2.5 leading-relaxed font-mono text-xs border border-border/50">
+                                <RenderMathText text={ex.content} inline={false} />
+                              </div>
+                            </div>
+                          ))}
+
+                          {/* Diagram Directive Callouts */}
+                          {diagrams.map((diag, dIdx) => (
+                            <div key={dIdx} className="rounded-xl border border-border/70 bg-surface-1 p-3 text-xs text-foreground">
+                              <div className="mb-1 flex items-center gap-1.5 font-semibold text-cta">
+                                <BookOpen size={13} />
+                                <span>{diag.caption || (language === 'bn' ? 'পাঠ্যবইয়ের চিত্র' : 'Textbook Diagram')}</span>
+                              </div>
+                              {diag.url && (
+                                <img src={diag.url} alt={diag.caption} className="mt-1.5 max-h-48 rounded-lg object-contain border border-border/50" />
+                              )}
+                            </div>
+                          ))}
+
+                          {/* Exit Ticket Micro-Quiz Card */}
+                          {exitTicket && (
+                            <div className="rounded-xl border border-mint/30 bg-mint-soft/20 p-3.5 text-xs text-foreground">
+                              <div className="mb-2 flex items-center justify-between">
+                                <div className="flex items-center gap-1.5 font-semibold text-mint">
+                                  <CheckCircle2 size={14} />
+                                  <span>{language === 'bn' ? 'যাচাই কুইজ' : 'Quick Check'}</span>
+                                </div>
+                                {ticketAnswers[exitTicket.id]?.isCorrect && (
+                                  <span className="rounded-full bg-mint/20 px-2 py-0.5 text-2xs font-bold text-mint">
+                                    🎉 +15 XP
+                                  </span>
+                                )}
+                              </div>
+                              <p className="mb-2.5 font-medium leading-relaxed">{exitTicket.question}</p>
+                              <div className="space-y-1.5">
+                                {exitTicket.options.map((opt) => {
+                                  const state = ticketAnswers[exitTicket.id];
+                                  const isSelected = state?.selected === opt.id;
+                                  return (
+                                    <button
+                                      key={opt.id}
+                                      type="button"
+                                      onClick={() => {
+                                        setTicketAnswers((prev) => ({
+                                          ...prev,
+                                          [exitTicket.id]: { selected: opt.id, isCorrect: opt.isCorrect },
+                                        }));
+                                        if (opt.isCorrect) {
+                                          toast.success(language === 'bn' ? 'চমৎকার! সঠিক উত্তর (+১৫ XP)' : 'Brilliant! Correct answer (+15 XP)');
+                                        }
+                                      }}
+                                      className={cn(
+                                        'flex w-full items-center justify-between rounded-lg border px-3 py-2 text-left text-xs transition-all',
+                                        isSelected
+                                          ? opt.isCorrect
+                                            ? 'border-mint bg-mint-soft text-mint font-semibold'
+                                            : 'border-destructive bg-destructive/10 text-destructive font-semibold'
+                                          : 'border-border bg-background hover:bg-surface-2 text-foreground'
+                                      )}
+                                    >
+                                      <span>
+                                        <strong className="mr-1.5 font-mono">{opt.id})</strong> {opt.label}
+                                      </span>
+                                      {isSelected && (opt.isCorrect ? <Check size={13} className="text-mint shrink-0" /> : <AlertCircle size={13} className="text-destructive shrink-0" />)}
+                                    </button>
+                                  );
+                                })}
+                              </div>
+                              {exitTicket.explanation && ticketAnswers[exitTicket.id]?.isCorrect && (
+                                <p className="mt-2.5 rounded bg-background/80 p-2.5 text-2xs text-muted-foreground border border-border/50">
+                                  💡 {exitTicket.explanation}
+                                </p>
+                              )}
+                            </div>
+                          )}
+
                           {m.isStreaming && (
                             <span className="ml-1 inline-block h-3.5 w-1.5 animate-pulse bg-green align-middle" />
                           )}
@@ -807,7 +1090,7 @@ export function TutorPageClient({
                       <div className="flex items-center gap-2 pl-1">
                         <button
                           type="button"
-                          onClick={() => copyMessage(m.text, idx)}
+                          onClick={() => copyMessage(cleanText, idx)}
                           className="inline-flex items-center gap-1 rounded-md border border-border px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-accent"
                           title="Copy response"
                         >
@@ -822,6 +1105,15 @@ export function TutorPageClient({
                               <span>{language === 'bn' ? 'কপি' : 'Copy'}</span>
                             </>
                           )}
+                        </button>
+                        <button
+                          type="button"
+                          onClick={() => playBanglaSpeech(cleanText)}
+                          className="inline-flex items-center gap-1 rounded-md border border-border px-2 py-1 text-xs text-muted-foreground transition-colors hover:bg-accent"
+                          title={language === 'bn' ? 'অডিও শুনুন' : 'Listen audio'}
+                        >
+                          <Volume2 size={12} />
+                          <span>{language === 'bn' ? 'শুনুন' : 'Listen'}</span>
                         </button>
                       </div>
                     )}
@@ -844,31 +1136,90 @@ export function TutorPageClient({
             </button>
           )}
 
-          {messages.length > 0 && !isGenerating && (
-            <div className="flex-shrink-0 border-t border-border bg-surface-1 px-4 py-2 sm:px-6">
-              <div className="flex items-center gap-2 overflow-x-auto">
-                <span className="inline-flex shrink-0 items-center gap-1 text-xs font-semibold whitespace-nowrap text-muted-foreground">
-                  <HelpCircle size={12} /> {language === 'bn' ? 'পরবর্তী প্রশ্ন:' : 'Follow-up:'}
-                </span>
-                {[
-                  language === 'bn' ? 'এটি একটি বাস্তব জীবনের উদাহরণ দিয়ে বুঝিয়ে দাও।' : 'Explain this with a real-life analogy.',
-                  language === 'bn' ? 'এই সূত্রের একক ও মাত্রা কীভাবে বের করবো?' : 'How to derive the units and dimensions?',
-                  language === 'bn' ? 'বোর্ডে এই সংক্রান্ত ৩ বা ৪ নম্বরের প্রশ্ন কেমন হয়?' : 'What does a 3 or 4 mark board question look like?',
-                ].map((q, i) => (
+          {/* Dynamic Scaffolding Action Chips */}
+          <div className="flex-shrink-0 border-t border-border bg-surface-2/30 px-4 py-2 sm:px-6">
+            <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 scrollbar-none">
+              {[
+                {
+                  label: language === 'bn' ? '💡 ছোট ক্লু দাও' : '💡 Give Clue',
+                  icon: Lightbulb,
+                  action: () => {
+                    const nextRung = Math.min(activeHintRung + 1, 7) as HintRung;
+                    setActiveHintRung(nextRung);
+                    submitQuestion(
+                      language === 'bn'
+                        ? 'আমাকে পরবর্তী ছোট ক্লু বা সূত্রের ইঙ্গিত দাও।'
+                        : 'Give me a small clue for the next step.',
+                      nextRung
+                    );
+                  },
+                },
+                {
+                  label: language === 'bn' ? '🔄 অন্য উদাহরণ দেখাও' : '🔄 Analogous Example',
+                  icon: RotateCcw,
+                  action: () => {
+                    setActiveHintRung(5 as HintRung);
+                    submitQuestion(
+                      language === 'bn'
+                        ? 'এই নিয়মের অন্য একটি উদাহরণ আলাদা সংখ্যা দিয়ে সম্পূর্ণ সমাধান করে দেখাও।'
+                        : 'Show me an analogous example with different numbers fully worked out.',
+                      5 as HintRung
+                    );
+                  },
+                },
+                {
+                  label: language === 'bn' ? '📖 মূল ধারণা ও ডায়াগ্রাম' : '📖 Diagram & Concept',
+                  icon: BookOpen,
+                  action: () => {
+                    submitQuestion(
+                      language === 'bn'
+                        ? 'এই ধারণার মূল কনসেপ্ট ও বইয়ের চিত্র বা ডায়াগ্রাম ব্যাখ্যা করো।'
+                        : 'Explain the core concept and textbook diagram for this.'
+                    );
+                  },
+                },
+                {
+                  label: language === 'bn' ? '✍️ আমার সূত্র চেক করো' : '✍️ Check Formula',
+                  icon: HelpCircle,
+                  action: () => {
+                    setPrompt(language === 'bn' ? 'আমি ভাবছি সূত্রটি হবে: ' : 'I think the formula is: ');
+                    textareaRef.current?.focus();
+                  },
+                },
+              ].map((chip, idx) => {
+                const Icon = chip.icon;
+                return (
                   <button
-                    key={i}
+                    key={idx}
                     type="button"
-                    onClick={() => submitQuestion(q)}
-                    className="inline-flex shrink-0 items-center gap-1 rounded-full border border-border bg-surface-1 px-2.5 py-1 text-xs font-medium whitespace-nowrap transition-colors hover:bg-accent"
+                    disabled={isGenerating}
+                    onClick={chip.action}
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-border bg-surface-1 px-3 py-1 text-xs font-medium text-foreground transition-colors hover:border-cta/50 hover:bg-surface-2 disabled:opacity-50"
                   >
-                    {[
-                      language === 'bn' ? 'বাস্তব উদাহরণ' : 'Real-life example',
-                      language === 'bn' ? 'একক ও মাত্রা' : 'Units & dimensions',
-                      language === 'bn' ? 'বোর্ড ৩/৪ নম্বর প্রশ্ন' : 'Board 3-4 mark CQ',
-                    ][i]}
+                    <Icon size={12} className="text-cta" />
+                    <span>{chip.label}</span>
                   </button>
-                ))}
-              </div>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Formula & Symbol Palette Toolbar */}
+          {showFormulaBar && (
+            <div className="flex items-center gap-1 overflow-x-auto border-t border-border/40 bg-surface-2/60 px-4 py-1.5 sm:px-6 scrollbar-none text-2xs">
+              <span className="font-mono text-muted-foreground shrink-0 mr-1">
+                {language === 'bn' ? 'প্রতীক:' : 'Symbols:'}
+              </span>
+              {MATH_SYMBOLS.map((s, idx) => (
+                <button
+                  key={idx}
+                  type="button"
+                  onClick={() => handleInsertSymbol(s.insert)}
+                  className="shrink-0 rounded border border-border/70 bg-surface-1 px-2 py-0.5 font-mono text-xs text-muted-foreground transition-colors hover:bg-surface-2 hover:text-foreground"
+                >
+                  {s.label}
+                </button>
+              ))}
             </div>
           )}
 
@@ -881,6 +1232,28 @@ export function TutorPageClient({
               }}
               className="flex items-end gap-2.5 rounded-2xl border border-border bg-surface-1 px-3 py-2 transition-colors focus-within:border-cta"
             >
+              <button
+                type="button"
+                onClick={handleVoiceInput}
+                title={
+                  isListening
+                    ? language === 'bn'
+                      ? 'রেকর্ডিং থামাও'
+                      : 'Stop recording'
+                    : language === 'bn'
+                    ? 'মুখে বলো (বাংলা)'
+                    : 'Voice input'
+                }
+                className={cn(
+                  'grid size-8 shrink-0 place-items-center rounded-lg transition-colors',
+                  isListening
+                    ? 'bg-destructive text-destructive-foreground animate-pulse'
+                    : 'border border-border/80 bg-surface-2 text-muted-foreground hover:bg-surface-3 hover:text-foreground'
+                )}
+              >
+                {isListening ? <MicOff size={15} /> : <Mic size={15} />}
+              </button>
+
               <textarea
                 ref={textareaRef}
                 id="tutor-prompt"
@@ -893,7 +1266,13 @@ export function TutorPageClient({
                     submitQuestion();
                   }
                 }}
-                placeholder={t('tutor.ask_placeholder')}
+                placeholder={
+                  isListening
+                    ? language === 'bn'
+                      ? 'শুনছি... মুখে বলো...'
+                      : 'Listening... speak now...'
+                    : t('tutor.ask_placeholder')
+                }
                 disabled={isGenerating}
                 rows={1}
                 aria-label="Type your message"

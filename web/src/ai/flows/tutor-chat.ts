@@ -37,12 +37,19 @@ export {
   stripLeadingGreeting,
   sanitizeTutorReply,
   isLowEffortTutorReply,
+  detectSolutionLeak,
+  parseTutorDirectives,
+  type HintRung,
+  type ParsedExitTicket,
+  type ParsedDiagramDirective,
+  type ParsedAnalogousExample,
 } from "@/lib/tutor-format";
-import { sanitizeTutorReply } from "@/lib/tutor-format";
+import { sanitizeTutorReply, detectSolutionLeak, type HintRung } from "@/lib/tutor-format";
 
 export function buildTutorPrompt(params: {
   mode: "rubric" | "general";
   scaffoldingStyle?: "socratic" | "direct";
+  hintRung?: HintRung;
   questionText?: string;
   studentAnswerChunk?: string;
   rubricFailureReason?: string;
@@ -57,6 +64,7 @@ export function buildTutorPrompt(params: {
   const {
     mode,
     scaffoldingStyle = "socratic",
+    hintRung = 3,
     questionText,
     studentAnswerChunk,
     rubricFailureReason,
@@ -95,13 +103,33 @@ export function buildTutorPrompt(params: {
         "\n"
       : "";
 
+  // The 8-Rung Hint Ladder instructions (Pisan et al. arXiv:2608.12292)
+  const hintLadderInstruction = `
+8-RUNG HINT LADDER CONTRACT (Current Rung: H${hintRung}):
+- H0 (Emotional Validation): Acknowledge effort and calm exam anxiety in warm Bengali. Do not introduce new formulas.
+- H1 (Restate Objective): Rephrase what the problem requires in simple, conversational terms.
+- H2 (Concept / Law Pointer): State the relevant NCTB scientific law, chapter theorem, or definition (e.g., Newton's Second Law $F = ma$).
+- H3 (Leading Question on Givens): Ask ONE focused question helping the student identify known and unknown variables ("উদ্দীপকে কী কী মান দেওয়া আছে?").
+- H4 (Conceptual Roadmap): Explain the solution stages in words without calculating any numbers or writing equations.
+- H5 (Analogous Worked Example): If the student is stuck or explicitly begs for the final answer ("উত্তর বলে দাও", "solve it"), DO NOT solve their exact live question! Instead, provide a step-by-step solution to a PARALLEL problem with DIFFERENT numbers, enclosed in:
+  :::analogous[title="একই নিয়মের সমান্তরাল উদাহরণ"]
+  [Explain the method with different values here]
+  :::
+  Then prompt the student to apply this exact same sequence to their original problem.
+- H6 (Fill-in-the-Blank Scaffold): Provide the equation setup with key blanks (e.g., $F = \\text{___} \\times 2.5$).
+- H7 (Full Solution Verification): Provide the complete verification (only allowed after persistent student attempts).
+
+CURRENT CEILING RULE: Strictly follow Rung H${hintRung}. When H < 7, NEVER emit the final numerical answer or unearned calculations for the student's live question.
+`;
+
   const socraticInstruction =
     scaffoldingStyle === "socratic"
       ? `SOCRATIC PEDAGOGY RULES:\n` +
         `- FIRST give 2-3 sentences that actually teach: state the relevant concept, law or formula and what each symbol means. Never reply with only a question.\n` +
         `- THEN end with ONE clear guiding question that nudges the student to take the next step themselves, instead of computing the final numeric answer for them.\n` +
         `- Point them towards the relevant physical law or equation; set up the substitution but stop before the final arithmetic.\n` +
-        `- Encourage them to think: "উদ্দীপকে কী কী মান দেওয়া আছে এবং কোন সূত্রটি প্রযোজ্য?"\n\n`
+        `- Encourage them to think: "উদ্দীপকে কী কী মান দেওয়া আছে এবং কোন সূত্রটি প্রযোজ্য?"\n\n` +
+        hintLadderInstruction
       : `DIRECT EXPLANATION RULES:\n` +
         `- Give a clear, complete, step-by-step breakdown: state the formula, substitute the given values, show each line of arithmetic, and give the final answer with units.\n` +
         `- Then add one short real-life Bangladeshi analogy.\n\n`;
@@ -129,13 +157,18 @@ export function buildTutorPrompt(params: {
       ? `6. If the student asks about anything off-topic, gently redirect them back to studying this question.\n\n`
       : `6. If the student asks about anything off-topic, gently redirect them back to studying ${chapterName ?? "this topic"}.\n\n`;
 
+  const exitTicketGuidance = `
+7. FORMATIVE EXIT TICKET: If the student indicates they have mastered the concept ("বুঝেছি", "ক্লিয়ার", "পরের প্রশ্ন", "কুইজ দাও"), end your turn with an interactive 1-question check formatted exactly like this:
+:::exitticket[id="et-check", q="প্রাসের সর্বোচ্চ বিন্দুতে উল্লম্ব বেগ কত?", optA="0 ms⁻¹", optB="u sin θ", optC="g", correct="A", exp="সর্বোচ্চ বিন্দুতে পৌঁছালে বস্তুটির উল্লম্ব বেগ শূন্য হয়ে যায়।"]:::
+`;
+
   return (
     `You are SheraTutor's "Explain it simply" AI tutor for Bangladeshi SSC/HSC students. ${roleIntro}\n\n` +
     socraticInstruction +
     `CORE RULES:\n` +
     `1. Reply in ${languagePreference === "bn" ? "natural conversational Bangla (সহজ ও সাবলীল বাংলা)" : "clear plain English"}. ` +
     `Do NOT open with greetings or introductory salutations — start immediately with the explanation or guiding question.\n` +
-    `2. Keep the response concise and focused (under 300 words, structured in clear paragraphs or bullet points).\n` +
+    `2. Keep the response concise and focused (under 250 words, structured in clear short paragraphs or bullet points).\n` +
     `3. Write in Bengali script and English for scientific terminology, units, and LaTeX notation.\n` +
     `4. Every mathematical formula, chemical symbol, ion, and equation MUST be wrapped in standard LaTeX dollar delimiters ($...$ for inline, $$...$$ for block formulas). ` +
     `Example: $NH_3$, $HCl$, $Zn \\rightarrow Zn^{2+} + 2e^-$, $F = ma$, $\\text{ms}^{-1}$. ` +
@@ -144,6 +177,7 @@ export function buildTutorPrompt(params: {
     `6. If official diagram URLs are provided in the OFFICIAL NCTB DIAGRAM ASSETS section below, you MUST embed the primary relevant diagram using standard Markdown: ![ক্যাপশন](EXACT_URL_FROM_LIST). ` +
     `CRITICAL: Copy the EXACT URL verbatim from the list below. NEVER invent, modify, or hallucinate external image links (such as ibb.co or imgur). If no URL is provided below, do NOT output any image markdown.\n` +
     rule6 +
+    exitTicketGuidance +
     academicContext +
     textbookSection +
     diagramSection +
@@ -165,7 +199,7 @@ export const ChatMessageSchema = z.object({
  *               page, grounded against a chosen subject/chapter instead of
  *               a specific graded question.
  * Both support multi-turn history, render formulas in LaTeX, and share the
- * same minor-safety pre-filter and off-topic redirect rules.
+ * same minor-safety pre-filter, 8-rung hint ladder, and solution leak detector.
  */
 export const tutorChatFlow = ai.defineFlow(
   {
@@ -173,6 +207,7 @@ export const tutorChatFlow = ai.defineFlow(
     inputSchema: z.object({
       mode: z.enum(["rubric", "general"]).optional().default("rubric"),
       scaffoldingStyle: z.enum(["socratic", "direct"]).optional().default("socratic"),
+      hintRung: z.number().min(0).max(7).optional(),
       questionText: z.string().optional(),
       studentAnswerChunk: z.string().optional(),
       rubricFailureReason: z.string().optional(),
@@ -192,6 +227,7 @@ export const tutorChatFlow = ai.defineFlow(
   async ({
     mode,
     scaffoldingStyle = "socratic",
+    hintRung = 3,
     questionText,
     studentAnswerChunk,
     rubricFailureReason,
@@ -211,6 +247,7 @@ export const tutorChatFlow = ai.defineFlow(
     const prompt = buildTutorPrompt({
       mode,
       scaffoldingStyle,
+      hintRung: hintRung as HintRung,
       questionText,
       studentAnswerChunk,
       rubricFailureReason,
@@ -240,6 +277,14 @@ export const tutorChatFlow = ai.defineFlow(
       }
     }
 
-    return { reply: sanitizeTutorReply(text), safety };
+    // Sanitize and run deterministic solution leak detector
+    let reply = sanitizeTutorReply(text);
+    const leakCheck = detectSolutionLeak(reply, hintRung as HintRung);
+    if (leakCheck.hasLeak) {
+      reply = leakCheck.sanitizedText;
+    }
+
+    return { reply, safety };
   }
 );
+

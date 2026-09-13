@@ -1,5 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import { normalizeLatexDelimiters, stripLeadingGreeting } from './tutor-chat';
+import {
+  normalizeLatexDelimiters,
+  stripLeadingGreeting,
+  detectSolutionLeak,
+  parseTutorDirectives,
+} from './tutor-chat';
 
 describe('normalizeLatexDelimiters', () => {
   it('should not corrupt valid LaTeX parentheses like \\left( ... \\right)', () => {
@@ -42,3 +47,50 @@ describe('stripLeadingGreeting', () => {
     expect(stripLeadingGreeting(content)).toBe(content);
   });
 });
+
+describe('detectSolutionLeak', () => {
+  it('should redact leaked final answers when hintRung < 7', () => {
+    const leaked = 'এখানে গণনা অনুযায়ী The final answer is $1250\\text{ J}$।';
+    const result = detectSolutionLeak(leaked, 3);
+    expect(result.hasLeak).toBe(true);
+    expect(result.sanitizedText).toContain('মানটি সূত্রে বসিয়ে নিজেই চূড়ান্ত উত্তরটি বের করো');
+    expect(result.sanitizedText).not.toContain('$1250\\text{ J}$');
+  });
+
+  it('should redact Bengali final answer statements when hintRung < 7', () => {
+    const leakedBn = 'সুতরাং নির্ণেয় চূড়ান্ত উত্তর হলো ২৫ মিটার।';
+    const result = detectSolutionLeak(leakedBn, 2);
+    expect(result.hasLeak).toBe(true);
+    expect(result.sanitizedText).toContain('মানটি সূত্রে বসিয়ে নিজেই চূড়ান্ত উত্তরটি বের করো');
+  });
+
+  it('should allow final answers when hintRung is 7', () => {
+    const allowed = 'The final answer is $1250\\text{ J}$।';
+    const result = detectSolutionLeak(allowed, 7);
+    expect(result.hasLeak).toBe(false);
+    expect(result.sanitizedText).toBe(allowed);
+  });
+});
+
+describe('parseTutorDirectives', () => {
+  it('should parse :::exitticket[...]::: cleanly', () => {
+    const raw = `চমৎকার! তুমি বুঝতে পেরেছো।\n\n:::exitticket[id="et-1", q="বলের একক কী?", optA="নিউটন", optB="জুল", optC="প্যাসকেল", correct="A", exp="বলের এসআই একক নিউটন।"]:::`;
+    const parsed = parseTutorDirectives(raw);
+    expect(parsed.cleanText).toBe('চমৎকার! তুমি বুঝতে পেরেছো।');
+    expect(parsed.exitTicket).toBeDefined();
+    expect(parsed.exitTicket?.question).toBe('বলের একক কী?');
+    expect(parsed.exitTicket?.options).toHaveLength(3);
+    expect(parsed.exitTicket?.options[0].isCorrect).toBe(true);
+    expect(parsed.exitTicket?.options[1].isCorrect).toBe(false);
+  });
+
+  it('should parse :::analogous[...]::: blocks', () => {
+    const raw = `আসল অংকের বদলে এই উদাহরণটি দেখো:\n\n:::analogous[title="সমান্তরাল অংক"]\nধরি ভর m = 2 kg এবং ত্বরণ a = 3 ms^-2। তাহলে F = 6 N।\n:::`;
+    const parsed = parseTutorDirectives(raw);
+    expect(parsed.cleanText).toBe('আসল অংকের বদলে এই উদাহরণটি দেখো:');
+    expect(parsed.analogousExamples).toHaveLength(1);
+    expect(parsed.analogousExamples[0].title).toBe('সমান্তরাল অংক');
+    expect(parsed.analogousExamples[0].content).toContain('F = 6 N');
+  });
+});
+

@@ -182,6 +182,8 @@ export async function POST(req: Request) {
   const studentAnswerChunk = pick("studentAnswerChunk");
   const rubricFailureReason = pick("rubricFailureReason");
   let groundedContext = (pick("groundedContext") as string) || "";
+  const rawHintRung = pick<number | string>("hintRung");
+  const hintRung = typeof rawHintRung === "number" ? rawHintRung : (typeof rawHintRung === "string" ? parseInt(rawHintRung, 10) : 3);
 
   const service = getServiceRoleClient();
 
@@ -201,20 +203,34 @@ export async function POST(req: Request) {
     const rubricStepRaw = pick<number | string>("rubricStepIndex");
     const rubricStepIndex =
       rubricStepRaw == null || rubricStepRaw === "" ? NaN : Number(rubricStepRaw);
-    const { data: created, error: createErr } = await service
+    let insertData: any = {
+      student_id: profile.id,
+      mode,
+      title: (rawText || "Tutor Session").slice(0, 40),
+      submission_id: mode === "rubric" ? ((pick("submissionId") as string) ?? null) : null,
+      question_id: mode === "rubric" ? ((pick("questionId") as string) ?? null) : null,
+      rubric_step_index:
+        mode === "rubric" && Number.isInteger(rubricStepIndex) ? rubricStepIndex : null,
+      context_json: { subjectName, chapterName, subjectId: pick("subjectId"), chapterId },
+    };
+    let { data: created, error: createErr } = await service
       .from("tutor_chat_sessions")
-      .insert({
-        student_id: profile.id,
-        mode,
-        title: (rawText || "Tutor Session").slice(0, 40),
-        submission_id: mode === "rubric" ? ((pick("submissionId") as string) ?? null) : null,
-        question_id: mode === "rubric" ? ((pick("questionId") as string) ?? null) : null,
-        rubric_step_index:
-          mode === "rubric" && Number.isInteger(rubricStepIndex) ? rubricStepIndex : null,
-        context_json: { subjectName, chapterName, subjectId: pick("subjectId"), chapterId },
-      })
+      .insert(insertData)
       .select("id")
       .single();
+
+    if (createErr && createErr.code === "23503") {
+      // Mock questionId or submissionId in demo/testing mode: strip foreign keys and retry
+      const safeInsert = { ...insertData, submission_id: null, question_id: null };
+      const retry = await service
+        .from("tutor_chat_sessions")
+        .insert(safeInsert)
+        .select("id")
+        .single();
+      created = retry.data;
+      createErr = retry.error;
+    }
+
     if (createErr || !created) {
       console.error("tutor-chat: session create failed:", createErr);
       return NextResponse.json({ error: "could not start chat session" }, { status: 500 });
@@ -278,73 +294,29 @@ export async function POST(req: Request) {
   if (ragResult.diagrams && ragResult.diagrams.length > 0) diagramUrls = ragResult.diagrams;
 
   // ---- Generate
+  // ---- Generate via resilient tutorChatFlow with 8-Rung Hint Ladder and multi-key failover
   let reply = "";
   let toolRequest: { name?: string; input?: unknown } | undefined;
-  let usedAgent = false;
 
-  // 1. Try autonomous tutorAgent for general mode (tools: exact calculator, textbook, quiz interrupt)
-  if (mode === "general") {
-    try {
-      const agentRes = await tutorAgent.run(
-        {
-          message: {
-            role: "user",
-            content: [{ text: rawText }],
-          },
-        },
-        {
-          init: {
-            sessionId: sessionId ?? undefined,
-          },
-          context: {
-            userId: user.id,
-            studentId: profile.id,
-            subjectId: pick("subjectId"),
-            chapterId,
-          },
-        }
-      );
-
-      if (agentRes.result?.message?.content) {
-        const textParts = agentRes.result.message.content
-          .filter((c: any) => typeof c.text === "string")
-          .map((c: any) => c.text)
-          .join("");
-        const toolReqPart = agentRes.result.message.content.find((c: any) => c.toolRequest)?.toolRequest;
-        if (toolReqPart) {
-          toolRequest = toolReqPart;
-        }
-        if (textParts) {
-          reply = sanitizeTutorReply(textParts);
-          usedAgent = true;
-        }
-      }
-    } catch (agentErr) {
-      console.warn("tutor-chat: tutorAgent.run failed, falling back to resilient tutorChatFlow:", agentErr);
-    }
-  }
-
-  // 2. Fallback to tutorChatFlow if rubric mode or tutorAgent threw / produced no text
-  if (!reply) {
-    try {
-      const out = await tutorChatFlow({
-        mode,
-        scaffoldingStyle,
-        questionText: questionText as string | undefined,
-        studentAnswerChunk: studentAnswerChunk as string | undefined,
-        rubricFailureReason: rubricFailureReason as string | undefined,
-        subjectName: subjectName as string | undefined,
-        chapterName: chapterName as string | undefined,
-        groundedContext: groundedContext || undefined,
-        diagramUrls: diagramUrls.length > 0 ? diagramUrls : undefined,
-        history,
-        studentMessage: rawText,
-        languagePreference,
-      });
-      reply = sanitizeTutorReply(out.reply);
-    } catch (genErr) {
-      console.error("tutor-chat: tutorChatFlow failed:", genErr);
-    }
+  try {
+    const out = await tutorChatFlow({
+      mode,
+      scaffoldingStyle,
+      hintRung: isNaN(hintRung) ? 3 : hintRung,
+      questionText: questionText as string | undefined,
+      studentAnswerChunk: studentAnswerChunk as string | undefined,
+      rubricFailureReason: rubricFailureReason as string | undefined,
+      subjectName: subjectName as string | undefined,
+      chapterName: chapterName as string | undefined,
+      groundedContext: groundedContext || undefined,
+      diagramUrls: diagramUrls.length > 0 ? diagramUrls : undefined,
+      history,
+      studentMessage: rawText,
+      languagePreference,
+    });
+    reply = sanitizeTutorReply(out.reply);
+  } catch (genErr) {
+    console.error("tutor-chat: tutorChatFlow failed:", genErr);
   }
 
   if (!reply) {
@@ -354,18 +326,16 @@ export async function POST(req: Request) {
         : "Sorry, I couldn't put together an answer just now. Please try again.";
   }
 
-  // When usedAgent is false, manually persist model reply (tutorAgent handles its own persistence via SupabaseSessionStore)
-  if (!usedAgent) {
-    await Promise.all([
-      service
-        .from("tutor_chat_messages")
-        .insert({ session_id: sessionId, role: "tutor", content: reply, safety_category: "none" }),
-      service
-        .from("tutor_chat_sessions")
-        .update({ updated_at: new Date().toISOString() })
-        .eq("id", sessionId),
-    ]);
-  }
+  // Persist model reply and update session timestamp
+  await Promise.all([
+    service
+      .from("tutor_chat_messages")
+      .insert({ session_id: sessionId, role: "tutor", content: reply, safety_category: "none" }),
+    service
+      .from("tutor_chat_sessions")
+      .update({ updated_at: new Date().toISOString() })
+      .eq("id", sessionId),
+  ]);
 
   // ---- Respond (SSE stream matching client's streamFlow parser)
   if (req.headers.get("accept") === "text/event-stream") {
