@@ -43,7 +43,7 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
 
   const { data: subject } = await supabase
     .from("subjects")
-    .select("name_en")
+    .select("name_en, name_bn")
     .eq("id", parsed.data.subjectId)
     .maybeSingle();
   if (!subject) return { status: "error", message: "Subject not found." };
@@ -51,6 +51,8 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
   let generated;
   try {
     generated = await generateQuestionPaperFlow({
+      subjectNameEn: subject.name_en,
+      subjectNameBn: subject.name_bn || (subject.name_en === "Chemistry" ? "রসায়ন" : "পদার্থবিজ্ঞান"),
       chapterIds: parsed.data.chapterIds,
       paperType: parsed.data.paperType,
       difficulty: parsed.data.difficulty,

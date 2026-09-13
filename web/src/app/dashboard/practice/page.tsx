@@ -12,10 +12,9 @@ async function getPracticePapers() {
   );
   const { data: papers } = await supabase
     .from('question_papers')
-    .select('id, title, total_marks, subjects!inner(code, name_en)')
-    .eq('subjects.code', 'SSC-PHY')
+    .select('id, title, total_marks, difficulty, paper_type, subjects!inner(code, name_en, name_bn)')
     .order('created_at', { ascending: false })
-    .limit(12);
+    .limit(30);
   
   return papers;
 }

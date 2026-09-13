@@ -49,10 +49,18 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [timeLeft, setTimeLeft] = useState(3 * 60 * 60); // Default 3 hours
 
-  const paper = papers[0];
+  const [activePaperId, setActivePaperId] = useState<string>(papers[0]?.id ?? '');
+  const paper = papers.find(p => p.id === activePaperId) ?? papers[0];
   const questions = [...(paper?.questions ?? [])].sort(
     (a, b) => a.question_number - b.question_number,
   );
+
+  // Sync activePaperId if papers update
+  useEffect(() => {
+    if (papers.length > 0 && !papers.some(p => p.id === activePaperId)) {
+      setActivePaperId(papers[0].id);
+    }
+  }, [papers, activePaperId]);
 
   // Restore auto-saved answers on mount/start
   useEffect(() => {
@@ -65,10 +73,12 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
             setAnswers(parsed.answers);
             if (parsed.timeLeft) setTimeLeft(parsed.timeLeft);
           }
+        } else if (paper.total_marks) {
+          setTimeLeft(Math.round(paper.total_marks * 1.5 * 60));
         }
       } catch {}
     }
-  }, [paper?.id]);
+  }, [paper?.id, paper?.total_marks]);
 
   // Periodic LocalStorage auto-save
   useEffect(() => {
@@ -118,8 +128,9 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
   });
 
   const subjectOptions = [
-    { value: 'ALL', label_en: 'All Papers (Physics)', label_bn: 'সকল পদার্থবিজ্ঞান প্রশ্নপত্র' },
+    { value: 'ALL', label_en: 'All Subjects', label_bn: 'সকল বিষয়' },
     { value: 'Physics', label_en: 'Physics', label_bn: 'পদার্থবিজ্ঞান' },
+    { value: 'Chemistry', label_en: 'Chemistry', label_bn: 'রসায়ন' },
   ];
 
   const difficultyOptions = [
@@ -222,15 +233,31 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
                     )}
                   </div>
 
-                  {q.question_type === "CQ" && subQuestions && (
-                    <div className="pl-8 space-y-4">
-                      {subQuestions.map((sq: SimSubQuestion) => (
-                        <div key={sq.part} className="flex border border-border p-4 rounded-lg bg-muted">
-                          <span className="font-bold mr-3">({sq.part})</span>
-                          <div className="flex-1"><RenderMathText text={sq.text_bn || ""} /></div>
-                          <span className="text-right font-bold text-muted-foreground">{sq.marks}</span>
-                        </div>
-                      ))}
+                  {q.question_type === "CQ" && subQuestions && subQuestions.length > 0 && (
+                    <div className="pl-4 sm:pl-8 space-y-3 mt-3">
+                      {subQuestions.map((sq: SimSubQuestion) => {
+                        const domainLabel =
+                          sq.part === 'ক' ? (language === 'bn' ? 'জ্ঞানমূলক' : 'Knowledge') :
+                          sq.part === 'খ' ? (language === 'bn' ? 'অনুধাবনমূলক' : 'Comprehension') :
+                          sq.part === 'গ' ? (language === 'bn' ? 'প্রয়োগমূলক' : 'Application') :
+                          (language === 'bn' ? 'উচ্চতর দক্ষতা' : 'Higher Ability');
+                        return (
+                          <div key={sq.part} className="flex items-start border border-border p-3.5 rounded-xl bg-muted/20 gap-3">
+                            <span className="font-bold text-primary mr-1 text-sm">({sq.part})</span>
+                            <div className="flex-1 text-sm leading-relaxed">
+                              <RenderMathText text={sq.text_bn || sq.text_en || ""} />
+                              <div className="mt-1 flex items-center gap-2">
+                                <span className="text-3xs font-medium uppercase tracking-wider text-muted-foreground/80 bg-muted px-2 py-0.5 rounded-md">
+                                  {domainLabel}
+                                </span>
+                              </div>
+                            </div>
+                            <span className="text-right font-mono font-bold text-xs text-muted-foreground bg-muted/60 px-2.5 py-1 rounded-md shrink-0">
+                              {sq.marks} {language === 'bn' ? 'নম্বর' : 'm'}
+                            </span>
+                          </div>
+                        );
+                      })}
                     </div>
                   )}
 
@@ -261,10 +288,10 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
             })}
           </div>
           
-          <div className="mt-12 flex justify-end">
+          <div className="mt-12 pt-6 border-t border-border flex justify-end">
             <Link
               href={`/dashboard/upload?paperId=${paper.id}`}
-              className="inline-flex items-center gap-2 rounded-lg bg-cta px-4 py-2.5 text-xs font-semibold text-cta-foreground shadow-xs transition-colors hover:opacity-90"
+              className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-semibold text-primary-foreground shadow-xs transition-colors hover:bg-primary/90"
             >
               {language === 'bn' ? 'উত্তরপত্র জমা দাও' : 'Submit Answers'} <ArrowUpRight size={16} />
             </Link>
@@ -301,48 +328,80 @@ export const ExamsPageClient: React.FC<ExamsPageClientProps> = ({ simulator = fa
       </PageHeader>
 
       {simulator ? (
-        <div className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-xs relative overflow-hidden flex flex-col md:flex-row gap-6 items-center justify-between">
-          <div className="space-y-4 max-w-xl">
-            <Tag color="sun">{language === 'bn' ? 'বোর্ড সিমুলেশন' : 'BOARD SIMULATION'}</Tag>
-            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
-              {paper?.title || (language === 'bn' ? 'পদার্থবিজ্ঞান বোর্ড পরীক্ষা' : 'Physics Board Exam')}
-            </h2>
-            <p className="text-sm text-muted-foreground leading-relaxed">{t('simulator.hero_desc')}</p>
-            <div className="flex flex-wrap gap-4 text-xs font-medium text-muted-foreground pt-1">
-              <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
-                <Clock3 size={15} className="text-primary" /> {paper ? `${Math.round(paper.total_marks * 1.5)} Min` : t('simulator.3_hours')}
+        <div className="space-y-4">
+          {papers.length > 1 && (
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="text-xs font-semibold text-muted-foreground mr-1">
+                {language === 'bn' ? 'বোর্ড পরীক্ষার বিষয় নির্বাচন করো:' : 'Select Board Exam Subject:'}
               </span>
-              <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
-                <ClipboardCheck size={15} className="text-primary" /> {paper?.total_marks || 100} {language === 'bn' ? 'নম্বর' : 'Marks'}
-              </span>
-              <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
-                <BookOpen size={15} className="text-primary" /> {questions.length} {language === 'bn' ? 'টি প্রশ্ন' : 'Questions'}
-              </span>
+              {papers.map((p) => {
+                const isSelected = p.id === (paper?.id ?? '');
+                const subName = subjectOf(p.subjects)?.name_en || p.title;
+                const subBn = subjectOf(p.subjects)?.name_bn || subName;
+                return (
+                  <button
+                    key={p.id}
+                    type="button"
+                    onClick={() => {
+                      setActivePaperId(p.id);
+                      setTimeLeft(p.total_marks * 1.5 * 60);
+                    }}
+                    className={`px-3.5 py-1.5 rounded-full text-xs font-semibold border transition-all ${
+                      isSelected
+                        ? 'bg-primary text-primary-foreground border-primary shadow-xs'
+                        : 'bg-card text-muted-foreground border-border hover:bg-muted'
+                    }`}
+                  >
+                    {language === 'bn' ? subBn : subName} ({p.total_marks} {language === 'bn' ? 'নম্বর' : 'm'})
+                  </button>
+                );
+              })}
             </div>
-            <div className="pt-2">
-              <Button 
-                type="button" 
-                size="lg"
-                onClick={() => {
-                  if (paper) setTimeLeft(paper.total_marks * 1.5 * 60);
-                  setStarted(true);
-                }}
-                className="gap-2 bg-foreground text-background hover:bg-foreground/90 rounded-full px-6 font-semibold shadow-xs"
-              >
-                {language === 'bn' ? 'পরীক্ষা শুরু করো' : 'Begin simulation'} <ArrowUpRight size={16} />
-              </Button>
-            </div>
-          </div>
+          )}
 
-          <div className="w-full md:w-64 h-48 rounded-2xl bg-primary/5 border border-primary/20 flex flex-col items-center justify-center text-center p-4 relative select-none">
-            <span className="text-xs font-mono tracking-widest text-primary/80 uppercase mb-1">
-              {language === 'bn' ? 'এসএসসি পরীক্ষা' : 'SSC EXAMINATION'}
-            </span>
-            <strong className="text-lg font-bold text-foreground">
-              {subjectOf(paper?.subjects)?.name_en?.toUpperCase() || 'PHYSICS'}
-            </strong>
-            <span className="text-xs text-muted-foreground mt-1">SSC · 2026</span>
-            <span className="absolute bottom-3 right-4 font-mono font-bold text-2xl text-primary/20">01</span>
+          <div className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-xs relative overflow-hidden flex flex-col md:flex-row gap-6 items-center justify-between">
+            <div className="space-y-4 max-w-xl">
+              <Tag color="sun">{language === 'bn' ? 'বোর্ড সিমুলেশন' : 'BOARD SIMULATION'}</Tag>
+              <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+                {paper?.title || (language === 'bn' ? 'বোর্ড পরীক্ষা' : 'Board Exam')}
+              </h2>
+              <p className="text-sm text-muted-foreground leading-relaxed">{t('simulator.hero_desc')}</p>
+              <div className="flex flex-wrap gap-4 text-xs font-medium text-muted-foreground pt-1">
+                <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
+                  <Clock3 size={15} className="text-primary" /> {paper ? `${Math.round(paper.total_marks * 1.5)} Min` : t('simulator.3_hours')}
+                </span>
+                <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
+                  <ClipboardCheck size={15} className="text-primary" /> {paper?.total_marks || 100} {language === 'bn' ? 'নম্বর' : 'Marks'}
+                </span>
+                <span className="flex items-center gap-1.5 bg-muted/40 px-3 py-1.5 rounded-full border border-border/50">
+                  <BookOpen size={15} className="text-primary" /> {questions.length} {language === 'bn' ? 'টি প্রশ্ন' : 'Questions'}
+                </span>
+              </div>
+              <div className="pt-2">
+                <Button 
+                  type="button" 
+                  size="lg"
+                  onClick={() => {
+                    if (paper) setTimeLeft(paper.total_marks * 1.5 * 60);
+                    setStarted(true);
+                  }}
+                  className="gap-2 bg-foreground text-background hover:bg-foreground/90 rounded-full px-6 font-semibold shadow-xs"
+                >
+                  {language === 'bn' ? 'পরীক্ষা শুরু করো' : 'Begin simulation'} <ArrowUpRight size={16} />
+                </Button>
+              </div>
+            </div>
+
+            <div className="w-full md:w-64 h-48 rounded-2xl bg-primary/5 border border-primary/20 flex flex-col items-center justify-center text-center p-4 relative select-none">
+              <span className="text-xs font-mono tracking-widest text-primary/80 uppercase mb-1">
+                {language === 'bn' ? 'এসএসসি পরীক্ষা' : 'SSC EXAMINATION'}
+              </span>
+              <strong className="text-lg font-bold text-foreground">
+                {subjectOf(paper?.subjects)?.name_en?.toUpperCase() || 'PHYSICS'}
+              </strong>
+              <span className="text-xs text-muted-foreground mt-1">SSC · 2026</span>
+              <span className="absolute bottom-3 right-4 font-mono font-bold text-2xl text-primary/20">01</span>
+            </div>
           </div>
         </div>
       ) : (

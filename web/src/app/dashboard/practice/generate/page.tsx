@@ -15,16 +15,16 @@ async function getCurriculumMetadata() {
   );
   const { data: subjects } = await supabase
     .from('subjects')
-    .select('id, name_en, name_bn')
-    .eq('code', 'SSC-PHY')
+    .select('id, name_en, name_bn, code')
+    .in('code', ['SSC-PHY', 'SSC-CHEM', 'SSC-MATH', 'SSC-ENG'])
     .order('name_en');
   
-  const physicsSubjectId = subjects?.[0]?.id;
-  const { data: chapters } = physicsSubjectId
+  const subjectIds = (subjects ?? []).map((s) => s.id);
+  const { data: chapters } = subjectIds.length > 0
     ? await supabase
         .from('chapters')
         .select('id, subject_id, chapter_no, title_en, title_bn')
-        .eq('subject_id', physicsSubjectId)
+        .in('subject_id', subjectIds)
         .order('chapter_no')
     : { data: [] };
 

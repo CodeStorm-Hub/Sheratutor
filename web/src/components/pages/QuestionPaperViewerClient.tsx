@@ -146,14 +146,24 @@ export default function QuestionPaperViewerClient({
                   <div className="pl-4 sm:pl-8 space-y-2.5 mt-2">
                     {subQuestions.map((sq: SubQuestion) => {
                       const sqText = language === 'bn' ? sq.text_bn : (sq.text_en || sq.text_bn);
+                      const domainLabel =
+                        sq.part === 'ক' ? (language === 'bn' ? 'জ্ঞানমূলক' : 'Knowledge') :
+                        sq.part === 'খ' ? (language === 'bn' ? 'অনুধাবনমূলক' : 'Comprehension') :
+                        sq.part === 'গ' ? (language === 'bn' ? 'প্রয়োগমূলক' : 'Application') :
+                        (language === 'bn' ? 'উচ্চতর দক্ষতা' : 'Higher Ability');
                       return (
                         <div key={sq.part} className="flex items-start text-xs sm:text-sm text-foreground/90 gap-2 bg-muted/20 p-2.5 rounded-lg border border-border/40">
                           <span className="w-7 shrink-0 font-bold text-heading">({sq.part})</span>
                           <div className="flex-1 leading-relaxed">
                             <RenderMathText text={sqText || ""} />
+                            <div className="mt-1">
+                              <span className="text-3xs font-medium uppercase tracking-wider text-muted-foreground/80 bg-muted px-2 py-0.5 rounded-md">
+                                {domainLabel}
+                              </span>
+                            </div>
                           </div>
-                          <span className="text-right w-8 shrink-0 font-mono font-bold text-muted-foreground">
-                            {sq.marks}
+                          <span className="text-right w-12 shrink-0 font-mono font-bold text-xs text-muted-foreground bg-muted/50 px-2 py-0.5 rounded-md">
+                            {sq.marks} {language === 'bn' ? 'নম্বর' : 'm'}
                           </span>
                         </div>
                       );
