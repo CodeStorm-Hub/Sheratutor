@@ -12,16 +12,27 @@ export default function MathMarkdownView({
   text: string;
   inline?: boolean;
 }) {
-  // Step 1: normalise TeX delimiters — convert \[…\] → $$…$$ and \(…\) → $…$
+  // Step 0: repair LaTeX corrupted by JSON string escapes (e.g. \t swallowed into tab + ext, \n into newline + ight, etc.)
   let sanitizedText = (text || '')
+    .replace(/\t(ext|times|theta|Theta|tau|textbf|textit|to|tan|tilde|therefore|top)/g, '\\t$1')
+    .replace(/\f(rac|forall|flat)/g, '\\f$1')
+    .replace(/\x08(eta|bar|begin|bf|mathbf|bold)/g, '\\b$1')
+    .replace(/[\r\n](ightarrow|ightleftharpoons|ight)/g, '\\r$1')
+    .replace(/(?<![a-zA-Z\\])ight(arrow|leftharpoons)/g, '\\right$1')
+    .replace(/(?<=[0-9\s$])ext\{/g, '\\text{');
+
+  // Step 1: normalise TeX delimiters — convert \[…\] → $$…$$ and \(…\) → $…$
+  sanitizedText = sanitizedText
     .replace(/\\\[([\s\S]*?)\\\]/g, (_, inner) => `\n$$\n${inner.trim()}\n$$\n`)
     .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner.trim()}$`);
 
-  // Step 2: wrap bare LaTeX commands that appear outside $…$ in inline math.
-  // This fixes stimulus text like "X মৌলের \rightarrow বিক্রিয়া" → "X মৌলের $\rightarrow$ বিক্রিয়া"
+  // Step 2: normalize double backslashes in math commands (e.g. \\Delta -> \Delta)
+  sanitizedText = sanitizedText.replace(/\\\\([a-zA-Z]+)/g, '\\$1');
+
+  // Step 3: wrap bare LaTeX commands that appear outside $…$ in inline math.
   // Strategy: split on existing $…$ blocks, then within non-math segments replace
   // bare LaTeX command sequences with $…$ wrapped versions.
-  const BARE_LATEX_RE = /(?<!\\)(\\(?:Delta|delta|rightarrow|leftarrow|Rightarrow|Leftarrow|leftrightarrow|to|gets|uparrow|downarrow|times|div|pm|mp|leq|geq|neq|approx|equiv|propto|cdot|cdots|ldots|infty|partial|nabla|forall|exists|alpha|beta|gamma|Gamma|theta|Theta|lambda|Lambda|mu|nu|xi|Xi|pi|Pi|rho|sigma|Sigma|tau|phi|Phi|chi|psi|Psi|omega|Omega|text|mathrm|mathbf|mathit|frac|sqrt|sum|prod|int|oint|lim|log|ln|sin|cos|tan|cot|sec|csc|exp|max|min|mod|gcd|lcm|det|dim|ker|hbar|quad|qquad|,|;|!|:|space)(?:\{[^}]*\})*(?:\^[{^]\S*[}]?)?(?:_[{_]\S*[}]?)?)/g;
+  const BARE_LATEX_RE = /(?<!\\)(\\(?:Delta|delta|rightarrow|leftarrow|Rightarrow|Leftarrow|rightleftharpoons|leftrightarrow|to|gets|uparrow|downarrow|times|div|pm|mp|leq|geq|neq|approx|equiv|propto|cdot|cdots|ldots|infty|partial|nabla|forall|exists|alpha|beta|gamma|Gamma|theta|Theta|lambda|Lambda|mu|nu|xi|Xi|pi|Pi|rho|sigma|Sigma|tau|phi|Phi|chi|psi|Psi|omega|Omega|text|mathrm|mathbf|mathit|frac|sqrt|sum|prod|int|oint|lim|log|ln|sin|cos|tan|cot|sec|csc|exp|max|min|mod|gcd|lcm|det|dim|ker|hbar|quad|qquad|,|;|!|:|space)(?:\{[^}]*\})*(?:\^[{^]\S*[}]?)?(?:_[{_]\S*[}]?)?)/g;
 
   const mathSegmentRe = /(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$)/g;
   const parts = sanitizedText.split(mathSegmentRe);
@@ -34,6 +45,7 @@ export default function MathMarkdownView({
       return part; // odd = already inside $…$ — leave as-is
     })
     .join('');
+
 
   return (
     <ReactMarkdown
