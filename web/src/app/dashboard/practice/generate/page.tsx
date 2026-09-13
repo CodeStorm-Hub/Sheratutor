@@ -4,7 +4,7 @@ import { createClient } from '@/lib/supabase/server';
 import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 import { GeneratePageClient } from '@/components/pages/GeneratePageClient';
 
-export const maxDuration = 60;
+export const maxDuration = 120;
 
 async function getCurriculumMetadata() {
   'use cache';
