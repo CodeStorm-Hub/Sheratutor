@@ -78,6 +78,10 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
   const actualTotalMarks = generated.questions.reduce((sum, q) => sum + (q.max_marks || 0), 0);
   const title = `${subject.name_en} Practice — ${new Date().toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}`;
 
+  // Use the user-requested totalMarks for the paper record — the AI may return
+  // slightly fewer questions than asked but the paper is still a "100-mark paper".
+  const paperTotalMarks = parsed.data.totalMarks > 0 ? parsed.data.totalMarks : actualTotalMarks;
+
   const { data: paper, error: paperErr } = await supabase
     .from("question_papers")
     .insert({
@@ -86,7 +90,7 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
       title,
       paper_type: parsed.data.paperType,
       difficulty: parsed.data.difficulty,
-      total_marks: actualTotalMarks > 0 ? actualTotalMarks : parsed.data.totalMarks,
+      total_marks: paperTotalMarks,
       is_public_template: true,
     })
     .select("id")
