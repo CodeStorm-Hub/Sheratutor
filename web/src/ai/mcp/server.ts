@@ -1,8 +1,13 @@
 import { ai } from "@/ai/genkit";
 import { createMcpServer } from "@genkit-ai/mcp";
-// Ensure grounding and evaluation flows are loaded and registered with Genkit
+// Ensure all flows and tools are loaded and registered with Genkit
 import "@/ai/flows/retrieve-grounding";
 import "@/ai/flows/evaluate-rubric";
+import "@/ai/flows/transcribe";
+import "@/ai/flows/grade-submission";
+import "@/ai/flows/generate-question-paper";
+import "@/ai/flows/tutor-chat";
+import "@/ai/tools/tutor-tools";
 
 /**
  * Creates and configures the SheraTutor Model Context Protocol (MCP) server.

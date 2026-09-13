@@ -1,6 +1,7 @@
 import type {
   SessionStore,
   SessionSnapshot,
+  SessionState,
   SnapshotMutator,
   SessionStoreOptions,
 } from "genkit/beta";
@@ -117,22 +118,26 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
         return undefined;
       }
 
-      // Load messages for this session
-      const { data: messagesData } = await supabase
-        .from("tutor_chat_messages")
-        .select("id, role, content, created_at")
-        .eq("session_id", sessionRow.id)
-        .order("created_at", { ascending: true })
-        .order("id", { ascending: true });
-
-      const messages = (messagesData ?? [])
-        .filter((m) => m.content && !m.content.includes("LLM streaming failed"))
-        .map((m) => ({
-          role: m.role === "student" ? ("user" as const) : ("model" as const),
-          content: [{ text: m.content }],
-        }));
-
       const contextJson = (sessionRow.context_json ?? {}) as Record<string, unknown>;
+
+      // Load messages for this session (prefer structured messages from context_json if available)
+      let messages = (contextJson.messages as SessionState<S>["messages"]) ?? [];
+
+      if (!messages || messages.length === 0) {
+        const { data: messagesData } = await supabase
+          .from("tutor_chat_messages")
+          .select("id, role, content, created_at")
+          .eq("session_id", sessionRow.id)
+          .order("created_at", { ascending: true })
+          .order("id", { ascending: true });
+
+        messages = (messagesData ?? [])
+          .filter((m) => m.content && !m.content.includes("LLM streaming failed"))
+          .map((m) => ({
+            role: m.role === "student" ? ("user" as const) : ("model" as const),
+            content: [{ text: m.content }],
+          }));
+      }
 
       const snapshot: SessionSnapshot<S> = {
         snapshotId: (contextJson.snapshotId as string) || sessionRow.id,
@@ -275,6 +280,7 @@ export class SupabaseSessionStore<S = Record<string, unknown>> implements Sessio
         status: mutated.status,
         finishReason: mutated.finishReason,
         artifacts: mutated.state?.artifacts,
+        messages: mutated.state?.messages,
         studentId,
         mode,
       };

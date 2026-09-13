@@ -279,25 +279,74 @@ export async function POST(req: Request) {
 
   // ---- Generate
   let reply = "";
-  try {
-    const out = await tutorChatFlow({
-      mode,
-      scaffoldingStyle,
-      questionText: questionText as string | undefined,
-      studentAnswerChunk: studentAnswerChunk as string | undefined,
-      rubricFailureReason: rubricFailureReason as string | undefined,
-      subjectName: subjectName as string | undefined,
-      chapterName: chapterName as string | undefined,
-      groundedContext: groundedContext || undefined,
-      diagramUrls: diagramUrls.length > 0 ? diagramUrls : undefined,
-      history,
-      studentMessage: rawText,
-      languagePreference,
-    });
-    reply = sanitizeTutorReply(out.reply);
-  } catch (genErr) {
-    console.error("tutor-chat: tutorChatFlow failed:", genErr);
+  let toolRequest: { name?: string; input?: unknown } | undefined;
+  let usedAgent = false;
+
+  // 1. Try autonomous tutorAgent for general mode (tools: exact calculator, textbook, quiz interrupt)
+  if (mode === "general") {
+    try {
+      const agentRes = await tutorAgent.run(
+        {
+          message: {
+            role: "user",
+            content: [{ text: rawText }],
+          },
+        },
+        {
+          init: {
+            sessionId: sessionId ?? undefined,
+          },
+          context: {
+            userId: user.id,
+            studentId: profile.id,
+            subjectId: pick("subjectId"),
+            chapterId,
+          },
+        }
+      );
+
+      if (agentRes.result?.message?.content) {
+        const textParts = agentRes.result.message.content
+          .filter((c: any) => typeof c.text === "string")
+          .map((c: any) => c.text)
+          .join("");
+        const toolReqPart = agentRes.result.message.content.find((c: any) => c.toolRequest)?.toolRequest;
+        if (toolReqPart) {
+          toolRequest = toolReqPart;
+        }
+        if (textParts) {
+          reply = sanitizeTutorReply(textParts);
+          usedAgent = true;
+        }
+      }
+    } catch (agentErr) {
+      console.warn("tutor-chat: tutorAgent.run failed, falling back to resilient tutorChatFlow:", agentErr);
+    }
   }
+
+  // 2. Fallback to tutorChatFlow if rubric mode or tutorAgent threw / produced no text
+  if (!reply) {
+    try {
+      const out = await tutorChatFlow({
+        mode,
+        scaffoldingStyle,
+        questionText: questionText as string | undefined,
+        studentAnswerChunk: studentAnswerChunk as string | undefined,
+        rubricFailureReason: rubricFailureReason as string | undefined,
+        subjectName: subjectName as string | undefined,
+        chapterName: chapterName as string | undefined,
+        groundedContext: groundedContext || undefined,
+        diagramUrls: diagramUrls.length > 0 ? diagramUrls : undefined,
+        history,
+        studentMessage: rawText,
+        languagePreference,
+      });
+      reply = sanitizeTutorReply(out.reply);
+    } catch (genErr) {
+      console.error("tutor-chat: tutorChatFlow failed:", genErr);
+    }
+  }
+
   if (!reply) {
     reply =
       languagePreference === "bn"
@@ -305,17 +354,20 @@ export async function POST(req: Request) {
         : "Sorry, I couldn't put together an answer just now. Please try again.";
   }
 
-  await Promise.all([
-    service
-      .from("tutor_chat_messages")
-      .insert({ session_id: sessionId, role: "tutor", content: reply, safety_category: "none" }),
-    service
-      .from("tutor_chat_sessions")
-      .update({ updated_at: new Date().toISOString() })
-      .eq("id", sessionId),
-  ]);
+  // When usedAgent is false, manually persist model reply (tutorAgent handles its own persistence via SupabaseSessionStore)
+  if (!usedAgent) {
+    await Promise.all([
+      service
+        .from("tutor_chat_messages")
+        .insert({ session_id: sessionId, role: "tutor", content: reply, safety_category: "none" }),
+      service
+        .from("tutor_chat_sessions")
+        .update({ updated_at: new Date().toISOString() })
+        .eq("id", sessionId),
+    ]);
+  }
 
-  // ---- Respond (single-shot SSE — matches the client's streamFlow parser)
+  // ---- Respond (SSE stream matching client's streamFlow parser)
   if (req.headers.get("accept") === "text/event-stream") {
     const encoder = new TextEncoder();
     const stream = new ReadableStream({
@@ -325,13 +377,17 @@ export async function POST(req: Request) {
             `data: ${JSON.stringify({ message: { modelChunk: { content: [{ text: reply }] } } })}\n\n`
           )
         );
+        const contentArr: any[] = [{ text: reply }];
+        if (toolRequest) {
+          contentArr.push({ toolRequest });
+        }
         controller.enqueue(
           encoder.encode(
             `data: ${JSON.stringify({
               result: {
-                message: { role: "model", content: [{ text: reply }] },
+                message: { role: "model", content: contentArr },
                 sessionId,
-                finishReason: "stop",
+                finishReason: toolRequest ? "interrupt" : "stop",
               },
             })}\n\nEND`
           )
@@ -349,6 +405,7 @@ export async function POST(req: Request) {
     sessionId,
     reply,
     safety: { flagged: false, category: "none" },
+    toolRequest,
   });
 }
 

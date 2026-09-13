@@ -16,6 +16,7 @@ export const searchTextbookCurriculum = ai.defineTool(
     inputSchema: z.object({
       query: z.string().describe("The physics concept, formula name, or question to search in the textbook"),
       chapterId: z.string().nullable().optional().describe("Optional chapter UUID to constrain search"),
+      subjectCode: z.string().default("SSC-PHY").describe("Subject code (e.g. 'SSC-PHY', 'SSC-CHEM')"),
       language: z.enum(["bn", "en"]).default("bn").describe("Language preference"),
     }),
     outputSchema: z.object({
@@ -30,34 +31,34 @@ export const searchTextbookCurriculum = ai.defineTool(
       ),
     }),
   },
-  async ({ query, chapterId, language = "bn" }) => {
+  async ({ query, chapterId, subjectCode = "SSC-PHY", language = "bn" }) => {
     try {
       const isUuid = (val?: string | null) =>
         !!val && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(val);
 
-      if (chapterId && isUuid(chapterId)) {
-        try {
-          const result = await retrieveGroundingFlow({
-            queryText: query,
-            chapterId,
-            languageTag: language,
-            matchCount: 4,
-          });
+      // 1. Try semantic RAG first (either chapter-specific or global across the curriculum)
+      try {
+        const result = await retrieveGroundingFlow({
+          queryText: query,
+          chapterId: chapterId && isUuid(chapterId) ? chapterId : null,
+          subjectCode,
+          languageTag: language,
+          matchCount: 4,
+        });
 
-          if (result.chunks.length > 0) {
-            return {
-              found: true,
-              confidence: result.groundingConfidence,
-              passages: result.chunks.map((c) => ({
-                content: c.content_chunk,
-                sourcePage: c.source_book_page_ref,
-                sectionTitle: c.section_title,
-              })),
-            };
-          }
-        } catch (groundingErr) {
-          console.warn("retrieveGroundingFlow fallback to text search:", groundingErr);
+        if (result.chunks.length > 0) {
+          return {
+            found: true,
+            confidence: result.groundingConfidence,
+            passages: result.chunks.map((c) => ({
+              content: c.content_chunk,
+              sourcePage: c.source_book_page_ref,
+              sectionTitle: c.section_title,
+            })),
+          };
         }
+      } catch (groundingErr) {
+        console.warn("retrieveGroundingFlow fallback to text search:", groundingErr);
       }
 
       // Fallback: search across all active curriculum chunks in Supabase
@@ -148,10 +149,7 @@ export const verifyPhysicsCalculation = ai.defineTool(
         ])
         .describe("The physical formula to evaluate"),
       variables: z
-        .union([
-          z.record(z.union([z.number(), z.string()])),
-          z.string(),
-        ])
+        .record(z.string(), z.union([z.number(), z.string()]))
         .describe("Known variables (e.g. { u: 0, a: 2, t: 10 } or { m: 500, v: 20 })"),
       targetVariable: z
         .string()
@@ -171,9 +169,10 @@ export const verifyPhysicsCalculation = ai.defineTool(
     let formulaUsed: string = formula;
 
     const v: Record<string, number> = {};
-    if (typeof variables === "string") {
+    const rawVars = variables as unknown;
+    if (typeof rawVars === "string") {
       try {
-        const normalized = variables.replace(/'/g, '"');
+        const normalized = rawVars.replace(/'/g, '"');
         const parsed = JSON.parse(normalized) as Record<string, unknown>;
         for (const [k, valNum] of Object.entries(parsed)) {
           const n = Number(valNum);
@@ -182,8 +181,8 @@ export const verifyPhysicsCalculation = ai.defineTool(
       } catch {
         // Fallback
       }
-    } else if (variables && typeof variables === "object") {
-      for (const [k, valNum] of Object.entries(variables as Record<string, unknown>)) {
+    } else if (rawVars && typeof rawVars === "object") {
+      for (const [k, valNum] of Object.entries(rawVars as Record<string, unknown>)) {
         const n = Number(valNum);
         v[k] = isNaN(n) ? 0 : n;
       }

@@ -6,7 +6,7 @@ import { apiError } from "@/lib/api";
 export const maxDuration = 60;
 
 const MAX_ATTEMPTS = 3;
-const BATCH_SIZE = 5;
+const BATCH_SIZE = 2;
 const VISIBILITY_TIMEOUT_SECONDS = 120;
 
 type QueueMessage = {
@@ -39,8 +39,15 @@ export async function POST(request: Request) {
   if (error) return apiError(500, error.message);
 
   const results: { submissionId: string; status: "graded" | "failed" | "failed_terminal" }[] = [];
+  const startTime = Date.now();
 
   for (const msg of (messages ?? []) as QueueMessage[]) {
+    // Avoid running past 45 seconds to prevent serverless function termination
+    if (Date.now() - startTime > 45_000) {
+      console.warn("process-grading-queue: Exceeded 45s threshold, yielding remaining queue messages.");
+      break;
+    }
+
     const submissionId = msg.message?.submissionId;
     if (!submissionId) {
       await supabase.rpc("archive_grading_job", { p_msg_id: msg.msg_id });

@@ -1,6 +1,5 @@
 import { z } from "genkit";
 import { ai, MODELS, generateWithGeminiFallback } from "@/ai/genkit";
-import { OpenAI } from "openai";
 
 const SELF_HARM_PATTERNS = [
   /suicid/i, /kill myself/i, /self.?harm/i, /want to die/i, /আত্মহত্যা/, /মরে যেতে/,
@@ -224,29 +223,7 @@ export const tutorChatFlow = ai.defineFlow(
       languagePreference,
     });
 
-    let text: string = "";
-    try {
-      text = await generateWithGeminiFallback(prompt, { temperature: 0.3 });
-    } catch (err) {
-      console.warn("tutorChatFlow Gemini generation failed, falling back to direct NIM/AgentRouter client:", err);
-      const isNim = (process.env.GENKIT_REASONING_MODEL ?? "").startsWith("nim/") || Boolean(process.env.NVIDIA_NIM_API_KEY);
-      const modelName = (process.env.GENKIT_REASONING_MODEL ?? "nim/openai/gpt-oss-20b").replace(/^(?:nim|agentrouter)\//, "");
-      const client = new OpenAI({
-        apiKey: isNim
-          ? (process.env.NVIDIA_NIM_API_KEY ?? "")
-          : (process.env.AGENTROUTER_API_KEY ?? ""),
-        baseURL: isNim
-          ? "https://integrate.api.nvidia.com/v1"
-          : (process.env.AGENTROUTER_BASE_URL ?? "https://agentrouter.org/v1"),
-        defaultHeaders: isNim ? undefined : { "User-Agent": "Cline/3.0.0" },
-      });
-      const completion = await client.chat.completions.create({
-        model: modelName,
-        messages: [{ role: "user", content: prompt }],
-        temperature: 0.3,
-      });
-      text = completion.choices?.[0]?.message?.content || "";
-    }
+    let text = await generateWithGeminiFallback(prompt, { temperature: 0.3 });
 
     // Guarantee authentic diagram rendering: if official diagrams are available and not yet embedded, inject
     if (diagramUrls && diagramUrls.length > 0) {

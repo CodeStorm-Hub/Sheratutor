@@ -9,6 +9,7 @@
     "lint": "eslint",
     "eval:golden-set": "tsx scripts/eval-golden-set.ts",
     "reembed:nim": "tsx --env-file=.env.local scripts/reembed-nim.ts",
+    "reembed:gemini": "tsx --env-file=.env.local scripts/reembed-gemini.ts",
     "test:chat": "tsx --env-file=.env.local scripts/test-tutor-chat.ts",
     "test:grounding": "tsx --env-file=.env.local scripts/test-general-chat.ts",
     "test": "vitest run",

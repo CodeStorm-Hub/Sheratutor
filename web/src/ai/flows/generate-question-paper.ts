@@ -1,6 +1,5 @@
 import { z } from "genkit";
-import { ai, MODELS, FALLBACK_REASONING_MODEL } from "@/ai/genkit";
-import { OpenAI } from "openai";
+import { ai, MODELS, FALLBACK_REASONING_MODEL, generateWithGeminiFallback } from "@/ai/genkit";
 
 // Helper to extract JSON from model output that might include markdown or commentary
 export function extractJsonFromResponse(response: string): unknown {
@@ -106,45 +105,22 @@ ${chapterTitles}
       const response = await ai.generate({
         model: MODELS.paper,
         prompt,
+        output: { schema: GeneratedPaperSchema },
         config: { temperature: 0.2, maxOutputTokens: 2200 },
       });
 
-      if (response.text) {
+      if (response.output) {
+        generatedPaper = response.output;
+      } else if (response.text) {
         const parsedJson = extractJsonFromResponse(response.text);
         generatedPaper = GeneratedPaperSchema.parse(parsedJson);
       }
     } catch (genkitErr) {
-      console.warn("Direct generation failed, trying NIM OpenAI-client fallback:", genkitErr);
-      // Fall back to a DIFFERENT live NIM model than MODELS.paper so a
-      // per-model outage (e.g. the retired nemotron-3-nano-30b-a3b that used
-      // to 410 here) still has a working path. Always NIM now — no AgentRouter.
-      const fallbackModel = FALLBACK_REASONING_MODEL.replace(/^(?:nim|agentrouter)\//, "");
-      const client = new OpenAI({
-        apiKey: process.env.NVIDIA_NIM_API_KEY ?? "",
-        baseURL: "https://integrate.api.nvidia.com/v1",
-        // Stay well under Vercel's 60s function limit — a longer client
-        // timeout just means the whole action is killed mid-wait.
-        timeout: 40000,
-      });
-
-      const completion = await client.chat.completions.create({
-        model: fallbackModel,
-        messages: [
-          {
-            role: "system",
-            content: "You are a senior Bangladeshi NCTB SSC Physics examiner. Return ONLY a valid JSON object matching the requested schema with NO markdown code block wrappers or commentary.",
-          },
-          {
-            role: "user",
-            content: prompt,
-          },
-        ],
+      console.warn("Direct generation failed, trying Gemini fallback with key rotation:", genkitErr);
+      const rawText = await generateWithGeminiFallback(prompt, {
         temperature: 0.2,
-        max_tokens: 2200,
+        model: FALLBACK_REASONING_MODEL,
       });
-
-      const parsedCompletion = typeof completion === "string" ? JSON.parse(completion) : completion;
-      const rawText = parsedCompletion.choices?.[0]?.message?.content ?? "";
       if (!rawText) throw new Error("generateQuestionPaper: model returned no output");
       const parsedJson = extractJsonFromResponse(rawText);
       generatedPaper = GeneratedPaperSchema.parse(parsedJson);

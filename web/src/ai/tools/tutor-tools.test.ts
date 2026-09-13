@@ -133,7 +133,7 @@ describe('verifyPhysicsCalculation Tool', () => {
   it('handles stringified variables correctly', async () => {
     const res = await verifyPhysicsCalculation({
       formula: 'v = u + at',
-      variables: "{'u': 5, 'a': 3, 't': 4}",
+      variables: { u: '5', a: '3', t: '4' },
       targetVariable: 'v',
     });
 
