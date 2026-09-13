@@ -12,9 +12,28 @@ export default function MathMarkdownView({
   text: string;
   inline?: boolean;
 }) {
-  const sanitizedText = (text || '')
+  // Step 1: normalise TeX delimiters — convert \[…\] → $$…$$ and \(…\) → $…$
+  let sanitizedText = (text || '')
     .replace(/\\\[([\s\S]*?)\\\]/g, (_, inner) => `\n$$\n${inner.trim()}\n$$\n`)
     .replace(/\\\(([\s\S]*?)\\\)/g, (_, inner) => `$${inner.trim()}$`);
+
+  // Step 2: wrap bare LaTeX commands that appear outside $…$ in inline math.
+  // This fixes stimulus text like "X মৌলের \rightarrow বিক্রিয়া" → "X মৌলের $\rightarrow$ বিক্রিয়া"
+  // Strategy: split on existing $…$ blocks, then within non-math segments replace
+  // bare LaTeX command sequences with $…$ wrapped versions.
+  const BARE_LATEX_RE = /(?<!\\)(\\(?:Delta|delta|rightarrow|leftarrow|Rightarrow|Leftarrow|leftrightarrow|to|gets|uparrow|downarrow|times|div|pm|mp|leq|geq|neq|approx|equiv|propto|cdot|cdots|ldots|infty|partial|nabla|forall|exists|alpha|beta|gamma|Gamma|theta|Theta|lambda|Lambda|mu|nu|xi|Xi|pi|Pi|rho|sigma|Sigma|tau|phi|Phi|chi|psi|Psi|omega|Omega|text|mathrm|mathbf|mathit|frac|sqrt|sum|prod|int|oint|lim|log|ln|sin|cos|tan|cot|sec|csc|exp|max|min|mod|gcd|lcm|det|dim|ker|hbar|quad|qquad|,|;|!|:|space)(?:\{[^}]*\})*(?:\^[{^]\S*[}]?)?(?:_[{_]\S*[}]?)?)/g;
+
+  const mathSegmentRe = /(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$)/g;
+  const parts = sanitizedText.split(mathSegmentRe);
+  sanitizedText = parts
+    .map((part, i) => {
+      // Even-indexed parts are outside math delimiters — apply bare LaTeX wrapping
+      if (i % 2 === 0) {
+        return part.replace(BARE_LATEX_RE, (match) => `$${match}$`);
+      }
+      return part; // odd = already inside $…$ — leave as-is
+    })
+    .join('');
 
   return (
     <ReactMarkdown

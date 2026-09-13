@@ -18,12 +18,11 @@ export function extractJsonFromResponse(response: string): unknown {
   } catch (_firstErr) {
     try {
       // Fix unescaped backslashes commonly produced in LaTeX / chemistry / math
-      // Negative lookahead keeps valid JSON escapes: " \ / b f n r t u####
+      // Negative lookahead keeps valid JSON escapes: " \ / b f n r t u
       const sanitized = cleanText.replace(/\\(?!["\\\/bfnrtu]|u[0-9a-fA-F]{4})/g, "\\\\");
       return JSON.parse(sanitized);
     } catch (_secondErr) {
       // Aggressive: escape ALL backslash-letter sequences (including \t \r \n \b \f)
-      // This may lose whitespace semantics but ensures valid JSON
       const aggressiveSanitized = cleanText.replace(/\\([a-zA-Z])/g, "\\\\$1");
       return JSON.parse(aggressiveSanitized);
     }
@@ -56,7 +55,7 @@ export const GeneratedQuestionSchema = z
       if (!data.sub_questions || data.sub_questions.length < 4) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: "Every CQ question MUST contain exactly 4 sub_questions: ক (1 mark), খ (2 marks), গ (3 marks), ঘ (4 marks)",
+          message: "Every CQ MUST contain exactly 4 sub_questions: ক (1), খ (2), গ (3), ঘ (4)",
           path: ["sub_questions"],
         });
       }
@@ -64,7 +63,7 @@ export const GeneratedQuestionSchema = z
       if (!data.mcq_options || data.mcq_options.length < 4) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: "Every MCQ MUST have at least 4 options (ক, খ, গ, ঘ)",
+          message: "Every MCQ MUST have at least 4 options",
           path: ["mcq_options"],
         });
       }
@@ -75,7 +74,6 @@ export const GeneratedPaperSchema = z.object({
   questions: z.array(GeneratedQuestionSchema),
 });
 
-// Schema for CQ-only generation (used in split MIXED generation)
 const CQOnlySchema = z.object({
   questions: z.array(
     z.object({
@@ -89,7 +87,6 @@ const CQOnlySchema = z.object({
   ),
 });
 
-// Schema for MCQ-only generation (used in split MIXED generation)
 const MCQOnlySchema = z.object({
   questions: z.array(
     z.object({
@@ -104,10 +101,6 @@ const MCQOnlySchema = z.object({
   ),
 });
 
-/**
- * Generate questions via ai.generate with fallback to raw-text extraction.
- * Works for any output schema that has a `questions` array.
- */
 async function generateWithFallback<T>(
   prompt: string,
   schema: z.ZodType<T>,
@@ -120,9 +113,7 @@ async function generateWithFallback<T>(
       output: { schema },
       config: { temperature: 0.2, maxOutputTokens },
     });
-
     if (response.output) return response.output;
-
     if (response.text) {
       const parsedJson = extractJsonFromResponse(response.text);
       return schema.parse(parsedJson);
@@ -130,8 +121,6 @@ async function generateWithFallback<T>(
     throw new Error("No output from model");
   } catch (genkitErr: any) {
     console.warn("Direct generation failed, attempting raw-text extraction:", genkitErr?.message ?? genkitErr);
-
-    // Try extracting from error's embedded response text
     const possibleRaw = genkitErr?.response?.text || genkitErr?.text || genkitErr?.rawText;
     if (possibleRaw) {
       try {
@@ -141,16 +130,199 @@ async function generateWithFallback<T>(
         console.warn("Raw-text extraction failed, running key-rotation fallback:", _parseErr);
       }
     }
-
-    // Last resort: key-rotation fallback
-    const rawText = await generateWithGeminiFallback(prompt, {
-      temperature: 0.2,
-      model: MODELS.paper,
-    });
+    const rawText = await generateWithGeminiFallback(prompt, { temperature: 0.2, model: MODELS.paper });
     if (!rawText) throw new Error("generateWithFallback: model returned no output");
     const parsedJson = extractJsonFromResponse(rawText);
     return schema.parse(parsedJson);
   }
+}
+
+// ─── Shared CQ prompt rules (used by both CQ-only and MIXED CQ call) ────────
+function buildCQPrompt({
+  subjectNameEn,
+  subjectNameBn,
+  difficulty,
+  cqCount,
+  chapterTitles,
+  chapterIdsStr,
+  firstChapterId,
+}: {
+  subjectNameEn: string;
+  subjectNameBn: string;
+  difficulty: string;
+  cqCount: number;
+  chapterTitles: string;
+  chapterIdsStr: string;
+  firstChapterId: string;
+}) {
+  return `You are a senior NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner. Write ${cqCount} authentic ${difficulty} Creative Questions (সৃজনশীল প্রশ্ন) in Bengali following NCTB 2025 board standards exactly.
+
+MANDATORY: Generate EXACTLY ${cqCount} CQs. Each CQ = 10 marks (1+2+3+4).
+
+CURRICULUM CHAPTERS (use these IDs and topics):
+${chapterTitles}
+
+══════════════════════════════════════════════════════
+CRITICAL RULES — Follow EXACTLY or the output is invalid
+══════════════════════════════════════════════════════
+
+RULE 1 — STIMULUS (উদ্দীপক) REQUIREMENTS:
+• Must be a concrete real-world scenario with SPECIFIC NUMBERS: atomic numbers (Z=11), percentages (৭৫%), concentrations (0.2 M), temperatures, chemical formulas with ΔH values, or physical quantities with SI units.
+• Format: "মৌল A-এর পারমাণবিক সংখ্যা $11$ এবং মৌল B-এর পারমাণবিক সংখ্যা $17$।"
+• ALL math, chemical symbols, formulas MUST be wrapped in $...$: use $H_2O$, $\\Delta H = -286\\text{ kJ/mol}$, $^{35}_{17}Cl$
+• The stimulus must GROUND parts (গ) and (ঘ) — students must READ the stimulus to answer them.
+• Do NOT write a generic stimulus — it must have specific numbers or data.
+
+RULE 2 — PART (ক) — 1 mark — জ্ঞানমূলক (Knowledge):
+• MUST be a simple definition question in exactly this pattern: "X কাকে বলে?" OR "X কী?"
+• Examples: "আইসোটোপ কাকে বলে?", "মোলারিটি কাকে বলে?", "রেডক্স বিক্রিয়া কী?"
+• NEVER ask a calculation in (ক). NEVER reference the stimulus in (ক).
+• Rubric: "সঠিক ও সম্পূর্ণ সংজ্ঞার জন্য ১ নম্বর।"
+
+RULE 3 — PART (খ) — 2 marks — অনুধাবনমূলক (Comprehension):
+• MUST be a "কেন?" or "ব্যাখ্যা করো" question explaining a concept or phenomenon.
+• Examples: "পটাশিয়ামের ১৯তম ইলেকট্রন $3d$ অরবিটালে না গিয়ে $4s$-এ যায় কেন?", "$CO_2$ গ্যাসীয় হলেও $SiO_2$ কঠিন কেন?"
+• May or may not reference stimulus — 2 marks for a well-explained reason.
+• Rubric: "সঠিক কারণ উল্লেখ করার জন্য ১ নম্বর, ব্যাখ্যার জন্য আরও ১ নম্বর।"
+
+RULE 4 — PART (গ) — 3 marks — প্রয়োগমূলক (Application) — MUST BE NUMERICAL:
+• MUST be a calculation/determination directly using the stimulus data.
+• MUST contain one of these verbs: "গণনা করো", "নির্ণয় করো", "বের করো", "হিসাব করো", "অঙ্কন করো"
+• MUST reference the উদ্দীপক (stimulus): "উদ্দীপকের X মৌলটির আপেক্ষিক পারমাণবিক ভর গণনা করো।"
+• Rubric (MUST BE STEP-WISE, 3 separate steps):
+  "সূত্র সঠিকভাবে লেখার জন্য ১ নম্বর, উদ্দীপক থেকে সঠিক মান বসানোর জন্য ১ নম্বর, সঠিক উত্তর পাওয়ার জন্য ১ নম্বর।"
+
+RULE 5 — PART (ঘ) — 4 marks — উচ্চতর দক্ষতামূলক (Higher Ability) — MUST BE ANALYSIS:
+• MUST compare two things from the stimulus OR analyze a trend/phenomenon.
+• MUST contain one of: "বিশ্লেষণ করো", "যুক্তিসহ লেখো", "মূল্যায়ন করো", "তুলনা করো"
+• MUST reference the উদ্দীপক: "উদ্দীপকের A ও B মৌলের..."
+• Rubric (MUST BE STEP-WISE, 4 separate steps):
+  "সংজ্ঞা/নীতি উল্লেখের জন্য ১ নম্বর, উদ্দীপকের তথ্য প্রয়োগের জন্য ১ নম্বর, তুলনামূলক বিশ্লেষণের জন্য ১ নম্বর, সঠিক সিদ্ধান্তের জন্য ১ নম্বর।"
+
+RULE 6 — LaTeX:
+• ALL mathematical expressions, chemical formulas, and symbols MUST be in $...$
+• Correct: $H_2SO_4$, $\\Delta H = +178\\text{ kJ/mol}$, $^{35}_{17}Cl$, $1s^2 2s^2 2p^6$
+• Wrong: H2SO4, ΔH = +178 kJ/mol (bare text without $...$)
+• In JSON strings: use $...$ directly — do NOT double-escape the $ sign.
+
+RULE 7 — Distribute questions evenly across these chapter IDs: ${chapterIdsStr}
+
+══════════════════════════════════════════════════════
+OUTPUT FORMAT — Return ONLY this valid JSON (no markdown, no text outside JSON):
+══════════════════════════════════════════════════════
+{
+  "questions": [
+    {
+      "chapter_id": "${firstChapterId}",
+      "question_type": "CQ",
+      "max_marks": 10,
+      "stimulus_bn": "মৌল $A$ এর পারমাণবিক সংখ্যা $11$ এবং মৌল $B$ এর পারমাণবিক সংখ্যা $17$। উভয় মৌল একত্রিত হয়ে একটি যৌগ গঠন করে এবং বিক্রিয়াটির $\\Delta H = -411\\text{ kJ/mol}$।",
+      "stimulus_en": "Element A has atomic number 11 and element B has atomic number 17. Both elements combine to form a compound with ΔH = -411 kJ/mol.",
+      "sub_questions": [
+        {
+          "part": "ক",
+          "text_bn": "আয়নিক বন্ধন কাকে বলে?",
+          "text_en": "What is an ionic bond?",
+          "marks": 1,
+          "rubric_step_rules": "আয়নিক বন্ধনের সঠিক ও সম্পূর্ণ সংজ্ঞার জন্য ১ নম্বর।"
+        },
+        {
+          "part": "খ",
+          "text_bn": "সমযোজী যৌগ বিদ্যুৎ পরিবাহী নয় কেন? ব্যাখ্যা করো।",
+          "text_en": "Why are covalent compounds non-conductors of electricity? Explain.",
+          "marks": 2,
+          "rubric_step_rules": "মুক্ত আয়নের অনুপস্থিতির কারণ উল্লেখ করার জন্য ১ নম্বর, সঠিক ব্যাখ্যার জন্য আরও ১ নম্বর।"
+        },
+        {
+          "part": "গ",
+          "text_bn": "উদ্দীপকের $A$ ও $B$ মৌল দ্বারা গঠিত যৌগের সংকেত নির্ণয় করো এবং ইলেকট্রন বিন্যাসের মাধ্যমে বন্ধন গঠন প্রক্রিয়া দেখাও।",
+          "text_en": "Determine the formula of the compound formed by elements A and B and show the bond formation process through electron configuration.",
+          "marks": 3,
+          "rubric_step_rules": "মৌল দুটির ইলেকট্রন বিন্যাস সঠিকভাবে লেখার জন্য ১ নম্বর, ইলেকট্রন আদান-প্রদান দেখানোর জন্য ১ নম্বর, সঠিক যৌগের সংকেত ($NaCl$) নির্ধারণের জন্য ১ নম্বর।"
+        },
+        {
+          "part": "ঘ",
+          "text_bn": "উদ্দীপকের যৌগটির গলনাঙ্ক, দ্রাব্যতা ও বিদ্যুৎ পরিবাহিতার বৈশিষ্ট্য বিশ্লেষণ করো এবং দৈনন্দিন জীবনে এর গুরুত্ব মূল্যায়ন করো।",
+          "text_en": "Analyze the melting point, solubility, and electrical conductivity of the compound in the stimulus and evaluate its importance in daily life.",
+          "marks": 4,
+          "rubric_step_rules": "আয়নিক যৌগের উচ্চ গলনাঙ্কের কারণ বিশ্লেষণের জন্য ১ নম্বর, পানিতে দ্রাব্যতা ও বিচ্ছিন্ন আয়নের কারণ ব্যাখ্যার জন্য ১ নম্বর, গলিত বা দ্রবীভূত অবস্থায় বিদ্যুৎ পরিবাহিতার কারণ ব্যাখ্যার জন্য ১ নম্বর, দৈনন্দিন জীবনে গুরুত্ব সঠিকভাবে মূল্যায়নের জন্য ১ নম্বর।"
+        }
+      ]
+    }
+  ]
+}
+
+Generate all ${cqCount} CQs now. Every CQ must follow RULES 1–7 strictly.`;
+}
+
+// ─── Shared MCQ prompt ────────────────────────────────────────────────────────
+function buildMCQPrompt({
+  subjectNameEn,
+  subjectNameBn,
+  difficulty,
+  mcqCount,
+  chapterTitles,
+  chapterIdsStr,
+  firstChapterId,
+}: {
+  subjectNameEn: string;
+  subjectNameBn: string;
+  difficulty: string;
+  mcqCount: number;
+  chapterTitles: string;
+  chapterIdsStr: string;
+  firstChapterId: string;
+}) {
+  return `You are a senior NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner. Write ${mcqCount} authentic ${difficulty} Multiple Choice Questions (বহুনির্বাচনী প্রশ্ন) in Bengali.
+
+MANDATORY: Generate EXACTLY ${mcqCount} MCQs. Each MCQ = 1 mark.
+
+CURRICULUM CHAPTERS:
+${chapterTitles}
+
+══════════════════════════════════════════════════════
+MCQ RULES
+══════════════════════════════════════════════════════
+
+RULE 1 — QUESTION TYPES (use variety):
+• Direct factual: "নিচের কোনটি সঠিক?"
+• Negative: "নিচের কোনটি সঠিক নয়?"
+• Assertion-Reason (i, ii, iii then "নিচের কোনটি সঠিক?" with ক) i ও ii, খ) ii ও iii, গ) i ও iii, ঘ) i, ii ও iii)
+• Application: Given data, "এক্ষেত্রে কোনটি সঠিক?"
+
+RULE 2 — OPTIONS:
+• Exactly 4 options: "ক) ...", "খ) ...", "গ) ...", "ঘ) ..."
+• All 4 options must be plausible — avoid obviously wrong distractors.
+• Options must be parallel in structure and length.
+• mcq_correct_option MUST exactly match one of the 4 options.
+
+RULE 3 — LaTeX:
+• Chemical formulas and math in $...$: "$H_2SO_4$", "$\\Delta H$", "$^{35}_{17}Cl$"
+
+RULE 4 — Distribution:
+• Distribute questions evenly across chapter IDs: ${chapterIdsStr}
+• Vary Bloom levels: ~40% recall, ~35% comprehension, ~25% application.
+
+RULE 5 — NO duplicate questions. Each question must test a different concept.
+
+══════════════════════════════════════════════════════
+OUTPUT: Return ONLY valid JSON:
+══════════════════════════════════════════════════════
+{
+  "questions": [
+    {
+      "chapter_id": "${firstChapterId}",
+      "question_type": "MCQ",
+      "max_marks": 1,
+      "mcq_question_bn": "$H_2O$ অণুতে O-H বন্ধন কোণ কত?",
+      "mcq_question_en": "What is the O-H bond angle in the H₂O molecule?",
+      "mcq_options": ["ক) $104.5°$", "খ) $109.5°$", "গ) $120°$", "ঘ) $180°$"],
+      "mcq_correct_option": "ক) $104.5°$"
+    }
+  ]
+}
+
+Generate all ${mcqCount} MCQs now.`;
 }
 
 export const generateQuestionPaperFlow = ai.defineFlow(
@@ -168,7 +340,6 @@ export const generateQuestionPaperFlow = ai.defineFlow(
     outputSchema: GeneratedPaperSchema,
   },
   async ({ subjectNameEn, subjectNameBn, chapterIds, paperType, difficulty, totalMarks, languagePreference: _languagePreference }) => {
-    // Allow up to 15 chapters to support full syllabus papers
     const cappedChapterIds = chapterIds.slice(0, 15);
 
     const supabase = (await import("@/lib/supabase/service-role")).getServiceRoleClient();
@@ -184,85 +355,18 @@ export const generateQuestionPaperFlow = ai.defineFlow(
     const chapterIdsStr = cappedChapterIds.join(", ");
     const firstChapterId = cappedChapterIds[0];
 
-    // ─── MIXED: Two parallel calls to avoid token truncation ───────────────
+    const promptArgs = { subjectNameEn, subjectNameBn, difficulty, chapterTitles, chapterIdsStr, firstChapterId };
+
+    // ─── MIXED: Two parallel calls (CQ + MCQ) to avoid token truncation ───────
     if (paperType === "MIXED") {
       const cqCount = Math.max(1, Math.floor((totalMarks * 0.7) / 10));
       const mcqCount = Math.max(2, totalMarks - cqCount * 10);
 
-      const cqPrompt = `You are a senior Bangladeshi NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner writing an authentic ${difficulty} exam in Bengali.
+      console.log(`MIXED paper: generating ${cqCount} CQs + ${mcqCount} MCQs in parallel…`);
 
-MANDATORY: Generate EXACTLY ${cqCount} Creative Questions (CQ), 10 marks each.
-
-CURRICULUM CHAPTERS:
-${chapterTitles}
-
-RULES:
-1. Each CQ MUST have "question_type": "CQ", "max_marks": 10.
-2. Each CQ MUST have a realistic Bengali stimulus (উদ্দীপক) in "stimulus_bn" with numerical data and SI units.
-3. Each CQ MUST have "sub_questions" array with EXACTLY 4 items:
-   - {"part": "ক", "marks": 1, "text_bn": "জ্ঞানমূলক প্রশ্ন...", "text_en": "...", "rubric_step_rules": "..."}
-   - {"part": "খ", "marks": 2, "text_bn": "অনুধাবনমূলক প্রশ্ন...", "text_en": "...", "rubric_step_rules": "..."}
-   - {"part": "গ", "marks": 3, "text_bn": "প্রয়োগমূলক গাণিতিক প্রশ্ন...", "text_en": "...", "rubric_step_rules": "..."}
-   - {"part": "ঘ", "marks": 4, "text_bn": "উচ্চতর দক্ষতামূলক বিশ্লেষণ...", "text_en": "...", "rubric_step_rules": "..."}
-4. Each question MUST have a "chapter_id" chosen from: ${chapterIdsStr}.
-5. Distribute questions across chapters. In LaTeX, ALWAYS double-escape backslashes (\\\\Delta, \\\\rightarrow, \\\\text{}).
-
-OUTPUT: Return ONLY valid JSON:
-{
-  "questions": [
-    {
-      "chapter_id": "${firstChapterId}",
-      "question_type": "CQ",
-      "max_marks": 10,
-      "stimulus_bn": "সম্পূর্ণ উদ্দীপক (সংখ্যা ও SI একক সহ)...",
-      "stimulus_en": "Complete stimulus in English...",
-      "sub_questions": [
-        {"part": "ক", "text_bn": "...", "text_en": "...", "marks": 1, "rubric_step_rules": "..."},
-        {"part": "খ", "text_bn": "...", "text_en": "...", "marks": 2, "rubric_step_rules": "..."},
-        {"part": "গ", "text_bn": "...", "text_en": "...", "marks": 3, "rubric_step_rules": "..."},
-        {"part": "ঘ", "text_bn": "...", "text_en": "...", "marks": 4, "rubric_step_rules": "..."}
-      ]
-    }
-  ]
-}
-No markdown, no explanation. Generate all ${cqCount} CQs.`;
-
-      const mcqPrompt = `You are a senior Bangladeshi NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner writing ${difficulty} MCQs in Bengali.
-
-MANDATORY: Generate EXACTLY ${mcqCount} Multiple Choice Questions (MCQ), 1 mark each.
-
-CURRICULUM CHAPTERS:
-${chapterTitles}
-
-RULES:
-1. Each MCQ MUST have "question_type": "MCQ", "max_marks": 1.
-2. Each MCQ MUST have "mcq_question_bn" (Bengali question text).
-3. Each MCQ MUST have "mcq_options" array with exactly 4 items: ["ক) ...", "খ) ...", "গ) ...", "ঘ) ..."].
-4. Each MCQ MUST have "mcq_correct_option" exactly matching one of the 4 options.
-5. Each question MUST have a "chapter_id" chosen from: ${chapterIdsStr}.
-6. Distribute questions evenly across chapters. In LaTeX, ALWAYS double-escape backslashes (\\\\Delta, \\\\text{}).
-
-OUTPUT: Return ONLY valid JSON:
-{
-  "questions": [
-    {
-      "chapter_id": "${firstChapterId}",
-      "question_type": "MCQ",
-      "max_marks": 1,
-      "mcq_question_bn": "প্রশ্নের টেক্সট...",
-      "mcq_question_en": "Question text in English...",
-      "mcq_options": ["ক) অপশন ১", "খ) অপশন ২", "গ) অপশন ৩", "ঘ) অপশন ৪"],
-      "mcq_correct_option": "ক) অপশন ১"
-    }
-  ]
-}
-No markdown, no explanation. Generate all ${mcqCount} MCQs.`;
-
-      // Run CQ and MCQ generation in parallel
-      console.log(`Generating MIXED paper: ${cqCount} CQs + ${mcqCount} MCQs in parallel...`);
       const [cqResult, mcqResult] = await Promise.all([
-        generateWithFallback(cqPrompt, CQOnlySchema, 8192),
-        generateWithFallback(mcqPrompt, MCQOnlySchema, 8192),
+        generateWithFallback(buildCQPrompt({ ...promptArgs, cqCount }), CQOnlySchema, 8192),
+        generateWithFallback(buildMCQPrompt({ ...promptArgs, mcqCount }), MCQOnlySchema, 8192),
       ]);
 
       const allQuestions = [
@@ -270,95 +374,22 @@ No markdown, no explanation. Generate all ${mcqCount} MCQs.`;
         ...mcqResult.questions.map((q) => ({ ...q, question_type: "MCQ" as const })),
       ];
 
-      console.log(`MIXED paper generated: ${cqResult.questions.length} CQs + ${mcqResult.questions.length} MCQs = ${allQuestions.length} total`);
+      console.log(`MIXED complete: ${cqResult.questions.length} CQs + ${mcqResult.questions.length} MCQs = ${allQuestions.length} questions`);
 
-      if (allQuestions.length === 0) {
-        throw new Error("generateQuestionPaper: both CQ and MCQ generation returned empty arrays");
-      }
-
+      if (allQuestions.length === 0) throw new Error("generateQuestionPaper: both CQ and MCQ generation returned empty");
       return GeneratedPaperSchema.parse({ questions: allQuestions });
     }
 
-    // ─── CQ-only ────────────────────────────────────────────────────────────
+    // ─── CQ-only ──────────────────────────────────────────────────────────────
     if (paperType === "CQ") {
       const cqCount = Math.max(1, Math.round(totalMarks / 10));
-      const prompt = `You are a senior Bangladeshi NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner writing an authentic ${difficulty} board exam in Bengali.
-
-MANDATORY: Generate EXACTLY ${cqCount} Creative Questions (CQ), 10 marks each. Total: ${cqCount * 10} marks.
-
-CURRICULUM CHAPTERS:
-${chapterTitles}
-
-RULES:
-1. Each CQ MUST have "question_type": "CQ", "max_marks": 10.
-2. Each CQ MUST have a realistic Bengali stimulus (উদ্দীপক) in "stimulus_bn" with numerical data and SI units.
-3. Each CQ MUST have "sub_questions" array with EXACTLY 4 items:
-   - {"part": "ক", "marks": 1} — জ্ঞানমূলক
-   - {"part": "খ", "marks": 2} — অনুধাবনমূলক
-   - {"part": "গ", "marks": 3} — প্রয়োগমূলক গাণিতিক
-   - {"part": "ঘ", "marks": 4} — উচ্চতর দক্ষতামূলক বিশ্লেষণ
-   Each must also have "text_bn", "text_en", and "rubric_step_rules".
-4. Each question MUST have a "chapter_id" from: ${chapterIdsStr}.
-5. Distribute questions across chapters. Double-escape LaTeX backslashes (\\\\Delta, \\\\rightarrow, \\\\text{}).
-
-OUTPUT JSON:
-{
-  "questions": [
-    {
-      "chapter_id": "${firstChapterId}",
-      "question_type": "CQ",
-      "max_marks": 10,
-      "stimulus_bn": "উদ্দীপক...",
-      "stimulus_en": "Stimulus...",
-      "sub_questions": [
-        {"part": "ক", "text_bn": "...", "text_en": "...", "marks": 1, "rubric_step_rules": "..."},
-        {"part": "খ", "text_bn": "...", "text_en": "...", "marks": 2, "rubric_step_rules": "..."},
-        {"part": "গ", "text_bn": "...", "text_en": "...", "marks": 3, "rubric_step_rules": "..."},
-        {"part": "ঘ", "text_bn": "...", "text_en": "...", "marks": 4, "rubric_step_rules": "..."}
-      ]
-    }
-  ]
-}
-No markdown or explanation outside JSON. Generate all ${cqCount} CQs.`;
-
-      const result = await generateWithFallback(prompt, CQOnlySchema, 8192);
+      const result = await generateWithFallback(buildCQPrompt({ ...promptArgs, cqCount }), CQOnlySchema, 8192);
       return GeneratedPaperSchema.parse({ questions: result.questions });
     }
 
-    // ─── MCQ-only ───────────────────────────────────────────────────────────
+    // ─── MCQ-only ─────────────────────────────────────────────────────────────
     const mcqCount = Math.min(35, Math.max(5, totalMarks));
-    const prompt = `You are a senior Bangladeshi NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner writing ${difficulty} MCQs in Bengali.
-
-MANDATORY: Generate EXACTLY ${mcqCount} Multiple Choice Questions (MCQ), 1 mark each. Total: ${mcqCount} marks.
-
-CURRICULUM CHAPTERS:
-${chapterTitles}
-
-RULES:
-1. Each MCQ MUST have "question_type": "MCQ", "max_marks": 1.
-2. Each MCQ MUST have "mcq_question_bn" (Bengali question text).
-3. Each MCQ MUST have "mcq_options" with exactly 4 items: ["ক) ...", "খ) ...", "গ) ...", "ঘ) ..."].
-4. Each MCQ MUST have "mcq_correct_option" exactly matching one option.
-5. Each question MUST have a "chapter_id" from: ${chapterIdsStr}.
-6. Distribute questions across chapters. Double-escape LaTeX backslashes (\\\\Delta, \\\\text{}).
-
-OUTPUT JSON:
-{
-  "questions": [
-    {
-      "chapter_id": "${firstChapterId}",
-      "question_type": "MCQ",
-      "max_marks": 1,
-      "mcq_question_bn": "প্রশ্ন...",
-      "mcq_question_en": "Question...",
-      "mcq_options": ["ক) অপশন ১", "খ) অপশন ২", "গ) অপশন ৩", "ঘ) অপশন ৪"],
-      "mcq_correct_option": "ক) অপশন ১"
-    }
-  ]
-}
-No markdown or explanation. Generate all ${mcqCount} MCQs.`;
-
-    const result = await generateWithFallback(prompt, MCQOnlySchema, 8192);
+    const result = await generateWithFallback(buildMCQPrompt({ ...promptArgs, mcqCount }), MCQOnlySchema, 8192);
     return GeneratedPaperSchema.parse({ questions: result.questions });
   }
 );
