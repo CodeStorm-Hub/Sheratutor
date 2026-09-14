@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 161,
+  "pdf_page_no": 166,
+  "chapter_no": 8,
+  "chapter_title": "বৃত্ত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "কাজ: বিভিন্ন আকারের কয়েকটি বৃত্তীয় চতুর্ভুজ আঁক। কয়েকটি বিভিন্ন ব্যাসার্ধের বৃত্ত অঙ্কন করে প্রতিটির উপর চারটি করে বিন্দু নিয়ে চতুর্ভুজগুলো সহজেই আঁকা যায়। চতুর্ভুজের কোণগুলো মেপে নিচের সারণিটি পূরণ কর।\n\n| ক্রমিক নং | $\\angle A$ | $\\angle B$ | $\\angle C$ | $\\angle D$ | $\\angle A + \\angle C$ | $\\angle B + \\angle D$ |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| ১ | | | | | | |\n| ২ | | | | | | |\n| ৩ | | | | | | |\n| ৪ | | | | | | |\n| ৫ | | | | | | |\n\nসারণি থেকে কী বোঝা যায়?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "উপপাদ্য ২৩",
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ২৩. বৃত্তে অন্তর্লিখিত চতুর্ভুজের যেকোনো দুইটি বিপরীত কোণের সমষ্টি দুই সমকোণ।\n\nমনে করি, $O$ কেন্দ্রবিশিষ্ট একটি বৃত্তে $ABCD$ চতুর্ভুজটি অন্তর্লিখিত হয়েছে। প্রমাণ করতে হবে যে, $\\angle ABC + \\angle ADC = $ দুই সমকোণ এবং $\\angle BAD + \\angle BCD = $ দুই সমকোণ।\n\nঅঙ্কন: $O, A$ এবং $O, C$ যোগ করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\n\nধাপ ১. একই চাপ $ADC$ এর উপর দণ্ডায়মান কেন্দ্রস্থ প্রবৃদ্ধ $\\angle AOC = 2(\\angle ABC)$\n\nঅর্থাৎ, প্রবৃদ্ধ $\\angle AOC = 2\\angle ABC$ [বৃত্তের একই চাপের ওপর দণ্ডায়মান কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ]\n\nধাপ ২. আবার, একই চাপ $ABC$ এর উপর দণ্ডায়মান কেন্দ্রস্থ কোণ $\\angle AOC = 2(\\angle ADC)$\n\nঅর্থাৎ কোণ $\\angle AOC = 2\\angle ADC$ [বৃত্তের একই চাপের ওপর দণ্ডায়মান কেন্দ্রস্থ কোণ বৃত্তস্থ কোণের দ্বিগুণ]\n\n$\\therefore$ প্রবৃদ্ধ $\\angle AOC + $ কোণ $\\angle AOC = 2(\\angle ABC + \\angle ADC)$\n\nকিন্তু প্রবৃদ্ধ $\\angle AOC + $ কোণ $\\angle AOC = $ চার সমকোণ\n\n$\\therefore 2(\\angle ABC + \\angle ADC) = $ চার সমকোণ\n\n$\\therefore \\angle ABC + \\angle ADC = $ দুই সমকোণ।\n\nএকইভাবে, প্রমাণ করা যায় যে, $\\angle BAD + \\angle BCD = $ দুই সমকোণ। (প্রমাণিত)",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৮.২৩: বৃত্তে অন্তর্লিখিত চতুর্ভুজ",
+      "figure_no": "8.23",
+      "box_2d": [
+        440,
+        680,
+        540,
+        820
+      ],
+      "description": "একটি বৃত্তের ভেতরে অন্তর্লিখিত চতুর্ভুজ ABCD এবং কেন্দ্র O থেকে A ও C বিন্দুর সংযোগ রেখা।",
+      "reading_order_anchor": "উপপাদ্য ২৩. বৃত্তে অন্তর্লিখিত চতুর্ভুজের যেকোনো দুইটি বিপরীত কোণের সমষ্টি দুই সমকোণ।"
+    }
+  ]
+}

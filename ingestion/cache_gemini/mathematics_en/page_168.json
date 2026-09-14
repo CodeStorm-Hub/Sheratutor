@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 168,
+  "pdf_page_no": 173,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": "Exercise 8.1",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Prove that the straight line joining the middle points of two parallel chords of a circle passes through the centre and is perpendicular to the chords.\n2. Two chords $AB$ and $AC$ of a circle subtend equal angles with the radius passing through $A$. Prove that, $AB = AC$.\n3. A circle passes through the vertices of a right angled triangle. Show that, the centre of the circle is the middle point of the hypotenuse.\n4. A chord $AB$ of one of the two concentric circles intersects the other circle at points $C$ and $D$. Prove that, $AC = BD$.\n5. If two equal chords of a circle intersect each other, show that two segments of one are equal to two segments of the other.\n6. Show that, the two equal chords drawn from two ends of the diameter on its opposite sides are parallel.\n7. Show that, of the two chords of a circle the bigger chord is nearer to the centre than the smaller.\n8. A chord $PQ = x$ cm of a circle with the centre $O$ and $OR \\perp PQ$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Exercise 8.1",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) What is the measurement of $\\angle QOS$?\n2) Prove that, the chord $PS$ is the largest chord of the circle.\n3) If $OR = (\\frac{x}{2} - 2)$ cm, find out the measurement of $x$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Exercise 8.1",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "9. Prove that if the straight line joining two points make equal angles at two different points on the same side of the straight line, then all these four points are concentric.\n10. Prove that, the middle points of equal chords of a circle are concyclic.\n11. Show that, the two parallel chords of a circle drawn from two ends of a diameter on its opposite sides are equal.\n12. Prove that, if two chords of a circle bisect each other, their point of intersection is the centre of the circle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Chord PQ and OR perpendicular to PQ",
+      "figure_no": "8.01",
+      "box_2d": [
+        535,
+        708,
+        694,
+        885
+      ],
+      "description": "A circle with center O, chord PQ, and a line segment OR perpendicular to PQ. A point S is on the circle connected to O and Q.",
+      "reading_order_anchor": "8. A chord PQ = x cm of a circle with the centre O and OR ⊥ PQ."
+    }
+  ]
+}

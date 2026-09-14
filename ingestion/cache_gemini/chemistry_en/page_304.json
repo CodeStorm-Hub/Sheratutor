@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 304,
+  "pdf_page_no": 309,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": "12.7",
+      "section_title": "Multiple Choice Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. Which one makes the colourful materials colourless?\n(a) $\\text{Na(OH)}_2$\n(b) $\\text{Ca(OCl)Cl}$\n(c) $\\text{HCl}$\n(d) $\\text{CH}_3\\text{COOH}$\n\n4. By which ion is the application of Urea on soil absorbed?\n(a) $\\text{OH}^{-}$\n(b) $\\text{NH}_4^+$\n(c) $\\text{H}^{+}$\n(d) $\\text{Urea}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "12.8",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Creative Questions\n\n1. Shawn, a student of class ten, after washing clothes in tube-well water saw that the clothes were not so clear and there was not much foam in the water. When he informed his friend Riyad of the matter, Riyad suggested to him to use a detergent.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.8",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is soap?\n(b) What is glass cleaner?\n(c) Describe the cleaning mechanism of the first material that Shawn first used to clean his clothes.\n(d) Explain with logic why the cleaning material suggested by Riyad was effective.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.8",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Dr. Chandra's maid servant is taking rest due to her indigestion. Suddenly, the fridge being out of order, Dr. Chandra becomes worried with uncooked fish, meat, salt, baking powder and vinegar which she bought from the market. In the meantime the maid servant feels better by taking baking powder secretly. Knowing this matter, Dr. Chandra forbade her to take it in future.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.8",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is the main constituent of the glass cleaner?\n\nb. What is the role of air in ammonia industry in our country?\n\nc. By using which one of the stem did Dr. Chandra ask her maid to preserve fish, meat? Explain.\n\nd. Explain the chemistry, with reaction, about the cure of indigestion of the maid servant in the stem.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

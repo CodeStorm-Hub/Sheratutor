@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 59,
+  "pdf_page_no": 64,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Middle Term Break-Up",
+      "chunk_type": "theory",
+      "content_markdown": "Middle Term Break-Up: By middle term break-up method of polynomial of the form of $ax^2 + bx + c$ would be $ax^2 + bx + c = (rx + p)(sx + q)$ if $ax^2 + bx + c = rsx^2 + (rq + sp)x + pq$. That is, $a = rs$, $b = rq + sp$ and $c = pq$. Hence, $ac = rspq = (rq)(sp)$ and $b = rq + sp$. Therefore, to determine factors of the polynomial $ax^2 + bx + c$, $ac$, that is, the product of the coefficient of $x^2$ and the term free from $x$ are to be expressed into two such factors whose algebraic sum is equal to $b$, the coefficient of $x$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 26. Resolve into factors: $3x^2 - x - 14$\n\nSolution: $3x^2 - x - 14 = 3x^2 - 7x + 6x - 14$\n$= x(3x - 7) + 2(3x - 7) = (3x - 7)(x + 2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Resolve into factors:\n1) $x^2 + x - 56$ 2) $16x^3 - 46x^2 + 15x$ 3) $12x^2 + 17x + 6$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": "Perfect Cube Form",
+      "chunk_type": "theory",
+      "content_markdown": "Perfect Cube Form: Factors can be determined by expressing an expression in the form of perfect cube.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 27. Resolve into factors: $8x^3 + 36x^2y + 54xy^2 + 27y^3$\n\nSolution: $8x^3 + 36x^2y + 54xy^2 + 27y^3$\n$= (2x)^3 + 3 \\times (2x)^2 \\times 3y + 3 \\times 2x \\times (3y)^2 + (3y)^3$\n$= (2x + 3y)^3 = (2x + 3y)(2x + 3y)(2x + 3y)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Formulae of addition or subtraction of two cubes",
+      "chunk_type": "theory",
+      "content_markdown": "Formulae of addition or subtraction of two cubes: Factors can be determined by applying the formulae $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$ and $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 28. Resolve into factors: 1) $8a^3 + 27b^3$ 2) $a^6 - 64$\n\nSolution:\n1) $8a^3 + 27b^3 = (2a)^3 + (3b)^3$\n$= (2a + 3b)\\{(2a)^2 - 2a \\times 3b + (3b)^2\\}$\n$= (2a + 3b)(4a^2 - 6ab + 9b^2)$\n2) $a^6 - 64 = (a^2)^3 - (4)^3 = (a^2 - 4)\\{(a^2)^2 + a^2 \\times 4 + (4)^2\\}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

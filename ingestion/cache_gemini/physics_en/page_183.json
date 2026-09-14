@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 183,
+  "pdf_page_no": 188,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Boiling point changes due to pressure. Boiling point decreases if pressure is low, boiling point increases if pressure is high. This is why those who go to big heights while mountain climbing, they have to cook something for a long time because due to low pressure water starts to boil at comparatively low temperatures. As temperature can not be increased, so it takes a longer time to cook. Pressure cookers have been made for this reason. During cooking pressure is increased by confining the vapors inside and for this reason, the boiling point of water is increased so water continues to boil at a high temperature. As the temperature is high, cooking will be done faster.\n\nIf pressure is applied, the melting point of a gas increases. So without too much cooling, a gas can be liquefied by increasing pressure. Then a lot of heat is produced, which has to be taken out properly.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "## Exercise\n\n### General questions\n\n1. When a pot of mercury is heated, the height of mercury decreases first then increases. Why?\n2. Does temperature exist in space where there are no atoms or molecules?\n3. Why do we feel cold when we come from a hot, humid and crowded place to an open area?\n4. Why do the drops of water condense on the surface of a glass when a piece of ice is kept in the glass of water?\n5. Why is cooking done faster in a pressure cooker?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 6.09: It is possible to cut a ice bar by pressing with a fine wire.",
+      "figure_no": "6.09",
+      "box_2d": [
+        188,
+        563,
+        412,
+        856
+      ],
+      "description": "An ice block placed on a table with a fine wire passing over it, connected to a weight hanging underneath, demonstrating regelation.",
+      "reading_order_anchor": "If pressure is applied, the melting point of a gas increases."
+    }
+  ]
+}

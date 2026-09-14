@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 209,
+  "pdf_page_no": 214,
+  "chapter_no": 7,
+  "chapter_title": "তরঙ্গ ও শব্দ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. গ্রীষ্মকালীন ছুটিতে নুসরাত তার ছোট বোন ও পরিবারসহ সাজেক বেড়াতে গেল। সেখানে নুসরাত তার ছোট বোনকে প্রতিধ্বনির বাস্তবিক ঘটনা দেখানোর জন্য পাহাড়ের পাশে দাঁড়িয়ে চিৎকার করল কিন্তু কোন প্রতিধ্বনি শুনতে না পেয়ে মন খারাপ করল। তখন তার বাবা নুসরাতকে আরও $3\\text{ m}$ সরে গিয়ে আবার শব্দ করতে বললেন এবং এইবার নুসরাত প্রতিধ্বনি শুনতে পেল। এ দিন এ স্থানে শব্দের বেগ ও কম্পাঙ্ক যথাক্রমে $332\\text{ m/s}$ ও $1328\\text{ Hz}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) প্রতিধ্বনি কী?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(খ) প্রতিধ্বনি শোনার জন্য একটা ন্যূনতম দূরত্বের প্রয়োজন কেন?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(গ) নুসরাতের উচ্চারিত শব্দের তরঙ্গ দৈর্ঘ্য কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ঘ) নুসরাত চিৎকার করার $0.3$ সেকেন্ড পর প্রতিধ্বনি শুনতে চাইলে নুসরাতকে আরও কতটা পেছনে যেতে হবে?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

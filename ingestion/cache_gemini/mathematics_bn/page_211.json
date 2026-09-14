@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 211,
+  "pdf_page_no": 216,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$বা, \\sqrt{\\frac{1+bx}{1-bx}} = \\frac{1+ax}{1-ax}$$\n\n$$বা, \\frac{1+bx}{1-bx} = \\frac{(1+ax)^2}{(1-ax)^2} \\text{ [উভয় পক্ষকে বর্গ করে]}$$\n\n$$বা, \\frac{1+bx}{1-bx} = \\frac{1+2ax+a^2x^2}{1-2ax+a^2x^2}$$\n\n$$বা, \\frac{1+bx+1-bx}{1+bx-1+bx} = \\frac{1+2ax+a^2x^2+1-2ax+a^2x^2}{1+2ax+a^2x^2-1+2ax-a^2x^2} \\text{ [যোজন-বিয়োজন করে]}$$\n\n$$বা, \\frac{2}{2bx} = \\frac{2(1+a^2x^2)}{4ax}$$\n\n$$বা, 2ax = bx(1+a^2x^2)$$\n\n$$বা, x\\{2a-b(1+a^2x^2)\\} = 0$$\n\n$$\\therefore x = 0$$\n\nঅথবা, $$2a-b(1+a^2x^2) = 0$$\n\n$$বা, b(1+a^2x^2) = 2a$$\n\n$$বা, 1+a^2x^2 = \\frac{2a}{b}$$\n\n$$বা, a^2x^2 = \\frac{2a}{b}-1$$\n\n$$বা, x^2 = \\frac{1}{a^2}\\left(\\frac{2a}{b}-1\\right)$$\n\n$$\\therefore x = \\pm\\frac{1}{a}\\sqrt{\\frac{2a}{b}-1}$$\n\nনির্ণেয় সমাধান $$x = 0, \\pm\\frac{1}{a}\\sqrt{\\frac{2a}{b}-1}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৬. $$\\frac{\\sqrt{1+x}+\\sqrt{1-x}}{\\sqrt{1+x}-\\sqrt{1-x}} = p$$ হলে, প্রমাণ কর যে, $$p^2 - \\frac{2p}{x} + 1 = 0$$\n\nসমাধান: দেওয়া আছে, $$\\frac{\\sqrt{1+x}+\\sqrt{1-x}}{\\sqrt{1+x}-\\sqrt{1-x}} = p$$\n\n$$বা, \\frac{\\sqrt{1+x}+\\sqrt{1-x}+\\sqrt{1+x}-\\sqrt{1-x}}{\\sqrt{1+x}+\\sqrt{1-x}-\\sqrt{1+x}+\\sqrt{1-x}} = \\frac{p+1}{p-1} \\text{ [যোজন-বিয়োজন করে]}$$\n\n$$বা, \\frac{2\\sqrt{1+x}}{2\\sqrt{1-x}} = \\frac{p+1}{p-1}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

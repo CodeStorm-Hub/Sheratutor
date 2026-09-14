@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 180,
+  "pdf_page_no": 185,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$C = ms$$  \nThe heat capacity of $10\\text{ kg}$ gold is  \n$$C = 10 \\times 230\\text{ J K}^{-1} = 2300\\text{ J K}^{-1}$$  \nIn comparison the heat capacity of $10\\text{ kg}$ water is  \n$$C = 10 \\times 4200\\text{ J K}^{-1} = 42,000\\text{ J K}^{-1} \\quad \\text{i.e. about } 20 \\text{ times more.}$$  \nThis means that gold or any other metal can be heated quickly but water cannot be heated so easily.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.6",
+      "section_title": "Fundamental Principles of Calorimetry",
+      "chunk_type": "theory",
+      "content_markdown": "In winter during a bath we often pour a little boiling water into a bucket of cold water. The boiling water slowly become cold by giving up heat to the cold water. The cold water of the bucket also slowly becomes hot by absorbing the heat from the boiling water. Within a short time, all the water will get to a comfortable temperature by decreasing the temperature of the boiling water and increasing the temperature of the cold water. If we wish, we can find things like the amount of heat lost or gained, and their final temperature when various objects of various temperature are mixed together. To do so we just have to know a few rules. They are:  \n\n(1) The body at higher temperature gives heat to the body at the lower temperature until they reach thermal equilibrium.  \n\n(2) The amount of heat given up by the bodies at higher temperature will be equal to the heat gained by the bodies at the lower temperature. (We assume that no heat is lost in this process by any other means.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** A piece of ice of mass $100\\text{ gm}$ is dropped into water of $1\\text{ liter}$ at temperature $30\\text{ }^\\circ\\text{C}$. What will be the temperature of the water after melting the whole piece of ice?  \n(Latent heat of ice $L = 334\\text{ kJ/kg}$)",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

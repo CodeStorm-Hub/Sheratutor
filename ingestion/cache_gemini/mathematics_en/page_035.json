@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 35,
+  "pdf_page_no": 40,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 15. Let us assume that $A = \\{3, 5\\}$ and $B = \\{2, 4\\}$\n$\\therefore A \\times B = \\{3, 5\\} \\times \\{2, 4\\} = \\{(3, 2), (3, 4), (5, 2), (5, 4)\\}$\n$\\therefore R \\subseteq \\{(3, 2), (3, 4), (5, 2), (5, 4)\\}$\n\nwhen for an element $x$ of set $A$ and an element $y$ of set $B$ $(x, y) \\in R$, then it is written $x R y$ and read that $x$ is related to $y$, that is, $x$ is related to $y$ using relation $R$.\n\nIf $x > y$, then $R = \\{(3, 2), (5, 2), (5, 4)\\}$\nand if $x < y$ then $R = \\{(3, 4)\\}$\n\nAgain, if there is a relation from set $A$ to set $A$, that is, $R \\subseteq A \\times A$, then $R$ is a relation of $A$.\n\nIf $x \\in A, y \\in B$ is related, then the nonempty subset of ordered pairs $(x, y)$ is called relation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 16. If $P = \\{2, 3, 4\\}$, $Q = \\{4, 6\\}$ and for elements of $P$ and $Q$ a relation $y = 2x$ exists, then find the relations.\n\nSolution: Given, $P = \\{2, 3, 4\\}$ and $Q = \\{4, 6\\}$\nAccording to the question $R = \\{(x, y) : x \\in P, y \\in Q \\text{ and } y = 2x\\}$\nHere, $P \\times Q = \\{2, 3, 4\\} \\times \\{4, 6\\} = \\{(2, 4), (2, 6), (3, 4), (3, 6), (4, 4), (4, 6)\\}$\n$\\therefore R = \\{(2, 4), (3, 6)\\}$\nThe required relation is $\\{(2, 4), (3, 6)\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 17. If $A = \\{1, 2, 3\\}, B = \\{0, 2, 4\\}$ and elements of $A$ and $B$ have the relation $x = y - 1$, find the relations.\n\nSolution: Given, $A = \\{1, 2, 3\\}, B = \\{0, 2, 4\\}$\nAccording to the question, relation $R = \\{(x, y) : x \\in A, y \\in B \\text{ and } x = y - 1\\}$\nHere, $A \\times B = \\{1, 2, 3\\} \\times \\{0, 2, 4\\}$\n$= \\{(1, 0), (1, 2), (1, 4), (2, 0), (2, 2), (2, 4), (3, 0), (3, 2), (3, 4)\\}$\n$\\therefore R = \\{(1, 2), (3, 4)\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: If $C = \\{2, 5, 6\\}, D = \\{4, 5\\}$ and the relation $x \\leq y$ holds between elements of $C$ and $D$, find the relations.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 370,
+  "pdf_page_no": 375,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 14. Find mode from the frequency distribution table given below.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class | 41 - 50 | 51 - 60 | 61 - 70 | 71 - 80 |\n| :--- | :--- | :--- | :--- | :--- |\n| Frequency | 25 | 20 | 15 | 8 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Here, maximum numbers of frequency are 25 which lie in the class (41-50). So it is evident that mode is in this class. We know that\n\n$$Mode = L + \\frac{f_1}{f_1 + f_2} \\times h$$. Here, $$L = 41$$, $$f_1 = 25 - 0 = 25$$, $$f_2 = 25 - 20 = 5$$ [If the frequency is maximum in the first class, the frequency of previous class is zero]\n\n$$\\therefore Mode = 41 + \\frac{25}{25 + 5} \\times 10 = 41 + \\frac{25}{30} \\times 10 = 41 + 8.33 = 49.33$$\n\nRequired mode 49.33.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 15. Find mode from the frequency distribution table given below.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class | 11 - 20 | 21 - 30 | 31 - 40 | 41 - 50 |\n| :--- | :--- | :--- | :--- | :--- |\n| Frequency | 4 | 16 | 20 | 25 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: The maximum numbers of Class Frequency frequency are 25 which lie in the class (41 - 50). So it is obvious that this class is the class of mode. We know that, $$Mode = L + \\frac{f_1}{f_1 + f_2} \\times h$$\n\nHere, $$L = 41$$, $$f_1 = 25 - 20 = 5$$, $$f_2 = 25 - 0 = 25$$, $$h = 10$$ [If the frequency is maximum in the last class, the frequency of following class is zero]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 17.01: Frequency distribution graph",
+      "figure_no": "17.01",
+      "box_2d": [
+        92,
+        255,
+        396,
+        775
+      ],
+      "description": "A line graph plotted on a grid showing frequency distribution with values on the Y-axis and class intervals on the X-axis.",
+      "reading_order_anchor": "Example 14."
+    }
+  ]
+}

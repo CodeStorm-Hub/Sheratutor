@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 337,
+  "pdf_page_no": 342,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If current flows through the wire (from bottom to up) that current will create a circular magnetic field around it and thus rearrange the magnetic lines of force, by combining with the magnetic field that goes from the north pole to the south pole. At the bottom of the wire the lines of forces will be more and at the top of the wire the lines of forces will be less, which will push the wire in upward direction.\n\nIf the direction of current through the wire is reversed, then the direction of the circular magnetic field will also be reversed. Then the density of the lines of force at the top of the wire will be more and hence push the wire downward.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2.4",
+      "section_title": "D.C Motor",
+      "chunk_type": "theory",
+      "content_markdown": "You know that a magnet can be used to apply force on another magnet. In other words, we can say a magnetic field can be used to apply force on another magnetic field. Since a wire cannot carry very much current, it cannot produce a strong magnetic field. That is why with the help of another magnetic field a strong force cannot be applied on it. You have seen that if a coil of wire is made winding many times and a piece of iron or armature is inserted into it, then by passing a little amount of current through the wire, the coil becomes a strong electromagnet that can create a very strong magnetic field. If we imagine the coil is to be a bar magnet, and keep it in another magnetic field, then we can analyze what kind of attractive or repulsive force it feels and also the direction of motion due to it. In Figure 12.10, an electromagnet of this type is placed in another magnetic field, and how it changes its position due to the repulsive force is shown. If the electromagnet is allowed to rotate about an axis, passing through its center, then it will try to go to a position like in the next figure.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 12.09: A current carrying wire placed in a magnetic field experiences a force.",
+      "figure_no": "12.09",
+      "box_2d": [
+        308,
+        146,
+        437,
+        840
+      ],
+      "description": "Diagram showing a current-carrying wire placed between the poles of a magnet, with magnetic field lines and the resulting force.",
+      "reading_order_anchor": "If current flows through the wire (from bottom to up) that current will create a circular magnetic field around it and thus rearrange the magnetic lines of force"
+    }
+  ]
+}

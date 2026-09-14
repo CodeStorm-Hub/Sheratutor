@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 173,
+  "pdf_page_no": 178,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": "8.2",
+      "section_title": "Exercise 8.2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. $ABCD$ is a quadrilateral inscribed in a circle with centre $O$. If the diagonals $AC$ and $BD$ intersect at the point $E$, prove that $\\angle AOB + \\angle COD = 2\\angle AEB$.\n\n2. $ABCD$ is a quadrilateral inscribed in a circle with centre $O$ where $\\angle ADB + \\angle BDC = 1$ right angle. Prove that, $A, O$ and $C$ lie in the same straight line.\n\n3. Show that, the oblique sides of a cyclic trapezium are equal.\n\n4. In the figure, the centre of the circle is $O$ and $OB = 2.5$ cm.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": "Exercise 8.2",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Evaluate the parameter of the circle $ABCD$.\n2) Prove that $\\angle BAD = \\frac{1}{2}\\angle BOD$\n3) If $AC$ and $BD$ intersect at the point $E$, prove that, $\\angle AOB + \\angle COD = 2\\angle AEB$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": "Exercise 8.2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. Two chords $AB$ and $CD$ of the circle $ABCD$ intersect at the point $E$. Show that, $\\triangle AED$ and $\\triangle BEC$ are equiangular.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Quadrilateral inscribed in a circle (Inscribed Quadrilaterals)",
+      "chunk_type": "theory",
+      "content_markdown": "An inscribed quadrilateral or a quadrilateral inscribed in a circle is a quadrilateral having all four vertices on the circle. Such quadrilaterals possess a special property. The following work helps us understand this property.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Draw a few inscribed quadrilaterals. This can easily be accomplished by drawing circles with different radius and then by taking four arbitrary points on each of the circles. Measure the angles of the quadrilaterals and fill in the following table.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Serial No. | $\\angle A$ | $\\angle B$ | $\\angle C$ | $\\angle D$ | $\\angle A + \\angle C$ | $\\angle B + \\angle D$ |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| 1 | | | | | | |\n| 2 | | | | | | |\n| 3 | | | | | | |\n| 4 | | | | | | |\n| 5 | | | | | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "What do you infer from the table?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Circle with inscribed quadrilateral ABCD",
+      "figure_no": "8.01",
+      "box_2d": [
+        286,
+        675,
+        433,
+        815
+      ],
+      "description": "A circle with center O and an inscribed quadrilateral ABCD, with diagonals AC and BD intersecting at E.",
+      "reading_order_anchor": "4. In the figure, the centre of the circle is O and"
+    }
+  ]
+}

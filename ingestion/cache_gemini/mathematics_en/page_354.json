@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 354,
+  "pdf_page_no": 359,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "distribution table is made. Here, the methods of making frequency distribution table are to be re-discussed through example for convenient understanding.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. In a winter season, the temperature (in celsius) of the month of January in the district of Srimangal is placed below. Find the frequency distribution table of the temperature.\n\n$14^\\circ, 14^\\circ, 14^\\circ, 13^\\circ, 12^\\circ, 13^\\circ, 10^\\circ, 10^\\circ, 11^\\circ, 12^\\circ, 11^\\circ, 10^\\circ, 9^\\circ, 8^\\circ, 9^\\circ, 11^\\circ, 10^\\circ, 10^\\circ, 8^\\circ, 9^\\circ, 7^\\circ, 6^\\circ, 6^\\circ, 6^\\circ, 6^\\circ, 7^\\circ, 8^\\circ, 9^\\circ, 9^\\circ, 8^\\circ, 7^\\circ$\n\nSolution: Here the minimum and maximum numerical values of the data of temperature are 6 and 14 respectively.\nHence the range $= (14 - 6) + 1 = 9$\nIf the class interval is considered to be 3, the numbers of class will be $\\frac{9}{3}$ or 3\nConsidering 3 to be the class interval, if the data are arranged in 3 classes, the frequency table will be:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Temperature (in celcius) | Tally | Frequency |\n| :--- | :--- | :--- |\n| $6^\\circ - 8^\\circ$ | ||||| ||||| | | 11 |\n| $9^\\circ - 11^\\circ$ | ||||| ||||| ||| | 13 |\n| $12^\\circ - 14^\\circ$ | ||||| || | 7 |\n| | Total | 31 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Form two groups of all the students studying in your class. Find the frequency distribution table of the weights (in Kgs) of all the members of the groups.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Cumulative Frequency: In Example 1 considering 3 the class interval and determining the number of classes, the frequency distribution table has been made. The number of classes of the mentioned data is 3. The limit of the first class is $6^\\circ - 8^\\circ$. The lowest range of the class is $6^\\circ$ and the highest range is $8^\\circ$. The frequency of this class is 11. Similarly, The limit of the second class is $9^\\circ - 11^\\circ$ and the frequency of this class is 13. Now if the frequency 11 of first class is added to the frequency 13 of the second class, we get 24. This 24 will be the cumulative frequency of the second class and the cumulative frequency of first class as begins with the class will be 11. Again, if the cumulative frequency 24 of the second class is added to the frequency of the third class, we get $24 + 7 = 31$ which is the cumulative frequency of the third class. Thus cumulative frequency distribution",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

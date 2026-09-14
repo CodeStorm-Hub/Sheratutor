@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 190,
+  "pdf_page_no": 195,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আবার, যখন $\\theta$ কোণটি $90^\\circ$ এর খুব কাছে, অতিভুজ $OP$ প্রায় $PN$ এর সমান। সুতরাং, $\\sin \\theta$ এর মান প্রায় $1$। অন্যদিকে, $\\theta$ কোণটি প্রায় $90^\\circ$ এর সমান হলে $ON$ শূন্যের কাছাকাছি; $\\cos \\theta$ এর মান প্রায় $0$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সুতরাং, পূর্বে বর্ণিত সূত্রের সঙ্গে সামঞ্জস্য রেখে বলা হয় যে, $\\cos 90^\\circ = 0, \\sin 90^\\circ = 1$\n\n$$\\cot 90^\\circ = \\frac{\\cos 90^\\circ}{\\sin 90^\\circ} = \\frac{0}{1} = 0$$\n\n$$\\text{cosec } 90^\\circ = \\frac{1}{\\sin 90^\\circ} = \\frac{1}{1} = 1$$\n\nপূর্বের ন্যায় $0$ দ্বারা ভাগ করা যায় না বিধায় $\\tan 90^\\circ$ ও $\\sec 90^\\circ$ সংজ্ঞায়িত করা যায় না।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "দ্রষ্টব্য: ব্যবহারের সুবিধার্থে $0^\\circ, 30^\\circ, 45^\\circ, 60^\\circ$ ও $90^\\circ$ কোণগুলোর ত্রিকোণমিতিক অনুপাতগুলোর মান নিচের ছকে দেখানো হলো:\n\n| অনুপাত/কোণ | $0^\\circ$ | $30^\\circ$ | $45^\\circ$ | $60^\\circ$ | $90^\\circ$ |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| sine | $0$ | $\\frac{1}{2}$ | $\\frac{1}{\\sqrt{2}}$ | $\\frac{\\sqrt{3}}{2}$ | $1$ |\n| cosine | $1$ | $\\frac{\\sqrt{3}}{2}$ | $\\frac{1}{\\sqrt{2}}$ | $\\frac{1}{2}$ | $0$ |\n| tangent | $0$ | $\\frac{1}{\\sqrt{3}}$ | $1$ | $\\sqrt{3}$ | অসংজ্ঞায়িত |\n| cotangent | অসংজ্ঞায়িত | $\\sqrt{3}$ | $1$ | $\\frac{1}{\\sqrt{3}}$ | $0$ |\n| secant | $1$ | $\\frac{2}{\\sqrt{3}}$ | $\\sqrt{2}$ | $2$ | অসংজ্ঞায়িত |\n| cosecant | অসংজ্ঞায়িত | $2$ | $\\sqrt{2}$ | $\\frac{2}{\\sqrt{3}}$ | $1$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষ করি: নির্ধারিত কয়েকটি কোণের জন্য ত্রিকোণমিতিক মানসমূহ মনে রাখার সহজ উপায়।\n\n$(i)$ $0, 1, 2, 3$ এবং $4$ সংখ্যাগুলোর প্রত্যেকটিকে $4$ দ্বারা ভাগ করে ভাগফলের বর্গমূল নিলে যথাক্রমে $\\sin 0^\\circ, \\sin 30^\\circ, \\sin 45^\\circ, \\sin 60^\\circ$ এবং $\\sin 90^\\circ$ এর মান পাওয়া যায়।\n\n$(ii)$ $4, 3, 2, 1$ এবং $0$ সংখ্যাগুলোর প্রত্যেকটিকে $4$ দ্বারা ভাগ করে ভাগফলগুলোর বর্গমূল নিলে যথাক্রমে $\\cos 0^\\circ, \\cos 30^\\circ, \\cos 45^\\circ, \\cos 60^\\circ$ এবং $\\cos 90^\\circ$ এর মান পাওয়া যায়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০৫: ত্রিকোণমিতিক অনুপাত",
+      "figure_no": "৯.০৫",
+      "box_2d": [
+        85,
+        218,
+        222,
+        782
+      ],
+      "description": "পাঁচটি সমকোণী ত্রিভুজ যেখানে অতিভুজ OP স্থির রেখে ভূমি ON ক্রমশ ছোট হচ্ছে।",
+      "reading_order_anchor": "আবার, যখন θ কোণটি 90° এর খুব কাছে"
+    }
+  ]
+}

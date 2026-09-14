@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 32,
+  "pdf_page_no": 37,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore A \\cap B = \\{36\\}$\nThe required set is $\\{36\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 14.** Of 100 students 88 passed in Bangla, 80 in Mathematics and 70 in both subjects. Express the information in Venn diagram, and find how many students failed in both subjects.\n\n**Solution:** In the Venn diagram rectangular area represents $U$ the set of 100 students. The set of students who passed in Bangla and Mathematics are denoted respectively by $B$ and $M$. As a result the Venn diagram is divided into 4 disjoint sets denoted by $P, Q, R$ and $F$.\n\nHere, the set of students passed in both subjects is $Q = B \\cap M$, cardinality of which is 70.\n\n$P$ is the set of students passed in Bangla only. Its cardinality is $|P| = 88 - 70 = 18$.\n\n$R$ is the set of students who passed only in Mathematics. $\\therefore |R| = 80 - 70 = 10$\n\nStudents who passed in at least one subject is $P \\cup Q \\cup R = B \\cup M$, and corresponding cardinality is $18 + 10 + 70 = 98$\n\n$F$ is the set of students who failed in both the subjects, and $|F| = 100 - 98 = 2$\n\n$\\therefore$ number of students failed in both the subjects is 2.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.14: Venn diagram",
+      "figure_no": "2.14",
+      "box_2d": [
+        248,
+        363,
+        386,
+        637
+      ],
+      "description": "A Venn diagram showing two intersecting sets B and M within a universal set U, with regions labeled P, Q, R, and F.",
+      "reading_order_anchor": "Example 14. Of 100 students 88 passed in Bangla, 80 in Mathematics and 70 in both subjects. Express the information in Venn diagram, and find how many students failed in both subjects."
+    }
+  ]
+}

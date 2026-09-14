@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 58,
+  "pdf_page_no": 63,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Exercise\n\n#### General questions\n\n1. Velocity is zero but acceleration is not zero -- is it possible? If possible, explain.\n2. Velocity is changing but speed is not changing. Is it possible? If possible show it.\n3. The acceleration due to gravity on the moon is 6 times less than that of earth. If a stone is released from a definite height towards earth, at which velocity it will hit the ground, if the same stone is released from the same height.\n4. Is there any place from where you go $1\\text{ km}$ south and then $1\\text{ km}$ east, continuing $1\\text{ km}$ north will you reach the same place?\n5. Do we travel double the distance at double the time in case of uniform acceleration?\n\n#### Mathematical question\n\n1. From your school a car has gone $40\\text{ km}$ east, then $40\\text{ km}$ north, then $30\\text{ km}$ west, then $30\\text{ km}$ south, then $20\\text{ km}$ east, then $20\\text{ km}$ north, then $10\\text{ km}$ west, then $10\\text{ km}$ south. In which direction and how far is the car from your school?\n2. Show when velocity and acceleration become positive, negative or zero on the portions OA, AB, BC and CD in figure 2.11.\n3. If position is plotted along the Y-axis instead of velocity then what would be the value of velocity and acceleration on the portions OA, AB, BC and CD in the figure 2.11.\n4. The velocity of a car is $30\\text{ km/hour}$, after $1\\text{ minute}$ the velocity of the car becomes $50\\text{ km/hour}$ with uniform acceleration. What is the distance travelled by the car in this time?\n5. You have thrown a ball vertically upwards at $10\\text{ m/s}$. How much height will it attain in what time?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

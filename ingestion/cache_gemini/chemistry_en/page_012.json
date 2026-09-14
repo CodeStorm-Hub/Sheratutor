@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 12,
+  "pdf_page_no": 17,
+  "chapter_no": 1,
+  "chapter_title": "Concepts of Chemistry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "you need to wear an apron. The apron will be knee-long and the sleeves will be up to your wrist. Its colour will be white. You will use hand gloves and safety goggles on your eyes. Some of these safety measures are given in the following picture:\n\nBelow are some pictures of things that need to be used in the chemistry laboratory for self-protection.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We need to learn the nature of a chemical before we start to use it. We need to know whether that is flammable or radio-active. These are made clear using some signs on the containers. To introduce a globally harmonized system about this, the United Nations organized a conference named Environment and Development. This conference gave a set of harmonized signs for different risky substances and their level of risk. The table below contains some signs and their explanations identifying risk, extent of risk and precautions.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 1.03: Safe dresses and kits in a laboratory.",
+      "figure_no": "1.03",
+      "box_2d": [
+        321,
+        102,
+        492,
+        894
+      ],
+      "description": "Illustrations showing a laboratory apron, safety goggles, hand gloves, and a face mask.",
+      "reading_order_anchor": "Below are some pictures of things that need to be used in the chemistry laboratory for self-protection."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "printed_page_no": 127,
+  "pdf_page_no": 132,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Straight angle",
+      "chunk_type": "theory",
+      "content_markdown": "The angle made by two opposite rays at their common end point is a straight angle. In the adjacent figure, a ray $AC$ is drawn from the end point $A$ of the ray $AB$. Thus the rays $AB$ and $AC$ have formed an angle $\\angle BAC$ at their common point $A$. $\\angle BAC$ is a straight angle. The measurement of a right angle is 2 right angles or $180^\\circ$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Adjacent angle",
+      "chunk_type": "theory",
+      "content_markdown": "If two angles in a plane have the same vertex, a common side and the angles lie on opposite sides of the common side, each of the two angles is said to be an adjacent angle of the other. In the adjacent figure, the angles $\\angle BAC$ and $\\angle CAD$ have the same vertex $A$, a common side $AC$ and are on opposite sides of $AC$. $\\angle BAC$ and $\\angle CAD$ are adjacent angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Perpendicular and Right angle",
+      "chunk_type": "theory",
+      "content_markdown": "If two adjacent angles are on the same line and equal, then each of the related adjacent angle is a right angle or $90^\\circ$. The two sides of a right angle are mutually perpendicular. In the adjacent figure two angles $\\angle BAC$ and $\\angle DAC$ are produced at the point $A$ of $BD$ by the ray $AC$. $A$ is the vertex of these two angles. $AC$ is the common side of the angles $\\angle BAC$ and $\\angle DAC$. The two angles lie on the two sides of the common side $AC$. If $\\angle BAC$ and $\\angle DAC$ are equal, then each of the two angles is right angle. The line segments $AC$ and $BD$ are mutually perpendicular.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Straight angle",
+      "figure_no": "6.01",
+      "box_2d": [
+        168,
+        631,
+        202,
+        883
+      ],
+      "description": "A straight line with points C, A, and B, showing a straight angle.",
+      "reading_order_anchor": "Straight angle"
+    },
+    {
+      "caption": "Fig 6.02: Adjacent angle",
+      "figure_no": "6.02",
+      "box_2d": [
+        365,
+        674,
+        485,
+        845
+      ],
+      "description": "Two adjacent angles sharing a common vertex A and side AC.",
+      "reading_order_anchor": "Adjacent angle"
+    },
+    {
+      "caption": "Fig 6.03: Perpendicular and Right angle",
+      "figure_no": "6.03",
+      "box_2d": [
+        700,
+        646,
+        822,
+        868
+      ],
+      "description": "A perpendicular line segment AC meeting line BD at point A, forming two right angles.",
+      "reading_order_anchor": "Perpendicular and Right angle"
+    }
+  ]
+}

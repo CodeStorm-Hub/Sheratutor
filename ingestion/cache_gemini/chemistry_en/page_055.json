@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 55,
+  "pdf_page_no": 60,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": "3.10.2",
+      "section_title": "Agriculture Sector",
+      "chunk_type": "theory",
+      "content_markdown": "### 3.10.2 Agriculture Sector\n\n**Nutrition of Crops**\n\nSufficient fertilizers are required for nutrition of crops. The quantity of fertilizer is an important issue. Excess fertilizer costs more than necessary. It is also harmful for the environment. Again, less than necessary fertilizer won’t be of any help. Radioactive isotopes help to determine the amount of Nitrogen and Phosphorus present in the soil. Plants absorb radioactive Nitrogen and Phosphorus via its roots which is then transferred to different parts of its body. Geiger Muller counters help to identify the presence of these isotopes and helps to determine the presence of the two elements in soil. Then we can determine the remedy too.\n\n**Getting Rid of Harmful Insects**\n\nHarmful insects are always a threat to a good crop. They not only lessen the production of crops but also they introduce various harmful microbes to the plants. We use insecticides to rid of these insects. These insecticides are harmful for our body and environment as well. These insecticides also manage to kill other insects that were of help for our crops. Insecticides enriched with radioactive isotopes have helped us to determine the standard of use of insecticides for a particular crop.\n\n**Development of Crops**\n\nRadioactive isotopes also play a significant role in developing hybrid varieties by bringing genetic changes in the original crop.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.10.3",
+      "section_title": "Generation of Electricity",
+      "chunk_type": "theory",
+      "content_markdown": "### 3.10.3 Generation of Electricity\n\nA huge amount of heat is found in fission reactions or by breaking some atoms into smaller atoms. Driving this heat energy through generators, we can produce electricity. We call such power plants, nuclear power plants. The fourth chapter of your physics book discusses this in detail.\n\nThe government of Bangladesh is going to establish a nuclear power plant in Rooppur of Pabna. It is hoped that the power plant will be able to produce 2400MW electricity.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

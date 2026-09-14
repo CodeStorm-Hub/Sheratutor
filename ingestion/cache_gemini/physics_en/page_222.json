@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 222,
+  "pdf_page_no": 227,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Take three pieces of glass of similar size (you can find this from photo-frame stores). Form a triangular shape with these three pieces and wrap them with paper. Stick them in a triangular shape with glue as shown in Figure 8.11. Cover one side with thin paper. Now put some colorful stones or colored beads or pieces of bangles inside it and look from the other side. You will see some beautiful patterns. This setup is called a kaleidoscope. If you rotate this instrument, you will see the patterns in movement. Continuous reflections on the glass create this pattern. You may think that in normal transparent glass the reflection is less, but in a kaleidoscope the incident angle is larger, therefore the amount of reflection is also higher.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** What is the required length of a mirror to see a full-length image?\n\n**Answer:** From the geometry shown in Figure 8.12, it can be said that the length of the mirror is $0.75$ meter. The interesting thing is that, whether you stand at a distance of $1\\text{ m}$ or $10\\text{ m}$ from the mirror, the size of the mirror needs to be half of the length of you for you to see your whole body. If your mother or father or anyone wants to buy a full-length plane mirror, you may suggest them to buy a half-length plane mirror!",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.12: To see the full image it is not necessary of a full length mirror.",
+      "figure_no": "8.12",
+      "box_2d": [
+        500,
+        459,
+        723,
+        868
+      ],
+      "description": "Ray diagram showing a person standing in front of a plane mirror of half their height ($1.5\\text{ m}$ person with $0.75\\text{ m}$ mirror), demonstrating that a half-length mirror is sufficient to see a full-length image.",
+      "reading_order_anchor": "Example"
+    }
+  ]
+}

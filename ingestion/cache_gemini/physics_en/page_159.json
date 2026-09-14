@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 159,
+  "pdf_page_no": 164,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Creative questions\n\nAnswer the following questions by observing the figure:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is density?\n(b) Explain the cause of the floatation of the body as shown in the figure.\n(c) Determine the density of the body.\n(d) Explain the effect of gradual increase of temperature of the liquid.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Fahim clamped one end of a rubber band of length $L_1$ on a wall and hung a mass $M$ at the other end. He saw that the rubber band elongated to a length $L_2$. It regained its initial condition after removal of the mass. He recorded the result of his experiment in a table as shown below.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Mass (kg) | 0 | 0.4 | 1 | 1.4 | 2.2 | 3 | 4 | 5 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Length with mass $L_2$ (cm) | 10 | 12 | 15 | 17 | 21 | 25 | 30 | 36 |\n| Length after removal of mass $L_1$ (cm) | 10 | 10 | 10 | 10 | 10 | 10 | 10.2 | 10.6 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Write Hooke's Law .\n(b) How stress leads to strain?\n(c) If $M=2.7$ kg, then $L_2=$? Calculate it.\n(d) Draw a picture of a machine which can be used daily by using the information in the table.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.18",
+      "figure_no": "5.18",
+      "box_2d": [
+        151,
+        524,
+        396,
+        846
+      ],
+      "description": "Diagram illustrating volume of water before and after immersion of an object of mass m = 30 mg, showing water levels at 52 cm^3 and 62 cm^3.",
+      "reading_order_anchor": "Answer the following questions by observing the figure:"
+    }
+  ]
+}

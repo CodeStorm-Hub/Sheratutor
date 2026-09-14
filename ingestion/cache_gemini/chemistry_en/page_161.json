@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 161,
+  "pdf_page_no": 166,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Investigation",
+      "chunk_type": "theory",
+      "content_markdown": "### Investigation\n\n#### Experiment on Rate of Reaction\n\nTake four test tubes and mark them $1$, $2$, $3$, $4$. Take an approximate amount of $0.5\\text{ mg}$ sodium carbonate ($\\text{Na}_2\\text{CO}_3$) or washing soda in each of them. Then add normal water to tube $1$ and $2$ and hot water to $3$ and $4$. Now add $1\\text{ mL}$ lemon juice (citric acid) or vinegar ($4\\text{-}10\\%\\text{ acetic acid}$) to tube number $2$ and $4$. Observe the following changes:",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Which of the test tubes produces gas bubbles?\n2. Which of the test tubes does not produce gas bubbles?\n3. Which test tube produces the maximum number of gas bubbles?\n4. Which test tube produces the minimum number of gas bubbles?\n\n**Think:** Why does gas come out in a larger amount from one of the tubes of number $2$ and $4$?",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.04: Reaction between sodium carbonate and acetic acid or vinegar.",
+      "figure_no": "7.04",
+      "box_2d": [
+        403,
+        260,
+        592,
+        725
+      ],
+      "description": "Four labeled test tubes containing liquid and gas bubbles, showing cold water, hot water, and vinegar/lemon juice additions for reaction rate comparison.",
+      "reading_order_anchor": "Experiment on Rate of Reaction"
+    }
+  ]
+}

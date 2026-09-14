@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 231,
+  "pdf_page_no": 236,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "concave mirror perpendicularly and after reflection will go back the way it has come. As shown in figure, another ray from point $X$ can be a ray parallel to the principal axis. Because we have already known that parallel ray goes through the focal point after reflection. So it will be incident on the point $Q$ and after reflection will go through the point $F$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "After emerging from point $X$ two rays of light will travel towards $NO$ and $QF$ and we can see that these two rays have no chance of intersecting. So there cannot be an image formed on the right side. But if we are able to look at the left side from the right side then it will look like line $ON$ and line $FQ$ coincide at $X'$ point- so $X'$ will be the image of $X$. If we draw a perpendicular from this point on $OP$ axis then we will get $X'Y'$ which is the full image of $XY$. No light is coming from $X'Y'$, only we are thinking that the image is being formed there. So this image is a virtual image. We can see from the figure that the image is larger than the object. Not only will the image be larger but moving the object closer to the focal point will create a yet larger image. (If the object is placed just on the focal point then the reflected rays will become parallel meaning that the light rays won't be able to coincide to create an image.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now let's see what happens to the image when we place an object within the focal distance of a concave mirror:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) The position of the image will depend on the position of the real object. The closer the object is placed to the focus further the image will be created.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) It is virtual",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) Straight",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) The length of the image will also depend on its position, the closer it gets to the focal point the larger its length becomes.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.22: Image appears larger than the object in the concave mirror placed inside the focal length.",
+      "figure_no": "8.22",
+      "box_2d": [
+        205,
+        394,
+        390,
+        787
+      ],
+      "description": "Ray diagram showing the formation of a virtual, magnified image when an object is placed inside the focal length of a concave mirror.",
+      "reading_order_anchor": "concave mirror perpendicularly and after reflection will go back the way it has come."
+    }
+  ]
+}

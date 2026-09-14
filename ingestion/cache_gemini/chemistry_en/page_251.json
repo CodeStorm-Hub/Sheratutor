@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 251,
+  "pdf_page_no": 256,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When iron comes in contact with $\\text{H}^+$ of open air, it donates electrons and turns into $\\text{Fe}^{2+}$. It is oxidation.\n\n$$2\\text{Fe} \\longrightarrow 2\\text{Fe}^{2+} + 4\\text{e}^-$$\n\nThe electrons donated by $\\text{Fe}$ is accepted by $\\text{O}_2$ and $\\text{H}^+$ to produce $\\text{H}_2\\text{O}$ by reduction.\n\n$$\\text{O}_2 + 4\\text{H}^+ + 4\\text{e}^- \\longrightarrow 2\\text{H}_2\\text{O}$$\n\nAt this stage, $\\text{Fe}^{2+}$, $\\text{H}^+$ and $\\text{O}_2$ undergo a reaction and produce $\\text{Fe}^{3+}$ and water.\n\n$$4\\text{Fe}^{2+} + 4\\text{H}^+ + \\text{O}_2 \\longrightarrow 4\\text{Fe}^{3+} + 2\\text{H}_2\\text{O}$$\n\nThen, $\\text{Fe}^{3+}$ undergoes a reaction with $\\text{OH}^-$ and produces $\\text{Fe(OH)}_3$.\n\n$$\\text{Fe}^{3+} + 3\\text{OH}^- \\longrightarrow \\text{Fe(OH)}_3$$\n\nThis ferric hydroxide turns into hydrated ferric oxide or rust $\\text{Fe}_2\\text{O}_3 \\cdot 3\\text{H}_2\\text{O}$.\n\n$$2\\text{Fe(OH)}_3 \\longrightarrow \\text{Fe}_2\\text{O}_3 \\cdot 3\\text{H}_2\\text{O}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Investigation",
+      "chunk_type": "theory",
+      "content_markdown": "### Experiment of the Formation of Rust\n\n* Take four test tubes and mark them 1 to 4.\n* Take the necessary measures to make them similar to the figure.\n* Boil the water of test tube 3 for a minute and add $1\\text{ mL}$ cooking oil or olive oil to the water. The oil will restrict the air from entering the water.\n* Preserve the test tubes in this situation for a week and observe.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

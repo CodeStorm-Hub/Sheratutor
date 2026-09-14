@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 50,
+  "pdf_page_no": 55,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= 8ab(a^2 + b^2)$$\n$$\\therefore (a + b)^4 - (a - b)^4 = 8ab(a^2 + b^2)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 9.** If $a + b + c = 15$ and $a^2 + b^2 + c^2 = 83$, what is the value of $ab + bc + ac$?\n\n**Solution:** First method:\n$$2(ab + bc + ac) = (a + b + c)^2 - (a^2 + b^2 + c^2) = (15)^2 - 83 = 225 - 83 = 142$$\n$$\\therefore ab + bc + ac = \\frac{142}{2} = 71$$\n\nAlternative method:\n$$(a + b + c)^2 = (a^2 + b^2 + c^2) + 2(ab + bc + ac)$$\nor, $(15)^2 = 83 + 2(ab + bc + ac)$\nor, $225 - 83 = 2(ab + bc + ac)$\nor, $2(ab + bc + ac) = 142$\n$$\\therefore ab + bc + ac = \\frac{142}{2} = 71$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 10.** If $a + b + c = 2$ and $ab + bc + ac = 1$, what is the value of $(a + b)^2 + (b + c)^2 + (c + a)^2$?\n\n**Solution:** $(a + b)^2 + (b + c)^2 + (c + a)^2$\n$= a^2 + 2ab + b^2 + b^2 + 2bc + c^2 + c^2 + 2ca + a^2$\n$= (a^2 + b^2 + c^2 + 2ab + 2bc + 2ca) + (a^2 + b^2 + c^2)$\n$= (a + b + c)^2 + ((a + b + c)^2 - 2(ab + bc + ca))$\n$= (2)^2 + (2)^2 - 2 \\times 1 = 4 + 4 - 2 = 8 - 2 = 6$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 11.** Express $(2x + 3y)(4x - 5y)$ as the difference of two squares.\n\n**Solution:** Let, $2x + 3y = a$ and $4x - 5y = b$\n$$\\therefore \\text{Given expression } ab = \\left( \\frac{a + b}{2} \\right)^2 - \\left( \\frac{a - b}{2} \\right)^2$$\n$$= \\left( \\frac{2x + 3y + 4x - 5y}{2} \\right)^2 - \\left( \\frac{2x + 3y - 4x + 5y}{2} \\right)^2$$ [substituting the values of $a$ and $b$]",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

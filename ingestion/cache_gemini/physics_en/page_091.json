@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 91,
+  "pdf_page_no": 96,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Static friction and kinetic friction",
+      "chunk_type": "theory",
+      "content_markdown": "Take several empty match boxes. Fill up the boxes with soil to make them slightly heavier. Now put a match box on a book and keep sliding the book gradually (Figure 3.18). Due to the static friction the match will not slide at first. When the book becomes sufficiently inclined, then along the slope a force works. At the instant when this force equals the sliding frictional force, then the match box will start sliding. You will see that only for a particular angle of inclination the match will start moving. Putting one or more match boxes over the first one repeat the experiment; you will see that every time for a particular angle the match box will start moving.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "3.9.2",
+      "section_title": "Effects of friction on motion",
+      "chunk_type": "theory",
+      "content_markdown": "We already discussed that the frictional force always acts opposite to the applied force. Therefore, naturally the frictional force slows down the motion and it may be our assumption that perhaps we always try to reduce the friction. But that is not true. Sometimes you may have seen that a car or a truck is stuck in mud.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.18: Measurement of kinetic friction",
+      "figure_no": "3.18",
+      "box_2d": [
+        185,
+        237,
+        436,
+        762
+      ],
+      "description": "A hand holding an inclined book with a matchbox on top, demonstrating the measurement of kinetic friction.",
+      "reading_order_anchor": "Static friction and kinetic friction"
+    }
+  ]
+}

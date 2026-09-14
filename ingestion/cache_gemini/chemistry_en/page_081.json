@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 81,
+  "pdf_page_no": 86,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Creative Questions\n\n1.\n\n| Na | Mg | | F |\n|---|---|---|---|\n| | | | Cl |\n| | | | Br |\n\nDiagram of the stem is a part of the periodic table.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. Write down the Triads Law.\nb. Why is Barium called alkaline earth metal?\nc. Which of the elements in the stem is the biggest in size? Explain\nd. Analyze the electron affinity of the elements in the stem as we move periodically from left to right.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2.\n\n| | Group 1 | Group 2 | Group 3 |\n|---|---|---|---|\n| Period 2 | | | |\n| Period 3 | | | |\n| Period 4 | A | B | C |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. Write down the modern formula of the periodic table.\nb. Why is B called an alkaline earth metal?\nc. Explain the change in the size of atom from A to B.\nd. Analyze the change in ionization energy as we progress from A to C.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Table for Creative Question 1",
+      "figure_no": "4.01",
+      "box_2d": [
+        209,
+        107,
+        335,
+        695
+      ],
+      "description": "Partial periodic table grid containing elements Na, Mg, F, Cl, and Br used as a stimulus for creative question 1.",
+      "reading_order_anchor": "Creative Questions"
+    },
+    {
+      "caption": "Table for Creative Question 2",
+      "figure_no": "4.02",
+      "box_2d": [
+        553,
+        107,
+        717,
+        494
+      ],
+      "description": "A periodic table grid showing groups 1, 2, 3 and periods 2, 3, 4 with placeholder elements A, B, and C.",
+      "reading_order_anchor": "2."
+    }
+  ]
+}

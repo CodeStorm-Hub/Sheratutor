@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 142,
+  "pdf_page_no": 147,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, you see amazingly that if the magnitude of $(A_2/A_1)$ is 100 then you will get 100 times more force on the second cylinder than the force you applied on the first cylinder!\n\nThis process is very effective and used to control very large factories and aircrafts. But keep in mind; it is the principle of increasing forces. In this process energy cannot be increased at all. You will get back the same amount of energy on the second cylinder that you have applied on the first cylinder.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Show that you are getting back the same amount of energy which is applied though force is increased.\n\n**Answer:** Let's suppose force $F_1$ is applied on the smaller piston and the piston moves by a distance $l_1$.\n\nTherefore, amount of work done $$W_1 = F_1l_1$$\n\nForce on the bigger piston $$F_2 = F_1 \\left(\\frac{A_2}{A_1}\\right)$$\n\nAs the water displaced by the smaller piston moves the larger piston by a distance $l_2$ by pushing, therefore\n$$l_1 A_1 = l_2 A_2$$\n\nDistance travelled by the larger piston: $$l_2 = l_1 \\left(\\frac{A_1}{A_2}\\right)$$\n\nTherefore, amount of work done: $$W_2 = F_2l_2 = F_1 \\left(\\frac{A_2}{A_1}\\right) l_1 \\left(\\frac{A_1}{A_2}\\right) = F_1l_1$$\n\ni.e. equal to the work done by the smaller piston.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

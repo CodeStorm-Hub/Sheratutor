@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 13,
+  "pdf_page_no": 18,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": "1.5",
+      "section_title": "Physical Quantities and Their Measurements",
+      "chunk_type": "theory",
+      "content_markdown": "We all know that water becomes ice when it is cooled; it becomes vapor when it is heated. Peoples have been observing it from the very ancient times. This knowledge alone cannot be science completely, unless we can say at what condition and at what temperature water becomes ice after freezing or raising the temperature at what condition and at what temperature does it start to boil and becomes vapors. This means, in order to be science, everything has to be measured. The most important point of science is to be able to explain everything accurately after measuring them.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Quantity | Unit | Symbol |\n| :--- | :--- | :--- |\n| Length | meter | m |\n| Mass | kilogram | kg |\n| Time | second | s |\n| Electric current | ampere | A |\n| Temperature | kelvin | K |\n| Amount of substance | mole | mol |\n| Luminous intensity | candela | cd |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.5",
+      "section_title": "Physical Quantities and Their Measurements",
+      "chunk_type": "theory",
+      "content_markdown": "In this universe anything we can measure is called a quantity. In this physical world there are innumerable quantities which can be measured. For example, we can name, length, breadth, volume, weight, temperature, colour, rigidity, position, velocity, internal material, electrical conductivity, non-conductivity, elasticity, heat conductivity, non-conductivity, density, specific heat, pressure, melting point, etc, and we cannot finish this list. In brief, in the physical world the quantities are endless. You may think that to measure these infinite number of quantities, we have to prepare the definitions and units for these infinite number of quantities! Actually that is not true, you will be surprised hearing that (and definitely be happy) if we can fix seven units of seven quantities, we will be able to calculate everything using these seven units. These seven quantities are called fundamental quantities. When we express other quantity using these fundamental quantities that is called a derived quantity. The fundamental quantities are length, mass, time, electric current, temperature, amount of",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

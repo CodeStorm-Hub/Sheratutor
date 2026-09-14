@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 106,
+  "pdf_page_no": 111,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$v^2 = \\frac{2 \\times 80\\text{ J}}{\\text{m}} = \\frac{160\\text{ m}^2}{10\\text{ s}^2}$$\n$$v = 4\\text{ m/s}$$\n\n---",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.3.2",
+      "section_title": "Potential Energy",
+      "chunk_type": "theory",
+      "content_markdown": "When we were discussing work, we said that if a force does a positive work on an object then energy is generated. When we were talking about kinetic energy we gave the example of this too. We have shown that by applying a force on an object if the object moves by a distance, then its kinetic energy becomes $\\frac{1}{2}mv^2$.\n\nNow, we will give such an example where force is applied and displacement occurs even when no kinetic energy is produced. Suppose, a spring is kept on a table as shown in figure 4.02. You applied a force at the free end of the spring by your finger and compressed it by an amount $x$. In such a condition, none of your hand or spring is in motion, so no kinetic energy is present in any of them. Since the direction of applied force and the distance traversed is in the same direction, so the work done is positive. According to the definition of work, here energy is to be created. But where is that energy? Here nothing is in motion, so definitely there is no kinetic energy.\n\nThose of us who have used springs can guess that energy is definitely hidden in the compressed spring. Because if an object of mass $m$ is kept before the compressed spring and then released, the spring would exert a force on it and make a displacement, which means the spring would perform work. That is it's a kind of energy, even it is not kinetic energy, this is another form of energy. This type of stored energy is called potential energy. This energy is developed due to the 'state or position' of the object.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 4.02: Stationary state of a spring and compressed by applied force",
+      "figure_no": "4.02",
+      "box_2d": [
+        383,
+        545,
+        614,
+        874
+      ],
+      "description": "Schematic diagram showing a spring of length L being compressed by an amount x through an applied force F from a finger.",
+      "reading_order_anchor": "Suppose, a spring is kept on a table as shown in figure 4.02."
+    }
+  ]
+}

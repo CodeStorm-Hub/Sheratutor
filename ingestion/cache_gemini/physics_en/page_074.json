@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 74,
+  "pdf_page_no": 79,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "car). Taking $m_2$ as zero, after collision, velocity of the truck and the small car is\n\n$$v_1 = \\frac{(m_1 - 0)u + 2 \\times 0 \\times (-u)}{m_1 + 0} = u$$\n\nAnd\n\n$$v_2 = \\frac{(0 - m_1)(-u) + 2m_1 u}{m_1 + m_2} = 3u$$\n\nThe result is terrible. After the collision, the truck will move with the same velocity, i.e. it will not experience the horrible nature of the collision. The velocity of the small car will be changed from $-u$ to $3u$, that means change of velocity is $3u - (-u) = 4u$, the direction of the velocity of small car will be changed and it will fly off with four times its velocity in the reverse direction. In this process the small car will be crumpled and destroyed. The loss of lives of the passengers will be a very natural consequence. Again, we assume that no other energy is exchanged here rather than kinetic energy, which is not true.\n\nTherefore, on the roads we have to drive heavy trucks and heavy buses very carefully, because in an accident even though these are not damaged too much, but the small cars are damaged much more in a head-on collision with them.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Place two adjacent books parallely and put four or five marbles in the gaps so that all the marbles are touching one another (Figure 3.05). Hit the row of marbles by knocking with a marble. You will see that if you strike with one marble on one side, one marble will come out from the other side; two marbles will come out if the strike is done with two marbles. You will never be able to bring out two marbles striking with one marble or bring out one marble striking with two marbles.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.05: Experiment of conservation of momentum and energy",
+      "figure_no": "3.05",
+      "box_2d": [
+        606,
+        137,
+        727,
+        802
+      ],
+      "description": "Two hands holding marbles near parallel books demonstrating conservation of momentum and energy with colliding marbles.",
+      "reading_order_anchor": "Do Yourself"
+    }
+  ]
+}

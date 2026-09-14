@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 179,
+  "pdf_page_no": 184,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "ত্রিকোণমিতিক অভেদাবলি",
+      "chunk_type": "theory",
+      "content_markdown": "(i) $(\\sin \\theta)^2 + (\\cos \\theta)^2 = \\left(\\frac{PM}{OP}\\right)^2 + \\left(\\frac{OM}{OP}\\right)^2$\n\n$= \\frac{PM^2}{OP^2} + \\frac{OM^2}{OP^2} = \\frac{PM^2 + OM^2}{OP^2} = \\frac{OP^2}{OP^2}$ [পিথাগোরাসের সূত্র]\n\n$= 1$\n\nবা, $(\\sin \\theta)^2 + (\\cos \\theta)^2 = 1$\n\n$\\therefore \\boxed{(\\sin \\theta)^2 + (\\cos \\theta)^2 = 1}$\n\nমন্তব্য: পূর্ণসংখ্যা সূচক $n$ এর জন্য $(\\sin \\theta)^n$ কে $\\sin^n \\theta$ ও $(\\cos \\theta)^n$ কে $\\cos^n \\theta$ ইত্যাদি লেখা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(ii) $\\sec^2 \\theta = (\\sec \\theta)^2 = \\left(\\frac{OP}{OM}\\right)^2$\n\n$= \\frac{OP^2}{OM^2} = \\frac{OM^2 + PM^2}{OM^2}$ [$OP$ সমকোণী $\\triangle POM$ এর অতিভুজ বলে]\n\n$= \\frac{OM^2}{OM^2} + \\frac{PM^2}{OM^2}$\n\n$= 1 + \\left(\\frac{PM}{OM}\\right)^2 = 1 + (\\tan \\theta)^2 = 1 + \\tan^2 \\theta$\n\n$\\therefore \\boxed{\\sec^2 \\theta - \\tan^2 \\theta = 1}$ এবং $\\boxed{\\tan^2 \\theta = \\sec^2 \\theta - 1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(iii) $\\text{cosec}^2 \\theta = (\\text{cosec} \\theta)^2 = \\left(\\frac{OP}{PM}\\right)^2$\n\n$= \\frac{OP^2}{PM^2} = \\frac{PM^2 + OM^2}{PM^2}$ [$OP$ সমকোণী $\\triangle POM$ এর অতিভুজ বলে]\n\n$= \\frac{PM^2}{PM^2} + \\frac{OM^2}{PM^2} = 1 + \\left(\\frac{OM}{PM}\\right)^2$\n\n$= 1 + (\\cot \\theta)^2 = 1 + \\cot^2 \\theta$\n\n$\\therefore \\boxed{\\text{cosec}^2 \\theta - \\cot^2 \\theta = 1}$ এবং $\\boxed{\\cot^2 \\theta = \\text{cosec}^2 \\theta - 1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. $\\tan A = \\frac{4}{3}$ হলে, $A$ কোণের অন্যান্য ত্রিকোণমিতিক অনুপাতসমূহ নির্ণয় কর।\n\nসমাধান: দেওয়া আছে, $\\tan A = \\frac{4}{3}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

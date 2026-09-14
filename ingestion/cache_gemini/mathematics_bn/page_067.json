@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 67,
+  "pdf_page_no": 72,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| নাম | কাজ সম্পন্ন করার দিন | ১ দিনে কাজের সম্পন্ন অংশ | $d$ দিনে কাজের সম্পন্ন অংশ |\n| :--- | :--- | :--- | :--- |\n| রফিক | $10$ | $\\frac{1}{10}$ | $\\frac{d}{10}$ |\n| শফিক | $15$ | $\\frac{1}{15}$ | $\\frac{d}{15}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রশ্নানুসারে, $\\frac{d}{10} + \\frac{d}{15} = 1$ বা, $d\\left(\\frac{1}{10} + \\frac{1}{15}\\right) = 1$\n\nবা, $d\\left(\\frac{3+2}{30}\\right) = 1$ বা, $\\frac{5d}{30} = 1$\n\nবা, $d = \\frac{30}{5} = 6$\n\nসুতরাং, তারা একত্রে $6$ দিনে কাজটি শেষ করতে পারবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩৬. একজন মাঝি স্রোতের প্রতিকূলে $t_1$ ঘণ্টায় $x$ কি.মি. যেতে পারে। স্রোতের অনুকূলে ঐ পথ যেতে তার $t_2$ ঘণ্টা লাগে। স্রোতের বেগ ও নৌকার বেগ কত?\n\nসমাধান: ধরি, স্রোতের বেগ ঘণ্টায় $v$ কি.মি. এবং স্থির পানিতে নৌকার বেগ ঘণ্টায় $u$ কি.মি.। তাহলে, স্রোতের অনুকূলে নৌকার কার্যকরী বেগ ঘণ্টায় $(u + v)$ কি.মি. এবং স্রোতের প্রতিকূলে নৌকার কার্যকরী বেগ ঘণ্টায় $(u - v)$ কি.মি.\n\nআমরা জানি, বেগ = $\\frac{\\text{অতিক্রান্ত দূরত্ব}}{\\text{সময়}}$\n\nপ্রশ্নানুসারে, $u + v = \\frac{x}{t_2} \\dots \\dots (1)$\n\nএবং $u - v = \\frac{x}{t_1} \\dots \\dots (2)$\n\nসমীকরণ (1) ও (2) যোগ করে পাই,\n\n$2u = \\frac{x}{t_2} + \\frac{x}{t_1} = x\\left(\\frac{1}{t_1} + \\frac{1}{t_2}\\right)$ বা, $u = \\frac{x}{2}\\left(\\frac{1}{t_1} + \\frac{1}{t_2}\\right)$\n\nসমীকরণ (1) ও (2) বিয়োগ করে পাই,\n\n$2v = \\frac{x}{t_2} - \\frac{x}{t_1} = x\\left(\\frac{1}{t_2} - \\frac{1}{t_1}\\right)$ বা, $v = \\frac{x}{2}\\left(\\frac{1}{t_2} - \\frac{1}{t_1}\\right)$\n\nসুতরাং, স্রোতের বেগ ঘণ্টায় $\\frac{x}{2}\\left(\\frac{1}{t_2} - \\frac{1}{t_1}\\right)$ কি.মি. এবং নৌকার বেগ ঘণ্টায় $\\frac{x}{2}\\left(\\frac{1}{t_1} + \\frac{1}{t_2}\\right)$ কি.মি.।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

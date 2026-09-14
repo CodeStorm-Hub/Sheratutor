@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 252,
+  "pdf_page_no": 257,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this case if the critical angle is $\\theta_c$\n$$\\sin \\theta_c = \\frac{1}{1.45} = 0.69$$\n$$\\theta_c = 43.6^\\circ$$\nTherefore, if light incidents at angle $75^\\circ$, then total internal reflection will happen instead of reflection.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.2.1",
+      "section_title": "Rainbow",
+      "chunk_type": "theory",
+      "content_markdown": "You may be thinking that you have never seen total internal reflection. But those who have seen a rainbow have seen total internal reflection. A rainbow is formed by the total internal reflection of water. Those who have not separated white light into different colors with prism, have seen this in a rainbow. If the sun shines after rain, we see a rainbow. Because there are water droplets in the air, in that water total internal reflection occurs, where different colors of light bends in different angles. The bands of different color of the rainbow are formed by these light rays. Those of you who have seen a rainbow have seen that the rainbow always forms in the sky opposite to the sun. Surely now you have understood the reason for this.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.2.2",
+      "section_title": "Mirage",
+      "chunk_type": "theory",
+      "content_markdown": "Mirage is a common phenomenon in the desert. You will be surprised to hear that a mirage also happens due to total internal reflection. The word comes from changes of density of air due to heat in the desert. We know heated air, being lighter, goes up, but due to the heated sands in the desert the nearby air may hotter than the upper air. Thus, we can imagine the air in desert as in Figure 9.09.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.08 (a): Rainbow",
+      "figure_no": "9.08 (a)",
+      "box_2d": [
+        550,
+        250,
+        770,
+        772
+      ],
+      "description": "Diagram illustrating the formation of a rainbow by sunlight passing through a water droplet with refraction and total internal reflection, along with an observer.",
+      "reading_order_anchor": "9.2.1 Rainbow"
+    }
+  ]
+}

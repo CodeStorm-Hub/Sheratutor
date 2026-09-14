@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 246,
+  "pdf_page_no": 251,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রথম ও শেষ সময় দুইটি একই সময় বলে কাঁটা দুইটি 11 বার মিলিত হবে এবং সময়গুলো হলো $x$ টা $\\frac{60}{11}x$ মিনিট।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "কাজ: $ABC$ ত্রিভুজে $\\angle B = 2x^\\circ$, $\\angle C = x^\\circ$, $\\angle A = y^\\circ$ এবং $\\angle A = \\angle B + \\angle C$ হলে, $x$ ও $y$ এর মান নির্ণয় কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ১২.৮",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. নিচের কোন শর্তে $ax + by + c = 0$ ও $px + qy + r = 0$ সমীকরণজোটটি সমঞ্জস ও পরস্পর অনির্ভরশীল হবে?\nক) $\\frac{a}{p} \\neq \\frac{b}{q}$ খ) $\\frac{a}{p} = \\frac{b}{q} = \\frac{c}{r}$ গ) $\\frac{a}{p} = \\frac{b}{q} \\neq \\frac{c}{r}$ ঘ) $\\frac{a}{p} = \\frac{b}{q}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $x + y = 4$, $x - y = 2$ হলে $(x, y)$ এর মান নিচের কোনটি?\nক) $(2, 4)$ খ) $(4, 2)$ গ) $(3, 1)$ ঘ) $(1, 3)$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $x + y = 6$ ও $2x = 4$ হলে, $y$ মান কত?\nক) $2$ খ) $4$ গ) $6$ ঘ) $8$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. নিচের কোনটির জন্য নিচের ছকটি সঠিক?\n\n| $x$ | $0$ | $2$ | $4$ |\n|---|---|---|---|\n| $y$ | $-4$ | $0$ | $4$ |\n\nক) $y = x - 4$ খ) $y = 8 - x$ গ) $y = 4 - 2x$ ঘ) $y = 2x - 4$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $2x - y = 8$ এবং $x - 2y = 4$ হলে, $x + y = $ কত?\nক) $0$ খ) $4$ গ) $8$ ঘ) $12$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $x - y - 4 = 0$ এবং $3x - 3y - 10 = 0$ সমীকরণদ্বয়\n$(i)$ পরস্পর নির্ভরশীল।\n$(ii)$ পরস্পর সমঞ্জস।\n$(iii)$ এর কোনো সমাধান নেই।\nউপরের তথ্যের ভিত্তিতে নিচের কোনটি সঠিক?\nক) $ii$ খ) $iii$ গ) $i$ ও $iii$ ঘ) $ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "নিচের তথ্যের ভিত্তিতে ৭-৯ নং প্রশ্নের উত্তর দাও।\n\nআয়তাকার একটি ঘরের মেঝের দৈর্ঘ্য, প্রস্থ অপেক্ষা $2$ মিটার বেশি এবং মেঝের পরিসীমা $20$ মিটার। ঘরটির মেঝে মোজাইক করতে প্রতি বর্গমিটারে $900$ টাকা খরচ হয়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

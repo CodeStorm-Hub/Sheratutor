@@ -1,0 +1,67 @@
+{
+  "printed_page_no": 295,
+  "pdf_page_no": 300,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": "16.1",
+      "section_title": "সমকোণী ত্রিভুজ",
+      "chunk_type": "theory",
+      "content_markdown": "১. সমকোণী ত্রিভুজ: মনে করি, $ABC$ সমকোণী ত্রিভুজের সমকোণ সংলগ্ন বাহুদ্বয় যথাক্রমে $BC = a$ এবং $AB = b$। $BC$ কে ভূমি এবং $AB$ কে উচ্চতা বিবেচনা করলে,\n$\\triangle ABC$ এর ক্ষেত্রফল $= \\frac{1}{2} \\times \\text{ভূমি} \\times \\text{উচ্চতা} = \\frac{1}{2}ab$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.2",
+      "section_title": "ত্রিভুজক্ষেত্রের দুই বাহু ও এদের অন্তর্ভুক্ত কোণ দেওয়া আছে",
+      "chunk_type": "theory",
+      "content_markdown": "২. ত্রিভুজক্ষেত্রের দুই বাহু ও এদের অন্তর্ভুক্ত কোণ দেওয়া আছে: মনে করি, $ABC$ ত্রিভুজের বাহুত্রয় $BC = a, CA = b, AB = c$। $A$ থেকে $BC$ বাহুর উপর $AD$ লম্ব আঁকি। ধরি, উচ্চতা $AD = h$।\nকোণ $C$ বিবেচনা করলে পাই, $\\frac{AD}{CA} = \\sin C$\nবা, $\\frac{h}{b} = \\sin C$ বা, $h = b \\sin C$\n$\\triangle ABC$ এর ক্ষেত্রফল $= \\frac{1}{2} BC \\times AD$\n$= \\frac{1}{2} a \\times b \\sin C = \\frac{1}{2} ab \\sin C$\nঅনুরূপভাবে $\\triangle ABC$ এর ক্ষেত্রফল\n$= \\frac{1}{2} bc \\sin A = \\frac{1}{2} ca \\sin B$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.3",
+      "section_title": "ত্রিভুজের তিন বাহু দেওয়া আছে",
+      "chunk_type": "theory",
+      "content_markdown": "৩. ত্রিভুজের তিন বাহু দেওয়া আছে:\nমনে করি, $\\triangle ABC$ এর $BC = a, CA = b$ এবং $AB = c$। এর পরিসীমা $2s = a + b + c$।\n$AD \\perp BC$ আঁকি।\nধরি, $BD = x$ তাহলে, $CD = a - x$\n$\\triangle ABD$ এবং $\\triangle ACD$ সমকোণী।\n$\\therefore AD^2 = AB^2 - BD^2$ এবং $AD^2 = AC^2 - CD^2$\n$\\therefore AB^2 - BD^2 = AC^2 - CD^2$\nবা, $c^2 - x^2 = b^2 - (a - x)^2$\nবা, $c^2 - x^2 = b^2 - a^2 + 2ax - x^2$\nবা, $2ax = c^2 + a^2 - b^2$\n$\\therefore x = \\frac{c^2 + a^2 - b^2}{2a}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: সমকোণী ত্রিভুজ",
+      "figure_no": "16.01",
+      "box_2d": [
+        91,
+        695,
+        202,
+        882
+      ],
+      "description": "সমকোণী ত্রিভুজ ABC যেখানে ভূমি a এবং উচ্চতা b",
+      "reading_order_anchor": "১. সমকোণী ত্রিভুজ"
+    },
+    {
+      "caption": "চিত্র: ত্রিভুজের দুই বাহু ও অন্তর্ভুক্ত কোণ",
+      "figure_no": "16.02",
+      "box_2d": [
+        267,
+        698,
+        427,
+        882
+      ],
+      "description": "ত্রিভুজ ABC যেখানে AD লম্ব, ভূমি a, এবং বাহু c ও b",
+      "reading_order_anchor": "২. ত্রিভুজক্ষেত্রের দুই বাহু ও এদের অন্তর্ভুক্ত কোণ দেওয়া আছে"
+    },
+    {
+      "caption": "চিত্র: ত্রিভুজের তিন বাহু",
+      "figure_no": "16.03",
+      "box_2d": [
+        549,
+        698,
+        684,
+        882
+      ],
+      "description": "ত্রিভুজ ABC যেখানে AD লম্ব, ভূমি a বিভক্ত হয়েছে x এবং a-x অংশে",
+      "reading_order_anchor": "৩. ত্রিভুজের তিন বাহু দেওয়া আছে"
+    }
+  ]
+}

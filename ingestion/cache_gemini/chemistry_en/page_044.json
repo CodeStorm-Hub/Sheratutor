@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 44,
+  "pdf_page_no": 49,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "shell or permanent orbit or principal energy level. Electrons do not absorb or emit any energy when they revolve round these fixed orbits. If we express the permanent orbit as $n$, then $n = 1, 2, 3, 4$ etc. In other words, if $n = 1$, the principal energy level is $K$, when $n = 2$, $L$ is the principal energy level, when $n = 3$, $M$ is the principal energy level, when $n = 4$, $N$ is the principal energy level etc.\n\nb. According to Bohr's model, the angular momentum of an electron in an energy level is $mvr = \\frac{nh}{2\\pi}$. Here,\n\n$m = \\text{the mass of electron } (9.11 \\times 10^{-31} \\text{ kg})$\n\n$r = \\text{the radius of the orbit that the electron follows}$\n\n$v = \\text{the velocity of electron in the permanent orbit}$\n\n$h = \\text{Plank constant } (h = 6.626 \\times 10^{-34} \\text{ m}^2 \\text{ kg/s})$\n\n$n = \\text{principal energy level or principal quantum number } (n = 1, 2, 3, 4, \\dots)$\n\nAccording to this, the energy level with a lesser value of $n$ is the lower energy level and the energy level with a higher value of $n$ is the higher energy level.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When an electron moves around in its principal energy level, it doesn't absorb or emit any energy. However, it absorbs energy when it moves from a lower to a higher energy level. The same way, an electron emits energy when it moves from a higher to a lower energy level. This absorbed or emitted energy is $h\\nu = hc/\\lambda$.\n\nHere,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.03: Bohr's Atomic Model.",
+      "figure_no": "3.03",
+      "box_2d": [
+        574,
+        204,
+        764,
+        792
+      ],
+      "description": "Schematic diagram of Bohr's atomic model showing a nucleus surrounded by circular orbits (n=1, n=2) with electrons absorbing or emitting energy when transitioning between orbits.",
+      "reading_order_anchor": "According to this, the energy level with a lesser value of n is the lower energy level and the energy level with a higher value of n is the higher energy level."
+    }
+  ]
+}

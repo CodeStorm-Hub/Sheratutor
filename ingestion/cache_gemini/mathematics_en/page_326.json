@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 326,
+  "pdf_page_no": 331,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "6. The lengths of the two sides of a triangle are 26 m., 28 m. respectively and its area is 182 square metre. Find the angle between the two sides.\n\n7. The length of equal sides of an isosceles triangle is 10 m and area 48 square metre. Find the length of the base.\n\n8. Two roads run from a certain place with an angle of $135^\\circ$ in two directions. Two persons move from that place in two directions with the speed of 7 km per hour and 5 km per hour respectively. What will be the direct distance between them after 4 hours?\n\n9. If the lengths of the perpendiculars from a point interior of an equilateral triangle to three sides are 6 cm, 7 cm, 8 cm respectively; find the length of sides of the triangle and the area of the triangular region.\n\n10. The perpendicular of a right-angled triangle is 6 cm less than $\\frac{11}{12}$ times of the base, and the hypotenuse is 3 cm less than $\\frac{4}{3}$ times of the base.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Let the base be $x$. Express the area of the triangle in terms of $x$.\n\n2) Find the length of the base.\n\n3) If the length of the base of the triangle is 12 cm., find the area of the equilateral triangle having the same perimeter as its perimeters.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Area of Quadrilateral Region",
+      "chunk_type": "theory",
+      "content_markdown": "1. Area of Rectangular Region: Let, the length of $AB = a$, breadth $BC = b$ and diagonal $AC = d$ of rectangle $ABCD$. We know, the diagonal of a rectangle divides the rectangle into two equal triangular regions.\n\n$\\therefore$ Area of the rectangle $ABCD = 2 \\times$ area of $\\triangle ABC$\n$= 2 \\times \\frac{1}{2} \\cdot a \\cdot b = ab$\n\nperimeter of the rectangular region, $s = 2(a+b)$ and observe that triangle $ABC$ is right-angled.\n\n$\\therefore AC^2 = AB^2 + BC^2$ or, $d^2 = a^2 + b^2$\n\n$\\therefore d = \\sqrt{a^2 + b^2}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Rectangle ABCD",
+      "figure_no": "16.01",
+      "box_2d": [
+        745,
+        693,
+        873,
+        886
+      ],
+      "description": "A rectangle ABCD with length a, breadth b, and diagonal d.",
+      "reading_order_anchor": "Area of Rectangular Region: Let, the length of AB = a, breadth BC = b and diagonal AC = d of rectangle ABCD."
+    }
+  ]
+}

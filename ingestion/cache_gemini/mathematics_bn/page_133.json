@@ -1,0 +1,81 @@
+{
+  "printed_page_no": 133,
+  "pdf_page_no": 138,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. চিত্রে $\\angle RPS$ এর মান কত?\nক) $40^\\circ$ খ) $70^\\circ$\nগ) $90^\\circ$ ঘ) $110^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৪. পাশের চিত্রে—\n\n(i) $\\angle AOC$ একটি সূক্ষ্মকোণ\n(ii) $\\angle AOB$ একটি সমকোণ\n(iii) $\\angle AOD$ একটি প্রবৃদ্ধকোণ\n\nনিচের কোনটি সঠিক?\nক) $i$ খ) $ii$ গ) $i$ ও $ii$ ঘ) $ii$ ও $iii$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. একটি ত্রিভুজকে অপর একটি ত্রিভুজের উপর স্থাপন করলে যদি ত্রিভুজ দুইটি সর্বতোভাবে মিলে যায় তবে—\n(i) ত্রিভুজ দুইটি সর্বসম\n(ii) ত্রিভুজ দুইটির অনুরূপ বাহু সমান\n(iii) অনুরূপ কোণ সমান\nনিচের কোনটি সঠিক?\nক) $i, ii$ খ) $i, iii$ গ) $ii, iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উপরের চিত্রে $AB \\parallel EF \\parallel CD$ এবং $BD \\perp CD$। প্রদত্ত চিত্রের আলোকে (৬-৮) নং প্রশ্নের উত্তর দাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $\\angle AEF$ এর মান কত?\nক) $30^\\circ$ খ) $60^\\circ$ গ) $240^\\circ$ ঘ) $270^\\circ$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: ত্রিভুজ ও কোণ",
+      "figure_no": "6.01",
+      "box_2d": [
+        92,
+        636,
+        224,
+        786
+      ],
+      "description": "একটি ত্রিভুজ PQR যেখানে কোণ Q=30 ডিগ্রি এবং কোণ R=40 ডিগ্রি, এবং একটি বর্ধিত রেখা PS।",
+      "reading_order_anchor": "৩. চিত্রে $\\angle RPS$ এর মান কত?"
+    },
+    {
+      "caption": "চিত্র: কোণসমূহ",
+      "figure_no": "6.02",
+      "box_2d": [
+        267,
+        573,
+        405,
+        853
+      ],
+      "description": "একটি বিন্দু O থেকে নির্গত চারটি রশ্মি OA, OC, OB, OD যা বিভিন্ন কোণ তৈরি করছে।",
+      "reading_order_anchor": "৪. পাশের চিত্রে—"
+    },
+    {
+      "caption": "চিত্র: সমান্তরাল রেখা ও কোণ",
+      "figure_no": "6.03",
+      "box_2d": [
+        657,
+        443,
+        824,
+        763
+      ],
+      "description": "সমান্তরাল রেখা AB, EF, CD এবং একটি ছেদক রেখা দ্বারা গঠিত কোণসমূহ।",
+      "reading_order_anchor": "উপরের চিত্রে $AB \\parallel EF \\parallel CD$ এবং $BD \\perp CD$।"
+    }
+  ]
+}

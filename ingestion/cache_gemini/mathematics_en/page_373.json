@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 373,
+  "pdf_page_no": 378,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Weight (Kg) | 45 | 50 | 55 | 60 | 65 | 70 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 2 | 6 | 8 | 16 | 12 | 6 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.12",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "12. The following are the marks obtained in Mathematics of fifty students of class IX in a school:\n\n76, 65, 98, 79, 64, 68, 56, 73, 83, 57, 55, 92, 45, 77, 87, 46, 32, 75, 89, 48\n97, 88, 65, 73, 93, 58, 41, 69, 63, 39, 84, 56, 45, 73, 93, 62, 67, 69, 65, 53\n78, 64, 85, 53, 73, 34, 75, 82, 67, 62",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) What is the type of the given information? What indicate frequency in a class of distribution?\n2) Make frequency table taking appropriate class interval.\n3) Determine the mean of the given number by short-cut method.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.13",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "13.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) In the above figure, what is the mid-point value of the first class and what is the frequency of the last class?\n2) Express by data of information demonstrated in the above figure.\n3) Find the median of frequency obtained from 142.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.14",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "14. The frequency distribution table of weights (in kg) of 60 students of a class are:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | 45 — 49 | 50 — 54 | 55 — 59 | 60 — 64 | 65 — 69 | 70 — 74 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 4 | 8 | 10 | 20 | 12 | 6 |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 17.13: Frequency polygon",
+      "figure_no": "17.13",
+      "box_2d": [
+        458,
+        353,
+        710,
+        668
+      ],
+      "description": "A frequency polygon graph showing frequency on the Y-axis and class intervals on the X-axis.",
+      "reading_order_anchor": "13."
+    }
+  ]
+}

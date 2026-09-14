@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 214,
+  "pdf_page_no": 219,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান: মনে করি, $ax = by = cz = k$\n\n$\\therefore x = \\frac{k}{a}, y = \\frac{k}{b}, z = \\frac{k}{c}$\n\nএখন, $\\frac{x^2}{yz} + \\frac{y^2}{zx} + \\frac{z^2}{xy} = \\frac{k^2}{a^2} \\times \\frac{bc}{k^2} + \\frac{k^2}{b^2} \\times \\frac{ca}{k^2} + \\frac{k^2}{c^2} \\times \\frac{ab}{k^2} = \\frac{bc}{a^2} + \\frac{ca}{b^2} + \\frac{ab}{c^2}$\n\nঅর্থাৎ, $\\frac{x^2}{yz} + \\frac{y^2}{zx} + \\frac{z^2}{xy} = \\frac{bc}{a^2} + \\frac{ca}{b^2} + \\frac{ab}{c^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. $a, b, c$ ও $d$ ক্রমিক সমানুপাতিক এবং $x = \\frac{10pq}{p + q}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) দেখাও যে, $\\frac{a}{c} = \\frac{a^2 + b^2}{b^2 + c^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) প্রমাণ কর যে, $(a^2 + b^2 + c^2)(b^2 + c^2 + d^2) = (ab + bc + cd)^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $\\frac{x + 5p}{x - 5p} + \\frac{x + 5q}{x - 5q}$ এর মান নির্ণয় কর, যেখানে $p \\neq q$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান:\n\nক) দেওয়া আছে, $a : b = b : c$ বা, $\\frac{a}{b} = \\frac{b}{c}$ বা, $ac = b^2$\n\nডানপক্ষ = $\\frac{a^2 + b^2}{b^2 + c^2} = \\frac{a^2 + ac}{ac + c^2} = \\frac{a(a + c)}{c(a + c)} = \\frac{a}{c} = $ বামপক্ষ\n\n$\\therefore \\frac{a}{c} = \\frac{a^2 + b^2}{b^2 + c^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "খ) দেওয়া আছে, $a, b, c$ ও $d$ ক্রমিক সমানুপাতিক\n\n$\\therefore \\frac{a}{b} = \\frac{b}{c} = \\frac{c}{d}$\n\nধরি, $\\frac{a}{b} = \\frac{b}{c} = \\frac{c}{d} = k$, যেখানে $k$ একটি সমানুপাতিক ধ্রুবক\n\n$\\therefore \\frac{c}{d} = k$ বা, $c = dk$\n\n$\\frac{b}{c} = k$ বা, $b = ck = dk \\cdot k = dk^2$\n\n$\\frac{a}{b} = k$ বা, $a = bk = dk^2 \\cdot k = dk^3$\n\nবামপক্ষ = $(a^2 + b^2 + c^2)(b^2 + c^2 + d^2)$\n\n$= \\{(dk^3)^2 + (dk^2)^2 + (dk)^2\\}\\{(dk^2)^2 + (dk)^2 + d^2\\}$\n\n$= (d^2k^6 + d^2k^4 + d^2k^2)(d^2k^4 + d^2k^2 + d^2)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 82,
+  "pdf_page_no": 87,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $a \\neq 0, m > n$ | $m = 5, n = 3$ | $a \\neq 0, n > m$ | $m = 3, n = 5$ |\n| :--- | :--- | :--- | :--- |\n| $a^5 \\times a^3 = (a \\times a \\times a \\times a \\times a) \\times (a \\times a \\times a) = a \\times a \\times a \\times a \\times a \\times a \\times a \\times a = a^8 = a^{5+3}$ | | $a^3 \\times a^5 =$ | |\n| $\\frac{a^5}{a^3} =$ | | $\\frac{a^3}{a^5} = \\frac{a \\times a \\times a}{a \\times a \\times a \\times a \\times a} = \\frac{1}{a^2} = \\frac{1}{a^{5-3}}$ | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ In general $a^m \\times a^n = a^{m+n}$ and $\\frac{a^m}{a^n} = \\begin{cases} a^{m-n} \\text{ when } m \\ge n \\\\ \\frac{1}{a^{n-m}} \\text{ when } n > m \\end{cases}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Formula 3 (power of product). $(ab)^n = a^n \\times b^n$\n\nWe observe, $(5 \\times 2)^3 = (5 \\times 2) \\times (5 \\times 2) \\times (5 \\times 2) [\\because a^3 = a \\times a \\times a, a = 5 \\times 2]$\n$= (5 \\times 5 \\times 5) \\times (2 \\times 2 \\times 2)$\n$= 5^3 \\times 2^3$\n\nIn general, $(ab)^n = ab \\times ab \\times ab \\times \\dots \\times ab$ [successive multiplication of $n$ $ab$'s]\n$= (a \\times a \\times a \\times \\dots \\times a) \\times (b \\times b \\times b \\times \\dots \\times b)$\n$= a^n \\times b^n$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Formula 4 (power of quotient). $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}, (b \\neq 0)$\n\nWe observe, $\\left(\\frac{5}{2}\\right)^3 = \\frac{5}{2} \\times \\frac{5}{2} \\times \\frac{5}{2} = \\frac{5^3}{2^3}$\n\nIn general, $\\left(\\frac{a}{b}\\right)^n = \\frac{a}{b} \\times \\frac{a}{b} \\times \\frac{a}{b} \\times \\dots \\times \\frac{a}{b}$ [successive multiplication of $n$ times $\\frac{a}{b}$]\n$= \\frac{a \\times a \\times a \\times \\dots \\times a}{b \\times b \\times b \\times \\dots \\times b} = \\frac{a^n}{b^n}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Formula 5 (power of power). $(a^m)^n = a^{mn}$\n\n$(a^m)^n = a^m \\times a^m \\times a^m \\times \\dots \\times a^m$ [successive multiplication of $n$ times $a^m$]\n$= a^{m+m+m+\\dots+m}$ [in the power, multiplication of $n$ times of exponent]\n$= a^{m \\times n} = a^{mn}$\n\n$\\therefore (a^m)^n = a^{mn}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Zero and Negative Indices\nFor 0 and negative indices $a^0$ and $a^{-n}$ are defined as follows (where $n$ is natural number).\n\nDefinition 1 (zero index). $a^0 = 1, (a \\neq 0)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

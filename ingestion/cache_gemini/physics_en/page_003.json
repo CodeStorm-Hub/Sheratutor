@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 3,
+  "pdf_page_no": 8,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Physics:",
+      "chunk_type": "theory",
+      "content_markdown": "Physics is the most ancient branch of science. It is because scientists started studying and practising astronomy, the most important branch of physics, before other branches of science had flourished. Besides, being the oldest branch, physics can said to be the most fundamental branch of science. Chemistry flourished on the basis of physics. Biology flourished on the basis of Chemistry, and again, many other subjects flourished on the basis of Biology.\n\nGenerally, we can say that the branch of science that tries to understand matter and energy and the interaction between them is called physics. You must have realized that here physics does not refer to only the visible things around us but also the things such as molecules-atoms, electrons, protons, neutrons, quarks or string etc. Again energy may encompass strong and weak nuclear energy apart from our known potential energy, kinetic energy, gravitational energy or electromagnetic energy.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Scope of physics",
+      "chunk_type": "theory",
+      "content_markdown": "Since physics is the oldest and the most fundamental branch and other branches somehow flourished on the basis of physics, it is very natural that the scope of physics is very vast. Not only that, different technologies have flourished based on different laws of physics and we are using these in our daily lives (there are examples of some instruments used in medical science in the final chapter). At present the greatest contribution behind civilization is of electronics and physics has the greatest contribution to this technology also. Besides daily activities, from destruction of war to space exploration, the contribution of physics is present. Not only that, by the combination of other branches of science and physics, newer branches have developed, for example, astrophysics consists of astronomy and physics. In order to explain organic processes, biophysics has been built up by the combination of biology and physics, chemical physics was born by the combination of chemistry and physics. Use of physics in Geology has developed Geophysics. Medical physics has flourished using physics. Therefore the area of physics is very vast and deep as well.\n\nFor the advantage of teaching-learning we may divide physics into two principal parts. These are:\n\nClassical Physics: This contains mechanics, sound, heat and thermodynamics, electricity and magnetism and optics.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

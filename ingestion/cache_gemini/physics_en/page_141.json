@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 141,
+  "pdf_page_no": 146,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Applications of Pascal's Law",
+      "chunk_type": "theory",
+      "content_markdown": "### Applications of Pascal's Law:\n\nUsing Pascal's law some interesting machines can be fabricated. In figure 5.05 a machine like that is shown. Here two cylinders are connected by a pipe. Let's suppose cross sectional area of one cylinder is $A_1$ and that of another cylinder $A_2$, and you have applied force $F_1$ on the cylinder of cross sectional area $A_1$. Then your applied pressure is\n\n$$P = \\frac{F_1}{A_1}$$\n\nNow this pressure is transmitted through the liquid in all directions and it will also be applied on the cross sectional area of the second cylinder.\n\nTherefore the amount of force applied on the second cylinder will be\n\n$$F_2 = PA_2 = F_1 \\left(\\frac{A_2}{A_1}\\right)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.05: Force $F_2$ is obtained by applying force $F_1$ which depends on the cross section on which the force is applied.",
+      "figure_no": "5.05",
+      "box_2d": [
+        479,
+        268,
+        814,
+        755
+      ],
+      "description": "Diagram of two connected hydraulic cylinders of different cross-sectional areas illustrating Pascal's law, showing applied force F1 on a smaller piston and resulting force F2 on a larger piston.",
+      "reading_order_anchor": "Applications of Pascal's Law"
+    }
+  ]
+}

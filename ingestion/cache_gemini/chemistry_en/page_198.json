@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 198,
+  "pdf_page_no": 203,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": "Nuclear Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "The reaction that results in the amalgamation of smaller nucleus into a larger nucleus of an atom or the larger nucleus breaking into a smaller nucleus is a nuclear reaction. There are various kinds of nuclear reactions, Fission and Fusion are the two most significant of them.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": "Nuclear Fission Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "The nuclear process in which the nucleus of a larger and heavy element is broken into the nucleus of smaller elements is called a fission reaction. When we strike a $^{235}_{92}\text{U}$ nucleus with a neutron at low velocity, the nucleus becomes almost equally divided into two parts and produces $^{141}_{56}\text{Ba}$ and $^{92}_{36}\text{Kr}$ nuclei 03 neutrons ($^{1}_{0}\text{n}$) and a huge amount of energy. It is a nuclear fission reaction.\n\n$${}^{235}_{\text{92}}\text{U} + {}^{1}_{\text{0}}\text{n} \rightarrow {}^{141}_{\text{56}}\text{Ba} + {}^{92}_{\text{36}}\text{Kr} + 3\text{ } {}^{1}_{\text{0}}\text{n} + \text{Huge amount of energy}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.3",
+      "section_title": "Nuclear Fusion Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "The nuclear process in which a number of nucleus of smaller and light elements combine into a nucleus of a larger element is called a fusion reaction. Below is an example of a fusion reaction:\n\n$${}^{2}_{\text{1}}\text{H} + {}^{3}_{\text{1}}\text{H} \rightarrow {}^{4}_{\text{2}}\text{He} + {}^{1}_{\text{0}}\text{n} + \text{Huge amount of energy}$$\n\nFusion reaction is the basis of a hydrogen bomb.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.4",
+      "section_title": "Nuclear Chain Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "Basically, the nuclear fission reactions are nuclear chain reactions. The reactions that do not require application of extra energy to continue once they start are",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.13: Nuclear Fission Reaction.",
+      "figure_no": "8.13",
+      "box_2d": [
+        278,
+        560,
+        521,
+        856
+      ],
+      "description": "Schematic diagram of a nuclear fission reaction showing a uranium-235 nucleus being struck by a neutron, splitting into barium-141 and krypton-92 along with three neutrons and energy.",
+      "reading_order_anchor": "Nuclear Fission Reaction"
+    }
+  ]
+}

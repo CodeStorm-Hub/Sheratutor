@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 29,
+  "pdf_page_no": 34,
+  "chapter_no": 2,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$x - y = 3 \\dots \\dots (2)$\n\nসমীকরণ (1) ও (2) যোগ করে পাই, $3x = 9$ বা $x = 3$\n\nসমীকরণ (1) এ $x$ এর মান বসিয়ে পাই, $6 + y = 6$ বা $y = 0$\n\n$\\therefore (x, y) = (3, 0)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "কার্তেসীয় গুণজ (Cartesian Product)",
+      "chunk_type": "theory",
+      "content_markdown": "করিম সাহেব তাঁর বাড়ির একটি ঘরের ভিতরের দেওয়ালে সাদা বা নীল রং এবং বাইরের দেওয়ালে লাল বা হলুদ বা সবুজ রঙের লেপন দেওয়ার সিদ্ধান্ত নিলেন। ভিতরের দেওয়ালে রঙের সেট $A = \\{\\text{সাদা, নীল}\\}$ এবং বাইরের দেওয়ালে রঙের সেট $B = \\{\\text{লাল, হলুদ ও সবুজ}\\}$। করিম সাহেব তাঁর ঘরের রং লেপন (সাদা, লাল), (সাদা, হলুদ), (সাদা, সবুজ), (নীল, লাল), (নীল, হলুদ), (নীল, সবুজ) ক্রমজোড় আকারে দিতে পারেন।\n\nউক্ত ক্রমজোড়ের সেটটিকে নিচের মতো করে লেখা হয়:\n\n$A \\times B = \\{(\\text{সাদা, লাল), (সাদা, হলুদ), (সাদা, সবুজ), (নীল, লাল), (নীল, হলুদ), (নীল, সবুজ)}\\}$\n\nউপরোক্ত ক্রমজোড়ের সেটটিকেই কার্তেসীয় গুণজ সেট বলা হয়।\n\nসেট গঠন পদ্ধতিতে, $A \\times B = \\{(x, y) : x \\in A \\text{ এবং } y \\in B\\}$\n\n$A \\times B$ কে পড়া হয় $A$ ক্রস $B$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২. $P = \\{1, 2, 3\\}, Q = \\{3, 4\\}, R = P \\cap Q$ হলে $P \\times R$ এবং $R \\times Q$ নির্ণয় কর।\n\nসমাধান: দেওয়া আছে, $P = \\{1, 2, 3\\}, Q = \\{3, 4\\}$\n\nএবং $R = P \\cap Q = \\{1, 2, 3\\} \\cap \\{3, 4\\} = \\{3\\}$\n\n$\\therefore P \\times R = \\{1, 2, 3\\} \\times \\{3\\} = \\{(1, 3), (2, 3), (3, 3)\\}$\n\nএবং $R \\times Q = \\{3\\} \\times \\{3, 4\\} = \\{(3, 3), (3, 4)\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ:\n\nক) $\\left(\\frac{x}{2} + \\frac{y}{3}, 1\\right) = \\left(1, \\frac{x}{3} + \\frac{y}{2}\\right)$ হলে, $(x, y)$ নির্ণয় কর।\n\nখ) $P = \\{1, 2, 3\\}, Q = \\{3, 4\\}$ এবং $R = \\{x, y\\}$ হলে, $(P \\cup Q) \\times R$ এবং $(P \\cap Q) \\times Q$ নির্ণয় কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩. যে সকল স্বাভাবিক সংখ্যা দ্বারা 311 এবং 419 কে ভাগ করলে প্রতি ক্ষেত্রে 23 অবশিষ্ট থাকে এদের সেট নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

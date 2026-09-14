@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 183,
+  "pdf_page_no": 188,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$2\\text{NaCl}(l) \\longrightarrow 2\\text{Na}(s) + \\text{Cl}_2(g)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Mechanism of Electrolysis of Molten Sodium Chloride",
+      "chunk_type": "theory",
+      "content_markdown": "Take molten sodium chloride in a glassware or ceramic ware. The molten sodium chloride contains sodium ion ($\\text{Na}^+$) and chloride ion ($\\text{Cl}^-$) ion. Both of them are able to migrate. Two metallic bars or graphite sticks are submerged into the molten sodium chloride. If we connect one of them to the positive part of a battery and another to the negative part, the anode connected to the positive part of the battery will attract negatively charged $\\text{Cl}^-$ ions while cathodes connected with the negative part of the battery will attract positively charged $\\text{Na}^+$ ions. $\\text{Cl}^-$ ions will donate electrons at the anode and become chlorine gas. The oxidation at the anode:\n\n$$\\text{Cl}^- \\longrightarrow \\frac{1}{2}\\text{Cl}_2 + e^-$$\n\nOn the other side, $\\text{Na}^+$ accepts electron from the cathode and becomes metallic sodium. The reduction at the cathode:\n\n$$\\text{Na}^+ + e^- \\longrightarrow \\text{Na}$$\n\nThe ion that is attracted by the cathode is called a cation and the ion attracted by the anode is an anion.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": "Identification of Chlorine Gas at Anode with Litmus Paper",
+      "chunk_type": "theory",
+      "content_markdown": "If we collect the gas produced during the electrolysis of molten $\\text{NaCl}$ in a test tube and hold a wet blue litmus on the test tube, the paper will turn red. That will prove the presence of chlorine gas.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.04: Electrolysis of Sodium Chloride in Electrolytic Cell.",
+      "figure_no": "8.04",
+      "box_2d": [
+        231,
+        542,
+        420,
+        856
+      ],
+      "description": "Schematic diagram of an electrolytic cell containing molten sodium chloride with an anode connected to the positive terminal and a cathode connected to the negative terminal, showing migration of chloride and sodium ions.",
+      "reading_order_anchor": "Mechanism of Electrolysis of Molten Sodium Chloride"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 172,
+  "pdf_page_no": 177,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\nStep 1. The arc $BCD$ subtends an angle $\\angle BOD$ at the centre $O$.\n\nTherefore, $\\angle BOD = 2\\angle BAD$ and $\\angle BOD = 2\\angle BED$ [$\\because$ The angle subtended by an arc at the centre is double of the angle subtended on the circle]\n\n$\\therefore 2\\angle BAD = 2\\angle BED$\n\nor, $\\angle BAD = \\angle BED$ (Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "22",
+      "section_title": "Theorem 22. The angle inscribed in the semi- circle is a right angle.",
+      "chunk_type": "theory",
+      "content_markdown": "Let $AB$ be a diameter of circle with centre at $O$ and $\\angle ACB$ is the angle subtended by a semi-circle. It is to be proved that $\\angle ACB$ is a right angle.\n\nDrawing: Take a point $D$ on the circle on the opposite side of $AB$ of the circle where $C$ is located.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\n\nStep 1. The angle standing on the arc $ADB$\n\n$\\angle ACB = \\frac{1}{2}$ (straight angle in the centre $\\angle AOB$) [$\\because$ The angle standing on an arc at any point of the circle is half the angle at the centre]\n\nStep 2. But the straight angle $\\angle AOB$ is equal to 2 right angles.\n\n$\\therefore \\angle ACB = \\frac{1}{2}$ (2 right angles) = 1 right angle (Proved).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Corollary 4. The circle drawn with hypotenuse of a right-angled triangle as diameter passes through the vertices of the triangle.\n\nCorollary 5. The angle inscribed in the major arc of a circle is an acute angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n\nProve that any angle inscribed in a minor arc is obtuse.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Angle inscribed in a semi-circle",
+      "figure_no": "8.01",
+      "box_2d": [
+        378,
+        685,
+        485,
+        825
+      ],
+      "description": "A circle with diameter AB and center O, with point C on the circumference forming angle ACB.",
+      "reading_order_anchor": "Theorem 22. The angle inscribed in the semi- circle is a right angle."
+    }
+  ]
+}

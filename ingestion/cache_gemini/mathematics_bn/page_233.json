@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 233,
+  "pdf_page_no": 238,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমীকরণদ্বয়কে যথাক্রমে\n$$a_1x + b_1y + c_1 = 0$$\nএবং\n$$a_2x + b_2y + c_2 = 0$$\nএর সাথে তুলনা করে পাই,\n$$a_1 = 6, b_1 = -1, c_1 = -1$$\n$$a_2 = 3, b_2 = 2, c_2 = -13$$\nআড়গুণন পদ্ধতিতে পাই,\n$$\\frac{x}{b_1c_2 - b_2c_1} = \\frac{y}{c_1a_2 - c_2a_1} = \\frac{1}{a_1b_2 - a_2b_1}$$\nবা, $$\\frac{x}{(-1) \\times (-13) - 2 \\times (-1)} = \\frac{y}{(-1) \\times 3 - (-13) \\times 6} = \\frac{1}{6 \\times 2 - 3 \\times (-1)}$$\nবা, $$\\frac{x}{13 + 2} = \\frac{y}{-3 + 78} = \\frac{1}{12 + 3}$$\nবা, $$\\frac{x}{15} = \\frac{y}{75} = \\frac{1}{15}$$\nসুতরাং, $$\\frac{x}{15} = \\frac{1}{15}$$, বা, $$x = \\frac{15}{15} = 1$$\nআবার, $$\\frac{y}{75} = \\frac{1}{15}$$, বা, $$y = \\frac{75}{15} = 5$$\n$\\therefore$ সমাধান $$(x, y) = (1, 5)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫. আড়গুণন পদ্ধতিতে সমাধান কর:\n$$3x - 4y = 0$$\n$$2x - 3y = -1$$\nসমাধান: প্রদত্ত সমীকরণদ্বয়\n$$3x - 4y = 0$$\n$$2x - 3y = -1$$\nবা, \n$$3x - 4y + 0 = 0$$\n$$2x - 3y + 1 = 0$$\nআড়গুণন পদ্ধতিতে পাই,\n$$\\frac{x}{-4 \\times 1 - (-3) \\times 0} = \\frac{y}{0 \\times 2 - 1 \\times 3} = \\frac{1}{3 \\times (-3) - 2 \\times (-4)}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: আড়গুণন পদ্ধতির ছক",
+      "figure_no": "12.01",
+      "box_2d": [
+        458,
+        508,
+        669,
+        827
+      ],
+      "description": "আড়গুণন পদ্ধতির জন্য সহগ বিন্যাসের ছক",
+      "reading_order_anchor": "আড়গুণন পদ্ধতিতে পাই,"
+    }
+  ]
+}

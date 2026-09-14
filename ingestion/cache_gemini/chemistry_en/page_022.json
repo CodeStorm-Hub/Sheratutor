@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 22,
+  "pdf_page_no": 27,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Experiment 2\nAt room temperature, take some pure water in a beaker and add some liquid blue in it. Within a few moments, you will see that the water has turned blue. That means, the particles of blue solution or some liquid have diffused in the water. The temperature being the same, it has taken the liquid less time to diffuse in another liquid than solid $\\text{KMnO}_4$. That means, the rate of diffusion of liquid matter in another liquid is faster than in solid matter. The presence of heat will increase the rate. Just like solids and liquids, diffusion of gases takes place in the liquid medium. However, at a given temperature, the diffusion rate of gaseous substances is higher than that of solids and liquids in liquid mediums.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Experiment 3\nDiffusion of two gases.\nTake a glass tube with both faces open. Take two pieces of cottons. Soak a piece of cotton in concentrated hydrochloric acid ($\\text{HCl}$) solution and soak the other in ammonium hydroxide ($\\text{NH}_4\\text{OH}$) solution. Now close the glass tube fixing each of the cottons to a side of it. Here hydrogen chloride gas from $\\text{HCl}$ solution and ammonia gas from $\\text{NH}_4\\text{OH}$ solution will get diffused.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.03: Diffusion of Liquid solution in liquid.",
+      "figure_no": "2.03",
+      "box_2d": [
+        423,
+        255,
+        603,
+        740
+      ],
+      "description": "Three beakers showing the progression of liquid diffusion where liquid blue is added to water and gradually spreads throughout the liquid medium.",
+      "reading_order_anchor": "Experiment 2"
+    }
+  ]
+}

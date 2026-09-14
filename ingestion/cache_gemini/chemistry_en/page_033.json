@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 33,
+  "pdf_page_no": 38,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. What will happen to the particles when water vapor is condensed?\n\na. size will reduce\n\nb. will remain in movement\n\nc. will vibrate at the same position\n\nd. energy will evolve",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. Which of the following pictures is applicable for sublimation?",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. Heating curve of unknown solid matter Z tells us:\n\ni. melting point of Z is $154^\\circ\\text{C}$\n\nii. Z is volatile\n\niii. AB and CD curves indicate the boiling and melting lines of Z\n\nWhich of the below is correct :\n\na. i and ii\n\nb. ii and iii\n\nc. i and iii\n\nd. i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. Which of the followings has the highest rate of diffusion?\n\na. $\\text{CO}_2$\n\nb. $\\text{NH}_3$\n\nc. $\\text{HCl}$\n\nd. $\\text{H}_2\\text{SO}_4$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "6. Which of the followings can be sublimated?\n\na. Iodine\n\nb. Edible salt\n\nc. Copper sulfate\n\nd. Soda ash",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Illustrations for sublimation process options",
+      "figure_no": "2.01",
+      "box_2d": [
+        257,
+        156,
+        429,
+        611
+      ],
+      "description": "Four diagrams labeled a, b, c, and d showing phase changes of particles in solid and gaseous states.",
+      "reading_order_anchor": "3. Which of the following pictures is applicable for sublimation?"
+    },
+    {
+      "caption": "Fig 2.02: Heating curve of unknown substance Z",
+      "figure_no": "2.02",
+      "box_2d": [
+        499,
+        545,
+        743,
+        868
+      ],
+      "description": "A line graph of temperature versus time showing the heating curve of an unknown substance Z with labeled points A, B, C, D, F, G, H.",
+      "reading_order_anchor": "4. Heating curve of unknown solid matter Z tells us:"
+    }
+  ]
+}

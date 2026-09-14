@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 122,
+  "pdf_page_no": 127,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": "4.1",
+      "section_title": "Investigation 4.01",
+      "chunk_type": "theory",
+      "content_markdown": "### Investigation 4.01\n\n**Physical ability**\n\n**Objective:** To find out the physical ability of a student  \n**Instruments:** A clock and a ruler  \n**Procedure:**  \n1. A building which has stairs to the first or second floor.  \n2. Count the number of steps of the stairs and measure the height of each step. Multiply these two to find out the height of the first or second floor from the ground.  \n3. Measure your mass on a weight measuring machine.  \n4. Climb the stairs as fast as you can, measure the time needed using a clock.  \n5. In a similar way, measure mass of the other students in the class and collect information about the time needed for them to climb the stairs. Put the data in the following table.  \n6. Find out the physical ability of your friends and yourself.  \nHeight of the roof: $h = \\dots\\dots\\dots\\dots$  \nAcceleration due to gravity: $g = 9.8 \\text{ m/s}^2$",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": "4.1",
+      "section_title": "Investigation 4.01",
+      "chunk_type": "table",
+      "content_markdown": "| Name of the student | Mass $(m) \\text{ kg}$ | Time required to reach the roof $(t) \\text{ s}$ | $\\text{Power} = \\frac{mgh}{t} \\text{ W}$ | Average power |\n| --- | --- | --- | --- | --- |\n| | | | | |\n| | | | | |\n| | | | | |\n| | | | | |\n| | | | | |",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": "4.1",
+      "section_title": "Investigation 4.01",
+      "chunk_type": "theory",
+      "content_markdown": "Find out the mean physical ability of all the students and see whether your physical ability is more or less than that.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

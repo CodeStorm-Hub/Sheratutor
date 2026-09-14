@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 147,
+  "pdf_page_no": 152,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, ground $\text{Fe}$ acts as the catalyst. According to the balanced equation, the heat change during a reaction is called reaction heat. It is denoted by $\\Delta\\text{H}$. If heat is evolved during a reaction, its value is negative.\n\n$$\\text{N}_2\\text{ (g)} + 3\\text{H}_2\\text{ (g)} \\underset{450^\\circ\\text{C}-550^\\circ\\text{C}}{\\overset{\\text{Fe}}{200-250 \\text{ atm}}} 2\\text{NH}_3\\text{ (g)} \\quad ; \\quad \\Delta\\text{H} = -92 \\text{ kJ}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Endothermic Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "When heat is absorbed at the time of producing the products from the reactants, the reaction is called an endothermic reaction. 1 mole nitrogen and 1 mole oxygen react and produce 2 moles nitric oxide. When they do so, they absorb $180 \\text{ kJ}$ heat. This is an endothermic reaction.\n\n$$\\text{N}_2\\text{(g)} + \\text{O}_2\\text{(g)} + 180 \\text{ kJ} \\rightleftharpoons 2\\text{NO(g)}$$\n\nHere also, we can use the symbol of heat $\\Delta\\text{H}$. In endothermic reactions, the value of absorbed heat is positive.\n\n$$\\text{N}_2\\text{(g)} + \\text{O}_2\\text{(g)} \\rightleftharpoons 2\\text{NO(g)} \\quad ; \\quad \\Delta\\text{H} = + 180 \\text{ kJ}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.2.3",
+      "section_title": "Electron Transfer",
+      "chunk_type": "theory",
+      "content_markdown": "Depending on electron transfer, reactions can be divided into two types: redox reactions and non redox reactions.\n\n### Redox Reactions\n\nThe term Redox combines the initial part of Reduction, Red and the initial part of Oxidation, Ox. It means oxidation-reduction. In redox reactions, there occurs an electron transfer in the reaction. A reactant donates an electron and the other reactant receives that electron. That means, a redox reaction is divided in two parts. In one part, the donation of the electron takes place which is called oxidation half reaction. In the other half, the other reactant accepts the donated electron, which is called the reduction half reaction. The reactant which donates the electron in such a reaction is called reductant and the one which accepts the electron is called oxidant.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

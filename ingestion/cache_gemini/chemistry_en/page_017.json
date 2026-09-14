@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 17,
+  "pdf_page_no": 22,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "States of Matter",
+      "chunk_type": "theory",
+      "content_markdown": "Matter is a physical entity that has mass and occupies space. Chairs, tables, notebooks, pens, ice, water, air- are all matter. All matters may exist in three different states- solid, liquid and gaseous states. They have their own characteristics and properties in all three states. This chapter will focus on these issues.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Different states of matter (solid ice and liquid water)",
+      "figure_no": "2.01",
+      "box_2d": [
+        244,
+        108,
+        626,
+        895
+      ],
+      "description": "A glass containing liquid water and an ice cube, with additional ice cubes and water being poured into it, demonstrating solid and liquid states of matter.",
+      "reading_order_anchor": "States of Matter"
+    }
+  ]
+}

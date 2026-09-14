@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 240,
+  "pdf_page_no": 245,
+  "chapter_no": 8,
+  "chapter_title": "আলোর প্রতিফলন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. চিত্র 8.32",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) সমতল দর্পণ কী?\n(খ) দর্পণের পেছনে ধাতুর প্রলেপ লাগানো হয় কেন?\n(গ) চিত্র এঁকে দর্পণ থেকে $PQ$ বস্তুর প্রতিবিম্বের অবস্থান নির্ণয় করো।\n(ঘ) প্রতিবিম্ব গঠনের ক্ষেত্রে 1 এবং 2 নম্বর দর্পণের তুলনা করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. চিত্র 8.33",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) প্রতিবিম্ব কাকে বলে?\n(খ) দর্পণে লম্বভাবে আপতিত রশ্মি একই পথে ফিরে আসে কেন?\n(গ) চিত্রের আলোকে প্রতিফলন কোণের মান নির্ণয় করো।\n(ঘ) $PQ$ দর্পণে গঠিত প্রতিবিম্ব অবাস্তব—চিত্রসহ ব্যাখ্যা করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. একদল শিক্ষার্থী ব্যবহারিক ক্লাসে একটি পরীক্ষণের প্রথম পর্যায়ে একটি অবতল দর্পণের সামনে $2\\text{ cm}$ দৈর্ঘ্যের একটি কাঠি রাখায় পর্দায় এর $3.51$ গুণ বড় প্রতিবিম্ব দেখতে পেল। পরীক্ষণের দ্বিতীয় পর্যায়ে পর্দায় এর $6$ গুণ বড় প্রতিবিম্ব দেখতে পেল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) বিবর্ধন কী?\n(খ) ভিউ মিরর বা দেখার দর্পণ হিসেবে সমতল দর্পণ ব্যবহার করা হয় না কেন?\n(গ) পরীক্ষণের প্রথম পর্যায়ে কাঠিটির প্রতিবিম্বের দৈর্ঘ্য ও প্রকৃতি নির্ণয় করো।\n(ঘ) পরীক্ষণের দ্বিতীয় পর্যায়ে কী কী পরিবর্তন করা হয়েছিল?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 8.33",
+      "figure_no": "8.33",
+      "box_2d": [
+        274,
+        777,
+        497,
+        882
+      ],
+      "description": "একটি সরলরেখা বা দর্পণ PQ এর ওপর একটি রশ্মি ৬০ ডিগ্রি কোণে আপতিত হওয়ার চিত্র।",
+      "reading_order_anchor": "2. চিত্র 8.33"
+    }
+  ]
+}

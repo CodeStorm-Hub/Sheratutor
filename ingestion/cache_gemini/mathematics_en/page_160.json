@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 160,
+  "pdf_page_no": 165,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "2) Cut $RQ = p$ from any ray $RX$. Draw $\\frac{1}{2}\\angle B = \\angle ERX$ at the point $R$ and draw $\\frac{1}{2}\\angle C = \\angle FQR$ at the point $Q$. $ER$ and $FQ$ intersect each other at the point $A$. Now draw $\\angle RAB = \\frac{1}{2}\\angle B$ and $\\angle QAC = \\frac{1}{2}\\angle C$ at the point $A$ where $\\angle ERX$ of the side $ER$ and $\\angle FQR$ of the side $FQ$ lie, respectively. The line segment $AB$ and $AC$ intersect at the point $B$ and $C$ of the line $RQ$.\n\n$\\therefore ABC$ is the required triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "3) Given sides of rhombus is $\\frac{1}{3}p$ and an angle is $\\angle B = 60^\\circ$. Construct the rhombus.\n\nCut $BA = \\frac{1}{3}p$ from any ray $BX$. Draw $\\angle ABE = 60^\\circ$ at the point $B$. Take $BC = AB$ from $BE$. centring the point $A$ and $C$, draw two arcs of equal radius with $\\frac{1}{3}p$ in the interior of $\\angle ABC$. The arcs intersects each other at the point $D$. Join $A, D; C, D$.\n\n$\\therefore ABCD$ is the required rhombus.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of triangle",
+      "figure_no": "7.01",
+      "box_2d": [
+        90,
+        245,
+        275,
+        785
+      ],
+      "description": "Geometric construction showing the intersection of rays to form triangle ABC.",
+      "reading_order_anchor": "2) Cut RQ = p from any ray RX."
+    },
+    {
+      "caption": "Fig 7.02: Construction of rhombus",
+      "figure_no": "7.02",
+      "box_2d": [
+        585,
+        205,
+        950,
+        870
+      ],
+      "description": "Geometric construction showing the steps to draw a rhombus with a 60 degree angle.",
+      "reading_order_anchor": "3) Given sides of rhombus is 1/3p and an angle is ∠B = 60°."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 56,
+  "pdf_page_no": 61,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": "3.10.4",
+      "section_title": "Impact of Radioactive Isotope",
+      "chunk_type": "theory",
+      "content_markdown": "It is true that radioactive isotopes are there for a good number of benefits. But at the same time, they have the potential to harm us too. The alpha, beta and gamma rays emitted from such isotopes can bring about genetic changes to cells which may cause cancer. The atom bombs used in Hiroshima and Nagasaki of Japan during the WWII killed lacs of people. The Chernobyl accident of 1986 in Russia has killed numerous people and has done harm to the adjacent environment.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.05: Rooppur Nuclear Power Plant.",
+      "figure_no": "3.05",
+      "box_2d": [
+        133,
+        193,
+        408,
+        810
+      ],
+      "description": "An architectural rendering of the Rooppur Nuclear Power Plant showing cooling towers, reactor buildings, and surrounding infrastructure.",
+      "reading_order_anchor": "3.10.4 Impact of Radioactive Isotope"
+    }
+  ]
+}

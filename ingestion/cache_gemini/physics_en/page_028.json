@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 28,
+  "pdf_page_no": 33,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "theory",
+      "content_markdown": "## Exercise",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "General questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### General questions\n\n1. Write a report on why we may study physics.\n2. Wonderful advancement took place in the twentieth century- support the statement with examples.\n3. a) What do you mean by a quantity?\n   b) Write down the difference between fundamental and derived quantities.\n4. a) In SI unit which quantities are considered as fundamental quantities?\n   b) Write down the names of the units of these quantities.\n5. What do you mean by dimension?\n6. Arguments, experimentation and observation- among these three methods which one would you prefer as the most important for science research.\n7. Among the seven SI units, one is little bit different from the others. Can you say which one and why?\n8. If you and everything around you suddenly becomes half in size, will you be able to understand the changes?\n9. Will you be able to measure the radius of the earth?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Mathematical questions\n\n1. Express the numbers given below using the prefixes in Table 1.05\n   (a) $10^{12}$ Flops\n   (b) $10^{9}$ bytes\n   (c) $10^{-3}$ gm\n   (d) $10^{-18}$ m\n2. In one year how many seconds are there? (for fun express in terms of $\\pi$)\n3. How many meters are there in a light year?\n4. When measuring the length of a bar with a vernier scale, it looks as in Fig 1.12. What is the length of the bar?\n5. The dimension of energy is $ML^{2}T^{-2}$, in SI units what is its unit?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.12: Reading of a vernier scale",
+      "figure_no": "1.12",
+      "box_2d": [
+        786,
+        508,
+        874,
+        888
+      ],
+      "description": "Illustration of a vernier scale measuring the length of a bar, showing the main scale and the vernier scale alignment.",
+      "reading_order_anchor": "Mathematical questions"
+    }
+  ]
+}

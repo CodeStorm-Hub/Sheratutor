@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 213,
+  "pdf_page_no": 218,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$বা, \\frac{a-c}{b+c} = -\\frac{a-c}{d+a}$$\n$$বা, \\frac{a-c}{b+c} + \\frac{a-c}{d+a} = 0$$\n$$বা, (a-c)\\left(\\frac{1}{b+c} + \\frac{1}{d+a}\\right) = 0$$\n$$বা, (a-c)\\frac{(d+a+b+c)}{(b+c)(d+a)} = 0$$\n$$বা, (a-c)(d+a+b+c) = 0$$\n$$বা, a-c = 0$$ অথবা $$d+a+b+c = 0$$\n$$\\therefore c = a$$ অথবা $$a+b+c+d = 0$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৯.** যদি $$\\frac{x}{y+z} = \\frac{y}{z+x} = \\frac{z}{x+y}$$ এবং $$x, y, z$$ সকলে পরস্পর সমান না হয়, তবে প্রমাণ কর যে, প্রতিটি অনুপাতের মান $$-1$$ অথবা $$\\frac{1}{2}$$ এর সমান হবে।\n\n**সমাধান:** মনে করি, $$\\frac{x}{y+z} = \\frac{y}{z+x} = \\frac{z}{x+y} = k$$\n$$\\therefore x = k(y+z) \\dots (1)$$\n$$y = k(z+x) \\dots (2)$$\n$$z = k(x+y) \\dots (3)$$\n\nসমীকরণ (1) থেকে (2) বিয়োগ করে পাই,\n$$x - y = k(y - x)$$ বা, $$k(y - x) = -(y - x)$$\n$$\\therefore k = -1$$\n\nআবার, সমীকরণ (1), (2) ও (3) যোগ করে পাই,\n$$x + y + z = k(y + z + z + x + x + y) = 2k(x + y + z)$$\n$$বা, k = \\frac{(x + y + z)}{2(x + y + z)}$$\n$$\\therefore k = \\frac{1}{2}$$\n$$\\therefore$$ প্রতিটি অনুপাতের মান $$-1$$ অথবা $$\\frac{1}{2}$$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১০.** যদি $$ax = by = cz$$ হয়, তবে দেখাও যে, $$\\frac{x^2}{yz} + \\frac{y^2}{zx} + \\frac{z^2}{xy} = \\frac{bc}{a^2} + \\frac{ca}{b^2} + \\frac{ab}{c^2}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

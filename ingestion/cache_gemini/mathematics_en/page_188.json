@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 188,
+  "pdf_page_no": 193,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In our day to day life we make use of triangles, and in particular, right-angled triangles. Many different examples from our surroundings can be drawn where right triangles can be imagined to be formed. In ancient times, with the help of geometry men learnt the technique of determining the width of a river by standing on its bank. Without climbing the tree they knew how to measure the height of the tree accurately by comparing its shadow with that of a stick. In all the situations given above, the distances or heights can be found by using some mathematical technique which come under a special branch of mathematics called Trigonometry. The word ‘Trigonometry’ is derived from Greek words ‘tri’ (means three), ‘gon’ (means edge) and ‘metron’ (means measure). In fact, trigonometry is the study of relationship between the sides and angles of a triangle. There are evidence of using the Trigonometry in Egyptian and Babilonian civilization. It is believed that the Egyptians made its extensive use in land survey and engineering works. Early astrologers used it to determine the distances from the Earth to the farthest planets and stars. At present trigonometry is in use in all branches of mathematics. There are wide used of trigonometry for the solution of triangle related problems and in navigation etc. Now a days trigonometry is in wide use in Astronomy and Calculus.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of the chapter, the students will be able to —\n\n> describe the trigonometric ratios of acute angles.\n\n> determine the mutual relations among the trigonometric ratios of acute angle.\n\n> solve and prove the mathematical problems justifying the trigonometric ratios of acute angle.\n\n> determine and apply trigonometric ratios of acute angles $30^{\\circ}, 45^{\\circ}, 60^{\\circ}$ geometrically.\n\n> determine and apply the value of meaningful trigonometric ratios of the",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

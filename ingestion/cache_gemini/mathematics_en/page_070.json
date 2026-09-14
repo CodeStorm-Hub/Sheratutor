@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 70,
+  "pdf_page_no": 75,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Since the number of members cannot be negative, hence the value of $x$ as $-120$ is not acceptable.\n\nTherefore, number of members of the association is 125",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 35. Rafiq can do a work in 10 days and Shafiq can do that work in 15 days. In how many days do they together finish the work?\n\nSolution: Let, they can finish the work in $d$ days.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Name | Days to complete | Part done in 1 day | Part done in d day |\n| :--- | :--- | :--- | :--- |\n| Rafiq | 10 | $\\frac{1}{10}$ | $\\frac{d}{10}$ |\n| Shafiq | 15 | $\\frac{1}{15}$ | $\\frac{d}{15}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "As per question, $\\frac{d}{10} + \\frac{d}{15} = 1$ or, $d \\left( \\frac{1}{10} + \\frac{1}{15} \\right) = 1$\n\nor, $d \\left( \\frac{3 + 2}{30} \\right) = 1$ or, $\\frac{5d}{30} = 1$\n\nor, $d = \\frac{30}{5} = 6$\n\nTherefore, they together can finish the work in 6 days.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 36. A boatman can row $x$ km in time $t_1$ hour against the current. To cover that distance along the current he takes $t_2$ hour. How much is the speed of the boat and the current?\n\nSolution: Let the speed of the boat in still water be $u$ km per hour and that of the current be $v$ km per hour.\n\nThen, along the current, the effective speed of boat is $(u + v)$ km per hour and against the current, the effective speed of boat is $(u - v)$ km per hour.\n\nWe know, $\\text{speed} = \\frac{\\text{distance traversed}}{\\text{time}}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

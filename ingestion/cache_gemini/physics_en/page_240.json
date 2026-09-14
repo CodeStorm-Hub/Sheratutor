@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 240,
+  "pdf_page_no": 245,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. How many types of reflections are there?\n(a) 4\n(b) 3\n(c) 2\n(d) 1\n\n3. Image produced in a plane mirror -\n(i) equal to object in size\n(ii) can be formed on a screen\n(iii) formed at a distance equal to the distance of the object from the mirror.\n\nWhich one of the following is correct?\n(a) i and ii\n(b) ii and iii\n(c) i and iii\n(d) i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Answer question number 4 and 5 in light of the above figure.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. What will be the size of object BO?\n(a) magnified\n(b) diminished\n(c) extremely magnified\n(d) extremely diminished",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. What will be the position of the object BO?\n(a) between the focus and the pole\n(b) at the principal focus\n(c) at the centre of curvature\n(d) between the centre of curvature and infinity",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Creative questions",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure: 8.31",
+      "figure_no": "8.31",
+      "box_2d": [
+        335,
+        616,
+        505,
+        874
+      ],
+      "description": "Ray diagram showing a concave mirror with pole, focus F, centre of curvature C, and an object O pointing upwards.",
+      "reading_order_anchor": "Answer question number 4 and 5 in light of the above figure."
+    },
+    {
+      "caption": "Figure 8.32",
+      "figure_no": "8.32",
+      "box_2d": [
+        730,
+        151,
+        887,
+        629
+      ],
+      "description": "Creative question stimulus diagram showing two setups (1 and 2) with objects and a concave mirror.",
+      "reading_order_anchor": "Creative questions"
+    }
+  ]
+}

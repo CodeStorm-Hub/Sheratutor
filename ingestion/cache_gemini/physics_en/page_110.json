@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 110,
+  "pdf_page_no": 115,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": "4.4",
+      "section_title": "Sources of energy",
+      "chunk_type": "theory",
+      "content_markdown": "The history of world civilization can be simply named as the history of utilization of energy. It can be generally said, that a simple means to understand how developed a country is to calculate the use of electrical energy per person in that country. Different forms of energy of the world are shown in the figure 4.03.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.4.1",
+      "section_title": "Non-renewable Energy",
+      "chunk_type": "theory",
+      "content_markdown": "As the history of civilization on earth is actually the history of energy utilization, we see there is a hunger for energy in every country and every state in the world. Everyone is searching for energy and using it in every possible manner.\n\n**Fuel Energy (Oil, gas and coal):** At this moment, the biggest sources of energy of the world are oil, gas or coal. Oil, gas or coal, are all fossil fuels, that is, being buried under the ground from millions of years, are transformed into this form due to prolonged period of heat and pressure. Coal, oil or gas are to be extracted from beneath the ground. The oil that is extracted from the ground (Crude oil) is very dense at the primary stage, which are converted into petrol, diesel, or kerosene by refining in refineries and some other usable substances are found as well. The gas that comes out from beneath the ground is mainly methane $CH_4$, water vapors and other gases can be mixed with it and these are to be separated. The gas of our country Bangladesh is comparatively much clearer and suitable for direct use.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 4.03: Different sources of energy",
+      "figure_no": "4.03",
+      "box_2d": [
+        268,
+        102,
+        483,
+        896
+      ],
+      "description": "Flowchart showing the categorization of sources of energy into non-renewable energy (oil, gas, coal, nuclear) and renewable energy (hydroelectricity, biomass, solar energy, wind energy, geothermal).",
+      "reading_order_anchor": "4.4 Sources of energy"
+    }
+  ]
+}

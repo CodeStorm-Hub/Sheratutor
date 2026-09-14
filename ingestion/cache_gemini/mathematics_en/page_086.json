@@ -1,0 +1,163 @@
+{
+  "printed_page_no": 86,
+  "pdf_page_no": 91,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Prove (9 - 15):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. $\\frac{4^n - 1}{2^n - 1} = 2^n + 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. $\\frac{2^{2p+1} \\cdot 3^{2p+q} \\cdot 5^{p+q} \\cdot 6^p}{3^{p-2} \\cdot 6^{2p+2} \\cdot 10^p \\cdot 15^q} = \\frac{1}{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. $\\left(\\frac{a^l}{a^m}\\right)^n \\cdot \\left(\\frac{a^m}{a^n}\\right)^l \\cdot \\left(\\frac{a^n}{a^l}\\right)^m = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. $\\frac{a^{p+q}}{a^{2r}} \\times \\frac{a^{q+r}}{a^{2p}} \\times \\frac{a^{r+p}}{a^{2q}} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. $\\left(\\frac{x^a}{x^b}\\right)^{\\frac{1}{ab}} \\cdot \\left(\\frac{x^b}{x^c}\\right)^{\\frac{1}{bc}} \\cdot \\left(\\frac{x^c}{x^a}\\right)^{\\frac{1}{ca}} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. $\\left(\\frac{x^a}{x^b}\\right)^{a+b} \\cdot \\left(\\frac{x^b}{x^c}\\right)^{b+c} \\cdot \\left(\\frac{x^c}{x^a}\\right)^{c+a} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. $\\left(\\frac{x^p}{x^q}\\right)^{p+q-r} \\cdot \\left(\\frac{x^q}{x^r}\\right)^{q+r-p} \\cdot \\left(\\frac{x^r}{x^p}\\right)^{r+p-q} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. If $a^x = b$, $b^y = c$ and $c^z = a$, then show that, $xyz = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solve (17 - 20):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. $4^x = 8$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "18. $2^{2x+1} = 128$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "19. $(\\sqrt{3})^{x+1} = (\\sqrt[3]{3})^{2x-1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "20. $2^x + 2^{1-x} = 3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "21. $P = x^a$, $Q = x^b$ and $R = x^c$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Find the values of $P^{bc} \\cdot Q^{-ca}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Find the values of $\\left(\\frac{P}{Q}\\right)^{a+b} \\times \\left(\\frac{Q}{R}\\right)^{b+c} \\div 2(RP)^{a-c}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Show that, $\\left(\\frac{P}{Q}\\right)^{a^2+ab+b^2} \\times \\left(\\frac{Q}{R}\\right)^{b^2+bc+c^2} \\times \\left(\\frac{R}{P}\\right)^{c^2+ca+a^2} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "22. $X = (2a^{-1} + 3b^{-1})^{-1}$, $Y = \\sqrt[pq]{\\frac{x^p}{x^q}} \\times \\sqrt[qr]{\\frac{x^q}{x^r}} \\times \\sqrt[rp]{\\frac{x^r}{x^p}}$ and $Z = \\frac{5^{m+1}}{(5^m)^{m-1}} \\div \\frac{25^{m+1}}{(5^{m-1})^{m+1}}$, where $x, p, q, r > 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Find the value of $X$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Show that, $Y + \\sqrt[3]{81} = 4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Show that, $Y \\div Z = 25$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

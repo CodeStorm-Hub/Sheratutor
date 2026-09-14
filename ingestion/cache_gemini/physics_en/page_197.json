@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 197,
+  "pdf_page_no": 202,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "travels from one medium to another then its wavelength changes. Therefore, when waves propagate through different medium, its velocity or wavelength changes, but frequency or time period never changes.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** In figure 7.06 a wave is shown. Among the wave's amplitude, wavelength, time period, frequency and velocity which magnitude can be determined from the figure? Determine them.\n\n**Answer:** From the information that is given in the figure, only amplitude ($0.1\\text{ m}$) and wavelength ($2\\text{ m}$) of the wave can be determined. It is not possible to determine time period, frequency or velocity from the information that are given in the figure! The wave shown above is the condition of the wave at a particular time. Here there is no information how the position changes with time.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** In figure 7.07 another wave is shown. Among the wave's amplitude, wavelength, time period, frequency and velocity which magnitude can be determined from this figure? Determine them.\n\nThe amplitude ($0.2\\text{ m}$) and time period ($2\\text{ s}$) of this wave can be determined; from this figure other information cannot be determined. How the wave changes with time at a particular position is shown in the figure. So, it is not possible to determine the wavelength.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.06 : A wave with respect to position",
+      "figure_no": "7.06",
+      "box_2d": [
+        233,
+        545,
+        393,
+        876
+      ],
+      "description": "A graph showing displacement in meters versus position in meters for a wave.",
+      "reading_order_anchor": "Question: In figure 7.06 a wave is shown."
+    },
+    {
+      "caption": "Figure 7.07: A wave with respect to time",
+      "figure_no": "7.07",
+      "box_2d": [
+        657,
+        126,
+        835,
+        521
+      ],
+      "description": "A graph showing displacement in meters versus time in seconds for a wave.",
+      "reading_order_anchor": "Question: In figure 7.07 another wave is shown."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 35,
+  "pdf_page_no": 40,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Chapter Three\n\nStructure of Matter",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Have you ever thought what the things around us are made of? What is our body made of ? Yes, like us, the ancient philosophers also used to think of these questions. The ancient Greek scholars used to think, there were four basic elements- soil, water, air and fire. All other things according to them were made of these four elements. Greek philosopher Democritus was the first to say that all substances have a unit which is very small and indivisible. He called it the Atom. This however did not get any recognition as it lacked any scientific proof. After 2500 years John Dalton, the British scientist, gave a theory on atoms in 1803 which was based on data collected from various experiments. He said, every matter of the universe is made of small, indivisible particles. He honoured the Greek philosopher by naming these particles Atom. Later on, it was proved that atoms",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.01: Electronic configuration in different energy level of hydrogen.",
+      "figure_no": "3.01",
+      "box_2d": [
+        180,
+        124,
+        561,
+        874
+      ],
+      "description": "3D atomic model illustration showing orbiting paths around a central nucleus representing electronic configuration in different energy levels of hydrogen.",
+      "reading_order_anchor": "Structure of Matter"
+    }
+  ]
+}

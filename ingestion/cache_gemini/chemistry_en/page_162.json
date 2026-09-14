@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 162,
+  "pdf_page_no": 167,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The above experiment tells you all test tubes do not give the same amount of product at a certain time",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.5.1",
+      "section_title": "Le Chatelier's Principle",
+      "chunk_type": "theory",
+      "content_markdown": "In some reactions products react and turn into reactants again. When the reactants react and produced a new substance that is called a forward reaction. When the products again react and revert back to reactants they are called backward reactions. At the start of the reaction, the forward reaction has a higher rate. It decreases gradually with the progress of time. Again, at the start, the rate of the backward reaction remains slow but it increases gradually with the progress of time. At a stage, both the rates become equal. This state is known as equilibrium of the reversible reaction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Both forward and backward reactions continue in equilibrium, the amount of reactants that have already turned into products in the forward reaction, are equal to the reactants that have been produced in the backward reaction at this state. Therefore, it appears that the reaction has stopped but in reality it has not. However, in equilibrium, if we change the parameters of the reaction such as temperature, pressure and",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.05: Chemical equilibrium.",
+      "figure_no": "7.05",
+      "box_2d": [
+        441,
+        307,
+        742,
+        712
+      ],
+      "description": "Two line graphs showing the rate of reaction and concentration versus time for a chemical equilibrium system.",
+      "reading_order_anchor": "7.5.1 Le Chatelier's Principle"
+    }
+  ]
+}

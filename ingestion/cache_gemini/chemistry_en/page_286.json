@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 286,
+  "pdf_page_no": 291,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative Question",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Creative Question\n1. In the months of March--June huge amount of potato rots in Bangladesh due to lack of preservation. Ethanol can be prepared from the potato by the following reaction.\n\nStarch $\\xrightarrow[\\text{Water}]{\\text{Enzyme (diastase and maltase)}}$ Glucose $\\xrightarrow{\\text{Enzyme (zymase)}}$ Ethanol",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is the main constituent of petroleum?\nb. Why are alkenes more reactive than alkanes? Explain.\nc. Give a description of the preparation of methane from potato.\nd. Analysis of the possibilities of using excess potato as an alternate to fossil fuel.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. A gas is converted to different products by the reactions i to iii successively.\n\n(i) $2CH_4 \\xrightarrow{\\quad\\quad\\quad\\quad\\quad\\quad} HC\\equiv CH + H_2$\n(ii) $HC\\equiv CH + HCl \\xrightarrow{\\quad\\quad\\quad\\quad\\quad\\quad} CH_2=CHCl$\n(iii) $nCH_2=CHCl \\xrightarrow[\\text{Polymerization}]{\\quad\\quad\\quad\\quad\\quad\\quad} -(CH_2-CHCl)_n$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is a hydrocarbon?\nb. Why is benzene an aromatic hydrocarbon?\nc. What type of reaction is number ii ? Explain\nd. Analyze the possibilities of diversification of uses of the first reactant gas in the stem.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. \n\n$X$ + $NaOH$ $\\xrightarrow{\\quad\\quad\\quad\\quad\\quad\\quad}$ $CH_3COONa$ + $H_2O$\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sodium hydroxide &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sodium ethanoate &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;water",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is an aromatic hydrocarbon?\nb. How is ethyne prepared from calcium carbide? Write with the reaction\nc. Complete the reaction in the stem.\nd. Is the $X$ compound an acid? Analyze.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

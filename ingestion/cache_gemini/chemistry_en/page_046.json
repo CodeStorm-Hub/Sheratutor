@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 46,
+  "pdf_page_no": 51,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "For energy level K, $n = 1$, so, the highest number of electrons in K is $2n^2 = (2 \\times 1^2) = 2$.\n\nFor energy level L, $n = 2$, so, the highest number of electrons in L is $2n^2 = (2 \\times 2^2) = 8$.\n\nFor energy level M, $n = 3$, so, the highest number of electrons in M is $2n^2 = (2 \\times 3^2) = 18$.\n\nFor energy level N, $n = 4$, so, the highest number of electrons in N is $2n^2 = (2 \\times 4^2) = 32$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Table 3.06: Electron Configuration of Elements [H(1) - Zn(30)]",
+      "chunk_type": "table",
+      "content_markdown": "Table 3.06: Electron Configuration of Elements [H(1) -- Zn(30)].\n\n| Atomic Number | Element | K | L | M | N | Atomic Number | Element | K | L | M | N |\n|---|---|---|---|---|---|---|---|---|---|---|---|\n| 1 | H | 1 | | | | 16 | S | 2 | 8 | 6 | |\n| 2 | He | 2 | | | | 17 | Cl | 2 | 8 | 7 | |\n| 3 | Li | 2 | 1 | | | 18 | Ar | 2 | 8 | 8 | |\n| 4 | Be | 2 | 2 | | | 19 | K | 2 | 8 | 8 | 1 |\n| 5 | B | 2 | 3 | | | 20 | Ca | 2 | 8 | 8 | 2 |\n| 6 | C | 2 | 4 | | | 21 | Sc | 2 | 8 | 9 | 2 |\n| 7 | N | 2 | 5 | | | 22 | Ti | 2 | 8 | 10 | 2 |\n| 8 | O | 2 | 6 | | | 23 | V | 2 | 8 | 11 | 2 |\n| 9 | F | 2 | 7 | | | 24 | Cr | 2 | 8 | 13 | 1 |\n| 10 | Ne | 2 | 8 | | | 25 | Mn | 2 | 8 | 13 | 2 |\n| 11 | Na | 2 | 8 | 1 | | 26 | Fe | 2 | 8 | 14 | 2 |\n| 12 | Mg | 2 | 8 | 2 | | 27 | Co | 2 | 8 | 15 | 2 |\n| 13 | Al | 2 | 8 | 3 | | 28 | Ni | 2 | 8 | 16 | 2 |\n| 14 | Si | 2 | 8 | 4 | | 29 | Cu | 2 | 8 | 18 | 1 |\n| 15 | P | 2 | 8 | 5 | | 30 | Zn | 2 | 8 | 18 | 2 |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

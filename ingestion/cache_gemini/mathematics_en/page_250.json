@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 250,
+  "pdf_page_no": 255,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Subtracting equation (4) from equation (3) we get,\n\n$$(a_1b_2 - a_2b_1)x + b_2c_1 - b_1c_2 = 0$$\n\nor, $$(a_1b_2 - a_2b_1)x = b_1c_2 - b_2c_1$$\n\nor, $$\\frac{x}{b_1c_2 - b_2c_1} = \\frac{1}{a_1b_2 - a_2b_1} \\dots (5)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again, multiplying equation (1) by $$a_2$$ and equation (2) by $$a_1$$ we get,\n\n$$a_1a_2x + a_2b_1y + c_1a_2 = 0 \\dots (6)$$\n\n$$a_1a_2x + a_1b_2y + c_2a_1 = 0 \\dots (7)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Subtracting equation (7) from equation (6) we get,\n\n$$(a_2b_1 - a_1b_2)y + c_1a_2 - c_2a_1 = 0$$\n\nor, $$-(a_1b_2 - a_2b_1)y = -(c_1a_2 - c_2a_1)$$\n\nor, $$\\frac{y}{c_1a_2 - c_2a_1} = \\frac{1}{a_1b_2 - a_2b_1} \\dots (8)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "From (5) and (8) we get,\n\n$$\\boxed{\\frac{x}{b_1c_2 - b_2c_1} = \\frac{y}{c_1a_2 - c_2a_1} = \\frac{1}{a_1b_2 - a_2b_1}}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "From such relation between $$x$$ and $$y$$, the technique of finding their values is called the method of cross-multiplication.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "From the above relation between $$x$$ and $$y$$ we get,\n\n$$\\frac{x}{b_1c_2 - b_2c_1} = \\frac{1}{a_1b_2 - a_2b_1}$$, or, $$x = \\frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}$$\n\nAgain, $$\\frac{y}{c_1a_2 - c_2a_1} = \\frac{1}{a_1b_2 - a_2b_1}$$, or, $$y = \\frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1}$$\n\n$$\\therefore$$ The solution of the given equations: $$(x, y) = \\left( \\frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}, \\frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1} \\right)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

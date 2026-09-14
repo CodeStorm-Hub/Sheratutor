@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 254,
+  "pdf_page_no": 259,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": "9.3.1",
+      "section_title": "Optical fiber",
+      "chunk_type": "theory",
+      "content_markdown": "Electric wire is replaced by thin glass fiber for communication of the new world. In the past, information was sent with electric signals; now information is sent with light signals. In a free state light goes in straight line, but in an optical fiber the light is trapped so it is possible to turn it in any direction by rotating on any side.\n\nAn optical fiber is a very thin fiber of glass. The inner part of it is called the core and the outer part is called clad. Although the two are made of same glass, the refractive index of the inner part (core) is greater than that of the outer part. For this reason light can be taken very long distances by trapping it in optical fibers through total internal reflections (Figure 9.10). Light can be taken hundreds of kilometers through optical fibers, because the absorption of light in optical fibers is very low. Absorption would have been greater if the visible light was there so infrared rays of long wavelength are used in optical fibers. How optical fibers are used in a process called endoscopy of medical science is described in the last chapter.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Question: If the refractive index of the core in an optical fiber is $1.50$ and the refractive index of the clad is $1.45$, (Figure 9.11) what is the angle of incidence of light for total internal reflection to occur?\n\nAnswer: $\\theta_c = \\sin^{-1}\\left(\\frac{n_1}{n_2}\\right)$\n\nHere\n$n_1 = 1.45$ and $n_2 = 1.50$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.10: Light can pass through optical fiber by total internal reflection.",
+      "figure_no": "9.10",
+      "box_2d": [
+        133,
+        563,
+        248,
+        866
+      ],
+      "description": "Diagram illustrating light rays undergoing total internal reflection inside an optical fiber.",
+      "reading_order_anchor": "9.3.1 Optical fiber"
+    },
+    {
+      "caption": "Figure 9.11: Total internal reflection occurs from core to clad in optical fiber",
+      "figure_no": "9.11",
+      "box_2d": [
+        672,
+        549,
+        792,
+        878
+      ],
+      "description": "Schematic diagram showing refraction and total internal reflection of light at the boundary between the core and clad of an optical fiber.",
+      "reading_order_anchor": "Example"
+    }
+  ]
+}

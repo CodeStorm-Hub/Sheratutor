@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 113,
+  "pdf_page_no": 118,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:** Solve by forming equations:\n1) If a natural number is added to its square, the sum will be equal to nine times of exactly its next natural number. What is the number?\n2) Length of a perpendicular drawn from the centre of a circle of radius $10$ cm. to a chord is less by $2$ cm, than the semi-chord. Find the length of the chord by drawing a probable picture.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 15.** In an examination of class IX of a school, total marks of $x$ students obtained in mathematics is $1950$. If at the same examination, marks of a new student in mathematics is $34$ and it is added to the former total marks, the average of the marks become less by $1$.\n\n1) Write down the average of the obtained marks of all students including the new student and separately $x$ students in terms of $x$.\n2) By forming equation from the given conditions, show that, $x^2 + 35x - 1950 = 0$\n3) By finding the value of $x$, find the average of the marks in the two cases",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Solution:**\n\n1) Average of the marks obtained by $x$ students $= \\frac{1950}{x}$\n\nAverage of the marks obtained by $(x + 1)$ students including the new student\n$= \\frac{1950 + 34}{x + 1} = \\frac{1984}{x + 1}$\n\n2) By the question, $\\frac{1950}{x} = \\frac{1984}{x + 1} + 1$\n\nor, $\\frac{1950}{x} - \\frac{1984}{x + 1} = 1$ [by transposition]\n\nor, $\\frac{1950x + 1950 - 1984x}{x(x + 1)} = 1$\n\nor, $x^2 + x = 1950x - 1984x + 1950$ [by cross-multiplication]\n\nor, $x^2 + x = 1950 - 34x$\n\n$\\therefore x^2 + 35x - 1950 = 0$ [showed]\n\n3) $x^2 + 35x - 1950 = 0$\n\nor, $x^2 + 65x - 30x - 1950 = 0$\n\nor, $x(x + 65) - 30(x + 65) = 0$\n\nor, $(x + 65)(x - 30) = 0$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 209,
+  "pdf_page_no": 214,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "mcq",
+      "content_markdown": "4. What will be the maximum height of water to hear the echo?\n(a) $13.40\\text{ cm}$ \n(b) $13.40\\text{ m}$\n(c) $3.40\\text{ m}$ \n(d) $3.40\\text{ cm}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "mcq",
+      "content_markdown": "5. How much time is required to hear the echo in case of the given figure?\n(a) $0.10\\text{ s}$ \n(b) $0.12\\text{ s}$\n(c) $0.14\\text{ s}$ \n(d) $0.18\\text{ s}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "theory",
+      "content_markdown": "Creative questions",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Rafsan is taking his test examination of class ten. His physics exam is on the next day. There is a marriage ceremony in their neighboring house. The music was played loudly there till 2 am at night. This loud music hampers his studies very much. His father is a patient of high blood pressure. It is also uncomfortable for him.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is sound pollution?\n(b) Explain the causes of sound pollution.\n(c) What troubles may Rafsan's father face due to sound pollution? Write down the effects of sound pollution on public health.\n(d) What measures can be taken to prevent sound pollution?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Using the information given below and based on Figure 7.17 answer the following questions.\nFrequency of sound = $1200\\text{ Hz}$\nAir temperature = $30^{\\circ}\\text{C}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is periodic motion?\n(b) Why is water wave a transverse wave? Explain.\n(c) Find the wavelength of sound.\n(d) Is it possible to hear echo at position S? Verify the mathematical logic.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.17",
+      "figure_no": "7.17",
+      "box_2d": [
+        678,
+        577,
+        840,
+        897
+      ],
+      "description": "Schematic diagram showing a sound source S at a distance of 18 m from a brick wall, with sound frequency 1200 Hz and air temperature 30 degrees Celsius.",
+      "reading_order_anchor": "2. Using the information given below and based on Figure 7.17"
+    }
+  ]
+}

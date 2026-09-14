@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 293,
+  "pdf_page_no": 298,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Millions of amperes of electric current can flow during a thunderbolt and for this flow of current, the temperature of the air can rise up to 20-30 thousand degree Celsius which is even more than the temperature of the sun!\n\nFor this temperature we see a bluish white sparkling in the sky. Another thing occurs due to this temperature; the air expands to a great extent and moves outside, and in the very next moment air from the outside fills in that blank space created. This whole thing occurs faster than the speed of sound and an incredibly loud noise is created. When the speed of air exceeds that of sound, it is called a shockwave. The sound of a thunderbolt is a kind of shockwave. Although the flashing of light and sound are created at the same time, we see the light first, since the speed of light is so much that it reaches us within the next moment. The speed of sound is $330\\text{ m/s}$ which means it takes $3\\text{ s}$ for it to travel one kilometer. That is why; we can guess the distance at which the lightning is created by calculating how many seconds later we hear the sound of thunder. Roughly 3 seconds for a kilometer.\n\nSince electric current flows down from the clouds during a lightning, it usually strikes tall structures. So to protect tall buildings from thunderbolts, more than one pointy metal needle is set up on the roof. This current is then transferred to the ground by some heavy conducting wires. The science behind this is very simple. We have seen earlier that when a charged object is brought near an uncharged body, the uncharged body becomes induced by opposite charge. So while the possibility of a thunderbolt occurs, the pointy needles become positively charged and an intense electric field is created due to pointy needles. The surrounding air and water vapors become ionized due to this electric field and these rises above and neutralizes the negative charges of clouds and reduces the possibility of being a thunderbolt. When thunder needles are kept on the roof of a tall building they often absorb the thunderbolt and the bar carries the huge amount of charges directly to the ground. So the current coming down from the sky doesn't go to the ground uncontrolled; rather it goes to the deep ground through the heavy wire.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

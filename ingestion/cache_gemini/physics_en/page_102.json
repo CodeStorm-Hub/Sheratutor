@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 102,
+  "pdf_page_no": 107,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": "4.1",
+      "section_title": "Energy",
+      "chunk_type": "theory",
+      "content_markdown": "is not mentioned as energy, we can assume that light is one kind energy too. The energy which is not mentioned in our daily conversation, but will be discussed a lot in physics is kinetic energy. We may think that there are many types of energy in nature, but it is interesting that all kinds of energy are the same and we can only transform them from one to another! So what is energy?\n\nAbility to do work is energy! Not only that, when a positive work is done by applying a force on an object, the force creates an energy in that object. The amount of work done on the object is the amount of energy created in it, and the person who is applying the force has to give exactly the same amount of energy.\n\nSo now you have understood the meaning of negative work. If any force does a negative work on an object, then it is to be understood that a certain amount of energy is taken away from the energy contained in the object. The amount of negative work done is equal to the amount of energy taken away, and he who has applied the force gets this energy anyway. So, on any object\n\nDoing positive work $\\rightarrow$ giving energy to the object.\nDoing negative work $\\rightarrow$ taking away energy from the object.\n\nYou can clearly understand that energy has no direction and it is a scalar quantity. As we produce energy by doing work or do work spending energy, these two have the same unit and the same dimension.\n\nUnit of energy: $J$ (Joule)\nDimension of energy $[W] = ML^2T^{-2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.1",
+      "section_title": "Energy",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** You have moved an object $10\\text{ m}$ by applying a force of $100\\text{ N}$ on it. If the frictional force is $10\\text{ N}$ in the opposite direction, then what is the amount of work done by you? What is the amount of work done by the frictional force? (Figure 4.01)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

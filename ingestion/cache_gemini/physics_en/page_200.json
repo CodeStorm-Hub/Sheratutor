@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 200,
+  "pdf_page_no": 205,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Besides throat, sound can be produced by vibrating the thin diaphragm. When you hit your school bell it starts vibrating and sound is produced. If you grip the bell then the vibration will stop and the sound will stop instantly. After producing sound by vibration, we need a medium to transmit it from one place to another. Sound can also be sent through liquids and solids but we are used to hearing sound using air as a medium. To show that sound cannot propagate without a medium, we keep a calling bell as shown in Figure 7.11 in the laboratory. The calling bell can be sounded by supplying electricity from outside. The sound of the calling bell will be slowly dulled if it is evacuated gradually by a pump. If the bell jar is completely emptied of air, though the bell will vibrate inside but it seems from outside that there is no sound.\n\nWe can hear sound with our ears. The sound that can be heard has frequency between $20\\text{ Hz}$ to $20,000\\text{ Hz}$ or $20\\text{ kHz}$. (Usually hearing capability decreases due to continuously listening to songs with head phones or staying in sound polluted areas.) If the frequency of sound is less than $20\\text{ Hz}$, it is called infrasound, and if the frequency of sound is greater than $20\\text{ kHz}$ it is called ultrasound.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.10: Sound can be produced by preparing vocal cord using paper and blowing it.",
+      "figure_no": "7.10",
+      "box_2d": [
+        122,
+        482,
+        307,
+        856
+      ],
+      "description": "Illustration showing how to fold paper to make a simple vocal cord model and a person blowing into it to produce sound.",
+      "reading_order_anchor": "Besides throat, sound can be produced by vibrating the thin diaphragm."
+    },
+    {
+      "caption": "Figure 7.11: The sound of the calling bell will not be listen if it is evacuated gradually by a pump.",
+      "figure_no": "7.11",
+      "box_2d": [
+        500,
+        131,
+        816,
+        385
+      ],
+      "description": "A bell jar apparatus containing an electric calling bell inside, connected to a vacuum pump via a tube.",
+      "reading_order_anchor": "To show that sound cannot propagate without a medium, we keep a calling bell as shown in Figure 7.11 in the laboratory."
+    }
+  ]
+}

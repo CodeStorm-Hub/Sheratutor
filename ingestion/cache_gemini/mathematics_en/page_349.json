@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 349,
+  "pdf_page_no": 354,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 32. If the length of diagonal of the surface of a cube is $8\\sqrt{2}$ cm, determine the length of its diagonal and volume.\n\nSolution:\n\nLet, the side of the cube is $a$.\n\n$\\therefore$ The length of diagonal of the surface = $\\sqrt{2}a$. Length of diagonal = $\\sqrt{3}a$ and volume = $a^3$\n\nAs per question, $\\sqrt{2}a = 8\\sqrt{2}$ or, $a = 8$\n\n$\\therefore$ The length of the cube's diagonal = $\\sqrt{3} \\times 8 = 13.856$ cm (approx.)\n\nand volume = $8^3 = 512$ cube cm.\n\nThe required length of the diagonal is 13.856 cm (approx.) and volume 512 cubic cm.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 33. The length of a rectangle is 12 cm and width 5 cm. Determine the area of its whole surface and the volume of the solid that is formed by revolving the rectangle around its greater side.\n\nSolution: Given that, the length of a rectangle is 12 cm. and width 5 cm. If it is revolved around the greater side, a right circular cylinder is formed with height $h = 12$ cm and radius of the base $r = 5$ cm\n\nThe whole surface of the produced solid = $2\\pi r(r + h)$\n\n$= 2 \\times 3.1416 \\times 5(5 + 12) = 534.071$ square cm (approx.)\n\nand volume = $\\pi r^2h$\n\n$= 3.1416 \\times 5^2 \\times 12 = 942.48$ cube cm (approx.)\n\nThe required area of whole surface is 534.071 square cm (approx.) and volume 942.48 cube cm (approx.)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

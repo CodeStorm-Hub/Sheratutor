@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 125,
+  "pdf_page_no": 130,
+  "chapter_no": 4,
+  "chapter_title": "কাজ, ক্ষমতা ও শক্তি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "বহুনির্বাচনি প্রশ্ন\n\nসঠিক উত্তরটির পাশে টিক ($\\surd$) চিহ্ন দাও\n\n1. কাজের একক কোনটি?\n(ক) জুল\n(খ) নিউটন\n(গ) কেলভিন\n(ঘ) ওয়াট\n\n2. $5\\text{ kg}$ ভরের একটি বস্তুকে $20\\text{ cm}, 30\\text{ cm}, 40\\text{ cm}$ ও $50\\text{ cm}$ উপরে রাখা হলো। কোন অবস্থানে তার বিভব শক্তি সবচেয়ে বেশি?\n(ক) $20\\text{ cm}$\n(খ) $30\\text{ cm}$\n(গ) $40\\text{ cm}$\n(ঘ) $50\\text{ cm}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "নিচের লেখচিত্র (চিত্র 4.09) অনুসারে ৩ ও ৪ নং প্রশ্নের উত্তর দাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. চিত্র 4.10 লেখচিত্রের কোন অংশে বেগ-সময়ের সমানুপাতে বৃদ্ধি পায়?\n(ক) OA অংশে\n(খ) AB অংশে\n(গ) CD অংশে\n(ঘ) DE অংশে\n\n4. সর্বোচ্চ গতিশক্তি কত?\n(ক) $1.25 \\times 10^5\\text{ J}$\n(খ) $5.0 \\times 10^4\\text{ J}$\n(গ) $1.25 \\times 10^4\\text{ J}$\n(ঘ) $6.2 \\times 10^3\\text{ J}$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 4.09: বেগ-সময় লেখচিত্র",
+      "figure_no": "4.09",
+      "box_2d": [
+        483,
+        209,
+        706,
+        781
+      ],
+      "description": "A velocity-time graph showing motion of a car with mass 1000 kg having various phases A, B, C, D, E.",
+      "reading_order_anchor": "নিচের লেখচিত্র (চিত্র 4.09) অনুসারে ৩ ও ৪ নং প্রশ্নের উত্তর দাও।"
+    }
+  ]
+}

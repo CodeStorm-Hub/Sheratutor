@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 135,
+  "pdf_page_no": 140,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The amount of product from a chemical reaction, in percentage, can be determined following the formula below:\n\n$$\\text{Percentage of yield} = \\frac{\\text{Amount of Product Obtained from Reaction} \\times 100}{\\text{Calculated Amount of Product from Reaction}}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** 2 gram metallic magnesium reacts with the necessary amount of oxygen to yield 3.25 gram magnesium oxide. What is the percentage of the yield?\n\n$$2\\text{Mg(s)} \\quad + \\quad \\text{O}_2\\text{(g)} \\quad \\xrightarrow{\\quad\\quad\\quad\\quad} \\quad 2\\text{MgO(s)}$$\n\n$$2 \\times 24 = 48 \\text{ g} \\quad \\quad 1 \\times 32 = 32 \\text{ g} \\quad \\quad 2 \\times 40 = 80 \\text{ g}$$\n\n**Solution:** According to the equation:\n\n48 gram magnesium yields 80 gram $\\text{MgO}$\n\nSo, 2 gram magnesium yields $\\frac{2 \\times 80}{48} = 3.33 \\text{ gram MgO}$\n\nThe actual yield after the reaction is 3.25 gram magnesium oxide.\n\nTherefore, percentage of the yield $= \\frac{3.25 \\times 100}{3.33} = 97.6\\%$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do It Yourself",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Task: When heat is applied to 80 grams of $\\text{CaCO}_3$, it yields 39 grams of $\\text{CaO}$. Determine the percentage of the yield. The atomic mass of $\\text{Ca}$, $\\text{C}$ and $\\text{O}$ are 40, 12 and 16 respectively.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

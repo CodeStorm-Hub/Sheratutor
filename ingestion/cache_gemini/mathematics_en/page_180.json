@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 180,
+  "pdf_page_no": 185,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work: Prove that, if two circles touch each other internally, the point of contact of the tangent and the centres are collinear.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.4",
+      "section_title": "Exercise 8.4",
+      "chunk_type": "theory",
+      "content_markdown": "1. Two tangents are drawn from an external point $P$ to the circle with centre $O$. Prove that $OP$ is the perpendicular bisector of the chord through the touch points.\n\n2. Prove that, if two circles are concentric and if a chord of the greater circle touches the smaller, the chord is bisected at the point of contact.\n\n3. $AB$ is a diameter of a circle and $BC$ is a chord equal to its radius. If the tangents drawn at $A$ and $C$ meet each other at the point $D$, prove that, $ACD$ is an equilateral triangle.\n\n4. Prove that a circumscribed quadrilateral of a circle having the angles subtended by opposite sides at the centre are supplementary.\n\n5. $PA$ and $PB$ are two tangent from the point $P$ external to circle with centre $O$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Construct the figure according to the stimulus.\n2) Prove that, $PA = PB$\n3) Prove that, the segment $OP$ is perpendicular bisector of the tangent chord.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "6. Given, $O$ is the centre of the circle and two tangents $PA$ and $PB$ touch the circle at the point $A$ and $B$ respectively. Prove that, $PO$ is the bisector of $\\angle APB$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

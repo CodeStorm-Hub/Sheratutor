@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 325,
+  "pdf_page_no": 330,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution:\n\n1) $AB = 15, AC = 25$\n$\\therefore BC = \\sqrt{AC^2 - AB^2} = \\sqrt{(25)^2 - (15)^2} = \\sqrt{400} = 20$\n\n2) Area of $\\triangle ABC = \\frac{1}{2} BC \\cdot AB = \\frac{1}{2} AC \\cdot BD$\n$\\frac{1}{2} AC \\cdot BD = \\frac{1}{2} BC \\cdot AB$\n$25 \\times BD = 20 \\times 15$\n$\\therefore BD = 12$\n\n3) From right-angled triangle $\\triangle ABD$ we get,\n$AD^2 + BD^2 = AB^2$\nor, $AD^2 + 12^2 = 15^2$\nor, $AD^2 = 225 - 144 = 81$\n$\\therefore AD = 9$ and $CD = AC - AD = 25 - 9 = 16$\nSo, ratio of areas of $\\triangle ABD$ and $\\triangle BCD$ is:\n$$\\frac{\\triangle ABD}{\\triangle BCD} = \\frac{\\frac{1}{2} BD \\cdot AD}{\\frac{1}{2} BD \\cdot CD} = \\frac{9}{16}$$\n$\\triangle ABD : \\triangle BCD = 9 : 16$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.1",
+      "section_title": "Exercise 16.1",
+      "chunk_type": "theory",
+      "content_markdown": "1. The hypotenuse of a right-angled triangle is 25 m. If one of its remaining two sides is $\\frac{3}{4}$ of the other, find the length of the two sides.\n\n2. A ladder with length 20 m. stands vertically against a wall. How much further should the lower end of the ladder be moved so that its upper end descends 4 metre?\n\n3. The perimeter of an isosceles triangle is 16 m. If the length of equal sides is $\\frac{5}{6}$ of base, find the area of the triangle.\n\n4. The lengths of the two sides of a triangle are 25 cm, 27 cm and perimeter is 84 cm. Find the area of the triangle.\n\n5. When the length of each side of an equilateral triangle is increased by 2 metre, its area is increased by $6\\sqrt{3}$ square metre. Find the length of side of",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Right-angled triangle geometry",
+      "figure_no": "16.01",
+      "box_2d": [
+        143,
+        745,
+        273,
+        915
+      ],
+      "description": "A right-angled triangle ABC with a perpendicular line segment BD from vertex B to the hypotenuse AC.",
+      "reading_order_anchor": "Solution:"
+    }
+  ]
+}

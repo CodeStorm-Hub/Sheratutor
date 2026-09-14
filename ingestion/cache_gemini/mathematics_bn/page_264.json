@@ -1,0 +1,114 @@
+{
+  "printed_page_no": 264,
+  "pdf_page_no": 269,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": "13.2",
+      "section_title": "অনুশীলনী ১৩.২",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. $a, b, c$ ও $d$ সমান্তর ধারার চারটি ক্রমিক পদ হলে নিচের কোনটি সঠিক?\nক) $b = \\frac{c + d}{2}$ খ) $a = \\frac{b + c}{2}$ গ) $c = \\frac{b + d}{2}$ ঘ) $d = \\frac{a + c}{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $n \\in N$ এর জন্য\n(i) $\\sum i = \\frac{n^2 + n}{2}$\n(ii) $\\sum i^2 = \\frac{1}{6}n(n + 1)(n + 2)$\n(iii) $\\sum i^3 = \\frac{n^2(n^2 + 2n + 1)}{4}$\nনিচের কোনটি সঠিক?\nক) $i$ ও $ii$ খ) $i$ ও $iii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "নিচের ধারাটির ভিত্তিতে ৩ ও ৪ নং প্রশ্নের উত্তর দাও:\n$\\log 2 + \\log 4 + \\log 8 + \\dots$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. ধারাটির সাধারণ অন্তর কোনটি?\nক) $2$ খ) $4$ গ) $\\log 2$ ঘ) $2\\log 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. ধারাটির সপ্তম পদ কোনটি?\nক) $\\log 32$ খ) $\\log 64$ গ) $\\log 128$ ঘ) $\\log 256$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $64 + 32 + 16 + 8 + \\dots$ ধারাটির অষ্টম পদ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $3 + 9 + 27 + \\dots$ ধারাটির প্রথম চৌদ্দটি পদের সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $128 + 64 + 32 + \\dots$ ধারাটির কোন পদ $\\frac{1}{2}$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. একটি গুণোত্তর ধারার পঞ্চম পদ $\\frac{2\\sqrt{3}}{9}$ এবং দশম পদ $\\frac{8\\sqrt{2}}{81}$ হলে, ধারাটির তৃতীয় পদ কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. $\\frac{1}{\\sqrt{2}} - 1 + \\sqrt{2} - \\dots$ ধারাটির কোন পদ $8\\sqrt{2}$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. $5 + x + y + 135$ গুণোত্তর ধারাভুক্ত হলে, $x$ এবং $y$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. $3 + x + y + z + 243$ গুণোত্তর ধারাভুক্ত হলে, $x, y$ এবং $z$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $2 - 4 + 8 - 16 + \\dots$ ধারাটির প্রথম সাতটি পদের সমষ্টি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. $1 - 1 + 1 - 1 + \\dots$ ধারাটির $(2n + 1)$ সংখ্যক পদের সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. $\\log 2 + \\log 4 + \\log 8 + \\dots$ ধারাটির প্রথম দশটি পদের সমষ্টি কত?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

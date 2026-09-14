@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 281,
+  "pdf_page_no": 286,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n1) Find the sum of the first $n$ natural even numbers.\n2) Find the sum of the squares of the first $n$ natural odd numbers.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "13.1",
+      "section_title": "Geometric Series",
+      "chunk_type": "theory",
+      "content_markdown": "If the ratio of any term and its antecedent term of any series is always equal i.e., if any term divided by its antecedent term, the quotient is always equal, the series is called a geometric series and the quotient is called common ratio. Such as, of the series $2 + 4 + 8 + 16 + 32$ the first term is $2$, the second term is $4$, the third term is $8$, the fourth term is $16$ and the fifth term is $32$. Here,\n\nthe ratio of the second term to the first term = $\\frac{4}{2} = 2$\n\nthe ratio of the third term to the second term = $\\frac{8}{4} = 2$\n\nthe ratio of the fourth term to the third term = $\\frac{16}{8} = 2$\n\nthe ratio of the fifth term to the fourth term = $\\frac{32}{16} = 2$.\n\nSo, this series is a geometric series. In this series, the ratio of any term to its antecedent term is always equal. The common ratio of the mentioned series is $2$. The numbers of terms of the series are finite. That is why the series is finite geometric series.\n\nThe geometric series is widely used in different areas of physical and biological science, in organizations like Banks and Life Insurance etc, and in different branches of technology.\n\nIf the numbers of terms are not fixed in a geometric series, it is called an infinite geometric series. The first term of a geometric series is generally expressed by $a$ and common ratios by $r$. So by definition, if the first term is $a$, the second term is $ar$, the third term is $ar^2$ etc. Hence the series will be $a + ar + ar^2 + ar^3 + \\dots$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

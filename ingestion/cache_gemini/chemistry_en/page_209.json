@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 209,
+  "pdf_page_no": 214,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Acid undergoes a reaction with more reactive metals to produce salt and hydrogen gas.\n\n$$2\\text{Na} + 2\\text{HCl} \\longrightarrow 2\\text{NaCl} + \\text{H}_2$$\n\n$$\\text{Sodium} \\quad \\text{Hydrochloric acid} \\quad \\text{Sodium chloride} \\quad \\text{Hydrogen}$$\n$$\\text{(Metal)} \\quad \\quad \\quad \\text{(Acid)} \\quad \\quad \\quad \\quad \\quad \\text{(Salt)}$$\n\nThe food items that we take everyday contains various acids. For example, milk contains lactic acid, soft drinks contain carbonic acid, lemon or orange has citric acid, tamarind has tartaric acid, vinegar has ethanoic acid, tea contains tannic acid etc. When we eat or take these foods, the acids go inside our body. They help in digesting our food and prevent diseases. Besides, there are pickles containing different acids which act as appetizers. Since these acids are weak they cannot harm our health. Inside the body, the stomach wall generates hydrochloric acid which is a very strong acid. It is used for decomposing food inside. However, sometimes there is excess secretion of $\\text{HCl}$ from the stomach which starts to decompose the cells of the stomach wall. Again, if we remain hungry or keep our stomach empty, the $\\text{HCl}$ decomposes the cells of the stomach hurting the stomach living for which we feel pain. This situation is called peptic ulcer. Therefore, we need to avoid the foods that inspire excess secretion of acid and to stay without food for a long time as well. The chapter will let you know many other properties and uses of acid.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1.1",
+      "section_title": "Demonstrating Properties of Dilute Acids through Experiments",
+      "chunk_type": "theory",
+      "content_markdown": "(i) **Taste:** All dilute acids are sour in taste. We have already seen that the acidic foods are sour. However, remain careful not to taste any acid in the laboratory. If your tongue comes in contact with any of these acids, they will instantly corrode your tongue. You may try the taste of tamarind instead which will tell you tartaric acid tastes sour.\n\n(ii) **Corrosive:** Acids are corrosive. If you put a piece of metal in acid, the outer edge of the metal will be corroded.\n\n(iii) **Litmus Test:** Acid turns blue litmus into red. Take 2-3 mL hydrochloric acid in a test tube and add a blue litmus to it. You will see, the blue colour will",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

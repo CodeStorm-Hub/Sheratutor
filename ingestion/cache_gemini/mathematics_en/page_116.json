@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 116,
+  "pdf_page_no": 121,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "21. $x + \\frac{1}{x} = 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "22. $\\frac{(x + 1)^3 - (x - 1)^3}{(x + 1)^2 - (x - 1)^2} = 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solve by forming equations (23 - 34):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "23. Sum of the two digits of a number consisting of two digits is 15 and their product is 56; find the number.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "24. Area of the floor of a rectangular room is 192 square metre. If the length of the floor is decreased by 4 metre and the breadth is increased by 4 metre, the area remains unchanged. Find the length and breadth of the floor.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "25. Length of the hypotenuse of a right angled triangle is 15 cm. and the difference of the lengths of other two sides is 3 cm. Find the lengths of those two sides.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "26. The base of a triangle is 6 cm. more than twice its height. If the area of the triangle is 810 square cm., what is its height ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "27. As many students are there in a class, each of them contribute equal to the number of class-mates of the class and thus total Tk. 420 was collected. What is the number of students in the class and how much did each student contribute ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "28. As many students are there in a class, each of them contributed 30 paisa more than the number of paisa equal to the number of students and thus total Tk. 70 was collected. What is the number of students in that class ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "29. Sum of the digits of a number consisting of two digits is 7. If the places of the digits are interchanged, the number so formed is 9 less than the given number.\n\n1) Write down the given number and the number obtained by interchanging their places in terms of variable $x$.\n\n2) Find the number.\n\n3) If the digits of the original number indicate the length and breadth of a rectangular region in centimetre, find the length of its diagonal. Assuming the diagonal as the side of a square, find the length of the diagonal of the square.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

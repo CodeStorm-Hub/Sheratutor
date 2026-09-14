@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 183,
+  "pdf_page_no": 188,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof: $B, O$ and $C, O$ are joined. The point $O$ stands on $EM$, the perpendicular bisector of $AB$.\n\n$\\therefore OA = OB$, Similarly, $OA = OC$\n\n$\\therefore OA = OB = OC$\n\nHence, the circle drawn with $O$ as the centre and $OA$ as the radius passes through the three points $A, B$ and $C$. This circle is the required circumcircle of $\\triangle ABC$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: In the above figure, the circumcircle of an acute angled-triangle is constructed. Construct the circumcircle of an obtuse and right-angled triangles.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Notice that for in obtuse-angled triangle, the circumcentre lies outside the triangle, in acute-angled triangle, the circumcentre lies within the triangle and in right-angled triangle, the circumcentre lies on the hypotenuse of the triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.10",
+      "section_title": "To draw a circle inscribed in a triangle.",
+      "chunk_type": "theory",
+      "content_markdown": "Construction 10. To draw a circle inscribed in a triangle.\n\nLet $\\triangle ABC$ be a triangle. It is required to draw an inscribed circle, that is, to inscribe a circle in it or to draw a circle in it such that it touches each of the three sides $BC, CA$ and $AB$ of $\\triangle ABC$.\n\nDrawing: $BL$ and $CM$, the bisectors respectively of the angles $\\angle ABC$ and $\\angle ACB$ are drawn. Let the line segments intersect at $O$. $OD$ is drawn perpendicular to $BC$ from $O$ and let it intersect $BC$ at $D$. With $O$ as centre and $OD$ as radius, a circle is drawn. Then, this circle is the required inscribed circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof: From $O$, $OE$ and $OF$ are drawn perpendiculars respectively to $AC$ and $AB$. Let these two perpendiculars intersect the respective sides at $E$ and $F$.\n\nThe point $O$ lies on the bisector of $\\angle ABC$.\n\n$\\therefore OF = OD$\n\nSimilarly, as $O$ lies on bisector of $\\angle ACB, OE = OD$\n\n$\\therefore OD = OE = OF$\n\nHence, the circle drawn with centre as $O$ and $OD$ as radius passes through $D, E$ and $F$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.10: Inscribed circle of a triangle",
+      "figure_no": "8.10",
+      "box_2d": [
+        525,
+        645,
+        665,
+        885
+      ],
+      "description": "A triangle ABC with an inscribed circle centered at O, with perpendiculars from O to the sides at D, E, and F.",
+      "reading_order_anchor": "Construction 10. To draw a circle inscribed in a triangle."
+    }
+  ]
+}

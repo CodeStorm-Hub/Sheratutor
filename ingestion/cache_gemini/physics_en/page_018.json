@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 18,
+  "pdf_page_no": 23,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": "1.5.4",
+      "section_title": "Scientific symbols and notations",
+      "chunk_type": "theory",
+      "content_markdown": "The following methods are followed to write the symbol of units:\n\n1. To express the value of a quantity, first we write a number, leave a space after it and then write the symbol of the unit. For example, $2.21\\text{ kg}$, $7.3 \\times 10^2\\text{ m}^2$ or $22\\text{ K}$. The percentage (\\%) sign also follows the same rule. However no space is left after a number to write degrees ($^\\circ$), minutes ($'$) and seconds ($''$).\n2. Derived unit produced by multiplication is written using a space between two units, e.g. $2.35\\text{ N m}$\n3. Derived unit produced by division is expressed as negative power or slash (e.g. $\\text{ms}^{-1}$ or $\\text{m/s}$)\n4. No punctuation mark or period is used with the symbols, as they are mathematical expressions but not the abbreviated form of anything.\n5. The symbol of unit is written in straight font, for example, $\\text{m}$ for metre, $\\text{s}$ for second etc. But the symbol of quantities are written in italic or curved font, for example, $m$ for mass, $v$ for velocity etc.\n6. The symbols of units are written in small letters, for example, $\\text{cm}$, $\\text{s}$, $\\text{mol}$ etc. But capital letters are used for those units which are taken from the name of scientists (\\text{N} for Newton). If there are many letters in the unit then the first letter will be capital only (the unit from the name of Pascal is \\text{Pa}).\n7. The prefix ($k$, $G$, $M$) of unit will be attached with the unit ($\\text{m}$, $\\text{W}$, $\\text{Hz}$) with no space. For example, $\\text{km}$, $\\text{GW}$, $\\text{MHz}$.\n8. Prefixes more than kilo ($10^3$) will be in capital letters ($M$, $G$, $T$).\n9. The symbols of units will never be in plural from (e.g. not $25\\text{ kgs}$, always $25\\text{ kg}$).\n10. We have to try to write any number or compound unit in a single line. A line break can be given between a number and a unit if it is really necessary.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

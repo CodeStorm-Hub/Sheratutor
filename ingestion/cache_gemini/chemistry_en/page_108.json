@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 108,
+  "pdf_page_no": 113,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "7. Which of the following compounds is not electro conductive in water solution?\n\na. $\\text{NaCl}$\nb. $\\text{CaCl}_2$\nc. $\\text{HCl}$\nd. $\\text{C}_6\\text{H}_{12}\\text{O}_6$ (Glucose)",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1.\n\n(Here X and Y are symbolic. Not symbols of any element)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is a covalent bond?\nb. Why is there a difference in the size between $\\text{Na}$ and $\\text{Na}^+$ ions?\nc. What kind of bond is there in the compound $\\text{YX}$ of the stem? Explain.\nd. Though X is capable of forming both covalent and ionic bonds, element Y never goes into covalent bonds — Explain with logic.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Read the following stem and answer the questions\n(a) $\\text{CH}_4$ (b) $\\text{NaCl}$ (c) $\\text{CCl}_4$ (d) $\\text{CH}_3\\text{OH}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is a covalent bond?\nb. Why is water a polar compound? Explain.\nc. Which compound of the stem forms a crystal? Explain\nd. The compound (b) of the stem is soluble in water but compound (c) is not. Analyze",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.01: Bohr model representations for symbolic elements X and Y",
+      "figure_no": "5.01",
+      "box_2d": [
+        344,
+        110,
+        529,
+        547
+      ],
+      "description": "Bohr model diagrams of two symbolic atoms X and Y showing their electron shells and nucleus containing positive charges.",
+      "reading_order_anchor": "1."
+    }
+  ]
+}

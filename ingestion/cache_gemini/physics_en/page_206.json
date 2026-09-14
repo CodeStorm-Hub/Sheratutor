@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 206,
+  "pdf_page_no": 211,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": "7.3.5",
+      "section_title": "Sound Pollution",
+      "chunk_type": "theory",
+      "content_markdown": "Sound is essential in our life, but excessive sound makes our life intolerable. Those who live in cities, especially those who live besides a road observe that the sound produced from engines of bus, car, truck and of continuous horns goes beyond our tolerance limit very often. Most of the time we are used to living in such types of pollution for a long time. If we are fortunate enough to go to a quiet place where there is no sound pollution then suddenly we can realize the importance of life without sound pollution. The intensity of different types of sound are shown in Table 7.02.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Table 7.02: Intensity of sound of different types\n\n| Source | Intensity |\n| --- | --- |\n| Jet engine | 110-140 dB |\n| Traffic | 80-90 dB |\n| Car | 60-80 dB |\n| Television | 50-60 dB |\n| Conversation | 40-60 dB |\n| Breathing | 10 dB |\n| Sound of mosquito wings | 0 dB |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Due to sound pollution, we are losing our hearing capability. To intensify the problem many of us listen to songs using headphones in the ears.\n\nTo reduce sound pollution the first step is to make laws against it. The second step is to make public awareness. This issue has to be clarified to all, using horns while in cars as little as possible, installation of sound absorbing machine in the industry, making less uses of loud speaker, using vehicles of less sound etc. In addition, steps be taken of plantation of trees in the empty places in cities.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Table 7.02: Intensity of sound of different types",
+      "figure_no": "7.02",
+      "box_2d": [
+        259,
+        521,
+        467,
+        888
+      ],
+      "description": "A table listing various sources of sound and their corresponding sound intensity in decibels (dB).",
+      "reading_order_anchor": "7.3.5 Sound Pollution"
+    }
+  ]
+}

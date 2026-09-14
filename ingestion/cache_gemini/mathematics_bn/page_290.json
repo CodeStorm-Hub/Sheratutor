@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 290,
+  "pdf_page_no": 295,
+  "chapter_no": 15,
+  "chapter_title": "ক্ষেত্রফল সম্পর্কিত উপপাদ্য",
+  "sections": [
+    {
+      "section_no": "15.14",
+      "section_title": "সম্পাদ্য ১৪",
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ১৪. এমন একটি ত্রিভুজ আঁকতে হবে যা দ্বারা সীমাবদ্ধ ক্ষেত্রের ক্ষেত্রফল একটি নির্দিষ্ট চতুর্ভূজক্ষেত্রের ক্ষেত্রফলের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $ABCD$ একটি চতুর্ভূজক্ষেত্র। এরূপ একটি ত্রিভুজ আঁকতে হবে যা দ্বারা সীমাবদ্ধ ক্ষেত্রের ক্ষেত্রফল $ABCD$ চতুর্ভূজক্ষেত্রের ক্ষেত্রফলের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $D, B$ যোগ করি। $C$ বিন্দু দিয়ে $CE \\parallel DB$ টানি। মনে করি, তা $AB$ বাহুর বর্ধিতাংশকে $E$ বিন্দুতে ছেদ করে। $D, E$ যোগ করি। তাহলে, $\\triangle ADE$ ই উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $BD$ ভূমির উপর $\\triangle BDC$ ও $\\triangle BDE$ অবস্থিত এবং $DB \\parallel CE$ [অঙ্কন অনুসারে]\n$\\therefore \\triangle BDC$ এর ক্ষেত্রফল = $\\triangle BDE$ এর ক্ষেত্রফল\n$\\therefore \\triangle BDC$ এর ক্ষেত্রফল + $\\triangle ABD$ এর ক্ষেত্রফল = $\\triangle BDE$ এর ক্ষেত্রফল + $\\triangle ABD$ এর ক্ষেত্রফল\n$\\therefore$ চতুর্ভূজক্ষেত্র $ABCD$ এর ক্ষেত্রফল = $\\triangle ADE$ এর ক্ষেত্রফল\nঅতএব, $\\triangle ADE$ ই নির্ণেয় ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ দ্রষ্টব্য: উপরের পদ্ধতির সাহায্যে নির্দিষ্ট চতুর্ভূজক্ষেত্রের ক্ষেত্রফলের সমান ক্ষেত্রফল বিশিষ্ট অসংখ্য ত্রিভুজক্ষেত্র আঁকা যাবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "15.15",
+      "section_title": "সম্পাদ্য ১৫",
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ১৫. এমন একটি সামান্তরিক আঁকতে হবে যার একটি কোণ দেওয়া আছে এবং তা দ্বারা সীমাবদ্ধ ক্ষেত্র একটি নির্দিষ্ট চতুর্ভূজক্ষেত্রের ক্ষেত্রফলের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $ABCD$ একটি নির্দিষ্ট চতুর্ভূজক্ষেত্র এবং $\\angle x$ একটি নির্দিষ্ট কোণ। এরূপ একটি সামান্তরিক",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৫.১৪: ত্রিভুজ অঙ্কন",
+      "figure_no": "15.14",
+      "box_2d": [
+        165,
+        283,
+        315,
+        715
+      ],
+      "description": "একটি চতুর্ভুজ ABCD এর ক্ষেত্রফলের সমান ক্ষেত্রফল বিশিষ্ট ত্রিভুজ ADE অঙ্কনের জ্যামিতিক চিত্র।",
+      "reading_order_anchor": "সম্পাদ্য ১৪. এমন একটি ত্রিভুজ আঁকতে হবে যা দ্বারা সীমাবদ্ধ ক্ষেত্রের ক্ষেত্রফল একটি নির্দিষ্ট চতুর্ভূজক্ষেত্রের ক্ষেত্রফলের সমান।"
+    },
+    {
+      "caption": "চিত্র ১৫.১৫: সামান্তরিক অঙ্কন",
+      "figure_no": "15.15",
+      "box_2d": [
+        725,
+        370,
+        905,
+        785
+      ],
+      "description": "একটি নির্দিষ্ট চতুর্ভুজ ABCD এর ক্ষেত্রফলের সমান ক্ষেত্রফল বিশিষ্ট সামান্তরিক অঙ্কনের জ্যামিতিক চিত্র যেখানে একটি কোণ x দেওয়া আছে।",
+      "reading_order_anchor": "সম্পাদ্য ১৫. এমন একটি সামান্তরিক আঁকতে হবে যার একটি কোণ দেওয়া আছে এবং তা দ্বারা সীমাবদ্ধ ক্ষেত্র একটি নির্দিষ্ট চতুর্ভূজক্ষেত্রের ক্ষেত্রফলের সমান।"
+    }
+  ]
+}

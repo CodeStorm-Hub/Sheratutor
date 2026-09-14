@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 72,
+  "pdf_page_no": 77,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. $x^2 + \\frac{1}{x^2}$ এর মান কত?\nক) 4 খ) 2 গ) 1 ঘ) 0",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. $(x + \\frac{1}{x})^2$ এর মান কত?\nক) 4 খ) 3 গ) 2 ঘ) 0",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. $x^3 + \\frac{1}{x^3}$ এর মান কত?\nক) 3 খ) 2 গ) 1 ঘ) 0",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. $a^2 + b^2 = 9$ এবং $ab = 3$ হলে\n(i) $(a - b)^2 = 3$ \n(ii) $(a + b)^2 = 15$ \n(iii) $a^2 + b^2 + a^2b^2 = 18$\nনিচের কোনটি সঠিক?\nক) i, ii খ) i, iii গ) ii, iii ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $3a^5 - 6a^4 + 3a + 14$ একটি বীজগাণিতিক রাশি হলে-\n(i) রাশিটির চলক $a$ \n(ii) রাশিটির মাত্রা 5 \n(iii) $a^4$ এর সহগ 6\nনিচের কোনটি সঠিক?\nক) i, ii খ) i, iii গ) ii, iii ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. $p^3 - \\frac{1}{64}$ এর উৎপাদক-\n(i) $p - \\frac{1}{4}$ \n(ii) $p^2 + \\frac{p}{4} + \\frac{1}{8}$ \n(iii) $p^2 + \\frac{p}{4} + \\frac{1}{16}$\nনিচের কোনটি সঠিক?\nক) i, ii খ) i, iii গ) ii, iii ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. ক একটি কাজ $p$ দিনে করে এবং খ, $2p$ দিনে করে। তারা একটি কাজ আরম্ভ করে এবং কয়েকদিন পর ক কাজটি অসমাপ্ত রেখে চলে গেল। বাকি কাজটুকু খ $r$ দিনে শেষ করে। কাজটি কত দিনে শেষ হয়েছিল?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. দৈনিক 6 ঘণ্টা পরিশ্রম করে 10 জন লোক একটি কাজ 7 দিনে করতে পারে। দৈনিক কত ঘণ্টা পরিশ্রম করে 14 জনে 6 দিনে ঐ কাজটি করতে পারবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. মিতা একটি কাজ 10 দিনে করতে পারে। রিতা সে কাজ 15 দিনে করতে পারে। তারা একত্রে কত দিনে কাজটি শেষ করতে পারবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৭. বনভোজনে যাওয়ার জন্য 5700 টাকায় একটি বাস ভাড়া করা হলো এবং শর্ত হলো যে, প্রত্যেক যাত্রী সমান ভাড়া বহন করবে। 5 জন যাত্রী না যাওয়ায় মাথাপিছু ভাড়া 3 টাকা বৃদ্ধি পেল। বাসে কতজন যাত্রী গিয়েছিল?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. একজন মাঝি স্রোতের প্রতিকূলে $p$ ঘণ্টায় $d$ কি.মি. যেতে পারে। স্রোতের অনুকূলে ঐ পথ যেতে তার $q$ ঘণ্টা লাগে। স্রোতের বেগ ও নৌকার বেগ কত?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 255,
+  "pdf_page_no": 260,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Sulfur Compounds",
+      "chunk_type": "theory",
+      "content_markdown": "Some important sulfur compounds are discussed below.\n\n### Sulfur Dioxide\nSulfur undergoes a reaction with oxygen from air to produce sulfur dioxide.\n\n$$S + O_2 \\longrightarrow SO_2$$\n\nSulfur dioxide is a highly toxic gas with an acute odour which harms our body if it enters inside through our mouth and nose. It creates burning sensation in the eyes. If coal and petroleum contains sulfur, burning them produces $SO_2$ gas. This goes into the air. During rain, it undergoes reaction with water and produces sulfurous acid ($H_2SO_3$) which comes back on earth with rain water. This is acid rain.\n\n$$SO_2 + H_2O \\longrightarrow H_2SO_3$$\n\n### Sulfuric Acid\nOf all the chemical, sulfuric acid is the highest used and so it is called the king of chemicals. Sulfuric acid is prepared from solid sulfur in the industries. The method of its preparation is called the Contact method.\n\n**The Contact Method:** The method is described in the steps below:",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.12: Preparation of Sulfuric Acid by Contact Method.",
+      "figure_no": "10.12",
+      "box_2d": [
+        664,
+        98,
+        882,
+        905
+      ],
+      "description": "Flowchart and industrial apparatus schematic diagram for the preparation of sulfuric acid by the Contact Method showing a furnace, catalyst chamber ($V_2O_5$), and absorption tower producing oleum and sulfuric acid.",
+      "reading_order_anchor": "The Contact Method: The method is described in the steps below:"
+    }
+  ]
+}

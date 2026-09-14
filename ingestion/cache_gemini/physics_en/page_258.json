@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 258,
+  "pdf_page_no": 263,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "out roughly in the same direction, there is no deviation.\n\nIn the case of those lenses in which light ray passing through it, the direction of the ray remains unchanged is called a thin lens. (Figure 9.17). We can say that the point of the middle of a thin lens through which light rays do not deviate when passing through it is called the center of that lens (Figure 9.17, point O) or the Optical center.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.4.1",
+      "section_title": "Concave lens",
+      "chunk_type": "theory",
+      "content_markdown": "While discussing about convex and concave mirrors, we first learned about convex mirrors. In the case of lens at first we will discuss concave lens. Because a concave lens forms the image a like a convex mirror.\n\nIn the case of a convex mirror we saw that parallel rays diverts in all directions during reflection. In the case of concave lens the same thing occurs. The incident parallel rays on this lens are diverted during refraction.\n\nIf we extend the refracted rays of light backwards, it would seem that they are spreading out directly from a point.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.17: When passing through a thick lens rays of light deviate a little; when passing through a thin lens light rays do not change direction.",
+      "figure_no": "9.17",
+      "box_2d": [
+        272,
+        239,
+        431,
+        755
+      ],
+      "description": "Diagram comparing thick lenses and thin lenses showing how light rays pass through them with or without deviation.",
+      "reading_order_anchor": "In the case of those lenses in which light ray passing through it"
+    },
+    {
+      "caption": "Figure 9.18: Rays of light diverges when passing through a concave lens.",
+      "figure_no": "9.18",
+      "box_2d": [
+        566,
+        528,
+        771,
+        843
+      ],
+      "description": "Ray diagram showing parallel rays of light diverging after passing through a concave lens and defining focal length.",
+      "reading_order_anchor": "9.4.1 Concave lens"
+    }
+  ]
+}

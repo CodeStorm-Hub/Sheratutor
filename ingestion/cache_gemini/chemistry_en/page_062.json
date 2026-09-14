@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 62,
+  "pdf_page_no": 67,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": "4.1",
+      "section_title": "Periodic Table",
+      "chunk_type": "theory",
+      "content_markdown": "This page displays a periodic table chart showing groups, periods, atomic numbers, atomic masses, element symbols, and names of elements, including the Lanthanide and Actinide series.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.1",
+      "section_title": "Periodic Table Chart",
+      "chunk_type": "table",
+      "content_markdown": "| Group number / Period number | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 |\n|---|---|---|---|---|---|---|---|---|---|\n| **1** | $^{1}_{1}\\text{H}$ | | | | | | | | |\n| **2** | $^{3}_{7}\\text{Li}$ | $^{4}_{9}\\text{Be}$ | | | | | | | |\n| **3** | $^{11}_{23}\\text{Na}$ | $^{12}_{24}\\text{Mg}$ | | | | | | | |\n| **4** | $^{19}_{39}\\text{K}$ | $^{20}_{40}\\text{Ca}$ | $^{21}_{45}\\text{Sc}$ | $^{22}_{48}\\text{Ti}$ | $^{23}_{51}\\text{V}$ | $^{24}_{52}\\text{Cr}$ | $^{25}_{55}\\text{Mn}$ | $^{26}_{56}\\text{Fe}$ | $^{27}_{58}\\text{Co}$ |\n| **5** | $^{37}_{85.5}\\text{Rb}$ | $^{38}_{88}\\text{Sr}$ | $^{39}_{89}\\text{Y}$ | $^{40}_{91}\\text{Zr}$ | $^{41}_{93}\\text{Nb}$ | $^{42}_{96}\\text{Mo}$ | $^{43}_{98}\\text{Tc}$ | $^{44}_{101}\\text{Ru}$ | $^{45}_{103}\\text{Rh}$ |\n| **6** | $^{55}_{133}\\text{Cs}$ | $^{56}_{137}\\text{Ba}$ | Lanthanide series ($57-71$) | $^{72}_{178.5}\\text{Hf}$ | $^{73}_{181}\\text{Ta}$ | $^{74}_{184}\\text{W}$ | $^{75}_{186}\\text{Re}$ | $^{76}_{190}\\text{Os}$ | $^{77}_{192}\\text{Ir}$ |\n| **7** | $^{87}_{223}\\text{Fr}$ | $^{88}_{226}\\text{Ra}$ | Actinide series ($89-103$) | $^{104}_{261}\\text{Rf}$ | $^{105}_{262}\\text{Db}$ | $^{106}_{263}\\text{Sg}$ | $^{107}_{262}\\text{Bh}$ | $^{108}_{265}\\text{Hs}$ | $^{109}_{266}\\text{Mt}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.1",
+      "section_title": "Lanthanide and Actinide Series",
+      "chunk_type": "table",
+      "content_markdown": "| Series | 1 | 2 | 3 | 4 | 5 | 6 | 7 |\n|---|---|---|---|---|---|---|---|\n| **Elements of Lanthanide series** | $^{57}_{139}\\text{La}$ | $^{58}_{140}\\text{Ce}$ | $^{59}_{141}\\text{Pr}$ | $^{60}_{144}\\text{Nd}$ | $^{61}_{145}\\text{Pm}$ | $^{62}_{150}\\text{Sm}$ | $^{63}_{152}\\text{Eu}$ |\n| **Elements of Actinide series** | $^{89}_{227}\\text{Ac}$ | $^{90}_{232}\\text{Th}$ | $^{91}_{231}\\text{Pa}$ | $^{92}_{238}\\text{U}$ | $^{93}_{237}\\text{Np}$ | $^{94}_{244}\\text{Pu}$ | $^{95}_{243}\\text{Am}$ |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 4.01: Periodic Table of Elements",
+      "figure_no": "4.01",
+      "box_2d": [
+        75,
+        104,
+        755,
+        940
+      ],
+      "description": "A comprehensive periodic table chart displaying chemical elements with atomic numbers, atomic masses, symbols, group numbers, and period numbers.",
+      "reading_order_anchor": "Periodic Table"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 274,
+  "pdf_page_no": 279,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$S_n = a + (a + d) + (a + 2d) + \\dots + (p - 2d) + (p - d) + p \\dots (1)$$\n$$and \\ S_n = p + (p - d) + (p - 2d) + \\dots + (a + 2d) + (a + d) + a \\dots (2)$$\nAdding, $$2S_n = (a + p) + (a + p) + (a + p) + \\dots + (a + p) + (a + p) + (a + p)$$\n\nor, $$2S_n = n(a + p)$$ [$\\because$ number of terms of the series is $n$]\n$$\\therefore S_n = \\frac{n}{2}(a + p) \\dots (3)$$\n\nAgain, $n$th term $= p = a + (n - 1)d$. Putting this value of $p$ in (3) we get,\n$$S_n = \\frac{n}{2}[a + \\{a + (n - 1)d\\}]$$\ni.e., $$S_n = \\frac{n}{2}\\{2a + (n - 1)d\\} \\dots (4)$$\n\nIf the first term of an arithmetic series $a$, last term $p$ and number of terms $n$ are known, the sum of the series can be determined by the formula (3). But if the first term $a$, common difference $d$ and number of terms $n$ are known, the sum of the series are determined by the formula (4).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Determination of the sum of first $n$ terms of natural numbers\n\nLet $S_n$ be the sum of $n$-numbers of natural numbers i.e.\n$$S_n = 1 + 2 + 3 + \\dots + (n - 1) + n$$\n\nWriting from the first term and conversely from the last term of the series we get,\n$$S_n = 1 + 2 + 3 + \\dots + (n - 2) + (n - 1) + n \\dots (1)$$\n$$and \\ S_n = n + (n - 1) + (n - 2) + \\dots + 3 + 2 + 1 \\dots (2)$$\nAdding, $$2S_n = (n + 1) + (n + 1) + (n + 1) + \\dots + (n + 1)$$ [n-number of terms]\n\nor, $$2S_n = n(n + 1)$$\n$$\\therefore S_n = \\frac{n(n + 1)}{2} \\dots (3)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 3.** Find the sum total of first 50 natural numbers.\n**Solution:** Using formula (3) we get,\n$$S_{50} = \\frac{50(50 + 1)}{2} = 25 \\times 51 = 1275$$\n$$\\therefore$$ The sum total of first 50 natural numbers is 1275.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,128 @@
+{
+  "printed_page_no": 287,
+  "pdf_page_no": 292,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. Which term of the series $128 + 64 + 32 + \\dots$ is $\\frac{1}{2}$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. If $\\frac{2\\sqrt{3}}{9}$ is the fifth and $\\frac{8\\sqrt{2}}{81}$ is the tenth term of a geometric series, find its third term.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. Which term of the series $\\frac{1}{\\sqrt{2}} - 1 + \\sqrt{2} - \\dots$ is $8\\sqrt{2}$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. If $5 + x + y + 135$ is a geometric series, find the value of $x$ and $y$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. If $3 + x + y + z + 243$ is a geometric series, find the value of $x, y$ and $z$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. What is the sum of the first 7 terms of the series $2 - 4 + 8 - 16 + \\dots$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. Find the sum of $(2n + 1)$ terms of the series $1 - 1 + 1 - 1 + \\dots$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. What is the sum of the first 7 terms of the series $\\log 2 + \\log 4 + \\log 8 + \\dots$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. What is the sum of the first 12 terms of the series $\\log 2 + \\log 16 + \\log 512 + \\dots$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. If the sum of $n$ terms of the series $2 + 4 + 8 + 16 + \\dots$ is 254, find the value of $n$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. What is the sum of $(2n + 2)$ terms of the series $2 - 2 + 2 - 2 + \\dots$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "18. If the sum of cubes of $n$ natural numbers is 441, find the value of $n$ and find the sum of those $n$ terms.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "19. If the sum of cubes of $n$ natural numbers is 225, find the value of $n$ and find the sum of squares of those $n$ terms.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "20. Show that, $1^3 + 2^3 + 3^3 + \\dots + 10^3 = (1 + 2 + 3 + \\dots + 10)^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "21. If $\\frac{1^3 + 2^3 + 3^3 + \\dots + n^3}{1 + 2 + 3 + \\dots + n} = 210$, what is the value of $n$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "22. An iron-bar with length of one metre is divided into ten-pieces such that the lengths of the pieces form a geometric progression. If the largest piece is ten times than that of the smallest one, find the length in approximate millimetre of the smallest piece.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "23. The first term of a geometric series is $a$, common ratio $r$, the fourth term of the series is $-2$ and the ninth term is $8\\sqrt{2}$.\n\n1) Express the above information by two equations.\n\n2) Find the 12th term of the series.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

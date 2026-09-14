@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 68,
+  "pdf_page_no": 73,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$t = \\text{time taken.}$\n$Q(t) = \\text{amount of water in the tank in time } t$\n$\\therefore Q(t) = Q_0 \\pm qt$\n$'+' \\text{ sign at the time of flowing of water in and '-' sign, at the time of flowing of water out are to be used.}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.1",
+      "section_title": "Related to percentage",
+      "chunk_type": "theory",
+      "content_markdown": "Suppose, $b = \\text{total quantity}$\n$r = \\text{rate of percentage} = \\frac{s}{100} = s\\%$\n$p = \\text{part of percentage } s\\% \\text{ of } b$\n$\\therefore p = br$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2",
+      "section_title": "Related to profit and loss",
+      "chunk_type": "theory",
+      "content_markdown": "Suppose, $C = \\text{cost price}$\n$r = \\text{rate of profit or loss}$\n$\\therefore \\text{selling price } S = C(1 \\pm r)$\n$\\text{in case of profit, } S = C(1 + r)$\n$\\text{in case of loss, } S = C(1 - r)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Related to investment and profit",
+      "chunk_type": "theory",
+      "content_markdown": "Suppose, $I = \\text{profit after time } n$\n$n = \\text{specific time}$\n$P = \\text{principal}$\n$r = \\text{profit of unit principal at unit time}$\n$A = \\text{principal with profit after time } n$\n$\\text{In the case of simple profit,}$\n$I = Pnr$\n$A = P + I = P + Pnr = P(1 + nr)$\n$\\text{In the case of compound profit,}$\n$A = P(1 + r)^n$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

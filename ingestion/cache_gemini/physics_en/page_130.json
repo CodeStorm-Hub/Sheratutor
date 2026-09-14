@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 130,
+  "pdf_page_no": 135,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, area itself is considered as a vector! A vector must have a magnitude and the direction. The amount of area is the magnitude of vector, the perpendicular on the area is the direction of the vector.\n\nSince pressure is a scalar quantity, it has no direction. It is so necessary, because the concept of pressure is more important for a liquid and gas than the solid. When liquids and gases apply pressure then actually it does not depend on the direction. We will see this matter very soon.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Let us assume your mass is $50\\text{ kg}$, area of one side of your body is $0.5\\text{ m}^2$ and bottom area of your two legs is $0.03\\text{ m}^2$. What pressures will you apply on the floor when lying down and standing?\n\n**Answer:** Mass is $50\\text{ kg}$, therefore weight is: $50 \\times 9.8\\text{ N} = 490\\text{ N}$\n\nPressure when lying down, $P = \\frac{490\\text{ N}}{0.5\\text{ m}^2} = 980\\text{ N/m}^2$\n\nPressure when standing, $P = \\frac{490\\text{ N}}{0.03\\text{ m}^2} = 16,333\\text{ N/m}^2$\n\nYou see less pressure is applied when you are lying down. For this reason when one falls in quicksand he has to lie down so that the applied pressure becomes lower and he does not submerge quicksand.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again the opposite is also true, if the area of force applied is less, then the pressure increases. The area of the sharp edge of a nail is very small. So when the sharp point of the nail is placed on a wood or wall and hammered on the flat back head of the nail, the force exerts pressure through the sharp point on the wood or wall. As the area of sharp edge of the nail is just a point so pressure is very high and the nail can easily penetrate the wood or wall. This is also true in the case of a knife. Its sharp edge is narrow, so it can apply more pressure and",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

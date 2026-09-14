@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 299,
+  "pdf_page_no": 304,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "after putting it on the dirt spot of clothes, bleaching powder reacts with water and produces calcium chloride ($CaCl_2$) and hypochlorous acid ($HOCl$).\n\n$$\\text{Ca(OCl)Cl} + \\text{H}_2\\text{O} \\longrightarrow \\text{CaCl}_2 + \\text{HOCl}$$\n\n$HOCl$ breaks up and produces $HCl$ and nascent oxygen $[O]$\n\n$$\\text{HOCl} \\longrightarrow \\text{HCl} + [\\text{O}]$$\n\nNascent oxygen $[O]$ reacts with colourful material and makes the colourful materials colourless.\n\n$$\\text{Colourful material} + [\\text{O}] \\longrightarrow \\text{colourless material}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Technique of killing germs by bleaching powder",
+      "chunk_type": "theory",
+      "content_markdown": "Bleaching powder is used to kill germs on house floors, commodes, basins etc. When water is added to bleaching powder after putting the powder on floor, commode, basin etc, bleaching powder reacts with water and turns into calcium chloride ($CaCl_2$) and hypochlorous acid ($HOCl$).\n\n$$\\text{Ca(OCl)Cl} + \\text{H}_2\\text{O} \\longrightarrow \\text{CaCl}_2 + \\text{HOCl}$$\n\nHypochlorous acid breaks up and produces nascent oxygen $[O]$ which kills germs.\n\n$$\\text{HOCl} \\longrightarrow \\text{HCl} + [\\text{O}]$$\n$$\\text{Germs} + [\\text{O}] \\longrightarrow \\text{dead germs}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2",
+      "section_title": "Glass Cleaner",
+      "chunk_type": "theory",
+      "content_markdown": "The detergent which is used for cleaning glass is called a glass cleaner. When there is oil, fat or grease on glass, they attract dust and makes dirt on glass. To clean glass, such a kind of cleaning material is used which reacts with oil, fat or grease but does not react with sodium silicate or calcium silicate, an element of glass. Glass cleaner is usually prepared by mixing isopropyl alcohol, $\\text{CH}_3\\text{CH(OH)CH}_3$ with ammonium hydroxide ($\\text{NH}_4\\text{OH}$) which is prepared by dissolving ammonia gas in water. Ammonium Hydroxide is also known as ammonia solution.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.3",
+      "section_title": "Technique of cleaning glass with glass cleaner",
+      "chunk_type": "theory",
+      "content_markdown": "When glass cleaner is applied on glass, $\\text{NH}_4\\text{OH}$ reacts with oil, fat or grease on the glass and removes them from the glass. If there is any organic substance on",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

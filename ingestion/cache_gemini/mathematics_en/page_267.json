@@ -1,0 +1,85 @@
+{
+  "printed_page_no": 267,
+  "pdf_page_no": 272,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise 12.4",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. For which of the following conditions is the system of equations $ax+by+c = 0$ and $px+qy+r = 0$ consistent and mutually independent?\n1) $\\frac{a}{p} \\neq \\frac{b}{q}$ 2) $\\frac{a}{p} = \\frac{b}{q} = \\frac{c}{r}$ 3) $\\frac{a}{p} = \\frac{b}{q} \\neq \\frac{c}{r}$ 4) $\\frac{a}{p} = \\frac{b}{q}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. If $x+y = 4$, $x-y = 2$, which one of the following is the value of $(x,y)$?\n1) $(2,4)$ 2) $(4,2)$ 3) $(3,1)$ 4) $(1,3)$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. If $x+y = 6$ and $2x = 4$, what is the value of $y$?\n1) 2 2) 4 3) 6 4) 8",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. For which one of the following equation is the adjoining chart correct?\n\n| $x$ | 0 | 2 | 4 |\n|---|---|---|---|\n| $y$ | $-4$ | 0 | 4 |\n\n1) $y = x-4$ 2) $y = 8-x$ 3) $y = 4-2x$ 4) $y = 2x-4$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. If $2x-y = 8$ and $x-2y = 4$, then $x+y =$ what?\n1) 0 2) 4 3) 8 4) 12",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "6. The equations $x-y-4 = 0$ and $3x-3y-10 = 0$:\n\n(i) are mutually dependent.\n(ii) are mutually consistent.\n(iii) do not have any solution.\n\nOn the basis of information above, which one of the following is correct?\n1) $ii$ 2) $iii$ 3) $i$ and $iii$ 4) $ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "On the basis of information given below answer questions 7 - 9.\n\nLength of the floor of a rectangular room is 2 metres more than its breadth and perimeter of the floor is 20 metre. For decorating the floor with mosaic it costs Tk. 900 per square metre.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. What is the length of the floor of the room in metre?\n1) 10 2) 8 3) 6 4) 4",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. What is the area of the floor of the room in square metre?\n1) 24 2) 32 3) 48 4) 80",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Table for question 4",
+      "figure_no": "12.1",
+      "box_2d": [
+        384,
+        445,
+        463,
+        606
+      ],
+      "description": "A table showing values of x and y for question 4.",
+      "reading_order_anchor": "4. For which one of the following equation is the adjoining chart correct?"
+    }
+  ]
+}

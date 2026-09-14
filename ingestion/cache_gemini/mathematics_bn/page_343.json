@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 343,
+  "pdf_page_no": 348,
+  "chapter_no": 17,
+  "chapter_title": "পরিসংখ্যান",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপরের তথ্যের ভিত্তিতে নিচের কোনটি সঠিক?\nক) $i$ ও $ii$ খ) $i$ ও $iii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "শীতকালে বাংলাদেশের কোনো একটি অঞ্চলের ১০ দিনের তাপমাত্রার (সে.) পরিসংখ্যান হলো $10^{\\circ}, 9^{\\circ}, 8^{\\circ}, 6^{\\circ}, 11^{\\circ}, 12^{\\circ}, 7^{\\circ}, 13^{\\circ}, 14^{\\circ}, 5^{\\circ}$। এবার নিচের (৬-৮) প্রশ্নগুলোর উত্তর দাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. উপরের সংখ্যাসূচক উপাত্তের প্রচুরক কোনটি?\nক) $12^{\\circ}$ খ) $5^{\\circ}$ গ) $14^{\\circ}$ ঘ) প্রচুরক নেই",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. উপরের সংখ্যাসূচক উপাত্তের গড় তাপমাত্রা কোনটি?\nক) $8^{\\circ}$ খ) $8.5^{\\circ}$ গ) $9.5^{\\circ}$ ঘ) $9^{\\circ}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. উপাত্তসমূহের মধ্যক কোনটি?\nক) $9.5^{\\circ}$ খ) $9^{\\circ}$ গ) $8.5^{\\circ}$ ঘ) $8^{\\circ}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. সারণিভুক্ত শ্রেণিবিন্যস্ত উপাত্তের সংখ্যা হলো $n$, মধ্যক শ্রেণির নিম্নসীমা $L$, মধ্যক শ্রেণির পূর্ববর্তী শ্রেণির ক্রমযোজিত গণসংখ্যা $F_c$, মধ্যক শ্রেণির গণসংখ্যা $F_m$ এবং শ্রেণিব্যাপ্তি $h$; এই তথ্যের আলোকে নিচের কোনটি মধ্যক নির্ণয়ের সূত্র?\nক) $L + \\left( \\frac{n}{2} - F_c \\right) \\times \\frac{h}{F_m}$ খ) $L + \\left( \\frac{n}{2} - F_m \\right) \\times \\frac{h}{F_m}$\nগ) $L - \\left( \\frac{n}{2} - F_c \\right) \\times \\frac{h}{F_m}$ ঘ) $L - \\left( \\frac{n}{2} - F_m \\right) \\times \\frac{h}{F_m}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১০. ১০ম শ্রেণির ৫০ জন শিক্ষার্থীর গণিত বিষয়ে প্রাপ্ত নম্বরের গণসংখ্যা নিবেশন সারণি দেওয়া হলো। প্রদত্ত উপাত্তের গণসংখ্যা বহুভুজ ও অজিভ রেখা আঁক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| শ্রেণিব্যাপ্তি | $31-40$ | $41-50$ | $51-60$ | $61-70$ | $71-80$ | $81-90$ | $91-100$ |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| গণসংখ্যা | $6$ | $8$ | $10$ | $12$ | $5$ | $7$ | $2$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১১. নিচে ৫০ জন শিক্ষার্থীর ওজনের গণসংখ্যা নিবেশন সারণি দেওয়া হলো। মধ্যক নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| ওজন (কেজি) | $45$ | $50$ | $55$ | $60$ | $65$ | $70$ |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| গণসংখ্যা | $2$ | $6$ | $8$ | $16$ | $12$ | $6$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১২. কোনো বিদ্যালয়ের বার্ষিক পরীক্ষায় ৯ম শ্রেণির ৫০ জন শিক্ষার্থীর গণিতে প্রাপ্ত নম্বরগুলো নিম্নরূপ:\n$76, 65, 98, 79, 64, 68, 56, 73, 83, 57, 55, 92, 45, 77, 87, 46, 32, 75, 89, 48$\n$97, 88, 65, 73, 93, 58, 41, 69, 63, 39, 84, 56, 45, 73, 93, 62, 67, 69, 65, 53$\n$78, 64, 85, 53, 73, 34, 75, 82, 67, 62$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) প্রদত্ত তথ্যটির ধরন কীরূপ? কোনো নিবেশনে একটি শ্রেণির গণসংখ্যা কী নির্দেশ করে?\nখ) উপযুক্ত শ্রেণিব্যাপ্তি নিয়ে গণসংখ্যা নিবেশন সারণি তৈরি কর।\nগ) সংক্ষিপ্ত পদ্ধতিতে প্রাপ্ত নম্বরের গড় নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

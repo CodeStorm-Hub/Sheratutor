@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 16,
+  "pdf_page_no": 21,
+  "chapter_no": 1,
+  "chapter_title": "বাস্তব সংখ্যা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৮. $2.\\dot{2}71\\dot{8}$ কে $1.9\\dot{1}\\dot{2}$ দ্বারা ভাগ কর।\n\nসমাধান:\n$$2.\\dot{2}71\\dot{8} = \\frac{22718 - 2}{9999} = \\frac{22716}{9999}$$\n\n$$1.9\\dot{1}\\dot{2} = \\frac{1912 - 19}{990} = \\frac{1893}{990}$$\n\n$$\\therefore 2.\\dot{2}71\\dot{8} \\div 1.9\\dot{1}\\dot{2} = \\frac{22716}{9999} \\div \\frac{1893}{990} = \\frac{22716}{9999} \\times \\frac{990}{1893} = \\frac{120}{101} = 1.\\dot{1}88\\dot{1}$$\n\nনির্ণেয় ভাগফল $1.\\dot{1}88\\dot{1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৯. $9.45$ কে $2.8\\dot{6}\\dot{3}$ দ্বারা ভাগ কর।\n\nসমাধান:\n$$9.45 = \\frac{945}{100}$$\n\n$$2.8\\dot{6}\\dot{3} = \\frac{2863 - 28}{990} = \\frac{2835}{990}$$\n\n$$\\therefore 9.45 \\div 2.8\\dot{6}\\dot{3} = \\frac{945}{100} \\div \\frac{2835}{990} = \\frac{945}{100} \\times \\frac{990}{2835} = \\frac{189 \\times 99}{2 \\times 2835} = \\frac{33}{10} = 3.3$$\n\nনির্ণেয় ভাগফল $3.3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্য: আবৃত্ত দশমিক ভগ্নাংশের গুণফল ও ভাগফল আবৃত্ত দশমিক ভগ্নাংশ নাও হতে পারে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: ক) $0.\\dot{6}$ কে $0.\\dot{9}$ দ্বারা ভাগ কর। খ) $0.7\\dot{3}\\dot{2}$ কে $0.0\\dot{2}\\dot{7}$ দ্বারা ভাগ কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "1.",
+      "section_title": "অসীম দশমিক ভগ্নাংশ",
+      "chunk_type": "theory",
+      "content_markdown": "অনেক দশমিক ভগ্নাংশ আছে যাদের দশমিক বিন্দুর ডানের অঙ্কের শেষ নেই, আবার এক বা একাধিক অঙ্ক বারবার পর্যায়ক্রমে আসে না, এসব দশমিক ভগ্নাংশকে বলা হয় অসীম দশমিক ভগ্নাংশ। যেমন, $5.134248513042301...$ একটি অসীম দশমিক ভগ্নাংশ। $2$ এর বর্গমূল একটি অসীম দশমিক ভগ্নাংশ। এখন, $2$ এর বর্গমূল বের করি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

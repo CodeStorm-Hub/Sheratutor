@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 309,
+  "pdf_page_no": 314,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. Draw those English letters that have symmetry with respect to\n\n1) Horizontal mirror\n\n2) Vertical mirror\n\n3) Both horizontal and vertical mirrors",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. Draw three figures which do not have symmetry.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "12. When you slice a lemon, the cross-section looks as shown in the figure. Determine the rotational symmetry of the figure.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "13. Fill in the blanks:\n\n| Shape | Centre of Rotation | Order of Rotation | Angle of rotation |\n| :--- | :--- | :--- | :--- |\n| Square | | | |\n| Rectangle | | | |\n| Rhombus | | | |\n| Equilateral triangle | | | |\n| Semi-circle | | | |\n| Regular pentagon | | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. Name the quadrilaterals which have line of symmetry and rotational symmetry of order more than 1.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. Can we have a rotational symmetry of a body of order more than 1 whose angle of rotation is $18^\\circ$? Justify your answer.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Cross-section of a lemon",
+      "figure_no": "14.01",
+      "box_2d": [
+        255,
+        797,
+        323,
+        873
+      ],
+      "description": "A line drawing of a sliced lemon showing its internal segments.",
+      "reading_order_anchor": "12. When you slice a lemon, the cross-section looks as shown in the figure. Determine the rotational symmetry of the figure."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 211,
+  "pdf_page_no": 216,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Reflection of Light",
+      "chunk_type": "theory",
+      "content_markdown": "When light reflects on the objects around us and comes into our eyes, we can see those objects. In the previous chapter we have learned about sound as a wave. In this chapter we will learn about light as a wave. This wave is a different kind of wave, called an electromagnetic wave.\n\nWhen light is reflected on a plane mirror, it creates an image. All of us are familiar with this image. If a curved mirror is used instead of plane mirror, it will create a different kind of image. We will discuss different types of images in different mirrors in this chapter.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Reflection of light and image formation",
+      "figure_no": "8.01",
+      "box_2d": [
+        279,
+        136,
+        649,
+        893
+      ],
+      "description": "A silhouette of a person standing by a water body at sunset, showing the reflection of the person and the sky on the water surface.",
+      "reading_order_anchor": "Reflection of Light"
+    }
+  ]
+}

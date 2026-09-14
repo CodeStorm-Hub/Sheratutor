@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 71,
+  "pdf_page_no": 76,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "then they have a combined momentum. Due to different velocities of the objects, they may collide with one another in their path of motion and due to the collisions their velocities may change. If no force is applied from outside, then after the collision the combined momentum will not change. This statement is defined as the law of conservation of momentum.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** If you throw a tennis ball at a wall with a velocity of $10\\text{ m/s}$, it will bounce back towards you with the same speed. If the mass of the ball is $100\\text{ gm}$, what is the change of momentum?\n\n**Answer:** when the ball is thrown, then the momentum is $p = mv$. After striking the wall, when the ball bounces back, its momentum becomes $p' = -mv$.\nTherefore the change of momentum:\n\n$$p - p' = mv - (-mv) = 2mv$$\n\nFor this change of momentum, the wall exerts a force on the tennis ball for a very short time. In cricket, the batsman hits the ball by the bat for a very short interval of time and the change of its momentum occurs. We call these six's or a boundary.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "3.5",
+      "section_title": "Collision",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.5.1",
+      "section_title": "Conservation of Momentum and Energy",
+      "chunk_type": "theory",
+      "content_markdown": "Let us consider that two objects of masses $m_1$ and $m_2$ are moving along a straight line on a plane. Due to the difference of their velocities they collide and hence their velocities are changed. Now, $v_1$ and $v_2$ are the new velocities of masses $m_1$ and $m_2$ respectively (figure 3.04). Can we find the values of $v_1$ and $v_2$ after the collision?\n\nThe combined momentum of the two objects before collision $= m_1u_1 + m_2u_2$\nThe combined momentum of the two objects after collision $= m_1v_1 + m_2v_2$\n\nSince, no force is applied from outside, hence the momentum before collision and after collision will be the same. This is the law of conservation of momentum. Therefore we can write,",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

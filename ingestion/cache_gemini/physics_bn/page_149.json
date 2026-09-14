@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 149,
+  "pdf_page_no": 154,
+  "chapter_no": 5,
+  "chapter_title": "পদার্থের অবস্থা ও চাপ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\frac{L - L_0}{L_0}$$\n\nকাজেই\n$$\\frac{T}{A} \\propto \\frac{L - L_0}{L_0}$$\n\nকিংবা\n$$\\frac{T}{A} = Y \\left( \\frac{L - L_0}{L_0} \\right)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "টেবিল 5.02: বিভিন্ন পদার্থের ইয়াংস মডুলাস",
+      "chunk_type": "table",
+      "content_markdown": "| পদার্থ | G-Pa |\n| :--- | :--- |\n| রাবার | 0.01-0.1 |\n| হাড় | 9 |\n| কাঠ | 10 |\n| কাচ | 50 - 90 |\n| অ্যালুমিনিয়াম | 69 |\n| তামা | 117 |\n| লোহা | 200 |\n| হীরা | 1220 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এই ধ্রুবকের নাম ইয়াংস মডুলাস (Young's Modulus)। যেহেতু বিকৃতির কোনো একক নেই, তাই $Y$ এর একক হচ্ছে $\\text{Nm}^{-2}$। টেবিল 5.02 এ কয়েকটি পদার্থের ইয়াংস মডুলাস দেওয়া হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ",
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** ইয়াংস মডুলাসের মান বেশি হলে পদার্থ কীভাবে দৈর্ঘ্য পরিবর্তন করে?\n\n**উত্তর:** দৈর্ঘ্যের পরিবর্তনের হার\n$$\\frac{L - L_0}{L_0} = \\frac{1}{Y} \\left( \\frac{T}{A} \\right)$$\n\nকাজেই $T/A$ যদি সমান হয়, তাহলে $Y$ যত বেশি হবে দৈর্ঘ্যের পরিবর্তন তত কম হবে।",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(ii) ধরা যাক একটি সিলিন্ডারে সাধারণ অবস্থায় $V_0$ আয়তনের গ্যাস আছে। এই গ্যাসে $P$ চাপ দেওয়ার কারণে সিলিন্ডারের গ্যাসের আয়তন কমে হয়ে গেল $V$ (চিত্র 5.12), এখানে পীড়ন হচ্ছে $P$ এবং বিকৃতি হচ্ছে:\n$$\\frac{V - V_0}{V_0}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

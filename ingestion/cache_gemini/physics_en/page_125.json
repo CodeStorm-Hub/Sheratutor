@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 125,
+  "pdf_page_no": 130,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Multiple choice questions\n\nPut the tick ($\\sqrt{ }$ ) mark on the correct answer\n1. Which is the unit of work?\n(a) Joule\n(b) Newton\n(c) Kelvin\n(d) Watt\n\n2. A body of mass $5\\text{ kg}$ is kept at $20\\text{ cm}$, $30\\text{ m}$, $40\\text{ cm}$ and $50\\text{ cm}$ height respectively. At which position is its potential energy a maximum?\n(a) $20\\text{ cm}$\n(b) $30\\text{ m}$\n(c) $40\\text{ cm}$\n(d) $50\\text{ cm}$\n\nAnswer the question numbers 3 and 4 according to the following graph.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. In which part of the graph, velocity increases in proportion to time?\n(a) part OA\n(b) part AB\n(c) part CD\n(d) part DE\n\n4. What is the maximum kinetic energy?\n(a) $1.25 \\times 10^5\\text{ J}$\n(b) $5 \\times 10^4\\text{ J}$\n(c) $1.25 \\times 10^4\\text{ J}$\n(d) $6.2 \\times 10^3\\text{ J}$\n\n5. From the law of conservation of energy it is found-\ni) Energy cannot be created or destroyed. The total energy of the universe is a constant and unchangeable.\nii) Non renewable energy will be finished quickly, so renewable energy has to be used.\niii) We have to use energy effectively and reduce system loss in order to",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 4.09: Velocily-time graph",
+      "figure_no": "4.09",
+      "box_2d": [
+        425,
+        134,
+        620,
+        529
+      ],
+      "description": "Velocity-time graph showing car motion with regions OA, AB, BC, CD, DE and weight of car 1000 Kg",
+      "reading_order_anchor": "Answer the question numbers 3 and 4 according to the following graph."
+    }
+  ]
+}

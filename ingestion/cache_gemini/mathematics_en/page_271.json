@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 271,
+  "pdf_page_no": 276,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Hence, some quantities are arranged in a particular way such that the antecedent and subsequent terms becomes related. The set of quantities arranged in such a way is called a sequence.\n\nThe aforesaid relation is called a function and written as $f(n) = 2n$. The general term of this sequence is $2n$. The number of terms of any sequence is infinite. The way of writing the sequence with the help of general term is:\n\n$\\{2n\\}, n = 1, 2, 3, \\dots$ or, $\\{2n\\}_{n=1}^{+\\infty}$ or, $\\{2n\\}$\n\nThe first quantity of the sequence is called the first term, the second quantity is called second term, the third quantity is called the third term etc. The first term of the sequence $1, 3, 5, 7, \\dots$ is $1$, the second term is $2$, etc. Followings are the four examples of sequence :\n\n$1, 2, 3, \\dots, n, \\dots$\n\n$1, 3, 5, \\dots, 2n - 1, \\dots$\n\n$1, 4, 9, \\dots, n^2, \\dots$\n\n$\\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}, \\dots, \\frac{n}{n+1}, \\dots$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work:\n\n1) The general terms of six sequences are given below. Write down the sequences:\n\n(1) $\\frac{1}{n}$ \n\n(2) $\\frac{n-1}{n+1}$ \n\n(3) $\\frac{1}{2^n}$ \n\n(4) $\\frac{1}{2^{n-1}}$ \n\n(5) $(-1)^{n+1} \\frac{n}{n+1}$ \n\n(6) $(-1)^{n-1} \\frac{n}{2n+1}$\n\n2) Each of you write a general term and then write the sequence.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Series\n\nIf the terms of a sequence are connected successively by $+$ sign, a series is obtained. Such as, $1 + 3 + 5 + 7 + \\dots$ is a series. The differences between any two successive terms of the series are equal. Again, $2 + 4 + 8 + 16 + \\dots$ is a series. The ratio of two successive terms is equal. Hence, the characteristic of any series depends upon the relation between its two successive terms. Among the series, two important series are arithmetic series and geometric series.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

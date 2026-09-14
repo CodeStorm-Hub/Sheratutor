@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 92,
+  "pdf_page_no": 97,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. সাধারণ দশমিক রূপে প্রকাশ কর:\nক) $10^5$ খ) $10^{-5}$ গ) $2.53 \\times 10^4$ ঘ) $9.813 \\times 10^{-3}$ ঙ) $3.12 \\times 10^{-5}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. নিচের সংখ্যাগুলোর সাধারণ লগের পূর্ণক বের কর (ক্যালকুলেটর ব্যবহার না করে):\nক) $4820$ খ) $72.245$ গ) $1.734$ ঘ) $0.045$ ঙ) $0.000036$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. ক্যালকুলেটর ব্যবহার করে নিচের সংখ্যাগুলোর সাধারণ লগের পূর্ণক ও অংশক নির্ণয় কর:\nক) $27$ খ) $63.147$ গ) $1.405$ ঘ) $0.0456$ ঙ) $0.000673$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. গুণফলের/ভাগফলের সাধারণ লগ (আসন্ন পাঁচ দশমিক স্থান পর্যন্ত) নির্ণয় কর:\nক) $5.34 \\times 8.7$ খ) $0.79 \\times 0.56$ গ) $22.2642 \\div 3.42$ ঘ) $0.19926 \\div 32.4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. যদি $\\log 2 = 0.30103, \\log 3 = 0.47712$ এবং $\\log 7 = 0.85410$ হয়, তবে নিচের রাশিগুলোর মান নির্ণয় কর:\nক) $\\log 9$ খ) $\\log 28$ গ) $\\log 42$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৭. দেওয়া আছে, $x = 1000$ এবং $y = 0.0625$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $x$ কে $a^n b^n$ আকারে প্রকাশ কর, যেখানে $a$ ও $b$ মৌলিক সংখ্যা।\nখ) $x$ ও $y$ এর গুণফলকে বৈজ্ঞানিক আকারে প্রকাশ কর।\nগ) $xy$ এর সাধারণ লগের পূর্ণক ও অংশক নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

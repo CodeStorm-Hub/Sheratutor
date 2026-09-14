@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 264,
+  "pdf_page_no": 269,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": "11.1.2",
+      "section_title": "Constituents of Petroleum and their Separation",
+      "chunk_type": "theory",
+      "content_markdown": "Petroleum is generally available 5000 feet or even deeper into the layers of rocks. Sometimes, petroleum is accompanied by natural gas which puts a pressure on the upper surface of petroleum. When a well is dug, this natural gas helps the petroleum to come out into the upper surface of the earth. The Petroleum which is obtained directly from the well is called Crude Oil or Petroleum. This Crude Oil is opaque and sometimes has a bad smell because of the presence of some compounds of Sulphur. This Petroleum is mainly a mixture of different kinds of hydrocarbons and it is not directly useable. This Crude Oil is separated through the Fractional Distillation process based on boiling points.\n\nFractional Distillation is also a kind of distillation which contains some long columns for condensation of vapour. Again these columns are divided into different parts and the lowest part has the highest temperature. The higher the part is, the lower the temperature is. As a result, if the combination of more than one liquid is inserted into the lower portion of the Fractional Distillation columns after vaporisation through heating, the combination will go to the upper part of the columns. As the upper parts have a lower temperature, each component of the combination of the liquid is separated into different parts of the Fractional Distillation columns according to the boiling points. Petroleum is a combination of different hydrocarbons and",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.01: Fractional Distillation of petroleum.",
+      "figure_no": "11.01",
+      "box_2d": [
+        377,
+        396,
+        792,
+        882
+      ],
+      "description": "Schematic diagram of a fractional distillation tower for crude petroleum showing various boiling point fractions like petroleum gas, gasoline, naphtha, kerosene, diesel oil, lubricating oil, fuel oil, and bitumen.",
+      "reading_order_anchor": "Fractional Distillation is also a kind of distillation..."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "printed_page_no": 44,
+  "pdf_page_no": 49,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "19. Draw the points $(-3, 2), (0, -5), \\left(\\frac{1}{2}, -\\frac{5}{6}\\right)$ on graph paper.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "20. Draw the points $(1, 2), (-1, 1), (11, 7)$ on the graph paper and show that all the three points are on the same straight line.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "21. Universal set $U = \\{x : x \\in \\mathbb{N} \\text{ and } x \\text{ is an odd number\\}}$\n$A = \\{x : x \\in \\mathbb{N} \\text{ and } 2 \\le x \\le 7\\}$\n$B = \\{x : x \\in \\mathbb{N} \\text{ and } 3 < x < 6\\}$\n$C = \\{x : x \\in \\mathbb{N} \\text{ and } x^2 > 5 \\text{ and } x^3 < 130\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Express set $A$ in tabular method.\n2) Determine $A'$ and $C \\setminus B$.\n3) Determine $B \\times C$ and $P(A \\cap C)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "22. Look at the Venn diagram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Express the set $B$ in set building method.\n2) Using the facts mentioned above, verify the relation $A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$.\n3) If $S = (B \\cup C)^c \\times A$ then determine $\\text{dom } S$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "23. $y = f(x) = \\dfrac{4x - 7}{2x - 4}$ is a function.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Determine the value of $f\\left(-\\frac{1}{2}\\right)$.\n2) Determine the value of $\\dfrac{f(x) + 2}{f(x) - 1}$.\n3) Prove that $f(y) = x$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "24. Draw the graph for the function as belows.\n1) $y = 3x + 5$\n2) $x + y = 2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Venn diagram",
+      "figure_no": "2.01",
+      "box_2d": [
+        435,
+        578,
+        616,
+        882
+      ],
+      "description": "A Venn diagram showing three overlapping sets A, B, and C within a universal set U, with regions labeled with numbers 1 through 8.",
+      "reading_order_anchor": "22. Look at the Venn diagram."
+    }
+  ]
+}

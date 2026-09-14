@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 313,
+  "pdf_page_no": 318,
+  "chapter_no": 15,
+  "chapter_title": "Area Related Theorems",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof: The area of $\\triangle ABC = \\frac{1}{2} \\times AB \\times CL$ and\n\nThe area of $\\triangle ABE = \\frac{1}{2} \\times AB \\times EK$\n\n$\\because CL = EK$, [by construction $AL \\parallel FC$]\n\n$\\therefore$ The area of $\\triangle ABC =$ The area of $\\triangle ABE$\n\n$\\implies \\frac{1}{2}$ area of the parallelogram $ABCD = \\frac{1}{2}$ area of the parallelogram $ABEF$.\n\n$\\therefore$ Area of the parallelogram $ABCD =$ area of the parallelogram $ABEF$. (proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "38",
+      "section_title": "Pythagoras Theorem",
+      "chunk_type": "theory",
+      "content_markdown": "In a right-angled triangle, the area of the square drawn on the hypotenuse is equal to the sum of the areas of the squares drawn on the other two sides.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Special Nomination:** Let $ABC$ be a right-angled triangle in which $\\angle ACB$ is a right angle and hypotenuse is $AB$. It is to be proved that, $AB^2 = BC^2 + AC^2$.\n\n**Drawing:** Draw three squares $ABED$, $ACGF$ and $BCHK$ on the external sides of $AB$, $AC$ and $BC$ respectively. Through $C$, draw the line segment $CL$ parallel to $AD$ or $BE$. Let $CL$ intersects $AB$ at $M$ and $DE$ at $L$ respectively. Join $C, D$ and $B, F$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:**\n\nStep 1. In $\\triangle CAD$ and $\\triangle BAF$, $CA = AF$, $AD = AB$ and included $\\angle CAD = \\angle CAB + \\angle BAD = \\angle CAB + \\angle CAF = $ included $\\angle BAF$ [$\\angle BAD = \\angle CAF = 1$ right angle]\n\nTherefore, $\\triangle CAD \\cong \\triangle BAF$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 15.38: Pythagoras Theorem",
+      "figure_no": "15.38",
+      "box_2d": [
+        525,
+        625,
+        775,
+        875
+      ],
+      "description": "A geometric diagram showing a right-angled triangle ABC with squares constructed on each of its sides AB, AC, and BC, with lines drawn to facilitate the proof of the Pythagoras theorem.",
+      "reading_order_anchor": "Drawing: Draw three squares ABED, ACGF and BCHK on the external sides of AB, AC and BC respectively."
+    }
+  ]
+}

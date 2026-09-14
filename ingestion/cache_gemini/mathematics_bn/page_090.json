@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 90,
+  "pdf_page_no": 95,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "সাধারণ লগের অংশক (Mantissa of Common Log)",
+      "chunk_type": "theory",
+      "content_markdown": "কোনো সংখ্যার সাধারণ লগের অংশক $1$ অপেক্ষা ছোট একটি অঋণাত্মক সংখ্যা। এটি মূলত অমূলদ সংখ্যা। তবে একটি নির্দিষ্ট দশমিক স্থান পর্যন্ত অংশকের মান বের করা হয়। কোনো সংখ্যার লগের অংশক লগ তালিকা থেকে বের করা যায়। আবার তা ক্যালকুলেটরের সাহায্যেও বের করা যায়। আমরা দ্বিতীয় পদ্ধতিতে, অর্থাৎ ক্যালকুলেটরের সাহায্যে সংখ্যার লগের অংশক বের করবো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২. $\\log 2717$ এর পূর্ণক ও অংশক নির্ণয় কর:\n\nসমাধান: ক্যালকুলেটর ব্যবহার করি: $AC$ $\\log$ $2717$ $=$ $3.43409$\n\n$\\therefore \\log 2717$ এর পূর্ণক $3$ এবং অংশক $.43409$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩. $\\log 43.517$ এর পূর্ণক ও অংশক বের কর।\n\nসমাধান: ক্যালকুলেটর ব্যবহার করি: $AC$ $\\log$ $43.517$ $=$ $1.63866$\n\n$\\therefore \\log 43.517$ এর পূর্ণক $1$ এবং অংশক $.63866$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. $0.00836$ এর লগের পূর্ণক ও অংশক কত?\n\nসমাধান: ক্যালকুলেটর ব্যবহার করি: $AC$ $\\log$ $0.00836$ $=$ $-2.07779$\n\n$-2.07779 = -3 + 0.92221 = \\bar{3}.92221$\n\n$\\therefore \\log 0.00836$ এর পূর্ণক $-3$ এবং অংশক $.92221$, অংশকটি সর্বদা অঋণাত্মক হওয়ায় এখানে পূর্ণকের ‘—’ চিহ্নটি সংখ্যাটির ওপরে দেখানো হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৫. $\\log_{e} 10$ নির্ণয় কর:\n\nসমাধান: $\\log_{e} 10 = \\frac{1}{\\log_{10} e} = \\frac{1}{\\log_{10} 2.71828} = \\frac{1}{0.43429}$ [ক্যালকুলেটর ব্যবহার করে]\n\n$= 2.30259$ (প্রায়)\n\nবিকল্প পদ্ধতিতে, ক্যালকুলেটর ব্যবহার করি: $AC$ $\\ln$ $10$ $=$ $2.30259$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ: ক্যালকুলেটর ব্যবহার করে নিম্নলিখিত সংখ্যাগুলোর $10$ ও $e$ ভিত্তিক লগ নির্ণয় কর:\n\nক) $2550$ খ) $52.143$ গ) $0.4145$ ঘ) $0.0742$",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

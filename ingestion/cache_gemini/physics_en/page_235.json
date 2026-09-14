@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 235,
+  "pdf_page_no": 240,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": "8.7",
+      "section_title": "Magnification",
+      "chunk_type": "theory",
+      "content_markdown": "We have seen that an image can be larger or smaller than the real object, this is called magnification. Magnification refers to how large the image is than the real object. If the length of an object is $l$ and length of its image is $l'$, then magnification is\n$$m = \\frac{l'}{l}$$\nWhen we see an object through a telescope, how large the object is when seen with the naked eye as compared to its size as seen by a telescope is known as the telescope's magnification.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.8",
+      "section_title": "Use of Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.8.1",
+      "section_title": "Plane Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "Simple mirrors are most commonly used in our daily lives. Ordinary mirrors are used whenever a light ray travelling in one direction is to be redirected in another direction. You must have noticed that in a plane mirror right and left side alternates. So if we want to keep the right and left unchanged, the image of one mirror is to be reflected by a second mirror.\n\nThe left and right sides are interchanged in a plane mirror image. Right and left do not interchange if two mirrors are used as a single mirror by keeping them at $90^\\circ$ angle with each other. You may demonstrate it by using two mirrors (Figure 8.26).",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.26: In ordinary mirror the left and right are interchanged, where as two mirrors are kept at right angles to leave left and right unchanged.",
+      "figure_no": "8.26",
+      "box_2d": [
+        693,
+        297,
+        874,
+        739
+      ],
+      "description": "Illustration showing a person looking into a single plane mirror where left and right appear interchanged, and looking into two mirrors kept at right angles where left and right remain unchanged.",
+      "reading_order_anchor": "The left and right sides are interchanged in a plane mirror image."
+    }
+  ]
+}

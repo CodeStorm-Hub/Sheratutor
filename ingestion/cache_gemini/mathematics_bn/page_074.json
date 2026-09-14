@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 74,
+  "pdf_page_no": 79,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) প্রমাণ কর যে, $x^5 + \\frac{1}{x^5} = 123$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩৪. কোনো সমিতির সদস্যগণ প্রত্যেকেই সদস্য সংখ্যার 100 গুণ চাঁদা দেওয়ার সিদ্ধান্ত নিলেন। কিন্তু 4 জন সদস্য চাঁদা না দেওয়ায় প্রত্যেকের চাঁদার পরিমাণ পূর্বের চেয়ে 500 টাকা বেড়ে গেল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) সমিতির সদস্য সংখ্যা $x$ এবং মোট চাঁদার পরিমাণ $A$ হলে, এদের মধ্যে সম্পর্ক নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) সমিতির সদস্য সংখ্যা ও মোট চাঁদার পরিমাণ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) মোট চাঁদার $\\frac{1}{4}$ অংশ 5% হারে এবং অবশিষ্ট টাকা 4% হারে 2 বছরের জন্য সরল মুনাফায় বিনিয়োগ করা হলো। মোট মুনাফা নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩৫. বনভোজনে যাওয়ার জন্য একটি বাস 2400 টাকায় ভাড়া করা হলো এবং শর্ত হলো প্রত্যেক যাত্রী সমান ভাড়া বহন করবে। 10 জন যাত্রী না আসায় মাথাপিছু ভাড়া 8 (আট) টাকা বৃদ্ধি পেল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) মাথাপিছু বর্ধিত ভাড়ার পরিমাণ, না আসা যাত্রী সংখ্যার শতকরা কত তা নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) বাসে যাওয়া যাত্রীর মাথাপিছু ভাড়া নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) বাস ভাড়ার সমপরিমাণ টাকার 5% হার মুনাফায় 13 বছরের সরল মুনাফা ও চক্রবৃদ্ধি মুনাফার পার্থক্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩৬. দাঁড় বেয়ে একটি খালের $A$ বিন্দু থেকে $B$ বিন্দুতে যেয়ে ফিরে আসতে হবে। দাঁড়ের বেগ ধ্রুব হলে স্রোত থাকলে সময় বেশি লাগবে না স্রোত না থাকলে সময় বেশি লাগবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩৭. একটি মাঠে ধ্রুব হারে ঘাস বৃদ্ধি পায়। 17টি গরু 30 দিনে সব ঘাস খেয়ে ফেলতে পারে। তবে 19টি গরুর লাগে 24 দিন। একদল গরু 6 দিন ঘাস খাওয়ার পর 4টি গরু বিক্রয় করা হলে ঘাস খাওয়া শেষ করতে আরও 2 দিন লাগলো। দলটিতে শুরুতে কতগুলো গরু ছিল?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩৮. দুই ভাইয়ের একটি প্রশিক্ষিত ঘোড়া ছিল যা যেকোনো নির্দেশই পালন করতে পারে। দুই ভাই একই সময়ে বাসা থেকে রওয়ানা হয়ে 20 মাইল দূরে একটি বৈশাখী মেলায় যেতে চায়। ঘোড়া যেকোনো মুহূর্তে মাত্র একজন ভাইকে বহন করতে পারে। ভাইদের বেগ ঘণ্টায় 4 মাইল এবং ঘোড়ার বেগ ঘণ্টায় (মানুষসহ কিংবা ছাড়া) 10 মাইল হলে সর্বনিম্ন কত সময়ে তারা মেলায় পৌঁছতে পারবে? প্রত্যেক ভাই কতটা পথ হাঁটবে?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 107,
+  "pdf_page_no": 112,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "over the total distance of 240 km in 5 hours. How far did the car pass over at the speed of 60 km per hour ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "24. Distance between Dhaka New Market and Gabtoli is 12 km. From New Market Sajal departed for Gabtoli by rickshaw at the speed of 6 km per hour and Kajal from the same place departed for Gabtoli on foot at the speed of 4 km per hour. After reaching Gabtoli Sajal took rest for 30 minutes and then departed for New Market at the same speed. At which distance from New Market will they meet?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "25. Number of passengers in a steamer is 376. The fare per head for the cabin is thrice that for the deck. The fare per head for the deck is Tk. 60 and the total fare collected is Tk. 33840.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Letting the number of passengers on the deck as $x$, form an equation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) What is the number of passengers on the deck and in the cabin?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) What is the fare per head for the cabin?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Quadratic Equations in One Variable",
+      "chunk_type": "theory",
+      "content_markdown": "Equations of the form $ax^2 + bx + c = 0$ [where, $a, b, c$ are constants and $a \\neq 0$] are called the quadratic equation in one variable. Left hand side of a quadratic equation is a polynomial of second degree, right hand side is generally taken to be zero.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Length and breadth of a rectangular region of area 12 square cm. are respectively $x$ cm. and $(x - 1)$ cm.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

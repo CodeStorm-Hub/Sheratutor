@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 98,
+  "pdf_page_no": 103,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We have known in the previous class what equation is and learnt its usage. We have also learnt the solution of simple equations with one variable and acquired knowledge thoroughly about the solution of simple equations by forming equations from real life problems. In this chapter, linear and quadratic equations and identities have been discussed and their usages have been shown to solve the real life problems.\n\nAt the end of the chapter, the students will be able to\n\n* explain the conception of variable.\n* explain the difference between equation and identity.\n* solve the linear equations.\n* solve by forming linear equations based on real life problems.\n* solve the quadratic equations and find the solution sets.\n* form the quadratic equations based on real life problems and solve.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.1",
+      "section_title": "Variable",
+      "chunk_type": "theory",
+      "content_markdown": "We know, $x + 3 = 5$ is an equation. To solve it, we find the value of the unknown quantity $x$. Here the unknown quantity $x$ is a variable. Again, to solve the equation $x + a = 5$, we find the value of $x$, not the value of $a$. Here, $x$ is assumed as variable and $a$ as constant. In this case, we shall get the values of $x$ in terms of $a$. But if we determine the value of $a$, we shall write $a = 5 - x$; that is, the value of $a$ will be obtained in terms of $x$. Here $a$ is considered a variable and $x$ a constant. But if no direction is given, conventionally $x$ is considered a variable. Generally, the small letter $x, y, z$, the ending part of English alphabet are taken as variables and $a, b, c$, the starting part of the alphabet are taken as constants.\n\nThe equation, which contains only one variable, is called a linear equation with one variable. Such as, $x + 3 = 5$, $x^2 - 5x + b = 0$, $2y^2 + 5y - 3 = 0$ etc.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 228,
+  "pdf_page_no": 233,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The line $FP$ intersects line $OX$ at the point $X'$ i.e. the image of the point $X$ will be formed on the point $X'$. The perpendicular drawn from $X'$ to $OY$ will intersect line $OY$ at $Y'$. Since it appears that the reflection of $X$ is coming from point $X'$, similarly it will appear that reflection of $Y$ is coming from $Y'$. Hence, $X'Y'$ will be the image of $XY$.\n\nWe can observe that $X'Y'$ is always smaller than $XY$ and the further $XY$ is from the convex mirror, the smaller $X'Y'$ will get! One should know how to draw the image of an object placed in front of a concave or convex mirror using the laws of reflection. It is a very important procedure in physics.\n\nIt is clear that actually no light is coming from $X'Y'$, it just appears that the image is there. Hence it is a virtual image. Comparing this with the images formed by a plane mirror, we can see that-",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) The position of this image will be between the focus and pole of the mirror. The further the object is, the closer the image to the focus.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) This image is virtual.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) This image is upright.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) This image is small, and the further the object moves from the mirror, the smaller the image becomes.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.6",
+      "section_title": "Concave Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "The inner side of a shiny spoon is an example of a concave mirror. Those of you who have looked at the inner side of a spoon must have noticed (Figure 8.20) that the image is small, and the interesting thing is that the image is inverted! You can take your finger very close to the spoon and notice that the finger is upright. Now move your finger slowly away from the spoon, notice that your finger is starting to look bigger (we were able to produce images in plane mirror or convex mirror but never images larger than the real size of the object this is the first time we are seeing larger",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.20: A spoon works as a concave mirror",
+      "figure_no": "8.20",
+      "box_2d": [
+        630,
+        588,
+        830,
+        860
+      ],
+      "description": "A person looking at their reflection using the inner side of a spoon.",
+      "reading_order_anchor": "8.6 Concave Mirror"
+    }
+  ]
+}

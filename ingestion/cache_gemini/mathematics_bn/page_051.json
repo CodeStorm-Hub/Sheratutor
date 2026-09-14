@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 51,
+  "pdf_page_no": 56,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$a^3 - b^3 = (a - b)^3 + 3ab(a - b)$$\n$$= (a - b)\\{(a - b)^2 + 3ab\\}$$\n$$= (a - b)(a^2 - 2ab + b^2 + 3ab)$$\n$$= (a - b)(a^2 + ab + b^2)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২. $2x + 3y$ এর ঘন নির্ণয় কর।\n\nসমাধান: $(2x + 3y)^3$\n$$= (2x)^3 + 3(2x)^2 \\cdot 3y + 3 \\cdot 2x(3y)^2 + (3y)^3$$\n$$= 8x^3 + 3 \\cdot 4x^2 \\cdot 3y + 3 \\cdot 2x \\cdot 9y^2 + 27y^3$$\n$$= 8x^3 + 36x^2y + 54xy^2 + 27y^3$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩. $2x - y$ এর ঘন নির্ণয় কর।\n\nসমাধান: $(2x - y)^3$\n$$= (2x)^3 - 3(2x)^2 \\cdot y + 3 \\cdot 2x \\cdot y^2 - y^3$$\n$$= 8x^3 - 3 \\cdot 4x^2 \\cdot y + 3 \\cdot 2x \\cdot y^2 - y^3$$\n$$= 8x^3 - 12x^2y + 6xy^2 - y^3$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "কাজ: সূত্রের সাহায্যে ঘন নির্ণয় কর:\nক) $3x + 2y$ খ) $3x - 4y$ গ) $397$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. $x = 37$ হলে, $8x^3 + 72x^2 + 216x + 216$ এর মান কত?\n\nসমাধান: $8x^3 + 72x^2 + 216x + 216$\n$$= (2x)^3 + 3 \\cdot (2x)^2 \\cdot 6 + 3 \\cdot 2x \\cdot (6)^2 + (6)^3$$\n$$= (2x + 6)^3 = (2 \\times 37 + 6)^3$$ [মান বসিয়ে]\n$$= (74 + 6)^3 = (80)^3 = 512000$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৫. যদি $x - y = 8$ এবং $xy = 5$ হয়, তবে $x^3 - y^3 + 8(x + y)^2$ এর মান কত?\n\nসমাধান: $x^3 - y^3 + 8(x + y)^2$\n$$= (x - y)^3 + 3xy(x - y) + 8\\{(x - y)^2 + 4xy\\}$$\n$$= (8)^3 + 3 \\times 5 \\times 8 + 8(8^2 + 4 \\times 5)$$ [মান বসিয়ে]\n$$= 8^3 + 15 \\times 8 + 8(8^2 + 4 \\times 5)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

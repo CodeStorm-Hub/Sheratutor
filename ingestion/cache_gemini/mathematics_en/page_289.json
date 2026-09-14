@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 289,
+  "pdf_page_no": 294,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "For comparing two quantities, their ratios are to be considered. Again, for determining ratios, the two quantities are to be measured in the same units. In algebra we have discussed this in detail.\n\nAt the end of this chapter, the students will be able to —\n\n* explain geometric ratios.\n* explain the internal division of a line segment.\n* verify and prove theorems related to ratios.\n* verify and prove theorems related to similarity.\n* explain the concepts of symmetry.\n* verify line and rotational symmetry of real objects practically.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Properties of Ratio and Proportion",
+      "chunk_type": "theory",
+      "content_markdown": "(i) If $a : b = x : y$ and $c : d = x : y$, it follows that, $a : b = c : d$.\n\n(ii) If $a : b = b : a$, it follows that, $a = b$\n\n(iii) If $a : b = x : y$, it follows that, $b : a = y : x$ (inversendo).\n\n(iv) If $a : b = x : y$, it follows that, $a : x = b : y$ (alternendo).\n\n(v) If $a : b = c : d$, it follows that, $ad = bc$ (cross-multiplication)\n\n(vi) If $a : b = x : y$, it follows that, $a + b : b = x + y : y$ (componendo) and $a - b : b = x - y : y$ (dividendo)\n\n(vii) If $\\frac{a}{b} = \\frac{c}{d}$, it follows that $\\frac{a + b}{a - b} = \\frac{c + d}{c - d}$ (componendo and dividendo).",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

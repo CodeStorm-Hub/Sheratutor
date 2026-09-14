@@ -1,0 +1,89 @@
+{
+  "printed_page_no": 147,
+  "pdf_page_no": 152,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": "7.1",
+      "section_title": "Construction of Triangles",
+      "chunk_type": "theory",
+      "content_markdown": "1. Three sides\n2. Two sides and their included angle.\n3. Two angles and their adjacent sides\n4. Two angles and an opposite side\n5. Two sides and an opposite angle\n6. Hypotenuse and a side of a right-angled triangle",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of a triangle given three sides",
+      "figure_no": "7.01",
+      "box_2d": [
+        85,
+        545,
+        185,
+        845
+      ],
+      "description": "Geometric construction of a triangle with sides a, b, and c.",
+      "reading_order_anchor": "1. Three sides"
+    },
+    {
+      "caption": "Fig 7.02: Construction of a triangle given two sides and their included angle",
+      "figure_no": "7.02",
+      "box_2d": [
+        195,
+        545,
+        405,
+        845
+      ],
+      "description": "Geometric construction of a triangle with sides a, b, and included angle x.",
+      "reading_order_anchor": "2. Two sides and their included angle."
+    },
+    {
+      "caption": "Fig 7.03: Construction of a triangle given two angles and their adjacent side",
+      "figure_no": "7.03",
+      "box_2d": [
+        415,
+        515,
+        555,
+        845
+      ],
+      "description": "Geometric construction of a triangle with angles x, y, and adjacent side a.",
+      "reading_order_anchor": "3. Two angles and their adjacent sides"
+    },
+    {
+      "caption": "Fig 7.04: Construction of a triangle given two angles and an opposite side",
+      "figure_no": "7.04",
+      "box_2d": [
+        575,
+        515,
+        705,
+        845
+      ],
+      "description": "Geometric construction of a triangle with angles x, y, and opposite side a.",
+      "reading_order_anchor": "4. Two angles and an opposite side"
+    },
+    {
+      "caption": "Fig 7.05: Construction of a triangle given two sides and an opposite angle",
+      "figure_no": "7.05",
+      "box_2d": [
+        715,
+        515,
+        825,
+        845
+      ],
+      "description": "Geometric construction of a triangle with sides a, c, and opposite angle x.",
+      "reading_order_anchor": "5. Two sides and an opposite angle"
+    },
+    {
+      "caption": "Fig 7.06: Construction of a right-angled triangle given hypotenuse and a side",
+      "figure_no": "7.06",
+      "box_2d": [
+        835,
+        545,
+        965,
+        845
+      ],
+      "description": "Geometric construction of a right-angled triangle with hypotenuse b and side c.",
+      "reading_order_anchor": "6. Hypotenuse and a side of a right-angled triangle"
+    }
+  ]
+}

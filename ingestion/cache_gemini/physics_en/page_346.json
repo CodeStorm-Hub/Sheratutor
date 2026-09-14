@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 346,
+  "pdf_page_no": 351,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. What will happen to the induced electric current, if the number of turns of the coil is increased?\na) The electric current will be reduced\nb) The electric current will be increased\nc) The magnitude of electric current will be zero\nd) The magnitude of electric current will be negative",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Answer the following question based on the diagram:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is the name of the object marked A?\n(b) Explain the principle on which this machine has been made.\n(c) Calculate the electric current in the primary coil of this device.\n(d) Explain the function of this device mathematically on the basis of data.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. A straight long wire is passed through a large piece of paper perpendicularly and connecting a $1.5\\text{ V}$ pencil battery with it, current is flown through the wire and some iron dust is spread on the paper.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is the magnetic effect of current?\n(b) How will the iron dust get arranged on the paper?\n(c) What changes are to be made to the structure of the wire to increase the intensity of the induced magnetic field? Elaborate.\n(d) Analyse the phenomenon that will happen if the wire is wrapped around an iron nail and if one end of the iron nail is taken near to the iron dust?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Transformer schematic",
+      "figure_no": "12.01",
+      "box_2d": [
+        415,
+        515,
+        560,
+        875
+      ],
+      "description": "A schematic diagram of a transformer showing primary and secondary coils, a core marked A, and voltage/current values.",
+      "reading_order_anchor": "1. Answer the following question based on the diagram:"
+    }
+  ]
+}

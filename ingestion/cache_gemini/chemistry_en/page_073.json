@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 73,
+  "pdf_page_no": 78,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Problem: Of the elements Be, Ca, Sr, Ba, Mg and Ra, some display greater electron affinity and some lesser.\n\nSolution: All these elements belong to group-2. Be among them has got the lowest atomic radius and that is why, its electron affinity is higher. Again, Ra among them has the highest radius and the least electron affinity.\n\nProblem: Of the elements Na, Mg, Al, and Si, which has the strongest electron affinity and which has the least?\n\nSolution: All these elements belong to period-3. Na among them has got the highest atomic radius and that is why, Sodium’s electron affinity is the least. Again, Si among them has the least radius and the highest electron affinity.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**f. Electronegativity:** When two atoms turn into a molecule by covalent bonds, the atoms in that molecule attract the electrons towards themselves. This attraction is called electronegativity. It is a periodic property. In the same period, elements of the left side have a greater radius than those of the right side. When the atomic radius is less, the electronegativity is greater and vice-versa. For example, The Na atom in the period-3 of the table has the least electronegative attraction and $\\text{Cl}$ has the most.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.7",
+      "section_title": "The Special Names of Elements Present in Various Groups",
+      "chunk_type": "theory",
+      "content_markdown": "Elements were bestowed special names at different times based on their physical and chemical properties. Apart from metals, non-metals and sub metals already discussed, there are also some others.\n\n**Alkali Metals:** There are seven elements in Group-1 of the table. Apart from Hydrogen, the six other elements here (Lithium, Sodium, Potassium, Rubidium, Cesium and Francium) are called alkali metals. They are thus called since all of them are soluble in water and when dissolved in water, they produce Hydrogen gas and alkali.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,67 @@
+{
+  "printed_page_no": 323,
+  "pdf_page_no": 328,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Semi perimeter $s = \\frac{a + b + c}{2} = \\frac{7 + 8 + 9}{2} \\text{ cm} = 12 \\text{ cm}$\n$\\therefore$ Its area $= \\sqrt{s(s - a)(s - b)(s - c)}$\n$= \\sqrt{12(12 - 7)(12 - 8)(12 - 9)} \\text{ sq. cm}$\n$= \\sqrt{12 \\times 5 \\times 4 \\times 3} \\text{ sq. cm}$\n$= \\sqrt{720} = 26.83 \\text{ sq. cm (approx.)}$\n$\\therefore$ The area of the triangle $26.83 \\text{ sq. cm (approx.)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. The area of an equilateral triangle increases by $3\\sqrt{3} \\text{ sq. metre}$ when the length of each side increases by 1 metre. Find the length of the side of the triangle.\n\nSolution:\nLet, the length of each side of the equilateral triangle is $a \\text{ metre}$. $\\therefore$ Its area $= \\frac{\\sqrt{3}}{4}a^2 \\text{ sq. metre}$.\nThe area of the triangle when the length of each side increases by 1 metre $= \\frac{\\sqrt{3}}{4}(a + 1)^2 \\text{ sq. metre}$.\nAccording to the question, $\\frac{\\sqrt{3}}{4}(a + 1)^2 - \\frac{\\sqrt{3}}{4}a^2 = 3\\sqrt{3}$\nor, $(a + 1)^2 - a^2 = 12 \\left[ \\text{dividing by } \\frac{\\sqrt{3}}{4} \\right]$\nor, $a^2 + 2a + 1 - a^2 = 12$ or, $2a = 11$ or, $a = 5.5$\nThe required length is $5.5 \\text{ metre}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. The length of the base of an isosceles triangle is $60 \\text{ cm}$. If its area is $1200 \\text{ sq. cm}$, find the length of equal sides.\n\nSolution: Let the base of the isosceles triangle be $b = 60 \\text{ cm}$ and the length of equal sides be $a$.\nArea of the triangle $= \\frac{b}{4}\\sqrt{4a^2 - b^2}$\nAccording to the question, $\\frac{b}{4}\\sqrt{4a^2 - b^2} = 1200$\nor, $\\frac{60}{4}\\sqrt{4a^2 - (60)^2} = 1200$\nor, $15\\sqrt{4a^2 - 3600} = 1200$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Triangle with sides 7cm, 8cm, 9cm",
+      "figure_no": "16.01",
+      "box_2d": [
+        115,
+        715,
+        243,
+        843
+      ],
+      "description": "A triangle with side lengths labeled 7 cm, 8 cm, and 9 cm.",
+      "reading_order_anchor": "Semi perimeter s = (a + b + c) / 2"
+    },
+    {
+      "caption": "Fig 16.02: Equilateral triangle with side a and a+1",
+      "figure_no": "16.02",
+      "box_2d": [
+        378,
+        694,
+        487,
+        861
+      ],
+      "description": "Two nested equilateral triangles, the inner one with side 'a' and the outer one with side 'a+1'.",
+      "reading_order_anchor": "Example 4"
+    },
+    {
+      "caption": "Fig 16.03: Isosceles triangle with base 60 cm and equal sides a",
+      "figure_no": "16.03",
+      "box_2d": [
+        809,
+        707,
+        931,
+        848
+      ],
+      "description": "An isosceles triangle with base labeled 60 cm and two equal sides labeled 'a'.",
+      "reading_order_anchor": "Example 5"
+    }
+  ]
+}

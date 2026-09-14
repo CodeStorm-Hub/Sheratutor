@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 296,
+  "pdf_page_no": 301,
+  "chapter_no": 10,
+  "chapter_title": "স্থির তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ভরের কারণে তাদের ভেতরে নিশ্চয়ই একটি মহাকর্ষ বলও আছে। দুটি বলের ভেতর কোনটি বড় এবং কত বড়?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. 1 নম্বর প্রশ্নের চার্জ দুটির জন্য তড়িৎ ক্ষেত্রের বলরেখাগুলো এঁকে দেখাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. 10.15 চিত্রে চার্জের জন্য সমবিভব রেখা দেখানো হয়েছে, সেখান থেকে তুমি তড়িৎ ক্ষেত্র দেখাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. 10.13 চিত্র দুটি চার্জের জন্য তড়িৎ ক্ষেত্র দেখানো আছে, সমবিভব রেখাগুলো এঁকে দেখাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "সঠিক উত্তরটির পাশে টিক ($\\checkmark$) চিহ্ন দাও\n\n1. কোনো বস্তুতে আধানের অস্তিত্ব নির্ণয়ের যন্ত্র হলো—\n(ক) অ্যামিটার\n(খ) ভোল্টমিটার\n(গ) অণুবীক্ষণ যন্ত্র\n(ঘ) তড়িৎবীক্ষণ যন্ত্র\n\n2. দুটি আধানের মধ্যকার তড়িৎ বল নিচের কোনটির ওপর নির্ভর করে না?\ni. আধান দুটির মধ্যবর্তী দূরত্বের ওপর।\nii. আধান দুটি যে মাধ্যমে অবস্থিত তার প্রকৃতির ওপর।\niii. আধান দুটির ভরের ওপর।\nকোনটি সঠিক\n(ক) i ও ii\n(খ) iii\n(গ) ii ও iii\n(ঘ) i, ii ও iii\n\n3. তড়িৎ তীব্রতার একক হচ্ছে\n(ক) $\\text{N}$\n(খ) $\\text{N m}$\n(গ) $\\text{N m}^{-1}$\n(ঘ) $\\text{N C}^{-1}$\n\n4. 10.18 চিত্রে\ni. A গোলক থেকে কিছু আধান B গোলকে যাবে\nii. B গোলক থেকে কিছু আধান A গোলকে যাবে\niii. আধান পার্থক্য সর্বদা সমান থাকে।\nনিচের কোনটি সঠিক?\n(ক) i\n(খ) ii\n(গ) iii\n(ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 10.18",
+      "figure_no": "10.18",
+      "box_2d": [
+        748,
+        595,
+        888,
+        856
+      ],
+      "description": "দুটি গোলক A এবং B যথাক্রমে 5V এবং 3V বিভবে এবং 6C ও 9C চার্জে সংযুক্ত রয়েছে",
+      "reading_order_anchor": "4. 10.18 চিত্রে"
+    }
+  ]
+}

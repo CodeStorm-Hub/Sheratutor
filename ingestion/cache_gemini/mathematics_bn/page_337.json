@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 337,
+  "pdf_page_no": 342,
+  "chapter_no": 17,
+  "chapter_title": "পরিসংখ্যান",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে, $n = 51$, যা বিজোড় সংখ্যা।\n$$\\therefore \\text{মধ্যক} = \\frac{51 + 1}{2} \\text{তম পদের মান} = 26 \\text{তম পদের মান} = 165$$\nনির্ণেয় মধ্যক $165$ সে.মি.।\nলক্ষ করি: $23$ থেকে $38$ তম পদের মান $165$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. নিচে $60$ জন শিক্ষার্থীর গণিতে প্রাপ্ত নম্বরের গণসংখ্যা নিবেশন সারণি। মধ্যক নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| প্রাপ্ত নম্বর | 40 | 45 | 50 | 55 | 60 | 70 | 80 | 85 | 90 | 95 | 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| গণসংখ্যা | 2 | 4 | 4 | 3 | 7 | 10 | 16 | 6 | 4 | 3 | 1 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান: মধ্যক নির্ণয়ের ক্রমযোজিত গণসংখ্যা সারণি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| প্রাপ্ত নম্বর | 40 | 45 | 50 | 55 | 60 | 70 | 80 | 85 | 90 | 95 | 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| গণসংখ্যা | 2 | 4 | 4 | 3 | 7 | 10 | 16 | 6 | 4 | 3 | 1 |\n| ক্রমযোজিত গণসংখ্যা | 2 | 6 | 10 | 13 | 20 | 30 | 46 | 52 | 56 | 59 | 60 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে, $n = 60$, যা জোড় সংখ্যা।\n$$\\therefore \\text{মধ্যক} = \\frac{\\frac{60}{2} \\text{তম পদ} + (\\frac{60}{2} + 1) \\text{তম পদ}}{2} = \\frac{30 \\text{তম পদ} + 31 \\text{তম পদ}}{2} = \\frac{70 + 80}{2} = 75$$\n$$\\therefore \\text{নির্ণেয় মধ্যক} = 75$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\nক) তোমাদের শ্রেণির $49$ জন শিক্ষার্থীর উচ্চতা (সে.মি.) নিয়ে গণসংখ্যা সারণি তৈরি কর এবং কোনো সূত্র ব্যবহার না করে মধ্যক নির্ণয় কর।\nখ) পূর্বের সমস্যা থেকে $9$ জনের উচ্চতা বাদ দিয়ে $40$ জনের উচ্চতার (সে.মি.) মধ্যক নির্ণয় কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "শ্রেণিবিন্যস্ত উপাত্তের মধ্যক নির্ণয়: শ্রেণিবিন্যস্ত উপাত্তের সংখ্যা $n$ হলে, $\\frac{n}{2}$ তম পদের মান হচ্ছে মধ্যক। আর $\\frac{n}{2}$ তম পদের মান বা মধ্যক নির্ণয়ে ব্যবহৃত সূত্র হলো:\n$$\\text{মধ্যক} = L + \\left( \\frac{n}{2} - F_c \\right) \\times \\frac{h}{f_m}$$\nযেখানে $L$ হলো যে শ্রেণিতে মধ্যক অবস্থিত সেই শ্রেণির নিম্নসীমা, $n$ গণসংখ্যা, $F_c$ মধ্যক শ্রেণির পূর্ববর্তী শ্রেণির যোজিত গণসংখ্যা, $f_m$ মধ্যক শ্রেণির গণসংখ্যা এবং $h$ শ্রেণি ব্যাপ্তি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২. নিচে একটি গণসংখ্যা নিবেশন সারণি দেওয়া আছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| সময় (সেকেন্ড) | 30 - 35 | 36 - 41 | 42 - 47 | 48 - 53 | 54 - 59 | 60 - 65 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| গণসংখ্যা | 3 | 10 | 18 | 25 | 8 | 6 |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

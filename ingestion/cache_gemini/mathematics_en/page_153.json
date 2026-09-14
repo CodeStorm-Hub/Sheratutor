@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 153,
+  "pdf_page_no": 158,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Solution",
+      "chunk_type": "worked_example",
+      "content_markdown": "1) $a = 3 \\text{ cm}$, $s = 6 \\text{ cm}$\n\nCut $AB = a$ from any ray $AX$. Draw $\\angle XAE = x$ at the point $A$. Take $AD = s$ from $AE$. Join $B, D$. Now draw $\\angle DBC$ equal to $\\angle ADB$ at the point $B$. The line segment $BC$ intersects $AD$ at the point $C$. $\\therefore ABC$ is the required triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "3) Let the perimeter of the square $p = 2s$. We are to draw the square.\n\nCut $AB = \\frac{1}{4}p$ from any ray $AX$. Draw $AE \\perp AB$ at the point $A$. Cut $AD = AB$ from $AE$. centring the points $B$ and $D$ draw two arcs equal radius of $\\frac{1}{4}p$ in the interior of $\\angle BAD$. The arcs intersects each other at the point $C$. Join $B, C$ and $C, D$.\n$\\therefore ABCD$ is the required square.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of triangle",
+      "figure_no": "7.01",
+      "box_2d": [
+        168,
+        175,
+        305,
+        615
+      ],
+      "description": "Geometric construction steps for a triangle given side a, angle x, and side s.",
+      "reading_order_anchor": "1) $a = 3 \\text{ cm}$, $s = 6 \\text{ cm}$"
+    },
+    {
+      "caption": "Fig 7.02: Construction of square",
+      "figure_no": "7.02",
+      "box_2d": [
+        560,
+        240,
+        930,
+        870
+      ],
+      "description": "Geometric construction steps for a square given perimeter p.",
+      "reading_order_anchor": "3) Let the perimeter of the square $p = 2s$. We are to draw the square."
+    }
+  ]
+}

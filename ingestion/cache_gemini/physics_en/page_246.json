@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 246,
+  "pdf_page_no": 251,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the first medium is air then taking $n_1 = 1$, (Figure 9.02) we can write\n\n$$n_2 = \\frac{\\sin \\theta_1}{\\sin \\theta_2}$$\n\nAs the value of $n_2$ is greater than 1, $\\theta_2 < \\theta_1$ i.e after refraction, the ray of light will bend towards the normal. We say the medium is denser if the value of $n$ is greater. We are not calling the medium denser due to its mass. Here the meaning of a denser medium is that the value of $n$ is more. Therefore, according to the second law of refraction, when a ray of light enters from a rarer medium to a denser medium, the refracted ray bends towards the normal. When it enters from a denser medium to a rarer medium, it goes away from the normal (Figure 9.02). Remember that refractive index of a medium has no direct relation with density of that medium.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here only the incident ray and refracted rays are drawn, as refraction of light is discussed, but we must remember that when a ray of light goes from one medium to another every time some amount of light is reflected. How much light will be reflected and how much light will refracted depends on the angle of incidence. When there is an increase in the angle of incidence, the reflection increases.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.02 : The refracted ray bends towards the normal when entering from a rarer medium to a denser medium, and it goes away from the normal when entering from a denser medium to a rarer medium.",
+      "figure_no": "9.02",
+      "box_2d": [
+        430,
+        161,
+        658,
+        832
+      ],
+      "description": "Ray diagrams showing light passing from a rarer medium to a denser medium (bending towards the normal) and from a denser medium to a rarer medium (bending away from the normal).",
+      "reading_order_anchor": "As the value of n_2 is greater than 1..."
+    }
+  ]
+}

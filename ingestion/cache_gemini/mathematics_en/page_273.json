@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 273,
+  "pdf_page_no": 278,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "the series can be determined successively by putting $n = 1, 2, 3, 4, \\cdots$ in the $n$th term.\n\nLet the first term of an arithmetic series be 3 and the common difference be 2.\nThen $n$th term of the series is $= 3 + (n - 1) \\times 2 = 2n + 1$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: If the first term of an arithmetic series is 5 and common difference is 7, determine the first six terms, 22nd term, $r$th term and $(2p + 1)$th term.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. Of the series $5 + 8 + 11 + 14 + \\cdots$ which term is 383?\n\nSolution: The first term of the series $a = 5$, common difference $d = 8 - 5 = 11 - 8 = 14 - 11 = 3$\n\n$\\therefore$ It is an arithmetic series.\n\nLet, $n$th term of the series $= 383$\n\nWe know that, $n$th term $= a + (n - 1)d$\n\n$\\therefore a + (n - 1)d = 383$\n\nor, $5 + (n - 1)3 = 383$\n\nor, $5 + 3n - 3 = 383$\n\nor, $3n = 383 - 5 + 3$\n\nor, $3n = 381$\n\nor, $n = \\frac{381}{3}$\n\nor, $n = 127$\n\n$\\therefore 127$th term of the given series is 383",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Sum of $n$ terms of an arithmetic series\n\nLet the first term of any arithmetic series be $a$, last term be $p$, common difference be $d$, number of terms be $n$ and sum of $n$ terms be $S_n$.\n\nWriting from the first term to the last and conversely from the last term to the first of the series we get,",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,121 @@
+{
+  "printed_page_no": 318,
+  "pdf_page_no": 323,
+  "chapter_no": 15,
+  "chapter_title": "Area Related Theorems",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "9. $X$ and $Y$ are the mid points of the sides $AB$ and $AC$ of $\\triangle ABC$. Prove that the area of $\\triangle AXY = \\frac{1}{4}(\\text{area of the triangular region } \\triangle ABC)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "10. $ABCD$ is a trapezium. The sides $AB$ and $CD$ are parallel to each other. Find the area of the region bounded by the trapezium $ABCD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "11. $P$ is any point interior to the parallelogram $ABCD$. Prove that the area of $\\triangle PAB + \\text{the area of } \\triangle PCD = \\frac{1}{2}(\\text{area of the parallelogram } ABCD)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "12. A line parallel to base $BC$ of the triangle $ABC$ intersects $AB$ and $AC$ at $D$ and $E$ respectively. Prove that, $\\triangle DBC = \\triangle EBC$ and $\\triangle DBF = \\triangle CDE$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "13. $\\angle A = 1$ right angle of the triangle $ABC$. $D$ is a point on $AC$. Prove that $BC^2 + AD^2 = BD^2 + AC^2$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "14. $ABC$ is an isosceles right triangle. $BC$ is its hypotenuse and $P$ is any point on $BC$. Prove that $PB^2 + PC^2 = 2PA^2$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "15. $\\angle C$ is an obtuse angle of $\\triangle ABC$; $AD$ is perpendicular to $BC$. Show that $AB^2 = AC^2 + BC^2 + 2BC \\cdot CD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "16. $\\angle C$ is an acute angle of $\\triangle ABC$; $AD$ is perpendicular to $BC$. Show that $AB^2 = AC^2 + BC^2 - 2BC \\cdot CD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "17. $QD$ is a median of the $\\triangle PQR$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Draw a proportional figure according to the stem.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Prove that, $PQ^2 + QR^2 = 2(PD^2 + QD^2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) If $PQ = QR = PR$, then prove that, $4QD^2 = 3PQ^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "18. $ABCD$ is a parallelogram where $AB = 5$ cm, $AD = 4$ cm and $\\angle BAD = 75^\\circ$. $APML$ is another parallelogram where $\\angle LAP = 60^\\circ$. Area of $\\triangle AED$ and area of parallelogram $APML$ are equal to the area of parallelogram $ABCD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Draw $\\angle BAD$ by using pencil, compass and scale.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Draw $\\triangle AED$ [drawing and description are must].",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Draw parallelogram $APML$ [drawing and description are must].",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

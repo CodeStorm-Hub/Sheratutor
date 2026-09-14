@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 212,
+  "pdf_page_no": 217,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "27. Solve: $3\\cot^2 60^\\circ + \\frac{1}{4}\\csc^2 30^\\circ + 5\\sin^2 45^\\circ - 4\\cos^2 60^\\circ$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "28. If $\\angle B = 90^\\circ$, $AB = 5\\text{ cm}$, $BC = 12\\text{ cm}$ of $\\triangle ABC$\n1) Find the length of $AC$.\n2) If $\\angle C = \\theta$, find the value of $\\sin \\theta + \\cos \\theta$.\n3) Using stem show that, $\\sec^2 A + \\csc^2 A = \\sec^2 A \\cdot \\csc^2 A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "29. In accordance of the given figure\n1) what is the measurement of $AC$?\n2) Find the value of $\\tan A + \\tan C$.\n3) Find the values of $x$ and $y$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "30. $\\sin \\theta = p$, $\\cos \\theta = q$, $\\tan \\theta = r$, where $\\theta$ is an acute angle.\n1) If $r = \\sqrt{(3)^{-1}}$, find the value of $\\theta$.\n2) If $p + q = \\sqrt{2}$, prove that $\\theta = 45^\\circ$.\n3) If $7p^2 + 3q^2 = 4$, show that, $\\tan \\theta = \\frac{1}{\\sqrt{3}}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "31. $ABC$ is a right-angled triangle whose $\\angle B = \\text{one right-angle}$ and $AB = BC$. Prove that, $\\frac{BC\\cos C - AC\\cos B}{BC\\cos B - AC\\cos A} + \\cos C = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "32. $ABC$ is a right-angled triangle whose $\\angle B = \\text{one right-angle}$ and $\\cot A + \\cot B = 2\\cot C$. Prove that, $AC^2 + BC^2 = 2AB^2$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Triangle ABC for question 29",
+      "figure_no": "9.01",
+      "box_2d": [
+        252,
+        656,
+        354,
+        854
+      ],
+      "description": "A right-angled triangle ABC with angle B as the right angle. Side AB has length 1, side BC has length sqrt(3). Angle A is divided into x+y and angle C is x-y.",
+      "reading_order_anchor": "29. In accordance of the given figure"
+    }
+  ]
+}

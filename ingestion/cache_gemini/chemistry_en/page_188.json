@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 188,
+  "pdf_page_no": 193,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "such metallic compounds or solutions. For example, in the electrolysis of sodium chloride, we find sodium metal at the cathode and chlorine gas at the anode.\n\nIn the electrolysis of molten pure aluminum oxide or alumina ($Al_2O_3$), aluminum metal is produced at the cathode and oxygen gas at the anode.\n\n$$Al_2O_3 \\rightleftharpoons 2Al^{3+} + 3O^{2-}$$\n\nReaction at the anode: $3O^{2-} \\rightarrow \\frac{3}{2}O_2 + 6e^{-}$\n\nReaction at the cathode: $2Al^{3+} + 6e^{-} \\rightarrow 2Al$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Purification of Metals",
+      "chunk_type": "theory",
+      "content_markdown": "**Purification of Metals:** After extraction, the metals contains various other elements mixed in them. Electrolysis is highly effective to purify these metals. Purification of copper, zinc, lead, aluminum etc. involves the electrolysis process. The same adulterated metal electrode of the adulterated metal is connected to the positive edge of the battery. A pure electrode of the same metal is connected to the negative edge of the battery. When electricity is passed through, the metallic ion from the impure electrode goes into the solution and from the solution the ion is transferred to the pure electrode. As a result, the pure electrode thickens while the impure electrode decays.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Electroplating",
+      "chunk_type": "theory",
+      "content_markdown": "**Electroplating:** Adding a coating of a metal on another metal is called electroplating. The process is used for increasing brightness of a metal or to prevent degradation of a metal. Less reactive metals do not react with oxygen of the air. To prevent degradation of a metal, a coating of a comparatively less reactive metal is given on the outer layer of that metal. Usually, nickel, chromium etc. metals are used in electroplating. Iron rusts and decays when it comes in contact with water vapor and air. Nickel, chromium or silver coating is used on iron. They prevent air and water vapors to come in direct contact with iron. The process is discussed below:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

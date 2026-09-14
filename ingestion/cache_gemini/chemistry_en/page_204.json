@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 204,
+  "pdf_page_no": 209,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. In the above picture:\n   i. $\\text{Ni}$ is corroded\n   ii. $\\text{Fe}$ acts as an anode\n   iii. Exchange of electron occurs\n\nWhich is correct?\n\n- a. i and ii\n- b. ii and iii\n- c. i and iii\n- iv. i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. Which of the followings acts as an oxidant in the dry cell?\n\n- a. $\\text{Zn}$ rod\n- b. $\\text{MnO}_2$\n- c. Carbon rod\n- d. $\\text{NH}_4^+$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. What is the name of the process of giving metallic coating on a different metal through electrolysis?\n\n- a. Volcanizing\n- b. Metal purification\n- c. Galvanizing\n- d. Electroplating",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. Which of the followings is used for striking a nucleus during a nuclear reaction?\n\n- a. Proton\n- b. Electron\n- c. Positron\n- d. Neutron",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. Electrolysis of an aqueous solution of $\\text{NaCl}$ with platinum electrode produces-\n   i. Hydrogen gas\n   ii. Chlorine gas\n   iii. Sodium hydroxide solution\n\nWhich is correct?\n\n- a. i & ii\n- b. ii & iii\n- c. i & iii\n- d. i, ii & iii",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Electrolytic cell setup showing Nickel and Iron electrodes",
+      "figure_no": "8.01",
+      "box_2d": [
+        133,
+        551,
+        377,
+        834
+      ],
+      "description": "Diagram of an electrolytic setup with a battery connected to Nickel and Iron electrodes immersed in a solution containing sulfate and nickel ions.",
+      "reading_order_anchor": "3. In the above picture"
+    }
+  ]
+}

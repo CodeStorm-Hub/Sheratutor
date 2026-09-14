@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 166,
+  "pdf_page_no": 171,
+  "chapter_no": 6,
+  "chapter_title": "বস্তুর উপর তাপের প্রভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$T_K - 273.15^{\\circ} = \\frac{5}{9}(T_F - 32^{\\circ})$$\n$$9T_K - 9 \\times 273.15^{\\circ} = 5T_F - 5 \\times 32^{\\circ}$$\n\nযদি $T_K$ এবং $T_F$ সমান হয়:\n\n$$4T_K = 9 \\times 273.15^{\\circ} - 5 \\times 32^{\\circ}$$\n$$T_K = 574.59\\text{ K}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** সুস্থ দেহের তাপমাত্রা $98.4^{\\circ}\\text{F}$, সেলসিয়াসে সেটা কত?\n\n**উত্তর:** সেলসিয়াস এবং ফারেনহাইট তাপমাত্রার সম্পর্কটি এ রকম:\n\n$$T_C = \\frac{5}{9}(T_F - 32^{\\circ})$$\n\nকাজেই $T_F = 98.4^{\\circ}$ হলে\n\n$$T_C = \\frac{5}{9}(98.4^{\\circ} - 32^{\\circ}) = 36.89^{\\circ}$$\n(অর্থাৎ $37^{\\circ}\\text{ C}$ এর কাছাকাছি)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** কোন তাপমাত্রায় সেলসিয়াস এবং কেলভিন স্কেল সমান?\n\n**উত্তর:** কখনোই না!",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3",
+      "section_title": "পদার্থের তাপীয় প্রসারণ (Thermal Expansion of Matter)",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3.1",
+      "section_title": "কঠিন পদার্থের প্রসারণ",
+      "chunk_type": "theory",
+      "content_markdown": "তাপ দিলে প্রায় সব পদার্থের আয়তনই একটু বেড়ে যায়। তাপ তাপমাত্রা এই বিষয়গুলো যদি আমরা আমাদের আণবিক মডেল দিয়ে ব্যাখ্যা করি, তাহলে এর কারণটা বোঝা কঠিন নয়। একটা কঠিন পদার্থকে আমরা অনেকগুলো অণু হিসেবে কল্পনা করতে পারি। তাদের ভেতর যে আণবিক বল সেটাকে আমরা স্প্রিংয়ের সাথে তুলনা করতে পারি। কঠিন পদার্থে অণুগুলো কীভাবে থাকে সেটা",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

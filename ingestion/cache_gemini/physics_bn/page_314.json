@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 314,
+  "pdf_page_no": 319,
+  "chapter_no": 11,
+  "chapter_title": "চল তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$I_1 = \\frac{V}{R_1} = \\frac{2}{3} \\text{ A}$$ \nCF রেজিস্টরের ভেতর দিয়ে প্রবাহিত তড়িৎ \n$$I_2 = \\frac{V}{R_2} = \\frac{2}{6} \\text{ A} = \\frac{1}{3} \\text{ A}$$ \nমোট কারেন্ট \n$$I = I_1 + I_2 = \\frac{2}{3} \\text{ A} + \\frac{1}{3} \\text{ A} = 1 \\text{ A}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.4",
+      "section_title": "তুল্য রোধ: শ্রেণি সংযোগ ( Equivalent Resistance: Series Connection )",
+      "chunk_type": "theory",
+      "content_markdown": "এবারে কোনো বর্তনীতে একাধিক রোধ থাকলে সেগুলোকে কীভাবে একটি তুল্য রোধ হিসেবে বিবেচনা করা যায় আমরা সেই বিষয়টি দেখে নেই। 11.11 চিত্রের সার্কিটে দুটো রোধ লাগানো আছে, যেহেতু C ভূমিসংলগ্ন তাই এর বিভব বা ভোল্টেজ শূন্য এবং A এর বিভব $V$। আমরা B এর বিভব কত জানি না, কিন্তু এটুকু জানি যে $R_1$ এবং $R_2$ দুটোর ভেতর দিয়েই সমান পরিমাণ বিদ্যুৎ $I$ প্রবাহিত হচ্ছে। আমরা এমনিতেই বলে দিতে পারি যে দুটো রোধের যোগফলটি হবে মোট রোধ $R$ এবং বিদ্যুৎ প্রবাহ হবে $I = V/R$ কিন্তু সেভাবে না লিখে আমরা বরং এটা প্রমাণ করে ফেলি।\n\nযদি ধরে নিই B এর বিভব $V_B$ তাহলে প্রথম রোধ $R_1$ এর জন্য লিখতে পারি :\n\n$$I = \\frac{V - V_B}{R_1}$$\n\nআবার দ্বিতীয় রোধ $R_2$ এর জন্য লিখতে পারি\n\n$$I = \\frac{V_B - 0}{R_2} = \\frac{V_B}{R_2}$$\n\nকাজেই\n\n$$I = \\frac{V - V_B}{R_1} = \\frac{V_B}{R_2}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 11.11: একটি বর্তনী বা সার্কিটে দুটি রোধ পরপর লাগানো।",
+      "figure_no": "11.11",
+      "box_2d": [
+        384,
+        570,
+        582,
+        878
+      ],
+      "description": "A circuit diagram showing two resistors R1 and R2 connected in series with a voltage source V and a ground connection C.",
+      "reading_order_anchor": "11.2.4 তুল্য রোধ: শ্রেণি সংযোগ ( Equivalent Resistance: Series Connection )"
+    }
+  ]
+}

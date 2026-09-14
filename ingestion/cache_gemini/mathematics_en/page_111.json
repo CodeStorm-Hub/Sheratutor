@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 111,
+  "pdf_page_no": 116,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $8x + 16 = 40$\nor, $8x = 40 - 16$\nor, $8x = 24$\nor, $x = 3$\n$\\therefore x + 4 = 3 + 4 = 7$\n$\\therefore \\frac{x}{x + 4} = \\frac{3}{7}$\n$\\therefore$ the fraction is $\\frac{3}{7}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 13.** A rectangular garden with length 50 metre and breadth 40 metre has of equal width all around the inside of the garden. If the area of the garden except the path is 1200 square metre, how much is the path wide in metre ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Solution:** Let the path be $x$ metre wide.\n\nWithout the path length of the garden is $(50 - 2x)$ metre and breadth is $(40 - 2x)$ metre\n\n$\\therefore$ Without the path area of the garden = $(50 - 2x) \\times (40 - 2x)$ square metre\n\nBy the question, $(50 - 2x) \\times (40 - 2x) = 1200$\nor, $2000 - 80x - 100x + 4x^2 = 1200$\nor, $4x^2 - 180x + 800 = 0$\nor, $x^2 - 45x + 200 = 0$ [dividing by 4]\nor, $x^2 - 5x - 40x + 200 = 0$\nor, $x(x - 5) - 40(x - 5) = 0$\nor, $(x - 5)(x - 40) = 0$\n$\\therefore x - 5 = 0$ or $x - 40 = 0$\nif $x - 5 = 0, x = 5$\nif $x - 40 = 0, x = 40$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.01: Rectangular garden with path",
+      "figure_no": "5.01",
+      "box_2d": [
+        408,
+        399,
+        503,
+        584
+      ],
+      "description": "A schematic diagram of a rectangular garden with a path of width x inside it.",
+      "reading_order_anchor": "Example 13. A rectangular garden with length 50 metre and breadth 40 metre has of equal width all around the inside of the garden. If the area of the garden except the path is 1200 square metre, how much is the path wide in metre ?"
+    }
+  ]
+}

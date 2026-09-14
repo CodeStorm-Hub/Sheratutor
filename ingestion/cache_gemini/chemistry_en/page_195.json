@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 195,
+  "pdf_page_no": 200,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Dry cell",
+      "chunk_type": "theory",
+      "content_markdown": "Dry cell is a kind of Galvanic cell. Dry cell transforms chemical energy into electrical energy. We use dry cells in torch lights, TV remotes, toy remotes etc. Dry cell is also composed of an anode and a cathode.\n\nA small container made of zinc is used as an anode in a dry cell. The container is filled with a paste of manganese dioxide ($MnO_2$), ammonium chloride ($NH_4Cl$), zinc chloride ($ZnCl_2$) and distilled water. A carbon (graphite) stick is inserted at the center of the container to act as a cathode. When two wires connect the two edges (positive and negative) of a bulb or electronic item with the zinc container and the carbon stick, the following reaction occurs:\n\nZinc at the anode donates two electrons and becomes $Zn^{2+}$:\n\nAnode reaction,\n$$Zn \\longrightarrow Zn^{2+} + 2e^{-}$$ \n\nThese two electrons come to the carbon rod through the connector and combine with ammonium ion ($NH_4^{+}$) and manganese dioxide ($MnO_2$) to produce ammonia gas ($NH_3$), dimanganese tri-oxide. The reaction:\n\nCathode reaction,\n$$2NH_{4}^{+} + 2MnO_{2} + 2e^{-} \\longrightarrow 2NH_{3} + Mn_{2}O_{3} + H_{2}O$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.10: Dry cell.",
+      "figure_no": "8.10",
+      "box_2d": [
+        296,
+        513,
+        563,
+        893
+      ],
+      "description": "Cross-sectional diagram of a dry cell showing the outer zinc container, carbon rod, paste mixture, and top/bottom terminals.",
+      "reading_order_anchor": "Dry cell"
+    }
+  ]
+}

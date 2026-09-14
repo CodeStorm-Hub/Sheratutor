@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 257,
+  "pdf_page_no": 262,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "the concave lens is thinner than the edges as shown in $9.14$. If we see the cross section of the concave or convex lens we can understand that both are bound with two round circles. The radius of these two circles can be different or the same. The centers of these circles are called the centres of curvature. In the picture $9.15$, $C_1$ and $C_2$ are the centres of curvature.\n\nDifferent kinds of lenses are used in everyday life or in different subjects of science.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We will keep our discussion limited to thin lenses. Though the difference between thin and thick lenses can be understood by their names, let us explain this more. Looking at the cross section of the lens, we can see that though the lens has a curvature in the surface, at the middle the two surfaces are almost parallel. We know when light passes through a parallel surface it is deviated a little from the main direction due to refraction (Figure $9.16$).\n\nAs the parallel surface thickens, the rays of light will deviate more. If the parallel surfaces are close to each other, we can say that main rays of light go",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.15: Convex and concave lens can be imagined as the part of two circles.",
+      "figure_no": "9.15",
+      "box_2d": [
+        299,
+        114,
+        459,
+        882
+      ],
+      "description": "Schematic diagrams showing convex and concave lenses as parts of intersecting circles with centers of curvature C1 and C2.",
+      "reading_order_anchor": "the concave lens is thinner than the edges as shown in 9.14."
+    },
+    {
+      "caption": "Figure 9.16: When passing through thick glass light rays are deviated from main rays due to refraction.",
+      "figure_no": "9.16",
+      "box_2d": [
+        587,
+        517,
+        804,
+        878
+      ],
+      "description": "Ray diagram showing refraction through a thick glass block, indicating deviated ray direction and original ray direction.",
+      "reading_order_anchor": "We will keep our discussion limited to thin lenses."
+    }
+  ]
+}

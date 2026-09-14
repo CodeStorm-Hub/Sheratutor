@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 18,
+  "pdf_page_no": 23,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this way the procedure may continue indefinitely. So $\\sqrt{2} = 1.4142135...$ is an infinite decimal fraction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1",
+      "section_title": "Value and approximate values up to certain decimal point",
+      "chunk_type": "theory",
+      "content_markdown": "It is not the same to calculate an infinite decimal fraction up to decimal places or approximate it to certain decimal places. For example, $5.4325893...$ when calculated up to 4 decimal places will give $5.4325$ whereas its approximate value up to 4 decimal places will give us $5.4326$. However, these two values are same if we calculate up to 2 decimal places. We can do the same for finite decimal fractions as well.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks: For finding values up to certain decimal places we must write down those digits exactly as they are. However, for finding approximation up to certain decimal places we need to check the next digit. If that digit is 5 or more, 1 should be added to the last position. Otherwise it will be kept in tact.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 20. Find square root of 13, and write down its approximate value up to 3 decimal places.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: \n\n$$3 \\quad ) \\quad 13 \\quad ( \\quad 3.605551...$$\n$$9$$\n$$66 \\quad ) \\quad 400$$\n$$396$$\n$$7205 \\quad ) \\quad 40000$$\n$$36025$$\n$$72105 \\quad ) \\quad 397500$$\n$$360525$$\n$$721105 \\quad ) \\quad 3697500$$\n$$3605525$$\n$$7211101 \\quad ) \\quad 9197500$$\n$$7211101$$\n$$1986399$$\n\n$\\therefore$ the desired square root is $3.605551...$, and desired approximation up to 3 decimal places is $3.606$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

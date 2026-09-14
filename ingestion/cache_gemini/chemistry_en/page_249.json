@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 249,
+  "pdf_page_no": 254,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Table 8.02: Different alloys and their uses.",
+      "chunk_type": "table",
+      "content_markdown": "| Alloy | Ingredients and Composition | Use |\n| --- | --- | --- |\n| Steel | Iron 99%<br>Carbon 1% | Rail and wheels, engines, ships, vehicles, crane, weapons, knives, scissors, watch springs, magnets, agricultural tools |\n| Rust free steel (Stainless Steel) | Iron 74%<br>Chromium 18%<br>Nickel 8% | Knives, forks, kitchen sinks, containers of chemical industries, operation tools |\n| Brass | Copper 65%<br>Zinc 35% | Ornaments, ball-bearings, electric switches, door knobs, utensils |\n| Bronze | Copper 90%<br>Tin 10% | Melting machineries, plates, glasses |\n| Duralumin | Aluminium 95%<br>Copper 4%<br>Magnesium, Manganese and iron 1% | Body of airplanes, bicycle parts |\n| 24 carat gold | Gold 100% | Dentistry, coins, electronic connectors |\n| 22 carat gold | Gold 91.67%<br>Copper and other metals 8.33% | Ornaments |\n| 21 carat gold | Gold 87.5%<br>Copper and other metals 12.5% | Ornaments |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You have learned that alloys are compositions of various metals. These compositions do not contain equal amounts of the metals to mix. In alloys, one metal is the representative metal while the other metals are non-representative metals. For example, in bronze, the representative metal copper is 65% while there is 35% zinc. The alloy is named after the representative metal. Steel has 99% iron and 1% carbon. Therefore, steel is called the alloy of iron. In the same",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

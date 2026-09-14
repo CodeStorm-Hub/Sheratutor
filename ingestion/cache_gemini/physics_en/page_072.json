@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 72,
+  "pdf_page_no": 77,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$m_1 u_1 + m_2 u_2 = m_1 v_1 + m_2 v_2$$\n\nHere we have only one equation and two unknown quantities $v_1$ and $v_2$, therefore we cannot calculate the values of $v_1$ and $v_2$. We need another equation to determine the values of $v_1$ and $v_2$. Fortunately, we have another equation too. In the next chapter, when we will learn about energy, we will get the second equation from the law of conservation of energy. This phenomenon is the law of conservation of energy. In the next chapter you will find that the kinetic energy of an object can be expressed as $\\frac{1}{2} m u^2$, where $m$ is the mass and $u$ is the velocity of the object. We assume that no other energy is exchanged here rather than kinetic energy.\n\nTherefore using the law of conservation of energy, we can write,\n$$\\frac{1}{2}m_1 u_1^2 + \\frac{1}{2}m_2 u_2^2 = \\frac{1}{2}m_1 v_1^2 + \\frac{1}{2}m_2 v_2^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Using these two equations calculate the values of $v_1$ and $v_2$.\n\nWe can write the law of conservation of momentum as:\n$$m_1(u_1 - v_2) = m_2(v_2 - u_2)$$\n\nThe law of conservation of energy, we can be expressed as\n$$m_1(u_1^2 - v_1^2) = m_2(v_2^2 - u_2^2)$$\n\nNow using these two equations we can calculate the values of the velocities $v_1$ and $v_2$. These are:\n\n$$v_1 = \\frac{(m_1 - m_2)u_1 + 2m_2 u_2}{m_1 + m_2}$$\n\n$$v_2 = \\frac{(m_2 - m_1)u_2 + 2m_1 u_1}{m_1 + m_2}$$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.04: After collision, v_1 and v_2 are the new velocities of masses m_1 and m_2 respectively",
+      "figure_no": "3.04",
+      "box_2d": [
+        98,
+        574,
+        347,
+        843
+      ],
+      "description": "Diagram showing two masses m_1 and m_2 before, during, and after collision with their respective initial and final velocities.",
+      "reading_order_anchor": "Here we have only one equation and two unknown quantities"
+    }
+  ]
+}

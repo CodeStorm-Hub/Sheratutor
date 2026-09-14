@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 241,
+  "pdf_page_no": 246,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমীকরণটিতে $x$ এর সুবিধামত কয়েকটি মান নিয়ে $y$ এর অনুরূপ মান বের করি ও নিম্নের ছকটি তৈরি করি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $3$ | $\\frac{1}{2}$ | $-2$ |\n|---|---|---|---|\n| $y$ | $-1$ | $-3$ | $-5$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ সমীকরণটির লেখের উপর তিনটি বিন্দু $(3, -1), (\\frac{1}{2}, -3), (-2, -5)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $XOX'$ ও $YOY'$ যথাক্রমে $x$-অক্ষ ও $y$-অক্ষ এবং $O$ মূলবিন্দু। ছক কাগজের উভয় অক্ষ বরাবর ক্ষুদ্রতম বর্গের প্রতি দুই বাহুর দৈর্ঘ্যকে একক ধরি। এখন, ছক কাগজে সমীকরণ (১) থেকে প্রাপ্ত $(3, -4), (\\frac{1}{2}, -3), (-2, -2)$ বিন্দুগুলো স্থাপন করে এদের পরপর সংযুক্ত করি। লেখটি একটি সরলরেখা।\n\nএকইভাবে, সমীকরণ (২) থেকে প্রাপ্ত $(3, -1), (\\frac{1}{2}, -3), (-2, -5)$ বিন্দুগুলো স্থাপন করে এদের পরপর সংযুক্ত করি। লেখটি একটি সরলরেখা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, সরলরেখাদ্বয় পরস্পর $P$ বিন্দুতে ছেদ করেছে। চিত্রে দেখা যায়, $P$ বিন্দুর স্থানাঙ্ক $(\\frac{1}{2}, -3)$।\n\n$\\therefore$ সমাধান: $(x, y) = (\\frac{1}{2}, -3)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. লেখের সাহায্যে সমাধান কর: $3 - \\frac{3}{2}x = 8 - 4x$\n\nসমাধান: প্রদত্ত সমীকরণ $3 - \\frac{3}{2}x = 8 - 4x$\n\nধরি, $y = 3 - \\frac{3}{2}x = 8 - 4x$\n\n$\\therefore y = 3 - \\frac{3}{2}x \\dots (1)$\n\nএবং $y = 8 - 4x \\dots (2)$\n\nএখন, সমীকরণ (১) এ $x$ এর কয়েকটি মান নিয়ে $y$ এর অনুরূপ মান বের করি ও নিম্নের ছকটি তৈরি করি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $-2$ | $0$ | $2$ |\n|---|---|---|---|\n| $y$ | $6$ | $3$ | $0$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমীকরণটির লেখের উপর তিনটি বিন্দু $(-2, 6), (0, 3), (2, 0)$।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১২.০৫: লেখচিত্র",
+      "figure_no": "12.05",
+      "box_2d": [
+        245,
+        615,
+        455,
+        855
+      ],
+      "description": "একটি কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় দুটি সরলরেখার ছেদবিন্দু P নির্দেশকারী লেখচিত্র।",
+      "reading_order_anchor": "মনে করি, XOX' ও YOY' যথাক্রমে x-অক্ষ ও y-অক্ষ"
+    }
+  ]
+}

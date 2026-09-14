@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 78,
+  "pdf_page_no": 83,
+  "chapter_no": 3,
+  "chapter_title": "বল",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্বিতীয় $10\\text{ s}$ এ অতিক্রান্ত দূরত্ব:\n$$s_2 = vt = 200 \\times 10\\text{ m} = 2000\\text{ m}$$\nমোট অতিক্রান্ত দূরত্ব\n$$s = s_1 + s_2 = 1000\\text{ m} + 2000\\text{ m} = 3000\\text{ m} = 3\\text{ km}$$\n(ঙ) $3.06$ চিত্রে দেখানো হয়েছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** স্থির অবস্থা থেকে শুরু করে $10\\text{ সেকেন্ডে$ একটা বস্তু $100\\text{ m}$ দূরত্ব অতিক্রম করাতে $20\\text{ N}$ বল দিতে হয়েছে। বস্তুটির ভর কত?\n\n**উত্তর:**\n$$s = ut + \\frac{1}{2}at^2$$\n$$u = 0$$\n$$a = \\frac{2s}{t^2} = \\frac{2 \\times 100}{10^2}\\text{ m/s}^2 = 2\\text{ m/s}^2$$\n$$F = ma$$\n$$m = \\frac{F}{a} = \\frac{20}{2}\\text{ kg} = 10\\text{ kg}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.7",
+      "section_title": "মহাকর্ষ বল (Gravitational Force)",
+      "chunk_type": "theory",
+      "content_markdown": "আমরা বল কী সেটা বলেছি (যেটা ত্বরণের জন্ম দেয়) সেটা কেমন করে পরিমাপ করতে হয় সেটাও বলেছি (ভর আর ত্বরণের গুণফল) কিন্তু এখনো তোমাদের সত্যিকার কোনো বলের সাথে পরিচয় করিয়ে দিইনি। পদার্থবিজ্ঞানের একটি চমকপ্রদ বল হচ্ছে মহাকর্ষ বল, ভর আছে সে রকম যেকোনো",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 3.06: বেগ-সময় এবং অবস্থান-সময়ের দুটি গ্রাফ বা লেখচিত্র",
+      "figure_no": "3.06",
+      "box_2d": [
+        244,
+        131,
+        442,
+        866
+      ],
+      "description": "দুটি গ্রাফ পাশাপাশি দেখানো হয়েছে, প্রথমটি বেগ বনাম সময় গ্রাফ এবং দ্বিতীয়টি অবস্থান বনাম সময় গ্রাফ।",
+      "reading_order_anchor": "(ঙ) 3.06 চিত্রে দেখানো হয়েছে।"
+    }
+  ]
+}

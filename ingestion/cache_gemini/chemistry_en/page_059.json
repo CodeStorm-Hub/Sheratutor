@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 59,
+  "pdf_page_no": 64,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "A total of 118 elements are identified on earth up to the year 2016. Study and research in chemistry requires some idea about the physical properties and characteristic features of all these elements. Some of these elements among them show some common features. There had been efforts among the scientists for a long time to group such elements together and put all the elements in a chart. It took hundreds of years of efforts of various scientists, numerous changes and extensions to get us such a complete table so far, which is known as the Periodic Table. It is a significant achievement in chemical research. A sound knowledge of this periodic table and its features enables anyone with knowledge about not only the elements but also the compounds formed with them. This chapter will give you some introduction to this periodic table and properties and characteristics of elements in the table.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 4.01: A special periodic Table.",
+      "figure_no": "4.01",
+      "box_2d": [
+        229,
+        118,
+        583,
+        876
+      ],
+      "description": "An artistic periodic table displaying individual elements with illustrative images for each element.",
+      "reading_order_anchor": "A total of 118 elements are identified on earth up to the year 2016."
+    }
+  ]
+}

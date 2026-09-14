@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 247,
+  "pdf_page_no": 252,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Put a coin in a cup and place the cup in front of you so that the coin is not seen. How is it possible to see the coin without moving your head? After pouring water in the cup, the coin will be seen. Due to refraction light will bend and reach your eyes. It will also seem as if the coin has moved upwards.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** A ray of light is incident on a medium of $n = 1.6$ with an angle of incidence $45^\\circ$ (Figure 9.04 a). With what angle will it enter into the second medium?\n\n**Answer:** We know $n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2$\n\nTherefore, $$\\sin \\theta_2 = \\frac{n_1}{n_2} \\sin\\theta_1 = \\frac{1}{1.6} \\times \\frac{1}{\\sqrt{2}} = 0.44$$\n$$\\theta_2 = 26^\\circ$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** In Figure 9.04 b, a ray is incident from air to another medium at an angle of $60^\\circ$ and refracted at angle of $45^\\circ$. What is the refractive index of the second medium?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.03 : Refraction of light in water and glass",
+      "figure_no": "9.03",
+      "box_2d": [
+        193,
+        219,
+        342,
+        772
+      ],
+      "description": "Schematic diagrams illustrating refraction of light in water and glass, showing a coin in a cup and an observer's line of sight bending due to refraction.",
+      "reading_order_anchor": "Put a coin in a cup and place the cup in front of you so that the coin is not seen."
+    }
+  ]
+}

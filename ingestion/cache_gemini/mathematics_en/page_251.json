@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 251,
+  "pdf_page_no": 256,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We observe:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Equation | Relation between $x$ and $y$ | Illustration |\n| :--- | :--- | :--- |\n| $a_1x + b_1y + c_1 = 0$ <br> $a_2x + b_2y + c_2 = 0$ | $\\frac{x}{b_1c_2 - b_2c_1} = \\frac{y}{c_1a_2 - c_2a_1} = \\frac{1}{a_1b_2 - a_2b_1}$ | $x \\quad y \\quad 1$ <br> $a_1 \\quad b_1 \\quad c_1 \\quad a_1 \\quad b_1$ <br> $a_2 \\quad b_2 \\quad c_2 \\quad a_2 \\quad b_2$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note: The method of cross-multiplication can also be applied by keeping the constant terms of both equations on the right hand side. In that case, changes of sign will occur but the solution will remain the same.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work: \nIf the system of equations $\\begin{cases} 4x - y - 7 = 0 \\\\ 3x + y = 0 \\end{cases}$ are expressed as the system of equations $\\begin{cases} a_1x + b_1y + c_1 = 0 \\\\ a_2x + b_2y + c_2 = 0 \\end{cases}$, find the values of $a_1, b_1, c_1, a_2, b_2, c_2$.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

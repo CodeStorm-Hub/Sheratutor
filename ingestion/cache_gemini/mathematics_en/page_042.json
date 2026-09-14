@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 42,
+  "pdf_page_no": 47,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | 4 | 5 | 6 | 7 |\n|---|---|---|---|---|\n| $y$ | 5 | 6 | 7 | 8 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Since $8 \\notin A$, therefore $(7,8) \\notin R$\n$\\therefore R = \\{(4,5), (5,6), (6,7)\\}$\n$Dom R = \\{4,5,6\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Exercises 2.2",
+      "chunk_type": "theory",
+      "content_markdown": "1. Which one is the set of factors of 8?\n1) $\\{8, 16, 24, \\dots\\}$ 2) $\\{1, 2, 4, 8\\}$\n3) $\\{2, 4, 8\\}$ 4) $\\{1, 2\\}$\n\n2. If $R$ is a relation from the set $C$ to the set $B$, then which one of the following is true?\n1) $R \\subset C$ 2) $R \\subset B$ 3) $R \\subseteq C \\times B$ 4) $C \\times B \\subseteq R$\n\n3. If $A = \\{1, 2\\}, B = \\{2, 5\\}$, which one of the following is the number of elements of $P(A \\cap B)$?\n1) 1 2) 2 3) 3 4) 8\n\n4. Which one of the following expresses the set $\\{x \\in \\mathbb{N} : 13 < x < 17$ and $x$ is prime $\\}$ in tabular method?\n1) $\\emptyset$ 2) $\\{0\\}$ 3) $\\{\\emptyset\\}$ 4) $\\{13, 17\\}$\n\n5. If $A \\cup B = \\{a, b, c\\}$, then\n$(i) A = \\{a, b\\}, B = \\{a, b, c\\}$\n$(ii) A = \\{a, b, c\\}, B = \\{b, c\\}$\n$(iii) A = \\{a, b\\}, B = \\{c\\}$\nBased upon the above facts which one of the following is true?\n1) $i$ 2) $ii$ 3) $i$ and $ii$ 4) $i, ii$ and $iii$\n\n6. If for two finite sets $A$ and $B$\n$(i) A \\times B = \\{(x, y) : x \\in A$ and $y \\in B\\}$\n$(ii)$ If $n(A) = a, n(B) = b$, then $n(A \\times B) = ab$\n$(iii)$ Each member of $A \\times B$ is an ordered pair.\nBased upon the statements above which one of the following is true?",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

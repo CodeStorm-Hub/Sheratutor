@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 65,
+  "pdf_page_no": 70,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$t = \\text{অতিক্রান্ত সময়}$\n$Q(t) = t \\text{ সময়ে চৌবাচ্চায় পানির পরিমাণ}$\n$\\therefore Q(t) = Q_0 \\pm qt$\n$\text{পানি প্রবেশ হওয়ার শর্তে '+' চিহ্ন এবং পানি বের হওয়ার শর্তে '-' চিহ্ন ব্যবহার করতে হবে।}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### শতকরা অংশ বিষয়ক\n$\text{মনে করি, } b = \\text{মোট রাশি}$\n$r = \\text{শতকরা হার} = \\frac{s}{100} = s\\%$\n$p = \\text{শতকরা অংশ} = b \\text{ এর } s\\%$\n$\\therefore p = br$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### লাভ-ক্ষতি বিষয়ক\n$\text{মনে করি, } C = \\text{ক্রয়মূল্য}$\n$r = \\text{লাভ বা ক্ষতির শতকরা হার}$\n$\\therefore \\text{বিক্রয়মূল্য } S = C(1 \\pm r)$\n$\\text{লাভের ক্ষেত্রে, } S = C(1 + r) \\text{ এবং ক্ষতির ক্ষেত্রে, } S = C(1 - r)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### বিনিয়োগ-মুনাফা বিষয়ক\n$\text{মনে করি, } I = n \\text{ একক সময় পরে মুনাফা}$\n$n = \\text{নির্দিষ্ট সংখ্যক একক সময়}$\n$P = \\text{মূলধনের পরিমাণ}$\n$r = \\text{একক সময়ে একক মূলধনের মুনাফা}$\n$A = n \\text{ একক সময় পরে মুনাফাসহ মূলধন}$\n$\\text{সরল মুনাফার ক্ষেত্রে,}$\n$I = Pnr$\n$A = P + I = P + Pnr = P(1 + nr)$\n$\\text{চক্রবৃদ্ধি মুনাফার ক্ষেত্রে, } C = P(1 + r)^n$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৩৪.** বার্ষিক ক্রীড়া অনুষ্ঠান করার জন্য কোনো এক সমিতির সদস্যরা $45,000$ টাকার বাজেট করলেন এবং সিদ্ধান্ত নিলেন যে, প্রত্যেক সদস্যই সমান চাঁদা দিবেন। কিন্তু $5$ জন সদস্য চাঁদা দিতে অসম্মতি জানালেন। এর ফলে প্রত্যেক সদস্যের মাথাপিছু $15$ টাকা চাঁদা বৃদ্ধি পেল। ঐ সমিতিতে কতজন সদস্য ছিলেন?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

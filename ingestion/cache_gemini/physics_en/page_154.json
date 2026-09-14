@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 154,
+  "pdf_page_no": 159,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Put a piece of scotch tap on an air filled balloon. Now make a hole on the balloon through the scotch tap with a needle. You will see that the balloon does not burst but air is coming out.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We mentioned about pressure of gas but didn’t explain its reason. We can explain the reason of pressure by the molecular kinetic theory. If a gas is kept in a closed space then it puts a pressure on the walls of the container, this can be explained with the help of the molecular kinetic theory of substance. In a closed region the molecules of a gas starts moving randomly and every time it hits the walls of the container it goes back due to reflection. Therefore a gas molecule hits the wall with a particular momentum, and returns back with a different momentum. You know to change the momentum of an object; a force has to be applied on that object. Hitting the wall, the gas molecules apply a force on the wall. According to Newton’s third law, the wall also applies a counter force on the molecule thus reflecting the molecule.\n\nAn enormous number of molecules thus hit the walls of the container and this combined force appears as the pressure of the gas. If the temperature of the gas is increased, then the kinetic energies of the molecules will increase and the molecules will hit the wall harder. This means the pressure will be increased. We will see in the next chapter that due to the application of heat, temperature increases and as a result pressure also increases.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.6.2",
+      "section_title": "Fourth State of Substance",
+      "chunk_type": "theory",
+      "content_markdown": "Despite solids, liquids and gases, the three different sates of matter, substances may have a fourth state named plasma. We know the number of the positively charged protons in the nucleus of a molecule or an atom is equal to the number of negatively charged electrons outside it. That’s why the combined charge of a molecule or atom is zero. Under special conditions a molecule or an atom can be ionized, one or more electrons of some atoms can be made free, then separately the atoms do not remain charge neutral. A kind of a mixture of ions and electrons is made. Though it stays like a gas but all of the properties of gas are not true for it. Like we know, a gas has no fixed shape but a fixed shape of plasma can be made by a magnetic field.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

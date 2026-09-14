@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 359,
+  "pdf_page_no": 364,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Draw frequency polygon from the marks obtained in Bangla by the students of your class in first terminal examination.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. The frequency distribution table of the marks obtained by 50 students of class X in science are given. Draw the frequency polygon of the data (without using histogram):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | 31 - 40 | 41 - 50 | 51 - 60 | 61 - 70 | 71 - 80 | 81 - 90 | 91 - 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 6 | 8 | 10 | 12 | 5 | 7 | 2 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Here the given data are discrete. In this case, it is convenient to draw frequency polygon directly by finding the mid-point of class interval.\n\nThe Mid-point of the first class interval $(31 - 40)$ is $\\frac{31 + 40}{2} = 35.5$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | 31 - 40 | 41 - 50 | 51 - 60 | 61 - 70 | 71 - 80 | 81 - 90 | 91 - 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Mid-point | 35.5 | 45.5 | 55.5 | 65.5 | 75.5 | 85.5 | 95.5 |\n| Frequency | 6 | 8 | 10 | 12 | 5 | 7 | 2 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The polygon is drawn by taking each squares of graph paper as 1 units of mid-points of class interval along with $x$-axis and taking each square of graph paper as 2 units of frequency along with $y$-axis.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Draw frequency polygon from the frequency distribution table of heights of 100 students of a college.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Heights (in cm.) | 141 - 150 | 151 - 160 | 161 - 170 | 171 - 180 | 181 - 190 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 5 | 16 | 56 | 11 | 12 |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 17.01: Frequency polygon of the given data",
+      "figure_no": "17.01",
+      "box_2d": [
+        615,
+        335,
+        816,
+        672
+      ],
+      "description": "A frequency polygon graph plotted on a Cartesian plane showing frequency on the Y-axis and class intervals on the X-axis.",
+      "reading_order_anchor": "The polygon is drawn by taking each squares of graph paper as 1 units of mid-points of class interval along with x-axis and taking each square of graph paper as 2 units of frequency along with y-axis."
+    }
+  ]
+}

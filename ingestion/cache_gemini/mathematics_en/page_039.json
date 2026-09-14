@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 39,
+  "pdf_page_no": 44,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|---|---|---|\n| $y$ | $-6$ | $-4$ | $-2$ | $0$ | $2$ | $4$ | $6$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the graph paper each considering side of each smallest square as of length points of the list are marked and added. This results in the graph of the function.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 23. If $f(y) = \\frac{y^3 - 3y^2 + 1}{y(1 - y)}$, then show that $f\\left(\\frac{1}{y}\\right) = f(1 - y)$\n\nSolution: $f(y) = \\frac{y^3 - 3y^2 + 1}{y(1 - y)}$\n\n$$\\therefore f\\left(\\frac{1}{y}\\right) = \\frac{(\\frac{1}{y})^3 - 3(\\frac{1}{y})^2 + 1}{\\frac{1}{y}(1 - \\frac{1}{y})} = \\frac{\\frac{1 - 3y + y^3}{y^3}}{\\frac{y - 1}{y^2}}$$\n\n$$= \\frac{1 - 3y + y^3}{y^3} \\times \\frac{y^2}{y - 1} = \\frac{1 - 3y + y^3}{y(y - 1)}$$\n\nAgain, $f(1 - y) = \\frac{(1 - y)^3 - 3(1 - y)^2 + 1}{(1 - y)(1 - (1 - y))}$\n\n$$= \\frac{1 - 3y + 3y^2 - y^3 - 3(1 - 2y + y^2) + 1}{(1 - y)(1 - 1 + y)}$$\n\n$$= \\frac{1 - 3y + 3y^2 - y^3 - 3 + 6y - 3y^2 + 1}{y(1 - y)}$$\n\n$$= \\frac{-1 + 3y - y^3}{y(1 - y)} = \\frac{-(1 - 3y + y^3)}{-y(y - 1)}$$\n\n$$= \\frac{1 - 3y + y^3}{y(y - 1)}$$\n\n$$\\therefore f\\left(\\frac{1}{y}\\right) = f(1 - y)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Graph of the function",
+      "figure_no": "2.01",
+      "box_2d": [
+        91,
+        538,
+        316,
+        795
+      ],
+      "description": "A Cartesian coordinate system showing a straight line passing through the origin with plotted points.",
+      "reading_order_anchor": "In the graph paper each considering side of each smallest square as of length points of the list are marked and added. This results in the graph of the function."
+    }
+  ]
+}

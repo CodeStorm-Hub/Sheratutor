@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 12,
+  "pdf_page_no": 17,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "physics, both theoretical and experimental research have been conducted. The main objectives of physics is to find out the laws of nature by carrying out research in these two different fields.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.4.3",
+      "section_title": "Development of Technology Using the Laws of Nature",
+      "chunk_type": "theory",
+      "content_markdown": "From the theory of relativity Einstein deduced the law $E = mc^2$ and showed that mass can be converted into energy. In 1938, by breaking a nucleus Otto Hahn and Fritz Strassmann showed that the amount of mass reduced, is converted to energy.\n\nUsing this formula the nuclear bomb was made and dropped on Hiroshima and Nagasaki in the Second World War and millions of people were killed within a second. Not only deadly weapons can be made but also it is possible to use for the good of mankind. Using this formula, nuclear power plants are made and also in Rooppur of our country a nuclear power plant is being made.\n\nSolid state physics is a branch of physics where semiconductors are studied. Mixing some special elements with semiconductors, transistors are made. With the help of this technology great development of electronics has occurred and this has made a major contribution to the present civilization.\n\nIn this way we can show that physics has a small or large contribution in every field of technology. Contributions of physics only in medical science are discussed in the last chapter of this book.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Group Work",
+      "chunk_type": "theory",
+      "content_markdown": "Prepare a poster on the development of physics.",
+      "activity_tag": "Group Work"
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Consider a particular distance as a particular time on a straight line, put the important works that different scientists have done from the ancient period to the present time on the straight line and show that there is a dark period in the history of human civilization. Search out anyone reason, why there is a dark period?",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

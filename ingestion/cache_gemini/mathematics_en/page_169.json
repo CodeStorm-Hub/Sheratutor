@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 169,
+  "pdf_page_no": 174,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "The arc of a circle",
+      "chunk_type": "theory",
+      "content_markdown": "An arc is the piece of the circle between any two points of the circle. Look at the pieces of the circle between two points $A$ and $B$ in the figure. We find that there are two pieces, one comparatively larger and the other smaller. The larger one is called the major arc and the smaller one is called the minor arc. $A$ and $B$ are the terminal points of this arc and all other points are its internal points. With an internal fixed point $R$ the arc is called arc $ARB$ and is expressed by the symbol $ARB$. Again, sometimes minor arc is expressed by the symbol $AB$. The two points $A$ and $B$ of the circle divide the circle into two arcs. The terminal points of both arcs are $A$ and $B$ and there is no other common point of the two arcs other than the terminal points.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Arc cut by an Angle",
+      "chunk_type": "theory",
+      "content_markdown": "An angle is said to cut an arc of a circle if\n1. each terminal point of the arc lies on the sides of the angle,\n2. each side of the angle contains at least one terminal point and\n3. Every interior point of the arc lies inside the angle. The angle shown in the figure cuts the $APB$ arc of the circle with centre $O$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Major and minor arcs",
+      "figure_no": "8.01",
+      "box_2d": [
+        245,
+        695,
+        438,
+        790
+      ],
+      "description": "Two circles showing points A and B, with one showing the major arc and the other showing the minor arc with point R.",
+      "reading_order_anchor": "The arc of a circle"
+    },
+    {
+      "caption": "Fig 8.02: Arc cut by an angle",
+      "figure_no": "8.02",
+      "box_2d": [
+        663,
+        688,
+        771,
+        828
+      ],
+      "description": "A circle with center O and an angle cutting the arc APB.",
+      "reading_order_anchor": "Arc cut by an Angle"
+    }
+  ]
+}

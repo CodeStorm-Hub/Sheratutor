@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 269,
+  "pdf_page_no": 274,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": "11.3",
+      "section_title": "Saturated Hydrocarbons: Alkanes",
+      "chunk_type": "theory",
+      "content_markdown": "The hydrocarbons which have carbon-carbon single bond in their carbon chain are called Alkanes. Common formula for alkanes is $C_n H_{2n+2}$ ($n = 1, 2, 3, 4, ...$). The name of the first member of this group is Methane. As it is the first member, its common formula $n = 1$ and its formula is $CH_4$. The name of the second member ($n = 2$) is Ethane and its formula is $C_2H_6$. It is very difficult to break the carbon-carbon and carbon-hydrogen bond of alkane. That is why, alkanes are chemically inactive to a great extent. For this reason, they are called Paraffin which means lacking affinity. Alkanes generally participate in chemical reactions only under high temperatures, high pressure, or in the presence of a strong catalyst.\n\n**Naming of Alkanes:**\nNaming of Alkanes in the IUPAC system is as follows:\n\n(i) In straight chain Alkanes, one-carbon Alkanes ($CH_4$) are named as Methane, two-carbon Alkanes ($CH_3-CH_3$) as Ethane, three-carbon Alkanes ($CH_3-CH_2-CH_3$) as Propane and four-carbon Alkanes ($CH_3-CH_2-CH_2-CH_3$) as Butane.\n\n(ii) In alkanes, naming is completed by adding (ane) with the ending words formula identifying the Greek number of their carbon number.\n\n**Alkyl Group**\n\nThe single valance radical formed after removing one hydrogen atom from the Alkane is called an Alkyl Radical. As the common formula of Alkane is $C_n H_{2n+2}$, we can write $R-H$ instead of $C_n H_{2n+2}$ if we want to write it by using Alkyl Radical $R$ where $R = C_n H_{2n+1}$. Alkyl Radicals are named by omitting (ane) and adding",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.03: Methane and Ethane.",
+      "figure_no": "11.03",
+      "box_2d": [
+        188,
+        510,
+        417,
+        893
+      ],
+      "description": "Molecular structures of Methane and Ethane showing carbon and hydrogen atoms, along with a legend identifying carbon atom and hydrogen atom.",
+      "reading_order_anchor": "11.3 Saturated Hydrocarbons: Alkanes"
+    }
+  ]
+}

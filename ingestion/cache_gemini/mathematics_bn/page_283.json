@@ -1,0 +1,88 @@
+{
+  "printed_page_no": 283,
+  "pdf_page_no": 288,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. বহুভূজটির মোট কতটি প্রতিসাম্য রেখা আছে?\nক) ৩টি খ) ৬টি গ) ৭টি ঘ) অসংখ্য",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. বহুভূজটির-\n(i) ঘূর্ণন মাত্রা $4$\n(ii) ঘূর্ণন কোণ $60^\\circ$\n(iii) প্রতিটি কোণ সমান\nনিচের কোনটি সঠিক?\nক) $i$ খ) $ii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. নিচের কোনটির প্রতিসাম্য রেখা রয়েছে?\nক) বাড়ির চিত্র খ) মসজিদের চিত্র গ) মন্দিরের চিত্র\nঘ) গির্জার চিত্র ঙ) প্যাগোডার চিত্র চ) পার্লামেন্ট ভবনের চিত্র\nছ) মুখোশের চিত্র জ) তাজমহলের চিত্র",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. প্রতিসাম্য রেখা দেওয়া আছে (ড্যাশযুক্ত রেখা), জ্যামিতিক চিত্র সম্পূর্ণ কর এবং শনাক্ত কর:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. নিচের জ্যামিতিক চিত্রে প্রতিসাম্য রেখা নির্দেশ কর:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. নিচের অসম্পূর্ণ জ্যামিতিক চিত্র সম্পূর্ণ কর যেন আয়না রেখা সাপেক্ষে প্রতিসম হয়:",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৬: প্রতিসাম্য রেখা দেওয়া আছে (ড্যাশযুক্ত রেখা), জ্যামিতিক চিত্র সম্পূর্ণ কর এবং শনাক্ত কর",
+      "figure_no": "6",
+      "box_2d": [
+        523,
+        247,
+        587,
+        806
+      ],
+      "description": "পাঁচটি জ্যামিতিক আকৃতি যাদের প্রতিসাম্য রেখা ড্যাশযুক্ত রেখা দ্বারা চিহ্নিত।",
+      "reading_order_anchor": "৬. প্রতিসাম্য রেখা দেওয়া আছে (ড্যাশযুক্ত রেখা), জ্যামিতিক চিত্র সম্পূর্ণ কর এবং শনাক্ত কর:"
+    },
+    {
+      "caption": "চিত্র ৭: নিচের জ্যামিতিক চিত্রে প্রতিসাম্য রেখা নির্দেশ কর",
+      "figure_no": "7",
+      "box_2d": [
+        635,
+        327,
+        763,
+        672
+      ],
+      "description": "বিভিন্ন জ্যামিতিক আকৃতি যাদের প্রতিসাম্য রেখা নির্দেশ করতে হবে।",
+      "reading_order_anchor": "৭. নিচের জ্যামিতিক চিত্রে প্রতিসাম্য রেখা নির্দেশ কর:"
+    },
+    {
+      "caption": "চিত্র ৮: নিচের অসম্পূর্ণ জ্যামিতিক চিত্র সম্পূর্ণ কর যেন আয়না রেখা সাপেক্ষে প্রতিসম হয়",
+      "figure_no": "8",
+      "box_2d": [
+        813,
+        333,
+        911,
+        716
+      ],
+      "description": "তিনটি গ্রিড ভিত্তিক জ্যামিতিক চিত্র যা আয়না রেখা সাপেক্ষে প্রতিসম করতে হবে।",
+      "reading_order_anchor": "৮. নিচের অসম্পূর্ণ জ্যামিতিক চিত্র সম্পূর্ণ কর যেন আয়না রেখা সাপেক্ষে প্রতিসম হয়:"
+    }
+  ]
+}

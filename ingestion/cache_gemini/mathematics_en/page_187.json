@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 187,
+  "pdf_page_no": 192,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "17. The chord $AB = x$ cm and $OD \\perp AB$, are in the circle $ABC$ with centre $O$. Use the adjoint figure to answer the following questions:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Find the area of the circle.\n2) Show that, $D$ is the mid point of $AB$.\n3) If $OD = \\left( \\frac{x}{2} - 2 \\right)$ cm, determine the value of $x$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "18. In the figure, $YM$ and $ZM$ are internal bisectors of $\\angle Y$ and $\\angle Z$ respectively and $YN$ and $ZN$ are external bisectors of $\\angle Y$ and $\\angle Z$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Show that, $\\angle MYZ + \\angle NYZ = 90^\\circ$\n2) Prove that, $\\angle YNZ = 90^\\circ - \\frac{1}{2} \\angle X$\n3) Prove that, $Y, M, Z$ and $N$ are concyclic.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.3",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "19. The lengths of three sides of a triangle are $4$ cm, $5$ cm and $6$ cm. Use this information to answer the following questions:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.3",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Construct the triangle.\n2) Draw the circumcircle of the triangle.\n3) From an exterior point of the circumcircle, draw two tangents to it and show that their lengths are equal.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Circle with chord AB and perpendicular OD",
+      "figure_no": "8.01",
+      "box_2d": [
+        135,
+        735,
+        265,
+        895
+      ],
+      "description": "A circle with center O, chord AB, and a perpendicular line segment OD from the center to the chord.",
+      "reading_order_anchor": "17. The chord AB =xem and OD 1 AB, are in the circle ABC with centre"
+    },
+    {
+      "caption": "Fig 8.02: Triangle with internal and external angle bisectors",
+      "figure_no": "8.02",
+      "box_2d": [
+        285,
+        585,
+        485,
+        875
+      ],
+      "description": "A triangle XYZ with internal bisectors meeting at M and external bisectors meeting at N.",
+      "reading_order_anchor": "18. In the figure, YM and ZM are internal bisectors of ZY and ZZ respectively and"
+    }
+  ]
+}

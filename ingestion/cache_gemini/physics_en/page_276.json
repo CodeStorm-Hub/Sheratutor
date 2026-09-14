@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 276,
+  "pdf_page_no": 281,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now we will understand the phenomenon of attraction of paper by the comb. When a negatively charged comb is brought near the pieces of paper, then the",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "part of the paper closer to the comb is induced with a positive charge, while negative charge is induced in the farther parts. The positively charged part of the paper is attracted by the comb and the negatively charged part of the paper is repulsed by the comb. But as the positively charged part is closer to the comb, the attraction is more than the repulsion. As a result, the pieces of paper jump towards the comb, being attracted by the comb. (Figure 10.05)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Another thing happens then which you may have noticed yourselves. Pieces of paper which jump to the comb and attach to the comb almost immediately fall away.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You may understand the reason of this too. If the piece of paper gets attached to the comb due to attraction, then it does not stay induced anymore. It itself becomes accumulated with negative charge by obtaining negative charge from the comb. As a result it gets repulsed by the comb and falls down. You can do the experiment.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.04: If a charged body is brought near to a chargeless body, opposite charge is induced.",
+      "figure_no": "10.04",
+      "box_2d": [
+        152,
+        437,
+        343,
+        729
+      ],
+      "description": "Illustration showing a charged comb brought near a neutral spherical conductor on a stand, demonstrating electrostatic induction.",
+      "reading_order_anchor": "Now we will understand the phenomenon of attraction of paper by the comb."
+    },
+    {
+      "caption": "Figure 10.05: During winter, combing hair and the comb is hold near the pieces of paper, they feel attraction.",
+      "figure_no": "10.05",
+      "box_2d": [
+        542,
+        616,
+        767,
+        903
+      ],
+      "description": "Illustration of a plastic comb being held near small pieces of paper, causing them to jump and attract to the comb.",
+      "reading_order_anchor": "pieces of paper jump towards the comb, being attracted by the comb. (Figure 10.05)"
+    }
+  ]
+}

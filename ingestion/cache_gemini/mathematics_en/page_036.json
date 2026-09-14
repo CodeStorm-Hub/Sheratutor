@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 36,
+  "pdf_page_no": 41,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Functions",
+      "chunk_type": "theory",
+      "content_markdown": "Let us consider the relation between $A$ and $B$:\n\nFor the relation $y = x + 2$\nif $x = 1$, then $y = 3$\nif $x = 2$, then $y = 4$\nif $x = 3$, then $y = 5$\n\nThat is, there is exactly one value for $y$ for each value of $x$ and $x$ and $y$ are related by $y = x + 2$. So two variables $x$ and $y$ are related in such a way that for each value of $x$ there is exactly one value of $y$. Then $y$ is said to be a **function** of $x$. Usually function of $x$ is denoted by $y, f(x), g(x), F(x)$.\n\nLet $y = x^2 - 2x + 3$ be a function. Here, for each value of $x$ there is exactly one value of $y$. Here, both $x$ and $y$ are variables. Although both of them are variables value of $y$ depends upon the value of $x$. That is why $x$ is said to be **independent variable** and $y$ **dependent variable**.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 18.** If $f(x) = x^2 - 4x + 3$, then determine $f(-1)$.\n\n**Solution:** Given, $f(x) = x^2 - 4x + 3$\n$\\therefore f(-1) = (-1)^2 - 4(-1) + 3 = 1 + 4 + 3 = 8$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 19.** If $g(x) = x^3 + ax^2 - 3x - 6$ then for what value of $a$ will be $g(-2) = 0$?\n\n**Solution:** Given, $g(x) = x^3 + ax^2 - 3x - 6$\n$\\therefore g(-2) = (-2)^3 + a(-2)^2 - 3(-2) - 6$\n$= -8 + 4a + 6 - 6 = 4a - 8$\nAs per question $g(-2) = 0$\n$\\therefore 4a - 8 = 0$ or $4a = 8$ or $a = 2$\n$\\therefore$ if $a = 2$, then $g(-2) = 0$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Domain and Range",
+      "chunk_type": "theory",
+      "content_markdown": "For ordered pairs of any relation the set of first elements is said to be **domain** and the set of second elements is said to be **range**.\n\nLet $R$ be a relation from set $A$ to the set $B$, that is, $R \\subseteq A \\times B$. For the ordered pairs of $R$ the set of first elements will be the domain of $R$ and the set of second elements will be called range of $R$. The domain of $R$ is denoted by $Dom R$ and range by $Range R$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Relation between A and B",
+      "figure_no": "2.01",
+      "box_2d": [
+        85,
+        570,
+        265,
+        795
+      ],
+      "description": "A mapping diagram showing elements 1, 2, 3 in set A mapping to 3, 4, 5 in set B via function f.",
+      "reading_order_anchor": "Let us consider the relation between A and B:"
+    }
+  ]
+}

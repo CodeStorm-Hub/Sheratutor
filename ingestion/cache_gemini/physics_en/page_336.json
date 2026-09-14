@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 336,
+  "pdf_page_no": 341,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, the magnetic field produced by the current and the magnetic field produced by the iron piece itself combine to produce a strong magnetic field (Figure 12.07). The interesting point is, as the current is stopped, the small magnets present within the iron piece become randomly oriented again, and the entire magnetic field will disappear.\n\nA magnet prepared by this process is called an electromagnet. Uses of electromagnets are endless, Such as in the sound we hear in speakers and earphones (Figure 12.08).\n\nHere, according to the vibration and intensity of sound, current is sent. That current produces an electromagnet according to the vibration and intensity of the sound. This electromagnet vibrates a diaphragm and produce the sound.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2.3",
+      "section_title": "Effect of Magnet on a Current Carrying Wire",
+      "chunk_type": "theory",
+      "content_markdown": "We know that the opposite poles of two magnets attract each other and the similar poles repel. We also know that a current carrying wire generates a magnetic field around it. If we place a wire in a magnetic field and current is allowed to flow through this wire, then due to the creation of magnetic field by the current, it will experience a force. In Figure 12.09, magnetic lines of force from the north pole of a magnet to the south pole, and a current carrying wire placed between the poles is shown. The wire comes out perpendicularly from inside the paper.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 12.07: Strong magnetic field is produced when randomly oriented small magnets get aligned due to flow of current.",
+      "figure_no": "12.07",
+      "box_2d": [
+        130,
+        125,
+        408,
+        415
+      ],
+      "description": "Diagram showing small magnets inside a coil becoming aligned when current flows through the coil.",
+      "reading_order_anchor": "Therefore, the magnetic field produced by the current"
+    },
+    {
+      "caption": "Fig 12.08: Electromagnet is used in speaker",
+      "figure_no": "12.08",
+      "box_2d": [
+        635,
+        515,
+        825,
+        855
+      ],
+      "description": "Schematic diagram of a speaker showing a diaphragm, an electromagnet, and a permanent magnet.",
+      "reading_order_anchor": "Uses of electromagnets are endless, Such as in the sound we hear in speakers and earphones (Figure 12.08)."
+    }
+  ]
+}

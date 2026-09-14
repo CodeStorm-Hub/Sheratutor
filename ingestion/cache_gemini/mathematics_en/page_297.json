@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 297,
+  "pdf_page_no": 302,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\nSince $\\frac{AB}{DE} = \\frac{AC}{DF}$, Therefore $\\frac{AB}{AP} = \\frac{AC}{AQ}$\n\nTherefore $PQ \\parallel BC$ [theorem 29]\n$\\therefore \\angle ABC = \\angle APQ$ [corresponding angles made by the transversal $AB$]\nand $\\angle ACB = \\angle AQP$ [corresponding angles made by the transversal $AC$]\n\n$\\therefore \\triangle ABC$ and $\\triangle APQ$ are equiangular.\nTherefore, $\\frac{AB}{AP} = \\frac{BC}{PQ}$ or, $\\frac{AB}{DE} = \\frac{BC}{PQ}$ [theorem 32]\nBut $\\frac{AB}{DE} = \\frac{BC}{EF}$ [supposition]\n$\\therefore \\frac{BC}{EF} = \\frac{BC}{PQ}$\n$\\therefore EF = PQ$\nTherefore $\\triangle APQ$ and $\\triangle DEF$ are congruent. [SSS theorem]\n$\\therefore \\angle PAQ = \\angle EDF, \\angle APQ = \\angle DEF, \\angle AQP = \\angle DFE$\n$\\therefore \\angle APQ = \\angle ABC$ and $\\angle AQP = \\angle ACB$\n$\\angle A = \\angle D, \\angle B = \\angle E, \\angle C = \\angle F$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 34. If one angle of a triangle is equal to an angle of the other and the sides adjacent to the equal angles are proportional, the triangles are similar.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Special Nomination: Let in $\\triangle ABC$ and $\\triangle DEF$, $\\angle A = \\angle D$ and $\\frac{AB}{DE} = \\frac{AC}{DF}$.\nIt is to be proved that, $\\triangle ABC$ and $\\triangle DEF$ are similar.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Drawing: Consider the matching sides of $ABC$ and $DEF$ unequal. Take two points $P$ and $Q$ on $AB$ and $AC$ respectively so that $AP = DE$ and $AQ = DF$. Join $P$ and $Q$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Triangles ABC and DEF",
+      "figure_no": "14.01",
+      "box_2d": [
+        765,
+        305,
+        865,
+        695
+      ],
+      "description": "Two triangles, ABC and DEF, with points P and Q on sides AB and AC of triangle ABC respectively.",
+      "reading_order_anchor": "Drawing: Consider the matching sides of ABC and DEF unequal."
+    }
+  ]
+}

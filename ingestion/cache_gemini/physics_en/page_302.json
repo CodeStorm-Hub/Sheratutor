@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 302,
+  "pdf_page_no": 307,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "produced by a chemical reaction inside the battery cell, if the flow of charge starts, chemical substances start decreasing. When chemical substances are finished, battery cells cannot create a flow of electricity. The ordinary battery cells that we see regularly have a potential difference of $1.5\\text{ volt}$.\n\nFor the supply of electricity that you have in your school or residence, there are two points for using it, one of them is at higher potential and the other one is at lower potential. This difference in potential is maintained by a generator, which develops this continuously. A battery cell or a generator has to send charges continuously from low potential to high potential for continuous flow of electricity, and for that it needs energy. If $W$ amount of work is done to bring $Q$ amount of charge from low potential to high potential in a battery, then the electromotive force or e.m.f of the battery is:\n\n$$EMF = \\frac{W}{Q}$$\n\nA battery cell or a generator which supplies electric energy has an electromotive force or emf. When a battery cell or a generator is connected to a circuit, this electromotive force brings the charge through the whole circuit.\n\nThe amount of potential a battery produces is its electromotive force or emf. In English it is called \"force\" but in Bengali it is \"energy\". Actually, this emf or electromotive force is not force or energy at all. We said earlier that in physics terms like \"force\" and \"energy\" are very specific. We cannot use one word instead of the other. Unfortunately this has been done here. But don't be confused, because the potential that a battery or generator creates is its EMF. We said earlier that the magnitude of the potential is not important, the",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.02: It is possible to make positive and negative voltage by a battery cell",
+      "figure_no": "11.02",
+      "box_2d": [
+        585,
+        599,
+        762,
+        878
+      ],
+      "description": "Schematic diagrams showing battery cell terminals connected to ground, labeled (a) with +1.5 V and (b) with -1.5 V.",
+      "reading_order_anchor": "The amount of potential a battery produces is its electromotive force or emf."
+    }
+  ]
+}

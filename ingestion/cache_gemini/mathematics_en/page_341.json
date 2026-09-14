@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 341,
+  "pdf_page_no": 346,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 23. Diameter of a wheel is 4.5 metre. To traverse a distance of 360 metre, how many times the wheel will revolve?\n\nSolution: Given that, the diameter of the wheel is 4.5 metre.\n\n$\\therefore$ The radius of the wheel, $r = \\frac{4.5}{2} = 2.25$ metre and circumference $= 2\\pi r$.\n\nLet, for traversing 360 metre, the wheel will revolve $n$ times.\n\nAs per question, $n \\times 2\\pi r = 360$\n\nor, $n = \\frac{360}{2\\pi r} = \\frac{360}{2 \\times 3.1416 \\times 2.25} = 25.46$ (approx.)\n\n$\\therefore$ The wheel will revolve 25 times. (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 24. Two wheels revolve 32 and 48 times respectively to cover a distance of 211 metre 20cm. Determine the difference of their radii.\n\nSolution: 211 metre 20 cm $= 21120$ cm\n\nLet, the radii of two wheels are $R$ and $r$ respectively; where $R > r$.\n\n$\\therefore$ Circumferences of two wheels are $2\\pi R$ and $2\\pi r$ respectively and the difference of radii is $(R - r)$.\n\nAs per the question, $32 \\times 2\\pi R = 21120$.\n\nor, $R = \\frac{21120}{32 \\times 2\\pi} = \\frac{21120}{32 \\times 2 \\times 3.1416} = 105.04$ cm (approx.)\n\nand $48 \\times 2\\pi r = 21120$\n\nor, $r = \\frac{21120}{48 \\times 2\\pi} = \\frac{21120}{48 \\times 2 \\times 3.1416} = 70.03$ cm (approx.)\n\n$\\therefore R - r = (105.04 - 70.03) = 35.01$ cm $= 0.35$ m (approx.)\n\nThe difference of radii of the two wheels is 0.35 metre (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 25. The radius of a circle is 14 cm. The area of a square is equal to the area of the circle. Determine the length of the square.\n\nSolution: Let the radius of the circle, $r = 14$ cm and the length of the square is $a$.\n\n$\\therefore$ Area of the square region $= a^2$ and the area of the circle $= \\pi r^2$.\n\nAccording to the question, $a^2 = \\pi r^2$\n\nor, $a = \\sqrt{\\pi}r = \\sqrt{3.1416} \\times 14 = 24.81$ (approx.)\n\nThe required length is 24.81 cm (approx.)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

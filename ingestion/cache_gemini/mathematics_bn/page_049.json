@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 49,
+  "pdf_page_no": 54,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": "3.1",
+      "section_title": "অনুশীলনী ৩.১",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. সূত্রের সাহায্যে বর্গ নির্ণয় কর:\nক) $2a + 3b$ খ) $x^2 + \\frac{2}{y^2}$ গ) $4y - 5x$\nঘ) $5x^2 - y$ ঙ) $3b - 5c - 2a$ চ) $ax - by - cz$\nছ) $2a + 3x - 2y - 5z$ জ) $1007$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. সরল কর:\nক) $(7p + 3q - 5r)^2 - 2(7p + 3q - 5r)(8p - 4q - 5r) + (8p - 4q - 5r)^2$\nখ) $(2m + 3n - p)^2 + (2m - 3n + p)^2 - 2(2m + 3n - p)(2m - 3n + p)$\nগ) $6.35 \\times 6.35 + 2 \\times 6.35 \\times 3.65 + 3.65 \\times 3.65$\nঘ) $\\frac{2345 \\times 2345 - 759 \\times 759}{2345 - 759}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $a - b = 4$ এবং $ab = 60$ হলে, $a + b$ এর মান কত?\n৪. $a + b = 9m$ এবং $ab = 18m^2$ হলে, $a - b$ এর মান কত?\n৫. $x - \\frac{1}{x} = 4$ হলে, প্রমাণ কর যে, $x^4 + \\frac{1}{x^4} = 322$।\n৬. $2x + \\frac{2}{x} = 3$ হলে, $x^2 + \\frac{1}{x^2}$ এর মান কত?\n৭. $a + \\frac{1}{a} = 2$ হলে, দেখাও যে, $a^2 + \\frac{1}{a^2} = a^4 + \\frac{1}{a^4}$।\n৮. $a + b = \\sqrt{7}$ এবং $a - b = \\sqrt{5}$ হলে, প্রমাণ কর যে, $8ab(a^2 + b^2) = 24$।\n৯. $a + b + c = 9$ এবং $ab + bc + ca = 31$ হলে, $a^2 + b^2 + c^2$ এর মান নির্ণয় কর।\n১০. $a^2 + b^2 + c^2 = 9$ এবং $ab + bc + ca = 8$ হলে, $(a + b + c)^2$ এর মান কত?\n১১. $a + b + c = 6$ এবং $a^2 + b^2 + c^2 = 14$ হলে, $(a - b)^2 + (b - c)^2 + (c - a)^2 = $ কত?\n১২. $x = 3, y = 4$ এবং $z = 5$ হলে, $9x^2 + 16y^2 + 4z^2 - 24xy - 16yz + 12zx = $ কত?\n১৩. $(a + 2b)(3a + 2c)$ কে দুইটি বর্গের বিয়োগফলরূপে প্রকাশ কর।\n১৪. $x^2 + 10x + 24$ কে দুইটি বর্গের বিয়োগফলরূপে প্রকাশ কর।\n১৫. $a^4 + a^2b^2 + b^4 = 8$ এবং $a^2 + ab + b^2 = 4$ হলে, ক) $a^2 + b^2$, খ) $ab$ এর মান কত?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

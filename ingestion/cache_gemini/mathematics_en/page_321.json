@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 321,
+  "pdf_page_no": 326,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again,\n\n$$AD^2 = c^2 - x^2$$\n$$= c^2 - \\left( \\frac{c^2 + a^2 - b^2}{2a} \\right)^2$$\n$$= \\left( c + \\frac{c^2 + a^2 - b^2}{2a} \\right) \\left( c - \\frac{c^2 + a^2 - b^2}{2a} \\right)$$\n$$= \\frac{2ac + c^2 + a^2 - b^2}{2a} \\cdot \\frac{2ac - c^2 - a^2 + b^2}{2a}$$\n$$= \\frac{\\{(c + a)^2 - b^2\\}\\{b^2 - (c - a)^2\\}}{4a^2}$$\n$$= \\frac{(c + a + b)(c + a - b)(b + c - a)(b - c + a)}{4a^2}$$\n$$= \\frac{(a + b + c)(a + b + c - 2b)(a + b + c - 2a)(a + b + c - 2c)}{4a^2}$$\n$$= \\frac{2s(2s - 2b)(2s - 2a)(2s - 2c)}{4a^2}$$\n$$= \\frac{4s(s - a)(s - b)(s - c)}{a^2}$$\n\n$$\\therefore AD = \\frac{2}{a} \\sqrt{s(s - a)(s - b)(s - c)}$$\n\n$$\\therefore \\text{Area of } \\triangle ABC$$\n$$= \\frac{1}{2} BC \\cdot AD = \\frac{1}{2} \\cdot a \\cdot \\frac{2}{a} \\sqrt{s(s - a)(s - b)(s - c)} = \\sqrt{s(s - a)(s - b)(s - c)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4",
+      "section_title": "Equilateral triangle",
+      "chunk_type": "theory",
+      "content_markdown": "Let the length of each side of the equilateral triangular region $ABC$ be $a$.\nDraw $AD \\perp BC$.\n$$\\therefore BD = CD = \\frac{a}{2}$$\nIn right-angled $\\triangle ABD$\n$$BD^2 + AD^2 = AB^2$$\nor, $$AD^2 = AB^2 - BD^2 = a^2 - \\left( \\frac{a}{2} \\right)^2 = a^2 - \\frac{a^2}{4} = \\frac{3a^2}{4}$$\n$$\\therefore AD = \\frac{\\sqrt{3}a}{2}$$\nArea of $\\triangle ABC = \\frac{1}{2} \\cdot BC \\cdot AD = \\frac{1}{2} \\cdot a \\cdot \\frac{\\sqrt{3}a}{2} = \\frac{\\sqrt{3}}{4}a^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Equilateral triangle",
+      "figure_no": "16.01",
+      "box_2d": [
+        758,
+        720,
+        905,
+        866
+      ],
+      "description": "An equilateral triangle ABC with altitude AD drawn to base BC, showing side length a and base segments a/2.",
+      "reading_order_anchor": "4. Equilateral triangle: Let the length of each side"
+    }
+  ]
+}

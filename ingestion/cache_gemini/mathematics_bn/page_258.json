@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 258,
+  "pdf_page_no": 263,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "প্রথম $n$ সংখ্যক স্বাভাবিক সংখ্যার ঘনের সমষ্টি নির্ণয়",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, প্রথম $n$ সংখ্যক স্বাভাবিক সংখ্যার ঘনের সমষ্টি $S_n$।\n\nঅর্থাৎ, $S_n = 1^3 + 2^3 + 3^3 + \\dots + n^3$\n\nআমরা জানি, $(r + 1)^2 - (r - 1)^2 = (r^2 + 2r + 1) - (r^2 - 2r + 1) = 4r$\n\nবা, $(r + 1)^2 r^2 - r^2(r - 1)^2 = 4r \\cdot r^2 = 4r^3$ [ উভয়পক্ষকে $r^2$ দ্বারা গুণ করে ]\n\nউপরের অভেদটিতে, $r = 1, 2, 3, \\dots, n$ বসিয়ে পাই,\n\n$2^2 \\cdot 1^2 - 1^2 \\cdot 0^2 = 4 \\cdot 1^3$\n\n$3^2 \\cdot 2^2 - 2^2 \\cdot 1^2 = 4 \\cdot 2^3$\n\n$4^2 \\cdot 3^2 - 3^2 \\cdot 2^2 = 4 \\cdot 3^3$\n\n$\\dots \\dots \\dots$\n\n$\\dots \\dots \\dots$\n\n$(n + 1)^2 \\cdot n^2 - n^2 \\cdot (n - 1)^2 = 4n^3$\n\nযোগ করে পাই,\n\n$(n + 1)^2 \\cdot n^2 - 1^2 \\cdot 0^2 = 4(1^3 + 2^3 + 3^3 + \\dots + n^3)$\n\nবা, $(n + 1)^2 \\cdot n^2 = 4S_n$\n\nবা, $S_n = \\frac{n^2(n + 1)^2}{4}$\n\n$\\therefore S_n = \\left\\{ \\frac{n(n + 1)}{2} \\right\\}^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "প্রয়োজনীয় সূত্র",
+      "chunk_type": "theory",
+      "content_markdown": "প্রয়োজনীয় সূত্র\n\n১. $1 + 2 + 3 + \\dots + n = \\frac{n(n + 1)}{2}$\n\n২. $1^2 + 2^2 + 3^2 + \\dots + n^2 = \\frac{n(n + 1)(2n + 1)}{6}$\n\n৩. $1^3 + 2^3 + 3^3 + \\dots + n^3 = \\left\\{ \\frac{n(n + 1)}{2} \\right\\}^2$\n\nবিশেষ দ্রষ্টব্য: $1^3 + 2^3 + 3^3 + \\dots + n^3 = (1 + 2 + 3 + \\dots + n)^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

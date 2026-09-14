@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 269,
+  "pdf_page_no": 274,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. The ray diagram usually used to draw the image for a convex lens is -\n\n(a) i\n(b) ii\n(c) i & ii\n(d) i, ii & iii\n\n5. Which is the unit of power of a lens?\n\na) Dioptre\nb) Watt\nc) Horsepower\nd) Meter",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Shiuli, a tenth-grade student, has difficulty seeing the writing on the black-board in the class. After consulting a doctor, she was prescribed glasses with lenses of $-2\\text{D}$ power. Her elder brother, Togor, drew a ray diagram to show her where the image would form for an object positioned $1$ meter away from the lens. He also explained to Shiuli whether the image formed would be real or virtual.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is a lens?\n\n(b) How can the nature of a lens be identified without touching it?\n\n(c) Determine the focal length of Shiuli's glasses.\n\n(d) Draw the ray diagram illustrated by Togor in the stimulus and analyze his steps in explaining it to Shiuli.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.36",
+      "figure_no": "9.36",
+      "box_2d": [
+        189,
+        122,
+        357,
+        875
+      ],
+      "description": "Three ray diagrams showing refraction through lenses labeled (i), (ii), and (iii).",
+      "reading_order_anchor": "4. The ray diagram usually used to draw the image for a convex lens is -"
+    }
+  ]
+}

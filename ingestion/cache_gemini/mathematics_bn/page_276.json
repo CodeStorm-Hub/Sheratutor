@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 276,
+  "pdf_page_no": 281,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ২. $\\triangle ABG$ ও $\\triangle DEH$ ত্রিভুজদ্বয়ের $\\angle B = \\angle E$, $\\angle AGB = \\angle DHE$ [এক সমকোণ]\n\n$\\therefore \\angle BAG = \\angle EDH$\n\n$\\therefore \\triangle ABC$ ও $\\triangle DEF$ ত্রিভুজদ্বয় সদৃশকোণী, তাই সদৃশ।\n\n$\\therefore \\frac{h}{p} = \\frac{AB}{DE} = \\frac{BC}{EF}$ [কারণ $\\triangle ABC$ ও $\\triangle DEF$ সদৃশ]\n\nধাপ ৩. $\\frac{\\triangle ABC}{\\triangle DEF} = \\frac{h}{p} \\times \\frac{BC}{EF} = \\frac{BC}{EF} \\times \\frac{BC}{EF} = \\frac{BC^2}{EF^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "নির্দিষ্ট অনুপাতে রেখাংশের বিভক্তিকরণ",
+      "chunk_type": "theory",
+      "content_markdown": "সমতলে দুইটি ভিন্ন বিন্দু $A$ ও $B$ এবং $m$ ও $n$ যেকোনো স্বাভাবিক সংখ্যা হলে স্বীকার করে নিই যে, রেখায় এমন অনন্য বিন্দু $X$ আছে যে, $X$ বিন্দুটি $A$ ও $B$ বিন্দুর অন্তর্বর্তী এবং $AX : XB = m : n$।\n\nওপরের চিত্রে, $AB$ রেখাংশ $X$ বিন্দুতে $m : n$ অনুপাতে অন্তর্বিভক্ত হয়েছে। তাহলে, $AX : XB = m : n$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.12",
+      "section_title": "সম্পাদ্য ১২. কোনো রেখাংশকে একটি নির্দিষ্ট অনুপাতে অন্তর্বিভক্ত করতে হবে।",
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি, $AB$ রেখাংশকে $m : n$ অনুপাতে অন্তর্বিভক্ত করতে হবে।\n\nঅঙ্কন: $A$ বিন্দুতে যেকোনো কোণ $\\angle BAX$ অঙ্কন করি এবং $AX$ রশ্মি থেকে পরপর $AE = m$ এবং $EC = n$ অংশ কেটে নিই। $B, C$ যোগ করি। $E$ বিন্দু দিয়ে $CB$ এর সমান্তরাল $ED$ রেখাংশ অঙ্কন করি যা $AB$ কে $D$ বিন্দুতে ছেদ করে। তাহলে $AB$ রেখাংশ $D$ বিন্দুতে $m : n$ অনুপাতে অন্তর্বিভক্ত হলো।\n\nপ্রমাণ: যেহেতু $DE$ রেখাংশ $ABC$ ত্রিভুজের এক বাহু $BC$ এর সমান্তরাল,\n\n$\\therefore AD : DB = AE : EC = m : n$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: বিকল্প পদ্ধতিতে কোনো রেখাংশকে নির্দিষ্ট অনুপাতে অন্তর্বিভক্ত কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. ৭ সে.মি. দৈর্ঘ্যের একটি রেখাংশকে ৩ : ২ অনুপাতে অন্তর্বিভক্ত কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: নির্দিষ্ট অনুপাতে রেখাংশের বিভক্তিকরণ",
+      "figure_no": "14.01",
+      "box_2d": [
+        432,
+        378,
+        474,
+        621
+      ],
+      "description": "একটি রেখাংশ AB যা বিন্দু X দ্বারা m:n অনুপাতে বিভক্ত।",
+      "reading_order_anchor": "নির্দিষ্ট অনুপাতে রেখাংশের বিভক্তিকরণ"
+    },
+    {
+      "caption": "চিত্র: সম্পাদ্য ১২ এর চিত্র",
+      "figure_no": "14.02",
+      "box_2d": [
+        653,
+        594,
+        771,
+        879
+      ],
+      "description": "একটি ত্রিভুজ ABC যেখানে AB রেখাংশকে m:n অনুপাতে বিভক্ত করার জ্যামিতিক অঙ্কন দেখানো হয়েছে।",
+      "reading_order_anchor": "সম্পাদ্য ১২. কোনো রেখাংশকে একটি নির্দিষ্ট অনুপাতে অন্তর্বিভক্ত করতে হবে।"
+    }
+  ]
+}

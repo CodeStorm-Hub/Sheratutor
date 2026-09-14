@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 302,
+  "pdf_page_no": 307,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Ammonium sulphate is widely used in agriculture. Ammonium sulphate can react with an alkali or base. So when the amount of alkali increases in soil, Ammonium sulphate is used in soil to decrease the amount of alkali. It is a very important nutrient for plants. Plants receive nitrogen and sulphur from it.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Chemicals in Processing Agricultural Commodities",
+      "chunk_type": "theory",
+      "content_markdown": "Fruits, vegetables, fishes etc. are called agricultural commodities. The process through which agricultural commodities are kept fresh for a long time or can be saved from decay by using any chemical substance is called processing of agricultural commodities. Use of chemical substances has both merits and demerits. Mangoes get spots when the traders transport them from one place to another by buses, trucks or trains. People do not want to buy these spotted mangoes. For this reason unscrupulous traders buy green mangoes and transport them from one place to another. As a result, the mangoes do not get spots. Then the unscrupulous traders apply aqueous solution of calcium carbide on the mangoes to ripen them. Again, acetylene is prepared by adding water to the calcium carbide ($\text{CaC}_2$). This acetylene gas helps in ripening fruits.\n\n$$\text{CaC}_2 + 2\text{H}_2\text{O} \\longrightarrow \text{C}_2\text{H}_2 + \text{Ca(OH)}_2$$\n\nBesides, mangoes are ripened by this ethylene gas. Ethylene also has a negative impact on our body. Ripening mangoes by carbide means the process of ripening mangoes by acetylene. Normally, ripe fruits release ethylene (a natural hormone) gas, which causes surrounding unripe fruits to ripen.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2",
+      "section_title": "Chemicals in Preserving Agricultural Commodities",
+      "chunk_type": "theory",
+      "content_markdown": "Agricultural commodities are preserved by ice, table salt, vinegar etc. so that the agricultural commodities do not become odorous or so that they do not decay. Fishes are preserved by ice. Vinegar is used to preserve tomatoes, green mangoes, etc. in containers. Vinegar enters our body with food but it does not harm us. Foods are not preserved by formalin because it is harmful material for man and animals. We may even die if formalin enters our body. Hence, formalin should not be used to preserve food. Formalin is used in laboratories to preserve dead animal bodies.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.3",
+      "section_title": "Some Recommended Food Preservatives",
+      "chunk_type": "theory",
+      "content_markdown": "The chemical substances which protect food items from bacteria, bad smell, and",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

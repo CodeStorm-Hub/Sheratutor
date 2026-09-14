@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 155,
+  "pdf_page_no": 160,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": "7.2",
+      "section_title": "Precipitation Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "2. Precipitation Reaction: When two soluble compounds are mixed in a certain solvent and if any new compound is produced that is insoluble or sparsely soluble in that solvent, the compound settles at the bottom of the container as a solid. This new solid compound at the bottom is called the precipitate. The reaction in which the produced compound settles at the bottom of the container as precipitate is called the precipitation reaction. For example, when silver nitrate ($\text{AgNO}_3$) solution is mixed with sodium chloride ($\text{NaCl}$) solution, they react to produce silver chloride and sodium nitrate. $\text{NaNO}_3$ is highly soluble in water, so it remains dissolved in the solution. But since solubility of $\text{AgCl}$ is sparse, it settles at the bottom as precipitate:\n\n$$\text{NaCl}(aq) + \text{AgNO}_3(aq) \rightarrow \text{AgCl}(s)\\\text{l} + \text{NaNO}_3(aq)$$\n\nWhen you add barium chloride ($\text{BaCl}_2$) solution with sodium sulfate ($\text{Na}_2\text{SO}_4$) solution, they produce barium sulfate ($\text{BaSO}_4$) and sodium chloride ($\text{NaCl}$). Barium sulfate is precipitated.\n\n$$\text{Na}_2\text{SO}_4(aq) + \text{BaCl}_2(aq) \rightarrow \text{BaSO}_4(s)\\\text{l} + 2\text{NaCl}(aq)$$\n\nHowever, there are some precipitation reactions in which there occurs an electron exchange. You will know about them in higher classes.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Demonstration of a Precipitation Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "Demonstration of a Precipitation Reaction.\n\nIn a test tube, take 2-3 $\text{mL}$ ferrous sulfate solution and add $\text{NaOH}$ solution with that in drops. You will see a green precipitate is forming gradually and settling at the bottom of the tube. The two chemical compounds are forming solid $\text{Fe(OH)}_2$ precipitate here:\n\n$$\text{FeSO}_4 + \text{NaOH} \rightarrow \text{Fe(OH)}_2\\\text{l} + \text{Na}_2\text{SO}_4$$",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.02: Precipitation Reaction.",
+      "figure_no": "7.02",
+      "box_2d": [
+        645,
+        105,
+        874,
+        429
+      ],
+      "description": "Apparatus setup showing three test tubes with a precipitation reaction occurring, where aqueous solution of NaOH and FeSO4 form a green precipitate of Fe(OH)2.",
+      "reading_order_anchor": "Demonstration of a Precipitation Reaction."
+    }
+  ]
+}

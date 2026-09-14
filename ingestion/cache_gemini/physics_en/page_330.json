@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 330,
+  "pdf_page_no": 335,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "All of us were charmed at one point of our life when observing the attraction or repulsion of magnet. Though magnetism and electric current seems to be completely different topics, these are two different forms of the same energy, that will be discussed in this chapter. We will see that as electric current can produce a magnetic field, similarly a varying magnetic field can also produce an electric current. In this chapter along with the magnetic effects of current, we will discuss how different instruments can be made and can be used by using magnets and electricity.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: The Children are making electromagnet in the largest practical class of the world arranged in Kuliarchar.",
+      "figure_no": "12.01",
+      "box_2d": [
+        268,
+        112,
+        644,
+        884
+      ],
+      "description": "A group of students in school uniforms working on an electromagnet experiment in a large classroom setting.",
+      "reading_order_anchor": "All of us were charmed at one point of our life when observing the attraction or repulsion of magnet."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 103,
+  "pdf_page_no": 108,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Usage of linear equations",
+      "chunk_type": "theory",
+      "content_markdown": "In real life we have to solve different types of problems. In most cases of solving these problems mathematical knowledge, skill and logic are necessary. In real cases, in the application of mathematical knowledge and skill, as on one side the problems are solved smoothly, on the other side in daily life, solutions of the problems are obtained by mathematics. As a result, the students are interested in mathematics. Here different types of problems based on real life will be expressed by equations and they will be solved.\n\nFor determining the unknown quantity in solving the problems based on real life, variable is assumed instead of the unknown quantity and then equation is formed by the given conditions. Then by solving the equation, value of the variable, that is the unknown quantity is found.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 5.** The digit of the units place of a number consisting of two digits is 2 more than the digit of its tens place. If the places of the digits are interchanged, the number thus formed will be less by 6 than twice the given number. Find the number.\n\n**Solution:** Let the digit of tens place be $x$. Then the digit of units place will be $x + 2$.\n\n$\\therefore$ the number is $10x + (x + 2)$ or, $11x + 2$\n\nNow, if the places of the digits are interchanged, the changed number will be $10(x + 2) + x$ or, $11x + 20$\n\nBy the question, $11x + 20 = 2(11x + 2) - 6$\n\nor, $11x + 20 = 22x + 4 - 6$\n\nor, $22x - 11x = 20 + 6 - 4$ [by transposition]\n\nor, $11x = 22$\n\nor, $x = 2$\n\n$\\therefore$ the number is $11x + 2 = 11 \\times 2 + 2 = 24$\n\n$\\therefore$ given number is 24",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 6.** In a class if 4 students are seated in each bench, 3 benches remain vacant. But if 3 students are seated on each bench, 6 students are to remain standing. What is the number of students in that class ?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,114 @@
+{
+  "printed_page_no": 78,
+  "pdf_page_no": 83,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": "3.1",
+      "section_title": "Exercises",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "30. How much money will become Tk. 1280 as profit principal in 12 years at the rate of profit 5% per annum ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "31. Find the difference of simple profit and compound profit of Tk. 8000 in 3 years at the rate of profit 5%.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "32. The Value Added Tax (VAT) of sweets is $x\\%$. If a trader sells sweets at Tk. $P$ including VAT, how much VAT is he to pay ? If $x = 15$, $P = 2300$, what is the amount of VAT ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "33. Sum of a number and its multiplicative inverse is 3.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Taking the number as the variable $x$, express the above information by an equation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Find the value of $x^3 - \\frac{1}{x^3}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Prove that, $x^5 + \\frac{1}{x^5} = 123$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "34. Each of the members of an association decided to subscribe 100 times the number of members. But 7 members did not subscribe. As a result, amount of subscription for each member was increased by Tk. 500 than the previous.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) If the number of members is $x$ and total amount of subscription is Tk. $A$, find the relation between them.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Find the number of members of the association and total amount of subscription.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) $\\frac{1}{4}$ of total amount of subscription at the rate of simple profit 5% and rest of the money at the rate of simple profit 4% were invested for 2 years. Find the total profit.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "35. A bus was hired at Tk. 2400 to go for a picnic under the condition that every passenger would bare equal fare. But due to the absence of 10 passengers, the fare was increased by Tk. 8 per head.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Determine the increased fare per head and percentage of absent passengers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Determine the fare per head of the passengers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Find the difference of simple profit and compound profit of the amount equivalent to the bus fare in 13 years at the rate of profit 5%.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

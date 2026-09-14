@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 365,
+  "pdf_page_no": 370,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We have also learnt if the numbers of data are $n$ and $n$ is an odd number, the median will be the value of $\\frac{n+1}{2}$ th term. But if $n$ is an even number, the median will be numerical mean of the value of $\\frac{n}{2}$ and $(\\frac{n}{2} + 1)$ th terms. Here we present through example how mean is determined with or without the help formulae.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 10. The frequency distribution table of 51 students is placed below. Find the median.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Height(cm) | 150 | 155 | 160 | 165 | 170 | 175 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 4 | 6 | 12 | 16 | 8 | 5 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Cumulative frequency distribution table for finding mean is as follows :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Height(cm) | 150 | 155 | 160 | 165 | 170 | 175 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 4 | 6 | 12 | 16 | 8 | 5 |\n| Cumulative Frequency | 4 | 10 | 22 | 38 | 46 | 51 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, $n = 51$ is an odd number.\n$\\therefore$ Median = the value of $\\frac{51 + 1}{2}$ th term = the value of 26th term = 165\nRequired median 165 cm.\nNote: The value of the terms from 23th to 38th is 165.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 11. The frequency distribution table of marks obtained in mathematics of 60 students is as follows. Find the median :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Marks obtained | 40 | 45 | 50 | 55 | 60 | 70 | 80 | 85 | 90 | 95 | 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 2 | 4 | 4 | 3 | 7 | 10 | 16 | 6 | 4 | 3 | 1 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Cumulative frequency distribution table for determining median is :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Marks obtained | 40 | 45 | 50 | 55 | 60 | 70 | 80 | 85 | 90 | 95 | 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 2 | 4 | 4 | 3 | 7 | 10 | 16 | 6 | 4 | 3 | 1 |\n| Cumulative Frequency | 2 | 6 | 10 | 13 | 20 | 30 | 46 | 52 | 56 | 59 | 60 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, $n = 60$, which is an even number.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

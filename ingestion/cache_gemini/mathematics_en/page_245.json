@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 245,
+  "pdf_page_no": 250,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, multiplying both sides of first equation by 2, we get, $4x + 2y = 24$\nsecond equation is, $4x + 2y = 5$\nsubtracting, $0 = 19$ which is impossible.\n\nSo, we can say, such systems of equations cannot be solved. Such systems of equations are inconsistent and mutually independent. Such systems of equations have no solution.\n\nHere, comparing the coefficients of $x$ and $y$ and constant terms from the two equations, we get, $\\frac{2}{4} = \\frac{1}{2} \\neq \\frac{12}{5}$\n\nThat is, in case of the system of inconsistent and mutually independent equations ratios of the coefficients of the variables are not equal to the ratio of the constant terms.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Generally, conditions for conformability of two simple simultaneous equations, such as, $\\begin{cases} a_1x + b_1y = c_1 \\\\ a_2x + b_2y = c_2 \\end{cases}$ are given in the chart below:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| system of equations | comparison of coeff. and const. terms | consistent/ inconsistent | mutually dependent/ independent | has solutions(how many)/no |\n| :--- | :--- | :--- | :--- | :--- |\n| (i) $\\begin{cases} a_1x + b_1y = c_1 \\\\ a_2x + b_2y = c_2 \\end{cases}$ | $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$ | consistent | independent | yes (only one) |\n| (ii) $\\begin{cases} a_1x + b_1y = c_1 \\\\ a_2x + b_2y = c_2 \\end{cases}$ | $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} = \\frac{c_1}{c_2}$ | consistent | dependent | yes (infinite) |\n| (iii) $\\begin{cases} a_1x + b_1y = c_1 \\\\ a_2x + b_2y = c_2 \\end{cases}$ | $\\frac{a_1}{a_2} = \\frac{b_1}{b_2} \\neq \\frac{c_1}{c_2}$ | inconsistent | independent | no |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, if there is no constant terms in both the equations of a system of equations i.e $c_1 = c_2 = 0$, then from the table:\n\nAccording to (i) if $\\frac{a_1}{a_2} \\neq \\frac{b_1}{b_2}$, the system of equations is always consistent and independent of each other. In that case, there will be only one (unique) solution.\n\nAccording to (ii) if $\\frac{a_1}{a_2} = \\frac{b_1}{b_2}$, the system of equations is consistent and dependent of each other. In that case, there will be infinite number of solutions.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

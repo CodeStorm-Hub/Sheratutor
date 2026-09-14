@@ -1,0 +1,149 @@
+{
+  "printed_page_no": 256,
+  "pdf_page_no": 261,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. কোনো সমান্তর ধারার $m$ তম পদ $n$ এবং $n$ তম পদ $m$ হলে, ধারাটির $(m+n)$ তম পদ কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. $1 + 3 + 5 + 7 + \\dots$ ধারাটির $n$ পদের সমষ্টি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. $8 + 16 + 24 + \\dots$ ধারাটির প্রথম ৯টি পদের সমষ্টি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. $5 + 11 + 17 + 23 + \\dots + 59 =$ কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $29 + 25 + 21 + \\dots - 23 =$ কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. কোনো সমান্তর ধারার ১২ তম পদ ৭৭ হলে, এর প্রথম ২৩টি পদের সমষ্টি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. একটি সমান্তর ধারার ১৬ তম পদ $-২০$ হলে, এর প্রথম ৩১টি পদের সমষ্টি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. $9 + 7 + 5 + \\dots$ ধারাটির প্রথম $n$ সংখ্যক পদের যোগফল $-১৪৪$ হলে, $n$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. $2 + 4 + 6 + 8 + \\dots$ ধারাটির প্রথম $n$ সংখ্যক পদের সমষ্টি ২৫৫০ হলে, $n$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৭. কোনো ধারার প্রথম $n$ সংখ্যক পদের সমষ্টি $n(n + 1)$ হলে, ধারাটি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. কোনো ধারার প্রথম $n$ সংখ্যক পদের সমষ্টি $n(n + 1)$। ধারাটির ১০টি পদের সমষ্টি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৯. একটি সমান্তর ধারার প্রথম ১২ পদের সমষ্টি ১৪৪ এবং প্রথম ২০ পদের সমষ্টি ৫৬০ হলে, এর প্রথম ৬ পদের সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২০. কোনো সমান্তর ধারার প্রথম $m$ পদের সমষ্টি $n$ এবং প্রথম $n$ পদের সমষ্টি $m$ হলে, এর প্রথম $(m+n)$ পদের সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২১. কোনো সমান্তর ধারায় $p$ তম, $q$ তম ও $r$ তম পদ যথাক্রমে $a, b, c$ হলে, দেখাও যে, $a(q - r) + b(r - p) + c(p - q) = 0$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২২. দেখাও যে, $1 + 3 + 5 + 7 + \\dots + 125 = 169 + 171 + 173 + \\dots + 209$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২৩. এক ব্যক্তি ২৫০০ টাকার একটি ঋণ কিছুসংখ্যক কিস্তিতে পরিশোধ করতে রাজি হন। প্রত্যেক কিস্তি পূর্বের কিস্তি থেকে ২ টাকা বেশি। যদি প্রথম কিস্তি ১ টাকা হয়, তবে কতগুলো কিস্তিতে এ ব্যক্তি তার ঋণ শোধ করতে পারবেন?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৪. কোন সমান্তর ধারার দুইটি নির্দিষ্ট পদ, $l$ তম পদ $l^2$ এবং $k$ তম পদ $k^2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) ধারাটির প্রথম পদ $a$ এবং সাধারণ অন্তর $d$ ধরে উদ্দীপকের আলোকে দুইটি সমীকরণ তৈরি কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $(l + k)$ তম পদ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) প্রমাণ কর ধারাটির প্রথম $(l + k)$ সংখ্যক পদের সমষ্টি $\\frac{l + k}{2}(l^2 + k^2 + l + k)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

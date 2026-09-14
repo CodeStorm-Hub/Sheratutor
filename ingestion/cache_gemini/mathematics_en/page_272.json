@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 272,
+  "pdf_page_no": 277,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Arithmetic Series",
+      "chunk_type": "theory",
+      "content_markdown": "If the difference between any two adjacent terms of a series is always equal, it is called arithmetic series.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. $1 + 3 + 5 + 7 + 9 + 11$ is a series. The first term of the series is $1$, the second term is $3$, the third term is $5$ etc.\n\nHere, second term $-$ first term $= 3 - 1 = 2$,\n\nthird term $-$ second term $= 5 - 3 = 2$, fourth term $-$ third term $= 7 - 5 = 2$,\n\nfifth term $-$ fourth term $= 9 - 7 = 2$, sixth term $-$ fifth term $= 11 - 9 = 2$\n\nHence, the series is an arithmetic series.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this series, the difference between two terms is called common difference. The common difference of the mentioned series is $2$. The numbers of terms of the series are fixed. That is why the series is finite series. It is to be noted that if the terms of the series are not fixed, the series is called infinite series, such as, $1 + 4 + 7 + 10 + \\dots$ is an infinite series. In an arithmetic series, the first term and the common difference are generally denoted by $a$ and $d$ respectively. Then by definition, if the first term is $a$, the second term is $a + d$, the third term is $a + 2d$ etc. Hence, the series will be $a + (a + d) + (a + 2d) + \\dots$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Determining common term of an arithmetic series",
+      "chunk_type": "theory",
+      "content_markdown": "Let the first term of an arithmetic series be $a$ and the common difference be $d$. Then the terms of the series are:\n\nFirst term $= a = a + (1 - 1)d$\n\nSecond term $= a + d = a + (2 - 1)d$\n\nThird term $= a + 2d = a + (3 - 1)d$\n\nFourth term $= a + 3d = a + (4 - 1)d$\n\n$\\dots \\dots \\dots$\n\n$\\dots \\dots \\dots$\n\n$\\therefore n$th term $= a + (n - 1)d$\n\nThis $n$th term is called common term of arithmetic series. If the first term of an arithmetic series $a$ and common difference $d$ are known, all the terms of",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

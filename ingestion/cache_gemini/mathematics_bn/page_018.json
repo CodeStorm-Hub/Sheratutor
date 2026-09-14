@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 18,
+  "pdf_page_no": 23,
+  "chapter_no": 1,
+  "chapter_title": "বাস্তব সংখ্যা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$3 \\div 13 = 3.605551...$$\n\n$$\\therefore$$ নির্ণেয় বর্গমূল $3.605551...$ এবং নির্ণেয় তিন দশমিক স্থান পর্যন্ত আসন্ন মান $3.606$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২১. $4.4623845...$ এর $1, 2, 3, 4$ ও $5$ দশমিক স্থান পর্যন্ত মান ও আসন্ন মান কত?\n\nসমাধান: $4.4623845...$ ভগ্নাংশটির\n\nএক দশমিক স্থান পর্যন্ত মান $4.4$ এবং এক দশমিক স্থান পর্যন্ত আসন্ন মান $4.5$\n\nদুই দশমিক স্থান পর্যন্ত মান $4.46$ এবং দুই দশমিক স্থান পর্যন্ত আসন্ন মান $4.46$\n\nতিন দশমিক স্থান পর্যন্ত মান $4.462$ এবং তিন দশমিক স্থান পর্যন্ত আসন্ন মান $4.462$\n\nচার দশমিক স্থান পর্যন্ত মান $4.4623$ এবং চার দশমিক স্থান পর্যন্ত আসন্ন মান $4.4624$\n\nপাঁচ দশমিক স্থান পর্যন্ত মান $4.46238$ এবং পাঁচ দশমিক স্থান পর্যন্ত আসন্ন মান $4.46238$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $29$ এর বর্গমূল নির্ণয় কর ও বর্গমূলের দুই দশমিক স্থান পর্যন্ত মান ও আসন্ন মান লিখ।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ১",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. নিচের কোনটি অমূলদ সংখ্যা?\nক) $0.\\dot{3}$ খ) $\\sqrt{\\frac{16}{9}}$ গ) $\\sqrt[3]{\\frac{8}{27}}$ ঘ) $\\frac{5}{\\sqrt{3}}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $a, b, c, d$ চারটি ক্রমিক স্বাভাবিক সংখ্যা হলে নিচের কোনটি পূর্ণবর্গ সংখ্যা?\nক) $abcd$ খ) $ab+cd$ গ) $abcd+1$ ঘ) $abcd-1$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

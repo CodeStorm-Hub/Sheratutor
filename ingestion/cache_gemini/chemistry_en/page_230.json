@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 230,
+  "pdf_page_no": 235,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "### Observation and decision\n\n| Food Name | Probable Change of Colour in the Litmus Paper | Decision |\n| --- | --- | --- |\n| Apple | Blue litmus paper turned red but the red litmus paper didn't change | Apple is acidic |\n| Apple | Red litmus paper turned blue but the blue litmus paper didn't change | Apple is basic |\n\n**Result:** If you did the experiment correctly, you would find apple is acidic.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Following the procedure stated above, if you carry out experiments with rice and cucumber, you will see rice is a neutral food; it does not change the colour of red litmus paper into blue or the blue into red. Cucumber is a basic food for it turns red litmus into blue.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "Preparation of pH paper",
+      "chunk_type": "theory",
+      "content_markdown": "Take one of the coloured vegetables (red spinach, red cabbage, beet etc.) or coloured flower (china rose, red rose etc.). Cut it in small pieces. Boil in steam at low temperature. Insert a piece of filter paper in the coloured extract you obtained. Dry the paper in air and then cut it into several small pieces. That is the pH paper you have made. To know the value of pH, sink it in a solution of a known pH and make a colour chart of the pH range. Make pH paper with all vegetables or flowers are available to you. Select the best one to use.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

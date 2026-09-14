@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 207,
+  "pdf_page_no": 212,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ:\n\nক) $3.5 : 5.6$ কে $1 : a$ এবং $b : 1$ আকারে প্রকাশ কর।\nখ) $x : y = 5 : 6$ হলে $3x : 5y =$ কত?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### অনুপাতের রূপান্তর\nএখানে অনুপাতের রাশিগুলো ধনাত্মক সংখ্যা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.1",
+      "section_title": "অনুপাতের রূপান্তর",
+      "chunk_type": "theory",
+      "content_markdown": "$1. \\; a : b = c : d$ হলে, $b : a = d : c$ [ব্যস্তকরণ (Invertendo)]\n\nপ্রমাণ: দেওয়া আছে,\n$$\\frac{a}{b} = \\frac{c}{d}$$\nবা, $ad = bc$ [উভয়পক্ষকে $bd$ দ্বারা গুণ করে]\nবা, $\\frac{ad}{ac} = \\frac{bc}{ac}$ [উভয় পক্ষকে $ac$ দ্বারা ভাগ করে যেখানে $a, c$ এর কোনটিই শূন্য নয়]\nবা, $\\frac{d}{c} = \\frac{b}{a}$\nঅর্থাৎ, $b : a = d : c$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2",
+      "section_title": "অনুপাতের রূপান্তর",
+      "chunk_type": "theory",
+      "content_markdown": "$2. \\; a : b = c : d$ হলে, $a : c = b : d$ [একান্তরকরণ (Alternendo)]\n\nপ্রমাণ: দেওয়া আছে,\n$$\\frac{a}{b} = \\frac{c}{d}$$\nবা, $ad = bc$ [উভয়পক্ষকে $bd$ দ্বারা গুণ করে]\nবা, $\\frac{ad}{cd} = \\frac{bc}{cd}$ [উভয় পক্ষকে $cd$ দ্বারা ভাগ করে যেখানে $c, d$ এর কোনোটিই শূন্য নয়]\nবা, $\\frac{a}{c} = \\frac{b}{d}$\nঅর্থাৎ, $a : c = b : d$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.3",
+      "section_title": "অনুপাতের রূপান্তর",
+      "chunk_type": "theory",
+      "content_markdown": "$3. \\; a : b = c : d$ হলে, $\\frac{a + b}{b} = \\frac{c + d}{d}$ [যোজন (Componendo)]\n\nপ্রমাণ: দেওয়া আছে,\n$$\\frac{a}{b} = \\frac{c}{d}$$\nবা, $\\frac{a}{b} + 1 = \\frac{c}{d} + 1$ [উভয়পক্ষে $1$ যোগ করে]\nঅর্থাৎ, $\\frac{a + b}{b} = \\frac{c + d}{d}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

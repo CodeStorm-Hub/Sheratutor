@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 67,
+  "pdf_page_no": 72,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2. One of the unknown quantities is to be denoted with any variable (say $x$). Then realising the problem well, express other unknown quantities in terms of the same variable $x$.\n\n3. The problem will have to be splitted into small parts and express them by algebraic expressions.\n\n4. Using the given conditions, the small parts together are to be expressed by an equation.\n\n5. The value of the unknown quantity $x$ is to be found by solving the equation.\n\nDifferent formulae are used in solving the problems based on real life. The formulae are mentioned below :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Related to Payable or Attainable\n\nSuppose, $q$ = amount of money payable or attainable per person\n\n$n$ = number of person\n\n$\\therefore$ Amount of payable or attainable money, $A = qn$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Related to Time and Work\n\nSuppose, $q$ = portion of a work performed by every one in unit of time\n\n$n$ = number of performers of work\n\n$x$ = total time of doing work\n\n$W$ = portion of a work done by $n$ persons in time $x$\n\n$\\therefore W = qnx$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Related to Time and Distance\n\nSuppose, $v$ = speed per hour\n\n$t$ = total time\n\n$d$ = total distance\n\n$\\therefore d = vt$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Related to pipe and water tank\n\nSuppose, $Q_0$ = amount of stored water in a tank at the time of opening the pipe\n\n$q$ = amount of water flowing in or flowing out by the pipe in a unit time.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

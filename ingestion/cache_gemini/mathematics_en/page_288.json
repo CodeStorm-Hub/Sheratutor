@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 288,
+  "pdf_page_no": 293,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Find the series and then determine the sum of the first seven terms of the series.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "24. The $n$th term of a series is $2n - 4$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Find the series.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Find the 10th term of the series and determine the sum of the first 20 terms.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Considering the first term of the obtained series as the 1st term and the common difference as common ratio, construct a new series and find the sum of the first 8 terms of the series by applying the formula.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "25. An S.S.C. examinee gets his result at 1:15 p.m. At 1:20 p.m. 8 students get their results, at 1:25 p.m 27 students get theirs.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) As per the stem write down the two patterns.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) How many students will know their results at exactly 2:10 p.m.? How many students would be knowing their results by 2:10 p.m.?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) When will 6175225 students get their results?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

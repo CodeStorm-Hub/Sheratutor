@@ -1,0 +1,88 @@
+{
+  "printed_page_no": 171,
+  "pdf_page_no": 176,
+  "chapter_no": 8,
+  "chapter_title": "বৃত্ত",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $O$ কেন্দ্রবিশিষ্ট বৃত্তে $x$ এর মান কত?\nক) $126^\\circ$ খ) $108^\\circ$\nগ) $72^\\circ$ ঘ) $54^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. পাশের চিত্রে $\\frac{1}{2} \\angle ECD =$ কত ডিগ্রি?\nক) $40^\\circ$ খ) $50^\\circ$\nগ) $80^\\circ$ ঘ) $100^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. দুইটি বৃত্ত পরস্পরকে বহিঃস্পর্শ করে। এদের একটির ব্যাস $8$ সে.মি. এবং অপরটির ব্যাসার্ধ $4$ সে.মি. হলে, এদের কেন্দ্রদ্বয়ের মধ্যবর্তী দূরত্ব কত সে.মি. হবে?\nক) $0$ খ) $4$ গ) $8$ ঘ) $12$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $O$ কেন্দ্রবিশিষ্ট কোন বৃত্তের বহিঃস্থ বিন্দু $P$ থেকে বৃত্তে দুইটি স্পর্শক $PQ$ ও $PR$ টানা হলে $\\triangle PQR$ হবে-\n(i) সমদ্বিবাহু\n(ii) সমবাহু\n(iii) সমকোণী\nনিচের কোনটি সঠিক?\nক) $i$ খ) $i$ ও $ii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $ABC$ সমবাহু ত্রিভুজের পরিকেন্দ্র $O$ হলে, $\\angle BOC =$ কত ডিগ্রি?\nক) $30^\\circ$ খ) $60^\\circ$ গ) $90^\\circ$ ঘ) $120^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$AB$ ও $AC$ রেখাদ্বয় $BCD$ বৃত্তের স্পর্শক। বৃত্তের কেন্দ্র $O$ এবং $\\angle BAC = 60^\\circ$। এই তথ্যের আলোকে (৭ - ৮) নং প্রশ্নের উত্তর দাও।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৮.০১: বৃত্ত সংক্রান্ত জ্যামিতিক চিত্র",
+      "figure_no": "8.01",
+      "box_2d": [
+        75,
+        675,
+        225,
+        875
+      ],
+      "description": "বৃত্তের কেন্দ্র O এবং বিন্দু A, B, D এর সাথে কোণ x চিহ্নিত চিত্র",
+      "reading_order_anchor": "২. $O$ কেন্দ্রবিশিষ্ট বৃত্তে $x$ এর মান কত?"
+    },
+    {
+      "caption": "চিত্র ৮.০২: বৃত্ত সংক্রান্ত জ্যামিতিক চিত্র",
+      "figure_no": "8.02",
+      "box_2d": [
+        245,
+        675,
+        365,
+        885
+      ],
+      "description": "বৃত্তের মধ্যে চতুর্ভুজ ABCD এবং বহিঃস্থ রেখা CE",
+      "reading_order_anchor": "৩. পাশের চিত্রে $\\frac{1}{2} \\angle ECD =$ কত ডিগ্রি?"
+    },
+    {
+      "caption": "চিত্র ৮.০৩: বৃত্ত সংক্রান্ত জ্যামিতিক চিত্র",
+      "figure_no": "8.03",
+      "box_2d": [
+        705,
+        365,
+        875,
+        685
+      ],
+      "description": "বৃত্তের কেন্দ্র O এবং স্পর্শক AB ও AC",
+      "reading_order_anchor": "AB ও AC রেখাদ্বয় BCD বৃত্তের স্পর্শক।"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 342,
+  "pdf_page_no": 347,
+  "chapter_no": 17,
+  "chapter_title": "পরিসংখ্যান",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "শ্রেণি বিন্যস্ত উপাত্তে প্রথম শ্রেণি প্রচুরক শ্রেণি হলে, তার আগের শ্রেণির গণসংখ্যা শূন্য ধরতে হয়। শ্রেণিবিন্যস্ত উপাত্তে শেষ শ্রেণি প্রচুরক শ্রেণি হলে, তার পরের শ্রেণির গণসংখ্যা শূন্য ধরতে হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৭",
+      "section_title": "অনুশীলনী ১৭",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. উপাত্তসমূহ সারণিভুক্ত করা হলে প্রতি শ্রেণিতে যতগুলো উপাত্ত অন্তর্ভুক্ত হয় তার নির্দেশক নিচের কোনটি?\nক) শ্রেণি সীমা খ) শ্রেণির মধ্যবিন্দু গ) শ্রেণি সংখ্যা ঘ) শ্রেণির গণসংখ্যা",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. পরিসংখ্যানের অবিন্যস্ত উপাত্তসমূহ মানের ক্রমানুসারে সাজালে উপাত্তসমূহ মাঝামাঝি কোনো মানের কাছাকাছি পুঞ্জীভূত হয়। উপাত্তের এই প্রবণতাকে বলা হয়\nক) প্রচুরক খ) কেন্দ্রীয় প্রবণতা গ) গড় ঘ) মধ্যক",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩. নিচের সারণিতে\n| তাপমাত্রা | $6^\\circ - 8^\\circ$ | $8^\\circ - 10^\\circ$ | $10^\\circ - 12^\\circ$ |\n| :--- | :--- | :--- | :--- |\n| গণসংখ্যা | 5 | 9 | 4 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(i) শ্রেণিব্যাপ্তি 3\n(ii) মধ্যক শ্রেণি $8^\\circ - 10^\\circ$\n(iii) তাপমাত্রা অবিচ্ছিন্ন চলক\nনিচের কোনটি সঠিক?\nক) i ও ii খ) i ও iii গ) ii ও iii ঘ) i, ii, ও iii",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. আয়তলেখ অঙ্কন করতে দরকার-\n(i) $x$ অক্ষ বরাবর অবিচ্ছিন্ন শ্রেণিব্যাপ্তি\n(ii) $y$ অক্ষ বরাবর গণসংখ্যা\n(iii) শ্রেণির মধ্যমান\nনিচের কোনটি সঠিক?\nক) i ও ii খ) i ও iii গ) ii ও iii ঘ) i, ii, ও iii",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. উপাত্তের ক্ষেত্রে প্রচুরক -\n(i) কেন্দ্রীয় প্রবণতার পরিমাপ\n(ii) সবচেয়ে বেশি বার উপস্থাপিত মান\n(iii) সবক্ষেত্রে অনন্য নাও হতে পারে",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "সারণি: তাপমাত্রা ও গণসংখ্যা",
+      "figure_no": "17.01",
+      "box_2d": [
+        458,
+        323,
+        504,
+        724
+      ],
+      "description": "তাপমাত্রা ও গণসংখ্যার সারণি",
+      "reading_order_anchor": "৩. নিচের সারণিতে"
+    }
+  ]
+}

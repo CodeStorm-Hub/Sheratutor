@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 320,
+  "pdf_page_no": 325,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Answer:** We know, spent energy = $(P \\times t) / 1000$ kilowatt-hour or unit\n\n$P = 60\\text{ W}$ and $t = 5 \\times 30\\text{ hour}$\n\nSpent energy = $60 \\times (5 \\times 30) / 1000\\text{ unit} = 9\\text{ unit}$\n\nTotal cost of electricity with $10\\text{ taka}$ per unit = $9 \\times 10\\text{ taka} = 90\\text{ taka}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.4",
+      "section_title": "Electrical Supply",
+      "chunk_type": "theory",
+      "content_markdown": "When current needs to be transmitted from one place to another in a country, it is transformed into a very high voltage. This is done to reduce the loss of electricity in electrical wires. You know that, the amount of energy wasted per second as heat energy is equal to $I^2R$, so we may conclude that there would be no dissipation of energy as heat energy if there was no resistance $R$ in electrical wires.\n\nBut that is not practically possible; everything has some resistance. That is why, if current $I$ can be reduced, the energy lost $I^2R$ due to heat can also be reduced. Since the amount of electrical energy supplied per second is $VI$, if the potential is increased by $10$ times, it is possible to supply the same energy using $10$ times less current. If $10$ times less current is supplied, $100$ times less heat energy will be dissipated. This is because the resistance $R$ of the wire is the same in both cases.\n\nNow you may think that the loss of heat energy can also be written as $V^2/R$ and in that case the heat energy loss will be $100$ times due to $10$ times increase of voltage. It is to be remembered that when we found the energy loss per second as $V^2/R$, we then saw $V$ was the potential difference between the two sides of the resistance. The $V$ which we are discussing here is not the potential difference between the two sides of the wire. It is the value of potential of the electric wire! The value of the potential on two sides of the electrical wire is almost equal. So the difference is negligible.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.4.1",
+      "section_title": "System Loss of Electricity",
+      "chunk_type": "theory",
+      "content_markdown": "We know that the power plants situated at different parts of the country produce electricity. This electricity is to be transmitted to different parts of the country. To distribute electricity, first it is transmitted to the substations of different areas. The electrical energy is then distributed to consumers using electricity distribution systems.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

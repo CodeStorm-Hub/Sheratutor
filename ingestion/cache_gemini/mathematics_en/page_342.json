@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 342,
+  "pdf_page_no": 347,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 26. In the figure, $ABCD$ is a square whose length of each side is 22 metre and region $AED$ is a half circle. Determine the area of the whole region.\n\nSolution: Let the length of each side of the square $ABCD$ be $a$.\n\n$\\therefore$ Area of square region = $a^2$\nAgain, $AED$ is a half circle.\n\n$\\therefore$ Radius of the half circle $r = \\frac{22}{2}$ metre = 11 metre.\n\nTherefore, area of the half circle = $\\frac{1}{2}\\pi r^2$\n\n$\\therefore$ Area of the whole region = Area of the square $ABCD$ + area of the half circle $AED$\n\n$= (a^2 + \\frac{1}{2}\\pi r^2)$\n\n$= (22^2 + \\frac{1}{2} \\times 3.1416 \\times 11^2) = 674.07$ square metre (approx.)\n\nThe required area is 674.07 square metre (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 27. In the figure, $ABCD$ is a rectangle whose length is 12 metre the breadth is 10 metre. and $DAE$ is a circular segment. Determine the length of the arc $DE$ and the area of the whole region.\n\nSolution: The radius of the circular segment, $r = AD = 12$ metre and the angle subtended at centre $\\theta = 30^\\circ$.\n\n$\\therefore$ length of the arc $DE = \\frac{\\pi r \\theta}{180}$\n\n$= \\frac{3.1416 \\times 12 \\times 30}{180} = 6.28$ metre (approx.)\n\nArea of the circular segment $ADE = \\frac{\\theta}{360} \\times \\pi r^2$.\n\n$= \\frac{30}{360} \\times 3.1416 \\times 12^2 = 37.7$ square metre (approx.)\n\nThe length of the rectangle $ABCD$ is 12 metre and breadth is 10 metre.\n\n$\\therefore$ Area of the rectangle = length $\\times$ breadth = $12 \\times 10 = 120$ square metre\n\n$\\therefore$ Area of the whole region = $(37.7 + 120)$ square metre = 157.7 square metre (approx.)\n\nThe required area is 157.7 square metre (approx.).",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Square with a half circle",
+      "figure_no": "16.01",
+      "box_2d": [
+        168,
+        695,
+        353,
+        876
+      ],
+      "description": "A square ABCD with a semicircle AED on top of side AD.",
+      "reading_order_anchor": "Example 26. In the figure, ABCD is a square whose length of each side is 22"
+    },
+    {
+      "caption": "Fig 16.02: Rectangle with a circular segment",
+      "figure_no": "16.02",
+      "box_2d": [
+        665,
+        684,
+        804,
+        876
+      ],
+      "description": "A rectangle ABCD with a circular segment DAE attached to side AD.",
+      "reading_order_anchor": "Example 27. In the figure, ABCD is a rectangle whose length is 12 metre the"
+    }
+  ]
+}

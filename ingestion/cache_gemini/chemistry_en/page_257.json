@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 257,
+  "pdf_page_no": 262,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$2\\text{H}_2\\text{SO}_4 \\text{ (Concentrated)} + \\text{Cu} \\longrightarrow \\text{CuSO}_4 + \\text{SO}_2 + 2\\text{H}_2\\text{O}$$\n\n**Dehydrating Property:** The substance that absorbs water from any compound is called a dehydrating agent. This property in a chemical is its dehydrating property. Dilute $\\text{H}_2\\text{SO}_4$ does not show any dehydrating property but this is not true in the concentrated case. The concentrated $\\text{H}_2\\text{SO}_4$ absorbs water from sugar (\\(\\text{C}_{12}\\text{H}_{22}\\text{O}_{11}\\)). So, concentrated sulfuric acid is a dehydrating agent.\n\n$$\\text{C}_{12}\\text{H}_{22}\\text{O}_{11} + \\text{H}_2\\text{SO}_4 \\longrightarrow 12\\text{C} + \\text{H}_2\\text{SO}_4 \\cdot 11\\text{H}_2\\text{O}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Individual Task",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "* Take 2-3 mL lime water in a test tube and add a few drops of dilute sulfuric acid to it. Observe the change minutely and write the reasons. Write the probable equation.\n* Take a pinch of potassium iodide $\\text{KI}$ in a test tube and add a few drops of concentrated sulfuric acid to it. Observe the change minutely and explain the reasons. Write the probable equation.\n* Take a spoonful of sugar $\\text{C}_{12}\\text{H}_{22}\\text{O}_{11}$ in a test tube and add a few drops of concentrated sulfuric acid to it. Observe the change minutely and write the reasons. Write the probable equation. You need to be cautious when doing the experiment.\n* What property of sulfuric acid (acid, oxidation and dehydrating properties) is exhibited in which of the above three experiments? Explain each of them.\n* Follow the pie chart of figure 10.13 containing usage of sulfuric acid and based on your reading, analyze the economic significance of sulfuric acid in Bangladesh.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.13: Usage of Sulfuric Acid.",
+      "figure_no": "10.13",
+      "box_2d": [
+        390,
+        508,
+        606,
+        866
+      ],
+      "description": "A pie chart showing the percentage usage of sulfuric acid across different sectors such as chemicals, pigments, soap and detergent, plastic, dye, steel production, metal salt, and fertilizer.",
+      "reading_order_anchor": "Follow the pie chart of figure 10.13 containing usage of sulfuric acid and based on your reading, analyze the economic significance of sulfuric acid in Bangladesh."
+    }
+  ]
+}

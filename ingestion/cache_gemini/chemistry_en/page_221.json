@@ -1,0 +1,53 @@
+{
+  "printed_page_no": 221,
+  "pdf_page_no": 226,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "This is known as the Universal Indicator Colour Chart. To know the value of pH of an unknown solution, add a few drops of the universal indicator to the solution and then compare the colour of solution with the standard colour chart and determine the value of pH.\n\n**pH Paper:** pH Paper is used for knowing the value of an unknown solution. Add a small piece of pH paper to the solution, it will change its colour. There is a standard colour chart for various pH values. Compare the colour of the pH paper with that standard colour chart and determine the value of the pH.\n\n**pH Meter:** pH Meter is used for knowing the value of the pH of an unknown solution. Inserting the electrode of the pH meter in the unknown solution the value of pH can be known directly from the digital display on the pH meter.\n\n**Litmus Paper:** Litmus paper is the easily available cheaper alternative to know the approximate value of pH. The litmus paper is red when the value of pH is less than 7 and the colour is blue when the value is more than 7.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.02: pH paper and standard Colour Chart.",
+      "figure_no": "9.02",
+      "box_2d": [
+        612,
+        104,
+        864,
+        296
+      ],
+      "description": "Container with universal indicator pH test strips and a standard colour chart.",
+      "reading_order_anchor": "pH Paper"
+    },
+    {
+      "caption": "Fig 9.03: pH Meter.",
+      "figure_no": "9.03",
+      "box_2d": [
+        648,
+        355,
+        843,
+        631
+      ],
+      "description": "Digital pH meter with an electrode probe and a digital colour display.",
+      "reading_order_anchor": "pH Meter"
+    },
+    {
+      "caption": "Fig 9.04: Red and Blue Litmus Paper.",
+      "figure_no": "9.04",
+      "box_2d": [
+        656,
+        649,
+        825,
+        864
+      ],
+      "description": "Bundles of red and blue litmus paper strips.",
+      "reading_order_anchor": "Litmus Paper"
+    }
+  ]
+}

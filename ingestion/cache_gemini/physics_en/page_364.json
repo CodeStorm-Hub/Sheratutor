@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 364,
+  "pdf_page_no": 369,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is an IC?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) Explain why an analog signal and a digital signal are different.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) Draw the crystal lattice structure element mentioned by the teacher in the stimulus.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) Analyze how the same function could be achieved in Shovon's radio without using ICs.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

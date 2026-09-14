@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 73,
+  "pdf_page_no": 78,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ If selling price is Tk. 1, cost price is Tk. $\\frac{100}{100 - r}$.\n\nAgain, if cost price is Tk. 100, selling price at the profit of $s\\%$ is Tk. $(100 + s)$.\n\n$\\therefore$ if cost price is Tk. $\\frac{100}{100 - r}$, selling price at the profit of $s\\%$ is Tk. $\\left( \\frac{100 + s}{100} \\times \\frac{100}{100 - r} \\right)$\n\n$= \\text{Tk. } \\frac{100 + s}{100 - r}$\n\nTherefore, in Tk. $\\frac{100 + s}{100 - r}$ number of oranges is to be sold is $n$.\n\n$\\therefore$ In tk. 1 number of oranges is to be sold is $n \\times \\left( \\frac{100 - r}{100 + s} \\right)$\n\nHence, $\\frac{n(100 - r)}{100 + s}$ oranges are to be sold per taka.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 40. What is the profit of Tk. 650 in 6 years at the rate of profit Tk. 7 percent per annum ?\n\nSolution: We know, $I = Pnr$\n\nHere, $P = \\text{Tk. } 650$, $n = 6$ year, percent per annum $s = \\text{Tk. } 7$\n\n$\\therefore r = \\frac{s}{100} = \\frac{7}{100}$\n\n$\\therefore I = 650 \\times 6 \\times \\frac{7}{100} = 273$\n\nHence, profit is Tk. 273.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 41. Find the compound principal and compound profit of Tk. 15000 in 3 years at the profit of 6 percent per annum.\n\nSolution: We know, $C = P(1 + r)^n$ [where $C$ is the profit principal in the case of compound profit]\n\nGiven, $P = 15000$ Tk, $r = 6\\% = \\frac{6}{100}$, $n = 3$ year\n\n$\\therefore C = 15000 \\left( 1 + \\frac{6}{100} \\right)^3 = 15000 \\left( 1 + \\frac{3}{50} \\right)^3 = 15000 \\left( \\frac{53}{50} \\right)^3$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

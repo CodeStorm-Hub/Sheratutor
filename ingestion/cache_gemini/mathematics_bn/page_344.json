@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 344,
+  "pdf_page_no": 349,
+  "chapter_no": 17,
+  "chapter_title": "পরিসংখ্যান",
+  "sections": [
+    {
+      "section_no": "17.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৩. [চিত্রটি দেখুন]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উপরের চিত্রে, প্রথম শ্রেণিটির শ্রেণি মধ্যমান ও শেষ শ্রেণিটির গণসংখ্যা কত?\nখ) চিত্রে প্রদর্শিত তথ্যটিকে ছকের মাধ্যমে প্রকাশ কর।\nগ) উপরে প্রাপ্ত ছক থেকে নিবেশনটির মধ্যক নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৪. কোনো শ্রেণির ৬০ জন শিক্ষার্থীর ওজনের (কেজি) গণসংখ্যা নিবেশন সারণি নিম্নরূপ:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| শ্রেণিব্যাপ্তি | 45 - 49 | 50 - 54 | 55 - 59 | 60 - 64 | 65 - 69 | 70 - 74 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| গণসংখ্যা | 4 | 8 | 10 | 20 | 12 | 6 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) মধ্যক নির্ণয়ের সূত্রটি লিখ।\nখ) প্রদত্ত তথ্য থেকে প্রচুরক নির্ণয় কর।\nগ) উপাত্তের আয়তলেখ অঙ্কন কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.3",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৫. তাপমাত্রা পরিবর্তনশীল। বাংলাদেশে সাধারণত জানুয়ারি মাসের ১ম সপ্তাহে তাপমাত্রা কম এবং জুন মাসের ৪র্থ সপ্তাহে তাপমাত্রা বেশি থাকে। ৫২ সপ্তাহের তাপমাত্রা ডিগ্রি সেলসিয়াস এককে নিম্নরূপ: 35, 30, 27, 42, 20, 19, 27, 36, 39, 14, 15, 38, 37, 40, 40, 12, 10, 9, 7, 20, 21, 24, 33, 30, 29, 21, 19, 31, 28, 26, 32, 30, 22, 23, 24, 41, 26, 23, 25, 22, 17, 19, 21, 23, 8, 13, 23, 24, 20, 32, 11, 17",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) শ্রেণিব্যাপ্তি 5 ধরে শ্রেণি সংখ্যা নির্ণয় কর।\nখ) প্রদত্ত উপাত্তসমূহকে সারণি আকারে প্রকাশ করে সারণি থেকে তাপমাত্রার গড় নির্ণয় কর।\nগ) উপরে প্রাপ্ত সারণি ব্যবহার করে আয়তলেখ অঙ্কনের মাধ্যমে প্রচুরক নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৩: গণসংখ্যা বহুভুজ",
+      "figure_no": "13",
+      "box_2d": [
+        115,
+        350,
+        375,
+        665
+      ],
+      "description": "একটি গণসংখ্যা বহুভুজ চিত্র যা X-অক্ষে শ্রেণিব্যাপ্তি এবং Y-অক্ষে গণসংখ্যা নির্দেশ করছে।",
+      "reading_order_anchor": "১৩."
+    }
+  ]
+}

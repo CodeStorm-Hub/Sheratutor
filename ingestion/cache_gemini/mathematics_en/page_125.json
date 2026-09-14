@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 125,
+  "pdf_page_no": 130,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Geometric proof",
+      "chunk_type": "theory",
+      "content_markdown": "In geometry, special importance is attached to some propositions which are taken as theorems and used successively in establishing other propositions. In geometric proof different statements are explained with the help of figures. But the proof must be logical.\n\nIn describing geometric propositions general or particular enunciation is used. The general enunciation is the description independent of the figure and the particular enunciation is the description based on the figure. If the general enunciation of a proposition is given, subject matter of the proposition is specified through particular enunciation. For this, necessary figure is to be drawn.\n\nGenerally, in proving the geometric theorem the following steps should be followed :\n\n1. General enunciation.\n2. Figure and particular enunciation.\n3. Description of the necessary constructions and\n4. Description of the logical steps of the proof.\n\nIf a proposition is proved directly from the conclusion of a theorem, it is called a corollary of that theorem. Besides, proof of various propositions, proposals for construction of different figures are considered. These are known as constructions. By drawing figures related to problems, it is necessary to narrate the description of construction and its logical truth.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.1",
+      "section_title": "Exercises 6.1",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Give a concept of space, surface, line and point.\n2. State Euclid's five postulates.\n3. State five postulates of incidence.\n4. State the distance postulate.\n5. State the ruler postulate.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

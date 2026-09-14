@@ -1,0 +1,107 @@
+{
+  "printed_page_no": 292,
+  "pdf_page_no": 297,
+  "chapter_no": 15,
+  "chapter_title": "ক্ষেত্রফল সম্পর্কিত উপপাদ্য",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $BD = $ কত?\nক) $1$ খ) $\\sqrt{2}$ গ) $2$ ঘ) $4$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. ত্রিভুজটির উচ্চতা কত?\nক) $\\frac{4}{\\sqrt{3}}$ খ) $\\sqrt{3}$ গ) $\\frac{2}{\\sqrt{3}}$ ঘ) $2\\sqrt{3}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৫. প্রমাণ কর যে, ত্রিভুজের যে কোনো মধ্যমা ত্রিভুজক্ষেত্রটিকে সমান ক্ষেত্রফল বিশিষ্ট দুইটি ত্রিভুজক্ষেত্রে বিভক্ত করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৬. প্রমাণ কর যে, কোনো বর্গক্ষেত্র তার কর্ণের উপর অঙ্কিত বর্গক্ষেত্রের অর্ধেক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৭. প্রমাণ কর যে, সামান্তরিকের কর্ণদ্বয় সামান্তরিকক্ষেত্রটিকে চারটি সমান ত্রিভুজক্ষেত্রে বিভক্ত করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৮. একটি সামান্তরিকক্ষেত্র এবং সমান ক্ষেত্রফল বিশিষ্ট একটি আয়তক্ষেত্র একই ভূমির উপর এবং এর একই পাশে অবস্থিত। দেখাও যে, সামান্তরিকক্ষেত্রটির পরিসীমা আয়তক্ষেত্রটির পরিসীমা অপেক্ষা বৃহত্তর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৯. $\\triangle ABC$ এর $AB$ ও $AC$ বাহুদ্বয়ের মধ্যবিন্দু যথাক্রমে $X$ ও $Y$। প্রমাণ কর যে, $\\triangle AXY$ এর ক্ষেত্রফল $= \\frac{1}{4} \\triangle ABC$ এর ক্ষেত্রফল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১০. $ABCD$ একটি ট্রাপিজিয়াম। এর $AB$ ও $CD$ বাহু দুইটি সমান্তরাল। ট্রাপিজিয়ামক্ষেত্র $ABCD$ এর ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১১. সামান্তরিক $ABCD$ এর অভ্যন্তরে $P$ যেকোনো একটি বিন্দু। প্রমাণ কর যে, $\\triangle PAB$ এর ক্ষেত্রফল $+ \\triangle PCD$ এর ক্ষেত্রফল $= \\frac{1}{2} ($সামান্তরিকক্ষেত্র $ABCD$ এর ক্ষেত্রফল$)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১২. $\\triangle ABC$ এ $BC$ ভূমির সমান্তরাল যেকোনো সরলরেখা $AB$ ও $AC$ বাহুকে যথাক্রমে $D$ ও $E$ বিন্দুতে ছেদ করে। প্রমাণ কর যে, $\\triangle DBC = \\triangle EBC$ এবং $\\triangle DBE = \\triangle CDE$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৩. $ABC$ ত্রিভুজের $\\angle A =$ এক সমকোণ। $D, AC$ এর উপরস্থ একটি বিন্দু। প্রমাণ কর যে, $BC^2 + AD^2 = BD^2 + AC^2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৪. $ABC$ একটি সমদ্বিবাহু সমকোণী ত্রিভুজ। $BC$ এর অতিভুজ এবং $P, BC$ এর উপর যেকোনো বিন্দু। প্রমাণ কর যে, $PB^2 + PC^2 = 2PA^2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৫. $\\triangle ABC$ এর $\\angle C$ স্থূলকোণ। $AD, BC$ এর উপর লম্ব। দেখাও যে, $AB^2 = AC^2 + BC^2 + 2BC \\cdot CD$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৬. $\\triangle ABC$ এর $\\angle C$ সূক্ষ্মকোণ। $AD, BC$ এর উপর লম্ব। দেখাও যে, $AB^2 = AC^2 + BC^2 - 2BC \\cdot CD$।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

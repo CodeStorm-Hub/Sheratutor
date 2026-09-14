@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 77,
+  "pdf_page_no": 82,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Otherwise we can say that if we see an object in motion and can calculate its acceleration, then if its mass is known, it is possible to calculate the force acting on it.\n\nNow we look at some examples.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** A force of $100\\text{ N}$ is applied on a stationary body of mass $5\\text{ kg}$ for $10\\text{ s}$. (a) what will be the acceleration due to this force? (b) What is the velocity after $10\\text{ s}$? (c) What is the velocity after $20\\text{ s}$? (d) What is distance travelled in $20\\text{ s}$? (e) show velocity and distance travelled by drawing a graph.\n\n**Answer:** (a) acceleration,\n\n$$a = \\frac{F}{m} = \\frac{100\\text{ N}}{5\\text{ kg}} = 20\\text{ m/s}^2$$\n\n(b) velocity after $10\\text{ s}$,\n\n$$v = u + at = 0 + 20 \\times 10\\text{ m/s} = 200\\text{ m/s}$$\n\n(c) force is applied up to $10\\text{ s}$, since force is applied no more, therefore, after reaching the velocity of $200\\text{ m/s}$, its velocity will be unchanged. That is, velocity after $20\\text{ s}$ is $200\\text{ m/s}$.\n\n(d) distance travelled in $20\\text{ s}$ has to be determined in two steps. Distance travelled in the first $10\\text{ s}$,\n\n$$s_1 = ut + \\frac{1}{2}at^2 = \\frac{1}{2} \\times 20 \\times 10^2\\text{ m} = 1000\\text{ m}$$\n\nDistance travelled in the second $10\\text{ s}$,\n\n$$s_2 = vt = 200 \\times 10\\text{ m} = 2000\\text{ m}$$\n\nTotal distance travelled,\n\n$$s = s_1 + s_2 = 1000\\text{ m} + 2000\\text{ m} = 3000\\text{ m} = 3\\text{ km}$$\n\n(e) Shown in figure 3.06.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

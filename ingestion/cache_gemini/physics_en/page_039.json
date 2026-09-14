@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 39,
+  "pdf_page_no": 44,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "displacement from B to A are not equal. One is negative of the other. In vector form we can write,\n$$\\vec{AB} = -\\vec{BA}$$\nDistance or displacement, both have the dimension of length.\n$$\\text{[Displacement]} = \\text{L (vector)}$$\n$$\\text{[Distance]} = \\text{L (scalar)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.5",
+      "section_title": "Speed and Velocity",
+      "chunk_type": "theory",
+      "content_markdown": "Roughly we know what is meant by velocity. The measurement of how fast a body is moving is called the velocity. In physics, velocity has a definite meaning and in addition to velocity we use another quantity named speed. If we have understood the two terms distance and displacement properly, then we will be able to understand two terms speed and velocity very easily.\n\nSpeed is the rate of change of distance with respect to time. Therefore, if you have covered $100\\text{ m}$ distance in $20\\text{ second}$, your speed will be;\n$$v = \\frac{100\\text{ m}}{20\\text{ s}} = 5\\text{ m/s}$$\n\n$$\\text{The dimension of speed } [v] = LT^{-1}$$\n\nVelocity is the rate of change of displacement with respect to time. Therefore, if the change of your position along a certain direction is $50\\text{ m}$ in $20\\text{ second}$, then magnitude of your velocity will be;\n$$v = \\frac{50\\text{ m}}{20\\text{ s}} = 2.5\\text{ m/s}$$\nAnd that certain direction is the direction of velocity.\nAs velocity is a vector quantity, we will have to fix its direction.\n\n$$\\text{The dimension of velocity } [v] = LT^{-1}$$\n\nHere, one thing has to be noticed. If we consider only linear motion, then there is no difference between velocity and speed, the magnitude of velocity is the",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

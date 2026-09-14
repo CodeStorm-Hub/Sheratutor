@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 262,
+  "pdf_page_no": 267,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In a graph paper let $XOX'$ and $YOY'$ be respectively the $X$-axis and $Y$-axis and $O$ is the origin. We take each side of the smallest squares of the graph paper as unit along with both axes. Now, we plot the points $(-2, 6)$, $(0, 3)$, $(2, 0)$ obtained from equation (1) and join them each other. The graph is a straight line. Again, we plot the points $(1, 4)$, $(2, 0)$, $(3, -4)$ obtained from equation (2) and join them each other. In this case also the graph is a straight line.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let the two straight lines intersect each other at $P$. It is seen from the picture that the coordinates of $P$ are $(2, 0)$.\n\n$\\therefore$ solution: $x = 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Find four points on the graph of the equation $2x - y - 3 = 0$ in terms of a table. Then, taking unit of a fixed length on the graph paper, plot the points and join them each other. Is the graph a straight line?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "12.3",
+      "section_title": "Exercise 12.3",
+      "chunk_type": "theory",
+      "content_markdown": "Solve by graphs:\n\n1. $3x + 4y = 14$  \n   $4x - 3y = 2$\n\n2. $2x - y = 1$  \n   $5x + y = 13$\n\n3. $2x + 5y = 1$  \n   $x + 3y = 2$\n\n4. $3x - 2y = 2$  \n   $5x - 3y = 5$\n\n5. $\\frac{x}{2} + \\frac{y}{3} = 2$  \n   $2x + 3y = 13$\n\n6. $3x + y = 6$  \n   $5x + 3y = 12$\n\n7. $3x + 2y = 4$  \n   $3x - 4y = 1$\n\n8. $\\frac{x}{2} + \\frac{y}{3} = 3$  \n   $x + \\frac{y}{6} = 3$\n\n9. $3x + 2 = x - 2$\n\n10. $3x - 7 = 3 - 2x$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Graph of simultaneous equations",
+      "figure_no": "12.01",
+      "box_2d": [
+        118,
+        625,
+        315,
+        845
+      ],
+      "description": "A Cartesian coordinate system showing two intersecting straight lines plotted on a grid, with points labeled.",
+      "reading_order_anchor": "In a graph paper let XOX' and YOY' be respectively the X- axis and Y- axis and O is the origin."
+    }
+  ]
+}

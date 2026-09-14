@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 110,
+  "pdf_page_no": 115,
+  "chapter_no": 5,
+  "chapter_title": "এক চলকবিশিষ্ট সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩০. একটি সমকোণী ত্রিভুজের ভূমি ও উচ্চতা যথাক্রমে $(x - 1)$ সে.মি. ও $x$ সে.মি. এবং একটি বর্গের বাহুর দৈর্ঘ্য ত্রিভুজটির উচ্চতার সমান। আবার, একটি আয়তক্ষেত্রের বাহুর দৈর্ঘ্য $x + 3$ সে.মি. ও প্রস্থ $x$ সে.মি.।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) একটিমাত্র চিত্রের মাধ্যমে তথ্যগুলো দেখাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) ত্রিভুজক্ষেত্রটির ক্ষেত্রফল $10$ বর্গ সে.মি. হলে, এর উচ্চতা কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) ত্রিভুজক্ষেত্র, বর্গক্ষেত্র ও আয়তক্ষেত্রের ক্ষেত্রফলের ধারাবাহিক অনুপাত বের কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩১. একটি জমির ক্ষেত্রফল $192$ বর্গমিটার। জমিটির দৈর্ঘ্য $4$ মিটার কমালে এবং প্রস্থ $4$ মিটার বাড়ালে ক্ষেত্রফল অপরিবর্তিত থাকে। আবার জমিটির মাঝখানে $20$ সে.মি. ব্যাস বিশিষ্ট একটি বৃত্ত আঁকা হলো। বৃত্তটির কেন্দ্র থেকে একটি জ্যা এর উপর অঙ্কিত লম্ব ঐ জ্যা এর অর্ধেকের চেয়ে $2$ সে.মি. কম।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) জমিটির দৈর্ঘ্যকে $x$ এবং প্রস্থকে $y$ ধরে তথ্যগুলোকে সমীকরণে প্রকাশ কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) জমিটির পরিসীমা নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) বৃত্তটির জ্যা এর দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩২. নাবিলের বয়স যখন শুভর বর্তমান বয়সের সমান ছিল তখন শুভর যে বয়স ছিল নাবিলের বর্তমান বয়স তার দ্বিগুণ। শুভর বয়স যখন নাবিলের বর্তমান বয়সের সমান হবে তখন তাদের দুইজনের বয়সের যোগফল $63$ হলে প্রত্যেকের বর্তমান বয়স কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩৩. বাসে ওঠার লাইনে সোহাগের পিছনে যতজন দাঁড়িয়ে আছে সামনে তার থেকে দুইজন বেশি দাঁড়িয়ে আছে। তার পিছনে যতজন দাঁড়িয়ে আছে সম্পূর্ণ লাইনে তার তিনগুণ যাত্রী। লাইনে কতজন যাত্রী দাঁড়িয়ে আছে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩৪. সবুজ $3:30$টার সময় বাসা থেকে ড্রয়িং ক্লাসে গেল। সে যখন স্কুল থেকে বাসায় ফিরেছিল তখনও মিনিটের কাঁটা খাড়া নিচের দিকে ছিল কিন্তু $3:30$টার তুলনায় দুইটি কাঁটার মধ্যে দূরত্ব $30$ ডিগ্রি কম ছিল। সবুজ স্কুল থেকে বাসায় কখন ফিরেছিল?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

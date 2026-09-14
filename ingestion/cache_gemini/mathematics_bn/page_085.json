@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 85,
+  "pdf_page_no": 90,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$বা, a^4 = (20)^2 = \\{(2\\sqrt{5})^2\\}^2 = (2\\sqrt{5})^4$$\n$$\\therefore a = 2\\sqrt{5} \\quad [\\because a^x = b^x, a^x \\neq 0, a = b]$$\n$$\\therefore \\text{ভিত্তি } 2\\sqrt{5}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৮.** $x$ এর মান নির্ণয় কর: ক) $\\log_{10}x = -2$ খ) $\\log_x 324 = 4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**সমাধান:**\nক) $\\log_{10}x = -2$\nবা, $x = 10^{-2} = \\frac{1}{10^2} = \\frac{1}{100} = 0.01$\n$$\\therefore x = 0.01$$\nখ) $\\log_x 324 = 4$\nবা, $x^4 = 324 = 3 \\times 3 \\times 3 \\times 3 \\times 2 \\times 2 = 3^4 \\times 2^2$\nবা, $x^4 = 3^4 \\times (\\sqrt{2})^4$\nবা, $x^4 = (3\\sqrt{2})^4$\n$$\\therefore x = 3\\sqrt{2}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৯.** প্রমাণ কর যে, $3\\log_{10}2 + \\log_{10}5 = \\log_{10}40$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**সমাধান:** বামপক্ষ $= 3\\log_{10}2 + \\log_{10}5$\n$= \\log_{10}2^3 + \\log_{10}5 \\quad [\\because \\log_a M^r = r\\log_a M]$\n$= \\log_{10}8 + \\log_{10}5$\n$= \\log_{10}(8 \\times 5) \\quad [\\because \\log_a(MN) = \\log_a M + \\log_a N]$\n$= \\log_{10}40 = \\text{ডানপক্ষ (প্রমাণিত)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১০.** সরল কর: $\\frac{\\log_{10}\\sqrt{27} + \\log_{10}8 - \\log_{10}\\sqrt{1000}}{\\log_{10}1.2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**সমাধান:** $\\frac{\\log_{10}\\sqrt{27} + \\log_{10}8 - \\log_{10}\\sqrt{1000}}{\\log_{10}1.2}$\n$= \\frac{\\log_{10}(3^3)^{\\frac{1}{2}} + \\log_{10}8 - \\log_{10}(10^3)^{\\frac{1}{2}}}{\\log_{10}\\frac{12}{10}}$\n$= \\frac{\\log_{10}3^{\\frac{3}{2}} + \\log_{10}2^3 - \\log_{10}(10)^{\\frac{3}{2}}}{\\log_{10}12 - \\log_{10}10}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

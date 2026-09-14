@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 195,
+  "pdf_page_no": 200,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When a wave propagates through a spring, the wave moves forward by contraction and expansion of the spring. Again by shaking one end of a rope a wave can be formed and can be sent through the rope. There is a fundamental difference between the two waves. The wave formed in the spring was of contraction and expansion, the direction of contraction and expansion of the spring and the direction of wave is the same. The name of this wave is longitudinal wave. Sound (Figure 7.04) is this type of a longitudinal wave.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "1. Make a photocopy of this and cut it as a circle.\n\n2. Make a void by cutting along the middle of the paper as shown in the above picture.\n\n3. Now put the rectangular paper on the circular paper and enter a small pin through the cross mark (x).\n\n4. Now rotate the circular paper upwards as shown in the picture.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.05: Model of how longitudinal wave advances.",
+      "figure_no": "7.05",
+      "box_2d": [
+        287,
+        131,
+        804,
+        856
+      ],
+      "description": "Step-by-step instructions with illustrations showing a model of how a longitudinal wave advances using circular and rectangular paper with a pin.",
+      "reading_order_anchor": "When a wave propagates through a spring..."
+    }
+  ]
+}

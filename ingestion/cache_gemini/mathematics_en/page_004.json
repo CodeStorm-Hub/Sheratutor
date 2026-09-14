@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 4,
+  "pdf_page_no": 9,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "**Work:** Show the position of the following numbers in the classification of real numbers $\\frac{3}{4}, 5, -7, \\sqrt{13}, 0, 1, \\frac{9}{7}, 12, 2\\frac{4}{5}, 1.1234, 0.\\dot{3}\\dot{2}\\dot{3}$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 1.** Find an irrational number between $\\sqrt{3}$ and $4$.\n\n**Solution:** Here, $\\sqrt{3} = 1.7320508\\dots$\n\nSuppose, $a$ and $b$ are two irrational numbers between $\\sqrt{3}$ and $4$.\nWhere $a = \\sqrt{3} + 1$ and $b = \\sqrt{3} + 2$\nObviously $a$ and $b$ are both irrational numbers and both are between $\\sqrt{3}$ and $4$.\nThat is, $\\sqrt{3} < \\sqrt{3} + 1 < \\sqrt{3} + 2 < 4$\n$\\therefore a$ and $b$ are the two desired irrational numbers.\nIn fact, we can construct countless number of such irrational numbers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Basic characteristics of addition and multiplication processes of real numbers :**\n1. If $a$ and $b$ are real numbers, (i) $a + b$ is a real number and (ii) $ab$ is a real number.\n2. If $a$ and $b$ are real numbers, (i) $a + b = b + a$ and (ii) $ab = ba$\n3. If $a, b, c$ are real numbers, (i) $(a + b) + c = a + (b + c)$ and (ii) $(ab)c = a(bc)$\n4. If $a$ is real number, there are only two real numbers $0$ and $1$ such that\n(i) $0 \\neq 1$, (ii) $a + 0 = 0 + a = a$ and (iii) $a \\cdot 1 = 1 \\cdot a = a$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 1.01: Classification of real numbers",
+      "figure_no": "1.01",
+      "box_2d": [
+        92,
+        215,
+        342,
+        875
+      ],
+      "description": "A hierarchical tree diagram showing the classification of real numbers into rational and irrational, and further sub-classifications.",
+      "reading_order_anchor": "Work: Show the position of the following numbers in the classification of real numbers"
+    }
+  ]
+}

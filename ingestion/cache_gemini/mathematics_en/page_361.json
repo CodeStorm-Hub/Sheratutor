@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 361,
+  "pdf_page_no": 366,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work: Make cumulative frequency table of the marks obtained 50 and above in Mathematics by the students of your class in an examination and draw an Ogive curve.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Central Tendency: Central tendency and its measurement have been discussed in class VII and VIII. We have seen if the data under investigation are arranged in order of values, the data cluster round near any central value. A gain if the disorganized data are placed in frequency distribution table, the frequency is found to be abundant in a middle class i.e. frequency is maximum in middle class. In fact, the tendency of data to be clustered around the central value is number and it represents the data. The central tendency is measured by this number. Generally, the measurement of central tendency is of three types (1) Arithmetic means (2) Median (3) Mode :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Arithmetic Mean: We know if the sum of data is divided by the numbers of the data, we get the arithmetic mean. But this method is complex, time consuming and there is every possibility of committing mistake for large numbers of data. In such cases, the data are tabulated through classification and the arithmetic mean is determined by short-cut method.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. The frequency distribution table of the marks obtained by the students of a class is as follows. Find the arithmetic mean of the marks.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 17.01: Ogive curve",
+      "figure_no": "17.01",
+      "box_2d": [
+        94,
+        350,
+        415,
+        685
+      ],
+      "description": "A line graph showing an Ogive curve plotted on a grid with X and Y axes.",
+      "reading_order_anchor": "Work: Make cumulative frequency table of the marks obtained 50 and above in Mathematics by the students of your class in an examination and draw an Ogive curve."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 86,
+  "pdf_page_no": 91,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "This is so negligible that nobody is bothered about it! Next time when you jump anywhere, remember that you attract the whole earth towards you when you fall downwards. (As small as the acceleration of the earth may be, you pulled the whole earth towards you, you may be little proud of it!)\n\nThe easiest way of understanding Newton's third law is to understand the mechanism of our walking. We can all walk but nobody knows the physics hidden behind this. Since you have started to learn physics a simple question can be put to you. Since you have walked from a stationary position, so you have an acceleration, that means force has been applied on you. But all of us know that nobody is applying a force on us. We walk by ourselves. How is that possible?\n\nUnless we know Newton's third law, we never can explain the mechanism of walking. When we walk, we exert a force on the ground (i.e. apply force). Then according to the Newton's third law the ground also applies an equal and opposite force on our body (Figure 3.13). This equal and opposite force creates the acceleration and we walk. The persons who have a little problem understanding this, they may be reminded that it is easier walking on hard ground compared to sandy ground. The reason is that it is not possible to apply force on the sand, sand is displaced. Therefore the reaction force in Newton's third law cannot be achieved properly. The matter can be clarified more, if one is allowed to walk on a very smooth surface lubricated with soap-water or oil! There friction is hardly present so we cannot apply a backward force at all and due to this we will not get any force on us as the reaction force. So we cannot walk at all (You may try if you don't believe it). If force is applied, equal and opposite force is found, but if we cannot apply force at all, how can we get a reaction force? Then how can we walk?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.13: During walking when a person applies force on the ground then the ground also applies force on him in contrary",
+      "figure_no": "3.13",
+      "box_2d": [
+        287,
+        540,
+        555,
+        880
+      ],
+      "description": "An illustration of a person walking forward, showing the action force exerted on the ground and the equal and opposite reaction force exerted by the ground on the person.",
+      "reading_order_anchor": "Unless we know Newton's third law, we never can explain the mechanism of walking."
+    }
+  ]
+}

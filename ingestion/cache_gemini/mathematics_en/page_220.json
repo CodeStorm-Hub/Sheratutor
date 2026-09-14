@@ -1,0 +1,92 @@
+{
+  "printed_page_no": 220,
+  "pdf_page_no": 225,
+  "chapter_no": 10,
+  "chapter_title": "Distance and Elevation",
+  "sections": [
+    {
+      "section_no": "10.8",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "8. In the adjacent picture -\n(i) $\\angle DAC$ is an angle of depression\n(ii) $\\angle ACB$ is an angle of elevation\n(iii) $\\angle DAC = \\angle ACB$\n\nWhich one of the following is correct?\n1) $i$ and $ii$ 2) $ii$ and $iii$ 3) $i$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "10.9",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. What is the other name is of geoline?\n1) perpendicular line 3) Lying line\n2) Parallel line 4) Vertical line",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "10.10",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. If the angle of the elevation of the top of the miner is $30^\\circ$ at a point on the ground and the height is 26 metre, then find the distance of the plane from the Miner.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.11",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. If the top of a tree is 20 metre distance from the foot on the ground at any point on the ground and the angle of elevation is $60^\\circ$, find the height of the tree.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.12",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. Forming $45^\\circ$ angle with ground an 18 metre long ladder touches the top of the wall, find the height of the wall.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.13",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. If the angle of depression at a point on the ground 20 metre from the top of the house is $30^\\circ$, then find the height of the house.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.14",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. The angle of elevation of a tower at any point on the ground is $60^\\circ$. If moved back 25 metre, the angle of elevation becomes $30^\\circ$, find the height of the tower.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.15",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. The angle of elevation of a tower becomes $60^\\circ$ from $45^\\circ$ by moving 60 metre towards a minar. Find the height of the minar.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.16",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. A man standing at a place on the bank of a river observed that the angle of elevation of a tower exactly opposite to him on the other bank was $60^\\circ$. Moving 32 metre back he observed that the angle of elevation of the tower was $30^\\circ$. Find the height of the tower and the width of the river.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.17",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. A pole of 64 metre long breaks into two parts without complete separation and makes an angle $60^\\circ$ with the ground. Find the length of the broken part of the pole.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Geometric representation of angles of elevation and depression",
+      "figure_no": "10.01",
+      "box_2d": [
+        118,
+        645,
+        245,
+        860
+      ],
+      "description": "A right-angled triangle ABC with a horizontal line segment AD parallel to BC, illustrating angles of elevation and depression.",
+      "reading_order_anchor": "10.8"
+    }
+  ]
+}

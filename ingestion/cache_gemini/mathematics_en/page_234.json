@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 234,
+  "pdf_page_no": 239,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. If $\\frac{a}{b} = \\frac{b}{c} = \\frac{c}{d}$, show that,\n1) $\\frac{a^3 + b^3}{b^3 + c^3} = \\frac{b^3 + c^3}{c^3 + d^3}$\n2) $(a^2 + b^2 + c^2)(b^2 + c^2 + d^2) = (ab + bc + cd)^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. If $x = \\frac{4ab}{a + b}$, show that, $\\frac{x + 2a}{x - 2a} + \\frac{x + 2b}{x - 2b} = 2, a \\neq b$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. If $x = \\frac{\\sqrt[3]{m + 1} + \\sqrt[3]{m - 1}}{\\sqrt[3]{m + 1} - \\sqrt[3]{m - 1}}$, prove that, $x^3 - 3mx^2 + 3x - m = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. If $x = \\frac{\\sqrt{2a + 3b} + \\sqrt{2a - 3b}}{\\sqrt{2a + 3b} - \\sqrt{2a - 3b}}$, show that, $3bx^2 - 4ax + 3b = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. If $\\frac{a^2 + b^2}{b^2 + c^2} = \\frac{(a + b)^2}{(b + c)^2}$, show that, $a, b, c$ are continued proportion.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. If $\\frac{x}{b + c} = \\frac{y}{c + a} = \\frac{z}{a + b}$, prove that, $\\frac{a}{y + z - x} = \\frac{b}{z + x - y} = \\frac{c}{x + y - z}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. If $\\frac{bz - cy}{a} = \\frac{cx - az}{b} = \\frac{ay - bx}{c}$, prove that, $\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. If $\\frac{a + b - c}{a + b} = \\frac{b + c - a}{b + c} = \\frac{c + a - b}{c + a}$ and $a + b + c \\neq 0$, prove that, $a = b = c$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. If $\\frac{x}{xa + yb + zc} = \\frac{y}{ya + zb + xc} = \\frac{z}{za + xb + yc}$ and $x + y + z \\neq 0$, show that each of the ratio is $= \\frac{1}{a + b + c}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "18. If $(a + b + c)p = (b + c - a)q = (c + a - b)r = (a + b - c)s$, then prove that, $\\frac{1}{q} + \\frac{1}{r} + \\frac{1}{s} = \\frac{1}{p}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "19. If $lx = my = nz$, then show that $\\frac{x^2}{yz} + \\frac{y^2}{zx} + \\frac{z^2}{xy} = \\frac{mn}{l^2} + \\frac{nl}{m^2} + \\frac{lm}{n^2}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "20. If $\\frac{p}{q} = \\frac{a^2}{b^2}$ and $\\frac{a}{b} = \\frac{\\sqrt{a + q}}{\\sqrt{a - q}}$, show that, $\\frac{p + q}{a} = \\frac{p - q}{q}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Continued Ratio\nLet us assume that Roni’s earning is Tk 1000, Soni’s earning is Tk 1500 and Samir’s earning is Tk 2500. Here, Roni’s earning : Soni’s earning = $1000 : 1500 = 2 : 3$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

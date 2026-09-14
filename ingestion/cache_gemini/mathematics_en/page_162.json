@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 162,
+  "pdf_page_no": 167,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "![Rectangle ABCD with diagonals intersecting at E and a perpendicular segment FE from F on AB to E. FE = 2 cm, ED = 3 cm.](https://example.com/image.png)\n\n6. How many cm is the length of $BF$?\n1) 1 2) $\\sqrt{5}$ 3) $\\sqrt{13}$ 4) 5\n\n7. How many cm is the length of $AB$?\n1) 2 2) $2\\sqrt{5}$ 3) $5\\sqrt{2}$ 4) 10\n\n8. How many square cm is the measurement of $ABCD$?\n1) $8\\sqrt{5}$ 2) 20 3) $12\\sqrt{5}$ 4) $32\\sqrt{5}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. Construct a quadrilateral with the following data :\n1) The lengths of four sides are 3 cm, 3.5 cm, 2.5 cm and 3 cm and an angle is $45^\\circ$.\n2) The lengths of four sides are 3.5 cm, 4 cm, 2.5 cm and 3.5 cm and a diagonal is 5 cm.\n3) The lengths of three sides are 3.2 cm, 3 cm, 3.5 cm and two diagonals are 2.8 cm and 4.5 cm.\n4) The lengths of three sides are 3 cm, 3.5 cm, 4 cm and two angles are $60^\\circ$ and $45^\\circ$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. Construct a parallelogram with the following data:\n1) The lengths of two diagonals are 4 cm, 6.5 cm and the included angle is $45^\\circ$.\n2) The length of a side is 4 cm and the lengths of two diagonals are 5 cm, 6.5 cm.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. The sides $AB$ and $BC$ and the angles $\\angle B$, $\\angle C$ and $\\angle D$ of the quadrilateral $ABCD$ are given. Construct the quadrilateral.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. The four segments made by the intersecting points of the diagonals of a quadrilateral $ABCD$ and an included angle between them are $OA = 4$ cm,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Rectangle ABCD with diagonals intersecting at E",
+      "figure_no": "7.01",
+      "box_2d": [
+        95,
+        338,
+        265,
+        650
+      ],
+      "description": "A rectangle ABCD with diagonals AC and BD intersecting at point E. A perpendicular segment FE is drawn from point E to side AB.",
+      "reading_order_anchor": "6. How many cm is the length of BF?"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 301,
+  "pdf_page_no": 306,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": "12.3",
+      "section_title": "Chemistry in Agriculture and Industries",
+      "chunk_type": "theory",
+      "content_markdown": "The fertility of soil is enhanced by applying different kinds of chemical substances produced in industries. Lime stone ($\text{CaCO}_3$) is a valuable mineral resource. In our country huge quantities of lime stone is found in Sunamgonj district and Saint Martin Island. Various materials are made from lime stone. For example, lime stone is used as the main element for producing cement. If the soil becomes acidic that is the quantity of $\text{H}^+$ increases in the soil due to any reason, lime stone is applied on that soil in order to reduce the acidity. Lime stone reacts with $\text{H}^+$ and produces calcium ion ($\text{Ca}^{2+}$), carbon dioxide and water. As a result the acidity of the soil is reduced.\n\n$$\text{CaCO}_3 + 2\text{H}^+ \boldsymbol{\rightarrow} \text{Ca}^{2+} + \text{CO}_2 + \text{H}_2\text{O}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Urea",
+      "chunk_type": "theory",
+      "content_markdown": "Urea is a valuable material. At first, ammonium carbamate ($\text{NH}_2\text{COONH}_4$) is produced when the mixture of carbon-di-oxide and ammonia gas is heated at a high pressure and $130^\text{o}\text{C}-150^\text{o}\text{C}$ temperature. Later, the ammonium carbamate is broken and Urea ($\text{NH}_2-\text{CO}-\text{NH}_2$) is produced.\n\n$$\text{CO}_2 + 2\text{NH}_3 \boldsymbol{\rightarrow}^{\triangle} \text{NH}_2\text{COONH}_4$$\n$$\text{NH}_2\text{COONH}_4 \boldsymbol{\rightarrow} \text{NH}_2-\text{CO}-\text{NH}_2 + \text{H}_2\text{O}$$\n\nUrea is widely used in industries and agriculture. Melamine polymer is prepared from Urea in industries. Urea is used as fertilizer in agriculture. Urea is applied to soil so that plants can get enough Nitrogen nutrients from the Urea fertilizer. Plants do not directly receive $\text{N}_2$ from air. In the presence of Ureaz Enzyme in soil, Urea reacts with water and produces $\text{NH}_4^+$, $\text{OH}^-$ and $\text{CO}_2$. Plants absorb this $\text{NH}_4^+$.\n\n$$\text{NH}_2-\text{CO}-\text{NH}_2 + 3\text{H}_2\text{O} \boldsymbol{\rightarrow}^{\text{Ureaz Enzyme}} 2\text{NH}_4^+ + 2\text{OH}^- + \text{CO}_2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Ammonium Sulphate",
+      "chunk_type": "theory",
+      "content_markdown": "Ammonia reacts with sulphuric acid and produces ammonium sulphate $[(\text{NH}_4)_2\text{SO}_4]$ and water.\n\n$$2\text{NH}_3 + \text{H}_2\text{SO}_4 \boldsymbol{\rightarrow} (\text{NH}_4)_2\text{SO}_4 + \text{H}_2\text{O}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

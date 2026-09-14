@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 53,
+  "pdf_page_no": 58,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, you have seen that we have found velocity or acceleration at any time starting from the distance- time graph. To more accurately we draw this graph, the more precisely we calculate those quantities. Now, use the second set to calculate velocity and acceleration from graph.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.01",
+      "section_title": "Investigation 2.01",
+      "chunk_type": "theory",
+      "content_markdown": "**Determination of the average speed of an object rolling over a slanting plank.**\n\n**Objective:** To determine the speed for the same distance travelled on different slopes and then to find relation with slope with the help of graph.\n\n**Apparatus:**\n1. A plane plank or bench or table.\n2. A ruler or meter scale.\n3. A marble or a cylindrical pen or a pencil which can roll.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.10: A marble is allowed to roll on an inclined plane.",
+      "figure_no": "2.10",
+      "box_2d": [
+        599,
+        198,
+        893,
+        796
+      ],
+      "description": "An illustration showing an inclined wooden plank placed on a stack of books on a table, with a marble rolling down the slope and length labelled as l, height as h, and angle as theta.",
+      "reading_order_anchor": "Determination of the average speed of an object rolling over a slanting plank."
+    }
+  ]
+}

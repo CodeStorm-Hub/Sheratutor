@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 165,
+  "pdf_page_no": 170,
+  "chapter_no": 8,
+  "chapter_title": "বৃত্ত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুসিদ্ধান্ত ৮. বৃত্তের কোনো বিন্দুতে একটিমাত্র স্পর্শক অঙ্কন করা যায়।\n\nঅনুসিদ্ধান্ত ৯. স্পর্শবিন্দুতে স্পর্শকের ওপর অঙ্কিত লম্ব কেন্দ্রগামী।\n\nঅনুসিদ্ধান্ত ১০. বৃত্তের কোনো বিন্দু দিয়ে ঐ বিন্দুগামী ব্যাসার্ধের ওপর অঙ্কিত লম্ব উক্ত বিন্দুতে বৃত্তটির স্পর্শক হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ২৬. বৃত্তের বহিঃস্থ কোনো বিন্দু থেকে বৃত্তে দুইটি স্পর্শক টানলে, ঐ বিন্দু থেকে স্পর্শ বিন্দুদ্বয়ের দূরত্ব সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $O$ কেন্দ্রবিশিষ্ট $ABC$ বৃত্তের $P$ একটি বহিঃস্থ বিন্দু এবং $PA$ ও $PB$ রেখাংশদ্বয় বৃত্তের $A$ ও $B$ বিন্দুতে দুইটি স্পর্শক। প্রমাণ করতে হবে যে, $PA = PB$।\n\nঅঙ্কন: $O, A$; $O, B$ এবং $O, P$ যোগ করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\n\nধাপ ১. যেহেতু $PA$ স্পর্শক এবং $OA$ স্পর্শবিন্দুগামী ব্যাসার্ধ, সেহেতু $PA \\perp OA$।\n\n$\\therefore \\angle PAO = $ এক সমকোণ। [$\\because$ স্পর্শক স্পর্শবিন্দুগামী ব্যাসার্ধের ওপর লম্ব]\n\nঅনুরূপে $\\angle PBO = $ এক সমকোণ।\n\n$\\therefore \\triangle PAO$ এবং $\\triangle PBO$ উভয়ই সমকোণী ত্রিভুজ।\n\nধাপ ২. এখন, $\\triangle PAO$ এবং $\\triangle PBO$ সমকোণী ত্রিভুজদ্বয়ে অতিভুজ $PO = $ অতিভুজ $PO$ এবং $OA = OB$ [$\\because$ একই বৃত্তের ব্যাসার্ধ]\n\n$\\therefore \\triangle PAO \\cong \\triangle PBO$ [সমকোণী ত্রিভুজের অতিভুজ-বাহু সর্বসমতা]\n\n$\\therefore PA = PB$ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্যঃ\n\n১. দুইটি বৃত্ত পরস্পরকে বহিঃস্পর্শ করলে, স্পর্শবিন্দু ছাড়া প্রত্যেক বৃত্তের অন্য সকল বিন্দু অপর বৃত্তের বাইরে থাকবে।\n\n২. দুইটি বৃত্ত পরস্পরকে অন্তঃস্পর্শ করলে, স্পর্শবিন্দু ছাড়া ছোট বৃত্তের অন্য সকল বিন্দু বড় বৃত্তটির অভ্যন্তরে থাকবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ২৭. দুইটি বৃত্ত পরস্পরকে বহিঃস্পর্শ করলে, এদের কেন্দ্রদ্বয় ও স্পর্শ বিন্দু সমরেখ।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৮.২৬: বৃত্তের বহিঃস্থ বিন্দু থেকে স্পর্শক",
+      "figure_no": "8.26",
+      "box_2d": [
+        275,
+        675,
+        375,
+        845
+      ],
+      "description": "একটি বৃত্ত যার কেন্দ্র O এবং বহিঃস্থ বিন্দু P থেকে দুটি স্পর্শক PA এবং PB টানা হয়েছে।",
+      "reading_order_anchor": "মনে করি, O কেন্দ্রবিশিষ্ট ABC বৃত্তের P একটি বহিঃস্থ বিন্দু"
+    }
+  ]
+}

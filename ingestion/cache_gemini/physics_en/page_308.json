@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 308,
+  "pdf_page_no": 313,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "For a certain material, $\\rho$ is specific resistance and its unit is $\\Omega\\text{ m}$.\n\nTo measure how conducting a substance is, a term called conductivity $\\sigma$ has been introduced. The more a substance is electrically conducting, the more is the value of the electrical conductivity. It is reciprocal to the specific resistance $\\rho$. (Table 11.01)\n\n$$\\sigma = \\frac{1}{\\rho}$$\n\nThe unit of conductivity $\\sigma$ is: $(\\Omega\\text{ m})^{-1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Table 11.01 : Specific resistance of matter\n\n| Matter | Specific resistance ($\\Omega\\text{m}$) |\n| :--- | :--- |\n| Silver | $1.59 \\times 10^{-8}$ |\n| Copper | $1.68 \\times 10^{-8}$ |\n| Gold | $2.44 \\times 10^{-8}$ |\n| Graphite | $2.50 \\times 10^{-6}$ |\n| Diamond | $1.00 \\times 10^{12}$ |\n| Air | $1.30 \\times 10^{16}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We have to remember one thing; the resistance of a substance is the hindrance to electron flow.\n\nThe more the atoms and molecules vibrate the more the barrier the electrons will face while going through them. In other words, the more the resistance. As the vibrations of the atoms and molecules increases with the increase in temperature, so the specific resistance of a conducting substance also increases with temperature. So the temperature has to be specifically mentioned while expressing resistance or specific resistance of a substance.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Fixed Resistance",
+      "chunk_type": "theory",
+      "content_markdown": "Resistors with a definite value are used in different circuits. They can be of different shapes and of different types. The resistances that are used in laboratory uses, generally the value of the resistances are expressed by using bands of different colors on them. How much electric power they can tolerate is also specified along with the value of the resistance.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.06: (a) Fixed and (b) variable resistors",
+      "figure_no": "11.06",
+      "box_2d": [
+        744,
+        206,
+        911,
+        794
+      ],
+      "description": "Photographs of various fixed resistors with color bands (a) and a variable resistor rheostat (b).",
+      "reading_order_anchor": "Fixed Resistance"
+    }
+  ]
+}

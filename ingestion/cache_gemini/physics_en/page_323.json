@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 323,
+  "pdf_page_no": 328,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "flows through equipment is passed through a thin wire before entering the equipment. The thin wire (where the resistance is more, so $I^2R$ is more i.e. more heat) of the fuse becomes heated and burnt, and stops the supply of electricity if for any reason excess current tries to flow.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.11",
+      "section_title": "Flow less connection",
+      "chunk_type": "theory",
+      "content_markdown": "(e) Flow less connection: There are always two wires in an electric supply line, one with high potential (Live) and another is voltage less neutral (Neutral).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When a machine is used, then starting from the live wire the electricity passes through the machine and then returns to the source through the neutral wire. A voltage less neutral wire is safe, but a high voltage wire should be used cautiously. When a switch is used to connect electricity to a machine, it can be connected with a high voltage wire or a neutral wire. It is wise to connect the switch with the high voltage wire (Figure 11.15). Then high voltage enters the machine only when the switch is on. When the switch is off, there is no high voltage inside the machine.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.12",
+      "section_title": "Ground",
+      "chunk_type": "theory",
+      "content_markdown": "(f) Ground: You may have noticed that there are at least two connections in an electric supply in school or at home, high voltage and neutral. But if an expensive machine (e.g. computer, fridge) is connected to the current, you will see that besides high potential and neutral, there is another third connection, which is the ground. Generally this is connected to the body or cover of the machine. If the machine is electrified accidentally, then current directly flows from the cover or body to ground. A fuse burns due to this flow of electricity and makes the machine safe. So, if anyone accidentally touches it, he is not electrocuted.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.15: Wrong and correct connection of switch.",
+      "figure_no": "11.15",
+      "box_2d": [
+        256,
+        217,
+        476,
+        873
+      ],
+      "description": "A schematic diagram showing two electric fans connected to a power source, illustrating the correct and incorrect placement of a switch in the circuit.",
+      "reading_order_anchor": "When a switch is used to connect electricity to a machine, it can be connected with a high voltage wire or a neutral wire. It is wise to connect the switch with the high voltage wire (Figure 11.15)."
+    }
+  ]
+}

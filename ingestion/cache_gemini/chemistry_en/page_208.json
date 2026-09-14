@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 208,
+  "pdf_page_no": 213,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Acid",
+      "chunk_type": "theory",
+      "content_markdown": "Acid is highly important among chemicals. Acid is a kind of chemical which, when dissolved in water decomposes into hydrogen ion or proton ($\text{H}^+$). Hydrochloric acid ($\text{HCl}$), sulfuric acid ($\text{H}_2\text{SO}_4$) etc. are concentrated acids, so they get decomposed in aqueous solution:\n\n$$\text{HCl(aq)} \rightarrow \text{H}^+(\text{aq}) + \text{Cl}^-(\text{aq})$$\n\n$$\text{H}_2\text{SO}_4(\text{aq}) \rightarrow 2\text{H}^+(\text{aq}) + \text{SO}_4^{2-}(\text{aq})$$\n\nAgain, carbolic acid ($\text{H}_2\text{CO}_3$), acetic acid ($\text{CH}_3\text{COOH}$) etc. are diluted acids. They decompose in aqueous solution in the following manner:\n\n$$\text{H}_2\text{CO}_3(\text{aq}) \rightleftharpoons 2\text{H}^+(\text{aq}) + \text{CO}_3^{2-}(\text{aq})$$\n\n$$\text{CH}_3\text{COOH}(\text{aq}) \rightleftharpoons \text{H}^+(\text{aq}) + \text{CH}_3\text{COO}^-(\text{aq})$$\n\nIn the case with $\text{HCl}$ and $\text{H}_2\text{SO}_4$, the decomposition is shown by moonfaced arrow mark. That means, these acids get $100\\%$ decomposed in water. That is why they are called strong acids. The decomposition of the later two acids are shown with dual faced arrows, meaning they are partially decomposed in water. That is why they are called weak acids. For instance, at $25^\\circ\text{C}$ temperature, out of $1000\text{ }\text{CH}_3\text{COOH}$ molecules, only $4$ will be decomposed in water. The rest $996$ molecules remain intact in water. When the amount of acid in the solution of acid and water is higher than water, the solution is called a concentrated acid. When the amount of water in such solutions is higher, it is known as a dilute acid. Acid tastes sour. You have certainly tasted tamarind which is too sour. Tamarind contains tartaric acid which makes it sour. Blue litmus turns red when it is put in an acidic solution.\n\nAcid undergoes a reaction with metallic oxide and produces salt and water:\n\n$$\text{CaO} + 2\text{HCl} \rightarrow \text{CaCl}_2 + \text{H}_2\text{O}$$\n\nCalcium oxide $\\quad$ Hydrochloric acid $\\quad$ Calcium chloride $\\quad$ Water\n(Metallic oxide) $\\quad\\quad$ (Acid) $\\quad\\quad\\quad$ (Salt)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

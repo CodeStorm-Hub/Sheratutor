@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 214,
+  "pdf_page_no": 219,
+  "chapter_no": 10,
+  "chapter_title": "Distance and Elevation",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Angle of Elevation and Angle of Depression",
+      "chunk_type": "theory",
+      "content_markdown": "Observe the figure, $AB$ is a straight line parallel to the horizon. The points $A, O, B, P$ and $Q$ lie on the same vertical plane. The point $P$ on the straight line $AB$ makes angle $\\angle POB$ with the line $AB$. Here at $O$, the angle of elevation of $P$ is $\\angle POB$.\n\nSo, the angle at any point above the plane with the straight line parallel to horizon is called the angle of elevation.\n\nThe points $Q$, lie at lower side of the straight line $AB$ parallel to horizon. Here, the angle of depression at $O$ of $Q$ is $\\angle QOB$. So, the angle at any point below the straight line parallel to the plane is called the angle of depression.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n\nPoint the figure and indicate the horizontal line, vertical line, vertical plane, angle of elevation and angle of depression.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note : For solving the problems in this chapter approximately right figure is needed. While drawing the figure, the following techniques are to be applied.\n\n1. While drawing $30^\\circ$ angle, it is needed base > perpendicular.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Angle of elevation and angle of depression",
+      "figure_no": "10.01",
+      "box_2d": [
+        92,
+        645,
+        245,
+        875
+      ],
+      "description": "Geometric representation of angle of elevation and angle of depression with points A, O, B, P, and Q.",
+      "reading_order_anchor": "10.1"
+    },
+    {
+      "caption": "Fig 10.02: Real-world application of angle of elevation and depression",
+      "figure_no": "10.02",
+      "box_2d": [
+        275,
+        645,
+        430,
+        870
+      ],
+      "description": "Illustration showing an airplane and a building to demonstrate angle of elevation and depression.",
+      "reading_order_anchor": "10.1"
+    },
+    {
+      "caption": "Fig 10.03: Work diagram",
+      "figure_no": "10.03",
+      "box_2d": [
+        505,
+        640,
+        745,
+        835
+      ],
+      "description": "A right-angled triangle diagram for the work exercise.",
+      "reading_order_anchor": "Work:"
+    },
+    {
+      "caption": "Fig 10.04: Drawing techniques for angles",
+      "figure_no": "10.04",
+      "box_2d": [
+        825,
+        265,
+        915,
+        740
+      ],
+      "description": "Three right-angled triangles showing 30, 45, and 60 degree angles.",
+      "reading_order_anchor": "Note : For solving the problems in this chapter approximately right figure is needed."
+    }
+  ]
+}

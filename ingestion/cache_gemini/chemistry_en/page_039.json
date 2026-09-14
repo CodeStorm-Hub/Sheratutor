@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 39,
+  "pdf_page_no": 44,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Collect names and symbols of some elements from the Periodic table given in chapter four and show it to your teacher.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "3.4",
+      "section_title": "Formula",
+      "chunk_type": "theory",
+      "content_markdown": "One Hydrogen molecule is expressed as $H_2$. It means, there are two Hydrogen atoms in that molecule. Again, one molecule of water is expressed as $H_2O$, meaning, it contains two Hydrogen atoms and an Oxygen atom. The following table shows formulas of some common molecules:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.4",
+      "section_title": "Formula",
+      "chunk_type": "table",
+      "content_markdown": "Table 3.04: Formula of Molecules.\n\n| Name of Molecule | Formula |\n| :--- | :--- |\n| Nitrogen | $N_2$ |\n| Ammonia | $NH_3$ |\n| Chlorine | $Cl_2$ |\n| Sulfuric Acid | $H_2SO_4$ |\n| Hydrochloric Acid | $HCl$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.5",
+      "section_title": "The Fundamental Particles of an Atom",
+      "chunk_type": "theory",
+      "content_markdown": "Each atom consists of three stable particles- electrons, protons and neutrons. These particles are called fundamental particles of atoms. Protons and neutrons remain in the nucleus at the center of the atom while electrons continue to move around the nucleus.\n\n**Electron**: Electron is one of the fundamental particles of atom containing negative charge. The amount of this charge is $-1.60 \\times 10^{-19}$ coulombs. It is expressed through the symbol $e$. An electron has the mass of $9.11 \\times 10^{-28}$ g. The relative charge of electron is taken to be $-1$ and the mass of electron is $1/1840$ of proton and neutron. That is why, the relative mass of electron is taken as $0$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

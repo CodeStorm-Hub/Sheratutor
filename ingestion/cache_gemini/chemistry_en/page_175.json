@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 175,
+  "pdf_page_no": 180,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In exothermic reactions, the value of $B_1$ is lesser than $B_2$, so the value of $\\Delta H$ is negative while in endothermic reactions, the value of $B_1$ is greater than $B_2$, so the value of $\\Delta H$ is positive.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.01",
+      "section_title": "Bond and Bond Energy",
+      "chunk_type": "table",
+      "content_markdown": "Table 8.01: Bond and Bond Energy\n\n| Bond | Bond Energy (kJ/mol) | Bond | Bond Energy (kJ/mol) |\n| :--- | :--- | :--- | :--- |\n| C-H | 414 | N-H | 391 |\n| C-Cl | 326 | O-H | 464 |\n| C-C | 344 | O=O | 498 |\n| C=C | 615 | C$\\equiv$C | 812 |\n| N$\\equiv$N | 946 | Cl-Cl | 244 |\n| Br-Br | 193 | I-I | 151 |\n| O-O | 143 | H-H | 436 |\n| H-Cl | 431 | H-Br | 366 |\n| H-I | 299 | H-F | 563 |\n| C=O | 724 | C-O | 350 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When the table says, the bond energy of $O=O$ is $498\\text{ kJ/mol}$, we understand, $498$ kilojoule heat is required to break an $O=O$ bond. On the other hand, the formation of an $O=O$ bond evolves $498$ kilojoule heat.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** Determine the heat change in the reaction $CH_4 + Cl_2 \\rightarrow CH_3Cl + HCl$. Given, bond energy of $C-H = 414\\text{ kJ/mol}$, bond energy of $C-Cl = 244\\text{ kJ/mol}$ and bond energy of $H-Cl = 431\\text{ kJ/mol}$.\n\n**Solution:** In the reaction $CH_4 + Cl_2 \\rightarrow CH_3Cl + HCl$ $1\\text{ mole}$ $C-H$ bond and $1\\text{ mole}$ $Cl-Cl$ bond has been broken among the reactants while $1\\text{ mole}$ $H-Cl$ bond and $1\\text{ mole}$ $C-Cl$ bond has been formed. Therefore,\n\nTotal bond energy applied on reactants to break bonds = $(414 + 244)\\text{ kJ} = 658\\text{ kJ}$",
+      "activity_tag": "Example"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Table 8.01: Bond and Bond Energy",
+      "figure_no": "8.01",
+      "box_2d": [
+        233,
+        231,
+        583,
+        778
+      ],
+      "description": "A two-column table listing various chemical bonds and their corresponding bond energies in kJ/mol.",
+      "reading_order_anchor": "Table 8.01: Bond and Bond Energy"
+    }
+  ]
+}

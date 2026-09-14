@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 120,
+  "pdf_page_no": 125,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": "6.2",
+      "section_title": "The Percentage Composition of Elements in Compounds",
+      "chunk_type": "theory",
+      "content_markdown": "The gram measurement of an element present in a 100 gram compound is called the percentage composition of that element. The molecular formula of a compound is the source to determine the percentage composition of various elements in the compound.\n\nPercent composition of an element in a compound\n$$\\text{=} \\frac{\\text{atomic mass of element} \\times \\text{number of atoms} \\times 100}{\\text{molecular mass of compound}}\\%$$\n\n**Example:** The percent composition of $\\text{H}$ and $\\text{Cl}$ in $\\text{HCl}$ is shown below:\n\nMolecular mass of $\\text{HCl} = 1 + 35.5 = 36.5$\n\nIn $36.5$ gram $\\text{HCl}$ the amount of $\\text{H} = 1$ gram\n\nIn $1$ gram $\\text{HCl}$ the amount of $\\text{H} = \\frac{1}{36.5}$ gram\n\nIn $100$ gram $\\text{HCl}$ the amount of $\\text{H} = \\frac{1 \\times 100}{36.5} = 2.74$ gram\n\nSo, the percent composition of $\\text{H}$ in $\\text{HCl}$ is $2.74\\%$.\n\nAgain,\n\nIn $36.5$ gram $\\text{HCl}$ the amount of $\\text{Cl} = 35.5$ gram\n\nIn $1$ gram $\\text{HCl}$ the amount of $\\text{Cl} = \\frac{35.5}{36.5}$ gram\n\nIn $100$ gram $\\text{HCl}$ the amount of $\\text{Cl} = \\frac{35.5 \\times 100}{36.5} = 97.26$ gram\n\nSo, the percent composition of $\\text{Cl}$ in $\\text{HCl}$ is $97.26\\%$.\n\nIt can also be calculated that the percent composition of $\\text{Cl}$ is $(100 - 2.74) = 97.26\\%$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** Find out the percent composition of $\\text{H}$ and $\\text{O}$ in $\\text{H}_2\\text{O}$.\n\n**Solution:** The mass of $1$ mole $\\text{H}_2\\text{O} = 2 + 16 = 18$ gram\n\nIn $18$ gram $\\text{H}_2\\text{O}$ the amount of $\\text{H} = 2$ gram",
+      "activity_tag": "Examples"
+    }
+  ],
+  "figures": []
+}

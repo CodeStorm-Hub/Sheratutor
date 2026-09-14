@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 319,
+  "pdf_page_no": 324,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The length of a line, the area of a place, the volume of a solid etc. are determined for practical purposes. In the case of measuring any such quantity, another quantity of the same kind having some definite magnitude is taken as unit. The ratio of the quantity measured and the unit defined in the above process is the amount of the quantity.\n\ni.e. $\\text{magnitude} = \\frac{\\text{Quantity measured}}{\\text{Unit quantity}}$\n\nIn the case of a fixed unit, every measure is a number which denotes how many times the magnitude of the unit is the magnitude of the quantity measured. For example, the bench is 5 meter long. Here metre is a definite length which is taken as a unit and in comparison to that the bench is 5 times in length.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of the Chapter, the students will be able to —\n\n* determine the area of polygonal region by applying the laws of area of triangle and quadrilateral and solve allied problems.\n* determine the circumference of the circle and a length of the chord of a circle.\n* determine the area of circle.\n* determining the area of a circle and its segment, solve the alied problems.\n* determine the area of solid rectangles, cubes and cylinder and solve the allied problems.\n* determine the area of uniform and non-uniform solids",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.1",
+      "section_title": "Area of Triangular region",
+      "chunk_type": "theory",
+      "content_markdown": "In the previous class, we learned that $\\text{area of triangular region} = \\frac{1}{2} \\times \\text{base} \\times \\text{height}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

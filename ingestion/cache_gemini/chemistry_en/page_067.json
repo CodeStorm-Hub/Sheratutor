@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 67,
+  "pdf_page_no": 72,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "configuration of Fe is $\\text{Fe}(26)\\text{-}1\\text{s}^22\\text{s}^22\\text{p}^6\\text{ 3s}^23\\text{p}^63\\text{d}^64\\text{s}^2$ . Since the outermost energy level of Iron consists of $s$ and is preceded by a $d$ orbital and they contain $6 + 2 = 8$ electrons, so the element belongs to the group 8 of the table.\n\nTo make it easier for you to understand, the electronic configuration of the outer most energy level has been denoted by red colour.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.01",
+      "section_title": "Electronic Configuration of Elements and their Groups",
+      "chunk_type": "table",
+      "content_markdown": "| Element | Electronic Configuration | Period Number | Group Number |\n| --- | --- | --- | --- |\n| $\\text{H}(1)$ | $1\\text{s}^1$ | $1$ | $1$ (System $1$) |\n| $\\text{He}(2)$ | $1\\text{s}^2$ | $1$ | $18$ (Exception) |\n| $\\text{Li}(3)$ | | | |\n| $\\text{Be}(4)$ | | | |\n| $\\text{B}(5)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^1$ | $2$ | $2 + 1 + 10 = 13$ (System $2$) |\n| $\\text{C}(6)$ | | | |\n| $\\text{N}(7)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^3$ | $2$ | $2 + 3 + 10 = 15$ (System $2$) |\n| $\\text{O}(8)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^4$ | $2$ | $2 + 4 + 10 = 16$ (System $2$) |\n| $\\text{F}(9)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^5$ | $2$ | $2 + 5 + 10 = 17$ (System $2$) |\n| $\\text{Ne}(10)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6$ | $2$ | $2 + 6 + 10 = 18$ (System $2$) |\n| $\\text{Na}(11)$ | | | |\n| $\\text{Mg}(12)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2$ | $3$ | $2$ (System $1$) |\n| $\\text{Al}(13)$ | | | |\n| $\\text{Si}(14)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2\\text{ 3p}^2$ | $3$ | $2 + 2 + 10 = 14$ (System $2$) |\n| $\\text{P}(15)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2\\text{ 3p}^3$ | $3$ | $2 + 3 + 10 = 15$ (System $2$) |\n| $\\text{S}(16)$ | | | |\n| $\\text{Cl}(17)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2\\text{ 3p}^5$ | $3$ | $2 + 5 + 10 = 17$ (System $2$) |\n| $\\text{Ar}(18)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2\\text{ 3p}^6$ | $3$ | $2 + 6 + 10 = 18$ (System $2$) |\n| $\\text{K}(19)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2\\text{ 3p}^6\\text{4s}^1$ | $4$ | $1$ (System $1$) |\n| $\\text{Ca}(20)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2\\text{ 3p}^6\\text{4s}^2$ | $4$ | $2$ (System $1$) |\n| $\\text{Sc}(21)$ | | | |\n| $\\text{Ti}(22)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2\\text{ 3p}^6\\text{ 3d}^2\\text{ 4s}^2$ | $4$ | $2 + 2 = 4$ (System $3$) |\n| $\\text{V}(23)$ | $1\\text{s}^2\\text{ 2s}^2\\text{ 2p}^6\\text{ 3s}^2\\text{ 3p}^6\\text{ 3d}^3\\text{ 4s}^2$ | $4$ | $2 + 3 = 5$ (System $3$) |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

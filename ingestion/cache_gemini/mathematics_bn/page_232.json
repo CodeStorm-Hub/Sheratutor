@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 232,
+  "pdf_page_no": 237,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\frac{x}{b_1c_2 - b_2c_1} = \\frac{1}{a_1b_2 - a_2b_1}, \\text{ বা, } x = \\frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}$$\n\nআবার, $$\\frac{y}{c_1a_2 - c_2a_1} = \\frac{1}{a_1b_2 - a_2b_1}, \\text{ বা, } y = \\frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1}$$\n\n$$\\therefore \\text{ প্রদত্ত সমীকরণদ্বয়ের সমাধান: } (x, y) = \\left( \\frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}, \\frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1} \\right)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "লক্ষ করি:\n\n| সমীকরণ | $x$ ও $y$ এর মধ্যে সম্পর্ক | মনে রাখার চিত্র |\n| :--- | :--- | :--- |\n| $$a_1x + b_1y + c_1 = 0$$ <br> $$a_2x + b_2y + c_2 = 0$$ | $$\\frac{x}{b_1c_2 - b_2c_1} = \\frac{y}{c_1a_2 - c_2a_1} = \\frac{1}{a_1b_2 - a_2b_1}$$ | $$a_1 \\quad b_1 \\quad c_1 \\quad a_1 \\quad b_1$$ <br> $$a_2 \\quad b_2 \\quad c_2 \\quad a_2 \\quad b_2$$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: প্রদত্ত উভয় সমীকরণের ধ্রুবক পদ ডানপক্ষে রেখেও আড়গুণন পদ্ধতি প্রয়োগ করা যায়। তবে সেক্ষেত্রে চিহ্নের কিছু পরিবর্তন হবে। কিন্তু সমাধান একই পাওয়া যাবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\n$$4x - y - 7 = 0$$\n$$3x + y = 0$$\n\nসমীকরণজোটকে\n\n$$a_1x + b_1y + c_1 = 0$$\n$$a_2x + b_2y + c_2 = 0$$\n\nসমীকরণজোটের আকারে প্রকাশ করলে\n\n$$a_1, b_1, c_1, a_2, b_2, c_2$$ এর মান বের কর।",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. আড়গুণন পদ্ধতিতে সমাধান কর:\n\n$$6x - y = 1$$\n$$3x + 2y = 13$$\n\nসমাধান: পক্ষান্তর প্রক্রিয়ায় প্রদত্ত সমীকরণদ্বয়ের ডানপক্ষ $0$ (শূন্য) করে পাই,\n\n$$6x - y - 1 = 0$$\n$$3x + 2y - 13 = 0$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

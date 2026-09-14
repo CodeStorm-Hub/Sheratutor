@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 222,
+  "pdf_page_no": 227,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": "9.4.2",
+      "section_title": "Importance of pH",
+      "chunk_type": "theory",
+      "content_markdown": "pH has got limitless significance in terms of bio-chemical reactions in animal bodies and use of cosmetics. They are stated below:\n\n**Agriculture:** pH has a great importance in agriculture. Plants absorb various ions, water etc. from the soil for its own nutrition. The best value of pH of soil in this regard is $6.0-8.0$. Again, if the value is less than $3.0$ or more than $10.0$, the beneficial microbes in the soil die. When the value drops down, measured amounts of $\\text{CaO}$ is added to the soil. On the other hand, if the value of pH of the soil rises up, measured amounts of ammonium sulfate $[(\\text{NH}_4)_2\\text{SO}_4]$ or ammonium phosphate $[(\\text{NH}_4)_3\\text{PO}_4]$ fertilizers are used to settle the pH of the soil.\n\n**pH in Different Bio-chemical Reactions of a Body:** Various bio-chemical reactions occur in different parts of the animal body. They require different values of pH in various parts of the body.\n\n**Cosmetics:** Human beings use different chemicals to clean their skin, beautification of skin, clean the hair and other actions. When the pH of skin is $4.8-5.5$, the skin is acidic and that prevents attacks of microbes on the skin. Therefore, the pH of cosmetics is maintained at $4.8-5.5$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.4.2",
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Parts of Human body | pH |\n| :--- | :--- |\n| Stomach | $1$ |\n| Human skin | $4.8-5.5$ |\n| Urine | $6$ |\n| Blood | $7.43-7.45$ |\n| Pancreatic juice | $8.1$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.5",
+      "section_title": "Neutralization Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "We know an acid donates $\\text{H}^+$ to an aqueous solution while a base donates $\\text{OH}^-$. Therefore, a mixture of acid and base facilitates $\\text{H}^+$ and $\\text{OH}^-$ to produce water. For example, in water, $\\text{HCl}$ donates $\\text{H}^+$ and $\\text{NaOH}$ donates $\\text{OH}^-$. If we mix both, the $\\text{H}^+$ and $\\text{OH}^-$ will undergo a reaction to produce water. The negative $\\text{Cl}^-$ ion of the acid and the positive $\\text{Na}^+$ ion of the base will undergo a reaction to produce the salt $\\text{NaCl}$. The reaction where an acid and a base undergo a reaction to produce salt and water is called a neutralization reaction. In this reaction both",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Table 9.01: pH of different parts of human body.",
+      "figure_no": "9.01",
+      "box_2d": [
+        245,
+        608,
+        414,
+        885
+      ],
+      "description": "A table listing parts of the human body and their corresponding pH values.",
+      "reading_order_anchor": "Importance of pH"
+    }
+  ]
+}

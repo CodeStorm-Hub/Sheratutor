@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 268,
+  "pdf_page_no": 273,
+  "chapter_no": 9,
+  "chapter_title": "আলোর প্রতিসরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "বহুনির্বাচনি প্রশ্ন\n\nসঠিক উত্তরটির পাশে টিক ( $\\sqrt{ }$ ) চিহ্ন দাও\n\n৯.৩৫ চিত্র থেকে ২ ও ৩ নং প্রশ্নের উত্তর দাও।\n\n1. ঘন মাধ্যমের ভেতরে রাখা কোনো বস্তুকে উপরের হালকা মাধ্যম থেকে দেখলে এর প্রতিবিম্ব কোথায় হবে?\n\n(ক) উপরের দিকে উঠে আসবে  \n(খ) নিচের দিকে সরে যাবে  \n(গ) একই জায়গায় থাকবে  \n(ঘ) পাশে সরে যাবে\n\n৯.৩৫ চিত্র থেকে ২ ও ৩ নং প্রশ্নের উত্তর দাও।",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. এখানে প্রতিসরণ কোণ কত?\n\n(ক) $0^\\circ$  \n(খ) $90^\\circ$  \n(গ) $180^\\circ$  \n(ঘ) $45^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. আপতন কোণটি যদি আরও বড় হয় তাহলে কী ঘটবে?\n\n(ক) পূর্ণ অভ্যন্তরীণ প্রতিসরণ  \n(খ) পূর্ণ অভ্যন্তরীণ প্রতিফলন  \n(গ) প্রতিসরণ এবং প্রতিফলন  \n(ঘ) প্রতিফলন",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. লেন্সের রশ্মিচিত্র অঙ্কনের ক্ষেত্রে সচরাচর ব্যবহৃত হয়\n\nচিত্র ৯.৩৬\n\n(ক) i  \n(খ) ii  \n(গ) i ও ii  \n(ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 9.35",
+      "figure_no": "9.35",
+      "box_2d": [
+        326,
+        655,
+        492,
+        908
+      ],
+      "description": "Ray diagram showing refraction from a denser to a rarer medium with a normal line NN' and incident/refracted rays.",
+      "reading_order_anchor": "9.35 চিত্র থেকে ২ ও ৩ নং প্রশ্নের উত্তর দাও।"
+    },
+    {
+      "caption": "চিত্র 9.36",
+      "figure_no": "9.36",
+      "box_2d": [
+        648,
+        120,
+        818,
+        878
+      ],
+      "description": "Ray diagrams for lenses showing different cases labeled (i), (ii), and (iii).",
+      "reading_order_anchor": "4. লেসের রশ্মিচিত্র অঙ্কনের ক্ষেত্রে সচরাচর ব্যবহৃত হয়"
+    }
+  ]
+}

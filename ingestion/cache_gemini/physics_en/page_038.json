@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 38,
+  "pdf_page_no": 43,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": "2.4",
+      "section_title": "Distance and Displacement",
+      "chunk_type": "theory",
+      "content_markdown": "We are quite familiar with the word 'distance' but we do not use the word 'displacement' in our daily life. We want to understand the relation between the two words- distance and displacement with the help of an example. A curved path is shown in figure 2.04. The distance travelled with respect to the point A is denoted by the number 1, 2, 3 in kilometer.\n\nLet us consider you are at point A (i.e. your position is point A). Now you have reached point B by $4\\text{ km}$ way by riding a bicycle along the curved path. We can say the distance between point A and point B is $4\\text{ km}$. Distance is a scalar quantity, so to express the distance between the points A and B we need not mention any direction. We determined the 'distance' of the point B along this path with respect to the point A. Now if we desire, we can determine the 'displacement' of point B with respect to point A. By displacement the position of point B with respect to point A is meant. This can be expressed as $\\vec{\\text{AB}}$ as well.\n\nIn the figure the displacement is shown by a straight line from point A to point B with an arrowhead. In this figure the magnitude of the displacement is $3\\text{ km}$ and the direction of the arrow is in the direction of the displacement. Therefore displacement is a vector quantity; it has both magnitude and direction.\n\nIf going two kilometers more by a cycle you cross a six kilometer path total and reach point C, then your displacement will be the straight line $\\vec{\\text{AC}}$ with an arrow, whose magnitude is $1.5\\text{ kilometer}$ and the direction of the arrow is along your displacement. Though you covered more distance along the curved path but your displacement is still small. Therefore the more distance you cover, the more will be the displacement is not true. The difference between the initial and final position is the displacement.\n\nStarting from the point A, the distance towards point B is $4\\text{ km}$ along the curved path, similarly the distance between point B and point A is $4\\text{ km}$ i.e. both are equal. But notice that the displacement from A to B and the",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.04 : Curved path travelled by a cycle from point A.",
+      "figure_no": "2.04",
+      "box_2d": [
+        284,
+        523,
+        532,
+        885
+      ],
+      "description": "A diagram showing a curved path with points A, B, and C, with a straight line distance vector between them.",
+      "reading_order_anchor": "Distance and Displacement"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 247,
+  "pdf_page_no": 252,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Group Assignment",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. The melting point of sodium is $801^{\\circ}\\text{C}$. The melting point of the mixture of sodium chloride $40-42\\%$ and calcium chloride $58-60\\%$ is about $600^{\\circ}\\text{C}$. Consider the above information and describe a method of sodium extraction. You will consider the following issues:\n- Expenses of smelting\n- If the mixture is used, will sodium and calcium be free simultaneously?\n- Environmental pollution by the products of the reaction.\n\n2. The melting point of aluminium oxide is $2050^{\\circ}\\text{C}$. The melting point of aluminium oxide and cryolite ($\\text{Na}_3\\text{AlF}_6$) is $800-1000^{\\circ}\\text{C}$. Consider the above information and describe method of aluminium extraction.\nAdditionally, you will consider:\n- Expenses of smelting\n- If the mixture is used, will sodium and calcium be free simultaneously?\n- Environmental pollution by the products of the reaction.\n\n3. What kind of environmental pollution is caused by the byproduct gas of copper extraction? How do you prevent this kind of harm (acid rain)? How do you think this gas may be used profitably without causing harm to the environment?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Metal | Ore | Extraction Method | Remarks |\n| :--- | :--- | :--- | :--- |\n| Mercury | Cinnabar ($\\text{HgS}$) | | |\n| Zinc | Zinc blend ($\\text{ZnS}$) | | |\n| | Calamine ($\\text{ZnCO}_3$) | | |\n| Lead | Galena ($\\text{PbS}$) | | |\n| Iron | Magnetite ($\\text{Fe}_3\\text{O}_4$) | | |\n| | Hematite ($\\text{Fe}_2\\text{O}_3$) | | |\n| | Limonite ($\\text{Fe}_2\\text{O}_3\\cdot3\\text{H}_2\\text{O}$) | | |\n| Copper | Copper pyrites ($\\text{CuFeS}_2$) | | |\n| | Celcoisite ($\\text{Cu}_2\\text{S}$) | | |\n| Aluminium | Bauxite ($\\text{Al}_2\\text{O}_3\\cdot2\\text{H}_2\\text{O}$) | | |\n| Sodium | Brine ($\\text{NaCl}$) | | |\n| Calcium | Lime stone ($\\text{CaCO}_3$) | | |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 149,
+  "pdf_page_no": 154,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "It is seen that the deformation has no unit, it is only a number.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Stress",
+      "chunk_type": "theory",
+      "content_markdown": "**Stress:** The force per unit area that develops within a substance due to deformation is called stress.\n\nIf a force is applied on a body of cross sectional area $A$ and as a result deformation occurs, then if this deformation develops a resistive force $F$, then stress is:\n\n$$\\frac{F}{A}$$\n\nYou see it is similar to pressure and its unit is $\\text{Pa}$ or $\\text{Pascal}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Hooke's law",
+      "chunk_type": "theory",
+      "content_markdown": "**Hooke's law:** If we have understood stress and strain, it is easy to understand Hooke's law. According to this law, 'within elastic limits stress is directly proportional to strain'.\n\n$$\\text{stress} \\propto \\text{strain}$$\n\nTherefore,\n\n$$\\text{Stress} = \\text{constant} \\times \\text{Strain}.$$\n\nThat is, there is a constant relating stress to strain for each material; the name of this constant is modulus of elasticity.\n\nIt will be easy to understand if we discuss two things:\n\n(i) Let us suppose that the length of a wire of cross-sectional area $A$ is $L_0$, a body of weight $W$ is hanged from it and due to this hanged force the wire is elongated from $L_0$ to $L$ (Figure 5.11). This elongated length creates a counter force $T$ in the wire (Here the letter $T$ is used to mean the word 'tension'. Generally, when a wire is pulled then the force acting in it is named as tension).\n\nTherefore Stress is $T/A$ and strain is $\\frac{L - L_0}{L_0}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.11: Deformation occurs in a bar if stress is created by applied force.",
+      "figure_no": "5.11",
+      "box_2d": [
+        106,
+        535,
+        395,
+        852
+      ],
+      "description": "Schematic diagram of a bar of length L0 being elongated to length L under an applied weight W, developing tension T.",
+      "reading_order_anchor": "It will be easy to understand if we discuss two things"
+    }
+  ]
+}

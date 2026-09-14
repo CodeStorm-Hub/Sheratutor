@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 359,
+  "pdf_page_no": 364,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": "13.4",
+      "section_title": "Semiconductor",
+      "chunk_type": "theory",
+      "content_markdown": "The modern world and modern civilization have been built on the basis of electronics. If we want to express our gratitude to any substance, that substance will be the semiconductor. We have discussed about the conductor, insulator and semiconductor. Now we can go deeper to a small extent about this subject.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In Figure 13.05 many atoms of a semiconductor have been shown side by side. Due to the structure of the atom if there are eight electrons in their outer most shells, in one sense they are fulfilled and become very stable. Atoms always try to have eight electrons in their outer most shells. Silicon is the most used semiconductor among the semiconductors. The number of electrons is four in its outer most shell. But when we observe a silicon crystal, we find surprisingly that there are eight electrons in the outer most shell of every atom! It has happened because every atom attaches to four different atoms around it, and they are all using their electrons sharing with the neighboring atoms. (We have drawn the figure on a plane. The real arrangement of silicon atoms is three dimensional, as shown at the right side of the Figure 13.05. Actually, every atom touches other four atoms.)",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 13.05 : Silicon crystal. Three dimentional silicon crystal (right)",
+      "figure_no": "13.05",
+      "box_2d": [
+        265,
+        243,
+        535,
+        733
+      ],
+      "description": "A 2D representation of a silicon crystal lattice structure on the left and a 3D representation of the silicon atomic arrangement on the right.",
+      "reading_order_anchor": "In Figure 13.05 many atoms of a semiconductor have been shown side by side."
+    }
+  ]
+}

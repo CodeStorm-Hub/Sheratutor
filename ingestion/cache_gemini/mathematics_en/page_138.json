@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 138,
+  "pdf_page_no": 143,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 12. If one angle of a triangle is greater than another, the side opposite the greater angle is greater than the side opposite the lesser.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Special Nomination: Let, in triangle $\\triangle ABC$, $\\angle ABC > \\angle ACB$. It is to be proved that, $AC > AB$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\n\nStep 1. If the side $AC$ is not greater than $AB$, then $(i) AC = AB$ or, $(ii) AC < AB$.\n\n$(i)$ If $AC = AB$, then $\\angle ABC = \\angle ACB$ [$\\because$ The base angles of isosceles triangle are equal]\n\nWhich is against the supposition, since by supposition $\\angle ABC > \\angle ACB$.\n\n$(ii)$ Again, if $AC < AB$, then $\\angle ABC < \\angle ACB$. [$\\because$ The angle opposite to smaller side is smaller]\n\nBut this is also against the supposition.\n\nStep 2. Therefore, the side $AC$ is neither equal to nor less than $AB$.\n\n$\\therefore AC > AB$ (Proved).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "There is a relation between the sum or the difference of the lengths of two sides and the length of the third side of a triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 13. The sum of the lengths of any two sides of a triangle is greater than the third side.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let $ABC$ be a triangle. Let $BC$ be the greatest side of the triangle. Then, $AB + AC > BC$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Corollary 5. The difference of the lengths of any two sides of a triangle is smaller than the third side.\n\nLet $ABC$ be a triangle. Then the difference of the lengths of any two of its sides is smaller than the length of third side, i.e: $AB - AC < BC$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Triangle ABC",
+      "figure_no": "6.01",
+      "box_2d": [
+        166,
+        682,
+        242,
+        833
+      ],
+      "description": "A triangle ABC with vertices A, B, and C.",
+      "reading_order_anchor": "Special Nomination: Let, in triangle $\\triangle ABC$"
+    },
+    {
+      "caption": "Fig 6.02: Triangle ABC with side extension",
+      "figure_no": "6.02",
+      "box_2d": [
+        755,
+        668,
+        822,
+        843
+      ],
+      "description": "A triangle ABC with side BA extended to D such that AD = AC.",
+      "reading_order_anchor": "Let $ABC$ be a triangle. Let $BC$ be the greatest side"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 230,
+  "pdf_page_no": 235,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$x$ এর মান সমীকরণ (3) এ বসিয়ে পাই,\n$y = 8 - 2 \\times 3$\nবা, $y = 8 - 6$\nবা, $y = 2$\n$\\therefore$ সমাধান $(x, y) = (3, 2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রতিস্থাপন পদ্ধতি (Substitution method): সুবিধামত একটি সমীকরণ থেকে একটি চলকের মান অপর চলকের মাধ্যমে প্রকাশ করে প্রাপ্ত মান অপর সমীকরণে বসালে এক চলকবিশিষ্ট সমীকরণ পাওয়া যায়। অতঃপর সমীকরণটি সমাধান করে চলকটির মান পাওয়া যায়। এই মান প্রদত্ত সমীকরণের যে কোনোটিতে বসানো যেতে পারে। তবে যেখানে একটি চলককে অপর চলকের মাধ্যমে প্রকাশ করা হয়েছে সেখানে বসালে সমাধান সহজ হয়। এখান থেকে অপর চলকের মান পাওয়া যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. অপনয়ন পদ্ধতিতে সমাধান কর:\n$2x + y = 8$\n$3x - 2y = 5$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: প্রতিস্থাপন ও অপনয়ন পদ্ধতির পার্থক্য বুঝাতেই উদাহরণ ২ এর সমীকরণদ্বয়ই উদাহরণ ৩ এ নেওয়া হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: প্রদত্ত সমীকরণদ্বয়\n$2x + y = 8 \\dots (1)$\n$3x - 2y = 5 \\dots (2)$\nসমীকরণ (1) এর উভয়পক্ষকে 2 দ্বারা গুণ করে, $4x + 2y = 16 \\dots (3)$\nসমীকরণ (2) ও (3) যোগ করে পাই,\n$7x = 21$\nবা, $x = 3$\n$x$ এর মান সমীকরণ (1) এ বসিয়ে পাই,\n$2 \\times 3 + y = 8$\nবা, $y = 8 - 6$\nবা, $y = 2$\n$\\therefore$ সমাধান $(x, y) = (3, 2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অপনয়ন পদ্ধতি (Elimination method): সুবিধামত একটি সমীকরণকে বা উভয় সমীকরণকে এরূপ সংখ্যা দিয়ে গুণ করতে হবে যেন গুণনের পর উভয় সমীকরণের যেকোনো একটি চলকের",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

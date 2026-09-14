@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 100,
+  "pdf_page_no": 105,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "with each other due to this attractive force. That's why, it is easy to alienate them with a bit of force. Melting and boiling points of these molecules are also low. Again, Vander Wall's attraction force is hardly effective on gaseous covalent molecules. They remain as gaseous single molecules due to this.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.12",
+      "section_title": "Characteristics of Ionic and Covalent Bonds",
+      "chunk_type": "theory",
+      "content_markdown": "### (a) Melting Point and Boiling Point\n\nThe compound consisting of an ionic bond is called an ionic compound and the compound consisting of covalent bonds is called a covalent compound. The melting and boiling points of ionic compounds are higher than those of covalent compounds. Ionic compounds contain positive and negative charges which remain tightly connected with each other. Many such positive and negative charges are organized in an ionic compound in a three dimensional way to create a crystal. This results in a higher inter atomic force among them and that makes it tough to alienate from each other. Therefore, they require higher amount of heat energy to melt or to boil. Inter atomic force in covalent compounds is comparatively weaker as it is constituted because of Vander Wall's force. Therefore, they can be boiled or melted with a lower amount of heat energy. You can easily experiment this with ionic compounds like $\\text{NaCl}$, $\\text{CuSO}_4$, $\\text{NaNO}_3$, $\\text{KCl}$, $\\text{CaCl}_2$ etc. and covalent compounds like glucose, sugar, or even water. All the experiments will prove that the boiling point and melting point of ionic compounds are higher than those of covalent compounds.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.12",
+      "section_title": "Characteristics of Ionic and Covalent Bonds",
+      "chunk_type": "theory",
+      "content_markdown": "### (b) Solubility\n\nTake some water in a beaker or a glass jar. Add some $\\text{NaCl}$, an ionic compound and continue to stir it. Then, do the same thing with washing soda ($\\text{Na}_2\\text{CO}_3 \\cdot 10\\text{H}_2\\text{O}$), Copper Sulfate ($\\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O}$) or some other ionic compounds; you'll find them all soluble in water. However, you'll not find the same result with silver chloride. That means apart from a few exceptions, ionic compounds are soluble in water. Try the same experiment with covalent",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

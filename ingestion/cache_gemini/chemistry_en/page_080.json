@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 80,
+  "pdf_page_no": 85,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "## Exercise\n\n### Multiple Choice Questions\n\n1. What is the main basis of the modern periodic table?\n   \n   a. atomic number\n   \n   b. atomic mass\n   \n   c. relative atomic mass\n   \n   d. electronic configuration\n\n2. $A \\rightarrow 1\\text{s}^2 \\, 2\\text{s}^2 \\, 2\\text{p}^6 \\, 3\\text{s}^2 \\, 3\\text{p}^6 \\, 3\\text{d}^3 \\, 4\\text{s}^2$. Which group of the periodic table does the element belong to?\n   \n   a. Group-2\n   \n   b. Group-5\n   \n   c. Group-11\n   \n   d. Group-13\n\nAnswer questions 3 and 4 from the following table:\n\nIt is an intersection of a group from periodic table :\n\n| | |\n|---|---|\n| $_{19}\\text{K}$ |\n| $_{37}\\text{X}$ | Here X and Y are symbols, they do not represent actual elements |\n| $_{55}\\text{Y}$ | |\n\n3. Which period of the periodic table does the element belong to?\n   \n   a. $3^{\\text{rd}}$\n   \n   b. $4^{\\text{th}}$\n   \n   c. $5^{\\text{th}}$\n   \n   d. $6^{\\text{th}}$\n\n4. The shown elements have-\n\n   i. one electron in their outer shell\n   \n   ii. atomic radius decreases as we go from top to bottom\n   \n   iii. element Y is more active than element X\n\nWhich is correct?\n\n   a. i and ii\n   \n   b. ii and iii\n   \n   c. i and iii\n   \n   d. i, ii and iii",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

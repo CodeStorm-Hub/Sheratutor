@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 119,
+  "pdf_page_no": 124,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$V = \\frac{1000 \\times 20}{0.75 \\times 106} = 250\\text{ mL}$$\n\n**Problem:** A $250\\text{ mL}$ solution has $20\\text{ g}$ substance dissolved in it and its molarity is $0.75$. What is the molecular mass of the solute in the solution?\n\n**Solution:** Given here, $w = 20\\text{ g}$, $V = 250\\text{ mL}$, $S = 0.75\\text{ molar}$, $M = ?$\n\nWe know,\n$$w = \\frac{SVM}{1000}$$\n$$20 = \\frac{0.75 \\times 250 \\times M}{1000}$$\n$$M = \\frac{1000 \\times 20}{0.75 \\times 250} = 106$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** How will you prepare $200\\text{ mL}$ semimolar $\\text{Na}_2\\text{CO}_3$ solution?\n\n**Solution:** $V = 200\\text{ mL}$, $S = 0.5\\text{ molar}$, $M = 23 \\times 2 + 12 + 16 \\times 3 = 106$\n\nWe know,\n$$w = \\frac{SVM}{1000}$$\n$$= \\frac{0.5 \\times 200 \\times 106}{1000}\\text{ g} = 10.6\\text{ g}$$\n\nNow, take $10.6\\text{ g}$ $\\text{Na}_2\\text{CO}_3$ in a pot and pour $200\\text{ mL}$ water in it. Thus we can prepare the solution.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Task:** Find out the molarity of the solution when there is $4\\text{ g}$ $\\text{NaOH}$ in a $100\\text{ mL}$ solution.\n\n**Task:** Find out the molarity of the solution when there is $4\\text{ g}$ $\\text{HCl}$ in a $100\\text{ mL}$ solution.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

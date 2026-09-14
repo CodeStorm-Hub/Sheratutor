@@ -1,0 +1,155 @@
+{
+  "printed_page_no": 196,
+  "pdf_page_no": 201,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "২৩. সমাধান কর: $\\sin \\theta + \\cos \\theta = 1$, যখন $0^\\circ \\le \\theta \\le 90^\\circ$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "২৪. সমাধান কর: $\\cos^2 \\theta - \\sin^2 \\theta = 2 - 5\\cos \\theta$ যখন $\\theta$ সূক্ষ্মকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "২৫. সমাধান কর: $2\\sin^2 \\theta + 3\\cos \\theta - 3 = 0$, $\\theta$ সূক্ষ্মকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "২৬. সমাধান কর: $\\tan^2 \\theta - (1 + \\sqrt{3})\\tan \\theta + \\sqrt{3} = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "২৭. মান নির্ণয় কর: $3\\cot^2 60^\\circ + \\frac{1}{4}\\text{cosec}^2 30^\\circ + 5\\sin^2 45^\\circ - 4\\cos^2 60^\\circ$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৮. $\\triangle ABC$ এর $\\angle B = 90^\\circ, AB = 5$ সে.মি., $BC = 12$ সে.মি.।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $AC$ এর দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $\\angle C = \\theta$ হলে $\\sin \\theta + \\cos \\theta$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) উদ্দীপকের আলোকে দেখাও যে, $\\sec^2 A + \\text{cosec}^2 A = \\sec^2 A \\cdot \\text{cosec}^2 A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৯. প্রদত্ত চিত্রের আলোকে",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $AC$ এর পরিমাণ কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $\\tan A + \\tan C$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $x$ ও $y$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩০. $\\sin \\theta = p, \\cos \\theta = q, \\tan \\theta = r$, যেখানে $\\theta$ সূক্ষ্মকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $r = \\sqrt{(3)^{-1}}$ হলে, $\\theta$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $p + q = \\sqrt{2}$ হলে, প্রমাণ কর যে, $\\theta = 45^\\circ$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $7p^2 + 3q^2 = 4$ হলে, দেখাও যে, $\\tan \\theta = \\frac{1}{\\sqrt{3}}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩১. $ABC$ সমকোণী ত্রিভুজের $\\angle B = $ এক সমকোণ এবং $AB = BC$ হলে প্রমাণ কর যে, $\\frac{BC\\cos C - AC\\cos B}{BC\\cos B - AC\\cos A} + \\cos C = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩২. $ABC$ সমকোণী ত্রিভুজের $\\angle B = $ এক সমকোণ এবং $\\cot A + \\cot B = 2\\cot C$ হলে প্রমাণ কর যে, $AC^2 + BC^2 = 2AB^2$।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: প্রদত্ত চিত্রের আলোকে",
+      "figure_no": "9.01",
+      "box_2d": [
+        378,
+        655,
+        475,
+        853
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC, যেখানে কোণ B সমকোণ, AB বাহুর দৈর্ঘ্য 1, BC বাহুর দৈর্ঘ্য sqrt(3), এবং কোণ A ও C এর অভ্যন্তরীণ কোণগুলি যথাক্রমে (x+y) ও (x-y) হিসেবে চিহ্নিত।",
+      "reading_order_anchor": "২৯. প্রদত্ত চিত্রের আলোকে"
+    }
+  ]
+}

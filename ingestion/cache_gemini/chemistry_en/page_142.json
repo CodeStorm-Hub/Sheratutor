@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 142,
+  "pdf_page_no": 147,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We know, properties, characteristics and changes of substances are the topics discussed in chemistry. The elements in nature are constantly changing. Transformation to a different state is called a physical change while changing into a new element with new properties is called a chemical change. These changes occur due to certain physical and chemical reactions. This chapter will discuss elaborately on kinds of reactions, rates of reactions etc.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Rusted iron chains",
+      "figure_no": "7.01",
+      "box_2d": [
+        228,
+        137,
+        549,
+        858
+      ],
+      "description": "A pile of heavily rusted iron chain links showing orange-brown iron oxide corrosion.",
+      "reading_order_anchor": "We know, properties, characteristics and changes of substances are the topics discussed in chemistry."
+    }
+  ]
+}

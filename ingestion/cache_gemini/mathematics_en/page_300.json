@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 300,
+  "pdf_page_no": 305,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": "14.1",
+      "section_title": "Construction 12. To divide a given line segment internally in a given ratio.",
+      "chunk_type": "theory",
+      "content_markdown": "**Special Nomination:** Let the line segment $AB$ be divided internally in the ratio $m : n$.\n\n**Drawing:** Let an angle $BAX$ be drawn at $A$. From $AX$ cut the lengths $AE = m$ and $EC = n$ sequentially. Join $B, C$. At $E$, draw line segment $ED$ parallel to $CB$ which intersects $AB$ at $D$. Then the line segment $AB$ is divided at $D$ internally in the ratio $m : n$.\n\n**Proof:** Since the line segment $DE$ is parallel to a side $BC$ of the triangle $ABC$.\n$\\therefore AD : DB = AE : EC = m : n$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:** Divide a given line segment in definite ratio internally by an alternative method.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "14.2",
+      "section_title": "Example 1. Divide a line segment of length 7 cm internally in the ratio 3 : 2.",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Solution:** Draw any ray $AG$. From $AG$, cut a line segment $AB = 7$ cm. Draw an angle $\\angle BAX$ at $A$. From $AX$, cut the lengths $AE = 3$ cm and $EC = 2$ cm from $EX$. Join $B, C$. At $E$, draw an $\\angle AED$ equal to $\\angle ACB$ whose side intersects $AB$ at $D$. Then the line segment $AB$ is divided at $D$ internally in the ratio $3 : 2$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:** Draw a triangle similar to a particular triangle whose sides are $\\frac{3}{5} \\times$ the sides of the given triangle.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Construction of dividing a line segment internally",
+      "figure_no": "14.01",
+      "box_2d": [
+        175,
+        595,
+        315,
+        895
+      ],
+      "description": "Geometric construction showing line segment AB divided by point D using parallel line ED.",
+      "reading_order_anchor": "Construction 12. To divide a given line segment internally in a given ratio."
+    },
+    {
+      "caption": "Fig 14.02: Example of dividing a line segment of 7 cm in 3:2 ratio",
+      "figure_no": "14.02",
+      "box_2d": [
+        635,
+        595,
+        750,
+        885
+      ],
+      "description": "Geometric construction showing line segment AB of 7cm divided by point D in 3:2 ratio.",
+      "reading_order_anchor": "Example 1. Divide a line segment of length 7 cm internally in the ratio 3 : 2."
+    }
+  ]
+}

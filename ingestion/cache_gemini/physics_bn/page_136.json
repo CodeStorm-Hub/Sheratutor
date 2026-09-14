@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 136,
+  "pdf_page_no": 141,
+  "chapter_no": 5,
+  "chapter_title": "পদার্থের অবস্থা ও চাপ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** পানির নিচে প্রতি $33\\text{ ft } (10\\text{ m})$ গভীরতায় $1\\text{ atm}$ চাপ বেড়ে যায়। ডাইভাররা সর্বোচ্চ $1,000\\text{ ft } (330\\text{ m})$ গভীর পর্যন্ত গিয়েছে, সেখানে তাদের কতটুকু চাপ সহ্য করতে হয়েছে?\n\n**উত্তর:** প্রতি $10\\text{ m}$ এ $1\\text{ atm}$ বা $1\\text{ bar}$ চাপ বেড়ে গেলে $330\\text{ m}$ গভীরতায়\n\n$$\\frac{330\\text{ m}}{10\\text{ m/atm}} = 33\\text{ atm}$$\n\nডাইভারদের $33\\text{ atm}$ চাপ সহ্য করতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** কেরোসিন (ঘনত্ব $800\\text{ kg m}^{-3}$), পানি (ঘনত্ব $1000\\text{ kg m}^{-3}$) এবং পারদ (ঘনত্ব $13,600\\text{ kg m}^{-3}$) এই তিনটি তরলের জন্য $50\\text{ cm}$ নিচে চাপ বের করো।\n\n**উত্তর:** চাপ $P = h\\rho g$\n\nকেরোসিনের জন্য\n$$P = 0.50\\text{ m} \\times 800\\text{ kg m}^{-3} \\times 9.8\\text{ N kg}^{-1} = 3,920\\text{ N m}^{-2}$$\n\nপানির জন্য\n$$P = 0.50\\text{ m} \\times 1000\\text{ kg m}^{-3} \\times 9.8\\text{ N kg}^{-1} = 4,900\\text{ N m}^{-2}$$\n\nপারদের জন্য\n$$P = 0.50\\text{ m} \\times 13,600\\text{ kg m}^{-3} \\times 9.8\\text{ N kg}^{-1} = 66,640\\text{ N m}^{-2}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** কেরোসিন, পানি এবং পারদ এই তিনটি তরলের কত গভীরতায় $1\\text{ atm}$ এর সমান চাপ হবে?\n\n**উত্তর:** আমরা জানি পারদের জন্য $76\\text{ cm}$ গভীরতায় $1\\text{ atm}$ চাপ হয়। পানির ঘনত্ব পারদ থেকে $13.6$ গুণ কম কাজেই পানির গভীরতা $13.6$ গুণ বেশি হবে। অর্থাৎ পানির গভীরতা:\n\n$$76\\text{ cm} \\times 13.6 = 1034\\text{ cm} = 10.34\\text{ m}$$\n\nকেরোসিনের ঘনত্ব পানির ঘনত্ব থেকে $0.8$ গুণ কম কাজেই কেরোসিনের জন্য গভীরতা পানির গভীরতা থেকে $1/0.8 = 1.25$ গুণ বেশি হবে\n\n$$10.34\\text{ m} \\times 1.25 = 12.92\\text{ m}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 264,
+  "pdf_page_no": 269,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "image will be formed, and the size of it will start to increase. As the ray of light actually goes through the image, it is a real image and it is seen clearly in the picture that the image is inverted i.e:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) The position of the image will be on the twice of the focal length\n(b) It is real\n(c) It is inverted\n(d) It is the same size as the object",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(iii) Now let's see if the object is placed outside at a distance twice of the focal length. Where and what kind of image of the object is formed?\n\nThe process of drawing this image is the same as the previous one but (Figure 9.26) the object is to be drawn outside twice of the focal length. We know that if the object is kept on twice of focal length, then a same size image is formed at the same distance.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.25: If the object is placed at a distance twice the focal length, the size of the image will be same as the object.",
+      "figure_no": "9.25",
+      "box_2d": [
+        188,
+        252,
+        411,
+        740
+      ],
+      "description": "Ray diagram showing image formation by a convex lens when the object is placed at a distance of twice the focal length ($2f$).",
+      "reading_order_anchor": "image will be formed"
+    },
+    {
+      "caption": "Figure 9.26: If the object is placed at outer side of the twice of the focal length then small, inverted, real image is formed.",
+      "figure_no": "9.26",
+      "box_2d": [
+        631,
+        452,
+        853,
+        843
+      ],
+      "description": "Ray diagram showing image formation by a convex lens when the object is placed beyond twice the focal length ($2f$).",
+      "reading_order_anchor": "Now let's see if the object"
+    }
+  ]
+}

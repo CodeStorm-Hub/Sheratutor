@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 285,
+  "pdf_page_no": 290,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= 2\\left(\\frac{256 - 1}{256}\\right) = \\frac{255}{128} = 1\\frac{127}{128}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 12. Palash Sarker joined the job in January 2005 at a yearly salary of Tk. 120000. His yearly increment is Tk. 5000. 10% of his salary is deducted every year for provident fund. At the end of year he deposits 12000 Tk. in a bank at a compound interest of 12%. He will retire from the job on December 31, 2030.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Which series done the basic salary of Palash Sarker follow? Write down that series.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) How much salary (in Tk.) would he receive in his entire job life excluding the provident fund money?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) What is the amount of total deposited money with interest in the bank by December 31, 2031?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution:\n\n1) Basic salary of Palash Sarker follows arithmetic series.\nThe first term of the series $a = 120000$ and common difference $= 5000$\n$\\therefore$ The second term $= 120000 + 5000 = 125000$\nThe third term $= 125000 + 5000 = 130000$\n$\\therefore$ The series is, $120000 + 125000 + 130000 + \\dots$\n\n2) The total amount of salary excluding the provident fund from January 2005 to December 31, 2030 i.e. $(2030 - 2005 + 1)$ or, 26 years is:\n$(120000 - 10\\% \\text{ of } 120000) + (125000 - 10\\% \\text{ of } 125000) + (130000 - 10\\% \\text{ of } 130000) + \\dots$\n$= (120000 - 12000) + (125000 - 12500) + (130000 - 13000) + \\dots$\n$= 108000 + 112500 + 117000 + \\dots$\nIn this case it is an arithmetic series whose first term, $a = 108000$, common difference $d = 112500 - 108000 = 4500$ and number of terms $n = 26$\n$\\therefore$ Total salary he receives in 26 years $= \\frac{26}{2} \\{2 \\times 108000 + (26 - 1) \\times 4500\\}$ Tk.\n$= 13(216000 + 112500) = 13 \\times 328500 = 4270500 \\text{ Tk.}$\n\n3) Total time from 2005 to 2031 is $(2031 - 2005)$ or 26 years\nDeposit of 12000 Tk. after 1 year $12000 \\left(1 + \\frac{12}{100}\\right) = 12000 \\times 1.12 \\text{ Tk.}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

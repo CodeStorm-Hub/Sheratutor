@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 139,
+  "pdf_page_no": 144,
+  "chapter_no": 7,
+  "chapter_title": "ব্যবহারিক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন:\n১. যেকোনো একটি রশ্মি $BE$ থেকে ভূমি $a$ এর সমান করে $BC$ রেখাংশ কেটে নিই। রেখাংশের $B$ বিন্দুতে $\\angle x$ এর সমান $\\angle CBF$ আঁকি।\n২. $BF$ রশ্মি থেকে $s$ এর সমান $BD$ অংশ কাটি।\n৩. $C, D$ যোগ করি। $CD$ এর লম্বদ্বিখণ্ডক $PQ$ আঁকি।\n৪. $PQ$ রশ্মি $BD$ রশ্মিকে $A$ এবং $CD$ কে $R$ বিন্দুতে ছেদ করে। $A, C$ যোগ করি।\nতাহলে, $\\triangle ABC$ ই উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $\\triangle ACR$ এবং $\\triangle ADR$ এ $CR = DR, AR = AR$ এবং অন্তর্ভুক্ত $\\angle ARC =$ অন্তর্ভুক্ত $\\angle ARD$ [সমকোণ]\n$\\therefore \\triangle ACR \\cong \\triangle ADR$\n$\\therefore AC = AD$\nএখন, $\\triangle ABC$ এ $\\angle ABC = \\angle x, BC = a$ [অঙ্কন অনুসারে]\nএবং $BA + AC = BA + AD = BD = s$।\nঅতএব, $\\triangle ABC$ ই নির্ণেয় ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.2",
+      "section_title": "সম্পাদ্য ২. ত্রিভুজের ভূমি, ভূমি সংলগ্ন একটি সূক্ষ্মকোণ ও অপর দুই বাহুর অন্তর দেওয়া আছে। ত্রিভুজটি আঁকতে হবে।",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, কোনো ত্রিভুজের ভূমি $a$, ভূমি সংলগ্ন সূক্ষ্মকোণ $\\angle x$ এবং অপর দুই বাহুর অন্তর $d$ দেওয়া আছে। ত্রিভুজটি আঁকতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন:\n১. যেকোনো একটি রশ্মি $BF$ থেকে ভূমি $a$ এর সমান করে $BC$ রেখাংশ কেটে নিই। $BC$ রেখাংশের $B$ বিন্দুতে $\\angle x$ এর সমান $\\angle CBE$ আঁকি।\n২. $BE$ রশ্মি থেকে $d$ এর সমান $BD$ অংশ কেটে নিই।\n৩. $C, D$ যোগ করি। $DC$ রেখাংশের যে পাশে $E$ বিন্দু আছে সেই পাশে $C$ বিন্দুতে $\\angle EDC$ এর সমান $\\angle DCA$ আঁকি।\n$CA$ রশ্মি $BE$ রশ্মিকে $A$ বিন্দুতে ছেদ করে। তাহলে, $\\triangle ABC$ ই উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: অঙ্কন অনুসারে, $\\triangle ACD$ এ $\\angle ACD = \\angle ADC$\n$\\therefore AD = AC$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৭.০১",
+      "figure_no": "7.01",
+      "box_2d": [
+        85,
+        675,
+        235,
+        875
+      ],
+      "description": "ত্রিভুজ অঙ্কনের জ্যামিতিক চিত্র যেখানে ভূমি a, কোণ x এবং বাহুর সমষ্টি s ব্যবহার করা হয়েছে।",
+      "reading_order_anchor": "অঙ্কন:"
+    },
+    {
+      "caption": "চিত্র ৭.০২",
+      "figure_no": "7.02",
+      "box_2d": [
+        715,
+        590,
+        850,
+        885
+      ],
+      "description": "ত্রিভুজ অঙ্কনের জ্যামিতিক চিত্র যেখানে ভূমি a, কোণ x এবং বাহুর অন্তর d ব্যবহার করা হয়েছে।",
+      "reading_order_anchor": "সম্পাদ্য ২. ত্রিভুজের ভূমি, ভূমি সংলগ্ন একটি সূক্ষ্মকোণ ও অপর দুই বাহুর অন্তর দেওয়া আছে।"
+    }
+  ]
+}

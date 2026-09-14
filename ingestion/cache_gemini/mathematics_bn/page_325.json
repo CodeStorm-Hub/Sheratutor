@@ -1,0 +1,99 @@
+{
+  "printed_page_no": 325,
+  "pdf_page_no": 330,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "১৫. একটি বেলনের বক্রতলের ক্ষেত্রফল $100$ বর্গ সে.মি. এবং আয়তন $150$ ঘন সে.মি.। বেলনের উচ্চতা এবং ভূমির ব্যাসার্ধ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "১৬. একটি সমবৃত্তভূমিক সিলিন্ডারের বক্রপৃষ্ঠের ক্ষেত্রফল $4400$ বর্গ সে.মি.। এর উচ্চতা $30$ সে.মি. হলে সমগ্রতলের ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "১৭. একটি লোহার পাইপের ভিতরের ও বাইরের ব্যাস যথাক্রমে $12$ সে.মি. ও $14$ সে.মি. এবং পাইপের উচ্চতা $5$ মিটার। এক ঘন সে.মি. লোহার ওজন $7.2$ গ্রাম হলে পাইপের লোহার ওজন নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৮. একটি আয়তাকারক্ষেত্রের দৈর্ঘ্য $12$ মিটার এবং প্রস্থ $5$ মিটার। আয়তাকারক্ষেত্রটিকে পরিবেষ্টিত করে একটি বৃত্তাকারক্ষেত্র আছে যেখানে আয়তাকারক্ষেত্র দ্বারা অনধিকৃত অংশে ঘাস লাগানো হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উপরের তথ্যের ভিত্তিতে সংক্ষিপ্ত বর্ণনাসহ চিত্র আঁক।\nখ) বৃত্তাকার ক্ষেত্রটির ব্যাস নির্ণয় কর।\nগ) প্রতি বর্গমিটার ঘাস লাগাতে $50$ টাকা খরচ হলে মোট খরচ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৯. চিত্রটি বর্গক্ষেত্র ও বৃত্তকলায় বিভক্ত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) বর্গক্ষেত্রটির কর্ণের দৈর্ঘ্য ও পরিসীমা নির্ণয় কর।\nখ) সম্পূর্ণ ক্ষেত্রের ক্ষেত্রফল নির্ণয় কর।\nগ) বর্গের বাহুর দৈর্ঘ্যবিশিষ্ট কোনো সুষম ষড়ভুজ কোনো বৃত্তে অন্তর্লিখিত হলে বৃত্তের অনধিকৃত অংশের ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২০. একটি সামান্তরিকক্ষেত্র $ABCD$ এবং একটি আয়তক্ষেত্র $BCEF$ উভয়ের ভূমি $BC$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) একই উচ্চতা বিবেচনা করে সামান্তরিক ও আয়তক্ষেত্রটির চিত্র আঁক।\nখ) দেখাও যে, $ABCD$ ক্ষেত্রটির পরিসীমা $BCEF$ ক্ষেত্রটির পরিসীমা অপেক্ষা বৃহত্তর।\nগ) আয়তক্ষেত্রটির দৈর্ঘ্য ও প্রস্থের অনুপাত $5:3$ এবং ক্ষেত্রটির পরিসীমা $48$ মিটার হলে, সামান্তরিকের ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২১. একটি বর্গক্ষেত্রের পরিসীমা একটি আয়তক্ষেত্রের পরিসীমার সমান। আয়তক্ষেত্রটির দৈর্ঘ্য প্রস্থের তিনগুণ এবং ক্ষেত্রফল $1200$ বর্গমিটার।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $x$ চলকের মাধ্যমে আয়তক্ষেত্রের পরিসীমা নির্ণয় কর।\nখ) বর্গক্ষেত্রটির ক্ষেত্রফল নির্ণয় কর।\nগ) আয়তাকারক্ষেত্রের বাইরে চতুর্দিকে $1.5$ মিটার চওড়া একটি রাস্তা তৈরি করতে $25 \\times 12.5$ বর্গ সে.মি. তলবিশিষ্ট ইটের সংখ্যা নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৯: বর্গক্ষেত্র ও বৃত্তকলা",
+      "figure_no": "19",
+      "box_2d": [
+        453,
+        695,
+        615,
+        885
+      ],
+      "description": "একটি বর্গক্ষেত্র ABCD এবং একটি বৃত্তকলা যার কোণ 30 ডিগ্রি এবং ব্যাসার্ধ 12 একক।",
+      "reading_order_anchor": "১৯. চিত্রটি বর্গক্ষেত্র ও বৃত্তকলায় বিভক্ত।"
+    }
+  ]
+}

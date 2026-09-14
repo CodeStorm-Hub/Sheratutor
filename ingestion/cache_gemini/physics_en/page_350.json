@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 350,
+  "pdf_page_no": 355,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$C_{12}$: 6 protons and 6 neutrons\n$C_{13}$: 6 protons and 7 neutrons\n$C_{14}$: 6 protons and 8 neutrons\n\nAmong these three isotopes, $C_{14}$ is unstable or radioactive.\n\nIn 1896, Henry Becquerel discovered the existence of radioactive rays from Uranium for the first time. Later on, Ernest Rutherford, Pierre Curie, Marie Curie and other scientists discovered radioactivity of other elements. Since radioactivity is not influenced by external pressure, heat, electric or magnetic field, and cannot be controlled, it is accepted as a nuclear phenomenon. Due to radioactivity, radioactive rays emerge and this changes the structure of the nucleus and turn it into a different element, this is also observed.\n\nThe main three radioactive rays that emit from the nucleus are alpha, beta and gamma rays (Figure 13.01).",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.1.1",
+      "section_title": "Alpha ray",
+      "chunk_type": "theory",
+      "content_markdown": "Alpha ray or alpha particle is actually a helium nucleus. A helium nucleus contains two protons and two neutrons, so it is a charged particle. So its path of motion can be influenced by electric and magnetic field. When an alpha particle emits from a nucleus, it possesses some MeV of energy, so when it passes through air and collides with the molecule-atoms it can ionize them intensively. In air, the path of motion of an alpha particle is straight. Since an alpha particle is a helium nucleus, it cannot travel far through air. It loses its energy by ionizing air molecule-atoms and travels approximately 6 cm through air before stopping. An alpha particle can be stopped by using a sheet of paper. It creates phosphorescence on zinc sulfide screen. An alpha particle creates many free electrons by ionizing molecule-atoms of air in its path of motion. Its presence can be detected or its energy can be measured easily by collecting these free electrons.\n\nWhen an alpha particle comes out from a larger radioactive nucleus then this nucleus’s atomic number will be reduced by two and its nucleon number will be reduced by four, because an alpha particle consists of two protons and two",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

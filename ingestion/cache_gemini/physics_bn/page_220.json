@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 220,
+  "pdf_page_no": 225,
+  "chapter_no": 8,
+  "chapter_title": "আলোর প্রতিফলন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আলোর উৎস নেই। আমরা পরে দেখব অনেক সময় কিন্তু সত্যি সত্যি এমনভাবে একটা প্রতিবিম্ব তৈরি হয়, যেখানে সত্যি সত্যি আলো কেন্দ্রীভূত হয় এবং সেখান থেকে আলোক রশ্মি বের হয়ে আসে। এ রকম প্রতিবিম্বকে বলে বাস্তব প্রতিবিম্ব এবং এই ধরনের প্রতিবিম্ব দিয়ে অনেক কাজ করা সম্ভব। আয়নায় যে প্রতিবিম্ব তৈরি হয়, সেখানে সত্যিকারের আলো কেন্দ্রীভূত হয় না, তাই এর নাম অবাস্তব প্রতিবিম্ব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.10",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "8.10 চিত্রে একটি মাত্র বিন্দু না হয়ে একটা বিস্তৃত বস্তুর প্রতিবিম্ব কীভাবে তৈরি হয় দেখানো হয়েছে। $X$ এবং $Y$ বিন্দু থেকে আলো আয়নায় প্রতিফলিত হয়ে যথাক্রমে $X'$ এবং $Y'$ এ অবাস্তব প্রতিবিম্ব তৈরি করেছে অর্থাৎ মনে হচ্ছে চোখে আলোক রশ্মি আসছে $X'$ এবং $Y'$ থেকে। দেখাই যাচ্ছে $X Y$ এর যে দৈর্ঘ্য $X' Y'$ এর সেই একই দৈর্ঘ্য। $X Y$ তে তীরের মাথাটি যদি উপরের দিকে হয় তাহলে $X' Y'$ তেও তীরের মাথাটি উপরের দিকে হবে। অর্থাৎ সাধারণ আয়নায় কিংবা দর্পণে প্রতিবিম্ব:\n\n(a) আয়না থেকে সমদূরত্বে\n(b) অবাস্তব\n(c) সোজা এবং\n(d) সমান দৈর্ঘ্যের",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আমরা আলাদা আলাদাভাবে এই বিষয়গুলো মনে করিয়ে দিচ্ছি কারণ একটু পরেই দেখব সাধারণ আয়নার বদলে অন্য ধরনের আয়না ব্যবহার করলে প্রতিবিম্ব ভিন্ন দূরত্বে হতে পারে, বাস্তব হতে পারে, উল্টো হতে পারে এমনকি ছোট কিংবা বড়ও হতে পারে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "নিজে করো",
+      "chunk_type": "theory",
+      "content_markdown": "নিজে করো",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 8.10: $X Y$ বস্তুটির প্রতিবিম্ব $X' Y'$",
+      "figure_no": "8.10",
+      "box_2d": [
+        344,
+        497,
+        524,
+        876
+      ],
+      "description": "Ray diagram showing the formation of a virtual image $X' Y'$ of an extended object $X Y$ in a plane mirror.",
+      "reading_order_anchor": "8.10 চিত্রে একটি মাত্র বিন্দু না হয়ে একটা বিস্তৃত বস্তুর প্রতিবিম্ব কীভাবে তৈরি হয় দেখানো হয়েছে।"
+    },
+    {
+      "caption": "চিত্র 8.11: তিন টুকরা কাচ দিয়ে ক্যালাইডাস্কোপ তৈরি করা যায়।",
+      "figure_no": "8.11",
+      "box_2d": [
+        717,
+        218,
+        922,
+        765
+      ],
+      "description": "Illustration of a kaleidoscope made from three pieces of glass, along with a person viewing through it.",
+      "reading_order_anchor": "নিজে করো"
+    }
+  ]
+}

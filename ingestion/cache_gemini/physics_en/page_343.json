@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 343,
+  "pdf_page_no": 348,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Answer: $V_S = \\left( \\frac{n_S}{n_P} \\right) V_P = \\left( \\frac{1000}{100} \\right) \\times 12V = 120V \\ AC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example: In the above transformer, if 1A current flows through the primary coil, what is the maximum current that will flow through the secondary coil?\n\nAnswer: $I_S = \\left( \\frac{V_P}{V_S} \\right) I_P = \\left( \\frac{12}{120} \\right) \\times 1A = 0.1A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Exercise\n#### General questions",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. If you send an electron beam from one end to the other end of your room and see that it is going upward, what explanation will you give?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. While making an electromagnet, an insulated wire is wrapped around an iron bar. Is it better to use a single turn with a thick wire or many turns with a thin wire? Why?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. Between two iron bars, one is a magnet and the other is not. Without hanging or without using any instrument, can you identify which one is iron and which one is magnet?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. Earth is a huge magnet. Is the north pole of the earth the north pole or the south pole of that magnet?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. Electricity is produced by moving the magnet, it always tends to oppose the change. Remembering this, if the magnet shown in Fig 12.14 is raised upward, then in which direction will current flow in the loop?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.14: Change of position of a magnet inside a loop.",
+      "figure_no": "12.14",
+      "box_2d": [
+        472,
+        658,
+        661,
+        922
+      ],
+      "description": "A diagram showing a bar magnet with its north pole facing downward, positioned above a circular wire loop, with an arrow indicating upward movement.",
+      "reading_order_anchor": "5. Electricity is produced by moving the magnet, it always tends to oppose the change. Remembering this, if the magnet shown in Figure 12.14 is raised upward, then in which direction will current flow in the loop?"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 204,
+  "pdf_page_no": 209,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Trigonometric ratios of the angles 0° and 90°",
+      "chunk_type": "theory",
+      "content_markdown": "We have learnt how to determine the trigonometric ratios for the acute angle $\\theta$ of a right-angled triangle. Now, we see, if the angle is made gradually smaller, how the trigonometric ratios change. As $\\theta$ get smaller the length of the side, $PN$ also gets smaller. The point $P$ closes to the point $N$ and finally the angle $\\theta$ comes closer to the angle $0^\\circ$, $OP$ is reconciled with $ON$ approximately.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When the angle $\\theta$ comes closer to $0^\\circ$, the length of the line segment $PN$ reduces to zero and in this case the value of $\\sin \\theta = \\frac{PN}{OP}$ is approximately zero. At the same time, the length of $OP$ is equal to the length of $ON$ and the value of $\\cos \\theta = \\frac{ON}{OP}$ is $1$ approximately.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The angle, $0^\\circ$ is introduced for the convenience of discussion in trigonometry, and the edge line and the original line of the angle $0^\\circ$ are supposed the same ray. Therefore, in line with the prior discussion, it is said that, $\\cos 0^\\circ = 1$, $\\sin 0^\\circ = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If $\\theta$ is the acute angle, we see $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$, $\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}$, $\\sec \\theta = \\frac{1}{\\cos \\theta}$, $\\csc \\theta = \\frac{1}{\\sin \\theta}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We define the angle $0^\\circ$ in probable cases so that, those relations exists.\n\n$$\\tan 0^\\circ = \\frac{\\sin 0^\\circ}{\\cos 0^\\circ} = \\frac{0}{1} = 0$$\n\n$$\\sec 0^\\circ = \\frac{1}{\\cos 0^\\circ} = \\frac{1}{1} = 1$$\n\nSince division by $0$ is not allowed, $\\csc 0^\\circ$ and $\\cot 0^\\circ$ can not be defined.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Trigonometric ratios of the angles 0°",
+      "figure_no": "9.01",
+      "box_2d": [
+        143,
+        705,
+        251,
+        812
+      ],
+      "description": "A right-angled triangle with angle theta, showing the side PN and hypotenuse OP.",
+      "reading_order_anchor": "Trigonometric ratios of the angles 0° and 90°"
+    },
+    {
+      "caption": "Fig 9.02: Sequence of triangles showing angle theta approaching 0°",
+      "figure_no": "9.02",
+      "box_2d": [
+        353,
+        140,
+        481,
+        865
+      ],
+      "description": "A series of five right-angled triangles showing the angle theta decreasing towards 0 degrees.",
+      "reading_order_anchor": "When the angle theta comes closer to 0°"
+    }
+  ]
+}

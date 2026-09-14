@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 151,
+  "pdf_page_no": 156,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Oxidation-reduction is a simultaneous process:** You already know what is oxidation and what is reduction and what is an oxidant and what is a reductant. Oxidation-reduction reactions takes place simultaneously. Let us consider the reaction below:\n\n$$\\text{Na} + \\frac{1}{2}\\text{Cl}_2 \\longrightarrow \\text{NaCl}$$\n\nHere, the reduction agent $\\text{Na}$ has donated one electron from its outermost shell to complete the oxidation half reaction. The oxidant $\\text{Cl}$ has accepted that electron and completed the reduction half reaction.\n\nOxidation half reaction: $\\text{Na}^0 \\rightarrow \\text{Na}^+ + \\text{e}^-$\n\nReduction half reaction: $\\text{Cl}^0 + \\text{e}^- \\rightarrow \\text{Cl}^-$\n\nIf we add these two half reactions, we get the oxidation-reduction reaction.\n\n$$\\text{Na}^0 + \\text{Cl}^0 \\rightarrow \\text{Na}^+ + \\text{Cl}^- \\equiv \\text{NaCl}$$\n\nIt is clear here that the reduction agent has donated the electron to the oxidation agent. If oxidation agent $\\text{Cl}$ wouldn't accept the electron, the reduction agent $\\text{Na}$ would not have been able to donate the electron. So, it can be said, oxidation and reduction will occur together. They are simultaneous processes.\n\nSince the reductant donates an electron and the oxidant accepts that electron, therefore, oxidation-reduction is actually the transfer of electrons.\n\nThere are some reactions where oxidation-reduction occurs. They are:\n1. Addition Reaction\n2. Decomposition Reaction\n3. Substitution or Displacement Reaction\n4. Combustion Reaction",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

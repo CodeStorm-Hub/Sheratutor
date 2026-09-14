@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 99,
+  "pdf_page_no": 104,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If a set, $S = \\{x : x \\in R, 1 \\le x \\le 10\\}$, $x$-may be any real number from 1 to 10. Here, $x$ is a variable. So, we can say that when a letter symbol means the element of a set, it is called variable.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Degree of an equation : The highest degree of a variable in any equation is called the degree of the equation. Degree of each of the equations $x + 1 = 5$, $2x - 1 = x + 5$, $y + 7 = 2y - 3$ is 1; these are linear equations with one variable.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again, the degree of each of the equations $x^2 + 5x + 6 = 0$, $y^2 - y = 12$, $4x^2 - 2x = 3 - 6x$ is 2; these are linear equations with two variable. The equation $2x^3 - x^2 - 4x + 4 = 0$ is the equation of degree 3 with one variable.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.1",
+      "section_title": "Equation and Identity",
+      "chunk_type": "theory",
+      "content_markdown": "Equation: There are two polynomials on two sides of the equal sign of an equation, or there may be zero on one side (mainly on right hand side). Degree of the variable of the polynomials on two sides may not be equal. Solving an equation, we get the number of values of the variable equal to the highest degree of that variable. This value or these values are called the roots of the equation. The equation will be satisfied by the root or roots. In the case of more than one root, these may be equal or unequal. Such as, roots of $x^2 - 5x + 6 = 0$ are 2, 3. Again, though the value of $x$ in equation $(x - 3)^2 = 0$ is 3, the roots of the equations are 3, 3.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Identity: There are two polynomials of same (equal) degree on two sides of equal sign. Identity will be satisfied by more values than the number of highest degree of the variable. There is no difference between the two sides of equal sign; that is why, it is called identity. Such as, $(x + 1)^2 - (x - 1)^2 = 4x$ is an identity; it will be satisfied for all values of $x$. So this equation is an identity. Each algebraic formula is an identity. Such as, $(a + b)^2 = a^2 + 2ab + b^2$, $(a - b)^2 = a^2 - 2ab + b^2$, $a^2 - b^2 = (a + b)(a - b)$, $(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3$ etc. are identities.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "All equations are not identities, In identity $\\equiv$ sign is used instead of equal ($=$) sign. But as all identities are equations, in the case of identity also, generally the equal sign is used.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Distinctions between equation and identity are given below :",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

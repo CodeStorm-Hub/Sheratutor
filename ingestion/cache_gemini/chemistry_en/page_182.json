@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 182,
+  "pdf_page_no": 187,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Electrolyte",
+      "chunk_type": "theory",
+      "content_markdown": "The substances that let electricity pass in their melted and solution state but do not allow in their solid state and simultaneously brings about a chemical change in that substance are called electrolytes. The electrolytes remain ionized during their melted or solution state. The ions are used by electrolytes to conduct electricity. Ionic compounds and some polar covalent compounds become electrolytes in their molten or solution state. For example, sodium chloride ($\\text{NaCl}$), copper sulfate ($\\text{CuSO}_4$), sulfuric acid ($\\text{H}_2\\text{SO}_4$), water ($\\text{H}_2\\text{O}$), ethanoic acid ($\\text{CH}_3\\text{COOH}$) etc. are of this type.\n\nElectrolytes are again of two types:\n\n(i) **Strong Electrolyte:** The electrolytes that remain completely ionized in molten or solution state are called strong electrolytes. Sodium chloride ($\\text{NaCl}$), copper sulfate ($\\text{CuSO}_4$) and sulfuric acid ($\\text{H}_2\\text{SO}_4$) are strong electrolytes.\n\n(ii) **Weak Electrolytes:** The electrolytes that remain ionized at a very little amount in molten or solution state are called weak electrolytes. Water ($\\text{H}_2\\text{O}$), ethanoic acid ($\\text{CH}_3\\text{COOH}$) etc. are of this type.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Electrode",
+      "chunk_type": "theory",
+      "content_markdown": "Electrode is a metallic or non-metallic electric conductor. They are electronic conductors sunk in the solution of electrolytes. In the electrochemical cell, an element or ion donates an electrode in an oxidation reaction. The positive ion accepts electrons from the other electrode in the reduction reaction. This way, oxidation-reduction occurs in the whole cell. The electrode where oxidation occurs is called the anode electrode and the electrode where reduction occurs is the cathode.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.3.2",
+      "section_title": "Electrolytic Cell, Electrolysis and the Mechanism of Electrolysis",
+      "chunk_type": "theory",
+      "content_markdown": "Electrolytic cell uses electricity to conduct chemical reactions. There occurs a chemical reaction at the time of electricity passing through molten or solution of electrolytes, which is known as electrolysis. When electricity passes through molten sodium chloride, it produces chlorine gas at the anode and sodium metal at the cathode. This is electrolysis of sodium chloride:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

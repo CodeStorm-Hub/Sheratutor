@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 185,
+  "pdf_page_no": 190,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. With the help of latent heat ---\n\ni. The temperature of a body increases.\nii. The state of a substance changes.\niii. The internal energy of a body increases.\n\nWhich one is correct?\n\n(a) i \n(b) ii \n(c) ii & iii \n(d) i, ii & iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "With the help of the figure answer the question no. 4 & 5",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. How much time was required to melt all of the ice?\n\n(a) $2\\text{ min}$ \n(b) $4\\text{ min}$\n(c) $6\\text{ min}$ \n(d) $8\\text{ min}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. What is the required time in minutes for the water to reach the boiling temperature?\n\n(a) $6$ \n(b) $8$\n(c) $12$ \n(d) $18$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 6.10 : Ice melting graph",
+      "figure_no": "6.10",
+      "box_2d": [
+        330,
+        161,
+        603,
+        638
+      ],
+      "description": "A line graph showing temperature on the y-axis (from 50°C to 100°C) versus time in minutes on the x-axis, illustrating the melting of ice and subsequent heating of water.",
+      "reading_order_anchor": "With the help of the figure answer the question no. 4 & 5"
+    }
+  ]
+}

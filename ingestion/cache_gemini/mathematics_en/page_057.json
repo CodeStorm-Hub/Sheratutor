@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 57,
+  "pdf_page_no": 62,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. If $p - q = r$, show that, $p^3 - q^3 - r^3 = 3pqr$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. If $2x - \\frac{2}{x} = 3$, show that, $8\\left(x^3 - \\frac{1}{x^3}\\right) = 63$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. If $a = \\sqrt{6} + \\sqrt{5}$, find the value of $\\frac{a^6 - 1}{a^3}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. $x - \\frac{1}{x} = \\sqrt{3}$ where $x \\neq 0$\n1) Prove that, $x^2 - \\sqrt{3}x = 1$.\n2) Prove that, $23\\left(x^2 + \\frac{1}{x^2}\\right) = 5\\left(x^4 + \\frac{1}{x^4}\\right)$.\n3) Find the value of $x^6 + \\frac{1}{x^6}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Factorization\nIf an expression is equal to the product of two or more expressions, each of the latter expressions is called a **factor** of the former expression. After finding the possible factors of any algebraic expression and then expressing the expression as the product of these factors are called **factorization** or resolution into factors. The algebraic expressions may consist of one or more terms. So, the factors may also contain one or more terms. Some process of resolving expressions into factors will be discussed here.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Common Factor:** If any polynomial expression has common factor in every term, at first they are to be found out. For example,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 18. $3a^2b + 6ab^2 + 12a^2b^2 = 3ab(a + 2b + 4ab)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 19. $2ab(x - y) + 2bc(x - y) + 3ca(x - y) = (x - y)(2ab + 2bc + 3ca)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Perfect Square:** An expression can be expressed in the form of a perfect square.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 20. Resolve into factors: $4x^2 + 12x + 9$\nSolution: $4x^2 + 12x + 9 = (2x)^2 + 2 \\times 2x \\times 3 + (3)^2$\n$= (2x + 3)^2 = (2x + 3)(2x + 3)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

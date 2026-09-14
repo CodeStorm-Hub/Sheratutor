@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 124,
+  "pdf_page_no": 129,
+  "chapter_no": 4,
+  "chapter_title": "কাজ, ক্ষমতা ও শক্তি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "গাণিতিক প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "গাণিতিক প্রশ্ন\n\n1. একটা বস্তুর ওপর বিভিন্ন সময় বিভিন্ন বল প্রয়োগ করার কারণে তার বেগের পরিবর্তন হয় এবং সেটি 4.07 চিত্রে দেখানো হয়েছে। OA, AB, BC এবং CD এর মধ্যে কখন পজিটিভ কাজ কখন নেগেটিভ কাজ বা কখন শূন্য কাজ করা হয়েছে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. $50\\text{ kg}$ ভরের একটি মেয়ে $10\\text{ s}$ এ সিঁড়ি বেয়ে $5\\text{ m}$ উপরে উঠেছে। সে কতটুকু কাজ করেছে? তার ক্ষমতা কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. $5\\text{ kg}$ ভরের একটা স্থির বস্তুর ওপর $10\\text{ s}$ একটি বল প্রয়োগ করার পর তার গতিশক্তি হলো $500\\text{ J}$। কী পরিমাণ বল প্রয়োগ করা হয়েছিল?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. একটি কপিকলের (চিত্র 4.08) এক পাশে $10\\text{ kg}$ এবং অন্য পাশে $5\\text{ kg}$ ভরের দুটি বস্তুকে ঠিক $5\\text{ m}$ উপরে স্থির অবস্থায় ধরে রাখা হয়েছে। তুমি বস্তু দুটিকে ছেড়ে দিলে, তখন $10\\text{ kg}$ ভরটি নিচের দিকে এবং $5\\text{ kg}$ ভরটি উপরের দিকে উঠতে শুরু করবে। যখন $10\\text{ kg}$ ভরটি $1\\text{ m}$ নিচে এবং $5\\text{ kg}$ ভরটি $1\\text{ m}$ উপরে উঠেছে তখন ভর দুটির বেগ কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. $100\\text{ m}$ ওপর থেকে $5\\text{ kg}$ ভরের একটি বস্তু ছেড়ে দেওয়া হয়েছে, কোন উচ্চতায় বস্তুটির গতিশক্তি তার বিভব শক্তির দ্বিগুণ হবে?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 4.07: বেগ সময় লেখচিত্র।",
+      "figure_no": "4.07",
+      "box_2d": [
+        180,
+        547,
+        332,
+        878
+      ],
+      "description": "বেগ ও সময়ের একটি লেখচিত্র যেখানে বিভিন্ন অঞ্চলে বেগের পরিবর্তন দেখানো হয়েছে।",
+      "reading_order_anchor": "1. একটা বস্তুর ওপর বিভিন্ন সময় বিভিন্ন বল..."
+    },
+    {
+      "caption": "চিত্র 4.08: দুটি ভিন্ন ভর কপিকল দিয়ে ঝোলানো।",
+      "figure_no": "4.08",
+      "box_2d": [
+        516,
+        545,
+        785,
+        894
+      ],
+      "description": "একটি কপিকলের সাথে দুটি ভিন্ন ভরের বস্তু ঝুলিয়ে রাখার চিত্র।",
+      "reading_order_anchor": "4. একটি কপিকলের (চিত্র 4.08) এক পাশে..."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 137,
+  "pdf_page_no": 142,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3. Now, pour some sodium carbonate into the weighing bottle in a way so that the total weight of the bottle is $2.65\\text{ gram}$ higher than the previous weight.\n\n4. Pour the sodium carbonate from the weighing bottle inside the volumetric flask through the funnel.\n\n5. Pour the distilled water slowly from the wash bottle inside the volumetric flask. After pouring half the water, fix a cork on the mouth of the volumetric flask and shake it so that the sodium carbonate is dissolved fully into the water. Now, add the rest of the water to fill up $250\\text{ mL}$.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": "Caution",
+      "chunk_type": "theory",
+      "content_markdown": "1. Take dry and pure sodium carbonate\n2. Ensure the weighing bottle is dry\n3. Add distilled water only",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": "Task for Learners",
+      "chunk_type": "theory",
+      "content_markdown": "According to your data and statistics from the above experiment, prepare a $0.1\\text{ molar}$ sodium carbonate solution in a $250\\text{ mL}$ volumetric flask.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.03: Preparation of 0.1 molar sodium carbonate solution.",
+      "figure_no": "6.03",
+      "box_2d": [
+        383,
+        169,
+        638,
+        860
+      ],
+      "description": "Step-by-step illustration showing the preparation of 0.1 M Na2CO3 solution using a volumetric flask, funnel, wash bottle, and 2.65g of Na2CO3.",
+      "reading_order_anchor": "5. Pour the distilled water slowly from the wash bottle inside the volumetric flask."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 176,
+  "pdf_page_no": 181,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Take two balloons, put a small amount of water into one of them and air of the same volume in another one. Now put the two balloons under hot water for a small interval of time. You will notice that the balloon containing water remains the same, because the expansion of liquid due to heat is smaller but the balloons containing air has expanded in volume to a large extent, because the expansion of gas is much more higher than that of liquid.",
+      "activity_tag": "Do Yourself"
+    },
+    {
+      "section_no": "6.4",
+      "section_title": "Effect of Temperature in Change of State",
+      "chunk_type": "theory",
+      "content_markdown": "Already you have know that all solids consist of molecules and in solids molecules attract one another from a certain position. If heat is applied, their vibrations increase and the molecular bonds become weak. They start to move rolling upon one another and we call it a liquid. If the temperature is increased further, the molecules start to move freely. We called it a gas. Now we observe this more deeply and we will be introduced to different quantities which are related to the change of state of matter.\n\nWhen heat is applied to a solid, its temperature goes up. (we will know later at what rate the temperature will rise and on what factor it depends.)\n\nIf the temperature (at a definite pressure) reaches a definite value, the solid starts to melt. This process is called fusion and the temperature at which the fusion starts is called the melting point. If we continue to measure the temperature, surprisingly we will notice that when fusion has started, the temperature of the mixture of some amount of solid and some amount of liquid does not increase any more even if heat is applied (as shown in the figure 6.08). During this time the heat is used to loosen the intermolecular bonds of the molecules in the solid. So, the temperature cannot rise because applied heat cannot make the molecules move further. During fusion at a definite melting point the amount of heat which is used to convert the whole solid into liquid, is called the Latent Heat of Fusion.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 360,
+  "pdf_page_no": 365,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": "13.1",
+      "section_title": "n-type and p-type semiconductors",
+      "chunk_type": "theory",
+      "content_markdown": "Usually the electrons are bound to the atoms in semiconductors. With the increase of temperature, one or two electrons may become free. There are free electrons in conductors so the semiconductors may act as conductors to some extent. From the view point of physics it is an interesting phenomenon, but not very suitable for practical use. An interesting thing is done to make it more useful. Atoms with five electrons in its outer most shell, e.g., phosphorous are mixed with silicon crystal. Hence, the fifth electron of phosphorous becomes an extra electron. It is not necessary for the extra electron to be bound to the atoms of phosphorus. This electron behaves like free electrons by making the phosphorus atom a positive ion. It can be said that such phosphorus adding semiconductors act as conductors to a large extent, because there are some free electrons here to carry charges. The semiconductors made by mixing atoms having five electrons in the outer most shell like phosphorus are called n type semiconductors.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.1",
+      "section_title": "n-type and p-type semiconductors",
+      "chunk_type": "theory",
+      "content_markdown": "Now get ready to hear something more interesting. Instead of adding pentavalent impurity atoms, if we add atoms having three electrons (e.g. boron) in their outer most shells, to silicon, what will happen? Certainly, it is understood that there is an empty space in the orbit of a boron atom and this empty place can be occupied by a neighboring electron. Then an empty place will be created in the neighboring atom, this place again can be occupied by an electron of its neighboring atom, then an empty place also will be created there. Another way to see it is that an empty place with the lack of an electron is moving from atom to atom. It seems that it is one type of particle and its charge is positive. It is called a hole. That is, we can say that keeping a boron atom as a negative ion, this hole can move through the whole silicon crystal. That is, this semiconductor almost acts as a conductor and positively charged holes conduct electricity through it! When a semiconductor becomes a conductor by adding atoms having three electrons in their outer most shells, it is called a p-type semiconductor.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.1",
+      "section_title": "n-type and p-type semiconductors",
+      "chunk_type": "theory",
+      "content_markdown": "There were not so many uses of n type and p type semiconductors individually but when n type and p type semiconductors were combined together the greatest discovery of science and technology started.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 38,
+  "pdf_page_no": 43,
+  "chapter_no": 2,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৪. সার্বিক সেট $U = \\{x : x \\in N$ এবং $x \\le 6\\}$, $A = \\{x : x$ মৌলিক সংখ্যা এবং $x \\le 5\\}$, $B = \\{x : x$ জোড় সংখ্যা এবং $x \\le 6\\}$ এবং $C = A \\setminus B$\n\nক) $A^c$ নির্ণয় কর\nখ) দেখাও যে, $A \\cup B = (A \\setminus B) \\cup (B \\setminus A) \\cup (A \\cap B)$\nগ) দেখাও যে, $(A \\cap C) \\times B = (A \\times B) \\cap (C \\times B)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান:\n\nক) দেওয়া আছে, $U = \\{x : x \\in N$ এবং $x \\le 6\\} = \\{1, 2, 3, 4, 5, 6\\}$\n$A = \\{x : x$ মৌলিক সংখ্যা এবং $x \\le 5\\} = \\{2, 3, 5\\}$\n$\\therefore A^c = U \\setminus A = \\{1, 2, 3, 4, 5, 6\\} - \\{2, 3, 5\\} = \\{1, 4, 6\\}$\n\nখ) দেওয়া আছে,\n$B = \\{x : x$ জোড় সংখ্যা এবং $x \\le 6\\} = \\{2, 4, 6\\}$\n$\\therefore A \\cup B = \\{2, 3, 5\\} \\cup \\{2, 4, 6\\} = \\{2, 3, 4, 5, 6\\} \\cdots \\cdots (1)$\n$A \\setminus B = \\{2, 3, 5\\} - \\{2, 4, 6\\} = \\{3, 5\\}$\n$B \\setminus A = \\{2, 4, 6\\} - \\{2, 3, 5\\} = \\{4, 6\\}$\n$A \\cap B = \\{2, 3, 5\\} \\cap \\{2, 4, 6\\} = \\{2\\}$\n$\\therefore (A \\setminus B) \\cup (B \\setminus A) \\cup (A \\cap B) = \\{3, 5\\} \\cup \\{4, 6\\} \\cup \\{2\\} = \\{2, 3, 4, 5, 6\\} \\cdots \\cdots (2)$\nসুতরাং (1) ও (2) তুলনা করে পাই,\n$A \\cup B = (A \\setminus B) \\cup (B \\setminus A) \\cup (A \\cap B)$\n\nগ) (2) হতে পাই,\n$C = A \\setminus B = \\{3, 5\\}$\n$A \\cap C = \\{2, 3, 5\\} \\cap \\{3, 5\\} = \\{3, 5\\}$\n$\\therefore (A \\cap C) \\times B = \\{3, 5\\} \\times \\{2, 4, 6\\}$\n$= \\{(3, 2), (3, 4), (3, 6), (5, 2), (5, 4), (5, 6)\\} \\cdots \\cdots (3)$\n$A \\times B = \\{2, 3, 5\\} \\times \\{2, 4, 6\\}$\n$= \\{(2, 2), (2, 4), (2, 6), (3, 2), (3, 4), (3, 6), (5, 2), (5, 4), (5, 6)\\}$\n$C \\times B = \\{3, 5\\} \\times \\{2, 4, 6\\}$\n$= \\{(3, 2), (3, 4), (3, 6), (5, 2), (5, 4), (5, 6)\\}$\n$\\therefore (A \\times B) \\cap (C \\times B) = \\{(3, 2), (3, 4), (3, 6), (5, 2), (5, 4), (5, 6)\\}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 240,
+  "pdf_page_no": 245,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "mix gathers separately a little afar. As a result, the ore is separated from the gangue. The process is applied to separate the magnetic ores like chromites $\\text{FeO}\\cdot\\text{Cr}_2\\text{O}_3$, rutile $\\text{TiO}_2$, etc.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Chemical Method",
+      "chunk_type": "theory",
+      "content_markdown": "**Chemical Method:**\n\nThis method is applied if a particular substance undergoes a reaction with either of the ores or gangue. For example, to obtain aluminium oxide ores from bauxite, chemical method is applied. Bauxite contains a mix of iron oxide, titanium oxide, sand, impurities etc. Add sodium hydroxide solution.\n\n$(\\text{NaOH})$ with bauxite $(\\text{Al}_2\\text{O}_3\\cdot 2\\text{H}_2\\text{O})$ and heating that up to $1500-2000^\\circ\\text{C}$ will produce sodium aluminate $(\\text{NaAlO}_2)$:\n\n$$\\text{Al}_2\\text{O}_3\\cdot 2\\text{H}_2\\text{O} + 2\\text{NaOH} \\xrightarrow{\\Delta} 2\\text{NaAlO}_2 + 3\\text{H}_2\\text{O}$$\n\nWhen hot sodium aluminate is let to react with water, it produces aluminium hydroxide and sodium hydroxide. Sodium hydroxide is dissolved while Aluminium Oxide is collected in the container as residue.\n\n$$\\text{NaAlO}_2 + 2\\text{H}_2\\text{O} \\longrightarrow \\text{Al(OH)}_3 + \\text{NaOH}$$\n\nHeating the separated aluminium hydroxide at $1100^\\circ\\text{C}$ will produce pure aluminium oxide and water.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.06: Megnetic Seperation.",
+      "figure_no": "10.06",
+      "box_2d": [
+        113,
+        514,
+        372,
+        903
+      ],
+      "description": "Schematic diagram of magnetic separation process showing a moving belt with magnetic wheel separating magnetic and non-magnetic substances.",
+      "reading_order_anchor": "The process is applied to separate the magnetic ores like chromites"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 135,
+  "pdf_page_no": 140,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২০. $\\triangle ABC$ এর $D$ ও $E$ যথাক্রমে $AB$ ও $AC$ এর মধ্যবিন্দু এবং $\\angle B$ ও $\\angle C$ এর সমদ্বিখণ্ডকদ্বয় $O$ বিন্দুতে মিলিত হয়েছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উদ্দীপকের তথ্যগুলো চিত্রের মাধ্যমে প্রকাশ কর",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) প্রমাণ কর যে, $DE \\parallel BC$ এবং $DE = \\frac{1}{2}BC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) প্রমাণ কর যে, $\\angle BOC = 90^\\circ + \\frac{1}{2}\\angle A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২১. প্রমাণ কর যে, সমদ্বিবাহু ত্রিভুজের শিরঃকোণের সমদ্বিখণ্ডক ভূমিকেও সমদ্বিখণ্ডিত করে এবং ভূমির উপর লম্ব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২২. প্রমাণ কর যে, ত্রিভুজের মধ্যমাত্রয়ের সমষ্টি তার পরিসীমা অপেক্ষা ক্ষুদ্রতর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৩. এক পরিশ্রমী পিতা তার একমাত্র পুত্রকে ডেকে বললেন যে তিনি তার উপার্জিত অর্থ দিয়ে স্বর্ণ ক্রয় করে পার্শ্ববর্তী বনে লুকিয়ে রেখেছেন। স্বর্ণের অবস্থান সম্পর্কে পুত্র জিজ্ঞাসা করাতে তিনি জানালেন যে বনে একই রকম দেখতে দুইটি বৃক্ষ $A$ ও $B$ এবং একটি পাথর $S$ রয়েছে। $S$ থেকে $A$ তে পৌঁছে সমদূরত্ব লম্বালম্বিভাবে গিয়ে সে $C$ বিন্দু পাবে। এবার আবার $S$ থেকে $B$ তে এসে একইভাবে লম্বালম্বি সমদূরত্ব অতিক্রম করে $D$ বিন্দু পাবে। এবার $CD$ রেখার মধ্যবিন্দুতে স্বর্ণ পাওয়া যাবে। পুত্র বৃক্ষ $A$ ও $B$ পেলেও দুর্ভাগ্যজনকভাবে $S$ পেল না। সে কি স্বর্ণ খুঁজে পাবে? কীভাবে?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

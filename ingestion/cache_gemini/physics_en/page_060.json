@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 60,
+  "pdf_page_no": 65,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative question",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Creative question\n\n1. Rajib with his family members started for Jaflong in Sylhet by microbus. He recorded the magnitude of the velocity i.e. speed of the car from the speedometer after every $5\\text{ mins}$ throughout the journey. The magnitude of velocity he got per hour was $18, 36, 54, 54, 54, 36,$ and $18\\text{ kilometer}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is instantaneous speed?\n(b) Explain the acceleration of an object moving with uniform velocity.\n(c) Find the distance traveled by the car in the first $5\\text{ min}$.\n(d) Draw and explain the velocity-time graph from the collected data.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. An object of mass $m$ is moving with an acceleration $a$. Its initial velocity is $u$, final velocity $v$ and the distance travelled in time $t$ is $s$. The state of motion of the object is given in the table:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| No. of event | $u$ (m/s) | $V$ (m/s) | $t$ (s) | $s$ (m) | $a$ (m/s$^2$) |\n| --- | --- | --- | --- | --- | --- |\n| 1 | 10 | 30 | 5 | - | - |\n| 2 | 5 | 20 | 4 | 44 | 3 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Define acceleration.\n(b) Why is the acceleration due to gravity the example of uniform acceleration?\n(c) Calculate the value of $s$ for event no.1 in the table.\n(d) Comment on event two through mathematical analytical perspective.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

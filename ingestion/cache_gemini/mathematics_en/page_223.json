@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 223,
+  "pdf_page_no": 228,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Sometimes we use the ratio as an approximate measure. For example, the number of cars on the road at 10 A.M. is two times higher than the number of cars at 8 A.M. In this case, it is not necessary to know the exact number of cars to determine the ratio. Again, in many occasions, we say that the area of your house is three times to the area of mine. Also in this case, it is not necessary to know the exact area of the house. We use the concept of ratio in many other cases of practical life.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.1",
+      "section_title": "Proportion",
+      "chunk_type": "theory",
+      "content_markdown": "If four quantities (or numbers), are such that the ratio of the first and the second quantities is equal to the ratio of the third and the fourth quantities, those four quantities form a proportion. If $a, b, c, d$ are four such quantities, we write $a : b = c : d$. The four quantities need not to be of same kind. The two quantities of the ratio need to be of the same kind.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the above figure, let the bases of two triangles be $a$ and $b$, respectively and each of their height is $h$ unit. If the areas of these triangle are $A$ and $B$ square units, respectively, we can write.\n\n$$\\frac{A}{B} = \\frac{\\frac{1}{2}ah}{\\frac{1}{2}bh} = \\frac{a}{b}$$\n\nor, $A : B = a : b$\n\ni.e. the ratio of two areas is equal to the ratio of two bases.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2",
+      "section_title": "Continued proportion",
+      "chunk_type": "theory",
+      "content_markdown": "By continued proportion of $a, b, c$, it is meant that $a : b = b : c$. $a, b, c$ will be in continued proportion, if and only if $b^2 = ac$. In case of continued proportional, all the quantities are to be of same kind. In this case, $c$ is called the third proportional of $a$ and $b$, and $b$ is called the mid-proportional of $a$ and $c$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.01: Two triangles with bases a and b",
+      "figure_no": "11.01",
+      "box_2d": [
+        429,
+        339,
+        533,
+        659
+      ],
+      "description": "Two triangles labeled A and B with bases a and b respectively.",
+      "reading_order_anchor": "In the above figure, let the bases of two triangles be a and b, respectively and each of their height is h unit."
+    }
+  ]
+}

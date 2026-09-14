@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 39,
+  "pdf_page_no": 44,
+  "chapter_no": 2,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= \\{(2,2), (2,4), (2,6), (3, 2), (3,4), (3,6), (5,2), (5, 4), (5, 6)\\}$$\n$$\\cap \\{(3, 2), (3,4), (3, 6), (5, 2), (5,4), (5, 6)\\}$$\n$$= \\{(3,2), (3,4), (3,6), (5, 2), (5,4), (5,6)\\} \\cdots \\cdots (4)$$\nসুতরাং (3) ও (4) তুলনা করে পাই,\n$$(A \\cap C) \\times B = (A \\times B) \\cap (C \\times B)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৫. $A = \\{4, 5, 6, 7\\}$, $B = \\{0, 1, 2, 3\\}$ এবং $R = \\{(x, y) : x \\in A, y \\in A$ এবং $y = x + 1\\}$\n\nক) দেখাও যে, $A$ ও $B$ সেটদ্বয় পরস্পর নিশ্ছেদ সেট।\n\nখ) $P(B)$ নির্ণয় করে দেখাও যে $P(B)$ এর উপাদান সংখ্যা $2^n$ কে সমর্থন করে, যেখানে $n, B$ এর উপাদান সংখ্যা।\n\nগ) $R$ অন্বয়টিকে তালিকা পদ্ধতিতে প্রকাশ করে তার ডোমেন নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান:\n\nক) দেওয়া আছে, $A = \\{4, 5, 6, 7\\}$ এবং $B = \\{0, 1, 2, 3\\}$\n$$\\therefore A \\cap B = \\{4, 5, 6, 7\\} \\cap \\{0, 1, 2, 3\\} = \\emptyset$$\nযেহেতু $A \\cap B = \\emptyset$\nসুতরাং, $A$ ও $B$ সেটদ্বয় পরস্পর নিশ্ছেদ সেট।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "খ) দেওয়া আছে,\n$B = \\{0, 1, 2, 3\\}$\n$$\\therefore P(B) = \\{\\{0\\}, \\{1\\}, \\{2\\}, \\{3\\}, \\{0, 1\\}, \\{0, 2\\}, \\{0, 3\\}, \\{1, 2\\}, \\{1, 3\\}, \\{2, 3\\},$$\n$$\\{0, 1, 2\\}, \\{0, 1, 3\\}, \\{0, 2, 3\\}, \\{1, 2, 3\\}, \\{0, 1, 2, 3\\}, \\emptyset\\}$$\nএখানে $B$ এর উপাদান সংখ্যা 4 এবং এর শক্তি সেটের উপাদান সংখ্যা $2^4 = 16$\n$$\\therefore B$ এর উপাদান সংখ্যা $n$ হলে এর শক্তি সেটের উপাদান সংখ্যা হবে $2^n$।\n$$\\therefore P(B)$ এর উপাদান সংখ্যা $2^n$ সূত্রকে সমর্থন করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গ) দেওয়া আছে, $R = \\{(x, y) : x \\in A, y \\in A$ এবং $y = x + 1\\}$ এবং $A = \\{4, 5, 6, 7\\}$\n$R$ এর বর্ণিত শর্ত থেকে পাই, $y = x + 1$\nএখন, প্রত্যেক $x \\in A$ এর জন্য $y = x + 1$ এর মান নির্ণয় করে একটি তালিকা তৈরি করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | 4 | 5 | 6 | 7 |\n|---|---|---|---|---|\n| $y$ | 5 | 6 | 7 | 8 |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

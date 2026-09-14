@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 355,
+  "pdf_page_no": 360,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "table is made. In the context of the above discussion, the cumulative frequency distribution of temperature in Example 1 is as follows:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Temperature (in celcius) | Frequency | Cumulative Frequency |\n| :--- | :--- | :--- |\n| $6^\\circ - 8^\\circ$ | 11 | 11 |\n| $9^\\circ - 11^\\circ$ | 13 | $(11 + 13) = 24$ |\n| $12^\\circ - 14^\\circ$ | 7 | $(24 + 7) = 31$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 2.** The marks obtained in English by 40 students in an annual examination are given below. Make a cumulative frequency table of the marks obtained.\n\n70, 40, 35, 60, 55, 58, 45, 60, 65, 80, 70, 46, 50, 60, 65, 70, 58, 60, 48, 70, 36, 85, 60, 50, 46, 65, 55, 61, 72, 85, 90, 68, 65, 50, 40, 56, 60, 65, 46, 76",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Solution:**\nRange of the data = (highest numerical value $-$ lowest numerical value) $+ 1 = (90 - 35) + 1 = 55 + 1 = 56$\n\nLet the class interval be 5 then the number of classes = $\\frac{56}{5} = 11.2$ or $12$ [taking the immediate next integer when class interval is fractional]\n\nHence the cumulative frequency distribution table at a class interval of 5 will be as follows:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Obtained marks | Tally | Frequency | Cumulative frequency |\n| :--- | :--- | :--- | :--- |\n| $35 - 39$ | $||$ | 2 | 2 |\n| $40 - 44$ | $||$ | 2 | $2 + 2 = 4$ |\n| $45 - 49$ | $|||||$ | 5 | $5 + 4 = 9$ |\n| $50 - 54$ | $|||$ | 3 | $3 + 9 = 12$ |\n| $55 - 59$ | $|||||$ | 5 | $5 + 12 = 17$ |\n| $60 - 64$ | $||||| ||$ | 7 | $7 + 17 = 24$ |\n| $65 - 69$ | $||||| |$ | 6 | $6 + 24 = 30$ |\n| $70 - 74$ | $|||||$ | 5 | $5 + 30 = 35$ |\n| $75 - 79$ | $|$ | 1 | $1 + 35 = 36$ |\n| $80 - 84$ | $|$ | 1 | $1 + 36 = 37$ |\n| $85 - 89$ | $||$ | 2 | $2 + 37 = 39$ |\n| $90 - 94$ | $|$ | 1 | $1 + 39 = 40$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Variable:** We know that the numerical information is the data of statistics. The numbers used in data are variable. Such as, in example 1 the numbers indicating",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 227,
+  "pdf_page_no": 232,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In equation (3), by putting $b = 10$, we get $a = \\frac{7 \\times 10}{2} = 35$.\n\n$\\therefore$ The present age of father is 35 years, and that of the son is 10 years.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. If $a : b = b : c$, prove that, $\\left( \\frac{a + b}{b + c} \\right)^2 = \\frac{a^2 + b^2}{b^2 + c^2}$\n\nSolution: Given that, $a : b = b : c$\n\n$\\therefore b^2 = ac$\n\nNow, $\\left( \\frac{a + b}{b + c} \\right)^2 = \\frac{(a + b)^2}{(b + c)^2}$\n\n$= \\frac{a^2 + 2ab + b^2}{b^2 + 2bc + c^2}$\n\n$= \\frac{a^2 + 2ab + ac}{ac + 2bc + c^2}$\n\n$= \\frac{a(a + 2b + c)}{c(a + 2b + c)}$\n\n$= \\frac{a}{c}$\n\nAnd, $\\frac{a^2 + b^2}{b^2 + c^2} = \\frac{a^2 + ac}{ac + c^2}$\n\n$= \\frac{a(a + c)}{c(a + c)}$\n\n$= \\frac{a}{c}$\n\n$\\therefore \\left( \\frac{a + b}{b + c} \\right)^2 = \\frac{a^2 + b^2}{b^2 + c^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. If $\\frac{a}{b} = \\frac{c}{d}$, show that, $\\frac{a^2 + b^2}{a^2 - b^2} = \\frac{ac + bd}{ac - bd}$\n\nSolution: Let, $\\frac{a}{b} = \\frac{c}{d} = k$\n\n$\\therefore a = bk$ and $c = dk$\n\nNow, $\\frac{a^2 + b^2}{a^2 - b^2} = \\frac{(bk)^2 + b^2}{(bk)^2 - b^2} = \\frac{b^2(k^2 + 1)}{b^2(k^2 - 1)} = \\frac{k^2 + 1}{k^2 - 1}$\n\nAnd, $\\frac{ac + bd}{ac - bd} = \\frac{bk \\cdot dk + bd}{bk \\cdot dk - bd} = \\frac{bd(k^2 + 1)}{bd(k^2 - 1)} = \\frac{k^2 + 1}{k^2 - 1}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

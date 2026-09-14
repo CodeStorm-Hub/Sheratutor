@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 86,
+  "pdf_page_no": 91,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Table 5.02: Valency of Different Elements.",
+      "chunk_type": "table",
+      "content_markdown": "### Table 5.02: Valency of Different Elements.\n\n| Element | Valency | Element | Valency | Element | Valency |\n| --- | --- | --- | --- | --- | --- |\n| H | 1 | Na | 1 | Fe | 2, 3 |\n| F | 1 | K | 1 | Cu | 1, 2 |\n| Cl | 1 | C | 2, 4 | Zn | 2 |\n| Br | 1 | Mg | 2 | | |\n| I | 1 | Al | 3 | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Table 5.03: Valency and Compounds of Various Atoms.",
+      "chunk_type": "table",
+      "content_markdown": "### Table 5.03: Valency and Compounds of Various Atoms.\n\n| Metallic and Non-metallic Atom | Symbol | Valency | Compound | Metallic and Non-metallic Atom | Symbol | Valency | Compound |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| Hydrogen | H | 1 | $\\text{HCl}$ | Silver | $\\text{Ag}$ | 1 | $\\text{AgCl}$ |\n| Lithium | Li | 1 | $\\text{LiCl}$ | Fluorine | F | 1 | $\\text{NaF}$ |\n| Sodium | Na | 1 | $\\text{NaCl}$ | Chlorine | $\\text{Cl}$ | 1 | $\\text{NaCl}$ |\n| Potassium | K | 1 | $\\text{KCl}$ | Bromine | Br | 1 | $\\text{NaBr}$ |\n| Magnesium | Mg | 2 | $\\text{MgCl}_2$ | Iodine | I | 1 | $\\text{NaI}$ |\n| Calcium | Ca | 2 | $\\text{CaCl}_2$ | Boron | B | 3 | $\\text{BCl}_3$ |\n| Aluminum | Al | 3 | $\\text{AlCl}_3$ | Phosphorus | P | 3, 5 | $\\text{PCl}_3$, $\\text{PCl}_5$ |\n| Iron | Fe | 2, 3 | $\\text{FeCl}_2$, $\\text{FeCl}_3$ | Copper | Cu | 1, 2 | $\\text{CuCl}$, $\\text{CuCl}_2$ |\n| Zinc | Zn | 2 | $\\text{ZnCl}_2$ | Oxygen | O | 2 | $\\text{H}_2\\text{O}$ |\n| Lead | Pb | 2, 4 | $\\text{PbCl}_2$, $\\text{PbCl}_4$ | Carbon | C | 2, 4 | $\\text{CO}$, $\\text{CH}_4$ |\n| Nitrogen | N | 3, 5 | $\\text{NH}_3$, $\\text{N}_2\\text{O}_5$ | Sulfur | S | 2, 4, 6 | $\\text{H}_2\\text{S}$, $\\text{SO}_2$, $\\text{SO}_3$ |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

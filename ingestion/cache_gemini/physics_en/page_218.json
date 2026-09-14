@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 218,
+  "pdf_page_no": 223,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Absorption",
+      "chunk_type": "theory",
+      "content_markdown": "Much of the beauty of the world around us comes from different colors. But how does the color appear? Why is the color of a rose red and a leaf green? You will be even more surprised to see a red rose as black under green light or a green leaf as black under red light!\n\nThis is actually very easy to explain; in visible light (sometimes called white light) every wavelength is present. Since colors depend on the wavelength of light, it can be said that light of all colors are present there. When all colors are present together, then individual colors are not seen separately- then we say the light is colorless or white light. When this light falls upon a red rose, then the rose absorbs all the colors except red. The light that reflects and come to our eyes, only has red and we see the rose appears as red.\n\nSimilarly, when light of all colors falls upon a green leaf, it reflects only green light and absorbs others, so we see the color of the leaf as green. (Figure 8.06)\n\nIf the rose and leaf are seen under full red light then the flower will appear red as it does not absorb red color but the leaf will appear black. Because the leaf will absorb the color red and will not reflect any color. So we will see the leaf as black. Similarly, under green light we will see the leaf green but the rose black. Because the red rose will absorb the green light totally and no light will be reflected from the rose, so it looks black.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.06: Absorbing all colors which colour is reflected by an object that is considered its color.",
+      "figure_no": "8.06",
+      "box_2d": [
+        300,
+        482,
+        558,
+        882
+      ],
+      "description": "Diagram showing white light falling on a red rose with green leaves, reflecting red light from the rose and green light from the leaves.",
+      "reading_order_anchor": "Absorption"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 199,
+  "pdf_page_no": 204,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "A B C D E",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.3",
+      "section_title": "Sound Wave",
+      "chunk_type": "theory",
+      "content_markdown": "To produce sound waves a source is needed, a medium to send it through, and any type of receiver to receive that sound. There are many sources of sound around us. Obviously, the most familiar source is our throat; sound is created by the vibration of the vocal cord when air flows through it in our throat. We will feel the vibration if we touch our throat during conversation.\n\nCertainly you have noticed that the voice of a male is deep and the voice of female and children is sharp. When we make a sound then air comes out through throat from our lungs. In our throat there is a wind pipe through which air enters the lungs and come out from the lungs. To produce sound larynx is situated upon it. There are two membranes which work as valves, called the vocal cords. These vibrate during the flow of air and produce sound. The vocal cords of males become stiff with the increasing of age, whereas for females it remains soft. This is why males produce sound of low frequency and females produce sound of high frequency. Due to this, the voice of males is deep and that of the females is high pitched.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Cut a piece of paper as shown in Figure 7.10. Placing it between the two fingers, blow, keeping it on your mouth. The two pieces of paper will vibrate like vocal cords of the larynx and produce a sound. Cut the paper in different ways and try to produce different kinds of sounds.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.09: Phase of a wave at different position",
+      "figure_no": "7.09",
+      "box_2d": [
+        122,
+        344,
+        281,
+        683
+      ],
+      "description": "A sine wave graph showing different phases labeled A, B, C, D, and E along the horizontal axis.",
+      "reading_order_anchor": "Sound Wave"
+    }
+  ]
+}

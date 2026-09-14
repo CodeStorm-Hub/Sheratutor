@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 143,
+  "pdf_page_no": 148,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": "5.4",
+      "section_title": "Air Pressure",
+      "chunk_type": "theory",
+      "content_markdown": "Air has a certain pressure (Figure: 5.06). We do not feel this pressure distinctly because a pressure is also exerted outside from inside of our bodies. So these two pressures neutralize one another. There is no air in space, so there is no pressure of air, so there is nothing to neutralize the inner pressure of our body and in such an environment human bodies may explode instantly due to this inner pressure. For this reason the astronauts always wear pressure protected space suits. The pressure on the earth surface is $10^5\\text{ N/m}^2$, which means if you imagine an area of $1\\text{ m}^2$ on the earth surface, then the weight of the column of air on it is $10^5\\text{ N}$, this is approximately the weight of an elephant !\n\nHere, you have to understand something very clearly. It is true, weight is a force and this force acts downwards. Force is a vector, so it has both magnitude and direction. Pressure is not a vector, it has no direction, so it is same in all directions at any place. The place where you are standing or sitting now, the pressure which air exerts on you is the same in left, right, up, down or in all directions. It is true for air or liquid for all times.\n\nIf an air-tight casket made of thin tin or aluminum can be made airless in any way, then it will be folded or twisted, because in normal condition, the outer air pressure was balanced by inner air pressure of the casket in turn. After evacuating the inside air by pumping, there is nothing inside to resist the outer air pressure. So the outer air pressure will twist the casket (figure 5.07).",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.06: The pressure of air comes from the weight of the air column.",
+      "figure_no": "5.06",
+      "box_2d": [
+        546,
+        687,
+        786,
+        810
+      ],
+      "description": "Diagram of an air column over a 1m by 1m area representing atmospheric pressure.",
+      "reading_order_anchor": "Air has a certain pressure (Figure: 5.06)."
+    }
+  ]
+}

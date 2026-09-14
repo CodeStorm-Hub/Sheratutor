@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 244,
+  "pdf_page_no": 249,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Write down five solutions for each of the two equations $x - 2y + 1 = 0$ and $2x + y - 3 = 0$ so that among the solutions, the common solution also exists.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Conformability for the solution of simple simultaneous equations in two variables",
+      "chunk_type": "theory",
+      "content_markdown": "1) As discussed earlier, the system of equations $\\begin{cases} 2x + y = 12 \\\\ x - y = 3 \\end{cases}$ has unique (only one) solution. Such systems of equations are called consistent. Comparing the coefficient of $x$ and $y$ (taking the ratio of the coefficients) of the two equations, we get, $\\frac{2}{1} \\neq \\frac{1}{-1}$; any equation of the system of equations cannot be expressed in terms of the other. That is why, such systems of equations are called mutually independent. In the case of consistent and mutually independent system of equations, the ratios are not equal. In this case, the constant terms need not to be compared.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2) Now we shall consider the system of equations $\\begin{cases} 2x - y = 6 \\\\ 4x - 2y = 12 \\end{cases}$. Can these two equations be solved?\n\nHere, if both sides of first equation are multiplied by 2, we shall get the second equation. Again, if both sides of second equation are divided by 2, we shall get the first equation. That is, the two equations are mutually dependent.\n\nWe know, the first equation has infinite number of solutions. So, the second equation has also the same infinite number of solutions. Such systems of equations are called consistent and mutually dependent. Such systems of equations have infinite number of solutions. Here, comparing the coefficients of $x$ and $y$, and the constant terms of the two equations, we get, $\\frac{2}{4} = \\frac{-1}{-2} = \\frac{6}{12} \\left( = \\frac{1}{2} \\right)$.\n\nThat is, in the case of the system of such simultaneous equations, the ratios become equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3) Now, we shall try to solve the system of equations $\\begin{cases} 2x + y = 12 \\\\ 4x + 2y = 5 \\end{cases}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

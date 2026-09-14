@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 321,
+  "pdf_page_no": 326,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩০. একটি সমবৃত্তভূমিক বেলনের উচ্চতা $10$ সে.মি. এবং ভূমির ব্যাসার্ধ $7$ সে.মি. হলে, এর আয়তন এবং সম্পূর্ণ পৃষ্ঠের ক্ষেত্রফল নির্ণয় কর।\n\nসমাধান: মনে করি, সমবৃত্তভূমিক বেলনের উচ্চতা $h = 10$ সে.মি. এবং ভূমির ব্যাসার্ধ $r = 7$ সে.মি.\n\n$\\therefore$ এর আয়তন $= \\pi r^2 h$\n\n$= 3.1416 \\times 7^2 \\times 10 = 1539.38$ ঘন সে.মি.(প্রায়)\n\nএবং সমগ্র পৃষ্ঠের ক্ষেত্রফল $= 2\\pi r(r + h)$\n\n$= 2 \\times 3.1416 \\times 7(7 + 10) = 747.7$ বর্গসে.মি. (প্রায়)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: একটি আয়তাকার কাগজের পাতা মুড়িয়ে একটি সমবৃত্তভূমিক সিলিন্ডার তৈরি কর। এর পৃষ্ঠতলের ক্ষেত্রফল এবং আয়তন নির্ণয় কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উদাহরণ ৩১. ঢাকনাসহ একটি বাক্সের বাইরের মাপ যথাক্রমে $10$ সে.মি., $9$ সে.মি. ও $7$ সে.মি.। বাক্সটির ভিতরের সমগ্র পৃষ্ঠের ক্ষেত্রফল $262$ বর্গ সে. মি. এবং বাক্সের পুরুত্ব সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) বাক্সটির আয়তন নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) বাক্সটির দেওয়ালের পুরুত্ব নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) বাক্সটির বৃহত্তম দৈর্ঘ্যের সমান বাহুবিশিষ্ট কোনো রম্বসের একটি কর্ণ $16$ সে.মি. হলে রম্বসটির ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\n\nক) বাক্সটির বাইরের মাপ যথাক্রমে $10$ সে.মি., $9$ সে.মি. ও $7$ সে.মি.\n\n$\\therefore$ বাক্সটির বাইরের আয়তন $= 10 \\times 9 \\times 7 = 630$ ঘন সে.মি.।\n\nখ) মনে করি, বাক্সের পুরুত্ব $x$। ঢাকনাসহ বাক্সের বাইরের মাপ যথাক্রমে $10$ সে.মি., $9$ সে.মি. ও $7$ সে.মি.\n\n$\\therefore$ বাক্সের ভিতরের মাপ যথাক্রমে $a = (10 - 2x)$ সে.মি., $b = (9 - 2x)$ সে.মি. এবং $c = (7 - 2x)$ সে.মি.\n\nবাক্সের ভিতরের সমগ্র তলের ক্ষেত্রফল $= 2(ab + bc + ca)$\n\nপ্রশ্নানুসারে, $2(ab + bc + ca) = 262$\n\nবা, $(10 - 2x)(9 - 2x) + (9 - 2x)(7 - 2x) + (7 - 2x)(10 - 2x) = 131$\n\nবা, $90 - 38x + 4x^2 + 63 - 32x + 4x^2 + 70 - 34x + 4x^2 - 131 = 0$\n\nবা, $12x^2 - 104x + 92 = 0$\n\nবা, $3x^2 - 26x + 23 = 0$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

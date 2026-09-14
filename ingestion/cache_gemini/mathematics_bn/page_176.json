@@ -1,0 +1,81 @@
+{
+  "printed_page_no": 176,
+  "pdf_page_no": 181,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$7, 24, 25$$ ত্রিভুজ চিত্র:\n\nসমাধান:\n\nক) $\\alpha$ কোণের জন্য\nঅতিভুজ $25$ একক\nবিপরীত বাহু $24$ একক\nসন্নিহিত বাহু $7$ একক\n\nখ) $\\beta$ কোণের জন্য\nঅতিভুজ $25$ একক\nবিপরীত বাহু $7$ একক\nসন্নিহিত বাহু $24$ একক",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ: $\\theta$ ও $\\phi$ কোণের জন্য অতিভুজ, সন্নিহিত বাহু ও বিপরীত বাহু নির্দেশ কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সদৃশ সমকোণী ত্রিভুজের বাহুগুলোর অনুপাতসমূহের ধ্রুবতা",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ: নিচের চারটি সদৃশ সমকোণী ত্রিভুজের বাহুগুলোর দৈর্ঘ্য মেপে সারণিটি পূরণ কর। ত্রিভুজের অনুপাতগুলো সম্পর্কে কী লক্ষ কর?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| বাহুর দৈর্ঘ্য | | | অনুপাত (কোণের সাপেক্ষে) | | |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| $BC$ | $AB$ | $AC$ | $BC/AC$ | $AB/AC$ | $BC/AB$ |\n| | | | | | |\n| | | | | | |\n| | | | | | |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০১: সমকোণী ত্রিভুজ",
+      "figure_no": "9.01",
+      "box_2d": [
+        88,
+        350,
+        165,
+        622
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ যার বাহুগুলো ৭, ২৪ এবং ২৫ একক এবং কোণগুলো আলফা ও বিটা।",
+      "reading_order_anchor": "সমাধান:"
+    },
+    {
+      "caption": "চিত্র ৯.০২: বিভিন্ন সমকোণী ত্রিভুজ",
+      "figure_no": "9.02",
+      "box_2d": [
+        315,
+        312,
+        475,
+        688
+      ],
+      "description": "ছয়টি ভিন্ন ভিন্ন সমকোণী ত্রিভুজ (a) থেকে (f) যেখানে থিটা ও ফাই কোণ নির্দেশিত আছে।",
+      "reading_order_anchor": "কাজ: $\\theta$ ও $\\phi$ কোণের জন্য অতিভুজ, সন্নিহিত বাহু ও বিপরীত বাহু নির্দেশ কর।"
+    },
+    {
+      "caption": "চিত্র ৯.০৩: সদৃশ সমকোণী ত্রিভুজসমূহ",
+      "figure_no": "9.03",
+      "box_2d": [
+        685,
+        185,
+        815,
+        815
+      ],
+      "description": "চারটি সদৃশ সমকোণী ত্রিভুজ (i), (ii), (iii), (iv) যাদের বাহুর দৈর্ঘ্য পরিমাপের জন্য সারণি দেওয়া হয়েছে।",
+      "reading_order_anchor": "কাজ: নিচের চারটি সদৃশ সমকোণী ত্রিভুজের বাহুগুলোর দৈর্ঘ্য মেপে সারণিটি পূরণ কর।"
+    }
+  ]
+}

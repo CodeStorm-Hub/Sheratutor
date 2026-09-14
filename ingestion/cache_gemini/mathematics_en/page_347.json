@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 347,
+  "pdf_page_no": 352,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "1. Area of the base = $\\pi r^2$\n2. Area of the curved surface = perimeter of the base $\\times$ height = $2\\pi rh$\n3. Area of the whole surface = $(\\pi r^2 + 2\\pi rh + \\pi r^2) = 2\\pi r(r + h)$\n4. Volume = Area of the base $\\times$ height = $\\pi r^2h$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 30. If the height of a right circular cylinder is $10\\text{ cm}$ and radius of the base is $7\\text{ cm}$, determine its volume and the area of the whole surface.\n\nSolution: Let, the height of the right circular cylinder is $h = 10\\text{ cm}$ and radius of the base is $r$.\n\n$\\therefore$ Its volume = $\\pi r^2h$\n$= 3.1416 \\times 7^2 \\times 10 = 1539.38\\text{ cube cm (approx.)}$\n\nand the area of the whole surface = $2\\pi r(r + h)$\n$= 2 \\times 3.1416 \\times 7(7 + 10) = 747.7\\text{ square metre (approx.)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Make a right circular cylinder using a rectangular paper. Determine the area of its whole surface and the volume.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 31. The outer measurements of a box with its top are $10\\text{ cm}$, $9\\text{ cm}$ and $7\\text{ cm}$ respectively and the area of the whole inner surface is $262\\text{ square metre}$ and the thickness of its wall is uniform on all sides.\n\n1) Find the volume of the box.\n2) Find the thickness of its wall.\n3) If the length of a diagonal of a rhombus having sides equal to the largest length of the box is $16\\text{ cm}$, then find its area.\n\nSolution:\n1) The outer measurements of the box with top are $10\\text{ cm}$, $9\\text{ cm}$ and $7\\text{ cm}$.\n$\\therefore$ The outer volume of the box = $10 \\times 9 \\times 7 = 630\\text{ cube cm}$\n\n2) Let, the thickness of the box is $x$. The outer measurements of the box with top are $10\\text{ cm}$, $9\\text{ cm}$, $7\\text{ cm}$.\n$\\therefore$ The inside measurements of the box are respectively $a = (10 - 2x)$, $b = (9 - 2x)$ and $c = (7 - 2x)\\text{ cm}$.\nThe area of the whole surface of the inner side of the box = $2(ab + bc + ca)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

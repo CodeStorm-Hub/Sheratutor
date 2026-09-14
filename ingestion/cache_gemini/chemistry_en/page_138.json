@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 138,
+  "pdf_page_no": 143,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Determination of percent composition of lattice water of hydrated copper sulphate.",
+      "chunk_type": "theory",
+      "content_markdown": "**Principle:** Blue vitriol's chemical name is pentahydrate copper sulphate. Its formula is $\\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O}$. Blue vitriol consists of copper sulphate and 5 molecules of water. It is a blue colored crystal lattice. There are five moles water in it. If heat is applied, that water vaporizes and its colour turns into white. These five moles of water are called crystal water.\n\n$$\\text{CuSO}_4 \\cdot 5\\text{H}_2\\text{O} \\xrightarrow{\\Delta} \\text{CuSO}_4 + 5\\text{H}_2\\text{O}$$\n\n**Ingredients:** Copper sulphate, desiccators, chemical balance, ceramic bowl, tripod stand, net, Bunsen burner/spirit lamp\n\n**Procedure**\n\n1. Weigh the porcelain bowl on the balance. Suppose, the weight is $a$ gram. Now take some copper sulphate in the bowl and weigh it again. Let's say, the weight now is $b$ gram. Therefore, the mass of copper sulphate is $(b-a)$ gram.\n\n2. Fix the net on a tripod stand and put the bowl containing copper sulphate on it. Heat it with a Bunsen burner or spirit lamp.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.04: Determination of lattice water in Blue vitriol.",
+      "figure_no": "6.04",
+      "box_2d": [
+        542,
+        487,
+        788,
+        891
+      ],
+      "description": "Apparatus setup for heating blue vitriol in a porcelain bowl on a wire gauze resting on a tripod stand, heated by a Bunsen burner.",
+      "reading_order_anchor": "Procedure"
+    }
+  ]
+}

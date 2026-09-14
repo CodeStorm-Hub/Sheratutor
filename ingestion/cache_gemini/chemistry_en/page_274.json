@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 274,
+  "pdf_page_no": 279,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Addition of water:** At high temperature and high pressure alkene reacts with water vapours in the presence of phosphoric acid to produce alcohol.\n\n$$\\text{CH}_2=\\text{CH}_2 + \\text{H}_2\\text{O} \\xrightarrow[\\text{phosphoric acid}]{\\text{high temperature and high pressure}} \\text{CH}_3-\\text{CH}_2\\text{OH}$$\n$$\\text{Ethene} \\quad \\text{Water} \\quad \\text{Ethanol}$$\n\nAlcohol is used as an environment-friendly fuel and a solvent in petroleum industries. So this reaction is very significant.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Addition of bromine:** When a solution of red coloured bromine is added to Ethene, Ethene reacts with the solution and produces dibromo ethane. In this reaction the red colour of bromine disappears. All unsaturated hydrocarbons show this reaction. This reaction proves that ethene is an unsaturated compound.\n\n$$\\text{CH}_2=\\text{CH}_2 + \\text{Br}_2 \\longrightarrow \\text{CH}_2\\text{Br}-\\text{CH}_2\\text{Br}$$\n$$\\text{Ethane} \\quad \\text{Bromine} \\quad \\text{Dibromo ethane}$$,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Oxidization by Potassium Permanganate (Active or Nascent Oxygen):** Ethylene glycol is produced when pink coloured solution of potassium permanganate and potassium hydroxide are added to ethene. In this reaction the pink colour of potassium permanganate disappears. All unsaturated hydrocarbons show this reaction. This reaction proves that ethene is an unsaturated compound.\n\n$$\\text{CH}_2=\\text{CH}_2 + \\text{H}_2\\text{O} + [\\text{O}] \\xrightarrow[\\text{KOH}]{\\text{KMnO}_4} \\text{CH}_2\\text{OH}-\\text{CH}_2\\text{OH}$$\n$$\\text{Ethane} \\quad \\text{Water} \\quad \\text{Ethylene glycol}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Polymerization of Ethene:** Polythene is produced when ethene is heated at $1000\\text{ atm}$ and $200^\\circ\\text{C}$ temperature in the presence of a little amount of oxygen. This reaction is called polymerization and in this reaction, Ethene is called monomer.\n\n$$n\\text{CH}_2=\\text{CH}_2 \\xrightarrow[\\text{a little amount of oxygen}]{\\text{1000 atm, } 200^\\circ\\text{C temperature}} (-\\text{CH}_2-\\text{CH}_2-)_n$$\n$$\\text{Ethane} \\quad \\text{Polythene}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

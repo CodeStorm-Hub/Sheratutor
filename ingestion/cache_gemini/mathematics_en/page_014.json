@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 14,
+  "pdf_page_no": 19,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 12. Subtract $5.24\\dot{6}7\\dot{3}$ from $8.2\\dot{4}\\dot{3}$.\n\nSolution: Here number of digits in nonrepeating part should be 2 and that in repeating part should be 6, LCM of 2 and 3. Now the numbers have been converted into similar numbers, and subtraction has been performed as follows:\n\n$$8.2\\dot{4}\\dot{3} = 8.24343434$$\n$$5.24\\dot{6}7\\dot{3} = 5.24673673$$\n\n$$\\begin{array}{r@{\\quad}l} 2.99669761 & [\\text{subtracting 6 from 3 results in 1 in hand}] \\\\ -1 & \\\\ \\hline 2.99669760 \\end{array}$$\n\nThe desired result is $2.99669760$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks: If the minuend starting at the repeating dot is smaller than the subtrahend, we must subtract 1 from the rightmost digit.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note: In the following is explained why 1 is subtracted from the rightmost digit in different way.\n\n$$8.2\\dot{4}\\dot{3} = 8.24343434|34$$\n$$5.24\\dot{6}7\\dot{3} = 5.24673673|67$$\n\n$$2.99669760|67$$\n\nThe desired result is $2.99669760|67$. We have obtained the same results in both the cases.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 13. Subtract $16.4\\dot{3}\\dot{7}$ from $24.45\\dot{6}4\\dot{5}$.\n\nSolution:\n\n$$24.45\\dot{6}4\\dot{5} = 24.45645$$\n$$16.4\\dot{3}\\dot{7} = 16.43743$$\n\n$$\\begin{array}{r@{\\quad}l} 8.01902 & [\\text{if 7 is subtracted from 6, we have 1 in hand}] \\\\ -1 & \\\\ \\hline 8.01901 \\end{array}$$\n\nThe desired result is $8.01901$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note: In the following is explained why 1 is subtracted from the rightmost digit in different way.\n\n$$24.45\\dot{6}4\\dot{5} = 24.45645|64$$\n$$16.4\\dot{3}\\dot{7} = 16.43743|74$$\n\n$$8.01901|90$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

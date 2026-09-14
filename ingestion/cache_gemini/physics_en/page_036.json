@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 36,
+  "pdf_page_no": 41,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The vibrational motion of our heart is periodic, since it vibrates in the same direction in the same manner after a definite interval of time. The periodic motion may be circular (motion of the blades of a fan), hyperbolic (orbit of Haley's Comet around the sun) or linear (oscillatory motion of an object hanging from a spring).",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Simple Harmonic Motion",
+      "chunk_type": "theory",
+      "content_markdown": "Simple harmonic motion is a special type of periodic motion. In case of oscillatory motion the object oscillates on both sides of a definite point. This specific point is called the equilibrium point. At the extreme ends of its path, the particle's velocity is zero. As the particle moves from one end toward the equilibrium point, its velocity gradually increases, reaching a maximum at the equilibrium point. As it continues toward the opposite end, its velocity decreases gradually until it again becomes zero. The particle then reverses direction, moving back in the same manner until it reaches the original end and briefly stops. This entire process takes one period. This pattern of the motion gets repeated.\n\nThere are so many examples of oscillatory motion around us. The motion of an object hanging from a spring is an example of oscillatory motion. The oscillatory baby on a swing (Figure 2.02) or the pendulum of a clock are the examples of oscillatory motion. When we speak, the air molecules carry the sound forward by this type of motion.\n\nSo far we have discussed some special types of motion but the causes of these motions have not been mentioned anywhere. The major success of physics is that not only can it find the causes of the different types of motion of objects but it can also explain the motion very clearly.\n\nCan you guess the cause of the motion?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.02 : Example of simple harmonic motion",
+      "figure_no": "2.02",
+      "box_2d": [
+        229,
+        292,
+        447,
+        707
+      ],
+      "description": "An illustration of a child swinging on a swing, representing simple harmonic motion.",
+      "reading_order_anchor": "Simple Harmonic Motion"
+    }
+  ]
+}

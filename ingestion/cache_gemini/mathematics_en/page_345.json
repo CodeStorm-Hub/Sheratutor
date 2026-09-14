@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 345,
+  "pdf_page_no": 350,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Area of the whole surface of the rectangular solid\n$= 2($ area of the surface of $ABCD +$ area of the surface of $ABGH +$ area of the surface of $BCFG)$\n$= 2(AB \\times AD + AB \\times AH + BC \\times BG)$\n$= 2(ab + ac + bc) = 2(ab + bc + ca)$\n\n3. Volume of the rectangular solid = length $\\times$ width $\\times$ height $= abc$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 28.** The length, width and height of a rectangular solid are 25 cm, 20 cm and 15 cm respectively. Determine its area of the whole surface, volume and the length of the diagonal.\n\n**Solution:** Let, the length of the rectangular solid is $a = 25$ cm, width $b = 20$ cm and height $c = 15$ cm\n$\\therefore$ Area of the whole surface of the rectangular solid $= 2(ab + bc + ca)$\n$= 2(25 \\times 20 + 20 \\times 15 + 15 \\times 25) = 2350$ square cm\nand Volume $= abc = 25 \\times 20 \\times 15 = 7500$ cube cm\nand length of its diagonal $= \\sqrt{a^2 + b^2 + c^2}$\n$= \\sqrt{25^2 + 20^2 + 15^2} = \\sqrt{625 + 400 + 225} = \\sqrt{1250} = 35.363$ cm (approx.)\n\nThe required area of the whole surface is 2350 square cm, volume 7500 cubic cm and length of its diagonal 35.363 cm (approx.).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Determine the volume, area of the whole surface and the length of the diagonal of your mathematics book after measuring its length, width and height.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Cube\nIf the length, width and height of a rectangular solid are equal, it is called a cube.\nLet, $ABCDEFGH$ is a cube.\nIts length = width = height $= a$ units\n1. The length of diagonal of the cube\n$= \\sqrt{a^2 + a^2 + a^2} = \\sqrt{3a^2} = \\sqrt{3}a$\n2. The area of the whole surface of the cube\n$= 2(a \\cdot a + a \\cdot a + a \\cdot a) = 2(a^2 + a^2 + a^2) = 6a^2$\n3. The volume of the cube $= a \\cdot a \\cdot a = a^3$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Rectangular solid",
+      "figure_no": "16.01",
+      "box_2d": [
+        90,
+        650,
+        245,
+        900
+      ],
+      "description": "A diagram showing the net or faces of a rectangular solid.",
+      "reading_order_anchor": "Area of the whole surface of the rectangular solid"
+    },
+    {
+      "caption": "Fig 16.02: Cube",
+      "figure_no": "16.02",
+      "box_2d": [
+        750,
+        650,
+        950,
+        880
+      ],
+      "description": "A perspective drawing of a cube labeled ABCDEFGH.",
+      "reading_order_anchor": "Cube"
+    }
+  ]
+}

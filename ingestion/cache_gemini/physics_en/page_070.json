@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 70,
+  "pdf_page_no": 75,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Do yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Tie a heavy book by a rope and try to make it completely straight by pulling it from the two ends. No matter how much force you apply from both ends of the rope, you can never make it completely straight. Because if the rope becomes completely straight then the resultant force cannot be made zero by neutralizing the weight $W$ of the book.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "3.4",
+      "section_title": "Momentum",
+      "chunk_type": "theory",
+      "content_markdown": "Let a truck and a bicycle hit a small car with the same velocity. In this collision which one will damage the small car more the cycle or truck? Definitely the truck, because the truck is much heavier than the cycle. Though the velocity of the cycle and the truck are the same, but the momentum of the truck is much more than that of the cycle since the truck has greater mass. Simply, the momentum is defined as the product of the mass and the velocity. If the mass of an object is $m$ and its velocity is $\\vec{v}$ then the momentum $\\vec{p}$ can be expressed as:\n$$\\vec{p} = m\\vec{v}$$\nHere the mass is a scalar quantity, but the velocity is a vector, therefore the momentum is a vector quantity. You may think that generally the mass of an object does not change, so a change in momentum may occur only due to the change in its velocity. But in a special case we may find that the velocity of the object has not changed but due to the change of mass, change of its momentum occurs. You may think, instead of defining a new term 'momentum', what was the problem to always treat it as a product of mass and velocity? In general, it does not create a big problem but in case of a 'particle of light' it may create serious problems. A particle of light or a photon has no mass but it has momentum! Compared to the mass and velocity momentum is a more fundamental quantity.\n\nUnit of momentum is $\\text{kg m/s}$\nDimension of momentum is, $[p] = \\text{MLT}^{-1}$\n\nIf more than one object are in motion and they are moving at different velocities,",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

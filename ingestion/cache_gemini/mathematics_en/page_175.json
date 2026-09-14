@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 175,
+  "pdf_page_no": 180,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 24.** If two opposite angles of a quadrilateral are supplementary, the four vertices of the quadrilateral are concyclic.\n\nLet $ABCD$ be the quadrilateral with $\\angle ABC + \\angle ADC = 2$ right angles. It is required to prove that the four points $A, B, C, D$ are concyclic.\n\n**Drawing:** Since the points $A, B, C$ are not collinear, there exists a unique circle which passes through these three points. Let the circle intersect $AD$ at $E$. Join $C, E$.\n\n**Proof:** $ABCE$ is a quadrilateral inscribed in the circle.\n\nTherefore, $\\angle ABC + \\angle AEC = 2$ right angles. [The sum of the two opposite angles of an inscribed quadrilateral is two right angles.]\n\nBut $\\angle ABC + \\angle ADC = 2$ right angles. [given]\n$\\therefore \\angle AEC = \\angle ADC$\n\nBut this is impossible, since in $\\triangle CED$, exterior $\\angle AEC >$ opposite interior $\\angle ADC$\n\nTherefore, $E$ and $D$ points can not be different points. So, $E$ must coincide with the point $D$.\n\nTherefore, the points $A, B, C, D$ are concyclic. (Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise 8.3",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. If the internal and external bisectors of the angles $\\angle B$ and $\\angle C$ of $\\triangle ABC$ meet at $P$ and $Q$ respectively, prove that $B, P, C, Q$ are concyclic.\n\n2. $ABCD$ is a circle. If the bisectors of $\\angle CAB$ and $\\angle CBA$ meet at the point $P$ and the bisectors of $\\angle DBA$ and $\\angle DAB$ meet at $Q$, prove that, the four points $A, Q, P, B$ are concyclic.\n\n3. The chords $AB$ and $CD$ of a circle with centre $O$ meet at right angles at some point within the circle, prove that, $\\angle AOD + \\angle BOC = 2$ right angles.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Theorem 24 illustration",
+      "figure_no": "8.01",
+      "box_2d": [
+        167,
+        685,
+        297,
+        825
+      ],
+      "description": "A circle with a quadrilateral ABCD inscribed, with an additional point E on the circle.",
+      "reading_order_anchor": "Theorem 24. If two opposite angles of a quadrilateral are supplementary, the four vertices of the quadrilateral are concyclic."
+    }
+  ]
+}

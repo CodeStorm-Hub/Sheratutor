@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 311,
+  "pdf_page_no": 316,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "To analyze a circuit, some simple points discussed below are to be remembered:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(a) The amount of current that comes out from the higher potential of a source (battery cell, generator whatever may be) after flowing through the entire circuit, just the same amount of current comes back to the lower potential.\n\n(b) The amount of current that enters at any point of a circuit, the same amount of current will come out from that point, that is, there is no creation or destruction of current in a circuit. No charge is created here, only transfer of charge occurs.\n\n(c) In a circuit Ohm's law is true for two points in any part, that is, if the potential difference of those two points is divided by the resistance of that part, the current flowing through the circuit can be determined.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.07: Some symbols that are used in a circuit.",
+      "figure_no": "11.07",
+      "box_2d": [
+        138,
+        126,
+        396,
+        903
+      ],
+      "description": "Schematic symbols used in electrical circuits such as cell, battery, AC source, switch, fuse, bulb, capacitor, resistor, galvanometer, ammeter, voltmeter, and earth connector.",
+      "reading_order_anchor": "To analyze a circuit, some simple points discussed below are to be remembered:"
+    },
+    {
+      "caption": "Figure 11.08: Two circuits with a battery cell and a resistor.",
+      "figure_no": "11.08",
+      "box_2d": [
+        700,
+        240,
+        901,
+        747
+      ],
+      "description": "Two circuit diagrams labeled (a) and (b) containing a voltage source, resistor, and ground connections.",
+      "reading_order_anchor": "(c) In a circuit Ohm's law is true for two points in any part..."
+    }
+  ]
+}

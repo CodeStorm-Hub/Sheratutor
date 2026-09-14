@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 173,
+  "pdf_page_no": 178,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "heated needs to be considered. So the expansion of a liquid in a container observed is not real expansion, it is an apparent expansion. Therefore, to measure the real expansion, the expansion of the container must be kept in mind always. Usually, the expansion of liquids is more than that of liquids. If it was not the case we could not see the apparent expansion. It seems to be apparent compression!\n\nThe most common example of the expansion of liquid is a thermometer. There are many types of thermometers, among them perhaps the clinical thermometer (Figure 6.05) is the most familiar.\n\nA glass tube contains mercury at the bottom. If heat is applied, the volume of mercury is increased and it goes up through the capillary tube. To what extent it reaches is the measurement of the temperature. While measuring the fever by a thermometer, it is to be taken out from the mouth or the armpit, a very fine curve is made at the bottom of the narrow tube. Due to expansion, once the mercury level rises up, it cannot come down even after decreasing the temperature. Mercury is brought down by shaking.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Real and Apparent Expansion",
+      "chunk_type": "theory",
+      "content_markdown": "It has been said earlier that a liquid is always heated in a container. If heat is applied, the expansion of the container occurs along with the liquid. So the expansion of a container is kept in mind to measure the exact expansion of a liquid. The expansion of a liquid, without considering the expansion of the container, is called apparent expansion. If the expansion of a liquid is measured considering the expansion of the container, it is called real expansion.\n\nIf a glass bulb with a long graduated stem is heated liquid with filled up to mark $A$, first we observe that the upper level of the liquid comes down to mark $B$ (figure 6.06). It will happen because due to the application of heat the temperature of the bulb will increase before increasing the temperature of the",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 6.05 : Fine curve is made in tube, so that mercury can not fall in fever measuring thermometer.",
+      "figure_no": "6.05",
+      "box_2d": [
+        143,
+        696,
+        421,
+        863
+      ],
+      "description": "A clinical thermometer showing a fine curve near the bulb to prevent mercury from falling back down automatically.",
+      "reading_order_anchor": "The most common example of the expansion of liquid is a thermometer."
+    },
+    {
+      "caption": "Figure 6.06 : Real and apparent expansion.",
+      "figure_no": "6.06",
+      "box_2d": [
+        638,
+        712,
+        843,
+        853
+      ],
+      "description": "A glass bulb with a graduated stem marked C, A, and B, demonstrating real and apparent liquid expansion when heated.",
+      "reading_order_anchor": "If a glass bulb with a long graduated stem is heated liquid with filled up to mark A..."
+    }
+  ]
+}

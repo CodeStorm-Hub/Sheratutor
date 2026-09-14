@@ -1,0 +1,106 @@
+{
+  "printed_page_no": 141,
+  "pdf_page_no": 146,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "mcq",
+      "content_markdown": "6. How many molecules are there in $10\\text{ grams}$ of $\\text{CaCO}_3$?\n\na. $6.02\\times 10^{23}$\nb. $6.02\\times 10^{21}$\nc. $6.02\\times 10^{22}$\nd. $2.58\\times 10^{22}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "theory",
+      "content_markdown": "### Creative Questions",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is a mole?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. What do you understand by empirical formula and molecular formula?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "c. Determine the composition of the salt that can be formed by combining the solutions shown in the stem.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "d. Will the molarity of the shown solutions be the same? Give a mathematical explanation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. $4.4\\text{ g}$ carbon dioxide and $5\\text{ g}$ calcium oxide are mixed to prepare $10\\text{ g}$ $\\text{CaCO}_3$. The expected yield is not met after the reaction is over.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is the chemical equation?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. Explain the molar volume of carbon dioxide.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "c. Determine how many moles of carbon dioxide were used in the reaction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "d. Give a logical explanation of the lesser yield than expected in the reaction of the stem.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.1: Solution bottles of HCl and NaOH",
+      "figure_no": "6.1",
+      "box_2d": [
+        278,
+        565,
+        497,
+        882
+      ],
+      "description": "Two chemical bottles containing 4g HCl in 100 mL and 4g NaOH in 100 mL respectively.",
+      "reading_order_anchor": "1.c"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 201,
+  "pdf_page_no": 206,
+  "chapter_no": 10,
+  "chapter_title": "দূরত্ব ও উচ্চতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্থান থেকে $CD = 42$ মিটার পিছিয়ে গেলে উন্নতি $\\angle ADB = 45^\\circ$ হয়।\nধরি, $BC = x$ মিটার।\n$\\therefore BD = BC + CD = (x + 42)$ মিটার।\n$\\triangle ABC$ থেকে পাই,\n$\\tan \\angle ACB = \\frac{AB}{BC}$ বা, $\\tan 60^\\circ = \\frac{h}{x}$\nবা, $\\sqrt{3} = \\frac{h}{x}$ $[\\because \\tan 60^\\circ = \\sqrt{3}]$\n$\\therefore x = \\frac{h}{\\sqrt{3}} \\dots (1)$\nআবার, $\\triangle ABD$ থেকে পাই, $\\tan \\angle ADB = \\tan 45^\\circ = \\frac{AB}{BD}$\nবা, $\\tan 45^\\circ = \\frac{h}{x + 42}$ বা, $1 = \\frac{h}{x + 42}$ $[\\because \\tan 45^\\circ = 1]$\nবা, $h = x + 42$ বা, $h = \\frac{h}{\\sqrt{3}} + 42$ [(১) নং সমীকরণের সাহায্যে]\nবা, $\\sqrt{3}h = h + 42\\sqrt{3}$ বা, $\\sqrt{3}h - h = 42\\sqrt{3}$ বা, $(\\sqrt{3} - 1)h = 42\\sqrt{3}$ বা, $h = \\frac{42\\sqrt{3}}{\\sqrt{3} - 1}$\n$\\therefore h = 99.373$ (প্রায়)\n$\\therefore$ দালানটির উচ্চতা $99.37$ মিটার (প্রায়)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ ৬",
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৬. একটি খুঁটি এমন ভাবে ভেঙে গেল যে, তার অবিচ্ছিন্ন ভাঙা অংশ দণ্ডায়মান অংশের সাথে $30^\\circ$ কোণ উৎপন্ন করে খুঁটির গোড়া থেকে $10$ মিটার দূরে মাটি স্পর্শ করে। খুঁটির সম্পূর্ণ দৈর্ঘ্য নির্ণয় কর।\n\nসমাধান:\nমনে করি, খুঁটির সম্পূর্ণ দৈর্ঘ্য $AB = h$ মিটার, খুঁটিটি $BC = x$ মিটার উচ্চতায় ভেঙে গিয়ে বিচ্ছিন্ন না হয়ে ভাঙা অংশ দণ্ডায়মান অংশের সাথে $\\angle BCD = 30^\\circ$ উৎপন্ন করে খুঁটির গোড়া থেকে $BD = 10$ মিটার দূরে মাটি স্পর্শ করে।\nএখানে, $CD = AC = AB - BC = (h - x)$ মিটার\n$\\triangle BCD$ থেকে পাই,\n$\\tan \\angle BCD = \\frac{BD}{BC}$ বা, $\\tan 30^\\circ = \\frac{10}{x}$\nবা, $\\frac{1}{\\sqrt{3}} = \\frac{10}{x} \\therefore x = 10\\sqrt{3}$\nআবার, $\\sin \\angle BCD = \\frac{BD}{CD}$ বা, $\\sin 30^\\circ = \\frac{BD}{CD}$ বা, $\\frac{1}{2} = \\frac{10}{h - x}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১০.০১",
+      "figure_no": "10.01",
+      "box_2d": [
+        115,
+        640,
+        275,
+        875
+      ],
+      "description": "একটি দালানের উচ্চতা নির্ণয়ের জ্যামিতিক চিত্র যেখানে দুটি কোণ ৪৫ ডিগ্রি ও ৬০ ডিগ্রি দেখানো হয়েছে।",
+      "reading_order_anchor": "স্থান থেকে CD = 42 মিটার পিছিয়ে গেলে উন্নতি ZADB = 45° হয়।"
+    },
+    {
+      "caption": "চিত্র ১০.০২",
+      "figure_no": "10.02",
+      "box_2d": [
+        650,
+        640,
+        910,
+        875
+      ],
+      "description": "একটি খুঁটি ভেঙে মাটিতে পড়ার জ্যামিতিক চিত্র যেখানে ৩০ ডিগ্রি কোণ দেখানো হয়েছে।",
+      "reading_order_anchor": "উদাহরণ ৬. একটি খুঁটি এমন ভাবে ভেঙে গেল যে, তার অবিচ্ছিন্ন ভাঙা অংশ দণ্ডায়মান অংশের সাথে 30° কোণ উৎপন্ন করে খুঁটির গোড়া থেকে 10 মিটার দূরে মাটি স্পর্শ করে।"
+    }
+  ]
+}

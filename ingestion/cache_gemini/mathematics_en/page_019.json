@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 19,
+  "pdf_page_no": 24,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 21. Calculate values and approximate values of $4.4623845...$ up to 1, 2, 3, 4 and 5 decimal places?\n\nSolution: For the decimal fraction $4.4623845...$\n\nValue up to 1 decimal place is $4.4$ but its approximate value up to 1 decimal digit is $4.5$\n\nValue up to 2 decimal places is $4.46$ and approximate value is $4.46$\n\nValue up to 3 decimal places is $4.462$ and approximate value is $4.462$\n\nValue up to 4 decimal places is $4.4623$ and approximate value is $4.4624$\n\nValue up to 5 decimal places is $4.462238$ and approximate value is $4.46238$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Calculate square root of $29$ to 2 decimal places, and approximate it to 2 decimal places.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Exercises 1\n\n1. Which numbers are irrational?\n1) $0.\\dot{3}$ 2) $\\sqrt{\\frac{16}{9}}$ 3) $\\sqrt[3]{\\frac{8}{27}}$ 4) $\\frac{5}{\\sqrt{3}}$\n\n2. If $a, b, c, d$ are four consecutive natural numbers which one of the following will be a whole squared?\n1) $abcd$ 2) $ab+cd$ 3) $abcd+1$ 4) $abcd-1$\n\n3. How many primes are there from 1 to 10?\n1) 3 2) 4 3) 5 4) 6\n\n4. Which one is the set of all integers?\n1) $\\{..., -4, -2, 0, 2, 4, ...\\}$ 2) $\\{..., -2, -1, 0, 1, 2, ...\\}$\n3) $\\{..., -3, -1, 0, 1, 3, ...\\}$ 4) $\\{0, 1, 2, 3, 4\\}$\n\n5. In case of real numbers\n(i) Square of an odd integer is odd.\n(ii) Product of two even numbers is even.\n(iii) Square root of a number that is not whole squared is an irrational number.\n\nWhich one is true?",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

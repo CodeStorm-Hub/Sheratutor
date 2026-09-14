@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 63,
+  "pdf_page_no": 68,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$f(a) = (a - a) \\cdot h(a) = 0$$\n$$\\therefore f(a) = 0$$\n\nHence, any polynomial $f(x)$ will be divisible by $(x - a)$ if and only if $f(a) = 0$. This formula is known as factor theorem.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proposition 12.** If degree of $f(x)$ is positive and $a \\neq 0$, then if $f(x)$ is divided by $(ax + b)$, the remainder will be $f\\left(-\\frac{b}{a}\\right)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:** Degree of divisor $ax + b$, $(a \\neq 0)$ is 1.\n\nHence, we can write: $f(x) = (ax + b) \\cdot h(x) + r = a\\left(x + \\frac{b}{a}\\right) \\cdot h(x) + r$\n\n$$\\therefore f(x) = \\left(x + \\frac{b}{a}\\right) \\cdot a \\cdot h(x) + r$$\n\nIt is clear that, if $f(x)$ is divided by $\\left(x + \\frac{b}{a}\\right)$, the quotient will be $a \\cdot h(x)$ and the remainder will be $r$.\n\nHere, divisor $= x - \\left(-\\frac{b}{a}\\right)$\n\nHence, according to remainder theorem $r = f\\left(-\\frac{b}{a}\\right)$\n\nTherefore, if $f(x)$ is divided by $(ax + b)$, the remainder will be $f\\left(-\\frac{b}{a}\\right)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Corollary 13.** If $a \\neq 0$, the expression $ax + b$ will be a factor of any polynomial $f(x)$, if and only if $f\\left(-\\frac{b}{a}\\right) = 0$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:** $a \\neq 0$, $ax + b = a\\left(x + \\frac{b}{a}\\right)$ will be a factor of $f(x)$, if and only if $\\left(x + \\frac{b}{a}\\right) = x - \\left(-\\frac{b}{a}\\right)$ is a factor of $f(x)$. Hence, if and only if $f\\left(-\\frac{b}{a}\\right) = 0$. This method of determining the factor by using remainder theorem is called **Vanishing method**.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 30.** Resolve into factors: $x^3 - x - 6$\n\n**Solution:** Here, $f(x) = x^3 - x - 6$ is a polynomial. The factors of the constant $-6$ are $\\pm 1, \\pm 2, \\pm 3, \\pm 6$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

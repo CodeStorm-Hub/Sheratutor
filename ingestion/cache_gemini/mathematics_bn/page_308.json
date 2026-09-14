@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 308,
+  "pdf_page_no": 313,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\triangle OAB \n\\text{এর ক্ষেত্রফল} = \\frac{1}{2}ah$$\n$$= \\frac{1}{2}a \\times \\frac{a}{2} \\tan\\theta$$\n$$= \\frac{a^2}{4} \\tan\\left(90^\\circ - \\frac{180^\\circ}{n}\\right)$$\n$$= \\frac{a^2}{4} \\cot\\frac{180^\\circ}{n} \\quad [\\because \\tan(90^\\circ - A) = \\cot A]$$\n\n$$n$$ সংখ্যক বাহুবিশিষ্ট সুষম বহুভুজের ক্ষেত্রফল = $$\\frac{na^2}{4} \\cot\\frac{180^\\circ}{n}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৫. একটি সুষম পঞ্চভুজের প্রতিবাহুর দৈর্ঘ্য $4$ সে.মি. হলে, এর ক্ষেত্রফল নির্ণয় কর।\n\nসমাধান: মনে করি, সুষম পঞ্চভুজের বাহুর দৈর্ঘ্য $a = 4$ সে.মি.। বাহুর সংখ্যা $n = 5$।\n\nআমরা জানি, সুষম বহুভুজের ক্ষেত্রফল = $$\\frac{na^2}{4} \\cot\\frac{180^\\circ}{n}$$\n$$\\therefore$$ সুষম পঞ্চভুজের ক্ষেত্রফল = $$\\frac{5 \\times 4^2}{4} \\cot\\frac{180^\\circ}{5}$$ বর্গ সে.মি.\n$$= 20 \\times \\cot 36^\\circ$$ বর্গ সে.মি.\n$$= 20 \\times 1.376$$ বর্গ সে.মি. (ক্যালকুলেটরের সাহায্যে)\n$$= 27.528$$ বর্গ সে.মি. (প্রায়)\nনির্ণেয় ক্ষেত্রফল $27.528$ বর্গ সে. মি. (প্রায়)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৬. একটি সুষম ষড়ভুজের কেন্দ্র থেকে কৌণিক বিন্দুর দূরত্ব $4$ মিটার হলে, এর ক্ষেত্রফল নির্ণয় কর।\n\nসমাধান: মনে করি, $ABCDEF$ একটি সুষম ষড়ভুজ। এর কেন্দ্র $O$ থেকে শীর্ষবিন্দুগুলো যোগ করা হলো। ফলে $6$টি সমান ক্ষেত্রবিশিষ্ট ত্রিভুজ উৎপন্ন হয়।\n$$\\therefore \\angle COD = \\frac{360^\\circ}{6} = 60^\\circ$$\nমনে করি কেন্দ্র থেকে শীর্ষবিন্দুগুলোর দূরত্ব $a$ মিটার।\n$$\\therefore \\triangle COD$$ এর ক্ষেত্রফল = $$\\frac{1}{2} \\cdot a \\cdot a \\sin 60^\\circ$$\n$$= \\frac{\\sqrt{3}}{4} \\times 4^2$$ বর্গমিটার = $$4\\sqrt{3}$$ বর্গমিটার\nসুষম ষড়ভুজক্ষেত্রের ক্ষেত্রফল = $$6 \\times \\triangle COD$$ এর ক্ষেত্রফল\n$$= 6 \\times 4\\sqrt{3}$$ বর্গমিটার = $$24\\sqrt{3}$$ বর্গমিটার\nনির্ণেয় ক্ষেত্রফল $$24\\sqrt{3}$$ বর্গমিটার",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: সুষম পঞ্চভুজ",
+      "figure_no": "16.01",
+      "box_2d": [
+        457,
+        667,
+        585,
+        836
+      ],
+      "description": "একটি সুষম পঞ্চভুজ যার কেন্দ্র O এবং বাহুর দৈর্ঘ্য a নির্দেশিত।",
+      "reading_order_anchor": "উদাহরণ ১৫"
+    },
+    {
+      "caption": "চিত্র: সুষম ষড়ভুজ",
+      "figure_no": "16.02",
+      "box_2d": [
+        744,
+        672,
+        854,
+        839
+      ],
+      "description": "একটি সুষম ষড়ভুজ যার কেন্দ্র O এবং কেন্দ্র থেকে শীর্ষবিন্দুর দূরত্ব 4 মিটার নির্দেশিত।",
+      "reading_order_anchor": "উদাহরণ ১৬"
+    }
+  ]
+}

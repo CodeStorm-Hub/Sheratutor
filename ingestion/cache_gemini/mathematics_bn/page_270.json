@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 270,
+  "pdf_page_no": 275,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\nধাপ ১. যেহেতু $DA \\parallel CE$ এবং $BE$ এদের ছেদক [অঙ্কন]\n$\\angle AEC = \\angle BAD$ [অনুরূপ কোণ]\nআবার $DA \\parallel CE$ এবং $AC$ এদের ছেদক\n$\\angle ACE = \\angle CAD$ [একান্তর কোণ]\nধাপ ২. কিন্তু $\\angle BAD = \\angle CAD$ [স্বীকার]\n$\\therefore \\angle AEC = \\angle ACE$ সুতরাং $AC = AE$ [অধ্যায় ৬ উপপাদ্য ৮]\nধাপ ৩. আবার যেহেতু, $DA \\parallel CE$ সুতরাং $\\frac{BD}{DC} = \\frac{BA}{AE}$ [ধাপ ২]\nধাপ ৪. কিন্তু $AE = AC$\n$\\therefore \\frac{BD}{DC} = \\frac{BA}{AC}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ৩১. ত্রিভুজের যেকোনো বাহু অপর দুই বাহুর অনুপাতে অন্তর্বিভক্ত হলে, বিভাগ বিন্দু থেকে বিপরীত শীর্ষ বিন্দু পর্যন্ত অঙ্কিত রেখাংশ উক্ত শীর্ষকোণের সমদ্বিখণ্ডক হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বাচন: মনে করি, $ABC$ ত্রিভুজের $A$ বিন্দু থেকে অঙ্কিত $AD$ সরলরেখাংশ $BC$ বাহুকে $D$ বিন্দুতে এরূপে অন্তঃস্থভাবে বিভক্ত করেছে যে, $BD : DC = BA : AC$।\nপ্রমাণ করতে হবে যে, $AD$ রেখাংশ $\\angle BAC$ এর সমদ্বিখণ্ডক অর্থাৎ, $\\angle BAD = \\angle CAD$।\nঅঙ্কন: $DA$ রেখাংশের সমান্তরাল করে $C$ বিন্দু দিয়ে $CE$ রেখাংশ অঙ্কন করি, যেন তা বর্ধিত $BA$ বাহুকে $E$ বিন্দুতে ছেদ করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\nধাপ ১. $\\triangle BCE$ এর $DA \\parallel CE$ [অঙ্কন]\n$\\therefore BA : AE = BD : DC$ [উপপাদ্য ২৮]\nধাপ ২. কিন্তু $BD : DC = BA : AC$ [স্বীকার]\n$\\therefore BA : AE = BA : AC$ [ধাপ ১ ও ধাপ ২ থেকে]\n$\\therefore AE = AC$\nঅতএব, $\\angle ACE = \\angle AEC$ [সমদ্বিবাহু ত্রিভুজের ভূমি সংলগ্ন কোণ দুইটি সমান]\nধাপ ৩. কিন্তু $\\angle AEC = \\angle BAD$ [অনুরূপ কোণ]\nএবং $\\angle ACE = \\angle CAD$ [একান্তর কোণ]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৪.৩১: ত্রিভুজের বাহুর অনুপাত ও সমদ্বিখণ্ডক",
+      "figure_no": "14.31",
+      "box_2d": [
+        470,
+        630,
+        660,
+        870
+      ],
+      "description": "একটি ত্রিভুজ ABC যেখানে AD রেখাংশ BC বাহুকে D বিন্দুতে ছেদ করে এবং CE রেখাংশ AD এর সমান্তরালভাবে বর্ধিত BA বাহুকে E বিন্দুতে ছেদ করে।",
+      "reading_order_anchor": "বিশেষ নির্বাচন: মনে করি, ABC ত্রিভুজের A বিন্দু থেকে"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 54,
+  "pdf_page_no": 59,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": "3.10",
+      "section_title": "Radioactive Isotopes and Their Uses",
+      "chunk_type": "theory",
+      "content_markdown": "We have already learned about isotopes in this chapter. There are some isotopes the nucleus of which spontaneously synthesize themselves and emit alpha ($\\alpha$), beta ($\\beta$) and gamma ($\\gamma$) rays. Isotopes of an element that emit radioactive rays are called radioactive isotopes. So far, scientists have gathered information on more than 3000 isotopes. Some of them are natural and some are laboratory made. The physics book for your class discusses about various isotopes and their radioactivity in details. We will learn about their uses here.\n\nControlled use of radioactive isotopes has made many an impossibility possible. Presently, such isotopes are used in medical science, agriculture, preservation of food and seeds, electricity generation etc.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.10.1",
+      "section_title": "Medical Science",
+      "chunk_type": "theory",
+      "content_markdown": "Medical science employs radioactive isotopes for various purposes.\n\n### Diagnoses\n\nWe can take pictures of a patient's affected area using radioactive isotopes. Technetium-99 ($^{99}\\text{Tc}$) is injected inside the body in this system. When it gathers a particular isotope at a certain place inside the body, the isotope emits gamma rays. The gamma ray identification camera from outside can take the photo of that spot of the body. The lifetime of this isotope is 6 hours. Since it loses its radioactivity within a short time, it is safe.\n\n### Treating Diseases\n\nRadioactive isotope was first used to cure thyroid cancer. The patient is made to drink a solution of $^{131}\\text{I}$. This isotope reaches the thyroid and emits beta rays which destroys the affected cells. Iridium isotope is used to treat brain cancer. $^{60}\\text{Co}$ isotope is used to diagnose and treat tumors. The gamma rays emitted from this isotope destroys the cancer affected cell and tissue. $^{32}\\text{P}$ isotope is used for treatment of leukemia.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 115,
+  "pdf_page_no": 120,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমতলের উপসেট হলে সরলরেখাটি ঐ সমতলে অবস্থিত, অথবা, সমতলটি ঐ সরলরেখা দিয়ে যায় এ রকম বাক্য দ্বারা তা বর্ণনা করা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সরলরেখা ও সমতলের বৈশিষ্ট্য হিসেবে স্বীকার করে নেওয়া হয় যে,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্বীকার্য ২. দুইটি ভিন্ন বিন্দুর জন্য একটি ও কেবল একটি সরলরেখা আছে, যাতে উভয় বিন্দু অবস্থিত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্বীকার্য ৩. একই সরলরেখায় অবস্থিত নয় এমন তিনটি ভিন্ন বিন্দুর জন্য একটি ও কেবল একটি সমতল আছে, যাতে বিন্দু তিনটি অবস্থিত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্বীকার্য ৪. কোনো সমতলের দুইটি ভিন্ন বিন্দু দিয়ে যায় এমন সরলরেখা ঐ সমতলে অবস্থিত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্বীকার্য ৫.\n\nক) জগতে (space) একাধিক সমতল বিদ্যমান।\n\nখ) প্রত্যেক সমতলে একাধিক সরলরেখা অবস্থিত।\n\nগ) প্রত্যেক সরলরেখার বিন্দুসমূহ এবং বাস্তব সংখ্যাসমূহকে এমনভাবে সম্পর্কিত করা যায় যেন, রেখাটির প্রত্যেক বিন্দুর সঙ্গে একটি অনন্য বাস্তব সংখ্যা সংশ্লিষ্ট হয় এবং প্রত্যেক বাস্তব সংখ্যার সঙ্গে রেখাটির একটি অনন্য বিন্দু সংশ্লিষ্ট হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্য: স্বীকার্য ১ থেকে স্বীকার্য ৫ কে আপতন স্বীকার্য (incidence axiom) বলা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "জ্যামিতিতে দূরত্বের ধারণাও একটি প্রাথমিক ধারণা। এ জন্য স্বীকার করে নেওয়া হয় যে,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্বীকার্য ৬.\n\nক) $P$ ও $Q$ বিন্দুযুগল একটি অনন্য বাস্তব সংখ্যা নির্দিষ্ট করে থাকে। সংখ্যাটিকে $P$ বিন্দু থেকে $Q$ বিন্দুর দূরত্ব বলা হয় এবং $PQ$ দ্বারা সূচিত করা হয়।\n\nখ) $P$ ও $Q$ ভিন্ন বিন্দু হলে $PQ$ সংখ্যাটি ধনাত্মক। অন্যথায়, $PQ = 0$।\n\nগ) $P$ থেকে $Q$ এর দূরত্ব এবং $Q$ থেকে $P$ এর দূরত্ব একই। অর্থাৎ $PQ = QP$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$PQ = QP$ হওয়াতে এই দূরত্বকে সাধারণত $P$ বিন্দু ও $Q$ বিন্দুর মধ্যবর্তী দূরত্ব বলা হয়। ব্যবহারিকভাবে, এই দূরত্ব পূর্ব নির্ধারিত এককের সাহায্যে পরিমাপ করা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্বীকার্য ৫ (গ) অনুযায়ী প্রত্যেক সরলরেখায় অবস্থিত বিন্দুসমূহের সেট ও বাস্তব সংখ্যার সেটের মধ্যে এক-এক মিল স্থাপন করা যায়। এ প্রসঙ্গে স্বীকার করে নেওয়া হয় যে,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্বীকার্য ৭. কোনো সরলরেখায় অবস্থিত বিন্দুসমূহের সেট এবং বাস্তব সংখ্যার সেটের মধ্যে এমনভাবে এক-এক মিল স্থাপন করা যায়, যেন রেখাটির যেকোনো দুইটি বিন্দু $P, Q$ এর জন্য $PQ = |a - b|$ হয়, যেখানে মিলকরণের ফলে $P$ ও $Q$ এর সঙ্গে যথাক্রমে $a$ ও $b$ বাস্তব সংখ্যা সংশ্লিষ্ট হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এই স্বীকার্যে বর্ণিত মিলকরণ করা হলে, রেখাটি একটি সংখ্যারেখায় পরিণত হয়েছে বলা হয়। সংখ্যারেখায় $P$ বিন্দুর সঙ্গে $a$ সংখ্যাটি সংশ্লিষ্ট হলে $P$ কে $a$ এর লেখবিন্দু এবং $a$ কে $P$ এর স্থানাঙ্ক বলা হয়। কোনো সরলরেখাকে সংখ্যারেখায় পরিণত করার জন্য প্রথমে রেখাটির একটি",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

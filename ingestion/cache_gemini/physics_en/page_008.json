@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 8,
+  "pdf_page_no": 13,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "statistics related to radiation. For this, he is referred to as the father of quantum statistics. In recognition of his contributions, a class of fundamental particles was named \"bosons\" after him. Between 1900 and 1930, many prominent scientists, including Heisenberg, Schrödinger, and Dirac, collectively established the quantum theory of matter.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "An imaginary medium called ether was considered as the carrier of the electromagnetic wave. In 1887 Michelson and Morley, while trying to prove the existence of ether, showed that actually there is no ether and the velocity of light is equal in both stationary and moving mediums. We get this explanation from Einstein’s theory of relativity in 1905. (Fig-1.04) The most wonderful equation $E = mc^2$ is derived from the theory of relativity in which it is shown that the mass of object can be converted into energy.\n\nIn 1931 Dirac hypothesised the existence of an anti particle by the combination of quantum theory and the theory of relativity and it was discovered the following year.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In 1895 Roentgen invented X-rays. In 1896 Becqurel showed that radioactive radiation is emitted from the centre of an atom. In 1899 Pierre Curie and Marie Curie (Fig:1.03) invented radium and the scientists understood that actually the atoms are not imperishable and on disintegrating, these atoms may emit radioactive radiation.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.03: Maxwell, Rutherford and Mari Curie",
+      "figure_no": "1.03",
+      "box_2d": [
+        196,
+        238,
+        363,
+        808
+      ],
+      "description": "Portraits of Maxwell, Rutherford, and Marie Curie",
+      "reading_order_anchor": "In recognition of his contributions, a class of fundamental particles was named 'bosons' after him."
+    },
+    {
+      "caption": "Figure 1.04: Albert Einstein and Satyendranath Basu",
+      "figure_no": "1.04",
+      "box_2d": [
+        624,
+        312,
+        816,
+        727
+      ],
+      "description": "Portraits of Albert Einstein and Satyendranath Basu",
+      "reading_order_anchor": "The most wonderful equation E = mc^2 is derived from the theory of relativity..."
+    }
+  ]
+}

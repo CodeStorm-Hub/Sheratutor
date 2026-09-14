@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 37,
+  "pdf_page_no": 42,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": "2.3",
+      "section_title": "Scalar and Vector quantities",
+      "chunk_type": "theory",
+      "content_markdown": "In the world we know anything that can be measured is called a quantity. Joy and sorrow are not quantities but temperature is a quantity. Because joy and sorrow cannot be assigned a value by measuring them but temperature can be given a value by measurement. The temperature of your body is $37^{\\circ}\\text{C}$ or $98.4^{\\circ}\\text{F}$. To express temperature a single number is sufficient, but there are many quantities which cannot be expressed by a single number completely; with its magnitude its direction has to be mentioned or more than one magnitude has to be mentioned so that they altogether can express definitely the magnitude and direction of the quantity. Position is a quantity of this type; to express this only the distance is not sufficient; its direction has to be mentioned too. The quantity which can be expressed only by a single number is called a scalar quantity, on the other hand the quantities for which direction has to be mentioned in addition to its magnitude are called vector quantities.\n\nBesides temperature examples of scalar are time, length and mass. Because they can be expressed by a single number only. Besides position you will find the other examples of vectors are velocity and force. You will be introduced with velocity and force in the next chapter. Because to express these quantities, direction is to be mentioned along with its magnitude.\n\nTo differentiate vector quantities from scalar quantities they are written in bold font (e.g. $\\mathbf{x}$, $\\mathbf{y}$ or $\\mathbf{A}$, $\\mathbf{B}$). In books or in computer printing it is easy to write anything in bold form. But when anyone writes on a paper then to express anything as vector, a small arrow is used over it ($\\vec{x}$, $\\vec{y}$ or $\\vec{A}$, $\\vec{B}$).\n\nIn this book the physics you will be taught will not involve application of vectors. At best you will be reminded which one is scalar and which one is a vector.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.03: Vector A and vector B are equal in all respect although in different position, vector C is different from A and B, because their magnitude is same but direction is different. Vector D is different from C, because direction is same but their magnitude is not same.",
+      "figure_no": "2.03",
+      "box_2d": [
+        185,
+        627,
+        396,
+        853
+      ],
+      "description": "Schematic diagram showing vectors A, B, C, and D with varying positions, directions, and magnitudes to illustrate equality and differences between vectors.",
+      "reading_order_anchor": "2.3 Scalar and Vector quantities"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 151,
+  "pdf_page_no": 156,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, we can write\n\n$$P \\propto \\left(\\frac{V - V_0}{V_0}\\right)$$\n\n$$P = B \\left(\\frac{V - V_0}{V_0}\\right)$$\n\nHere $B$ is a constant and is called the bulk modulus of elasticity. Unit of $B$ is $Nm^{-2}$ or Pascal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.6",
+      "section_title": "Three States of Matter: Solid, Liquid and Gas",
+      "chunk_type": "theory",
+      "content_markdown": "You certainly know that, everything of the universe is made of molecules! (In fact, molecules are not fundamental particles, molecules consist of atoms, atom consists of electros and nucleus, nucleus consists of protons and neutrons, proton and neutron consists of quarks and the scientists are assuming that electrons or quarks are made of strings!). Since, the properties of a matter exist in molecules, molecules are considered the smallest unit of matter. For example, all properties of water exist in a water molecule, but when it is split into atoms it does not exist as water. There will be one oxygen and two hydrogen atoms, both in the gas form. Whether the substance is solid, liquid or gas depends on how molecules are arranged within the matter (Figure: 5.13). The most",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.12: If pressure is applied in confined air, the air is compressed.",
+      "figure_no": "5.12",
+      "box_2d": [
+        329,
+        163,
+        555,
+        822
+      ],
+      "description": "Two containers of confined air showing the volume change $V_0$ to $V$ when a weight/pressure is applied.",
+      "reading_order_anchor": "Here B is a constant and is called the bulk modulus of elasticity."
+    }
+  ]
+}

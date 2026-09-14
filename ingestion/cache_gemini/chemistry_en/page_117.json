@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 117,
+  "pdf_page_no": 122,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$ \\text{molecular mass of solute} = M $$ \n\nThen $w = \\frac{SVM}{1000}$ \n\nTo solve the molarity related problem, we can use the above equation",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** How will you prepare $0.2 \\text{ molar } \\text{NaCl}$ solution in a volumetric flask of $250 \\text{ mL}$?\n\n**Solution:** Given, a volume of solution $V = 250 \\text{ mL}$, molarity of solution $S = 0.2 \\text{ molar}$, molecular mass of $\\text{NaCl} = 23 + 35.5 = 58.5$\n\nTherefore, $1 \\text{ mole } \\text{NaCl} = 58.5 \\text{ g}$\n\n$0.2 \\text{ molar } \\text{NaCl}$ solution in $1 \\text{ liter}$ or $1000 \\text{ mL}$ requires $58.5 \\times 0.2 = 11.7 \\text{ g}$\n\n$250 \\text{ mL}$ solution requires $= \\frac{11.7 \\times 250}{1000} = 2.925 \\text{ g}$\n\nAdd $2.925 \\text{ gram } \\text{NaCl}$ in a $250 \\text{ mL}$ volumetric flask. Pour $250 \\text{ mL}$ water inside the flask. That will complete the preparation of $0.2 \\text{ molar}$ solution.\n\n**Alternative Solution**\n\nWe know, $w = \\frac{SVM}{1000}$\n\nTherefore, $w = \\frac{0.2 \\times 250 \\times 58.5}{1000} = 2.925 \\text{ g}$\n\nNow, follow the procedure of adding the solute and solvent to complete the preparation.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** How much $\\text{Na}_2\\text{CO}_3$ is there in a $2 \\text{ liter } 0.1 \\text{ molar } \\text{Na}_2\\text{CO}_3$ solution?\n\n**Solution:** Molecular mass of $\\text{Na}_2\\text{CO}_3 = 23 \\times 2 + 12 + 16 \\times 3 = 106$\n\nTherefore, the amount of $\\text{Na}_2\\text{CO}_3$ necessary in a $1 \\text{ liter } 1 \\text{ molar}$ solution $= 106 \\text{ g}$\n\nthe amount of $\\text{Na}_2\\text{CO}_3$ necessary in a $1 \\text{ liter } 0.1 \\text{ molar}$ solution $= 10.6 \\text{ g}$\n\nthe amount of $\\text{Na}_2\\text{CO}_3$ necessary in a $2 \\text{ liter } 0.1 \\text{ molar}$ solution $= 10.6 \\times 2 \\text{ g} = 21.2 \\text{ g}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

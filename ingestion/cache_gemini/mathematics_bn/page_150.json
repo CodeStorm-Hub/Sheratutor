@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 150,
+  "pdf_page_no": 155,
+  "chapter_no": 7,
+  "chapter_title": "ব্যবহারিক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "নিচের কোনটি সঠিক?\nক) $i$ খ) $ii$ গ) $i, ii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৫. রম্বসের -\n$(i)$ চারটি বাহু পরস্পর সমান\n$(ii)$ বিপরীত কোণ সমান\n$(iii)$ কর্ণদ্বয় পরস্পরকে সমকোণে সমদ্বিখণ্ডিত করে।\nনিচের কোনটি সঠিক?\nক) $i, ii$ খ) $i, iii$ গ) $ii, iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "চিত্রে $ABCD$ একটি আয়তক্ষেত্র, $EF = 2$ সে.মি. এবং $DE = 3$ সে.মি.। এই তথ্যের আলোকে (৬ - ৮) নং প্রশ্নের উত্তর দাও:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $BF$ এর দৈর্ঘ্য কত সে.মি.?\nক) $1$ খ) $\\sqrt{5}$ গ) $\\sqrt{13}$ ঘ) $5$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $AB$ কত সে.মি.?\nক) $2$ খ) $2\\sqrt{5}$ গ) $5\\sqrt{2}$ ঘ) $10$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. $ABCD$ এর ক্ষেত্রফল কত বর্গসে.মি.?\nক) $8\\sqrt{5}$ খ) $20$ গ) $12\\sqrt{5}$ ঘ) $32\\sqrt{5}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. নিম্নে প্রদত্ত উপাত্ত নিয়ে চতুর্ভুজ অঙ্কন কর:\nক) চারটি বাহুর দৈর্ঘ্য $3$ সে.মি., $3.5$ সে.মি., $2.5$ সে.মি. ও $3$ সে.মি. এবং একটি কোণ $45^\\circ$।\nখ) চারটি বাহুর দৈর্ঘ্য $3.5$ সে.মি., $4$ সে.মি., $2.5$ সে.মি. ও $3.5$ সে.মি. এবং একটি কর্ণ $5$ সে.মি.।\nগ) তিনটি বাহুর দৈর্ঘ্য $3.2$ সে.মি., $3$ সে.মি., $3.5$ সে.মি. এবং দুইটি কর্ণ $2.8$ সে.মি. ও $4.5$ সে.মি.।\nঘ) তিনটি বাহুর দৈর্ঘ্য $3$ সে.মি., $3.5$ সে.মি., $4$ সে.মি. এবং দুইটি কোণ $60^\\circ$ ও $45^\\circ$।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: ABCD আয়তক্ষেত্র",
+      "figure_no": "7.01",
+      "box_2d": [
+        375,
+        335,
+        560,
+        665
+      ],
+      "description": "একটি আয়তক্ষেত্র ABCD যার কর্ণ AC এবং BD পরস্পর E বিন্দুতে ছেদ করেছে। EF লম্ব AB।",
+      "reading_order_anchor": "চিত্রে ABCD একটি আয়তক্ষেত্র, EF = 2 সে.মি. এবং DE = 3 সে.মি.। এই তথ্যের আলোকে (৬ - ৮) নং প্রশ্নের উত্তর দাও:"
+    }
+  ]
+}

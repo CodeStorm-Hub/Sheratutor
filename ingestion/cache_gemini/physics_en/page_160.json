@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 160,
+  "pdf_page_no": 165,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Effects of Heat on Matter",
+      "chunk_type": "theory",
+      "content_markdown": "Heat is a kind of energy. From the concept of energy we may think that heat flows always from higher heat energy to lower heat energy, but it is not true. In which direction heat will flow, depends on the temperature. In this chapter we will see how we can measure heat or temperature and what is the relation between them.\n\nActually heat energy comes from the motion of molecules, atoms or their vibrations. If the vibration of molecules of any solid object is increased to a great extent, then molecules may go far from another one, that is, a change of state may occur. In this chapter we will discuss the effect of heat on solids, liquids and gases.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Burning of a matchstick",
+      "figure_no": "6.01",
+      "box_2d": [
+        283,
+        114,
+        656,
+        878
+      ],
+      "description": "A lit matchstick emitting a bright flame in a dark background, illustrating heat generation.",
+      "reading_order_anchor": "Effects of Heat on Matter"
+    }
+  ]
+}

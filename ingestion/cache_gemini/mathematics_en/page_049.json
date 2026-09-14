@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 49,
+  "pdf_page_no": 54,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. Simplify: $(5x + 7y + 3z)^2 + 2(7x - 7y - 3z)(5x + 7y + 3z) + (7x - 7y - 3z)^2$\n\nSolution: Let, $5x + 7y + 3z = a$ and $7x - 7y - 3z = b$\n$\\therefore$ Given expression $= a^2 + 2 \\cdot b \\cdot a + b^2 = a^2 + 2ab + b^2$\n$= (a + b)^2$\n$= \\{(5x + 7y + 3z) + (7x - 7y - 3z)\\}^2$ [substituting the values of $a$ and $b$]\n$= (12x)^2 = 144x^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. If $x - y = 2$ and $xy = 24$, what is the value of $x + y$?\n\nSolution: $(x + y)^2 = (x - y)^2 + 4xy = (2)^2 + 4 \\times 24 = 4 + 96 = 100$\n$\\therefore x + y = \\pm\\sqrt{100} = \\pm 10$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. If $a^4 + a^2b^2 + b^4 = 3$ and $a^2 + ab + b^2 = 3$, what is the value of $a^2 + b^2$?\n\nSolution: $a^4 + a^2b^2 + b^4$\n$= (a^2)^2 + 2a^2b^2 + (b^2)^2 - a^2b^2$\n$= (a^2 + b^2)^2 - (ab)^2$\n$= (a^2 + b^2 + ab)(a^2 + b^2 - ab)$\n$= (a^2 + ab + b^2)(a^2 - ab + b^2)$\n$\\therefore 3 = 3(a^2 - ab + b^2)$ [substituting the values]\nor, $a^2 - ab + b^2 = \\frac{3}{3} = 1$\nNow adding, $a^2 + ab + b^2 = 3$ and $a^2 - ab + b^2 = 1$\nwe get, $2(a^2 + b^2) = 4$\nor, $a^2 + b^2 = \\frac{4}{2} = 2$\n$\\therefore a^2 + b^2 = 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 8. Prove that, $(a + b)^4 - (a - b)^4 = 8ab(a^2 + b^2)$\n\nSolution: $(a + b)^4 - (a - b)^4$\n$= \\{(a + b)^2\\}^2 - \\{(a - b)^2\\}^2$\n$= \\{(a + b)^2 + (a - b)^2\\}\\{(a + b)^2 - (a - b)^2\\}$\n$= 2(a^2 + b^2) \\times 4ab$ [applying Corollary 5 and Corollary 6]",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

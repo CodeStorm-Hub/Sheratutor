@@ -1,0 +1,114 @@
+{
+  "printed_page_no": 108,
+  "pdf_page_no": 113,
+  "chapter_no": 5,
+  "chapter_title": "এক চলকবিশিষ্ট সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. $x^2 - x - 12 = 0$ সমীকরণের মূলদ্বয় নিচের কোনটি?\nক) $3, 4$ খ) $3, -4$ গ) $-3, 4$ ঘ) $-3, -4$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $3x^2 - x + 5 = 0$ সমীকরণে $x$ এর সহগ কত?\nক) $3$ খ) $2$ গ) $1$ ঘ) $-1$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. দুইটি বীজগাণিতিক রাশি $x$ ও $y$ এর গুণফল $xy = 0$ হলে\n$(i) x = 0$ অথবা $y = 0$\n$(ii) x = 0$ এবং $y \\neq 0$\n$(iii) x \\neq 0$ এবং $y = 0$\nনিচের কোনটি সঠিক?\nক) $i$ ও $ii$ খ) $ii$ ও $iii$ গ) $i$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $x^2 - (a + b)x + ab = 0$ সমীকরণের সমাধান সেট নিচের কোনটি?\nক) $\\{a, b\\}$ খ) $\\{a, -b\\}$ গ) $\\{-a, b\\}$ ঘ) $\\{-a, -b\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "দুই অঙ্কবিশিষ্ট একটি সংখ্যার দশক স্থানীয় অঙ্ক একক স্থানীয় অঙ্কের দ্বিগুণ এবং একক স্থানীয় অঙ্ক $x$। এই তথ্যের আলোকে নিচের (৮ - ১০) প্রশ্নগুলোর উত্তর দাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. সংখ্যাটি কত?\nক) $2x$ খ) $3x$ গ) $12x$ ঘ) $21x$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. অঙ্কদ্বয় স্থান বিনিময় করলে সংখ্যাটি কত হবে?\nক) $3x$ খ) $4x$ গ) $12x$ ঘ) $21x$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. $x = 2$ হলে, মূল সংখ্যার সাথে স্থান বিনিময়কৃত সংখ্যার পার্থক্য কত?\nক) $18$ খ) $20$ গ) $34$ ঘ) $36$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান কর (১১ - ১৭):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. $(y + 5)(y - 5) = 24$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $(\\sqrt{2}x + 3)(\\sqrt{3}x - 2) = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. $2(z^2 - 9) + 9z = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. $\\frac{3}{2z + 1} + \\frac{4}{5z - 1} = 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. $\\frac{x - 2}{x + 2} + \\frac{6(x - 2)}{x - 6} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. $\\frac{x}{a} + \\frac{a}{x} = \\frac{x}{b} + \\frac{b}{x}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

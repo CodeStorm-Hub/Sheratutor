@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 232,
+  "pdf_page_no": 237,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "At a distance greater than focal distance",
+      "chunk_type": "theory",
+      "content_markdown": "### At a distance greater than focal distance\n\nAmong all the images we have seen so far, this image is amazing, because we will witness a real image for the first time, where light will be centralized where the image will be created (Figure 8.23).\n\nLet, the object be $XY$ and like other cases, the image of point $Y$ will be on the line $YP$. We have to draw two lines in order to determine the image of point $X$.\n\nOne line $XQ$ will be parallel to the axis, and after reflection it traverses through the focal point $F$ as $QF$. We can draw the second ray through the point $F$. This will reflect in the concave mirror and after reflecting, it will become parallel to $RS$, as after reflection in the concave mirror parallel rays traverse through the focal point, the reverse is also true. Light always follows its path in reverse direction. Lines $QF$ and $RS$ intersect at the point $X'$ and point $X'$ is the image of point $X$.\n\nSo, the normal drawn on line $PO$ from $X'$ intersects at the point $Y'$ and $X'Y'$ is the image of object $XY$. This image is unique compared to other images. This is shown in Figure 8.24. The object $XY$ is placed at a distance more than two times of focal distance. This time the image has become shorter. If the object is placed at a distance of two times of focal length, its image would appear on the same point as shown in Fig 8.25. Not only this, the image's size",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.23: The image becomes inverted if an object is placed outside focal length of a concave mirror.",
+      "figure_no": "8.23",
+      "box_2d": [
+        215,
+        513,
+        439,
+        856
+      ],
+      "description": "Ray diagram showing the formation of a real, inverted image by a concave mirror when the object is placed outside the focal length.",
+      "reading_order_anchor": "Among all the images we have seen so far..."
+    },
+    {
+      "caption": "Figure 8.24: In a concave mirror if an object is placed at a distance more than two times of focal length the image formed is inverted and short",
+      "figure_no": "8.24",
+      "box_2d": [
+        600,
+        160,
+        831,
+        489
+      ],
+      "description": "Ray diagram showing the formation of a diminished, inverted real image when the object is placed at a distance greater than twice the focal length.",
+      "reading_order_anchor": "So, the normal drawn on line PO from X' intersects..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 286,
+  "pdf_page_no": 291,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Deposit of 12000 Tk. after 2 years $12000 \\times (1.12)^2$ Tk.\n\nDeposit of 12000 Tk. after 3 years $12000 \\times (1.12)^3$ Tk.\n\n$\\therefore$ Total deposited amount after 26 years $= 12000 \\times 1.12 + 12000 \\times (1.12)^2 + \\dots$ upto 26 th term.\n\n$= 12000\\{1.12 + (1.12)^2 + \\dots + (1.12)^{26}\\}$\n\n$= 12000 \\times 1.12 \\times \\frac{(1.12)^{26} - 1}{1.12 - 1} = 12000 \\times 1.12 \\times \\frac{18.04}{0.12}$\n\n$= 2020488$ Tk. (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": "Exercise 13.2",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. $a, b, c$ and $d$ are four consecutive terms of an arithmetic series. Which one of the following is true?\n1) $b = \\frac{c + d}{2}$ 2) $a = \\frac{b + c}{2}$ 3) $c = \\frac{b + d}{2}$ 4) $d = \\frac{a + c}{2}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. For $n \\in N$\n(i) $\\sum n = \\frac{n^2 + n}{2}$\n(ii) $\\sum n^2 = \\frac{1}{6}n(n + 1)(n + 2)$\n(iii) $\\sum n = \\frac{n^2(n^2 + 2n + 1)}{4}$\nWhich one of the following is true?\n1) $i$ and $ii$ 2) $i$ and $iii$ 3) $ii$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "On the basis of the following series, answer questions 3 and 4.\n$\\log 2 + \\log 4 + \\log 8 + \\dots$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. What is the common difference of the series?\n1) 2 2) 4 3) $\\log 2$ 4) $2\\log 2$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. Which one is the 7th term of the series?\n1) $\\log 32$ 2) $\\log 64$ 3) $\\log 128$ 4) $\\log 256$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. Find the eighth term of the series $64 + 32 + 16 + 8 + \\dots$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. Find the sum of the first 14 terms of the series $3 + 9 + 27 + \\dots$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

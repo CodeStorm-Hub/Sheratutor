@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 273,
+  "pdf_page_no": 278,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Atomic Structure and Electric Charge",
+      "chunk_type": "theory",
+      "content_markdown": "Normally atoms are charge neutral and that means there are an equal number of electrons and protons in an atom. But if an electron is removed from the outermost orbit, then the number of protons is more than the electrons and the atom is not electrically neutral anymore, the amount of positive charge within it increases. If one electron is removed, one positive charge is developed in the atom, if two electrons are removed, two positive charges are developed. We then say that the atom has been ionized or charged. As an atom is positively ionized, it can also be negatively ionized or charged. That is, when one or more isolated electrons are attached to an atom, then the total charge of the atom is negative.\n\nThe electrons of an atom revolve around its orbit; there are certain rules about how the electrons will be distributed in the orbits. You have learnt this elaborately in your chemistry book. So we will not go deeper. You know sometimes in the last orbit, there are one or two electrons that are nearly free; in such materials electrons can make movement very easily within the materials. We call these materials electric conductors. Again, there are some materials within which there are no electrons that can move freely, in these materials electrons are tightly bound. These are called nonconductors. Metals like gold, silver, copper etc. are good conductors of electricity. Wood, plastic, glass, rubber etc. are nonconductors of electricity.\n\nIf we have understood the topics explained so far about the structure of atoms, the next topics following static electricity will be very easy to understand.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.01: An atom of argon. Electrons fill up one orbit and then other orbits",
+      "figure_no": "10.01",
+      "box_2d": [
+        287,
+        560,
+        523,
+        847
+      ],
+      "description": "Schematic diagram of an atom of argon showing a central nucleus surrounded by concentric orbits containing electrons represented by blue circles.",
+      "reading_order_anchor": "Atomic Structure and Electric Charge"
+    }
+  ]
+}

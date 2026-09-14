@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 130,
+  "pdf_page_no": 135,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Still balance is lacking as the number of O on the left is 3 while on the right is 1. There is a difference between the numbers of H too. So, let us multiply $\\text{H}_2\\text{O}$ with 3:\n$$\\text{Al}_2\\text{O}_3 + 6\\text{HCl} \\longrightarrow 2\\text{AlCl}_3 + 3\\text{H}_2\\text{O}$$\nNow, there is balance.\n$$\\text{Al}_2\\text{O}_3 + 6\\text{HCl} = 2\\text{AlCl}_3 + 3\\text{H}_2\\text{O}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3.2",
+      "section_title": "Mole and Chemical Equation",
+      "chunk_type": "theory",
+      "content_markdown": "Certain amounts of a reactant reacts with a certain amount of another reactant and produces a certain amount of product or products. The branch of chemistry that deals with measurements of products from amounts of reactants and measurements of reactants from amounts of products is called Stoichiometry. The information that can be gathered regarding mole from a chemical equation is the Stoichiometry of that reaction.\n\nAnalyzing the Stoichiometry, we can tell how many reactants reacted to produce how many products, how many moles of reactants formed how many moles of products, how many grams of reactants participated in the reaction to produce how many grams of products.\n\n$$2\\text{Mg(s)} + \\text{O}_2\\text{(g)} \\longrightarrow 2\\text{MgO(s)}$$\n$$\\text{Magnesium} \\quad \\text{Oxygen} \\quad \\text{Magnesium Oxide}$$\n\nAccording to stoichiometry, we can write\n\n$$2\\text{Mg(s)} + \\text{O}_2\\text{(g)} \\longrightarrow 2\\text{MgO(s)}$$\n\n$2 \\text{ mole Mg atom} \\quad 1 \\text{ mole } \\text{O}_2 \\text{ molecule} \\quad 2 \\text{ mole MgO molecule}$\n\n$2 \\times 6.023 \\times 10^{23} \\text{ no of Mg atom} \\quad 6.023 \\times 10^{23} \\text{ no of } \\text{O}_2 \\text{ molecule} \\quad 2 \\times 6.023 \\times 10^{23} \\text{ no of MgO molecule}$\n\n$$2 \\times 24 = 48 \\text{ g} \\quad 1 \\times 32 = 32 \\text{ g} \\quad 2 \\times 40 = 80 \\text{ g}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

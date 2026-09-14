@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 252,
+  "pdf_page_no": 257,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Keep testtubes for a week and observe\n\nFig 10.10: Experiment of rust on iron (Boil the water to remove dissolved oxygen from water).",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": "10.1",
+      "section_title": "Prevention of Metal Corrosion",
+      "chunk_type": "theory",
+      "content_markdown": "Metals and their alloys do not corrode if they are not in direct contact with air. This can be done in various ways like painting, electroplating, galvanizing etc. The iron made doors and windows of our homes are painted so that they do not come in direct contact with air. We know that the less reactive metals usually do not undergo reactions with oxygen but the more reactive metals rapidly undergo reactions with oxygen of air and water. Therefore, a coating of a less reactive metal is laid on more reactive metals. Thus the more reactive metals are saved from corrosion. The coating can also be given by electroplating and galvanizing.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.10: Experiment of rust on iron (Boil the water to remove dissolved oxygen from water).",
+      "figure_no": "10.10",
+      "box_2d": [
+        205,
+        178,
+        429,
+        856
+      ],
+      "description": "Four test tubes showing an experiment on iron rusting under different conditions involving air, boil water, oil layer, anhydrous $\\text{CaCl}_2$, oxygen, and cold water.",
+      "reading_order_anchor": "Prevention of Metal Corrosion"
+    },
+    {
+      "caption": "Fig 10.11: Copper electroplating on key.",
+      "figure_no": "10.11",
+      "box_2d": [
+        570,
+        565,
+        807,
+        903
+      ],
+      "description": "An electrolytic cell setup showing copper electroplating on a key, with a copper anode and a key as the cathode immersed in a solution containing $\\text{Cu}^{2+}$ ions.",
+      "reading_order_anchor": "Prevention of Metal Corrosion"
+    }
+  ]
+}

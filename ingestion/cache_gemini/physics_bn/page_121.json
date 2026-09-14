@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 121,
+  "pdf_page_no": 126,
+  "chapter_no": 4,
+  "chapter_title": "কাজ, ক্ষমতা ও শক্তি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কর্মদক্ষতা বলে একটি নতুন রাশি ব্যবহার করে থাকি। কর্মদক্ষতাকে শতকরা হিসাবে এভাবে লেখা যায়:\n\n$$\\text{কর্মদক্ষতা} = \\frac{\\text{কাজের পরিমাণ}}{\\text{প্রদত্ত শক্তি}} \\times 100$$\n\n$$= \\frac{\\text{প্রদত্ত শক্তি} - \\text{শক্তির অপচয়}}{\\text{প্রদত্ত শক্তি}} \\times 100$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ**\n\n**প্রশ্ন:** $1000\\text{ W}$ এর একটি মোটর ব্যবহার করে $15\\text{ s}$ এ একটি $10\\text{ kg}$ ভরের বস্তুকে $10\\text{ m}$ উপরে তোলা হলে শক্তির অপচয় কত? কর্মদক্ষতা কত?\n\n**উত্তর:** কাজের পরিমাণ: $10 \\times 9.8 \\times 10\\text{ J} = 9,800\\text{ J}$\n\nপ্রদত্ত শক্তি: $1000 \\times 15\\text{ J} = 15,000\\text{ J}$\n\nশক্তির অপচয়: $15,000\\text{ J} - 9,800\\text{ J} = 5,200\\text{ J}$\n\n$$\\text{কর্মদক্ষতা} = \\frac{9,800\\text{ J}}{15,000\\text{ J}} \\times 100\\% = 65.3\\%$$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তোমরা শুনে অবাক হবে একটা বিদ্যুৎকেন্দ্রে বিদ্যুৎ উৎপাদন করার সময় প্রতিটি ধাপেই শক্তির অপচয় হয় এবং সবগুলো অপচয় হিসেবে নেওয়ার পর বিদ্যুৎকেন্দ্রের কর্মদক্ষতা $30\\%$ এ নেমে আসতে পারে!",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** প্রত্যেকটি ধাপে $10\\%$ অপচয় হলে চার ধাপে কত কর্মদক্ষতা?\n\n**উত্তর:** $0.9 \\times 0.9 \\times 0.9 \\times 0.9 = 0.6561$\n\nকিংবা $65.6\\%$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

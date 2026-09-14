@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 190,
+  "pdf_page_no": 195,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "metals on less precious metals to add brightness. This makes the ornaments more lucrative.\n\nChlorine gas produced from electrolysis of sea water is used as an anti-parasite agent. Sodium hydroxide is used as a raw material in different industries.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.4",
+      "section_title": "Production of Electricity by Chemical Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "### Galvanic Cell or Voltaic Cell\n\nGalvanic or Voltaic cells are those electrochemical cells where the elements within undergo reactions to produce electricity. In a Galvanic cell, usually two electrodes of different elements are submerged in two different electrolytic solutions in two different containers. The more reactive metal electrode is used as the anode and the less reactive metal electrode is the cathode. In a galvanic or voltaic cell, an electrode made of a particular metal must be placed in a solution of a salt of the same metal (electrolyte) so that ions of that metal are present in the electrolyte. For example, if an electrode is made of copper, it has to be kept in $\\text{CuSO}_4$ solution. Similarly, a zinc electrode is kept in $\\text{ZnSO}_4$ solution. When the two electrodes are externally connected with a metal wire, electrons can flow from one to other, meaning flow of electricity is ensured. A U shaped salt bridge is created between the two electrolytic solutions. The U shaped glass tube contains $\\text{KCl}$ salt solution. To make it more clear to you, the structure of a Daniell cell is described below.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Daniell Cell",
+      "chunk_type": "theory",
+      "content_markdown": "The cell was invented by John Frederick Daniell in 1836. It is named after him.\n\nTwo glass or ceramic containers are taken, one partially filled with copper sulphate ($\\text{CuSO}_4$) solution and another with zinc sulphate ($\\text{ZnSO}_4$) solution. A copper stick is dipped in $\\text{CuSO}_4$ and a zinc stick is dipped in $\\text{ZnSO}_4$. A U-shaped salt bridge is dipped in the two solutions, as shown in the picture, to connect",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

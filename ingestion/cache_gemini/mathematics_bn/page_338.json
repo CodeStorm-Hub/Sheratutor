@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 338,
+  "pdf_page_no": 343,
+  "chapter_no": 17,
+  "chapter_title": "পরিসংখ্যান",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) গণসংখ্যা নিবেশন সারণি বলতে কী বুঝ?\nখ) উপরের গণসংখ্যা সারণি থেকে মধ্যক নির্ণয় কর।\nগ) তারপর সারণিতে প্রদত্ত উপাত্তের বহুভুজ অঙ্কন কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সমাধান:",
+      "chunk_type": "worked_example",
+      "content_markdown": "ক) প্রদত্ত উপাত্তসমূহকে নির্দিষ্ট শ্রেণি ব্যবধান ও শ্রেণি সংখ্যা নির্ধারণের মাধ্যমে বিন্যস্ত ও সারণিভুক্ত করাকে গণসংখ্যা সারণি বলে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) মধ্যক নির্ণয়ের জন্য গণসংখ্যা নিবেশন সারণি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| শ্রেণি ব্যাপ্তি | গণসংখ্যা | ক্রমযোজিত গণসংখ্যা |\n| :--- | :--- | :--- |\n| $30 - 35$ | $3$ | $3$ |\n| $36 - 41$ | $10$ | $13$ |\n| $42 - 47$ | $18$ | $31$ |\n| $48 - 53$ | $25$ | $56$ |\n| $54 - 59$ | $8$ | $64$ |\n| $60 - 65$ | $6$ | $70$ |\n| | $n = 70$ | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "এখানে, $n = 70$ এবং $\\frac{n}{2} = \\frac{70}{2} = 35$।\n\nঅতএব, মধ্যক $35$ তম পদ যার অবস্থান $48 - 53$ শ্রেণিতে। অতএব মধ্যক শ্রেণি $48 - 53$।\n\nসুতরাং $L = 48, F_c = 31, f_m = 25$ এবং $h = 6$।\n\nকাজেই মধ্যক $= 48 + (35 - 31) \\times \\frac{6}{25} = 48 + 4 \\times \\frac{6}{25} = 48 + 0.96 = 48.96$\n\nনির্ণেয় মধ্যক $48.96$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "গ) বহুভুজ অঙ্কনের জন্য সারণি: প্রথম শ্রেণির পূর্বের শ্রেণির মধ্যমান $26.5$ এবং শেষ শ্রেণির পরের শ্রেণির মধ্যমান $68.5$। এবার $X$ অক্ষ বরাবর শ্রেণির মধ্যমান সুবিধাজনক এককে নিয়ে যেখানে $\\text{--}$ (ছেদ) চিহ্নটি $0$ থেকে $26.5$ বুঝায় এবং $y$ অক্ষ বরাবর গণসংখ্যা প্রতি ক্ষুদ্রতম বর্গের বাহুর দৈর্ঘ্য $2$ ধরে গণসংখ্যা বহুভুজ অঙ্কন করা হলো।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

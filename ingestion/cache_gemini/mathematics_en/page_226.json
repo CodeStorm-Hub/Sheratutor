@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 226,
+  "pdf_page_no": 231,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \\frac{a + c + e + g}{b + d + f + h} = \\frac{bk + dk + fk + hk}{b + d + f + h} = \\frac{k(b + d + f + h)}{b + d + f + h} = k$$\nBut, $k$ is equal to each of the ratio.\n$$\\therefore \\frac{a}{b} = \\frac{c}{d} = \\frac{e}{f} = \\frac{g}{h} = \\frac{a + c + e + g}{b + d + f + h}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "**Work:**\n\n1) The sum of ages of mother and sister is $s$ years. The ratio of their ages, before $t$ years was $r : p$. After $x$ years, what will be the ratio of their ages?\n\n2) Let a man be standing at $p$ metre distance from a light-post, $r$ be the height of the man, $s$ be the shadow length. Determine the height of the light-post in terms of $p$, $r$ and $s$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 2.** The ratio of present ages of father and son is $7 : 2$, and after 5 years, the ratio will be $8 : 3$. What are their present ages?\n\n**Solution:** Let the present age of father be $a$ and that of the son be $b$.\n\nSo, by the conditions of first and second of the problems, we have,\n$$\\frac{a}{b} = \\frac{7}{2} \\dots (1)$$\n$$\\frac{a + 5}{b + 5} = \\frac{8}{3} \\dots (2)$$\nFrom equation(1), we get,\n$$a = \\frac{7b}{2} \\dots (3)$$\nFrom equation(2), we get,\n$$3(a + 5) = 8(b + 5)$$\nor, $$3a + 15 = 8b + 40$$\nor, $$3a - 8b = 40 - 15$$\nor, $$3 \\times \\frac{7b}{2} - 8b = 25$$ [by using(3)]\nor, $$\\frac{21b - 16b}{2} = 25$$\nor, $$5b = 50$$\n$$\\therefore b = 10$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

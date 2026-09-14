@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 125,
+  "pdf_page_no": 130,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, we'll divide the quotients by the small quotient above:\n\n$$C = \\frac{7.69}{7.69} = 1$$\n\n$$H = \\frac{7.69}{7.69} = 1$$\n\nSo, the empirical formula of the compound: $\\text{C}_1\\text{H}_1 = \\text{CH}$\n\nSince the empirical formula is $\\text{CH}$, the molecular formula will be $(\\text{CH})_n = \\text{C}_n\\text{H}_n$\n\nThe mass of empirical formula of the compound stands $= 12 \\times 1 + 1 \\times 1 = 13$ and its molecular mass $= 78$\n\nTherefore $n = \\frac{\\text{molecular mass of compound}}{\\text{mass of empirical formula}} = \\frac{78}{13} = 6$\n\nThus, the molecular formula of the compound is $\\text{C}_6\\text{H}_6$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Determining Molecular Formula from Empirical Formula",
+      "chunk_type": "theory",
+      "content_markdown": "The molecular formula of a compound can be the base to determine its empirical formula. Suppose, we need to find the empirical formula of glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$).\n\nA glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) molecule consists of $06$ $\\text{C}$ atoms, $12$ $\\text{H}$ atoms and $06$ $\\text{O}$ atoms.\n\nThe ratio of atoms $\\text{C} : \\text{H} : \\text{O} = 6 : 12 : 6 = 1 : 2 : 1$\n\nTherefore, the empirical formula of glucose is $\\text{C}_1\\text{H}_2\\text{O}_1 = \\text{CH}_2\\text{O}$\n\nSometimes, the empirical formula and molecular formula are similar. For example, the molecular formula of water is $\\text{H}_2\\text{O}$, its empirical formula is $\\text{H}_2\\text{O}$ too. Both the formulas for sulfuric acid is $\\text{H}_2\\text{SO}_4$.\n\nUsually, the compounds, all the atoms of which can be divided by a certain number, have different molecular and empirical formulas. The molecular formula of benzene is $\\text{C}_6\\text{H}_6$. Since the number of atoms here are divisible by $6$, therefore, its empirical formula will be $\\text{C}_1\\text{H}_1 = \\text{CH}$. Similarly, the molecular formula of ethene is $\\text{C}_2\\text{H}_4$. Therefore, its empirical formula is $\\text{C}_1\\text{H}_2 = \\text{CH}_2$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

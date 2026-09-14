@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 103,
+  "pdf_page_no": 108,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In $\\text{CaCl}_2$ solution, there is $\\text{Ca}^{2+}$ and $\\text{Cl}^-$. $\\text{HCl}$ solution contains $\\text{H}^+$ and $\\text{Cl}^-$. Therefore they can conduct electricity. Glucose ($\\text{C}_6\\text{H}_{12}\\text{O}_6$) does not carry any ion, so it does not conduct electricity.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Formation of Crystals",
+      "chunk_type": "theory",
+      "content_markdown": "Each group will take two beakers. One beaker will have salt and another, sugar. Add water to both and heat them a bit to dissolve as much salt ($\\text{NaCl}$) and sugar ($\\text{C}_{12}\\text{H}_{22}\\text{O}_{11}$) as possible. Now preserve both beakers for some days along with a cotton liner hanging inside each. After some days, pick up the liners- you will find salt and sugar crystals have formed around them. Usually, all ionic compounds remain as crystals. On the other hand, though some form crystals, usually, covalent compounds are not available in crystal form.",
+      "activity_tag": "Group Work"
+    },
+    {
+      "section_no": "5.13",
+      "section_title": "Metallic Bond",
+      "chunk_type": "theory",
+      "content_markdown": "We have seen that, a metal and a non metal element creates an ionic bond among themselves while two non-metal elements create a covalent bond among themselves. But when two metallic elements come closer together, there is created a metallic bond. It means, the attraction force that keeps the atoms in a piece of metal interconnected is called the metallic bond. You have obviously seen copper wire, knife, scissors, window grill or gold ornaments etc. Numerous",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.13: Crystals of salt and sugar.",
+      "figure_no": "5.13",
+      "box_2d": [
+        374,
+        103,
+        603,
+        401
+      ],
+      "description": "Photographic close-up of crystalline structures of salt and sugar.",
+      "reading_order_anchor": "Formation of Crystals"
+    }
+  ]
+}

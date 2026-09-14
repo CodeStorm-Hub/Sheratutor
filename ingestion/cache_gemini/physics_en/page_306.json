@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 306,
+  "pdf_page_no": 311,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "this way. Not only this, we can also change the direction of the potential difference by reversing the cells. So if we apply different positive and negative potential differences between two sides of a wire or some other conductor and try to measure the current that flows, we will see that\n\na) The higher the potential difference the higher the current flow.\n\nb) If potential difference is negative, the electric current also changes direction.\n\nIf we put the result of the experiment on a graph, it will be like figure 11.04 (a):\n\nTherefore,\n$$I \\propto V$$\n\nIf we do the same experiment by using a wire of some other materials, we will get similar results. But the slope of the straight line may be different. (Figure 11.04(b)) Now if we analyze the results of these two experiments, we will understand that for a certain potential difference, the current that flows through the first conductor is more than the current that flows through the second conductor for the same potential difference. It is as if the flow of current is easier through the first conductor and a little difficult through the second one. To explain the matter, a quantity named 'resistance to current flow' or simply 'resistance' has been introduced. We can see that the relation between voltage and electric current can be expressed by a law which is known as Ohm's law.\n\n$$I = \\frac{V}{R}$$\n\nSo, the higher the resistance, the lower is the electric current. And the lower the resistance, the higher is the current.\n\nThe unit of resistance is Ohm and it is expressed by the Greek letter $\\Omega$. If $1\\text{ V}$ potential difference is applied in an electric circuit and if it is seen that $1\\text{ A}$ current flows as a result, it can be said that the resistance of the circuit is $1\\text{ \\Omega}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** To make fun you can write Ohm's law differently:\n$$\\frac{V}{I \\times R}$$",
+      "activity_tag": "Example"
+    }
+  ],
+  "figures": []
+}

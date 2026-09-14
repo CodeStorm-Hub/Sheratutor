@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 76,
+  "pdf_page_no": 81,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "before they were detected. You have already known that, Mendeleev had mentioned about four elements in his periodic table which were later detected.\n\n**c. In Research:** The periodic table has a large contribution in the field of research too. Suppose, a scientist is interested to invent a new matter to meet up a specific purpose. In that case, he must have some conception about what the properties would be of the new matter and what kind of elements will be able to produce the new matter. He will get this idea from the periodic table.\n\nYou will gradually come to know about the other advantages of the periodic table.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.9",
+      "section_title": "Reactions Occurring in the Elements of the Same Group",
+      "chunk_type": "theory",
+      "content_markdown": "An experiment will tell you that elements of the same group exhibit the same kind of properties.\n\nThe gases $F_2$, $Cl_2$, $Br_2$, $I_2$ etc. belonging to Group-17 react with Hydrogen and produce $\\text{HF (g)}$, $\\text{HCl (g)}$, $\\text{HBr (g)}$, $\\text{HI (g)}$ gases respectively.\n\n$$\\begin{aligned}\n\\text{H}_2\\text{(g)} + \\text{F}_2\\text{(g)} & \\longrightarrow 2\\text{HF (g)} \\\\\n\\text{H}_2\\text{(g)} + \\text{Cl}_2\\text{(g)} & \\longrightarrow 2\\text{HCl (g)} \\\\\n\\text{H}_2\\text{(g)} + \\text{Br}_2\\text{(g)} & \\longrightarrow 2\\text{HBr (g)} \\\\\n\\text{H}_2\\text{(g)} + \\text{I}_2\\text{(g)} & \\longrightarrow 2\\text{HI (g)}\n\\end{aligned}$$\n\nAgain, if we dissolve these produced gases into water, they produce hydrohalide acids, i.e. Hydrofluoric acid, Hydrochloric acid, Hydrobromic acid, Hydroiodic acid.\n\n$$\\begin{aligned}\n\\text{HF(g)} + \\text{H}_2\\text{O (l)} & \\longrightarrow \\text{HF (aq)} \\\\\n\\text{HCl(g)} + \\text{H}_2\\text{O (l)} & \\longrightarrow \\text{HCl (aq)} \\\\\n\\text{HBr(g)} + \\text{H}_2\\text{O (l)} & \\longrightarrow \\text{HBr (aq)} \\\\\n\\text{HI(g)} + \\text{H}_2\\text{O (l)} & \\longrightarrow \\text{HI (aq)}\n\\end{aligned}$$\n\nThese hydrohalide acids react with any carbonate salt and produce Carbon dioxide gas, e.g. Calcium Carbonate and Hydrofluoric acid produce Carbon dioxide:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

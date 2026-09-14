@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 312,
+  "pdf_page_no": 317,
+  "chapter_no": 15,
+  "chapter_title": "Area Related Theorems",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof: According to the construction, $EBCF$ is a rectangular region.\nIn triangle $ABC$, the base and height are $BC$ and $BE$ respectively.\nHence, $\\triangle$ region $ABC = \\frac{1}{2} \\times BC \\times BE ... (i)$\nIn triangle $DBC$, the base and height are $BC$ and $CF$ respectively.\n$\\therefore \\triangle$ region $DBC = \\frac{1}{2} \\times BC \\times CF = \\frac{1}{2} \\times BC \\times BE ... (ii) [\\because EBCF$ rectangle$]$\nComparing (i) and (ii)\n$\\therefore \\triangle$ region $ABC = \\triangle$ region $DBC$ (proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Corollary 1. If the areas of triangular regions lying on the same base and same side are equal, the triangles lie between the same pair of parallel lines.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Corollary 2. Area of a triangle is exactly half of the area of a parallelogram lying on the same base and between the same pair of parallel lines.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Hints: In the figure, $ABCD$ is a parallelogram with $AC$ as diagonal.\n$\\therefore \\triangle ABC \\cong \\triangle ADC$\n$\\therefore \\triangle ABC = \\frac{1}{2} \\times$ Area of parallelogram $ABCD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 37. Parallelograms lying on the same base and between the same pair of parallel lines are of equal area.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let the parallelograms regions $ABCD$ and $ABEF$ stand on the same base $AB$ and lie between the pair of parallel lines $AB$ and $FC$. It is required to prove that, area of the parallelogram $ABCD = $ area of the parallelogram $ABEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Drawing: Join $A, C$ and $A, E$. From the points $C$ and $E$, draw perpendiculars $EK$ and $CL$ to the base $AB$ and extended $AB$ respectively.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 15.01: Parallelogram ABCD with diagonal AC",
+      "figure_no": "15.01",
+      "box_2d": [
+        453,
+        663,
+        570,
+        887
+      ],
+      "description": "A parallelogram ABCD with a diagonal AC drawn inside it.",
+      "reading_order_anchor": "Hints: In the figure, ABCD is a parallelogram with AC as diagonal."
+    },
+    {
+      "caption": "Fig 15.02: Parallelograms on the same base",
+      "figure_no": "15.02",
+      "box_2d": [
+        657,
+        301,
+        775,
+        696
+      ],
+      "description": "Two parallelograms ABCD and ABEF sharing the same base AB between parallel lines.",
+      "reading_order_anchor": "Theorem 37. Parallelograms lying on the same base and between the same pair of parallel lines are of equal area."
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "printed_page_no": 178,
+  "pdf_page_no": 183,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let $PT$ be a tangent at the point $P$ to the circle with centre $O$ and $OP$ is the radius through the point of contact. It is required to prove that, $PT \\perp OP$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** Take any point $Q$ on $PT$ and join $O, Q$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:** Since $PT$ is a tangent to the circle at the point $P$, hence every point on $PT$ except $P$ lies outside the circle. Therefore, the point $Q$ is outside of the circle. $\\therefore OQ$ is greater than $OP$ that is, $OQ > OP$ and it is true for every point $Q$ on the tangent $PT$ except $P$. $\\therefore$ So, $OP$ is the shortest distance from the centre $O$ to $PT$. Therefore, $PT \\perp OP$ [Among all the line segments drawn from an external point to a straight line, the perpendicular is the shortest] (Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Corollary 8.** At any point on a circle, only one tangent can be drawn.\n**Corollary 9.** The perpendicular to a tangent at its point of contact passes through the centre of the circle.\n**Corollary 10.** At any point of the circle the perpendicular to the radius is a tangent to the circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 26.** If two tangents are drawn to a circle from an external point, the distances from that point to the points of contact are equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let $P$ be a point outside a circle $ABC$ with centre $O$ and two line segments $PA$ and $PB$ be two tangents to the circle at points $A$ and $B$. It is required to prove that, $PA = PB$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** Join $O, A$; $O, B$ and $O, P$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:**\nStep 1. Since $PA$ is a tangent and $OA$ is the radius through the point of tangent, $PA \\perp OA$. $\\angle PAO = 1$ right angle. [$\\because$ The tangent is perpendicular to the radius through the point of contact of the tangent]. Similarly, $\\angle PBO = 1$ right angle. $\\therefore \\triangle PAO$ and $\\triangle PBO$ are right-angled triangles.\nStep 2. Now in the right angled triangles $\\triangle PAO$ and $\\triangle PBO$,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Tangent to a circle",
+      "figure_no": "8.01",
+      "box_2d": [
+        88,
+        673,
+        203,
+        843
+      ],
+      "description": "A circle with centre O, a tangent line PT touching at point P, and a line segment OQ connecting the centre to a point Q on the tangent.",
+      "reading_order_anchor": "Let PT be a tangent at the point P to the circle with centre O and OP is the radius through the point of contact."
+    },
+    {
+      "caption": "Fig 8.02: Two tangents from an external point",
+      "figure_no": "8.02",
+      "box_2d": [
+        583,
+        667,
+        695,
+        843
+      ],
+      "description": "A circle with centre O, an external point P, and two tangents PA and PB touching the circle at points A and B respectively.",
+      "reading_order_anchor": "Let P be a point outside a circle ABC with centre O and two line segments PA and PB be two tangents to the circle at points A and B."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 52,
+  "pdf_page_no": 57,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If we know the actual mass of an atom, we can determine its relative atomic mass. We have to divide the total real mass of an atom by $1.66 \\times 10^{-24}\\text{ g}$ to get the relative atomic mass. Example:\n\nThe real mass of an $\\text{Al}$ atom is $4.482 \\times 10^{-23}\\text{g}$\n\n$$\\text{So, the relative atomic mass of an Al atom is} = \\frac{4.482 \\times 10^{-23}\\text{g}}{1.66 \\times 10^{-24}\\text{g}} = 27$$\n\nThe relative atomic mass is a ratio of two masses, so it doesn't have any unit.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.9.1",
+      "section_title": "Determining the Average Relative Mass of an Element from Percentage of Isotope",
+      "chunk_type": "theory",
+      "content_markdown": "Most of the elements in nature have more than one isotope. We calculate the average relative mass of those elements having more than one isotope from their percentage of availability in nature. The steps in this calculation are:\n\n**Step 1:** Multiply the mass numbers of all isotopes of that element with the percentage of natural availability of those isotopes.\n\n**Step 2:** Get the summation of all the results of step 1.\n\n**Step 3:** Divide the total of step 2 by 100. This will give the average relative mass of that element.\n\nSuppose, an element $\\text{A}$ has $2$ isotopes. If the mass number and natural availability of one of these isotopes are $p$ and $m$ respectively while the same of the other are $q$ and $n$, then,\n\n$$\\text{The average relative atomic mass of that element is} = \\frac{p \\times m + q \\times n}{100}$$\n\n**Example:** There are two isotopes of chlorine in nature, $^{35}\\text{Cl}$ and $^{37}\\text{Cl}$.\n\nNaturally available percentage of $^{35}\\text{Cl} = 75\\%$\n\nNaturally available percentage of $^{37}\\text{Cl} = 25\\%$\n\n$$\\text{So, the average relative atomic mass of chlorine} = \\frac{35 \\times 75 + 37 \\times 25}{100} = 35.5$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

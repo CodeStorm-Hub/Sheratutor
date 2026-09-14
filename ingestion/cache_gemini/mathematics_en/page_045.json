@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 45,
+  "pdf_page_no": 50,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "[Prior knowledge of this chapter are attached to the Appendix at the end of this book. At first the Appendix should be read / discussed.]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Algebraic formulae are used to solve many algebraic problems. Moreover, many algebraic expressions are presented by resolving them into factors. That is why the problem solved by algebraic formulae and the contents of resolving expressions into factors by making suitable for the students have been presented in this chapter. Moreover, different types of mathematical problems can be solved by resolving into factors with the help of algebraic formulae. In the previous class, algebraic formulae and their related corollaries have been discussed elaborately. In this chapter, those are reiterated and some of their applications are presented through examples. Besides, extension of the formulae of square and cube, resolution into factors using remainder theorem and formation of algebraic formulae and their applications in solving practical problems have been discussed here in detail.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of the chapter, the students will be able to —\n\n> expand the formulae of square and cube by applying algebraic formulae.\n\n> explain the remainder theorem and resolve into factors by applying the theorem.\n\n> form algebraic formulae for solving real life problems and solve the problems by applying the formulae.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.1",
+      "section_title": "Algebraic Expressions",
+      "chunk_type": "theory",
+      "content_markdown": "Meaningful organization of operational signs and numerical letter symbols is called Algebraic Expressions. Such as, $2a + 3b - 4c$ is an algebraic expression. In algebraic expression, different types of information are expressed through the letters $a, b, c, p, q, r, m, n, x, y, z, \\dots$ etc. These alphabet are used to solve different types of problems related to algebraic expressions. In arithmetic, only positive numbers are used, where as, in algebra, both positive and negative",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

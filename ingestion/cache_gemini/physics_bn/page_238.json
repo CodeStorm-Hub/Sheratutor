@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 238,
+  "pdf_page_no": 243,
+  "chapter_no": 8,
+  "chapter_title": "আলোর প্রতিফলন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "চিত্র 8.29: (a) উত্তল আয়নায় ফোকাস দূরত্বের ভেতরে রাখা একটি বস্তু। (b) অবতল আয়নায় ফোকাস দূরত্বের ভেতরে রাখা একটি বস্তু।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. অবতল আয়নায় $XY$ বস্তুটির জন্য (চিত্র 8.30 a) আলোক রশ্মিগুলো এঁকে প্রতিবিম্বটি কোথায় হবে দেখাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "চিত্র 8.30: (a) অবতল আয়নায় ফোকাস দূরত্বের বাইরে রাখা একটি বস্তু। (b) অবতল আয়নায় দ্বিগুণ ফোকাস দূরত্বের বাইরে রাখা একটি বস্তু।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. অবতল আয়নায় $XY$ বস্তুটির জন্য (চিত্র 8.30 b) আলোক রশ্মিগুলো এঁকে প্রতিবিম্বটি কোথায় হবে দেখাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "বহুনির্বাচনি প্রশ্ন\n\nসঠিক উত্তরটির পাশে টিক ($\\sqrt{}$) চিহ্ন দাও\n\n1. উত্তল দর্পণ কোথায় ব্যবহার হয়?\n(ক) গাড়িতে (খ) টর্চলাইটে\n(গ) সৌরচুল্লিতে (ঘ) রাডারে",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 8.29: (a) উত্তল আয়নায় ফোকাস দূরত্বের ভেতরে রাখা একটি বস্তু। (b) অবতল আয়নায় ফোকাস দূরত্বের ভেতরে রাখা একটি বস্তু।",
+      "figure_no": "8.29",
+      "box_2d": [
+        113,
+        116,
+        269,
+        866
+      ],
+      "description": "Ray diagrams showing object placement within focal length for convex and concave mirrors.",
+      "reading_order_anchor": "চিত্র 8.29"
+    },
+    {
+      "caption": "চিত্র 8.30: (a) অবতল আয়নায় ফোকাস দূরত্বের বাইরে রাখা একটি বস্তু। (b) অবতল আয়নায় দ্বিগুণ ফোকাস দূরত্বের বাইরে রাখা একটি বস্তু।",
+      "figure_no": "8.30",
+      "box_2d": [
+        415,
+        116,
+        586,
+        882
+      ],
+      "description": "Ray diagrams showing object placement outside focal length and beyond double the focal length for a concave mirror.",
+      "reading_order_anchor": "চিত্র 8.30"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 367,
+  "pdf_page_no": 372,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | Frequency | Cumulative frequency |\n| :--- | :--- | :--- |\n| 30 - 35 | 3 | 3 |\n| 36 - 41 | 10 | 13 |\n| 42 - 47 | 18 | 31 |\n| 48 - 53 | 25 | 56 |\n| 54 - 59 | 8 | 64 |\n| 60 - 65 | 6 | 70 |\n| | $n = 70$ | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, $n = 70$ and $\\frac{n}{2} = \\frac{70}{2}$ or $35$\n\nTherefore, median is the value of 35th term. 35th term lies in the class $(48-53)$. Hence the median class is $(48-53)$.\n\n$\\therefore L = 48, F_c = 31, f_m = 25$ and $h = 6$\n\nSo median $= 48 + (35 - 31) \\times \\frac{6}{25} = 48 + 4 \\times \\frac{6}{25} = 48 + 0.96 = 48.96$\n\nRequired median $48.96$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3) The table useful to draw the frequency polygon is given below: The median of the class prior to the first class would be $26.5$ and the median of the class following the last class would be $68.5$.\n\nNow, taking convenient unit for median values in along the $X$ axis where, $\\text{---}/\\text{---}$ sign indicates $0 - 26.5$ and taking length of side of each square as $2$ of frequency along $Y$ axis, the frequency polygon has been drawn.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | Median | Frequency |\n| :--- | :--- | :--- |\n| 30 - 35 | 32.5 | 3 |\n| 36 - 41 | 38.5 | 10 |\n| 42 - 47 | 44.5 | 18 |\n| 48 - 53 | 50.5 | 25 |\n| 54 - 59 | 56.5 | 8 |\n| 60 - 65 | 62.5 | 6 |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 17.01: Frequency polygon",
+      "figure_no": "17.01",
+      "box_2d": [
+        654,
+        544,
+        902,
+        897
+      ],
+      "description": "A frequency polygon graph plotted on a grid with median values on the X-axis and frequency on the Y-axis.",
+      "reading_order_anchor": "3) The table useful to draw the frequency polygon is given below"
+    }
+  ]
+}

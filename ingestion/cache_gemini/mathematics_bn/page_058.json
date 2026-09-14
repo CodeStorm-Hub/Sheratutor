@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 58,
+  "pdf_page_no": 63,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ভগ্নাংশসহগযুক্ত রাশির উৎপাদক : ভগ্নাংশসহগযুক্ত রাশির উৎপাদকগুলোকে বিভিন্নভাবে প্রকাশ করা যায়। যেমন, $a^3 + \\frac{1}{27} = a^3 + \\frac{1}{3^3} = \\left(a + \\frac{1}{3}\\right) \\left(a^2 - \\frac{a}{3} + \\frac{1}{9}\\right)$\n\nআবার, $a^3 + \\frac{1}{27} = \\frac{1}{27}(27a^3 + 1) = \\frac{1}{27}\\{(3a)^3 + (1)^3\\} = \\frac{1}{27}(3a + 1)(9a^2 - 3a + 1)$\n\nদ্বিতীয় সমাধানে চলক-সংবলিত উৎপাদকগুলোর সহগগুলো পূর্ণসংখ্যা কিন্তু সমাধান দুইটি অভিন্ন।\n\n$\\frac{1}{27}(3a + 1)(9a^2 - 3a + 1) = \\frac{1}{3}(3a + 1) \\times \\frac{1}{9}(9a^2 - 3a + 1)$\n\n$= \\left(a + \\frac{1}{3}\\right) \\left(a^2 - \\frac{a}{3} + \\frac{1}{9}\\right)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৯. $x^3 + 6x^2y + 11xy^2 + 6y^3$ কে উৎপাদকে বিশ্লেষণ কর।\n\nসমাধান: $x^3 + 6x^2y + 11xy^2 + 6y^3$\n\n$= \\{x^3 + 3 \\cdot x^2 \\cdot 2y + 3 \\cdot x \\cdot (2y)^2 + (2y)^3\\} - xy^2 - 2y^3$\n\n$= (x + 2y)^3 - y^2(x + 2y) = (x + 2y)\\{(x + 2y)^2 - y^2\\}$\n\n$= (x + 2y)(x + 2y + y)(x + 2y - y)$\n\n$= (x + 2y)(x + 3y)(x + y) = (x + y)(x + 2y)(x + 3y)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: উৎপাদকে বিশ্লেষণ কর:\n\nক) $\\frac{1}{2}x^2 + \\frac{7}{6}x + \\frac{1}{3}$ খ) $a^3 + \\frac{1}{8}$ গ) $16x^2 - 25y^2 - 8xz + 10yz",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৩.৩\n\nউৎপাদকে বিশ্লেষণ কর (১ - ৩০):\n\n১. $ab(x - y) - bc(x - y)$ ২. $9x^2 + 24x + 16$\n৩. $a^4 - 27a^2 + 1$ ৪. $x^4 - 6x^2y^2 + y^4$\n৫. $(a^2 - b^2)(x^2 - y^2) + 4abxy$ ৬. $4a^2 - 12ab + 9b^2 - 4c^2$\n৭. $a^2 + 6a + 8 - y^2 + 2y$ ৮. $16x^2 - 25y^2 - 8xz + 10yz$\n৯. $x^2 + 13x + 36$ ১০. $x^4 + x^2 - 20$\n১১. $a^2 - 30a + 216$ ১২. $a^8 - a^4 - 2$\n১৩. $x^2 - 37x - 650$ ১৪. $9x^2y^2 - 5xy^2 - 14y^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

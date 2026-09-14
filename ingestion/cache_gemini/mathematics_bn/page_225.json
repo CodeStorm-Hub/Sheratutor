@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 225,
+  "pdf_page_no": 230,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "যোগফল ডানপক্ষের $12$ এর সমান হয়, অর্থাৎ ঐ মান দুইটি দ্বারা সমীকরণটি সিদ্ধ হয়?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন, $2x + y = 12$ সমীকরণটি থেকে নিচের ছকটি পূরণ করি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ এর মান | $y$ এর মান | বামপক্ষ $(2x + y)$ এর মান | ডানপক্ষ |\n| :--- | :--- | :--- | :--- |\n| $-2$ | $16$ | $-4 + 16 = 12$ | $12$ |\n| $0$ | $12$ | $0 + 12 = 12$ | $12$ |\n| $3$ | $6$ | $6 + 6 = 12$ | $12$ |\n| $5$ | $2$ | $10 + 2 = 12$ | $12$ |\n| $\\dots$ | $\\dots$ | $\\dots = 12$ | $12$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমীকরণটির অসংখ্য সমাধান আছে। তার মধ্যে চারটি সমাধান: $(-2, 16), (0, 12), (3, 6), (5, 2)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আবার, অন্য একটি সমীকরণ $x - y = 3$ নিয়ে নিচের ছকটি পূরণ করি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ এর মান | $y$ এর মান | বামপক্ষ $(x - y)$ এর মান | ডানপক্ষ |\n| :--- | :--- | :--- | :--- |\n| $-2$ | $-5$ | $-2 + 5 = 3$ | $3$ |\n| $0$ | $-3$ | $0 + 3 = 3$ | $3$ |\n| $3$ | $0$ | $3 - 0 = 3$ | $3$ |\n| $5$ | $2$ | $5 - 2 = 3$ | $3$ |\n| $\\dots$ | $\\dots$ | $\\dots = 3$ | $3$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমীকরণটির অসংখ্য সমাধান আছে। তার মধ্যে চারটি সমাধান: $(-2, -5), (0, -3), (3, 0), (5, 2)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "যদি আলোচ্য সমীকরণ দুইটিকে একত্রে জোট হিসেবে ধরা হয়, তবে একমাত্র $(5, 2)$ দ্বারা উভয় সমীকরণ যুগপৎ সিদ্ধ হয়। আর অন্য কোনো মান দ্বারা উভয় সমীকরণ যুগপৎ সিদ্ধ হবে না।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অতএব, সমীকরণজোট $2x + y = 12$ এবং $x - y = 3$ এর সমাধান: $(x, y) = (5, 2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $x - 2y + 1 = 0$ ও $2x + y - 3 = 0$ সমীকরণদ্বয়ের প্রত্যেকটির পাঁচটি করে সমাধান লিখ যেন তন্মধ্যে সাধারণ সমাধানটিও থাকে।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### দুই চলকবিশিষ্ট সরল সহসমীকরণের সমাধান যোগ্যতা\n\nক) পূর্বের আলোচিত সমীকরণজোট $\\begin{cases} 2x + y = 12 \\\\ x - y = 3 \\end{cases}$ এর অনন্য (একটি মাত্র) সমাধান পাওয়া গেছে। এরূপ সমীকরণজোটকে সমঞ্জস্য (consistent) বলা হয়। সমীকরণ দুইটির $x$ ও $y$ এর সহগ তুলনা করে (সহগের অনুপাত নিয়ে) পাই, $\\frac{2}{1} \\neq \\frac{1}{-1}$, সমীকরণজোটটির একটি সমীকরণকে অন্যটির মাধ্যমে প্রকাশ করা যায় না। এ জন্য এরূপ সমীকরণকে পরস্পর অনির্ভরশীল (independent) সমীকরণজোট বলা হয়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

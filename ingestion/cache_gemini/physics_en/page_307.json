@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 307,
+  "pdf_page_no": 312,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "After writing in big font size, cover any of $V$, $I$ or $R$ with finger. The value of the covered one will be obtained from the uncovered ones.\n\nAnswer: It is shown in fig 11.05.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.2",
+      "section_title": "Resistance",
+      "chunk_type": "theory",
+      "content_markdown": "Resistance is the obstacle to the flow of current. So the more the length of a material $L$, the higher is the hindrance, and resistance.\n\n$$R \\propto L$$\n\nAgain current can flow more easily through a wide path than through a narrow path. So, the higher the cross sectional area $A$ of a conductor, the lower is the resistance.\n\n$$R \\propto \\frac{1}{A}$$\n\nIf we want to write these two things as an equation rather than in proportional form, a constant $\\rho$ has to be used. So, resistance $R$ is,\n\n$$R = \\rho \\frac{L}{A}$$\n\nWhere the constant $\\rho$ is,\n\n$$\\rho = R \\frac{A}{L}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.05: Ohm's law can be used by this figure. The value of the covered quantity by the finger can be expressed by the two other quantities.",
+      "figure_no": "11.05",
+      "box_2d": [
+        215,
+        142,
+        368,
+        853
+      ],
+      "description": "Four diagrams showing the formula V over I times R, with fingers covering different parts to illustrate Ohm's law relationships.",
+      "reading_order_anchor": "Answer: It is shown in fig 11.05."
+    }
+  ]
+}

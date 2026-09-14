@@ -1,0 +1,74 @@
+{
+  "printed_page_no": 190,
+  "pdf_page_no": 195,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(a) (b) (c)\n\n17 8 r q\n\n15 p E F G\n\nSolution:\n\n1) Hypotenuse 17 units\nopposite side 8 units\nadjacent side 15 units\n\n2) Hypotenuse $p$\nopposite side $r$\nadjacent side $q$\n\n3) Hypotenuse $EF$\nopposite side $EG$\nadjacent side $FG$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. Find the lengths of hypotenuse, the adjacent side and the opposite side for the angles $\\alpha$ and $\\beta$.\n\n7 24\n\n$\\alpha$ $\\beta$\n\n25\n\nSolution:\n\n1) For $\\alpha$ angle\nhypotenuse 25 units\nadjacent side 7 units\nopposite side 24 units\n\n2) For $\\beta$ angle\nhypotenuse 25 units\nadjacent side 24 units\nopposite side 7 units",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work:\n\nIndicate the hypotenuse, adjacent side and opposite for the angle $\\theta$ and $\\phi$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Constancy of ratios of the sides of similar right-angled triangles",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Right-angled triangles for identifying sides",
+      "figure_no": "9.01",
+      "box_2d": [
+        87,
+        255,
+        165,
+        745
+      ],
+      "description": "Three right-angled triangles labeled (a), (b), and (c) showing sides and angles.",
+      "reading_order_anchor": "Solution:"
+    },
+    {
+      "caption": "Fig 9.02: Right-angled triangle for Example 2",
+      "figure_no": "9.02",
+      "box_2d": [
+        395,
+        345,
+        465,
+        655
+      ],
+      "description": "A right-angled triangle with sides 7, 24, 25 and angles alpha and beta.",
+      "reading_order_anchor": "Example 2. Find the lengths of hypotenuse, the adjacent side and the opposite side for the angles $\\alpha$ and $\\beta$."
+    },
+    {
+      "caption": "Fig 9.03: Set of right-angled triangles for Work activity",
+      "figure_no": "9.03",
+      "box_2d": [
+        685,
+        315,
+        855,
+        685
+      ],
+      "description": "Six right-angled triangles labeled (a) through (f) for the Work activity.",
+      "reading_order_anchor": "Work:"
+    }
+  ]
+}

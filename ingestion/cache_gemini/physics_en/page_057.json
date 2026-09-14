@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 57,
+  "pdf_page_no": 62,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2. Now walk from one stationary object to another object on road sides. Count the number of steps you need to travel the distance and multiply it by the distance of your single step to calculate the distance. It will be better if the distance is approximately hundred meters.\n\n3. Now try to measure the speed of a bicycle, rickshaw, tempo or a pedestrian staying at a safe distance beside the road. Since the distance is known, you can measure the required time, then speed can be calculated.\n\n4. To measure the time accurately a stop watch is required, or an ordinary watch will meet up the purpose instead of a stop watch. If you have none, you can use an easy method to measure the time. It takes almost one second to utter the words \"one thousand one\", \"one thousand two\", \"one thousand three\" etc. Counting like this we can measure it.\n\n5. When you will see a cycle, rickshaw, tempo or a pedestrian just passing the first stationary object, you start to count time with a watch, or start counting \"one thousand one\", \"one thousand two\" and so on. Again when you will see this vehicle just passing the second stationary object, you see the time on the watch or stop counting the numbers. Find the required time from the watch or up to which number of words you have counted, This is the time to travel the distance.\n\nCalculate the speed dividing the distance by the time.\n\n**Discussion:** Compose your procedure of measuring time with the time of a watch and see how accurate is it. Guess the percentage of error of your calculated speed considering the degree of accuracy of your step measuring procedure.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Vehicles | No. of steps | Distanced travelled $L$ (m) | Time $t$ (s) | Average speed = $L/t$ (m/s) |\n|---|---|---|---|---|\n| | | | | |\n| | | | | |\n| | | | | |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

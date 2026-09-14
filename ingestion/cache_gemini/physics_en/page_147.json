@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 147,
+  "pdf_page_no": 152,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Scientist Torricelli did this experiment of the pressure of air using mercury in the year 1643. He did not try to make the mercury rise with a straw by mouth. He filled a one ended tube with mercury and he put it in a mercury filled container in an inverted way. After falling continuously the mercury stopped at a height of $76\\text{ cm}$. The vacancy which you try to create while sipping liquid, this vacancy was created in the upper portion of the glass tube. Air is exerting pressure on the mercury and that pressure being transmitted everywhere of the liquid, even down the tube. There is no leakage above the tube, so air cannot exert pressure through that side. Therefore to equalize the pressure there is only a pressure under the tube, which is the pressure due to the weight of $76\\text{ cm}$ mercury column!",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The instrument by which air pressure is measured is called a barometer (Fig 5.10) and till now the pressure of the air is measured by a barometer which uses the process of Torricelli. The height of the mercury column becomes more than $76\\text{ cm}$ if the air pressure increases and if pressure decreases the height become less than $76\\text{ cm}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.4.2",
+      "section_title": "Air Pressure and Weather",
+      "chunk_type": "theory",
+      "content_markdown": "Weather has a close relationship with air pressure. You have certainly heard many times in weather news about the creation of depression in the sea, which means air pressure has been decreased there. Then air starts to come from the nearby areas of high pressure to the low pressure area and sometimes a spin is created, in special situation that spin creates cyclone. You certainly know the news of horrible cyclones in our country.\n\nWhen you will read about heat and temperature in the next chapter, you will know that if the temperature of air is increased, then it expands, as a result density and pressure decrease. Air pressure decreases more effectively if the",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.10: Mercury becomes stationary just at 76 cm height due to air pressure.",
+      "figure_no": "5.10",
+      "box_2d": [
+        172,
+        597,
+        539,
+        868
+      ],
+      "description": "A schematic diagram of Torricelli's barometer showing an inverted glass tube filled with mercury standing in a mercury container, with a marked height of 76 cm.",
+      "reading_order_anchor": "The instrument by which air pressure is measured is called a barometer"
+    }
+  ]
+}

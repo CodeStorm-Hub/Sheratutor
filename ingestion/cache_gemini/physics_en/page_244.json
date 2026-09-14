@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 244,
+  "pdf_page_no": 249,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Refraction of light",
+      "chunk_type": "theory",
+      "content_markdown": "You know that when light moves from one medium to another, three different events may happen . One is reflection, where some amount of light come back to the first medium while entering the second medium and we have discussed this in the previous chapter. Another one is refraction, when light passes from the first medium to the second. We will discuss this in this chapter. Another one is absorption, when some amount of light is absorbed, which we will not discuss here.\n\nIn order to understand refraction a quantity named the refractive index ($n$) is used. We know the velocity of light in a vacuum is $2.99 \\times 10^8 \\text{ ms}^{-1}$ and when it passes through a medium this velocity decreases. In a medium, the factor by which the velocity of light reduces is the refraction of light of that medium .\n\nFor instance the velocity of light in water is $2.26 \\times 10^8 \\text{ ms}^{-1}$ therefore the refractive index of water is\n\n$$n = \\frac{c}{v} = \\frac{2.99 \\times 10^8 \\text{ ms}^{-1}}{2.26 \\times 10^8 \\text{ ms}^{-1}} = 1.33$$\n\ni.e. the velocity of light in a vacuum is $1.33$ times greater than the velocity of light in water .\n\nThe refractive index of the glass fiber in a fiber optic cable is $1.5$.\n\nTherefore, the velocity of light in the fiber is\n\n$$v = 3 \\times 10^8 \\text{ ms}^{-1} / 1.50 = 2.00 \\times 10^8 \\text{ ms}^{-1}$$\n\nRefractive index is a number and it has no unit. As the maximum velocity of light is $c$, the value of $n$ always greater than $1$. In Table 9.01 the refractive index of some substances are given.\n\nNaturally, the refractive index of a vacuum will be $1$.\n\nThe refractive index of air is $1.00029$ which is so close to $1$ that we will take it as $1$ during calculations.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Refraction of light",
+      "chunk_type": "table",
+      "content_markdown": "| Table 9.01: Refractive index of some substance |\n|---|---|\n| Vacuum | 1.00 |\n| Air | 1.00029 |\n| Water | 1.33 |\n| Normal glass | 1.52 |\n| Diamond | 2.42 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Refraction of light",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question :** Calculate the velocity of light in the mediums shown in Table 9.01 .\n\n**Answer :** Velocity of light in any medium: $v = \\frac{c}{n}$",
+      "activity_tag": "Example"
+    }
+  ],
+  "figures": []
+}

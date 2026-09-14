@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 103,
+  "pdf_page_no": 108,
+  "chapter_no": 5,
+  "chapter_title": "এক চলকবিশিষ্ট সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আবার, $x - 1 = 0$ হলে, $x = 1$\n\n$\\therefore$ সমাধান সেট $\\{1, 4\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. সমাধান কর: $\\left(\\frac{x+a}{x-a}\\right)^2 - 5\\left(\\frac{x+a}{x-a}\\right) + 6 = 0$\n\nসমাধান: $\\left(\\frac{x+a}{x-a}\\right)^2 - 5\\left(\\frac{x+a}{x-a}\\right) + 6 = 0 \\dots (1)$\n\nধরি, $\\frac{x+a}{x-a} = y$\n\n$\\therefore (1)$ হতে পাই, $y^2 - 5y + 6 = 0$\n\nবা, $y^2 - 2y - 3y + 6 = 0$\n\nবা, $y(y - 2) - 3(y - 2) = 0$\n\nবা, $(y - 2)(y - 3) = 0$\n\n$\\therefore y - 2 = 0$ হলে, $y = 2$\n\nঅথবা $y - 3 = 0$ হলে, $y = 3$\n\nএখন, $y = 2$ হলে,\n\n$\\frac{x+a}{x-a} = \\frac{2}{1} \\quad [y$ এর মান বসিয়ে$]$\n\nবা, $x + a = 2(x - a) \\quad [\\text{আড়গুণন করে}]$\n\nবা, $x + a = 2x - 2a$\n\nবা, $2x - x = a + 2a$\n\nবা, $x = 3a$\n\nআবার, $y = 3$ হলে,\n\n$\\frac{x+a}{x-a} = \\frac{3}{1}$\n\nবা, $x + a = 3(x - a) \\quad [\\text{আড়গুণন করে}]$\n\nবা, $x + a = 3x - 3a$\n\nবা, $3x - x = a + 3a$\n\nবা, $2x = 4a$\n\nবা, $x = 2a$\n\n$\\therefore$ সমাধান $x = 2a$ অথবা, $x = 3a$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

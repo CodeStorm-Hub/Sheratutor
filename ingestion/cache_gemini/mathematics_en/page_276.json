@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 276,
+  "pdf_page_no": 281,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. Rashid deposits Tk. 1200 from his salary in the first month and every subsequent month, he deposits Tk. 100 more than the previous month.\n\n1) Express the aforesaid problem as a series upto $n$ terms.\n\n2) How much does he deposit in the 18 th month and how much does he deposit in first 18 months?\n\n3) In how many years does he deposit a total of Tk. 106200?\n\nSolution:\n\n1) As per the question, first term of the arithmetic series, $a = 1200$, common difference $d = 100$\n$\\therefore$ second term $= 1200 + 100 = 1300$\nThird term $= 1300 + 100 = 1400$\n$n$-th term $= a + (n - 1)d = 1200 + (n - 1) 100 = 1100 + 100n$\n$\\therefore$ The series is $1200 + 1300 + 1400 + \\dots + (1100 + 100n)$\n\n2) We know, $n$-th term $= a + (n - 1)d$\n$\\therefore$ deposit in the 18 th month $= a + (18 - 1)d = 1200 + 17 \\times 100 = 2900$ Tk.\nAgain, summation of first $n$-terms $= \\frac{n}{2} \\{2a + (n - 1)d\\}$\n$\\therefore$ deposit in first 18 months $= \\frac{18}{2} \\{2 \\times 1200 + (18 - 1) \\times 100\\}$ Tk.\n$= 9(2400 + 1700) = 36900$ Tk.\n\n3) Let, he deposits 106200 Tk. in $n$ months.\nAccording to the question, $\\frac{n}{2} \\{2a + (n - 1)d\\} = 106200$\nor, $\\frac{n}{2} \\{2 \\times 1200 + (n - 1) \\times 100\\} = 106200$\nor, $n(2400 + 100n - 100) = 212400$\nor, $100n^2 + 2300n - 212400 = 0$\nor, $n^2 + 23n - 2124 = 0$\nor, $n^2 + 59n - 36n - 2124 = 0$\nor, $(n + 59)(n - 36) = 0$\nSo, $n = -59$ or, $n = 36$\nNumber of months cannot be negative.\n$\\therefore$ The required time: 36 months or 3 years.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

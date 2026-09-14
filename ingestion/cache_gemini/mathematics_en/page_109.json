@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 109,
+  "pdf_page_no": 114,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ Solution set is $\\{0, \\sqrt{3}\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 10. Solve and write the solution set: $x - 4 = \\frac{x - 4}{x}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: $x - 4 = \\frac{x - 4}{x}$\nor, $x(x - 4) = x - 4$ [by cross-multiplication]\nor, $x(x - 4) - (x - 4) = 0$ [by transposition]\nor, $(x - 4)(x - 1) = 0$\n$\\therefore x - 4 = 0$ or $x - 1 = 0$\nIf $x - 4 = 0, x = 4$\nAgain, if $x - 1 = 0, x = 1$\n$\\therefore$ Solution set is $\\{1, 4\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 11. Solve: $\\left(\\frac{x + a}{x - a}\\right)^2 - 5\\left(\\frac{x + a}{x - a}\\right) + 6 = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: $\\left(\\frac{x + a}{x - a}\\right)^2 - 5\\left(\\frac{x + a}{x - a}\\right) + 6 = 0 \\dots (1)$\nLet, $\\frac{x + a}{x - a} = y$\n$\\therefore$ from(1) we get, $y^2 - 5y + 6 = 0$\nor, $y^2 - 2y - 3y + 6 = 0$\nor, $y(y - 2) - 3(y - 2) = 0$\nor, $(y - 2)(y - 3) = 0$\n$\\therefore$ when, $y - 2 = 0, y = 2$\nor, if $y - 3 = 0, y = 3$\nNow, if $y = 2$,\n$\\frac{x + a}{x - a} = \\frac{2}{1}$ [putting the value of $y$]\nor, $x + a = 2(x - a)$ [by cross-multiplication]\nor, $x + a = 2x - 2a$\nor, $2x - x = a + 2a$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

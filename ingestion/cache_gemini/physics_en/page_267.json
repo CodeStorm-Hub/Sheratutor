@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 267,
+  "pdf_page_no": 272,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "theory",
+      "content_markdown": "## Exercise",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "General questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### General questions\n\n1. The velocity of light in a denser medium is less. Is there anything which can go with the velocity greater than the velocity of light?\n2. At noon why is rainbow not seen ?\n3. Drops of water can work like a lens. What is focal length of this lens ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Mathematical questions\n\n1. If a ray of light passes through glass having shape shown in Figure 9.32, then the critical angle of total internal reflection $65^\\circ$ is found. Due to a drop of liquid at the point of incidence, total internal reflection happened at angle $75^\\circ$. What is the refractive index of the liquid.\n\n2. The focal length of a convex lens made of glass is $10\\text{ cm}$. If a lens of exactly the same size is made of diamond then what will be its focal length?\n\n3. Draw the rays for object $XY$ and show the position of the image as accurately as possible (Figure 9.33).",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.32: Total reflection angle will be changed if liquid drops of different refractive index are placed on the point of incidence.",
+      "figure_no": "9.32",
+      "box_2d": [
+        413,
+        252,
+        506,
+        729
+      ],
+      "description": "Two semicircular glass blocks showing light rays and angles of incidence of $65^\\circ$ and $75^\\circ$.",
+      "reading_order_anchor": "Mathematical questions"
+    },
+    {
+      "caption": "Figure 9.33: An object which is kept at a point outer side of the focal length.",
+      "figure_no": "9.33",
+      "box_2d": [
+        623,
+        580,
+        785,
+        856
+      ],
+      "description": "A ray diagram showing a concave lens and an object $XY$ placed outside the focal length.",
+      "reading_order_anchor": "Mathematical questions"
+    }
+  ]
+}

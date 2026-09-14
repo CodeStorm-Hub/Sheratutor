@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 172,
+  "pdf_page_no": 177,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** Why does a glass crack when hot water is poured in it?\n\n**Answer:** More expansion occurs at different parts of glass when temperature is increased suddenly, this is why the glass cracks.\n\n**Question:** The density of gold is $19.30 \\text{ gm/cc}$ and co-efficient of linear expansion is $14 \\times 10^{-6} \\text{ }^{\\circ}\\text{C}^{-1}$. What will be the density when the temperature is increased to $100 \\text{ }^{\\circ}\\text{C}$?\n\n**Answer:**\nDensity, $\\rho = \\frac{m}{V}$\n\nHere, $V$ is volume and $m$ is mass. Though the mass remains the same, the volume increases when temperature is increased. So, if the temperature is increased to $100^{\\circ}\\text{ C}$, the volume will be :\n\n$$V' = V + \\gamma V(T_2 - T_1) = V(1 + 3\\alpha \\times 100)$$\n$$\\alpha = 14 \\times 10^{-6} \\text{ }^{\\circ}\\text{C}^{-1}$$\n$$V' = V(1 + 4.2 \\times 10^{-3})$$\n$$\\rho' = \\frac{m}{V'} = \\frac{m}{V(1 + 4.2 \\times 10^{-3})} = \\frac{m}{V} \\times 0.9958 = 0.9958\\rho$$\n$$\\rho' = 0.9958 \\times 19.30 \\text{ gm/cc} = 19.22 \\text{ gm/cc}$$\n\n**Question:** What will be the density if the temperature is increased $1000^{\\circ}\\text{C}$ more?\n\n**Answer:** As the melting point of gold is $1064^{\\circ}\\text{C}$, gold will melt.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3.2",
+      "section_title": "Expansion of liquid",
+      "chunk_type": "theory",
+      "content_markdown": "Liquids have no length or area. Liquids have only volume. So the expansion of a liquid means its volume expansion. While measuring the expansion of a liquid, we have to be alert, because a liquid is kept in a container. To measure the co-efficient of expansion when the liquid is heated, the container which is also",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

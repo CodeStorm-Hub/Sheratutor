@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 193,
+  "pdf_page_no": 198,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\\therefore A = \\frac{105^\\circ}{2} = 52\\frac{1}{2}^\\circ$$\nআবার, (২) হতে (১) বিয়োগ করে পাই,\n$$2B = 15^\\circ$$\n$$\\therefore B = \\frac{15^\\circ}{2} = 7\\frac{1}{2}^\\circ$$\nনির্ণেয় $$A = 52\\frac{1}{2}^\\circ$$ ও $$B = 7\\frac{1}{2}^\\circ$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "খ)",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$$\\frac{\\cos A - \\sin A}{\\cos A + \\sin A} = \\frac{1 - \\sqrt{3}}{1 + \\sqrt{3}}$$\nবা, $$\\frac{\\cos A - \\sin A + \\cos A + \\sin A}{\\cos A - \\sin A - \\cos A - \\sin A} = \\frac{1 - \\sqrt{3} + 1 + \\sqrt{3}}{1 - \\sqrt{3} - 1 - \\sqrt{3}}$$ [যোজন-বিয়োজন করে]\nবা, $$\\frac{2\\cos A}{-2\\sin A} = \\frac{2}{-2\\sqrt{3}}$$\nবা, $$\\frac{\\cos A}{\\sin A} = \\frac{1}{\\sqrt{3}}$$\nবা, $$\\cot A = \\cot 60^\\circ$$\n$$\\therefore A = 60^\\circ$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "গ)",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "দেওয়া আছে, $$A = 45^\\circ$$\nপ্রমাণ করতে হবে, $$\\cos 2A = \\frac{1 - \\tan^2 A}{1 + \\tan^2 A}$$\nবামপক্ষ = $$\\cos 2A$$\n$$= \\cos (2 \\times 45^\\circ) = \\cos 90^\\circ = 0$$\nডানপক্ষ = $$\\frac{1 - \\tan^2 A}{1 + \\tan^2 A}$$\n$$= \\frac{1 - \\tan^2 45^\\circ}{1 + \\tan^2 45^\\circ} = \\frac{1 - (1)^2}{1 + (1)^2}$$\n$$= \\frac{0}{2} = 0$$\n$$\\therefore$$ বামপক্ষ = ডানপক্ষ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "ঘ)",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "প্রদত্ত সমীকরণ, $$2\\cos^2 \\theta + 3\\sin \\theta - 3 = 0$$\nবা, $$2(1 - \\sin^2 \\theta) + 3\\sin \\theta - 3 = 0$$\nবা, $$2(1 + \\sin \\theta)(1 - \\sin \\theta) - 3(1 - \\sin \\theta) = 0$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

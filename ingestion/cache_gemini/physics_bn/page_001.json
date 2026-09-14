@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 1,
+  "pdf_page_no": 6,
+  "chapter_no": 1,
+  "chapter_title": "ভৌত রাশি ও পরিমাপ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "প্রথম অধ্যায়",
+      "chunk_type": "theory",
+      "content_markdown": "# প্রথম অধ্যায়\n# ভৌত রাশি এবং তাদের পরিমাপ\n### (Physical Quantities And Their Measurement)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিজ্ঞান বলতেই হয়তো তোমাদের চোখে বিজ্ঞানের নানা যন্ত্রপাতি, আবিষ্কার, গবেষণা, ল্যাবরেটরি—এসবের দৃশ্য ফুটে ওঠে। বিজ্ঞানের আসল বিষয় কিন্তু যন্ত্রপাতি, গবেষণা বা ল্যাবরেটরি নয়, বিজ্ঞানের আসল বিষয় হচ্ছে তার দৃষ্টিভঙ্গি। এই সভ্যতার সবচেয়ে বড়ো অবদান রেখেছে বিজ্ঞান আর সেটি এসেছে পৃথিবীর মানুষের বৈজ্ঞানিক দৃষ্টিভঙ্গি থেকে। বিজ্ঞানের রহস্য অনুসন্ধানের জন্য কখনো সেটি যুক্তিতর্ক দিয়ে বিশ্লেষণ করা হয়, কখনো ল্যাবরেটরিতে পরীক্ষা-নিরীক্ষা করা হয়, আবার কখনো প্রকৃতিতে এই প্রক্রিয়াটিকে খুঁটিয়ে খুঁটিয়ে পর্যবেক্ষণ করা হয়। সেই প্রাচীনকাল থেকে শুরু করে এখন পর্যন্ত অসংখ্য বিজ্ঞানী মিলে বিজ্ঞানকে এগিয়ে নিয়ে যাচ্ছেন। এই অধ্যায়ে পদার্থবিজ্ঞানের এই ক্রমবিকাশের একটি ধারাবাহিক বর্ণনা দেওয়া হয়েছে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 1.1: অত্যন্ত নিখুঁতভাবে সময় মাপার জন্য তৈরি অ্যাটমিক ক্লক",
+      "figure_no": "1.1",
+      "box_2d": [
+        290,
+        103,
+        676,
+        892
+      ],
+      "description": "An atomic clock used for precise time measurement, showing a long metal cylinder with various electronic equipment and control panels arranged on a workbench.",
+      "reading_order_anchor": "বিজ্ঞান বলতেই হয়তো তোমাদের চোখে..."
+    }
+  ]
+}

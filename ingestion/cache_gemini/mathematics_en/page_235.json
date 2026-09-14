@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 235,
+  "pdf_page_no": 240,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$2 : 3$; Soni's earning : Samir's earning $= 1500 : 2500 = 3 : 5$. Hence, Roni's : Soni's : Sami's earning $= 2 : 3 : 5$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If two ratios are of the form $a : b$ and $b : c$, they can be re-written in the form $a : b : c$. This is called continued ratio. Any two or more ratios can be expressed in this form. It is noted that if two ratios are to be expressed in the form $a : b : c$, the antecedent of the first ratio and the subsequent of the second ratio need to be equal. For example, if two ratios $2 : 3$ and $4 : 3$ are to be put in the form $a : b : c$, the subsequent quantity of the first ratio is to be made equal to the antecedent quantity of the second ratio. That is, those quantities are to be made equal to their L.C.M.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, L.C.M of $3$ and $4$ is $12$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, $2 : 3 = \\frac{2}{3} = \\frac{2 \\times 4}{3 \\times 4} = \\frac{8}{12} = 8 : 12$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again, $4 : 3 = \\frac{4}{3} = \\frac{4 \\times 3}{3 \\times 3} = \\frac{12}{9} = 12 : 9$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, if the ratios $2 : 3$ and $4 : 3$ are expressed in the form, $a : b : c$ will be $8 : 12 : 9$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "It is to be noted that if the earning of Sami in the above example is $1125$, the ratio of their earnings will be $8 : 12 : 9$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 12. If $a, b, c$ are quantities of same kind and $a : b = 3 : 4$, $b : c = 6 : 7$, what will be $a : b : c$?\n\nSolution: $a : b = \\frac{3}{4} = \\frac{3 \\times 3}{4 \\times 3} = \\frac{9}{12}$ and $b : c = \\frac{6}{7} = \\frac{6 \\times 2}{7 \\times 2} = \\frac{12}{14}$ [L.C.M. of $4$ and $6$ is $12$]\n\n$\\therefore a : b : c = 9 : 12 : 14$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 13. The ratio of angles of a triangle is $3 : 4 : 5$. Express the angles in degree.\n\nSolution: Let the angles, according to given ratio, be $3x$, $4x$ and $5x$. Sum of three angles $= 180^{\\circ}$. According to the problem, $3x + 4x + 5x = 180^{\\circ}$ or, $12x = 180^{\\circ}$ or, $x = 15^{\\circ}$. Therefore, the angles are $3x = 3 \\times 15^{\\circ} = 45^{\\circ}$\n\n$4x = 4 \\times 15^{\\circ} = 60^{\\circ}$\n\nand $5x = 5 \\times 15^{\\circ} = 75^{\\circ}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

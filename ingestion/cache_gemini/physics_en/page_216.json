@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 216,
+  "pdf_page_no": 221,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": "8.2.1",
+      "section_title": "Laws of Reflection",
+      "chunk_type": "theory",
+      "content_markdown": "Before understanding the laws of reflection, we need to define some terms. When lights incident from one medium to another, for the time being we assume that it is a plane surface. To understand better, we will assume that the light that reflects is a light ray or a light beam. When a light ray from the first medium to the second medium is incident on a point, first we have to imagine a perpendicular at that point which is called a normal. Then imagine a plane that contains this incident ray and the normal (Figure 8.03).\n\nThe ray, which is incident at a point, from the first to the second medium is called the incident ray ($XO$). The ray which is reflected ($OX'$) is called the reflected ray. (You are realizing that the ray which enters the second medium is the refracted ray- we will not discuss it in this chapter). The angle between the incident ray and the normal is called the incident angle ($\theta_i$) and the angle between the reflected ray and the normal is the reflected angle ($\theta_r$). Now we can state the two laws of reflection:\n\n**First Law:** The reflected ray will be in the plane which we imagined through the incident ray and the normal.\n\n**Second Law:** The reflected angle is equal to the incident angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Question: Two mirrors are placed as shown in figure 8.04. A candle is placed at point X between the mirrors. Where image of the candle will be formed?",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figur 8.03: Reflection of light from first to second medium",
+      "figure_no": "8.03",
+      "box_2d": [
+        311,
+        477,
+        592,
+        874
+      ],
+      "description": "A 3D schematic diagram showing a light ray incident from a first medium to a second medium, striking a point on the boundary with a normal, an incident ray XO, a reflected ray OX', incident angle Θ_i, and reflected angle Θ_r.",
+      "reading_order_anchor": "Before understanding the laws of reflection, we need to define some terms."
+    }
+  ]
+}

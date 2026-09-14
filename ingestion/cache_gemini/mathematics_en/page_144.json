@@ -1,0 +1,118 @@
+{
+  "printed_page_no": 144,
+  "pdf_page_no": 149,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1) $60^\\circ$ 2) $120^\\circ$ 3) $180^\\circ$ 4) $210^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. Prove that, the triangle formed by joining the mid points of the sides of an equilateral triangle is also equilateral.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. Prove that, the three medians of an equilateral triangle are equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. Prove that, the sum of any two exterior angles of a triangle is greater than two right angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. In $\\triangle ABC$, $D$ is the mid point of side $BC$. Prove that, $AB + AC > 2AD$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. In the figure given, $\\angle C = 1$ right angle and $\\angle B = 2\\angle A$. Prove that, $AB = 2BC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. Prove that, the exterior angle so formed by producing any side of a triangle is equal to the sum of the interior opposite angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. Prove that, the difference between any two sides of a triangle is less than the third.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. In the figure, in triangle $ABC$, $\\angle B = 1$ right angle and $D$ is the mid point of hypotenuse $AC$. Prove that, $BD = \\frac{1}{2}AC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. In $\\triangle ABC$, $AB > AC$ and bisector of $\\angle A$ is $AD$ which intersects side $BC$ at point $D$. Prove that, $\\angle ADB$ is obtuse angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "18. Prove that, any point on the perpendicular bisector of a line segment is equidistant from the terminal points of that line segment",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "19. In triangle $ABC$, $\\angle A = 1$ right angle. Mid point of $BC$ is $D$\n1) Draw a triangle $ABC$ with given information.\n2) Show that, $AB + AC > 2AD$\n3) Prove that, $AD = \\frac{1}{2}BC$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Right-angled triangle ABC",
+      "figure_no": "6.01",
+      "box_2d": [
+        297,
+        743,
+        452,
+        886
+      ],
+      "description": "A right-angled triangle ABC with the right angle at C.",
+      "reading_order_anchor": "13. In the figure given, \\angle C = 1 right angle and \\angle B = 2\\angle A. Prove that, AB = 2BC"
+    },
+    {
+      "caption": "Fig 6.02: Triangle ABC with midpoint D on hypotenuse AC",
+      "figure_no": "6.02",
+      "box_2d": [
+        588,
+        758,
+        664,
+        872
+      ],
+      "description": "A right-angled triangle ABC with D as the midpoint of the hypotenuse AC.",
+      "reading_order_anchor": "16. In the figure, in triangle ABC, \\angle B = 1 right angle and D is the mid point of hypotenuse AC. Prove that, BD = \\frac{1}{2}AC"
+    }
+  ]
+}

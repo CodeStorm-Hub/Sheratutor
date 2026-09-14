@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 54,
+  "pdf_page_no": 59,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Procedure:**\n\n1. Taking a plank or a bench or a table, measure its length ($L$) by a ruler or meter scale. This distance will be the distance travelled by the object.\n\n2. By placing a book under one end of the plane plank or bench or table let us make it inclined. Measure the height ($h$) of that end. Dividing height by length, find the slope ($\\sin\\theta = h/L$).\n\n3. Put a marble or a pencil or a pen on the inclined plane and make sure that it can roll.\n\n4. You have to measure the time taken by the marble to travel the length of the inclined plane. A stop watch is needed to measure the time accurately. But it is unlikely to have a stop watch available. (Now a days stop watch option is available in many mobile phones. You use the method given below). If you have a normal watch instead of a stop watch, you will be at a disadvantage. Because normal watch cannot measure less than a second. We need to measure more accurately. If we have no stop watch, we can try to measure the time by other means. How many numbers (one, two, three, .....) can you count in fifteen seconds at normal speed?\n\nLet us consider if you count up to forty five in fifteen seconds, then we can assume to utter every number in approximately $15/45 = 1/3$ second.\n\nLet the marble or pencil or pen move on the inclined plane and start counting one, two, three and so on. Up to which number could you count for the marble, pencil or pen to reach the lower end of the inclined plane. Calculate the actual time by multiplying with the approximate multiple.\n\n5. Repeat the experiment several times and calculate the average time.\n\n6. Calculate the speed, dividing the length of inclined plane by the average time. This is average speed.\n\n7. Increase the slope of the inclined plane by placing another book. Measure the new height after placing the second book. Calculate the slope for this height.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

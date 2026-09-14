@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 144,
+  "pdf_page_no": 149,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You will observe that the casket will not be twisted only from the upper side, it will be twisted from all directions. If the pressure comes only from the upper side the casket will be twisted only from the upper side. As the pressure is same in all directions, so it comes from all directions, and the casket is twisted from all directions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Take an empty one liter water plastic bottle. Pour some boiling water carefully in the bottle and shake the water. When the whole air inside the bottle becomes hot, close the cap of the bottle tightly. Now wait for a while or keep the bottle in the flow of cold water and make it cold. Some vacancy will be created inside the bottle and it will be folded and twisted due to the pressure of the outside air. (Figure. 5.08)",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.07: (a) After evacuating the air from the cube shown in (a) by pumping, if the air exerts pressure only from the upper side, the cube would become flat as shown in (b). But the pressure comes from all directions so the cube is compressed as like the picture shown in (c)",
+      "figure_no": "5.07",
+      "box_2d": [
+        238,
+        114,
+        420,
+        878
+      ],
+      "description": "Diagram showing three cube states: (a) normal cube with a pump needle, (b) flat compressed cube from top pressure, and (c) irregularly compressed cube from all-directional pressure.",
+      "reading_order_anchor": "You will observe that the casket will not be twisted only from the upper side..."
+    },
+    {
+      "caption": "Figure 5.08: Due to air pressure the water bottle is folded and twisted",
+      "figure_no": "5.08",
+      "box_2d": [
+        622,
+        140,
+        844,
+        417
+      ],
+      "description": "Photographs of a plastic water bottle before and after being crumpled and twisted due to internal vacuum and external air pressure.",
+      "reading_order_anchor": "Take an empty one liter water plastic bottle..."
+    }
+  ]
+}

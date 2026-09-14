@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 297,
+  "pdf_page_no": 302,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. On which factor does the electrostatic force between two charges not depend?\n\ni) the distance between the charges\n\nii) the nature of the medium in which the charges are placed\n\niii) the masses of the charges\n\nWhich one of the following is correct?\n\na) i and ii\n\nb) iii\n\nc) ii and iii\n\nd) i, ii, and iii\n\n3. The unit of electric field intensity is-\n\na) $N$\n\nb) $N\\text{ m}$\n\nc) $N\\text{ m}^{-1}$\n\nd) $N\\text{ C}^{-1}$\n\n4. Volt is the unit of what?\n\na) electric field\n\nb) electric potential\n\nc) electric charge\n\nd) electric current\n\n5. In Figure 10.18\n\ni) some charges will flow from sphere A to sphere B\n\nii) some charges will flow from sphere B to sphere A\n\niii) the charge difference remains same\n\nWhich one of the following is correct?\n\na) i\n\nb) ii\n\nc) iii\n\nd) i, ii, and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Rima, after combing her hair, observes that her comb attracts small pieces of paper. Shima says that it happens because the comb is positively charged. Rima says that the comb is charged negatively. To solve the problem, Rima and Shima look for their physics teacher and find him in the physics laboratory. Hearing everything he asks them to find the nature of the charge with the help of an electroscope.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.18",
+      "figure_no": "10.18",
+      "box_2d": [
+        492,
+        584,
+        634,
+        858
+      ],
+      "description": "Two conducting spheres A and B with potential differences and charges mounted on insulating wooden stands.",
+      "reading_order_anchor": "5. In Figure 10.18"
+    }
+  ]
+}

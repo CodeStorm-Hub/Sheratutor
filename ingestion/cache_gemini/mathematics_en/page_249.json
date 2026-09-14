@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 249,
+  "pdf_page_no": 254,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. Solve by the method of elimination:\n$$2x + y = 8$$\n$$3x - 2y = 5$$\n\n**Note:** To show the difference between the methods of substitution and elimination, same equations of example 2 have been taken in this example 3.\n\n**Solution:** Given equations are:\n$$2x + y = 8 \\dots (1)$$\n$$3x - 2y = 5 \\dots (2)$$\n\nMultiplying both sides of equation (1) by 2, $$4x + 2y = 16 \\dots (3)$$\nAdding (2) and (3),\n$$7x = 21$$\nor, $$x = 3$$\n\nPutting the value of $$x$$ in (1) we get,\n$$2 \\times 3 + y = 8$$\nor, $$y = 8 - 6$$\nor, $$y = 2$$\n\n$$\\therefore$$ solution $$(x, y) = (3, 2)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Elimination method:** Conveniently one equation or both equations are multiplied by such a number so that after multiplication, absolute values of the coefficients of the same variable become equal. Then as per need, if the equations are added or subtracted, the variable with equal coefficient will be eliminated. Then, solving the obtained equation, the value of the existing variable will be found. If that value is put conveniently in any of the given equations, value of the other variable will be found.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Cross multiplication method:**\nWe consider the following two equations:\n$$a_1x + b_1y + c_1 = 0 \\dots (1)$$\n$$a_2x + b_2y + c_2 = 0 \\dots (2)$$\n\nMultiplying equation (1) by $$b_2$$ and equation (2) by $$b_1$$ we get,\n$$a_1b_2x + b_1b_2y + b_2c_1 = 0 \\dots (3)$$\n$$a_2b_1x + b_1b_2y + b_1c_2 = 0 \\dots (4)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

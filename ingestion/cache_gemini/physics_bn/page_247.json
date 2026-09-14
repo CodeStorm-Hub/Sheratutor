@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 247,
+  "pdf_page_no": 252,
+  "chapter_no": 9,
+  "chapter_title": "আলোর প্রতিসরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "চিত্র ৯.০৪: (a) আলো $45^\\circ$ কোণে আপতিত হচ্ছে (b) আলো $60^\\circ$ কোণে আপতিত হয়ে $45^\\circ$ কোণে প্রতিসরিত হচ্ছে।\n\nউত্তর: আমরা জানি $n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2$\n\n$$1 \\times \\sin 60^\\circ = n_2 \\sin 45^\\circ$$\n\n$$n_2 = \\frac{\\sin 60^\\circ}{\\sin 45^\\circ} = 1.22$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1.3",
+      "section_title": "আপেক্ষিক প্রতিসরণাঙ্ক",
+      "chunk_type": "theory",
+      "content_markdown": "আমরা বলেছি কোনো মাধ্যমের প্রতিসরণাঙ্ক সব সময় 1 থেকে বেশি হয়। কারণ প্রতিসরণাঙ্ক হলো শূন্য মাধ্যমে আলোর বেগের তুলনায় সেই মাধ্যমে আলোর বেগের মান। মাঝে মাঝে এক মাধ্যমের প্রতিসরণাঙ্কের তুলনায় অন্য মাধ্যমের প্রতিসরণাঙ্ক প্রকাশ করা হয়, তখন কোনটির সাথে কোনটির তুলনা করা হয়েছে তার ওপর নির্ভর করে সেটা 1 থেকে কম হতে পারে।\n\nযেমন পানিকে প্রথম মাধ্যম এবং কাচকে দ্বিতীয় মাধ্যম ধরলে (চিত্র ৯.০৫)\n$$n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2$$\n$$n_1 = 1.33$$\n$$n_2 = 1.52$$\n\nসুতরাং পানির সাপেক্ষে কাচের প্রতিসরণাঙ্ক $\\frac{v_1}{v_2} = \\frac{v_0 / v_2}{v_0 / v_1} = \\frac{n_2}{n_1} = \\frac{\\sin\\theta_1}{\\sin\\theta_2} = 1.14$\n\nযেটি 1 থেকে বেশি। এখানে $v_0$ বলতে শূন্য মাধ্যমে আলোর বেগ বোঝানো হয়েছে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০৪: (a) আলো ৪5° কোণে আপতিত হচ্ছে (b) আলো 60° কোণে আপতিত হয়ে 45° কোণে প্রতিসরিত হচ্ছে।",
+      "figure_no": "9.04",
+      "box_2d": [
+        103,
+        246,
+        344,
+        769
+      ],
+      "description": "Ray diagrams showing refraction of light at different angles of incidence and refraction.",
+      "reading_order_anchor": "চিত্র ৯.০৪"
+    }
+  ]
+}

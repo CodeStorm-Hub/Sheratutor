@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 325,
+  "pdf_page_no": 330,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the figure, current is supplied to the lights and fan from the 5A circuit breaker. 15A is connected with cooking burner. 30A circuit breaker is connected to the plug points of the house. We have certainly noticed that this part is like a ring which means flow of current can be through two different paths. In this part the ground is shown differently (green color).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "What steps should be taken to minimize the dissipation of electricity? Describe these in a nice poster. To create awareness among all with the posters, make arrangements to display them.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.17: Possible circuit for supplying electricity to a house.",
+      "figure_no": "11.17",
+      "box_2d": [
+        245,
+        143,
+        515,
+        857
+      ],
+      "description": "A schematic diagram showing the wiring of a house, including the consumer unit, circuit breakers for different appliances (5A, 15A, 30A), and the ring circuit for sockets.",
+      "reading_order_anchor": "In the figure, current is supplied to the lights and fan from the 5A circuit breaker."
+    }
+  ]
+}

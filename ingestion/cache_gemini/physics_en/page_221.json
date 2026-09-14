@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 221,
+  "pdf_page_no": 226,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Later, we will see that sometimes images are really formed by converging light and light rays come from there. This type of image is called a real image and it is possible to do many things with this type of image. In case of the image formed in a mirror, light does not actually come from the image, so this is virtual image.\n\nFigure 8.10 shows how an image is formed for an extended object instead of a single point. Light coming from points $X$ and $Y$ reflect from the mirror and form virtual images at point $X'$ and $Y'$ respectively; light appears to be coming from $X'$ and $Y'$. You can clearly see that length of $XY$ is equal to the length $X'Y'$. If the arrow head of $XY$ is on top, the arrow head of $X'Y'$ will also be on the top.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "So the image in a mirror is:\n(a) Equidistant from the mirror\n(b) Virtual\n(c) Straight and\n(d) Equal to the size of the object",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We are reminding these separately, because later we will find that if we use mirrors of other types instead of plane mirrors, the image may form at different distances, may be real, may be inverted, may even be small or large.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Kaleidoscope can be made using three glass pieces.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.10: XY object's image X'Y'",
+      "figure_no": "8.10",
+      "box_2d": [
+        353,
+        497,
+        508,
+        868
+      ],
+      "description": "Ray diagram showing the formation of a virtual image X'Y' of an extended object XY in a plane mirror.",
+      "reading_order_anchor": "Figure 8.10 shows how an image is formed for an extended object instead of a single point."
+    },
+    {
+      "caption": "Figure 8.11: Kaleidoscope can be made using three glass pieces.",
+      "figure_no": "8.11",
+      "box_2d": [
+        723,
+        223,
+        907,
+        765
+      ],
+      "description": "Illustration of a kaleidoscope made using three glass pieces and a girl looking through it.",
+      "reading_order_anchor": "Kaleidoscope can be made using three glass pieces."
+    }
+  ]
+}

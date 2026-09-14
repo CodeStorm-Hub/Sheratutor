@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 266,
+  "pdf_page_no": 271,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": "11.2",
+      "section_title": "Hydrocarbons",
+      "chunk_type": "theory",
+      "content_markdown": "Hydrocarbon is a compound containing only carbon and hydrogen. Example: Methane ($\\text{CH}_4$), Ethene ($\\text{C}_2\\text{H}_4$), Cyclohexane ($\\text{C}_6\\text{H}_{12}$), Benzene ($\\text{C}_6\\text{H}_6$) etc. You can see that the compounds have no molecule other than carbon and hydrogen.\n\nHydrocarbons are of mainly two types: (i) Aliphatic Hydrocarbon and (ii) Aromatic Hydrocarbon",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.1",
+      "section_title": "Aliphatic Hydrocarbons",
+      "chunk_type": "theory",
+      "content_markdown": "The word ‘Aliphatic’ means something fatty. It is called Aliphatic Hydrocarbon because this type of hydrocarbon is mainly obtained from animal fat.\n\nAliphatic Hydrocarbons are of two types — (i) Open Chain Hydrocarbon and (ii) Closed Chain Hydrocarbon.\n\n**(i) Open Chain Hydrocarbon**\n\nThese hydrocarbons are called Open Chain Hydrocarbons because two terminal carbons of their carbon chains remain in an open state. Example:\n\nButane: $\\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{CH}_3$, Ethene: $\\text{CH}_2=\\text{CH}_2$\n\nAgain these Open Chain Hydrocarbons are of two types - Saturated and Unsaturated.\n\n**(a) Saturated Open Chain Hydrocarbons:** The Open Chain Hydrocarbon which has only carbon-carbon single bond (C-C) is called Saturated Open Chain Hydrocarbon. Example:\n\nPropane: $\\text{CH}_3-\\text{CH}_2-\\text{CH}_3$, Pentane: $\\text{CH}_3-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_3$\n\n**(b) Unsaturated Open Chain Hydrocarbons:** The Open Chain Hydrocarbon which has one or more than one carbon-carbon double-bond or carbon-carbon triple-bond is called Unsaturated Open Chain Hydrocarbon. Example: Ethyne ($\\text{CH}\\equiv\\text{CH}$)\n\nUnsaturated Open Chain Hydrocarbons may have carbon-carbon single bond besides carbon double-bond or triple-bond.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

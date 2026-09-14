@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 109,
+  "pdf_page_no": 114,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Answer: This has been done before with the help of the laws of motion. Now it can be done by the transformation of energy.\n\nKinetic energy: $$\\text{Kinetic energy} = \\frac{1}{2}mv^2 = \\frac{1}{2} \\times 10 \\times 100^2\\text{ J} = 50,000\\text{ J}$$\n\nWhen the object reaches a height $h$, at this height the kinetic energy has been totally converted into potential energy. So,\n\n$$mgh = 50,000\\text{ J}$$\n\n$$h = \\frac{50,000\\text{ J}}{mg} = \\frac{50,000}{10 \\times 9.8}\\text{ m} = 510\\text{ m}$$\n\nFor your understanding the mass $10\\text{ kg}$ is mentioned here. But it does not depend on the mass. With any mass we will get this answer. For this we might have used the formula $v^2 = 2gh$ directly.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** A body of mass $5\\text{ kg}$ is thrown in the upward direction with a velocity of $50\\text{ m/s}$. At what height will the potential and kinetic energy be the same?\n\n**Answer:** Initial kinetic energy of the body is\n\n$$T_0 = \\frac{1}{2}mv^2 = \\frac{1}{2} \\times 5 \\times 50^2\\text{ J} = 6,250\\text{ J}$$\n\nWhen kinetic energy equals potential energy, then for height $h$, we can say\n\n$\\text{kinetic energy} = \\text{potential energy}$\n\n$\\text{kinetic energy} + \\text{potential energy} = \\text{primary kinetic energy}$\n\n$\\text{kinetic energy} = \\text{potential energy} = \\frac{\\text{primary kinetic energy}}{2}$\n\n$$mgh = \\frac{6250\\text{ J}}{2}$$\n\n$$h = \\frac{6250\\text{ J}}{2 \\times mg} = \\frac{6250}{2 \\times 5 \\times 9.8}\\text{ m} = 63.78\\text{ m}$$\n\nYou may have already guessed that this problem also does not depend on the mass.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 225,
+  "pdf_page_no": 230,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3. If $a : b = c : d$, then, $\\frac{a + b}{b} = \\frac{c + d}{d}$ [Componendo]\n\n**Proof:** Given that,\n$\\frac{a}{b} = \\frac{c}{d}$\n\nor, $\\frac{a}{b} + 1 = \\frac{c}{d} + 1$ [adding 1 to both the sides]\n\ni.e., $\\frac{a + b}{b} = \\frac{c + d}{d}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "4. If $a : b = c : d$, then $\\frac{a - b}{b} = \\frac{c - d}{d}$ [dividendo]\n\n**Proof:** Given that,\n$\\frac{a}{b} = \\frac{c}{d}$\n\nor, $\\frac{a}{b} - 1 = \\frac{c}{d} - 1$ [subtracting 1 from both the sides]\n\ni.e., $\\frac{a - b}{b} = \\frac{c - d}{d}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "5. If $a : b = c : d$, then $\\frac{a + b}{a - b} = \\frac{c + d}{c - d}$ [componendo-Dividendo]\n\n**Proof:** Given that, $a : b = c : d$\n\nor, $\\frac{a}{b} = \\frac{c}{d}$\n\nBy componendo, $\\frac{a + b}{b} = \\frac{c + d}{d} \\dots (1)$\n\nAgain, by dividendo, $\\frac{a - b}{b} = \\frac{c - d}{d}$\n\nor, $\\frac{b}{a - b} = \\frac{d}{c - d}$ [[by invertendo]] $\\dots (2)$\n\nTherefore, $\\frac{a + b}{b} \\times \\frac{b}{a - b} = \\frac{c + d}{d} \\times \\frac{d}{c - d}$ [multiplying(1) & (2)]\n\ni.e., $\\frac{a + b}{a - b} = \\frac{c + d}{c - d}$ [here $a \\neq b, c \\neq d$]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "6. If $\\frac{a}{b} = \\frac{c}{d} = \\frac{e}{f} = \\frac{g}{h}$, then each of the ratio = $\\frac{a + c + e + g}{b + d + f + h}$\n\n**Proof:** let,\n$\\frac{a}{b} = \\frac{c}{d} = \\frac{e}{f} = \\frac{g}{h} = k$\n\n$\\therefore a = bk, c = dk, e = fk, g = hk$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

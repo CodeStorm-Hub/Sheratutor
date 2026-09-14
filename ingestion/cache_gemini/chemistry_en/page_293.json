@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 293,
+  "pdf_page_no": 298,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "applied on toilets, basins, commode etc. sodium hydroxide reacts with oily and protein materials and sodium hypochlorite reacts with substances and germs of different colours and damages the efficiency of these germs and other substances.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Mechanism of cleaning toilet with toilet cleaner",
+      "chunk_type": "theory",
+      "content_markdown": "When toilet cleaner is poured on the toilet, different constituents of the toilet cleaner react in different ways. Toilets become clean because of the alkaline property of $\\text{NaOH}$, the main element of the toilet cleaner.\n\nSodium hypochlorite ($\\text{NaOCl}$) of the toilet cleaner reacts with water and turns into Hypochlorous acid ($\\text{HOCl}$) which breaks up and produces nascent oxygen. This nascent oxygen transforms colourful substances into colourless ones and kills germs.\n\n$$\\text{NaOCl} + \\text{H}_2\\text{O} \\longrightarrow \\text{NaOH} + \\text{HOCl}$$\n$$\\text{HOCl} \\longrightarrow \\text{HCl} + [\\text{O}]$$\n$$\\text{Colourful Materials} + [\\text{O}] \\longrightarrow \\text{colourless Materials}$$\n$$\\text{Germs} + [\\text{O}] \\longrightarrow \\text{Dead Germs}$$\n\nThus toilet cleaners transform colourful substances into colourless ones and kills germs. Oxygen atom in third brackets refers to nascent oxygen. Nascent Oxygen = $[\\text{O}]$, Nascent oxygen refers to a newly formed, temporary reactive oxygen atom that has not yet combined to form an $\\text{O}_2$ molecule.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2",
+      "section_title": "Soap",
+      "chunk_type": "theory",
+      "content_markdown": "Generally soap is the sodium salt ($\\text{R-COONa}$) of higher fatty acid or Potassium salt ($\\text{R-COOK}$) of higher fatty acid. Here $\\text{R}$ is called an alkyl radical. General formula of $\\text{R}$ is $\\text{C}_n\\text{H}_{2n+1}$ and the value of $n$ is 12 to 18. Example: Formula of Sodium Stearate soap is $\\text{C}_{17}\\text{H}_{35}\\text{COONa}$ and the formula of Potassium Stearate Soap is $\\text{C}_{17}\\text{H}_{35}\\text{COOK}$. Sodium hydroxide or potassium hydroxide reacts with oil or fat and produces soap and glycerine. The procedure of making soap and glycerine is called saponification. If $\\text{NaCl}$ is added to the mixture of soap and glycerine obtained from the saponification process, glycerine stays at the bottom of the pot and the molecules of soap gather around $\\text{NaCl}$ and floats up in the form of cakes. It is called soaps cake. The soap cake is filtered by strainers and then poured into moulds to make soaps of different sizes.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

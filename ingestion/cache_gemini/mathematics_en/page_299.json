@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 299,
+  "pdf_page_no": 304,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:**\n\nStep 1. $\\triangle ABC = \\frac{1}{2} \\times BC \\times h$ and $\\triangle DEF = \\frac{1}{2} \\times EF \\times p$\n\n$$\\frac{\\triangle ABC}{\\triangle DEF} = \\frac{\\frac{1}{2} \\times BC \\times h}{\\frac{1}{2} \\times EF \\times p} = \\frac{h}{p} \\times \\frac{BC}{EF}$$\n\nStep 2. But in the triangles $ABG$ and $DEH$, $\\angle B = \\angle E$, $\\angle AGB = \\angle DHE$ [1 right angle]\n\n$$\\therefore \\angle BAG = \\angle EDH$$\n\n$$\\therefore \\triangle ABC$ and $\\triangle DEF$ are equiangular, so similar.\n\n$$\\therefore \\frac{h}{p} = \\frac{AB}{DE} = \\frac{BC}{EF}$ [as $\\triangle ABC$ and $\\triangle DEF$ are similar]\n\nStep 3. $\\frac{\\triangle ABC}{\\triangle DEF} = \\frac{h}{p} \\times \\frac{BC}{EF} = \\frac{BC}{EF} \\times \\frac{BC}{EF} = \\frac{BC^2}{EF^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Internal Division of a Line Segment in definite ratio",
+      "chunk_type": "theory",
+      "content_markdown": "If $A$ and $B$ are two different points in a plane and $m$ and $n$ are two natural numbers, we acknowledge that there exists a unique point $X$ lying between $A$ and $B$ and $AX : XB = m : n$.\n\nIn the above figure, the line segment $AB$ is divided at $X$ internally in the ratio $m : n$ i.e. $AX : XB = m : n$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Internal division of a line segment",
+      "figure_no": "14.01",
+      "box_2d": [
+        765,
+        378,
+        795,
+        620
+      ],
+      "description": "A line segment AB with a point X between A and B, labeled with segments m and n.",
+      "reading_order_anchor": "Internal Division of a Line Segment in definite ratio"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 101,
+  "pdf_page_no": 106,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The rules stated above may be expressed in terms of algebraic expressions as follows:\nIf $x = a$ and $c \\neq 0$,\n(i) $x + c = a + c$ (ii) $x - c = a - c$ (iii) $xc = ac$ (iv) $\\frac{x}{c} = \\frac{a}{c}$\n\nBesides, if $a, b$ and $c$ are three quantities, if $a = b + c$, $a - b = c$ and if $a + c = b$, $a = b - c$.\n\nThis law is known as transposition law and different equations can be solved by applying this law. If the terms of an equation are in fractional form and if the degree of the variables in each numerator is 1 and the denominator in each term is constant, such equations are linear equations.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. Solve: $\\frac{5x}{7} - \\frac{4}{5} = \\frac{x}{5} - \\frac{2}{7}$\n\nSolution: $\\frac{5x}{7} - \\frac{4}{5} = \\frac{x}{5} - \\frac{2}{7}$ or, $\\frac{5x}{7} - \\frac{x}{5} = \\frac{4}{5} - \\frac{2}{7}$ [by transposition]\n\nor, $\\frac{25x - 7x}{35} = \\frac{28 - 10}{35}$ or, $\\frac{18x}{35} = \\frac{18}{35}$\n\nor, $18x = 18$ or, $x = 1$\n\n$\\therefore$ Solution is $x = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, we shall solve such equations which are in quadratic form. These equations are transformed into their equivalent equations by simplifications and lastly the equations is transformed into linear equation of the form $ax = b$. Again, even if there are variables in the denominator, they are also transformed into linear equation by simplification.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. Solve: $(y - 1)(y + 2) = (y + 4)(y - 2)$\n\nSolution: $(y - 1)(y + 2) = (y + 4)(y - 2)$\n\nor, $y^2 - y + 2y - 2 = y^2 + 4y - 2y - 8$\n\nor, $y - 2 = 2y - 8$\n\nor, $y - 2y = -8 + 2$ [by transposition]\n\nor, $-y = -6$\n\nor, $y = 6$\n\n$\\therefore$ Solution is $y = 6$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

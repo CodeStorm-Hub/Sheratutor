@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 23,
+  "pdf_page_no": 28,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Figure 1.10 shows the steps for making slide calipers with paper.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.10 : Making slide calipers with paper",
+      "figure_no": "1.10",
+      "box_2d": [
+        115,
+        155,
+        878,
+        574
+      ],
+      "description": "Step-by-step instructions and folded paper templates illustrating how to construct a paper model of slide calipers with a main scale in inches and a vernier scale.",
+      "reading_order_anchor": "Figure 1.10 shows the steps for making slide calipers with paper."
+    }
+  ]
+}

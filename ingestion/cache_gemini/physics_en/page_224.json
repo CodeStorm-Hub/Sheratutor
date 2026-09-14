@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 224,
+  "pdf_page_no": 229,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** As shown in Figure 8.15, two mirrors $AO$ and $BO$ are placed perpendicularly to each other. Hold your left hand in front of it. Now draw the images of your hand.\n\n**Answer:** Your hand is in $AOB$. In $A'OB$ is the front-back image of your hand. In $AOB'$ is the up-down image of your hand. Notice that in both cases your left hand image appears to be your right hand. In $A'OB'$ you will see the image of the image.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "This can be the up-down image of $A'OB$ or can be the front-back image of $AOB'$. Notice that after one reflection your left hand seems to be your right hand, but after two reflections (reflection of the reflection) your left hand appears as your left hand.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.4",
+      "section_title": "Spherical Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "We all have seen ordinary plain mirrors but may not have seen a real spherical mirror. But the main concept of a spherical mirror can be seen in a new shiny spoon. Spherical mirrors are of two types- concave and convex. We can make concave or convex mirrors by cutting a portion of a hollow sphere and coating its surface with a silver or aluminium layer. Whether the spherical mirror will be concave or convex depends on which surface is coated with silver or aluminium.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.15: Different reflections of the left hand grip in two mirrors kept perpendicularly",
+      "figure_no": "8.15",
+      "box_2d": [
+        152,
+        590,
+        396,
+        882
+      ],
+      "description": "Four quadrants showing different reflections of a left-hand grip in two perpendicular mirrors.",
+      "reading_order_anchor": "Question: As shown in Figure 8.15..."
+    },
+    {
+      "caption": "Figure 8.16: The opposite plane of a spoon works as convex mirror.",
+      "figure_no": "8.16",
+      "box_2d": [
+        664,
+        597,
+        868,
+        874
+      ],
+      "description": "A person looking at their reflection in a shiny spoon.",
+      "reading_order_anchor": "8.4 Spherical Mirror"
+    }
+  ]
+}

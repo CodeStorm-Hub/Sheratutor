@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 324,
+  "pdf_page_no": 329,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Figure 11.16: Dangerous activities with electricity.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Do Yourself\n\nMake a list of the dangerous activities done with electricity in Figure 11.16.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "11.6",
+      "section_title": "Design of Circuit in Residence",
+      "chunk_type": "theory",
+      "content_markdown": "What a circuit should be like for supplying electricity in a household is shown in Figure 11.17. Electricity is supplied at home from a power station through a supply cable. Between them, one is live; another is neutral. The live line has high voltage, the neutral has zero voltage. The live line is marked red and the neutral line is marked blue in the figure. It first passes through an electric meter. This meter records how much electricity is consumed. After the meter, it is supplied through a consumer unit.\n\nThree circuit breaker or fuse of $5\\text{A}$, $15\\text{A}$ and $30\\text{A}$ is shown in Figure 11.17. These three circuit breakers are connected to the main switch. The electric supply of the whole house can be cut off using the main switch.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.16: Dangerous activities with electricity.",
+      "figure_no": "11.16",
+      "box_2d": [
+        103,
+        160,
+        404,
+        818
+      ],
+      "description": "An illustration showing various unsafe practices with electrical appliances and wiring in a household setting.",
+      "reading_order_anchor": "Figure 11.16: Dangerous activities with electricity."
+    }
+  ]
+}

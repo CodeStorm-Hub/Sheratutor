@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 207,
+  "pdf_page_no": 212,
+  "chapter_no": 7,
+  "chapter_title": "তরঙ্গ ও শব্দ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. আমরা $20\\text{ Hz}$ থেকে $20\\text{ kHz}$ পর্যন্ত শব্দ শুনতে পারি। $20\\text{ Hz}$ এবং $20\\text{ kHz}$ শব্দের তরঙ্গদৈর্ঘ্য কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "সঠিক উত্তরটির পাশে টিক ( $\\sqrt{ }$ ) চিহ্ন দাও\n\n1. শব্দ কোন ধরনের তরঙ্গ?\n(ক) তির্যক তরঙ্গ (খ) তড়িৎচৌম্বক তরঙ্গ\n(গ) অনুদৈর্ঘ্য তরঙ্গ (ঘ) বেতার তরঙ্গ",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. শব্দের বেগ কোন মাধ্যমে সবচেয়ে বেশি?\n(ক) কঠিন (খ) তরল\n(গ) গ্যাসীয় (ঘ) প্লাজমা",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. বৈদ্যুতিক লাইনে মৃত বাদুড় ঝুলে থাকতে দেখা যায় কেন?\n\ni. বৈদ্যুতিক লাইনের কারণে সৃষ্ট তড়িৎক্ষেত্র দ্বারা বাদুড় আকৃষ্ট হওয়ায়।\nii. সামনের দিকের শব্দোত্তর তরঙ্গের প্রতিধ্বনি শুনতে না পাওয়ায়।\niii. বাদুড় একটি তারে ঝুলে অপর তারটি স্পর্শ করায়।\n\nনিচের কোন উত্তরটি সঠিক\n(ক) i ও ii\n(গ) ii ও iii\n(খ) i ও iii\n(ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "7.16 চিত্রে $S$ একটি শব্দ উৎস এবং $AB$ পানির পৃষ্ঠতল। শব্দের বেগ $332\\text{ m/s}$ ধরে নিয়ে এবং পাশের তথ্য ও চিত্রের ভিত্তিতে ৪ ও ৫ নং প্রশ্নের উত্তর দাও।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 7.16",
+      "figure_no": "7.16",
+      "box_2d": [
+        591,
+        584,
+        804,
+        888
+      ],
+      "description": "A schematic diagram showing a sound source S at a height above a water surface AB with height h = 10 m and a vertical dimension of 20 m.",
+      "reading_order_anchor": "7.16 চিত্রে S একটি শব্দ উৎস এবং AB পানির পৃষ্ঠতল।"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "printed_page_no": 119,
+  "pdf_page_no": 124,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "সরল কোণ (Straight angle)",
+      "chunk_type": "theory",
+      "content_markdown": "দুইটি পরস্পর বিপরীত রশ্মি এদের সাধারণ প্রান্তবিন্দুতে যে কোণ উৎপন্ন করে, তাকে সরল কোণ বলে। পাশের চিত্রে, $AB$ রশ্মির প্রান্তবিন্দু $A$ থেকে $AB$ এর বিপরীত দিকে $AC$ রশ্মি আঁকা হয়েছে। $AC$ ও $AB$ রশ্মিদ্বয় এদের সাধারণ প্রান্তবিন্দু $A$ তে $\\angle BAC$ উৎপন্ন করেছে। $\\angle BAC$ কে সরল কোণ বলে। সরল কোণের পরিমাপ দুই সমকোণ বা $180^\\circ$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "সন্নিহিত কোণ (Adjacent angle)",
+      "chunk_type": "theory",
+      "content_markdown": "যদি সমতলে দুইটি কোণের একই শীর্ষবিন্দু হয় ও এদের একটি সাধারণ রশ্মি থাকে এবং কোণদ্বয় সাধারণ রশ্মির বিপরীত পাশে অবস্থান করে, তবে ঐ কোণদ্বয়কে সন্নিহিত কোণ বলে। পাশের চিত্রে, $A$ বিন্দুটি $\\angle BAC$ ও $\\angle CAD$ এর শীর্ষবিন্দু। $A$ বিন্দুতে $\\angle BAC$ ও $\\angle CAD$ উৎপন্নকারী রশ্মিগুলোর মধ্যে $AC$ সাধারণ রশ্মি। কোণ দুইটি সাধারণ রশ্মি $AC$ এর বিপরীত পাশে অবস্থিত। $\\angle BAC$ এবং $\\angle CAD$ পরস্পর সন্নিহিত কোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3",
+      "section_title": "লম্ব, সমকোণ (Right angle)",
+      "chunk_type": "theory",
+      "content_markdown": "যদি একই রেখার উপর অবস্থিত দুইটি সন্নিহিত কোণ পরস্পর সমান হয়, তবে কোণ দুইটির প্রত্যেকটি সমকোণ বা $90^\\circ$। সমকোণের বাহু দুইটি পরস্পরের উপর লম্ব। পাশের চিত্রে, $BD$ রেখার $A$ বিন্দুতে $AC$ রশ্মি দ্বারা $\\angle BAC$ ও $\\angle DAC$ দুইটি কোণ উৎপন্ন হয়েছে। $A$ বিন্দু কোণ দুইটির শীর্ষবিন্দু। $\\angle BAC$ ও $\\angle DAC$ উৎপন্নকারী বাহুগুলোর মধ্যে $AC$ সাধারণ বাহু। কোণ দুইটি সাধারণ বাহু $AC$ এর দুই পাশে অবস্থিত। $\\angle BAC$ এবং $\\angle DAC$ পরস্পর সমান হলে, এদের প্রত্যেকটিকে সমকোণ বলে। $AC$ ও $BD$ বাহুদ্বয় পরস্পরের উপর লম্ব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.4",
+      "section_title": "সূক্ষ্মকোণ ও স্থূলকোণ (Acute angle and obtuse angle)",
+      "chunk_type": "theory",
+      "content_markdown": "এক সমকোণ থেকে ছোট কোণকে সূক্ষ্মকোণ এবং এক সমকোণ থেকে বড় কিন্তু দুই সমকোণ থেকে ছোট কোণকে স্থূলকোণ বলা হয়। চিত্রে $\\angle AOC$ সূক্ষ্মকোণ এবং $\\angle AOD$ স্থূলকোণ। এখানে $\\angle AOB$ এক সমকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.5",
+      "section_title": "প্রবৃদ্ধ কোণ (Reflex angle)",
+      "chunk_type": "theory",
+      "content_markdown": "দুই সমকোণ থেকে বড় কিন্তু চার সমকোণ থেকে ছোট কোণকে প্রবৃদ্ধ কোণ বলা হয়। চিত্রে চিহ্নিত $\\angle AOC$ প্রবৃদ্ধ কোণ।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৬.০১: সরল কোণ",
+      "figure_no": "6.01",
+      "box_2d": [
+        155,
+        634,
+        196,
+        875
+      ],
+      "description": "একটি সরলরেখা AB যার উপর A বিন্দুতে AC রশ্মি বিপরীত দিকে অবস্থিত, একটি সরল কোণ গঠন করছে।",
+      "reading_order_anchor": "সরল কোণ (Straight angle)"
+    },
+    {
+      "caption": "চিত্র ৬.০২: সন্নিহিত কোণ",
+      "figure_no": "6.02",
+      "box_2d": [
+        284,
+        673,
+        433,
+        846
+      ],
+      "description": "A বিন্দুতে উৎপন্ন দুটি সন্নিহিত কোণ BAC এবং CAD যাদের সাধারণ বাহু AC।",
+      "reading_order_anchor": "সন্নিহিত কোণ (Adjacent angle)"
+    },
+    {
+      "caption": "চিত্র ৬.০৩: লম্ব ও সমকোণ",
+      "figure_no": "6.03",
+      "box_2d": [
+        537,
+        646,
+        663,
+        872
+      ],
+      "description": "BD রেখার উপর AC লম্ব, যা দুটি সমকোণ BAC এবং DAC তৈরি করেছে।",
+      "reading_order_anchor": "লম্ব, সমকোণ (Right angle)"
+    },
+    {
+      "caption": "চিত্র ৬.০৪: সূক্ষ্মকোণ ও স্থূলকোণ",
+      "figure_no": "6.04",
+      "box_2d": [
+        723,
+        646,
+        853,
+        869
+      ],
+      "description": "O বিন্দুতে উৎপন্ন সূক্ষ্মকোণ AOC, স্থূলকোণ AOD এবং সমকোণ AOB।",
+      "reading_order_anchor": "সূক্ষ্মকোণ ও স্থূলকোণ (Acute angle and obtuse angle)"
+    },
+    {
+      "caption": "চিত্র ৬.০৫: প্রবৃদ্ধ কোণ",
+      "figure_no": "6.05",
+      "box_2d": [
+        867,
+        646,
+        956,
+        872
+      ],
+      "description": "O বিন্দুতে উৎপন্ন প্রবৃদ্ধ কোণ AOC।",
+      "reading_order_anchor": "প্রবৃদ্ধ কোণ (Reflex angle)"
+    }
+  ]
+}

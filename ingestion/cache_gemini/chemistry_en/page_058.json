@@ -1,0 +1,99 @@
+{
+  "printed_page_no": 58,
+  "pdf_page_no": 63,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "6. How many energy sublevels are there in N shell?\n   a. 1\n   b. 2\n   c. 3\n   d. 4\n\n7. The atomic number of Sc is 21. Which is the correct electron configuration of Sc?\n   a. $1s^2 2s^2 2p^6 3s^2 3p^6 4s^1$\n   b. $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2$\n   c. $1s^2 2s^2 2p^6 3s^2 3p^6 3d^1 4s^2$\n   d. $1s^2 2s^2 2p^6 3s^2 3p^6$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Farid, a class 9 student drew the following picture as he was asked to draw an atom model.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is the atomic number?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. The nucleon number of $_{29}^{64}\\text{X}$ and $_{30}^{64}\\text{Y}$ atoms are the same but they differ in the number of neutrons- explain.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "c. The picture drawn by Farid refers to the limitations of an atomic model. Describe that model.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "d. The drawn picture shows that an atom will not be stable- elucidate.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Element $\\text{A} = ^{60}\\text{Co}$, element $\\text{B} = ^{32}\\text{P}$ and compound $\\text{C} = \\text{H}_2\\text{SO}_4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is a symbol?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. When is the spectra created in an atom? Discuss",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "c. Find out the relative molecular mass of compound C.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "d. The isotopes of A and B play significant roles in our lives. Explain.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.01: Model of an atom drawn by Farid",
+      "figure_no": "3.01",
+      "box_2d": [
+        492,
+        503,
+        638,
+        885
+      ],
+      "description": "A schematic diagram of an atom showing concentric circular orbits with a central nucleus and an electron on the outermost orbit.",
+      "reading_order_anchor": "1. Farid, a class 9 student drew the following picture..."
+    }
+  ]
+}

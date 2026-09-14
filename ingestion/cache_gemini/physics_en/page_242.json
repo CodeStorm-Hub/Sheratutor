@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 242,
+  "pdf_page_no": 247,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "# Chapter nine\n# Refraction of light\n\nThe velocity of light in a vacuum is $2.99792458 \\times 10^{8} \\text{ ms}^{-1}$. If light enters a medium, its velocity decreases from this. To explain this process a quantity named refractive index is defined. You can easily show that light changes its direction due to the change of its velocity while passing from one medium to another. Due to this property of light, or refraction, a wonderful event may happen named total internal reflection. We will discuss various uses of total internal reflection in this chapter.\n\nConvex and Concave lens can be made by using refraction. Which type of images can be formed using these two lens will be discussed in this chapter.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Refraction of light / Optical fibers",
+      "figure_no": "9.01",
+      "box_2d": [
+        281,
+        146,
+        642,
+        872
+      ],
+      "description": "An illustration showing bundle of glowing optical fibers carrying light.",
+      "reading_order_anchor": "Chapter nine Refraction of light"
+    }
+  ]
+}

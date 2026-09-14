@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 75,
+  "pdf_page_no": 80,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": "3.6",
+      "section_title": "Effect of Force on Motion: Newton’s Second Law",
+      "chunk_type": "theory",
+      "content_markdown": "In the football ground we always see a player kicking a stationary football and directing it to distant places by creating motion. At the time of the kick, when the player touches the ball, only at that instant, force is applied on the ball. The stationary ball goes into motion due to this force.\n\nWe can apply force also for a long time instead of just for a moment. By pushing a stationary go-cart for a long time and we can release it after setting it into motion. It can move for a while until it ceases its motion due to friction.\n\nThe direction of velocity can also be changed by the application of force. When a bowler throws a cricket ball towards the batsman, then the batsman can direct the ball totally in a different direction by hitting the ball with his bat.\n\nIn the three examples given above, we see that velocity is changed by the application of force on an object for a short or a long time. In the previous chapter we have seen that the rate of change of velocity is acceleration. Therefore we can say, when force is applied on an object, acceleration is produced. The relation between the force applied on a body and the acceleration is Newton’s second law.\n\n$$\\textbf{Newton's second law: } \\text{The rate of change of momentum of a body is proportional to the applied force acting on it and the change of momentum also takes place in the direction in which the force acts.}$$\n\nIf a body is moving with an initial velocity $u$ and the velocity is changed (by increasing or decreasing) from $u$ to $v$ after a time $t$.\n\nThe change of momentum: $mv - mu$\n\nSo, the rate of change of momentum:\n$$\\frac{mv - mu}{t} = m \\frac{(v - u)}{t} = ma$$\n\nSince, we considered that there is no change of mass, so we can write like this.\nFurther we know that acceleration is:\n$$a = \\frac{v - u}{t}$$\n\nTherefore if the applied force is $F$, then we can write Newton’s second law of motion as:\n$$F = ma$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 225,
+  "pdf_page_no": 230,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "($H_2CO_3$). Besides, the power plants, brick kilns etc. use coal and petroleum rich with nitrogen and sulfur which again produce oxides of these elements. These also produce acids which come down with rain water.\n\nThat is why, in some places, the amount of acid in rain sometimes goes higher than expected. As a result the pH of rain water in these spots may drop down to 4 or below 4, which is acid rain. This rain results in a drop down of pH of soil. This has severe harmful effect on crops and plants. The pH value of water in the water bodies also goes down and makes the situation uninhabitable for the lives there. Fish production is hampered. Acid rain also harms the buildings, metallic structures, marble architectures and sculptures.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.7",
+      "section_title": "Water",
+      "chunk_type": "theory",
+      "content_markdown": "The other name of pure water is life. Water is polluted everyday due to bathing, washing etc. Water becomes hard for various reasons. We can transform hard water into mild water following various ways.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.7.1",
+      "section_title": "Hardness of Water",
+      "chunk_type": "theory",
+      "content_markdown": "The source of water is rivers, canals, bils, ponds, sea and tubewell etc. Various mineral salts are dissolved in this water. It is not easy to get foam of soap if calcium or magnesium chloride, sulfate, carbonate or bicarbonate etc. salts are dissolved in the water. This kind of water is called hard water. However, water can be hard also if it has iron or manganese salts dissolved in it. Why does not this kind of water produce foam of soap? Soap is a sodium or potassium salt of higher organic acid. For example, sodium stearate ($C_{17}H_{35}COONa$) is the sodium salt of stearic acid. It is used in soap. When we use this soap in hard water, so long calcium or magnesium salt remains in the water, it does not produce any foam, only the soap is decayed.\n\n$$2C_{17}H_{35}COONa + CaCl_2 \\longrightarrow (C_{17}H_{35}COO)_2Ca + 2NaCl$$\n\nSalts of magnesium and other salts also undergo the same kind of reaction. If hard water is used in water pipes or boilers of industries, the mineral salts present in the water gathers on the pipe as a thick layer and the water flow is obstructed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

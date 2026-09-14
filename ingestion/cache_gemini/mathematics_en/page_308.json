@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 308,
+  "pdf_page_no": 313,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. For the polygon-\n(i) Order of rotational symmetry is 4\n(ii) The angle of rotation is $60^\\circ$\n(iii) Each angles in equal\nWhich of the following is true?\n1) $i$ 2) $ii$ 3) $ii$ and $iii$ 4) $i$, $ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. Which one of the followings has line of symmetry?\n1) Figure of a house 2) Figure of a mosque 3) Figure of a temple\n4) Figure of a church 5) Figure of a pagoda 6) Figure of a parliament\n7) Figure of a mask 8) Figure of the building of the Tajmahal.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. Lines of symmetry are given (dashed lines), complete the geometrical figures and identify:",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. Find the lines of symmetry of the following figures:",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. Complete the following figures such that reflection symmetry is achieved:",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. Find the rotational symmetry of the following figure:",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Incomplete geometrical figures with lines of symmetry",
+      "figure_no": "14.01",
+      "box_2d": [
+        435,
+        248,
+        502,
+        810
+      ],
+      "description": "Five incomplete geometric shapes with dashed lines indicating axes of symmetry.",
+      "reading_order_anchor": "6. Lines of symmetry are given (dashed lines), complete the geometrical figures and identify:"
+    },
+    {
+      "caption": "Fig 14.02: Figures for finding lines of symmetry",
+      "figure_no": "14.02",
+      "box_2d": [
+        548,
+        332,
+        675,
+        676
+      ],
+      "description": "Seven geometric patterns and shapes to identify lines of symmetry.",
+      "reading_order_anchor": "7. Find the lines of symmetry of the following figures:"
+    },
+    {
+      "caption": "Fig 14.03: Figures for completing reflection symmetry",
+      "figure_no": "14.03",
+      "box_2d": [
+        719,
+        331,
+        817,
+        729
+      ],
+      "description": "Three grid-based figures with diagonal lines for completing reflection symmetry.",
+      "reading_order_anchor": "8. Complete the following figures such that reflection symmetry is achieved:"
+    },
+    {
+      "caption": "Fig 14.04: Figures for finding rotational symmetry",
+      "figure_no": "14.04",
+      "box_2d": [
+        864,
+        213,
+        945,
+        834
+      ],
+      "description": "Six different geometric shapes labeled (a) through (f) to determine rotational symmetry.",
+      "reading_order_anchor": "9. Find the rotational symmetry of the following figure:"
+    }
+  ]
+}

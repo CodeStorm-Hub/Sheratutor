@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 51,
+  "pdf_page_no": 56,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= \\left( \\frac{6x - 2y}{2} \\right)^2 - \\left( \\frac{8y - 2x}{2} \\right)^2$$\n$$= \\left\\{ \\frac{2(3x - y)}{2} \\right\\}^2 - \\left\\{ \\frac{2(4y - x)}{2} \\right\\}^2$$\n$$= (3x - y)^2 - (4y - x)^2$$\n$$\\therefore (2x + 3y)(4x - 5y) = (3x - y)^2 - (4y - x)^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Work:**\n1) Simplify: $(4x + 3y)^2 + 2(4x + 3y)(4x - 3y) + (4x - 3y)^2$\n2) If $x + y + z = 12$ and $x^2 + y^2 + z^2 = 50$, find the value of $(x - y)^2 + (y - z)^2 + (z - x)^2$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "3.1",
+      "section_title": "Exercise 3.1",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Find the square with the help of the formulae:\n1) $2a + 3b$ 2) $x^2 + \\frac{2}{y^2}$ 3) $4y - 5x$\n4) $5x^2 - y$ 5) $3b - 5c - 2a$ 6) $ax - by - cz$\n7) $2a + 3x - 2y - 5z$ 8) $1007$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. Simplify:\n1) $(7p + 3q - 5r)^2 - 2(7p + 3q - 5r)(8p - 4q - 5r) + (8p - 4q - 5r)^2$\n2) $(2m + 3n - p)^2 + (2m - 3n + p)^2 - 2(2m + 3n - p)(2m - 3n + p)$\n3) $6.35 \\times 6.35 + 2 \\times 6.35 \\times 3.65 + 3.65 \\times 3.65$\n4) $\\frac{2345 \\times 2345 - 759 \\times 759}{2345 - 759}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. If $a - b = 4$ and $ab = 60$, what is the value of $a + b$?\n4. If $a + b = 9m$ and $ab = 18m^2$, what is the value of $a - b$?\n5. If $x - \\frac{1}{x} = 4$, prove that, $x^4 + \\frac{1}{x^4} = 322$\n6. If $2x + \\frac{2}{x} = 3$, what is the value of $x^2 + \\frac{1}{x^2}$?\n7. If $a + \\frac{1}{a} = 2$, show that, $a^2 + \\frac{1}{a^2} = a^4 + \\frac{1}{a^4}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

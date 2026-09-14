@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 172,
+  "pdf_page_no": 177,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In exothermic reactions, the total internal energy of reactants ($E_1$) is greater than the total internal energy of products ($E_2$). Therefore, the value of $\\Delta H = (E_2 - E_1)$ becomes negative.\n\nFor example, when in a reaction, the total internal energy of reactants is $50\\text{ kJ/mol}$ and the total internal energy of products is $20\\text{ kJ/mol}$, $\\Delta H = (20 - 50) = -30\\text{ kJ/mol}$.\n\nAgain, in endothermic reactions, the total internal energy of reactants is lesser than the total internal energy of products. Therefore, the value of $\\Delta H = E_2 - E_1$ in this case is positive. For example, when in a reaction, the total internal energy of reactants is $70\\text{ kJ/mol}$ and the total internal energy of products is $80\\text{ kJ/mol}$, $\\Delta H = (80 - 70) = +10\\text{ kJ/mol}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Exothermic Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "The chemical reactions in which heat is evolved are called exothermic reactions. An equation of an exothermic reaction can be written with the word Heat at the right side. If it is written with the expression $\\Delta H$, the value will be negative (-). You have seen the natural gas burnt while cooking, produces heat. If water is poured on dry lime, that substance becomes hotter. Methane is the basic ingredient of cooking gas. When we burn this gas, each mole of it reacts with oxygen of air and produces carbon dioxide, water and $890\\text{ kJ}$ heat.\n\n$$\\text{CH}_4\\text{(g)} + 2\\text{O}_2\\text{(g)} \\xrightarrow{\\quad\\quad} \\text{CO}_2\\text{(g)} + 2\\text{H}_2\\text{O}\\text{(g)} + 890\\text{ kJ/mol}$$\n$$\\text{Methane} \\quad \\text{Oxygen} \\quad \\text{Carbon dioxide} \\quad \\text{Water} \\quad \\text{Heat}$$\n\nOr,\n\n$$\\text{CH}_4\\text{(g)} + 2\\text{O}_2\\text{(g)} \\xrightarrow{\\quad\\quad} \\text{CO}_2\\text{(g)} + 2\\text{H}_2\\text{O}\\text{(g)} ; \\Delta H = -890\\text{ kJ/mol}$$\n$$\\text{Methane} \\quad \\text{Oxygen} \\quad \\text{Carbon dioxide} \\quad \\text{Water} \\quad \\text{Heat}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Exothermic and Endothermic process.",
+      "figure_no": "8.01",
+      "box_2d": [
+        116,
+        520,
+        281,
+        936
+      ],
+      "description": "Two beakers showing heat evolved (red liquid with heat lines) and heat absorbed (blue liquid with heat lines).",
+      "reading_order_anchor": "In exothermic reactions, the total internal energy of reactants"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 101,
+  "pdf_page_no": 106,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "compounds like naphthalene, mustard oil, kerosene etc. covalent compounds. You will find none of them soluble in water. Although there are few exceptions like sugar, glucose etc, most covalent compounds are not soluble in water.\n\nWhy are some covalent compounds soluble in water? The reason lies in the bond structure of water. Water is a covalent compound itself where two hydrogen atoms are connected with one oxygen atom by electron sharing. But since oxygen is more electronegative than hydrogen, the two electrons of the covalent bond of water move towards oxygen a bit. As a result, oxygen atom becomes a partially negative charge while hydrogen becomes a partially positive charge, meaning a partial positive and a partial negative end is created in water molecule. This kind of charged covalent compound is called polar covalent compound. So, water is a polar solvent. Remember, the attraction force of an atom when it tries to attract the electron pair of a covalent bonding to itself is called the electronegativity of an atom. The figure 5.11 uses $^+\\delta$ (plus delta) and $^-\\delta$ (minus delta) to express positive and negative charges.\n\nWhen the ionic compound is added to water, the polar solvent, water molecule's cation attracts the anion of the ionic compound. The same action takes place between the anion of water molecule and cation of ionic compound's molecule. When this attraction force becomes greater than that between the cation and anion of the ionic compound, then they become alienated from each other and become surrounded by water molecule. Thus ionic compound is dissolved into water.\n\n$NaCl$ is an ionic compound and being so, it gets dissolved in the polar solvent, water. Methanol ($CH_3OH$) is a polar compound and so it gets dissolved in polar solvent, water. Since methane ($CH_4$) is neither an ionic compound nor a polar compound, it does not get dissolved in water.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.11: $^+\\delta$ and $^-\\delta$ indicate partial positive and partial Negative charge.",
+      "figure_no": "5.11",
+      "box_2d": [
+        363,
+        603,
+        601,
+        893
+      ],
+      "description": "Water molecule showing partial positive charges on hydrogen atoms and partial negative charges on the oxygen atom.",
+      "reading_order_anchor": "compounds like naphthalene, mustard oil, kerosene etc. covalent compounds."
+    }
+  ]
+}

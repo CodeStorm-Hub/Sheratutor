@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 219,
+  "pdf_page_no": 224,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "amount of electricity conduction in the solution. So, the bulb gives less light.\n\n$$\\text{Weak acid} \\rightarrow \\text{Lesser amount of } \\text{H}^+ \\text{ (proton) produced}$$\n\n$$\\text{Strong acid} \\rightarrow \\text{Greater amount of } \\text{H}^+ \\text{ (proton) produced}$$\n\nSimilarly, an experiment with strong alkali ($\\text{NaOH}$) and weak alkali ($\\text{NH}_4\\text{OH}$) will prove that the bulb in the solution of $\\text{NaOH}$ will give a brighter light and the bulb in the solution of $\\text{NH}_4\\text{OH}$ will give a dim light. So, it will be proved that $\\text{NaOH}$ is a strong alkali and $\\text{NH}_4\\text{OH}$ is a weak alkali.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.4",
+      "section_title": "The Conception of pH",
+      "chunk_type": "theory",
+      "content_markdown": "$\\text{pH}$ is used as a unit to determine the nature of an aqueous solution, a measure of the acidity, alkalinity or neutrality of the solution. The $\\text{pH}$ of a solution is the negative logarithm of concentration of hydrogen ions present in the solution. That means-\n\n$$\\text{pH} = -\\log[\\text{H}^+]$$\n\nWhere $\\text{p}$ is written in small hand letter and $\\text{H}$ is capitalized.\n\n$[\\text{H}^+]$ expresses the molar concentration of $\\text{H}^+$ ions; how many moles of $\\text{H}^+$ ions are there in one liter solution.\n\nThe presence of $\\text{H}^+$ in $1$ liter distilled water is $10^{-7}$ moles.\n\nThe $\\text{pH}$ of distilled water $= -\\log[\\text{H}^+] = -\\log(10^{-7})$\n\nSo, the $\\text{pH}$ of distilled water $= 7$\n\nWhen there is any ion within the third bracket in molarity unit, the concentration of the ion is expressed. If acid is added to distilled water and for this reason, the number of $\\text{H}^+$ increases $10$ times to make it $10^{-6}$ moles per liter, the $\\text{pH}$ of the solution will drop down.\n\n$$\\text{pH} = -\\log[10^{-6}] = 6$$\n\nThe more the molarity of $\\text{H}^+$ ion, the lesser the value of $\\text{pH}$ will be.\n\nIf alkali is added to distilled water, the $\\text{OH}^-$ of alkali will undergo a reaction with $\\text{H}^+$ and lessen the number of $\\text{H}^+$. For example, due to adding alkali in water, if the number of $\\text{H}^+$ drops down to $10^{-10}$ moles per liter, then the $\\text{pH}$ will be:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

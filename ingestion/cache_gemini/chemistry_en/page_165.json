@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 165,
+  "pdf_page_no": 170,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this reaction, mole number of reactants is $(1+1) = 2$ and mole number of product is also 2. Since this reaction has no change in the number of moles, there is no change in pressure too. The reaction does not show any effect of pressure on its equilibrium.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Effect of Concentration",
+      "chunk_type": "theory",
+      "content_markdown": "Equilibrium of all reactions are effected by the concentration of reactants. If in the equilibrium state of the reaction, the concentration of any reactant is increased, Le Chatelier says the concentration of the reactant has to be decreased in order to neutralize the effect of increased concentration. Similarly, if the concentration of any product is increased, the amount of product is neutralized as the reaction reverts and the concentration of reactants is increased. That means, the equilibrium shifts toward left.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Multiple Choice Questions",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Which of the following acids is present in vinegar?\na. citric acid b. acetic acid\nc. tartaric acid d. ascorbic acid",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. Which can be used in the wound of bee stinging?\na. lime b. vinegar\nc. table salt d. water",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. What type of reactions occur when antacid medicine is taken?\na. neutralization b. combustion\nc. addition d. substitution/displacement",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

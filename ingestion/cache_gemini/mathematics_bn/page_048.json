@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 48,
+  "pdf_page_no": 53,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিকল্প পদ্ধতি:\n\n$(a + b + c)^2 = (a^2 + b^2 + c^2) + 2(ab + bc + ac)$\nবা, $(15)^2 = 83 + 2(ab + bc + ac)$\nবা, $225 - 83 = 2(ab + bc + ac)$\nবা, $2(ab + bc + ac) = 142$\n$\\therefore ab + bc + ac = \\frac{142}{2} = 71$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১০. $a + b + c = 2$ এবং $ab + bc + ac = 1$ হলে, $(a + b)^2 + (b + c)^2 + (c + a)^2$ এর মান কত?\n\nসমাধান: $(a + b)^2 + (b + c)^2 + (c + a)^2$\n$= a^2 + 2ab + b^2 + b^2 + 2bc + c^2 + c^2 + 2ca + a^2$\n$= (a^2 + b^2 + c^2 + 2ab + 2bc + 2ca) + (a^2 + b^2 + c^2)$\n$= (a + b + c)^2 + (a + b + c)^2 - 2(ab + bc + ca)$\n$= (2)^2 + (2)^2 - 2 \\times 1 = 4 + 4 - 2 = 8 - 2 = 6$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. $(2x + 3y)(4x - 5y)$ কে দুইটি বর্গের বিয়োগফলরূপে প্রকাশ কর।\n\nসমাধান: ধরি, $2x + 3y = a$ এবং $4x - 5y = b$\n$\\therefore$ প্রদত্ত রাশি $ab = \\left(\\frac{a + b}{2}\\right)^2 - \\left(\\frac{a - b}{2}\\right)^2$\n$= \\left(\\frac{2x + 3y + 4x - 5y}{2}\\right)^2 - \\left(\\frac{2x + 3y - 4x + 5y}{2}\\right)^2$ [$a$ ও $b$ এর মান বসিয়ে]\n$= \\left(\\frac{6x - 2y}{2}\\right)^2 - \\left(\\frac{8y - 2x}{2}\\right)^2 = \\left\\{\\frac{2(3x - y)}{2}\\right\\}^2 - \\left\\{\\frac{2(4y - x)}{2}\\right\\}^2$\n$= (3x - y)^2 - (4y - x)^2$\n$\\therefore (2x + 3y)(4x - 5y) = (3x - y)^2 - (4y - x)^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "কাজ:\nক) সরল কর: $(4x + 3y)^2 + 2(4x + 3y)(4x - 3y) + (4x - 3y)^2$\nখ) $x + y + z = 12$ এবং $x^2 + y^2 + z^2 = 50$ হলে, $(x - y)^2 + (y - z)^2 + (z - x)^2$ এর মান নির্ণয় কর।",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

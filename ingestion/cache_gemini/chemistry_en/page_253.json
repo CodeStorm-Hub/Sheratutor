@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 253,
+  "pdf_page_no": 258,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Electroplating",
+      "chunk_type": "theory",
+      "content_markdown": "Generally speaking, the method of laying a coating of less reactive metal on more reactive metals by electrolysis is called electroplating. In this method, the metal that will be the coating is connected to the positive charge of the battery and the metal that will get the coating is connected to the negative charge. Then the electroplating is done through electrolysis. For example, to add a coating of copper on iron, a solution of $\\text{CuSO}_4$ is taken. The copper rod is connected to the positive charge while the iron rod is connected to the negative charge. As electricity is passed in the cell, $\\text{Cu}$ donates two electrons which go into the solution as $\\text{Cu}^{2+}$.\n\n$$\\text{Cu} \\longrightarrow \\text{Cu}^{2+} + 2\\text{e}^- \\quad [\\text{Oxidation reaction}]$$\n\nNow, this $\\text{Cu}^{2+}$ accepts two electrons from the $\\text{Fe}$ rod to become $\\text{Cu}$ and attaches to the $\\text{Fe}$ rod.\n\n$$\\text{Cu}^{2+} + 2\\text{e}^- \\longrightarrow \\text{Cu} \\quad [\\text{Reduction reaction}]$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Galvanizing",
+      "chunk_type": "theory",
+      "content_markdown": "**Galvanizing** : The method of laying zinc coating on any metal is called galvanizing. It does not require electrolysis. Zinc is coated anyway on any metal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Recycling of Metals",
+      "chunk_type": "theory",
+      "content_markdown": "The amount of every element is definite in the world. After using metallic products, instead of discarding them, they are sent to the factories for making that metal. Usable metal is made from that trashed metal. This method is called Recycling of metal. For example, trashed aluminium utensils are sent to aluminium factories to recycle new aluminium. Trashed iron is sent to steel mills for recycling. 21% of the total copper used in America is recycled copper. 60% of aluminium used in Europe is recycled aluminium.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

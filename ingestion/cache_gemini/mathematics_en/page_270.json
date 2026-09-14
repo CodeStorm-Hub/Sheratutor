@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 270,
+  "pdf_page_no": 275,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The term ‘order’ is widely used in our day to day life. For example, the concept of order is used to arrange the commodities in the shops, to arrange the events of drama and ceremony, to keep the commodities in attractive way in the godown. Again, to make many tasks easier and attractive, we use large to small, child to old, light to heavy etc. types of order. Mathematical series have been originated from these concepts of order. In this chapter, the relation between sequence and series and contents related to them have been presented.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of this chapter, the students will be able to —\n\n* describe the sequence and series and determine the differences between them.\n* explain finite series.\n* form formulae for determining the fixed term of the series and the sum of fixed numbers of terms and solve mathematical problems by applying the formulae.\n* determine the sum of squares and cubes of natural numbers.\n* solve mathematical problems by applying different formulae of series.\n* construct formulae to find the fixed term of a geometric progression and sum of fixed numbers of terms and solve mathematical problems by applying the formulae.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Sequence",
+      "chunk_type": "theory",
+      "content_markdown": "Let us note the following relation:\n\n$$1 \\quad 2 \\quad 3 \\quad 4 \\quad \\dots \\quad n \\quad \\dots$$\n$$\\downarrow \\quad \\downarrow \\quad \\downarrow \\quad \\downarrow \\quad \\quad \\quad \\downarrow$$\n$$2 \\quad 4 \\quad 6 \\quad 8 \\quad \\dots \\quad 2n \\quad \\dots$$\n\nHere, every natural number $n$ is related to twice the number $2n$. That means, the set of positive even numbers $\\{2, 4, 6, \\dots\\}$ is obtained by a method from the set of natural numbers $\\{1, 2, 3, \\dots\\}$. This arranged set of even number is a sequence.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

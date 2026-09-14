@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 52,
+  "pdf_page_no": 57,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. If $a + b = \\sqrt{7}$ and $a - b = \\sqrt{5}$, prove that, $8ab(a^2 + b^2) = 24$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. If $a + b + c = 9$ and $ab + bc + ca = 31$, what is the value of $a^2 + b^2 + c^2$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. If $a^2 + b^2 + c^2 = 9$ and $ab + bc + ca = 8$, what is the value of $(a + b + c)^2$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. If $a + b + c = 6$ and $a^2 + b^2 + c^2 = 14$, what is the value of $(a - b)^2 + (b - c)^2 + (c - a)^2$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. If $x = 3, y = 4$ and $z = 5$, what is the value of $9x^2 + 16y^2 + 4z^2 - 24xy - 16yz + 12zx$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. Express $(a + 2b)(3a + 2c)$ as the difference of two squares.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. Express $x^2 + 10x + 24$ as the difference of two squares.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. If $a^4 + a^2b^2 + b^4 = 8$ and $a^2 + ab + b^2 = 4$, find the value of, 1) $a^2 + b^2$, 2) $ab$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Formulae of Cubes\n\n**Formula 6.** $(a + b)^3 = a^3 + 3a^2b + 3ab^2 + b^3 = a^3 + b^3 + 3ab(a + b)$\n\n**Proof:** $(a + b)^3 = (a + b)(a + b)^2$\n$= (a + b)(a^2 + 2ab + b^2)$\n$= a(a^2 + 2ab + b^2) + b(a^2 + 2ab + b^2)$\n$= a^3 + 2a^2b + ab^2 + a^2b + 2ab^2 + b^3$\n$= a^3 + 3a^2b + 3ab^2 + b^3$\n$= a^3 + b^3 + 3ab(a + b)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Corollary 9.** $a^3 + b^3 = (a + b)^3 - 3ab(a + b)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Formula 7.** $(a - b)^3 = a^3 - 3a^2b + 3ab^2 - b^3 = a^3 - b^3 - 3ab(a - b)$\n\n**Proof:** $(a - b)^3 = (a - b)(a - b)^2$\n$= (a - b)(a^2 - 2ab + b^2)$\n$= a(a^2 - 2ab + b^2) - b(a^2 - 2ab + b^2)$\n$= a^3 - 2a^2b + ab^2 - a^2b + 2ab^2 - b^3$\n$= a^3 - 3a^2b + 3ab^2 - b^3$\n$= a^3 - b^3 - 3ab(a - b)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

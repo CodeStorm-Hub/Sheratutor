@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 81,
+  "pdf_page_no": 86,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Using Newton's second law of motion is quite simple. For each mass, Newton's second law should be applied in every direction, with the vector sum of forces on the left side of the equation and the mass multiplied by acceleration on the right side. Since force and acceleration are vector quantities, both the magnitude and the direction must be considered. According to the conventions, the quantities pointing to the right are considered positive, while those pointing to the left are regarded as negative. Similarly, the quantities directed upwards are treated as positive, whereas those directed downwards are treated as negative.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, the tension $T$ on the string acts to the right on the mass. It is important to note that there is only one tension force acting in a string, and this tension always acts along the string and away from the object. In this case, both the tension $T$ and the acceleration of the mass $m$ are directed to the right and therefore\n\n$$T = ma$$\n\nAlong the vertical direction, the mass $m$ is acted upon by the downward gravitational force $mg$ and the upward normal force $N$. Since the resultant of these two forces is zero, there is no acceleration of the mass $m$ in the vertical direction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Two forces are acting on the second mass: the gravitational force $Mg$ acting downward and the tension force $T$ (the same tension $T$ acting on each part of the same string) acting upward. Since the tension force acts along the string and away from the object, we can apply Newton's second law to find:\n\nT - Mg = M (-a)\n\nHere, a negative sign is placed before the acceleration because the acceleration of the mass $M$ is directed downward, and since both objects are connected by the string, the magnitude of the acceleration of mass $M$ is also $a$. By solving the two equations above, we find that\n\n$$a = \\frac{Mg}{M+m}$$\n\nUsing this acceleration we can explain the motion of the object located on the table.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** As shown in figure 3.10, two weights of masses $10\\text{ kg}$ and $5\\text{ kg}$ are suspended from two sides of a mass $m$ using two pulleys. What is the force acting on the mass $m$?",
+      "activity_tag": "Example"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.09: Weight of an object is applying force on another object.",
+      "figure_no": "3.09",
+      "box_2d": [
+        279,
+        620,
+        431,
+        882
+      ],
+      "description": "Schematic diagram showing a mass m on a table connected by a string over a pulley to a hanging mass M under the action of tension and gravity.",
+      "reading_order_anchor": "Here, the tension T on the string acts to the right on the mass."
+    }
+  ]
+}

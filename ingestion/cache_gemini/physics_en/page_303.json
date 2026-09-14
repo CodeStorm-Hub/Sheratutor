@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 303,
+  "pdf_page_no": 308,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "difference of it is important. So you will see that the value of potential of one terminal of a battery cell can be made different, but the difference will remains the same.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** The potential difference of a battery cell is $1.5\\text{ V}$. What is the actual potential of both terminals? Negative is zero and positive is $1.5\\text{ V}$? or negative one is $-1.5\\text{ V}$ and positive one is zero?\n\n**Answer:** Both of them can be true. If it is like Figure 11.02 (a) then the negative is zero and the positive is $1.5\\text{ V}$. But if it is like 11.02 (b) then the positive is zero and the negative is $-1.5\\text{ V}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example:** Make voltage $1.5\\text{ V}$, $3.0\\text{ V}$, $-1.5\\text{ V}$, $-3.0\\text{ V}$ using two $1.5\\text{ V}$ battery.\n\n**Answer:** This is shown in Fig 11.03.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.1.2",
+      "section_title": "Conductor, Insulator and Semiconductor",
+      "chunk_type": "theory",
+      "content_markdown": "**Conductor:** If we have understood the structure of matter properly, then we have understood one thing clearly. In solids the atoms and molecules strongly hold their own positions. If temperature is increased the atoms or molecules start vibrating, staying at their own position, and don't move away from their positions. When you learnt metallic bonds in your chemistry book, you have seen , some electrons of metal atoms are in a free state which can move from one place to another. For this reason, those are called conductors. Gold, silver, copper, aluminum etc. are good conductors. Charge can be transferred through conductors, but we have to remember that this transfer of charge is done by",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.03: Different positive and negative voltages are made using two battery cells.",
+      "figure_no": "11.03",
+      "box_2d": [
+        270,
+        513,
+        420,
+        876
+      ],
+      "description": "Schematic diagrams showing various positive and negative voltage configurations using two battery cells connected to ground.",
+      "reading_order_anchor": "Example: Make voltage 1.5 V, 3.0 V, -1.5 V, -3.0 V using two 1.5 V battery."
+    }
+  ]
+}

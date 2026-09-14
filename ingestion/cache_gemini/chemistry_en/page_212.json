@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 212,
+  "pdf_page_no": 217,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "will decompose and donate an $\\text{H}^+$ ion, which will turn the blue litmus into red. That means, the hydrogen ion present in an aqueous solution shows acidic property.\n\nCitric acid partially decomposes in aqueous solution. The same thing happens in the case with ethanoic acid and carbonic acid too.\n\nPartial decomposition means instead of all molecules added in the solution, some of them decompose and the rest remains intact.\n\n$$\\text{Citric acid lattice} + \\text{water} \\rightarrow \\text{Citric acid (aq)}$$\n\n$$\\text{Citric acid (aq)} \\rightarrow \\text{H}^+(\\text{aq}) + \\text{citrate ion}$$\n\nHydrogen chloride is completely ionized in aqueous solution and produces hydrogen ion:\n\n$$\\text{Hydrogen chloride} + \\text{water} \\rightarrow \\text{HCl (aq)}$$\n\n$$\\text{HCl (aq)} \\rightarrow \\text{H}^+(\\text{aq}) + \\text{Cl}^-(\\text{aq})$$\n\nPure sulfuric acid and nitric acid are colourless liquids. Both the compounds remain in the molecular state. Since they are not ionized or hydrogen ion is not present in them, pure sulfuric acid and pure nitric acid neither show acidic properties nor do they conduct electricity. They produce hydrogen ion only when they are dissolved in water, showing an acidic property and conducting electricity. So, we can write,\n\n$$\\text{H}_2\\text{SO}_4(\\text{l}) + \\text{water} \\longrightarrow \\text{H}_2\\text{SO}_4(\\text{aq})$$\n$$\\text{H}_2\\text{SO}_4(\\text{aq}) \\longrightarrow 2\\text{H}^+(\\text{aq}) + \\text{SO}_4^{2-}(\\text{aq})$$\n\nSimilarly,\n\n$$\\text{HNO}_3(\\text{l}) + \\text{water} \\longrightarrow \\text{HNO}_3(\\text{aq})$$\n$$\\text{HNO}_3(\\text{aq}) \\longrightarrow \\text{H}^+(\\text{aq}) + \\text{NO}_3^-(\\text{aq})$$\n\nThe acids that get partially ionized in aqueous solution are weak acids. Strong acids ionize completely in aqueous solution. That shows the weak acids have lesser amount of hydrogen ions. Strong acids have comparatively greater number of hydrogen ions.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

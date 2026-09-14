@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 242,
+  "pdf_page_no": 247,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "[Prior knowledge of this chapter are attached to the Appendix at the end of this book. At first the Appendix should be read / discussed.]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "For solving the mathematical problems, the most important topic of Algebra is equation. In classes VI and VII, we have got the idea of simple equation and have known how to solve the simple equation in one variable. In class VIII, we have solved the simple simultaneous equations by the methods of substitution and elimination and by graphs. We have also learnt how to form and solve simple simultaneous equations related to real life problems. In this chapter, the idea of simple simultaneous equations have been expanded and new methods of solution have been discussed. Besides, in this chapter, solution by graphs and formation of simultaneous equations related to real life problems and their solutions have been discussed in detail.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of the chapter, the students will be able to —\n\n* verify the consistency of simple simultaneous equations in two variables.\n* verify the mutual dependence of two simple simultaneous equations in two variables\n* explain the method of cross-multiplication.\n* form and solve simultaneous equations related to real life mathematical problems.\n* solve the simultaneous equations with two variables by graphs.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Simple simultaneous equations",
+      "chunk_type": "theory",
+      "content_markdown": "Simple simultaneous equations means two simple equations in two variables when they are presented together and the two variables are of same characteristics. Such two equations together are also called system of simple",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

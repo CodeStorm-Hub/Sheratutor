@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 118,
+  "pdf_page_no": 123,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "station. Though heat is produced here directly, using this heat energy steam is produced and this steam is used to rotate the turbine, then this rotating turbine generates electricity in a generator (Fig. 4.05).\n\nWe have to know an important matter though such types of transformation are taking place around us. Although there is available energy, but this energy cannot always be used. In the oceans of the earth, there is a huge amount of energy, but we cannot use this energy. (Sometimes using this energy cyclones destroy cities, habitations!) When energy is transformed from one form to another form, then a part of it is dissipated. Actually this dissipation occurs in the form of heat energy and this cannot be regained for further use. This dissipation of energy actually is not the limitation of technology. It is a rule restricted by physics.\n\nAt the very beginning of learning science many don't know it and they try to make an everlasting machine for transformation of energy from one form to another form. (A motor is rotating the generator and producing electricity, again using this electricity the motor is rotating. This is an example of perpetual machine. It will never work).",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.6",
+      "section_title": "Relation between mass and energy",
+      "chunk_type": "theory",
+      "content_markdown": "You know, in the theory of relativity by Einstein it is said that the mass of an object and the energy are identical things. If the mass $m$ is transformed into energy, then this energy is $E$, and its amount is $E = mc^2$, here $c$ is the light velocity. The velocity of light ($3 \\times 10^8\\text{ m/s}$) is huge, if it is squared it becomes huge also, it means if we can transform a little mass into energy, we will get a huge amount of energy, in a nuclear power plant just this thing is done.\n\nIn a nuclear power plant, one of the fuels that are used is uranium 235. Here there are 92 protons and 143 neutrons. Its amount in nature is very small, only $0.7\\%$, its half life is $703,800,000$ ($704$ million) years. A uranium 235 nucleus can capture another neutron very easily (if the speed of that neutron is small). Then the uranium 235 nucleus becomes very unstable, then it is divided into two small nuclei $\\text{Kr}^{92}$ and $\\text{Ba}^{141}$. In addition to this, three more neutrons come out (Figure 4.06), which is depicted in the equation below. If anyone finds out the mass that remains in the left side of the equation and compares it with the mass that remains on the right side, will see that on the right side mass is less, the less amount actually emerges out as energy governed by the equation, $E = mc^2$.\n\n$$_0^1n + {}^{235}_{92}\\text{U} \\rightarrow {}^{92}_{36}\\text{Kr} + {}^{141}_{56}\\text{Ba} + 3_0^1n$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

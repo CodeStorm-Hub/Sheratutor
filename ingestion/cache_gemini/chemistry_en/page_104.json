@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 104,
+  "pdf_page_no": 109,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "atoms of the same element are interconnected by means of metallic bonds inside.\n\nThe outermost energy level of each metallic atom usually contains 1, 2 or 3 electrons in its electronic configuration. Since their size is bigger than the non-metallic elements of the same period, the attractive force of the nucleus on them is less strong. As a result, atoms donate one or more electrons from their outermost energy level and turn into a positive ion. This positive ion is called the atomic core. These atomic cores are three dimensionally organized in a metal’s lattice.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the metal lattice, the donated electrons come out of the orbit and move freely at the center of the atomic core. Such electrons are called Delocalized Electrons. They become electrons of all the metallic ions of that piece of metal instead of remaining under a particular atom. It can be said that the ions remain organized like a lattice in the sea of electrons. When a delocalized electron is situated amidst two metallic ions, both the ions are attracted towards the electron with an electrostatic force. This causes the two ions to remain connected, which is the basic feature of a metallic bond. These delocalized electrons are responsible for the conductivity of heat and electricity. Similarly, they are the reasons for the flexibility, brightness, and charge-resistance etc. features of a metal.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.14: Metallic bonds.",
+      "figure_no": "5.14",
+      "box_2d": [
+        367,
+        211,
+        626,
+        735
+      ],
+      "description": "Schematic diagram of metallic bonds showing atomic cores arranged in a lattice surrounded by delocalized electrons.",
+      "reading_order_anchor": "Fig 5.14: Metallic bonds."
+    }
+  ]
+}

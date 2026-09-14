@@ -1,0 +1,99 @@
+{
+  "printed_page_no": 172,
+  "pdf_page_no": 177,
+  "chapter_no": 8,
+  "chapter_title": "বৃত্ত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $\\angle BOC$ এর মান কত?\nক) $300^\\circ$ খ) $270^\\circ$ গ) $120^\\circ$ ঘ) $90^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. $D$, $BDC$ চাপের মধ্যবিন্দু হলে—\n(i) $\\angle BDC = \\angle BAC$\n(ii) $\\angle BAC = \\frac{1}{2}\\angle BOC$\n(iii) $\\angle BOC = \\angle DBC + \\angle BCD$\nনিচের কোনটি সঠিক?\nক) $i$ ও $ii$ খ) $i$ ও $iii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. কোনো বৃত্তে এমন একটি স্পর্শক আঁক যেন তা নির্দিষ্ট সরলরেখার সমান্তরাল হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. কোনো বৃত্তে এমন একটি স্পর্শক আঁক যেন তা নির্দিষ্ট সরলরেখার উপর লম্ব হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. কোনো বৃত্তে এমন দুইটি স্পর্শক আঁক যেন এদের অন্তর্ভূক্ত কোণ $60^\\circ$ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $3$ সে.মি., $4$ সে.মি. ও $4.5$ সে.মি. বাহুবিশিষ্ট একটি ত্রিভুজের পরিবৃত্ত আঁক এবং এই বৃত্তের ব্যাসার্ধ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. $5$ সে.মি. বাহুবিশিষ্ট একটি সমবাহু ত্রিভুজ $ABC$ এর $AC$ বাহুকে স্পর্শ করিয়ে একটি বহিবৃত্ত আঁক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. একটি বর্গের অন্তর্বৃত্ত ও পরিবৃত্ত আঁক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. $O$ কেন্দ্রবিশিষ্ট কোন বৃত্তের $AB$ ও $CD$ জ্যা দুইটি বৃত্তের অভ্যন্তরস্থ $E$ বিন্দুতে ছেদ করলে প্রমাণ কর যে, $\\angle AEC = \\frac{1}{2}(\\angle BOD + \\angle AOC)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. দুইটি সমান ব্যাসবিশিষ্ট বৃত্তের সাধারণ জ্যা $AB$। $B$ বিন্দু দিয়ে অঙ্কিত কোন সরলরেখা যদি বৃত্ত দুইটির সাথে $P$ ও $Q$ বিন্দুতে মিলিত হয়, তবে প্রমাণ কর যে, $\\triangle PAQ$ সমদ্বিবাহু।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৭. $O$ কেন্দ্রবিশিষ্ট $ABC$ বৃত্তে জ্যা $AB = x$ সে.মি., $OD \\perp AB$।\n\nপাশের চিত্র অনুযায়ী নিচের প্রশ্নগুলোর উত্তর দাও:\nক) বৃত্তটির ক্ষেত্রফল নির্ণয় কর।\nখ) দেখাও যে, $D, AB$ এর মধ্যবিন্দু।\nগ) $OD = (\\frac{x}{2} - 2)$ সে.মি. হলে $x$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৮.০১: জ্যা সংক্রান্ত জ্যামিতিক চিত্র",
+      "figure_no": "8.01",
+      "box_2d": [
+        812,
+        733,
+        933,
+        893
+      ],
+      "description": "একটি বৃত্ত যার কেন্দ্র O এবং জ্যা AB, যেখানে OD লম্ব AB।",
+      "reading_order_anchor": "১৭. O কেন্দ্রবিশিষ্ট ABC বৃত্তে জ্যা AB = x সে.মি., OD ⊥ AB।"
+    }
+  ]
+}

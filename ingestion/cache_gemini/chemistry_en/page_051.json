@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 51,
+  "pdf_page_no": 56,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Table 3.08: Three Natural Isotopes of Hydrogen.",
+      "chunk_type": "table",
+      "content_markdown": "| Name | Symbol | Proton Number $Z$ | Mass Number $A$ | Neutron Number $A - Z$ |\n| :--- | :---: | :---: | :---: | :---: |\n| Hydrogen or Proteum | $_1^1\\text{H}$ | $1$ | $1$ | $0$ |\n| Deuterium | $_1^2\\text{D}$ | $1$ | $2$ | $1$ |\n| Tritium | $_1^3\\text{T}$ | $1$ | $3$ | $2$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.9",
+      "section_title": "Atomic Mass or Relative Atomic Mass",
+      "chunk_type": "theory",
+      "content_markdown": "We already know that, the mass number of an element's atom is the summation of the number of protons and neutrons present in its nucleus. It certainly implies the idea that the mass number is an integer. But you will see the atomic mass of copper is $63.5$ and the atomic mass of chlorine $35.5$. How is that possible? Indeed, it is the relative atomic mass. What is it and why is it necessary?\n\nThe mass of an atom of Fluorine is $3.16 \\times 10^{-23}\\text{ g}$\n\nThe mass of an atom of Aluminium is $4.482 \\times 10^{-23}\\text{ g}$\n\nIt is really hard to use such small masses. That is why, $1/12\\text{ th}$ of a Carbon $12$ isotope is taken as a unit and then the atomic mass of other atoms are determined relative to that.\n\n$1/12\\text{ th}$ atomic mass of Carbon $12$ isotope is $1.66 \\times 10^{-24}\\text{ g}$\n\nTherefore, the relative mass of the element:\n\n$$\\text{Relative mass of the element} = \\frac{\\text{mass of one atom of element}}{\\frac{1}{12}\\text{ of mass of a Carbon } 12 \\text{ isotope}}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

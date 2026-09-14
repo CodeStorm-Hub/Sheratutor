@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 291,
+  "pdf_page_no": 296,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 28.** A straight line drawn parallel to one side of a triangle intersects the other two sides or those sides produced proportionally.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Special Nomination:** In the figure, the straight line $DE$ is parallel to the side $BC$ of the triangle $ABC$. $DE$ intersects $AB$ and $AC$ (Fig 14.01) or their produced sections (Fig 14.02) at $D$ and $E$ respectively. It is required to prove that $AD : DB = AE : EC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** Join $B, E$ and $C, D$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:**\n\nStep 1. The heights of $\\triangle ADE$ and $\\triangle BDE$ are equal.\n$$\\therefore \\frac{\\triangle ADE}{\\triangle BDE} = \\frac{AD}{DB}$$ [The bases of the triangles of equal height are proportional]\n\nStep 2. The heights of $\\triangle ADE$ and $\\triangle DEC$ are equal.\n$$\\therefore \\frac{\\triangle ADE}{\\triangle DEC} = \\frac{AE}{EC}$$ [The bases of the triangles of equal height are proportional]\n\nStep 3. But $\\triangle BDE = \\triangle DEC$ [On the same base $DE$ and between same pair of lines]\n$$\\therefore \\frac{\\triangle ADE}{\\triangle BDE} = \\frac{\\triangle ADE}{\\triangle DEC}$$\n\nStep 4. Therefore, $\\frac{AD}{DB} = \\frac{AE}{EC}$\ni.e, $AD : DB = AE : EC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Corollary 1.** If the line parallel to $BC$ of the triangle $ABC$ intersects the sides $AB$ and $AC$ at $D$ and $E$ respectively, then $\\frac{AB}{AD} = \\frac{AC}{AE}$ and $\\frac{AB}{BD} = \\frac{AC}{CE}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Corollary 2.** The line through the mid point of a side of a triangle parallel to another side bisects the third line.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The proposition opposite of theorem 28 is also true. That is if a line segment divides the two sides of a triangle or the line produced proportionally, it is parallel to the third side. Here follows the proof of the theorem.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Figure 1",
+      "figure_no": "14.01",
+      "box_2d": [
+        165,
+        518,
+        295,
+        685
+      ],
+      "description": "A triangle ABC with a line segment DE parallel to BC intersecting sides AB and AC.",
+      "reading_order_anchor": "Special Nomination: In the figure,"
+    },
+    {
+      "caption": "Fig 14.02: Figure 2",
+      "figure_no": "14.02",
+      "box_2d": [
+        165,
+        735,
+        295,
+        895
+      ],
+      "description": "A triangle ABC with a line segment DE parallel to BC intersecting the extensions of sides AB and AC.",
+      "reading_order_anchor": "Special Nomination: In the figure,"
+    }
+  ]
+}

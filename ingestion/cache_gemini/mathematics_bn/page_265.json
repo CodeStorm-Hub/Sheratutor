@@ -1,0 +1,149 @@
+{
+  "printed_page_no": 265,
+  "pdf_page_no": 270,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "১৫. $\\log 2 + \\log 16 + \\log 512 + \\dots$ ধারাটির প্রথম বারটি পদের সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "১৬. $2 + 4 + 8 + 16 + \\dots$ ধারাটির $n$ সংখ্যক পদের সমষ্টি $254$ হলে, $n$ এর মান কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "১৭. $2 - 2 + 2 - 2 + \\dots$ ধারাটির $(2n + 2)$ সংখ্যক পদের সমষ্টি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "১৮. প্রথম $n$ সংখ্যক স্বাভাবিক সংখ্যার ঘনের সমষ্টি $441$ হলে, $n$ এর মান নির্ণয় কর এবং ঐ সংখ্যাগুলোর সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "১৯. প্রথম $n$ সংখ্যক স্বাভাবিক সংখ্যার ঘনের সমষ্টি $225$ হলে, $n$ এর মান কত? ঐ সংখ্যাগুলোর বর্গের সমষ্টি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "২০. দেখাও যে, $1^3 + 2^3 + 3^3 + \\dots + 10^3 = (1 + 2 + 3 + \\dots + 10)^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "২১. $\\frac{1^3 + 2^3 + 3^3 + \\dots + n^3}{1 + 2 + 3 + \\dots + n} = 210$ হলে, $n$ এর মান কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "২২. ১ মিটার দৈর্ঘ্যবিশিষ্ট একটি লৌহ দণ্ডকে ১০টি টুকরায় বিভক্ত করা হলো যাতে টুকরাগুলোর দৈর্ঘ্য গুণোত্তর ধারা গঠন করে। যদি বৃহত্তম টুকরাটি ক্ষুদ্রতম টুকরার ১০ গুণ হয়, তবে ক্ষুদ্রতম টুকরাটির দৈর্ঘ্যের মান আসন্ন মিলিমিটারে নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৩. একটি গুণোত্তর ধারার প্রথম পদ $a$, সাধারণ অনুপাত $r$, ধারাটির চতুর্থ পদ $-2$ এবং নবম পদ $8\\sqrt{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উপরোক্ত তথ্যগুলোকে দুইটি সমীকরণের মাধ্যমে প্রকাশ কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) ধারাটির ১২ তম পদ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) ধারাটি নির্ণয় করে প্রথম ৭টি পদের সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৪. কোন ধারার $n$ তম পদ $2n - 4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) ধারাটি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) ধারাটির ১০ তম পদ এবং প্রথম ২০টি পদের সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) প্রাপ্ত ধারাটির প্রথম পদকে প্রথম পদ এবং সাধারণ অন্তরকে সাধারণ অনুপাত ধরে একটি নতুন ধারা তৈরি কর এবং সূত্র প্রয়োগ করে ধারাটির প্রথম ৪টি পদের সমষ্টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৫. দুপুর ১টা ১৫ মিনিটে ১ জন এস.এস.সি পরীক্ষার ফলাফল জানতে পারল। ১টা ২০ মিনিটে জানল ৪ জন, ১টা ২৫ মিনিটে জানল ২৭ জন। এভাবে ফলাফল ছড়িয়ে পড়ল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উদ্দীপকের আলোকে প্যাটার্ন দুইটি লিখ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) ঠিক ২টা ১০ মিনিটে কত জন এবং ২টা ১০ মিনিট পর্যন্ত মোট কত জন ফলাফল জানতে পারবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) কয়টার সময় ৬১৭৫২২৫ জন ফলাফল জানতে পারবে?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

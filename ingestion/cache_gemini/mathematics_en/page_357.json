@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 357,
+  "pdf_page_no": 362,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. The frequency distribution table of the weights (in Kg) of 60 students of class X of a school is given below:\n\n| Weight (Kg) | 46 - 50 | 51 - 55 | 56 - 60 | 61 - 65 | 66 - 70 |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| Frequency (No. of students) | 5 | 10 | 20 | 15 | 10 |\n\n1) Draw the histogram of frequency distribution.\n2) Draw frequency polygon of the histogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: The class interval of the data in the table is discrete. If the class interval are made indiscrete, the table will be :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval of the weight (in Kg) | In Discrete class interval | Mid point of class | Frequency |\n| :--- | :--- | :--- | :--- |\n| 46 - 50 | 45.5 - 50.5 | 48 | 5 |\n| 51 - 55 | 50.5 - 55.5 | 53 | 10 |\n| 56 - 60 | 55.5 - 60.5 | 58 | 20 |\n| 61 - 65 | 60.5 - 65.5 | 63 | 15 |\n| 66 - 70 | 65.5 - 70.5 | 68 | 10 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "1) Histogram has been drawn taking each square of graph paper as 5 unit of class interval along with $x$-axis and frequency along with $y$-axis. The class interval along with $x$-axis has started from 45.5. The broken segments $\\wedge\\wedge$ have been used to show the presence of previous squares starting from from origin to 45.5.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2) The mid-points of the opposite sides parallel to the base of rectangle of the histogram have been fixed for drawing frequency polygon from histogram. The mid-points have been joined by line segments to draw the frequency polygon (shown in the adjacent figure). The mid-points of the first and the last rectangles have been joined with $x$-axis representing the class interval by the end points of line segments to show the frequency polygon attractive.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 17.01: Histogram and frequency polygon",
+      "figure_no": "17.01",
+      "box_2d": [
+        658,
+        328,
+        794,
+        742
+      ],
+      "description": "A histogram showing frequency distribution of weights with a frequency polygon superimposed on it.",
+      "reading_order_anchor": "1) Histogram has been drawn taking each square of graph paper as 5 unit of class interval along with x-axis and frequency along with y-axis."
+    }
+  ]
+}

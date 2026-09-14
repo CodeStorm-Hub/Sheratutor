@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 92,
+  "pdf_page_no": 97,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Though the wheel of the car rotates but due to less friction, the car or truck cannot come out from the mud. The wheel slides. Then to rescue the car or truck, the friction between the wheel and the mud is increased in an alternate way.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.1",
+      "section_title": "Tyre's Surface",
+      "chunk_type": "theory",
+      "content_markdown": "Because of the friction between the car's tyre and the road the car can move on the road. If this friction was not present, then the tyre of the car would slip and the car would not be able to move forward. To increase this friction many types of grooves are designed on the tyre (Figure 3.19). Those who drive cars always give attention to whether the grooves of the car are smooth or flat. If the grooves become flat, then after applying the brakes the car will slip instead of stopping.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2",
+      "section_title": "Smoothness off road",
+      "chunk_type": "theory",
+      "content_markdown": "The roads are specially designed to increase the friction between the tyre of the car and the road. If the roads are not proper, then the wheels of the cars may skid. After the snowfall, in the cold countries, the roads become very slippery due to ice and the number of accidents increase more than ten times. In our country the friction of the road may decrease due to water logging or due to gravel. All of you have seen pitch carpeted roads, due to this pitch carpeted the friction between the tyre and the road increases. At the same time, the rain water cannot infiltrate into the road and the road can be used for a long time.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Controlling Motion and Breaking Force",
+      "chunk_type": "theory",
+      "content_markdown": "The speed of the vehicle has to increase or decrease according to the necessity when we drive the vehicles. When the speed of the car is low, then it is easier to control it. You can often see that during taking a turn or overtaking another car, the speed of the car is lowered by applying the brakes.\n\nWhen the driver presses on the brake pedal, this is transferred to the shoe or pad attached to the wheel and the shoe presses down on the disc located inside the wheel. Due to this pressure friction develops between the pad and disc and this frictional force stops the motion of the wheel of the car.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.19: To increase the friction many types of grooves are designed in the tyre.",
+      "figure_no": "3.19",
+      "box_2d": [
+        353,
+        580,
+        616,
+        848
+      ],
+      "description": "A car tyre with intricate grooves designed on its surface mounted on a wheel rim.",
+      "reading_order_anchor": "Tyre's Surface"
+    }
+  ]
+}

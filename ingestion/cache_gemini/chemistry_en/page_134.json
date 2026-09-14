@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 134,
+  "pdf_page_no": 139,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** $75\\text{ g}$ chlorine gas is mixed with $5\\text{ g}$ hydrogen gas. Which is the limiting reactant here? How much of which reactant will be left over at the end of the reaction?\n\n$$\\text{H}_2 \\quad + \\quad \\text{Cl}_2 \\quad \\longrightarrow \\quad 2\\text{HCl}$$\n$$2\\text{ gram} \\quad \\quad 2 \\times 35.5\\text{g} = 71\\text{ gram} \\quad \\quad 2 \\times 36.5\\text{g} = 73\\text{ gram}$$\n\n**Solution:** The equation of the reaction tells:\n\n$2\\text{ gram}$ hydrogen gas needs $71\\text{ gram}$ chlorine in the reaction\n\nSo, $5\\text{ gram}$ hydrogen gas needs in the reaction $\\frac{71 \\times 5}{2} = 177.5\\text{ gram}$ chlorine\n\nSince only $75\\text{ gram}$ chlorine is given for the reaction, so $\\text{Cl}_2$ will finish itself earlier and it is the limiting reactant.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Task:** Find out how much $\\text{H}_2$ is left over in the above reaction.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "6.5",
+      "section_title": "Calculation of the Percentage of Yield",
+      "chunk_type": "theory",
+      "content_markdown": "The reactants used in chemical reactions are not always found as $100\\%$ pure. The purest chemical substances / reactants are called Analar or Analar grade substance. Analar substances are $99\\%$ pure. The impure substances are purified through crystallization, distillation, fractional distillation, chromatography etc processes which you will learn about in higher classes.\n\nMany a times, one or more purification process fails to yield $100\\%$ pure products. When the reactant is not $100\\%$ pure, the reaction does not yield the amount of product that was calculated from the amount of limiting reactant.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

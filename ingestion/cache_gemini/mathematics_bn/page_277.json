@@ -1,0 +1,95 @@
+{
+  "printed_page_no": 277,
+  "pdf_page_no": 282,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান: যেকোনো একটি রশ্মি $AG$ আঁকি এবং $AG$ থেকে $7$ সে.মি. সমান রেখাংশ $AB$ নিই। $A$ বিন্দুতে যেকোনো কোণ $\\angle BAX$ অঙ্কন করি। $AX$ রশ্মি থেকে $AE = 3$ সে.মি. কেটে নিই এবং $EX$ থেকে $EC = 2$ সে.মি. কেটে নিই। $B, C$ যোগ করি। $E$ বিন্দুতে $\\angle ACB$ এর সমান $\\angle AED$ অঙ্কন করি যার $ED$ রেখা $AB$ কে $D$ বিন্দুতে ছেদ করে। তাহলে $AB$ রেখাংশ $D$ বিন্দুতে $3:2$ অনুপাতে অন্তরবিভক্ত হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: একটি নির্দিষ্ট ত্রিভুজের সদৃশ একটি ত্রিভুজ অঙ্কন কর যার বাহুগুলো মূল ত্রিভুজের বাহুগুলোর $\\frac{3}{5}$ গুণ।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ১৪.২",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$১. \\triangle ABC$ এ $BC$ এর সমান্তরাল $DE$ রেখা $AB$ ও $AC$ কে যথাক্রমে $D$ ও $E$ বিন্দুতে ছেদ করলে\n\n$(i) \\triangle ABC$ ও $\\triangle ADE$ পরস্পর সদৃশ।\n\n$(ii) \\frac{AD}{BD} = \\frac{CE}{AE}$\n\n$(iii) \\frac{\\triangle ABC}{\\triangle ADE} = \\frac{BC^2}{DE^2}$\n\nনিচের কোনটি সঠিক?\n\nক) $i$ ও $ii$ খ) $i$ ও $iii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "পাশের চিত্রের তথ্যানুসারে ২ ও ৩ নং প্রশ্নের উত্তর দাও:\n\n$২. \\triangle ABC$ এর উচ্চতা ও ভূমির অনুপাত কত?\n\nক) $\\frac{1}{2}$ খ) $\\frac{4}{5}$ গ) $\\frac{2}{5}$ ঘ) $\\frac{5}{4}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$৩. \\triangle ABD$ এর ক্ষেত্রফল কত বর্গ একক?\n\nক) $6$ খ) $20$ গ) $40$ ঘ) $50$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$৪. \\triangle ABC$ এ $PQ \\parallel BC$ হলে, নিচের কোনটি সঠিক?\n\nক) $AP : PB = AQ : QC$\n\nখ) $AB : PQ = AC : PQ$\n\nগ) $AB : AC = PQ : BC$\n\nঘ) $PQ : BC = BP : BQ$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: জ্যামিতিক অঙ্কন",
+      "figure_no": "14.01",
+      "box_2d": [
+        85,
+        593,
+        238,
+        885
+      ],
+      "description": "একটি রেখাংশ AB কে নির্দিষ্ট অনুপাতে বিভক্ত করার জ্যামিতিক অঙ্কন চিত্র।",
+      "reading_order_anchor": "সমাধান: যেকোনো একটি রশ্মি AG আঁকি এবং AG থেকে"
+    },
+    {
+      "caption": "চিত্র: ত্রিভুজ ABC",
+      "figure_no": "14.02",
+      "box_2d": [
+        695,
+        695,
+        815,
+        885
+      ],
+      "description": "একটি ত্রিভুজ ABC যার উচ্চতা 4 এবং ভূমি 10, সাথে একটি ছোট ত্রিভুজ ABD দেখানো হয়েছে।",
+      "reading_order_anchor": "পাশের চিত্রের তথ্যানুসারে ২ ও ৩ নং প্রশ্নের উত্তর দাও:"
+    },
+    {
+      "caption": "চিত্র: ত্রিভুজ ABC ও সমান্তরাল রেখা PQ",
+      "figure_no": "14.03",
+      "box_2d": [
+        845,
+        745,
+        945,
+        885
+      ],
+      "description": "একটি ত্রিভুজ ABC যেখানে PQ রেখা BC এর সমান্তরাল।",
+      "reading_order_anchor": "৪. AABC এ PQ || BC হলে, নিচের কোনটি সঠিক?"
+    }
+  ]
+}

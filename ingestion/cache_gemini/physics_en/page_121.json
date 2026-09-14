@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 121,
+  "pdf_page_no": 126,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "new quantity called efficiency. Efficiency can be expressed in percentage as:\n\n$$\\text{Efficiency} = \\frac{\\text{amount of work}}{\\text{energy given}} \\times 100 = \\frac{\\text{amount of work} - \\text{energy wasted}}{\\text{energy given}} \\times 100$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** If an object of mass $10\\text{ kg}$ is lifted $10\\text{ min } 15\\text{ s}$ using a motor of $1000\\text{ W}$, then what is the amount of wasted energy? What is its efficiency?\n\n**Answer:**\nAmount of work: $10 \\times 9.8 \\times 10\\text{ J} = 9,800\\text{ J}$\n\nEnergy given: $1000 \\times 15\\text{ s} = 15,000\\text{ J}$\n\nEnergy wasted: $15,000 - 9,800 = 5,200\\text{ J}$\n\n$$\\text{Efficiency} = \\frac{9800\\text{ J}}{15,000\\text{ J}} \\times 100\\% = 65.3 \\%$$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You will be surprised to know that, energy is wasted in every step of production of electricity in a power plant, and if all these wastage is taken into account, the efficiency of the power plant can drop down to $30\\%$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** If $10\\%$ energy is wasted in every step, what is the efficiency in $4$ steps?\n\n**Answer:** $0.9 \\times 0.9 \\times 0.9 \\times 0.9 = 0.6561$\nOr $65.6\\%$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

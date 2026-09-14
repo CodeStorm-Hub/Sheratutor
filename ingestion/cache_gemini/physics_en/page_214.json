@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 214,
+  "pdf_page_no": 219,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We cannot see it if the wavelength is larger or smaller than this range. If the wavelength is from $400\\text{ nm}$ to $700\\text{ nm}$, we can see the electromagnetic wave, and we call that light. The colors we see in our eyes are actually lights of different wavelengths. When the wavelength is less, it becomes violet. When the wavelength increases, the light gradually becomes blue, green, yellow, orange, and red, and at one point it disappears! Human eyes cannot see beyond this range- but various insects or other living beings can see outside this range. The sensitivity of human eyes to different colors of light is shown in Figure 8.1.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Hold a CD in the sunlight and reflect the light on a nearby wall. You can see the full spectrum of light on the wall. CDs have sharp indentations which work as grating and separate the colors.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In Figure 8.01, the name of different wavelengths is shown. If the wavelength is less than the smallest wavelength of visible light, then we call it ultraviolet light. If the wavelength is even smaller than it is called x-ray, and even smaller is called gamma ray- which comes out from radioactive nucleus. If the wavelength is larger than the largest wavelength of visible light, we call it an infrared ray. If it gradually becomes larger we call them microwave, and then radio waves! To learn physics this division of wavelengths is one of the most important topics.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "We cannot see infrared rays with naked eyes because of their high wavelengths. A TV remote emits infrared rays that we cannot see. You may see this through mobile phone camera because a special type of light sensitive IC named CCD is used, which can detect some infrared light with visible light.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

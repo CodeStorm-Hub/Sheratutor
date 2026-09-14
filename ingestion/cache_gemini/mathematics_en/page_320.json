@@ -1,0 +1,67 @@
+{
+  "printed_page_no": 320,
+  "pdf_page_no": 325,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": "16.1",
+      "section_title": "Right-angled triangle",
+      "chunk_type": "theory",
+      "content_markdown": "Let in the right-angled triangle $ABC$, $BC = a$ and $AB = b$ are the adjacent sides of the right angle. Here if we consider $BC$ as the base and $AB$ as the height,\n\nArea of $\\triangle ABC = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2}ab$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.2",
+      "section_title": "Two sides of a triangular region and the angle included between them are given",
+      "chunk_type": "theory",
+      "content_markdown": "Let in $\\triangle ABC$, the sides are $BC = a$, $CA = b$, $AB = c$.\n$AD$ is drawn perpendicular from $A$ to $BC$. Let altitude (height) $AD = h$.\n\nConsidering the angle $C$ we get, $\\frac{AD}{CA} = \\sin C$\n\nor, $\\frac{h}{b} = \\sin C$ or, $h = b \\sin C$\n\nArea of $\\triangle ABC = \\frac{1}{2} BC \\times AD$\n\n$= \\frac{1}{2} a \\times b \\sin C = \\frac{1}{2} ab \\sin C$\n\nSimilarly, area of $\\triangle ABC = \\frac{1}{2} bc \\sin A = \\frac{1}{2} ca \\sin B$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.3",
+      "section_title": "Three sides of a triangle are given",
+      "chunk_type": "theory",
+      "content_markdown": "Let in $\\triangle ABC$, $BC = a$, $CA = b$ and $AB = c$.\n$\\therefore$ Perimeter of the triangle $2s = a + b + c$.\nWe draw $AD \\perp BC$.\nLet, $BD = x$, then $CD = a - x$\nIn right-angled $\\triangle ABD$ and $\\triangle ACD$\n\n$\\therefore AD^2 = AB^2 - BD^2$ and $AD^2 = AC^2 - CD^2$\n\n$\\therefore AB^2 - BD^2 = AC^2 - CD^2$\n\nor, $c^2 - x^2 = b^2 - (a - x)^2$\n\nor, $c^2 - x^2 = b^2 - a^2 + 2ax - x^2$\n\nor, $2ax = c^2 + a^2 - b^2$\n\n$\\therefore x = \\frac{c^2 + a^2 - b^2}{2a}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Right-angled triangle",
+      "figure_no": "16.01",
+      "box_2d": [
+        86,
+        695,
+        206,
+        886
+      ],
+      "description": "A right-angled triangle ABC with base a and height b.",
+      "reading_order_anchor": "16.1"
+    },
+    {
+      "caption": "Fig 16.02: Triangle with altitude",
+      "figure_no": "16.02",
+      "box_2d": [
+        316,
+        695,
+        456,
+        886
+      ],
+      "description": "A triangle ABC with altitude h from A to base BC.",
+      "reading_order_anchor": "16.2"
+    },
+    {
+      "caption": "Fig 16.03: Triangle with sides a, b, c",
+      "figure_no": "16.03",
+      "box_2d": [
+        586,
+        695,
+        726,
+        886
+      ],
+      "description": "A triangle ABC with sides a, b, c and altitude h dividing base a into x and a-x.",
+      "reading_order_anchor": "16.3"
+    }
+  ]
+}

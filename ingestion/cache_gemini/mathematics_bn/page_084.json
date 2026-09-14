@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 84,
+  "pdf_page_no": 89,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \\frac{x}{y} = \\log_a b \\text{ বা, } x = y \\log_a b$$\n\n$$\\text{বা, } \\log_a M = \\log_b M \\times \\log_a b \\text{ (প্রমাণিত)}$$\n\n**অনুসিদ্ধান্ত ১.** $\\log_a b = \\frac{1}{\\log_b a}$ অথবা $\\log_b a = \\frac{1}{\\log_a b}$\n\n**প্রমাণ:** আমরা জানি, $\\log_a M = \\log_b M \\times \\log_a b$\n\n$M = a$ বসিয়ে পাই, $\\log_a a = \\log_b a \\times \\log_a b$\n\nবা, $1 = \\log_b a \\times \\log_a b$\n\n$$\\therefore \\log_a b = \\frac{1}{\\log_b a} \\text{ অথবা } \\log_b a = \\frac{1}{\\log_a b} \\text{ (প্রমাণিত)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৬.** মান নির্ণয় কর: ক) $\\log_{10} 100$ খ) $\\log_3 \\frac{1}{9}$ গ) $\\log_{\\sqrt{3}} 81$\n\n**সমাধান:**\n\nক) $\\log_{10} 100 = \\log_{10} 10^2 = 2\\log_{10} 10 \\quad [\\because \\log_a M^r = r\\log_a M]$\n$= 2 \\times 1 = 2 \\quad [\\because \\log_a a = 1]$\n\nখ) $\\log_3 \\left(\\frac{1}{9}\\right) = \\log_3 \\left(\\frac{1}{3^2}\\right) = \\log_3 3^{-2} = -2\\log_3 3 \\quad [\\because \\log_a M^r = r\\log_a M]$\n$= -2 \\times 1 = -2 \\quad [\\because \\log_a a = 1]$\n\nগ) $\\log_{\\sqrt{3}} 81 = \\log_{\\sqrt{3}} 3^4 = \\log_{\\sqrt{3}} \\{(\\sqrt{3})^2\\}^4 = \\log_{\\sqrt{3}} (\\sqrt{3})^8$\n$= 8\\log_{\\sqrt{3}} \\sqrt{3} = 8 \\times 1 = 8 \\quad [\\because \\log_a a = 1]$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৭.** ক) $5\\sqrt{5}$ এর 5 ভিত্তিক লগ কত? খ) 400 এর লগ 4 হলে লগের ভিত্তি কত?\n\n**সমাধান:**\n\nক) $5\\sqrt{5}$ এর 5 ভিত্তিক লগ\n$= \\log_5 5\\sqrt{5} = \\log_5 (5 \\times 5^{\\frac{1}{2}}) = \\log_5 5^{\\frac{3}{2}}$\n$= \\frac{3}{2}\\log_5 5 \\quad [\\because \\log_a M^r = r\\log_a M]$\n$= \\frac{3}{2} \\times 1 = \\frac{3}{2} \\quad [\\because \\log_a a = 1]$\n\nখ) ধরি, ভিত্তি $a$\nপ্রশ্নমতে, $\\log_a 400 = 4$\n$$\\therefore a^4 = 400$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

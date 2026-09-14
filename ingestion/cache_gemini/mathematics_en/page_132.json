@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 132,
+  "pdf_page_no": 137,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the figure the line $PQ$ intersects the straight lines $AB$ and $CD$ at $E$ and $F$ respectively and\n1) $\\angle PEB = \\text{corresponding } \\angle EFD$ or,\n2) $\\angle AEF = \\text{alternate } \\angle EFD$ or,\n3) $\\angle BEF + \\angle EFD = 2 \\text{ right angles}$\nTherefore, the straight lines $AB$ and $CD$ are parallel.\n\nCorollary 1. The lines which are parallel to a given line are parallel to each other.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Exercises 6.2",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Define interior and exterior of an angle.\n2. If there are three different points in a line, identify the angles in the figure.\n3. Define adjacent angles and locate its sides.\n4. Define with a figure of each: opposite angles, complementary angle, supplementary angle, right angle, acute and obtuse angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Triangle",
+      "chunk_type": "theory",
+      "content_markdown": "A triangle is a figure closed by three line segments. The line segments are known as sides of the triangle. The point common to any pair of sides is the vertex. The sides form angles at the vertices.\n\nA triangle has three sides and three angles. Triangles are classified by sides into three types: equilateral, isosceles and scalene.\n\nBy angles triangles are also classified into three types: acute angled, right angled and obtuse angled.\n\nThe sum of the lengths of three sides of the triangle is the perimeter. By triangle we also denote the region closed by the sides. The line segment drawn from a vertex to the mid-point of opposite side is known as the median. Again, the perpendicular distance from any vertex to the opposite side is the height of the triangle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Line PQ intersecting lines AB and CD",
+      "figure_no": "6.01",
+      "box_2d": [
+        85,
+        642,
+        185,
+        896
+      ],
+      "description": "A line PQ intersecting two parallel lines AB and CD at points E and F respectively.",
+      "reading_order_anchor": "In the figure the line PQ intersects the straight lines"
+    }
+  ]
+}

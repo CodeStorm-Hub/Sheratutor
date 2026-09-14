@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 241,
+  "pdf_page_no": 246,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$2\\text{Al(OH)}_3 \\xrightarrow{1100^\\circ\\text{C}} \\text{Al}_2\\text{O}_3 + 3\\text{H}_2\\text{O}$$\n\nAluminium Hydroxide $\\rightarrow$ Aluminium Oxide\n\nThis pure aluminium oxide is the output of condensation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.4",
+      "section_title": "Conversion of Condensed Ore to Oxides",
+      "chunk_type": "theory",
+      "content_markdown": "**Conversion of Condensed Ore to Oxides:** Condensed ore converts into metal oxide by calcinations or roasting.\n\n**Calcinations of Ores:** If condensed ore is heated at temperature below the melting point in the absence of air, organic substances and moisture will be removed from the ore. This process is called calcinations. The calcinations enforce water, carbonate, bi-carbonate, hydroxide like impurities to be removed in the form of carbon dioxide or water. If these impurities are not removed at this stage, it will be tough to remove later.\n\n$$\\text{Fe}_2\\text{O}_3 \\cdot 3\\text{H}_2\\text{O} \\xrightarrow{\\Delta} \\text{Fe}_2\\text{O}_3 + 3\\text{H}_2\\text{O} \\quad (\\Delta = \\text{heat})$$\n\n$$\\text{ZnCO}_3 \\xrightarrow{\\Delta} \\text{ZnO} + \\text{CO}_2$$\n\n$$\\text{CaCO}_3 \\xrightarrow{\\Delta} \\text{CaO} + \\text{CO}_2$$\n\n**Roasting:** Generally, roasting is applied for sulfide ores. If sulfide ore is heated at temperature below the melting point in presence of air, organic substances and moisture will be removed from the ore as oxides.\n\n$$2\\text{PbS} + 3\\text{O}_2 \\xrightarrow{\\Delta} 2\\text{PbO} + 2\\text{SO}_2$$\n\n$$2\\text{ZnS} + 3\\text{O}_2 \\xrightarrow{\\Delta} 2\\text{ZnO} + 2\\text{SO}_2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.4.1",
+      "section_title": "Conversion of Metallic Oxices to Free Metals",
+      "chunk_type": "theory",
+      "content_markdown": "iv. **Conversion of Metallic Oxides to Free Metals**\n\nThe metallic oxides obtained from the calcinations and roasting needs to undergo a reduction reaction to extract the metal. The reduction can be done in various ways like reduction through electrolysis, carbon reduction method and self-reduction etc. The position of the metal in the series of metal's reactivity determines the method. Below is given a table for your convenience to understand the methods easily:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

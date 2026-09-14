@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 41,
+  "pdf_page_no": 46,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In our example, if you rode your cycle always at the same speed then we say your speed is uniform speed. When anything moves with uniform speed then its instantaneous speed and average speed will be the same.\n\nNotice that, since the path is curved, if you go through this path your direction is changing continuously. Therefore you can move with uniform speed through this path but you cannot go with uniform velocity. If anything moves in a linear motion along a straight line, only then uniform velocity or constant velocity is possible.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Let us consider another example to understand the relation between velocity and speed more clearly. Tie a small piece of stone with a string and rotate it around head (figure 2.05). Does the stone move with uniform velocity or with uniform speed? Or with uniform speed and uniform velocity?\n\n**Answer:** If you think for a while you will be able to understand that the speed of the stone is not changing but the velocity is changing at every instant! Because at every instant the direction of motion of the stone is changing. If the stone moves along a straight line, then the direction of its motion will not change. Since it is revolving, its direction of motion is changing continuously. So it is an example of uniform speed- not of uniform velocity. If it is uniform velocity, then it must be uniform speed. Whereas for uniform speed it is not guaranteed that the velocity will be uniform.",
+      "activity_tag": "Example"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** If the stone is suddenly released, will it move with uniform velocity and with uniform speed?\n\n**Answer:** If the stone is released suddenly, it will move straight with uniform velocity and uniform speed. It will continue to move with uniform velocity and uniform speed if there is no air friction or gravitational force etc.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.05 : Incase of rotation of a stone tied with string, velocity might be changed though speed is same.",
+      "figure_no": "2.05",
+      "box_2d": [
+        447,
+        513,
+        663,
+        869
+      ],
+      "description": "A person swinging a stone tied to a string in a circular path above their head.",
+      "reading_order_anchor": "Let us consider another example to understand the relation between velocity and speed more clearly."
+    }
+  ]
+}

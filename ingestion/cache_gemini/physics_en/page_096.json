@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 96,
+  "pdf_page_no": 101,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. A force of $10\\text{ N}$ acts on a stationary object of mass $10\\text{ kg}$. After $10\\text{ s}$ a force of $20\\text{ N}$ acts on it for $5\\text{ s}$ in the opposite direction. What is the distance traveled by the object?\n\n4. You have jumped from a boat with a velocity of $10\\text{ m/s}$ towards the bank. Your mass and the mass of the boat are $50\\text{ kg}$ and $100\\text{ kg}$ respectively. In which direction and with what velocity will the boat move?\n\n5. The coefficient of friction $\\mu$ of a wooden piece on a floor is $0.01$. If the mass of the wooden piece is $10\\text{ kg}$, what is the force required in moving it? If a stone of mass $100\\text{ kg}$ is kept on the wooden block, what is force required to move it? What happens if the floor is frictionless?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Put the tick ($\\sqrt{_{\\quad}}$) mark on the correct answer\n\n1. The tendency or property of a body to maintain its present state for ever is called:\n(a) force\n(b) acceleration\n(c) inertia\n(d) velocity\n\n2. Which one is the dimension of force?\n(a) $MLT^{-2}$\n(b) $MLT^{-1}$\n(c) $ML^{-2}T^{-2}$\n(d) $M^{-1}LT^{-2}$\n\n3. Which one is the unit of momentum?\n(a) $\\text{kg m}$\n(b) $\\text{kg ms}^{-1}$\n(c) $\\text{kg m}^2\\text{s}^{-1}$\n(d) $\\text{kg ms}^{-2}$\n\n4. A force of $50\\text{ N}$ is applied on a body of mass $5\\text{ kg}$, its acceleration will be-\n(a) $12\\text{ ms}^{-2}$\n(b) $8\\text{ ms}^{-2}$\n(c) $13\\text{ ms}^{-2}$\n(d) $10\\text{ ms}^{-2}$\n\n5. If a mass of $10\\text{ kg}$ moves with a velocity of $10\\text{ ms}^{-1}$, its momentum will be-\n(a) $10\\text{ kg ms}^{-1}$\n(b) $120\\text{ kg ms}^{-1}$\n(c) $100\\text{ kg ms}^{-1}$\n(d) $1\\text{ kg ms}^{-1}$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

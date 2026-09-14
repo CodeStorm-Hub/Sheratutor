@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 331,
+  "pdf_page_no": 336,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution:\nLet, the length of a diagonal of rhombus $ABCD$ is $BD = d_1 = 10$ metre and another diagonal $d_2$ metre.\nArea of the rhombus = $\\frac{1}{2}d_1d_2$ sq. meter\nAs per question, $\\frac{1}{2}d_1d_2 = 120$ or, $d_2 = \\frac{120 \\times 2}{10} = 24$ metre.\nWe know, the diagonals of rhombus bisect each other at right angles. Let the diagonals interset at the point $O$.\n$\\therefore OD = OB = \\frac{10}{2}$ metre = 5 metre and $OA = OC = \\frac{24}{2}$ metre = 12 metre.\nIn the right-angled $\\triangle AOD$\n$AD^2 = OA^2 + OD^2 = 12^2 + 5^2$\n$\\therefore AD = 13$\n$\\therefore$ The length of each sides of the rhombus is 13 metre.\nThe perimeter of the rhombus = $4 \\times 13$ metre = 52 metre\nThe required length of the diagonal is 24 metre and perimeter 52 metre.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 14. The lengths of two parallel sides of a trapezium are 91 cm and 51 cm and the lengths of two other sides are 37 cm and 13 cm respectively. Determine the area of the trapezium.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution:\nLet, in trapezium $ABCD$; $AB = 91$ cm. $CD = 51$ cm.\nLet us draw the perpendiculars $DF$ and $CF$ on $AB$ from $D$ and $C$ respectively.\n$\\therefore CDEF$ is a rectangle.\n$\\therefore EF = CD = 51$ cm\nLet, $AE = x$ and $DE = CF = h$\n$\\therefore BF = AB - AF = 91 - (AE + EF) = 91 - (x + 51) = 40 - x$\nFrom the right-angled $\\triangle ADE$ we get,\n$AE^2 + DE^2 = AD^2$ or, $x^2 + h^2 = 13^2$ or, $x^2 + h^2 = 169 \\dots (1)$\nAgain in the right angled triangle $BCF$\n$BF^2 + CF^2 = BC^2$ or, $(40 - x)^2 + h^2 = 37^2$\nor, $1600 - 80x + x^2 + h^2 = 1369$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Rhombus ABCD",
+      "figure_no": "16.01",
+      "box_2d": [
+        91,
+        677,
+        248,
+        878
+      ],
+      "description": "A rhombus ABCD with diagonals intersecting at point O.",
+      "reading_order_anchor": "Solution:"
+    },
+    {
+      "caption": "Fig 16.02: Trapezium ABCD",
+      "figure_no": "16.02",
+      "box_2d": [
+        632,
+        629,
+        747,
+        885
+      ],
+      "description": "A trapezium ABCD with perpendiculars drawn from D and C to AB.",
+      "reading_order_anchor": "Solution:"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 263,
+  "pdf_page_no": 268,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Outside the focal length",
+      "chunk_type": "theory",
+      "content_markdown": "Now let's see what happens if the object is kept outside the focal length. Three different things can happen in this case, like in a concave mirror. (i) The object is outside the focal length but inside twice of the focal length. (ii) The object is outside twice of the focal length and (iii) The object is exactly on the twice of the focal length. Let's examine this one by one.\n\n(i) First, the object will be kept outside the focal length but inside twice of the focal length. In Figure 9.24, the image of the point $Y$ of the object $XY$ will be on the $YO$ line. So, we find the image of the point $X$, as before. The ray from point $X$ which is parallel to the axis will go through the focal point $F$. Another ray will pass through the center point along line $XO$.\n\nThe point $X'$, where the two lines meet, is the image of point $X$. If a normal is drawn from $X'$ to the axis $YO$, then the point will be the position of the image of the point $Y$. Therefore, for the image of $XY$, we can say :\n\n(a) The position of the image will be outside twice of the focal length\n(b) It is real\n(c) It is inverted\n(d) It is bigger than the size of the object\n\n(ii) Now let's see what will happen if the object is kept outside twice of the focal length. It is seen that if the object $XY$ is kept at exactly twice of the focal length (Figure 9.25), then the size of the image will be same as the object $XY$ and the position of the object will be at the same distance from the center of the lens. The closer the object will be brought to the focal point, the further away the",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.24: If he object is at the outside the focal length but inside the twice of the focal length, the real, inverted and bigger image is formed.",
+      "figure_no": "9.24",
+      "box_2d": [
+        232,
+        470,
+        469,
+        843
+      ],
+      "description": "Ray diagram showing a convex lens forming a real, inverted, and enlarged image of an object placed between $F$ and $2F$.",
+      "reading_order_anchor": "Outside the focal length"
+    }
+  ]
+}

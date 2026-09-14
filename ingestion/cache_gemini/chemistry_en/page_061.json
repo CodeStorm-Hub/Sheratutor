@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 61,
+  "pdf_page_no": 66,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": "4.1",
+      "section_title": "Background of Periodic Table",
+      "chunk_type": "theory",
+      "content_markdown": "Periodic Table is the outstanding collection of chemical concepts gathered over hundreds of years. It is not an achievement of one single scientist or a one day's effort. Various scientists have given their tireless effort after it to get the present state of the table.\n\nIn 1789, Antoine Lavoisier first divided the elements like Oxygen, Nitrogen, Hydrogen, Phosphorus, Mercury, Zinc, Sulphur etc. into metals and non-metals. Then on, there was constant effort to divide the elements in groups having the same characteristics.\n\nIn 1829, the scientist Dobereineir found that groups of three elements show the same kind of features. First, he organized the elements into threes according to their atomic mass. Then he marked that atomic mass of the second element is half or near about half of the summation of first and third's atomic mass. Dobereineir identified Chlorine, Bromine and Iodine as the first trio of chemical elements. It is known as Dobereineir's Law of Triads.\n\nFor the elements detected up to 1864, English scientist John A R Newlands gave a theory called Law of Octet. According to it, if elements are organized following a sequence of lower to higher atomic mass, there is evident similarity in physical and chemical properties of each eighth element.\n\nIn the year 1869, Russian scientist Mendeleev published a table in an attempt to contain elements with similar properties in the same group. Reviewing the physical and chemical properties, he theorized, \"Physical and chemical properties of elements return periodically as atomic mass of elements increase.\"\n\nFollowing this theory, he organized the 63 elements identified till then in eight vertical columns and 12 horizontal lines. Thus he proved that elements belonging to each column have the same physical and chemical properties and in each line, they change gradually as they progress from left to right. The table was named Periodic Table.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

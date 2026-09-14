@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 48,
+  "pdf_page_no": 53,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We have mentioned earlier that the acceleration due to gravity is an example of uniform acceleration. The equations we have deduced about motion, can be used to deduce the equations of motion of the falling bodies. In case motion $s$ was used to indicate the travelled distance, for a falling body we will use $h$ to indicate height. For acceleration we will use $g$ instead of $a$. These two will be the only difference!\n\n$$\\begin{aligned}\nv &= u + gt \\\\\nh &= ut + \\frac{1}{2}gt^2 \\\\\nv^2 &= u^2 + 2gh\n\\end{aligned}$$\n\nThe three laws of falling bodies of Galileo are nothing but these equations of motion of falling bodies.\n\nThe first law states that all objects released from the same height will reach the ground at the same time i.e. it does not depend on the mass of the objects. This does not go with the experience of our daily lives. If a piece of paper and a piece of stone are released from the same height, at the same time, then the stone reaches the ground first and the paper reaches the ground later. This happens due to the resistance of air. If the experiment is done in a vacuum tube then both the paper and stone will reach the ground at the same time. Galileo's first law can be understood from the equation of falling bodies. This is because there is no mass of object in the equations of velocity and traversed height. That is the acceleration due to gravity acts equally on both heavy and light objects. So the freely falling body traverses equal distances in the same time.\n\nThe second law of Galileo is the law of increase of velocity due to $g$. If the initial velocity $u$ is zero then velocity $v$ is proportional to $g$. Galileo's third law is nothing except the equation of $h$. In this formula if we consider $u=0$ then we see that traversed distance $h$ is proportional to $t^2$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** A good pace bowler of cricket can throw a ball with a velocity of $150\\text{ km/hour}$. If he throws the ball vertically upwards, how high will it go?",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

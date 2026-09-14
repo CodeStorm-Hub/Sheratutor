@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 162,
+  "pdf_page_no": 167,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "Heat and Temperature",
+      "chunk_type": "theory",
+      "content_markdown": "Heat is a kind of energy. We have seen that energy can do work. By applying force it is possible to displace a body in the direction of the force, for example heat is produced by burning fuel oil in a train or a car and this produced energy creates motion in the train or car. So this new form of energy is called heat energy like light, electricity or kinetic energy.\n\nIt is interesting that if we could see on the molecular level i.e., looking at any substance if we see its molecules, we should call it \"kinetic energy\" instead of the \"heat energy\". Because what we mean by heat energy is actually nothing but the combined kinetic energy of the molecules of a substance. When the molecules of a solid are heated then the molecules vibrate about their fixed positions. The more the molecules are heated, the more the vibration increases. If the molecules are heated enough the molecules become free by overcoming the intermolecular forces among them. Then we call it a liquid. Then the molecules move randomly among themselves. Since the molecules are in motion, they have kinetic energy. The more the molecules are heated, the faster they will move. If the molecules are heated more, they may be completely free from their intermolecular forces. Then we call it a gas. The more a gas will be heated, the faster its molecules will move. The more the velocity, the more the kinetic energy.\n\nSince we cannot see the molecules with our naked eyes, we cannot see their movement, so we try to understand the whole thing indirectly, we call it heat energy and try to explain the states of matter considering it as temperature. So we can say that the energy which is obtained due to molecular vibration or motion of a substance is called heat. As it is a form of energy like other energy, so its unit is Joule ($J$). There is another unit of heat which is calorie ($cal$). The amount of heat energy required to increase the temperature of $1\text{ gm}$ of water by $1^\\circ\text{ C}$ is called $1\text{ Calorie}$. $1\text{ Calorie}$ is equal to $4.2\text{ J}$. You have heard about the word \"calorie\" which is used in case of food. Food Calorie means actually the amount of energy obtained from a definite quantity of food and the unit for this is $\text{kcal}$ or $1000\text{ calorie}$. But we will not worry about this now. Here we will discuss heat energy not energy gained from foods.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 259,
+  "pdf_page_no": 264,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Given equations are:\n$$3x - y = 3 \\dots (1)$$\n$$5x + y = 21 \\dots (2)$$\nFrom equation (1) we get, $$3x - y = 3$$, or, $$y = 3x - 3$$\nTaking some values of $$x$$ in the equation, we find the corresponding values of $$y$$ and make the adjoining table:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $$x$$ | $$-1$$ | $$0$$ | $$3$$ |\n| :--- | :--- | :--- | :--- |\n| $$y$$ | $$-6$$ | $$-3$$ | $$6$$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore$$ three points on the graph of the equation are: $$(-1, -6), (0, -3), (3, 6)$$\nAgain, from equation (2) we get, $$5x + y = 21$$, or, $$y = 21 - 5x$$\nTaking some values of $$x$$ in the equation, we find the corresponding values of $$y$$ and make the adjoining table:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $$x$$ | $$3$$ | $$4$$ | $$5$$ |\n| :--- | :--- | :--- | :--- |\n| $$y$$ | $$6$$ | $$1$$ | $$-4$$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore$$ three points on the graph of the equation are: $$(3, 6), (4, 1), (5, -4)$$.\nIn a graph paper let $$XOX'$$ and $$YOY'$$ be respectively the $$X$$- axis and $$Y$$- axis and $$O$$ is the origin.\nWe take each side of the smallest squares of the graph paper as unit along with both axes.\nNow, we plot the points $$(-1, -6), (0, -3), (3, 6)$$ obtained from equation (1) and join them each other. The graph is a straight line.\nAgain, we plot the points $$(3, 6), (4, 1), (5, -4)$$ obtained from equation (2) and join them each other. In this case also the graph is a straight line.\nLet the two straight lines intersect each other at $$P$$. It is seen from the picture that the coordinates of $$P$$ are $$(3, 6)$$.\n$$\\therefore$$ solution: $$(x, y) = (3, 6)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 10. Solve by graphical method:\n$$2x + 5y = -14$$\n$$4x - 5y = 17$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Graphical solution of simultaneous equations",
+      "figure_no": "12.01",
+      "box_2d": [
+        555,
+        595,
+        777,
+        853
+      ],
+      "description": "A Cartesian coordinate system showing two intersecting straight lines representing the equations 3x-y=3 and 5x+y=21, intersecting at point P(3,6).",
+      "reading_order_anchor": "In a graph paper let XOX' and YOY' be"
+    }
+  ]
+}

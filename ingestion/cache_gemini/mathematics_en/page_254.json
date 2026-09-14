@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 254,
+  "pdf_page_no": 259,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ solution: $(x, y) = (12, 6)$\n\nVerification of the correctness of the solution:\n\nPutting the values of $x, y$ in given equations,\n\nIn first equation, L.H.S $= \\frac{x}{2} + \\frac{y}{3} = \\frac{12}{2} + \\frac{6}{3} = 6 + 2 = 8 = \\text{R.H.S}$\n\nIn second equation, L.H.S $= \\frac{5x}{4} - 3y = \\frac{5 \\times 12}{4} - 3 \\times 6 = 15 - 18 = -3 = \\text{R.H.S.}$\n\n$\\therefore$ the solution is correct.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. Solve by the method of cross-multiplication: $ax - by = ab = bx - ay$\n\nSolution: Given equations are:\n\n$ax - by = ab$ or, $ax - by - ab = 0$\n\n$bx - ay = ab$ or, $bx - ay - ab = 0$\n\nBy the method of cross-multiplication, we get,\n\n$$\\frac{x}{(-b) \\times (-ab) - (-a)(-ab)} = \\frac{y}{(-ab) \\times b - (-ab) \\times a} = \\frac{1}{a \\times (-a) - b \\times (-b)}$$\n\nor, $\\frac{x}{ab^2 - a^2b} = \\frac{y}{-ab^2 + a^2b} = \\frac{1}{-a^2 + b^2}$\n\nor, $\\frac{x}{-ab(a - b)} = \\frac{y}{ab(a - b)} = \\frac{1}{-(a + b)(a - b)}$\n\nor, $\\frac{x}{ab(a - b)} = \\frac{y}{-ab(a - b)} = \\frac{1}{(a + b)(a - b)}$\n\n$\\therefore \\frac{x}{ab(a - b)} = \\frac{1}{(a + b)(a - b)}$, or, $x = \\frac{ab(a - b)}{(a + b)(a - b)} = \\frac{ab}{a + b}$\n\nAgain, $\\frac{y}{-ab(a - b)} = \\frac{1}{(a + b)(a - b)}$, or, $y = \\frac{-ab(a - b)}{(a + b)(a - b)} = \\frac{-ab}{a + b}$\n\n$\\therefore (x, y) = \\left( \\frac{ab}{a + b}, \\frac{-ab}{a + b} \\right)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Cross-multiplication table",
+      "figure_no": "12.01",
+      "box_2d": [
+        515,
+        582,
+        595,
+        916
+      ],
+      "description": "A table showing the coefficients for the cross-multiplication method.",
+      "reading_order_anchor": "By the method of cross-multiplication, we get,"
+    }
+  ]
+}

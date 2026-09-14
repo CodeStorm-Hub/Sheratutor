@@ -1,0 +1,135 @@
+{
+  "printed_page_no": 185,
+  "pdf_page_no": 190,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. ক) $\\frac{\\sin A}{\\operatorname{cosec} A} + \\frac{\\cos A}{\\sec A} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $\\frac{\\sec A}{\\cos A} - \\frac{\\tan A}{\\cot A} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $\\frac{1}{1 + \\sin^2 A} + \\frac{1}{1 + \\operatorname{cosec}^2 A} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. ক) $\\frac{\\tan A}{1 - \\cot A} + \\frac{\\cot A}{1 - \\tan A} = \\sec A \\cdot \\operatorname{cosec} A + 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $\\frac{1}{1 + \\tan^2 A} + \\frac{1}{1 + \\cot^2 A} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. $\\frac{\\cos A}{1 - \\tan A} + \\frac{\\sin A}{1 - \\cot A} = \\sin A + \\cos A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. $\\tan A \\sqrt{1 - \\sin^2 A} = \\sin A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. $\\frac{\\sec A + \\tan A}{\\operatorname{cosec} A + \\cot A} = \\frac{\\operatorname{cosec} A - \\cot A}{\\sec A - \\tan A}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $\\frac{\\operatorname{cosec} A}{\\operatorname{cosec} A - 1} + \\frac{\\operatorname{cosec} A}{\\operatorname{cosec} A + 1} = 2\\sec^2 A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. $\\frac{1}{1 + \\sin A} + \\frac{1}{1 - \\sin A} = 2\\sec^2 A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. $\\frac{1}{\\operatorname{cosec} A - 1} - \\frac{1}{\\operatorname{cosec} A + 1} = 2\\tan^2 A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. $\\frac{\\sin A}{1 - \\cos A} + \\frac{1 - \\cos A}{\\sin A} = 2\\operatorname{cosec} A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. $\\frac{\\tan A}{\\sec A + 1} - \\frac{\\sec A - 1}{\\tan A} = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৭. $(\\tan \\theta + \\sec \\theta)^2 = \\frac{1 + \\sin \\theta}{1 - \\sin \\theta}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. $\\frac{\\cot A + \\tan B}{\\cot B + \\tan A} = \\cot A \\cdot \\tan B$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৯. $\\sqrt{\\frac{1 - \\sin A}{1 + \\sin A}} = \\sec A - \\tan A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২০. $\\sqrt{\\frac{\\sec A + 1}{\\sec A - 1}} = \\cot A + \\operatorname{cosec} A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২১. $\\cos A + \\sin A = \\sqrt{2}\\cos A$ হলে, তবে প্রমাণ কর যে, $\\cos A - \\sin A = \\sqrt{2}\\sin A$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

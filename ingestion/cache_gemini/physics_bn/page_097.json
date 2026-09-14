@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 97,
+  "pdf_page_no": 102,
+  "chapter_no": 3,
+  "chapter_title": "বল",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১. ফারুক $10\\text{ kg}$ ভরের একটি বাক্স একটি মেঝের উপর দিয়ে সমবলে টেনে নিল। বাক্স ও মেঝের মধ্যকার ঘর্ষণ বলের মান হলো $1.5\\text{ N}$। বক্সটিকে টেনে নেওয়ায় এর ত্বরণ হলো $0.8\\text{ ms}^{-2}$। এরপর বক্সটিকে ঘর্ষণবিহীন মেঝেতে একই বল প্রয়োগ করে টানা হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) সাম্য বল কাকে বলে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(খ) ঘর্ষণ বল কেন উৎপন্ন হয়?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(গ) প্রথম ক্ষেত্রে বাক্সটির উপর প্রযুক্ত বলের মান নির্ণয় করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ঘ) ঘর্ষণযুক্ত ও ঘর্ষণবিহীন মেঝেতে ত্বরণের কীরূপ পরিবর্তন হবে? গাণিতিকভাবে ব্যাখ্যা করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২. সরলরৈখিক পথে গতিশীল $5\\text{ kg}$ ভরের একটি বস্তু $5\\text{ m/s}$ বেগে অপর আরেকটি বস্তুকে আঘাত করে দ্বিতীয় বস্তুটির ভরবেগ $4\\text{ kg m/s}$ পরিমাণ পরিবর্তন করে। এই সংঘর্ষের পর উভয় বস্তুর ভর অপরিবর্তিত থাকে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) পদার্থের কোন ধর্ম জড়তার পরিমাপক?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(খ) প্রযুক্ত বল ভরবেগের পরিবর্তনের সমানুপাতিক বলতে কী বোঝো?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(গ) প্রথম বস্তুর শেষ বেগ কত হবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ঘ) যখন ভরবেগের কোনো পরিবর্তন হয় না, তখন গাণিতিক বিশ্লেষণের মাধ্যমে দ্বিতীয় বস্তু্রটি সম্পর্কে মন্তব্য করো।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

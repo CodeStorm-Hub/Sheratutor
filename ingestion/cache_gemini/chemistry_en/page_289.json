@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 289,
+  "pdf_page_no": 294,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": "12.1",
+      "section_title": "Domestic Chemistry/ House hold Chemistry",
+      "chunk_type": "theory",
+      "content_markdown": "We use different kinds of chemical substances such as table salt, baking powder, vinegar, soft drinks in our houses.\n\n### Table Salt or Edible salt\n\nHuge amounts of table salt or sodium chloride ($\text{NaCl}$) along with a little quantity of some other salts including $\text{NaCl}$, $\text{MgCl}_2$ are dissolved in sea water. Again sufficient sodium chloride is found underground as minerals. In our country table salt is extracted from sea water. Salt cultivators in the coastal areas of our country make dams around square or rectangular land of different sizes and keep a small empty space there. When tide water enters through this space, the water is contained inside by closing the entry point. When this water evaporates in the presence of heat of sunlight, salts become visible. This method is called salt harvesting. The salt collected through the harvesting process is processed into edible salt through different processes in factories.\n\nThe salt collected through harvesting process contains sand. When this salt is mixed with water in a pot, the salt is dissolved in water but the sand remains at the bottom of the pot. Then the salt-water solution is separated through filtration. Again when this solution is heated, the water vaporizes but the salt remains at the bottom of the pot. In this way, the processed salt is packed and sent to different places for sale. We need different types of ions like $\text{Na}^+$, $\text{K}^+$ etc for smooth running of all activities in our body. If there is lack of $\text{Na}^+$ in our body due to any reason, this deficiency is filled up by taking $\text{NaCl}$ with water.\n\n**Uses of $\text{NaCl}$:** $\text{NaCl}$ is used for different purposes, such as-",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Salt harvesting in the coastal area.",
+      "figure_no": "12.01",
+      "box_2d": [
+        522,
+        116,
+        750,
+        554
+      ],
+      "description": "A person standing in shallow salt-harvesting pans in a coastal area, with dams and pans stretching into the distance.",
+      "reading_order_anchor": "12.1 Domestic Chemistry/ House hold Chemistry"
+    }
+  ]
+}

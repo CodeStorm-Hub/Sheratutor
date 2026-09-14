@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 199,
+  "pdf_page_no": 204,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:**\n1) If $\\cot^4 A - \\cot^2 A = 1$, prove that, $\\cos^4 A + \\cos^2 A = 1$\n2) If $\\sin^4 A + \\sin^2 A = 1$, prove that, $\\tan^4 A - \\tan^2 A = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 12.** If $\\sec A + \\tan A = \\frac{5}{2}$, find the value of $\\sec A - \\tan A$.\n\n**Solution:** Here given that, $\\sec A + \\tan A = \\frac{5}{2} \\dots (1)$\nWe know that, $\\sec^2 A = 1 + \\tan^2 A$\nOr, $\\sec^2 A - \\tan^2 A = 1$\nOr, $(\\sec A + \\tan A)(\\sec A - \\tan A) = 1$\nOr, $\\frac{5}{2}(\\sec A - \\tan A) = 1$ [From (1)]\n$\\therefore \\sec A - \\tan A = \\frac{2}{5}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Exercise 9.1",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Verify whether each of the following mathematical statements is true or false. Give argument in favour of your answer.\n1) The value of $\\tan A$ is always less than 1.\n2) $\\cot A$ is the multiplication of $\\cot$ and $A$\n3) For any value of $A$, $\\sec A = \\frac{12}{5}$\n4) $\\cos$ is the smallest form of cotangent\n2. If $\\sin A = \\frac{3}{4}$, find the other trigonometric ratios of the angle $A$.\n3. Given that, $15\\cot A = 8$, find the values of $\\sin A$ and $\\sec A$.\n4. If $\\angle C$ is the right angle of the right-angled triangle $ABC$, $AB = 13 \\text{ cm}$, $BC = 12 \\text{ cm}$ and $\\angle ABC = \\theta$, find the values of $\\sin \\theta$, $\\cos \\theta$ and $\\tan \\theta$.\n5. $\\angle B$ is the right-angle of the right angled triangle $ABC$. If $\\tan A = \\sqrt{3}$, verify the truth of $\\sqrt{3}\\sin A \\cos A = \\frac{3}{4}$\nProve (6-20):\n6. 1) $\\frac{1}{\\sec^2 A} + \\frac{1}{\\text{cosec}^2 A} = 1$\n2) $\\frac{1}{\\cos^2 A} - \\frac{1}{\\cot^2 A} = 1$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

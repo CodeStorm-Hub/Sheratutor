@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 43,
+  "pdf_page_no": 48,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this chapter we will discuss only the linear motion i.e. if the change in magnitude of the velocity occurs then only acceleration will takes place.\n\nAcceleration is the rate of change of velocity with time. If the acceleration is uniform i.e. it will not change with time, then we can write;\n\n$$\\text{acceleration} = \\frac{\\text{final velocity} - \\text{initial velocity}}{\\text{time}}$$\n\nIf the velocity of an object at a certain time is $u$ and after time $t$ the velocity becomes $v$, then the acceleration $a$ will be;\n\n$$a = \\frac{v - u}{t}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The dimension of acceleration: $[a] = LT^{-2}$  \nUnit of acceleration: $\\text{ms}^{-2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When the acceleration $a$ is known and if the initial velocity is $u$ then after time $t$ it is very easy to find the final velocity $v$ (Figure 2.07). The final velocity is,\n\n$$v = u + at$$  \n\nIf the object starts its motion with an acceleration from rest, then  \n$$v = at$$  \n\nIn the meantime all the discussions done so for are true for uniform acceleration. If the object does not move with uniform acceleration, then it is not so easy to find the acceleration from the initial and final velocities.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The examples of motion we see around us, such as the motion of a car, train or a bicycle etc. have their accelerations as non-uniform almost all the time. For example, if a car starts its motion from rest and increases its velocity gradually, then starting from zero its acceleration reaches a particular value. When the car attains its peak velocity, then its velocity does not increase any further and the acceleration becomes zero again. If the car reduces its velocity and ceases it",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.07 : Increasing velocity of an object which is moving with uniform acceleration, started from rest.",
+      "figure_no": "2.07",
+      "box_2d": [
+        522,
+        532,
+        706,
+        882
+      ],
+      "description": "A velocity-time graph showing linear increase in velocity from initial velocity u to final velocity v over time t under uniform acceleration starting from rest.",
+      "reading_order_anchor": "When the acceleration a is known and if the initial velocity is u then after time t it is very easy to find the final velocity v (Figure 2.07)."
+    }
+  ]
+}

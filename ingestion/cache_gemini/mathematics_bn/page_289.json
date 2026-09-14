@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 289,
+  "pdf_page_no": 294,
+  "chapter_no": 15,
+  "chapter_title": "ক্ষেত্রফল সম্পর্কিত উপপাদ্য",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৪. আয়তক্ষেত্র $ADLM = $ বর্গক্ষেত্র $ACGF$\n\nধাপ ৫. অনুরূপভাবে $C, E$ ও $A, K$ যোগ করে প্রমাণ করা যায় যে,\nআয়তক্ষেত্র $BELM = $ বর্গক্ষেত্র $BCHK$\n\nধাপ ৬. আয়তক্ষেত্র $(ADLM + BELM) = $ বর্গক্ষেত্র $ACGF + $ বর্গক্ষেত্র $BCHK$\nবা, বর্গক্ষেত্র $ABED = $ বর্গক্ষেত্র $ACGF + $ বর্গক্ষেত্র $BCHK$\nঅর্থাৎ, $AB^2 = BC^2 + AC^2$ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ১৩. এমন একটি সামান্তরিক আঁকতে হবে, যার একটি কোণ একটি নির্দিষ্ট কোণের সমান এবং যা দ্বারা সীমাবদ্ধ ক্ষেত্র একটি ত্রিভুজক্ষেত্রের ক্ষেত্রফলের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $ABC$ একটি নির্দিষ্ট ত্রিভুজক্ষেত্র এবং $\\angle x$ একটি নির্দিষ্ট কোণ। এরূপ সামান্তরিক আঁকতে হবে, যার একটি কোণ $\\angle x$ এর সমান এবং যা দ্বারা সীমাবদ্ধ ক্ষেত্রের ক্ষেত্রফল $\\triangle ABC$ এর ক্ষেত্রফলের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $BC$ বাহুকে $E$ বিন্দুতে সমদ্বিখণ্ডিত করি। $EC$ রেখাংশের $E$ বিন্দুতে $\\angle x$ এর সমান $\\angle CEF$ আঁকি। $A$ বিন্দু দিয়ে $BC$ বাহুর সমান্তরাল $AG$ রশ্মি টানি এবং মনে করি তা $EF$ রশ্মিকে $F$ বিন্দুতে ছেদ করে। $C$ বিন্দু দিয়ে $EF$ রেখাংশের সমান্তরাল $CG$ রশ্মি টানি এবং মনে করি তা $AG$ রশ্মিকে $G$ বিন্দুতে ছেদ করে। তাহলে, $ECGF$ ই উদ্দিষ্ট সামান্তরিক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $A, E$ যোগ করি।\n\nএখন, $\\triangle ABE$ এর ক্ষেত্রফল = $\\triangle AEC$ এর ক্ষেত্রফল [যেহেতু ভূমি $BE = $ ভূমি $EC$ এবং উভয়ের একই উচ্চতা]\n\n$\\therefore \\triangle ABC$ এর ক্ষেত্রফল = $2 \\triangle AEC$ এর ক্ষেত্রফল\n\nআবার, সামান্তরিক ক্ষেত্র $ECGF$ এর ক্ষেত্রফল = $2 \\triangle AEC$ এর ক্ষেত্রফল [যেহেতু, উভয়ে একই ভূমি $EC$ এর উপর অবস্থিত এবং $EC \\parallel AG$]\n\n$\\therefore$ সামান্তরিক ক্ষেত্র $ECGF$ এর ক্ষেত্রফল = $\\triangle ABC$ এর ক্ষেত্রফল\n\nআবার, $\\angle CEF = \\angle x$ [যেহেতু $EF \\parallel CG$, অঙ্কন অনুসারে]\n\n$\\therefore$ সামান্তরিক $ECGF$ ই নির্ণেয় সামান্তরিক।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৫.১৩: সামান্তরিক অঙ্কন",
+      "figure_no": "15.13",
+      "box_2d": [
+        354,
+        181,
+        512,
+        818
+      ],
+      "description": "একটি ত্রিভুজ ABC এবং একটি নির্দিষ্ট কোণ x এর সাহায্যে সামান্তরিক ECGF অঙ্কনের জ্যামিতিক চিত্র।",
+      "reading_order_anchor": "সম্পাদ্য ১৩. এমন একটি সামান্তরিক আঁকতে হবে, যার একটি কোণ একটি নির্দিষ্ট কোণের সমান এবং যা দ্বারা সীমাবদ্ধ ক্ষেত্র একটি ত্রিভুজক্ষেত্রের ক্ষেত্রফলের সমান।"
+    }
+  ]
+}

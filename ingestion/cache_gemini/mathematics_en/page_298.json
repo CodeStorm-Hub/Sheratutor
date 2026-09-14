@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 298,
+  "pdf_page_no": 303,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\nFor $\\triangle APQ$ and $\\triangle DEF$, $AP = DE$, $AQ = DF$ and internal $\\angle A = $ internal $\\angle D$\n$\\therefore \\triangle APQ \\cong \\triangle DEF$ [SAS theorem]\n\n$\\therefore \\angle A = \\angle D$, $\\angle APQ = \\angle E$, $\\angle AQP = \\angle F$\nAgain, since $\\frac{AB}{DE} = \\frac{AC}{DF}$, therefore $\\frac{AB}{AP} = \\frac{AC}{AQ}$ [theorem 29]\n$\\therefore PQ \\parallel BC$\n\nTherefore $\\angle ABC = \\angle APQ$ and $\\angle ACB = \\angle AQP$\n$\\therefore \\angle A = \\angle D$, $\\angle B = \\angle E$, and $\\angle C = \\angle F$\ni.e. $\\triangle ABC$ and $\\triangle DEF$ are equiangular.\nTherefore $\\triangle ABC$ and $\\triangle DEF$ are similar.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 35.** The ratio of the areas of two similar triangles is equal to the ratio of squares on any two matching sides.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Special Nomination:** Let the triangles $ABC$ and $DEF$ be similar and $BC$ and $EF$ be their matching sides respectively. It is required to prove that, $\\triangle ABC : \\triangle DEF = BC^2 : EF^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** Draw perpendiculars $AG$ and $DH$ on $BC$ and $EF$ respectively. Let $AG = h$, $DH = p$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Similar triangles ABC and DEF",
+      "figure_no": "14.01",
+      "box_2d": [
+        667,
+        303,
+        755,
+        700
+      ],
+      "description": "Two triangles ABC and DEF with altitudes AG and DH respectively.",
+      "reading_order_anchor": "Drawing: Draw perpendiculars AG and DH on BC and EF respectively. Let AG = h, DH = p."
+    }
+  ]
+}

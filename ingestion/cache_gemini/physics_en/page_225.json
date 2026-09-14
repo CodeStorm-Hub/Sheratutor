@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 225,
+  "pdf_page_no": 230,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": "8.5",
+      "section_title": "Convex Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "An actual convex mirror is a part of a real sphere. Let, the radius of the sphere be $r$ (Figure 8.17). A part of it has been cut to make provision for reflection of light from the convex side.\n\nIf a parallel light beam is incident on the mirror, the light will scatter in all directions. If we extend the scattered light rays towards the center of the mirror, it will seem like they have come from a point. This point is called the focal point. The center point of the surface of a convex mirror that reflects the light is called pole and the distance of the focal point from the pole is called the focal length ($f$).\n\nWe can imagine a spherical mirror as a part of a sphere. If the radius of this sphere is $r$, its focal length would be $f = \\frac{r}{2}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.5",
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Prove that, $f = \\frac{r}{2}$\n\n**Answer:** Interestingly, you cannot prove this completely. You can only go close to it. Let two rays parallel with the principal axis of a spherical mirror",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.17: Focal length of a convex mirror is half of the radius of the sphere.",
+      "figure_no": "8.17",
+      "box_2d": [
+        471,
+        271,
+        698,
+        693
+      ],
+      "description": "Ray diagram showing parallel rays reflecting off a convex mirror, diverging, and extrapolating back to a focal point at distance r/2 from the pole.",
+      "reading_order_anchor": "8.5 Convex Mirror"
+    }
+  ]
+}

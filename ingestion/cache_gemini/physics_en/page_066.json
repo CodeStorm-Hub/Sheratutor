@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 66,
+  "pdf_page_no": 71,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": "3.1.2",
+      "section_title": "Force",
+      "chunk_type": "theory",
+      "content_markdown": "Actually Newton’s first law of motion can be the definition of force. Force is that quantity the application of which a stationary object start move and a body moving, with a uniform velocity change its velocity. From Newton’s first law we can understand, what is force but cannot measure it. But from the second law, we will learn to measure force.\n\nWhen you use force in your daily life for different purposes, you may realize that for the application of some forces it is necessary to come in contact with the object (e.g. to lift heavy objects with the help of a crane, to push anything or coming to rest of moving objects due to friction). Whereas you may have noticed that for the application of some other forces, it is not necessary to come into contact with the object (falling of anything downwards due to gravitational force, attraction by magnets).",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2",
+      "section_title": "Nature of Fundamental Forces",
+      "chunk_type": "theory",
+      "content_markdown": "If you are asked how many types of forces are there on the earth? You certainly will say, many types. If we push anything this is a force, when a truck carries or pulls a load this is a force, when a tree is uprooted due to a storm this is a force, when a magnet attracts iron this is a force, when houses are blown away in bomb blasts, it is a type of force, it is a force, when a crane lifts something this is force. If you are given some time, you can prepare a big list of such types of forces.\n\nBut do you know the amazing matter? There are only four types of forces in nature, if the forces described above are analyzed, you will find that they are not outside these four types. Fundamental forces are actually only four in number. These are; gravitational force, electromagnetic force, weak nuclear force and strong nuclear force.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2.1",
+      "section_title": "Gravitational Force",
+      "chunk_type": "theory",
+      "content_markdown": "All objects in the universe attract one another by a force due to their mass. This force is called the gravitational force. Due to this gravitational force the stars are revolving within the galaxy or the earth is revolving around the sun and the moon is revolving around the earth. When the force of gravitation of the earth works on us, we call it gravity. This gravity attracts us towards the center of the earth i.e. pulls downwards and due to this pull we feel our weight.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

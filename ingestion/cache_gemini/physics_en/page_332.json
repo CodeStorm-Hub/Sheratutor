@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 332,
+  "pdf_page_no": 337,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": "12.1",
+      "section_title": "Magnet",
+      "chunk_type": "theory",
+      "content_markdown": "All of you have seen a magnet. If a magnet is brought close to iron like materials, then it attracts the iron. There is nothing visible between the magnet and iron but an invisible force is pulling it. When observing that for the first time, one kind of surprise is developed in all.\n\nThose of you who have played the magnets must have noticed (Figure 12.01) that there are two poles of a magnet. The similar poles repel, while the dissimilar poles attract each other.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The poles are generally named the north and south poles.\n\nIf a bar magnet is suspended freely, it always points towards the north-south direction.\n\nThe pole which directs towards the north direction is called the north pole, and the pole which directs towards the south is called the south pole. This occurs due to the fact that the earth itself has a magnetic field; when a magnet is suspended; the magnet aligns itself along that field.\n\nWe can discuss how two magnets attract one another. But first we have to know from where the force of a magnet comes.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2",
+      "section_title": "Magnetic Effects of Current",
+      "chunk_type": "theory",
+      "content_markdown": "Those of you who have handled magnets cannot imagine that it is not different from electricity, and a magnet can be made by electricity or flow of charges!",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 12.01: Dissimilar poles of a magnet attract, and similar poles repel.",
+      "figure_no": "12.01",
+      "box_2d": [
+        318,
+        205,
+        556,
+        794
+      ],
+      "description": "Two diagrams showing bar magnets interacting: one pair with dissimilar poles attracting and one pair with similar poles repelling.",
+      "reading_order_anchor": "Those of you who have played the magnets must have noticed (Figure 12.01)"
+    }
+  ]
+}

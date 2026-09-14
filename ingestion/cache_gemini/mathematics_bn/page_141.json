@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 141,
+  "pdf_page_no": 146,
+  "chapter_no": 7,
+  "chapter_title": "ব্যবহারিক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\angle ABC = \\angle ADB + \\angle DAB = \\frac{1}{2}\\angle x + \\frac{1}{2}\\angle x = \\angle x$$\n\nএবং $$\\angle ACB = \\angle AEC + \\angle EAC = \\frac{1}{2}\\angle y + \\frac{1}{2}\\angle y = \\angle y$$\n\nসুতরাং $$\\triangle ABC$$ ই নির্ণেয় ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\nত্রিভুজের ভূমি সংলগ্ন দুইটি সূক্ষ্মকোণ ও পরিসীমা দেওয়া আছে। বিকল্প পদ্ধতিতে ত্রিভুজটি অঙ্কন কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. একটি ত্রিভুজ $$ABC$$ আঁক, যার $$\\angle B = 60^\\circ$$, $$\\angle C = 45^\\circ$$ এবং পরিসীমা $$AB + BC + CA = 11$$ সে.মি.।\n\nঅঙ্কন: নিচের ধাপসমূহ অনুসরণ করি:\n১. রেখাংশ $$PQ = 11$$ সে.মি. আঁকি।\n২. $$PQ$$ রেখাংশের একই পাশে $$P$$ এবং $$Q$$ বিন্দুতে যথাক্রমে $$\\angle QPL = 60^\\circ$$ ও $$\\angle PQM = 45^\\circ$$ কোণ আঁকি।\n৩. কোণ দুইটির দ্বিখণ্ডক $$PG$$ ও $$QH$$ আঁকি। মনে করি, $$PG$$ ও $$QH$$ রশ্মিদ্বয় পরস্পরকে $$A$$ বিন্দুতে ছেদ করে।\n৪. $$PA, QA$$ রেখাংশের লম্ব সমদ্বিখণ্ডক আঁকি যা $$PQ$$ রেখাংশকে যথাক্রমে $$B$$ ও $$C$$ বিন্দুতে ছেদ করে।\n৫. $$A, B$$ এবং $$A, C$$ যোগ করি।\nতাহলে, $$\\triangle ABC$$ ই উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৭.০১: ত্রিভুজ অঙ্কন",
+      "figure_no": "7.01",
+      "box_2d": [
+        368,
+        298,
+        578,
+        745
+      ],
+      "description": "একটি ত্রিভুজ ABC অঙ্কনের জ্যামিতিক চিত্র যেখানে পরিসীমা PQ এর উপর ভিত্তি করে কোণ ও লম্ব সমদ্বিখণ্ডক ব্যবহার করা হয়েছে।",
+      "reading_order_anchor": "উদাহরণ ১. একটি ত্রিভুজ ABC আঁক, যার \\angle B = 60^\\circ, \\angle C = 45^\\circ এবং পরিসীমা AB + BC + CA = 11 সে.মি.।"
+    }
+  ]
+}

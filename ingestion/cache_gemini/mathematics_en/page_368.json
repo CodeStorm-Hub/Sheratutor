@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 368,
+  "pdf_page_no": 373,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Make two groups with all the students of your class. (a) Make a frequency distribution table of the time taken by each of you to solve a problem, (b) find the median from the table.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Mode:\n\nIn class VIII, we have learned that the number which appears maximum times in a data is the mode of the data. In a data, there may be one or more than one mode. If there is no repetition of a member in a data, data will have no mode. Now we shall discuss how to determine the mode of classified data using formula.\n\nDetermining Mode of Classified Data: $\\text{Mode} = L + \\frac{f_1}{f_1 + f_2} \\times h$, where\n\n$L$ is the lower limit of mode-class i.e. the class where the mode lies,\n\n$f_1 = \\text{frequency of mode-class} - \\text{frequency of the class previous}$\n\n$f_2 = \\text{frequency of mode class} - \\text{frequency of next class of mode class}$ and $h = \\text{class interval}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 13. Following is a table.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | 31 - 40 | 41 - 50 | 51 - 60 | 61 - 70 | 71 - 80 | 81 - 90 | 91 - 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 4 | 6 | 8 | 12 | 9 | 7 | 4 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) What is central tendency?\n\n2) Find mode from the above table.\n\n3) Draw ogive curve of the given data.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution:\n\n1) If the disorganized data of statistics are arranged according to the value, the data cluster round near any central value. Moreover, abundance of data is observed in a single class when these data are presented in some frequency distribution table. This tendency of data to cluster around central value is known as central tendency.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

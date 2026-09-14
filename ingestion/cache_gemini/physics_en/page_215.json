@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 215,
+  "pdf_page_no": 220,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You can see that the wavelengths of visible light are very short but there are many interesting experiments in physics, using these we can observe various properties of this wavelength.\n\nIf we want to know more about light, we can start with reflection.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": "Reflection",
+      "chunk_type": "theory",
+      "content_markdown": "If we talk about reflection what we imagine is standing in front of a mirror, but reflection is much more than that. When light is sent from one medium to another, three different phenomena occur simultaneously. One of them is reflection and the other two are refraction and absorption. (Figure 8.02)\n\nWhile traversing from the first medium into the second medium, if a part of light returns to the first medium, the phenomenon is called reflection. Some parts of it may enter the second medium which is called refraction and some of it may be absorbed which is called absorption. In this chapter we will discuss reflection and in the next chapter we will discuss refraction.\n\nIt has been said earlier that light is a wave. Generally a wave needs a medium to travel, (If there is no water how will a wave be created in it). But this is different in case of light. As this is a wave consisting of electric and magnetic fields, so light does not need any medium to travel. Light can create its wave of electric and magnetic fields and can propagate by itself. So when we talked about the first and second medium for reflection or refraction, one of this medium can even be vacuum. To speak the truth, the examples we see for reflection and refraction in glass or water, there, one medium is glass (or water) and other is air. Air is such a light medium that we can consider it as a vacuum.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.02: Reflection, refraction and absorption of light from one medium to another.",
+      "figure_no": "8.02",
+      "box_2d": [
+        313,
+        514,
+        521,
+        843
+      ],
+      "description": "Schematic diagram showing reflection, refraction, and absorption of light rays at the boundary between a first medium and a second medium.",
+      "reading_order_anchor": "8.2 Reflection"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 15,
+  "pdf_page_no": 20,
+  "chapter_no": 1,
+  "chapter_title": "বাস্তব সংখ্যা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৫. $0.2\\dot{8}$ কে $42.1\\dot{8}$ দ্বারা গুণ কর।\n\nসমাধান:\n$$0.2\\dot{8} = \\frac{28 - 2}{90} = \\frac{26}{90} = \\frac{13}{45}$$\n$$42.1\\dot{8} = \\frac{4218 - 42}{99} = \\frac{4176}{99} = \\frac{464}{11}$$\n$$\\therefore 0.2\\dot{8} \\times 42.1\\dot{8} = \\frac{13}{45} \\times \\frac{464}{11} = \\frac{6032}{495} = 12.18\\dot{5}$$\nনির্ণেয় গুণফল $12.18\\dot{5}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৬. $2.5 \\times 4.3\\dot{5} \\times 1.23\\dot{4}$ কত?\n\nসমাধান:\n$$2.5 = \\frac{25}{10} = \\frac{5}{2}$$\n$$4.3\\dot{5} = \\frac{435 - 43}{90} = \\frac{392}{90}$$\n$$1.23\\dot{4} = \\frac{1234 - 12}{990} = \\frac{1222}{990} = \\frac{611}{495}$$\n$$\\therefore 2.5 \\times 4.3\\dot{5} \\times 1.23\\dot{4} = \\frac{5}{2} \\times \\frac{392}{90} \\times \\frac{611}{495} = \\frac{119756}{8910} = 13.440628...$$\nনির্ণেয় গুণফল $13.440628$ (প্রায়)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ: ক) $1.1\\dot{3}$ কে $2.6$ দ্বারা গুণ কর। খ) $0.\\dot{2} \\times 1.1\\dot{2} \\times 0.0\\dot{8}\\dot{1} = $ কত?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৭. $7.3\\dot{2}$ কে $0.2\\dot{7}$ দ্বারা ভাগ কর।\n\nসমাধান:\n$$7.3\\dot{2} = \\frac{732 - 7}{99} = \\frac{725}{99}$$\n$$0.2\\dot{7} = \\frac{27 - 2}{90} = \\frac{25}{90} = \\frac{5}{18}$$\n$$\\therefore 7.3\\dot{2} \\div 0.2\\dot{7} = \\frac{725}{99} \\div \\frac{5}{18} = \\frac{725}{99} \\times \\frac{18}{5} = \\frac{290}{11} = 26.\\dot{3}\\dot{6}$$\nনির্ণেয় ভাগফল $26.\\dot{3}\\dot{6}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

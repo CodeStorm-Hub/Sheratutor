@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 30,
+  "pdf_page_no": 35,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:** If $G = \\{1, 2, 3\\}$, then determine $P(G)$. Show that number of elements of $P(G)$ is $2^3$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.5",
+      "section_title": "Ordered Pair",
+      "chunk_type": "theory",
+      "content_markdown": "Amena and Sumena of class VIII occupied 1st and 2nd position respectively in the annual examination. According to merit this can be expressed as (Amena, Sumena) pair. Similar definite pairs are called ordered pairs.\n\nSo, for a pair of elements if the positions are given and expressed, then the pair is called Ordered Pair.\n\nIf the first element of an ordered pair is $x$, and the second element is $y$, then the ordered pair is denoted by $(x, y)$. For the ordered pairs $(x, y)$ and $(a, b)$ will be equal or $(x, y) = (a, b)$ if and only if $x = a$ and $y = b$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 11.** If $(2x + y, 3) = (6, x - y)$ then, determine $(x, y)$.\n\n**Solution:** Given, $(2x + y, 3) = (6, x - y)$\n\nAs per conditions of ordered pairs,\n$2x + y = 6 \\dots \\dots (1)$\n$x - y = 3 \\dots \\dots (2)$\n\nBy adding equations (1) and (2) we get $3x = 9$ or $x = 3$\nPutting value of $x$ in equation (1) we get, $6 + y = 6$ or $y = 0$\n$\\therefore (x, y) = (3, 0)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.6",
+      "section_title": "Cartesian Product",
+      "chunk_type": "theory",
+      "content_markdown": "Mr Karim decided to colour interior wall of his rooms using white or blue colour, and outside wall using red, yellow or green. The set of colours of interior wall is $A = \\{\\text{white, blue}\\}$ and that of outside wall is $B = \\{\\text{red, yellow and green}\\}$. Mr Karim can colour walls of his rooms by (white, red), (white, yellow), (white, green), (blue, red), (blue, yellow), (blue, green) ordered pairs. The above ordered pairs are written as below:\n\n$A \\times B = \\{(\\text{white, red}), (\\text{white, yellow}), (\\text{white, green}), (\\text{blue, red}), (\\text{blue, yellow}), (\\text{blue, green})\\}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

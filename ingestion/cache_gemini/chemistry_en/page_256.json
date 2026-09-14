@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 256,
+  "pdf_page_no": 261,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Step 1: Firstly, sulfur and dehydrated air are supplied in a furnace. Sulfur and oxygen undergo reaction here to produce sulfur dioxide.\n\n$$\\text{S} + \\text{O}_2 \\longrightarrow \\text{SO}_2$$\n\nStep 2: The $\\text{SO}_2$ gas is channeled with some more oxygen to another furnace. This furnace has the temperature of $450-500^{\\circ}\\text{C}$ and the catalyst vanadium penta-oxide. $\\text{SO}_2$ gas and $\\text{O}_2$ gas undergo reaction here at that temperature to produce sulfur tri-oxide.\n\n$$2\\text{SO}_2 + \\text{O}_2 \\longrightarrow 2\\text{SO}_3$$\n\nStep 3: When $\\text{SO}_3$ comes in contact with $\\text{H}_2\\text{O}$, $\\text{H}_2\\text{SO}_4$ is produced. However, direct reaction between them will produce gaseous $\\text{H}_2\\text{SO}_4$ which will create a state of dense fog. That is a hazard for the industries. Besides, getting liquid $\\text{H}_2\\text{SO}_4$ from this gaseous $\\text{H}_2\\text{SO}_4$ by condensation is a tough task. So, first, sulfur tri-oxide is absorbed in concentrated $\\text{H}_2\\text{SO}_4$ and that forms fuming sulfuric acid. (Fuming sulfuric acid is called olium. The formula is $\\text{H}_2\\text{S}_2\\text{O}_7$.)\n\n$$\\text{H}_2\\text{SO}_4 + \\text{SO}_3 \\longrightarrow \\text{H}_2\\text{S}_2\\text{O}_7$$\n\nThe fuming sulfuric acid is then driven into a reaction with $\\text{H}_2\\text{O}$ which produces liquid sulfuric acid.\n\n$$\\text{H}_2\\text{S}_2\\text{O}_7 + \\text{H}_2\\text{O} \\longrightarrow 2\\text{H}_2\\text{SO}_4$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "The Properties of Sulfuric Acid",
+      "chunk_type": "theory",
+      "content_markdown": "**Acid Property:** Dilute or concentrated $\\text{H}_2\\text{SO}_4$ undergoes a reaction with any alkali to produce salt and water. This is called the acid property of sulfuric acid. For example, sulfuric acid reacts with calcium hydroxide and produces calcium sulfate salt and water.\n\n$$\\text{H}_2\\text{SO}_4 + \\text{Ca(OH)}_2 \\longrightarrow \\text{CaSO}_4 + 2\\text{H}_2\\text{O}$$\nSulfuric acid | Calcium hydroxide | Calcium sulfate | Water\n\n**Oxidation Property:** If a lot of water is added to $\\text{H}_2\\text{SO}_4$, the solution is called dilute sulfuric acid. It does not have the oxidation property. But the concentrated sulfuric acid has the oxidation property. It oxidizes copper and produces copper sulfate and reduces itself into sulfur dioxide and water.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

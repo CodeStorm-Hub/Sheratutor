@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 239,
+  "pdf_page_no": 244,
+  "chapter_no": 8,
+  "chapter_title": "আলোর প্রতিফলন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. প্রতিফলন কত প্রকার?\n(ক) 4 \n(খ) 3\n(গ) 2 \n(ঘ) 1",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. সমতল দর্পণে সৃষ্ট প্রতিবিম্ব-\n(i) আকারে লক্ষ্যবস্তুর সমান\n(ii) পর্দায় গঠন করা যায়\n(iii) দর্পণ থেকে বস্তুর দূরত্বের সমান দূরত্বে গঠিত হয়।\n\nনিচের কোনটি সঠিক?\n(ক) i ও ii \n(খ) ii ও iii\n(গ) i ও iii \n(ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "8.31 চিত্রের আলোকে 4 ও 5 নং প্রশ্নের উত্তর দাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. $BO$ বস্তুর প্রতিবিম্বের আকৃতি কীরূপ হবে-\n(ক) বিবর্ধিত \n(খ) খর্বিত\n(গ) অত্যন্ত বিবর্ধিত \n(ঘ) অত্যন্ত খর্বিত",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. $BO$ বস্তুর প্রতিবিম্বের অবস্থান কোথায় হবে?\n(ক) ফোকাস ও মেরুর মাঝে \n(খ) প্রধান ফোকাসে\n(গ) বক্রতার কেন্দ্রে \n(ঘ) বক্রতার কেন্দ্র ও অসীমের মাঝে",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "সৃজনশীল প্রশ্ন",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 8.31",
+      "figure_no": "8.31",
+      "box_2d": [
+        337,
+        600,
+        508,
+        858
+      ],
+      "description": "A concave mirror showing principal axis, pole, focus (F), center of curvature (C), and an object (O) on the principal axis.",
+      "reading_order_anchor": "8.31 চিত্রের আলোকে 4 ও 5 নং প্রশ্নের উত্তর দাও।"
+    },
+    {
+      "caption": "চিত্র 8.32",
+      "figure_no": "8.32",
+      "box_2d": [
+        738,
+        175,
+        883,
+        626
+      ],
+      "description": "Two diagrams related to creative questions, showing a vertical object PQ and a curved mirror setup.",
+      "reading_order_anchor": "সৃজনশীল প্রশ্ন"
+    }
+  ]
+}

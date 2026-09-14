@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 201,
+  "pdf_page_no": 206,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "22. If $\\tan A = \\frac{1}{\\sqrt{3}}$, find the value of $\\frac{\\csc^2 A - \\sec^2 A}{\\csc^2 A + \\sec^2 A}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "23. If $\\csc A - \\cot A = \\frac{4}{3}$, what is the value of $\\csc A + \\cot A$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "24. If $\\cot A = \\frac{b}{a}$, find the value of $\\frac{a \\sin A - b \\cos A}{a \\sin A + b \\cos A}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "25. If $\\csc A - \\cot A = \\frac{1}{x}$,\n1) find the value of $\\csc A + \\cot A$.\n2) Show that, $\\sec A = \\frac{x^2 + 1}{x^2 - 1}$\n3) According to the stimulus prove that, $\\tan A + \\cot A = \\sec A \\cdot \\csc A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Trigonometric ratios for the angles $30^\\circ$, $45^\\circ$, and $60^\\circ$.",
+      "chunk_type": "theory",
+      "content_markdown": "We have learnt how to draw angles $30^\\circ$, $45^\\circ$ and $60^\\circ$ in geometric way. Exact values of these trigonometric ratios for all these angles can also be determined geometrically.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1.1",
+      "section_title": "Trigonometric ratios of the angles $30^\\circ$ and $60^\\circ$ :",
+      "chunk_type": "theory",
+      "content_markdown": "Let, $\\angle XOZ = 30^\\circ$ and $P$ is a point on $OZ$. Let us draw $PM \\perp OX$ and extend $PM$ to $Q$ so that $MQ = PM$. Add $O, Q$ and extend to $Z$.\n\nNow for $\\triangle POM$ and $\\triangle QOM$, $PM = QM$, $OM$ is a common side and included $\\angle PMO = \\text{included } \\angle QMO = 90^\\circ$.\n$\\therefore \\triangle POM \\cong \\triangle QOM$\n$\\therefore \\angle QOM = \\angle POM = 30^\\circ$ and $\\angle OQM = \\angle OPM = 60^\\circ$.\nAgain, $\\angle POQ = \\angle POM + \\angle QOM = 30^\\circ + 30^\\circ = 60^\\circ$.\n$\\therefore \\triangle OPQ$ is an equilateral triangle.\n\nIf $OP = 2a$ then $PM = \\frac{1}{2}PQ = \\frac{1}{2}OP = a$ [since $\\triangle OPQ$ is an equilateral triangle].\n\nForm the right-angled $\\triangle OPM$ we get,\n$OM = \\sqrt{OP^2 - PM^2} = \\sqrt{4a^2 - a^2} = \\sqrt{3}a$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Trigonometric ratios of the angles 30° and 60°",
+      "figure_no": "9.01",
+      "box_2d": [
+        570,
+        640,
+        800,
+        880
+      ],
+      "description": "Geometric construction of an equilateral triangle OPQ to derive trigonometric ratios for 30 and 60 degrees.",
+      "reading_order_anchor": "Trigonometric ratios of the angles 30° and 60° :"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 77,
+  "pdf_page_no": 82,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{CaCO}_3 + 2\\text{HF (aq)} \\longrightarrow \\text{CaF}_2 + \\text{H}_2\\text{O} + \\text{CO}_2$$\n\nThe same kind of reaction will take place with Hydrochloric acid:\n\n$$\\text{CaCO}_3 + 2\\text{HCl (aq)} \\longrightarrow \\text{CaCl}_2 + \\text{H}_2\\text{O} + \\text{CO}_2$$\n\nSo, the above reactions convince you that the elements of Group-17 exhibit the same properties and reactions. $\\text{Mg}$ and $\\text{Ca}$ of Group-2 also exhibit the same properties and reactions.\n\nMagnesium Carbonate ($\\text{MgCO}_3$) in its reaction with light Hydrochloric acid produces Magnesium Chloride, water and Carbon dioxide gas. Calcium Carbonate ($\\text{CaCO}_3$), in the same reaction produces Calcium Chloride, water and Carbon dioxide gas.\n\n$$\\text{MgCO}_3 + 2\\text{HCl} \\longrightarrow \\text{MgCl}_2 + \\text{H}_2\\text{O} + \\text{CO}_2$$\n\n$$\\text{CaCO}_3 + 2\\text{HCl} \\longrightarrow \\text{CaCl}_2 + \\text{H}_2\\text{O} + \\text{CO}_2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Experiment",
+      "chunk_type": "theory",
+      "content_markdown": "**Name of Experiment:** Identifying Carbon dioxide gas in the reaction between Calcium Carbonate and light Hydrochloric acid.\n\n**Principle:** Calcium Carbonate and light Hydrochloric acid produce Calcium Chloride, water and Carbon dioxide gas.\n\n$$\\text{CaCO}_3 + 2\\text{HCl} \\longrightarrow \\text{CaCl}_2 + \\text{H}_2\\text{O} + \\text{CO}_2$$\n\n**Apparatus:** a. one conical flask b. a thistle funnel c. a u-shaped delivery tube made of glass d. some gas jars e. cork with bore.\n\n**Chemicals:** Calcium Carbonate, dilute hydrochloric acid and water",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

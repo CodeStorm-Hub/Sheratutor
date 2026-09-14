@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 203,
+  "pdf_page_no": 208,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": "Procedure",
+      "chunk_type": "theory",
+      "content_markdown": "**Procedure:**\n\n1. Fill half of the beaker with distilled water.\n2. Record the temperature of water using the thermometer.\n3. Add lime or calcium oxide ($CaO$) to the water in the beaker.\n4. Stir the solution in the beaker as the reaction starts.\n5. Record the temperature of water as soon as possible with the thermometer. You will see, the temperature is higher than the previous one.\n\n**Result:** Adding lime to water raises the temperature of water. It is an exothermic reaction.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "## Exercise\n\n### Multiple Choice Questions\n\n1. How many kinds of conductors are there on the basis of electrical conductivity mechanism?\n\na. One\nb. Two\nc. Three\nd. Four\n\nAnswer questions 2 and 3 depending on the picture above.\n\n2. The process of the stem does to iron-\n\na. is increased in amount\nb. prevents corrosion\nc. increases strength\nd. increases purity",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.18: Solution of lime in beaker.",
+      "figure_no": "8.18",
+      "box_2d": [
+        173,
+        532,
+        332,
+        875
+      ],
+      "description": "Scientific setup showing a beaker with distilled water, a thermometer, and a spoon adding calcium oxide (CaO), with an arrow pointing to the resulting solution.",
+      "reading_order_anchor": "Procedure"
+    }
+  ]
+}

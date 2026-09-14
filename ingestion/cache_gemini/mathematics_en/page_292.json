@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 292,
+  "pdf_page_no": 297,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": "14.1",
+      "section_title": "Theorem 29",
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 29. If a line segment divides the two sides or their produced sections of a triangle proportionally, it is parallel to the third side.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Special Nomination: In the triangle $ABC$ the line segment $DE$ divides the two sides $AB$ and $AC$ or their produced sections proportionally. That is, $AD : DB = AE : EC$. It is required to prove that $DE$ and $BC$ are parallel.\n\nDrawing: Join $B, E$ and $C, D$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\n\nStep 1. $\\frac{\\Delta ADE}{\\Delta BDE} = \\frac{AD}{DB}$ [Triangles with equal height]\n\nand $\\frac{\\Delta ADE}{\\Delta DEC} = \\frac{AE}{EC}$ [Triangles with equal height]\n\nStep 2. But $\\frac{AD}{DB} = \\frac{AE}{EC}$ [Given]\n\nStep 3. Therefore, $\\frac{\\Delta ADE}{\\Delta BDE} = \\frac{\\Delta ADE}{\\Delta DEC}$ [from (i) and (ii)]\n\n$\\therefore \\Delta BDE = \\Delta DEC$\n\nStep 4. But $\\Delta BDE$ and $\\Delta DEC$ are on the same side of the common base $DE$. So they lie between a pair of parallel lines.\n\n$\\therefore BC$ and $DE$ are parallel.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.2",
+      "section_title": "Theorem 30",
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 30. The internal bisector of an angle of a triangle divides its opposite side in the ratio of the sides constituting to the angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Special Nomination: In $\\Delta ABC$ the line segment $AD$ bisects the internal angle $\\angle A$ and intersects the side $BC$ at $D$. It is required to prove that $BD : DC = BA : AC$.\n\nDrawing: Draw the line segment $CE$ parallel to $DA$, so that it intersects the side $BA$ produced at $E$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Theorem 29 diagrams",
+      "figure_no": "14.01",
+      "box_2d": [
+        155,
+        515,
+        295,
+        875
+      ],
+      "description": "Two triangles illustrating the proportionality of line segments divided by a parallel line.",
+      "reading_order_anchor": "Special Nomination: In the triangle $ABC$ the line segment $DE$ divides the two sides $AB$ and $AC$ or their produced sections proportionally."
+    },
+    {
+      "caption": "Fig 14.02: Theorem 30 diagram",
+      "figure_no": "14.02",
+      "box_2d": [
+        775,
+        625,
+        935,
+        855
+      ],
+      "description": "Triangle with an internal angle bisector and a parallel line construction.",
+      "reading_order_anchor": "Special Nomination: In $\\Delta ABC$ the line segment $AD$ bisects the internal angle $\\angle A$ and intersects the side $BC$ at $D$."
+    }
+  ]
+}

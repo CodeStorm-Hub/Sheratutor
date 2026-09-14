@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 191,
+  "pdf_page_no": 196,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Measure the lengths of the sides of the following four similar triangles and complete the table below. What do you observe about the ratios of the triangles?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| length of sides | | | ratio(related to angle) | | |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| $BC$ | $AB$ | $AC$ | $BC/AC$ | $AB/AC$ | $BC/AB$ |\n| | | | | | |\n| | | | | | |\n| | | | | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let $\\angle XOA$ is an acute angle. We take a point $P$ on the side $OA$. We draw a perpendicular $PM$ from $P$ to $OX$. As a result, a right-angled triangle $POM$ is formed. The three ratios of the sides $PM$, $OM$ and $OP$ of $\\triangle POM$ do not depend on the position of the point $P$ on the side $OA$.\n\nIf we draw the perpendiculars $PM$ and $P_1M_1$ from two points $P$ and $P_1$ to the side $OX$, two similar triangles $\\triangle POM$ and $\\triangle P_1OM_1$ are formed.\n\nNow, $\\triangle POM$ and $\\triangle P_1OM_1$ are being similar,\n\n$$\\frac{PM}{P_1M_1} = \\frac{OP}{OP_1} \\text{ or, } \\frac{PM}{OP} = \\frac{P_1M_1}{OP_1}$$\n\n$$\\frac{OM}{OM_1} = \\frac{OP}{OP_1} \\text{ or, } \\frac{OM}{OP} = \\frac{OM_1}{OP_1}$$\n\n$$\\frac{PM}{P_1M_1} = \\frac{OM}{OM_1} \\text{ or, } \\frac{PM}{OM} = \\frac{P_1M_1}{OM_1}$$\n\nThat is, each of these ratios is constant. These ratios are called trigonometric ratios.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Four similar triangles",
+      "figure_no": "9.01",
+      "box_2d": [
+        182,
+        143,
+        305,
+        838
+      ],
+      "description": "Four right-angled triangles labeled (i), (ii), (iii), and (iv) showing similar geometric properties.",
+      "reading_order_anchor": "Work: Measure the lengths of the sides of the following four similar triangles"
+    },
+    {
+      "caption": "Fig 9.02: Similar triangles formed by perpendiculars",
+      "figure_no": "9.02",
+      "box_2d": [
+        475,
+        635,
+        645,
+        885
+      ],
+      "description": "A diagram showing an acute angle XOA with two perpendiculars PM and P1M1 dropped from points P and P1 on the ray OA to the ray OX, forming similar triangles.",
+      "reading_order_anchor": "If we draw the perpendiculars PM and P1M1 from two points P and P1 to the side OX, two similar triangles"
+    }
+  ]
+}

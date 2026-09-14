@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 251,
+  "pdf_page_no": 256,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে, দ্বিতীয় পদ $-$ প্রথম পদ $= 3 - 1 = 2$,\n\nতৃতীয় পদ $-$ দ্বিতীয় পদ $= 5 - 3 = 2$, চতুর্থ পদ $-$ তৃতীয় পদ $= 7 - 5 = 2$,\nপঞ্চম পদ $-$ চতুর্থ পদ $= 9 - 7 = 2$, ষষ্ঠ পদ $-$ পঞ্চম পদ $= 11 - 9 = 2$\nসুতরাং, ধারাটি একটি সমান্তর ধারা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এই ধারায় প্রাপ্ত দুইটি পদের বিয়োগফলকে সাধারণ অন্তর বলা হয়। উল্লিখিত ধারার সাধারণ অন্তর $2$। ধারাটির পদ সংখ্যা নির্দিষ্ট। এ জন্য এটি একটি সসীম বা সান্ত ধারা (Finite Series)। উল্লেখ্য, সমান্তর ধারার পদসংখ্যা নির্দিষ্ট না হলে একে অসীম বা অন্তর ধারা (Infinite Series) বলে। যেমন, $1 + 4 + 7 + 10 + \\dots$ একটি অসীম ধারা। সমান্তর ধারায় সাধারণত প্রথম পদকে $a$ দ্বারা এবং সাধারণ অন্তরকে $d$ দ্বারা প্রকাশ করা হয়। তাহলে সংজ্ঞানুসারে, প্রথম পদ $a$ হলে, দ্বিতীয় পদ $a + d$, তৃতীয় পদ $a + 2d$ ইত্যাদি। সুতরাং, ধারাটি হবে, $a + (a + d) + (a + 2d) + \\dots$ ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### সমান্তর ধারার সাধারণ পদ নির্ণয়\n\nমনে করি, যেকোনো সমান্তর ধারার প্রথম পদ $a$ ও সাধারণ অন্তর $d$। তাহলে ধারাটির\n\nপ্রথম পদ $= a = a + (1 - 1)d$\n\nদ্বিতীয় পদ $= a + d = a + (2 - 1)d$\n\nতৃতীয় পদ $= a + 2d = a + (3 - 1)d$\n\nচতুর্থ পদ $= a + 3d = a + (4 - 1)d$\n\n$\\dots \\dots \\dots \\dots$\n\n$\\dots \\dots \\dots \\dots$\n\n$\\therefore n$ তম পদ $= a + (n - 1)d$\n\nএই $n$ তম পদকেই সমান্তর ধারার সাধারণ পদ বলা হয়। কোনো সমান্তর ধারার প্রথম পদ $a$, সাধারণ অন্তর $d$ জানা থাকলে $n$ তম পদে $n = 1, 2, 3, 4, \\dots$ বসিয়ে পর্যায়ক্রমে ধারাটির প্রত্যেকটি পদ নির্ণয় করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, একটি সমান্তর ধারার প্রথম পদ $3$ এবং সাধারণ অন্তর $2$। অতএব, ধারাটির $n$ তম পদ $= 3 + (n - 1) \\times 2 = 2n + 1$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: কোনো সমান্তর ধারার প্রথম পদ $5$ এবং সাধারণ অন্তর $7$ হলে, ধারাটির প্রথম ছয়টি পদ, $22$ তম পদ, $r$ তম এবং $(2p + 1)$ তম পদ নির্ণয় কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. $5 + 8 + 11 + 14 + \\dots$ ধারাটির কোন পদ $383$?\n\nসমাধান: ধারাটির প্রথম পদ $a = 5$, সাধারণ অন্তর $d = 8 - 5 = 11 - 8 = 14 - 11 = 3$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 124,
+  "pdf_page_no": 129,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Mathematical questions\n\n1. Change of velocity of an object occurs due to the application of different forces at different times and this is shown in figure 4.07. Among OA, AB, BC and CD, when has positive, negative or zero work been done?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. A girl of mass $50\\text{ kg}$ has gone up the stairs at a height of $5\\text{ m}$ in $10\\text{ s}$. How much work has she done? What is her power in horse power?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. When a force was applied on a stationary object of mass $5\\text{ kg}$ for $10\\text{ s}$, its kinetic energy became $500\\text{ J}$. Find the amount of force applied.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. Two objects of masses $10\\text{ kg}$ and $5\\text{ kg}$ are attached to the two sides of a pulley and is kept stationary $5\\text{ m}$ above the ground. If you release the two objects, then the $10\\text{ kg}$ mass starts to come down and the $5\\text{ kg}$ starts to go up. When the mass $10\\text{ kg}$ has come down by $1\\text{ m}$ and the mass $5\\text{ kg}$ has gone up by $1\\text{ m}$, what are the velocities of the two masses?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. If a body of $5\\text{ kg}$ is released from a height of $100\\text{ m}$, at what height will the kinetic energy be twice of the potential energy?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 4.07: Graph of velocity-time",
+      "figure_no": "4.07",
+      "box_2d": [
+        182,
+        558,
+        317,
+        878
+      ],
+      "description": "Velocity-time graph showing regions OA, AB, BC, and CD.",
+      "reading_order_anchor": "1. Change of velocity of an object occurs..."
+    },
+    {
+      "caption": "Figure 4.08: Two different masses attached to a pulley",
+      "figure_no": "4.08",
+      "box_2d": [
+        496,
+        547,
+        744,
+        891
+      ],
+      "description": "Schematic diagram of two different masses attached to a pulley system.",
+      "reading_order_anchor": "4. Two objects of masses 10 kg and 5 kg..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 371,
+  "pdf_page_no": 376,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \\text{Mode} = 41 + \\frac{5}{25 + 5} \\times 10 = 41 + \\frac{5}{30} \\times 10 = 41 + \\frac{5}{3} = 41 + 1.67 = 42.67$$\n\nRequired mode 42.67 (approximately)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the frequency is maximum in the first class, the frequency of previous class is zero. If the frequency is maximum in the last class, the frequency of following class is zero.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "## Exercise 17\n\n1. Which one indicates the data included in each class when the data are classified?\n1) Class interval 2) Mid-point of the class 3) Number of classes 4) Class frequency",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2. If the disorganized data of statistics are arranged according to the value, the data cluster round near any central value. This tendency of data is called\n1) Mode 2) Central tendency 3) Mean 4) Median",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. Consider the table below:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Temperature | $6^\\circ - 8^\\circ$ | $8^\\circ - 10^\\circ$ | $10^\\circ - 12^\\circ$ |\n| :--- | :--- | :--- | :--- |\n| Frequency | 5 | 9 | 4 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(i) Class interval is 3\n(ii) Median class is $8^\\circ - 10^\\circ$\n(iii) Temperature is a discontinuous variable\nWhich of the following is true?\n1) i and ii 2) i and iii 3) ii and iii 4) i, ii, and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. To draw histograms we need -\n(i) Discontinuous class interval along x axis\n(ii) Frequency along y axis\n(iii) Class mid-point\n\nWhich of the following is true?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

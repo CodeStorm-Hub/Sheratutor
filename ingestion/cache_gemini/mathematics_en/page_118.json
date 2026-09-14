@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 118,
+  "pdf_page_no": 123,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "[Prior knowledge of this chapter are attached to the Appendix at the end of this book. At first the Appendix should be read / discussed.]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Geometry is an old branch of mathematics. The word ‘geometry’ comes from the Greek words ‘geo’, meaning the ‘earth’, and ‘metrein’, meaning ‘to measure’. So, the word ‘geometry’ means ‘the measurement of land’. Geometry appears to have originated from the need for measuring land in the age of agricultural based civilization. However, now a days geometry is not only used for measuring lands, rather knowledge of geometry is now indispensable for solving many complicated mathematical problems. The practice of geometry is evident in relics of ancient civilization. According to the historians, concepts and ideas of geometry were applied to the survey of lands about four thousand years ago in ancient Egypt. Signs of application of geometry are visible in different practical works of ancient Egypt, Babylon, India, China and the Incas civilisation. In the Indian subcontinent there were extensive usages of geometry in the Indus Valley civilisation. The excavations at Harappa and Mohenjo-Daro show the evidence of that there was a well planned city. For example, the roads were parallel to each other and there was a developed underground drainage system. Besides the shape of houses shows that the town dwellers were skilled in mensuration. In Vedic period in the construction of altars (or vedis) definite geometrical shapes and areas were maintained. Usually these were constituted with triangles, quadrilaterals and trapeziums.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "But geometry as a systematic discipline evolved in the age of Greek civilization. A Greek mathematician, Thales is credited with the first geometrical proof. He proved logically that a circle is bisected by its diameter. Thales’ pupil Pythagoras developed the theory of geometry to a great extent. About 300 BC Euclid, a Greek scholar, collected all the work and placed them in an orderly manner in his famous treatise, ‘Elements’. ‘Elements’ completed in thirteen chapters is the foundation of modern geometry for generations to come. In this chapter, we shall discuss logical geometry in accordance with Euclid.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

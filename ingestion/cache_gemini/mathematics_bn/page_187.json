@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 187,
+  "pdf_page_no": 192,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ত্রিকোণমিতিক অনুপাতসমূহ বের করি:\n$$\\sin 30^\\circ = \\frac{PM}{OP} = \\frac{a}{2a} = \\frac{1}{2}, \\cos 30^\\circ = \\frac{OM}{OP} = \\frac{\\sqrt{3}a}{2a} = \\frac{\\sqrt{3}}{2}$$\n$$\\tan 30^\\circ = \\frac{PM}{OM} = \\frac{a}{\\sqrt{3}a} = \\frac{1}{\\sqrt{3}}$$\n$$\\text{cosec } 30^\\circ = \\frac{OP}{PM} = \\frac{2a}{a} = 2, \\sec 30^\\circ = \\frac{OP}{OM} = \\frac{2a}{\\sqrt{3}a} = \\frac{2}{\\sqrt{3}}$$\n$$\\cot 30^\\circ = \\frac{OM}{PM} = \\frac{\\sqrt{3}a}{a} = \\sqrt{3}$$\n\nএকইভাবে,\n$$\\sin 60^\\circ = \\frac{OM}{OP} = \\frac{\\sqrt{3}a}{2a} = \\frac{\\sqrt{3}}{2}, \\cos 60^\\circ = \\frac{PM}{OP} = \\frac{a}{2a} = \\frac{1}{2}$$\n$$\\tan 60^\\circ = \\frac{OM}{PM} = \\frac{\\sqrt{3}a}{a} = \\sqrt{3}$$\n$$\\text{cosec } 60^\\circ = \\frac{OP}{OM} = \\frac{2a}{\\sqrt{3}a} = \\frac{2}{\\sqrt{3}}, \\sec 60^\\circ = \\frac{OP}{PM} = \\frac{2a}{a} = 2$$\n$$\\cot 60^\\circ = \\frac{PM}{OM} = \\frac{a}{\\sqrt{3}a} = \\frac{1}{\\sqrt{3}}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "45° কোণের ত্রিকোণমিতিক অনুপাত:\nমনে করি, $\\angle XOZ = 45^\\circ$ এবং $P, OZ$ এর উপরস্থ একটি বিন্দু। $PM \\perp OX$ আঁকি।\n$\\triangle OPM$ সমকোণী ত্রিভুজে $\\angle POM = 45^\\circ$\nসুতরাং, $\\angle OPM = 45^\\circ$\nঅতএব, $PM = OM = a$ (মনে করি)\nএখন, $OP^2 = OM^2 + PM^2 = a^2 + a^2 = 2a^2$\nবা, $OP = \\sqrt{2}a$\nত্রিকোণমিতিক অনুপাতের সংজ্ঞা থেকে আমরা পাই,\n$$\\sin 45^\\circ = \\frac{PM}{OP} = \\frac{a}{\\sqrt{2}a} = \\frac{1}{\\sqrt{2}}, \\cos 45^\\circ = \\frac{OM}{OP} = \\frac{a}{\\sqrt{2}a} = \\frac{1}{\\sqrt{2}}$$\n$$\\tan 45^\\circ = \\frac{PM}{OM} = \\frac{a}{a} = 1$$\n$$\\text{cosec } 45^\\circ = \\frac{1}{\\sin 45^\\circ} = \\sqrt{2}, \\sec 45^\\circ = \\frac{1}{\\cos 45^\\circ} = \\sqrt{2}$$\n$$\\cot 45^\\circ = \\frac{1}{\\tan 45^\\circ} = 1$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০৫: ৪৫° কোণের ত্রিকোণমিতিক অনুপাত",
+      "figure_no": "৯.০৫",
+      "box_2d": [
+        563,
+        645,
+        712,
+        868
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ OPM যেখানে কোণ POM ৪৫ ডিগ্রি এবং বাহুগুলোর দৈর্ঘ্য a, a এবং root 2a নির্দেশিত।",
+      "reading_order_anchor": "45° কোণের ত্রিকোণমিতিক অনুপাত:"
+    }
+  ]
+}

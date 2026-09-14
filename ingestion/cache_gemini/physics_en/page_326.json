@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 326,
+  "pdf_page_no": 331,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Objective: Students will be able to analyze the electric circuit design suitable for use in residence.\nWorking procedure: A probable circuit for supply of electricity in residence is shown in Figure 11.17. Make a new circuit by doing the following changes in this circuit.\n(a) Add two more plug points since three plug points are not enough.\n(b) Add a water pump with an appropriate circuit breaker which uses electricity.\n(c) Add a second light using two switches in such a way that the light can be turned on or off by using any of the switches along with the light and fan.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "General questions\n1. Is it possible to use a capacitor as a battery?\n2. Why is it difficult to make an experiment to see if the filament of a filament light bulb is following Ohm’s law or not?\n3. Electric current is the flow of electrons. When electricity flows the speed of electrons is comparatively low. But electricity flows instantly-how?\n4. For equal potential difference, will a high resistance produce more heat or a low resistance produce more heat?\n5. It is not seen that a crow or a bird dies on an electric cable, but a big bat often dies why?\n6. What is electric current?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.18: Two square resistors of 1 m² and 100 cm².",
+      "figure_no": "11.18",
+      "box_2d": [
+        718,
+        503,
+        805,
+        805
+      ],
+      "description": "Two square resistors of different sizes, one labeled 1 m and the other 10 cm.",
+      "reading_order_anchor": "4. For equal potential difference, will a high resistance produce more heat or a low resistance produce more heat?"
+    }
+  ]
+}

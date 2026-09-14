@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 82,
+  "pdf_page_no": 87,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Answer:**\n\nHere, three objects are connected by two strings, resulting in the same acceleration for all of them. The $10\\text{ kg}$ mass will move downward, and the mass $m$ will move to the left, and the $5\\text{ kg}$ mass will move upward. Let's denote the acceleration as $a$. Two tension forces will act along the two strings: $T_1$ (connected to the $5\\text{ kg}$ mass) and $T_2$ (connected to the $10\\text{ kg}$ mass).\n\nBy applying Newton's laws of motion in the vertical direction for the $5\\text{ kg}$ mass, we get:\n$$T_1 - 5g = 5a$$\n\nFor the $5\\text{ kg}$ mass, $T_1$ acts upward. Using Newton's second law horizontally for the mass $m$, we obtain:\n$$-T_2 + T_1 = m(-a)$$\n\nHere, the force $T_2$ acts to the left, the force $T_1$ acts to the right, and the acceleration of the mass $m$ is directed to the left.\n\nThe mass $m$ experiences a downward gravitational force $mg$ and an upward normal force $N$ in the vertical direction. Because the resultant of the two forces is zero, the mass $m$ does not accelerate in the vertical direction. Now, applying Newton's laws of motion vertically to the $10\\text{ kg}$ mass, we find:\n$$T_2 - 10g = 10(-a)$$\n\nFor the $10\\text{ kg}$ mass, $T_2$ acts upward.\n\nBy solving the three equations above, we find that the combined acceleration of the objects is given by $a = \\frac{5g}{10+5+m}$ and the total force acting on the mass is given by $-T_2 + T_1 = -5g + 15a$. However, it is not possible to determine the value of acceleration without knowing the mass $m$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.10: Force is acting on a mass by two weights from two sides using pulley.",
+      "figure_no": "3.10",
+      "box_2d": [
+        119,
+        214,
+        335,
+        789
+      ],
+      "description": "Schematic diagram of a mass m on a horizontal surface connected by strings over pulleys to a 10 kg mass on the left and a 5 kg mass on the right.",
+      "reading_order_anchor": "Answer:"
+    }
+  ]
+}

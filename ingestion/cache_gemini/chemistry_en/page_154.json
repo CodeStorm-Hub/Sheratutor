@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 154,
+  "pdf_page_no": 159,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Heat always evolves from neutralization reactions. That is to say, neutralization reactions are exothermic. When both the acid and base are strong, the evolved heat amounts to $\\Delta H = -57.34\\text{ kJ}$. In this kind of a reaction, the acid provides the hydrogen ion ($\\text{H}^+$) while the base provides the hydroxide ion ($\\text{OH}^-$). These two ions then react and produce water. In $\\text{NaCl}$ solution, sodium ion is $\\text{Na}^+$ and chlorine ion is $\\text{Cl}^-$.\n\n$$\\text{H}^+ + \\text{Cl}^- + \\text{Na}^+ + \\text{OH}^- \\longrightarrow \\text{Na}^+ + \\text{Cl}^- + \\text{H}_2\\text{O}$$\n\nIn this solution, the two ions $\\text{Na}^+, \\text{Cl}^-$ do not participate in the reaction. They are called spectator ions. The actual equation of a neutralization reaction is:\n\n$$\\text{H}^+ + \\text{OH}^- \\longrightarrow \\text{H}_2\\text{O} + 57.34\\text{ kJ}$$\n\nFinally, neutralization reaction is the water producing reaction by means of $\\text{H}^+$ and $\\text{OH}^-$ ions. Whatever the strength of both the acid and the base we take in this kind of reaction they will provide the same ions and produce water. The amount of heat that evolves to produce $1\\text{ mole}$ water is called neutralization heat. Calculation tells us that it evolves $57.34\\text{ kJ}$ heat.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Experiment",
+      "chunk_type": "theory",
+      "content_markdown": "### Demonstration of the Neutralization Reaction.\nTake $10\\text{ mL}$ $\\text{NaOH}$ solution in a beaker. Take $\\text{HCl}$ solution in another beaker. Dip a blue litmus paper in the solution. Now use your left hand to pour $\\text{HCl}$ solution with a dropper in the $\\text{NaOH}$ solution. Simultaneously use a glass tube in your right hand to stir and mix the solutions. The moment the blue litmus paper turns red, you will understand $\\text{HCl}$ has neutralized the $\\text{NaOH}$ solution.\n\n$$\\text{HCl}(\\text{aq}) + \\text{NaOH}(\\text{aq}) \\longrightarrow \\text{NaCl}(\\text{aq}) + \\text{H}_2\\text{O}(\\text{l})$$",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

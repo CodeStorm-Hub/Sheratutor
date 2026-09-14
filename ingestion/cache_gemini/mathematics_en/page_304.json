@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 304,
+  "pdf_page_no": 309,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": "14.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The sides of a square are equal and each of the angles is equal to one right angle. Similarly, in regular pentagons and hexagons, the sides are equal and the angles are equal as well.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Each regular polygons is a figure of symmetry. Therefore, it is necessary to know their lines of symmetry. Each regular polygon has many lines of symmetry as it has many sides.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Three lines of symmetry | Four lines of symmetry | Five lines of symmetry | Six lines of symmetry |\n| :--- | :--- | :--- | :--- |\n| Equilateral triangle | Square | Regular pentagon | Regular hexagon |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.3",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The concept of line symmetry is closely related to mirror reflection. A geometrical figure has line symmetry when one half of it is the mirror image of the other half. So, the line of symmetry is also called the reflection symmetry.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Work",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1) The line of symmetry is given, find the other hole.\n\n2) Identify the lines of symmetry in the following geometrical figures.\n(1) An isosceles triangle (2) A scalene triangle\n(3) A square (4) A rhombus (5) A regular hexagon\n(6) A pentagon (7) A circle",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Regular polygons",
+      "figure_no": "14.01",
+      "box_2d": [
+        172,
+        115,
+        310,
+        866
+      ],
+      "description": "Diagrams of an equilateral triangle, square, regular pentagon, and regular hexagon with side and angle labels.",
+      "reading_order_anchor": "14.1"
+    },
+    {
+      "caption": "Fig 14.02: Lines of symmetry for regular polygons",
+      "figure_no": "14.02",
+      "box_2d": [
+        428,
+        155,
+        523,
+        853
+      ],
+      "description": "Diagrams showing lines of symmetry for an equilateral triangle, square, regular pentagon, and regular hexagon.",
+      "reading_order_anchor": "14.2"
+    },
+    {
+      "caption": "Fig 14.03: Mirror reflection of letter A",
+      "figure_no": "14.03",
+      "box_2d": [
+        543,
+        730,
+        653,
+        821
+      ],
+      "description": "A diagram showing the letter A with a line of symmetry representing mirror reflection.",
+      "reading_order_anchor": "14.3"
+    },
+    {
+      "caption": "Fig 14.04: Symmetry work exercises",
+      "figure_no": "14.04",
+      "box_2d": [
+        738,
+        263,
+        803,
+        785
+      ],
+      "description": "Diagrams showing shapes with lines of symmetry and holes to be completed.",
+      "reading_order_anchor": "Work"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 316,
+  "pdf_page_no": 321,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$(V - V_B)R_2 = V_B R_1$$ $$V_B(R_1 + R_2) = VR_2$$ Therefore, $$V_B = \\frac{R_2}{R_1 + R_2} V$$ $$I = \\frac{V_B}{R_2} = \\frac{V}{R_1 + R_2}$$ We can imagine resistances $R_1$ and $R_2$ as a single resistance $R$, where $$I = \\frac{V}{R}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If there were more than two resistances (figure 11.12) then also we would be able to show that these resistances can be combined as a single resistance $R$ which will be the sum of all those resistances. This is called the equivalent resistance. This means when a circuit will have $R_1, R_2, R_3 \\dots$ resistances successively (series circuit) then the equivalent resistance will be: $$R = R_1 + R_2 + R_3 + \\dots + R_n$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.5",
+      "section_title": "Equivalent resistance: Parallel circuit",
+      "chunk_type": "theory",
+      "content_markdown": "Now we will place the resistances in parallel instead of one after another (Figure 11.13). In this circuit we have named different points as A, B, C, D, E and F. We can understand from the figure that points D, E and F are connected to the ground and so their potentials are zero. So the potential of points A, B, and C is $V$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.12: Many successive resistances or resistors connected in a circuit can be imagined as an equivalent resistance or resistor.",
+      "figure_no": "11.12",
+      "box_2d": [
+        394,
+        154,
+        574,
+        824
+      ],
+      "description": "Schematic diagram showing a series combination of multiple resistors connected to a DC voltage source, being represented as a single equivalent resistor.",
+      "reading_order_anchor": "If there were more than two resistances (figure 11.12) then also we would be able"
+    }
+  ]
+}

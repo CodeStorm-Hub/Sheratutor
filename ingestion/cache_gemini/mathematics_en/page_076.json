@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 76,
+  "pdf_page_no": 81,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$(ii) (a+b)^2 = 15$\n$(iii) a^2 + b^2 + a^2b^2 = 18$\nWhich one of the following is correct?\n1) $i, ii$ 2) $i, iii$ 3) $ii, iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "12.",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "If $3a^5 - 6a^4 + 3a + 14$ is a algebraic expression -\n$(i)$ variable of the expression is $a$\n$(ii)$ degree of the expression is $5$\n$(iii)$ constant of $a^4$ is $6$\nWhich one of the following is correct?\n1) $i, ii$ 2) $i, iii$ 3) $ii, iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "13.",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Factor of $p^3 - \\frac{1}{64}$ -\n$(i) p - \\frac{1}{4}$\n$(ii) p^2 + \\frac{p}{4} + \\frac{1}{8}$\n$(iii) p^2 + \\frac{p}{4} + \\frac{1}{16}$\nWhich one of the following is correct?\n1) $i, ii$ 2) $i, iii$ 3) $ii, iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "14.",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$A$ can do a work in $p$ days and $B$ can do it in $2p$ days. They started to do the work together and after some days $A$ left the work unfinished. $B$ completed the rest of the work in $r$ days. In how many days was the work finished ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "15.",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "10 persons can do a work in 7 days by working 6 hours a day. Working how many hours per day can 14 persons finish the work in 6 days?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Mita can do a work in 10 days. Rita can do that work in 15 days. In how many days will they together complete the work ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A bus was hired at Tk. 5700 to go for a picnic under the condition that every passenger would bare equal fare. But due to the absence of 5 passengers, the fare was increased by Tk. 3 per head. How many passengers availed the bus ?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

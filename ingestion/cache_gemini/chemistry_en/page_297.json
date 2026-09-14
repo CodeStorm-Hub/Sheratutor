@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 297,
+  "pdf_page_no": 302,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Preparation of soap",
+      "chunk_type": "theory",
+      "content_markdown": "### Preparation of soap\n\n**Hypothesis:** Soap is produced by the reaction of oil or fat with alkali. pH value of the produced soap will be more than 7.\n\n**Materials:** Coconut oil, Caustic soda, Saturated solution of $\\text{NaCl}$, Soap from market, Kerosene oil\n\n**Apparatus:** Bunsen burner/spirit lamp/kerosene cooker, 2 beakers of $400\\text{ mL}$, 2 test tubes, one big porcelain bowl, one stirrer, one spatula, one measuring cylinder ($10\\text{ mL}$), one funnel, one filter paper.\n\n**Safety measures:** At high temperature sodium hydroxide is a very corrosive substance. So handle it with care so that no accident occurs by spilling.\n\nDo not use the produced soap on hand or body.\n\n**Procedure:**\n\na. Prepare a steam bath in a beaker filled with water and put a porcelain bowl in it as in the figure.\n\nb. Take $5\\text{ mL}$ coconut oil or $5\\text{ g}$ fat and $30\\text{ mL}$ Sodium hydroxide solution in the porcelain bowl.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.03: Preparation of Soap.",
+      "figure_no": "12.03",
+      "box_2d": [
+        273,
+        594,
+        574,
+        848
+      ],
+      "description": "Apparatus setup for the preparation of soap, showing a porcelain bowl on top of a beaker filled with water acting as a steam bath, heated by a spirit lamp underneath.",
+      "reading_order_anchor": "Procedure"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 105,
+  "pdf_page_no": 110,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** A force of $10\\text{ N}$ is applied on a stationary object of mass $10\\text{ kg}$ for $10\\text{ s}$. (a) What is the kinetic energy of the object? (b) Calculate the kinetic energy after $20\\text{ s}$. (c) If the force is applied for $20\\text{ s}$, then what is the kinetic energy?\n\n**Answer:** Acceleration due to $10\\text{ N}$ force is:\n$$a = \\frac{F}{m} = \\frac{10\\text{ N}}{10\\text{ kg}} = 1\\text{ m/s}^2$$\n\nTherefore velocity after $10\\text{ second}$:\n$$v = at = \\frac{1\\text{ m}}{\\text{s}^2} \\times 10\\text{ s} = 10\\text{ m/s}$$\n\n(a) Then the kinetic energy,\n$$\\frac{1}{2}mv^2 = \\frac{1}{2} \\times 10 \\times 10^2\\text{ J} = 500\\text{ J}$$\n\n(b) Acceleration will take place for $10\\text{ s}$, after that no acceleration is present, so velocity is unchanged, therefore kinetic energy after $20\\text{ s}$ will be the same.\n\n(c) If force is applied for $20\\text{ s}$, then the velocity is,\n$$v = at = 1\\text{ m/s}^2 \\times 20\\text{ s} = 20\\text{ m/s}$$\n\nTherefore the kinetic energy,\n$$\\frac{1}{2}mv^2 = \\frac{1}{2} \\times 10 \\times 20^2\\text{ J} = 2000\\text{ J}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Motion is created in a body of mass $10\\text{ kg}$ by applying a force, if its kinetic energy becomes $80\\text{ J}$, what is its velocity?\n\n**Answer:** Kinetic energy is,\n$$\\frac{1}{2}mv^2 = 80\\text{ J}$$\n$$\\frac{1}{2} \\times 10 \\times v^2 = 80$$\n$$5v^2 = 80$$\n$$v^2 = 16$$\n$$v = 4\\text{ m/s}$$\n\nTherefore, velocity is $4\\text{ m/s}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 17,
+  "pdf_page_no": 22,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 19. Divide $9.45$ by $2.8\\dot{6}\\dot{3}$.\n\nSolution:\n$$9.45 = \\frac{945}{100}$$\n$$2.8\\dot{6}\\dot{3} = \\frac{2863 - 28}{990} = \\frac{2835}{990}$$\n$$\\therefore 9.45 \\div 2.8\\dot{6}\\dot{3} = \\frac{945}{100} \\div \\frac{2835}{990} = \\frac{945}{100} \\times \\frac{990}{2835} = \\frac{189 \\times 99}{2 \\times 2835} = \\frac{33}{10} = 3.3$$\n\nThe desired result is $3.3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks: Multiplication and division of repeating decimal fractions may not be repeating decimal fractions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: 1) Divide $0.\\dot{6}$ by $0.\\dot{9}$. 2) Divide $0.7\\dot{3}\\dot{2}$ by $0.0\\dot{2}\\dot{7}$.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Infinite decimal fractions\n\nThere are many decimal numbers that have infinitely many digits after decimal point. Moreover, a digit or a number of digits do not repeat as well. These are called infinite decimal fractions. For example, $5.134248513942301...$ is an infinite decimal fraction. Square root of $2$ is an infinite decimal fraction. Let us calculate square root of $2$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$1 \\quad ) \\quad 2 \\quad ( \\quad 1.4142135...$$\n$$\\quad \\quad \\quad \\underline{1}$$\n$$24 \\quad ) \\quad 100$$\n$$\\quad \\quad \\quad \\underline{96}$$\n$$281 \\quad ) \\quad 400$$\n$$\\quad \\quad \\quad \\underline{281}$$\n$$2824 \\quad ) \\quad 11900$$\n$$\\quad \\quad \\quad \\underline{11296}$$\n$$28282 \\quad ) \\quad 60400$$\n$$\\quad \\quad \\quad \\underline{56564}$$\n$$282841 \\quad ) \\quad 383600$$\n$$\\quad \\quad \\quad \\underline{282841}$$\n$$2828423 \\quad ) \\quad 10075900$$\n$$\\quad \\quad \\quad \\underline{8485269}$$\n$$28284265 \\quad ) \\quad 159063100$$\n$$\\quad \\quad \\quad \\underline{141421325}$$\n$$\\quad \\quad \\quad \\quad \\quad \\quad 17641775$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

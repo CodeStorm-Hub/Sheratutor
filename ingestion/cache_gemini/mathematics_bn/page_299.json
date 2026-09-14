@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 299,
+  "pdf_page_no": 304,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$a^2 = 2500$$\n$$\\therefore a = 50$$\nত্রিভুজটির সমান বাহুর দৈর্ঘ্য $50$ সে.মি.।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৬. একটি নির্দিষ্ট স্থান থেকে দুইটি রাস্তা $120^\\circ$ কোণে চলে গেছে। দুই জন লোক ঐ নির্দিষ্ট স্থান থেকে যথাক্রমে ঘণ্টায় $10$ কিলোমিটার ও $8$ কিলোমিটার বেগে বিপরীত দিকে রওনা হলো। $5$ ঘণ্টা পরে তাদের মধ্যে সরাসরি দূরত্ব নির্ণয় কর।\n\nসমাধান: মনে করি, $A$ স্থান থেকে দুইজন লোক যথাক্রমে ঘণ্টায় $10$ কিলোমিটার ও ঘণ্টায় $8$ কিলোমিটার বেগে রওনা হয়ে $5$ ঘণ্টা পর যথাক্রমে $B$ ও $C$ স্থানে পৌঁছালো। তাহলে, $5$ ঘণ্টা পর তাদের মধ্যে সরাসরি দূরত্ব হবে $BC$। $C$ থেকে $BA$ এর বর্ধিতাংশের উপর $CD$ লম্ব টানি।\n\n$$\\therefore AB = 5 \\times 10$ কিলোমিটার $= 50$ কিলোমিটার, $AC = 5 \\times 8$ কিলোমিটার $= 40$ কিলোমিটার এবং $\\angle BAC = 120^\\circ$$\n$$\\therefore \\angle DAC = 180^\\circ - 120^\\circ = 60^\\circ$$\n$\\triangle ACD$ সমকোণী।\n$$\\therefore \\frac{CD}{AC} = \\sin 60^\\circ$ বা, $CD = AC \\sin 60^\\circ = 40 \\times \\frac{\\sqrt{3}}{2} = 20\\sqrt{3}$$\nএবং $$\frac{AD}{AC} = \\cos 60^\\circ$ বা, $AD = AC \\cos 60^\\circ = 40 \\times \\frac{1}{2} = 20$$\nআবার, সমকোণী ত্রিভুজ $BCD$ থেকে পাই,\n$$BC^2 = BD^2 + CD^2 = (BA + AD)^2 + CD^2$$\n$$= (50 + 20)^2 + (20\\sqrt{3})^2 = 4900 + 1200 = 6100$$\n$$\\therefore BC = 78.1$ (প্রায়)\nনির্ণেয় দূরত্ব $78.1$ কিলোমিটার (প্রায়)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উদাহরণ ৭. প্রদত্ত চিত্রের আলোকে",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $BC$ বাহুর দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $BD$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $\\triangle ABD$ ও $\\triangle BCD$ এর ক্ষেত্রফলদ্বয়ের অনুপাত নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\nক) $AB = 15, AC = 25$\n$$\\therefore BC = \\sqrt{AC^2 - AB^2} = \\sqrt{(25)^2 - (15)^2} = \\sqrt{400} = 20$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: উদাহরণ ৬ এর জ্যামিতিক চিত্র",
+      "figure_no": "6",
+      "box_2d": [
+        378,
+        658,
+        513,
+        893
+      ],
+      "description": "একটি ত্রিভুজাকার জ্যামিতিক চিত্র যেখানে একটি কোণ ১২০ ডিগ্রি এবং লম্ব টানা হয়েছে।",
+      "reading_order_anchor": "উদাহরণ ৬. একটি নির্দিষ্ট স্থান থেকে দুইটি রাস্তা"
+    },
+    {
+      "caption": "চিত্র: উদাহরণ ৭ এর জ্যামিতিক চিত্র",
+      "figure_no": "7",
+      "box_2d": [
+        696,
+        635,
+        856,
+        843
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ যার অতিভুজের উপর লম্ব টানা হয়েছে।",
+      "reading_order_anchor": "উদাহরণ ৭. প্রদত্ত চিত্রের আলোকে"
+    }
+  ]
+}

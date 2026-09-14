@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 105,
+  "pdf_page_no": 110,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work: Solve by forming equations:\n1) What is the number, if any same number is added to both numerator and denominator of the fraction $\\frac{3}{5}$, the fraction will be $\\frac{4}{5}$?\n2) If the difference of the squares of two consecutive natural numbers is 151, find the two numbers.\n3) If 120 coins of Tk.1 and Tk.2 together are Tk. 180, what is the number of coins of each kind?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "5.1",
+      "section_title": "Exercises 5.1",
+      "chunk_type": "theory",
+      "content_markdown": "Solve (1 - 8):\n1. $\\frac{ay}{b} - \\frac{by}{a} = a^2 - b^2$\n2. $(z + 1)(z - 2) = (z - 4)(z + 2)$\n3. $\\frac{4}{2x + 1} + \\frac{9}{3x + 2} = \\frac{25}{5x + 4}$\n4. $\\frac{1}{x + 1} + \\frac{1}{x + 4} = \\frac{1}{x + 2} + \\frac{1}{x + 3}$\n5. $\\frac{a}{x - a} + \\frac{b}{x - b} = \\frac{a + b}{x - a - b}$\n6. $\\frac{x - a}{b} + \\frac{x - b}{a} + \\frac{x - 3a - 3b}{a + b} = 0$\n7. $\\frac{x - a}{a^2 - b^2} = \\frac{x - b}{b^2 - a^2}$\n8. $(3 + \\sqrt{3})z + 2 = 5 + 3\\sqrt{3}$\nFind the solution set (9 - 14):\n9. $2x + \\sqrt{2} = 3x - 4 - 3\\sqrt{2}$\n10. $\\frac{z - 2}{z - 1} = 2 - \\frac{1}{z - 1}$\n11. $\\frac{1}{x} + \\frac{1}{x + 1} = \\frac{2}{x - 1}$\n12. $\\frac{m}{m - x} + \\frac{n}{n - x} = \\frac{m + n}{m + n - x}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

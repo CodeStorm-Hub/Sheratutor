@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 215,
+  "pdf_page_no": 220,
+  "chapter_no": 10,
+  "chapter_title": "Distance and Elevation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2. While drawing $45^\\circ$ angle, it is needed base = perpendicular.\n\n3. While drawing $60^\\circ$ angle, it is needed base < perpendicular.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. The angle of elevation at the top of a tower at a point on the ground is $30^\\circ$ at a distance of 75 metre from the foot. Find the height of the tower.\n\nSolution: Let, the height of the tower is $AB = h$ metre. The angle of elevation at $C$ from the foot of the tower $BC = 75$ metre of $A$ on the ground is $\\angle ACB = 30^\\circ$.\n\nFrom $\\triangle ABC$ we get, $\\tan \\angle ACB = \\frac{AB}{BC}$\n\nor, $\\tan 30^\\circ = \\frac{h}{75}$ or, $\\frac{1}{\\sqrt{3}} = \\frac{h}{75}$ or, $\\sqrt{3}h = 75$\n\nor, $h = \\frac{75}{\\sqrt{3}}$\n\nor, $h = \\frac{75\\sqrt{3}}{3}$ [multiplying denominator and numerator by $\\sqrt{3}$]\n\nor, $h = 25\\sqrt{3}$\n\n$\\therefore h = 43.301$ (approx.).\n\n$\\therefore$ Height of the tower is 43.30 metre (approx.).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. The height of a tree is 105 metre. If the angle of elevation of the tree at a point from its foot on the ground is $60^\\circ$, find the distance of the point on the ground from the foot of the tree.\n\nSolution:\nLet, the distance of the point on the ground from the foot of tree is $BC = x$ metre. Height of the tree $AB = 105$ metre and at $C$ the angle of elevation of the vertex of tree is $\\angle ACB = 60^\\circ$. From right-angle $\\triangle ABC$ we get,\n\n$\\tan \\angle ACB = \\frac{AB}{BC}$\n\nor, $\\tan 60^\\circ = \\frac{105}{x}$\n\nor, $\\sqrt{3} = \\frac{105}{x}$ [$\\because \\tan 60^\\circ = \\sqrt{3}$]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Right-angled triangle for Example 1",
+      "figure_no": "10.01",
+      "box_2d": [
+        365,
+        585,
+        535,
+        945
+      ],
+      "description": "A right-angled triangle ABC with angle C = 30 degrees, base BC = 75m, and height AB = h m.",
+      "reading_order_anchor": "Example 1"
+    },
+    {
+      "caption": "Fig 10.02: Right-angled triangle for Example 2",
+      "figure_no": "10.02",
+      "box_2d": [
+        695,
+        675,
+        855,
+        845
+      ],
+      "description": "A right-angled triangle ABC with angle C = 60 degrees, height AB = 105m, and base BC = x m.",
+      "reading_order_anchor": "Example 2"
+    }
+  ]
+}

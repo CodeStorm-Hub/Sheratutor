@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 363,
+  "pdf_page_no": 368,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. What is a beta ray emitted due to the radioactive decay?\n(a) the flow of negative electrons\n(b) a charge neutral particle\n(c) a light nucleus\n(d) flow of positive protons",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. What is a silicon chip called if millions of circuits are added to it?\n(a) parallel circuit\n(b) semiconductor transistor\n(c) integrated circuit\n(d) semiconductor diode",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Creative questions\n\n1. Roni saw on television that a shipment of uranium was being delivered for the nuclear power plant under construction in Ruppur. Curious to learn more about this, he approached his teacher, who said, \"The spent fuel residue from a nuclear reactor must be carefully stored far away from human habitation!\" To illustrate this point, the teacher showed Roni a poster in the physics lab, explaining that if a $1\\text{ kg}$ sample of this element is left untouched, after eight hundred years, the mass of the same radioactive atoms remaining in the sample would be $250\\text{ g}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is radioactivity?\n(b) Explain the reasons for the special radioactive hazard symbols displayed on vehicles transporting uranium fuel.\n(c) What is the half-life of the element displayed on the poster in the physics lab?\n(d) Analyze the validity of the teacher's statement regarding the storage of nuclear reactor fuel.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Shovon found a broken radio among the old items in his house. Out of curiosity, he started taking apart various parts of the radio. Inside, he discovered several small components with multiple legs, all connected to a large board. When he asked his physics teacher about them, the teacher told Shovon that the many-legged components are known as ICs (integrated circuits). The teacher further explained that they are typically made of specific semiconducting elements.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

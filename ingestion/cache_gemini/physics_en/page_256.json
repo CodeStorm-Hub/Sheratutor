@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 256,
+  "pdf_page_no": 261,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": "9.3.4",
+      "section_title": "Lens",
+      "chunk_type": "theory",
+      "content_markdown": "A lens is created using two spherical sides or a spherical side and a plane. Using lenses, starting from spectacles, sensitive optical instruments like telescopes and microscopes are made. Lenses are also used in video projectors and cameras. In this chapter, we'll broadly discuss about lenses, types of lenses and their properties.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.4",
+      "section_title": "Types of lenses",
+      "chunk_type": "theory",
+      "content_markdown": "In convex and concave mirrors, we've seen that, when light enters these mirrors, sometimes it focuse to a point (converging ray) or sometimes it diverges (diverging ray) and the image is formed. That image is sometimes real and sometimes virtual. Sometimes it is big, sometimes it is small. Using these images in many ways, optical instruments have been developed.\n\nMany types of images are made by convex or concave mirrors which also be made by lenses and they are used in many ways. We have all seen lenses (because the spectacles are actually a kind of lens). Those of you who have used spectacles or have seen others using spectacles have certainly noticed that lens of spectacles can be divided into two types. Small things can be seen bigger with one kind of lens (usually the lenses of spectacles for old people are like this). Again big things can be seen smaller with another kind of lens. (Usually the lens of spectacles of the young people are like this). The lenses with which small things are seen bigger are called convex or (sometimes) converging lenses. The lenses with which big things are seen smaller are called concave or (sometimes) diverging lens. Mid portion of the lenses with which small things are seen bigger or convex lens is thicker than the edges. And the mid portion of",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.13: In prism rays of light deviate towards the base of the prism.",
+      "figure_no": "9.13",
+      "box_2d": [
+        118,
+        576,
+        273,
+        902
+      ],
+      "description": "Schematic diagram showing rays of light refracting through a triangular prism, indicating the original direction and emitted light direction towards the base.",
+      "reading_order_anchor": "9.3.4 Lens"
+    },
+    {
+      "caption": "Figure 9.14: Cross section of a convex and a concave lens",
+      "figure_no": "9.14",
+      "box_2d": [
+        512,
+        613,
+        712,
+        846
+      ],
+      "description": "Cross-sectional diagrams of a convex lens (thicker in the middle) and a concave lens (thicker at the edges).",
+      "reading_order_anchor": "9.4 Types of lenses"
+    }
+  ]
+}

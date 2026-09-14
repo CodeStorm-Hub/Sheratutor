@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 71,
+  "pdf_page_no": 76,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আবার ক্রয়মূল্য $100$ টাকা হলে $z\\%$ লাভে বিক্রয়মূল্য $(100 + z)$ টাকা।\n\nক্রয়মূল্য $100$ টাকা হলে বিক্রয়মূল্য $(100 + z)$ টাকা\nক্রয়মূল্য $1$ টাকা হলে বিক্রয়মূল্য $\\frac{100 + z}{100}$ টাকা\n\n$\\therefore$ ক্রয়মূল্য $\\frac{100}{(100 - x) \\times 10}$ টাকা হলে\nবিক্রয়মূল্য $\\frac{100 + z}{100} \\times \\frac{100}{(100 - x) \\times 10}$ টাকা $= \\frac{(100 + z)}{(100 - x) \\times 10}$ টাকা\n\n$1$টি আইসক্রিম কাঠির বিক্রয়মূল্য $= \\frac{(100 + z)}{(100 - x) \\times 10} = \\frac{100 + z}{1000 - 10x}$ টাকা\n\nঅর্থাৎ টাকায় $\\frac{1000 - 10x}{100 + z}$ টি আইসক্রিম কাঠি বিক্রয় করতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৩.৫",
+      "section_title": "অনুশীলনী ৩.৫",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. $f(x) = x^2 - 4x + 4$ হলে, $f(2)$ এর মান নিচের কোনটি?\nক) $4$ খ) $2$ গ) $1$ ঘ) $0$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $\\frac{1}{2}\\{(a + b)^2 - (a - b)^2\\}$ এর মান নিচের কোনটি?\nক) $2(a^2 + b^2)$ খ) $a^2 + b^2$ গ) $2ab$ ঘ) $4ab$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $x + \\frac{2}{x} = 3$ হলে, $x^3 + \\frac{8}{x^3}$ এর মান কত?\nক) $1$ খ) $8$ গ) $9$ ঘ) $16$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. $p^4 + p^2 + 1$ এর উৎপাদকে বিশ্লেষিত রূপ নিচের কোনটি?\nক) $(p^2 - p + 1)(p^2 + p - 1)$ খ) $(p^2 - p - 1)(p^2 + p + 1)$\nগ) $(p^2 + p + 1)(p^2 + p + 1)$ ঘ) $(p^2 + p + 1)(p^2 - p + 1)$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. যদি $x = 2 - \\sqrt{3}$ হয়, $x^2$ তবে এর মান কত?\nক) $1$ খ) $7 - 4\\sqrt{3}$ গ) $2 + \\sqrt{3}$ ঘ) $\\frac{1}{2 - \\sqrt{3}}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $f(x) = x^2 - 5x + 6$ এবং $f(x) = 0$ হলে, $x =$ কত?\nক) $2, 3$ খ) $-5, 1$ গ) $-2, 3$ ঘ) $1, -5$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $9x^2 + 16y^2$ এর সাথে কত যোগ করলে যোগফল পূর্ণবর্গ রাশি হবে?\nক) $6xy$ খ) $12xy$ গ) $24xy$ ঘ) $144xy$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$x^4 - x^2 + 1 = 0$ হলে, নিচের ৮- ১০ নং প্রশ্নের উত্তর দাও।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

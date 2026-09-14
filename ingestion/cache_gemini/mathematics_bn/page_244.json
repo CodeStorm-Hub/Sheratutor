@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 244,
+  "pdf_page_no": 249,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore$$ ১ম শর্তানুসারে, $x - 8 = 8(y - 8) \\dots (1)$\nএবং ২য় শর্তানুসারে, $x + 10 = 2(y + 10) \\dots (2)$\n$(1)$ হতে পাই, $x - 8 = 8y - 64$\nবা, $x = 8y - 64 + 8$\nবা, $x = 8y - 56 \\dots (3)$\n$(2)$ হতে পাই, $x + 10 = 2y + 20$\nবা, $8y - 56 + 10 = 2y + 20$ $[(3)$ হতে $x$ এর মান বসিয়ে$]$\nবা, $8y - 2y = 20 + 56 - 10$\nবা, $6y = 66$\nবা, $y = 11$\n$(3)$ হতে পাই, $x = 8 \\times 11 - 56 = 88 - 56 = 32$\n$\\therefore$ বর্তমানে পিতার বয়স $32$ বছর ও পুত্রের বয়স $11$ বছর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. একটি আয়তাকার বাগানের প্রস্থের দ্বিগুণ, দৈর্ঘ্য অপেক্ষা $10$ মিটার বেশি এবং বাগানটির পরিসীমা $100$ মিটার। বাগানটির সীমানার বাইরে চারদিকে $2$ মিটার চওড়া রাস্তা আছে। রাস্তাটি ইট দিয়ে তৈরি করতে প্রতি বর্গ মিটারে $110$ টাকা খরচ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) বাগানটির দৈর্ঘ্য $x$ মিটার ও প্রস্থ $y$ মিটার ধরে সমীকরণজোট গঠন কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) বাগানটির দৈর্ঘ্য ও প্রস্থ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) রাস্তাটি ইট দিয়ে তৈরি করতে মোট কত খরচ হবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান:\nক) আয়তাকার বাগানটির দৈর্ঘ্য $x$ মিটার ও প্রস্থ $y$ মিটার।\n$\\therefore$ ১ম শর্তানুসারে, $2y = x + 10 \\dots (1)$\nএবং ২য় শর্তানুসারে, $2(x + y) = 100 \\dots (2)$\nখ) সমীকরণ $(2)$ হতে পাই, $2x + 2y = 100$\nবা, $2x + x + 10 = 100$ $[(1)$ হতে $2y$ এর মান বসিয়ে$]$\nবা, $3x = 90$\nবা, $x = 30$\n$\\therefore (1)$ হতে পাই, $2y = 30 + 10$ $[x$ এর মান বসিয়ে$]$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১২.০১: আয়তাকার বাগান",
+      "figure_no": "12.01",
+      "box_2d": [
+        688,
+        695,
+        753,
+        860
+      ],
+      "description": "একটি আয়তাকার বাগানের চিত্র যার দৈর্ঘ্য x মিটার এবং প্রস্থ y মিটার।",
+      "reading_order_anchor": "ক) আয়তাকার বাগানটির দৈর্ঘ্য x মিটার ও প্রস্থ y মিটার।"
+    }
+  ]
+}

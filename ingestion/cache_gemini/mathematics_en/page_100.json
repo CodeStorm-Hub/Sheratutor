@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 100,
+  "pdf_page_no": 105,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Equation | Identity |\n| :--- | :--- |\n| 1. Two polynomials may exist on both sides of equal sign, or there may be zero on one side. | 1. Two polynomials exist on two sides. |\n| 2. Degree of the polynomials on both sides may be unequal. | 2. Degree of the polynomials on both sides is equal. |\n| 3. The equality is true for one or more values of the variable. | 3. Generally, the equality is true for all values of the original set of the variable. |\n| 4. The number of values of the variable may be equal to the highest degree of the equation | 4. Equality is true for infinite number of values of the variable. |\n| 5. All equations are not identities. | 5. All algebraic identities are equations. |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work:\n\n1) What is the degree of and how many roots has each of the following equations?\n\n(1) $3x + 1 = 5$ (2) $\\frac{2y}{5} - \\frac{y - 1}{3} = \\frac{3y}{2}$\n\n2) Write down three identities.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "5.1",
+      "section_title": "Solving Linear Equations",
+      "chunk_type": "theory",
+      "content_markdown": "In case of solving equations, some rules are to be applied. If the rules are known, solution of equations becomes easier. The rules are as follows:\n\n1. If the same number or quantity is added to both sides of an equation, two sides remain equal.\n\n2. If the same number or quantity is subtracted from both sides of an equation, two sides remain equal.\n\n3. If both sides of an equation are multiplied by the same number or quantity, the two sides remain equal.\n\n4. If both sides of an equation are divided by same non- zero number or quantity, the two sides remain equal.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

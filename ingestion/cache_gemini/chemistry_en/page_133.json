@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 133,
+  "pdf_page_no": 138,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "reactant will react in the reaction, how much residue will be left and how much of which product will be produced.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** 4 oxygen molecules are put into 4 atoms of magnesium metal. Which is the limiting reactant here?\n\n$$2\\text{Mg} + \\text{O}_2 \\longrightarrow 2\\text{MgO}$$\n\n$$2 \\times 6.023 \\times 10^{23} \\text{ no of atoms} \\quad 6.023 \\times 10^{23} \\text{ no of molecules} \\quad 2 \\times 6.023 \\times 10^{23} \\text{ no of molecules}$$\n\n**Solution:** The above equation tells us that, $1 \\text{ O}_2$ molecule is necessary to react with 2 metallic atoms of $\\text{Mg}$. So, $2 \\text{ O}_2$ molecules are necessary to complete the reaction with the given $4 \\text{ Mg}$ atoms. That means, $(4-2) = 2$ molecules of oxygen will be left over when all the given magnesium atoms will finish themselves in the reaction. Here the magnesium atoms do not remain anymore at the end of the reaction. Therefore, the magnesium is the limiting reactant in this reaction.\n\nWhat would have happened if 30 molecules of oxygen were mixed with 70 atoms of magnesium metal?\n\nSince one $\\text{O}_2$ molecule reacts with $2 \\text{ Mg}$ atoms, $70 \\text{ Mg}$ atoms would require $(70 \\div 2) = 35 \\text{ O}_2$ molecules to finish themselves in the reaction. But the given number of $\\text{O}_2$ is only 30. Therefore, oxygen will finish itself in the reaction and it is the limiting reactant here.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.02: Here magnesium metal is the limiting reactant.",
+      "figure_no": "6.02",
+      "box_2d": [
+        167,
+        0,
+        375,
+        874
+      ],
+      "description": "Particle representation of a chemical reaction showing magnesium atoms reacting with oxygen molecules to form magnesium oxide, illustrating the concept of a limiting reactant.",
+      "reading_order_anchor": "reactant will react in the reaction"
+    }
+  ]
+}

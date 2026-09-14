@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 127,
+  "pdf_page_no": 132,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "substance is in the form of an aqueous solution, we write (aq). In the above reaction, the reactants are gases and the product is liquid water. So we write:\n\n$$2\\text{H}_2\\text{(g)} + \\text{O}_2\\text{(g)} \\longrightarrow 2\\text{H}_2\\text{O}\\text{(l)}$$\n\nThe main objective of a chemical equation is to express which elements have participated in the reaction to form which product. That is why, it is not always necessary to balance a chemical equation.\n\n6. However, if an equation is to show how much heat has been produced or absorbed in a reaction, it has to be balanced and the physical states of reactants and products are to be written.\n\nSolid substance carbon reacts with oxygen gas and produces carbon dioxide ($\\text{CO}_2$) gas. The equation will be as shown below:\n\n$$\\text{C(s)} + \\text{O}_2\\text{(g)} \\longrightarrow \\text{CO}_2\\text{(g)}$$\n\nSolid calcium carbonate reacts with aqueous solution of hydrochloric acid to produce calcium chloride, gaseous carbon di oxide and liquid water.\n\n$$\\text{CaCO}_3\\text{(s)} + \\text{HCl(aq)} \\longrightarrow \\text{CaCl}_2\\text{(aq)} + \\text{CO}_2\\text{ (g)} + \\text{H}_2\\text{O(l)}$$\n\ncalcium carbonate \\quad hydrochloric acid \\quad calcium chloride \\quad carbon dioxide water\n\nSome reactions are there that require heat to be applied. The heat is expressed with a delta ($\\Delta$) sign above the arrow mark. For example, if heat is applied to solid magnesium nitrate, it produces magnesium oxide, nitrogen dioxide gas and oxygen gas.\n\n$$2\\text{Mg(NO}_3)_2\\text{(s)} \\xrightarrow{\\Delta} 2\\text{MgO(s)} + 4\\text{NO}_2\\text{(g)} + \\text{O}_2\\text{(g)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3.1",
+      "section_title": "Balancing Chemical Equations",
+      "chunk_type": "theory",
+      "content_markdown": "Chemical reactions are briefly expressed through chemical equations. Though reactants and products are different substances, they are composed of the same elements. That is why the conservation of mass rule is followed. When both the left and right sides of an equation has the same number of atoms of the same elements, we call that a balanced equation. See the example below:\n\n$$\\text{Mg} + \\text{HCl} \\longrightarrow \\text{MgCl}_2 + \\text{H}_2$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

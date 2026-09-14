@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 278,
+  "pdf_page_no": 283,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Preparation of Fatty Acids",
+      "chunk_type": "theory",
+      "content_markdown": "### Preparation of Fatty Acids\n\n**From Ethanal:** Ethanoic acid is produced when light sulfuric acid and potassium dichromate are added with ethanal. (At first, potassium dichromate reacts with sulfuric acid and produces nascent oxygen, which later reacts with ethanal and produces ethanoic acid.)\n\n$$\\text{CH}_3\\text{-CHO} + [\\text{O}] \\xrightarrow{\\text{K}_2\\text{Cr}_2\\text{O}_7 + \\text{H}_2\\text{SO}_4} \\text{CH}_3\\text{-COOH}$$\nEthanal $\\quad\\quad$ Nascent oxygen $\\quad\\quad$ Ethanoic acid",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Chemical Properties of Fatty Acids",
+      "chunk_type": "theory",
+      "content_markdown": "### Chemical Properties of Fatty Acids\n\n**Acidic Properties:** All fatty acids are weak acids. Fatty acids are slightly ionized in liquid solution. Aqueous solution of fatty acids turns the blue colour litmus into red colour. Fatty acids produce salt and water in reactions with base/alkali. For example, ethanoic acid reacts with liquid solution of sodium hydroxide and produces sodium ethanoate salt and water.\n\n$$\\text{CH}_3\\text{COOH} + \\text{NaOH} \\longrightarrow \\text{CH}_3\\text{COONa} + \\text{H}_2\\text{O}$$\nEthanoic acid $\\quad$ Sodium hydroxide $\\quad$ Sodium ethanoate $\\quad$ water\n\n**Vinegar:** 4% to 10% aqueous solution of ethanoic acid is called vinegar. Vinegar is used in making food and as food preservatives. As this solution is slightly acidic, when it is used on food no bacteria can grow. As a result food does not rot.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.5.4",
+      "section_title": "Preparation of alcohol, aldehyde and organic acids from hydrocarbons",
+      "chunk_type": "theory",
+      "content_markdown": "### 11.5.4 Preparation of alcohol, aldehyde and organic acids from hydrocarbons\n\nYou have learnt about different preparation processes of alcohol, aldehyde and organic acids. The main constituent of petroleum is hydrocarbon (alkane, alkene and alkyne) and alcohol, aldehyde and organic acids can also be prepared from this hydrocarbon.\n\n(i) Saturated hydrocarbon or alkane reacts with halogen and in presence of sunlight and produces alkyl halide. You have already learnt how chlorine reacts with methane in the presence of ultraviolet rays from sunlight. Alkene reacts with hydrogen bromide in presence of hydrogen peroxide and produces alkyl bromide. In reaction with the aqueous solution of sodium hydroxide, alkylhalide turns into alcohol. When",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

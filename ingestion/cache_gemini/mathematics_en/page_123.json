@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 123,
+  "pdf_page_no": 128,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks: The postulates from 1 to 5 are called incidence postulates. The concept of distance is also an elementary concept. It is assumed that,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Postulate 6:\n\n1) Each pair of points $P$ and $Q$ determines a unique real number which is known as the distance between point $P$ and $Q$ and is denoted by $PQ$.\n\n2) If $P$ and $Q$ are different points, the number $PQ$ is positive. Otherwise, $PQ = 0$.\n\n3) The distance between $P$ and $Q$ and that between $Q$ and $P$ are the same, i.e. $PQ = QP$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Since $PQ = QP$, this distance is called the distance between point $P$ and point $Q$. In practical, this distance is measured by previously determined unit.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "According to postulate 5(c) one to one correspondence can be established between the set of points in every straight line and the set of real numbers. In this connection, it is admitted that,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Postulate 7: One-to-one correspondence can be established between the set of points in a straight line and the set of real numbers such that, for any points $P, Q$, $PQ = |a - b|$ where, the one-to-one correspondence associates points $P$ and $Q$ to real numbers $a$ and $b$ respectively.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the correspondence stated in this postulate is made, the line is said to have been reduced to a number line. If $P$ corresponds to $a$ in the number line, $P$ is called the graph point of $P$ and $a$ the coordinates of $P$. To convert a straight line into a number line the co-ordinates of two points are taken as $0$ and $1$ respectively. Thus a unit distance and the positive direction are fixed in the straight line. For this, it is also admitted that,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Postulate 8: Any straight line $AB$ can be converted into a number line such that the coordinate of $A$ is $0$ and that of $B$ is positive.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks: Postulate 6 is known as distance postulate and Postulate 7 as ruler postulate and Postulate 8 as ruler placement postulate.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Geometrical figures are drawn to make geometrical description clear. The model of a point is drawn by a thin dot by tip of a pencil or pen on a paper. The model of a straight line is constructed by drawing a line along a ruler. The arrows at ends of a line indicate that the line is extended both ways indefinitely. By postulate 2, two different points $A$ and $B$ define a unique straight line on which the two points",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

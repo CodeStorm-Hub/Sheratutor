@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 315,
+  "pdf_page_no": 320,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{বা, } \\pi r \\theta = 180 \\times s$$\n$$\\text{বা, } \\theta = \\frac{180 \\times s}{\\pi r} = \\frac{180 \\times 14}{3.1416 \\times 12} = 66.84^\\circ \\text{ (প্রায়)}$$\n$$\\text{নির্ণেয় কোণ } 66.84^\\circ \\text{ (প্রায়)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৩.** একটি চাকার ব্যাস $4.5$ মিটার। চাকাটি $360$ মিটার পথ অতিক্রম করতে কত বার ঘুরবে?\n\n**সমাধান:** দেওয়া আছে, চাকার ব্যাস $4.5$ মিটার।\n$$\\therefore \\text{চাকাটির ব্যাসার্ধ } r = \\frac{4.5}{2} = 2.25 \\text{ মিটার এবং পরিধি } = 2\\pi r$$\nমনে করি, চাকাটি $360$ মিটার পথ অতিক্রম করতে $n$ বার ঘুরবে।\nপ্রশ্নানুসারে, $n \\times 2\\pi r = 360$\n$$\\text{বা, } n = \\frac{360}{2\\pi r} = \\frac{360}{2 \\times 3.1416 \\times 2.25} = 25.46 \\text{ (প্রায়)}$$\n$$\\therefore \\text{চাকাটি প্রায় } 25 \\text{ বার ঘুরবে।}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৪.** $211$ মিটার $20$ সে.মি. যেতে দুইটি চাকা যথাক্রমে $32$ এবং $48$ বার ঘুরলো। চাকা দুইটির ব্যাসার্ধের অন্তর নির্ণয় কর।\n\n**সমাধান:** $211$ মিটার $20$ সে.মি. $= 21120$ সে.মি.\nমনে করি, চাকা দুইটির ব্যাসার্ধ যথাক্রমে $R$ ও $r$ যেখানে $R > r$\n$$\\therefore \\text{চাকা দুইটির পরিধি যথাক্রমে } 2\\pi R \\text{ ও } 2\\pi r \\text{ এবং ব্যাসার্ধের অন্তর } (R - r)$$\nপ্রশ্নানুসারে, $32 \\times 2\\pi R = 21120$\n$$\\text{বা, } R = \\frac{21120}{32 \\times 2\\pi} = \\frac{21120}{32 \\times 2 \\times 3.1416} = 105.04 \\text{ সে.মি. (প্রায়)}$$\nএবং $48 \\times 2\\pi r = 21120$\n$$\\text{বা, } r = \\frac{21120}{48 \\times 2\\pi} = \\frac{21120}{48 \\times 2 \\times 3.1416} = 70.03 \\text{ সে.মি. (প্রায়)}$$\n$$\\therefore R - r = (105.04 - 70.03) = 35.01 \\text{ সে.মি. } = 0.35 \\text{ মি (প্রায়)}$$\nচাকা দুইটির ব্যাসার্ধের অন্তর $0.35$ মিটার (প্রায়)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৫.** একটি বৃত্তের ব্যাসার্ধ $14$ সে.মি.। একটি বর্গের ক্ষেত্রফল উক্ত বৃত্তের ক্ষেত্রফলের সমান। বর্গক্ষেত্রটির বাহুর দৈর্ঘ্য নির্ণয় কর।\n\n**সমাধান:** মনে করি, বৃত্তের ব্যাসার্ধ $r = 14$ সে.মি. এবং বর্গক্ষেত্রটির বাহুর দৈর্ঘ্য $a$\n$$\\therefore \\text{বৃত্তের ক্ষেত্রফল } \\pi r^2 \\text{ এবং বর্গক্ষেত্রটির ক্ষেত্রফল } = a^2$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

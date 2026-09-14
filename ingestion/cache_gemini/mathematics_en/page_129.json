@@ -1,0 +1,81 @@
+{
+  "printed_page_no": 129,
+  "pdf_page_no": 134,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Vertical angle",
+      "chunk_type": "theory",
+      "content_markdown": "Two angles are said to be the opposite angles if the sides of one are the opposite rays of the other. In the adjoining figure $OA$ and $OB$ are mutually opposite rays. So are the rays $OC$ and $OD$. The angles $\\angle BOD$ and $\\angle AOC$ are a pair of opposite angles. Similarly, $\\angle BOC$ and $\\angle DOA$ are another pair of opposite angles. Therefore, two intersecting lines produce two pairs of opposite angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Theorem 1",
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 1. The sum of the two adjacent angles which a ray makes with a straight line on its meeting point is equal to two right angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Proof",
+      "chunk_type": "theory",
+      "content_markdown": "Proof: Let, the ray $OC$ meets the straight line $AB$ at $O$. As a result two adjacent angles $\\angle AOC$ and $\\angle COB$ are formed. Draw a perpendicular $DO$ on $AB$. Sum of the adjacent two angles $= \\angle AOC + \\angle COB = \\angle AOD + \\angle DOC + \\angle COB = \\angle AOD + \\angle DOB = 2$ right angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Theorem 2",
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 2. When two straight lines intersect, the vertically opposite angles are equal. Let $AB$ and $CD$ be two straight lines, which intersect at $O$. As a result the angles $\\angle AOC, \\angle COB, \\angle BOD, \\angle AOD$ are formed at $O$. $\\angle AOC =$ opposite $\\angle BOD$ and $\\angle COB =$ opposite $\\angle AOD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Parallel lines",
+      "chunk_type": "theory",
+      "content_markdown": "Parallel lines. Alternate angles, corresponding angles and interior angles of the traversal",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Vertical angles",
+      "figure_no": "6.01",
+      "box_2d": [
+        115,
+        645,
+        275,
+        875
+      ],
+      "description": "Two intersecting lines forming vertically opposite angles.",
+      "reading_order_anchor": "Vertical angle"
+    },
+    {
+      "caption": "Fig 6.02: Adjacent angles on a straight line",
+      "figure_no": "6.02",
+      "box_2d": [
+        425,
+        645,
+        545,
+        875
+      ],
+      "description": "A ray OC meeting a straight line AB at O, forming adjacent angles.",
+      "reading_order_anchor": "Theorem 1"
+    },
+    {
+      "caption": "Fig 6.03: Vertically opposite angles",
+      "figure_no": "6.03",
+      "box_2d": [
+        645,
+        645,
+        775,
+        875
+      ],
+      "description": "Two intersecting lines AB and CD forming vertically opposite angles.",
+      "reading_order_anchor": "Theorem 2"
+    }
+  ]
+}

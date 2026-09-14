@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 131,
+  "pdf_page_no": 136,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "According to definition (b) the perpendicular distance of any point of one of the parallel lines from the other is always equal. Perpendicular distance is the length of the perpendicular from any point on one of the lines to the other. Conversely, if the perpendicular distances of two points on any of the lines to the other are equal, the lines are parallel. This perpendicular distance is known as the distance of the parallel lines.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The definition (c) is equivalent to the fifth postulate of Euclid. This definition is more useful in geometric proof and constructions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Observe that, through a point not on a line, a unique line parallel to it can be drawn.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Euclid's 5th Postulate (presented by graph)\n\nWhen a transversal cuts two parallel straight lines,\n\n1) the pair of corresponding angles are equal.\n2) the pair of alternate angles are equal.\n3) that pair of interior angles on the same side of the transversal are supplementary.\n\nIn the figure, $AB \\parallel CD$ and the traversal $PQ$ intersects them at $E$ and $F$ respectively. Therefore,\n\n1) $\\angle PEB = \\text{corresponding } \\angle EFD$ [by definition]\n2) $\\angle AEF = \\text{alternate } \\angle EFD$\n3) $\\angle BEF + \\angle EFD = 2 \\text{ right angles}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Work:\nUsing alternate definitions of parallel lines prove the theorems related to parallel straight lines.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Parallel lines and transversal",
+      "figure_no": "6.01",
+      "box_2d": [
+        638,
+        643,
+        718,
+        872
+      ],
+      "description": "A diagram showing two parallel lines AB and CD intersected by a transversal line PQ at points E and F respectively.",
+      "reading_order_anchor": "In the figure, AB || CD and the traversal PQ"
+    }
+  ]
+}

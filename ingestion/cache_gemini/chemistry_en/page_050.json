@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 50,
+  "pdf_page_no": 55,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Since the $4\\text{s}$ orbital is lower in energy than the $3\\text{d}$ orbital, so the $19^{\\text{th}}$ electron of Potassium enters $4\\text{s}$ instead of $3\\text{d}$. Again, in the case with Scandium, $19^{\\text{th}}$ and $20^{\\text{th}}$ electrons go inside $4\\text{s}$ and then the $21^{\\text{st}}$ electron goes to the higher energy $3\\text{d}$ orbital.\n\nAlways remember, when writing the electronic configuration, write down all orbitals of an energy level side by side; otherwise there is chance of making mistakes. For example: the configuration of $\\text{Fe}(26)$ will be\n\n$$n = 1 \\quad\\quad n = 2 \\quad\\quad n = 3 \\quad\\quad n = 4$$\n\n| $\\text{Fe}(26) \\rightarrow$ | $1\\text{s}^2$ | $2\\text{s}^2 \\, 2\\text{p}^6$ | $3\\text{s}^2 \\, 3\\text{p}^6 \\, 3\\text{d}^6$ | $4\\text{s}^2$ |\n\n$$\\text{Fe}(26) \\rightarrow 1\\text{s}^2 \\, 2\\text{s}^2 \\, 2\\text{p}^6 \\, 3\\text{s}^2 \\, 3\\text{p}^6 \\, 3\\text{d}^6 \\, 4\\text{s}^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.7.3",
+      "section_title": "Some Exceptions in Electronic Configuration",
+      "chunk_type": "theory",
+      "content_markdown": "Commonly, if the orbital of the energy sublevel $p$ and $d$ are half full ($p^3, d^5$) or complete ($p^6, d^{10}$), that kind of electronic configuration is the most stable. That way, the electronic configuration of $\\text{Cr}(24)$ is supposed to be $\\text{Cr}(24) \\rightarrow 1\\text{s}^2 \\, 2\\text{s}^2 \\, 2\\text{p}^6 \\, 3\\text{s}^2 \\, 3\\text{p}^6 \\, 3\\text{d}^4 \\, 4\\text{s}^2$. But the interest of $3\\text{d}$ to be half full brings one electron from $4\\text{s}$. That way, the final configuration stands at $\\text{Cr}(24) \\rightarrow 1\\text{s}^2 \\, 2\\text{s}^2 \\, 2\\text{p}^6 \\, 3\\text{s}^2 \\, 3\\text{p}^6 \\, 3\\text{d}^5 \\, 4\\text{s}^1$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Individual Task",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The electronic configuration of $\\text{Cu}(29)$ is $\\text{Cu}(29) \\rightarrow 1\\text{s}^2 \\, 2\\text{s}^2 \\, 2\\text{p}^6 \\, 3\\text{s}^2 \\, 3\\text{p}^6 \\, 3\\text{d}^{10} \\, 4\\text{s}^1$ whereas it is supposed to be $1\\text{s}^2 \\, 2\\text{s}^2 \\, 2\\text{p}^6 \\, 3\\text{s}^2 \\, 3\\text{p}^6 \\, 3\\text{d}^9 \\, 4\\text{s}^2$. Explain the reason.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "3.8",
+      "section_title": "Isotopes",
+      "chunk_type": "theory",
+      "content_markdown": "Atoms of the same element with equal number of protons but different numbers of neutrons and mass are called isotopes of each other. The three atoms in the table below have the same number of protons. Therefore, they are isotopes of each other. Hydrogen has seven isotopes ($^1\\text{H}, ^2\\text{H}, ^3\\text{H}, ^4\\text{H}, ^5\\text{H}, ^6\\text{H}, ^7\\text{H}$). Three of them are available in nature and the remaining four are laboratory made.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

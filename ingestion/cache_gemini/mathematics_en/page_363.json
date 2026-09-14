@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 363,
+  "pdf_page_no": 368,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Short-cut method:** The formula used for determining the mean of the data by this method is\n$$\\bar{x} = a + \\frac{\\sum_{i=1}^{k} f_i u_i}{n} \\times h$$\nwhere, $\\bar{x} =$ required mean, $a =$ approximate mean, $f_i =$ class frequency of $i$th class, $u_i f_i =$ the product of step deviation with class intervals of $i$th class and $h =$ class interval, $k =$ number of class and $n =$ total number of frequency.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 8.** The production cost (in hundred taka) of a commodity at different stages is shown in the following table. Find the mean of the expenditure by short-cut method.\n\n| Production cost (in hundred taka) | 2 - 6 | 6 - 10 | 10 - 14 | 14 - 18 | 18 - 22 | 22 - 26 | 26 - 30 | 30 - 34 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 1 | 9 | 21 | 47 | 52 | 36 | 19 | 3 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Solution:** To determine mean in the light of followed steps in short-cut method, the table will be :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | Mid-value $x_i$ | Frequency $f_i$ | Step deviation $u_i = \\frac{x_i - a}{h}$ | Frequency and step deviation $f_i u_i$ |\n| :--- | :--- | :--- | :--- | :--- |\n| 2 - 6 | 4 | 1 | -4 | -4 |\n| 6 - 10 | 8 | 9 | -3 | -27 |\n| 10 - 14 | 12 | 21 | -2 | -42 |\n| 14 - 18 | 16 | 47 | -1 | -47 |\n| 18 - 22 | $20 \\leftarrow a$ | 52 | 0 | 0 |\n| 22 - 26 | 24 | 36 | 1 | 36 |\n| 26 - 30 | 28 | 19 | 2 | 38 |\n| 30 - 34 | 32 | 3 | 3 | 9 |\n| Total | | 188 | | -37 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Mean $\\bar{x} = a + \\frac{\\sum_{i=1}^{n} f_i u_i}{n} \\times h = 20 + \\frac{-37}{188} \\times 4 = 20 - 0.79 = 19.21$\n\n$\\therefore$ Mean production cost is Tk. 19 hundred.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Weighted mean:** In many cases the numerical values $x_1, x_2, \\dots, x_n$ of statistical data under investigation may be influenced by different reasons/ importance/ weight. In such case, the values of the data $x_1, x_2, \\dots, x_n$ along with their reasons/ importance/ weight $w_1, w_2, \\dots, w_n$ are considered to find the",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

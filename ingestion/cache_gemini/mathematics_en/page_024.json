@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 24,
+  "pdf_page_no": 29,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. Express $C = \\{x : x \\text{ positive integer and } x^2 < 18\\}$ by using roster method.\n\nSolution: $1, 2, 3, 4, 5, \\dots$ are positive integers.\n\nHere, if\n\n$x = 1$, then $x^2 = 1^2 = 1$; if $x = 2$, then $x^2 = 2^2 = 4$\n\nIf $x = 3$, then $x^2 = 3^2 = 9$; if $x = 4$, then $x^2 = 4^2 = 16$\n\nIf $x = 5$, then $x^2 = 5^2 = 25$; which is greater than 18.\n\n$\\therefore$ as per conditions the acceptable positive integers are 1, 2, 3 and 4.\n\n$\\therefore$ the given set is $C = \\{1, 2, 3, 4\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work: Express\n1) $C = \\{-9, -6, -3, 3, 6, 9\\}$ by using set building method.\n2) Express $B = \\{y : y \\text{ integer and } y^3 \\le 18\\}$ by using set building method.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Finite Set",
+      "chunk_type": "theory",
+      "content_markdown": "The set number of elements of which can be determined by counting is called finite set. For example, $D = \\{x, y, z\\}$, $E = \\{3, 6, 9, \\dots, 60\\}$, $F = \\{x : x \\text{ prime and } 30 < x < 70\\}$ etc are finite sets. Here, set $D$ contains 3 elements, set $E$ 20 elements and set $F$ 9 elements.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Infinite Set",
+      "chunk_type": "theory",
+      "content_markdown": "The set elements of which cannot be exhausted by counting is called infinite set. For example, $A = \\{x : x \\text{ odd natural number}\\}$, set of natural numbers $N = \\{1, 2, 3, 4, \\dots\\}$, set of integers $Z = \\{\\dots, -3, -2, -1, 0, 1, 2, 3, \\dots\\}$, set of rational numbers $Q = \\{\\frac{a}{b} : a \\text{ and } b \\text{ integer and } b \\neq 0\\}$, set of rational numbers $R$ etc are infinite sets.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. Prove that the set of all natural numbers is an infinite set.\n\nSolution: Suppose the set of natural numbers $N$ is a finite set. Then this set must have a maximum element $K$, where $K \\in N$. However, according to the concept of natural numbers, if $K$ is a natural number, then $K+1$ is also a natural number which is greater than $K$. Therefore, $K+1$ must be an element of the set of natural numbers $N$, i.e., $K+1 \\in N$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

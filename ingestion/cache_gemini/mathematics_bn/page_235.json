@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 235,
+  "pdf_page_no": 240,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{বা, } \\frac{x}{552} = \\frac{y}{276} = \\frac{1}{46}$$\n\n$$\\text{সুতরাং, } \\frac{x}{552} = \\frac{1}{46}, \\text{ বা, } x = \\frac{552}{46} = 12$$\n\n$$\\text{আবার, } \\frac{y}{276} = \\frac{1}{46}, \\text{ বা, } y = \\frac{276}{46} = 6$$\n\n$$\\therefore \\text{সমাধান: } (x, y) = (12, 6)$$\n\n$$\\text{সমাধানের শুদ্ধি পরীক্ষা: প্রাপ্ত } x \\text{ ও } y \\text{ এর মান প্রদত্ত সমীকরণে বসিয়ে পাই,}$$\n\n$$\\text{১ম সমীকরণে, বামপক্ষ } = \\frac{x}{2} + \\frac{y}{3} = \\frac{12}{2} + \\frac{6}{3} = 6 + 2 = 8 = \\text{ডানপক্ষ}$$\n\n$$\\text{২য় সমীকরণে, বামপক্ষ } = \\frac{5x}{4} - 3y = \\frac{5 \\times 12}{4} - 3 \\times 6 = 15 - 18 = -3 = \\text{ডানপক্ষ।}$$\n\n$$\\therefore \\text{সমাধান শুদ্ধ হয়েছে।}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৭.** আড়গুণন পদ্ধতিতে সমাধান কর: $ax - by = ab = bx - ay$\n\n**সমাধান:** প্রদত্ত সমীকরণদ্বয়,\n\n$$ax - by = ab$$\n$$bx - ay = ab$$\n\n$$\\text{বা, } \\begin{matrix} ax - by - ab = 0 \\\\ bx - ay - ab = 0 \\end{matrix}$$\n\nআড়গুণন পদ্ধতিতে পাই,\n\n$$\\frac{x}{(-b) \\times (-ab) - (-a)(-ab)} = \\frac{y}{(-ab) \\times b - (-ab) \\times a} = \\frac{1}{a \\times (-a) - b \\times (-b)}$$\n\n$$\\text{বা, } \\frac{x}{ab^2 - a^2b} = \\frac{y}{-ab^2 + a^2b} = \\frac{1}{-a^2 + b^2}$$\n\n$$\\text{বা, } \\frac{x}{-ab(a - b)} = \\frac{y}{ab(a - b)} = \\frac{1}{-(a + b)(a - b)}$$\n\n$$\\text{বা, } \\frac{x}{ab(a - b)} = \\frac{y}{-ab(a - b)} = \\frac{1}{(a + b)(a - b)}$$\n\n$$\\text{সুতরাং, } \\frac{x}{ab(a - b)} = \\frac{1}{(a + b)(a - b)}, \\text{ বা, } x = \\frac{ab(a - b)}{(a + b)(a - b)} = \\frac{ab}{a + b}$$\n\n$$\\text{আবার, } \\frac{y}{-ab(a - b)} = \\frac{1}{(a + b)(a - b)}, \\text{ বা, } y = \\frac{-ab(a - b)}{(a + b)(a - b)} = \\frac{-ab}{a + b}$$\n\n$$\\therefore (x, y) = \\left( \\frac{ab}{a + b}, \\frac{-ab}{a + b} \\right)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "আড়গুণন পদ্ধতির সহগ বিন্যাস",
+      "figure_no": "12.01",
+      "box_2d": [
+        655,
+        575,
+        745,
+        910
+      ],
+      "description": "আড়গুণন পদ্ধতির জন্য সহগগুলোর বিন্যাস সারণি",
+      "reading_order_anchor": "আড়গুণন পদ্ধতিতে পাই,"
+    }
+  ]
+}

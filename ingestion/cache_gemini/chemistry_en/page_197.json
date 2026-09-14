@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 197,
+  "pdf_page_no": 202,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "of blood at the anode. On the other hand, the calculating system of the machine determines the number of glucose cells in blood and shows it on the screen converting that into digits. Interesting is that all these processes take less than a minute.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Effect of Battery on Health and Environment",
+      "chunk_type": "theory",
+      "content_markdown": "We use batteries for various purposes. In torch lights, we use dry cells, buses and trucks uses lead-storage batteries etc. These batteries use various metals and metallic ions. These are extremely harmful for our body. Dry cell contains zinc and manganese dioxide and lead-storage battery contains lead ($\text{Pb}$), lead oxide ($\text{PbO}_2$), etc. According to chemical properties, these are toxic and carcinogenic. We trash them anywhere we feel like after use. That gives the extreme hazard of mixing with soil and water leading to contamination.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.5",
+      "section_title": "Nuclear Reactions and Generation of Electricity",
+      "chunk_type": "theory",
+      "content_markdown": "### Nuclear Reaction\n\nThe reaction where the nucleus of an element undergoes a transformation is called a nuclear reaction. The electron exchange in any chemical reaction occurs from the outermost energy layer of an atom or ion. This leaves the nucleus intact. But in the case of nuclear reactions, an electron does not have any role; the nucleus undergoes change and nucleus of a new element's atom is formed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.12: Battery in a Mobile phone.",
+      "figure_no": "8.12",
+      "box_2d": [
+        408,
+        121,
+        597,
+        534
+      ],
+      "description": "Photographs of two lithium-ion batteries commonly used in mobile phones.",
+      "reading_order_anchor": "Effect of Battery on Health and Environment"
+    }
+  ]
+}

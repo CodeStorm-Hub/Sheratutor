@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 182,
+  "pdf_page_no": 187,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": "Construction 8. To draw a tangent to a circle from a point outside.",
+      "chunk_type": "theory",
+      "content_markdown": "Let $P$ be a point outside of a circle whose centre is $O$. A tangent is to be drawn to the circle from the point $P$.\n\n**Drawing:**\n1. Join $P, O$. The middle point $M$ of the line segment $PO$ is determined.\n2. Now with $M$ as centre and $MO$ as radius, a circle is drawn. Let the new circle intersect the given circle at the points $A$ and $B$.\n3. Join $A, P$ and $B, P$.\n\nThen both $AP, BP$ are the required tangents.\n\n**Proof:** $A, O$ and $B, O$ are joined. $PO$ is the diameter of the circle $APB$.\n\n$\\therefore \\angle PAO = 1$ right angle [$\\because$ the angle inscribed in the semi-circle is a right angle]\n\nSo the line segment $OA$ is perpendicular to $AP$. Therefore, the line segment $AP$ is a tangent at $A$ to the circle with centre at $O$. Similarly, the line segment $BP$ is also a tangent to the circle.\n\n**Nota Bene:** Two and only two tangents can be drawn to a circle from an external point.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": "Construction 9. To draw a circle circumscribing a given triangle.",
+      "chunk_type": "theory",
+      "content_markdown": "Let $ABC$ be a triangle. It is required to draw a circle circumscribing it. That is, a circle which passes through the three vertices $A, B$ and $C$ of the triangle is to be drawn.\n\n**Drawing:**\n1. $EM$ and $FN$, the perpendicular bisectors of $AB$ and $AC$ respectively are drawn. Let the line segments intersect each other at $O$.\n2. $A, O$ are joined. With $O$ as centre and radius equal to $OA$, a circle is drawn.\n\nThen the circle will pass through the points $A, B$ and $C$ and this circle is the required circumcircle of $\\triangle ABC$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Construction of tangents from an external point",
+      "figure_no": "8.01",
+      "box_2d": [
+        165,
+        635,
+        345,
+        875
+      ],
+      "description": "A circle with center O and an external point P, showing the construction of tangents AP and BP.",
+      "reading_order_anchor": "Construction 8. To draw a tangent to a circle from a point outside."
+    },
+    {
+      "caption": "Fig 8.02: Construction of a circumcircle of a triangle",
+      "figure_no": "8.02",
+      "box_2d": [
+        705,
+        635,
+        865,
+        885
+      ],
+      "description": "A triangle ABC with its circumcircle and the intersection of perpendicular bisectors at O.",
+      "reading_order_anchor": "Construction 9. To draw a circle circumscribing a given triangle."
+    }
+  ]
+}

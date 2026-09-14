@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 120,
+  "pdf_page_no": 125,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "পূরক কোণ (Complementary angle)",
+      "chunk_type": "theory",
+      "content_markdown": "দুইটি কোণের পরিমাপের যোগফল এক সমকোণ হলে কোণ দুইটির একটি অপরটির পূরক কোণ।\n\nপাশের চিত্রে, $\\angle AOB$ একটি সমকোণ। $OC$ রশ্মি কোণটির অভ্যন্তরে অবস্থিত। এর ফলে $\\angle AOC$ এবং $\\angle COB$ এই দুইটি কোণ উৎপন্ন হলো। কোণ দুইটির পরিমাপের যোগফল $\\angle AOB$ এর পরিমাপের সমান, অর্থাৎ এক সমকোণ। $\\angle AOC$ এবং $\\angle COB$ পরস্পর পূরক কোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "সম্পূরক কোণ (Supplementary angle)",
+      "chunk_type": "theory",
+      "content_markdown": "দুইটি কোণের পরিমাপের যোগফল দুই সমকোণ হলে কোণ দুইটি পরস্পর সম্পূরক কোণ।\n\nপাশের চিত্রে, $O$, $AB$ সরলরেখার অন্তঃস্থ একটি বিন্দু। $OC$ একটি রশ্মি যা $OA$ রশ্মি ও $OB$ রশ্মি থেকে ভিন্ন। এর ফলে $\\angle AOC$ এবং $\\angle COB$ এই দুইটি কোণ উৎপন্ন হলো। কোণ দুইটির পরিমাপের যোগফল $\\angle AOB$ কোণের পরিমাপের সমান, অর্থাৎ দুই সমকোণ, কেননা $\\angle AOB$ একটি সরলকোণ। $\\angle AOC$ এবং $\\angle COB$ পরস্পর সম্পূরক কোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3",
+      "section_title": "বিপ্রতীপ কোণ (Vertical angle)",
+      "chunk_type": "theory",
+      "content_markdown": "কোনো কোণের বাহুদ্বয়ের বিপরীত রশ্মিদ্বয় যে কোণ তৈরি করে তা ঐ কোণের বিপ্রতীপ কোণ।\n\nচিত্রে $OA$ ও $OB$ পরস্পর বিপরীত রশ্মি। আবার $OC$ ও $OD$ পরস্পর বিপরীত রশ্মি। $\\angle BOD$ ও $\\angle AOC$ পরস্পর বিপ্রতীপ কোণ।\n\nআবার $\\angle BOC$ ও $\\angle DOA$ একটি অপরটির বিপ্রতীপ কোণ। দুইটি সরলরেখা কোনো বিন্দুতে পরস্পরকে ছেদ করলে, ছেদ বিন্দুতে দুই জোড়া বিপ্রতীপ কোণ উৎপন্ন হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.4",
+      "section_title": "উপপাদ্য ১",
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ১. একটি সরলরেখার একটি বিন্দুতে অপর একটি রশ্মি মিলিত হলে, যে দুইটি সন্নিহিত কোণ উৎপন্ন হয় এদের সমষ্টি দুই সমকোণ।\n\nপ্রমাণ: মনে করি, $AB$ সরলরেখাটির $O$ বিন্দুতে $OC$ রশ্মির প্রান্তবিন্দু মিলিত হয়েছে। ফলে $\\angle AOC$ ও $\\angle COB$ দুইটি সন্নিহিত কোণ উৎপন্ন হলো। $AB$ রেখার উপর $DO$ লম্ব আঁকি।\n\nসন্নিহিত কোণদ্বয়ের সমষ্টি\n$= \\angle AOC + \\angle COB = \\angle AOD + \\angle DOC + \\angle COB$\n$= \\angle AOD + \\angle DOB = 2$ সমকোণ।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৬.০১: পূরক কোণ",
+      "figure_no": "6.01",
+      "box_2d": [
+        73,
+        675,
+        215,
+        875
+      ],
+      "description": "একটি সমকোণ AOB যার অভ্যন্তরে OC রশ্মি অবস্থিত।",
+      "reading_order_anchor": "পূরক কোণ (Complementary angle)"
+    },
+    {
+      "caption": "চিত্র ৬.০২: সম্পূরক কোণ",
+      "figure_no": "6.02",
+      "box_2d": [
+        345,
+        675,
+        485,
+        875
+      ],
+      "description": "একটি সরলরেখা AB যার উপর O বিন্দুতে OC রশ্মি মিলিত হয়েছে।",
+      "reading_order_anchor": "সম্পূরক কোণ (Supplementary angle)"
+    },
+    {
+      "caption": "চিত্র ৬.০৩: বিপ্রতীপ কোণ",
+      "figure_no": "6.03",
+      "box_2d": [
+        565,
+        645,
+        755,
+        875
+      ],
+      "description": "দুটি সরলরেখা AB এবং CD পরস্পর O বিন্দুতে ছেদ করেছে।",
+      "reading_order_anchor": "বিপ্রতীপ কোণ (Vertical angle)"
+    },
+    {
+      "caption": "চিত্র ৬.০৪: উপপাদ্য ১ এর চিত্র",
+      "figure_no": "6.04",
+      "box_2d": [
+        825,
+        645,
+        965,
+        875
+      ],
+      "description": "একটি সরলরেখা AB যার উপর O বিন্দুতে OC রশ্মি মিলিত হয়েছে এবং DO লম্ব আঁকা হয়েছে।",
+      "reading_order_anchor": "উপপাদ্য ১"
+    }
+  ]
+}

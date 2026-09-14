@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 282,
+  "pdf_page_no": 287,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": "11.1",
+      "section_title": "Natural Polymers",
+      "chunk_type": "theory",
+      "content_markdown": "Based on the sources, Polymers can be further divided into two: Natural Polymer and Synthetic Polymer or Plastic.\n\n### Natural Polymers\n\nMany polymers are produced naturally, such as cellulose and starch in plants. Both of them are natural polymers which are formed from many glucose molecules.\n\nProtein is a polymer of amino acid. Astringent juice of rubber trees is a natural polymer. Rubber is cultivated in the Hill tracks, Cox's bazaar, Hobigonj, Sylhet and Tangail districts of our country. In industries plastic is being synthesized several times more than natural rubber.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.1",
+      "section_title": "Natural Polymers",
+      "chunk_type": "table",
+      "content_markdown": "Table 11.03: Different Polymers, Properties and Uses.\n\n| Name of the polymer | Formula of monomer | Properties of polymer | Uses |\n| --- | --- | --- | --- |\n| Polyethylene | $\text{CH}_2=\text{CH}_2$ | Cannot be cut easily, durable | Plastic bag, plastic sheet |\n| Polypropene | $\text{CH}_2=\text{CH}-\text{CH}_3$ | Cannot be cut easily, durable | Plastic rope, plastic bottle |\n| Polyvinyl chloride (PVC) | $\text{CH}_2=\text{CHCl}$ | Hard, solid and less flexible than polyethylene | Water pipe, electric insulator |\n| Nylon 6:6 | $\text{HOOC}-(\text{CH}_2)_4-\text{COOH}$ and $\text{H}_2\text{N}-(\text{CH}_2)_6-\text{NH}_2$ | Glittering, durable, flexible | Artificial cloths, rope, tooth brush |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2",
+      "section_title": "Synthetic polymer or plastic",
+      "chunk_type": "theory",
+      "content_markdown": "### Synthetic polymer or plastic\n\nPlastic is hard, light, cheap and available in any colour. Plastic can be melted and be given any shape by molding. The word plastic has come from the Greek word 'Plastikos' which means possible to melt. Many of us make various materials by melting rejected plastic parts. It is dangerous because burning or melting of plastic products by heating produces many toxic gases. Plastic is widely used to produce various products like pots for keeping foods, packets, ballpens, chairs, tables, motor parts, water tanks, bowls, buckets, mugs etc.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

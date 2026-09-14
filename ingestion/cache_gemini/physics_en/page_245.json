@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 245,
+  "pdf_page_no": 250,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In vacuum $v = 3 \\times 10^8 \\text{ ms}^{-1} / 1.00 = 3 \\times 10^8 \\text{ ms}^{-1}$\nIn air $v = 3 \\times 10^8 \\text{ ms}^{-1} / 1.00029 = 3 \\times 10^8 \\text{ ms}^{-1}$\nIn water $v = 3 \\times 10^8 \\text{ ms}^{-1} / 1.33 = 2.26 \\times 10^8 \\text{ ms}^{-1}$\nIn normal glass $v = 3 \\times 10^8 \\text{ ms}^{-1} / 1.52 = 2 \\times 10^8 \\text{ ms}^{-1}$\nIn diamond $v = 3 \\times 10^8 \\text{ ms}^{-1} / 2.42 = 1.24 \\times 10^8 \\text{ ms}^{-1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "To determine the refractive index of a medium is, the wavelength of light for which the refractive index is measured must be stated, because the refractive index depends on the wavelength of light.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1.1",
+      "section_title": "Laws of refraction",
+      "chunk_type": "theory",
+      "content_markdown": "What we need to understand the laws of refraction are already known. In the case of reflection of light we have imagined a normal from the point of incident. We do the same here. In Figure 9.01 we will call the angle between the incident ray and the normal as the angle of incidence and the angle between the refracted ray and the normal as angle of refraction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**First Law of Refraction:** The refracted ray will lie on the same plane as the incident ray and the normal.\n\n**Second Law of Refraction:** If the refractive index of the first medium is $n_1$, the refractive index of the second medium is $n_2$, the angle of incidence is $\\theta_1$, the angle of refraction is $\\theta_2$, then\n$$n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If you remember this, you will be able to solve all problems about refraction of light.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.01 : Refraction of light from first medium to the second",
+      "figure_no": "9.01",
+      "box_2d": [
+        308,
+        521,
+        538,
+        849
+      ],
+      "description": "Schematic diagram showing refraction of a light ray passing from a first medium to a second medium across a boundary plane, with incident angle theta_1 and refracted angle theta_2 relative to the normal.",
+      "reading_order_anchor": "9.1.1 Laws of refraction"
+    }
+  ]
+}

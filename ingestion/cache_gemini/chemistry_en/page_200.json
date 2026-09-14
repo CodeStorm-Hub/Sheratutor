@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 200,
+  "pdf_page_no": 205,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "power generation in many countries of the world. The government of Bangladesh has taken the necessary preparation for setting up a nuclear power generation facility at Ruppoor of Pabna district. Bangladesh will become self-sufficient in electricity once the project is complete. In the near future, all off Bangladesh will have electricity coverage.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Make a Galvanic cell to produce electricity.",
+      "chunk_type": "theory",
+      "content_markdown": "**Principle:** The electrochemical cell where electricity is generated through a chemical reaction is called a Galvanic cell. Two rods, one zinc rod partially dipped in zinc sulphate ($\text{ZnSO}_4$) solution and one copper rod in copper sulphate ($\text{CuSO}_4$) solution, are connected by a copper wire to make the Galvanic cell. Here in the cell, the zinc atom donates two electrons and turns into zinc ion ($\text{Zn}^{2+}$). The electrons reach the copper rod through the connecting wire. Copper ion ($\text{Cu}^{2+}$) from copper sulphate solution accepts these two electrons and turns into metallic copper. The flow of electrons through the copper wire generates electricity. The zinc rod acts as an anode and the copper rod as a cathode in the cell.\n\n$$\\text{Zn} \\longrightarrow \\text{Zn}^{2+} + 2e^{-} \\quad (\\text{Reaction in anode})$$\n\n$$\\text{Cu}^{2+} + 2e^{-} \\longrightarrow \\text{Cu} \\quad (\\text{Reaction in cathode})$$\n\n$$\\text{Zn} + \\text{Cu}^{2+} \\longrightarrow \\text{Zn}^{2+} + \\text{Cu} \\quad (\\text{Reaction in Cell})$$",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.16: Electricity production in a Galvanic cell.",
+      "figure_no": "8.16",
+      "box_2d": [
+        366,
+        439,
+        612,
+        883
+      ],
+      "description": "Schematic diagram of a Galvanic cell showing a zinc anode in zinc sulphate solution and a copper cathode in copper sulphate solution connected by a salt bridge and a wire with a light bulb.",
+      "reading_order_anchor": "Make a Galvanic cell to produce electricity."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 333,
+  "pdf_page_no": 338,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$or, \\theta = \\left(1 - \\frac{2}{n}\\right) \\times 90^\\circ$$\n\n$$\\therefore \\theta = 90^\\circ - \\frac{180^\\circ}{n}$$\n\nHere, $$\\tan\\theta = \\frac{ON}{AN} = \\frac{h}{\\frac{a}{2}} = \\frac{2h}{a}$$\n\n$$\\therefore h = \\frac{a}{2}\\tan\\theta$$\n\nArea of $$\\triangle OAB = \\frac{1}{2}ah$$\n\n$$= \\frac{1}{2}a \\times \\frac{a}{2}\\tan\\theta$$\n\n$$= \\frac{a^2}{4}\\tan\\left(90^\\circ - \\frac{180^\\circ}{n}\\right)$$\n\n$$= \\frac{a^2}{4}\\cot\\frac{180^\\circ}{n} \\quad [\\because \\tan(90^\\circ - A) = \\cot A]$$\n\n$$\\therefore$$ The required area of a regular polygon having $n$ sides $$= \\frac{na^2}{4}\\cot\\frac{180^\\circ}{n}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 15.** If the length of each side of a regular pentagon is 4 cm, determine its area.\n\n**Solution:** Let, length of each side of a regular pentagon is $$a = 4 \\text{ cm}$$ and number of sides $$n = 5$$\n\nWe know, area of a regular polygon $$= \\frac{na^2}{4}\\cot\\frac{180^\\circ}{n}$$\n\n$$\\therefore$$ Area of the pentagon $$= \\frac{5 \\times 4^2}{4}\\cot\\frac{180^\\circ}{5} \\text{ square cm}$$\n\n$$= 20 \\times \\cot36^\\circ \\text{ square cm}$$\n\n$$= 20 \\times 1.376 \\text{ square cm (using calculator)}$$\n\n$$= 27.528 \\text{ square cm (approx.)}$$\n\nRequired area 27.528 square cm (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 16.** The distance of the centre to the vertex of a regular hexagon is 4 metre. Determine its area.\n\n**Solution:** Let, $ABCDEF$ is a regular hexagon whose centre is $O$, $O$ is joined to each of the vertex and thus 6 triangles of equal area are formed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Regular pentagon",
+      "figure_no": "16.01",
+      "box_2d": [
+        683,
+        675,
+        815,
+        843
+      ],
+      "description": "A regular pentagon ABCDE with center O, showing the division into five triangles.",
+      "reading_order_anchor": "Example 15."
+    }
+  ]
+}

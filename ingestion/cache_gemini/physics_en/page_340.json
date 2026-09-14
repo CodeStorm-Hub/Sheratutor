@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 340,
+  "pdf_page_no": 345,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "During this experiment, to change the magnetic field in the coil, we brought the magnet towards the coil away from it. If we could change the magnetic field in an other way, then we would observe the same thing.\n\nAnother way of changing the magnetic field in the coil is to bring another coil near it (instead of bringing the magnet) and producing magnetic field in the second coil by flowing current through it. If a battery and a switch are connected with the second coil to produce magnetic field in it, then by turning the switch 'on', a magnetic field can be produced in the coil, again turning the switch 'off', the magnetic field can be removed. Keeping the second coil near the first coil, if a magnetic field is produced once in it and the magnetic field is removed again, then the magnetic field will be changed in the first coil and due to this we will see current in the ammeter! When current is produced by turning on the switch, then the ammeter will show the presence of the current by deflecting its needle in one direction. When the switch is turned off, the needle will deflect in another direction, and show the current flowing in the opposite direction.\n\nOne thing we have to remember: when the magnetic field changes, only then does the current flow. If a strong magnet is kept inside a coil, no current will flow through the coil. Only by moving the coil, the magnetic field is changed, then a current will flow through it.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.3.1",
+      "section_title": "Generator",
+      "chunk_type": "theory",
+      "content_markdown": "When we were trying to understand how a motor works, we saw that a current passes through an electromagnet in a magnetic field which cause it to rotate. Let us see the matter in another way. If instead of giving connection of a battery cell with two terminals of an electromagnet of a motor, we connect an ammeter there and rotate the electromagnet. What will happen then?\n\nOf course, the magnetic field within the coil will change, so a current will flow through the coil. That is, the electromagnet of the motor that we have rotated by passing current through it, if we rotate that electromagnet or coil, the reverse thing happens, electricity is generated. In this way a generator is built. Therefore, if we rotate the armature of a DC motor, we get DC electric current, if AC motor is rotated it gives AC current.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

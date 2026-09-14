@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 223,
+  "pdf_page_no": 228,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Two mirrors are placed mutually at $60^\\circ$ angle (Figure 8.13). If light is incident on the first mirror at an angle of $60^\\circ$, what will be the direction of light?\n\n**Answer:** From geometry it can be said that the ray will incident on the point B perpendicularly, and reflect in the opposite direction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Individual work",
+      "chunk_type": "theory",
+      "content_markdown": "In a dark room, make a very small hole in the middle of a piece of cardboard and place a candle before it. On the opposite side of the board, hold a white paper, as shown in Figure 8.14. If you do not allow any other light to fall on the white paper, you will see an image of the flame of the candle. By moving the white paper in forward or backward, the size of the image can be made small or big. Is the image real or virtual? Straight or inverted? Is it equidistant or not? Large or small?\n\nYou can understand, the image is real, inverted, clear at all distances and as far as it forms, larger in size. Through this process, a pin hole camera is made.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.13: Two mirrors kept at an angle of 60°, light is incident at point A on a mirror at an angle 60°.",
+      "figure_no": "8.13",
+      "box_2d": [
+        91,
+        621,
+        237,
+        858
+      ],
+      "description": "Two mirrors placed at a 60 degree angle with a light ray reflecting between them.",
+      "reading_order_anchor": "Question: Two mirrors are placed mutually at 60 angle"
+    },
+    {
+      "caption": "Figure 8.14: Image of an object can be formed using fine holes.",
+      "figure_no": "8.14",
+      "box_2d": [
+        426,
+        281,
+        612,
+        658
+      ],
+      "description": "Experimental setup showing a candle casting an inverted image through a pinhole onto a screen.",
+      "reading_order_anchor": "In a dark room, make a very small hole in the middle"
+    }
+  ]
+}

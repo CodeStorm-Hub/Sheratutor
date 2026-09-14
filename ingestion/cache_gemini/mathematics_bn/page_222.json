@@ -1,0 +1,121 @@
+{
+  "printed_page_no": 222,
+  "pdf_page_no": 227,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": "11.1",
+      "section_title": "বহুনির্বাচনি প্রশ্ন",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "নিচের কোনটি সঠিক?\nক) $i$ ও $ii$ খ) $i$ ও $iii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "11.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. $\\frac{a}{x} = \\frac{m^2 + n^2}{2mn}$ হলে, $\\frac{\\sqrt{a+x}}{\\sqrt{a-x}} = $ কত?\nক) $\\frac{m}{n}$ খ) $\\frac{m+n}{m-n}$ গ) $\\frac{m-n}{m+n}$ ঘ) $\\frac{n}{m}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "11.3",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "একটি ত্রিভুজের পরিসীমা $36$ সে.মি. এবং বাহুগুলোর দৈর্ঘ্যের অনুপাত $3 : 4 : 5$ হলে, নিচের ৮ ও ৯ নং প্রশ্নের উত্তর দাও:",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "11.4",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. ত্রিভুজটির বৃহত্তম বাহুর দৈর্ঘ্য কত সে.মি.?\nক) $5$ খ) $9$ গ) $12$ ঘ) $15$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "11.5",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. ত্রিভুজটির ক্ষেত্রফল কত বর্গ সে.মি.?\nক) $6$ খ) $54$ গ) $67$ ঘ) $90$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "11.6",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. $1$ ঘন সে.মি. কাঠের ওজন $7$ ডেসিগ্রাম। কাঠের ওজন সমআয়তন পানির ওজনের শতকরা কত ভাগ?",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "11.7",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. ক, খ, গ, ঘ এর মধ্যে $300$ টাকা এমনভাবে ভাগ করে দাও যেন, ক এর অংশ : খ এর অংশ $= 2 : 3$, খ এর অংশ : গ এর অংশ $= 1 : 2$ এবং গ এর অংশ : ঘ এর অংশ $= 3 : 2$ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.8",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. তিনজন জেলে $690$ টি মাছ ধরেছে। তাদের অংশের অনুপাত $\\frac{2}{3} : \\frac{4}{5}$ এবং $\\frac{5}{6}$ হলে, কে কয়টি মাছ পেল?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.9",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. একটি ত্রিভুজের পরিসীমা $45$ সে.মি.। বাহুগুলোর দৈর্ঘ্যের অনুপাত $3 : 5 : 7$ হলে, প্রত্যেক বাহুর পরিমাণ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.10",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. দুইটি সংখ্যার অনুপাত $5 : 7$ এবং এদের গ.সা.গু. $4$ হলে, সংখ্যা দুইটির ল.সা.গু. কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.11",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. ক্রিকেট খেলায় সাকিব, মুশফিকুর ও মাশরাফী $171$ রান করলো। সাকিব ও মুশফিকুরের এবং মুশফিকুর ও মাশরাফীর রানের অনুপাত $3 : 2$ হলে কে কত রান করেছে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.12",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. একটি অফিসে $2$ জন কর্মকর্তা, $7$ জন অফিস সহকারী এবং $3$ জন অফিস সহায়ক আছে। একজন অফিস সহায়ক $1$ টাকা পেলে একজন অফিস সহকারী পায় $2$ টাকা, একজন কর্মকর্তা পায় $4$ টাকা। তাদের সকলের মোট বেতন $150,000$ টাকা হলে, কে কত বেতন পায়?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.13",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৭. যদি কোনো বর্গক্ষেত্রের বাহুর পরিমাণ $20\\%$ বৃদ্ধি পায়, তবে তার ক্ষেত্রফল শতকরা কত বৃদ্ধি পাবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.14",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. একটি আয়তক্ষেত্রের দৈর্ঘ্য $10\\%$ বৃদ্ধি এবং প্রস্থ $10\\%$ হ্রাস পেলে আয়তক্ষেত্রের ক্ষেত্রফল শতকরা কত বৃদ্ধি বা হ্রাস পাবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.15",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৯. একটি মাঠের জমিতে সেচের সুযোগ আসার আগের ও পরের ফলনের অনুপাত $4 : 7$। এ মাঠে যে জমিতে আগে $304$ কুইন্টাল ধান ফলতো, সেচ পাওয়ার পরে তার ফলন কত হবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.16",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২০. ধান ও ধান থেকে উৎপন্ন চালের অনুপাত $3 : 2$ এবং গম ও গম থেকে উৎপন্ন সুজির অনুপাত $4 : 3$ হলে, সমান পরিমাণের ধান ও গম থেকে উৎপন্ন চাল ও সুজির অনুপাত বের কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

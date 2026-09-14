@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 139,
+  "pdf_page_no": 144,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** If a piece of wood floats on water what percent of it will be immersed? (Density of wood $\\rho = 0.5 \\times 10^3 \\text{ kg/m}^3$, density of water $\\rho_W = 10^3 \\text{ kg/m}^3$)\n\n**Answer:** In order to float, the weight of the wood must be equal to the mass of the water displaced by the immersed part of the wood. That is, if volume of wood is $V$ then its mass will be $V\\rho$, and if the volume of the immersed part of the wood is $V_1$, the mass of that amount of water is $V_1\\rho_W$\n\nTherefore, $V\\rho = V_1\\rho_W$\n\n$$\\frac{V_1}{V} = \\frac{\\rho}{\\rho_W} = \\frac{0.5 \\times 10^3 \\text{ kg/m}^3}{10^3 \\text{ kg/m}^3} \\times 100 = 50\\%$$\n\n**Question:** A piece of wood of mass $10 \\text{ kg}$ went to sea floating from the river. In the river water it was half immersed, how much of it will immerse in the sea? (Density of sea water, $\\rho_S = 1.03 \\times 10^3 \\text{ kg/m}^3$)\n\n**Answer:** Density of river water $\\rho_W = 10^3 \\text{ kg/m}^3$\n\nIf volume of wood is $V$ and density is $\\rho$ then mass of wood will be $V\\rho$\n\nIn river water the wood is half immersed $V\\rho = \\frac{1}{2} V\\rho_W$\n\ntherefore, $\\rho = \\frac{1}{2} \\rho_W = 0.5 \\times 10^3 \\text{ kg/m}^3$\n\nIf it is immersed by $V_1$ amount in the sea water,\n\n$$V\\rho = V_1\\rho_S$$\n\n$$\\frac{V_1}{V} = \\frac{\\rho}{\\rho_S} = \\frac{0.5 \\times 10^3 \\text{ kg/m}^3}{1.03 \\times 10^3 \\text{ kg/m}^3} \\times 100 = 48.5\\%$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

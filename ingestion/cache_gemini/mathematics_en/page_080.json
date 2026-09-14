@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 80,
+  "pdf_page_no": 85,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Very large or very small numbers or expressions can easily be expressed by using exponents. As a result, calculations and solution of mathematical problems become easier. Scientific or standard form of a number is expressed by using exponents. Therefore, every student should have the knowledge of exponents and its applications.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Exponents be get logarithms. Multiplication and division of numbers or expressions and exponent related calculations have become easier with the help of logarithms. Use of logarithm in scientific calculations was the only way before calculators and computers became available. Still the use of logarithm is important as the alternative of calculator and computer.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this chapter, exponents and logarithms have been discussed in detail. At the end of the chapter, the students will be able to:\n\n* explain the rational exponent.\n* explain and apply the positive integral exponents, zero and negative integral exponents.\n* solve problems by describing and applying the rules of exponents.\n* explain the $n$th root and rational fractional exponents and express the $n$th root in terms of exponents.\n* explain logarithms.\n* prove and apply the formulae of logarithms.\n* explain natural logarithm and common logarithm.\n* explain the scientific form of numbers.\n* explain the characteristic and mantissa of common logarithm.\n* calculate common and natural logarithm by calculator.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

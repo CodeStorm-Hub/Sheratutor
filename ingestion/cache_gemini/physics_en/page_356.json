@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 356,
+  "pdf_page_no": 361,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "communication using Morse code and then through the use of vocal communication by telephone (Figure 13.03). During the first and second world war, different types of specialized vacuum tubes were used in controlling weapons, radar, navigation etc. In 1946 the first computer ENIAC was invented using 1800 vacuum tubes.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2.2",
+      "section_title": "Transistor",
+      "chunk_type": "theory",
+      "content_markdown": "In 1947 the Transistor was first invented in Bell Laboratory and for this invention John Bardeen, Walter Brattain and William Shockley were awarded the Nobel Prize. No one could imagine at that time how fast and widely the transistor would change the whole world.\n\nA transistor can work just like a vacuum tube, but compared with a vacuum tube it is very small in size, light in weight, and a very small amount of electricity is needed to operate it, it is very reliable and most of all, it can be made at a very low cost. Thus it rapidly secured its place, replacing the vacuum tube and the people of the world began to get many electrical appliances by using this transistor at very cheap.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2.3",
+      "section_title": "Integrated Circuit",
+      "chunk_type": "theory",
+      "content_markdown": "Although the discussion about an integrated circuit was started in 1952, a real integrated circuit was started to be made in the sixth decade. In the fifth decade many transistors were made on a thin silicon plate (Wafer) and eventually the transistors were separated by cutting them from the plate. This process was improved to a small extent while preparing an integrated circuit. Not only",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 13.03 : Types of vacuum tube",
+      "figure_no": "13.03",
+      "box_2d": [
+        108,
+        244,
+        292,
+        752
+      ],
+      "description": "A collection of various types of vacuum tubes arranged in a row.",
+      "reading_order_anchor": "communication using Morse code and then through the use of vocal communication by telephone (Figure 13.03)."
+    }
+  ]
+}

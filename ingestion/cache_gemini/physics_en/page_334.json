@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 334,
+  "pdf_page_no": 339,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Figure 12.03: The magnetic field around the electric current. Magnetic field has no beginning or ending.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "### Example:\n**Question:** Figure 12.04 shows that current is flowing upwards from inside the book. Which of the magnetic fields is correct?\n**Answer:** The left figure is correct.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": "12.2.1",
+      "section_title": "Solenoid",
+      "chunk_type": "theory",
+      "content_markdown": "If a wire is straight and current passes through it, then the nature of the magnetic lines of force was shown in Figure 12.03. How will it be the magnetic lines of force if the wire is circular instead of being straight? This is shown in Figure 12.05. You are able to understand that the more the current, the stronger the magnetic field is. There is a limit to how much current can be pass through a wire, since the wire is heated as $I^2R$. Moreover, the maximum amount of current that can pass through a wire depends on the source of electricity. Therefore if we want to produce a strong magnetic field, then instead of making a single loop, a coil is made by a insulated wire, winding it",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 12.03: The magnetic field around the electric current. Magnetic field has no beginning or ending.",
+      "figure_no": "12.03",
+      "box_2d": [
+        134,
+        263,
+        353,
+        770
+      ],
+      "description": "Two diagrams showing the right-hand grip rule for determining the direction of the magnetic field around a current-carrying wire.",
+      "reading_order_anchor": "Figure 12.03: The magnetic field around the electric current. Magnetic field has no beginning or ending."
+    },
+    {
+      "caption": "Figure 12.04: Magnetic field around the current carrying wire",
+      "figure_no": "12.04",
+      "box_2d": [
+        508,
+        414,
+        688,
+        876
+      ],
+      "description": "Two diagrams showing magnetic field lines around a current-carrying wire, with the left one showing the correct direction.",
+      "reading_order_anchor": "Question: Figure 12.04 shows that current is flowing upwards from inside the book. Which of the magnetic fields is correct?"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 169,
+  "pdf_page_no": 174,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the length of an object is $L_1$ at temperature $T_1$ and the length is increased to $L_2$ after increasing the temperature to $T_2$, then the co-efficient of linear expansion $\\alpha$ is\n\n$$\\alpha = \\frac{(L_2 - L_1)/L_1}{T_2 - T_1}$$\n\nso,\n\n$$L_2 = L_1 + \\alpha L_1(T_2 - T_1)$$\n\nSimilarly if the area of an object is $A_1$ at temperature $T_1$ and increasing the temperature $T_2$ if the area is increased to $A_2$, then the co-efficient of area expansion $\\beta$ is\n\n$$\\beta = \\frac{(A_2 - A_1)/A_1}{T_2 - T_1}$$\n\nso,\n\n$$A_2 = A_1 + \\beta A_1(T_2 - T_1)$$\n\nAgain similarly if the volume is $V_1$ at temperature $T_1$ and if the volume is increased to $V_2$, then the co-efficient of expansion of volume is $\\gamma$\n\n$$\\gamma = \\frac{(V_2 - V_1)/V_1}{T_2 - T_1}$$\n\nso,\n\n$$V_2 = V_1 + \\gamma V_1(T_2 - T_1)$$\n\nYou see that the unit of three quantities $\\alpha$, $\\beta$ and $\\gamma$ is $\\text{K}^{-1}$.\n\n$$\\text{Dimension}[\\alpha] = [\\beta] = [\\gamma] = [\\text{T}^{-1}]$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** The length of a steel rod is $10\\text{ m}$ at $20\\text{ }^\\circ\\text{C}$. If its length becomes $10.0167\\text{ m}$ at $120\\text{ }^\\circ\\text{C}$, then determine the co-efficient of linear expansion of steel.\n\n**Answer:**\n\nCo-efficient of linear expansion,",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

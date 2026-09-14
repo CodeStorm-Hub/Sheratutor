@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 84,
+  "pdf_page_no": 89,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "spring balance with you, you can measure the mass more accurately and you can measure the weight from there.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Serial Number | Name of the object | Mass of object obtained from balance in gram, $m$ | Mass of object in kg $M = m/1000$ kg | Weight of the object $W = mg$ N |\n|---|---|---|---|---|\n| | | | | |\n| | | | | |\n| | | | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.8",
+      "section_title": "Newton's Third Law",
+      "chunk_type": "theory",
+      "content_markdown": "We have learnt from Newton's first law what happens when no force is applied. We have learnt from Newton's second law what happens when a force is applied. We will learn from Newton's third law what type of reaction takes place between the two objects when an object applies force on another object.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.8",
+      "section_title": "Newton's Third Law",
+      "chunk_type": "theory",
+      "content_markdown": "**Newton's Third Law:** When an object applies a force on another object, then that object also applies a force of equal magnitude on the first object but in the opposite direction.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "3.8",
+      "section_title": "Newton's Third Law",
+      "chunk_type": "theory",
+      "content_markdown": "In physics, generally Newton's third law is written as, \"Every action has an equal and opposite reaction\", although we have not written it in this form. By this time since we have a little idea about force, confusion may occur if force is termed as \"action\" or \"reaction\" \"suddenly\". Moreover, those who are the new learners of physics, their first question will be if every reaction (a force) has an opposite reaction (another force) then why action and reaction are not cancelling each other, producing zero? For this reason, the third law will have to be written very precisely. The third law states that if there are two objects A and B, then when A exerts a force on B, then B also exerts a force on A. It is worth mentioning that two opposite forces act on different objects, never on a single object. If the two forces were applied on a single object, only then one could cancel the other. Here there is no scope of cancellation.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

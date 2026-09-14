@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 298,
+  "pdf_page_no": 303,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": "12.1",
+      "section_title": "Preparation and Test of Soap",
+      "chunk_type": "theory",
+      "content_markdown": "c. Boil the mixture in the steam bath for 30 minutes and stir it time to time with the stirrer. Add water to maintain the deficit of water due to evaporation. At this time a sticky substance will be formed by removal of oily or fatty materials.\n\nd. Then stop heating and let the mixture cool.\n\ne. Add $50\\text{ ml}$ saturation solution of $\\text{NaCl}$ in the cold mixture and let it stay overnight.\n\nf. Next day filter the solution with filter paper and throw away the filtrate let the soap dry.\n\n**Test of the produced soap**\n\n1. Take a test tube with one third of water and a piece of a specimen soap of yours in it. Shake it well by closing the mouth of the test tube. Observe, is there any foam formed or not?\n\n2. Add $2/3$ drops of kerosene in the test tube and shake it well and observe. Explain the result by considering the kerosene as grease.\n\n3. Determine the $\\text{pH}$ value of your soap.\n\n4. Repeat the above three steps of the experiment with soaps from the market and compare with your soap.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": "12.2",
+      "section_title": "Bleaching Powder",
+      "chunk_type": "theory",
+      "content_markdown": "Chemical name of bleaching powder is Calcium Oxychloro Chloride, $\\text{Ca(OCl)Cl}$. Bleaching powders is used to remove or make colourless the ink of ball-pen or any other colour which cannot be removed from clothes by detergent or soap. Besides, bleaching powder is also used for killing germs on floors, commodes, basins etc. Bleaching powder is produced when Chlorine gas is passed through the Calcium Hydroxide at $40^\\circ\\text{C}$ temperature.\n\n$$\\text{Ca(OH)}_2 + \\text{Cl}_2 \\xrightarrow{40^\\circ\\text{C}} \\text{Ca(OCl)Cl} + \\text{H}_2\\text{O}$$\n\n**Technique of removing colourful spot on clothes:**\n\nBleaching powder makes the colourful spots of the clothes colourless. This is why bleaching powder is called an anti-pigment. Spot of clothes and bleaching powder both are chemical substances. When water is added to bleaching powder",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

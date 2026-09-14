@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 202,
+  "pdf_page_no": 207,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let us find the trigonometric ratios:\n\n$$\\sin 30^{\\circ} = \\frac{PM}{OP} = \\frac{a}{2a} = \\frac{1}{2}, \\cos 30^{\\circ} = \\frac{OM}{OP} = \\frac{\\sqrt{3}a}{2a} = \\frac{\\sqrt{3}}{2}$$\n\n$$\\tan 30^{\\circ} = \\frac{PM}{OM} = \\frac{a}{\\sqrt{3}a} = \\frac{1}{\\sqrt{3}}$$\n\n$$\\text{cosec } 30^{\\circ} = \\frac{OP}{PM} = \\frac{2a}{a} = 2, \\sec 30^{\\circ} = \\frac{OP}{OM} = \\frac{2a}{\\sqrt{3}a} = \\frac{2}{\\sqrt{3}}$$\n\n$$\\cot 30^{\\circ} = \\frac{OM}{PM} = \\frac{\\sqrt{3}a}{a} = \\sqrt{3}$$\n\nIn the same way,\n\n$$\\sin 60^{\\circ} = \\frac{OM}{OP} = \\frac{\\sqrt{3}a}{2a} = \\frac{\\sqrt{3}}{2}, \\cos 60^{\\circ} = \\frac{PM}{OP} = \\frac{a}{2a} = \\frac{1}{2},$$\n\n$$\\tan 60^{\\circ} = \\frac{OM}{PM} = \\frac{\\sqrt{3}a}{a} = \\sqrt{3}$$\n\n$$\\text{cosec } 60^{\\circ} = \\frac{OP}{OM} = \\frac{2a}{\\sqrt{3}a} = \\frac{2}{\\sqrt{3}}, \\sec 60^{\\circ} = \\frac{OP}{PM} = \\frac{2a}{a} = 2,$$\n\n$$\\cot 60^{\\circ} = \\frac{PM}{OM} = \\frac{a}{\\sqrt{3}a} = \\frac{1}{\\sqrt{3}}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Trigonometric ratios for $45^{\\circ}$ :**\n\nLet us assume $\\angle XOZ = 45^{\\circ}$ and $P$ is a point on $OZ$.\nDraw $PM \\perp OX$\nIn the right-angled $\\triangle OPM, \\angle POM = 45^{\\circ}$\n$\\therefore, \\angle OPM = 45^{\\circ}$\nSo $PM = OM = a$ (denote)\nNow, $OP^2 = OM^2 + PM^2 = a^2 + a^2 = 2a^2$\nor, $OP = \\sqrt{2}a$\nFrom the definitions of trigonometric ratios we get,\n\n$$\\sin 45^{\\circ} = \\frac{PM}{OP} = \\frac{a}{\\sqrt{2}a} = \\frac{1}{\\sqrt{2}}, \\cos 45^{\\circ} = \\frac{OM}{OP} = \\frac{a}{\\sqrt{2}a} = \\frac{1}{\\sqrt{2}},$$\n\n$$\\tan 45^{\\circ} = \\frac{PM}{OM} = \\frac{a}{a} = 1$$\n\n$$\\text{cosec } 45^{\\circ} = \\frac{1}{\\sin 45^{\\circ}} = \\sqrt{2}, \\sec 45^{\\circ} = \\frac{1}{\\cos 45^{\\circ}} = \\sqrt{2},$$\n\n$$\\cot 45^{\\circ} = \\frac{1}{\\tan 45^{\\circ}} = 1$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Trigonometric ratios for 45°",
+      "figure_no": "9.01",
+      "box_2d": [
+        565,
+        646,
+        724,
+        875
+      ],
+      "description": "A right-angled triangle OPM where angle POM is 45 degrees, PM is perpendicular to OX, and sides are labeled as a, a, and sqrt(2)a.",
+      "reading_order_anchor": "Trigonometric ratios for 45°"
+    }
+  ]
+}

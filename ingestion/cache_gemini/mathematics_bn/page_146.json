@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 146,
+  "pdf_page_no": 151,
+  "chapter_no": 7,
+  "chapter_title": "ব্যবহারিক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: যেকোনো রশ্মি $AE$ থেকে $a$ এর সমান $AC$ রেখাংশ নিই। $AC$ এর মধ্যবিন্দু $O$ নির্ণয় করি। $O$ বিন্দুতে $\\angle x$ এর সমান $\\angle AOP$ আঁকি। $OP$ এর বিপরীত রশ্মি $OQ$ অঙ্কন করি। $OP$ ও $OQ$ রশ্মিদ্বয় থেকে $\\frac{1}{2}b$ এর সমান যথাক্রমে $OB$ ও $OD$ রেখাংশদ্বয় নিই। $A, B; A, D; C, B$ ও $C, D$ যোগ করি।\n\nতাহলে, $ABCD$ ই উদ্দিষ্ট সামান্তরিক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $\\triangle AOB$ ও $\\triangle COD$ এ $OA = OC = \\frac{1}{2}a$, $OB = OD = \\frac{1}{2}b$ [অঙ্কনানুসারে]\n\nএবং অন্তর্ভুক্ত $\\angle AOB =$ অন্তর্ভুক্ত $\\angle COD$ [বিপ্রতীপ কোণ]\n\nঅতএব, $\\triangle AOB \\cong \\triangle COD$\n\nসুতরাং, $AB = CD$ এবং $\\angle ABO = \\angle CDO$; কিন্তু কোণ দুইটি একান্তর কোণ।\n\n$\\therefore AB$ ও $CD$ সমান ও সমান্তরাল।\n\nঅনুরূপভাবে, $AD$ ও $BC$ সমান ও সমান্তরাল।\n\nসুতরাং, $ABCD$ একটি সামান্তরিক যার কর্ণদ্বয় $AC = AO + OC = \\frac{1}{2}a + \\frac{1}{2}a = a$ ও $BD = BO + OD = \\frac{1}{2}b + \\frac{1}{2}b = b$ এবং কর্ণ দুইটির অন্তর্ভুক্ত $\\angle AOB = \\angle x$\n\nঅতএব, $ABCD$ ই নির্ণেয় সামান্তরিক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.5",
+      "section_title": "সামান্তরিকের দুইটি কর্ণ ও একটি বাহু দেওয়া আছে। সামান্তরিকটি আঁকতে হবে।",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি সামান্তরিকের দুইটি কর্ণ $a$ ও $b$ এবং একটি বাহু $c$ দেওয়া আছে। সামান্তরিকটি আঁকতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $a$ ও $b$ কর্ণদ্বয়কে সমান দুইভাগে বিভক্ত করি। যেকোনো রশ্মি $AX$ থেকে $c$ এর সমান $AB$ নিই। $A$ ও $B$ কে কেন্দ্র করে যথাক্রমে $\\frac{a}{2}$ ও $\\frac{b}{2}$ এর সমান ব্যাসার্ধ নিয়ে $AB$ এর একই পাশে দুইটি বৃত্তচাপ আঁকি। মনে করি, বৃত্তচাপ দুইটি পরস্পরকে $O$ বিন্দুতে ছেদ করে। $A, O$ ও $B, O$ যোগ করি। $AO$ কে $AE$ বরাবর এবং $BO$ কে $BF$ বরাবর বর্ধিত করি। $OE$ থেকে $\\frac{a}{2} = OC$ এবং $OF$ থেকে $\\frac{b}{2} = OD$ নিই। $A, D; D, C$ ও $B, C$ যোগ করি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৭.০৫",
+      "figure_no": "7.05",
+      "box_2d": [
+        75,
+        520,
+        235,
+        875
+      ],
+      "description": "সামান্তরিক অঙ্কনের জ্যামিতিক চিত্র যেখানে কর্ণ ও কোণ ব্যবহার করা হয়েছে।",
+      "reading_order_anchor": "অঙ্কন: যেকোনো রশ্মি AE থেকে a এর সমান"
+    },
+    {
+      "caption": "চিত্র ৭.০৬",
+      "figure_no": "7.06",
+      "box_2d": [
+        760,
+        590,
+        955,
+        880
+      ],
+      "description": "সামান্তরিক অঙ্কনের জ্যামিতিক চিত্র যেখানে দুইটি কর্ণ ও একটি বাহু ব্যবহার করা হয়েছে।",
+      "reading_order_anchor": "অঙ্কন: a ও b কর্ণদ্বয়কে সমান দুইভাগে বিভক্ত করি।"
+    }
+  ]
+}

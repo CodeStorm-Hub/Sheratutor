@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 69,
+  "pdf_page_no": 74,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We can apply an unbalanced force on the object without cutting the thread too. If by pulling the object we displace it slightly along one side, then the tension of the thread and the weight will not work in the opposite direction. Then the two forces i.e. tension of the thread and weight of the body will combine and produce a resultant force. When the object is just released, this resultant force will start working on the object and the body will oscillate. This is another example of the unbalanced force.\n\nThree forces together can produce the balanced condition too. If a heavy book is tied by a rope and pulled by the two terminals of the rope from two sides, it is possible to suspend the book in a stationary state (Figure 3.03). Since the book is in the stationary state, consequently here the weight of the book $W$ and the two tensions of the rope $T_1$ and $T_2$ combine to produce a zero resultant force.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.02: The force is balanced in the first figure. In second figure, as soon as the pendulum is released; a resultant force will act, so the pendulum will start movement.",
+      "figure_no": "3.02",
+      "box_2d": [
+        98,
+        510,
+        281,
+        858
+      ],
+      "description": "Two diagrams of a pendulum: the first shows a pendulum hanging straight with tension $T$ opposing weight $W$; the second shows a hand pulling the pendulum bob to the side.",
+      "reading_order_anchor": "We can apply an unbalanced force..."
+    },
+    {
+      "caption": "Figure 3.03: No matter how strongly you pull the two ends of the rope, you can never make it completely straight, because then the weight of the book cannot be neutralized.",
+      "figure_no": "3.03",
+      "box_2d": [
+        604,
+        163,
+        804,
+        868
+      ],
+      "description": "Two hands pulling the two ends of a rope tied around a book, suspending it with tensions $T_1$ and $T_2$ and weight $W$ acting downwards.",
+      "reading_order_anchor": "Three forces together can produce the balanced condition too."
+    }
+  ]
+}

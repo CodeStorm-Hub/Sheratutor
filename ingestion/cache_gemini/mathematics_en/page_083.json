@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 83,
+  "pdf_page_no": 88,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Definition 2 (negative index). $a^{-n} = \\frac{1}{a^n}, (a \\neq 0, n \\in N)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "For all integer indices $m$ and $n$ the definition $\\frac{a^m}{a^n} = a^{m-n}$ holds true. Observe, $\\frac{a^n}{a^n} = a^{n-n} = a^0$. But $\\frac{a^n}{a^n} = \\frac{a \\times a \\times a \\times \\dots \\times a \\text{ (n times)}}{a \\times a \\times a \\times \\dots \\times a \\text{ (n times)}} = 1$. $\\therefore a^0 = 1$ and $\\frac{1}{a^n} = \\frac{a^0}{a^n} = a^{0-n} = a^{-n}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. Find the values: 1) $\\frac{5^2}{5^3}$ 2) $\\left(\\frac{2}{3}\\right)^5 \\times \\left(\\frac{2}{3}\\right)^{-5}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: 1) $\\frac{5^2}{5^3} = 5^{2-3} = 5^{-1} = \\frac{1}{5^1} = \\frac{1}{5}$ 2) $\\left(\\frac{2}{3}\\right)^5 \\times \\left(\\frac{2}{3}\\right)^{-5} = \\left(\\frac{2}{3}\\right)^{5-5} = \\left(\\frac{2}{3}\\right)^0 = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. Simplify: 1) $\\frac{5^4 \\times 8 \\times 16}{2^5 \\times 125}$ 2) $\\frac{3 \\cdot 2^n - 4 \\cdot 2^{n-2}}{2^n - 2^{n-1}}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: 1) $\\frac{5^4 \\times 8 \\times 16}{2^5 \\times 125} = \\frac{5^4 \\times 2^3 \\times 2^4}{2^5 \\times 5^3} = \\frac{5^4 \\times 2^{3+4}}{5^3 \\times 2^5} = \\frac{5^4}{5^3} \\times \\frac{2^7}{2^5} = 5^{4-3} \\times 2^{7-5} = 5^1 \\times 2^2 = 5 \\times 4 = 20$ 2) $\\frac{3 \\cdot 2^n - 4 \\cdot 2^{n-2}}{2^n - 2^{n-1}} = \\frac{3 \\cdot 2^n - 2^2 \\cdot 2^{n-2}}{2^n - 2^n \\cdot 2^{-1}} = \\frac{3 \\cdot 2^n - 2^{2+n-2}}{2^n - 2^n \\cdot \\frac{1}{2}} = \\frac{3 \\cdot 2^n - 2^n}{(1 - \\frac{1}{2}) \\cdot 2^n} = \\frac{(3-1) \\cdot 2^n}{\\frac{1}{2} \\cdot 2^n} = \\frac{2 \\cdot 2^n}{\\frac{1}{2} \\cdot 2^n} = 2 \\cdot 2 = 4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. Prove that, $(a^p)^{q-r} \\cdot (a^q)^{r-p} \\cdot (a^r)^{p-q} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: $(a^p)^{q-r} \\cdot (a^q)^{r-p} \\cdot (a^r)^{p-q} = a^{p(q-r)} \\cdot a^{q(r-p)} \\cdot a^{r(p-q)} [\\because (a^m)^n = a^{mn}] = a^{pq-pr} \\cdot a^{qr-pq} \\cdot a^{pr-qr} = a^{pq-pr+qr-pq+pr-qr} = a^0 = 1$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

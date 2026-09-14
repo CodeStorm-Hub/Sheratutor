@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 23,
+  "pdf_page_no": 28,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Within a few moments, you will see a white smoke filling up the tube. It is ammonium chloride ($\text{NH}_4\text{Cl}$), produced in the reaction between hydrogen chloride gas and ammonia gas. The white smoke will not be positioned in the centre of the tube; it will be nearer to the hydrochloric acid solution. That means at a same given time, hydrogen chloride gas has gone a lesser distance than ammonia. That also proves that ammonia gas spreads faster than hydrogen chloride gas because of its faster rate of diffusion. The reason behind it is the difference in their atomic masses. A gas with lesser atomic mass will have a better diffusion rate. Here ammonia gas (atomic mass 17) has spread faster than hydrogen chloride gas (atomic mass 36.5).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Atomic mass of $\text{H}_2$, $\text{He}$, $\text{N}_2$, $\text{O}_2$ and $\text{CO}_2$ gases are 2, 4, 28, 32 and 44 respectively. Since hydrogen is the gas with the least atomic mass, its rate of diffusion is faster than others while carbon dioxide's being the most, is the slowest.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.04: Diffusion of two gases.",
+      "figure_no": "2.04",
+      "box_2d": [
+        472,
+        293,
+        631,
+        808
+      ],
+      "description": "Experimental setup showing a glass tube with wet cotton with HCl solution on one end and wet cotton with NH4OH solution on the other end, meeting at a ring of white smoke of NH4Cl closer to the HCl end.",
+      "reading_order_anchor": "Within a few moments, you will see a white smoke filling up the tube."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 47,
+  "pdf_page_no": 52,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Acceleration,\n\n$$a = \\frac{v - u}{t} = \\frac{0 - 26.8\\text{ m/s}}{300\\text{ s}} = -0.089\\text{ m/s}^2$$\n\nThus the acceleration of the car $-0.089\\text{ m/s}^2$ or deceleration $0.089\\text{ m/s}^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** The velocity of a bullet is $1.5\\text{ km/s}$. It has penetrated $10\\text{ cm}$ of a wall. What is the deceleration of the bullet?\n\n**Answer:** The only way to solve this problem is to use the formula\n\n$$v^2 = u^2 - 2as$$\n\nFinal velocity, $v = 0$\n\n$$0 = (1.5 \\times 1000)^2 - 2a\\left(\\frac{10}{100}\\right)$$\n\n$$a = \\frac{(1.5 \\times 1000)^2}{0.2} = 11,250,000\\text{ m/s}^2$$\n\nDeceleration: $11,250,000\\text{ m/s}^2$ (or acceleration: $-11,250,000\\text{ m/s}^2$)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.8",
+      "section_title": "Laws of Falling Bodies",
+      "chunk_type": "theory",
+      "content_markdown": "We have already mentioned that an amazing example of uniform acceleration is acceleration due to gravity $g$. Due to its effect an object falls downward when it is released from above the earth surface. Observing these types of falling bodies Galileo invented three laws. The laws can be used in case of bodies falling freely. The laws are as follows:\n\n**First law:** All bodies falling from rest and from the same height without any resistance traverse equal distance in the same time.\n\n**Second law:** The velocity ($v$), acquired by a freely falling body from rest in a given time ($t$) is directly proportional to that time. i.e. $v \\propto t$\n\n**Third law:** The distance ($h$) traversed by a freely falling body from rest in a given time ($t$) is directly proportional to the square of the given time. i.e. $h \\propto t^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

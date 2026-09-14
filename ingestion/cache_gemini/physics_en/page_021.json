@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 21,
+  "pdf_page_no": 26,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Instead of the vernier scale we can use a special type of scale called a screw gauge to measure lengths. In a screw gauge when the screw (Figure 1.07) rotates, the scale moves forwards or backwards, the threads of the screw are kept very fine. After a complete rotation of the screw, the screw with the attached scale may advanced by $1\\text{ mm}$. This displacement of the screw is called the pitch of the screw. The circular part of the instrument, by the rotation of which the screw moves forwards or backwards is divided into $100$ equal parts. For the rotation of only one division of the circular scale, the screw advances by $\\frac{1}{100}$ of the pitch.\n\nTherefore, with this scale up to $\\frac{1}{100}\\text{ mm} = 0.01\\text{ mm}$ of length measurement is possible. This is called the least count of the screw gauge.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now-a-days instead of the vernier scale, attached dials or digital slide calipers are available by which lengths can be measured accurately.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.06: Vernier scale displaced by one, two and three divisions",
+      "figure_no": "1.06",
+      "box_2d": [
+        97,
+        300,
+        405,
+        705
+      ],
+      "description": "Diagram showing three different positions of a vernier scale displaced by one, two, and three divisions relative to the main scale.",
+      "reading_order_anchor": "Instead of the vernier scale we can use a special type of scale..."
+    },
+    {
+      "caption": "Figure 1.07: A slide calipers with vernier scale and a screw gauge",
+      "figure_no": "1.07",
+      "box_2d": [
+        738,
+        137,
+        856,
+        857
+      ],
+      "description": "Photographs of a slide calipers with vernier scale on the left and a screw gauge on the right.",
+      "reading_order_anchor": "Therefore, with this scale up to 1/100 mm = 0.01 mm of length measurement is possible."
+    }
+  ]
+}

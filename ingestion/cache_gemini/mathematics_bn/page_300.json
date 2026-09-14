@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 300,
+  "pdf_page_no": 305,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) $\\triangle ABC$ এর ক্ষেত্রফল $= \\frac{1}{2} BC \\cdot AB = \\frac{1}{2} AC \\cdot BD$\n\n$\\frac{1}{2} AC \\cdot BD = \\frac{1}{2} BC \\cdot AB$\n\n$\\therefore 25 \\times BD = 20 \\times 15$\n\n$\\therefore BD = 12$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "গ) $\\triangle ABD$ সমকোণী থেকে পাই\n\n$AD^2 + BD^2 = AB^2$\n\nবা, $AD^2 + 12^2 = 15^2$\n\nবা, $AD^2 = 225 - 144 = 81$\n\n$\\therefore AD = 9$ এবং $CD = AC - AD = 25 - 9 = 16$\n\nঅতএব, $\\triangle ABD$ ও $\\triangle BCD$ এর ক্ষেত্রফলদ্বয়ের অনুপাত,\n\n$\\frac{\\triangle ABD}{\\triangle BCD} = \\frac{\\frac{1}{2} BD \\cdot AD}{\\frac{1}{2} BD \\cdot CD} = \\frac{9}{16}$\n\n$\\triangle ABD : \\triangle BCD = 9 : 16$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.1",
+      "section_title": "অনুশীলনী ১৬.১",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. একটি সমকোণী ত্রিভুজের অতিভুজ $25$ মিটার। এর অপর বাহুদ্বয়ের একটি বাহু অপরটির $\\frac{3}{4}$ অংশ হলে, বাহু দুইটির দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $20$ মিটার লম্বা একটি মই দেওয়ালের সাথে খাড়াভাবে আছে। মইটির গোড়া দেওয়াল থেকে কত দূরে সরালে ওপরের প্রান্ত $4$ মিটার নিচে নামবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. একটি সমদ্বিবাহু ত্রিভুজের পরিসীমা $16$ মিটার। এর সমান সমান বাহুর দৈর্ঘ্য ভূমির $\\frac{5}{6}$ অংশ হলে, ত্রিভুজটির ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. একটি ত্রিভুজের দুইটি বাহুর দৈর্ঘ্য $25$ সে.মি., $27$ সে.মি. এবং পরিসীমা $84$ সে.মি.। ত্রিভুজটির ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. একটি সমবাহু ত্রিভুজের প্রত্যেক বাহুর দৈর্ঘ্য $2$ মিটার বাড়ালে এর ক্ষেত্রফল $6\\sqrt{3}$ বর্গমিটার বেড়ে যায়। ত্রিভুজটির বাহুর দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

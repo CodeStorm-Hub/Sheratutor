@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 40,
+  "pdf_page_no": 45,
+  "chapter_no": 2,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "যেহেতু $8 \\notin A$, কাজেই $(7,8) \\notin R$\n$\\therefore R = \\{(4,5), (5,6), (6,7)\\}$\nডোম $R = \\{4,5,6\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "অনুশীলনী ২.২",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. ৪ এর গুণনীয়ক সেট কোনটি?\nক) $\\{8, 16, 24, \\dots\\}$ খ) $\\{1, 2, 4, 8\\}$\nগ) $\\{2, 4, 8\\}$ ঘ) $\\{1, 2\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. সেট $C$ হতে সেট $B$ এ একটি সম্পর্ক $R$ হলে নিচের কোনটি সঠিক?\nক) $R \\subset C$ খ) $R \\subset B$ গ) $R \\subseteq C \\times B$ ঘ) $C \\times B \\subseteq R$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $A = \\{1, 2\\}, B = \\{2, 5\\}$ হলে $P(A \\cap B)$ এর সদস্য সংখ্যা নিচের কোনটি?\nক) $1$ খ) $2$ গ) $3$ ঘ) $8$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. নিচের কোনটি $\\{x \\in N : 13 < x < 17$ এবং $x$ মৌলিক সংখ্যা$\\}$ সেটটিকে তালিকা পদ্ধতিতে প্রকাশ করে?\nক) $\\emptyset$ খ) $\\{0\\}$ গ) $\\{\\emptyset\\}$ ঘ) $\\{13, 17\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$৫. A \\cup B = \\{a, b, c\\}$ হলে\n(i) $A = \\{a, b\\}, B = \\{a, b, c\\}$\n(ii) $A = \\{a, b, c\\}, B = \\{b, c\\}$\n(iii) $A = \\{a, b\\}, B = \\{c\\}$\nউপর্যুক্ত তথ্যের আলোকে নিচের কোনটি সঠিক?\nক) $i$ খ) $ii$ গ) $i$ ও $ii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $A$ ও $B$ দুইটি সসীম সেটের জন্য\n(i) $A \\times B = \\{(x, y) : x \\in A$ এবং $y \\in B\\}$\n(ii) $n(A) = a, n(B) = b$ হলে $n(A \\times B) = ab$\n(iii) $A \\times B$ এর প্রতিটি সদস্য একটি ক্রমজোড়।\nউপর্যুক্ত তথ্যের আলোকে নিচের কোনটি সঠিক?\nক) $i$ ও $ii$ খ) $i$ ও $iii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 287,
+  "pdf_page_no": 292,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": "10.6",
+      "section_title": "Electric Potential",
+      "chunk_type": "theory",
+      "content_markdown": "We know that in an electric field $\\vec{E}$, a charge $q$ experiences a force $F=qE$ when brought close to another small positive charge $q_0$, it experiences a repulsive force. Therefore, to bring a test charge $q$ from a distance $r_i$ along a straight line, work has to be done against the repulsive force. The closer the charge $q_0$ is brought to charge $q$, the greater the repulsive force it will feel, and thus more work must be done. According to Coulomb's law, if the distance between charges $q$ and $q_0$ is infinite, there will be no force acting between them.\n\nIf work $W$ is done in bringing an extremely small positive test charge $q_0$, at constant velocity, from an infinite distance to a distance $r$ from the charge $q$, then the work done per unit test charge is called the electric potential $V$ of charge $q$ at that point. The potential is expressed as:\n\n$$V = V(r) = \\frac{W}{q}$$\n\nFor a point charge $q$, using Coulomb's law, it can be shown that\n\n$$V(r) = k \\frac{q}{r}$$\n\nElectric potential is a scalar quantity. The unit of measurement in the SI System of Units is the Volt (V).\n\nIf the work done in bringing $1\\text{ C}$ positive charge to a point from an infinite distance is $1\\text{ J}$, then the potential at that point is $1\\text{V}$ :\n\n$$1\\text{ Volt (V)} = \\frac{1\\text{ J}}{1\\text{ C}} = \\text{JC}^{-1}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** What will be the state of the potential around a positive and a negative charge?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

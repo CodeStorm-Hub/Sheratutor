@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 10,
+  "pdf_page_no": 15,
+  "chapter_no": 1,
+  "chapter_title": "Concepts of Chemistry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "how such kind of an experiment was carried out by someone else and what result it did yield. Suppose, you have learned that another chemical compound calcium oxide, when dissolved in water, produces heat. You will also be able to learn what kind of apparatus, chemicals and steps were followed in this experiment. That will give you an idea about what things you will require to conduct the test yourself. Besides, you will have an idea about the probable result- in this case, if you dissolve ammonium chloride in water, heat will be produced.\n\nAgain, you will be able to decide what kind of materials you are going to use and what will be the steps of the experiment. You came to know that you would need a beaker, water, ammonium chloride, thermometer, glass rod, balance etc. First you will take water in the beaker. You will record the temperature of the water in the beaker with the thermometer. Then, you will weigh ammonium chloride using the balance and mix and dissolve that with the glass rod in the water, a number of times. Each time, you need to check the temperature of water. This is the procedure of your experiment. Now you can start your experiment.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Table 1.03: Dissolving ammonium chloride in water.\n\n| Quantity of dissolved ammonium chloride in water of beaker | Temperature of the solution |\n|---|---|\n| 0g (nothing dissolved) | $25^{\\circ}\\text{C}$ |\n| 5g | $20^{\\circ}\\text{C}$ |\n| 10g | $15^{\\circ}\\text{C}$ |\n| 15g | $10^{\\circ}\\text{C}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Take $250\\text{ mL}$ water in the beaker and check the temperature. Suppose, the present temperature is $25^{\\circ}\\text{C}$. Record it in your notebook. Now, with the help of the balance, weigh $5\\text{ g}$ ammonium chloride and mix it in the water. Use the glass rod to stir so that it gets dissolved. As soon as the chemical is dissolved, measure and record the temperature. Now the temperature is $20^{\\circ}\\text{C}$. Add, mix and dissolve another $5\\text{ g}$ of ammonium chloride in the beaker. See what the temperature is with $10\\text{ g}$ chemical in the water. Follow the same procedure again. Now the beaker's water has $15\\text{ g}$ of dissolved ammonium chloride and let's suppose the temperature is $10^{\\circ}\\text{C}$. Record the data in your notebook.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,135 @@
+{
+  "printed_page_no": 123,
+  "pdf_page_no": 128,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "theory",
+      "content_markdown": "## Exercise\n\n### General Questions",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Why is the work done by frictional force is always negative?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. If a spring is cut into two pieces will the spring constant $k$ of the pieces increase or decrease?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. To keep the earth dynamic which one is necessary? Energy or power?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. Can mass be considered as energy?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. If velocity is increased by $1\\%$, what will be the percentage increase of kinetic energy?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "6. A match stick is rubbed with its box with a force of $5\\text{ N}$. The stick is dragged $5\\text{ cm}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is the energy used in rubbing?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) What is the power needed if it takes $0.5\\text{ s}$ to drag the stick?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "7. The reservoir of a hydro-electric project is $800\\text{ m}$ high from the sea level and the power station is $250\\text{ m}$ high. The water of a reservoir rotates a turbine coming through the pipe. There is $20 \\times 10^8$ liter water in the reservoir. If the mass of $1\\text{ liter}$ water is $1\\text{ kg}$, find the potential energy stored in the water of the reservoir.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "8. A boy of $40\\text{ kg}$ can reach the roof top using the stairs in $12\\text{ s}$. The number of steps of the stairs is $20$ and the height of each step is $20\\text{ cm}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is the weight of the boy?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) What is the height reached by the boy?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) What is the work done to reach the roof top?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) What is the power he uses to reach the roof?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "9. It is more advantageous to produce nuclear energy than the power station that uses fuel because no greenhouse gas is produced.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What are the other advantages of using nuclear energy?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) What are the disadvantages of using nuclear energy?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

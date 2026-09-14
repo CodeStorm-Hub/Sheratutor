@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 4,
+  "pdf_page_no": 9,
+  "chapter_no": 1,
+  "chapter_title": "Concepts of Chemistry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The ancient philosophers used to think a lot about structure of matters. The Greek philosopher Democritus declared in 380 BC that, a small particle will be available at a stage when we synthesize any metal. This particle is indivisible and he called it atom. Some Indian philosophers of the age also had similar views. But none of these ideas had a practical base. Aristotle opposed this idea. He along with another school of philosophers believed all matters are made of soil, fire, water and wind. That is why humans did not accept the idea of atom for quite a long time.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the mediaeval age, some Arab Muslim philosophers tried to make gold out of cheaper materials like copper, tin and lead. They also tried to get an elixir which would lengthen the life of humans. Though they failed in their original attempts yet they wrote down their experiments. Basically, these were the earliest attempts of systematic study of chemistry or experimentation. These mediaeval Arab experimentation with chemistry was called Alchemy and the philosophers were known as Alchemists. The term Alchemy comes from the Arabic word Al-Chimia which again takes its origin from Chemi or Kimi. The word chemistry comes from this chemi. Alchemist Jabir Al Hiyan is the first scientist to hold chemical experiment in a laboratory. That is why he is sometimes called the father of chemistry. Jabir al Hiyan believed all matters are composed of four components- soil, fire, water and wind. Therefore, although experimented, Jabir was not very clear about the mysteries of chemistry. Scientists including Antony Lavorsiere, Robert Boyle, Sir Francis Bacon and John Dalton are the first school",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 1.01: Antony Lavorsiere, Robert Boyle, Sir Francis Bacon and John Dalton.",
+      "figure_no": "1.01",
+      "box_2d": [
+        324,
+        110,
+        526,
+        880
+      ],
+      "description": "Portraits of four historical scientists: Antony Lavoisier, Robert Boyle, Sir Francis Bacon, and John Dalton.",
+      "reading_order_anchor": "Scientists including Antony Lavorsiere, Robert Boyle, Sir Francis Bacon and John Dalton are the first school"
+    }
+  ]
+}

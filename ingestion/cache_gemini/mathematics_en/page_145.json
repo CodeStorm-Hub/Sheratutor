@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 145,
+  "pdf_page_no": 150,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "20. In $\\triangle ABC$, $D$ and $E$ are the mid points of $AB$ and $AC$ respectively and bisectors of $\\angle B$ and $\\angle C$ intersect at point $O$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Express the information of the stem through figure.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Prove that, $DE \\parallel BC$ and $DE = \\frac{1}{2}BC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Prove that, $\\angle BOC = 90^\\circ + \\frac{1}{2}\\angle A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "21. Prove that, bisector of the vertical angle of an isosceles triangle bisects the base and perpendicular to base.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "22. Prove that, sum of the three medians of a triangle is less than the perimeter of the triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "23. An industrious father called upon his only son and said that he hid gold in a nearby forest which he bought with his earned money. When the son asked about the position of the gold, he informed him that there were two similar trees $A$ and $B$ and a stone $S$. After reaching from $S$ to $A$, he would have to go perpendicularly the same distance to find the point $C$. Again coming from $S$ to $B$, he would have to travel the same distance perpendicularly to find the point $D$. Then he would find the gold at the midpoint of the line $CD$. The son found the trees $A$ and $B$ but unfortunately did not find $S$. Will the son able to find the gold? If so, then how?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

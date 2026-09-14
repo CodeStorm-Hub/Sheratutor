@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 6,
+  "pdf_page_no": 11,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "which is a perfect square. Therefore, when 1 is added to the product of any four consecutive natural numbers, this becomes a perfect square.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1",
+      "section_title": "Decimal Fractions",
+      "chunk_type": "theory",
+      "content_markdown": "Each real number can be expressed in decimal fractions. For example, $2 = 2.0$, $\\frac{2}{5} = 0.4$, $\\frac{1}{3} = 0.333...$ etc. Decimal fractions are of three types, namely: finite, repeated and infinite decimal fractions.\n\n**Finite decimal fractions:** In any finite decimal fraction there is only a finite numbers of digits after the decimal point. For example, $0.12$, $1.023$, $7.832$, $54.67$, ... etc are finite decimal fractions.\n\n**Repeated decimal fractions:** In any repeating decimal fraction all or some digits on the right of decimal point come again and again. For example, $3.333...$, $2.454545...$, $5.12765765...$ etc are repeated decimal fractions.\n\n**Infinite decimal fractions:** In an infinite decimal fraction digits on the right of decimal point never terminate, i.e. the number of digits on the right of the decimal point will not be finite neither will its part appear repeatedly. For example, $1.4142135...$, $2.8284271...$ etc are Infinite decimal fractions.\n\n**Remarks:** Finite and repeating decimal fractions are rational numbers whereas infinite decimal numbers are irrational numbers. Value of any irrational number can be determined up to any desired decimal place. If numerator and denominator of a fraction can be represented by natural numbers, then the fraction is a rational number.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work: Classify the following numbers with reasons: $1.723$, $5.2333...$, $0.0025$, $2.1356124...$, $0.01050105...$ and $0.450123...$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Repeating decimal fractions",
+      "chunk_type": "worked_example",
+      "content_markdown": "$$6) 23(3.833$$\n$$18$$\n$$--$$\n$$50$$\n$$48$$\n$$--$$\n$$20$$\n$$18$$\n$$--$$\n$$20$$\n$$18$$\n$$--$$\n$$2$$\n\nExpress the fraction $\\frac{23}{6}$ into decimal fraction. Observe that when numerator was divided by denominator the division process could not be completed. Observe that in the result the digit $3$ appears over and over again. So $3.8333...$ is a repeating decimal number.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

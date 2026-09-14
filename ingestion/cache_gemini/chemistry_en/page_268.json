@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 268,
+  "pdf_page_no": 273,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this chapter our discussion will be limited to mainly aliphatic hydrocarbons.\n\n**Homologous Series:** The compounds, which have close similarities in their physical and chemical characteristics because of the same active radicals, belong to the same class. These compounds constitute the Homologous Series. All members of the same homologous series can be shown by a common formula. For instance, all compounds of the Alkane homologous series may be presented by $C_n H_{2n+2}$. Examples of different homologous series are given below:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Table 11.01: Homologous Series.",
+      "chunk_type": "table",
+      "content_markdown": "| Homologous Series | General Formula | Names and formulas of some initial members |\n| --- | --- | --- |\n| Alkane | $C_n H_{2n+2}$ | Methane ($CH_4$), Ethane ($C_2 H_6$), Propane ($C_3 H_8$), Butane ($C_4 H_{10}$) |\n| Alkene | $C_n H_{2n}$ | Ethene ($C_2 H_4$), Propene ($C_3 H_6$) |\n| Alkyne | $C_n H_{2n-2}$ | Ethyne ($C_2 H_2$), Propyne ($C_3 H_4$) |\n| Alcohol | $C_n H_{2n+1}OH$ | Methanol ($CH_3-OH$), Ethanol ($C_2 H_5 OH$) |\n| Aldehyde | $C_n H_{2n+1}CHO$ | Ethanal ($CH_3-CHO$), Propanal ($C_2 H_5 CHO$) |\n| Carboxylic Acid | $C_n H_{2n+1}COOH$ | Ethanoic Acid ($CH_3 COOH$), Propanoic Acid ($C_2 H_5 COOH$) |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.02: Aromatic compounds Benzene ($C_6 H_6$) and Naphthalene ($C_{10} H_8$).",
+      "figure_no": "11.02",
+      "box_2d": [
+        123,
+        273,
+        363,
+        727
+      ],
+      "description": "Chemical structural formulas and skeleton structures of Benzene and Naphthalene.",
+      "reading_order_anchor": "In this chapter our discussion will be limited to mainly aliphatic hydrocarbons."
+    }
+  ]
+}

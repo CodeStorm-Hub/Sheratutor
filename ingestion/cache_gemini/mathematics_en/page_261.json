@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 261,
+  "pdf_page_no": 266,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let the two straight lines intersect each other at $P$. It is seen from the picture that the coordinates of $P$ are $(\\frac{1}{2}, -3)$.\n\n$\\therefore$ solution: $(x, y) = (\\frac{1}{2}, -3)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 11. Solve with the help of graphs: $3 - \\frac{3}{2}x = 8 - 4x$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Given equation is $3 - \\frac{3}{2}x = 8 - 4x$\n\nLet, $y = 3 - \\frac{3}{2}x = 8 - 4x$\n\n$\\therefore y = 3 - \\frac{3}{2}x \\dots (1)$\n\nand $y = 8 - 4x \\dots (2)$\n\nTaking some values of $x$ in equation (1), we find the corresponding values of $y$ and make the adjoining table:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $-2$ | $0$ | $2$ |\n|---|---|---|---|\n| $y$ | $6$ | $3$ | $0$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ three points on the graph of the equation are: $(-2, 6), (0, 3), (2, 0)$.\n\nAgain, taking some values of $x$ in equation (2), we find the corresponding values of $y$ and make the adjoining table:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $1$ | $2$ | $3$ |\n|---|---|---|---|\n| $y$ | $4$ | $0$ | $-4$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ three points on the graph of the equation are: $(1, 4), (2, 0), (3, -4)$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

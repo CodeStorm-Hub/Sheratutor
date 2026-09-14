@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 315,
+  "pdf_page_no": 320,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$I_1 = \\frac{V}{R_1} = \\frac{2}{3} \\text{ A}$$  \n  \nThe current through resistor CF,  \n  \n$$I_2 = \\frac{V}{R_2} = \\frac{2}{6} \\text{ A} = \\frac{1}{3} \\text{ A}$$  \n  \nTotal current,  \n  \n$$I = I_1 + I_2 = \\frac{2}{3} \\text{ A} + \\frac{1}{3} \\text{ A} = 1 \\text{ A}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.4",
+      "section_title": "Equivalent Resistance: Series Circuit",
+      "chunk_type": "theory",
+      "content_markdown": "If there is more than one resistance in a circuit, we will see how these resistances can be considered as a single equivalent resistance. In figure 11.11 there are two resistances in the circuit, as C is connected to the ground so it's potential is zero and the potential of A is V. We don't know the potential of B, but we know that the same amount of electric current $I$ flows through $R_1$ and $R_2$.  \nTo keep it simple, we can say, the sum of two resistances is the total resistance $R$ and the current will be $I = V/R$, but let us prove this rather than writing it.  \nLet us assume the potential at point B is $V_B$, then for the first resistance $R_1$, we can write:  \n  \n$$I = \\frac{V - V_B}{R_1}$$  \n  \nAgain we can write for the second resistance $R_2$:  \n  \n$$I = \\frac{V_B - 0}{R_2} = \\frac{V_B}{R_2}$$  \n  \nTherefore,  \n  \n$$I = \\frac{V - V_B}{R_1} = \\frac{V_B}{R_2}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.11: Two resistances connected one after another in a circuit.",
+      "figure_no": "11.11",
+      "box_2d": [
+        409,
+        571,
+        602,
+        878
+      ],
+      "description": "Circuit diagram showing two resistors R1 and R2 connected in series with a voltage source V and connected to ground at C.",
+      "reading_order_anchor": "11.2.4 Equivalent Resistance: Series Circuit"
+    }
+  ]
+}

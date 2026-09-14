@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 238,
+  "pdf_page_no": 243,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Again, $(3x - 2y)^2 = (3x + 2y)^2 - 4 \\cdot 3x \\cdot 2y$ \n\nor, $(3x - 2y)^2 = (3x + 2y)^2 - 24xy$ \n\nor, $(3x - 2y)^2 = (700)^2 - 24 \\times 20000$ \n\nor, $(3x - 2y)^2 = 490000 - 480000$ \n\nor, $(3x - 2y)^2 = 10000$ \n\nor, $3x - 2y = 100 \\dots (2)$ \n\nBy subtracting (2) from (1) we get, \n\n$4y = 600$ or, $y = 150$ \n\n$\\therefore$ the breadth of the given land is $2y = 2 \\times 150 = 300$ metres.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

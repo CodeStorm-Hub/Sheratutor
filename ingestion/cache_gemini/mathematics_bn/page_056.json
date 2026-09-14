@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 56,
+  "pdf_page_no": 61,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$=(a^2 + 8b^2)^2 - (4ab)^2$$ $$=(a^2 + 8b^2 + 4ab)(a^2 + 8b^2 - 4ab)$$ $$=(a^2 + 4ab + 8b^2)(a^2 - 4ab + 8b^2)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "কাজ: উৎপাদকে বিশ্লেষণ কর:\nক) $abx^2 + acx^3 + adx^4$ খ) $xa^2 - 144xb^2$ গ) $x^2 - 2xy - 4y - 4$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সরল মধ্যপদ বিভক্তিকরণ: $x^2 + (a + b)x + ab = (x + a)(x + b)$ সূত্রটি ব্যবহার করে উৎপাদক নির্ণয় করা যায়। এ পদ্ধতিতে $x^2 + px + q$ আকারের বহুপদীর উৎপাদক নির্ণয় করা সম্ভব হয় যদি দুইটি সংখ্যা $a$ ও $b$ নির্ণয় করা যায় যেন, $a + b = p$ এবং $ab = q$ হয়। এজন্য $q$ এর দুইটি সচিহ্ন উৎপাদক নিতে হয় যাদের বীজগাণিতিক সমষ্টি $p$ হয়। $q > 0$ হলে, $a$ ও $b$ একই চিহ্নযুক্ত হবে এবং $q < 0$ হলে, $a$ ও $b$ বিপরীত চিহ্নযুক্ত হবে। উল্লেখ্য $p$ এবং $q$ পূর্ণসংখ্যা না-ও হতে পারে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৪. $x^2 + 12x + 35$ কে উৎপাদকে বিশ্লেষণ কর।\n\nসমাধান: $x^2 + 12x + 35 = x^2 + (5 + 7)x + 5 \\times 7 = (x + 5)(x + 7)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৫. $x^2 + x - 20$ কে উৎপাদকে বিশ্লেষণ কর।\n\nসমাধান: $x^2 + x - 20 = x^2 + (5 - 4)x + (5)(-4) = (x + 5)(x - 4)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "যৌগিক মধ্যপদ বিশ্লেষণ: $ax^2 + bx + c$ আকারের বহুপদীর মধ্যপদ বিভক্তিকরণ পদ্ধতিতে $ax^2 + bx + c = (rx + p)(sx + q)$ হবে যদি $ax^2 + bx + c = rsx^2 + (rq + sp)x + pq$ হয়। অর্থাৎ, $a = rs, b = rq + sp$ এবং $c = pq$ হয়। সুতরাং, $ac = rspq = (rq)(sp)$ এবং $b = rq + sp$। অতএব, $ax^2 + bx + c$ আকারের বহুপদীর উৎপাদক নির্ণয় করতে হলে $ac$, অর্থাৎ, $x^2$ এর সহগ এবং $x$ বর্জিত পদের গুণফলকে এমন দুইটি উৎপাদকে প্রকাশ করতে হবে, যাদের বীজগাণিতিক সমষ্টি $x$ এর সহগ $b$ এর সমান হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৬. $3x^2 - x - 14$ কে উৎপাদকে বিশ্লেষণ কর।\n\nসমাধান: $3x^2 - x - 14 = 3x^2 - 7x + 6x - 14$\n$= x(3x - 7) + 2(3x - 7) = (3x - 7)(x + 2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "কাজ: উৎপাদকে বিশ্লেষণ কর:\nক) $x^2 + x - 56$ খ) $16x^3 - 46x^2 + 15x$ গ) $12x^2 + 17x + 6$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ঘন আকার: একটি রাশিকে পূর্ণঘন আকারে প্রকাশ করেও উৎপাদক নির্ণয় করা যায়।\nউদাহরণ ২৭. $8x^3 + 36x^2y + 54xy^2 + 27y^3$ কে উৎপাদকে বিশ্লেষণ কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

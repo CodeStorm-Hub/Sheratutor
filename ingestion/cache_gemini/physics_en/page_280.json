@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 280,
+  "pdf_page_no": 285,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "constant $k$. This is the difference. That is, if two charges $q_1$ and $q_2$ are placed at a distance $r$, the force (Figure 10.09) working between them will be,\n\n$$F = k \\frac{q_1 q_2}{r^2}$$\n\nHere the unit of the two charges $q_1$ and $q_2$ is $\\text{C}$ and of distance (or $r$) is $\\text{m}$, so we may say, the unit of $k$ will be $\\text{Nm}^2/\\text{C}^2$, so that the unit of $F$ becomes $\\text{N}$.\nThe value of $k$:\n\n$$k = 9 \\times 10^9 \\text{ Nm}^2/\\text{C}^2$$\n\nCoulomb is the unit of charge. We will see in the next chapter that the flow of charge is electricity or current, and the unit of current is ampere. If one ampere current flows for one second, the amount of charge that flows is called one coulomb ($\\text{C}$).\n\nBut, the authentic way to understand the coulomb is to understand the amount of charge of an electron or proton. Its amount is:\n\nCharge of electron : $-1.6 \\times 10^{-19} \\text{ C}$\nCharge of proton : $+1.6 \\times 10^{-19} \\text{ C}$\n\nYou can see, if $q_1$ and $q_2$ both are positive or negative, then the value of $F$ is positive and they will repel one another. If one charge is positive and the other is negative, then the value of $F$ will be negative, which means the direction of the force is changed, that is, the charges will attract one another. We have seen this earlier and now the formula shows this too.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** A $+1 \\text{ C}$ charge and a $-1 \\text{ C}$ charge are placed at a distance of $10 \\text{ cm}$. How much force is acting between them?\n\n**Answer:** Two opposite charges will attract each other. The force acting between them: (Figure 10.10 a)\n\n$$F = k \\frac{q_1 q_2}{r^2}$$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

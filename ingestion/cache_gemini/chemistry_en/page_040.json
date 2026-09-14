@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 40,
+  "pdf_page_no": 45,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proton: Proton is one of the stable particles of an atom containing positive charge. The charge is $+1.60 \\times 10^{-19}\\text{ coulomb}$. It is expressed by $\\text{p}$. The mass of proton is $1.67 \\times 10^{-24}\\text{ g}$. The relative charge of proton is taken as $+1$ and relative mass is taken as $1$.\n\nThe characteristic properties of fundamental particles of atoms are presented in the following list.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Table 3.05: Fundamental Particles",
+      "chunk_type": "table",
+      "content_markdown": "| Name of Particle | Symbol | Actual Charge | Actual Mass | Relative Charge | Relative Mass |\n| :--- | :---: | :---: | :---: | :---: | :---: |\n| Electron | $\\text{e}$ | $-1.60 \\times 10^{-19}\\text{ coulomb}$ | $9.110 \\times 10^{-28}\\text{ g}$ | $-1$ | $0$ |\n| Proton | $\\text{p}$ | $+1.60 \\times 10^{-19}\\text{ coulomb}$ | $1.673 \\times 10^{-24}\\text{ g}$ | $+1$ | $1$ |\n| Neutron | $\\text{n}$ | $0$ | $1.675 \\times 10^{-24}\\text{ g}$ | $0$ | $1$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Neutron: Neutron is another stable particle of an atom containing no charge. Neutron prevails in atoms of all elements except hydrogen. Expressed by $\\text{n}$, a neutron has a mass slightly more than a proton. Its relative charge is $0$ and relative mass is $1$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.5.1",
+      "section_title": "Atomic Number",
+      "chunk_type": "theory",
+      "content_markdown": "Atomic number of an element is determined by the number of protons present in the nucleus of that element's atom. For example: an atom of Helium ($\\text{He}$) has two protons in its nucleus, so the atomic number of Helium is $2$. Again, an Oxygen atom has eight protons in its nucleus, so the atomic number of Oxygen is $8$. The atomic number denotes an atom. Therefore, the atomic number can also be called the ID number of an element. If the atomic number is $1$, we understand it is Hydrogen, if the atomic number is $2$, we understand it is Helium, if the atomic number is $9$, we understand it is Fluorine. Thus, atomic number is the permanent identity of an atom. Proton number or atomic number is expressed by $Z$. Since all atoms are charge neutral, so they contain the same number of electrons as is the number of protons in its nucleus.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

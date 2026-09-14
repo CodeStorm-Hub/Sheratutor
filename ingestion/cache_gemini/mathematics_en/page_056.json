@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 56,
+  "pdf_page_no": 61,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": "3.2",
+      "section_title": "Exercise 3.2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Find the cube with the help of the formulae:\n1) $2x^2 + 3y^2$ 2) $7m^2 - 2n$ 3) $2a - b - 3c$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Simplify:\n1) $(7x + 3b)^3 - (5x + 3b)^3 - 6x(7x + 3b)(5x + 3b)$\n2) $(a + b + c)^3 - (a - b - c)^3 - 6(b + c)\\{a^2 - (b + c)^2\\}$\n3) $(m + n)^6 - (m - n)^6 - 12mn(m^2 - n^2)^2$\n4) $(x + y)(x^2 - xy + y^2) + (y + z)(y^2 - yz + z^2) + (z + x)(z^2 - zx + x^2)$\n5) $(2x + 3y - 4z)^3 + (2x - 3y + 4z)^3 + 12x\\{4x^2 - (3y - 4z)^2\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. If $a - b = 5$ and $ab = 36$, what is the value of $a^3 - b^3$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. If $a^3 - b^3 = 513$ and $a - b = 3$, what is the value of $ab$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. If $x = 19$ and $y = -12$, find the value of $8x^3 + 36x^2y + 54xy^2 + 27y^3$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. If $a = 15$, what is the value of $8a^3 + 60a^2 + 150a + 130$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. If $a + b = m$, $a^2 + b^2 = n$ and $a^3 + b^3 = p^3$, show that, $m^3 + 2p^3 = 3mn$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. If $a + b = 3$ and $ab = 2$, find the value of (a) $a^2 - ab + b^2$ and (b) $a^3 + b^3$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. If $a - b = 5$ and $ab = 36$, find the value of (a) $a^2 + ab + b^2$ and (b) $a^3 - b^3$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. If $m + \\frac{1}{m} = a$, find the value of $m^3 + \\frac{1}{m^3}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. If $x - \\frac{1}{x} = p$, find the value of $x^3 - \\frac{1}{x^3}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. If $a - \\frac{1}{a} = 1$, show that, $a^3 - \\frac{1}{a^3} = 4$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. If $a + b + c = 0$, show that,\n1) $a^3 + b^3 + c^3 = 3abc$\n2) $\\frac{(b + c)^2}{3bc} + \\frac{(c + a)^2}{3ca} + \\frac{(a + b)^2}{3ab} = 1$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

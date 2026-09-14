@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 64,
+  "pdf_page_no": 69,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, putting $x = 1, -1$ we see that the value of $f(x)$ is not zero.\nBut, putting $x = 2$ we see that the value of $f(x)$ is not zero.\nHence, $f(2) = 2^3 - 2 - 6 = 8 - 2 - 6 = 0$\nTherefore, $x - 2$ is a factor of $f(x)$.\n$\\therefore f(x) = x^3 - x - 6$\n$= x^3 - 2x^2 + 2x^2 - 4x + 3x - 6$\n$= x^2(x - 2) + 2x(x - 2) + 3(x - 2)$\n$= (x - 2)(x^2 + 2x + 3)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 31.** Resolve into factors: $x^3 - 3xy^2 + 2y^3$ and $x^2 + xy - 2y^2$.\n\n**Solution:** Here, consider $x$ a variable and $y$ a constant.\nWe consider the given expression a polynomial of $x$.\nLet, $f(x) = x^3 - 3xy^2 + 2y^3$\nThen, $f(y) = y^3 - 3y \\cdot y^2 + 2y^3 = 3y^3 - 3y^3 = 0$\n$\\therefore (x - y)$ is a factor of $f(x)$.\nNow, $x^3 - 3xy^2 + 2y^3$\n$= x^3 - x^2y + x^2y - xy^2 - 2xy^2 + 2y^3$\n$= x^2(x - y) + xy(x - y) - 2y^2(x - y)$\n$= (x - y)(x^2 + xy - 2y^2)$\nAgain let, $g(x) = x^2 + xy - 2y^2$\n$\\therefore g(y) = y^2 + y^2 - 2y^2 = 0$\n$\\therefore (x - y)$ is a factor of $g(x)$.\n$\\therefore g(x) = x^2 + xy - 2y^2$\n$= x^2 - xy + 2xy - 2y^2$\n$= x(x - y) + 2y(x - y)$\n$= (x - y)(x + 2y)$\n$\\therefore x^3 - 3xy^2 + 2y^3 = (x - y)^2(x + 2y)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

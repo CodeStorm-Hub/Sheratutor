@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 141,
+  "pdf_page_no": 146,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $\\angle ACD + \\angle ACB + \\angle BCD = 2$ right angles\nor, $\\angle BCD + \\angle BCD = 2$ right angles\nor, $2\\angle BCD = 2$ right angles.\n$\\therefore \\angle BCD = 1$ right angle",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. $PQR$ is a triangle. $PA$, $QB$ and $RC$ are three medians which intersect at point $O$.\n\n1) Draw a figure based on the information.\n2) Prove that, $PQ + PR > QO + RO$\n3) Prove that, $PA + QB + RC < PQ + QR + PR$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2) From figure 1) it is to be proved that, $PQ + PR > QO + RO$\n\nProof: Any two sides of a triangle are greater than the third one.\nIn triangle $\\triangle PQB$, $PQ + PB > QB$\nAgain in triangle $\\triangle BOR$, $BR + BO > RO$\n$\\therefore PQ + PB + BR + BO > QB + RO$\nor, $PQ + PR + BO > QO + OB + RO$\n$\\therefore PQ + PR > QO + RO$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Triangle PQR with medians PA, QB, and RC intersecting at O",
+      "figure_no": "6.01",
+      "box_2d": [
+        485,
+        407,
+        615,
+        645
+      ],
+      "description": "A triangle PQR with three medians PA, QB, and RC intersecting at a central point O.",
+      "reading_order_anchor": "1)"
+    }
+  ]
+}

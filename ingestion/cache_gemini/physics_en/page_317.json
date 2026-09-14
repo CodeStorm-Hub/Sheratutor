@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 317,
+  "pdf_page_no": 322,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Current $I$ flows from the battery cell. This current goes to point B and splits into two parts $I_1$ and $I_2$ and flows through the resistances $R_1$ and $R_2$ respectively, then at point E the currents converge into $I$ and go back to the battery as $I$. We have already said that the current comes from the battery and flows through the circuit and then goes back to the battery. No electric current can be created or destroyed except this in a circuit. So\n\n$$I = I_1 + I_2$$\n\nNow we can find $I_1$ and $I_2$:\n\n$$I_1 = \\frac{V_B - V_E}{R_1} = \\frac{V - 0}{R_1} = \\frac{V}{R_1}$$\n\n$$I_2 = \\frac{V_C - V_D}{R_2} = \\frac{V - 0}{R_2} = \\frac{V}{R_2}$$\n\nTherefore,\n\n$$I = I_1 + I_2 = \\frac{V}{R_1} + \\frac{V}{R_2} = V \\left(\\frac{1}{R_1} + \\frac{1}{R_2}\\right)$$\n\nSo in this case also, we can define an equivalent resistance $R$, where\n\n$$I = \\frac{V}{R} \\quad \\text{and} \\quad \\frac{1}{R} = \\frac{1}{R_1} + \\frac{1}{R_2}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.13: Two parallel resistances are shown in a circuit.",
+      "figure_no": "11.13",
+      "box_2d": [
+        119,
+        526,
+        347,
+        897
+      ],
+      "description": "Circuit schematic showing two resistors R1 and R2 connected in parallel across a voltage source V.",
+      "reading_order_anchor": "Current I flows from the battery cell."
+    },
+    {
+      "caption": "Figure 11.14: Many parallel resistances or resistors can be imagined as a single equivalent resistance or resistor.",
+      "figure_no": "11.14",
+      "box_2d": [
+        752,
+        238,
+        868,
+        735
+      ],
+      "description": "Circuit diagram showing multiple resistors connected in parallel being represented as a single equivalent resistance R.",
+      "reading_order_anchor": "So in this case also, we can define an equivalent resistance R, where"
+    }
+  ]
+}

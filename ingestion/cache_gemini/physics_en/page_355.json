@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 355,
+  "pdf_page_no": 360,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "technology in the world, many people have started to face the bad effects of radioactivity. The nuclear reactions in a nuclear power plant produce serious radioactivity. Many radioactive wastes have high half life and can remain radioactive for lakhs of years. There are even incidents of radioactive wastes being spread into the surroundings due to accidents in nuclear power plants. Many people faced radioactivity in the accident of a submarine run by nuclear energy. The most devastating event took place in Hiroshima and Nagasaki due to nuclear bombs. Many people were exposed to radioactivity. So, many researchers have been started becoming concerned about radioactivity and the determination of the safe limit of radioactivity is also started. General people are now being warned about the effects of radioactivity (figure 13.02).",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2",
+      "section_title": "Development of Electronics",
+      "chunk_type": "theory",
+      "content_markdown": "Electronics has a greatest contribution in the development of the modern civilization and it is not an exaggeration by any means. The gradual development of electronics can be divided into three parts, the vacuum tube, transistor and integrated circuit.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2.1",
+      "section_title": "Vacuum Tube",
+      "chunk_type": "theory",
+      "content_markdown": "In 1883 Edison observed that in a light bulb, a current can flow through a vacuum space from the filament to a metal plate. This process is known as the Edison Effect. In 1904, John Flemming (on the basis of the Edison effect) first created a vacuum tube with two electrodes, which worked as a rectifier i.e., it converted an alternating current into a direct current. This vacuum tube is considered as the introduction to electronics. At that time the exchange of information was started by radio waves. Guglielmo Marconi needed such type of vacuum tube to control of the radio waves. (It is noted that Marconi was mentioned as the inventor of radio, but in recent times the contribution of Bengali scientist Jagadish Chandra Bose is also acknowledged.)\n\nIn 1906 Lee De Forest invented another vacuum tube by adding a third electrode, which is known by the name triode. This triode can control the flow of electricity and used as an amplifier.\n\nThe development of vacuum tubes take place first through telegraph",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

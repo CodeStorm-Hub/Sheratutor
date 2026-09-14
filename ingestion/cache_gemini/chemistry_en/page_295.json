@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 295,
+  "pdf_page_no": 300,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$C_{12}H_{26}O + H_{2}SO_{4} \\longrightarrow C_{12}H_{26}SO_{4} + H_{2}O$$$$C_{12}H_{26}SO_{4} + NaOH \\longrightarrow C_{12}H_{25}SO_{4}Na + H_{2}O$$Different types of materials are added to detergents in order to make it usable. Sodium Sulphate ($Na_{2}SO_{4}$) is added to detergent to give it the shape of powder.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Cleaning mechanism of soap and detergent",
+      "chunk_type": "theory",
+      "content_markdown": "The main work of detergent or soap is to remove oil and dust from clothes through washing with water. Oily substances come out from our body and stick to our clothes. Then dust come in contact with the oily substances and makes dirt.\n\nSoap ($R-COONa$) or detergent ($C_{12}H_{25}SO_{4}Na$) is a molecule of long chained carbon. In solution state, they dissociate into negatively charged soap ($R-COO^{-}$) or detergent ion ($C_{12}H_{25}SO_{4}^{-}$) and positively charged sodium ion ($Na^{+}$). There is negative charge at one end of soap or detergent ion. As this negatively charged end is attracted by water, this negative end is known as hydrophilic. The other end of soap or detergent ion dissolves in oil or grease and this end is known as hydrophobic.\n\nWhen soap or detergent gets comes in contact with oily or greasy dirt of clothes in the presence of water, the hydrophobic part is attracted by the oil or grease and dissolves in it. On the other hand hydrophilic part extends to the water layer. In this condition if clothes are rubbed or twisted, the particles of oily or greasy dirt are completely covered by the negatively charged ion of soap or detergent.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.02: Cleaning Mechanism with Soap or Detergent.",
+      "figure_no": "12.02",
+      "box_2d": [
+        386,
+        514,
+        695,
+        788
+      ],
+      "description": "Schematic diagram showing the cleaning mechanism of soap or detergent, where the hydrophobic end dissolves in oil droplets and the hydrophilic polar group extends into the surrounding water layer.",
+      "reading_order_anchor": "Cleaning mechanism of soap and detergent"
+    }
+  ]
+}

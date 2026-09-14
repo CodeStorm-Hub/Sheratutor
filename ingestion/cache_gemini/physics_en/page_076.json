@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 76,
+  "pdf_page_no": 81,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$ma \\propto F$$  \n\nBut we don’t want to express the law in proportional form, rather we want to write it as an equation.  \n\nIn that case, using a proportionality constant $k$, we can write  \n\n$$F = kma$$  \n\nIn case of Newton’s second law it is possible to create an amazing result. Since the term ‘force’ is not explained anywhere, (Newton’s first law gives the concept only) by using the second law this will be measured for the first time. So, we have to give a value for the constant. We can say, when Newton’s second law will be applied, if the proportionality constant is considered as 1, then the equation we will get is the measure of force. How easily a proportionality relation is converted into an equation.  \n\nTherefore, we can write Newton’s second law of motion as an equation. If the force is $F$ and the proportionality constant is considered as 1, then  \n\n$$F = ma$$  \n\nThat this small and simple equation can make a revolutionary change in the world of physics is difficult to believe.  \n\nUnit of force is Newton ($N$).  \n\nDimension of force is $[F] = MLT^{-2}$  \n\nWe should remember that Newton’s second law of motion is true not only for linear motion, but this is true for any type of motion. We have known about gravitational force, by using Newton’s second law, we will be able to explain the motion of the planets revolving around the sun due to the gravitational force. But in this book, we will limit the use of Newton’s second law only to linear motion.  \n\nIf force is applied on an object, then by using Newton’s second law, its acceleration can easily be determined. (If force is divided by mass, acceleration can be found). If acceleration is known, the velocity or distance travelled can be determined by using the laws of motion.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

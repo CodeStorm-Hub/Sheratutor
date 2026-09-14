@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 33,
+  "pdf_page_no": 38,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Rest and Motion",
+      "chunk_type": "theory",
+      "content_markdown": "When an object does not change its position with respect to time, then it is at rest. And when an object changes it position with time, then it is in motion.\n\nNow we need to explain the term 'position' properly. In our daily conversation we use the word 'position' in different ways, but in physics the word 'position' has a definite meaning. If you are asked, what is the position of your school and if your answer is 'Jhiltuli', your answer is correct but the position of your school remains unknown. If you reply, your school is 1 kilometer from the gate of your residence; the position of your school is still unknown. Though the position of the gate of your residence is known to us, yet we cannot tell exactly in which direction the school is situated at a distance of $1$ kilometer from the gate. But if you say the school is situated 1 kilometer east from the gate of your residence, only then we will know the exact position of your school. That is to know the position of the school; we have to know both the distance and the direction definitely. Not only this, this distance and direction has to be specified from the position of a reference point. In the case of your school the gate of your residence was the reference point or origin. Instead of your residence gate, the reference point might be a bus stop or a shopping mall. Then definitely both the position and the direction would have different values; but we can specify certainly the position with respect to the new reference point. That is, to specify the position of any object, it has to be mentioned with respect to a reference point. This reference point is not an absolute one; we can conveniently choose any point as reference point or origin.\n\nNow the question is, to specify the position of an object, is it necessary for the reference point or origin to be a static point? Let us think; in front of you a person is sitting still on a chair. If we consider the chair as the reference point or origin, we can firmly say, the position of your friend is not changing.\n\nBut if it happens that actually you are sitting in a moving train, what will it then be? A man outside of the train standing on the station will say, you and your friend are both in motion, nobody is at rest. Then whose statement is true? Your statement or of the man standing in the station? In fact, both are correct! The reason is- if the reference point or the origin moves at a uniform velocity, then we cannot tell firmly whether the reference point is moving at a uniform velocity or actually it is at rest and all other things are moving at uniform velocity in the",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,85 @@
+{
+  "printed_page_no": 160,
+  "pdf_page_no": 165,
+  "chapter_no": 8,
+  "chapter_title": "বৃত্ত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুসিদ্ধান্ত ৪. সমকোণী ত্রিভুজের অতিভুজকে ব্যাস ধরে বৃত্ত অঙ্কন করলে তা সমকৌণিক শীর্ষবিন্দু দিয়ে যাবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুসিদ্ধান্ত ৫. কোনো বৃত্তের অধিচাপে অন্তর্লিখিত কোণ সূক্ষ্মকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nপ্রমাণ কর যে, কোনো বৃত্তের উপচাপে অন্তর্লিখিত কোণ স্থূলকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": "অনুশীলনী ৮.২",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১. $O$ কেন্দ্রবিশিষ্ট কোনো বৃত্তে $ABCD$ একটি অন্তর্লিখিত চতুর্ভুজ। $AC, BD$ কর্ণদ্বয় $E$ বিন্দুতে ছেদ করলে প্রমাণ কর যে, $\\angle AOB + \\angle COD = 2\\angle AEB$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২. $O$ কেন্দ্রবিশিষ্ট বৃত্তে $ABCD$ একটি অন্তর্লিখিত চতুর্ভুজ। $\\angle ADB + \\angle BDC = $ এক সমকোণ। প্রমাণ কর যে, $A, O, C$ এক সরলরেখায় অবস্থিত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩. দেখাও যে, বৃত্তস্থ ট্রাপিজিয়ামের তির্যক বাহুদ্বয় পরস্পর সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৪. চিত্রে, $O$ বৃত্তের কেন্দ্র এবং $OB = 2.5$ সে.মি.\nক) $ABCD$ বৃত্তটির পরিধি নির্ণয় কর।\nখ) প্রমাণ কর যে, $\\angle BAD = \\frac{1}{2}\\angle BOD$\nগ) $AC$ ও $BD$ পরস্পর $E$ বিন্দুতে ছেদ করলে প্রমাণ কর যে, $\\angle AOB + \\angle COD = 2\\angle AEB$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৫. $ABCD$ বৃত্তে $AB$ ও $CD$ জ্যা দুইটি পরস্পর $E$ বিন্দুতে ছেদ করেছে। দেখাও যে, $\\triangle AED$ ও $\\triangle BEC$ সদৃশকোণী।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.3",
+      "section_title": "বৃত্তস্থ চতুর্ভুজ (Inscribed Quadrilaterals)",
+      "chunk_type": "theory",
+      "content_markdown": "বৃত্তীয় চতুর্ভুজ বা বৃত্তে অন্তর্লিখিত চতুর্ভুজ হলো এমন চতুর্ভুজ যার চারটি শীর্ষবিন্দু বৃত্তের উপর অবস্থিত। এ সকল চতুর্ভুজের বিশেষ কিছু ধর্ম রয়েছে। বিষয়টি অনুধাবনের জন্য নিচের কাজটি করি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৮.০১: বৃত্তস্থ চতুর্ভুজ",
+      "figure_no": "8.01",
+      "box_2d": [
+        535,
+        675,
+        683,
+        826
+      ],
+      "description": "একটি বৃত্তের ভেতরে অন্তর্লিখিত চতুর্ভুজ ABCD যার কর্ণদ্বয় AC এবং BD পরস্পর E বিন্দুতে ছেদ করেছে।",
+      "reading_order_anchor": "৪. চিত্রে, O বৃত্তের কেন্দ্র এবং OB = 2.5 সে.মি."
+    }
+  ]
+}

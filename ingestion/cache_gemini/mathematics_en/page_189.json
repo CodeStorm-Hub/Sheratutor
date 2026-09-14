@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 189,
+  "pdf_page_no": 194,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "angles $0^\\circ$ and $90^\\circ$.\n\n> prove the trigonometric identities.\n\n> apply the trigonometric identities.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Naming of sides of a right-angled triangle",
+      "chunk_type": "theory",
+      "content_markdown": "We know that, the sides of right-angle triangle are known as hypotenuse, base and height. This is successful for the horizontal position of triangle. Again, the naming of sides is based on the position of one of the two acute angles of right-angled triangle. As for example :\n\n1. '(hypotenuse)', the side of a right-angled triangle, which is the opposite side of the right angle.\n\n2. '(opposite side)', which is the direct opposite side of a given angle.\n\n3. '(adjacent side)', which is a line segment constituting the given angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "For the angle $\\angle PON$, $OP$ is the hypotenuse, $ON$ is the adjacent side and $PN$ is the opposite side. For the angle $\\angle OPN$, $OP$ is the hypotenuse, $PN$ is the adjacent side and $ON$ is the opposite side.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the geometric figure, the capital letters are used to indicate the vertices and small letters are used to indicate the sides of a triangle. We often use the Greek letters to indicate angle. Widely used six letters of Greek alphabet are :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| alpha $\\alpha$ | beta $\\beta$ | gamma $\\gamma$ | theta $\\theta$ | phi $\\phi$ | omega $\\omega$ |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| alpha | beta | gamma | theta | phi | omega |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Greek letter are used in geometry and trigonometry through all the great mathematician of ancient Greek.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. Indicate the hypotenuse, the adjacent side and the opposite side for the angle $\\theta$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Naming of sides of a right-angled triangle",
+      "figure_no": "9.01",
+      "box_2d": [
+        433,
+        336,
+        541,
+        658
+      ],
+      "description": "Two right-angled triangles showing the naming of sides based on the acute angle.",
+      "reading_order_anchor": "Naming of sides of a right-angled triangle"
+    }
+  ]
+}

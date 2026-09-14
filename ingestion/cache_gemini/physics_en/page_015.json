@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 15,
+  "pdf_page_no": 20,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Vibration frequency of $\\text{Cs}^{133}$ ($\\Delta \\nu_{\\text{cs}}$) | $9,192,631,770$ hertz |\n| --- | --- |\n| Boltzmann constant ($k_{\\text{B}}$) | $1.380649 \\times 10^{-23}$ joule/kelvin |\n| Avogadro constant ($N_{\\text{A}}$) | $6.02214076 \\times 10^{23}$ particles/mole |\n| Luminous Intensity ($K_{\\text{CD}}$) | $683$ lumens/watt |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "New definition of these units",
+      "chunk_type": "theory",
+      "content_markdown": "New definition of these units:\n\n**Second (s):** The time required to complete $9,192,631,770$ vibrations by Cesium-133 ($\\text{Cs}^{133}$) atom is called one second.\n\n**Meter (m):** In vacuum the distance travelled by light in $1/299,792,458$ second called one meter.\n\n**Kilogram (kg):** The mass which is obtained by dividing Plank's constant by $6.62607015 \\times 10^{-34}\\text{ m}^2\\text{/s}$ is called one kilogram.\n\n**Ampere (A):** Flow of $1/1.602176634 \\times 10^{-19}$ numbers of charge equivalent to charge of electron in one second is called one ampere.\n\n**Mole (Mol):** Amount of substance that contains $6.02214076 \\times 10^{23}$ particles (Avogadro's number) is called one mole.\n\n**Kelvin (K):** Amount of change of temperature with the change of $1.380649 \\times 10^{-23}$ joule heat is called one kelvin.\n\n**Candela (cd):** One candela is defined as the amount of $1/683$ watt luminous intensity which is emitted by a source of light vibrating $540 \\times 10^{12}$ cycle per second into one Steradian solid angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You should have a practical idea about how much is meant by one meter, what amount of mass is one kilogram, what time is one second, how much hot is one kelvin temperature, what amount of electric current is one ampere, what is meant by one mole substance or what amount of light is one candela! Now let us try to give you that idea. Not only do you have to know it, but also you have to feel it. In general it can be",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Table 1.04: New SI unit",
+      "figure_no": "1.04",
+      "box_2d": [
+        701,
+        570,
+        951,
+        898
+      ],
+      "description": "A circular diagram depicting the seven SI base units (kg, m, s, A, K, mol, cd) with their respective defining physical constants.",
+      "reading_order_anchor": "New definition of these units"
+    }
+  ]
+}

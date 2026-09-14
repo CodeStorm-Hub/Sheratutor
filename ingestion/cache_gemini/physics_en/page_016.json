@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 16,
+  "pdf_page_no": 21,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "said that:\n\n* The distance from the feet to the stomach of a person of normal height is nearly one meter.\n* The water contained in one liter bottle or the water kept in four glasses have a mass of nearly one $kg$.\n* The time required to say three words **'one thousand one'** is approximately one second.\n* If three mobile phones are charging at the same time, one ampere electric current is used. (a mobile is charged at nearly $5\\text{ V}$. So, current consumption will be $5\\text{ W}$. If lights, fans, refrigerators of a residence run at $220\\text{ V}$ and one ampere current is used, the power consumption will be $220\\text{ W}$!)\n* If we can feel the fever of anyone by hand, it can be said that his temperature has increased by one Kelvin.\n* It is difficult to understand a mole, we can say a large spoon filled with water contains one mole of water molecules. In one cup water, there are ten moles.\n* The light coming from a single candle can be said one candela.\n\nYou see that none of them are perfect measurements, but easy to realize. If you are habituated with this measurement, when in future you will calculate anything, then you will have a sense of proportion about it.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.5.2",
+      "section_title": "Prefix",
+      "chunk_type": "theory",
+      "content_markdown": "To study science or physics we have to measure different things. Sometimes we need to measure the length of a galaxy ($6 \\times 10^{24}\\text{ m}$), or sometimes we have to measure the radius of the nucleus ($1 \\times 10^{-15}\\text{ m}$). To measure this huge difference in the distance it is not wise to use the same type of numbers. So internationally some SI prefixes have been made. Due to this multiplier we will be able to express a large or small number by a small prefix. These prefixes are shown in Table 1.05. In our daily life we always use these prefixes. To express distance we say $1\\text{ kilometer}$ instead of $1000\\text{ meter}$. We say $10\\text{ milliliter}$ instead of one hundredth of a liter to express volume of water.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

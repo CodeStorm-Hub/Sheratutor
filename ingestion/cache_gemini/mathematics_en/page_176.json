@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 176,
+  "pdf_page_no": 181,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. The opposite angles of the quadrilateral $ABCD$ are supplementary to each other. If the line $AC$ is the bisector of $\\angle BAD$, prove that, $BC = CD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. $O$ is the centre of the circle with radius $2.5$ cm., $AB = 3$ cm and $BD$ is the bisector of $\\angle ADC$.\n1) Find the length of $AD$.\n2) Show that, $\\angle ADC + \\angle ABC = 180^\\circ$.\n3) Prove that, $AB = BC$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. If the vertical angles of two triangles standing on equal bases are supplementary, prove that their circum circles are equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. Prove that, the bisector of any angle of a cyclic quadrilateral and the exterior bisector of its opposite angle meet on the circumference of the circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Secant and Tangent of the circle",
+      "chunk_type": "theory",
+      "content_markdown": "Consider the relative position of a circle and a straight line in the plane. Three possible situations of the following given figures may arise in such a case:\n1) The circle and the straight line have no common points\n2) The straight line has cut the circle at two points\n3) The straight line has touched the circle at a point.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "A circle and a straight line in a plane may at best have two points of intersection. If a circle and a straight line in a plane have two points of intersection, the straight line is called a secant to the circle and if the point of intersection is one and only one, the straight line is called a tangent to the circle. In the latter case, the common point is called the point of contact of the tangent. In the above figure, the relative position of a circle and a straight line is shown.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Circle with points A, B, C, D and center O",
+      "figure_no": "8.01",
+      "box_2d": [
+        153,
+        673,
+        275,
+        838
+      ],
+      "description": "A circle with center O and quadrilateral ABCD inscribed within it.",
+      "reading_order_anchor": "5. O is the centre of the circle with radius 2.5 cm., AB = 3 cm and BD is the bisector of ∠ADC."
+    },
+    {
+      "caption": "Fig 8.02: Relative positions of a circle and a straight line",
+      "figure_no": "8.02",
+      "box_2d": [
+        663,
+        298,
+        771,
+        698
+      ],
+      "description": "Three diagrams showing a line and a circle: (a) no intersection, (b) secant line, (c) tangent line.",
+      "reading_order_anchor": "3) The straight line has touched the circle at a point."
+    }
+  ]
+}

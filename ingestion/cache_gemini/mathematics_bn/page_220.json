@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 220,
+  "pdf_page_no": 225,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) আমরা জানি, $1$ হেক্টর $= 10,000$ বর্গমিটার\n$\\therefore 12$ হেক্টর $= 12 \\times 10,000 = 120000$ বর্গমিটার",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) দেওয়া আছে, প্রদত্ত জমির দৈর্ঘ্য এবং প্রস্থের সঙ্গে অপর একটি জমির দৈর্ঘ্য এবং প্রস্থের অনুপাত যথাক্রমে $3:4$ এবং $2:3$।\n\nমনে করি, প্রদত্ত জমির দৈর্ঘ্য $3x$ মিটার এবং প্রস্থ $2y$ মিটার।\nসুতরাং, অপর জমির দৈর্ঘ্য $4x$ মিটার এবং প্রস্থ $3y$ মিটার।\n$\\therefore$ প্রদত্ত জমির ক্ষেত্রফল $= 3x \\cdot 2y = 6xy$ বর্গমিটার\nএবং অপর জমির ক্ষেত্রফল $= 4x \\cdot 3y = 12xy$ বর্গমিটার\nপ্রশ্নমতে, $6xy = 120000$ বা, $xy = 20000$\n$\\therefore$ অপর জমির ক্ষেত্রফল $= 12xy = 12 \\times 20000 = 240000$ বর্গমিটার",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) মনে করি, প্রদত্ত জমির দৈর্ঘ্য $3x$ মিটার এবং প্রস্থ $2y$ মিটার।\n(খ) থেকে পাই, $xy = 20000$\nপ্রশ্নমতে, $\\sqrt{(3x)^2 + (2y)^2} = 500$\nবা, $9x^2 + 4y^2 = 250000$\nবা, $(3x + 2y)^2 - 2 \\cdot 3x \\cdot 2y = 250000$\nবা, $(3x + 2y)^2 - 12xy = 250000$\nবা, $(3x + 2y)^2 - 12 \\times 20000 = 250000$\nবা, $(3x + 2y)^2 = 250000 + 240000$\nবা, $(3x + 2y)^2 = 490000$\nবা, $3x + 2y = 700 \\dots (1)$\nআবার, $(3x - 2y)^2 = (3x + 2y)^2 - 4 \\cdot 3x \\cdot 2y$\nবা, $(3x - 2y)^2 = (3x + 2y)^2 - 24xy$\nবা, $(3x - 2y)^2 = (700)^2 - 24 \\times 20000$\nবা, $(3x - 2y)^2 = 490000 - 480000$\nবা, $(3x - 2y)^2 = 10000$\nবা, $3x - 2y = 100 \\dots (2)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

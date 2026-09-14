@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 91,
+  "pdf_page_no": 96,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "most energy level. C atom at the center of $\\text{CH}_4$ has 4 pairs or 8 electrons at its outermost energy level. Not only that, besides the central atom, other atoms like Cl will have 4 pairs of electrons at its outermost energy level. Likewise F will have 4 pairs and H will have 1 pair of electrons at their outermost energy level.\n\nThis proves, all atoms are following the duet rule. Noteworthy that, elements 1-20 in the periodic table basically follow the rules of octet and duet.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.7",
+      "section_title": "Inert Gases and their Stability",
+      "chunk_type": "theory",
+      "content_markdown": "You have learned about the inert gases or Group-18 elements from the periodic table. Electronic configuration of these gases are presented again below for your convenience:\n\n$$\\begin{aligned}\n\\text{He}(2) &\\rightarrow 1\\text{s}^2 \\\\\n\\text{Ne}(10) &\\rightarrow 1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 \\\\\n\\text{Ar}(18) &\\rightarrow 1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^2 3\\text{p}^6 \\\\\n\\text{Kr}(36) &\\rightarrow 1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^2 3\\text{p}^6 3\\text{d}^{10} 4\\text{s}^2 4\\text{p}^6 \\\\\n\\text{Xe}(54) &\\rightarrow 1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^2 3\\text{p}^6 3\\text{d}^{10} 4\\text{s}^2 4\\text{p}^6 4\\text{d}^{10} 5\\text{s}^2 5\\text{p}^6 \\\\\n\\text{Rn}(86) &\\rightarrow 1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^2 3\\text{p}^6 3\\text{d}^{10} 4\\text{s}^2 4\\text{p}^6 4\\text{d}^{10} 4\\text{f}^{14} 5\\text{s}^2 5\\text{p}^6 5\\text{d}^{10} 6\\text{s}^2 6\\text{p}^6\n\\end{aligned}$$\n\nHelium has 2 electrons in its outermost energy level. Since it required this number of electrons to fulfill its outermost energy level, helium's electronic configuration is stable. Other inert gases have 8 electrons ($ns^2 np^6$) in their outermost energy level. Any element having 8 electrons in its outermost energy level has got the highest level of stability. Two electrons in the outermost energy level forms a duet while 8 electrons form an octet. Since these gases fulfill both the duet and octet condition, they are stable. This stability drives them not to donate any electron to other elements. They do not receive electrons from other elements either. Chemically, they lack affinity or become inert. No other element has this fulfilled electronic configuration at its outermost energy level. As a result, they are not that stable. They tend to fulfill the duet or octet rules at their outermost energy level. That is why, they donate, accept or share electrons with other atoms and create mutual bonds.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 153,
+  "pdf_page_no": 158,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": "7.4",
+      "section_title": "Combustion Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "4. **Combustion Reaction:** The process in which any compound or element is burnt in the presence of atmospheric oxygen and converts to oxides of its elements is called a combustion reaction. Usually heat is evolved in combustion reactions. This process also involves electron exchange. For example, natural gas or methane reacts with oxygen of air and produces carbon dioxide and water.\n\n$$\\text{CH}_4(\\text{g}) + 2\\text{O}_2(\\text{g}) \\longrightarrow \\text{CO}_2(\\text{g}) + 2\\text{H}_2\\text{O}(\\text{g}) + \\text{Heat}$$\n\nSimilarly, $\\text{S}$, $\\text{C}$, $\\text{Mg}$ and $\\text{H}_2$ produce their oxides and heat evolves when they are burnt.\n\n$$\\begin{aligned}\n\\text{S}(\\text{s}) + \\text{O}_2(\\text{g}) &\\longrightarrow \\text{SO}_2(\\text{g}) + \\text{Heat} \\\n\\text{C}(\\text{s}) + \\text{O}_2(\\text{g}) &\\longrightarrow \\text{CO}_2(\\text{g}) + \\text{Heat} \\\n2\\text{Mg}(\\text{s}) + \\text{O}_2(\\text{g}) &\\longrightarrow 2\\text{MgO}(\\text{g}) + \\text{Heat} \\\n2\\text{H}_2(\\text{g}) + \\text{O}_2(\\text{g}) &\\longrightarrow 2\\text{H}_2\\text{O}(\\text{g}) + \\text{Heat}\n\\end{aligned}$$\n\nIn all combustion reactions, oxygen accepts an electron donated by the other element or compound. Therefore, this kind of a reaction belongs to the oxidation-reduction type.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Non Redox",
+      "chunk_type": "theory",
+      "content_markdown": "**Non Redox**\n\nThere are some reactions where electron exchange does not occur. These reactions are called non-redox reactions. In this kind of reaction, there is no involvement of increase or decrease of oxidation number of any reactant because there is no electron exchange. Some of these kinds of reactions are discussed below: (1) Neutralization reaction (2) precipitation reaction etc.\n\n1. **Neutralization Reaction:** An acid and a base react with each other and neutralize into salt and water, in some reactions, which are known as neutralization reactions. They are also known as acid-base reactions. $\\text{NaOH}$ and $\\text{HCl}$, for example neutralize each other and convert to $\\text{NaCl}$ salt and water:\n\n$$\\text{HCl}(\\text{aq}) + \\text{NaOH}(\\text{aq}) \\longrightarrow \\text{NaCl}(\\text{aq}) + \\text{H}_2\\text{O}(\\text{l})$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: combustion of fuel.",
+      "figure_no": "7.01",
+      "box_2d": [
+        128,
+        624,
+        273,
+        876
+      ],
+      "description": "Flame of a burning gas burner showing combustion of fuel.",
+      "reading_order_anchor": "Combustion Reaction"
+    }
+  ]
+}

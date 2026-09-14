@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 228,
+  "pdf_page_no": 233,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \\frac{a^2 + b^2}{a^2 - b^2} = \\frac{ac + bd}{ac - bd}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. Solve: $$\\frac{1 - ax}{1 + ax} \\sqrt{\\frac{1 + bx}{1 - bx}} = 1$$ where $$0 < b < 2a < 2b$$\n\nSolution: Given that, $$\\frac{1 - ax}{1 + ax} \\sqrt{\\frac{1 + bx}{1 - bx}} = 1$$\n\nor, $$\\sqrt{\\frac{1 + bx}{1 - bx}} = \\frac{1 + ax}{1 - ax}$$\n\nor, $$\\frac{1 + bx}{1 - bx} = \\frac{(1 + ax)^2}{(1 - ax)^2}$$ [squaring both the sides]\n\nor, $$\\frac{1 + bx}{1 - bx} = \\frac{1 + 2ax + a^2x^2}{1 - 2ax + a^2x^2}$$\n\nor, $$\\frac{1 + bx + 1 - bx}{1 + bx - 1 + bx} = \\frac{1 + 2ax + a^2x^2 + 1 - 2ax + a^2x^2}{1 + 2ax + a^2x^2 - 1 + 2ax - a^2x^2}$$ [by componendo and dividendo]\n\nor, $$\\frac{2}{2bx} = \\frac{2(1 + a^2x^2)}{4ax}$$\n\nor, $$2ax = bx(1 + a^2x^2)$$\n\nor, $$x\\{2a - b(1 + a^2x^2)\\} = 0$$\n\n$$\\therefore x = 0$$\n\nAgain, $$2a - b(1 + a^2x^2) = 0$$\n\nor, $$b(1 + a^2x^2) = 2a$$\n\nor, $$1 + a^2x^2 = \\frac{2a}{b}$$\n\nor, $$a^2x^2 = \\frac{2a}{b} - 1$$\n\nor, $$x^2 = \\frac{1}{a^2} \\left(\\frac{2a}{b} - 1\\right)$$\n\n$$\\therefore x = \\pm \\frac{1}{a} \\sqrt{\\frac{2a}{b} - 1}$$\n\nThus, the required solution is $$x = 0, \\pm \\frac{1}{a} \\sqrt{\\frac{2a}{b} - 1}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

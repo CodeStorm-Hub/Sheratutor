@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 165,
+  "pdf_page_no": 170,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "10 $\\text{K}$. But if it is asked that what is the temperature of this room, the answer is $30\\text{ }^\\circ\\text{C}$, but in Kelvin scale it will be $(30+273.15)=303.15\\text{ K}$. You may think that the two scales are completely same but the difference between the readings of the two scales is $273.15\\text{ }^\\circ\\text{C}$, what is the reason behind this? The reason behind this is very wonderful. Generally, we may think that we can imagine any temperature i.e., it may be very high or very low, but actually it is not true. There is no problem in imagining a temperature as high as you wish but it is not possible to imagine a temperature as low as you wish. There is a lowest temperature and any temperature below this is not possible. Not only this, we can reach near this temperature but we can never reach at this temperature. This temperature is called the absolute zero temperature. On Celsius scale the value of this temperature is $-273.15\\text{ }^\\circ\\text{C}$. Therefore, in Kelvin scale its value is zero Kelvin. In other words it is said that the Kelvin scale has been made considering the absolute zero temperature as zero Kelvin.\n\nTo make any scale of temperature two certain temperatures (or fixed points) are needed. In the Kelvin scale one is absolute zero which is taken as zero degree. Another one is the triple point of water. At this temperature and at a certain pressure ($0.0060373\\text{ atm}$) ice, water and water vapour can exist together, so this temperature can be defined very accurately. In the Celsius scale its value is $0.01\\text{ }^\\circ\\text{C}$ and to make the similarity with Celsius scale its value is $273.16\\text{ }^\\circ$ in Kelvin scale.\n\nBesides, the Kelvin and Celsius scales there is an another scale called the Fahrenheit scale in which the temperature of fusion of ice and vaporization of water are $32\\text{ }^\\circ\\text{F}$ and $212\\text{ }^\\circ\\text{F}$ respectively. In the figure 6.02 three scales are shown for comparison, where $0\\text{ }^\\circ\\text{C}$ is equal to the temperature $273.15\\text{ K}$, sometimes we take this as $273\\text{ K}$ in our daily lives. This does not cause a major problem in our daily lives.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 6.02: Celsius, Kelvin and Fahrenheit scales of temperature",
+      "figure_no": "6.02",
+      "box_2d": [
+        210,
+        140,
+        502,
+        467
+      ],
+      "description": "Comparison diagram of Celsius, Kelvin, and Fahrenheit temperature scale thermometers showing $0\\text{ }^\\circ\\text{C}$, $273.15\\text{ K}$, and $32\\text{ }^\\circ\\text{F}$ reference points.",
+      "reading_order_anchor": "Besides, the Kelvin and Celsius scales there is an another scale called the Fahrenheit scale..."
+    }
+  ]
+}

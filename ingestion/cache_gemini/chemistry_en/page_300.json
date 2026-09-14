@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 300,
+  "pdf_page_no": 305,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "the glass, isopropyl alcohol dissolves the organic substances and removes them from the glass. Mask is to be used on the mouth and nose while cleaning glass with glass cleaner because the ammonium hydroxide of the glass cleaner may enter our nose and mouth.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Laboratory Production of Ammonia gas",
+      "chunk_type": "theory",
+      "content_markdown": "Ammonia gas is generally prepared in the laboratory in two ways.\n\nAmmonia is produced in the laboratory by mixing and heating ammonium chloride ($NH_4Cl$) and calcium oxide ($CaO$) in a test-tube.\n\n$$2NH_4Cl + CaO \\longrightarrow 2NH_3 + CaCl_2 + H_2O$$\n\nOr, Ammonia gas, calcium chloride and water are produced when ammonia chloride and slaked lime $Ca(OH)_2$ are mixed and heated in a test-tube.\n\n$$2NH_4Cl(s) + Ca(OH)_2 \\xrightarrow{\\Delta} 2NH_3 + CaCl_2 + 2H_2O$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2",
+      "section_title": "Industrial Production of Ammonia Gas",
+      "chunk_type": "theory",
+      "content_markdown": "Ammonia gas is produced by the Heber process in industries. Ammonia gas ($NH_3$) is produced in the Heber process by mixing $N_2$ and $H_2$ gases at the ratio of 1:3 and heating the mixture at 450-550°C temperature after adding Fe catalyst. (In 1:3 ratio, $N_2$ and $H_2$ refer to taking 3 times more $H_2$ than $N_2$). Some heat is also produced while producing ammonia gas. This is an exothermic reaction. In one side, $N_2$ and $H_2$ react and produce $NH_3$. On the other side, some $NH_3$ gases breaks up and turns into $N_2$ and $H_2$ gases. Two reversible arrows are used in this reaction.\n\n$$N_2(g) + 3H_2(g) \\underset{450^\\circ\\text{C}-550^\\circ\\text{C}}{\\overset{\\text{Fe}, 200-250\\text{ atm}}{\\rightleftharpoons}} 2NH_3 + 92 \\text{ kJ}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.04: Preparation of ammonia gas in the laboratory.",
+      "figure_no": "12.04",
+      "box_2d": [
+        192,
+        530,
+        393,
+        887
+      ],
+      "description": "Scientific apparatus setup showing a test tube being heated with a burner, connected via a delivery tube to another vessel for the laboratory preparation of ammonia gas.",
+      "reading_order_anchor": "Laboratory Production of Ammonia gas"
+    }
+  ]
+}

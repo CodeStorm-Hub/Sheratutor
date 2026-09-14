@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 210,
+  "pdf_page_no": 215,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "turn red. You may try the same test with $\\text{H}_2\\text{SO}_4$, $\\text{HNO}_3$ or any other acid. Even tamarind or pickles will give you the same result.\n\n**(iv) Reaction with Reactive Metals:** An Acid undergoes a reaction with reactive metals (\\text{K}, \\text{Na}, \\text{Mg} etc.) and produces salts of that metal and hydrogen as well. For example, $\\text{Mg}$ undergoes a reaction with sulfuric acid and produces $\\text{MgSO}_4$ and $\\text{H}_2$ gas.\n$$\\text{Mg} + \\text{H}_2\\text{SO}_4 \\longrightarrow \\text{MgSO}_4 + \\text{H}_2 \\uparrow$$\n\n**(v) Reaction between Dilute Acid and Metallic Carbonate:** Dilute acids undergo reactions with metallic carbonate to produce salt, water and carbon dioxide. For example, calcium carbonate and dilute $\\text{HCl}$ undergo a reaction and produce calcium chloride salt, water and carbon dioxide gas. The gas comes out in bubbles.\n$$\\text{CaCO}_3 + 2\\text{HCl} \\longrightarrow \\text{CaCl}_2 + \\text{H}_2\\text{O} + \\text{CO}_2 \\uparrow$$\n\nChannel this produced carbon dioxide in lime water, the lime water will turn turbid. The reaction is:\n$$\\text{Ca(OH)}_2 + \\text{CO}_2 \\longrightarrow \\text{CaCO}_3 + \\text{H}_2\\text{O}$$\n\nThe lime water looks turbid as insoluble $\\text{CaCO}_3$ is produced at this stage. This turbid lime water again turns opaque when extra $\\text{CO}_2$ is channeled in. At this stage $\\text{CO}_2$ and $\\text{H}_2\\text{O}$ undergo a reaction with $\\text{CaCO}_3$ and produce soluble calcium bicarbonate [$\\text{Ca(HCO}_3)_2$] which makes the water look opaque.\n$$\\text{CaCO}_3 + \\text{CO}_2 + \\text{H}_2\\text{O} \\longrightarrow \\text{Ca(HCO}_3)_2$$\n\nThe metallic carbonates undergo the similar kind of reactions with dilute sulfuric acid or dilute nitric acid and produce sulfate or nitrate salts.\n$$\\text{Na}_2\\text{CO}_3 + \\text{H}_2\\text{SO}_4 \\longrightarrow \\text{Na}_2\\text{SO}_4 + \\text{H}_2\\text{O} + \\text{CO}_2$$\n$$\\text{CaCO}_3 + 2\\text{HNO}_3 \\longrightarrow \\text{Ca(NO}_3)_2 + \\text{H}_2\\text{O} + \\text{CO}_2$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,119 @@
+{
+  "printed_page_no": 311,
+  "pdf_page_no": 316,
+  "chapter_no": 15,
+  "chapter_title": "Area Related Theorems",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We know that,\n\n1) If the length of the rectangular region $ABCD$, $AB = a$ units (say, metre), breadth $BC = b$ units (say, metre), the area of the region $ABCD = ab$ square units (say, square metres).\n\n2) If the length of a side of the square region $ABCD$, $AB = a$ units (say, metre), the area of the region $ABCD = a^2$ square units (say, square metres).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When the area of two regions are equal, the sign '=' is used between them. For example, in the figure the area of the rectangular region $ABCD$ = area of the triangular region $AED$, where $AB = BE$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "It should be mentioned that, if $\\triangle ABC$ and $\\triangle DEF$ are congruent, we write $\\triangle ABC \\cong \\triangle DEF$. In this case, the area of the triangular region $\\triangle ABC$ = area of the triangular region $\\triangle DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "But, two triangles are not necessarily congruent when they have equal areas. For example, in the figure, area of $\\triangle ABC$ = area of $\\triangle DBC$ but $\\triangle ABC$ and $\\triangle DBC$ are not congruent.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 36.** The areas of all triangular regions having same base and lying between the same pair of parallel lines are equal to one another.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let, the triangular regions $ABC$ and $DBC$ stand on the same base $BC$ and lie between the pair of parallel lines $BC$ and $AD$. It is required to prove that, $\\triangle$ region $ABC = \\triangle$ region $DBC$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** At the points $B$ and $C$ of the line segment $BC$, draw perpendiculars $BE$ and $CF$ respectively. They intersect the line $AD$ or extended $AD$ at the points $E$ and $F$ respectively. As a result a rectangular region $EBCF$ is formed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 15.01: Rectangular and square regions",
+      "figure_no": "15.01",
+      "box_2d": [
+        127,
+        737,
+        293,
+        846
+      ],
+      "description": "Diagrams showing a rectangle ABCD and a square ABCD with side lengths labeled.",
+      "reading_order_anchor": "We know that,"
+    },
+    {
+      "caption": "Fig 15.02: Area of rectangle and triangle",
+      "figure_no": "15.02",
+      "box_2d": [
+        318,
+        608,
+        410,
+        873
+      ],
+      "description": "Diagram showing a rectangle ABCD and a triangle AED sharing the same base AB.",
+      "reading_order_anchor": "When the area of two regions are equal"
+    },
+    {
+      "caption": "Fig 15.03: Congruent triangles",
+      "figure_no": "15.03",
+      "box_2d": [
+        438,
+        608,
+        528,
+        867
+      ],
+      "description": "Two congruent triangles ABC and DEF.",
+      "reading_order_anchor": "It should be mentioned that, if"
+    },
+    {
+      "caption": "Fig 15.04: Triangles with equal areas",
+      "figure_no": "15.04",
+      "box_2d": [
+        565,
+        642,
+        666,
+        833
+      ],
+      "description": "Two triangles ABC and DBC sharing the same base BC with equal areas but different shapes.",
+      "reading_order_anchor": "But, two triangles are not necessarily congruent"
+    },
+    {
+      "caption": "Fig 15.05: Theorem 36 construction",
+      "figure_no": "15.05",
+      "box_2d": [
+        738,
+        608,
+        853,
+        866
+      ],
+      "description": "Geometric construction for Theorem 36 showing triangles ABC and DBC between parallel lines.",
+      "reading_order_anchor": "Drawing: At the points B and C"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 166,
+  "pdf_page_no": 171,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": "6.2.1",
+      "section_title": "Relation among different scales:",
+      "chunk_type": "theory",
+      "content_markdown": "A definite temperature is expressed in the Celsius, Kelvin and Fahrenheit scale as $T_C$, $T_K$ and $T_F$ respectively. Then we can write:\n\n$$\\frac{T_C - 0}{100 - 0} = \\frac{T_K - 273.15}{373.15 - 273.15} = \\frac{T_F - 32}{212 - 32}$$\n\nOr,\n\n$$\\frac{T_C}{100} = \\frac{T_K - 273.15}{100} = \\frac{T_F - 32}{180}$$\n\nThe readings of Kelvin and Fahrenheit scales with respect to $T_C$ will be respectively:\n\n$$T_C = T_K - 273.15^\\circ$$\n$$T_C = \\frac{5}{9} (T_F - 32^\\circ)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** At which temperature are the readings in Celsius and Fahrenheit scales equal?\n\n**Answer:** The relation between Celsius and Fahrenheit scale is\n$$T_C = \\frac{5}{9} (T_F - 32^\\circ)$$\n$$9T_C = 5T_F - 5 \\times 32^\\circ$$\n\nIf $T_C$ and $T_F$ are equal then we get:\n$$4T_C = -5 \\times 32^\\circ = -160^\\circ$$\n$$T_C = -40^\\circ$$\n\nThat is, the temperature which shows $-40^\\circ\\text{ C}$ the same temperature also shows $-40^\\circ\\text{ F}$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** At which temperature are the readings in Kelvin and Fahrenheit scale equal?\n\n**Answer:** The relation between Kelvin and Fahrenheit scale is\n$$T_K - 273.15^\\circ = \\frac{5}{9} (T_F - 32^\\circ)$$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

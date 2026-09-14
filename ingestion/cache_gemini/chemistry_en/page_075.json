@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 75,
+  "pdf_page_no": 80,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Problem: Why is Ca called an alkaline earth metal?\n\nSolution: Different compounds of the metal Ca are available in soil which makes it an earth metal. Again, Hydroxide compound of Ca, $\\text{Ca(OH)}_2$ is an alkali. Therefore, it is also alkaline.\n\nProblem: Why is He an inert gas? Explain.\n\nSolution: He doesn't bond with the other elements of its group. Neither is it interested in bonding with other elements. So, Helium is an inert element. Since, at normal temperature, it remains in gaseous form, so we call it an inert gas.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "4.8",
+      "section_title": "Advantages of the Periodic Table",
+      "chunk_type": "theory",
+      "content_markdown": "The periodic table is a highly significant contribution of various chemists of different ages. Practice of chemistry is not possible without the modern periodic table. Some of the advantages of this chart are presented below.\n\na. **Simplifying Study of Chemistry:** We know that a total of 118 elements have been identified till 2016. If we consider only four physical properties (melting point, boiling point, density and state of matter) and four chemical properties (reaction with Oxygen, water, acid and alkali), then that turns out $118 \\times (4 + 4) = 944$ properties for these elements. It is impossible to remember all this information. The periodic table has simplified that task. If we know the common properties belonging to each group in the table, we will also be aware of the common properties of all these elements. Again, since we will be familiar with the common properties of elements, we will also know the properties of compounds made with them.\n\nb. **Detection of New Elements:** there were some blank cells in the periodic table even some decades ago. The periodic table gave us prior idea about the elements that will be accommodating those cells and their properties even",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

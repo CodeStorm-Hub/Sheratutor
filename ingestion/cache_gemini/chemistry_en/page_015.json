@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 15,
+  "pdf_page_no": 20,
+  "chapter_no": 1,
+  "chapter_title": "Concepts of Chemistry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. What does the following sign indicate?\n\na. explosive substance\nb. flammable substance\nc. radioactive substance\nd. flame of fire\n\n3. Which of the following signs indicate a radioactive substance?",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. Which of the following metals is melted and mixed with copper to produce bronze?\n\na. iron\nb. zinc\nc. tin\nd. lead",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Creative Questions\n\n1. \n\nFig A: Boy taking pills\n\nFig B: Spraying insecticide in the agriculture field",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is research?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. Why does ripe mango taste sweet?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "c. How is the figure A related to chemistry- explain.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "d. Which of the activities of the stem, when done in excess, is harmful for the environment- answer with reasons.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig A: Boy taking pills",
+      "figure_no": "1.01",
+      "box_2d": [
+        580,
+        169,
+        755,
+        345
+      ],
+      "description": "Illustration of a boy taking pills from a container.",
+      "reading_order_anchor": "Creative Questions"
+    },
+    {
+      "caption": "Fig B: Spraying insecticide in the agriculture field",
+      "figure_no": "1.02",
+      "box_2d": [
+        585,
+        360,
+        742,
+        668
+      ],
+      "description": "Photograph of a farmer spraying insecticide in an agricultural field.",
+      "reading_order_anchor": "Creative Questions"
+    }
+  ]
+}

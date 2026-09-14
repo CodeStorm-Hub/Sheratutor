@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 315,
+  "pdf_page_no": 320,
+  "chapter_no": 11,
+  "chapter_title": "চল তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$(V - V_B)R_2 = V_B R_1$$\n$$V_B(R_1 + R_2) = VR_2$$\n$$V_B = \\frac{R_2}{R_1 + R_2}V$$\n\nকালেই\n\n$$I = \\frac{V_B}{R_2} = \\frac{V}{R_1 + R_2}$$\n\nআমরা $R_1$ এবং $R_2$ এই দুটি রোধকে একটি রোধ $R = R_1 + R_2$ হিসেবে কল্পনা করতে পারি:\n\n$$I = \\frac{V}{R}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "যদি এখানে দুটি না হয়ে তিন-চারটি বা আরো বেশি রোধ থাকত (চিত্র 11.12) তাহলেও আমরা দেখাতে পারতাম যে সেগুলোকে সম্মিলিতভাবে একটি রোধ $R$ কল্পনা করতে পারি। এটাকে তুল্য রোধ বলে। অর্থাৎ যখন কোনো সার্কিটে $R_1, R_2, R_3..$ এ রকম অনেকগুলো রোধ পরপর থাকে (শ্রেণি বর্তনী) তখন তাদের তুল্য রোধ\n\n$$R = R_1 + R_2 + R_3 + ... + R_n$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.5",
+      "section_title": "তুল্য রোধ: সমান্তরাল বর্তনী সংযোগ (Equivalent Resistance: Parallel Connection)",
+      "chunk_type": "theory",
+      "content_markdown": "এবারে আমরা রোধগুলো পরপর না রেখে সমান্তরালভাবে রাখব (চিত্র 11.13)। এই সার্কিটে আমরা বিভিন্ন বিন্দুকে A, B, C, D, E এবং F নাম দিয়েছি। চিত্রটি দেখেই বোঝা যাচ্ছে D, E এবং F বিন্দু ভূমিসংলগ্ন হওয়ায় এই বিন্দুগুলোর বিভব শূন্য। কাজেই A, B এবং C বিন্দুতে বিভব V।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 11.12: অনেকগুলো পর্যায়ক্রম রোধ বা রেজিস্টরকে একটি তুল্য রোধ বা রেজিস্টর হিসেবে কল্পনা করা যায়।",
+      "figure_no": "11.12",
+      "box_2d": [
+        399,
+        157,
+        574,
+        822
+      ],
+      "description": "Circuit diagram showing multiple series resistors converted into a single equivalent resistor",
+      "reading_order_anchor": "যদি এখানে দুটি না হয়ে তিন-চারটি বা আরো বেশি রোধ থাকত"
+    }
+  ]
+}

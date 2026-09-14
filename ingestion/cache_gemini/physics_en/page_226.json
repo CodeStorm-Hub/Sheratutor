@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 226,
+  "pdf_page_no": 231,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "come from A and B respectively. The first ray has come to point X and the second one has come to another point Y. The ray coming to point X will be reflected back the way it has come. Let us extend this ray to the center of the sphere, $O$. We can see that $OX = r$ (radius of the sphere). The ray coming from point B to point Y will create an angle of incidence $\\theta_i$ with perpendicular $ON$ at that point. The angle of reflection of the ray $BY$ is $\\theta_r$, and it will be reflected towards $YP$. If we extend $PY$, it would intersect line $OX$ at point $F$.\n\n$FO = FY$ because in the triangle $OFY$, $\\angle FOY = \\angle OYF$, as $\\angle FOY = \\theta_i$ and $\\angle FYO = \\theta_r$.\n\n$FY \\cong FX$ when $XY$ is small compared to radius $r$. This is true for most convex mirrors.\n\nSo, $FO = FY = FX = r/2$\n\nor focal length $f = r/2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** If a plane mirror is considered a spherical convex mirror then what is its focal length?\n\n**Answer:** Infinite.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.5.1",
+      "section_title": "Image in a Spherical Convex Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "We will now see how the image is formed for a spherical mirror. You will see that in a convex spherical mirror, images are always virtual whereas in a spherical concave mirror it may be both real or virtual, depending on the position of the object.\n\n### 8.5.1 Image in a Spherical Convex Mirror\n\nWe have already said that the outer part of a spoon acts as a spherical convex mirror. You can see an upright and small image of yourself there. This means that the image in a convex mirror should always be small.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.18: A spherical convex mirror is a small part of a hollow sphere.",
+      "figure_no": "8.18",
+      "box_2d": [
+        232,
+        513,
+        429,
+        885
+      ],
+      "description": "Ray diagram showing reflection from a spherical convex mirror which is part of a hollow sphere with center O, pole X, and focus F.",
+      "reading_order_anchor": "FO=FY because in the triangle OFY"
+    }
+  ]
+}

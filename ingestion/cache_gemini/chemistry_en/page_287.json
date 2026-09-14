@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 287,
+  "pdf_page_no": 292,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We use different kinds of fertilizers in soil to boost its fertility. This fertilizer is mainly made of chemical substances. We add baking soda with flour to inflate bread, use vinegar or other food preservatives to preserve foods for a long time at home and all these are chemical substances. Again, industrial discharges which pollute the environment are also chemical substances. Chemical substances play roles in every phase of our lives. This chapter will focus on the preparation process of these chemical substances, their properties, uses etc.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Some good looking soaps decorated with natural fruits.",
+      "figure_no": "12.01",
+      "box_2d": [
+        181,
+        112,
+        617,
+        872
+      ],
+      "description": "A collection of colorful decorative soaps shaped and arranged to look like various natural fruits such as grapes, apples, avocados, and watermelon slices.",
+      "reading_order_anchor": "We use different kinds of fertilizers in soil to boost its fertility."
+    }
+  ]
+}

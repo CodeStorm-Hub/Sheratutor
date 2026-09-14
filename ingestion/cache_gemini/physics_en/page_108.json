@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 108,
+  "pdf_page_no": 113,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "energy is stored in a stone when the stone is raised above can also be calculated. You are realizing that the amount of work to be done when an object is raised above is stored in that object as potential energy. If the work done is $W$,\n\n$$W = Fh$$\n\nHere, $F$ is the applied force and $h$ is the height. We have to apply the force $F$ in the upward direction and distance traversed is also in the upward direction, therefore $F$ is positive. The force that has to be applied for raising the object upwards does not change as the spring force and this force is equal to the weight of the stone. If the weight of the stone is $mg$,\n\n$$F = mg$$\nand \n$$W = mgh$$\n\nWe have to remember that the weight of the stone is a force and it acts downwards. We have to apply an upward force equal to the weight of the stone if we want to lift it.\n\nPotential energy is stored in a stone of mass $m$ by raising it a distance of $h$. What amount of kinetic energy will be generated in the stone if it is released and comes down by a distance $h$?\n\nDue to the conservation of energy total of its potential energy will transform into kinetic energy. We know kinetic energy is $\\frac{1}{2}mv^2$, so we can write:\n\n$$\\frac{1}{2}mv^2 = mgh$$\n$$v^2 = 2gh$$\n\nHonestly we can say, when we were deducing the laws of falling bodies, we deduced this identical law once again! Now we deduced the same law using the conception of energy quite in a different way!",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** A body of mass $10\\text{ kg}$ is thrown in the upward direction with a velocity of $100\\text{ m/s}$. What will be the height reached by the object?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

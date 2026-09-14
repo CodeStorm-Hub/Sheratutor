@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 158,
+  "pdf_page_no": 163,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": "7.4",
+      "section_title": "Examples of a Few Real Life Chemical Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.4.1",
+      "section_title": "Chemical Reactions in Reality",
+      "chunk_type": "theory",
+      "content_markdown": "We observe many happenings around us everyday which are caused by chemical reactions. Examples:\n\n1. **Rust on Iron:** We use various instruments made of iron everyday like knife, scissors, machete etc. If we keep them exposed in open air, they undergo rusting. Here, iron undergoes reaction with oxygen and water vapor and produces ferric oxide. Since rust is fragile in nature, oxygen and water vapor from air pass through it and continue to corrode the iron. Thus the whole object made of iron is ruined.\n\n$$2\\text{Fe} + 1.5\\text{O}_2 + 3\\text{H}_2\\text{O} \\longrightarrow 2\\text{Fe(OH)}_3$$\n$$2\\text{Fe(OH)}_3 \\longrightarrow \\text{Fe}_2\\text{O}_3\\cdot n\\text{H}_2\\text{O}$$\n$$\\text{Rust}$$\n\nThe number of moles of water in rust is not fixed. That is why, the formula of rust is $\\text{Fe}_2\\text{O}_3\\cdot n\\text{H}_2\\text{O}$ Here, the value of $n$ can be $1, 2, 3, 4\\dots$ etc. integers.\n\n2. **Prevention of Corrosion of Copper and Aluminum:** We also use copper-aluminum products in our day to day life. When products made of $\\text{Cu}$ and $\\text{Al}$ come in touch with open air, they produce a layer of $\\text{CuO}$ and $\\text{Al}_2\\text{O}_3$. This layer acts to prevent the air to come in direct contact with $\\text{Cu}$ and $\\text{Al}$ and no more reaction takes place. Thus the decay of $\\text{Cu}$ and $\\text{Al}$ is prevented.\n\n3. **Relief from the bite of ants and Bee:** When ants or bees bite us, we feel pain at the spot of the bite. We use lime on that spot to get relief from the pain. The ant in its mouth or the bee in its sting carries an acid which is the cause of our pain. The lime (base) reacts with that acid and neutralizes it. As a result, we are relieved of the pain.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

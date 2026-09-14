@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 45,
+  "pdf_page_no": 50,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুসিদ্ধান্ত ৬. $ab = \\left( \\frac{a+b}{2} \\right)^2 - \\left( \\frac{a-b}{2} \\right)^2$\n\nপ্রমাণ: সূত্র ১ ও সূত্র ২ হতে,\n$a^2 + 2ab + b^2 = (a+b)^2$\n$a^2 - 2ab + b^2 = (a-b)^2$\nবিয়োগ করে, $4ab = (a+b)^2 - (a-b)^2$\nবা, $ab = \\frac{(a+b)^2}{4} - \\frac{(a-b)^2}{4}$\nসুতরাং, $ab = \\left( \\frac{a+b}{2} \\right)^2 - \\left( \\frac{a-b}{2} \\right)^2$ □",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্য: অনুসিদ্ধান্ত ৬ প্রয়োগ করে যেকোনো দুইটি রাশির গুণফলকে ঐ দুইটি রাশির সমষ্টির অর্ধেকের বর্গ হতে ঐ দুইটি রাশির অন্তরের অর্ধেকের বর্গের অন্তররূপে প্রকাশ করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সূত্র ৩. $a^2 - b^2 = (a+b)(a-b)$\n\nঅর্থাৎ, দুইটি রাশির বর্গের বিয়োগফল = রাশি দুইটির যোগফল $\\times$ রাশি দুইটির বিয়োগফল",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সূত্র ৪. $(x+a)(x+b) = x^2 + (a+b)x + ab$\n\nঅর্থাৎ, $(x+a)(x+b) = x^2 + (a \\text{ ও } b \\text{ এর বীজগাণিতিক যোগফল}) x + (a \\text{ ও } b \\text{ এর গুণফল})$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "বর্গসূত্রের সম্প্রসারণ",
+      "chunk_type": "theory",
+      "content_markdown": "বর্গসূত্রের সম্প্রসারণ: $a+b+c$ রাশিটিতে তিনটি পদ আছে। একে $(a+b)$ এবং $c$ এ দুইটি পদের সমষ্টিরূপে বিবেচনা করা যায়। অতএব, সূত্র ১ প্রয়োগ করে রাশিটির বর্গ করে পাই,\n\n$(a+b+c)^2 = \\{(a+b) + c\\}^2 = (a+b)^2 + 2(a+b)c + c^2$\n$= a^2 + 2ab + b^2 + 2ac + 2bc + c^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ac$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সূত্র ৫. $(a+b+c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ac$\nঅনুসিদ্ধান্ত ৭. $a^2 + b^2 + c^2 = (a+b+c)^2 - 2(ab + bc + ac)$\nঅনুসিদ্ধান্ত ৮. $2(ab + bc + ac) = (a+b+c)^2 - (a^2 + b^2 + c^2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "দ্রষ্টব্য: সূত্র ৫ প্রয়োগ করে পাই,\n\nক) $(a+b-c)^2 = \\{a+b+(-c)\\}^2$\n$= a^2 + b^2 + (-c)^2 + 2ab + 2b(-c) + 2a(-c)$\n$= a^2 + b^2 + c^2 + 2ab - 2bc - 2ac$\n\nখ) $(a-b+c)^2 = \\{a+(-b)+c\\}^2$\n$= a^2 + (-b)^2 + c^2 + 2a(-b) + 2(-b)c + 2ac$\n$= a^2 + b^2 + c^2 - 2ab - 2bc + 2ac$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

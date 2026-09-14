@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 7,
+  "pdf_page_no": 12,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The decimal fraction for which the same digit or a set of digits in order appear after decimal point is called repeating decimal fraction. The part of the repeating decimal fraction that appears over and over again is called repeating. The remaining part is nonrepating.\n\nIn a repeating decimal fraction if a single digit repeats, then a point is marked above that digit. Otherwise point is marked on the first and the last repeating digits. For example, $2.555...$ is written as $2.\\dot{5}$ and $3.124124124...$ as $3.\\dot{1}2\\dot{4}$.\n\nIn a decimal number if every digit after decimal point is repeating, then it is called a pure repeating fraction. Otherwise the fraction is called mixed. For example, $1.\\dot{3}$ is a pure repeating fraction and $4.235\\dot{1}\\dot{2}$ is a mixed repeating fraction.\n\nIf in the denominator there are digits other than $2, 5$ as a factor, then no numerator will be divisible by that denominator. Since there cannot be any digit other than $1, 2, ..., 9$ at some stage as residue, the same numbers will appear. Number of digits in the repeating part is always less than the number in the denominator.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. Express $\\frac{3}{11}$ and $\\frac{95}{37}$ into decimal fractions.\n\nSolution: $\\frac{3}{11}$ and $\\frac{95}{37}$ have been converted into decimal fractions as below.\n\nActually $3$ has been divided. But since $3$ is smaller than $11$, $0$ has been placed in the dividend and a $0$ has been placed to the right of $3$ and made it $30$.\n\n$$11) 30 (0.2727$$\n$$22$$\n$$80$$\n$$77$$\n$$30$$\n$$22$$\n$$80$$\n$$77$$\n$$3$$\n\n$$37) 95 (2.56756$$\n$$74$$\n$$210$$\n$$185$$\n$$250$$\n$$222$$\n$$280$$\n$$259$$\n$$210$$\n$$185$$\n$$250$$\n$$222$$\n$$280$$\n$$259$$\n$$21$$\n\n$\\therefore \\frac{3}{11} = 0.2727... = 0.\\dot{2}\\dot{7}$\n\n$\\therefore \\frac{95}{37} = 2.567567... = 2.\\dot{5}6\\dot{7}$\n\nDesired decimal fractions are respectively $0.\\dot{2}\\dot{7}$ and $2.\\dot{5}6\\dot{7}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 126,
+  "pdf_page_no": 131,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. Explain the number line.\n7. State the postulate of ruler placement.\n8. Define intersecting straight line and parallel straight line.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.1",
+      "section_title": "Line, Ray, Line Segment",
+      "chunk_type": "theory",
+      "content_markdown": "By postulates of plane geometry, every point of a straight line lies in a plane. Let $AB$ be a line in a plane and $C$ be a point on it. The point $C$ is called internal to $A$ and $B$ if the points $A$, $C$ and $B$ are different points on a line and $AC + CB = AB$. The points $A$, $C$ and $B$ are also called collinear points. The set of points including $A$ and $B$ and all the internal points is known as the line segment $AB$. The points between $A$ and $B$ are called internal points.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Angle",
+      "chunk_type": "theory",
+      "content_markdown": "When two rays in a plane meet at a point, an angle is formed. The rays are known as the sides of the angle and the common point as vertex. In the figure, two rays $OP$ and $OQ$ make an angle $\\angle POQ$ at their common point $O$. $O$ is the vertex of the angle $\\angle POQ$. The set of all points lying in the plane on the $Q$ side of $OP$ and $P$ side of $OQ$ is known as the interior region of the $\\angle POQ$. The set of all points not lying in the interior region or on any side of the angle is called exterior region of the angle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Line segment AB with internal point C",
+      "figure_no": "6.01",
+      "box_2d": [
+        453,
+        381,
+        520,
+        620
+      ],
+      "description": "A line segment AB with a point C between them, shown as a line segment and a line with arrows.",
+      "reading_order_anchor": "Line, Ray, Line Segment"
+    },
+    {
+      "caption": "Fig 6.02: Angle POQ with vertex O",
+      "figure_no": "6.02",
+      "box_2d": [
+        679,
+        664,
+        793,
+        847
+      ],
+      "description": "An angle formed by two rays OP and OQ meeting at vertex O.",
+      "reading_order_anchor": "Angle"
+    }
+  ]
+}

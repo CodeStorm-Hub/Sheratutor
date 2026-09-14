@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 246,
+  "pdf_page_no": 251,
+  "chapter_no": 9,
+  "chapter_title": "আলোর প্রতিসরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "নিজে করো",
+      "chunk_type": "theory",
+      "content_markdown": "একটি কাপের মাঝে একটা মুদ্রা রেখে সেটাকে সামনে এমনভাবে রাখো যেন সেটি দেখা না যায়। মাথা না নাড়িয়ে মুদ্রাটি কীভাবে দেখা সম্ভব? কাপে পানি ঢাললেই মুদ্রাটি দৃশ্যমান হয়ে যাবে (চিত্র ৯.০৩)। প্রতিসরণের কারণে আলো বাঁকা হয়ে এসে তোমার চোখে পড়বে। তোমার চোখ ঐ বাঁকা আলোর দিক বরাবর মুদ্রাটি দেখতে পাবে। শুধু তা-ই নয়, তোমার কাছে মনে হবে মুদ্রাটি বুঝি উপরে উঠে এসেছে।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ",
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: বাতাস থেকে আলোক রশ্মি $n = 1.6$ মাধ্যমে $45^\\circ$ তে আপতিত হয়েছে। (চিত্র ৯.০৪ a) এটি কত ডিগ্রি কোণে দ্বিতীয় মাধ্যমে প্রবেশ করবে?\n\nউত্তর: আমরা জানি $n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2$ কাজেই\n\n$$\\sin\\theta_2 = \\frac{n_1}{n_2} \\sin\\theta_1 = \\frac{1}{1.6} \\times \\frac{1}{\\sqrt{2}} = 0.44$$\n\n$$\\theta_2 = 26^\\circ$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: ৯.০৪ b চিত্রটিতে একটি রশ্মি $60^\\circ$ তে বাতাস থেকে একটি মাধ্যমে প্রবেশ করে $45^\\circ$ কোণে দ্বিতীয় মাধ্যমে প্রতিসরিত হচ্ছে। দ্বিতীয় মাধ্যমটির প্রতিসরণাঙ্ক কত?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 9.03: পানি ও কাঁচের ভেতর আলোর প্রতিসরণ।",
+      "figure_no": "9.03",
+      "box_2d": [
+        202,
+        219,
+        335,
+        756
+      ],
+      "description": "A ray diagram illustrating the refraction of light through water and glass, showing how a coin appears to shift its position due to refraction.",
+      "reading_order_anchor": "নিজে করো"
+    }
+  ]
+}

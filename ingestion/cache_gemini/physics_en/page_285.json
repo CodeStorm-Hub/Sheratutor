@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 285,
+  "pdf_page_no": 290,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "the electric field is zero. If both the charges were negative, then the direction of lines of force, would change only, besides this everything would be as before.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** What is the magnitude of the electric field at a distance of $10\\text{ m}$ for $5\\text{ C}$ charge?\n\n**Answer:** We know,\n\n$$E = k \\frac{q}{r^2}$$\n\nHere,\n\n$$q = 5\\text{ C}$$\n$$q_2 = -1.6 \\times 10^{-19}\\text{ C}$$\n$$r = 10\\text{ m}$$\n$$k = 9 \\times 10^9\\text{ Nm}^2/\\text{C}^2$$\n\nSo,\n\n$$E = \\frac{9 \\times 10^9 \\times 5}{10^2}\\text{ N/C} = 4.5 \\times 10^8\\text{ N/C}$$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.12: Lines of force of (a) opposite charge and (b) same charge",
+      "figure_no": "10.12",
+      "box_2d": [
+        188,
+        156,
+        449,
+        836
+      ],
+      "description": "Field lines showing the electric field around two opposite charges (a) and two same charges (b).",
+      "reading_order_anchor": "Lines of force of (a) opposite charge and (b) same charge"
+    }
+  ]
+}

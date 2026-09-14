@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 250,
+  "pdf_page_no": 255,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপরের সম্পর্কটিকে ফাংশন বলে এবং $f(n) = 2n$ লেখা হয়। এই অনুক্রমের সাধারণ পদ $2n$। যেকোনো অনুক্রমের পদসংখ্যা অসীম। অনুক্রমটি সাধারণ পদের সাহায্যে লেখার পদ্ধতি হলো $\\{2n\\}, n = 1, 2, 3, \\dots$ বা, $\\{2n\\}_{n=1}^{+\\infty}$ বা, $\\{2n\\}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুক্রমের প্রথম রাশিকে প্রথম পদ, দ্বিতীয় রাশিকে দ্বিতীয় পদ, তৃতীয় রাশিকে তৃতীয় পদ ইত্যাদি বলা হয়। $1, 3, 5, 7, \\dots$ অনুক্রমের প্রথম পদ = $1$, দ্বিতীয় পদ = $3$, ইত্যাদি। নিচে অনুক্রমের চারটি উদাহরণ দেওয়া হলো:\n\n$1, 2, 3, \\dots, n, \\dots$\n$1, 3, 5, \\dots, 2n - 1, \\dots$\n$1, 4, 9, \\dots, n^2, \\dots$\n$\\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}, \\dots, \\frac{n}{n+1}, \\dots$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ:\n\nক) নিচে ছয়টি অনুক্রমের সাধারণ পদ দেওয়া আছে। অনুক্রমগুলো লিখ:\n(১) $\\frac{1}{n}$ \n(২) $\\frac{n-1}{n+1}$ \n(৩) $\\frac{1}{2^n}$ \n(৪) $\\frac{1}{2^{n-1}}$ \n(৫) $(-1)^{n+1} \\frac{n}{n+1}$ \n(৬) $(-1)^{n-1} \\frac{n}{2n+1}$\n\nখ) তোমরা প্রত্যেকে একটি করে অনুক্রমের সাধারণ পদ লিখে অনুক্রমটি লিখ।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধারা (Series)\n\nকোনো অনুক্রমের পদগুলো পরপর $+$ চিহ্ন দ্বারা যুক্ত করলে একটি ধারা (Series) পাওয়া যায়। যেমন, $1 + 3 + 5 + 7 + \\dots$ একটি ধারা। ধারাটির পরপর দুইটি পদের পার্থক্য সমান। আবার $2 + 4 + 8 + 16 + \\dots$ একটি ধারা। এর পরপর দুইটি পদের অনুপাত সমান। সুতরাং, যেকোনো ধারার পরপর দুইটি পদের মধ্যে সম্পর্কের উপর নির্ভর করে ধারাটির বৈশিষ্ট্য। ধারাগুলোর মধ্যে গুরুত্বপূর্ণ দুইটি ধারা হলো সমান্তর ধারা ও গুণোত্তর ধারা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমান্তর ধারা (Arithmetic Series)\n\nকোনো ধারার যেকোনো পাশাপাশি দুইটি পদের পার্থক্য সব সময় সমান হলে, সেই ধারাটিকে সমান্তর ধারা বলে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. $1 + 3 + 5 + 7 + 9 + 11$ একটি ধারা। এই ধারাটির প্রথম পদ $1$, দ্বিতীয় পদ $3$, তৃতীয় পদ $5$ ইত্যাদি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

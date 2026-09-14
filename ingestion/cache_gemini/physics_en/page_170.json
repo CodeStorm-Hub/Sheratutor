@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 170,
+  "pdf_page_no": 175,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\\alpha = \\frac{L_2 - L_1}{L_1(T_2 - T_1)}$$\n\nHere, $L_1 = 10\\text{ m}$\n\n$$L_2 = 10.0167\\text{ m}$$\n$$T_2 = 120^\\circ\\text{ C}$$\n$$T_1 = 20^\\circ\\text{ C}$$\n\n$$\\alpha = \\frac{10.0167\\text{ m} - 10\\text{ m}}{10\\text{ m}(120^\\circ\\text{ C} - 20^\\circ\\text{ C})} = 16.7 \\times 10^{-6}\\text{ }^\\circ\\text{C}^{-1}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You have seen from the above examples that actually the value of the co-efficient of expansion of solids is very small. For this reason, the three different co-efficients $\\alpha$, $\\beta$ and $\\gamma$ were not necessary. For working we could explain the co-efficient of linear expansion only. For example let us assume the matter of area expansion.\n\nWe see:\n$$A_2 = A_1 + \\beta A_1 (T_2 - T_1)$$\n\nBut area $A_1$ is the product of length and width and if we consider the area of a square whose length is $L_1$, then its area, after increasing the temperature, will be\n\n$$A_2 = L_2^2 = [L_1 + \\alpha L_1 (T_2 - T_1)]^2$$\n\nOr\n\n$$A_2 = L_1^2 + 2\\alpha L_1^2 (T_2 - T_1) + \\alpha^2 L_1^2 (T_2 - T_1)^2$$\n\nBut\n\n$$A_1 = L_1^2$$\n\nSo,\n\n$$A_2 = A_1 + 2\\alpha A_1 (T_2 - T_1) + \\alpha^2 A_1 (T_2 - T_1)^2$$\n\nWe have seen that the value of $\\alpha$ is very small, so the value of $\\alpha^2$ is smaller. In fact it is so small that if we avoid the whole part with $\\alpha^2$, then no problem will arise in our analysis or calculation. So we can write:\n\n$$A_2 = A_1 + 2\\alpha A_1 (T_2 - T_1)$$\n\nBut we know,\n\n$$A_2 = A_1 + \\beta A_1 (T_2 - T_1)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

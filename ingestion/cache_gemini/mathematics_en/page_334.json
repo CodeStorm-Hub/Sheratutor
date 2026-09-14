@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 334,
+  "pdf_page_no": 339,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \\angle COD = \\frac{360^\\circ}{6} = 60^\\circ$$\nLet the distance of centre $O$ to its vertex is $a$ metre.\n$$\\therefore \\text{area of } \\triangle COD = \\frac{1}{2} \\cdot a \\cdot a \\sin 60^\\circ$$\n$$= \\frac{\\sqrt{3}}{4} \\times 4^2 \\text{ square metre} = 4\\sqrt{3} \\text{ square metre}$$\nArea of the regular hexagon $= 6 \\times \\text{area of } \\triangle COD$\n$$= 6 \\times 4\\sqrt{3} \\text{ square metre} = 24\\sqrt{3} \\text{ square metre}$$\nThe required area is $24\\sqrt{3}$ square metre.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 17. According to the given figure—\n1) Find length of the diagonal of the rectangle.\n2) Find the integer value of its area.\n3) Find the perimeter of the isosceles triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution:\n1) As per the given figure, the area is divided into rectangle $ABCD$ and isosceles triangle $ADE$.\nLength of diagonal of rectangle $ABCD = \\sqrt{50^2 + 14^2} \\text{ cm} = 51.92 \\text{ cm (approx.)}$\n2) Area of rectangle $ABCD = 50 \\times 14 \\text{ square cm} = 700 \\text{ square cm}$\n$$\\text{Area of triangle } ADE = \\frac{1}{2} AD \\cdot AE \\cdot \\sin \\angle DAE = \\frac{1}{2} \\times 50 \\times 50 \\times \\sin 73.74^\\circ$$\n$$\\text{square cm} = 24 \\times 50 \\times 0.960001 \\text{ square cm} = 1200 \\text{ square cm (approx.)}$$\nTotal area $= (700 + 1200) \\text{ square cm} = 1900 \\text{ square cm}$\n3) Let, in $\\triangle ADE$, $AD = AE = 50 \\text{ cm} = a$, $DE = b$\n$$\\therefore \\text{Area of the isosceles triangle } ADE = \\frac{b}{4} \\sqrt{4a^2 - b^2}$$\nAs per the question, $\\frac{b}{4} \\sqrt{4a^2 - b^2} = 1200$\n$$b\\sqrt{4(50)^2 - b^2} = 4800$$\nor, $b^2(10000 - b^2) = 23040000$ [by squaring]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Regular hexagon divided into triangles",
+      "figure_no": "16.01",
+      "box_2d": [
+        64,
+        675,
+        222,
+        845
+      ],
+      "description": "A regular hexagon with center O, divided into six equilateral triangles.",
+      "reading_order_anchor": "Let the distance of centre O to its vertex is a metre."
+    },
+    {
+      "caption": "Fig 16.02: Rectangle ABCD with isosceles triangle ADE",
+      "figure_no": "16.02",
+      "box_2d": [
+        295,
+        685,
+        503,
+        845
+      ],
+      "description": "A rectangle ABCD with an isosceles triangle ADE attached on top.",
+      "reading_order_anchor": "Example 17. According to the given figure—"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 310,
+  "pdf_page_no": 315,
+  "chapter_no": 15,
+  "chapter_title": "Area Related Theorems",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We know that bounded plane figures may have different shapes. If the region is bounded by four sides, it is known as quadrilateral. Quadrilaterals have classification and they are also named based on their shapes and properties. Apart from these, there are many regions bounded by more than four sides. These are polygonal regions or simply polygons. Every closed region has a certain measurement which is called the area of the region. For measurement of areas usually the area of a square with sides of 1 unit of length is used as the unit area and their areas are expressed in square units. For example, the area of Bangladesh is 1.47 lacs square kilometers (approximately). In our day to day life we need to know and measure areas of polygons for meeting the necessity of life. So, it is important for the learners to have a comprehensive knowledge about areas of polygons. Areas of polygons and related theorems and constructions are presented here.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of the chapter, the students will be able to —\n\n> explain the area of polygons\n> verify and prove theorems related to areas.\n> construct polygons and justify construction by using given data.\n> construct a quadrilateral with area equal to the area of a triangle.\n> construct a triangle with area equal to the area of a quadrilateral.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "15.1",
+      "section_title": "Area of a Plane Region",
+      "chunk_type": "theory",
+      "content_markdown": "Every closed plane region has definite area. In order to measure such area, usually the area of a square having sides of unit length is taken as the unit. For example, the area of a square with a side of length 1 cm is 1 square centimetre.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

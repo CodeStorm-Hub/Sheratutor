@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 148,
+  "pdf_page_no": 153,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "amount of vapor inside it increases. Vapor is water, in a molecule of water there is an oxygen and two hydrogen atom and molecular mass of water is $(16+1+1=) 18$. The main element of air is nitrogen (atomic mass 14), being created by two atoms it's molecular mass is $(14+14=) 28$ and oxygen (molecular weight 16), is also created by two atoms, so, it's molecular mass is $(16+16=) 32$, which is much more than the molecular mass of water. So, when there is vapor in the air, water of less molecular mass takes the place of nitrogen and oxygen of higher molecular mass and so the density of air decreases. If the density of air decreases, the air pressure also decreases. So, it is possible to predict about the local weather seeing the air pressure on a barometer. If the barometer shows high pressure then it is understood that the air is dry and the weather is good. If the pressure starts to decrease then it is understood that the quantity of vapor is increasing. If pressure low then air from the nearby areas will come quickly and storm and rain will start.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.5",
+      "section_title": "Elasticity",
+      "chunk_type": "theory",
+      "content_markdown": "All of you must have, one time or another, elongated a spring or a rubber band by pulling on it and then releasing it. You have certainly noticed that after releasing the spring or the rubber band it regains its previous length. In physics, pulling is termed as 'applying force' and the change of the length is termed as 'deformation'. The word deformation is taken negatively in our daily life. But you should not take it negatively here. It is just a change in condition!\n\nTherefore, you understand that when a force is applied to an object, a deformation happens inside it (and for this deformation, a counter force is created). If the force is withdrawn, deformation stops and the object comes back to its initial condition. This property of a substance is called elasticity. But it should be remembered that the quantity of the applied force has a limit. If the limit is crossed, the substance will not be able to come back to its initial condition. A permanent deformation could take place. This limit is termed as the elastic limit. After bending a rod slightly, if it is released then it becomes straight. If it is bent too much then it remains curved and does not become straight. Therefore we can state this like:\n\n**Strain:** The relative change in length or shape which is made by applying a force from outside is called strain. Therefore, if force is applied on an object of length $L_0$, and the changed length becomes $L$ then it's strain is: $\\frac{L - L_0}{L_0}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

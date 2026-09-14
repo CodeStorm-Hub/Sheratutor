@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 104,
+  "pdf_page_no": 109,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore we can say firmly that the energy that develops due to motion in a body is certainly one kind of energy or kinetic energy. In the previous chapter we said that the terrible road accidents that happen and the losses that occur are mainly due to kinetic energy. When a bus-truck or a car moves at high speed then it has a huge amount of kinetic energy.\n\nWe can easily calculate how much kinetic energy is produced by an object when work is done by a force on that object.\n\nLet an object of mass $m$ be displaced by an amount $s$ due to the application of force $F$. Therefore work done $W$ by the force $F$ is:\n\n$$W = Fs$$\n\nAccording to Newton's second law we know,\n\n$$F = ma$$\n\nAgain, from the equations of motion we know that if an object starts its motion from rest,\n\nThen $$s = \\frac{1}{2}at^2$$ and $$v = at$$\n\nThen work,\n\n$$W = Fs = mas = ma \\times \\frac{1}{2}at^2 = \\frac{1}{2}ma^2t^2 = \\frac{1}{2}mv^2$$\n\nTherefore we can say if a force $F$ makes a displacement $s$ of an object then the kinetic energy that is generated:\n\n$$T = \\frac{1}{2}mv^2$$\n\nThe velocity $v$ is in the square form in kinetic energy, so to double the velocity of an object we will need to apply four times of the energy.\n\nWhen learning the equations of motion, we noticed that\n\n$$v^2 = u^2 + 2as$$\n\nMultiplying both sides by $\\frac{1}{2}m$ the equation becomes $\\frac{1}{2}mv^2 = \\frac{1}{2}mu^2 + mas$\n\nIf we write $F$ instead of $ma$ and $W$ instead of $Fs$, then the equation becomes,\n\n$$\\frac{1}{2}mv^2 = \\frac{1}{2}mu^2 + W$$\n\nThat is, if an object moves with velocity $u$, then its kinetic energy is $\\frac{1}{2}mu^2$ and if $W$ amount of work is done on it, then its kinetic energy is increased to $\\frac{1}{2}mv^2$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 130,
+  "pdf_page_no": 135,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "পিথাগোরাসের উপপাদ্য",
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ১৫. পিথাগোরাসের উপপাদ্য (Pythagorean Theorem)\n\nসমকোণী ত্রিভুজের অতিভুজের ওপর অঙ্কিত বর্গক্ষেত্রের ক্ষেত্রফল অপর দুই বাহুর ওপর অঙ্কিত বর্গক্ষেত্রদ্বয়ের ক্ষেত্রফলের সমষ্টির সমান।\n\nমনে করি, $\\triangle ABC$ সমকোণী ত্রিভুজের $\\angle ABC$ সমকোণ এবং $AC$ অতিভুজ। তাহলে, $AC^2 = AB^2 + BC^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. $\\triangle ABC$ এর $AB = AC$, $BA$ কে $D$ পর্যন্ত এমনভাবে বর্ধিত করা হলো যেন $AD = AC$ হয়। $C, D$ যোগ করা হলো।\n\nক) উদ্দীপকের ভিত্তিতে চিত্র আঁক।\nখ) প্রমাণ কর যে, $BC + CD > 2AC$\nগ) প্রমাণ কর যে, $\\angle BCD =$ এক সমকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\n\nক)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) দেওয়া আছে $AB = AC$ এবং অঙ্কন অনুসারে $AC = AD$\n\n$\\triangle BCD$ এ\n\n$BC + CD > BD$ [ত্রিভুজের যেকোনো দুই বাহুর সমষ্টি তৃতীয় বাহু অপেক্ষা বৃহত্তর]\n\nবা, $BC + CD > AB + AD$\n\nবা, $BC + CD > AD + AD$\n\nবা, $BC + CD > 2AD$\n\n$\\therefore BC + CD > 2AC$ [$\\because AB = AC = AD$]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: সমকোণী ত্রিভুজ ABC",
+      "figure_no": "6.01",
+      "box_2d": [
+        185,
+        685,
+        325,
+        845
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যার কোণ B সমকোণ।",
+      "reading_order_anchor": "উপপাদ্য ১৫. পিথাগোরাসের উপপাদ্য (Pythagorean Theorem)"
+    },
+    {
+      "caption": "চিত্র: ত্রিভুজ BCD",
+      "figure_no": "6.02",
+      "box_2d": [
+        555,
+        445,
+        725,
+        605
+      ],
+      "description": "একটি ত্রিভুজ BCD যেখানে A বিন্দুটি BD বাহুর উপর অবস্থিত।",
+      "reading_order_anchor": "সমাধান:"
+    }
+  ]
+}

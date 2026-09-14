@@ -1,0 +1,146 @@
+{
+  "printed_page_no": 134,
+  "pdf_page_no": 139,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $\\angle BFE$ এর মান নিচের কোনটি?\nক) $30^\\circ$ খ) $60^\\circ$ গ) $90^\\circ$ ঘ) $120^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "6.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. $\\angle CEF + \\angle CEG =$ কত?\nক) $60^\\circ$ খ) $120^\\circ$ গ) $180^\\circ$ ঘ) $210^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "6.3",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৯. প্রমাণ কর যে, সমবাহু ত্রিভুজের বাহুগুলোর মধ্যবিন্দুসমূহ যোগ করলে যে ত্রিভুজ উৎপন্ন হয়, তা সমবাহু হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.4",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১০. প্রমাণ কর যে, সমবাহু ত্রিভুজের মধ্যমা তিনটি পরস্পর সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.5",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১১. প্রমাণ কর যে, ত্রিভুজের যেকোনো দুইটি বহিঃস্থ কোণের সমষ্টি দুই সমকোণ অপেক্ষা বৃহত্তর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.6",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১২. $\\triangle ABC$ এর $BC$ বাহুর মধ্যবিন্দু $D$ হলে, প্রমাণ কর যে, $AB + AC > 2AD$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.7",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৩. চিত্রে, দেওয়া আছে, $\\angle C =$ এক সমকোণ এবং $\\angle B = 2\\angle A$। প্রমাণ কর যে, $AB = 2BC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.8",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৪. প্রমাণ কর যে, ত্রিভুজের একটি বাহু বর্ধিত করলে যে বহিঃস্থ কোণ উৎপন্ন হয়, তা বিপরীত অন্তঃস্থ কোণদ্বয়ের সমষ্টির সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.9",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৫. প্রমাণ কর যে, ত্রিভুজের যেকোনো দুই বাহুর অন্তর তার তৃতীয় বাহু অপেক্ষা ক্ষুদ্রতর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.10",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৬. চিত্রে, $ABC$ ত্রিভুজের $\\angle B =$ এক সমকোণ এবং $D$, অতিভুজ $AC$ এর মধ্যবিন্দু। প্রমাণ কর যে, $BD = \\frac{1}{2}AC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.11",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৭. $\\triangle ABC$ এ $AB > AC$ এবং $\\angle A$ এর সমদ্বিখণ্ডক $AD, BC$ বাহুকে $D$ বিন্দুতে ছেদ করে। প্রমাণ কর যে, $\\angle ADB$ স্থূলকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.12",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৮. প্রমাণ কর যে, কোনো রেখাংশের লম্বসমদ্বিখণ্ডকের উপরিস্থিত যেকোনো বিন্দু উক্ত রেখাংশের প্রান্ত বিন্দুদ্বয় হতে সমদূরবর্তী।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.13",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৯. $ABC$ ত্রিভুজের $\\angle A =$ এক সমকোণ। $BC$ বাহুর মধ্যবিন্দু $D$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.13.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) প্রদত্ত তথ্য অনুযায়ী $ABC$ ত্রিভুজটি অঙ্কন কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.13.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) দেখাও যে, $AB + AC > 2AD$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.13.3",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) প্রমাণ কর যে, $AD = \\frac{1}{2}BC$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৩: জ্যামিতিক চিত্র",
+      "figure_no": "6.13",
+      "box_2d": [
+        378,
+        755,
+        484,
+        875
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যেখানে কোণ C সমকোণ এবং কোণ B কোণ A এর দ্বিগুণ।",
+      "reading_order_anchor": "১৩. চিত্রে, দেওয়া আছে, $\\angle C =$ এক সমকোণ এবং $\\angle B = 2\\angle A$। প্রমাণ কর যে, $AB = 2BC$"
+    },
+    {
+      "caption": "চিত্র ১৬: জ্যামিতিক চিত্র",
+      "figure_no": "6.16",
+      "box_2d": [
+        578,
+        755,
+        651,
+        875
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যেখানে কোণ B সমকোণ এবং D হলো অতিভুজ AC এর মধ্যবিন্দু।",
+      "reading_order_anchor": "১৬. চিত্রে, $ABC$ ত্রিভুজের $\\angle B =$ এক সমকোণ এবং $D$, অতিভুজ $AC$ এর মধ্যবিন্দু। প্রমাণ কর যে, $BD = \\frac{1}{2}AC$"
+    }
+  ]
+}

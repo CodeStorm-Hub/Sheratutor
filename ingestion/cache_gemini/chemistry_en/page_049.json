@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 49,
+  "pdf_page_no": 54,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "For $3\text{d}$ orbital, $n = 3$ and $l = 2$, so the value $(n + l)$ becomes $(3 + 2 = 5)$. Again, for $4\text{s}$, $n = 4$ and $l = 0$, so the value $(n + l)$ becomes $(4 + 0 = 4)$. It shows $4\text{s}$ orbital has lower energy than $3\text{d}$ orbital. Therefore, the electron will first enter $4\text{s}$ and then will go to $3\text{d}$. Again, if the value $(n + l)$ of two orbitals are equal, then the orbital with lesser value of $n$ has lower energy and the electron will enter here first. In the same way, the orbital with higher $n$ gets the electron later for being higher in energy.\n\nFor example, the values $(n+l)$ of $3\text{d}$ and $4\text{p}$ are $3+2 = 5$ and $4+1 = 5$ respectively. Here in this case, since the value of $n$ in orbital $3\text{d}$ is lesser than orbital $4\text{p}$, so it is lower in energy and orbital $4\text{p}$, being higher energetically will get electrons later. According to this system, the gradual sequence of energy of orbital in receiving electrons will be:\n\n$$1\text{s} < 2\text{s} < 2\text{p} < 3\text{s} < 3\text{p} < 4\text{s} < 3\text{d} < 4\text{p} < 5\text{s} < 4\text{d} < 5\text{p} < 6\text{s} < 4\text{f} < 5\text{d} < 6\text{p} < 7\text{s} < 5\text{f} < 6\text{d} < 7\text{p} < 8\text{s}$$\n\nWe can easily remember the sequence of energy level from the chart below:\n\nWe have seen, the orbital $\text{s}$ can contain a maximum of two electrons, the orbital $\text{p}$ can contain a maximum of six electrons, the orbital $\text{d}$ can contain a maximum of ten electrons and the orbital $\text{f}$ can contain a maximum of fourteen electrons. Following this, we can configure the electrons of the following elements.\n\n$\text{K}(19) \\rightarrow 1\text{s}^2\\, 2\text{s}^2\\, 2\text{p}^6\\, 3\text{s}^2\\, 3\text{p}^6\\, 4\text{s}^1$\n\n$\text{Ca}(20) \\rightarrow 1\text{s}^2\\, 2\text{s}^2\\, 2\text{p}^6\\, 3\text{s}^2\\, 3\text{p}^6\\, 4\text{s}^2$\n\n$\text{Sc}(21) \\rightarrow 1\text{s}^2\\, 2\text{s}^2\\, 2\text{p}^6\\, 3\text{s}^2\\, 3\text{p}^6\\, 3\text{d}^1\\, 4\text{s}^2$\n\n$\text{Ti}(22) \\rightarrow 1\text{s}^2\\, 2\text{s}^2\\, 2\text{p}^6\\, 3\text{s}^2\\, 3\text{p}^6\\, 3\text{d}^2\\, 4\text{s}^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.04: Sequence of Energy of Orbitals.",
+      "figure_no": "3.04",
+      "box_2d": [
+        555,
+        533,
+        762,
+        837
+      ],
+      "description": "Diagonal rule diagram showing the filling order of atomic orbitals from 1s to 8s.",
+      "reading_order_anchor": "We can easily remember the sequence of energy level from the chart below"
+    }
+  ]
+}

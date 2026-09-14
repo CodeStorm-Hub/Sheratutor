@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 273,
+  "pdf_page_no": 278,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $\\triangle ABC$ ও $\\triangle DEF$ ত্রিভুজদ্বয়ের প্রত্যেক অনুরূপ বাহুযুগল অসমান বিবেচনা করি। $AB$ বাহুতে $P$ বিন্দু এবং $AC$ বাহুতে $Q$ বিন্দু নিই যেন $AP = DE$ এবং $AQ = DF$ হয়। $P$ ও $Q$ যোগ করে অঙ্কন সম্পন্ন করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\n\nধাপ ১. $\\triangle APQ$ ও $\\triangle DEF$ এর $AP = DE, AQ = DF, \\angle A = \\angle D$\n\nঅতএব, $\\triangle APQ \\cong \\triangle DEF$ [বাহু-কোণ-বাহুর সর্বসমতা]\n\nসুতরাং, $\\angle APQ = \\angle DEF = \\angle ABC$ এবং $\\angle AQP = \\angle DFE = \\angle ACB$।\n\nঅর্থাৎ, $PQ$ রেখাংশ ও $BC$ বাহুকে $AB$ বাহু ও $AC$ রেখা ছেদ করায় অনুরূপ কোণযুগল সমান হয়েছে।\n\nসুতরাং $PQ \\parallel BC$ $\\therefore \\frac{AB}{AP} = \\frac{AC}{AQ}$ বা, $\\frac{AB}{DE} = \\frac{AC}{DF}$ [অনুসিদ্ধান্ত ১]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ২. একইভাবে $BA$ বাহু ও $BC$ বাহু থেকে যথাক্রমে $ED$ রেখাংশ ও $EF$ রেখাংশের সমান রেখাংশ কেটে নিয়ে দেখানো যায় যে,\n\n$\\frac{BA}{ED} = \\frac{BC}{EF}$ [উপপাদ্য ২৮]\n\nঅর্থাৎ $\\frac{AB}{DE} = \\frac{BC}{EF}$ $\\therefore \\frac{AB}{DE} = \\frac{AC}{DF} = \\frac{BC}{EF}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ৩২ এর বিপরীত প্রতিজ্ঞাটিও সত্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ৩৩. দুইটি ত্রিভুজের বাহুগুলো সমানুপাতিক হলে অনুরূপ বাহুর বিপরীত কোণগুলো পরস্পর সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি, $\\triangle ABC$ ও $\\triangle DEF$ এর $\\frac{AB}{DE} = \\frac{AC}{DF} = \\frac{BC}{EF}$। প্রমাণ করতে হবে যে, $\\angle A = \\angle D, \\angle B = \\angle E, \\angle C = \\angle F$।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৪.০১",
+      "figure_no": "14.01",
+      "box_2d": [
+        92,
+        298,
+        215,
+        702
+      ],
+      "description": "দুটি ত্রিভুজ ABC এবং DEF এর জ্যামিতিক চিত্র যেখানে ABC ত্রিভুজের ভেতরে একটি রেখাংশ PQ টানা হয়েছে।",
+      "reading_order_anchor": "অঙ্কন: ABC ও DEF ত্রিভুজদ্বয়ের প্রত্যেক অনুরূপ বাহুযুগল অসমান বিবেচনা করি।"
+    },
+    {
+      "caption": "চিত্র ১৪.০২",
+      "figure_no": "14.02",
+      "box_2d": [
+        843,
+        298,
+        966,
+        702
+      ],
+      "description": "দুটি ত্রিভুজ ABC এবং DEF এর জ্যামিতিক চিত্র যেখানে ABC ত্রিভুজের ভেতরে একটি রেখাংশ PQ টানা হয়েছে।",
+      "reading_order_anchor": "বিশেষ নির্বচন: মনে করি, $\\triangle ABC$ ও $\\triangle DEF$ এর $\\frac{AB}{DE} = \\frac{AC}{DF} = \\frac{BC}{EF}$।"
+    }
+  ]
+}

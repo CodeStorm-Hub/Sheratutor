@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 343,
+  "pdf_page_no": 348,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Work:** Determine the area of the dark marked region in the figure.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercises 16.3",
+      "chunk_type": "theory",
+      "content_markdown": "1. Angle subtended by a circular segment at the centre is $30^\\circ$. If the diameter of the circle is $126\\text{ cm}$, determine the length of the arc.\n\n2. A horse circled around a field with a speed of $66\\text{ metre per minute}$ in $1\\frac{1}{2}\\text{ minute}$. Determine the diameter of the field.\n\n3. Area of a circular segment is $77\\text{ square metre}$ and the radius is $21\\text{ metre}$. Determine the angle subtended at the centre by the circular arc.\n\n4. The radius of a circle is $14\\text{ cm}$ and an arc subtends an angle $75^\\circ$ at its centre. Determine the area of the circular segment.\n\n5. There is a road around a circular field. The outer circumference of the road is greater than the inner circumference by $44\\text{ meters}$. Find the width of the road.\n\n6. The diameter of a circular park is $26\\text{ metre}$. There is a road of $2\\text{ metre width}$ surrounding the park. Determine the area of the road.\n\n7. The diameter of the front wheel of a car is $28\\text{ cm}$ and the back wheel is $35\\text{ cm}$. To cover a distance of $88\\text{ metre}$, how many integer number of times more the front wheel will revolve than the back one?\n\n8. The circumference of a circle is $220\\text{ metre}$. Determine the length of the side of the square, inscribed in the circle.\n\n9. The circumference of a circle is equal to the perimeter of an equilateral triangle. Determine the ratio of their areas.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Work: Determine the area of the dark marked region in the figure.",
+      "figure_no": "16.1",
+      "box_2d": [
+        143,
+        418,
+        225,
+        581
+      ],
+      "description": "A circular segment with a chord of 15 cm and a radius of 20 cm.",
+      "reading_order_anchor": "Work: Determine the area of the dark marked region in the figure."
+    }
+  ]
+}

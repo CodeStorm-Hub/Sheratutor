@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 316,
+  "pdf_page_no": 321,
+  "chapter_no": 15,
+  "chapter_title": "Area Related Theorems",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Nota Bene: Applying the above mentioned method innumerable numbers of triangles can be drawn whose area is equal to the area of a given quadrilateral region.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "15.15",
+      "section_title": "Construction 15",
+      "chunk_type": "theory",
+      "content_markdown": "Construct a parallelogram, with a given angle and the area of the bounded region equal to that of a quadrilateral region.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let $ABCD$ be a quadrilateral region and $\\angle x$ be a definite angle. It is required to construct a parallelogram with angle $\\angle x$ and the area equal to area of the quadrilateral region $ABCD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Drawing: Join $B, D$. Through $C$, draw $CF$ parallel to $DB$ which intersects the side $AB$ extended at $F$. Find the midpoint $G$ of the line segment $AF$. At $A$ of the line segment $AG$, draw $\\angle GAK$ equal to $\\angle x$ and draw $AK \\parallel GH$ through $G$. Again, draw $KDH \\parallel AG$ through $D$ and let, $KDH$ intersects $AK$ and $GH$ at $K$ and $H$ respectively. Hence $AGHK$ is the required parallelogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof: Join $D, F$. By construction $AGHK$ is a parallelogram, where $\\angle GAK = \\angle x$. Again, area of $\\triangle DAF = \\text{area of the rectangular region } ABCD$ and area of the parallelogram $AGHK = \\text{area of the triangular region } DAF$. Therefore, $AGHK$ is the required parallelogram.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 15.15: Construction of a parallelogram",
+      "figure_no": "15.15",
+      "box_2d": [
+        245,
+        183,
+        425,
+        817
+      ],
+      "description": "Geometric construction showing a quadrilateral ABCD being transformed into a parallelogram AGHK with a given angle x.",
+      "reading_order_anchor": "Construction 15. Construct a parallelogram, with a given angle and the area of the bounded region equal to that of a quadrilateral region."
+    }
+  ]
+}

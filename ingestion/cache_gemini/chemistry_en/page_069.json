@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 69,
+  "pdf_page_no": 74,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The elements with one electron in the outer shell generally tend to give away the electron and become positive ions. Sodium has one electron in its outer shell. So, it donates the electron and becomes a positive ion.\n\n$$\\text{Na } (1s^22s^22p^63s^1) \\longrightarrow \\text{Na}^+ (1s^22s^22p^6) + e^-$$\n\nAgain, elements with seven electrons in the outer shell generally tend to accept an electron and become negative ions. Chlorine has seven electrons in its outer shell. So, it accepts one electron and becomes a negative ion.\n\n$$\\text{Cl } (1s^22s^22p^63s^23p^5) + e^- \\longrightarrow \\text{Cl}^- (1s^22s^22p^63s^23p^6)$$\n\nSo, electronic configuration helps us to determine the position of an element in the periodic table and explain their various characteristics as well. Therefore, electronic configuration is considered as the main basis of the periodic table.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.5",
+      "section_title": "Some Exceptions in the Periodic Table",
+      "chunk_type": "theory",
+      "content_markdown": "**a. The Position of Hydrogen:** Hydrogen is a non-metal. However, the periodic table displays hydrogen alongside strong electropositive alkali metals like Na, K, Rb, Cs, Fr etc. in group 1. It is because the outer shell of H contains only 1 electron like the alkali metals. Besides, many properties of Hydrogen are similar to those of alkali metals. On the other hand, Hydrogen is also able to accept an electron like the Halogen elements (F, Cl, Br, I), meaning it has some similarities with Halogen in terms of properties. However, since most of the properties of Hydrogen have similarity with alkali metals, it is placed alongside the alkali metals.\n\n**b. The Position of Helium:** The electronic configuration of Helium is $\\text{He}(2) \\longrightarrow 1s^2$. According to its configuration, it was supposed to be positioned in group 2. But the elements of group 2 are strongly electropositive. They are called alkaline earth metals. On the other hand, Helium is an inert gas. Its properties are similar to other inert gases like Neon, Argon, Krypton, Xenon and Radon. And its properties are not at all similar to the alkaline earth metals. Therefore, Helium is placed alongside the inert gases in group 18.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

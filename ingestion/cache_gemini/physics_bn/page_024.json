@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 24,
+  "pdf_page_no": 29,
+  "chapter_no": 1,
+  "chapter_title": "ভৌত রাশি ও পরিমাপ",
+  "sections": [
+    {
+      "section_no": "1.2",
+      "section_title": "স্লাইড ক্যালিপার্স",
+      "chunk_type": "theory",
+      "content_markdown": "চিত্র 1.10: কাগজ দিয়ে স্লাইড ক্যালিপার্স তৈরি।",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 1.10: কাগজ দিয়ে স্লাইড ক্যালিপার্স তৈরি।",
+      "figure_no": "1.10",
+      "box_2d": [
+        92,
+        103,
+        856,
+        839
+      ],
+      "description": "একটি কাগজের মডেল দিয়ে স্লাইড ক্যালিপার্স তৈরি করার বিভিন্ন ধাপের চিত্র এবং স্কেল প্রদর্শিত হয়েছে।",
+      "reading_order_anchor": "স্লাইড ক্যালিপার্স"
+    }
+  ]
+}

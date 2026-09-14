@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 255,
+  "pdf_page_no": 260,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\theta_c = \\sin^{-1}\\left(\\frac{1.45}{1.50}\\right) = \\sin^{-1}(0.97) = 75^\\circ$$ \n\nTherefore light has to incident at an angle of $75^\\circ$ or more.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.3.2",
+      "section_title": "Periscope and binocular",
+      "chunk_type": "theory",
+      "content_markdown": "There is something called periscope in submarines and it is possible to see above the water surface while under water by periscope. The periscope is made by a prism and its total internal reflection is more effective than a periscope made of ordinary mirrors (Figure 9.12). In order to reduce the length of binoculars, total internal reflection is done using prisms in it.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.3.3",
+      "section_title": "Prism",
+      "chunk_type": "theory",
+      "content_markdown": "In terms of optics, if a transparent medium is bound by another two surfaces of a transparent medium are not parallel, this is called prism. The light goes out in a direction parallel to the direction in which it enters the transparent medium. Though the direction remains unchanged, the light ray bends a little bit from the main ray. In the case of prism the direction of light changes (Figure 9.13). While entering the first surface the ray bends toward the normal. The second surface is not parallel, so when going out from this surface the light ray moves away from the normal but cannot move towards the main ray. Though in a prism the direction of light changes, it is important for another reason. After entering the prism, how much the ray of light will deviates from the main direction depends on the refractive index of the prism. We know that the refractive index depends on the wavelength or the color of light. So there is a different refractive index for different colors. Therefore, if there exists different colors in the same ray of light, when passing through a prism the ray of light of each color will change its direction in different angles. Therefore we will see that when coming out from the prism the light is separated into its component colors. This was first shown by Newton.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.12 : Prism is used instead mirror in periscope",
+      "figure_no": "9.12",
+      "box_2d": [
+        238,
+        531,
+        540,
+        845
+      ],
+      "description": "Schematic diagram showing total internal reflection using prisms in a periscope with a flower and an observer.",
+      "reading_order_anchor": "9.3.2 Periscope and binocular"
+    }
+  ]
+}

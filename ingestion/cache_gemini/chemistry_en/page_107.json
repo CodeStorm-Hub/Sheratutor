@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 107,
+  "pdf_page_no": 112,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Answer the questions 3 and 4 on the basis of the following electronic configurations:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. Which valency is impossible for the element marked by D?\n\na. 2 \n\nb. 3\n\nc. 4 \n\nd. 6",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. The element B—\n\ni. forms two types of bonds\n\nii. donates electron to A\n\niii. Dissolves in water combining with A\n\nWhich of the following is correct?\n\na. iii \n\nb. ii and iii\n\nc. i and iii \n\nd. i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. Which of the following denotes the formula of aluminum sulfate?\n\na. $\\text{Al}_2(\\text{SO}_4)_3$ \n\nb. $\\text{AlSO}_4$\n\nc. $\\text{Al}(\\text{SO}_4)_3$ \n\nd. $\\text{Al}_2\\text{SO}_4$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. What kind of compound is calcium oxide?\n\na. covalent \n\nb. ionic\n\nc. metallic \n\nd. polar",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Electronic configurations of elements A, B, and D",
+      "figure_no": "5.01",
+      "box_2d": [
+        178,
+        102,
+        351,
+        622
+      ],
+      "description": "Bohr model diagrams showing electronic configurations for atoms labeled A, B, and D.",
+      "reading_order_anchor": "Answer the questions 3 and 4 on the basis of the following electronic configurations:"
+    }
+  ]
+}

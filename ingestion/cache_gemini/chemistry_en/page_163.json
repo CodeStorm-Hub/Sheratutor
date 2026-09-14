@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 163,
+  "pdf_page_no": 168,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "concentration etc. the equilibrium also changes. Increase and decrease of products in equilibrium of a reversible reaction is controlled by the Le Chatelier's principle. The principle is:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the equilibrium of reversible reactions, if any of the factors (temperature, pressure and concentration of reactant) is changed, the equilibrium position will shift in such a way that the effect of factor is neutralized.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.1",
+      "section_title": "Explanation of Le Chatelier's Principle:",
+      "chunk_type": "theory",
+      "content_markdown": "The effect of temperature, pressure and concentration of reactants in equilibrium can be explained by the Le Chatelier's principle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.1.1",
+      "section_title": "Effect of Heat",
+      "chunk_type": "theory",
+      "content_markdown": "Let us consider a reversible reaction:\n\n$$\\text{N}_2 + 3\\text{H}_2 \\rightleftharpoons 2\\text{NH}_3 + 92 \\text{ kJ}$$\n\nThe forward part of this reaction is exothermic; when reactants $\\text{N}_2$ and $\\text{H}_2$ react to produce $\\text{NH}_3$, they also evolve heat. Conversely in the backward part, when $\\text{NH}_3$ converts to $\\text{N}_2$ and $\\text{H}_2$, it absorbs heat. Therefore, heat is required to be applied. Now we shall see according to Le Chatellier's principle, what will happen as we apply heat to this reversible reaction. According to the principle, if heat is applied, the effect due to that heat has to be neutralized. Application of heat will increase the forward reaction, increasing production of heat and that will not neutralize the heat. If the reverse reaction is increased, that will absorb more heat and neutralize the excess heat. Therefore, according to Le Chatelier's principle, we can say that, if heat is increased, the reverse reaction will also increase. In other words, the effect of application of heat in exothermic reactions will drive the equilibrium state to the left side, meaning, $\\text{NH}_3$ converts into $\\text{N}_2$ and $\\text{H}_2$.\n\nIn the same way, we can say, decrease of temperature in equilibrium will increase the exothermic forward reaction and neutralize the effect of lesser heat.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

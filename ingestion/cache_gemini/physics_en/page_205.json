@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 205,
+  "pdf_page_no": 210,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Ultrasound cleaner",
+      "chunk_type": "theory",
+      "content_markdown": "Ultrasound cleaner is used when we need to clean small instruments perfectly in the laboratory. The small instruments are immersed in a liquid, and subjected to the ultrasound wave, the vibrations of which remove the dirt.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.3.4",
+      "section_title": "Musical Sound",
+      "chunk_type": "theory",
+      "content_markdown": "We hear different kinds of sound, some of these sounds are sweet and some of them are annoying. The sweet sounds are the sounds of musical instruments. In figure 7.14 the waves of sound of some musical instrument are shown. You can see that all of them are periodic vibrations. In a tuning fork a perfect vibration is created. But in a musical sound there is not only a single wave, many waves superpose on one another to make the sound melodious.\n\nDifferent types of musical instruments that are used to produce melodious sound, can be divided into three groups:\n\n* **Musical instrument made of wire:** Ektara (Monochord), Violin, Sitar\n* **Musical instruments based on air flow:** Flute, Harmonium\n* **Musical instrument made of percussion:** Dhol, Tabla\n\nNow-a-days melodious sounds are produced using electronics in a completely different way.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.14: The sound waves of different musical instrument.",
+      "figure_no": "7.14",
+      "box_2d": [
+        278,
+        601,
+        483,
+        895
+      ],
+      "description": "Graphs showing periodic sound waves for violin, trumpet, flute, and flute (2) over a time scale.",
+      "reading_order_anchor": "7.3.4 Musical Sound"
+    }
+  ]
+}

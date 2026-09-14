@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 26,
+  "pdf_page_no": 31,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Proper Subset",
+      "chunk_type": "theory",
+      "content_markdown": "Of the subsets constructed from a set, the ones that have lesser number of elements than the original set is called proper set. For example, $A = \\{3, 4, 5, 6\\}$ and $B = \\{3, 5\\}$ are two sets. Here all elements of $B$ are also elements of $A$, and number of elements in $B$ is less than that of $A$.\n\n$\\therefore B$ is a proper subset of $A$ and is expressed as $B \\subset A$.\n\nIn the examples of subsets $Q$ and $R$ are each proper subset of $P$. It may be mentioned here that $\\emptyset$ is a proper subset of any set.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. Write down the subsets of $P = \\{x, y, z\\}$ and identify those that are proper subsets.\n\nSolution: Given, $P = \\{x, y, z\\}$\n\nSubsets of $P$ are $\\{x, y, z\\}, \\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x\\}, \\{y\\}, \\{z\\}, \\emptyset$.\n\nProper subsets of $P$ are $\\{x, y\\}, \\{x, z\\}, \\{y, z\\}, \\{x\\}, \\{y\\}, \\{z\\}, \\emptyset$\n\nObservation: If number of elements of a set is $n$, then it has $2^n$ subsets, and number of proper subsets is $2^n - 1$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Equivalent Set",
+      "chunk_type": "theory",
+      "content_markdown": "If two sets have the same elements, then they are said to be equivalent sets. For example, $A = \\{3, 5, 7\\}$ and $B = \\{5, 3, 3, 7\\}$ are two equivalent sets, then they are denoted by $A = B$. Note that $A = B$ if and only if $A \\subseteq B$ and $B \\subseteq A$.\n\nAgain, if $A = \\{3, 5, 7\\}, B = \\{5, 3, 3, 7\\}$ and $C = \\{7, 7, 3, 5, 5\\}$, then sets $A, B$ and $C$ are equivalent sets. That is $A = B = C$\n\nObservation: If order of elements in the set are changed or certain element is repeated set is not changed.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Difference of Sets",
+      "chunk_type": "theory",
+      "content_markdown": "Let $A = \\{1, 2, 3, 4, 5\\}$ and $B = \\{3, 5\\}$. If we delete the elements of set $B$ from that of $A$, then we get $\\{1, 2, 4\\}$ and is denoted by $A \\setminus B$ or $A - B$ and is read $A$ delete $B$.\n\n$\\therefore A - B = \\{1, 2, 3, 4, 5\\} - \\{3, 5\\} = \\{1, 2, 4\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. If $P = \\{x : x \\text{ is a factor of } 12\\}$ and $Q = \\{x : x \\text{ is a multiple of } 3 \\text{ and } x \\leq 12\\}$, then determine $P - Q$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 199,
+  "pdf_page_no": 204,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "called chain reactions. You have seen, when we strike a $^{235}_{92}\text{U}$ nucleus with a neutron it breaks into one $^{141}_{56}\text{Ba}$ and one $^{92}_{36}\text{Kr}$ nucleus, $03$ neutrons ($^1_0\text{n}$) and huge amount of energy. If we can control the pace of these three neutrons, they will strike other $^{235}_{92}\text{U}$ isotopes. That way, more neutrons will be produced. These newer neutrons will again do the same thing if they are brought under control, resulting in more neutrons. This kind of reaction is a chain reaction. The control of nuclear chain reaction is quite a complex thing and chain reaction is the basis of electricity generation in nuclear reactors.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Generation of Electricity",
+      "chunk_type": "theory",
+      "content_markdown": "Nuclear reactors are used for power generation. The reactor which helps control the chain reactions that occur during a nuclear fission reaction is called a nuclear reactor. These reactors can produce huge amount of electricity. The smaller elements that are produced during a fission reaction are highly accelerated. These smaller elements bombard each other as well as the reactor walls and produce a huge amount of heat energy. This heat is channeled through to an elevator chamber where it is used for producing vapors. The vapors are then channeled to run turbines so that electricity can be produced. In some versions, the elevator chamber is situated within the reactor. Nuclear reactors are used for",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.14: Nuclear Fusion Reaction.",
+      "figure_no": "8.14",
+      "box_2d": [
+        110,
+        608,
+        331,
+        901
+      ],
+      "description": "Schematic diagram of a nuclear fusion reaction showing light nuclei fusing together to form helium and neutrons.",
+      "reading_order_anchor": "called chain reactions."
+    },
+    {
+      "caption": "Fig 8.15: Nuclear reactor.",
+      "figure_no": "8.15",
+      "box_2d": [
+        623,
+        423,
+        856,
+        866
+      ],
+      "description": "Photograph of a nuclear reactor facility showing cooling towers and buildings.",
+      "reading_order_anchor": "Generation of Electricity"
+    }
+  ]
+}

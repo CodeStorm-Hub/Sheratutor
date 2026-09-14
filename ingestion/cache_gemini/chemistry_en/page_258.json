@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 258,
+  "pdf_page_no": 263,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "## Exercise\n\n### Multiple Choice Questions\n\n1. Which of the records in the table exhibits the characteristics of a metal?\n\n| | Melting Point | Boiling Point | Density |\n|---|---|---|---|\n| a. | 1539 | 2887 | 7.86 |\n| c. | -113 | 45 | 0.79 |\n\n| | Melting Point | Boiling Point | Density |\n|---|---|---|---|\n| b. | -219 | 183 | 0.002 |\n| d. | 117 | 888 | 1.96 |\n\nAnswer the questions 2 and 3 from the following stem:\nA group of students were investigating rust. They kept nails in four test tubes according to the figure below:",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "10.1",
+      "section_title": "Exercise",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. Which of the test tubes nail will exhibit the highest amount of rust?\n   a. $1^{\\text{st}}$\n   b. $2^{\\text{nd}}$\n   c. $3^{\\text{rd}}$\n   d. $4^{\\text{th}}$\n\n3. The decisions that can be reached from the experiment are:\n   i. Rusting needs oxygen\n   ii. Salt is acting as a catalyst\n   iii. The presence of oxygen only does not confirm rust.\n\n   Which is correct?\n   a. i and ii\n   b. ii and iii\n   c. i and iii\n   d. i, ii and iii\n\n4. Which of the following specimens of gold is hardest?\n   a. 18 karat\n   b. 21 karat\n   c. 22 karat\n   d. 24 karat\n\n5. Sulfuric acid is added to water in drops during the dilution method because sulfuric acid-\n   i. has a high hydration enthalpy\n   ii. is a di-alkaline acid\n   iii. is a corrosive substance",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Investigation of rust in four test tubes",
+      "figure_no": "10.01",
+      "box_2d": [
+        410,
+        267,
+        538,
+        699
+      ],
+      "description": "Four test tubes showing iron nails under different conditions with air, boiled water, oil layer, anhydrous calcium chloride, oxygen, and cold water.",
+      "reading_order_anchor": "A group of students were investigating rust. They kept nails in four test tubes according to the figure below:"
+    }
+  ]
+}

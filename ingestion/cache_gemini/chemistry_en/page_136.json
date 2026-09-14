@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 136,
+  "pdf_page_no": 141,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Experiment",
+      "chunk_type": "theory",
+      "content_markdown": "Name of Experiment: Preparation of $0.1$ molar sodium carbonate solution in a $250\\text{mL}$ volumetric flask.\n\nPrinciple : Sodium carbonate (\\text{Na}_2\\text{CO}_3) is a primary standard substance because it is found in pure and dry state, it can be directly weighed on a balance, its molar solution is long lasting. To prepare $0.1$ molar sodium carbonate solution in a volumetric flask, the following calculation is necessary:\n\nHere, $V = 250\\text{mL}$, $S = 0.1$ molar, $M = 23 \\times 2 + 12 + 16 \\times 3 = 106$, $w = ?$\n\n$$w = \\frac{SVM}{1000}$$\n\n$$w = \\frac{0.1 \\times 250 \\times 106}{1000} \\text{ gram}$$\n\n$$w = 2.65 \\text{ gram}$$\n\nIf we weigh and put $2.65$ grams of \\text{Na}_2\\text{CO}_3 inside a volumetric flask and fill the flask with $250\\text{mL}$ water, the $0.1$ molar sodium carbonate solution will be prepared. However, this molar solution preparation is very tough as to weigh $2.65$ gram sodium carbonate is really tough. Therefore, the solution is made at a nearer molarity.\n\nNecessary Instruments: $250\\text{mL}$ volumetric flask, funnel, weighing bottle, chemical balance, wash bottle.\n\nChemicals: Pure sodium carbonate, water\n\nProcedure\n1. A funnel is inserted in the mouth of a clean $250\\text{mL}$ volumetric flask.\n2. A dry weighing bottle is weighed on the chemical balance.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

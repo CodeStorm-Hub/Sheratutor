@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 229,
+  "pdf_page_no": 234,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $-\\frac{1}{2}x + y = -1$ \n$x - 2y = 2$ \n\n৮. $-\\frac{1}{2}x - y = 0$ \n$x - 2y = 0$ \n\n৯. $-\\frac{1}{2}x + y = -1$ \n$x + y = 5$ \n\n১০. $ax - cy = 0$ \n$cx - ay = c^2 - a^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সরল সহসমীকরণের সমাধান",
+      "chunk_type": "theory",
+      "content_markdown": "আমরা শুধু সমঞ্জস্য ও পরস্পর অনির্ভরশীল সরল সহসমীকরণের সমাধান সম্পর্কে আলোচনা করবো। এরূপ সমীকরণজোটের একটিমাত্র (অনন্য) সমাধান আছে। \n\nএখানে, সমাধানের চারটি পদ্ধতির উল্লেখ করা হলো: \n১. প্রতিস্থাপন পদ্ধতি ২. অপনয়ন পদ্ধতি ৩. আড়গুণন পদ্ধতি ও ৪. লৈখিক পদ্ধতি। \n\nআমরা অষ্টম শ্রেণিতে প্রতিস্থাপন ও অপনয়ন পদ্ধতিতে সমাধান কীভাবে করতে হয় জেনেছি। এ দুই পদ্ধতির একটি করে উদাহরণ দেওয়া হলো:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. প্রতিস্থাপন পদ্ধতিতে সমাধান কর: \n$2x + y = 8$ \n$3x - 2y = 5$ \n\nসমাধান: প্রদত্ত সমীকরণদ্বয় \n$2x + y = 8 \\dots(1)$ \n$3x - 2y = 5 \\dots(2)$ \n\nসমীকরণ (1) হতে পাই, $y = 8 - 2x \\dots(3)$ \nসমীকরণ (2) এ $y$ এর মান $8 - 2x$ বসিয়ে পাই, \n$3x - 2(8 - 2x) = 5$ \nবা, $3x - 16 + 4x = 5$ \nবা, $7x = 5 + 16$ \nবা, $7x = 21$ \nবা, $x = 3$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

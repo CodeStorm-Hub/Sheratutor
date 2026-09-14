@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 193,
+  "pdf_page_no": 198,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(ii) Energy can be transferred from one place to another through waves. The more the energy, the more the amplitude of the wave. Energy is proportional to the amplitude of the wave. If the amplitude is doubled, energy is increased four times.\n\n(iii) Every wave has a velocity; this velocity depends on the nature of the medium. In air, the velocity of sound is $330\\text{ m/s}$, in water this velocity is $1493\\text{ m/s}$! The velocity of a wave in a tight rope (under tension) will be more than the velocity of the wave in a loose rope.\n\n(iv) Reflection or refraction occurs for waves, it is discussed elaborately for light, in the next chapter. At present you know that at the time of travelling from one medium to another medium, if part of a wave returns back to the first medium, it is called reflection (Figure 7.02). When a wave travels from the first medium to the second, it is refraction. When we hear an echo of sound, it is reflection. If we hear external sound when we are submerged under water it is due to refraction of sound.\n\n(v) Among all the characteristics of waves, the most important is superposition, even though this is not observed often by our eyes in our daily lives. Let us consider that two waves coming from two different places reache one place. When one wave is positive another wave is then negative what happens then? These are the subjects of superposition, which will give you a deep insight into waves, and you will be able be understand it very clearly. At present,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.02: A wave is reflecting and refracting through a wire of different cross section. (a) When it travels from a thin wire to a thick wire one type of reflection occurs (b) When it travels from a thick wire to a narrow wire another type of reflection occurs",
+      "figure_no": "7.02",
+      "box_2d": [
+        116,
+        153,
+        279,
+        471
+      ],
+      "description": "Schematic diagrams showing wave pulses reflecting and refracting at boundaries between wires of different thicknesses.",
+      "reading_order_anchor": "(iv) Reflection or refraction occurs for waves..."
+    },
+    {
+      "caption": "Figure 7.03: Addition of two waves can create a large wave, one can even cancel the other.",
+      "figure_no": "7.03",
+      "box_2d": [
+        564,
+        569,
+        824,
+        856
+      ],
+      "description": "Diagrams illustrating the superposition (addition) of two waves resulting in constructive and destructive interference.",
+      "reading_order_anchor": "(v) Among all the characteristics of waves..."
+    }
+  ]
+}

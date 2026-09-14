@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 131,
+  "pdf_page_no": 136,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "These accounts presented below a balanced equation of a chemical reaction are called its Stoichiometry. When both reactants and products are gaseous substances, in the Stoichiometry, under standard conditions, 1 mole gaseous substance has the volume of $22.4$ liter.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example:**\n\n**Problem:** How much oxygen is necessary for $5\\text{ gram}$ magnesium to react and produce magnesium oxide completely?\n\n**Solution:** Magnesium reacts with oxygen and produces magnesium oxide. The balanced equation of this reaction along with its Stoichiometry is shown above. Accordingly with this Stoichiometry:\n\n$48\\text{ gram magnesium reacts with } 32\\text{ gram oxygen}$\n\n$1\\text{ gram magnesium reacts with } \\frac{1 \\times 32}{48}\\text{ gram oxygen}$\n\n$5\\text{ gram magnesium reacts with } \\frac{1 \\times 32 \\times 5}{48} = 3.33\\text{ gram oxygen}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** How many grams of magnesium oxide will be produced if we put the necessary amount of oxygen with $2\\text{ gram}$ magnesium metal?\n\n**Solution:** According to the Stoichiometry of the reaction:\n\n$48\\text{ gram Mg metal produces } 80\\text{ gram magnesium oxide}$\n\n$1\\text{ gram Mg metal produces } \\frac{80}{48}\\text{ gram magnesium oxide}$\n\n$2\\text{ gram Mg metal produces } \\frac{2 \\times 80}{48} = 3.33\\text{ gram magnesium oxide}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** How much oxygen is necessary alongside the required amount of magnesium metal to produce $10\\text{ gram}$ magnesium oxide?\n\n**Solution:** According to the Stoichiometry of the reaction:\n\n$80\\text{ gram magnesium oxide is produced from } 32\\text{ gram oxygen}$\n\n$1\\text{ gram magnesium oxide is produced from } \\frac{32}{80}\\text{ gram oxygen}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

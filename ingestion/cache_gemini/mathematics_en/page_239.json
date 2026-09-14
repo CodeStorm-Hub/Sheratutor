@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 239,
+  "pdf_page_no": 244,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise 11.2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. If $a, b, c$ are continued proportional, which one of the followings is correct?\n1) $a^2 = bc$ 2) $b^2 = ac$\n3) $ab = bc$ 4) $a = b = c$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. The ratio of ages of Arif and Akib is $5 : 3$. If Arif is of 20 years old, how many years later the ratio of their ages will be $7 : 5$?\n1) 5 years 2) 6 years\n3) 8 years 4) 10 years",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. If the sides of a square double, how much will the area of a square be increased?\n1) 2 times 2) 3 times\n3) 4 times 4) 6 times",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. If $x : y = 7 : 5, y : z = 5 : 7$, then $x : z =$ how much?\n1) $35 : 49$ 2) $35 : 35$\n3) $25 : 49$ 4) $49 : 25$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. If $b, a, c$ are continued proportional, then-\n$(i) a^2 = bc$\n$(ii) \\frac{b}{a} = \\frac{c}{a}$\n$(iii) \\frac{a + b}{a - b} = \\frac{c + a}{c - a}$\nWhich one of the following is correct?\n1) $i$ 2) $i$ and $ii$ 3) $i$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "6. If $x : y = 2 : 1$ and $y : z = 2 : 1$, then-\n$(i) x, y, z$ are continued proportional\n$(ii) z : x = 1 : 4$\n$(iii) y^2 + zx = 4yz$\nWhich one of the following is correct?\n1) $i$ and $ii$ 2) $i$ and $iii$ 3) $ii$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "7. If $\\frac{a}{x} = \\frac{m^2 + n^2}{2mn}$, then $\\frac{\\sqrt{a + x}}{\\sqrt{a - x}} =$ what?\n1) $\\frac{m}{n}$ 2) $\\frac{m + n}{m - n}$ 3) $\\frac{m - n}{m + n}$ 4) $\\frac{n}{m}$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

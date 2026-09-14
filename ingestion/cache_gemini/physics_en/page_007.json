@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 7,
+  "pdf_page_no": 12,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Before the eighteenth century heat was considered a mass-less liquid. In 1768 Count Rumford showed that heat is a kind of energy and mechanical energy can be converted into heat energy. Lord Kelvin, in 1850, introduced two important laws of thermodynamics on the basis of the research work of many other scientists.\n\nAn extensive research started on electricity and magnets at that time. In 1778 Coulomb invented the law of force between charges. Many kinds of research were started after the invention of the electric battery by Volta in 1800. In 1820 Oersted showed that magnets can be made by the flow of electricity. In 1831 Faraday invented just the opposite process given by Oersted. They showed that electricity can be produced by varying the magnetic field. In 1864 Maxwell (Figure 1.03) expressed the varying electric and magnetic fields with a single law, the famous Maxwell equation. Here, he also showed that actually light is an electromagnetic wave. Electricity and magnets are not different. In fact they are the two forms of the same energy. This invention was well-timed because in 1801 Young proved the wave nature of light through experiments.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3.3",
+      "section_title": "Introduction to Modern Physics",
+      "chunk_type": "theory",
+      "content_markdown": "From the very beginning of 19th century scientists felt that many things could not be explained with the help of existing physics. Dalton introduced atomic theory in 1803, Thomson invented an electron within the atom, In 1911 Rutherford showed that at the center of the atom, there is the smallest nucleus and there are positive charges in it. But it was found that the revolving electron model around the nucleus could not be explained because, according to electromagnetic theory, an electron should radiate its energy and fall into the nucleus, but practically it never happens. In 1900, Max Planck introduced quantum theory, which made it possible to explain black body radiation. Later, scientist Niels Bohr used quantum theory to explain the stability of the atom. In 1924, scientist Satyendra Nath Bose applied the concept of quantum theory to develop quantum",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.02: Copernicus , Galileo and Newton",
+      "figure_no": "1.02",
+      "box_2d": [
+        90,
+        182,
+        278,
+        814
+      ],
+      "description": "Portraits of Copernicus, Galileo, and Newton.",
+      "reading_order_anchor": "Before the eighteenth century heat was considered a mass-less liquid."
+    }
+  ]
+}

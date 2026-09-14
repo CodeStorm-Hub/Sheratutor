@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 115,
+  "pdf_page_no": 120,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3. The formula of 1 mole water is $\\text{H}_2\\text{O}$.\n4. 1 molecule $\\text{H}_2\\text{O}$ contains 2 hydrogen atoms and an oxygen atom.\n5. 1 mole $\\text{H}_2\\text{O}$ molecule contains 2 mole hydrogen and 1 mole oxygen atoms.\n6. In 1 mole $\\text{H}_2\\text{O}$ molecule, the mass of $\\text{H}$ atom is $1 \\times 2 = 2\\text{ g}$ and the mass of $\\text{O}$ atom is $16 \\times 1 = 16\\text{ g}$. Therefore, the total mass of 1 mole $\\text{H}_2\\text{O}$ molecule is $2 + 16 = 18\\text{ g}$.\n7. In 1 mole $\\text{H}_2\\text{O}$ molecule, the number of $\\text{H}$ atoms are $6.023 \\times 10^{23} \\times 2 = 1.20 \\times 10^{24}$ and the number of $\\text{O}$ atoms are $6.023 \\times 10^{23} \\times 1 = 6.023 \\times 10^{23}$ and the number of $\\text{H}_2\\text{O}$ molecules are $6.023 \\times 10^{23}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.1.3",
+      "section_title": "Molar Solution",
+      "chunk_type": "theory",
+      "content_markdown": "Suppose a solute is dissolved in a solvent. At a fixed temperature, if one mole solute is dissolved in $1\\text{ liter}$ solution, then that solution is called molar solution or $1\\text{ molar}$ solution. If $2\\text{ mole}$ solute is dissolved in $1\\text{ liter}$ solution, that solution is called $2\\text{ molar}$ solution.\n\nAn example can make us differentiate between solute, solvent and solution. Take about half a glass of water. Add some edible salt to the water and mix it with a spoon. You will see the salt is no more visible in the water, after a while. This mix of salt and water is a solution. Here water is the solvent and salt is the solute.\n\nLiquids such as water, acid, alcohol etc. are necessary in preparing solutions. In this chapter, chiefly we shall use water as the solvent. When water is used as solvent in a solution, the solution is called water solution.\n\n$$\\text{Solution} = \\text{Solute} + \\text{Solvent}$$\n\nYou may come across the terms Dilute Solution and Concentrated Solution frequently. $10\\text{ gram}$ salt mixed in $250\\text{ mL}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Dilute and concentrated solution.",
+      "figure_no": "6.01",
+      "box_2d": [
+        693,
+        532,
+        907,
+        915
+      ],
+      "description": "Two glass tubes or beakers showing dilute solution and concentrated solution with labels pointing to them.",
+      "reading_order_anchor": "You may come across the terms Dilute Solution and Concentrated Solution frequently."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 70,
+  "pdf_page_no": 75,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "c. The Position of Lanthanide and Actinide Groups",
+      "chunk_type": "theory",
+      "content_markdown": "c. **The Position of Lanthanide and Actinide Groups:** The Lanthanide elements are supposed to be set in the period 6 and group 3 of the periodic table. The original position of Actinide group is in period 7 and group 3. If they are placed in these positions, that hampers the beauty of the table. Therefore, to maintain the beauty of the table, these two groups of elements are moved to a separate table just beneath the main table.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.6",
+      "section_title": "Periodic Properties of Elements",
+      "chunk_type": "theory",
+      "content_markdown": "## 4.6 Periodic Properties of Elements\n\nThe elements in the periodic table have some properties, like: metallic properties, non-metallic properties, atomic radius, ionization energy, electronegativity, electron affinity etc. These properties are called periodic properties.\n\na. **Metallic Property:** Elements which are glossy, produce metallic sound when struck, and conductor to heat and electricity, we call them metals. Modern definition goes, the elements that turn into positive ions donating one or more electrons are metals. This property to donate electrons by the metals is called metallic property. The more an element is prone to donate electrons it is regarded to be endowed with more metallic property. Lithium ($\text{Li}$) is a metal as it donates an electron and becomes $\text{Li}^+$.\n\n$$\text{Li} \rightarrow \text{Li}^+ + \text{e}^-$$\n\nAny period in the periodic table has got the most metallic on the left and gradually elements are less metallic as the period extends to the right.\n\nb. **Non-metallic Property:** Elements which are not glossy, don’t produce metallic sound and non-conductor of heat and electricity are called non-metallic. In the modern terminology, the elements which turn into negative ions accepting one or more electrons are called non-metallic elements. This tendency to accept electrons is called their non-metallic property. The more an element is prone to accept electrons it is regarded to be endowed with more non-metallic property. Chlorine ($\text{Cl}$) is a non-metal as it accepts an electron and becomes $\text{Cl}^-$.\n\n$$\text{Cl} + \text{e}^- \rightarrow \text{Cl}^-$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 284,
+  "pdf_page_no": 289,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": "14.9",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. চিত্রের ঘূর্ণন প্রতিসমতা নির্ণয় কর:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.10",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. ইংরেজি বর্ণমালার যে সকল বর্ণের:\nক) অনুভূমিক আয়না\nখ) উল্লম্ব আয়না\nগ) অনুভূমিক ও উল্লম্ব উভয় আয়না\nসাপেক্ষে প্রতিফলন প্রতিসমতা রয়েছে সেগুলো আঁক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.11",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. প্রতিসমতা নেই এমন তিনটি চিত্র অঙ্কন কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.12",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. একটি লেবু আড়াআড়ি কেটে চিত্রের ন্যায় আকার পাওয়া গেল। সমতলীয় চিত্রটির ঘূর্ণন প্রতিসমতা নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.13",
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| চিত্র | ঘূর্ণন কেন্দ্র | ঘূর্ণন প্রতিসমতার মাত্রা | ঘূর্ণন প্রতিসমতার কোণ |\n| :--- | :--- | :--- | :--- |\n| বর্গ | | | |\n| আয়ত | | | |\n| রম্বস | | | |\n| সমবাহু ত্রিভুজ | | | |\n| অর্ধবৃত্ত | | | |\n| সুষম পঞ্চভুজ | | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.14",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. যে সকল চতুর্ভুজের রেখা প্রতিসমতা ও $1$ এর অধিক মাত্রার ঘূর্ণন প্রতিসমতা রয়েছে, এদের তালিকা কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.15",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. $1$ এর অধিক মাত্রার ঘূর্ণন প্রতিসমতা রয়েছে এরূপ চিত্রের ঘূর্ণন কোণ $18^\\circ$ হতে পারে কি? তোমার উত্তরের পক্ষে যুক্তি দাও।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯: চিত্রের ঘূর্ণন প্রতিসমতা",
+      "figure_no": "14.9",
+      "box_2d": [
+        165,
+        205,
+        253,
+        843
+      ],
+      "description": "বিভিন্ন জ্যামিতিক আকৃতির ঘূর্ণন প্রতিসমতা নির্ণয়ের চিত্রসমূহ",
+      "reading_order_anchor": "৯. চিত্রের ঘূর্ণন প্রতিসমতা নির্ণয় কর:"
+    },
+    {
+      "caption": "চিত্র ১২: লেবু কাটার পর প্রাপ্ত আকার",
+      "figure_no": "14.12",
+      "box_2d": [
+        445,
+        793,
+        514,
+        866
+      ],
+      "description": "আড়াআড়ি কাটা লেবুর একটি সমতলীয় চিত্র",
+      "reading_order_anchor": "১২. একটি লেবু আড়াআড়ি কেটে চিত্রের ন্যায় আকার পাওয়া গেল।"
+    }
+  ]
+}

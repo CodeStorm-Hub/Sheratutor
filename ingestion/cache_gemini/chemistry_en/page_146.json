@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 146,
+  "pdf_page_no": 151,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "produce the product, which is called a forward reaction. In the other one, the products react again and convert to the reactant, which is called a backward reaction. Reversible reactions are written in the equation with double headed half arrow marks in the midst of reactants and products. For example, ethanol and ethanoic acid react in the presence of hydrochloric acid and produce ethyl ethanoate ester and water. Conversely, ethyl ethanoate ester and water react with each other and produce ethanol and ethanoic acid. In an equation, it can be shown as,\n\n$$\\text{C}_2\\text{H}_5\\text{OH} + \\text{CH}_3\\text{COOH} \\underset{\\text{HCl}}{\\rightleftharpoons} \\text{CH}_3\\text{COOC}_2\\text{H}_5 + \\text{H}_2\\text{O}$$\nEthanol Ethanoic acid Ethyl ethanoate ester Water\n\nSimilarly, hydrogen and iodine react and produce hydrogen iodide as a product and this product again converts into hydrogen and iodine. This is also a reversible reaction.\n\n$$\\text{H}_2 + \\text{I}_2 \\rightleftharpoons 2\\text{HI}$$\n\nIndeed, all reactions are reversible reactions, but in some reactions, the backward reaction is of so slow rate, that they appear to be irreversible reactions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.2.2",
+      "section_title": "Heat Change and Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "You have already learned that heat change is a factor in chemical reactions. According to absorption of heat and generation of heat, reactions are classified into two categories: exothermic reactions and endothermic reactions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exothermic Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "When heat evolves at the time of producing the products from the reactants, the reaction is called an exothermic reaction. For example, 1 mole nitrogen and 3 moles hydrogen in the Heber process produce 2 mole ammonia and 92 kilojoules of heat. The reaction is:\n\n$$\\text{N}_2\\text{(g)} + 3\\text{H}_2\\text{(g)} \\underset{450^\\circ\\text{C}-550^\\circ\\text{C}}{\\overset{\\text{Fe}, 200-250\\text{ atm}}{\\rightleftharpoons}} 2\\text{NH}_3\\text{(g)} + 92 \\text{ kJ}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

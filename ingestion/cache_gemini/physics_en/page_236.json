@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 236,
+  "pdf_page_no": 241,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "An important point to note is, when a good reflection is necessary, quite a different kind of reflection is done instead of using an ordinary plane mirror. We will see in the next chapter how light is reflected by a completely transparent medium.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.8.2",
+      "section_title": "Convex Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "A diminished and erect image can be created by using a convex mirror. So a convex mirror is used to see a large scene in a small region. Expert drivers always trying to notice of what is happening behind the car while driving. So, there is a rear view mirror in front of the driver. Convex mirrors are used in these mirrors so that drivers can see a vast area behind the car with the help of a small mirror.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.8.3",
+      "section_title": "Concave Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "The most important use of concave mirrors is in telescopes. Concave mirrors are used in the largest and the smallest telescopes of the world. Many of us generally think that the only function of a good telescope is to create a large image of the small objects situated far away. Actually that's not true, the function of a good telescope is also to create a distinct image in very dim light. That is why the bigger the concave mirror is, the more light it can converge to create a clear image. Concave mirrors are used in all of the large telescopes of the world.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Another use of concave mirrors is to create a parallel beam of light. Concave mirrors are used in search lights of ships or launches. The light source is kept at the focus of the mirror, so the light rays are incident on the concave mirror and reflected back as parallel beams of light. The torch lights you use in your daily life, also have the bulb kept just at the focus of a concave mirror!\n\nSince an erect and magnified image is formed when an object is placed within the focal length of a mirror, we use concave mirrors if we want to see a magnified image of any",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.27: When an intense light source is placed at the focal point, then that light is reflected at the concave mirror as parallel beam of light.",
+      "figure_no": "8.27",
+      "box_2d": [
+        446,
+        563,
+        694,
+        882
+      ],
+      "description": "Ray diagram showing light rays diverging from a focal point onto a concave mirror and reflecting back as a parallel beam of light.",
+      "reading_order_anchor": "8.8.3 Concave Mirror"
+    }
+  ]
+}

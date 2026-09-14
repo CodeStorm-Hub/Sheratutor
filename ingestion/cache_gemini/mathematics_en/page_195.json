@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 195,
+  "pdf_page_no": 200,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "So, opposite side of the angle $A = 4$, adjacent side $= 3$\nhypotenuse $= \\sqrt{4^2 + 3^2} = \\sqrt{25} = 5$\nTherefore, $\\sin A = \\frac{4}{5}$, $\\cos A = \\frac{3}{5}$, $\\cot A = \\frac{3}{4}$\n$\\operatorname{cosec} A = \\frac{5}{4}$, $\\sec A = \\frac{5}{3}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| | | |\n| :--- | :--- | :--- |\n| $\\operatorname{cosec} \\theta = \\frac{1}{\\sin \\theta}$ | $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$ | $\\sin^2 \\theta + \\cos^2 \\theta = 1$ |\n| $\\sec \\theta = \\frac{1}{\\cos \\theta}$ | $\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}$ | $\\sec^2 \\theta = 1 + \\tan^2 \\theta$ |\n| $\\cot \\theta = \\frac{1}{\\tan \\theta}$ | | $\\operatorname{cosec}^2 \\theta = 1 + \\cot^2 \\theta$ |",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. $\\angle B$ is the right-angle of a right angled triangle $ABC$. If $\\tan A = 1$ then verify the truth of $2\\sin A \\cdot \\cos A = 1$.\n\nSolution: Given that, $\\tan A = 1$\nSo, opposite side of the angle = adjacent side $= a$\nhypotenuse $= \\sqrt{a^2 + a^2} = \\sqrt{2}a$\nTherefore, $\\sin A = \\frac{a}{\\sqrt{2}a} = \\frac{1}{\\sqrt{2}}$, $\\cos A = \\frac{a}{\\sqrt{2}a} = \\frac{1}{\\sqrt{2}}$\nNow, left hand side $= 2\\sin A \\cdot \\cos A = 2 \\cdot \\frac{1}{\\sqrt{2}} \\cdot \\frac{1}{\\sqrt{2}} = 2 \\cdot \\frac{1}{2} = 1 = \\text{right hand side}$.\n$\\therefore 2\\sin A \\cdot \\cos A = 1$ is true.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n$\\angle C$ is the right angle of a right angled triangle $ABC$, if $AB = 29 \\text{ cm}$, $BC = 21 \\text{ cm}$ and $\\angle ABC = \\theta$, find the value of $\\cos^2 \\theta - \\sin^2 \\theta$.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. Prove that, $\\tan \\theta + \\cot \\theta = \\sec \\theta \\cdot \\operatorname{cosec} \\theta$\n\nSolution:\nLeft hand side $= \\tan \\theta + \\cot \\theta$\n$= \\frac{\\sin \\theta}{\\cos \\theta} + \\frac{\\cos \\theta}{\\sin \\theta}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Right angled triangle ABC",
+      "figure_no": "9.01",
+      "box_2d": [
+        92,
+        685,
+        227,
+        845
+      ],
+      "description": "A right-angled triangle ABC with angle A at vertex A, side lengths 3 and 4, and hypotenuse 5.",
+      "reading_order_anchor": "So, opposite side of the angle A= 4, adjacent side= 3"
+    },
+    {
+      "caption": "Fig 9.02: Right angled triangle ABC with side a",
+      "figure_no": "9.02",
+      "box_2d": [
+        556,
+        677,
+        688,
+        835
+      ],
+      "description": "A right-angled triangle ABC with angle A at vertex A, side lengths a, and hypotenuse sqrt(2)a.",
+      "reading_order_anchor": "Solution: Given that, tan A = 1"
+    }
+  ]
+}

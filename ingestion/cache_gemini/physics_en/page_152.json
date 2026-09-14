@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 152,
+  "pdf_page_no": 157,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "familiar example of it is water; it can exist in three states, e.g. solid, liquid and gas. Whether it is ice, water or vapor depends on how the molecules are within it.\n\nWhen a substance remains in the gaseous state, then its molecules are free, the distance between one another is very large. When the substance is in a liquid state, then though the molecule remains comparatively closer but they can move with respect to one another. In solid state, molecules remain the closest, but can not move with respect to the other.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The distance among the molecules of a gas are very large. Those substances have no regular volume and shape. Molecules in a liquid remains closer and they have a particular volume but no regular shape. In a solid, molecules are very close and they are almost in contact with each other, so they have a definite volume and a regular shape.\n\nIn a gas, molecule can move freely, in liquids the molecules vibrate, and one can pass through from one side to the other, in solids though the molecules can vibrate but they can not change their position.\n\nNormally we cannot see the molecules of solids, liquids or gases, we see it as solid, liquid or gas. The properties of molecules which have been mentioned above, are exhibited in their solid, liquid or gaseous state too.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.13: (a) solid (b) liquid (c) gas.",
+      "figure_no": "5.13",
+      "box_2d": [
+        307,
+        185,
+        485,
+        831
+      ],
+      "description": "Particle model diagrams representing (a) solid, (b) liquid, and (c) gas states.",
+      "reading_order_anchor": "When a substance remains in the gaseous state..."
+    }
+  ]
+}

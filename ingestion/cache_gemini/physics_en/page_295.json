@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 295,
+  "pdf_page_no": 300,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3) Again since the aluminium foil is a conductor, negative charges will get absorbed immediately and will fall down being repelled by the comb.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "General questions\n\n1. There is a minimum value of charge; this is $1.6 \\times 10^{-19}\\,\\text{C}$, is there a similar minimum value of mass?\n2. Why is it that static electricity experiments don’t work properly during rainy season?\n3. Can you give equal and opposite charges to two similar metallic spheres without touching them?\n4. If capacitance is compared to a container, then what should potential be compared to?\n5. Is it possible for a point to have zero potential but non-zero electric field?\n6. Explain the phenomenon of charging a body based on the basis of structure of atom.\n7. Describe how a body can be charged by the process of friction.\n8. What is electrostatic induction?\n9. What is inducing charge and induced charge?\n10. Describe how a body can be charged by the process of electrostatic induction?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 174,
+  "pdf_page_no": 179,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "liquid, i.e., the bulb will expand a little bit.\nAfter that if we continue applying heat, the height of the liquid will increase. As the expansion of liquids is more than solids, we will observe that finally the level of the liquid has reached mark C from B after passing the mark A.\nIf we multiply the height AB by the cross section of the tube, we will get the expansion $V_B$ of the bulb. Again if we multiply the height $B_C$ by the cross section, we will get the real expansion $V_L$ of the liquid. Here the apparent expansion $V_a$ is\n$$V_a = V_L - V_B$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3.3",
+      "section_title": "Expansion of Gases",
+      "chunk_type": "theory",
+      "content_markdown": "A solid has both shape and volume, so no problem arises in understanding the expansion of the solid. Though a liquid has no definite shape, it has a definite volume. So, we can explain or measure its expansion. It is very interesting in the case of gas. Because neither does it have a definite shape nor a definite volume. A gas takes the whole volume of its container. If the same amount of a gas is kept in containers of different volumes, the pressures of the gases will be different. So, we can see that the increase of volume of a gas will be measured without changing its pressure as shown in the Fig 6.07. An object of definite weight is placed on the piston of a cylinder so that it always applies equal pressure to the gas contained in the cylinder.\nBy applying pressure, liquids or solids cannot be compressed very much. But a gas can be compressed very easily. Therefore, at first we have to know the relation between the pressure and volume of a gas. It is called the ideal gas",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.07 : The volume of air is increased by applying heat.",
+      "figure_no": "6.07",
+      "box_2d": [
+        518,
+        137,
+        768,
+        471
+      ],
+      "description": "Two cylinders with pistons and weights on top, one being heated by a candle flame from below, illustrating gas expansion under constant pressure.",
+      "reading_order_anchor": "Expansion of Gases"
+    }
+  ]
+}

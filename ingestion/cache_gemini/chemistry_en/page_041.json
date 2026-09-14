@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 41,
+  "pdf_page_no": 46,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": "3.5.2",
+      "section_title": "Mass Number",
+      "chunk_type": "theory",
+      "content_markdown": "The mass number of an atom is denoted by the total number of protons and neutrons in its nucleus. The mass number is expressed by $A$. Since the mass number is the summation of neutrons and protons, we can get the number of neutrons in an atom by deducing its proton number from the mass number. The mass number of Sodium (\\text{Na}) is $23$, its proton number is $11$; so the number of neutrons in sodium is $(23 - 11) = 12$.\n\nThe atomic number of an atom is written at the lower left corner of its symbol while its mass number is written at the upper left corner. In the case with Sodium (\\text{Na}), it will be written as",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.5.2",
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Table 3.05: Short Form of Different Elements.\n\n| Symbol | Atomic/Proton Number ($z$) | Mass Number ($A$) | Number of Electrons | Number of Neutrons ($A-Z$) | Short Form |\n| :---: | :---: | :---: | :---: | :---: | :---: |\n| $\\text{H}$ | $1$ | $1$ | $1$ | $0$ | $_{1}^{1}\\text{H}$ |\n| $\\text{He}$ | $2$ | $4$ | $2$ | $2$ | $_{2}^{4}\\text{He}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.5.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Student Task: Find out the mass number, number of protons and electrons for $_{3}^{7}\\text{Li}$ and $_{4}^{9}\\text{Be}$.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.01: Representation of Mass Number and Atomic Number for Sodium",
+      "figure_no": "3.01",
+      "box_2d": [
+        394,
+        237,
+        606,
+        752
+      ],
+      "description": "Schematic diagram of a sodium atom symbol showing mass number at the upper left, atomic/proton number at the lower left, and element symbol Na on the right.",
+      "reading_order_anchor": "The atomic number of an atom is written at the lower left corner"
+    }
+  ]
+}

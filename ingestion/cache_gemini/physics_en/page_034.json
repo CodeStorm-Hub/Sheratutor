@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 34,
+  "pdf_page_no": 39,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "opposite direction. Therefore, we can say, if an object changes its position with respect to an origin, then the object is in motion with respect to that origin. It is not our headache whether the origin is at rest or moving at uniform velocity. This is not important since every motion is relative.\n\nNot only this, if we want to search out an absolute rest reference point, we will be in trouble. If we consider anything on the surface of the earth as origin, one can object, as earth is not stationary rather it is rotating about its own axis, so everything on its surface is also rotating. Alternatively we can say, the center of the earth is the origin. Then someone else can come up with the objection that the centre of the earth is not stationary, it revolves round the sun. Then we can say more intelligently, the centre of the sun must be the origin! Then another person can confidently say that the sun is also not stationary it is also revolving around the centre of our galaxy. Surely you are feeling that no one can dare to say, the centre of our galaxy is the origin! Who can say that the galaxy and the universe are stationary? Not only this, if the centre of the galaxy is considered as the origin to describe any position on the surface, do you realize the extent of complexities that may arise?\n\nIn fact, we don't need such type of complexities; for our purpose, we can consider any point as the origin, which seems stationary to us. In this case we have to mention all the measurements are done with respect to this origin. In this way scientists have done all the measurements starting from the nucleus of an atom to the satellites launched in space, with no problems what so ever!",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Different Types of Motion",
+      "chunk_type": "theory",
+      "content_markdown": "We see various types of motions around us, vibrations, rotations and separations -- all these are the examples of different kinds of motions. Probable motions are unlimited, but if we wish, we can talk about some important types of motion separately.\n\n**Linear motion**\n\nIt is an example of the easiest type of motion. If anything moves along a straight line then its motion is a called linear motion. If an object is pushed off on a plane surface then it moves along a straight line. If a ball is allowed to fall from a height, it will fall straight downwards, so it is also a linear motion.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 43,
+  "pdf_page_no": 48,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1) $i$ and $ii$ 2) $i$ and $iii$ 3) $ii$ and $iii$ 4) $i, ii$ and $iii$\nIf $A = \\{6, 7, 8, 9, 10, 11, 12, 13\\}$, then answer the questions 7-9 below:",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. Which one is the correct expression for the set $A$?\n1) $\\{x \\in N : 6 < x < 13\\}$ 2) $\\{x \\in N : 6 \\le x < 13\\}$\n3) $\\{x \\in N : 6 \\le x \\le 13\\}$ 4) $\\{x \\in N : 6 < x \\le 13\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. Which one is the set of primes in $A$?\n1) $\\{6, 8, 10, 12\\}$ 2) $\\{7, 9, 11, 13\\}$ 3) $\\{7, 11, 13\\}$ 4) $\\{9, 12\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. Which one of the following sets is a multiple of 3 in set $A$?\n1) $\\{6, 9\\}$ 2) $\\{6, 11\\}$ 3) $\\{9, 12\\}$ 4) $\\{6, 9, 12\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. If $A = \\{3, 4\\}, B = \\{2, 4\\}, x \\in A$ and $y \\in B$, then determine the relation $x > y$ in $A$ and $B$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. If $C = \\{2, 5\\}, D = \\{4, 6, 7\\}, x \\in C$ and $y \\in D$, then determine the relation $x + 1 < y$ in $C$ and $D$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. If $f(x) = x^4 + 5x - 3$, then determine $f(-1), f(2)$ and $f\\left(\\frac{1}{2}\\right)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. If $f(y) = y^3 + ky^2 - 4y - 8$, then for what value of $k$ will $f(-2) = 0$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. If $f(x) = x^3 - 6x^2 + 11x - 6$, then for what value of $x$ is $f(x) = 0$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. If $f(x) = \\frac{2x + 1}{2x - 1}$, then determine the value of $\\frac{f\\left(\\frac{1}{x^2}\\right) + 1}{f\\left(\\frac{1}{x^2}\\right) - 1}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. If $g(x) = \\frac{1 + x^2 + x^4}{x^2}$, prove that $g\\left(\\frac{1}{x^2}\\right) = g(x^2)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. Determine domain and range from the following relations.\n1) $R = \\{(2, 1), (2, 2), (2, 3)\\}$\n2) $S = \\{(-2, 4), (-1, 1), (0, 0), (1, 1), (2, 4)\\}$\n3) $F = \\{(\\frac{1}{2}, 0), (1, 1), (1, -1), (\\frac{5}{2}, 2), (\\frac{5}{2}, -2)\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "18. Express the following relations in tabular method and determine domain and range for each.\n1) $R = \\{(x, y) : x \\in A, y \\in A$ and $x + y = 1\\}$ where $A = \\{-2, -1, 0, 1, 2\\}$\n2) $F = \\{(x, y) : x \\in C, y \\in C$ and $y = 2x\\}$ where $C = \\{-1, 0, 1, 2, 3\\}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

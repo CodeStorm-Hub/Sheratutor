@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 114,
+  "pdf_page_no": 119,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": "4.5",
+      "section_title": "Conservation and Transformation of Energy",
+      "chunk_type": "theory",
+      "content_markdown": "## 4.5 Conservation and Transformation of Energy\n\n### 4.5.1 Conservation of energy\n\nIn our daily life, the energy we see around us is imperishable. It has no destruction, it transforms only from one form to another form. When a stone is raised, it develops a potential energy. When the stone is released, the potential energy starts decreasing and the kinetic energy starts increasing. Just before it touches the ground, its total energy is converted into kinetic energy. But when the stone stops after touching the ground, then it contains no kinetic energy and no potential energy, where has the energy gone?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 4.04: A pendulum is oscillating, the total energy is conserved between kinetic energy and potential energy.",
+      "figure_no": "4.04",
+      "box_2d": [
+        424,
+        271,
+        856,
+        729
+      ],
+      "description": "Schematic diagram of an oscillating pendulum labeled (a) through (h) showing the variation of kinetic energy, potential energy, and velocity at different positions along its path.",
+      "reading_order_anchor": "Conservation of energy"
+    }
+  ]
+}

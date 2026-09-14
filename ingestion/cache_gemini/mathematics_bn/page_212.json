@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 212,
+  "pdf_page_no": 217,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{বা, } \\frac{\\sqrt{1+x}}{\\sqrt{1-x}} = \\frac{p+1}{p-1}$$\n$$\\text{বা, } \\frac{1+x}{1-x} = \\frac{(p+1)^2}{(p-1)^2} = \\frac{p^2+2p+1}{p^2-2p+1} \\text{ [উভয় পক্ষকে বর্গ করে]}$$\n$$\\text{বা, } \\frac{1+x+1-x}{1+x-1+x} = \\frac{p^2+2p+1+p^2-2p+1}{p^2+2p+1-p^2+2p-1} \\text{ [যোজন-বিয়োজন করে]}$$\n$$\\text{বা, } \\frac{2}{2x} = \\frac{2(p^2+1)}{4p}$$\n$$\\text{বা, } \\frac{1}{x} = \\frac{p^2+1}{2p}$$\n$$\\text{বা, } p^2+1 = \\frac{2p}{x}$$\n$$\\therefore p^2 - \\frac{2p}{x} + 1 = 0$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৭.** $\\frac{a^3+b^3}{a-b+c} = a(a+b)$ হলে প্রমাণ কর যে, $a, b, c$ ক্রমিক সমানুপাতী।\n\n**সমাধান:** দেওয়া আছে, $\\frac{a^3+b^3}{a-b+c} = a(a+b)$\n$$\\text{বা, } \\frac{(a+b)(a^2-ab+b^2)}{a-b+c} = a(a+b)$$\n$$\\text{বা, } \\frac{a^2-ab+b^2}{a-b+c} = a \\text{ [উভয়পক্ষকে } (a+b) \\text{ দ্বারা ভাগ করে]}$$\n$$\\text{বা, } a^2-ab+b^2 = a^2-ab+ac$$\n$$\\text{বা, } b^2 = ac$$\n$$\\therefore a, b, c$ ক্রমিক সমানুপাতী।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৮.** যদি $\\frac{a+b}{b+c} = \\frac{c+d}{d+a}$ হয়, তবে প্রমাণ কর যে, $c=a$ অথবা $a+b+c+d=0$।\n\n**সমাধান:** দেওয়া আছে, $\\frac{a+b}{b+c} = \\frac{c+d}{d+a}$\n$$\\text{বা, } \\frac{a+b}{b+c} - 1 = \\frac{c+d}{d+a} - 1 \\text{ [উভয়পক্ষ থেকে } 1 \\text{ বিয়োগ করে]}$$\n$$\\text{বা, } \\frac{a+b-b-c}{b+c} = \\frac{c+d-d-a}{d+a}$$\n$$\\text{বা, } \\frac{a-c}{b+c} = \\frac{c-a}{d+a}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

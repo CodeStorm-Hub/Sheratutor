@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 131,
+  "pdf_page_no": 136,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "it is possible to cut easily. Another name of the unit of pressure is Pascal (Pa), when $1\\text{ N}$ force is applied on an area of $1\\text{ m}^2$ we get $1\\text{ Pa}$ ($1$ Pascal) pressure.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.2",
+      "section_title": "Density",
+      "chunk_type": "theory",
+      "content_markdown": "We need to have a clear idea about density before understanding pressure of liquids and gases. Density is the amount of mass per unit volume, i.e. if mass of a body is $m$ and volume is $V$, then density is:\n\n$$\\rho = \\frac{m}{V}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Unit of density: $\\text{kg/m}^3$ or $\\text{gm/cc}$\nDimension of density: $[P] = ML^{-3}$",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| substances | density (gm/cc) |\n|---|---|\n| Air | 0.00127 |\n| Cork | 0.25 |\n| Wood | 0.4 - 0.5 |\n| Human body | 0.995 |\n| Water | 1.00 |\n| Glass | 2.60 |\n| Iron | 7.80 |\n| Mercury | 13.6 |\n| Gold | 19.30 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Density of some familiar substances is given in table 5.01. Here is a good thing to remember, if temperature increases or decreases, volume of a substance can be increased or decreased. Since there is no change in the mass, the density of substance may change with temperature. For this when we talk about density of a substance, usually we need to mention the temperature at which the density is measured.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** $0.25\\text{ kg}$ salt is dissolved in $1\\text{ kg}$ water, so that the total volume becomes $1200\\text{ cc}$. What is the density of this water?\n\n**Answer:** $1\\text{ cc}$ is $1\\text{ cm}^3$, therefore\n\n$$1\\text{ cc} = (10^{-2}\\text{ m})^3 = 10^{-6}\\text{ m}^3$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 216,
+  "pdf_page_no": 221,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "not add any colour to the water. The reaction:\n\n$$\\text{Fe(NO}_3)_2 + 2\\text{NaOH} \\longrightarrow \\text{Fe(OH)}_2\\downarrow + 2\\text{NaNO}_3$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Reaction between dilute NaOH and $\\text{Fe(NO}_3)_3$",
+      "chunk_type": "theory",
+      "content_markdown": "If we take some ferric nitrate $\\text{Fe(NO}_3)_3$ solution in a test tube and add some drops of dilute $\\text{NaOH}$ solution in it, they produce ferric hydroxide $[\\text{Fe(OH)}_3]$ and sodium nitrate $(\\text{NaNO}_3)$. $\\text{Fe(OH)}_3$ gathers as a reddish brown precipitate at the bottom of the test tube while sodium nitrate remains dissolved in the water and it does not add any colour to the water. The reaction:\n\n$$\\text{Fe(NO}_3)_3 + 3\\text{NaOH} \\longrightarrow \\text{Fe(OH)}_3\\downarrow + 3\\text{NaNO}_3$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Reaction between dilute NaOH and $\\text{Cu(NO}_3)_2$",
+      "chunk_type": "theory",
+      "content_markdown": "If we take some copper nitrate $[\\text{Cu(NO}_3)_2]$ solution in a test tube and add some drops of dilute $\\text{NaOH}$ solution to it, copper hydroxide $[\\text{Cu(OH)}_2]$ and sodium nitrate $(\\text{NaNO}_3)$ are produced. $\\text{Cu(OH)}_2$ gathers as light blue precipitate at the bottom of the test tube while sodium nitrate remains dissolved in the water and it does not add any colour to the water. The reaction:\n\n$$\\text{Cu(NO}_3)_2 + 2\\text{NaOH} \\longrightarrow \\text{Cu(OH)}_2\\downarrow + 2\\text{NaNO}_3$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Reaction between dilute NaOH and $\\text{Zn(NO}_3)_2$",
+      "chunk_type": "theory",
+      "content_markdown": "If we take some zinc nitrate $[\\text{Zn(NO}_3)_2]$ solution in a test tube and add some drops of dilute $\\text{NaOH}$ solution to it, zinc hydroxide $[\\text{Zn(OH)}_2]$ and sodium nitrate $(\\text{NaNO}_3)$ are produced. $\\text{Zn(OH)}_2$ gathers as white precipitate at the bottom of the test tube while sodium nitrate remains dissolved in the water and it does not add any colour to the water. The reaction:\n\n$$\\text{Zn(NO}_3)_2 + 2\\text{NaOH} \\longrightarrow \\text{Zn(OH)}_2\\downarrow + 2\\text{NaNO}_3$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Reaction between Alkali (dilute NaOH) and Ammonium Salt",
+      "chunk_type": "theory",
+      "content_markdown": "If we take some ammonium chloride $(\\text{NH}_4\\text{Cl})$ in a container and add some alkali $(\\text{NaOH})$ solution to it, we get ammonia gas $(\\text{NH}_3)$, sodium chloride $(\\text{NaCl})$ and water $(\\text{H}_2\\text{O})$. The reaction:\n\n$$\\text{NH}_4\\text{Cl} + \\text{NaOH} \\longrightarrow \\text{NH}_3 + \\text{NaCl} + \\text{H}_2\\text{O}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

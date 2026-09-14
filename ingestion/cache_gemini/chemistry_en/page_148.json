@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 148,
+  "pdf_page_no": 153,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{Na} + \\frac{1}{2}\\text{Cl}_2 \\longrightarrow \\text{NaCl}$$\n\nHere, Na is donating an electron as it is a reductant substance and conversely, Cl is accepting that electron as it is an oxidant substance.\n\nThe reaction in which electron donation of an atom occurs or positive charge of that atom increases or negative charge of that decreases is called an oxidation reaction.\n\n$$\\text{Fe}^{2+} \\rightarrow \\text{Fe}^{3+} + \\text{e}^- \\quad [\\text{oxidation reaction}]$$\n$$\\text{Na}^0 \\rightarrow \\text{Na}^{1+} + \\text{e}^- \\quad [\\text{oxidation reaction}]$$\n\nThe reaction in which an atom accepts an electron or the positive charge of an atom decreases or the negative charge of an atom increases is called an reduction reaction.\n\n$$\\text{Cl}^0 + \\text{e}^- \\rightarrow \\text{Cl}^{1-} \\quad [\\text{reduction reaction}]$$\n$$\\text{Cu}^{2+} + \\text{e}^- \\rightarrow \\text{Cu}^{1+} \\quad [\\text{reduction reaction}]$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Oxidation Number",
+      "chunk_type": "theory",
+      "content_markdown": "**Oxidation Number:** Atoms in molecules or radicals sometimes tend to donate electrons and sometimes tend to accept electrons. The tendency to donate an electron of an atom is denoted by a number added with a plus (+) mark and the tendency to accept an electron of an atom is denoted by a number added with a minus (-) mark. In any molecule or radical, this number with plus or minus mark is the oxidation number.\n\nThe oxidation number of neutral atoms like $\\text{Na}$, $\\text{Mg}$, $\\text{Fe}$ etc. are taken to be zero (0). Similarly, atoms in molecules that consist of homogenous atoms like $\\text{H}_2$, $\\text{O}_2$, $\\text{N}_2$, $\\text{Cl}_2$, $\\text{Br}_2$ etc. are regarded to have oxidation number of zero.\n\nThe oxidation number of $\\text{Fe}$ in $\\text{FeSO}_4$ is $+2$ while the oxidation number of the same atom in $\\text{Fe}$ metal is $0$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Determining Oxidation Number",
+      "chunk_type": "theory",
+      "content_markdown": "**Determining Oxidation Number:** In a compound the oxidation number of an element depends on the oxidation numbers of other elements of the compound. To determine the oxidation number of an element in a compound, standard oxidation numbers of other elements is used.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

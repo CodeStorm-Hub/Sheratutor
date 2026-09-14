@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 48,
+  "pdf_page_no": 53,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note: By applying Formula 5, we get,\n\n1) $(a + b - c)^2 = \\{a + b + (-c)\\}^2$\n$= a^2 + b^2 + (-c)^2 + 2ab + 2b(-c) + 2a(-c)$\n$= a^2 + b^2 + c^2 + 2ab - 2bc - 2ac$\n\n2) $(a - b + c)^2 = \\{a + (-b) + c\\}^2$\n$= a^2 + (-b)^2 + c^2 + 2a(-b) + 2(-b)c + 2ac$\n$= a^2 + b^2 + c^2 - 2ab - 2bc + 2ac$\n\n3) $(a - b - c)^2 = \\{a + (-b) + (-c)\\}^2$\n$= a^2 + (-b)^2 + (-c)^2 + 2a(-b) + 2(-b)(-c) + 2a(-c)$\n$= a^2 + b^2 + c^2 - 2ab + 2bc - 2ac$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. What is the square of $(4x + 5y)$?\n\nSolution: $(4x + 5y)^2 = (4x)^2 + 2 \\times (4x) \\times (5y) + (5y)^2 = 16x^2 + 40xy + 25y^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. What is the square of $(3a - 7b)$?\n\nSolution: $(3a - 7b)^2 = (3a)^2 - 2 \\times (3a) \\times (7b) + (7b)^2 = 9a^2 - 42ab + 49b^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. Find the square of 996 by applying the formula of square.\n\nSolution: $(996)^2 = (1000 - 4)^2 = (1000)^2 - 2 \\times 1000 \\times 4 + 4^2$\n$= 1000000 - 8000 + 16 = 1000016 - 8000 = 992016$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. What is the square of $a + b + c + d$?\n\nSolution: $(a + b + c + d)^2 = \\{(a + b) + (c + d)\\}^2$\n$= (a + b)^2 + 2(a + b)(c + d) + (c + d)^2$\n$= a^2 + 2ab + b^2 + 2(ac + ad + bc + bd) + c^2 + 2cd + d^2$\n$= a^2 + b^2 + c^2 + d^2 + 2ab + 2ac + 2ad + 2bc + 2bd + 2cd$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Find the square with the help of the formulae:\n\n1) $3xy + 2ax$ 2) $4x - 3y$ 3) $x - 5y + 2z$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

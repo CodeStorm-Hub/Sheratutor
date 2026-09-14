@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 32,
+  "pdf_page_no": 37,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Experiment 7",
+      "chunk_type": "theory",
+      "content_markdown": "Take some solid aluminum chloride salt in a beaker. Put a glass lid on its open face. Put some ice cubes on the lid. Now, apply heat slowly on the beaker. You'll see the solid $AlCl_3$ is turning into gaseous form absorbing heat. This gaseous $AlCl_3$ again reaches the lid and under the influence of ice, condenses itself underneath the lid.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If a sublimated substance is mixed with some solid matter, it can be retrieved by means of the sublimation process. For example, if some ammonium chloride ($NH_4Cl$) is mixed with some edible salt ($NaCl$), it can be separated by the process of sublimation. If heat is continuously applied to a sublimated substance, it vaporizes. In iodized salt, iodine is a sublimated substance. If you apply heat to that salt, the iodine will be vaporized from there.\n\nThe vapor can be cooled into solid iodine. However, since the mixture of sand and glucose does not contain any sublimated substance, therefore, you cannot separate them by sublimation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. What kind of action takes place when hot tea is kept in a tea cup?\n\na. vaporization \n\nb. sublimation\n\nc. diffusion \n\nd. effusion",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.11: Sublimation of $AlCl_3$",
+      "figure_no": "2.11",
+      "box_2d": [
+        119,
+        584,
+        381,
+        856
+      ],
+      "description": "Experimental setup for the sublimation of aluminum chloride showing a Bunsen burner heating a beaker containing solid aluminum chloride, covered with a glass lid holding ice cubes, and vapors condensing beneath the lid.",
+      "reading_order_anchor": "Experiment 7"
+    }
+  ]
+}

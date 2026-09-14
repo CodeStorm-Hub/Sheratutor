@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 23,
+  "pdf_page_no": 28,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "examples are the set of first 10 odd natural numbers, set of integers, set of real numbers etc. Sets are usually denoted by the capital letters of English alphabet like $A, B, C, \\dots X, Y, Z$.\n\nFor example, the set of three numbers 2, 4, 6 can be denoted by $A = \\{2, 4, 6\\}$\n\nEach object or member of the set is called its element. For example, if $B = \\{a, b\\}$, to express that $a$ and $b$ are its elements the sign $\\in$ is used to express the element. $a$ and $b$ are elements of $B$;\n\n$\\therefore a \\in B$ and we can read as $a$, is a member of $B$ ($a$ belongs to $B$)\n\n$b \\in B$ is a member of $b$, ($b$ belongs to $B$)\n\nThe above set $B$ does not contain $c$. So it is expressed as $c \\notin B$ and is read as $c$ is not a member of $B$ ($c$ does not belong to $B$)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Methods for expressing sets",
+      "chunk_type": "theory",
+      "content_markdown": "Sets can be expressed using two methods, namely Roster method or tabular method and Set Builder Method.\n\n**Roster method:** In this method all members are listed and put inside $\\{\\}$ and if there are more than one element, then elements are separated by commas. For example, $A = \\{a, b\\}$, $B = \\{2, 4, 6\\}$, $C = \\{ \\text{Niloy, Shuvro, Tisha} \\}$ etc.\n\n**Set builder method:** In this method all elements are not listed rather their common property is described. For example, $A = \\{x : x \\text{ is an odd natural number} \\}$, $B = \\{x : x \\text{ is the first five students of class IX} \\}$ etc. Here, by ':' has been expressed such that. Since in this method element of the set is specified by rules, this method is called Rule Method.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 1.** Express $A = \\{7, 14, 21, 28\\}$ in set building method.\n\n**Solution:** The elements of $A$ are 7, 14, 21, 28.\n\nHere, each element is a multiple of 7 and not exceeding 28.\n\n$\\therefore A = \\{x : x \\text{ is a multiple of 7 and } 0 < x \\le 28\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 2.** Express $B = \\{x : x \\text{ is a divisor of 28}\\}$ by using roster method.\n\n**Solution:** Here, $28 = 1 \\times 28 = 2 \\times 14 = 4 \\times 7$\n\n$\\therefore$ factors of 28 are 1, 2, 4, 7, 14, 28\n\nHence the desired set is $B = \\{1, 2, 4, 7, 14, 28\\}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

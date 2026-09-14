@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 136,
+  "pdf_page_no": 141,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Under water, pressure increases by $1\\text{ atm}$ for a $33\\text{ ft}$ ($10\\text{ m}$) increase of depth. The divers have gone a maximum depth of $1000\\text{ ft}$ ($330\\text{ m}$), how much pressure did they have to tolerate?\n\n**Answer:** Per $10\\text{ m}$ depth, pressure increases by $1\\text{ atm}$ or $1\\text{ bar}$. Then, for $330\\text{ m}$ depth,\n$$\\frac{330\\text{ m}}{10\\text{ m/atm}} = 33\\text{ atm}$$\n\nDivers had to tolerate $33\\text{ atm}$ pressure.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Calculate the pressure at a depth of $50\\text{ cm}$ for kerosene (density $800\\text{ kg m}^{-3}$), water (density $1000\\text{ kg m}^{-3}$) and mercury (density $13600\\text{ kg m}^{-3}$).\n\n**Answer:** For kerosene,\n$$\\text{pressure, } p = h\\rho g$$\n$$P = 0.50\\text{ m} \\times 800\\text{ kg m}^{-3} \\times 9.8\\text{ N kg}^{-1} = 3,920\\text{ N m}^{-2}$$\n\nFor water,\n$$P = 0.50\\text{ m} \\times 1000\\text{ kg m}^{-3} \\times 9.8\\text{ N kg}^{-1} = 4,900\\text{ N m}^{-2}$$\n\nFor mercury,\n$$P = 0.50\\text{ m} \\times 13,600\\text{ kg m}^{-3} \\times 9.8\\text{ N kg}^{-1} = 66,640\\text{ N m}^{-2}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** At what depth of the liquids kerosene, water and mercury pressure will be $1\\text{ atm}$ ?\n\n**Answer:** We know, for mercury pressure is $1\\text{ atm}$ at a depth of $76\\text{ cm}$. Density of water is $13.6$ times less than mercury, therefore depth of water will be $13.6$ times more.\n\nTherefore, depth for water: $76\\text{ cm} \\times 13.6 = 1034\\text{ cm} = 10.34\\text{ m}$\n\nDensity of kerosene is $0.8$ times less than water, therefore depth for kerosene will be $1/0.8 = 1.25$ times more.\n\nTherefore, depth for kerosene: $10.34\\text{ m} \\times 1.25 = 12.92\\text{ m}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

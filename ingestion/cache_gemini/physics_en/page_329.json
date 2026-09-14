@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 329,
+  "pdf_page_no": 334,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. The length and cross-sectional area of a nichrome wire used in an electrical heater, is $20\\text{ cm}$ and $2 \\times 10^{-7}\\text{ m}^2$ respectively. The resistivity of nichrome is $100 \\times 10^{-8}\\text{ }\\Omega\\text{ m}$. The nichrome wire is replaced by a copper wire of identical length and cross-sectional area. The resistivity of copper is $1.7 \\times 10^{-8}\\text{ }\\Omega\\text{ m}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is resistance?\n(b) Why does the resistance of conductor increase with increasing temperature?\n(c) Determine the resistance of the copper wire.\n(d) Analyze the logic of using copper wire.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Alvi uses a bulb of $220\\text{V-100W}$ during his studies for 3 hours daily. His brother Alif uses a table lamp of $220\\text{V-40W}$ for 4 hours daily. The cost of each unit of electrical energy is 3.5 taka.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Write down Ohm’s law.\n(b) Explain, what will be the change in resistance of a conductor if the length is increased by 5 times (provided that the temperature, material and area of cross-section remain unchanged)?\n(c) Determine the current of the lamp used by Alif.\n(d) Who is more economical, Alvi or Alif (considering money)? Analyze with mathematical arguments.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. The potential difference of an electric supply line in our country is $220\\text{ V}$. The resistance of the filament of an electric bulb is $484\\text{ }\\Omega$. $220\\text{ V- 100 W}$ is marked on the bulb.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Define ampere.\n(b) What does it mean to say that the electromotive force of a dry cell is $1.5\\text{ V}$?\n(c) If the bulb is connected with the supply line, what will be the electric current?\n(d) Propose an experiment to verify $220\\text{ V-100 W}$ marked on the bulb.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

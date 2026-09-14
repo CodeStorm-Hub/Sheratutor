@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 87,
+  "pdf_page_no": 92,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** Suppose you are standing on a totally frictionless surface. Your mass is $50\\text{ kg}$ and there is a stone of mass $100\\text{ kg}$ in front of you. You have decided to push the stone with a force of $50\\text{ N}$ and will move it from one end to the other end. What will be the velocity of the stone after $10\\text{ s}$? (Figure 3.14)\n\n**Answer:** When you push the stone with a force of $50\\text{ N}$, then according to Newton's third law the stone will push you also with a force of $50\\text{ N}$. The acceleration of the stone will take place to the right.\n\n$$a = \\frac{F}{m} = \\frac{50}{100}\\text{ m/s}^2 = 0.5\\text{ m/s}^2$$\n\nYour acceleration will be exactly towards left,\n\n$$a = \\frac{F}{m} = \\frac{50}{50}\\text{ m/s}^2 = 1\\text{ m/s}^2$$\n\nTherefore the stone and you will move in different directions. By pushing the stone you cannot move it from one end to the other. Because a distance will be created between you and the stone. So it is not possible to push the stone nonstop for $10\\text{ s}$. But after the stone starts its movement, it will reach the other end moving by itself on the frictionless surface. You will also reach the opposite end but at an earlier time.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.14 : When a person pushes a stone, the stone also pushes the person in return.",
+      "figure_no": "3.14",
+      "box_2d": [
+        274,
+        270,
+        513,
+        773
+      ],
+      "description": "An illustration of a person with mass 60 kg pushing a large stone with mass 100 kg on a frictionless surface.",
+      "reading_order_anchor": "Question: Suppose you are standing on a totally frictionless surface..."
+    }
+  ]
+}

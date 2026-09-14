@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 219,
+  "pdf_page_no": 224,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": "8.2.3",
+      "section_title": "Reflection from smooth and rough planes",
+      "chunk_type": "theory",
+      "content_markdown": "Parallel light rays become parallel after reflecting from mirrors or smooth plane surfaces because each ray obeys the law of reflection and reflects with an angle of reflection equal to the angle of incidence. Even if the plane is not smooth, every ray of light will obey the law of reflection. But the rays are incident at different angles at different points of the plane, therefore the rays will reflect in different angles after reflection. After reflection, the reflected rays are not parallel and spread in different directions. (Figure 8.07) These types of reflections are called irregular reflection.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.3",
+      "section_title": "Mirror",
+      "chunk_type": "theory",
+      "content_markdown": "All of us have seen mirrors. In a mirror a clear image is formed due to uniform reflection. A metal layer is placed behind a glass mirror for proper reflection. 4% light is reflected from the front part of a mirror, but the back part reflects fully and forms the original image. When the original image is very important in optical instruments like telescopes, the silver or aluminum layer is coated on the glass surface, so that the two images, one 4% lighter and other 96% clear are not formed, rather it forms a 100% clear image.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.07: Light reflects from smooth surfaces and scatters from rough surfaces",
+      "figure_no": "8.07",
+      "box_2d": [
+        363,
+        161,
+        513,
+        819
+      ],
+      "description": "Ray diagrams showing parallel reflection off a smooth surface and scattering reflection off a rough surface.",
+      "reading_order_anchor": "Reflection from smooth and rough planes"
+    },
+    {
+      "caption": "Figure 8.08: The image of X object will form in X' position.",
+      "figure_no": "8.08",
+      "box_2d": [
+        632,
+        595,
+        858,
+        888
+      ],
+      "description": "Ray diagram showing the formation of an image behind a mirror at position X' for an object at position X.",
+      "reading_order_anchor": "Mirror"
+    }
+  ]
+}

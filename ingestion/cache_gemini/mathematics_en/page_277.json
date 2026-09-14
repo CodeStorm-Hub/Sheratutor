@@ -1,0 +1,107 @@
+{
+  "printed_page_no": 277,
+  "pdf_page_no": 282,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": "13.1",
+      "section_title": "Exercise 13.1",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. What is the number of terms of the series $13 + 20 + 27 + 34 + \\dots + 111$?\n1) 10 2) 13 3) 15 4) 20",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. The series $5 + 8 + 11 + 14 + \\dots + 62$\n(i) is a finite series (ii) is a geometric series\n(iii) 19th term of the series is 59\n\nwhich one of the following is correct?\n1) i and ii 2) i and iii 3) ii and iii 4) i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Based on the following information answer questions 3 — 4.\n\n$7 + 13 + 19 + 25 + \\dots$ is a series.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. Which one is the 15th term of the series?\n1) 85 2) 91 3) 97 4) 104",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. What is the summation of first 20 terms of the series?\n1) 141 2) 1210 3) 1280 4) 2560",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. Find common difference and the 12th term of the series $2 - 5 - 12 - 19 - \\dots$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. Which term of the series $8 + 11 + 14 + 17 + \\dots$ is 392?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. Which term of the series $4 + 7 + 10 + 13 + \\dots$ is 301?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. If the $m$th term of an arithmetic series is $n$ and $n$th term is $m$, what is the $(m + n)$th term of that series?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. What is the sum of first $n$ terms of the series $1 + 3 + 5 + 7 + \\dots$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. What is the sum of first 9 terms of the series $8 + 16 + 24 + \\dots$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. $5 + 11 + 17 + 23 + \\dots + 59 = \\text{what}$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. $29 + 25 + 21 + \\dots - 23 = \\text{what}$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. If the 12th term of an arithmetic series is 77, what is the summation of the first 23 terms of that series?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

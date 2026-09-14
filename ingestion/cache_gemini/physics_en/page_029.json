@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 29,
+  "pdf_page_no": 34,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "### Multiple choice questions\n\n**Put tick ($\\\text{\\checkmark}$) mark on the correct answer**\n\n1. Who has given the quantum theory at first?\n   a) Planck\n   b) Einstein\n   c) Rutherford\n   d) Heisenberg\n\n2. The name 'boson' came from?\n   a) Jagadish Chandra Basu\n   b) Subhash Chandra Basu\n   c) Satyendranath Basu\n   d) Sharat Chandra Basu\n\n3. Which of below is not a fundamental quantity ?\n   a) Mass\n   b) Heat\n   c) Electric current\n   d) Quantity of substance\n\n4. When a rod is placed between the jaws of a slide calipers, the main scale reading is found to be $4\\text{ cm}$, the vernier super-imposition is $7$ and if the vernier constant is $0.1\\text{ mm}$, what is the length of the rod?\n   a) $4.07\\text{ cm}$\n   b) $4.7\\text{ cm}$\n   c) $4.07\\text{ mm}$\n   d) $4.7\\text{ mm}$\n\nFrom the figure below answer questions 5 and 6.\n\n5. What is the volume of figure (b)\n   a) $\\frac{1}{2}\\pi r^3$\n   b) $\\frac{4}{3}\\pi r^3$\n   c) $\\frac{3}{4}\\pi r^3$\n   d) $\\pi r^3$\n\n6. The ratio of the volume of figure (a) and figure (b):\n   a) $1 : 0.673$\n   b) $1 : 0.0673$\n   c) $1 : 0.763$\n   d) $1 : 0.637$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.13: A block and a cylinder",
+      "figure_no": "1.13",
+      "box_2d": [
+        744,
+        521,
+        903,
+        899
+      ],
+      "description": "Two geometric objects labeled (a) showing a rectangular block with dimensions 7 cm, 4 cm, and 6 cm, and (b) showing a sphere with radius r = 3 cm.",
+      "reading_order_anchor": "From the figure below answer questions 5 and 6."
+    }
+  ]
+}

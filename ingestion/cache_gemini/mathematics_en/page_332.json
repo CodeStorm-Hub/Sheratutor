@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 332,
+  "pdf_page_no": 337,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $1600 - 80x + 169 = 1369$ [From (1)]\nor, $1600 + 169 - 1369 = 80x$\nor, $80x = 400 \\therefore x = 5$\nNow putting the value of $x$ in equation(1) we get,\n$5^2 + h^2 = 169$ or, $h^2 = 169 - 25 = 144 \\therefore h = 12$\nArea of the trapezium $ABCD = \\frac{1}{2}(AB + CD) \\cdot h$\n$= \\frac{1}{2}(91 + 51) \\times 12$ square cm $= 71 \\times 12$ square cm $= 852$ square cm\nThe required area is $852$ square cm.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.1",
+      "section_title": "Area of regular polygon",
+      "chunk_type": "theory",
+      "content_markdown": "The lengths of all sides of a regular polygon are equal. Again, the angles are also equal. Regular polygon with $n$ sides produces $n$ isosceles triangles by adding centre to the vertices.\n\nSo, area of the regular polygon $= n \\times$ area of one triangular region\n$ABCDEF \\dots$ is a regular polygon whose centre is $O$. $\\therefore$ It has $n$ sides and the length of each side is $a$.\nWe join $O, A$ and $O, B$.\nLet height of $\\triangle AOB$, $ON = h$ and $\\angle OAB = \\theta$\nThe angle produced at each of the vertices of regular polygon $= 2\\theta$\n$\\therefore$ Total angle produced by $n$ number of vertices in the polygon $= 2\\theta n$\nAngle produced in the polygon at the centre $= 4$ right angles.\n$\\therefore$ The sum of angles of number of triangles $(2\\theta n + 4)$ right angles.\n$\\therefore$ Sum of $3$ angles of $\\triangle AOB = 2$ right angles.\n$\\therefore$ Summation of the angles of $n$ numbers of triangles $= 2n$ right angles.\n$\\therefore 2\\theta \\cdot n + 4$ right angles $= 2n$ right angles.\nor, $2\\theta \\cdot n = (2n - 4)$ right angles.\nor, $\\theta = \\frac{2n - 4}{2n}$ right angles.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Regular polygon",
+      "figure_no": "16.01",
+      "box_2d": [
+        555,
+        661,
+        700,
+        856
+      ],
+      "description": "A regular hexagon with center O and a triangle AOB highlighted with height ON.",
+      "reading_order_anchor": "16.1"
+    }
+  ]
+}

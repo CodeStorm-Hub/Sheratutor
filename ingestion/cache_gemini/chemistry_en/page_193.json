@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 193,
+  "pdf_page_no": 198,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": "Identification of Anodes and Cathodes in Galvanic Cells",
+      "chunk_type": "theory",
+      "content_markdown": "Determination of anode and cathode in a Galvanic cell constituted with two electrodes depends on the element they are made of. Electrodes made of less reactive elements situated at the lower ranks of the electrochemical series constitute a cathode while the more reactive elements of the upper ranks constitute the anode. Of the electrochemical series, any two elements constituting a Galvanic cell, the lower ranked electrode is cathode and the higher ranked electrode is anode. For example, if a Galvanic cell is constituted with a copper electrode and a silver electrode, the copper metal electrode is anode and the silver metal electrode is cathode. Table 8.05 shows copper is comparatively higher ranked than silver.\n\nIn this cell, copper atom donates electron and turns into copper ion.\n\n**Oxidation half reaction at anode:**\n$$\\text{Cu} \\longrightarrow \\text{Cu}^{2+} + 2\\text{e}^{-}$$\n\nAgain, silver ion accepts electron and turns into silver atom.\n\n**Reduction half reaction at cathode:**\n$$2\\text{Ag}^^+ + 2\\text{e}^- \\longrightarrow 2\\text{Ag}$$\n\nAdding the two half reactions, we get the total reaction of the cell:\n$$\\text{Cu} + 2\\text{Ag}^^+ \\longrightarrow \\text{Cu}^{2+} + 2\\text{Ag}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Electrode | Reaction |\n| :--- | :--- |\n| $\\text{Zn}\\vert\\text{Zn}^{2+}$ | $\\text{Zn(s)} \\rightleftharpoons \\text{Zn}^{2+}\\text{(aq)} + 2\\text{e}^-$ |\n| $\\text{Cu}\\vert\\text{Cu}^{2+}$ | $\\text{Cu(s)} \\rightleftharpoons \\text{Cu}^{2+}\\text{(aq)} + 2\\text{e}^-$ |\n| $\\text{Fe}\\vert\\text{Fe}^{2+}$ | $\\text{Fe(s)} \\rightleftharpoons \\text{Fe}^{2+}\\text{(aq)} + 2\\text{e}^-$ |\n| $\\text{Ag}\\vert\\text{Ag}^+$ | $\\text{Ag(s)} \\rightleftharpoons \\text{Ag}^+\\text{(aq)} + \\text{e}^-$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Electrode |\n| :---: |\n| $\\text{Li}\\vert\\text{Li}^+$ |\n| $\\text{K}\\vert\\text{K}^+$ |\n| $\\text{Na}\\vert\\text{Na}^+$ |\n| $\\text{Mg}\\vert\\text{Mg}^{2+}$ |\n| $\\text{Al}\\vert\\text{Al}^{3+}$ |\n| $\\text{Zn}\\vert\\text{Zn}^{2+}$ |\n| $\\text{Fe}\\vert\\text{Fe}^{2+}$ |\n| $\\text{Ni}\\vert\\text{Ni}^{2+}$ |\n| $\\text{Sn}\\vert\\text{Sn}^{2+}$ |\n| $\\text{Pb}\\vert\\text{Pb}^{2+}$ |\n| $\\text{H}_2\\vert\\text{H}^+$ |\n| $\\text{Cu}\\vert\\text{Cu}^{2+}$ |\n| $\\text{Ag}\\vert\\text{Ag}^+$ |\n| $\\text{Au}\\vert\\text{Au}^{3+}$ |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Table 8.04: Electrode and Reaction.",
+      "figure_no": "8.04",
+      "box_2d": [
+        181,
+        401,
+        399,
+        908
+      ],
+      "description": "Table listing electrodes and their corresponding oxidation-reduction half reactions.",
+      "reading_order_anchor": "Identification of Anodes and Cathodes in Galvanic Cells"
+    },
+    {
+      "caption": "Table 8.05: Electrode.",
+      "figure_no": "8.05",
+      "box_2d": [
+        478,
+        745,
+        871,
+        889
+      ],
+      "description": "Table listing various electrodes in order of their electrochemical series rank.",
+      "reading_order_anchor": "Identification of Anodes and Cathodes in Galvanic Cells"
+    }
+  ]
+}

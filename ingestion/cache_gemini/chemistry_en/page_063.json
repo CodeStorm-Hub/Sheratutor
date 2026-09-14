@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 63,
+  "pdf_page_no": 68,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": "4.1",
+      "section_title": "Modern Periodic Table",
+      "chunk_type": "table",
+      "content_markdown": "| 2 | 4 |\n| :--- | :--- |\n| **He**<br>Helium | |\n| 5 | 11 | 6 | 12 | 7 | 14 | 8 | 16 | 9 | 19 | 10 | 20 |\n| **B**<br>Boron | **C**<br>Carbon | **N**<br>Nitrogen | **O**<br>Oxygen | **F**<br>Fluorine | **Ne**<br>Neon |\n| 13 | 27 | 14 | 28 | 15 | 31 | 16 | 32 | 17 | 35.5 | 18 | 40 |\n| **Al**<br>Aluminium | **Si**<br>Silicon | **P**<br>Phosphorus | **S**<br>Sulfur | **Cl**<br>Chlorine | **Ar**<br>Argon |\n| 28 | 59 | 29 | 63.5 | 30 | 65 | 31 | 70 | 32 | 73 | 33 | 75 | 34 | 79 | 35 | 80 | 36 | 84 |\n| **Ni**<br>Nickel | **Cu**<br>Copper | **Zn**<br>Zinc | **Ga**<br>Gallium | **Ge**<br>Germanium | **As**<br>Arsenic | **Se**<br>Selenium | **Br**<br>Bromine | **Kr**<br>Krypton |\n| 46 | 106 | 47 | 108 | 48 | 112 | 49 | 115 | 50 | 119 | 51 | 122 | 52 | 128 | 53 | 127 | 54 | 131 |\n| **Pd**<br>Palladium | **Ag**<br>Silver | **Cd**<br>Cadmium | **In**<br>Indium | **Sn**<br>Tin | **Sb**<br>Antimony | **Te**<br>Tellurium | **I**<br>Iodine | **Xe**<br>Xenon |\n| 78 | 195 | 79 | 197 | 80 | 201 | 81 | 204 | 82 | 207 | 83 | 209 | 84 | 209 | 85 | 210 | 86 | 222 |\n| **Pt**<br>Platinum | **Au**<br>Gold | **Hg**<br>Mercury | **Tl**<br>Thallium | **Pb**<br>Lead | **Bi**<br>Bismuth | **Po**<br>Polonium | **At**<br>Astatine | **Rn**<br>Radon |\n| 110 | 269 | 111 | 272 | 112 | 285 | 113 | 284 | 114 | 285 | 115 | 288 | 116 | 293 | 117 | 294 | 118 | 294 |\n| **Ds**<br>Darmstadtium | **Rg**<br>Roentgenium | **Cn**<br>Copernicium | **Nh**<br>Nihonium | **Fl**<br>Flerovium | **Mc**<br>Moscovium | **Lv**<br>Livermorium | **Ts**<br>Tennessine | **Og**<br>Oganesson |\n| 64 | 157 | 65 | 159 | 66 | 163 | 67 | 165 | 68 | 167 | 69 | 169 | 70 | 173 | 71 | 175 |\n| **Gd**<br>Gadolinium | **Tb**<br>Terbium | **Dy**<br>Dysprosium | **Ho**<br>Holmium | **Er**<br>Erbium | **Tm**<br>Thulium | **Yb**<br>Ytterbium | **Lu**<br>Lutetium |\n| 96 | 247 | 97 | 247 | 98 | 251 | 99 | 252 | 100 | 257 | 101 | 258 | 102 | 259 | 103 | 262 |\n| **Cm**<br>Curium | **Bk**<br>Berkelium | **Cf**<br>Californium | **Es**<br>Einsteinium | **Fm**<br>Fermium | **Md**<br>Mendelevium | **No**<br>Nobelium | **Lr**<br>Lawrencium |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 4.1: Modern Periodic Table",
+      "figure_no": "4.1",
+      "box_2d": [
+        116,
+        82,
+        946,
+        915
+      ],
+      "description": "A comprehensive layout of the Modern Periodic Table showing groups, periods, and elements with their atomic numbers and atomic masses.",
+      "reading_order_anchor": "Modern Periodic Table"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 286,
+  "pdf_page_no": 291,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** A charge of $3\\text{ C}$ is experiencing a force of $10\\text{ N}$. What is the electric field?\\\n**Answer:** We know $F = qE$\n\nSo, \n$$E = \\frac{F}{q}$$\n\nHere, \n$$F = 10\\text{ N}$$\n$$q = 3\\text{ C}$$\n\nTherefore,\n$$E = \\frac{F}{q} = \\frac{10\\text{ N}}{3\\text{ C}} = 3.33\\text{ N/C}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "**Question:** If there are two charges $q$ and $-2q$ close to each other, what will be their lines of force?\\\n**Answer:** This is shown in Figure 10.13.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.13: Lines of force for +q and -2q charge.",
+      "figure_no": "10.13",
+      "box_2d": [
+        108,
+        287,
+        396,
+        749
+      ],
+      "description": "Electric field lines diagram showing the field around a negative charge (-2q) and a positive charge (+q) placed close to each other.",
+      "reading_order_anchor": "Question: If there are two charges q and -2q close to each other, what will be their lines of force?"
+    }
+  ]
+}

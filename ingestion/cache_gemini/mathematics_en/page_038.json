@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 38,
+  "pdf_page_no": 43,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "straight lines. Each of these perpendicular straight lines is called axis. The line $XOX'$ parallel to horizon is called $x$-axis, and vertical line $YOY'$ is called $y$-axis and point $O$ of intersection of these lines is called Origin.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The signed perpendicular distance of a point, located in the plane determined by two axes, from the axes are called coordinates of the point. Let $P$ be any point on the plane determined by two axes. Let us draw perpendiculars $PN$ and $PM$ from $P$ to $XOX'$ and $YOY'$. Then $PM = ON$ which is perpendicular distance to $YOY'$ from $P$ and $PN = OM$ which is perpendicular distance from $P$ to $XOX'$. If $PM = x$ and $PN = y$, then coordinates of point $P$ are $(x, y)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here $x$ is called abscissa and $y$ is called ordinate. These coordinates are called Cartesian coordinates. It is very easy to depict a function using Cartesian coordinate system. Usually values of independent variable is set along $x$ axis, and those of dependent variable along $y$ axis.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In order to draw a graph for the function $y = f(x)$, some values of independent variable are chosen from domain, and with corresponding values of dependent variables ordered pairs are formed. After that these ordered pairs are placed on the plane. The resultant points are then connected with line which is known as graph of the function $y = f(x)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 22. Draw the graph for the function $y = 2x$, where $-3 \\le x \\le 3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: Calculate values of $y$ for some values of $x$ from the domain $-3 \\le x \\le 3$, and draw a list.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Cartesian coordinate system",
+      "figure_no": "2.01",
+      "box_2d": [
+        341,
+        335,
+        593,
+        664
+      ],
+      "description": "A Cartesian coordinate system showing the x-axis, y-axis, origin O, and a point P(x,y) with perpendiculars PM and PN.",
+      "reading_order_anchor": "The signed perpendicular distance of a point, located in the plane determined by two axes, from the axes are called coordinates of the point."
+    }
+  ]
+}

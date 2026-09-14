@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 281,
+  "pdf_page_no": 286,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Here,\n$$q_1 = 1\\text{ C}$$\n$$q_2 = -1\\text{ C}$$\n$$r = 10\\text{ cm} = 0.10\\text{ m}$$\n$$k = 9 \\times 10^9\\text{ Nm}^2/\\text{C}^2$$\n\nSo,\n$$F = \\frac{9 \\times 10^9 \\times 1 \\times (-1)}{(0.10)^2}\\text{ N} = -9 \\times 10^{11}\\text{ N}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Question: Two charges of $+5\\text{ C}$ and $+3\\text{ C}$ are placed at a distance of $1\\text{ m}$. Now a third charge $+q$ is placed in between them, where will it not feel any force. (Figure 10.10 b).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Answer: The $+5\\text{ C}$ charge will repel $+q$ charge towards the right and the $+3\\text{ C}$ charge repel towards the left. When two charges will repel by equal force, $+q$ charge will not feel any force.\n\nSo,\n$$k\\frac{(+5)q}{x^2} = k\\frac{(+3)q}{(1 - x)^2}$$\n$$5(1 - x)^2 = 3x^2$$\n$$2x^2 - 10x + 5 = 0$$\n$$x = \\frac{10 \\pm \\sqrt{100 - 40}}{4}$$\n$$x = 4.435\\text{ or }0.565$$\n\nAs the value of $x$ will be between $0$ and $1$, so the value of $x$ must be $0.565$.\n(Can you try what it would be if the value of $x$ was $4.435$?)\n\n",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.10 : (a) Distance between +1C and -1C is 10cm (b) Distance between +5C and +3C is 1m.",
+      "figure_no": "10.10",
+      "box_2d": [
+        322,
+        146,
+        457,
+        832
+      ],
+      "description": "Schematic diagrams showing two point charges separated by a distance: (a) +1C and -1C separated by 10 cm, and (b) +5C, +3C and a third charge q separated by distances x and (1-x).",
+      "reading_order_anchor": "Question: Two charges of +5 C and +3 C..."
+    }
+  ]
+}

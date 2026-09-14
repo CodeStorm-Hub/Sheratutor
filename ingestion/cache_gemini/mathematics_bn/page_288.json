@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 288,
+  "pdf_page_no": 293,
+  "chapter_no": 15,
+  "chapter_title": "ক্ষেত্রফল সম্পর্কিত উপপাদ্য",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $A, C$ ও $A, E$ যোগ করি। $C$ ও $E$ বিন্দু থেকে ভূমি $AB$ ও এর বর্ধিত রেখাংশের উপর $EK$ ও $CL$ লম্ব টানি।\n\nপ্রমাণ: $\\triangle ABC$ এর ক্ষেত্রফল $= \\frac{1}{2} \\times AB \\times CL$ এবং\n\n$\\triangle ABE$ এর ক্ষেত্রফল $= \\frac{1}{2} \\times AB \\times EK$\n\nযেহেতু $CL = EK$, [অঙ্কনানুসারে $AL \\parallel FC$]\nঅতএব, $\\triangle ABC$ এর ক্ষেত্রফল $= \\triangle ABE$ এর ক্ষেত্রফল\n\n$\\implies \\frac{1}{2}$ সামান্তরিকক্ষেত্র $ABCD$ এর ক্ষেত্রফল $= \\frac{1}{2}$ সামান্তরিকক্ষেত্র $ABEF$ এর ক্ষেত্রফল।\n$\\therefore ABCD$ সামান্তরিকের ক্ষেত্রফল $= ABEF$ সামান্তরিকের ক্ষেত্রফল। (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "15.38",
+      "section_title": "পিথাগোরাসের উপপাদ্য",
+      "chunk_type": "theory",
+      "content_markdown": "সমকোণী ত্রিভুজের অতিভুজের উপর অঙ্কিত বর্গক্ষেত্রের ক্ষেত্রফল অপর দুই বাহুর উপর অঙ্কিত বর্গক্ষেত্রদ্বয়ের ক্ষেত্রফলের সমষ্টির সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি, $ABC$ সমকোণী ত্রিভুজের $\\angle ACB$ সমকোণ এবং $AB$ অতিভুজ। প্রমাণ করতে হবে যে, $AB^2 = BC^2 + AC^2$।\n\nঅঙ্কন: $AB, AC$ এবং $BC$ বাহুর উপর যথাক্রমে $ABED, ACGF$ এবং $BCHK$ বর্গক্ষেত্র অঙ্কন করি। $C$ বিন্দু দিয়ে $AD$ বা $BE$ রেখার সমান্তরাল $CL$ রেখা আঁকি। মনে করি, তা $AB$ কে $M$ বিন্দুতে এবং $DE$ কে $L$ বিন্দুতে ছেদ করে। $C$ ও $D$ এবং $B$ ও $F$ যোগ করি।\n\nপ্রমাণ:\nধাপ ১. $\\triangle CAD$ ও $\\triangle BAF$ তে $CA = AF, AD = AB$ এবং\nঅন্তর্ভুক্ত $\\angle CAD = \\angle CAB + \\angle BAD = \\angle CAB + \\angle CAF =$ অন্তর্ভুক্ত $\\angle BAF$\n[$\\angle BAD = \\angle CAF = ১$ সমকোণ]\nঅতএব, $\\triangle CAD \\cong \\triangle BAF$\n\nধাপ ২. $\\triangle CAD$ এবং আয়তক্ষেত্র $ADLM$ একই ভূমি $AD$ এর উপর এবং $AD$ ও $CL$ সমান্তরাল রেখাদ্বয়ের মধ্যে অবস্থিত।\nসুতরাং আয়তক্ষেত্র $ADLM = 2 \\triangle CAD$ [উপপাদ্য ৩৭]\n\nধাপ ৩. $\\triangle BAF$ এবং বর্গক্ষেত্র $ACGF$ একই ভূমি $AF$ এর উপর এবং $AF$ ও $BG$ সমান্তরাল রেখাদ্বয়ের মধ্যে অবস্থিত।\nসুতরাং বর্গক্ষেত্র $ACGF = 2 \\triangle FAB = 2 \\triangle CAD$ [উপপাদ্য ৩৭]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৫.৩৮: পিথাগোরাসের উপপাদ্য",
+      "figure_no": "15.38",
+      "box_2d": [
+        456,
+        635,
+        735,
+        875
+      ],
+      "description": "পিথাগোরাসের উপপাদ্য প্রমাণের জ্যামিতিক চিত্র যেখানে সমকোণী ত্রিভুজ ABC এবং তার বাহুগুলোর উপর বর্গক্ষেত্র অঙ্কন করা হয়েছে।",
+      "reading_order_anchor": "উপপাদ্য ৩৮. পিথাগোরাসের উপপাদ্য"
+    }
+  ]
+}

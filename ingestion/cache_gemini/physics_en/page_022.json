@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 22,
+  "pdf_page_no": 27,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": "1.6.2",
+      "section_title": "Balance",
+      "chunk_type": "theory",
+      "content_markdown": "Mass cannot be measured directly, so mass is generally determined by measuring the weight. When we say the weight of an object is $1\\text{ gm}$ or $1\\text{ kg}$, then actually we mean that the mass of the object is $1\\text{ gm}$ or $1\\text{ kg}$. In earlier times to measure the mass of an object, a balance was used, there the mass of the object was compared with the definite mass of a known weight. Now-a-days the use of electronic balance (figure 1.08) has increased a lot. If we keep the body on the balance then the sensors of the balance can determine the weight very precisely.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.6.3",
+      "section_title": "Stop Watch",
+      "chunk_type": "theory",
+      "content_markdown": "Stop watches are used to measure time interval (figure 1.09). Once accurate stop watches were very precious things. Now-a-days very accurate stop watches are available in the mobile phone at low prices due to the advancement of electronics. In a stop watch, time measurement is started at any instant of time, and by stopping the measurement of time after a definite interval, the elapsed time can be determined. An interesting matter is that the stop watch can measure the time very accurately, but we can never start or stop it with our hands with the same accuracy.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "There is less probability for all of you to possess slide calipers but if you want, you can make a slide calipers to carry on your work. Make a photocopy of figure 1.10. Cut the part of the main scale and the vernier scale and then put it together after folding as shown in the figure following the steps ($1, 2, 3, \\dots$ accordingly). Now you can measure any length accurately. The slide calipers is also graduated in inch. So to get the length in centimeter we need to multiply it with $2.54$.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.08: Digital weigh machine",
+      "figure_no": "1.08",
+      "box_2d": [
+        139,
+        617,
+        317,
+        907
+      ],
+      "description": "A digital electronic weighing scale with a yellow and black casing and a silver weighing pan.",
+      "reading_order_anchor": "1.6.2 Balance"
+    },
+    {
+      "caption": "Figure 1.09: Stop watch",
+      "figure_no": "1.09",
+      "box_2d": [
+        399,
+        99,
+        610,
+        386
+      ],
+      "description": "A digital black stop watch with a lanyard attached.",
+      "reading_order_anchor": "1.6.3 Stop Watch"
+    }
+  ]
+}

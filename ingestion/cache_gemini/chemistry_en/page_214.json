@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 214,
+  "pdf_page_no": 219,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": "9.2",
+      "section_title": "Base and Alkali",
+      "chunk_type": "theory",
+      "content_markdown": "**Base:** Generally, metals or metal like reactive radical oxides and hydroxides that undergo reactions with acids and produce salt and water are called bases. Examples:\n\n$$\\text{CaO} + 2\\text{HCl} \\longrightarrow \\text{CaCl}_2 + \\text{H}_2\\text{O}$$\n$$2\\text{KOH} + \\text{H}_2\\text{SO}_4 \\longrightarrow \\text{K}_2\\text{SO}_4 + 2\\text{H}_2\\text{O}$$\n$$\\text{NH}_4\\text{OH} + \\text{HCl} \\longrightarrow \\text{NH}_4\\text{Cl} + \\text{H}_2\\text{O}$$\n\nApart from $\\text{CaO}$ and $\\text{KOH}$, examples of bases are sodium oxide (\\text{Na}_2\\text{O}), copper oxide (\\text{CuO}), ferrous oxide (\\text{FeO}), sodium hydroxide (\\text{NaOH}), calcium hydroxide [\\text{Ca(OH)}_2], ferrous hydroxide [\\text{Fe(OH)}_2], ammonium hydroxide (\\text{NH}_4\\text{OH}) etc.\n\nAmmonium ion (\\text{NH}_4^+), phosphonium ion (\\text{PH}_4^+), etc. radicals are reactive like metals. Metallic ions like \\text{Na}^+, \\text{K}^+ etc. combined with non-metallic ions like \\text{Cl}^-, \\text{SO}_4^{2-} etc. produce ionic compounds like \\text{NaCl}, \\text{KCl}, \\text{Na}_2\\text{SO}_4, \\text{K}_2\\text{SO}_4 etc. Similarly, \\text{NH}_4^+, \\text{PH}_4^+ ions combined with \\text{Cl}^-, \\text{SO}_4^{2-} ions produce ionic compounds \\text{NH}_4\\text{Cl}, \\text{PH}_4\\text{Cl}, (\\text{NH}_4)_2\\text{SO}_4, (\\text{PH}_4)_2\\text{SO}_4 etc. The reaction between acids and bases that produces salt and water are called acid-base neutralizing reactions. Therefore it is said that acid neutralizes a base and a base neutralizes an acid.\n\n**Alkali:** Hydroxide compounds of metals or metal like reactive radicals that are soluble in water are called alkali. A compound can be an alkali if (i) it contains a hydroxide (\\text{OH}^-) radical and (ii) it dissolves in water.\n\n\\text{NaOH} is an alkali for it has an \\text{OH}^- radical and it dissolves in water. \\text{Fe(OH)}_2 cannot be called an alkali for although it has an \\text{OH}^- radical, it does not dissolve in water. It is base only. \\text{CaO} is base but not an alkali for it does not contain an \\text{OH}^- radical. So, you realize, the bases containing \\text{OH}^- radicals and soluble in water are alkali. Thus it can be said, all bases are not alkali but all alkalis are bases.\n\nThere are many basic compounds in our household. The toilet cleaners in our houses are base containing sodium hydroxide (\\text{NaOH}), the glass cleaners containing ammonium hydroxide (\\text{NH}_4\\text{OH}) are bases.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

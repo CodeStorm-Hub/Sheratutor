@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 325,
+  "pdf_page_no": 330,
+  "chapter_no": 11,
+  "chapter_title": "চল তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "নিজেই করো",
+      "chunk_type": "theory",
+      "content_markdown": "**উদ্দেশ্য:** শিক্ষার্থীরা বাসাবাড়িতে ব্যবহারের উপযোগী বৈদ্যুতিক সার্কিটের নকশাকে বিশ্লেষণ করতে পারবে।\n\n**কাজের ধারা:** $11.17$ চিত্রে একটি বাসার বিদ্যুৎ সরবরাহ করার জন্য সম্ভাব্য সার্কিট দেখানো হয়েছে। এই সার্কিটটিতে নিচের পরিবর্তনগুলো করে নতুন একটি সার্কিট তৈরি করো।\n\n(a) তিনটি প্লাগ পয়েন্ট যথেষ্ট নয় বলে আরো দুইটি নতুন প্লাগ পয়েন্ট যুক্ত করো।\n(b) বিদ্যুৎ ব্যবহার করে এরকম একটি পানির পাম্প উপযুক্ত সার্কিট ব্রেকারসহ যুক্ত করো।\n(c) লাইট এবং ফ্যানের সাথে দ্বিতীয় আরেকটি লাইটে দুইটি সুইচ ব্যবহার করে এমনভাবে যুক্ত করো যেন যেকোনো সুইচ দিয়েই লাইটটি জ্বালানো এবং নেভানো যায়।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী",
+      "chunk_type": "theory",
+      "content_markdown": "### অনুশীলনীর সাধারণ প্রশ্ন",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. ধারক বা Capacitor-কে কি ব্যাটারি হিসেবে ব্যবহার করা সম্ভব?",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. ফিলামেন্ট যুক্ত লাইট বাল্বের ফিলামেন্ট ও'মের সূত্র মানছে কি না পরীক্ষা করা কঠিন কেন?",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. বিদ্যুৎ প্রবাহ হচ্ছে ইলেকট্রন প্রবাহ, যখন বিদ্যুৎপ্রবাহ হয়, তখন ইলেকট্রনগুলোর বেগ কিন্তু তুলনামূলকভাবে কম থাকে। কিন্তু মুহূর্তের মাঝে বিদ্যুৎ প্রবাহিত হয়—কীভাবে?",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. সমান বিভব পার্থক্যে বেশি রোধ বেশি তাপ তৈরি করে নাকি কম রোধ বেশি তাপ তৈরি করে?",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. বৈদ্যুতিক খুঁটির মাধ্যমে বিদ্যুৎ সঞ্চালন তারে কাক বা পাখিকে মারা যেতে দেখা যায় না কিন্তু বড় বাদুড় প্রায়ই মারা যায়— কারণ কী?",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. তড়িৎ প্রবাহ কাকে বলে?",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 11.18: $1\\text{ m}^2$ এবং $10\\text{ cm}^2$ ক্ষেত্রফলের দুটি বর্গাকৃতির রেজিস্টর।",
+      "figure_no": "11.18",
+      "box_2d": [
+        705,
+        486,
+        849,
+        874
+      ],
+      "description": "দুটি ভিন্ন আকারের বর্গাকৃতির রেজিস্টরের স্কিম্যাটিক চিত্র যার একটির মাত্রা ১ মিটার এবং অন্যটির ১০ সেন্টিমিটার।",
+      "reading_order_anchor": "3. বিদ্যুৎ প্রবাহ হচ্ছে ইলেকট্রন প্রবাহ..."
+    }
+  ]
+}

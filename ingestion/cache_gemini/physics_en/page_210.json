@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 210,
+  "pdf_page_no": 215,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. During summer vacation, Nusrat visited Sajek with her family. To hear an echo she screamed loudly beside a hill. But, hearing no echo, she felt sad. Then her father told Nusrat to move $3\\text{ m}$ and to make a sound. This time Nusrat heard the echo. On that day, the velocity and frequency of sound was $332\\text{ m/s}$ and $1328\\text{ Hz}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is an echo?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) Why is a minimum distance necessary to hear an echo?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) What is the wavelength of sound produced by Nusrat?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) How far does Nusrat have to move backward if she wants to hear an echo after $0.3\\text{ s}$ of screaming?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

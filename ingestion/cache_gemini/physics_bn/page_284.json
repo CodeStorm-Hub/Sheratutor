@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 284,
+  "pdf_page_no": 289,
+  "chapter_no": 10,
+  "chapter_title": "স্থির তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এই তড়িৎ ক্ষেত্রে যদি কোনো চার্জ $q$ আনা হয় তাহলে চার্জটি $F$ বল অনুভব করবে, আর $F$ বলের পরিমাণ হবে:\n\n$$F = Eq$$\n\nবল $F$ যেহেতু ভেক্টর, $q$ যেহেতু স্কেলার তাই $E$ হচ্ছে ভেক্টর এবং তার একক হচ্ছে $\\text{N/C}$ তোমরা দেখবে তড়িৎ ক্ষেত্র দিয়ে ব্যাখ্যা করা হলে পুরো বিষয়টি বিশ্লেষণ করা অনেক সহজ হয়।\n\nতড়িৎ ক্ষেত্র দেখা যায় না কিন্তু কাউকে বোঝানোর জন্য অনেক সময় তড়িৎ বলরেখা নামে পুরোপুরি কাল্পনিক এক ধরনের রেখা এঁকে দেখানো হয় (মাইকেল ফ্যারাডে প্রথম সেটা করেছিলেন)। আমাদের পরিচিত জগৎ ত্রিমাত্রিক কাজেই বলরেখাগুলো চারদিকেই ছড়িয়ে পড়বে। তোমাদের দেখানোর জন্য সেগুলো একটা সমতলে এঁকে দেখানো হয়েছে। (চিত্র 10.11)\n\nবলরেখা গুলো আঁকার সময় কিছু নিয়ম মেনে চলা হয়। যেমন:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) পজিটিভ চার্জের বেলায় বলরেখা পজিটিভ চার্জ থেকে বের হবে এবং নেগেটিভ চার্জের বেলায় বলরেখা নেগেটিভ চার্জে এসে কেন্দ্রীভূত হবে। একটা নির্দিষ্ট বিন্দুতে বলরেখার স্পর্শকের দিক হচ্ছে তড়িৎ ক্ষেত্রের দিক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) চার্জের পরিমাণ যত বেশি হবে প্রতি একক আয়তন বা ক্ষেত্রফলে বলরেখার সংখ্যা তত বেশি হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) বলরেখাগুলো যত কাছাকাছি থাকবে তড়িৎ ক্ষেত্রের মান তত বেশি হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) একটি চার্জের বলরেখা কখনো অন্য চার্জের বলরেখার ওপর দিয়ে যাবে না।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 10.11: পজিটিভ চার্জ থেকে বলরেখা চারদিকে ছড়িয়ে পড়ে এবং নেগেটিভ চার্জের দিকে বলরেখা কেন্দ্রীভূত হয়।",
+      "figure_no": "10.11",
+      "box_2d": [
+        290,
+        452,
+        404,
+        836
+      ],
+      "description": "Illustration of electric field lines emanating radially outward from a positive charge and converging radially inward toward a negative charge.",
+      "reading_order_anchor": "তড়িৎ ক্ষেত্র দেখা যায় না কিন্তু"
+    }
+  ]
+}

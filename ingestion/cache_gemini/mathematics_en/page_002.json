@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 2,
+  "pdf_page_no": 7,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "After completing this chapter, we will be able to:\n\n* interpret repeated decimal numbers and convert fractions into repeated decimal numbers.\n* convert repeated decimal fractions into fractions.\n* interpret infinite non-repeating fractional numbers.\n* interpret similar and dissimilar decimal fractions.\n* carry out addition, subtraction, multiplication and division operations on repeated decimal fractions, and will be able to solve different relevant problems.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1",
+      "section_title": "Classification of Real Numbers",
+      "chunk_type": "theory",
+      "content_markdown": "**Natural Number:** $1, 2, 3, 4, \\dots$ etc are natural numbers or positive whole numbers. $2, 3, 5, 7, \\dots$ are primes and $4, 6, 8, 9, \\dots$ etc are composite numbers. If GCD (Greatest Common Divisor) of two integers is $1$ then they are called mutually primes. For example $6$ and $35$ are mutually primes.\n\n**Integer:** All positive and negative fractionless numbers are said to be integers. For example, $\\dots, -3, -2, -1, 0, 1, 2, 3, \\dots$ etc are integers.\n\n**Fractional Number:** Numbers expressible as $\\frac{p}{q}$ are said to be fractional numbers where $q \\neq 0, q \\neq 1$ and $p$ are not divisible by $q$. For example, $\\frac{1}{2}, \\frac{3}{2}, \\frac{-5}{3}, \\frac{4}{6}$ etc are simple fractional numbers. In case of a simple fraction $\\frac{p}{q}$, if $p < q$, then the fraction is called proper and if $p > q$, then the fraction is termed improper. For example $\\frac{1}{2}, \\frac{1}{3}, \\frac{2}{3}, \\frac{1}{4}, \\dots$ etc are proper fractions. $\\frac{3}{2}, \\frac{4}{3}, \\frac{5}{3}, \\frac{5}{4}, \\dots$ etc are improper fractions.\n\n**Rational Number:** Numbers of the form $\\frac{p}{q}$ are called rational when $p$ and $q$ are integers and $q \\neq 0$. For example, $\\frac{3}{1} = 3, \\frac{11}{2} = 5.5, \\frac{5}{3} = 1.666, \\dots$ etc are rational numbers. Any rational number can be expressed as ratio of two mutually prime numbers. All integers and fractions are rational numbers.\n\n**Irrational Number:** If a number cannot be expressed in the form $\\frac{p}{q}$ where $p$ and $q$ are integers and $q \\neq 0$, then it is called an irrational number. Root of a natural number not equal to perfect square or its fraction is an irrational number.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

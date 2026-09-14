@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 204,
+  "pdf_page_no": 209,
+  "chapter_no": 10,
+  "chapter_title": "দূরত্ব ও উচ্চতা",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "গাণিতিক সমস্যা",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৮. একটি গাছ ঝড়ে এমনভাবে ভেঙে গেল যে, ভাঙা অংশ দণ্ডায়মান অংশের সাথে $30^\\circ$ কোণ করে গাছের গোড়া থেকে 12 মিটার দূরে মাটি স্পর্শ করে। সম্পূর্ণ গাছটির দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "গাণিতিক সমস্যা",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৯. একটি নদীর এক তীরে কোনো স্থানে দাঁড়িয়ে একজন লোক দেখলো যে, ঠিক সোজাসুজি অপর তীরে অবস্থিত 150 মিটার লম্বা একটি গাছের শীর্ষের উন্নতি কোণ $30^\\circ$। লোকটি একটি নৌকা যোগে গাছটিকে লক্ষ্য করে যাত্রা শুরু করলো। কিন্তু পানির স্রোতের কারণে লোকটি গাছ থেকে 10 মিটার দূরে তীরে পৌঁছল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উপরোক্ত বর্ণনাটি চিত্রের মাধ্যমে দেখাও।\nখ) নদীর বিস্তার নির্ণয় কর।\nগ) লোকটির যাত্রা স্থান থেকে গন্তব্য স্থানের দূরত্ব নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "গাণিতিক সমস্যা",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২০. 16 মিটার দীর্ঘ একটি মই লম্বভাবে দণ্ডায়মান একটি দেওয়ালের ছাদ বরাবর ঠেস দিয়ে রাখা হলো। ফলে এটি ভূমির সাথে $60^\\circ$ কোণ উৎপন্ন করল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উদ্দীপক অনুসারে সংক্ষিপ্ত বর্ণনাসহ চিত্র অঙ্কন কর।\nখ) দেওয়ালটির উচ্চতা নির্ণয় কর।\nগ) দেওয়ালের সাথে ঠেস দিয়ে রাখা অবস্থায় মইটিকে পূর্বের অবস্থান থেকে ভূমি বরাবর আর কতদূর সরালে মইটি ভূমির সাথে $30^\\circ$ কোণ উৎপন্ন করবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.4",
+      "section_title": "গাণিতিক সমস্যা",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২১. চিত্রে, $CD = 96$ মিটার।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $\\angle CAD$ এর ডিগ্রি পরিমাপ নির্ণয় কর।\nখ) $BC$ এর দৈর্ঘ্য নির্ণয় কর।\nগ) $\\triangle ACD$ এর পরিসীমা নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ২১: জ্যামিতিক চিত্র",
+      "figure_no": "10.01",
+      "box_2d": [
+        505,
+        595,
+        715,
+        875
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC এবং একটি বৃহত্তর ত্রিভুজ ABD যেখানে CD এর দৈর্ঘ্য 96 মিটার এবং কোণগুলো চিহ্নিত করা আছে।",
+      "reading_order_anchor": "২১. চিত্রে, CD = 96 মিটার।"
+    }
+  ]
+}

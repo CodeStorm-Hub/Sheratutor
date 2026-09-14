@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 227,
+  "pdf_page_no": 232,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "To understand how an image is formed in a spherical convex mirror, we first need to understand how light rays reflect on such a mirror. This depends on what angle the light rays are incident on the mirror. If we know the rules of reflection of only three special light rays, we can easily explain how an image is formed:\n\n(i) If light rays are travelling towards the center (Fig 8.19, XN or YR ray), they are reflected perpendicularly and go back along the line they were as incident on.\n\n(ii) If light rays travel parallel to the principal axis (Fig 8.19, XP), they will appear to have diverged from the focal ($F$) point.\n\n(iii) If the direction of the light ray is changed, it goes back the way it has come. When the light ray is travelling towards the focus (Fig 8.19, QP), it will be reflected parallel to principal axis (PX).\n\nWe can now create an image using these three rules. In Fig 8.19, an object $XY$ is kept in front of a convex mirror. The light ray travelling from point $Y$ towards $R$ will be reflected back along the same path towards $Y$, which means the image of the point $Y$ will be created somewhere along the line $YO$. To know exactly where the image is formed, we have to draw another light ray from the point $X$ in another direction but that's not necessary because we will find it by knowing where the image of point $X$ is formed.\n\nTo find the image of the point $X$ we have to draw two rays, one by connecting the points $X$ and $O$ as we have done before. (As the YR ray was reflected back to the point $Y$, similarly this ray will be reflected back towards $X$ from the point $N$ on the mirror.) The second ray can be drawn parallel to YR, which will be incident on point $P$ of the mirror and will appear to have diverged from the point $F$. So we join the line FP and extend it towards $Q$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.19: In convex mirror if an object XY is placed inside focal length, the image X'Y' looks smaller.",
+      "figure_no": "8.19",
+      "box_2d": [
+        500,
+        469,
+        724,
+        867
+      ],
+      "description": "Ray diagram showing image formation by a convex mirror for an object placed inside the focal length, resulting in a smaller virtual image.",
+      "reading_order_anchor": "To understand how an image is formed in a spherical convex mirror..."
+    }
+  ]
+}

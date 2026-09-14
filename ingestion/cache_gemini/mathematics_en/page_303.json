@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 303,
+  "pdf_page_no": 308,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Symmetry",
+      "chunk_type": "theory",
+      "content_markdown": "Symmetry is an important geometrical concept, commonly exhibited in nature and is used almost in every field of our activity. Artists, designers, architects, carpenters always make use of the idea of symmetry. Tree-leaves, flowers, beehives, houses, tables, chairs -everywhere we find symmetrical designs. A figure has line symmetry, if there is a line about which the figure may be folded so that the two parts of the figure will coincide.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Each of the above figures has the line of symmetry.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work:\n1) Sumi has made some paper-cut design as shown in the adjacent figure. In the figure, mark the lines of symmetry. How many lines of symmetry does the figure have?\n2) Write and identify the letters in English alphabet having line symmetry. Also mark their line of symmetry.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "Line of symmetry of a regular polygon",
+      "chunk_type": "theory",
+      "content_markdown": "A polygon is a closed figure made of several line segments. A polygon is said to be regular if all its sides are of equal length and all its angles are equal. The triangle is a polygon made up of the least number of line segments. An equilateral triangle is a regular polygon of three sides. An equilateral triangle is regular because its sides as well as angles are equal. A square is the regular polygon of four sides.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Examples of line symmetry",
+      "figure_no": "14.01",
+      "box_2d": [
+        298,
+        260,
+        383,
+        738
+      ],
+      "description": "Four geometric shapes showing lines of symmetry: a house-like structure, the letter T, the letter M, and a vertical line with a horizontal line crossing it.",
+      "reading_order_anchor": "Each of the above figures has the line of symmetry."
+    },
+    {
+      "caption": "Fig 14.02: Paper-cut design",
+      "figure_no": "14.02",
+      "box_2d": [
+        522,
+        715,
+        593,
+        808
+      ],
+      "description": "A circular paper-cut design with symmetrical patterns.",
+      "reading_order_anchor": "Sumi has made some paper-cut design as shown in the adjacent figure."
+    }
+  ]
+}

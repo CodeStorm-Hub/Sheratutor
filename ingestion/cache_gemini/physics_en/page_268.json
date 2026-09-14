@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 268,
+  "pdf_page_no": 273,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. Draw the rays for object $XY$ and show the position of the image as accurately as possible (figure 9.34 a).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. Draw the rays for object $XY$ and show the position of the image as accurately as possible (figure 9.34 b).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Choose the correct answer.\n1. Where will the image of an object be when it is placed in a denser medium and looked at from a rarer medium?\na) raised upward b) gone downward\nc) remained at the same place d) moved aside\nAnswer the questions 2 & 3 from Figure 9.35\n2. What is the angle of refraction here?\na) $0^{\\circ}$ b) $90^{\\circ}$\nc) $180^{\\circ}$ d) $45^{\\circ}$\n3. What will happen if the angle of incidence is bigger?\na) Total internal refraction\nb) Total internal reflection\nc) Refraction and reflection\nd) Reflection",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.34: (a) An object kept inside of the focal length of a convex lens (b) an object kept outside of the focal length of a convex lens.",
+      "figure_no": "9.34",
+      "box_2d": [
+        105,
+        126,
+        301,
+        863
+      ],
+      "description": "Ray diagrams showing an object XY kept inside and outside of the focal length of a convex lens.",
+      "reading_order_anchor": "Figure 9.34: (a) An object kept inside of the focal length of a convex lens (b) an object kept outside of the focal length of a convex lens."
+    },
+    {
+      "caption": "Figure 9.35",
+      "figure_no": "9.35",
+      "box_2d": [
+        737,
+        655,
+        911,
+        915
+      ],
+      "description": "Ray diagram showing refraction and reflection at a boundary between two media with a normal line N N'.",
+      "reading_order_anchor": "Answer the questions 2 & 3 from Figure 9.35"
+    }
+  ]
+}

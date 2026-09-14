@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 121,
+  "pdf_page_no": 126,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ২. দুইটি সরলরেখা পরস্পর ছেদ করলে, উৎপন্ন বিপ্রতীপ কোণগুলো পরস্পর সমান।\n\nমনে করি, $AB$ ও $CD$ রেখাদ্বয় পরস্পর $O$ বিন্দুতে ছেদ করেছে। ফলে $O$ বিন্দুতে $\\angle AOC$, $\\angle COB$, $\\angle BOD$, $\\angle AOD$ কোণ উৎপন্ন হয়েছে।\n\n$\\angle AOC = \\text{বিপ্রতীপ } \\angle BOD$ এবং $\\angle COB = \\text{বিপ্রতীপ } \\angle AOD$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সমান্তরাল সরলরেখা (Parallel Straight Lines)",
+      "chunk_type": "theory",
+      "content_markdown": "একান্তর কোণ, অনুরূপ কোণ, ছেদকের একই পার্শ্বস্থ অন্তঃস্থ কোণ (Alternate angle, Corresponding angle, Co-interior angle)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপরের চিত্রে, $AB$ ও $CD$ দুইটি সরলরেখা এবং $EF$ সরলরেখা এদেরকে $P$ ও $Q$ বিন্দুতে ছেদ করেছে। $EF$ সরলরেখা $AB$ ও $CD$ সরলরেখাদ্বয়ের ছেদক। ছেদকটি $AB$ ও $CD$ সরলরেখা দুইটির সাথে $\\angle 1, \\angle 2, \\angle 3, \\angle 4, \\angle 5, \\angle 6, \\angle 7, \\angle 8$ মোট আটটি কোণ তৈরি করেছে। এ কোণগুলোর মধ্যে\n\nক) $\\angle 1$ এবং $\\angle 5$, $\\angle 2$ এবং $\\angle 6$, $\\angle 3$ এবং $\\angle 7$, $\\angle 4$ এবং $\\angle 8$ পরস্পর অনুরূপ কোণ।\nখ) $\\angle 3$ এবং $\\angle 6$, $\\angle 4$ এবং $\\angle 5$ হলো পরস্পর একান্তর কোণ।\nগ) $\\angle 4, \\angle 6$ ডানপাশের অন্তঃস্থ কোণ।\nঘ) $\\angle 3, \\angle 5$ বামপাশের অন্তঃস্থ কোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমতলে দুইটি সরলরেখা পরস্পরকে ছেদ করতে পারে অথবা তারা সমান্তরাল। সরলরেখাদ্বয় পরস্পরছেদী হয়, যদি উভয়রেখায় অবস্থিত একটি সাধারণ বিন্দু থাকে। অন্যথায় সরলরেখা দুইটি সমান্তরাল। লক্ষণীয় যে, দুইটি ভিন্ন সরলরেখার সর্বাধিক একটি সাধারণ বিন্দু থাকতে পারে।\n\nএকই সমতলে অবস্থিত দুইটি সরলরেখার সমান্তরালতা নিম্নে বর্ণিত তিনভাবে সংজ্ঞায়িত করা যায়:\nক) সরলরেখা দুইটি কখনও পরস্পরকে ছেদ করে না (দুই দিকে অসীম পর্যন্ত বর্ধিত করা হলেও)।\nখ) একটি সরলরেখার প্রতিটি বিন্দু অপরটি থেকে সমান ক্ষুদ্রতম দূরত্বে অবস্থান করে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: দুইটি সরলরেখা পরস্পর ছেদ করলে উৎপন্ন বিপ্রতীপ কোণ",
+      "figure_no": "6.01",
+      "box_2d": [
+        105,
+        650,
+        250,
+        850
+      ],
+      "description": "দুইটি সরলরেখা AB এবং CD পরস্পর O বিন্দুতে ছেদ করছে।",
+      "reading_order_anchor": "উপপাদ্য ২. দুইটি সরলরেখা পরস্পর ছেদ করলে, উৎপন্ন বিপ্রতীপ কোণগুলো পরস্পর সমান।"
+    },
+    {
+      "caption": "চিত্র: সমান্তরাল সরলরেখা ও ছেদক",
+      "figure_no": "6.02",
+      "box_2d": [
+        400,
+        330,
+        570,
+        670
+      ],
+      "description": "AB এবং CD সমান্তরাল সরলরেখাকে EF ছেদক P এবং Q বিন্দুতে ছেদ করেছে।",
+      "reading_order_anchor": "একান্তর কোণ, অনুরূপ কোণ, ছেদকের একই পার্শ্বস্থ অন্তঃস্থ কোণ"
+    }
+  ]
+}

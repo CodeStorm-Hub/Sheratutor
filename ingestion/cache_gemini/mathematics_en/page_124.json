@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 124,
+  "pdf_page_no": 129,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "lie. This line is called $AB$ or $BA$ line. By postulate 5(c) every such straight line contains infinite number of points.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "According to postulate 5(a) more than one plane exist. There is infinite number of straight lines in every such plane. The branch of geometry that deals with points, lines lying in same plane and different geometrical entities related to them, is known as plane Geometry. In this textbook, plane geometry is the matter of our discussion. Hence, whenever something is not mentioned in particular, we will assume that all discussed points, lines etc lie in a plane.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Proof of Mathematical statements",
+      "chunk_type": "theory",
+      "content_markdown": "In any mathematical theory different statements related to the theory are logically established on the basis of some elementary concepts, definitions and postulates. Such statements are generally known as propositions. In order to prove correctness of statements some methods of logic are applied. The methods are:\n\n1. Mathematical Induction\n2. Mathematical Deduction\n3. Proof by contradiction etc.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Proof by contradiction",
+      "chunk_type": "theory",
+      "content_markdown": "Philosopher Aristotle first introduced this method of logical proof. The basis of this method is:\n\n1. A property cannot be accepted and rejected at the same time.\n2. The same object cannot possess opposite properties.\n3. One cannot think of anything which is contradictory to itself.\n4. If an object attains some property, that object cannot unattain that property at the same time.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Lines in a plane",
+      "figure_no": "6.01",
+      "box_2d": [
+        195,
+        655,
+        305,
+        860
+      ],
+      "description": "A diagram showing multiple intersecting straight lines in a plane.",
+      "reading_order_anchor": "According to postulate 5(a) more than one plane exist."
+    }
+  ]
+}

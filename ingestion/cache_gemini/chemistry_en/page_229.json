@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 229,
+  "pdf_page_no": 234,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Sedimentation:** Adding one spoonful of alum dust [$\\text{K}_2\\text{SO}_4\\cdot\\text{Al}_2(\\text{SO}_4)_3\\cdot24\\text{H}_2\\text{O}$] to a bucket of water and allowing it to settle for half an hour creates sedimentation of all impurities of water to settle at the bottom of the bucket. Then by pouring the upper level water into another container, we get pure water. This is the way to get rid of all insoluble pollutants from water.\n\n**Filtration:** Presently filters are available in the market that helps get rid of germs, arsenic and other pollutants from water. We get pure drinking water using these filters.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Determining the acidic or alkaline nature of apple with litmus paper.",
+      "chunk_type": "theory",
+      "content_markdown": "**Principle:** Food can be acidic, alkaline or neutral. Aqueous solution of food that are acidic turns the blue litmus paper into red. Aqueous solution of food that are alkaline turns the red litmus paper into blue. The litmus paper does not change its colour when the solution is neutral.\n\n**Apparatus and Chemicals:** mortar, test tube, glass rod, filter paper, funnel, blue litmus paper, red litmus paper, distilled water, peeled apple.\n\n**Procedure:**\n1. Make a paste of the peeled apple in the mortar adding some water to it.\n2. Take the paste in the beaker.\n3. Add $10\\text{ mL}$ distilled water in the beaker and mix the paste well, using the glass rod.\n4. Now use the filter paper and the funnel to filter the solution to get the watery portion of it from the beaker into the test tube.\n5. Observe the change of colour of the litmus papers one by one by dipping them in the test tube.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

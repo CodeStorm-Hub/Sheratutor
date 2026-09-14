@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 215,
+  "pdf_page_no": 220,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= d^2k^2(k^4 + k^2 + 1)d^2(k^4 + k^2 + 1)$$\n$$= d^4k^2(k^4 + k^2 + 1)^2$$\nডানপক্ষ $= (ab + bc + cd)^2$\n$= (dk^3 \\cdot dk^2 + dk^2 \\cdot dk + dk \\cdot d)^2$\n$= (d^2k^5 + d^2k^3 + d^2k)^2$\n$= \\{d^2k(k^4 + k^2 + 1)\\}^2$\n$= d^4k^2(k^4 + k^2 + 1)^2 = $ বামপক্ষ\n$$\\therefore (a^2 + b^2 + c^2)(b^2 + c^2 + d^2) = (ab + bc + cd)^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) দেওয়া আছে, $x = \\frac{10pq}{p + q}$\n\nবা, $\\frac{x}{5p} = \\frac{2q}{p + q}$\n\nবা, $\\frac{x + 5p}{x - 5p} = \\frac{2q + p + q}{2q - p - q}$ [যোজন-বিয়োজন করে]\n\nবা, $\\frac{x + 5p}{x - 5p} = \\frac{p + 3q}{q - p} \\dots (1)$\n\nআবার, $x = \\frac{10pq}{p + q}$\n\nবা, $\\frac{x}{5q} = \\frac{2p}{p + q}$\n\nবা, $\\frac{x + 5q}{x - 5q} = \\frac{2p + p + q}{2p - p - q}$ [যোজন-বিয়োজন করে]\n\nবা, $\\frac{x + 5q}{x - 5q} = \\frac{3p + q}{p - q} \\dots (2)$\n\nএখন (1) ও (2) নং যোগ করে পাই,\n\n$\\frac{x + 5p}{x - 5p} + \\frac{x + 5q}{x - 5q} = \\frac{p + 3q}{q - p} + \\frac{3p + q}{p - q} = \\frac{p + 3q}{q - p} - \\frac{3p + q}{q - p}$\n\n$= \\frac{p + 3q - 3p - q}{q - p} = \\frac{2q - 2p}{q - p} = \\frac{2(q - p)}{q - p} = 2$ [$\\because q - p \\neq 0$]",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

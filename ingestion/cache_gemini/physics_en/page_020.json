@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 20,
+  "pdf_page_no": 25,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore no mark of the vernier scale will coincide with the millimeter mark of the main scale, finally the $10^{\\text{th}}$ mark will coincide again with the ninth millimeter mark of the main scale.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If we keep the vernier scale in such a way that it does not start from a millimeter mark rather it starts with a slight (e.g., $\\frac{3}{10} \\text{ mm}$) displacement (Figure 1.06) then the number of $\\frac{1}{10} \\text{ mm}$ displacements by which it has moved will be the mark of the vernier scale coinciding with the millimeter mark of the main scale! Therefore, it is very easy to measure a length using a vernier scale. First of all, we have to know the difference between one division of vernier scale and one division of the main scale- this is called the vernier constant-- in brief VC. This can be calculated if we divide the length of the smallest division ($1 \\text{ mm}$) of the main scale by the total number of divisions of the vernier scale (in the figure 1.05 and 1.06 it is 10). In our example, the value of this :\n\n$$VC = \\frac{1 \\text{ mm}}{10} = 0.1 \\text{ mm} = 0.0001 \\text{ m}$$\n\nTo measure a length, we have to look at the vernier scale after measuring up to the last millimeter mark. The mark of the vernier scale that coincides exactly with any millimeter mark of the main scale is then found, and then that number is multiplied by the vernier constant. We will get the actual length by adding this amount with the length measured by the main scale. According to our procedure the length shown on the last scale of Figure 1.06 is $1.03 \\text{ cm}$ or $0.013 \\text{ m}$. This instrument consisting of a 'main scale' and a 'vernier scale' is called a Slide calipers or vernier calipers",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.05: Main scale and movable vernier scale",
+      "figure_no": "1.05",
+      "box_2d": [
+        182,
+        227,
+        393,
+        793
+      ],
+      "description": "A schematic diagram showing a main scale marked in centimeters and millimeters alongside a movable vernier scale.",
+      "reading_order_anchor": "Therefore no mark of the vernier scale will coincide with the millimeter mark of the main scale..."
+    }
+  ]
+}

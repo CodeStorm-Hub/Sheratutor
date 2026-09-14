@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 179,
+  "pdf_page_no": 184,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "some time to evaporate but the same amount of water poured into a plate evaporate much faster.\n\n**Nature of liquid:** The less the boiling point of a liquid, the higher would be the rate of evaporation. The rate of evaporation of volatile liquids is a maximum.\n\n**Pressure of air:** The lower the pressure of air, the more the rate of evaporation. The rate of evaporation in vacuum is a maximum, so air is taken out to make dry food with a pump for preservation of the food.\n\n**Temperature:** If the temperature of the air in contact with the liquid increases, the rate of evaporation will increase.\n\n**Dryness of air:** The drier the air over the liquid surface is, the more the liquid evaporates.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.5",
+      "section_title": "Specific Heat",
+      "chunk_type": "theory",
+      "content_markdown": "Heat, temperature and the relation between them are discussed so far, however the amount of heat needed to increase the temperature of an object has not been discussed yet. You might have noticed that in order to heat some water, it needs to be kept on the oven for a long time, but approximately the same amount of metal take little time to be heated at the same temperature. This is because, the specific heat of a metal is much less compared to water. The amount of heat required to increase the temperature of a body of mass $1\\text{ kg}$ by $1\\text{ K}$ is called the specific heat. That is, if an amount of heat $Q$ is required to increase the temperature from $T_1$ to $T_2$, the specific heat will be:\n\n$$s = \\frac{Q}{m(T_2 - T_1)}$$\n\nThe unit of specific heat: $\\text{J kg}^{-1}\\text{K}^{-1}$\n\nHeat capacity $C$ is the amount of heat required to increase the temperature $1\\text{K}$ of a body. The amount of heat required to increase the temperature $1\\text{K}$ of a body of mass $1\\text{ kg}$ is called specific heat. So we can easily find out the heat capacity $C$ of a body if we know the specific heat of that substance. If the mass of an body is $m$ and the specific heat is $s$, then the heat capacity will be:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 204,
+  "pdf_page_no": 209,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Answer:**\n\n$$v \\propto \\sqrt{T}$$\n$$\\frac{v_1}{v_2} = \\sqrt{\\frac{T_1}{T_2}}$$\n$$v_1 = v_2 \\sqrt{\\frac{T_1}{T_2}} = 332 \\sqrt{\\frac{273 + 30}{273 + 10}} \\text{ m/s} = 343.5 \\text{ m/s}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.3.3",
+      "section_title": "Uses of Sound",
+      "chunk_type": "theory",
+      "content_markdown": "We need not talk much about the common uses of sound. We speak, listen to songs, doctors hear the heart beat, engineers hear the sound of instruments etc. There are other applications of sound, which you may not have heard about. Previously we could not see from outside the fetus that grows in the womb of a pregnant mother; which is now possible with the help of a process called ultrasonography.\n\n### Three dimensional Seismic Surveys\nSeismic Survey is done to explore whether gas or oil is present below the earth. To do this, a small blast is done a little below the earth. Sound of the blast hits the different layers of the soil and returns after reflection. The reflected wave is detected by a special type of receiver named a geophone (Figure 7.13). Analyzing all information a perfect three dimensional picture of the soil is formed, from which gas or oil is present or not is determined. Since we know the position of the source of sound and the geophone, the distance of the different layers of soil can be calculated accurately from the time required for the sound to reach from source to geophone.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.13: Information about different layers of the earth can be known, by the reflection of sound.",
+      "figure_no": "7.13",
+      "box_2d": [
+        555,
+        483,
+        786,
+        881
+      ],
+      "description": "Schematic diagram showing trucks on the surface of the earth conducting a seismic survey with sound waves reflecting from underground rock layers.",
+      "reading_order_anchor": "Three dimensional Seismic Surveys"
+    }
+  ]
+}

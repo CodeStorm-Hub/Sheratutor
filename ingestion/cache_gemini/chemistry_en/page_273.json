@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 273,
+  "pdf_page_no": 278,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "sometimes called Olefin (taken from Greek word Olefiant = oil forming) because its lower members (Ethene, Propene etc.) produces an oily substance in a reaction with halogen ($Cl_2$, $Br_2$).",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.1",
+      "section_title": "Naming of alkenes",
+      "chunk_type": "theory",
+      "content_markdown": "In IUPAC system alkenes are named by omitting (ane) and adding (ene) with the names of Alkanes.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Alkane | Alkene | Formula of Alkene |\n| :--- | :--- | :--- |\n| Ethane | Ethene | $CH_2=CH_2$ |\n| Propane | Propene | $CH_3-CH=CH_2$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2",
+      "section_title": "Preparation of Alkene",
+      "chunk_type": "theory",
+      "content_markdown": "**From Ethyl Chloride:** Ethene, sodium chloride and water are produced when water solution of sodium hydroxide is heated with Ethyl chloride.\n\n$$CH_3-CH_2Cl + NaOH \\xrightarrow{\\Delta} CH_2=CH_2 + NaCl + H_2O$$\nEthyl Chloride \\quad Sodium Hydroxide \\quad Ethene \\quad Sodium Chloride \\quad Water\n\n**From Ethanol:** Ethene and water are produced when deep sulphuric acid is heated with Ethanol.\n\n$$CH_3-CH_2OH \\xrightarrow{H_2SO_4} CH_2=CH_2 + H_2$$\nEthanol \\quad Ethene \\quad Water",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.3",
+      "section_title": "Chemical Properties of Alkene",
+      "chunk_type": "theory",
+      "content_markdown": "Due to carbon-carbon double bonds in Alkenes, they are chemically very active. Because one of the bonds is comparatively weaker though another one is stronger, during reaction, the weak bond breaks and takes part in the addition reaction.\n\n**Addition of hydrogen:** Ethane is produced when Ethene is heated with Hydrogen at 180-$200^\\circ\\text{C}$ temperature.\n\n$$CH_2=CH_2 + H_2 \\xrightarrow[180-200^\\circ\\text{C}]{\\text{Ni}} CH_3-CH_3$$\nEthene \\quad Hydrogen \\quad Ethane",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

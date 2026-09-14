@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 230,
+  "pdf_page_no": 235,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 8. If $\\frac{a+b}{b+c} = \\frac{c+d}{d+a}$, prove that, $c=a$ or $a+b+c+d=0$\n\nSolution: Given that, $\\frac{a+b}{b+c} = \\frac{c+d}{d+a}$\n\nor, $\\frac{a+b}{b+c} - 1 = \\frac{c+d}{d+a} - 1$ [subtracting 1 from both the sides]\n\nor, $\\frac{a+b-b-c}{b+c} = \\frac{c+d-d-a}{d+a}$\n\nor, $\\frac{a-c}{b+c} = -\\frac{a-c}{d+a}$\n\nor, $\\frac{a-c}{b+c} + \\frac{a-c}{d+a} = 0$\n\nor, $(a-c) \\left( \\frac{1}{b+c} + \\frac{1}{d+a} \\right) = 0$\n\nor, $(a-c) \\frac{(d+a+b+c)}{(b+c)(d+a)} = 0$\n\nor, $(a-c)(d+a+b+c) = 0$\n\n$\\therefore a-c=0$ or, $d+a+b+c=0$\n\n$\\therefore c=a$ or, $a+b+c+d=0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 9. If $\\frac{x}{y+z} = \\frac{y}{z+x} = \\frac{z}{x+y}$ and $x, y, z$ are not mutually equal, prove that the value of each ratio is either equal to $-1$ or equal to $\\frac{1}{2}$\n\nSolution: Let, $\\frac{x}{y+z} = \\frac{y}{z+x} = \\frac{z}{x+y} = k$\n\n$\\therefore x = k(y+z) \\dots (1)$\n\n$y = k(z+x) \\dots (2)$\n\n$z = k(x+y) \\dots (3)$\n\nBy subtracting equation (2) from (1),\n\n$x-y = k(y-x)$ or, $k(y-x) = -(y-x)$\n\n$\\therefore k = -1$\n\nAgain, adding equations (1), (2) and (3), we get,\n\n$x+y+z = k(y+z+z+x+x+y) = 2k(x+y+z)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

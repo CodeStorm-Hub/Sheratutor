@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 160,
+  "pdf_page_no": 165,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(ii) The roofs and yards of our houses become slippery during the rainy season. We spread sand on those slippery spots. The slippery substance is alkaline. Therefore, it requires some acidic substance to be neutralized. Sand ($SiO_2$) is acidic. This sand neutralizes the alkaline there.\n\n(iii) Sewing needles are kept in coconut oil. The reason is to prevent it from any reaction with oxygen and water vapor of air and get corroded.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.5",
+      "section_title": "Rate of Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "We know, in any reaction, reactants convert to products. Some reactions take less than 1 second while, some take quite a lot of time.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.5",
+      "section_title": "Rate of Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "The amount of products produced from reactants per unit time is called the rate of reaction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.5",
+      "section_title": "Rate of Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "For example, when $AgNO_3$ is added to the $NaCl$ solution, it takes less than 1 second to create the white precipitate of $AgCl$. On the other hand, it takes years for a bridge to rust. Reactions that take less time have a higher rate of reaction and reactions that take more time have a lower rate of reaction.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.03: Reactions with Different Rates, Rust on iron, combustion of candle, Explosion of bomb.",
+      "figure_no": "7.03",
+      "box_2d": [
+        544,
+        115,
+        735,
+        866
+      ],
+      "description": "Three images showing reactions with different rates: rusted iron chain, burning candle with flame, and an explosion.",
+      "reading_order_anchor": "7.5 Rate of Reaction"
+    }
+  ]
+}

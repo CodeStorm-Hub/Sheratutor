@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 315,
+  "pdf_page_no": 320,
+  "chapter_no": 15,
+  "chapter_title": "Area Related Theorems",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** Bisect the line segment $BC$ at $E$. At the point $E$ of the line segment $EC$, draw $\\angle CEF$ equal to $\\angle x$. Through $A$, draw $AG$ parallel to $BC$ which intersects the ray $EF$ at $F$. Again, through $C$, draw the ray $CG$ parallel to $EF$ which intersects the ray $AG$ at $G$. Hence, $ECGF$ is the required parallelogram.\n\n**Proof:** Join $A, E$.\n\nNow, area of $\\triangle ABE = \\text{area of } \\triangle AEC$ [since base $BE = \\text{base } EC$ and heights of both the triangles are equal].\n\n$\\therefore \\text{area of } \\triangle ABC = 2 (\\text{area of } \\triangle AEC)$.\n\nAgain, area of the parallelogram $ECGF = 2 (\\text{area of } \\triangle AEC)$ [since both lie on the same base $EC$ and $EC \\parallel AG$].\n\n$\\therefore \\text{area of the parallelogram region } ECGF = \\text{area of } \\triangle ABC$.\n\nAgain $\\angle CEF = \\angle x$ [since $EF \\parallel CB$ by construction].\n\nSo the parallelogram $ECGF$ is the required parallelogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Construction 14.** Construct a triangle with area of the triangular region equal to that of a quadrilateral region.\n\nLet $ABCD$ be a quadrilateral region. It is required to construct a triangle such that area of the triangular region is equal to that of a quadrilateral region $ABCD$.\n\n**Drawing:** Join $D, B$. Through $C$, draw $CE$ parallel to $DB$ which intersects the side $AB$ extended at $E$. Join $D, E$. Then, $\\triangle DAE$ is the required triangle.\n\n**Proof:** $\\triangle BDC$ and $\\triangle BDE$ lie on the same base $BD$ and $CE \\parallel DB$ (by construction).\n\n$\\therefore \\text{area of } \\triangle BDC = \\text{area of } \\triangle BDE$.\n\n$\\therefore \\text{area of } \\triangle BDC + \\text{area of } \\triangle ABD = \\text{area of } \\triangle BDE + \\text{area of } \\triangle ABD$\n\n$\\therefore \\text{area of the quadrilateral region } ABCD = \\text{area of } \\triangle ADE$. Therefore, $\\triangle ADE$ is the required triangle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 15.14: Construction of a triangle equal in area to a quadrilateral",
+      "figure_no": "15.14",
+      "box_2d": [
+        512,
+        301,
+        658,
+        700
+      ],
+      "description": "A geometric construction showing a quadrilateral ABCD with a triangle DAE constructed such that their areas are equal.",
+      "reading_order_anchor": "Construction 14. Construct a triangle with area of the triangular region equal to that of a quadrilateral region."
+    }
+  ]
+}

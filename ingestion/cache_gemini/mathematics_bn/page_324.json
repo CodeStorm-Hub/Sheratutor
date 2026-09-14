@@ -1,0 +1,99 @@
+{
+  "printed_page_no": 324,
+  "pdf_page_no": 329,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "চিত্রের তথ্য অনুসারে নিচের (৫ - ৭) প্রশ্নগুলোর উত্তর দাও:\n\n![চিত্র ১৬.০১: জ্যামিতিক চিত্র](https://example.com/image.png)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $ABCD$ আয়তক্ষেত্রের কর্ণের দৈর্ঘ্য কত সে.মি.?\nক) 13 খ) 14 গ) 14.4 ঘ) 15",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "6",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $ADF$ ত্রিভুজের ক্ষেত্রফল কত বর্গ সে.মি.?\nক) 16 খ) 32 গ) 64 ঘ) 128",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "7",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $AGB$ অর্ধবৃত্তের পরিধি কত সে.মি.?\nক) 18 খ) 18.85 (প্রায়) গ) 37.7 (প্রায়) ঘ) 96",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "8",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য 16 মিটার, প্রস্থ 12 মিটার ও উচ্চতা 4.5 মিটার। এর পৃষ্ঠতলের ক্ষেত্রফল, কর্ণের দৈর্ঘ্য ও আয়তন নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য, প্রস্থ ও উচ্চতার অনুপাত $21 : 16 : 12$ এবং কর্ণের দৈর্ঘ্য 87 সে.মি. হলে, ঘনবস্তুটির তলের ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. একটি আয়তাকার ঘনবস্তু 48 বর্গমিটার ভূমির উপর দণ্ডায়মান। এর উচ্চতা 3 মিটার এবং কর্ণ 13 মিটার। আয়তাকার ঘনবস্তুর দৈর্ঘ্য ও প্রস্থ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. একটি আয়তাকার কাঠের বাক্সের বাইরের মাপ যথাক্রমে 8 সে.মি., 6 সে.মি. ও 4 সে.মি.। এর ভিতরের সম্পূর্ণ পৃষ্ঠের ক্ষেত্রফল 44 বর্গ সে.মি.। বাক্সটির কাঠের পুরুত্ব নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. একটি দেওয়ালের দৈর্ঘ্য 25 মিটার, উচ্চতা 6 মিটার এবং পুরুত্ব 30 সে.মি.। একটি ইটের দৈর্ঘ্য 10 সে.মি., প্রস্থ 5 সে.মি. এবং উচ্চতা 3 সে.মি.। দেওয়ালটি ইট দিয়ে তৈরি করতে প্রয়োজনীয় ইটের সংখ্যা নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. একটি ঘনক আকৃতির বস্তুর পৃষ্ঠতলের ক্ষেত্রফল 2400 বর্গ সে.মি. হলে, এর কর্ণের দৈর্ঘ্য কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. 12 সে.মি. উচ্চতাবিশিষ্ট একটি বেলনের ভূমির ব্যাসার্ধ 5 সে.মি.। এর পৃষ্ঠতলের ক্ষেত্রফল ও আয়তন নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৬.০১: জ্যামিতিক চিত্র",
+      "figure_no": "16.01",
+      "box_2d": [
+        135,
+        350,
+        375,
+        650
+      ],
+      "description": "একটি জ্যামিতিক চিত্র যেখানে একটি আয়তক্ষেত্র ABCD, একটি ত্রিভুজ ADF এবং একটি অর্ধবৃত্ত AGB সংযুক্ত আছে।",
+      "reading_order_anchor": "চিত্রের তথ্য অনুসারে নিচের (৫ - ৭) প্রশ্নগুলোর উত্তর দাও:"
+    }
+  ]
+}

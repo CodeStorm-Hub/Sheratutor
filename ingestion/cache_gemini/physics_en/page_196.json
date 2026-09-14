@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 196,
+  "pdf_page_no": 201,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When we produce a wave in the rope by shaking it, there the vibration of the rope does not take place along the direction of the velocity of the wave. The direction of vibration i.e. up and down of the rope, is perpendicular to the direction of the velocity of the wave. The name of this type of a wave is a transverse wave. The wave produced in water is an example.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Make a photocopy of figure 7.05. Now cut it shown as in the figure. Observe that a small window is made on the rectangular paper below. Now put the rectangular paper on the circular paper. Now enter a small wire or pin through the cross (x) mark and fold the wire by pressing it. Now rotate the circular paper below and see through the cut portion, clearly you will see how longitudinal waves advance.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "7.2.3",
+      "section_title": "Wave related quantities",
+      "chunk_type": "theory",
+      "content_markdown": "The quantities we have talked about in simple harmonic motion, actually all of them can be used in case of waves. In a wave complete oscillation occurs, it has a time period, frequency and amplitude. We have seen that when a wave propagates, if we look at a particular particle of a medium, we will see that the particle is executing simple harmonic oscillation!\n\nIn case of wave we can talk about two new quantities, one of them is the wavelength. Wavelength is the distance from any phase of the wave to the next identical phase (Figure 7.04). Therefore, the distance travelled by a wave in one time period is the wavelength.\n\nIn waves there is a second quantity which is not present in simple harmonic vibration, this is wave velocity. The distance travelled by a wave in one second is called the wave velocity. The number of time periods present in one second is the frequency, if the frequency is $f$ and wavelength is $\\lambda$, then the velocity can be expressed as,\n\n$$v = f \\lambda$$\n\nWhen a wave travels from one medium to another medium, then change of its velocity occurs. Since the frequency always remains the same, so when a wave",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

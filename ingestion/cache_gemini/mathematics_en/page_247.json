@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 247,
+  "pdf_page_no": 252,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Ratio of constant terms is $\\frac{7}{15}$\n\nWe get, $\\frac{3}{6} = \\frac{-5}{-10} \\neq \\frac{7}{15}$\n\n$\\therefore$ Therefore, the system of equations is inconsistent and mutually independent. The system of equations has no solution.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Work:** Verify whether the system of equations $x - 2y + 1 = 0$, $2x + y - 3 = 0$ is consistent and dependent and indicate how many solutions the system of equations may has.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Exercises 12.1",
+      "chunk_type": "theory",
+      "content_markdown": "Mention with arguments whether the following simple simultaneous equations are consistent/inconsistent, mutually dependent/independent and indicate the number of solutions.\n\n1. $x - y = 4$  \n   $x + y = 10$\n\n2. $2x + y = 3$  \n   $4x + 2y = 6$\n\n3. $x - y - 4 = 0$  \n   $3x - 3y - 10 = 0$\n\n4. $3x + 2y = 0$  \n   $6x + 4y = 0$\n\n5. $3x + 2y = 0$  \n   $9x - 6y = 0$\n\n6. $5x - 2y - 16 = 0$  \n   $3x - \\frac{6}{5}y = 2$\n\n7. $-\\frac{1}{2}x + y = -1$  \n   $x - 2y = 2$\n\n8. $-\\frac{1}{2}x - y = 0$  \n   $x - 2y = 0$\n\n9. $-\\frac{1}{2}x + y = -1$  \n   $x + y = 5$\n\n10. $ax - cy = 0$  \n    $cx - ay = c^2 - a^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Solution of simple simultaneous equations",
+      "chunk_type": "theory",
+      "content_markdown": "We shall discuss the solutions of only the consistent and independent simple simultaneous equations. Such system of equation has only one (unique) solution.\n\nHere, four methods of solutions are discussed :\n\n1. Method of substitution 2. Method of elimination 3. Method of cross-multiplication 4. Graphical method.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

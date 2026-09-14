@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 48,
+  "pdf_page_no": 53,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The number of subshells in each principal energy level is calculated by the formula $(2l + 1)$. Each subshell has an electron-carrying capacity of 2. Thus, each orbital contains $2(2l + 1)$ number of electrons. We already know each principal energy level has $2n^2$ number of electrons. Now we shall see that the summation of all orbitals turn into this $2n^2$:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Table 3.07: Electronic Configuration in Energy Levels (n = 1-4).",
+      "chunk_type": "table",
+      "content_markdown": "| Energy Level n | Value of sublevel $l$ according to n | Orbital Name according to $l$ | Orbital Symbol | Total Number of Electrons in Orbital $2(2l+1)$ | Total Number of Electrons in Energy Level $2n^2$ |\n| --- | --- | --- | --- | --- | --- |\n| 1 | 0 | s | 1s | 2 | 2 |\n| 2 | 0 | s | 2s | 2 | $2 + 6 = 8$ |\n| 2 | 1 | p | 2p | 6 | |\n| 3 | 0 | s | 3s | 2 | $2 + 6 + 10 = 18$ |\n| 3 | 1 | p | 3p | 6 | |\n| 3 | 2 | d | 3d | 10 | |\n| 4 | 0 | s | 4s | 2 | $2 + 6 + 10 + 14 = 32$ |\n| 4 | 1 | p | 4p | 6 | |\n| 4 | 2 | d | 4d | 10 | |\n| 4 | 3 | f | 4f | 14 | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.7.2",
+      "section_title": "The Principles of Electronic Configuration in Atoms",
+      "chunk_type": "theory",
+      "content_markdown": "There are three principles for electron arrangement in atoms: (1) Pauli's Exclusion Principle, (2) Aufbau Principle, and (3) Hund's Rule. You will find a detailed discussion of these principles in the higher secondary chemistry textbook. Here, we have provided a brief overview of these principles to explain electron configuration in an atom. Here the basic concepts of these principles and the electron arrangement of atoms are briefly discussed. Electron first enters the lowest energy orbital of an atom and then gradually goes into the highest energy orbital. That means, the electron will enter the lowest energy level first and the highest level later. The energy level of the orbital is determined by the summation of value of principal energy level ($n$) and value of energy sublevel ($l$). The orbital that has a lesser value of $(n + l)$ is of lesser energy level and it gets the first entry of an electron. The orbital that has a higher value of $(n + l)$ is of higher energy level and it gets the later entry of an electron.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

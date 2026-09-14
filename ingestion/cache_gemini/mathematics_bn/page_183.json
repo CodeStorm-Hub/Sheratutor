@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 183,
+  "pdf_page_no": 188,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান:\n\nবামপক্ষ $= \\sqrt{\\frac{1 - \\sin A}{1 + \\sin A}}$\n\n$= \\sqrt{\\frac{(1 - \\sin A)(1 - \\sin A)}{(1 + \\sin A)(1 - \\sin A)}}$ [লব ও হরকে $\\sqrt{1 - \\sin A}$ দ্বারা গুণ করে]\n\n$= \\sqrt{\\frac{(1 - \\sin A)^2}{1 - \\sin^2 A}}$\n\n$= \\sqrt{\\frac{(1 - \\sin A)^2}{\\cos^2 A}}$\n\n$= \\frac{1 - \\sin A}{\\cos A}$\n\n$= \\frac{1}{\\cos A} - \\frac{\\sin A}{\\cos A}$\n\n$= \\sec A - \\tan A = \\text{ডানপক্ষ (প্রমাণিত)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. $\\tan A + \\sin A = a$ এবং $\\tan A - \\sin A = b$ হলে, প্রমাণ কর যে, $a^2 - b^2 = 4\\sqrt{ab}$\n\nসমাধান: এখানে প্রদত্ত, $\\tan A + \\sin A = a$ এবং $\\tan A - \\sin A = b$\n\nবামপক্ষ $= a^2 - b^2$\n\n$= (\\tan A + \\sin A)^2 - (\\tan A - \\sin A)^2$\n\n$= 4\\tan A \\cdot \\sin A$ [$\\because (a + b)^2 - (a - b)^2 = 4ab$]\n\n$= 4\\sqrt{\\tan^2 A \\cdot \\sin^2 A}$\n\n$= 4\\sqrt{\\tan^2 A(1 - \\cos^2 A)}$\n\n$= 4\\sqrt{\\tan^2 A - \\tan^2 A \\cdot \\cos^2 A}$\n\n$= 4\\sqrt{\\tan^2 A - \\sin^2 A}$ [$\\because \\tan A = \\frac{\\sin A}{\\cos A}$]\n\n$= 4\\sqrt{(\\tan A + \\sin A)(\\tan A - \\sin A)}$\n\n$= 4\\sqrt{ab}$\n\n$= \\text{ডানপক্ষ (প্রমাণিত)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) $\\cot^4 A - \\cot^2 A = 1$ হলে, প্রমাণ কর যে, $\\cos^4 A + \\cos^2 A = 1$\n\nখ) $\\sin^4 A + \\sin^2 A = 1$ হলে, প্রমাণ কর যে, $\\tan^4 A - \\tan^2 A = 1$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

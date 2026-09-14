@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 378,
+  "pdf_page_no": 383,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "18. $(x + ay + y)(ax - x + y)$\n20. $(a - 3)(a^2 - 3a + 3)$\n22. $(2x - 3)(4x^2 + 12x + 21)$\n24. $\\left(\\frac{a^2}{3} - b^2\\right)\\left(\\frac{a^4}{9} + \\frac{a^2b^2}{3} + b^4\\right)$\n26. $(a + 4)(19a^2 - 13a + 7)$\n28. $(x^2 - 8x + 20)(x^2 - 8x + 2)$\n30. $(2z - 3x - 5)(10x + 7z + 3)$\n\n19. $(x + 2)(x^2 + x + 1)$\n21. $(a - b)(2a^2 + 5ab + 8b^2)$\n23. $\\frac{1}{27}(6a + b)(36a^2 - 6ab + b^2)$\n25. $\\left(2a - \\frac{1}{2a}\\right)\\left(2a - \\frac{1}{2a} + 2\\right)$\n27. $(x^2 + 7x + 4)(x^2 + 7x + 18)$\n29. $(a + b + c)(b + c - a)(c + a - b)(a + b - c)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.4",
+      "section_title": "Exercises 3.4",
+      "chunk_type": "theory",
+      "content_markdown": "1. $(a + 1)(3a^2 - 3a + 5)$\n2. $(x + y)(x - 3y)(x + 2y)$\n3. $(x - 2)(x + 1)(x + 3)$\n4. $(x - 1)(x + 2)(x + 3)$\n5. $(a + 3)(a^2 - 3a + 12)$\n6. $(a - 1)(a - 1)(a^2 + 2a + 3)$\n7. $(a + 1)(a - 4)(a + 2)$\n8. $(x - 2)(x^2 - x + 2)$\n9. $(a - b)(a^2 - 6ab + b^2)$\n10. $(x - 3)(x^2 + 3x + 8)$\n11. $(x + 1)(x + 2)(x + 3)$\n12. $(x - 2)(2x + 1)(x^2 + 1)$\n13. $(2x - 1)(2x + 1)(x + 1)(x + 2)$\n14. $x(x - 1)(x^2 + x + 1)(x^2 - x + 1)$\n15. $(4x - 1)(x^2 - x + 1)$\n16. $(2x + 1)(3x + 2)(3x - 1)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.5",
+      "section_title": "Exercises 3.5",
+      "chunk_type": "theory",
+      "content_markdown": "14. $\\frac{2}{3}(p + r)$ days\n15. 5 hours\n16. 6 days\n17. 100 persons\n18. Speed of current $\\frac{d}{2}\\left(\\frac{1}{q} - \\frac{1}{p}\\right)$ km/hr and speed of boat $\\frac{d}{2}\\left(\\frac{1}{p} + \\frac{1}{q}\\right)$ km/hr\n19. Speed of boat 8 km/hr and speed of current 2 km/hr\n20. $\\frac{t_1t_2}{t_2 - t_1}$ minute\n21. 240 litre\n22. 1) Tk. 120 2) Tk. 80 3) Tk. 60\n23. Tk. 450\n24. Tk. 10\n25. Tk. 48\n26. 4%\n27. Tk. 625\n28. 28%\n29. Tk. 600\n30. Tk. 800\n31. Tk. 61\n32. Tk. $\\frac{px}{100 + x}$; VAT amount Tk. 300",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

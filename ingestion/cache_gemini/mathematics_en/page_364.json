@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 364,
+  "pdf_page_no": 369,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "arithmetic mean. If the values of $n$ numbers of data are $x_1, x_2, \\dots, x_n$ and their weights are $w_1, w_2, \\dots, w_n$, the weighted mean will be\n$$\\bar{x}_w = \\frac{\\sum_{i=1}^{n} x_i w_i}{\\sum_{i=1}^{n} w_i}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 9.** The rate of passing in degree Honours class and the number of students of some department of a University are presented in the table below. Find the mean rate of passing in degree Honours class of those departments of the university.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Name of the department | Math | Statistics | English | Bangla | Zoology | Political Science |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Rate of passing (%) | 70 | 80 | 50 | 90 | 60 | 85 |\n| Number of students | 80 | 120 | 100 | 225 | 135 | 300 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Solution:** Here, the rate of passing and the number of students are given. The weight of rate of passing is the number of students. If the variables of rate of passing are $x$ and numerical variable of students is $w$, the table for determining the arithmetic mean of given weight will be as follows :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Department | Rate of passing $x_i$ | Number of students $w_i$ | $x_i w_i$ |\n| :--- | :--- | :--- | :--- |\n| Math | 70 | 80 | 5600 |\n| Satistics | 80 | 120 | 9600 |\n| English | 50 | 100 | 5000 |\n| Bangla | 90 | 225 | 20250 |\n| Zoology | 60 | 135 | 8100 |\n| Political Science | 85 | 300 | 25500 |\n| Total | | 960 | 74050 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\bar{x}_w = \\frac{\\sum_{i=1}^{6} x_i w_i}{\\sum_{i=1}^{6} w_i} = \\frac{74050}{960} = 77.14$$\n\n$\\therefore$ Mean rate of passing 77.14",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:** Collect the rate of passing students and their numbers in S.S.C. examination of some schools in your Upazilla and find mean rate of passing.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Median:**\n\nWe have already learnt in class VIII the value of the data which divide the data when arranged in ascending order into two equal parts are median of the data.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

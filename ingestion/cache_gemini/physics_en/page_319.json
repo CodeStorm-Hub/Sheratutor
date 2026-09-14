@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 319,
+  "pdf_page_no": 324,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "energy. It provides energy for the fan, fridge, television, computer, charger and different types of equipment for different purposes. We can find out how much electrical energy is consumed per second in electrical appliances very easily from $VI$. Every house has an electric meters. It continuously measures potential ($V$) and what amount of current is flowing ($I$). From there it can determine how much electrical energy ($P=VI$) is provided in each second in the house. Multiplying this with the total time we can find the total electrical energy spent. The conventional unit of electrical energy spent is kilowatt-hour (kW-h). This unit is called Board of Trade Unit (BOT) or briefly, Unit. The electric bill we pay is calculated in this unit.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "Question: What is the resistance of the filament of a 100 W bulb?\n\nAnswer: 100 W is written on a 220 V bulb, as\n\n$$P = \\frac{V^2}{R}$$\n\nTherefore,\n\n$$R = \\frac{V^2}{P} = \\frac{(220)^2}{100} \\, \\Omega = 484 \\, \\Omega$$\n\nHow much current is flowing here?\n\n$$I = \\frac{V}{R} = \\frac{220}{484} = 0.45 \\text{ A}$$\n\nIt can be done in other ways too: $P = VI$\n\n$$I = \\frac{P}{V} = \\frac{100}{220} = 0.45 \\text{ A}$$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Question: If a bulb of 60 Watts is lit everyday for 5 hours for 30 days then what would be the electric energy usage? If each unit has a price of 10 taka, then what will be the total cost for this electricity?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

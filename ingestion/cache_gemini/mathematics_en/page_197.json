@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 197,
+  "pdf_page_no": 202,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 8. Prove that: $\\frac{1}{2 - \\sin^2 \\theta} + \\frac{1}{2 + \\tan^2 \\theta} = 1$\n\nSolution:\nL.H.S. $= \\frac{1}{2 - \\sin^2 \\theta} + \\frac{1}{2 + \\tan^2 \\theta}$\n$= \\frac{1}{2 - \\sin^2 \\theta} + \\frac{1}{2 + \\frac{\\sin^2 \\theta}{\\cos^2 \\theta}}$\n$= \\frac{1}{2 - \\sin^2 \\theta} + \\frac{\\cos^2 \\theta}{2\\cos^2 \\theta + \\sin^2 \\theta}$\n$= \\frac{1}{2 - \\sin^2 \\theta} + \\frac{\\cos^2 \\theta}{2(1 - \\sin^2 \\theta) + \\sin^2 \\theta}$\n$= \\frac{1}{2 - \\sin^2 \\theta} + \\frac{\\cos^2 \\theta}{2 - 2\\sin^2 \\theta + \\sin^2 \\theta}$\n$= \\frac{1}{2 - \\sin^2 \\theta} + \\frac{1 - \\sin^2 \\theta}{2 - \\sin^2 \\theta}$\n$= \\frac{2 - \\sin^2 \\theta}{2 - \\sin^2 \\theta}$\n$= 1 = \\text{R.H.S (Proved)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 9. Prove that: $\\frac{\\tan A}{\\sec A + 1} - \\frac{\\sec A - 1}{\\tan A} = 0$\n\nSolution:\nL.H.S. $= \\frac{\\tan A}{\\sec A + 1} - \\frac{\\sec A - 1}{\\tan A}$\n$= \\frac{\\tan^2 A - (\\sec^2 A - 1)}{(\\sec A + 1)\\tan A}$\n$= \\frac{\\tan^2 A - \\tan^2 A}{(\\sec A + 1)\\tan A} [\\because \\sec^2 A - 1 = \\tan^2 A]$\n$= \\frac{0}{(\\sec A + 1)\\tan A}$\n$= 0 = \\text{R.H.S (Proved)}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

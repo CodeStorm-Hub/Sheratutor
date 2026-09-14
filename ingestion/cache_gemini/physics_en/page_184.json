@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 184,
+  "pdf_page_no": 189,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Scientist Celsius introduced a thermometer in which the boiling point of ice was $100^\\circ\\text{ C}$ and the boiling point of water was $0^\\circ\\text{ C}$! At which temperature the readings in Celsius and Fahrenheit scales are equal?\n\n2. At which temperature will the density of gold decrease to $0.001\\%$ ?\n\n3. The temperature of water increased by $15^\\circ\\text{ C}$ after a piece of hot iron of mass $1\\text{ gm}$ at temperature $30^\\circ\\text{ C}$ was put into water of $1\\text{ liter}$. What was the temperature of the piece of iron?\n\n4. If $10\\text{ J}$ heat is supplied per second to a piece of ice of $1\\text{gm}$ at temperature $0^\\circ\\text{C}$, how long it takes to vaporize the ice?\n\n5. If the temperature of a gas confined in a closed cylinder is increased from $30^\\circ\\text{C}$ to $100^\\circ\\text{C}$, by what percentage will the pressure of the gas be increased?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Give tick ($\\sqrt{^\\cdot}$ ) mark by the side of the correct answer.\n1. At the time of construction of a rail line why are small gaps kept in between two rails?\n(a) To save iron.\n(b) In summer to increase or to decrease the temperature of the rail line.\n(c) To produce knocking sound when the trains run.\n(d) To avoid bending of the rails due to its thermal expansion.\n\n2. Why do we feel comfort when wind is blown by fans over our sweating body?\n(a) The wind blown by the fan prevents sweat to go out of the body.\n(b) Evaporation produces cooling.\n(c) The air blown by the fan bears cold water vapors.\n(d) The air blown by the fan enters into our body through hair follicles.",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

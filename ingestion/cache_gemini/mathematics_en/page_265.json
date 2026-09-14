@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 265,
+  "pdf_page_no": 270,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2) from equation (2) we get, $2x + 2y = 100$\nor, $2x + x + 10 = 100$ [putting the value of $2y$ from (1)]\nor, $3x = 90$\nor, $x = 30$\n$\\therefore$ from (1) we get, $2y = 30 + 10$ [putting the value of $x$]\nor, $2y = 40$\nor, $y = 20$\n$\\therefore$ length of the garden is 30 metre and breadth is 20 metre.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3) Length of the garden with the path = $(30 + 4)$ m. = $34$ m.\nand breadth of the garden with the path = $(20 + 4)$ m. = $24$ m.\n$\\therefore$ Area of the path = Area of the garden with the path - Area of the garden\n= $(34 \\times 24 - 30 \\times 20)$ square metre.\n= $(816 - 600)$ square metre.\n= $216$ square metre.\n$\\therefore$ cost for making the path by bricks = Tk. $(216 \\times 110) = \\text{Tk. } 23760$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 15. How many times will minute hand and hour hand coincide? Find the times.\n\nSolution: Let minute hand and hour hand coincide at the time $x : y$. We need to remember that $x$ ($x = 0, 1, \\dots 11$ where $0$ means $12$) is always an integer but $y$ may not be. We know, minute hand runs 12 times faster than the hour hand. At time $x$ the hour hand is exactly on the $x$ and minute hand is on the $12$. Within $y$ minutes the hour hand passes $\\frac{y}{12}$ and the minute hand passes $y$ ticks. So,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Garden with path",
+      "figure_no": "12.01",
+      "box_2d": [
+        460,
+        678,
+        568,
+        886
+      ],
+      "description": "A rectangular diagram showing a garden of 30m by 20m surrounded by a path of 2m width, resulting in outer dimensions of 34m by 24m.",
+      "reading_order_anchor": "3) Length of the garden with the path = (30 + 4)"
+    }
+  ]
+}

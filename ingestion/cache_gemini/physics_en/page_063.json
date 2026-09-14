@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 63,
+  "pdf_page_no": 68,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": "3.1",
+      "section_title": "Inertia and Concept of Force- Newton’s First law of motion",
+      "chunk_type": "theory",
+      "content_markdown": "In the previous chapter we have learned about velocity, speed, acceleration (and deceleration), elapsed distance and their mutual relationships. We have deduced the equations of motion and applied them to solve problems related to motion as well. In this chapter we will learn how motion can be created or motion can be influenced by applying force. We may begin with Newton’s First law.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Newton’s First law of motion:** Newton’s first law of motion can be expressed as-\nA stationary object will remain stationary and an object in uniform motion will continue its uniform motion unless a force is applied to it. (Since velocity is a vector quantity, for uniform motion the object will not change its direction of motion; it will move along a straight line at uniform speed.)",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "3.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The first part of Newton’s first law is not difficult to understand because we always observe that the bodies at rest remain at rest and do not move until they are pushed. The problem arises from the second part, because we never observe that a body in motion keeps its perpetual motion for ever. If motion is produced in a body by pushing it, we observe that the body comes to rest if no force is applied. From our daily life experiences it seems that to keep a body in uniform motion we have to apply force on it continuously. From Newton’s first law we learnt that it is not true. If a body in uniform velocity stops then we have to realize that force has been applied by some means. Friction, air resistance etc. actually stops a moving body by applying force in the opposite direction. If all these forces could be withdrawn, then we would find that a body in uniform motion keeps its perpetual motion for ever.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.1.1",
+      "section_title": "Inertia",
+      "chunk_type": "theory",
+      "content_markdown": "The characteristic that a stationary body wants to be stationary or a body in motion wants to keep its motion, unless a force is applied, is called inertia. When a car at rest suddenly starts moving we move backwards, this is an example of inertia. The lower part of the body is attached to the car. When the car starts moving, the lower part of the body moves with the car but the upper part of the body is still stationary and tends to remain stationary. So the upper part of the body",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

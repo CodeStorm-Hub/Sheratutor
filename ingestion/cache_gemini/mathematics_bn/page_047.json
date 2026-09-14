@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 47,
+  "pdf_page_no": 52,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৬. $x - y = 2$ এবং $xy = 24$ হলে, $x + y$ এর মান কত?\n\nসমাধান: $(x + y)^2 = (x - y)^2 + 4xy = (2)^2 + 4 \\times 24 = 4 + 96 = 100$\n$\\therefore x + y = \\pm\\sqrt{100} = \\pm 10$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৭. যদি $a^4 + a^2b^2 + b^4 = 3$ এবং $a^2 + ab + b^2 = 3$ হয়, তবে $a^2 + b^2$ এর মান কত?\n\nসমাধান: $a^4 + a^2b^2 + b^4$\n$= (a^2)^2 + 2a^2b^2 + (b^2)^2 - a^2b^2$\n$= (a^2 + b^2)^2 - (ab)^2$\n$= (a^2 + b^2 + ab)(a^2 + b^2 - ab)$\n$= (a^2 + ab + b^2)(a^2 - ab + b^2)$\n$\\therefore 3 = 3(a^2 - ab + b^2)$ [মান বসিয়ে]\nবা, $a^2 - ab + b^2 = \\frac{3}{3} = 1$\nএখন, $a^2 + ab + b^2 = 3$ এবং $a^2 - ab + b^2 = 1$\nযোগ করে পাই, $2(a^2 + b^2) = 4$\nবা, $a^2 + b^2 = \\frac{4}{2} = 2$\n$\\therefore a^2 + b^2 = 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. প্রমাণ কর যে, $(a + b)^4 - (a - b)^4 = 8ab(a^2 + b^2)$\n\nসমাধান: $(a + b)^4 - (a - b)^4$\n$= \\{(a + b)^2\\}^2 - \\{(a - b)^2\\}^2$\n$= \\{(a + b)^2 + (a - b)^2\\}\\{(a + b)^2 - (a - b)^2\\}$\n$= 2(a^2 + b^2) \\times 4ab$ [অনুসিদ্ধান্ত ৫ এবং অনুসিদ্ধান্ত ৬ ব্যবহার করে]\n$= 8ab(a^2 + b^2)$\n$\\therefore (a + b)^4 - (a - b)^4 = 8ab(a^2 + b^2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯. $a + b + c = 15$ এবং $a^2 + b^2 + c^2 = 83$ হলে, $ab + bc + ac$ এর মান কত?\n\nসমাধান: প্রথম পদ্ধতিঃ\n$2(ab + bc + ac) = (a + b + c)^2 - (a^2 + b^2 + c^2) = (15)^2 - 83 = 225 - 83 = 142$\n$\\therefore ab + bc + ac = \\frac{142}{2} = 71$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

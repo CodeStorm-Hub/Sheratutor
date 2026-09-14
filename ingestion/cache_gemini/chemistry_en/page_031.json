@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 31,
+  "pdf_page_no": 36,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": "2.7",
+      "section_title": "Distillation and Sublimation",
+      "chunk_type": "theory",
+      "content_markdown": "The process of heating a liquid and turning it into gas is called evaporation or vaporization. When water from a hot tea is converted to vapors, that is an example of vaporization. Again if we cool that vapor, the vapor turns into liquid. This process is called condensation. For example, water vapor emits heat and turns into water, which is condensation. The process of heating a liquid into vapor and then retrieving the liquid from the vapor by cooling it is called distillation. That means,\n\n$$\\text{Distillation} = \\text{vaporization} + \\text{condensation}$$\n\nFigure 2.11 shows the change of state of a volatile substance by applying heat.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.7",
+      "section_title": "Distillation and Sublimation",
+      "chunk_type": "theory",
+      "content_markdown": "The process in which heating a solid directly turns that solid into a gaseous substance instead of a liquid, is called sublimation. Ammonium Chloride ($\\text{NH}_4\\text{Cl}$), camphor ($\\text{C}_{10}\\text{H}_{16}\\text{O}$), Naphthalene ($\\text{C}_{10}\\text{H}_8$), solid Carbon dioxide ($\\text{CO}_2$), Iodine ($\\text{I}_2$), Aluminum Chloride ($\\text{AlCl}_3$) etc. are matters that do not turn liquid if heat is applied. Instead, they vaporize. These substances are called sublimated substances.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.11: Sublimation of substance.",
+      "figure_no": "2.11",
+      "box_2d": [
+        479,
+        271,
+        701,
+        665
+      ],
+      "description": "Diagram illustrating the process of sublimation where a solid state substance turns directly into a gaseous state upon applying heat.",
+      "reading_order_anchor": "Figure 2.11 shows the change of state of a volatile substance by applying heat."
+    }
+  ]
+}

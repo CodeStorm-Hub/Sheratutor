@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 42,
+  "pdf_page_no": 47,
+  "chapter_no": 2,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২০. ছক কাগজে $(1, 2), (-1, 1), (11, 7)$ বিন্দু তিনটি স্থাপন করে দেখাও যে, বিন্দু তিনটি একই সরলরেখায় অবস্থিত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২১. সার্বিক সেট $U = \\{x : x \\in \\mathbb{N}$ এবং $x$ বিজোড় সংখ্যা $\\}$\n$A = \\{x : x \\in \\mathbb{N}$ এবং $2 \\le x \\le 7\\}$\n$B = \\{x : x \\in \\mathbb{N}$ এবং $3 < x < 6\\}$\n$C = \\{x : x \\in \\mathbb{N}$ এবং $x^2 > 5$ এবং $x^3 < 130\\}$\nক) $A$ সেটকে তালিকা পদ্ধতিতে প্রকাশ কর।\nখ) $A'$ এবং $C \\setminus B$ নির্ণয় কর।\nগ) $B \\times C$ এবং $P(A \\cap C)$ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.3",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২২. ভেনচিত্রটি লক্ষ্য করি:\nক) $B$ সেটকে সেট গঠন পদ্ধতিতে প্রকাশ কর।\nখ) উদ্দীপক ব্যবহার করে $A \\cup (B \\cap C) = (A \\cup B) \\cap (A \\cup C)$ সম্পর্কটির সত্যতা যাচাই কর।\nগ) $S = (B \\cup C)^c \\times A$ হলে, ডোম $S$ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.4",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৩. $y = f(x) = \\frac{4x - 7}{2x - 4}$ একটি ফাংশন।\nক) $f\\left(-\\frac{1}{2}\\right)$ এর মান নির্ণয় কর।\nখ) $\\frac{f(x) + 2}{f(x) - 1}$ এর মান নির্ণয় কর।\nগ) দেখাও যে, $f(y) = x$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.5",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২৪. নিচের ফাংশনগুলোর লেখচিত্র অঙ্কন কর।\nক) $y = 3x + 5$\nখ) $x + y = 2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ২.০১: ভেনচিত্র",
+      "figure_no": "2.01",
+      "box_2d": [
+        390,
+        578,
+        565,
+        882
+      ],
+      "description": "তিনটি সেটের ভেনচিত্র যেখানে বিভিন্ন অঞ্চলে সংখ্যাগুলো চিহ্নিত করা আছে।",
+      "reading_order_anchor": "২২. ভেনচিত্রটি লক্ষ্য করি:"
+    }
+  ]
+}

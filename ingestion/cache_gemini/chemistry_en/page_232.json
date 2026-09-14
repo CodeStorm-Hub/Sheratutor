@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 232,
+  "pdf_page_no": 237,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Which one is correct?\n\na. i and ii\n\nb. ii and iii\n\nc. i and iii\n\nd. i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. Which of the followings makes the lime water turbid?\n\na. $NO_2$\n\nb. $CO$\n\nc. $SO_2$\n\nd. $CO_2$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1.\n\na. What is the colour of $NO_2$ gas?\n\nb. Explain whether the pH of lime water will be greater or less than 7.\n\nc. Explain a chemical property of the aqueous solution of gas X.\n\nd. What will happen if gas X is passed through $HCl$ gas? Write the answer with an equation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. The effluents produced from textile and dying industries containing paint and sulfuric acid are dumped in nearby water reservoirs. As a result, those reservoirs become unfit for aquatic life.\n\na. Which acid is found in tamarind?\n\nb. Write down your opinion about the pH of the water reservoirs of the stem.\n\nc. Give a logical advice to control acid pollution by effluent treatment plants in textile and dying industries.\n\nd. Analyze the probability of acid rain in the nearby places of textile and dying industries along with reaction.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Laboratory preparation and collection of gas X",
+      "figure_no": "9.01",
+      "box_2d": [
+        410,
+        523,
+        592,
+        866
+      ],
+      "description": "Apparatus setup showing thermal decomposition of ammonium chloride and calcium oxide mixture producing gas X.",
+      "reading_order_anchor": "1."
+    }
+  ]
+}

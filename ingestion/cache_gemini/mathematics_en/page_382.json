@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 382,
+  "pdf_page_no": 387,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "15. 81 runs, 54 runs, 36 runs\n16. Officers Tk. 24000, Clerks Tk. 12000 and Assistants Tk. 6000\n17. 44%\n18. 1% reduction\n19. 532 Quintal\n20. 8 : 9\n21. 1440 sq.m.\n22. 13 : 12",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercises 12.1",
+      "chunk_type": "theory",
+      "content_markdown": "1. consistent, independent, unique solution\n2. consistent, dependent, infinitely many solutions\n3. inconsistent, independent, no solution\n4. consistent, dependent, infinitely many solutions\n5. consistent, independent, unique solution\n6. inconsistent, independent, no solution\n7. consistent, dependent, infinitely many solutions\n8. consistent, independent, unique solution\n9. consistent, independent, unique solution\n10. consistent, independent, unique solution",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercises 12.2",
+      "chunk_type": "theory",
+      "content_markdown": "1. $(4, -1)$\n2. $(\\frac{6}{5}, \\frac{6}{5})$\n3. $(a, b)$\n4. $(4, -1)$\n5. $(1, 2)$\n6. $(\\frac{c(b-c)}{a(b-a)}, \\frac{c(c-a)}{b(b-a)})$\n7. $(-\\frac{17}{2}, 4)$\n8. $(2, 3)$\n9. $(3, 2)$\n10. $(\\frac{5}{2}, -\\frac{22}{3})$\n11. $(1, 2)$\n12. $(2, -1)$\n13. $(a, b)$\n14. $(2, 4)$\n15. $(-5, -3)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

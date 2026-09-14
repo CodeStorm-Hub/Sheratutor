@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 15,
+  "pdf_page_no": 20,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work: Subtract: 1) Subtract $10.41\\dot{8}$ from $13.12\\dot{7}\\dot{8}\\dot{4}$ \n2) Subtract $9.12\\dot{6}4\\dot{5}$ from $23.03\\dot{9}\\dot{4}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1",
+      "section_title": "Multiplication and division of repeating decimal fractions",
+      "chunk_type": "theory",
+      "content_markdown": "If repeating decimal fractions are first converted into common fractions and then multiplication or division operations are performed, we can convert the result into repeating decimal fractions. If finite decimal fractions and repeating decimal fractions are multiplied or divided, then this rule should be followed. However, in case of division if both divisor and dividend are repeating decimal fractions, then converting them into similar repeating decimal fractions will ease the operations.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 14. Multiply $4.\\dot{3}$ with $5.\\dot{7}$. \n\nSolution: \n$$4.\\dot{3} = \\frac{43 - 4}{9} = \\frac{39}{9} = \\frac{13}{3}$$\n$$5.\\dot{7} = \\frac{57 - 5}{9} = \\frac{52}{9}$$\n$$\\therefore 4.\\dot{3} \\times 5.\\dot{7} = \\frac{13}{3} \\times \\frac{52}{9} = \\frac{676}{27} = 25.0\\dot{3}\\dot{7}$$\n\nThe desired result is $25.0\\dot{3}\\dot{7}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 15. Multiply $0.2\\dot{8}$ with $42.1\\dot{8}$. \n\nSolution: \n$$0.2\\dot{8} = \\frac{28 - 2}{90} = \\frac{26}{90} = \\frac{13}{45}$$\n$$42.1\\dot{8} = \\frac{4218 - 42}{99} = \\frac{4176}{99} = \\frac{464}{11}$$\n$$\\therefore 0.2\\dot{8} \\times 42.1\\dot{8} = \\frac{13}{45} \\times \\frac{464}{11} = \\frac{6032}{495} = 12.1\\dot{8}\\dot{5}$$\n\nThe desired result is $12.1\\dot{8}\\dot{5}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

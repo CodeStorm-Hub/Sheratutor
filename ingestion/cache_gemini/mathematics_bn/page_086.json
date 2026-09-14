@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 86,
+  "pdf_page_no": 91,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= \\frac{\\frac{3}{2}\\log_{10}3 + 3\\log_{10}2 - \\frac{3}{2}\\log_{10}10}{\\log_{10}(3 \\times 2^2) - \\log_{10}10}$$\n\n$$= \\frac{\\frac{3}{2}(\\log_{10}3 + 2\\log_{10}2 - 1)}{\\log_{10}3 + 2\\log_{10}2 - 1} \\quad [\\because \\log_{10}10 = 1]$$\n\n$$= \\frac{3}{2}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.2",
+      "section_title": "অনুশীলনী ৪.২",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. মান নির্ণয় কর:\nক) $\\log_{3}81$ খ) $\\log_{5}\\sqrt[3]{5}$ গ) $\\log_{4}2$\nঘ) $\\log_{2\\sqrt{5}}400$ ঙ) $\\log_{5}(\\sqrt[3]{5} \\cdot \\sqrt{5})$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $x$ এর মান নির্ণয় কর:\nক) $\\log_{5}x = 3$ খ) $\\log_{x}25 = 2$ গ) $\\log_{x}\\frac{1}{16} = -2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. দেখাও যে,\nক) $5\\log_{10}5 - \\log_{10}25 = \\log_{10}125$\nখ) $\\log_{10}\\frac{50}{147} = \\log_{10}2 + 2\\log_{10}5 - \\log_{10}3 - 2\\log_{10}7$\nগ) $3\\log_{10}2 + 2\\log_{10}3 + \\log_{10}5 = \\log_{10}360$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. সরল কর:\nক) $7\\log_{10}\\frac{10}{9} - 2\\log_{10}\\frac{25}{24} + 3\\log_{10}\\frac{81}{80}$\nখ) $\\log_{7}(\\sqrt[5]{7} \\cdot \\sqrt{7}) - \\log_{3}\\sqrt[3]{3} + \\log_{4}2$\nগ) $\\log_{e}\\frac{a^3b^3}{c^3} + \\log_{e}\\frac{b^3c^3}{d^3} + \\log_{e}\\frac{c^3d^3}{a^3} - 3\\log_{e}b^2c$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $x = 2, y = 3, z = 5, w = 7$\nক) $\\sqrt{y^3}$ এর 3 ভিত্তিক লগ নির্ণয় কর।\nখ) $w\\log\\frac{xz}{y^2} - x\\log\\frac{z^2}{x^2y} + y\\log\\frac{y^4}{x^4z}$ এর মান নির্ণয় কর।\nগ) দেখাও যে, $\\frac{\\log\\sqrt{y^3} + y\\log x - \\frac{y}{x}\\log(xz)}{\\log(xy) - \\log z} = \\log_{y}\\sqrt{y^3}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

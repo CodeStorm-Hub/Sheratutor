@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 163,
+  "pdf_page_no": 168,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": "6.1.1",
+      "section_title": "Internal Energy",
+      "chunk_type": "theory",
+      "content_markdown": "If we accept heat as energy, the next thing we need to know how heat energy is transferred from one place to another. Generally we think that energy always flows from higher energy to lower energy. The amount of heat energy that is contained in a glass of water is much more than that of a small hot pin. But if we put the hot pin into the water, a small amount of the energy of the pin will transfer to the water of the glass. Because of this, the flow of heat energy does not depend on the amount of heat, it depends on the temperature. If two bodies of different temperatures come in contact with each other, always heat transfers from the body of higher temperature to the body of lower temperature until the temperature of the two bodies becomes equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "But we have not yet defined the quantity called \"temperature\" yet. But it is used so much in daily life that nobody faces problems in understanding what temperature means. According to physics we can say that it is the measure of average kinetic energy of the molecules of matter. From our experience we can say that temperature is the thermal state which indicates whether an object absorbs or rejects heat when it comes in contact with another object. To understand this, we can compare it with the height of the surface of water in (Figure 6.01).",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the heights of the upper surface of water in the two containers are different, and they are connected with a pipe, the flow of water will not be determined by which container contains more or less water. Water flow will depend on the height of the upper surface of water of the containers. Always water will flow from higher height to lower height until the two heights become equal. Here we can compare the amount of water with heat energy and the height of the surface of water with temperature. It is also true in case of temperature that the heat flows until the temperature of the two objects becomes the same.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 6.01: Temperature is as like the height of water and heat is as like the volume of liquid",
+      "figure_no": "6.01",
+      "box_2d": [
+        293,
+        532,
+        622,
+        853
+      ],
+      "description": "Schematic diagram comparing two connected containers of water of different surface heights and volumes, illustrating the concept of temperature and heat transfer.",
+      "reading_order_anchor": "6.1.1 Internal Energy"
+    }
+  ]
+}

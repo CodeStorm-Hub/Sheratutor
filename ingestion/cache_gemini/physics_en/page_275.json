@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 275,
+  "pdf_page_no": 280,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If we have done the experiment properly, we will find that similar charges repulse each other and opposite charges attract each other.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "Electrical Induction",
+      "chunk_type": "theory",
+      "content_markdown": "At the beginning of this chapter it was said that if you comb your hair and then hold the comb near some small pieces of paper, you will notice that the pieces of paper jump towards the comb. The comb is attracting the pieces of paper. We know that negative charge has been gathered in the comb and due to this reason the comb is attracting the pieces of paper. But there is a slight complexity. We know opposite charges attract each other, so to attract the pieces of paper opposite charge of the comb has to be created in the paper. Since we know the pieces of paper have no charge, then why is the comb attracting them?\n\nThis happens due to a process called electric induction. If charge is accumulated in glass or plastic and brought near a neutral body, then charge will be produced in the neutral body. To explain it, a metal sphere is shown in Figure 10.04 and kept on a non-conducting stand. Now if positive charge is accumulated in a glass rod by rubbing it carefully with silk, and this is brought near the sphere, negative charges of the sphere will come closer due to attraction and positive charges will move away towards the back portion of the sphere. Now the glass rod is positively charged and the part of the sphere near the glass rod is negatively charged, so they will attract each other.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.03: Like charges repulse each other and unlike charges attract each other.",
+      "figure_no": "10.03",
+      "box_2d": [
+        185,
+        114,
+        398,
+        893
+      ],
+      "description": "Illustration showing charged rods suspended or held near each other demonstrating repulsion between like charges and attraction between unlike charges.",
+      "reading_order_anchor": "If we have done the experiment properly, we will find that similar charges repulse each other and opposite charges attract each other."
+    }
+  ]
+}

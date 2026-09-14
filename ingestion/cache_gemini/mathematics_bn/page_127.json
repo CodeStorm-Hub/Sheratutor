@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 127,
+  "pdf_page_no": 132,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $(i)$ $AB > AC$। $AB$ থেকে $AC$ এর সমান $AD$ কেটে নিই। এখন, $\\triangle ADC$ ত্রিভুজটি সমদ্বিবাহু। সুতরাং, $\\angle ADC = \\angle ACD$ [$\\because$ সমদ্বিবাহু ত্রিভুজের ভূমি সংলগ্ন কোণদ্বয় সমান]\n\n$\\triangle DBC$ এর বহিঃস্থ কোণ $\\angle ADC > \\angle ABC$ [$\\because$ বহিঃস্থ কোণ অন্তঃস্থ বিপরীত কোণ দুইটির প্রত্যেকটি অপেক্ষা বৃহত্তর]\n\n$\\therefore \\angle ACD > \\angle ABC$। সুতরাং, $\\angle ACB > \\angle ABC$, কিন্তু তা প্রদত্ত শর্তবিরোধী।\n\nধাপ ২. অনুরূপভাবে, $(ii)$ $AB < AC$ হলে দেখানো যায় যে $\\angle ABC > \\angle ACB$, কিন্তু তাও প্রদত্ত শর্তবিরোধী।\n\nধাপ ৩. সুতরাং, $AB > AC$ অথবা $AB < AC$ হতে পারে না।\n\n$\\therefore AB = AC$ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ৮. (বাহু-বাহু-বাহু উপপাদ্য)\n\nযদি একটি ত্রিভুজের তিন বাহু অপর একটি ত্রিভুজের তিন বাহুর সমান হয়, তবে ত্রিভুজ দুইটি সর্বসম হবে।\n\nমনে করি, $\\triangle ABC$ এবং $\\triangle DEF$ এ $AB = DE$, $AC = DF$ এবং $BC = EF$ তাহলে, $\\triangle ABC \\cong \\triangle DEF$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ৯. (কোণ-বাহু-কোণ উপপাদ্য)\n\nযদি একটি ত্রিভুজের দুইটি কোণ ও এদের সংলগ্ন বাহু যথাক্রমে অপর একটি ত্রিভুজের দুইটি কোণ ও তাদের সংলগ্ন বাহুর সমান হয়, তবে ত্রিভুজ দুইটি সর্বসম হবে।\n\nমনে করি, $\\triangle ABC$ এবং $\\triangle DEF$-এ $\\angle B = \\angle E$, $\\angle C = \\angle F$ এবং কোণদ্বয়ের সংলগ্ন $BC$ বাহু = অনুরূপ $EF$ বাহু। তবে ত্রিভুজ দুইটি সর্বসম, অর্থাৎ $\\triangle ABC \\cong \\triangle DEF$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ১০. (অতিভুজ-বাহু উপপাদ্য)\n\nদুইটি সমকোণী ত্রিভুজের অতিভুজদ্বয় সমান হলে এবং একটির এক বাহু অপরটির অপর এক বাহুর সমান হলে, ত্রিভুজদ্বয় সর্বসম।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: ত্রিভুজ সর্বসমতা",
+      "figure_no": "6.01",
+      "box_2d": [
+        585,
+        631,
+        675,
+        905
+      ],
+      "description": "দুটি ত্রিভুজ ABC এবং DEF দেখানো হয়েছে যাদের বাহুগুলো সমান।",
+      "reading_order_anchor": "উপপাদ্য ৮. (বাহু-বাহু-বাহু উপপাদ্য)"
+    },
+    {
+      "caption": "চিত্র: ত্রিভুজ সর্বসমতা",
+      "figure_no": "6.02",
+      "box_2d": [
+        805,
+        576,
+        862,
+        885
+      ],
+      "description": "দুটি ত্রিভুজ ABC এবং DEF দেখানো হয়েছে যাদের কোণ এবং সংলগ্ন বাহু সমান।",
+      "reading_order_anchor": "উপপাদ্য ৯. (কোণ-বাহু-কোণ উপপাদ্য)"
+    }
+  ]
+}

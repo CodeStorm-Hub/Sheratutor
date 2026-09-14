@@ -1,0 +1,99 @@
+{
+  "printed_page_no": 186,
+  "pdf_page_no": 191,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$AB$ and $AC$ are the tangents of the circle $BCD$. Centre of the circle is $O$ and $\\angle BAC = 60^\\circ$. According to this information answer the questions (7 - 8)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "What is the value of $\\angle BOC$ ?\n1) $300^\\circ$ 2) $270^\\circ$ 3) $120^\\circ$ 4) $90^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "8",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "If $D$ be the midpoint of the arc $BDC$, then\n(i) $\\angle BDC = \\angle BAC$\n(ii) $\\angle BAC = \\frac{1}{2}\\angle BOC$\n(iii) $\\angle BOC = \\angle DBC + \\angle BCD$\nWhich one of the following is correct?\n1) $i$ and $ii$ 2) $i$ and $iii$ 3) $ii$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "9",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Draw a tangent to a circle which is parallel to a given straight line.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Draw a tangent to a circle which is perpendicular to a given straight line.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Draw two tangents to a circle such that the angle between them is $60^\\circ$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Draw the circumcircle of the triangle whose sides are $3\\text{ cm}$, $4\\text{ cm}$ and $4.5\\text{ cm}$ and find the radius of this circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Draw an ex-circle to an equilateral triangle $ABC$ touching the side $AC$ of the triangle, the length of each side being $5\\text{ cm}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Draw the inscribed and the circumscribed circles of a square.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "15",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the chords $AB$ and $CD$ of a circle with centre $O$ intersect at an internal point $E$, prove that, $\\angle AEC = \\frac{1}{2}(\\angle BOD + \\angle AOC)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$AB$ is the common chord of two circles of equal radius. If a line segment drawn from the point $B$ meet through the circles at $P$ and $Q$, prove that, $\\triangle PAQ$ is an isosceles triangle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Tangents to a circle",
+      "figure_no": "8.01",
+      "box_2d": [
+        92,
+        354,
+        255,
+        684
+      ],
+      "description": "A circle with center O and two tangents AB and AC meeting at point A.",
+      "reading_order_anchor": "AB and AC are the tangents of the circle BCD."
+    }
+  ]
+}

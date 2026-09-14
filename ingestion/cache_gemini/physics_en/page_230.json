@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 230,
+  "pdf_page_no": 235,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": "8.6.1",
+      "section_title": "Image on concave mirror",
+      "chunk_type": "theory",
+      "content_markdown": "Now we have entered the most exciting part! In plane mirrors and convex mirrors only one type of image was formed. Two types of images can be formed on a concave mirror. If an object is placed within the focal distance it forms one type of image, if it is placed at a distance greater than the focal distance it creates another type of image.\n\nBefore starting that, let us know how light rays reflect from a spherical concave mirror. If we know the rules of reflection of three special light rays in a concave mirror, we can explain how the image is formed:\n\n(i) If light ray travels along the radius or starts from the center (Fig 8.22, OP or ON ray), it will reflect perpendicularly and go back the way it has come.\n\n(ii) The ray parallel to the principal axis will go through the focal point ($F$) after reflection (QF).\n\n(iii) If the direction of light ray is changed, it goes back the way it has come. So a light ray (Fig 8.22, FQ) going through the focus will reflect parallel (QX) to the principal axis.\n\nNow we can create image for concave mirrors.\n\n**At a distance less than focal length**\n\nIn Fig 8.22, a concave mirror is shown. This mirror is part of a sphere whose center is O, focal point of the mirror is $F$ and we want to determine the image of the object XY. Light coming from point Y reflects from point P of the concave mirror and again goes through point Y towards point O. So it can be comprehended that it will stay on a point of line OP or on an extended part of line OP. To determine this exact point another ray has to be drawn from point Y towards the concave mirror, but we are not doing that. If we can determine the image of the point X as before we can find the exact location of the image of point Y. To determine the image of point X, two lines have to be drawn from this point. The first line will be an extended part of the line OX. It will touch the",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

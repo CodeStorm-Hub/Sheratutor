@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 195,
+  "pdf_page_no": 200,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$ABC$ সমকোণী ত্রিভুজে অতিভুজ $AC = 2$, $AB = 1$ \n$(i) \\cos A = \\sin C$ \n$(ii) \\cos A + \\sec A = \\frac{5}{2}$ \n$(iii) \\tan C = \\frac{2}{\\sqrt{3}}$ \nনিচের কোনটি সঠিক? \nক) $i$ ও $ii$ খ) $ii$ ও $iii$ গ) $i$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "মান নির্ণয় কর (৮- ১১) \n৮. $\\frac{1 - \\cot^2 60^\\circ}{1 + \\cot^2 60^\\circ}$ \n৯. $\\tan 45^\\circ \\cdot \\sin^2 60^\\circ \\cdot \\tan 30^\\circ \\cdot \\tan 60^\\circ$ \n১০. $\\frac{1 - \\cos^2 60^\\circ}{1 + \\cos^2 60^\\circ} + \\sec^2 60^\\circ$ \n১১. $\\cos 45^\\circ \\cdot \\cot^2 60^\\circ \\cdot \\text{cosec}^2 30^\\circ$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "দেখাও যে, (১২-১৭) \n১২. $\\cos^2 30^\\circ - \\sin^2 30^\\circ = \\cos 60^\\circ$ \n১৩. $\\sin 60^\\circ \\cdot \\cos 30^\\circ + \\cos 60^\\circ \\cdot \\sin 30^\\circ = \\sin 90^\\circ$ \n১৪. $\\cos 60^\\circ \\cdot \\cos 30^\\circ + \\sin 60^\\circ \\cdot \\sin 30^\\circ = \\cos 30^\\circ$ \n১৫. $\\sin 3A = \\cos 3A$ যদি $A = 15^\\circ$ হয়। \n১৬. $\\sin 2A = \\frac{2\\tan A}{1 + \\tan^2 A}$ যদি $A = 45^\\circ$ হয়। \n১৭. $\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}$ যদি $A = 30^\\circ$ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. $2\\cos(A + B) = 1 = 2\\sin(A - B)$ এবং $A, B$ সূক্ষ্মকোণ হলে দেখাও যে, $A = 45^\\circ, B = 15^\\circ$ \n১৯. $\\cos(A - B) = 1, 2\\sin(A + B) = \\sqrt{3}$ এবং $A, B$ সূক্ষ্মকোণ হলে, $A$ এবং $B$ এর মান নির্ণয় কর। \n২০. সমাধান কর: $\\frac{\\cos A - \\sin A}{\\cos A + \\sin A} = \\frac{\\sqrt{3} - 1}{\\sqrt{3} + 1}$ \n২১. $A$ ও $B$ সূক্ষ্মকোণ এবং $\\cot(A + B) = 1, \\cot(A - B) = \\sqrt{3}$ হলে, $A$ ও $B$ এর মান নির্ণয় কর। \n২২. দেখাও যে, $\\cos 3A = 4\\cos^3 A - 3\\cos A$ যদি $A = 30^\\circ$ হয়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০১: সমকোণী ত্রিভুজ",
+      "figure_no": "9.01",
+      "box_2d": [
+        110,
+        640,
+        220,
+        825
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যার অতিভুজ AC=2, AB=1 এবং ভূমি BC=√3",
+      "reading_order_anchor": "ABC সমকোণী ত্রিভুজে অতিভুজ AC = 2"
+    }
+  ]
+}

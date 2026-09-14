@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 286,
+  "pdf_page_no": 291,
+  "chapter_no": 10,
+  "chapter_title": "স্থির তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ",
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ\n\nপ্রশ্ন: $5\\text{ C}$ চার্জের জন্য $10\\text{ m}$ দূরে তড়িৎ ক্ষেত্রের মান কত?\n\nউত্তর:\n$$E = k\\frac{q}{r^2}$$\n\nএখানে,\n$q = 5\\text{ C}$\n$q_2 = -1.6 \\times 10^{-19}\\text{ C}$\n$r = 10\\text{ m}$\n$k = 9 \\times 10^9\\text{ Nm}^2/\\text{C}^2$\n\nকাজেই\n$$E = \\frac{9 \\times 10^9 \\times 5}{10^2}\\text{ N/C} = 4.5 \\times 10^8\\text{ N/C}$$\n\nচিত্র 10.13: চার্জ এবং দ্বিগুণ পরিমাণ বিপরীত চার্জের জন্য বলরেখা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: $3\\text{ C}$ চার্জের একটি বস্তু $10\\text{ N}$ বল অনুভব করছে, ঐ জায়গায় ইলেকট্রিক ফিল্ড কত?\n\nউত্তর: $F = qE$\n\nকাজেই\n$$E = \\frac{F}{q}$$\n\nএখানে,\n$F = 10\\text{ N}$\n$q = 3\\text{ C}$\n\nকাজেই\n$$E = \\frac{F}{q} = \\frac{10\\text{ N}}{3\\text{ C}} = 3.33\\text{ N/C}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 10.13: চার্জ এবং দ্বিগুণ পরিমাণ বিপরীত চার্জের জন্য বলরেখা।",
+      "figure_no": "10.13",
+      "box_2d": [
+        198,
+        581,
+        401,
+        856
+      ],
+      "description": "Electric field lines representing the electric field around two point charges of different magnitudes and opposite signs.",
+      "reading_order_anchor": "উদাহরণ"
+    }
+  ]
+}

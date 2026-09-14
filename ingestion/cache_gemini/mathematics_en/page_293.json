@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 293,
+  "pdf_page_no": 298,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\nStep 1. Since, $DA \\parallel CE$ and $BE$ is their transversal [by construction]\n$\\therefore \\angle AEC = \\angle BAD$ [corresponding angles]\nAgain, $DA \\parallel CE$ and $AC$ is their transversal $\\therefore \\angle ACE = \\angle CAD$ [corresponding angles]\nStep 2. But $\\angle BAD = \\angle CAD$ [supposition]\n$\\therefore \\angle AEC = \\angle ACE$ Hence, $AC = AE$ [Chapter 6 Theorem 8]\nStep 3. Again, since $DA \\parallel CE$ Therefore, $\\frac{BD}{DC} = \\frac{BA}{AE}$ [step 2]\nStep 4. But $AE = AC$\n$\\therefore \\frac{BD}{DC} = \\frac{BA}{AC}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 31. If any side of a triangle is divided internally, the line segment from the point of division to the opposite vertex bisects the angle at the vertex.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Special Nomination: Let $ABC$ be a triangle and the line segment $AD$ from vertex $A$ divides the side $BC$ at $D$ such that $BD : DC = BA : AC$. It is required to prove that $AD$ bisects $\\angle BAC$ i.e. $\\angle BAD = \\angle CAD$\n\nDrawing: Draw at $C$ the line segment $CE$ parallel to $DA$, so that it intersects the side $BA$ produced at $E$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\nStep 1. For $\\triangle BCE$ $DA \\parallel CE$ [by construction]\n$\\therefore BA : AE = BD : DC$ [theorem 28]\nStep 2. But $BD : DC = BA : AC$ [supposition]\n$\\therefore BA : AE = BA : AC$ [from step 1 and step 2]\n$\\therefore AE = AC$\nTherefore, $\\angle ACE = \\angle AEC$ [base angles of isosceles triangle are equal]\nStep 3. But $\\angle AEC = \\angle BAD$ [corresponding angles]\nand $\\angle ACE = \\angle CAD$ [alternate angles]\nTherefore, $\\angle BAD = \\angle CAD$ [from step 2]\n$\\therefore$ the line segment $AD$ bisects $\\angle BAC$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Triangle ABC with line segment AD",
+      "figure_no": "14.01",
+      "box_2d": [
+        456,
+        632,
+        615,
+        863
+      ],
+      "description": "A triangle ABC with a line segment AD and an external line segment CE parallel to AD.",
+      "reading_order_anchor": "Special Nomination: Let ABC be a triangle"
+    }
+  ]
+}

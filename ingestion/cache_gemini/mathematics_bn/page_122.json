@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 122,
+  "pdf_page_no": 127,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গ) সরলরেখা দুইটিকে অপর একটি সরলরেখা ছেদ করলে উৎপন্ন একান্তর কোণ বা অনুরূপ কোণগুলো সমান হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সংজ্ঞা ক অনুসারে একই সমতলে অবস্থিত দুইটি সরলরেখা একে অপরকে ছেদ না করলে সেগুলো সমান্তরাল। দুইটি সমান্তরাল সরলরেখা থেকে যেকোনো দুইটি রেখাংশ নিলে, রেখাংশ দুইটিও পরস্পর সমান্তরাল হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সংজ্ঞা খ অনুসারে দুইটি সমান্তরাল সরলরেখার একটির যেকোনো বিন্দু থেকে অপরটির লম্ব-দূরত্ব সর্বদা সমান। লম্ব-দূরত্ব বলতে এদের একটির যেকোনো বিন্দু হতে অপরটির উপর অঙ্কিত লম্বের দৈর্ঘ্যকেই বুঝায়। আবার বিপরীতভাবে, দুইটি সরলরেখার একটির যেকোনো দুইটি বিন্দু থেকে অপরটির লম্ব-দূরত্ব পরস্পর সমান হলেও রেখাদ্বয় সমান্তরাল। এই লম্ব-দূরত্বকে দুইটি সমান্তরাল রেখাদ্বয়ের দূরত্ব বলা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সংজ্ঞা গ ইউক্লিডের পঞ্চম স্বীকার্যের সমতুল্য। জ্যামিতিক প্রমাণ ও অঙ্কনের জন্য এ সংজ্ঞাটি অধিকতর উপযোগী।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষ করি, কোনো নির্দিষ্ট সরলরেখার উপর অবস্থিত নয় এরূপ বিন্দুর মধ্য দিয়ে ঐ সরলরেখার সমান্তরাল করে একটি মাত্র সরলরেখা আঁকা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ইউক্লিডের ৫ম স্বীকার্য (অঙ্কনের সাহায্যে প্রকাশ):",
+      "chunk_type": "theory",
+      "content_markdown": "দুইটি সমান্তরাল সরলরেখার একটি ছেদক দ্বারা উৎপন্ন\n\nক) প্রত্যেক অনুরূপ কোণ জোড়া সমান হবে।\n\nখ) প্রত্যেক একান্তর কোণ জোড়া সমান হবে।\n\nগ) ছেদকের একই পাশের অন্তঃস্থ কোণ দুইটি পরস্পর সম্পূরক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "চিত্রে, $AB \\parallel CD$ এবং $PQ$ ছেদক এদের যথাক্রমে $E$ ও $F$ বিন্দুতে ছেদ করেছে।\n\nসুতরাং,\nক) $\\angle PEB = \\text{অনুরূপ } \\angle EFD$ [সংজ্ঞানুসারে]\nখ) $\\angle AEF = \\text{একান্তর } \\angle EFD$\nগ) $\\angle BEF + \\angle EFD = \\text{দুই সমকোণ।}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\nসমান্তরাল সরলরেখার বিকল্প সংজ্ঞার সাহায্যে সমান্তরাল সরলরেখা সংক্রান্ত উপপাদ্যগুলো প্রমাণ কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: সমান্তরাল সরলরেখা ও ছেদক",
+      "figure_no": "6.01",
+      "box_2d": [
+        672,
+        644,
+        784,
+        853
+      ],
+      "description": "দুইটি সমান্তরাল সরলরেখা AB এবং CD কে একটি ছেদক PQ দ্বারা ছেদ করার চিত্র।",
+      "reading_order_anchor": "চিত্রে, AB || CD এবং PQ ছেদক এদের যথাক্রমে E ও F বিন্দুতে ছেদ করেছে।"
+    }
+  ]
+}

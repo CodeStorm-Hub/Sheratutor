@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 288,
+  "pdf_page_no": 293,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Answer: For the equal and opposite charges equipotential lines are shown in figure 10.15. On the left side the potential is positive and it turns negative on the right side by decreasing equally. Just at the center, the potential is zero.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.6.1",
+      "section_title": "Potential Difference",
+      "chunk_type": "theory",
+      "content_markdown": "You have likely noticed various warnings on electric lines, such as \"Danger: Ten Thousand Volts.\" Electric shock is a serious and potentially life-threatening hazard; there have been many instances where careless individuals have lost their lives due to electric shocks. If you grasp the concept of electrical potential, you can better understand what occurs in these situations. When you encounter a high potential and touch it, a charge will flow from that higher potential to your body, as your body's potential is lower. The amount of charge that flows depends on various factors within your own body.\n\nThe potential of the object you touch can be either positive or negative. In one scenario, electrons may leave your body, while in another, they may enter it—both scenarios represent electric current, just in opposite directions.\n\nIt's crucial to recognize that charge flows due to the difference in potential not the value of the potential itself. For example, a crow perched on a high-voltage electric wire does not suffer an electric shock because its potential matches that of the wire, resulting in no difference. Similarly, workers can safely perform",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.15: Equipotential lines for opposite charges.",
+      "figure_no": "10.15",
+      "box_2d": [
+        203,
+        335,
+        363,
+        630
+      ],
+      "description": "Equipotential lines surrounding two equal and opposite point charges, showing positive potential on the left and negative potential on the right with zero potential at the center.",
+      "reading_order_anchor": "Answer: For the equal and opposite charges equipotential lines are shown in figure 10.15."
+    }
+  ]
+}

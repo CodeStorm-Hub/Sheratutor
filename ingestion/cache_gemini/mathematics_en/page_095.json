@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 95,
+  "pdf_page_no": 100,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "4) $0.000435 = 4.35 \\times 10^{-4}$\n\n$\\therefore$ Characteristic of log of the number is $-4$ or $\\bar{4}$\n\nOtherwise, there are 3 zeroes in between decimal point and its next first significant digit of the number 4.\n\n$\\therefore$ Characteristic of log of the number is $= -(3 + 1) = -4 = \\bar{4}$\n\n$\\therefore$ Characteristic of log of the number $0.000435$ is $\\bar{4}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.1",
+      "section_title": "Mantissa of Common Log",
+      "chunk_type": "theory",
+      "content_markdown": "Mantissa of Common Logarithm of any number is a non-negative number less than 1. It is mainly an irrational number. But the value of mantissa is determined upto a certain decimal place. Mantissa of the log of a number can be found from the log table. Again, it can also be found by calculator. We shall find the mantissa of the log of any number by using 2nd method, that is by calculator.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 12. Find the characteristic and the mantissa of $\\log 2717$ :\n\nSolution: Let us use the calculator: $\\boxed{AC} \\boxed{\\log} \\boxed{2717} \\boxed{=} 3.43409$\n\n$\\therefore$ Characteristic of $\\log 2717$ is 3 and the mantissa is $.43409$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 13. Find the characteristic and the mantissa of $\\log 43.517$.\n\nSolution: Let us use the calculator: $\\boxed{AC} \\boxed{\\log} \\boxed{43.517} \\boxed{=} 1.63866$\n\n$\\therefore$ Characteristic of $\\log 43.517$ is 1 and mantissa is $.63866$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 14. What are the characteristics and mantissa of $\\log 0.00836$?\n\nSolution: Let us use the calculator: $\\boxed{AC} \\boxed{\\log} \\boxed{0.00836} \\boxed{=} -2.07779$\n\n$-2.07779 = -3 + 0.92221 = \\bar{3}.92221$\n\n$\\therefore$ Characteristic of $\\log 0.00836$ is $-3$ and the mantissa is $.92221$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 15. Find $\\log_e 10$ :\n\nSolution: $\\log_e 10 = \\frac{1}{\\log_{10} e} = \\frac{1}{\\log_{10} 2.71828} = \\frac{1}{0.43429}$ [using the calculator]\n\n$= 2.30259$ (approx)\n\nAlternative : We use the calculator : $\\boxed{AC} \\boxed{\\ln} \\boxed{10} \\boxed{=} 2.30259$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

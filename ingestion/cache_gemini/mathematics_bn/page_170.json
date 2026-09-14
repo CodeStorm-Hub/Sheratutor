@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 170,
+  "pdf_page_no": 175,
+  "chapter_no": 8,
+  "chapter_title": "বৃত্ত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ১১. কোনো নির্দিষ্ট ত্রিভুজের বহিঃবৃত্ত আঁকতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $\\triangle ABC$ একটি ত্রিভুজ। এর বহিঃবৃত্ত আঁকতে হবে। অর্থাৎ, এমন একটি বৃত্ত আঁকতে হবে, যা ত্রিভুজের একটি বাহুকে এবং অপর দুই বাহুর বর্ধিতাংশকে স্পর্শ করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $AB$ ও $AC$ বাহুদ্বয়কে যথাক্রমে $D$ ও $F$ পর্যন্ত বর্ধিত করি। $\\angle DBC$ ও $\\angle FCB$ এর সমদ্বিখণ্ডক $BM$ ও $CN$ আঁকি। মনে করি, $E$ এদের ছেদবিন্দু। $E$ থেকে $BC$ এর ওপর $EH$ লম্ব আঁকি এবং মনে করি তা $BC$ কে $H$ বিন্দুতে ছেদ করে। $E$ কে কেন্দ্র করে $EH$ এর সমান ব্যাসার্ধ নিয়ে একটি বৃত্ত আঁকি। তাহলে, এই বৃত্তটিই নির্ণেয় বহিঃবৃত্ত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $E$ থেকে $BD$ ও $CF$ রেখাংশের ওপর যথাক্রমে $EG$ ও $EL$ লম্ব টানি। মনে করি, লম্বদ্বয় $BD$ ও $CF$ রেখাংশদ্বয়কে যথাক্রমে $G$ ও $L$ বিন্দুতে ছেদ করে।\n\n$E$ বিন্দুটি $\\angle DBC$ এর দ্বিখণ্ডকের ওপর অবস্থিত $\\therefore EH = EG$\n\nঅনুরূপভাবে, $E$ বিন্দুটি $\\angle FCB$ এর দ্বিখণ্ডকের ওপর অবস্থিত বলে $EH = EL$\n\n$\\therefore EH = EG = EL$\n\nসুতরাং $E$ কে কেন্দ্র করে $EL$ এর সমান ব্যাসার্ধ নিয়ে অঙ্কিত বৃত্ত $H, G$ এবং $L$ বিন্দু নিয়ে যাবে।\nআবার, $EH, EG$ ও $EL$ এর প্রান্তবিন্দুতে যথাক্রমে $BC, BD$ ও $CF$ রেখাংশ তিনটি লম্ব।\nসুতরাং বৃত্তটি রেখাংশ তিনটিকে যথাক্রমে $H, G$ ও $L$ বিন্দু তিনটিতে স্পর্শ করে।\n\nঅতএব, $HGL$ বৃত্তটিই $\\triangle ABC$ এর বহিঃবৃত্ত হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্য: কোনো ত্রিভুজের তিনটি বহিঃবৃত্ত আঁকা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: ত্রিভুজের অপর দুইটি বহিঃবৃত্ত আঁক।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "৮.৫",
+      "section_title": "অনুশীলনী ৮.৫",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১. কোন বৃত্তের অধিচাপে অন্তর্লিখিত কোণ -",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) সূক্ষ্মকোণ খ) স্থূলকোণ\nগ) সমকোণ ঘ) পূরককোণ",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৮.১১: ত্রিভুজের বহিঃবৃত্ত",
+      "figure_no": "8.11",
+      "box_2d": [
+        165,
+        615,
+        335,
+        895
+      ],
+      "description": "একটি ত্রিভুজ ABC এবং তার বহিঃবৃত্তের জ্যামিতিক চিত্র যেখানে E কেন্দ্র এবং H, G, L স্পর্শবিন্দু।",
+      "reading_order_anchor": "অঙ্কন: AB ও AC বাহুদ্বয়কে যথাক্রমে D ও F পর্যন্ত বর্ধিত করি।"
+    }
+  ]
+}

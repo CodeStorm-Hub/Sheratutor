@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 248,
+  "pdf_page_no": 253,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": "12.1",
+      "section_title": "অনুশীলনী ১২",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৯. কোনো ভগ্নাংশের লবের সাথে $7$ যোগ করলে ভগ্নাংশটির মান পূর্ণসংখ্যা $2$ হয়। আবার হর হতে $2$ বিয়োগ করলে ভগ্নাংশটির মান পূর্ণসংখ্যা $1$ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) ভগ্নাংশটি $\\frac{x}{y}$ ধরে সমীকরণজোট গঠন কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) সমীকরণজোটটি আড়গুণন পদ্ধতিতে সমাধান করে $(x, y)$ নির্ণয় কর। ভগ্নাংশটি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) সমীকরণজোটটির লেখ অঙ্কন করে $(x, y)$ এর প্রাপ্ত মানের সত্যতা যাচাই কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২০. দুইটি বহুভুজের বাহুর সংখ্যা $17$ এবং এদের কর্ণের সংখ্যা $53$ হলে প্রত্যেক বহুভুজের বাহুর সংখ্যা কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২১. শিক্ষক বললেন একটি কাজ একা অথবা ছাত্র-ছাত্রীর জুটি করতে পারবে। ছাত্রদের $\\frac{2}{3}$ এবং ছাত্রীদের $\\frac{3}{5}$ অংশ জুটি বেঁধে কাজটি করলো। শ্রেণির কত ভাগ ছাত্র-ছাত্রী একা কাজটি করলো?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২২. $100$ ও $200$ মিটার দীর্ঘ দুইটি ট্রেন সমবেগে সামনাসামনি অতিক্রম করতে $5$ সেকেন্ড সময় লাগে কিন্তু একই দিকে চললে অতিক্রম করতে $15$ সেকেন্ড সময় লাগে। ট্রেন দুইটির বেগ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৩. কমপক্ষে কতগুলো ক্রমিক পূর্ণসংখ্যা নিলে তার গুণফল অবশ্যই $5040$ দ্বারা বিভাজ্য হবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৪. ঘড়ির ঘণ্টা এবং মিনিটের কাঁটা পরস্পরের সঙ্গে $30$ ডিগ্রি কোণ করে কত বার? সময়গুলো নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

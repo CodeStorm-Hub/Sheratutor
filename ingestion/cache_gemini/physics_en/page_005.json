@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 5,
+  "pdf_page_no": 10,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "gradually following tireless labour of innumerable scientists and researchers. It has to be remembered that, in ancient time the exchange of information was not so easy, it was very difficult to convey the results of research to one another, books were written by hand form and the number of such books were very few. Courage was needed to express views against conventional faiths. There are examples of imprisonment or even scientists being burnt to death. But the search for knowledge was not stopped and by exploring the mysteries of nature, the scientists have given us this modern science as a gift.\n\nWe can describe the history of physics by dividing it into different stages.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3.1",
+      "section_title": "Initial Stage (Greek, Indian subcontinent, China and the Contribution of Muslim Civilization)",
+      "chunk_type": "theory",
+      "content_markdown": "What we understand by physics at present was introduced in the ancient times, by the combination of astronomy, optics, dynamics geometry, and an important branch of mathematics. The name of the Greek scientist Thales (624-586 BC) can be mentioned specially, because he was the first to deny explanations which were only based on religion, myth and extrasensory perception but without logic. Thales predicted about the solar eclipse and knew about the magnetic property of loadstone. Pythagoras (527 BC) was remarkable among the mathematicians and scientists of that time. He had fundamental works on vibrating wire along with geometry. Greek philosopher Democritus ( 460 BC) presented the idea first that matter has indivisible units, called atom (This name is used by modern physics). It was not acceptable to all since there was no chance to prove his idea by any scientific process. The theory that everything was made of soil, water, air and fire by the greatest philosopher and scientist of that time, Aristotle was much more acceptable. Aristarchus (310 BC) first gave the idea of sun centered solar",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.01: Archimedes and Al Khorgimi",
+      "figure_no": "1.01",
+      "box_2d": [
+        691,
+        260,
+        909,
+        735
+      ],
+      "description": "Portraits of Archimedes and Al Khorgimi representing ancient scientists.",
+      "reading_order_anchor": "1.3.1 Initial Stage (Greek, Indian subcontinent, China and the Contribution of Muslim Civilization)"
+    }
+  ]
+}

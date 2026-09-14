@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 91,
+  "pdf_page_no": 96,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৪.৩",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. কোন শর্তে $a^0 = 1$?\nক) $a=0$ খ) $a \\neq 0$ গ) $a > 0$ ঘ) $a \\neq 1$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $\\sqrt[3]{5} \\cdot \\sqrt[3]{5}$ এর মান নিচের কোনটি?\nক) $\\sqrt[6]{5}$ খ) $(\\sqrt[3]{5})^3$ গ) $(\\sqrt{5})^3$ ঘ) $\\sqrt[3]{25}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $\\log_a a = 1$ সঠিক কোন শর্তে?\nক) $a > 0$ খ) $a \\neq 1$ গ) $a > 0, a \\neq 1$ ঘ) $a \\neq 0, a > 1$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. $\\log_x 4 = 2$ হলে, $x$ এর মান কত?\nক) $2$ খ) $\\pm 2$ গ) $4$ ঘ) $10$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. একটি সংখ্যাকে $a \\times 10^n$ আকারে লেখার জন্য শর্ত কোনটি?\nক) $1 < a < 10$ খ) $1 \\leq a \\leq 10$ গ) $1 \\leq a < 10$ ঘ) $1 < a \\leq 10$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $a > 0, b > 0$ এবং $a \\neq 1, b \\neq 1$ হলে\n$(i) \\log_a b \\times \\log_b a = 1$\n$(ii) \\log_a M^r = M \\log_a r$\n$(iii) \\log_a (\\sqrt[3]{a} \\cdot \\sqrt{a}) = \\frac{5}{6}$\nওপরের কোন তথ্যগুলো সঠিক?\nক) $i$ খ) $ii$ গ) $i$ ও $iii$ ঘ) $ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $0.0035$ এর সাধারণ লগের পূর্ণক কত?\nক) $3$ খ) $1$ গ) $\\bar{2}$ ঘ) $\\bar{3}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$0.0225$ সংখ্যাটি বিবেচনা করে নিচের (৮ - ১০) প্রশ্নগুলোর উত্তর দাও:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. সংখ্যাটির $a^n$ আকার নিচের কোনটি সঠিক?\nক) $(2.5)^2$ খ) $(.015)^2$ গ) $(1.5)^2$ ঘ) $(.15)^2$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. সংখ্যাটির বৈজ্ঞানিক আকার নিচের কোনটি?\nক) $225 \\times 10^{-4}$ খ) $22.5 \\times 10^{-3}$ গ) $2.25 \\times 10^{-2}$ ঘ) $.225 \\times 10^{-1}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. সংখ্যাটির সাধারণ লগের পূর্ণক কত?\nক) $\\bar{2}$ খ) $\\bar{1}$ গ) $0$ ঘ) $2$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. বৈজ্ঞানিক রূপে প্রকাশ কর:\nক) $6530$ খ) $60.831$ গ) $0.000245$ ঘ) $37500000$ ঙ) $0.00000014$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

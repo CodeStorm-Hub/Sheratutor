@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 164,
+  "pdf_page_no": 169,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": "6.2",
+      "section_title": "Thermal Properties of matter",
+      "chunk_type": "theory",
+      "content_markdown": "To measure the temperature special properties of special substances are used. The property of a substance which changes with temperature and, measuring the change accurately, the temperature can be measured, is called thermometric property. The property of a substance which is used to measure the temperature is called thermometric property. You have seen mercury thermometer that measures our body temperature. Here mercury is the thermometric substance, the volume expansion of mercury is its thermometric property.\n\nThere is also an alcohol thermometer except mercury thermometer in which alcohol is the thermometric substance and the expansion of alcohol is the thermometric property. In a gas thermometer, gas is the thermometric substance and the pressure of the gas at constant volume is the thermometric property. As the resistance of metal changes with temperature, so the resistance also is used as the thermometric property. Different thermometric substances are effective at different temperatures, so to measure the very high or very low temperature the special thermometric property of a special thermometric substance has to be used. Copper and Constantan metals are used as thermometric substances. If two junctions of different metals (thermocouple) are kept at different temperatures, it produces an emf and by measuring this, the temperature can be calculated. This thermocouple is used in industries on a large scale because it can measure the temperature from $-200^{\\circ}\\text{C}$ to $1000^{\\circ}\\text{C}$.\n\nIf we get the idea of temperature perfectly, we have to know its unit in addition to, the important question of how we will measure the temperature. The conventional unit of temperature is Celsius ($^{\\circ}\\text{C}$), generally it is said that on this scale at one atmospheric pressure and at the temperature at which ice melts is called $0^{\\circ}\\text{C}$ and at the temperature at which water boils is assumed to be $100^{\\circ}\\text{C}$. But it is interesting to know that when scientist Celsius introduced this scale of temperature, he assumed the temperature of boiling water as zero degree and the temperature of fusion of ice as 100 degree; opposite to the present scale!\n\nAlthough we use the Celsius scale of temperature in our daily lives, its international unit is Kelvin (\\text{K}). Adding $273.15^{\\circ}\\text{C}$ with the reading of Celsius scale we get the reading of Kelvin scale. If we consider only the difference of temperature, there is no difference between Celsius and Kelvin scale. That is, the increase in temperature by $10^{\\circ}\\text{C}$ is the same as the increase in temperature by $10\\text{ K}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

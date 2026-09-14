@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 117,
+  "pdf_page_no": 122,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "30. The base and height of a right angle triangle are respectively $(x - 1)$ cm. and $x$ cm. and the length of the side of a square is equal to the height of the triangle. Again, the length of a rectangular region is $(x + 3)$ cm. and its breadth is $x$ cm.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Show the information in only one picture.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) If the area of the triangular region is 10 square centimetre, what is its height?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Find the successive ratio of the areas of the triangular, square and rectangular regions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "31. The area of a land is 192 square metre. If the length of the land is decreased by 4 metre and the breadth is increased by 4 metre, then the area remains unchanged. Again a circle of 20 diametre was drawn in the center of the land. A line drawn from the center of the circle perpendicular to one of the chords is 2 cm less than the length of that chord.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Letting the length as $x$ and the breadth as $y$ express the information by an equation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Find the perimeter of the land.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Find the length of the chord of the circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "32. When Nabil's age was same as Shuva's present age, at that time Nabil's age was twice as Shuva's age. When Shuva's age will be same as Nabil's present age, sum of their ages will be 63. What is the present age of each one?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "33. In the queue of bus, two more passenger are standing in front of Sohag than the number passengers standing behind Sohag. Total number of passengers in the queue is thrice as the number of passengers standing behind him. How many passengers are standing in the queue?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "34. Sabuj went to drawing class at 3 : 30 from home. While he was returning home from school, minute hand of the clock was still down the steep; but the distance between two hands was 30 degrees less than that was at 3 : 30. When did Sabuj return home?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

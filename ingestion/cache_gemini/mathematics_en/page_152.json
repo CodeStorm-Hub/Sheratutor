@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 152,
+  "pdf_page_no": 157,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Drawing: Follow the steps below:\n\n1. Draw a line segment $PQ = 11$ cm.\n2. At $P$, construct an angle of $\\angle QPL = 60^\\circ$ and at $Q$, an angle of $\\angle PQM = 45^\\circ$ on the same side of $PQ$.\n3. Draw the bisectors $PG$ and $QH$ of the two angles. Let the bisectors $PG$ and $QH$ of these angles intersect at $A$.\n4. Draw perpendicular bisector of the segments $PA, QA$ to intersect $PQ$ at $B$ and $C$.\n5. Join $A, B$ and $A, C$.\n\nThen, $\\triangle ABC$ is the required triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n\nAn adjacent side with the right angle and the difference of hypotenuse and the other side of a right-angled triangle are given. Construct the triangle.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. Base of a triangle $a = 3$ cm., base adjacent acute angle $45^\\circ$ and the sum of other two sides $s = 6$ cm.\n\n1) Express the information of the stem in the picture.\n2) Construct the triangle. (Construction and description of construction are must)\n3) If the perimeter of a square is $2s$, construct the square. (Construction and description of construction are must)",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of a triangle",
+      "figure_no": "7.01",
+      "box_2d": [
+        97,
+        245,
+        274,
+        732
+      ],
+      "description": "Geometric construction diagram showing line segment PQ with angles at P and Q, and bisectors intersecting at point A.",
+      "reading_order_anchor": "Drawing: Follow the steps below:"
+    }
+  ]
+}

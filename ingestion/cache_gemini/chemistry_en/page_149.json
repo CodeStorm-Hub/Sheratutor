@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 149,
+  "pdf_page_no": 154,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Table 7.01: Oxidation Number of Atoms in Different Compounds",
+      "chunk_type": "table",
+      "content_markdown": "| Rule of Oxidation Number | Formula of Compound | Element and Oxidation Number |\n| :--- | :--- | :--- |\n| Oxidation number of metals is positive and oxidation number of nonmetals is negative | $\\text{NaCl}$ | $\\text{Na} = +1$ <br> $\\text{Cl} = -1$ |\n| Oxidation number of a neutral or free element is zero | $\\text{Fe}, \\text{H}_2$ | $\\text{Fe} = 0$ <br> $\\text{H} = 0$ |\n| Total oxidation number of atoms of a neutral compound is zero | $\\text{H}_2\\text{O}$ | $\\text{H} = +1$ <br> $\\text{O} = -2$ <br> Total = $0$ |\n| Total Oxidation number of atoms of a charged ion is equal to their charge | $\\text{SO}_4^{2-}, \\text{NH}_4^+$ | $\\text{SO}_4^{2-} = -2$ <br> $\\text{NH}_4^+ = +1$ |\n| Oxidation number of alkali metals is $+1$ | $\\text{KCl}, \\text{K}_2\\text{CO}_3$ | $\\text{K} = +1$ |\n| Oxidation number of alkaline earth metals is $+2$ | $\\text{CaO}, \\text{MgSO}_4$ | $\\text{Ca} = +2$ <br> $\\text{Mg} = +2$ |\n| Oxidation number of halogen in metal halide is $-1$ | $\\text{MgCl}_2, \\text{LiCl}$ | $\\text{Cl} = -1$ |\n| In most compounds, Oxidation number of hydrogen is $+1$ but Oxidation number of hydrogen in metal hydride is $-1$ | $\\text{NH}_3, \\text{LiAlH}_4$ | $\\text{H} = +1$ <br> $\\text{H} = -1$ |\n| In most compounds (oxides), Oxidation number of oxygen is $-2$ but Oxidation number of oxygen in peroxide is $-1$ and Oxidation number of oxygen in superoxide is $-1/2$ (i.e. $-0.5$) | $\\text{K}_2\\text{O}, \\text{CaO}$ <br> $\\text{K}_2\\text{O}_2, \\text{H}_2\\text{O}_2$ <br> $\\text{NaO}_2, \\text{KO}_2$ | $\\text{O} = -2$ <br> $\\text{O} = -1$ <br> $\\text{O} = -\\frac{1}{2}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "1. Let us suppose the oxidation number of the atom in a compound or ion that is to be determined is $x$.\n\n2. Oxidation numbers of all elements in the compound or ion are to be multiplied with their respective number of atoms and then their total is to be found.\n\n3. In the case of molecules, the total will be zero ($0$) and in the case with ions, it will be equal to its number of charges added with the marks. For example, we need to determine the oxidation number of central atom $\\text{Mn}$ in $\\text{KMnO}_4$. Suppose, the oxidation number of $\\text{Mn}$ is $x$, oxidation number of $\\text{K}$ is $+1$ and $\\text{O}$ is $-2$. The total in the formula presented above will be equal to the oxidation",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

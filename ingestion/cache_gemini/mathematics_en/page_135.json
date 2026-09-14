@@ -1,0 +1,81 @@
+{
+  "printed_page_no": 135,
+  "pdf_page_no": 140,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Corollary 4. The acute angles of a right angled triangle are complementary to each other.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n\nProve that if a side of a triangle is extended, the exterior angle so formed is greater than each of the two interior opposite angles.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "6.1",
+      "section_title": "Congruence of Sides and Angles",
+      "chunk_type": "theory",
+      "content_markdown": "If two line segments have the same length, they are congruent. Conversely, if two line segments are congruent, they have the same length.\n\nIf the measurement of two angles is equal, the angles are congruent. Conversely, if two angles are congruent, their measurement is the same.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Congruence of Triangles",
+      "chunk_type": "theory",
+      "content_markdown": "If a triangle when placed on another exactly covers the other, the triangles are congruent. The corresponding sides and angles of two congruent triangles are equal.\n\nIn the adjacent figure, $\\triangle ABC$ and $\\triangle DEF$ are congruent. If two triangles $\\triangle ABC$ and $\\triangle DEF$ are congruent and vertices $A, B, C$ superpose on vertices $D, E, F$ respectively, then $AB = DE$, $AC = DF$, $BC = EF$ and $\\angle A = \\angle D$, $\\angle B = \\angle E$, $\\angle C = \\angle F$. To express $\\triangle ABC$ and $\\triangle DEF$ congruent it is written as $\\triangle ABC \\cong \\triangle DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3",
+      "section_title": "Theorem 5. (Side-Angle-Side criterion)",
+      "chunk_type": "theory",
+      "content_markdown": "If two sides and the angle included between them of a triangle are equal to two corresponding sides and the angle included between them of another triangle, the triangles are congruent.\n\nLet $\\triangle ABC$ and $\\triangle DEF$ be two triangles in which $AB = DE$, $BC = EF$ and the included $\\angle ABC = $ the included $\\angle DEF$. Then, $\\triangle ABC \\cong \\triangle DEF$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Congruence of line segments and angles",
+      "figure_no": "6.01",
+      "box_2d": [
+        272,
+        646,
+        447,
+        882
+      ],
+      "description": "Diagrams showing congruent line segments AB and CD, and congruent angles (i) and (ii) each measuring 40 degrees.",
+      "reading_order_anchor": "Congruence of Sides and Angles"
+    },
+    {
+      "caption": "Fig 6.02: Congruence of triangles",
+      "figure_no": "6.02",
+      "box_2d": [
+        485,
+        645,
+        702,
+        872
+      ],
+      "description": "Two triangles ABC and DEF shown separately to illustrate congruence.",
+      "reading_order_anchor": "Congruence of Triangles"
+    },
+    {
+      "caption": "Fig 6.03: Side-Angle-Side criterion",
+      "figure_no": "6.03",
+      "box_2d": [
+        747,
+        645,
+        956,
+        866
+      ],
+      "description": "Two triangles ABC and DEF with markings indicating equal sides and included angles.",
+      "reading_order_anchor": "Theorem 5. (Side-Angle-Side criterion)"
+    }
+  ]
+}

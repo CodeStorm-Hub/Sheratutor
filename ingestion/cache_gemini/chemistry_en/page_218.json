@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 218,
+  "pdf_page_no": 223,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": "9.3",
+      "section_title": "Corrosive Properties of Concentrated Acids and Alkali",
+      "chunk_type": "theory",
+      "content_markdown": "Concentrated acids and concentrated alkali are highly corrosive. They can corrode clothes and skin. They can damage the eyes if they go into the eyes. Concentrated acids and concentrated alkali are added slowly to water and turned into dilute solutions as they dissolve completely.\n\nIf by any chance, concentrated acids and concentrated alkali come into contact with your body, the spot must be cleaned time and again. Then you should inform your teacher.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Experiment of Strong and Weak Acids or Strong and Weak Alkali\n\nAn experiment will tell you which acid is strong and which is weak. Take $50\\text{ mL}$ dilute hydrochloric acid in a beaker. Now set two graphite rods in the beaker in a way so that they do not touch each other. Connect one graphite rod with an edge of a battery by a wire and the second graphite with the other edge of the battery taking the wire through a bulb. The bulb will light up. Observe the brightness of the light.\n\nNow take some ethanoic acid in another beaker. It is a weak acid. Set two graphite rods in this beaker also. Connect one graphite rod with the edge of a battery by a wire and the second graphite with the other edge of the battery taking the wire through a bulb. The bulb will light up. Observe the brightness of the bulb. You will see the brightness of the bulb in the beaker containing $\\text{HCl}$ solution is better than the one in ethanoic acid.\n\nStrong acids provide more $\\text{H}^+$ in the aqueous solution than the weak acids. This excess amount of $\\text{H}^+$ conducts more electricity in the solution. That is why the bulb in the strong acid gives more light. On the other hand, the weak acid supplies lesser number of $\\text{H}^+$ in the aqueous solution resulting in lesser brightness.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

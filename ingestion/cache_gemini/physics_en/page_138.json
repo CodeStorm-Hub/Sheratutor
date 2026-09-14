@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 138,
+  "pdf_page_no": 143,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "As the value of $h_2$ is greater than $h_1$, so we see the value of $F_2$ is greater than $F_1$.\nTherefore the resultant force will be upwards and its value will be:\n\n$$F = F_2 - F_1 = A(h_2 - h_1)\\rho g$$\n$$F = Ah\\rho g$$\n\nAs $Ah$ is the volume of the cylinder, $\\rho$ is the density of the liquid and $g$ is gravitational acceleration, therefore the force exerted upwards is equal to the weight of the liquid which has the same volume as the cylinder. This is precisely known as the Archimedes principle. The upwards force is called buoyancy.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Tie a big size potato or a fruit at one end of a rubber band and hang it, see how it is elongated. Now let the potato or the fruit be immersed into water, you will see the rubber band is compressed slightly. Because in the immersed condition the weight of the potato or fruit is less!",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "5.3.2",
+      "section_title": "Floatation and Immersion of a Body",
+      "chunk_type": "theory",
+      "content_markdown": "You have surely understood why an object floats and why an other object is immersed. You know an object experiences an upward force due to buoyancy which is equal to the weight of the water displaced by the object when it is immersed in water. The object will float if that force is greater than the weight of the object.\n\nJust the portion of the object which is immersed so that it will displace water equal to the weight of the body, only that portion will be immersed exactly, the remaining part will not be immersed in water.\n\nIf the weight of the body is greater than the weight of the displaced water the body will sink in water. But it seems that the weight of the body when immersed is less than its real weight.\n\nIf the weight of displaced water can be made just equal to the weight of the object anyway, then the object remains there where it is put in water, it will not float above or even sink below. In our everyday life though it is not seen by us but for the movement of the submarine under water this is done.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

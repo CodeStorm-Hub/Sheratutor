@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 360,
+  "pdf_page_no": 365,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Cumulative Frequency Diagram or Ogive curve",
+      "chunk_type": "theory",
+      "content_markdown": "Cumulative frequency diagram or Ogive curve: Cumulative frequency diagram or Ogive curve is drawn by taking the upper limit of class interval along with $x$-axis and cumulative frequency along with $y$-axis after classification of a data.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. The frequency distribution table of the marks obtained by 50 students out of 60 students is as follows:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval of marks obtained | 1 - 10 | 11 - 20 | 21 - 30 | 31 - 40 | 41 - 50 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 8 | 12 | 15 | 18 | 7 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Draw the Ogive curve of this frequency distribution.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: The cumulative frequency table of frequency distribution of the given data is :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval of marks obtained | 1 - 10 | 11 - 20 | 21 - 30 | 31 - 40 | 41 - 50 |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 8 | 12 | 15 | 18 | 7 |\n| Cumulative Frequency | 8 | $8 + 12 = 20$ | $15 + 20 = 35$ | $18 + 35 = 53$ | $7 + 53 = 60$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Ogive curve of cumulative frequency of data is drawn taking each square of graph paper as two units of upper limit of class interval along with $x$-axis and cumulative frequency along with $y$-axis.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

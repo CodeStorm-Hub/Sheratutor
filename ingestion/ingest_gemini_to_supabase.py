@@ -14,6 +14,7 @@ import sys
 import json
 import time
 import argparse
+import re
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 
@@ -41,7 +42,31 @@ if not SB_URL or not SB_KEY or not GEMINI_KEY:
     sys.exit(1)
 
 supabase = create_client(SB_URL, SB_KEY)
-ai_client = genai.Client(api_key=GEMINI_KEY)
+
+# Collect active API keys for rotation
+API_KEYS = []
+for k in ["GEMINI_API_KEY_SECONDARY", "GEMINI_API_KEY"]:
+    val = os.getenv(k)
+    if val and val not in API_KEYS and not val.startswith("your-"):
+        API_KEYS.append(val)
+
+if not API_KEYS:
+    print("Error: No valid Gemini API keys found.")
+    sys.exit(1)
+
+_current_key_idx = 0
+
+def get_ai_client():
+    global _current_key_idx
+    return genai.Client(api_key=API_KEYS[_current_key_idx])
+
+def rotate_key():
+    global _current_key_idx
+    if len(API_KEYS) > 1:
+        _current_key_idx = (_current_key_idx + 1) % len(API_KEYS)
+        print(f"Rotated embedding client to Key {_current_key_idx}...")
+
+ai_client = get_ai_client()
 
 # Storage Bucket and CDN prefix
 BUCKET_NAME = "curriculum-assets"
@@ -69,19 +94,31 @@ def upload_crop_to_storage(local_path: Path, storage_path: str) -> str:
     return f"{CDN_BASE}/{storage_path}"
 
 def generate_embedding(text: str) -> List[float]:
-    """Generates 1024-dim Matryoshka embedding using gemini-embedding-2."""
-    for attempt in range(3):
+    """Generates 1024-dim Matryoshka embedding using gemini-embedding-2 with key rotation."""
+    for attempt in range(len(API_KEYS) * 4):
+        client = get_ai_client()
         try:
-            resp = ai_client.models.embed_content(
+            resp = client.models.embed_content(
                 model=EMBED_MODEL_NAME,
                 contents=text,
                 config=types.EmbedContentConfig(output_dimensionality=EMBED_DIM)
             )
-            if resp.embedding and resp.embedding.values:
-                return list(resp.embedding.values)
+            if resp.embeddings and len(resp.embeddings) > 0 and resp.embeddings[0].values:
+                return list(resp.embeddings[0].values)
         except Exception as e:
-            print(f"Embedding attempt {attempt+1} failed: {e}. Retrying in 2s...")
-            time.sleep(2)
+            err_msg = str(e)
+            print(f"Embedding attempt {attempt+1} failed: {err_msg[:100]}...")
+            if "429" in err_msg or "RESOURCE_EXHAUSTED" in err_msg:
+                rotate_key()
+                # Check for explicit retry delay
+                delay = 2.0
+                m = re.search(r"retry in (\d+(?:\.\d+)?)s", err_msg)
+                if m:
+                    delay = min(float(m.group(1)), 30.0)
+                time.sleep(delay)
+            else:
+                rotate_key()
+                time.sleep(2)
     raise RuntimeError(f"Failed to generate embedding for text: {text[:50]}...")
 
 def main():
@@ -94,7 +131,7 @@ def main():
     args = parser.parse_args()
 
     # 1. Resolve Subject UUID and Curriculum Version UUID
-    subj_code = f"SSC-{'CHEM' if args.subject == 'chemistry' else 'PHYS' if args.subject == 'physics' else 'MATH'}"
+    subj_code = f"SSC-{'CHEM' if args.subject == 'chemistry' else 'PHY' if args.subject == 'physics' else 'MATH'}"
     subj_res = supabase.table("subjects").select("id").eq("code", subj_code).single().execute()
     if not subj_res.data:
         print(f"Error: Subject not found with code {subj_code}")
@@ -224,24 +261,39 @@ def main():
     if not args.skip_embed:
         print(f"\nGenerating 1024-dim Matryoshka embeddings ({EMBED_MODEL_NAME}) for {len(inserted_chunk_ids)} chunks...")
         embeddings_to_insert = []
+        quota_hit = False
         for idx, (cid, ctext) in enumerate(inserted_chunk_ids):
-            vec = generate_embedding(ctext)
-            embeddings_to_insert.append({
-                "chunk_id": cid,
-                "model_name": EMBED_MODEL_NAME,
-                "model_version": EMBED_MODEL_VERSION,
-                "embedding": vec,
-            })
+            try:
+                vec = generate_embedding(ctext)
+                time.sleep(0.1)
+                embeddings_to_insert.append({
+                    "chunk_id": cid,
+                    "model_name": EMBED_MODEL_NAME,
+                    "model_version": EMBED_MODEL_VERSION,
+                    "embedding": vec,
+                })
+            except Exception as e:
+                print(f"\n[QUOTA NOTICE] Embedding stopped at {idx+1}/{len(inserted_chunk_ids)}: {e}")
+                print(f"Persisting all {len(embeddings_to_insert)} generated embeddings to Supabase...")
+                quota_hit = True
+                break
+
             if (idx + 1) % 10 == 0 or (idx + 1) == len(inserted_chunk_ids):
                 print(f"  Embedded {idx + 1} / {len(inserted_chunk_ids)} chunks...")
 
         # Batch insert embeddings
-        for i in range(0, len(embeddings_to_insert), batch_size):
-            batch = embeddings_to_insert[i:i + batch_size]
-            supabase.table("chunk_embeddings").upsert(batch, on_conflict="chunk_id,model_name,model_version").execute()
-            print(f"  Saved {min(i + batch_size, len(embeddings_to_insert))} / {len(embeddings_to_insert)} embeddings to DB...")
+        if embeddings_to_insert:
+            for i in range(0, len(embeddings_to_insert), batch_size):
+                batch = embeddings_to_insert[i:i + batch_size]
+                supabase.table("chunk_embeddings").upsert(batch, on_conflict="chunk_id,model_name,model_version").execute()
+                print(f"  Saved {min(i + batch_size, len(embeddings_to_insert))} / {len(embeddings_to_insert)} embeddings to DB...")
 
-    print("\nIngestion and embedding generation completed successfully!")
+        if quota_hit:
+            print(f"\nSaved {len(embeddings_to_insert)} / {len(inserted_chunk_ids)} embeddings. Remaining will backfill at 00:00 UTC quota reset.")
+        else:
+            print(f"\nAll {len(embeddings_to_insert)} embeddings generated and saved!")
+
+    print("\nIngestion step completed successfully!")
 
 if __name__ == "__main__":
     main()

@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 61,
+  "pdf_page_no": 66,
+  "chapter_no": 2,
+  "chapter_title": "গতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "চিত্র 2.12",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. রাজীবরা সপরিবারে সিলেটের জাফলং বেড়াতে যাবার জন্য একটি মাইক্রোবাসে রওনা হলো। সে যাত্রার শুরু থেকে সিলেট যাওয়া পর্যন্ত প্রতি $5\\text{ minute}$ পরপর গাড়ির স্পিডোমিটার থেকে বেগের মান তথা দ্রুতি লিখে নিল। বেগের মান পেল যথাক্রমে প্রতি ঘণ্টায় $18$, $36$, $54$, $54$, $54$, $36$ ও $18$ কিলোমিটার।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) তাৎক্ষণিক দ্রুতি কী?\n\n(খ) বৃত্তাকার পথে গতিশীল কোনো বস্তুর ত্বরণ ব্যাখ্যা করো।\n\n(গ) প্রথম $5$ মিনিটে গাড়িটির অতিক্রান্ত দূরত্ব নির্ণয় করো।\n\n(ঘ) সংগৃহীত উপাত্ত দিয়ে বেগ-সময় লেখচিত্র অঙ্কন করে তা ব্যাখ্যা করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. $m$ গ্রাম ভরের একটি বস্তু $a$ ত্বরণে চলমান অবস্থায় রয়েছে। আদি বেগ $u$, শেষ বেগ $v$ ও $t$ সময়ে অতিক্রান্ত দূরত্ব $s$, বস্তুটির গতির অবস্থা নিচের টেবিলে দেওয়া হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| ঘটনা নং | $u \\text{ (m/s)}$ | $v \\text{ (m/s)}$ | $t \\text{ (s)}$ | $s \\text{ (m)}$ | $a \\text{ (m/s}^2\\text{)}$ |\n|---|---|---|---|---|---|\n| 1 | $10$ | $30$ | $5$ | $-$ | $-$ |\n| 2 | $5$ | $20$ | $4$ | $44$ | $3$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) ত্বরণের সংজ্ঞা লেখো?\n\n(খ) পৃথিবীর অভিকর্ষজ ত্বরণ কেন সুষম ত্বরণের উদাহরণ?\n\n(গ) টেবিলের $1$ নং ঘটনায় $s$ এর মান হিসাব করো।\n\n(ঘ) গাণিতিক বিশ্লেষণের মাধ্যমে $2$ নং ঘটনাটি সম্বন্ধে মন্তব্য করো।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 2.12",
+      "figure_no": "2.12",
+      "box_2d": [
+        112,
+        113,
+        242,
+        849
+      ],
+      "description": "বেগ বনাম সময় লেখচিত্রের বিভিন্ন রূপ (ক, খ, গ, ঘ)",
+      "reading_order_anchor": "1. রাজীবরা সপরিবারে সিলেটের জাফলং বেড়াতে যাবার জন্য..."
+    }
+  ]
+}

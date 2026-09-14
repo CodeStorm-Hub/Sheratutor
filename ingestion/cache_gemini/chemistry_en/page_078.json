@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 78,
+  "pdf_page_no": 83,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Procedure:**\n\n1. Take some small pieces of calcium carbonate ($\text{CaCO}_3$) in the round bottom flask.\n\n2. With the help of the cork, put in the thistle funnel and the delivery tube inside the Wolf bottle.\n\n3. Put in some water in the round bottom flask through the thistle funnel so that the chemicals within and the edge of the thistle funnel remain submerged.\n\n4. Set the other end of the exhaust tube inside a gas jar.\n\n5. Now, slowly add dilute hydrochloric acid ($\text{HCl}$) through the thistle funnel. You will see, the carbon dioxide ($\text{CO}_2$) gas bubbles produced in the reaction are coming out through the exhaust tube.\n\n6. Let’s preserve the carbon dioxide gas in the gas jar. Since the gas is heavier than air, it will gather in the lower part of the jar.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 4.05: Preparation of Carbon Dioxide.",
+      "figure_no": "4.05",
+      "box_2d": [
+        318,
+        241,
+        658,
+        739
+      ],
+      "description": "Experimental setup for the preparation of carbon dioxide using calcium carbonate, hydrochloric acid, a round bottom flask, thistle funnel, bent glass tube, and a gas jar.",
+      "reading_order_anchor": "Procedure:"
+    }
+  ]
+}

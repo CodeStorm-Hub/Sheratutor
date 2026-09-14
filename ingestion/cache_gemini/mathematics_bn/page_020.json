@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 20,
+  "pdf_page_no": 25,
+  "chapter_no": 1,
+  "chapter_title": "বাস্তব সংখ্যা",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "অনুশীলনী ১",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. যোগ কর:\nক) $0.\\dot{4}\\dot{5} + 0.13\\dot{4}$ খ) $2.\\dot{0}\\dot{5} + 8.0\\dot{4} + 7.018$ গ) $0.00\\dot{6} + 0.9\\dot{2} + 0.13\\dot{4}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. বিয়োগ কর:\nক) $3.\\dot{4} - 2.1\\dot{3}$ খ) $5.1\\dot{2} - 3.4\\dot{5}$\nগ) $8.4\\dot{9} - 5.35\\dot{6}$ ঘ) $19.34\\dot{5} - 13.2\\dot{3}4\\dot{9}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৭. গুণ কর:\nক) $0.\\dot{3} \\times 0.\\dot{6}$ খ) $2.\\dot{4} \\times 0.8\\dot{1}$ গ) $0.6\\dot{2} \\times 0.\\dot{3}$ ঘ) $42.1\\dot{8} \\times 0.2\\dot{8}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. ভাগ কর:\nক) $0.\\dot{3} \\div 0.\\dot{6}$ খ) $0.3\\dot{5} \\div 1.\\dot{7}$ গ) $2.3\\dot{7} \\div 0.4\\dot{5}$ ঘ) $1.18\\dot{5} \\div 0.\\dot{2}4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৯. চার দশমিক স্থান পর্যন্ত বর্গমূল এবং তিন দশমিক স্থান পর্যন্ত সেগুলোর আসন্ন মান লেখ:\nক) $12$ খ) $0.\\dot{2}\\dot{5}$ গ) $1.3\\dot{4}$ ঘ) $5.130\\dot{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২০. নিচের কোন সংখ্যাগুলো মূলদ এবং কোন সংখ্যাগুলো অমূলদ লিখ:\nক) $0.\\dot{4}$ খ) $\\sqrt{9}$ গ) $\\sqrt{11}$ ঘ) $\\frac{\\sqrt{6}}{3}$\nঙ) $\\frac{\\sqrt{8}}{\\sqrt{7}}$ চ) $\\frac{\\sqrt{27}}{\\sqrt{48}}$ ছ) $2\\frac{3}{7}$ জ) $5.63\\dot{9}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২১. $n = 2x - 1$, যেখানে $x \\in N$। দেখাও যে, $n^2$ কে 8 (আট) দ্বারা ভাগ করলে প্রতিক্ষেত্রে 1 ভাগশেষ থাকবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২২. $\\sqrt{5}$ ও 4 দুইটি বাস্তব সংখ্যা।\nক) কোনটি মূলদ ও কোনটি অমূলদ নির্দেশ কর।\nখ) $\\sqrt{5}$ ও 4 এর মধ্যে দুইটি অমূলদ সংখ্যা নির্ণয় কর।\nগ) প্রমাণ কর যে, $\\sqrt{5}$ একটি অমূলদ সংখ্যা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২৩. সরল কর:\nক) $(0.\\dot{3} \\times 0.8\\dot{3}) \\div (0.5 \\times 0.\\dot{1}) + 0.3\\dot{5} \\div 0.0\\dot{8}$\nখ) $[(6.2\\dot{7} \\times 0.5) \\div \\{(0.5 \\times 0.75) \\times 8.3\\dot{6}\\}] \\div \\{(0.25 \\times 0.\\dot{1}) \\times (0.75 \\times 21.\\dot{3}) \\times 0.5\\}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

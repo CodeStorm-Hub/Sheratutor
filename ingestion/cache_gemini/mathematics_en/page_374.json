@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 374,
+  "pdf_page_no": 379,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Write the formula to determine median.\n2) Find the mode of the data.\n3) Draw histogram of the data.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "15. Temperature is always changing. Usually in Bangladesh temperature is comparatively lower during first week of January and comparatively higher during fourth week of June. Following is the list of temperatures of 52 weeks is celsius.\n\n35, 30, 27, 42, 20, 19, 27, 36, 39, 14, 15, 38, 37, 40, 40, 12, 10, 9, 7, 20, 21,\n24, 33, 30, 29, 21, 19, 31, 28, 26, 32, 30, 22, 23, 24, 41, 26, 23, 25, 22, 17,\n19, 21, 23, 8, 13, 23, 24, 20, 32, 11, 17",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Calculate the number of classes considering a class interval of 5.\n\n2) Express the given data in a tabular form and find the mean value of temperatures.\n\n3) Draw histogram using the table and find the mode.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

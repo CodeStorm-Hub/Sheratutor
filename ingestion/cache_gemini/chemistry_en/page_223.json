@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 223,
+  "pdf_page_no": 228,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "acid and base lose their respective acidity and basicity to produce the neutral substance salt and water.\n\n$$\\text{HCl}(\\text{aq}) + \\text{NaOH}(\\text{aq}) \\longrightarrow \\text{NaCl}(\\text{aq}) + \\text{H}_2\\text{O}(l)$$\n$$\\text{Acid} \\quad \\text{Base} \\quad \\text{Salt} \\quad \\text{Water}$$\n\nLook at the above reaction. One mole hydrochloric acid neutralizes one mole sodium hydroxide completely. Therefore, two moles of hydrochloric acid will completely neutralize two moles of sodium hydroxide. Again, the reaction between sulfuric acid and sodium hydroxide produces sodium sulfate salt and water.\n\n$$\\text{H}_2\\text{SO}_4(\\text{aq}) + 2\\text{NaOH}(\\text{aq}) \\longrightarrow \\text{Na}_2\\text{SO}_4(\\text{aq}) + 2\\text{H}_2\\text{O}(l)$$\n$$\\text{Acid} \\quad \\text{Base} \\quad \\text{Salt} \\quad \\text{Water}$$\n\nThe above reaction shows that one mole sulfuric acid neutralizes two moles sodium hydroxide completely. It proves, a specific amount of a specific acid will completely neutralize a specific amount of a specific base.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.5.1",
+      "section_title": "Importance of Neutralization Reaction in Daily Life",
+      "chunk_type": "theory",
+      "content_markdown": "**In Digestion:** Acid is secreted in the stomach for digestion. If for some reason, the amount of acid in the stomach increases, we feel uneasy. Generally, it is called acidity. If this acidity continues for a long time, it creates an infection in the stomach. We take antacid to neutralize this acidity. Antacid contains $\\text{Al(OH)}_3$ and $\\text{Mg(OH)}_2$, which are alkaline in nature. They neutralize the excess acids inside our stomach.\n\n$$\\text{Al(OH)}_3 + 3\\text{HCl} \\longrightarrow \\text{AlCl}_3 + 3\\text{H}_2\\text{O}$$\n$$\\text{Mg(OH)}_2 + 2\\text{HCl} \\longrightarrow \\text{MgCl}_2 + 2\\text{H}_2\\text{O}$$\n\n**In Dental Care:** If you do not clean your mouth after taking some sweets, after sometime, you will feel a sour taste inside your mouth. Actually, there are innumerable bacteria in our mouth which forms various organic acids from our foods. That is why we feel the sour taste. These acids cause decay of the enamel (calcium compound) of our teeth. Alkali present in toothpastes neutralizes these acids and saves our denture.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

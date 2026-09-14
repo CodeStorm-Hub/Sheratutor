@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 1,
+  "pdf_page_no": 6,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Chapter One",
+      "chunk_type": "theory",
+      "content_markdown": "# Chapter One\n## Physical Quantities and Their Measurements\n\nWhen you think about science, the image of different instruments, inventions, research laboratories etc. might appear in your mind. But the instrument, research or laboratory are not the subject matter of science; the actual subject matter of science is its scientific view. The greatest contribution of this civilization has come from science and that came from the scientific view of the human beings of the world. To explore the mysteries of science, sometimes they are explained with logic, sometimes examined in laboratories and some other times they are scrutinized intensively in nature. From the ancient time to modern era the scientists are relentlessly working to advance science. The gradual development of physics has been described in this chapter.\n\nForma-1, Physics, Class 9-10",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure: An Atomic clock made for measuring time very accurately",
+      "figure_no": "1.1",
+      "box_2d": [
+        275,
+        104,
+        660,
+        892
+      ],
+      "description": "Photograph of a complex laboratory atomic clock apparatus used for measuring time very accurately.",
+      "reading_order_anchor": "Chapter One"
+    }
+  ]
+}

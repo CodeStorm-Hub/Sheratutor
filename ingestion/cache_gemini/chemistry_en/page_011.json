@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 11,
+  "pdf_page_no": 16,
+  "chapter_no": 1,
+  "chapter_title": "Concepts of Chemistry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If you analyze the data shown above, you will see, the more ammonium chloride is dissolved in water, the less the temperature of water becomes. You will decide, since dissolving ammonium chloride in water decreases the temperature of water, ammonium chloride absorbs heat from water in order to get dissolved. The result is dissolving ammonium chloride in water results in absorption of temperature. The steps followed by you in the above experiment can be shown in the following flowchart:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Whenever you are dealing with some research in chemistry, you are required to follow the same steps.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.6",
+      "section_title": "Safety Measures in Chemistry Laboratory and in use of Chemicals.",
+      "chunk_type": "theory",
+      "content_markdown": "The place where scientific experiments are held is called the laboratory. Similarly, the place where experiments of chemistry are held is called Chemistry laboratory. It is understood, there will be various chemicals in a chemistry laboratory. Almost all chemicals are harmful to some extent for us as well as our environment. Some chemicals are prone to explosion, some are flammable, some harm our body directly and some are dangerous for nature. Most of the apparatus in a chemistry laboratory are made of glass. Therefore, we need to be cautious from the moment of entry into the laboratory to the moment we come out. Lack of caution may result in accidents, e.g. if acid falls on your body, you will get injured; if acid falls on your dress, the dress will be spoiled. Besides, there may be accidents including fire or explosion in a laboratory. Therefore,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 1.02: Steps in a research in Chemistry.",
+      "figure_no": "1.02",
+      "box_2d": [
+        300,
+        96,
+        425,
+        914
+      ],
+      "description": "Flowchart showing the steps of research in chemistry: Topic Selection, Acquiring relevant information, Planning of experiment, Experiment, Data collection and analysis, Result and resolution.",
+      "reading_order_anchor": "The steps followed by you in the above experiment can be shown in the following flowchart:"
+    }
+  ]
+}

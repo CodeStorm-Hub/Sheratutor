@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 12,
+  "pdf_page_no": 17,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks: In order to convert finite decimal fractions into similar decimal fractions we must add sufficient number of 0s at the end of the number to match with number of nonrepeating digits. In case of repeating decimal fractions for each number, numbers of nonrepeating digits have been made equal so should be the case with repeating digits.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work: Convert $3.46\\dot{7}$, $2.01\\dot{2}\\dot{4}\\dot{3}$ and $7.52\\dot{5}\\dot{6}$ into similar repeating decimal fractions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1",
+      "section_title": "Addition and subtraction of repeating decimal fractions",
+      "chunk_type": "theory",
+      "content_markdown": "In order to add or subtract repeating decimal fractions, we need to convert repeating decimal fractions into similar repeating decimals. Then addition or subtraction must be carried out as in case of finite decimal fractions. If addition or subtraction of finite and repeating decimal fractions together are done, in order to make repeating decimal fractions similar, the number of digits of non-repeating part of each repeating fraction should be equal to the number of digits between the numbers of digits after the decimal points of finite decimal fractions and that of the non-repeating parts of repeating decimal fraction. The number of digits of repeating part will be equal to L.C.M. as obtained by applying the rules and in case of finite decimal fractions, necessary numbers of zeros are to be used in its repeating parts. Then the same process of addition and subtraction is to be done following the rules of finite decimal fractions. The sum or the difference thus obtained will not be the actual one. It should be observed that in the process of addition of similar decimal fractions if any number is to be carried over after adding the digits at the extreme left of the repeating part of the decimal fractions, then that number is added to the sum obtained and thus the actual sum is found. In case of subtraction the number to be carried over is to subtract from the difference obtained and thus actual result is found. The sum or difference thus found is the required sum or difference.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks:\n\n1. The sum or difference of repeating decimal is also repeating decimal fractions. In this sum or difference the number of digits in the non-repeating part will be equal to the number of digits in the non-repeating part of that repeating decimal fractions, which have the highest number of digits in its non-repeating part. Similarly, the number of digits in the repeating part of the sum or the result of subtraction will be the equal to L.C.M. of the numbers of digits of repeating parts of repeating decimal fractions. If there are finite decimal fractions, the number of digits in the nonrepeating part of each repeating decimal fraction will be equal to the highest numbers of digits that occurs after the decimal point.\n\n2. Converting the repeating decimal fractions into common fractions, addition and subtraction may be done according to the rules as used in case of fractions and the sum or difference is converted into decimal fractions. But this method of addition or subtraction needs more time.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

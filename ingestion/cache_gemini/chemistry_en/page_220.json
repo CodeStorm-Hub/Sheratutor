@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 220,
+  "pdf_page_no": 225,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\mathrm{pH} = -\\log[10^{-10}] = 10$$\n\nThat means, the $\\mathrm{pH}$ value will rise from $7$; the $\\mathrm{pH}$ value of the alkaline solution is more than $7$. The significance of $\\mathrm{pH}$ value $7$ is that the solution is neither alkali nor acidic; it is a neutral solution. When the value of $\\mathrm{pH}$ is less than $7$, the solution is acidic. When the value of $\\mathrm{pH}$ is more than $7$, the solution is alkaline.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.4.1",
+      "section_title": "Measuring pH",
+      "chunk_type": "theory",
+      "content_markdown": "Measurement of $\\mathrm{pH}$ is done using a $\\mathrm{pH}$ scale.\n\n**pH Scale:** Although in mathematical terms, the value of $\\mathrm{pH}$ may be any number from negative to positive, in reality, the value is measured on a scale of $0$ to $14$.\n\nThe $\\mathrm{pH}$ of a neutral solution is $7$. You have already seen that the value of acidic solution is less than $7$ and the value of alkaline solution is more than $7$. According to the scale, the strongest acid will have a value of $0$ and the strongest alkali will have the value of $14$.\n\n**Measuring System:** You have already learned how to measure $\\mathrm{pH}$ of a solution from the molarity of its hydrogen ion. Now you will learn how to measure it in experiments. The process involves the universal indicator, $\\mathrm{pH}$ paper, $\\mathrm{pH}$ meter etc.\n\n**Universal Indicator:** Universal indicator is the mixture of various acid and base indicators. Universal indicator turns to different colours for different values of $\\mathrm{pH}$. There is a chart of colours for different values in the Universal indicator.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: pH Scale.",
+      "figure_no": "9.01",
+      "box_2d": [
+        343,
+        137,
+        552,
+        856
+      ],
+      "description": "A colored bar chart representing the pH scale from 0 to 14, categorized into Acid, Neutral, and Base.",
+      "reading_order_anchor": "9.4.1 Measuring pH"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 238,
+  "pdf_page_no": 243,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "theory",
+      "content_markdown": "# Exercise",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "General questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "## General questions\n\n1. How the sensitivity of eyes can determined for different colors?\n2. Why are the danger signals shown in red colors though human eyes can see yellowish green the most?\n3. In mirrors, right and left interchanges, Why do the top and bottom not interchange?\n4. Why colors cannot be seen in moonlight?\n5. Why concave mirrors are used in the telescopes used by astronomers?\n6. What do you mean by reflection of light?\n7. What do you mean by regular and irregular reflection?\n8. What is a mirror?\n9. What is called an image? How many types of images are there? What are they?\n10. How is real image formed in a concave mirror? Demonstrate with the help of a ray diagram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "## Mathematical questions\n\n1. A mirror is placed as shown in figure 8.28. In which direction will the light ray, shown in figure 8.28, go?\n2. For a convex mirror (figure 8.29a) show where the image will be formed for an object $XY$ by drawing a ray diagram.\n3. For a concave mirror (figure 8.29 b) show where the image will be formed for an object $XY$ by drawing a ray diagram.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.28",
+      "figure_no": "8.28",
+      "box_2d": [
+        644,
+        532,
+        863,
+        891
+      ],
+      "description": "A ray diagram showing a mirror placed at an angle with incident and reflected light rays and angle measurements of $90^\\circ$, $75^\\circ$, and $45^\\circ$.",
+      "reading_order_anchor": "Mathematical questions"
+    }
+  ]
+}

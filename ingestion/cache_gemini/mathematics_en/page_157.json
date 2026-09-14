@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 157,
+  "pdf_page_no": 162,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** From any ray $AE$, cut the line segment $AC$ equal to $a$. Bisect the line segment $AC$ to find the mid-point $O$. At $O$ construct the angle $\\angle AOP$ equal to $\\angle x$ and extend the ray $OP$ to the opposite ray $OQ$. From the rays $OP$ and $OQ$ cut two line segments $OB$ and $OD$ equal to $\\frac{1}{2}b$. Join $A, B$; $A, D$; $C, B$ and $C, D$.\n\nThen, $ABCD$ is the required parallelogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:** In $\\triangle AOB$ and $\\triangle COD$,\n\n$OA = OC = \\frac{1}{2}a$, $OB = OD = \\frac{1}{2}b$ [by construction]\n\nand included $\\angle AOB = \\text{included } \\angle COD$ [opposite angle]\n\nTherefore, $\\triangle AOB \\cong \\triangle COD$\n\nSo, $AB = CD$\n\nand $\\angle ABO = \\angle CDO$; but the two angles are alternate angles.\n\n$\\therefore AB$ and $CD$ are parallel and equal.\n\nSimilarly, $AD$ and $BC$ are parallel and equal.\n\nTherefore, $ABCD$ is a parallelogram with diagonals\n\n$AC = AO + OC = \\frac{1}{2}a + \\frac{1}{2}a = a$\n\nand $BD = BO + OD = \\frac{1}{2}b + \\frac{1}{2}b = b$ and the angle included between the diagonals is $\\angle AOB = \\angle x$.\n\nTherefore, $ABCD$ is the required parallelogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Construction 5.** Two diagonals and a side of a parallelogram are given. Construct the parallelogram.\n\nLet $a$ and $b$ be the diagonals and $c$ be a side of the parallelogram. The parallelogram is to be constructed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of a parallelogram",
+      "figure_no": "7.01",
+      "box_2d": [
+        125,
+        515,
+        285,
+        885
+      ],
+      "description": "Geometric construction showing a parallelogram ABCD with diagonals intersecting at O, with given line segments a, b and angle x.",
+      "reading_order_anchor": "Drawing: From any ray AE, cut the line segment AC equal to a."
+    }
+  ]
+}

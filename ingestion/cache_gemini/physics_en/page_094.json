@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 94,
+  "pdf_page_no": 99,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2. Pressing the two surfaces more strongly where friction is present.\n\n3. Make the surfaces stationary by stopping the motion which is present on the two frictional surfaces. Because static friction is more than the sliding friction.\n\n4. Making grooves or waves on the frictional surfaces. Then it can grip the bottom tightly. If there is water or liquid, it enters the grooves thus reducing the friction of the surface.\n\n5. To increase the density of air or water.\n\n6. To increase the frictional area in air or water.\n\n7. To remove wheel or ball bearing.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.9.4",
+      "section_title": "Friction: An essential hazard",
+      "chunk_type": "theory",
+      "content_markdown": "All of us have certainly noticed that heat is generated due to friction. In the winter we create heat by rubbing our hands. The engine of a car becomes hot that happens due to friction. Therefore, energy is dissipated by creating unnecessary heat due to friction. Cars, planes, ships, submarines have to go forward by overcoming the frictional force, requiring extra fuel. If we treat this in this way, it may seem that friction is nothing but an evil in our lives.\n\nMeanwhile, we have seen that due to friction we can walk, drive cars on the road, write on the paper with pencil or pen, construct buildings, come down safely with the help of a parachute. We can give many examples where without friction we could not do our necessary work.\n\nConsequently though friction is treated as an evil, we have to acknowledge that friction is a very necessary evil for our lives.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. When you try to get down from a moving train why do you fall in the forward direction?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. As shown in figure 3.21, if a sudden pull is applied on the string A, it will tear. But if it is pulled slowly then the string B will tear. why?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

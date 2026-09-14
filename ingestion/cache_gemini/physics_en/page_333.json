@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 333,
+  "pdf_page_no": 338,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When a charge is kept in a place, an electric field is produced around it. Similarly, if electric current flows through a wire, a magnetic field will be is created around it.\n\nLet us assume that a wire penetrates through the middle of a cardboard and some small compasses are placed on the cardboard around the wire. The compasses will be aligned along north-south direction. Now if a current (moderately strong) passes through the wire, you will surprisingly notice that suddenly the compasses are arranging themselves one after another. You will get an impression that a circular magnetic field around the wire has been generated due to the electric current.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, if the current is stopped, then again the compasses align along the north-south direction. If the direction of current is changed, you will find that the compasses will arrange themselves again, but now the direction of the compasses in the circle will be reversed. This is because the current always produces a magnetic field around it in a definite direction.\n\nIf current flows through a conducting wire, then the direction of the magnetic lines of force produced due to this can be obtained from the right hand rule. If the thumb indicates the direction of current, then the other fingers will indicate the direction of the magnetic field (Fig 12.03).",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.02: Directions of the compasses around electric current",
+      "figure_no": "12.02",
+      "box_2d": [
+        375,
+        157,
+        605,
+        863
+      ],
+      "description": "Three diagrams showing a wire passing through a cardboard with compasses arranged around it, illustrating the effect of electric current on the compass needles.",
+      "reading_order_anchor": "Figure 12.02: Directions of the compasses around electric current"
+    }
+  ]
+}

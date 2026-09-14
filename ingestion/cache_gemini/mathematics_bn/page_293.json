@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 293,
+  "pdf_page_no": 298,
+  "chapter_no": 15,
+  "chapter_title": "ক্ষেত্রফল সম্পর্কিত উপপাদ্য",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৭. $\\triangle PQR$ এ $QD$ একটি মধ্যমা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উদ্দীপকের আলোকে আনুপাতিক চিত্র আঁক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) প্রমাণ কর, $PQ^2 + QR^2 = 2(PD^2 + QD^2)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) যদি $PQ = QR = PR$ হয়, তাহলে প্রমাণ কর, $4QD^2 = 3PQ^2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৮. $ABCD$ সামান্তরিকের $AB = 5$ সে.মি., $AD = 4$ সে.মি. এবং $\\angle BAD = 75^\\circ$। অপর একটি সামান্তরিক $APML$ এর $\\angle LAP = 60^\\circ$। $\\triangle AED$ এর ক্ষেত্রফল ও $APML$ সামান্তরিকের ক্ষেত্রফল, $ABCD$ সামান্তরিকের ক্ষেত্রফলের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) পেন্সিল, কম্পাস ও স্কেল ব্যবহার করে $\\angle BAD$ আঁক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $\\triangle AED$ অঙ্কন কর। [অঙ্কন চিহ্ন ও বিবরণ আবশ্যক]।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $APML$ সামান্তরিকটি অঙ্কন কর। [অঙ্কন চিহ্ন ও বিবরণ আবশ্যক]।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

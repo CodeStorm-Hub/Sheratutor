@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 207,
+  "pdf_page_no": 212,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "theory",
+      "content_markdown": "# Exercise\n\n## General question\n\n1. Show that a wave can transfer energy from one place to another.\n2. Why is sound produced in whistle?\n3. \"When a wave propagates, the medium does not flow. It executes simple harmonic oscillation about its position\", True or False?\n4. Why is sound produced in a thunderstorm?\n5. What problem would arise for a bat if it creates infra-sound instead of ultra-sound when flying?\n\n## Mathematical questions",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. A wave is shown in Figure 7.15 with respect to time and position. What is the velocity of the wave?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. The ratio of velocity of an object in a medium to the velocity of sound in that medium is called *MACH*. What is the velocity of the fighter plane *MACH 9*?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. In summer, the velocity of sound is increased by $0.5 \\%$ in a town. If the temperature in winter is $10^\\circ\\text{C}$, what is the temperature in the summer?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.15: A wave with respect to time and position",
+      "figure_no": "7.15",
+      "box_2d": [
+        492,
+        134,
+        634,
+        831
+      ],
+      "description": "Two line graphs showing amplitude (m) versus position (m) and amplitude (m) versus time (s) representing wave characteristics.",
+      "reading_order_anchor": "Mathematical questions"
+    }
+  ]
+}

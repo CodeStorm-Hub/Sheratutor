@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 275,
+  "pdf_page_no": 280,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": "11.4.2",
+      "section_title": "Alkynes",
+      "chunk_type": "theory",
+      "content_markdown": "The bio-compound which has at least one carbon-carbon triple bond ($-\\text{C}\\equiv\\text{C}-$) in its carbon chain is called Alkyne. General formula of Alkynes is $\\text{C}_n\\text{H}_{2n-2}$. Acetylene ($\\text{CH}\\equiv\\text{CH}$) is the smallest straight member of the Alkyne group.\n\n**Naming of alkynes**\n\nAlkynes are named by omitting (ane) and adding (yne) with the names of Alkanes. For example, the name of $\\text{CH}\\equiv\\text{CH}$ is Ethyne, $\\text{CH}_3-\\text{C}\\equiv\\text{CH}$ is Propyne, $\\text{CH}_3-\\text{C}\\equiv\\text{C}-\\text{CH}_3$ is Butyne-2.\n\n**Preparation of Alkyne**\n\n**From Calcium Carbide:** Ethyne and calcium hydroxide are produced when water is added to calcium carbide.\n\n$$\\text{CaC}_2 + 2\\text{H}_2\\text{O} \\xrightarrow{\\quad\\quad\\quad} \\text{CH}\\equiv\\text{CH} + \\text{Ca(OH)}_2$$\n\nCalcium Carbide $\\quad$ Water $\\quad$ Ethyne $\\quad$ Calcium Hydroxide\n\n**Chemical Properties of Alkyne**\n\nAlkyne has carbon-carbon triple bonds. One of the bonds is strong while the remaining two bonds are weak. The weak bonds of alkyne break up and take part in the addition reaction.\n\n**Addition of Hydrogen:** You have already learnt that Ethane is produced when ethyne is heated with hydrogen at $180^\\circ\\text{C}-200^\\circ\\text{C}$ temperature in the presence of nickel catalyst.\n\n$$\\text{CH}\\equiv\\text{CH} + 2\\text{H}_2 \\xrightarrow[180-200^\\circ\\text{C}]{\\text{Ni}} \\text{CH}_3-\\text{CH}_3$$\n\nEthyne $\\quad\\quad$ Hydrogen $\\quad\\quad\\quad\\quad$ Ethane\n\n**Addition of bromine:** When a solution of red coloured bromine is added to Ethyne, Ethyne reacts with the solution and produces tetra-bromo ethane. In this reaction the red colour of bromine disappears. This reaction proves that ethyne is an unsaturated compound.\n\n$$\\text{CH}\\equiv\\text{CH} + 2\\text{Br}_2 \\xrightarrow{\\quad\\quad\\quad} \\text{CHBr}_2-\\text{CHBr}_2$$\n\nEthyne $\\quad$ Bromine $\\quad\\quad\\quad$ Tetra-bromo ethane.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

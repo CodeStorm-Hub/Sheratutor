@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 171,
+  "pdf_page_no": 176,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Certainly we can write:\n$$\\beta = 2\\alpha$$\n\nSimilarly we can assume a cube of $L$ length, width and height. Its volume at temperature $T_1$ is $V_1$ and the volume becomes $V_2$ after increasing the temperature to $T_2$, so we have\n$$V_2 = [L_1 + \\alpha L_1 (T_2 - T_1)]^3$$\n\nAccording to the same argument, also here if we avoid the parts with $\\alpha^2$ and $\\alpha^3$, then no problem will arise in our analysis or calculation. So only the first two terms will be present, i.e.\n$$V_2 = L_1^3 + 3\\alpha L_1^3 (T_2 - T_1)$$\n\nBut we know\n$$V_1 = L_1^3$$\n\nThat is,\n$$V_2 = V_1 + 3\\alpha V_1 (T_2 - T_1)$$\n\nSo,\n$$V_2 = V_1 + \\gamma V_1 (T_2 - T_1)$$\n\nCertainly we can write\n$$\\gamma = 3\\alpha$$\n\nIn our practical life we have to keep in mind the issue of expansion of solids. You have seen the gap between the rails of rail tracks. This has been done taking thermal expansion into consideration. If no space was left for expansion, the rail lines would bend. Cavities develop in teeth due to lack of regular brushing. The dentist fills these cavities with a special type of substance. The co-efficient of expansion of the substance has been made very carefully which is equal to that of the teeth. If the co-efficient of expansion were less than that of teeth, it would come out from the cavity while eating something hot! Again, if the co-efficient of expansion of the substance were greater, it would come out from the cavity of the tooth while eating something cold! Many of the general people know the matter of thermal expansion without studying physics. You will notice that when the cork of a bottle is stuck, hot water is poured on it so that the cork becomes loose after expansion of the bottle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

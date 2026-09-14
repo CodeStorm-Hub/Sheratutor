@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 14,
+  "pdf_page_no": 19,
+  "chapter_no": 1,
+  "chapter_title": "বাস্তব সংখ্যা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$8.2\\dot{4}\\dot{3} = 8.24343434|34$$\n$$5.2\\dot{4}67\\dot{3} = 5.24673673|67$$\n$$2.99669760|67$$\nনির্ণেয় বিয়োগফল $2.99669760|67$। এখানে দুইটি বিয়োগফলই এক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩. $24.45\\dot{6}\\dot{5}$ থেকে $16.4\\dot{3}\\dot{7}$ বিয়োগ কর।\n\nসমাধান:\n$$24.45\\dot{6}\\dot{5} = 24.45645$$\n$$16.4\\dot{3}\\dot{7} = 16.43743$$\n$$8.01902$$ [৬ থেকে ৭ বিয়োগ করলে হাতে ১ নিতে হবে]\n$$-1$$\n$$8.01901$$\nনির্ণেয় বিয়োগফল $8.01901$\n\nদ্রষ্টব্য: সর্ডানের অঙ্ক থেকে ১ কেন বিয়োগ করা হয় তা বোঝাবার জন্য নিচে অন্যভাবে বিয়োগ করে দেখানো হলো।\n$$24.45\\dot{6}\\dot{5} = 24.45645|64$$\n$$16.4\\dot{3}\\dot{7} = 16.43743|74$$\n$$8.01901|90$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "কাজ: বিয়োগ কর: ক) $13.127\\dot{8}\\dot{4}$ থেকে $10.4\\dot{1}\\dot{8}$ খ) $23.03\\dot{9}\\dot{4}$ থেকে $9.12\\dot{6}\\dot{4}\\dot{5}$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আবৃত্ত দশমিক ভগ্নাংশের গুণ ও ভাগ\n\nআবৃত্ত দশমিক ভগ্নাংশগুলোকে সাধারণ ভগ্নাংশে পরিণত করে গুণ বা ভাগের কাজ সমাধা করে প্রাপ্ত ভগ্নাংশটিকে দশমিক ভগ্নাংশে প্রকাশ করলেই আবৃত্ত দশমিক ভগ্নাংশগুলোর গুণফল বা ভাগফল হবে। সসীম দশমিক ভগ্নাংশ ও আবৃত্ত দশমিক ভগ্নাংশের মধ্যে গুণ বা ভাগ করতে হলে এ নিয়মেই করতে হবে। তবে ভাগের ক্ষেত্রে ভাজ্য ও ভাজক দুইটিই আবৃত্ত দশমিক ভগ্নাংশ হলে, উভয়কে সদৃশ আবৃত্ত দশমিক ভগ্নাংশ করে নিলে ভাগের কাজ একটু সহজ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. $4.\\dot{3}$ কে $5.\\dot{7}$ দ্বারা গুণ কর।\n\nসমাধান:\n$$4.\\dot{3} = \\frac{43 - 4}{9} = \\frac{39}{9} = \\frac{13}{3}$$\n$$5.\\dot{7} = \\frac{57 - 5}{9} = \\frac{52}{9}$$\n$$\\therefore 4.\\dot{3} \\times 5.\\dot{7} = \\frac{13}{3} \\times \\frac{52}{9} = \\frac{676}{27} = 25.0\\dot{3}\\dot{7}$$\n\nনির্ণেয় গুণফল $25.0\\dot{3}\\dot{7}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

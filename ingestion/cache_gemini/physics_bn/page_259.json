@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 259,
+  "pdf_page_no": 264,
+  "chapter_no": 9,
+  "chapter_title": "আলোর প্রতিসরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দরকার। তবে $Y$ বিন্দু থেকে দুটি রশ্মি না এঁকেও আমরা প্রতিবিম্বটি বের করতে পারব। $Y$ বিন্দু থেকে $YR$ অক্ষ বরাবর একটি রশ্মি আঁকা সম্ভব, তাই আমরা জানি $Y$ বিন্দুটির প্রতিবিম্ব এই অক্ষের ওপর তৈরি হবে। $X$ বিন্দুটির প্রতিবিম্ব থেকে অক্ষের ওপর লম্বটি এঁকে নিলেই আমরা $Y$ বিন্দুর প্রতিবিম্ব পেয়ে যাব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$X$ বিন্দু থেকে দুটি রশ্মি কল্পনা করি। একটি অক্ষের সাথে সমান্তরাল $XP$, যেটি লেন্স থেকে বের হওয়ার সময় ছড়িয়ে যাবে। যেহেতু মনে হবে ফোকাস থেকে বিচ্ছুরিত হচ্ছে তাই ফোকাস $F$ থেকে $P$ পর্যন্ত একটি রেখা টেনে বর্ধিত করলেই সেই রশ্মিটি আমরা পেয়ে যাব। দ্বিতীয় রশ্মিটি $X$ বিন্দু থেকে লেন্সের কেন্দ্রের দিকে এঁকে এটি সরাসরি $XT$ দিকে বের হয়ে যাবে। $XT$ এবং $FS$ রেখা দুটি যে বিন্দুতে ছেদ করবে সেটিই হচ্ছে $X$ এর প্রতিবিম্ব $X'$; $X'$ থেকে অক্ষের ওপর লম্ব আঁকলে আমরা $XY$ এর প্রতিবিম্ব $X'Y'$ পেয়ে যাব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উত্তল আয়নার বেলায় আমরা যা দেখেছিলাম অবতল লেন্সের প্রতিবিম্বের বেলাতেও সেটি সত্যি প্রতিবিম্ব হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) লেন্সের কেন্দ্র এবং ফোকাস বিন্দুর মাঝখানে অবস্থিত;",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) অবাস্তব;",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) সোজা, এবং",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) বস্তুর তুলনায় ছোট।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.4.2",
+      "section_title": "উত্তল লেন্স (Convex Lens)",
+      "chunk_type": "theory",
+      "content_markdown": "উত্তল লেন্সের প্রতিবিম্বগুলো চমকপ্রদ। অবতল আয়নায় আমরা যেমন বিভিন্ন ধরনের প্রতিবিম্ব পেয়েছিলাম, উত্তল লেন্সও ঠিক একই ভাবে বিভিন্ন ধরনের প্রতিবিম্ব পাব। অবতল আয়নায় আমরা দেখেছিলাম তার ওপর সমান্তরাল রশ্মি ফেলা হলে সেটি ফোকাস বিন্দুতে এসে কেন্দ্রীভূত হয়। উত্তল লেন্সও ঠিক একই ব্যাপার ঘটে, সমান্তরাল রশ্মি ফেলা হলে সেগুলো এই লেন্সের ফোকাস বিন্দুতে কেন্দ্রীভূত হয় (চিত্র 9.21) এবং তারপর আবার ছড়িয়ে যায়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 9.20: অবতল লেন্স একটি বস্তুকে ছোট দেখায়।",
+      "figure_no": "9.20",
+      "box_2d": [
+        234,
+        430,
+        480,
+        852
+      ],
+      "description": "অবতল লেন্স দ্বারা গঠিত অসদ, সোজা এবং খর্বিত প্রতিবিম্বের রশ্মিচিত্র দেখানো হয়েছে।",
+      "reading_order_anchor": "X বিন্দু থেকে দুটি রশ্মি কল্পনা করি।"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 224,
+  "pdf_page_no": 229,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In Agriculture: When plants absorb different metallic ions like $\\text{Fe}^{2+}$, $\\text{Mg}^{2+}$, $\\text{Ca}^{2+}$, $\\text{K}^+$ etc. from the soil, the soil becomes acidic. It loses fertility. Lime is used to increase the fertility of soil which is chemically calcium oxide ($\\text{CaO}$). This lime neutralizes the acid in the soil and brings back the fertility.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.5.2",
+      "section_title": "Salt",
+      "chunk_type": "theory",
+      "content_markdown": "You have already learned acid and base undergo reactions to produce salt and water. The positive ion of the salt comes from the base. That is why the positive ion is known as the basic radical. The negative ion comes from the acid. That is why the negative ion of the salt is called an acid radical. An aqueous solution of salt produced from the reaction between a strong acid and a strong base is neutral in nature. For example, aqueous solutions of $\\text{NaCl}$, $\\text{Na}_2\\text{SO}_4$ etc. are neutral. An aqueous solution of salt produced in the reaction between a strong acid and a weak base is acidic in nature. $\\text{FeCl}_3$, $\\text{Zn}(\\text{NO}_3)_2$ etc. are examples of this kind. An aqueous solution of salt produced in the reaction between a strong base and a weak acid is basic in nature. $\\text{Na}_2\\text{CO}_3$, $\\text{CH}_3\\text{COONa}$ (Sodium ethanoate) etc. are examples of this kind.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.6",
+      "section_title": "Acid Rain",
+      "chunk_type": "theory",
+      "content_markdown": "Oxides of non-metals undergo a reaction with water to produce various acids. Pure air has a mixture of a small amount of carbon dioxide and different oxides of oxygen. Animals breathe out carbon dioxide in their respiration. The temperature of the spot where thunder strikes reaches $3000^\\circ\\text{C}$. At that temperature, $\\text{N}_2$ and $\\text{O}_2$ present in air undergo reaction and produce $\\text{NO}$. This $\\text{NO}$ gets oxidized by oxygen and becomes $\\text{NO}_2$. These oxides get dissolved in the rain water and produce some acids which come down to earth with rain water. Rain with these acids is called acid rain.\n\n$$\\text{CO}_2(\\text{g}) + \\text{H}_2\\text{O}(\\text{l}) \\longrightarrow \\text{H}_2\\text{CO}_3(\\text{aq})$$\n\n$$2\\text{NO}_2(\\text{g}) + \\text{H}_2\\text{O}(\\text{l}) \\longrightarrow \\text{HNO}_2(\\text{aq}) + \\text{HNO}_3(\\text{aq})$$\n\nThat is why the $\\text{pH}$ value of rain water is 5-6. However, some man-made reasons like carbon dioxide emitted from vehicles, power plants and industries mix with air which undergoes a reaction with rain water and produces carbonic acid",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

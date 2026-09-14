@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 27,
+  "pdf_page_no": 32,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: Given, $P = \\{x : x \\text{ is a factor of } 12 \\}$\nHere, factors of 12 are $1, 2, 3, 4, 6, 12$\n$\\therefore P = \\{1, 2, 3, 4, 6, 12\\}$\nAgain, $Q = \\{x : 3 \\text{ is a factor of } x \\text{ and } x \\le 12\\}$\nHere, multiples of 3 up to 12 are $3, 6, 9, 12$\n$\\therefore Q = \\{3, 6, 9, 12\\}$\n$\\therefore P - Q = \\{1, 2, 3, 4, 6, 12\\} - \\{3, 6, 9, 12\\} = \\{1, 2, 4\\}$\nThe required set is: $\\{1, 2, 4\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Universal Set",
+      "chunk_type": "theory",
+      "content_markdown": "All sets under discussion are subsets of a definite set. For example: the set $A = \\{x, y\\}$ is a subset of the set $B = \\{x, y, z\\}$. Here, $B$ set is called as universal set with respect to set $A$.\n\nSo if all sets under discussion are subsets of a given set, then the later set is said to be universal set with respect to sets under discussion.\n\nUsually universal set is denoted by $U$. However, other symbols can also be used to denote universal set. For example, if set of all even natural numbers is $C = \\{2, 4, 6, \\dots\\}$ and set of all natural numbers is $N = \\{1, 2, 3, 4, 5, 6, \\dots\\}$, then $N$ will be universal set with respect to the set $C$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Complement of a Set",
+      "chunk_type": "theory",
+      "content_markdown": "Let $U$ be universal set and $A$ be a subset of $U$. Then the set of elements outside of $A$ is termed as complementary set of $A$. The complementary set of $A$ is denoted by $A^c$ or $A'$. Mathematically, $A^c = U \\setminus A$.\n\nLet, $P$ and $Q$ be two sets. Then the elements of $P$ that are not elements of $Q$ are said to form the complementary set of $P$ with respect to $Q$, and is written $Q^c = P \\setminus Q$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. If $U = \\{1, 2, 3, 4, 5, 6, 7\\}$, $A = \\{2, 4, 6, 7\\}$ and $B = \\{1, 3, 5\\}$, then determine $A^c$ and $B^c$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Venn diagram of complement of a set",
+      "figure_no": "2.01",
+      "box_2d": [
+        671,
+        563,
+        776,
+        838
+      ],
+      "description": "A rectangular box representing the universal set U containing a circle representing set A, with the region outside the circle labeled as A^c.",
+      "reading_order_anchor": "Complement of a Set"
+    }
+  ]
+}

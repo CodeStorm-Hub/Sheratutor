@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 358,
+  "pdf_page_no": 363,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "numbers in our daily life. But in electronics numbers are expressed by binary numbers, because they can be easily processed (voltage as 1 and zero voltage as 0). The number system expressed with the digits '0' and '1' is a binary number system. (Figure 13.04)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The greatest contribution of electronics is the computer. The exchange of all data or processing of all data in a computer is processed by digital electronics. Digital electronics is also used in the internet and computer networks to exchange data. Sound, image or video etc. start as analog signals (and is used as analog signal too) but they are stored, processed and sent as digital signal. Noise can spoil the quantity of analog signals very easily by entering the signals. Once it is converted into digital signals, noise cannot enter it very easily. So, the quality of digital signals remains unchanged.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "A special type of IC is made to process digital signals. These IC's have become efficient gradually. That is, they can process a large number of signals at a very short time accurately. Therefore, as time goes by, the process of digitizing is becoming easier and it is needless to say that everything around us is being converted into digital world.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 13.04: (a) Analog and (b) Digital signals",
+      "figure_no": "13.04",
+      "box_2d": [
+        454,
+        268,
+        674,
+        760
+      ],
+      "description": "A graph showing an analog signal wave in (a) and a corresponding digital square wave signal in (b).",
+      "reading_order_anchor": "The number system expressed with the digits '0' and '1' is a binary number system. (Figure 13.04)"
+    }
+  ]
+}

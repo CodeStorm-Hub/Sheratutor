@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 55,
+  "pdf_page_no": 60,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "উৎপাদকে বিশ্লেষণ (Factorization)",
+      "chunk_type": "theory",
+      "content_markdown": "কোনো রাশি দুই বা ততোধিক রাশির গুণফলের সমান হলে, শেষোক্ত রাশিগুলোর প্রত্যেকটিকে প্রথমোক্ত রাশির উৎপাদক বা গুণনীয়ক বলা হয়। কোনো বীজগাণিতিক রাশির উৎপাদকগুলো নির্ণয় করার পর রাশিটিকে লব্ধ উৎপাদকগুলোর গুণফলরূপে প্রকাশ করাকে উৎপাদকে বিশ্লেষণ বলা হয়। বীজগাণিতিক রাশিগুলো এক বা একাধিক পদবিশিষ্ট (বহুপদী) হতে পারে। সেজন্য উক্ত রাশির উৎপাদকগুলোও এক বা একাধিক পদবিশিষ্ট হতে পারে। এখানে উৎপাদক নির্ণয়ের কতিপয় কৌশল আলোচনা করা হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সাধারণ উৎপাদক",
+      "chunk_type": "theory",
+      "content_markdown": "সাধারণ উৎপাদক: কোনো বহুপদীর প্রত্যেক পদে কোনো সাধারণ উৎপাদক থাকলে তা বের করে নিতে হয়। যেমন:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৮. $3a^2b + 6ab^2 + 12a^2b^2 = 3ab(a + 2b + 4ab)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৯. $2ab(x - y) + 2bc(x - y) + 3ca(x - y) = (x - y)(2ab + 2bc + 3ca)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "পূর্ণবর্গ",
+      "chunk_type": "theory",
+      "content_markdown": "পূর্ণবর্গ: একটি রাশিকে পূর্ণবর্গ আকারে প্রকাশ করেও উৎপাদকে বিশ্লেষণ করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২০. $4x^2 + 12x + 9$ কে উৎপাদকে বিশ্লেষণ কর।\n\nসমাধান: $4x^2 + 12x + 9 = (2x)^2 + 2 \\times 2x \\times 3 + (3)^2$\n$= (2x + 3)^2 = (2x + 3)(2x + 3)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২১. $9x^2 - 30xy + 25y^2$ কে উৎপাদকে বিশ্লেষণ কর।\n\nসমাধান: $9x^2 - 30xy + 25y^2$\n$= (3x)^2 - 2 \\times 3x \\times 5y + (5y)^2$\n$= (3x - 5y)^2 = (3x - 5y)(3x - 5y)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "দুইটি বর্গের অন্তর",
+      "chunk_type": "theory",
+      "content_markdown": "দুইটি বর্গের অন্তর: একটি রাশিকে দুইটি বর্গের অন্তররূপে প্রকাশ করে এবং $a^2 - b^2 = (a + b)(a - b)$ সূত্র প্রয়োগ করেও উৎপাদকে বিশ্লেষণ করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২২. $a^2 - 1 + 2b - b^2$ কে উৎপাদকে বিশ্লেষণ কর।\n\nসমাধান: $a^2 - 1 + 2b - b^2 = a^2 - (b^2 - 2b + 1)$\n$= a^2 - (b - 1)^2 = \\{a + (b - 1)\\}\\{a - (b - 1)\\}$\n$= (a + b - 1)(a - b + 1)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৩. $a^4 + 64b^4$ কে উৎপাদকে বিশ্লেষণ কর।\n\nসমাধান: $a^4 + 64b^4 = (a^2)^2 + (8b^2)^2$\n$= (a^2)^2 + 2 \\times a^2 \\times 8b^2 + (8b^2)^2 - 16a^2b^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

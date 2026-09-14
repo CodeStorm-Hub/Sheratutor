@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 184,
+  "pdf_page_no": 189,
+  "chapter_no": 6,
+  "chapter_title": "বস্তুর উপর তাপের প্রভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. সুপ্ততাপের মাধ্যমে:\ni. বস্তুর তাপমাত্রা বৃদ্ধি হয়\nii. বস্তুর অবস্থার পরিবর্তন হয়\niii. বস্তুর অভ্যন্তরীণ শক্তি বৃদ্ধি পায়\n\nনিচের কোনটি সঠিক\n(ক) i\n(খ) ii\n(গ) ii ও iii\n(ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "চিত্রের সাহায্যে 4 ও 5 নং প্রশ্নের উত্তর দাও\n\nচিত্র 6.10: বরফ গলনের লেখচিত্র",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. সম্পূর্ণ বরফ গলতে কত সময় লেগেছিল?\n(ক) 2 মিনিট\n(খ) 4 মিনিট\n(গ) 6 মিনিট\n(ঘ) 8 মিনিট",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. গলিত পানির তাপমাত্রা স্ফুটনাঙ্কে পৌঁছাতে প্রয়োজনীয় সময় কত মিনিট?\n(ক) 6\n(খ) 8\n(গ) 12\n(ঘ) 18",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 6.10: বরফ গলনের লেখচিত্র",
+      "figure_no": "6.10",
+      "box_2d": [
+        338,
+        125,
+        608,
+        604
+      ],
+      "description": "বরফ গলনের লেখচিত্র যা তাপমাত্রা এবং সময়ের সম্পর্ক প্রদর্শন করে।",
+      "reading_order_anchor": "চিত্রের সাহায্যে 4 ও 5 নং প্রশ্নের উত্তর দাও"
+    }
+  ]
+}

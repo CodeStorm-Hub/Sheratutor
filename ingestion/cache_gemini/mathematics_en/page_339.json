@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 339,
+  "pdf_page_no": 344,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let us draw a radius $r$ with centre $O$. The circular segment $AOB$ stands on the arc $APB$ whose measurement is $\\theta$. Draw a perpendicular $OC$ on $OA$.\n$$\\frac{\\text{Area of circular segment } AOB}{\\text{Area of circular segment } AOC} = \\frac{\\text{Measurement of } \\angle AOB}{\\text{Measurement of } \\angle AOC}$$\nor, $$\\frac{\\text{Area of circular segment } AOB}{\\text{Area of circular segment } AOC} = \\frac{\\theta}{90^\\circ}$$\n$[\\because \\angle AOC = 90^\\circ]$\nor, $\\text{Area of circular segment } AOB = \\frac{\\theta}{90^\\circ} \\times \\text{area of circular segment } AOC$\n$$= \\frac{\\theta}{90^\\circ} \\times \\frac{1}{4} \\times \\text{area of the circle}$$\n$$= \\frac{\\theta}{90^\\circ} \\times \\frac{1}{4} \\times \\pi r^2$$\n$$= \\frac{\\theta}{360^\\circ} \\times \\pi r^2$$\nSo, $\\text{area of circular segment} = \\frac{\\theta}{360^\\circ} \\times \\pi r^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 19. The radius of a circle is $8 \\text{ cm}$ and a circular segment subtends an angle $56^\\circ$ at the centre. Find the length of the arc and area of the circular segment.\n\nSolution: Let, radius of the circle $r = 8 \\text{ cm}$, length of arc is $s$ and the angle subtended by the circular segment is $\\theta = 56^\\circ$.\nWe know, $s = \\frac{\\pi r \\theta}{180^\\circ} = \\frac{3.1416 \\times 8 \\times 56^\\circ}{180^\\circ} \\text{ cm} = 7.82 \\text{ cm (approx.)}$ and\n$\\text{Area of circular segment} = \\frac{\\theta}{360^\\circ} \\times \\pi r^2 = \\frac{56}{360} \\times 3.1416 \\times 8^2 \\text{ square cm} = 31.28 \\text{ square cm (approx.)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 20. If the difference between the radius and circumference of a circle is $90 \\text{ cm}$, find the radius of the circle.\n\nSolution: Let the radius of the circle be $r$.\n$\\therefore$ Diameter of the circle is $2r$ and circumference $= 2\\pi r$\nAs per question, $2\\pi r - 2r = 90$\nor, $2r(\\pi - 1) = 90$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Circular segment",
+      "figure_no": "16.01",
+      "box_2d": [
+        115,
+        708,
+        255,
+        875
+      ],
+      "description": "A circle with center O, radius r, and a circular segment AOB subtending angle theta at the center.",
+      "reading_order_anchor": "Let us draw a radius r with centre O."
+    }
+  ]
+}

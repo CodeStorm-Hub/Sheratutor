@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 260,
+  "pdf_page_no": 265,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "draw a normal on this axis from image of $X$.\n\nImagine two rays from point $X$, one is $XP$ which is incident on the lens in parallel with the axis. This will diverge when emerged and will appear to diverge from the focus, so if a line is drawn from the focus $F$ to $P$ and elongated, then we'll find that ray. Let us draw the second ray from point $X$ towards the center of the lens. According to the rules of thin lenses it will emerge directly along the direction of $XT$. The point where $XT$ and $FS$ intersect each other is the image $X'$ of $X$. If we draw a normal from $X'$ on the axis we will get the image $X'Y'$ of $XY$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The things which are seen in the case of convex mirror are true in the case of concave lens.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Its position will be in between the center and focus of the lens.\n(b) It is virtual\n(c) It is erect.\n(d) It is small.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.4.2",
+      "section_title": "Convex Lens",
+      "chunk_type": "theory",
+      "content_markdown": "The images in convex lens are amazing. The image which we got from a concave mirror, is the same as the images in a convex lens. We have seen in the case of a convex mirror that if a parallel ray falls on it, then it converges at the focal point. The same thing happens in the case of a convex lens, if parallel rays fall on it, they will meet at the focal point (Figure 9.21) and again spread out.\n\nTherefore, using previous logic we can say that if light diverges from a point and the source of the divergent light (Figure 9.22) is placed in the focal point of a lens, then while passing through the lens, rays of light will emerge as parallel",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.20 : An object looks small in a concave lens",
+      "figure_no": "9.20",
+      "box_2d": [
+        226,
+        431,
+        467,
+        834
+      ],
+      "description": "Ray diagram showing image formation by a concave lens where an object XY forms a smaller, virtual, erect image X'Y'.",
+      "reading_order_anchor": "Imagine two rays from point X"
+    }
+  ]
+}

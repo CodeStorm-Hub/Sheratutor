@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 52,
+  "pdf_page_no": 57,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$= 8^3 + 15 \\times 8 + 8 \\times 84$$\n$$= 8(8^2 + 15 + 84) = 8(64 + 15 + 84)$$\n$$= 8 \\times 163 = 1304$$\n\nউদাহরণ ১৬. যদি $a = \\sqrt{3} + \\sqrt{2}$ হয়, তবে প্রমাণ কর যে, $a^3 + \\frac{1}{a^3} = 18\\sqrt{3}$\n\nসমাধান: দেওয়া আছে, $a = \\sqrt{3} + \\sqrt{2}$\n$$\\therefore \\frac{1}{a} = \\frac{1}{\\sqrt{3} + \\sqrt{2}}$$\n$$= \\frac{\\sqrt{3} - \\sqrt{2}}{(\\sqrt{3} + \\sqrt{2})(\\sqrt{3} - \\sqrt{2})}$$\n$$= \\frac{\\sqrt{3} - \\sqrt{2}}{(\\sqrt{3})^2 - (\\sqrt{2})^2} = \\frac{\\sqrt{3} - \\sqrt{2}}{3 - 2} = \\sqrt{3} - \\sqrt{2}$$\n$$\\therefore a + \\frac{1}{a} = (\\sqrt{3} + \\sqrt{2}) + (\\sqrt{3} - \\sqrt{2}) = \\sqrt{3} + \\sqrt{2} + \\sqrt{3} - \\sqrt{2} = 2\\sqrt{3}$$\nএখন, $a^3 + \\frac{1}{a^3} = \\left(a + \\frac{1}{a}\\right)^3 - 3 \\cdot a \\cdot \\frac{1}{a} \\left(a + \\frac{1}{a}\\right)$\n$$= (2\\sqrt{3})^3 - 3(2\\sqrt{3}) \\left[\\because a + \\frac{1}{a} = 2\\sqrt{3}\\right]$$\n$$= 2^3 \\cdot (\\sqrt{3})^3 - 3 \\times 2\\sqrt{3} = 8 \\cdot 3\\sqrt{3} - 6\\sqrt{3}$$\n$$= 24\\sqrt{3} - 6\\sqrt{3} = 18\\sqrt{3}$$\n(প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উদাহরণ ১৭. $x + y = 5$, $xy = 6$ হলে এবং $x > y$ হলে",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $2(x^2 + y^2)$ এর মান নির্ণয় কর।\nখ) $x^3 - y^3 - 3(x^2 + y^2)$ এর মান নির্ণয় কর।\nগ) $x^5 + y^5$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\nক) আমরা জানি, $2(x^2 + y^2) = 2\\{(x + y)^2 - 2xy\\}$\n$$= 2(5^2 - 2 \\cdot 6) = 2 \\times 13 = 26$$\n$$\\therefore 2(x^2 + y^2) = 26$$\nখ) দেওয়া আছে $x + y = 5$ এবং $xy = 6$, $x > y$\n$$\\therefore x - y = \\sqrt{(x + y)^2 - 4xy}$$\n(প্রদত্ত শর্ত মোতাবেক ঋণাত্মক মান গ্রহণযোগ্য নয়)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 140,
+  "pdf_page_no": 145,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Let's suppose the mass of the gold crown of Archimedes is $10\\text{ kg}$ in air and $9.4\\text{ kg}$ when immersed in water. What is the density of the crown?\n\n**Answer:** If the volume of the crown is $V$ and density is $\\rho$ then\n$$V\\rho = 10\\text{ kg}$$\n$$V\\rho - V\\rho_W = 9.4\\text{ kg}$$\n$$V\\rho_W = V\\rho - 9.4\\text{ kg} = 10\\text{ kg} - 9.4\\text{ kg} = 0.6\\text{ kg}$$\n$$V = \\frac{0.6\\text{ kg}}{\\rho_W} = \\frac{0.6\\text{ kg}}{10^3\\text{ kg/m}^3} = 0.6 \\times 10^{-3}\\text{ m}^3$$\n$$\\rho = \\frac{10\\text{ kg}}{V} = \\frac{10\\text{ kg}}{0.6 \\times 10^{-3}\\text{ m}^3} = 16,666\\text{ kg/m}^3$$\n\nReal density of gold is $19,300\\text{ kg/m}^3$, therefore it is understood that the crown is mixed by impurities.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.3.4",
+      "section_title": "Pascal's Law",
+      "chunk_type": "theory",
+      "content_markdown": "We have shown many times in this chapter that if pressure is applied on a liquid, it is transmitted towards all directions. You will understand that it is normal if you think a bit. Because if the pressure is not transmitted into the whole liquid then the pressure experienced in one part will be more and it will be less in another part. Therefore if we imagine a cross sectional area then force applied from one direction will be more than the force from an other direction and due to this force the liquid will flow until the pressure becomes equal. Pascal expressed this in the form of a law, that is stated below:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.3.4",
+      "section_title": "Pascal's Law",
+      "chunk_type": "theory",
+      "content_markdown": "**Pascal's Law:** If pressure is applied on a liquid or a gas enclosed in a container from outside, then this pressure is transmitted equally and acts perpendicularly on the surface of the container in contact with the liquid or gas.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 260,
+  "pdf_page_no": 265,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. $\\text{Zn}$ metal is extracted by taking the $\\text{ZnO}$ produced in heat reduction of calamine in a retort shown in the figure below. Produced metal is purified by electrolysis.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.1",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. Write the chemical formula of calamine.\nb. Explain heat reduction.\nc. Explain the principal reaction occurring in the retort.\nd. Evaluate why metal is extracted in three steps, not by electrolysis only.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Some minerals mixed with bauxite and calamine were found in a mine. A group of scientists under the leadership of Dr. Thomas extracted two metals in two different ways.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is the mineral?\nb. Explain, \"Not every metal is an ore\".\nc. Explain the nature of oxides found in the dissociation of the second ore.\nd. Write with logic the cause of extraction of two metals in two different ways.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. If we burn an element belonging to Group 16 of the periodic table in open air, we get an oxide A. The oxide is a highly toxic gas with an acute odor. A can produce an acid B in the industrial sector if we apply Le Chatelier's principle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is an ore?\nb. An oxide is acidic- explain.\nc. Describe the method of preparation of an acid B.\nd. The oxidation property of B acid depends on its density- explain with logic.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Retort for zinc extraction",
+      "figure_no": "10.01",
+      "box_2d": [
+        199,
+        108,
+        361,
+        487
+      ],
+      "description": "Diagram of a retort used for extracting zinc from a mixture of zinc oxide and coke, featuring a cooler and a prolong (small cooler).",
+      "reading_order_anchor": "1. Zn metal is extracted by taking the ZnO produced in heat reduction of calamine in a retort shown in the figure below."
+    }
+  ]
+}

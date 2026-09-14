@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 255,
+  "pdf_page_no": 260,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "গ) মনে করি, তিনি $n$ মাসে $106200$ টাকা সঞ্চয় করেন।\n\nপ্রশ্নানুসারে, $\\frac{n}{2}\\{2a + (n - 1)d\\} = 106200$\n\nবা, $\\frac{n}{2}\\{2 \\times 1200 + (n - 1) \\times 100\\} = 106200$\n\nবা, $n(2400 + 100n - 100) = 212400$\n\nবা, $100n^2 + 2300n - 212400 = 0$\n\nবা, $n^2 + 23n - 2124 = 0$\n\nবা, $n^2 + 59n - 36n - 2124 = 0$\n\nবা, $(n + 59)(n - 36) = 0$\n\nঅর্থাৎ, $n = -59$ অথবা $n = 36$\n\nমাস কখনো ঋণাত্মক হতে পারে না।\n\n$\\therefore$ নির্ণেয় সময়: $36$ মাস বা $3$ বছর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৩.১",
+      "section_title": "অনুশীলনী ১৩.১",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. $13 + 20 + 27 + 34 + \\dots + 111$ ধারাটির পদ সংখ্যা কত?\nক) $10$ খ) $13$ গ) $15$ ঘ) $20$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $5 + 8 + 11 + 14 + \\dots + 62$ ধারাটি\n$(i)$ একটি সসীম ধারা\n$(ii)$ একটি গুণোত্তর ধারা\n$(iii)$ এর $19$ তম পদ $59$\nনিচের কোনটি সঠিক?\nক) $i$ ও $ii$ খ) $i$ ও $iii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "নিচের তথ্যের ভিত্তিতে ৩ - ৪ নং প্রশ্নের উত্তর দাও।\n$7 + 13 + 19 + 25 + \\dots$ একটি ধারা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. ধারাটির $15$ তম পদ কোনটি?\nক) $85$ খ) $91$ গ) $97$ ঘ) $104$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. ধারাটির প্রথম $20$টি পদের সমষ্টি কত?\nক) $141$ খ) $1210$ গ) $1280$ ঘ) $2560$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $2 - 5 - 12 - 19 - \\dots$ ধারাটির সাধারণ অন্তর এবং $12$ তম পদ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $8 + 11 + 14 + 17 + \\dots$ ধারাটির কোন পদ $392$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $4 + 7 + 10 + 13 + \\dots$ ধারাটির কোন পদ $301$?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 322,
+  "pdf_page_no": 327,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "may even cause death from those shocks. That is why all electrical appliances are made in such a way that no one comes in direct contact with those things. If electricity passes directly through the heart then only $10\\text{ mA}$ of current can cause death. The electricity we use for different purposes is AC. The resistance of dry skin of human beings is around $100,000\\text{ }\\Omega$ which decreases by a thousand times when it gets wet. So from Ohm’s law we can show that the $220\\text{ V}$ electricity of our country can easily produce fatal current flows. A person with a wet feet standing on a wet floor has the worst possible condition of getting an electric shock.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When a person is electrocuted, he can’t move hands and legs because of the current flowing through his body. As a result, in spite of having the sense to move away from the dangerous condition, he or she won’t be able to do it.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The electricity we use can be dangerous, but if we follow some general precautions we can safely use electricity, and millions of people around the world are doing so. We should know the following for safe use of electricity:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) **Electrically insulated cover:** Open wire carrying electricity is dangerous, so it is always covered with plastic or another insulator. If short circuit occurs for any reason i.e. positive and negative wires touches without any resistance then, according to Ohm’s law, a large amount of current flows, the wire become heated, the plastic burns and can even cause fire. So it should be taken care that insulating layer remains unaltered and intact.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) **Better Connection:** The electrical connections should be made correctly where electrical equipment run using huge amount of electricity. If the connections are not properly done, extra resistance is produced and according to $I^2R$, it may be heated, may burn the insulating layer, and can damage the electrical connection.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) **Humidity:** Water is conductor of electricity, so if water enters any circuit, it may be dangerous due to short circuit. A hair drier or electric iron is very dangerous to use near water, because if it falls suddenly in the water and anyone touches it, an accident may occur by electrocuting the person.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) **Circuit breaker and fuse:** Major accidents of electricity occur when a large amount of current flows suddenly due to some defects. To stop sudden large flows, circuit breakers or fuses are used. A circuit breaker is made in such a way that if a large amount of current flows (more than the safer level), it breaks the circuit. A fuse is a comparatively simple method; the amount of current that",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

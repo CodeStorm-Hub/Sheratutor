@@ -1,0 +1,85 @@
+{
+  "printed_page_no": 352,
+  "pdf_page_no": 357,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": "16.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. The inner and outer diameter of a iron pipe is $12 \\text{ cm}$ and $14 \\text{ cm}$ respectively and the height of the pipe is $5 \\text{ metre}$. Find the weight of the iron pipe where weight of $1 \\text{ cm}^3$ iron is $7.2 \\text{ gm}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "18. The length and the breadth of a rectangular region are $12 \\text{ metre}$ and $5 \\text{ metre}$ respectively. There is a circular region just around the rectangle. The places which are not occupied by the rectangle, are planted with grass.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Describe the information above with a figure.\n2) Find the diameter of the circular region.\n3) If the cost of planting grass per sq. metre is Tk. $50$, find the total cost.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.3",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "19. The figure is composed of a square and a circular segment.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.3",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Determine the length of the diagonal and perimeter of the square.\n2) Find the total area of the whole region.\n3) If a regular hexagon having sides equal to the length of the square is inscribed in a circle, then determine the area of the unoccupied region of the circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.4",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "20. $ABCD$ is a parallelogram and $BCEF$ is a rectangle and $BC$ is the base of both of them.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.4",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Draw a figure of the rectangle and the parallelogram assuming the same height.\n2) Show that the perimeter of $ABCD$ is greater than the perimeter of $BCEF$.\n3) Ratio of length and width of the rectangle is $5 : 3$ and its perimeter is $48 \\text{ metre}$. Determine the area of the parallelogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.5",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "21. The perimeters of a square region and a rectangular region are same. The length of the rectangle is $3$ times of its width and its area is $1200 \\text{ square metre}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.5",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Determine the perimeter of the rectangle using the variable $x$.\n2) Determine the area of the square region.\n3) Consider a $1.5 \\text{ metre}$ wide path just around the rectangular region. How many $25 \\times 12.5 \\text{ square cm}$ bricks will be required to make the path metalled ?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Square and circular segment",
+      "figure_no": "16.01",
+      "box_2d": [
+        343,
+        701,
+        517,
+        886
+      ],
+      "description": "A square ABCD with a circular segment attached to the side AD, with an angle of 30 degrees indicated.",
+      "reading_order_anchor": "19. The figure is composed of a square and a circular segment."
+    }
+  ]
+}

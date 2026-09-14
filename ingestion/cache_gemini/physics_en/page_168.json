@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 168,
+  "pdf_page_no": 173,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "solids. We have seen in case of a spring that the force by which it is pulled when it is expanded to a certain distance, it pushes by the same force when it is compressed by the same amount. This is not true completely for the molecules of a solid. The amount of force by which molecules pull each other when they are moved away to a certain distance they push themselves by much more force when they are brought close to each other by the same distance. That is, this spring is a special type of spring. Less force is applied to expand but more force is applied to compress it.\n\nNow imagine that the molecules are vibrating due to a certain temperature. For being a special type of spring during vibrations molecules do not come very near but can move further away. Now if the solid is heated more and the molecules will vibrate much more. Already you have understood that since the molecules cannot come very close due to this special type of spring but can go very far easily, so all molecules will establish a new equilibrium to move away slightly from one another. When all molecules will move away from one another, the whole solid seems to be expanded slightly.\n\nLength, breadth and height of a solid are expand equally in three directions by the application of heat. To analyze this expansion three quantities named co-efficient of linear expansion, co-efficient of area expansion and co-efficient of volume have been introduced.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 6.03: The molecules are connected with each other by a imaginary spring.",
+      "figure_no": "6.03",
+      "box_2d": [
+        278,
+        574,
+        474,
+        847
+      ],
+      "description": "A 3D molecular lattice structure where molecules are connected by imaginary springs.",
+      "reading_order_anchor": "Now imagine that the molecules are vibrating due to a certain temperature."
+    },
+    {
+      "caption": "Figure 6.04: Length, cross section and volume of a solid are increased by heating.",
+      "figure_no": "6.04",
+      "box_2d": [
+        724,
+        182,
+        882,
+        777
+      ],
+      "description": "Schematic diagrams showing the expansion of length, area/cross-section, and volume of solids when heated by a flame.",
+      "reading_order_anchor": "To analyze this expansion three quantities named co-efficient of linear expansion..."
+    }
+  ]
+}

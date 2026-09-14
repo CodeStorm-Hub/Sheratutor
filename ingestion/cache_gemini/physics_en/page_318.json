@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 318,
+  "pdf_page_no": 323,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the resistances are more than two (Fig. 11.14) then the equivalent resistance $R$ will be\n$$\\frac{1}{R} = \\frac{1}{R_1} + \\frac{1}{R_2} + \\frac{1}{R_3} + ... + \\frac{1}{R_n}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.3",
+      "section_title": "Electric Power",
+      "chunk_type": "theory",
+      "content_markdown": "When discussing potential, we saw that if a charge is moved by applying a potential then some work is done or some energy is lost. So if $V$ potential is applied to move a charge $Q$ in a circuit then the amount of work done (or the applied energy) is\n$$W = VQ \\text{ Joule}$$\n\nPower $P$ is the capacity of work done per second, so if $Q$ charge is moved in $t$ time then\n$$P = \\frac{W}{t} = \\frac{VQ}{t} = VI \\text{ Watt}$$\n\nIf we use this on a single resistance $R$, then applying Ohm's law we can write, since\n$$V = RI$$\n$$P = I^2R$$\nor\n$$I = \\frac{V}{R}$$\ntherefore,\n$$P = \\left(\\frac{V}{R}\\right)^2 R = \\frac{V^2}{R}$$\n\nIf electricity flows through a resistance for time $t$, then $Pt$ energy is supplied there. Where does this energy go? When you use a resistance in a circuit and if you pass enough electricity through this resistance, then you will notice that it always gets hot. That means the electrical energy evolves as heat energy.\n\nThe use of bulbs with filaments are getting scarce, because the filament has to be heated to create light with this. A big part of the electric energy is used to heat up the filament, and energy is wasted. If we touch these bulbs with our hand we can feel how much heat energy is created, and this energy is created as $I^2R$ or $V^2/R$ in every second.\n\nThis is not the only place where the electrical energy is used to create heat",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

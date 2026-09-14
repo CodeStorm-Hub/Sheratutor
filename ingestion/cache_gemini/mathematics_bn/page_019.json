@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 19,
+  "pdf_page_no": 24,
+  "chapter_no": 1,
+  "chapter_title": "বাস্তব সংখ্যা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. ১ থেকে ১০ পর্যন্ত মৌলিক সংখ্যা কয়টি?\nক) ৩ খ) ৪ গ) ৫ ঘ) ৬",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. কোনটি সকল পূর্ণসংখ্যার সেট?\nক) $\\{..., -৪, -২, ০, ২, ৪, ...\\}$ খ) $\\{..., -২, -১, ০, ১, ২, ...\\}$\nগ) $\\{..., -৩, -১, ০, ১, ৩, ...\\}$ ঘ) $\\{০, ১, ২, ৩, ৪\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. বাস্তব সংখ্যার ক্ষেত্রে\n$(i)$ বিজোড় সংখ্যার বর্গ একটি বিজোড় সংখ্যা।\n$(ii)$ দুইটি জোড় সংখ্যার গুণফল এর গুণিতক জোড় সংখ্যা।\n$(iii)$ পূর্ণবর্গ নয় এমন সংখ্যার বর্গমূল মূলদ সংখ্যা।\nনিচের কোনটি সঠিক?\nক) $i$ ও $ii$ খ) $i$ ও $iii$ গ) $ii$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. তিনটি ক্রমিক স্বাভাবিক সংখ্যার গুণফল সর্বদাই নিচের কোন সংখ্যা দ্বারা বিভাজ্য হবে?\nক) ৫ খ) ৬ গ) ৭ ঘ) ১১",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $a$ ও $b$ দুইটি ক্রমিক জোড় সংখ্যা হলে নিচের কোনটি বিজোড় সংখ্যা?\nক) $a^2$ খ) $b^2$ গ) $a^2+১$ ঘ) $b^2+২$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. $a$ ও $b$ দুইটি পূর্ণসংখ্যা হলে $a^2+b^2$ এর সাথে নিচের কোনটি যোগ করলে যোগফল একটি পূর্ণবর্গ সংখ্যা হবে?\nক) $-ab$ খ) $ab$ গ) $২ab$ ঘ) $ab$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. প্রমাণ কর যে, প্রতিটি সংখ্যা অমূলদ। ক) $\\sqrt{৫}$ খ) $\\sqrt{৭}$ গ) $\\sqrt{১০}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. ক) $০.৩১$ এবং $০.১২$ এর মধ্যে দুইটি অমূলদ সংখ্যা নির্ণয় কর।\nখ) $\\frac{১}{\\sqrt{২}}$ এবং $\\sqrt{২}$ এর মধ্যে একটি মূলদ এবং একটি অমূলদ সংখ্যা নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. ক) প্রমাণ কর যে, যেকোনো বিজোড় পূর্ণসংখ্যার বর্গ একটি বিজোড় সংখ্যা।\nখ) প্রমাণ কর যে, দুইটি ক্রমিক জোড় সংখ্যার গুণফল ৮ (আট) দ্বারা বিভাজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. আবৃত্ত দশমিক ভগ্নাংশে প্রকাশ কর:\nক) $\\frac{১}{৬}$ খ) $\\frac{৭}{১১}$ গ) $৩\\frac{২}{৯}$ ঘ) $৩\\frac{৮}{১৫}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. সাধারণ ভগ্নাংশে প্রকাশ কর:\nক) $০.\\dot{২}$ খ) $০.৩\\dot{৫}$ গ) $০.১\\dot{৩}$ ঘ) $৩.৭\\dot{৮}$ ঙ) $৬.২\\dot{৩}০\\dot{৯}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. সদৃশ আবৃত্ত দশমিক ভগ্নাংশে প্রকাশ কর:\nক) $২.২\\dot{৩}, ৫.২\\dot{৩}\\dot{৫}$ খ) $৭.২\\dot{৬}, ৪.২\\dot{৩}\\dot{৭}$\nগ) $৫.\\dot{৭}, ৮.৩\\dot{৪}, ৬.২\\dot{৪}\\dot{৫}$ ঘ) $১২.৩\\dot{২}, ২.১\\dot{৯}, ৪.৩\\dot{২}\\dot{৫}\\dot{৬}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

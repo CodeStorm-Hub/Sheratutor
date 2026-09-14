@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 156,
+  "pdf_page_no": 161,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "theory",
+      "content_markdown": "# Exercise",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "General questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "## General questions\n\n1. A piece of ice is floating in glass water, once the ice melts the height of water is glass will increase of decrease?\n\n2. Suppose you sit on a boat in a swimming pool with a big stone. You drop the stone in the water of the swimming pool from the boat. The height of the water in the swimming pool will increase or decrease or remain the same?\n\n3. Hermits claim that they can lie down on a bed of nails (Figure 5.14). You can do the same, if you want, why?\n\n4. If the glass tube of Torricelli’s barometer is twisted instead of straight then will it work?\n\n5. What is the relation among force, pressure, area?\n\n6. What is density? What is its unit?\n\n7. What is atmospheric pressure?\n\n8. Is Torricelli’s vacuum a vacuum in reality? Explain\n\n9. Establish a relation between pressure and height of a liquid.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "## Mathematical questions\n\n1. Density of air is $0.0012 \\text{ gm/cm}^3$, density of gold is $19.30 \\text{ gm/cm}^3$, if $1\\text{ kg}$ gold is measured by a balance, what will be its real mass?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.14: A Hermit is sitting on a bed of nails.",
+      "figure_no": "5.14",
+      "box_2d": [
+        287,
+        549,
+        484,
+        876
+      ],
+      "description": "A hermit sitting comfortably on a bed of vertical iron nails.",
+      "reading_order_anchor": "3. Hermits claim that they can lie down on a bed of nails (Figure 5.14). You can do the same, if you want, why?"
+    }
+  ]
+}

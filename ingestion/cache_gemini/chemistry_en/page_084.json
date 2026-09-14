@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 84,
+  "pdf_page_no": 89,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": "5.1",
+      "section_title": "Valence Electrons",
+      "chunk_type": "theory",
+      "content_markdown": "The number of total electrons in the outermost principal energy level of an element is called the valence electrons of that element. For example, the electronic configuration of Potassium and Oxygen show 01 and 06 electrons at their outermost energy level.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, K has 01 valence electron while O has 06 valence electrons. The following table shows the valence electron number of some elements from their electronic configuration:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.1",
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Table 5.01: Valence Electrons of Elements.\n\n| Elemen | Electronic Configuration | Valence Electron |\n| --- | --- | --- | --- | --- | --- |\n| | K Orbit | L Orbit | M Orbit | N Orbit | |\n| N(7) | 2 | 5 | | | 5 |\n| F(9) | 2 | 7 | | | 7 |\n| P(15) | 2 | 8 | 5 | | 5 |\n| Cl(17) | 2 | 8 | 7 | | 7 |\n| Ca(20) | 2 | 8 | 8 | 2 | 2 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, Nitrogen has 2 electrons in its K orbit while 5 electrons in L orbit. L orbit is the outermost energy level of Nitrogen. So, Nitrogen has five valence electrons.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.01: Valence Electron of Potassium and Oxygen.",
+      "figure_no": "5.01",
+      "box_2d": [
+        253,
+        239,
+        458,
+        715
+      ],
+      "description": "Bohr model diagrams showing the electronic configuration and valence electrons of Potassium (K) and Oxygen (O) atoms.",
+      "reading_order_anchor": "Valence Electrons"
+    }
+  ]
+}

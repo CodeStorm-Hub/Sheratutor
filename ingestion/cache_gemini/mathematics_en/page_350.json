@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 350,
+  "pdf_page_no": 355,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercises 16.4",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. The length and width of two adjacent sides of a parallelogram are $7 \\text{ cm}$, and $5 \\text{ cm}$ respectively. What is the half of its perimeter in $\\text{cm}$?\n1) $12$ 2) $20$ 3) $24$ 4) $28$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. The length of the side of an equilateral triangle is $6 \\text{ cm}$. What is its area $(\\text{cm}^2)$?\n1) $3\\sqrt{3}$ 2) $4\\sqrt{3}$ 3) $6\\sqrt{3}$ 4) $9\\sqrt{3}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. In plane geometry:\n$(i)$ Each angle of equilateral triangle is less than one right angle.\n$(ii)$ Sum of acute angles of a right-angled triangle is one right angle.\n$(iii)$ An exterior angle of a triangle formed by extending one side of triangle is greater than each of the opposite interior angle.\nWhich of the following is true?\n1) $i$ and $ii$ 2) $i$ and $iii$ 3) $ii$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. If the length of each side of a square is $a$ and diagonal is $d$, then:\n$(i)$ Its area is $a^2$ square units\n$(ii)$ Perimeter is $2ad$ units\n$(iii)$ $d = \\sqrt{2}a$\nWhich of the following is true?\n1) $i$ and $ii$ 2) $i$ and $iii$ 3) $ii$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Answer the following questions (5-7) as per information from the picture below:",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Geometric figure with a square, triangle, and semicircle",
+      "figure_no": "16.01",
+      "box_2d": [
+        750,
+        375,
+        955,
+        625
+      ],
+      "description": "A composite geometric figure consisting of a square, a triangle on top, and a semicircle at the bottom.",
+      "reading_order_anchor": "Answer the following questions (5-7) as per information from the picture below:"
+    }
+  ]
+}

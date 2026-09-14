@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 314,
+  "pdf_page_no": 319,
+  "chapter_no": 15,
+  "chapter_title": "Area Related Theorems",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Step 2. Triangle $\\triangle CAD$ and rectangular region $ADLM$ lie on the same base $AD$ and between the parallel lines $AD$ and $CL$. Therefore, Rectangular region $ADLM = 2\\triangle CAD$ [Theorem 37]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Step 3. $\\triangle BAF$ and the square $ACGF$ lie on the same base $AF$ and between the parallel lines $AF$ and $BG$. Hence, square region $ACGF = 2\\triangle FAB = 2\\triangle CAD$ [Theorem 37]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Step 4. Rectangular region $ADLM = $ square region $ACGF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Step 5. Similarly joining $C, E$ and $A, K$ it can be proved that rectangular region $BELM = $ square region $BCHK$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Step 6. Rectangular region $(ADLM + BELM) = $ square region $ACGF + $ square region $BCHK$. or, square region $ABED = $ square region $ACGF + $ square region $BCHK$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "That is, $AB^2 = BC^2 + AC^2$ (Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "15.13",
+      "section_title": "Construction 13",
+      "chunk_type": "theory",
+      "content_markdown": "Construction 13. Construct a parallelogram with an angle equal to a definite angle and area equal to that of a triangular region.\n\nLet $ABC$ be a triangular region and $\\angle x$ be a definite angle. It is required to construct a parallelogram with angle equal to $\\angle x$ and area equal to the area of the triangular region $ABC$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 15.13: Construction of a parallelogram",
+      "figure_no": "15.13",
+      "box_2d": [
+        620,
+        100,
+        820,
+        890
+      ],
+      "description": "Geometric construction showing a triangle ABC and the construction of a parallelogram with a given angle x.",
+      "reading_order_anchor": "Construction 13. Construct a parallelogram with an angle equal to a definite angle and area equal to that of a triangular region."
+    }
+  ]
+}

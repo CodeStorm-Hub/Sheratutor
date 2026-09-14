@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 104,
+  "pdf_page_no": 109,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Let the number of students in the class be $x$.\n\nSince, if 4 students are seated in a bench, 3 benches remain vacant, the number of benches of that class = $\\frac{x}{4} + 3$.\n\nAgain, since, if 3 students are seated in each bench, 6 students are to remain standing, the number of benches of that class = $\\frac{x - 6}{3}$.\n\nSince the number of benches is fixed,\n\ntherefore, $\\frac{x}{4} + 3 = \\frac{x - 6}{3}$ or, $\\frac{x + 12}{4} = \\frac{x - 6}{3}$\n\nor, $4x - 24 = 3x + 36$ or, $4x - 3x = 36 + 24$\n\nor, $x = 60$\n\n$\\therefore$ number of students of the class is 60.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. Mr. Kabir, from his Tk. 56000, invested some money at the rate of profit 12% per annum and the rest of the money at the rate of profit 10% per annum. After one year he got the total profit of Tk. 6400. How much money did he invest at the rate of profit 12%?\n\nSolution: Let Mr. Kabir invest Tk. $x$ at the rate of profit 12%.\n\n$\\therefore$ he invested Tk. $(56000 - x)$ at the rate of profit 10%.\n\nNow, profit of Tk. $x$ in 1 year is Tk. $x \\times \\frac{12}{100}$ or Tk. $\\frac{12x}{100}$.\n\nAgain, profit of Tk. $(56000 - x)$ in 1 year is Tk. $(56000 - x) \\times \\frac{10}{100}$\n\nor, Tk. $\\frac{10(56000 - x)}{100}$.\n\nBy the question, $\\frac{12x}{100} + \\frac{10(56000 - x)}{100} = 6400$\n\nor, $12x + 560000 - 10x = 640000$\n\nor, $2x = 640000 - 560000$\n\nor, $2x = 80000$\n\nor, $x = 40000$\n\n$\\therefore$ Mr. Kabir invested Tk. 40000 at the rate of profit 12%.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

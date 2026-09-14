@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 68,
+  "pdf_page_no": 73,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "of small nucleuses a huge amount of energy can be produced due to this force. For this reason a nuclear bomb has so much energy. By this force light and heat is produced in the sun.\n\nAccording to scientists these four types of forces have the same origin and they are trying to explain all these forces by a single law. Meanwhile, it has become possible to explain the electromagnetic force and the weak nuclear force by a single law. This is a tremendous success of theoretical physics. (Therefore, you can say, forces are of three types: gravitation, electro-weak and nuclear force. Nobody will say it is wrong). The scientists are trying to unify the other forces too by a single law.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Balanced and Unbalanced Forces",
+      "chunk_type": "theory",
+      "content_markdown": "Force is a vector quantity; therefore, if a force is applied on an object then it is possible to cancel that force by the application of another force from opposite direction. Then we say that the forces are balanced. When two or more forces are applied on an object and if the combined resultant force of the forces becomes zero then the body has no acceleration.\n\nIn figure 3.02 it is shown that an object is suspended with a thread. The force of attraction (i.e. weight of the object) of the earth on the object is acting vertically downwards. Again another force i.e. the tension of the thread is acting vertically upwards. Here two forces are acting in opposite direction thus canceling each other's action and producing a balanced condition.\n\nNow if the thread is cut then the tension of the thread $T$ will not work on the object. Only the force of gravity of the earth or weight will be acting downwards. Here, the force of gravity or weight of the body is the unbalanced force. Owing to this unbalanced force, the object will fall down with the acceleration due to gravity.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

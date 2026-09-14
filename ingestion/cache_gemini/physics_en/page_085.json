@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 85,
+  "pdf_page_no": 90,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The matter will be clarified with the help of some examples. Let us consider that a mass $m$ is allowed to fall from a certain height (figure 3.12). We know that due to the earth's gravitational force, the mass $m$ experiences a force $F$ towards the centre of the earth:\n\n$$F = G \\frac{mM}{R^2}$$\n\nAlready we have seen that this force can be expresed as $mg$.\n\nFrom Newton's third law we know that the mass $m$ also attracts the giant earth towards itself. That force is also $F$, but in the opposite direction. We do not bother about this force, the reason is that the acceleration $a$ of the earth due to this force can be determined:\n\n$$F = Ma$$\n\nHere, $M$ is the mass of the earth and $a$ is the acceleration,\n\nTherefore, $$a = \\frac{F}{M} = \\frac{mg}{M} = \\left(\\frac{m}{M}\\right) g$$\n\nIf the mass of the earth is $M = 5.98 \\times 10^{24}\\text{ kg}$, then if an object of mass $1\\text{ kg}$ is released from above then the acceleration of the earth will be,\n\n$$a = 1.6 \\times 10^{-24}\\text{ m/s}^2$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.12: As the earth attracts a mass, the mass also attracts the earth in the same manner",
+      "figure_no": "3.12",
+      "box_2d": [
+        353,
+        151,
+        693,
+        402
+      ],
+      "description": "An illustration showing an apple falling towards the earth with force F downwards, and the earth experiencing an equal force F upwards towards the apple.",
+      "reading_order_anchor": "The matter will be clarified with the help of some examples."
+    }
+  ]
+}

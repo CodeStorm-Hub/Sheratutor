@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 154,
+  "pdf_page_no": 159,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": "7.1",
+      "section_title": "Exercise 7.1",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Construct a triangle with the following data:\n\n1) The lengths of three sides are respectively $3\\text{ cm}$, $3.5\\text{ cm}$, $2.8\\text{ cm}$.\n\n2) The lengths of two sides are $4\\text{ cm}$, $3\\text{ cm}$ and the included angle is $60^\\circ$.\n\n3) Two angles are $60^\\circ$ and $45^\\circ$ and their adjacent side is $5\\text{ cm}$.\n\n4) Two angles are $60^\\circ$ and $45^\\circ$ and the side opposite the angle $45^\\circ$ is $5\\text{ cm}$.\n\n5) The lengths of two sides are $4.5\\text{ cm}$ and $3.5\\text{ cm}$ respectively and the angle opposite to the second side is $30^\\circ$.\n\n6) The lengths of the hypotenuse and a side are $6\\text{ cm}$ and $4\\text{ cm}$ respectively.\n\n2. Construct a triangle with the following data:\n\n1) Base $3.5\\text{ cm}$, base adjacent angle $60^\\circ$ and the sum of the two other sides $8\\text{ cm}$.\n\n2) Base $5\\text{ cm}$, base adjacent angle $45^\\circ$ and the difference of the two other sides $1\\text{ cm}$.\n\n3) Base adjacent angles $60^\\circ$ and $45^\\circ$ and the perimeter $12\\text{ cm}$.\n\n3. Construct a triangle when the two base adjacent angles and the length of the perpendicular from the vertex to the base are given.\n\n4. Construct a right-angled triangle when the hypotenuse and the sum of the other two sides are given.\n\n5. Construct a triangle when a base adjacent angle, the height and the sum of the other two sides are given.\n\n6. Construct an equilateral triangle whose perimeter is given.\n\n7. The base, an obtuse base adjacent angle and the difference of the other two sides of a triangle are given. Construct the triangle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

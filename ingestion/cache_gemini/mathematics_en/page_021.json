@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 21,
+  "pdf_page_no": 26,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": "1.18",
+      "section_title": "Divide",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "18. Divide:\n1) $0.\\dot{3} \\div 0.\\dot{6}$ \n2) $0.\\dot{3}\\dot{5} \\div 1.\\dot{7}$ \n3) $2.\\dot{3}\\dot{7} \\div 0.\\dot{4}\\dot{5}$ \n4) $1.\\dot{1}\\dot{8}\\dot{5} \\div 0.\\dot{2}\\dot{4}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.19",
+      "section_title": "Write down values and approximate values up to 4 decimal places",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "19. Write down values and approximate values up to 4 decimal places :\n1) $\\sqrt{2}$ \n2) $0.\\dot{2}\\dot{5}$ \n3) $1.\\dot{3}\\dot{4}$ \n4) $5.1\\dot{3}0\\dot{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.20",
+      "section_title": "Write down which of the following numbers are rational and irrational",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "20. Write down which of the following numbers are rational and irrational:\n1) $0.\\dot{4}$ \n2) $\\sqrt{9}$ \n3) $\\sqrt{11}$ \n4) $\\frac{\\sqrt{6}}{3}$ \n5) $\\frac{\\sqrt{8}}{\\sqrt{7}}$ \n6) $\\frac{\\sqrt{27}}{\\sqrt{48}}$ \n7) $2\\frac{3}{7}$ \n8) $5.\\dot{6}3\\dot{9}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.21",
+      "section_title": "Prove that n^2 when divided by 8 gives 1 as remainder",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "21. Let $n = 2x - 1$, where $x \\in N$. Prove that $n^2$ when divided by 8 gives 1 as remainder.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.22",
+      "section_title": "Real numbers",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "22. $\\sqrt{5}$ and 4 are two real numbers.\n1) Specify which one is rational and which one is irrational.\n2) Find two irrational numbers between $\\sqrt{5}$ and 4.\n3) Prove that $\\sqrt{5}$ is an irrational number.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.23",
+      "section_title": "Simplify",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "23. Simplify:\n1) $(0.\\dot{3} \\times 0.8\\dot{3}) \\div (0.5 \\times 0.\\dot{1}) + 0.3\\dot{5} \\div 0.0\\dot{8}$\n2) $[(6.2\\dot{7} \\times 0.5) \\div \\{(0.5 \\times 0.75) \\times 8.3\\dot{6}\\}] \\div \\{(0.2\\dot{5} \\times 0.\\dot{1}) \\times (0.75 \\times 21.\\dot{3}) \\times 0.5\\}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

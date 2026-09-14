@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 122,
+  "pdf_page_no": 127,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "are accepted without any proof. Since the fifth postulate is related to parallel lines, it will be discussed later.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Plane Geometry",
+      "chunk_type": "theory",
+      "content_markdown": "It has been mentioned earlier that point, straight line and plane are three fundamental concepts of geometry. Although it is not possible to define them properly, based on our real life experience we have ideas about them. As a concrete geometrical conception space is regarded as a set of points and straight lines and planes are considered the subsets of this universal set. That is,\n\nPostulate 1: Space is a set of all points and plane and straight lines are the sub-sets of this set.\n\nFrom this postulate we observe that each of plane and straight line is a set and points are its elements. However, in geometrical description the notation of sets is usually avoided. For example, a point included in a straight line or plane is expressed by ‘the point lies on the straight line or plane’ or ‘the straight line or plane passes through the point’. Similarly if a straight line is the subset of a plane, it is expressed by such sentences as ‘the straight line lies on the plane, or the plane passes through the straight line’.\n\nIt is accepted as properties of straight line and plane that,\n\nPostulate 2: For two different points there exists one and only one straight line, on which both the points lie.\n\nPostulate 3: For three points which are not colinear, there exists one and only one plane, on which all the three points lie.\n\nPostulate 4: A straight line passing through two different points on a plane lie completely in the plane.\n\nPostulate 5:\n\n1) Space contains more than one plane.\n\n2) In each plane more than one straight lines lie.\n\n3) The points on a straight line and the real numbers can be related in such a way that every point on the line corresponds to a unique real number and conversely every real number corresponds to a unique point of the line.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

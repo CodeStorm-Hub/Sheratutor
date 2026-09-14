@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 305,
+  "pdf_page_no": 310,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\nমনে করি, $ABCD$ সামান্তরিকের $AB = a = 12$ মিটার, $AD = c = 8$ মিটার এবং কর্ণ $BD = b = 10$ মিটার। $D$ ও $C$ থেকে $AB$ এর উপর এবং $AB$ এর বর্ধিতাংশের উপর $DF$ ও $CE$ লম্ব টানি। $A, C$ ও $B, D$ যোগ করি।\n\n$\\triangle ABD$ এর অর্ধপরিসীমা $s = \\frac{12 + 10 + 8}{2}$ মিটার = $15$ মিটার\n\n$\\therefore \\triangle ABD$ এর ক্ষেত্রফল $= \\sqrt{s(s - a)(s - b)(s - c)} = \\sqrt{15(15 - 12)(15 - 10)(15 - 8)}$ বর্গমিটার $= \\sqrt{15 \\times 3 \\times 5 \\times 7}$ বর্গমিটার $= \\sqrt{1575}$ বর্গমিটার $= 39.68$ বর্গমিটার (প্রায়)\n\nআবার, $\\triangle ABD$ এর ক্ষেত্রফল $= \\frac{1}{2} AB \\times DF$\n\nবা, $39.68 = \\frac{1}{2} \\times 12 \\times DF$ বা, $6DF = 39.68 \\therefore DF = 6.61$ (প্রায়)\n\nএখন, $\\triangle BCE$ সমকোণী।\n\n$\\therefore BE^2 = BC^2 - CE^2 = AD^2 - DF^2 = 8^2 - (6.61)^2 = 20.31$\n\n$\\therefore BE = 4.5$ (প্রায়)\n\nঅতএব, $AE = AB + BE = 12 + 4.5 = 16.5$ (প্রায়)\n\n$\\triangle ACE$ সমকোণী থেকে পাই\n\n$\\therefore AC^2 = AE^2 + CE^2 = (16.5)^2 + (6.61)^2 = 315.94$\n\n$\\therefore AC = 17.77$ (প্রায়)\n\nনির্ণেয় কর্ণের দৈর্ঘ্য $17.77$ মিটার (প্রায়)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩. একটি রম্বসের একটি কর্ণ $10$ মিটার এবং ক্ষেত্রফল $120$ বর্গমিটার হলে, অপর কর্ণ এবং পরিসীমা নির্ণয় কর।\n\nসমাধান:\nমনে করি, $ABCD$ রম্বসের কর্ণ $BD = d_1 = 10$ মিটার এবং অপর কর্ণ $d_2$ মিটার।\nরম্বসটির ক্ষেত্রফল $= \\frac{1}{2} d_1 d_2$ বর্গমিটার\nপ্রশ্নানুসারে, $\\frac{1}{2} d_1 d_2 = 120$ বা, $d_2 = \\frac{120 \\times 2}{10} = 24$ মিটার।\nআমরা জানি, রম্বসের কর্ণদ্বয় পরস্পরকে সমকোণে সমদ্বিখণ্ডিত করে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: সামান্তরিকের কর্ণ নির্ণয়",
+      "figure_no": "16.01",
+      "box_2d": [
+        85,
+        645,
+        225,
+        875
+      ],
+      "description": "সামান্তরিক ABCD এর কর্ণ BD এবং লম্ব DF ও CE অঙ্কন চিত্র।",
+      "reading_order_anchor": "মনে করি, ABCD সামান্তরিকের AB = a = 12 মিটার"
+    },
+    {
+      "caption": "চিত্র: রম্বসের কর্ণ নির্ণয়",
+      "figure_no": "16.02",
+      "box_2d": [
+        765,
+        680,
+        920,
+        875
+      ],
+      "description": "রম্বস ABCD এর কর্ণদ্বয় BD ও AC পরস্পর O বিন্দুতে ছেদ করেছে।",
+      "reading_order_anchor": "মনে করি, ABCD রম্বসের কর্ণ BD = d1 = 10 মিটার"
+    }
+  ]
+}

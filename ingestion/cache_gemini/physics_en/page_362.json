@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 362,
+  "pdf_page_no": 367,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "theory",
+      "content_markdown": "## Exercise",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "General questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "### General questions\n1. If a neutron can turn into a proton emitting a beta particle, then why are not all neutrons inside a nucleus gradually converted into protons?\n2. The resistance of a resistor increases with an increase in temperature, but why does the resistance of a semiconductor decrease with an increase in temperature?\n3. What is radioactivity? Explain.\n4. Explain the difference between alpha and beta particles.\n5. What is an integrated circuit?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "### Mathematical questions\n1. The amount of $C_{14}$ in a fossil is 16 times less than expected. How old is the fossil?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "### Multiple choice questions\nPut the tick mark ($\\checkmark$) on correct answer\n1. What do you mean by an alpha particle emitting from a radioactive element?\n(a) a hydrogen nucleus\n(b) a helium nucleus\n(c) a neutrally charged particle\n(d) a negative particle",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

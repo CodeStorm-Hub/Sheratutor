@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 5,
+  "pdf_page_no": 10,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "5. If $a$ is real number, $(i) a + (-a) = 0$ $(ii)$ If $a \\neq 0$, then $a \\cdot \\frac{1}{a} = 1$\n6. If $a, b, c$ are real numbers, $a(b + c) = ab + ac$\n7. If $a, b$ are real numbers, $a < b$ or $a = b$ or $a > b$\n8. If $a, b, c$ are real numbers and $a < b$, then $a + c < b + c$\n9. If $a, b, c$ are real numbers and $a < b$, then $(i) ac < bc$ whenever $c > 0$ $(ii) ac > bc$ whenever $c < 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proposition: $\\sqrt{2}$ is an irrational number.\n\nProof: Suppose, $\\sqrt{2}$ is an irrational number.\n\nThen there are two mutually prime numbers $p, q > 1$ so that $\\sqrt{2} = \\frac{p}{q}$.\n\nOr, $2 = \\frac{p^2}{q^2}$ [squaring] that is $2q = \\frac{p^2}{q}$ [multiplying both sides by $q$]\n\nObviously $2q$ is an integer but $\\frac{p^2}{q}$ is not an integer, because $p$ and $q$ are natural numbers and they are mutually prime and $q > 1$.\n\n$\\therefore 2q$ and $\\frac{p^2}{q}$ cannot be equal, that is $2q \\neq \\frac{p^2}{q}$.\n\n$\\therefore \\sqrt{2}$ cannot be expressed in the form $\\frac{p}{q}$, that is $\\sqrt{2} \\neq \\frac{p}{q}$.\n\n$\\therefore \\sqrt{2}$ is an irrational number. $\\square$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks : $\\square$ is used as the end mark of logical proof",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Prove that $\\sqrt{3}$ is an irrational number.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. Prove that when one is added to the product of 4 consecutive natural numbers this becomes a perfect square.\n\nSolution: Let the consecutive integers be $x, x+1, x+2, x+3$\n\nIf we add 1 to the product of these 4 integers we get:\n\n$x(x+1)(x+2)(x+3) + 1$\n\n$= x(x+3)(x+1)(x+2) + 1$\n\n$= (x^2 + 3x)(x^2 + 3x + 2) + 1$\n\n$= a(a+2) + 1$ [Assume $x^2 + 3x = a$]\n\n$= a^2 + 2a + 1 = (a+1)^2 = (x^2 + 3x + 1)^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

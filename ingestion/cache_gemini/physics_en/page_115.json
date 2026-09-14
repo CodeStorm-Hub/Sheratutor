@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 115,
+  "pdf_page_no": 120,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You definitely have observed that when a stone hits the ground, it hits by producing sound and heat i.e. kinetic energy is transformed into sound or heat energy.\n\nThe example (Figure 4.04) of changing between potential and kinetic energy is wonderful. A small stone is tied by a thread and hanged from a support. If we pull it along one side then the stone goes up by a small amount from its stationary position and hence a potential energy is developed in it. Now if we release the stone, due to an unbalanced force on it, it starts going towards its stationary state, thus creating a motion in it. When it reaches the mid position exactly, it attains the maximum velocity. So it does not stop there rather moves away in the opposite direction and rises up until its velocity becomes zero. Therefore, it again develops a potential energy. When it reaches the maximum height it stops there, owing to its potential energy again it starts moving towards the stationary state. In this way, the stone oscillates and transformation from potential energy to kinetic energy and kinetic energy to potential energy continues. This process would continue for an infinite time if there was no friction and other causes of energy loss.\n\nTherefore, the transformation of energy is a very natural process. Transformation of energy takes place not only between potential energy and kinetic energy. But all the known forms of energies around us can transform from one form to another. In our daily lives, the energy we see around us cannot be created or even can be destroyed, it only changes from one form to another. This is the law of conservation of energy.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.5.2",
+      "section_title": "Transformation of Energy",
+      "chunk_type": "theory",
+      "content_markdown": "Around us we see many examples of transformation of energy, e.g.\n\n**(a) Electrical energy**\n\nIf we want to give example of the transformation of energy, at first we give examples of electrical energy. Because this energy can be transformed into other energy very easily. Not only this, it is easiest to transmit electrical energy from one place to another. Though around us there are many types of energy, we supply electrical energy first to our residence but we don’t supply other forms of energy. In our daily lives, we see the transformation of electrical energy into mechanical energy in electric fans or other motors. (Though actually magnetic energy is not different from electrical energy, even then in motor or electrical fan we see electrical energy converts first into magnetic energy and then converts into mechanical energy.) In the electric iron or heater it is",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

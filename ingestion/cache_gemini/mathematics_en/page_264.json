@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 264,
+  "pdf_page_no": 269,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 13. 8 years ago, father's age was eight times the age of his son. After 10 years, father's age will be twice the age of the son. What are their present ages?\n\nSolution: Let the present age of father be $x$ years and age of son is $y$ years.\n\n$\\therefore$ by 1st condition, $x - 8 = 8(y - 8) \\dots (1)$\n\nand by 2nd condition, $x + 10 = 2(y + 10) \\dots (2)$\n\nFrom (1) we get, $x - 8 = 8y - 64$\n\nor, $x = 8y - 64 + 8$\n\nor, $x = 8y - 56 \\dots (3)$\n\nFrom (2) we get, $x + 10 = 2y + 20$\n\nor, $8y - 56 + 10 = 2y + 20$ [Putting the value of $x$ from (3)]\n\nor, $8y - 2y = 20 + 56 - 10$\n\nor, $6y = 66$\n\nor, $y = 11$\n\n(3) we get, $x = 8 \\times 11 - 56 = 88 - 56 = 32$\n\n$\\therefore$ at present, Father's age is 32 years and son's age is 11 years.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 14. Twice the breadth of a rectangular garden is 10 metre more than its length and perimeter of the garden is 100 metre. There is a path of width 2 metre around the outside boundary of the garden. To make the path by bricks, it costs TK. 110 per square metre.\n\n1) Assuming the length of the garden to be $x$ metre and its breadth to be $y$ metre, form system of simultaneous equations.\n\n2) Find the length and breadth of the garden.\n\n3) What will be the total cost to make the path by bricks?\n\nSolution:\n\n1) Length of the rectangular garden is $x$ metre and breadth is $y$ metre.\n\n$\\therefore$ by first condition, $2y = x + 10 \\dots (1)$\n\nand by second condition, $2(x + y) = 100 \\dots (2)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Rectangular garden",
+      "figure_no": "12.01",
+      "box_2d": [
+        826,
+        697,
+        906,
+        887
+      ],
+      "description": "A rectangle representing the garden with length x m and breadth y m.",
+      "reading_order_anchor": "Solution:"
+    }
+  ]
+}

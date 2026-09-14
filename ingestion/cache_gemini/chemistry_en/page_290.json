@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 290,
+  "pdf_page_no": 295,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(i) We take curry with rice. The curry does not taste good if we do not use $\\text{NaCl}$ in it.\n\n(ii) $\\text{NaCl}$ is used in industries to prepare $\\text{NaOH}$ compound.\n\n(iii) $\\text{NaCl}$ is used in drug industries to manufacture salines for diarrhoea or dehydration.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Baking Powder",
+      "chunk_type": "theory",
+      "content_markdown": "Chemical name of baking soda or table soda is sodium hydrogen carbonate ($\\text{NaHCO}_3$). Baking soda is also called sodium bicarbonate. Baking powder is produced when tartaric acid ($\\text{C}_4\\text{H}_6\\text{O}_6$) is mixed with baking soda ($\\text{NaHCO}_3$).\n\nBaking powder is usually used in making cakes.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Preparation of Baking Soda",
+      "chunk_type": "theory",
+      "content_markdown": "Baking Soda can be prepared from ammonia gas, salt, water and carbon-di-oxide. At first, saturated solution of $\\text{NaCl}$ is prepared by dissolving $\\text{NaCl}$ in water. Again this solution is saturated by blowing $\\text{NH}_3$ gas into the saturated solution. Then carbon-di-oxide gas is blown into the $\\text{NaCl}$ solution saturated by $\\text{NH}_3$. At this stage, at first $\\text{CO}_2$, $\\text{NH}_3$, $\\text{H}_2\\text{O}$ together produce Ammonium Hydrogen Carbonate ($\\text{NH}_4\\text{HCO}_3$). Then the ammonium hydrogen carbonate reacts with sodium chloride and produces sodium hydrogen carbonate or baking soda.\n\n$$\\text{CO}_2 + \\text{NH}_3 + \\text{H}_2\\text{O} \\longrightarrow \\text{NH}_4\\text{HCO}_3$$\n\n$$\\text{NH}_4\\text{HCO}_3 + \\text{NaCl} \\longrightarrow \\text{NaHCO}_3 + \\text{NH}_4\\text{Cl}$$\n\nBaking soda is separated from the reaction pot and then tartaric acid is mixed with it. This mixture is called baking powder.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Uses of Baking Soda",
+      "chunk_type": "theory",
+      "content_markdown": "During making cakes, baking powder is mixed with the flour of cake and heated. Baking soda reacts with tartaric acid ($\\text{C}_4\\text{H}_6\\text{O}_6$) in the mixture and produces sodium tartaret ($\\text{C}_4\\text{H}_4\\text{Na}_2\\text{O}_6$), $\\text{CO}_2$ gas and $\\text{H}_2\\text{O}$. Cakes rise up because of this $\\text{CO}_2$ gas.\n\n$$2\\text{NaHCO}_3 + \\text{C}_4\\text{H}_6\\text{O}_6 \\longrightarrow \\text{C}_4\\text{H}_4\\text{Na}_2\\text{O}_6 + 2\\text{CO}_2 + 2\\text{H}_2\\text{O}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 202,
+  "pdf_page_no": 207,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** Sound of frequency $1\\text{ kHz}$ is produced by a tuning fork. It was allowed to pass through air, water and iron. It was found that the velocity of sound in air is $334\\text{ m/s}$, in water is $1493\\text{ m/s}$ and in iron $5130\\text{ m/s}$. What are the wavelengths in these mediums?\n\n**Answer:**\n\nVelocity of sound $= \\lambda f$, here $\\lambda$ is the wavelength, and $f$ is the frequency.\nHere frequency is $1\\text{ kHz}$ or $1000\\text{ Hz}$.\n$$\\lambda = \\frac{v}{f}$$\n\n$$\\text{In air,} \\quad \\lambda = \\frac{334\\text{ m s}^{-1}}{10^3\\text{ s}^{-1}} = 0.334\\text{ m}$$\n\n$$\\text{In water,} \\quad \\lambda = \\frac{1493\\text{ m s}^{-1}}{10^3\\text{ s}^{-1}} = 1.49\\text{ m}$$\n\n$$\\text{In iron,} \\quad \\lambda = \\frac{5130\\text{ m s}^{-1}}{10^3\\text{ s}^{-1}} = 5.13\\text{ m}$$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "7.3.1",
+      "section_title": "Echo",
+      "chunk_type": "theory",
+      "content_markdown": "Since sound is one type of wave, it can have reflection. If someone speaks in a big empty building it creates a reverberating sound, which is known as 'Echo'. This is due to reflection. Within the building the distance is not enough to hear the sound separately. When we hear something the feeling persist for around $0.1\\text{ s}$, so to hear two sounds separately, it needs separation of $0.1\\text{ s}$ differences between two sounds. Velocity of sound is $330\\text{ m/s}$, therefore to create a difference of $0.1\\text{ s}$, sound has to travel at least $33\\text{ m}$.\n\nIf we stand in front of a big wall, a building, or a high hill at least half of this distance ($16.5\\text{ m}$), the sound will take $0.1\\text{ s}$ to come back after being reflected and we will hear the reflection of sound or echo.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

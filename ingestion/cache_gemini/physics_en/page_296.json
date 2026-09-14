@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 296,
+  "pdf_page_no": 301,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. Describe the construction of a gold leaf electroscope.\n\n12. Describe how a gold leaf electroscope can be charged positively.\n\n13. How can the nature of charge of a charged body be determined by a gold leaf electroscope?\n\n14. What are the factors on which the electrostatic force between two charges depends?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. $4\\text{ C}$ and $-1\\text{ C}$ charges are kept $1\\text{ m}$ apart. At which point of the line joining them, is the magnitude of the electric field zero?\n\n2. An electron in a hydrogen atom revolves around the nucleus due to Coulomb's force. The mass of electron is $9.11 \\times 10^{-31}\\text{ kg}$ and proton is $1.67 \\times 10^{-27}\\text{ kg}$ and for this there is also a gravitational force between them. Which of these two forces is greater and by how much?\n\n3. Draw the electric lines of force for the two charges mentioned in question number 1.\n\n4. Equipotential lines for opposite charges are shown in Figure 10.15, show electric field from there.\n\n5. Electric field for two charges is shown in Figure 10.13, draw the potential.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Choose the correct answer\n\n1. The name of the apparatus used to determine the presence of charge is —\na) Ammeter b) Voltmeter\nc) Microscope d) Electroscope",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

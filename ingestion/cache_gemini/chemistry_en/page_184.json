@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 184,
+  "pdf_page_no": 189,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{Cl}_2 + \\text{H}_2\\text{O} \\longrightarrow \\text{HCl} + \\text{HOCl}$$ $$\\text{Chlorine} + \\text{Water} \\longrightarrow \\text{Hydrochloric acid} + \\text{Hypochlorous acid}$$ Since Chlorine gas and water undergo a reaction and produce two acids, the blue litmus turns red.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Electrolysis of Concentrate Sodium Chloride Solution",
+      "chunk_type": "theory",
+      "content_markdown": "In concentrated sodium chloride solution, $\\text{NaCl}$ becomes ionized and produces $\\text{Na}^+$ and $\\text{Cl}^-$ ions. $$\\text{NaCl} \\longrightarrow \\text{Na}^+ + \\text{Cl}^-$$ The difference from molten sodium chloride is that the solution contains $\\text{H}^+$ and $\\text{OH}^-$ ions too as water is partially ionized here. $$\\text{H}_2\\text{O} \\longrightarrow \\text{H}^+ + \\text{OH}^-$$ During the electrolysis in this electrolytic cell, $\\text{Na}^+$ and $\\text{H}^+$ will go towards the cathode together. We know, $\\text{H}^+$ ion is more prone to accept electrons than the $\\text{Na}^+$ ion. So, $\\text{H}^+$ ion accepts one electron at the cathode and becomes a $\\text{H}$ atom. Two $\\text{H}$ atoms again join together and become a $\\text{H}_2$ molecule. The reaction at the cathode: $$\\text{H}^+ + e^- \\longrightarrow \\text{H} \\quad \\text{(Reduction reaction)}$$ $$\\text{H} + \\text{H} \\longrightarrow \\text{H}_2$$ $\\text{Cl}^-$ and $\\text{OH}^-$ go simultaneously towards the anode. We know, $\\text{OH}^-$ ion is more prone to donate an electron than $\\text{Cl}^-$. However, since the molarity of $\\text{Cl}^-$ in the solution is higher than $\\text{OH}^-$ ion, so it donates electrons at the anode earlier than $\\text{OH}^-$. One $\\text{Cl}^-$ ion donates an electron at the anode and becomes a $\\text{Cl}$ atom. Two $\\text{Cl}$ atoms join together producing a $\\text{Cl}_2$ molecule. The reaction at the anode: $$\\text{Cl}^- \\longrightarrow \\text{Cl} + e^- \\quad \\text{(Oxidation)}$$ $$\\text{Cl} + \\text{Cl} \\longrightarrow \\text{Cl}_2$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

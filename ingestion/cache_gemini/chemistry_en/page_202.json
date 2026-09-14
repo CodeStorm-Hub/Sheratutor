@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 202,
+  "pdf_page_no": 207,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Apparatus and Chemicals:** Beaker, ammonium chloride ($\text{NH}_4\text{Cl}$), distilled water, glass rod and thermometer.\n\n**Procedure:**\n\nTake 50 gram distilled water in the beaker. Record the temperature of water with a thermometer. Add 10 grams of ammonium chloride in the water.\n\nStir the ammonium chloride with the glass rod so that the substance is fully dissolved. Record the temperature as soon as it is dissolved.\n\n**Result:** The data collected will show that the temperature of water decreased when ammonium chloride was dissolved in it. That proves the reaction as endothermic.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": "The observation of change of temperature adding lime in water",
+      "chunk_type": "theory",
+      "content_markdown": "**Principle:** Lime or calcium oxide added to water undergoes the following reaction:\n\n$$\\text{CaO} + \\text{H}_2\\text{O} \\longrightarrow \\text{Ca(OH)}_2 + \\text{Heat}$$\n\n$$\\text{Calcium oxide} \\quad \\text{Water} \\quad \\text{Calcium hydroxide}$$\n\nThis reaction is an exothermic reaction. Therefore, the temperature of water along with calcium hydroxide is increased.\n\n**Apparatus and Chemicals:** beaker, calcium oxide (lime), distilled water, glass rod and thermometer.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.17: $\text{NH}_4\text{Cl}$ solution in beaker.",
+      "figure_no": "8.17",
+      "box_2d": [
+        147,
+        513,
+        311,
+        831
+      ],
+      "description": "Scientific drawing showing the dissolution of ammonium chloride in a beaker with a thermometer, indicating a change.",
+      "reading_order_anchor": "Apparatus and Chemicals"
+    }
+  ]
+}

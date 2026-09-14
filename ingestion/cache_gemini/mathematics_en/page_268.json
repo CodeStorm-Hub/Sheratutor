@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 268,
+  "pdf_page_no": 273,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. How much taka will be the total cost for decorating the floor with mosaic?\n1) 72000 2) 43200 3) 28800 4) 21600",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solve by forming simultaneous equations (10 — 17):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. If 1 is added to each of numerator and denominator of a fraction, the fraction will be $\\frac{4}{5}$. Again, if 5 is subtracted from each of numerator and denominator, the fraction will be $\\frac{1}{2}$. Find the fraction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. If 1 is subtracted from numerator and 2 is added to denominator of a fraction, the fraction will be $\\frac{1}{2}$. Again, if 7 is subtracted from numerator and 2 is subtracted from denominator, the fraction will be $\\frac{1}{3}$. Find the fraction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. The digit of the units place of a number consisting of two digits is 1 more than three times the digit of tens place. But if the places of the digits are interchanged, the number thus found will be equal to eight times the sum of the digits. What is the number?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. Difference of the digits of a number consisting of two digits is 4. If the places of the digits are interchanged, sum of the numbers so found and the original number will be 110 ; find the number.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. Present age of mother is four times the sum of the ages of her two daughters. After 5 years, mother’s age will be twice the sum of the ages of the two daughters. What is the present age of the mother ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. If the length of a rectangular region is decreased by 5 metre and breadth is increased by 3 metre, the area will be less by 9 square metre. Again, if the length is increased by 3 metre and breadth is increased by 2 metre, the area will be increased by 67 square metre. Find the length and breadth of the rectangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. A boat, rowing in favour of current, goes 15 km per hour and rowing against the current goes 5 km per hour. Find the speed of the boat and current.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. A labourer of a garments serves on the basis of monthly salary. At the end of every year she gets a fixed increment. Her monthly salary becomes Tk. 4500 after 4 years and Tk. 5000 after 8 years. Find the salary at the beginning of her service and amount of annual increment of salary.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

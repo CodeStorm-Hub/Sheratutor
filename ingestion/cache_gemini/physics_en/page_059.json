@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 59,
+  "pdf_page_no": 64,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "## Multiple choice questions\n\nPut the tick ($\\sqrt{ }$ ) mark on the correct answer\n\n1. What is the unit of acceleration?\n   a) $\\text{ms}^{-1}$ \n   b) $\\text{ms}^{-2}$\n   c) $\\text{NS}$ \n   d) $\\text{kgs}^{-2}$\n\n2. What type of motion do the hands of a clock have?\n   a) linear motion \n   b) elliptical motion\n   c) periodic motion \n   d) vibratory motion\n\n3. The distance traveled in a given time by a freely falling body from rest will be\n   a) proportional to the time\n   b) proportional to the square of that time\n   c) Inversely proportional to that time\n   d) proportional to the square root of that time\n\n4. A body moves with a uniform acceleration starting from rest. What will be the distance travelled by the body at a given time?\n   \n   (i) $s = \\frac{(u+v)}{2} t$\n   \n   (ii) $s = ut + \\frac{1}{2}at^2$\n   \n   (iii) $s = ut + 2at^2$\n\n5. Which of the following is the correct?\n   a) i \n   b) ii \n   c) ii & iii \n   d) i & ii\n\n5. Which of the velocity-time graph below represents the graph of a freely falling body?",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.11",
+      "figure_no": "2.11",
+      "box_2d": [
+        198,
+        574,
+        357,
+        874
+      ],
+      "description": "Velocity-time graph showing points A, B, C, D on a curve.",
+      "reading_order_anchor": "Multiple choice questions"
+    },
+    {
+      "caption": "Figure 2.12",
+      "figure_no": "2.12",
+      "box_2d": [
+        759,
+        116,
+        911,
+        859
+      ],
+      "description": "Four different velocity-time graphs labeled a, b, c, and d.",
+      "reading_order_anchor": "Multiple choice questions"
+    }
+  ]
+}

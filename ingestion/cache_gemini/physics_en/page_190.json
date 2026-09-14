@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 190,
+  "pdf_page_no": 195,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Hang a stone of mass $10\\text{ gm}$ from a string $1\\text{ m}$ long. What is its time period?\n\n**Answer:**\n$$T = 2\\pi \\sqrt{\\frac{l}{g}} = 2\\pi \\sqrt{\\frac{1}{9.8}} \\text{ s} = 2.0\\text{ s}$$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The time period remains the same whether the mass of the stone is $10\\text{ gm}$ or not. If you wish, by measuring the time period you can determine the value of $g$ just now. Try and see!\n\nIf a mass is attached to the lower end of a spring, the mass will extend the spring and. This state of the spring is called the equilibrium condition (Figure 7.01-0).\n\nNow we pull the mass downward by a short distance $a$ and release it (Figure 7.01). Then the mass will moving upward, crossing the equilibrium condition, it will move upward by a distance $a$. Then again it will be moving downward, crossing the equilibrium condition, it will come down and this will continue.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When the mass completes the positions $2 \\rightarrow 3 \\rightarrow 4 \\rightarrow 5$ and comes to the position (6) in the same way (moving upward with velocity $v$) from where it",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.01: (0) is equilibrium condition. After pulling at position (1), the spring is oscillating in simple harmonic motion when it is released.",
+      "figure_no": "7.01",
+      "box_2d": [
+        576,
+        116,
+        775,
+        885
+      ],
+      "description": "Diagram illustrating a mass-spring system in simple harmonic motion across 10 stages labeled from (0) to (9).",
+      "reading_order_anchor": "Now we pull the mass downward by a short distance a and release it"
+    }
+  ]
+}

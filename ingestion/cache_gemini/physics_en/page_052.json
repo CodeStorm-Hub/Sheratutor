@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 52,
+  "pdf_page_no": 57,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "find the distance of any time from $0$ to $5\\text{ s}$. For example the distance of the object in $2.5\\text{ second}$ is approximately $6.25\\text{ m}$. If we have a velocity versus time graph, from there we can find the velocity easily. Velocity of an object is the rate of change of its position. So we can see from the graph the object has travelled a distance of $0\\text{ m}$ to $1\\text{ m}$ in $0$ to $1\\text{ second}$. Therefore the average velocity at this time,\n\n$$v = \\frac{(1 - 0)\\text{ m}}{1\\text{ s}} = 1\\text{ m/s}$$\n\nWe can use this average velocity for the mid-time value of $0$ to $1\\text{ s}$. Similarly the average velocity within $1$ to $2\\text{ s}$ is,\n\n$$v = \\frac{(4 - 1)\\text{ m}}{(2 - 1)\\text{ s}} = 3\\text{ m/s}$$\n\nWe can use this velocity as data for the time $1.5\\text{ s}$ within $1$ to $2\\text{ s}$. Similarly we see the average velocity between $2\\text{ s}$ and $3\\text{ s}$ is $5\\text{ m/s}$, between $3$ and $4\\text{ s}$ is $7\\text{ m/s}$ and between $4\\text{ s}$ and $5\\text{ s}$ is $9\\text{ m/s}$. We see these data points are on a straight line on a graph paper and we can connect the points by drawing a straight line. Although we have put the data for time $0.5$, $1.5$, $2.5$, $3.5$ and $4.5\\text{ s}$, but we can find the velocity at any time after drawing a straight line through these points. For example at time $3\\text{ s}$ the velocity is $6\\text{ m/s}$.\n\nWe will be able to find the acceleration in the same way after drawing the velocity -time graph of figure $2.09$. Acceleration is the rate of change of velocity. Since the velocity- time graph is a straight line, so in this case we will get the same value of the acceleration at any point on the graph. For example the rate of change of velocity in between the time $2\\text{ s}$ to $3\\text{ s}$ is,\n\n$$a = \\frac{(6 - 4)\\text{ m/s}}{(3 - 2)\\text{ s}} = 2\\text{ m/s}^2$$\n\nFor any other time if we calculate the acceleration, the same value will be found. It is shown in the acceleration- time graph in figure $2.09$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

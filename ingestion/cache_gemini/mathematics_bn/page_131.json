@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 131,
+  "pdf_page_no": 136,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গ) দেওয়া আছে $AB = AC$ সুতরাং $\\angle ABC = \\angle ACB$\nঅর্থাৎ $\\angle DBC = \\angle ACB$\nঅঙ্কন অনুসারে $AC = AD$ সুতরাং $\\angle ADC = \\angle ACD$\nঅর্থাৎ $\\angle BDC = \\angle ACD$\n$\\triangle BCD$ এ\n$\\angle BDC + \\angle DBC + \\angle BCD =$ দুই সমকোণ [ত্রিভুজের তিন কোণের সমষ্টি দুই সমকোণের সমান]\nবা, $\\angle ACD + \\angle ACB + \\angle BCD =$ দুই সমকোণ\nবা, $\\angle BCD + \\angle BCD =$ দুই সমকোণ\nবা, $2\\angle BCD =$ দুই সমকোণ।\n$\\therefore \\angle BCD =$ এক সমকোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. $PQR$ একটি ত্রিভুজ। $PA, QB$ ও $RC$ তিনটি মধ্যমা $O$ বিন্দুতে ছেদ করেছে।\nক) প্রদত্ত তথ্যের আলোকে চিত্র আঁক।\nখ) প্রমাণ কর যে, $PQ + PR > QO + RO$\nগ) প্রমাণ কর যে, $PA + QB + RC < PQ + QR + PR$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\nক)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) চিত্র ‘ক’ থেকে প্রমাণ করতে হবে যে, $PQ + PR > QO + RO$\nপ্রমাণ: ত্রিভুজের যেকোনো দুই বাহুর সমষ্টি তার ৩য় বাহু অপেক্ষা বৃহত্তর।\n$\\triangle PQB$ এ $PQ + PB > QB$\nআবার $\\triangle BOR$ এ $BR + BO > RO$\n$\\therefore PQ + PB + BR + BO > QB + RO$\nবা, $PQ + PR + BO > QO + OB + RO$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ক: ত্রিভুজ PQR এর মধ্যমা",
+      "figure_no": "ক",
+      "box_2d": [
+        635,
+        418,
+        750,
+        582
+      ],
+      "description": "ত্রিভুজ PQR এর তিনটি মধ্যমা PA, QB এবং RC পরস্পর O বিন্দুতে ছেদ করেছে।",
+      "reading_order_anchor": "সমাধান:"
+    }
+  ]
+}

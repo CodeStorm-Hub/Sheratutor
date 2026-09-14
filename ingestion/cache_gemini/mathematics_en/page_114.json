@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 114,
+  "pdf_page_no": 119,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore x + 65 = 0 \\text{ or } x - 30 = 0$$\n\nIf $x + 65 = 0$, $x = -65$\n\nAgain, if $x - 30 = 0$, $x = 30$\n\nSince the number of students, i.e. $x$ cannot be negative,\n\nHence, $x \\neq -65$\n\n$\\therefore x = 30$\n\n$\\therefore$ in the first case, average $= \\frac{1950}{30} = 65$ and in the second case,\n\naverage $= \\frac{1984}{31} = 64$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.2",
+      "section_title": "Exercises 5.2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Assuming $x$ as the variable in the equation $a^2x + b = 0$ which one of the following is the degree of the equation?\n1) 3 2) 2 3) 1 4) 0\n\n2. Which one of the following is an identity?\n1) $(x + 1)^2 + (x - 1)^2 = 4x$ 2) $(x + 1)^2 + (x - 1)^2 = 2(x^2 + 1)$\n3) $(a + b)^2 + (a - b)^2 = 2ab$ 4) $(a - b)^2 = a^2 + 2ab + b^2$\n\n3. How many roots are there in the equation $(x - 4)^2 = 0$?\n1) 1 2) 2 3) 3 4) 4\n\n4. Which one of the following are the two roots of the equation $x^2 - x - 12 = 0$?\n1) 3, 4 2) 3, -4 3) -3, 4 4) -3, -4\n\n5. What is the coefficient of $x$ in the equation $3x^2 - x + 5 = 0$?\n1) 3 2) 2 3) 1 4) -1\n\n6. If the product of the two algebraic expressions $x$ and $y$ is $xy = 0$, then\n(i) $x = 0$ or $y = 0$\n(ii) $x = 0$ and $y \\neq 0$\n(iii) $x \\neq 0$ and $y = 0$\nWhich one of the following is correct?",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

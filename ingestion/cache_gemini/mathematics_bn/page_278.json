@@ -1,0 +1,109 @@
+{
+  "printed_page_no": 278,
+  "pdf_page_no": 283,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": "14.5",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. প্রমাণ কর যে, দুইটি ত্রিভুজের প্রত্যেকটি যদি তৃতীয় একটি ত্রিভুজের সদৃশ হয়, তবে তারা পরস্পর সদৃশ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.6",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. প্রমাণ কর যে, দুইটি সমকোণী ত্রিভুজের একটির একটি সূক্ষ্মকোণ অপরটির একটি সূক্ষ্মকোণের সমান হলে, ত্রিভুজ দুইটি সদৃশ হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.7",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. প্রমাণ কর যে, সমকোণী ত্রিভুজের সমকৌণিক শীর্ষ থেকে অতিভুজের উপর লম্ব আঁকলে যে দুইটি সমকোণী ত্রিভুজ উৎপন্ন হয়, তারা পরস্পর সদৃশ এবং প্রত্যেকে মূল ত্রিভুজের সদৃশ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.8",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. পাশের চিত্রে, $\\angle B = \\angle D$ এবং $CD = 4AB$। প্রমাণ কর যে, $BD = 5BL$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.9",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. $ABCD$ সামান্তরিকের $A$ শীর্ষ দিয়ে অঙ্কিত একটি রেখাংশ $BC$ বাহুকে $M$ বিন্দুতে এবং $DC$ বাহুর বর্ধিতাংশকে $N$ বিন্দুতে ছেদ করে। প্রমাণ কর যে, $BM \\times DN$ একটি ধ্রুবক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.10",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. পাশের চিত্রে $BD \\perp AC$ এবং $DQ = BQ = 2AQ = \\frac{1}{2}QC$। প্রমাণ কর যে, $DA \\perp DC$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.11",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. $\\triangle ABC$ ও $\\triangle DEF$ এর $\\angle A = \\angle D$। প্রমাণ কর যে, $\\triangle ABC : \\triangle DEF = AB \\cdot AC : DE \\cdot DF$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.12",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $\\triangle ABC$ এর $\\angle A$ এর সমদ্বিখণ্ডক $AD, BC$ কে $D$ বিন্দুতে ছেদ করেছে। $DA$ এর সমান্তরাল $CE$ রেখাংশ বর্ধিত $BA$ বাহুকে $E$ বিন্দুতে ছেদ করেছে।\n\nক) তথ্য অনুসারে চিত্রটি অঙ্কন কর।\nখ) প্রমাণ কর যে, $BD : DC = BA : AC$\nগ) $BC$ এর সমান্তরাল কোনো রেখাংশ $AB$ ও $AC$ কে যথাক্রমে $P$ ও $Q$ বিন্দুতে ছেদ করলে, প্রমাণ কর যে, $BD : DC = BP : CQ$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.13",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. চিত্রে $ABC$ এবং $DEF$ দুইটি সদৃশ ত্রিভুজ।\n\nক) ত্রিভুজ দুইটির অনুরূপ বাহু ও অনুরূপ কোণগুলোর নাম লিখ।\nখ) প্রমাণ কর যে, $\\frac{\\triangle ABC}{\\triangle DEF} = \\frac{AB^2}{DE^2} = \\frac{AC^2}{DF^2} = \\frac{BC^2}{EF^2}$\nগ) যদি $BC = 3$ সে.মি., $EF = 8$ সে.মি., $\\angle B = 60^\\circ$, $\\frac{BC}{AB} = \\frac{3}{2}$ এবং $\\triangle ABC$ এর ক্ষেত্রফল $3$ বর্গ সে.মি. হয়, তবে $\\triangle DEF$ অঙ্কন কর এবং এর ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৪.০৮",
+      "figure_no": "14.08",
+      "box_2d": [
+        245,
+        735,
+        355,
+        875
+      ],
+      "description": "ত্রিভুজ ABC এবং ত্রিভুজ BCD এর জ্যামিতিক চিত্র",
+      "reading_order_anchor": "৮. পাশের চিত্রে, $\\angle B = \\angle D$ এবং $CD = 4AB$। প্রমাণ কর যে, $BD = 5BL$।"
+    },
+    {
+      "caption": "চিত্র ১৪.১০",
+      "figure_no": "14.10",
+      "box_2d": [
+        405,
+        735,
+        515,
+        875
+      ],
+      "description": "ত্রিভুজ ABC এবং ত্রিভুজ BCD এর জ্যামিতিক চিত্র যেখানে BD লম্ব AC",
+      "reading_order_anchor": "১০. পাশের চিত্রে $BD \\perp AC$ এবং $DQ = BQ = 2AQ = \\frac{1}{2}QC$। প্রমাণ কর যে, $DA \\perp DC$।"
+    },
+    {
+      "caption": "চিত্র ১৪.১৩",
+      "figure_no": "14.13",
+      "box_2d": [
+        765,
+        565,
+        845,
+        865
+      ],
+      "description": "দুইটি সদৃশ ত্রিভুজ ABC এবং DEF",
+      "reading_order_anchor": "১৩. চিত্রে $ABC$ এবং $DEF$ দুইটি সদৃশ ত্রিভুজ।"
+    }
+  ]
+}

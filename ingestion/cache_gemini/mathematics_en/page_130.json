@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 130,
+  "pdf_page_no": 135,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the figure, two straight lines $AB$ and $CD$ are cut by a straight line $EF$ at $P$ and $Q$. The straight line $EF$ is a transversal of $AB$ and $CD$. The transversal has made eight angles $\\angle 1, \\angle 2, \\angle 3, \\angle 4, \\angle 5, \\angle 6, \\angle 7, \\angle 8$ with the lines $AB$ and $CD$. Among the angles\n\n1) $\\angle 1$ and $\\angle 5$, $\\angle 2$ and $\\angle 6$, $\\angle 3$ and $\\angle 7$, $\\angle 4$ and $\\angle 8$ are corresponding angles.\n\n2) $\\angle 3$ and $\\angle 6$, $\\angle 4$ and $\\angle 5$ are alternate angles.\n\n3) $\\angle 4$, $\\angle 6$ are interior angles on the right.\n\n4) $\\angle 3$, $\\angle 5$ are interior angles on the left.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In a plane two straight lines may intersect or they are parallel. The lines intersect if there exists a point which is common to both lines. Otherwise, the lines are parallel. Note that two different straight lines may at most have only one point in common.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The parallelism of two straight lines in a plane may be defined in three different ways:\n\n1) The two straight lines never intersect each other (even if extended to infinity).\n\n2) Every point on one line lies at equal smallest distance from the other.\n\n3) The corresponding angles made by a transversal of the pair of lines are equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "According to definition (a) in a plane two straight lines are parallel, if they do not intersect each other. Two line segments taken as parts of the parallel lines are also parallel.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Transversal of two lines",
+      "figure_no": "6.01",
+      "box_2d": [
+        85,
+        338,
+        275,
+        658
+      ],
+      "description": "A diagram showing two parallel lines AB and CD intersected by a transversal line EF, creating eight numbered angles.",
+      "reading_order_anchor": "In the figure, two straight lines $AB$ and $CD$ are cut by a straight line $EF$ at $P$ and $Q$."
+    }
+  ]
+}

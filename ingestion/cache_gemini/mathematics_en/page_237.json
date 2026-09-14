@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 237,
+  "pdf_page_no": 242,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 15. The area of a rectangular land is 12 hectors and length of its diagonal is 500 metres. The ratio of length and breadth of this land to that of other land are 3 : 4 and 2 : 3, respectively.\n\n1) What is the area of the given land in square metre?\n\n2) What is the area of the other land?\n\n3) What is the breadth of the given land?\n\nSolution:\n\n1) We know, 1 hector = 10,000 square metres.\n\n$\\therefore 12 \\text{ hectors} = 12 \\times 10,000 = 120000 \\text{ square metres}$\n\n2) Given that, the ratio of length and breadth of the given land to that of other land are 3 : 4 and 2 : 3, respectively.\n\nLet length of the given land be $3x$ metres and breadth be $2y$ metres.\n\nTherefore, the length of the other land is $4x$ metres and breadth is $3y$ metres.\n\n$\\therefore$ the area of the given land is $= 3x \\cdot 2y = 6xy$ square metres and the area of the other land is $= 4x \\cdot 3y = 12xy$ square metres.\n\nAccording to the given question, $6xy = 120000$ or, $xy = 20000$ $\\therefore$ the area of the other land is $= 12xy = 12 \\times 20000 = 240000$ square metres.\n\n3) Let the length of the given land be $3x$ metres and the breadth be $2y$ metres.\n\nTherefore, the length of its one diagonal is $\\sqrt{(3x)^2 + (2y)^2}$ metres.\n\nWe get from the previous (b) problem, $xy = 20000$\n\nAccording to the question, $\\sqrt{(3x)^2 + (2y)^2} = 500$\n\nor, $9x^2 + 4y^2 = 250000$\n\nor, $(3x + 2y)^2 - 2 \\cdot 3x \\cdot 2y = 250000$\n\nor, $(3x + 2y)^2 - 12xy = 250000$\n\nor, $(3x + 2y)^2 - 12 \\times 20000 = 250000$\n\nor, $(3x + 2y)^2 = 250000 + 240000$\n\nor, $(3x + 2y)^2 = 490000$\n\nor, $3x + 2y = 700 \\dots (1)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

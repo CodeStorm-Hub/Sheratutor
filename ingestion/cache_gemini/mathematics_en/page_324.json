@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 324,
+  "pdf_page_no": 329,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $\\sqrt{4a^2 - 3600} = 80$\nor, $4a^2 - 3600 = 6400$ [by squaring]\nor, $4a^2 = 10000$\nor, $a^2 = 2500$\n$\\therefore a = 50$\nThe length of equal sides of the triangle is 50 cm.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. From a certain place two roads run in two directions making an angle of $120^\\circ$. From that place, persons move in the two directions with speed of 10 km per hour and 8 km per hour respectively. What will be the direct distance between them after 5 hours?\n\nSolution: Let two persons start from $A$ with velocities 10 km/hour and 8 km/hour respectively and reach $B$ and $C$ after 5 hours. Then after 5 hours, the direct distance between them is $BC$. From $C$ perpendicular $CD$ is drawn on $BA$ produced.\n$\\therefore AB = 5 \\times 10 \\text{ km} = 50 \\text{ km}$, $AC = 5 \\times 8 \\text{ km} = 40 \\text{ km}$\nand $\\angle BAC = 120^\\circ$\n$\\therefore \\angle DAC = 180^\\circ - 120^\\circ = 60^\\circ$\n$\\triangle ACD$ is right-angled.\n$\\therefore \\frac{CD}{AC} = \\sin 60^\\circ$ or, $CD = AC \\sin 60^\\circ = 40 \\times \\frac{\\sqrt{3}}{2} = 20\\sqrt{3}$\nand $\\frac{AD}{AC} = \\cos 60^\\circ$ or, $AD = AC \\cos 60^\\circ = 40 \\times \\frac{1}{2} = 20$\nAgain, from right-angled triangle $BCD$ we get,\n$BC^2 = BD^2 + CD^2 = (BA + AD)^2 + CD^2$\n$= (50 + 20)^2 + (20\\sqrt{3})^2 = 4900 + 1200 = 6100$\n$\\therefore BC = 78.1 \\text{ (approx.)}$\nThe required distance is 78.1 km (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Example 7. Consider the diagram given and —",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Find the length of the side $BC$.\n2) Find the value of $BD$?\n3) Find the ratio of areas of $\\triangle ABD$ and $\\triangle BCD$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Diagram for Example 6",
+      "figure_no": "16.01",
+      "box_2d": [
+        485,
+        650,
+        645,
+        900
+      ],
+      "description": "A geometric diagram showing a triangle ABC with an external perpendicular CD drawn from C to the extension of line segment BA, forming a right-angled triangle BCD.",
+      "reading_order_anchor": "Solution: Let two persons start from A with velocities 10 km/hour and 8 km/hour respectively and reach B and C after 5 hours."
+    }
+  ]
+}

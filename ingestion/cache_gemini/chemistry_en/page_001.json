@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 1,
+  "pdf_page_no": 6,
+  "chapter_no": 1,
+  "chapter_title": "Concepts of Chemistry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Once you get this book in your hand, a number of questions will be raised in your minds. - What is chemistry? Why should we learn chemistry? How will we be benefited from chemistry? Does it have any relation to other branches of science? - We shall learn the answers to these questions in this chapter.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Laboratory glassware containing colored chemical solutions",
+      "figure_no": "None",
+      "box_2d": [
+        231,
+        96,
+        624,
+        904
+      ],
+      "description": "A photograph of various laboratory glassware including a beaker, Erlenmeyer flasks, and a graduated cylinder filled with colorful liquids (blue, yellow, green, red).",
+      "reading_order_anchor": "Once you get this book in your hand, a number of questions will be raised in your minds."
+    }
+  ]
+}

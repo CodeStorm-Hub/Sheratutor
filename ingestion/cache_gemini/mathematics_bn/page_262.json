@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 262,
+  "pdf_page_no": 267,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$বা, 12 \\times 2^{n-1} = 768$$\n$$বা, 2^{n-1} = \\frac{768}{12} = 64$$\n$$বা, 2^{n-1} = 2^6$$\n$$বা, n - 1 = 6$$\n$$\\therefore n = 7$$\nসুতরাং, ধারাটির সমষ্টি $$= \\frac{a(r^n - 1)}{(r - 1)}$$, যখন $$r > 1$$\n$$= \\frac{12(2^7 - 1)}{2 - 1} = 12 \\times (128 - 1) = 12 \\times 127 = 1524$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. $$1 + \\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\dots$$ ধারাটির প্রথম আটটি পদের সমষ্টি নির্ণয় কর।\n\nসমাধান: প্রদত্ত ধারাটির প্রথম পদ $$a = 1$$, সাধারণ অনুপাত $$r = \\frac{\\frac{1}{2}}{1} = \\frac{1}{2} < 1$।\n$$\\therefore$$ ইহা একটি গুণোত্তর ধারা। এখানে পদ সংখ্যা $$n = 8$$\nআমরা জানি, গুণোত্তর ধারার $$n$$-সংখ্যক পদের সমষ্টি\n$$S_n = \\frac{a(1 - r^n)}{1 - r}$$, যখন $$r < 1$$\nসুতরাং, ধারাটির ৮ টি পদের সমষ্টি $$S_8 = \\frac{1 \\times \\left\\{ 1 - \\left( \\frac{1}{2} \\right)^8 \\right\\}}{1 - \\frac{1}{2}} = \\frac{1 - \\frac{1}{256}}{\\frac{1}{2}}$$\n$$= 2\\left( \\frac{256 - 1}{256} \\right) = \\frac{255}{128} = 1\\frac{127}{128}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উদাহরণ ১২. পলাশ সরকার 2005 সালের জানুয়ারি মাসে বার্ষিক 120000 টাকা বেতনে চাকরিতে যোগদান করলেন। তাঁর বেতন বৃদ্ধির পরিমাণ প্রতি বছর 5000 টাকা। প্রতি বছর তাঁর বেতন থেকে 10% ভবিষ্যতহবিল হিসেবে কর্তন করা হয়। তিনি বেতন থেকে বার্ষিক 12% চক্রবৃদ্ধি মুনাফা হারে বছর শেষে একটি ব্যাংকে 12000 টাকা জমা রাখেন। তিনি 2030 সালের 31 ডিসেম্বর চাকরি থেকে অবসরে যাবেন।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) পলাশ সরকারের মূল বেতন কোন ধারাকে সমর্থন করে? ধারাটি লিখ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) ভবিষ্যতহবিল ব্যতীত তিনি বেতন হিসেবে চাকরি জীবনে মোট কত টাকা পাবেন।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) 2031 সালের 31 ডিসেম্বর ঐ ব্যাংকে মুনাফাসহ তাঁর মোট কত টাকা জমা হবে?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

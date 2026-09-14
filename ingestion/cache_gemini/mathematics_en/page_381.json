@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 381,
+  "pdf_page_no": 386,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "24. $\\frac{a^2 - b^2}{a^2 + b^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.1",
+      "section_title": "Exercises 9.2",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. $\\frac{1}{2}$ 9. $\\frac{3}{4}$ 10. $\\frac{23}{5}$ 11. $\\frac{2\\sqrt{2}}{3}$ 19. $A = 30^\\circ, B = 30^\\circ$ 20. $A = 30^\\circ$ 21. $A = 37\\frac{1}{2}^\\circ, B = 7\\frac{1}{2}^\\circ$ 23. $\\theta = 90^\\circ$ 24. $\\theta = 60^\\circ$ 25. $\\theta = 60^\\circ$ 26. $\\theta = 45^\\circ, 60^\\circ$ 27. $\\frac{7}{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.2",
+      "section_title": "Exercises 10",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. 45.033 m. (approx) 11. 34.641 m. (approx) 12. 12.728 m. (approx) 13. 10 m. 14. 21.651 m. (approx) 15. 141.962 m. (approx) 16. 27.713 m. (approx) and 16 m. 17. 34.298 m. (approx) 18. 44.785 m. (approx)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.3",
+      "section_title": "Exercises 11.1",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. $a^2 : b^2$ 2. $\\pi : 2\\sqrt{\\pi}$ 3. 45, 60 4. 20% 5. 18 : 25 6. 13 : 7 8. 1) $\\frac{3}{4}$ 2) $\\pm\\sqrt{2ab - b^2}$ 3) $\\frac{1}{2}, 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.4",
+      "section_title": "Exercises 11.2",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. 70% 11. A Tk. 40, B Tk. 60, C Tk. 120, D Tk. 80 12. 200, 240, 250 13. 9, 15, 21 14. 140",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 329,
+  "pdf_page_no": 334,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $x^2 - 50x + 40x - 2000 = 0$ or, $(x - 50)(x + 40) = 0$\n\n$\\therefore x = 50$ or, $x = -40$\n\nBut length can never be negative. $\\therefore x = 50$\n\nNow putting the value of $x$ in equation (2) we get, $y = 50 - 10 = 40$\n\n$\\therefore$ The length of the rectangular is 50 and breadth 40 metre.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 10. There is a road of 4 metre width inside around a square field. If the area of the road is 1 hector, determine the area of the field excluding the road.\n\nSolution: Let, the length of the square field is $x$ metre.\n\n$\\therefore$ Its area is $x^2$ sq. metre\n\nThere is a road around the field with width 4 metre.\nLength of the square field excluding the road = $(x - 2 \\times 4)$\nor, $(x - 8)$ metre.\nArea of the square field excluding the road is = $(x - 8)^2$ sq. metre\n\n$\\therefore$ Area of the road = $x^2 - (x - 8)^2$ sq. metre\n\nWe know, 1 hector = 10000 sq. metre\n\nAccording to the question, $x^2 - (x - 8)^2 = 10000$\n\nor, $x^2 - x^2 + 16x - 64 = 10000$\n\nor, $16x = 10064$\n\n$\\therefore x = 629$\n\nArea of the square field excluding the road\n\n$= (629 - 8)^2$ sq. metre $= 385641$ sq. metre $= 38.56$ hector (approx.)\n\nThe required area $= 38.56$ hector (approx.).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 11. The area of a parallelogram is 120 sq. cm and length of one of its diagonal is 24 cm. Determine the length of the perpendicular drawn on that diagonal from the opposite vertex.\n\nSolution: Let a diagonal of a parallelogram be $d = 24$ cm and the length of the perpendicular drawn on the diagonal from the opposite vertex be $h$ cm.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Square field with road",
+      "figure_no": "16.01",
+      "box_2d": [
+        425,
+        695,
+        552,
+        858
+      ],
+      "description": "A square diagram representing a field of side x m with a road of width 4 m inside.",
+      "reading_order_anchor": "Example 10. There is a road of 4 metre width inside around a square field."
+    }
+  ]
+}

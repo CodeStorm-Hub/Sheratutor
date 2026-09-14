@@ -1,0 +1,67 @@
+{
+  "printed_page_no": 165,
+  "pdf_page_no": 170,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Interior and Exterior of a Circle",
+      "chunk_type": "theory",
+      "content_markdown": "If $O$ is the centre of a circle and $r$ is its radius, the set of all points on the plane whose distances from $O$ are less than $r$ is called the interior region of the circle and the set of all points on the plane whose distances from $O$ are greater than $r$ is called the exterior region of the circle. The line segment joining two points of a circle lies inside the circle.\n\nThe line segment drawn from an interior point to an exterior point of a circle intersects a circle at one and only one point. In the figure, $P$ is the interior point and $Q$ is the exterior point of the circle. The line segment $PQ$ intersects the circle at $R$ only.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Chord and diameter of a circle",
+      "chunk_type": "theory",
+      "content_markdown": "The line segment connecting two different points of a circle is a chord of the circle. If the chord passes through the centre, it is known as diameter. That is, any chord forwarding to the centre of the circle is diameter. In the figure, $AB$ and $AC$ are two chords and $O$ is the centre of the circle. The chord $AC$ is a diameter, since it passes through the centre. $OA$ and $OC$ are two radii of the circle. Therefore, the centre of a circle is the midpoint of any diameter. The length of a diameter is $2r$, where $r$ is the radius of the circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Theorem 17",
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 17. The line segment drawn from the centre of a circle to bisect a chord other than diameter is perpendicular to the chord.\n\nLet $AB$ be a chord (other than diameter) of a circle $ABC$ with center $O$ and $M$ be the midpoint of the chord. Join $O, M$. It is to be proved that the line segment $OM$ is perpendicular to the chord $AB$.\n\nDrawing: Join $O, A$ and $O, B$.\n\nProof:\nStep 1. In $\\triangle OAM$ and $\\triangle OBM$,\n$AM = BM$ [$\\because M$ is the mid point of $AB$]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Interior and exterior of a circle",
+      "figure_no": "8.01",
+      "box_2d": [
+        130,
+        668,
+        245,
+        850
+      ],
+      "description": "A circle with center O, radius r, an interior point P, and an exterior point Q connected by a line segment intersecting the circle at R.",
+      "reading_order_anchor": "Interior and Exterior of a Circle"
+    },
+    {
+      "caption": "Fig 8.02: Chord and diameter of a circle",
+      "figure_no": "8.02",
+      "box_2d": [
+        495,
+        685,
+        605,
+        815
+      ],
+      "description": "A circle with center O, chords AB and AC, where AC is a diameter.",
+      "reading_order_anchor": "Chord and diameter of a circle"
+    },
+    {
+      "caption": "Fig 8.03: Theorem 17",
+      "figure_no": "8.03",
+      "box_2d": [
+        755,
+        685,
+        865,
+        825
+      ],
+      "description": "A circle with center O, chord AB, and a line segment OM from the center to the midpoint M of the chord.",
+      "reading_order_anchor": "Theorem 17"
+    }
+  ]
+}

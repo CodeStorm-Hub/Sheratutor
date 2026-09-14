@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 144,
+  "pdf_page_no": 149,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": "7.1",
+      "section_title": "Changes of Matter",
+      "chunk_type": "theory",
+      "content_markdown": "The substances existing in nature undergo changes due to heat, pressure and contact with other substances. There are two types of changes: physical change and chemical change.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.1.1",
+      "section_title": "Physical Change",
+      "chunk_type": "theory",
+      "content_markdown": "All chemical substances consist of one or more elements. Sometimes, changes occur only in physical conditions of a substance leaving their chemical structure unchanged. This is called a physical change. For example, a solid piece of ice, if kept at room temperature, absorbs heat from the environment and gradually melts into liquid water. Again, heating liquid water up to $100^{\\circ}\\text{C}$ will see the water vaporize into air. Here, the molecular formula of all three- water, ice and vapor is the same- $\\text{H}_2\\text{O}$. That means each molecule of them has the same two hydrogen and one oxygen atoms in them. Therefore, all three substances are the same, only their physical states are different- ice is solid while water is liquid and vapor is gaseous. This kind of change is called a physical change.\n\n$$\\text{ice } (\\text{solid}) \\underset{\\text{(-heat)}}{\\overset{\\text{+heat}}{\\rightleftharpoons}} \\text{ water } (\\text{liquid}) \\underset{\\text{(-heat)}}{\\overset{\\text{+heat}}{\\rightleftharpoons}} \\text{ gas}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.1.2",
+      "section_title": "Chemical Change",
+      "chunk_type": "theory",
+      "content_markdown": "Sometimes, due to the change of external temperature or pressure and contact with some other substance, some substances change completely into newer substances with newer percent composition of the existing elements. This kind of change is called a chemical change. That means, the kind of change that forms newer substances with newer set of properties is called a chemical change. The new substance formed through chemical change gets the same molecules that were there in the original elements. Isolated ions or atoms are formed out of the dissociation in the bond of the previous element. These isolated ions or atoms later constitute new bonds among themselves and create new molecules. As a result, chemical change also implies dissociation of old bonding and formation of new bonding too. The gas we use for cooking basically consists of methane ($\\text{CH}_4$). When methane gas is burnt in oxygen, carbon dioxide, water vapor and heat energy is produced. This is a chemical change.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

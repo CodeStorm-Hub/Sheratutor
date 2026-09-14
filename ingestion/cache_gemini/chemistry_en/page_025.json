@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 25,
+  "pdf_page_no": 30,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": "2.5",
+      "section_title": "Burning of a Candle and the Three States of Wax",
+      "chunk_type": "theory",
+      "content_markdown": "Wax is a mixture of various hydrocarbons. Organic compounds made of hydrogen and carbon are known as hydrocarbons. In the burning of a wax, three states of matter can be observed simultaneously. There is a thin liner inside the wax. When we add fire to it, the hydrocarbon particles around the liner melt into liquid. The liquid wax absorbs heat and vaporizes first. Then the vaporized wax starts a reaction with oxygen of the air and produces carbon dioxide, water vapor, light and heat. A portion of the liquid wax remains and turns solid again. Thus, in the presence of heat we see three states of wax.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.6",
+      "section_title": "Melting and Boiling",
+      "chunk_type": "theory",
+      "content_markdown": "The process of transforming a solid matter into liquid by means of applying heat is called melting. At normal pressure (1 atmospheric pressure), the temperature at which a solid matter turns into liquid state is called the melting point of that solid. Each pure solid matter has its own melting point, like the melting point of ice is $0^{\\circ}\\text{C}$.\n\nThe process of transforming a liquid matter into gas by means of heat is called boiling. At normal pressure (1 atmospheric pressure), the temperature at which a liquid matter turns into gaseous state is called the boiling point of that liquid. Each pure liquid matter has its own boiling point, like the boiling point of water is $100^{\\circ}\\text{C}$. The boiling process requires heat but solidification requires removal of heat.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.05: Burning of Wax.",
+      "figure_no": "2.05",
+      "box_2d": [
+        219,
+        142,
+        458,
+        417
+      ],
+      "description": "A burning candle with labels indicating liquid wax and solid wax.",
+      "reading_order_anchor": "Burning of a Candle and the Three States of Wax"
+    }
+  ]
+}

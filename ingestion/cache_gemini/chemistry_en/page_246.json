@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 246,
+  "pdf_page_no": 251,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$99.9\\%$ pure copper. For this, the aqueous solution of $\\text{CuSO}_4$ is taken in a container. The metallic rod that needs to be purified connected to the positive charge of a battery is put in the container. It acts as an anode. A rod of pure copper is connected to the negative charge of the battery and put in the cell as a cathode. Usually, the impure copper rod is thick and the pure rod is thin.\n\nNow, as electricity is passed in the cell from the battery, the $\\text{Cu}^{2+}$ ion from the impure rod goes into the solution. From the solution, the $\\text{Cu}^{2+}$ goes to the cathode and gathers with the pure rod as $\\text{Cu}$. Oxidation reaction occurs at the anode and reduction reaction occurs at the cathode.\n\n$$\\text{Cu}(s) \\longrightarrow \\text{Cu}^{2+} + 2e^{-} \\text{ ($\\text{Cu}^{2+}$ goes to the solution from the impure copper at the anode)}$$\n\n$$\\text{Cu}^{2+} + 2e^{-} \\longrightarrow \\text{Cu}(s) \\text{ ($\\text{Cu}^{2+}$ joins the pure copper cathode from the solution)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Extraction of Iron",
+      "chunk_type": "theory",
+      "content_markdown": "**Extraction of Iron:**\n\nIron is an important metal. Hematite ($\\text{Fe}_2\\text{O}_3$) is an important ore of iron. Iron is primarily extracted in three stages:\n(1) Concentration\n(2) Calcination/ Thermal oxidation, and\n(3) Iron is extracted in the furnace by smelting. Figure 10.09\n\nSeveral chemical reactions occur in this process:\n\n$$\\text{Fe}_2\\text{O}_3 + 3\\text{C} \\longrightarrow 2\\text{Fe} + 3\\text{CO}$$\n\n$$\\text{3Fe}_2\\text{O}_3 + \\text{CO} \\longrightarrow 2\\text{Fe}_3\\text{O}_4 + \\text{CO}_2$$\n\n$$\\text{Fe}_3\\text{O}_4 + \\text{CO} \\longrightarrow 3\\text{Fe} + \\text{CO}_2$$\n\n$$\\text{CaCO}_3 \\longrightarrow \\text{CaO} + \\text{CO}_2$$\n\n$$\\text{CaO} + \\text{SiO}_2 \\longrightarrow \\text{CaSiO}_3 \\text{ (Molten slag)}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.08: Purification of impure copper through electrolysis.",
+      "figure_no": "10.08",
+      "box_2d": [
+        75,
+        535,
+        305,
+        831
+      ],
+      "description": "An electrolytic cell setup for copper purification with impure copper anode and pure copper cathode in CuSO4 solution.",
+      "reading_order_anchor": "99.9% pure copper. For this..."
+    },
+    {
+      "caption": "Fig 10.09: Iron extraction in blast furnace.",
+      "figure_no": "10.09",
+      "box_2d": [
+        602,
+        537,
+        915,
+        886
+      ],
+      "description": "A blast furnace diagram used for the extraction of iron, showing inputs of iron ore, coke, limestone, and hot air, and outputs of molten iron and molten slag.",
+      "reading_order_anchor": "Extraction of Iron:"
+    }
+  ]
+}

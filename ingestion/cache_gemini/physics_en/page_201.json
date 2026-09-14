@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 201,
+  "pdf_page_no": 206,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "kHz is generated, then the movement created in air will not be heard by us. To detect such sounds we can use a special type of microphone or receiver. Many animals can hear sounds of low frequency. Before earthquakes, sounds of low frequency are generated, and often hearing this sound animals panic and leave the area.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.1",
+      "section_title": "Characteristics of sound wave",
+      "chunk_type": "theory",
+      "content_markdown": "Sound is a mechanical wave, because sound wave is produced due to the vibration of body, and for its transmission an elastic medium is needed. This is a longitudinal wave, because the direction of propagation of the wave and the direction of vibration is the same. The velocity of sound depends on the property of the medium. In gaseous mediums its velocity is low, in liquids greater, and in solids it is much more. The velocity of sounds depends on the temperature and humidity of the medium. The intensity of sound is proportional to the square of the amplitude of the wave. Therefore, if the amplitude of a wave is high, the intensity of the sound will be high and if the amplitude is low, the intensity will be low.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Take two plastic glasses. Make two small holes on the bottom of the glasses with a hot safety pin. Put thread through this hole and tie the thread inside the cup (Figure 7.12). Tie the two plastic glasses with long thread. One person should hold one cup and another should hold the second cup. One of you speaks, and the other person listens. (Keep the thread stretched, otherwise sound cannot be heard.) We are so used to hearing words in air; we think that sound goes only in air. This experiment is the proof that sound can propagate through liquids or solids like other medium too.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.12: “Phone” can be made by tying thread behind the plastic glass.",
+      "figure_no": "7.12",
+      "box_2d": [
+        210,
+        545,
+        388,
+        873
+      ],
+      "description": "An illustration showing a person holding a makeshift string telephone made of two plastic cups connected by a stretched thread.",
+      "reading_order_anchor": "Characteristics of sound wave"
+    }
+  ]
+}

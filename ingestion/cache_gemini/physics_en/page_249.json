@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 249,
+  "pdf_page_no": 254,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The refractive index of water while compared to with glass\n\n$$\\frac{n_1}{n_2} = \\frac{\\sin \\theta_2}{\\sin \\theta_1} = 0.88$$\n\nwhich is less than $1$.\n\nYou therefore divide the refractive index of the medium that you want to determine by the refractive index of the medium with respect to which you want to determine the refractive index.\n\nDiamond with respect to water : $1.82$\nWater with respect to diamond : $0.55$\nDiamond with respect to glass : $1.59$\nGlass with respect to diamond : $0.63$\n\nBut in physics usually the refractive index of a particular substance is used, not the refractive index of one substance in comparison to another.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.2",
+      "section_title": "Total Internal Reflection",
+      "chunk_type": "theory",
+      "content_markdown": "When discussing reflection, we learned that when perfect and total reflection is needed, then instead of mirror a perfect transparent medium is used, and a kind of reflection is made. This is called total internal reflection. It is a very easy and exciting process. Here, light rays are sent to a rarer medium from a denser medium using the refraction of light. We know (and have used many times) that the law of refraction is $n_1 \\sin \\theta_1 = n_2 \\sin \\theta_2$ i.e if $n_2$ is greater than $n_1$ then $\\theta_1$ is greater than $\\theta_2$.\n\nSuppose you are sending a ray of light from a denser ($n_2$) medium to a rarer ($n_1$) medium (Fig 9.05). According to the laws of reflection and refraction some amount of light will be reflected and some will be refracted. As $\\theta_2$ will be greater than $\\theta_1$ therefore staying $\\theta_2$ ($90^\\circ$, $\\theta_1$ will be equal to $90^\\circ$ and after this there will be no scope of light to be refracted, i.e when $\\theta_2$ will be equal to $90^\\circ$, total light has to be reflected. The value of $\\theta_1$ at which $\\theta_2 = 90^\\circ$ is called the critical angle $\\theta_c$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.05: Refraction of light from water to glass",
+      "figure_no": "9.05",
+      "box_2d": [
+        226,
+        532,
+        453,
+        876
+      ],
+      "description": "Ray diagram showing refraction of light from water to glass across an interface with normal line and angles theta_1 and theta_2.",
+      "reading_order_anchor": "9.2 Total Internal Reflection"
+    }
+  ]
+}

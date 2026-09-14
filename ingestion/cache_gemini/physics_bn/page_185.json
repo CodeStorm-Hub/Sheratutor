@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 185,
+  "pdf_page_no": 190,
+  "chapter_no": 6,
+  "chapter_title": "বস্তুর উপর তাপের প্রভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "সৃজনশীল প্রশ্ন\n\n1. দুটি বৈদ্যুতিক খুঁটির মধ্যবর্তী দূরত্ব $30\\text{ m}$। খুঁটি দুটির সাথে $30.001\\text{ m}$ দৈর্ঘ্যের তামার তার যেদিন সংযোগ দেওয়া হয় সে দিন বায়ুর তাপমাত্রা ছিল $30^\\circ\\text{C}$। তামার দৈর্ঘ্য প্রসারণ সহগ $16.7 \\times 10^{-6}\\text{ K}^{-1}$। শীতকালে যেদিন বায়ুর তাপমাত্রা $4^\\circ\\text{C}$ হলো সেদিন তারটি ছিঁড়ে গেল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) পানির ত্রৈধ বিন্দুর সংজ্ঞা দাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(খ) দুটি বস্তুর তাপ সমান হলেও এদের তাপমাত্রা ভিন্ন হতে পারে কি? ব্যাখ্যা করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(গ) বায়ুর তাপমাত্রাকে ফারেনহাইট স্কেলে প্রকাশ করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ঘ) তারটি ছিঁড়ে যাবার কারণ গাণিতিক যুক্তিসহ ব্যাখ্যা করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. দুটি ধাতব দণ্ডের দৈর্ঘ্য $6\\text{ m}$। একটির তাপমাত্রা $30^\\circ\\text{C}$ থেকে বাড়িয়ে $80^\\circ\\text{C}$ তাপমাত্রা পর্যন্ত উত্তপ্ত করা হলে এর দৈর্ঘ্য বৃদ্ধি পেয়ে $6.0051\\text{ m}$ হয়। অপর ধাতব দণ্ডের তাপমাত্রা $20^\\circ\\text{C}$ থেকে বাড়িয়ে $60^\\circ\\text{C}$ পর্যন্ত উত্তপ্ত করা হলে এর দৈর্ঘ্য বৃদ্ধি পেয়ে $6.0041\\text{ m}$ হয়। দৈর্ঘ্য প্রসারণ গুণাঙ্ক $\\alpha$, ক্ষেত্র প্রসারণ গুণাঙ্ক $\\beta$ ও আয়তন প্রসারণ গুণাঙ্ক $\\gamma$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) দুটি বস্তুর মধ্যে তাপের আদান-প্রদান কিসের উপর নির্ভর করে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(খ) তাপমাত্রা ও তাপ কেন ভিন্ন লেখো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(গ) একটি ধাতবদণ্ডের তাপমাত্রা $80^\\circ\\text{C}$ হলে সেটি কেলভিন স্কেলে কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ঘ) গাণিতিক ব্যাখ্যাসহ দণ্ড দুটির উপাদান সম্পর্কে মন্তব্য করো।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

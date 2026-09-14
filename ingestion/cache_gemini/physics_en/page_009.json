@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 9,
+  "pdf_page_no": 14,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": "1.3.4",
+      "section_title": "Contemporary Physics",
+      "chunk_type": "theory",
+      "content_markdown": "Due to the invention of electronics and modern technology it is possible to make powerful particle accelerators. Accelerating the particle with high energy, new particles are being discovered. It is possible to arrange these particles systematically using the Theoretical Standard Model. It is possible to explain the structure of all the particles using a few elementary particles (and their antiparticles) though apparently we think there are an infinite numbers of new particles. It is not possible to explain the mass of the particles using the Standard Model, so to explain the mass, the existence of a new particle called the Higgs Boson was proposed. The identification of the Higgs Boson particle in the laboratory in 2013 is treated as a great success of theoretical physics.\n\nIn 1924 Hubble showed that all galaxies of the universe are moving away from one another, which indicates that the universe is expanding slowly. This means that once upon a time the whole universe was concentrated at a point. Scientists showed that fourteen billion years ago through a massive explosion called the Big Bang the universe was created and it is continuing to expand. Very recently scientists showed that this expansion will never stop and every part of the universe will keep moving away from one another. Besides, the physicist have shown that they can explain only $4\\%$ of visible planets, stars, and galaxies of the universe, the concept of the mysterious dark matter and dark energy has to be accepted to explain the rest of the universe. The scientists are continuing their research in this field.\n\nSemiconductors are created from the research of solid state physics resulting in present electronics which laid the foundation of modern civilization.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3.5",
+      "section_title": "Contributions of Jagadish Chandra Bose",
+      "chunk_type": "theory",
+      "content_markdown": "Acharya Sir Jagadish Chandra Bose (Fig: 1.01) was a renowned physicist, as well as a successful biologist. He was the first internationally recognized scientist of this subcontinent. The forefathers of Jagadishchandra Bose lived at the village of Rarikhal of Bikrampur in Dhaka district. He was born in 1858 in Mymensingh. His father, Bhagaban Chandra Bose, was a deputy magistrate of Faridpur district.\n\nHis education started in a rural school of Faridpur. Later he completed his studies from Hare School and Saint Xavier school and college in Kolkata. After passing his B.A. in 1880, he went to England, and from 1880-1884 he completed his honors with BA in Physics from Cambridge University, and then acquired B.Sc.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig: 1.01 Acharya Sir Jagadish Chandra Bose",
+      "figure_no": "1.01",
+      "box_2d": [
+        703,
+        532,
+        722,
+        595
+      ],
+      "description": "Textual reference to Fig 1.01 in the section about Jagadish Chandra Bose.",
+      "reading_order_anchor": "1.3.5 Contributions of Jagadish Chandra Bose"
+    }
+  ]
+}

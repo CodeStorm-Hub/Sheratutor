@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 208,
+  "pdf_page_no": 213,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\\therefore A + B = 60^\\circ \\dots (2)$$\nAdding (1) and (2), we get,\n$$2A = 105^\\circ$$\n$$\\therefore A = \\frac{105^\\circ}{2} = 52\\frac{1^\\circ}{2}$$\nAgain subtracting (1) from (2), we get,\n$$2B = 15^\\circ$$\n$$\\therefore B = \\frac{15^\\circ}{2} = 7\\frac{1^\\circ}{2}$$\nRequired $$A = 52\\frac{1^\\circ}{2}$$ and $$B = 7\\frac{1^\\circ}{2}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Worked Example 2",
+      "chunk_type": "worked_example",
+      "content_markdown": "2) $$\\frac{\\cos A - \\sin A}{\\cos A + \\sin A} = \\frac{1 - \\sqrt{3}}{1 + \\sqrt{3}}$$\n\nor, $$\\frac{\\cos A - \\sin A + \\cos A + \\sin A}{\\cos A - \\sin A - \\cos A - \\sin A} = \\frac{1 - \\sqrt{3} + 1 + \\sqrt{3}}{1 - \\sqrt{3} - 1 - \\sqrt{3}}$$ [By addition-subtraction]\n\nor, $$\\frac{2\\cos A}{-2\\sin A} = \\frac{2}{-2\\sqrt{3}}$$\n\nor, $$\\frac{\\cos A}{\\sin A} = \\frac{1}{\\sqrt{3}}$$\n\nor, $$\\cot A = \\cot 60^\\circ$$\n\n$$\\therefore A = 60^\\circ$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.2",
+      "section_title": "Worked Example 3",
+      "chunk_type": "worked_example",
+      "content_markdown": "3) Given that, $$A = 45^\\circ$$\n\nwe have to prove that, $$\\cos 2A = \\frac{1 - \\tan^2 A}{1 + \\tan^2 A}$$\n\nL.H.S. = $$\\cos 2A$$\n\n= $$\\cos(2 \\times 45^\\circ) = \\cos 90^\\circ = 0$$\n\nR.H.S. = $$\\frac{1 - \\tan^2 A}{1 + \\tan^2 A}$$\n\n= $$\\frac{1 - \\tan^2 45^\\circ}{1 + \\tan^2 45^\\circ} = \\frac{1 - (1)^2}{1 + (1)^2}$$\n\n= $$\\frac{0}{2} = 0$$\n\n$$\\therefore$$ L.H.S. = R.H.S. (Proved)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

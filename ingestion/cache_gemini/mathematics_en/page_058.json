@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 58,
+  "pdf_page_no": 63,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 21. Resolve into factors: $9x^2 - 30xy + 25y^2$\n\nSolution: $9x^2 - 30xy + 25y^2$\n$= (3x)^2 - 2 \\times 3x \\times 5y + (5y)^2$\n$= (3x - 5y)^2 = (3x - 5y)(3x - 5y)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Difference of two squares: Expressing an expression as the difference of two squares and then applying the formula $a^2 - b^2 = (a + b)(a - b)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 22. Resolve into factors: $a^2 - 1 + 2b - b^2$.\n\nSolution: $a^2 - 1 + 2b - b^2 = a^2 - (b^2 - 2b + 1)$\n$= a^2 - (b - 1)^2 = \\{a + (b - 1)\\}\\{a - (b - 1)\\}$\n$= (a + b - 1)(a - b + 1)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 23. Resolve into factors: $a^4 + 64b^4$\n\nSolution: $a^4 + 64b^4 = (a^2)^2 + (8b^2)^2$\n$= (a^2)^2 + 2 \\times a^2 \\times 8b^2 + (8b^2)^2 - 16a^2b^2$\n$= (a^2 + 8b^2)^2 - (4ab)^2$\n$= (a^2 + 8b^2 + 4ab)(a^2 + 8b^2 - 4ab)$\n$= (a^2 + 4ab + 8b^2)(a^2 - 4ab + 8b^2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Resolve into factors:\n1) $abx^2 + acx^3 + adx^4$ 2) $xa^2 - 144xb^2$ 3) $x^2 - 2xy - 4y - 4$",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Middle term factorization: Factors can be determined by applying the formula $x^2 + (a + b)x + ab = (x + a)(x + b)$. In this method, a polynomial of the form $x^2 + px + q$ can be factorized, if two integers $a$ and $b$ can be found so that, $a + b = p$ and $ab = q$. For this, two factors of $q$ with their signs are to be taken whose algebraic sum is $p$. If $q > 0$, $a$ and $b$ will be of same sign and if $q < 0$, $a$ and $b$ will be of opposite sign. To be noted $p$ and $q$ may not be integers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 24. Resolve into factors: $x^2 + 12x + 35$\n\nSolution: $x^2 + 12x + 35 = x^2 + (5 + 7)x + 5 \\times 7 = (x + 5)(x + 7)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 25. Resolve into factors: $x^2 + x - 20$\n\nSolution: $x^2 + x - 20 = x^2 + (5 - 4)x + (5)(-4) = (x + 5)(x - 4)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

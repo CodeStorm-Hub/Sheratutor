@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 137,
+  "pdf_page_no": 142,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": "5.3.1",
+      "section_title": "Archimedes principle and Buoyancy",
+      "chunk_type": "theory",
+      "content_markdown": "It is sure all of you know Archimedes principle and the story behind this. The principle is easy, 'If a body is immersed in a liquid, the weight of the body is reduced by an amount equal to the displaced liquid'. Now we'll find this principle.\n\nA cylinder is immersed in some amount of liquid is shown in figure 5.04 (This can be any object of any shape, but for convenience of calculation we took a cylinder). Let us suppose that the height of the cylinder is $h$, cross-sectional area of top and bottom of the cylinder is $A$. We imagine that the cylinder is immersed in such a way that the depth of upper surface is $h_1$ and depth of lower surface is $h_2$.\n\nWe have said many times that, pressure in a liquid (or gaseous) does not work in a definite direction. It works in all directions. Therefore the downward pressure acting on the upper surface of the cylinder is:\n\n$$P_1 = h_1 \\rho g$$\n\nand the upward pressure acting on lower surface is:\n\n$$P_2 = h_2 \\rho g$$\n\nTherefore, the downward force acting on upper surface and upward force acting on lower surface are respectively:\n\n$$F_1 = AP_1 = Ah_1\\rho g$$\n\n$$F_2 = AP_2 = Ah_2\\rho g$$\n\nWe do not have to think about how much force is exerted on the surrounding surface, because the force experienced by the cylinder from one direction is equal and opposite to the force from another direction and neutralize one another.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.04: The weight of a body is reduced by an amount equal to the weight of the displaced water.",
+      "figure_no": "5.04",
+      "box_2d": [
+        107,
+        539,
+        342,
+        861
+      ],
+      "description": "A schematic diagram showing a cylindrical object immersed in liquid inside a beaker, illustrating the depth of the upper surface (h1), the depth of the lower surface (h2), and the height of the cylinder (h).",
+      "reading_order_anchor": "A cylinder is immersed in some amount of liquid is shown in figure 5.04"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 180,
+  "pdf_page_no": 185,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অতএব, $A$ কোণের বিপরীত বাহু $= 4$, সন্নিহিত বাহু $= 3$\nঅতিভুজ $= \\sqrt{4^2 + 3^2} = \\sqrt{25} = 5$\nসুতরাং, $\\sin A = \\frac{4}{5}, \\cos A = \\frac{3}{5}, \\cot A = \\frac{3}{4}$\n$\\operatorname{cosec} A = \\frac{5}{4}, \\sec A = \\frac{5}{3}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| | | |\n| :--- | :--- | :--- |\n| $\\operatorname{cosec} \\theta = \\frac{1}{\\sin \\theta}$ | $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$ | $\\sin^2 \\theta + \\cos^2 \\theta = 1$ |\n| $\\sec \\theta = \\frac{1}{\\cos \\theta}$ | $\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}$ | $\\sec^2 \\theta = 1 + \\tan^2 \\theta$ |\n| $\\cot \\theta = \\frac{1}{\\tan \\theta}$ | | $\\operatorname{cosec}^2 \\theta = 1 + \\cot^2 \\theta$ |",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. $ABC$ সমকোণী ত্রিভুজের $\\angle B$ কোণটি সমকোণ। $\\tan A = 1$ হলে $2\\sin A \\cos A = 1$ এর সত্যতা যাচাই কর।\n\nসমাধান: দেওয়া আছে, $\\tan A = 1$\nঅতএব, বিপরীত বাহু $=$ সন্নিহিত বাহু $= a$\nঅতিভুজ $= \\sqrt{a^2 + a^2} = \\sqrt{2}a$\nসুতরাং, $\\sin A = \\frac{a}{\\sqrt{2}a} = \\frac{1}{\\sqrt{2}}, \\cos A = \\frac{a}{\\sqrt{2}a} = \\frac{1}{\\sqrt{2}}$\nএখন বামপক্ষ $= 2\\sin A \\cos A = 2 \\cdot \\frac{1}{\\sqrt{2}} \\cdot \\frac{1}{\\sqrt{2}} = 2 \\cdot \\frac{1}{2} = 1 = $ ডানপক্ষ।\n$\\therefore 2\\sin A \\cos A = 1$ উক্তিটি সত্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n$ABC$ সমকোণী ত্রিভুজের $\\angle C$ সমকোণ, $AB = 29$ সে.মি., $BC = 21$ সে.মি. এবং $\\angle ABC = \\theta$ হলে, $\\cos^2 \\theta - \\sin^2 \\theta$ এর মান বের কর।",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫. প্রমাণ কর যে, $\\tan \\theta + \\cot \\theta = \\sec \\theta \\cdot \\operatorname{cosec} \\theta$\n\nসমাধান:\nবামপক্ষ $= \\tan \\theta + \\cot \\theta$\n$= \\frac{\\sin \\theta}{\\cos \\theta} + \\frac{\\cos \\theta}{\\sin \\theta}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০১: সমকোণী ত্রিভুজ",
+      "figure_no": "9.01",
+      "box_2d": [
+        92,
+        685,
+        215,
+        845
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যেখানে কোণ B সমকোণ এবং কোণ A চিহ্নিত।",
+      "reading_order_anchor": "অতএব, A কোণের বিপরীত বাহু = 4, সন্নিহিত বাহু = 3"
+    },
+    {
+      "caption": "চিত্র ৯.০২: সমকোণী ত্রিভুজ",
+      "figure_no": "9.02",
+      "box_2d": [
+        550,
+        675,
+        675,
+        845
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যেখানে কোণ B সমকোণ এবং বাহুগুলোর দৈর্ঘ্য a ও sqrt(2)a দ্বারা চিহ্নিত।",
+      "reading_order_anchor": "সমাধান: দেওয়া আছে, tan A = 1"
+    }
+  ]
+}

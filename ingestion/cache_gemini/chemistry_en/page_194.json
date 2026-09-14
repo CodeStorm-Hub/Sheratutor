@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 194,
+  "pdf_page_no": 199,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Salt Bridge and Its Use",
+      "chunk_type": "theory",
+      "content_markdown": "### Salt Bridge and Its Use\n\nYou have seen in the Daniell cell, in anode, metallic zinc donates two electrons to become zinc ion. This electron is conducted through the connecting wire towards the cathode. As a result, the ion in the anode solution increases. Oxidation half reaction in anode:\n\n$$\\text{Zn} \\rightarrow \\text{Zn}^{2+} + 2\\text{e}^{-}$$\n\nOn the other hand, the $\\text{Cu}^{2+}$ ion in the $\\text{CuSO}_{4}$ solution at the cathode accepts the two electrons and turns into charge neutral $\\text{Cu}$ atom without changing the composition of $\\text{SO}_{4}^{2-}$ ion. As a result, the solution becomes negatively charged and the flow of electricity stops within a while. The salt bridge comes into effect at this stage. A chemical substance named agar-agar mixed with $\\text{KCl}$ is put inside a U-shaped tube. It creates a gel like substance which is called the salt bridge.\n\nBoth $\\text{K}^{+}$ and $\\text{Cl}^{-}$ ions in this substance have the same velocity. Two cotton buds at the two faces of the bridge (like in the fig) help connect the two solutions externally.\n\nNow, the surplus charges in the anode are joined by the same number of $\\text{Cl}^{-}$ ion from the bridge in the anode solution. Similarly, the reduced number of positive charges in cathode solution is joined by $\\text{K}^{+}$ ions from the bridge. Thus, the charge neutrality of both the solutions is maintained and the flow of electricity is continued.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.09: Salt bridge in Cell.",
+      "figure_no": "8.09",
+      "box_2d": [
+        468,
+        471,
+        792,
+        866
+      ],
+      "description": "A schematic diagram of a Daniell cell featuring a U-shaped salt bridge connecting two half-cells containing zinc and copper electrodes.",
+      "reading_order_anchor": "Salt Bridge and Its Use"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 291,
+  "pdf_page_no": 296,
+  "chapter_no": 12,
+  "chapter_title": "Chemistry in Our Life",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "One type of fungus named 'Yeast' is also used at home or in bakery to inflate bread. To do this initially yeast is added to a solution of sugar. If dough is made with this mixture and kept in a warm place, carbon-di-oxide is produced because of aerobic respiration of the yeast. This carbon-di-oxide helps the cakes to swell up. When bread is baked in an oven after sufficient swelling, the yeast dies due to the heat and swelling process of bread stops.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Mix baking powder and yeast with flour separately and keep it for some time and make cakes with it. Compare the two cakes. If there is difference between the cakes, explain the causes.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "Vinegar",
+      "chunk_type": "theory",
+      "content_markdown": "4% to 10% liquid solution of ethanoic acid is called Vinegar. Vinegar is a liquid substance. Vinegar is generally used in making pickles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2",
+      "section_title": "Preparation of Vinegar",
+      "chunk_type": "theory",
+      "content_markdown": "Vinegar or acetic acid or ethanoic acid (\\(\\text{CH}_3\\text{COOH}\\)) is prepared by blowing the bubble of oxygen gas into ethanol and acitobactor kept in a steel pot at \\(25^\\circ\\text{C}\\) to \\(35^\\circ\\text{C}\\) temperature.\n\n$$\\text{CH}_3\\text{CH}_2\\text{OH} + \\text{O}_2 \\xrightarrow[25-30^\\circ\\text{C}]{\\text{Acitobactor}} \\text{CH}_3\\text{COOH} + \\text{H}_2\\text{O}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.3",
+      "section_title": "Roles of vinegar in preserving food",
+      "chunk_type": "theory",
+      "content_markdown": "Pickles rot when bacteria attacks them. Bacteria cannot attacks pickles if vinegar is applied to them. The main element of vinegar is ethanoic acid. When vinegar is applied to pickles, the protein released by ethanoic acid damages the \\(\\text{H}^+\\)\\ bacteria and as a result, the foods remains safe from the attack of bacteria. In this way food is preserved by using vinegar.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.4",
+      "section_title": "Soft Drinks",
+      "chunk_type": "theory",
+      "content_markdown": "Soft drinks are prepared when carbon dioxide gas is dissolved in water at cold temperatures and high pressures. Carbon dioxide and water react in soft drinks and produce \\(\\text{H}_2\\text{CO}_3\\). People take soft drinks for digestion of food. However, there is no scientific evidence for it.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

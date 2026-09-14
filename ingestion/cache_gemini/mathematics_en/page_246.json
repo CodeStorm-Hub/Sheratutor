@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 246,
+  "pdf_page_no": 251,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. Explain whether the following systems of equations are consistent/ inconsistent, dependent/ independent of each other and indicate the number of solutions in each case.\n\n1) $x + 3y = 1$ \n   $2x + 6y = 2$\n\n2) $2x - 5y = 3$ \n   $x + 3y = 1$\n\n3) $3x - 5y = 7$ \n   $6x - 10y = 15$\n\nSolution:\n\n1) Given system of equations is: \n   $x + 3y = 1$\n   $2x + 6y = 2$\n\nRatio of the coefficients of $x$ is $\\frac{1}{2}$\n\nRatio of the coefficients of $y$ is $\\frac{3}{6}$ or, $\\frac{1}{2}$\n\nRatio of constant terms is $\\frac{1}{2}$\n\n$\\therefore \\frac{1}{2} = \\frac{3}{6} = \\frac{1}{2}$\n\nTherefore, the system of equations is consistent and mutually dependent.\nThe system of equations has infinite number of solutions.\n\n2) Given system of equations is: \n   $2x - 5y = 3$\n   $x + 3y = 1$\n\nRatio of the coefficients of $x$ is $\\frac{2}{1}$\n\nRatio of the coefficients of $y$ is $\\frac{-5}{3}$\n\nWe get, $\\frac{2}{1} \\neq \\frac{-5}{3}$\n\n$\\therefore$ Therefore, the system of equations is consistent and mutually independent.\nThe system of equations has only one (unique) solution.\n\n3) Given system of equations is: \n   $3x - 5y = 7$\n   $6x - 10y = 15$\n\nRatio of the coefficients of $x$ is $\\frac{3}{6}$ or, $\\frac{1}{2}$\n\nRatio of the coefficients of $y$ is $\\frac{-5}{-10}$ or, $\\frac{1}{2}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

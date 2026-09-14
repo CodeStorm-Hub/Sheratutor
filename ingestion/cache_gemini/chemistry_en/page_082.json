@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 82,
+  "pdf_page_no": 87,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Chapter Five",
+      "chunk_type": "theory",
+      "content_markdown": "We know, all substances consist of molecules and atoms. Each of these matters has its own atoms. Out of these substances, atoms of one or more elements make a substance's molecule. Atoms do not remain scattered in the molecule of substances. They remain highly organized. The force of attraction that binds two atoms in a molecule is called chemical bond. This bond may be of various kinds- ionic bond, covalent bond or metallic bond etc. This chapter will focus upon compounds made of ionic bonds, covalent bonds or metallic bonds, their process of bonding and their properties.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.01: Molecular structure model",
+      "figure_no": "5.01",
+      "box_2d": [
+        251,
+        169,
+        642,
+        804
+      ],
+      "description": "3D ball-and-stick molecular model showing complex atomic connectivity with various colored spheres representing different atoms.",
+      "reading_order_anchor": "We know, all substances consist of molecules and atoms."
+    }
+  ]
+}

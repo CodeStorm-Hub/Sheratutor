@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 139,
+  "pdf_page_no": 144,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 14.** The line segment joining the mid-points of any two sides of a triangle is parallel to the third side and in length it is half.\n\n**Special Nomination:** Let $ABC$ be a triangle. $D$ and $E$ are respectively mid-points of the $AB$ and $AC$. It is required to prove $DE \\parallel BC$ and $DE = \\frac{1}{2}BC$.\n\n**Drawing:** Join $D$ and $E$ and extend to $F$ so that $EF = DE$. Draw a straight line segment from $C$ to $F$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:**\n\nStep 1. Between $\\triangle ADE$ and $\\triangle CEF$, $AE = EC$ [given]\n\n$DE = EF$ [by construction]\n\n$\\angle AED = \\angle CEF$ [opposite angles]\n\n$\\therefore \\triangle ADE \\cong \\triangle CEF$ [SAS theorem]\n\n$\\therefore \\angle ADE = \\angle EFC$ [alternate angle]\n\n$\\therefore AD \\parallel CF$\n\nAgain, $BD = AD = CF$ and $BD \\parallel CF$\n\nTherefore $BDFC$ is a parallelogram.\n\n$\\therefore DF \\parallel BC$ or, $DE \\parallel BC$.\n\nStep 2. Again, $DF = BC$ or, $DE + EF = BC$\n\nor, $DE + DE = BC$ or, $2DE = BC$ or, $DE = \\frac{1}{2}BC$\n\n$\\therefore DE \\parallel BC$ and $DE = \\frac{1}{2}BC$ (Proved).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 15.** (Pythagoras theorem)\n\nIn a right-angled triangle the square on the hypotenuse is equal to the sum of the squares of regions on the two other sides.\n\nLet in the triangle $ABC$, $\\angle ABC = 1$ right angle and $AC$ is the hypotenuse. Then, $AC^2 = AB^2 + BC^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Theorem 14 illustration",
+      "figure_no": "6.01",
+      "box_2d": [
+        142,
+        663,
+        264,
+        863
+      ],
+      "description": "A triangle ABC with a line segment DE connecting midpoints of AB and AC, extended to F.",
+      "reading_order_anchor": "Theorem 14. The line segment joining the mid-points of any two sides of a triangle is parallel to the third side and in length it is half."
+    },
+    {
+      "caption": "Fig 6.02: Pythagoras theorem illustration",
+      "figure_no": "6.02",
+      "box_2d": [
+        818,
+        691,
+        956,
+        830
+      ],
+      "description": "A right-angled triangle ABC with the right angle at B.",
+      "reading_order_anchor": "Theorem 15. (Pythagoras theorem)"
+    }
+  ]
+}

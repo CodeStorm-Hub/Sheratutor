@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 158,
+  "pdf_page_no": 163,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** Bisect the diagonals $a$ and $b$ into two equal parts. From any ray $AX$, cut the line segment $AB$ equal to $c$. With centre at $A$ and $B$ draw two arcs with radius $\\frac{a}{2}$ and $\\frac{b}{2}$ respectively on the same side of $AB$. Let the arcs intersect at $O$. Join $A,O$ and $B,O$. Extend $AO$ to $AE$ and $BO$ to $BF$. Now cut $\\frac{a}{2} = OC$ from $OE$ and $\\frac{b}{2} = OD$ from $OF$. Join $A, D$; $D, C$ and $B, C$. Therefore, $ABCD$ is the required parallelogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:** In $\\triangle AOB$ and $\\triangle COD$,\n\n$OA = OC = \\frac{a}{2}$; $OB = OD = \\frac{b}{2}$ [by construction]\n\nand included $\\angle AOB = $ included $\\angle COD$ [opposite angle]\n\n$\\therefore \\triangle AOB \\cong \\triangle COD$\n\n$\\therefore AB = CD$ and $\\angle ABO = \\angle ODC$; but the angles are alternate angles.\n\n$AB$ and $CD$ are parallel and equal.\n\nSimilarly, $AD$ and $BC$ are parallel and equal.\n\nTherefore, $ABCD$ is the required parallelogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 3.** The parallel sides and two angles included with the larger side of a trapezium are given. Construct the trapezium.\n\nLet $a$ and $b$ be the parallel sides of a trapezium where $a > b$ and $\\angle x$ and $\\angle y$ be two angles included with the side $a$. The trapezium is to be constructed.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Drawing:** From any ray $AX$, cut the line segment $AB = a$. At $A$ of the line segment $AB$, construct the angle $\\angle BAY$ equal to $\\angle x$ at $B$, construct the angle",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of a parallelogram",
+      "figure_no": "7.01",
+      "box_2d": [
+        78,
+        593,
+        298,
+        844
+      ],
+      "description": "Geometric construction of a parallelogram ABCD with diagonals bisecting at O.",
+      "reading_order_anchor": "Drawing: Bisect the diagonals a and b into two equal parts."
+    },
+    {
+      "caption": "Fig 7.02: Construction of a trapezium",
+      "figure_no": "7.02",
+      "box_2d": [
+        755,
+        215,
+        905,
+        742
+      ],
+      "description": "Geometric construction of a trapezium with parallel sides a and b and base angles x and y.",
+      "reading_order_anchor": "Example 3. The parallel sides and two angles included with the larger side of a trapezium are given."
+    }
+  ]
+}

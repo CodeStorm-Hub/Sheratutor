@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 295,
+  "pdf_page_no": 300,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Equiangular Polygons:** If the angles of two polygons with equal number of sides are sequentially equal, the polygons are known as equiangular polygons.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Similar Polygons:** If the vertices of two polygons with equal number of sides can be matched in such a sequential way that\n\n(i) The matching angles are equal and (ii) The ratios of matching sides are equal, then the two polygons are called similar polygons.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the above figures, the rectangle $ABCD$ and the square $PQRS$ are equiangular since the number of sides in both the figures is 4 and the angles of the rectangle are sequentially equal to the angles of the square (all right angles). Though the similar angles of the figure are equal, the ratios of the matching sides are not the same. Hence the figures are not similar. In case of triangles, situation like this does not arise. As a result of matching the vertices of triangles, if one of the conditions of similarity is true, the other condition automatically becomes true and the triangles are similar. That is, two similar triangles are always equiangular and two equiangular triangles are always similar.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If two triangles are equiangular and one of their matching pairs is equal, the triangles are congruent. The ratio of the matching sides of two equiangular triangles is a constant. Proofs of the related theorems are given below.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 32.** If two triangles are equiangular, their matching sides are proportional.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Special Nomination:** Let $ABC$ and $DEF$ be triangles with $\\angle A = \\angle D$, $\\angle B = \\angle E$ and $\\angle C = \\angle F$\n\nWe need to prove that, $\\frac{AB}{DE} = \\frac{AC}{DF} = \\frac{BC}{EF}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Equiangular polygons",
+      "figure_no": "14.01",
+      "box_2d": [
+        168,
+        110,
+        250,
+        825
+      ],
+      "description": "Diagrams showing two triangles and two rectangles to illustrate equiangular polygons.",
+      "reading_order_anchor": "Equiangular Polygons: If the angles of two polygons with equal number of sides are sequentially equal, the polygons are known as equiangular polygons."
+    },
+    {
+      "caption": "Fig 14.02: Similar triangles",
+      "figure_no": "14.02",
+      "box_2d": [
+        845,
+        300,
+        930,
+        695
+      ],
+      "description": "Diagrams of two triangles ABC and DEF with a line PQ inside triangle ABC.",
+      "reading_order_anchor": "Special Nomination: Let ABC and DEF be triangles with ZA = 72D, ZB = ZE and ZC = ZF"
+    }
+  ]
+}

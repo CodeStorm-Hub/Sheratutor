@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 274,
+  "pdf_page_no": 279,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": "10.2",
+      "section_title": "Static Electricity by Friction",
+      "chunk_type": "theory",
+      "content_markdown": "If a glass rod is rubbed by a piece of silk, (Figure 10.02) electrons start to move from the glass to the silk. So the glass rod is positively charged and the silk negatively. This happens because silk has more affinity for electrons than the glass. Again if a plastic is rubbed using a flannel ( or wool), electrons will move to plastic from the flannel. Because plastic has more affinity for electrons than the flannel.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now we can do an experiment. Suppose, using glass and silk we have positively charged two pieces of glass. If we carefully hang one piece of glass with insulator silk and then bring the other close to it then we will notice that the glass that is hanging is going away due to repulsion (Figure 10.03).\n\nSimilarly if we charge negatively two pieces of plastic and hang one of them with silk thread and bring the other near to it, we will see the same result, one is repelling the other. Now if we bring the positively charged glass rod near to the negatively charged plastic rod, then we will see, they will attract one another.\n\nWhen we learnt gravitational force, there was only one type of mass, so only one type of force, and it was attraction. Because there is only one type of mass, there is nothing called a negative mass. Now we see there are two types of charges and so forces are of two types, sometimes attractive, and sometimes repulsive.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.02: If glass is rubbed with silk and a plastic is rubbed with flannel positive and negative charges can be produced,",
+      "figure_no": "10.02",
+      "box_2d": [
+        383,
+        126,
+        545,
+        847
+      ],
+      "description": "Illustration showing a glass rod being rubbed with a silk cloth and a plastic rod being rubbed with a flannel cloth, demonstrating the production of positive and negative charges.",
+      "reading_order_anchor": "Static Electricity by Friction"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 198,
+  "pdf_page_no": 203,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 10. Prove that: $\\sqrt{\\frac{1 - \\sin A}{1 + \\sin A}} = \\sec A - \\tan A$\n\nSolution:\nL.H.S. = $\\sqrt{\\frac{1 - \\sin A}{1 + \\sin A}}$\n\n= $\\sqrt{\\frac{(1 - \\sin A)(1 - \\sin A)}{(1 + \\sin A)(1 - \\sin A)}}$ [Multiplying the numerator and denominator by $\\sqrt{1 - \\sin A}$]\n\n= $\\sqrt{\\frac{(1 - \\sin A)^2}{1 - \\sin^2 A}}$\n\n= $\\sqrt{\\frac{(1 - \\sin A)^2}{\\cos^2 A}}$\n\n= $\\frac{1 - \\sin A}{\\cos A}$\n\n= $\\frac{1}{\\cos A} - \\frac{\\sin A}{\\cos A}$\n\n= $\\sec A - \\tan A$\n\n= R.H.S (Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 11. If $\\tan A + \\sin A = a$ and $\\tan A - \\sin A = b$, prove that, $a^2 - b^2 = 4\\sqrt{ab}$\n\nSolution: Here given that, $\\tan A + \\sin A = a$ and $\\tan A - \\sin A = b$\n\nL.H.S. = $a^2 - b^2$\n\n= $(\\tan A + \\sin A)^2 - (\\tan A - \\sin A)^2$\n\n= $4 \\tan A \\cdot \\sin A$ [$\\because (a + b)^2 - (a - b)^2 = 4ab$]\n\n= $4\\sqrt{\\tan^2 A \\sin^2 A}$\n\n= $4\\sqrt{\\tan^2 A(1 - \\cos^2 A)}$\n\n= $4\\sqrt{\\tan^2 A - \\tan^2 A \\cdot \\cos^2 A}$\n\n= $4\\sqrt{\\tan^2 A - \\sin^2 A}$ [$\\because \\tan A = \\frac{\\sin A}{\\cos A}$]\n\n= $4\\sqrt{(\\tan A + \\sin A)(\\tan A - \\sin A)}$\n\n= $4\\sqrt{ab}$\n\n= R.H.S (Proved)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

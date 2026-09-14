@@ -1,0 +1,74 @@
+{
+  "printed_page_no": 322,
+  "pdf_page_no": 327,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": "16.5",
+      "section_title": "Isosceles triangle",
+      "chunk_type": "theory",
+      "content_markdown": "5. Isosceles triangle: Let $ABC$ be an isosceles triangle in which $AB = AC = a$ and $BC = b$. Draw $AD \\perp BC$. $\\therefore BD = CD = \\frac{b}{2}$. $\\triangle ABD$ is right angled. $\\therefore AD^2 = AB^2 - BD^2 = a^2 - (\\frac{b}{2})^2 = a^2 - \\frac{b^2}{4} = \\frac{4a^2 - b^2}{4}$. $\\therefore AD = \\frac{\\sqrt{4a^2 - b^2}}{2}$. Area of isosceles $\\triangle ABC = \\frac{1}{2} \\cdot BC \\cdot AD = \\frac{1}{2} \\cdot b \\cdot \\frac{\\sqrt{4a^2 - b^2}}{2} = \\frac{b}{4} \\sqrt{4a^2 - b^2}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. The lengths of the two sides of a right-angled triangle, adjacent to right angle are $6 \\text{ cm}$ and $8 \\text{ cm}$ respectively. Find the area of the triangle. Solution: Let, the sides adjacent to right angle are $a = 8 \\text{ cm}$ and $b = 6 \\text{ cm}$ respectively. $\\therefore$ Its area = $\\frac{1}{2}ab = \\frac{1}{2} \\times 6 \\times 8 \\text{ square cm} = 24 \\text{ square cm}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 2. The lengths of the two sides of a triangle are $9 \\text{ cm}$ and $10 \\text{ cm}$ respectively and the angle included between them is $60^\\circ$. Find the area. Solution: Let, the sides of triangle are $a = 9 \\text{ cm}$ and $b = 10 \\text{ cm}$ respectively. Their included angle $\\theta = 60^\\circ$. $\\therefore$ Area of the triangle = $\\frac{1}{2}ab \\sin 60^\\circ = \\frac{1}{2} \\times 9 \\times 10 \\times \\frac{\\sqrt{3}}{2} \\text{ sq cm} = 38.97 \\text{ sq cm (approx.)}$. Required area $38.97 \\text{ sq cm (approx.)}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. The lengths of the three sides of a triangle are $7 \\text{ cm}$, $8 \\text{ cm}$ and $9 \\text{ cm}$ respectively. Find its area. Solution: Let, the lengths of the sides of the triangle are $a = 7 \\text{ cm}$, $b = 8 \\text{ cm}$ and $c = 9 \\text{ cm}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Isosceles triangle",
+      "figure_no": "16.01",
+      "box_2d": [
+        135,
+        715,
+        315,
+        875
+      ],
+      "description": "An isosceles triangle ABC with sides a, a, b and altitude AD.",
+      "reading_order_anchor": "16.5"
+    },
+    {
+      "caption": "Fig 16.02: Right-angled triangle",
+      "figure_no": "16.02",
+      "box_2d": [
+        482,
+        668,
+        597,
+        885
+      ],
+      "description": "A right-angled triangle with sides 6 cm and 8 cm.",
+      "reading_order_anchor": "Example 1"
+    },
+    {
+      "caption": "Fig 16.03: Triangle with included angle",
+      "figure_no": "16.03",
+      "box_2d": [
+        697,
+        705,
+        805,
+        885
+      ],
+      "description": "A triangle with sides 9 cm and 10 cm and included angle 60 degrees.",
+      "reading_order_anchor": "Example 2"
+    }
+  ]
+}

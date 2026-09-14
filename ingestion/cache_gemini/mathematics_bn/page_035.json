@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 35,
+  "pdf_page_no": 40,
+  "chapter_no": 2,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "ডোমেন (Domain) ও রেঞ্জ (Range)",
+      "chunk_type": "theory",
+      "content_markdown": "কোনো অন্বয়ের ক্রমজোড়গুলোর প্রথম উপাদানসমূহের সেটকে এর ডোমেন এবং দ্বিতীয় উপাদানসমূহের সেটকে এর রেঞ্জ বলা হয়।\n\nমনে করি, $A$ সেট থেকে $B$ সেটে $R$ একটি অন্বয় অর্থাৎ $R \\subseteq A \\times B$। $R$ এ অন্তর্ভুক্ত ক্রমজোড়গুলোর প্রথম উপাদানসমূহের সেট হবে $R$ এর ডোমেন এবং দ্বিতীয় উপাদানসমূহের সেট হবে $R$ এর রেঞ্জ। $R$ এর ডোমেনকে ডোম $R$ এবং রেঞ্জকে রেঞ্জ $R$ লিখে প্রকাশ করা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২০. অন্বয় $S = \\{(2, 1), (2, 2), (3, 2), (4, 5)\\}$ অন্বয়টির ডোমেন ও রেঞ্জ নির্ণয় কর।\n\nসমাধান: দেওয়া আছে, $S = \\{(2, 1), (2, 2), (3, 2), (4, 5)\\}$\n\n$S$ অন্বয়ে ক্রমজোড়গুলোর প্রথম উপাদানসমূহ $2, 2, 3, 4$ এবং দ্বিতীয় উপাদানসমূহ $1, 2, 2, 5$।\n\n$\\therefore$ ডোম $S = \\{2, 3, 4\\}$ এবং রেঞ্জ $S = \\{1, 2, 5\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২১. $A = \\{0, 1, 2, 3\\}$ এবং $R = \\{(x, y) : x \\in A, y \\in A$ এবং $y = x + 1\\}$ হলে, $R$ কে তালিকা পদ্ধতিতে প্রকাশ কর এবং ডোম $R$ ও রেঞ্জ $R$ নির্ণয় কর।\n\nসমাধান: দেওয়া আছে, $R = \\{(x, y) : x \\in A, y \\in A$ এবং $y = x + 1\\}$\n\n$R$ এর বর্ণিত শর্ত থেকে পাই, $y = x + 1$।\n\nএখন, প্রত্যেক $x \\in A$ এর জন্য $y = x + 1$ এর মান নির্ণয় করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | 0 | 1 | 2 | 3 |\n|---|---|---|---|---|\n| $y$ | 1 | 2 | 3 | 4 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "যেহেতু $4 \\notin A$, কাজেই $(3, 4) \\notin R$। $\\therefore R = \\{(0, 1), (1, 2), (2, 3)\\}$\n\n$\\therefore$ ডোম $R = \\{0, 1, 2\\}$ এবং রেঞ্জ $R = \\{1, 2, 3\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "কাজ:\n\nক) $S = \\{(-3, 8), (-2, 3), (-1, 0), (0, -1), (1, 0), (2, 3)\\}$ হলে $S$ এর ডোমেন ও রেঞ্জ নির্ণয় কর।\n\nখ) $S = \\{(x, y) : x, y \\in A$ এবং $y - x = 1\\}$, যেখানে $A = \\{-3, -2, -1, 0\\}$ হলে, ডোম $S$ ও রেঞ্জ $S$ নির্ণয় কর।",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "ফাংশনের লেখচিত্র (Graph of a Function)",
+      "chunk_type": "theory",
+      "content_markdown": "ফাংশনের চিত্ররূপকে লেখচিত্র বলা হয়। ফাংশনের ধারণা সুস্পষ্ট করার ক্ষেত্রে লেখচিত্রের গুরুত্ব অপরিসীম। ফরাসি দার্শনিক ও গণিতবিদ রেনে দেকার্ত (Rene Descartes: 1596-1650) সর্বপ্রথম বীজগণিত ও জ্যামিতির মধ্যে সম্পর্ক স্থাপনে অগ্রণী ভূমিকা পালন করেন। তিনি কোনো সমতলে পরস্পর লম্বভাবে ছেদী দুইটি রেখার সাহায্যে বিন্দুর অবস্থান সুনির্দিষ্টভাবে নির্ণয়ের মাধ্যমে সমতলীয়",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

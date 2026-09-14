@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 215,
+  "pdf_page_no": 220,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": "9.2.1",
+      "section_title": "Properties of Dilute Bases",
+      "chunk_type": "theory",
+      "content_markdown": "The solution prepared by adding comparative smaller amounts of base in larger amount of water is called a dilute base.\n\n**Litmus Test:** Take a small amount of dilute sodium hydroxide solution in a test tube. Put a piece of red litmus paper in it. You will see the red litmus will turn blue. Again, take some $\text{NaOH}$ solution in a test tube. Put a blue litmus paper in the tube. The blue litmus will remain as it is, blue. This proves, the basic solution only turns red litmus into blue.\n\n**Feelings:** If you touch $\text{NaOH}$ solution with your hand, it will feel slippery. Basic compounds are slippery. Some properties of base are discussed here. However, contact with base harms our skin.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.2.2",
+      "section_title": "Dilute Base in Reaction with Metallic Salts",
+      "chunk_type": "theory",
+      "content_markdown": "Undergoing reaction with aluminum nitrate [$\text{Al(NO}_3)_3$], ferrous nitrate [$\text{Fe(NO}_3)_2$], ferric nitrate [$\text{Fe(NO}_3)_3$], zinc nitrate [$\text{Zn(NO}_3)_2$] etc. metallic salts, dilute base produces the related metallic hydroxide. Mentionable, here we have used only nitrate salts. Apart from it, metallic chloride, metallic sulfate, metallic sulfate salts will produce the same result. Look at the following example:\n\n**Reaction between dilute $\text{NaOH}$ and $\text{Al(NO}_3)_3$**\n\nIf we take some $\text{Al(NO}_3)_3$ solution in a test tube and add some drops of dilute $\text{NaOH}$ solution in it, they produce aluminum hydroxide [$\text{Al(OH)}_3$] and sodium nitrate ($\text{NaNO}_3$). $\text{Al(OH)}_3$ gathers as white precipitate at the bottom of the test tube while sodium nitrate remains dissolved in the water and it does not add any colour to the water. The reaction:\n\n$$\text{Al(NO}_3)_3 + 3\text{NaOH} \rightarrow \text{Al(OH)}_3\nu + 3\text{NaNO}_3$$\n\n**Reaction between dilute $\text{NaOH}$ and $\text{Fe(NO}_3)_2$**\n\nIf we take some ferrous nitrate $\text{Fe(NO}_3)_2$ solution in a test tube and add some drops of dilute $\text{NaOH}$ solution to it, ferrous hydroxide [$\text{Fe(OH)}_2$] and sodium nitrate ($\text{NaNO}_3$) are produced. $\text{Fe(OH)}_2$ gathers as green precipitate at the bottom of the test tube while sodium nitrate remains dissolved in the water and it does",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 168,
+  "pdf_page_no": 173,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In Chapter 7, we saw that most reactions release heat. For example, we cook, drive vehicles by burning wood, coal, natural gas. That is, heat is released in this case. The question is, where does this heat come from? Every chemical substance contains a type of energy that transforms into heat energy during reactions. This inherent energy of matter is called chemical energy. How does this energy prevail in the substances? The battery produces electricity which lights up the torch. Burning mineral oil produces heat which is then converted to electricity. Many countries are using the atomic energy to produce electricity. Chemistry or chemical reaction or nuclear reaction is involved in all these. However, these reactions also have some adverse effects on us too. This chapter will discuss all these things.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Burning of a candle",
+      "figure_no": "8.01",
+      "box_2d": [
+        261,
+        114,
+        663,
+        879
+      ],
+      "description": "A burning candle with a glowing flame against a dark background.",
+      "reading_order_anchor": "In Chapter 7, we saw that most reactions release heat."
+    }
+  ]
+}

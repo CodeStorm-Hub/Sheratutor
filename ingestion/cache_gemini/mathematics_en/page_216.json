@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 216,
+  "pdf_page_no": 221,
+  "chapter_no": 10,
+  "chapter_title": "Distance and Elevation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $\\sqrt{3}x = 105$ or, $x = \\frac{105}{\\sqrt{3}}$ or, $x = \\frac{105\\sqrt{3}}{3}$ or, $x = 35\\sqrt{3}$\n\n$\\therefore x = 60.622$ (approx.)\n\n$\\therefore$ The required distance of the point on the ground from the foot of the tree is 60.62 metre (approx.).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work: In the picture, $AB$ is a tree. From the information given in the picture\n\n1) Find the height of the tree.\n2) Find the distance of the point $C$ on the ground from the foot of the tree.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3. A ladder of 18 metre long touches the roof of a wall and makes an angle of $45^\\circ$ with the horizon. Find the height of the wall.\n\nSolution: Let, the height of the wall $AB = h$ metre, length of ladder $AC = 18\\text{m}$ and makes angle $\\angle ACB = 45^\\circ$ with the ground.\n\nFrom $\\triangle ABC$ we get, $\\sin\\angle ACB = \\frac{AB}{AC}$\n\nor, $\\sin 45^\\circ = \\frac{h}{18}$\n\nor, $\\frac{1}{\\sqrt{2}} = \\frac{h}{18} \\left[ \\because \\sin 45^\\circ = \\frac{1}{\\sqrt{2}} \\right]$\n\nor, $\\sqrt{2}h = 18$ or, $h = \\frac{18}{\\sqrt{2}}$\n\nor, $h = \\frac{18\\sqrt{2}}{2}$ [multiplying the numerator and denominator by $\\sqrt{2}$]\n\nor, $h = 12.728$ (approx.)\n\nTherefore, The required height of the wall is 12.73 (approx.).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. A tree leaned due to storm. The stick with height of 7 metre from its foot was leaned against the tree to make it straight. If the angle of depression at the point of contacting with the stick on the ground is $30^\\circ$, find the length of the stick.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Tree and point C",
+      "figure_no": "10.01",
+      "box_2d": [
+        275,
+        631,
+        407,
+        864
+      ],
+      "description": "A right-angled triangle diagram showing a tree AB, a point C on the ground, and a point D, with angles of 60 degrees.",
+      "reading_order_anchor": "Work: In the picture, AB is a tree."
+    },
+    {
+      "caption": "Fig 10.02: Ladder against a wall",
+      "figure_no": "10.02",
+      "box_2d": [
+        645,
+        673,
+        777,
+        841
+      ],
+      "description": "A right-angled triangle diagram representing a ladder AC leaning against a wall AB, with an angle of 45 degrees.",
+      "reading_order_anchor": "Example 3. A ladder of 18 metre long touches the roof of a wall"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 203,
+  "pdf_page_no": 208,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Trigonometric ratios of complementary angles",
+      "chunk_type": "theory",
+      "content_markdown": "We know, if the sum of two acute angles is $90^\\circ$, one of them is called complementary angle to the other. For example, $30^\\circ$ and $60^\\circ$, and $15^\\circ$ and $75^\\circ$ are complementary angles to each other.\n\nIn general, the angles $\\theta$ and $(90^\\circ - \\theta)$ are complementary angles to each other.\n\nLet $\\angle XOY = \\theta$ and $P$ is the point on the side $OY$ of the angle. We draw $PM \\perp OX$.\n\nSince the sum of the three angles of a triangle is two right angles, therefore, in the right angled triangle $POM$, $\\angle PMO = 90^\\circ$ and $\\angle OPM + \\angle POM = \\text{one right angle} = 90^\\circ$. $\\angle OPM = 90^\\circ - \\angle POM = 90^\\circ - \\theta$ [Since $\\angle POM = \\angle XOY = \\theta$]\n\n$\\therefore \\sin(90^\\circ - \\theta) = \\frac{OM}{OP} = \\cos \\angle POM = \\cos \\theta$\n\n$\\cos(90^\\circ - \\theta) = \\frac{PM}{OP} = \\sin \\angle POM = \\sin \\theta$\n\n$\\tan(90^\\circ - \\theta) = \\frac{OM}{PM} = \\cot \\angle POM = \\cot \\theta$\n\n$\\cot(90^\\circ - \\theta) = \\frac{PM}{OM} = \\tan \\angle POM = \\tan \\theta$\n\n$\\sec(90^\\circ - \\theta) = \\frac{OP}{PM} = \\text{cosec} \\angle POM = \\text{cosec} \\theta$\n\n$\\text{cosec}(90^\\circ - \\theta) = \\frac{OP}{OM} = \\sec \\angle POM = \\sec \\theta$\n\nWe can express the above formulae in words below :\n\nsine of complementary angle = cosine of angle\n\ncosine of complementary angle = sine of angle\n\ntangent of complementary angle = cotangent of angle etc.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work: If $\\sec(90^\\circ - \\theta) = \\frac{5}{3}$, find the value of $\\text{cosec} \\theta - \\cot \\theta$.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Trigonometric ratios of complementary angles",
+      "figure_no": "9.01",
+      "box_2d": [
+        255,
+        640,
+        410,
+        885
+      ],
+      "description": "A right-angled triangle POM with angle theta at O and angle 90-theta at P.",
+      "reading_order_anchor": "Let \\angle XOY = \\theta and P is the point on the side OY"
+    }
+  ]
+}

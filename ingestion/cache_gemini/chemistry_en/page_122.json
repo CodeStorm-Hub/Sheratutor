@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 122,
+  "pdf_page_no": 127,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": "6.2.1",
+      "section_title": "Percent Composition and Empirical Formula",
+      "chunk_type": "theory",
+      "content_markdown": "We are already familiar with the term Molecular Formula as we have learned what it is and have applied it to determine the number of atoms of elements in a molecule. The idea of an empirical formula has been introduced to express the ratio of various atoms in a molecule. For example, there are two $\text{H}$ atoms and two $\text{O}$ atoms in hydrogen peroxide ($\text{H}_2\text{O}_2$). Therefore, the ratio of the atoms in this compound is $1:1$. That means, the empirical formula of $\text{H}_2\text{O}_2$ is $\text{HO}$. The formula that shows the ratio of the number of atoms of different elements present in a molecule is called the empirical formula. We can easily determine the empirical formula of a compound if we know the percent composition of elements in it and its relative atomic mass.\n\n**Determining of Empirical Formula from the Percent Composition**\n\nThe steps required to determine the empirical formula from the percent composition are described below:\n\n**Step 1:** The percent composition of the elements is to be divided by its atomic mass.\n\n**Step 2:** Use the smallest quotient to divide the other quotients and then multiply these new quotients with the common nearest number to turn them into integers.\n\n**Step 3:** Apply these integers to the right of respective symbol of elements. That forms the empirical formula.\n\n**Step 4:** Do not write anything if the integer obtained is $1$.\n\nSuppose, in a compound, the percent compositions of carbon and hydrogen are $92.31\\%$ and $7.69\\%$ respectively.\n\nFirst, let's divide the percent compositions with their atomic masses.\n\n$$\\text{C} = \\frac{92.31}{12} = 7.69$$\n\n$$\\text{H} = \\frac{7.69}{1} = 7.69$$\n\nNow divide the quotients with the smallest of quotients:\n\n$$\\text{C} = \\frac{7.69}{7.69} = 1$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

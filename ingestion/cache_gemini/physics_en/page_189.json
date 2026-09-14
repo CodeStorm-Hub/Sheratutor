@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 189,
+  "pdf_page_no": 194,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": "7.1",
+      "section_title": "Simple Harmonic Motion",
+      "chunk_type": "theory",
+      "content_markdown": "By attaching a mass at the lower end of a spring if we release it after pulling, it will move up-down (In chapter 3 and 4 we have explained this motion). We have seen that due to friction or other means, energy is lost; and it stops after a while. Otherwise, it would move up-down for an infinite time. We have also seen that in simple harmonic motion, the energy of the mass attached to the spring exchanges between kinetic energy and potential energy. We can assume that the spring follows Hooke's law. Let’s recall the law: if the spring constant is $k$ and the position of the end of the spring is at a distance $x$ from its equilibrium position, then the restoring force $F$ of the spring is given by:\n\n$$F = -kx$$\n\nThe harmonic or oscillatory motion that obeys Hooke’s law is called simple harmonic motion. This is one of the most important motions in physics.\n\n$$T = 2\\pi \\sqrt{\\frac{m}{k}}$$\n\nIn your book, there is no scope of deducing it, but there is no harm in knowing it.\n\nIf the spring constant of a spring is $k$ and $m$ is the attached mass, then the time period of the mass is,\n\n$$T = 2\\pi \\sqrt{\\frac{m}{k}}$$\n\nIf instead of being a spring, it would be a pendulum and if the length of the pendulum is $l$ and gravitational acceleration is $g$, then the time period is:\n\n$$T = 2\\pi \\sqrt{\\frac{l}{g}}$$\n\n(No, there is no mistake, whether you hang a light mass or a heavy mass, the time period will be the same, it does not depend on the mass.)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

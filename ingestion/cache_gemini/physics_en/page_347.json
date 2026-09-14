@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 347,
+  "pdf_page_no": 352,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Radioactivity is one of the new topics that have flourished after the emergence of modern physics at the beginning of twentieth century. Radio activity is described in this chapter.\n\nElectronics is the main drive of our present civilization- this statement is not exaggerated at all. The contribution of physics behind the present electronics has been discussed in this chapter, and the instruments that have changed our lives completely have been introduced.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 13.01: Electronic circuit board",
+      "figure_no": "13.01",
+      "box_2d": [
+        263,
+        116,
+        695,
+        879
+      ],
+      "description": "A stylized illustration of a green electronic circuit board with gold-colored pathways and connection points.",
+      "reading_order_anchor": "Radioactivity is one of the new topics that have flourished after the emergence of modern physics at the beginning of twentieth century."
+    }
+  ]
+}

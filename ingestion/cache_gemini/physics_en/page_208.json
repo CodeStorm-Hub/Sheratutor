@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 208,
+  "pdf_page_no": 213,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. We can hear sound from $20\\text{ Hz}$ to $20\\text{ kHz}$. What are the wavelengths of sounds of $20\\text{ Hz}$ and $20\\text{ kHz}$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "theory",
+      "content_markdown": "### Multiple choice questions\n\n**Put tick ($\\sqrt{}$ ) mark on the correct answer**",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. What type of wave is sound?\n\n(a) Transverse wave  \n(b) Electromagnetic wave  \n(c) Longitudinal wave  \n(d) Radio wave",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. In which medium is the velocity of sound maximum?\n\n(a) Solid  \n(b) Liquid  \n(c) Gaseous  \n(d) Plasma",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. Why is a dead bat seen hanging from an electric line?\n\n(i) Bats are attracted by the induced electric field caused by the current carrying lines.  \n(ii) It did not hear the echo of ultrasonic sound ahead.  \n(iii) It is hanging with one wire and touching the other.\n\nWhich one of the following is correct?\n\n(a) i and ii  \n(b) i and iii  \n(c) ii and iii  \n(d) i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "In Figure 7.16, $\\text{S}$ is a source of sound and $\\text{AB}$ is the surface of water. Answer questions 4 and 5 on the basis of the given information and the figure considering the velocity of sound as $332\\text{ m/s}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.16",
+      "figure_no": "7.16",
+      "box_2d": [
+        542,
+        589,
+        720,
+        895
+      ],
+      "description": "Schematic diagram showing a sound source S above a water surface AB, with height measurements indicating 20 m and h = 10 m.",
+      "reading_order_anchor": "In Figure 7.16, S is a source of sound and AB is the surface of water."
+    }
+  ]
+}

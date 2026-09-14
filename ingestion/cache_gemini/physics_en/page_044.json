@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 44,
+  "pdf_page_no": 49,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "motion, then retardation starts. If the car ceases its motion, then both its velocity and acceleration become zero. You may think that the examples of uniform acceleration are rare.\n\nThere is an amazing example of uniform acceleration which we see in our surroundings. That is the acceleration due to gravity. Near the earth's surface, the value of this acceleration is $9.8 \\text{ ms}^{-2}$. If we release an object from rest from above the earth, then its velocity increases according to the equation $v = gt$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.7",
+      "section_title": "Equations of Motion",
+      "chunk_type": "theory",
+      "content_markdown": "Since we discuss only linear motion, the quantities we have talked about so far are:\n\n- $u$: initial velocity\n- $a$: acceleration\n- $t$: elapsed time\n- $v$: velocity after elapsed time\n- $s$: distance covered in elapsed time\n\nAlmost all the relationship among these quantities, are done already, only one is left, which is the relationship for the distances. If an object has no acceleration, then there is no change in its velocity. Then the initial velocity and the final velocity will be equal i.e. ($u = v$). Therefore the distance covered will be,\n\n$$s = vt$$\n\nIf there is uniform acceleration, the final velocity is:\n\n$$v = u + at$$\n\nThis equation shows that the velocity is changing with time. The entire duration is divided into many tiny equal intervals, the distance covered in each small interval will not be the same. This is because the particle's velocity changes constantly due to acceleration. However, to calculate the total distance traveled, these varying distances must be summed. Calculus, a specialized branch of mathematics, is used to perform such calculations. However, if the particle's acceleration is uniform, it is possible to determine the total distance traveled without using calculus.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

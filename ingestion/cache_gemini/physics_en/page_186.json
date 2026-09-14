@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 186,
+  "pdf_page_no": 191,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative question",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Creative question\n\n1. The distance between two electric poles is $30\\text{ m}$. A copper wire with a length of $30.001\\text{ m}$ was connected to those two pillars on a day when the temperature was $30^{\\circ}\\text{C}$. The coefficient of linear expansion of copper is $1.67 \\times 10^{-6}\\text{ K}^{-1}$. The wire snapped on a winter day when the temperature of the air was $4^{\\circ}\\text{C}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Define triple point of water.\n\n(b) If two bodies have equal amounts of heat, can they be at different temperatures? Explain.\n\n(c) Express the temperature of air in Fahrenheit scale.\n\n(d) Explain the cause for the wire to snap with mathematical logic.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. The length of two metal rods is $6\\text{ m}$. If one rod is heated to increase its temperature from $30^{\\circ}\\text{C}$ to $80^{\\circ}\\text{C}$, its length becomes $6.0051\\text{ m}$ after extension. If another rod is heated to increase its temperature from $20^{\\circ}\\text{C}$ to $60^{\\circ}\\text{C}$, its length becomes $6.0041\\text{ m}$ after extension. The co-efficient of linear expansion is $\\alpha$, the co-efficient of area expansion is $\\beta$ and the co-efficient of volume expansion is $\\gamma$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) The exchange of heat between two objects depends on which factors?\n\n(b) Write down why temperature and heat are different?\n\n(c) If the temperature of a metal rod is $80^{\\circ}\\text{C}$, what is it in the Kelvin scale?\n\n(d) Make comments about the material of the two rods with a mathematical explanation.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 150,
+  "pdf_page_no": 155,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Substance | G-Pa |\n| --- | --- |\n| Rubber | 0.01-0.1 |\n| Bone | 9 |\n| Wood | 10 |\n| Glass | 50 - 90 |\n| Aluminum | 69 |\n| Cupper | 117 |\n| Iron | 200 |\n| Diamond | 1220 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, $\\frac{T}{A} \\propto \\frac{L - L_0}{L_0}$\n\nOr, $\\frac{T}{A} = Y \\left(\\frac{L - L_0}{L_0}\\right)$\n\nHere, $Y$ is a constant. The name of this constant is Young's modulus. As strain has no unit, the unit of $Y$ is $Nm^{-2}$. Young's modulus of some substances are given in the table 5.02.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** How does the length of a substance change with the change of the value of the Young's modulus?\n\n**Answer:** Rate of change of length\n$$\\frac{L - L_0}{L_0} = \\frac{1}{Y} \\left(\\frac{T}{A}\\right)$$\n\nTherefore, if $T/A$ remains the same, the higher the value of $Y$ is, change in length will be less.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(ii) Let us consider, in normal condition a gas of volume $V_0$ is contained in a cylinder.\n\nDue to the application of pressure $P$, its volume is reduced to $V$ (Figure 5.12). Here $P$ is the stress and the Strain is: $\\frac{V - V_0}{V_0}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

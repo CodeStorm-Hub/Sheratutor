@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 254,
+  "pdf_page_no": 259,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": "10.5",
+      "section_title": "Nonmetal Minerals",
+      "chunk_type": "theory",
+      "content_markdown": "The nonmetal that are extracted from mines are called nonmetal minerals. Sulfur is a nonmetal mineral extracted from mines.\n\nSulfur\n\nSulfur is a yellow coloured substance. Sulfur mines are situated deep inside the earth. The substance is extracted from mines by the Frasch method. Three tubes with a single center is inserted into the depth of the sulfur layer which is known as a Frasch pipe. Sulfur melts at $115^{\\circ}\\text{C}$ temperature. That is why super heated water is sent through the pipe to the layer so that the element melts. We know, at $1\\text{ atm}$ pressure, the boiling point of water is $100^{\\circ}\\text{C}$ but if pressure is increased the boiling point rises up. Water at any temperature between $100-374^{\\circ}\\text{C}$ temperature at extra pressure is called super heated water. Hot air is passed at $20-22\\text{ atm}$ pressure through the centre tube. Molten sulfur comes out through the middle tube due to the effect of the pressure. It is collected in containers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Use of Sulfur",
+      "chunk_type": "theory",
+      "content_markdown": "Sulfur is used in large amounts in different industries.\n\ni. It is used in the preparation of sulfuric acid.\n\nii. It is added to rubber to make rubber more sustainable. The method is called vulcanizing of rubber.\n\niii. Sulfanide is used in the preparation of various medicines. It kills bacteria. It is produced from sulfur.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.12: Frasch Method of Sulfur Extraction.",
+      "figure_no": "10.12",
+      "box_2d": [
+        577,
+        435,
+        831,
+        908
+      ],
+      "description": "Schematic diagram showing the Frasch method of sulfur extraction using concentric pipes pumped with air, superheated water, and bringing up liquid sulfur.",
+      "reading_order_anchor": "Use of Sulfur"
+    }
+  ]
+}

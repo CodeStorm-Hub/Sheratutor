@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 95,
+  "pdf_page_no": 100,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "bond. For example, $\\text{Na}$ atom donates one electron from its outermost energy level and forms the $\\text{Na}^+$ cation with its 8 electrons in the outermost energy level. On the other hand, $\\text{Cl}$ atom receives one electron donated by $\\text{Na}$ in its outermost energy level and forms $\\text{Cl}^-$ anion with its 8 electrons in the outermost energy level. These two mutually opposite charges are attracted towards each other in a bond of electrostatic force. This attraction force is the ionic bond. In other words, in the chemical bonding between a metal and a non-metal, the bond that is formed when the elements turn into positive and negative charge is called the ionic bond. The compound that has an ionic bond is called an ionic compound.\n\n$$\\begin{aligned}\n\\text{Na} &\\longrightarrow \\text{Na}^+ + e^-\n\\\\\n\\text{Cl} + e^- &\\longrightarrow \\text{Cl}^-\n\\\\\n\\text{Na} + \\text{Cl} &\\longrightarrow \\text{Na}^+ + \\text{Cl}^- = \\text{NaCl}\n\\end{aligned}$$\n\nIn the $\\text{MgO}$ molecule, $\\text{Mg}$ donates 2 electrons to get the electronic configuration of $\\text{Ne}$ and become $\\text{Mg}^{2+}$ with 8 electrons.\n\n$$\\text{Mg} \\longrightarrow \\text{Mg}^{2+} + 2e^-$$\n\nThe $\\text{O}$ atom accepts those 2 electrons to get the electronic configuration of $\\text{Ne}$ and become $\\text{O}^{2-}$ with 8 electrons.\n\nNow, $\\text{Mg}^{2+}$ and $\\text{O}^{2-}$ come closer to form an ionic bond.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.06: Formation of sodium chloride.",
+      "figure_no": "5.06",
+      "box_2d": [
+        463,
+        116,
+        659,
+        893
+      ],
+      "description": "Bohr model diagrams showing the electron transfer from a Sodium atom to a Chlorine atom to form a Sodium cation and Chloride anion, resulting in Sodium chloride.",
+      "reading_order_anchor": "Na + Cl ———> Na⁺ + Cl⁻ = NaCl"
+    }
+  ]
+}

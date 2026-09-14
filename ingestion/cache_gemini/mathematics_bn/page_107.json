@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 107,
+  "pdf_page_no": 112,
+  "chapter_no": 5,
+  "chapter_title": "এক চলকবিশিষ্ট সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "নতুন ছাত্রের নম্বরসহ $(x + 1)$ জন ছাত্রের প্রাপ্ত নম্বরের গড় = $\\frac{1950 + 34}{x + 1} = \\frac{1984}{x + 1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) প্রশ্নমতে, $\\frac{1950}{x} = \\frac{1984}{x + 1} + 1$\n\nবা, $\\frac{1950}{x} - \\frac{1984}{x + 1} = 1$ [পক্ষান্তর করে]\n\nবা, $\\frac{1950(x + 1) - 1984x}{x(x + 1)} = 1$\n\nবা, $x^2 + x = 1950x - 1984x + 1950$ [আড়গুণন করে]\n\nবা, $x^2 + x = 1950 - 34x$\n\n$\\therefore x^2 + 35x - 1950 = 0$ [দেখানো হলো]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "গ) $x^2 + 35x - 1950 = 0$\n\nবা, $x^2 + 65x - 30x - 1950 = 0$\n\nবা, $x(x + 65) - 30(x + 65) = 0$\n\nবা, $(x + 65)(x - 30) = 0$\n\n$\\therefore x + 65 = 0$ অথবা $x - 30 = 0$\n\n$x + 65 = 0$ হলে, $x = -65$\n\nআবার, $x - 30 = 0$ হলে, $x = 30$\n\nযেহেতু ছাত্রের সংখ্যা $x$ ঋণাত্মক হতে পারে না,\n\nসুতরাং, $x \\neq -65$\n\n$\\therefore x = 30$\n\n$\\therefore$ প্রথম ক্ষেত্রে গড় = $\\frac{1950}{30} = 65$ এবং দ্বিতীয় ক্ষেত্রে গড় = $\\frac{1984}{31} = 64$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৫.২",
+      "section_title": "অনুশীলনী ৫.২",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. $x$ কে চলক ধরে $a^2x + b = 0$ সমীকরণটির ঘাত নিচের কোনটি?\n\nক) 3 খ) 2 গ) 1 ঘ) 0",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. নিচের কোনটি অভেদ?\n\nক) $(x + 1)^2 + (x - 1)^2 = 4x$ \n\nখ) $(x + 1)^2 + (x - 1)^2 = 2(x^2 + 1)$\n\nগ) $(a + b)^2 + (a - b)^2 = 2ab$ \n\nঘ) $(a - b)^2 = a^2 + 2ab + b^2$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $(x - 4)^2 = 0$ সমীকরণের মূল কয়টি?",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

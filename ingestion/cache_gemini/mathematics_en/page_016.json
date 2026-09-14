@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 16,
+  "pdf_page_no": 21,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 16. How much is $2.5 \\times 4.3\\dot{5} \\times 1.2\\dot{3}\\dot{4}$?\n\nSolution:\n$$2.5 = \\frac{25}{10} = \\frac{5}{2}$$\n$$4.3\\dot{5} = \\frac{435 - 43}{90} = \\frac{392}{90}$$\n$$1.2\\dot{3}\\dot{4} = \\frac{1234 - 12}{990} = \\frac{1222}{990} = \\frac{611}{495}$$\n$$\\therefore 2.5 \\times 4.3\\dot{5} \\times 1.2\\dot{3}\\dot{4} = \\frac{5}{2} \\times \\frac{392}{90} \\times \\frac{611}{495} = \\frac{119756}{8910} = 13.440628...$$\n\nThe desired result is $13.440628$ (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:** 1) Multiply $1.1\\dot{3}$ with $2.6$. 2) How much is $0.\\dot{2} \\times 1.1\\dot{2} \\times 0.0\\dot{8}\\dot{1}$?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 17. Divide $7.3\\dot{2}$ by $0.2\\dot{7}$.\n\nSolution:\n$$7.3\\dot{2} = \\frac{732 - 7}{99} = \\frac{725}{99}$$\n$$0.2\\dot{7} = \\frac{27 - 2}{90} = \\frac{25}{90} = \\frac{5}{18}$$\n$$\\therefore 7.3\\dot{2} \\div 0.2\\dot{7} = \\frac{725}{99} \\div \\frac{5}{18} = \\frac{725}{99} \\times \\frac{18}{5} = \\frac{290}{11} = 26.\\dot{3}\\dot{6}$$\n\nThe desired result is $26.\\dot{3}\\dot{6}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 18. Divide $2.2\\dot{7}1\\dot{8}$ by $1.9\\dot{1}\\dot{2}$.\n\nSolution:\n$$2.2\\dot{7}1\\dot{8} = \\frac{22718 - 2}{9999} = \\frac{22716}{9999}$$\n$$1.9\\dot{1}\\dot{2} = \\frac{1912 - 19}{990} = \\frac{1893}{990}$$\n$$\\therefore 2.2\\dot{7}1\\dot{8} \\div 1.9\\dot{1}\\dot{2} = \\frac{22716}{9999} \\div \\frac{1893}{990} = \\frac{22716}{9999} \\times \\frac{990}{1893} = \\frac{120}{101} = 1.\\dot{1}8\\dot{8}\\dot{1}$$\n\nThe desired result is $1.\\dot{1}8\\dot{8}\\dot{1}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

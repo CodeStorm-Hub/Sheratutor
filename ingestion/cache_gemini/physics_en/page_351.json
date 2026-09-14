@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 351,
+  "pdf_page_no": 356,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "neutrons. For example: an isotope of uranium turns into thorium by emitting an alpha particle.\n$$U_{238} \\rightarrow Th_{234} + He^{++}$$\n\nThe atomic number of uranium is 92 and thorium is 90. It is notable that number of electrons of an atom is not significant. Radioactive nuclei of atoms can easily give up or receive extra electrons to and from its surroundings.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Figure 13.01: It is possible to stop an alpha particle by a single sheet of paper, because it can lose its energy by too much ionizing. It is necessary to stop beta ray or electrons using an aluminum sheet of a few millimeter thick. A thick lead sheet is needed to stop gamma ray.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.1.2",
+      "section_title": "Beta ray",
+      "chunk_type": "theory",
+      "content_markdown": "A Beta particle is actually an electron (it is of course a matter of wonder that a nucleus is consists of neutrons and protons only, so how does an electron come out from a nucleus?) For this, inside the nucleus a neutron has to dissociate into a proton and an electron.\n$$n^0 \\rightarrow p^+ + e^- + \\bar{\\nu}$$\n\nThat is, a charge-less neutron is converted into a positively charged proton and a negatively charged electron, so the total amount of charge remains unchanged. In the right side of the equation, ($\\bar{\\nu}$) indicates the anti particle of a neutrino (anti-neutrino), a mysterious particle of the world of physics, which is chargeless and its mass is very small.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 13.01: It is possible to stop an alpha particle by a single sheet of paper, because it can lose its energy by too much ionizing. It is necessary to stop beta ray or electrons using an aluminum sheet of a few millimeter thick. A thick lead sheet is needed to stop gamma ray.",
+      "figure_no": "13.01",
+      "box_2d": [
+        256,
+        165,
+        555,
+        805
+      ],
+      "description": "A diagram showing the penetration power of alpha, beta, and gamma rays through paper, aluminum, and lead sheets.",
+      "reading_order_anchor": "Figure 13.01: It is possible to stop an alpha particle by a single sheet of paper, because it can lose its energy by too much ionizing. It is necessary to stop beta ray or electrons using an aluminum sheet of a few millimeter thick. A thick lead sheet is needed to stop gamma ray."
+    }
+  ]
+}

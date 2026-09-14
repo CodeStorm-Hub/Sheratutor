@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 45,
+  "pdf_page_no": 50,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Since the velocity is changing every moment hence we cannot write the equation $s = vt$ but if we consider an average velocity $V$ then we can write\n\n$$s = Vt$$\n\nIn the case of a uniformly accelerated particle, the average velocity over a specific time interval is equal to the velocity at the midpoint of that interval.\n\n$$V = \\frac{u + v}{2} = \\frac{u + (u + at)}{2}$$\n\n$$V = u + \\frac{1}{2}at$$\n\nTherefore the travelled distance is,\n\n$$s = Vt$$\n\n$$s = \\left(u + \\frac{1}{2}at\\right)t$$\n\n$$s = ut + \\frac{1}{2}at^2$$\n\nIn all the equations of motion we have already deduced the time $t$ is present. We can deduce another equation in which $t$ is absent.\n\nSuch as:\n\n$$v = u + at$$\n\n$$v^2 = (u + at)^2 = u^2 + 2uat + a^2t^2 = u^2 + 2a \\left(ut + \\frac{1}{2}at^2\\right)$$\n\n$$v^2 = u^2 + 2as$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.08: Average velocity is the mid time velocity of the initial and final velocity.",
+      "figure_no": "2.08",
+      "box_2d": [
+        203,
+        538,
+        367,
+        861
+      ],
+      "description": "A velocity-time graph showing a linearly increasing velocity from initial velocity u to final velocity v over time t, with the midpoint velocity V at t/2.",
+      "reading_order_anchor": "In the case of a uniformly accelerated particle..."
+    }
+  ]
+}

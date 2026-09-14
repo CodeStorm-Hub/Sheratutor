@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 294,
+  "pdf_page_no": 299,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Not only thunderbolt occurs in the pointy needles, but also the needles can pass opposite charges to neutralize the charges stored in the clouds. That is why, when lightning arresters are installed in tall buildings, the risk of that building being thunderstruck is reduced greatly.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.8.6",
+      "section_title": "Static Electric Color Spray",
+      "chunk_type": "theory",
+      "content_markdown": "Static electric color sprays are used now-a-days to paint cars, bicycles, steel cupboards and other metallic things. In these sprays very small particles of colors are created and since they are charged, while getting out one particle repels another particle and spreads out. So a large space can be smoothly painted using spray.\n\nTo charge the color particles, the pointy head of the spray is connected with a high potential source. The thing to be charged is connected with the opposite potential or the earth. As the color particles are charged, they are attracted towards the body and firmly attached with the body. Not only that, the color particles can travel along electric lines of force and can reach the hidden corners and create a layer of paint in there.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.01",
+      "section_title": "Friction and induction",
+      "chunk_type": "theory",
+      "content_markdown": "**Objective:** To create charges from friction and induction\n**Apparatus:** Comb, aluminium foil.\n**Theory:** While combing hair in winter, negative charges get stored in the comb.\n\n**Working Procedure:**\n1) Take a very small piece of aluminium foil and roll it into a ball.\n2) After combing the hair, bring the comb close to the aluminium foil ball. If enough negative charges are accumulated on the comb, it will induce a positive charge at the front side of the ball. (Since aluminium foil is a conductor, the electrons in front will easily move back.) The front side will be attracted by the comb and the ball will jump and stick to the comb.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

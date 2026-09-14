@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 128,
+  "pdf_page_no": 133,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "Acute angle and obtuse angle",
+      "chunk_type": "theory",
+      "content_markdown": "An angle which is less than a right angle is called an acute angle and an angle greater than one right angle but less than two right angles is an obtuse angle. In the figure, $\\angle AOC$ is an acute angle and $\\angle AOD$ is an obtuse angle. Here $\\angle AOB$ is a right angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Reflex angle",
+      "chunk_type": "theory",
+      "content_markdown": "An angle which is greater than two right angles and less than four right angles is called a reflex angle. In the figure, $\\angle AOC$ is a reflex angle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3",
+      "section_title": "Complementary angle",
+      "chunk_type": "theory",
+      "content_markdown": "If the sum of two angles is one right angle, the two angles are called complementary angles. In the adjacent figure, $\\angle AOB$ is a right angle. The ray $OC$ is in the inner side of the angle and makes two angles $\\angle AOC$ and $\\angle COB$. So taking together the measurement of these two angles is one right angle. The angles $\\angle AOC$ and $\\angle COB$ are complementary angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.4",
+      "section_title": "Supplementary angle",
+      "chunk_type": "theory",
+      "content_markdown": "If the sum of two angles is 2 right angles, two angles are called supplementary angles. The point $O$ is an internal point of the line $AB$. $OC$ is a ray which is different from the ray $OA$ and ray $OB$. As a result two angles $\\angle AOC$ and $\\angle COB$ are formed. The measurement of this two angles is equal to the measurement of the straight angle $\\angle AOB$ i.e., two right angles. The angles $\\angle AOC$ and $\\angle COB$ are supplementary angles.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Acute, obtuse and right angles",
+      "figure_no": "6.01",
+      "box_2d": [
+        75,
+        646,
+        225,
+        875
+      ],
+      "description": "A diagram showing rays OA, OB, OC, and OD originating from point O, illustrating acute, obtuse, and right angles.",
+      "reading_order_anchor": "An angle which is less than a right angle is called an acute angle and an angle greater than one right angle but less than two right angles is an obtuse angle."
+    },
+    {
+      "caption": "Fig 6.02: Reflex angle",
+      "figure_no": "6.02",
+      "box_2d": [
+        285,
+        646,
+        385,
+        875
+      ],
+      "description": "A diagram showing a reflex angle formed by rays OA, OC, and OB.",
+      "reading_order_anchor": "An angle which is greater than two right angles and less than four right angles is called a reflex angle."
+    },
+    {
+      "caption": "Fig 6.03: Complementary angles",
+      "figure_no": "6.03",
+      "box_2d": [
+        485,
+        646,
+        595,
+        875
+      ],
+      "description": "A diagram showing a right angle AOB divided by ray OC into two complementary angles.",
+      "reading_order_anchor": "In the adjacent figure, $\\angle AOB$ is a right angle."
+    },
+    {
+      "caption": "Fig 6.04: Supplementary angles",
+      "figure_no": "6.04",
+      "box_2d": [
+        765,
+        646,
+        885,
+        875
+      ],
+      "description": "A diagram showing a straight line AB with ray OC, forming two supplementary angles.",
+      "reading_order_anchor": "The point O is an internal point of the line AB."
+    }
+  ]
+}

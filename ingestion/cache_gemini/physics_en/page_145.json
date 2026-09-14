@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 145,
+  "pdf_page_no": 150,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The pressure on the surface of the earth originates from the weight of the air column. So if we rise above then the height of the air column above us will decrease, the weight will also decrease, due to this the air pressure will also decrease there. The matter is true and how this air pressure decreases with height is shown in Figure 5.09. What you have to observe separately is that the air pressure has decreased by half after reaching a height of five kilometer. Generally, one may ask by reduction of pressure why does it not become zero after the next five kilometer? There is a specific reason behind it. Air or gas can be compressed by putting a pressure. So on the surface of the earth, air becomes most compressed where the air pressure is maximum i.e. the density of air is maximum there. As we go above, the pressure of air will reduce, density of air will decrease as well.\n\nThere are many practical aspects of reducing density of the air with height.\n\nWhen a plane flies in the sky, the friction of air acts as a big problem. The higher we go, the density of wind will be reduced, and friction will also be reduced. Therefore, really big planes try to fly through as high as possible in the sky. Generally it may seem that why do the planes not fly height at very big as then the friction will be decreased further. The reason is that the planes need powerful engines to fly and oxygen is required to burn the fuel of those engines. The amount of oxygen is less where the density of air is less as at great heights. So at higher altitudes the engine of the plane will not work due to the shortage of oxygen.\n\nThose who climb to the peak of mountains face the same problem. The higher they climb the problem of less oxygen due to reducing density of air is more than the problem of less air pressure. For this reason those who climb mountains have to practice not only how to survive in less oxygen but also have to learn how to",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.09: Air pressure reduces with height.",
+      "figure_no": "5.09",
+      "box_2d": [
+        427,
+        417,
+        691,
+        902
+      ],
+      "description": "Line graph showing air pressure in atmospheres against height in kilometers.",
+      "reading_order_anchor": "The matter is true and how this air pressure decreases with height is shown in Figure 5.09."
+    }
+  ]
+}

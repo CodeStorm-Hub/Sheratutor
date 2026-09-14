@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 83,
+  "pdf_page_no": 88,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Rubber Band Spring Balance",
+      "chunk_type": "theory",
+      "content_markdown": "A spring balance is used to measure the weight of small objects. It is less likely that all of you have a spring balance. So, to serve the purpose you can make a spring balance with the help of a rubber band. You can use the plastic lid of a container as a pan to keep a weight. Make four equidistant holes round the pan and tie with a string. Now hang the pan from one end of a rubber band. Attach the other end of the rubber band to a board with the help of a paper clip. Now hang the board in a suitable place.\n\nPut a black dot on the string from which you have hanged the pan with the rubber band. When there is no weight on the pan, put a black spot on the board where the black spot of the string remains. This point indicates zero mass. Now put five coins of five taka in the pan. Since mass of each coin is $8\\text{ gm}$, hence total mass will be $40\\text{ gm}$. Then put another black mark on the board where the black spot of the string stays. This indicates mass of $40\\text{ gm}$. Now draw a line from $0\\text{ gm}$ to $40\\text{ gm}$ marking points and divide the line into four equal parts. Each division equals $10\\text{ gm}$ mass. Now increase the length of the line and calibrate it to measure more mass. Divide the line accordingly, as much accurately as you want to measure the mass.\n\nNow your rubber band balance is ready, now with this balance you will be able to measure the mass of small objects around you. If you have an actual",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.11: A spring balance made of a rubber band",
+      "figure_no": "3.11",
+      "box_2d": [
+        366,
+        230,
+        614,
+        755
+      ],
+      "description": "Photographs showing four steps of making a rubber band spring balance with a pan holding various objects like an insect and fruits.",
+      "reading_order_anchor": "Rubber Band Spring Balance"
+    }
+  ]
+}

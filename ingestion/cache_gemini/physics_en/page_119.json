@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 119,
+  "pdf_page_no": 124,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this reaction, the three neutrons that have come out, actually come out with huge speed, so the other uranium ($^{235}_{92}\\text{U}$) nuclei cannot capture them very easily. If by some means their kinetic energy can be lowered, then they will be captured by other uranium ($^{235}_{92}\\text{U}$) nuclei and thus will break it creating some more energy and releasing three new neutrons. In a nuclear power plant, this work is done, so when the speed of the emerging neutrons goes down, they again break other nucleuses and this process continues. This process is called a chain reaction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In this process, a huge amount of heat energy is produced, using this heat energy water is vaporized and turbine is rotated with the help of this vapor and electricity is produced from the generator. This type of power plant is called a nuclear power plant. It is possible to get thousands of megawatt power from such a power plant very easily. The wastage material that is produced after the nuclear reaction is terribly radioactive; so many types of precautionary measures have to be taken when processing them. If the excess neutrons that emerge after a nuclear reaction are absorbed somewhere else by any means, then the nuclear reaction ceases. There is a special type of rod called a control rod to absorb the neutrons in a nuclear reactor. These are used to control the nuclear reactor.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 4.06: Energy production from nuclear reaction",
+      "figure_no": "4.06",
+      "box_2d": [
+        110,
+        138,
+        342,
+        805
+      ],
+      "description": "Schematic diagram showing a nuclear fission reaction where a neutron hits a $^{235}_{92}\\text{U}$ nucleus, producing energy, $^{141}_{\\text{ }}\\text{Ba}$, $^{92}_{\\text{ }}\\text{Kr}$, and three outgoing neutrons.",
+      "reading_order_anchor": "In this reaction, the three neutrons that have come out..."
+    }
+  ]
+}

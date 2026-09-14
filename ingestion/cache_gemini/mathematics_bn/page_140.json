@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 140,
+  "pdf_page_no": 145,
+  "chapter_no": 7,
+  "chapter_title": "ব্যবহারিক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সুতরাং দুই বাহুর অন্তর, $AB - AC = AB - AD = BD = d$\n\nএখন, $\\triangle ABC$ এ $BC = a, AB - AC = d$ এবং $\\angle ABC = \\angle x$\n\nসুতরাং, $\\triangle ABC$ ই নির্ণেয় ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) প্রদত্ত কোণ সূক্ষ্মকোণ না হলে, উপরের পদ্ধতিতে অঙ্কন করা সম্ভব নয়। কেন? এ ক্ষেত্রে ত্রিভুজটি আঁকার কোনো উপায় বের কর।\n\nখ) ত্রিভুজের ভূমি, ভূমি সংলগ্ন একটি সূক্ষ্মকোণ ও অপর দুই বাহুর অন্তর দেওয়া আছে। বিকল্প পদ্ধতিতে ত্রিভুজটি অঙ্কন কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ৩. ত্রিভুজের ভূমি সংলগ্ন দুইটি কোণ ও পরিসীমা দেওয়া আছে। ত্রিভুজটি আঁকতে হবে।\n\nমনে করি, একটি ত্রিভুজের পরিসীমা $p$ এবং ভূমি সংলগ্ন দুইটি কোণ $\\angle x$ ও $\\angle y$ দেওয়া আছে। ত্রিভুজটি আঁকতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন:\n\n১. যেকোনো একটি রশ্মি $DF$ থেকে পরিসীমা $p$ এর সমান করে $DE$ অংশ কেটে নিই। $D$ ও $E$ বিন্দুতে $DE$ রেখাংশের একই পাশে $\\angle x$ এর সমান $\\angle EDL$ এবং $\\angle y$ এর সমান $\\angle DEM$ আঁকি।\n\n২. কোণ দুইটির দ্বিখণ্ডক $DG$ ও $EH$ আঁকি।\n\n৩. মনে করি, $DG$ ও $EH$ রশ্মিদ্বয় পরস্পরকে $A$ বিন্দুতে ছেদ করে। $A$ বিন্দুতে $\\angle ADE$ এর সমান $\\angle DAB$ এবং $\\angle AED$ এর সমান $\\angle EAC$ আঁকি।\n\n৪. $AB$ এবং $AC$ রশ্মিদ্বয় $DE$ রেখাংশকে যথাক্রমে $B$ ও $C$ বিন্দুতে ছেদ করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে, $\\triangle ABC$ ই উদ্দিষ্ট ত্রিভুজ।\n\nপ্রমাণ: $\\triangle ABD$ এ $\\angle ADB = \\angle DAB$ [অঙ্কন অনুসারে]\n\n$\\therefore AB = DB$\n\nআবার, $\\triangle ACE$ এ $\\angle AEC = \\angle EAC$\n\n$\\therefore CA = CE$\n\nসুতরাং $\\triangle ABC$ এ $AB + BC + CA = DB + BC + CE = DE = p$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৭.০৪",
+      "figure_no": "7.04",
+      "box_2d": [
+        498,
+        598,
+        750,
+        885
+      ],
+      "description": "ত্রিভুজ অঙ্কনের জ্যামিতিক ধাপসমূহ যেখানে পরিসীমা p এবং কোণ x ও y ব্যবহার করা হয়েছে।",
+      "reading_order_anchor": "অঙ্কন:"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 228,
+  "pdf_page_no": 233,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) প্রদত্ত সমীকরণজোট: $\\begin{cases} 2x - 5y = 3 \\\\ x + 3y = 1 \\end{cases}$\n\n$x$ এর সহগদ্বয়ের অনুপাত $\\frac{2}{1}$\n\n$y$ এর সহগদ্বয়ের অনুপাত $\\frac{-5}{3}$\n\nআমরা পাই, $\\frac{2}{1} \\neq \\frac{-5}{3}$\n\n$\\therefore$ সমীকরণজোটটি সমঞ্জস্য ও পরস্পর অনির্ভরশীল। সমীকরণজোটটির একটিমাত্র (অনন্য) সমাধান আছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "গ) প্রদত্ত সমীকরণজোট: $\\begin{cases} 3x - 5y = 7 \\\\ 6x - 10y = 15 \\end{cases}$\n\n$x$ এর সহগদ্বয়ের অনুপাত $\\frac{3}{6}$ বা $\\frac{1}{2}$\n\n$y$ এর সহগদ্বয়ের অনুপাত $\\frac{-5}{-10}$ বা $\\frac{1}{2}$\n\nধ্রুবক পদদ্বয়ের অনুপাত $\\frac{7}{15}$\n\nআমরা পাই, $\\frac{3}{6} = \\frac{-5}{-10} \\neq \\frac{7}{15}$\n\n$\\therefore$ সমীকরণজোটটি অসমঞ্জস্য ও পরস্পর অনির্ভরশীল। সমীকরণজোটটির কোনো সমাধান নেই।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $x - 2y + 1 = 0, 2x + y - 3 = 0$ সমীকরণজোটটি সমঞ্জস্য কি না, পরস্পর নির্ভরশীল কি না যাচাই কর এবং সমীকরণজোটটির কয়টি সমাধান থাকতে পারে তা নির্দেশ কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "12.1",
+      "section_title": "অনুশীলনী ১২.১",
+      "chunk_type": "theory",
+      "content_markdown": "নিচের সরল সহসমীকরণগুলো সমঞ্জস্য/অসমঞ্জস্য, পরস্পর নির্ভরশীল/অনির্ভরশীল কি না যুক্তিসহ উল্লেখ কর এবং এগুলোর সমাধানের সংখ্যা নির্দেশ কর:\n\n১. $\\begin{cases} x - y = 4 \\\\ x + y = 10 \\end{cases}$ \n\n২. $\\begin{cases} 2x + y = 3 \\\\ 4x + 2y = 6 \\end{cases}$ \n\n৩. $\\begin{cases} x - y - 4 = 0 \\\\ 3x - 3y - 10 = 0 \\end{cases}$ \n\n৪. $\\begin{cases} 3x + 2y = 0 \\\\ 6x + 4y = 0 \\end{cases}$ \n\n৫. $\\begin{cases} 3x + 2y = 0 \\\\ 9x - 6y = 0 \\end{cases}$ \n\n৬. $\\begin{cases} 5x - 2y - 16 = 0 \\\\ 3x - \\frac{6}{5}y = 2 \\end{cases}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

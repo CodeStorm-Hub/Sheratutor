@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 243,
+  "pdf_page_no": 248,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In class VIII, we have solved such system of equations and learnt to form and solve simultaneous equations related to real life problems. In this chapter, these have been discussed in more details.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "First, we consider the equation $2x + y = 12$. This is a simple equation in two variables.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the equation, can we get such values of $x$ and $y$ on the left hand side for which the sum of twice the first with the second will be equal to 12 of the right hand side; that is, the equation will be satisfied by those two values?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, we fill in the following chart from the equation $2x + y = 12$:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Value of $x$ | Value of $y$ | Value of L.H.S $(2x + y)$ | R.H.S |\n| :--- | :--- | :--- | :--- |\n| $-2$ | $16$ | $-4 + 16 = 12$ | $12$ |\n| $0$ | $12$ | $0 + 12 = 12$ | $12$ |\n| $3$ | $6$ | $6 + 6 = 12$ | $12$ |\n| $5$ | $2$ | $10 + 2 = 12$ | $12$ |\n| $\\dots$ | $\\dots$ | $\\dots = 12$ | $12$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The equation has infinite number of solutions. Among those, four solutions are: $(-2, 16), (0, 12), (3, 6), (5, 2)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again, we fill in the following chart from another equation $x - y = 3$:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Value of $x$ | Value of $y$ | Value of L.H.S $(x - y)$ | R.H.S |\n| :--- | :--- | :--- | :--- |\n| $-2$ | $-5$ | $-2 + 5 = 3$ | $3$ |\n| $0$ | $-3$ | $0 + 3 = 3$ | $3$ |\n| $3$ | $0$ | $3 - 0 = 3$ | $3$ |\n| $5$ | $2$ | $5 - 2 = 3$ | $3$ |\n| $\\dots$ | $\\dots$ | $\\dots = 3$ | $3$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The equation has infinite number of solutions. Among those, four solutions are: $(-2, -5), (0, -3), (3, 0), (5, 2)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the two equations discussed above are considered together a system, both the equations will be satisfied simultaneously only by $(5, 2)$. Both the equations will not be satisfied simultaneously by any other values.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, the solution of the system of equations $2x + y = 12$ and $x - y = 3$ is $(x, y) = (5, 2)$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

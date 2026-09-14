@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 175,
+  "pdf_page_no": 180,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুভূমিক অবস্থানের জন্য এ নামসমূহ সার্থক। আবার সমকোণী ত্রিভুজের সূক্ষ্মকোণদ্বয়ের একটির সাপেক্ষে অবস্থানের প্রেক্ষিতেও বাহুগুলোর নামকরণ করা হয়। যথা:\n\n১. 'অতিভুজ (hypotenuse)', সমকোণী ত্রিভুজের বৃহত্তম বাহু যা সমকোণের বিপরীত বাহু\n২. 'বিপরীত বাহু (opposite side)', যা হলো প্রদত্ত কোণের সরাসরি বিপরীত দিকের বাহু\n৩. 'সন্নিহিত বাহু (adjacent side)', যা প্রদত্ত কোণ সৃষ্টিকারী একটি রেখাংশ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $\\angle PON$ কোণের জন্য অতিভুজ $OP$, সন্নিহিত বাহু $ON$, বিপরীত বাহু $PN$ | $\\angle OPN$ কোণের জন্য অতিভুজ $OP$, সন্নিহিত বাহু $PN$, বিপরীত বাহু $ON$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "জ্যামিতিক চিত্রের শীর্ষবিন্দু চিহ্নিত করার জন্য বড় হাতের বর্ণ ও বাহু নির্দেশ করতে ছোট হাতের বর্ণ ব্যবহার করা হয়। কোণ নির্দেশের জন্য প্রায়শই গ্রিক বর্ণ ব্যবহৃত হয়। গ্রিক বর্ণমালার ছয়টি বহুল ব্যবহৃত বর্ণ হলো:\n\n| alpha $\\alpha$ | beta $\\beta$ | gamma $\\gamma$ | theta $\\theta$ | phi $\\phi$ | omega $\\omega$ |\n| :--- | :--- | :--- | :--- | :--- | :--- |\n| আলফা | বিটা | গামা | থিটা | ফাই | ওমেগা |\n\nপ্রাচীন গ্রিসের বিখ্যাত গণিতবিদদের হাত ধরেই জ্যামিতি ও ত্রিকোণমিতিতে গ্রিক বর্ণগুলোর ব্যবহার হয়ে আসছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. $\\theta$ কোণের জন্য অতিভুজ, সন্নিহিত বাহু ও বিপরীত বাহু চিহ্নিত কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\n\n(ক) অতিভুজ $17$ একক, বিপরীত বাহু $8$ একক, সন্নিহিত বাহু $15$ একক\n(খ) অতিভুজ $p$, বিপরীত বাহু $r$, সন্নিহিত বাহু $q$\n(গ) অতিভুজ $EF$, বিপরীত বাহু $EG$, সন্নিহিত বাহু $FG$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. $\\alpha$ ও $\\beta$ কোণের জন্য অতিভুজ, সন্নিহিত বাহু ও বিপরীত বাহুর দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০১: সমকোণী ত্রিভুজের বাহুসমূহ",
+      "figure_no": "9.01",
+      "box_2d": [
+        215,
+        355,
+        335,
+        645
+      ],
+      "description": "দুটি সমকোণী ত্রিভুজ যেখানে কোণ ও বাহুর অবস্থান দেখানো হয়েছে।",
+      "reading_order_anchor": "অনুভূমিক অবস্থানের জন্য এ নামসমূহ সার্থক।"
+    },
+    {
+      "caption": "চিত্র ৯.০২: উদাহরণ ১ এর চিত্রসমূহ",
+      "figure_no": "9.02",
+      "box_2d": [
+        705,
+        260,
+        785,
+        735
+      ],
+      "description": "তিনটি সমকোণী ত্রিভুজ (ক), (খ), (গ) যেখানে কোণ ও বাহুর মান দেওয়া আছে।",
+      "reading_order_anchor": "উদাহরণ ১. $\\theta$ কোণের জন্য অতিভুজ, সন্নিহিত বাহু ও বিপরীত বাহু চিহ্নিত কর।"
+    }
+  ]
+}

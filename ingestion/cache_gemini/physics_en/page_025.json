@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 25,
+  "pdf_page_no": 30,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": "1.7",
+      "section_title": "Error and Accuracy",
+      "chunk_type": "theory",
+      "content_markdown": "Error is a negative word and if the word \"error in measurement\" used, we think that the person who is doing the measurement is not performing his duties properly and an error has occurred! But this is not the case. Sometimes error may occur due to the person who is doing the measurement for his negligence, but we have to know that the instrument with which we measure is not error free. Therefore, there is a limit of how much accurately we can measure, i.e. it is very natural to have errors in measurement. But there is a need to measure to what extent a measurement is accurate. The reliability of a result will be increased if we can inform how accurate the result is when we publish the result of an experiment. You can report the measurement of the accuracy of your experiment if you know some conventional rules for finding the accuracy of an experiment.\n\nSuppose, you are measuring the length of an object by a scale. How accurately you will measure the length of the object depends on how finely your scale is graduated. If the scale is graduated in $1\\text{ cm}$ intervals then you will express your result for length in some definite number of $\\text{cm}$. But the real length of the object is not exactly equal to this mentioned number of $\\text{cm}$ but perhaps very close to it, so there is a possibility of uncertainty in your measured length. That is why, we add that amount of uncertainty with the measured result. Therefore, if we see the length is close to $4\\text{ cm}$, we will say the length of the object is:\n\n$$(4.0 \\pm 0.5)\\text{ cm}$$\n\nTherefore the length of the object may have any value within $3.5\\text{ cm}$ to $4.5\\text{ cm}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** What is the length of the object shown in Figure 1.11?\n\n**Answer:** The length of the object is $7 \\pm 0.5\\text{ mm}$. That is, the length of the object will be of any value from $6.5\\text{ mm}$ to $7.5\\text{ mm}$.",
+      "activity_tag": "Example"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 1.11 : The length of the object beside the scale is nearly 7 mm",
+      "figure_no": "1.11",
+      "box_2d": [
+        751,
+        555,
+        871,
+        846
+      ],
+      "description": "An object placed alongside a metric scale graduated in centimeters and millimeters, showing the measurement of length.",
+      "reading_order_anchor": "Question: What is the length of the object shown in Figure 1.11?"
+    }
+  ]
+}

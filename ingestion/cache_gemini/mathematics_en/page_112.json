@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 112,
+  "pdf_page_no": 117,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "But the breadth of the path will be less than 40 metre from the breadth of the garden.\n\n$\\therefore x \\neq 40$; $\\therefore x = 5$\n\n$\\therefore$ the path is 5 metres wide",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 14. Shahik bought some pens for Tk. 240. If he would get one more pen in that money, average cost of each pen would be less by Tk. 1. How many pens did he buy?\n\nSolution: Let, shahik bought $x$ pens in total for Tk. 240. Then each pen costs Tk. $\\frac{240}{x}$.\n\nIf he would get $(x + 1)$ pens by Tk. 240, then the cost of each pen would be Tk. $\\frac{240}{x + 1}$.\n\nBy the question, $\\frac{240}{x + 1} = \\frac{240}{x} - 1$\n\nor, $\\frac{240}{x + 1} = \\frac{240 - x}{x}$\n\nor, $240x = (x + 1)(240 - x)$ [by cross-multiplication]\n\nor, $240x = 240x + 240 - x^2 - x$\n\nor, $x^2 + x - 240 = 0$ [by transposition]\n\nor, $x^2 + 16x - 15x - 240 = 0$\n\nor, $x(x + 16) - 15(x + 16) = 0$\n\nor, $(x + 16)(x - 15) = 0$\n\n$\\therefore x + 16 = 0$, or $x - 15 = 0$\n\nIf $x + 16 = 0$, $x = -16$\n\nIf $x - 15 = 0$, $x = 15$\n\nBut the number of pen $x$ cannot be negative.\n\n$\\therefore x \\neq -16$; $\\therefore x = 15$\n\n$\\therefore$ Shahik bought 15 pens.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

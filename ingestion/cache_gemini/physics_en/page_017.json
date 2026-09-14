@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 17,
+  "pdf_page_no": 22,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Table 1.05: The multiples and sub-multiples used in the SI unit",
+      "chunk_type": "table",
+      "content_markdown": "| deca | da | $10^1$ | deci | d | $10^{-1}$ |\n| --- | --- | --- | --- | --- | --- |\n| hecto | h | $10^2$ | centi | c | $10^{-2}$ |\n| kilo | k | $10^3$ | milli | m | $10^{-3}$ |\n| mega | M | $10^6$ | micro | $\\mu$ | $10^{-6}$ |\n| giga | G | $10^9$ | nano | n | $10^{-9}$ |\n| tera | T | $10^{12}$ | pico | p | $10^{-12}$ |\n| peta | P | $10^{15}$ | femto | f | $10^{-15}$ |\n| exa | E | $10^{18}$ | atto | a | $10^{-18}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.5.3",
+      "section_title": "Dimension",
+      "chunk_type": "theory",
+      "content_markdown": "We already know that though there is an infinite number of quantities around us, we can measure them with the help of seven units only. We have to know, in which units a quantity can be expressed. Often we also need to know how this quantity is formed with which fundamental quantities (length $L$, time $T$, mass $M$ etc.). The power of different fundamental quantities in a quantity is called its dimension. For example, we will see next that force is the product of mass and acceleration. Again, acceleration is the rate of change of velocity with time. And velocity is the rate of change of position with time.\n\nTherefore,\n\n$$\\text{dimensions of velocity}: \\left[\\frac{\\text{distance}}{\\text{time}}\\right] = \\frac{L}{T} = LT^{-1}$$\n\n$$\\text{dimensions of acceleration}: \\left[\\frac{\\text{distance}}{\\text{time }^2}\\right] = \\frac{L}{T^2} = LT^{-2}$$\n\nIn this book, when we will speak about a new quantity, we will try to mention the dimension of it at the same time. You will see that, this always will help you to understand the quantity, in a different way. To indicate the dimensions of a quantity in this book, it will be shown within third brackets. For example, force $F$ is expressed as $[F] = MLT^{-2}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 28,
+  "pdf_page_no": 33,
+  "chapter_no": 1,
+  "chapter_title": "ভৌত রাশি ও পরিমাপ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজেই আপেক্ষিক ত্রুটি $21\\text{ cm}^2 / 100\\text{ cm}^2 = 0.21$\nশতাংশের হিসাবে $0.21 \\times 100 = 21\\%$\n\nঅর্থাৎ দৈর্ঘ্যের পরিমাপে $10\\%$ ত্রুটি হলে ক্ষেত্রফলের বেলায় সেটি হবে প্রায় দ্বিগুণ। একইভাবে তুমি দেখাতে পারবে আয়তন মাপা হলে তার ত্রুটি হবে তিন গুণ!",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** তুমি একটি বাক্স এমন একটি রুলার দিয়ে মেপেছ, যেখানে শুধু $\\text{cm}$ দিয়ে দাগ। তুমি বাক্সটির দৈর্ঘ্য প্রস্থ এবং উচ্চতা হিসেবে পেয়েছ $10\\text{ cm}, 5\\text{ cm}, 4\\text{ cm}$, তোমার মাপে কত শতাংশ ত্রুটি আছে?\n\n**উত্তর:** যেহেতু তোমার রুলারে শুধু $\\text{cm}$ দাগ দেওয়া, কাজেই তোমার ত্রুটি $\\pm 0.5\\text{ cm}$ কাজেই তোমার মাপের ত্রুটি:\n\nদৈর্ঘ্য $10 \\pm 0.5\\text{ cm}$\nপ্রস্থ $5 \\pm 0.5\\text{ cm}$\nউচ্চতা $4 \\pm 0.5\\text{ cm}$\n\nতোমার মাপা আয়তন: $10\\text{ cm} \\times 5\\text{ cm} \\times 4\\text{ cm} = 200\\text{ cm}^3$\n\nসম্ভাব্য সবচেয়ে ছোট আয়তন:\n$(10 - 0.5)\\text{ cm} \\times (5 - 0.5)\\text{ cm} \\times (4 - 0.5)\\text{ cm} = 149.625\\text{ cm}^3$\n\nসম্ভাব্য সবচেয়ে বড় আয়তন:\n$(10 + 0.5)\\text{ cm} \\times (5 + 0.5)\\text{ cm} \\times (4 + 0.5)\\text{ cm} = 259.875\\text{ cm}^3$\n\nকাজেই আয়তন $149.625\\text{ cm}^3 < V < 259.875\\text{ cm}^3$\n\nচূড়ান্ত ত্রুটি:\n$149.625\\text{ cm}^3$ থেকে $200\\text{ cm}^3$ হচ্ছে $200\\text{ cm}^3 - 149.625\\text{ cm}^3 = 50.375\\text{ cm}^3$\n$200\\text{ cm}^3$ থেকে $259.875\\text{ cm}^3$ হচ্ছে $259.875\\text{ cm}^3 - 200\\text{ cm}^3 = 59.875\\text{ cm}^3$\n\nআমরা বড়টি নিই: অর্থাৎ চূড়ান্ত ত্রুটি $59.875\\text{ cm}^3$\n\nআপেক্ষিক ত্রুটি: $59.875\\text{ cm}^3 / 200\\text{ cm}^3 \\times 100 = 29.9375\\% \\cong 30\\%$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

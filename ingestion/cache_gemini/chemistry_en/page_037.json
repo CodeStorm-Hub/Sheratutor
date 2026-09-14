@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 37,
+  "pdf_page_no": 42,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": "3.1",
+      "section_title": "Elements and Compounds",
+      "chunk_type": "theory",
+      "content_markdown": "### Elements\n\nCertainly you have seen gold, silver or iron. No matter how far you divide pure gold, you will get nothing but gold. The same is applicable in the cases with silver or iron. When divided, the matter which does not yield anything but itself, is called element. Besides the above three, nitrogen, oxygen, phosphorus, carbon, helium, argon, magnesium, sulfur etc. are also elements. So far, a total of 118 elements have been discovered. Out of them, 98 elements are available in nature and the rest are made in the laboratory. The second group is known as artificial elements. Do you know that your body contains as many as 26 different elements?\n\n### Compounds\n\nYou have already known that an element yields the element only. If water is analyzed, we shall find two different elements- hydrogen and oxygen. The same way, if we analyze writing chalk, we get calcium, carbon and oxygen. The substances which, if divided, give away two or more elements are called compounds. In a compound, elements will always exist in the same ratio. For example, chemical analysis of any water sample collected from any place will show two hydrogens and one oxygen. That means, the ratio of hydrogen and oxygen atoms in water is 2:1. The characteristics of compounds are different from those of elements they are made of. Again, for example, at normal room temperature, hydrogen and oxygen are gaseous elements but when they make water, it is a liquid.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2",
+      "section_title": "Atoms and Molecules",
+      "chunk_type": "theory",
+      "content_markdown": "Atoms are the smallest particles of elements that contain the characteristics of the elements. For example: Nitrogen atoms contain the characteristic features of nitrogen while oxygen atoms contain the same of oxygen.\n\nWhen two or more atoms remain connected with each other in a chemical bond, it is known as a molecule. You will learn about chemical bonds in detail in chapter five. Two oxygen atoms ($O$) bond to each other to form an oxygen",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

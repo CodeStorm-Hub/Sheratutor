@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 42,
+  "pdf_page_no": 47,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": "2.6",
+      "section_title": "Acceleration and Deceleration or Retardation",
+      "chunk_type": "theory",
+      "content_markdown": "When an object moves with uniform velocity it has no acceleration. If there is a change of velocity, then there is an acceleration. More clearly, we can say, the rate of change of velocity with time is acceleration.\n\nSince velocity has both magnitude and direction, the change of velocity can occur in two ways. In our previous example, when you rode your bicycle along the curved path, the change of velocity occured at every turn and you are accelerated. Although you travelled the whole path with uniform speed, acceleration took place due to change of direction only. If you tied a stone with a string, as in the previous example, and rotated it over your head with uniform speed then the rotating stone would change its direction of motion continuously. That is, change of velocity will occur and acceleration will take place.\n\nIf your motion is linear, then there is no scope of changing the direction. Then acceleration may occur only for the change of magnitude of the velocities (speed). When the magnitude of the velocity increases, then we can say positive acceleration is taking place along the direction of the velocity. If the velocity decreases, then we can say negative acceleration or deceleration is taking place. Now we can determine the acceleration of an object moving along a straight line.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** In figure 2.06 the change of velocity of an object with time is shown. Identify where there is acceleration and where it is absent.\n\n**Answer:** There is acceleration at A; at B there is no acceleration. At C, there is acceleration; at D there is negative acceleration or deceleration.",
+      "activity_tag": "Example"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.06: Change of velocity of an object with time",
+      "figure_no": "2.06",
+      "box_2d": [
+        684,
+        537,
+        867,
+        881
+      ],
+      "description": "Line graph showing velocity versus time with segments labeled A, B, C, and D indicating different states of acceleration.",
+      "reading_order_anchor": "Example"
+    }
+  ]
+}

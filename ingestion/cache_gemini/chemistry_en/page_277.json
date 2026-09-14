@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 277,
+  "pdf_page_no": 282,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Preparation of Aldehyde",
+      "chunk_type": "theory",
+      "content_markdown": "### Preparation of Aldehyde\n\n**Addition of water:** Ethanal is produced when a solution of $20\\%$ sulfuric acid and $2\\%$ mercuric sulfate are added to ethyne at $80^\\circ\\text{C}$ temperature.\n\n$$\\text{CH}\\equiv\\text{CH} + \\text{H}_2\\text{O} \\xrightarrow[80^\\circ\\text{C}]{20\\% \\text{ H}_2\\text{SO}_4, 2\\% \\text{ HgSO}_4} \\text{CH}_3\\text{CHO}$$\nEthyne $\\quad\\quad$ Water $\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad$ Ethanal",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Formalin:** $40\\%$ of the liquid solution of formaldehyde is called formalin. Formalin contains $40\\%$ methanol and $60\\%$ water. Formalin is widely used in laboratories. It is used for preserving the dead bodies of different animals.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.5.3",
+      "section_title": "Organic acid or Fatty Acid",
+      "chunk_type": "theory",
+      "content_markdown": "The compounds which have carboxylic group ($\\text{-COOH}$) are called Organic acids or Fatty Acids. General formula of fatty acid is $\\text{C}_n\\text{H}_{2n+1}\\text{COOH}$. It is symbolized by $\\text{R-COOH}$ in short.\n\n**Naming:** Fatty Acids are named by omitting 'e' and adding (oic acid) with the names of Alkanes. Example: Ethanoic acid.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.04: Different dead bodies of animals preserved in Formalin.",
+      "figure_no": "11.04",
+      "box_2d": [
+        281,
+        117,
+        561,
+        885
+      ],
+      "description": "Photographs of glass jars containing various preserved animal specimens (frogs, snakes, etc.) in formalin solution.",
+      "reading_order_anchor": "Formalin:"
+    }
+  ]
+}

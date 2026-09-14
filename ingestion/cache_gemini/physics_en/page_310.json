@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 310,
+  "pdf_page_no": 315,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We know,\n\n$$L = \\frac{RA}{\\rho}$$\n\n$$A = \\pi r^2 = \\pi (10^{-4})^2 \\text{ m}^2 = 3.14 \\times 10^{-8} \\text{ m}^2$$\n\nFor silver, \n$$L = \\frac{3.14 \\times 10^{-8}}{1.6 \\times 10^{-8}} = 1.96 \\text{ m}$$\n\nFor copper, \n$$L = \\frac{3.14 \\times 10^{-8}}{1.7 \\times 10^{-8}} = 1.84 \\text{ m}$$\n\nFor tungsten, \n$$L = \\frac{3.14 \\times 10^{-8}}{5.5 \\times 10^{-8}} = 0.57 \\text{ m} = 57 \\text{ cm}$$\n\nFor Nichrome, \n$$L = \\frac{3.14 \\times 10^{-8}}{100 \\times 10^{-8}} = 0.03 \\text{ m} = 3 \\text{ cm}$$\n\nIf the temperature of a conductor is raised, its resistance increases, but the case is the opposite for a semiconductor. The resistance decreases if the temperature goes up in a semiconductor. The reason is, there are free electrons in a conductor for the flow of current, but a semiconductor does not have free electrons. If the temperature is raised, some electrons are found for the flow of current, so a temperature rise causes the decrease of resistance of a semiconductor.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.3",
+      "section_title": "Circuit",
+      "chunk_type": "theory",
+      "content_markdown": "If we have understood Ohm's law, we should be able to analyse circuits now. Before that, let us introduce some of the symbols that are used in circuits: (Figure 11.07)\n\nEvery substance has some resistance, but we do not consider the resistance of electrical wires while using them in circuits in our daily life. When a resistance is needed, we use different resistances prepared in special ways. Sometimes we use such resistances for some special purposes, where even their magnitudes can be changed, these are called variable resistance or rheostat.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

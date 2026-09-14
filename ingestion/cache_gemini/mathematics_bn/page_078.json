@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 78,
+  "pdf_page_no": 83,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষ কর, $\\frac{a^n}{a^n} = a^{n-n} = a^0$\n\nকিন্তু $\\frac{a^n}{a^n} = \\frac{a \\times a \\times a \\times \\dots \\times a \\quad (n \\text{ সংখ্যক})}{a \\times a \\times a \\times \\dots \\times a \\quad (n \\text{ সংখ্যক})} = 1$\n\n$\\therefore a^0 = 1$\n\nআর $\\frac{1}{a^n} = \\frac{a^0}{a^n} = a^{0-n} = a^{-n}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. মান নির্ণয় কর: ক) $\\frac{5^2}{5^3}$ খ) $\\left(\\frac{2}{3}\\right)^5 \\times \\left(\\frac{2}{3}\\right)^{-5}$\n\nসমাধান:\n\nক) $\\frac{5^2}{5^3} = 5^{2-3} = 5^{-1} = \\frac{1}{5^1} = \\frac{1}{5}$\n\nখ) $\\left(\\frac{2}{3}\\right)^5 \\times \\left(\\frac{2}{3}\\right)^{-5} = \\left(\\frac{2}{3}\\right)^{5-5} = \\left(\\frac{2}{3}\\right)^0 = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. সরল কর: ক) $\\frac{5^4 \\times 8 \\times 16}{2^5 \\times 125}$ খ) $\\frac{3 \\cdot 2^n - 4 \\cdot 2^{n-2}}{2^n - 2^{n-1}}$\n\nসমাধান:\n\nক) $\\frac{5^4 \\times 8 \\times 16}{2^5 \\times 125} = \\frac{5^4 \\times 2^3 \\times 2^4}{2^5 \\times 5^3} = \\frac{5^4 \\times 2^{3+4}}{5^3 \\times 2^5} = \\frac{5^4}{5^3} \\times \\frac{2^7}{2^5}$\n\n$= 5^{4-3} \\times 2^{7-5} = 5^1 \\times 2^2 = 5 \\times 4 = 20$\n\nখ) $\\frac{3 \\cdot 2^n - 4 \\cdot 2^{n-2}}{2^n - 2^{n-1}} = \\frac{3 \\cdot 2^n - 2^2 \\cdot 2^{n-2}}{2^n - 2^n \\cdot 2^{-1}} = \\frac{3 \\cdot 2^n - 2^{2+n-2}}{2^n - 2^n \\cdot \\frac{1}{2}}$\n\n$= \\frac{3 \\cdot 2^n - 2^n}{(1 - \\frac{1}{2}) \\cdot 2^n} = \\frac{(3-1) \\cdot 2^n}{\\frac{1}{2} \\cdot 2^n} = \\frac{2 \\cdot 2^n}{\\frac{1}{2} \\cdot 2^n} = 2 \\cdot 2 = 4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. দেখাও যে, $(a^p)^{q-r} \\cdot (a^q)^{r-p} \\cdot (a^r)^{p-q} = 1$\n\nসমাধান: $(a^p)^{q-r} \\cdot (a^q)^{r-p} \\cdot (a^r)^{p-q} = a^{p(q-r)} \\cdot a^{q(r-p)} \\cdot a^{r(p-q)} \\quad [\\because (a^m)^n = a^{mn}]$\n\n$= a^{pq-pr} \\cdot a^{qr-qp} \\cdot a^{pr-qr} = a^{pq-pr+qr-qp+pr-qr} = a^0 = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: খালি ঘর পূরণ কর:\nক) $3 \\times 3 \\times 3 \\times 3 = 3^{\\square}$ খ) $5^{\\square} \\times 5^3 = 5^5$ গ) $a^2 \\times a^{\\square} = a^{-3}$\nঘ) $(-5)^0 = \\square$ ঙ) $\\frac{1}{4^{\\square}} = 1$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

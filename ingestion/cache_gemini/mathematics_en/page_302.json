@@ -1,0 +1,88 @@
+{
+  "printed_page_no": 302,
+  "pdf_page_no": 307,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. In the adjacent figure, $\\angle B = \\angle D$ and $CD = 4AB$. Prove that, $BD = 5BL$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. A line segment drawn through the vertex $A$ of the parallelogram $ABCD$ intersects the $BC$ and $DC$ at $M$ and $N$ respectively. Prove that $BM \\times DN$ is a constant.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. In the adjacent figure $BD \\perp AC$ and $DQ = BQ = 2AQ = \\frac{1}{2}QC$. Prove that, $DA \\perp DC$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. In the triangles $\\triangle ABC$ and $\\triangle DEF, \\angle A = \\angle D$. Prove that, $\\triangle ABC : \\triangle DEF = AB \\cdot AC : DE \\cdot DF$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. The bisector $AD$ of $\\angle A$ of the triangle $ABC$ intersects $BC$ at $D$. The line segment $CE$ parallel to $DA$ intersects the line segment $BA$ extended at $E$.\n\n1) Draw the figure according to the information.\n\n2) Prove that, $BD : DC = BA : AC$\n\n3) If a line segment parallel to $BC$ intersect $AB$ and $AC$ at $P$ and $Q$ respectively, prove that $BD : DC = BP : CQ$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. In the figure, $ABC$ and $DEF$ are two similar triangles.\n\n1) Name the matching sides and matching angles of the triangles.\n\n2) Prove that, $\\frac{\\triangle ABC}{\\triangle DEF} = \\frac{AB^2}{DE^2} = \\frac{AC^2}{DF^2} = \\frac{BC^2}{EF^2}$\n\n3) If $BC = 3 \\text{ cm}, EF = 8 \\text{ cm}, \\angle B = 60^\\circ, \\frac{BC}{AB} = \\frac{3}{2}$ and area of $\\triangle ABC$ is 3 square cm, then draw the triangle $\\triangle DEF$ and find its area.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Triangle with intersecting lines",
+      "figure_no": "14.01",
+      "box_2d": [
+        85,
+        735,
+        195,
+        895
+      ],
+      "description": "A triangle with a line segment intersecting two sides.",
+      "reading_order_anchor": "8. In the adjacent figure, \\angle B = \\angle D and CD = 4AB. Prove that, BD = 5BL."
+    },
+    {
+      "caption": "Fig 14.02: Triangle with perpendicular lines",
+      "figure_no": "14.02",
+      "box_2d": [
+        275,
+        735,
+        385,
+        895
+      ],
+      "description": "A triangle with a perpendicular line segment and intersection point Q.",
+      "reading_order_anchor": "10. In the adjacent figure BD \\perp AC and DQ = BQ = 2AQ = \\frac{1}{2}QC. Prove that, DA \\perp DC."
+    },
+    {
+      "caption": "Fig 14.03: Two similar triangles",
+      "figure_no": "14.03",
+      "box_2d": [
+        645,
+        575,
+        725,
+        875
+      ],
+      "description": "Two similar triangles ABC and DEF with altitudes.",
+      "reading_order_anchor": "13. In the figure, ABC and DEF are two similar triangles."
+    }
+  ]
+}

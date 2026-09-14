@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 312,
+  "pdf_page_no": 317,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": "11.1",
+      "section_title": "Circuit Analysis",
+      "chunk_type": "theory",
+      "content_markdown": "Now we are ready to analyse a circuit. We may think that we have understood the circuit completely if we can find out the potential difference in any part of the circuit and how much current is flowing through that part. There may be many components in a circuit like battery cell, resistance, capacitor, diode, transistor etc. But now we will analyze the circuit composed of only the battery cell and resistance. In a circuit, resistances are connected with copper wires, though we have seen that copper wire has a specific resistance. But in reality, the resistance of the connecting wires is very small with respect to the resistances we use in a circuit, so, we do not consider it at all. We will assume that the wire has no resistance and the potential is the same over the whole wire.\n\nNow, let us analyse a circuit as shown in figure 11.08(a), here, a resistance is connected to the two terminals of a battery cell with two wires. Since the part CD is connected to the earth, so we can say that the potential of the lower terminal of the battery cell is zero. So, the upper terminal of the battery has a potential $V$ and there is a resistance in part BC, potential difference between two ends of the resistance is,\n\n$$V - 0 = V$$\n\nIf the resistance is $R$, the current $I$ flowing through it will be,\n\n$$I = \\frac{V}{R}$$\n\nSo, current $I$ comes out from point A of the battery and enters into point B. We have determined the voltage and current at every point of the circuit.\n\nLet us assume in the same circuit, if we connect AB part with the earth rather than part DC (Figure 11.08(b)) what will happen then? As the voltage of the battery cell is $V$ volt, so the potential difference between A and D must be $V$, as the voltage of A is zero, so the voltage of D must be $-V$. Therefore, the potential difference between B and C has to be,\n\n$$0 - (-V) = V$$\n\nResistance is $R$, so electric current:\n\n$$I = \\frac{V}{R}$$\n\nThis is the same as the previous value, which is what it is supposed to be. See, the magnitude of the potential has changed but the difference is the same.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

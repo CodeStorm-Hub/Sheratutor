@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 284,
+  "pdf_page_no": 289,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If any charge $q$ is brought in this electric field, then it will feel $F$ force on it and the magnitude of $F$ will be,\n\n$$F = Eq$$\n\nAs force $F$ is a vector and charge $q$ is a scalar, so, $E$ itself is a vector and its unit is $N/C$. You will see, this topic is easier to explain with the help of electric fields. Electric field cannot be seen, but to make it easy to understand, sometimes one type of completely imaginary lines are drawn, called the electric lines of force (first introduced by Michael Faraday). Our known world is three dimensional, so the lines of force will spread in all directions. To show you, these are drawn in a plane (Fig 10.11).\n\nThere are some rules of drawing lines of forces:\n(a) In case of positive charge the lines of forces emerges from positive charges, and in case of negative charge converges into negative charges. In a specific point, the direction of tangent line of force is the direction of electric field.\n(b) The more the amount of charge, per unit volume or area the more the number of lines of forces.\n(c) The nearer the lines of force, the more the magnitude of the electric field.\n(d) The lines of force of one charge never intercept the lines of force of another charge.\n\nIn Figure 10.12 (a), the lines of force of two opposite charges are shown. You can see, the lines of force of one charge ended up in another charge. Where the magnitude of the electric field is higher, the number of lines of force is higher. Also, when the figure is seen, it gives a feeling that the two charges are attracting one another. In Figure 10.12 (b), both the charges are positive and from the figure it can be seen that, the two charges are repelling one another. Not only that, in the middle portion of two charges the electric field due to one charge is neutralized by the electric field of the other. As a result the number of lines of force is less, and there is a point in the middle where the magnitude of",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.11: Lines of force diverges from positive charge and converges into negative charge",
+      "figure_no": "10.11",
+      "box_2d": [
+        271,
+        456,
+        403,
+        835
+      ],
+      "description": "Diagram showing electric lines of force diverging outwards from a positive charge and converging inwards into a negative charge.",
+      "reading_order_anchor": "Electric field cannot be seen, but to make it easy to understand..."
+    }
+  ]
+}

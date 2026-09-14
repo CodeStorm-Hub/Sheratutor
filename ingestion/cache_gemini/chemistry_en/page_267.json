@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 267,
+  "pdf_page_no": 272,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Based on double-bond or triple-bond, Unsaturated Open Chain Hydrocarbons are again divided into two types- Alkene and Alkyne. In this chapter we will learn about Alkene and Alkyne in details.\n\nCarbon-Carbon double-bond is present in Alkene. Example: Propene ($\\text{CH}_3-\\text{CH}=\\text{CH}_2$)\n\nCarbon-Carbon triple-bond is present in Alkyne. Example: Ethyne ($\\text{CH}\\equiv\\text{CH}$), Propyne ($\\text{H}_3\\text{C}-\\text{C}\\equiv\\text{CH}$)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Closed Chain Hydrocarbons",
+      "chunk_type": "theory",
+      "content_markdown": "(ii) Closed Chain Hydrocarbons\n\nIn this type of Hydrocarbons, the terminal carbons of the carbon chain are connected together and make a sphere or a circle. Chains of different sizes make circles of different sizes. Like Open Chain Hydrocarbons, they may also be of two types, namely Saturated and Unsaturated Closed Chain Hydrocarbons.\n\nSaturated Closed Chain Hydrocarbon:\n\nCyclopropane\n\nCyclobutane\n\nUnsaturated Closed Chain Hydrocarbon:\n\nCyclopropene\n\nCyclobutene\n\nClosed Chain Hydrocarbons are sometimes called Alicyclic Hydrocarbons.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.2",
+      "section_title": "Aromatic Hydrocarbons",
+      "chunk_type": "theory",
+      "content_markdown": "The word 'Aromatic' is taken from the Greek word Aroma which means scent or fragrance. This was so named because the first aromatic compounds were sweet-smelling. Benzene ($\\text{C}_6\\text{H}_6$) or Naphthalene ($\\text{C}_{10}\\text{H}_8$) is the instance of Aromatic Hydrocarbons.\n\nThe aromatic compounds are generally 5, 6 or 7 membered co-planer cyclic compounds. It has alternative double bonds that means there is a carbon-carbon single bond and a then carbon-carbon double bond.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.01: Cyclic Hydrocarbons",
+      "figure_no": "11.01",
+      "box_2d": [
+        487,
+        529,
+        655,
+        872
+      ],
+      "description": "Chemical structures of cyclic hydrocarbons including cyclopropane, cyclobutane, cyclopropene, and cyclobutene.",
+      "reading_order_anchor": "Saturated Closed Chain Hydrocarbon:"
+    }
+  ]
+}

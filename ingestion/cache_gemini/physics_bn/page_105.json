@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 105,
+  "pdf_page_no": 110,
+  "chapter_no": 4,
+  "chapter_title": "কাজ, ক্ষমতা ও শক্তি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ",
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ\n\nপ্রশ্ন: $10\\text{ kg}$ ভরের একটা স্থির বস্তুর ওপর $10\\text{ s}$ ব্যাপী $10\\text{ N}$ বল প্রয়োগ করা হয়েছে (a) বস্তুটির গতিশক্তি কত? (b) $20\\text{ s}$ পরে গতিশক্তি কত? (c) যদি পুরো $20\\text{ s}$ বল প্রয়োগ করা হয় তাহলে গতিশক্তি কত?\n\nউত্তর: $10\\text{ N}$ বল প্রয়োগ করলে ত্বরণ:\n$$a = \\frac{F}{m} = \\frac{10\\text{ N}}{10\\text{ kg}} = 1\\text{ m/s}^2$$\n\nকাজেই $10\\text{ s}$ পরে বেগ\n$$v = at = 1\\text{ m/s}^2 \\times 10\\text{ s} = 10\\text{ m/s}$$\n\n(a) কাজেই গতিশক্তি\n$$\\frac{1}{2}mv^2 = \\frac{1}{2} \\times 10 \\times 10^2\\text{ J} = 500\\text{ J}$$\n\n(b) $10\\text{ s}$ পর্যন্ত ত্বরণ হবে এর পরে ত্বরণ নেই বলে বেগ অপরিবর্তিত কাজেই $20\\text{ s}$ পরে গতিশক্তি একই থাকবে।\n\n(c) পুরো $20\\text{ s}$ বল প্রয়োগ করা হলে $v = at = 1\\text{ m/s}^2 \\times 20\\text{ s} = 20\\text{ m/s}$\n\nকাজেই গতিশক্তি\n$$\\frac{1}{2}mv^2 = \\frac{1}{2} \\times 10 \\times 20^2\\text{ J} = 2000\\text{ J}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: $10\\text{ kg}$ ভরের একটি বস্তুর উপর বল প্রয়োগ করে গতিশীল করায় তার গতিশক্তি হয়েছে $80\\text{ J}$, বস্তুটির বেগ কত?\n\nউত্তর: গতিশক্তি\n$$\\frac{1}{2}mv^2 = 80\\text{ J}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 106,
+  "pdf_page_no": 111,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. $\\frac{1}{x+2} + \\frac{1}{x+5} = \\frac{1}{x+3} + \\frac{1}{x+4}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. $\\frac{2t-6}{9} + \\frac{15-2t}{12-5t} = \\frac{4t-15}{18}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solve by forming equations (15 - 25):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. A number is $\\frac{2}{5}$ times of another number. If the sum of the numbers is 98, find the two numbers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. Difference of numerator and denominator of a proper fraction is 1; if 2 is subtracted from numerator and 2 is added to denominator of the fraction, it will be equal to $\\frac{1}{6}$. Find the fraction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "17. Sum of the digits of a number consisting of two digits is 9; if the number obtained by interchanging the places of the digits is less by 45 than the given number, what is the number ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "18. The digit of the tens place of a number consisting of two digits is twice the digit of the units place. Show that, the number is seven times the sum of the digits.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "19. A petty merchant by investing Tk. 5600 got the profit 5% on some of the money and profit of 4% the rest of the money. If the total profit is 256, then on how much money did he get the profit of 5%?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "20. In a girls, school if 6 students sit in each bench, 2 benches remain empty. But if 5 students sit in each bench, 6 students have to remain standing. What is the number of benches in the class?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "21. Number of passengers in a launch is 47. The fare per head for the cabin is twice that for the deck. The fare per head for the deck is Tk. 30. If the total fare collected is Tk. 1680 , what is the number of passengers in the cabin?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "22. 120 coins of twenty five paisa and fifty paisa together is Tk. 35. What is the number of coins of each kind ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "23. A car passed over some distance at the speed of 60 km per hour and passed over the rest of the distance at the speed of 40 km per hour. The car passed",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

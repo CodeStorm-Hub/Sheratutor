@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 81,
+  "pdf_page_no": 86,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exponents or Indices",
+      "chunk_type": "theory",
+      "content_markdown": "In class VI, we have got the idea of exponents and in class VII, we have learnt the exponential rules for multiplication and division. Expressions associated with exponent and base are called exponential expression.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Successive multiplication of the same expression | Exponential expression | base | power or exponent |\n| :--- | :--- | :--- | :--- |\n| $2 \\times 2 \\times 2$ | $2^3$ | $2$ | $3$ |\n| $3 \\times 3 \\times 3 \\times 3$ | | $3$ | |\n| $a \\times a \\times a$ | $a^3$ | | |\n| $b \\times b \\times b \\times b \\times b$ | | | $5$ |",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If $a$ is any real number, successive multiplication of $n$ as is $a^n$; that is, $a \\times a \\times a \\times \\dots \\times a$ ($n$ times $a$) = $a^n$, where $n$ is a positive integer. Here, $n$ is index or power and $a$ is base. Conversely $a^n = a \\times a \\times a \\times \\dots \\times a$ ($n$ times $a$).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Exponents may not only be positive integers, they may be negative integers or positive fractions or negative fractions. That is, for base $a \\in R$ (set of real numbers) and power $n \\in Q$ (set of rational numbers), $a^n$ is defined. The case of $n \\in N$ (set of natural numbers) is especially considered. Besides, exponents may also be irrational. But as it is out of curriculum, it has not been discussed in this chapter.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Index Laws",
+      "chunk_type": "theory",
+      "content_markdown": "Let, $a \\in R$ (set of real numbers) and $m, n \\in N$ (set of natural numbers).\n\nFormula 1 (Multiplication). $a^m \\times a^n = a^{m+n}$\n\nFormula 2 (Division). $\\frac{a^m}{a^n} = \\begin{cases} a^{m-n} \\text{ when } m \\ge n \\\\ \\frac{1}{a^{n-m}} \\text{ when } n > m \\end{cases}$\n\nFill in the blanks of the following table:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

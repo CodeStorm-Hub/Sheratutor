@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 290,
+  "pdf_page_no": 295,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "to as a capacitor. A capacitor with high capacitance requires a large amount of charge to produce only a small increase in potential, while a capacitor with low capacitance will see a significant rise in potential with just a small amount of charge. For example, if a spherical capacitor has a capacitance $C$ and receives a charge $Q$, then its potential $V$ is given by:\n\n$$V = \\frac{Q}{C}$$\n\nwhere for a metallic sphere of radius $r$ the capacitance $C$ is\n\n$$C = \\frac{r}{k}$$\n\nBut the most simple and effective capacitor is made by keeping two metal plates side by side (Figure 10.16). If one plate is charged positively and the other is charged negatively, then an electric field is developed between the plates and energy is stored in that electric field. For a capacitor, if capacitance is $C$ and voltage is $V$, then the energy stored in it is:\n\n$$\\text{Energy} = \\frac{1}{2}CV^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** What is the amount of stored energy if $10\\text{ V}$ electric potential is applied to a $20\\ \\mu\\text{F}$ capacitor?\n\n**Answer:**\n$$\\text{Energy} = \\frac{1}{2} CV^2 = \\frac{1}{2} \\times 20 \\times 10^{-6} \\times 10^2\\text{ J} = 10^{-3}\\text{ J} = 1\\text{ mJ}$$",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.16: Capacitor formed by parallel metal plate .",
+      "figure_no": "10.16",
+      "box_2d": [
+        380,
+        426,
+        513,
+        882
+      ],
+      "description": "Diagram of a parallel plate capacitor consisting of two metal plates connected to a battery source, with electric field lines represented between the plates.",
+      "reading_order_anchor": "But the most simple and effective capacitor is made by keeping two metal plates side by side (Figure 10.16)."
+    }
+  ]
+}

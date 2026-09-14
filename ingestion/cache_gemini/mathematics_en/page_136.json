@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 136,
+  "pdf_page_no": 141,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 6.** If two sides of a triangle are equal, the angles opposite the equal sides are also equal.\n\nSuppose in the triangle $ABC$, $AB = AC$. Then, $\\angle ABC = \\angle ACB$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 7.** If two angles of a triangle are equal, the sides opposite the equal angles are also equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Special Nomination:** Let, in the triangle $ABC$, $\\angle ABC = \\angle ACB$. It is to be proved that, $AB = AC$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:**\n\nStep 1. If $AB \\neq AC$, then $(i) AB > AC$ or $(ii) AB < AC$.\n\nSuppose, $(i) AB > AC$. Cut from $AB$ a part $AD$ equal to $AC$. Now, the triangle $ADC$ is an isosceles triangle. So,\n\n$\\angle ADC = \\angle ACD$ [$\\because$ The base angles of an isosceles triangles are equal]\n\nIn $\\triangle DBC$ exterior angle $\\angle ADC > \\angle ABC$ [$\\because$ Exterior angle is greater than each of the interior opposite angles]\n\n$\\therefore \\angle ACD > \\angle ABC$. Therefore, $\\angle ACB > \\angle ABC$, but this is against the given condition.\n\nStep 2. Similarly, $(ii)$ if $AB < AC$, it can be proved that $\\angle ABC > \\angle ACB$, but this is also against the condition.\n\nStep 3. So neither $AB > AC$ nor $AB < AC$.\n\n$\\therefore AB = AC$ (Proved)",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Triangle ABC",
+      "figure_no": "6.01",
+      "box_2d": [
+        88,
+        675,
+        250,
+        850
+      ],
+      "description": "An isosceles triangle ABC with equal sides AB and AC marked with tick marks, and equal base angles marked with check marks.",
+      "reading_order_anchor": "Theorem 6. If two sides of a triangle are equal, the angles opposite the equal sides are also equal."
+    },
+    {
+      "caption": "Fig 6.02: Triangle ABC with line segment AD",
+      "figure_no": "6.02",
+      "box_2d": [
+        335,
+        675,
+        480,
+        850
+      ],
+      "description": "An isosceles triangle ABC with a line segment AD drawn from A to a point D on BC, illustrating the proof construction.",
+      "reading_order_anchor": "Special Nomination: Let, in the triangle ABC, ∠ABC = ∠ACB. It is to be proved that, AB = AC"
+    }
+  ]
+}

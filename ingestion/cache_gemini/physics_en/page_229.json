@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 229,
+  "pdf_page_no": 234,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "image). If you move your finger away slowly then you will notice at one point, that the image gets inverted! No matter where you are while moving away from that point, it will always remain inverted. (We were never able to create inverted images using plane mirrors or convex mirrors— this is the first time we are observing an inverted image!)\n\nSo you can see that the outside part of a spoon works as a convex mirror and the inside of a spoon works as a concave mirror! A real concave mirror is actually a part of a sphere. In the case of a convex mirror light was reflected from the outside convex shape and in the case of a concave mirror light will be reflected from the inside concave shape.\n\nIf parallel rays are incident on a concave mirror the light rays will converge at a point after reflection (Figure 8.21). You can understand that this point is the focal point of the concave mirror and the distance from the pole to this point is known as the focal distance. Light rays don't have any option of stopping, so after converging at a point they will travel straight forward and it will look like light is diverging from that point! Therefore before reaching the focal point the rays are converging (convergent) and after reaching the focal point the rays are diverging (divergent).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** If we imagine a plane mirror as a spherical concave mirror, what will be its focal distance?\n\n**Answer:** Infinite!",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We got the same answer in case of convex mirrors, which means when the focal distance increases to infinity then both convex and concave mirrors turn into plane mirrors! The focal distance is half of the radius in concave mirrors as in a convex mirror.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.21: The focal distance of a concave mirror is half of the radius of the sphere",
+      "figure_no": "8.21",
+      "box_2d": [
+        310,
+        513,
+        552,
+        883
+      ],
+      "description": "Ray diagram showing parallel rays reflecting off a concave mirror and converging at the focal point, indicating the focal length as r/2 from the pole.",
+      "reading_order_anchor": "If parallel rays are incident on a concave mirror the light rays will converge at a point after reflection (Figure 8.21)."
+    }
+  ]
+}

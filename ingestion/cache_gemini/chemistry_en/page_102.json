@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 102,
+  "pdf_page_no": 107,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "On the other hand, there is no cation and anion in covalent compounds. They don’t become attracted or distracted by cation and anion of water. As a result, they do not break down as ions in water or get dissolved.\n\nHowever, partial polarity is seen in some covalent compounds like ethanol ($C_2H_5OH$). These covalent compounds only get dissolved in water.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.3",
+      "section_title": "Electrical Conductivity",
+      "chunk_type": "theory",
+      "content_markdown": "Take some water solution of edible salt ($NaCl$) in a beaker and some water solution of sugar in another. Now put two graphite rods or any other kind of metallic rod into each solution and finally connect battery and bulb to each of them accordingly as shown in the figure 5.12. You will see, the bulb in salt water solution is lit up while the one with sugar-water solution is not. That shows the salt water solution is able to conduct electricity while sugar water cannot.\n\nYou may come to decide that ionic compounds in solution with water can conduct electricity while covalent compounds cannot.\n\nYou can also guess the reason very well. Electro-conductivity requires alienated positive and negative ions. In the salt water solution, $Na^+$ and $Cl^-$ act as positive and negative ions respectively and conduct electricity. As in water solution, ionic compounds remain as alienated cations and anions, therefore, all water solutions with ionic compounds are electro-conductive.\n\nOn the other hand, covalent compounds do not conduct electricity in water solution as they do not carry alienated ions.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.12: Electrical conductivity of water solution of edible salt (NaCl).",
+      "figure_no": "5.12",
+      "box_2d": [
+        287,
+        599,
+        508,
+        853
+      ],
+      "description": "Experimental setup showing a beaker containing a salt water solution with two graphite rods connected to a battery and a light bulb, demonstrating electrical conductivity.",
+      "reading_order_anchor": "Take some water solution of edible salt"
+    }
+  ]
+}

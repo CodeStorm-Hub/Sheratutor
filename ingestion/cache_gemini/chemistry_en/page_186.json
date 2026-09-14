@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 186,
+  "pdf_page_no": 191,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The one that is at the comparative lower order between any two ions in the series will donate an electron earlier and discharge or be oxidized. Between $\\text{SO}_4^{2-}$ and $\\text{Cl}^-$, $\\text{Cl}^-$ is situated lower than the other. So, $\\text{Cl}^-$ will donate an electron earlier and be discharge or be oxidized. $\\text{OH}^-$ is at the lower order between $\\text{Cl}^-$ and $\\text{OH}^-$. So $\\text{OH}^-$ will discharge, donating an electron first and be oxidized.\n\n**(ii) Effect of Concentration of Cations and Anions:** When there are more than one cations and anions in the solution, the effect of molarity is a more important factor than the tendency to discharge. The molarity of $\\text{Cl}^-$ ion in $0.1$ molar $\\text{NaCl}$ solution at room temperature will be $0.1$ molar. On the other hand, ionizing water, the molarity of $\\text{OH}^-$ ion will be $10^{-7}$ molar. That means the molarity of $\\text{Cl}^-$ ion is $10^6$ times larger than that of $\\text{OH}^-$ ion. According to the electrochemical series, $\\text{OH}^-$ is situated lower than $\\text{Cl}^-$ and it is supposed to be the first to discharge. But due to molarity or concentration, $\\text{Cl}^-$ ion in this case will be the first to discharge.\n\n**(iii) Nature of Electrode:** Sometimes, the kind of electrode causes an exception in the above two factors of discharge in an electrolytic cell. $\\text{NaCl}$ aqua solution has two kinds of cations- $\\text{Na}^+$ and $\\text{H}^+$. When a platinum electrode is used, then according to the factor (i), $\\text{H}^+$ discharges and produces $\\text{H}_2$ gas. But this changes when mercury is used as a cathode and then $\\text{Na}^+$ ion discharges earlier.\n\n### Electrolysis of Pure Water\n\nIn the electrolysis of pure water, anodes and cathodes of some inert metals are used in electrolytic cells. Usually it is platinum. Water exists a little bit ionized:\n\n$$4\\text{H}_2\\text{O} \\rightleftharpoons 4\\text{H}^+ + 4\\text{OH}^-$$\n\nA few drops of sulfuric acid is added to water to increase decomposition of water. Now, when electricity is passed through, anode attracts hydroxyl $(\\text{OH}^-)$ ion and cathode attracts hydrogen $(\\text{H}^+)$ ion. The following reactions take place at the electrodes:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,77 @@
+{
+  "printed_page_no": 13,
+  "pdf_page_no": 18,
+  "chapter_no": 1,
+  "chapter_title": "Concepts of Chemistry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Table 1.04: signs and their explanations identifying risk.",
+      "chunk_type": "table",
+      "content_markdown": "| Sign | Risk, Extent of risk and precaution |\n| --- | --- |\n| Explosive substance | We need to be very careful about these substances. We must keep in mind that friction and fire may cause serious explosion from these which will be harmful for our body as well as the laboratory. We need extreme caution in handling these. TNT, organic peroxide, nitroglycerine etc. are such kind of substances. |\n| Flammable substance | Alcohol, ether etc. are flammable. These may catch fire quickly. Therefore, we need to keep them away from fire or heat. |\n| Toxic substance | Substances with this sign are poisonous. If we come in touch with them or inhale them, they may cause harm to our body. Benzene, chlorobenzene, methanol, etc. are such substances. We must wear apron, hand gloves and safety goggles when handling them. |\n| Irritant substance | Cement dust, light acids, base, nitrous oxide etc. cause irritation on skin, eyes and breathing system. We must wear aprons, hand gloves and safety goggles when handling them. |\n| Hazardous substance | Direct contact on skin or inhalation of such substances may cause short or long term harm to our health. They may affect our breathing system or even cause diseases like cancer. Benzene, toluene, xylene are such substance. We must wear aprons, hand gloves and safety goggles when handling them. |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 1.04: Explosive substance hazard symbol",
+      "figure_no": "1.04",
+      "box_2d": [
+        190,
+        160,
+        264,
+        259
+      ],
+      "description": "Hazard symbol indicating explosive substances showing an explosion inside a diamond.",
+      "reading_order_anchor": "Table 1.04"
+    },
+    {
+      "caption": "Fig 1.04: Flammable substance hazard symbol",
+      "figure_no": "1.04",
+      "box_2d": [
+        355,
+        156,
+        437,
+        264
+      ],
+      "description": "Hazard symbol indicating flammable substances showing a flame inside a diamond.",
+      "reading_order_anchor": "Table 1.04"
+    },
+    {
+      "caption": "Fig 1.04: Toxic substance hazard symbol",
+      "figure_no": "1.04",
+      "box_2d": [
+        488,
+        165,
+        572,
+        267
+      ],
+      "description": "Hazard symbol indicating toxic substances showing a skull and crossbones inside a diamond.",
+      "reading_order_anchor": "Table 1.04"
+    },
+    {
+      "caption": "Fig 1.04: Irritant substance hazard symbol",
+      "figure_no": "1.04",
+      "box_2d": [
+        643,
+        156,
+        723,
+        261
+      ],
+      "description": "Hazard symbol indicating irritant substances showing an 'X' mark inside a diamond.",
+      "reading_order_anchor": "Table 1.04"
+    },
+    {
+      "caption": "Fig 1.04: Hazardous substance hazard symbol",
+      "figure_no": "1.04",
+      "box_2d": [
+        788,
+        163,
+        871,
+        268
+      ],
+      "description": "Hazard symbol indicating hazardous health substances showing a human silhouette with a star on the chest inside a diamond.",
+      "reading_order_anchor": "Table 1.04"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 158,
+  "pdf_page_no": 163,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "## Multiple choice questions\n\nPut the tick ($\\sqrt{Sab}$) mark on the correct answer\n\n1. What is the name of the apparatus used to measure the atmospheric pressure?\n   (a) Thermometer\n   (b) Barometer\n   (c) Manometer\n   (d) Seismometer.\n\n2. The amount of liquid pressure is --\n   (a) proportional to its depth\n   (b) proportional to area.\n   (c) Inversely proportional to density\n   (d) equal to acceleration due to gravity.\n\n3. What is the name of the fourth state of matter?\n   (a) Gas\n   (b) Plasma\n   (c) Solid\n   (d) Liquid.\n\nGive answer to question no. 4 & 5 from the figure\n\n4. How much pressure will be felt at the bottom of the container?\n   (a) $98\\text{ Pa}$\n   (b) $980\\text{ Pa}$\n   (c) $196\\text{ Pa}$\n   (d) $1960\\text{ Pa}$\n\n5. If force $F$ is applied on the free surface of the container, then this force-\n   i. will exert a pressure at the bottom of the container only.\n   ii. will exert a pressure on the curved surface of the vessel only.\n   iii. will exert a pressure in all directions of the vessel.\n\nWhich one of the below is correct?\n   (a) i\n   (b) ii\n   (c) iii\n   (d) i, ii, & iii",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.17",
+      "figure_no": "5.17",
+      "box_2d": [
+        448,
+        621,
+        663,
+        856
+      ],
+      "description": "A cylindrical container filled with water up to a height of $0.2\\text{ m}$, having a piston with a downward force $F$ applied on the free surface.",
+      "reading_order_anchor": "Give answer to question no. 4 & 5 from the figure"
+    }
+  ]
+}

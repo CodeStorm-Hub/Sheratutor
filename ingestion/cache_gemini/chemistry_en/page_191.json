@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 191,
+  "pdf_page_no": 196,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "them. A metal wire is used to connect the two electrodes. A bulb connected at the middle of the wire lights up when electricity starts to flow. Here, a zinc atom donates two electrons to the zinc electrode and turns into zinc ion ($Zn^{2+}$). It leaves the electrode and goes into the solution. The zinc electrode accepts the two electrons and becomes negatively charged. Then the electrons flow through the connecting wire. Since the metallic zinc turns into $Zn^{2+}$ in the electrode, so it is an oxidation reaction at the anode:\n\n$$\\text{Oxidation at anode: } \\text{Zn} \\longrightarrow \\text{Zn}^{2+} + 2\\text{e}^-$$\n\nNow, the two electrons from the zinc anode enters the copper electrode. Through this electrode, the $\\text{Cu}^{2+}$ ion from $\\text{CuSO}_4$ solution accepts the electrons and turns into metallic copper (\\text{Cu}). Since the process is reduction here, so the copper electrode is regarded as the cathode electrode.\n\n$$\\text{Reduction at cathode: } \\text{Cu}^{2+} + 2\\text{e}^- \\longrightarrow \\text{Cu}$$\n$$\\text{The total reaction in the cell: } \\text{Zn} + \\text{Cu}^{2+} \\longrightarrow \\text{Zn}^{2+} + \\text{Cu}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Since zinc has donated electrons at the anode, so that constitutes oxidation. But donating electron only does not complete a reaction. The copper ion at the cathode electrode has accepted those electrons and completed the reduction reaction. That means half the reaction has occurred at the anode and the other half at the cathode. So, the reaction at the anode is oxidation half reaction and the reaction at the cathode is reduction half reaction. And the total reaction is a redox reaction.\n\nElectrons from anode enter the cathode through the connecting wire. That means",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.08: Galvanic (Deniell) cell.",
+      "figure_no": "8.08",
+      "box_2d": [
+        574,
+        479,
+        810,
+        896
+      ],
+      "description": "Schematic diagram of a Galvanic (Daniell) cell featuring zinc and copper electrodes, salt bridge, connecting wires with a bulb, and respective electrolyte solutions.",
+      "reading_order_anchor": "Since zinc has donated electrons at the anode"
+    }
+  ]
+}

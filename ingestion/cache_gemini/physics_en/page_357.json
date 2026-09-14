@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 357,
+  "pdf_page_no": 362,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "a transistor but also creating a diode, resistor and a capacitor on a wafer, a complete circuit was started to be made. This circuit was named an integrated circuit (IC). With the development of technology many transistors were assembled in a small area, and first it was named Large Scale Integration (LSI), and then it is called Very Large Scale Integration (VLSI). These circuits were made into a ready-made package so that they could be directly used in a circuit board. Modern equipment such as the Micro-computer, clinical appliances, video camera, communication satellite would never be possible without the use of integrated circuits.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.2.4",
+      "section_title": "Electronics of Future",
+      "chunk_type": "theory",
+      "content_markdown": "The technology of electronics is still advancing, and in the future we will experience electronic circuits using optics or light in an information communicative integrated circuit. At the same time we will observe the use of programmable IC (FPGA: Field Programmable Gate Array) in different fields in accordance to our own needs.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "13.3",
+      "section_title": "Analog and Digital Electronics",
+      "chunk_type": "theory",
+      "content_markdown": "Things that are happening around us every moment, like sound, light, pressure, temperature are expressed as information or data. Their values can be changed continuously. We might need these values in our different works, so we preserve and analyze these values and send them from one place to another. To process the data we might use electronics. This continuously changing data can be converted into electrical signals and these types of signals are called analog signals. If we process these signals with a type of electronics, it is called analog electronics. When discrete signals are processed, then it is called digital signal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Continuously changing information or data signals can be processed in a different way. To do this, we have to find the value for a definite interval of time and express this in a type of number. Then we have to preserve this value successively. Then we will be able to process these numbers using electronics. When it is needed to convert this into the main analog signal again, then electric signals of equal to serially preserved values have to be created. We use decimal",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

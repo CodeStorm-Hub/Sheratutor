@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 240,
+  "pdf_page_no": 245,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $3$ | $4$ | $5$ |\n|---|---|---|---|\n| $y$ | $6$ | $1$ | $-4$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ সমীকরণটির লেখের উপর তিনটি বিন্দু $(3, 6), (4, 1), (5, -4)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $XOX'$ ও $YOY'$ যথাক্রমে $x$-অক্ষ ও $y$-অক্ষ এবং $O$ মূলবিন্দু। ছক কাগজের উভয় অক্ষ বরাবর ক্ষুদ্রতম বর্গের প্রতি বাহুর দৈর্ঘ্যকে একক ধরি। এখন ছক কাগজে সমীকরণ (১) হতে প্রাপ্ত $(-1, -6), (0, -3), (3, 6)$ বিন্দুগুলো স্থাপন করি ও এদের পরস্পর সংযুক্ত করি। লেখটি একটি সরলরেখা।\n\nএকইভাবে, সমীকরণ (২) হতে প্রাপ্ত $(3, 6), (4, 1), (5, -4)$ বিন্দুগুলো স্থাপন করি ও এদের পরস্পর সংযুক্ত করি। এক্ষেত্রেও লেখটি একটি সরলরেখা।\n\nমনে করি, সরলরেখাদ্বয় পরস্পর $P$ বিন্দুতে ছেদ করেছে। চিত্র থেকে দেখা যায়, $P$ বিন্দুর স্থানাঙ্ক $(3, 6)$।\n\n$\\therefore$ সমাধান: $(x, y) = (3, 6)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ ১০. লৈখিক পদ্ধতিতে সমাধান কর:",
+      "chunk_type": "worked_example",
+      "content_markdown": "$$2x + 5y = -14$$\n$$4x - 5y = 17$$\n\nসমাধান: প্রদত্ত সমীকরণদ্বয়\n$$2x + 5y = -14 \\dots (1)$$\n$$4x - 5y = 17 \\dots (2)$$\n\nসমীকরণ (১) থেকে পাই, $5y = -14 - 2x$, বা, $y = \\frac{-2x - 14}{5}$\n\nসমীকরণটিতে $x$ এর সুবিধামত কয়েকটি মান নিয়ে $y$ এর অনুরূপ মান বের করি ও নিম্নের ছকটি তৈরি করি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $3$ | $\\frac{1}{2}$ | $-2$ |\n|---|---|---|---|\n| $y$ | $-4$ | $-3$ | $-2$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ সমীকরণটির লেখের উপর তিনটি বিন্দু $(3, -4), (\\frac{1}{2}, -3), (-2, -2)$।\n\nআবার, সমীকরণ (২) থেকে পাই, $5y = 4x - 17$, বা, $y = \\frac{4x - 17}{5}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১২.০১: লৈখিক পদ্ধতিতে সমাধান",
+      "figure_no": "12.01",
+      "box_2d": [
+        195,
+        622,
+        405,
+        850
+      ],
+      "description": "একটি কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় দুটি সরলরেখার ছেদবিন্দু P(3,6) প্রদর্শনকারী গ্রাফ।",
+      "reading_order_anchor": "মনে করি, XOX' ও YOY' যথাক্রমে x-অক্ষ ও y-অক্ষ এবং O মূলবিন্দু।"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 192,
+  "pdf_page_no": 197,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Trigonometric ratios of an acute angle",
+      "chunk_type": "theory",
+      "content_markdown": "Let $\\angle XOA$ be an acute angle. We take any point $P$ on $OA$. We draw a perpendicular $PM$ from the point $P$ to $OA$. A right angled triangle $POM$ is formed. The six ratios are obtained from the sides $PM$, $OM$ and $OP$ of $\\triangle POM$ which are called trigonometric ratios of the angle $\\angle XOA$ and each of them are named particularly. With respect to the $\\angle XOA$ of right-angled triangle $POM$, $PM$ is the opposite side, $OM$ is the adjacent side and $OP$ is the hypotenuse. Denoting $\\angle XOA = \\theta$, the obtained six ratios are described below for the angle $\\theta$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "From the figure :\n\n$$\\sin \\theta = \\frac{PM}{OP} = \\frac{\\text{opposite side}}{\\text{hypotenuse}}$$ [sine of angle $\\theta$]\n\n$$\\cos \\theta = \\frac{OM}{OP} = \\frac{\\text{adjacent side}}{\\text{hypotenuse}}$$ [cosine of angle $\\theta$]\n\n$$\\tan \\theta = \\frac{PM}{OM} = \\frac{\\text{opposite side}}{\\text{adjacent side}}$$ [tangent of angle $\\theta$]\n\nAnd opposite ratios of them are\n\n$$\\csc \\theta = \\frac{1}{\\sin \\theta}$$ [cosecant of angle $\\theta$]\n\n$$\\sec \\theta = \\frac{1}{\\cos \\theta}$$ [secant of angle $\\theta$]\n\n$$\\cot \\theta = \\frac{1}{\\tan \\theta}$$ [cotangent of angle $\\theta$]\n\nWe observe, the symbol $\\sin \\theta$ means the ratio of sine of the angle $\\theta$, not the multiplication of $\\sin$ and $\\theta$. $\\sin$ is meaningless without $\\theta$. It is applicable for the other trigonometric ratios as well.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Trigonometric ratios of an acute angle",
+      "figure_no": "9.01",
+      "box_2d": [
+        195,
+        645,
+        375,
+        870
+      ],
+      "description": "A right-angled triangle POM formed by a perpendicular PM from point P on line OA to line OX, with angle theta at O.",
+      "reading_order_anchor": "Let $\\angle XOA$ be an acute angle."
+    }
+  ]
+}

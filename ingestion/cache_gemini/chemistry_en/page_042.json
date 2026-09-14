@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 42,
+  "pdf_page_no": 47,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": "3.6",
+      "section_title": "Atomic Model",
+      "chunk_type": "theory",
+      "content_markdown": "## 3.6 Atomic Model\n\n### 3.6.1 Rutherford’s Atomic Model\n\nRutherford has given a model on the structure of atom in 1911. The model states:\n\na. In the centre of an atom there is a positively charged dense central core. This core is called the nucleus of the atom. Protons and electrons are situated inside and out side this nucleus respectively. Since, compared to the whole mass of the atom, the mass of electron is zero, so protons and neutrons inside the nucleus determines the whole mass and positive charges of the atom.\n\nb. The Nucleus is very small and most of the space inside an atom is void.\n\nc. Electrons in an atom always move round the nucleus in different orbits like the planets revolve round the sun in the solar system. The number of electrons in an atom is same as the number of protons. Since the charge of an electron and proton in an atom are equal and opposite, therefore the overall charge of an atom is zero.\n\nd. The electrons with negative charge are attracted to the positively charged nucleus. The force of this attraction is centripetal and due to this centripetal force, electrons move round the nucleus like our earth does a round the sun.\n\nRutherford’s model is known as the solar system model for its continuous parallelism to the solar system. Again, since the Rutherford model first gave the idea of a nucleus, it is also called the nuclear model.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.01: Rutherford’s Atomic Model.",
+      "figure_no": "3.01",
+      "box_2d": [
+        576,
+        543,
+        746,
+        888
+      ],
+      "description": "Schematic diagram of Rutherford's atomic model showing a central nucleus surrounded by orbiting electrons.",
+      "reading_order_anchor": "3.6.1 Rutherford’s Atomic Model"
+    }
+  ]
+}

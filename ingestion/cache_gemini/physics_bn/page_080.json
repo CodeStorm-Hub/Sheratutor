@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 80,
+  "pdf_page_no": 85,
+  "chapter_no": 3,
+  "chapter_title": "বল",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অতএব,\n\n$$g = \\frac{GM}{R^2} = \\frac{6.67 \\times 10^{-11} \\times 5.98 \\times 10^{24}}{(6.37 \\times 10^6)^2} \\text{ m/s}^2 = 9.8 \\text{ m/s}^2$$\n\nআমরা এর আগের অধ্যায়েই গতির সমীকরণে $g$ এর এই মান ব্যবহার করেছি, এখন তোমরা জানতে পারলে কেন $g$ এর এই মান ব্যবহার করা হয়েছিল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: স্পেস স্টেশনের উচ্চতা পৃথিবীপৃষ্ঠ থেকে আনুমানিক $100 \\text{ km}$, সেখানে $g$ এর মান কত?\n\nউত্তর: স্পেস স্টেশনে মাধ্যাকর্ষণজনিত ত্বরণ $g'$ হলে\n\n$$g' = \\frac{GM}{(R + r)^2}$$\n\nএখানে $R$ পৃথিবীর ব্যাসার্ধ $6370 \\text{ km}$ এবং স্পেস স্টেশনের উচ্চতা $r = 100 \\text{ km}$\n\n$$g' = \\frac{GM}{(R + r)^2} = \\frac{GM}{R^2(1 + r/R)^2} = \\frac{g}{(1 + r/R)^2}$$\n\n$$g' = \\frac{g}{1.016^2} = 9.49 \\text{ m/s}^2$$\n\n$g'$ এর মান মোটেই শূন্য নয়। তাহলে সেখানে মহাকাশচারীরা ওজনহীন (চিত্র 3.08) অনুভব করেন কেন?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মাধ্যাকর্ষণজনিত ত্বরণ $g$ জানা থাকলে আমরা খুব সহজেই যেকোনো ভর $m$ এর জন্য মাধ্যাকর্ষণ বল বের করতে পারব। সেটি হবে\n\n$$F = G \\frac{mM}{R^2} = m \\frac{GM}{R^2} = mg$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 3.08: মহাকাশযানে ভাসমান অ্যাস্ট্রোনট",
+      "figure_no": "3.08",
+      "box_2d": [
+        342,
+        486,
+        552,
+        898
+      ],
+      "description": "মহাকাশযানের ভেতরে মাধ্যাকর্ষণহীন পরিবেশে ভাসমান অবস্থায় অ্যাস্ট্রোনটদের একটি ছবি।",
+      "reading_order_anchor": "9' এর মান মোটেই শূন্য নয়। তাহলে সেখানে মহাকাশচারীরা ওজনহীন (চিত্র 3.08) অনুভব করেন কেন?"
+    }
+  ]
+}

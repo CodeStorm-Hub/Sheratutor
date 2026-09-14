@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 220,
+  "pdf_page_no": 225,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": "8.3.1",
+      "section_title": "Image",
+      "chunk_type": "theory",
+      "content_markdown": "When you stand in front of a mirror, you see your own image. The closer you stand; the image seems to appear at the same distance behind the mirror. In figure 8.08, $X$ is an object from which three rays have been reflected in mirror $AB$ (therefore, incident angle = reflected angle). If we extend the rays behind the mirror it will seem to converge to a point $X'$. This point is the image of object $X$. For a real object, there are infinite number of points and each point forms an image and collectively makes the image of the object.\n\nIf we want to define the position of the image using geometry we need to draw at least two rays. It will be easier to draw the picture if we consider $XP$ (normal to the plane) and $XO$ as ray as shown in figure 8.09. Triangle $OPX$ and $OPX'$ are congruent. Therefore $XP = X'P$, which means the image has formed at a distance equal to the distance of the object from the mirror.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.3.1",
+      "section_title": "Image",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Show that, triangle $OPX$ and $OPX'$ are congruent.\n\n**Answer:** Here, $\\angle XPO = \\angle X'PO$ because both of them are at right angles, as $XP$ is normal to the plane. According to the law of reflection, incident angle is equal to angle of reflection, therefore, $\\angle XOP = \\angle ROA$. Again $\\angle ROA = \\angle X'OP$.\n\nTherefore, between triangle $OPX$ and $OPX'$, $OP$ is the common arm and two angles on both sides are equal. So, triangles are congruent.\n\nTherefore, $XP = X'P$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "8.3.1",
+      "section_title": "Image",
+      "chunk_type": "theory",
+      "content_markdown": "The image we see in a mirror is not actually real even though it seems real. This is because light is not actually coming from the place it appears to be coming.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.09: Two light rays XP and XO are sufficient to draw an image of the object at position X",
+      "figure_no": "8.09",
+      "box_2d": [
+        513,
+        527,
+        760,
+        859
+      ],
+      "description": "Ray diagram showing reflection of light rays from a mirror AB, with object X, normal XP, and virtual image X'",
+      "reading_order_anchor": "8.3.1 Image"
+    }
+  ]
+}

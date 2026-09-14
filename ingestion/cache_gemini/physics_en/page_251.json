@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 251,
+  "pdf_page_no": 256,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When sending light from transparent glass to air, if the ray of light is incident at an angle greater than $41.8^\\circ$, the ray of light will not emerge from transparent glass and will be totally reflected. If you have a prism then you will be able to see total internal reflection with your own eyes. In Figure 9.07, at the glass-air separating surface the incident angle is $45^\\circ$, which is greater than the critical angle $41.8^\\circ$ of glass-air. Therefore total internal reflection will occur here.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** What will happen if you want to do this experiment under water? ($n_2$ for glass is $1.52$ and $n_1$ for water is $1.33$)\n\n**Answer:** In water $\\frac{n_1}{n_2} = 0.88$, therefore the critical angle of glass will be $61.6^\\circ$ because $\\sin 61.6^\\circ = 0.88$ or $\\sin^{-1}(0.88) = 61.6^\\circ$\n\nAs the angle of incidence is $45^\\circ$, which is less than the critical angle $61.6^\\circ$, total internal reflection will not occur.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Light incidents at an angle of $75^\\circ$ from a medium of refractive index $1.45$. With what angle will the ray of light emerge if there is air on the other side.\n\n**Answer:** We know\n\n$n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2$\n\n$1.45 \\times \\sin 75^\\circ = 1 \\times \\sin\\theta_2$\n\n$\\sin\\theta_2 = 1.40$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We know the value of $\\sin\\theta_2$ will not be greater than $1$, but here it happens because light is totally reflected without refracting. Therefore whenever we want to see the refraction of light from a denser medium to a rarer medium then it is better to determine the critical angle first. If light incidents at an angle less than this critical angle, only then it is possible to get refraction.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.08 : Light incidents at angle 75^\\circ.",
+      "figure_no": "9.08",
+      "box_2d": [
+        560,
+        584,
+        755,
+        836
+      ],
+      "description": "Ray diagram showing refraction and reflection of light at an interface with angle of incidence 75 degrees and refractive index n1 = 1.45 and n2 = 1.0.",
+      "reading_order_anchor": "Question : Light incidents at an angle of 75 degrees"
+    }
+  ]
+}

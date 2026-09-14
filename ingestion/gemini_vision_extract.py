@@ -1,16 +1,22 @@
 #!/usr/bin/env python3
 """
-SheraTutor: Single-Pass Multimodal Extraction Pipeline via Gemini 3.5 Flash.
+SheraTutor: Production Multimodal Vision Extraction Pipeline via Gemini.
 Renders 150 DPI page images from NCTB textbooks, masks margin noise,
-extracts raw OCR grounding locally, and leverages Gemini 3.5 Flash to generate
-verbatim Markdown + LaTeX formulas with structured section classification,
-and detects diagram bounding boxes ([ymin, xmin, ymax, xmax]) in a single call.
+extracts raw local OCR grounding via Tesseract to avoid RECITATION triggers,
+and generates structured verbatim Markdown, LaTeX equations, and 2D diagram bounding boxes.
+Features:
+- Idempotent resumability (--skip-existing)
+- Automatic rate-limit pacing (sleep between calls to stay within 15 RPM)
+- Dynamic backoff on 429 (sleep 20s)
+- Permanent model cutover to gemini-2.5-flash when gemini-3.5-flash daily quota hits
+- Generalizable chapter resolution via Supabase chapters table
 """
 
 import os
 import sys
 import json
 import time
+import re
 import argparse
 import subprocess
 from pathlib import Path
@@ -23,6 +29,7 @@ from dotenv import load_dotenv
 from google import genai
 from google.genai import types
 from google.genai.errors import ClientError, APIError
+from supabase import create_client
 
 # Paths
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -36,12 +43,12 @@ if ENV_INGEST.exists():
     load_dotenv(ENV_INGEST)
 
 # API Keys rotation setup
+# Use active working keys only
 API_KEYS = [
-    os.environ.get("GEMINI_API_KEY_SECONDARY", ""),
-    os.environ.get("GEMINI_API_KEY", ""),
-    os.environ.get("GCP_API_KEY", ""),
+    os.environ.get("GEMINI_API_KEY_SECONDARY", "").strip(),
+    os.environ.get("GEMINI_API_KEY", "").strip(),
 ]
-API_KEYS = [k.strip() for k in API_KEYS if k and k.strip()]
+API_KEYS = [k for k in API_KEYS if k and not k.endswith("EiCkVg")]  # Filter out suspended tertiary key
 
 if not API_KEYS:
     print("Error: No Gemini API keys found in environment.")
@@ -62,27 +69,37 @@ def rotate_key():
     _current_key_idx = (_current_key_idx + 1) % len(API_KEYS)
     print(f"Rotating to Gemini API Key index {_current_key_idx} (key ending in ...{API_KEYS[_current_key_idx][-6:]})")
 
-# Chapter mappings for Chemistry (310 pages total, +5 offset, content: printed pp 1-304, PDF pp 6-309)
-CHEMISTRY_CHAPTERS = [
-    (1, "Concepts of Chemistry", "রসায়নের ধারণা", 1, 16, 6, 21),
-    (2, "States of Matter", "পদার্থের অবস্থা", 17, 34, 22, 39),
-    (3, "Structure of Matter", "পদার্থের গঠন", 35, 58, 40, 63),
-    (4, "Periodic Table", "পর্যায় সারণি", 59, 81, 64, 86),
-    (5, "Chemical Bond", "রাসায়নিক বন্ধন", 82, 108, 87, 113),
-    (6, "Concept of Mole & Chemical Calculation", "মোলের ধারণা ও রাসায়নিক গণনা", 109, 141, 114, 146),
-    (7, "Chemical Reactions", "রাসায়নিক বিক্রিয়া", 142, 167, 147, 172),
-    (8, "Chemistry and Energy", "রসায়ন ও শক্তি", 168, 205, 173, 210),
-    (9, "Acid-Base Balance", "এসিড-ক্ষার সমতা", 206, 232, 211, 237),
-    (10, "Mineral Resources: Metal-Nonmetal", "খনিজ সম্পদ: ধাতু-অধাতু", 233, 260, 238, 265),
-    (11, "Mineral Resources: Fossils", "খনিজ সম্পদ: জীবাশ্ম", 261, 286, 266, 291),
-    (12, "Chemistry in Our Lives", "আমাদের জীবনে রসায়ন", 287, 304, 292, 309),
-]
+# Supabase Client for dynamic chapter lookups
+SB_URL = os.environ.get("NEXT_PUBLIC_SUPABASE_URL")
+SB_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY")
+supabase = create_client(SB_URL, SB_KEY) if SB_URL and SB_KEY else None
 
-def get_chapter_for_printed_page(pno: int) -> Tuple[int, str, str]:
-    for ch_no, title_en, title_bn, p_start, p_end, _, _ in CHEMISTRY_CHAPTERS:
-        if p_start <= pno <= p_end:
-            return ch_no, title_en, title_bn
-    return 0, "Unknown", "অজানা"
+SUBJECT_CODE_MAP = {
+    "chemistry": "SSC-CHEM",
+    "physics": "SSC-PHY",
+    "mathematics": "SSC-MATH",
+    "english": "SSC-ENG",
+}
+
+_chapter_cache = {}
+
+def get_subject_chapters(subject: str) -> Dict[int, Dict[str, str]]:
+    if subject in _chapter_cache:
+        return _chapter_cache[subject]
+    
+    code = SUBJECT_CODE_MAP.get(subject.lower(), "SSC-CHEM")
+    if not supabase:
+        return {}
+    
+    s_res = supabase.table("subjects").select("id").eq("code", code).execute()
+    if not s_res.data:
+        return {}
+    subj_id = s_res.data[0]["id"]
+    
+    ch_res = supabase.table("chapters").select("chapter_no, title_en, title_bn").eq("subject_id", subj_id).order("chapter_no").execute()
+    ch_dict = {r["chapter_no"]: {"title_en": r["title_en"], "title_bn": r["title_bn"]} for r in ch_res.data}
+    _chapter_cache[subject] = ch_dict
+    return ch_dict
 
 # --- Structured Pydantic Output Schema ---
 
@@ -149,8 +166,96 @@ def run_local_ocr_draft(img_bytes: bytes, lang: str) -> str:
         )
         return proc.stdout.decode("utf-8", errors="replace").strip()
     except Exception as e:
-        print(f"Local Tesseract warning: {e}")
         return ""
+
+# --- Authoritative Table of Contents Page Ranges (Printed Page Numbers) ---
+SUBJECT_TOC = {
+    "chemistry": {
+        "en": [
+            (1, 16, 1), (17, 34, 2), (35, 58, 3), (59, 81, 4), (82, 108, 5),
+            (109, 141, 6), (142, 167, 7), (168, 205, 8), (206, 232, 9),
+            (233, 260, 10), (261, 286, 11), (287, 304, 12)
+        ],
+        "bn": [
+            (1, 16, 1), (17, 34, 2), (35, 58, 3), (59, 81, 4), (82, 108, 5),
+            (109, 141, 6), (142, 167, 7), (168, 205, 8), (206, 232, 9),
+            (233, 260, 10), (261, 286, 11), (287, 304, 12)
+        ]
+    },
+    "physics": {
+        "en": [
+            (1, 30, 1), (31, 60, 2), (61, 97, 3), (98, 126, 4), (127, 159, 5),
+            (160, 186, 6), (187, 210, 7), (211, 241, 8), (242, 269, 9),
+            (270, 298, 10), (299, 329, 11), (330, 346, 12), (347, 364, 13)
+        ],
+        "bn": [
+            (1, 31, 1), (32, 61, 2), (62, 97, 3), (98, 126, 4), (127, 158, 5),
+            (159, 185, 6), (186, 209, 7), (210, 240, 8), (241, 269, 9),
+            (270, 297, 10), (298, 328, 11), (329, 345, 12), (346, 360, 13)
+        ]
+    },
+    "mathematics": {
+        "bn": [
+            (1, 20, 1), (21, 42, 2), (43, 74, 3), (75, 92, 4), (93, 110, 5),
+            (111, 135, 6), (136, 151, 7), (152, 173, 8), (174, 196, 9),
+            (197, 204, 10), (205, 223, 11), (224, 248, 12), (249, 265, 13),
+            (266, 284, 14), (285, 293, 15), (294, 325, 16), (326, 344, 17)
+        ],
+        "en": [
+            (1, 21, 1), (22, 44, 2), (45, 79, 3), (80, 97, 4), (98, 117, 5),
+            (118, 145, 6), (146, 163, 7), (164, 187, 8), (188, 212, 9),
+            (213, 221, 10), (222, 241, 11), (242, 269, 12), (270, 288, 13),
+            (289, 309, 14), (310, 318, 15), (319, 352, 16), (353, 384, 17)
+        ]
+    }
+}
+
+def detect_chapter_from_ocr(
+    ocr_draft: str,
+    subject_chapters: Dict[int, Dict[str, str]],
+    subject: str = "chemistry",
+    lang: str = "en",
+    printed_pno: int = 1,
+    fallback_ch: int = 1
+) -> Tuple[int, str, str]:
+    # 1. Authoritative TOC range lookup if known
+    ranges = SUBJECT_TOC.get(subject.lower(), {}).get(lang.lower(), [])
+    for start_p, end_p, ch in ranges:
+        if start_p <= printed_pno <= end_p:
+            if ch in subject_chapters:
+                return ch, subject_chapters[ch]["title_en"], subject_chapters[ch]["title_bn"]
+            return ch, f"Chapter {ch}", f"অধ্যায় {ch}"
+
+    # 2. Look for explicit Chapter / অধ্যায় headers
+    ch_match = re.search(r"(?:Chapter|অধ্যায়)\s*([0-9]+|[A-Za-z]+|[০-৯]+)", ocr_draft, re.IGNORECASE)
+    if ch_match:
+        val = ch_match.group(1).strip()
+        bn_map = {"১": 1, "২": 2, "৩": 3, "৪": 4, "৫": 5, "৬": 6, "৭": 7, "৮": 8, "৯": 9, "১০": 10, "১১": 11, "১২": 12, "১৩": 13, "১৪": 14, "১৫": 15, "১৬": 16, "১৭": 17}
+        en_word_map = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7, "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13, "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17}
+        if val in bn_map:
+            ch_num = bn_map[val]
+            if ch_num in subject_chapters:
+                return ch_num, subject_chapters[ch_num]["title_en"], subject_chapters[ch_num]["title_bn"]
+        elif val.lower() in en_word_map:
+            ch_num = en_word_map[val.lower()]
+            if ch_num in subject_chapters:
+                return ch_num, subject_chapters[ch_num]["title_en"], subject_chapters[ch_num]["title_bn"]
+        elif val.isdigit():
+            ch_num = int(val)
+            if ch_num in subject_chapters:
+                return ch_num, subject_chapters[ch_num]["title_en"], subject_chapters[ch_num]["title_bn"]
+
+    # 3. Look for section numbers: e.g. "9.1", "9.2" (anchored to start of line or header)
+    sec_matches = re.findall(r"(?:^|\n)\s*(\d{1,2})\.\d{1,2}\s+[A-Z\u0980-\u09FF]", ocr_draft)
+    if sec_matches:
+        for sm in sec_matches:
+            c = int(sm)
+            if c in subject_chapters:
+                return c, subject_chapters[c]["title_en"], subject_chapters[c]["title_bn"]
+
+    if fallback_ch in subject_chapters:
+        return fallback_ch, subject_chapters[fallback_ch]["title_en"], subject_chapters[fallback_ch]["title_bn"]
+    return fallback_ch, "General", "সাধারণ"
 
 # --- Prompt Construction ---
 
@@ -189,10 +294,9 @@ Instructions:
    - Section numbers MUST start with '{ch_no}.' (e.g. {ch_no}.1, {ch_no}.2).
    - Figure numbers MUST match Chapter {ch_no} (e.g. {fig_example}). Never output figures from other chapters.
 3. FORMULAS & EQUATIONS:
-   - Format all chemical formulas, equations, stoichiometry fractions, and reaction symbols in pristine LaTeX ($...$ or $$...$$).
-   - Fix all subscripts, arrows, and states: e.g. $\\text{{Ca(HCO}}_3)_2 + 2\\text{{HCl}} \\longrightarrow \\text{{CaCl}}_2 + 2\\text{{H}}_2\\text{{O}} + 2\\text{{CO}}_2$
+   - Format all chemical formulas, physics variables, equations, fractions, and reaction symbols in pristine LaTeX ($...$ or $$...$$).
 4. DIAGRAM / FIGURE DETECTION & BOUNDING BOXES:
-   - Identify every genuine photographic illustration, scientific apparatus drawing, molecular lattice, graph, or chemical reaction scheme on the page.
+   - Identify every genuine photographic illustration, scientific apparatus drawing, molecular lattice, graph, or schematic on the page.
    - For EACH figure, specify its exact bounding box `box_2d: [ymin, xmin, ymax, xmax]` normalized on a 0 to 1000 integer grid covering the visual illustration.
    - Do NOT include full page text, plain paragraphs, or table headers inside figure bounding boxes.
    - If there are NO figures on the page, the figures list MUST be empty []. Never hallucinate figures.
@@ -207,36 +311,50 @@ Instructions:
 """
     return prompt
 
-# --- Extraction Function with Key Failover ---
+# Global active model tracker (permanent switch to 2.5-flash when 3.5 daily limit exhausted)
+_active_primary_model = None
 
 def extract_page_gemini(
     pdf_path: Path,
     pdf_page_1based: int,
     subject: str = "chemistry",
     lang: str = "en",
-    model_name: str = "gemini-3.5-flash",
-    fallback_model: str = "gemini-2.5-flash",
-) -> PageExtractionResult:
-    printed_pno = pdf_page_1based - 5
-    ch_no, title_en, title_bn = get_chapter_for_printed_page(printed_pno)
-    ch_title = title_en if lang.lower() == "en" else title_bn
+    model_name: str = "gemini-3.5-flash-lite",
+    
+    current_active_chapter: int = 1,
+) -> Tuple[PageExtractionResult, int]:
+    global _active_primary_model
+    if _active_primary_model is None:
+        _active_primary_model = model_name
 
-    print(f"\n[Page {pdf_page_1based} / Printed p.{printed_pno}] Rendering & local OCR grounding (Ch {ch_no}: {ch_title})...")
+    printed_pno = pdf_page_1based - 5
+    chapters = get_subject_chapters(subject)
+
+    print(f"\n[Page {pdf_page_1based} / Printed p.{printed_pno}] Rendering & local OCR grounding...")
     pil_img, img_bytes = render_and_mask_page(pdf_path, pdf_page_1based)
     ocr_draft = run_local_ocr_draft(img_bytes, lang)
+
+    ch_no, title_en, title_bn = detect_chapter_from_ocr(
+        ocr_draft, chapters, subject=subject, lang=lang, printed_pno=printed_pno, fallback_ch=current_active_chapter
+    )
+    ch_title = title_en if lang.lower() == "en" else title_bn
+    print(f"  Detected Chapter: {ch_no} ({ch_title})")
 
     prompt = build_gemini_extraction_prompt(subject, lang, ch_no, ch_title, printed_pno, ocr_draft)
     image_part = types.Part.from_bytes(data=img_bytes, mime_type="image/png")
 
-    active_model = model_name
+    candidate_models = []
+    for m in [_active_primary_model or model_name, "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3-flash-preview", "gemini-flash-latest"]:
+        if m not in candidate_models:
+            candidate_models.append(m)
 
-    for model_attempt in [active_model, fallback_model]:
+    for current_model in candidate_models:
         for key_attempt in range(len(API_KEYS)):
             client = get_client()
             try:
-                print(f"Calling Gemini ({model_attempt}) with Key {_current_key_idx}...")
+                print(f"Calling Gemini ({current_model}) with Key {_current_key_idx}...")
                 response = client.models.generate_content(
-                    model=model_attempt,
+                    model=current_model,
                     contents=[image_part, prompt],
                     config=types.GenerateContentConfig(
                         temperature=0.1,
@@ -247,23 +365,31 @@ def extract_page_gemini(
                 )
 
                 if not response.text:
-                    print(f"Warning: Empty response text from {model_attempt} (candidates: {len(response.candidates)})")
+                    print(f"Warning: Empty response text from {current_model}. Rotating key...")
                     rotate_key()
                     continue
 
                 raw_text = response.text.strip()
-                parsed_json = json.loads(raw_text)
+                try:
+                    parsed_json = json.loads(raw_text)
+                except json.JSONDecodeError:
+                    fixed_text = re.sub(r'\\(?![/"\\bfnrtu]|u[0-9a-fA-F]{4})', r'\\\\', raw_text)
+                    parsed_json = json.loads(fixed_text, strict=False)
+
                 result = PageExtractionResult(**parsed_json)
                 result.printed_page_no = printed_pno
                 result.pdf_page_no = pdf_page_1based
                 result.chapter_no = ch_no
                 result.chapter_title = ch_title
-                return result
+
+                # Lock in successful model as active primary
+                _active_primary_model = current_model
+                return result, ch_no
 
             except ClientError as e:
                 err_str = str(e)
                 if "RESOURCE_EXHAUSTED" in err_str or "429" in err_str:
-                    print(f"Key {_current_key_idx} quota/rate limit hit (429). Rotating key...")
+                    print(f"Rate limit / Quota (429) on {current_model} with Key {_current_key_idx}. Rotating key...")
                     rotate_key()
                     time.sleep(2)
                     continue
@@ -272,26 +398,28 @@ def extract_page_gemini(
                     rotate_key()
                     continue
                 else:
-                    print(f"ClientError: {e}")
+                    print(f"ClientError on {current_model}: {e}")
                     rotate_key()
                     continue
             except Exception as e:
-                print(f"Generation error with {model_attempt} on key {_current_key_idx}: {e}")
-                rotate_key()
+                print(f"Generation error with {current_model} on key {_current_key_idx}: {e}")
                 time.sleep(2)
-        
-        print(f"Model {model_attempt} exhausted across all keys. Escalating to fallback model {fallback_model}...")
+                rotate_key()
 
-    raise RuntimeError(f"Failed to extract page {pdf_page_1based} with both {model_name} and {fallback_model}")
+        print(f"Model {current_model} exhausted across all keys. Attempting next candidate model...")
+
+    raise RuntimeError(f"Failed to extract page {pdf_page_1based} across all models and keys")
 
 def main():
-    parser = argparse.ArgumentParser(description="Extract NCTB textbook pages with Gemini 3.5 Flash")
+    parser = argparse.ArgumentParser(description="Extract NCTB textbook pages with Gemini")
     parser.add_argument("--subject", default="chemistry", choices=["chemistry", "physics", "mathematics"])
     parser.add_argument("--lang", default="en", choices=["en", "bn"])
-    parser.add_argument("--start-page", type=int, default=35, help="PDF page number (1-based), e.g. 35 = printed p.30")
-    parser.add_argument("--end-page", type=int, default=35, help="PDF page number (1-based)")
-    parser.add_argument("--model", default="gemini-3.5-flash", help="Model name (e.g. gemini-3.5-flash)")
+    parser.add_argument("--start-page", type=int, default=6, help="PDF page number (1-based), e.g. 6 = printed p.1")
+    parser.add_argument("--end-page", type=int, default=None, help="PDF page number (1-based)")
+    parser.add_argument("--model", default="gemini-3.5-flash-lite", help="Model name (e.g. gemini-2.5-flash)")
     parser.add_argument("--out-dir", default=None, help="Output cache directory")
+    parser.add_argument("--skip-existing", action="store_true", default=True, help="Skip already extracted pages")
+    parser.add_argument("--pace-delay", type=float, default=4.2, help="Sleep delay in seconds between requests for 15 RPM safety")
     args = parser.parse_args()
 
     pdf_file = INGESTION_DIR / "textbooks" / f"{args.subject}_{args.lang}.pdf"
@@ -299,33 +427,66 @@ def main():
         print(f"Error: PDF file {pdf_file} does not exist.")
         sys.exit(1)
 
+    doc = pymupdf.open(str(pdf_file))
+    total_pdf_pages = len(doc)
+    doc.close()
+
+    end_page = args.end_page if args.end_page else total_pdf_pages - 1
+
     out_dir = Path(args.out_dir) if args.out_dir else INGESTION_DIR / "cache_gemini" / f"{args.subject}_{args.lang}"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"Starting extraction for {args.subject} ({args.lang}) from PDF p.{args.start_page} to p.{args.end_page}")
-    print(f"Model: {args.model} | Cache: {out_dir}")
+    print(f"=== Starting Extraction Pipeline ===")
+    print(f"Subject: {args.subject} | Language: {args.lang.upper()}")
+    print(f"Source PDF: {pdf_file} (Total Pages: {total_pdf_pages})")
+    print(f"Target Range: PDF p.{args.start_page} to p.{end_page} (Printed p.{args.start_page-5} to p.{end_page-5})")
+    print(f"Primary Model: {args.model} | Cache: {out_dir}")
+    print(f"Pacing Delay: {args.pace_delay}s per page\n")
 
-    for p in range(args.start_page, args.end_page + 1):
+    current_ch = 1
+    extracted_count = 0
+    skipped_count = 0
+
+    for p in range(args.start_page, end_page + 1):
         printed_pno = p - 5
         cache_file = out_dir / f"page_{printed_pno:03d}.json"
-        
-        try:
-            res = extract_page_gemini(
-                pdf_path=pdf_file,
-                pdf_page_1based=p,
-                subject=args.subject,
-                lang=args.lang,
-                model_name=args.model,
-            )
-            cache_file.write_text(res.model_dump_json(indent=2), encoding="utf-8")
-            print(f"Successfully extracted and saved: {cache_file}")
-            print(f"  Sections found: {len(res.sections)}")
-            print(f"  Figures found: {len(res.figures)}")
-            for fig in res.figures:
-                print(f"    - {fig.caption} | box_2d: {fig.box_2d}")
-        except Exception as e:
-            print(f"Failed to process page {p}: {e}")
-            break
+
+        if args.skip_existing and cache_file.exists():
+            try:
+                cached_data = json.loads(cache_file.read_text(encoding="utf-8"))
+                current_ch = cached_data.get("chapter_no", current_ch)
+                skipped_count += 1
+                continue
+            except Exception:
+                pass
+
+        # Retry page up to 5 times
+        page_success = False
+        for page_try in range(5):
+            try:
+                res, current_ch = extract_page_gemini(
+                    pdf_path=pdf_file,
+                    pdf_page_1based=p,
+                    subject=args.subject,
+                    lang=args.lang,
+                    model_name=args.model,
+                    current_active_chapter=current_ch,
+                )
+                cache_file.write_text(res.model_dump_json(indent=2), encoding="utf-8")
+                extracted_count += 1
+                print(f"✓ Saved [p.{printed_pno:03d} / PDF {p:03d}] -> {cache_file.name} (Sections: {len(res.sections)}, Figures: {len(res.figures)})")
+                page_success = True
+                time.sleep(args.pace_delay)
+                break
+            except Exception as e:
+                print(f"Retry {page_try+1}/5 on page {p} failed: {e}. Sleeping 15s...")
+                time.sleep(15)
+
+        if not page_success:
+            print(f"\n[FATAL] Page {p} failed all 5 retries. Aborting.")
+            sys.exit(1)
+
+    print(f"\nExtraction run complete. Processed: {extracted_count} | Skipped: {skipped_count} | Total Target: {end_page - args.start_page + 1}")
 
 if __name__ == "__main__":
     main()

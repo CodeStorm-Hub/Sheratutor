@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 211,
+  "pdf_page_no": 216,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Determine the value (8-11)\n\n8. $\\frac{1 - \\cot^2 60^\\circ}{1 + \\cot^2 60^\\circ}$\n\n9. $\\tan 45^\\circ \\cdot \\sin^2 60^\\circ \\cdot \\tan 30^\\circ \\cdot \\tan 60^\\circ$\n\n10. $\\frac{1 - \\cos^2 60^\\circ}{1 + \\cos^2 60^\\circ} + \\sec^2 60^\\circ$\n\n11. $\\cos 45^\\circ \\cdot \\cot^2 60^\\circ \\cdot \\text{cosec}^2 30^\\circ$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Show that, (12-17)\n\n12. $\\cos^2 30^\\circ - \\sin^2 30^\\circ = \\cos 60^\\circ$\n\n13. $\\sin 60^\\circ \\cdot \\cos 30^\\circ + \\cos 60^\\circ \\cdot \\sin 30^\\circ = \\sin 90^\\circ$\n\n14. $\\cos 60^\\circ \\cdot \\cos 30^\\circ + \\sin 60^\\circ \\cdot \\sin 30^\\circ = \\cos 30^\\circ$\n\n15. $\\sin 3A = \\cos 3A$, when $A = 15^\\circ$.\n\n16. $\\sin 2A = \\frac{2\\tan A}{1 + \\tan^2 A}$ when $A = 45^\\circ$.\n\n17. $\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}$ when $A = 30^\\circ$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "18. If $2\\cos(A + B) = 1 = 2\\sin(A - B)$ and $A, B$ are acute angles, show that $A = 45^\\circ, B = 15^\\circ$.\n\n19. If $\\cos(A - B) = 1, 2\\sin(A + B) = \\sqrt{3}$ and $A, B$ are acute angles, determine the values of $A$ and $B$.\n\n20. Solve: $\\frac{\\cos A - \\sin A}{\\cos A + \\sin A} = \\frac{\\sqrt{3} - 1}{\\sqrt{3} + 1}$\n\n21. If $A$ and $B$ are acute angles and $\\cot(A + B) = 1, \\cot(A - B) = \\sqrt{3}$, determine the values of $A$ and $B$.\n\n22. Show that, $\\cos 3A = 4\\cos^3 A - 3\\cos A$, when $A = 30^\\circ$.\n\n23. Solve: $\\sin \\theta + \\cos \\theta = 1$, when $0^\\circ \\le \\theta \\le 90^\\circ$\n\n24. Solve: $\\cos^2 \\theta - \\sin^2 \\theta = 2 - 5\\cos \\theta$, when $\\theta$ is an acute angle.\n\n25. Solve: $2\\sin^2 \\theta + 3\\cos \\theta - 3 = 0$, $\\theta$ is an acute angle.\n\n26. Solve: $\\tan^2 \\theta - (1 + \\sqrt{3})\\tan \\theta + \\sqrt{3} = 0$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

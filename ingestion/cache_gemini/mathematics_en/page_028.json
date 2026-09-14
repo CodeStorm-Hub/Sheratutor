@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 28,
+  "pdf_page_no": 33,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: $A^c = U \\setminus A = \\{1, 2, 3, 4, 5, 6, 7\\} \\setminus \\{2, 4, 6, 7\\} = \\{1, 3, 5\\}$\n\nand $B^c = U \\setminus B = \\{1, 2, 3, 4, 5, 6, 7\\} \\setminus \\{1, 3, 5\\} = \\{2, 4, 6, 7\\}$\n\nThe required sets are $A^c = \\{1, 3, 5\\}$ and $B^c = \\{2, 4, 6, 7\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Union of Sets",
+      "chunk_type": "theory",
+      "content_markdown": "The set consisting of elements of two or more sets is said to be union of sets. Let, $A$ and $B$ be two sets. The union of sets $A$ and $B$ is denoted by $A \\cup B$ and read as $A$ union $B$. In set building method $A \\cup B = \\{x : x \\in A \\text{ or } x \\in B\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 8. If $C = \\{3, 4, 5\\}$ and $D = \\{4, 6, 8\\}$, determine $C \\cup D$.\n\nSolution: Given $C = \\{3, 4, 5\\}$\nand $D = \\{4, 6, 8\\}$\n$\\therefore C \\cup D = \\{3, 4, 5\\} \\cup \\{4, 6, 8\\} = \\{3, 4, 5, 6, 8\\}$\nThe set to be determined is: $\\{3, 4, 5, 6, 8\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Intersection of Sets",
+      "chunk_type": "theory",
+      "content_markdown": "The set consisting of common elements of two or more sets is known as intersection set. Let $A$ and $B$ be two sets. The intersection of sets $A$ and $B$ is denoted by $A \\cap B$ and read as $A$ intersection $B$. In set building notation $A \\cap B = \\{x : x \\in A \\text{ and } x \\in B\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 9. If $P = \\{x \\in N : 2 < x \\leq 6\\}$ and $Q = \\{x \\in N : x \\text{ is even and } x \\leq 8\\}$, determine $P \\cap Q$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: C U D",
+      "figure_no": "2.01",
+      "box_2d": [
+        404,
+        623,
+        524,
+        796
+      ],
+      "description": "Venn diagram showing the union of sets C and D.",
+      "reading_order_anchor": "Example 8. If C = {3,4,5} and D = {4,6, 8}, determine CUD"
+    },
+    {
+      "caption": "Fig 2.02: A ∩ B and A ∩ B ∩ C",
+      "figure_no": "2.02",
+      "box_2d": [
+        772,
+        303,
+        891,
+        706
+      ],
+      "description": "Venn diagrams showing the intersection of two sets (A ∩ B) and three sets (A ∩ B ∩ C).",
+      "reading_order_anchor": "Intersection of Sets."
+    }
+  ]
+}

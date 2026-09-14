@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 65,
+  "pdf_page_no": 70,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "object is moving with a uniform velocity. Therefore, there is no change in velocity. Therefore, from time $t_1$ to $t_2$ no force is applied on the body. At the instant $t_1$, a force is applied on the stationary object to make it move with a uniform velocity. Again just at the instant $t_2$, by applying a force the motion is stopped. No force is applied elsewhere.\n\nTherefore, when $0 < t < t_1$, $t_1 < t < t_2$ and $t_2 < t$ there is no force.\n\nOnly when, $t = t_1$ and $t = t_2$ force is applied for a moment.\n\n(ii) In the second graph, the object is in uniform motion; from $0$ to $t_1$ and from $t_2$ to the end, therefore no force is applied on the body during these time intervals. From time $t_1$ to $t_2$, the velocity is changing at a uniform rate, therefore, definitely a force is applied on it.\n\nTherefore, when $0 < t < t_1$ and $t_2 < t$, there is no force.\nWhen, $t_1 < t < t_2$ force is applied.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.01 : Position-Time and Velocity- Time graph",
+      "figure_no": "3.01",
+      "box_2d": [
+        97,
+        138,
+        472,
+        870
+      ],
+      "description": "Six graphs showing various position-time ($x(m)$ vs $t(s)$) and velocity-time ($v(m/s)$ vs $t(s)$) relationships.",
+      "reading_order_anchor": "Figure 3.01 : Position-Time and Velocity- Time graph"
+    }
+  ]
+}

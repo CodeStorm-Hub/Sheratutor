@@ -1,0 +1,90 @@
+{
+  "printed_page_no": 129,
+  "pdf_page_no": 134,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $ABC$ একটি ত্রিভুজ। ধরি, $BC$ ত্রিভুজটির বৃহত্তম বাহু। তাহলে, $AB + AC > BC$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুসিদ্ধান্ত ৫. ত্রিভুজের যেকোনো দুই বাহুর দৈর্ঘ্যের অন্তর এর তৃতীয় বাহুর দৈর্ঘ্য অপেক্ষা ক্ষুদ্রতর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $ABC$ একটি ত্রিভুজ। $\\triangle ABC$ এর যেকোনো দুই বাহুর দৈর্ঘ্যের অন্তর এর তৃতীয় বাহুর দৈর্ঘ্য অপেক্ষা ক্ষুদ্রতর। তাহলে, $AB - AC < BC$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ১৪. ত্রিভুজের যেকোনো দুই বাহুর মধ্যবিন্দুর সংযোজক রেখাংশ তৃতীয় বাহুর সমান্তরাল এবং দৈর্ঘ্যে তার অর্ধেক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি, $ABC$ একটি ত্রিভুজ। $D$ ও $E$ যথাক্রমে ত্রিভুজটির $AB$ ও $AC$ বাহুর মধ্যবিন্দু। তাহলে, প্রমাণ করতে হবে যে $DE \\parallel BC$ এবং $DE = \\frac{1}{2}BC$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $D$ ও $E$ যোগ করে বর্ধিত করি যেন $EF = DE$ হয়। $C, F$ যোগ করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\n\nধাপ ১. $\\triangle ADE$ ও $\\triangle CEF$ এর মধ্যে, $AE = EC$ [দেওয়া আছে]\n$DE = EF$ [অঙ্কনানুসারে]\nঅন্তর্ভুক্ত $\\angle AED = $ অন্তর্ভুক্ত $\\angle CEF$ [বিপ্রতীপ কোণ]\n$\\therefore \\triangle ADE \\cong \\triangle CEF$ [বাহু-কোণ-বাহু উপপাদ্য]\n$\\therefore \\angle ADE = \\angle EFC$ [একান্তর কোণ]\n$\\therefore AD \\parallel CF$\nআবার, $BD = AD = CF$ এবং $BD \\parallel CF$।\nসুতরাং $BDFC$ একটি সামান্তরিক।\n$\\therefore DF \\parallel BC$ বা $DE \\parallel BC$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ২. আবার, $DF = BC$ বা $DE + EF = BC$\nবা $DE + DE = BC$ বা $2DE = BC$ বা $DE = \\frac{1}{2}BC$\n$\\therefore DE \\parallel BC$ এবং $DE = \\frac{1}{2}BC$ (প্রমাণিত)।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৬.০১",
+      "figure_no": "6.01",
+      "box_2d": [
+        64,
+        673,
+        155,
+        875
+      ],
+      "description": "ত্রিভুজ ABC যেখানে BC বৃহত্তম বাহু",
+      "reading_order_anchor": "মনে করি, ABC একটি ত্রিভুজ। ধরি, BC ত্রিভুজটির বৃহত্তম বাহু। তাহলে, AB + AC > BC।"
+    },
+    {
+      "caption": "চিত্র ৬.০২",
+      "figure_no": "6.02",
+      "box_2d": [
+        335,
+        635,
+        445,
+        875
+      ],
+      "description": "ত্রিভুজ ABC যেখানে D ও E যথাক্রমে AB ও AC বাহুর মধ্যবিন্দু এবং বর্ধিত রেখাংশ EF",
+      "reading_order_anchor": "বিশেষ নির্বচন: মনে করি, ABC একটি ত্রিভুজ। D ও E যথাক্রমে ত্রিভুজটির AB ও AC বাহুর মধ্যবিন্দু।"
+    }
+  ]
+}

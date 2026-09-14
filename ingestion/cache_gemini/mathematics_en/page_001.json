@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 1,
+  "pdf_page_no": 6,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "History of numbers is as old as that of human civilization. Mathematics was originated from the process of expressing quantity by symbols as numbers. According to Greek Philosopher Aristotle, formal beginning of mathematics started with its practice among ancient Egyptian priests. So it can be said that number based Mathematics was created about two thousand years before the birth of Jesus Christ. After that numbers and operations on them have reached today's universal form through the hands of different nations and civilizations.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Indian mathematicians introduced first the concept of 0 and decimal number system for satisfying the need of counting natural numbers. This is considered as a milestone in the representation of numbers. Later on Indian and Chinese mathematicians expanded the concepts of 0, negative, real, integer and fractional numbers which the Arabian mathematicians took on the basis with medieval age. Muslim mathematicians of the Middle East are given the credit of expressing numbers by decimal fractions. Again they first introduced irrational numbers in the form of square roots for solution of quadratic algebraic equations in the 11th century. Historians think that around 500 A.D. Greek philosophers felt the necessity of irrational numbers, especially square root of 2, for the purpose of geometrical drawing. In the nineteenth century European mathematicians gave real numbers complete shape by systematization. In order to satisfying daily needs students are required to have clear understanding about real numbers. In this chapter real numbers have been discussed in detail.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of this chapter students will be able to -\n\n> classify real numbers.\n\n> deduce approximate values of real numbers by expressing it in decimal fractions.\n\n> classify decimal fraction.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

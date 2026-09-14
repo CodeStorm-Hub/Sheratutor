@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 269,
+  "pdf_page_no": 274,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "18. A system of simple equations is $x + y = 10$, $3x - 2y = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Show that the equations are consistent. How many solutions do they have?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Solving the system of equations, find $(x, y)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Find the area of the triangle formed by the straight lines indicated by the equations with the $X$-axis.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "19. If 7 is added to the numerator of a fraction, the value of the fraction is the integer 2. Again, if 2 is subtracted from the denominator, value of the fraction is the integer 1.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Form a system of equations by the fraction $\\frac{x}{y}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Find $(x, y)$ by solving the system of equations by the method of cross-multiplication. What is the fraction?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Draw the graph of the system of equations and verify the correctness of the obtained values of $(x, y)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "20. If the total number of sides of two polygons is 17 and total number of diagonals of those polygons is 53, then what is the number of sides of each polygon?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "21. An assignment was given to some students where they can work alone or in a male-female group of two members. $\\frac{2}{3}$ of male students and $\\frac{3}{5}$ of female students worked in groups. What fraction of students did that assignment alone?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "22. It takes 5 seconds for two trains of 100 and 200 metre lengths to cross each other when they pass in the opposite direction and 15 seconds in the same direction. Find the velocity of the two trains.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "23. How many consecutive integers are needed so that their product is divisible by 5040?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "24. How many times the hour hand and minute hand of a clock make an angle of 30 degree with each other? Find the times.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

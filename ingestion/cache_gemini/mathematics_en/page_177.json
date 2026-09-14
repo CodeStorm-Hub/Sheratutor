@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 177,
+  "pdf_page_no": 182,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In figure (i) the circle and the straight line $PQ$ have no common point; in figure (ii) the line $PQ$ is a secant, since it intersects the circle at two points $A$ and $B$ and in figure (iii) the line $PQ$ has touched the circle at $A$. $PQ$ is a tangent to the circle and $A$ is the point of contact of the tangent.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks: All the points between two points of intersection of every secant of the circle lie interior of the circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Common tangent",
+      "chunk_type": "theory",
+      "content_markdown": "If a straight line is a tangent to two circles, it is called a common tangent to the two circles. In the adjoining figures, $AB$ is a common tangent to both the circles. In figure (a) and (b), the points of contact are different. In figure (c) and (d), the points of contact are the same.\n\nIf the two points of contact of the common tangent to two circles are different, the tangent is said to be\n1) direct common tangent if the two centres of the circles lie on the same side of the tangent and\n2) transverse common tangent, if the two centres lie on opposite sides of the tangent.\n\nThe tangent in figure (a) is a direct common one and in figure (c) it is a transverse common tangent.\n\nIf a common tangent to a circle touches both the circles at the same point, the two circles are said to touch each other at that point. In such a case, the two circles are said to have touched internally or externally according to their centres lie on the same side or opposite side of the tangent. In figure (c) the two circles have touched each other internally and in figure (d) externally.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 25. The tangent drawn at any point of a circle is perpendicular to the radius through the point of contact of the tangent.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Common tangents to two circles",
+      "figure_no": "8.01",
+      "box_2d": [
+        405,
+        665,
+        885,
+        860
+      ],
+      "description": "Four diagrams (a), (b), (c), and (d) showing different configurations of common tangents to two circles.",
+      "reading_order_anchor": "Common tangent"
+    }
+  ]
+}

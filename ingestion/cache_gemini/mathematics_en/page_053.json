@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 53,
+  "pdf_page_no": 58,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note: Substituting $-b$ instead of $b$ in Formula 6 we get Formula 7:\n\n$$\\{a + (-b)\\}^3 = a^3 + (-b)^3 + 3a(-b)\\{a + (-b)\\}$$\n\nThat is, $(a - b)^3 = a^3 - b^3 - 3ab(a - b)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Corollary 10. $a^3 - b^3 = (a - b)^3 + 3ab(a - b)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Formula 8. $a^3 + b^3 = (a + b)(a^2 - ab + b^2)$\n\nProof: $a^3 + b^3 = (a + b)^3 - 3ab(a + b)$\n\n$= (a + b)\\{(a + b)^2 - 3ab\\}$\n\n$= (a + b)(a^2 + 2ab + b^2 - 3ab)$\n\n$= (a + b)(a^2 - ab + b^2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Formula 9. $a^3 - b^3 = (a - b)(a^2 + ab + b^2)$\n\nProof: $a^3 - b^3 = (a - b)^3 + 3ab(a - b)$\n\n$= (a - b)\\{(a - b)^2 + 3ab\\}$\n\n$= (a - b)(a^2 - 2ab + b^2 + 3ab)$\n\n$= (a - b)(a^2 + ab + b^2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 12. Find the cube of $2x + 3y$.\n\nSolution: $(2x + 3y)^3$\n\n$= (2x)^3 + 3(2x)^2 \\cdot 3y + 3 \\cdot 2x(3y)^2 + (3y)^3$\n\n$= 8x^3 + 3 \\cdot 4x^2 \\cdot 3y + 3 \\cdot 2x \\cdot 9y^2 + 27y^3$\n\n$= 8x^3 + 36x^2y + 54xy^2 + 27y^3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 13. Find the cube of $2x - y$.\n\nSolution: $(2x - y)^3$\n\n$= (2x)^3 - 3(2x)^2 \\cdot y + 3 \\cdot 2x \\cdot y^2 - y^3$\n\n$= 8x^3 - 3 \\cdot 4x^2 \\cdot y + 3 \\cdot 2x \\cdot y^2 - y^3$\n\n$= 8x^3 - 12x^2y + 6xy^2 - y^3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Find the cube with the help of the formulae.\n\n1) $3x + 2y$ 2) $3x - 4y$ 3) $397$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

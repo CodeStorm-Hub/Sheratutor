@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 287,
+  "pdf_page_no": 292,
+  "chapter_no": 15,
+  "chapter_title": "ক্ষেত্রফল সম্পর্কিত উপপাদ্য",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $\\triangle ABC$ এর ভূমি $BC$ এবং উচ্চতা $BE$\n\n$\\therefore \\triangle ABC$ এর ক্ষেত্রফল $= \\frac{1}{2} \\times BC \\times BE \\dots \\dots \\dots (i)$\n\nআবার, $\\triangle DBC$ এর ভূমি $BC$ এবং উচ্চতা $CF$\n\n$\\therefore \\triangle DBC$ এর ক্ষেত্রফল $= \\frac{1}{2} \\times BC \\times CF = \\frac{1}{2} \\times BC \\times BE \\dots \\dots \\dots (ii); [EBCF$ আয়তক্ষেত্র$]$\n\n$(i)$ ও $(ii)$ নং তুলনা করে পাই, $\\triangle ABC$ এর ক্ষেত্রফল $= \\triangle DBC$ এর ক্ষেত্রফল। (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুসিদ্ধান্ত ১. একই ভূমির একই পাশে অবস্থিত সকল ত্রিভুজক্ষেত্রের ক্ষেত্রফল সমান হলে, এরা একই সমান্তরাল রেখাযুগলের মধ্যে অবস্থিত হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুসিদ্ধান্ত ২. কোনো ত্রিভুজ ও সামান্তরিক একই ভূমি ও একই সমান্তরাল রেখাযুগলের মধ্যে অবস্থিত হলে, ত্রিভুজের ক্ষেত্রফল সামান্তরিকের ক্ষেত্রফলের অর্ধেক।\n\nইঙ্গিত: চিত্রে, $ABCD$ সামান্তরিক। $AC$ কর্ণ।\n\n$\\therefore \\triangle ABC \\cong \\triangle ADC$\n\n$\\therefore \\triangle ABC = \\frac{1}{2}$ সামান্তরিক $ABCD$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ৩৭. একই ভূমির উপর এবং একই সমান্তরাল রেখাযুগলের মধ্যে অবস্থিত সামান্তরিকক্ষেত্রসমূহের ক্ষেত্রফল সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "চিত্রে, $ABCD$ ও $ABEF$ সামান্তরিকক্ষেত্র দুইটি একই ভূমি $AB$ এর উপর এবং একই সমান্তরাল রেখাযুগল $AB$ ও $FC$ এর মধ্যে অবস্থিত।\n\nপ্রমাণ করতে হবে যে, $ABCD$ সামান্তরিকের ক্ষেত্রফল $= ABEF$ সামান্তরিকের ক্ষেত্রফল।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: সামান্তরিক ও ত্রিভুজ",
+      "figure_no": "15.01",
+      "box_2d": [
+        418,
+        597,
+        514,
+        815
+      ],
+      "description": "একটি সামান্তরিক ABCD যার কর্ণ AC টানা হয়েছে।",
+      "reading_order_anchor": "অনুসিদ্ধান্ত ২. কোনো ত্রিভুজ ও সামান্তরিক একই ভূমি ও একই সমান্তরাল রেখাযুগলের মধ্যে অবস্থিত হলে, ত্রিভুজের ক্ষেত্রফল সামান্তরিকের ক্ষেত্রফলের অর্ধেক।"
+    },
+    {
+      "caption": "চিত্র: সামান্তরিকের ক্ষেত্রফল",
+      "figure_no": "15.02",
+      "box_2d": [
+        662,
+        214,
+        822,
+        785
+      ],
+      "description": "দুটি সামান্তরিক ABCD এবং ABEF একই ভূমি AB এর উপর অবস্থিত।",
+      "reading_order_anchor": "উপপাদ্য ৩৭. একই ভূমির উপর এবং একই সমান্তরাল রেখাযুগলের মধ্যে অবস্থিত সামান্তরিকক্ষেত্রসমূহের ক্ষেত্রফল সমান।"
+    }
+  ]
+}

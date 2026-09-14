@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 226,
+  "pdf_page_no": 231,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the boiler, there is wastage of heat and the boiler may even burst. The property of water that causes the soap not to clean the dirts properly is called hardness of water.\n\nHardness of water is of two kinds: temporary hardness and permanent hardness.\n\n(i) **Temporary hardness:** Hardness of water caused by bicarbonate ($HCO_3^-$) salts of calcium, magnesium, iron etc. in water is called temporary hardness. And this kind of water is known as temporary hard water. When heat is applied to this kind of water, it produces insoluble carbonate salt. It gathers at the bottom of the container as precipitate. The water can easily be separated by using a filter. Thus the temporary hardness of water is removed and the water turns into mild water.\n\n$$\\text{Ca(HCO}_3)_2 \\xrightarrow{\\Delta} \\text{CaCO}_3(s)\\downarrow + \\text{CO}_2(g)\\uparrow + \\text{H}_2\\text{O}(l)$$\n\n(ii) **Permanent hardness:** Hardness of water caused by chloride or sulfate salts of calcium, magnesium, iron etc. in water is called permanent hardness. And this kind of water is known as permanent hard water. Mere heating does not remove this kind of hardness. Various measures or reactions are used to remove this hardness from water. Usually, the water of closed water body is mild water. Rain water is also mild. It does not contain significant amounts of salts of magnesium, calcium etc.\n\n**How to remove permanent hardness of water:** Addition of sodium carbonate to permanent hard water reacts with the calcium ion and magnesium ion and produces precipitates of calcium carbonate and magnesium carbonate. Thus the calcium ion and magnesium ion is removed from water and it becomes mild.\n\n$$\\text{CaCl}_2 + \\text{Na}_2\\text{CO}_3 \\xrightarrow{\\hspace*{2cm}} \\text{CaCO}_3\\downarrow + 2\\text{NaCl}$$\n\n",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.7.2",
+      "section_title": "Water Pollution and Pollution Control",
+      "chunk_type": "theory",
+      "content_markdown": "### Water Pollution\n\nA major part of the body of animals and plants is water. That is why, all living beings need a lot of pure water. However, water is polluted in various ways. For example, all domestic disposals and sewage wash away to the water bodies.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

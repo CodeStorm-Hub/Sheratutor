@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 328,
+  "pdf_page_no": 333,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. If the point D of the circuit shown in Fig 11.19 (a) is connected with the earth, what are the voltages at the points A, B, C and D? What is the value of $I$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. If instead of point D, the point C is connected with the earth of the circuit shown in Fig 11.19 (a), then what is the voltage? What is the magnitude of $I$?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. If the point D of the circuit shown in Fig 11.19 (b) is connected with the earth, what are the voltages at the points A, B, C and D?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Multiple choice questions",
+      "chunk_type": "theory",
+      "content_markdown": "Put the tick ($\\checkmark$) mark on the correct answer",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. What are the materials through which electric current can flow very easily?\n(a) insulator (b) bad conductor\n(c) semiconductor (d) conductor",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. If three resistances of values $2\\,\\Omega$, $3\\,\\Omega$ and $4\\,\\Omega$ are connected in series, then what will be the equivalent resistance?\n(a) $8\\,\\Omega$ (b) $7\\,\\Omega$\n(c) $9\\,\\Omega$ (d) $20\\,\\Omega$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. The potential difference between the two terminals of a conductor is $100\\text{ V}$. If the amount of current flowing through it is $10\\text{ A}$, what will its resistance be?\n(a) $1000\\,\\Omega$ (b) $0.1\\,\\Omega$\n(c) $10\\,\\Omega$ (d) none of them",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. The electrical condition of a circuit is measured by-\ni. Voltmeter\nii. Ammeter\niii. Generator\nWhich one is correct?\n(a) i and ii (b) i and iii\n(c) ii and iii (d) i, ii and iii",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Multiple choice questions icon",
+      "figure_no": "11.20",
+      "box_2d": [
+        298,
+        100,
+        365,
+        175
+      ],
+      "description": "Icon representing multiple choice questions with letters a, b, c, d in a circle.",
+      "reading_order_anchor": "Multiple choice questions"
+    }
+  ]
+}

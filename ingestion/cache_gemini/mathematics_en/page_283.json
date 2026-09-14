@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 283,
+  "pdf_page_no": 288,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "So, the general term of the series $= 128 \\times \\left(\\frac{1}{2}\\right)^{n-1} = \\frac{2^7}{2^{n-1}} = \\frac{1}{2^{n-1-7}} = \\frac{1}{2^{n-8}}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 9.** The first and the second terms of a geometric series are 27 and 9. Find the 5th and the 10th terms of the series.\n\n**Solution:** The first term of the given series $a = 27$, the second term $= 9$\n\n$\\therefore$ The common ratio $r = \\frac{9}{27} = \\frac{1}{3}$\n\n$\\therefore$ The fifth term $= ar^{5-1} = 27 \\times \\left(\\frac{1}{3}\\right)^4 = \\frac{27 \\times 1}{27 \\times 3} = \\frac{1}{3}$\n\nand the tenth term $= ar^{10-1} = 27 \\times \\left(\\frac{1}{3}\\right)^9 = \\frac{3^3}{3^3 \\times 3^6} = \\frac{1}{3^6} = \\frac{1}{729}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Determination of the sum of a Geometric series\n\nLet the first term of the geometric series be $a$, common ratio $r$ and number of terms $n$. If $S_n$ is the sum of $n$ terms,\n\n$S_n = a + ar + ar^2 + \\dots + ar^{n-2} + ar^{n-1} \\dots (1)$\n\nand $r \\cdot S_n = ar + ar^2 + ar^3 + \\dots + ar^{n-1} + ar^n$ [multiplying (1) by $r$] $\\dots (2)$\n\nSubtracting, $S_n - rS_n = a - ar^n$\n\nor, $S_n(1 - r) = a(1 - r^n)$\n\n$\\therefore S_n = \\frac{a(1 - r^n)}{1 - r}$, when $r < 1$\n\nAgain, subtracting (1) from (2),\n\n$rS_n - S_n = ar^n - a$\n\nor, $S_n(r - 1) = a(r^n - 1)$\n\n$\\therefore S_n = \\frac{a(r^n - 1)}{r - 1}$, when $r > 1$\n\nObserve: If common ratio is $r = 1$, each term $= a$\n\nHere, in this case $S_n = a + a + a + \\dots$ upto $n = an$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "**Work:** Mr Rahim employed a man from the first of April for taking his son to school and taking back home for a month. His wages were fixed to be one paisa in first day, twice of the first day in second day i.e. two paisa, twice of the second day in the third day i.e. four paisa. If the wages were paid in this way, how much would he get after one month including holidays of the week ?",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,85 @@
+{
+  "printed_page_no": 186,
+  "pdf_page_no": 191,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২২. যদি $\\tan A = \\frac{1}{\\sqrt{3}}$ হয়, তবে $\\frac{\\csc^2 A - \\sec^2 A}{\\csc^2 A + \\sec^2 A}$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২৩. $\\csc A - \\cot A = \\frac{4}{3}$ হলে, $\\csc A + \\cot A$ এর মান কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২৪. $\\cot A = \\frac{b}{a}$ হলে, $\\frac{a \\sin A - b \\cos A}{a \\sin A + b \\cos A}$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৫. $\\csc A - \\cot A = \\frac{1}{x}$ হলে,",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $\\csc A + \\cot A$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) দেখাও যে, $\\sec A = \\frac{x^2 + 1}{x^2 - 1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) উদ্দীপকের আলোকে প্রমাণ কর যে, $\\tan A + \\cot A = \\sec A \\cdot \\csc A$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "বিশেষ কিছু কোণের ত্রিকোণমিতিক অনুপাত",
+      "chunk_type": "theory",
+      "content_markdown": "$30^\\circ, 45^\\circ$ ও $60^\\circ$ কোণের ত্রিকোণমিতিক অনুপাত\n\nজ্যামিতিক উপায়ে $30^\\circ, 45^\\circ$ ও $60^\\circ$ পরিমাপের কোণ আঁকতে শিখেছি। এ সকল কোণের ত্রিকোণমিতিক অনুপাতের প্রকৃত মান জ্যামিতিক পদ্ধতিতে নির্ণয় করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1.1",
+      "section_title": "$30^\\circ$ ও $60^\\circ$ কোণের ত্রিকোণমিতিক অনুপাত",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $\\angle XOZ = 30^\\circ$ এবং $OZ$ বাহুতে $P$ একটি বিন্দু। $PM \\perp OX$ আঁকি এবং $PM$ কে $Q$ পর্যন্ত বর্ধিত করি যেন $MQ = PM$ হয়। $O, Q$ যোগ করে $Z'$ পর্যন্ত বর্ধিত করি।\n\nএখন $\\triangle POM$ ও $\\triangle QOM$ এর মধ্যে $PM = QM$, $OM$ সাধারণ বাহু এবং অন্তর্ভুক্ত $\\angle PMO = $ অন্তর্ভুক্ত $\\angle QMO = 90^\\circ$।\n$\\therefore \\triangle POM \\cong \\triangle QOM$\nঅতএব, $\\angle QOM = \\angle POM = 30^\\circ$ এবং $\\angle OQM = \\angle OPM = 60^\\circ$।\nআবার, $\\angle POQ = \\angle POM + \\angle QOM = 30^\\circ + 30^\\circ = 60^\\circ$।\n$\\therefore \\triangle OPQ$ একটি সমবাহু ত্রিভুজ।\n\nযদি $OP = 2a$ হয়, তবে $PM = \\frac{1}{2} PQ = \\frac{1}{2} OP = a$ [যেহেতু $\\triangle OPQ$ একটি সমবাহু ত্রিভুজ]\nসমকোণী $\\triangle OPM$ হতে পাই,\n$OM = \\sqrt{OP^2 - PM^2} = \\sqrt{4a^2 - a^2} = \\sqrt{3}a$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০১: ৩০° ও ৬০° কোণের ত্রিকোণমিতিক অনুপাত নির্ণয়ের জ্যামিতিক চিত্র",
+      "figure_no": "9.01",
+      "box_2d": [
+        575,
+        635,
+        830,
+        880
+      ],
+      "description": "একটি জ্যামিতিক চিত্র যেখানে একটি কোণ XOZ = 30 ডিগ্রি এবং একটি ত্রিভুজ OPQ দেখানো হয়েছে।",
+      "reading_order_anchor": "মনে করি, $\\angle XOZ = 30^\\circ$ এবং $OZ$ বাহুতে $P$ একটি বিন্দু।"
+    }
+  ]
+}

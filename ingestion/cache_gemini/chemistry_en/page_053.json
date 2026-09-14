@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 53,
+  "pdf_page_no": 58,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the periodic table also, you will see that the average relative atomic mass is shown as $35.5$. The periodic table displays the average relative atomic mass.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example:** If there are two naturally available isotopes of an element, then we can calculate the percentage of those isotopes available in nature from the average relative atomic mass.\n\nSuppose, in nature $^{63}\\text{Cu}$ is available in $x\\%$ and $^{65}\\text{Cu}$ is available in $(100-x)\\%$\n\nthe average relative atomic mass of $\\text{Copper} = \\frac{x \\times 63 + (100 - x) \\times 65}{100} = 63.5$\n\n$$\\text{or, } x = 75\\%$$\n\nNaturally available percentage of $^{63}\\text{Cu} = 75\\%$ and\nNaturally available percentage of $^{65}\\text{Cu} = 25\\%$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.9.2",
+      "section_title": "Getting the Relative Molecular Mass from Relative Atomic Mass",
+      "chunk_type": "theory",
+      "content_markdown": "We can get the relative molecular mass of an atom by taking the summation of the multiplied value of relative atomic mass of the atoms with their respective number of atoms. Generally, relative atomic mass is considered as atomic mass and relative molecular mass as molecular mass.\n\nThe atomic mass of Hydrogen (H) atom in a $\\text{H}_2$ molecule is $1$ and it has two atoms, so the relative molecular mass of $\\text{H}_2$ molecule is $1 \\times 2 = 2$.\n\nSimilarly, in a $\\text{H}_2\\text{SO}_4$ molecule, the relative atomic mass of H is $1$ and number of atoms are $2$. The relative atomic mass of Sulfur is $32$ and number of atom is $1$. The relative atomic mass of Oxygen is $16$ and number of atom is $4$. Therefore, the relative molecular mass of sulfuric acid will be $1 \\times 2 + 32 \\times 1 + 16 \\times 4 = 98$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

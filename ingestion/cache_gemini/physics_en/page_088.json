@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 88,
+  "pdf_page_no": 93,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Let us consider you pushed the stone for $2\\text{ s}$, what happens then?\n\n**Answer:** In $2\\text{ s}$ the velocity of the stone will be increased to:\n$$v = u + at = 0 + 0.5 \\times 2\\text{ m/s} = 1\\text{ m/s}$$\nThen the stone will move with a uniform velocity of $1\\text{ m/s}$.\n\nIn $2\\text{ s}$ your velocity will be:\n$$u + at = 0 + 1 \\times 2\\text{ m/s} = 2\\text{ m/s}$$\nThen you will move in the reverse direction with a uniform velocity of $2\\text{ m/s}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.9",
+      "section_title": "Frictional force",
+      "chunk_type": "theory",
+      "content_markdown": "Earlier we have discussed gravitational force or gravity and spring force. Now we shall discuss about a totally different type of force, this is frictional force.\n\nLet us consider a wooden piece on a table and we are trying to create an acceleration by applying a force on it. As shown in figure 3.15, we are applying a force $F$ on the mass from left to right. It will be seen that due to friction between the wooden piece and the table, a frictional force $f$ is developed on the wooden piece and this is lowering the applied force acting from right to left.\n\nIf you think that due to friction a frictional force is developed from right to left, so if I apply a force on the wooden piece from the left too, then since the applied force and the frictional force are in the same direction, I will get an extra force! But it will be seen that the frictional force is still working in the opposite",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.15: If a force is applied on a mass then another force may develop in the reverse direction due to friction.",
+      "figure_no": "3.15",
+      "box_2d": [
+        508,
+        508,
+        725,
+        871
+      ],
+      "description": "A wooden block on a table with a force F acting to the right and a frictional force f acting to the left.",
+      "reading_order_anchor": "3.9 Frictional force"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 205,
+  "pdf_page_no": 210,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Creative Questions\n\n1. \n(i) $\\text{Petroleum} + \\text{O}_2 \\longrightarrow \\text{CO}_2 + \\text{H}_2\\text{O} + \\text{Energy}$\n\n(ii) ${}^{238}\\text{U} + {}_{0}\\text{n}^{1} \\longrightarrow {}_{56}\\text{Ba} + {}_{36}\\text{Kr} + 3{}_{0}\\text{n}^{1} + \\text{Energy}$\n\n(iii) $\\text{Zn} + \\text{CuCl}_2 \\longrightarrow \\text{ZnCl}_2 + \\text{Cu} + \\text{Energy}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is electroplating?\n\nb. Why a salt bridge is used in an electrochemical cell?\n\nc. In the stem, the second reaction is not a chemical reaction. — Explain.\n\nd. Compare the reactions (i) and (iii) in terms of production of energy.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is a metallic conductor?\n\nb. Why is acidic water called an electrolytic conductor? Explain\n\nc. Explain the reaction that occurs in an anode of the above cell of the picture.\n\nd. Explain the necessity of electricity supply to the illustrated reaction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. i. Electrolytic cell \\quad\\quad\\quad ii. Galvanic cell",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is an exothermic reaction?\n\nb. Why are some drops of sulfuric acid required in the electrolysis of water?\n\nc. Describe the formation of number (i) cell.\n\nd. Analyze the possibility of electricity production through cell number (ii).",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Electrolytic cell setup with molten MgCl2",
+      "figure_no": "8.01",
+      "box_2d": [
+        435,
+        631,
+        636,
+        898
+      ],
+      "description": "An electrolytic cell apparatus showing a battery connected to two electrodes dipping into molten MgCl2.",
+      "reading_order_anchor": "2."
+    }
+  ]
+}

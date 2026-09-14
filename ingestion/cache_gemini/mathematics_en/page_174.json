@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 174,
+  "pdf_page_no": 179,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 23.** The sum of the two opposite angles of a quadrilateral inscribed in a circle is two right angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let $ABCD$ be a quadrilateral inscribed in a circle with centre $O$. It is required to prove that, $\\angle ABC + \\angle ADC = 2$ right angles and $\\angle BAD + \\angle BCD = 2$ right angles.\n\n**Drawing:** Join $O, A$ and $O, C$.\n\n**Proof:**\n\nStep 1. Standing on the same arc $ADC$, the angle at centre reflex $\\angle AOC = 2 (\\angle ABC$ at the circumference)\n\nthat is, reflex $\\angle AOC = 2\\angle ABC$ [The angle subtended by an arc at the centre is double of the angle subtended by it at the circle]\n\nStep 2. Again, standing on the same arc $ABC$, the angle at the centre $\\angle AOC = 2 (\\angle ADC$ at the circumference)\n\nthat is, $\\angle AOC = 2\\angle ADC$ [The angle subtended by an arc at the centre is double of the angle subtended by it at the circle]\n\n$\\therefore$ reflex $\\angle AOC + \\angle AOC = 2(\\angle ABC + \\angle ADC)$\n\nBut reflex $\\angle AOC + \\angle AOC = 4$ right angles\n\n$\\therefore 2(\\angle ABC + \\angle ADC) = 4$ right angles\n\n$\\therefore \\angle ABC + \\angle ADC = 2$ right angles\n\nIn the same way, it can be proved that $\\angle BAD + \\angle BCD = 2$ right angles.\n(Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Corollary 6.** If one side of a cyclic quadrilateral is extended, the exterior angle formed is equal to the opposite interior angle.\n\n**Corollary 7.** A parallelogram inscribed in a circle is a rectangle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Cyclic quadrilateral",
+      "figure_no": "8.01",
+      "box_2d": [
+        168,
+        685,
+        275,
+        825
+      ],
+      "description": "A circle with a quadrilateral ABCD inscribed in it, with center O and lines joining O to A and C.",
+      "reading_order_anchor": "Let ABCD be a quadrilateral inscribed in a circle"
+    }
+  ]
+}

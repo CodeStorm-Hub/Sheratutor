@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 35,
+  "pdf_page_no": 40,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Circular Motion",
+      "chunk_type": "theory",
+      "content_markdown": "When a body rotates about a particular point or a line, keeping the distance of the particles of the body unchanged, it is called circular motion. Though the motion of electric fans, the hands of clocks etc. are examples of circular motion, a wonderful example of circular motion is the moon in the sky. The moon is not tied to the earth although it is revolving around the earth, neither is it falling on to the earth's surface.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Translational motion",
+      "chunk_type": "theory",
+      "content_markdown": "If an object moves in such a way that all the particles of the object travel the same distance, at the same time, in the same direction then its motion is called translational motion. Sometimes we see many examples of this type in our surroundings. When something moves in a straight path then its example is very common. If we do not consider the circular motion of the wheel of a car then straight advancement of the car is an example of translational motion. At this time every point of the car will travel the same distance, in equal time, in the same direction.\n\nThere is no obligation that the translational motion will be straight. But the example of translational motion is not easily available in the case of a curved path. Figure 2.01 shows how a plane has to move for every point of the plane travelling equal distances in the same direction. The figure also shows why the example of translational motion on a curved path is so rare.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Periodic Motion",
+      "chunk_type": "theory",
+      "content_markdown": "If the motion of a moving object passes repeatedly through a definite point in the same direction in the same manner in a definite interval of time, then this motion is called a periodic motion. The time interval over which this repetition occurs is called the period of the motion. In a periodic motion, a moving particle traverses each point in its path with the same speed after each period.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.01: Example of translational motion",
+      "figure_no": "2.01",
+      "box_2d": [
+        469,
+        185,
+        655,
+        835
+      ],
+      "description": "Diagram comparing an airplane moving along a curved path showing non-translational motion versus translational motion.",
+      "reading_order_anchor": "Translational motion"
+    }
+  ]
+}

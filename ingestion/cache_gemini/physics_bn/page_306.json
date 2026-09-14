@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 306,
+  "pdf_page_no": 311,
+  "chapter_no": 11,
+  "chapter_title": "চল তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "একটু বড় করে লিখে আঙুল দিয়ে $V$, $I$ কিংবা $R$ এর যেকোনো একটি ঢেকে দাও, যেটি ঢেকে দিয়েছ তার মানটি যেটুকু ঢাকা পড়েনি সেখান থেকে পেয়ে যাবে।\n\nউত্তর: 11.05 চিত্রটিতে বিষয়টি করে দেখানো হয়েছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.2",
+      "section_title": "রোধ",
+      "chunk_type": "theory",
+      "content_markdown": "রোধ হচ্ছে বিদ্যুৎ প্রবাহের বাধা, তাই কোনো পদার্থের দৈর্ঘ্য ($L$) যত বেশি হবে তার বাধা তত বেশি হবে অর্থাৎ রোধও বেশি হবে।\n\n$$R \\propto L$$\n\nআবার সরু একটা পথ দিয়ে যত সহজে বিদ্যুৎ প্রবাহিত হতে পারবে, চওড়া একটা পথ দিয়ে তার থেকে অনেক সহজে বিদ্যুৎ প্রবাহিত হতে পারবে অর্থাৎ প্রস্থচ্ছেদ ($A$) যত বেশি হবে রোধ তত কম হবে।\n\n$$R \\propto \\frac{1}{A}$$\n\nএই দুটি বিষয়কে আমরা যদি একসাথে আনুপাতিক না লিখে সমীকরণ হিসেবে লিখতে চাই তাহলে একটা ধ্রুবক $\\rho$ ব্যবহার করতে হবে। অর্থাৎ রোধ $R$ হচ্ছে\n\n$$R = \\rho \\frac{L}{A}$$\n\nযেখানে ধ্রুবক $\\rho$ হচ্ছে\n\n$$\\rho = R \\frac{A}{L}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 11.05: ও'মের সূত্র এই চিত্রটি দিয়ে ব্যবহার করা সম্ভব। আঙুল দিয়ে ঢাকা রাশিটির মান বাকি দুটি রাশি দিয়ে প্রকাশ করা সম্ভব।",
+      "figure_no": "11.05",
+      "box_2d": [
+        217,
+        342,
+        368,
+        856
+      ],
+      "description": "Four diagrams illustrating the use of Ohm's law formula triangles with a finger covering one variable to find the formula for the other two.",
+      "reading_order_anchor": "উত্তর: 11.05 চিত্রটিতে বিষয়টি করে দেখানো হয়েছে।"
+    }
+  ]
+}

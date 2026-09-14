@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 10,
+  "pdf_page_no": 15,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "degree from London University. Returning to his motherland in 1885, he became a professor of physics in Presidency College. In that time there was not enough scopes for research in that college, but he continued his research anyway. He was always busy during the day. So, he carried on his research at night.\n\nHe conducted a lot of research on how to send radio signals without electric wires. In 1895, for the first time he sent a wireless radio signal to distant places and demonstrated this publicly. He has great contributions in microwave research; he was the first to reduce the wavelength of the electromagnetic wave to the order of millimeter (nearly 5 mm). Acharya Jagadish Chandra Bose used semiconductor junctions to detect radio signals. Instead of patenting this invention and obtaining commercial benefits from it, he opened it for all.\n\nIn later years, Jagadish Chandra Bose discovered many important aspects of plant physiology. Among those, the invention of the Cresco graph to record the growth of plants, detecting very minor movements, and matters of responding to various stimuli are worth mentioning. Earlier it was assumed that response to stimuli was a chemical process. He showed that it was actually electrical in nature.\n\nIn 1917 he established the Bose Biggan Mandir in Kolkata for research on plant physiology. The writings of Jagadish Chandra Bose in bengali were compiled in a book named 'Obyakto'. A significant book of his is 'Response in the living and nonliving'. On 23 November 1937, scholar Jagadish Chandra Bose breathed his last.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.4",
+      "section_title": "Objectives of Physics",
+      "chunk_type": "theory",
+      "content_markdown": "Already you know that physics is that branch of science which explains the change of position of an object with time in the presence of energy and force. Like any other science the main objective of physics is to learn, the arena of knowing in physics is very large. The objectives of physics are to unfold the mysteries of both small atoms and the vast universe. For understanding easily we can divide the objectives of physics into three parts:",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 1.04(a) Acharya Sir Jagadish Chandra Bose",
+      "figure_no": "1.04(a)",
+      "box_2d": [
+        297,
+        644,
+        498,
+        821
+      ],
+      "description": "Portrait illustration of Acharya Sir Jagadish Chandra Bose wearing traditional attire and glasses.",
+      "reading_order_anchor": "He conducted a lot of research on how to send radio signals without electric wires."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 10,
+  "pdf_page_no": 15,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "by 99900 to and the common fraction is obtained.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Rules for converting repeating decimal fractions into common fractions",
+      "chunk_type": "theory",
+      "content_markdown": "Rules for converting repeating decimal fractions into common fractions: = the result by subtracting\n\nNumerator of the desired fraction = the integer obtained by deleting the decimal point of the given decimal fraction and the integer formed by the nonrepeating portion. Denominator of the desired fraction = numbers formed by putting as many 9s as many digits in the repeating part followed by as many 0s in the nonrepeating part after the decimal point.\n\nThese rules have been applied in the following examples to convert a repeating decimal fractions into common fractions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. Convert $45.2\\dot{3}4\\dot{6}$ into common fraction.\n\nSolution: $45.2\\dot{3}4\\dot{6} = \\frac{452346 - 452}{9990} = \\frac{451894}{9990} = \\frac{225947}{4995} = 45\\frac{1172}{4995}$\n\n$\\therefore$ the desired fraction is $45\\frac{1172}{4995}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. Convert $32.\\dot{5}6\\dot{7}$ into common fraction.\n\nSolution: $32.\\dot{5}6\\dot{7} = \\frac{32567 - 32}{999} = \\frac{32535}{999} = \\frac{3615}{111} = \\frac{1205}{37} = 32\\frac{21}{37}$\n\n$\\therefore$ the desired fraction is $32\\frac{21}{37}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: Convert $0.\\dot{4}\\dot{1}$, $3.0\\dot{4}62\\dot{3}$, $0.01\\dot{2}$ and $3.31\\dot{2}\\dot{4}$ into common fractions.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": "Similar and dissimilar repeating decimal fractions",
+      "chunk_type": "theory",
+      "content_markdown": "If for two or more repeating decimal fractions number of digits both in repeating and nonrepeating parts are the same, then they are called similar repeating decimal fractions. Otherwise they are called dissimilar repeating decimal fractions. For example, $12.\\dot{4}\\dot{5}$ and $6.\\dot{3}\\dot{2}$; $9.\\dot{4}5\\dot{3}$ and $125.8\\dot{9}7$ are similar repeating decimal fractions. But, $0.3\\dot{4}5\\dot{6}$ and $7.4\\dot{5}78\\dot{9}$; $6.4\\dot{3}5\\dot{7}$ and $2.89\\dot{3}4\\dot{5}$ are dissimilar repeating decimal fractions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Converting dissimilar repeating decimal fractions into similar ones",
+      "chunk_type": "theory",
+      "content_markdown": "If we write repeating part of a repeating decimal fraction, the value does not change. For example, $6.4\\dot{5}\\dot{3}\\dot{7} = 6.4\\dot{5}373\\dot{7} = 6.4\\dot{5}373\\dot{7} = 6.4\\dot{5}373\\dot{7}$. Here each one of them is a repeating decimal fraction $6.45373737...$, which is an infinite decimal.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

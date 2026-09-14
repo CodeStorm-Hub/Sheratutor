@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 178,
+  "pdf_page_no": 183,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\cos \\theta = \\frac{OM}{OP} = \\frac{\\text{সন্নিহিত বাহু}}{\\text{অতিভুজ}} [\\theta \\text{ কোণের কোসাইন (cosine)}]$$\n$$\\tan \\theta = \\frac{PM}{OM} = \\frac{\\text{বিপরীত বাহু}}{\\text{সন্নিহিত বাহু}} [\\theta \\text{ কোণের ট্যানজেন্ট (tangent)}]$$\nএবং এদের বিপরীত অনুপাত\n$$\\text{cosec } \\theta = \\frac{1}{\\sin \\theta} [\\theta \\text{ কোণের কোসেক্যান্ট (cosecant)}]$$\n$$\\sec \\theta = \\frac{1}{\\cos \\theta} [\\theta \\text{ কোণের সেক্যান্ট (secant)}]$$\n$$\\cot \\theta = \\frac{1}{\\tan \\theta} [\\theta \\text{ কোণের কোট্যানজেন্ট (cotangent)}]$\nলক্ষ করি, $\\sin \\theta$ প্রতীকটি $\\theta$ কোণের সাইন-এর অনুপাতকে বোঝায়; $\\sin$ ও $\\theta$ এর গুণফলকে নয়। $\\theta$ বাদে $\\sin$ আলাদা কোনো অর্থ বহন করে না। ত্রিকোণমিতিক অন্যান্য অনুপাতের ক্ষেত্রেও বিষয়টি প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ত্রিকোণমিতিক অনুপাতগুলোর সম্পর্ক",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $\\angle XOA = \\theta$ একটি সূক্ষ্মকোণ।\nপাশের চিত্র সাপেক্ষে, সংজ্ঞানুযায়ী,\n$$\\sin \\theta = \\frac{PM}{OP}, \\text{cosec } \\theta = \\frac{1}{\\sin \\theta} = \\frac{OP}{PM}$$\n$$\\cos \\theta = \\frac{OM}{OP}, \\sec \\theta = \\frac{1}{\\cos \\theta} = \\frac{OP}{OM}$$\n$$\\tan \\theta = \\frac{PM}{OM}, \\cot \\theta = \\frac{1}{\\tan \\theta} = \\frac{OM}{PM}$$\nআবার, $\\tan \\theta = \\frac{PM}{OM} = \\frac{\\frac{PM}{OP}}{\\frac{OM}{OP}}$ [লব ও হরকে $OP$ দ্বারা ভাগ করে]\nবা, $\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$\n$$\\therefore \\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}$$\nএবং একইভাবে,\n$$\\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: ত্রিকোণমিতিক অনুপাত",
+      "figure_no": "9.01",
+      "box_2d": [
+        458,
+        646,
+        610,
+        871
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ OMP যেখানে কোণ XOA = theta",
+      "reading_order_anchor": "ত্রিকোণমিতিক অনুপাতগুলোর সম্পর্ক"
+    }
+  ]
+}

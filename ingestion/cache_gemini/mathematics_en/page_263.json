@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 263,
+  "pdf_page_no": 268,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Formation of simultaneous equations from real life problems and solution\n\nIn everyday life, there occur some such mathematical problems which are easier to solve by forming equations. For this, from the condition or conditions of the problem, two mathematical symbols, mostly the variables $x, y$ are assumed for two unknown expressions. Two equations are to be formed for determining the values of those unknown expressions. If the two equations thus formed are solved, values of the unknown quantities will be found.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 12.** If 5 is added to the sum of the two digits of a number consisting of two digits, the sum will be three times the digits of the tens place. Moreover, if the places of the digits are interchanged, the number thus found will be 9 less than the original number. Find the number.\n\n**Solution:** Let the digit of the tens place of the required number be $x$ and its digits of the units place is $y$. Therefore, the number is $10x + y$.\n\n$\\therefore$ by the 1st condition, $x + y + 5 = 3x \\dots (1)$\n\nand by the 2nd condition, $10y + x = (10x + y) - 9 \\dots (2)$\n\nFrom equation (1) we get, $y = 3x - x - 5$, or, $y = 2x - 5 \\dots (3)$\n\nAgain, from equation (2) we get,\n\n$10y - y + x - 10x + 9 = 0$\n\nor, $9y - 9x + 9 = 0$\n\nor, $y - x + 1 = 0$\n\nor, $2x - 5 - x + 1 = 0$ [putting the value of $y$ from equation (3) we get]\n\nor, $x = 4$\n\nputting the value of $x$ in equation (3) we get, $y = 2 \\times 4 - 5 = 8 - 5 = 3$\n\n$\\therefore$ the number is $10x + y = 10 \\times 4 + 3 = 40 + 3 = 43$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

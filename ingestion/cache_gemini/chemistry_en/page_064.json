@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 64,
+  "pdf_page_no": 69,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Another success of Mendeleev’s table is his correct forecast about the existence of some elements. He kept some cells in his table blank as there were only 63 of them detected till then. Later on, these cells were accommodated by detected elements, proving Mendeleev correct.\n\nThere are some flaws in Mendeleev’s table. According to his theory, elements with lesser atomic mass were supposed to be set before the elements with higher atomic mass. However, in Mendeleev’s table, Argon with its atomic mass 40 is placed before Potassium with atomic mass 39. He did this to group according to similarity of physical and chemical properties. There are some other cases with similar flaws and other flaws in Mendeleev’s table.\n\nIn 1913, scientist Mosley proposed to organize elements according to their atomic number instead of atomic mass. When the table was reorganized according to atomic number of elements, Argon (18) came automatically before Potassium (19) and thus the flaw in Mendeleev’s table was corrected.\n\nInternational Union of Pure and Applied Chemistry (IUPAC) has so far detected 118 elements. IUPAC supervises and controls different matters of chemistry and applied chemistry- like creating various rules and regulations, overseeing which of the escalating changes or inventions are to be accepted or discarded etc.\n\nLavoisier started with only 33 elements which became 63 detected and 4 undetected elements in Mendeleev’s table. Now, that attempt has turned out to be the modern periodic table with 118 detected elements.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.2",
+      "section_title": "Characteristics of the Periodic Table",
+      "chunk_type": "theory",
+      "content_markdown": "The periodic table is basically a table of elements. It also features columns and rows. In the periodic table, the rows from left to right are called Periods and vertical columns are called Groups. There are a total of 118 elements accommodated in the cells of the table, which is there for you at the beginning of this chapter.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 89,
+  "pdf_page_no": 94,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "direction. The frictional force always works in the direction reverse to that the applied force! If some weight is put on the wooden piece it will be seen that the frictional force is increased also, though the weight and the force of friction are normal to each other.\n\nWe will see that there is nothing surprising in it if we understand how frictional forces are developed. Though apparently wood, table etc. (or the two surfaces where friction is present) seem very smooth, but if we view them with a microscope it will be seen (Fig 3.16) that all surfaces are rough or irregular. These rough parts touch one another or the grooves of the two surfaces in contact catch onto one another. The motion is obstructed due to this and we say frictional force is developed in the opposite direction. If the two surfaces are pressed more, then the scratched surfaces make better contact with one another, the grooves of one surface will penetrate into the other's grooves more deeply and as a result the frictional force will be increased.\n\nDue to friction heat is generated. It is a problem in most cases. When a piston in a cylinder moves back and forth in a car, due to friction heat is generated there and to control this heat, the engine of the car needs to be cooled.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.9.1",
+      "section_title": "Types of Friction",
+      "chunk_type": "theory",
+      "content_markdown": "Friction is divided into three types. These are, static friction, kinetic friction, and rolling friction.\n\n**Static friction:** The frictional force that develops when two objects are at rest relative to each other is called static friction. Due to static friction we can walk, our legs or shoe soles rub against the ground and we don't slip.\n\n**kinetic friction:** The frictional force that is create when an object is in motion relative to another object is called kinetic friction. When anyone grips the brake",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.16: Actually friction creats due to two scratched surface.",
+      "figure_no": "3.16",
+      "box_2d": [
+        201,
+        489,
+        381,
+        876
+      ],
+      "description": "An illustration showing a wooden block on a table with a magnified circular view of the microscopic roughness and irregular grooves between the two surfaces in contact.",
+      "reading_order_anchor": "We will see that there is nothing surprising in it if we understand how frictional forces are developed."
+    }
+  ]
+}

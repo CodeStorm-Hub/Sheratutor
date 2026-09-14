@@ -1,0 +1,86 @@
+{
+  "printed_page_no": 137,
+  "pdf_page_no": 142,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Theorem 8. (SSS criterion)\nIf the three sides of one triangle are equal to the three corresponding sides of another triangle, the triangles are congruent.\n\nLet, in $\\triangle ABC$ and $\\triangle DEF$, $AB = DE$, $AC = DF$ and $BC = EF$. Therefore, $\\triangle ABC \\cong \\triangle DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Theorem 9. (ASA criterion)\nIf two angles and the included side of a triangle are equal to two corresponding angles and the included side of another triangle, the triangles are congruent.\n\nLet, in $\\triangle ABC$ and $\\triangle DEF$, $\\angle B = \\angle E$, $\\angle C = \\angle F$ and the side $BC =$ the corresponding side $EF$. Then the triangles are congruent, i.e: $\\triangle ABC \\cong \\triangle DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Theorem 10. (Hypotenuse-side criterion)\nIf the hypotenuse and one side of a right-angled triangle are respectively equal to the hypotenuse and one side of another right-angled triangle, the triangles are congruent.\n\nLet $\\triangle ABC$ and $\\triangle DEF$ be two right angled triangles, in which the hypotenuse $AC =$ hypotenuse $DF$ and $AB = DE$. Then, $\\triangle ABC \\cong \\triangle DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "There is a relation between the sides and angles of a triangle. This relation is described in the following criteria 12 and 13.\n\n### Theorem 11. If one side of a triangle is greater than another, the angle opposite the greater side is greater than the angle opposite the lesser sides.\n\nLet, in triangle $\\triangle ABC$, $AC > AB$. Therefore $\\angle ABC > \\angle ACB$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: SSS criterion",
+      "figure_no": "6.01",
+      "box_2d": [
+        178,
+        663,
+        263,
+        902
+      ],
+      "description": "Two congruent triangles ABC and DEF illustrating the SSS criterion.",
+      "reading_order_anchor": "Theorem 8. (SSS criterion)"
+    },
+    {
+      "caption": "Fig 6.02: ASA criterion",
+      "figure_no": "6.02",
+      "box_2d": [
+        385,
+        578,
+        456,
+        896
+      ],
+      "description": "Two congruent triangles ABC and DEF illustrating the ASA criterion.",
+      "reading_order_anchor": "Theorem 9. (ASA criterion)"
+    },
+    {
+      "caption": "Fig 6.03: Hypotenuse-side criterion",
+      "figure_no": "6.03",
+      "box_2d": [
+        604,
+        594,
+        701,
+        881
+      ],
+      "description": "Two right-angled triangles ABC and DEF illustrating the hypotenuse-side criterion.",
+      "reading_order_anchor": "Theorem 10. (Hypotenuse-side criterion)"
+    },
+    {
+      "caption": "Fig 6.04: Relation between sides and angles",
+      "figure_no": "6.04",
+      "box_2d": [
+        839,
+        680,
+        912,
+        832
+      ],
+      "description": "A triangle ABC illustrating the relation between sides and angles.",
+      "reading_order_anchor": "Theorem 11. If one side of a triangle is greater than another, the angle opposite the greater side is greater than the angle opposite the lesser sides."
+    }
+  ]
+}

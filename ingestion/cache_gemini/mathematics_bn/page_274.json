@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 274,
+  "pdf_page_no": 279,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $\\triangle ABC$ ও $\\triangle DEF$ এর প্রত্যেক অনুরূপ বাহুযুগল অসমান বিবেচনা করি। $AB$ বাহুতে $P$ বিন্দু এবং $AC$ বাহুতে $Q$ বিন্দু নিই যেন $AP = DE$ এবং $AQ = DF$ হয়। $P$ ও $Q$ যোগ করে অঙ্কন সম্পন্ন করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\n\nযেহেতু $\\frac{AB}{DE} = \\frac{AC}{DF}$, সুতরাং $\\frac{AB}{AP} = \\frac{AC}{AQ}$\n\nসুতরাং $PQ \\parallel BC$ [উপপাদ্য ২৯]\n\n$\\therefore \\angle ABC = \\angle APQ$ [$AB$ ছেদক দ্বারা উৎপন্ন অনুরূপ কোণ]\n\nএবং $\\angle ACB = \\angle AQP$ [$AC$ ছেদক দ্বারা উৎপন্ন অনুরূপ কোণ]\n\n$\\therefore \\triangle ABC$ ও $\\triangle APQ$ সদৃশকোণী।\n\nসুতরাং $\\frac{AB}{AP} = \\frac{BC}{PQ}$ বা, $\\frac{AB}{DE} = \\frac{BC}{PQ}$ [উপপাদ্য ৩২]\n\nকিন্তু $\\frac{AB}{DE} = \\frac{BC}{EF}$ [কল্পনানুসারে]\n\n$\\therefore \\frac{BC}{EF} = \\frac{BC}{PQ}$\n\n$\\therefore EF = PQ$\n\nসুতরাং $\\triangle APQ$ ও $\\triangle DEF$ সর্বসম। [বাহু-বাহু-বাহু উপপাদ্য]\n\n$\\therefore \\angle PAQ = \\angle EDF, \\angle APQ = \\angle DEF, \\angle AQP = \\angle DFE$\n\n$\\therefore \\angle APQ = \\angle ABC$ এবং $\\angle AQP = \\angle ACB$\n\n$\\therefore \\angle A = \\angle D, \\angle B = \\angle E, \\angle C = \\angle F$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.34",
+      "section_title": "উপপাদ্য ৩৪",
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ৩৪. দুইটি ত্রিভুজের একটির এক কোণ অপরটির এক কোণের সমান হলে এবং সমান কোণ সংলগ্ন বাহুগুলো সমানুপাতিক হলে ত্রিভুজদ্বয় সদৃশ।\n\nবিশেষ নির্বচন: মনে করি $\\triangle ABC$ ও $\\triangle DEF$ এমন যে, $\\angle A = \\angle D$ এবং $\\frac{AB}{DE} = \\frac{AC}{DF}$।\n\nপ্রমাণ করতে হবে যে, $\\triangle ABC$ ও $\\triangle DEF$ সদৃশ।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৪.৩৪",
+      "figure_no": "14.34",
+      "box_2d": [
+        842,
+        296,
+        946,
+        696
+      ],
+      "description": "দুটি ত্রিভুজ ABC এবং DEF যেখানে ABC ত্রিভুজের AB বাহুর উপর P এবং AC বাহুর উপর Q বিন্দু নিয়ে PQ রেখাংশ টানা হয়েছে।",
+      "reading_order_anchor": "উপপাদ্য ৩৪. দুইটি ত্রিভুজের একটির এক কোণ অপরটির এক কোণের সমান হলে এবং সমান কোণ সংলগ্ন বাহুগুলো সমানুপাতিক হলে ত্রিভুজদ্বয় সদৃশ।"
+    }
+  ]
+}

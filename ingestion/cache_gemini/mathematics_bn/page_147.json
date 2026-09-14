@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 147,
+  "pdf_page_no": 152,
+  "chapter_no": 7,
+  "chapter_title": "ব্যবহারিক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে, $ABCD$ ই উদ্দিষ্ট সামান্তরিক।\n\nপ্রমাণ: $\\triangle AOB$ ও $\\triangle COD$ এ\n\n$OA = OC = \\frac{a}{2}; OB = OD = \\frac{b}{2}$ [অঙ্কনানুসারে]\n\nএবং অন্তর্ভূক্ত $\\angle AOB = $ অন্তর্ভূক্ত $\\angle COD$ [বিপ্রতীপ কোণ]\n\n$\\therefore \\triangle AOB \\cong \\triangle COD$।\n\n$\\therefore AB = CD$ এবং $\\angle ABO = \\angle ODC$; কিন্তু কোণ দুইটি একান্তর কোণ।\n\n$AB$ ও $CD$ সমান ও সমান্তরাল।\n\nঅনুরূপভাবে, $AD$ ও $BC$ সমান ও সমান্তরাল।\n\nঅতএব, $ABCD$ ই নির্ণেয় সামান্তরিক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. ট্রাপিজিয়ামের দুইটি সমান্তরাল বাহু এবং এদের মধ্যে বৃহত্তর বাহু সংলগ্ন দুইটি কোণ দেওয়া আছে। ট্রাপিজিয়ামটি আঁক।\n\nমনে করি, ট্রাপিজিয়ামের সমান্তরাল বাহুদ্বয় $a$ এবং $b$, যেখানে $a > b$ এবং বৃহত্তর বাহু $a$ সংলগ্ন কোণদ্বয় $\\angle x$ ও $\\angle y$। ট্রাপিজিয়ামটি আঁকতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: যেকোনো রশ্মি $AX$ থেকে $AB = a$ নিই। $AB$ রেখাংশের $A$ বিন্দুতে $\\angle x$ এর সমান $\\angle BAY$ এবং $B$ বিন্দুতে $\\angle y$ এর সমান $\\angle ABZ$ আঁকি।\n\nএবার $AB$ রেখাংশ থেকে $AE = b$ কেটে নিই। $E$ বিন্দুতে $EC \\parallel AY$ আঁকি যা $BZ$ রশ্মিকে $C$ বিন্দুতে ছেদ করে। এবার $CD \\parallel BA$ আঁকি। $CD$ রেখাংশ $AY$ রশ্মিকে $D$ বিন্দুতে ছেদ করে। তাহলে, $ABCD$ ই উদ্দিষ্ট ট্রাপিজিয়াম।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: অঙ্কনানুসারে, $AE \\parallel CD$ এবং $AD \\parallel EC$ সুতরাং $AECD$ একটি সামান্তরিক এবং $CD = AE = b$।\n\nএখন, চতুর্ভুজ $ABCD$ এ $AB = a, CD = b, AB \\parallel CD$ এবং $\\angle BAD = \\angle x, \\angle ABC = \\angle y$ [অঙ্কনানুসারে]\n\nঅতএব, $ABCD$ ই নির্ণেয় ট্রাপিজিয়াম।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: ট্রাপিজিয়াম অঙ্কন",
+      "figure_no": "7.01",
+      "box_2d": [
+        538,
+        225,
+        675,
+        745
+      ],
+      "description": "ট্রাপিজিয়াম অঙ্কনের জ্যামিতিক চিত্র যেখানে সমান্তরাল বাহু a, b এবং কোণ x, y প্রদর্শিত হয়েছে।",
+      "reading_order_anchor": "উদাহরণ ৩. ট্রাপিজিয়ামের দুইটি সমান্তরাল বাহু এবং এদের মধ্যে বৃহত্তর বাহু সংলগ্ন দুইটি কোণ দেওয়া আছে। ট্রাপিজিয়ামটি আঁক।"
+    }
+  ]
+}

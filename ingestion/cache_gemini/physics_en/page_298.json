@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 298,
+  "pdf_page_no": 303,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What do you mean by charge?\n\n(b) Explain why an object is charged by friction?\n\n(c) Describe why the comb is charged?\n\n(d) Explain how the nature of charge of the comb can be determined by the electroscope.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. $q_1(2\\text{ C})$, $q_2(-1\\text{ C})$ and $q_3(1\\text{ C})$ are three charges placed on a straight line sequentially and equidistant from each other.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is electric force?\n\n(b) Why are electric field and electric field intensity not the same?\n\n(c) Draw the lines of force produced by three charges.\n\n(d) What should be the magnitude of charge $q_1$ be, so that charge $q_3$ will not feel any force on it? Explain.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.1: Three charges placed on a straight line",
+      "figure_no": "10.1",
+      "box_2d": [
+        295,
+        638,
+        335,
+        864
+      ],
+      "description": "Schematic diagram showing three point charges q1 (2 C), q2 (-1 C), and q3 (1 C) placed sequentially along a straight line with a separation of 1 m between each adjacent charge.",
+      "reading_order_anchor": "2. q_1(2 C), q_2(-1 C) and q_3(1 C) are three charges placed on a straight line sequentially and equidistant from each other."
+    }
+  ]
+}

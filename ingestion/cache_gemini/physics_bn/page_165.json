@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 165,
+  "pdf_page_no": 170,
+  "chapter_no": 6,
+  "chapter_title": "বস্তুর উপর তাপের প্রভাব",
+  "sections": [
+    {
+      "section_no": "6.2.1",
+      "section_title": "ভিন্ন স্কেলের মাঝে সম্পর্ক",
+      "chunk_type": "theory",
+      "content_markdown": "যদি একটি নির্দিষ্ট তাপমাত্রা সেলসিয়াস, কেলভিন এবং ফারেনহাইট স্কেলে যথাক্রমে $T_C$, $T_K$ আর $T_F$ দেখায় তাহলে আমরা লিখতে পারি:\n\n$$\\frac{T_C - 0}{100 - 0} = \\frac{T_K - 273.15}{373.15 - 273.15} = \\frac{T_F - 32}{212 - 32}$$\n\nকিংবা\n\n$$\\frac{T_C}{100} = \\frac{T_K - 273.15}{100} = \\frac{T_F - 32}{180}$$\n\n$T_C$ এর সাপেক্ষে কেলভিন স্কেল এবং ফারেনহাইট স্কেল যথাক্রমে:\n\n$$T_C = T_K - 273.15^{\\circ}$$\n\n$$T_C = \\frac{5}{9}(T_F - 32^{\\circ})$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ",
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: কোন তাপমাত্রায় সেলসিয়াস এবং ফারেনহাইট স্কেল সমান?\n\nউত্তর: সেলসিয়াস এবং ফারেনহাইট তাপমাত্রার সম্পর্কটি এ রকম:\n\n$$T_C = \\frac{5}{9}(T_F - 32^{\\circ})$$\n\n$$9T_C = 5T_F - 5 \\times 32^{\\circ}$$\n\n$T_C$ এবং $T_F$ সমান হলে:\n\n$$4T_C = -5 \\times 32^{\\circ} = -160^{\\circ}$$\n\n$$T_C = -40^{\\circ}$$\n\nঅর্থাৎ যে তাপমাত্রা $-40^{\\circ}\\text{ C}$ দেখায় সেই একই তাপমাত্রা $-40^{\\circ}\\text{ F}$ দেখায়।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: কোন তাপমাত্রায় কেলভিন এবং ফারেনহাইট স্কেল সমান?\n\nউত্তর: কেলভিন এবং ফারেনহাইট তাপমাত্রার সম্পর্কটি এ রকম:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 372,
+  "pdf_page_no": 377,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. In case of data, Mode is -\n(i) Measures of central tendency\n(ii) Represented value which is mostly occurred\n(iii) May not unique in all respect\nWhich is correct on the basis of above information?\n1) $i$ and $ii$ 2) $i$ and $iii$ 3) $ii$ and $iii$ 4) $i, ii,$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "In winter, the statistics of temperatures (in Celsius) of a region in Bangladesh is $10^{\\circ}, 9^{\\circ}, 8^{\\circ}, 6^{\\circ}, 11^{\\circ}, 12^{\\circ}, 7^{\\circ}, 13^{\\circ}, 14^{\\circ}, 5^{\\circ}$. In the context of this statistics, answer questions(6- 8).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. Which is the mode of the above numerical data?\n1) $12^{\\circ}$ 2) $5^{\\circ}$ 3) $14^{\\circ}$ 4) no mode",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. Which one is the mean of temperature of the above numerical data?\n1) $8^{\\circ}$ 2) $8.5^{\\circ}$ 3) $9.5^{\\circ}$ 4) $9^{\\circ}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. Which one is the median of the data?\n1) $9.5^{\\circ}$ 2) $9^{\\circ}$ 3) $8.5^{\\circ}$ 4) $8^{\\circ}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. The number of classified data included in the table is $n$, the lower limit of median class is $L$, the cumulative data of previous class to median class is $F_c$, the frequency of median class is $f_m$ and class interval is $h$. In the light of these information, which one is the formula for determining the median\n1) $L + (\\frac{n}{2} - F_c) \\times \\frac{h}{F_m}$ 2) $L + (\\frac{n}{2} - F_m) \\times \\frac{h}{F_m}$\n3) $L - (\\frac{n}{2} - F_c) \\times \\frac{h}{F_m}$ 4) $L - (\\frac{n}{2} - F_m) \\times \\frac{h}{F_m}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. The frequency distribution table of marks obtained in mathematics of 60 students of class X is given below. Draw frequency diagram and ogive curve.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | 31 - 40 | 41 - 50 | 51 - 60 | 61 - 70 | 71 - 80 | 81 - 90 | 91 - 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 6 | 8 | 10 | 12 | 5 | 7 | 2 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. Frequency distribution table of the marks obtained in mathematics of 50 students of class X are provided. Draw the frequency polygon of the provided data",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

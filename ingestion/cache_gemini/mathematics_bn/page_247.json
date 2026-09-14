@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 247,
+  "pdf_page_no": 252,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. ঘরটির মেঝের দৈর্ঘ্য কত মিটার?\nক) 10 খ) 8 গ) 6 ঘ) 4",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. ঘরটির মেঝের ক্ষেত্রফল কত বর্গমিটার?\nক) 24 খ) 32 গ) 48 ঘ) 80",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. ঘরটির মেঝে মোজাইক করতে মোট কত খরচ হবে?\nক) 72000 খ) 43200 গ) 28800 ঘ) 21600",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সহসমীকরণ গঠন করে সমাধান কর (১০-১৭):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. কোনো ভগ্নাংশের লব ও হরের প্রত্যেকটির সাথে 1 যোগ করলে ভগ্নাংশটি $\\frac{4}{5}$ হবে। আবার, লব ও হরের প্রত্যেকটি থেকে 5 বিয়োগ করলে ভগ্নাংশটি $\\frac{1}{2}$ হবে। ভগ্নাংশটি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. কোনো ভগ্নাংশের লব থেকে 1 বিয়োগ ও হরের সাথে 2 যোগ করলে ভগ্নাংশটি $\\frac{1}{2}$ হয়। আর লব থেকে 7 বিয়োগ এবং হর থেকে 2 বিয়োগ করলে ভগ্নাংশটি $\\frac{1}{3}$ হয়। ভগ্নাংশটি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. দুই অঙ্কবিশিষ্ট একটি সংখ্যার একক স্থানীয় অঙ্ক দশক স্থানীয় অঙ্কের তিনগুণ অপেক্ষা 1 বেশি। কিন্তু অঙ্কদ্বয় স্থান বিনিময় করলে যে সংখ্যা পাওয়া যায়, তা অঙ্কদ্বয়ের সমষ্টির আটগুণের সমান। সংখ্যাটি কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. দুই অঙ্কবিশিষ্ট একটি সংখ্যার অঙ্কদ্বয়ের অন্তর 4। সংখ্যাটির অঙ্কদ্বয় স্থান বিনিময় করলে যে সংখ্যা পাওয়া যায়, তার ও মূল সংখ্যাটির যোগফল 110। সংখ্যাটি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. মাতার বর্তমান বয়স তার দুই কন্যার বয়সের সমষ্টির চারগুণ। 5 বছর পর মাতার বয়স ঐ দুই কন্যার বয়সের সমষ্টির দ্বিগুণ হবে। মাতার বর্তমান বয়স কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. একটি আয়তক্ষেত্রের দৈর্ঘ্য 5 মিটার কম ও প্রস্থ 3 মিটার বেশি হলে ক্ষেত্রফল 9 বর্গমিটার কম হবে। আবার দৈর্ঘ্য 3 মিটার বেশি ও প্রস্থ 2 মিটার বেশি হলে ক্ষেত্রফল 67 বর্গমিটার বেশি হবে। ক্ষেত্রটির দৈর্ঘ্য ও প্রস্থ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. একটি নৌকা দাঁড় বেয়ে স্রোতের অনুকূলে ঘণ্টায় 15 কি.মি. যায় এবং স্রোতের প্রতিকূলে যায় ঘণ্টায় 5 কি.মি.। নৌকার বেগ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৭. একজন গার্মেন্টস শ্রমিক মাসিক বেতনে চাকরি করেন। প্রতিবছর শেষে একটি নির্দিষ্ট বেতনবৃদ্ধি পান। তার মাসিক বেতন 4 বছর পর 4500 টাকা ও 8 বছর পর 5000 টাকা হয়। তার চাকরি শুরুর বেতন ও বার্ষিক বেতন বৃদ্ধির পরিমাণ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. একটি সরল সমীকরণজোট $x + y = 10, 3x - 2y = 0$\nক) দেখাও যে, সমীকরণজোটটি সমঞ্জস। এর কয়টি সমাধান আছে?\nখ) সমীকরণজোটটি সমাধান করে $(x, y)$ নির্ণয় কর।\nগ) সমীকরণদ্বয় দ্বারা নির্দেশিত সরলরেখাদ্বয় $x$-অক্ষের সাথে যে ত্রিভুজ গঠন করে তার ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

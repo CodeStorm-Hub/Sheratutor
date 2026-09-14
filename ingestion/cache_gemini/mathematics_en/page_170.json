@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 170,
+  "pdf_page_no": 175,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": "Angle in a Circle (Inscribed angle)",
+      "chunk_type": "theory",
+      "content_markdown": "If two chords of a circle meet at a point on the circle then the angle formed between these chords is called circular angle or angle inscribed in a circle.\n\nIn the figure, $\\angle ACB$ is an angle in a circle. Every angle in a circle cuts an arc of the circle. This arc may be a major or minor arc or a semi-circle.\n\nThe angle in a circle cuts an arc of the circle and the angle is said to be standing on the cut off arc. The angle is also known as the angle inscribed in the conjugate arc.\n\nIn the adjacent figure, the angle stands on the arc $APB$ and is inscribed in the conjugate arc $ACB$.\n\nIt is to be noted that, $APB$ and $ACB$ are mutually conjugate.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remarks: The angle inscribed in an arc of a circle is the angle with vertex in the arc and the sides passing through the terminal points of the arc. An angle standing on an arc is the angle inscribed in the conjugate arc.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.2",
+      "section_title": "Angle at the Centre (Central angle)",
+      "chunk_type": "theory",
+      "content_markdown": "The angle with vertex at the centre of the circle is called an angle at the centre. An angle at the centre cuts an arc of the circle and is said to stand on the arc. In the adjacent figure, $\\angle AOB$ is an angle at the centre and it stands on the arc $APB$. Every angle at the centre stands on a minor arc of the circle. In the figure $APB$ is the minor arc. So the vertex of an angle at the centre always lies at the centre and the sides pass through the two terminal points of the arc.\n\nTo consider an angle at the centre standing on a semi-circle the above description is not meaningful. In the case of semicircle, the angle at the centre $\\angle BOC$ is a straight angle and the angle on the arc $\\angle BAC$ is a right angle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Angle in a circle",
+      "figure_no": "8.01",
+      "box_2d": [
+        205,
+        685,
+        325,
+        830
+      ],
+      "description": "A circle with center O and an inscribed angle ACB.",
+      "reading_order_anchor": "In the figure, $\\angle ACB$ is an angle in a circle."
+    },
+    {
+      "caption": "Fig 8.02: Angle at the centre",
+      "figure_no": "8.02",
+      "box_2d": [
+        618,
+        685,
+        845,
+        845
+      ],
+      "description": "Two diagrams showing angles at the center of a circle.",
+      "reading_order_anchor": "In the adjacent figure, $\\angle AOB$ is an angle at the centre and it stands on the arc $APB$."
+    }
+  ]
+}

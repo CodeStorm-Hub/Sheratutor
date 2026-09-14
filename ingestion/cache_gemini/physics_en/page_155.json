@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 155,
+  "pdf_page_no": 160,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Gases can be turned into plasma by giving excessive heat; plasma also be made by a powerful electric field. In our house, plasma is created in a tube light. There is also plasma in the luminous advertisement of neon light. The light which is seen during thunder is also plasma and the substances which remain in the far stars is also in the plasma state. At present, we use nuclear energy in fission process by breaking a heavy nucleus. We try to use plasma for creating energy in fusion process combining the light nucleuses and now this is a very important field of research in physics.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Density of a substance",
+      "chunk_type": "theory",
+      "content_markdown": "**Density of a substance**\n\n**Objective:** Determine the density of a substance\n\n**Apparatus:** Spring balance, a solid which can sink in water, water in a pot.\n\n**Theory:** Dividing the mass of a body by its volume, density is measured. Mass of the body can be measured by a spring balance. It is possible to determine the volume of the body using the Archimedes law. After immersion, the decrease of the mass in grams is the volume in $\\text{cc}$ ($\\text{cm}^3$).\n\n**Procedure:** \n1. Determine the mass of a body using a spring balance.\n2. Tie the body with a thread and hang it from a spring balance and determine the weight keeping the body inside the water.\n3. Determine the density of the body.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Table: To determine the density of the matter\n\n| Number of observations | Mass of the solid substance $M_1 \\text{ gm}$ | Weight of the solid substance when immersed $M_2 \\text{ gm-wt}$ | Volume of the solid $M_1 - M_2 \\text{ cm}^3$ | Density of the substance $\\frac{M_1}{M_1 - M_2} \\frac{\\text{gm}}{\\text{cm}^3}$ |\n| --- | --- | --- | --- | --- |\n| | | | | |\n| | | | | |\n| | | | | |",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

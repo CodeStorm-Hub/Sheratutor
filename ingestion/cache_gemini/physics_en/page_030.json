@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 30,
+  "pdf_page_no": 35,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Rashed, with his newly purchased scale, measured the length of his pencil and the length came to $11.73\\text{ cm}$. His friend Sujon said that this measurement may not be correct. Rashed said that he obtained the same result measuring by the scale several times. When they went to the teacher, he instructed them to use a vernier scale of constant $0.005\\text{ cm}$. Rashed measured the correct length by the vernier scale.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is the vernier constant ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) Why are units required to express the amount of a quantity?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) Find a division of vernier scale is equal to what number of divisions of main scale.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) The frist measurement of length measured by Rashed was irrelevant to accurate measurement, explain with logic.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Mr Rashid, a science teacher, has given a ruler and a box to the students in his physics class and told them to determine the volume of the box. The students observed that the ruler could be used to measure upto $\\text{cm}$ only. They determined the length, breadth, and height of the box as $20\\text{ cm}$, $15\\text{ cm}$ and $10\\text{ cm}$ respectively.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is its dimension?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(b) Why weight and mass are not the same type of quantity?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(c) Determine the percentage of relative error in the measurement of volume of the box?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(d) This ruler is appropriate for measuring the area of the book but not suitable for measuring the area of the house- analyze the statement.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

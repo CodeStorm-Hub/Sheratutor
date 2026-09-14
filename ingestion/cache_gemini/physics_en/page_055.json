@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 55,
+  "pdf_page_no": 60,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Investigation 2.01 (Continued)",
+      "chunk_type": "theory",
+      "content_markdown": "8. Let the marble, pencil or pen roll on the inclined plane again. Measure the time by counting the numbers and calculate the speed again. Increase the slope gradually and calculate the average speed every time.\n9. Draw a graph by plotting $\\sin\\theta$ along the X-axis and average speed along Y-axis. From the graph calculate the speed for any slope.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Data Table",
+      "chunk_type": "table",
+      "content_markdown": "| No. of Readings | Distance $L$ cm | Height $h$ cm | $\\sin\\theta = h/L$ | Time $t$ s | $\\text{Speed} = \\frac{\\text{Distance}}{\\text{Time}}$ $\\text{m}/\\text{s}$ | $\\text{Average speed}$ $\\text{m}/\\text{s}$ |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| 1 | | | | | | |\n| 2 | | | | | | |\n| 3 | | | | | | |\n| 1 | | | | | | |\n| 2 | | | | | | |\n| 3 | | | | | | |\n| 1 | | | | | | |\n| 2 | | | | | | |\n| 3 | | | | | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Discussion",
+      "chunk_type": "theory",
+      "content_markdown": "Discussion: Describe the relation between slope and speed?\n\nDiscuss what necessary measures should be taken to perform the experiment with more accuracy?",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Investigation 2.02",
+      "chunk_type": "theory",
+      "content_markdown": "**Playing with different kinds of motion.**\n\n**Objective:** To find the differences among different kinds of motion through games.\n\n**Requirement:** Small open space.\n\n**Procedure:**\n1. You have to select definite activities to explain different kinds of motion.\n\n**Linear motion:** You have to run straight, if you face any obstructions you have to turn back and go straight again.\n\n**Rotational motion:** Spreading your hands on two sides starts rotating.",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": []
+}

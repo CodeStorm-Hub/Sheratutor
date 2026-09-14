@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 362,
+  "pdf_page_no": 367,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | 25 — 34 | 35 — 44 | 45 — 54 | 55 — 64 | 65 — 74 | 75 — 84 | 85 — 94 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 5 | 10 | 15 | 20 | 30 | 16 | 4 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Solution:** Here class interval is given and that is why it is not possible to know the individual marks of the students. In such case, it becomes necessary to know the mid-value of the class.\n\n$$\\text{Mid-value of the class} = \\frac{\\text{Class upper value} + \\text{class lower value}}{2}$$\n\nIf the class mid-value is $x_i (i = 1 \\dots k)$ the mid-value related table will be as follows:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Class interval | Class mid-value $(x_i)$ | Frequency $(f_i)$ | $(f_i x_i)$ |\n| :--- | :--- | :--- | :--- |\n| 25 — 34 | 29.5 | 5 | 147.5 |\n| 35 — 44 | 39.5 | 10 | 395 |\n| 45 — 54 | 49.5 | 15 | 742.5 |\n| 55 — 64 | 59.5 | 20 | 1190 |\n| 65 — 74 | 69.5 | 30 | 2085 |\n| 75 — 84 | 79.5 | 16 | 1272 |\n| 85 — 94 | 89.5 | 4 | 385 |\n| | Total | $n = 100$ | 6190.0 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The required arithmetic mean\n\n$$\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{k} f_i x_i = \\frac{1}{100} \\times 6190 = 61.9$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Arithmetic mean of classified data (short-cut method):** The short-cut method is easy for determining arithmetic mean of classified data. The steps to determine mean by short-cut method are :\n\n1. To find the mid-value of classes.\n2. To take convenient approximated mean (a) from the mid-values.\n3. To determine steps deviation, the difference between class mid-values and approximate mean are divided by the class interval i.e.\n\n$$\\text{steps deviation } u = \\frac{\\text{mid value} - \\text{approximate mean}}{\\text{class interval}}$$\n\n4. To multiply the steps deviation by the corresponding class frequency.\n5. To determine the mean of the deviation and to add this mean with approximate mean to find the required mean.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

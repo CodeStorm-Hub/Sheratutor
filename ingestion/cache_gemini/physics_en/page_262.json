@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 262,
+  "pdf_page_no": 267,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": "9.5",
+      "section_title": "The distance less than Focal length",
+      "chunk_type": "theory",
+      "content_markdown": "Imagine an object $XY$, which is kept between the lens and the focal point (Figure 9.23). By the same logic described before, we can say that the image of point $Y$ will be formed on $YOF$ line. If a perpendicular is drawn from the image of $X$ on this axis, we'll get the position of the image of $Y$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.5",
+      "section_title": "The distance less than Focal length",
+      "chunk_type": "theory",
+      "content_markdown": "Now let's draw two rays from the point $X$. $XC$ line, which is parallel with the axis will go towards the direction of $T$ through the focal point $F$. If a ray from point $X$ is drawn through the center point of the lens, it will go straight along $XO$ towards $S$. $CFT$ and $XOS$ will not meet going forward, which means there is no chance of forming a real image. If the two lines are extended backward, they will meet at point $X'$, which is the image of $X$.\n\nThe normal which is drawn from the point $X'$ on the line $YF$ touches $YF$ at the point $Y'$. This is the image of point $Y$.\n\nThe closer the $XY$ object is to the lens, the bigger the image will be. The closer the object is to the focal point $F$, the bigger the image will be. When the object will be exactly on point $F$, the size of the image will be infinite. Now we can say, if an object is kept between the center of the lens and the focal point of a convex lens, the image of the object:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.5",
+      "section_title": "The distance less than Focal length",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Will be formed in the same direction as the object.\n(b) Will be virtual.\n(c) Will be erect and\n(d) Will be big.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.23: A bigger image is seen in a convex lens if the object is placed within the focal length.",
+      "figure_no": "9.23",
+      "box_2d": [
+        229,
+        217,
+        432,
+        792
+      ],
+      "description": "Ray diagram showing image formation by a convex lens when the object is placed within the focal length.",
+      "reading_order_anchor": "Imagine an object XY, which is kept between the lens and the focal point"
+    }
+  ]
+}

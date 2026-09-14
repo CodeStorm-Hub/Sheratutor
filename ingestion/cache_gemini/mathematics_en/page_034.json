@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 34,
+  "pdf_page_no": 39,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. If $A$ and $B$ are respectively sets of all factors of 35 and 45, then determine $A \\cup B$ and $A \\cap B$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. Determine the natural numbers that divide both 346 and 556 to have 31 as residue.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. Of the 30 students of a class 20 like football and 15 cricket. Number of students who like both the games is 10. Determine using Venn diagram the number of students who do not like either of the games.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "12. Of 100 students 65 passed in Bangla, 48 in both Bangla and English and 15 failed in both the subjects.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Express the above in Venn diagram along with brief description.\n\n2) Determine the number of students who passed only in Bangla or passed only in English.\n\n3) Determine union of the sets of prime factors of number of students passed and failed in both the subjects.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Relations",
+      "chunk_type": "theory",
+      "content_markdown": "We know Dhaka is the capital of Bangladesh, New Delhi is of India and Bangkok is of Thailand. There is a relation between capitals and countries. This is country-capital relation. This relation can be expressed as a set in the following way:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "That is country-capital relation = {(Bangladesh, Dhaka ), (India, New Delhi), (Thailand, Bangkok)}.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If $A$ and $B$ are two sets then, nonnull subset $R$ of ordered pairs of their Cartesian product $A \\times B$ is said to be a relation from the set $A$ to the set $B$. Here set $R$ is a subset of the set $A \\times B$. That is, $R \\subseteq A \\times B$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Country-Capital relation",
+      "figure_no": "2.01",
+      "box_2d": [
+        605,
+        355,
+        795,
+        655
+      ],
+      "description": "A mapping diagram showing the relation between countries (Thailand, India, Bangladesh) and their respective capitals (Bangkok, New Delhi, Dhaka).",
+      "reading_order_anchor": "We know Dhaka is the capital of Bangladesh, New Delhi is of India and Bangkok is of Thailand. There is a relation between capitals and countries. This is country-capital relation. This relation can be expressed as a set in the following way:"
+    }
+  ]
+}

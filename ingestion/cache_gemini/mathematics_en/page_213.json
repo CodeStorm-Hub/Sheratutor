@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 213,
+  "pdf_page_no": 218,
+  "chapter_no": 10,
+  "chapter_title": "Distance and Elevation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "From very ancient times trigonometric ratios are applied to find the distance and height of any distant object. At present trigonometric ratios are of boundless importance because of its increasing usage. The heights of the hills, mountains, towers, trees and the widths of those rivers which cannot be measured in ordinary method are measured with the help of trigonometry. It is necessary to know the trigonometrical ratios values of acute angles in this regard.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of this chapter, the students will be able to —\n\n> explain the geoline, vertical plane and angles of elevation and declination.\n\n> solve mathematical problem related to distance and height with the help of trigonometry.\n\n> measure practically different types of distances and heights with the help of trigonometry.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.1",
+      "section_title": "Horizontal Line, Vertical Line and Vertical Plane",
+      "chunk_type": "theory",
+      "content_markdown": "A horizontal line is a straight line on the horizontal plane. A straight line parallel to horizon is also called a horizontal line. A vertical line is a line perpendicular to the horizontal plane. It is also called a normal line. A horizontal line and a vertical line intersected at right angles on the plane define a plane. It is known as vertical plane.\n\nIn the figure, a tree with height of $AB$ is standing vertically at a distance of $CB$ from a point $C$ on the horizontal plane. Here, $CB$ is the horizontal line. $BA$ is the vertical line and the plane $ABC$ is perpendicular to the horizontal plane which is a vertical plane.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: A tree with height of AB",
+      "figure_no": "10.01",
+      "box_2d": [
+        775,
+        715,
+        915,
+        885
+      ],
+      "description": "A right-angled triangle ABC representing a tree of height AB standing on a horizontal plane at distance CB.",
+      "reading_order_anchor": "In the figure, a tree with height of AB is standing vertically"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 272,
+  "pdf_page_no": 277,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Chemical Properties",
+      "chunk_type": "theory",
+      "content_markdown": "Chemical Properties: As stated earlier, Alkanes are chemically inactive to a great extent. So they do not react with acids, bases, oxidants or reductants. However, they take part in some chemical reactions.\n\n**Reaction with Chlorine**\n\nTetrachloro Methane is produced when Chlorine is mixed with Methane in the presence of Ultra Violet (UV) light. This reaction is accomplished in four phases.\n\n$$\\text{CH}_4 + \\text{Cl}_2 \\xrightarrow{\\text{UV}} \\text{CH}_3\\text{Cl} + \\text{HCl}$$\n$$\\text{Methane} \\quad \\text{Chlorine} \\quad \\text{Chloro Methane} \\quad \\text{Hydrogen Chloride}$$\n\n$$\\text{CH}_3\\text{Cl} + \\text{Cl}_2 \\xrightarrow{\\text{UV}} \\text{CH}_2\\text{Cl}_2 + \\text{HCl}$$\n$$\\text{Chloro Methane} \\quad \\text{Chlorine} \\quad \\text{Dichloro Methane} \\quad \\text{Hydrogen Chloride}$$\n\n$$\\text{CH}_2\\text{Cl}_2 + \\text{Cl}_2 \\xrightarrow{\\text{UV}} \\text{CHCl}_3 + \\text{HCl}$$\n$$\\text{Dichloro Methane} \\quad \\text{Chlorine} \\quad \\text{Trichloro Methane} \\quad \\text{Hydrogen Chloride}$$\n\n$$\\text{CHCl}_3 + \\text{Cl}_2 \\xrightarrow{\\text{UV}} \\text{CCl}_4 + \\text{HCl}$$\n$$\\text{Trichloro Methane} \\quad \\text{Chlorine} \\quad \\text{Tetrachloro Methane} \\quad \\text{Hydrogen Chloride}$$\n\n**Combustion Reaction with Oxygen:** Methane reacts with oxygen of air and thus carbon-di-oxide, water vapours and heat are produced. This heat is used in cooking.\n\n$$\\text{CH}_4 + 2\\text{O}_2 \\longrightarrow \\text{CO}_2 + \\text{H}_2\\text{O} + \\text{Heat}$$\n$$\\text{Methane} \\quad \\text{Oxygen} \\quad \\text{Carbon-di-oxide} \\quad \\text{Water} \\quad \\text{Heat}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.4",
+      "section_title": "Unsaturated Hydrocarbons: Alkenes and Alkynes",
+      "chunk_type": "theory",
+      "content_markdown": "## 11.4 Unsaturated Hydrocarbons: Alkenes and Alkynes\n\n**Alkenes**\n\nThe bio-compound which has at least one carbon-carbon double bond in its carbon chain is called Alkene. General formula of Alkene is $\\text{C}_n\\text{H}_{2n}$. Alkene is",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

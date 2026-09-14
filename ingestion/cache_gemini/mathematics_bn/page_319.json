@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 319,
+  "pdf_page_no": 324,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আয়তাকার ঘনবস্তুটির সমগ্র তলের ক্ষেত্রফল\n$= 2(\\text{ABCD তলের ক্ষেত্রফল} + \\text{ABGH তলের ক্ষেত্রফল} + \\text{BCFG তলের ক্ষেত্রফল})$\n$= 2(AB \\times AD + AB \\times AH + BC \\times BG)$\n$= 2(ab + ac + bc) = 2(ab + bc + ca)$\n\n৩. আয়তাকার ঘনবস্তুর আয়তন = দৈর্ঘ্য $\\times$ প্রস্থ $\\times$ উচ্চতা $= abc$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৮. একটি আয়তাকার ঘনবস্তুর দৈর্ঘ্য, প্রস্থ ও উচ্চতা যথাক্রমে, $25$ সে.মি., $20$ সে.মি. এবং $15$ সে.মি.। এর সমগ্র তলের ক্ষেত্রফল, আয়তন এবং কর্ণের দৈর্ঘ্য নির্ণয় কর।\n\nসমাধান: মনে করি, আয়তাকার ঘনবস্তুর দৈর্ঘ্য $a = 25$ সে.মি., প্রস্থ $b = 20$ সে.মি. এবং উচ্চতা $c = 15$ সে.মি.।\n\n$\\therefore$ আয়তাকার ঘনবস্তুটির সমগ্র তলের ক্ষেত্রফল $= 2(ab + bc + ca)$\n$= 2(25 \\times 20 + 20 \\times 15 + 15 \\times 25) = 2350$ বর্গ সে.মি.\n\nএবং আয়তন $= abc = 25 \\times 20 \\times 15 = 7500$ ঘন সে.মি.\n\nএবং কর্ণের দৈর্ঘ্য $= \\sqrt{a^2 + b^2 + c^2}$\n$= \\sqrt{25^2 + 20^2 + 15^2} = \\sqrt{624 + 400 + 225} = \\sqrt{1250} = 35.363$ সে.মি. (প্রায়)\n\nনির্ণেয় সমগ্র তলের ক্ষেত্রফল $2350$ বর্গ সে.মি., আয়তন $7500$ ঘন সে.মি. এবং কর্ণের দৈর্ঘ্য $35.363$ সে.মি. (প্রায়)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: তোমার গণিত বইয়ের দৈর্ঘ্য, প্রস্থ ও উচ্চতা মেপে এর আয়তন, সমগ্র তলের ক্ষেত্রফল এবং কর্ণের দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ঘনক (Cube)\nআয়তাকার ঘনবস্তুর দৈর্ঘ্য, প্রস্থ ও উচ্চতা সমান হলে একে ঘনক বলা হয়।\nমনে করি, $ABCDEFGH$ একটি ঘনক। এর দৈর্ঘ্য = প্রস্থ = উচ্চতা $= a$ একক\n১. ঘনকটির কর্ণের দৈর্ঘ্য\n$= \\sqrt{a^2 + a^2 + a^2} = \\sqrt{3a^2} = \\sqrt{3}a$\n২. ঘনকের সমগ্র তলের ক্ষেত্রফল\n$= 2(a \\cdot a + a \\cdot a + a \\cdot a) = 2(a^2 + a^2 + a^2) = 6a^2$\n৩. ঘনকটির আয়তন $= a \\cdot a \\cdot a = a^3$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: আয়তাকার ঘনবস্তু",
+      "figure_no": "16.01",
+      "box_2d": [
+        65,
+        645,
+        215,
+        900
+      ],
+      "description": "আয়তাকার ঘনবস্তুর জ্যামিতিক চিত্র",
+      "reading_order_anchor": "আয়তাকার ঘনবস্তুটির সমগ্র তলের ক্ষেত্রফল"
+    },
+    {
+      "caption": "চিত্র: ঘনক",
+      "figure_no": "16.02",
+      "box_2d": [
+        720,
+        650,
+        920,
+        880
+      ],
+      "description": "ঘনকের জ্যামিতিক চিত্র",
+      "reading_order_anchor": "ঘনক (Cube)"
+    }
+  ]
+}

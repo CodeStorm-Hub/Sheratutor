@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 132,
+  "pdf_page_no": 137,
+  "chapter_no": 5,
+  "chapter_title": "পদার্থের অবস্থা ও চাপ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "কাজেই লবণ গোলা পানির ঘনত্ব\n\n$$\\rho = \\frac{1\\text{ kg} + 0.25\\text{ kg}}{1200 \\times 10^{-6}\\text{ m}^3} = 1.04 \\times 10^3\\text{ kg/m}^3$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** জর্ডানের ডেড সি (Dead sea) এর ঘনত্ব $1.24\\text{ kg/liter}$ এই সমুদ্রের $1\\text{ kg}$ পানির আয়তন কত?\n\n**উত্তর:** $1\\text{ litre}$ হচ্ছে $1000\\text{ cc}$ বা $10^{-3}\\text{ m}^3$ কাজেই জর্ডানের ডেড সি এর পানির ঘনত্ব\n\n$$\\rho = 1.24\\text{ \\frac{kg}{liter}} = \\frac{1.24\\text{ kg}}{10^{-3}\\text{ m}^3} = 1.24 \\times 10^3\\text{ kg m}^{-3}$$\n\nকাজেই $1\\text{ kg}$ পানির আয়তন:\n\n$$V = \\frac{m}{\\rho} = \\frac{1\\text{ kg}}{1.24 \\times 10^3\\text{ kg m}^{-3}} = 0.81 \\times 10^{-3}\\text{ m}^3$$\n\nকিংবা $0.81\\text{ liter}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** নিউক্লিয়াসের ঘনত্ব কত? ১ চা চামচ নিউক্লিয়াসের ভর কত?\n\n**উত্তর:** নিউক্লিয়াস তৈরি হয় নিউট্রন আর প্রোটন দিয়ে যাদেরকে সুষম গোলক হিসেবে বিবেচনা করা যায়। তাদের একটার ভর $1.67 \\times 10^{-27}\\text{ kg}$, তাদের ব্যাসার্ধ আনুমানিক $1.25\\text{ fm} = 1.25 \\times 10^{-15}\\text{ m}$ কাজেই নিউট্রন কিংবা প্রোটনের ঘনত্ব বের করতে পারলে সেটাকেই নিউক্লিয়াসের ঘনত্ব হিসেবে ধরতে পারি!\n\nনিউক্লিয়াসের ঘনত্ব\n\n$$\\rho = \\frac{m}{\\frac{4}{3}\\pi r^3} = \\frac{1.67 \\times 10^{-27}\\text{ kg}}{\\frac{4\\pi}{3}(1.25 \\times 10^{-15}\\text{ m})^3} = 0.204 \\times 10^{18}\\text{ kg/m}^3$$\n\nএই সংখ্যাটি যে কত বিশাল সেটা তোমাদের অনুমান করা দরকার। এক চা চামচে মোটামুটি $1\\text{ cc}$ জিনিস ধরে, কাজেই এক চা-চামচ নিউক্লিয়াসের ভর:\n\n$$m = 0.204 \\times 10^{18}\\text{ kg/m}^3 \\times 10^{-6}\\text{ m}^3 = 2 \\times 10^{11}\\text{ kg}$$\n\nএটা মোটামুটিভাবে পৃথিবীর সব মানুষের সম্মিলিত ভর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

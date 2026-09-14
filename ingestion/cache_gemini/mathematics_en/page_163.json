@@ -1,0 +1,128 @@
+{
+  "printed_page_no": 163,
+  "pdf_page_no": 168,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$OB = 5 \\text{ cm}$, $OC = 3.5 \\text{ cm}$, $OD = 4.5 \\text{ cm}$ and $\\angle AOB = 80^\\circ$ respectively. Construct the quadrilateral.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "13. The length of a side of a rhombus and an angle are $3.5 \\text{ cm}$ and $45^\\circ$ respectively; construct the rhombus.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "14. The length of a side and a diagonal of a rhombus are given; construct the rhombus.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "15. The length of two diagonals of a rhombus are given. Construct the rhombus.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "16. The perimeter of a square is given. Construct the square.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "17. The lengths of the hypotenuse and a side of right angled triangle are $5 \\text{ cm}$ and $4 \\text{ cm}$. Use the information to answer the following questions:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Find the length of the other sides of the triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Construct the triangle. (Construction is must)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Construct a square whose perimeter is equal to the perimeter of the triangle. (Construction is must)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "18. $AB = 4 \\text{ cm}$, $BC = 5 \\text{ cm}$, $\\angle A = 85^\\circ$, $\\angle B = 80^\\circ$ and $\\angle C = 95^\\circ$ of the quadrilateral $ABCD$. Use the information to answer the following questions:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Find the value of $\\angle D$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Use the above information to construct the quadrilateral $ABCD$. (Construction is must)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Construct the parallelogram considering the given sides as two sides of the parallelogram and $\\angle B = 80^\\circ$. (Construction is must)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "19. The length of two parallel sides of a trapezium $4 \\text{ cm}$ and $6 \\text{ cm}$ and two angles adjacent greater side are $\\angle x = 60^\\circ$ and $\\angle y = 50^\\circ$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) Express the given information in a picture.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2) Construct the trapezium. (Construction and description of construction are must)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3) Supposing two sides of the stem as two diagonals of a parallelogram and $\\angle y$ as included angle, construct the parallelogram. (Construction and description of construction are must)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

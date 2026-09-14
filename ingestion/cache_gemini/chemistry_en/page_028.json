@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 28,
+  "pdf_page_no": 33,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "two liquids. Again, if a liquid is adulterated, it will boil at a different temperature. For example, if we add some alcohol to water, it will boil at a different temperature than $100^{\\circ}\\text{C}$. So, boiling point can be a determiner of the purity of a liquid.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You have learned, the heat used in boiling and melting does not change the temperature of the matter. It only transforms the state of the matter.\n\nThe experiment below will tell you what will happen if we apply heat on a solid to melt it and then heat more to boil it.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Experiment 6\nLet us take some ice cubes in a beaker and heat it carefully. We shall keep watch on an attached thermometer throughout the process. Let's assume, the initial temperature of the ice was $-40^{\\circ}\\text{C}$.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.08: Boiling point of water.",
+      "figure_no": "2.08",
+      "box_2d": [
+        199,
+        286,
+        521,
+        774
+      ],
+      "description": "Experimental setup for determining the boiling point of water, showing a Bunsen burner, tripod stand with net, beaker with water, thermometer, and clamp attached to a stand.",
+      "reading_order_anchor": "two liquids. Again, if a liquid is adulterated..."
+    }
+  ]
+}

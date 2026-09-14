@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 194,
+  "pdf_page_no": 199,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{বা, } (1 - \\sin \\theta)\\{2(1 + \\sin \\theta) - 3\\} = 0$$\n$$\\text{বা, } (1 - \\sin \\theta)\\{2\\sin \\theta - 1\\} = 0$$\n$$\\therefore 1 - \\sin \\theta = 0 \\quad \\text{অথবা, } 2\\sin \\theta - 1 = 0$$\n$$\\text{বা, } \\sin \\theta = 1 \\quad \\quad \\quad \\quad \\text{বা, } 2\\sin \\theta = 1$$\n$$\\text{বা, } \\sin \\theta = \\sin 90^\\circ \\quad \\quad \\text{বা, } \\sin \\theta = \\frac{1}{2}$$\n$$\\text{বা, } \\theta = 90^\\circ \\quad \\quad \\quad \\quad \\text{বা, } \\sin \\theta = \\sin 30^\\circ$$\n$$\\quad \\quad \\quad \\quad \\quad \\quad \\quad \\quad \\text{বা, } \\theta = 30^\\circ$$\n$$\\text{যেহেতু } \\theta \\text{ সূক্ষ্মকোণ, সেহেতু, } \\theta = 30^\\circ \\text{।}$$\n\n### অনুশীলনী ৯.২",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৯.২",
+      "section_title": "অনুশীলনী ৯.২",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. $\\cos \\theta = \\frac{1}{2}$ হলে, $\\cot \\theta$ এর মান কোনটি?\nক) $\\frac{1}{\\sqrt{3}}$ খ) $1$ গ) $\\sqrt{3}$ ঘ) $2$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $\\cos^2 \\theta - \\sin^2 \\theta = \\frac{1}{3}$ হলে, $\\cos^4 \\theta - \\sin^4 \\theta$ এর মান কত?\nক) $3$ খ) $2$ গ) $1$ ঘ) $\\frac{1}{3}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $\\cot(\\theta - 30^\\circ) = \\frac{1}{\\sqrt{3}}$ হলে, $\\sin \\theta = $ কত?\nক) $\\frac{1}{2}$ খ) $0$ গ) $1$ ঘ) $\\frac{\\sqrt{3}}{2}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. $\\tan(3A) = \\sqrt{3}$ হলে, $A = $ কত?\nক) $45^\\circ$ খ) $30^\\circ$ গ) $20^\\circ$ ঘ) $15^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $0^\\circ \\le \\theta \\le 90^\\circ$ এর জন্য, $\\sin \\theta$ এর সর্বোচ্চ মান কত?\nক) $-1$ খ) $0$ গ) $\\frac{1}{2}$ ঘ) $1$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৬. $ABC$ সমকোণী ত্রিভুজে অতিভুজ $AC = 2$, $AB = 1$\n$(i) \\angle ACB = 30^\\circ$\n$(ii) \\tan A = \\sqrt{3}$\n$(iii) \\sin(A + C) = 0$\nনিচের কোনটি সঠিক?\nক) $i$ খ) $ii$ গ) $i$ ও $ii$ ঘ) $ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: ABC সমকোণী ত্রিভুজ",
+      "figure_no": "9.01",
+      "box_2d": [
+        778,
+        643,
+        886,
+        821
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যেখানে AB=1 এবং অতিভুজ AC=2।",
+      "reading_order_anchor": "৬. ABC সমকোণী ত্রিভুজে অতিভুজ AC = 2, AB = 1"
+    }
+  ]
+}

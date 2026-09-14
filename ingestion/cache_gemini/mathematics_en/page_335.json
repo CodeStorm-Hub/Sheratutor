@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 335,
+  "pdf_page_no": 340,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$or, 10000b^2 - b^4 = 23040000$$\n$$or, b^4 - 10000b^2 + 23040000 = 0$$\n$$or, b^4 - 6400b^2 - 3600b^2 + 2304000 = 0$$\n$$or, (b^2 - 6400)(b^2 - 3600) = 0$$\n$$\\therefore b^2 - 6400 = 0 \\text{ or } b^2 - 3600 = 0$$\n$$or, b^2 = 6400 \\text{ or } b^2 = 3600$$\n$$\\therefore b = 80 \\text{ or } b = 60$$\n$$If b = 80, \\text{ then } \\frac{1}{2} \\cdot AD \\cdot DE \\cdot \\sin\\angle ADE = 1200$$\n$$or, \\frac{1}{2} \\times 50 \\times 80 \\times \\sin\\angle ADE = 1200$$\n$$or, \\sin\\angle ADE = 0.6$$\n$$\\therefore \\angle ADE = 36.87^\\circ \\text{ (approx.)}$$\n$$\\text{Sum of three angles of } \\triangle ADE = 73.74^\\circ + 36.87^\\circ + 36.87^\\circ = 147.48^\\circ$$\n$$\\text{But sum of three angles of any triangle} = 180^\\circ, \\text{ So } b \\neq 80$$\n$$If b = 60, \\text{ then } \\frac{1}{2} \\cdot AD \\cdot DE \\cdot \\sin\\angle ADE = 1200$$\n$$or, \\frac{1}{2} \\times 50 \\times 60 \\times \\sin\\angle ADE = 1200$$\n$$or, \\sin\\angle ADE = 0.8$$\n$$\\therefore \\angle ADE = 53.13^\\circ \\text{ (approx.)}$$\n$$\\text{Sum of three angles of } \\triangle ADE = 73.74^\\circ + 53.13^\\circ + 53.13^\\circ = 180^\\circ, \\therefore b = 60$$\n$$\\therefore \\text{The perimeter of the triangle } (50 + 50 + 60) \\text{ cm} = 160 \\text{ cm}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.2",
+      "section_title": "Exercises 16.2",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. The length of a rectangular region is twice its width. If its area is 512 sq. metre, determine its perimeter.\n\n2. The length of a plot is 80 metre and the breadth is 60 metre A pond was excavated in the plot. If the width of each side of the border around the pond is 4 metre, determine the area of the border of the pond.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

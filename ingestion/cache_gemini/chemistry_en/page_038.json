@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 38,
+  "pdf_page_no": 43,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "molecule ($\text{O}_2$). Again, a carbon atom ($\text{C}$) bonds with two oxygen atoms ($\text{O}$) to generate a carbon dioxide ($\text{CO}_2$) molecule. When more than one atoms of a specific element bond each other, they produce that element's molecule, like $\text{O}_2$. When atoms of different elements bond together to produce a molecule, it is called a molecule of the compound, like $\text{CO}_2$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Symbols of Elements",
+      "chunk_type": "theory",
+      "content_markdown": "The abbreviated form of English or Latin name of an element is called its symbol. Each element has its own symbol. There is a system of writing a symbol of an element.\n\na. The first letter of an English name of an element is usually the symbol and that has to be written using capital letters. For example, the symbol of Hydrogen is ($\text{H}$), the symbol of carbon ($\text{C}$) and the symbol of oxygen ($\text{O}$) etc.\n\nb. When the first letter of two or more elements is the same, one of them is expressed by the first letter. The other element(s) get the first two letters; the first letter is capitalized, followed by a small hand second letter.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Symbols of Elements",
+      "chunk_type": "table",
+      "content_markdown": "Table 3.01: Symbols of Elements.\n\n| Element | Symbol |\n| --- | --- |\n| Hydrogen | $\text{H}$ |\n| Oxygen | $\text{O}$ |\n| Nitrogen | $\text{N}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Symbols of Elements",
+      "chunk_type": "table",
+      "content_markdown": "Table 3.02: Symbols of Elements (First letter same).\n\n| Element | Symbol | Element | Symbol |\n| --- | --- | --- | --- |\n| Carbon | $\text{C}$ | Cobalt | $\text{Co}$ |\n| Chlorine | $\text{Cl}$ | Cadmium | $\text{Cd}$ |\n| Calcium | $\text{Ca}$ | Chromium | $\text{Cr}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Symbols of Elements",
+      "chunk_type": "theory",
+      "content_markdown": "c. Some elements have got their symbols from their Latin name.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Symbols of Elements",
+      "chunk_type": "table",
+      "content_markdown": "Table 3.03: Symbols of Elements (Latin Name).\n\n| Element | Latin Name | Symbol | Element | Latin Name | Symbol |\n| --- | --- | --- | --- | --- | --- |\n| Sodium | Natrium | $\text{Na}$ | Gold | Aurum | $\text{Au}$ |\n| Copper | Cuprum | $\text{Cu}$ | Lead | Plumbum | $\text{Pb}$ |\n| Potassium | Kalium | $\text{K}$ | Tungsten | Wolfram | $\text{W}$ |\n| Silver | Argentum | $\text{Ag}$ | Iron | Ferrum | $\text{Fe}$ |\n| Tin | Stannum | $\text{Sn}$ | Mercury | Hydrurgyrum | $\text{Hg}$ |\n| Antimony | Stibium | $\text{Sb}$ | | | |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

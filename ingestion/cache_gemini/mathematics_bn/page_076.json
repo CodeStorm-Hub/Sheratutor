@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 76,
+  "pdf_page_no": 81,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "সূচক (Exponents or Indices)",
+      "chunk_type": "theory",
+      "content_markdown": "আমরা ষষ্ঠ শ্রেণিতে সূচকের ধারণা পেয়েছি এবং সপ্তম শ্রেণিতে গুণের ও ভাগের সূচক নিয়ম সম্পর্কে জেনেছি। সূচক ও ভিত্তি সংবলিত রাশিকে সূচকীয় রাশি বলা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| একই সংখ্যা বা রাশির ক্রমিক গুণ | সূচকীয় রাশি | ভিত্তি | ঘাত বা সূচক |\n| :--- | :--- | :--- | :--- |\n| $2 \\times 2 \\times 2$ | $2^3$ | $2$ | $3$ |\n| $3 \\times 3 \\times 3 \\times 3$ | | $3$ | |\n| $a \\times a \\times a$ | $a^3$ | | |\n| $b \\times b \\times b \\times b \\times b$ | | | $5$ |",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$a$ যেকোনো বাস্তব সংখ্যা এবং $n$ যেকোনো ধনাত্মক পূর্ণসংখ্যা হলে, $n$ সংখ্যক $a$ এর ক্রমিক গুণ হলো $a^n$। অর্থাৎ, $a \\times a \\times a \\times \\dots \\times a$ ($n$ সংখ্যক বার $a$) $= a^n$। এখানে, $n$ হলো সূচক বা ঘাত এবং $a$ হলো ভিত্তি। আবার, বিপরীতক্রমে $a^n = a \\times a \\times a \\times \\dots \\times a$ ($n$ সংখ্যক বার $a$)।\n\nসূচক শুধু ধনাত্মক পূর্ণসংখ্যাই নয়, ঋণাত্মক পূর্ণসংখ্যা বা ধনাত্মক ভগ্নাংশ বা ঋণাত্মক ভগ্নাংশও হতে পারে। অর্থাৎ, ভিত্তি $a \\in R$ (বাস্তব সংখ্যার সেট) এবং সূচক $n \\in Q$ (মূলদ সংখ্যার সেট) এর জন্য $a^n$ সংজ্ঞায়িত। বিশেষ ক্ষেত্রে, $n \\in N$ (স্বাভাবিক সংখ্যার সেট) ধরা হয়। তাছাড়া অমূলদ সূচকও হতে পারে। তবে সেটা মাধ্যমিক স্তরের পাঠ্যসূচি বহির্ভূত বলে এখানে আর আলোচনা করা হয়নি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সূচকের সূত্রাবলি (Index Laws)",
+      "chunk_type": "theory",
+      "content_markdown": "ধরি, $a \\in R$ (বাস্তব সংখ্যার সেট) এবং $m, n \\in N$ (স্বাভাবিক সংখ্যার সেট)।\n\nসূত্র ১ (গুণ): $a^m \\times a^n = a^{m+n}$\n\nসূত্র ২ (ভাগ): $\\frac{a^m}{a^n} = \\begin{cases} a^{m-n} \\text{ যখন } m \\ge n \\\\ \\frac{1}{a^{n-m}} \\text{ যখন } n > m \\end{cases}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $a \\neq 0, m > n$ | $m = 5, n = 3$ | $a \\neq 0, n > m$ | $m = 3, n = 5$ |\n| :--- | :--- | :--- | :--- |\n| $a^5 \\times a^3 = (a \\times a \\times a \\times a \\times a) \\times (a \\times a \\times a)$ | $= a \\times a \\times a \\times a \\times a \\times a \\times a \\times a = a^8 = a^{5+3}$ | $a^3 \\times a^5 =$ | |\n| $\\frac{a^5}{a^3} =$ | | $\\frac{a^3}{a^5} = \\frac{a \\times a \\times a}{a \\times a \\times a \\times a \\times a} = \\frac{1}{a^2} = \\frac{1}{a^{5-3}}$ | |",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

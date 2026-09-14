@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 67,
+  "pdf_page_no": 72,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Force of gravitation is an amazing force of physics. An object that has mass attracts another object by the gravitational force. In this chapter, we shall discuss the gravitational force a little bit more in detail.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2.2",
+      "section_title": "Electromagnetic Force",
+      "chunk_type": "theory",
+      "content_markdown": "We have seen, now and then, that when we comb our hair with a comb it attracts pieces of papers. We have also seen that a magnet attracts or repulses another magnet. Though we think that electric and magnetic forces are different in nature, actually the two forces are identical. They only appear in two forms. Only and this electromagnetic force can attract and repulse but the other forces can attract only, cannot repulse. It is so much stronger than gravitational force ($10^{36}$ times, or trillion trillion trillion times stronger). That the statement is true, you can definitely guess. Because when you comb your hair by a comb and pull a piece of paper by attraction, the whole earth tries to pull the piece of paper by the gravitational force due to its total mass. But the small amount of electricity in your comb defeats the total gravitational pull of the giant earth.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2.3",
+      "section_title": "Weak Nuclear Force or Weak Force",
+      "chunk_type": "theory",
+      "content_markdown": "It is called weak because it is weaker than the electromagnetic force (approximately trillion times weaker) but not at all weak like the gravitational force. The force of gravitation and the electromagnetic force can act from any distance but this force acts for very small distance ($10^{-18}\\text{ m}$). The emission of beta ($\\beta$) rays or electrons from a radioactive nucleus is due to this weak nuclear force.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2.4",
+      "section_title": "Strong Nuclear Force",
+      "chunk_type": "theory",
+      "content_markdown": "This is the strongest force of the universe; this is hundred times stronger than the electromagnetic force but this too acts at a very small distance ($10^{-15}\\text{ m}$).\n\nWe know the nucleus is situated at the centre of the atom and the strong force acting between the protons and the neutrons within the nucleus confines them. Confined due to this strong nuclear force, the nucleus contains an enormous amount of energy. Therefore by the division of a large nucleus or by the addition",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

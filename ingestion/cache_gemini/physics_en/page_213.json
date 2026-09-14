@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 213,
+  "pdf_page_no": 218,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": "8.1",
+      "section_title": "Nature of Light",
+      "chunk_type": "theory",
+      "content_markdown": "What we see with our eyes is light. We see trees, the sky, chairs and tables, human beings, but that doesn't mean that these are light. Light reflects from these objects and comes into our eyes, and the retina of our eyes creates and sends signals to our brain. Then our brain can recognize whether it is a tree or a human being. The whole process starts with light entering into our eyes.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Light is an electromagnetic and periodic wave. Every periodic wave has a wavelength, which means light also has a wavelength. Those of us who have produced waves by throwing a stone in a pond or by shaking a rope know that we can create waves of different wavelengths if we desire. So light may have different wavelengths. Electromagnetic waves may have any wavelengths.\n\nThese wavelengths may be greater than a few kilometers or may be one trillionth parts of one meter. ($1 \\text{ trillion} = 10^{12}$) We can only see a small part of this large range of this.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.01: Spectrum of light and sensitivity of eyes to different colors",
+      "figure_no": "8.01",
+      "box_2d": [
+        305,
+        203,
+        670,
+        825
+      ],
+      "description": "An electromagnetic spectrum diagram showing wavelengths from gamma rays to radio waves, with an expanded view of the visible light spectrum and a graph depicting the sensitivity of human eyes to different wavelengths.",
+      "reading_order_anchor": "8.1"
+    }
+  ]
+}

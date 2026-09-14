@@ -1,0 +1,74 @@
+{
+  "printed_page_no": 200,
+  "pdf_page_no": 205,
+  "chapter_no": 10,
+  "chapter_title": "দূরত্ব ও উচ্চতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান: মনে করি, দেওয়ালটির উচ্চতা $AB = h$ মিটার, মইটির দৈর্ঘ্য $AC = 18$ মিটার এবং ভূমির সঙ্গে $\\angle ACB = 45^\\circ$ উৎপন্ন করে।\n\n$\\triangle ABC$ থেকে পাই, $\\sin \\angle ACB = \\frac{AB}{AC}$\n\nবা, $\\sin 45^\\circ = \\frac{h}{18}$\n\nবা, $\\frac{1}{\\sqrt{2}} = \\frac{h}{18} \\left[ \\because \\sin 45^\\circ = \\frac{1}{\\sqrt{2}} \\right]$\n\nবা, $\\sqrt{2}h = 18$ বা, $h = \\frac{18}{\\sqrt{2}}$\n\nবা, $h = \\frac{18\\sqrt{2}}{2}$ [হর এবং লবকে $\\sqrt{2}$ দ্বারা গুণ করে]\n\nবা, $h = 12.728$ (প্রায়)\n\nসুতরাং দেওয়ালটির উচ্চতা $12.73$ মিটার (প্রায়)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. ঝড়ে একটি গাছ হেলে পড়লো। গাছের গোড়া থেকে $7$ মিটার উচ্চতায় একটি খুঁটি ঠেস দিয়ে গাছটিকে সোজা করা হলো। মাটিতে খুঁটিটির স্পর্শ বিন্দুর অবনতি কোণ $30^\\circ$ হলে, খুঁটিটির দৈর্ঘ্য নির্ণয় কর।\n\nসমাধান: মনে করি, খুঁটিটির দৈর্ঘ্য $BC = x$ মিটার, গাছের গোড়া থেকে $AB = 7$ মিটার উচ্চতায় খুঁটিটি ঠেস দিয়ে আছে এবং অবনতি $\\angle DBC = 30^\\circ$।\n\n$\\therefore \\angle ACB = \\angle DBC = 30^\\circ$ [একান্তর কোণ বলে]\n\nসমকোণী $\\triangle ABC$ থেকে পাই,\n\n$\\sin \\angle ACB = \\frac{AB}{BC}$ বা, $\\sin 30^\\circ = \\frac{7}{BC}$\n\nবা, $\\frac{1}{2} = \\frac{7}{BC} \\left[ \\because \\sin 30^\\circ = \\frac{1}{2} \\right]$\n\n$\\therefore BC = 14$\n\n$\\therefore$ খুঁটিটির দৈর্ঘ্য $14$ মিটার।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\nচিত্রে অবনতি $\\angle CAE = 60^\\circ$, উন্নতি $\\angle ADB = 30^\\circ$, $AC = 36$ মিটার, $AB \\perp DC$ এবং $D, B, C$ একই সরলরেখায় অবস্থিত হলে, $AB, AD$ এবং $CD$ বাহুর দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫. ভূতলস্থ কোনো স্থানে একটি দালানের ছাদের একটি বিন্দুর উন্নতি কোণ $60^\\circ$। ঐ স্থান থেকে $42$ মিটার পিছিয়ে গেলে দালানের ঐ বিন্দুর উন্নতি কোণ $45^\\circ$ হয়। দালানের উচ্চতা নির্ণয় কর।\n\nসমাধান: মনে করি, দালানের উচ্চতা $AB = h$ মিটার এবং শীর্ষের উন্নতি $\\angle ACB = 60^\\circ$ এবং $C$।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: দেওয়াল ও মইয়ের জ্যামিতিক চিত্র",
+      "figure_no": "10.01",
+      "box_2d": [
+        188,
+        685,
+        323,
+        855
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যেখানে AB উচ্চতা, AC মই এবং কোণ C হলো 45 ডিগ্রি।",
+      "reading_order_anchor": "সমাধান: মনে করি, দেওয়ালটির উচ্চতা AB = h মিটার"
+    },
+    {
+      "caption": "চিত্র: ঝড়ে হেলে পড়া গাছ ও খুঁটির জ্যামিতিক চিত্র",
+      "figure_no": "10.02",
+      "box_2d": [
+        575,
+        642,
+        695,
+        875
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ ABC যেখানে AB গাছের উচ্চতা এবং BC খুঁটির দৈর্ঘ্য, কোণ C হলো 30 ডিগ্রি।",
+      "reading_order_anchor": "সমাধান: মনে করি, খুঁটিটির দৈর্ঘ্য BC = x মিটার"
+    },
+    {
+      "caption": "চিত্র: জ্যামিতিক সমস্যা চিত্র",
+      "figure_no": "10.03",
+      "box_2d": [
+        755,
+        645,
+        845,
+        885
+      ],
+      "description": "একটি ত্রিভুজাকৃতি জ্যামিতিক চিত্র যেখানে AB লম্ব এবং D, B, C একই সরলরেখায় অবস্থিত।",
+      "reading_order_anchor": "কাজ: চিত্রে অবনতি ∠CAE = 60°, উন্নতি ∠ADB = 30°"
+    }
+  ]
+}

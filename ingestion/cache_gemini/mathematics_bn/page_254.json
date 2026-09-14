@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 254,
+  "pdf_page_no": 259,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিকল্প পদ্ধতি: (3) নং সূত্র হতে, $S_n = \\frac{n}{2}(a + p)$\n\n$\\therefore S_{99} = \\frac{99}{2}(1 + 99) = \\frac{99 \\times 100}{2} = 4950$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫. $7 + 12 + 17 + \\dots$ ধারাটির প্রথম ৩০টি পদের সমষ্টি কত?\n\nসমাধান: ধারাটির প্রথম পদ $a = 7$, সাধারণ অন্তর $d = 12 - 7 = 5$\n\n$\\therefore$ এটি একটি সমান্তর ধারা। এখানে পদ সংখ্যা $n = 30$\n\nআমরা জানি, সমান্তর ধারার প্রথম $n$ সংখ্যক পদের সমষ্টি,\n\n$S_n = \\frac{n}{2}\\{2a + (n - 1)d\\}$\n\nতাহলে, প্রথম ৩০টি পদের সমষ্টি $S_{30} = \\frac{30}{2}\\{2 \\cdot 7 + (30 - 1)5\\} = 15(14 + 29 \\times 5)$\n\n$= 15(14 + 145) = 15 \\times 159 = 2385$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উদাহরণ ৬. রশিদ তার বেতন থেকে প্রথম মাসে ১২০০ টাকা সঞ্চয় করেন এবং পরবর্তী প্রতিমাসে এর পূর্ববর্তী মাসের তুলনায় ১০০ টাকা বেশি সঞ্চয় করেন।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) সমস্যাটিকে $n$ সংখ্যক পদ পর্যন্ত ধারায় প্রকাশ কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) তিনি ১৮ তম মাসে কত টাকা এবং প্রথম ১৮ মাসে মোট কত টাকা সঞ্চয় করেন?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) তিনি কত বছরে মোট ১০৬২০০ টাকা সঞ্চয় করেন?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\n\nক) প্রশ্নানুসারে, ধারাটির প্রথম পদ $a = 1200$, সাধারণ অন্তর $d = 100$\n\n$\\therefore$ দ্বিতীয় পদ $= 1200 + 100 = 1300$\n\nতৃতীয় পদ $= 1300 + 100 = 1400$\n\n$\\therefore n$ তম পদ $= a + (n - 1)d = 1200 + (n - 1)100 = 1100 + 100n$\n\n$\\therefore$ ধারাটি $1200 + 1300 + 1400 + \\dots + (1100 + 100n)$\n\nখ) আমরা জানি, $n$ তম পদ $= a + (n - 1)d$\n\n$\\therefore$ ১৮ তম মাসে সঞ্চয় $= a + (18 - 1)d = 1200 + 17 \\times 100 = 2900$ টাকা\n\nআবার, প্রথম $n$ সংখ্যক পদের সমষ্টি $= \\frac{n}{2}\\{2a + (n - 1)d\\}$\n\n$\\therefore$ প্রথম ১৮ মাসের সঞ্চয় $= \\frac{18}{2}\\{2 \\times 1200 + (18 - 1) \\times 100\\}$ টাকা\n\n$= 9(2400 + 1700) = 36900$ টাকা",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

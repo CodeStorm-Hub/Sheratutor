@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 121,
+  "pdf_page_no": 126,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "them. The ideas of point, straight line and plane surface have been imparted on this assumption. As a matter of fact, in any mathematical discussion one or more elementary ideas have to be taken granted. Euclid called them axioms. Some of the axioms given by Euclid are:\n\n1. Things which are equal to the same thing, are equal to one another.\n2. If equals are added to equals, the wholes are equal.\n3. If equals are subtracted from equals, the remainders are equal.\n4. Things which coincide with one another, are equal to one another.\n5. The whole is greater than the part.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In modern geometry, we take a point, a line and a plane as undefined terms and some of their properties are also admitted to be true. These admitted properties are called geometric postulates. These postulates are chosen in such a way that they are consistent with real conception. The five postulates of Euclid are:\n\nPostulate 1: A straight line may be drawn from any one point to any other point.\n\nPostulate 2: A terminated line can be produced indefinitely.\n\nPostulate 3: A circle can be drawn with any centre and any radius.\n\nPostulate 4: All right angles are equal to one another.\n\nPostulate 5: If a straight line falling on two straight lines makes the interior angles on the same side of it taken together less than two right angles, then the two straight lines, if produced indefinitely, meet on that side on which the sum of angles is less than two right angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "After Euclid stated his postulates and axioms, he used them to prove other results. Then using these results, he proved some more results by applying deductive reasoning. The statements that were proved are called propositions or theorems. Euclid is his ‘elements’ proved a total of 465 propositions in a logical chain. This is the foundation of modern geometry.\n\nNote that there are some incompleteness in Euclid’s first postulate. The drawing of a unique straight line passing through two distinct points has been ignored. Postulate 5 is far more complex than any other postulate. On the other hand, Postulates 1 through 4 are so simple and obvious that these are taken as ‘self-evident truths’. However, it is not possible to prove them. So, these statements",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

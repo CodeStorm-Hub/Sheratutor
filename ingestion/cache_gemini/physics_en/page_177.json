@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 177,
+  "pdf_page_no": 182,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "On the solid being totally liquefied the temperature starts to increase again (as shown in the figure 6.08). The temperature increases gradually and at one stage the liquid starts to convert into gas. This process is called vaporization and the temperature at which vaporization occurs is called the boiling point. Again, everyone is being reminded that this boiling point depends upon pressure.\n\nWhen the process of vaporization starts by absorbing the heat energy, the molecules of the liquid start to become free from the molecular bonds among themselves. Here also the temperature does not increase like fusion even if heat is applied. During vaporization of liquid the amount of heat by which the whole liquid is converted into a gas, that heat is called Latent Heat of Vaporization.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "After converting the whole liquid into a gas the temperature of the gas continues to increase if heat is being applied. If the temperature is raised to extremely high levels, the molecules will become ionized and a fourth state of matter called plasma will start to form but this is something different.\n\nAll of us have seen at least one example of the process by which solids can be converted into liquids and liquids into gases, that one is ice converted into water and water into vapour. Although we do not see directly the latent heat of fusion or latent heat of vaporization, but we have felt its effect. When we suddenly come to an open place or in open air from a crowded or a closed place, then our sweating body becomes cool. This is because during the vaporization of sweat, the required latent heat of vaporization is absorbed from our body and our body becomes cool. By applying heat solids can be converted into liquids and liquids into gases, its reverse process also occurs. By extracting heat gas can be",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 6.08 : Melting and boiling point does not change during heat.",
+      "figure_no": "6.08",
+      "box_2d": [
+        363,
+        198,
+        602,
+        764
+      ],
+      "description": "A line graph showing temperature versus time during phase changes of matter, indicating constant temperatures at melting and boiling points.",
+      "reading_order_anchor": "On the solid being totally liquefied the temperature starts to increase again (as shown in the figure 6.08)."
+    }
+  ]
+}

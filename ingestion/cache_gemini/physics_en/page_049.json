@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 49,
+  "pdf_page_no": 54,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\\text{Answer: } 150 \\text{ km/hour} = \\frac{150 \\times 1000 \\text{ m}}{60 \\times 60 \\text{ s}} = 41.67 \\text{ m/s}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Acceleration due to gravity will act as retardation when the ball is thrown vertically upwards. The ball eventually comes to a stop. If the height is expressed by $h$ then,$$\\begin{gathered} v^2 = u^2 - 2gh \\\\ v = 0, \\quad u = 41.67 \\text{ m/s}, \\quad g = 9.8 \\text{ m/s}^2 \\end{gathered}$$$$\\text{Therefore, } h = \\frac{u^2}{2g} = \\frac{(41.67)^2}{2 \\times 9.8} \\text{ m} = 88.59 \\text{ m}$$[The ball will approximately reach the roof of a 30 storied building]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "**Question:** When a space ship revolves round the earth then its speed is very high and is nearly $10 \\text{ km/s}$. If a cannon ball is fired at this velocity straight upward, how high will it go?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Answer:** Let us try like with the cricket ball, only the initial velocity will be $10,000 \\text{ m/s}$ instead of $41.67 \\text{ m/s}$.$$h = \\frac{(10,000)^2}{2 \\times 9.8} \\text{ m} = 5,102,000 \\text{ m} = 5,102 \\text{ km}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Though it is felt that there is no mistake anywhere but actually the answer is not correct. This is because we have considered the value of acceleration due to gravity is $9.8 \\text{ m/s}^2$, this is true for the distances near the surface of earth. But if we go far from the earth the value of $g$ will decrease. When we deduced the equation$$v^2 = u^2 - 2gh$$then we considered that the value of $g$ is not changing. It is not true for this problem. So what we have learned till now, that knowledge cannot be used to solve this problem. If we cannot solve it, there will be no loss; because if anything is thrown upwards with this high velocity it will be burnt due to air friction!",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

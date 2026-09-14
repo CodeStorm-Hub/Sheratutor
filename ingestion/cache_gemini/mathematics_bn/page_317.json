@@ -1,0 +1,99 @@
+{
+  "printed_page_no": 317,
+  "pdf_page_no": 322,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "নির্ণেয় ক্ষেত্রফল $157.7$ বর্গমিটার (প্রায়)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "কাজ: চিত্রে গাঢ় চিহ্নিত ক্ষেত্রটির ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "16.3",
+      "section_title": "অনুশীলনী ১৬.৩",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. একটি বৃত্তচাপ কেন্দ্রে $30^\\circ$ কোণ উৎপন্ন করে। বৃত্তের ব্যাস $126$ সে.মি. হলে চাপের দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. প্রতি মিনিটে $66$ মিটার বেগে $1\\frac{1}{2}$ মিনিটে একটি ঘোড়া একটি মাঠ ঘুরে এলো। এ মাঠের ব্যাস নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. একটি বৃত্তাংশের ক্ষেত্রফল $77$ বর্গমিটার এবং বৃত্তের ব্যাসার্ধ $21$ মিটার। বৃত্তচাপটি কেন্দ্রে যে কোণ উৎপন্ন করে, তা নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. একটি বৃত্তের ব্যাসার্ধ $14$ সে.মি. এবং বৃত্তচাপ কেন্দ্রে $75^\\circ$ কোণ উৎপন্ন করে। বৃত্তাংশের ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. একটি বৃত্তাকার মাঠকে ঘিরে একটি রাস্তা আছে। রাস্তাটির ভিতরের পরিধি অপেক্ষা বাইরের পরিধি $44$ মিটার বড়। রাস্তাটির প্রস্থ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. একটি বৃত্তাকার পার্কের ব্যাস $26$ মিটার। পার্কটিকে বেষ্টন করে বাইরে $2$ মিটার প্রশস্ত একটি পথ আছে। পথটির ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. একটি গাড়ির সামনের চাকার ব্যাস $28$ সে.মি. এবং পিছনের চাকার ব্যাস $35$ সে.মি.। $44$ মিটার পথ যেতে সামনের চাকা পিছনের চাকা অপেক্ষা কত পূর্ণসংখ্যক বার বেশি ঘুরবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. একটি বৃত্তের পরিধি $220$ মিটার। এ বৃত্তে অন্তর্লিখিত বর্গক্ষেত্রের বাহুর দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. একটি বৃত্তের পরিধি একটি সমবাহু ত্রিভুজের পরিসীমার সমান। এদের ক্ষেত্রফলের অনুপাত নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: গাঢ় চিহ্নিত ক্ষেত্র",
+      "figure_no": "16.01",
+      "box_2d": [
+        180,
+        380,
+        265,
+        570
+      ],
+      "description": "একটি বৃত্তাংশের চিত্র যেখানে ব্যাসার্ধ ২০ সে.মি. এবং জ্যা বা ভূমি ১৫ সে.মি. নির্দেশিত আছে।",
+      "reading_order_anchor": "কাজ: চিত্রে গাঢ় চিহ্নিত ক্ষেত্রটির ক্ষেত্রফল নির্ণয় কর।"
+    }
+  ]
+}

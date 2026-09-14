@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 261,
+  "pdf_page_no": 266,
+  "chapter_no": 13,
+  "chapter_title": "সসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবং দশম পদ $= ar^{10-1} = 27 \\times \\left(\\frac{1}{3}\\right)^9 = \\frac{3^3}{3^3 \\times 3^6} = \\frac{1}{3^6} = \\frac{1}{729}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "গুণোত্তর ধারার সমষ্টি নির্ণয়",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, গুণোত্তর ধারার প্রথম পদ $a$, সাধারণ অনুপাত $r$ এবং পদ সংখ্যা $n$। যদি $n$ সংখ্যক পদের সমষ্টি $S_n$ হয়, তাহলে\n\n$$S_n = a + ar + ar^2 + \\dots + ar^{n-2} + ar^{n-1} \\dots (1)$$\n\nএবং $r \\cdot S_n = ar + ar^2 + ar^3 + \\dots + ar^{n-1} + ar^n$ [(1) কে $r$ দ্বারা গুণ করে] ... (2)\n\nবিয়োগ করে, $S_n - rS_n = a - ar^n$\n\nবা, $S_n(1 - r) = a(1 - r^n)$\n\n$\\therefore S_n = \\frac{a(1 - r^n)}{1 - r}$, যখন $r < 1$\n\nআবার (2) থেকে (1) বিয়োগ করে পাই,\n\n$rS_n - S_n = ar^n - a$\n\nবা, $S_n(r - 1) = a(r^n - 1)$\n\n$\\therefore S_n = \\frac{a(r^n - 1)}{r - 1}$, যখন $r > 1$\n\nলক্ষণীয়: সাধারণ অনুপাত $r = 1$ হলে প্রত্যেক পদ $= a$\n\nসুতরাং, এক্ষেত্রে $S_n = a + a + a + \\dots n$ পদ পর্যন্ত $= an$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: ক তার ছেলেকে স্কুলে নেওয়া-আনার জন্য এক ব্যক্তিকে ১লা এপ্রিল থেকে এক মাসের জন্য নিয়োগ করলেন। তার পারিশ্রমিক ঠিক করা হলো- প্রথম দিন এক পয়সা, দ্বিতীয় দিন প্রথম দিনের দ্বিগুণ অর্থাৎ দুই পয়সা, তৃতীয় দিন দ্বিতীয় দিনের দ্বিগুণ অর্থাৎ চার পয়সা। এই নিয়মে পারিশ্রমিক দিলে সাপ্তাহিক ছুটির দিনসহ এক মাস পর ঐ ব্যক্তি কত টাকা পাবেন?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১০. $12 + 24 + 48 + \\dots + 768$ ধারাটির সমষ্টি কত?\n\nসমাধান: প্রদত্ত ধারাটির প্রথম পদ $a = 12$, সাধারণ অনুপাত $r = \\frac{24}{12} = 2 > 1$।\n\n$\\therefore$ ধারাটি একটি গুণোত্তর ধারা।\n\nমনে করি, ধারাটির $n$ তম পদ $= 768$\n\nআমরা জানি, $n$ তম পদ $= ar^{n-1}$\n\n$\\therefore ar^{n-1} = 768$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

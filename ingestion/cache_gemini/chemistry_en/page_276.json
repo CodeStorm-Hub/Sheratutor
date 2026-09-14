@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 276,
+  "pdf_page_no": 281,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Addition of water:** Ethanal is produced when $20\\%$ sulfuric acid and $2\\%$ mercuric sulphate are added to Ethyne at $80^{\\circ}\\text{C}$ temperature.\n\n$$\\text{CH}\\equiv\\text{CH} + \\text{H}_2\\text{O} \\xrightarrow[80^{\\circ}\\text{C}]{20\\% \\text{ H}_2\\text{SO}_4, 2\\% \\text{ HgSO}_4} \\text{CH}_3\\text{CHO}$$\nEthyne $\\quad\\quad$ Water $\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad\\quad$ Ethanal",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.5",
+      "section_title": "Alcohols, Aldehydes and Fatty Acids",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.5.1",
+      "section_title": "Alcohol",
+      "chunk_type": "theory",
+      "content_markdown": "The bio-compounds which have hydroxyl radicals (-\\text{OH}) are called Alcohols. However, some compounds are not called Alcohol though they have hydroxyl radicals (-\\text{OH}). Such as- Phenol (\\text{C}_6\\text{H}_5-\\text{OH}). General formula of alcohol is $\\text{C}_n\\text{H}_{2n+1}\\text{OH}$. The first member of this class is Methanol (\\text{CH}_3-\\text{OH}), second member is Ethanol (\\text{CH}_3-\\text{CH}_2-\\text{OH}). Alcohols can be symbolized by \\text{R}-\\text{OH}, where \\text{R} is the alkyl radical. The initial members of this class are colour-less liquid substances and mix with water in all proportions.\n\n**Naming:** Alcohols are named by omitting 'e' and adding (ol) with the names of Alkanes. Example: Ethanol (\\text{CH}_3\\text{CH}_2\\text{OH}).\n\n**Preparation of Alcohol**\n\n**From Ethyl Bromide:** Ethanol and sodium bromide are produced when liquid solution of sodium hydroxide is added with bromo ethane and heated.\n\n$$\\text{CH}_3-\\text{CH}_2\\text{Br} + \\text{NaOH} \\xrightarrow{\\Delta} \\text{CH}_3-\\text{CH}_2\\text{OH} + \\text{NaBr}$$\nBromo Ethane $\\quad$ Sodium Hydroxide $\\quad\\quad\\quad$ Ethanol $\\quad\\quad$ Sodium Bromide",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.5.2",
+      "section_title": "Aldehyde",
+      "chunk_type": "theory",
+      "content_markdown": "The bio-compounds which have aldehyde group (-\\text{CHO}) are called aldehyde.\n\n**Naming:** Aldehydes are named by omitting 'e' and adding (al) with the names of alkanes. For example, propanal (\\text{CH}_3\\text{CH}_2\\text{CHO}). The name of the first member of this class is methanal (\\text{H}-\\text{CHO}).",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

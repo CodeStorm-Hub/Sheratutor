@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 37,
+  "pdf_page_no": 42,
+  "chapter_no": 2,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|---|---|---|\n| $y$ | $-6$ | $-4$ | $-2$ | $0$ | $2$ | $4$ | $6$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ছক কাগজে প্রতি ক্ষুদ্রবর্গের বাহুকে একক ধরে, তালিকার বিন্দুগুলো চিহ্নিত করি ও মুক্তহস্তে যোগ করি। তাহলেই পাওয়া গেল লেখচিত্র।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৩. $f(y) = \\frac{y^3 - 3y^2 + 1}{y(1 - y)}$ হলে দেখাও যে $f\\left(\\frac{1}{y}\\right) = f(1 - y)$\n\nসমাধান: $f(y) = \\frac{y^3 - 3y^2 + 1}{y(1 - y)}$\n\n$\\therefore f\\left(\\frac{1}{y}\\right) = \\frac{\\left(\\frac{1}{y}\\right)^3 - 3\\left(\\frac{1}{y}\\right)^2 + 1}{\\frac{1}{y}\\left(1 - \\frac{1}{y}\\right)} = \\frac{\\frac{1 - 3y + y^3}{y^3}}{\\frac{y - 1}{y^2}}$\n\n$= \\frac{1 - 3y + y^3}{y^3} \\times \\frac{y^2}{y - 1} = \\frac{1 - 3y + y^3}{y(y - 1)}$\n\nআবার, $f(1 - y) = \\frac{(1 - y)^3 - 3(1 - y)^2 + 1}{(1 - y)(1 - (1 - y))}$\n\n$= \\frac{1 - 3y + 3y^2 - y^3 - 3(1 - 2y + y^2) + 1}{(1 - y)(1 - 1 + y)}$\n\n$= \\frac{1 - 3y + 3y^2 - y^3 - 3 + 6y - 3y^2 + 1}{y(1 - y)}$\n\n$= \\frac{-1 + 3y - y^3}{y(1 - y)} = \\frac{-(1 - 3y + y^3)}{-y(y - 1)}$\n\n$= \\frac{1 - 3y + y^3}{y(y - 1)}$\n\n$\\therefore f\\left(\\frac{1}{y}\\right) = f(1 - y)$ দেখানো হলো।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ২.০১: লেখচিত্র",
+      "figure_no": "2.01",
+      "box_2d": [
+        87,
+        580,
+        335,
+        895
+      ],
+      "description": "একটি কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় সরলরেখার লেখচিত্র যেখানে বিন্দুগুলো চিহ্নিত করা হয়েছে।",
+      "reading_order_anchor": "ছক কাগজে প্রতি ক্ষুদ্রবর্গের বাহুকে একক ধরে, তালিকার বিন্দুগুলো চিহ্নিত করি ও মুক্তহস্তে যোগ করি। তাহলেই পাওয়া গেল লেখচিত্র।"
+    }
+  ]
+}

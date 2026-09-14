@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 346,
+  "pdf_page_no": 351,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 29. The area of the whole surface of a cube is 96 square metre. Determine the length of its diagonal.\n\nSolution: Let, the sides of the cube is $a$.\n\n$\\therefore$ The area of its whole surface = $6a^2$ and length of its diagonal = $\\sqrt{3}a$\n\nAs per question, $6a^2 = 96$ or, $a^2 = 16$ $\\therefore a = 4$\n\n$\\therefore$ The length of the diagonal = $\\sqrt{3} \\cdot 4 = 6.928$ metre (approx.).\n\nThe required length of the diagonal 6.928 metre (approx.).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: The sides of 3 metal cubes are 3 cm, 4 cm and 5 cm respectively. A new cube is formed by melting these 3 cubes. Determine the area of the whole surface and the length of the diagonal of the new cube.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "16.1",
+      "section_title": "Cylinder",
+      "chunk_type": "theory",
+      "content_markdown": "The solid formed by a complete revolution of any rectangle about one of its sides as axis is called a cylinder or a right circular cylinder. The two ends of a right circular cylinder are circular surfaces. The curved face is called curved surface and the total plane is called whole surface. The side of the rectangle which is parallel to the axis and revolves about the axis is called the generator line of the cylinder.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The figure above is a right circular cylinder, whose radius is $r$ and height $h$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Cylinder components",
+      "figure_no": "16.01",
+      "box_2d": [
+        483,
+        647,
+        612,
+        872
+      ],
+      "description": "A diagram showing a cylinder with its axis, height, and generator line labeled.",
+      "reading_order_anchor": "The solid formed by a complete revolution of any rectangle about one of its sides as axis is called a cylinder or a right circular cylinder."
+    },
+    {
+      "caption": "Fig 16.02: Cylinder surface area components",
+      "figure_no": "16.02",
+      "box_2d": [
+        672,
+        265,
+        884,
+        705
+      ],
+      "description": "An exploded view of a cylinder showing the two circular bases with area $\\pi r^2$ and the rectangular curved surface with area $2\\pi rh$.",
+      "reading_order_anchor": "The figure above is a right circular cylinder, whose radius is r and height h."
+    }
+  ]
+}

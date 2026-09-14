@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 112,
+  "pdf_page_no": 117,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "A $\\text{NaCl}$ molecule has $1$ $\\text{Na}$ atom and $1$ $\\text{Cl}$ atom. Therefore, the molecular mass of $\\text{NaCl} = \\text{atomic mass of Na} + \\text{atomic mass of Cl} = 23 + 35.5 = 58.5$\n\nOne mole of $\\text{NaCl} = 58.5 \\text{ g NaCl}$\n\n$\\text{CuSO}_4\\cdot5\\text{H}_2\\text{O}$ contains $01$ $\\text{Cu}$, $01$ $\\text{S}$, $09$ $\\text{O}$ and $10$ $\\text{H}$ atoms. Therefore, the molecular mass of $\\text{CuSO}_4\\cdot5\\text{H}_2\\text{O} = \\text{atomic mass of Cu} \\times 1 + \\text{atomic mass of S} \\times 1 + \\text{atomic mass of O} \\times 9 + \\text{atomic mass of H} \\times 10$\n\n$$= 1 \\times 63.5 + 1 \\times 32 + 9 \\times 16 + 10 \\times 1$$\n\n$$= 249.5$$\n\nA mole of $\\text{CuSO}_4\\cdot5\\text{H}_2\\text{O} = 249.5 \\text{ g CuSO}_4\\cdot5\\text{H}_2\\text{O}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Examples",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** What is the mass of $1$ $\\text{H}_2\\text{O}$ molecule?\n\n**Solution:** We know, $1 \\text{ mole } \\text{H}_2\\text{O} = 18 \\text{ g } \\text{H}_2\\text{O} = 6.023 \\times 10^{23} \\text{ no of } \\text{H}_2\\text{O} \\text{ molecule}$\n\nHere, the molecular mass of $6.02 \\times 10^{23} \\text{ H}_2\\text{O} \\text{ molecules} = 18 \\text{ g}$\n\nTherefore, the mass of $1 \\text{ H}_2\\text{O} \\text{ molecule} = \\frac{18}{6.023 \\times 10^{23}} \\text{ g} = 2.99 \\times 10^{-23}\\text{g}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** How many $\\text{H}_2\\text{SO}_4$ molecules are there in $1\\text{g}$ $\\text{H}_2\\text{SO}_4$?\n\n**Solution:** We know, $1 \\text{ mole } \\text{H}_2\\text{SO}_4 = 98 \\text{ g } \\text{H}_2\\text{SO}_4 = 6.023 \\times 10^{23} \\text{ no of } \\text{H}_2\\text{SO}_4 \\text{ molecule}$\n\nHere, $98 \\text{ g } \\text{H}_2\\text{SO}_4 = 6.023 \\times 10^{23} \\text{ no of } \\text{H}_2\\text{SO}_4 \\text{ molecules}$\n\nTherefore, the mass of $1\\text{g}$ $\\text{H}_2\\text{SO}_4 = \\frac{6.023 \\times 10^{23}}{98} = 6.14 \\times 10^{21} \\text{ H}_2\\text{SO}_4 \\text{ molecules}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** Calculate the mole of $\\text{H}_2\\text{O}$ present in $5\\text{g}$ $\\text{H}_2\\text{O}$.\n\n**Solution:** We know, $1 \\text{ mole } \\text{H}_2\\text{O} = 18\\text{g } \\text{H}_2\\text{O} = 6.023 \\times 10^{23} \\text{ no of } \\text{H}_2\\text{O} \\text{ molecules}$.\n\nHere, $18 \\text{ g } \\text{H}_2\\text{O} = 1 \\text{ mole } \\text{H}_2\\text{O}$\n\n$1\\text{g } \\text{H}_2\\text{O} = \\frac{1}{18} \\text{ mole } \\text{H}_2\\text{O}$\n\nTherefore, $5 \\text{ g } \\text{H}_2\\text{O} = \\frac{1 \\times 5}{18} = 0.277 \\text{ mole } \\text{H}_2\\text{O}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 340,
+  "pdf_page_no": 345,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $r = \\frac{90}{2(\\pi - 1)} = \\frac{45}{3.1416 - 1} = 21.01 \\text{ cm (approx.)}$\n\nThe required radius of the circle is $21.01 \\text{ cm (approx.)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 21.** The diameter of a circular field is $124 \\text{ metre}$. There is a path with $6 \\text{ metre}$ width around the field. Find the area of the path.\n\n**Solution:**\nLet the radius of the circular field be $r$ and radius of the field with the path be $R$.\n$\\therefore r = \\frac{124}{2} \\text{ metre} = 62 \\text{ metre}$ and $R = (62 + 6) \\text{ metre} = 68 \\text{ metre}$.\nArea of the circular field = $\\pi r^2$ and area of the circular field with the path = $\\pi R^2$.\n$\\therefore$ Area of the path = Area of field with path $-$ Area of the field\n$= (\\pi R^2 - \\pi r^2) = \\pi(R^2 - r^2)$\n$= 3.1416(68^2 - 62^2) = 3.1416(4624 - 3844)$\n$= 3.1416 \\times 780 = 2450.44 \\text{ square metre (approx.)}$\n\nThe required area of the path is $2450.44 \\text{ square metre (approx.)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:** Circumference of a circle is $440 \\text{ metre}$. Determine the length of the sides of the inscribed square in it.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 22.** The radius of a circle is $12 \\text{ cm}$ and the length of an arc is $14 \\text{ cm}$. Determine the angle subtended by the circular segment at its centre.\n\n**Solution:** Let, radius of the circle is $r = 12 \\text{ cm}$, the length of the arc is $s = 14 \\text{ cm}$ and the angle subtended at the centre is $\\theta$.\nWe know, $s = \\frac{\\pi r \\theta}{180}$\nor, $\\pi r \\theta = 180 \\times s$\nor, $\\theta = \\frac{180 \\times s}{\\pi r} = \\frac{180 \\times 14}{3.1416 \\times 12} = 66.84^\\circ \\text{ (approx.)}$\n\nThe required angle is $66.84^\\circ \\text{ (approx.)}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Circular field with path",
+      "figure_no": "16.01",
+      "box_2d": [
+        385,
+        695,
+        515,
+        860
+      ],
+      "description": "A diagram showing a circular field with a surrounding path, with radius 62 and path width 6 indicated.",
+      "reading_order_anchor": "Example 21"
+    }
+  ]
+}

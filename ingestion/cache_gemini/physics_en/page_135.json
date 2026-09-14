@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 135,
+  "pdf_page_no": 140,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Density can be increased by compressing air or gas by increasing pressure but same is not true for liquids (neither for solids !). Liquids cannot be compressed in the same way with pressure, so its density cannot be increased or decreased. How pressure of water is increases when we go from the surface to the bottom of a sea is shown in figure 5.03. Since the density of water is nearly uniform, the pressure is increasing at the same rate. Starting from zero at the surface of the sea, it is increased a lot at the bottom of the sea.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** The whale can go into a depth of 2,100 m from the sea level. How much pressure can it sustain? Assume that 1 atm pressure is increased per 10 m depth\n\n**Answer:** The whale can sustain the pressure,\n$$P = \\frac{2,100\\text{ m}}{10\\text{ m/atm}} = 210\\text{ atm}$$",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.03: Pressure increases with the increase of depth",
+      "figure_no": "5.03",
+      "box_2d": [
+        273,
+        199,
+        601,
+        824
+      ],
+      "description": "Line graph showing water pressure in Atm against depth in km, increasing linearly from 0 up to 6 km depth and 600 atm pressure.",
+      "reading_order_anchor": "How pressure of water is increases when we go from the surface to the bottom of a sea is shown in figure 5.03."
+    }
+  ]
+}

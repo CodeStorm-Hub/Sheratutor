@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 94,
+  "pdf_page_no": 99,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "there in a normal chemical reaction. That is why the non-metals do not create cations.\n\nSo, what kind of change occurs in the outermost energy level of the non-metals? Since their outermost energy level usually lacks 1, 2 or 3 electrons to become an octet, they easily accept them from other elements and assume the electronic configuration of their nearest inert gas. In other words, their electron affinity is high. This acceptance of electrons from other elements increases the number of electrons than protons in them and the negative charge in them as well. Thus, in general, the atoms of non-metals are negatively charged. These negative charge non-metal atoms are known as anions. For example, the $\\text{Cl}$ atom accepts one electron to reach the electronic configuration of argon ($\\text{Ar}$) gas and thus produces chloride a ($\\text{Cl}^-$) ion. (Fig 5.05)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.10",
+      "section_title": "Ionic Bond or Electrovalent Bond",
+      "chunk_type": "theory",
+      "content_markdown": "We have already learned that the metals having lower ionization energy easily give away electrons from their outermost energy level and turn into positive charge cations. On the other hand, the non-metals having higher ionization energy easily receive electrons into their outermost energy level and turn into negative charge anions. An electrostatic force remains effective on these oppositely charged cation and anion. This electrostatic or Coulomb force keeps them together. The attractive force by which cations and anions, formed by exchanging electrons, are held within the atoms of a compound is called the ionic",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.05: Formation of chloride anion (Cl-).",
+      "figure_no": "5.05",
+      "box_2d": [
+        456,
+        219,
+        634,
+        792
+      ],
+      "description": "Bohr model diagram showing a chlorine atom accepting one electron to form a chloride ion.",
+      "reading_order_anchor": "there in a normal chemical reaction. That is why the non-metals do not create cations."
+    }
+  ]
+}

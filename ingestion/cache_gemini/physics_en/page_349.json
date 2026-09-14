@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 349,
+  "pdf_page_no": 354,
+  "chapter_no": 13,
+  "chapter_title": "Modern Physics and Electronics",
+  "sections": [
+    {
+      "section_no": "13.1",
+      "section_title": "Radioactivity",
+      "chunk_type": "theory",
+      "content_markdown": "We all know, there is a nucleus at the center of an atom, and there are protons and neutrons in the nucleus. The number of revolving electrons around the nucleus is equal to the number of protons in it. The radius of the nucleus is about one lakh times smaller than the radius of the atom. But the actual mass of the atom is the mass of its nucleus even though its size is small, because the mass of the electron is 1836 times less than that of the proton or neutron.\n\nA proton is positively charged, so the nucleus cannot be formed only with protons because the protons will be thrown off due to strong repulsion force. So there is charge-less neutrons with protons in the nucleus, and nuclei become stable due to very strong nuclear force between neutrons and protons. Though there is only one proton at the center of a normal hydrogen atom, there are also hydrogen nuclei with one or two neutrons.\n\nWith the increase of the number of protons, to keep this nucleus stable, the number of neutrons also increases. But when the proton number exceeds 82, the nucleus starts to become unstable. But, no stable isotope is found for Technetium (43) and Promethium (61). These unstable nuclei try to become stable by emitting a kind of radiation. We call this process radioactivity. The radiation that comes out from the nucleus is called a radioactive ray.\n\nIt is not the fact that when proton number exceeds 82 (atomic number more than 82) only then the nucleus becomes radioactive. Any nucleus of other atoms may be radioactive too. We have classified atoms on the basis of their electron number which is equal to the number of protons. External properties, nature, chemical properties; every feature of an element depends on the classification of electrons. So the number of neutrons of an atom can be different even if the number of electrons and protons is equal. These types of elements, with different numbers of neutrons, are called isotopes of that element. So, an isotope of an element may be stable, but another isotope of that element may be unstable or radioactive. For example, we can say that element carbon in whose nucleus there are six protons and its three isotopes are:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

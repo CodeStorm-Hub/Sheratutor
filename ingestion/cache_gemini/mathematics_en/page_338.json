@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 338,
+  "pdf_page_no": 343,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 18. The diameter of a circle is 26 cm. Find its circumference.\n\nSolution: Let, the radius of the circle is $r$.\n\n$\\therefore$ diameter of the circle = $2r$ and circumference = $2\\pi r$\n\nAs per question, $2r = 26$ or, $r = \\frac{26}{2}$ or, $r = 13$ cm\n\n$\\therefore$ circumference of the circle = $2\\pi r = 2 \\times 3.1416 \\times 13$ cm = 81.68 cm (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.2",
+      "section_title": "Length of arc of a circle",
+      "chunk_type": "theory",
+      "content_markdown": "Let $O$ be the centre of a circle whose radius is $r$ and arc $AB = s$, which produces $\\theta^\\circ$ angle at the centre.\n\n$\\therefore$ circumference of the circle = $2\\pi r$\n\nTotal angle produced at the centre of the circle = $360^\\circ$ and arc $s$ produces angle $\\theta^\\circ$ at the centre. We know, any interior angle at the centre of a circle produced by any arc is proportional to the arc.\n\n$\\therefore \\frac{\\theta}{360^\\circ} = \\frac{s}{2\\pi r}$ or, $s = \\frac{\\pi r \\theta}{180^\\circ}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "16.3",
+      "section_title": "Area of circular region and circular segment",
+      "chunk_type": "theory",
+      "content_markdown": "The area, surrounded by any circle, is called a circular region and the circle is called the boundary of the circular region.\n\n**Circular segment**: The area formed by an arc and the radius that joins the end points of that arc to the centre of the circle is called circular segment.\n\nIf $A$ and $B$ are two points on a circle with centre $O$, interior to $\\angle AOB$, radius $OA$ and $OB$, and the arc $AB$, form a circular segment. In previous class, we have learnt that if the radius of a circle is $r$, the area = $\\pi r^2$.\n\nWe know, any angle produced by an arc at the centre of a circle is proportional to the arc.\n\nSo, at this stage we can accept that the area of two circular segments of the same circle are proportional to the two arcs on which they stand.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Arc of a circle",
+      "figure_no": "16.01",
+      "box_2d": [
+        375,
+        709,
+        492,
+        882
+      ],
+      "description": "A circle with center O, radius r, and an arc AB of length s subtending an angle theta at the center.",
+      "reading_order_anchor": "16.2"
+    },
+    {
+      "caption": "Fig 16.02: Circular segment",
+      "figure_no": "16.02",
+      "box_2d": [
+        757,
+        723,
+        870,
+        864
+      ],
+      "description": "A circle with center O and a shaded circular segment defined by arc AB and radii OA and OB.",
+      "reading_order_anchor": "16.3"
+    }
+  ]
+}

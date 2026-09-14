@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 292,
+  "pdf_page_no": 297,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "by accumulating huge amount of charge on the sphere it is possible to develop high potential.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.8.3",
+      "section_title": "Fuel Truck",
+      "chunk_type": "theory",
+      "content_markdown": "When petrol or other fuel trucks supply fuel, then they have to be very careful so that no electrical sparks are created suddenly which may produce a big explosion. This may happen if static electricity is generated due to friction between truck wheels and the road. So behind the truck, a metal chain hangs from the tank and stays in contact with the ground. In this way, any static electricity produced is directly transferred to the earth through the chain.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.8.4",
+      "section_title": "Electronics",
+      "chunk_type": "theory",
+      "content_markdown": "In cold countries, the amount of water vapor in air is very low and the effects of static electricity are very high. Many types of IC (Integrated Circuit) are used while working with electronics. Some IC's can be damaged by even a slightest change of voltage to their pins. That is why a touch of the hand while working with electronics can damage a valuable IC or the circuit board. For doing work under these circumstances, the upper part of a table is connected to the ground with a conducting wire. Simultaneously, the hands of the person working are connected to the ground using an electrical conducting strap.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.8.5",
+      "section_title": "Lightning and Lightning Arrestor",
+      "chunk_type": "theory",
+      "content_markdown": "When water vapor rises to form clouds, the negative charges (electrons) created due to friction between water vapor are stored in the lower altitude clouds. So naturally a shortage of electrons is developed in the higher clouds making them positively charged. When a large amount of charge is accumulated in the clouds, a huge spark is formed inside the clouds to return to neutral state (which we know as lightning). Sometimes so much charge is accumulated in the clouds that they ionize the air and literally travels to the ground. We call that a thunderbolt. A huge amount of charge is brought to the earth during a thunderbolt. It ionizes the air while travelling through it, so a huge amount of heat, light and sound is produced, and such amounts of charge can cause serious harm to the places nearby.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

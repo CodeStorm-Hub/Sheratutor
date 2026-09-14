@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 40,
+  "pdf_page_no": 45,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": "2.4",
+      "section_title": "Speed and Velocity",
+      "chunk_type": "theory",
+      "content_markdown": "speed. To understand the internal relationship between speed and velocity, some examples discussed:\n\nTo explain distance and displacement we considered a curved path in figure 2.04 and showed different positions in that path. To have an understanding about speed and velocity, we can consider the same example. But now we have to tell how much time you have taken for going from one position to another. Suppose you have taken 20 minutes for coming from position A to B by cycle. Then your average speed will be:\n\n$$\\text{Average speed} = \\frac{\\text{distance travelled}}{\\text{time}}$$\n\nTherefore,\n\n$$v = \\frac{4\\text{ km}}{20\\text{ minutes}} = \\frac{4 \\times 1000\\text{ m}}{20 \\times 60\\text{ s}} = 3.33\\text{ m/s}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.4",
+      "section_title": "Speed and Velocity",
+      "chunk_type": "theory",
+      "content_markdown": "Notice that, we have used the word average speed instead of the word speed. Because, while you are riding the cycle, sometimes you rode fast and sometimes you rode slow. So we cannot talk about the 'instantaneous' speed, rather we can talk about the average speed in the time interval.\n\nLet us try to determine velocity now. Like speed, we cannot calculate instantaneous velocity. In this time interval, you rode the cycle at different velocities. The velocity has changed due to the motion being fast or slow. Again the velocity has changed due to the change of direction. Considering these changes, the magnitude of the average velocity will be:\n\n$$\\text{Average velocity} = \\frac{\\text{displacement}}{\\text{time}}$$\n\n$$\\text{Magnitude of average velocity} = \\frac{\\text{Magnitude of displacement}}{\\text{time}}$$\n\nTherefore,\n\n$$v = \\frac{3\\text{ km}}{20\\text{ minutes}} = \\frac{3 \\times 1000\\text{ m}}{20 \\times 60\\text{ s}} = 2.5\\text{ m/s}$$\n\nIn this example you have noticed that the value of the average velocity is less than that of the average speed. If the path was straight rather than curved, then the magnitude of the average velocity would be equal to the magnitude of the average speed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

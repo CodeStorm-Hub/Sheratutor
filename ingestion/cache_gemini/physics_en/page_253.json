@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 253,
+  "pdf_page_no": 258,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In order to illustrate this easily only three layers are shown. The density of the air in upper level is high and so the refractive index is high. Air in the lower level is heated, so density is low and its refractive index is also low. During refraction of light from the tree, in each layer the angle of refraction will increase and at the lowest level total internal reflection may happen. When entering a medium of lower refractive index from a medium of higher refractive index there is a possibility of crossing the critical angle because the angle of incidence is higher if it is seen from far . So a mirage is seen from far and cannot be seen from near. If a person looks at a tree from far away, he can see the tree directly, and due to total internal reflection he can also see an image of that tree under the tree. It will seem that the image of the tree is seen due to the existence of water under the tree. After coming closer, it will be clear that there is no water.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "While driving a car on a heated road in the summer, a wet road is seen far away for the same reason. After coming closer it is seen that the road is dry. This is also a kind of mirage.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.3",
+      "section_title": "Uses of refraction",
+      "chunk_type": "theory",
+      "content_markdown": "There are different uses of refraction. The uses which play important roles in our lives are:",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.09 : Mirage is seen due to the difference of density of the air in the desert.",
+      "figure_no": "9.09",
+      "box_2d": [
+        416,
+        219,
+        655,
+        775
+      ],
+      "description": "An illustration showing a person looking at a palm tree in a desert, with light rays refracting through air layers of different densities, creating an inverted virtual image below the tree resembling a pool of water.",
+      "reading_order_anchor": "In order to illustrate this easily only three layers are shown."
+    }
+  ]
+}

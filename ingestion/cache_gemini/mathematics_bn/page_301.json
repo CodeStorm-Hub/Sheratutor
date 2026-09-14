@@ -1,0 +1,85 @@
+{
+  "printed_page_no": 301,
+  "pdf_page_no": 306,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. একটি ত্রিভুজের দুই বাহুর দৈর্ঘ্য যথাক্রমে $26$ মিটার, $28$ মিটার এবং ক্ষেত্রফল $182$ বর্গমিটার হলে, বাহুদ্বয়ের অন্তর্ভুক্ত কোণ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. একটি সমদ্বিবাহু ত্রিভুজের সমান সমান বাহুর দৈর্ঘ্য $10$ মিটার এবং ক্ষেত্রফল $48$ বর্গমিটার হলে, ভূমির দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. একটি নির্দিষ্ট স্থান থেকে দুইটি রাস্তা পরস্পর $135^\\circ$ কোণ করে দুই দিকে চলে গেছে। দুই জন লোক ঐ নির্দিষ্ট স্থান থেকে যথাক্রমে ঘণ্টায় $7$ কিলোমিটার ও ঘণ্টায় $5$ কিলোমিটার বেগে বিপরীত মুখে রওনা হলো। $4$ ঘণ্টা পর তাদের মধ্যে সরাসরি দূরত্ব নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. একটি সমবাহু ত্রিভুজের অভ্যন্তরস্থ একটি বিন্দু থেকে তিনটির উপর অঙ্কিত লম্বের দৈর্ঘ্য যথাক্রমে $6$ সে.মি., $7$ সে.মি. ও $8$ সে.মি.। ত্রিভুজটির বাহুর দৈর্ঘ্য ও ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১০. একটি সমকোণী ত্রিভুজের লম্ব ভূমির $\\frac{11}{12}$ অংশ থেকে $6$ সে.মি. কম এবং অতিভুজ ভূমির $\\frac{4}{3}$ অংশ থেকে $3$ সে.মি. কম।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) ভূমি $x$ হলে ত্রিভুজটির ক্ষেত্রফল $x$ এর মাধ্যমে প্রকাশ কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) ভূমির দৈর্ঘ্য নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) ত্রিভুজটির ভূমি $12$ সে.মি. হলে এর পরিসীমার সমান পরিসীমাবিশিষ্ট সমবাহু ত্রিভুজের ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "চতুর্ভূজক্ষেত্রের ক্ষেত্রফল",
+      "chunk_type": "theory",
+      "content_markdown": "১. আয়তক্ষেত্রের ক্ষেত্রফল: মনে করি, $ABCD$ আয়তক্ষেত্রের দৈর্ঘ্য $AB = a$, প্রস্থ $BC = b$ এবং কর্ণ $AC = d$। আমরা জানি, আয়তক্ষেত্রের কর্ণ আয়তক্ষেত্রটিকে সমান দুইটি ত্রিভুজক্ষেত্রে বিভক্ত করে।\n\nআয়তক্ষেত্র $ABCD$ এর ক্ষেত্রফল $= 2 \\times \\triangle ABC$ এর ক্ষেত্রফল\n$= 2 \\times \\frac{1}{2} a \\cdot b = ab$\n\nলক্ষ করি, আয়তক্ষেত্রটির পরিসীমা $s = 2(a + b)$ এবং $ABC$ ত্রিভুজটি সমকোণী।\n$\\therefore AC^2 = AB^2 + BC^2$ বা, $d^2 = a^2 + b^2$\n$\\therefore d = \\sqrt{a^2 + b^2}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: আয়তক্ষেত্রের কর্ণ",
+      "figure_no": "16.01",
+      "box_2d": [
+        773,
+        693,
+        879,
+        885
+      ],
+      "description": "একটি আয়তক্ষেত্র ABCD যার কর্ণ AC টানা হয়েছে এবং দৈর্ঘ্য a ও প্রস্থ b চিহ্নিত করা হয়েছে।",
+      "reading_order_anchor": "চতুর্ভূজক্ষেত্রের ক্ষেত্রফল"
+    }
+  ]
+}

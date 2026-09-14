@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 284,
+  "pdf_page_no": 289,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Organic compounds | Inorganic compounds |\n|---|---|\n| 1. Generally, organic compounds must have carbon. Example: Methane ($CH_4$) | 1. Except some exceptions, generally inorganic compounds have no carbon. Example: Hydrogen Sulphide ($H_2S$) |\n| 2. Usually, organic compounds take a long time to react. | 2. Usually, inorganic compounds take lesser time to react. |\n| 3. Organic compounds are generally formed by covalent bonding. | 3. Inorganic compounds are usually formed by ionic or covalent bonding. |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do by yourself",
+      "chunk_type": "theory",
+      "content_markdown": "**Activity:** Define organic compounds. Taking some organic and inorganic compounds determine their melting points and show the differences.\n\n**Think:** How to differentiate between organic and inorganic compounds on the basis of difference of ionic and covalent compounds.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}

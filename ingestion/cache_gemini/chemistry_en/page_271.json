@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 271,
+  "pdf_page_no": 276,
+  "chapter_no": 11,
+  "chapter_title": "Mineral Resources: Fossils",
+  "sections": [
+    {
+      "section_no": "11.1",
+      "section_title": "Preparation of Alkane",
+      "chunk_type": "theory",
+      "content_markdown": "### Preparation of Alkane\n\n**From carbon-di-oxide:** Methane and water are produced when hydrogen is heated with carbon-di-oxide at $250^\\circ\\text{C}$ temperature in the presence of nickel catalyst.\n\n$$\\text{CO}_2 + 4\\text{H}_2 \\xrightarrow[250^\\circ\\text{C}]{\\text{Ni}} \\text{CH}_4 + 2\\text{H}_2\\text{O}$$\n\n$$\\text{Carbon-di-oxide} \\quad \\text{Hydrogen} \\quad \\text{Methane} \\quad \\text{Water}$$\n\n**From Alkene and Alkyne:** Ethane is produced when hydrogen is heated with ethene and ethyne at $180^\\circ\\text{C}-200^\\circ\\text{C}$ temperature in presence of nickel catalyst.\n\n$$\\text{CH}_2=\\text{CH}_2 + \\text{H}_2 \\xrightarrow[180^\\circ\\text{C}-200^\\circ\\text{C}]{\\text{Ni}} \\text{CH}_3-\\text{CH}_3$$\n\n$$\\text{Ethene} \\quad \\text{Hydrogen} \\quad \\text{Ethane}$$\n\n$$\\text{CH}\\equiv\\text{CH} + 2\\text{H}_2 \\xrightarrow[180^\\circ\\text{C}-200^\\circ\\text{C}]{\\text{Ni}} \\text{CH}_3-\\text{CH}_3$$\n\n$$\\text{Ethyne} \\quad \\text{Hydrogen} \\quad \\text{Ethane}$$\n\n**From Decarboxylation Reaction:** Methane and sodium carbonate are produced when sodium ethanoate is heated with sodium hydroxide in presence of calcium oxide.\n\n$$\\text{CH}_3\\text{COONa} + \\text{NaOH} \\xrightarrow[\\Delta]{\\text{CaO}} \\text{CH}_4 + \\text{Na}_2\\text{CO}_3$$\n\n$$\\text{Sodium Ethanoate} \\quad \\text{Sodium Hydroxide} \\quad \\text{Methane} \\quad \\text{Sodium Carbonate}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2",
+      "section_title": "Properties of Alkane",
+      "chunk_type": "theory",
+      "content_markdown": "### Properties of Alkane\n\n**Physical Properties:** Melting point, boiling point and the physical condition of Saturated hydrocarbons or alkane depends on the carbon number of alkanes. Its physical condition changes with the change of carbon numbers. As the boiling point of the saturated hydrocarbons with carbon number 1-4 is less than the room temperature, they remain in gaseous state. Boiling point of saturated hydrocarbons with carbon number 5-15 is greater than the normal room temperature. So they remain in liquid state. Boiling point of 5-carbon saturated hydrocarbon pentane is $36.1^\\circ\\text{C}$. Saturated hydrocarbons which have more than carbon number 16 are solid.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

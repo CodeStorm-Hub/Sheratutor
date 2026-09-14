@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 111,
+  "pdf_page_no": 116,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "Mole",
+      "chunk_type": "theory",
+      "content_markdown": "The word mole is the unit of any chemical measurement. Suppose,\n\n$$12 \\text{ nos of } \\text{O}_2 = 1 \\text{ dozen of } \\text{O}_2$$\n$$100 \\text{ nos of } \\text{O}_2 = 1 \\text{ hundred of } \\text{O}_2$$\n$$1000 \\text{ nos of } \\text{O}_2 = 1 \\text{ thousand of } \\text{O}_2$$\n\nSimilarly, $6.023 \\times 10^{23} \\text{ nos } \\text{O}_2 = 1 \\text{ mole } \\text{O}_2$\n\n$1 \\text{ mole atom contains } 6.02 \\times 10^{23} \\text{ atoms}$\n$1 \\text{ mole molecule contains } 6.02 \\times 10^{23} \\text{ molecules}$\n$1 \\text{ mole ion contains } 6.02 \\times 10^{23} \\text{ ions}$\n\nTherefore, the number $6.02 \\times 10^{23}$ is used in the case with atoms, molecules and ions etc. This number is called the Avogadro number.\n\nThe amount of a chemical substance that contains as many as the Avogadro number ($6.02 \\times 10^{23}$) of molecules, atoms or ions is called the mole of the substance. For example, $12 \\text{ grams of C}$ contains $6.02 \\times 10^{23}$ number of $\\text{C}$ atoms.\n\nThe expression of atomic mass of atoms and the molecular mass of molecules into gram unit is called one mole of a chemical substance. Therefore,\n\n$$12 \\text{ grams of C} = 1 \\text{ mole C atom.}$$\n\nAgain, $18 \\text{ grams of } \\text{H}_2\\text{O}$ contains $6.02 \\times 10^{23}$ number of $\\text{H}_2\\text{O}$ molecules. Therefore,\n\n$$18 \\text{ grams of } \\text{H}_2\\text{O} = 1 \\text{ mole } \\text{H}_2\\text{O}.$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "The Process of Determining the Molecular Mass of a Molecule",
+      "chunk_type": "theory",
+      "content_markdown": "The summation of atomic masses of all atoms that constitute a molecule denotes the molecular mass of the molecule. $\\text{Cl}_2$ molecule, for example, has two $\\text{Cl}$ atoms.\n\nTherefore, the molecular mass of $\\text{Cl}_2 = \\text{atomic mass of Cl} \\times 2 = 2 \\times 35.5 = 71$\n\n$$\\text{One mole } \\text{Cl}_2 = 71 \\text{ g } \\text{Cl}_2.$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

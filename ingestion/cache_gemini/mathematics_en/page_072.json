@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 72,
+  "pdf_page_no": 77,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Work:\n\n1) For a picnic, a bus was hired at Tk. 2400 and it was decided that every passenger would have to give equal fare. But due to the absence of 10 passengers, fare per head was increased by Tk. 8. How many passengers did go by the bus and how much money did each of the passengers give as fare?\n\n2) $A$ and $B$ together can do a work in $p$ days. $A$ alone can do that work in $q$ days. In how many days can $B$ alone do the work?\n\n3) A person rowing against the current can go 2 km per hour. If the speed of the current is 3 km per hour, how much time will he take to cover 32 km, rowing along the current?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 38.** Price of a book is Tk. 24. This price is 80% of the actual price. The Government subsidize the due price. How much money does the Government subsidize for each book?\n\n**Solution:** Market price = 80% of the actual price\n\nWe know, $p = br$\n\nHere, $p = \\text{Tk. } 24$ and $r = 80\\% = \\frac{80}{100}$\n\n$\\therefore 24 = b \\times \\frac{80}{100}$\n\nor, $b = \\frac{24 \\times 100}{80}$\n\n$\\therefore b = 30 \\text{ Tk.}$\n\nHence, the actual price of the book is Tk. 30.\n\n$\\therefore$ Amount of subsidized money Tk. $= (30 - 24)$ or Tk. $= 6$\n\nHence, subsidized money for each book is Tk. 6.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 39.** The loss is $r\\%$ when $n$ oranges are sold per taka. How many oranges are to be sold per taka to make a profit of $s\\%$?\n\n**Solution:** If the cost price is Tk. 100, the selling price at the loss of $r\\%$ is Tk. $(100 - r)$.\n\nIf selling price is Tk. $(100 - r)$, cost price is Tk. 100",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

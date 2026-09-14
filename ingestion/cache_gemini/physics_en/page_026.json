@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 26,
+  "pdf_page_no": 31,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Measurement of Accuracy and Error",
+      "chunk_type": "theory",
+      "content_markdown": "Now we can discuss how accuracy can be measured. The measurement of accuracy is the absolute error. Observing the name we understand that this is the difference of the measured value with respect to the actual value. You can definitely understand that when we measure anything we don't know the actual value. So, instead of absolute error we use the most probable error. Therefore in our previous example the absolute error is\n\n$$|\\pm 0.5\\text{ mm}| = 0.5\\text{ mm}$$\n\nWe can consider the relative error after the absolute error. Let us consider that an error of $0.5\\text{ mm}$ has occurred while measuring length. If the length of the object is $1\\text{ mm}$ then this error is very serious, but if the length is $1\\text{ m}$ then the measurement is accurate enough. The concept of relative error has been introduced to give a better understanding.\n\nTherefore,\n$$\\text{Relative error} = \\frac{\\text{Absolute error}}{\\text{Measured value}}$$\n\nSo in our previous example:\n$$\\text{Relative error: } 0.5\\text{ mm} / 7\\text{ mm} = 0.071$$\n$$\\text{In percentage this is: } 0.071 \\times 100 = 7.1\\%$$\n\n**Question:** Suppose you have got $10\\text{ cm}$ by measuring the length of a square shaped book. Suppose the relative error in the measurement is $10\\%$. What is the relative error in its area?\n\n**Answer:**\nMeasured area of the object $= 10\\text{ cm} \\times 10\\text{ cm} = 100\\text{ cm}^2$\n\nSince the relative error of the object is $10\\%$, hence if its length is measured, the minimum length will be $9\\text{ cm}$ and maximum length will be $11\\text{ cm}$.\n\n$$\\therefore \\text{The minimum area} = 9\\text{ cm} \\times 9\\text{ cm} = 81\\text{ cm}^2$$\nand the maximum area $= 11\\text{ cm} \\times 11\\text{ cm} = 121\\text{ cm}^2$\n\nTherefore the absolute error:\n$$|100\\text{ cm}^2 - 81\\text{ cm}^2| = 19\\text{ cm}^2$$\nor, $$|121\\text{ cm}^2 - 100\\text{ cm}^2| = 21\\text{ cm}^2$$\n\nSince the values are not equal, we consider the larger one i.e. the absolute error is $21\\text{ cm}^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

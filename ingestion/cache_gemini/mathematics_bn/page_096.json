@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 96,
+  "pdf_page_no": 101,
+  "chapter_no": 5,
+  "chapter_title": "এক চলকবিশিষ্ট সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কোনো সমীকরণের পদগুলো ভগ্নাংশ আকারে থাকলে, লবগুলোতে চলকের ঘাত 1 এবং হরগুলো ধ্রুবক হলে, সেগুলো একঘাত সমীকরণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. সমাধান কর: $\\frac{5x}{7} - \\frac{4}{5} = \\frac{x}{5} - \\frac{2}{7}$ \n\nসমাধান: $\\frac{5x}{7} - \\frac{4}{5} = \\frac{x}{5} - \\frac{2}{7}$ \n\nবা, $\\frac{5x}{7} - \\frac{x}{5} = \\frac{4}{5} - \\frac{2}{7}$ [পক্ষান্তর করে] \n\nবা, $\\frac{25x - 7x}{35} = \\frac{28 - 10}{35}$ \n\nবা, $\\frac{18x}{35} = \\frac{18}{35}$ \n\nবা, $18x = 18$ \n\nবা, $x = 1$ \n\n$\\therefore$ সমাধান $x = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন, আমরা এমন সমীকরণের সমাধান করবো যা দ্বিঘাত সমীকরণের আকারে থাকে। এ সকল সমীকরণ সরলীকরণের মাধ্যমে সমতুল সমীকরণে রূপান্তর করে $ax = b$ আকারের একঘাত সমীকরণে পরিণত করা হয়। আবার, হরে চলক থাকলেও সরলীকরণ করে একঘাত সমীকরণে রূপান্তর করা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. সমাধান কর: $(y - 1)(y + 2) = (y + 4)(y - 2)$ \n\nসমাধান: $(y - 1)(y + 2) = (y + 4)(y - 2)$ \n\nবা, $y^2 - y + 2y - 2 = y^2 + 4y - 2y - 8$ \n\nবা, $y - 2 = 2y - 8$ \n\nবা, $y - 2y = -8 + 2$ [পক্ষান্তর করে] \n\nবা, $-y = -6$ \n\nবা, $y = 6$ \n\n$\\therefore$ সমাধান $y = 6$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. সমাধান কর ও সমাধান সেট লেখ: $\\frac{6x + 1}{15} - \\frac{2x - 4}{7x - 1} = \\frac{2x - 1}{5}$ \n\nসমাধান: $\\frac{6x + 1}{15} - \\frac{2x - 4}{7x - 1} = \\frac{2x - 1}{5}$ \n\nবা, $\\frac{6x + 1}{15} - \\frac{2x - 1}{5} = \\frac{2x - 4}{7x - 1}$ [পক্ষান্তর করে] \n\nবা, $\\frac{6x + 1 - 6x + 3}{15} = \\frac{2x - 4}{7x - 1}$ \n\nবা, $\\frac{4}{15} = \\frac{2x - 4}{7x - 1}$ \n\nবা, $15(2x - 4) = 4(7x - 1)$ [আড়গুণন করে]",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

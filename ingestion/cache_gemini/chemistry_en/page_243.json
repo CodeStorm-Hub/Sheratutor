@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 243,
+  "pdf_page_no": 248,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "battery and the carbon rods are connected to the positive charge. Once the electric conduction starts, the electrolysis starts too. In the electrolysis, $\\text{O}^{2-}$ donates electrons at the anode and produces $\\text{O}_2$ gas. $\\text{Al}^{3+}$ present in the solution accepts the electron at the cathode and turns into $\\text{Al}$ metal.\n\n$$6\\text{O}^{2-} \\longrightarrow 3\\text{O}_2 + 12\\text{e}^- \\quad \\text{(Anode reaction)}$$\n$$2\\text{Al}^{3+} + 6\\text{e}^- \\longrightarrow 2\\text{Al} \\quad \\text{(Cathode reaction)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.1",
+      "section_title": "Carbon Reduction Method",
+      "chunk_type": "theory",
+      "content_markdown": "Metal is extracted by heating carbon along with metallic oxide. For example, $\\text{Zn}$ from $\\text{ZnO}$, $\\text{Fe}$ from $\\text{FeO}$, $\\text{Pb}$ from $\\text{PbO}$, or $\\text{Cu}$ from $\\text{CuO}$ are extracted this way.\n\n$$\\text{ZnO} + \\text{C} \\xrightarrow{\\Delta} \\text{Zn} + \\text{CO}$$\n$$\\text{FeO} + \\text{C} \\xrightarrow{\\Delta} \\text{Fe} + \\text{CO}$$\n$$\\text{PbO} + \\text{C} \\xrightarrow{\\Delta} \\text{Pb} + \\text{CO}$$\n$$\\text{CuO} + \\text{C} \\xrightarrow{\\Delta} \\text{Cu} + \\text{CO}$$\n\nThis method is called carbon reduction. The mid level position holder metals in the reactivity series are extracted in this method.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.07: Aluminium Extraction.",
+      "figure_no": "10.07",
+      "box_2d": [
+        284,
+        323,
+        518,
+        695
+      ],
+      "description": "Schematic diagram of an electrolytic cell for aluminium extraction showing carbon anode, carbon cathode, steel container with graphite layer, molten aluminium, and a mixture of molten aluminium oxide and cryolite.",
+      "reading_order_anchor": "Aluminium Extraction"
+    }
+  ]
+}

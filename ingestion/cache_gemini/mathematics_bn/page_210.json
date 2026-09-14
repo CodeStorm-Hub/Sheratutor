@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 210,
+  "pdf_page_no": 215,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: দেওয়া আছে, $a : b = b : c$\n$\\therefore b^2 = ac$\n\nএখন, $\\left( \\frac{a+b}{b+c} \\right)^2 = \\frac{(a+b)^2}{(b+c)^2}$\n$= \\frac{a^2 + 2ab + b^2}{b^2 + 2bc + c^2}$\n$= \\frac{a^2 + 2ab + ac}{ac + 2bc + c^2}$\n$= \\frac{a(a + 2b + c)}{c(a + 2b + c)}$\n$= \\frac{a}{c}$\n\nআবার, $\\frac{a^2 + b^2}{b^2 + c^2} = \\frac{a^2 + ac}{ac + c^2}$\n$= \\frac{a(a + c)}{c(a + c)}$\n$= \\frac{a}{c}$\n\n$\\therefore \\left( \\frac{a+b}{b+c} \\right)^2 = \\frac{a^2 + b^2}{b^2 + c^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৪. $\\frac{a}{b} = \\frac{c}{d}$ হলে, দেখাও যে, $\\frac{a^2 + b^2}{a^2 - b^2} = \\frac{ac + bd}{ac - bd}$\n\nসমাধান: মনে করি, $\\frac{a}{b} = \\frac{c}{d} = k$\n$\\therefore a = bk$ এবং $c = dk$\n\nএখন, $\\frac{a^2 + b^2}{a^2 - b^2} = \\frac{(bk)^2 + b^2}{(bk)^2 - b^2} = \\frac{b^2(k^2 + 1)}{b^2(k^2 - 1)} = \\frac{k^2 + 1}{k^2 - 1}$\n\nএবং $\\frac{ac + bd}{ac - bd} = \\frac{bk \\cdot dk + bd}{bk \\cdot dk - bd} = \\frac{bd(k^2 + 1)}{bd(k^2 - 1)} = \\frac{k^2 + 1}{k^2 - 1}$\n\n$\\therefore \\frac{a^2 + b^2}{a^2 - b^2} = \\frac{ac + bd}{ac - bd}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫. সমাধান কর: $\\frac{1 - ax}{1 + ax} \\sqrt{\\frac{1 + bx}{1 - bx}} = 1$ যেখানে $0 < b < 2a < 2b$\n\nসমাধান: দেওয়া আছে, $\\frac{1 - ax}{1 + ax} \\sqrt{\\frac{1 + bx}{1 - bx}} = 1$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

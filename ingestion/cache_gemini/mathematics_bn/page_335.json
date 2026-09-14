@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 335,
+  "pdf_page_no": 340,
+  "chapter_no": 17,
+  "chapter_title": "পরিসংখ্যান",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. কোনো দ্রব্যের উৎপাদনে বিভিন্ন পর্যায়ে যে খরচসমূহ (শত টাকায়) হয় তা নিচের সারণিতে দেখানো হয়েছে। সংক্ষিপ্ত পদ্ধতিতে গড় খরচ নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| উৎপাদন খরচ | 2 - 6 | 6 - 10 | 10 - 14 | 14 - 18 | 18 - 22 | 22 - 26 | 26 - 30 | 30 - 34 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| গণসংখ্যা | 1 | 9 | 21 | 47 | 52 | 36 | 19 | 3 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান: সংক্ষিপ্ত পদ্ধতিতে অনুসৃত ধাপের আলোকে গড় নির্ণয়ের সারণি হবে নিম্নরূপ:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| শ্রেণি ব্যাপ্তি | মধ্যমান $x_i$ | গণসংখ্যা $f_i$ | ধাপ বিচ্যুতি $u_i = \\frac{x_i - a}{h}$ | গণসংখ্যা ধাপ বিচ্যুতি $f_i u_i$ |\n| :--- | :--- | :--- | :--- | :--- |\n| 2 - 6 | 4 | 1 | -4 | -4 |\n| 6 - 10 | 8 | 9 | -3 | -27 |\n| 10 - 14 | 12 | 21 | -2 | -42 |\n| 14 - 18 | 16 | 47 | -1 | -47 |\n| 18 - 22 | $20 \\leftarrow a$ | 52 | 0 | 0 |\n| 22 - 26 | 24 | 36 | 1 | 36 |\n| 26 - 30 | 28 | 19 | 2 | 38 |\n| 30 - 34 | 32 | 3 | 3 | 9 |\n| মোট | | 188 | | -37 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গড় $\\bar{x} = a + \\frac{\\sum_{i=1}^{n} f_i u_i}{n} \\times h = 20 + \\frac{-37}{188} \\times 4 = 20 - 0.79 = 19.21$\n\n$\\therefore$ উৎপাদনে আনুমানিক গড় খরচ 19 শত টাকা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গুরুত্ব যুক্ত উপাত্তের গড় নির্ণয় (Determination of Weighted Average): অনেক ক্ষেত্রে অনুসন্ধানাধীন পরিসংখ্যানের চলকের সাংখ্যিক মান $x_1, x_2, \\dots, x_n$ বিভিন্ন কারণ/গুরুত্ব/ভার দ্বারা প্রভাবিত হতে পারে। এ সকল ক্ষেত্রে উপাত্তের মান $x_1, x_2, \\dots, x_n$ এর সাথে এদের কারণ/গুরুত্ব/ভার $w_1, w_2, \\dots, w_n$ বিবেচনা করে গাণিতিক গড় নির্ণয় করতে হয়। যদি $n$ সংখ্যক উপাত্তের মান $x_1, x_2, \\dots, x_n$ হয় এবং এদের গুরুত্ব $w_1, w_2, \\dots, w_n$ হয়, তবে এদের গুরুত্ব প্রদত্ত গাণিতিক গড় হবে:\n\n$$\\bar{x}_w = \\frac{\\sum_{i=1}^{n} x_i w_i}{\\sum_{i=1}^{n} w_i}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯. কোনো বিশ্ববিদ্যালয়ের কয়েকটি বিভাগের স্নাতক সম্মান শ্রেণিতে পাশের হার ও শিক্ষার্থীর সংখ্যা নিচের সারণিতে উপস্থাপন করা হলো। উক্ত বিশ্ববিদ্যালয়ের ঐ কয়েকটি বিভাগের স্নাতক সম্মান শ্রেণিতে পাশের গড় হার নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| বিভাগের নাম | গণিত | পরিসংখ্যান | ইংরেজি | বাংলা | প্রাণিবিদ্যা | রাষ্ট্রবিজ্ঞান |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| পাশের হার (%) | 70 | 80 | 50 | 90 | 60 | 85 |\n| শিক্ষার্থীর সংখ্যা | 80 | 120 | 100 | 225 | 135 | 300 |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

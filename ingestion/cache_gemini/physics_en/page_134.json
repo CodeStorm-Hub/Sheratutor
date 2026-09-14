@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 134,
+  "pdf_page_no": 139,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "sometimes used also to fill the balloons, which is similarly dangerous!\n\nWe have often seen air balloons. Fires are lit under the balloons, which heat the air inside and make it lighter and this helps lift the balloon up.\n\nWe can determine whether the eggs are good or rotten by submerging them in water. If the eggs have gone bad their density becomes lower than that of water and they start to float.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.3",
+      "section_title": "Pressure in liquids",
+      "chunk_type": "theory",
+      "content_markdown": "Those who have jumped in water, they all know, after going into deep water a pressure is felt. (Though atmosphere applies a pressure on us but we don't feel it, because our body also applies the same pressure.) Exactly what amount of pressure will be felt after going in deep water or any other fluid is already been mentioned. The pressure on you will have to be calculated from the weight of the column of liquid on you. Let us suppose that you want to determine the pressure of the liquid at depth $h$. Imagine an area $A$ there (Figure 5.02). The weight of the column of liquid above this area will exert a force on $A$.\n\nVolume of the liquid over a surface area $A$ is $Ah$. If the density of the liquid is $\\rho$ then weight of this liquid or force is,\n\n$$F = mg = (Ah\\rho)g$$\n\nTherefore pressure,\n\n$$P = \\frac{F}{A} = \\frac{Ah\\rho g}{A} = h\\rho g$$\n\nTherefore, in a liquid of fixed density, pressure rises with the increase of depth. In case of water, approximately for a ten meter increase in depth, the pressure increases by an amount equal to the air pressure (atmospheric pressure), which is $101325\\text{ Pa}$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.02: Pressure is created on the lower surface due to the height of the liquid.",
+      "figure_no": "5.02",
+      "box_2d": [
+        551,
+        558,
+        824,
+        847
+      ],
+      "description": "A beaker containing liquid with a cylindrical column of height h and cross-sectional area A highlighted to demonstrate liquid pressure.",
+      "reading_order_anchor": "Pressure in liquids"
+    }
+  ]
+}

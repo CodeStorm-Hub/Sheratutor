@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 132,
+  "pdf_page_no": 137,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Density of the salted water: $\\rho = \\frac{1\\text{ kg} + 0.25\\text{ kg}}{1200 \\times 10^{-6}\\text{ m}^3} = 1.04 \\times 10^3\\text{ kg/m}^3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Density of Dead Sea water of Jordan is $1.24\\text{ kg/liter}$. What is the volume of $1\\text{ kg}$ water?\n\n**Answer:** $1\\text{ liter}$ is $1000\\text{ cc}$ or $10^{-3}\\text{ m}^3$.\n\nTherefore, density of Dead Sea water,\n$$\\rho = 1.24 \\frac{\\text{kg}}{\\text{liter}} = \\frac{1.24\\text{ kg}}{10^{-3}\\text{ m}^3} = 1.24 \\times 10^3\\text{ kg m}^{-3}$$\n\nTherefore, volume of $1\\text{ kg}$ water:\n$$V = \\frac{m}{\\rho} = \\frac{1\\text{ kg}}{1.24 \\times 10^3\\text{ kg m}^{-3}} = 0.81 \\times 10^{-3}\\text{ m}^3$$\nor $0.81\\text{ liter}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example:** What is the density of the nucleus? What is the mass of $1$ tea spoonful of nucleus?\n\nNucleus consists of neutrons and protons. The mass of one of them is $1.67 \\times 10^{-27}\\text{ kg}$. Their approximate radius is $1.25\\text{ fm} = 1.25 \\times 10^{-15}\\text{ m}$. Therefore, if we can calculate the density of neutron or proton, it can be considered as the density of the nucleus!\n\nDensity of nucleus, $\\rho = \\frac{m}{\\frac{4}{3}\\pi r^3} = \\frac{1.67 \\times 10^{-27}\\text{ kg}}{\\frac{4}{3}\\pi (1.25 \\times 10^{-15}\\text{ m})^3} = 0.204 \\times 10^{18}\\text{ kg/m}^3$\n\nYou need to guess how big this number is! One tea spoon contains approximately $1\\text{ cc}$ materials.\n\nTherefore, mass of $1\\text{ tea spoon}$ nucleus is:\n$$m = 0.204 \\times 10^{18}\\text{ kg/m}^3 \\times 10^{-6}\\text{ m}^3 = 2 \\times 10^{11}\\text{ kg}$$\n\nIt is roughly the collective mass of all the people of the world.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

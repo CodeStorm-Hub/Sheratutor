@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 189,
+  "pdf_page_no": 194,
+  "chapter_no": 9,
+  "chapter_title": "ত্রিকোণমিতিক অনুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "0° ও 90° কোণের ত্রিকোণমিতিক অনুপাত",
+      "chunk_type": "theory",
+      "content_markdown": "আমরা সমকোণী ত্রিভুজের সূক্ষ্মকোণ $\\theta$ এর জন্য ত্রিকোণমিতিক অনুপাতগুলো নির্ণয় করতে শিখেছি। এবার দেখি, কোণটি ক্রমশঃ ছোট করা হলে ত্রিকোণমিতির অনুপাতগুলো কীরূপ হয়। $\\theta$ কোণটি যতই ছোট হতে থাকে, বিপরীত বাহু $PN$ এর দৈর্ঘ্য ততই ছোট হয়। $P$ বিন্দুটি $N$ বিন্দুর নিকটতর হয় এবং অবশেষে $\\theta$ কোণটি যখন $0^\\circ$ এর খুব কাছে অবস্থিত হয়, $OP$ প্রায় $ON$ এর সাথে মিলে যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "যখন $\\theta$ কোণটি $0^\\circ$ এর খুব নিকটে আসে $PN$ রেখাংশের দৈর্ঘ্য শূন্যের কোঠায় নেমে আসে এবং এক্ষেত্রে $\\sin \\theta = \\frac{PN}{OP}$ এর মান প্রায় শূন্য। একই সময়, $\\theta$ কোণটি $0^\\circ$ এর খুব কাছে এলে $OP$ এর দৈর্ঘ্য প্রায় $ON$ এর দৈর্ঘ্যের সমান হয় এবং $\\cos \\theta = \\frac{ON}{OP}$ এর মান প্রায় $1$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ত্রিকোণমিতিতে আলোচনার সুবিধার্থে $0^\\circ$ কোণের অবতারণা করা হয় এবং প্রমিত অবস্থানে $0^\\circ$ কোণের প্রান্তীয় বাহু ও আদি বাহু একই রশ্মি ধরা হয়। সুতরাং পূর্বের আলোচনার সঙ্গে সামঞ্জস্য রেখে বলা হয় যে, $\\cos 0^\\circ = 1, \\sin 0^\\circ = 0$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\theta$ সূক্ষ্মকোণ হলে আমরা দেখেছি\n$$\\tan \\theta = \\frac{\\sin \\theta}{\\cos \\theta}, \\cot \\theta = \\frac{\\cos \\theta}{\\sin \\theta}$$\n$$\\sec \\theta = \\frac{1}{\\cos \\theta}, \\text{cosec } \\theta = \\frac{1}{\\sin \\theta}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$0^\\circ$ কোণের জন্য সম্ভাব্য ক্ষেত্রে এ সম্পর্কগুলো যাতে বজায় থাকে সে দিকে লক্ষ রেখে সংজ্ঞায়িত করা হয়।\n$$\\tan 0^\\circ = \\frac{\\sin 0^\\circ}{\\cos 0^\\circ} = \\frac{0}{1} = 0$$\n$$\\sec 0^\\circ = \\frac{1}{\\cos 0^\\circ} = \\frac{1}{1} = 1$$\n$0$ দ্বারা ভাগ করা যায় না বিধায় $\\text{cosec } 0^\\circ$ ও $\\cot 0^\\circ$ সংজ্ঞায়িত করা যায় না।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৯.০৫: কোণ ছোট করার প্রক্রিয়া",
+      "figure_no": "9.05",
+      "box_2d": [
+        85,
+        685,
+        245,
+        850
+      ],
+      "description": "একটি সমকোণী ত্রিভুজ যেখানে কোণ থিটা ছোট করা হচ্ছে",
+      "reading_order_anchor": "0° ও 90° কোণের ত্রিকোণমিতিক অনুপাত"
+    },
+    {
+      "caption": "চিত্র ৯.০৬: কোণ ছোট করার প্রক্রিয়া",
+      "figure_no": "9.06",
+      "box_2d": [
+        275,
+        145,
+        435,
+        855
+      ],
+      "description": "পাঁচটি সমকোণী ত্রিভুজের ক্রম যেখানে কোণ থিটা ক্রমশ ছোট হচ্ছে",
+      "reading_order_anchor": "0° ও 90° কোণের ত্রিকোণমিতিক অনুপাত"
+    }
+  ]
+}

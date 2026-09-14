@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 206,
+  "pdf_page_no": 211,
+  "chapter_no": 9,
+  "chapter_title": "Acid-Base Balance",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We use various kinds of compounds in a chemical laboratory. Acids, bases and salts are most frequently used. As chemistry learners, you also need to learn about acid, base and salt. We mostly use diluted acids and bases instead of concentrated acids or bases in our laboratories. We take in acids, bases and salts with our food which is important for our bodies. Salt is formed by neutralizing acid with base or vice versa. We can determine the acidity from various experiments in the laboratory. Litmus test and pH value test are the most commonly used. These necessary acids, bases and salts are also harmful to some extent to our environment. We will discuss about all these in this chapter.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Most of fruits slightly acidic.",
+      "figure_no": "9.01",
+      "box_2d": [
+        244,
+        118,
+        618,
+        884
+      ],
+      "description": "Assortment of fresh cut fruits such as oranges, pomegranates, and grapefruits, demonstrating that most fruits are slightly acidic.",
+      "reading_order_anchor": "We use various kinds of compounds in a chemical laboratory."
+    }
+  ]
+}

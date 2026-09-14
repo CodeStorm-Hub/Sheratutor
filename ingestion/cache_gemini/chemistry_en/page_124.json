@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 124,
+  "pdf_page_no": 129,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, we'll divide the quotients by the small quotient above:\n\n$$H = \\frac{11.11}{5.55} = 2$$\n\n$$O = \\frac{5.55}{5.55} = 1$$\n\nNow, we'll write the empirical formula of the compound: $\\text{H}_2\\text{O}_1 = \\text{H}_2\\text{O}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "An experiment showed that a compound consists of 3 gram carbon atom and 8 gram oxygen atom. Determine the empirical formula of the compound.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "6.2.2",
+      "section_title": "Determining the Molecular Formula of a Compound from Percent Composition",
+      "chunk_type": "theory",
+      "content_markdown": "If we want to determine the molecular formula of a compound from its percent composition, we need to determine the empirical formula first. If the total mass of the empirical formula of that compound is equal to its molecular mass then the empirical formula itself is also the molecular formula. But when the empirical formula and molecular mass of the compound varies from each other, then we need to find out how many times greater the molecular mass is from the empirical formula.\n\nIf molecular mass is $n$ times greater than the empirical formula, then\n\n$$\\text{Molecular Formula} = (\\text{Empirical Formula})_n$$\n\n$$\\text{Here, } n = \\frac{\\text{Molecular Mass of Compound}}{\\text{Mass of Empirical Formula}}$$\n\nSuppose, percent composition of a compound is $\\text{C} = 92.31\\%$, $\\text{H} = 7.69\\%$. The molecular mass of the compound is $78$. Determine its molecular formula.\n\nLet's divide the percent composition of elements with their respective atomic masses:\n\n$$\\text{C} = \\frac{92.31}{12} = 7.69$$\n\n$$\\text{H} = \\frac{7.69}{1} = 7.69$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

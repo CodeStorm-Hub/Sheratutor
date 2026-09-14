@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 97,
+  "pdf_page_no": 102,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Creative questions\n\n1. Faruque pulls a box of mass $4\\text{ kg}$ on the floor with a constant force. The frictional force between the box and the floor is $1.5\\text{ N}$. While pulling, the box accelerates at $0.8\\text{ ms}^{-2}$. Then the box is pulled with the same force on a frictionless floor.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is a balanced force?\n(b) Why is the frictional force generated?\n(c) What is the force applied to the box in the first case?\n(d) What is the change in acceleration in frictional and frictionless floors? Explain mathematically.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. An object of mass $5\\text{ kg}$ moving in linear motion with a velocity of $5\\text{ m/s}$ hits another object and changes the momentum of the second object by an amount $4\\text{ kg m/s}$. The masses of both objects remain unchanged after the collision.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Which property of matter is a measure of inertia?\n(b) What do you mean by the statement 'The applied force is proportional to the change of momentum'?\n(c) What is the final velocity of the first object?\n(d) When there is no change in momentum, then comment about the second object by mathematical analysis.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

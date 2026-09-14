@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 351,
+  "pdf_page_no": 356,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. What is the length of the diagonal of the rectangle $ABCD$ in cm?\n1) 13 2) 14 3) 14.4 4) 15",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. What is the area of the triangle $ADF$ in square cm?\n1) 16 2) 32 3) 64 4) 128",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. What is the circumference of the half circle $AGB$ in cm?\n1) 18 2) 18.85 (approx.) 3) 37.7 (approx.) 4) 96",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. The length, width and height of a rectangular solid are 16 metre, 12 metre and 4.5 metre respectively. Determine the area of its whole surface, length of the diagonal and the volume.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. The ratios of the length, width and height of a rectangular solid are $21 : 16 : 12$ and the length of diagonal is 87 cm. Determine the area of the whole surface of the solid.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. A rectangular solid is standing on a base of area 48 square metre. Its height is 3 metre and diagonal is 13 metre. Determine the length and width of the rectangular solid.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "11. The outer measurements of a rectangular wooden box are 8 cm., 6 cm. and 4 cm., respectively and the area of the whole inner surface is $88 cm^2$. Find the thickness of the wood of the box.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "12. The length of a wall is 25 metre, height is 6 metre and breadth is 30 cm. The length, breadth and height of a brick is 10 cm, 5 cm and 3 cm respectively. Determine the number of bricks required to build the wall with the bricks.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "13. The area of the surface of a cube is 2400 square cm. Determine the diagonal of the cube.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "14. The radius of the base of a cylinder with height 12 cm, is 5 cm. Find the area of the whole surface and the volume of the cylinder.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "15. The area of a curved surface of a right circular cylinder is 100 square cm. and its volume is 150 cubic cm. Find the height and the radius of the cylinder.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "16. The area of the curved surface of a right circular cylinder is 4400 square cm. If its height is 30 cm., find the area of its whole surface.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

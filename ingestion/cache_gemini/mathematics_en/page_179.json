@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 179,
+  "pdf_page_no": 184,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "hypotenuse $PO = \\text{hypotenuse } PO$ and $OA = OB$ [$\\because$ Radius of the same circle]\n$\\therefore \\triangle PAO \\cong \\triangle PBO$ [Hypotenuse-side unanimity of right angled triangle]\n$\\therefore PA = PB$ (Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Remarks:\n1. If two circles touch each other externally, all the points of one excepting the point of contact will lie outside the other circle.\n2. If two circles touch each other internally, all the points of the smaller circle excepting the point of contact lie inside the greater circle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 27.** If two circles touch each other externally, the point of contact of the tangent and the centres are collinear.\n\nLet the two circles with centres at $A$ and $B$ touch each other externally at $O$. It is required to prove that the points $A, O, B$ are collinear.\n\n**Drawing:** Since the given circles touch each other at $O$, they have a common tangent at the point $O$. Now draw the common tangent $POQ$ at $O$ and join $O, A$ and $O, B$.\n\n**Proof:**\nIn the circles with the centre $A$, $OA$ is the radius through the point of contact of the tangent and $POQ$ is the tangent.\nTherefore $\\angle POA = 1$ right angle. Similarly, $\\angle POB = 1$ right angle.\n$\\angle POA + \\angle POB = 1$ right angle $+ 1$ right angle $= 2$ right angles\nOr, $\\angle AOB = 2$ right angles\ni.e. $\\angle AOB$ is a straight angle.\n$\\therefore A, O, B$ are collinear. (Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Corollary 11.** If two circles touch each other externally, the distance between their centres is equal to the sum of their radii.\n\n**Corollary 12.** If two circles touch each other internally, the distance between their centres is equal to the difference of their radii.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Two circles touching each other externally",
+      "figure_no": "8.01",
+      "box_2d": [
+        456,
+        645,
+        560,
+        872
+      ],
+      "description": "Two circles with centers A and B touching externally at point O, with a common tangent line POQ passing through O.",
+      "reading_order_anchor": "Theorem 27."
+    }
+  ]
+}

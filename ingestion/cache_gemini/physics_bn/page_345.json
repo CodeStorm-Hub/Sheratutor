@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 345,
+  "pdf_page_no": 350,
+  "chapter_no": 12,
+  "chapter_title": "বিদ্যুতের চৌম্বক ক্রিয়া",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. তারকুণ্ডলীর পাকের সংখ্যা বাড়ালে আবিষ্ট তড়িৎ প্রবাহের কী ঘটবে?\n\n(ক) তড়িৎপ্রবাহ কমে যাবে\n(খ) তড়িৎপ্রবাহ বেড়ে যাবে\n(গ) তড়িৎপ্রবাহের মান শূন্য হবে\n(ঘ) তড়িৎপ্রবাহের মান সমান হবে",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "সৃজনশীল প্রশ্ন\n\n1. চিত্র 12.16 দেখে নিচের প্রশ্নগুলোর উত্তর দাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) A চিহ্নিত বস্তুটির নাম কী?\n(খ) যন্ত্রটি যে নীতি বা ঘটনার উপর তৈরি তা ব্যাখ্যা করো।\n(গ) এই যন্ত্রের মুখ্য কুণ্ডলীতে প্রবাহমাত্রা নির্ণয় করো।\n(ঘ) উপাত্তের আলোকে যন্ত্রটির ক্রিয়া গাণিতিকভাবে ব্যাখ্যা করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. একটি লম্বা সোজা তারকে একটি বড় কাগজের টুকরার মধ্য দিয়ে লম্বভাবে প্রবেশ করিয়ে এর মধ্য দিয়ে $1.5$ ভোল্টের পেন্সিল ব্যাটারির সাহায্যে বিদ্যুৎ প্রবাহিত করা হলো এবং কাগজের উপর কিছু লোহার গুঁড়া ছড়িয়ে দেওয়া হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) তড়িৎপ্রবাহের চৌম্বক ক্রিয়া কী?\n(খ) কাগজটির উপর লোহার গুঁড়া কীভাবে সজ্জিত হবে?\n(গ) তারটির গঠনে কী পরিবর্তন আনলে এর দ্বারা তৈরি চৌম্বকক্ষেত্রের প্রাবল্য বাড়বে ব্যাখ্যা করো।\n(ঘ) তারটিকে একটি লোহার তারকাঁটার উপর পেঁচিয়ে তারকাঁটার এক মাথা লোহার গুঁড়ার কাছাকাছি নিলে যা ঘটবে তা বিশ্লেষণ করো?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 12.16",
+      "figure_no": "12.16",
+      "box_2d": [
+        307,
+        497,
+        467,
+        873
+      ],
+      "description": "A schematic diagram of a transformer showing primary and secondary coils, input voltage of 240V, and output voltage of 8V with 0.9A current.",
+      "reading_order_anchor": "1. 12.16 চিত্রটি দেখে নিচের প্রশ্নগুলোর উত্তর দাও।"
+    }
+  ]
+}

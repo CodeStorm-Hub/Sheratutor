@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 196,
+  "pdf_page_no": 201,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The total cell reaction stands:\n\n$$\\text{Zn} + 2\\text{NH}_4^+ + 2\\text{MnO}_2 \\longrightarrow \\text{Zn}^{2+} + 2\\text{NH}_3 + \\text{Mn}_2\\text{O}_3 + \\text{H}_2\\text{O}$$\n\nWhen the anode and cathode edges are connected to a bulb or any electronic item, the flow of electricity begins or electricity is generated. Therefore, wherever electricity is required, if we connect the dry cell there, the above reaction will occur and we'll get electricity.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1",
+      "section_title": "Application of Electrochemical Cells",
+      "chunk_type": "theory",
+      "content_markdown": "Coating a metal on another metal has been there in practice from the ancient age. Now that has increased hugely. Electrolysis is used for extraction of metals, production of valuable chemicals, electricity generation, purification of substance etc. Hydrogen fuel cell is used for electricity generation. Hydrogen molecule is oxidized at its anode and oxygen molecule is reduced at the cathode to produce water. As a result, in the cell electron is conducted from anode to cathode. This electricity can be used to run cars even. All mobile phones, computers, calculators etc. all over the world use batteries.\n\nBlood sugar in the diabetic patients is tested and determined by a machine that uses electrolysis mechanism. The figure above demonstrates that. The part on the left hand has small thin anode and cathode in it. There is a small channel in between them. When blood is inserted in the channel that forms a complete cell. Indeed, the source in the machine would supply electricity that oxidizes glucose",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.11: Machine to test BloodSugar.",
+      "figure_no": "8.11",
+      "box_2d": [
+        423,
+        122,
+        678,
+        452
+      ],
+      "description": "A person holding a blood sugar testing machine with a test strip inserted.",
+      "reading_order_anchor": "Application of Electrochemical Cells"
+    }
+  ]
+}

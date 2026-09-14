@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 314,
+  "pdf_page_no": 319,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "What may be the voltage at E, how can it be determined, many of us may be confused about this. Actually the case is very simple. When current flows through a resistance, the voltage changes. There is no chance of current flow in this part BE of the circuit. It can go nowhere after reaching E starting from B. So, the voltage at B and E (and any point between them) does not change, the voltage at B remains the same at E.\n\nTo determine the voltages of B and E, the current has to be determined. If current is $I$, then\n$$I = \\frac{V}{R} = \\frac{6\\text{ V}}{5\\,\\Omega + 10\\,\\Omega + 15\\,\\Omega} = \\frac{1}{5}\\text{ A}$$\n\nSo, voltage difference from A to B,\n$$V_1 = R_1 I = 5\\,\\Omega \\times \\frac{1}{5}\\text{ A} = 1\\text{ V}$$\n\nSo, the voltage at A is $6\\text{ V}$ and $1\\text{ V}$ less at B so, the voltage at B is,\n$$6\\text{ V} - V_1 = 6\\text{ V} - 1\\text{ V} = 5\\text{ V}$$\n\nAs the voltage of point B is $5\\text{ V}$, then the voltage of point E is also $5\\text{ V}$. Similarly,\n$$V_2 = R_2 I = 10\\,\\Omega \\times \\frac{1}{5}\\text{ A} = 2\\text{ V}$$\n\nThe voltage at C is $2\\text{ V}$ less than voltage of point B. So, voltage of point C is,\n$$5\\text{ V} - 2\\text{ V} = 3\\text{ V}$$\n\nWe have said earlier that the voltage of point D is zero. This can also be verified. The voltage of point D is less than point C by $V_3$.\n\n$$V_3 = R_3 I = 15\\,\\Omega \\times \\frac{1}{5}\\text{ A} = 3\\text{ V}$$\n\nSo, voltage of point $D = 3\\text{ V} - 3\\text{ V} = 0$, as mentioned earlier.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Determine the value of $I_1$ and $I_2$ in the circuit shown in figure 11.10.\n\n**Solution:** Voltage at points A, B and C is $2\\text{ V}$. Voltage at points D, E, F is $0\\text{ volt}$. So, the current through the resistor BE,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 11.10: A circuit where two resistors are connected in parallel.",
+      "figure_no": "11.10",
+      "box_2d": [
+        673,
+        489,
+        839,
+        878
+      ],
+      "description": "Circuit schematic showing a DC voltage source of 2V connected to parallel branches with resistors R1 and R2.",
+      "reading_order_anchor": "Question: Determine the value of I1 and I2 in the circuit shown in figure 11.10."
+    }
+  ]
+}

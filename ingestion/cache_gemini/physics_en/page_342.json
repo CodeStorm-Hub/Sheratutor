@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 342,
+  "pdf_page_no": 347,
+  "chapter_no": 12,
+  "chapter_title": "Magnetic Effect of Current",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "amount of $VI$ that is applied in the primary coil is just equal to the amount of the $VI$ that we get back from the secondary coil. Therefore, if the voltage is increased by ten times in the secondary coil, then the current in the secondary coil will be reduced by ten times.\n\nFor your understanding, a rectangular core is shown. Practical transformers are constructed a bit differently, the secondary coil is winded on the primary coil and the core is also slightly different.\n\nIf the number of turns in the primary coil is $n_p$ and that of the secondary coil is $n_s$, if AC voltage $V_p$ is applied in the primary coil, then the AC voltage $V_s$ that will be found in the secondary coil depends on number of turns.\n\n$$V_s \\propto n_s, V_p \\propto n_p \\quad \\text{so}, \\frac{V_p}{n_p} = \\frac{V_s}{n_s} = \\text{constant} \\quad \\text{or}, V_s = \\left(\\frac{n_s}{n_p}\\right)V_p$$\n\nIf $I_p$ current flows through the primary coil, then the current $I_s$ flowing in the secondary coil is found from conservation of electrical power.\n\n$$\\text{hence}, V_p I_p = V_s I_s \\quad \\text{so}, I_s = \\left(\\frac{V_p}{V_s}\\right) I_p = \\left(\\frac{n_p}{n_s}\\right) I_s$$\n\nThe transformer has a greater number of turns in the secondary coil than the primary coil and due to this, the AC voltage applied in the primary coil increases in the secondary coil is called a step-up transformer. For transmission of electricity, a step up transformer is used to increase the voltage by many times. The transformer which has less turns in the secondary coil than the primary coil and due to this, the AC voltage applied in the primary coil decreases in the secondary coil. This is called a step down transformer.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "### Example\n\n**Question:** The number of turns in the primary coil of a transformer is 100 and the number of turns in the secondary coil is 1000. 10 V DC is applied in the primary coil. What is the voltage in the secondary coil?\n\n**Answer:** Zero. Transformer does not work with DC voltage.\n\n**Question:** The number of turns in the primary coil of a transformer is 100 and the number of turns in the secondary coil is 1000. 12 V AC is applied in the primary coil. What is the voltage in the secondary coil?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

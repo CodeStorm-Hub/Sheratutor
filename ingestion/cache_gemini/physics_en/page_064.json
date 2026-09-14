@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 64,
+  "pdf_page_no": 69,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "body move backwards. Since this inertia is due to the tendency of rest, this is called inertia of rest.\n\nWhen people get down from moving bus, train etc we see they fall down due to the inertia of motion. The whole body of the person in a moving train or bus is in motion. When his or her leg touches the ground, the lower part of his/her body comes to rest, the upper part of the body keeps moving forward due to the inertia of motion. So the person falls down.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Keep a card on a glass. Place a metal coin on the card and flip the card and displace it. The coin will fall into the glass.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "You definitely observed it that the object with higher mass cannot be displaced by higher amount by the application of an equal amount of force. But a body with less mass can be displaced easily. Or otherwise we can say, if the mass is increased then inertia is increased as well.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** The two graphs illustrate the values of position and velocity with time in figure 3.01, explain where and for what period force was applied?\n\n**Answer:** Both the graphs are identical to look, but they contain totally different information.\n\n(i) In the first graph, from $0$ to $t_1$ or from $t_2$ to the end, there is no change in position in these two time intervals, this means there is no velocity, therefore there is no question of change of velocity. This means definitely no force is acting in these two time intervals. From time $t_1$ to $t_2$, there is a change in position, but the change is at the same rate (since the line is a straight line), that means the",
+      "activity_tag": "Example"
+    }
+  ],
+  "figures": []
+}

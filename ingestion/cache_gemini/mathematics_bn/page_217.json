@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 217,
+  "pdf_page_no": 222,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. $x = \\frac{4ab}{a + b}$ হলে, দেখাও যে, $\\frac{x + 2a}{x - 2a} + \\frac{x + 2b}{x - 2b} = 2, a \\neq b$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. $x = \\frac{\\sqrt[3]{m + 1} + \\sqrt[3]{m - 1}}{\\sqrt[3]{m + 1} - \\sqrt[3]{m - 1}}$ হলে, প্রমাণ কর যে, $x^3 - 3mx^2 + 3x - m = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $x = \\frac{\\sqrt{2a + 3b} + \\sqrt{2a - 3b}}{\\sqrt{2a + 3b} - \\sqrt{2a - 3b}}$ হলে, দেখাও যে, $3bx^2 - 4ax + 3b = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. $\\frac{a^2 + b^2}{b^2 + c^2} = \\frac{(a + b)^2}{(b + c)^2}$ হলে, দেখাও যে, $a, b, c$ ক্রমিক সমানুপাতী।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. $\\frac{x}{b + c} = \\frac{y}{c + a} = \\frac{z}{a + b}$ হলে, প্রমাণ কর যে, $\\frac{x}{y + z - x} = \\frac{y}{z + x - y} = \\frac{z}{x + y - z}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. $\\frac{bz - cy}{a} = \\frac{cx - az}{b} = \\frac{ay - bx}{c}$ হলে, প্রমাণ কর যে, $\\frac{x}{a} = \\frac{y}{b} = \\frac{z}{c}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. $\\frac{a + b - c}{a + b} = \\frac{b + c - a}{b + c} = \\frac{c + a - b}{c + a}$ এবং $a + b + c \\neq 0$ হলে, প্রমাণ কর যে, $a = b = c$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৭. $\\frac{x}{xa + yb + zc} = \\frac{y}{ya + zb + xc} = \\frac{z}{za + xb + yc}$ এবং $x + y + z \\neq 0$ হলে, দেখাও যে, প্রতিটি অনুপাত $= \\frac{1}{a + b + c}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. যদি $(a + b + c)p = (b + c - a)q = (c + a - b)r = (a + b - c)s$ হয়, তবে প্রমাণ কর যে, $\\frac{1}{q} + \\frac{1}{r} + \\frac{1}{s} = \\frac{1}{p}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৯. যদি $lx = my = nz$ হয়, তবে দেখাও যে, $\\frac{x^2}{yz} + \\frac{y^2}{zx} + \\frac{z^2}{xy} = \\frac{mn}{l^2} + \\frac{nl}{m^2} + \\frac{lm}{n^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২০. যদি $\\frac{p}{q} = \\frac{a^2}{b^2}$ এবং $\\frac{a}{b} = \\frac{\\sqrt{a + q}}{\\sqrt{a - q}}$ হয়, তবে দেখাও যে, $\\frac{p + q}{a} = \\frac{p - q}{q}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.1",
+      "section_title": "ধারাবাহিক অনুপাত (Continued Ratio)",
+      "chunk_type": "theory",
+      "content_markdown": "মনে কর, রনির আয় 1000 টাকা, সনির আয় 1500 টাকা এবং সামির আয় 2500 টাকা। এখানে, রনির আয় : সনির আয় = 1000 : 1500 = 2 : 3; সনির আয় : সামির আয় = 1500 : 2500 = 3 : 5। দুইটি অনুপাত যদি ক : খ এবং খ : গ আকারের হয়, তাহলে এদেরকে সাধারণত ক : খ : গ আকারে লেখা যায়। একে ধারাবাহিক অনুপাত বলা হয়। যেকোনো দুই বা ততোধিক অনুপাতকে এই আকারে",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

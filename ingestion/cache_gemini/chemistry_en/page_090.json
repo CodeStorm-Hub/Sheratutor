@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 90,
+  "pdf_page_no": 95,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$CH_4$, which the molecular formula of methane is written in structural form:\n$$\\begin{array}{c}\n\\text{H} \\\\\n\\vert \\\\\n\\text{H}-\\text{C}-\\text{H} \\\\\n\\vert \\\\\n\\text{H}\n\\end{array}$$\nEach line between carbon-carbon and carbon-hydrogen above is a bond. These are covalent bonds, you will learn about this bond in this chapter. The structural formula tells us how many atoms of which element are there in a compound and how they bonded with each other as well.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.6",
+      "section_title": "Octet and Duet Rules",
+      "chunk_type": "theory",
+      "content_markdown": "All elements tend to make the electronic configuration of inert gases at their outermost energy level. All inert gases other than helium have 8 electrons at their outermost energy level. When constituting a molecule, an element obtains the electronic configuration of inert gases, holding electrons by means of donating, accepting or sharing electrons. This is known as the octet rule. The central atom $\\text{C}$ of $\\text{CH}_4$ molecule has 8 electrons in its outermost energy level. Four of these eight electrons are carbon's own while the rest four comes from hydrogen (figure 5.02).\n\nDue to some limitations of the octet rule, scientists have presented a new rule, which is called the \"Duet rule\". This new rule is more modern than the octet rule and it has better utility too. Very much like the inert gases having 2 or 8 electrons at their outermost energy level, when constituting a molecule, atoms will have one or more pairs of electrons at their outermost energy level.\n\nThis is the duet rule. This means, any molecule's atom will bear one or more pairs of electrons at their outermost energy level.\n\nThe $\\text{Be}$ atom at the centre of $\\text{BeCl}_2$ has 2 pairs or 4 electrons at its outermost energy level. $\\text{B}$ atom at the centre of $\\text{BF}_3$ has 3 pairs or 6 electrons at its outer",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.02: octed rule in Methane molecule.",
+      "figure_no": "5.02",
+      "box_2d": [
+        565,
+        543,
+        803,
+        852
+      ],
+      "description": "Schematic diagram of the methane molecule showing the octet rule with carbon at the center and four surrounding hydrogen atoms sharing electron pairs.",
+      "reading_order_anchor": "5.6 Octet and Duet Rules"
+    }
+  ]
+}

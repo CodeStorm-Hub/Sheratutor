@@ -1,0 +1,74 @@
+{
+  "printed_page_no": 134,
+  "pdf_page_no": 139,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "Obtuse triangle",
+      "chunk_type": "theory",
+      "content_markdown": "A triangle having an angle obtuse is an obtuse angled triangle. In the figure, the $\\angle GKH$ is an obtuse angle; the two other angles $\\angle GHK$ and $\\angle HGK$ are acute. $\\triangle GHK$ is an obtuse angled triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Interior and Exterior Angles",
+      "chunk_type": "theory",
+      "content_markdown": "If a side of a triangle is produced, a new angle is formed. This angle is known as exterior angle. Except the angle adjacent to the exterior angle, the two others angles of the triangle are known as opposite interior angles.\n\nIn the adjacent figure, the side $BC$ of $\\triangle ABC$ is extended to $D$. The angle $\\angle ACD$ is an exterior angle of the triangle. $\\angle ABC$, $\\angle BAC$ and $\\angle ACB$ are three interior angles. $\\angle ACB$ is the adjacent interior angle of the exterior angle $\\angle ACD$. Each of $\\angle ABC$ and $\\angle BAC$ is an opposite interior angle with respect to $\\angle ACD$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3",
+      "section_title": "Theorem 4",
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 4. The sum of the three angles of a triangle is equal to two right angles.\n\nLet $ABC$ be a triangle. In the triangle $\\angle BAC + \\angle ABC + \\angle ACB = 2$ right angles.\n\nDraw $CE$ from point $C$ so that $AB \\parallel CE$. Now $\\angle ABC = \\angle ECD$ [corresponding angles] and $\\angle BAC = \\angle ACE$ [alternate angles]\n\n$\\therefore \\angle ABC + \\angle BAC = \\angle ECD + \\angle ACE = \\angle ACD$\n\n$\\angle ABC + \\angle BAC + \\angle ACB = \\angle ACD + \\angle ACB = 2$ right angles.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Corollary 2. If a side of a triangle is produced, then exterior angle so formed is equal to the sum of the two opposite interior angles.\n\nCorollary 3. If a side of a triangle is produced, the exterior angle so formed is greater than each of the two interior opposite angles.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Obtuse triangle",
+      "figure_no": "6.01",
+      "box_2d": [
+        85,
+        667,
+        175,
+        850
+      ],
+      "description": "An obtuse angled triangle GHK with angle K being obtuse.",
+      "reading_order_anchor": "Obtuse triangle"
+    },
+    {
+      "caption": "Fig 6.02: Interior and exterior angles",
+      "figure_no": "6.02",
+      "box_2d": [
+        315,
+        640,
+        415,
+        885
+      ],
+      "description": "Triangle ABC with side BC extended to D, showing exterior angle ACD.",
+      "reading_order_anchor": "Interior and Exterior Angles"
+    },
+    {
+      "caption": "Fig 6.03: Proof of sum of angles in a triangle",
+      "figure_no": "6.03",
+      "box_2d": [
+        565,
+        190,
+        650,
+        675
+      ],
+      "description": "Two diagrams showing a triangle ABC and the construction of a parallel line CE to prove the sum of angles.",
+      "reading_order_anchor": "Theorem 4"
+    }
+  ]
+}

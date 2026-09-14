@@ -1,0 +1,97 @@
+{
+  "printed_page_no": 34,
+  "pdf_page_no": 39,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "theory",
+      "content_markdown": "### Creative Questions",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. \na. What is diffusion?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "When you open the gas cylinder used for cooking, which action takes place first- diffusion or effusion? If you increase heat, which of the matters in the stem will vaporize first? Explain.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. When you open the gas cylinder used for cooking, which action takes place first- diffusion or effusion?\nc. If you increase heat, which of the matters in the stem will vaporize first? Explain.\nd. Can you separate the elements of the two mixtures using the same process? Show reasons for your answer.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. \na. What is effusion?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Why are melting point and boiling point different for the same matter? What kind of change is the process of the stem? Explain.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. Why are melting point and boiling point different for the same matter?\nc. What kind of change is the process of the stem? Explain.\nd. Why white smoke is produced at the end A of the tube? Explain with logic.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. A beaker containing some ice cubes is slowly heated. With the passage of time, the changes in the state of ice are observed.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is distillation?\nb. What do you understand by diffusion and effusion?\nc. Present the action of the stem on a graph sheet.\nd. What will happen if you replace ice of the stem with naphthalene? Analyze.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Mixture of Iodine and edible Salt (A) and Sand and Glucose (B)",
+      "figure_no": "2.01",
+      "box_2d": [
+        190,
+        467,
+        407,
+        882
+      ],
+      "description": "Two beakers labeled A and B containing powder mixtures: beaker A contains a mixture of iodine and edible salt with a conical pile at the bottom, and beaker B contains a mixture of sand and glucose with a similar pile.",
+      "reading_order_anchor": "1. a. What is diffusion?"
+    },
+    {
+      "caption": "Fig 2.02: Diffusion tube experiment with HCl and NH4OH solutions",
+      "figure_no": "2.02",
+      "box_2d": [
+        486,
+        462,
+        622,
+        874
+      ],
+      "description": "A horizontal glass tube setup showing cotton soaked with HCl solution at end A (40 cm) and cotton soaked with NH4OH solution at end B (60 cm), with white smoke of NH4Cl formed inside the tube.",
+      "reading_order_anchor": "2. a. What is effusion?"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 236,
+  "pdf_page_no": 241,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 14. If the sides of a square increase by 10%, how much will the area be increased in percentage?\n\nSolution: Let, each side of the square be $a$ metre. Therefore, the area of the square be $a^2$ square metre. If the side of the square increases by 10%, each side will be $(a + a \\text{ of } 10\\%)$ metre, or $1.10a$ metre. In this case, the area of the square will be $(1.10a)^2$ square metre, or $1.21a^2$ square metre. Thus the area increases by $(1.21a^2 - a^2) = 0.21a^2$ square metre.\n\n$\\therefore$ The percentage of increment of the area will be $\\frac{0.21a^2}{a^2} \\times 100\\% = 21\\%$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work:\n\n1) There are 35 male and 25 female students in your class. The ratio of rice and pulse given by each of the male and female students for making Khicuri in a picnic $3 : 1$ and $5 : 2$, respectively. Find the ratio of total rice and total pulse.\n\n2) The amount of pulse, mustard and paddy produced in a farmer's farm are 75 kg, 100 kg and 525 kg, respectively. The grains are sold at price of 100, 120 and 30 taka respectively. After selling all the grains, calculate the ratio of income from the individual grain.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "11.1",
+      "section_title": "Proportional Division",
+      "chunk_type": "theory",
+      "content_markdown": "Division of a quantity into fixed ratio is called proportional division. If $S$ is to be divided in a given ratio $a : b : c : d$, dividing $S$ by $a + b + c + d$, the parts $a, b, c$ and $d$ need to be taken. Therefore,\n\n1st part $= S \\text{ of } \\frac{a}{a + b + c + d} = \\frac{Sa}{a + b + c + d}$\n\n2nd part $= S \\text{ of } \\frac{b}{a + b + c + d} = \\frac{Sb}{a + b + c + d}$\n\n3rd part $= S \\text{ of } \\frac{c}{a + b + c + d} = \\frac{Sc}{a + b + c + d}$\n\n4th part $= S \\text{ of } \\frac{d}{a + b + c + d} = \\frac{Sd}{a + b + c + d}$\n\nIn this way, any quantity may be divided into any fixed ratio.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

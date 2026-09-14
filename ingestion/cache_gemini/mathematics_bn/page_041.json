@@ -1,0 +1,107 @@
+{
+  "printed_page_no": 41,
+  "pdf_page_no": 46,
+  "chapter_no": 2,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$A = \\{6, 7, 8, 9, 10, 11, 12, 13\\}$ হলে, নিচের ৭ - ৯ প্রশ্নগুলোর উত্তর দাও:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $A$ সেটের সঠিক প্রকাশ কোনটি?\nক) $\\{x \\in N : 6 < x < 13\\}$ খ) $\\{x \\in N : 6 \\le x < 13\\}$\nগ) $\\{x \\in N : 6 \\le x \\le 13\\}$ ঘ) $\\{x \\in N : 6 < x \\le 13\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. $A$ সেটের মৌলিক সংখ্যাগুলোর সেট কোনটি?\nক) $\\{6, 8, 10, 12\\}$ খ) $\\{7, 9, 11, 13\\}$ গ) $\\{7, 11, 13\\}$ ঘ) $\\{9, 12\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "৯",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. $A$ সেটের ৩ এর গুণিতকগুলোর সেট কোনটি?\nক) $\\{6, 9\\}$ খ) $\\{6, 11\\}$ গ) $\\{9, 12\\}$ ঘ) $\\{6, 9, 12\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "১০",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. যদি $A = \\{3, 4\\}, B = \\{2, 4\\}, x \\in A$ এবং $y \\in B$ হয়, তবে $A$ ও $B$ এর উপাদানগুলোর মধ্যে $x > y$ সম্পর্ক বিবেচনা করে অন্বয়টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১১",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. যদি $C = \\{2, 5\\}, D = \\{4, 6, 7\\}, x \\in C$ এবং $y \\in D$ হয়, তবে $C$ ও $D$ এর উপাদানগুলোর মধ্যে $x + 1 < y$ সম্পর্কটি বিবেচনায় থাকে তবে অন্বয়টি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১২",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. $f(x) = x^4 + 5x - 3$ হলে, $f(-1), f(2)$ এবং $f\\left(\\frac{1}{2}\\right)$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৩",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৩. যদি $f(y) = y^3 + ky^2 - 4y - 8$ হয়, তবে $k$ এর কোন মানের জন্য $f(-2) = 0$ হবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৪",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৪. $f(x) = x^3 - 6x^2 + 11x - 6$ হয়, তবে $x$ এর কোন মানের জন্য $f(x) = 0$ হবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৫",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৫. যদি $f(x) = \\frac{2x + 1}{2x - 1}$ হয়, তবে $\\frac{f\\left(\\frac{1}{x^2}\\right) + 1}{f\\left(\\frac{1}{x^2}\\right) - 1}$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৬",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৬. $g(x) = \\frac{1 + x^2 + x^4}{x^2}$ হলে, দেখাও যে $g\\left(\\frac{1}{x^2}\\right) = g(x^2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৭",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৭. নিচের অন্বয়গুলো থেকে ডোমেন এবং রেঞ্জ নির্ণয় কর।\nক) $R = \\{(2, 1), (2, 2), (2, 3)\\}$\nখ) $S = \\{(-2, 4), (-1, 1), (0, 0), (1, 1), (2, 4)\\}$\nগ) $F = \\{(\\frac{1}{2}, 0), (1, 1), (1, -1), (\\frac{5}{2}, 2), (\\frac{5}{2}, -2)\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৮",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৮. নিচের অন্বয়গুলোকে তালিকা পদ্ধতিতে প্রকাশ কর এবং ডোমেন ও রেঞ্জ নির্ণয় কর।\nক) $R = \\{(x, y) : x \\in A, y \\in A$ এবং $x + y = 1\\}$ যেখানে $A = \\{-2, -1, 0, 1, 2\\}$\nখ) $F = \\{(x, y) : x \\in C, y \\in C$ এবং $y = 2x\\}$ যেখানে $C = \\{-1, 0, 1, 2, 3\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১৯",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১৯. ছক কাগজে $(-3, 2), (0, -5), (\\frac{1}{2}, -\\frac{5}{6})$ বিন্দুগুলো স্থাপন কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

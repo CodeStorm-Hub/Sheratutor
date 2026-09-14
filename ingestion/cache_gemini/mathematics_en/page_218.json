@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 218,
+  "pdf_page_no": 223,
+  "chapter_no": 10,
+  "chapter_title": "Distance and Elevation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $h = x + 42$ or, $h = \\frac{h}{\\sqrt{3}} + 42$ [from (1)]\n\nor, $\\sqrt{3}h = h + 42\\sqrt{3}$ or, $\\sqrt{3}h - h = 42\\sqrt{3}$ or, $(\\sqrt{3} - 1)h = 42\\sqrt{3}$ or, $h = \\frac{42\\sqrt{3}}{\\sqrt{3} - 1}$\n\n$\\therefore h = 99.373$ (approx.)\n\n$\\therefore$ Height of the building is 99.37 metre (approx.).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. A pole is broken such that the undetached broken part makes an angle of $30^\\circ$ with the other and touches the ground at a distance of 10 metre from its foot. Find the length of the pole.\n\nSolution:\nLet, the total height of the pole is $AB = h$ metre. It breaks at the height of $BC = x$ metre without separation and makes an angle with the other, $\\angle BCD = 30^\\circ$ and touches the ground at a distance $BD = 10$ metre from the foot.\nHere, $CD = AC = AB - BC = (h - x)$ metre\nFrom $\\triangle BCD$ we get,\n$\\tan \\angle BCD = \\frac{BD}{BC}$ or, $\\tan 30^\\circ = \\frac{10}{x}$\nor, $\\frac{1}{\\sqrt{3}} = \\frac{10}{x}$ $\\therefore x = 10\\sqrt{3}$\n\nAgain, $\\sin \\angle BCD = \\frac{BD}{CD}$ or, $\\sin 30^\\circ = \\frac{BD}{CD}$ or, $\\frac{1}{2} = \\frac{10}{h - x}$\n\nor, $h - x = 20$ or, $h = 20 + x$ or, $h = 20 + 10\\sqrt{3}$ [putting the value of $x$]\n\n$\\therefore h = 37.321$ (approx.)\n\n$\\therefore$ Height of the pole is 37.32 metre (approx.).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work: A balloon is flying above any point between two kilometre posts. At the point of the balloon the angle of depression of the two posts are $30^\\circ$ and $60^\\circ$ respectively. Find the height of the balloon.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Pole broken at a point",
+      "figure_no": "10.01",
+      "box_2d": [
+        395,
+        675,
+        650,
+        875
+      ],
+      "description": "A geometric diagram showing a vertical pole AB broken at point C, with the top part AC bent to touch the ground at point D, forming a right-angled triangle BCD.",
+      "reading_order_anchor": "Example 6. A pole is broken such that the undetached broken part makes an angle of 30^0 with the other and touches the ground at a distance of 10 metre form its foot. Find the length of the pole."
+    }
+  ]
+}

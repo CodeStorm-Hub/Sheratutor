@@ -1,0 +1,109 @@
+{
+  "printed_page_no": 167,
+  "pdf_page_no": 172,
+  "chapter_no": 8,
+  "chapter_title": "বৃত্ত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৫. $O$ কেন্দ্রবিশিষ্ট বৃত্তের বহিঃস্থ বিন্দু $P$ থেকে বৃত্তে $PA$ ও $PB$ দুইটি স্পর্শক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উদ্দীপকের আলোকে চিত্র আঁক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) প্রমাণ কর যে, $PA = PB$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) প্রমাণ কর যে, $OP$ রেখাংশ স্পর্শ-জ্যা এর লম্বসমদ্বিখণ্ডক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৬. দেওয়া আছে, $O$ বৃত্তের কেন্দ্র এবং $PA$ ও $PB$ স্পর্শকদ্বয় বৃত্তকে যথাক্রমে $A$ ও $B$ বিন্দুতে স্পর্শ করেছে। প্রমাণ কর যে, $PO$, $\\angle APB$ কে সমদ্বিখণ্ডিত করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "বৃত্ত সম্পর্কীয় সম্পাদ্য (Constructions related to Circles)",
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ৬. একটি বৃত্ত বা বৃত্তচাপ দেওয়া আছে, কেন্দ্র নির্ণয় করতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "একটি বৃত্ত (চিত্র-১) বা বৃত্তচাপ (চিত্র-২) দেওয়া আছে, বৃত্তটির বা বৃত্তচাপটির কেন্দ্র নির্ণয় করতে হবে।\n\nঅঙ্কন: প্রদত্ত বৃত্তে বা বৃত্তচাপে তিনটি বিন্দু $A, B$ ও $C$ নিই। $A, B$ ও $B, C$ যোগ করি। $AB$ ও $BC$ জ্যা দুইটির লম্বদ্বিখণ্ডক যথাক্রমে $EF, GH$ রেখাংশ দুইটি টানি। মনে করি, তারা পরস্পর $O$ বিন্দুতে ছেদ করে। সুতরাং, $O$ বিন্দুই বৃত্তের বা বৃত্তচাপের কেন্দ্র।\n\nপ্রমাণ: $EF$ রেখাংশ $AB$ জ্যা এর এবং $GH$ রেখাংশ $BC$ জ্যা এর লম্বদ্বিখণ্ডক। কিন্তু $EF$ ও $GH$ উভয়ে কেন্দ্রগামী এবং $O$ এদের সাধারণ ছেদ বিন্দু। সুতরাং $O$ বিন্দুই বৃত্তের বা বৃত্তচাপের কেন্দ্র।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "বৃত্তের স্পর্শক অঙ্কন",
+      "chunk_type": "theory",
+      "content_markdown": "আমরা জেনেছি যে, বৃত্তের ভিতরে অবস্থিত কোনো বিন্দু থেকে বৃত্তের স্পর্শক আঁকা যায় না। বিন্দুটি যদি বৃত্তের ওপর থাকে তাহলে উক্ত বিন্দুতে বৃত্তের একটিমাত্র স্পর্শক অঙ্কন করা যায়। স্পর্শকটি বর্ণিত বিন্দুতে অঙ্কিত ব্যাসার্ধের উপর লম্ব হয়। সুতরাং, বৃত্তস্থিত কোনো বিন্দুতে বৃত্তের স্পর্শক অঙ্কন করতে হলে বর্ণিত বিন্দুতে ব্যাসার্ধ অঙ্কন করে ব্যাসার্ধের উপর লম্ব আঁকতে হবে। আবার বিন্দুটি বৃত্তের বাইরে অবস্থিত হলে তা থেকে বৃত্তে দুইটি স্পর্শক আঁকা যাবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ৭. বৃত্তের কোনো বিন্দুতে একটি স্পর্শক আঁকতে হবে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র-১: বৃত্ত",
+      "figure_no": "1",
+      "box_2d": [
+        486,
+        633,
+        594,
+        747
+      ],
+      "description": "একটি বৃত্তের চিত্র",
+      "reading_order_anchor": "একটি বৃত্ত (চিত্র-১) বা বৃত্তচাপ (চিত্র-২) দেওয়া আছে"
+    },
+    {
+      "caption": "চিত্র-২: বৃত্তচাপ",
+      "figure_no": "2",
+      "box_2d": [
+        486,
+        766,
+        594,
+        880
+      ],
+      "description": "একটি বৃত্তচাপের চিত্র",
+      "reading_order_anchor": "একটি বৃত্ত (চিত্র-১) বা বৃত্তচাপ (চিত্র-২) দেওয়া আছে"
+    },
+    {
+      "caption": "চিত্র-৩: বৃত্তের কেন্দ্র নির্ণয়",
+      "figure_no": "3",
+      "box_2d": [
+        633,
+        683,
+        739,
+        833
+      ],
+      "description": "বৃত্তের কেন্দ্র নির্ণয়ের জ্যামিতিক চিত্র যেখানে লম্বদ্বিখণ্ডক EF এবং GH পরস্পর O বিন্দুতে ছেদ করেছে",
+      "reading_order_anchor": "অঙ্কন: প্রদত্ত বৃত্তে বা বৃত্তচাপে তিনটি বিন্দু A, B ও C নিই।"
+    }
+  ]
+}

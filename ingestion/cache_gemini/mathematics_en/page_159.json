@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 159,
+  "pdf_page_no": 164,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\angle ABZ$ equal to $\\angle y$.\n\nNow from the line segment $AB$, cut a line segment $AE = b$. At $E$, construct $EC \\parallel AY$ which cuts $BZ$ at $C$. Now construct $CD \\parallel BA$. The line segment $CD$ intersects the ray $AY$ at $D$. Then, $ABCD$ is the required trapezium.\n\n**Proof:** By construction, $AE \\parallel CD$ and $AD \\parallel EC$. Therefore $AECD$ is a parallelogram and $CD = AE = b$.\n\nNow in the quadrilateral $ABCD$, $AB = a$, $CD = b$, $AB \\parallel CD$ and $\\angle BAD = \\angle x$, $\\angle ABC = \\angle y$ [by construction]\n\nTherefore, $ABCD$ is the required trapezium.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Work:** The perimeter and an angle of a rhombus are given. Construct the rhombus.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 4.** In the triangle $ABC$, $\\angle B = 60^\\circ$, $\\angle C = 45^\\circ$ and perimeter $p = 13$ cm.\n\n1) Construct $\\angle B$ and $\\angle C$ with scale and compass.\n\n2) Construct the triangle. (Construction and description of construction are must)\n\n3) Construct a rhombus whose length is equal to $\\frac{p}{3}$ and an angle equal to $\\angle B$. (Construction and description of construction are must)\n\n**Solution:**\n\n1)",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of angles 60° and 45°",
+      "figure_no": "7.01",
+      "box_2d": [
+        760,
+        240,
+        880,
+        800
+      ],
+      "description": "Geometric construction of a 60-degree angle at point B and a 45-degree angle at point C using compass arcs.",
+      "reading_order_anchor": "1) Construct $\\angle B$ and $\\angle C$ with scale and compass."
+    }
+  ]
+}

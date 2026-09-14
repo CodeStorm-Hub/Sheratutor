@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 145,
+  "pdf_page_no": 150,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\mathrm{CH_4(g) + O_2(g) \\longrightarrow CO_2(g) + H_2O(l)}$$\n\nSimilarly, calcium carbonate reacts with hydrochloric acid and produces calcium chloride, carbon dioxide and water. This is also a chemical change.\n\n$$\\mathrm{CaCO_3(s) + 2HCl(aq) \\longrightarrow CaCl_2(aq) + CO_2(g) + H_2O(l)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.2",
+      "section_title": "Classification of Chemical Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "We can classify the chemical reactions on the basis of following way:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.2.1",
+      "section_title": "Direction of Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "According to direction of reaction, chemical reactions are of two kinds: Irreversible reactions and Reversible reactions.\n\n### Irreversible Reactions\n\nIn irreversible reactions, only the reactants convert to products. Products cannot be converted to reactants by a reaction if any one of the products from the reaction is removed from the reaction medium. For example, calcium carbonate, when heated in a container breaks into solid limestone and gaseous carbon dioxide. If the carbon dioxide gas is removed from the container, then too, the limestone will not convert back to calcium carbonate. Thus, it is an irreversible reaction. Irreversible reactions are written in equations with a right faced arrow ($\\longrightarrow$) mark in the midst of reactants and products.\n\n$$\\mathrm{CaCO_3(s) \\xrightarrow{\\text{heat}} CaO(s) + CO_2(g)}$$\n\n### Reversible Reactions\n\nIn a reversible reaction, the reactants react and convert to products and the products react again and revert to reactants. In reversible reactions, two reactions continue simultaneously. In one reaction, the reactants react and",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

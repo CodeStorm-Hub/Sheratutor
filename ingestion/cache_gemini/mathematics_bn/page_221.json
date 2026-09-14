@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 221,
+  "pdf_page_no": 226,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(১) নং থেকে (২) নং বিয়োগ করে পাই,\n$4y = 600$ বা, $y = 150$\n$\\therefore$ প্রদত্ত জমিটির প্রস্থ $2y = 2 \\times 150 = 300$ মিটার।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2",
+      "section_title": "অনুশীলনী ১১.২",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. $a, b, c$ ক্রমিক সমানুপাতিক হলে নিচের কোনটি সঠিক?\nক) $a^2 = bc$ খ) $b^2 = ac$\nগ) $ab = bc$ ঘ) $a = b = c$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. আরিফ ও আকিবের বয়সের অনুপাত $5 : 3$, আরিফের বয়স $20$ বছর হলে, কত বছর পরে তাদের বয়সের অনুপাত $7 : 5$ হবে?\nক) $5$ বছর খ) $6$ বছর\nগ) $8$ বছর ঘ) $10$ বছর",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. একটি বর্গের বাহুর দৈর্ঘ্য দ্বিগুণ হলে তার ক্ষেত্রফল কতগুণ বৃদ্ধি পাবে?\nক) $2$ গুণ খ) $3$ গুণ\nগ) $4$ গুণ ঘ) $6$ গুণ",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. $x : y = 7 : 5, y : z = 5 : 7$ হলে $x : z = $ কত?\nক) $35 : 49$ খ) $35 : 35$\nগ) $25 : 49$ ঘ) $49 : 25$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $b, a, c$ ক্রমিক সমানুপাতিক হলে\n$(i) \\quad a^2 = bc$\n$(ii) \\quad \\frac{b}{a} = \\frac{c}{a}$\n$(iii) \\quad \\frac{a + b}{a - b} = \\frac{c + a}{c - a}$\nনিচের কোনটি সঠিক?\nক) $i$ খ) $i$ ও $ii$\nগ) $i$ ও $iii$ ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $x : y = 2 : 1$ এবং $y : z = 2 : 1$ হলে\n$(i) \\quad x, y, z$ ক্রমিক সমানুপাতিক\n$(ii) \\quad z : x = 1 : 4$\n$(iii) \\quad y^2 + zx = 4yz$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

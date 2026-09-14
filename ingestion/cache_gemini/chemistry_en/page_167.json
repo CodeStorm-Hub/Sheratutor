@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 167,
+  "pdf_page_no": 172,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. $\\text{Pb(NO}_3)_2 + 2\\text{KI} \\longrightarrow$\n\nThe table below is filled up in the light of the above reaction $[K = 39, \\text{I} = 127]$:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Element | Container 1 | Container 2 | Container 3 | Container 4 | Total Volume used (mL) | Precipitation |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Volume of $0.2\\text{ M Pb(NO}_3)_2$ (mL) | $1$ | $2$ | $3$ | $4$ | $10$ | Yellow |\n| Volume of water (mL) | $4$ | $3$ | $2$ | $1$ | $10$ | |\n| Volume of $0.5\\text{ M KI}$ (mL) | $1$ | $1$ | $1$ | $1$ | $4$ | |\n| Total volume of solution of each container | $6$ | $6$ | $6$ | $6$ | - | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is an exothermic reaction?\n\nb. Why aren't periodic number and valency the same? Discuss\n\nc. What is the total amount of KI used in the period? Determine.\n\nd. Which container will contain more yellow solution? Explain with reasons.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. $$\\text{Na} + \\frac{1}{2}\\text{Cl}_2 \\longrightarrow \\text{NaCl}$$\n$$\\text{Zn} + \\text{H}_2\\text{SO}_4 \\longrightarrow \\text{ZnSO}_4 + \\text{H}_2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is an isomerization reaction?\n\nb. What do you understand by a reversible reaction?\n\nc. Determine the oxidation number of sulfur in the product substance of the 2nd reaction.\n\nd. In the first reaction of the stem, redox- occurs simultaneously. Analyze.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

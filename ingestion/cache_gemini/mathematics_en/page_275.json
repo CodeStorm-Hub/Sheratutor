@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 275,
+  "pdf_page_no": 280,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. $1 + 2 + 3 + 4 + \\dots + 99 = \\text{what?}$\n\n**Solution:**\n\nThe first term of the series $a = 1$, common difference $d = 2 - 1 = 1$ and the last term $p = 99$.\n\n$\\therefore$ It is an arithmetic series.\n\nLet the $n$th term of the series $= 99$\n\nWe know, $n$th term of an arithmetic progression $= a + (n - 1)d$\n\n$\\therefore a + (n - 1)d = 99$\n\nor, $1 + (n - 1)1 = 99$\n\nor, $1 + n - 1 = 99$\n\n$\\therefore n = 99$\n\nFrom (4) formula, the sum of first $n$-terms of an arithmetic series,\n\n$S_n = \\frac{n}{2}\\{2a + (n - 1)d\\}$\n\nHence, the sum of first 99 terms of the series $S_{99} = \\frac{99}{2}\\{2 \\times 1 + (99 - 1) \\times 1\\} = \\frac{99}{2}(2 + 98)$\n\n$= \\frac{99 \\times 100}{2} = 99 \\times 50 = 4950$\n\nAlternative method: From formula (3), $S_n = \\frac{n}{2}(a + p)$\n\n$\\therefore S_{99} = \\frac{99}{2}(1 + 99) = \\frac{99 \\times 100}{2} = 4950$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. What is the sum of first 30 terms of the series $7 + 12 + 17 + \\dots$?\n\n**Solution:** First term of the series $a = 7$, common difference $d = 12 - 7 = 5$\n\n$\\therefore$ It is an arithmetic series. Here, number of terms $n = 30$\n\nWe know that the sum of first $n$-terms of an arithmetic series,\n\n$S_n = \\frac{n}{2}\\{2a + (n - 1)d\\}$\n\nSo, the sum of 30 terms $S_{30} = \\frac{30}{2}\\{2 \\cdot 7 + (30 - 1)5\\} = 15(14 + 29 \\times 5)$\n\n$= 15(14 + 145) = 15 \\times 159 = 2385$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

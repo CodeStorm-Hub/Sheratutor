@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 171,
+  "pdf_page_no": 176,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Transformation of Energy in Chemical Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "Each substance contains some energy. Usually in chemical reactions, the energy of the reactants is necessary to make the reactions happen or some chemical reactions result in generation of energy. That means, energy is transformed in chemical reactions. The energy required to make a reaction take place or the resultant energy from a reaction may have different forms like heat energy, light energy, electricity, sound etc.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Units of Measurement of Energy",
+      "chunk_type": "theory",
+      "content_markdown": "Earlier, calorie or kilocalorie was used as unit to measure energy. The heat applied to raise the temperature of $1\\text{ gram}$ water by $1^\\circ\\text{C}$ is called a calorie ($\text{cal}$ in brief). $1\\text{ kilocalorie}$ is $1$ thousand calories. Kilocalorie is expressed by $\text{kcal}$.\n\nPresently, the international standard unit to measure all kinds of energy is Joule. A joule is the work done by a force of one newton acting through one metre displacement. It is expressed by the abbreviate $\text{j}$. $1\\text{ kilojoule}$ ($\text{kJ}$) is equal to $1000\\text{ joule}$.\n\nThe relation between calorie and joule is $1\\text{ cal} = 4.18\\text{ J}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "8.1.2",
+      "section_title": "Classification of Chemical Reactions According to Change of Heat",
+      "chunk_type": "theory",
+      "content_markdown": "Some reactions occur spontaneously while some reactions require the application of energy. Reactions that occur spontaneously heat is produced during the conversion of reactants to products. According to the change of heat, reactions are of two kinds: (i) Exothermic reactions and (ii) Endothermic reactions. In exothermic reactions, the value of $\\Delta H$ is negative and in endothermic reactions, the value is positive.\n\nAny substance has a specific energy at a specific temperature. This energy is called internal energy. If we express the total internal energy of reactants in a reaction with $E_1$ and the total energy of the products with $E_2$, then the change of heat energy in that reaction is:\n\n$$\\Delta H = \\text{Total internal energy of the products } (E_2) - \\text{Total internal energy of the reactants } (E_1)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

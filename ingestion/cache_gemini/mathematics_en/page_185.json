@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 185,
+  "pdf_page_no": 190,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercise 8.5",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. The angle inscribed in a major arc is-\n1) acute angle 2) obtuse angle\n3) right angle 4) complementary angle",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. What is the value of the angle $x$ in the circle with centre $O$?\n1) $126^\\circ$ 2) $108^\\circ$\n3) $72^\\circ$ 4) $54^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "3. In the adjacent figure $\\frac{1}{2} \\angle ECD =$ how much degrees?\n1) $40^\\circ$ 2) $50^\\circ$\n3) $80^\\circ$ 4) $100^\\circ$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "4. Two circles intersects each other externally. If one of their diametes is $8 \\text{ cm}$ and the radius of the another is $4 \\text{ cm}$, what is the distance between their two centres?\n1) 0 2) 4 3) 8 4) 12",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "5. If two tangents $PQ$ and $PR$ are drawn from the external point $P$ in a circle with centre $O$, then $\\triangle PQR$ will be-\n(i) isosceles\n(ii) equilateral\n(iii) right angled\nWhich one the following is correct?\n1) $i$ 2) $i$ and $ii$ 3) $ii$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "6. If $O$ is the circumcentre of the equilateral triangle $ABC$, then $\\angle BOC =$ how much degrees?\n1) $30^\\circ$ 2) $60^\\circ$ 3) $90^\\circ$ 4) $120^\\circ$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Circle with centre O",
+      "figure_no": "8.01",
+      "box_2d": [
+        245,
+        685,
+        395,
+        855
+      ],
+      "description": "A circle with centre O, points A, B, D on the circumference, and angle x at C.",
+      "reading_order_anchor": "2. What is the value of the angle x in the circle with centre O?"
+    },
+    {
+      "caption": "Fig 8.02: Cyclic quadrilateral with tangent",
+      "figure_no": "8.02",
+      "box_2d": [
+        405,
+        655,
+        535,
+        885
+      ],
+      "description": "A cyclic quadrilateral ABCD with an angle of 80 degrees at A and a line extending from C to E.",
+      "reading_order_anchor": "3. In the adjacent figure 1/2 angle ECD = how much degrees?"
+    }
+  ]
+}

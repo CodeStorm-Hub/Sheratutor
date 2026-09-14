@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 105,
+  "pdf_page_no": 110,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Electro Conductivity of Metals",
+      "chunk_type": "theory",
+      "content_markdown": "All metals are electrical conductors. The delocalized electrons in the metal lattice are the carrier of electricity in them. If we connect the two ends of a piece of metal to positive ($+$) and negative ($-$) edges of a battery, the electrons will rush from the negative edge to the positive edge. That means, there will be flow of electricity from positive end to negative end. Flow of delocalized electrons creats electricity. There would not have been any electricity flow in the absence of delocalized electrons.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Heat Conductivity of Metals",
+      "chunk_type": "theory",
+      "content_markdown": "When you heat an end of a piece of metal, you'll find that the other end is also getting warm fast. It means, metals are heat conductors too. The reason is again delocalized electrons. When heat is applied, these electrons receive energy and increase their velocity. They rush from the heated end towards the comparatively cooler end. Thus heat is conducted in a metal.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.15: Mechanism of electrical conductivity of Metal.",
+      "figure_no": "5.15",
+      "box_2d": [
+        381,
+        206,
+        600,
+        893
+      ],
+      "description": "Schematic diagram showing the mechanism of electrical conductivity in a metal lattice with positive ions and moving delocalized electrons.",
+      "reading_order_anchor": "Electro Conductivity of Metals"
+    }
+  ]
+}

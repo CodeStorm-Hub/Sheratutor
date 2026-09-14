@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 234,
+  "pdf_page_no": 239,
+  "chapter_no": 8,
+  "chapter_title": "Reflection of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We applied geometry to determine the position, shape etc. of images for convex and concave mirrors. We could do these works using a single formula. The formula is :\n\n$$\\frac{1}{u} + \\frac{1}{v} = \\frac{1}{f}$$\n\nWhere, $u$ is the distance of object from the plane of the mirror, $v$ is the distance of the image and $f$ is the focal distance.\n\nReal image is a very important idea. We will find in the next chapter how real images can be formed with a lens. You have already seen that there are real light rays in a real image, so if it is projected on a screen, it is possible to see the image. In ordinary mirrors, you can look at yourself but you cannot project yourself on screens with ordinary mirrors.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Figure 8.24 shows that the image of object $XY$ is formed at $X'Y'$. If the object is $X'Y'$, where will the image be formed?\n\n**Answer:** This is a real image. So if $X'Y'$ is an actual object, the image will be $XY$.\n\n**Question:** If an object is placed just at a distance double of its focal length in a concave mirror, where will the image be formed?\n\n**Answer:** (Figure 8.25) The image will be formed at the same position, be of the same size but in inverted form.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Till now we have learnt the science of concave mirrors, now we will see how to use it.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 8.25: In concave mirror, if an object is placed at a distance double of its focal length, the image will form at the same position in inverted condition.",
+      "figure_no": "8.25",
+      "box_2d": [
+        487,
+        513,
+        737,
+        856
+      ],
+      "description": "Ray diagram showing a concave mirror with an object $XY$ and its inverted real image $X'Y'$ formed at the same position at double the focal length.",
+      "reading_order_anchor": "Question: If an object is placed just at a distance double of its focal length in a concave mirror, where will the image be formed?"
+    }
+  ]
+}

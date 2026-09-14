@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 265,
+  "pdf_page_no": 270,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "As the object is gradually moved away, the image becomes smaller and starts to come closer the focal point. If the object is brought to infinity, the image of it will be formed exactly on the focal point. Therefore, if an object is kept at the distance outside twice of the focal length, then the image is :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) Between the focal length and twice of the focal length\n\n(b) Real\n\n(c) Inverted\n\n(d) Small",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** If an object is kept outside twice of its focal length, then a real image of the object is formed. If the object is kept at the position of the image, then where will the image be formed?\n\n**Answer:** If the direction of the light ray is changed, then one is converted to another.",
+      "activity_tag": "Example"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the light from a distant object falls on a lens, then it forms its image on the focal point of the lens. Using this process you can find the focal length of a convex lens. In order to do it you should move the lens forward and backward until a distinct image is formed on the wall. When the image is distinct, then measure the distance from the lens to the wall. This is the focal length of this lens.\n\nIf you don't have any convex lens, you can do the experiment using the glass of spectacle. Often the spectacles of elderly people are made with convex lenses. If closer things are seen bigger by the glass of the spectacle, then you'll understand that it is a convex lens.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "9.4.3",
+      "section_title": "Power of Lens",
+      "chunk_type": "theory",
+      "content_markdown": "The most familiar use of lens is in spectacles. If you have experimented with the lenses of spectacles of many people, you have seen that many of their spectacles are made of convex lens, and many are made of concave lens. Usually we explain the lenses by discussing power.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

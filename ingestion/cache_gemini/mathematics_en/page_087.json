@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 87,
+  "pdf_page_no": 92,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Logarithms",
+      "chunk_type": "theory",
+      "content_markdown": "Logarithms are used to find the values of exponential expressions. Logarithm is written in brief as Log. Product, quotient, etc. of large numbers or quantities can easily be determined with the help of log.\n\nWe know, $2^3 = 8$; this mathematical statement is written in terms of log as $\\log_2 8 = 3$. Again, conversely, if $\\log_2 8 = 3$, it can be written in terms of exponents as $2^3 = 8$. That is, if $2^3 = 8$, then $\\log_2 8 = 3$ and conversely, if $\\log_2 8 = 3$, then $2^3 = 8$. Similarly, $2^{-3} = \\frac{1}{2^3} = \\frac{1}{8}$ can be written in terms of log as, $\\log_2 \\frac{1}{8} = -3$.\n\nIf $a^x = N, (a > 0, a \\neq 1)$, then $x = \\log_a N$ is defined as a based $\\log_a N$.\n\n**Note:** If $a > 0$, then $a^x$ is always positive whatever may be the values of $x$, positive or negative. So, only the log of positive numbers has values that are real; log of zero or negative numbers have no real value.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| In terms of exponent | in terms of log | In terms of exponent | in terms of log |\n| :--- | :--- | :--- | :--- |\n| $10^2 = 100$ | | $10^0 = 1$ | $\\log_{10} 1 = 0$ |\n| $3^{-2} = \\frac{1}{9}$ | | $e^0 = \\dots$ | $\\log_e 1 = \\dots$ |\n| $2^{\\frac{1}{2}} = \\sqrt{2}$ | | $a^0 = 1$ | $\\dots = \\dots$ |\n| $2^{-\\frac{1}{2}} = \\frac{1}{\\sqrt{2}}$ | | $10^1 = 10$ | $\\log_{10} 10 = 1$ |\n| $\\sqrt[4]{2^4} = 2$ | | $e^1 = \\dots$ | $\\dots = \\dots$ |\n| | | $\\dots = \\dots$ | $\\log_a a = 1$ |",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": "Laws of Logarithms",
+      "chunk_type": "theory",
+      "content_markdown": "Let, $a > 0, a \\neq 1; b > 0, b \\neq 1$ and $M > 0, N > 0$\n\n**Formula 6 (zero and one log).** If $a > 0, a \\neq 1$ 1) $\\log_a 1 = 0$ 2) $\\log_a a = 1$\n\n**Proof:** We know from the formula of exponents, $a^0 = 1$\n$\\therefore$ from the definition of log, we get, $\\log_a 1 = 0$ (proved)\nAgain, we know, from the formula of exponents, $a^1 = a$\n$\\therefore$ from the definition of log, we get, $\\log_a a = 1$ (proved)\n\n**Formula 7 (Log of products).** $\\log_a (MN) = \\log_a M + \\log_a N$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

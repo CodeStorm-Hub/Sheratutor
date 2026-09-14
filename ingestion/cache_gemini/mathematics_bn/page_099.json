@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 99,
+  "pdf_page_no": 104,
+  "chapter_no": 5,
+  "chapter_title": "এক চলকবিশিষ্ট সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান: মনে করি, কবির সাহেব $12\\%$ মুনাফায় $x$ টাকা বিনিয়োগ করেছেন।\n\n$\\therefore$ তিনি $10\\%$ মুনাফায় বিনিয়োগ করেছেন $(56000 - x)$ টাকা।\n\nএখন, $x$ টাকার $1$ বছরের মুনাফা $x \\times \\frac{12}{100}$ টাকা বা, $\\frac{12x}{100}$ টাকা।\n\nআবার, $(56000 - x)$ টাকার $1$ বছরের মুনাফা $(56000 - x) \\times \\frac{10}{100}$ টাকা বা, $\\frac{10(56000 - x)}{100}$ টাকা।\n\nপ্রশ্নমতে, $\\frac{12x}{100} + \\frac{10(56000 - x)}{100} = 6400$\n\nবা, $12x + 560000 - 10x = 640000$\n\nবা, $2x = 640000 - 560000$\n\nবা, $2x = 80000$\n\nবা, $x = 40000$\n\n$\\therefore$ কবির সাহেব $12\\%$ মুনাফায় $40000$ টাকা বিনিয়োগ করেছেন।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ: সমীকরণ গঠন করে সমাধান কর:",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $\\frac{3}{5}$ ভগ্নাংশটির লব ও হরের প্রত্যেকের সাথে কোন সংখ্যাটি যোগ করলে ভগ্নাংশটি $\\frac{4}{5}$ হবে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) দুইটি ক্রমিক স্বাভাবিক সংখ্যার বর্গের অন্তর $151$ হলে, সংখ্যা দুইটি নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $120$ টি এক টাকার মুদ্রা ও দুই টাকার মুদ্রায় মোট $180$ টাকা হলে, কোন প্রকারের মুদ্রার সংখ্যা কয়টি?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.1",
+      "section_title": "অনুশীলনী ৫.১",
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান কর (১ - ৮):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$১. \\frac{ay}{b} - \\frac{by}{a} = a^2 - b^2$\n\n$২. (z + 1)(z - 2) = (z - 4)(z + 2)$\n\n$৩. \\frac{4}{2x + 1} + \\frac{9}{3x + 2} = \\frac{25}{5x + 4}$\n\n$৪. \\frac{1}{x + 1} + \\frac{1}{x + 4} = \\frac{1}{x + 2} + \\frac{1}{x + 3}$\n\n$৫. \\frac{a}{x - a} + \\frac{b}{x - b} = \\frac{a + b}{x - a - b}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

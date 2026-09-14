@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 150,
+  "pdf_page_no": 155,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "number of $\\text{KMnO}_4$. $\\text{KMnO}_4$ is a charge neutral molecule, therefore, its charge is $0$. So,  \n$$(+1)\\times1 + x\\times1 + (-2)\\times4 = 0$$  \nOr, $x = 7$  \n\nThe oxidation number of $\\text{Mn}$ is $+7$.  \n\n4. Apart from metal hydride (like $\\text{LiH}$, $\\text{LiAlH}_4$) the oxidation number of hydrogen is generally $+1$. Apart from the exceptions mentioned in table 7.01, the oxidation number of oxygen is $-2$.  \n\nDetermining the oxidation number of $\\text{S}$ in $\\text{H}_2\\text{SO}_4$  \nSuppose, the oxidation number of $\\text{S} = x$  \nTherefore, $(+1)\\times2 + x + (-2)\\times4 = 0$  \n\nOr, $x = 6$  \n\nThe oxidation number of $\\text{S}$ in $\\text{H}_2\\text{SO}_4$ is $+6$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Find out the oxidation number of the elements written in red colour among the following compounds: $\\text{CuSO}_4$, $\\text{HNO}_3$, $\\text{H}_3\\text{PO}_4$, $\\text{MnO}_2$, $\\text{K}_2\\text{Cr}_2\\text{O}_7$, $\\text{Na}_2\\text{S}_2\\text{O}_3$, $\\text{CuI}$.  \n\nGiven: Oxidation numbers of $\\text{Cu} = +2$, $\\text{O} = -2$, $\\text{H} = +1$, $\\text{K} = +1$, $\\text{Na} = +1$, $\\text{I} = -1$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Oxidation number and valency are not the same. Oxidation number is the number of charges in an atom or ion along with its sign. It may be positive or negative, integer or fraction. The oxidation number of an element may vary in different compounds. On the other hand, valency is the capacity of an element to bond with other elements. It is always an integer and is never positive or negative. Only, in the case of inert gases, the valency is zero.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 259,
+  "pdf_page_no": 264,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "That point is called the focal point and the distance from the focal point and the center of lens is called the focal length. (Figure 9.18)\n\nIn case of a convex mirror, light is incident from one side. In the case of a lens, light can be incident on it from both sides. Every lens has a focal length. The focal length of a lens remains the same whichever direction the light is incident on it. If parallel light incidents on this lens, the rays spread out, and appear to diverge from focal point. If the direction of the rays of light is reversed then they goes back through the direction they came. So if we can reverse the direction of divergent rays, then they will emerge in parallel and will go in the inverted direction (Figure 9.19).\n\nTo understand how an image is formed in concave lens, we need to know how light rays are refracted through a concave lens. It depends on the angle with which the light ray is falling. If we know the three special rules of refraction of light, we can explain how the image is formed:\n\n(i) If the ray of light is centripetal (Figure 9.20, YO or XO ray) it goes straight after refraction.\n(ii) The rays which are parallel with the principle axis, (Figure 9.20 XP) will (PS) appear to diverge from the focal point (F) after refraction.\n(iii) If the direction of the light ray is reversed then it goes back through the way it came. Therefore, if any ray goes (Figure 9.20, SP) towards the focus then it will be refracted in parallel with the principle axis.\n\nNow we can find out how the image of an object will be in a concave lens. Suppose an object $XY$ is kept near a concave lens. (Figure 9.20) To make the analysis easy, we have taken the point $Y$ of that object on the principle axis $YR$. To find where the image of a point will be formed, at least two rays should be drawn from that point. But we can find the image of $Y$ without drawing two rays. It is possible to draw a ray along the principle axis $YR$, so we know the image of this point will be formed on this axis. We will get the image of point $Y$ if we",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.19: While passing through concave lens rays of light converging rays emerge in parallel.",
+      "figure_no": "9.19",
+      "box_2d": [
+        256,
+        540,
+        452,
+        846
+      ],
+      "description": "Ray diagram showing parallel rays of light passing through a concave lens and diverging.",
+      "reading_order_anchor": "If parallel light incidents on this lens..."
+    }
+  ]
+}

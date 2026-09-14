@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 313,
+  "pdf_page_no": 318,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** Determine the voltage at the points A, B, C and D of the circuit in figure 11.09 (a).\n\n**Solutions:** Voltage at C and D is 0, voltage at A is $3\\text{ V}$. To calculate the voltage at B, current $I$ of the circuit has to be determined.\n\n$$I = \\frac{V}{R} = \\frac{3}{1 + 2} \\text{ A} = 1.0 \\text{ A}$$\n\nSo, the reduction in voltage from A to B is,\n\n$$V = RI = 1 \\, \\Omega \\times 1 \\text{ A} = 1 \\text{ V}$$\n\nSo, voltage at point B, $3 \\text{ V} - 1 \\text{ V} = 2 \\text{ V}$\n\nAs the voltage (potential) at all points has been found, verify whether Ohm's law works or not?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Determine the voltages at the points A, B, C, D and E of the circuit in figure 11.9 (b).\n\n**Solution:** Voltage at D is zero\n\nVoltage at A is $6\\text{ V}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.09: Two circuits composed of a battery and more than one resistor.",
+      "figure_no": "11.09",
+      "box_2d": [
+        551,
+        137,
+        799,
+        852
+      ],
+      "description": "Schematic diagrams of two electric circuits labeled (a) and (b) containing a DC voltage source, resistors, and labeled junction points A, B, C, D, and E.",
+      "reading_order_anchor": "Example"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 266,
+  "pdf_page_no": 271,
+  "chapter_no": 9,
+  "chapter_title": "Refraction of Light",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Power of a Lens",
+      "chunk_type": "theory",
+      "content_markdown": "You have certainly heard people say that the power of a lens of somebody is high. What do we mean by the word power?\n\nThe conception of power comes from the matter of seeing big and small using a lens. If we place a body in front of two different lenses at the same distance, and the object looks bigger in one lens than in another lens, then we say the power of the lens is higher in which the object looks bigger. If you think about it you will see that the smaller the focal length of the lens, the object is seen bigger (Figure 9.27). Therefore the power of a lens $P$ is inversely proportional to the focal length. If the focal length is $f$ in meters then unit of power $P$ is the diopter. If the power of the glass is $2.5$ (Nobody uses diopter in general conversation). Then the focal length of this glass will be\n\n$$f = \\frac{1}{P} = \\frac{1}{2.5} \\text{ m} = 0.4 \\text{ m} \\text{ (the unit is in meter)}$$\n\nPower is not only used only for convex lens to show bigger objects. In the case of concave lens the same power is used to show smaller images. In the concave lens in which the object is seen as much as smaller, the power will be greater or the focal length will be smaller. In the case of a convex lens the power is positive and in the case of a concave lens the power is negative.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 9.27 : The lens which have as much as smaller the focal length , the object is seen to be bigger",
+      "figure_no": "9.27",
+      "box_2d": [
+        174,
+        440,
+        584,
+        874
+      ],
+      "description": "Ray diagrams showing the image formation for objects placed in front of convex lenses with different focal lengths, demonstrating that a smaller focal length produces a larger image.",
+      "reading_order_anchor": "The conception of power comes from the matter of seeing big and small using a lens."
+    }
+  ]
+}

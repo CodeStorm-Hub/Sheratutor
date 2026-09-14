@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 255,
+  "pdf_page_no": 260,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": "12.2",
+      "section_title": "Exercise 12.2",
+      "chunk_type": "theory",
+      "content_markdown": "Solve by the method of substitution (1 — 3):\n\n1. $7x - 3y = 31$, $9x - 5y = 41$\n2. $\\frac{x}{2} + \\frac{y}{3} = 1$, $\\frac{x}{3} + \\frac{y}{2} = 1$\n3. $\\frac{x}{a} + \\frac{y}{b} = 2$, $ax + by = a^2 + b^2$\n\nSolve by the method of elimination(4 — 6):\n\n4. $7x - 3y = 31$, $9x - 5y = 41$\n5. $7x - 8y = -9$, $5x - 4y = -3$\n6. $ax + by = c$, $a^2x + b^2y = c^2$\n\nSolve by the method of cross-multiplication (7 — 15):\n\n7. $2x + 3y + 5 = 0$, $4x + 7y + 6 = 0$\n8. $3x - 5y + 9 = 0$, $5x - 3y - 1 = 0$\n9. $x + 2y = 7$, $2x - 3y = 0$\n10. $4x + 3y = -12$, $2x = 5$\n11. $-7x + 8y = 9$, $5x - 4y = -3$\n12. $3x - y - 7 = 0$, $2x + y - 3 = 0$\n13. $ax + by = a^2 + b^2$, $2bx - ay = ab$\n14. $y(3 + x) = x(6 + y)$, $3(3 + x) = 5(y - 1)$\n15. $(x + 2)(y - 3) = y(x - 1)$, $5x - 11y - 8 = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Solving by using Graphical Method",
+      "chunk_type": "theory",
+      "content_markdown": "In a simple equation in two variables, the relation of existing variables $x$ and $y$ can be expressed by picture. This picture is called the graph of that relation. In the graph of such equation, there exist infinite number of points. Plotting a few such points and joining them with each other, we get the graph.\n\nEach of a simple simultaneous equations has infinite number of solutions. Graph of each equation is a straight line. Coordinates of each point of the straight line satisfies the equation. To indicate a graph, two or more than two points are necessary.\n\nNow we shall try to solve graphically the following system of equations:\n$2x + y = 3 \\dots (1)$\n$4x + 2y = 6 \\dots (2)$\n\nFrom equation (1) we get, $y = 3 - 2x$.\n\nTaking some values of $x$ in the equation, we find the corresponding values of $y$ and make the adjoining table:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

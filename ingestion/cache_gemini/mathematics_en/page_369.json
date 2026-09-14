@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 369,
+  "pdf_page_no": 374,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "2) The table to determine mode is given below:\n\n| Class | 31 - 40 | 41 - 50 | 51 - 60 | 61 - 70 | 71 - 80 | 81 - 90 | 91 - 100 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 4 | 6 | 8 | 12 | 9 | 7 | 4 |\n\n$$Mode = L + \\frac{f_1}{f_1 + f_2} \\times h$$\n\nHere, the maximum numbers of repetition of frequency is 12 which lies in the class (61-70).\n\n$$\\therefore L = 61, f_1 = 12 - 8 = 4, f_2 = 12 - 9 = 3, h = 10$$\n\n$$\\therefore Mode = 61 + \\frac{4}{4 + 3} \\times 10 = 61 + \\frac{4}{7} \\times 10 = 61 + \\frac{40}{7} = 61 + 5.7 = 66.7$$\n\nRequired mode 66.7",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "3) The table to draw the ogive curve is given below:\n\n| Class interval | Discontinuous class interval | Frequency | Cumulative frequency |\n| :--- | :--- | :--- | :--- |\n| 31 - 40 | 30 - 40 | 4 | 4 |\n| 41 - 50 | 40 - 50 | 6 | 10 |\n| 51 - 60 | 50 - 60 | 8 | 18 |\n| 61 - 70 | 60 - 70 | 12 | 30 |\n| 71 - 80 | 70 - 80 | 9 | 39 |\n| 81 - 90 | 80 - 90 | 7 | 46 |\n| 91 - 100 | 90 - 100 | 4 | 50 |\n\nUsing convenient scaling along $X$ axis where $\\text{--//--}$ (sign indicates $0 - 30$ and taking per square unit as 5 units of cumulative frequency along $Y$ axis points along higher limits of classes have been marked. Then these marked points have been joined and thus the Ogive curve has been drawn.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

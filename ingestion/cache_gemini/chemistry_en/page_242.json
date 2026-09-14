@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 242,
+  "pdf_page_no": 247,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Table 10.01: Reactivity Series of Metal",
+      "chunk_type": "table",
+      "content_markdown": "| Metal's Position in the Reactivity Series | Metal | Reduction Method |\n| --- | --- | --- |\n| Highly reactive metals at the top rankings | K | Reduction is done through Electrolysis |\n| | Na | |\n| | Ca | |\n| | Mg | |\n| | Al | |\n| Medium standard reactive metals at the mid level rankings | Zn | Reduction is done through Carbon Reduction |\n| | Fe | |\n| | Pb | |\n| Less reactive metals at the bottom rankings | Cu | Reduction is done through Self Reduction |\n| | Hg | |\n| | Ag | |\n| Non-reactive metals at the fag end of rankings | Pt | Found in pure form |\n| | Au | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.1",
+      "section_title": "Reduction by Electrolysis",
+      "chunk_type": "theory",
+      "content_markdown": "Reduction by Electrolysis: The top ranking metals in the reactivity series like $\\text{K}$, $\\text{Na}$, $\\text{Ca}$, $\\text{Mg}$ and $\\text{Al}$ undergo reduction by electrolysis. The Aluminium extraction from Aluminium oxide by electrolysis is described below.\n\nSolid aluminium oxide needs to be melted into liquid first. Aluminium oxide melts at $2050^{\\circ}\\text{C}$. To raise the temperature so high is very tough. If aluminium oxide is added with cryolite ($\\text{Na}_3\\text{AlF}_6$), it melts at $800^{\\circ}\\text{C}$-$1000^{\\circ}\\text{C}$. The melted $\\text{Al}_2\\text{O}_3$ consists of $\\text{Al}^{3+}$ and $\\text{O}^{2-}$ ion.\n\n$$\\text{Al}_2\\text{O}_3 \\xrightarrow{\\quad\\quad} 2\\text{Al}^{3+} + 3\\text{O}^{2-}$$\n\nA steel container with graphite carbon layer is necessary in the method. The mixture of aluminium oxide and cryolite is taken in the container and some carbon rods are dipped in the mixture in a way so that they do not touch the steel container. The steel container is connected to the negative charge of the",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 203,
+  "pdf_page_no": 208,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Bats have eyes and pretty good eye sight, yet they use echo during flight. While flying a bat uses its throat to produce sound, if there is an obstacle in the front, the sound returns after reflection, and the bat can estimate the distance from the time of the returning sound. For this reason, the bat can fly even in dark without being obstructed. We cannot hear the sound produced by the bat; because the sound is ultrasound i.e. frequency of the sound is beyond our hearing range. Bats can produce sound of frequency $100\\text{ kHz}$ or more.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.3.2",
+      "section_title": "Variation of Velocity of Sound",
+      "chunk_type": "theory",
+      "content_markdown": "In air, velocity of sound is proportional to the square root of temperature. i.e.\n\n$$v \\propto \\sqrt{T}$$\n\nHere the temperature is not Celsius temperature. Temperature in the Kelvin scale.\n\nThe velocity of sound does not depend on the air pressure. But it is inversely proportional to the square root of the density of air. So if there is water vapor in the air, its density decreases, hence velocity increases.\n\nSound is a mechanical wave. It depends on the elasticity of the medium. The nature of liquid and solid is different from air and naturally the velocity of sound is different there. In liquid the velocity of sound is more than that in air and in solid velocity of sound is even more than in liquid.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Table 7.0: velocity of sound in different medium\n\n| Medium | m/s |\n| :--- | :--- |\n| Air | 330 |\n| Hydrogen | 1,284 |\n| Mercury | 1,450 |\n| Water | 1,493 |\n| Iron | 5,130 |\n| Diamond | 12,000 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Do Yourself",
+      "chunk_type": "theory",
+      "content_markdown": "Put your ear at one end of a table, tell someone to knock at the other end. You will hear the sound of the knock clearly, because solid substances are much better medium for sound than air.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** At a certain place, the temperature in the winter is $10^\\circ\\text{C}$ and velocity of sound is $332\\text{ m/s}$, if the temperature is raised to $30^\\circ\\text{C}$ in the summer what is the velocity of sound?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

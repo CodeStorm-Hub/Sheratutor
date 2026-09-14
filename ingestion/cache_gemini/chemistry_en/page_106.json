@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 106,
+  "pdf_page_no": 111,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Identifying ionic and covalent compounds among locally available products.\n\nPut edible salt, kerpoor, naphthalene, washing soda etc. in different beakers containing water. Stir them with a glass tube and mix them properly. Those which got dissolved in water are ionic compounds and those which did not are covalent compounds. You can divide all compounds into two categories by the same process",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. What is the name of the attraction force which keeps the atoms bonded in a molecule?\n\na. Electron affinity \nb. Electronegativity\nc. chemical bond \nd. Van Der Waals force\n\n2. The formation of which molecule below attains the electronic configuration of neon?\n\na. $KF$ \nb. $CaS$\nc. $MgO$ \nd. $NaCl$",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

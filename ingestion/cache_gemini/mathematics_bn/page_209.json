@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 209,
+  "pdf_page_no": 214,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ:",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) মাতা ও কন্যার বর্তমান বয়সের সমষ্টি $s$ বছর। তাদের বয়সের অনুপাত $t$ বছর পূর্বে ছিল $r : p$। $x$ বছর পরে তাদের বয়সের অনুপাত কত হবে?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) একটি ল্যাম্পপোস্ট থেকে $p$ মিটার দূরে দাঁড়ানো $r$ মিটার উচ্চতা বিশিষ্ট এক ব্যক্তির ছায়ার দৈর্ঘ্য $s$ মিটার। ল্যাম্পপোস্টের উচ্চতা $p, r$ ও $s$ এর মাধ্যমে নির্ণয় কর।",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. পিতা ও পুত্রের বর্তমান বয়সের অনুপাত $7 : 2$ এবং $5$ বছর পরে তাদের বয়সের অনুপাত $8 : 3$ হবে। তাদের বর্তমান বয়স কত?\n\nসমাধান: মনে করি, পিতার বর্তমান বয়স $a$ বছর এবং পুত্রের বর্তমান বয়স $b$ বছর।\n\nপ্রশ্নের প্রথম ও দ্বিতীয় শর্তানুসারে যথাক্রমে পাই,\n$$\\frac{a}{b} = \\frac{7}{2} \\dots (1)$$\n$$\\frac{a + 5}{b + 5} = \\frac{8}{3} \\dots (2)$$\n\nসমীকরণ (1) থেকে পাই,\n$$a = \\frac{7b}{2} \\dots (3)$$\n\nসমীকরণ (2) থেকে পাই,\n$$3(a + 5) = 8(b + 5)$$\nবা, $3a + 15 = 8b + 40$\nবা, $3a - 8b = 40 - 15$\nবা, $3 \\times \\frac{7b}{2} - 8b = 25$ [(3) ব্যবহার করে]\nবা, $\\frac{21b - 16b}{2} = 25$\nবা, $5b = 50$\n$\\therefore b = 10$\n\nসমীকরণ (3) এ $b = 10$ বসিয়ে পাই, $a = \\frac{7 \\times 10}{2} = 35$\n\n$\\therefore$ পিতার বর্তমান বয়স $35$ বছর এবং পুত্রের বর্তমান বয়স $10$ বছর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. যদি $a : b = b : c$ হয়, তবে প্রমাণ কর যে, $\\left( \\frac{a + b}{b + c} \\right)^2 = \\frac{a^2 + b^2}{b^2 + c^2}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

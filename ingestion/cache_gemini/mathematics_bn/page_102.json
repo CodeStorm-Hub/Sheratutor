@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 102,
+  "pdf_page_no": 107,
+  "chapter_no": 5,
+  "chapter_title": "এক চলকবিশিষ্ট সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আমরা অষ্টম শ্রেণিতে $x^2 + px + q$ এবং $ax^2 + bx + c$ আকারের এক চলকবিশিষ্ট দ্বিঘাত রাশির উৎপাদকে বিশ্লেষণ করেছি। এখানে আমরা $x^2 + px + q = 0$ এবং $ax^2 + bx + c = 0$ আকারের দ্বিঘাত সমীকরণের বামপক্ষকে উৎপাদকে বিশ্লেষণ করে চলকের মান নির্ণয়ের মাধ্যমে এরূপ সমীকরণ সমাধান করবো।\n\nউৎপাদকে বিশ্লেষণ পদ্ধতিতে বাস্তব সংখ্যার একটি গুরুত্বপূর্ণ ধর্ম প্রয়োগ করা হয়। ধর্মটি নিম্নরূপ:\n\nযদি দুইটি রাশির গুণফল শূন্য হয়, তবে রাশিদ্বয়ের যেকোনোটি অথবা উভয় রাশি শূন্য হবে। অর্থাৎ, দুইটি রাশি $a$ ও $b$ এর গুণফল $ab = 0$ হলে, $a = 0$ বা, $b = 0$, অথবা $a = 0$ এবং $b = 0$ হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. সমাধান কর: $(x + 2)(x - 3) = 0$\n\nসমাধান: $(x + 2)(x - 3) = 0$\n$\\therefore x + 2 = 0$ অথবা $x - 3 = 0$\n$x + 2 = 0$ হলে, $x = -2$\nআবার, $x - 3 = 0$ হলে, $x = 3$\n$\\therefore$ সমাধান $x = -2$ অথবা $x = 3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯. সমাধান সেট নির্ণয় কর: $y^2 = \\sqrt{3}y$\n\nসমাধান: $y^2 = \\sqrt{3}y$\nবা, $y^2 - \\sqrt{3}y = 0$ [পক্ষান্তর করে ডানপক্ষ শূন্য করা হয়েছে]\nবা, $y(y - \\sqrt{3}) = 0$\n$\\therefore y = 0$ অথবা $y - \\sqrt{3} = 0$\nআবার, $y - \\sqrt{3} = 0$ হলে, $y = \\sqrt{3}$\n$\\therefore$ সমাধান সেট $\\{0, \\sqrt{3}\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১০. সমাধান কর ও সমাধান সেট লেখ: $x - 4 = \\frac{x - 4}{x}$\n\nসমাধান: $x - 4 = \\frac{x - 4}{x}$\nবা, $x(x - 4) = x - 4$ [আড়গুণন করে]\nবা, $x(x - 4) - (x - 4) = 0$ [পক্ষান্তর করে]\nবা, $(x - 4)(x - 1) = 0$\n$\\therefore x - 4 = 0$ অথবা $x - 1 = 0$\n$x - 4 = 0$ হলে, $x = 4$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

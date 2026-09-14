@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 157,
+  "pdf_page_no": 162,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$ \\text{ZnSO}_4 + 7\\text{H}_2\\text{O} \\xrightarrow{\\quad\\quad\\quad} \\text{ZnSO}_4 \\cdot 7\\text{H}_2\\text{O} $$ $$ \\text{Heptahydrate Zinc Sulfate} $$ $$ \\text{FeSO}_4 + 7\\text{H}_2\\text{O} \\xrightarrow{\\quad\\quad\\quad} \\text{FeSO}_4 \\cdot 7\\text{H}_2\\text{O} $$ $$ \\text{Heptahydrate Ferrous Sulfate} $$ $$ \\text{CaCl}_2 + 6\\text{H}_2\\text{O} \\xrightarrow{\\quad\\quad\\quad} \\text{CaCl}_2 \\cdot 6\\text{H}_2\\text{O} $$ $$ \\text{Hexahydrate Calcium Chloride} $$ $$ \\text{MgCl}_2 + 7\\text{H}_2\\text{O} \\xrightarrow{\\quad\\quad\\quad} \\text{MgCl}_2 \\cdot 7\\text{H}_2\\text{O} $$ $$ \\text{Heptahydrate Magnesium Chloride} $$  A hydration reaction is basically similar to an addition reaction. However, in addition reactions, there is electron exchange while in hydration, there is none.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Isomerization Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "**Isomerization Reaction:** Two compounds with similar molecular formula but with different properties are called isomers of each other. A chemical reaction in which atoms in a molecule rearrange themselves to form one isomer from another isomer is called isomerization. For example, $\\text{H}_4\\text{N}_2\\text{CO}$ molecular formula denotes two compounds with varied structural formula: $\\text{NH}_4\\text{CNO}$ (ammonium cyanate) and urea ($\\text{H}_2\\text{N}-\\text{CO}-\\text{NH}_2$). They are isomers of each other. When heat is applied to ammonium cyanate, it produces urea.  $$ \\text{NH}_4\\text{CNO} \\xrightarrow{\\text{Heat}} \\text{H}_2\\text{N}-\\text{CO}-\\text{NH}_2 $$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Polymerization Reaction",
+      "chunk_type": "theory",
+      "content_markdown": "**Polymerization Reaction:** A large number of molecules of the same compound combine together to form a large molecule of heavy atomic mass, at high temperature and pressure and in the presence of a catalyst. This reaction is called polymerization. In such cases, the large molecule is called a polymer and each of the smaller molecules that combine together are called monomers. Under the effect of 1200 atm. pressure, $200^\\circ\\text{C}$ temperature and $\\text{O}_2$ catalyst, numerous smaller molecules of ethylene combine into a large polymer molecule of polythene. This reaction is polymerization reaction of ethylene. Here, ethylene molecules are the monomers while polythene molecule is the polymer. In the equation, $n$ denotes the number of molecules.  $$ n(\\text{CH}_2=\\text{CH}_2) \\xrightarrow[200^\\circ\\text{C}, 1200 \\text{ atm}]{\\text{O}_2} (-\\text{CH}_2-\\text{CH}_2-)_n $$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

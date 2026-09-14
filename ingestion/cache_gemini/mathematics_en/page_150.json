@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 150,
+  "pdf_page_no": 155,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "1. From any ray $BF$ cut the line segment $BC$ equal to $a$. At $B$ of the line segment $BC$ draw an angle $\\angle CBF = \\angle x$.\n2. Cut a line segment $BD$ equal to $d$ from the ray $BE$.\n3. Join $C, D$ and at $C$ make an angle $\\angle DCA$ equal to $\\angle EDC$ on the side of $DC$ in which $E$ lies.\n\nLet the ray $CA$ intersect $BE$ at $A$. Then, $\\triangle ABC$ is the required triangle.\n\n**Proof:** By construction, in $\\triangle ACD$, $\\angle ACD = \\angle ADC$\n\n$\\therefore AD = AC$\n\nSo, the difference of two sides, $AB - AC = AB - AD = BD = d$\n\nNow, in $\\triangle ABC$, $BC = a$, $AB - AC = d$ and $\\angle ABC = \\angle x$\n\nTherefore, $\\triangle ABC$ is the required triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n\n1) If the given angle is not acute, the above construction is not possible. Why? Explore any way for the construction of the triangle under such circumstances.\n\n2) The base, the base adjacent angle and the difference of the other two sides of a triangle are given. Construct the triangle in an alternate method.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "7.3",
+      "section_title": "Construction 3",
+      "chunk_type": "theory",
+      "content_markdown": "Construction 3. Two angles adjacent to the base and the perimeter of a triangle are given. Construct the triangle.\n\nLet the perimeter $p$ and base adjacent angles $\\angle x$ and $\\angle y$ be given. It is required to construct the triangle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of a triangle",
+      "figure_no": "7.01",
+      "box_2d": [
+        86,
+        585,
+        245,
+        882
+      ],
+      "description": "Geometric construction diagram showing triangle ABC with base BC, ray BF, and ray BE intersecting at A, with segments a, d, and angle x.",
+      "reading_order_anchor": "1. From any ray BF cut the line segment BC"
+    }
+  ]
+}

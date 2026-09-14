@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 92,
+  "pdf_page_no": 97,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": "4.1",
+      "section_title": "Scientific or Standard Form of Numbers",
+      "chunk_type": "theory",
+      "content_markdown": "We can express very large numbers or very small numbers easily by using exponents. Such as, the velocity of light $= 300000 \\text{ km/sec} = 300000000 \\text{ m/sec} = 3 \\times 100000000 \\text{ m/sec} = 3 \\times 10^8 \\text{ m/sec}$. Again, the radius of a hydrogen atom $= 0.0000000037 \\text{ cm} = \\frac{37}{10000000000} \\text{ cm} = 37 \\times 10^{-10} \\text{ cm} = 3.7 \\times 10 \\times 10^{-10} \\text{ cm} = 3.7 \\times 10^{-9} \\text{ cm}$. For convenience, very large or very small numbers are expressed in the form $a \\times 10^n$ where, $1 \\le a < 10$ and $n \\in \\mathbb{Z}$. The number of the form $a \\times 10^n$ is called the scientific or standard form of number.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work: Express the following numbers in scientific form :\n1) $15000$ 2) $0.000512$ 3) $123.000512$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "4.2",
+      "section_title": "Logarithmic Methods",
+      "chunk_type": "theory",
+      "content_markdown": "Logarithmic systems are of two kinds :\n1) Natural Logarithm: Mathematician John Napier (1550-1617) of Scotland published the first book on logarithms in 1614 by taking $e$ as its base. $e$ is an irrational number, $e = 2.71828....$ Such logarithms are called Napierian logarithm or $e$ based logarithm or natural logarithm. $\\log_e x$ is also written in the form $\\ln x$.\n2) Common Logarithm: Mathematician Henry Briggs (1561-1630) of England prepared a table of logarithm (log table) in 1624 with $10$ as the base. This logarithm is called Briggs logarithm or $10$ based logarithm or practical logarithm. This logarithm is written as $\\log_{10} x$.\nNote: If there is no mention of base, in case of algebraic expressions $e$ and in case of numbers $10$, are considered the base. In log table $10$ is taken as the base.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 266,
+  "pdf_page_no": 271,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$5x + \\frac{y}{12} = y$$\n\nor, $$y - \\frac{y}{12} = 5x$$\n\nor, $$\\frac{11}{12}y = 5x$$\n\n$$\\therefore y = \\frac{60}{11}x$$\n\nNow we put the possible values of $$x$$:\n\nIf $$x = 0$$, $$y = 0$$ minute i.e. $$12 : 00$$.\n\nIf $$x = 1$$, $$1 : 5\\frac{5}{11}$$ minute.\n\nIf $$x = 2$$, $$2 : 10\\frac{10}{11}$$ minute.\n\n$$... ... ...$$\n\nIf $$x = 11$$, $$11 : 60$$ minute or, $$12 : 00$$.\n\nAs the first and last times are same, these two hands coincides 11 times and the times are: $$x : \\frac{60}{11}x$$ minute.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Work:** If in triangle $$ABC$$, $$\\angle B = 2x^\\circ$$, $$\\angle C = x^\\circ$$, $$\\angle A = y^\\circ$$ and $$\\angle A = \\angle B + \\angle C$$, find the value of $$x$$ and $$y$$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

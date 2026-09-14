@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 27,
+  "pdf_page_no": 32,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Melting point of impure substances is lesser than that of pure substances. It is opposite in the case with boiling point. A mixed matter will have no fixed melting and boiling point. Since all pure solids have a specific melting point, they melt at that temperature. If a solid substance melts at any other temperature, the solid can be declared impure. Again, if it melts over a range of temperatures, it is impure too. For example: the melting point of sulfur at 1 atm is $115^\\circ\\text{C}$. But in an experiment, if sulfur melts at any other temperature or range of temperatures, the sample of sulfur can be declared adulterated. Therefore, finding the melting point can be a way to find the purity of solid substances.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Individual Task",
+      "chunk_type": "theory",
+      "content_markdown": "Individual Task",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "Experiment 5",
+      "chunk_type": "theory",
+      "content_markdown": "### Experiment 5\n\n**Boiling Point of Liquids**\n\nSome sample of the liquid (Example: water), the boiling point of which needs be determined, is taken in a beaker. The beaker is fixed with a thermometer. Now, the beaker will be heated carefully with a Bunsen burner. At a certain temperature, the water in the beaker will turn into vapor. That temperature is the boiling point of water. All the water in the beaker will vaporize at $100^\\circ\\text{C}$.\n\nThat sets the boiling point of water at $100^\\circ\\text{C}$ (at $1\\text{ atm}$). Since each liquid matter has a specific boiling point, so a boiling point cannot be the same for",
+      "activity_tag": "Experiment"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.07: Melting point of wax.",
+      "figure_no": "2.07",
+      "box_2d": [
+        175,
+        172,
+        467,
+        386
+      ],
+      "description": "Scientific apparatus setup for determining melting point, showing a ring stand, clamp, test tube containing a substance inside a beaker of liquid heated by a Bunsen burner, and a thermometer.",
+      "reading_order_anchor": "Melting point of impure substances is lesser than that of pure substances."
+    }
+  ]
+}

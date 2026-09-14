@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 27,
+  "pdf_page_no": 32,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, the relative error = $21 \\text{ cm}^2 / 100 \\text{ cm}^2 = 0.21$\n\nIn percentage, $0.21 \\times 100 = 21\\%$\n\nIf the error in the measurement of the length is $10\\%$, then in the case of area it will be approximately double. Similarly you can show that in the case of volume measurements the error will be three times!",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** You have measured a box by a ruler which is graduated only in cm. You have got the length, breadth and height of the box as $10\\text{ cm}$, $5\\text{ cm}$ and $4\\text{ cm}$ respectively. What is the percentage of error in your measurements?\n\n**Answer:** Since your ruler is graduated only in cm, so your error is $\\pm 0.5\\text{ cm}$.\nTherefore the error in your measurements:\n* Length: $10 \\pm 0.5\\text{ cm}$\n* Breadth: $5 \\pm 0.5\\text{ cm}$\n* Height: $4 \\pm 0.5\\text{ cm}$\n\nYour measured volume: $10\\text{ cm} \\times 5\\text{ cm} \\times 4\\text{ cm} = 200\\text{ cm}^3$\n\nProbable smallest volume:\n$$(10 - 0.5)\\text{ cm} \\times (5 - 0.5)\\text{ cm} \\times (4 - 0.5)\\text{ cm} = 149.625\\text{ cm}^3$$\n\nProbable largest volume:\n$$(10 + 0.5)\\text{ cm} \\times (5 + 0.5)\\text{ cm} \\times (4 + 0.5)\\text{ cm} = 259.875\\text{ cm}^3$$\n\nTherefore the volume,\n$$149.625\\text{ cm}^3 < V < 259.875\\text{ cm}^3$$\n\nAbsolute error:\nFrom $149.625\\text{ cm}^3$ to $200\\text{ cm}^3$ is $200\\text{ cm}^3 - 149.625\\text{ cm}^3 = 50.375\\text{ cm}^3$\nFrom $200\\text{ cm}^3$ to $259.875\\text{ cm}^3$ is $259.875\\text{ cm}^3 - 200\\text{ cm}^3 = 59.875\\text{ cm}^3$\n\nConsidering the largest value we have the absolute error $59.875\\text{ cm}^3$\n\nRelative error: $(59.875\\text{ cm}^3 / 200\\text{ cm}^3) \\times 100 = 29.9375\\% \\cong 30\\%$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

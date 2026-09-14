@@ -1,0 +1,67 @@
+{
+  "printed_page_no": 217,
+  "pdf_page_no": 222,
+  "chapter_no": 10,
+  "chapter_title": "Distance and Elevation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Let, the height of the stick from the foot leaned against the tree of $AB = 7$ metre and angle of depression $\\angle DBC = 30^\\circ$.\n$\\therefore \\angle ACB = \\angle DBC = 30^\\circ$ [alternate angle]\nFrom right-angled $\\triangle ABC$ we get,\n$\\sin \\angle ACB = \\frac{AB}{BC}$ or, $\\sin 30^\\circ = \\frac{7}{BC}$\nor, $\\frac{1}{2} = \\frac{7}{BC}$ $\\left[ \\because \\sin 30^\\circ = \\frac{1}{2} \\right]$\n$\\therefore BC = 14$\n$\\therefore$ The required height of the stick is 14 metre.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\nIn the figure, if depression angle $\\angle CAE = 60^\\circ$, elevation angle $\\angle ADB = 30^\\circ$, $AC = 36$ metre, $AB \\perp DC$ and $D, C, B$ lie on the same straight line, find the lengths of the sides $AD, AB$ and $CD$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. The angle of elevation at a point of the roof of a building is $60^\\circ$ in any point on the ground. Moving back 42 metre from the angle of elevation of the point of the place of the building becomes $45^\\circ$. Find the height of the building.\n\nSolution: Let, the height of the building is $AB = h$ metres. The angle of elevation at the top $\\angle ACB = 60^\\circ$. The angle of elevation becomes $\\angle ADB = 45^\\circ$ moving back from $C$ by $CD = 42$ metre.\nLet, $BC = x$ metre.\n$\\therefore BD = BC + CD = (x + 42)$ metre.\nFrom $\\triangle ABC$ we get,\n$\\tan \\angle ACB = \\frac{AB}{BC}$ or, $\\tan 60^\\circ = \\frac{h}{x}$\nor, $\\sqrt{3} = \\frac{h}{x}$ $\\left[ \\because \\tan 60^\\circ = \\sqrt{3} \\right]$\n$\\therefore x = \\frac{h}{\\sqrt{3}} \\dots (1)$\nAgain, from $\\triangle ABD$ we get, $\\tan \\angle ADB = \\tan 45^\\circ = \\frac{AB}{BD}$\nor, $\\tan 45^\\circ = \\frac{h}{x + 42}$ or, $1 = \\frac{h}{x + 42}$ $\\left[ \\because \\tan 45^\\circ = 1 \\right]$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Diagram for the stick problem",
+      "figure_no": "10.01",
+      "box_2d": [
+        122,
+        645,
+        275,
+        875
+      ],
+      "description": "A right-angled triangle ABC with a stick AB leaning against a tree, showing angle of depression and elevation.",
+      "reading_order_anchor": "Solution: Let, the height of the stick from the foot"
+    },
+    {
+      "caption": "Fig 10.02: Diagram for the Work problem",
+      "figure_no": "10.02",
+      "box_2d": [
+        375,
+        625,
+        485,
+        885
+      ],
+      "description": "A geometric diagram showing a triangle with angles 30 and 60 degrees and side length 36m.",
+      "reading_order_anchor": "Work:"
+    },
+    {
+      "caption": "Fig 10.03: Diagram for Example 5",
+      "figure_no": "10.03",
+      "box_2d": [
+        685,
+        645,
+        845,
+        875
+      ],
+      "description": "A geometric diagram showing two triangles with angles 45 and 60 degrees, representing a building and ground distance.",
+      "reading_order_anchor": "Example 5. The angle of elevation at a point of the roof of a building is 60° in"
+    }
+  ]
+}

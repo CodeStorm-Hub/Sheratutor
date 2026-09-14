@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 291,
+  "pdf_page_no": 296,
+  "chapter_no": 15,
+  "chapter_title": "ক্ষেত্রফল সম্পর্কিত উপপাদ্য",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আঁকতে হবে যার একটি কোণ প্রদত্ত $\\angle x$ এর সমান এবং সীমাবদ্ধ ক্ষেত্রের ক্ষেত্রফল $ABCD$ ক্ষেত্রের ক্ষেত্রফলের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**অঙ্কন:** $B, D$ যোগ করি। $C$ বিন্দু দিয়ে $CF \\parallel DB$ টানি এবং মনে করি, $CF, AB$ বাহুর বর্ধিতাংশকে $F$ বিন্দুতে ছেদ করে। $AF$ রেখাংশের মধ্যবিন্দু $G$ নির্ণয় করি। $AG$ রেখাংশের $A$ বিন্দুতে $\\angle x$ এর সমান $\\angle GAK$ আঁকি এবং $G$ বিন্দু দিয়ে $GH \\parallel AK$ টানি। $D$ বিন্দু দিয়ে $KDH \\parallel AG$ টানি এবং মনে করি, তা $AK$ ও $GH$ কে যথাক্রমে $K$ ও $H$ বিন্দুতে ছেদ করে। তাহলে, $AGHK$ ই উদ্দিষ্ট সামান্তরিক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**প্রমাণ:** $D, F$ যোগ করি। $AGHK$ একটি সামান্তরিক [অঙ্কন অনুসারে]\n\nযেখানে, $\\angle GAK = \\angle x$। আবার, $\\triangle DAF$ এর ক্ষেত্রফল = চতুর্ভূজক্ষেত্র $ABCD$ এর ক্ষেত্রফল এবং সামান্তরিক ক্ষেত্র $AGHK$ এর ক্ষেত্রফল = $\\triangle DAF$ এর ক্ষেত্রফল।\n\nঅতএব, $AGHK$ ই নির্ণেয় সামান্তরিক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### অনুশীলনী ১৫\n\n১. ত্রিভুজের তিনটি বাহুর দৈর্ঘ্য দেওয়া আছে; নিচের কোন ক্ষেত্রে সমকোণী ত্রিভুজ অঙ্কন সম্ভব নয়?\nক) ৩ সে.মি., ৪ সে.মি., ৫ সে.মি. খ) ৬ সে.মি., ৮ সে.মি., ১০ সে.মি.\nগ) ৫ সে.মি., ৭ সে.মি., ৯ সে.মি. ঘ) ৫ সে.মি., ১২ সে.মি., ১৩ সে.মি.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "২. সমতলীয় জ্যামিতিতে\n(i) প্রত্যেক সীমাবদ্ধ সমতলক্ষেত্রের নির্দিষ্ট ক্ষেত্রফল রয়েছে\n(ii) দুইটি ত্রিভুজক্ষেত্রের ক্ষেত্রফল সমান হলেই ত্রিভুজ দুইটি সর্বসম\n(iii) দুইটি ত্রিভুজ সর্বসম হলে এদের ক্ষেত্রফল সমান\n\nনিচের কোনটি সঠিক?\nক) i ও ii খ) i ও iii গ) ii ও iii ঘ) i, ii ও iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "পাশের চিত্রে, $\\triangle ABC$ সমবাহু, $AD \\perp BC$ এবং $AB = 2$\n\nউপর্যুক্ত তথ্যের ভিত্তিতে ৩ ও ৪ নং প্রশ্নের উত্তর দাও:",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: পাশের চিত্রে, $\\triangle ABC$ সমবাহু, $AD \\perp BC$ এবং $AB = 2$",
+      "figure_no": "15.01",
+      "box_2d": [
+        750,
+        735,
+        856,
+        873
+      ],
+      "description": "একটি সমবাহু ত্রিভুজ ABC যার উচ্চতা AD এবং AB বাহুর দৈর্ঘ্য 2 একক।",
+      "reading_order_anchor": "পাশের চিত্রে, $\\triangle ABC$ সমবাহু, $AD \\perp BC$ এবং $AB = 2$"
+    }
+  ]
+}

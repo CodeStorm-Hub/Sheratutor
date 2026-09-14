@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 236,
+  "pdf_page_no": 241,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Igneous Rock",
+      "chunk_type": "theory",
+      "content_markdown": "The molten mix of different substances that pour out from the volcanoes is called magma. When magma cools down and solidifies it is called igneous rock. Granite is an example of this rock. Igneous rock is the source of many minerals.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Sedimentary Rock",
+      "chunk_type": "theory",
+      "content_markdown": "As an effect of weather and climate, rainfall, wind, fog storms etc. clay and sand from the earth's crust is washed or blown away which again gathers in some places as sediment. Then different particles in that sediment organize themselves in layers and transform into a rock which is known as sedimentary rock. An example of this is sandy stone.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "Metamorphic Rock",
+      "chunk_type": "theory",
+      "content_markdown": "At various pressures and temperatures, the igneous and sedimentary rocks transform into a new kind of rock which is called a metamorphic rock. Coal is this kind of a rock.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.4",
+      "section_title": "Formation of Different Layers of Sub-surface Rocks",
+      "chunk_type": "theory",
+      "content_markdown": "Rocks are organized in different layers underground. Gravitational force, temperature, pressure and natural force etc. help form different layers of rocks underground.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.2: Igneous rock, Sedimentary rock and Metamorphic rocks.",
+      "figure_no": "10.2",
+      "box_2d": [
+        244,
+        117,
+        427,
+        864
+      ],
+      "description": "Photographs showing examples of igneous, sedimentary, and metamorphic rocks.",
+      "reading_order_anchor": "Igneous Rock"
+    },
+    {
+      "caption": "Fig 10.03: Layers of Rocks.",
+      "figure_no": "10.03",
+      "box_2d": [
+        642,
+        508,
+        886,
+        862
+      ],
+      "description": "Diagram illustrating the internal layers of the Earth and sub-surface rock strata.",
+      "reading_order_anchor": "Formation of Different Layers of Sub-surface Rocks"
+    }
+  ]
+}

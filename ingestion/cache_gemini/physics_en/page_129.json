@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 129,
+  "pdf_page_no": 134,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": "5.1",
+      "section_title": "Pressure",
+      "chunk_type": "theory",
+      "content_markdown": "Though we use the word 'pressure' in our everyday conversation in many ways, the word has a definite meaning in physics. We have talked about applying many kinds of forces at different times in the previous chapters. But how the force will be applied was untold. For example you can push a stone with your one hand, two hands or with your whole body (Fig. 5.01). Though you apply the same amount of force every time, the pressure will be different. In the first case you applied force through the area of your palm. If your applied force is $F$, area of your palm is $A$ then the pressure\n\n$$P = \\frac{F}{A}$$\n\n$$\\text{Unit of pressure: } \\frac{\\text{N}}{\\text{m}^2} \\text{ or } \\text{Pa (Pascal)}$$\n\n$$\\text{Dimension of pressure } [P] = ML^{-1}T^{-2}$$\n\nTherefore, in the second case because of using two hands, the pressure will be half as the area through which the force is being applied is doubled. In the third case, you applied force through your whole body, so the area through which force is applied will increase more and pressure will be decreased more.\n\nForce is a vector, so you may think that pressure $P$ is a vector! But the interesting matter is pressure $P$ is a scalar quantity and if we want to write it perfectly then it should be written like as:\n\n$$F = PA$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 5.01: Pressure depends on the area through which force is applied",
+      "figure_no": "5.01",
+      "box_2d": [
+        766,
+        120,
+        903,
+        891
+      ],
+      "description": "Three illustrations showing a person pushing a large stone using one hand, two hands, and the whole body, respectively.",
+      "reading_order_anchor": "5.1 Pressure"
+    }
+  ]
+}

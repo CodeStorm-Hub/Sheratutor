@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 383,
+  "pdf_page_no": 388,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Exercises 12.3",
+      "chunk_type": "theory",
+      "content_markdown": "1. $(2, 2)$ 2. $(2, 3)$ 3. $(-\\frac{7}{3}, \\frac{3}{3})$\n4. $(4, 5)$ 5. $(2, 3)$ 6. $(\\frac{1}{2}, \\frac{1}{2})$\n7. $(1, \\frac{1}{2})$ 8. $(2, 6)$ 9. $-2$\n10. $2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercises 12.4",
+      "chunk_type": "theory",
+      "content_markdown": "10. $\\frac{7}{9}$ 11. $\\frac{15}{26}$ 12. $27$\n13. $37$ or $73$ 14. $30$ years 15. length $17$ m., width $9$ m.\n16. speed of boat $10$ km/hr 17. Tk. $4000$, Tk. $125$ 20. $11$ and $6$ 21. $\\frac{29}{57}$\n22. $40$ and $20$ m./sec 23. $7$ 24. $22$ times",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercises 13.1",
+      "chunk_type": "theory",
+      "content_markdown": "5. $-7$ and $-75$ 6. $129$th 7. $100$th\n8. $0$ 9. $n^2$ 10. $360$\n11. $320$ 12. $42$ 13. $1771$\n14. $-620$ 15. $18$ 16. $50$\n17. $2 + 4 + 6 + \\dots$ 18. $110$ 19. $0$\n20. $-(m + n)$ 23. $50$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Exercises 13.2",
+      "chunk_type": "theory",
+      "content_markdown": "5. $\\frac{1}{2}$ 6. $\\frac{3}{2}(3^{14} - 1)$ 7. $9$th element\n8. $\\frac{1}{\\sqrt{3}}$ 9. $9$th element 10. $x = 15$ and $y = 45$\n11. $x = 9, y = 27, z = 81$ 12. $86$ 13. $1$\n14. $55\\log 2$ 15. $650\\log 2$ 16. $n = 7$\n17. $0$ 18. $n = 6, S = 21$ 19. $n = 5, S = 55$\n21. $20$ 22. $24.47$ mm. (approx)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 284,
+  "pdf_page_no": 289,
+  "chapter_no": 13,
+  "chapter_title": "Finite Series",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 10. What is the sum of the series $12 + 24 + 48 + \\dots + 768$?\n\nSolution: The first term of the series is $a = 12$, common ratio $r = \\frac{24}{12} = 2 > 1$\n\n$\\therefore$ it is a geometric series.\n\nLet, the $n$th term of the series $= 768$\n\nWe know, the $n$th term $= ar^{n-1}$\n\n$\\therefore ar^{n-1} = 768$\n\nor, $12 \\times 2^{n-1} = 768$\n\nor, $2^{n-1} = \\frac{768}{12} = 64$\n\nor, $2^{n-1} = 2^6$\n\nor, $n - 1 = 6$\n\n$\\therefore n = 7$\n\nTherefore, the sum of the series $= \\frac{a(r^n - 1)}{(r - 1)}$, when $r > 1$\n\n$= \\frac{12(2^7 - 1)}{2 - 1} = 12 \\times (128 - 1) = 12 \\times 127 = 1524$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 11. Find the sum of the first eight terms of the series $1 + \\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\dots$\n\nSolution: The first term of the series $a = 1$, common ratio $r = \\frac{\\frac{1}{2}}{1} = \\frac{1}{2} < 1$.\n\n$\\therefore$ It is a geometric series. Here the number of terms $n = 8$.\n\nWe know, sum of $n$ terms of a geometric series\n\n$S_n = \\frac{a(1 - r^n)}{1 - r}$, when $r < 1$\n\nHence, sum of eight terms of the series is $S_8 = \\frac{1 \\times \\left\\{1 - \\left(\\frac{1}{2}\\right)^8\\right\\}}{1 - \\frac{1}{2}} = \\frac{1 - \\frac{1}{256}}{\\frac{1}{2}}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

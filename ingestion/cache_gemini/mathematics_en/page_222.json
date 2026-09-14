@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 222,
+  "pdf_page_no": 227,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "It is important for us to have a clear conception of ratio and proportion in mathematics. Arithmetical ratio and proportion have been elaborately discussed in class VII. In this chapter, algebraic ratio and proportion will be discussed. We regularly use the concept of ratio and proportion in many applications: the production of construction materials, food staff and goods, applying fertilizer in land, making beautiful shapes and design to make things attractive and good looking, and so on. Many problems of daily lives can also be solved by using the concept of ratio and proportion.\n\nAfter studying this chapter, the students will be able to\n\n- explain algebraic ratio and proportion.\n- use different types of rules of transformation related to proportion.\n- learn successive proportion.\n- use ratio, proportion, successive proportion in solving real life problems.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.1",
+      "section_title": "Ratio and Proportion",
+      "chunk_type": "theory",
+      "content_markdown": "### Ratio\n\nIf we have two quantities (or numbers) of the same unit, we can express one quantity as a multiple (or a fraction) of the other quantity. This fraction is called the ratio of two quantities. Thus, a ratio says how much of one thing there is compared to another thing.\n\nThe ratio of two quantities $p$ and $q$ is written as $p : q = \\frac{p}{q}$. These two quantities, $p$ and $q$ are of same kind and same unit. Here, $p$ is called antecedent and $q$ is called subsequent of the ratio.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 90,
+  "pdf_page_no": 95,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "of a cycle, it presses the wheel and ceases the motion of the rotating wheel due to kinetic friction. The kinetic friction depends on the weight of the moving body, the more the weight, the more the kinetic friction. If an object has a mass $M$, then its weight $W = Mg$ is a force. Then the kinetic friction can be written as, $f = \\mu W$, $\\mu$ is the coefficient of kinetic friction.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Rolling friction",
+      "chunk_type": "theory",
+      "content_markdown": "**Rolling friction:** When an object moves by rolling or revolving on a surface then the friction that develops is called the rolling friction. Among all the frictional forces, this is the least, so we attach wheels on all kind of vehicles. It is very easy to pull suitcases attached with wheels, if suitcases have no wheels, it would become very difficult for us to pull it on the floor.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Release a paper from a certain height and guess the time required by the paper to reach the ground. Now shape the paper into a small ball and then release it. What is the time required now to reach the ground? Why?",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.17: Uses of Parachute, Apollo 15 is landing in the sea",
+      "figure_no": "3.17",
+      "box_2d": [
+        352,
+        233,
+        676,
+        789
+      ],
+      "description": "An aerial photograph of the Apollo 15 spacecraft landing in the sea using red and white parachutes.",
+      "reading_order_anchor": "Rolling friction"
+    }
+  ]
+}

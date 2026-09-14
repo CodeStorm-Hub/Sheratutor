@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 198,
+  "pdf_page_no": 203,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** Figure 7.08 shows a wave at a particular time in different position and for a particular positions in different times. Determine its amplitude, wavelength, time period, frequency, and velocity.\n\n**Answer:** From the first figure we see that, the wave has,\nAmplitude, $a = 0.1\\text{ m}$\nWavelength, $\\lambda = 1\\text{ m}$\n\nFrom the second figure we see that, the wave has,\nAmplitude, $a = 0.1\\text{ m}$ (we know it from the first figure also)\nTime period, $T = 0.2\\text{ s}$\nWe can calculate frequency $f$ from the time period,\n$$f = \\frac{1}{T} = \\frac{1}{0.2} = 5\\text{ Hz}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Therefore, using the information of the two figures, we can say\n$$v = \\lambda f = 1\\text{ m} \\times 5\\text{ Hz} = 5\\text{ m/s}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** In figure 7.09 a wave is shown, where A, B, C, D and E is marked as different positions. At which positions are the phases equal?\n\n**Answer:** At A and C, phases are equal.\nAt A and B, though the amplitudes are equal their phases are opposite.\nAt D and E, though they are equal, phases are not equal.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 7.08: A wave with respect to position and time simultaneously",
+      "figure_no": "7.08",
+      "box_2d": [
+        492,
+        126,
+        650,
+        861
+      ],
+      "description": "Two graphs showing displacement versus position and displacement versus time for a wave.",
+      "reading_order_anchor": "Question: Figure 7.08 shows a wave at a particular time in different position"
+    }
+  ]
+}

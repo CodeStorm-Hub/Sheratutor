@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 366,
+  "pdf_page_no": 371,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \\text{Median} = \\frac{\\frac{60}{2}\\text{th term} + (\\frac{60}{2} + 1)\\text{th term}}{2} = \\frac{30\\text{th term} + 31\\text{th term}}{2} = \\frac{70 + 80}{2} = 75$$\n\n$\\therefore \\text{Required median } 75$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n1) Make frequency distribution table of the heights (in cm.) of 49 students of your class and find the mean without using any formula.\n2) From the above problem, deduct the heights of 9 students and then find the median of heights (in cm.) of 40 students.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Determining Median of Classified Data: If the number of classified data is $n$, the value of $\\frac{n}{2}$th term of classified data is median. And the formula used to determine the median or the value of $\\frac{n}{2}$th term is : $\\text{Median} = L + \\left(\\frac{n}{2} - F_c\\right) \\times \\frac{h}{f_m}$, where $L$ is the lower limit of the median class, $n$ is the frequency, $F_c$ is the cumulative frequency of previous class to median class, $f_m$ is the frequency of median class and $h$ is the class interval.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 12. Determine median from the following frequency distribution table :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Time(sec.) | 30 - 35 | 36 - 41 | 42 - 47 | 48 - 53 | 54 - 59 | 60 - 65 |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Frequency | 3 | 10 | 18 | 25 | 8 | 6 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) What is a frequency distribution table?\n2) Determine median from the frequency distribution table given above.\n3) Draw the frequency polygon of the given data.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution:\n1) Frequency distribution table refers to organize and tabulate a dataset by determining specific class interval and number of classes.\n2) The frequency distribution table to determine median is given below:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

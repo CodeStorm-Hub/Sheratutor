@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 14,
+  "pdf_page_no": 19,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "substance and luminous intensity. These internationally recognized seven units of seven fundamental quantities are called SI units, (SI came from the France language term 'System International d'Units) and these are shown in Table 1.01. Table 1.02 shows some very big to very small quantities of distance, mass and time.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Table 1.02: Very big to very small quantities of distance, mass and time",
+      "chunk_type": "table",
+      "content_markdown": "| Distance | m | Mass | kg | Time | s |\n| --- | --- | --- | --- | --- | --- |\n| Nearest galaxy | $6 \\times 10^{19}$ | Our galaxy | $2 \\times 10^{41}$ | Time since Big bang | $4 \\times 10^{17}$ |\n| Nearest star | $4 \\times 10^{16}$ | The Sun | $2 \\times 10^{30}$ | Time since Dinosaur vanished | $2 \\times 10^{14}$ |\n| Radius of solar system | $6 \\times 10^{12}$ | The Earth | $6 \\times 10^{24}$ | Time since Birth of human | $8 \\times 10^{12}$ |\n| Radius of Earth | $6 \\times 10^6$ | Ship | $7 \\times 10^7$ | Single day | $9 \\times 10^4$ |\n| Height of Everest | $9 \\times 10^3$ | Elephant | $5 \\times 10^3$ | Human heart beat | $1$ |\n| Length of virus | $1 \\times 10^{-8}$ | Man | $6 \\times 10^1$ | Life time of muon | $2 \\times 10^{-6}$ |\n| Radius of hydrogen atom | $5 \\times 10^{-11}$ | Dust | $7 \\times 10^{-7}$ | Vibration of Green light | $2 \\times 10^{-15}$ |\n| Radius of proton | $1 \\times 10^{-15}$ | Electron | $9 \\times 10^{-31}$ | Vibration of 1 MeV gamma light | $4 \\times 10^{-21}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.5.1",
+      "section_title": "Units of Measurement",
+      "chunk_type": "theory",
+      "content_markdown": "Among these units second, meter and candela are defined before by some constants.\n\nFrom May 2019 kilogram, kelvin, mole and ampere are also defined by some constant of Physics. Now it is possible to measure all units very accurately using these constant in any laboratory in the world.\n\nMagnitude of fundamental constants those are essential to measure these seven units are specified forever. The magnitude of seven constants are shown in the Table 1.03",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Table 1.03",
+      "chunk_type": "table",
+      "content_markdown": "| Constant | Magnitude |\n| --- | --- |\n| Velocity of light ($c$) | $2,99,792,458$ meter/second |\n| Plank's constant ($h$) | $6.62607015 \\times 10^{-34}$ joule second |\n| Charge of electron ($e$) | $1.602176634 \\times 10^{-19}$ coulomb |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

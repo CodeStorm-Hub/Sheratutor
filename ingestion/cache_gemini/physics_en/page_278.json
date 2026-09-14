@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 278,
+  "pdf_page_no": 283,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": "10.3.1",
+      "section_title": "Electroscope",
+      "chunk_type": "theory",
+      "content_markdown": "An electroscope is a wonderful equipment for test of static electricity. The equipment is very simple. To determine the presence of charge, it contains two light leaves of gold, aluminum or some other metal. These two leaves are connected to a metal disc by a highly conducting rod. The whole setup is kept inside a glass bottle with a nonconducting stopper so that it can be seen from outside, but air or anything else cannot touch the light metal leaves.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Charging the electroscope",
+      "chunk_type": "theory",
+      "content_markdown": "If a glass rod is rubbed by silk, positive charge is accumulated in the rod. Now if the glass rod touches the metal disc of the electroscope, some charge will immediately go to the disc. As the disc is connected with the metal rod and the leaves, the charge will spread everywhere. When similar charges appear in the gold leaves, the leaves will repulse each other and create a gap between them.\n\nSimilarly, if a comb is rubbed with flannel, negative charge will accumulate in the comb. Now if this comb touches the disc, negative charge will spread up to the gold leaves and they will repulse each other and create a gap.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Determining the Nature of Charge",
+      "chunk_type": "theory",
+      "content_markdown": "If charge is accumulated in an object, we can determine whether it is positive or negative using an electroscope. At first, we have to give some known charge to the disc of the electroscope. If we create a positive charge in the glass rod by",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 10.07: When a large amount of charge comes down to ground from clouds, we call it lightning.",
+      "figure_no": "10.07",
+      "box_2d": [
+        161,
+        548,
+        397,
+        879
+      ],
+      "description": "An illustration showing a dark storm cloud with positive charges at the top and negative charges at the bottom, discharging a bolt of lightning to the ground.",
+      "reading_order_anchor": "Electroscope"
+    },
+    {
+      "caption": "Figure 10.08: Charging an electroscope with a charged glass rod.",
+      "figure_no": "10.08",
+      "box_2d": [
+        556,
+        184,
+        835,
+        372
+      ],
+      "description": "A scientific diagram of an electroscope showing a glass bottle, a cork stopper, a metal rod with a disc at the top, and two gold leaves inside repelling each other, with a charged glass rod touching the top disc.",
+      "reading_order_anchor": "Charging the electroscope"
+    }
+  ]
+}

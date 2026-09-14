@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 117,
+  "pdf_page_no": 122,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(d) **Mechanical Energy**\n\nWhen electrical energy is produced by a generator, actually electrical energy is produced by rotating a coil of wire in a magnetic field by utilizing the mechanical energy. Heat energy is always being produced due to friction, there mechanical energy is transforming into heat energy.\n\n(e) **Light Energy:** Light is an electromagnetic wave and we can see a definite range of the wavelengths of this wave, we call this light. Waves of wavelength more or less than this range is present in nature and we have generated those in different ways. For example, in a microwave oven, we convert the electromagnetic wave into heat energy. Now-a-days using solar cell light is transformed directly into electricity. Now-a-days the uses of photographic plate is decreasing day by day, but all of us know that the presence of light in a photo sensitive photographic film generates chemical energy.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(f) **Mass:** You are definitely surprised seeing the word 'mass' suddenly in different types of transformation of energy. When we mean energy, then we never imagine the mass as energy directly. But Einstein showed using his laws of relativity, $E = mc^2$ and with the help of this equation he informed us about the possibility of transformation of mass into energy. In the nuclear bomb, the mass was transformed into energy, where a huge amount of heat, light, and sound energy destroyed the cities of Hiroshima and Nagasaki. This process of energy transformation can be used not only in nuclear bombs but also in nuclear power",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 4.05: Structure of a nuclear power center",
+      "figure_no": "4.05",
+      "box_2d": [
+        434,
+        185,
+        672,
+        853
+      ],
+      "description": "Schematic diagram of a nuclear power plant showing a nuclear reactor, steam generator, pumps, turbine, generator, and cooling tower.",
+      "reading_order_anchor": "Light Energy"
+    }
+  ]
+}

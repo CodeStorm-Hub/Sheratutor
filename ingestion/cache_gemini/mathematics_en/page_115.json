@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 115,
+  "pdf_page_no": 120,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1) $i$ and $ii$ 2) $ii$ and $iii$ 3) $i$ and $iii$ 4) $i, ii$ and $iii$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "7. Which one of the following is the solution set of the equation $x^2 - (a+b)x + ab = 0$?\n1) $\\{a, b\\}$ 2) $\\{a, -b\\}$ 3) $\\{-a, b\\}$ 4) $\\{-a, -b\\}$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "The digit of the tens place of a number consisting of two digits is twice the digit of the units place and digit of the units place is $x$. In respect of the information, answer the following questions (8-10):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "8. What is the number?\n1) $2x$ 2) $3x$ 3) $12x$ 4) $21x$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "9. If the places of the digits are interchanged, what will be the number?\n1) $3x$ 2) $4x$ 3) $12x$ 4) $21x$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "10. If $x = 2$, what will be the difference between the original number and the number by interchanging their places?\n1) 18 2) 20 3) 34 4) 36",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solve (11 - 17):\n11. $(y+5)(y-5) = 24$\n12. $(\\sqrt{2}x + 3)(\\sqrt{3}x - 2) = 0$\n13. $2(z^2 - 9) + 9z = 0$\n14. $\\frac{3}{2z+1} + \\frac{4}{5z-1} = 2$\n15. $\\frac{x-2}{x+2} + \\frac{6(x-2)}{x-6} = 1$\n16. $\\frac{x}{a} + \\frac{a}{x} = \\frac{x}{b} + \\frac{b}{x}$\n17. $\\frac{x-a}{x-b} + \\frac{x-b}{x-a} = \\frac{a}{b} + \\frac{b}{a}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Find the solution set (18 - 22):\n18. $\\frac{3}{x} + \\frac{4}{x+1} = 2$\n19. $\\frac{x+7}{x+1} + \\frac{2x+6}{2x+1} = 5$\n20. $\\frac{1}{x} + \\frac{1}{a} + \\frac{1}{b} = \\frac{1}{x+a+b}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

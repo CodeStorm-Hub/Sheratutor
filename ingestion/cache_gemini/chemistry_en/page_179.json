@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 179,
+  "pdf_page_no": 184,
+  "chapter_no": 8,
+  "chapter_title": "Chemistry and Energy",
+  "sections": [
+    {
+      "section_no": "8.2.4",
+      "section_title": "Importance of Purity of Fuel",
+      "chunk_type": "theory",
+      "content_markdown": "We are constantly making use of various kinds of fuels to get chemical energy. Their purity is an important factor. If we burn them in insufficient air, carbon monoxide is produced alongside carbon dioxide, which is a harmful gas. It is dangerous for our health. Natural fuels are of crude form. They have mixture of compounds of nitrogen, sulfur, phosphorus etc. That is why, these fuels need refinement before being sent to the market. If we burn them without refinement, the oxides of these elements also go in the air. These oxides mix with rainwater and form acids which again come down to earth with rain. The acid rain is:\n\n$$CO_2 + H_2O \\longrightarrow H_2CO_3$$\nCarbon dioxide + Water $\\longrightarrow$ Carbonic Acid\n\n$$2SO_2 + O_2 \\longrightarrow 2SO_3$$\nSulfur dioxide + Oxygen $\\longrightarrow$ Sulfur trioxide\n\n$$2SO_3 + 2H_2O \\longrightarrow 2H_2SO_4$$\nSulfur trioxide + Water $\\longrightarrow$ Sulfur acid\n\n$$4NO_2 + 2H_2O + O_2 \\longrightarrow 4HNO_3$$\n\nSulfur trioxide + Water + Oxygen $\\longrightarrow$ Nitric acid\n\nThis acid rain causes huge damage to our environment. Plants die due to this rain. Water in water bodies turn acidic which makes survival of the fishes and other living bodies tough. Then, the smoke of automobiles consists of carbon monoxide, nitrous oxide and unused methane. In the presence of sunlight, these react to create various piosonous gases. They are known as photochemical smog. Elements of this smog harm the ozone ($O_3$) layer of our atmosphere. Ozone protects the earth from the ultraviolet rays of sun. If this ozone layer is harmed, lives of humans will be in danger.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

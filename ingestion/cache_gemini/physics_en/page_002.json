@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 2,
+  "pdf_page_no": 7,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If we read the history of physics we will see that it is developed by the combined efforts of both theoretical and experimental scientists. In order to carry out research in the laboratory, we need to measure different quantities precisely. This chapter offers discussion of how the measuring units are developed, how one can measure and what type of instrument are used for measuring them.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "By the end of this chapter we will be able to-",
+      "chunk_type": "theory",
+      "content_markdown": "- explain the scope and gradual development of physics.\n- describe the objectives of studying physics.\n- explain the physical quantities [with units and magnitude] and the origin of physics.\n- explain the necessity of measurement and units.\n- explain the difference between fundamental and derived quantities.\n- explain the international system of measuring units.\n- calculate the dimensions of quantities.\n- calculate the transformation of prefixes of multiple and sub-multiple units.\n- express the concepts and theories of physics by using scientific terms, symbols and signs.\n- measure physical quantities using different apparatuses.\n- explain the techniques/methods of exactness and accuracy of measurement.\n- determine the area and volume of uniform objects by using simple instruments.\n- determine the length, mass, area and volume of uniform objects used in our daily lives.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "By the end of this chapter we will be able to- icon",
+      "figure_no": "1.0",
+      "box_2d": [
+        236,
+        104,
+        297,
+        183
+      ],
+      "description": "A target symbol with arrows pointing to the center, representing learning objectives.",
+      "reading_order_anchor": "By the end of this chapter we will be able to-"
+    }
+  ]
+}

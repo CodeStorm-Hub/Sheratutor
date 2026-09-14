@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 229,
+  "pdf_page_no": 234,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. If $\\frac{\\sqrt{1+x} + \\sqrt{1-x}}{\\sqrt{1+x} - \\sqrt{1-x}} = p$, prove that, $p^2 - \\frac{2p}{x} + 1 = 0$\n\nSolution: Given that, $\\frac{\\sqrt{1+x} + \\sqrt{1-x}}{\\sqrt{1+x} - \\sqrt{1-x}} = p$\n\nor, $\\frac{\\sqrt{1+x} + \\sqrt{1-x} + \\sqrt{1+x} - \\sqrt{1-x}}{\\sqrt{1+x} + \\sqrt{1-x} - (\\sqrt{1+x} - \\sqrt{1-x})} = \\frac{p+1}{p-1}$ [by componendo - dividendo]\n\nor, $\\frac{2\\sqrt{1+x}}{2\\sqrt{1-x}} = \\frac{p+1}{p-1}$\n\nor, $\\frac{\\sqrt{1+x}}{\\sqrt{1-x}} = \\frac{p+1}{p-1}$\n\nor, $\\frac{1+x}{1-x} = \\frac{(p+1)^2}{(p-1)^2} = \\frac{p^2 + 2p + 1}{p^2 - 2p + 1}$ [squaring both the sides]\n\nor, $\\frac{1+x+1-x}{1+x-1+x} = \\frac{p^2 + 2p + 1 + p^2 - 2p + 1}{p^2 + 2p + 1 - (p^2 - 2p + 1)}$ [by componendo - dividendo]\n\nor, $\\frac{2}{2x} = \\frac{2(p^2 + 1)}{4p}$\n\nor, $\\frac{1}{x} = \\frac{p^2 + 1}{2p}$\n\nor, $p^2 + 1 = \\frac{2p}{x}$\n\n$\\therefore p^2 - \\frac{2p}{x} + 1 = 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. If $\\frac{a^3 + b^3}{a - b + c} = a(a + b)$, prove that, $a, b, c$ are continued proportion.\n\nSolution: Given that, $\\frac{a^3 + b^3}{a - b + c} = a(a + b)$\n\nor, $\\frac{(a+b)(a^2 - ab + b^2)}{a - b + c} = a(a + b)$\n\nor, $\\frac{a^2 - ab + b^2}{a - b + c} = a$ [dividing both the sides by $(a + b)$]\n\nor, $a^2 - ab + b^2 = a^2 - ab + ac$\n\nor, $b^2 = ac$\n\n$\\therefore a, b, c$ are continued proportion.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

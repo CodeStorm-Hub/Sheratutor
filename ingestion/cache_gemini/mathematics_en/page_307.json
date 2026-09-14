@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 307,
+  "pdf_page_no": 312,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work: Determine the line of symmetry and the rotational symmetry of the given alphabet and complete the table below:",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Letter | Line of symmetry | Number of lines of symmetry | Rotational symmetry | Order of rotational symmetry |\n| :--- | :--- | :--- | :--- | :--- |\n| Z | NO | 0 | YES | 2 |\n| H | | | | |\n| O | | | | |\n| E | | | | |\n| C | | | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Exercise 14.3",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. In plane geometry:\n(i) The triangle is a polygon made up of the least number of line segments.\n(ii) A rhombus is the regular polygon of four sides\n(iii) Sides of a regular polygon are equal, but angles are not\nWhich of the following is true?\n1) i 2) i and ii 3) i and iii 4) i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. How many lines of symmetry does a scalene triangle have?\n1) 0 2) 1 3) 3 4) Countless",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "From the following figure, answer question 3 and 4.\n\nThe length of each side of the polygon is 6 c.m.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. How many lines of symmetry does the polygon have?\n1) 3 2) 6 3) 7 4) Countless",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Regular hexagon",
+      "figure_no": "14.01",
+      "box_2d": [
+        708,
+        161,
+        817,
+        281
+      ],
+      "description": "A regular hexagon with side length 6 cm.",
+      "reading_order_anchor": "From the following figure, answer question 3 and 4."
+    }
+  ]
+}

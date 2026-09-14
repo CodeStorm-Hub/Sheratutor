@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 224,
+  "pdf_page_no": 229,
+  "chapter_no": 11,
+  "chapter_title": "Algebraic Ratio and Proportion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. $A$ and $B$ traverse the fixed distance in $t_1$ and $t_2$ minutes. Find the ratio of the average velocity of $A$ and $B$.\n\nSolution: Let the average velocities of $A$ and $B$ be $v_1$ metre and $v_2$ metre per minute respectively. So, in time $t_1$ minutes $A$ traverses $v_1t_1$ metre and in $t_2$ minutes $B$ traverses $v_2t_2$ metre. According to the problem, $v_1t_1 = v_2t_2$\n\n$\\therefore \\frac{v_1}{v_2} = \\frac{t_2}{t_1}$ Here, the ratio of the velocities is inversely proportional to the ratio of time.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work:\n1) Express $3.5 : 5.6$ into $1 : a$ and $b : 1$.\n2) If $x : y = 5 : 6$, then what is the value of $3x : 5y = \\text{what}$?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "11.1",
+      "section_title": "Transformation of ratio",
+      "chunk_type": "theory",
+      "content_markdown": "Here, the quantities of ratios are positive numbers.\n\n1. if $a : b = c : d$, then $b : a = d : c$ [Invertendo]\n\nProof: Given that,\n$\\frac{a}{b} = \\frac{c}{d}$\nor, $ad = bc$ [multiplying both the sides by $bd$]\nor, $\\frac{ad}{ac} = \\frac{bc}{ac}$ [dividing both the sides by $ac$ where $a$ and $c$ are non-zero]\nor, $\\frac{d}{c} = \\frac{b}{a}$\ni.e, $b : a = d : c$\n\n2. If $a : b = c : d$, then, $a : c = b : d$ [Alternendo]\nProof: Given that,\n$\\frac{a}{b} = \\frac{c}{d}$\nor, $ad = bc$ [multiplying both the sides by $bd$]\nor, $\\frac{ad}{cd} = \\frac{bc}{cd}$ [dividing both the sides by $cd$ where $c, d$ are non-zero]\nor, $\\frac{a}{c} = \\frac{b}{d}$\ni.e, $a : c = b : d$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

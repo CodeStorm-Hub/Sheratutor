@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 139,
+  "pdf_page_no": 144,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3. Keep marking the copper sulphate as heat is applied. The blue colour will gradually turn white. Since the water in the blue vitriol is vaporizing, it is transforming its colour.\n\n4. When the transformation of colour is complete, stop the heating.\n\n5. Swiftly take the bowl to the desiccators and weigh it again after cooling. If it isn't done fast, the copper sulphate will again absorb water and turn blue. Let's assume, this new weight is $c$.\n\nThat mean, after the vaporization of water, copper sulphate's mass is $(c-a)$ gram. The mass of vaporized water from the blue vitriol is $(b-a) - (c-a)$ gram $= (b-c)$ gram.\n\n### Calculation\n\nMass of removed water from $(b-a)$ gram copper sulphate = $(b-c)$ gram\n\nSo, mass of removed water from $100$ gram copper sulphate = $\\frac{(b-c)}{(b-a)} \\times 100$ gram\n\nThe percent composition of crystallized water in copper sulphate is $\\frac{(b-c)}{(b-a)} \\times 100\\%$\n\n### Caution\n\nThe heating has to be slow and careful so that the heat reaches all the spots. After the removal of water, the weighing has to be quick.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Task for Learners:** Carry out a task to determine the percent composition of water in copper sulphate.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

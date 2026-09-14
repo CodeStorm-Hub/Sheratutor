@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 100,
+  "pdf_page_no": 105,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": "4.1",
+      "section_title": "Work",
+      "chunk_type": "theory",
+      "content_markdown": "We use the term 'work' in various ways in our daily life. A gatekeeper guarding a house all day long, sitting on a tool, may claim to have done a lot of work, but in the words of physics that is not any work. In terms of physics the word 'work' is well defined. If a force $F$ is applied on any object and the object traverses a distance $s$ during the application of force (that is displacement occurs) then, the amount of work $W$ done by the force is:\n\n$$W = Fs$$\n\nUnit of work: $J$ (Joule)\n\nDimension of work $[W] = ML^2T^{-2}$\n\nForce is a vector quantity and the distance traversed or the displacement is also a vector quantity but in case of work the product of those two vectors is a scalar quantity.\n\nAs individual vectors there is no such condition that the direction of force and distance travelled has to be same but in this book, we will only discuss the force and distance travelled in the same direction.\n\nHave you noticed, while discussing work, we said that the 'force' has done the work. A person or a machine may push any object to some distance by applying a force. In terms of daily life we say that the person or the machine has done the work. But in physics, neither the person nor the machine does the work, always the force applied does the work. This force may be applied by a person or a machine.\n\nLet us assume that, you have pushed an object to a distance $s$ by applying a force $F$ and left it after setting it in motion. The object has travelled an additional distance $d$ and at last it has stopped. How much work is done?\n\nThe amount of work done is $W = Fs$, as no force was applied while traversing the distance $d$, so no work is done.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

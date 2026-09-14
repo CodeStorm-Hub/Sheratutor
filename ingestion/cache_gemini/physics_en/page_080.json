@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 80,
+  "pdf_page_no": 85,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "therefore,\n\n$$g = \\frac{GM}{R^2} = \\frac{6.67 \\times 10^{-11} \\times 5.98 \\times 10^{24}}{(6.37 \\times 10^6)^2} \\text{ m/s}^2 = 9.8 \\text{ m/s}^2$$\n\nIn the previous chapter, we used this value of $g$ in the equations of motion. Now you understand why this value of $g$ was used.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** The height of the space station from the earth's surface is approximately $100\\text{ km}$. What is the value of $g$ there?\n\n**Answer:** In the space station, if the acceleration due to gravity is $g'$, then\n\n$$g' = \\frac{GM}{(R + r)^2}$$\n\nHere, radius of the earth $R = 6370\\text{ km}$, and height of the space station, $r = 100\\text{ km}$\n\n$$g' = \\frac{GM}{(R + r)^2} = \\frac{GM}{R^2(1 + r/R)^2} = \\frac{g}{(1 + r/R)^2}$$\n\n$$g' = \\frac{g}{1.016^2} = 9.49 \\text{ m/s}^2$$\n\nThe value of $g'$ is not zero at all, but why does the astronaut feel weightless (Fig 3.08) there?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the value of the gravitational acceleration $g$ is known, for any mass $m$ we can calculate the value of gravitational force very easily. This is,\n\n$$F = G \\frac{mM}{R^2} = m \\frac{GM}{R^2} = mg$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 3.08: the floating astronaut in a space shuttle",
+      "figure_no": "3.08",
+      "box_2d": [
+        342,
+        486,
+        552,
+        898
+      ],
+      "description": "Two astronauts floating in zero gravity inside a space shuttle cabin.",
+      "reading_order_anchor": "The value of g' is not zero at all, but why does the astronaut feel weightless (Fig 3.08) there?"
+    }
+  ]
+}

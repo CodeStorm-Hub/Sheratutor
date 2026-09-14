@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 29,
+  "pdf_page_no": 34,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution: Given,\n$P = \\{x \\in \\mathbb{N} : 2 < x \\le 6\\} = \\{3, 4, 5, 6\\}$\n$Q = \\{x \\in \\mathbb{N} : x \\text{ is even and } x \\le 8\\} = \\{2, 4, 6, 8\\}$\n$\\therefore P \\cap Q = \\{3, 4, 5, 6\\} \\cap \\{2, 4, 6, 8\\} = \\{4, 6\\}$\nThe set to be determined is $\\{4, 6\\}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Disjoint Set",
+      "chunk_type": "theory",
+      "content_markdown": "If there is no element common to any two sets, then these two sets are called **disjoint sets**. Let $A$ and $B$ be two sets. If $A \\cap B = \\emptyset$ then $A$ and $B$ are said to be mutually disjoint sets.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work: If $U = \\{1, 3, 5, 9, 7, 11\\}$, $E = \\{1, 5, 9\\}$ and $F = \\{3, 7, 11\\}$, then determine $E^c \\cup F^c$ and $E^c \\cap F^c$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Power Sets",
+      "chunk_type": "theory",
+      "content_markdown": "$A = \\{m, n\\}$ is a set. Subsets of $A$ are $\\{m, n\\}, \\{m\\}, \\{n\\}, \\emptyset$, and set of all sets $\\{\\{m, n\\}, \\{m\\}, \\{n\\}, \\emptyset\\}$ of $A$ is called **power set** of $A$. Power set of $A$ is denoted by $P(A)$. So the set formed by all subsets of a set is called power set of a given set.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 10. Find the number of elements of the power sets $A = \\emptyset, B = \\{a\\}, C = \\{a, b\\}$.\n\nSolution: Here $P(A) = \\{\\emptyset\\}$\n$\\therefore$ number of elements of $A$ is $0$ and number of elements of its power set is $= 1 = 2^0$\n\nAgain $P(B) = \\{\\{a\\}, \\emptyset\\}$\n$\\therefore$ number of elements of $B$ is $1$, and number of elements of its power set is $= 2 = 2^1$.\n\nand $P(C) = \\{\\{a\\}, \\{b\\}, \\{a, b\\}, \\emptyset\\}$\n$\\therefore$ number of elements of $C$ is $2$ and number of elements of its power set is $= 4 = 2^2$\n\nSo, if number of elements of a set is $n$, then number of elements of its power set is $2^n$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.06: P ∩ Q",
+      "figure_no": "2.06",
+      "box_2d": [
+        64,
+        633,
+        175,
+        802
+      ],
+      "description": "A Venn diagram showing two overlapping circles P and Q with elements 3, 4, 5, 6 in P and 2, 4, 6, 8 in Q, with the intersection containing 4 and 6.",
+      "reading_order_anchor": "Solution: Given,"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 71,
+  "pdf_page_no": 76,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "According to the question, $u + v = \\frac{x}{t_2} \\dots \\dots (1)$\n\nand $u - v = \\frac{x}{t_1} \\dots \\dots (2)$\n\nAdding equations (1) and (2) we get,\n\n$2u = \\frac{x}{t_2} + \\frac{x}{t_1} = x \\left( \\frac{1}{t_1} + \\frac{1}{t_2} \\right)$ or, $u = \\frac{x}{2} \\left( \\frac{1}{t_1} + \\frac{1}{t_2} \\right)$\n\nSubtracting equation (2) from equation (1) we get,\n\n$2v = \\frac{x}{t_2} - \\frac{x}{t_1} = x \\left( \\frac{1}{t_2} - \\frac{1}{t_1} \\right)$ or, $v = \\frac{x}{2} \\left( \\frac{1}{t_2} - \\frac{1}{t_1} \\right)$\n\nHence speed of current is $\\frac{x}{2} \\left( \\frac{1}{t_2} - \\frac{1}{t_1} \\right)$ km per hour and speed of boat is $\\frac{x}{2} \\left( \\frac{1}{t_1} + \\frac{1}{t_2} \\right)$ km per hour.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 37. A pipe can fill up an empty tank in 12 minutes. Another pipe flows out 14 litre of water per minute. If the two pipes are opened together and the empty tank is filled up in 96 minutes, how much water does the tank contain ?.\n\nSolution: Let $x$ litre of water flows in per minute by the first pipe and the tank can contain $y$ litre of water.\n\nAccording to the question, the tank is filled up by first pipe in 12 minutes\n\n$\\therefore y = 12x \\dots \\dots (1)$\n\nAgain, the empty tank is filled up by the two pipes together in 96 minutes.\n\n$\\therefore y = 96x - 96 \\times 14 \\dots \\dots (2)$\n\nFrom equation (1) we get, $x = \\frac{y}{12}$\n\nputting the value of $x$ in equation (2) we get,\n\n$y = 96 \\times \\frac{y}{12} - 96 \\times 14$\n\nor, $y = 8y - 96 \\times 14$\n\nor, $7y = 96 \\times 14$\n\nor, $y = \\frac{96 \\times 14}{7} = 192$\n\nHence, total 192 litre of water is contained in the tank.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

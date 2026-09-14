@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 108,
+  "pdf_page_no": 113,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ area of the rectangular region is $= x(x - 1)$ square cm.\n\nBy the question, $x(x - 1) = 12$ or, $x^2 - x - 12 = 0$\n\n$x$ is the variable in the equation and highest power of $x$ is 2. Such equation is a quadratic equation. The equation, which has the highest degree 2 of the variable, is called the quadratic equation.\n\nIn class VIII, we have factorized the quadratic expressions in one variable of the forms $x^2 + px + q$ and $ax^2 + bx + c$. Here, we shall solve the equations of the forms $x^2 + px + q = 0$ and $ax^2 + bx + c = 0$ by factorizing the left hand side and by finding the value of the variable.\n\nAn important law of real numbers is applied to the method of factorization. The law is as follows:\n\nIf the product of two quantities is equal to zero, either only one of the quantities or both quantities will be zero. That is, if the product of two quantities $a$ and $b$ i.e., $ab = 0$, $a = 0$ or, $b = 0$, or, both $a = 0$ and $b = 0$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 8. Solve: $(x + 2)(x - 3) = 0$\n\nSolution: $(x + 2)(x - 3) = 0$\n\n$\\therefore x + 2 = 0$ or, $x - 3 = 0$\n\nIf $x + 2 = 0$, $x = -2$\n\nAgain, if $x - 3 = 0$, $x = 3$\n\n$\\therefore$ solution is $x = -2$ or, $x = 3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 9. Find the solution set: $y^2 = \\sqrt{3}y$\n\nSolution: $y^2 = \\sqrt{3}y$\n\nor, $y^2 - \\sqrt{3}y = 0$ [by transposition, right hand side has been done zero]\n\nor, $y(y - \\sqrt{3}) = 0$\n\n$\\therefore y = 0$ or $y - \\sqrt{3} = 0$\n\nAgain, if $y - \\sqrt{3} = 0$, $y = \\sqrt{3}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.01: Rectangular region",
+      "figure_no": "5.01",
+      "box_2d": [
+        165,
+        737,
+        230,
+        893
+      ],
+      "description": "A rectangle with sides x cm and (x-1) cm and area 12 sq cm.",
+      "reading_order_anchor": "area of the rectangular region is = x(x - 1)"
+    }
+  ]
+}

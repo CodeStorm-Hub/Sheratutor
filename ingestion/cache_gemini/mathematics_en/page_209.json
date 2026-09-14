@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 209,
+  "pdf_page_no": 214,
+  "chapter_no": 9,
+  "chapter_title": "Trigonometric Ratio",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "4) Given equation $2\\cos^2\\theta + 3\\sin\\theta - 3 = 0$\nor, $2(1 - \\sin^2\\theta) + 3\\sin\\theta - 3 = 0$\nor, $2(1 + \\sin\\theta)(1 - \\sin\\theta) - 3(1 - \\sin\\theta) = 0$\nor, $(1 - \\sin\\theta)\\{2(1 + \\sin\\theta) - 3\\} = 0$\nor, $(1 - \\sin\\theta)\\{2\\sin\\theta - 1\\} = 0$\n\n$\\therefore 1 - \\sin\\theta = 0$ or, $2\\sin\\theta - 1 = 0$\nor, $\\sin\\theta = 1$ or, $2\\sin\\theta = 1$\nor, $\\sin\\theta = \\sin 90^\\circ$ or, $\\sin\\theta = \\frac{1}{2}$\nor, $\\theta = 90^\\circ$ or, $\\sin\\theta = \\sin 30^\\circ$\nor, $\\theta = 30^\\circ$\n\n$\\theta$ is an acute angle, so $\\theta = 30^\\circ$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

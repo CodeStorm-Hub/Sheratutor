@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 282,
+  "pdf_page_no": 287,
+  "chapter_no": 10,
+  "chapter_title": "স্থির তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: হাইড্রোজেন পরমাণুর কেন্দ্রে একটা প্রোটন এবং বাইরে একটা ইলেক্ট্রন থাকে। প্রোটনের চার্জ $+1.6 \times 10^{-19} \text{ C}$ এবং ইলেকট্রনের চার্জ $-1.6 \times 10^{-19} \text{ C}$। যদি নিউক্লিয়াস থেকে ইলেকট্রনের কক্ষপথের দূরত্ব $0.5 \times 10^{-8} \text{ m}$ হয় তাহলে তাদের ভেতরে আকর্ষণ কতটুকু?\n\nউত্তর:\n\n$$F = k \frac{q_1 q_2}{r^2}$$\n\nএখানে\n\n$$q_1 = +1.6 \times 10^{-19} \text{ C}$$\n\n$$q_2 = -1.6 \times 10^{-19} \text{ C}$$\n\n$$k = 9 \times 10^9 \text{ Nm}^2/\text{C}^2$$\n\n$$r = 0.5 \times 10^{-8} \text{ m}$$\n\nকাজেই\n\n$$F = \frac{9 \times 10^9 \times 1.6 \times 10^{-19} \times (-1.6 \times 10^{-19})}{(0.5 \times 10^{-8})^2} \text{ N} = -9.22 \times 10^{-12} \text{ N}$$\n\nবলের ঋণাত্মক মান প্রকাশ করে যে প্রোটন এবং ইলেকট্রনের মধ্যে আকর্ষণ বল বিদ্যমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "প্রশ্ন: পৃথিবীতে এবং চাঁদে কী পরিমাণ চার্জ জমা রাখলে মহাকর্ষ বল শূন্য হয়ে চাঁদ কক্ষপথ থেকে ছুটে বের হয়ে যাবে?\n\nউত্তর: পৃথিবী এবং চাঁদের মাঝে মাধ্যাকর্ষণ বল:\n\n$$F_G = G \frac{mM}{r^2}$$\n\nএখানে\n\n$$G = 6.67 \times 10^{-11} \text{ Nkg}^{-2}\text{m}^2$$\n\n$$m = 7.35 \times 10^{22} \text{ kg}$$\n\n$$M = 5.97 \times 10^{24} \text{ kg}$$\n\n$$r = 3.84 \times 10^5 \text{ km}$$\n\nকাজেই\n\n$$F_G = \frac{6.67 \times 10^{-11} \times 7.35 \times 10^{22} \times 5.97 \times 10^{24}}{(3.84 \times 10^5)^2} \text{ N} = 1.98 \times 10^{26} \text{ N}$$\n\nপৃথিবী এবং চাঁদে সমান পরিমাণ ($q$) চার্জ রাখা হলে বিকর্ষণ বল:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

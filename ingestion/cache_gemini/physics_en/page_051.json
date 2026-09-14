@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 51,
+  "pdf_page_no": 56,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "2.01 which represents the change of position of an object with respect to time. We will solve the first set for you and you will solve the second one by yourself.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The distance -- time graph of the first data set of the table is shown in figure 2.09. We have taken data in integer form. From the graph we will be able to",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 2.09: Finding velocity - time from distance - time and acceleration - time from velocity-time graphs are drawn.",
+      "figure_no": "2.09",
+      "box_2d": [
+        206,
+        214,
+        808,
+        772
+      ],
+      "description": "Three stacked graphs showing distance-time, velocity-time, and acceleration-time plots for an object in motion.",
+      "reading_order_anchor": "The distance -- time graph of the first data set of the table is shown in figure 2.09."
+    }
+  ]
+}

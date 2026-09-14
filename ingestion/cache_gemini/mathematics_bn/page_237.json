@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 237,
+  "pdf_page_no": 242,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ সমীকরণটির লেখের উপর তিনটি বিন্দু $(-1, 5), (0, 3)$ ও $(3, -3)$।\nআবার, সমীকরণ (2) থেকে পাই, $2y = 6 - 4x$ বা, $y = \\frac{6 - 4x}{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $-2$ | $0$ | $6$ |\n|---|---|---|---|\n| $y$ | $7$ | $3$ | $-9$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ সমীকরণটির লেখের উপর তিনটি বিন্দু $(-2, 7), (0, 3)$ ও $(6, -9)$।\n\nমনে করি, ছক কাগজে $XOX'$ ও $YOY'$ যথাক্রমে $x$-অক্ষ ও $y$-অক্ষ এবং $O$ মূলবিন্দু।\nছক কাগজের উভয় অক্ষ বরাবর ক্ষুদ্রতম বর্গক্ষেত্রের প্রতি বাহুর দৈর্ঘ্যকে একক ধরি। এখন সমীকরণ (1) হতে প্রাপ্ত $(-1, 5), (0, 3)$ ও $(3, -3)$ বিন্দুগুলো স্থাপন করি ও এদের পরস্পর সংযুক্ত করি। লেখটি একটি সরলরেখা।\nআবার, সমীকরণ (2) হতে প্রাপ্ত $(-2, 7), (0, 3)$ ও $(6, -9)$ বিন্দুগুলো স্থাপন করি ও এদের পরস্পর সংযুক্ত করি। এক্ষেত্রেও লেখটি একটি সরলরেখা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তবে লক্ষ করি, সরলরেখা দুইটি পরস্পরের উপর সমাপতিত হয়ে একটি সরলরেখায় পরিণত হয়েছে। আবার, সমীকরণ (2) এর উভয়পক্ষকে 2 দ্বারা ভাগ করলে সমীকরণ (1) পাওয়া যায়। এ কারণে সমীকরণদ্বয়ের লেখ পরস্পর সমাপতিত হয়েছে।\n\nএখানে, $\\left. \\begin{matrix} 2x + y = 3 \\dots (1) \\\\ 4x + 2y = 6 \\dots (2) \\end{matrix} \\right\\}$ সমীকরণজোটটি সমঞ্জস ও পরস্পর নির্ভরশীল। এরূপ সমীকরণজোটের অসংখ্য সমাধান আছে এবং সমীকরণজোটটির লেখ একটি সরলরেখা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবার আমরা নিচের সমীকরণজোটটি সমাধান করার চেষ্টা করব:\n$2x - y = 4 \\dots (1)$\n$4x - 2y = 12 \\dots (2)$\nসমীকরণ (1) থেকে পাই, $y = 2x - 4$।\nসমীকরণটিতে $x$ এর কয়েকটি মান নিয়ে $y$ এর অনুরূপ মান বের করি ও নিম্নের ছকটি তৈরি করি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $-1$ | $0$ | $4$ |\n|---|---|---|---|\n| $y$ | $-6$ | $-4$ | $4$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ সমীকরণটির লেখের উপর তিনটি বিন্দু $(-1, -6), (0, -4), (4, 4)$।\nআবার, সমীকরণ (2) থেকে পাই,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১২.০৫: লেখচিত্র",
+      "figure_no": "12.05",
+      "box_2d": [
+        285,
+        620,
+        485,
+        850
+      ],
+      "description": "একটি কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় দুটি সরলরেখার লেখচিত্র যা একই রেখার উপর সমাপতিত হয়েছে।",
+      "reading_order_anchor": "মনে করি, ছক কাগজে XOX' ও YOY' যথাক্রমে x-অক্ষ ও y-অক্ষ এবং O মূলবিন্দু।"
+    }
+  ]
+}

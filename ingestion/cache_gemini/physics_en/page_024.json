@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 24,
+  "pdf_page_no": 29,
+  "chapter_no": 1,
+  "chapter_title": "Physical World and Measurement",
+  "sections": [
+    {
+      "section_no": "1.01",
+      "section_title": "Investigation 1.01",
+      "chunk_type": "theory",
+      "content_markdown": "**Objective:** To find out the volume of a match box or any other object by measuring its length, breadth and height using a slide calipers. If you have no slide calipers with you, you can make a slide calipers as shown in figure 1.10.\n\n1. To measure the length of an object by slide calipers we need to place it between the jaws of the slide calipers. The jaws need to touch the object from both the sides.\n\n2. Now observe carefully the mark of the main scale that the zero marking of vernier scale has just crossed. That will be the main scale reading $M$. Notice that, the mark which is very close to the main scale, is not the reading of main scale, the mark that has just crossed the main scale fully is the main scale reading.\n\n3. At this position find out which mark of the vernier scale coincides with any mark of the main scale, this is the vernier coincidence.\n\nMeasure the length of the object several times and put it in the table.\n\nIn the same way measure the breadth and height of the object.\n\n**Observation:**\n\nDetermination of vernier constant:\n\nValue of one smallest division of main scale, $S = \\dots\\dots\\dots\\dots\\dots\\dots\\dots$\n\nTotal number of divisions of vernier scale, $n = \\dots\\dots\\dots\\dots\\dots\\dots\\dots$\n\nVernier constant, $\\text{VC} = S/n = \\dots\\dots\\dots\\dots\\dots\\dots\\dots$",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": "1.01",
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Table 1.06: Table of finding length, breadth and height of a rectangular object:\n\n| Object's | No. of observations | Main scale reading $M$ | Vernier coincidence $V$ | Vernier constant $\\text{VC}$ | Reading = $M + V \\times \\text{VC}$ | Average reading |\n| :--- | :--- | :--- | :--- | :--- | :--- | :--- |\n| Length $L$ | | | | | | |\n| Width $W$ | | | | | | |\n| Height $H$ | | | | | | |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Investigation 1.01 icon",
+      "figure_no": "1.01",
+      "box_2d": [
+        112,
+        102,
+        170,
+        178
+      ],
+      "description": "Magnifying glass icon representing an investigation or experiment.",
+      "reading_order_anchor": "Investigation 1.01"
+    }
+  ]
+}

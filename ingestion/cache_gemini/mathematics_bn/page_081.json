@@ -1,0 +1,149 @@
+{
+  "printed_page_no": 81,
+  "pdf_page_no": 86,
+  "chapter_no": 4,
+  "chapter_title": "সূচক ও লগারিদম",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ কর (৯ - ১৫):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$৯. \\frac{4^n - 1}{2^n - 1} = 2^n + 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১০. \\frac{2^{2p+1} \\cdot 3^{2p+q} \\cdot 5^{p+q} \\cdot 6^p}{3^{p-2} \\cdot 6^{2p+2} \\cdot 10^p \\cdot 15^q} = \\frac{1}{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১১. \\left( \\frac{a^l}{a^m} \\right)^n \\cdot \\left( \\frac{a^m}{a^n} \\right)^l \\cdot \\left( \\frac{a^n}{a^l} \\right)^m = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১২. \\frac{a^{p+q}}{a^{2r}} \\times \\frac{a^{q+r}}{a^{2p}} \\times \\frac{a^{r+p}}{a^{2q}} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১৩. \\left( \\frac{x^a}{x^b} \\right)^{\\frac{1}{ab}} \\cdot \\left( \\frac{x^b}{x^c} \\right)^{\\frac{1}{bc}} \\cdot \\left( \\frac{x^c}{x^a} \\right)^{\\frac{1}{ca}} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১৪. \\left( \\frac{x^a}{x^b} \\right)^{a+b} \\cdot \\left( \\frac{x^b}{x^c} \\right)^{b+c} \\cdot \\left( \\frac{x^c}{x^a} \\right)^{c+a} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১৫. \\left( \\frac{x^p}{x^q} \\right)^{p+q-r} \\cdot \\left( \\frac{x^q}{x^r} \\right)^{q+r-p} \\cdot \\left( \\frac{x^r}{x^p} \\right)^{r+p-q} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১৬. \\text{যদি } a^x = b, b^y = c \\text{ এবং } c^z = a \\text{ হয়, তবে দেখাও যে, } xyz = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান কর (১৭ - ২০):",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১৭. 4^x = 8 \\quad \\quad \\quad \\quad \\quad \\quad \\quad ১৮. 2^{2x+1} = 128$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$১৯. (\\sqrt{3})^{x+1} = (\\sqrt[3]{3})^{2x-1} \\quad \\quad \\quad ২০. 2^x + 2^{1-x} = 3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$২১. P = x^a, Q = x^b \\text{ এবং } R = x^c$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $P^{bc} \\cdot Q^{-ca}$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $\\left( \\frac{P}{Q} \\right)^{a+b} \\times \\left( \\frac{Q}{R} \\right)^{b+c} \\div 2(RP)^{a-c}$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) দেখাও যে, $\\left( \\frac{P}{Q} \\right)^{a^2+ab+b^2} \\times \\left( \\frac{Q}{R} \\right)^{b^2+bc+c^2} \\times \\left( \\frac{R}{P} \\right)^{c^2+ca+a^2} = 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$২২. X = (2a^{-1} + 3b^{-1})^{-1}, Y = \\sqrt[pq]{\\frac{x^p}{x^q}} \\times \\sqrt[qr]{\\frac{x^q}{x^r}} \\times \\sqrt[rp]{\\frac{x^r}{x^p}}$\n\nএবং $Z = \\frac{5^{m+1}}{(5^m)^{m-1}} \\div \\frac{25^{m+1}}{(5^{m-1})^{m+1}}$, যেখানে $x, p, q, r > 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $X$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) দেখাও যে, $Y + \\sqrt[4]{81} = 4$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) দেখাও যে, $Y \\div Z = 25$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

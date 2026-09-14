@@ -1,0 +1,124 @@
+{
+  "printed_page_no": 133,
+  "pdf_page_no": 138,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the adjacent figure $ABC$ is a triangle. $A, B, C$ are three vertices. $AB$, $BC$, $CA$ are three sides and $\\angle ABC$, $\\angle BCA$, $\\angle CAB$ are three angles of the triangle. The sum of the measurement of $AB$, $BC$ and $CA$ is the perimeter of the triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Equilateral triangle",
+      "chunk_type": "theory",
+      "content_markdown": "An equilateral triangle is a triangle of three equal sides. In the adjacent figure, triangle $ABC$ is an equilateral triangle; because, $AB = BC = CA$ i.e., the lengths of three sides are equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Isosceles triangle",
+      "chunk_type": "theory",
+      "content_markdown": "An isosceles triangle is triangle with two equal sides. In the adjacent figure triangle $ABC$ is an isosceles triangle; because $AB = AC \\neq BC$ i.e. the lengths of only two sides are equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Scalene triangle",
+      "chunk_type": "theory",
+      "content_markdown": "Sides of scalene triangle are unequal. Triangle $ABC$ is a scalene triangle, since the lengths of its sides $AB$, $BC$, $CA$ are unequal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Acute triangle",
+      "chunk_type": "theory",
+      "content_markdown": "A triangle having all the three angles acute is acute angled triangle. In the triangle $ABC$ each of the angles $\\angle BAC$, $\\angle ABC$, $\\angle BCA$ is acute i.e., the measurement of any angle is less than $90^\\circ$. So $\\triangle ABC$ is acute angled.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Right triangle",
+      "chunk_type": "theory",
+      "content_markdown": "A triangle with one of the angles right is a right angled triangle. In the figure, the $\\angle DFE$ is a right angle; each of the two other angles $\\angle DEF$ and $\\angle EDF$ is acute. The triangle $\\triangle DEF$ is a right angled triangle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Triangle ABC",
+      "figure_no": "6.01",
+      "box_2d": [
+        75,
+        665,
+        195,
+        853
+      ],
+      "description": "A general triangle ABC.",
+      "reading_order_anchor": "In the adjacent figure ABC is a triangle."
+    },
+    {
+      "caption": "Fig 6.02: Equilateral triangle",
+      "figure_no": "6.02",
+      "box_2d": [
+        228,
+        673,
+        355,
+        842
+      ],
+      "description": "An equilateral triangle ABC.",
+      "reading_order_anchor": "Equilateral triangle"
+    },
+    {
+      "caption": "Fig 6.03: Isosceles triangle",
+      "figure_no": "6.03",
+      "box_2d": [
+        386,
+        689,
+        508,
+        830
+      ],
+      "description": "An isosceles triangle ABC.",
+      "reading_order_anchor": "Isosceles triangle"
+    },
+    {
+      "caption": "Fig 6.04: Scalene triangle",
+      "figure_no": "6.04",
+      "box_2d": [
+        538,
+        663,
+        626,
+        848
+      ],
+      "description": "A scalene triangle ABC.",
+      "reading_order_anchor": "Scalene triangle"
+    },
+    {
+      "caption": "Fig 6.05: Acute triangle",
+      "figure_no": "6.05",
+      "box_2d": [
+        653,
+        693,
+        736,
+        818
+      ],
+      "description": "An acute angled triangle ABC.",
+      "reading_order_anchor": "Acute triangle"
+    },
+    {
+      "caption": "Fig 6.06: Right triangle",
+      "figure_no": "6.06",
+      "box_2d": [
+        838,
+        693,
+        926,
+        818
+      ],
+      "description": "A right angled triangle DEF.",
+      "reading_order_anchor": "Right triangle"
+    }
+  ]
+}

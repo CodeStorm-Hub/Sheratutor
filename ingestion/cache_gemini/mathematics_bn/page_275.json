@@ -1,0 +1,64 @@
+{
+  "printed_page_no": 275,
+  "pdf_page_no": 280,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $\\triangle ABC$ ও $\\triangle DEF$ এর প্রত্যেক অনুরূপ বাহুযুগল অসমান বিবেচনা করি। $AB$ বাহুতে $P$ বিন্দু এবং $AC$ বাহুতে $Q$ বিন্দু নিই যেন $AP = DE$ এবং $AQ = DF$ হয়। $P$ ও $Q$ যোগ করে অঙ্কন সম্পন্ন করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\n$\\triangle APQ$ ও $\\triangle DEF$ এর $AP = DE$, $AQ = DF$ এবং অন্তর্ভুক্ত $\\angle A = $ অন্তর্ভুক্ত $\\angle D$\n$\\therefore \\triangle APQ \\cong \\triangle DEF$ [বাহু-কোণ-বাহু উপপাদ্য]\n$\\therefore \\angle A = \\angle D, \\angle APQ = \\angle E, \\angle AQP = \\angle F$\nআবার যেহেতু $\\frac{AB}{DE} = \\frac{AC}{DF}$, সুতরাং $\\frac{AB}{AP} = \\frac{AC}{AQ}$ [উপপাদ্য ২৯]\n$\\therefore PQ \\parallel BC$\nসুতরাং $\\angle ABC = \\angle APQ$ এবং $\\angle ACB = \\angle AQP$\n$\\therefore \\angle A = \\angle D, \\angle B = \\angle E$, এবং $\\angle C = \\angle F$\nঅর্থাৎ $\\triangle ABC$ ও $\\triangle DEF$ সদৃশকোণী।\nসুতরাং $\\triangle ABC$ ও $\\triangle DEF$ সদৃশ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ৩৫. দুইটি সদৃশ ত্রিভুজক্ষেত্রের ক্ষেত্রফলদ্বয়ের অনুপাত এদের যেকোনো দুই অনুরূপ বাহুর উপর অঙ্কিত বর্গক্ষেত্রের ক্ষেত্রফলদ্বয়ের অনুপাতের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি, $\\triangle ABC$ ও $\\triangle DEF$ ত্রিভুজদ্বয় সদৃশ এবং এদের অনুরূপ বাহু $BC$ ও $EF$। প্রমাণ করতে হবে যে, $\\triangle ABC : \\triangle DEF = BC^2 : EF^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $BC$ ও $EF$ এর উপর যথাক্রমে $AG$ ও $DH$ লম্ব আঁকি। মনে করি $AG = h, DH = p$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ:\nধাপ ১. $\\triangle ABC = \\frac{1}{2} \\times BC \\times h$ এবং $\\triangle DEF = \\frac{1}{2} \\times EF \\times p$\n$$\\frac{\\triangle ABC}{\\triangle DEF} = \\frac{\\frac{1}{2} \\times BC \\times h}{\\frac{1}{2} \\times EF \\times p} = \\frac{h}{p} \\times \\frac{BC}{EF}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৪.৩৫: সদৃশ ত্রিভুজক্ষেত্রের ক্ষেত্রফল",
+      "figure_no": "14.35",
+      "box_2d": [
+        688,
+        298,
+        762,
+        702
+      ],
+      "description": "দুটি ত্রিভুজ ABC এবং DEF যাদের উচ্চতা যথাক্রমে AG এবং DH।",
+      "reading_order_anchor": "বিশেষ নির্বচন: মনে করি, $\\triangle ABC$ ও $\\triangle DEF$ ত্রিভুজদ্বয় সদৃশ এবং এদের অনুরূপ বাহু $BC$ ও $EF$।"
+    }
+  ]
+}

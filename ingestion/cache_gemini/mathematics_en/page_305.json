@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 305,
+  "pdf_page_no": 310,
+  "chapter_no": 14,
+  "chapter_title": "Ratio, Similarity and Symmetry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Rotational symmetry",
+      "chunk_type": "theory",
+      "content_markdown": "When an object rotates around any fixed point, its shape and size do not change. But the different parts of the object change their position. If the new position of the object after rotation becomes identical to the original position, we say the object has a rotational symmetry. The wheels of a bicycle, ceiling fan, square etc. are examples of objects having rotational symmetry. As a result of rotation the blades of the fan looks exactly the same as the original position more than once. The blades of a fan may rotate in the clockwise direction or in the anticlockwise direction. The wheels of a bicycle may rotate in the clockwise direction or in the anticlockwise direction. The rotation in the anticlockwise direction is considered the positive direction of rotation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "This fixed point around which the object rotates is the centre of rotation. The angle of turning during rotation is called the angle of rotation. A full-turn means rotation by $360^\\circ$; a half-turn is rotation by $180^\\circ$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the figure below, a fan with four blades rotating by $90^\\circ$ is shown in different positions. It is noted during a complete revolution in four positions (rotating about the angle by $90^\\circ$, $180^\\circ$, $270^\\circ$ and $360^\\circ$), the fan looks exactly the same. For this reason, it is said that the rotational symmetry of the fan is order 4.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here is one more example for rotational symmetry. Consider the intersection of two diagonals of a square the centre of rotation. In the quarter turn about the centre of the square, any diagonal position will be as like as the second figure. In this way, when you complete four quarter-turns, the square reaches its original position. It is said that a square has a rotational symmetry of order 4.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 14.01: Fan with four blades rotating by 90 degrees",
+      "figure_no": "14.01",
+      "box_2d": [
+        573,
+        183,
+        687,
+        818
+      ],
+      "description": "A sequence of four fan diagrams showing rotation by 90 degrees.",
+      "reading_order_anchor": "In the figure below, a fan with four blades rotating by 90° is shown in different positions."
+    },
+    {
+      "caption": "Fig 14.02: Square rotating by 90 degrees",
+      "figure_no": "14.02",
+      "box_2d": [
+        838,
+        183,
+        926,
+        818
+      ],
+      "description": "A sequence of square diagrams showing rotation by 90 degrees.",
+      "reading_order_anchor": "In this way, when you complete four quarter-turns, the square reaches its original position."
+    }
+  ]
+}

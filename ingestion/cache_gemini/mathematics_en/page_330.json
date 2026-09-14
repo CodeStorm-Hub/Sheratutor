@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 330,
+  "pdf_page_no": 335,
+  "chapter_no": 16,
+  "chapter_title": "Mensuration",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ Area of the parallelogram = $dh$ square cm.\nAs per question, $dh = 120$ or, $h = \\frac{120}{d} = \\frac{120}{24} = 5$\nThe required length of the perpendicular is 5 cm.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 12. The length of the sides of a parallelogram are 12 metre and 8 metre. If the length of the smaller diagonal is 10 m, determine the length of the other diagonal.\n\nSolution:\nLet, in the parallelogram $ABCD$; $AB = a = 12$ metre and $AD = c = 8$ metre and diagonal $BD = b = 10$ metre. Let us draw the perpendiculars $DF$ and $CE$ from $D$ and $C$ on $AB$ and the extended part of $AB$ respectively. Join $C, A$ and $D, B$.\n\n$\\therefore$ Semi perimeter of $\\triangle ABD$, $s = \\frac{12 + 10 + 8}{2}$ metre = 15 metre.\n\n$\\therefore$ area of $\\triangle ABD = \\sqrt{s(s - a)(s - b)(s - c)} = \\sqrt{15(15 - 12)(15 - 10)(15 - 8)}$ sq. metre = $\\sqrt{15 \\times 3 \\times 5 \\times 7}$ sq. metre = $\\sqrt{1575}$ sq. metre = 39.68 sq. metre (approx.)\n\nAgain, area of $\\triangle ABD = \\frac{1}{2} AB \\times DF$\n\nor, $39.68 = \\frac{1}{2} \\times 12 \\times DF$ or, $6DF = 39.68$ $\\therefore DF = 6.61$ (approx.)\n\nNow, $\\triangle BCE$ is a right-angled triangle.\n\n$\\therefore BE^2 = BC^2 - CE^2 = AD^2 - DF^2 = 8^2 - (6.61)^2 = 20.31$\n\n$\\therefore BE = 4.5$ (approx.)\n\nSo, $AE = AB + BE = 12 + 4.5 = 16.5$ (approx.)\n\nIn the right-angled $\\triangle ACE$\n\n$AC^2 = AE^2 + CE^2 = (16.5)^2 + (6.61)^2 = 315.94$\n\n$\\therefore AC = 17.77$ (approx.)\n\nThe required length of the diagonal is 17.77 metre (approx.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 13. The length of a diagonal of a rhombus is 10 metre and its area is 120 sq. metre. Determine the length of the other diagonal and its perimeter.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 16.01: Parallelogram with diagonal and perpendicular",
+      "figure_no": "16.01",
+      "box_2d": [
+        62,
+        678,
+        170,
+        875
+      ],
+      "description": "A parallelogram with a diagonal of 24 cm and a perpendicular height h.",
+      "reading_order_anchor": "Area of the parallelogram = dh square cm."
+    },
+    {
+      "caption": "Fig 16.02: Parallelogram ABCD with diagonals and perpendiculars",
+      "figure_no": "16.02",
+      "box_2d": [
+        256,
+        646,
+        365,
+        875
+      ],
+      "description": "A parallelogram ABCD with sides 12 and 8, diagonal BD=10, and perpendiculars DF and CE.",
+      "reading_order_anchor": "Let, in the parallelogram ABCD; AB = a = 12 metre"
+    }
+  ]
+}

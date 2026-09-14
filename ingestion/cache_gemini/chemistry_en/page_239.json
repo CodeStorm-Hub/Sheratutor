@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 239,
+  "pdf_page_no": 244,
+  "chapter_no": 10,
+  "chapter_title": "Mineral Resources: Metal-Nonmetal",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Froth Floatation Method:** The sulfide ores are condensed in this method. The ore is first taken inside a large tank and water is added. Later, oil is slowly added to the mixture. When air is blown on the ore, the sulfide ore dissolves in the oil and floats up as froth. The froth is collected while the impurities remain at the bottom of the tank.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Experiment of Froth Floatation Method",
+      "chunk_type": "theory",
+      "content_markdown": "**Ingredients:** sand, kerosene, spatula, liquid/powder soap, watch glass, a large test tube with cork, celcopyrite, galena or hematite powder\n\n**Process:**\n\n1. Mix equal amounts of sand with one spatula of washed ore. Take the mixture in a large test tube and fill half of it with water.\n2. Shake the test tube closing it with a cork. Have the sand and ore separated?\n3. Add some powder/liquid soap and a few drops of kerosene oil.\n4. Again shake the corked test tube well.\n5. Taking some foam into the watch glass with a spatula examine whether there is any ore.\n6. Sand sinks to the bottom of the test tube and ores float to the surface of the test tube.",
+      "activity_tag": "Experiment"
+    },
+    {
+      "section_no": null,
+      "section_title": "Magnetic Separation Method",
+      "chunk_type": "theory",
+      "content_markdown": "The process is used if either of the ores or gangue has magnetic property. Crushed ores are passed through a plastic conveyor belt. The outer wheel of the conveyor belt has the magnetic property. It attracts the magnetic ores or gangue and they are gathered below and near the wheel. The nonmagnetic portion of the",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.05: Froth Floatation Process.",
+      "figure_no": "10.05",
+      "box_2d": [
+        377,
+        542,
+        549,
+        868
+      ],
+      "description": "Diagram illustrating the froth floatation process showing a test tube with a layer of oil and foam, along with a spatula and watch glass.",
+      "reading_order_anchor": "Experiment of Froth Floatation Method"
+    }
+  ]
+}

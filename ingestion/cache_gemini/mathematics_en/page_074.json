@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 74,
+  "pdf_page_no": 79,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= 15000 \\times \\frac{53}{50} \\times \\frac{53}{50} \\times \\frac{53}{50} = \\frac{446631}{25} = 17865.24$$\n\n$\\therefore$ Compound principal is Tk $17865.24$\n\n$\\therefore$ Compound profit is Tk. $(17865.24 - 15000)$ Tk. $= 2865.24.$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Work:**\n\n1) The loss is $50\\%$ when $10$ lemons are sold $50$ taka. What will be the profit or loss if $6$ lemons are sold $50$ taka?\n\n2) What will be the profit of principal of Tk. $750$ in $4$ years at simple interest $6\\frac{1}{2}$ percent per annum?\n\n3) Find the compound interest of Tk. $2000$ in $3$ years at compound interest of Tk. $4$ percent per annum.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 42.** The loss is $x\\%$ when $10$ sticks of ice creams are sold per taka. How many sticks of ice creams are to be sold per taka to make the profit of $z\\%$?\n\n**Solution:** If the cost price is Tk. $100$, the selling price at the loss of $x\\%$ is Tk. $= (100 - x)$\n\nIf selling price is Tk. $(100 - x)$, cost price is Tk. $100$\n\n$\\therefore$ If selling price is Tk. $1$, cost price is Tk. $\\frac{100}{100 - x}$\n\nHence, the cost price of $10$ sticks is Tk. $\\frac{100}{100 - x}$\n\n$\\therefore$ The cost price of $1$ stick is Tk. $\\frac{100}{(100 - x) \\times 10}$.\n\nAgain if the cost price is Tk. $100$, selling price at the profit of $z\\%$ is Tk. $(100 + z)$\n\nIf the cost price is Tk. $100$, selling price is Tk. $(100 + z)$.\n\nIf the cost price is Tk. $1$, selling price is Tk. $\\frac{100 + z}{100}$\n\n$\\therefore$ If the cost price is Tk. $\\frac{100}{(100 - x) \\times 10}$,\n\nselling price is Tk. $\\frac{100 + z}{100} \\times \\frac{100}{(100 - x) \\times 10} = \\frac{(100 + z)}{(100 - x) \\times 10}$\n\nThe selling price of $1$ stick ice cream is Tk. $\\frac{(100 + z)}{(100 - x) \\times 10} = \\frac{100 + z}{1000 - 10x}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

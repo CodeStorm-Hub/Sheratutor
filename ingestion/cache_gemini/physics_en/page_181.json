@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 181,
+  "pdf_page_no": 186,
+  "chapter_no": 6,
+  "chapter_title": "Effect of Heat on Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Answer:** Let us assume the temperature of ice is $0\text{ }^\\circ\text{C}$.\n\nMass of ice $m_1 = 100\text{ gm} = 0.1\text{ kg}$\nMass of $1\text{ liter}$ water $m_2 = 1\text{ kg}$\nSpecific heat of water $s = 4.2 \times 10^3\text{ Jkg}^{-1}\text{K}^{-1}$\n\nThe water of $1\text{kg}$ has to supply the heat that is required to melt the piece of ice and to raise the temperature of the ice melted water to its final temperature. Let us consider the final temperature of water is $T$, then the amount of heat absorbed by the ice is:\nHeat required to melt: $m_1 L$\nThe heat required to increase the temperature from $0\text{ }^\\circ\text{C}$ to $T$ after melting: $m_1 s (T - 0)$\nThe mass of water $m_2$ supplies these amounts of heat, so its temperature will decrease.\nThat is,\n\nThe heat supplied: $m_2 s (30\text{ }^\\circ\text{C} - T)$\n\nThese two types of heat must be equal. Hence:\n$$m_1 L + m_1 s T = m_2 s (30\text{ }^\\circ\text{C} - T)$$\n$$T = \frac{30\text{ }^\\circ\text{C} \times m_2 s - m_1 L}{(m_1 + m_2)s}$$\n\n$$T = \frac{30 \times 1 \times 4.2 \times 10^3 - 0.1 \times 334 \times 10^3}{(1 + 0.1) 4.2 \times 10^3} = 20\text{ }^\\circ\text{C}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "**Question:** What is the final temperature if $1\text{ liter}$ of water temperature $20\text{ }^\\circ\text{C}$ is added to $2\text{ liter}$ water at temperature $75\text{ }^\\circ\text{C}$?\n\n**Answer:** Let us consider the final temperature is $T$, so the temperature of $2\text{ liter}$ of water reaches $T$ by decreasing the temperature from $75\text{ }^\\circ\text{C}$. Absorbing this amount of heat the temperature of $2\text{ liter}$ water reaches $T$ by increasing the temperature from $20\text{ }^\\circ\text{C}$.\n\nHence\nMass of $1\text{ liter}$ water $m_1 = 1\text{ kg}$\nMass of $2\text{ liter}$ water $m_2 = 2\text{ kg}$\nSpecific heat of water $s = 4.2 \times 10^3\text{ Jkg}^{-1}\text{K}^{-1}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 166,
+  "pdf_page_no": 171,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. In the reaction $\text{H}_2\text{SO}_4 + \text{MgO} \rightarrow$\n\ni. heat is produced\n\nii. electron transition occurs\n\niii. precipitation occurs\n\nWhich is correct?\n\na. i\n\nb. ii and iii\n\nc. i and iii\n\nd. i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. The reaction $2\text{FeCl}_2 + \text{Cl}_2 \rightarrow 2\text{FeCl}_3$\n\ni. Isomerization reaction\n\nii. redox reaction\n\niii. addition reaction\n\nWhich is correct?\n\na. i and ii\n\nb. i and iii\n\nc. ii and iii\n\nd. i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "6. What is the oxidation number of Sulfur in $\text{H}_2\text{SO}_4$?\n\na. $+2$\n\nb. $+4$\n\nc. $+6$\n\nd. $+8$",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Both Opu and Setu use natural gas for cooking. Although there are black shades at the bottom of pans in Opu's house, there is none on the pans at Setu's house.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is irreversible reaction?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. What is meant by chemical equilibrium?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "c. What type of reactions occur during cooking in their houses? Explain.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "d. In your opinion, in which of the houses of the stem, gas is wasted during cooking? Give reasons for your opinion.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

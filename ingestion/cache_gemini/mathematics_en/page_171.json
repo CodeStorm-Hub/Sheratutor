@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 171,
+  "pdf_page_no": 176,
+  "chapter_no": 8,
+  "chapter_title": "Circle",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 20.** The angle subtended by the same arc at the centre is double of the angle subtended by it at any point on the remaining part of the circle.\n\nGiven an arc $BC$ of a circle subtending angles $\\angle BOC$ at the centre $O$ and $\\angle BAC$ at a point $A$ of the circle $ABC$.\n\nWe need to prove that $\\angle BOC = 2\\angle BAC$\n\n**Drawing:** Suppose, the line segment $AC$ does not pass through the centre. In this case, draw a line segment $AD$ at $A$ passing through the centre.\n\n**Proof:**\n\nStep 1. In $\\triangle AOB$ the external angle $\\angle BOD = \\angle BAO + \\angle ABO$ [$\\because$ An exterior angle of a triangle is equal to the sum of the two interior opposite angles]\n\nStep 2. In $\\triangle AOB, OA = OB$ [$\\because$ Radius of same circle]\n\nTherefore, $\\angle BAO = \\angle ABO$ [$\\because$ Base angles of an isosceles triangle are equal]\n\nStep 3. From steps (1) and (2), $\\angle BOD = 2\\angle BAO$\n\nStep 4. Similarly, from $\\triangle AOC, \\angle COD = 2\\angle CAO$\n\nStep 5. From steps (3) and (4),\n$\\angle BOD + \\angle COD = 2\\angle BAO + 2\\angle CAO$ [by adding]\nThis is the same as $\\angle BOC = 2\\angle BAC$ (Proved)\n\nWe can state the theorem in a different way. The angle standing on an arc of the circle is half the angle subtended by the arc at the centre.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Prove the theorem 20 when $AC$ passes through the centre $O$ of the circle $ABC$.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 21.** Angles in a circle standing on the same arc are equal.\n\nLet $O$ be the centre of a circle and standing on the arc $BCD$, $\\angle BAD$ and $\\angle BED$ be the two angles in the circle. We need to prove that $\\angle BAD = \\angle BED$.\n\n**Drawing:** Join $O, B$ and $O, D$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 8.01: Theorem 20 illustration",
+      "figure_no": "8.01",
+      "box_2d": [
+        165,
+        685,
+        275,
+        825
+      ],
+      "description": "A circle with center O, arc BC, and point A on the circumference, with line AD passing through the center.",
+      "reading_order_anchor": "Theorem 20. The angle subtended by the same arc at the centre is double of the angle subtended by it at any point on the remaining part of the circle."
+    },
+    {
+      "caption": "Fig 8.02: Theorem 21 illustration",
+      "figure_no": "8.02",
+      "box_2d": [
+        815,
+        685,
+        955,
+        825
+      ],
+      "description": "A circle with center O, arc BCD, and two angles BAD and BED subtended by the same arc.",
+      "reading_order_anchor": "Theorem 21. Angles in a circle standing on the same arc are equal."
+    }
+  ]
+}

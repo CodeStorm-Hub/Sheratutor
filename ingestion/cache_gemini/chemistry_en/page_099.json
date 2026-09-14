@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 99,
+  "pdf_page_no": 104,
+  "chapter_no": 5,
+  "chapter_title": "Chemical Bonds",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Covalent bond is also available in compound's molecule made of more than one non-metallic element. For example, in water's molecule, $O$ atoms share one of their electrons from the outermost energy level with one electron of $H$ atom. Thus two ($O-H$) covalent bonds are created and water's molecule is structured.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the $H_2O$ molecule, two pairs or $4$ electrons of $O$ atom do not participate in any bonding. However, if required, they can also create bonds which you will learn in higher classes.\n\nAn $O$ atom is capable of participating in both ionic and covalent bonds. A $Na$ atom however is never able to participate in covalent bonding; it always participates in ionic bonding only. An $O$ atom can accept $2$ electrons from other elements in an ionic bond and can share $2$ electrons with another element in a covalent bond. $Na$ atom, on the other hand is capable of only donating electrons to other elements in an ionic bond.\n\nMolecules of elements with covalent bonds ($N_2$, $O_2$, $Cl_2$, $Br_2$, $I_2$ etc.) are called covalent molecules and compounds with covalent bonds ($CH_4$, $CO_2$, $HCl$, $NH_3$ etc.) are called covalent compound molecules. Many covalent molecules ($CO_2$, $NH_3$, $O_2$, $Cl_2$) remain in gaseous state at normal temperature and pressure. Some of them remain in the liquid state ($H_2O$, $C_2H_5OH$ etc.) in the same situation while some others ($C_{10}H_8$, $S_8$, $I_2$) are found in solid state. When two covalent molecules come close, a weak attraction force remains effective among them. This force is called Vander Wall's attraction force. The covalent molecules remain attached",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.10: Two (O-H) covalent bonds in water molecule.",
+      "figure_no": "5.10",
+      "box_2d": [
+        224,
+        182,
+        412,
+        793
+      ],
+      "description": "Diagram showing the formation of covalent bonds between two hydrogen atoms and one oxygen atom to form a water molecule, including atomic shell diagrams before and after bonding.",
+      "reading_order_anchor": "Covalent bond is also available in compound's molecule made of more than one non-metallic element."
+    }
+  ]
+}

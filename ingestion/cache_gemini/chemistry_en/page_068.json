@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 68,
+  "pdf_page_no": 73,
+  "chapter_no": 4,
+  "chapter_title": "Periodic Table",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Element | Electronic Configuration | Period | Group ||\n|---|---|---|---|\n| $\\text{Cr}(24)$ | $1\\text{s}^2\\, 2\\text{s}^2\\, 2\\text{p}^6\\, 3\\text{s}^2\\, 3\\text{p}^6\\, 3\\text{d}^5\\, 4\\text{s}^1$ | $4$ | $1 + 5 = 6$ (System 3) |\n| $\\text{Mn}(25)$ | $1\\text{s}^2\\, 2\\text{s}^2\\, 2\\text{p}^6\\, 3\\text{s}^2\\, 3\\text{p}^6\\, 3\\text{d}^5\\, 4\\text{s}^2$ | $4$ | $2 + 5 = 7$ (System 3) |\n| $\\text{Fe}(26)$ | | | |\n| $\\text{Co}(27)$ | $1\\text{s}^2\\, 2\\text{s}^2\\, 2\\text{p}^6\\, 3\\text{s}^2\\, 3\\text{p}^6\\, 3\\text{d}^7\\, 4\\text{s}^2$ | $4$ | $2 + 7 = 9$ (System 3) |\n| $\\text{Ni}(28)$ | $1\\text{s}^2\\, 2\\text{s}^2\\, 2\\text{p}^6\\, 3\\text{s}^2\\, 3\\text{p}^6\\, 3\\text{d}^8\\, 4\\text{s}^2$ | $4$ | $2 + 8 = 10$ (System 3) |\n| $\\text{Cu}(29)$ | $1\\text{s}^2\\, 2\\text{s}^2\\, 2\\text{p}^6\\, 3\\text{s}^2\\, 3\\text{p}^6\\, 3\\text{d}^{10}\\, 4\\text{s}^1$ | $4$ | $1 + 10 = 11$ (System 3) |\n| $\\text{Zn}(30)$ | $1\\text{s}^2\\, 2\\text{s}^2\\, 2\\text{p}^6\\, 3\\text{s}^2\\, 3\\text{p}^6\\, 3\\text{d}^{10}\\, 4\\text{s}^2$ | $4$ | $2 + 10 = 12$ (System 3) |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Fill up the blank spaces of elements with atomic numbers $3, 4, 6, 11, 13, 16, 21, 26$ of the above table with necessary information.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "4.4",
+      "section_title": "Electronic Configurations of Elements are the Main Basis of the Periodic Table",
+      "chunk_type": "theory",
+      "content_markdown": "Electronic configuration serves to identify the group and period of an element in the periodic table. Again, elements having the same electron arrangement in their outermost orbit belong to the same group. On the other hand, elements with different configuration of electrons in their outermost shell belong to separate groups.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Table 4.02: Group and Electronic Configuration",
+      "chunk_type": "table",
+      "content_markdown": "Table 4.02: Group and Electronic Configuration.\n\n| Group 1 | | Group 2 | |\n|---|---|---|---|\n| Element | Electronic Configuration | Element | Electronic Configuration |\n| $\\text{H}(1)$ | $1\\text{s}^1$ | $\\text{He}(2)$ | $1\\text{s}^2$ |\n| $\\text{Li}(3)$ | $1\\text{s}^2 2\\text{s}^1$ | $\\text{Be}(4)$ | $1\\text{s}^2 2\\text{s}^2$ |\n| $\\text{Na}(11)$ | $1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^1$ | $\\text{Mg}(12)$ | $1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^2$ |\n| $\\text{K}(19)$ | $1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^2 3\\text{p}^6 4\\text{s}^1$ | $\\text{Ca}(20)$ | $1\\text{s}^2 2\\text{s}^2 2\\text{p}^6 3\\text{s}^2 3\\text{p}^6 4\\text{s}^2$ |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

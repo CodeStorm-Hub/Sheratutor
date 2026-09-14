@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 110,
+  "pdf_page_no": 115,
+  "chapter_no": 5,
+  "chapter_title": "Equations in One Variable",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "or, $x = 3a$\n\nAgain, when $y = 3$,\n$$\\frac{x + a}{x - a} = \\frac{3}{1}$$\nor, $x + a = 3(x - a)$ [by cross-multiplication]\n\nor, $x + a = 3x - 3a$\n\nor, $3x - x = a + 3a$\n\nor, $x = 2a$\n\n$\\therefore$ Solution is $x = 2a$ or, $x = 3a$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work:\n1) Comparing the equation $x^2 - 1 = 0$ with $ax^2 + bx + c = 0$, write down the values of $a, b, c$.\n\n2) What is the degree of the equation $(x - 1)^2$? How many roots does it have and what are these?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Usage of quadratic equations\n\nMany problems of our daily life can be solved easily by forming linear and quadratic equations. Here, the formation of quadratic equations from the given conditions based on real life problems and techniques for solving them are discussed.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 12.** Denominator of a proper fraction is 4 more than the numerator. If the fraction is squared, its denominator will be 40 more than the numerator. Find the fraction.\n\n**Solution:** Let the numerator of the fraction be $x$ and denominator be $x + 4$\n\nHence the fraction is $\\frac{x}{x + 4}$\n\nSquare of the fraction $= \\left(\\frac{x}{x + 4}\\right)^2 = \\frac{x^2}{(x + 4)^2} = \\frac{x^2}{x^2 + 8x + 16}$\n\nHere, numerator $= x^2$ and denominator $= x^2 + 8x + 16$\n\nby the question, $x^2 + 8x + 16 = x^2 + 40$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

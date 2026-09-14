@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 3,
+  "pdf_page_no": 8,
+  "chapter_no": 1,
+  "chapter_title": "Real Numbers",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "For example, $\\sqrt{2} = 1.414213\\dots$, $\\sqrt{3} = 1.732\\dots$, $\\frac{\\sqrt{5}}{2} = 1.118\\dots$, etc are irrational numbers. No irrational number can be expressed as ratio of two integers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Decimal Fractional Number:** Rational and irrational numbers when expressed using decimal sign are called decimal fractional number For example, $3 = 3.0$, $\\frac{5}{2} = 2.5$, $\\frac{10}{3} = 3.3333\\dots$, $\\sqrt{3} = 1.732\\dots$, etc are decimal fractional numbers. If there are finite number of digits after decimal sign, then this is called finite decimal fraction and if there are infinitely many digits, then it is called infinite decimal fractions. For example, $0.52$, $3.4152$ etc are finite decimal fractions, whereas $\\frac{4}{3} = 1.333\\dots$, $\\sqrt{5} = 2.123512367\\dots$, etc are infinite decimal fractions. Again, in case of infinite decimal numbers, if some digits after decimal point are repeated, they are called infinite repeated decimal fractions. If digits are not repeated, they are called infinite decimal numbers without repeatation.\n\nFor example, $\\frac{122}{99} = 1.2323\\dots$, $5.1\\dot{6}\\dot{5}\\dot{4}$ etc are infinite repeated decimal fractions and $0.523050056\\dots$, $2.12340314\\dots$ etc are infinite decimal numbers without repeatation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Real Number:** All rational and irrational numbers are called real numbers. For example, the following numbers are real numbers.\n\n$0, \\pm 1, \\pm 2, \\pm 3, \\dots$ \n\n$\\pm \\frac{1}{2}, \\pm \\frac{3}{2}, \\pm \\frac{4}{3}, \\dots$\n\n$\\sqrt{2}, \\sqrt{3}, \\sqrt{5}, \\sqrt{7}, \\dots$ \n\n$1.23, 0.415, 1.3333\\dots, 0.\\dot{6}\\dot{2}, 4.120345061\\dots$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Positive Number:** All real numbers bigger than $0$ are called positive numbers. For example, $2, \\frac{1}{2}, \\frac{3}{2}, \\sqrt{2}, 0.415, 0.\\dot{6}\\dot{2}, 4.120345061\\dots$, etc are positive numbers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Negative Number:** All real numbers smaller than $0$ are called negative numbers. For example, $-2, -\\frac{1}{2}, -\\frac{3}{2}, -\\sqrt{2}, -0.415, -0.\\dot{6}\\dot{2}, -4.120345061\\dots$, etc are negative numbers.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Non-negative Number:** All positive numbers including $0$ are called nonnegative numbers. For example, $0, 3, \\frac{1}{2}, 0.612, 1.\\dot{3}, 2.120345\\dots$, etc are non-negative numbers.\n\nIn the following chart we can see classification of real numbers.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

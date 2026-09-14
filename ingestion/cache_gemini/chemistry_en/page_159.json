@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 159,
+  "pdf_page_no": 164,
+  "chapter_no": 7,
+  "chapter_title": "Chemical Reactions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "4. Energy Produced through Respiration: Respiration occurs in every cell of our body. In respiration, basically, the glucose ($C_6H_{12}O_6$) molecule is oxidized by $O_2$ and in the process $CO_2$, $H_2O$ and energy is produced.\n\n$$C_6H_{12}O_6 + 6O_2 \\longrightarrow 6CO_2 + 6H_2O + \\text{Energy}$$\n\nThe digestion system in the human body forms excess $\\text{HCl}$ in many of us. To neutralize this acid, many doctors prescribe an antacid type medicine. Antacid is a mixture of $\\text{Mg(OH)}_2$ and $\\text{Al(OH)}_3$. These two bases neutralize excess $\\text{HCl}$ and the patient feels relieved. The equation of the reaction is:\n\n$$2\\text{HCl} + \\text{Mg(OH)}_2 \\longrightarrow \\text{MgCl}_2 + 2H_2O$$\n\n$$3\\text{HCl} + \\text{Al(OH)}_3 \\longrightarrow \\text{AlCl}_3 + 3H_2O$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "5. Natural Gas as Fuel: Natural gas is used as fuel. Maximum percentage of natural gas is composed of methane. When this methane gas is burnt in oxygen, it produces $CO_2$, $H_2O$ and heat. When we burn CNG, diesel, petrol, kerosene and octane, they produce the same products.\n\n$$\\text{CH}_4 + 2O_2 \\longrightarrow CO_2 + 2H_2O + \\text{Energy}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.4.2",
+      "section_title": "Ways of Prevention of Some Harmful Reactions",
+      "chunk_type": "theory",
+      "content_markdown": "Many products around us are continuously being decayed or eroded due to some chemical reactions. We can make use of our knowledge of chemistry to prevent such decaying and save many of them.\n\n(i) To prevent corrosion of rust on iron, one can paint the outside of the iron products so that it does not come in contact with air. A coating of a comparatively less active metal on iron through electrolysis, which is called electroplating, can also save iron from rusting. The process which lays a coating of zinc on other metals is called galvanizing and the process of tin plating lays a tin coating. The process which lays a coating of a metal on other metals through electrolysis is called electroplating. This way we can save metals from corrosion.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

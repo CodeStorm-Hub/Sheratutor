@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 267,
+  "pdf_page_no": 272,
+  "chapter_no": 14,
+  "chapter_title": "অনুপাত, সদৃশতা ও প্রতিসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "জ্যামিতিক সমানুপাত (Geometric proportions)",
+      "chunk_type": "theory",
+      "content_markdown": "আমরা ত্রিভুজক্ষেত্রের ক্ষেত্রফল নির্ণয় করতে শিখেছি। এ থেকে দুইটি প্রয়োজনীয় অনুপাতের ধারণা তৈরি করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.1",
+      "section_title": "দুইটি ত্রিভুজক্ষেত্রের উচ্চতা সমান হলে, এদের ক্ষেত্রফল ও ভূমি সমানুপাতিক।",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, ত্রিভুজক্ষেত্র $ABC$ ও $DEF$ এর ভূমি যথাক্রমে $BC = a$, $EF = d$ এবং উভয় ক্ষেত্রের উচ্চতা $h$।\n\nসুতরাং, ত্রিভুজক্ষেত্র $ABC$ এর ক্ষেত্রফল = $\\frac{1}{2} \\times a \\times h$, ত্রিভুজক্ষেত্র $DEF$ এর ক্ষেত্রফল = $\\frac{1}{2} \\times d \\times h$\n\nঅতএব, ত্রিভুজক্ষেত্র $ABC$ এর ক্ষেত্রফল : ত্রিভুজক্ষেত্র $DEF$ এর ক্ষেত্রফল = $\\frac{1}{2} \\times a \\times h : \\frac{1}{2} \\times d \\times h = a : d = BC : EF$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "14.2",
+      "section_title": "দুইটি ত্রিভুজক্ষেত্রের ভূমি সমান হলে, এদের ক্ষেত্রফল ও উচ্চতা সমানুপাতিক।",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, ত্রিভুজক্ষেত্র $ABC$ ও $DEF$ এর উচ্চতা যথাক্রমে $AP = h$, $DQ = k$ এবং উভয় ক্ষেত্রের ভূমি $b$।\n\nসুতরাং, ত্রিভুজক্ষেত্র $ABC$ এর ক্ষেত্রফল = $\\frac{1}{2} \\times b \\times h$, ত্রিভুজক্ষেত্র $DEF$ এর ক্ষেত্রফল = $\\frac{1}{2} \\times b \\times k$\n\nঅতএব, ত্রিভুজক্ষেত্র $ABC$ এর ক্ষেত্রফল : ত্রিভুজক্ষেত্র $DEF$ এর ক্ষেত্রফল = $\\frac{1}{2} \\times b \\times h : \\frac{1}{2} \\times b \\times k = h : k = AP : DQ$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১৪.০১: সমান উচ্চতাবিশিষ্ট ত্রিভুজ",
+      "figure_no": "14.01",
+      "box_2d": [
+        185,
+        245,
+        330,
+        810
+      ],
+      "description": "দুটি ত্রিভুজ ABC এবং DEF যাদের উচ্চতা h সমান এবং ভূমি যথাক্রমে a এবং d।",
+      "reading_order_anchor": "14.1"
+    },
+    {
+      "caption": "চিত্র ১৪.০২: সমান ভূমিবিশিষ্ট ত্রিভুজ",
+      "figure_no": "14.02",
+      "box_2d": [
+        575,
+        245,
+        720,
+        720
+      ],
+      "description": "দুটি ত্রিভুজ ABC এবং DEF যাদের ভূমি b সমান এবং উচ্চতা যথাক্রমে h এবং k।",
+      "reading_order_anchor": "14.2"
+    }
+  ]
+}

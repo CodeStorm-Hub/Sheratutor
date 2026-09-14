@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 192,
+  "pdf_page_no": 197,
+  "chapter_no": 7,
+  "chapter_title": "Waves and Sound",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the deviation or disturbance in a quantity changes position with time, it is referred to as a wave. A single disturbance can constitute a wave, while a series of repeated disturbances can also generate a wave; in this context, it is called a wave train. Generally, the term 'wave' refers to periodic wave trains, while single disturbances are less commonly referred to by this term.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Some waves require a medium to propagate, while others do not. Waves that need a gaseous, liquid, or solid medium to travel through are known as mechanical waves. In these types of waves, the particles of the medium actively participate in the wave propagation.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "When a stone is thrown into a pond, a single wave is created that spreads outward through the water. When the vibrations of a tuning fork travel through a medium—whether air, liquid, or solid—we describe this as a sound wave propagating through the medium. When the oscillations of electric and magnetic fields transfer energy, this is called an electromagnetic wave. Examples of electromagnetic waves include light waves, gamma rays, and microwaves. These types of waves do not require a medium to propagate.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.2.1",
+      "section_title": "Characteristics of Waves",
+      "chunk_type": "theory",
+      "content_markdown": "Here, we will discuss some properties of waves. The first property below (i) applies only to mechanical waves, while the remaining properties (ii-v) apply to almost all types of waves.\n\n(i) When a wave propagates through a medium, the particles of the medium oscillate (vibrate or go up-down) about its own position but are not displaced permanently with the wave.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

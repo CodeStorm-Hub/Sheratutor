@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 93,
+  "pdf_page_no": 98,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": "3.9.3",
+      "section_title": "Increase and Decrease of Friction",
+      "chunk_type": "theory",
+      "content_markdown": "Already we know that for our necessity sometimes friction has to be increased and sometimes it has to be decreased.\n\n**Reducing friction**\n\nThe measures we may take to reduce friction are:\n\n1. Make the surfaces as smooth as possible where friction is take place. On smooth surfaces sliding friction is less.\n\n2. Oil, Mobil or grease like materials are called greasy materials or lubricants. The friction is reduced to a great extent if lubricants are used in between the two surfaces.\n\n3. Using wheel friction can be reduced. If wheel is used we can do work by very small rolling friction instead of large sliding friction. It is possible to reduce friction to a great extent by using ball bearings in the rotating wheel, using the rolling friction of the small steel balls instead of the direct friction.\n\n4. The design of the fast moving vehicles like car, plane is done in such a way that the wind can flow over the streamline surface without creating any friction.\n\n5. The surfaces where friction occurs touch one another in a very small region, then friction can be reduced.\n\n6. We have seen that if force is applied on the two frictional surfaces, friction is increased. Therefore if vertically applied force is reduced, friction can be reduced.\n\n**Increasing friction**\n\nIf the procedures that are taken to reduce friction are not done or if the opposite steps are taken then friction will be increased. Therefore the necessary steps we take to increase the friction are:\n\n1. Roughening the two surfaces where friction is present.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.20: It is possible to reduce friction by using ball bearings.",
+      "figure_no": "3.20",
+      "box_2d": [
+        206,
+        620,
+        395,
+        840
+      ],
+      "description": "A metallic ball bearing showing the outer ring, inner ring, and rolling steel balls.",
+      "reading_order_anchor": "3.9.3 Increase and Decrease of Friction"
+    }
+  ]
+}

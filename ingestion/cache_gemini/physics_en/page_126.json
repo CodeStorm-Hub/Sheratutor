@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 126,
+  "pdf_page_no": 131,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "save energy.\nWhich one is correct?\na) i \nb) ii \nc) ii and iii \nd) i, ii and iii",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "6. What type of energy is stored when a spring is stretched?\n(a) Kinetic energy \n(b) Potential Energy\n(c) Heat Energy \n(d) Chemical Energy",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": "Creative questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. A boy of mass $40\\text{ kg}$ and a young man of mass $60\\text{ kg}$ start running from the ground floor and reach the roof top at the same time. Both of them ran with the same velocity of $30\\text{ m/min}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is power?\n(b) What do you mean by the work $50\\text{ J}$?\n(c) Find the kinetic energy of the young man.\n(d) Explain with mathematical logic whether the power of both are equal or not.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2. Jeny resides in the 5th floor of a building. The height of each stair is $20\\text{ cm}$. There are $22$ stairs in each floor and Jeny needs $4$ minutes time to reach the 5th floor. Susmita requires $4.5$ minutes to reach that 5th floor. It is to be mentioned that mass of Jeny and Susmita are $64\\text{ kg}$ and $75\\text{ kg}$ respectively.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(a) What is the main source of energy?\n(b) Write two similarities between work and energy.\n(c) Calculate the amount of work done by Jeny.\n(d) Between Jeny and Susmita who has more power? Give reasons in favor of your answer.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

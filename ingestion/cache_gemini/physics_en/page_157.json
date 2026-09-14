@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 157,
+  "pdf_page_no": 162,
+  "chapter_no": 5,
+  "chapter_title": "State of Matter and Pressure",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. What will be its height if kerosene is used to make a barometer instead of mercury?\n(Density of kerosene is $0.8\\text{ gm/cc}$)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. A crown of gold and an equal weight of pure gold are hung from the two sides of a bar and then immersed into water (Figure 5.15). If we find that in water the weight of the crown is less, then what will you say about the crown? Is it pure or impure? Why?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. Two water filled cylinders are connected by a pipe. The cross sectional area of the two cylinders are $1\\text{ cm}^2$ and $1\\text{ m}^2$ and two pistons are attached with them. A person of weight $70\\text{ kg}$ is sitting on the bigger piston. How much force will you have to apply on the smaller piston if you want to lift him?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "5. A weight of $10\\text{ kg}$ is hung from a metal rod of $0.5\\text{ m}$ length and $0.01\\text{ m}^2$ cross sectional area. The elongated length is $0.501\\text{ m}$. What is the Young's modulus of this metal rod?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure: 5.15: Crown of gold and pure gold is immersed in water",
+      "figure_no": "5.15",
+      "box_2d": [
+        149,
+        584,
+        465,
+        883
+      ],
+      "description": "Two diagrams showing a balance scale with a gold crown on one side and a pure gold block on the other side, first in air and then immersed in water.",
+      "reading_order_anchor": "3. A crown of gold and an equal weight of pure gold..."
+    },
+    {
+      "caption": "Figure: 5.16 : A man is lifted up by putting pressure on a hydraulic press",
+      "figure_no": "5.16",
+      "box_2d": [
+        631,
+        221,
+        893,
+        760
+      ],
+      "description": "Illustration of a hydraulic press setup where a child applies a small force on the smaller piston to lift a heavier man sitting on the larger piston.",
+      "reading_order_anchor": "5. A weight of 10 kg is hung from a metal rod..."
+    }
+  ]
+}

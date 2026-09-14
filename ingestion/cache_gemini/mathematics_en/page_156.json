@@ -1,0 +1,88 @@
+{
+  "printed_page_no": 156,
+  "pdf_page_no": 161,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3. Three sides and two diagonals",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "4. Three sides and two included angles",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "5. Two sides and three angles",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Sometimes special quadrilaterals can be constructed with fewer data. In such a case, from the properties of quadrilaterals, we can retrieve five necessary data. For example, a parallelogram can be constructed if only the two adjacent sides and the included angle are given. In this case, only three data are given. Again, a square can be constructed when only one side of the square is given. The four sides of a square are equal and an angle is a right angle; so five data are easily specified.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.4",
+      "section_title": "Construction 4",
+      "chunk_type": "theory",
+      "content_markdown": "Construction 4. Two diagonals and an included angle between them of a parallelogram are given. Construct the parallelogram.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Let $a$ and $b$ be the diagonals of a parallelogram and $\\angle x$ be an angle included between them. The parallelogram is to be constructed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Three sides and two diagonals",
+      "figure_no": "7.01",
+      "box_2d": [
+        85,
+        418,
+        245,
+        845
+      ],
+      "description": "Geometric construction diagram showing three sides and two diagonals.",
+      "reading_order_anchor": "3. Three sides and two diagonals"
+    },
+    {
+      "caption": "Fig 7.02: Three sides and two included angles",
+      "figure_no": "7.02",
+      "box_2d": [
+        286,
+        418,
+        405,
+        885
+      ],
+      "description": "Geometric construction diagram showing three sides and two included angles.",
+      "reading_order_anchor": "4. Three sides and two included angles"
+    },
+    {
+      "caption": "Fig 7.03: Two sides and three angles",
+      "figure_no": "7.03",
+      "box_2d": [
+        455,
+        418,
+        575,
+        885
+      ],
+      "description": "Geometric construction diagram showing two sides and three angles.",
+      "reading_order_anchor": "5. Two sides and three angles"
+    }
+  ]
+}

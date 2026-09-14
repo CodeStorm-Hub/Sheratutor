@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 25,
+  "pdf_page_no": 30,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "But initially, we assumed $K$ as the maximum element of the set $N$. Subsequently, it turns out that $K+1$ is also an element of the set $N$. Similarly, it can be shown that $K+2, K+3, \\dots$ are also elements of the set $N$.\n\nTherefore, the set of natural numbers $N$ cannot be finite. Hence, the set of natural numbers is an infinite set.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Work: Determine which ones are finite and which ones are infinite sets:\n1) $\\{3, 5, 7\\}$\n2) $\\{1, 2, 2^2, \\dots, 2^{10}\\}$\n3) $\\{3, 3^2, 3^3, \\dots\\}$\n4) $\\{x : x \\text{ integer and } x < 4\\}$\n5) $\\{\\frac{p}{q} : p \\text{ and } q \\text{ are mutually coprimes and } q > 1\\}$\n6) $\\{y : y \\in N \\text{ and } y^2 < 100 < y^3\\}$",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Empty Set",
+      "chunk_type": "theory",
+      "content_markdown": "If a set does not have any element, the set is said to be empty set, and is denoted by $\\emptyset$. For example, the set of three male students of Girl's school, $\\{x \\in N : 10 < x < 11\\}$, $\\{x \\in N : x \\text{ prime and } 23 < x < 29\\}$ etc.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Venn-Diagram",
+      "chunk_type": "theory",
+      "content_markdown": "John Venn (1834-1923) first expressed sets by using pictures. Here every set is represented by a geometric figure like rectangles, circles and triangles in a plane. These pictures have been named after John Venn.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.3",
+      "section_title": "Subset",
+      "chunk_type": "theory",
+      "content_markdown": "$A = \\{a, b\\}$ is a set. Sets $\\{a, b\\}, \\{a\\}, \\{b\\}$ can be formed from the elements of this set. Again, we can form a subset $\\emptyset$ with no elements at all. These sets $\\{a, b\\}, \\{a\\}, \\{b\\}, \\emptyset$ are subsets of set $A$. All the sets that can be formed from a set are called subsets of the original set. Subset is denoted by $\\subseteq$. If $B$ is a subset of $A$, then we write $B \\subseteq A$. $B$ is a subset of $A$. Among the subsets above $\\{a, b\\}$ is equal to set $A$. Each set is the subset of itself. again $\\emptyset$ is formed from any set. $\\therefore \\emptyset$ is a subset of any set.\n\nLet $P = \\{1, 2, 3\\}$ and $Q = \\{2, 3\\}, R = \\{1, 3\\}$, then $P, Q$ and $R$ are subsets of $P$. That is, $P \\subseteq P, Q \\subseteq P$ and $R \\subseteq P$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

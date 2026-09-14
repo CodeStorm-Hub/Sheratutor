@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 173,
+  "pdf_page_no": 178,
+  "chapter_no": 8,
+  "chapter_title": "বৃত্ত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৮. চিত্রে $YM$ ও $ZM$ যথাক্রমে $\\angle Y$ ও $\\angle Z$ এর অন্তদ্বিখণ্ডক এবং $YN$ ও $ZN$ যথাক্রমে $\\angle Y$ ও $\\angle Z$ এর বহিদ্বিখণ্ডক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) দেখাও যে, $\\angle MYZ + \\angle NYZ = 90^\\circ$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) প্রমাণ কর যে, $\\angle YNZ = 90^\\circ - \\frac{1}{2}\\angle X$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) প্রমাণ কর যে, $Y, M, Z$ ও $N$ বিন্দু চারটি সমবৃত্ত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৯. একটি ত্রিভুজের তিনটি বাহুর দৈর্ঘ্য যথাক্রমে $4$ সে.মি., $5$ সে.মি. ও $6$ সে.মি.। উপরের তথ্য অনুযায়ী নিম্নের প্রশ্নগুলোর উত্তর দাও:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) ত্রিভুজটি অঙ্কন কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) ত্রিভুজটির পরিবৃত্ত অঙ্কন কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) ত্রিভুজের পরিবৃত্তের বাইরে যেকোনো একটি নির্দিষ্ট বিন্দু থেকে বৃত্তের দুইটি স্পর্শক অঙ্কন করে দেখাও যে স্পর্শকদ্বয়ের দূরত্ব সমান।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: জ্যামিতিক চিত্র",
+      "figure_no": "8.01",
+      "box_2d": [
+        88,
+        615,
+        282,
+        878
+      ],
+      "description": "একটি ত্রিভুজ XYZ যার মধ্যে কোণদ্বিখণ্ডক রেখা দ্বারা গঠিত বিন্দু M ও N দেখানো হয়েছে।",
+      "reading_order_anchor": "১৮. চিত্রে YM ও ZM যথাক্রমে ∠Y ও ∠Z এর অন্তদ্বিখণ্ডক এবং YN ও ZN যথাক্রমে ∠Y ও ∠Z এর বহিদ্বিখণ্ডক।"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 22,
+  "pdf_page_no": 27,
+  "chapter_no": 2,
+  "chapter_title": "Sets and Functions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The term 'set' is well known to us. For example, dinner set, set of natural numbers, set of rational numbers etc. As a modern concept set has versatile use. The German mathematician George Cantor (1845-1918) first explained the concept of set. He introduced the notion of infinite set, and created a sensation in mathematical science. His notion is now known as set theory. In this chapter we shall solve different problems by using concepts of set, diagrams and logic and idea of a function will also be introduced.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "After completion of this chapter the learners will be able to —\n\n* express the concepts of sets and subsets through symbols.\n* describe how sets can be expressed.\n* define infinite sets, and distinguish between finite and infinite sets.\n* define and verify union and intersection of sets.\n* define power sets, and construct power sets of sets with two or three elements.\n* define ordered pairs and cartesian products.\n* prove simple set theoretic rules by using examples and Venn diagrams, and apply these rules for solving different problems.\n* define relations and functions, and construct them.\n* determine domain and range.\n* draw diagrams for functions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Sets",
+      "chunk_type": "theory",
+      "content_markdown": "A set is simply a well organized object of real or imaginary world. For example, the set of three text books of Bangla, English and Mathematics. Some other",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 151,
+  "pdf_page_no": 156,
+  "chapter_no": 7,
+  "chapter_title": "Practical Geometry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Drawing",
+      "chunk_type": "theory",
+      "content_markdown": "Drawing:\n1. From any ray $DF$, cut the part $DE$ equal to the perimeter $p$. Make angles $\\angle EDL$ equal to $\\angle x$ and $\\angle DEM$ equal to $\\angle y$ on the same side of the line segment $DE$ at $D$ and $E$.\n2. Draw the bisectors $DG$ and $EH$ of the two angles.\n3. Let these bisectors $DG$ and $EH$ intersect at a point $A$. At the point $A$, draw $\\angle DAB$ equal to $\\angle ADE$ and $\\angle EAC$ equal to $\\angle AED$.\n4. Let the rays $AB$ and $AC$ intersects $DE$ at the point $B$ and $C$ respectively.\n\nThen, $\\triangle ABC$ is the required triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Proof",
+      "chunk_type": "theory",
+      "content_markdown": "Proof: In $\\triangle ABD$, $\\angle ADB = \\angle DAB$ [by construction]\n$\\therefore AB = DB$\nAgain, $\\triangle ACE$, $\\angle AEC = \\angle EAC$\n$\\therefore CA = CE$\nTherefore, $\\triangle ABC$, $AB + BC + CA = DB + BC + CE = DE = p$\n$\\angle ABC = \\angle ADB + \\angle DAB = \\frac{1}{2}\\angle x + \\frac{1}{2}\\angle x = \\angle x$\nand $\\angle ACB = \\angle AEC + \\angle EAC = \\frac{1}{2}\\angle y + \\frac{1}{2}\\angle y = \\angle y$\nTherefore, $\\triangle ABC$ is the required triangle.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Work",
+      "chunk_type": "theory",
+      "content_markdown": "Work:\nTwo acute base adjacent angles and the perimeter of a triangle are given. Construct the triangle in an alternative way.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 1",
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. Construct a triangle $ABC$, in which $\\angle B = 60^\\circ$, $\\angle C = 45^\\circ$ and perimeter $AB + BC + CA = 11$ cm.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 7.01: Construction of a triangle given perimeter and base angles",
+      "figure_no": "7.01",
+      "box_2d": [
+        115,
+        605,
+        385,
+        890
+      ],
+      "description": "Geometric construction steps showing the perimeter line segment DE, angles x and y, and the intersection of bisectors to form triangle ABC.",
+      "reading_order_anchor": "Drawing"
+    }
+  ]
+}

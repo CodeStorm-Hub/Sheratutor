@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 281,
+  "pdf_page_no": 286,
+  "chapter_no": 10,
+  "chapter_title": "স্থির তড়িৎ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$q_1 = 1\\text{ C}$$\n$$q_2 = -1\\text{ C}$$\n$$r = 10\\text{ cm} = 0.10\\text{ m}$$\n$$k = 9 \\times 10^9\\text{ Nm}^2/\\text{C}^2$$\n\nকাজেই,\n\n$$F = \\frac{9 \\times 10^9 \\times 1 \\times (-1)}{(0.10)^2}\\text{ N} = -9 \\times 10^{11}\\text{ N}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** একটি $+5\\text{ C}$ এবং $+3\\text{ C}$ চার্জ $1\\text{ m}$ দূরে রাখা হয়েছে। এখন তৃতীয় একটি চার্জ $+q$ এমনভাবে দুটি চার্জের মাঝখানে রাখো যেন সেটি কোনো বল অনুভব না করে। (চিত্র 10.10 b)\n\n**উত্তর:** $+q$ চার্জটি $+5\\text{ C}$ ডান দিকে ঠেলে দেবে এবং $+3\\text{ C}$ বাম দিকে ঠেলে দেবে। দুটি চার্জ যখন একই বলে ঠেলবে তখন $+q$ চার্জটি কোনো বল অনুভব করবে না। ধরা যাক $+q$ চার্জটি $+5\\text{ C}$ চার্জ থেকে $x$ দূরত্বে চার্জদ্বয়ের মধ্যবর্তী রেখাংশের উপর অবস্থিত। ফলে,\n\n$$k \\frac{(+5)q}{x^2} = k \\frac{(+3)q}{(1 - x)^2}$$\n\n$$5(1 - x)^2 = 3x^2$$\n\n$$2x^2 - 10x + 5 = 0$$\n\n$$x = \\frac{10 \\pm \\sqrt{100 - 40}}{4}$$\n\n$$x = 4.435\\text{ কিংবা } 0.565$$\n\n$x$ এর মান $0$ থেকে $1$ এর ভেতরে হবে কাজেই এটি নিশ্চয়ই $0.565$ ($x$ যদি $4.435$ হয় তাহলে কী হবে নিজেরা চিন্তা করে বের করো)।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 10.10: (a) 10 cm দূরে অবস্থিত +1 C এবং -1 C চার্জ (b) 1 m দূরে অবস্থিত +5 C এবং +3 C চার্জ",
+      "figure_no": "10.10",
+      "box_2d": [
+        299,
+        146,
+        428,
+        831
+      ],
+      "description": "Diagram (a) shows two point charges +1 and -1 separated by 10 cm with repulsive/attractive forces F. Diagram (b) shows three point charges +5, q, and +3 along a straight line spanning 1 m distance with distances x and 1-x.",
+      "reading_order_anchor": "প্রশ্ন: একটি +5 C এবং +3 C চার্জ 1 m দূরে রাখা হয়েছে।"
+    }
+  ]
+}

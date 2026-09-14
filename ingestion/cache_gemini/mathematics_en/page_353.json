@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 353,
+  "pdf_page_no": 358,
+  "chapter_no": 17,
+  "chapter_title": "Statistics",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Owing to the contribution of information and data, the world has become a global village for the rapid advancement of science and information. Globalization has been made possible due to rapid transformation and expansion of information and data. So, to keep the continuity of development and for participating and contribute in globalization, it is essential for the students at this stage to have clear knowledge about information and data. In the context, to meet the demands of students in acquiring knowledge, information and data have been discussed from class VI and class-wise contents have been arranged step by step. In continuation of this, the students of this class will know and learn cumulative frequency, frequency polygon, ogive curve in measuring of central tendency mean, median, mode etc. in short-cut method.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of this chapter, the students will be able to —\n\n* explain cumulative frequency, frequency polygon and ogive curve.\n* explain data by the frequency polygon, and ogive curve.\n* explain the method of measuring of central tendency.\n* explain the necessity of short-cut method in the measurement of central tendency.\n* find the mean, median and mode by the short-cut method.\n* explain the diagram of frequency polygon and ogive curve.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "17.1",
+      "section_title": "Presentation of Data",
+      "chunk_type": "theory",
+      "content_markdown": "We know that numerical information which are not qualitative are the data of statistics. The data under investigation are the raw materials of statistics. They are in unorganized form and it is not possible to take necessary decision directly from the unorganized data. It is necessary to organize and tabulate the data. And the tabulation of data is the presentation of the data. In previous class we have learnt how to organize the data in tabulation. We know that it is required to determine the range of data for tabulation. Then determining the class interval and the number of classes by using tally marks, the frequency",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

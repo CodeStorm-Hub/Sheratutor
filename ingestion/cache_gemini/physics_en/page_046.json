@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 46,
+  "pdf_page_no": 51,
+  "chapter_no": 2,
+  "chapter_title": "Motion",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Although this equation looks like another general equation, there is some amazing physics hidden in it, which we will reveal in the fourth chapter.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** The velocity of a car is increased by $60\\text{ km/hour}$ within $1\\text{ minute}$ of starting from rest. What is its acceleration?\n\n**Answer:** From now we will use the unit of time in second ($s$) instead of minute or hour and for distance meter ($m$) will be used instead of mile or kilometer.\n\nThe final velocity of the car is\n\n$$v = 60 \\frac{\\text{km}}{\\text{hour}} = \\frac{60 \\times 1000\\text{ m}}{60 \\times 60\\text{ s}} = 16.67\\text{ m/s}$$\n\nSo the problem is like this, a car attains a velocity of $16.67\\text{ m/s}$ in $60\\text{ s}$ starting from rest, what is its acceleration?\n\n$$v = at$$\n$$a = \\frac{v}{t} = \\frac{16.67\\text{ m/s}}{60\\text{ s}} = 0.278\\text{ m/s}^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** A car is moving with a velocity of $60\\text{ mile/hour}$, suddenly its engine stops. It takes $5\\text{ minutes}$ to come at rest. What is the deceleration of the car?\n\n**Answer:** When there is acceleration, velocity increases; whereas velocity decreases when there is negative acceleration or deceleration.\n\nAgain we will use $s$ for time and $m$ for distance.\n\n$$1\\text{ mile} = 1.6\\text{ km} = 1600\\text{ m}$$\n\nInitial velocity of car,\n\n$$u = 60 \\frac{\\text{miles}}{\\text{hour}} = \\frac{60 \\times 1.6 \\times 1000\\text{ m}}{60 \\times 60\\text{ s}} = 26.8\\text{ m/s}$$\n\nFinal velocity of car, $v = 0$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

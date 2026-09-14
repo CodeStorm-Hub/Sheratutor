@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 305,
+  "pdf_page_no": 310,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "If the unit of charge is the Coulomb ($C$) and of time is second ($t$), then the unit of electric current is ampere $A$. Interesting thing is, to find the unit of charge we said, if one ampere electric current flows for one second then the amount of charge that flows is called $1$ Coulomb. Electric current is the rate of flow of charge; if $1$ ampere current flows from $A$ to $B$, it means $1$ coulomb positive charge has been moved from $A$ to $B$. Which actually means that the amount of electrons equivalent to $1$ Coulomb charge has been moved from $B$ to $A$. Therefore, you see that the direction of electric current is opposite to the direction of flow of electrons. (All problems could have been solved if we assume the charge of electron is positive, but it has been too late!)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2",
+      "section_title": "Relationship between Potential Difference and Electricity",
+      "chunk_type": "theory",
+      "content_markdown": "Now we will discuss actual flow of current in a real circuit. We have said before that if there is a potential difference between two points and if we connect these two points with a conducting wire, electric current will start flowing between the points, though we haven't discussed the amount of electric current. Not only that, will the amount of current that flows if the connection is made by a gold wire be equal to the current that will flow through the connection made by an iron wire?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "11.2.1",
+      "section_title": "Ohm's Law",
+      "chunk_type": "theory",
+      "content_markdown": "To see the relationship between potential difference and electric current we can do an experiment. The equipment used for measuring voltage is called a voltmeter, and the equipment used for measuring current is known as ammeter. (Actually the same equipment can be used sometimes as a voltmeter and sometimes as an ammeter by turning a switch.) Let us take a few battery cells. If the voltage for one battery cell is $1.5\\text{ V}$, for two cells it will be $2 \\times 1.5 = 3\\text{ V}$, for three cells it will be $3 \\times 1.5 = 4.5\\text{ V}$. We can apply different potential differences in",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 11.04: Current flow relative to potential difference due to resistance",
+      "figure_no": "11.04",
+      "box_2d": [
+        581,
+        477,
+        882,
+        887
+      ],
+      "description": "A line graph showing current ($mA$) versus potential difference ($V$) with two lines (a) and (b) representing different resistances.",
+      "reading_order_anchor": "11.2.1 Ohm's Law"
+    }
+  ]
+}

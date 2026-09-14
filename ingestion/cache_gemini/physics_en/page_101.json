@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 101,
+  "pdf_page_no": 106,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\n**Question:** Your mass is $50\\text{ kg}$. You have climbed up a $10$ storied building, how much work have you done? (Height of each floor is $3\\text{ m}$)\n\n**Answer:** If your mass is $50\\text{ kg}$, your weight is $50 \\times 9.8 = 490\\text{ N}$. This weight is a force, that is acting downwards. If you want to climb up, you have to exert an equal force upwards to draw yourself up.\n\nSo, upward applied force: $490\\text{ N}$\n\nDistance travelled upwards: $10 \\times 3\\text{ m} = 30\\text{ m}$\n\nSo the amount of work done, $490\\text{ N} \\times 30\\text{ m} = 14700\\text{ J} = 14.7\\text{ kJ}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Suppose, a moving object is coming towards you, you try to stop the object by applying force $F$, the object pushes you backwards by a distance $s$. How much work was done by the force applied by you? Certainly you have noticed that, this time the distance traversed is not along the direction of force, rather opposite to it. So the amount of work done\n\n$$W = F(-s) = -Fs$$\n\nThat is, the work done is negative. In our daily lives, we talk about work and useless work, but what is meant by positive and negative work in terms of physics? If the work is positive, then it can be said that the work is done by the force. If it is negative, then it is said that the work is done 'on' the force or against the force. We must have a clear conception about energy before understanding what has just been written.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.2",
+      "section_title": "Energy",
+      "chunk_type": "theory",
+      "content_markdown": "In our daily life we use the term \"energy\" for different purposes but in physics it has a definite meaning. Generally speaking, there is no difference between applying energy or applying force, but in physics, these two phrases mean completely different things. In the previous chapter, we have learnt what is meant by force, what is meant by energy will be discussed in this chapter.\n\nWe all have a shallow idea about energy, because we mention the words electrical energy, thermal energy when we make casual conversation. Sometimes we even hear about chemical energy or nuclear energy. Though light",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

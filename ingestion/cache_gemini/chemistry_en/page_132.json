@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 132,
+  "pdf_page_no": 137,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$10$ gram magnesium oxide is produced from $\\frac{32 \\times 10}{80} = 4$ gram oxygen",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Problem:** How many $\\text{NH}_3$ molecules will be produced from $5$ $\\text{N}_2$ molecules?\n\n**Solution:**\n$$\\text{N}_2\\text{(g)} + 3\\text{H}_2\\text{(g)} \\longrightarrow 2\\text{NH}_3\\text{(g)}$$\n$6.023 \\times 10^{23}$ no of molecules\n$3 \\times 6.023 \\times 10^{23}$ no of molecules\n$2 \\times 6.023 \\times 10^{23}$ no of molecules\n\nFrom the equation:\n$6.023 \\times 10^{23}$ no of molecules of $\\text{N}_2$ produces $2 \\times 6.023 \\times 10^{23}$ no of molecules of $\\text{NH}_3$\n\n$1$ no of molecules of $\\text{N}_2$ produces $\\frac{2 \\times 6.023 \\times 10^{23}}{6.023 \\times 10^{23}} = 2$ no of molecules of $\\text{NH}_3$\n\nSo, $5$ no of molecules of $\\text{N}_2$ produces $2 \\times 5 = 10$ no of molecules of $\\text{NH}_3$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Task: How many moles of $\\text{O}_2$ is necessary to produce $6$ moles of water?\n\nTask: How much $\\text{NH}_3$ in liter will be formed out of $4$ liter $\\text{N}_2$ at standard temperature and pressure? Here, both reactants and products are gaseous.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "6.4",
+      "section_title": "Limiting Reactant",
+      "chunk_type": "theory",
+      "content_markdown": "If there is more than one reactant in a chemical reaction, it is not always possible to supply all the reactants in the required amounts when supplied after weighing. As a result, some reactants complete the reaction and none of it remains at the end while another reactant was also there in the reaction but some residue of it remains at the end. The reactant that finished itself during the reaction is called the limiting reactant. In a chemical reaction, the limiting reactant is determined by its amount. The amount of a limiting reactant will tell us how much of which",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

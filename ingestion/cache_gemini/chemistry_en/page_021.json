@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 21,
+  "pdf_page_no": 26,
+  "chapter_no": 2,
+  "chapter_title": "States of Matter",
+  "sections": [
+    {
+      "section_no": "2.3",
+      "section_title": "Diffusion",
+      "chunk_type": "theory",
+      "content_markdown": "The tendency of solid, liquid or gas to spread spontaneously and uniformly in any medium is called diffusion. In diffusion process, solid, liquid or gas moves spontaneously from a place of higher concentration to lower concentration. Remember, what happens if you leave a perfume bottle with its lid open in the corner of a room? Within some time, you will find the whole room smelling of perfume. This is an instance of diffusion. If a matter takes lesser time to spread, its rate of diffusion is higher and vice versa.\n\nNow, read through the following experiments.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.3",
+      "section_title": "Diffusion",
+      "chunk_type": "theory",
+      "content_markdown": "### Experiment 1\nAt room temperature, take some pure water in a glass jar. Add a small quantity of solid pink Potassium permanganate ($\text{KMnO}_4$) into it. You will see, after sometime, the $\text{KMnO}_4$ grains are dissolving into a pink solution. Indeed, the $\text{KMnO}_4$ particles are getting motion and scattering freely in the water. In this case, some solid matter is diffused in water or liquid. The rate of diffusion of solid matters in water is slow, however, if heat is applied, the rate will increase.\n\nSimilarly, if we do the experiment of diffusion of Potassium permanganate in hot water, the water will turn into pink solution faster. In this case, the $\text{KMnO}_4$ particles will get added motion due to heat and scatter faster. This shows that the presence of heat increases the rate of diffusion of solids",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.02: $\text{KMnO}_4$ solution in water.",
+      "figure_no": "2.02",
+      "box_2d": [
+        680,
+        599,
+        850,
+        858
+      ],
+      "description": "Three glass jars showing progressive dissolution and diffusion of potassium permanganate crystals in water, turning the solution pink over time.",
+      "reading_order_anchor": "Experiment 1"
+    }
+  ]
+}

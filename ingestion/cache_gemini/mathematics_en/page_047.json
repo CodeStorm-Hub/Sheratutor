@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 47,
+  "pdf_page_no": 52,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$a^2 + 2ab + b^2 = (a + b)^2$$\n$$a^2 - 2ab + b^2 = (a - b)^2$$\nadding, $$2a^2 + 2b^2 = (a + b)^2 + (a - b)^2$$\nor, $$2(a^2 + b^2) = (a + b)^2 + (a - b)^2$$\nHence, $$(a^2 + b^2) = \\frac{(a + b)^2 + (a - b)^2}{2}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Corollary 6. $$ab = \\left(\\frac{a + b}{2}\\right)^2 - \\left(\\frac{a - b}{2}\\right)^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof: From Formula 1 and Formula 2,\n$$a^2 + 2ab + b^2 = (a + b)^2$$\n$$a^2 - 2ab + b^2 = (a - b)^2$$\nsubtracting, $$4ab = (a + b)^2 - (a - b)^2$$\nor, $$ab = \\frac{(a + b)^2}{4} - \\frac{(a - b)^2}{4}$$\nhence, $$ab = \\left(\\frac{a + b}{2}\\right)^2 - \\left(\\frac{a - b}{2}\\right)^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Remark: By applying the Corollary 6 product of any two quantities can be expressed as the difference of two squares.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Formula 3. $$a^2 - b^2 = (a + b)(a - b)$$\nTherefore, the difference of the squares of two expressions = sum of two expressions $\\times$ difference of two expressions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Formula 4. $$(x + a)(x + b) = x^2 + (a + b)x + ab$$\nTherefore, $$(x + a)(x + b) = x^2 + (\\text{algebraic sum of } a \\text{ and } b)x + (\\text{the product of } a \\text{ and } b)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Extension of formula for square: There are three terms in the expression $$a + b + c$$. It can be considered the sum of two terms $$(a + b)$$ and $$c$$. Therefore, by applying Formula 1, the square of the expression is,\n$$(a + b + c)^2 = \\{(a + b) + c\\}^2 = (a + b)^2 + 2(a + b)c + c^2$$\n$$= a^2 + 2ab + b^2 + 2ac + 2bc + c^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ac$$\nFormula 5. $$(a + b + c)^2 = a^2 + b^2 + c^2 + 2ab + 2bc + 2ac$$\nCorollary 7. $$a^2 + b^2 + c^2 = (a + b + c)^2 - 2(ab + bc + ac)$$\nCorollary 8. $$2(ab + bc + ac) = (a + b + c)^2 - (a^2 + b^2 + c^2)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

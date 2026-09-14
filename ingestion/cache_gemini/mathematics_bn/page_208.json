@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 208,
+  "pdf_page_no": 213,
+  "chapter_no": 11,
+  "chapter_title": "বীজগাণিতিক অনুপাত ও সমানুপাত",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$8. a : b = c : d$ হলে, $\\frac{a - b}{b} = \\frac{c - d}{d}$ [বিয়োজন (Dividendo)]\n\nপ্রমাণ: দেওয়া আছে,\n$\\frac{a}{b} = \\frac{c}{d}$\n\nবা, $\\frac{a}{b} - 1 = \\frac{c}{d} - 1$ [উভয়পক্ষ থেকে 1 বিয়োগ করে]\n\nঅর্থাৎ, $\\frac{a - b}{b} = \\frac{c - d}{d}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$5. a : b = c : d$ হলে, $\\frac{a + b}{a - b} = \\frac{c + d}{c - d}$ [যোজন-বিয়োজন (Componendo-Dividendo)]\n\nপ্রমাণ: দেওয়া আছে, $a : b = c : d$\n\nবা, $\\frac{a}{b} = \\frac{c}{d}$\n\nযোজন করে পাই, $\\frac{a + b}{b} = \\frac{c + d}{d} \\dots (1)$\n\nআবার বিয়োজন করে পাই, $\\frac{a - b}{b} = \\frac{c - d}{d}$\n\nবা, $\\frac{b}{a - b} = \\frac{d}{c - d}$ [ব্যস্তকরণ করে] $\\dots (2)$\n\nসুতরাং, $\\frac{a + b}{b} \\times \\frac{b}{a - b} = \\frac{c + d}{d} \\times \\frac{d}{c - d}$ [(1) ও (2) গুণ করে]\n\nঅর্থাৎ, $\\frac{a + b}{a - b} = \\frac{c + d}{c - d}$ [এখানে $a \\neq b, c \\neq d$]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$6. \\frac{a}{b} = \\frac{c}{d} = \\frac{e}{f} = \\frac{g}{h}$ হলে, প্রত্যেকটি অনুপাত $= \\frac{a + c + e + g}{b + d + f + h}$\n\nপ্রমাণ: মনে করি,\n$\\frac{a}{b} = \\frac{c}{d} = \\frac{e}{f} = \\frac{g}{h} = k$\n\n$\\therefore a = bk, c = dk, e = fk, g = hk$\n\n$\\therefore \\frac{a + c + e + g}{b + d + f + h} = \\frac{bk + dk + fk + hk}{b + d + f + h} = \\frac{k(b + d + f + h)}{b + d + f + h} = k$\n\nকিন্তু $k$ প্রদত্ত সমানুপাতের প্রত্যেকটি অনুপাতের সমান।\n\n$\\therefore \\frac{a}{b} = \\frac{c}{d} = \\frac{e}{f} = \\frac{g}{h} = \\frac{a + c + e + g}{b + d + f + h}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

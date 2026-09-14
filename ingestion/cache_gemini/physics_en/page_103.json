@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 103,
+  "pdf_page_no": 108,
+  "chapter_no": 4,
+  "chapter_title": "Work, Power and Energy",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Answer:** You have done work,\n$W = Fs = 100\\text{ N} \\times 10\\text{ m} = 1000\\text{ J} = 1\\text{ kJ}$.\nWork done by the frictional force,\n$W = Fs = -10\\text{ N} \\times 10\\text{ m} = -100\\text{ J}$\n\nThe stone has attained energy because of the work done by you. Energy has been lost due to frictional force, so heat may also be generated.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.3",
+      "section_title": "Different forms of energy",
+      "chunk_type": "theory",
+      "content_markdown": "We use different kinds of energy for different purposes. For example, heat energy is needed for water to be heated, we need light energy to see anything, we hear by using sound energy. We run machines by using electrical energy, and we create electricity from electric cells by using chemical energy. We generate electric energy too from the nuclear energy we get by dividing a heavy nucleus or by addition of light nucleuses. Energy is developed in our body taking nutrition from food, we perform our activities.\n\nThe history of our civilization itself is the history of utilization of energy by generating energy. We see different forms of such energy around us, for example- mechanical energy, heat energy, sound energy, light energy, magnetic energy, electrical energy, chemical energy, nuclear energy and solar energy.\n\nThe most general form of energy is the mechanical energy, the energy that is obtained due to position, shape and motion of the object is called mechanical energy. There are two forms of mechanical energy; these are kinetic energy and potential energy.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4.3.1",
+      "section_title": "Kinetic Energy",
+      "chunk_type": "theory",
+      "content_markdown": "We have discussed earlier that the ability to do work is energy. Everyone of us knows that when an object is in motion, it can push another object and set it into motion resulting in the object moving a certain distance due to the pushing. Making another object move means, definitely a force has been applied there and traversing a distance due to this force means work is done there!",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 4.01: when a force is applied on a body, frictional force acts in the opposite direction.",
+      "figure_no": "4.01",
+      "box_2d": [
+        110,
+        545,
+        296,
+        893
+      ],
+      "description": "Diagram showing a block being pushed by a force F to the right and a frictional force f acting to the left over a distance d.",
+      "reading_order_anchor": "Answer:"
+    }
+  ]
+}

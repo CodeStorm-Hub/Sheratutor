@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 129,
+  "pdf_page_no": 134,
+  "chapter_no": 6,
+  "chapter_title": "Concept of Mole and Chemical Calculation",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{Mg} + 2\\text{HCl} \\longrightarrow \\text{MgCl}_2 + \\text{H}_2$$\nNow, a brief check will tell us that all atoms of various elements present on both the sides of the equation are equal. Therefore, the balancing of the equation is done. When the balancing of the equation is done, it can be written with equal ($=$) sign too.\n$$\\text{Mg} + 2\\text{HCl} = \\text{MgCl}_2 + \\text{H}_2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 2",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 2**\n\n$$\\text{Na}_2\\text{CO}_3 + \\text{HCl} \\longrightarrow \\text{NaCl} + \\text{H}_2\\text{O} + \\text{CO}_2$$\nThis is not a balanced equation as the left side has two $\\text{Na}$ while the right has one. Therefore, we multiply $\\text{NaCl}$ with 2:\n$$\\text{Na}_2\\text{CO}_3 + \\text{HCl} \\longrightarrow 2\\text{NaCl} + \\text{H}_2\\text{O} + \\text{CO}_2$$\nStill it is not balanced. Now the right has two $\\text{Cl}$ while the left has one $\\text{Cl}$. Multiply $\\text{HCl}$ on the left with 2:\n$$\\text{Na}_2\\text{CO}_3 + 2\\text{HCl} \\longrightarrow 2\\text{NaCl} + \\text{H}_2\\text{O} + \\text{CO}_2$$\nNow, number of atoms of every element on both sides are equal.\n$$\\text{Na}_2\\text{CO}_3 + 2\\text{HCl} = 2\\text{NaCl} + \\text{H}_2\\text{O} + \\text{CO}_2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 3",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example 3**\n\nAluminum oxide reacts with hydrochloric acid and produces aluminum chloride and water.\n$$\\text{Al}_2\\text{O}_3 + \\text{HCl} \\longrightarrow \\text{AlCl}_3 + \\text{H}_2\\text{O}$$\nTo strike a balance of $\\text{Al}$ on both sides, let us multiply $\\text{AlCl}_3$ with 2\n$$\\text{Al}_2\\text{O}_3 + \\text{HCl} \\longrightarrow 2\\text{AlCl}_3 + \\text{H}_2\\text{O}$$\nTo balance the number of $\\text{Cl}$, multiply $\\text{HCl}$ on the left with 6:\n$$\\text{Al}_2\\text{O}_3 + 6\\text{HCl} \\longrightarrow 2\\text{AlCl}_3 + \\text{H}_2\\text{O}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

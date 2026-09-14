@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 47,
+  "pdf_page_no": 52,
+  "chapter_no": 2,
+  "chapter_title": "গতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এই সমীকরণটি দেখতে অন্য একটি সাধারণ সমীকরণের মতো হলেও এর মাঝে কিছু চমকপ্রদ পদার্থবিজ্ঞান লুকিয়ে আছে, যেটি আমরা চতুর্থ অধ্যায়ে তোমাদের দেখাব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ",
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** একটা গাড়ির বেগ স্থির অবস্থা থেকে বেড়ে $1$ মিনিটে $60\\text{ km/hour}$ হয়েছে। গাড়িটির ত্বরণ কত?\n\n**উত্তর:** আমরা সময়ের জন্য মিনিট বা ঘণ্টা ব্যবহার না করে এখন থেকে সেকেন্ড ($\\text{s}$) এবং দূরত্বের জন্য মাইল বা $\\text{km}$ ব্যবহার না করে $\\text{m}$ ব্যবহার করতে পারি।\n\nউল্লেখিত $1$ মিনিট সময়কালের শেষে গাড়ির বেগ\n$$v = 60 \\frac{\\text{km}}{\\text{hour}} = \\frac{60 \\times 1000\\text{ m}}{60 \\times 60\\text{ s}} = 16.67\\text{ m/s}$$\n\nকাজেই সমস্যাটি হচ্ছে এ রকম, $60\\text{ s}$ এ একটা গাড়ি স্থির অবস্থা থেকে শুরু করে $16.67\\text{ m/s}$ গতিতে পৌঁছে গেছে, গাড়িটির ত্বরণ কত?\n$$v = u + at = at$$\n$$a = \\frac{v}{t} = \\frac{16.67\\text{ m/s}}{60\\text{ s}} = 0.278\\text{ m/s}^2$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**প্রশ্ন:** একটা গাড়ি $60\\text{ miles/hour}$ বেগে চলমান অবস্থায় হঠাৎ তার ইঞ্জিন বন্ধ হয়ে যায়। গাড়িটি থামতে $5\\text{ minutes}$ সময় নেয়। গাড়িটির মন্দন কত?\n\n**উত্তর:** ত্বরণ থাকলে বেগ বাড়তে থাকে, আর বেগ কমতে থাকার অর্থ ঋণাত্মক বা নেগেটিভ ত্বরণ বা মন্দন রয়েছে।\n\nআবার আমরা সময়ের জন্য $\\text{s}$ এবং দূরত্বের জন্য $\\text{m}$ ব্যবহার করব।\n$$1\\text{ mile} = 1.6\\text{ km} = 1600\\text{ m}$$\nগাড়িটির আদি বেগ\n$$u = 60 \\frac{\\text{miles}}{\\text{hour}} = \\frac{60 \\times 1.6 \\times 1000\\text{ m}}{60 \\times 60\\text{ s}} = 26.8\\text{ m/s}$$\nগাড়িটির শেষ বেগ $v = 0\\text{ m/s}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

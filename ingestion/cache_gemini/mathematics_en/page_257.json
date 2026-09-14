@@ -1,0 +1,85 @@
+{
+  "printed_page_no": 257,
+  "pdf_page_no": 262,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Taking some values of $x$ in the equation, we find the corresponding values of $y$ and make the adjoining table:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $-1$ | $0$ | $4$ |\n|---|---|---|---|\n| $y$ | $-6$ | $-4$ | $4$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ three points on the graph of the equation are: $(-1, -6), (0, -4), (4, 4)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Again, from equation (2) we get,\n$4x - 2y = 12$, or, $2x - y = 6$ [dividing both sides by 2]\nor, $y = 2x - 6$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Taking some values of $x$ in the equation, we find the corresponding values of $y$ and make the adjoining table:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $0$ | $3$ | $6$ |\n|---|---|---|---|\n| $y$ | $-6$ | $0$ | $6$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ three points on the graph of the equation are: $(0, -6), (3, 0), (6, 6)$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In a graph paper let $XOX'$ and $YOY'$ be respectively the $X$-axis and $Y$-axis and $O$ is the origin.\n\nWe take each side of smallest squares of the graph paper as unit along with both axes. Now, we plot the points $(-1, -6), (0, -4), (4, 4)$ obtained from equation (1) and join them each other. The graph is a straight line.\n\nAgain, we plot the points $(0, -6), (3, 0), (6, 6)$ obtained from equation (2) and join them each other. In this case also the graph is a straight line.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We observe in the graph, though each of the given equations has separately infinite number of solutions, they have no common solution as system of simultaneous equations. Further, we observe that the graphs of the two equations are straight lines parallel to each other. That is, the lines will never intersect each other. Therefore, there will be no common point of the lines. In this case we say, such system of equations has no solution. We know, such system of equations is inconsistent and independent of each other.\n\nNow, we shall solve the system of two consistent and independent equations by graphs. Graphs of two such equations in two variables intersect at a point.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Graph of the equations",
+      "figure_no": "12.01",
+      "box_2d": [
+        485,
+        594,
+        724,
+        882
+      ],
+      "description": "A Cartesian coordinate system showing two parallel straight lines plotted on a grid, representing the two equations.",
+      "reading_order_anchor": "In a graph paper let XOX' and YOY' be respectively the X- axis and Y- axis and O is the origin."
+    }
+  ]
+}

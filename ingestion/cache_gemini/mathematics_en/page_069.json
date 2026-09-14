@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 69,
+  "pdf_page_no": 74,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 34. For a function of Annual Sports, members of an association made a budget of Tk. 45000 and decided that every member would subscribe equally. But 5 members refused to subscribe. As a result, amount of subscription of each member increased by Tk. 15 per head. How many members were in the association?\n\nSolution: Let the number of members of the association be $x$ and amount of subscription per head be Tk. $q$.\nThen total amount of subscription, Tk $A = qx = 45,000$.\n\nActually numbers of members were $(x - 5)$ and amount of subscription per head became Tk. $(q + 15)$.\n\nThen, total amount of subscription $(x - 5)(q + 15)$\nBy the question,\n$qx = (x - 5)(q + 15) \\dots \\dots (1)$\n$qx = 45000 \\dots \\dots (2)$\nFrom equation (1) we get,\n$qx = (x - 5)(q + 15)$\nor, $qx = qx - 5q + 15x - 75$\nor, $5q = 15x - 75 = 5(3x - 15)$\n$\\therefore q = 3x - 15$\nPutting the value of $q$ in (2), we get,\n$(3x - 15) \\times x = 45000$\nor, $3x^2 - 15x = 45000$\nor, $x^2 - 5x = 15000$ [dividing both sides by 3]\nor, $x^2 - 5x - 15000 = 0$\nor, $x^2 - 125x + 120x - 15000 = 0$\nor, $x(x - 125) + 120(x - 125) = 0$\nor, $(x - 125)(x + 120) = 0$\nTherefore, $(x - 125) = 0$ or $(x + 120) = 0$\nor, $x = 125$ or, $x = -120$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,81 @@
+{
+  "printed_page_no": 16,
+  "pdf_page_no": 21,
+  "chapter_no": 1,
+  "chapter_title": "Concepts of Chemistry",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "2.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. What is chemistry?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "b. Why do we take antacid for acidity in the stomach?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "c. The substances containing sign 3 harmful for human beings- explain.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "d. Chemical substances containing sign 1 and sign 2 are risky when in use- explain.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Sign 1",
+      "figure_no": "1.1",
+      "box_2d": [
+        139,
+        161,
+        230,
+        269
+      ],
+      "description": "Hazard warning symbol for flammable substances",
+      "reading_order_anchor": "2."
+    },
+    {
+      "caption": "Sign 2",
+      "figure_no": "1.2",
+      "box_2d": [
+        139,
+        323,
+        227,
+        432
+      ],
+      "description": "Hazard warning symbol for toxic substances",
+      "reading_order_anchor": "2."
+    },
+    {
+      "caption": "Sign 3",
+      "figure_no": "1.3",
+      "box_2d": [
+        139,
+        480,
+        226,
+        582
+      ],
+      "description": "Hazard warning symbol for radioactive substances",
+      "reading_order_anchor": "2."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 307,
+  "pdf_page_no": 312,
+  "chapter_no": 16,
+  "chapter_title": "পরিমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "সুষম বহুভুজের ক্ষেত্রফল",
+      "chunk_type": "theory",
+      "content_markdown": "সুষম বহুভুজের বাহুগুলোর দৈর্ঘ্য সমান। আবার কোণগুলোও সমান। $n$ সংখ্যক বাহুবিশিষ্ট সুষম বহুভুজের কেন্দ্র ও শীর্ষবিন্দুগুলো যোগ করলে $n$ সংখ্যক সমদ্বিবাহু ত্রিভুজ উৎপন্ন হয়।\n\nসুতরাং বহুভুজের ক্ষেত্রফল = $n \\times$ একটি ত্রিভুজক্ষেত্রের ক্ষেত্রফল\n\n$ABCDEF \\dots$ একটি সুষম বহুভুজ, যার কেন্দ্র $O$, বাহু $n$ সংখ্যক এবং প্রতি বাহুর দৈর্ঘ্য $a$। $O, A$ এবং $O, B$ যোগ করি।\nধরি $\\triangle AOB$ এর উচ্চতা $ON = h$ এবং $\\angle OAB = \\theta$\nসুষম বহুভুজের প্রতিটি শীর্ষে উৎপন্ন কোণের পরিমাণ = $2\\theta$\n$\\therefore$ সুষম বহুভুজের $n$ সংখ্যক শীর্ষ কোণের সমষ্টি = $2\\theta n$\n\nসুষম বহুভুজের কেন্দ্রে উৎপন্ন কোণের পরিমাণ = $4$ সমকোণ\n\n$\\therefore$ কেন্দ্রে উৎপন্ন কোণ ও $n$ শীর্ষ কোণের সমষ্টি $(2\\theta n + 4)$ সমকোণ।\n$\\triangle AOB$ এর তিন কোণের সমষ্টি = $2$ সমকোণ\n\n$\\therefore$ এরূপ $n$ সংখ্যক ত্রিভুজের কোণগুলোর সমষ্টি $2n$ সমকোণ\n$\\therefore 2\\theta n + 4$ সমকোণ = $2n$ সমকোণ\n\nবা, $2\\theta \\cdot n = (2n - 4)$ সমকোণ\n\nবা, $\\theta = \\frac{2n - 4}{2n}$ সমকোণ\n\nবা, $\\theta = \\left(1 - \\frac{2}{n}\\right) \\times 90^{\\circ}$\n\n$\\therefore \\theta = 90^{\\circ} - \\frac{180^{\\circ}}{n}$\n\nএখানে, $\\tan\\theta = \\frac{ON}{AN} = \\frac{h}{\\frac{a}{2}} = \\frac{2h}{a}$\n\n$\\therefore h = \\frac{a}{2}\\tan\\theta$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: সুষম বহুভুজ",
+      "figure_no": "16.01",
+      "box_2d": [
+        275,
+        655,
+        427,
+        852
+      ],
+      "description": "একটি সুষম বহুভুজ ABCDEF যার কেন্দ্র O এবং একটি ত্রিভুজ AOB দেখানো হয়েছে যার উচ্চতা h এবং কোণ θ।",
+      "reading_order_anchor": "ABCDEF ... একটি সুষম বহুভুজ, যার কেন্দ্র O, বাহু n"
+    }
+  ]
+}

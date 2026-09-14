@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 93,
+  "pdf_page_no": 98,
+  "chapter_no": 4,
+  "chapter_title": "Exponents and Logarithms",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Characteristics of Common Log",
+      "chunk_type": "theory",
+      "content_markdown": "Let a number $N$ be expressed in the scientific form as\n\n$N = a \\times 10^n$, where $N > 0, 1 \\le a < 10$ and $n \\in Z$\n\nTaking base 10 log of both sides we get.\n\n$\\log_{10}N = \\log_{10}(a \\times 10^n) = \\log_{10}a + \\log_{10}10^n = \\log_{10}a + n\\log_{10}10$\n\n$\\therefore \\log_{10}N = n + \\log_{10}a [\\because \\log_{10}10 = 1]$\n\nSuppressing the base 10, we have, $\\log N = n + \\log a$\n\n$n$ is called the characteristic of $\\log N$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note: It is evident from the table that characteristic of a number having $m$ digits to the left of decimal point is 1 less than the number of digits to the left of decimal sign and that will be positive. That is if the mentioned number of digits is $m$, the characteristic of logarithm will be $m-1$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $N$ | Scientific form of $N$ | Exponent | Number of digits on the left of the decimal point | Characteristic |\n| :--- | :--- | :--- | :--- | :--- |\n| 6237 | $6.237 \\times 10^3$ | 3 | 4 | $4 - 1 = 3$ |\n| 623.7 | $6.237 \\times 10^2$ | 2 | 3 | $3 - 1 = 2$ |\n| 62.37 | $6.237 \\times 10^1$ | 1 | 2 | $2 - 1 = 1$ |\n| 6.237 | $6.237 \\times 10^0$ | 0 | 1 | $1 - 0 = 0$ |\n| 0.6237 | $6.237 \\times 10^{-1}$ | $-1$ | 0 | $0 - 1 = -1$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note: Now observe from the following table: If there is no integral part of a number and the number has $k$ 0's immediately after decimal point, then the characteristic of the logarithm of the number is $\\{-(k + 1)\\}$.\n\nIf any characteristic is negative, '$-$' sign is not placed on the left of the characteristic, rather '$-$' (bar sign) over the characteristic. Such as, characteristic $-3$ will be written as $\\bar{3}$. Otherwise, whole part of the log including mantissa will be negative.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

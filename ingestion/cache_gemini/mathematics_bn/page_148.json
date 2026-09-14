@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 148,
+  "pdf_page_no": 153,
+  "chapter_no": 7,
+  "chapter_title": "ব্যবহারিক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: রম্বসের পরিসীমা ও একটি কোণ দেওয়া আছে। রম্বসটি আঁক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৪. $ABC$ ত্রিভুজের $\\angle B = 60^\\circ$, $\\angle C = 45^\\circ$ এবং পরিসীমা $p = 13$ সে.মি.।\n\nক) স্কেল ও কম্পাস দিয়ে $\\angle B$ ও $\\angle C$ আঁক।\n\nখ) ত্রিভুজটি অঙ্কন কর। (অঙ্কনের চিহ্ন ও বিবরণ আবশ্যক)\n\nগ) একটি রম্বস আঁক যার বাহুর দৈর্ঘ্য $\\frac{p}{3}$ এর সমান এবং একটি কোণ $\\angle B$ এর সমান। (অঙ্কনের চিহ্ন ও বিবরণ আবশ্যক)",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান:\n\nক)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "খ)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "যেকোনো রশ্মি $RX$ থেকে $RQ = p$ কেটে নেই। $R$ বিন্দুতে $\\frac{1}{2}\\angle B$ এবং $Q$ বিন্দুতে $\\frac{1}{2}\\angle C$ এর সমান করে যথাক্রমে $\\angle ERX$ ও $\\angle FQR$ আঁকি। $ER$ ও $FQ$ $A$ বিন্দুতে ছেদ করে। এবার $A$ বিন্দুতে $ER$ এর যে পাশে $\\angle ERX$ অবস্থিত সে ই পাশে $\\angle RAB = \\frac{1}{2}\\angle B$ এবং $FQ$ এর যে পাশে $\\angle FQR$ অবস্থিত সে ই পাশে $\\angle QAC = \\frac{1}{2}\\angle C$ আঁকি। $AB$ ও $AC$ রেখাংশ, $RQ$ কে যথাক্রমে $B$ ও $C$ বিন্দুতে ছেদ করে।\n\n$\\therefore ABC$ উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র: কোণ অঙ্কন",
+      "figure_no": "7.01",
+      "box_2d": [
+        392,
+        245,
+        515,
+        805
+      ],
+      "description": "স্কেল ও কম্পাস ব্যবহার করে ৬০ ডিগ্রি এবং ৪৫ ডিগ্রি কোণ অঙ্কন পদ্ধতি।",
+      "reading_order_anchor": "ক)"
+    },
+    {
+      "caption": "চিত্র: ত্রিভুজ অঙ্কন",
+      "figure_no": "7.02",
+      "box_2d": [
+        632,
+        245,
+        775,
+        785
+      ],
+      "description": "পরিসীমা এবং দুটি কোণ দেওয়া থাকলে ত্রিভুজ অঙ্কনের জ্যামিতিক চিত্র।",
+      "reading_order_anchor": "খ)"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 95,
+  "pdf_page_no": 100,
+  "chapter_no": 3,
+  "chapter_title": "Force",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. The object having more mass has more weight or more force. If it is released from above it will have more acceleration, is it true?\n\n4. You are standing on a weight measuring machine in a lift. If the cable of the lift tears, what is the weight that shows up on the machine?\n\n5. If a stone is tied by a rope and is pulled on a completely frictionless surface towards you, what will happen?\n\n6. What is inertia? How many types of inertia are there?\n\n7. What is force?\n\n8. What is the measure of inertia of a stationary object?\n\n9. What do you mean by balanced and unbalanced forces?\n\n10. What is momentum of a body?\n\n11. Show that, $\\text{force} = \\text{mass} \\times \\text{acceleration}$\n\n12. What do you mean by law of conservation of momentum?\n\n13. What is friction? Write down the names of the different types of friction\n\n14. Friction is a necessary evil- give argument in favor of this.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Mathematical questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. The velocity-time graph of an object of mass $1 \\text{ kg}$ is shown in figure 3.22. Draw the velocity-time graph.\n\n2. A force of $10 \\text{ N}$ acts on a stationary body of mass $5 \\text{ kg}$ for $2 \\text{ s}$. After $5 \\text{ s}$ another force of $20 \\text{ N}$ acts on it for $3 \\text{ s}$. What is the distance travelled by the object?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Figure 3.21: Two string attached with a mass",
+      "figure_no": "3.21",
+      "box_2d": [
+        290,
+        680,
+        526,
+        817
+      ],
+      "description": "A mass suspended by string B from a fixed ceiling and pulled downwards by string A from a hand.",
+      "reading_order_anchor": "3."
+    },
+    {
+      "caption": "Figure 3.22: Velocity-time graph.",
+      "figure_no": "3.22",
+      "box_2d": [
+        701,
+        523,
+        901,
+        868
+      ],
+      "description": "A velocity-time graph showing velocity in m/sec against time in seconds with peaks and troughs.",
+      "reading_order_anchor": "Mathematical questions"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 282,
+  "pdf_page_no": 287,
+  "chapter_no": 10,
+  "chapter_title": "Static Electricity",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** There is a proton in the center of a hydrogen atom and an electron outside it. The charges of the proton and electron are $+1.6 \\times 10^{-19} \\text{ C}$ and $-1.6 \\times 10^{-19} \\text{ C}$ respectively. If the distance of the orbit of the electron from the nucleus is $0.5 \\times 10^{-8} \\text{ m}$, how much attraction is found between them?\n\n**Answer:**\n$$F = k \\frac{q_1 q_2}{r^2}$$\n\nHere,\n$$q_1 = +1.6 \\times 10^{-19} \\text{ C}$$\n$$q_2 = -1.6 \\times 10^{-19} \\text{ C}$$\n$$k = 9 \\times 10^9 \\text{ Nm}^2/\\text{C}^2$$\n$$r = 0.5 \\times 10^{-8} \\text{ m}$$\n\ntherefore, $$F = \\frac{9 \\times 10^9 \\times 1.6 \\times 10^{-19} \\times (-1.6 \\times 10^{-19})}{(0.5 \\times 10^{-8})^2} \\text{ N} = -9.22 \\times 10^{-12} \\text{ N}$$\n\nThe negative sign denotes there is attractive force between the proton and the electron.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** How much charge should be stored in the earth and the moon so that the gravitational force becomes zero and the moon goes out of its orbit?\n\n**Answer:** The gravitational force acting between the earth and the moon:\n$$F_G = G \\frac{mM}{r^2}$$\n\nHere,\n$$G = 6.67 \\times 10^{-11} \\text{ Nkg}^{-2}\\text{m}^2$$\n$$m = 7.35 \\times 10^{22} \\text{ kg}$$\n$$M = 5.97 \\times 10^{24} \\text{ kg}$$\n$$r = 3.84 \\times 10^5 \\text{ km}$$\n\nSo, $$F_G = \\frac{6.67 \\times 10^{-11} \\times 7.35 \\times 10^{22} \\times 5.97 \\times 10^{24}}{(3.84 \\times 10^5)^2} \\text{ N} = 1.98 \\times 10^{20} \\text{ N}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

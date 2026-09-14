@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 45,
+  "pdf_page_no": 50,
+  "chapter_no": 3,
+  "chapter_title": "Structure of Matter",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$c = \\text{velocity of light } (3 \\times 10^8 \\text{ ms}^{-1})$\n\n$\\nu = \\text{frequency of absorbed or emitted energy (unit } \\text{s}^{-1} \\text{ or Hz})$\n\n$\\lambda = \\text{length of energy wave absorbed or emitted (unit m)}$\n\nThe light emitted when an electron moves from higher energy level to lower energy level creates an atomic spectra when it goes through a prism.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Success of Bohr's Model",
+      "chunk_type": "theory",
+      "content_markdown": "a. Rutherford compared the orbits of electrons around nucleus to that of the planets in the solar system. It did not mention anything about the size of the energy levels. Bohr's atomic model specifies the circular size of the energy levels.\n\nb. Rutherford's model does not mention about the changes in structure of atom when they absorb or emit energy. The Bohr model states that the electron moves from lower to upper energy level when the atom absorbs energy and it moves from upper to lower energy level when the atom emits energy.\n\nc. The Rutherford model doesn't explain the atomic spectra but the Bohr model can explain the atomic spectra of hydrogen (H) atom with one electron.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Limitations of Bohr's Model",
+      "chunk_type": "theory",
+      "content_markdown": "a. Although the Bohr model can explain the spectrum of hydrogen containing one electron, it cannot explain the spectrum of ions or atoms containing more than one electron.\n\nb. When electrons are transferred from one energy level to another, according to Bohr, there will be a single line in the spectrum. But highly sensitive apparatus shows every line consists of several fine lines. Why each line is the summation of various lines is not explained.\n\nc. The Bohr model specifies that orbits of electrons in an atom is circular. However, later on, it was proved that the orbits can be of oval shape too.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.7",
+      "section_title": "Orbital Electronic Configuration of Atoms",
+      "chunk_type": "theory",
+      "content_markdown": "The Bohr model states about the principal energy level. Each principal energy level can contain $2n^2$ electrons at the highest, where $n = 1, 2, 3$ etc. According to this formula:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

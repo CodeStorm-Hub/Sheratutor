@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 309,
+  "pdf_page_no": 314,
+  "chapter_no": 11,
+  "chapter_title": "Current Electricity",
+  "sections": [
+    {
+      "section_no": "11.6",
+      "section_title": "Variable Resistance",
+      "chunk_type": "theory",
+      "content_markdown": "**Variable Resistance:** Sometimes an electric circuit needs a resistance, the value of which can be changed as per need. The type of resistance, whose value can be changed within a certain limit, is called a variable resistance or a Rheostat. A fixed resistance has two ends, whereas a variable resistance has an additional terminal in the middle, where the changed value of the resistance is obtained. It is shown in Figure 11.06.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**Question:** The specific resistances $\\rho$ of silver, copper, tungsten and nichrome wire are $1.6\\times10^{-8}$, $1.7\\times10^{-8}$, $5.5\\times10^{-8}$, $100\\times10^{-8}\\ \\Omega\\text{ m}$ respectively. Using a wire of $1\\text{ m}^2$ cross sectional area, make a $1\\text{ \\Omega}$ resistance.\n\n**Answer:**\nWe know,\n$$R = \\frac{\\rho L}{A}$$\nwhere, $L$ is the length and $A$ is the cross-sectional area.\nSo,\n$$L = \\frac{RA}{\\rho} = \\frac{1\\times 1}{\\rho} = \\frac{1}{\\rho}$$\n\nFor Silver,\n$$L = \\frac{1}{1.6\\times 10^{-8}} = 6.25\\times 10^7\\text{ m}$$\n\nFor Copper,\n$$L = \\frac{1}{1.7\\times 10^{-8}} = 5.9\\times 10^7\\text{ m}$$\n\nFor Tungsten,\n$$L = \\frac{1}{5.5\\times 10^{-8}} = 1.8\\times 10^7\\text{ m}$$\n\nFor Nichrome,\n$$L = \\frac{1}{100\\times 10^{-8}} = 10^6\\text{ m}$$\n\nYou can see, to create a $1\\text{ \\Omega}$ resistance, the length has to be very very long (almost $1$ Lac kilometer). Practically, very thin wires are used, so $A = 1\\text{ m}^2$ is not usually feasible. If we fix the radius as $0.1\\text{ mm}$, then how long will a wire need to be to make a $1\\text{ \\Omega}$ resistance?",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": []
+}
