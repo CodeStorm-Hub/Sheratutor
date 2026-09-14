@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 81,
+  "pdf_page_no": 86,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Our Neighbours",
+      "chunk_type": "theory",
+      "content_markdown": "has an area of 38,394 sq km and a population of 716,896. Since it is cut off from the rest of the world by the Great Himalayas, a unique culture and tradition based on gentle Buddhist beliefs have evolved there over time.\n\nBhutanese men wear Gho — a knee length robe — and women wear Kira — a sheet like cloth piece.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Bhutanese Culture and Lifestyle",
+      "chunk_type": "theory",
+      "content_markdown": "Bhutanese houses are built from mud and stone, with wooden shingle roof. The Bhutanese never use iron nails in their buildings. Usually, the Bhutanese build each other's houses by exchanging labour within the community. Different Festivals are celebrated all year round in Bhutan. Colourful masks are used in the festivals which reflect the rich Bhutanese culture. Dances are performed by the Buddhist monks to protect the valleys and ward off evil spirits. The main religious festival is called Tshechus. The teachings of Lord Buddha are enacted through mask dances for three to five days in the courtyard of the monasteries. People attend these events in their best clothes, carrying picnic baskets. Another major festival is called Losar. It is celebrated on Lunar New Year. People cook special dishes and wear new clothes. It is a time for family get-together. Men play archery or darts while women sing and dance.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "Environment and Biodiversity",
+      "chunk_type": "theory",
+      "content_markdown": "Pure mountain air, crystal blue skies and pristine vegetation cover have made this small country an ideal destination for the environment lovers. The ecosystem of this small nation supports the existence of rich flora and fauna which are protected by strict laws. Anyone found guilty of killing even a black-necked crane could be sentenced to life in prison.\n\nThe government of Bhutan has taken a number of steps to protect its bio-diversity.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Map of Bhutan and surrounding countries",
+      "figure_no": "1.01",
+      "box_2d": [
+        85,
+        465,
+        338,
+        905
+      ],
+      "description": "A map showing Bhutan in relation to China, India, Nepal, and Bangladesh.",
+      "reading_order_anchor": "1.1"
+    },
+    {
+      "caption": "চিত্র ১.০২: A Bhutanese family in traditional clothes",
+      "figure_no": "1.02",
+      "box_2d": [
+        645,
+        558,
+        915,
+        898
+      ],
+      "description": "A photograph of a Bhutanese family wearing traditional Gho and Kira.",
+      "reading_order_anchor": "1.3"
+    }
+  ]
+}

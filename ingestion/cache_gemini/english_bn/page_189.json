@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 189,
+  "pdf_page_no": 194,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| | time-consuming | | reliable | | efficient |\n|---|---|---|---|---|---|---|\n| | less | more | less | more | less | more |\n| E-mails | | | | | | |\n| Phone conversations | | | | | | |\n| FtoF meetings | | | | | | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "I Group work. Arrange a debate in the class on the advantages and the disadvantages of the e-mail.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Lesson 2: Social Network Services",
+      "chunk_type": "theory",
+      "content_markdown": "A Look at the following logos. Are you familiar with them? Discuss with your partner what they are and how they are related to the field of e-communication.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Lesson 2: Social Network Services",
+      "chunk_type": "theory",
+      "content_markdown": "B Read the text and answer the following questions.\nThe Internet technology has helped desgin a large number of web sites to facilitate social relations among people around the world. These are known as social networking services or social networks or social media. At present, Facebook is the most popular social media site. LinkedIn, X (formerly Twitter), Google+ etc. are other frequently used social services. Social network services are web-based and hence, provide ways for the users to interact through the Internet. These services make it possible to connect people across the borders and thus have made the users feel that they really live in a global village.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 1.01: Facebook and X logos",
+      "figure_no": "1.01",
+      "box_2d": [
+        602,
+        283,
+        707,
+        679
+      ],
+      "description": "Logos of Facebook and X representing social network services.",
+      "reading_order_anchor": "Lesson 2: Social Network Services"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 99,
+  "pdf_page_no": 104,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "He supervised the company's Apple Stores, iTunes Stores and the App Stores too. The success of these products and services brought about steady financial returns for several years and pushed Apple to become the world's most valuable publicly traded company in 2011. This triumph is regarded as the greatest turnarounds in the business history.\n\nSteve Jobs has been highly acclaimed as a visionary leader. He has changed people's perspective towards the computer and how they use it, consume personal media and how they communicate with each other. Hence iBooks, iPhones, iPods and iPads have become extremely popular. Jobs saw and felt the need of Wi-Fi (wireless Internet connection) in laptops. It is he who made Wi-Fi a standard feature of every laptop, and of many other devices worldwide. So Jobs' dream to be anywhere anytime became a reality.\n\nJobs also co-founded and served as chief executive of Pixar Animation Studios. He became a member of the board of directors of The Walt Disney Company in 2006, when Disney acquired Pixar.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "C",
+      "section_title": "True or False? If false, give the correct information.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Jobs spent his entire career working for Apple.\n2. He became famous because he knew how to market computers and keep the buyers happy.\n3. He became the chairman of The Walt Disney Company.\n4. Jobs left Apple in 2001.\n5. Jobs was a visionary.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "D",
+      "section_title": "Read the text in B again and answer the following qustions.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Write about Jobs' successful career.\n2. What does 'power battle' mean?\n3. How did Jobs manage to bring Apple back to profitalriity?\n4. Why was he called a visionary?\n5. Why did Jobs feel that Wi-Fi connection was needed in laptops?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

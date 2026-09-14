@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 135,
+  "pdf_page_no": 140,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "My mother the first, the second and me.\n\nAnd if my own children should come to a day,\nWhen a new Mother comes and the old goes away,\nI'd ask of them nothing that I didn’t do.\n\nLove both of your Mothers as both have loved you.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1",
+      "section_title": "Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Ask and answer the questions in pairs.\n\n1. How are the two mothers different from each other?\n2. How are they the same?\n3. What did the first mother do to the speaker?\n4. Who was the speaker’s second mother? Describe her briefly.\n5. What would be the speaker's advice to her own children?\n6. Who are the three women referred to in the poem? Briefly describe them.\n7. What should children do to their mother and why?\n8. Do you like this poem? Why?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Lesson 3: The Sands of Dee",
+      "chunk_type": "theory",
+      "content_markdown": "A Listen to the poem. Read it aloud in groups.\n\nThe Sands of Dee\n- Charles Kingsley",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: The Sands of Dee",
+      "figure_no": "1.01",
+      "box_2d": [
+        740,
+        175,
+        918,
+        898
+      ],
+      "description": "A landscape illustration depicting a coastal area with a house and figures near the water.",
+      "reading_order_anchor": "Lesson 3: The Sands of Dee"
+    }
+  ]
+}

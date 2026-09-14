@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 58,
+  "pdf_page_no": 63,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "\"No way,\" another student argues. \"Trees are being cut, hills are being cleared and water bodies are being filled up --- all to meet the needs of too many people.\"\n\n\"Thank you students,\" Ms Choudhury says. \"You're quite right. Let me tell you about this village where I was born and brought up. Things were not like this in the past. I remember as a child, the village was so beautiful! The green paddy fields and yellow mustard fields seemed to be unending. They used to wave and dance in the breeze. There used to be a wood in the northern side of the village. There was a tall tamarind tree in the middle of the wood. Also there was a big banyan tree which looked like a huge green umbrella, with its aerial roots hanging down. I often used to go there with my friends. We would often have picnic there. While the boys would climb the tamarind tree and pick some tamarinds, I and my best friend Rima used to swing from the hanging roots. But now, look, the wood is gone. The beauty of the crop fields is spoiled by the unplanned houses built here and there.\"",
+      "activity_tag": null
+    },
+    {
+      "section_no": "D",
+      "section_title": "Tick the best answer.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. The rate of increase in food production cannot keep pace with the rate of population growth. The sentence means that the food production\na. is as much as needed.\nb. is less than what is needed.\nc. is more than what is needed.\nd. is sufficient for the population.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. How can our housing problem add to our food problem?\na. After making houses, farmers do not have enough time to work in the field.\nb. After making houses, farmers do not have enough money to buy food.\nc. If you do not have a house, you cannot store your food.\nd. For making too many houses, people are using the crop land.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. What makes our land shrink day by day mentioned in line no. 13?\na. Families are growing larger in size.\nb. Houses and factories are being built on it.",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

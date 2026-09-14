@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 183,
+  "pdf_page_no": 188,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "D Read the dialogue between Raju, a student of class ten and his uncle, Mr Barua who works at Sangu Gas Field and answer the following questions.\n\nMr Barua : What are you reading, Raju?\nRaju : English, Uncle. A chapter on renewable energy sources.\nMr Barua : I see. Do you know renewable energy is also called green energy?\nRaju : Green energy?... No Uncle, I don’t know. Nothing is there about green energy in the text either.\nMr Barua : Are you sure? Anyway, renewable energy sources provide us with energy which doesn’t harm environment during its production or consumption. Say, solar energy. You see, there’s no burning, no smoke, no emission of gases. It’s a sort of clean technology and clean energy source.\nRaju : Oh exactly. That’s what our teacher said, I remember.\nMr Barua : On the other hand, burning fossil fuels, say oil or coal, emits greenhouse gases that harm the environment.\nRaju : O... I see. Yes, I've got the clue, Uncle. Thanks a lot. I now understand the relation between the two pictures in section A. Green energy sources make a green globe.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Questions\n\n1. Why is renewable energy called green energy?\n2. ‘Nothing is there about green energy in the text either’. --- Do you think this statement of Raju is correct? Explain why yes/no.\n3. ‘I now understand the relation between the two pictures in section A’. What does Raju mean here? What does he really understand? Do you agree with Raju’s view here? Why?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "E Read the dialogue and act it out in pairs.\n\nA : What's solar energy?\nB : It’s one of the renewable energy sources.\nA : Why is it called green energy?\nB : Well, it’s green energy because it helps us keep the Earth green. I mean it doesn’t emit any pollutants in the atmosphere when we produce and use it.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

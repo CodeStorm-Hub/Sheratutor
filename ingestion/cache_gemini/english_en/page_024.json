@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 24,
+  "pdf_page_no": 29,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "for superlative: by doubling the consonant and adding -est\n\nbig bigger biggest",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.3",
+      "section_title": "short adjectives ending with -e",
+      "chunk_type": "theory",
+      "content_markdown": "for comparative: By adding -r for comparative\n\nnice nicer\n\nfor superlative: By adding -st for superlative\n\nnice nicer nicest",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.4",
+      "section_title": "Long adjectives with two or more syllables",
+      "chunk_type": "theory",
+      "content_markdown": "for comparative: by adding more with the adjectives\n\ninteresting more interesting\n\nfor superlative: by adding most with the adjectives\n\ninteresting more interesting most interesting",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.5",
+      "section_title": "adjectives ending with -y",
+      "chunk_type": "theory",
+      "content_markdown": "for comparative: by changing y to -ier\n\ndirty dirtier\n\nfor superlative: by changing y to -iest\n\ndirty dirtier dirtiest",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.6",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "There are some adjectives that do not follow any rule. We call them irregular adjectives. We need to remember their other forms. Such as\n\ngood better best\n\nbad worse worst\n\nfar farther farthest",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 200,
+  "pdf_page_no": 205,
+  "chapter_no": 6,
+  "chapter_title": "Narration & Speech",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "Interview Practice",
+      "chunk_type": "theory",
+      "content_markdown": "Things the interviewer asked me | Things I told\n--- | ---\nHe asked me where I was from. | I told him that I was from Uttara.\n\nThings the interviewer asked me | Things I told\n--- | ---\nHe asked me where I was from. | I told him that I was from Uttara.\n\nHe _________________________________ | I _________________________________\n\nHe _________________________________ | I _________________________________\n\nHe _________________________________ | I _________________________________\n\nHe _________________________________ | I _________________________________",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Activity 4",
+      "chunk_type": "theory",
+      "content_markdown": "Now read the following text which is a conversation between a tourist and a tour operator. At the left hand side you see the questions the tourists asked the operator. At the right hand corner there are incomplete sentences. You complete them using if/whether or a question word and the correct speech verb form.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Activity 4",
+      "chunk_type": "worked_example",
+      "content_markdown": "Questions a tourist asked the tour operator.\n\nCan you guide us to the local museum? | A tourist asked me whether I could guide them to the local museum.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 152,
+  "pdf_page_no": 157,
+  "chapter_no": 5,
+  "chapter_title": "Transformation of Sentences",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Doctor: Do you feel feverish?\nPatient: Yes, I do.\nDoctor: Do you have any headache?\nPatient: __________. Actually I'm having headaches quite often.\nDoctor: Have you taken any medicine?\nPatient: No, __________\nDoctor: Do you often feel tired?\nPatient: __________\nDoctor: Did you have sound sleep last night?\nPatient: __________ . But usually I don't sleep well at night.\nDoctor: __________ Do you feel thirsty very often?\nPatient: Well, not so much.\nDoctor: Are you feeling thirsty now?\nPatient: __________ . Well, doctor, is it anything serious?\nDoctor: Don't worry. I think it's just a cold.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 2",
+      "chunk_type": "theory",
+      "content_markdown": "Complete the answers. Put of course, okay, I'd love to, please, sorry, no, etc. If the answer is negative, try to give a reason.\n\n1. Would you like to go to the zoo? :Yes, __________\n2. Shall we take a taxi? :Yes, __________\n3. Would you like to go for a walk? : Sorry, __________\n4. Would you please lend me your camera for one day?\n:Yes, __________\n5. Do you like ice-cream? :Yes, __________\n:No, __________\n6. Are you coming to the party tonight? :Yes, __________ . I'd love to, but",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 4,
+  "pdf_page_no": 9,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Material Nouns",
+      "chunk_type": "theory",
+      "content_markdown": "C Read the following passage and notice the underlined nouns:\n\nMrs. Rahman is now visiting a jeweller. She will buy some gold and silver to make some jewellery. Next, she will also go to a grocery shop. She needs to buy sugar, tea, milk and oil.\n\nThese are material nouns. A material noun names a thing that has weight but cannot be counted. It is a kind of mass noun which is considered uncountable. It refers to any material or substance. The substance may be solid, liquid or gaseous. \"Oxygen\" is also a material noun.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Abstract Nouns",
+      "chunk_type": "theory",
+      "content_markdown": "D Look at the underlined nouns in the following passage:\n\nMr. Haque was a freedom fighter. He is known for his bravery. He is working for a private company now. Everybody loves him for his honesty and sincerity. He is an admirer of freedom and justice.\n\nThese are abstract nouns. An abstract noun is the name of a quality, state or concept. It has no material form, shape or size.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Activity 3 Think of some other abstract nouns and make a sentence with each of them.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Activity 4 Identify the nouns in the following passage, and say whether they are Proper, Common, Collective, Material or Abstract nouns.\n\nHasan is a rich farmer who lives in a village in the district of Sirajganj. He has a lot of cultivable land. He grows rice, wheat and other crops. He has a herd of cattle and other domestic animals. They provide him with milk and meat. Hasan is a kind man. He has love and sympathy for the poor class of people.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 30,
+  "pdf_page_no": 35,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Activity 8",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Activity 8 Read the advertisements. Answer the questions using the superlative forms of adjectives.\n\n| A | B | C |\n|---|---|---|\n| 2 bedroom, 2 baths, one large sitting room flat at Dhanmondi. 1200 square feet. Fairly modern. 10 mins walking distance from Dhanmondi 27. Spacious rooms with balcony. Sunny. Modern fittings. 30,000/month | Sub-let for 1 cosy bedroom. 500 square feet. bath and kitchen need small renovation work .old building with trees and garden at down town. Owner lives apart. Bachelor only. Girls preferred. 15,000/month. | 3. bedroom flat at Uttara. New building. 1750 sft. Very modern. 15 mins walk from the nearest bus stop. Family only. Sunny and airy. 20,000/month. |",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Activity 8",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Which flat is the...?\n\na. (small) Flat B is the smallest.\n\nb. (sunny) __________________________________________________\n\nc. (large) __________________________________________________\n\nd. (near) the city centre ______________________________________\n\ne. (modern) ________________________________________________\n\nf. (noisy) __________________________________________________\n\ng. (expensive) ______________________________________________",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Activity 9",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Activity 9 Now write sentences using the opposite of the superlative adjectives you have written in activity 8.\n\nFlat C is the largest.\n\n..........................................................................................................................\n\n..........................................................................................................................\n\n..........................................................................................................................\n\n..........................................................................................................................\n\n..........................................................................................................................\n\n..........................................................................................................................",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

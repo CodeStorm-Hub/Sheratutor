@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 33,
+  "pdf_page_no": 38,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.B",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Read the following words and write their meanings as you understand them from the context. If you don’t understand, check the words from a dictionary.\n\nconkers .........................................................................................\n\ndens .........................................................................................\n\ndecline .........................................................................................\n\nhighlight .........................................................................................\n\nimpact .........................................................................................\n\nconsequence .........................................................................................\n\ndisorder .........................................................................................\n\nurge .........................................................................................",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.C",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Read the following statement taken from the text in A and say what the subject of comparison is. Find out the other comparison in the text above.\n\nPeople under 34 recall fewer such childhood outdoor experiences than people over 55, according to the survey by Ipsos Mori for RSPB.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.D",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Do you agree that if children have more contacts with nature, they may have a positive impact on them? Make a list of the benefits or harms they may have if taken to nature frequently.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.E",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Speak to the senior citizens in your home or community. Ask them about their pastime activities and take notes on them. Then write a paragraph in the style of the text given in Section A to show the differences. Also mention why these differences have taken place.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

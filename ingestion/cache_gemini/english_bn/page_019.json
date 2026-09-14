@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 19,
+  "pdf_page_no": 24,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "B Match the following group of words in column A with the meanings given in column and translate each words/group of words into Bengali.",
+      "chunk_type": "table",
+      "content_markdown": "| A | B |\n| :--- | :--- |\n| the chill of winter | Changing a decision |\n| Squalls of rain | Moving suddenly and forcefully like a whip being cracked |\n| Blazing heat of summer | Doing something suddenly |\n| On an impulse | At that moment |\n| Glancing over | The coldness of winter |\n| There is no room | Something unexpected |\n| Stealing a glance | Greatly amazed |\n| Took an odd turn | No space |\n| Change of mind | Tremendous heat of summer |\n| Dumbfounded | Sudden violent gust of rain |\n| Whiplashing | Inspecting quickly |\n| In that instant | To look quickly |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "C",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. Find out published news about natural calamity in Bangladesh and bring that paper cutting to class. Discuss in groups of four classmates on how journalists report news of disasters.\n2. Write a news report describing a natural calamity in your locality in 100 words.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "D",
+      "chunk_type": "theory",
+      "content_markdown": "Write a personal diary entry in 100 words, describing a day in your life that did not go as you had planned. A Sample diary entry is given below:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

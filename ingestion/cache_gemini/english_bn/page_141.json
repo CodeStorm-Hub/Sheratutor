@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 141,
+  "pdf_page_no": 146,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "“Mamma, will you buy some of these?”\n\n“Which of them, Rosamond?”\n\n“Which? I don’t know which. Look at those earrings, that necklace, those pendants! Any of them will do, they are so pretty!”\n\n“Yes, they are all pretty, but of what use would they be to me?”\n\n“I am sure, Mamma, you could find some use if you only bought them first.”\n\n“But I would rather find out the use first.”\n\nThough a little disheartened, Rosamond kept on looking at the shops and tried to persuade her mother to buy this or that.\n\n“Mamma, buckles are very useful things. Please buy some.”\n\n“I have a pair of buckles. I don’t need any now.” So saying her mother walked on.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Make a list of things Rosamond wanted to buy.\n2. How did the milliner’s shop look like?\n3. What can you see in a jeweller’s shop in a town/city in Bangladesh, which you know well?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "Lesson 7: The Purple Jar (Part-2)",
+      "chunk_type": "theory",
+      "content_markdown": "A Read more of the story.\n\nThis time Rosamond was really disappointed as her mother wanted nothing. However, while they were passing by a chemist's shop, she saw some jars---blue, green, red, yellow and purple---and she seemed to have a fascination for a purple jar. But her mother answered as before, \"Of what use would they be to me, Rosamond?\"",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: গয়না ও অলঙ্কার",
+      "figure_no": "1.01",
+      "box_2d": [
+        90,
+        675,
+        410,
+        895
+      ],
+      "description": "A collection of jewelry including earrings and a necklace.",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

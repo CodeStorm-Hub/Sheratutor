@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 313,
+  "pdf_page_no": 318,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Sample Question 313\n\n- Place the blanks near the end of the statement. Try to present a complete or nearly complete statement before calling for a response.\n- Limit the number of blanks to one or two per sentence. Statements with too many blanks waste time as students figure out what is being asked.\n- If a numerical answer is called for, indicate the units (e.g. currency) in which it is to be expressed.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.5",
+      "section_title": "Cloze test with/without clues",
+      "chunk_type": "theory",
+      "content_markdown": "A cloze test is a fill-in-the-blank activity that assesses students' comprehension of vocabulary and reading passages or knowledge of grammatical items. In cloze tests there are recurrent gaps at every 4th, 5th, 6th or 7th word. If the first gap, for example, is used at the 5th place, all through the text the gap will be at the 5th place. Unlike the gap filling activity that tests a particular grammar item (e.g. preposition, article, pronoun, or verb) it is a test for vocabulary (key words) in general. This is why gap filling activity in the reading section is usually a cloze test. In contrast, gap filling activity is merely a grammar test item.\n\nA cloze test with 5 marks will have ten gaps (0.5 for each gap). Considering the level of difficulty cloze tests without clues at grade 10 can have 5 gaps (1 mark for each gap).\n\nIn answering the question, an examinee does not need to reproduce the text in the answer script. Writing the missing word with the corresponding question number is enough. However, the whole text with suitable words in the gaps will neither earn any extra credit or discredit.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.6",
+      "section_title": "Information Transfer",
+      "chunk_type": "theory",
+      "content_markdown": "Depending on the level of difficulty and length of the text, information transfer and True/False questions can be set from the same text. However, if the text is too small, do not use the same text for both the tests as the content will be inadequate for setting questions. Make sure there is no overlapping or repetitions in the question you have set. Alternatively you can use two different texts for these two test items.\n\nThe marks allocated for information transfer is $1 \\times 5 = 5$ or $0.5 \\times 10 = 5$ (depending on the level of difficulty)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.7",
+      "section_title": "Substitution table",
+      "chunk_type": "theory",
+      "content_markdown": "It's a grammar test item. It tests whether students can make grammatically correct sentences following any particular structure/s. It's different from matching item. In matching there might be equal number of texts in each column in a table and students need to make sentences using a text from each column. In designing the test item, the question setter can write the texts in Column A in a way so that the sequential",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

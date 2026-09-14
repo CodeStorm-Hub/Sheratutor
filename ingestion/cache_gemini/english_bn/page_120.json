@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 120,
+  "pdf_page_no": 125,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 3: Floral career",
+      "chunk_type": "theory",
+      "content_markdown": "A Look at the pictures and say what you see in them.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "B “Work in pairs. Choose a job from the box below but do not tell your friend”. Ask and answer the following Yes/No questions to find out what the job is.\n\nArchitect, taxi driver, dentist, farmer, lawyer, photographer, accountant, mechanic, soldier, hairdresser, chef, politician, nurse, plumber, florist",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Do you...? | Do you have to...? | Did you have to...? |\n| :--- | :--- | :--- |\n| work inside | wear a uniform | study at college |\n| earn a lot | work in shifts | do a lot of training |\n| work with people | use your hands | do internship |\n| use a computer | get up early | |\n| | speak English | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "C Read the text and answer the following questions.\n\nHave you ever thought of a very creative career? Have you dreamt of a rosy environment full of colour and fragrance? How much would you love it if you were placed in a store full of flowers the whole day? I'm just going to give you some clues about such a job which can also be a business.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: ফুলের দোকান ও ফুল সাজানো",
+      "figure_no": "1.01",
+      "box_2d": [
+        195,
+        122,
+        398,
+        897
+      ],
+      "description": "Two images showing a variety of flowers in a shop and a person arranging flowers.",
+      "reading_order_anchor": "A Look at the pictures and say what you see in them."
+    }
+  ]
+}

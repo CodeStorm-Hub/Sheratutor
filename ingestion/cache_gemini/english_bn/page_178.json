@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 178,
+  "pdf_page_no": 183,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Substitution Table",
+      "chunk_type": "table",
+      "content_markdown": "| Subject | Auxiliary | Verb | Object |\n| --- | --- | --- | --- |\n| The energy industries | have | taken | the use of renewable energy sources. |\n| The global petroleum consumption | has | been | a major factor for change throughout history. |\n| Major industrial economies | | emphasised | to three billion barrels per year. |\n| Scientists | | increased | initiatives to tap alternative energy sources. |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Complete the Passage",
+      "chunk_type": "theory",
+      "content_markdown": "C Make sentences using the substitution table.\n\nD Complete the following passage with words from the box. There are more words than necessary.\n\n| suggested | radiates | would | effective | conducted | either | energy |\n| affected | crisis | use | were |\n\nTo answer the energy.......... in the world, scientist, professor, and former Indian president Mr APJ Abdul Kalam has .......... that solar energy can be harnessed by establishing space stations in outer space in order to.......... solar power round the clock.\n\nMr Kalam said that the sun .......... about 10 trillion times the energy which humans consume across the world today.\n\nIf we .......... able to extract even a small portion of this energy from the sun, it .......... be sufficient to secure the energy demands of our future.\n\nPointing out that space based solar power plants do not get .......... by weather, the scientist said that it would thus be far more .......... in efficiency and power generation than the surface based systems.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

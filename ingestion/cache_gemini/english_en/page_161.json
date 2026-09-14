@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 161,
+  "pdf_page_no": 166,
+  "chapter_no": 5,
+  "chapter_title": "Transformation of Sentences",
+  "sections": [
+    {
+      "section_no": "5.1",
+      "section_title": "Use of Semi-colon ( ; )",
+      "chunk_type": "theory",
+      "content_markdown": "We use semi-colon to express pause longer than comma.\n\nWe went to a party; it was a big gathering; we enjoyed much.\n\nUnited we stand; divided we fall.\n\nWhen some coordinating clause is joined with therefore, yet, however, so, otherwise, still, nevertheless, etc. and express opposite meaning, we use semi-colon.\n\nHe worked hard; yet he could not come out successful.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.2",
+      "section_title": "Use of Colon ( : )",
+      "chunk_type": "theory",
+      "content_markdown": "We use colon to explain anything.\n\nWe wanted to attend the party: we had enough time.\n\nWe use colon between the speaker and the dialogue.\n\nKamal: Would you like to go for a walk in the woods?\n\nJamal: That would be great!",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.3",
+      "section_title": "Use of Note of Interrogation/question mark ( ? )",
+      "chunk_type": "theory",
+      "content_markdown": "A question mark is used to end a direct question:\n\nWhat do you want to be when you grow up?\n\nNote that if you write a series of questions, each is followed by a question mark:\n\nUncle Karim asked, \"What profession do you think you will enter? Medicine? Law? Business?\"\n\nNote that the final question mark does not take a full stop (period) after the quotation mark.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

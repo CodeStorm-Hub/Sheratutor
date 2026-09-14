@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 141,
+  "pdf_page_no": 146,
+  "chapter_no": 5,
+  "chapter_title": "Transformation of Sentences",
+  "sections": [
+    {
+      "section_no": "5.4",
+      "section_title": "Wh- Questions",
+      "chunk_type": "theory",
+      "content_markdown": "Sentences 141\n\n**9/4: Wh-Questions**\n\n**A** Read the text and answer the questions that follow.\n\nRahmat, a farmer lives in the village of Tanoir. He cultivates the lands of others. He leads a very ordinary life. He always shares his joys and sufferings with his neighbours.\n\nFrom the above text we can make Wh-Questions like this-\n1. Who is Rahmat?\n2. Where does he live?\n3. Whose land does he cultivate?\n4. How does he lead his life?\n5. Who does he share his joys and sufferings with?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.4",
+      "section_title": "Wh- Questions",
+      "chunk_type": "theory",
+      "content_markdown": "**Activity 1**\n\nFill in the gaps to understand what wh-question is.\n\nA Wh-question is a question which begins with __________. The answers to Wh- questions cannot be given by just __________ or __________. Answers should usually be in a sentence.\n\nNotice how wh- questions are made:",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.01: A farmer in a field",
+      "figure_no": "5.01",
+      "box_2d": [
+        256,
+        199,
+        472,
+        825
+      ],
+      "description": "Black and white photograph showing a rural landscape where farmers are working in a large cultivated field with crops.",
+      "reading_order_anchor": "A Read the text and answer the questions that follow."
+    }
+  ]
+}

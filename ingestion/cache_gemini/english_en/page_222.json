@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 222,
+  "pdf_page_no": 227,
+  "chapter_no": 9,
+  "chapter_title": "Formal & Informal Letter Writing",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Informal and Formal Expressions",
+      "chunk_type": "theory",
+      "content_markdown": "what we'd find out\nall felt\npick up\nan awful lot\nwhat the kids did\nthe teacher told them to do something",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Activity 1",
+      "chunk_type": "theory",
+      "content_markdown": "Read the following passage and identify the informal expressions in it. Then change those with formal expressions.\n\nOne problem that plagues beginning teachers, and older teachers as well, is the seeming lack of self-control of underprivileged children. Because their homes are often characterized by an awful lot of fragmentation and instability, their behaviour reflects their inability to keep real cool in situations involving adults. .... We think it important, therefore, that the teacher be calm and understanding. For the teacher to be able to exhibit this kind of behavior when confronting a bunch of adolescents, he must have achieved terrific level of integration and security, so that his own psychic life is completely okay.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Each of the following sentences has expressions not suitable for formal writing. Underline those, and give the formal expression for it in the line provided against each sentence.\n\n1. He has a lot of nerve. ----------------------------------------------------\n2. There were a bunch of kids. ----------------------------------------------------\n3. We got out of there in a hurry. ----------------------------------------------------\n4. I've got to get a move on. ----------------------------------------------------\n5. He is a pretty nice guy. ----------------------------------------------------\n6. War and Peace is an awfully nice book. ----------------------------------------------------",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

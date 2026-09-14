@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 39,
+  "pdf_page_no": 44,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: Mother’s Day",
+      "chunk_type": "theory",
+      "content_markdown": "A Look at the picture and discuss the questions.\n1. What do you think the woman is to the child?\n2. Why is she holding the child on her flank?\n3. Can a mother be compared to anybody?\n“She can be compared with no other;\nThis lovely lady is none but my mother.”",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "B Listen to the audio and answer the questions that follow.\n\nListening text 2",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "C Choose the correct answer.\n1. According to ancient Greek myths Rhea is the\na. mother of gods. b. goddess of love.\nc. goddess of wealth. d. goddess of health.\n2. The name of Jesus Christ's mother was\na. Rhea. b. Mary.\nc. Anna. d. Anna Junior.\n3. Julia Ward Howe was\na. Dutch. b. English.\nc. Australian. d. American.\n4. Mother's Day was first announced as a formal holiday in the USA in\na. 1872. b. 1905.\nc. 1910. d. 1914.\n5. In 1914 the American president was\na. Roosevelt. b. Ford.\nc. Nixon. d. Wilson.\n6. Which country doesn’t celebrate Mother’s Day on the 2nd Sunday of May?\na. Denmark b. The UK\nc. Italy d. Turkey",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: মা ও শিশু",
+      "figure_no": "1.01",
+      "box_2d": [
+        144,
+        644,
+        323,
+        897
+      ],
+      "description": "A black and white photograph of a woman holding a child.",
+      "reading_order_anchor": "A Look at the picture and discuss the questions."
+    }
+  ]
+}

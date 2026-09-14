@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 105,
+  "pdf_page_no": 110,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "C Look at the picture of the Tara Mosque in Dhaka. Read the information and write a description of the mosque with the help of the given clues.\n\nLocation: Dhaka, Abul Khairat Road\nStyle: Mughal\nNumber of domes: 5\nDecoration: different sizes of stars on dome and outside wall\nMaterials used for decoration: Chinaware and white cement\nInterior of the mosque: mosaic floor, floral tiles on the wall\nBuilt by: Mirza Ghulam Pir— a respectable Zamindar of Dhaka\nTime: early 18th century",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Lesson 2: The Somapura Mahavihara",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the text.\n\nPaharpur is an important archaeological site situated in a village named 'Paharpur' in Naogaon district of northern Bangladesh. Naogaon is mainly plain land but in the middle of it stood a hill covered with jungle. When the jungle was cleared and the hill excavated, there emerged a lofty ruin of an ancient temple. The temple is about 24 meter high from the surrounding level. 'Pahar' means hill. Hence the name Paharpur.\n\nThe Paharpur site has been excavated and re-excavated a number of times by archaeologists. Sir Alexander Cunningham, archaeological surveyor of India, visited the place in 1879. He intended to carry out an extensive excavation but was prevented by the land owner. Nevertheless, he was satisfied with whatever excavation he was permitted to carry out. The site was declared to be protected by the Archaeological Survey of India in 1919 under the Ancient Monuments Preservation Act of 1904.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: তারা মসজিদ",
+      "figure_no": "1.01",
+      "box_2d": [
+        223,
+        521,
+        440,
+        900
+      ],
+      "description": "তারা মসজিদের একটি দৃশ্য",
+      "reading_order_anchor": "C Look at the picture of the Tara Mosque in Dhaka."
+    }
+  ]
+}

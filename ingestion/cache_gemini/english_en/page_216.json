@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 216,
+  "pdf_page_no": 221,
+  "chapter_no": 9,
+  "chapter_title": "Formal & Informal Letter Writing",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Formal Letter Writing",
+      "chunk_type": "theory",
+      "content_markdown": "The middle part of a formal letter usually explains the situation in detail.\n\nThe ending part should normally include some polite remark. Some common remarks include:\n\n* I look forward to hearing from you soon.\n* Thanking you,\n* I would be grateful/thankful if you would -----",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.2",
+      "section_title": "Application for Free Studentship",
+      "chunk_type": "worked_example",
+      "content_markdown": "D Read the following letter of application for free studentship.\n\n25 January 2016\n\nThe Head Teacher\nPabna Zilla School\n\n**Subject: Application for full free studentship**\n\nDear Sir\n\nI have the honour to state that I am a student of class IX in your school. I have been in this school since class three. A notice has been posted on the school notice board inviting application for a special scholarship. I would like to apply for one of the scholarships.\n\nIn this connection, I would like to inform you that I stood first in all the classes so far. I also regularly take part in school debate and extempore speech competitions, and have won prizes a number of times. My father is a small government employee who manages a large family of six members. Four of us are studying at different levels. It is almost impossible for my father to manage all the family expenses including our educational expenses.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

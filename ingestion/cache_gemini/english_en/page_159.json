@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 159,
+  "pdf_page_no": 164,
+  "chapter_no": 5,
+  "chapter_title": "Transformation of Sentences",
+  "sections": [
+    {
+      "section_no": "9/8",
+      "section_title": "Punctuation Marks",
+      "chunk_type": "theory",
+      "content_markdown": "### **9/8: Punctuation Marks**\n\n#### **Use of Full stop (. )**\n\nMany animals make noise for protection. A gorilla pounds his chest loudly. A woodpecker taps his beak on a tree. Both sounds warn nearby animals. They tell them to stay away. I wonder what signals fishes use to protect themselves from danger and attacks. Think about it.\n\nPeriods or Full stops signal the end of all sentences except questions and exclamations.\n\nIt may also be used to end an indirect question, and to end a mild command. We use full stop to express abbreviation/initials:\n\n* He has an M.A degree in English.\n* The U.S.A stands for the United States of America.\n* Mr. Sharif Ahmed and Mrs. Najma Ahmed are both teachers.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.01: A woodpecker tapping its beak on a tree",
+      "figure_no": "5.01",
+      "box_2d": [
+        205,
+        211,
+        443,
+        484
+      ],
+      "description": "Black and white photo of a woodpecker clinging to a tree trunk.",
+      "reading_order_anchor": "Use of Full stop"
+    },
+    {
+      "caption": "Fig 5.02: A gorilla pounding its chest",
+      "figure_no": "5.02",
+      "box_2d": [
+        204,
+        529,
+        443,
+        802
+      ],
+      "description": "Black and white photo of a gorilla pounding its chest in a natural habitat.",
+      "reading_order_anchor": "Use of Full stop"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 28,
+  "pdf_page_no": 33,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "H",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Work in pairs. Read the statements of the following grid. First match the parts in Column B with Column C to make complete sentences. Then make questions for the statements in Column A.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Column A | Column B | Column C |\n| :--- | :--- | :--- |\n| What | 1. Despite the fact that Magura is a district headquarters, | a. besides his studies. |\n| When | 2. His father was a sportsman | b. it is a small town. |\n| How | 3. He encourages Shyam to participate in games and sports | c. in his student life. |\n| When | 4. Shyam enjoys playing different games and sports | d. during break at school. |\n| Who | 5. He walks | e. on different TV channels. |\n| How long | 6. They walk | f. with his father. |\n| Why | 7. He prefers programmes on nature and life | g. for their educative values. |\n| What | 8. He watches sports programmes | h. for about an hour. |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "I",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Write about your own pastime following the model in G.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

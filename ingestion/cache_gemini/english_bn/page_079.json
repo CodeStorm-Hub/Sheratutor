@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 79,
+  "pdf_page_no": 84,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "for independence. Through a series of heroic and patriotic movements to restore freedom, India got its independence in 1947.\n\nThe culture of India is one of the oldest and the most unique in the world. There is amazing cultural diversity throughout the country. The South, North, and Northeast have their own distinct cultures and almost every state has carved out its own cultural distinction. There is hardly any culture in the world that is as varied and unique as India. There are 17 major languages and 844 dialects used by the people of India.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "India is a tourists’ delight. The Taj Mahal, Fatehpur Sikri, the Qutb Minar and the Red Fort are a few of the many wonders which attract people from all over the world. Kashmir has been described as a paradise on earth. The country of mountains, valleys, deserts, rivers and lakes offer the richness of a mini world within a single country. The Nilgiri mountains, hill stations like Ooty and Darjeeling and the temples of South India, Ajanta and Ellora caves are the places one can explore in India.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "B",
+      "section_title": "Discuss the following questions in pairs.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. What do you know about the population and geographical area of India?\n2. When did Buddhism spread in India?\n3. What happened to India during the Mughal Empire?\n4. What are some of the tourist attractions in India?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "C",
+      "section_title": "Complete the flow chart below to show the history of India. Use one word to fill in each gap.",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Complete the flow chart below to show the history of India. Use one word to fill in each gap.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "The Taj Mahal",
+      "figure_no": "1.01",
+      "box_2d": [
+        273,
+        503,
+        527,
+        946
+      ],
+      "description": "A photograph of the Taj Mahal.",
+      "reading_order_anchor": "India is a tourists’ delight."
+    }
+  ]
+}

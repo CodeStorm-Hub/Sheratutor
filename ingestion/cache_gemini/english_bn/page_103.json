@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 103,
+  "pdf_page_no": 108,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: The Shat Gambuj Mosque",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A Look at the picture. Work in pairs. Talk about the picture and ask and answer the following questions.\n\n1. What can you see in the picture?\n2. Do you have a building like this in your town/village?\n3. What do we call it?\n4. What is it used for?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "B Read the text and complete the table given after it.\n\n'Heritage' is what we inherit from the past, live with in the present and then pass on to our children or future generation. Our unique source of life and inspiration is our cultural and natural heritage. When we speak of 'World Heritage', it indicates places and sites that we inherited from the past and pass on to the future generation of the entire world.\n\nThe 'Shat Gambuj Mosque' in Bagerhat is such a heritage. It became a UNESCO World Heritage Site in 1985.\n\nOriginally, the historic Mosque City was known as 'Khalifatabad'. It is situated at the outskirts of Bagerhat town--- not very far from the dense mangrove forest of the Sundarbans. Khalifatabad was a Muslim colony. It was founded by the Turkish general, a saint warrior Ulugh Khan Jahan in the 15th century. The infrastructure of the city reveals significant technical skills in many mosques as well as early Islamic monuments. Baked bricks were used for the construction of the buildings. The planning of the city was dominated by the tradition of Islamic architecture and the decorations were a combination of Mughal and Turkish architecture.\n\nKhan Jahan built a network of roads, bridges, public buildings and reservoirs to make the city habitable. There were about 360 mosques in the city. Among them the most remarkable is the multi-domed Shat Gombuj Mosque. The mosque is unique in the sense that it has 60 pillars that support the roof, with 77 low height domes. The 4 towers at 4 corners have smaller domes at the top as well.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: ষাট গম্বুজ মসজিদ",
+      "figure_no": "1.01",
+      "box_2d": [
+        198,
+        457,
+        378,
+        896
+      ],
+      "description": "ষাট গম্বুজ মসজিদের একটি দৃশ্য।",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

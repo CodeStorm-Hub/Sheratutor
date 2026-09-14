@@ -1,0 +1,67 @@
+{
+  "printed_page_no": 76,
+  "pdf_page_no": 81,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Can I borrow your English dictionary for two days?\nSorry, I'm using it now, but I can give it to you tomorrow.\nWould Ben lend me his dictionary? What do you think?\nYou could ask him. He might.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Discuss in pairs what functions do can, could, would or might in the above conversation perform, and what time do they refer to - past, present or future?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Can and Could",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the following texts.\n\na I can sing and I can dance.\n\nBut I can't fly like a bird or swim like a fish.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: A boy singing and playing guitar and a girl dancing",
+      "figure_no": "2.01",
+      "box_2d": [
+        487,
+        545,
+        684,
+        895
+      ],
+      "description": "Illustration of a boy playing a guitar and singing, and a girl dancing.",
+      "reading_order_anchor": "A Read the following texts."
+    },
+    {
+      "caption": "Fig 2.02: Birds flying in the sky",
+      "figure_no": "2.02",
+      "box_2d": [
+        734,
+        611,
+        847,
+        897
+      ],
+      "description": "Photographic illustration of white birds flying.",
+      "reading_order_anchor": "But I can't fly like a bird or swim like a fish."
+    },
+    {
+      "caption": "Fig 2.03: Fish swimming in water",
+      "figure_no": "2.03",
+      "box_2d": [
+        852,
+        610,
+        929,
+        898
+      ],
+      "description": "Illustration of fish swimming in water.",
+      "reading_order_anchor": "But I can't fly like a bird or swim like a fish."
+    }
+  ]
+}

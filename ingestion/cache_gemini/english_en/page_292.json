@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 292,
+  "pdf_page_no": 297,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.2",
+      "section_title": "Example 2",
+      "chunk_type": "worked_example",
+      "content_markdown": "### Example 2\n\nThe diagrams below give information on transport and car use in Edmonton. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. **Write at least 150 words.**",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Tips for comparing information in graphs or charts",
+      "chunk_type": "theory",
+      "content_markdown": "### Tips for comparing information in graphs or charts\n\nWhen you describe two figures, ask yourself the following:\n\n1) What do both figures relate to?\n\n2) What kind of relationship is evident? (a similarity, a difference, a cause and effect relationship or some other type of relationship)\n\n3) Which aspects of each figure should be highlighted?\n\n4) Should I describe the figures in separate paragraphs, or should I compare different aspects of the figures within a series of paragraph?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Commute to work | 55% |\n| --- | --- |\n| Shopping | 15% |\n| Leisure activities | 15% |\n| Taking children to school | 40% |\n| Business | 45% |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "People's reasons for using the car in city",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Transport and car use in Edmonton",
+      "figure_no": "10.01",
+      "box_2d": [
+        542,
+        114,
+        765,
+        891
+      ],
+      "description": "A pie chart showing transport modes distribution with percentages and a table showing people's reasons for using the car in the city.",
+      "reading_order_anchor": "Example 2"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 134,
+  "pdf_page_no": 139,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "C What does the poet say about the good things that reading a book can do to you?\n\nWhat other benefits do you think reading books can give you?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Lesson 2: Two Mothers Remembered",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A Read the poem and answer the following questions\n\n**Two Mothers Remembered**\n\n- Joann Snow Duncanson\n\nI had two Mothers — two Mothers I claim\nTwo different people, yet with the same name.\nTwo separate women, diverse by design,\nBut I loved them both because they were mine.\nThe first was the Mother who carried me here,\nGave birth and nurtured and launched my career.\nShe was the one whose features I bear,\nComplete with the facial expressions I wear.\nShe gave me her love, which follows me yet,\nAlong with the examples in life she set.\nAs I got older, she somehow younger grew,\nAnd we’d laugh as just Mothers and daughters do.\nBut then came the time that her mind clouded so,\nAnd I sensed that the Mother I knew would soon go.\nSo quickly she changed and turned into the other,\nA stranger who dressed in the clothes of my Mother.\nOh, she looked the same, at least at arm’s length,\nBut now she was the child and I was her strength.\nWe’d come full circle, we women three,",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: মা ও শিশু",
+      "figure_no": "1.01",
+      "box_2d": [
+        433,
+        671,
+        669,
+        894
+      ],
+      "description": "একটি মা এবং তার শিশুর সাদাকালো ছবি।",
+      "reading_order_anchor": "Lesson 2: Two Mothers Remembered"
+    }
+  ]
+}

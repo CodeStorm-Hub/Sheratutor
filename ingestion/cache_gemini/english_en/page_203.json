@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 203,
+  "pdf_page_no": 208,
+  "chapter_no": 6,
+  "chapter_title": "Narration & Speech",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Activity 6",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Identify the changes or differences when the speech is converted to indirect from direct speech and answer the following questions.\n\na. What do we use in place of **said** in the direct speech is an imperative sentence?\n\nb. What do we use in place of **said** when the direct speech is an exclamatory sentence?\n\nc. What could be used in place of **said** when the direct speech is an exclamatory sentence with a sad news?\n\nd. What do we use in place of **said** when the direct speech begins with **Let**?\n\ne. What change do you notice in the indirect speech for verb when the direct speech has **Let**?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Note that** when we change direct speech to indirect speech we do not change word by word. We do some fine tuning to make the language lively. Otherwise it becomes mechanical and unnatural. This is why in the above indirect sentence it is written -\n\n*She confirmed that she would go as was free in the evening. We didn't write — She said that she would definitely come. She also said that she was free in the evening.*\n\nThis type of fine tuning is important for changing speech from direct to indirect especially when you have a whole conversation to change.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.1: Woman smiling and speaking",
+      "figure_no": "6.1",
+      "box_2d": [
+        188,
+        555,
+        497,
+        895
+      ],
+      "description": "Illustration of a smiling woman's head and shoulders, shown in profile with stylish hair and a patterned scarf.",
+      "reading_order_anchor": "Activity 6"
+    }
+  ]
+}

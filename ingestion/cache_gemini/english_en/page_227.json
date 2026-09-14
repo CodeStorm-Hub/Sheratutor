@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 227,
+  "pdf_page_no": 232,
+  "chapter_no": 9,
+  "chapter_title": "Formal & Informal Letter Writing",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Interests: Traveling, reading & sports.\n\nComputer Skill: Computer application course (MS-Word, MS-Excel, MS-Access, MS-PowerPoint), Internet, Hardware & Networking etc.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "EDUCATIONAL QUALIFICATION",
+      "chunk_type": "table",
+      "content_markdown": "| Degree | Year | Result | University/Board |\n| :--- | :--- | :--- | :--- |\n| MBA | 2015 | CGPA-3.17 out of 4 | University of Rajshahi |\n| M.B.S <br> Accounting | 2009 | $2^{\\text{nd}}$ Class | National University |\n| B.B.S(Hons) <br> Accounting | 2008 | $2^{\\text{nd}}$ Class | National University |\n| H.S.C | 2004 | Gpa- 3.00 | Rajshahi |\n| S.S.C | 2001 | Gpa- 3.75 | Rajshahi |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Reference",
+      "chunk_type": "theory",
+      "content_markdown": "Dr. M. Shahidullah\nProfessor, Department of English\nand\nDirector, IBS\nUniversity of Rajshahi\nPhone: 0721-750767\nMobile: 01711-400879",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 3",
+      "chunk_type": "theory",
+      "content_markdown": "Now make a CV of your own with authentic information.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 235,
+  "pdf_page_no": 240,
+  "chapter_no": 9,
+  "chapter_title": "Formal & Informal Letter Writing",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Example 2: A personal mail",
+      "chunk_type": "worked_example",
+      "content_markdown": "### Example 2: A personal mail\n\n**To:** joan.smith@company.com\n**Subject:** Thank You - Assistant Account Executive Interview\n\nDear Ms. Smith,\n\nIt was very enjoyable to speak with you today about the assistant account executive position at the Smith Agency.\n\nThe job seems to be an excellent match for my skills and interests. The creative approach to account management that you described confirmed my desire to work with you.\n\nIn addition to my enthusiasm, I will bring to the position strong writing skills, assertiveness, and the ability to encourage others to work cooperatively with the department.\n\nI appreciate the time you took to interview me. I am very interested in working for you and look forward to hearing from you regarding this position.\n\nSincerely,\n\nJane Jones\n\nJane Jones\njanejones@gmail.com\n(555) 555-5555",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.02: Example of a personal mail interface",
+      "figure_no": "9.02",
+      "box_2d": [
+        148,
+        111,
+        736,
+        888
+      ],
+      "description": "An email interface showing a drafted personal email addressed to Joan Smith with the subject Thank You - Assistant Account Executive Interview.",
+      "reading_order_anchor": "Example 2: A personal mail"
+    }
+  ]
+}

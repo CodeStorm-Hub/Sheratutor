@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 69,
+  "pdf_page_no": 74,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Now, discuss if the following statements are True/False. Give the correct information if a statement is false.\n\na. The package includes the cost of travelling from Kathmandu airport to the hotel in Kathmandu.\n\nb. The tourists will be provided with breakfast, lunch and dinner.\n\nc. The tourists do not have to pay extra for a half-day sightseeing in Pokhara.\n\nd. The tour operators will bear all visa related costs.\n\ne. The tourists will go to Pokhara from Kathmandu by domestic airlines flights.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "F Imagine that you have chosen the package tour shown in E to visit Kathmandu and Pokhara. Now, write a letter to your friend highlighting the main attractions offered by the package. In your letter you should cover the following points:",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: পোখরা ও হিমালয়ের দৃশ্য",
+      "figure_no": "1.01",
+      "box_2d": [
+        117,
+        145,
+        423,
+        847
+      ],
+      "description": "A scenic landscape photograph showing a lake in the foreground with the reflection of the Himalayan mountain range in the background.",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

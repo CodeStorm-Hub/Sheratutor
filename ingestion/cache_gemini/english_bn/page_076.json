@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 76,
+  "pdf_page_no": 81,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "facilities for recreation in 2008. The Maldives is well known for being the lowest country in the world. Unfortunately, this small country with idyllic natural beauty is under threat from rising sea levels due to global warming. Most of the country is just 1.5 meters above sea level with the highest point of 2.3 meters! Many predictions have been made with respect to Maldives being swept away by the rising water level in the Indian Ocean. When the power tsunami of 2004 hit the island nation, many of the island's dry parts were flooded by the sea water. The government of the Maldives has begun to purchase land from nearby countries for resettling its people in case the islands go under water! In order to highlight the threats of global warming to its low lying islands, the government of Maldives held a cabinet meeting underwater in 2009. That was the first ever underwater cabinet meeting in the world. The meeting took place about 5 meters underwater, in a blue-green lagoon on a small island. While underwater, the cabinet signed a document calling on all nations to cut their carbon emissions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "C Ask and answer the questions.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. What is an atoll? 2. How many countries in the world are smaller than the Maldives in size? 3. When was Islam introduced in the Maldives? 4. What makes the Maldives an ideal place for the tourists? 5. What dangers of climate change might affect the Maldives? 6. Do you support the idea of having a cabinet meeting underwater? What could be the reason for holding such a strange meeting?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Underwater meeting",
+      "figure_no": "1.01",
+      "box_2d": [
+        347,
+        548,
+        535,
+        898
+      ],
+      "description": "A photograph showing government officials in scuba gear holding a cabinet meeting underwater at a table.",
+      "reading_order_anchor": "The meeting took place about 5 meters underwater, in a blue-green lagoon on a small island."
+    }
+  ]
+}

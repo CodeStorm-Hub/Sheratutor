@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 75,
+  "pdf_page_no": 80,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Grammar point",
+      "chunk_type": "theory",
+      "content_markdown": "There are two kinds of auxiliary verbs in English:\n\nPrimary auxiliaries: am/is/ are/was/were, have/has/had, do/does/did\n\nModal auxiliaries: can/could, may/might, will/would, shall/should, must/ought to/need\n\nModal auxiliaries are different from Primary auxiliaries in the following ways:\n\n**Past tense forms**: The primary auxiliaries have past tense forms. The modal auxiliaries do not. For example, *must* or *may* do not have a past form. (*may* and *might* can refer to the same time: present or future)\n\n**Third person forms**: The primary auxiliaries have third person forms (he/she + is/has/does). Modal auxiliaries do not change. They have no -s form.\n\n**Infinitives**: The primary auxiliaries are related to an infinitive: to be, to have, or to do. There is no infinitive form for the modal auxiliaries. (We do not say *to can*, or *to might*.)\n\n**Note**: *Need* fits into both categories.\n\nIt can be used as a full verb: *need, needs, needed*, e.g.\n\n*We need sugar.* \n*He needs rest.*\n*They needed some money.*\n\nIt can also be used as a modal auxiliary verb:\n\n*We needn't take a taxi.* \n*We needn't go to the doctor.*",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Use",
+      "chunk_type": "theory",
+      "content_markdown": "We use modals to express a variety of moods or attitudes towards actions or events in the past, present or future. Modals can be used to express possibility, certainty, ability to do something, requests, permission, obligation, necessity, prohibition, advice, etc.\n\nLook at the following sentences:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

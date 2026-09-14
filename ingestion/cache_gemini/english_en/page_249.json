@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 249,
+  "pdf_page_no": 254,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Short Composition : Paragraphs",
+      "chunk_type": "theory",
+      "content_markdown": "In every nook and corner of the villages, there are small bazaars, where people go for shopping and spend their leisure time taking tea, gossiping, watching movies, sports etc. together. Most villages have primary schools, there are high schools and colleges in every two/three villages. The rate of education in the rural areas is increasing rapidly. Rural people have a good community life. They help each other in their weal and woe. The villages have been modernized over the last two/three decades.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Activity 6",
+      "chunk_type": "theory",
+      "content_markdown": "Write a paragraph describing a reading room in a library.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "Further Tasks",
+      "chunk_type": "theory",
+      "content_markdown": "Think about the following topics, note down as many points as you can think of. Arrange the points in a logical sequence, write a topic sentence, and then develop a paragraph on each topic.\n\na. A historic place/site\n\nb. The Parliament House (Sangsad Bhaban)/The National Mausoleum\n\nc. An old house\n\nd. A summer evening\n\ne. A crowded market\n\nf. A double decker bus",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: A double decker bus",
+      "figure_no": "10.01",
+      "box_2d": [
+        631,
+        500,
+        836,
+        821
+      ],
+      "description": "An illustration of a classic red/dark double decker bus.",
+      "reading_order_anchor": "Further Tasks"
+    }
+  ]
+}

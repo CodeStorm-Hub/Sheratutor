@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 279,
+  "pdf_page_no": 284,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Example Summary",
+      "chunk_type": "theory",
+      "content_markdown": "The following is a well-known fable by Aesop. After the fable, a typical summary of it is given.\n\n### The Lion and the Mouse\n\nA lion was sleeping in his den one day, when a mischievous mouse for no reason at all ran across the outstretched paw and up the royal nose of the king of beasts, awakening from his nap. The mighty beast clapped his paw upon the nose thoroughly frightened little creature and would have made an end of him.\n\n“Please,” squealed the mouse, “Don’t kill me. Forgive me this time, O King, and I shall never forget it. A day may come, who knows, when I may do you a good turn to repay your kindness.” The lion smiling at his little prisoner’s fright and amused by the thought that so small a creature ever could be of assistance to the king of beasts, let him go.\n\nNot long afterward the lion, while ranging the forest for his prey, was caught in the net which the hunters had set to catch him. He let out a roar that echoed through the forest. Even the mouse heard it, and recognizing the voice of his former preserver and friend, ran to the spot where he lay tangled in the net of ropes.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.1: The Lion and the Mouse",
+      "figure_no": "10.1",
+      "box_2d": [
+        195,
+        178,
+        464,
+        822
+      ],
+      "description": "An illustration showing a lion trapped in a hunters net with a small mouse nearby.",
+      "reading_order_anchor": "The Lion and the Mouse"
+    }
+  ]
+}

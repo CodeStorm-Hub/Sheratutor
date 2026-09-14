@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 226,
+  "pdf_page_no": 231,
+  "chapter_no": 9,
+  "chapter_title": "Formal & Informal Letter Writing",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Sample CVs",
+      "chunk_type": "theory",
+      "content_markdown": "A Look at the following sample CVs. The first one is of a university graduate.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "9.1",
+      "section_title": "Curriculum Vitae",
+      "chunk_type": "table",
+      "content_markdown": "CURRICULUM VITAE\nof\nMD. SAKHAWAT HOSSAIN\nContact No.: 01714-821999\nE-mail: sakhawat.ru.iba@gmail.com\n\n| | |\n|---|---|\n| Objective: | To work in a responsible position where I can use my creativity, interpersonal skills and my knowledge to contribute to any development sector of Bangladesh. |\n| Permanent Address | Md. Sakhawat Hossain (Shakil)<br>C/o. Md. Abdur Rashid Mollah<br>Village-Dashpara, Post office-Dublia, District - Pabna |\n| Mailing Address | Md. Sakhawat Hossain (Shakil)<br>Room 241, Rajshahi University<br>Rajshahi |\n\nPERSONAL INFORMATION\n\n| | |\n|---|---|\n| Full Name | MD. SAKHAWAT HOSSAIN |\n| Father's Name | Md. Abdur Rashid Mollah |\n| Mother's Name | Fatema Khatun |\n| Date of Birth | 01/08/1986 |\n| Nationality | Bangladeshi (by birth) |\n| Gender | Male |\n| Marital Status | Unmarried |\n| Language Proficiency | Speaking, writing and reading skills of Bengali & English. |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: Photo placeholder",
+      "figure_no": "9.01",
+      "box_2d": [
+        156,
+        728,
+        303,
+        885
+      ],
+      "description": "Passport size photo placeholder box",
+      "reading_order_anchor": "CURRICULUM VITAE"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 137,
+  "pdf_page_no": 142,
+  "chapter_no": 5,
+  "chapter_title": "Transformation of Sentences",
+  "sections": [
+    {
+      "section_no": "5.B",
+      "section_title": "The Compound Sentence",
+      "chunk_type": "theory",
+      "content_markdown": "A compound sentence has two or more independent clauses but no subordinate clauses.\n\nThe independent clauses are usually joined by some connecting or linking words such as, *and*, *but*, *or*, *nor*, *for*, *yet*, *however*, *therefore*, etc. We can also join the independent clauses by using a *semicolon*.\n\nFollowing are some examples of compound sentences:\n\n* I like jogging, but I like swimming better.\n* Razzak graduated last year, and now he works in a private bank.\n* I wanted to go to the concert, but I didn’t get the ticket.\n* The giraffe has a long neck and long legs, but it is a very graceful animal.\n* Fruits and vegetables should be a part of everyone’s diet, for they supply necessary vitamins.\n* It was a good day for outing; I went cycling in the countryside.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.C",
+      "section_title": "The Complex Sentence",
+      "chunk_type": "theory",
+      "content_markdown": "A complex sentence consists of one independent clause and one or more subordinate clauses.\n\n* We had lunch at the student cafeteria when we visited the college.\n* He gave her a pair of bangles which belonged to his mother.\n* While we walked along the beach, it started raining.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

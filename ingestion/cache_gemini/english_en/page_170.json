@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 170,
+  "pdf_page_no": 175,
+  "chapter_no": 5,
+  "chapter_title": "Transformation of Sentences",
+  "sections": [
+    {
+      "section_no": "5.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "e) I first met her two years ago.\n\n_________________ since I _________ last.\n\nf) Hundreds of birds are on the lake water.\n\n____________________________________ on the lake water.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.2",
+      "section_title": "Activity 2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Rewrite the following sentences so that they don't begin with 'there', but would mean the same as the original sentences:",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "5.2",
+      "section_title": "Activity 2",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a) There is a red rose in the vase.\n\n_____________________________________________________________________\n\nb) There are three golden stars on the baby's cap.\n\n_____________________________________________________________________\n\nc) There were two dogs chasing the burglar.\n\n_____________________________________________________________________\n\nd) There was a gold fish in the bowl.\n\n_____________________________________________________________________\n\ne) There are many leaves on the ground.\n\n_____________________________________________________________________",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

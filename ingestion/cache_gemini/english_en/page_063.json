@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 63,
+  "pdf_page_no": 68,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "He had been seeing patients since 5 o'clock. In other words, by the time it was 10.30, Dr. Akram **had been seeing** patients for five and a half hours.\n\nHow many patients **had** Dr. Akram **seen** by 9 p.m.? He **had seen** twelve patients.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Use",
+      "chunk_type": "theory",
+      "content_markdown": "We use the **past perfect** to describe an action completed before a certain moment in the past:\n\n> *When I reached her house at 11.15, she **had already left** for Sylhet. She **had left** at 11.00.*\n\nIf two actions happened in the past, the past perfect is often used to show which action happened earlier than the other:\n\n> *When I called her at 7.30, she **had already unpacked**.*\n\nWe use the **past perfect continuous** for an action that began before a certain point in the past and continued up to that time:\n\n> *It was 9 p.m. Dr. Akram was seeing a patient. He had started seeing patients at 5 p.m. He **had been seeing** patients for four hours. He **had been seeing** patients since 5.00.*",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 1",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Read the following paragraph and fill in the blanks with the appropriate form (simple past or past perfect) of verbs in the brackets:\n\nDr. Akram asked Fahim when the rash ______ (start). Fahim said that he ______ (notice) it a week ago. He also said that he ______ (go) to another doctor before, but since the rashes got worse, he had come to Dr. Akram. Dr. Akram ______ (want) to see what medicines the other doctor ______ (prescribe).",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

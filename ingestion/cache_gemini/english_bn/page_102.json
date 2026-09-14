@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 102,
+  "pdf_page_no": 107,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Unit Eight: World Heritage",
+      "chunk_type": "theory",
+      "content_markdown": "Unit Eight\n\n# World Heritage",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Learning outcomes",
+      "chunk_type": "theory",
+      "content_markdown": "Learning outcomes\n\nAfter we have studied this unit, we will be able to\n- listen for specific information\n- read and understand texts through silent reading\n- ask and answer questions\n- describe a place.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: বিশ্ব ঐতিহ্যের বিভিন্ন নিদর্শন",
+      "figure_no": "1.01",
+      "box_2d": [
+        221,
+        104,
+        534,
+        898
+      ],
+      "description": "বিভিন্ন বিশ্ব ঐতিহ্যের স্থাপনা ও প্রাকৃতিক দৃশ্যের কোলাজ",
+      "reading_order_anchor": "Unit Eight: World Heritage"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 11,
+  "pdf_page_no": 16,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Possessives and Appositives",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the following passage and notice the underlined words:\n\nThis is Salma’s school. This is a girls’ school. Her elder sister’s husband is the founder of this school. It is one of the best schools in Rajshahi. Will you go to the Headmistress’s chamber and talk to her about your daughter’s admission?\n\nThese are all possessive forms of nouns. The possessive case is a grammatical phenomenon which indicates relationship or ownership.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Note: The possessive case is formed in mainly two ways:\n(i) When the noun is singular, its possessive form will be noun + ’s:\nFor example:\n\nDella’s hair is very long.\n\nThis is Nazma’s bag.\n\nHowever, in some possessives the letter s is omitted in order to avoid a hissing sound.\n\nFor example:\nI have done it for conscience’ sake.\n\nYou should sacrifice it for goodness’ sake.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: A school building",
+      "figure_no": "2.01",
+      "box_2d": [
+        250,
+        168,
+        465,
+        808
+      ],
+      "description": "A black and white photograph of a school building with trees in the foreground.",
+      "reading_order_anchor": "A Read the following passage and notice the underlined words:"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 299,
+  "pdf_page_no": 304,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.8",
+      "section_title": "Activity 8",
+      "chunk_type": "theory",
+      "content_markdown": "Describing Graphs and Charts 299\n\n**Activity 8**\n\nThe table shows the worldwide market share of the mobile phone market for manufactures in the years 2005 and 2006. Fill in the gaps in the sample answer to summarise the information and make comparisons where relevant.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "Worldwide Mobile phone Sales in 2005 & 2006 (% share of market)",
+      "chunk_type": "table",
+      "content_markdown": "| Company | 2005 % Market share | 2006 % Market share |\n| :---: | :---: | :---: |\n| Nokia | 32.5 | 35 |\n| Motorola | 17.7 | 21.1 |\n| Samsung | 12.7 | 11.8 |\n| Sony Ericsson | 6.3 | 7.4 |\n| L.G | 6.7 | 6.3 |\n| BenQ Mobile | 4.9 | 2.4 |\n| Others | 19.2 | 16.2 |\n| TOTAL | 100.0 | 100.0 |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Sample Answer",
+      "chunk_type": "theory",
+      "content_markdown": "**Sample Answer**\n\nThe given data shows the ___________________________________________ market share worldwide for the year 2005 and 2006. As is observed from the given data, Nokia has the highest market share of cell phone worldwide both in 2005 & 2006.\n\nAs is presented, ________________________ had the largest market share (one third of total) in 2005 and their market share increased by ________________________ in the next year. ________________________ had the second largest market share comprising over ________________________ in 2005 and their market share ________________________ as well in the next year by almost 4%. Samsung had been able to maintain the ________________________ for their worldwide mobile phone market share. Their share ________________________ to 11.8% in 2005 compared to 12.7% market share in the previous year. On the other hand, Sony Ericsson and L.G both had more than 6% market share in 2005. In 2006, though Sony Ericsson's market share ________________________ by 1%, L.G's market share ________________________. BenQ Mobile had the ________________________ market share in the cell phone manufacturing worldwide.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Worldwide Mobile phone Sales in 2005 & 2006 (% share of market)",
+      "figure_no": "10.1",
+      "box_2d": [
+        283,
+        118,
+        493,
+        881
+      ],
+      "description": "A data table showing company-wise mobile phone market share percentages for the years 2005 and 2006.",
+      "reading_order_anchor": "Activity 8"
+    }
+  ]
+}

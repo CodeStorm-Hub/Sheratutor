@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 152,
+  "pdf_page_no": 157,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: My Roots",
+      "chunk_type": "theory",
+      "content_markdown": "A How do you feel looking at the photo?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "B Read the following text.\n\nEid is the main religious festival of the Muslims in Bangladesh. Eid means happiness. Everyone wants to share this happiness with near and dear ones. So most of the people, who are living outside their homes for different reasons have a strong desire to get back home during the Eid vacation. As a result, there is a mad rush to board buses, trains, or launches for going home. This often causes transport accidents that take away many lives. However, these cannot stop people from going home to meet their family, in-laws, or friends. What makes people rush for their homes in spite of serious hazards? This is nothing but people’s desire to return to the roots. Do human beings have roots like the trees? The answer is ‘yes' but unlike the roots of the trees they are invisible, they lie in our minds. It's these roots that make a bond between us and family.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: People rush to their roots on different occasions",
+      "figure_no": "1.01",
+      "box_2d": [
+        182,
+        103,
+        585,
+        897
+      ],
+      "description": "A collage of four photographs showing crowds of people traveling by bus, train, and launch during Eid.",
+      "reading_order_anchor": "A How do you feel looking at the photo?"
+    }
+  ]
+}

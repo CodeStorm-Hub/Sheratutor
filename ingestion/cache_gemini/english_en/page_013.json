@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 13,
+  "pdf_page_no": 18,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.C",
+      "section_title": "Nouns in Apposition",
+      "chunk_type": "theory",
+      "content_markdown": "Apposition means “placing near”. It is a grammatical arrangement in which two words referring to the same person or thing are placed side by side in a sentence.\n\nRead the following passage and notice the underlined words.\n\nMr. Rahman, our Headmaster, is a very nice man. My friend, Nazrul and I saw him yesterday. He discussed many things with both of us. He also talked about his childhood days. We also met his wife, Mrs Salma Begum. She is our English teacher. We like both of them.\n\nIn the first sentence, Rahman and Headmaster refer to the same person. The noun “Headmaster” follows the noun “Rahman” simply to mean which Rahman is referred to. Here the second noun “Headmaster” is said to be in apposition to the first noun “Rahman”.\n\nSimilar is the case with “Nazrul” in the second sentence. It is in apposition to the first noun “friend”. The second noun in such a situation is also called an appositive.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Activity 2 Find out the other appositive in the passage:",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Activity 3 Read the following passage and identify the appositives in it:\n\nWe, the students of class nine, are going to publish a magazine. Kazal, the first boy of our class, will be the chief editor of the magazine. Mr. Rafig, our class teacher, is our chief adviser. We believe that many students will write for the magazine.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

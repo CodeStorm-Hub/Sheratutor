@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 57,
+  "pdf_page_no": 62,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 3: Our Food and Shelter",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A Look at the pictures and answer these questions.\n1. What do the people do in a tree or a boat?\n2. Why do they do so?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "B Discuss what will be our problems if our population becomes double the size it is now.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "C Read what the teacher Ms Choudhury and her students are talking about.\n\nThe class comes up with different problems. One group leader says, \"The scarcity of food will be a serious problem in the years ahead. It is true that our agriculturists have developed new varieties of rice and its per acre production has definitely increased. But the rate of increase in food production cannot keep pace with the rate of population growth. This is because our land is fixed, i.e. we cannot increase it, while our population is increasing rapidly.\"\n\nAnother group leader comes up with the housing problem in the country, which he says adds much to the food problem. He says, \"Families are growing larger in size and at the same time breaking into smaller families. Each smaller family needs a separate house to live in. Also, the arable fields are being divided by these smaller families among themselves. Mills and factories are being set up, which occupy a considerable portion of our land. So while we need more land to grow more food to feed more mouths, our land is shrinking day by day.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: গাছ ও নৌকায় বসবাসকারী মানুষ",
+      "figure_no": "1.01",
+      "box_2d": [
+        218,
+        105,
+        448,
+        493
+      ],
+      "description": "একটি গাছ এবং একটি নৌকার ছবি যেখানে মানুষ বসবাস করছে।",
+      "reading_order_anchor": "A Look at the pictures and answer these questions."
+    }
+  ]
+}

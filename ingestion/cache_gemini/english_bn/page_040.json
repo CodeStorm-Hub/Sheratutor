@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 40,
+  "pdf_page_no": 45,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "D Listen to the text again and answer these questions.\n1. What country first observed Mother’s Day as a national holiday?\n2. When is Mother’s Day now celebrated by most of the countries in the world?\n3. How is Mother's Day usually observed?\n4. Why should we observe Mother's Day?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "E Write a paragraph by answering each of the following questions.\n1. Do you help your mother with her housework? How?\n2. Do you celebrate Mother’s Day? If yes, when and how?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "Lesson 2 : May Day",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A Look at the picture and talk about it.\n1. What do you see in the picture?\n2. Can you relate any historical event to this picture? What happened on this day?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.4",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "B Read the text and answer the questions that follow.\nMay Day or International Workers’ Day is observed on May 1 all over the world today to commemorate the historical struggle and sacrifices of the working people to establish an eight-hour workday. It is a public holiday in almost all the countries of the world.\n\nSince the Industrial Revolution in the $18^{th}$ and $19^{th}$ centuries in Europe and the US, the workers in mills and factories had been working a long shift, fourteen or even more hours a day.\n\nOn May $1^{st}$ in 1886, inspired by the trade unions, half of the workers at the McCormick Harvesting Machine Company in Chicago went on strike demanding an eight-hour workday. Two days later, a workers’ rally was held near the McCormick Harvester Machine Company and about 6000 workers joined it. The rally was addressed by the labour leaders. They urged the workers to stand together, to go on with their struggle and not to give in to their bosses. At one point of the rally, some strike breakers started leaving the meeting place. The strikers went down the street to bring them back. Suddenly about 200 policemen attacked them with clubs and revolvers. One striker was killed instantly, five or six others were seriously wounded and many others were injured.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: মে দিবস",
+      "figure_no": "1.01",
+      "box_2d": [
+        313,
+        731,
+        523,
+        904
+      ],
+      "description": "A stylized graphic illustration featuring a raised fist holding a hammer, representing May Day.",
+      "reading_order_anchor": "Lesson 2 : May Day"
+    }
+  ]
+}

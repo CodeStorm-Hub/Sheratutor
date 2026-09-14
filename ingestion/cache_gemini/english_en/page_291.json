@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 291,
+  "pdf_page_no": 296,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Describing Graphs and Charts",
+      "chunk_type": "theory",
+      "content_markdown": "This graph presents the GDP growth rate of Bangladesh from 2006 to 2015. The data presented in the graph shows that there has been ups and downs in the GDP growth rate. In 2006, it was 5.95, but it rose to the highest ever growth in 2007 which was 6.63, but",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Activity 3",
+      "chunk_type": "theory",
+      "content_markdown": "Activity 3 Now describe the following graphs in 150 words.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "Activity 4",
+      "chunk_type": "theory",
+      "content_markdown": "Activity 4 Describe the following graph in 150 words.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: National Income per capita",
+      "figure_no": "10.01",
+      "box_2d": [
+        389,
+        206,
+        610,
+        834
+      ],
+      "description": "Bar chart showing National Income per capita in US $ in 2010 for Vietnam, India, Sri Lanka, and Bangladesh.",
+      "reading_order_anchor": "Activity 3"
+    },
+    {
+      "caption": "Fig 10.02: Annual per capita income change",
+      "figure_no": "10.02",
+      "box_2d": [
+        683,
+        206,
+        945,
+        834
+      ],
+      "description": "Bar chart showing annual per capita income change 1990-2010 (%) for Vietnam, India, Sri Lanka, and Bangladesh.",
+      "reading_order_anchor": "Activity 4"
+    }
+  ]
+}

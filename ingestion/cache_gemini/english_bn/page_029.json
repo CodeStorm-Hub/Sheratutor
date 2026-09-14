@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 29,
+  "pdf_page_no": 34,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 2: Reading Really Helps!",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the conversation and tell what Anusha is going to read.\n\nAnusha : Tiya, hope you enjoyed the article on yoga.\n\nTiya : Yes, it’s great. By the way, Anusha, how did you enjoy London Olympics as a sports lover?\n\nAnusha : People rightly say that it is the greatest show on earth. I’m still thrilled to remember what Michael Phelps and Usain Bolt have shown. Amazing!\n\nTiya : Right you are. They are incredible. However, I’ve got an interesting article on the Internet on Michael Phelps and Usain Bolt. You might like it and take part in the debate on who is better between these two greats. Please read it.\n\nAnusha : Ahh... Michael Phelps and Usain Bolt! Thank you Tiya! I would love to read it.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "B Read the text published in a newspaper in 2012, and answer the questions that follow.\n\nMichael Phelps, Usain Bolt are great, but who's better?\n\nWith the curtains closing on the 2012 London Olympics, it's impossible not to look back and reflect on the greatest performances by Olympic athletes.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Usain Bolt and Michael Phelps",
+      "figure_no": "1.01",
+      "box_2d": [
+        597,
+        99,
+        878,
+        896
+      ],
+      "description": "A composite photograph showing Usain Bolt running on the left and Michael Phelps wearing a medal on the right.",
+      "reading_order_anchor": "B Read the text published in a newspaper in 2012, and answer the questions that follow."
+    }
+  ]
+}

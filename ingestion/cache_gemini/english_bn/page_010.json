@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 10,
+  "pdf_page_no": 15,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "B. For each phrase below choose the meaning that is closest to the meaning used in the text above.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. In paragraph 3 'mighty rivers' mean\na rivers that have huge volumes of water and very strong currents\nb rivers having many rowing boats in them\nc rivers that make people cry out\nd rivers that have strong banks\n2. landed property\na a rented piece of land\nb a piece of land on the bank of a river\nc property in the form of a source of income to its owner\nd property used only as an agricultural farm\n3. whispering wind\na wind that blows from across the river\nb wind that blows with a hissing sound\nc wind that helps someone make a fire\nd wind that blows in summer\n4. dancing flames\na a traditional form of folk dance\nb flames that make people dance around them\nc flames that are made unstable by the blast of air\nd flames made by people to remember their past",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "C. Ask and answer the following questions in pairs.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a What does Meherjan use to make fire for cooking her meals?\nb What property did Meherjan lose due to river erosion?\nc What do you know about Meherjan’s family?\nd In which season is river erosion most likely to occur?\ne Why is the phrase ‘greedy Jamuna’ used to describe the river?\nWhat greed do you notice in the description?",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

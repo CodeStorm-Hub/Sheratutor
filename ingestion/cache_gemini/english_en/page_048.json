@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 48,
+  "pdf_page_no": 53,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.5",
+      "section_title": "The Present Perfect Continuous",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the following conversations. Can you identify the verbs in the present perfect continuous?\n\na : Hello, Shahan! What have you been doing? You look so tired and irritated.\n\n: Oh *I have been trying* to fix my cycle *for the last three hours*.\n\n: Have you fixed it?\n\n: No, I couldn't. All my efforts have been useless.\n\nb : Sorry, I'm late. *Have you been waiting for* long?\n\n: That's ok. *I've been watching* the news while I waited.\n\nc : Hello, Shila. This is Mark here. Is Nina there?\n\n*We've been waiting* for her at the library *since 3 o'clock*.\n\n: Sorry, Mark. Nina is not here. She *has just left*.\n\n: Do you know where she has gone? I don't really understand ... she *has been acting* strangely these days.\n\n**Grammar point**\n\n**Form**\n\nThe present perfect continuous is formed by\n\n**has/have + been + verb-ing:**\n\n*I have been typing for three hours.*\n\n*He has been practising for the match every day.*",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.1: A boy trying to fix his cycle",
+      "figure_no": "2.1",
+      "box_2d": [
+        297,
+        574,
+        501,
+        849
+      ],
+      "description": "An illustration of a boy sitting on the floor and trying to repair his bicycle with a wheel nearby.",
+      "reading_order_anchor": "2.5"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 24,
+  "pdf_page_no": 29,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: Have You any Favourite Pastime?",
+      "chunk_type": "theory",
+      "content_markdown": "A Look at the pictures. What are the persons doing here? When do they do these kinds of activities?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "B Read the conversation and answer the questions.\n\nTiya : Anusha, what's the matter? You’re wearing sports trousers, T-shirts, sports shoes and carrying a bag! Where are you coming from? And you look tired!\n\nAnusha : Not exactly, Tiya. I’m great because I’m just coming back from the gym.\n\nTiya : Do you go to the gym regularly?\n\nAnusha : Yes, I do. I go twice a week. It’s one of my favourite pastimes.\n\nTiya : Really! Going to the gym is your favourite pastime! You make me laugh!\n\nAnusha : Why not? I like sports because I like to be fit. I’m not a lazy person like you!\n\nTiya : What do you do there?\n\nAnusha : I do yoga.\n\nTiya : Don’t you have any other pastimes?\n\nAnusha : Hmm... yes, I have. I like playing chess, painting, and reading books when I’m free. I also like photography but I’m yet to learn it. What do you do in your pastime?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: বিভিন্ন শখের কাজ",
+      "figure_no": "1.01",
+      "box_2d": [
+        192,
+        105,
+        425,
+        895
+      ],
+      "description": "বিভিন্ন শখের কাজের ছবি যেমন দাবা খেলা, বাগান করা, ছবি তোলা, বই পড়া ইত্যাদি।",
+      "reading_order_anchor": "A Look at the pictures. What are the persons doing here? When do they do these kinds of activities?"
+    }
+  ]
+}

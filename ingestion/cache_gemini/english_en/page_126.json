@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 126,
+  "pdf_page_no": 131,
+  "chapter_no": 5,
+  "chapter_title": "Transformation of Sentences",
+  "sections": [
+    {
+      "section_no": "5.1",
+      "section_title": "Clauses",
+      "chunk_type": "theory",
+      "content_markdown": "A clause is a group of words that contains a subject and a predicate.\n\nThere are two kinds of clauses: independent and subordinate clauses. A clause may be either a sentence (an independent clause) or a sentence-like construction within another sentence (a dependent or subordinate clause).\n\n### The Independent Clause\n\nAn independent clause expresses a complete thought and can stand by itself as a sentence. If you recognize a sentence, you should be able to recognize independent clauses.\n\nLook at the following examples:\n\n* Many people are afraid of tornadoes.\n* A tornado can be terrifying.\n* A tornado is a violently revolving storm.\n* In the centre of the tornado is an area of calm air.\n* The centre of the tornado is known as the \"eye\".\n* This eye is formed by the air spiraling around it.\n* This eye is simply a hollow space.\n\nAll the above sentences are independent clauses. A sentence may have more than one independent clause.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 5.01: A tornado storm",
+      "figure_no": "5.01",
+      "box_2d": [
+        435,
+        474,
+        661,
+        895
+      ],
+      "description": "Black and white photograph of a swirling tornado storm cloud over a flat landscape",
+      "reading_order_anchor": "Look at the following examples:"
+    }
+  ]
+}

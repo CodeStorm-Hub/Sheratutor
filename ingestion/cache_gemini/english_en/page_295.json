@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 295,
+  "pdf_page_no": 300,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Malaysia the actual proportion was .......... (27%). In Japan another major expense was transport, at 20%, but this was much .......... In Malaysia (10%). In both countries the .......... percentage of expenditure was on health care.\n\n.........., the data .......... that in both cases food, housing and other goods and services were the .......... expenses, .......... that in Japan, transport and other goods and services took up a .......... proportion of total expenditure .......... in Malaysia.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 3",
+      "chunk_type": "worked_example",
+      "content_markdown": "The graph below shows the number of books read by men and women at Burnaby Public Library from 2011 to 2014. Describe the graph in your own language.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Model answer\n\nThe graph gives information about the number of books people read in Burnaby Public Library between 2011 and 2014.\n\nAs can be seen from the graph, there were different trends for men and women. The number of books read by men increased steadily between 2011 and 2012, from about 3000 to 4000. After that, the number rose dramatically to 14000 in 2014. This was the highest figure in the given period.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.1: Burnaby Public Library",
+      "figure_no": "10.1",
+      "box_2d": [
+        418,
+        228,
+        663,
+        770
+      ],
+      "description": "Line graph showing the number of books read by men and women at Burnaby Public Library from 2011 to 2014.",
+      "reading_order_anchor": "Example 3"
+    }
+  ]
+}

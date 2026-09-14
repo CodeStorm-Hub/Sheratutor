@@ -123,7 +123,7 @@ def generate_embedding(text: str) -> List[float]:
 
 def main():
     parser = argparse.ArgumentParser(description="Ingest extracted chunks and embeddings into Supabase")
-    parser.add_argument("--subject", default="chemistry", choices=["chemistry", "physics", "mathematics"])
+    parser.add_argument("--subject", default="chemistry", choices=["chemistry", "physics", "mathematics", "english"])
     parser.add_argument("--lang", default="en", choices=["en", "bn"])
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing to DB")
     parser.add_argument("--purge-first", action="store_true", help="Purge stale chunks for this curriculum version first")
@@ -131,7 +131,8 @@ def main():
     args = parser.parse_args()
 
     # 1. Resolve Subject UUID and Curriculum Version UUID
-    subj_code = f"SSC-{'CHEM' if args.subject == 'chemistry' else 'PHY' if args.subject == 'physics' else 'MATH'}"
+    subj_map = {"chemistry": "SSC-CHEM", "physics": "SSC-PHY", "mathematics": "SSC-MATH", "english": "SSC-ENG"}
+    subj_code = subj_map.get(args.subject, "SSC-CHEM")
     subj_res = supabase.table("subjects").select("id").eq("code", subj_code).single().execute()
     if not subj_res.data:
         print(f"Error: Subject not found with code {subj_code}")
@@ -215,11 +216,17 @@ def main():
             if chunk_type not in ['theory', 'worked_example', 'cq_stimulus', 'cq_subquestion', 'table']:
                 chunk_type = 'theory'
 
-            sec_no = sec.get("section_no")
-            sec_title = sec.get("section_title")
+            def clean_str(val):
+                if isinstance(val, str):
+                    return val.replace("\x00", "").replace("\u0000", "")
+                return val
+
+            sec_no = clean_str(sec.get("section_no"))
+            sec_title = clean_str(sec.get("section_title"))
             act_tag = sec.get("activity_tag")
             if act_tag and not content.startswith(f"[{act_tag}]"):
                 content = f"[{act_tag.upper()}]\n{content}"
+            content = clean_str(content)
 
             chunk_record = {
                 "curriculum_version_id": curriculum_version_id,

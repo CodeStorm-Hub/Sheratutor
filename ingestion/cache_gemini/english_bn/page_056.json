@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 56,
+  "pdf_page_no": 61,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "D",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Read the chart and fill in the gaps with information from the table. Use comparatives and superlatives where necessary. The table shows facts about some countries including Bangladesh.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| | Bangladesh | Sri Lanka | India | China |\n| :--- | :--- | :--- | :--- | :--- |\n| Land area sq km | 148,460 sq km (approx) | 62,710 sq km | 3,287,263 sq km | 9,600,000 sq km |\n| Population in million | 165 m | 21.4 m | 1380 | 1420 m |\n| Density of population per sq km | 1116 | 341 | 464 | 153 |\n| Birth rate (per 1000) | 18.18 | 15.5 | 18.2 | 10.48 |\n| Death rate (per 1000) | 5.5 | 4.2 | 7.3 | 7.4 |\n| Growth rate | 1.04% | 0.42% | 1.1% | 0.6% |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In terms of land area Bangladesh is (1) (larger) than Sri Lanka, but (2) ________ than India. China is, of course, (3) ________ of all the four countries. Sri Lanka has the (4) ________ population among the four countries. However, China has the (5) ________ population shown in the chart. In fact, China has the (6) ________ population in the world and India has the (7) ________ highest population in the world. On the other hand, China has the (8) ________ growth rate among the 4 countries. Bangladesh has (9) ________ growth rate than India, but higher birth rate than (10) ________ and (11) ________.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "E",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Write a paragraph about the population situation of any of the countries above. Use the facts given in the chart in D above.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 16,
+  "pdf_page_no": 21,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Match the meanings in column B and the words/phrases in column A.",
+      "chunk_type": "table",
+      "content_markdown": "| A | B |\n| :--- | :--- |\n| 1 Sun's radiation | a. energy that is transmitted from the sun in the form of rays or waves or particles |\n| 2 Fossil fuels | b. the process used by plants to convert light energy captured from the sun to chemical energy |\n| 3 Combustion of coals | c. a basic material or substance used in the production or manufacturing of goods |\n| 4 Crude oil | d. non-renewable sources of energy that come from the remains of plants and animals |\n| 5 Raw materials | e. intentional destructions or removal of trees and other vegetations for agricultural, commercial, housing or firewood use |\n| 6 Deforestation | f. a naturally occurring, unrefined petroleum product that can be refined to produce usable products such as diesel, gasoline, heating oil, jet fuel, kerosene, etc. |\n| 7 Photosynthesis | g. burning of coal usually in industrial plants. |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "D Write a letter to the Editor of a newspaper expressing your concern about growing deforestation in your area. Describe how deforestation is changing your environment. Also suggest what actions could be taken to stop cutting down trees. Follow the clues below.\n\n* dangers caused by deforestation\n* increase of carbon dioxide in the atmosphere\n* the greenhouse effect\n* making people aware of the adverse effect of deforestation\n* making an action plan to stop deforestation",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 91,
+  "pdf_page_no": 96,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "D. Read the text B again. See if the following statements are True or False. If false, give the correct information.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. Partho Pratim belonged to a culturally enlightened family.\nb. Kalachandpara was 30 kilometres away from Kolkata.\nc. Ecole Internationale de Mimodrame de Paris Marcel Marceau is an international award.\nd. Partha Pratim took his topics from very trivial issues of everyday life.\ne. Performance at Shilpakala Academy created the major opportunity for him.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "E. Read the statements below and form appropriate questions for each of them.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a. The birthplace of Partha Pratim Majumder is in Pabna.\nb. Partha Pratim developed a passion for art from his childhood.\nc. Jogesh Dutta was a renowned mime artist in Kolkata.\nd. Partha Pratim performed in Europe and America.\ne. Partha Pratim’s dream is now to open an international miming school in Bangladesh.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "F. Listen to the audio and complete the chart about Partha Pratim.",
+      "chunk_type": "table",
+      "content_markdown": "| Year | Achievement | From where |\n| :--- | :--- | :--- |\n| 1987 | Master of Mime | |\n| 1987 | | Journalist Association of Malayasia |\n| 2009 | Munir Chaudhury Award | |\n| 2010 | Knight in order of Arts and Humanities | Bangladesh |",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

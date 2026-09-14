@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 84,
+  "pdf_page_no": 89,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Unit Seven: People Who Stand Out",
+      "chunk_type": "theory",
+      "content_markdown": "Unit Seven\n\nPeople Who Stand Out",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Learning outcomes",
+      "chunk_type": "theory",
+      "content_markdown": "Learning outcomes\n\nAfter we have studied this unit, we will be able to\n\n* read and demonstrate the understanding texts through silent reading\n* ask and answer questions\n* listen to an audio text for specific information\n* write a dialogue.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: বিখ্যাত ব্যক্তিদের প্রতিকৃতি",
+      "figure_no": "1.01",
+      "box_2d": [
+        202,
+        284,
+        654,
+        716
+      ],
+      "description": "চারজন বিখ্যাত ব্যক্তির প্রতিকৃতি সম্বলিত কোলাজ",
+      "reading_order_anchor": "Unit Seven: People Who Stand Out"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 145,
+  "pdf_page_no": 150,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "C Read all the three parts of the story again and answer these questions.\n\n1. How did Rosamond try to persuade her mother to buy all the pretty things she saw in the shops?\n\n2. How did her mother try to stop Rosamond from buying all the things she wanted to buy?\n\n3. Write two paragraphs-one about Rosamond and the other about her mother. Use words and phrases from the box below, which are appropriate for each character. You can also use your own words and phrases.\n\na seven year old girl, use, disappointed, purple, worse, lesson, sufferings, artificial, ornaments, pretty, liking, worn out, persuade, beautiful roses, disheartened, enough, badly, examine, unpleasant smell, stupidity, emotional, practical, decide, limped",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Lesson 9: A Pound of Flesh",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A Look at the picture and ask and answer the questions.\n\n1. What do you see?\n2. What are the three persons doing?\n3. What type of clothes are they wearing?\n4. Are you familiar with such clothes?\n5. Who wears such clothes?\n6. Mention which clothes of our country are close to the ones the men are wearing in the picture?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "B Read the text.\n\nOnce upon a time in Venice, Italy, there was a very rich merchant named Antonio. He had many ships that sailed in the sea. His ships carried different types of merchandise to other countries. He sold those goods there. He bought spices and other valuables from foreign countries and sold them in Venice.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: ভেনিসের বণিকদের পোশাক পরিহিত তিন ব্যক্তি",
+      "figure_no": "1.01",
+      "box_2d": [
+        566,
+        676,
+        772,
+        876
+      ],
+      "description": "তিনজন ব্যক্তি ঐতিহাসিক ভেনিসীয় পোশাক পরে দাঁড়িয়ে আছেন।",
+      "reading_order_anchor": "A Look at the picture and ask and answer the questions."
+    }
+  ]
+}

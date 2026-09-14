@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 70,
+  "pdf_page_no": 75,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "- Duration of travel\n- Means of transport used:\n  1) Dhaka-Kathmandu-Dhaka\n  2) Kathmandu-Pokhara-Kathmandu\n- Accommodation facilities\n- Breakfast, lunch and dinner\n- Total cost of the package\n- Any other cost that is not covered by the package offer",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Lesson 2: Sri Lanka: The Pearl of the Indian Ocean",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A Look at the picture. Ask and answer the following questions in pair.\n\n1. What is the name of the country?\n2. What is the country surrounded by?\n3. What do you know about the country?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "B Now read the following passage to find your answers to the questions in A.\n\na Anyone visiting Sri Lanka may often hear the word Ayubowan. This word means 'May you have the gift of long life'. It is with this traditional greeting that everyone is welcomed to Sri Lanka. Sri Lanka is variously known as: Serendip, Ceylon, Teardrop of India, Pearl of the Indian Ocean, etc. These names reveal the richness and beauty of this island nation. Many travellers, from ancient mariners and merchants to present day tourists, have been attracted by the beauty of this island.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

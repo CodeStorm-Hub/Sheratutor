@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 187,
+  "pdf_page_no": 192,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "messages from a sender to one or multiple recipient/s. E-mails operate through a network of computers linked by the Internet. There are commercial server agencies such as Yahoo, Gmail, Ymail, Hotmail, etc. that accept the text message from the sender, forward it and deliver instantly to the digital mailbox of the recipient. If the recipient is not online, the message is stored and delivered later when the recipient is online. It works instantly just with the click of your mouse. It has been a powerful communication tool in modern life.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "1. What is an e-mail?\n2. How do e-mails operate?\n3. How do the commercial servers serve in the process of an e-mail?\n4. 'It has been a powerful communication tool in modern life.' Explain the statement.\n5. How do e-mails affect our daily work schedule?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "D",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Work in pairs and discuss the steps of your normal days, weekends etc.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "E",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Pairwork. Read the following e-mail exchanged between two friends. Like an informal letter, an e-mail to a close one is casually written. Identify the mistakes in the main body of the message, discuss with your partner, and correct them.\n\nSubject: Details of Dhaka Tour\n\nFROM: Alexa Dowson <alexa.dowson@yahoo.com>\n\nTO: Moutushi Laboni <moutushi1997@ymail.com>\n\nMonday, 21 May 2012 6:20 AM\n\nHi Moutushi!\n\nThanks for your mail. I'll fly from Ottawa on 7:36 hours local time on 13 July with Qatar Airlines via London-Doha and land Dhaka on 15 July around 13:41 hours local time. Wish to stay 2 days in the Cox's Bazar and 1 day in Khulna. Return flight on 21 July at 3:04 hours local time.\n\nKeep in touch and stay fine. Hope to see you soon!\n\nAlexa",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

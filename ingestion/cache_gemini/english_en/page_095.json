@@ -1,0 +1,77 @@
+{
+  "printed_page_no": 95,
+  "pdf_page_no": 100,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Activity 2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Shamim and Rekha have bought a new TV. They’re trying to install it in their living room. Look at the pictures and complete the blanks with should/shouldn't:\n\nWe _________ do anything without reading the instructions. Let’s see the instruction manual first. It _________ tell us everything.\n\nOkay, I’ve put in the plugs on the back. Can you turn on the switch, Rekha? Mmmmm... the screen _________ come on now.\n\nThe screen _________ be moving like that. And the pictures _________ be clearer, too.\n\nI’m sure the screen _________ look like that. _________ we start from the beginning again?\n\nI think we _________ experiment with it any further. We _________ call the agency to send someone to help.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Shamim and Rekha looking at the instruction manual and TV",
+      "figure_no": "2.01",
+      "box_2d": [
+        199,
+        155,
+        327,
+        432
+      ],
+      "description": "A man and a woman looking at a TV and instruction manual.",
+      "reading_order_anchor": "Activity 2"
+    },
+    {
+      "caption": "Fig 2.02: Plugging in the TV",
+      "figure_no": "2.02",
+      "box_2d": [
+        323,
+        679,
+        485,
+        901
+      ],
+      "description": "A person plugging in a TV cable to the wall socket.",
+      "reading_order_anchor": "Activity 2"
+    },
+    {
+      "caption": "Fig 2.03: TV with fuzzy screen",
+      "figure_no": "2.03",
+      "box_2d": [
+        480,
+        110,
+        642,
+        285
+      ],
+      "description": "A TV set on a table showing a noisy or fuzzy screen.",
+      "reading_order_anchor": "Activity 2"
+    },
+    {
+      "caption": "Fig 2.04: Discussing the TV screen",
+      "figure_no": "2.04",
+      "box_2d": [
+        639,
+        617,
+        797,
+        888
+      ],
+      "description": "A man and a woman looking confused at the fuzzy TV screen.",
+      "reading_order_anchor": "Activity 2"
+    },
+    {
+      "caption": "Fig 2.05: Calling for help",
+      "figure_no": "2.05",
+      "box_2d": [
+        757,
+        122,
+        951,
+        396
+      ],
+      "description": "A woman talking on the phone near the TV set.",
+      "reading_order_anchor": "Activity 2"
+    }
+  ]
+}

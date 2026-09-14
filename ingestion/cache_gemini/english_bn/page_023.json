@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 23,
+  "pdf_page_no": 28,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Unit Three: Pastimes",
+      "chunk_type": "theory",
+      "content_markdown": "Unit Three\n\n# Pastimes",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Learning outcomes",
+      "chunk_type": "theory",
+      "content_markdown": "Learning outcomes\n\nAfter we have studied the unit, we will be able to\n• narrate incidents and events in a logical sequence\n• participate in conversation, discussions and debates\n• read maps, charts, graphs etc.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Pastimes icons",
+      "figure_no": "1.01",
+      "box_2d": [
+        263,
+        242,
+        548,
+        758
+      ],
+      "description": "A grid of twelve circular icons representing various pastimes such as film, art, music, reading, and technology.",
+      "reading_order_anchor": "Unit Three: Pastimes"
+    }
+  ]
+}

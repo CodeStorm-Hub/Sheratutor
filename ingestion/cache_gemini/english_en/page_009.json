@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 9,
+  "pdf_page_no": 14,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Gender",
+      "chunk_type": "theory",
+      "content_markdown": "A Gender is a distinction which shows whether a noun or pronoun is male or female. It is related to the sex of living beings. Read the following passage and say what gender the underlined words refer to.\n\nAll the teachers were invited to the party. Their spouses and children were also invited. But Mr. Rahman could not attend the party, because his wife was ill. As his son and daughter were away from home, there was nobody else in the house to look after her.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Types of Gender",
+      "chunk_type": "theory",
+      "content_markdown": "There are four genders in English. They are:\n1. Masculine gender\n2. Feminine gender\n3. Common gender\n4. Neuter gender",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Activity 1 Now fill in the gaps in the following sentences to understand what each gender denotes.\n\nThe masculine gender denotes a ---- person or animal.\nThe feminine gender refers to a ------ person or animal.\nThe common gender refers to both ----- and ------ persons/animals.\nThe neuter gender denotes a thing which is neither----- nor------.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| | | | |\n| :--- | :--- | :--- | :--- |\n| man | woman | student | camera |\n| uncle | aunt | doctor | flower |\n| brother | sister | sibling | pen |\n| lion | lioness | professor | table |\n| god | goddess | minister | book |\n| policeman | policewoman | policeperson | dress |\n| gander | goose | bird | bed |",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

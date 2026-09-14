@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 16,
+  "pdf_page_no": 21,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Something that belongs to us or is connected with us, without repeating the noun.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example:\nThe navy blue T-shirt is mine (=my T-shirt). Don’t take that one please.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We also use a possessive pronoun when we know which thing we are referring to.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example:\nMy laptop is six months old. How old is yours (=your laptop)?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Activity 1",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Complete the description of a job by putting in the correct subject or object pronouns.\n\nI work in a restaurant. Three other people work with ________ here. They are Jibon, Sathi, and Bokul. ________ all are good friends. Jibon is a good singer. ________ always sings and works. I’m a fan of ________ singing. Sathi is a little senior to ________. ________ is a bit serious in everything. If ________ make any mistake, ________ scolds ________ but ________ loves ________ a lot too. I don’t know ________ passion. Bokul is of ________ age. Everyone loves Bokul because of ________ pleasing personality. Bokul’s special quality is ________ is never angry with anyone. Our manager doesn’t like ________ friendship. She keeps an eye on ________ always. ________ enjoy ________ anxiety.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Activity 2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Two friends are talking about their exam preparation. Complete their conversation by putting in the correct possessive adjectives and possessive pronouns.\n\nKalyani: Hi dear! (1) ________ look tired — you are working very hard.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

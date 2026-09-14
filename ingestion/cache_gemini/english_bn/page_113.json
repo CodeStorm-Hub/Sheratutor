@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 113,
+  "pdf_page_no": 118,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Unconventional Jobs",
+      "chunk_type": "theory",
+      "content_markdown": "Unit Nine\n\n# Unconventional Jobs",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Learning outcomes",
+      "chunk_type": "theory",
+      "content_markdown": "### Learning outcomes\n\nAfter we have studied this unit, we will be able to\n* describe familiar objects\n* read intensively and extensively\n* participate in debate, discussion\n* Write about jobs and situations\n* read for skimming, scanning, and inferring\n\n[Skimming = to read quickly to get the gist of a text\nScanning = to read quickly to get specific information\nInferring = to read text to be able to make logical conclusions.]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: একজন ব্যক্তি অফিসে কাজ করছেন",
+      "figure_no": "1.01",
+      "box_2d": [
+        224,
+        111,
+        467,
+        463
+      ],
+      "description": "একজন ব্যক্তি অফিসে ল্যাপটপে কাজ করছেন",
+      "reading_order_anchor": "Unconventional Jobs"
+    },
+    {
+      "caption": "চিত্র ১.০২: একজন ব্যক্তি কুমিরের সাথে কাজ করছেন",
+      "figure_no": "1.02",
+      "box_2d": [
+        228,
+        508,
+        465,
+        898
+      ],
+      "description": "একজন ব্যক্তি একটি বড় কুমিরের মুখের কাছে কাজ করছেন",
+      "reading_order_anchor": "Unconventional Jobs"
+    }
+  ]
+}

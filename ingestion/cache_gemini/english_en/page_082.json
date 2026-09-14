@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 82,
+  "pdf_page_no": 87,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Grammar point",
+      "chunk_type": "theory",
+      "content_markdown": "### Grammar point\n\n#### Form\n\nMay and might are modal verbs and are used, like auxiliary verbs, to express different meanings of the main verb.\n\nIn a positive sentence, we use `may/might + verb`\n\nFor negatives, we use `may not/might not + verb`\n\n**Note:** May/might are not usually used in a question form to mean possibility.\n\nWe can use may in a question to express asking for or giving permission. For example,\n\n*May I sit here? Yes, you may. May I see that book? No, you may not.*\n\nHowever, this sounds very formal in everyday situations now, and can/could are used more frequently.\n\nWe use may/might to refer to the present or future time:\n\n*It may rain this evening.*\n\n*The shoes might be too small for you.*\n\n*He may be in his office now.*",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Use",
+      "chunk_type": "theory",
+      "content_markdown": "#### Use\n\nWe use **may** or **might** to say that something is possible but not certain, now or in future:\n\n*He may not be in office now.*\n\n*You may see him in office tomorrow.*\n\n*He might offer you the job.*",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

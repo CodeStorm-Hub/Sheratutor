@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 288,
+  "pdf_page_no": 293,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "How to describe bar diagrams",
+      "chunk_type": "theory",
+      "content_markdown": "The amount of waste material being recycled in 2011 was *much* more than in 1985.\nFor small differences you can use: slightly or nearly as ... as.\n\nThe percentage of garbage being recycled in 1970 was *slightly* higher than in 1960.\n\n### How to describe bar diagrams:\nWhen you first see a bar chart, ask yourself the following questions:\n1) What do the numbers on the vertical/horizontal axis measures?\n2) How is the information grouped on the other axis?\n3) What do the different shades of the bars show?\n4) When was the data collected?\n\nThe answers will give you the essential information for understanding it.\nMake sure you know which units are being used to measure quantities.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Example 1",
+      "chunk_type": "worked_example",
+      "content_markdown": "The chart below gives information about science qualifications held by people in two countries. Summarise the information by selecting and reporting the main features, and make comparisons where relevant. Write at least 150 words.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Science qualification in two countries",
+      "figure_no": "10.01",
+      "box_2d": [
+        648,
+        290,
+        938,
+        891
+      ],
+      "description": "A horizontal bar chart showing science qualifications (Master's degree, Bachelor's degree, School leaving exams, No qualification in science) in Malaysia and Singapore.",
+      "reading_order_anchor": "Example 1"
+    }
+  ]
+}

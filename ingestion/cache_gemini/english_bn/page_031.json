@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 31,
+  "pdf_page_no": 36,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Questions",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Questions\n1. What makes London Olympic 2012 exceptionally sensational?\n2. How are Phelps and Bolt brilliantly similar and different?\n3. Between these two Olympians who has bagged the highest honour within the same time frame?\n4. What is special in Bolt so far?\n5. How does Bolt evaluate himself ?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Flow Charts",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "C Make two flow charts on Michael Phelps and Usain Bolt. The first two are done for you.\n\nMichael Phelps\n\n| the greatest swimmer ever | -> | | -> | | -> | |\n\nUsain Bolt\n\n| the most successful sprinter | -> | | -> | | -> | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "Fill in the blanks",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "D Read the following text and complete the blank spaces with the appropriate words from the box below.\n\nanswer sprinter Olympians speed Olympics swimmer\n\ndebate legends retired prove histories biggest\n\nThese are the stories of two most successful Olympians of history. While one is famous as the fastest .........., the other is celebrated as the fastest ...... of the world. However, both are unparalleled for their ........... in their own field. They made history in the Beijing .......... They have made newer ........... in the London Olympics too. They are the living ............. now. Though Phelps has .......... from his race, Bolt has prospects to ........ himself in the next Olympic as well. After the .......... show on earth is over in London, this ........... will go on— who is better. Only time will ............ this question.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

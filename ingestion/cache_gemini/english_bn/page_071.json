@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 71,
+  "pdf_page_no": 76,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.b",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Sri Lanka is located in the Indian Ocean, just off the south-eastern coast of India. Shaped like a teardrop, the island of Sri Lanka measures about 415 kilometers from north to south, and about 220 kilometers from east to west, with a total land area of about 65,600 square kilometers. It has more than 1340 kilometers of coastline.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.c",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Despite its modest size Sri Lanka has a population of about 20 million. Sri Lanka is a multi-religious, multi-racial and multi-lingual country. The four major ethnic groups are the Sinhalese, Sri Lankan Tamils, Indian Tamils and Sri Lankan Moors or Muslims. A fifth group, the Veddhas are the original inhabitants of the island. The ancient history of Sri Lanka is depicted in the Hindu epic the Ramayana and in the Mahavamsa or ‘The Great Chronicle’.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.d",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Sri Lanka's economy has traditionally been based on agriculture. The emphasis is on exporting crops such as tea, rubber, and coconuts. In fact, Sri Lanka is the largest tea exporter of the world. The country is also a major producer and supplier of a variety of spices such as cinnamon, cardamom, pepper, cloves, and nutmeg. Cinnamon first originated in Sri Lanka and was introduced later to the world by the Arab merchants.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.e",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Sri Lanka's archaeological treasures may be compared to other civilizations of the past like the Golden Age of Greece, the Roman Empire and Mayan",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 1.01: Map of Sri Lanka",
+      "figure_no": "1.01",
+      "box_2d": [
+        104,
+        553,
+        366,
+        897
+      ],
+      "description": "A map showing the geographical location of Sri Lanka in the Indian Ocean relative to India.",
+      "reading_order_anchor": "1.b"
+    },
+    {
+      "caption": "চিত্র 1.02: Colombo: The capital city",
+      "figure_no": "1.02",
+      "box_2d": [
+        434,
+        593,
+        697,
+        897
+      ],
+      "description": "A cityscape photograph of Colombo, the capital city of Sri Lanka, showing tall buildings.",
+      "reading_order_anchor": "1.c"
+    }
+  ]
+}

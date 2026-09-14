@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 238,
+  "pdf_page_no": 243,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "topic. Each sentence of a paragraph should be closely related to the topic, and the paragraph should have a good structure with a beginning, middle and end.\n\nAn effective paragraph, according to Donald et al (1978) should have 3 major characteristics which are:\n\n- It develops one idea only, called the controlling idea or thesis statement.\n- It should have sufficient details to support the controlling idea.\n- It should have a beginning, a middle, and an end, that is, it requires a topic sentence, a body to develop the topic sentence and a conclusion.\n\n- The beginning or topic sentence introduces the topic or subject of the paragraph.\n- The middle or body develops and provides support to the topic or thesis statement.\n- The conclusion or end sums up and reaches a conclusion about the topic/subject.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Activity 2",
+      "chunk_type": "theory",
+      "content_markdown": "Discuss in pairs or groups what the above text says about paragraph and its characteristics.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "Activity 3",
+      "chunk_type": "theory",
+      "content_markdown": "Read the following texts and see which one is a paragraph and which one is not. Explain why you think so.\n\n**Text A**\n\nBesides care for personal appearance, he should pay close attention to his manner of talking and finally, an applicant must show self confidence. For a successful interview, an applicant should demonstrate some qualities. The applicant should be elegantly, not too casually or too gorgeously, dressed. Firstly he should be knowledgeable; a good degree also is necessary. Good preparation for interview is also needed. Job interview is important for everyone.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

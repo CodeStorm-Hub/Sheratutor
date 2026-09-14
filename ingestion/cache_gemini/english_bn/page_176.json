@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 176,
+  "pdf_page_no": 181,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: Renewable Energy Sources (Part 1)",
+      "chunk_type": "theory",
+      "content_markdown": "Lesson 1: Renewable Energy Sources (Part 1)\n\nA Pairwork. Read the words in the box. Which of the words are related to energy?\n\n| 1. fuel | 2. desert | 3. fossil | 4. sun |\n|---|---|---|---|\n| oil | forest | relic | wind |\n| gas | valley | remnant | water |\n| soil | waterfall | sign | coal |\n\nNow underline the odd word in each column that doesn't belong to the group. Then compare with your partner. Check the meanings of the new words in a dictionary.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "B Read the text and answer the following questions.",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "B Read the text and answer the following questions.\n\nIn a speech at the $90^{\\text{th}}$ Science Congress, internationally acknowledged scientist and former Indian president Mr APJ Abdul Kalam mentioned a very important aspect of this mankind's future energy crisis. He pointed out that the era of wood and bio-mass has almost come to an end.\n\nThe age of oil and natural gas would soon be over within the next few decades. Massive burning of world's coal reserves may lead to a worldwide ecological disaster because coal burning emits the highest amount of carbon in the atmosphere. So according to Kalam, the only solution that mankind can look to is the massive use of solar energy in future because it has some advantages over other forms of renewable energies.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 1.01: সোলার প্যানেল বা সৌরবিদ্যুৎ উৎপাদন ব্যবস্থা",
+      "figure_no": "1.01",
+      "box_2d": [
+        472,
+        442,
+        735,
+        894
+      ],
+      "description": "An array of solar panels installed in an open landscape.",
+      "reading_order_anchor": "B Read the text and answer the following questions."
+    }
+  ]
+}

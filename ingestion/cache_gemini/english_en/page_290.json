@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 290,
+  "pdf_page_no": 295,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| | | | |\n|---|---|---|---|\n| by contrast | in spite of | compares | smaller |\n| highest | double | marked | shows |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The bar chart shows the urbanization percentage of the world in 1950 and compares this with the percentage in 2007 and the projected percentage for 2030.\n\nBetween 1950 and 2030, the proportion of the world's population residing in cities is expected to double, growing from 29% to 60%. However, this rate is less marked in some continents than others.\n\nFor example, 64% of the population of North America was urban in 1950, increasing to 79% by 2007. By contrast, just 15% of the African population was urban in 1950, but this rose to 37% by 2007. This represents one of the highest urbanization rates in the world, even though the percentage of Africans in urban areas is still smaller than the world average.\n\nIt is also clear from the graph that, urbanization in Latin America is projected to be higher than Europe in 2030, in spite of being lower in 1950.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Activity 2",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "This is a graph on GDP growth in Bangladesh over a period of ten years. The first few sentences are written in the model answer but the description is not complete. Complete the description in your own language.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Bangladesh GDP growth rate",
+      "figure_no": "10.01",
+      "box_2d": [
+        759,
+        169,
+        940,
+        818
+      ],
+      "description": "A bar chart showing Bangladesh GDP growth rate over a ten year period from 2006 to 2015.",
+      "reading_order_anchor": "Activity 2"
+    }
+  ]
+}

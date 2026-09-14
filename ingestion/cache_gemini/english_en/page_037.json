@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 37,
+  "pdf_page_no": 42,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "__ 4. She collects coins.  \n__ 5. ... and ... yes Mushfequr makes a boundary!  \n__ 6. They work in a garments factory.  \n__ 7. I'll explain it to her when she comes back.  \n__ 8. The President meets the EU delegates.\n\nd. general truths  \ne. statements about the future after when/if  \nf. schedule/timetables  \ng. newspaper headlines on recent events  \nh. commentaries on sports or current events.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "4/2",
+      "section_title": "The Present Continuous",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the text below and underline the verbs in present continuous.\n\nThis afternoon, Mr. and Mrs. Ahmed are working in the garden. The weather is lovely. Mrs. Ahmed is sitting on a tree stump while Mr. Ahmed is cleaning the weeds from the tomato beds nearby. Mrs. Ahmed looks happy. Mr. Ahmed is spending a lot of time with her helping in the garden these days. They are talking about their daughters Maya and Sneha who are coming home for a week’s vacation from Dhaka tomorrow. The train arrives at 8 in the morning. Mrs. Ahmed is telling her husband not to tell the girls anything about her garden. She wonders how surprised and happy they will be when they see her gorgeous tomatoes and the lettuce!",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 4/2: Mr. and Mrs. Ahmed in the garden",
+      "figure_no": "4/2",
+      "box_2d": [
+        611,
+        499,
+        827,
+        876
+      ],
+      "description": "An illustration of Mr. and Mrs. Ahmed in a garden surrounded by tomato plants and vegetables.",
+      "reading_order_anchor": "A Read the text below and underline the verbs in present continuous."
+    }
+  ]
+}

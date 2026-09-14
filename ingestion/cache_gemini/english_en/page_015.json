@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 15,
+  "pdf_page_no": 20,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Pronouns and Possessives",
+      "chunk_type": "table",
+      "content_markdown": "| | | | |\n|---|---|---|---|\n| he/she/it | him/her/it | his/her/its | his/her/its |\n| we | us | our | ours |\n| they | them | their | theirs |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Subject and Object Pronouns",
+      "chunk_type": "theory",
+      "content_markdown": "1. When we use a pronoun as the subject of a verb in a sentence it is called a subject pronoun.\nExample:\nI was travelling to Savar. On the way suddenly the bus stopped and remained non-moving. I called on the guide of the bus and asked him the reason. He (= the guide of the bus) told me that the tire of the bus got punctured.\n\n2. When we use a pronoun as the object of a verb in a sentence, we call that an object pronoun.\nExample:\nRajon is our class captain for this month. I don't like him (=Rajon) that much.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.3",
+      "section_title": "Use",
+      "chunk_type": "theory",
+      "content_markdown": "We use a possessive adjective to talk about:\nThings that we own\nWhat are you carrying?\nThis is my passport.\nFamily members and friends\nMy brother lives in Indonesia. He is a Micro-Biologist there.\nThings that are connected to us\nAt my school, we learn science subjects through learning by doing. It helps us a lot to understand the theories.\n\nWe use a possessive pronoun to talk about:",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

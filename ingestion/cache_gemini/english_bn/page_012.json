@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 12,
+  "pdf_page_no": 17,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Environmental Pollution in Bangladesh",
+      "chunk_type": "theory",
+      "content_markdown": "B Now read the following passage to know more about environmental pollution in Bangladesh. Bangladesh is now in the grip of all sorts of pollution like air pollution, soil pollution and water pollution. The dwellers of the urban areas are the worst sufferers of such pollution. The indiscriminate industrialisation process in Bangladesh over the past decades has created significant environmental problems. We will now read about some of the most common types of environmental pollutions and ways of coping with them.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Air Pollution",
+      "chunk_type": "theory",
+      "content_markdown": "Air pollution comes from a wide variety of sources. In Bangladesh poisonous exhausts from industrial plants, brick kilns, old or poorly-serviced vehicles and dust from roads and construction sites are some of the major sources of air pollution. We can minimise this type of pollution by making less use of motor vehicles and avoiding the use of vehicles older than 20 years. We may also use proper lubricants to lessen the level of emission and pollutants. We can encourage",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Picture 1",
+      "figure_no": "1.01",
+      "box_2d": [
+        95,
+        105,
+        285,
+        495
+      ],
+      "description": "A busy city street with heavy traffic congestion.",
+      "reading_order_anchor": "1.1"
+    },
+    {
+      "caption": "চিত্র ১.০২: Picture 2",
+      "figure_no": "1.02",
+      "box_2d": [
+        95,
+        520,
+        285,
+        895
+      ],
+      "description": "A large pile of garbage and waste materials.",
+      "reading_order_anchor": "1.1"
+    },
+    {
+      "caption": "চিত্র ১.০৩: Picture 3",
+      "figure_no": "1.03",
+      "box_2d": [
+        310,
+        105,
+        505,
+        495
+      ],
+      "description": "A polluted water body or industrial waste site.",
+      "reading_order_anchor": "1.1"
+    },
+    {
+      "caption": "চিত্র ১.০৪: Picture 4",
+      "figure_no": "1.04",
+      "box_2d": [
+        310,
+        520,
+        505,
+        895
+      ],
+      "description": "Industrial chimneys emitting smoke into the atmosphere.",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

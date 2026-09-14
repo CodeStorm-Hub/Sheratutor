@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 22,
+  "pdf_page_no": 27,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Adjectives",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the letter and follow the words in bold:\n\nDear John\n\nWriting from my home. I’m in Bangladesh, finally. It’s **late** December. The weather is **fantastic**! It’s not at all **humid**. The temperature is **moderate** - in between 26-28 degree. Unlike England there is no rain, no **strong** wind here. Usually we have **strong** sun but now the sunlight is very **soothing**. In fact, our winter begins from November and continues till February. January is the **coldest** month in Bangladesh. The **most interesting** feature of winter Bangladesh is — the country is full of **interesting** vegetables and **delicious** pitha, a kind of **handmade** cakes. Many foreigners like Bangladeshi winter as it is **milder** than the winter in **many** parts of the world such as England, Canada, or Russia.\n\nYou know, my father produces winter vegetables every year. I’m very **fond** of bottle gourds. This time the gourds are **bigger** and **nicer** than the previous years. Hope they will taste **more interesting** too. Well, I got to go now. Write to me soon.\n\nLove.\nRima",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: A farmer carrying vegetables in a cart",
+      "figure_no": "2.01",
+      "box_2d": [
+        250,
+        288,
+        435,
+        708
+      ],
+      "description": "A line drawing showing a farmer with a bullock cart and a person carrying a basket of vegetables on their head.",
+      "reading_order_anchor": "A Read the letter and follow the words in bold:"
+    }
+  ]
+}

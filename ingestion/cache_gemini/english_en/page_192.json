@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 192,
+  "pdf_page_no": 197,
+  "chapter_no": 6,
+  "chapter_title": "Narration & Speech",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "Grammar Point",
+      "chunk_type": "theory",
+      "content_markdown": "What differences do you find between the statements in Context 1 and Context 2?\n\n**Grammar Point**\n\nA **reporting speech** is the statement of the person who reports about something. We use reported speech when we are speaking or writing about something that another person said.\n\nA **reported speech** is the statement what is being reported by a speaker. This statement is made by one person but reported by another person.\n\nIn **direct speech** we say exactly what was said or thought by others using verbs like said, thought, told, shouted, etc. (as in Context 1).\n\nThe common feature of direct speech is\n* inverted comma (\"....\") before and after the speech (made by other than who is reporting).\n\nWhen we report what someone is saying or thinking now we use **indirect speech** after says, thinks, hopes etc. (as in Context 2). Here we often use *that* but that is not obligatory.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Example",
+      "chunk_type": "worked_example",
+      "content_markdown": "**Example**\n\nI was speaking with Ranjan. *He says (that) he has just left Barishal.*\n\nWe also use this form when we say about something that is always true.\n\neg. *He says he doesn't like band music.*\n\nor\n\n*Dipika says we can create a better world by loving each other.*",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

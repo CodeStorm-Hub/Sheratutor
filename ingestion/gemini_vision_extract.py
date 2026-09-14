@@ -207,6 +207,22 @@ SUBJECT_TOC = {
             (213, 221, 10), (222, 241, 11), (242, 269, 12), (270, 288, 13),
             (289, 309, 14), (310, 318, 15), (319, 352, 16), (353, 384, 17)
         ]
+    },
+    "english": {
+        "bn": [
+            (1, 200, 1),
+        ],
+        "en": [
+            (1, 96, 2),
+            (97, 110, 3),
+            (111, 125, 4),
+            (126, 171, 5),
+            (172, 179, 7),
+            (180, 190, 2),
+            (191, 208, 6),
+            (209, 236, 9),
+            (237, 318, 10),
+        ]
     }
 }
 
@@ -412,7 +428,7 @@ def extract_page_gemini(
 
 def main():
     parser = argparse.ArgumentParser(description="Extract NCTB textbook pages with Gemini")
-    parser.add_argument("--subject", default="chemistry", choices=["chemistry", "physics", "mathematics"])
+    parser.add_argument("--subject", default="chemistry", choices=["chemistry", "physics", "mathematics", "english"])
     parser.add_argument("--lang", default="en", choices=["en", "bn"])
     parser.add_argument("--start-page", type=int, default=6, help="PDF page number (1-based), e.g. 6 = printed p.1")
     parser.add_argument("--end-page", type=int, default=None, help="PDF page number (1-based)")

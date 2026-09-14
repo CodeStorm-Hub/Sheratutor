@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 289,
+  "pdf_page_no": 294,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Model answer",
+      "chunk_type": "theory",
+      "content_markdown": "The bar chart illustrates the percentage of people who has a science qualification in Singapore and Malaysia. A prominent feature about both the countries is that a significantly low percentage of people have science qualifications at the Master's and Bachelor's level. Less than 5% of people hold a qualification in science at Master's degree level in both Singapore and Malaysia.\n\nThere is a significant difference in the percentage of people with science qualifications at Bachelor level. While this number is 20% in Singapore, it is only 10% in Malaysia. The percentage of people doing science at school leaving exams is slightly higher in Malaysia than in Singapore. 35% of people in Malaysia have a science qualification at this level, whereas in Singapore it is 30%. Finally, more than half of the people in both countries have no science qualification at all.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Activity 1",
+      "chunk_type": "theory",
+      "content_markdown": "The bar chart below gives information about the percentage of the population living in urban areas in the world and in different continents. Read the following model answer and fill in the gaps to report the main features, and make comparisons.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Percentage of population in urban areas",
+      "figure_no": "10.01",
+      "box_2d": [
+        642,
+        185,
+        856,
+        816
+      ],
+      "description": "Bar chart comparing the percentage of population in urban areas across the world and different continents for the years 1950, 2007, and 2030.",
+      "reading_order_anchor": "Activity 1"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 250,
+  "pdf_page_no": 255,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Describing an event",
+      "chunk_type": "theory",
+      "content_markdown": "Describing an event:\nActivity 7\nLook at the picture below and describe what is happening.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Narrative Paragraph",
+      "chunk_type": "theory",
+      "content_markdown": "The purpose of narration is story telling. Narrative paragraphs narrate or tell about some past incidents or events. The simplest kind of story is the kind of writing that tells us about a series of actions, usually in time order, in a single paragraph. A good narrative paragraph often tells us not only 'what happened' but also 'how it happened'. While writing a narrative paragraph you should keep in mind the following guidelines:\n\na. present the subject in a topic sentence\nb. include information about the people and the setting\nc. tell the action in chronological order\nd. use transitional words, such as, first, soon, next, then, later, etc.\ne. write a concluding sentence to bring the incident to a definite end",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.1: Children running outdoors",
+      "figure_no": "10.1",
+      "box_2d": [
+        202,
+        281,
+        557,
+        897
+      ],
+      "description": "Black and white photograph showing a group of children running outdoors in a park or open space while adults watch from the background.",
+      "reading_order_anchor": "Describing an event"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 65,
+  "pdf_page_no": 70,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: Nepal, the Land of the Everest",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the following passage on Nepal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1.a",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "a Known as the Land of the Everest, Nepal is one of the most charming countries in Asia. The Kingdom of Nepal is a small land of sublime beauty. It has some of the world’s best and very important temples. It is a country that is rich in scenic beauty and cultural heritage.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1.b",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "b Nepal lies between India and the Tibetan part of China. This small country has an area of 147,181 square kilometers. Southern Nepal is tropical low land known as the Terai Plains. This part of Nepal has hot summers and warm winters. Here the temperatures reach up to $40^{\\circ}C$ in April and May and monsoon rains drench this region from June to September. The central hill-lands including the Kathmandu and Pokhara valleys have a temperate climate and are also influenced by the monsoon. North of that is the slope of the main section of the Himalayan range. This part of Nepal has some of the highest peaks of the world including Everest.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 1.01: নেপালের প্রাকৃতিক দৃশ্য",
+      "figure_no": "1.01",
+      "box_2d": [
+        175,
+        483,
+        413,
+        897
+      ],
+      "description": "নেপালের পাহাড়ি অঞ্চলের প্রাকৃতিক দৃশ্য এবং একটি ঐতিহ্যবাহী ঘর।",
+      "reading_order_anchor": "1.1.a"
+    },
+    {
+      "caption": "চিত্র 1.02: নেপালের মানচিত্র",
+      "figure_no": "1.02",
+      "box_2d": [
+        577,
+        483,
+        833,
+        897
+      ],
+      "description": "নেপালের ভৌগোলিক মানচিত্র যেখানে হিমালয় পর্বতমালা এবং প্রধান শহরগুলো চিহ্নিত করা হয়েছে।",
+      "reading_order_anchor": "1.1.b"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 37,
+  "pdf_page_no": 42,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The survey also explains the reasons for this change. It says that television has become a part of everyday life even to the underprivileged section of society. This has resulted in larger number of young people opting for watching TV as one of the most favourite pastimes. The increasing urbanization has reduced the number of open fields. Therefore, there is a fall in selecting games and sports as favourite pastimes, though it's not a good news for the country. And the reason for selecting the computer assisted or online programmes is that computer technology is getting cheaper, easier and more popular every day. Indeed, our young generations are stepping into the e-world.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "C Now work in groups and analyse the following graph.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Elderly people’s changing attitude to pastimes in a community",
+      "figure_no": "1.01",
+      "box_2d": [
+        400,
+        150,
+        640,
+        850
+      ],
+      "description": "A bar chart showing the changing attitudes of elderly people towards different pastimes (Watching TV, Playing cards, Drawing room chats, Others) over the years 1990, 2000, and 2010.",
+      "reading_order_anchor": "C Now work in groups and analyse the following graph."
+    }
+  ]
+}

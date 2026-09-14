@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 46,
+  "pdf_page_no": 51,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the evening, all major public buildings are illuminated with colourful lights. Bangla Academy, Bangladesh Shilpakala Academy and other socio-cultural organisations hold cultural functions. Similar functions are also arranged in other places in the country.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "C",
+      "section_title": "Match the words with their meanings.",
+      "chunk_type": "table",
+      "content_markdown": "| Words | Meanings |\n| :--- | :--- |\n| fervour | a strong feeling of excitement |\n| alike | in a similar way |\n| spectator | a person who is watching an event |\n| displays | acts of performing skills |\n| illuminate | to light up |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "D",
+      "section_title": "Choose the best answer.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Our one of the most important state festivals is\na. Victory Day. b. Shaheed Dibosh.\nc. Pahela Boishakh. d. Independence Day.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. The celebration of Independence Day begins with\na. processions.\nb. gun salute.\nc. placing wreaths at the National Mausoleum.\nd. parade by defence forces.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. The National Mausoleum is\na. on Dhaka University campus. b. at Ramna Park.\nc. at Savar. d. near Dhaka Medical College.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "4. On Independence Day various displays are held\na. at the National Parade Ground. b. in the streets.\nc. in the decorated vehicles. d. in Bangabandhu Stadium.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "E",
+      "section_title": "Write in brief, how you have celebrated this year’s Independence Day at your school.",
+      "chunk_type": "theory",
+      "content_markdown": "Write in brief, how you have celebrated this year’s Independence Day at your school.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

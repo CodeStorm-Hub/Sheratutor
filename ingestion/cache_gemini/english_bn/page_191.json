@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 191,
+  "pdf_page_no": 196,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Media and Modes of E-communication",
+      "chunk_type": "theory",
+      "content_markdown": "Media and Modes of E-communication 191\n\nE Fill in the following dialogue box to open a Facebook account.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Worldwide use of social networks",
+      "chunk_type": "theory",
+      "content_markdown": "F Look at the following table adapted from Wikipedia. It shows some data on worldwide use of social networks.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "Data Table",
+      "chunk_type": "table",
+      "content_markdown": "| Social Networks | Individual users | Percentage (%) of popularity | Regions covered |\n| --- | --- | --- | --- |\n| Facebook | 792,999,000 | 55.1 % | worldwide |\n| Google+ | 250,000,000 | 17.7 % | worldwide |\n| Twitter | 167,903,000 | 11.7 % | worldwide |\n| LinkedIn | 94,823,000 | 6.6 % | Asia and Europe |\n| MySpace | 61,037,000 | 4.2 % | USA and Canada |\n| Others | 255,539,000 | 17.8 % | |\n| Total | 1,438,877,000 | 100 % | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.4",
+      "section_title": "Dialogue and Questions",
+      "chunk_type": "theory",
+      "content_markdown": "Now complete the following dialogues about Facebook and MySpace, and provide your own questions and answers on the rest of the social networks in the table. Act them out in pairs.\n\n1. Q: ________ social network is the most popular ?\n   A: Facebook is ___________________________________________ .",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 1.01: Facebook account dialogue box",
+      "figure_no": "1.01",
+      "box_2d": [
+        100,
+        96,
+        485,
+        899
+      ],
+      "description": "Screenshot of Facebook sign up and login interface webpage.",
+      "reading_order_anchor": "E Fill in the following dialogue box to open a Facebook account."
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 55,
+  "pdf_page_no": 60,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Questions",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "### Questions\nTick the best answer.\n\n1 Bangladesh is a small country, because\na its land area is small.\nb it has about 150 million people.\nc it is the $8^{th}$ most populous country in the world.\nd it has limited resources.\n\n2 Density of population in any country means\na all the people in a country.\nb number of people living in one square kilometer.\nc 1000 people living in one square kilometer.\nd too many people living in one square kilometer.\n\n3 Our yearly population growth rate is\na 1.9% b 1.40%\nc 2.1% d 1.1%\n\n4 Our birth rate is ________ per thousand.\na 6.1 b 1.40\nc 20.1 d 14\n\n5 What will be the size of our population in 2050?\na 150 m b 197 m\nc 217 m d 250 m",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Listen again and answer these questions.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "C Listen again and answer these questions.\n1 How do you get the population growth rate of a country?\n2 Why will the population of Bangladesh be so large in 2050?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

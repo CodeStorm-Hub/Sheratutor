@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 174,
+  "pdf_page_no": 179,
+  "chapter_no": 7,
+  "chapter_title": "Completing Sentences & Conditionals",
+  "sections": [
+    {
+      "section_no": "7.1",
+      "section_title": "Activity",
+      "chunk_type": "theory",
+      "content_markdown": "Activity 1 Read the e-mail written by one friend to another friend. The mail has some use of first conditionals but for each conditional sentence only a part is given. Complete the conditional sentences by selecting and adding the right part from the alternatives given below the mail.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "7.1",
+      "section_title": "Activity 1 E-mail",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Dear Mithila\n\nGreat to hear from you. It is also great to know that you are coming to North Bengal. How many days are you planning to stay here? Are you going on a vacation or coming with any special assignment.\n\nPlease let me know the date of your coming and tentative stay period. I'll see you if I(a).....................................................................................I'll also (b)..................................................................................., if I can manage my parents. Who else are coming with you?\n\nI often think of our lost days. They were really so sweet! (c).................................................., if you can. I will copy them from you. And don't forget your camera please for new photographs.\n\nHowever, we have a possibility to go on a study tour in March. Hope that will not coincide with your stay here. Yet, if it happens, (d)............................................................\n\nStay fine. And keep in touch.\n\nRaifa",
+      "activity_tag": null
+    },
+    {
+      "section_no": "7.1",
+      "section_title": "Activity 1 Options",
+      "chunk_type": "table",
+      "content_markdown": "| will you mind | Please bring your old album | try to receive you from Jaipurhat airport | have no exams that time |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

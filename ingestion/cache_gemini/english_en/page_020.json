@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 20,
+  "pdf_page_no": 25,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "OR\n\nSubject + verb + object + reflexive pronoun (as in After we had completed our exams, we organized a party ourselves.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We use reflexive pronouns immediately after the verb to talk about actions or experiences that only affect the subject and none else.\n\nDon't touch the rod. You'll hurt yourself. (It'll hurt none but you.)\n\nWe use reflexive pronouns to mean that the activity has been done by no other person than the subject.\n\nShe made the ice cream herself. (Nobody else made it.)\n\nWe use 'each other' to mean that the same action has been done by both the persons.\n\nJoyita and Jalal love each other. (Jayita loves Jalal and Jalal loves Jayita.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 5",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Read the address made by the chief guest at a programme. Complete the text by adding reflexive pronouns in the gaps. The first one is done for you.\n\nI'm very glad to know that the students of this school have arranged this science fair themselves. It's really a classic example of students' creativity and hard work. This programme reminds me of my school days. Then many times we did similar programmes .................... . It is good to know that Nasreen has innovated .................... how to recycle banana skins to meet nutrition deficiency. I'm further glad to see Jinia's work. I congratulate the organizers of the programme as well. You endeavoured to raise fund for the programmes .................... And I cannot but give a hand to you. This is really a great school and I must say that this is a great programme to show how students can help the country and help .................... for good causes.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 153,
+  "pdf_page_no": 158,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "members, in-laws, friends, neighbours or even between us and the land where we were born and grew up. In that sense our families, our land of birth, relatives, our culture, traditions, or surroundings are our roots. And wherever we stay, we feel the power of our roots. It's our roots that develop our identity making us what we are. When we lose that bond, we become rootless. Human beings who do not have any roots are a non-entity. In other words, they do not have an identity. They don't know where they are from, and/or where they are heading to. This often makes them feel empty and lost.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.1",
+      "section_title": "Read the text in the speech bubbles. Make questions based on the bubbles and then compare them in pairs.",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Eid is the main religious festival of the Muslims in Bangladesh. Eid means happiness. In that sense our families, our land of birth, relatives, our culture, traditions, or surroundings are our roots. It's our roots that develop our identity making us what we are.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Speech bubbles containing text about roots and Eid.",
+      "figure_no": "1.01",
+      "box_2d": [
+        404,
+        157,
+        828,
+        905
+      ],
+      "description": "Four speech bubbles containing text related to Eid and roots.",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 56,
+  "pdf_page_no": 61,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In each pair of sentences below, one sentence uses the simple past tense and one sentence uses the present perfect. Work in groups and try to explain the difference in meaning between the two sentences in each pair.\n\n* We have known about the problem for ages. \n* He knew about the problem for ages.\n* We have been waiting for you since 3 o'clock. \n* I waited for you from 3 o'clock.\n* Have you seen the movie? \n* Did you see the movie?\n* Have you ever been to Cox's Bazar? \n* Did you go to Cox's Bazar?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "The Past Continuous",
+      "chunk_type": "theory",
+      "content_markdown": "Read the passage carefully and notice that there are verbs in both the simple past and the past continuous forms.\n\nIt was 4 in the afternoon. Hamid was studying at the library when his cell phone rang. It was his younger sister, Runa. She said that she was standing in front of the shopping mall opposite Hamid's office and asked him to meet her there as soon as possible. Hamid hurried out of the library. As he went across the street, he noticed that Runa was not alone. She was holding a three to four year old girl by hand. The child was crying and Runa was trying frantically to pacify her. He just couldn't imagine what was going on. Some passers-by were looking at them suspiciously. When he reached her, she started to explain, but before she could finish — the child suddenly left her hand, and was running towards a woman who was coming out of the mall crying and calling a girl's name hysterically.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: A shopping mall scene",
+      "figure_no": "2.01",
+      "box_2d": [
+        529,
+        537,
+        839,
+        856
+      ],
+      "description": "An illustration of a shopping mall entrance where a woman is holding a child by the hand.",
+      "reading_order_anchor": "Read the passage carefully and notice that there are verbs in both the simple past and the past continuous forms."
+    }
+  ]
+}

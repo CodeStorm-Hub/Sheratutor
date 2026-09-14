@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 8,
+  "pdf_page_no": 13,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Unit Two\n\nClimate Change",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Learning outcomes",
+      "chunk_type": "theory",
+      "content_markdown": "After we have studied this unit, we will be able to\n\n* demonstrate understanding and summarise texts\n* ask and answer questions\n* take part in debates on given topics\n* take part in role playing and conversations\n* draft and deliver lectures on given topics\n* write letters to newspapers highlighting certain problems\n* write slogans for posters.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: জলবায়ু পরিবর্তনের প্রভাবে বিপন্ন মেরু ভালুক",
+      "figure_no": "1.01",
+      "box_2d": [
+        227,
+        133,
+        573,
+        855
+      ],
+      "description": "A polar bear standing on a melting ice floe in the ocean.",
+      "reading_order_anchor": "Unit Two"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 96,
+  "pdf_page_no": 101,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Regarding commitment to family, Mother Teresa said, \"May be in our own family, we have somebody, who is feeling lonely, who is feeling sick, who is feeling worried. Are we there? Are we willing to give until it hurts in order to be with our families, or do we put our interest first? We must remember that love begins at home and we must also remember that future of humanity passes through the family\".",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Mother Teresa's work has been recognised throughout the world and she received a number of awards. These include the Pope John XXIII Peace Prize (1971), the Nehru Prize for Promotion of International Peace & Understanding (1972), the Balzan Prize (1978), the Nobel Peace Prize (1979) and the Bharat Ratna (1980).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Mother Teresa died at the age of 87, on 5 September 1997. The world salutes her for her love and compassion for humanity. She has taught us how to extend our hand towards those who need our love and support irrespective of creed, caste and religion. The picture of Mother Teresa, draped in a white and blue-bordered sari, with a wrinkled face, ever soft eyes and a saintly smile, lives on in our mind.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "B Now say whether the following statements are True or False. If false, give the correct information.\n\n1. Mother Teresa was moved to see the diseases that spread in the streets of Kolkata.\n2. She opened a home for the orphans.\n3. She and her group brought in the dying people from the streets of Kolkata.",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: মাদার তেরেসা",
+      "figure_no": "1.01",
+      "box_2d": [
+        267,
+        447,
+        515,
+        895
+      ],
+      "description": "মাদার তেরেসা শিশুদের সাথে আছেন।",
+      "reading_order_anchor": "Mother Teresa's work has been recognised throughout the world"
+    }
+  ]
+}

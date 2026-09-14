@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 75,
+  "pdf_page_no": 80,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Our Neighbours",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "B Now read the text below and answer the questions in C, D and E.\n\nThe Republic of Maldives is an island country in the Indian Ocean. It has 1199 islands that are clustered into 26 major atolls. An atoll is a ring-shaped coral reef or a string of closely spaced coral islands. The natural coral reefs of the Maldives are surrounded by the sea all around and stand out as a pearl in the Indian Ocean. The Maldives is the eighth smallest country in the world with an area of only 300 square kilometers. It is the smallest Asian country in terms of population and size.\n\nPeople have been living on the islands of the Maldives for nearly 3000 years. They set sail from different parts of the world—Asia, Arabia, Europe and America—to come to these islands. The earliest settlers of the Maldives were probably from southern India and Sri Lanka who came to these islands in the fourth and fifth centuries BC. In the 12th century AD, sailors from East Africa and Arab countries came to the Maldives. As a result, the Maldivians who were originally Buddhists were converted to Sunni Islam in the mid-12th century. In 1344 Ibn Batuta, a famous Arab historian and scholar travelled around the Maldives.\n\nIn the 16th century, the Portuguese conquered the Maldives and ruled the country for 15 years. Although governed as an independent Islamic sultanate for most of its history from 1153 to 1968, the Maldives was a British colony from 1887 to 1965. Following independence from Britain in 1965, the sultanate continued to operate for another 3 years. On November 11, 1968, the sultanate was abolished and replaced by a republic and the country assumed its present name.\n\nThe Maldives is famous as a tourist destination because of its pleasant weather, heavenly beaches and lagoons, luxurious holiday resorts and the peace-loving people. The Maldives was ranked as the best country for beautiful beaches and",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: মালদ্বীপের দ্বীপপুঞ্জ",
+      "figure_no": "1.01",
+      "box_2d": [
+        291,
+        100,
+        483,
+        899
+      ],
+      "description": "মালদ্বীপের দ্বীপপুঞ্জের একটি প্রাকৃতিক দৃশ্য যেখানে সমুদ্রের মাঝে দ্বীপগুলো দেখা যাচ্ছে।",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 105,
+  "pdf_page_no": 110,
+  "chapter_no": 3,
+  "chapter_title": "Right Form of Verbs",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "c Masum stopped buying fruits from the market.\n\n(He used to buy fruits from there before but doesn't buy them from there anymore.)\n\nMasum stopped to buy fruits from the market.\n\n(He wanted to buy fruits from the market and so he stopped.)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 1",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Write an appropriate form (infinitive or —ing form) of the verbs in brackets.\n\na If you want to be fit, what do you have to start ________?\\\n(do)\n\nb If you want to be fit, what do you have to stop ________?\\\n(do)\n\nc What do you remember ________ (do) as a child?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 2",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(Now write the answers for the above questions using the same form.)\n\ne.g. I've to start ____________",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 3",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Fill in the blanks with the right form of infinitive or —ing form of the verbs in the brackets.\n\na : Come, let's do something.\\\n: I want ________ (watch) TV.\\\n: No, let's go out instead of ________ (watch) TV.\\\n: I love ________ (dance). Let's go ________ (dance).",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

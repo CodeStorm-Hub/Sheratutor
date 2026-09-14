@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 312,
+  "pdf_page_no": 317,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Guidelines for True/False Items",
+      "chunk_type": "theory",
+      "content_markdown": "Follow the general guidelines below while writing True/False items for your students:\n- Base the item on a single idea.\n- Write items that test an important idea.\n- Avoid lifting statements right from the text.\n- Make the statements as brief as possible.\n- Write clearly true or clearly false statements.\n- Try to avoid such words as *all, always, never, only, nothing*, and *alone*.\n- The use of words like *more, less, important, unimportant, large, small, recent, old, tall, great*, and so on, can easily lead to ambiguity.\n- State items positively. Negative statements may be difficult to interpret. This is especially true of statements using the double negative. If a negative word, such as \"not\" or \"never,\" is used, be sure to underline or capitalize it.\n- Beware of detectable answer patterns.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Matching",
+      "chunk_type": "theory",
+      "content_markdown": "There is no need of a separate reading text for matching. The question itself will have a context after the texts in part A and part B are properly matched. The numbering of texts in column A can be i, ii, iii, iv ..... and the texts in column B can be a, b, c, d ........ Students only need to match the numbering in the two columns, e.g i, ii, iii, iv etc. (in column A) and a, b, c, d etc. (in column B). You can also use 3 columns with texts to match.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.3",
+      "section_title": "Gap filling with or without clues",
+      "chunk_type": "theory",
+      "content_markdown": "The text in the gap filling activity is separate and complete. The text for this item will have a meaningful context too. There will be five gaps in the text. The gaps can be used for article, preposition, or any other parts of speech without verb as there is separate test for it. A question setter will choose one particular item mentioned earlier to set a question and use a gap at the particular place. For example, if the question setter wants to test the article then there will be a gap at the position of a, an, the or before a noun that does not take any article. For a question of 3 marks, there will be six gaps in the text; for 4, there will be 8 gaps; and for 5 marks there will be ten gaps.\n\nFollow the guidelines while writing gap filling test items:\n- Prepare a scoring key that contains all acceptable answers for each item.\n- Prefer single word or short phrase answers.\n- Beware of open questions that invite unexpected but reasonable answers.\n- Make all the blanks of an equal length.\n- Avoid grammatical clues such as \"an.\"",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

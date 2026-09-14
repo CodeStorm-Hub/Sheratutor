@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 281,
+  "pdf_page_no": 286,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Writing Summaries",
+      "chunk_type": "theory",
+      "content_markdown": "We read different kinds of material in different ways. We don’t always read everything at the same speed. With certain kinds of material we need to read slowly and carefully, for example, when we are trying to understand difficult ideas in a text like science or economics books. We also read directions and instructions slowly and carefully. We usually read stories, magazines, newspapers, where the material is usually written in an easily understandable way, at a normal speed, neither too slow nor too fast. Whereas, when we read something we have read before, or we know about, we usually read very rapidly. A good reader suits his or her speed to what he or she reads.\n\nSkimming and scanning are additional ways of helping us read more efficiently. They save time. When we want to get the overall idea or the gist of a text, we do not need to read every word in it. We can skim or look over the text quickly, often read the first paragraph, then the first and last sentences of the other paragraphs quickly. The final paragraph often summarizes the content. This kind of reading is called skimming. On the other hand, when we want to find specific information in a text, we scan the text searching for words or phrases that would give us the information we need. This is called scanning.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Exercises",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Choose the best answer from the alternatives a, b, c, d given after each question.\n\ni) A good reader\na) reads novels and poetry.\nb) reads before sleep.\nc) reads different kinds of material with ease.\nd) knows when to stop.\n\nii) You are preparing a dish from a cook book. You’d read the recipe.\na) carefully.\nb) loudly.\nc) for fun.\nd) with a friend.",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

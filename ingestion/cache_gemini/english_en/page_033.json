@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 33,
+  "pdf_page_no": 38,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Present Tense",
+      "chunk_type": "theory",
+      "content_markdown": "You have already learned about verbs and tenses in your earlier classes. This unit focuses on some of the verb forms, especially tenses and modals that often cause confusion and difficulties for our students learning English.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "The simple present",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the following text and then underline all the verbs in the simple present tense.\n\nMr. Selim Ahmed and his wife Laila Banu live in a small independent house in the suburb of Khulna town. They are in their mid-forties. Mr. Ahmed is a writer. Unlike his neighbours and friends, Mr. Ahmed mostly stays and works at home. That is not to say that he works less and enjoys more free time than anybody else. He tries to follow a strict schedule and usually works for ten to twelve hours a day. Every day with the break of the dawn he sits down at his desk and starts writing on his computer. In the afternoons, he often helps his wife in her garden. Sometimes he goes for long walks in the countryside. But he always comes back before dusk.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: A writer working at his computer",
+      "figure_no": "2.01",
+      "box_2d": [
+        307,
+        201,
+        597,
+        796
+      ],
+      "description": "An illustration showing a man sitting at a desk with a computer, typing, and stacks of paper next to the monitor.",
+      "reading_order_anchor": "The simple present"
+    }
+  ]
+}

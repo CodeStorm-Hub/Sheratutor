@@ -1,0 +1,77 @@
+{
+  "printed_page_no": 86,
+  "pdf_page_no": 91,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "paintings in this regard. This helped him earn Governor's Gold Medal in all India Exhibition in 1938. This was the first time when he came under spotlight and this award gave Abedin the confidence to create his own visual style.\n\nAbedin got admitted to the Government School of Art in Calcutta (Now Government College of Art and Craft, Kolkata, India). Here he learned European academic style for five years. Later he joined the faculty of the same school after his graduation. He was the first Muslim student to obtain ‘First Class’ with distinction from the school. In 1951, Zainul went to London to study at Slade School of Art for two years. From the dissatisfaction of oriental style and the limitations of European academic style, he was attracted to realism. After his return from London, he started a new style called ‘Bengali Style’. Later he realized the limitations of ‘Bengali Style’. Therefore, he went back to nature, rural life and the daily struggles of men to make art that would be realistic but modern in appearance.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Struggle",
+      "figure_no": "1.01",
+      "box_2d": [
+        465,
+        102,
+        646,
+        581
+      ],
+      "description": "A painting depicting a man struggling with a bull and a cart wheel.",
+      "reading_order_anchor": "1.1"
+    },
+    {
+      "caption": "চিত্র ১.০২: Rebel cow",
+      "figure_no": "1.02",
+      "box_2d": [
+        450,
+        617,
+        651,
+        894
+      ],
+      "description": "A painting of a cow in a dynamic, rebellious pose.",
+      "reading_order_anchor": "1.1"
+    },
+    {
+      "caption": "চিত্র ১.০৩: Rebel crow",
+      "figure_no": "1.03",
+      "box_2d": [
+        689,
+        102,
+        921,
+        345
+      ],
+      "description": "A sketch of a crow.",
+      "reading_order_anchor": "1.1"
+    },
+    {
+      "caption": "চিত্র ১.০৪: Labourer couple",
+      "figure_no": "1.04",
+      "box_2d": [
+        689,
+        361,
+        921,
+        604
+      ],
+      "description": "A painting of a labourer couple.",
+      "reading_order_anchor": "1.1"
+    },
+    {
+      "caption": "চিত্র ১.০৫: Famine sketch",
+      "figure_no": "1.05",
+      "box_2d": [
+        689,
+        628,
+        921,
+        894
+      ],
+      "description": "A sketch depicting figures during a famine.",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

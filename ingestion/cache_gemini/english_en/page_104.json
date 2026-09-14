@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 104,
+  "pdf_page_no": 109,
+  "chapter_no": 3,
+  "chapter_title": "Right Form of Verbs",
+  "sections": [
+    {
+      "section_no": "3.1",
+      "section_title": "Verbs with -ing form and to + infinitive",
+      "chunk_type": "theory",
+      "content_markdown": "| Verb | Example |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.1",
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Verb | Example |\n|---|---|\n| deny | The boy denied stealing the rare coins. |\n| risk | You shouldn't risk going there at night. |\n| delay | They delayed going to the station and missed the train. |\n| avoid | I always avoid eating rich and oily food. |\n| enjoy | I enjoy writing stories for children. |\n| suggest | Babul suggested going to a Chinese restaurant after the meeting. |\n| miss | I really miss talking and laughing with my sister. She recently migrated to Australia. |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.2",
+      "section_title": "Verbs with -ing and infinitive without change in meaning",
+      "chunk_type": "theory",
+      "content_markdown": "Verbs, like start, like or love can be used with the -ing form as well as with the to + infinitive without any change in meaning. For example,\n\n| | |\n|---|---|\n| I love to read poetry. | I love reading poetry. |\n| I like dancing. | I like to dance. |\n| He's started going to the gym. | He's started to go to the gym. |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "3.3",
+      "section_title": "Verbs with -ing and infinitive with change in meaning",
+      "chunk_type": "theory",
+      "content_markdown": "**Note:** It is important to understand that although some verbs can be used with both the -ing form and the to + infinitive, the choice may lead to a change of meaning of the sentence, for example:\n\na. Do you remember leaving a message for her?\n(You already left a message for her.)\nRemember to leave a message for her.\n(Now or in the future)\n\nb. Farooq forgot paying the electricity bill.\n(He forgot that he paid the bill.)\nFarooq forgot to pay the bill.\n(He didn't pay the bill.)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 85,
+  "pdf_page_no": 90,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Zainul Abedin, The Great Artist",
+      "chunk_type": "theory",
+      "content_markdown": "Lesson 1: Zainul Abedin, The Great Artist",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| | |\n|---|---|\n| Born | 29 December 1914, Kishoregonj, East Bengal, British India (now Bangladesh) |\n| Died | 28 May 1976 (aged 61), Dhaka, Bangladesh |\n| Nationality | Bangladeshi |\n| Education | Government Art School, Kolkata, Art School, London |\n| Known for | Painting, drawing |\n| Notable work | The Struggle, Rebel cow, Famine paintings, Nobanno, Study of a Crow, Two faces |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Discussion",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A. Work in pairs and discuss the following questions.\n1. Do you know this person? Why is he famous?\n2. Can you name some of his world famous sketches?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "Reading",
+      "chunk_type": "theory",
+      "content_markdown": "B. Now read the text below and answer the following questions:\n\nZainul Abedin (29 December, 1914 - 28 May, 1976) was a Bangladeshi painter. He had an extraordinary talent and was internationally recognized for his paintings. He became well known in 1944 through his series of paintings on the great man-made famine in Bengal during British Colonial rule.\n\nHe played a vital role in the art movement in Bangladesh and was the founding Principal of the Government Institute of Arts (Now Faculty of Fine Arts) at University of Dhaka. His paintings on Bengal Famine are considered as his most characteristic works. His homeland honoured him with the title ‘Shilpacharya’, or the great teacher of arts for his artistic and visionary qualities. He was a pioneer of the modern art movement and was rightly considered as the founding father of Bangladeshi modern arts.\n\nAbedin was born in Kishoregonj on 29 December, 1914. He spent most of his childhood near the scenic banks of the Brahmaputra River. The river and the open nature inspired him from his early life. The Brahmaputra later appeared in many of his paintings and remained a great source of inspiration throughout his career. As his tribute to the river Brahmaputra, he drew a series of water colour",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Zainul Abedin in 1955",
+      "figure_no": "1.01",
+      "box_2d": [
+        135,
+        213,
+        387,
+        479
+      ],
+      "description": "A black and white portrait photograph of the artist Zainul Abedin.",
+      "reading_order_anchor": "Lesson 1: Zainul Abedin, The Great Artist"
+    }
+  ]
+}

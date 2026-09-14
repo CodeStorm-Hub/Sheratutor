@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 133,
+  "pdf_page_no": 138,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: Books",
+      "chunk_type": "theory",
+      "content_markdown": "A Ask and answer these questions in pairs.\n1. Do you read any books other than your school textbooks?\n2. If yes, what kinds of books do you read? (stories, poems, etc)\n3. Now write one or two reasons why you read those books and share with your partner.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Read the poem",
+      "chunk_type": "theory",
+      "content_markdown": "B Read the poem.\n\nBooks\n- Eleanor Farjeon\n\nWhat worlds of wonder are our books!\nAs one opens them and looks,\nNew ideas and people rise\nIn our fancies and our eyes.\n\nThe room we sit in melts away,\nAnd we find ourselves at play\nWith some one who, before the end,\nMay become our chosen friend.\n\nOr we sail along the page\nTo some other land or age.\nHere’s our body in the chair,\nBut our mind is over there.\n\nEach book is a magic box,\nWhich with a touch a child unlocks.\nIn between their outside covers\nBooks hold all things for their lovers.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: বইয়ের স্তূপ",
+      "figure_no": "1.01",
+      "box_2d": [
+        625,
+        615,
+        868,
+        808
+      ],
+      "description": "A stack of various books piled on top of each other.",
+      "reading_order_anchor": "B Read the poem."
+    }
+  ]
+}

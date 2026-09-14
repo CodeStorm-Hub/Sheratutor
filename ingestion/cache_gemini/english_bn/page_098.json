@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 98,
+  "pdf_page_no": 103,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 6: The Wizard of Apple",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A Look at the picture and ask and answer the questions.\n\n1. What do you see in the box beside?\n2. What does this logo stand for?\n3. Which company uses this logo for its products?\n4. Do you know the logo of any Bangladeshi product?\n5. Do you like it? Why/Why not?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Read about Steve Jobs",
+      "chunk_type": "theory",
+      "content_markdown": "Steven Paul Jobs (24 February 1955 – 5 October 2011), most popularly known as Steve Jobs was the co-founder, chairman and chief executive officer of Apple Inc. He was the pioneer of the personal computer revolution. He was famous for his career in the electronic field of computers and consumers. This became possible through the marketing of Apple computers.\n\nIn 1985, Jobs left Apple after losing a power battle with the board of directors. He then founded NeXT, a computer platform development company specializing in the higher education and business market. Apple however failed to bring up any new operating system during Job's absence. Jobs returned to Apple as an adviser, and took control of the company as an interim CEO. By 1998, Jobs brought Apple back to profitability from the verge of bankruptcy. He supervised the development of iMac, iTunes, iPod, iPhone and iPad. These devices are so simple and user friendly that even a child can operate them.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: Apple logo",
+      "figure_no": "1.01",
+      "box_2d": [
+        177,
+        693,
+        341,
+        878
+      ],
+      "description": "The Apple company logo featuring a bitten apple.",
+      "reading_order_anchor": "A Look at the picture and ask and answer the questions."
+    },
+    {
+      "caption": "চিত্র ১.০২: Steve Jobs",
+      "figure_no": "1.02",
+      "box_2d": [
+        685,
+        488,
+        911,
+        872
+      ],
+      "description": "A portrait of Steve Jobs holding an iPhone.",
+      "reading_order_anchor": "B Read about Steve Jobs."
+    }
+  ]
+}

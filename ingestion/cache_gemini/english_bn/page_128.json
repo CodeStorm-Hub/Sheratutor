@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 128,
+  "pdf_page_no": 133,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "resistance movement. Surja Sen was a famous anti-British movement organiser and revolutionary activist in Chattogram area at that time. In 1932, Surja Sen planned an attack on the Pahartali European Club. The club was well-known for its notorious sign at its entrance: *Dogs and Indians not allowed*. Surja Sen assigned Pritilata to lead a team of 10-12 men to attack the Club. The raid was successful but Pritilata, dressed as a man, failed to get out of the Club. She committed suicide by taking potassium cyanide to avoid arrest. She proved that women can work like men. She also proved that women too needed to be prepared to sacrifice their lives for freedom from the British colonial rule. Her dream finally came true. The British rule came to an end in 1947 though she couldn't see it during her lifetime.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "C. Read the words in Column A and match them with the meanings in Column B.",
+      "chunk_type": "table",
+      "content_markdown": "| Column A | Column B |\n| :--- | :--- |\n| graduated | a member of a certain social or political group |\n| activist | fight |\n| movement | took a university degree |\n| gender discrimination | rule by a powerful country over a weaker country |\n| colonial rule | battle |\n| combat | inequality between male and female |\n| gradually | slowly |\n| resistance | give responsibilities |\n| notorious | activities |\n| assign | dishonourable |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Pahartali European Club",
+      "figure_no": "1.01",
+      "box_2d": [
+        158,
+        573,
+        294,
+        875
+      ],
+      "description": "A black and white photograph of the Pahartali European Club building.",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

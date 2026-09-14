@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 151,
+  "pdf_page_no": 156,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Unit Twelve: Roots",
+      "chunk_type": "theory",
+      "content_markdown": "Unit Twelve\n\n# Roots",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Learning outcomes",
+      "chunk_type": "theory",
+      "content_markdown": "Learning outcomes\n\nAfter we have studied the unit, we will be able to:\n- participate in conversations and debates\n- exchange personal information\n- narrate incidents and events in a logical sequence\n- present own ideas, give and ask for information\n- write letters to newspapers\n- lodge complaint\n- present information in a chart.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: একটি গাছের মূলের চিত্র",
+      "figure_no": "1.01",
+      "box_2d": [
+        200,
+        220,
+        560,
+        780
+      ],
+      "description": "একটি গাছের চিত্র যেখানে মূল বা শিকড়গুলো স্পষ্টভাবে দেখা যাচ্ছে।",
+      "reading_order_anchor": "1.1"
+    }
+  ]
+}

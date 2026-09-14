@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 20,
+  "pdf_page_no": 25,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "30th September 2024\n\nDear Diary,\n\nToday was one of the worst days of my life. I had started for school right on time around 7.30am. Usually, my father gives me a ride to the school on his bike. But today, he had to go earlier to his office and asked me to take a rickshaw.\n\nI knew that it would take a longer time to reach school on a rickshaw, and so I had decided to leave earlier. As I stood in front of my house to call a rickshawpuller, I found that all the rickshaws had already been taken by school students and their guardians. I waited there for 10 minutes and found one vacant rickshaw and rode on it.\n\nOn my way, suddenly it began raining heavily and I was soaked from head to toe. Just imagine! What a disaster the day was for me. I entered my class drenched as a crow!\n\nWill write to you tomorrow again. I have to sleep now so that I can be up early for school tomorrow.\nGoodnight :-)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.5",
+      "section_title": "A Friend of the Earth",
+      "chunk_type": "theory",
+      "content_markdown": "A Discuss the questions in pairs.\n1. Do you throw away empty cans and bottles?\n2. What do you do with your old newspapers?\n3. What happens to the garbage after you throw it away?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "B Read the following text carefully to know about how we can save our environment.\n\nLET’S SAVE OUR PLANET!\nEveryone must play a part in protecting the environment. There are many things you can do on your own every day to help save the planet. Here are some suggestions.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: রিসাইকেল লোগো",
+      "figure_no": "1.01",
+      "box_2d": [
+        588,
+        665,
+        739,
+        881
+      ],
+      "description": "একটি রিসাইকেল লোগো যেখানে reduce, reuse এবং recycle শব্দগুলো লেখা আছে।",
+      "reading_order_anchor": "A Discuss the questions in pairs."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 51,
+  "pdf_page_no": 56,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: The Ferry Boat",
+      "chunk_type": "theory",
+      "content_markdown": "A Look at the picture and answer these questions.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Where can you find this kind of boat?\n2. Why does the boatman carry passengers across a river?\n3. Why do people use country boats?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "B Read the text and answer the following questions.\n\n“Is there anybody here who has ever crossed a river by a country boat?”\n\n“I have, teacher,” said Jamil. “And I clearly remember what happened in that journey.”\n\n“Would you please tell us what happened?” the teacher asked.\n\n\"Okay, teacher. It happened when I was in class 6. On a weekly bazar day, people were coming back with their shopping bags and baskets in hands, on shoulders and heads. They had to cross the river. It was not a big river. There was a ferry boat plying on the river. The boat could cross it in 8-10 minutes. It was just after sunset. The weather was getting bad. The wind started blowing from the north-west. Black clouds were moving fast in the sky.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: A ferry boat carrying passengers across a river.",
+      "figure_no": "1.01",
+      "box_2d": [
+        161,
+        168,
+        530,
+        877
+      ],
+      "description": "A black and white photograph showing a wooden country boat crowded with many passengers crossing a river.",
+      "reading_order_anchor": "A Look at the picture and answer these questions."
+    }
+  ]
+}

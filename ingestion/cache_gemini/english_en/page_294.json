@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 294,
+  "pdf_page_no": 299,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.5",
+      "section_title": "Activity 5",
+      "chunk_type": "theory",
+      "content_markdown": "Activity 5\n\nThe pie charts below show the average household expenditures in Japan and Malaysia in the year 2010. Summarise the information by selecting and reporting the main features, and make comparisons where relevant.\n\nAverage Household Expenditures by Major Category",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| | | | |\n|---|---|---|---|\n| main | But | than | higher |\n| smallest | in contrast | compared with | lower |\n| higher | overall | indicates | while |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Read the textual description. Complete the text by filling the gaps with a word from the box below.\n\nThe pie charts show the proportion of money spent on various household expenses in Malaysia and Japan in 2010.\n\nWe can see that in Malaysia the greatest proportion of expenditure (34%) was on housing, .......... in Japan housing accounted for just 21% of the total. .........., in Japan the greatest single expense was other goods and services at 29%, .......... 26% in Malaysia. Food came in second place in Japan, at 24%, while in",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 10.01: Average Household Expenditures by Major Category",
+      "figure_no": "10.01",
+      "box_2d": [
+        259,
+        197,
+        539,
+        796
+      ],
+      "description": "Two pie charts comparing the average household expenditures by major category in Japan and Malaysia for the year 2010.",
+      "reading_order_anchor": "Activity 5"
+    }
+  ]
+}

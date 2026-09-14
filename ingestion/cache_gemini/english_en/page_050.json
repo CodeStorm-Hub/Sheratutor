@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 50,
+  "pdf_page_no": 55,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Activity 1",
+      "chunk_type": "theory",
+      "content_markdown": "Activity 1 Read the descriptions and write a sentence for each one about what has happened or have been happening.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "2.1",
+      "section_title": "Activity 1 (Subquestions)",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "a Selim is sitting at his study table. He is writing an essay on The Pleasure of Reading. He started writing two hours ago. Selim ________________________ two hours.\n\nb It is 10 in the morning. Laila is in the garden digging the soil and preparing the beds to plant her winter vegetables. She started working at 8 a.m. Laila ________________________ 8 a.m.\n\nc Rana is a swimming instructor. He is in the pool now training a ten year old boy. He still has twenty minutes before he finishes training the boy. He trains him for thirty minutes. Rana ________________________ the boy ________________________.\n\nd Andrew and his wife Sara came to Bangladesh ten years ago. They still live in Dhaka.They ________________________ in Dhaka ________________________ ten years.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Activity 2",
+      "chunk_type": "theory",
+      "content_markdown": "Activity 2 Read the following conversation and fill in the blanks with the right form (present perfect/ present perfect continuous) of verbs in brackets.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Activity 2 Dialogue",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": ": Hello, Jack! _______ you _______ (have) a good nap?\n\n: No, I haven't.\n\n: Why? What _______ (happen)?\n\n: For one thing, Nina _______ (play) the radio too loud.\n\n: Oh dear! You should have told her to turn down the volume.\n\n: Then the children next door _______ (make) a terrible noise since after lunch. They _______ (scream, shout and fight) for the last one and a half hours.\n\n: Come on, dear, relax. I'm going to make you a cup of tea.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

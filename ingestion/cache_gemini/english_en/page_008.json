@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 8,
+  "pdf_page_no": 13,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Number in Grammar",
+      "chunk_type": "theory",
+      "content_markdown": "D Number is applicable not only for nouns but also for pronouns, verbs and determiners. Read the following passage and notice the underlined words: Karim is a student of class nine. He is my friend. We go to school together by rickshaw. We always share our rickshaw fare. In his free time he loves to play badminton while I love to watch movies. In this passage 'he' and 'we' are pronouns; 'reads', 'is', 'go' and 'share' are verbs, and 'my' and 'our' are determiners. You can easily guess which of these words are singular and which are plural. Remember, whether a verb is singular or plural is determined by its subject. A singular subject takes a singular verb and a plural subject takes a plural verb.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": "Activities",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Activity 1 Now fill in the gaps in the following sentences: We have a pet that ________ in our house. We ________ all very fond of it. My mother ________ care of it. It ________ to eat fish and milk. It ________ us by killing ________.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "2.3",
+      "section_title": "Rewrite Exercise",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Activity 2 Rewrite the following passage changing the singular words into their plural forms: As you are my friend, you can borrow this book from me. But you should return it within a week. You should not tell a lie to me. I hate a liar. I also hate a person who breaks a promise.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: Two students riding a rickshaw",
+      "figure_no": "2.01",
+      "box_2d": [
+        186,
+        292,
+        428,
+        695
+      ],
+      "description": "A line drawing showing two students sitting in a rickshaw being pulled by a person.",
+      "reading_order_anchor": "D Number is applicable not only for nouns but also for pronouns, verbs and determiners."
+    }
+  ]
+}

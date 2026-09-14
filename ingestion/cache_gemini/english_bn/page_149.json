@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 149,
+  "pdf_page_no": 154,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 11: The Trial",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A Read the text and answer the questions that follow.\n\nWhen Bassanio reached Venice, Antonio was already in the court of justice. They were waiting for the trial to begin. The Duke entered the courtroom, took his seat and the trial began. The Duke requested Shylock to be merciful and not to claim his pound of flesh. But Shylock would not listen to him. Bassanio offered him twice the amount of money that Shylock lent Antonio but Shylock did not accept it. He said, \"I claim my pound of flesh. The law is on my side. Antonio must pay the penalty written in the bond.\"\n\nThe Duke was extremely sorry that he could do nothing to help Antonio. The law was on Shylock’s side and the law must be abided. The Duke feared that although the wisest lawyer in Venice was coming to speak in defense of Antonio, he would not be able to save the merchant. Soon a young clerk entered the courtroom with a letter from that lawyer. The lawyer was ill and would not be able to come to the court.\n\nHe requested the Duke to let his young friend, Doctor Balthazar, defend Antonio. The Duke gave his permission, and Doctor Balthazar entered the courtroom. He looked very young, and the Duke doubted if the wisdom of the young lawyer could save Antonio. This young lawyer was no other than Portia in disguise and the young clerk was her friend, who was also in disguise.\n\nPortia begged Shylock to be merciful and told him how God bestows mercy to those who are merciful themselves.\n\n\"Mercy\" Portia said, \"brings a blessing to him who shows it and to him who receives it. All of us pray to God for mercy. But God will only have mercy on us if we have mercy on others.\"\n\nShylock paid no heed to Portia. All he wanted was his pound of flesh. Portia asked, \"Can't Antonio pay the debt?\"\n\nBassanio cried, “Yes, he can pay it, and even more. ... Even I can pay ten",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: দ্য ট্রায়াল বা বিচারকার্য",
+      "figure_no": "1.01",
+      "box_2d": [
+        330,
+        553,
+        528,
+        882
+      ],
+      "description": "A courtroom scene depicting the trial of Antonio with the Duke, Shylock, and others present.",
+      "reading_order_anchor": "The Duke was extremely sorry that he could do nothing to help Antonio."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 73,
+  "pdf_page_no": 78,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "D The passage in B has six paragraphs (a-f). Choose the most suitable headings for paragraphs (a-f) from the list of headings below. There are more headings in the box than the paragraphs, so you will not use all of them.\n\n**List of headings**\n1. A beautiful island with natural richness\n2. Teardrop of India\n3. Geographical features\n4. A rich multicultural setting\n5. Some religious groups of Sri Lanka\n6. A traditional economy\n7. The land of cinnamon\n8. A melting pot of the past civilizations\n9. Tourist attractions and leisure activities\n10. A country with beautiful beaches",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "E Read the brief descriptions of some of the best tourist places in Sri Lanka. Then discuss the questions that follow.\n\n**Anuradhapura**\nAnuradhapura is one of the ancient capitals of Sri Lanka. The old city is today surrounded by monasteries, covering an area of over sixteen square miles. The city is also significant in Hindu legend as the capital of King Ravana.\n\n**Bundala National Park**\nBundala National Park is one of Sri Lanka's leading destinations for birdwatchers. The park is also home to large populations of elephants, crocodiles, turtles and leopards.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: অনুরাধাপুর",
+      "figure_no": "1.01",
+      "box_2d": [
+        613,
+        684,
+        770,
+        896
+      ],
+      "description": "Anuradhapura ancient ruins",
+      "reading_order_anchor": "Anuradhapura"
+    },
+    {
+      "caption": "চিত্র ১.০২: বুন্দালা ন্যাশনাল পার্ক",
+      "figure_no": "1.02",
+      "box_2d": [
+        820,
+        684,
+        941,
+        896
+      ],
+      "description": "Bundala National Park landscape with elephants",
+      "reading_order_anchor": "Bundala National Park"
+    }
+  ]
+}

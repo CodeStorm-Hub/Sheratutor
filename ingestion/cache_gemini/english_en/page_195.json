@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 195,
+  "pdf_page_no": 200,
+  "chapter_no": 6,
+  "chapter_title": "Narration & Speech",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Grammar Point",
+      "chunk_type": "theory",
+      "content_markdown": "In informal speech we sometimes use the same tense that the person used in the direct speech. Besides when we want to say something that someone says about future we use the same tense used in the direct speech\n\n**Example**\n\nHannan: I’m going to Bandarban tomorrow.\n\nHannan says that he is going to Bandarban the next day.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 1",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "A bus was going from Dhaka to Khulna. Suddenly it stopped on the way and couldn’t move for a long time. Report what people said using the correct reported speech forms of the words in the parenthesis. The first one is done for you.\n\n1. The guide said that he was sorry for the delay. (I’m sorry)\n2. The driver said __________________________________________________ due to a road accident ahead. ('All traffic is suspended')\n3. One passenger sitting next to me said __________________________________________________ to get stuck for hours. ('It is horrible')",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.1: Passengers inside a bus",
+      "figure_no": "6.1",
+      "box_2d": [
+        499,
+        225,
+        741,
+        753
+      ],
+      "description": "Black and white photograph showing passengers seated inside a crowded bus.",
+      "reading_order_anchor": "Activity 1"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 42,
+  "pdf_page_no": 47,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Grammar point",
+      "chunk_type": "theory",
+      "content_markdown": "Grammar point\n\nWe use verbs which describe an action or situation in the **present continuous** to talk about something happening now:\n\n*I am listening to music.* \n*Amir is playing in the garden.* \n*Mom is cooking dinner.*\n\n**Verbs not used in the continuous:**\n\nWe don’t use the present continuous with verbs which we use to describe people or things:\n\n*Amina is at school.* (NOT *Amina is being at school.*)\n\n*I like this painting.* (NOT *I'm liking this painting.*)\n\n*But I don’t understand it.* (NOT *But I am not understanding it.*)\n\n*Do you love him?* (NOT *Are you loving him?*)\n\nVerbs which are not usually used in the continuous form fall under the categories of sense verbs, state verbs, emotion verbs, possession verbs and other.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "2.2",
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "B Look at the chart below showing different categories of verbs that do not usually take the continuous form.\n\n| sense verbs | state of mind | emotion verbs | possession verbs | other |\n| --- | --- | --- | --- | --- |\n| hear | believe | want | belong | need |\n| taste | remember | love | own | matter |\n| feel | know | like | have | exist |\n| smell | prefer | hate | possess | appear |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 175,
+  "pdf_page_no": 180,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Renewable Energy",
+      "chunk_type": "theory",
+      "content_markdown": "Unit Fourteen\n\nRenewable Energy\n\nLearning outcomes\n\nAfter we have studied this unit, we will be able to\n\n- describe familiar objects\n- participate in conversation, discussion\n- read intensively and extensively\n- write formal letters.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 1.01: সৌর প্যানেল ও নবায়নযোগ্য শক্তির উৎসসমূহ",
+      "figure_no": "1.01",
+      "box_2d": [
+        194,
+        108,
+        477,
+        508
+      ],
+      "description": "সৌর প্যানেলের একটি সারি যা নবায়নযোগ্য শক্তি উৎপাদনের জন্য ব্যবহৃত হয়।",
+      "reading_order_anchor": "Renewable Energy"
+    },
+    {
+      "caption": "চিত্র 1.02: নবায়নযোগ্য শক্তির বিভিন্ন উৎসের প্রতীকী চাকা",
+      "figure_no": "1.02",
+      "box_2d": [
+        207,
+        569,
+        475,
+        894
+      ],
+      "description": "নবায়নযোগ্য শক্তির বিভিন্ন রূপ যেমন বায়ুকল, জলবিদ্যুৎ এবং সৌরশক্তি প্রদর্শনকারী একটি চক্রাকার চিত্র।",
+      "reading_order_anchor": "Renewable Energy"
+    }
+  ]
+}

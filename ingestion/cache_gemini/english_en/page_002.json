@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 2,
+  "pdf_page_no": 7,
+  "chapter_no": 2,
+  "chapter_title": "Tenses, Modals & Voice",
+  "sections": [
+    {
+      "section_no": "2.1",
+      "section_title": "Proper Nouns",
+      "chunk_type": "theory",
+      "content_markdown": "Activity 1 Notice the underlined words in the following passage and say what they refer to:\n\nRajshahi is a divisional city in Bangladesh. It is in the western part of the country. It stands on the river Padma. My friend Alamgir lives in this city. He is a professor of History. I often visit him and discuss many things with him. He speaks good English.\n\nThese are all proper nouns. A proper noun is the name of a particular person, place or thing. For example, “Rajshahi” is the name of a particular city and “History” is the name of a particular subject. Think of the other proper nouns in the passage. A proper noun usually begins with a capital letter. A proper noun is usually singular but some proper nouns are plural in form.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "For example:\nThe Maldives is an island country.\n\nHave you ever been to the Philippines?\nThe United Nations has a big responsibility.\n\nNote: Although these nouns are plural in form, they take a singular verb with them.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 2.01: The United Nations headquarters",
+      "figure_no": "2.01",
+      "box_2d": [
+        428,
+        143,
+        716,
+        857
+      ],
+      "description": "A black and white photograph of the United Nations headquarters building with several flags flying in front of it.",
+      "reading_order_anchor": "The United Nations has a big responsibility."
+    }
+  ]
+}

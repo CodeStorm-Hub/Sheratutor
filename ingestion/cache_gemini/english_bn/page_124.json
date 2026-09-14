@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 124,
+  "pdf_page_no": 129,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Animesh : So you mean learning from each other?\n\nSwati : There is no magic behind my success. I just worked hard. I followed our teachers’ advice, ‘The more you read, the more you learn’. I’m grateful to my teachers and parents for guiding me properly.\n\nAnimesh : Well Swati, we are really so proud of you for your brilliant performance in the JSC exams. Please tell us how you could achieve this success.\n\nSwati : Ohh....and I’m grateful to my school and friends too.\n\nAnimesh : That's great!\n\nSwati : In my school, we had a nice study group. Whenever we had any problem, we discussed it in our group first. We tried to help each other. And it always worked. Never forget, two heads are better than one.\n\nAnimesh : I understand why you are grateful to your school but would you explain how you are grateful to your friends, please?\n\nSwati : Exactly that!\n\nAnimesh : By the way, Swati, what are your dreams for the future?\n\nSwati : To keep up the success in next exams and make my dreams come true. I want to be a scientist. Since my childhood I've known that many people in Bangladesh are under arsenic threat. They are taking arsenic directly from their drinking water and indirectly from the crops and vegetables they eat. It's a kind of slow poisoning. People are helpless. They are suffering from many kinds of diseases. Therefore, I have a dream to carry out a research on how to get rid of this problem, using our own recourses and expertise.\n\nAnimesh : Wish you luck.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "D Now listen to the Audio and check whether your answer is correct.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.3",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "E Work in pairs. Make questions for your partner to know about his/her dreams and take his/her interview.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Listening text 8",
+      "figure_no": "1.01",
+      "box_2d": [
+        826,
+        177,
+        862,
+        403
+      ],
+      "description": "A rectangular box containing the text 'Listening text 8'.",
+      "reading_order_anchor": "D Now listen to the Audio and check whether your answer is correct."
+    }
+  ]
+}

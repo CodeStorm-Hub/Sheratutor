@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 116,
+  "pdf_page_no": 121,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.D",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Look at the following table. The left column shows some positive aspects of Sayeed Kamal’s character. Add some more to the list. Also find out some aspects of Sayeed that you think are unconventional and write them in the right column.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Good aspects of Sayeed | Unconventional aspects of Sayeed |\n| :--- | :--- |\n| a. simple | a. old fashioned |\n| b. diligent | b. loner |\n| c. loves nature | c. |\n| d. caring | d. |\n| e. | |\n| f. | |\n| g. | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.E",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Write a paragraph on Sayeed Kamal. Take your cues from D.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.F",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "‘I must say I’m a very happy man!’— Do you agree with Sayeed? Write why/why not?",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

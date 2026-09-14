@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 14,
+  "pdf_page_no": 19,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Pollution Analysis",
+      "chunk_type": "table",
+      "content_markdown": "| Pollution | Causes | Suggestions |\n| :--- | :--- | :--- |\n| Air pollution | • Toxic smokes from ............... plants<br>• Vehicles which are old and poorly ............<br>• Smoke from the ............ fields | • Don’t drive motorcars which are older than ............ years.<br>• Use car lubricants of good quality to keep the ............ level minimum.<br>• Use CNG or LP gas as car ............ |\n| Soil pollution | • Industrial wastes not ............ properly.<br>• Use of ............ shopping bags<br>• Use of agricultural pesticides and ............ | • Use compost for agricultural purpose.<br>• ............ paper, plastics, and other materials.<br>• Plant more trees to help prevent loss of fertility in the ............ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Summary Writing",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "D In groups of four, prepare a summary in 100 words of the topic below. First, work together to prepare a draft. When the draft is complete, select a group member to read it to the class.\n\nTopic: Polluting the land means polluting the water",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "Poster Analysis",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "E Look at the three posters below. What messages do they give? Which one do you like the most? Tell your friend why you like it.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: তিনটি পোস্টার",
+      "figure_no": "1.01",
+      "box_2d": [
+        713,
+        104,
+        952,
+        869
+      ],
+      "description": "তিনটি পোস্টার যা পরিবেশ দূষণ সম্পর্কে সচেতনতা তৈরি করে।",
+      "reading_order_anchor": "E Look at the three posters below. What messages do they give? Which one do you like the most? Tell your friend why you like it."
+    }
+  ]
+}

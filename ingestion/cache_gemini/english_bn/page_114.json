@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 114,
+  "pdf_page_no": 119,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 1: Jobs that People Do",
+      "chunk_type": "theory",
+      "content_markdown": "A Many of us think that we must have a steady big job to be happy in life. Is that always true? Why/Why not?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "B Read the text. It is about a young entrepreneur, Sayeed Kamal. Notice what he thinks about job and happiness. Then answer the questions that follow.\n\nI know you will wonder if I say the best thing that ever happened to me was when I left my last job. Yes, really!\n\nI was a desk clerk in an office. But believe me I never liked my job. Nothing can be more boring than being stuck in an office all day with computers and telephone.\n\nSo after two years or so, I decided to leave my job though I had a good salary. Now I'm the owner of a nursery. Planting seeds, budding, grafting, taking care of saplings, cleaning the flower beds and spending time with trees are different parts of my full time job. I start work very early. In summer I usually leave home at 5:30 in the morning, but in winter not until about 7. I've a small hut in my nursery. There cannot be any more pleasure for me than when I see the moon from there or walk through the trees in the soft moonlit night. The winter is just over. So I'm cleaning up the winter flower garden. Now I'm busy producing more timber and medicinal plants which people will buy from July. Every season is so different and I love them all. When I compare my present days with the past, I simply can't understand how I could survive in my previous job. I love nature. I just love working outside in the open air after all those months in a stuffy office. Gadgets never attract me and perhaps never will.\n\nI'm not married. I do my own work, even cook my own food. I try not to depend on others for the work which I myself can do. Often my friends are annoyed with me. They say, I should engage a maid for household chores. They are not happy to see me in this 'rustic life'. They are professionals. They earn a lot. Maybe",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: নার্সারির দৃশ্য",
+      "figure_no": "1.01",
+      "box_2d": [
+        288,
+        444,
+        534,
+        894
+      ],
+      "description": "A photograph showing a nursery with various plants and flower pots.",
+      "reading_order_anchor": "B Read the text. It is about a young entrepreneur, Sayeed Kamal."
+    }
+  ]
+}

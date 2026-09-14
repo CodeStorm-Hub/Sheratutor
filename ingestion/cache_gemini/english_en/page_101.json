@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 101,
+  "pdf_page_no": 106,
+  "chapter_no": 3,
+  "chapter_title": "Right Form of Verbs",
+  "sections": [
+    {
+      "section_no": "3.1",
+      "section_title": "The infinitive without to",
+      "chunk_type": "theory",
+      "content_markdown": "### The infinitive without to\n\n**B** Read the following sentences and notice the use of the **infinitive with to** and **without to**.\n\nMy friend and I went to watch an English film on DVD at the British Council Library yesterday. It was a very funny film and it made us laugh. We tried hard not to laugh out loud and disturb other people but just couldn't stop. It was a story about a family where the parents let the children do anything they wanted. We were laughing so much that ultimately the assistant librarian came and made us leave. We'll remember the incident for a long time to come.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Grammar point",
+      "chunk_type": "theory",
+      "content_markdown": "#### Grammar point\n\nWe use the **infinitive without to** after modal verbs (will, can, could, may, might, must, should, etc.)\n\ne.g. We couldn't stop. We'll remember the incident.\n\nWe use the **infinitive without to** after make and let:\n\n**make/let + object + infinitive without to**",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Activity 1",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "#### Activity 1\n\nPut the verbs in brackets into the correct form (the infinitive with/without to).\n\na : Did you remember ______ (post) the letter?\n\n: Oh no, I didn't. You forgot ______ (remind) me. I'll ______ (do) it now.\n\nb : Don't forget ______ (take) the old prescriptions with you?\n\n: Why should I ______ (take) them?\n\n: Because the doctor might ______ (want) ______ (see) them.",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

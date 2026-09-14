@@ -1,0 +1,36 @@
+{
+  "printed_page_no": 32,
+  "pdf_page_no": 37,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "E Work in pairs. Decide who is better between these two champions. Give reasons in favour of your decisions.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Lesson 3: Change in Pastime",
+      "chunk_type": "theory",
+      "content_markdown": "A Read the text.\n\n### Childhood outdoor pastimes 'in decline'\n\nTraditional childhood pastimes of climbing trees and playing conkers are in decline, according to a survey by the RSPB (Royal Society for the Protection of Birds). It’s a charitable organisation registered in England and Wales.\n\nThe survey shows that people under 34 recall far fewer such childhood outdoor experiences than people over 55, according to a survey by RSPB.\n\nPeople were asked which of the twelve childhood outdoor experiences they could remember. The answer included making dens, daisy chains, climbing trees, playing conkers and feeding birds. Four out of five boys climbed trees and the same number of girls made daisy chains. But the survey showed the numbers declining among the newer generations. Some 15% more of those aged over 55 had these outdoor experiences in their childhood, compared with those between 15-34 years old. Some 92% of the public agreed that experiences of nature were still important to children, and 82% agreed that schools should play a role in providing them to all children.\n\nThe survey has highlighted the positive impact of contact with nature on a child's education, health, wellbeing and social skills. At the same time, there has been a decline in these opportunities, with negative consequences for children, families and society—a condition now known as nature deficit disorder.\n\nMike Clarke, chief executive of the RSPB, will meet parliament members to urge the government to join other organisations in providing children with first-hand experiences of the natural environment. . . . \"We believe this guidance should include the many positive impacts to children of having contact with nature and learning outside the classroom.\"\n\n[Adapted from BBC news 6 September 2010]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ১.০১: শিশুদের বহিরাঙ্গন খেলাধুলা",
+      "figure_no": "1.01",
+      "box_2d": [
+        487,
+        598,
+        699,
+        896
+      ],
+      "description": "একটি ছবিতে শিশুদের বাইরে খেলাধুলা করার দৃশ্য দেখানো হয়েছে।",
+      "reading_order_anchor": "A Read the text."
+    }
+  ]
+}

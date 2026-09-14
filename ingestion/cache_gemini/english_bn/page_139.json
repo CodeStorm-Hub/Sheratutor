@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 139,
+  "pdf_page_no": 144,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Lesson 5: Stopping by Woods on a Snowy Evening",
+      "chunk_type": "theory",
+      "content_markdown": "Lesson 5: Stopping by Woods on a Snowy Evening",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "A",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "Ask and answer these questions.\n\n1. Do you enjoy natural beauty like flowers, trees, woods, hills, etc.?\n2. Have you ever been to a place where you enjoyed such beauty? If yes, briefly describe it.",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": "1.3",
+      "section_title": "B",
+      "chunk_type": "theory",
+      "content_markdown": "Read the poem and say how the words in each stanza rhyme. For example, in stanza 1 know (line 1) though (line 2) and snow (line 4) rhyme with each other.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.4",
+      "section_title": "Stopping by Woods on a Snowy Evening",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Stopping by Woods on a Snowy Evening\n- Robert Frost\n\nWhose woods these are I think I know.\nHis house is in the village though;\nHe will not see me stopping here\nTo watch his woods fill up with snow.\n\nMy little horse must think it queer\nTo stop without a farmhouse near\nBetween the woods and frozen lake\nThe darkest evening of the year.\n\nHe gives his harness bells a shake\nTo ask if there is some mistake.\nThe only other sound’s the sweep\nOf easy wind and downy flake.\n\nThe woods are lovely, dark and deep.\nBut I have promises to keep,\nAnd miles to go before I sleep,\nAnd miles to go before I sleep.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 232,
+  "pdf_page_no": 237,
+  "chapter_no": 9,
+  "chapter_title": "Formal & Informal Letter Writing",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "How to Write",
+      "chunk_type": "theory",
+      "content_markdown": "We write and send various types of e-mails every day. They may be friendly, professional, resumes, planning for events etc. Writing an effective e-mail is indeed very important.\n\n**How to get attention**\n\nIt is important to get the receiver to read your e-mail; it is also important to get the e-mail noticed by the receiver, and then keep the receiver engaged till s/he finishes reading it. Here are some tips for you for writing an effective e-mail.\n\n**Five tips for writing an effective e-mail**\n\n1. **Clear purpose:** It is important to know the purpose of your e-mail. The receiver should be sure about the point.\n\n2. **Use the subject line wisely:** Take the time to select a meaningful, straightforward subject line that tells the reason for the e-mail clearly.\n\n3. **Make sure your identity:** There are many cases where e-mails are ignored or bypassed because the receiver is not familiar with the sender of the e-mail. Take time to make sure that your full name is placed as the sender so that the receiver will know who you are.\n\nAvoid using initials or nicknames as many people tend to ignore e-mails that are not sent with whole names which they can recognize.\n\n4. **Get to the point:** Make sure your e-mails are concise.\n\nPeople want to know what the e-mail is about as soon as they open it. After a brief greeting followed by a comma, make sure the next few lines are related specifically to the subject of the e-mail.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: A laptop displaying an e-mail icon",
+      "figure_no": "9.01",
+      "box_2d": [
+        801,
+        606,
+        894,
+        849
+      ],
+      "description": "An open laptop displaying an e-mail icon on the screen.",
+      "reading_order_anchor": "Get to the point"
+    }
+  ]
+}

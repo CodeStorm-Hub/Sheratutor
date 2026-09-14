@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 298,
+  "pdf_page_no": 303,
+  "chapter_no": 10,
+  "chapter_title": "Paragraph & Composition Writing",
+  "sections": [
+    {
+      "section_no": "10.1",
+      "section_title": "Participation in cultural activities, by age",
+      "chunk_type": "table",
+      "content_markdown": "| Participation in cultural activities, by age | 16-24 (%) | 25-44 (%) | 45-74 (%) | All aged 16 and over (%) |\n| :--- | :---: | :---: | :---: | :---: |\n| Any performance* | 35 | 22 | 17 | 22 |\n| Undertaking any crafts | 11 | 17 | 22 | 19 |\n| Cultural purchases | 11 | 17 | 18 | 16 |\n| Any visual arts | 30 | 16 | 11 | 15 |\n| Any writing | 17 | 6 | 5 | 7 |\n| Computer based | 10 | 9 | 5 | 6 |\n\n* Dancing, singing, playing musical instruments and acting",
+      "activity_tag": null
+    },
+    {
+      "section_no": "10.2",
+      "section_title": "Model answer",
+      "chunk_type": "theory",
+      "content_markdown": "The table shows details of participation in a variety of cultural activities over a year, according to the age of the participants.\n\nOverall, any performance, which includes dancing, singing, playing musical instruments and acting, had the highest level of participation, with 22% of respondents participating in the previous 12 months. By contrast, computer based activities had the lowest level of participation (6 percent).\n\nPeople aged between 45 and 74 years old were most likely to undertake any activity to do with crafts (22 percent), while performances were more likely to be participated in by those aged 16 to 24 (35 percent). The differences between age groups were particularly marked in the case of visual arts and writing categories, where participation rates were around three times higher for younger people than for the older ones. It is clear from the evidence that age plays a significant role in the popularity of the cultural activities listed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

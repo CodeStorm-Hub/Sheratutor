@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 168,
+  "pdf_page_no": 173,
+  "chapter_no": 5,
+  "chapter_title": "Transformation of Sentences",
+  "sections": [
+    {
+      "section_no": "5.1",
+      "section_title": "Grammar point",
+      "chunk_type": "theory",
+      "content_markdown": "Every sentence must have a subject, but sometimes the subject does not mean anything, like the introductory 'there' and 'it' in the above sentences. When we don't want to put a new information at the beginning of a sentence, we write it in a different way using there/it at the beginning. 'There' and 'it' at the beginning of a sentence are also called 'empty subjects'.\n\nNotice that there/it is followed by the verb be.\n\nForm :\n\n- There + be e.g. There is ... / There are ...\n  There was ... / There were ...\n- It + be e.g. It is ... / it was ...",
+      "activity_tag": null
+    },
+    {
+      "section_no": "5.2",
+      "section_title": "Use",
+      "chunk_type": "theory",
+      "content_markdown": "We use the introductory 'there' to say that something exists or existed in the past:\n\n- There is a lake in the university campus.\n- There were hundreds of migratory birds.\n\nWe usually use it to talk about something that we have already mentioned:\n\n- What's that bird? It's a Siberian duck.\n\nWe can also use it when we talk about:\n\n- distance : It's about 22 kilometers from Dhaka to Savar.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

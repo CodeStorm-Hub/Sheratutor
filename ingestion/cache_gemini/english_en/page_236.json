@@ -1,0 +1,29 @@
+{
+  "printed_page_no": 236,
+  "pdf_page_no": 241,
+  "chapter_no": 9,
+  "chapter_title": "Formal & Informal Letter Writing",
+  "sections": [
+    {
+      "section_no": "9.1",
+      "section_title": "Informal Personal Mail",
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 3: An informal personal mail.\n\nFrom: Probir Chandra Roy <probir21@yahoo.com>\nTo: ritasanket23@gmail.com\n\nDear Rita\n\nThis is just to say you hello. How are you doing in Bogra? Hope all is well.\n\nI'm passing a very hectic time here. Working round the clock. To be honest, I need rest. I would like to go to the hilly region to make my holiday this time. You just come from Bogra and then together we will make it. How about all three hilly districts and Cox's Bazaar including the St. Martin's island and Maheshkhali?\n\nCome soon.\nDon't see you for ages. Missing you a lot.\n\nProbir",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 9.01: An informal personal mail screenshot",
+      "figure_no": "9.01",
+      "box_2d": [
+        146,
+        100,
+        658,
+        902
+      ],
+      "description": "Screenshot of an informal personal email interface displaying the sender, recipient, and message body.",
+      "reading_order_anchor": "Example 3: An informal personal mail."
+    }
+  ]
+}

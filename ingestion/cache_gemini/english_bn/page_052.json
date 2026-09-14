@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 52,
+  "pdf_page_no": 57,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Everybody was trying to get into the boat. 'No more, no more, please wait,' shouted the boatman. But nobody listened to him.\n\n'What happened then, Jamil?' asked Rumi.\n\n'With too many people on board, the boat sank in the middle of the river,' replied Jamil.\n\n'Oh no! What happened then?' asked the teacher. 'Thank God. There were no casualties. All the passengers swam to the other side. But some of them lost the stuff they were carrying such as oil, salt and milk,' said Jamil.\n\n'Were you on the boat?' asked the teacher. 'No, teacher. Seeing the boat overcrowded, I waited for the next boat,' replied Jamil.\n\n'You did the right thing, Jamil.'",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "Questions\n\nTick the best answer.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. A ferry boat was plying on the river.\nHere 'plying' means\na. playing with other boats.\nb. sinking in the river.\nc. travelling along a route.\nd. waiting for passengers.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "2. Why was everybody trying to get into the boat?\nBecause\na. it was a weekly bazar day.\nb. after sunset no ferry would ply on the river.\nc. everybody had shopping bags with them.\nd. it was going to be a dark and stormy evening.",
+      "activity_tag": "MCQ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "3. The boatman requested the people to wait, because\na. his boat was very small.\nb. the boat had already too many people.\nc. there were other boats they could take.\nd. he would not ferry people with bags and baskets.",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}

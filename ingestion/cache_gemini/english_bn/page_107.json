@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 107,
+  "pdf_page_no": 112,
+  "chapter_no": 1,
+  "chapter_title": "পঠন ও মূলভাব",
+  "sections": [
+    {
+      "section_no": "1.1",
+      "section_title": "Match the words with their meanings.",
+      "chunk_type": "table",
+      "content_markdown": "| Words | Meanings |\n| :--- | :--- |\n| archaeological | ancient cultural remains |\n| excavate | uncover something with difficulty |\n| lofty | grand |\n| extensive | widespread |\n| systematic | done methodically |\n| debris | rubbles/wreckage |\n| devout | pious |",
+      "activity_tag": null
+    },
+    {
+      "section_no": "1.2",
+      "section_title": "Read Text in A again and choose the correct answer.",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "1. Paharpur is\na. a typical Bangladeshi village. b. an extraordinary village.\nc. a very small village. d. a village on top of a mountain.\n2. After excavation, the archaeologists discovered a huge\na. king's palace. b. emperor's courtyard.\nc. Buddhist monastery. d. Hindu temple.\n3. How many phases of excavation of Paharpur have been mentioned in the text?\na. four b. five\nc. six d. seven\n4. What objects indicate that the site was built by the second Pala king?\na. earthen seals b. ceramic seals\nc. stone seals d. iron seals\n5. The word ‘benefactors’ in the text means\na. banks. b. famous businessmen.\nc. people with money. d. financial supporters.",
+      "activity_tag": "MCQ"
+    }
+  ],
+  "figures": []
+}
