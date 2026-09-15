@@ -20,7 +20,8 @@ const GroundingChunkSchema = z.object({
 const isUuid = (val?: string | null): boolean =>
   !!val && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(val);
 
-const BENGALI_PHYSICS_SYNONYMS: Record<string, string[]> = {
+const BENGALI_CURRICULUM_SYNONYMS: Record<string, string[]> = {
+  // Physics concepts
   "ত্বরণ": ["acceleration", "বেগের পরিবর্তন", "মন্দন"],
   "বেগ": ["velocity", "দ্রুতি", "সরণ"],
   "গতি": ["motion", "গতির সমীকরণ", "গতিবিদ্যা"],
@@ -32,21 +33,64 @@ const BENGALI_PHYSICS_SYNONYMS: Record<string, string[]> = {
   "আলো": ["light", "প্রতিফলন", "প্রতিসরণ", "দর্পণ"],
   "শব্দ": ["sound", "তরঙ্গ", "কম্পাঙ্ক", "প্রতিধ্বনি"],
   "বিদ্যুৎ": ["electricity", "তড়িৎ", "রোধ", "বর্তনী", "ওহমের সূত্র"],
-  // Chemistry expansion
+  // Chemistry concepts
   "পরমাণু": ["atom", "নিউক্লিয়াস", "রাদারফোর্ড", "বোর", "ইলেকট্রন"],
   "পর্যায়": ["periodic table", "পর্যায় সারণি", "আয়নীকরণ", "পারমাণবিক ব্যাসার্ধ"],
   "বিক্রিয়া": ["reaction", "জারণ", "বিজারণ", "অ্যানোড", "ক্যাথোড", "ড্রাই সেল"],
   "ব্যাপন": ["diffusion", "নিঃসরণ", "অ্যামোনিয়া", "হাইড্রোক্লোরিক"],
+  // Mathematics concepts (NCTB Class 9-10 All 17 Chapters)
+  "বাস্তব সংখ্যা": ["real numbers", "মূলদ", "অমূলদ", "অনাবৃত দশমিক"],
+  "সেট": ["set", "ফাংশন", "উপসেট", "শক্তি সেট", "সংযোগ সেট", "ছেদ সেট"],
+  "বীজগাণিতিক": ["algebraic expression", "উৎপাদক", "বর্গ", "ঘন", "সূত্রাবলি"],
+  "উৎপাদক": ["factorization", "উৎপাদকে বিশ্লেষণ", "মধ্যপদ"],
+  "সূচক": ["exponent", "লগারিদম", "লগ", "ভিত্তি"],
+  "সমীকরণ": ["equation", "চলক", "দ্বিঘাত সমীকরণ", "মূল", "সহসমীকরণ"],
+  "জ্যামিতি": ["geometry", "ত্রিভুজ", "উপপাদ্য", "সর্বসম", "পীথাগোরাস"],
+  "বৃত্ত": ["circle", "স্পর্শক", "জ্যা", "পরিধি", "বৃত্তচাপ", "বৃত্তস্থ কোণ", "কেন্দ্রস্থ কোণ"],
+  "ত্রিকোণমিতি": ["trigonometry", "সাইন", "কস", "ট্যান", "উন্নতি কোণ", "অবনতি কোণ", "দূরত্ব ও উচ্চতা"],
+  "ধারা": ["series", "সমান্তর ধারা", "গুণোত্তর ধারা", "সসীম ধারা", "পদ সংখ্যা", "সমষ্টি"],
+  "অনুপাত": ["ratio", "সমানুপাত", "সদৃশতা", "প্রতিসাম্য"],
+  "পরিমিতি": ["mensuration", "আয়তাকার", "ঘনক", "সিলিন্ডার", "বেলন", "গোলক", "ক্ষেত্রফল", "আয়তন"],
+  "পরিসংখ্যান": ["statistics", "গড়", "মধ্যক", "প্রচুরক", "গণসংখ্যা", "ক্রমযোজিত গণসংখ্যা", "আয়তলেখ", "অজিব রেখা"],
 };
 
 export function expandBengaliPhysicsQuery(query: string): string {
   let expanded = query;
-  for (const [term, synonyms] of Object.entries(BENGALI_PHYSICS_SYNONYMS)) {
+  for (const [term, synonyms] of Object.entries(BENGALI_CURRICULUM_SYNONYMS)) {
     if (query.includes(term)) {
       expanded += ` ${synonyms.join(" ")}`;
     }
   }
   return expanded.trim();
+}
+
+export function detectSubjectFromQuery(query: string): string {
+  const q = query.toLowerCase();
+  // Mathematics signals
+  if (
+    /সমীকরণ|উৎপাদক|সেট|ফাংশন|জ্যামিতি|উপপাদ্য|বৃত্ত|ত্রিকোণমিতি|কোণ|ধারা|পরিমিতি|পরিসংখ্যান|মধ্যক|প্রচুরক|লগ|লগারিদম|বাস্তব সংখ্যা|অমূলদ|মূলদ|ক্ষেত্রফল|ঘনক|সিলিন্ডার|বেলন|ত্রিভুজ|সমানুপাত|দ্বিঘাত|matrix|sin|cos|tan|cot|sec|cosec|sqrt/i.test(
+      q
+    )
+  ) {
+    return "SSC-MATH";
+  }
+  // Chemistry signals
+  if (
+    /মৌল|পরমাণু|পর্যায়|যোজনী|ইলেকট্রন|প্রোটন|নিউট্রন|বিক্রিয়া|জারণ|বিজারণ|এসিড|ক্ষারক|লবণ|অক্সাইড|হাইড্রোকার্বন|alkane|alkene|alkyne|mol|molarity|periodic/i.test(
+      q
+    )
+  ) {
+    return "SSC-CHEM";
+  }
+  // Physics signals
+  if (
+    /ত্বরণ|বেগ|সরণ|বল|ঘর্ষণ|কাজ|ক্ষমতা|শক্তি|চাপ|প্লবতা|আলো|দর্পণ|লেন্স|তরঙ্গ|শব্দ|বিদ্যুৎ|তড়িৎ|রোধ|বর্তনী|চৌম্বক/i.test(
+      q
+    )
+  ) {
+    return "SSC-PHY";
+  }
+  return "SSC-MATH"; // Default to Math as primary completed curriculum
 }
 
 /**
@@ -69,10 +113,11 @@ export const retrieveGroundingFlow = ai.defineFlow(
       groundingConfidence: z.number().min(0).max(1),
     }),
   },
-  async ({ queryText, chapterId, subjectCode = "SSC-CHEM", languageTag = "bn", matchCount = 4 }) => {
+  async ({ queryText, chapterId, subjectCode, languageTag = "bn", matchCount = 4 }) => {
     const hasBengali = /[\u0980-\u09FF]/.test(queryText);
     const effectiveLanguageTag = hasBengali ? "bn" : languageTag;
     const enrichedQuery = expandBengaliPhysicsQuery(queryText);
+    const effectiveSubjectCode = subjectCode || detectSubjectFromQuery(queryText);
 
     // 1. Embed query with gemini-embedding-2 (1024 dimensions) with automatic key failover
     const embedding = await embedWithGeminiFallback(enrichedQuery, 1024);
@@ -94,7 +139,7 @@ export const retrieveGroundingFlow = ai.defineFlow(
           })
         : supabase.rpc("match_curriculum_chunks_global", {
             query_embedding: embedding,
-            p_subject_code: subjectCode,
+            p_subject_code: effectiveSubjectCode,
             p_language_tag: lang,
             match_count: matchCount,
             p_model_name: EMBED_MODEL_NAME,

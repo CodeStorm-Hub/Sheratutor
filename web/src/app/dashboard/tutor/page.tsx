@@ -17,10 +17,18 @@ async function getSubjects() {
     .select('id, code, name_en, name_bn, chapters(id, chapter_no, title_en, title_bn)')
     .order('name_en');
 
-  // Order subjects so Chemistry (SSC-CHEM with verified multimodal RAG) appears first
+  // Order subjects so Mathematics (100% verified 17 chapters) appears first, followed by Chemistry and Physics
+  const subjectPriority: Record<string, number> = {
+    'SSC-MATH': 1,
+    'SSC-CHEM': 2,
+    'SSC-PHY': 3,
+    'SSC-ENG': 4,
+  };
+
   return (subjects ?? []).slice().sort((a, b) => {
-    if (a.code === 'SSC-CHEM') return -1;
-    if (b.code === 'SSC-CHEM') return 1;
+    const pA = subjectPriority[a.code ?? ''] ?? 99;
+    const pB = subjectPriority[b.code ?? ''] ?? 99;
+    if (pA !== pB) return pA - pB;
     return (a.name_en || '').localeCompare(b.name_en || '');
   });
 }

@@ -31,8 +31,8 @@ async function DashboardContent() {
       .maybeSingle(),
     supabase
       .from('subjects')
-      .select('id, name_en, name_bn, code, level, subject_group')
-      .eq('code', 'SSC-PHY')
+      .select('id, name_en, name_bn, code, level, subject_group, chapters(id)')
+      .in('code', ['SSC-MATH', 'SSC-CHEM', 'SSC-PHY'])
       .order('name_en'),
   ]);
 
@@ -109,28 +109,46 @@ async function DashboardContent() {
     { id: '1', name_en: 'Physics', name_bn: 'পদার্থবিজ্ঞান', code: 'PHY', progress: 78, chapterCount: 14 },
   ];
 
+  const subjectOrder: Record<string, number> = {
+    'SSC-MATH': 1,
+    'SSC-CHEM': 2,
+    'SSC-PHY': 3,
+  };
+
   const displaySubjects =
     dbSubjects && dbSubjects.length > 0
-      ? dbSubjects.map((sub) => {
-          const subWeaknesses = (weaknesses || []).filter(
-            (w) => w.chapters?.subjects?.id === sub.id
-          );
-          let progress = 78;
-          if (subWeaknesses.length > 0) {
-            const avgWeakness =
-              subWeaknesses.reduce((a, b) => a + Number(b.weakness_score), 0) /
-              subWeaknesses.length;
-            progress = Math.max(15, Math.min(100, Math.round((1 - avgWeakness) * 100)));
-          }
-          return {
-            id: sub.id,
-            name_en: sub.name_en,
-            name_bn: sub.name_bn || sub.name_en,
-            code: sub.code,
-            progress,
-            chapterCount: 14,
-          };
-        })
+      ? dbSubjects
+          .slice()
+          .sort((a, b) => (subjectOrder[a.code] || 99) - (subjectOrder[b.code] || 99))
+          .map((sub: any) => {
+            const subWeaknesses = (weaknesses || []).filter(
+              (w) => w.chapters?.subjects?.id === sub.id
+            );
+            let progress = sub.code === 'SSC-MATH' ? 85 : sub.code === 'SSC-CHEM' ? 80 : 78;
+            if (subWeaknesses.length > 0) {
+              const avgWeakness =
+                subWeaknesses.reduce((a, b) => a + Number(b.weakness_score), 0) /
+                subWeaknesses.length;
+              progress = Math.max(15, Math.min(100, Math.round((1 - avgWeakness) * 100)));
+            }
+            const realChapterCount =
+              Array.isArray(sub.chapters) && sub.chapters.length > 0
+                ? sub.chapters.length
+                : sub.code === 'SSC-MATH'
+                ? 17
+                : sub.code === 'SSC-CHEM'
+                ? 12
+                : 14;
+
+            return {
+              id: sub.id,
+              name_en: sub.name_en,
+              name_bn: sub.name_bn || sub.name_en,
+              code: sub.code,
+              progress,
+              chapterCount: realChapterCount,
+            };
+          })
       : defaultSubjectList;
 
   // Active study plan daily tasks

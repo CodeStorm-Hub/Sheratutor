@@ -43,6 +43,25 @@ import {
 } from '@/lib/tutor-format';
 
 const MATH_SYMBOLS = [
+  // Core Mathematics Symbols
+  { label: '√x', insert: '$\\sqrt{x}$ ' },
+  { label: 'a/b', insert: '$\\frac{a}{b}$ ' },
+  { label: 'π', insert: '$\\pi$ ' },
+  { label: '±', insert: '$\\pm$ ' },
+  { label: '∴', insert: '$\\therefore$ ' },
+  { label: '∵', insert: '$\\because$ ' },
+  { label: 'x²', insert: '$x^2$ ' },
+  { label: '∪', insert: '$\\cup$ ' },
+  { label: '∩', insert: '$\\cap$ ' },
+  { label: '∈', insert: '$\\in$ ' },
+  { label: 'sinθ', insert: '$\\sin\\theta$ ' },
+  { label: 'cosθ', insert: '$\\cos\\theta$ ' },
+  { label: 'tanθ', insert: '$\\tan\\theta$ ' },
+  { label: '≤', insert: '$\\le$ ' },
+  { label: '≥', insert: '$\\ge$ ' },
+  { label: '≠', insert: '$\\neq$ ' },
+  { label: '∑', insert: '$\\sum$ ' },
+  // Physics & Chemistry units / symbols
   { label: 'ms⁻¹', insert: '$\\text{ms}^{-1}$ ' },
   { label: 'ms⁻²', insert: '$\\text{ms}^{-2}$ ' },
   { label: 'kg', insert: '$\\text{kg}$ ' },
@@ -51,10 +70,7 @@ const MATH_SYMBOLS = [
   { label: 'W', insert: '$\\text{W}$ ' },
   { label: 'Pa', insert: '$\\text{Pa}$ ' },
   { label: 'F=ma', insert: '$F = ma$ ' },
-  { label: 'v=u+at', insert: '$v = u + at$ ' },
-  { label: 's=ut+½at²', insert: '$s = ut + \\frac{1}{2}at^2$ ' },
   { label: 'θ', insert: '$\\theta$ ' },
-  { label: 'λ', insert: '$\\lambda$ ' },
   { label: 'Δ', insert: '$\\Delta$ ' },
   { label: '→', insert: '$\\rightarrow$ ' },
   { label: '⇌', insert: '$\\rightleftharpoons$ ' },
@@ -907,8 +923,8 @@ export function TutorPageClient({
                         </>
                       ) : currentSubject?.code === 'SSC-MATH' ? (
                         <>
-                          <RenderMathText text={`$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$`} inline={false} />
-                          <RenderMathText text={`$$\\sin^2\\theta + \\cos^2\\theta = 1, \\quad A = \\pi r^2$$`} inline={false} />
+                          <RenderMathText text={`$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}, \\quad S_n = \\frac{n}{2}[2a + (n-1)d]$$`} inline={false} />
+                          <RenderMathText text={`$$\\text{Median} = L + \\left(\\frac{n}{2} - F_c\\right) \\times \\frac{h}{f_m}, \\quad \\sin^2\\theta + \\cos^2\\theta = 1$$`} inline={false} />
                         </>
                       ) : (
                         <>

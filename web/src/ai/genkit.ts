@@ -20,6 +20,8 @@ export const GEMINI_API_KEYS = [
   process.env.GEMINI_API_KEY || process.env.GCP_API_KEY || "",
   process.env.GEMINI_API_KEY_SECONDARY || "",
   process.env.GEMINI_API_KEY_TERTIARY || process.env.GEMINI_API_KEY_3 || "",
+  process.env.GEMINI_API_KEY_QUAT || process.env.GEMINI_API_KEY_4 || "",
+  process.env.GEMINI_API_KEY_QUIN || process.env.GEMINI_API_KEY_5 || "",
   ...(process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.split(",").map((k) => k.trim()) : []),
 ].filter(Boolean);
 

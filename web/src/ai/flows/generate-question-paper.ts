@@ -155,6 +155,92 @@ function buildCQPrompt({
   chapterIdsStr: string;
   firstChapterId: string;
 }) {
+  const isMath = /math|গণিত/i.test(subjectNameEn) || /গণিত/i.test(subjectNameBn);
+  const isPhysics = /phys|পদার্থ/i.test(subjectNameEn) || /পদার্থ/i.test(subjectNameBn);
+
+  const stimulusGuidance = isMath
+    ? `• Must be a concrete mathematical scenario with SPECIFIC NUMBERS or ALGEBRAIC EQUATIONS: e.g. algebraic relations ($x + \\frac{1}{x} = 4$), geometric figures/triangles ($\triangle ABC$-এ $AB = 6\\text{ cm}$), trigonometric scenarios ($30^\\circ$ elevation angle, tower height $45\\text{ m}$), arithmetic/geometric series ($4 + 7 + 10 + \\dots$), or grouped statistical tables.
+• Format: "একটি সমান্তর ধারার $n$-তম পদ $3n - 1$ এবং একটি গুণোত্তর ধারার ১ম পদ $3$ ও সাধারণ অনুপাত $2$।"`
+    : isPhysics
+    ? `• Must be a concrete physical scenario with SPECIFIC NUMBERS and SI UNITS: mass ($m = 500\\text{ g}$), velocity ($v = 20\\text{ ms}^{-1}$), height, force, or circuit values ($V = 220\\text{ V}$, $R = 10\\,\\Omega$).
+• Format: "একটি $2\\text{ kg}$ ভরের স্থির বস্তুর ওপর $10\\text{ N}$ বল $5\\text{ s}$ ধরে ক্রিয়া করে।"`
+    : `• Must be a concrete real-world scenario with SPECIFIC NUMBERS: atomic numbers (Z=11), percentages (৭৫%), concentrations (0.2 M), temperatures, chemical formulas with ΔH values.
+• Format: "মৌল A-এর পারমাণবিক সংখ্যা $11$ এবং মৌল B-এর পারমাণবিক সংখ্যা $17$।"`;
+
+  const exampleStimulusBn = isMath
+    ? "একটি সমান্তর ধারার ১০ম পদ $52$ এবং ১৬তম পদ $82$। অপর একটি গুণোত্তর ধারার ১ম পদ $3$ এবং সাধারণ অনুপাত $2$।"
+    : isPhysics
+    ? "একটি $200\\text{ g}$ ভরের ক্রিকেট বলকে $30\\text{ ms}^{-1}$ বেগে খাড়া উপরের দিকে নিক্ষেপ করা হলো।"
+    : "মৌল $A$ এর পারমাণবিক সংখ্যা $11$ এবং মৌল $B$ এর পারমাণবিক সংখ্যা $17$। উভয় মৌল একত্রিত হয়ে একটি যৌগ গঠন করে এবং বিক্রিয়াটির $\\Delta H = -411\\text{ kJ/mol}$।";
+
+  const exampleStimulusEn = isMath
+    ? "The 10th term of an arithmetic series is 52 and the 16th term is 82. Another geometric series has 1st term 3 and common ratio 2."
+    : isPhysics
+    ? "A cricket ball of mass 200 g is thrown vertically upward with a velocity of 30 m/s."
+    : "Element A has atomic number 11 and element B has atomic number 17. Both elements combine to form a compound with ΔH = -411 kJ/mol.";
+
+  const exampleSubQuestions = isMath
+    ? [
+        {
+          part: "ক",
+          text_bn: "অনুক্রম ও ধারার মধ্যে মূল পার্থক্য কী?",
+          text_en: "What is the primary difference between a sequence and a series?",
+          marks: 1,
+          rubric_step_rules: "অনুক্রম ও ধারার সঠিক সংজ্ঞার্থ পার্থক্যের জন্য ১ নম্বর।",
+        },
+        {
+          part: "খ",
+          text_bn: "উদ্দীপকের গুণোত্তর ধারাটির ৫ম পদ নির্ণয় করো।",
+          text_en: "Find the 5th term of the geometric series from the stimulus.",
+          marks: 2,
+          rubric_step_rules: "সূত্রে মান বসানোর জন্য ১ নম্বর, সঠিক উত্তরের জন্য ১ নম্বর।",
+        },
+        {
+          part: "গ",
+          text_bn: "সমান্তর ধারাটির ১ম পদ ও সাধারণ অন্তর নির্ণয় করে প্রথম ২৫টি পদের সমষ্টি বের করো।",
+          text_en: "Find the first term and common difference of the arithmetic series and calculate the sum of the first 25 terms.",
+          marks: 3,
+          rubric_step_rules: "সহসমীকরণ গঠন ও সমাধানের জন্য ১ নম্বর, সমষ্টির সূত্রে মান বসানোর জন্য ১ নম্বর, সঠিক উত্তরের জন্য ১ নম্বর।",
+        },
+        {
+          part: "ঘ",
+          text_bn: "সমান্তর ধারাটির কততম পদ $142$ হবে? গাণিতিকভাবে বিশ্লেষণ করো।",
+          text_en: "Which term of the arithmetic series will be 142? Analyze mathematically.",
+          marks: 4,
+          rubric_step_rules: "শর্তমতে সমীকরণ গঠনের জন্য ১ নম্বর, ধাপভিত্তিক সমাধানের জন্য ২ নম্বর, চূড়ান্ত সিদ্ধান্তের জন্য ১ নম্বর।",
+        },
+      ]
+    : [
+        {
+          part: "ক",
+          text_bn: "আয়নিক বন্ধন কাকে বলে?",
+          text_en: "What is an ionic bond?",
+          marks: 1,
+          rubric_step_rules: "আয়নিক বন্ধনের সঠিক ও সম্পূর্ণ সংজ্ঞার জন্য ১ নম্বর।",
+        },
+        {
+          part: "খ",
+          text_bn: "সমযোজী যৌগ বিদ্যুৎ পরিবাহী নয় কেন? ব্যাখ্যা করো।",
+          text_en: "Why are covalent compounds non-conductors of electricity? Explain.",
+          marks: 2,
+          rubric_step_rules: "মুক্ত আয়নের অনুপস্থিতির কারণ উল্লেখ করার জন্য ১ নম্বর, সঠিক ব্যাখ্যার জন্য আরও ১ নম্বর।",
+        },
+        {
+          part: "গ",
+          text_bn: "উদ্দীপকের $A$ ও $B$ মৌল দ্বারা গঠিত যৌগের সংকেত নির্ণয় করো এবং বন্ধন গঠন প্রক্রিয়া দেখাও।",
+          text_en: "Determine the formula of the compound formed by elements A and B and show the bond formation process.",
+          marks: 3,
+          rubric_step_rules: "যোজ্যতা ও সংকেতের জন্য ১ নম্বর, বন্ধন প্রক্রিয়া দেখানোর জন্য ১ নম্বর, সম্পূর্ণ ব্যাখ্যার জন্য ১ নম্বর।",
+        },
+        {
+          part: "ঘ",
+          text_bn: "উদ্দীপকের মৌল দুটির পর্যায় সারণিতে অবস্থান ও পারমাণবিক আকারের পরিবর্তন বিশ্লেষণ করো।",
+          text_en: "Analyze the position and atomic radius trend of both elements in the periodic table.",
+          marks: 4,
+          rubric_step_rules: "ইলেকট্রন বিন্যাসের জন্য ১ নম্বর, পর্যাবৃত্ত ধর্মের জন্য ২ নম্বর, চূড়ান্ত বিশ্লেষণের জন্য ১ নম্বর।",
+        },
+      ];
+
   return `You are a senior NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner. Write ${cqCount} authentic ${difficulty} Creative Questions (সৃজনশীল প্রশ্ন) in Bengali following NCTB 2025 board standards exactly.
 
 MANDATORY: Generate EXACTLY ${cqCount} CQs. Each CQ = 10 marks (1+2+3+4).
@@ -167,42 +253,37 @@ CRITICAL RULES — Follow EXACTLY or the output is invalid
 ══════════════════════════════════════════════════════
 
 RULE 1 — STIMULUS (উদ্দীপক) REQUIREMENTS:
-• Must be a concrete real-world scenario with SPECIFIC NUMBERS: atomic numbers (Z=11), percentages (৭৫%), concentrations (0.2 M), temperatures, chemical formulas with ΔH values, or physical quantities with SI units.
-• Format: "মৌল A-এর পারমাণবিক সংখ্যা $11$ এবং মৌল B-এর পারমাণবিক সংখ্যা $17$।"
-• ALL math, chemical symbols, formulas MUST be wrapped in $...$: use $H_2O$, $\\Delta H = -286\\text{ kJ/mol}$, $^{35}_{17}Cl$
+${stimulusGuidance}
+• ALL math, chemical symbols, formulas MUST be wrapped in $...$: use $x^2 + 5x + 6 = 0$, $H_2O$, $F = ma$
 • The stimulus must GROUND parts (গ) and (ঘ) — students must READ the stimulus to answer them.
-• Do NOT write a generic stimulus — it must have specific numbers or data.
+• Do NOT write a generic stimulus — it must have specific numbers or mathematical data.
 
 RULE 2 — PART (ক) — 1 mark — জ্ঞানমূলক (Knowledge):
 • MUST be a simple definition question in exactly this pattern: "X কাকে বলে?" OR "X কী?"
-• Examples: "আইসোটোপ কাকে বলে?", "মোলারিটি কাকে বলে?", "রেডক্স বিক্রিয়া কী?"
 • NEVER ask a calculation in (ক). NEVER reference the stimulus in (ক).
-• Rubric: "সঠিক ও সম্পূর্ণ সংজ্ঞার জন্য ১ নম্বর।"
+• Rubric: "সঠিক ও সম্পূর্ণ সংজ্ঞার্থ লেখার জন্য ১ নম্বর।"
 
 RULE 3 — PART (খ) — 2 marks — অনুধাবনমূলক (Comprehension):
-• MUST be a "কেন?" or "ব্যাখ্যা করো" question explaining a concept or phenomenon.
-• Examples: "পটাশিয়ামের ১৯তম ইলেকট্রন $3d$ অরবিটালে না গিয়ে $4s$-এ যায় কেন?", "$CO_2$ গ্যাসীয় হলেও $SiO_2$ কঠিন কেন?"
+• MUST be a "কেন?", "ব্যাখ্যা করো", বা "অর্থ কী?" conceptual question.
 • May or may not reference stimulus — 2 marks for a well-explained reason.
-• Rubric: "সঠিক কারণ উল্লেখ করার জন্য ১ নম্বর, ব্যাখ্যার জন্য আরও ১ নম্বর।"
+• Rubric: "সঠিক ধারণা উল্লেখ করার জন্য ১ নম্বর, ব্যাখ্যার জন্য আরও ১ নম্বর।"
 
-RULE 4 — PART (গ) — 3 marks — প্রয়োগমূলক (Application) — MUST BE NUMERICAL:
+RULE 4 — PART (গ) — 3 marks — প্রয়োগমূলক (Application) — MUST BE NUMERICAL / DERIVATION:
 • MUST be a calculation/determination directly using the stimulus data.
-• MUST contain one of these verbs: "গণনা করো", "নির্ণয় করো", "বের করো", "হিসাব করো", "অঙ্কন করো"
-• MUST reference the উদ্দীপক (stimulus): "উদ্দীপকের X মৌলটির আপেক্ষিক পারমাণবিক ভর গণনা করো।"
+• MUST contain one of these verbs: "গণনা করো", "নির্ণয় করো", "বের করো", "হিসাব করো", "অঙ্কন করো", "মান নির্ণয় করো"
+• MUST reference the উদ্দীপক (stimulus).
 • Rubric (MUST BE STEP-WISE, 3 separate steps):
   "সূত্র সঠিকভাবে লেখার জন্য ১ নম্বর, উদ্দীপক থেকে সঠিক মান বসানোর জন্য ১ নম্বর, সঠিক উত্তর পাওয়ার জন্য ১ নম্বর।"
 
-RULE 5 — PART (ঘ) — 4 marks — উচ্চতর দক্ষতামূলক (Higher Ability) — MUST BE ANALYSIS:
-• MUST compare two things from the stimulus OR analyze a trend/phenomenon.
-• MUST contain one of: "বিশ্লেষণ করো", "যুক্তিসহ লেখো", "মূল্যায়ন করো", "তুলনা করো"
-• MUST reference the উদ্দীপক: "উদ্দীপকের A ও B মৌলের..."
+RULE 5 — PART (ঘ) — 4 marks — উচ্চতর দক্ষতামূলক (Higher Ability) — MUST BE ANALYSIS / PROOF:
+• MUST evaluate, compare, or prove a hypothesis based on the stimulus.
+• MUST contain one of: "বিশ্লেষণ করো", "যুক্তিসহ লেখো", "মূল্যায়ন করো", "প্রমাণ করো", "তুলনা করো"
+• MUST reference the উদ্দীপক.
 • Rubric (MUST BE STEP-WISE, 4 separate steps):
-  "সংজ্ঞা/নীতি উল্লেখের জন্য ১ নম্বর, উদ্দীপকের তথ্য প্রয়োগের জন্য ১ নম্বর, তুলনামূলক বিশ্লেষণের জন্য ১ নম্বর, সঠিক সিদ্ধান্তের জন্য ১ নম্বর।"
+  "নীতি/সূত্রের জন্য ১ নম্বর, তথ্যের প্রয়োগের জন্য ১ নম্বর, তুলনামূলক বিশ্লেষণের জন্য ১ নম্বর, সঠিক সিদ্ধান্তের জন্য ১ নম্বর।"
 
 RULE 6 — LaTeX:
-• ALL mathematical expressions, chemical formulas, and symbols MUST be in $...$
-• Correct: $H_2SO_4$, $\\Delta H = +178\\text{ kJ/mol}$, $^{35}_{17}Cl$, $1s^2 2s^2 2p^6$
-• Wrong: H2SO4, ΔH = +178 kJ/mol (bare text without $...$)
+• ALL mathematical expressions, equations, and symbols MUST be in $...$
 • In JSON strings: use $...$ directly — do NOT double-escape the $ sign.
 
 RULE 7 — Distribute questions evenly across these chapter IDs: ${chapterIdsStr}
@@ -216,38 +297,9 @@ OUTPUT FORMAT — Return ONLY this valid JSON (no markdown, no text outside JSON
       "chapter_id": "${firstChapterId}",
       "question_type": "CQ",
       "max_marks": 10,
-      "stimulus_bn": "মৌল $A$ এর পারমাণবিক সংখ্যা $11$ এবং মৌল $B$ এর পারমাণবিক সংখ্যা $17$। উভয় মৌল একত্রিত হয়ে একটি যৌগ গঠন করে এবং বিক্রিয়াটির $\\Delta H = -411\\text{ kJ/mol}$।",
-      "stimulus_en": "Element A has atomic number 11 and element B has atomic number 17. Both elements combine to form a compound with ΔH = -411 kJ/mol.",
-      "sub_questions": [
-        {
-          "part": "ক",
-          "text_bn": "আয়নিক বন্ধন কাকে বলে?",
-          "text_en": "What is an ionic bond?",
-          "marks": 1,
-          "rubric_step_rules": "আয়নিক বন্ধনের সঠিক ও সম্পূর্ণ সংজ্ঞার জন্য ১ নম্বর।"
-        },
-        {
-          "part": "খ",
-          "text_bn": "সমযোজী যৌগ বিদ্যুৎ পরিবাহী নয় কেন? ব্যাখ্যা করো।",
-          "text_en": "Why are covalent compounds non-conductors of electricity? Explain.",
-          "marks": 2,
-          "rubric_step_rules": "মুক্ত আয়নের অনুপস্থিতির কারণ উল্লেখ করার জন্য ১ নম্বর, সঠিক ব্যাখ্যার জন্য আরও ১ নম্বর।"
-        },
-        {
-          "part": "গ",
-          "text_bn": "উদ্দীপকের $A$ ও $B$ মৌল দ্বারা গঠিত যৌগের সংকেত নির্ণয় করো এবং ইলেকট্রন বিন্যাসের মাধ্যমে বন্ধন গঠন প্রক্রিয়া দেখাও।",
-          "text_en": "Determine the formula of the compound formed by elements A and B and show the bond formation process through electron configuration.",
-          "marks": 3,
-          "rubric_step_rules": "মৌল দুটির ইলেকট্রন বিন্যাস সঠিকভাবে লেখার জন্য ১ নম্বর, ইলেকট্রন আদান-প্রদান দেখানোর জন্য ১ নম্বর, সঠিক যৌগের সংকেত ($NaCl$) নির্ধারণের জন্য ১ নম্বর।"
-        },
-        {
-          "part": "ঘ",
-          "text_bn": "উদ্দীপকের যৌগটির গলনাঙ্ক, দ্রাব্যতা ও বিদ্যুৎ পরিবাহিতার বৈশিষ্ট্য বিশ্লেষণ করো এবং দৈনন্দিন জীবনে এর গুরুত্ব মূল্যায়ন করো।",
-          "text_en": "Analyze the melting point, solubility, and electrical conductivity of the compound in the stimulus and evaluate its importance in daily life.",
-          "marks": 4,
-          "rubric_step_rules": "আয়নিক যৌগের উচ্চ গলনাঙ্কের কারণ বিশ্লেষণের জন্য ১ নম্বর, পানিতে দ্রাব্যতা ও বিচ্ছিন্ন আয়নের কারণ ব্যাখ্যার জন্য ১ নম্বর, গলিত বা দ্রবীভূত অবস্থায় বিদ্যুৎ পরিবাহিতার কারণ ব্যাখ্যার জন্য ১ নম্বর, দৈনন্দিন জীবনে গুরুত্ব সঠিকভাবে মূল্যায়নের জন্য ১ নম্বর।"
-        }
-      ]
+      "stimulus_bn": "${exampleStimulusBn.replace(/"/g, '\\"')}",
+      "stimulus_en": "${exampleStimulusEn.replace(/"/g, '\\"')}",
+      "sub_questions": ${JSON.stringify(exampleSubQuestions, null, 8)}
     }
   ]
 }
@@ -273,6 +325,18 @@ function buildMCQPrompt({
   chapterIdsStr: string;
   firstChapterId: string;
 }) {
+  const isMath = /math|গণিত/i.test(subjectNameEn) || /গণিত/i.test(subjectNameBn);
+  const exampleMcqBn = isMath
+    ? "একটি বৃত্তের ব্যাসার্ধ $7\\text{ cm}$ হলে এর ক্ষেত্রফল কত?"
+    : "$H_2O$ অণুতে O-H বন্ধন কোণ কত?";
+  const exampleMcqEn = isMath
+    ? "If the radius of a circle is 7 cm, what is its area?"
+    : "What is the O-H bond angle in the H₂O molecule?";
+  const exampleOptions = isMath
+    ? ["ক) $44\\text{ cm}^2$", "খ) $154\\text{ cm}^2$", "গ) $308\\text{ cm}^2$", "ঘ) $616\\text{ cm}^2$"]
+    : ["ক) $104.5°$", "খ) $109.5°$", "গ) $120°$", "ঘ) $180°$"];
+  const exampleCorrect = isMath ? "খ) $154\\text{ cm}^2$" : "ক) $104.5°$";
+
   return `You are a senior NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner. Write ${mcqCount} authentic ${difficulty} Multiple Choice Questions (বহুনির্বাচনী প্রশ্ন) in Bengali.
 
 MANDATORY: Generate EXACTLY ${mcqCount} MCQs. Each MCQ = 1 mark.
@@ -297,7 +361,7 @@ RULE 2 — OPTIONS:
 • mcq_correct_option MUST exactly match one of the 4 options.
 
 RULE 3 — LaTeX:
-• Chemical formulas and math in $...$: "$H_2SO_4$", "$\\Delta H$", "$^{35}_{17}Cl$"
+• Chemical formulas and math in $...$: "$H_2SO_4$", "$x^2 + 2x + 1$", "$\\Delta H$", "$^{35}_{17}Cl$"
 
 RULE 4 — Distribution:
 • Distribute questions evenly across chapter IDs: ${chapterIdsStr}
@@ -314,10 +378,10 @@ OUTPUT: Return ONLY valid JSON:
       "chapter_id": "${firstChapterId}",
       "question_type": "MCQ",
       "max_marks": 1,
-      "mcq_question_bn": "$H_2O$ অণুতে O-H বন্ধন কোণ কত?",
-      "mcq_question_en": "What is the O-H bond angle in the H₂O molecule?",
-      "mcq_options": ["ক) $104.5°$", "খ) $109.5°$", "গ) $120°$", "ঘ) $180°$"],
-      "mcq_correct_option": "ক) $104.5°$"
+      "mcq_question_bn": "${exampleMcqBn.replace(/"/g, '\\"')}",
+      "mcq_question_en": "${exampleMcqEn.replace(/"/g, '\\"')}",
+      "mcq_options": ${JSON.stringify(exampleOptions)},
+      "mcq_correct_option": "${exampleCorrect.replace(/"/g, '\\"')}"
     }
   ]
 }

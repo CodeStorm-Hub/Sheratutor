@@ -176,9 +176,16 @@ export async function POST(req: Request) {
     (mode === "rubric" ? "socratic" : "direct");
 
   const chapterId = pick("chapterId");
-  const subjectCode = (pick("subjectCode") as string) || "SSC-CHEM";
+  const rawSubjectCode = pick("subjectCode") as string | undefined;
   let subjectName = pick("subjectName") as string | undefined;
   let chapterName = pick("chapterName") as string | undefined;
+
+  let subjectCode = rawSubjectCode;
+  if (!subjectCode && subjectName) {
+    if (/math|গণিত/i.test(subjectName)) subjectCode = "SSC-MATH";
+    else if (/chem|রসায়ন/i.test(subjectName)) subjectCode = "SSC-CHEM";
+    else if (/phys|পদার্থ/i.test(subjectName)) subjectCode = "SSC-PHY";
+  }
   // Client-supplied academic frame is ignored for rubric mode (loaded from DB).
   let questionText = pick("questionText") as string | undefined;
   let studentAnswerChunk = pick("studentAnswerChunk") as string | undefined;

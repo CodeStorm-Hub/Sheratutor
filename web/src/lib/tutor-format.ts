@@ -91,8 +91,8 @@ export function detectSolutionLeak(text: string, hintRung: HintRung = 3): {
   }
 
   const solutionPatterns = [
-    /(?:the\s+)?(?:final\s+)?(?:answer|result|kinetic energy|velocity|work done|acceleration|force)\s+(?:is|=|:)\s*([$]?\s*[0-9\u09E6-\u09EF][^\n.,]*)/gi,
-    /(?:সুতরাং,?\s+)?(?:গাড়িটির\s+|বস্তুটির\s+)?(?:নির্ণেয়\s+|চূড়ান্ত\s+)?(?:উত্তর|গতিশক্তি|বেগ|বল|ত্বরণ|কাজ|দূরত্ব|ভর)\s*(?:হলো|হবে|:|ই হলো|=)\s*([$]?\s*[0-9\u09E6-\u09EF][^\n.,]*)/gi,
+    /(?:the\s+)?(?:final\s+)?(?:answer|result|kinetic energy|velocity|work done|acceleration|force|area|volume|median|mean|mode|roots?)\s+(?:is|=|:)\s*([$]?\s*[0-9\u09E6-\u09EF][^\n.,]*)/gi,
+    /(?:সুতরাং,?\s+)?(?:গাড়িটির\s+|বস্তুটির\s+)?(?:নির্ণেয়\s+|চূড়ান্ত\s+)?(?:উত্তর|গতিশক্তি|বেগ|বল|ত্বরণ|কাজ|দূরত্ব|ভর|ক্ষেত্রফল|পরিসীমা|আয়তন|মধ্যক|গড়|প্রচুরক|মূল|মান)\s*(?:হলো|হবে|:|ই হলো|=)\s*([$]?\s*[0-9\u09E6-\u09EF][^\n.,]*)/gi,
     /\\boxed\s*\{([^}]+)\}/gi,
   ];
 

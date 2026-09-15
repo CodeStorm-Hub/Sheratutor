@@ -12,11 +12,11 @@ export const searchTextbookCurriculum = ai.defineTool(
   {
     name: "searchTextbookCurriculum",
     description:
-      "Searches official NCTB Bangladeshi secondary/higher-secondary physics textbooks for verified definitions, laws, and formulas.",
+      "Searches official NCTB Bangladeshi secondary textbooks across Mathematics (গণিত), Chemistry (রসায়ন), and Physics (পদার্থবিজ্ঞান) for verified definitions, theorems, formulas, and proofs.",
     inputSchema: z.object({
-      query: z.string().describe("The physics concept, formula name, or question to search in the textbook"),
+      query: z.string().describe("The concept, theorem, formula name, or question to search in the textbook"),
       chapterId: z.string().nullable().optional().describe("Optional chapter UUID to constrain search"),
-      subjectCode: z.string().default("SSC-PHY").describe("Subject code (e.g. 'SSC-PHY', 'SSC-CHEM')"),
+      subjectCode: z.string().optional().describe("Optional subject code (e.g. 'SSC-MATH', 'SSC-CHEM', 'SSC-PHY')"),
       language: z.enum(["bn", "en"]).default("bn").describe("Language preference"),
     }),
     outputSchema: z.object({
@@ -31,7 +31,7 @@ export const searchTextbookCurriculum = ai.defineTool(
       ),
     }),
   },
-  async ({ query, chapterId, subjectCode = "SSC-PHY", language = "bn" }) => {
+  async ({ query, chapterId, subjectCode, language = "bn" }) => {
     try {
       const isUuid = (val?: string | null) =>
         !!val && /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(val);
@@ -145,9 +145,19 @@ export const verifyPhysicsCalculation = ai.defineTool(
           "P = h_rho_g",
           "V = IR",
           "P = VI",
+          "quadratic: ax^2 + bx + c = 0",
+          "ap_term: an = a + (n-1)d",
+          "ap_sum: Sn = n/2(2a + (n-1)d)",
+          "gp_term: an = a*r^(n-1)",
+          "gp_sum: Sn = a(r^n - 1)/(r - 1)",
+          "circle_area: A = pi*r^2",
+          "cylinder_volume: V = pi*r^2*h",
+          "sphere_volume: V = 4/3*pi*r^3",
+          "grouped_median: L + ((n/2 - Fc)/fm)*h",
+          "pythagoras: c^2 = a^2 + b^2",
           "custom",
         ])
-        .describe("The physical formula to evaluate"),
+        .describe("The physics or mathematics formula to evaluate"),
       variables: z
         .record(z.string(), z.union([z.number(), z.string()]))
         .describe("Known variables (e.g. { u: 0, a: 2, t: 10 } or { m: 500, v: 20 })"),
@@ -598,6 +608,163 @@ export const verifyPhysicsCalculation = ai.defineTool(
           steps.push(`Formula: I = P / V`);
           steps.push(`Substitution: I = ${P} / ${V}`);
           steps.push(`Result: I = ${result} ${unit}`);
+        }
+        break;
+      }
+
+      case "quadratic: ax^2 + bx + c = 0": {
+        const a = v.a ?? 1;
+        const b = v.b ?? 0;
+        const c = v.c ?? 0;
+        const disc = b * b - 4 * a * c;
+        if (targetVariable === "D" || targetVariable === "discriminant") {
+          result = disc;
+          unit = "";
+          steps.push(`Formula: D = b² - 4ac`);
+          steps.push(`Substitution: D = (${b})² - 4 × (${a}) × (${c})`);
+          steps.push(`Result: D = ${result}`);
+        } else if (targetVariable === "x2") {
+          result = disc >= 0 ? (-b - Math.sqrt(disc)) / (2 * a) : NaN;
+          unit = "";
+          steps.push(`Formula: x₂ = (-b - √(b² - 4ac)) / (2a)`);
+          steps.push(`Substitution: x₂ = (-(${b}) - √(${disc})) / (2 × ${a})`);
+          steps.push(`Result: x₂ = ${result}`);
+        } else {
+          // Default or x1
+          result = disc >= 0 ? (-b + Math.sqrt(disc)) / (2 * a) : NaN;
+          unit = "";
+          steps.push(`Formula: x₁ = (-b + √(b² - 4ac)) / (2a)`);
+          steps.push(`Substitution: x₁ = (-(${b}) + √(${disc})) / (2 × ${a})`);
+          steps.push(`Result: x₁ = ${result}`);
+        }
+        break;
+      }
+
+      case "ap_term: an = a + (n-1)d": {
+        const a = v.a ?? 0;
+        const n = v.n ?? 1;
+        const d = v.d ?? 0;
+        result = a + (n - 1) * d;
+        unit = "";
+        steps.push(`Formula: aₙ = a + (n - 1)d`);
+        steps.push(`Substitution: aₙ = ${a} + (${n} - 1) × ${d}`);
+        steps.push(`Result: aₙ = ${result}`);
+        break;
+      }
+
+      case "ap_sum: Sn = n/2(2a + (n-1)d)": {
+        const a = v.a ?? 0;
+        const n = v.n ?? 1;
+        const d = v.d ?? 0;
+        result = (n / 2) * (2 * a + (n - 1) * d);
+        unit = "";
+        steps.push(`Formula: Sₙ = (n / 2) × [2a + (n - 1)d]`);
+        steps.push(`Substitution: Sₙ = (${n} / 2) × [2 × ${a} + (${n} - 1) × ${d}]`);
+        steps.push(`Result: Sₙ = ${result}`);
+        break;
+      }
+
+      case "gp_term: an = a*r^(n-1)": {
+        const a = v.a ?? 1;
+        const n = v.n ?? 1;
+        const r = v.r ?? 1;
+        result = a * Math.pow(r, n - 1);
+        unit = "";
+        steps.push(`Formula: aₙ = a × rⁿ⁻¹`);
+        steps.push(`Substitution: aₙ = ${a} × (${r})^(${n} - 1)`);
+        steps.push(`Result: aₙ = ${result}`);
+        break;
+      }
+
+      case "gp_sum: Sn = a(r^n - 1)/(r - 1)": {
+        const a = v.a ?? 1;
+        const n = v.n ?? 1;
+        const r = v.r ?? 2;
+        if (r === 1) {
+          result = a * n;
+        } else {
+          result = (a * (Math.pow(r, n) - 1)) / (r - 1);
+        }
+        unit = "";
+        steps.push(`Formula: Sₙ = a(rⁿ - 1) / (r - 1)`);
+        steps.push(`Substitution: Sₙ = ${a} × (${r}^${n} - 1) / (${r} - 1)`);
+        steps.push(`Result: Sₙ = ${result}`);
+        break;
+      }
+
+      case "circle_area: A = pi*r^2": {
+        const r = v.r ?? 0;
+        const pi = Math.PI;
+        result = pi * Math.pow(r, 2);
+        unit = "sq units";
+        steps.push(`Formula: A = πr²`);
+        steps.push(`Substitution: A = π × (${r})²`);
+        steps.push(`Result: A = ${result} ${unit}`);
+        break;
+      }
+
+      case "cylinder_volume: V = pi*r^2*h": {
+        const r = v.r ?? 0;
+        const h = v.h ?? 0;
+        const pi = Math.PI;
+        result = pi * Math.pow(r, 2) * h;
+        unit = "cubic units";
+        steps.push(`Formula: V = πr²h`);
+        steps.push(`Substitution: V = π × (${r})² × ${h}`);
+        steps.push(`Result: V = ${result} ${unit}`);
+        break;
+      }
+
+      case "sphere_volume: V = 4/3*pi*r^3": {
+        const r = v.r ?? 0;
+        const pi = Math.PI;
+        result = (4 / 3) * pi * Math.pow(r, 3);
+        unit = "cubic units";
+        steps.push(`Formula: V = (4/3)πr³`);
+        steps.push(`Substitution: V = (4/3) × π × (${r})³`);
+        steps.push(`Result: V = ${result} ${unit}`);
+        break;
+      }
+
+      case "grouped_median: L + ((n/2 - Fc)/fm)*h": {
+        const L = v.L ?? 0;
+        const n = v.n ?? 0;
+        const Fc = v.Fc ?? 0;
+        const fm = v.fm ?? 1;
+        const h = v.h ?? 1;
+        result = L + ((n / 2 - Fc) / fm) * h;
+        unit = "";
+        steps.push(`Formula: Median = L + ((n/2 - Fc) / fm) × h`);
+        steps.push(`Substitution: Median = ${L} + ((${n}/2 - ${Fc}) / ${fm}) × ${h}`);
+        steps.push(`Result: Median = ${result}`);
+        break;
+      }
+
+      case "pythagoras: c^2 = a^2 + b^2": {
+        if (targetVariable === "c") {
+          const a = v.a ?? 0;
+          const b = v.b ?? 0;
+          result = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+          unit = "";
+          steps.push(`Formula: c = √(a² + b²)`);
+          steps.push(`Substitution: c = √(${a}² + ${b}²)`);
+          steps.push(`Result: c = ${result}`);
+        } else if (targetVariable === "a") {
+          const c = v.c ?? 0;
+          const b = v.b ?? 0;
+          result = Math.sqrt(Math.max(0, Math.pow(c, 2) - Math.pow(b, 2)));
+          unit = "";
+          steps.push(`Formula: a = √(c² - b²)`);
+          steps.push(`Substitution: a = √(${c}² - ${b}²)`);
+          steps.push(`Result: a = ${result}`);
+        } else {
+          const c = v.c ?? 0;
+          const a = v.a ?? 0;
+          result = Math.sqrt(Math.max(0, Math.pow(c, 2) - Math.pow(a, 2)));
+          unit = "";
+          steps.push(`Formula: b = √(c² - a²)`);
+          steps.push(`Substitution: b = √(${c}² - ${a}²)`);
+          steps.push(`Result: b = ${result}`);
         }
         break;
       }

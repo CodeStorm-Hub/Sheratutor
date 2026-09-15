@@ -140,6 +140,80 @@ describe('verifyPhysicsCalculation Tool', () => {
     expect(res.result).toBe(17);
     expect(res.unit).toBe('ms⁻¹');
   });
+
+  it('calculates roots of quadratic equation ax^2 + bx + c = 0', async () => {
+    // x^2 - 5x + 6 = 0 -> roots are 3 and 2
+    const res1 = await verifyPhysicsCalculation({
+      formula: 'quadratic: ax^2 + bx + c = 0',
+      variables: { a: 1, b: -5, c: 6 },
+      targetVariable: 'x1',
+    });
+    const res2 = await verifyPhysicsCalculation({
+      formula: 'quadratic: ax^2 + bx + c = 0',
+      variables: { a: 1, b: -5, c: 6 },
+      targetVariable: 'x2',
+    });
+
+    expect(res1.result).toBe(3);
+    expect(res2.result).toBe(2);
+    expect(res1.steps[0]).toContain('Formula: x₁');
+  });
+
+  it('calculates arithmetic progression n-th term and sum', async () => {
+    // a = 5, d = 3, n = 10 -> a_10 = 5 + 9*3 = 32; S_10 = 5 * (10 + 27) = 185
+    const resTerm = await verifyPhysicsCalculation({
+      formula: 'ap_term: an = a + (n-1)d',
+      variables: { a: 5, d: 3, n: 10 },
+      targetVariable: 'an',
+    });
+    const resSum = await verifyPhysicsCalculation({
+      formula: 'ap_sum: Sn = n/2(2a + (n-1)d)',
+      variables: { a: 5, d: 3, n: 10 },
+      targetVariable: 'Sn',
+    });
+
+    expect(resTerm.result).toBe(32);
+    expect(resSum.result).toBe(185);
+  });
+
+  it('calculates geometric progression n-th term and sum', async () => {
+    // a = 2, r = 3, n = 4 -> a_4 = 2 * 27 = 54; S_4 = 2 * (81 - 1) / 2 = 80
+    const resTerm = await verifyPhysicsCalculation({
+      formula: 'gp_term: an = a*r^(n-1)',
+      variables: { a: 2, r: 3, n: 4 },
+      targetVariable: 'an',
+    });
+    const resSum = await verifyPhysicsCalculation({
+      formula: 'gp_sum: Sn = a(r^n - 1)/(r - 1)',
+      variables: { a: 2, r: 3, n: 4 },
+      targetVariable: 'Sn',
+    });
+
+    expect(resTerm.result).toBe(54);
+    expect(resSum.result).toBe(80);
+  });
+
+  it('calculates statistics grouped median', async () => {
+    // L = 40, n = 50 (n/2 = 25), Fc = 18, fm = 14, h = 10 -> 40 + (7 / 14) * 10 = 45
+    const res = await verifyPhysicsCalculation({
+      formula: 'grouped_median: L + ((n/2 - Fc)/fm)*h',
+      variables: { L: 40, n: 50, Fc: 18, fm: 14, h: 10 },
+      targetVariable: 'median',
+    });
+
+    expect(res.result).toBe(45);
+  });
+
+  it('calculates hypotenuse using Pythagoras theorem', async () => {
+    // a = 3, b = 4 -> c = 5
+    const res = await verifyPhysicsCalculation({
+      formula: 'pythagoras: c^2 = a^2 + b^2',
+      variables: { a: 3, b: 4 },
+      targetVariable: 'c',
+    });
+
+    expect(res.result).toBe(5);
+  });
 });
 
 describe('requestPracticeQuizInterrupt Tool', () => {

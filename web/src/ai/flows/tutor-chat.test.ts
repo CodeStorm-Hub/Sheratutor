@@ -64,6 +64,18 @@ describe('detectSolutionLeak', () => {
     expect(result.sanitizedText).toContain('মানটি সূত্রে বসিয়ে নিজেই চূড়ান্ত উত্তরটি বের করো');
   });
 
+  it('should redact mathematical area and median leaks when hintRung < 7', () => {
+    const leakedArea = 'সুতরাং নির্ণেয় ক্ষেত্রফল হলো ১৫৪ বর্গ সেন্টিমিটার।';
+    const resArea = detectSolutionLeak(leakedArea, 3);
+    expect(resArea.hasLeak).toBe(true);
+    expect(resArea.sanitizedText).toContain('মানটি সূত্রে বসিয়ে নিজেই চূড়ান্ত উত্তরটি বের করো');
+
+    const leakedMedian = 'প্রদত্ত উপাত্তের নির্ণেয় মধ্যক হলো ৪৫।';
+    const resMedian = detectSolutionLeak(leakedMedian, 4);
+    expect(resMedian.hasLeak).toBe(true);
+    expect(resMedian.sanitizedText).toContain('মানটি সূত্রে বসিয়ে নিজেই চূড়ান্ত উত্তরটি বের করো');
+  });
+
   it('should allow final answers when hintRung is 7', () => {
     const allowed = 'The final answer is $1250\\text{ J}$।';
     const result = detectSolutionLeak(allowed, 7);
