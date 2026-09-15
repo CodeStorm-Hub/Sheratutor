@@ -120,8 +120,13 @@ export const retrieveGroundingFlow = ai.defineFlow(
     const effectiveSubjectCode = subjectCode || detectSubjectFromQuery(queryText);
 
     // 1. Embed query with gemini-embedding-2 (1024 dimensions) with automatic key failover
-    const embedding = await embedWithGeminiFallback(enrichedQuery, 1024);
-    if (!embedding || embedding.length === 0) throw new Error("retrieveGrounding: embedding failed");
+    let embedding: number[] | null = null;
+    try {
+      embedding = await embedWithGeminiFallback(enrichedQuery, 1024);
+    } catch (embedErr) {
+      console.warn("retrieveGrounding: embedding failed or quota exhausted, falling back to sparse FTS / direct search:", embedErr);
+      embedding = new Array(1024).fill(0);
+    }
 
     const supabase = getServiceRoleClient();
     
@@ -156,9 +161,34 @@ export const retrieveGroundingFlow = ai.defineFlow(
         error = fallbackRes.error;
       }
     }
+
+    // Direct Chapter Fallback: If still 0 chunks and chapterId is known, query directly
+    if ((!data || data.length === 0) && isUuid(chapterId)) {
+      const { data: directData } = await supabase
+        .from("curriculum_chunks")
+        .select("id, content_chunk, chunk_type, parent_chunk_id, section_no, section_title, official_rubric_rules, source_book_page_ref, diagram_image_urls")
+        .eq("chapter_id", chapterId as string)
+        .limit(matchCount);
+      if (directData && directData.length > 0) {
+        data = directData.map((c: any) => ({
+          chunk_id: c.id,
+          content_chunk: c.content_chunk,
+          chunk_type: c.chunk_type,
+          parent_chunk_id: c.parent_chunk_id,
+          section_no: c.section_no,
+          section_title: c.section_title,
+          official_rubric_rules: c.official_rubric_rules,
+          source_book_page_ref: c.source_book_page_ref,
+          diagram_image_urls: c.diagram_image_urls,
+          similarity: 0.5,
+        }));
+        error = null;
+      }
+    }
+
     console.log("retrieveGroundingFlow RPC result count:", data?.length, "error:", error?.message, "diagrams:", data?.map((d: any) => d.diagram_image_urls));
 
-    if (error) throw new Error(`retrieveGrounding: ${error.message}`);
+    if (error && (!data || data.length === 0)) throw new Error(`retrieveGrounding: ${error.message}`);
 
     let chunks = (data ?? []) as z.infer<typeof GroundingChunkSchema>[];
 
@@ -185,6 +215,66 @@ export const retrieveGroundingFlow = ai.defineFlow(
           }
           return c;
         });
+      }
+    }
+
+    // 4. Diagram Enrichment: If no diagrams were present in the retrieved chunks, but the query or chapter is visual/geometric,
+    // fetch authentic textbook diagrams from the same page(s) or chapter.
+    const retrievedDiagrams = chunks.flatMap((c) => c.diagram_image_urls ?? []).filter(Boolean);
+    if (retrievedDiagrams.length === 0 && chunks.length > 0) {
+      try {
+        const pageRefs = chunks
+          .map((c) => c.source_book_page_ref)
+          .filter((p): p is string => Boolean(p));
+
+        const effectiveChapId = isUuid(chapterId) ? (chapterId as string) : undefined;
+
+        // 4a. Prioritize diagrams from the same textbook page(s)
+        let pageDiagrams: string[] = [];
+        if (pageRefs.length > 0) {
+          let pageQuery = supabase
+            .from("curriculum_chunks")
+            .select("diagram_image_urls")
+            .in("source_book_page_ref", pageRefs)
+            .not("diagram_image_urls", "is", null);
+
+          if (effectiveChapId) {
+            pageQuery = pageQuery.eq("chapter_id", effectiveChapId);
+          }
+
+          const { data: pageRows } = await pageQuery.limit(3);
+          pageDiagrams = (pageRows ?? [])
+            .flatMap((r: any) => (r.diagram_image_urls ?? []) as string[])
+            .filter(Boolean);
+        }
+
+        if (pageDiagrams.length > 0) {
+          chunks[0] = {
+            ...chunks[0],
+            diagram_image_urls: pageDiagrams,
+          };
+        } else if (effectiveChapId) {
+          // 4b. Fallback to chapter diagrams
+          const { data: chapRows } = await supabase
+            .from("curriculum_chunks")
+            .select("diagram_image_urls")
+            .eq("chapter_id", effectiveChapId)
+            .not("diagram_image_urls", "is", null)
+            .limit(3);
+
+          const chapDiagrams = (chapRows ?? [])
+            .flatMap((r: any) => (r.diagram_image_urls ?? []) as string[])
+            .filter(Boolean);
+
+          if (chapDiagrams.length > 0) {
+            chunks[0] = {
+              ...chunks[0],
+              diagram_image_urls: chapDiagrams,
+            };
+          }
+        }
+      } catch (diagErr) {
+        console.warn("retrieveGroundingFlow: diagram enrichment failed:", diagErr);
       }
     }
 
