@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 389,
+  "pdf_page_no": 394,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Appendix",
+      "chunk_type": "worked_example",
+      "content_markdown": "Denominator of the third fraction is $$x^2 - x - 12 = x^2 + 3x - 4x - 12$$\n$$= x(x + 3) - 4(x + 3) = (x + 3)(x - 4)$$L.C.M. of the three denominators is $$x(x + 2)(x + 3)(x - 4)$$Now express fractions with common denominators$$\\therefore \\text{ First fraction is } = \\frac{1}{x^2 + 3x} = \\frac{1}{x(x + 3)} = \\frac{1 \\times (x + 2)(x - 4)}{x(x + 3) \\times (x + 2)(x - 4)}$$\n$$= \\frac{(x + 2)(x - 4)}{x(x + 2)(x + 3)(x - 4)}$$Second fraction is $$= \\frac{2}{x^2 + 5x + 6} = \\frac{2}{(x + 2)(x + 3)} = \\frac{2 \\times x(x - 4)}{(x + 2)(x + 3) \\times x(x - 4)}$$\n$$= \\frac{2x(x - 4)}{x(x + 2)(x + 3)(x - 4)}$$Third fraction is $$= \\frac{3}{x^2 - x - 12} = \\frac{3}{(x + 3)(x - 4)} = \\frac{3 \\times x(x + 2)}{(x + 3)(x - 4) \\times x(x + 2)}$$\n$$= \\frac{3x(x + 2)}{x(x + 2)(x + 3)(x - 4)}.$$\n\n$\\therefore$ The required three fractions are respectively:\n$$\n$$\\frac{(x + 2)(x - 4)}{x(x + 2)(x + 3)(x - 4)}, \\frac{2x(x - 4)}{x(x + 2)(x + 3)(x - 4)}, \\frac{3x(x + 2)}{x(x + 2)(x + 3)(x - 4)}.$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

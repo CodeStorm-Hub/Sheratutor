@@ -1,0 +1,5988 @@
+{
+  "bn": {
+    "stats": {
+      "total_expected": 344,
+      "total_extracted": 344,
+      "missing_files": [],
+      "offset_mismatches": [],
+      "chapter_mismatches": [],
+      "empty_sections": [],
+      "latex_issues": [
+        "p.9 [sec 1]: Unbalanced inline math ($) count: 11",
+        "p.22 [sec 1]: Unbalanced braces in math: $A = \\{x : x...$",
+        "p.22 [sec 1]: Unbalanced braces in math: $\\}...$",
+        "p.22 [sec 2]: Unbalanced braces in math: $\\therefore A = \\{x : x, 7...$",
+        "p.22 [sec 2]: Unbalanced braces in math: $0 < x \\le 28\\}...$",
+        "p.22 [sec 3]: Unbalanced braces in math: $B = \\{x : x, 28...$",
+        "p.22 [sec 3]: Unbalanced braces in math: $\\}...$",
+        "p.22 [sec 4]: Unbalanced braces in math: $C = \\{x : x...$",
+        "p.22 [sec 4]: Unbalanced braces in math: $x^2 < 18\\}...$",
+        "p.23 [sec 1]: Unbalanced braces in math: $B = \\{y : y...$",
+        "p.23 [sec 1]: Unbalanced braces in math: $y^3 \\le 18\\}...$",
+        "p.23 [sec 2]: Unbalanced braces in math: $F = \\{x : x...$",
+        "p.23 [sec 2]: Unbalanced braces in math: $30 < x < 70\\}...$",
+        "p.23 [sec 3]: Unbalanced braces in math: $A = \\{x : x...$",
+        "p.23 [sec 3]: Unbalanced braces in math: $\\}...$",
+        "p.23 [sec 3]: Unbalanced braces in math: $Q = \\{\\frac{a}{b} : a...$",
+        "p.23 [sec 3]: Unbalanced braces in math: $b \\neq 0\\}...$",
+        "p.24 [sec 0]: Unbalanced braces in math: $\\{x : x...$",
+        "p.24 [sec 0]: Unbalanced braces in math: $x < 4\\}...$",
+        "p.24 [sec 0]: Unbalanced braces in math: $\\{\\frac{p}{q} : p...$",
+        "p.24 [sec 0]: Unbalanced braces in math: $q > 1\\}...$",
+        "p.24 [sec 0]: Unbalanced braces in math: $\\{y : y \\in \\mathbb{N}...$",
+        "p.24 [sec 0]: Unbalanced braces in math: $y^2 < 100 < y^3\\}...$",
+        "p.24 [sec 1]: Unbalanced braces in math: $\\{x \\in \\mathbb{N} : x...$",
+        "p.24 [sec 1]: Unbalanced braces in math: $23 < x < 29\\}...$",
+        "p.25 [sec 4]: Unbalanced braces in math: $P = \\{x : x, 12...$",
+        "p.25 [sec 4]: Unbalanced braces in math: $\\}...$",
+        "p.25 [sec 4]: Unbalanced braces in math: $Q = \\{x : x, 3...$",
+        "p.25 [sec 4]: Unbalanced braces in math: $x \\leq 12\\}...$",
+        "p.25 [sec 4]: Unbalanced braces in math: $P = \\{x : x, 12...$",
+        "p.25 [sec 4]: Unbalanced braces in math: $\\}...$",
+        "p.26 [sec 0]: Unbalanced braces in math: $Q = \\{x : x, 3...$",
+        "p.26 [sec 0]: Unbalanced braces in math: $x \\le 12\\}...$",
+        "p.27 [sec 0]: Unbalanced braces in math: $A \\cup B = \\{x : x \\in A...$",
+        "p.27 [sec 0]: Unbalanced braces in math: $x \\in B\\}...$",
+        "p.27 [sec 2]: Unbalanced braces in math: $A \\cap B = \\{x : x \\in A...$",
+        "p.27 [sec 2]: Unbalanced braces in math: $x \\in B\\}...$",
+        "p.27 [sec 3]: Unbalanced braces in math: $Q = \\{x \\in \\mathbb{N} : x...$",
+        "p.27 [sec 3]: Unbalanced braces in math: $x \\le 8\\}...$",
+        "p.27 [sec 3]: Unbalanced braces in math: $Q = \\{x \\in \\mathbb{N} : x...$",
+        "p.27 [sec 3]: Unbalanced braces in math: $x \\le 8\\} = \\{2, 4, 6, 8\\}...$",
+        "p.31 [sec 1]: Unbalanced braces in math: $\\{x \\in \\mathbb{N} : x^2 > 9...$",
+        "p.31 [sec 1]: Unbalanced braces in math: $x^3 < 130\\}...$",
+        "p.31 [sec 1]: Unbalanced braces in math: $\\{x \\in \\mathbb{Z} : x^2 > 5...$",
+        "p.31 [sec 1]: Unbalanced braces in math: $x^3 \\le 36\\}...$",
+        "p.31 [sec 1]: Unbalanced braces in math: $\\{x \\in \\mathbb{N} : x, 36...$",
+        "p.31 [sec 1]: Unbalanced braces in math: $\\}...$",
+        "p.31 [sec 1]: Unbalanced braces in math: $\\{x \\in \\mathbb{N} : x^3 > 25...$",
+        "p.31 [sec 1]: Unbalanced braces in math: $x^4 < 264\\}...$",
+        "p.33 [sec 4]: Unbalanced braces in math: $R = \\{(x, y) : x \\in P, y \\in ...$",
+        "p.33 [sec 4]: Unbalanced braces in math: $y = 2x\\}...$",
+        "p.33 [sec 5]: Unbalanced braces in math: $R = \\{(x, y) : x \\in A, y \\in ...$",
+        "p.33 [sec 5]: Unbalanced braces in math: $x = y - 1\\}...$",
+        "p.35 [sec 2]: Unbalanced braces in math: $R = \\{(x, y) : x \\in A, y \\in ...$",
+        "p.35 [sec 2]: Unbalanced braces in math: $y = x + 1\\}...$",
+        "p.35 [sec 2]: Unbalanced braces in math: $R = \\{(x, y) : x \\in A, y \\in ...$",
+        "p.35 [sec 2]: Unbalanced braces in math: $y = x + 1\\}...$",
+        "p.35 [sec 5]: Unbalanced braces in math: $S = \\{(x, y) : x, y \\in A...$",
+        "p.35 [sec 5]: Unbalanced braces in math: $y - x = 1\\}...$",
+        "p.38 [sec 0]: Unbalanced braces in math: $U = \\{x : x \\in N...$",
+        "p.38 [sec 0]: Unbalanced braces in math: $x \\le 6\\}...$",
+        "p.38 [sec 0]: Unbalanced braces in math: $A = \\{x : x...$",
+        "p.38 [sec 0]: Unbalanced braces in math: $x \\le 5\\}...$",
+        "p.38 [sec 0]: Unbalanced braces in math: $B = \\{x : x...$",
+        "p.38 [sec 0]: Unbalanced braces in math: $x \\le 6\\}...$",
+        "p.38 [sec 1]: Unbalanced braces in math: $U = \\{x : x \\in N...$",
+        "p.38 [sec 1]: Unbalanced braces in math: $x \\le 6\\} = \\{1, 2, 3, 4, 5, 6...$",
+        "p.38 [sec 1]: Unbalanced braces in math: $A = \\{x : x...$",
+        "p.38 [sec 1]: Unbalanced braces in math: $x \\le 5\\} = \\{2, 3, 5\\}...$",
+        "p.38 [sec 1]: Unbalanced braces in math: $B = \\{x : x...$",
+        "p.38 [sec 1]: Unbalanced braces in math: $x \\le 6\\} = \\{2, 4, 6\\}...$",
+        "p.39 [sec 1]: Unbalanced braces in math: $R = \\{(x, y) : x \\in A, y \\in ...$",
+        "p.39 [sec 1]: Unbalanced braces in math: $y = x + 1\\}...$",
+        "p.39 [sec 3]: Unbalanced inline math ($) count: 9",
+        "p.39 [sec 4]: Unbalanced braces in math: $R = \\{(x, y) : x \\in A, y \\in ...$",
+        "p.39 [sec 4]: Unbalanced braces in math: $y = x + 1\\}...$",
+        "p.40 [sec 4]: Unbalanced braces in math: $\\{x \\in N : 13 < x < 17...$",
+        "p.40 [sec 4]: Unbalanced braces in math: $\\}...$",
+        "p.40 [sec 6]: Unbalanced braces in math: $A \\times B = \\{(x, y) : x \\in ...$",
+        "p.40 [sec 6]: Unbalanced braces in math: $y \\in B\\}...$",
+        "p.41 [sec 12]: Unbalanced braces in math: $R = \\{(x, y) : x \\in A, y \\in ...$",
+        "p.41 [sec 12]: Unbalanced braces in math: $x + y = 1\\}...$",
+        "p.41 [sec 12]: Unbalanced braces in math: $F = \\{(x, y) : x \\in C, y \\in ...$",
+        "p.41 [sec 12]: Unbalanced braces in math: $y = 2x\\}...$",
+        "p.42 [sec 1]: Unbalanced braces in math: $U = \\{x : x \\in \\mathbb{N}...$",
+        "p.42 [sec 1]: Unbalanced braces in math: $\\}...$",
+        "p.42 [sec 1]: Unbalanced braces in math: $A = \\{x : x \\in \\mathbb{N}...$",
+        "p.42 [sec 1]: Unbalanced braces in math: $2 \\le x \\le 7\\}...$",
+        "p.42 [sec 1]: Unbalanced braces in math: $B = \\{x : x \\in \\mathbb{N}...$",
+        "p.42 [sec 1]: Unbalanced braces in math: $3 < x < 6\\}...$",
+        "p.42 [sec 1]: Unbalanced braces in math: $C = \\{x : x \\in \\mathbb{N}...$",
+        "p.42 [sec 1]: Unbalanced braces in math: $x^3 < 130\\}...$",
+        "p.58 [sec 2]: Unbalanced inline math ($) count: 5",
+        "p.178 [sec 0]: Unbalanced display math ($$) count: 9",
+        "p.178 [sec 0]: Unbalanced inline math ($) count: 15",
+        "p.212 [sec 1]: Unbalanced display math ($$) count: 9",
+        "p.212 [sec 1]: Unbalanced inline math ($) count: 9",
+        "p.226 [sec 1]: Unbalanced braces in math: $\\left. \\begin{matrix} 2x - y =...$",
+        "p.226 [sec 2]: Unbalanced braces in math: $\\left. \\begin{matrix} 2x + y =...$",
+        "p.226 [sec 3]: Unbalanced braces in math: $\\left. \\begin{matrix} a_1x + b...$",
+        "p.237 [sec 3]: Unbalanced braces in math: $\\left. \\begin{matrix} 2x + y =...$",
+        "p.262 [sec 1]: Unbalanced display math ($$) count: 19",
+        "p.299 [sec 1]: Unbalanced display math ($$) count: 13",
+        "p.299 [sec 1]: Unbalanced inline math ($) count: 39",
+        "p.306 [sec 0]: Unbalanced display math ($$) count: 7",
+        "p.306 [sec 0]: Unbalanced inline math ($) count: 13"
+      ],
+      "figure_issues": [],
+      "figures_total": 273,
+      "total_characters": 494500,
+      "total_words": 88134,
+      "pages_summary": [
+        {
+          "page": 1,
+          "pdf_page": 6,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1928
+        },
+        {
+          "page": 2,
+          "pdf_page": 7,
+          "chapter": 1,
+          "sections": 6,
+          "figures": 0,
+          "chars": 2387
+        },
+        {
+          "page": 3,
+          "pdf_page": 8,
+          "chapter": 1,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1405
+        },
+        {
+          "page": 4,
+          "pdf_page": 9,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1694
+        },
+        {
+          "page": 5,
+          "pdf_page": 10,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1482
+        },
+        {
+          "page": 6,
+          "pdf_page": 11,
+          "chapter": 1,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1733
+        },
+        {
+          "page": 7,
+          "pdf_page": 12,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1182
+        },
+        {
+          "page": 8,
+          "pdf_page": 13,
+          "chapter": 1,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1925
+        },
+        {
+          "page": 9,
+          "pdf_page": 14,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1892
+        },
+        {
+          "page": 10,
+          "pdf_page": 15,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1908
+        },
+        {
+          "page": 11,
+          "pdf_page": 16,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 2958
+        },
+        {
+          "page": 12,
+          "pdf_page": 17,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 2001
+        },
+        {
+          "page": 13,
+          "pdf_page": 18,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1671
+        },
+        {
+          "page": 14,
+          "pdf_page": 19,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1473
+        },
+        {
+          "page": 15,
+          "pdf_page": 20,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1252
+        },
+        {
+          "page": 16,
+          "pdf_page": 21,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1276
+        },
+        {
+          "page": 17,
+          "pdf_page": 22,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1398
+        },
+        {
+          "page": 18,
+          "pdf_page": 23,
+          "chapter": 1,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1006
+        },
+        {
+          "page": 19,
+          "pdf_page": 24,
+          "chapter": 1,
+          "sections": 12,
+          "figures": 0,
+          "chars": 1640
+        },
+        {
+          "page": 20,
+          "pdf_page": 25,
+          "chapter": 1,
+          "sections": 9,
+          "figures": 0,
+          "chars": 1476
+        },
+        {
+          "page": 21,
+          "pdf_page": 26,
+          "chapter": 2,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1497
+        },
+        {
+          "page": 22,
+          "pdf_page": 27,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1938
+        },
+        {
+          "page": 23,
+          "pdf_page": 28,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1786
+        },
+        {
+          "page": 24,
+          "pdf_page": 29,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1686
+        },
+        {
+          "page": 25,
+          "pdf_page": 30,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1705
+        },
+        {
+          "page": 26,
+          "pdf_page": 31,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1731
+        },
+        {
+          "page": 27,
+          "pdf_page": 32,
+          "chapter": 2,
+          "sections": 6,
+          "figures": 3,
+          "chars": 1262
+        },
+        {
+          "page": 28,
+          "pdf_page": 33,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1656
+        },
+        {
+          "page": 29,
+          "pdf_page": 34,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1597
+        },
+        {
+          "page": 30,
+          "pdf_page": 35,
+          "chapter": 2,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1661
+        },
+        {
+          "page": 31,
+          "pdf_page": 36,
+          "chapter": 2,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1484
+        },
+        {
+          "page": 32,
+          "pdf_page": 37,
+          "chapter": 2,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1420
+        },
+        {
+          "page": 33,
+          "pdf_page": 38,
+          "chapter": 2,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1929
+        },
+        {
+          "page": 34,
+          "pdf_page": 39,
+          "chapter": 2,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1333
+        },
+        {
+          "page": 35,
+          "pdf_page": 40,
+          "chapter": 2,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1842
+        },
+        {
+          "page": 36,
+          "pdf_page": 41,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1650
+        },
+        {
+          "page": 37,
+          "pdf_page": 42,
+          "chapter": 2,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1089
+        },
+        {
+          "page": 38,
+          "pdf_page": 43,
+          "chapter": 2,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1670
+        },
+        {
+          "page": 39,
+          "pdf_page": 44,
+          "chapter": 2,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1573
+        },
+        {
+          "page": 40,
+          "pdf_page": 45,
+          "chapter": 2,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1149
+        },
+        {
+          "page": 41,
+          "pdf_page": 46,
+          "chapter": 2,
+          "sections": 14,
+          "figures": 0,
+          "chars": 1801
+        },
+        {
+          "page": 42,
+          "pdf_page": 47,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 1,
+          "chars": 926
+        },
+        {
+          "page": 43,
+          "pdf_page": 48,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1737
+        },
+        {
+          "page": 44,
+          "pdf_page": 49,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1428
+        },
+        {
+          "page": 45,
+          "pdf_page": 50,
+          "chapter": 3,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1535
+        },
+        {
+          "page": 46,
+          "pdf_page": 51,
+          "chapter": 3,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1271
+        },
+        {
+          "page": 47,
+          "pdf_page": 52,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1251
+        },
+        {
+          "page": 48,
+          "pdf_page": 53,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1320
+        },
+        {
+          "page": 49,
+          "pdf_page": 54,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1429
+        },
+        {
+          "page": 50,
+          "pdf_page": 55,
+          "chapter": 3,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1116
+        },
+        {
+          "page": 51,
+          "pdf_page": 56,
+          "chapter": 3,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1193
+        },
+        {
+          "page": 52,
+          "pdf_page": 57,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1425
+        },
+        {
+          "page": 53,
+          "pdf_page": 58,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1087
+        },
+        {
+          "page": 54,
+          "pdf_page": 59,
+          "chapter": 3,
+          "sections": 15,
+          "figures": 0,
+          "chars": 1327
+        },
+        {
+          "page": 55,
+          "pdf_page": 60,
+          "chapter": 3,
+          "sections": 10,
+          "figures": 0,
+          "chars": 1528
+        },
+        {
+          "page": 56,
+          "pdf_page": 61,
+          "chapter": 3,
+          "sections": 9,
+          "figures": 0,
+          "chars": 1760
+        },
+        {
+          "page": 57,
+          "pdf_page": 62,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1232
+        },
+        {
+          "page": 58,
+          "pdf_page": 63,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1476
+        },
+        {
+          "page": 59,
+          "pdf_page": 64,
+          "chapter": 3,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1450
+        },
+        {
+          "page": 60,
+          "pdf_page": 65,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1693
+        },
+        {
+          "page": 61,
+          "pdf_page": 66,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1463
+        },
+        {
+          "page": 62,
+          "pdf_page": 67,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1319
+        },
+        {
+          "page": 63,
+          "pdf_page": 68,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1350
+        },
+        {
+          "page": 64,
+          "pdf_page": 69,
+          "chapter": 3,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1271
+        },
+        {
+          "page": 65,
+          "pdf_page": 70,
+          "chapter": 3,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1237
+        },
+        {
+          "page": 66,
+          "pdf_page": 71,
+          "chapter": 3,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1103
+        },
+        {
+          "page": 67,
+          "pdf_page": 72,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1532
+        },
+        {
+          "page": 68,
+          "pdf_page": 73,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1564
+        },
+        {
+          "page": 69,
+          "pdf_page": 74,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1342
+        },
+        {
+          "page": 70,
+          "pdf_page": 75,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1562
+        },
+        {
+          "page": 71,
+          "pdf_page": 76,
+          "chapter": 3,
+          "sections": 9,
+          "figures": 0,
+          "chars": 1418
+        },
+        {
+          "page": 72,
+          "pdf_page": 77,
+          "chapter": 3,
+          "sections": 11,
+          "figures": 0,
+          "chars": 1465
+        },
+        {
+          "page": 73,
+          "pdf_page": 78,
+          "chapter": 3,
+          "sections": 17,
+          "figures": 0,
+          "chars": 2096
+        },
+        {
+          "page": 74,
+          "pdf_page": 79,
+          "chapter": 3,
+          "sections": 12,
+          "figures": 0,
+          "chars": 1617
+        },
+        {
+          "page": 75,
+          "pdf_page": 80,
+          "chapter": 4,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1201
+        },
+        {
+          "page": 76,
+          "pdf_page": 81,
+          "chapter": 4,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1848
+        },
+        {
+          "page": 77,
+          "pdf_page": 82,
+          "chapter": 4,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1920
+        },
+        {
+          "page": 78,
+          "pdf_page": 83,
+          "chapter": 4,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1849
+        },
+        {
+          "page": 79,
+          "pdf_page": 84,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 2104
+        },
+        {
+          "page": 80,
+          "pdf_page": 85,
+          "chapter": 4,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1352
+        },
+        {
+          "page": 81,
+          "pdf_page": 86,
+          "chapter": 4,
+          "sections": 20,
+          "figures": 0,
+          "chars": 1760
+        },
+        {
+          "page": 82,
+          "pdf_page": 87,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1665
+        },
+        {
+          "page": 83,
+          "pdf_page": 88,
+          "chapter": 4,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1296
+        },
+        {
+          "page": 84,
+          "pdf_page": 89,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1544
+        },
+        {
+          "page": 85,
+          "pdf_page": 90,
+          "chapter": 4,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1296
+        },
+        {
+          "page": 86,
+          "pdf_page": 91,
+          "chapter": 4,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1230
+        },
+        {
+          "page": 87,
+          "pdf_page": 92,
+          "chapter": 4,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1514
+        },
+        {
+          "page": 88,
+          "pdf_page": 93,
+          "chapter": 4,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1547
+        },
+        {
+          "page": 89,
+          "pdf_page": 94,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1501
+        },
+        {
+          "page": 90,
+          "pdf_page": 95,
+          "chapter": 4,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1364
+        },
+        {
+          "page": 91,
+          "pdf_page": 96,
+          "chapter": 4,
+          "sections": 12,
+          "figures": 0,
+          "chars": 1295
+        },
+        {
+          "page": 92,
+          "pdf_page": 97,
+          "chapter": 4,
+          "sections": 7,
+          "figures": 0,
+          "chars": 918
+        },
+        {
+          "page": 93,
+          "pdf_page": 98,
+          "chapter": 5,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1451
+        },
+        {
+          "page": 94,
+          "pdf_page": 99,
+          "chapter": 5,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1930
+        },
+        {
+          "page": 95,
+          "pdf_page": 100,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1512
+        },
+        {
+          "page": 96,
+          "pdf_page": 101,
+          "chapter": 5,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1384
+        },
+        {
+          "page": 97,
+          "pdf_page": 102,
+          "chapter": 5,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1438
+        },
+        {
+          "page": 98,
+          "pdf_page": 103,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1560
+        },
+        {
+          "page": 99,
+          "pdf_page": 104,
+          "chapter": 5,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1212
+        },
+        {
+          "page": 100,
+          "pdf_page": 105,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1354
+        },
+        {
+          "page": 101,
+          "pdf_page": 106,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1668
+        },
+        {
+          "page": 102,
+          "pdf_page": 107,
+          "chapter": 5,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1334
+        },
+        {
+          "page": 103,
+          "pdf_page": 108,
+          "chapter": 5,
+          "sections": 2,
+          "figures": 0,
+          "chars": 890
+        },
+        {
+          "page": 104,
+          "pdf_page": 109,
+          "chapter": 5,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1169
+        },
+        {
+          "page": 105,
+          "pdf_page": 110,
+          "chapter": 5,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1094
+        },
+        {
+          "page": 106,
+          "pdf_page": 111,
+          "chapter": 5,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1278
+        },
+        {
+          "page": 107,
+          "pdf_page": 112,
+          "chapter": 5,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1107
+        },
+        {
+          "page": 108,
+          "pdf_page": 113,
+          "chapter": 5,
+          "sections": 15,
+          "figures": 0,
+          "chars": 1160
+        },
+        {
+          "page": 109,
+          "pdf_page": 114,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1594
+        },
+        {
+          "page": 110,
+          "pdf_page": 115,
+          "chapter": 5,
+          "sections": 11,
+          "figures": 0,
+          "chars": 1440
+        },
+        {
+          "page": 111,
+          "pdf_page": 116,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 0,
+          "chars": 2107
+        },
+        {
+          "page": 112,
+          "pdf_page": 117,
+          "chapter": 6,
+          "sections": 6,
+          "figures": 2,
+          "chars": 1892
+        },
+        {
+          "page": 113,
+          "pdf_page": 118,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1755
+        },
+        {
+          "page": 114,
+          "pdf_page": 119,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 0,
+          "chars": 2281
+        },
+        {
+          "page": 115,
+          "pdf_page": 120,
+          "chapter": 6,
+          "sections": 13,
+          "figures": 0,
+          "chars": 2104
+        },
+        {
+          "page": 116,
+          "pdf_page": 121,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1885
+        },
+        {
+          "page": 117,
+          "pdf_page": 122,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1481
+        },
+        {
+          "page": 118,
+          "pdf_page": 123,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1463
+        },
+        {
+          "page": 119,
+          "pdf_page": 124,
+          "chapter": 6,
+          "sections": 5,
+          "figures": 5,
+          "chars": 1581
+        },
+        {
+          "page": 120,
+          "pdf_page": 125,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 4,
+          "chars": 1527
+        },
+        {
+          "page": 121,
+          "pdf_page": 126,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1545
+        },
+        {
+          "page": 122,
+          "pdf_page": 127,
+          "chapter": 6,
+          "sections": 8,
+          "figures": 1,
+          "chars": 1387
+        },
+        {
+          "page": 123,
+          "pdf_page": 128,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1289
+        },
+        {
+          "page": 124,
+          "pdf_page": 129,
+          "chapter": 6,
+          "sections": 6,
+          "figures": 5,
+          "chars": 1444
+        },
+        {
+          "page": 125,
+          "pdf_page": 130,
+          "chapter": 6,
+          "sections": 8,
+          "figures": 3,
+          "chars": 1529
+        },
+        {
+          "page": 126,
+          "pdf_page": 131,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 4,
+          "chars": 1265
+        },
+        {
+          "page": 127,
+          "pdf_page": 132,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1445
+        },
+        {
+          "page": 128,
+          "pdf_page": 133,
+          "chapter": 6,
+          "sections": 9,
+          "figures": 3,
+          "chars": 1439
+        },
+        {
+          "page": 129,
+          "pdf_page": 134,
+          "chapter": 6,
+          "sections": 8,
+          "figures": 2,
+          "chars": 1300
+        },
+        {
+          "page": 130,
+          "pdf_page": 135,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 2,
+          "chars": 804
+        },
+        {
+          "page": 131,
+          "pdf_page": 136,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 1,
+          "chars": 942
+        },
+        {
+          "page": 132,
+          "pdf_page": 137,
+          "chapter": 6,
+          "sections": 5,
+          "figures": 1,
+          "chars": 912
+        },
+        {
+          "page": 133,
+          "pdf_page": 138,
+          "chapter": 6,
+          "sections": 5,
+          "figures": 3,
+          "chars": 718
+        },
+        {
+          "page": 134,
+          "pdf_page": 139,
+          "chapter": 6,
+          "sections": 16,
+          "figures": 2,
+          "chars": 1380
+        },
+        {
+          "page": 135,
+          "pdf_page": 140,
+          "chapter": 6,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1046
+        },
+        {
+          "page": 136,
+          "pdf_page": 141,
+          "chapter": 7,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1377
+        },
+        {
+          "page": 137,
+          "pdf_page": 142,
+          "chapter": 7,
+          "sections": 1,
+          "figures": 5,
+          "chars": 443
+        },
+        {
+          "page": 138,
+          "pdf_page": 143,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1179
+        },
+        {
+          "page": 139,
+          "pdf_page": 144,
+          "chapter": 7,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1321
+        },
+        {
+          "page": 140,
+          "pdf_page": 145,
+          "chapter": 7,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1362
+        },
+        {
+          "page": 141,
+          "pdf_page": 146,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 1,
+          "chars": 964
+        },
+        {
+          "page": 142,
+          "pdf_page": 147,
+          "chapter": 7,
+          "sections": 5,
+          "figures": 1,
+          "chars": 732
+        },
+        {
+          "page": 143,
+          "pdf_page": 148,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1194
+        },
+        {
+          "page": 144,
+          "pdf_page": 149,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1277
+        },
+        {
+          "page": 145,
+          "pdf_page": 150,
+          "chapter": 7,
+          "sections": 6,
+          "figures": 4,
+          "chars": 811
+        },
+        {
+          "page": 146,
+          "pdf_page": 151,
+          "chapter": 7,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1513
+        },
+        {
+          "page": 147,
+          "pdf_page": 152,
+          "chapter": 7,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1401
+        },
+        {
+          "page": 148,
+          "pdf_page": 153,
+          "chapter": 7,
+          "sections": 5,
+          "figures": 2,
+          "chars": 895
+        },
+        {
+          "page": 149,
+          "pdf_page": 154,
+          "chapter": 7,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1087
+        },
+        {
+          "page": 150,
+          "pdf_page": 155,
+          "chapter": 7,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1047
+        },
+        {
+          "page": 151,
+          "pdf_page": 156,
+          "chapter": 7,
+          "sections": 10,
+          "figures": 0,
+          "chars": 1923
+        },
+        {
+          "page": 152,
+          "pdf_page": 157,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1562
+        },
+        {
+          "page": 153,
+          "pdf_page": 158,
+          "chapter": 8,
+          "sections": 5,
+          "figures": 3,
+          "chars": 1576
+        },
+        {
+          "page": 154,
+          "pdf_page": 159,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1333
+        },
+        {
+          "page": 155,
+          "pdf_page": 160,
+          "chapter": 8,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1195
+        },
+        {
+          "page": 156,
+          "pdf_page": 161,
+          "chapter": 8,
+          "sections": 13,
+          "figures": 1,
+          "chars": 1105
+        },
+        {
+          "page": 157,
+          "pdf_page": 162,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1566
+        },
+        {
+          "page": 158,
+          "pdf_page": 163,
+          "chapter": 8,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1793
+        },
+        {
+          "page": 159,
+          "pdf_page": 164,
+          "chapter": 8,
+          "sections": 6,
+          "figures": 2,
+          "chars": 1316
+        },
+        {
+          "page": 160,
+          "pdf_page": 165,
+          "chapter": 8,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1154
+        },
+        {
+          "page": 161,
+          "pdf_page": 166,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1530
+        },
+        {
+          "page": 162,
+          "pdf_page": 167,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1779
+        },
+        {
+          "page": 163,
+          "pdf_page": 168,
+          "chapter": 8,
+          "sections": 8,
+          "figures": 2,
+          "chars": 1455
+        },
+        {
+          "page": 164,
+          "pdf_page": 169,
+          "chapter": 8,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1814
+        },
+        {
+          "page": 165,
+          "pdf_page": 170,
+          "chapter": 8,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1481
+        },
+        {
+          "page": 166,
+          "pdf_page": 171,
+          "chapter": 8,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1584
+        },
+        {
+          "page": 167,
+          "pdf_page": 172,
+          "chapter": 8,
+          "sections": 9,
+          "figures": 3,
+          "chars": 1497
+        },
+        {
+          "page": 168,
+          "pdf_page": 173,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1581
+        },
+        {
+          "page": 169,
+          "pdf_page": 174,
+          "chapter": 8,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1747
+        },
+        {
+          "page": 170,
+          "pdf_page": 175,
+          "chapter": 8,
+          "sections": 8,
+          "figures": 1,
+          "chars": 1399
+        },
+        {
+          "page": 171,
+          "pdf_page": 176,
+          "chapter": 8,
+          "sections": 6,
+          "figures": 3,
+          "chars": 896
+        },
+        {
+          "page": 172,
+          "pdf_page": 177,
+          "chapter": 8,
+          "sections": 11,
+          "figures": 1,
+          "chars": 1407
+        },
+        {
+          "page": 173,
+          "pdf_page": 178,
+          "chapter": 8,
+          "sections": 8,
+          "figures": 1,
+          "chars": 624
+        },
+        {
+          "page": 174,
+          "pdf_page": 179,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1720
+        },
+        {
+          "page": 175,
+          "pdf_page": 180,
+          "chapter": 9,
+          "sections": 6,
+          "figures": 2,
+          "chars": 1391
+        },
+        {
+          "page": 176,
+          "pdf_page": 181,
+          "chapter": 9,
+          "sections": 5,
+          "figures": 3,
+          "chars": 645
+        },
+        {
+          "page": 177,
+          "pdf_page": 182,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1583
+        },
+        {
+          "page": 178,
+          "pdf_page": 183,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1369
+        },
+        {
+          "page": 179,
+          "pdf_page": 184,
+          "chapter": 9,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1402
+        },
+        {
+          "page": 180,
+          "pdf_page": 185,
+          "chapter": 9,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1521
+        },
+        {
+          "page": 181,
+          "pdf_page": 186,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1199
+        },
+        {
+          "page": 182,
+          "pdf_page": 187,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1085
+        },
+        {
+          "page": 183,
+          "pdf_page": 188,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1150
+        },
+        {
+          "page": 184,
+          "pdf_page": 189,
+          "chapter": 9,
+          "sections": 9,
+          "figures": 0,
+          "chars": 1244
+        },
+        {
+          "page": 185,
+          "pdf_page": 190,
+          "chapter": 9,
+          "sections": 18,
+          "figures": 0,
+          "chars": 1407
+        },
+        {
+          "page": 186,
+          "pdf_page": 191,
+          "chapter": 9,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1477
+        },
+        {
+          "page": 187,
+          "pdf_page": 192,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1593
+        },
+        {
+          "page": 188,
+          "pdf_page": 193,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1354
+        },
+        {
+          "page": 189,
+          "pdf_page": 194,
+          "chapter": 9,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1456
+        },
+        {
+          "page": 190,
+          "pdf_page": 195,
+          "chapter": 9,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1811
+        },
+        {
+          "page": 191,
+          "pdf_page": 196,
+          "chapter": 9,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1778
+        },
+        {
+          "page": 192,
+          "pdf_page": 197,
+          "chapter": 9,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1232
+        },
+        {
+          "page": 193,
+          "pdf_page": 198,
+          "chapter": 9,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1191
+        },
+        {
+          "page": 194,
+          "pdf_page": 199,
+          "chapter": 9,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1439
+        },
+        {
+          "page": 195,
+          "pdf_page": 200,
+          "chapter": 9,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1454
+        },
+        {
+          "page": 196,
+          "pdf_page": 201,
+          "chapter": 9,
+          "sections": 19,
+          "figures": 1,
+          "chars": 1357
+        },
+        {
+          "page": 197,
+          "pdf_page": 202,
+          "chapter": 10,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1383
+        },
+        {
+          "page": 198,
+          "pdf_page": 203,
+          "chapter": 10,
+          "sections": 4,
+          "figures": 3,
+          "chars": 1032
+        },
+        {
+          "page": 199,
+          "pdf_page": 204,
+          "chapter": 10,
+          "sections": 6,
+          "figures": 3,
+          "chars": 1405
+        },
+        {
+          "page": 200,
+          "pdf_page": 205,
+          "chapter": 10,
+          "sections": 4,
+          "figures": 3,
+          "chars": 1684
+        },
+        {
+          "page": 201,
+          "pdf_page": 206,
+          "chapter": 10,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1589
+        },
+        {
+          "page": 202,
+          "pdf_page": 207,
+          "chapter": 10,
+          "sections": 10,
+          "figures": 3,
+          "chars": 1260
+        },
+        {
+          "page": 203,
+          "pdf_page": 208,
+          "chapter": 10,
+          "sections": 11,
+          "figures": 1,
+          "chars": 1664
+        },
+        {
+          "page": 204,
+          "pdf_page": 209,
+          "chapter": 10,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1070
+        },
+        {
+          "page": 205,
+          "pdf_page": 210,
+          "chapter": 11,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1452
+        },
+        {
+          "page": 206,
+          "pdf_page": 211,
+          "chapter": 11,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1470
+        },
+        {
+          "page": 207,
+          "pdf_page": 212,
+          "chapter": 11,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1043
+        },
+        {
+          "page": 208,
+          "pdf_page": 213,
+          "chapter": 11,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1346
+        },
+        {
+          "page": 209,
+          "pdf_page": 214,
+          "chapter": 11,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1173
+        },
+        {
+          "page": 210,
+          "pdf_page": 215,
+          "chapter": 11,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1160
+        },
+        {
+          "page": 211,
+          "pdf_page": 216,
+          "chapter": 11,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1164
+        },
+        {
+          "page": 212,
+          "pdf_page": 217,
+          "chapter": 11,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1242
+        },
+        {
+          "page": 213,
+          "pdf_page": 218,
+          "chapter": 11,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1153
+        },
+        {
+          "page": 214,
+          "pdf_page": 219,
+          "chapter": 11,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1493
+        },
+        {
+          "page": 215,
+          "pdf_page": 220,
+          "chapter": 11,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1044
+        },
+        {
+          "page": 216,
+          "pdf_page": 221,
+          "chapter": 11,
+          "sections": 9,
+          "figures": 0,
+          "chars": 1347
+        },
+        {
+          "page": 217,
+          "pdf_page": 222,
+          "chapter": 11,
+          "sections": 12,
+          "figures": 0,
+          "chars": 1767
+        },
+        {
+          "page": 218,
+          "pdf_page": 223,
+          "chapter": 11,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1800
+        },
+        {
+          "page": 219,
+          "pdf_page": 224,
+          "chapter": 11,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1468
+        },
+        {
+          "page": 220,
+          "pdf_page": 225,
+          "chapter": 11,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1221
+        },
+        {
+          "page": 221,
+          "pdf_page": 226,
+          "chapter": 11,
+          "sections": 7,
+          "figures": 0,
+          "chars": 969
+        },
+        {
+          "page": 222,
+          "pdf_page": 227,
+          "chapter": 11,
+          "sections": 16,
+          "figures": 0,
+          "chars": 1981
+        },
+        {
+          "page": 223,
+          "pdf_page": 228,
+          "chapter": 11,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1602
+        },
+        {
+          "page": 224,
+          "pdf_page": 229,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1682
+        },
+        {
+          "page": 225,
+          "pdf_page": 230,
+          "chapter": 12,
+          "sections": 11,
+          "figures": 0,
+          "chars": 1742
+        },
+        {
+          "page": 226,
+          "pdf_page": 231,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1682
+        },
+        {
+          "page": 227,
+          "pdf_page": 232,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1593
+        },
+        {
+          "page": 228,
+          "pdf_page": 233,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1338
+        },
+        {
+          "page": 229,
+          "pdf_page": 234,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 0,
+          "chars": 872
+        },
+        {
+          "page": 230,
+          "pdf_page": 235,
+          "chapter": 12,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1140
+        },
+        {
+          "page": 231,
+          "pdf_page": 236,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1368
+        },
+        {
+          "page": 232,
+          "pdf_page": 237,
+          "chapter": 12,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1273
+        },
+        {
+          "page": 233,
+          "pdf_page": 238,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1020
+        },
+        {
+          "page": 234,
+          "pdf_page": 239,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1117
+        },
+        {
+          "page": 235,
+          "pdf_page": 240,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1653
+        },
+        {
+          "page": 236,
+          "pdf_page": 241,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1504
+        },
+        {
+          "page": 237,
+          "pdf_page": 242,
+          "chapter": 12,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1516
+        },
+        {
+          "page": 238,
+          "pdf_page": 243,
+          "chapter": 12,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1572
+        },
+        {
+          "page": 239,
+          "pdf_page": 244,
+          "chapter": 12,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1283
+        },
+        {
+          "page": 240,
+          "pdf_page": 245,
+          "chapter": 12,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1225
+        },
+        {
+          "page": 241,
+          "pdf_page": 246,
+          "chapter": 12,
+          "sections": 8,
+          "figures": 1,
+          "chars": 1301
+        },
+        {
+          "page": 242,
+          "pdf_page": 247,
+          "chapter": 12,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1397
+        },
+        {
+          "page": 243,
+          "pdf_page": 248,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1356
+        },
+        {
+          "page": 244,
+          "pdf_page": 249,
+          "chapter": 12,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1203
+        },
+        {
+          "page": 245,
+          "pdf_page": 250,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1318
+        },
+        {
+          "page": 246,
+          "pdf_page": 251,
+          "chapter": 12,
+          "sections": 10,
+          "figures": 0,
+          "chars": 1381
+        },
+        {
+          "page": 247,
+          "pdf_page": 252,
+          "chapter": 12,
+          "sections": 13,
+          "figures": 0,
+          "chars": 1932
+        },
+        {
+          "page": 248,
+          "pdf_page": 253,
+          "chapter": 12,
+          "sections": 9,
+          "figures": 0,
+          "chars": 981
+        },
+        {
+          "page": 249,
+          "pdf_page": 254,
+          "chapter": 13,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1724
+        },
+        {
+          "page": 250,
+          "pdf_page": 255,
+          "chapter": 13,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1536
+        },
+        {
+          "page": 251,
+          "pdf_page": 256,
+          "chapter": 13,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1719
+        },
+        {
+          "page": 252,
+          "pdf_page": 257,
+          "chapter": 13,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1284
+        },
+        {
+          "page": 253,
+          "pdf_page": 258,
+          "chapter": 13,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1308
+        },
+        {
+          "page": 254,
+          "pdf_page": 259,
+          "chapter": 13,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1485
+        },
+        {
+          "page": 255,
+          "pdf_page": 260,
+          "chapter": 13,
+          "sections": 9,
+          "figures": 0,
+          "chars": 1140
+        },
+        {
+          "page": 256,
+          "pdf_page": 261,
+          "chapter": 13,
+          "sections": 20,
+          "figures": 0,
+          "chars": 1691
+        },
+        {
+          "page": 257,
+          "pdf_page": 262,
+          "chapter": 13,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1046
+        },
+        {
+          "page": 258,
+          "pdf_page": 263,
+          "chapter": 13,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1063
+        },
+        {
+          "page": 259,
+          "pdf_page": 264,
+          "chapter": 13,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1610
+        },
+        {
+          "page": 260,
+          "pdf_page": 265,
+          "chapter": 13,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1449
+        },
+        {
+          "page": 261,
+          "pdf_page": 266,
+          "chapter": 13,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1407
+        },
+        {
+          "page": 262,
+          "pdf_page": 267,
+          "chapter": 13,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1450
+        },
+        {
+          "page": 263,
+          "pdf_page": 268,
+          "chapter": 13,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1540
+        },
+        {
+          "page": 264,
+          "pdf_page": 269,
+          "chapter": 13,
+          "sections": 15,
+          "figures": 0,
+          "chars": 1370
+        },
+        {
+          "page": 265,
+          "pdf_page": 270,
+          "chapter": 13,
+          "sections": 20,
+          "figures": 0,
+          "chars": 1667
+        },
+        {
+          "page": 266,
+          "pdf_page": 271,
+          "chapter": 14,
+          "sections": 3,
+          "figures": 0,
+          "chars": 944
+        },
+        {
+          "page": 267,
+          "pdf_page": 272,
+          "chapter": 14,
+          "sections": 3,
+          "figures": 2,
+          "chars": 924
+        },
+        {
+          "page": 268,
+          "pdf_page": 273,
+          "chapter": 14,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1570
+        },
+        {
+          "page": 269,
+          "pdf_page": 274,
+          "chapter": 14,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1370
+        },
+        {
+          "page": 270,
+          "pdf_page": 275,
+          "chapter": 14,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1406
+        },
+        {
+          "page": 271,
+          "pdf_page": 276,
+          "chapter": 14,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1339
+        },
+        {
+          "page": 272,
+          "pdf_page": 277,
+          "chapter": 14,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1630
+        },
+        {
+          "page": 273,
+          "pdf_page": 278,
+          "chapter": 14,
+          "sections": 6,
+          "figures": 2,
+          "chars": 1274
+        },
+        {
+          "page": 274,
+          "pdf_page": 279,
+          "chapter": 14,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1365
+        },
+        {
+          "page": 275,
+          "pdf_page": 280,
+          "chapter": 14,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1513
+        },
+        {
+          "page": 276,
+          "pdf_page": 281,
+          "chapter": 14,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1386
+        },
+        {
+          "page": 277,
+          "pdf_page": 282,
+          "chapter": 14,
+          "sections": 7,
+          "figures": 3,
+          "chars": 1259
+        },
+        {
+          "page": 278,
+          "pdf_page": 283,
+          "chapter": 14,
+          "sections": 9,
+          "figures": 3,
+          "chars": 1639
+        },
+        {
+          "page": 279,
+          "pdf_page": 284,
+          "chapter": 14,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1242
+        },
+        {
+          "page": 280,
+          "pdf_page": 285,
+          "chapter": 14,
+          "sections": 4,
+          "figures": 3,
+          "chars": 1733
+        },
+        {
+          "page": 281,
+          "pdf_page": 286,
+          "chapter": 14,
+          "sections": 5,
+          "figures": 3,
+          "chars": 825
+        },
+        {
+          "page": 282,
+          "pdf_page": 287,
+          "chapter": 14,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1316
+        },
+        {
+          "page": 283,
+          "pdf_page": 288,
+          "chapter": 14,
+          "sections": 6,
+          "figures": 3,
+          "chars": 636
+        },
+        {
+          "page": 284,
+          "pdf_page": 289,
+          "chapter": 14,
+          "sections": 7,
+          "figures": 2,
+          "chars": 784
+        },
+        {
+          "page": 285,
+          "pdf_page": 290,
+          "chapter": 15,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1587
+        },
+        {
+          "page": 286,
+          "pdf_page": 291,
+          "chapter": 15,
+          "sections": 5,
+          "figures": 5,
+          "chars": 1341
+        },
+        {
+          "page": 287,
+          "pdf_page": 292,
+          "chapter": 15,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1216
+        },
+        {
+          "page": 288,
+          "pdf_page": 293,
+          "chapter": 15,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1712
+        },
+        {
+          "page": 289,
+          "pdf_page": 294,
+          "chapter": 15,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1646
+        },
+        {
+          "page": 290,
+          "pdf_page": 295,
+          "chapter": 15,
+          "sections": 7,
+          "figures": 2,
+          "chars": 1265
+        },
+        {
+          "page": 291,
+          "pdf_page": 296,
+          "chapter": 15,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1452
+        },
+        {
+          "page": 292,
+          "pdf_page": 297,
+          "chapter": 15,
+          "sections": 14,
+          "figures": 0,
+          "chars": 1763
+        },
+        {
+          "page": 293,
+          "pdf_page": 298,
+          "chapter": 15,
+          "sections": 8,
+          "figures": 0,
+          "chars": 597
+        },
+        {
+          "page": 294,
+          "pdf_page": 299,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1206
+        },
+        {
+          "page": 295,
+          "pdf_page": 300,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1198
+        },
+        {
+          "page": 296,
+          "pdf_page": 301,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1250
+        },
+        {
+          "page": 297,
+          "pdf_page": 302,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 3,
+          "chars": 1533
+        },
+        {
+          "page": 298,
+          "pdf_page": 303,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1496
+        },
+        {
+          "page": 299,
+          "pdf_page": 304,
+          "chapter": 16,
+          "sections": 7,
+          "figures": 2,
+          "chars": 1489
+        },
+        {
+          "page": 300,
+          "pdf_page": 305,
+          "chapter": 16,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1249
+        },
+        {
+          "page": 301,
+          "pdf_page": 306,
+          "chapter": 16,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1483
+        },
+        {
+          "page": 302,
+          "pdf_page": 307,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 4,
+          "chars": 1569
+        },
+        {
+          "page": 303,
+          "pdf_page": 308,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1753
+        },
+        {
+          "page": 304,
+          "pdf_page": 309,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1630
+        },
+        {
+          "page": 305,
+          "pdf_page": 310,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1435
+        },
+        {
+          "page": 306,
+          "pdf_page": 311,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1566
+        },
+        {
+          "page": 307,
+          "pdf_page": 312,
+          "chapter": 16,
+          "sections": 1,
+          "figures": 1,
+          "chars": 1180
+        },
+        {
+          "page": 308,
+          "pdf_page": 313,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1604
+        },
+        {
+          "page": 309,
+          "pdf_page": 314,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1391
+        },
+        {
+          "page": 310,
+          "pdf_page": 315,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1805
+        },
+        {
+          "page": 311,
+          "pdf_page": 316,
+          "chapter": 16,
+          "sections": 12,
+          "figures": 1,
+          "chars": 1401
+        },
+        {
+          "page": 312,
+          "pdf_page": 317,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 3,
+          "chars": 1159
+        },
+        {
+          "page": 313,
+          "pdf_page": 318,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1856
+        },
+        {
+          "page": 314,
+          "pdf_page": 319,
+          "chapter": 16,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1754
+        },
+        {
+          "page": 315,
+          "pdf_page": 320,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1871
+        },
+        {
+          "page": 316,
+          "pdf_page": 321,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1625
+        },
+        {
+          "page": 317,
+          "pdf_page": 322,
+          "chapter": 16,
+          "sections": 11,
+          "figures": 1,
+          "chars": 1186
+        },
+        {
+          "page": 318,
+          "pdf_page": 323,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 2,
+          "chars": 754
+        },
+        {
+          "page": 319,
+          "pdf_page": 324,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1530
+        },
+        {
+          "page": 320,
+          "pdf_page": 325,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1275
+        },
+        {
+          "page": 321,
+          "pdf_page": 326,
+          "chapter": 16,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1598
+        },
+        {
+          "page": 322,
+          "pdf_page": 327,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1582
+        },
+        {
+          "page": 323,
+          "pdf_page": 328,
+          "chapter": 16,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1367
+        },
+        {
+          "page": 324,
+          "pdf_page": 329,
+          "chapter": 16,
+          "sections": 11,
+          "figures": 1,
+          "chars": 1349
+        },
+        {
+          "page": 325,
+          "pdf_page": 330,
+          "chapter": 16,
+          "sections": 11,
+          "figures": 1,
+          "chars": 1764
+        },
+        {
+          "page": 326,
+          "pdf_page": 331,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1935
+        },
+        {
+          "page": 327,
+          "pdf_page": 332,
+          "chapter": 17,
+          "sections": 7,
+          "figures": 0,
+          "chars": 2388
+        },
+        {
+          "page": 328,
+          "pdf_page": 333,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 0,
+          "chars": 2025
+        },
+        {
+          "page": 329,
+          "pdf_page": 334,
+          "chapter": 17,
+          "sections": 7,
+          "figures": 0,
+          "chars": 2155
+        },
+        {
+          "page": 330,
+          "pdf_page": 335,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1416
+        },
+        {
+          "page": 331,
+          "pdf_page": 336,
+          "chapter": 17,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1100
+        },
+        {
+          "page": 332,
+          "pdf_page": 337,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1192
+        },
+        {
+          "page": 333,
+          "pdf_page": 338,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1467
+        },
+        {
+          "page": 334,
+          "pdf_page": 339,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1768
+        },
+        {
+          "page": 335,
+          "pdf_page": 340,
+          "chapter": 17,
+          "sections": 8,
+          "figures": 0,
+          "chars": 2042
+        },
+        {
+          "page": 336,
+          "pdf_page": 341,
+          "chapter": 17,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1731
+        },
+        {
+          "page": 337,
+          "pdf_page": 342,
+          "chapter": 17,
+          "sections": 10,
+          "figures": 0,
+          "chars": 2007
+        },
+        {
+          "page": 338,
+          "pdf_page": 343,
+          "chapter": 17,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1217
+        },
+        {
+          "page": 339,
+          "pdf_page": 344,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1383
+        },
+        {
+          "page": 340,
+          "pdf_page": 345,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1507
+        },
+        {
+          "page": 341,
+          "pdf_page": 346,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1290
+        },
+        {
+          "page": 342,
+          "pdf_page": 347,
+          "chapter": 17,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1191
+        },
+        {
+          "page": 343,
+          "pdf_page": 348,
+          "chapter": 17,
+          "sections": 12,
+          "figures": 0,
+          "chars": 2225
+        },
+        {
+          "page": 344,
+          "pdf_page": 349,
+          "chapter": 17,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1152
+        }
+      ]
+    },
+    "physical_pdf_pages": 389,
+    "extracted_pages": 344,
+    "unextracted_pages": 40
+  },
+  "en": {
+    "stats": {
+      "total_expected": 384,
+      "total_extracted": 384,
+      "missing_files": [],
+      "offset_mismatches": [],
+      "chapter_mismatches": [],
+      "empty_sections": [],
+      "latex_issues": [
+        "p.42 [sec 2]: Unbalanced braces in math: $\\{x \\in \\mathbb{N} : 13 < x < ...$",
+        "p.42 [sec 2]: Unbalanced braces in math: $\\}...$",
+        "p.42 [sec 2]: Unbalanced braces in math: $(i) A \\times B = \\{(x, y) : x ...$",
+        "p.42 [sec 2]: Unbalanced braces in math: $y \\in B\\}...$",
+        "p.43 [sec 12]: Unbalanced braces in math: $R = \\{(x, y) : x \\in A, y \\in ...$",
+        "p.43 [sec 12]: Unbalanced braces in math: $x + y = 1\\}...$",
+        "p.43 [sec 12]: Unbalanced braces in math: $F = \\{(x, y) : x \\in C, y \\in ...$",
+        "p.43 [sec 12]: Unbalanced braces in math: $y = 2x\\}...$",
+        "p.256 [sec 7]: Unbalanced braces in math: $\\left. \\begin{aligned} 2x + y ...$",
+        "p.258 [sec 2]: Unbalanced display math ($$) count: 11",
+        "p.258 [sec 2]: Unbalanced inline math ($) count: 3",
+        "p.299 [sec 0]: Unbalanced inline math ($) count: 19",
+        "p.378 [sec 0]: Unbalanced inline math ($) count: 25",
+        "p.378 [sec 1]: Unbalanced inline math ($) count: 31"
+      ],
+      "figure_issues": [],
+      "figures_total": 276,
+      "total_characters": 556578,
+      "total_words": 104654,
+      "pages_summary": [
+        {
+          "page": 1,
+          "pdf_page": 6,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1803
+        },
+        {
+          "page": 2,
+          "pdf_page": 7,
+          "chapter": 1,
+          "sections": 2,
+          "figures": 0,
+          "chars": 2136
+        },
+        {
+          "page": 3,
+          "pdf_page": 8,
+          "chapter": 1,
+          "sections": 6,
+          "figures": 0,
+          "chars": 2276
+        },
+        {
+          "page": 4,
+          "pdf_page": 9,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1219
+        },
+        {
+          "page": 5,
+          "pdf_page": 10,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1603
+        },
+        {
+          "page": 6,
+          "pdf_page": 11,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1969
+        },
+        {
+          "page": 7,
+          "pdf_page": 12,
+          "chapter": 1,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1891
+        },
+        {
+          "page": 8,
+          "pdf_page": 13,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1653
+        },
+        {
+          "page": 9,
+          "pdf_page": 14,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 2098
+        },
+        {
+          "page": 10,
+          "pdf_page": 15,
+          "chapter": 1,
+          "sections": 7,
+          "figures": 0,
+          "chars": 2062
+        },
+        {
+          "page": 11,
+          "pdf_page": 16,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 0,
+          "chars": 2472
+        },
+        {
+          "page": 12,
+          "pdf_page": 17,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 2984
+        },
+        {
+          "page": 13,
+          "pdf_page": 18,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 0,
+          "chars": 2277
+        },
+        {
+          "page": 14,
+          "pdf_page": 19,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1470
+        },
+        {
+          "page": 15,
+          "pdf_page": 20,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1342
+        },
+        {
+          "page": 16,
+          "pdf_page": 21,
+          "chapter": 1,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1401
+        },
+        {
+          "page": 17,
+          "pdf_page": 22,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1577
+        },
+        {
+          "page": 18,
+          "pdf_page": 23,
+          "chapter": 1,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1338
+        },
+        {
+          "page": 19,
+          "pdf_page": 24,
+          "chapter": 1,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1384
+        },
+        {
+          "page": 20,
+          "pdf_page": 25,
+          "chapter": 1,
+          "sections": 13,
+          "figures": 0,
+          "chars": 1747
+        },
+        {
+          "page": 21,
+          "pdf_page": 26,
+          "chapter": 1,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1153
+        },
+        {
+          "page": 22,
+          "pdf_page": 27,
+          "chapter": 2,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1329
+        },
+        {
+          "page": 23,
+          "pdf_page": 28,
+          "chapter": 2,
+          "sections": 4,
+          "figures": 0,
+          "chars": 2036
+        },
+        {
+          "page": 24,
+          "pdf_page": 29,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1796
+        },
+        {
+          "page": 25,
+          "pdf_page": 30,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1890
+        },
+        {
+          "page": 26,
+          "pdf_page": 31,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1899
+        },
+        {
+          "page": 27,
+          "pdf_page": 32,
+          "chapter": 2,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1602
+        },
+        {
+          "page": 28,
+          "pdf_page": 33,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1188
+        },
+        {
+          "page": 29,
+          "pdf_page": 34,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1519
+        },
+        {
+          "page": 30,
+          "pdf_page": 35,
+          "chapter": 2,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1645
+        },
+        {
+          "page": 31,
+          "pdf_page": 36,
+          "chapter": 2,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1724
+        },
+        {
+          "page": 32,
+          "pdf_page": 37,
+          "chapter": 2,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1094
+        },
+        {
+          "page": 33,
+          "pdf_page": 38,
+          "chapter": 2,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1708
+        },
+        {
+          "page": 34,
+          "pdf_page": 39,
+          "chapter": 2,
+          "sections": 8,
+          "figures": 1,
+          "chars": 1364
+        },
+        {
+          "page": 35,
+          "pdf_page": 40,
+          "chapter": 2,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1749
+        },
+        {
+          "page": 36,
+          "pdf_page": 41,
+          "chapter": 2,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1736
+        },
+        {
+          "page": 37,
+          "pdf_page": 42,
+          "chapter": 2,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1832
+        },
+        {
+          "page": 38,
+          "pdf_page": 43,
+          "chapter": 2,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1532
+        },
+        {
+          "page": 39,
+          "pdf_page": 44,
+          "chapter": 2,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1105
+        },
+        {
+          "page": 40,
+          "pdf_page": 45,
+          "chapter": 2,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1654
+        },
+        {
+          "page": 41,
+          "pdf_page": 46,
+          "chapter": 2,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1587
+        },
+        {
+          "page": 42,
+          "pdf_page": 47,
+          "chapter": 2,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1329
+        },
+        {
+          "page": 43,
+          "pdf_page": 48,
+          "chapter": 2,
+          "sections": 13,
+          "figures": 0,
+          "chars": 1790
+        },
+        {
+          "page": 44,
+          "pdf_page": 49,
+          "chapter": 2,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1135
+        },
+        {
+          "page": 45,
+          "pdf_page": 50,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1830
+        },
+        {
+          "page": 46,
+          "pdf_page": 51,
+          "chapter": 3,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1380
+        },
+        {
+          "page": 47,
+          "pdf_page": 52,
+          "chapter": 3,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1602
+        },
+        {
+          "page": 48,
+          "pdf_page": 53,
+          "chapter": 3,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1270
+        },
+        {
+          "page": 49,
+          "pdf_page": 54,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1316
+        },
+        {
+          "page": 50,
+          "pdf_page": 55,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1335
+        },
+        {
+          "page": 51,
+          "pdf_page": 56,
+          "chapter": 3,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1251
+        },
+        {
+          "page": 52,
+          "pdf_page": 57,
+          "chapter": 3,
+          "sections": 11,
+          "figures": 0,
+          "chars": 1360
+        },
+        {
+          "page": 53,
+          "pdf_page": 58,
+          "chapter": 3,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1129
+        },
+        {
+          "page": 54,
+          "pdf_page": 59,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1611
+        },
+        {
+          "page": 55,
+          "pdf_page": 60,
+          "chapter": 3,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1127
+        },
+        {
+          "page": 56,
+          "pdf_page": 61,
+          "chapter": 3,
+          "sections": 13,
+          "figures": 0,
+          "chars": 1322
+        },
+        {
+          "page": 57,
+          "pdf_page": 62,
+          "chapter": 3,
+          "sections": 10,
+          "figures": 0,
+          "chars": 1470
+        },
+        {
+          "page": 58,
+          "pdf_page": 63,
+          "chapter": 3,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1610
+        },
+        {
+          "page": 59,
+          "pdf_page": 64,
+          "chapter": 3,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1552
+        },
+        {
+          "page": 60,
+          "pdf_page": 65,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1380
+        },
+        {
+          "page": 61,
+          "pdf_page": 66,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1530
+        },
+        {
+          "page": 62,
+          "pdf_page": 67,
+          "chapter": 3,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1746
+        },
+        {
+          "page": 63,
+          "pdf_page": 68,
+          "chapter": 3,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1613
+        },
+        {
+          "page": 64,
+          "pdf_page": 69,
+          "chapter": 3,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1109
+        },
+        {
+          "page": 65,
+          "pdf_page": 70,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1406
+        },
+        {
+          "page": 66,
+          "pdf_page": 71,
+          "chapter": 3,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1397
+        },
+        {
+          "page": 67,
+          "pdf_page": 72,
+          "chapter": 3,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1316
+        },
+        {
+          "page": 68,
+          "pdf_page": 73,
+          "chapter": 3,
+          "sections": 4,
+          "figures": 0,
+          "chars": 924
+        },
+        {
+          "page": 69,
+          "pdf_page": 74,
+          "chapter": 3,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1206
+        },
+        {
+          "page": 70,
+          "pdf_page": 75,
+          "chapter": 3,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1334
+        },
+        {
+          "page": 71,
+          "pdf_page": 76,
+          "chapter": 3,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1593
+        },
+        {
+          "page": 72,
+          "pdf_page": 77,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1512
+        },
+        {
+          "page": 73,
+          "pdf_page": 78,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1415
+        },
+        {
+          "page": 74,
+          "pdf_page": 79,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1714
+        },
+        {
+          "page": 75,
+          "pdf_page": 80,
+          "chapter": 3,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1293
+        },
+        {
+          "page": 76,
+          "pdf_page": 81,
+          "chapter": 3,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1359
+        },
+        {
+          "page": 77,
+          "pdf_page": 82,
+          "chapter": 3,
+          "sections": 12,
+          "figures": 0,
+          "chars": 2097
+        },
+        {
+          "page": 78,
+          "pdf_page": 83,
+          "chapter": 3,
+          "sections": 15,
+          "figures": 0,
+          "chars": 1688
+        },
+        {
+          "page": 79,
+          "pdf_page": 84,
+          "chapter": 3,
+          "sections": 3,
+          "figures": 0,
+          "chars": 925
+        },
+        {
+          "page": 80,
+          "pdf_page": 85,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1402
+        },
+        {
+          "page": 81,
+          "pdf_page": 86,
+          "chapter": 4,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1582
+        },
+        {
+          "page": 82,
+          "pdf_page": 87,
+          "chapter": 4,
+          "sections": 6,
+          "figures": 0,
+          "chars": 2093
+        },
+        {
+          "page": 83,
+          "pdf_page": 88,
+          "chapter": 4,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1796
+        },
+        {
+          "page": 84,
+          "pdf_page": 89,
+          "chapter": 4,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1747
+        },
+        {
+          "page": 85,
+          "pdf_page": 90,
+          "chapter": 4,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1882
+        },
+        {
+          "page": 86,
+          "pdf_page": 91,
+          "chapter": 4,
+          "sections": 22,
+          "figures": 0,
+          "chars": 1640
+        },
+        {
+          "page": 87,
+          "pdf_page": 92,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1874
+        },
+        {
+          "page": 88,
+          "pdf_page": 93,
+          "chapter": 4,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1310
+        },
+        {
+          "page": 89,
+          "pdf_page": 94,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1670
+        },
+        {
+          "page": 90,
+          "pdf_page": 95,
+          "chapter": 4,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1253
+        },
+        {
+          "page": 91,
+          "pdf_page": 96,
+          "chapter": 4,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1258
+        },
+        {
+          "page": 92,
+          "pdf_page": 97,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1585
+        },
+        {
+          "page": 93,
+          "pdf_page": 98,
+          "chapter": 4,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1651
+        },
+        {
+          "page": 94,
+          "pdf_page": 99,
+          "chapter": 4,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1610
+        },
+        {
+          "page": 95,
+          "pdf_page": 100,
+          "chapter": 4,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1809
+        },
+        {
+          "page": 96,
+          "pdf_page": 101,
+          "chapter": 4,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1240
+        },
+        {
+          "page": 97,
+          "pdf_page": 102,
+          "chapter": 4,
+          "sections": 10,
+          "figures": 0,
+          "chars": 792
+        },
+        {
+          "page": 98,
+          "pdf_page": 103,
+          "chapter": 5,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1726
+        },
+        {
+          "page": 99,
+          "pdf_page": 104,
+          "chapter": 5,
+          "sections": 7,
+          "figures": 0,
+          "chars": 2210
+        },
+        {
+          "page": 100,
+          "pdf_page": 105,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1460
+        },
+        {
+          "page": 101,
+          "pdf_page": 106,
+          "chapter": 5,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1590
+        },
+        {
+          "page": 102,
+          "pdf_page": 107,
+          "chapter": 5,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1313
+        },
+        {
+          "page": 103,
+          "pdf_page": 108,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1792
+        },
+        {
+          "page": 104,
+          "pdf_page": 109,
+          "chapter": 5,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1440
+        },
+        {
+          "page": 105,
+          "pdf_page": 110,
+          "chapter": 5,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1087
+        },
+        {
+          "page": 106,
+          "pdf_page": 111,
+          "chapter": 5,
+          "sections": 12,
+          "figures": 0,
+          "chars": 1731
+        },
+        {
+          "page": 107,
+          "pdf_page": 112,
+          "chapter": 5,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1236
+        },
+        {
+          "page": 108,
+          "pdf_page": 113,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1455
+        },
+        {
+          "page": 109,
+          "pdf_page": 114,
+          "chapter": 5,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1001
+        },
+        {
+          "page": 110,
+          "pdf_page": 115,
+          "chapter": 5,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1225
+        },
+        {
+          "page": 111,
+          "pdf_page": 116,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 1,
+          "chars": 982
+        },
+        {
+          "page": 112,
+          "pdf_page": 117,
+          "chapter": 5,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1104
+        },
+        {
+          "page": 113,
+          "pdf_page": 118,
+          "chapter": 5,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1598
+        },
+        {
+          "page": 114,
+          "pdf_page": 119,
+          "chapter": 5,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1157
+        },
+        {
+          "page": 115,
+          "pdf_page": 120,
+          "chapter": 5,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1236
+        },
+        {
+          "page": 116,
+          "pdf_page": 121,
+          "chapter": 5,
+          "sections": 10,
+          "figures": 0,
+          "chars": 1751
+        },
+        {
+          "page": 117,
+          "pdf_page": 122,
+          "chapter": 5,
+          "sections": 11,
+          "figures": 0,
+          "chars": 1751
+        },
+        {
+          "page": 118,
+          "pdf_page": 123,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 0,
+          "chars": 2186
+        },
+        {
+          "page": 119,
+          "pdf_page": 124,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1659
+        },
+        {
+          "page": 120,
+          "pdf_page": 125,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1855
+        },
+        {
+          "page": 121,
+          "pdf_page": 126,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 0,
+          "chars": 2205
+        },
+        {
+          "page": 122,
+          "pdf_page": 127,
+          "chapter": 6,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1885
+        },
+        {
+          "page": 123,
+          "pdf_page": 128,
+          "chapter": 6,
+          "sections": 9,
+          "figures": 0,
+          "chars": 2274
+        },
+        {
+          "page": 124,
+          "pdf_page": 129,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1365
+        },
+        {
+          "page": 125,
+          "pdf_page": 130,
+          "chapter": 6,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1469
+        },
+        {
+          "page": 126,
+          "pdf_page": 131,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1162
+        },
+        {
+          "page": 127,
+          "pdf_page": 132,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1359
+        },
+        {
+          "page": 128,
+          "pdf_page": 133,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 4,
+          "chars": 1277
+        },
+        {
+          "page": 129,
+          "pdf_page": 134,
+          "chapter": 6,
+          "sections": 5,
+          "figures": 3,
+          "chars": 1280
+        },
+        {
+          "page": 130,
+          "pdf_page": 135,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1428
+        },
+        {
+          "page": 131,
+          "pdf_page": 136,
+          "chapter": 6,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1329
+        },
+        {
+          "page": 132,
+          "pdf_page": 137,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1481
+        },
+        {
+          "page": 133,
+          "pdf_page": 138,
+          "chapter": 6,
+          "sections": 6,
+          "figures": 6,
+          "chars": 1291
+        },
+        {
+          "page": 134,
+          "pdf_page": 139,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 3,
+          "chars": 1606
+        },
+        {
+          "page": 135,
+          "pdf_page": 140,
+          "chapter": 6,
+          "sections": 5,
+          "figures": 3,
+          "chars": 1482
+        },
+        {
+          "page": 136,
+          "pdf_page": 141,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1149
+        },
+        {
+          "page": 137,
+          "pdf_page": 142,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 4,
+          "chars": 1456
+        },
+        {
+          "page": 138,
+          "pdf_page": 143,
+          "chapter": 6,
+          "sections": 7,
+          "figures": 2,
+          "chars": 1395
+        },
+        {
+          "page": 139,
+          "pdf_page": 144,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1321
+        },
+        {
+          "page": 140,
+          "pdf_page": 145,
+          "chapter": 6,
+          "sections": 4,
+          "figures": 1,
+          "chars": 862
+        },
+        {
+          "page": 141,
+          "pdf_page": 146,
+          "chapter": 6,
+          "sections": 5,
+          "figures": 1,
+          "chars": 746
+        },
+        {
+          "page": 142,
+          "pdf_page": 147,
+          "chapter": 6,
+          "sections": 3,
+          "figures": 2,
+          "chars": 976
+        },
+        {
+          "page": 143,
+          "pdf_page": 148,
+          "chapter": 6,
+          "sections": 7,
+          "figures": 2,
+          "chars": 1002
+        },
+        {
+          "page": 144,
+          "pdf_page": 149,
+          "chapter": 6,
+          "sections": 12,
+          "figures": 2,
+          "chars": 1376
+        },
+        {
+          "page": 145,
+          "pdf_page": 150,
+          "chapter": 6,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1206
+        },
+        {
+          "page": 146,
+          "pdf_page": 151,
+          "chapter": 7,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1571
+        },
+        {
+          "page": 147,
+          "pdf_page": 152,
+          "chapter": 7,
+          "sections": 1,
+          "figures": 6,
+          "chars": 214
+        },
+        {
+          "page": 148,
+          "pdf_page": 153,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1301
+        },
+        {
+          "page": 149,
+          "pdf_page": 154,
+          "chapter": 7,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1435
+        },
+        {
+          "page": 150,
+          "pdf_page": 155,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1243
+        },
+        {
+          "page": 151,
+          "pdf_page": 156,
+          "chapter": 7,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1295
+        },
+        {
+          "page": 152,
+          "pdf_page": 157,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1026
+        },
+        {
+          "page": 153,
+          "pdf_page": 158,
+          "chapter": 7,
+          "sections": 2,
+          "figures": 2,
+          "chars": 715
+        },
+        {
+          "page": 154,
+          "pdf_page": 159,
+          "chapter": 7,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1573
+        },
+        {
+          "page": 155,
+          "pdf_page": 160,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1091
+        },
+        {
+          "page": 156,
+          "pdf_page": 161,
+          "chapter": 7,
+          "sections": 6,
+          "figures": 3,
+          "chars": 858
+        },
+        {
+          "page": 157,
+          "pdf_page": 162,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1338
+        },
+        {
+          "page": 158,
+          "pdf_page": 163,
+          "chapter": 7,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1438
+        },
+        {
+          "page": 159,
+          "pdf_page": 164,
+          "chapter": 7,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1108
+        },
+        {
+          "page": 160,
+          "pdf_page": 165,
+          "chapter": 7,
+          "sections": 2,
+          "figures": 2,
+          "chars": 972
+        },
+        {
+          "page": 161,
+          "pdf_page": 166,
+          "chapter": 7,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1227
+        },
+        {
+          "page": 162,
+          "pdf_page": 167,
+          "chapter": 7,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1366
+        },
+        {
+          "page": 163,
+          "pdf_page": 168,
+          "chapter": 7,
+          "sections": 17,
+          "figures": 0,
+          "chars": 1810
+        },
+        {
+          "page": 164,
+          "pdf_page": 169,
+          "chapter": 8,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1459
+        },
+        {
+          "page": 165,
+          "pdf_page": 170,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1682
+        },
+        {
+          "page": 166,
+          "pdf_page": 171,
+          "chapter": 8,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1308
+        },
+        {
+          "page": 167,
+          "pdf_page": 172,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1480
+        },
+        {
+          "page": 168,
+          "pdf_page": 173,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1623
+        },
+        {
+          "page": 169,
+          "pdf_page": 174,
+          "chapter": 8,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1092
+        },
+        {
+          "page": 170,
+          "pdf_page": 175,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1613
+        },
+        {
+          "page": 171,
+          "pdf_page": 176,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1651
+        },
+        {
+          "page": 172,
+          "pdf_page": 177,
+          "chapter": 8,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1255
+        },
+        {
+          "page": 173,
+          "pdf_page": 178,
+          "chapter": 8,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1598
+        },
+        {
+          "page": 174,
+          "pdf_page": 179,
+          "chapter": 8,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1415
+        },
+        {
+          "page": 175,
+          "pdf_page": 180,
+          "chapter": 8,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1591
+        },
+        {
+          "page": 176,
+          "pdf_page": 181,
+          "chapter": 8,
+          "sections": 6,
+          "figures": 2,
+          "chars": 1471
+        },
+        {
+          "page": 177,
+          "pdf_page": 182,
+          "chapter": 8,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1643
+        },
+        {
+          "page": 178,
+          "pdf_page": 183,
+          "chapter": 8,
+          "sections": 8,
+          "figures": 2,
+          "chars": 1848
+        },
+        {
+          "page": 179,
+          "pdf_page": 184,
+          "chapter": 8,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1656
+        },
+        {
+          "page": 180,
+          "pdf_page": 185,
+          "chapter": 8,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1198
+        },
+        {
+          "page": 181,
+          "pdf_page": 186,
+          "chapter": 8,
+          "sections": 2,
+          "figures": 3,
+          "chars": 1867
+        },
+        {
+          "page": 182,
+          "pdf_page": 187,
+          "chapter": 8,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1455
+        },
+        {
+          "page": 183,
+          "pdf_page": 188,
+          "chapter": 8,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1787
+        },
+        {
+          "page": 184,
+          "pdf_page": 189,
+          "chapter": 8,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1728
+        },
+        {
+          "page": 185,
+          "pdf_page": 190,
+          "chapter": 8,
+          "sections": 6,
+          "figures": 2,
+          "chars": 1008
+        },
+        {
+          "page": 186,
+          "pdf_page": 191,
+          "chapter": 8,
+          "sections": 11,
+          "figures": 1,
+          "chars": 1439
+        },
+        {
+          "page": 187,
+          "pdf_page": 192,
+          "chapter": 8,
+          "sections": 6,
+          "figures": 2,
+          "chars": 931
+        },
+        {
+          "page": 188,
+          "pdf_page": 193,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1857
+        },
+        {
+          "page": 189,
+          "pdf_page": 194,
+          "chapter": 9,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1489
+        },
+        {
+          "page": 190,
+          "pdf_page": 195,
+          "chapter": 9,
+          "sections": 4,
+          "figures": 3,
+          "chars": 718
+        },
+        {
+          "page": 191,
+          "pdf_page": 196,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1255
+        },
+        {
+          "page": 192,
+          "pdf_page": 197,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1418
+        },
+        {
+          "page": 193,
+          "pdf_page": 198,
+          "chapter": 9,
+          "sections": 1,
+          "figures": 1,
+          "chars": 676
+        },
+        {
+          "page": 194,
+          "pdf_page": 199,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1506
+        },
+        {
+          "page": 195,
+          "pdf_page": 200,
+          "chapter": 9,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1663
+        },
+        {
+          "page": 196,
+          "pdf_page": 201,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1229
+        },
+        {
+          "page": 197,
+          "pdf_page": 202,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1041
+        },
+        {
+          "page": 198,
+          "pdf_page": 203,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1071
+        },
+        {
+          "page": 199,
+          "pdf_page": 204,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1475
+        },
+        {
+          "page": 200,
+          "pdf_page": 205,
+          "chapter": 9,
+          "sections": 19,
+          "figures": 0,
+          "chars": 1350
+        },
+        {
+          "page": 201,
+          "pdf_page": 206,
+          "chapter": 9,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1474
+        },
+        {
+          "page": 202,
+          "pdf_page": 207,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1693
+        },
+        {
+          "page": 203,
+          "pdf_page": 208,
+          "chapter": 9,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1522
+        },
+        {
+          "page": 204,
+          "pdf_page": 209,
+          "chapter": 9,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1543
+        },
+        {
+          "page": 205,
+          "pdf_page": 210,
+          "chapter": 9,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1711
+        },
+        {
+          "page": 206,
+          "pdf_page": 211,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1829
+        },
+        {
+          "page": 207,
+          "pdf_page": 212,
+          "chapter": 9,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1360
+        },
+        {
+          "page": 208,
+          "pdf_page": 213,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1136
+        },
+        {
+          "page": 209,
+          "pdf_page": 214,
+          "chapter": 9,
+          "sections": 1,
+          "figures": 0,
+          "chars": 565
+        },
+        {
+          "page": 210,
+          "pdf_page": 215,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1148
+        },
+        {
+          "page": 211,
+          "pdf_page": 216,
+          "chapter": 9,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1590
+        },
+        {
+          "page": 212,
+          "pdf_page": 217,
+          "chapter": 9,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1102
+        },
+        {
+          "page": 213,
+          "pdf_page": 218,
+          "chapter": 10,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1423
+        },
+        {
+          "page": 214,
+          "pdf_page": 219,
+          "chapter": 10,
+          "sections": 3,
+          "figures": 4,
+          "chars": 1007
+        },
+        {
+          "page": 215,
+          "pdf_page": 220,
+          "chapter": 10,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1491
+        },
+        {
+          "page": 216,
+          "pdf_page": 221,
+          "chapter": 10,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1431
+        },
+        {
+          "page": 217,
+          "pdf_page": 222,
+          "chapter": 10,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1676
+        },
+        {
+          "page": 218,
+          "pdf_page": 223,
+          "chapter": 10,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1476
+        },
+        {
+          "page": 219,
+          "pdf_page": 224,
+          "chapter": 10,
+          "sections": 6,
+          "figures": 3,
+          "chars": 1102
+        },
+        {
+          "page": 220,
+          "pdf_page": 225,
+          "chapter": 10,
+          "sections": 10,
+          "figures": 1,
+          "chars": 1768
+        },
+        {
+          "page": 221,
+          "pdf_page": 226,
+          "chapter": 10,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1139
+        },
+        {
+          "page": 222,
+          "pdf_page": 227,
+          "chapter": 11,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1367
+        },
+        {
+          "page": 223,
+          "pdf_page": 228,
+          "chapter": 11,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1572
+        },
+        {
+          "page": 224,
+          "pdf_page": 229,
+          "chapter": 11,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1319
+        },
+        {
+          "page": 225,
+          "pdf_page": 230,
+          "chapter": 11,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1290
+        },
+        {
+          "page": 226,
+          "pdf_page": 231,
+          "chapter": 11,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1316
+        },
+        {
+          "page": 227,
+          "pdf_page": 232,
+          "chapter": 11,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1212
+        },
+        {
+          "page": 228,
+          "pdf_page": 233,
+          "chapter": 11,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1114
+        },
+        {
+          "page": 229,
+          "pdf_page": 234,
+          "chapter": 11,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1280
+        },
+        {
+          "page": 230,
+          "pdf_page": 235,
+          "chapter": 11,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1089
+        },
+        {
+          "page": 231,
+          "pdf_page": 236,
+          "chapter": 11,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1627
+        },
+        {
+          "page": 232,
+          "pdf_page": 237,
+          "chapter": 11,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1311
+        },
+        {
+          "page": 233,
+          "pdf_page": 238,
+          "chapter": 11,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1226
+        },
+        {
+          "page": 234,
+          "pdf_page": 239,
+          "chapter": 11,
+          "sections": 13,
+          "figures": 0,
+          "chars": 1808
+        },
+        {
+          "page": 235,
+          "pdf_page": 240,
+          "chapter": 11,
+          "sections": 9,
+          "figures": 0,
+          "chars": 1963
+        },
+        {
+          "page": 236,
+          "pdf_page": 241,
+          "chapter": 11,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1720
+        },
+        {
+          "page": 237,
+          "pdf_page": 242,
+          "chapter": 11,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1600
+        },
+        {
+          "page": 238,
+          "pdf_page": 243,
+          "chapter": 11,
+          "sections": 1,
+          "figures": 0,
+          "chars": 390
+        },
+        {
+          "page": 239,
+          "pdf_page": 244,
+          "chapter": 11,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1233
+        },
+        {
+          "page": 240,
+          "pdf_page": 245,
+          "chapter": 11,
+          "sections": 14,
+          "figures": 0,
+          "chars": 2234
+        },
+        {
+          "page": 241,
+          "pdf_page": 246,
+          "chapter": 11,
+          "sections": 14,
+          "figures": 0,
+          "chars": 2050
+        },
+        {
+          "page": 242,
+          "pdf_page": 247,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1506
+        },
+        {
+          "page": 243,
+          "pdf_page": 248,
+          "chapter": 12,
+          "sections": 11,
+          "figures": 0,
+          "chars": 1782
+        },
+        {
+          "page": 244,
+          "pdf_page": 249,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1819
+        },
+        {
+          "page": 245,
+          "pdf_page": 250,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 0,
+          "chars": 2027
+        },
+        {
+          "page": 246,
+          "pdf_page": 251,
+          "chapter": 12,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1283
+        },
+        {
+          "page": 247,
+          "pdf_page": 252,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1317
+        },
+        {
+          "page": 248,
+          "pdf_page": 253,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1207
+        },
+        {
+          "page": 249,
+          "pdf_page": 254,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1395
+        },
+        {
+          "page": 250,
+          "pdf_page": 255,
+          "chapter": 12,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1298
+        },
+        {
+          "page": 251,
+          "pdf_page": 256,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 0,
+          "chars": 829
+        },
+        {
+          "page": 252,
+          "pdf_page": 257,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1452
+        },
+        {
+          "page": 253,
+          "pdf_page": 258,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1223
+        },
+        {
+          "page": 254,
+          "pdf_page": 259,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1331
+        },
+        {
+          "page": 255,
+          "pdf_page": 260,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1614
+        },
+        {
+          "page": 256,
+          "pdf_page": 261,
+          "chapter": 12,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1566
+        },
+        {
+          "page": 257,
+          "pdf_page": 262,
+          "chapter": 12,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1805
+        },
+        {
+          "page": 258,
+          "pdf_page": 263,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1156
+        },
+        {
+          "page": 259,
+          "pdf_page": 264,
+          "chapter": 12,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1574
+        },
+        {
+          "page": 260,
+          "pdf_page": 265,
+          "chapter": 12,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1454
+        },
+        {
+          "page": 261,
+          "pdf_page": 266,
+          "chapter": 12,
+          "sections": 7,
+          "figures": 0,
+          "chars": 972
+        },
+        {
+          "page": 262,
+          "pdf_page": 267,
+          "chapter": 12,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1262
+        },
+        {
+          "page": 263,
+          "pdf_page": 268,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1516
+        },
+        {
+          "page": 264,
+          "pdf_page": 269,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1440
+        },
+        {
+          "page": 265,
+          "pdf_page": 270,
+          "chapter": 12,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1217
+        },
+        {
+          "page": 266,
+          "pdf_page": 271,
+          "chapter": 12,
+          "sections": 2,
+          "figures": 0,
+          "chars": 677
+        },
+        {
+          "page": 267,
+          "pdf_page": 272,
+          "chapter": 12,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1435
+        },
+        {
+          "page": 268,
+          "pdf_page": 273,
+          "chapter": 12,
+          "sections": 10,
+          "figures": 0,
+          "chars": 2068
+        },
+        {
+          "page": 269,
+          "pdf_page": 274,
+          "chapter": 12,
+          "sections": 13,
+          "figures": 0,
+          "chars": 1574
+        },
+        {
+          "page": 270,
+          "pdf_page": 275,
+          "chapter": 13,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1674
+        },
+        {
+          "page": 271,
+          "pdf_page": 276,
+          "chapter": 13,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1737
+        },
+        {
+          "page": 272,
+          "pdf_page": 277,
+          "chapter": 13,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1676
+        },
+        {
+          "page": 273,
+          "pdf_page": 278,
+          "chapter": 13,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1213
+        },
+        {
+          "page": 274,
+          "pdf_page": 279,
+          "chapter": 13,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1614
+        },
+        {
+          "page": 275,
+          "pdf_page": 280,
+          "chapter": 13,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1332
+        },
+        {
+          "page": 276,
+          "pdf_page": 281,
+          "chapter": 13,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1489
+        },
+        {
+          "page": 277,
+          "pdf_page": 282,
+          "chapter": 13,
+          "sections": 14,
+          "figures": 0,
+          "chars": 1267
+        },
+        {
+          "page": 278,
+          "pdf_page": 283,
+          "chapter": 13,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1598
+        },
+        {
+          "page": 279,
+          "pdf_page": 284,
+          "chapter": 13,
+          "sections": 1,
+          "figures": 0,
+          "chars": 986
+        },
+        {
+          "page": 280,
+          "pdf_page": 285,
+          "chapter": 13,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1062
+        },
+        {
+          "page": 281,
+          "pdf_page": 286,
+          "chapter": 13,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1621
+        },
+        {
+          "page": 282,
+          "pdf_page": 287,
+          "chapter": 13,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1523
+        },
+        {
+          "page": 283,
+          "pdf_page": 288,
+          "chapter": 13,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1803
+        },
+        {
+          "page": 284,
+          "pdf_page": 289,
+          "chapter": 13,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1164
+        },
+        {
+          "page": 285,
+          "pdf_page": 290,
+          "chapter": 13,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1841
+        },
+        {
+          "page": 286,
+          "pdf_page": 291,
+          "chapter": 13,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1307
+        },
+        {
+          "page": 287,
+          "pdf_page": 292,
+          "chapter": 13,
+          "sections": 17,
+          "figures": 0,
+          "chars": 1868
+        },
+        {
+          "page": 288,
+          "pdf_page": 293,
+          "chapter": 13,
+          "sections": 9,
+          "figures": 0,
+          "chars": 792
+        },
+        {
+          "page": 289,
+          "pdf_page": 294,
+          "chapter": 14,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1135
+        },
+        {
+          "page": 290,
+          "pdf_page": 295,
+          "chapter": 14,
+          "sections": 3,
+          "figures": 2,
+          "chars": 933
+        },
+        {
+          "page": 291,
+          "pdf_page": 296,
+          "chapter": 14,
+          "sections": 7,
+          "figures": 2,
+          "chars": 1676
+        },
+        {
+          "page": 292,
+          "pdf_page": 297,
+          "chapter": 14,
+          "sections": 5,
+          "figures": 2,
+          "chars": 1379
+        },
+        {
+          "page": 293,
+          "pdf_page": 298,
+          "chapter": 14,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1590
+        },
+        {
+          "page": 294,
+          "pdf_page": 299,
+          "chapter": 14,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1592
+        },
+        {
+          "page": 295,
+          "pdf_page": 300,
+          "chapter": 14,
+          "sections": 6,
+          "figures": 2,
+          "chars": 1643
+        },
+        {
+          "page": 296,
+          "pdf_page": 301,
+          "chapter": 14,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1553
+        },
+        {
+          "page": 297,
+          "pdf_page": 302,
+          "chapter": 14,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1393
+        },
+        {
+          "page": 298,
+          "pdf_page": 303,
+          "chapter": 14,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1081
+        },
+        {
+          "page": 299,
+          "pdf_page": 304,
+          "chapter": 14,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1060
+        },
+        {
+          "page": 300,
+          "pdf_page": 305,
+          "chapter": 14,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1076
+        },
+        {
+          "page": 301,
+          "pdf_page": 306,
+          "chapter": 14,
+          "sections": 9,
+          "figures": 2,
+          "chars": 1287
+        },
+        {
+          "page": 302,
+          "pdf_page": 307,
+          "chapter": 14,
+          "sections": 6,
+          "figures": 3,
+          "chars": 1334
+        },
+        {
+          "page": 303,
+          "pdf_page": 308,
+          "chapter": 14,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1190
+        },
+        {
+          "page": 304,
+          "pdf_page": 309,
+          "chapter": 14,
+          "sections": 5,
+          "figures": 4,
+          "chars": 1046
+        },
+        {
+          "page": 305,
+          "pdf_page": 310,
+          "chapter": 14,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1753
+        },
+        {
+          "page": 306,
+          "pdf_page": 311,
+          "chapter": 14,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1081
+        },
+        {
+          "page": 307,
+          "pdf_page": 312,
+          "chapter": 14,
+          "sections": 7,
+          "figures": 1,
+          "chars": 918
+        },
+        {
+          "page": 308,
+          "pdf_page": 313,
+          "chapter": 14,
+          "sections": 6,
+          "figures": 4,
+          "chars": 743
+        },
+        {
+          "page": 309,
+          "pdf_page": 314,
+          "chapter": 14,
+          "sections": 6,
+          "figures": 1,
+          "chars": 811
+        },
+        {
+          "page": 310,
+          "pdf_page": 315,
+          "chapter": 15,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1537
+        },
+        {
+          "page": 311,
+          "pdf_page": 316,
+          "chapter": 15,
+          "sections": 7,
+          "figures": 5,
+          "chars": 1614
+        },
+        {
+          "page": 312,
+          "pdf_page": 317,
+          "chapter": 15,
+          "sections": 7,
+          "figures": 2,
+          "chars": 1504
+        },
+        {
+          "page": 313,
+          "pdf_page": 318,
+          "chapter": 15,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1328
+        },
+        {
+          "page": 314,
+          "pdf_page": 319,
+          "chapter": 15,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1102
+        },
+        {
+          "page": 315,
+          "pdf_page": 320,
+          "chapter": 15,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1902
+        },
+        {
+          "page": 316,
+          "pdf_page": 321,
+          "chapter": 15,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1204
+        },
+        {
+          "page": 317,
+          "pdf_page": 322,
+          "chapter": 15,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1322
+        },
+        {
+          "page": 318,
+          "pdf_page": 323,
+          "chapter": 15,
+          "sections": 16,
+          "figures": 0,
+          "chars": 1839
+        },
+        {
+          "page": 319,
+          "pdf_page": 324,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1386
+        },
+        {
+          "page": 320,
+          "pdf_page": 325,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1176
+        },
+        {
+          "page": 321,
+          "pdf_page": 326,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1254
+        },
+        {
+          "page": 322,
+          "pdf_page": 327,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 3,
+          "chars": 1675
+        },
+        {
+          "page": 323,
+          "pdf_page": 328,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 3,
+          "chars": 1575
+        },
+        {
+          "page": 324,
+          "pdf_page": 329,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1528
+        },
+        {
+          "page": 325,
+          "pdf_page": 330,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1431
+        },
+        {
+          "page": 326,
+          "pdf_page": 331,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1698
+        },
+        {
+          "page": 327,
+          "pdf_page": 332,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 4,
+          "chars": 1697
+        },
+        {
+          "page": 328,
+          "pdf_page": 333,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1834
+        },
+        {
+          "page": 329,
+          "pdf_page": 334,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1511
+        },
+        {
+          "page": 330,
+          "pdf_page": 335,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1629
+        },
+        {
+          "page": 331,
+          "pdf_page": 336,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1509
+        },
+        {
+          "page": 332,
+          "pdf_page": 337,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1514
+        },
+        {
+          "page": 333,
+          "pdf_page": 338,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1452
+        },
+        {
+          "page": 334,
+          "pdf_page": 339,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1582
+        },
+        {
+          "page": 335,
+          "pdf_page": 340,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1515
+        },
+        {
+          "page": 336,
+          "pdf_page": 341,
+          "chapter": 16,
+          "sections": 12,
+          "figures": 0,
+          "chars": 2087
+        },
+        {
+          "page": 337,
+          "pdf_page": 342,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 3,
+          "chars": 775
+        },
+        {
+          "page": 338,
+          "pdf_page": 343,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 2,
+          "chars": 1628
+        },
+        {
+          "page": 339,
+          "pdf_page": 344,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 1,
+          "chars": 1810
+        },
+        {
+          "page": 340,
+          "pdf_page": 345,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1635
+        },
+        {
+          "page": 341,
+          "pdf_page": 346,
+          "chapter": 16,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1815
+        },
+        {
+          "page": 342,
+          "pdf_page": 347,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 2,
+          "chars": 1631
+        },
+        {
+          "page": 343,
+          "pdf_page": 348,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1485
+        },
+        {
+          "page": 344,
+          "pdf_page": 349,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 2,
+          "chars": 924
+        },
+        {
+          "page": 345,
+          "pdf_page": 350,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1684
+        },
+        {
+          "page": 346,
+          "pdf_page": 351,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1168
+        },
+        {
+          "page": 347,
+          "pdf_page": 352,
+          "chapter": 16,
+          "sections": 4,
+          "figures": 0,
+          "chars": 1867
+        },
+        {
+          "page": 348,
+          "pdf_page": 353,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 1,
+          "chars": 1183
+        },
+        {
+          "page": 349,
+          "pdf_page": 354,
+          "chapter": 16,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1285
+        },
+        {
+          "page": 350,
+          "pdf_page": 355,
+          "chapter": 16,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1119
+        },
+        {
+          "page": 351,
+          "pdf_page": 356,
+          "chapter": 16,
+          "sections": 12,
+          "figures": 0,
+          "chars": 1774
+        },
+        {
+          "page": 352,
+          "pdf_page": 357,
+          "chapter": 16,
+          "sections": 9,
+          "figures": 1,
+          "chars": 1841
+        },
+        {
+          "page": 353,
+          "pdf_page": 358,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1896
+        },
+        {
+          "page": 354,
+          "pdf_page": 359,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 0,
+          "chars": 2303
+        },
+        {
+          "page": 355,
+          "pdf_page": 360,
+          "chapter": 17,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1793
+        },
+        {
+          "page": 356,
+          "pdf_page": 361,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 0,
+          "chars": 2482
+        },
+        {
+          "page": 357,
+          "pdf_page": 362,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 1,
+          "chars": 1613
+        },
+        {
+          "page": 358,
+          "pdf_page": 363,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 2,
+          "chars": 1038
+        },
+        {
+          "page": 359,
+          "pdf_page": 364,
+          "chapter": 17,
+          "sections": 8,
+          "figures": 1,
+          "chars": 1458
+        },
+        {
+          "page": 360,
+          "pdf_page": 365,
+          "chapter": 17,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1118
+        },
+        {
+          "page": 361,
+          "pdf_page": 366,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1322
+        },
+        {
+          "page": 362,
+          "pdf_page": 367,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 0,
+          "chars": 1773
+        },
+        {
+          "page": 363,
+          "pdf_page": 368,
+          "chapter": 17,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1883
+        },
+        {
+          "page": 364,
+          "pdf_page": 369,
+          "chapter": 17,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1805
+        },
+        {
+          "page": 365,
+          "pdf_page": 370,
+          "chapter": 17,
+          "sections": 11,
+          "figures": 0,
+          "chars": 1826
+        },
+        {
+          "page": 366,
+          "pdf_page": 371,
+          "chapter": 17,
+          "sections": 7,
+          "figures": 0,
+          "chars": 1616
+        },
+        {
+          "page": 367,
+          "pdf_page": 372,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 1,
+          "chars": 1220
+        },
+        {
+          "page": 368,
+          "pdf_page": 373,
+          "chapter": 17,
+          "sections": 6,
+          "figures": 0,
+          "chars": 1552
+        },
+        {
+          "page": 369,
+          "pdf_page": 374,
+          "chapter": 17,
+          "sections": 2,
+          "figures": 0,
+          "chars": 1268
+        },
+        {
+          "page": 370,
+          "pdf_page": 375,
+          "chapter": 17,
+          "sections": 6,
+          "figures": 1,
+          "chars": 1233
+        },
+        {
+          "page": 371,
+          "pdf_page": 376,
+          "chapter": 17,
+          "sections": 8,
+          "figures": 0,
+          "chars": 1258
+        },
+        {
+          "page": 372,
+          "pdf_page": 377,
+          "chapter": 17,
+          "sections": 9,
+          "figures": 0,
+          "chars": 1890
+        },
+        {
+          "page": 373,
+          "pdf_page": 378,
+          "chapter": 17,
+          "sections": 7,
+          "figures": 1,
+          "chars": 1144
+        },
+        {
+          "page": 374,
+          "pdf_page": 379,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 0,
+          "chars": 752
+        },
+        {
+          "page": 375,
+          "pdf_page": 380,
+          "chapter": 17,
+          "sections": 1,
+          "figures": 0,
+          "chars": 1440
+        },
+        {
+          "page": 376,
+          "pdf_page": 381,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1057
+        },
+        {
+          "page": 377,
+          "pdf_page": 382,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1067
+        },
+        {
+          "page": 378,
+          "pdf_page": 383,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1533
+        },
+        {
+          "page": 379,
+          "pdf_page": 384,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 0,
+          "chars": 919
+        },
+        {
+          "page": 380,
+          "pdf_page": 385,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 0,
+          "chars": 1213
+        },
+        {
+          "page": 381,
+          "pdf_page": 386,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 0,
+          "chars": 776
+        },
+        {
+          "page": 382,
+          "pdf_page": 387,
+          "chapter": 17,
+          "sections": 3,
+          "figures": 0,
+          "chars": 916
+        },
+        {
+          "page": 383,
+          "pdf_page": 388,
+          "chapter": 17,
+          "sections": 4,
+          "figures": 0,
+          "chars": 902
+        },
+        {
+          "page": 384,
+          "pdf_page": 389,
+          "chapter": 17,
+          "sections": 5,
+          "figures": 0,
+          "chars": 868
+        }
+      ]
+    },
+    "physical_pdf_pages": 421,
+    "extracted_pages": 384,
+    "unextracted_pages": 32
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 385,
+  "pdf_page_no": 390,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Appendix",
+      "chunk_type": "theory",
+      "content_markdown": "Some additional content related to Chapter 3, 6 and 12 of Mathematics in Class nine is added as annexure. Because in 2025, the students studying in the nineth grade have studied in the previous grade (seventh and eighth grade) according to the 'National Curriculum 2022'. According to the 'National Curriculum 2022', the above mentioned content was not included in the seventh and eighth grades. Hence the above mentioned content is included for continuity of learning and effective learning.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "It should be noted that the continuous and summative evaluation will be conducted according to the learning outcomes of grade nineth Mathematics.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Inclusion to Chapter 3",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Reduction of fractions",
+      "chunk_type": "theory",
+      "content_markdown": "Reduction of a fraction means to transfer the fraction to its lowest terms. For this purpose, both the numerator and denominator are to be divided by their common divisor or factor. If there is no common divisor or factor in between numerator and denominator of a fraction, such fraction is said to be in its lowest terms.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 1. Reduce the fraction $\\frac{4a^2bc}{6ab^2c}$.",
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution : $\\frac{4a^2bc}{6ab^2c} = \\frac{2 \\times 2 \\times a \\times a \\times b \\times c}{2 \\times 3 \\times a \\times b \\times b \\times c} = \\frac{2a}{3b}$\nAlternative method : $\\frac{4a^2bc}{6ab^2c} = \\frac{2abc \\times 2a}{2abc \\times 3b} = \\frac{2a}{3b}$ [H.C.F. of numerator and denominator is $2abc$]",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

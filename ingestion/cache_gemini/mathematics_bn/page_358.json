@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 358,
+  "pdf_page_no": 363,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$=\\frac{5(a+2)}{(a^2-4)(a+5)}$$\n$$\\therefore \\text{নির্ণেয় ভগ্নাংশ দুইটি } \\frac{2(a+5)}{(a^2-4)(a+5)}, \\frac{5(a+2)}{(a^2-4)(a+5)}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ ৬। সাধারণ হরবিশিষ্ট ভগ্নাংশে পরিণত কর :",
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\\frac{1}{x^2+3x}, \\frac{2}{x^2+5x+6}, \\frac{3}{x^2-x-12}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: ১ম ভগ্নাংশের হর $= x^2 + 3x = x(x+3)$\n২য় ভগ্নাংশের হর $= x^2 + 5x + 6 = x^2 + 2x + 3x + 6$\n$= x(x+2) + 3(x+2) = (x+2)(x+3)$\n৩য় ভগ্নাংশের হর $= x^2 - x - 12 = x^2 + 3x - 4x - 12$\n$= x(x+3) - 4(x+3) = (x+3)(x-4)$\nহর তিনটির ল.সা.গু. $x(x+2)(x+3)(x-4)$\nএবার ভগ্নাংশগুলোকে সমহরবিশিষ্ট করি-",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\\therefore \\text{১ম ভগ্নাংশ } = \\frac{1}{x^2+3x} = \\frac{1 \\times (x+2)(x-4)}{x(x+3) \\times (x+2)(x-4)} = \\frac{(x+2)(x-4)}{x(x+2)(x+3)(x-4)}$$\n$$\\text{২য় ভগ্নাংশ } = \\frac{2}{x^2+5x+6} = \\frac{2}{(x+2)(x+3)} = \\frac{2 \\times x(x-4)}{(x+2)(x+3) \\times x(x-4)}$$\n$$= \\frac{2x(x-4)}{x(x+2)(x+3)(x-4)}$$\n$$\\text{৩য় ভগ্নাংশ } = \\frac{3}{x^2-x-12} = \\frac{3}{(x+3)(x-4)} = \\frac{3 \\times x(x+2)}{(x+3)(x-4) \\times x(x+2)}$$\n$$= \\frac{3x(x+2)}{x(x+2)(x+3)(x-4)}$$\n$$\\therefore \\text{নির্ণেয় ভগ্নাংশ তিনটি যথাক্রমে }$$\n$$\\frac{(x+2)(x-4)}{x(x+2)(x+3)(x-4)}, \\frac{2x(x-4)}{x(x+2)(x+3)(x-4)}, \\frac{3x(x+2)}{x(x+2)(x+3)(x-4)}.$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

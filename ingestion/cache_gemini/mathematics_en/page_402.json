@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 402,
+  "pdf_page_no": 407,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \\text{Area of the entire faces of the given solid.}$$ \n $$= 2 (7.5 \\times 6 + 6 \\times 4 + 7.5 \\times 4) \\text{ sq. cm}$$ \n $$= 2(45 + 24 + 30) \\text{ sq. cm}$$ \n $$= 2 \\times 99 \\text{ sq. cm}$$ \n $$= 198 \\text{ sq. cm}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.1",
+      "section_title": "Proof of the required theorem",
+      "chunk_type": "theory",
+      "content_markdown": "**Theorem 2:** \n If two straight lines intersect, the opposite angles formed are equal. \n **Special Nomination:** Assume lines AB and CD intersect at point O. As a result, angles $\\angle AOC$, $\\angle COB$, $\\angle BOD$ and $\\angle AOD$ are formed at O. \n We need to prove that $\\angle AOC$ is equal to the opposite $\\angle BOD$ and $\\angle COB$ is equal to the opposite $\\angle AOD$. \n **Proof:** \n The ray OA intersects line CD at point O. \n Therefore, $\\angle AOC + \\angle AOD = 1 \\text{ straight angle} = 2 \\text{ right angle}$. [Theorem 1] \n Similarly, the ray OD intersects line AB at point O. Hence, $\\angle AOD + \\angle BOD = 1 \\text{ straight angle} = 2 \\text{ right angle}$. [Theorem 1] \n So, $\\angle AOC + \\angle AOD = \\angle AOD + \\angle BOD$ \n Therefore, $\\angle AOC = \\angle BOD$ [Subtracting $\\angle AOD$ from both sides] \n Similarly, it can be shown that $\\angle COB = \\angle AOD$ [Proved]",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Theorem 6 (SAS Theorem)",
+      "chunk_type": "theory",
+      "content_markdown": "If in two triangles, two sides of one are respectively equal to two sides of the other, and the included angles are equal, then the two triangles are congruent. \n **Special Nomination:** Suppose in $\\triangle ABC$ and $\\triangle DEF$, $AB = DE$, $AC = DF$, and the included angle $\\angle BAC =$ the included angle $\\angle EDF$. We need to prove that $\\angle ABC = \\angle DEF$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Intersecting lines",
+      "figure_no": "6.01",
+      "box_2d": [
+        375,
+        678,
+        481,
+        875
+      ],
+      "description": "Two intersecting straight lines AB and CD meeting at point O, forming four angles.",
+      "reading_order_anchor": "Theorem 2:"
+    },
+    {
+      "caption": "Fig 6.02: SAS Theorem illustration",
+      "figure_no": "6.02",
+      "box_2d": [
+        794,
+        423,
+        891,
+        878
+      ],
+      "description": "Two triangles ABC and DEF showing equal sides and included angles.",
+      "reading_order_anchor": "Theorem 6 (SAS Theorem):"
+    }
+  ]
+}

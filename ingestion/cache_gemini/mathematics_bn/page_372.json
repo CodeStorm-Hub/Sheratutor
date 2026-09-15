@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 372,
+  "pdf_page_no": 377,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "উপপাদ্য ১১ (সমকোণী অতিভুজ-বাহ উপপাদ্য)",
+      "chunk_type": "theory",
+      "content_markdown": "দুইটি সমকোণী ত্রিভুজের অতিভুজদ্বয় সমান হলে এবং একটির এক বাহু অপরটির অপর এক বাহুর সমান হলে, ত্রিভূজদ্বয় সর্বসম হবে।\nবিশেষ নির্বচন : মনে করি, $\\triangle ABC$ ও $\\triangle DEF$ সমকোণী ত্রিভূজদ্বয়ের অতিভূজ $AC = DF$ এবং $AB = DE$. প্রমাণ করতে হবে যে, $\\triangle ABC \\cong \\triangle DEF$\nপ্রমাণ :\n(১) $\\triangle ABC$ ও $\\triangle DEF$ এর উপর এমনভাবে স্থাপন করি যেন, $B$ বিন্দু $E$ বিন্দুর উপর, $BA$ বাহু $ED$ বাহু বরাবর এবং $C$ বিন্দু $DE$ এর যে পাশে $F$ বিন্দু আছে এর বিপরীত পাশে পড়ে। ধরি, $C$ বিন্দুর নতুন অবস্থান $G$।\n(২) যেহেতু $AB=DE$, $A$ বিন্দু $D$ বিন্দুর উপর পড়বে। ফলে $\\triangle DEG$ হবে $\\triangle DEG$ এর নতুন অবস্থান অর্থাৎ $DG = AC$, $\\angle G = \\angle C$\n$\\angle DEG = \\angle B = 1$ সমকোণ।\n(৩) যেহেতু $\\angle DEF + \\angle DEG = 1$ সমকোণ $+ 1$ সমকোণ\n$= 2$ সমকোণ $= 1$ সরলকোণ, $GEF$ একটি সরলরেখা।\nসুতরাং, $\\triangle DGF$ একটি সমদ্বিবাহু ত্রিভুজ। যার $DG = DF$\nসুতরাং, $\\angle F = \\angle G = \\angle C$\n(৪) এখন $\\triangle ABC$ ও $\\triangle DEF$ এর\n$\\angle B = \\angle E$ [প্রত্যেকে $1$ সমকোণ]\n$\\angle C = \\angle F$ এবং $AB = DE$ [কোণ-বাহ-কোণ উপপাদ্য]\nসুতরাং $\\triangle ABC \\cong \\triangle DEF$ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উপপাদ্য ১২",
+      "chunk_type": "theory",
+      "content_markdown": "কোনো ত্রিভুজের একটি বাহু অপর একটি বাহু অপেক্ষা বৃহত্তর হলে, বৃহত্তর বাহুর বিপরীত কোণ ক্ষুদ্রতর বাহুর বিপরীত কোণ অপেক্ষা বৃহত্তর হবে।\nবিশেষ নির্বচন : মনে করি, $\\triangle ABC$ - এ $AC > AB$।\nপ্রমাণ করতে হবে যে, $\\angle ABC > \\angle ACB$।\nঅঙ্কন: $AC$ থেকে $AB$ এর সমান করে $AD$ অংশ কাটি এবং $B, D$ যোগ করি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র ৬.০১: দুইটি সমকোণী ত্রিভুজের সর্বসমতা প্রমাণ",
+      "figure_no": "6.01",
+      "box_2d": [
+        386,
+        526,
+        499,
+        905
+      ],
+      "description": "Two right-angled triangles, $\\triangle ABC$ and $\\triangle DEF$, with construction lines for proving congruence.",
+      "reading_order_anchor": "উপপাদ্য ১১ (সমকোণী অতিভুজ-বাহ উপপাদ্য)"
+    },
+    {
+      "caption": "চিত্র ৬.০২: ত্রিভুজের বাহু ও কোণের সম্পর্ক",
+      "figure_no": "6.02",
+      "box_2d": [
+        790,
+        690,
+        930,
+        905
+      ],
+      "description": "A triangle $\\triangle ABC$ with a line segment $AD$ drawn from vertex $A$ to side $BC$, such that $AD$ is equal to $AB$.",
+      "reading_order_anchor": "উপপাদ্য ১২"
+    }
+  ]
+}

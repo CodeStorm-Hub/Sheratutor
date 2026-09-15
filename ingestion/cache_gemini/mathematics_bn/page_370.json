@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 370,
+  "pdf_page_no": 375,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": "6.7",
+      "section_title": "উপপাদ্য ৭",
+      "chunk_type": "theory",
+      "content_markdown": "যদি কোনো ত্রিভুজের দুইটি বাহু পরস্পর সমান হয়, তবে এদের বিপরীত কোণ দুইটিও পরস্পর সমান হবে।\nবিশেষ নির্বচন : মনে করি, $ABC$ ত্রিভুজে $AB = AC$ |\nপ্রমাণ করতে হবে যে, $\\angle ABC = \\angle ACB$\n\nঅঙ্কন : $\\angle BAC$ এর সমদ্বিখণ্ডক $AD$ আঁকি যেন তা $BC$ কে $D$ বিন্দুতে ছেদ\nকরে।\n\nপ্রমাণ : $\\triangle ABD$ এবং $\\triangle ACD$ এ\n(১) $AB = AC$ (প্রদত্ত)\n(২) $AD$ সাধারণ বাহু এবং\n(৩) অন্তর্ভুক্ত $\\angle BAD = $ অন্তর্ভুক্ত $\\angle CAD$ (অঙ্কনানুসারে )\nসুতরাং, $\\triangle ABD \\cong \\triangle ACD$ [বাহ-কোণ-বাহ উপপাদ্য]\n$\\therefore \\angle ABD = \\angle ACD$ অর্থাৎ, $\\angle ABC = \\angle ACB$ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.9",
+      "section_title": "উপপাদ্য ৯ (বাহ-বাহ-বাহ উপপাদ্য)",
+      "chunk_type": "theory",
+      "content_markdown": "যদি একটি ত্রিভুজের তিন বাহু যথাক্রমে অপর একটি ত্রিভুজের\nতিন বাহুর সমান হয়, তবে ত্রিভুজ দুইটি সর্বসম হবে।\nবিশেষ নির্বচন : মনে করি, $\\triangle ABC$ এবং $\\triangle DEF$ এ\n$AB = DE$, $AC = DF$ এবং $BC = EF$,\nপ্রমাণ করতে হবে যে, $\\angle ABC \\cong \\angle DEF$\n\nপ্রমাণ : মনে করি, $BC$ এবং $EF$ বাহু যথাক্রমে $\\triangle ABC$ এবং $\\triangle DEF$ এর বৃহত্তম বাহুদ্বয়। এখন\n$\\triangle ABC$ কে $\\triangle DEF$ এর উপর এমনভাবে স্থাপন করি, যেন $B$ বিন্দু $E$ বিন্দুর উপর ও $BC$ বাহু $EF$ বাহু\nবরাবর এবং $EF$ রেখার যে পাশে $D$ বিন্দু আছে, $A$ বিন্দু এর বিপরীত পাশে পড়ে। মনে করি, $G$ বিন্দু $A$\nবিন্দুর নতুন অবস্থান |\n\nযেহেতু $BC = EF$, $C$ বিন্দু $F$ বিন্দুর উপর পড়বে। সুতরাং $\\triangle GEF$ হবে $\\triangle ABC$ এর নতুন অবস্থান |\nঅর্থাৎ, $EG = BA$, $FG = CA$ ও $\\angle EGF = \\angle BAC$.\n\n$D, G$ যোগ করি।\n\n(১) $\\triangle EGD$ এ $EG = ED$ [কারণ $EG = BA = ED$] | [ত্রিভুজের সমান বাহুদ্বয়ের বিপরীত কোণ\nপরস্পর সমান]\nঅতএব, $\\angle EDG = \\angle EGD$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 6.01: একটি সমদ্বিবাহু ত্রিভুজ $ABC$ যেখানে $AD$ কোণ $BAC$ এর সমদ্বিখণ্ডক",
+      "figure_no": "6.01",
+      "box_2d": [
+        230,
+        579,
+        360,
+        888
+      ],
+      "description": "A triangle ABC with a line segment AD bisecting angle BAC and intersecting BC at D. Sides AB and AC are marked as equal.",
+      "reading_order_anchor": "উপপাদ্য ৭"
+    },
+    {
+      "caption": "চিত্র 6.02: দুইটি ত্রিভুজ $ABC$ এবং $DEF$ এর বাহুগুলির সম্পর্ক",
+      "figure_no": "6.02",
+      "box_2d": [
+        500,
+        517,
+        650,
+        910
+      ],
+      "description": "Two geometric figures: a triangle ABC and a quadrilateral DEFG, illustrating the side-side-side congruence theorem.",
+      "reading_order_anchor": "উপপাদ্য ৯ (বাহ-বাহ-বাহ উপপাদ্য)"
+    }
+  ]
+}

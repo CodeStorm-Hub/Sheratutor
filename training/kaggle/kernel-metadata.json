@@ -1,0 +1,11 @@
+{
+  "id": "syed181/sheratutor-unsloth-qwen-finetune",
+  "title": "SheraTutor Unsloth Qwen Finetune",
+  "code_file": "sheratutor_unsloth_qwen2_5_finetune.py",
+  "language": "python",
+  "kernel_type": "script",
+  "is_private": "true",
+  "enable_gpu": "true",
+  "enable_internet": "true",
+  "dataset_sources": []
+}

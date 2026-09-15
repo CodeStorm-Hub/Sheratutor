@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 391,
+  "pdf_page_no": 396,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Addition of algebraic fractions",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. Add : $\\frac{x}{a}$ and $\\frac{y}{a}$.Solution: $\\frac{x}{a} + \\frac{y}{a} = \\frac{x+y}{a}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 8. Find the sum : $\\frac{3a}{2x} + \\frac{b}{2y}$.Solution : $\\frac{3a}{2x} + \\frac{b}{2y} = \\frac{3a \\times y}{2x \\times y} + \\frac{b \\times x}{2y \\times x} = \\frac{3ay + bx}{2xy}$ [Taking L.C.M. $2xy$ of $2x, 2y$]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Subtraction of Algebraic Fractions",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 9. Subtract : $\\frac{b}{x}$ from $\\frac{a}{x}$Solution : $\\frac{a}{x} - \\frac{b}{x} = \\frac{a-b}{x}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 10. Subtract : $\\frac{b}{3y}$ from $\\frac{2a}{3x}$. [ L.C.M. of $3x$ and $3y$ is $3xy$]Solution : $\\frac{2a}{3x} - \\frac{b}{3y} = \\frac{2a \\times y}{3x y} - \\frac{b \\times x}{3x y} = \\frac{2ay-bx}{3xy}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 11. Find the difference : $\\frac{1}{a+2} - \\frac{1}{a^2-4}$. [ L.C.M. of $3x$ and $3y$ is $3xy$]Solution: $\\frac{1}{a+2} - \\frac{1}{a^2-4} = \\frac{1}{a+2} - \\frac{1}{(a+2)(a-2)} = \\frac{1 \\times (a-2)}{(a+2)(a-2)} - \\frac{1}{(a+2)(a-2)} = \\frac{(a-2)-1}{(a+2)(a-2)} = \\frac{a-2-1}{(a+2)(a-2)} = \\frac{a-3}{a^2-4}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 411,
+  "pdf_page_no": 416,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, we get from (4) and (5)\n$$4u - 9(1 - 2u) = -1$$\nor, $$4u - 9 + 18u = -1$$\nor, $$22u = 9 - 1$$\n$$\\therefore u = \\frac{8}{22} = \\frac{4}{11}$$\nor, $$\\frac{1}{x} = \\frac{4}{11} \\therefore x = \\frac{11}{4} \\quad (\\because \\frac{1}{x} = u)$$\n\nPutting the value of $$u$$ in (5), we get\n$$v = 1 - 2 \\cdot \\frac{4}{11}$$\n$$= \\frac{11 - 8}{11}$$\n$$v = \\frac{3}{11}$$\nor, $$\\frac{1}{y} = \\frac{3}{11}$$\n$$\\therefore y = \\frac{11}{3}$$\n$$\\therefore [\\frac{1}{y} = v]$$\n$$\\therefore \\text{Required solution is } (x, y) = (\\frac{11}{4}, \\frac{11}{3})$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "12.2",
+      "section_title": "Method of Elimination",
+      "chunk_type": "theory",
+      "content_markdown": "Applying by this method, we can solve the equations by following the steps below :\n\n(a) Multiply both the equations by two such numbers separately so that the coefficients of one variable become equal.\n\n(b) If the coefficients of a variable are of the same or opposite sign, subtract or add the equations. The equation after subtraction (or addition) will be reduced to an equation of one variable.\n\n(c) Find the value of a variable by the method of solution of simple equation.\n\n(d) Put the obtained value of the variable in any one of the given equations and find the value of the other variable.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

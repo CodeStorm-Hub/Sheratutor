@@ -1,0 +1,67 @@
+{
+  "printed_page_no": 381,
+  "pdf_page_no": 386,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "থেলস",
+      "chunk_type": "theory",
+      "content_markdown": "থেলস (625-545 BC) ছিলেন একজন অসাধারণ গ্রিক শিক্ষাবিদ এবং ব্যবসায়ী। তিনিই প্রথম চিন্তা করেন জ্যামিতি দিয়ে অনেক জটিল বিষয়ের সমাধান করা সম্ভব। তিনি সমকোণী ত্রিভুজের সাহায্যে পিরামিডের উচ্চতা বের করে দিয়ে মিশরীয়দের চমক লাগিয়ে দিয়েছিলেন। এটিই পরবর্তীতে ত্রিকোণমিতির উৎপত্তিতে ভিত্তি স্থাপন করেছিল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "পিথাগোরাস",
+      "chunk_type": "theory",
+      "content_markdown": "পিথাগোরাস (প্রায় 582-501 BC) ছিলেন একজন গ্রিক দার্শনিক এবং গণিতবিদ। পিথাগোরাস সমকোণী ত্রিভুজের বাহুগুলোর সম্পর্কের সূত্রের জন্য সারাবিশ্বে পরিচিত (যাকে বলা হয় পিথাগোরাসের সূত্র)। তিনি এমন একটি স্কুল প্রতিষ্ঠা করেন যেখানে গণিত, সঙ্গীত, বিজ্ঞান, দর্শন ও ধর্ম শিক্ষার ব্যবস্থা করা হয়। সংখ্যাতত্ত্ব এবং ত্রিমাত্রিক ও ক্ষেত্রফল সম্পর্কীয় জ্যামিতি শাস্ত্রে পিথাগোরাস অনেক বেশি অবদান রাখেন।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "আর্কিমিডিস",
+      "chunk_type": "theory",
+      "content_markdown": "আর্কিমিডিস (287 - 212 BC) একজন গ্রিক গণিতবিদ, পদার্থবিজ্ঞানী, প্রকৌশলী, উদ্ভাবক এবং জ্যোতির্বিদ ছিলেন। তাকে প্রাচীনকালের সর্বশ্রেষ্ঠ গণিতজ্ঞ হিসাবে বিবেচনা করা হয়। আর্কিমিডিস আধুনিক ক্যালকুলাসের ধারণার সূচনা করেন এবং সূক্ষ্মাতিসূক্ষ্ম মানের প্রয়োগ করেন। আর্কিমিডিসের সবচেয়ে জনপ্রিয় আবিষ্কারগুলোর মধ্যে একটি ছিল অনিয়মিত আকারের বস্তুর আয়তন পরিমাপের পদ্ধতি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 12.01: থেলস এর প্রতিকৃতি",
+      "figure_no": "12.01",
+      "box_2d": [
+        242,
+        130,
+        318,
+        230
+      ],
+      "description": "A portrait of the ancient Greek philosopher and mathematician Thales.",
+      "reading_order_anchor": "থেলস"
+    },
+    {
+      "caption": "চিত্র 12.02: পিথাগোরাস এর প্রতিকৃতি",
+      "figure_no": "12.02",
+      "box_2d": [
+        437,
+        129,
+        544,
+        230
+      ],
+      "description": "A portrait of the ancient Greek mathematician and philosopher Pythagoras.",
+      "reading_order_anchor": "পিথাগোরাস"
+    },
+    {
+      "caption": "চিত্র 12.03: আর্কিমিডিস এর প্রতিকৃতি",
+      "figure_no": "12.03",
+      "box_2d": [
+        634,
+        129,
+        740,
+        230
+      ],
+      "description": "A portrait of the ancient Greek mathematician, physicist, engineer, inventor, and astronomer Archimedes.",
+      "reading_order_anchor": "আর্কিমিডিস"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
       "section_no": null,
       "section_title": null,
       "chunk_type": "theory",
-      "content_markdown": "$$\\cos \\theta = \\frac{OM}{OP} = \\frac{\\text{সন্নিহিত বাহু}}{\\text{অতিভুজ}} [\\theta \\text{ কোণের কোসাইন (cosine)}]$$\n$$\\tan \\theta = \\frac{PM}{OM} = \\frac{\\text{বিপরীত বাহু}}{\\text{সন্নিহিত বাহু}} [\\theta \\text{ কোণের ট্যানজেন্ট (tangent)}]$$\nএবং এদের বিপরীত অনুপাত\n$$\\text{cosec } \\theta = \\frac{1}{\\sin \\theta} [\\theta \\text{ কোণের কোসেক্যান্ট (cosecant)}]$$\n$$\\sec \\theta = \\frac{1}{\\cos \\theta} [\\theta \\text{ কোণের সেক্যান্ট (secant)}]$$\n$$\\cot \\theta = \\frac{1}{\\tan \\theta} [\\theta \\text{ কোণের কোট্যানজেন্ট (cotangent)}]$\nলক্ষ করি, $\\sin \\theta$ প্রতীকটি $\\theta$ কোণের সাইন-এর অনুপাতকে বোঝায়; $\\sin$ ও $\\theta$ এর গুণফলকে নয়। $\\theta$ বাদে $\\sin$ আলাদা কোনো অর্থ বহন করে না। ত্রিকোণমিতিক অন্যান্য অনুপাতের ক্ষেত্রেও বিষয়টি প্রযোজ্য।",
+      "content_markdown": "$$\\cos \\theta = \\frac{OM}{OP} = \\frac{\\text{সন্নিহিত বাহু}}{\\text{অতিভুজ}} [\\theta \\text{ কোণের কোসাইন (cosine)}]$$\n$$\\tan \\theta = \\frac{PM}{OM} = \\frac{\\text{বিপরীত বাহু}}{\\text{সন্নিহিত বাহু}} [\\theta \\text{ কোণের ট্যানজেন্ট (tangent)}]$$\nএবং এদের বিপরীত অনুপাত\n$$\\text{cosec } \\theta = \\frac{1}{\\sin \\theta} [\\theta \\text{ কোণের কোসেক্যান্ট (cosecant)}]$$\n$$\\sec \\theta = \\frac{1}{\\cos \\theta} [\\theta \\text{ কোণের সেক্যান্ট (secant)}]$$\n$$\\cot \\theta = \\frac{1}{\\tan \\theta} [\\theta \\text{ কোণের কোট্যানজেন্ট (cotangent)}]$$\nলক্ষ করি, $\\sin \\theta$ প্রতীকটি $\\theta$ কোণের সাইন-এর অনুপাতকে বোঝায়; $\\sin$ ও $\\theta$ এর গুণফলকে নয়। $\\theta$ বাদে $\\sin$ আলাদা কোনো অর্থ বহন করে না। ত্রিকোণমিতিক অন্যান্য অনুপাতের ক্ষেত্রেও বিষয়টি প্রযোজ্য।",
       "activity_tag": null
     },
     {

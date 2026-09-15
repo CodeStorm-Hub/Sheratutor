@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 406,
+  "pdf_page_no": 411,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "3. Since $\\angle DEF + \\angle DEG = 1$ right angle + 1 right angle = 2 right angles = 1 straight angle, GEF forms a straight line. Therefore, $\\Delta DGF$ is an isosceles triangle with $DG=DF$. So, $\\angle F = \\angle G = \\angle C$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "4. Now, in $\\Delta ABC$ and $\\Delta DEF$:\n$\\angle B = \\angle E$ [Both 1 right angle]\n$\\angle C = \\angle F$\n$AB = DE$ [By Angle-Side-Angle Theorem]\nTherefore, $\\Delta ABC \\cong \\Delta DEF$ (Proved).",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Theorem 12",
+      "chunk_type": "theory",
+      "content_markdown": "If one side of a triangle is greater than another side, the angle opposite the greater side will be greater than the angle opposite the smaller side.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Special Nomination:** Suppose in $\\Delta ABC$, $AC > AB$.\nWe need to prove that $\\angle ABC > \\angle ACB$.\n**Drawing:** From $AC$, cut off a part $AD$ equal to $AB$ and join $B$ and $D$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:**\n1. In $\\Delta ABD$, $AB = AD$.\nHence, $\\angle ADB = \\angle ABD$ [Since in an isosceles triangle, the angles opposite the equal sides are equal].\n2. In $\\Delta BDC$, the external angle $\\angle ADB > \\angle BCD$ [As an exterior angle is greater than either of the interior opposite angles].\nTherefore, $\\angle ABD > \\angle BCD$ or $\\angle ABD > \\angle ACB$.\n3. $\\angle ABC > \\angle ABD$ [because $\\angle ABD$ is part of $\\angle ABC$].\nTherefore, $\\angle ABC > \\angle ACB$ (Proved).",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 12.01: Geometric triangles for proof",
+      "figure_no": "12.01",
+      "box_2d": [
+        75,
+        450,
+        215,
+        875
+      ],
+      "description": "Two triangles showing geometric construction for proof.",
+      "reading_order_anchor": "3. Since $\\angle DEF + \\angle DEG = 1$"
+    },
+    {
+      "caption": "Fig 12.02: Triangle ABC with construction line BD",
+      "figure_no": "12.02",
+      "box_2d": [
+        535,
+        685,
+        675,
+        885
+      ],
+      "description": "Triangle ABC with a line segment BD drawn from vertex B to side AC.",
+      "reading_order_anchor": "Drawing: From AC, cut off a part AD equal to AB and"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+services:
+  vllm-sheratutor:
+    image: vllm/vllm-openai:latest
+    container_name: vllm-sheratutor
+    runtime: nvidia
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - HUGGING_FACE_HUB_TOKEN=${HF_TOKEN}
+    command: >
+      --model syed181/sheratutor-qwen2.5-7b
+      --host 0.0.0.0
+      --port 8000
+      --max-model-len 4096
+      --gpu-memory-utilization 0.90
+      --trust-remote-code
+      --dtype half
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]

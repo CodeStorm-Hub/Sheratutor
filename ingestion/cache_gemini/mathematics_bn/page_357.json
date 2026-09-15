@@ -1,0 +1,121 @@
+{
+  "printed_page_no": 357,
+  "pdf_page_no": 362,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ ৪",
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৪। সাধারণ হরবিশিষ্ট ভগ্নাংশে প্রকাশ কর : $\\frac{a}{4x}, \\frac{b}{2x^2}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান : হর $4x$ এবং $2x^2$ এর ল.সা.গু. $4x^2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore \\frac{a}{4x} = \\frac{a \\times x}{4x \\times x} \\quad [:: 4x^2 \\div 4x = x]$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$= \\frac{ax}{4x^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবং $\\frac{b}{2x^2} = \\frac{b \\times 2}{2x^2 \\times 2} \\quad [:: 4x^2 \\div 2x^2 = 2]$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$= \\frac{2b}{4x^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ সাধারণ হরবিশিষ্ট ভগ্নাংশ দুইটি $\\frac{ax}{4x^2}, \\frac{2b}{4x^2}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ ৫",
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫। সাধারণ হরবিশিষ্ট ভগ্নাংশে রূপান্তর কর : $\\frac{2}{a^2 - 4}, \\frac{5}{a^2 + 3a - 10}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান : ১ম ভগ্নাংশের হর $= a^2 - 4 = (a+2)(a-2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "২য় ভগ্নাংশের হর $= a^2 + 3a - 10 = a^2 - 2a + 5a - 10$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$= a(a-2)+5(a-2) = (a-2)(a+5)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "হর দুইটির ল.সা.গু. $(a+2)(a-2)(a+5)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবার ভগ্নাংশগুলোকে সমহরবিশিষ্ট করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore \\frac{2}{a^2 - 4} = \\frac{2}{(a+2)(a-2)} = \\frac{2 \\times (a+5)}{(a+2)(a-2) \\times (a+5)}$ [লব ও হরকে $(a+5)$ দ্বারা গুণ করে]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$= \\frac{2(a+5)}{(a^2 - 4)(a+5)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবং $\\frac{5}{a^2 + 3a - 10} = \\frac{5}{(a-2)(a+5)} = \\frac{5 \\times (a+2)}{(a-2)(a+5) \\times (a+2)}$ [লব ও হরকে $(a+2)$ দ্বারা গুণ করে]",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

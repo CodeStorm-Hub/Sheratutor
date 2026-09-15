@@ -1,0 +1,74 @@
+{
+  "printed_page_no": 400,
+  "pdf_page_no": 405,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "The Area of Trapezium Region",
+      "chunk_type": "theory",
+      "content_markdown": "$ABCD$ is a trapezium. Where $AB \\parallel CD$, $AB = a$, $CD = b$ and perpendicular distance $= h$. Construct $DA \\parallel CE$ at $C$.\n\n$\\therefore AECD$ is a parallelogram. From the figure,\narea of trapezium $=$ area of parallelogram $AECD +$ area of triangle $CEB$\n\n$$= b \\times h + \\frac{1}{2}(a - b) \\times h$$\n\n$$= \\frac{1}{2}(a + b) \\times h$$\n\nArea of trapezium region $=$ average of the sum of two parallel sides $\\times$ height",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Activity :\n1. Find the area of trapezium region by an alternative method.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "The Area of Rhombus",
+      "chunk_type": "theory",
+      "content_markdown": "The diagonals of a rhombus bisect each other at right angles. If we know the lengths of two diagonals, we can find the area of rhombus.\n\nLet the diagonals $AC$ and $BD$ of a rhombus $ABCD$ intersect each other at $O$. Denote the lengths of two diagonals by $a$ and $b$ respectively.\n\nArea of rhombus $=$ area of triangle $DAC +$ area of triangle $BAC$.\n\n$$= \\frac{1}{2} \\cdot a \\times \\frac{1}{2}b + \\frac{1}{2} \\cdot a \\times \\frac{1}{2}b$$\n\n$$= \\frac{1}{2} a \\times b$$\n\nArea of rhombus $=$ half of the product of two diagonals.",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.3",
+      "section_title": "Solid",
+      "chunk_type": "theory",
+      "content_markdown": "Book, Box, Brick, Football etc. are solid bodies. Solid bodies may be the forms of rectangular, square, spherical and also of any other form. A solid body has its length, breadth and height.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Trapezium area derivation",
+      "figure_no": "6.01",
+      "box_2d": [
+        215,
+        620,
+        325,
+        895
+      ],
+      "description": "A trapezium ABCD with a parallelogram AECD and a triangle CEB inside it.",
+      "reading_order_anchor": "The Area of Trapezium Region"
+    },
+    {
+      "caption": "Fig 6.02: Rhombus area derivation",
+      "figure_no": "6.02",
+      "box_2d": [
+        615,
+        620,
+        770,
+        895
+      ],
+      "description": "A rhombus ABCD with diagonals AC and BD intersecting at O.",
+      "reading_order_anchor": "The Area of Rhombus"
+    },
+    {
+      "caption": "Fig 6.03: Solid body",
+      "figure_no": "6.03",
+      "box_2d": [
+        815,
+        740,
+        915,
+        895
+      ],
+      "description": "A rectangular box representing a solid body.",
+      "reading_order_anchor": "Solid"
+    }
+  ]
+}

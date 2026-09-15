@@ -8,7 +8,7 @@
       "section_no": null,
       "section_title": null,
       "chunk_type": "theory",
-      "content_markdown": "$$\\therefore OD = OB = \\frac{10}{2} \\text{ মিটার} = 5 \\text{ মিটার এবং } OA = OC = \\frac{24}{2} \\text{ মিটার} = 12 \\text{ মিটার}$$\n\n$\\triangle AOD$ সমকোণী ত্রিভুজে\n\n$$AD^2 = OA^2 + OD^2 = 12^2 + 5^2$$\n\n$$\\therefore AD = 13$$\n\n$$\\therefore$ রম্বসের প্রতি বাহুর দৈর্ঘ্য $13$ মিটার।\n\nরম্বসের পরিসীমা $= 4 \\times 13 \\text{ মিটার} = 52 \\text{ মিটার}$\n\nনির্ণেয় কর্ণের দৈর্ঘ্য $24$ মিটার এবং পরিসীমা $52$ মিটার।",
+      "content_markdown": "$$\\therefore OD = OB = \\frac{10}{2} \\text{ মিটার} = 5 \\text{ মিটার এবং } OA = OC = \\frac{24}{2} \\text{ মিটার} = 12 \\text{ মিটার}$$\n\n$\\triangle AOD$ সমকোণী ত্রিভুজে\n\n$$AD^2 = OA^2 + OD^2 = 12^2 + 5^2$$\n\n$$\\therefore AD = 13$$\n\n$\\therefore$ রম্বসের প্রতি বাহুর দৈর্ঘ্য $13$ মিটার।\n\nরম্বসের পরিসীমা $= 4 \\times 13 \\text{ মিটার} = 52 \\text{ মিটার}$\n\nনির্ণেয় কর্ণের দৈর্ঘ্য $24$ মিটার এবং পরিসীমা $52$ মিটার।",
       "activity_tag": null
     },
     {

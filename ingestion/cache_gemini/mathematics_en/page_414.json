@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 414,
+  "pdf_page_no": 419,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Putting the value of $x$ in equation (1) we get\n$$5 \\times 3 - 3y = 9$$\nor, $$15 - 3y = 9$$\nor, $$-3y = 9 - 15$$\nor, $$-3y = -6$$\nor, $$y = \\frac{-6}{-3}$$\n$$\\therefore y = 2.$$\n$$\\therefore$$ Required solution is $$(x, y) = (3, 2).$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 8. Solve the equations\n$$\\frac{x}{5} + \\frac{3}{y} = 3$$\n$$\\frac{x}{2} - \\frac{6}{y} = 2$$\n\nSolution : The given equations are\n$$\\frac{x}{5} + \\frac{3}{y} = 3.......................... (1)$$\n$$\\frac{x}{2} - \\frac{6}{y} = 2.......................... (2)$$\n\nMultiplying equation (1) by 2 and then adding with equation (2), we get\n$$\\frac{2x}{5} + \\frac{6}{y} = 6.......................... (3)$$\n$$\\frac{x}{2} - \\frac{6}{y} = 2.......................... (4)$$\n\nor, $$\\frac{2x}{5} + \\frac{x}{2} = 8$$\nor, $$\\frac{4x + 5x}{10} = 8$$\nor, $$\\frac{9x}{10} = 8$$\n$$\\therefore x = \\frac{80}{9}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

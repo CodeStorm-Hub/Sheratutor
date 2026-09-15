@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 380,
+  "pdf_page_no": 385,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "(1) সমীকরণকে (2) দ্বারা গুণ করে (2) নং সমীকরণ এর সাথে যোগ করে পাই,\n$$ \\frac{2x}{5} + \\frac{6}{y} = 6 \\quad \\dots (3) $$\n$$ \\frac{x}{2} - \\frac{6}{y} = 2 \\quad \\dots (4) $$\n$$ \\frac{2x}{5} + \\frac{x}{2} = 8 $$\n$$ \\text{বা,} \\frac{4x+5x}{10} = 8 $$\n$$ \\text{বা,} 9x = 8 \\times 10 $$\n$$ \\text{বা,} x = \\frac{80}{9} $$\n(1) নং সমীকরণে $x$ এর মান বসিয়ে পাই,\n$$ \\frac{1}{5} \\times \\frac{80}{9} + \\frac{3}{y} = 3 $$\n$$ \\text{বা,} \\frac{16}{9} + \\frac{3}{y} = 3 $$\n$$ \\text{বা,} \\frac{3}{y} = 3 - \\frac{16}{9} $$\n$$ \\text{বা,} \\frac{3}{y} = \\frac{27-16}{9} $$\n$$ \\text{বা,} \\frac{3}{y} = \\frac{11}{9} $$\n$$ \\text{বা,} y = \\frac{27}{11} $$\n$$ \\therefore \\text{নির্ণেয় সমাধান} (x, y) = \\left(\\frac{80}{9}, \\frac{27}{11}\\right) $$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

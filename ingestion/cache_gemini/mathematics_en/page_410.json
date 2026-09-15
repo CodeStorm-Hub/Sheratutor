@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 410,
+  "pdf_page_no": 415,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Solution : The given equations are\n$$2y + 5z = 16......... (1)$$\n$$y - 2z = -1.........(2)$$\nFrom ( 2 ) we get, $$y = 2z - 1......... (3)$$\nPutting the value of $$y$$ in equation (1) we get, $$2(2z - 1) + 5z = 16$$\nor, $$4z - 2 + 5z = 16$$\nor, $$9z = 16 + 2$$\nor, $$9z = 18$$\nor, $$z = \\frac{18}{9}$$\n$$\\therefore z = 2$$\nHere, putting the value of $$z$$ in (3) we get\n$$y = 2 \\times 2 - 1$$\n$$= 4 - 1$$\n$$\\therefore y = 3$$\n$$\\therefore$$ Required solution is $$(y, z) = (3, 2)$$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. Solve the equations\n$$\\frac{2}{x} + \\frac{1}{y} = 1$$\n$$\\frac{4}{x} - \\frac{9}{y} = -1$$\nSolution : The given equations are\n$$\\frac{2}{x} + \\frac{1}{y} = 1.......................... (1)$$\n$$\\frac{4}{x} - \\frac{9}{y} = -1 .......................... (2)$$\nPutting $$\\frac{1}{x} = u$$ and $$\\frac{1}{y} = v$$, we get\nfrom (1) and (2)\n$$2u + v = 1.......................... (3)$$\n$$4u - 9v = -1.......................... (4)$$\nfrom (3), we get\n$$v = 1 - 2u.......................... (5)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

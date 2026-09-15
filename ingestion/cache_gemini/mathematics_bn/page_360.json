@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 360,
+  "pdf_page_no": 365,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮। যোগফল নির্ণয় কর : $\\frac{3a}{2x} + \\frac{b}{2y}$.\nসমাধান : $\\frac{3a}{2x} + \\frac{b}{2y} = \\frac{3a \\times y}{2x \\times y} + \\frac{b \\times x}{2y \\times x} = \\frac{3ay + bx}{2xy}$ [2x, 2y এর ল.সা.গু. 2xy নিয়ে]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "বীজগাণিতীয় ভগ্নাংশের বিয়োগ",
+      "chunk_type": "theory",
+      "content_markdown": "বীজগাণিতীয় ভগ্নাংশের বিয়োগ",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯। বিয়োগ কর : $\\frac{a}{x}$ থেকে $\\frac{b}{x}$\nসমাধান : $\\frac{a}{x} - \\frac{b}{x} = \\frac{a-b}{x}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১০। $\\frac{2a}{3x}$ থেকে $\\frac{b}{3y}$ বিয়োগ কর। (3x ও 3y এর ল.সা.গু 3xy)\nসমাধান : $\\frac{2a}{3x} - \\frac{b}{3y} = \\frac{2a \\times y}{3x \\times y} - \\frac{b \\times x}{3y \\times x} = \\frac{2ay - bx}{3xy}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১। বিয়োগফল নির্ণয় কর : $\\frac{1}{a+2} - \\frac{1}{a^2-4}$ (3x ও 3y এর ল.সা.গু 3xy)\nসমাধান : $\\frac{1}{a+2} - \\frac{1}{a^2-4} = \\frac{1}{a+2} - \\frac{1}{(a+2)(a-2)} = \\frac{1 \\times (a-2)}{(a+2) \\times (a-2)} - \\frac{1}{(a+2)(a-2)} = \\frac{(a-2)-1}{(a+2)(a-2)} = \\frac{a-2-1}{(a+2)(a-2)} = \\frac{a-3}{a^2-4}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "কাজ : নিচের ছকটি পূরণ কর :\n| |\n|---|\n| $\\frac{1}{5} + \\frac{3}{5} = $ | $\\frac{4}{5} - \\frac{2}{5} = $ |\n| $\\frac{3}{m} + \\frac{2}{n} = $ | $\\frac{5}{ab} - \\frac{1}{a} = $ |\n| $\\frac{2}{x} + \\frac{5}{2x} = $ | $\\frac{7}{xyz} - \\frac{2z}{xy} = $ |\n| $\\frac{3}{m} + \\frac{2}{m^2} = $ | $\\frac{5}{p^2} - \\frac{2}{3p} = $ |",
+      "activity_tag": "Individual Task"
+    }
+  ],
+  "figures": []
+}

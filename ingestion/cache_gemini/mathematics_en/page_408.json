@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 408,
+  "pdf_page_no": 413,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Method of solution of simple simultaneous equations of two variables.",
+      "chunk_type": "theory",
+      "content_markdown": "Here, the following two methods of the solution of simple simultaneous equations of two variables have been discussed.\n\n(1) Method of substitution\n(2) Method of elimination",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Method of substitution",
+      "chunk_type": "theory",
+      "content_markdown": "Applying this method, we can solve the equations by following the steps below:\n\n(a) From any equation express one variable in terms of the other variable.\n(b) Substitute the value of the obtained variable in the other equation and solve the equation in one variable.\n(c) Put the obtained value in any of the given equations to find the value of other variable.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 1",
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 1. Solve the equations\n$$x + y = 7$$\n$$x - y = 3$$\n\nSolution : Given equations are\n$$x + y = 7 \\dots \\dots \\dots \\dots (1)$$\n$$x - y = 3 \\dots \\dots \\dots \\dots (2)$$\n\nIn equation (2) expressing $x$ in terms of $y$ we get\n$$x = y + 3 \\dots \\dots \\dots (3)$$\n\nFrom (3) putting the value of $x$ in (1) we get, $y + 3 + y = 7$\nor, $$2y = 7 - 3$$\nor, $$2y = 4$$\nor, $$y = 7 - 3$$\n$$\\therefore y = 2$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

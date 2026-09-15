@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 379,
+  "pdf_page_no": 384,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ ৭। সমাধান কর :",
+      "chunk_type": "worked_example",
+      "content_markdown": "$5x - 3y = 9$\n$3x - 5y = -1$\nসমাধান : প্রদত্ত সমীকরণ\n$5x - 3y = 9$ ... (1)\n$3x - 5y = -1$ ... (2)\nসমীকরণ (1) কে 5 দ্বারা এবং সমীকরণ (2) কে 3 দ্বারা গুণ করে পাই\n$25x - 15y = 45$ ... (3)\n$9x - 15y = -3$ ... (4)\n$(-)$ $(+)$ $(+)$\n$16x = 48$ [বিয়োগ করে]\nবা, $x = \\frac{48}{16}$\n$\\therefore x = 3$\nসমীকরণ (1) এ $x$ এর মান বসিয়ে পাই,\n$5 \\times 3 - 3y = 9$\nবা, $15 - 3y = 9$\nবা, $-3y = 9 - 15$\nবা, $-3y = -6$\nবা, $y = \\frac{-6}{-3}$\n$\\therefore y = 2$\n$\\therefore (x, y) = (3, 2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ ৮।",
+      "chunk_type": "worked_example",
+      "content_markdown": "$\\frac{x}{5} + \\frac{3}{y} = 3$\n$\\frac{x}{2} - \\frac{6}{y} = 2$\nসমাধান :\nপ্রদত্ত সমীকরণ\n$\\frac{x}{5} + \\frac{3}{y} = 3$ ... (1)\n$\\frac{x}{2} - \\frac{6}{y} = 2$ ... (2)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

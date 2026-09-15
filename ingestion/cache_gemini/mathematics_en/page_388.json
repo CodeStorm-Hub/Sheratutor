@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 388,
+  "pdf_page_no": 393,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution : Denominator of the first fraction = $a^2 - 4 = (a+2)(a-2)$\nDenominator of the second fraction\n$= a^2 + 3a - 10 = a^2 - 2a + 5a - 10$\n$= a(a-2) + 5(a-2) = (a-2)(a+5)$\nL.C.M. of the two fractions = $(a+2)(a-2)(a+5)$\nNow let us express fractions with common denominators\n$\therefore \\frac{2}{a^2 - 4} = \\frac{2}{(a+2)(a-2)} = \\frac{2 \\times (a+5)}{(a+2)(a-2) \\times (a+5)}$ [Multiplying numerator and denominator by $(a+5)$]\n$= \\frac{2(a+5)}{(a^2 - 4)(a+5)}$\nAnd $\\frac{5}{a^2 + 3a - 10} = \\frac{5}{(a-2)(a+5)} = \\frac{5 \\times (a+2)}{(a-2)(a+5) \\times (a+2)}$ [Multiplying the numerator and denominator by $(a+2)$]\n$= \\frac{5(a+2)}{(a^2 - 4)(a+5)}$\n$\therefore$ The required fractions are $\\frac{2(a+5)}{(a^2 - 4)(a+5)}, \\frac{5(a+2)}{(a^2 - 4)(a+5)}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. Transform the fractions into its common denominator:\n$\\frac{1}{x^2 + 3x}, \\frac{2}{x^2 + 5x + 6}, \\frac{3}{x^2 - x - 12}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution: Denominator of the first fraction is = $x^2 + 3x = x(x + 3)$\nDenominator of the second fraction is = $x^2 + 5x + 6 = x^2 + 2x + 3x + 6$\n$= x(x + 2) + 3(x + 2) = (x + 2)(x + 3)$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

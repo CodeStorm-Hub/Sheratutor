@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 405,
+  "pdf_page_no": 410,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "Theorem 10 (ASA Theorem)",
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 10 (ASA Theorem): If in one triangle, two angles and the included side are respectively equal to two angles and the included side of another triangle, then the two triangles are congruent.\n\nSpecial Nomination: Suppose in $\\Delta ABC$ and $\\Delta DEF$, $\\angle B = \\angle E$, $\\angle C = \\angle F$, and the included side $BC = EF$. We need to prove that $\\Delta ABC \\cong \\Delta DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\n1. Place $\\Delta ABC$ on $\\Delta DEF$ in such a way that point B coincides with point E, and side BC coincides with side EF, with point A falling on the same side of EF as point D. Since $BC = EF$, point C will necessarily coincide with point F. [Equality of sides]\n2. Since $\\angle B = \\angle E$, side BA will coincide with side ED, and since $\\angle C = \\angle F$, side CA will coincide with side FD. [Equality of angles]\n3. Since BA and CA have common point A and ED and FD have common point D, $\\Delta ABC$ will coincide with $\\Delta DEF$.\n$\\therefore \\Delta ABC \\cong \\Delta DEF$ (Proved).",
+      "activity_tag": null
+    },
+    {
+      "section_no": "6.2",
+      "section_title": "Theorem 11 (Hypotenuse-Side Theorem)",
+      "chunk_type": "theory",
+      "content_markdown": "Theorem 11 (Hypotenuse-Side Theorem): If the hypotenuses of two right triangles are equal and one side of one triangle is equal to the corresponding side of the other triangle, then the two triangles are congruent.\n\nSpecial Nomination: Suppose in $\\Delta ABC$ and $\\Delta DEF$, the hypotenuse $AC = DF$ and $AB = DE$. We need to prove that $\\Delta ABC \\cong \\Delta DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\n1. Place $\\Delta ABC$ on $\\Delta DEF$ such that point B coincides with point E, side BA coincides with side ED, and point C falls on the opposite side of F with respect to DE. Assume G is the new position of point C.\n2. Since $AB = DE$, point A will coincide with point D. As a result, $\\Delta DEG$ will be the new position of $\\Delta ABC$, meaning $DG = AC$, $\\angle G = \\angle C$, and $\\angle DEG = \\angle B = 1$ right angle.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: ASA Theorem illustration",
+      "figure_no": "6.01",
+      "box_2d": [
+        195,
+        418,
+        298,
+        898
+      ],
+      "description": "Two triangles ABC and DEF showing congruent angles and sides.",
+      "reading_order_anchor": "Theorem 10 (ASA Theorem)"
+    }
+  ]
+}

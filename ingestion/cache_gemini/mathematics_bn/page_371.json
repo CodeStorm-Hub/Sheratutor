@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 371,
+  "pdf_page_no": 376,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(২) $\\triangle FGD$ এ $FG=FD$\nঅতএব, $\\angle FDG = \\angle FGD$. [ত্রিভুজের সমান বাহুদ্বয়ের বিপরীত কোণদ্বয় পরস্পর সমান]\n(৩) সুতরাং, $\\angle EDG + \\angle FDG = \\angle EGD + \\angle FGD$\nবা, $\\angle EDF = \\angle EGF$\nঅর্থাৎ, $\\angle BAC = \\angle EDF$\nঅতএব, $\\triangle ABC \\cong \\triangle DEF$- এ $AB = DE$, $AC = DF$ | [বাহু-কোণ-বাহু উপপাদ্য]\nএবং অন্তর্ভুক্ত $\\angle BAC = \\angle EDF$\n$\\therefore \\triangle ABC \\cong \\triangle DEF$ (প্রমাণিত)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উপপাদ্য ১০ (কোণ-বাহু-কোণ উপপাদ্য)",
+      "chunk_type": "theory",
+      "content_markdown": "যদি একটি ত্রিভুজের দুইটি কোণ ও কোণ সংলগ্ন বাহু যথাক্রমে অপর একটি ত্রিভুজের দুইটি কোণ ও কোণ সংলগ্ন বাহুর সমান হয়, তবে ত্রিভুজ দুইটি সর্বসম হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি,\n$\\triangle ABC$ ও $\\triangle DEF$-এ\n$\\angle B = \\angle E$, $\\angle C = \\angle F$ এবং\nকোণ সংলগ্ন $BC$ বাহু = অনুরূপ $EF$ বাহু।\nপ্রমাণ করতে হবে যে, $\\triangle ABC = \\triangle DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "প্রমাণ :",
+      "chunk_type": "theory",
+      "content_markdown": "(১) $\\triangle ABC$ কে $\\triangle DEF$-এর উপর এমনভাবে স্থাপন করি যেন, $B$ বিন্দু $E$ বিন্দুর উপর ও $BC$ বাহু $EF$ বাহু বরাবর এবং $EF$ রেখার যে পাশে $D$ আছে, $A$ বিন্দু যেন ঐপাশে পড়ে।\nযেহেতু $BC = EF$, অতএব $C$ বিন্দু $F$ বিন্দুর উপর অবশ্যই পড়বে। [বাহুর সর্বসমতা]\n(২) আবার, $\\angle B = \\angle E$ বলে, $BA$ বাহু $ED$ বাহু বরাবর পড়বে এবং $\\angle C = \\angle F$ বলে, $CA$ বাহু $FD$ বাহু বরাবর পড়বে। [কোণের সর্বসমতা]\n(৩) $BA$ এবং $CA$ বাহুর সাধারণ বিন্দু $A$, $ED$ ও $FD$ বাহুর সাধারণ বিন্দু $D$ এর উপর পড়বে।\nঅর্থাৎ, $\\triangle ABC$, $\\triangle DEF$ এর উপর সমাপতিত হবে।\n$\\therefore \\triangle ABC \\cong \\triangle DEF$ (প্রমাণিত)",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 6.01: দুইটি ত্রিভুজ ABC এবং DEF",
+      "figure_no": "6.01",
+      "box_2d": [
+        445,
+        418,
+        565,
+        900
+      ],
+      "description": "Two triangles, ABC and DEF, are shown side-by-side. Triangle ABC has vertices A, B, C. Triangle DEF has vertices D, E, F. There are markings indicating equal angles and sides.",
+      "reading_order_anchor": "বিশেষ নির্বচন: মনে করি,"
+    }
+  ]
+}

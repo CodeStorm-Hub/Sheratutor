@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 399,
+  "pdf_page_no": 404,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Theorem 5",
+      "chunk_type": "theory",
+      "content_markdown": "### Theorem 5\n**Two diagonals of a rhombus bisect each other at right angles.**\n\n**Proposition:** Let the diagonals $AC$ and $BD$ of the rhombus $ABCD$ intersect at $O$. It is required to prove that,\n(i) $\\angle AOB = \\angle BOC = \\angle COD = \\angle DOA = 1$ right angle\n(ii) $AO = CO, BO = DO$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Steps | Justification |\n| :--- | :--- |\n| (1) A rhombus is a parallelogram. Therefore, $AO = CO, BO = DO$. | [Diagonals of a parallelogram bisect each other] |\n| (2) Now, in $\\Delta AOB$ and $\\Delta BOC$, $AB = BC$, $AO = CO$ and $OB = OB$. So $\\Delta AOB \\cong \\Delta BOC$. | [ sides of a rhombus are equal ] [ from (1) ] [ common side ] [ SSS theorem ] |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, $\\angle AOB = \\angle BOC$.\n$\\angle AOB + \\angle BOC = 1$ straight angle $= 2$ right angles.\n$\\angle AOB = \\angle BOC = 1$ right angle.\nSimilarly, it can be proved that, $\\angle COD = \\angle DOA = 1$ right angle. (Proved)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "1. Prove that the diagonals of a square are equal and bisect each other.\n2. A worker has made a rectangular concrete slab. In how many different ways can he be sure that the slab is really rectangular?",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "6.4",
+      "section_title": "Area of Quadrilaterals",
+      "chunk_type": "theory",
+      "content_markdown": "A quadrilateral region is divided into two triangular region by one of its diagonals. So, the area of the quadrilateral region is equal to the sum of area of the triangular regions. In our previous classes, we have learnt how to find areas of square and rectangular regions. We have seen that rectangle and parallelogram with same base and height have equal areas. Here, the methods of finding the area of rhombus and trapezium have been discussed.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Rhombus ABCD",
+      "figure_no": "6.01",
+      "box_2d": [
+        165,
+        695,
+        285,
+        885
+      ],
+      "description": "A rhombus ABCD with diagonals AC and BD intersecting at O.",
+      "reading_order_anchor": "Theorem 5"
+    }
+  ]
+}

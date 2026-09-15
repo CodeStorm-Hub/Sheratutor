@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 364,
+  "pdf_page_no": 369,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "চতুর্ভূজ সংক্রান্ত উপপাদ্য (Theorems related to Quadrilaterals)",
+      "chunk_type": "theory",
+      "content_markdown": "বিভিন্ন প্রকারের চতুর্ভুজের কিছু সাধারণ ধর্ম রয়েছে | এ ধর্মগুলো উপপাদ্য আকারে প্রমাণ করা হলো |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উপপাদ্য ১",
+      "chunk_type": "theory",
+      "content_markdown": "চতুর্ভুজের চারটি কোণের সমষ্টি চার সমকোণ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন : মনে করি, $ABCD$ একটি চতুর্ভূজ |\nপ্রমাণ করতে হবে যে, $\\angle A + \\angle B + \\angle C + \\angle D = 4$ সমকোণ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন: $A$ ও $C$ যোগ করি | $AC$ কর্ণটি চতুর্ভূজটিকে $\\triangle ABC$ ও $\\triangle ADC$ দুইটি ত্রিভুজে বিভক্ত করেছে |\nপ্রমাণঃ",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| ধাপ | যথার্থতা |\n| :--- | :--- |\n| (১) $\\triangle ABC$ এ $\\angle BAC + \\angle ACB + \\angle B = 2$ সমকোণ | [ ত্রিভুজের তিন কোণের সমষ্টি 2 সমকোণ ] |\n| (২) অনুরূপভাবে, $\\triangle ADC$ এ $\\angle DAC + \\angle ACD + \\angle D = 2$ সমকোণ | [ ত্রিভুজের তিন কোণের সমষ্টি 2 সমকোণ ] |\n| (৩) অতএব, $\\angle DAC + \\angle ACD + \\angle D + \\angle BAC + \\angle ACB + \\angle B =(2+2)$ সমকোণ | [ (১) ও (২) থেকে ] |\n| (৪) $\\angle DAC + \\angle BAC = \\angle A$ এবং $\\angle ACD + \\angle ACB = \\angle C$ | [সন্নিহিত কোণের যোগফল] |\n| সুতরাং, $\\angle A + \\angle B + \\angle C + \\angle D = 4$ সমকোণ | [ (৩) থেকে ] |\n| (প্রমাণিত) | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উপপাদ্য ২",
+      "chunk_type": "theory",
+      "content_markdown": "সামান্তরিকের বিপরীত বাহু ও কোণগুলো পরস্পর সমান |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন : মনে করি, $ABCD$ একটি সামান্তরিক এবং $AC$ ও $BD$ তার দুইটি কর্ণ | প্রমাণ করতে হবে যে,\n(ক) $AB$ বাহু $= CD$ বাহু, $AD$ বাহু $= BC$ বাহু\n(খ) $\\angle BAD = \\angle BCD$, $\\angle ABC = \\angle ADC$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 6.01: একটি চতুর্ভূজ ABCD এবং তার কর্ণ AC",
+      "figure_no": "6.01",
+      "box_2d": [
+        160,
+        670,
+        280,
+        870
+      ],
+      "description": "A quadrilateral labeled ABCD with a diagonal line AC drawn.",
+      "reading_order_anchor": "উপপাদ্য ১"
+    },
+    {
+      "caption": "চিত্র 6.02: একটি সামান্তরিক ABCD এবং তার কর্ণ AC ও BD",
+      "figure_no": "6.02",
+      "box_2d": [
+        820,
+        650,
+        930,
+        880
+      ],
+      "description": "A parallelogram labeled ABCD with both diagonals AC and BD drawn as dashed lines.",
+      "reading_order_anchor": "উপপাদ্য ২"
+    }
+  ]
+}

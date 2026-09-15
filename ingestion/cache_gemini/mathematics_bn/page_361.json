@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 361,
+  "pdf_page_no": 366,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "বীজগণিতীয় ভগ্নাংশের সরলীকরণ",
+      "chunk_type": "theory",
+      "content_markdown": "প্রক্রিয়া চিহ্ন দ্বারা সংযুক্ত দুই বা ততোধিক বীজগণিতীয় ভগ্নাংশকে একটি ভগ্নাংশে বা রাশিতে পরিণত করাই হলো ভগ্নাংশের সরলীকরণ। এতে প্রাপ্ত ভগ্নাংশটিকে লঘিষ্ঠ আকারে প্রকাশ করা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২। সরল কর : $$\frac{a}{a+b} + \frac{b}{a-b}$$সমাধান : $$\frac{a}{a+b} + \frac{b}{a-b} = \frac{a \\times (a-b) + b \\times (a+b)}{(a+b)(a-b)} = \frac{a^2 - ab + ab + b^2}{(a+b)(a-b)} = \frac{a^2 + b^2}{a^2 - b^2}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩। সরল কর : $$\frac{x+y}{xy} - \frac{y+z}{yz}$$সমাধান : $$\frac{x+y}{xy} - \frac{y+z}{yz} = \frac{z \\times (x+y) - x \\times (y+z)}{xyz} = \frac{zx + zy - xy - xz}{xyz} = \frac{yz - xy}{xyz} = \frac{y(z-x)}{xyz} = \frac{z-x}{xz}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪। সরল কর : $$\frac{x-y}{xy} + \frac{y-z}{yz} - \frac{z-x}{zx}$$সমাধান : $$\frac{x-y}{xy} + \frac{y-z}{yz} - \frac{z-x}{zx} = \frac{(x-y) \\times z + (y-z) \\times x - (z-x) \\times y}{xyz} = \frac{zx - yz + xy - zx - yz + xy}{xyz} = \frac{2xy - 2yz}{xyz} = \frac{2y(x-z)}{xyz} = \frac{2(x-z)}{xz}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

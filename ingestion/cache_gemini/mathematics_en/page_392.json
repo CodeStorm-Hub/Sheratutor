@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 392,
+  "pdf_page_no": 397,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Activity : Fill in the following chart : | |\n|---|---|\n| $\\frac{1}{5} + \\frac{3}{5} = $ | $\\frac{4}{5} - \\frac{2}{5} = $ |\n| $\\frac{3}{m} + \\frac{2}{n} = $ | $\\frac{5}{ab} - \\frac{1}{a} = $ |\n| $\\frac{2}{x} + \\frac{5}{2x} = $ | $\\frac{7}{xyz} - \\frac{2z}{xy} = $ |\n| $\\frac{3}{m} + \\frac{2}{m^2} = $ | $\\frac{5}{p^2} - \\frac{2}{3p} = $ |",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "Simplification of Algebraic Fractions",
+      "chunk_type": "theory",
+      "content_markdown": "Simplification of algebraic fractions means to transform two or more fractions associated with operational signs into one fraction or expression. Here, the obtained fraction is to be expressed in its lowest terms.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 12. Simplify : $\\frac{a}{a+b} + \\frac{b}{a-b}$",
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution : $\\frac{a}{a+b} + \\frac{b}{a-b} = \\frac{a \\times (a-b) + b \\times (a+b)}{(a+b)(a-b)} = \\frac{a^2 - ab + ab + b^2}{(a+b)(a-b)}$\n$= \\frac{a^2 + b^2}{a^2 - b^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 13. Simplify : $\\frac{x+y}{xy} - \\frac{y+z}{yz}$",
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution : $\\frac{x+y}{xy} - \\frac{y+z}{yz} = \\frac{z \\times (x+y) - x \\times (y+z)}{xyz} = \\frac{zx + zy - xy - xz}{xyz}$\n$= \\frac{yz - xy}{xyz} = \\frac{y(z-x)}{xyz} = \\frac{z-x}{xz}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

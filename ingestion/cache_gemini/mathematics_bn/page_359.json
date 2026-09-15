@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 359,
+  "pdf_page_no": 364,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "বীজগণিতীয় ভগ্নাংশের যোগ, বিয়োগ ও সরলীকরণ",
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষ করি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| পাটিগণিত | বীজগণিত |\n|---|---|\n| সম্পূর্ণ বর্গাকার ক্ষেত্রটিকে $1$ ধরা হলে, এর | সম্পূর্ণ বর্গাকার ক্ষেত্রটিকে $x$ ধরা হলে, এর |\n| কালো অংশ = $1$ এর $\\frac{2}{4} = \\frac{2}{4}$ | কালো অংশ = $x$ এর $\\frac{2}{4} = \\frac{2x}{4}$ |\n| দাগটানা অংশ = $1$ এর $\\frac{1}{4} = \\frac{1}{4}$ | দাগটানা অংশ = $x$ এর $\\frac{1}{4} = \\frac{x}{4}$ |\n| $\\therefore$ মোট রং করা অংশ = $\\frac{2}{4} + \\frac{1}{4}$ | $\\therefore$ মোট রং করা অংশ = $\\frac{2x}{4} + \\frac{x}{4}$ |\n| (কালো ও দাগ কাটা) $\\frac{2+1}{4} = \\frac{3}{4}$ | (কালো ও দাগ কাটা) $\\frac{2x+x}{4} = \\frac{3x}{4}$ |\n| $\\therefore$ সাদা অংশ = $1 - \\left(\\frac{3}{4}\\right) = \\frac{4-3}{4}$ | $\\therefore$ সাদা অংশ = $x - \\frac{3x}{4} = \\frac{4x-3x}{4}$ |\n| $= \\frac{4-3}{4} = \\frac{1}{4}$ | $= \\frac{4x-3x}{4} = \\frac{x}{4}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষ করি, উপরের ঘরের মধ্যে লেখা ভগ্নাংশগুলোকে যোগ ও বিয়োগের ক্ষেত্রে সাধারণ হরবিশিষ্ট করা হয়েছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "বীজগণিতীয় ভগ্নাংশের যোগ ও বিয়োগের নিয়ম",
+      "chunk_type": "theory",
+      "content_markdown": "* ভগ্নাংশগুলোকে লঘিষ্ঠ সাধারণ হরবিশিষ্ট করতে হয়।\n* যোগফলের হর লঘিষ্ঠ সাধারণ হর এবং লব রূপান্তরিত ভগ্নাংশগুলোর লবের যোগফল।\n* বিয়োগফলের হর লঘিষ্ঠ সাধারণ হর এবং লব রূপান্তরিত ভগ্নাংশগুলোর লবের বিয়োগফল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "বীজগণিতীয় ভগ্নাংশের যোগ",
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৭। যোগ কর : $\\frac{x}{a}$ এবং $\\frac{y}{a}$\n\nসমাধান: $\\frac{x}{a} + \\frac{y}{a} = \\frac{x+y}{a}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

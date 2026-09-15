@@ -45,9 +45,9 @@ supabase = create_client(SB_URL, SB_KEY)
 
 # Collect active API keys for rotation
 API_KEYS = []
-for k in ["GEMINI_API_KEY_SECONDARY", "GEMINI_API_KEY"]:
+for k in ["GEMINI_API_KEY", "GEMINI_API_KEY_SECONDARY", "GEMINI_API_KEY_QUAT", "GEMINI_API_KEY_QUIN"]:
     val = os.getenv(k)
-    if val and val not in API_KEYS and not val.startswith("your-"):
+    if val and val not in API_KEYS and not val.endswith("EiCkVg") and not val.startswith("your-"):
         API_KEYS.append(val)
 
 if not API_KEYS:
@@ -125,6 +125,8 @@ def main():
     parser = argparse.ArgumentParser(description="Ingest extracted chunks and embeddings into Supabase")
     parser.add_argument("--subject", default="chemistry", choices=["chemistry", "physics", "mathematics", "english"])
     parser.add_argument("--lang", default="en", choices=["en", "bn"])
+    parser.add_argument("--start-page", type=int, default=None, help="Start printed page number to ingest")
+    parser.add_argument("--end-page", type=int, default=None, help="End printed page number to ingest")
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing to DB")
     parser.add_argument("--purge-first", action="store_true", help="Purge stale chunks for this curriculum version first")
     parser.add_argument("--skip-embed", action="store_true", help="Skip generating embeddings")
@@ -164,6 +166,20 @@ def main():
     page_files = sorted(cache_dir.glob("page_*.json"))
     print(f"Found {len(page_files)} extracted page files in {cache_dir}.")
 
+    if args.start_page is not None or args.end_page is not None:
+        filtered_files = []
+        for pf in page_files:
+            m = re.search(r"page_(\d+)\.json", pf.name)
+            if m:
+                p = int(m.group(1))
+                if args.start_page is not None and p < args.start_page:
+                    continue
+                if args.end_page is not None and p > args.end_page:
+                    continue
+                filtered_files.append(pf)
+        page_files = filtered_files
+        print(f"Filtered to {len(page_files)} pages between p.{args.start_page} and p.{args.end_page}.")
+
     if not page_files:
         print("No extraction files found to ingest. Exiting.")
         return
@@ -173,9 +189,31 @@ def main():
         supabase.table("curriculum_chunks").delete().eq("curriculum_version_id", curriculum_version_id).execute()
         print("Purge completed.")
 
+    # Check existing pages in DB if not purging
+    existing_pages = set()
+    chunk_global_idx = 1
+    if not args.purge_first:
+        offset = 0
+        while True:
+            p_res = supabase.table("curriculum_chunks").select("source_book_page_ref").eq("curriculum_version_id", curriculum_version_id).range(offset, offset + 999).execute()
+            if not p_res.data:
+                break
+            for r in p_res.data:
+                ref = r.get("source_book_page_ref")
+                if ref:
+                    existing_pages.add(ref)
+            if len(p_res.data) < 1000:
+                break
+            offset += 1000
+        print(f"Found {len(existing_pages)} unique pages already in database for this version.")
+
+        max_chunk_res = supabase.table("curriculum_chunks").select("chunk_index").eq("curriculum_version_id", curriculum_version_id).order("chunk_index", desc=True).limit(1).execute()
+        if max_chunk_res.data and max_chunk_res.data[0].get("chunk_index"):
+            chunk_global_idx = max_chunk_res.data[0]["chunk_index"] + 1
+        print(f"Next chunk_index will start at {chunk_global_idx}.")
+
     # 5. Build chunks to insert
     chunks_to_insert = []
-    chunk_global_idx = 1
 
     for pf in page_files:
         pdata = json.loads(pf.read_text(encoding="utf-8"))
@@ -184,6 +222,9 @@ def main():
         ch_id = chapter_map.get(ch_no)
         if not ch_id:
             print(f"Warning: Unknown chapter {ch_no} on page {pno}. Skipping.")
+            continue
+
+        if not args.purge_first and f"Page {pno}" in existing_pages:
             continue
 
         # Get uploaded figure CDN URLs for this page

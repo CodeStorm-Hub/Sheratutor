@@ -1,0 +1,43 @@
+{
+  "printed_page_no": 404,
+  "pdf_page_no": 409,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Theorem 9 (SSS Theorem)\n\nIf the three sides of one triangle are respectively equal to the three sides of another triangle, then the two triangles are congruent.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Special Nomination:**\n\nSuppose in $\\triangle ABC$ and $\\triangle DEF$,\n$AB = DE$, $AC = DF$, and $BC = EF$.\nWe need to prove that $\\angle ABC \\cong \\angle DEF$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**Proof:** Assume $BC$ and $EF$ are the largest sides of $\\triangle ABC$ and $\\triangle DEF$ respectively.\n\nNow, place $\\triangle ABC$ on $\\triangle DEF$ in such a way that point $B$ coincides with point $E$ and side $BC$ coincides with side $EF$, and point $A$ falls on the opposite side of $D$ with respect to $EF$. Assume point $G$ is the new position of point $A$.\n\nSince $BC = EF$, point $C$ will coincide with point $F$. Therefore, $\\triangle GEF$ will be the new position of $\\triangle ABC$. That is, $EG = BA$, $FG = CA$, and $\\angle EGF = \\angle BAC$.\n\nConnect $D$ and $G$.\n\n(1) In $\\triangle EGD$, $EG = ED$ [Since $EG = BA = ED$, and the angles opposite the equal sides of a triangle are equal.]\n\nTherefore, $\\angle EDG = \\angle EGD$.\n\n(2) In $\\triangle FGD$, $FG = FD$.\n\nTherefore, $\\angle FDG = \\angle FGD$, [as the angles opposite the equal sides of a triangle are equal.]\n\n(3) Hence, $\\angle EDG + \\angle FDG = \\angle EGD + \\angle FGD$\n\nor $\\angle EDF = \\angle EGF$, i.e., $\\angle BAC = \\angle EDF$.\n\nTherefore, in $\\triangle ABC$ and $\\triangle DEF$, $AB = DE$, $AC = DF$, and the included angle $\\angle BAC = \\angle EDF$. [Side-Angle-Side Theorem]\n\n$\\therefore \\triangle ABC \\cong \\triangle DEF$ (Proved).",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: SSS Theorem illustration",
+      "figure_no": "6.01",
+      "box_2d": [
+        223,
+        553,
+        353,
+        891
+      ],
+      "description": "Two triangles ABC and DEF with an additional point G forming a quadrilateral EDGF.",
+      "reading_order_anchor": "Special Nomination:"
+    }
+  ]
+}

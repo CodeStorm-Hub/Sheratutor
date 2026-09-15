@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 366,
+  "pdf_page_no": 371,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "উপপাদ্য ৪",
+      "chunk_type": "theory",
+      "content_markdown": "আয়তের কর্ণদ্বয় সমান ও পরস্পরকে সমদ্বিখণ্ডিত করে।\nবিশেষ নির্বচন : মনে করি, $ABCD$ আয়তের $AC$ ও $BD$ কর্ণদ্বয় পরস্পরকে $O$ বিন্দুতে ছেদ করে। প্রমাণ করতে হবে যে,\n(i) $AC = BD$\n(ii) $AO = CO, BO = DO$\nপ্রমাণ :\n| ধাপ | যথার্থতা |\n| :--- | :--- |\n| (১) আয়ত একটি সামান্তরিক। সুতরাং, $AO = CO, BO = DO$ | [সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে] |\n| (২) এখন $\\triangle ABD$ ও $\\triangle ACD$ এ | |\n| $AB = DC$ | [সামান্তরিকের বিপরীত বাহু পরস্পর সমান] |\n| এবং $AD = AD$ | [সাধারণ বাহু] |\n| অন্তর্ভুক্ত $\\angle DAB = \\angle ADC$ | [প্রত্যেকে সমকোণ] |\n| সুতরাং, $\\triangle ABD \\cong \\triangle ACD$ | [ত্রিভুজের বাহু-কোণ-বাহু-উপপাদ্য] |\n| অতএব, $AC = BD$ (প্রমাণিত) | |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "কাজ:",
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ কর যে, আয়তের প্রত্যেকটি কোণ সমকোণ।",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "উপপাদ্য ৫",
+      "chunk_type": "theory",
+      "content_markdown": "রম্বসের কর্ণদ্বয় পরস্পরকে সমকোণে সমদ্বিখণ্ডিত করে।\nবিশেষ নির্বচন : মনে করি, $ABCD$ রম্বসের $AC$ ও $BD$ কর্ণদ্বয় পরস্পরকে $O$ বিন্দুতে ছেদ করে। প্রমাণ করতে হবে যে,\n(i) $\\angle AOB = \\angle BOC = \\angle COD = \\angle DOA = 1$ সমকোণ\n(ii) $AO = CO, BO = DO$\nপ্রমাণ :\n| ধাপ | যথার্থতা |\n| :--- | :--- |\n| (১) রম্বস একটি সামান্তরিক। সুতরাং, $AO = CO, BO = DO$ | [সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে] |\n| (২) এখন $\\triangle AOB$ ও $\\triangle BOC$ এ | |\n| $AB = BC$ | [রম্বসের বাহুগুলো সমান] |\n| $AO = CO$ | [(১) থেকে] |\n| এবং $OB = OB$ | [সাধারণ বাহু] |\n| অতএব, $\\triangle AOB \\cong \\triangle BOC$ | [ত্রিভুজের বাহু-বাহু-বাহু উপপাদ্য] |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 6.01: একটি আয়তক্ষেত্র $ABCD$ এর কর্ণ $AC$ ও $BD$ পরস্পরকে $O$ বিন্দুতে ছেদ করেছে।",
+      "figure_no": "6.01",
+      "box_2d": [
+        90,
+        650,
+        240,
+        880
+      ],
+      "description": "A rectangle ABCD with diagonals AC and BD intersecting at point O.",
+      "reading_order_anchor": "উপপাদ্য ৪"
+    },
+    {
+      "caption": "চিত্র 6.02: একটি রম্বস $ABCD$ এর কর্ণ $AC$ ও $BD$ পরস্পরকে $O$ বিন্দুতে ছেদ করেছে।",
+      "figure_no": "6.02",
+      "box_2d": [
+        570,
+        650,
+        720,
+        880
+      ],
+      "description": "A rhombus ABCD with diagonals AC and BD intersecting at point O.",
+      "reading_order_anchor": "উপপাদ্য ৫"
+    }
+  ]
+}

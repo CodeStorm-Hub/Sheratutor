@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 415,
+  "pdf_page_no": 420,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Putting the value of $x = \\frac{80}{9}$ in equation (1), we get\n\n$$\\frac{1}{5} \\cdot \\frac{80}{9} + \\frac{3}{y} = 3$$\n\nor, $$\\frac{11}{9} + \\frac{3}{y} = 3$$\n\n$$\\therefore \\frac{3}{y} = 3 - \\frac{16}{9}$$\n\nor, $$\\frac{3}{y} = \\frac{27 - 16}{9}$$\n\nor, $$\\frac{3}{y} = \\frac{11}{9}$$\n\n$$\\therefore \\frac{1}{y} = \\frac{11}{27}$$\n\n$$\\therefore y = \\frac{27}{11}$$\n\n$$\\therefore \\text{Required solution is } (x, y) = (\\frac{80}{9}, \\frac{27}{11})$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "The End",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

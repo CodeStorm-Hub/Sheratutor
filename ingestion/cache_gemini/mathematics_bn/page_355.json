@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 355,
+  "pdf_page_no": 360,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "পরিশিষ্ট",
+      "chunk_type": "theory",
+      "content_markdown": "নবম-দশম শ্রেণির গণিত পাঠ্যবইয়ের তৃতীয়, ষষ্ঠ ও দ্বাদশ অধ্যায়ের সাথে সম্পর্কিত কিছু অতিরিক্ত বিষয়বস্তু সংযুক্তি হিসেবে যুক্ত করা হয়েছে। কারণ ২০২৫ সালে নবম শ্রেণিতে অধ্যয়নরত শিক্ষার্থীরা পূর্বতন শ্রেণিতে (সপ্তম ও অষ্টম শ্রেণি) 'জাতীয় শিক্ষাক্রম ২০২২' অনুযায়ী অধ্যয়ন করেছে। 'জাতীয় শিক্ষাক্রম ২০২২' অনুযায়ী সপ্তম ও অষ্টম শ্রেণির গণিত পাঠ্যপুস্তকে উক্ত বিষয়বস্তু অন্তর্ভুক্ত ছিল না। তাই শিখনের ধারাবাহিকতা ও কার্যকর শিখনের জন্য উক্ত বিষয়বস্তু সংযুক্ত করা হয়েছে।\nউল্লেখ্য যে, নবম শ্রেণির গণিত বিষয়ের শিখনফল অনুযায়ী ধারাবাহিক ও সামষ্টিক মূল্যায়ন অনুষ্ঠিত হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "তৃতীয় অধ্যায়ের সংযুক্তি",
+      "chunk_type": "theory",
+      "content_markdown": "",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ভগ্নাংশের লঘুকরণ",
+      "chunk_type": "theory",
+      "content_markdown": "কোনো ভগ্নাংশের লঘুকরণের অর্থ হলো ভগ্নাংশটিকে লঘিষ্ঠ আকারে পরিণত করা। এ জন্য লব ও হরকে এদের সাধারণ গুণনীয়ক বা উৎপাদক দ্বারা ভাগ করা হয়। কোনো ভগ্নাংশের লব ও হরের মধ্যে কোনো সাধারণ গুণনীয়ক বা উৎপাদক না থাকলে এরূপ ভগ্নাংশকে লঘিষ্ঠ আকারের ভগ্নাংশ বলা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১। $\\frac{4a^2bc}{6ab^2c}$ কে লঘুকরণ কর।\nসমাধান : $\\frac{4a^2bc}{6ab^2c} = \\frac{2 \\times 2 \\times a \\times a \\times b \\times c}{2 \\times 3 \\times a \\times b \\times b \\times c} = \\frac{2a}{3b}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ভগ্নাংশের লঘুকরণের মাধ্যমে নিচের খালি ঘরগুলো পূরণ কর (দুইটি করে দেখানো হলো) :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিকল্প পদ্ধতি : $\\frac{4a^2bc}{6ab^2c} = \\frac{2abc \\times 2a}{2abc \\times 3b} = \\frac{2a}{3b}$ [লব ও হরের গ.সা.গু. $2abc$]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $\\frac{9}{12}$ | $\\frac{3 \\times 3}{2 \\times 2 \\times 3} = \\frac{3}{4}$ | $\\frac{2^3}{2^4}$ | = |\n|---|---|---|---|\n| $\\frac{a^2b}{ab^2}$ | = | $\\frac{x^3}{x^2}$ | $\\frac{x \\times x \\times x}{x \\times x} = x$ |\n| $\\frac{3x}{6xy}$ | = | $\\frac{2mn}{4m^2}$ | = |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

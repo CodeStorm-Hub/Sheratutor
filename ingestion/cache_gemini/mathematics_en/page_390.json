@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 390,
+  "pdf_page_no": 395,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": "3.5",
+      "section_title": "Addition, Subtraction and Simplification of Algebraic Fractions",
+      "chunk_type": "theory",
+      "content_markdown": "Let us observe :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Arithmetic | Algebra |\n| :--- | :--- |\n| If the whole square region is taken as 1, then its black coloured part | If the whole square region is taken as $x$, then its black coloured part |\n| $= \\frac{2}{4}$ of $1 = \\frac{2}{4}$ | $= \\frac{2}{4}$ of $x = \\frac{2x}{4}$ |\n| Line drawn part $= \\frac{1}{4}$ of $1 = \\frac{1}{4}$ | Line-drawn part $= \\frac{1}{4}$ of $x = \\frac{x}{4}$ |\n| $\\therefore$ Total coloured part $= \\frac{2}{4} + \\frac{1}{4}$ | $\\therefore$ Total coloured part $= \\frac{2x}{4} + \\frac{x}{4}$ |\n| (Black and line drawn) $= \\frac{2+1}{4} = \\frac{3}{4}$ | (Black and line drawn) $= \\frac{2x+x}{4} = \\frac{3x}{4}$ |\n| $\\therefore$ White part $= \\left(1 - \\frac{3}{4}\\right) = \\frac{4-3}{4} = \\frac{1}{4}$ | $\\therefore$ White part $= x - \\frac{3x}{4} = \\frac{4x}{4} - \\frac{3x}{4}$ |\n| | $= \\frac{4x-3x}{4} = \\frac{x}{4}$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We observe, the fractions written into above boxes have been made into common denominators in case of addition and subtraction .",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Rules for addition and subtraction of algebraic fractions",
+      "chunk_type": "theory",
+      "content_markdown": "- Make the fractions to their lowest common denominator.\n- Denominator of the sum will be the lowest common denominator and the numerator will be the sum of the numerators of the transformed fractions.\n- Denominator of the difference will be the lowest common denominator and numerator will be the difference of the numerators of the transformed fractions.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

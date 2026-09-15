@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 387,
+  "pdf_page_no": 392,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Therefore, we are to make the denominators of the two fractions each equal to $6bn$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Here, $$\frac{a}{2b} = \frac{a \\times 3n}{2b \\times 3n} \\quad [ \\therefore 6bn \\div 2b = 3n ]$$ $$= \frac{3an}{6bn}$$ and $$\frac{m}{3n} = \frac{m \\times 2b}{3n \\times 2b} \\quad [ \\therefore 6bn \\div 3n = 2b ]$$ $$= \frac{2bm}{6bn}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\therefore$ The fractions with common denominator are $\\frac{3an}{6bn}$ and $\\frac{2bm}{6bn}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Rules for expressing the fractions with common denominator",
+      "chunk_type": "theory",
+      "content_markdown": "- Find the L.C.M. of the denominators of the fractions.\n- Divide the L.C.M. by the denominators of each fraction to find the quotient.\n- Multiply the numerator and denominator of the respective fraction by the quotient thus obtained.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 4. Express the fractions with common denominator : $\\frac{a}{4x}, \\frac{b}{2x^2}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution : L.C.M. of the denominators $4x$ and $2x^2$ is $4x^2$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\\therefore \\frac{a}{4x} = \frac{a \\times x}{4x \\times x} = \frac{ax}{4x^2} \\quad [ \\therefore 4x^2 \\div 4x = x ]$$ And $$\\frac{b}{2x^2} = \frac{b \\times 2}{2x^2 \\times 2} = \frac{2b}{4x^2} \\quad [ \\therefore 4x^2 \\div 2x^2 = 2 ]$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$\therefore$ The fractions with common denominator are $\\frac{ax}{4x^2}, \\frac{2b}{4x^2}$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. Transform the fractions into its common denominator: $$\\frac{2}{a^2-4}, \\frac{5}{a^2+3a-10}$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

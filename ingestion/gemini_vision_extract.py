@@ -42,13 +42,12 @@ if ENV_LOCAL.exists():
 if ENV_INGEST.exists():
     load_dotenv(ENV_INGEST)
 
-# API Keys rotation setup
-# Use active working keys only
-API_KEYS = [
-    os.environ.get("GEMINI_API_KEY_SECONDARY", "").strip(),
-    os.environ.get("GEMINI_API_KEY", "").strip(),
-]
-API_KEYS = [k for k in API_KEYS if k and not k.endswith("EiCkVg")]  # Filter out suspended tertiary key
+# API Keys rotation setup - all 4 active working accounts
+API_KEYS = []
+for k in ["GEMINI_API_KEY", "GEMINI_API_KEY_SECONDARY", "GEMINI_API_KEY_QUAT", "GEMINI_API_KEY_QUIN"]:
+    val = os.environ.get(k, "").strip()
+    if val and val not in API_KEYS and not val.endswith("EiCkVg") and not val.startswith("your-"):
+        API_KEYS.append(val)
 
 if not API_KEYS:
     print("Error: No Gemini API keys found in environment.")
@@ -199,13 +198,15 @@ SUBJECT_TOC = {
             (1, 20, 1), (21, 42, 2), (43, 74, 3), (75, 92, 4), (93, 110, 5),
             (111, 135, 6), (136, 151, 7), (152, 173, 8), (174, 196, 9),
             (197, 204, 10), (205, 223, 11), (224, 248, 12), (249, 265, 13),
-            (266, 284, 14), (285, 293, 15), (294, 325, 16), (326, 344, 17)
+            (266, 284, 14), (285, 293, 15), (294, 325, 16), (326, 344, 17),
+            (355, 361, 3), (362, 373, 6), (374, 382, 12)
         ],
         "en": [
             (1, 21, 1), (22, 44, 2), (45, 79, 3), (80, 97, 4), (98, 117, 5),
             (118, 145, 6), (146, 163, 7), (164, 187, 8), (188, 212, 9),
             (213, 221, 10), (222, 241, 11), (242, 269, 12), (270, 288, 13),
-            (289, 309, 14), (310, 318, 15), (319, 352, 16), (353, 384, 17)
+            (289, 309, 14), (310, 318, 15), (319, 352, 16), (353, 384, 17),
+            (385, 393, 3), (394, 407, 6), (408, 415, 12)
         ]
     },
     "english": {
@@ -360,7 +361,7 @@ def extract_page_gemini(
     image_part = types.Part.from_bytes(data=img_bytes, mime_type="image/png")
 
     candidate_models = []
-    for m in [_active_primary_model or model_name, "gemini-3.5-flash-lite", "gemini-3.1-flash-lite", "gemini-3-flash-preview", "gemini-flash-latest"]:
+    for m in [_active_primary_model or model_name, "gemini-2.5-flash", "gemini-3.1-flash-lite", "gemini-flash-latest", "gemini-3-flash-preview"]:
         if m not in candidate_models:
             candidate_models.append(m)
 
@@ -432,7 +433,7 @@ def main():
     parser.add_argument("--lang", default="en", choices=["en", "bn"])
     parser.add_argument("--start-page", type=int, default=6, help="PDF page number (1-based), e.g. 6 = printed p.1")
     parser.add_argument("--end-page", type=int, default=None, help="PDF page number (1-based)")
-    parser.add_argument("--model", default="gemini-3.5-flash-lite", help="Model name (e.g. gemini-2.5-flash)")
+    parser.add_argument("--model", default="gemini-2.5-flash", help="Model name (e.g. gemini-2.5-flash)")
     parser.add_argument("--out-dir", default=None, help="Output cache directory")
     parser.add_argument("--skip-existing", action="store_true", default=True, help="Skip already extracted pages")
     parser.add_argument("--pace-delay", type=float, default=4.2, help="Sleep delay in seconds between requests for 15 RPM safety")

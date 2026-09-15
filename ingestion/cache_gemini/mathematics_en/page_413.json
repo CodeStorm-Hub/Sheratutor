@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 413,
+  "pdf_page_no": 418,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Now, multiplying equation (1) by 3 and equation (1) by 4, we get\n$$3x + 12y = 42 \\dots \\dots \\dots \\dots \\dots (3)$$\n$$28x - 12y = 20 \\dots \\dots \\dots \\dots \\dots (4)$$\n$$\\overline{31x = 62 \\text{ (Adding)}}$$\n\nor, $$x = \\frac{62}{31}$$\n\n$$\\therefore x = 2$$\n\nNow, putting the value of $$x$$ in equation (1), we get\n$$2 + 4y = 14$$\nor, $$4y = 14 - 2$$\nor, $$4y = 12$$\nor, $$y = \\frac{12}{4}$$\n$$\\therefore y = 3$$\n\n$$\\therefore \\text{Required solution is } (x, y) = (2, 3)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 7. Solve the following equations :\n$$5x - 3y = 9$$\n$$3x - 5y = -1$$\n\nSolution : The given equations are\n$$5x - 3y = 9 \\dots \\dots \\dots \\dots \\dots (1)$$\n$$3x - 5y = -1 \\dots \\dots \\dots \\dots \\dots (2)$$\n\nMultiplying equation (1) by 5 and equation (2) by 3 we get\n$$25x - 15y = 45 \\dots \\dots \\dots \\dots \\dots (3)$$\n$$9x - 15y = -3 \\dots \\dots \\dots \\dots \\dots (4)$$\n$$(-) \\quad (+) \\quad (+)$$\n$$\\overline{16x = 48 \\quad [\\text{by subtracting}]}$$\n\nor, $$x = \\frac{48}{16}$$\n\n$$\\therefore x = 3$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 378,
+  "pdf_page_no": 383,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(3) ও (4) সমীকরণ যোগ করে পাই,\n$$7x=14$$\nবা, $$x = \\frac{14}{7} \\ldots \\ldots \\ldots (4)$$\n$$\\therefore x=2$$\nসমীকরণ (2) এ $x$ এর মান বসিয়ে পাই,\n$$2+2y=4$$\nবা, $$2y=4-2$$\nবা, $$y = \\frac{2}{2}$$\n$$\\therefore y=1$$\nনির্ণেয় সমাধান $(x, y) = (2,1)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ ঙ । সমাধান কর :",
+      "chunk_type": "worked_example",
+      "content_markdown": "$$x+4y=14$$\n$$7x-3y=5$$\nসমাধান : প্রদত্ত সমীকরণ\n$$x+4y=14 \\ldots \\ldots \\ldots (1)$$\n$$7x-3y=5 \\ldots \\ldots \\ldots (2)$$\nসমীকরণ (1) কে 3 দ্বারা এবং সমীকরণ (2) কে 4 দ্বারা গুণ করে পাই,\n$$3x+12y=42 \\ldots \\ldots \\ldots (3)$$\n$$28x-12y=20 \\ldots \\ldots \\ldots (4)$$\n$$31x = 62 \\quad [\\text{যোগ করে}]$$\nবা, $$x = \\frac{62}{31}$$\n$$\\therefore x=2$$\nএখন $x$ এর মান সমীকরণ (1)-এ বসিয়ে পাই,\n$$2+4y=14$$\nবা, $$4y = 14-2$$\nবা, $$4y = 12$$\nবা, $$y = \\frac{12}{4}$$\n$$\\therefore y=3$$\n$$\\therefore (x,y) = (2,3)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

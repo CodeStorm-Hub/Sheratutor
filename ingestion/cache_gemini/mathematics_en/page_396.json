@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 396,
+  "pdf_page_no": 401,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Activity:\n1. Identify parallelograms, rectangles, squares and rhombuses from objects of your day to day life.\n2. State whether True or False :\n(a) A square is a rhombus and also a rectangle.\n(b) A trapezium is a parallelogram.\n(c) A parallelogram is a trapezium.\n(d) A rectangle or a rhombus is not a square.\n3. A square is defined as a rectangle with equal sides. Can you define a square by using a rhombus?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Theorems related to Quadrilaterals\nDifferent types of quadrilaterals have some common properties. These properties are proved as theorems.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "### Theorem 1\nThe sum of four angles of a quadrilateral equals to four right angles.\n\n**Proposition:** Let $ABCD$ be a quadrilateral and $AC$ be one of its diagonals. It is to be proved that $\\angle A + \\angle B + \\angle C + \\angle D = 4$ right angles.\n\n**Construction:** Join $A$ and $C$. The diagonal $AC$ divides the quadrilateral into two triangles $\\Delta ABC$ and $\\Delta ADC$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| Steps | Justification |\n| :--- | :--- |\n| (1) In $\\Delta ABC$ $\\angle BAC + \\angle ACB + \\angle B = 2$ right angles. | [The sum of three angles of a triangle is 2 right angles] |\n| (2) Similarly, in $\\Delta ADC$ $\\angle DAC + \\angle ACD + \\angle D = 2$ right angles. | [ sum of three angles of a triangle is 2 right angles] |\n| (3) Therefore, $\\angle DAC + \\angle ACD + \\angle D + \\angle BAC + \\angle ACB + \\angle B = (2+2)$ right angles. | [ From (1) and (2) ] |\n| (4) $\\angle DAC + \\angle BAC = \\angle A$ and $\\angle ACD + \\angle ACB = \\angle C$ Therefore, $\\angle A + \\angle B + \\angle C + \\angle D = 4$ right angles. (Proved) | [The sum of adjacent angles] [The sum of adjacent angles] [ from (3) ] |",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Quadrilateral ABCD with diagonal AC",
+      "figure_no": "6.01",
+      "box_2d": [
+        500,
+        695,
+        645,
+        905
+      ],
+      "description": "A quadrilateral ABCD with a diagonal AC drawn, splitting it into two triangles.",
+      "reading_order_anchor": "Proposition: Let ABCD be a quadrilateral and AC be one of its diagonals."
+    }
+  ]
+}

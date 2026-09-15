@@ -15,7 +15,7 @@
       "section_no": null,
       "section_title": null,
       "chunk_type": "worked_example",
-      "content_markdown": "**উদাহরণ ৭.** $\\frac{a^3+b^3}{a-b+c} = a(a+b)$ হলে প্রমাণ কর যে, $a, b, c$ ক্রমিক সমানুপাতী।\n\n**সমাধান:** দেওয়া আছে, $\\frac{a^3+b^3}{a-b+c} = a(a+b)$\n$$\\text{বা, } \\frac{(a+b)(a^2-ab+b^2)}{a-b+c} = a(a+b)$$\n$$\\text{বা, } \\frac{a^2-ab+b^2}{a-b+c} = a \\text{ [উভয়পক্ষকে } (a+b) \\text{ দ্বারা ভাগ করে]}$$\n$$\\text{বা, } a^2-ab+b^2 = a^2-ab+ac$$\n$$\\text{বা, } b^2 = ac$$\n$$\\therefore a, b, c$ ক্রমিক সমানুপাতী।",
+      "content_markdown": "**উদাহরণ ৭.** $\\frac{a^3+b^3}{a-b+c} = a(a+b)$ হলে প্রমাণ কর যে, $a, b, c$ ক্রমিক সমানুপাতী।\n\n**সমাধান:** দেওয়া আছে, $\\frac{a^3+b^3}{a-b+c} = a(a+b)$\n$$\\text{বা, } \\frac{(a+b)(a^2-ab+b^2)}{a-b+c} = a(a+b)$$\n$$\\text{বা, } \\frac{a^2-ab+b^2}{a-b+c} = a \\text{ [উভয়পক্ষকে } (a+b) \\text{ দ্বারা ভাগ করে]}$$\n$$\\text{বা, } a^2-ab+b^2 = a^2-ab+ac$$\n$$\\text{বা, } b^2 = ac$$\n$\\therefore a, b, c$ ক্রমিক সমানুপাতী।",
       "activity_tag": null
     },
     {

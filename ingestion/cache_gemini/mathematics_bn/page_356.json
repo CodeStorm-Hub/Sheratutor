@@ -1,0 +1,107 @@
+{
+  "printed_page_no": 356,
+  "pdf_page_no": 361,
+  "chapter_no": 3,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২। $\\frac{2a^2 + 3ab}{4a^2 - 9b^2}$ কে লঘিষ্ঠ আকারে পরিণত কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান : $$\\frac{2a^2 + 3ab}{4a^2 - 9b^2} = \\frac{2a^2 + 3ab}{(2a)^2 - (3b)^2} = \\frac{a(2a + 3b)}{(2a + 3b)(2a - 3b)} = \\frac{a}{2a - 3b}$$ [$\\because x^2 - y^2 = (x + y)(x - y)$]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩। লঘুকরণ কর : $\\frac{x^2 + 5x + 6}{x^2 + 3x + 2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান : $$\\frac{x^2 + 5x + 6}{x^2 + 3x + 2} = \\frac{x^2 + 2x + 3x + 6}{x^2 + x + 2x + 2} = \\frac{x(x + 2) + 3(x + 2)}{x(x + 1) + 2(x + 1)} = \\frac{(x + 2)(x + 3)}{(x + 1)(x + 2)} = \\frac{x + 3}{x + 1}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সাধারণ হরবিশিষ্ট ভগ্নাংশ",
+      "chunk_type": "theory",
+      "content_markdown": "সাধারণ হরবিশিষ্ট ভগ্নাংশ",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সাধারণ হরবিশিষ্ট ভগ্নাংশকে সমহরবিশিষ্ট ভগ্নাংশও বলে। এক্ষেত্রে প্রদত্ত ভগ্নাংশগুলোর হর সমান করতে হয়। $\\frac{a}{2b}$ ও $\\frac{m}{3n}$ ভগ্নাংশ দুইটি বিবেচনা করি। ভগ্নাংশ দুইটির হর $2b$ এবং $3n$ এর ল.সা.গু. $6bn$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অতএব, দুইটি ভগ্নাংশেরই হর $6bn$ করতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে, $$\\frac{a}{2b} = \\frac{a \\times 3n}{2b \\times 3n}$$ [$\\therefore 6bn \\div 2b = 3n$] $$= \\frac{3an}{6bn}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবং $$\\frac{m}{3n} = \\frac{m \\times 2b}{3n \\times 2b}$$ [$\\therefore 6bn \\div 3n = 2b$] $$= \\frac{2bm}{6bn}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore$ সাধারণ হরবিশিষ্ট ভগ্নাংশ দুইটি $\\frac{3an}{6bn}$, $\\frac{2bm}{6bn}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সাধারণ হরবিশিষ্ট ভগ্নাংশে প্রকাশ করার নিয়ম",
+      "chunk_type": "theory",
+      "content_markdown": "সাধারণ হরবিশিষ্ট ভগ্নাংশে প্রকাশ করার নিয়ম",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "* ভগ্নাংশগুলোর হরের ল.সা.গু. বের করতে হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "* ল.সা.গু. কে প্রত্যেক ভগ্নাংশের হর দ্বারা ভাগ করে ভাগফল বের করতে হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "* প্রাপ্ত ভাগফল দ্বারা সংশ্লিষ্ট ভগ্নাংশের লব ও হরকে গুণ করতে হয়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

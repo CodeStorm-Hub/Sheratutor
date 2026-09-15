@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 412,
+  "pdf_page_no": 417,
+  "chapter_no": 12,
+  "chapter_title": "Simple Simultaneous Equations",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 5. Solve the equations\n$$5x - 4y = 6$$\n$$x + 2y = 4$$\n\nSolution : The given equations are\n$$5x - 4y = 6 \\dots \\dots \\dots \\dots (1)$$\n$$x + 2y = 4 \\dots \\dots \\dots \\dots (2)$$\n\nHere, multiplying equation (1) by $1$ and equation (2) by $2$, we get\n$$5x - 4y = 6 \\dots \\dots \\dots \\dots (3)$$\n$$2x + 4y = 8 \\dots \\dots \\dots \\dots (4)$$\n\nAdding (3) and (4) we get,\n$$7x = 14$$\nor, $$x = \\frac{14}{7} \\dots \\dots \\dots \\dots (4)$$\n$$\\therefore x = 2$$\n\nPutting the value of $x$ in equation (2), we get\n$$2 + 2y = 4$$\nor, $$2y = 4 - 2$$\nor $$y = \\frac{2}{2}$$\n$$\\therefore y = 1$$\n\n$$\\therefore$$ Required solution is $$(x, y) = (2, 1)$$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 6. Solve the equations\n$$x + 4y = 14$$\n$$7x - 3y = 5$$\n\nSolution : The given equations are\n$$x + 4y = 14 \\dots \\dots \\dots \\dots (1)$$\n$$7x - 3y = 5 \\dots \\dots \\dots \\dots (2)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 376,
+  "pdf_page_no": 381,
+  "chapter_no": 12,
+  "chapter_title": "দুই চলকবিশিষ্ট সরল সহসমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমীকরণ (1) এ $y$ এর মান বসিয়ে পাই,\n$$2(2z - 1) + 5z = 16$$\nবা, $$4z - 2 + 5z = 16$$\nবা, $$9z = 16 + 2$$\nবা, $$9z = 18$$\nবা, $$z = \\frac{18}{9}$$\n$\\therefore z = 2$\nএখন $z$ এর মান সমীকরণ (3) এ বসিয়ে পাই,\n$$y = 2 \\times 2 - 1$$\n$$= 4 - 1$$\n$\\therefore y = 3$\nনির্ণেয় সমাধান $(y, z) = (3, 2)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উদাহরণ 8 সমাধান কর :",
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ 8 সমাধান কর :\n$$\\frac{2}{x} + \\frac{1}{y} = 1$$\n$$\\frac{4}{x} - \\frac{9}{y} = -1$$\nসমাধান :\nপ্রদত্ত সমীকরণ\n$$\\frac{2}{x} + \\frac{1}{y} = 1 \\ldots \\ldots \\ldots (1)$$\n$$\\frac{4}{x} - \\frac{9}{y} = -1 \\ldots \\ldots \\ldots (2)$$\n$\\frac{1}{x} = u$ এবং $\\frac{1}{y} = v$ ধরে (1) ও (2) নং সমীকরণ হতে পাই\n$$2u + v = 3 \\ldots \\ldots \\ldots (3)$$\n$$4u - 9v = -1 \\ldots \\ldots \\ldots (4)$$\n(3) নং সমীকরণ হতে পাই\n$$v = 1 - 2u \\ldots \\ldots \\ldots (5)$$\n(4) নং সমীকরণে $v$ এর মান বসিয়ে পাই,\n$$4u - 9(1 - 2u) = -1$$\nবা, $$4u - 9 + 18u = -1$$\nবা, $$22u = 9 - 1$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

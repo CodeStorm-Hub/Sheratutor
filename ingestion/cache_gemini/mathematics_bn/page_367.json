@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 367,
+  "pdf_page_no": 372,
+  "chapter_no": 6,
+  "chapter_title": "রেখা, কোণ ও ত্রিভুজ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সুতরাং $\\angle AOB = \\angle BOC$.\n$\\angle AOB + \\angle BOC = 1$ সরলকোণ $= 2$ সমকোণ।\n$\\angle AOB = \\angle BOC = 1$ সমকোণ।\nঅনুরূপভাবে, প্রমাণ করা যায় যে,\n$\\angle COD = \\angle DOA = 1$ সমকোণ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১। দেখাও যে, বর্গের কর্ণদ্বয় পরস্পর সমান এবং পরস্পরকে সমদ্বিখণ্ডিত করে।\n২। একজন রাজমিস্ত্রি একটি আয়তাকার কংক্রিট ছাদ তৈরি করেছেন। তিনি কত বিভিন্ন ভাবে নিশ্চিত হতে পারেন যে তার তৈরি ছাদটি সত্যিই আয়তাকার?",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "চতুর্ভূজক্ষেত্রের ক্ষেত্রফল (Area of Quadrilaterals)",
+      "chunk_type": "theory",
+      "content_markdown": "একটি চতুর্ভুজর একটি কর্ণ দ্বারা চতুর্ভুজক্ষেত্রটি দুইটি ত্রিভুজক্ষেত্রে বিভক্ত হয়। অতএব, চতুর্ভুজক্ষেত্রের ক্ষেত্রফল ত্রিভুজদ্বয়ের ক্ষেত্রফলের যোগফলের সমান। পূর্ববর্তী শ্রেণিতে আমরা বর্গক্ষেত্র ও আয়তক্ষেত্রের ক্ষেত্রফল নির্ণয় করতে শিখেছি। আবার আয়ত ও সামান্তরিকের ভূমি ও উচ্চতা একই হলেও উল্লিখিত ক্ষেত্রফলের ক্ষেত্রফল সমান। নিচে রম্বস ও ট্রাপিজিয়ামক্ষেত্রের ক্ষেত্রফল নির্ণয়কৌশল নিয়ে আলোচনা করা হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ট্রাপিজিয়ামক্ষেত্রের ক্ষেত্রফল",
+      "chunk_type": "theory",
+      "content_markdown": "ABCD একটি ট্রাপিজিয়াম যেখানে $AB \\parallel CD$, $AB=a$, $CD=b$ এবং $AB$ ও $CD$ এর লম্ব দূরত্ব $=h$\n$C$ বিন্দু দিয়ে $DA \\parallel CE$ আঁকি।\n$\\therefore AECD$ একটি সামান্তরিক। চিত্র থেকে\n$ABCD$ ট্রাপিজিয়ামক্ষেত্রের ক্ষেত্রফল $= AECD$ সামান্তরিকক্ষেত্রের ক্ষেত্রফল $+ CEB$ ত্রিভুজক্ষেত্রের ক্ষেত্রফল\n$= b \\times h + \\frac{1}{2}(a-b) \\times h$\n$= \\frac{1}{2}(a+b) \\times h$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ট্রাপিজিয়াম ক্ষেত্রের ক্ষেত্রফল = সমান্তরাল বাহুদ্বয়ের সমষ্টির $\\frac{1}{2}$ গুণ $\\times$ উচ্চতা",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১। বিকল্প পদ্ধতিতে ট্রাপিজিয়ামক্ষেত্রের ক্ষেত্রফল নির্ণয় কর।",
+      "activity_tag": "Individual Task"
+    },
+    {
+      "section_no": null,
+      "section_title": "রম্বসক্ষেত্রের ক্ষেত্রফল",
+      "chunk_type": "theory",
+      "content_markdown": "রম্বসের কর্ণদ্বয় পরস্পরকে সমকোণে সমদ্বিখণ্ডিত করে। তাই রম্বসের কর্ণদ্বয়ের দৈর্ঘ্য জানা থাকলে সহজেই রম্বসক্ষেত্রের ক্ষেত্রফল নির্ণয় করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $ABCD$ রম্বসের $AC$ ও $BD$ কর্ণদ্বয় পরস্পরকে $O$ বিন্দুতে ছেদ করে। কর্ণদ্বয়ের দৈর্ঘ্যকে যথাক্রমে $a$ ও $b$ দ্বারা নির্দেশ করি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "চিত্র 6.01: ABCD ট্রাপিজিয়াম",
+      "figure_no": "6.01",
+      "box_2d": [
+        600,
+        640,
+        710,
+        900
+      ],
+      "description": "A diagram showing a trapezoid ABCD with parallel sides AB (length a) and DC (length b), and height h. A line segment CE is drawn from C to AB, forming a right angle at E.",
+      "reading_order_anchor": "ABCD একটি ট্রাপিজিয়াম যেখানে $AB \\parallel CD$, $AB=a$, $CD=b$ এবং $AB$ ও $CD$ এর লম্ব দূরত্ব $=h$"
+    }
+  ]
+}

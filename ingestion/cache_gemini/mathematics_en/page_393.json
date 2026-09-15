@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 393,
+  "pdf_page_no": 398,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Appendix",
+      "chunk_type": "theory",
+      "content_markdown": "Appendix",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Example 14. Simplify : $\\frac{x-y}{xy} + \\frac{y-z}{yz} - \\frac{z-x}{zx}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "Solution : $\\frac{x-y}{xy} + \\frac{y-z}{yz} - \\frac{z-x}{zx}$ \n\n$= \\frac{(x-y) \\times z + (y-z) \\times x - (z-x) \\times y}{xyz}$ \n\n$= \\frac{zx - yz + xy - zx - yz + xy}{xyz}$ \n\n$= \\frac{2xy - 2yz}{xyz} = \\frac{2y(x-z)}{xyz} = \\frac{2(x-z)}{xz}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

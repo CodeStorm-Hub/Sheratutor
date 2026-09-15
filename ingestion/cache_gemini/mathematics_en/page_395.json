@@ -1,0 +1,89 @@
+{
+  "printed_page_no": 395,
+  "pdf_page_no": 400,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": "6.1",
+      "section_title": "Types of Quadrilateral",
+      "chunk_type": "theory",
+      "content_markdown": "**Parallelogram:** A parallelogram is a quadrilateral with opposite sides parallel. The region bounded by a parallelogram is also known as parallelogram.\n\n**Rectangle:** A rectangle is a parallelogram with a right angle. The region bounded by a rectangle is a rectangular region.\n\n**Rhombus:** A rhombus is a parallelogram with equal adjacent sides, i.e., the opposite sides of a rhombus are parallel and the lengths of four sides are equal. The region bounded by a rhombus is also called rhombus.\n\n**Square:** A square is a rectangle with equal adjacent sides, i.e., a square is a parallelogram with all sides equal and all right angles. The area bounded by square is also called a square.\n\n**Trapezium:** A trapezium is a quadrilateral with a pair of parallel sides. The region bounded by trapezium is also called a trapezium.\n\n**Kite:** A kite is a quadrilateral with exactly two distinct consecutive pairs of sides of equal lengths.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Parallelogram",
+      "figure_no": "6.01",
+      "box_2d": [
+        107,
+        727,
+        180,
+        905
+      ],
+      "description": "A parallelogram shape.",
+      "reading_order_anchor": "Parallelogram: A parallelogram is a quadrilateral with opposite sides parallel."
+    },
+    {
+      "caption": "Fig 6.02: Rectangle",
+      "figure_no": "6.02",
+      "box_2d": [
+        241,
+        743,
+        322,
+        906
+      ],
+      "description": "A rectangle shape.",
+      "reading_order_anchor": "Rectangle: A rectangle is a parallelogram with a right angle."
+    },
+    {
+      "caption": "Fig 6.03: Rhombus",
+      "figure_no": "6.03",
+      "box_2d": [
+        386,
+        762,
+        485,
+        904
+      ],
+      "description": "A rhombus shape.",
+      "reading_order_anchor": "Rhombus: A rhombus is a parallelogram with equal adjacent sides."
+    },
+    {
+      "caption": "Fig 6.04: Square",
+      "figure_no": "6.04",
+      "box_2d": [
+        542,
+        796,
+        622,
+        905
+      ],
+      "description": "A square shape.",
+      "reading_order_anchor": "Square: A square is a rectangle with equal adjacent sides."
+    },
+    {
+      "caption": "Fig 6.05: Trapezium",
+      "figure_no": "6.05",
+      "box_2d": [
+        699,
+        735,
+        764,
+        904
+      ],
+      "description": "A trapezium shape.",
+      "reading_order_anchor": "Trapezium: A trapezium is a quadrilateral with a pair of parallel sides."
+    },
+    {
+      "caption": "Fig 6.06: Kite",
+      "figure_no": "6.06",
+      "box_2d": [
+        816,
+        792,
+        902,
+        903
+      ],
+      "description": "A kite shape.",
+      "reading_order_anchor": "Kite: A kite is a quadrilateral with exactly two distinct consecutive pairs of sides of equal lengths."
+    }
+  ]
+}

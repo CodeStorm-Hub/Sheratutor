@@ -27,9 +27,9 @@ if not SB_URL or not SB_KEY:
 
 supabase = create_client(SB_URL, SB_KEY)
 
-# Collect active API keys
+# Collect active API keys (rotating all 4 working accounts, skipping suspended TERTIARY)
 API_KEYS = []
-for k in ["GEMINI_API_KEY_SECONDARY", "GEMINI_API_KEY"]:
+for k in ["GEMINI_API_KEY", "GEMINI_API_KEY_SECONDARY", "GEMINI_API_KEY_QUAT", "GEMINI_API_KEY_QUIN"]:
     val = os.getenv(k)
     if val and val not in API_KEYS and not val.startswith("your-"):
         API_KEYS.append(val)
@@ -41,19 +41,32 @@ if not API_KEYS:
 _key_idx = 0
 
 def get_client():
-    global _key_idx
+    global _key_idx, API_KEYS
+    if not API_KEYS:
+        raise RuntimeError("All Gemini API keys exhausted their daily quota.")
     return genai.Client(api_key=API_KEYS[_key_idx % len(API_KEYS)])
 
 def rotate_key():
-    global _key_idx
-    _key_idx = (_key_idx + 1) % len(API_KEYS)
-    print(f"  [ROTATION] Switched to Gemini API Key ending in ...{API_KEYS[_key_idx % len(API_KEYS)][-6:]}")
+    global _key_idx, API_KEYS
+    if len(API_KEYS) > 1:
+        _key_idx = (_key_idx + 1) % len(API_KEYS)
+        print(f"  [ROTATION] Switched to Gemini API Key ending in ...{API_KEYS[_key_idx % len(API_KEYS)][-6:]}")
+
+def mark_key_daily_quota_exhausted():
+    global _key_idx, API_KEYS
+    exhausted_key = API_KEYS[_key_idx % len(API_KEYS)]
+    print(f"  [QUOTA] Key ending in ...{exhausted_key[-6:]} reached daily quota limit (1000 RPD). Removing from active pool.")
+    API_KEYS = [k for k in API_KEYS if k != exhausted_key]
+    if not API_KEYS:
+        raise RuntimeError("All Gemini API keys have exhausted their daily 1,000 RPD quota.")
+    _key_idx = _key_idx % len(API_KEYS)
+    print(f"  [ROTATION] {len(API_KEYS)} key(s) remaining in pool: ...{API_KEYS[_key_idx][-6:]}")
 
 EMBED_MODEL = "gemini-embedding-2"
 EMBED_DIM = 1024
 EMBED_VERSION = "v1"
 
-def embed_batch_with_retry(texts: List[str], max_retries: int = 6) -> List[List[float]]:
+def embed_batch_with_retry(texts: List[str], max_retries: int = 25) -> List[List[float]]:
     """Embeds a batch of texts in a single request with key rotation and retry."""
     items = [types.Content(parts=[types.Part.from_text(text=t)]) for t in texts]
     for attempt in range(max_retries):
@@ -68,17 +81,26 @@ def embed_batch_with_retry(texts: List[str], max_retries: int = 6) -> List[List[
             return embeddings
         except Exception as e:
             err = str(e)
-            print(f"    [WARN] Batch embed attempt {attempt+1}/{max_retries} failed: {err[:120]}...")
+            print(f"    [WARN] Batch embed attempt {attempt+1}/{max_retries}: {err[:130]}...")
             if "429" in err or "RESOURCE_EXHAUSTED" in err:
-                rotate_key()
-                delay = 2.0
-                m = re.search(r"retry in (\d+(?:\.\d+)?)s", err)
+                m = re.search(r"retry in (\d+(?:\.\d+)?)s", err) or re.search(r"retryDelay[\":\s]+(\d+)", err)
                 if m:
-                    delay = min(float(m.group(1)), 25.0)
-                time.sleep(delay)
+                    delay = min(float(m.group(1)) + 1.0, 30.0)
+                    rotate_key()
+                    if (attempt + 1) % len(API_KEYS) == 0:
+                        print(f"    [SLEEP] All keys in pool rate limited. Pausing {delay:.1f}s for RPM window...")
+                        time.sleep(delay)
+                    else:
+                        time.sleep(0.5)
+                elif "limit: 0" in err:
+                    mark_key_daily_quota_exhausted()
+                    time.sleep(1.0)
+                else:
+                    rotate_key()
+                    time.sleep(1.0)
             else:
                 rotate_key()
-                time.sleep(2.0)
+                time.sleep(1.0)
     raise RuntimeError(f"Failed to embed batch of {len(texts)} items after {max_retries} retries")
 
 def backfill_version(version_id: str, subject_code: str, lang: str, batch_size: int = 30):
@@ -88,9 +110,27 @@ def backfill_version(version_id: str, subject_code: str, lang: str, batch_size: 
     print(f" Model: {EMBED_MODEL} ({EMBED_DIM}-dim Matryoshka)")
     print(f"{'='*60}")
 
-    # 1. Fetch all chunk IDs for this version
-    chunks_res = supabase.table("curriculum_chunks").select("id, content_chunk, chunk_index").eq("curriculum_version_id", version_id).order("chunk_index").execute()
-    all_chunks = chunks_res.data or []
+    # 1. Fetch all chunk IDs for this version (paginated to bypass PostgREST 1000-row limit)
+    all_chunks = []
+    page_size = 1000
+    offset = 0
+    while True:
+        res = (
+            supabase.table("curriculum_chunks")
+            .select("id, content_chunk, chunk_index")
+            .eq("curriculum_version_id", version_id)
+            .order("chunk_index")
+            .range(offset, offset + page_size - 1)
+            .execute()
+        )
+        data = res.data or []
+        if not data:
+            break
+        all_chunks.extend(data)
+        if len(data) < page_size:
+            break
+        offset += page_size
+
     print(f"Total chunks in curriculum_version: {len(all_chunks)}")
     if not all_chunks:
         return
@@ -138,7 +178,7 @@ def backfill_version(version_id: str, subject_code: str, lang: str, batch_size: 
         elapsed = time.time() - start_time
         rate = total_embedded / max(elapsed, 0.1)
         print(f"  Saved {total_embedded} / {len(pending_chunks)} embeddings ({rate:.1f} chunks/sec)...")
-        time.sleep(1.0)  # Gentle delay between batches for RPM safety
+        time.sleep(4.5)  # Paced for safe 15 RPM
 
     print(f"✓ Completed backfill for {subject_code} [{lang}]: {total_embedded} embeddings inserted in {time.time()-start_time:.1f}s.")
 
@@ -146,7 +186,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--subject", choices=["chemistry", "physics", "mathematics", "english", "all"], default="all")
     parser.add_argument("--lang", choices=["bn", "en", "all"], default="all")
-    parser.add_argument("--batch-size", type=int, default=30)
+    parser.add_argument("--batch-size", type=int, default=10)
     args = parser.parse_args()
 
     subjs_map = {s["id"]: s["code"] for s in supabase.table("subjects").select("id, code").execute().data}

@@ -1,0 +1,57 @@
+{
+  "printed_page_no": 398,
+  "pdf_page_no": 403,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Proof:\n\n| Steps | Justification |\n| :--- | :--- |\n| (1) The lines $AB$ and $DC$ are parallel and $AC$ is their transversal. Therefore, $\\angle BAC = \\text{alternate } \\angle ACD$. | [Alternate angles are equal] |\n| (2) The lines $BC$ and $AD$ are parallel and $BD$ is their transversal. Therefore, $\\angle BDC = \\text{alternate } \\angle ABD$. | [Alternate angles are equal] |\n| (3) Now, between $\\Delta AOB$ and $\\Delta COD$, $\\angle OAB = \\angle OCD$, $\\angle OBA = \\angle ODC$ and $AB = DC$. So, $\\Delta AOB \\cong \\Delta COD$. Therefore, $AO = CO$ and $BO = DO$. (Proved) | $\\because \\angle BAC = \\angle ACD$ and $\\angle BDC = \\angle ABD$ <br> [ASA theorem] |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Activity\n1. Prove that, if the diagonals of a quadrilateral bisect each other, it is a parallelogram.",
+      "activity_tag": "Do It Yourself"
+    },
+    {
+      "section_no": "6.4",
+      "section_title": "Theorem 4: Two diagonals of a rectangle are equal and bisect each other.",
+      "chunk_type": "theory",
+      "content_markdown": "Proposition: Let the diagonals $AC$ and $BD$ of the rectangle $ABCD$ intersect at $O$. It is required to prove that,\n(i) $AC = BD$\n(ii) $AO = CO, BO = DO$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "Proof:\n\n| Steps | Justification |\n| :--- | :--- |\n| (1) A rectangle is also a parallelogram. Therefore, $AO = CO, BO = DO$. | [Diagonals of a parallelogram bisect each other] |\n| (2) Now between $\\Delta ABD$ and $\\Delta ACD$, $AB = DC$ and $AD = AD$. $\\angle DAB = \\angle ADC$ Therefore, $\\Delta ABD \\cong \\Delta ACD$. Therefore, $AC = BD$ (Proved) | [ Opposite sides of a parallelogram are equal ] <br> [ each angle is a right angle] <br> [ ASA theorem] |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Activity : 1. Prove that every angle of a rectangle is the right angle.",
+      "activity_tag": "Do It Yourself"
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Rectangle ABCD",
+      "figure_no": "6.01",
+      "box_2d": [
+        535,
+        653,
+        660,
+        865
+      ],
+      "description": "A rectangle ABCD with diagonals AC and BD intersecting at point O.",
+      "reading_order_anchor": "Theorem 4"
+    }
+  ]
+}

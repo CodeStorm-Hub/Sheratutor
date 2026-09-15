@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 386,
+  "pdf_page_no": 391,
+  "chapter_no": 3,
+  "chapter_title": "Algebraic Expressions",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "Fill in the blank spaces below through reduction of fraction :",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $\\frac{9}{12}$ | $\\frac{3 \\times 3}{2 \\times 2 \\times 3}$ | $\\frac{3}{4}$ | $\\frac{2^3}{2^4}$ | = |\n|---|---|---|---|---|\n| $\\frac{a^2b}{ab^2}$ | = | | $\\frac{x^3}{x^2}$ | $\\frac{x \\times x \\times x}{x \\times x} = x$ |\n| $\\frac{3x}{6xy}$ | = | | $\\frac{2mn}{4m^2}$ | = |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 2.",
+      "chunk_type": "worked_example",
+      "content_markdown": "Transform $\\frac{2a^2 + 3ab}{4a^2 - 9b^2}$ into its lowest terms.\n\nSolution : $\\frac{2a^2 + 3ab}{4a^2 - 9b^2} = \\frac{2a^2 + 3ab}{(2a)^2 - (3b)^2}$\n\n$= \\frac{a(2a + 3b)}{(2a + 3b)(2a - 3b)} = \\frac{a}{2a - 3b}$ $[x^2 - y^2 = (x+y)(x-y)]$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Example 3.",
+      "chunk_type": "worked_example",
+      "content_markdown": "Reduce : $\\frac{x^2 + 5x + 6}{x^2 + 3x + 2}$\n\nSolution : $\\frac{x^2 + 5x + 6}{x^2 + 3x + 2} = \\frac{x^2 + 2x + 3x + 6}{x^2 + x + 2x + 2}$\n\n$= \\frac{x(x+2) + 3(x+2)}{x(x+1) + 2(x+1)} = \\frac{(x+2)(x+3)}{(x+1)(x+2)}$\n\n$= \\frac{x+3}{x+1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Fractions with common denominators",
+      "chunk_type": "theory",
+      "content_markdown": "Fractions with common denominator is also known as the fractions with equal denominator. In this case, the denominators of the given fractions are to be made equal.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "We consider the fractions $\\frac{a}{2b}$ and $\\frac{m}{3n}$. L.C.M. of the denominators $2b$ and $3n$ is $6bn$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

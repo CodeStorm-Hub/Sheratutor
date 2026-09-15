@@ -1,0 +1,50 @@
+{
+  "printed_page_no": 394,
+  "pdf_page_no": 399,
+  "chapter_no": 6,
+  "chapter_title": "Lines, Angles and Triangles",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "Inclusion to Chapter 6",
+      "chunk_type": "theory",
+      "content_markdown": "In previous classes, we have discussed triangles and quadrilaterals. In constructing a particular triangle, we have seen that three measures are required. So, naturally the question arises whether four measures are enough to draw a quadrilateral. In this chapter, we shall discuss this matter. Besides, different types of quadrilaterals, such as parallelograms, rectangles, squares and rhombuses have various properties. The properties of these quadrilaterals and their constructions have also been discussed in this chapter.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "At the end of the chapter, the students will be able to -\n\n* Verify and logically prove the properties of quadrilaterals.\n* Construct quadrilaterals from given data.\n* Find the area of quadrilaterals by the formula of triangles.\n* Construct rectangular solids.\n* Find the area of surfaces of cubic and rectangular solids.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "Quadrilateral",
+      "chunk_type": "theory",
+      "content_markdown": "A quadrilateral is a closed figure bounded by four line segments. The closed region is also known as quadrilateral. The quadrilateral has four sides. The four line segments by which the region is bounded, are the sides of the quadrilateral.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "In the figure any three points of the points $A$, $B$, $C$, $D$ are not collinear. The quadrilateral $ABCD$ is constructed by the four line segments $AB$, $BC$, $CD$ and $DA$. The points $A$, $B$, $C$ and $D$ are the vertices of the quadrilateral. $\\angle ABC$, $\\angle BCD$, $\\angle CDA$ and $\\angle DAB$ are the four angles of the quadrilateral. The vertices $A$ and $B$ are the opposite vertices of $C$ and $D$ respectively. The pairs of sides $AB$ and $CD$, $AD$ and $BC$ are sides opposite to each other. The two sides that meet at a vertex are the adjacent sides. For example, the sides, $AB$ and $BC$ are the adjacent sides. The line segments $AC$ and $BD$ are the diagonals of $ABCD$. The sum of the lengths of sides is the perimeter of the quadrilateral. The perimeter of the quadrilateral $ABCD$ is equal to the length of $(AB+BC+CD+DA)$. We often denote quadrilaterals by the symbol $\\square$.",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "caption": "Fig 6.01: Quadrilateral ABCD",
+      "figure_no": "6.01",
+      "box_2d": [
+        565,
+        718,
+        645,
+        898
+      ],
+      "description": "A quadrilateral ABCD with vertices A, B, C, D and diagonals AC and BD shown as dashed lines.",
+      "reading_order_anchor": "In the figure any three points of the points A, B, C, D are not collinear."
+    }
+  ]
+}
