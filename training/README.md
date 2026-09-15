@@ -22,9 +22,12 @@ This directory contains the complete pipeline for fine-tuning open-weights LLMs 
 training/
 ├── dataset/
 │   ├── prepare_training_data.py          # Formats Q&A and NCTB data into ChatML JSONL
-│   └── sheratutor_train_dataset.jsonl    # Seed training dataset
+│   ├── export_supabase_to_dataset.py     # Pulls real chunks from Supabase RAG DB -> ChatML
+│   ├── sheratutor_train_dataset.jsonl    # Seed training dataset
+│   └── sheratutor_supabase_rag_dataset.jsonl # Live exported RAG dataset (170 verified pairs)
 ├── kaggle/
 │   ├── sheratutor_unsloth_qwen2_5_finetune.py # Main Kaggle training script
+│   ├── sheratutor_unsloth_qwen2_5_finetune.ipynb # 1-click Kaggle & Colab Notebook
 │   └── kernel-metadata.json              # Kaggle CLI metadata for 1-click execution
 ├── deploy/
 │   ├── Modelfile                         # Ollama configuration for GGUF
