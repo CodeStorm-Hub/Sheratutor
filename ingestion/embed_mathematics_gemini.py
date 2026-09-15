@@ -137,7 +137,7 @@ def fetch_existing_embedding_ids(curriculum_version_id: str) -> Set[str]:
 
     return embedded_ids
 
-def embed_batch_with_retry(texts: List[str], max_retries: int = 15) -> List[List[float]]:
+def embed_batch_with_retry(texts: List[str], max_retries: int = 30) -> List[List[float]]:
     """Calls Gemini batchEmbedContents with exponential backoff and key rotation."""
     requests_payload = [
         {
@@ -164,6 +164,17 @@ def embed_batch_with_retry(texts: List[str], max_retries: int = 15) -> List[List
         except urllib.error.HTTPError as e:
             err_body = e.read().decode("utf-8", errors="ignore")
             print(f"  [WARN] Attempt {attempt+1}/{max_retries} failed with HTTP {e.code}: {err_body[:100]}...")
+            
+            # Check if key exhausted 1,000 requests per day (RPD)
+            if "limit: 1000" in err_body or "RequestsPerDay" in err_body:
+                print(f"  [DAILY LIMIT] Key ending in ...{key[-8:]} reached 1K RPD. Pruning from active pool.")
+                if key in API_KEYS:
+                    API_KEYS.remove(key)
+                if not API_KEYS:
+                    raise RuntimeError("All Gemini API keys have exhausted their daily quota.")
+                time.sleep(2.0)
+                continue
+
             if e.code in (429, 503):
                 rotate_gemini_key()
                 # Parse recommended retry delay if present
