@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 227,
+  "pdf_page_no": 232,
+  "chapter_no": 10,
+  "chapter_title": "দ্বিপদী বিস্তৃতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবং $\\binom{5}{5} = \\frac{5 \\times 4 \\times 3 \\times 2 \\times 1}{1 \\times 2 \\times 3 \\times 4 \\times 5} = 1$\n\nসুতরাং $\\binom{5}{3}$ এর মানের ক্ষেত্রে বলা যায়, $\\binom{5}{3} = \\frac{5 \\times (5 - 1) \\times (5 - 2)}{1 \\times 2 \\times 3}$ এবং $\\binom{6}{4} = \\frac{6 \\times (6 - 1) \\times (6 - 2) \\times (6 - 3)}{1 \\times 2 \\times 3 \\times 4}$\n\nসাধারণভাবে আমরা লিখতে পারি,\n\n$\\binom{n}{0} = 1$, $\\binom{n}{n} = 1$\n\n$\\binom{n}{r} = \\frac{n \\times (n - 1) \\times (n - 2) \\dots (n - r + 1)}{1 \\times 2 \\times 3 \\times 4 \\dots \\times r}$\n\nউপরোক্ত চিহ্ন ব্যবহার করে পাই,\n\n$$(1 + y)^4 = \\binom{4}{0}y^0 + \\binom{4}{1}y^1 + \\binom{4}{2}y^2 + \\binom{4}{3}y^3 + \\binom{4}{4}y^4$$\n\n$$= 1 + 4y + 6y^2 + 4y^3 + y^4$$\n\n$$(1 + y)^5 = \\binom{5}{0}y^0 + \\binom{5}{1}y^1 + \\binom{5}{2}y^2 + \\binom{5}{3}y^3 + \\binom{5}{4}y^4 + \\binom{5}{5}y^5$$\n\n$$= 1 + 5y + 10y^2 + 10y^3 + 5y^4 + y^5$$\n\nএবং $(1 + y)^n$ এর বিস্তৃতি\n\n$$(1 + y)^n = \\binom{n}{0}y^0 + \\binom{n}{1}y^1 + \\binom{n}{2}y^2 + \\binom{n}{3}y^3 + \\dots + \\binom{n}{n}y^n$$\n\n$$= 1 \\cdot y^0 + ny^1 + \\frac{n(n - 1)}{1 \\cdot 2}y^2 + \\frac{n(n - 1)(n - 2)}{1 \\cdot 2 \\cdot 3}y^3 + \\dots + 1 \\cdot y^n$$\n\n$$\\therefore (1 + y)^n = 1 + ny + \\frac{n(n - 1)}{1 \\cdot 2}y^2 + \\frac{n(n - 1)(n - 2)}{1 \\cdot 2 \\cdot 3}y^3 + \\dots + y^n$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. $(1 + 3x)^5$ কে বিস্তৃত করো।\n\nসমাধান: প্যাসকেলের ত্রিভুজের সাহায্যে -\n\n$$\\begin{matrix}\n& & & & 1 & & & & \\\\\n& & & 1 & & 1 & & & \\\\\n& & 1 & & 2 & & 1 & & \\\\\n& 1 & & 3 & & 3 & & 1 & \\\\\n1 & & 4 & & 6 & & 4 & & 1 \\\\\n1 & 5 & & 10 & & 10 & & 5 & 1\n\\end{matrix}$$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

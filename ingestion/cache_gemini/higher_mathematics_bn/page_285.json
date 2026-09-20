@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 285,
+  "pdf_page_no": 290,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": "৪",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৪. $ABCD$ সামান্তরিকের কর্ণদ্বয় $\\vec{AC}$ ও $\\vec{BD}$ হলে $\\vec{AB}$ ও $\\vec{AC}$ ভেক্টরদ্বয়কে $\\vec{AD}$ ও $\\vec{BD}$ ভেক্টরদ্বয়ের মাধ্যমে প্রকাশ করো এবং দেখাও যে, $\\vec{AC} + \\vec{BD} = 2\\vec{BC}$ এবং $\\vec{AC} - \\vec{BD} = 2\\vec{AB}$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৫. দেখাও যে,\n(ক) $-(\\underline{a} + \\underline{b}) = -\\underline{a} - \\underline{b}$\n(খ) $\\underline{a} + \\underline{b} = \\underline{c}$ হলে $\\underline{a} = \\underline{c} - \\underline{b}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৬. দেখাও যে,\n(ক) $\\underline{a} + \\underline{a} = 2\\underline{a}$\n(খ) $(m - n)\\underline{a} = m\\underline{a} - n\\underline{a}$\n(গ) $m(\\underline{a} - \\underline{b}) = m\\underline{a} - m\\underline{b}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৭. ভেক্টরের সাহায্যে প্রমাণ করো যে, ত্রিভুজের এক বাহুর মধ্যবিন্দু থেকে অঙ্কিত অপর বাহুর সমান্তরাল রেখা তৃতীয় বাহুর মধ্যবিন্দুগামী।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৮. প্রমাণ করো যে, কোনো চতুর্ভুজের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করলে তা একটি সামান্তরিক হয়।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৯",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৯. ভেক্টরের সাহায্যে প্রমাণ কর যে, ট্রাপিজিয়ামের অসমান্তরাল বাহুদ্বয়ের মধ্যবিন্দু সংযোজক সরলরেখা সমান্তরাল বাহুদ্বয়ের সমান্তরাল ও তাদের যোগফলের অর্ধেক।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১০",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১০. ভেক্টরের সাহায্যে প্রমাণ করো যে, ট্রাপিজিয়ামের কর্ণদ্বয়ের মধ্যবিন্দুর সংযোজক সরলরেখা সমান্তরাল বাহুদ্বয়ের সমান্তরাল এবং তাদের বিয়োগফলের অর্ধেক।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "নমুনা প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "নমুনা প্রশ্ন\nবহুনির্বাচনি প্রশ্ন",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১. $\\underline{a}, \\underline{b}$ অশূন্য অসমান্তরাল ভেক্টর এবং $m\\underline{a} + n\\underline{b} = \\underline{0}$ হলে, নিচের কোনটি সঠিক?\n(ক) $m\\underline{a} = \\underline{0}$\n(খ) $m\\underline{b} = \\underline{0}$\n(গ) $m = n = 0$\n(ঘ) $m = n \\neq 0$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "২",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "২. $AB \\parallel DC$ হলে\n(i) $\\vec{AB} = m \\cdot \\vec{DC}$ যেখানে $m$ একটি স্কেলার রাশি\n(ii) $\\vec{AB} = \\vec{DC}$\n(iii) $\\vec{AB} = \\vec{CD}$\nওপরের তথ্যের আলোকে নিচের কোনটি সঠিক?\n(ক) $i$\n(খ) $ii$\n(গ) $i$ ও $ii$\n(ঘ) $i, ii$ ও $iii$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 135,
+  "pdf_page_no": 140,
+  "chapter_no": 6,
+  "chapter_title": "অসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৬. অসমতা ১৩৫",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "সৃজনশীল প্রশ্ন\n৫. হযরত শাহজালাল বিমানবন্দর থেকে সিঙ্গাপুর বিমানবন্দরের দূরত্ব 2900 কি.মি.। বাংলাদেশ বিমানের সর্বোচ্চ গতিবেগ 500 কি.মি./ঘণ্টা। কিন্তু হযরত শাহজালাল বিমানবন্দর থেকে সিঙ্গাপুর যাবার পথে প্রতিকূলে 60 কি.মি./ঘণ্টা বেগে বায়ুপ্রবাহের সম্মুখীন হয়।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $10(3 - 2x) \\geq 6(4 - 3x)$ অসমতাটি সমাধান করে সংখ্যারেখায় সমাধান সেট দেখাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) হযরত শাহজালাল বিমানবন্দর থেকে সিঙ্গাপুর বিমানবন্দর পর্যন্ত বিরতিহীন উড্ডয়নের প্রয়োজনীয় সময় $10$ তে বর্ণিত অসমতা থেকে নির্ণয় কর এবং সংখ্যা রেখায় দেখাও।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) সিঙ্গাপুর থেকে হযরত শাহজালাল বিমানবন্দরে ফেরার পথে বিরতিহীন উড্ডয়নের প্রয়োজনীয় সময়কে $x$ ধরে সমস্যাটিকে অসমতার মাধ্যমে প্রকাশ করে লেখচিত্রের সাহায্যে সমাধান কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. (ক) $y < 3$ অসমতার সমাধান সেটের লেখচিত্র অঙ্কন করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(খ) রিতা, মিতা ও বীথির বয়স যথাক্রমে $x$ বছর, $2x$ বছর, $3x$ বছর এবং তাদের তিনজনের বয়সের সমষ্টি অনূর্ধ্ব $54$ বছর হলে, মিতার বয়স সর্বোচ্চ কত হতে পারে নির্ণয় করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(গ) এক টুকরা কাগজের ক্ষেত্রফল $48$ বর্গসেমি এবং তা থেকে $x$ সেমি দৈর্ঘ্য এবং $6$ সেমি প্রস্থ বিশিষ্ট একটি আয়তাকার কাগজ কেটে নেওয়া হলে, $x$ এর সম্ভাব্য মান নির্ণয় করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ঘ) কোনো স্বাভাবিক সংখ্যার $5$ গুণ, সংখ্যাটির তিনগুণ এবং $12$এর সমষ্টি অপেক্ষা ছোট। সংখ্যাটির সম্ভাব্য মানগুলো নির্ণয় করো।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_6_5_g",
+      "caption": "গ) সংখ্যারেখা",
+      "box_2d": [
+        97,
+        159,
+        140,
+        783
+      ]
+    },
+    {
+      "figure_id": "fig_6_5_gh",
+      "caption": "ঘ) সংখ্যারেখা",
+      "box_2d": [
+        167,
+        159,
+        210,
+        783
+      ]
+    }
+  ]
+}

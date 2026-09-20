@@ -1,0 +1,104 @@
+{
+  "printed_page_no": 95,
+  "pdf_page_no": 100,
+  "chapter_no": 8,
+  "chapter_title": "জ্যামিতিক অঙ্কন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৮. জ্যামিতিক অঙ্কন ৯৫",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২. $ABC$ ত্রিভুজে $\\angle B = 90^0$, $\\angle A = 60^0$ এবং $BD \\perp AC$ হলে-\n(i) $\\angle CBD = 60^0$\n(ii) $AD : AB = 1 : 2$\n(iii) $\\triangle ABD$ এবং $\\triangle BCD$ পরস্পর সদৃশ।\n\nনিচের কোনটি সঠিক?\n(ক) i ও ii\t\t(খ) i ও iii\t\t(গ) ii ও iii\t\t(ঘ) i, ii ও iii",
+      "activity_tag": "বহুনির্বাচনি প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "নিচের চিত্রের আলোকে ৩ ও ৪ নং প্রশ্নের উত্তর দাও।",
+      "activity_tag": "বহুনির্বাচনি প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩. $\\angle ADC$ এর মান কত?\n(ক) $30^0$\t\t(খ) $45^0$\t\t(গ) $60^0$\t\t(ঘ) $75^0$",
+      "activity_tag": "বহুনির্বাচনি প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৪. $\\triangle ADC$ ও $\\triangle AEC$ এর ক্ষেত্রফলদ্বয়ের অনুপাত কত?\n(ক) $2 : 1$\t\t(খ) $1 : 1$\t\t(গ) $1 : 2$\t\t(ঘ) $1 : \\sqrt{2}$",
+      "activity_tag": "বহুনির্বাচনি প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সৃজনশীল প্রশ্ন",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৫. কোনো সমদ্বিবাহু ত্রিভুজের ভূমি $6$ সেমি এবং সমান সমান বাহুর দৈর্ঘ্য $5$ সেমি।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) ত্রিভুজটির উচ্চতা নির্ণয় করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(খ) ত্রিভুজটির অন্তর্বৃত্ত অঙ্কন করো। [অঙ্কনের চিহ্ন ও বিবরণ আবশ্যিক]",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(গ) এমন একটি বৃত্ত অঙ্কন করো যা উদ্দীপকের ভূমির সমান ব্যাসবিশিষ্ট কোনো বৃত্তকে কোনো বিন্দুতে স্পর্শ করে এবং বৃত্তটির বহিঃস্থ কোনো নির্দিষ্ট বিন্দু দিয়ে যায়।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "activity_tag": "সংক্ষিপ্ত-উত্তর প্রশ্ন"
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "(ক) $4$ সেমি, $5$ সেমি এবং $6$ সেমি বাহুবিশিষ্ট কোনো ত্রিভুজের পরিবৃত্ত অঙ্কন করো।\n(খ) কোনো ত্রিভুজের ভূমি $5$ সেমি, উচ্চতা $4$ সেমি এবং ভূমি সংলগ্ন একটি কোণ $60^0$ হলে, ত্রিভুজটি অঙ্কন করো।\n(গ) $6$ সেমি ব্যাসবিশিষ্ট কোনো বৃত্তের বহিঃস্থ কোনো বিন্দু থেকে বৃত্তটিতে দুটি স্পর্শক অঙ্কন করো।",
+      "activity_tag": "সংক্ষিপ্ত-উত্তর প্রশ্ন"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_geom_1",
+      "caption": "AC = AD",
+      "box_2d": [
+        275,
+        472,
+        448,
+        667
+      ]
+    }
+  ]
+}

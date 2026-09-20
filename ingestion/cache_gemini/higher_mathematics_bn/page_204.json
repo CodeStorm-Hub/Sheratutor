@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 204,
+  "pdf_page_no": 209,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\text{সুতরাং প্রদত্ত রাশি} = \frac{1}{1 + a^{y-z} + a^{y-x}} + \frac{1}{1 + a^{z-x} + a^{z-y}} + \frac{1}{1 + a^{x-y} + a^{x-z}}$$$$= \frac{a^{-y}}{a^{-y} + a^{-z} + a^{-x}} + \frac{a^{-z}}{a^{-z} + a^{-x} + a^{-y}} + \frac{a^{-x}}{a^{-x} + a^{-y} + a^{-z}}$$$$= \frac{a^{-x} + a^{-y} + a^{-z}}{a^{-x} + a^{-y} + a^{-z}} = 1$$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১৬.** যদি $a = 2 + 2^{\frac{2}{3}} + 2^{\frac{1}{3}}$ হয়, তবে দেখাও যে, $a^3 - 6a^2 + 6a - 2 = 0$\n\n**সমাধান:** দেওয়া আছে, $a = 2 + 2^{\frac{2}{3}} + 2^{\frac{1}{3}}$\n\n$\\therefore a - 2 = 2^{\frac{2}{3}} + 2^{\frac{1}{3}}$\n\nবা, $(a - 2)^3 = (2^{\frac{2}{3}} + 2^{\frac{1}{3}})^3 = 2^2 + 2 + 3 ' 2^{\frac{2}{3}} ' 2^{\frac{1}{3}}(2^{\frac{2}{3}} + 2^{\frac{1}{3}}) = 6 + 6(a - 2)$ [$\\because 2^{\frac{2}{3}} + 2^{\frac{1}{3}} = a - 2$]\n\nবা, $a^3 - 3a^2 ' 2 + 3a ' 2^2 - 2^3 = 6 + 6a - 12$\n\nবা, $a^3 - 6a^2 + 12a - 8 = 6a - 6$\n\n$\\therefore a^3 - 6a^2 + 6a - 2 = 0$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১৭.** সমাধান করো: $4^x - 3 ' 2^{x+2} + 2^5 = 0$\n\n**সমাধান:** $4^x - 3 ' 2^{x+2} + 2^5 = 0$\n\nবা, $(2^2)^x - 3 ' 2^x ' 2^2 + 32 = 0$\n\nবা, $(2^x)^2 - 12 ' 2^x + 32 = 0$\n\nবা, $y^2 - 12y + 32 = 0$ [মনে করি $2^x = y$]\n\nবা, $y^2 - 4y - 8y + 32 = 0$ বা, $y(y - 4) - 8(y - 4) = 0$\n\nবা, $(y - 4)(y - 8) = 0$\n\nসুতরাং $y - 4 = 0$ অথবা, $y - 8 = 0$\n\nবা, $2^x - 4 = 0$ [$\\because 2^x = y$] অথবা, $2^x - 8 = 0$ [$\\because 2^x = y$]\n\nবা, $2^x = 4 = 2^2$ অথবা, $2^x = 8 = 2^3$\n\n$\\therefore x = 2$ অথবা, $x = 3$\n\n$\\therefore$ নির্ণেয় সমাধান $x = 2, 3$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

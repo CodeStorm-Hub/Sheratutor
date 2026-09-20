@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 108,
+  "pdf_page_no": 113,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বা, $(x - y) = \\pm 11 \\cdots (3)$\n\n(2) কে 2 দ্বারা গুণ করে (1) এর সাথে যোগ করলে পাই, $(x + y)^2 = 1$\n\nবা, $x + y = \\pm 1 \\cdots (4)$\n\n(3) ও (4) থেকে,\n\n$$\\left. \\begin{array}{l} x + y = 1 \\\\ x - y = 11 \\end{array} \\right\\} \\cdots (5) \\quad \\quad \\quad \\quad \\left. \\begin{array}{l} x + y = 1 \\\\ x - y = -11 \\end{array} \\right\\} \\cdots (6)$$\n\n$$\\left. \\begin{array}{l} x + y = -1 \\\\ x - y = 11 \\end{array} \\right\\} \\cdots (7) \\quad \\quad \\quad \\quad \\left. \\begin{array}{l} x + y = -1 \\\\ x - y = -11 \\end{array} \\right\\} \\cdots (8)$$\n\nসমাধান করে পাই,\n\n(5) থেকে, $x = 6, y = -5$\n\n(6) থেকে, $x = -5, y = 6$\n\n(7) থেকে, $x = 5, y = -6$\n\n(8) থেকে, $x = -6, y = 5$\n\n$\\therefore$ নির্ণেয় সমাধান $(x, y) = (6, -5), (-5, 6), (5, -6), (-6, 5)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২২।** সমাধান করো: $x^2 - 2xy + 8y^2 = 8, 3xy - 2y^2 = 4$\n\n**সমাধান:** $x^2 - 2xy + 8y^2 = 8 \\cdots (1)$\n\n$$3xy - 2y^2 = 4 \\cdots (2)$$\n\n(1) এবং (2) থেকে আমরা পাই,\n\n$$\\frac{x^2 - 2xy + 8y^2}{3xy - 2y^2} = \\frac{2}{1}$$\n\nবা, $x^2 - 2xy + 8y^2 = 6xy - 4y^2$\n\nবা, $x^2 - 8xy + 12y^2 = 0$\n\nবা, $x^2 - 6xy - 2xy + 12y^2 = 0$\n\nবা, $(x - 6y)(x - 2y) = 0$\n\n$\\therefore x = 6y \\cdots (3)$ অথবা, $x = 2y \\cdots (4)$\n\n(3) থেকে $x$ এর মান (2) এ বসিয়ে আমরা পাই,\n\n$3 \\cdot 6y \\cdot y - 2y^2 = 4$ বা, $16y^2 = 4$ বা, $y^2 = \\frac{1}{4}$ বা, $y = \\pm \\frac{1}{2}$\n\n(3) থেকে, $x = 6 \\times \\left(\\pm \\frac{1}{2}\\right) = \\pm 3$\n\nআবার (4) থেকে $x$ এর মান (2) এ বসিয়ে আমরা পাই,",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

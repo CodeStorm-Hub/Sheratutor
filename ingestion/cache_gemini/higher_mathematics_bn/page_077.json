@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 77,
+  "pdf_page_no": 82,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \\triangle ABC \\text{ ও } \\triangle APD \\text{ সদৃশকোণী।}$$ $$\\therefore \\frac{AD}{AC} = \\frac{PD}{BC}$$ অর্থাৎ, $AC \\cdot PD = BC \\cdot AD \\cdots \\cdots (2)$ এখন সমীকরণ (1) ও (2) যোগ করে পাই, $$AC \\cdot BP + AC \\cdot PD = AB \\cdot CD + BC \\cdot AD$$ বা, $AC(BP + PD) = AB \\cdot CD + BC \\cdot AD$ কিন্তু $BP + PD = BD$ ফলে $AC \\cdot BD = AB \\cdot CD + BC \\cdot AD$ [প্রমাণিত]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১.** $\\triangle PQR$ এ $\\angle PQR = 90^\\circ$ এবং $PQ, QR$ ও $PR$ বাহু তিনটির মধ্যবিন্দু যথাক্রমে $D, E$ ও $F$।\n\nক) তথ্যানুযায়ী চিত্র এঁকে ভরকেন্দ্র চিহ্নিত করো।\n\nখ) প্রমাণ করো যে, $PR^2 = PE^2 + QE^2 + 2RE^2$।\n\nগ) $QF \\perp PR$ হলে প্রমাণ করো যে, $QF^2 = PF \\cdot RF$।\n\n**সমাধান:**\n\nক) নিচের চিত্রে $PQ, QR$ ও $PR$ এর মধ্যবিন্দু যথাক্রমে $D, E$ ও $F$ হওয়ায় $PE, QF$ এবং $DR$ মধ্যমা। $PE, QF$ এবং $DR$ মধ্যমাদ্বয় $G$ বিন্দুতে ছেদ করেছে। $\\therefore G$ বিন্দু ভরকেন্দ্র।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) $\\angle PQR = 90^\\circ$ এবং $\\triangle PQR$ এ $QR$ এর মধ্যবিন্দু $E$। $P, E$ যোগ করি। প্রমাণ করতে হবে যে, $PR^2 = PE^2 + QE^2 + 2RE^2$।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_3_1",
+      "caption": null,
+      "box_2d": [
+        721,
+        345,
+        876,
+        706
+      ]
+    }
+  ]
+}

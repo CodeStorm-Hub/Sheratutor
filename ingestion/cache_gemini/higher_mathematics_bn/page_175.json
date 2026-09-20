@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 175,
+  "pdf_page_no": 180,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৮.২",
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৮. ত্রিকোণমিতি\n\nঅনুশীলনী ৮.২\n\n১. ক্যালকুলেটর ব্যবহার না করে মান নির্ণয় করো:\nক) $\\frac{\\cos\\frac{\\pi}{4}}{\\cos\\frac{\\pi}{6} + \\sin\\frac{\\pi}{3}}$\nখ) $\\tan\\frac{\\pi}{4} + \\tan\\frac{\\pi}{6} \\cdot \\tan\\frac{\\pi}{3}$\n\n২. $\\cos\\theta = -\\frac{4}{5}$ এবং $\\pi < \\theta < \\frac{3\\pi}{2}$ হলে $\\tan\\theta$ এবং $\\sin\\theta$ এর মান নির্ণয় করো।\n\n৩. $\\sin A = \\frac{2}{\\sqrt{5}}$ এবং $\\frac{\\pi}{2} < A < \\pi$ এর ক্ষেত্রে $\\cos A$ এবং $\\tan A$ এর মান কত?\n\n৪. দেওয়া আছে, $\\cos A = \\frac{1}{2}$ এবং $\\cos A$ ও $\\sin A$ একই চিহ্নবিশিষ্ট। $\\sin A$ ও $\\tan A$ এর মান কত?\n\n৫. দেওয়া আছে, $\\tan A = -\\frac{5}{12}$ এবং $\\tan A$ ও $\\cos A$ বিপরীত চিহ্নবিশিষ্ট। $\\sin A$ ও $\\cos A$ এর মান নির্ণয় করো।\n\n৬. নিম্নলিখিত অভেদসমূহ প্রমাণ করো:\nক) $\\tan A + \\cot A = \\sec A \\csc A$\nখ) $\\sqrt{\\frac{1 + \\cos\\theta}{1 - \\cos\\theta}} = \\csc\\theta + \\cot\\theta = \\sqrt{\\frac{\\sec\\theta + 1}{\\sec\\theta - 1}}$\nগ) $\\sqrt{\\frac{1 - \\sin A}{1 + \\sin A}} = \\sec A - \\tan A$\nঘ) $\\sec^4\\theta - \\sec^2\\theta = \\tan^4\\theta + \\tan^2\\theta$\nঙ) $(\\sec\\theta - \\cos\\theta)(\\csc\\theta - \\sin\\theta)(\\tan\\theta + \\cot\\theta) = 1$\nচ) $\\frac{\\tan\\theta + \\sec\\theta - 1}{\\tan\\theta - \\sec\\theta + 1} = \\tan\\theta + \\sec\\theta$\n\n৭. যদি $\\csc A = \\frac{a}{b}$ হয়, যেখানে $a > b > 0$, তবে প্রমাণ করো যে, $\\tan A = \\frac{\\pm b}{\\sqrt{a^2 - b^2}}$\n\n৮. যদি $\\cos\\theta - \\sin\\theta = \\sqrt{2}\\sin\\theta$ হয়, তবে দেখাও যে, $\\cos\\theta + \\sin\\theta = \\sqrt{2}\\cos\\theta$\n\n৯. $\\tan\\theta = \\frac{x}{y}, x \\neq y$ হলে, $\\frac{x\\sin\\theta + y\\cos\\theta}{x\\sin\\theta - y\\cos\\theta}$ এর মান নির্ণয় করো।\n\n১০. $\\tan\\theta + \\sec\\theta = x$ হলে, দেখাও যে, $\\sin\\theta = \\frac{x^2 - 1}{x^2 + 1}$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

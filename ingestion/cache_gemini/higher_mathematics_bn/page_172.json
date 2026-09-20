@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 192,
+  "pdf_page_no": 177,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আবার, $\\sin B = \\frac{12}{13}$\n\n$\\therefore \\cos B = \\sqrt{1 - \\sin^2 B} = \\sqrt{1 - \\frac{144}{169}} = \\sqrt{\\frac{25}{169}}$\n\n$\\therefore \\cos B = \\frac{5}{13}$\n\n$\\therefore \\tan B = \\frac{\\sin B}{\\cos B} = \\frac{12/13}{5/13} = \\frac{12}{5}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{এখন, } \\frac{\\tan B - \\tan A}{1 + \\tan B \\cdot \\tan A} = \\frac{\\frac{12}{5} - \\frac{3}{4}}{1 + \\frac{12}{5} \\cdot \\frac{3}{4}}$$\n\n$$= \\frac{\\frac{48 - 15}{20}}{1 + \\frac{36}{20}} = \\frac{\\frac{33}{20}}{\\frac{20 + 36}{20}} = \\frac{33}{56}$$\n\n$$\\therefore \\frac{\\tan B - \\tan A}{1 + \\tan B \\cdot \\tan A} = \\frac{33}{56}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩. মান নির্ণয় করো: $\\sin^2 \\frac{\\pi}{6} + \\cos^2 \\frac{\\pi}{4} + \\tan^2 \\frac{\\pi}{3} + \\cot^2 \\frac{\\pi}{2}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: আমরা জানি, $\\sin \\frac{\\pi}{6} = \\frac{1}{2}$, $\\cos \\frac{\\pi}{4} = \\frac{1}{\\sqrt{2}}$, $\\tan \\frac{\\pi}{3} = \\sqrt{3}$ এবং $\\cot \\frac{\\pi}{2} = 0$\n\n$\\therefore \\sin^2 \\frac{\\pi}{6} + \\cos^2 \\frac{\\pi}{4} + \\tan^2 \\frac{\\pi}{3} + \\cot^2 \\frac{\\pi}{2}$\n\n$$= \\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{1}{\\sqrt{2}}\\right)^2 + (\\sqrt{3})^2 + (0)^2$$\n\n$$= \\frac{1}{4} + \\frac{1}{2} + 3 = 3\\frac{3}{4}$$",
+      "activity_tag": "সমাধান"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) $\\sin^2 \\frac{\\pi}{4}\\cos^2 \\frac{\\pi}{3} + \\tan^2 \\frac{\\pi}{6}\\sec^2 \\frac{\\pi}{3} + \\cot^2 \\frac{\\pi}{3}\\text{cosec}^2 \\frac{\\pi}{4}$ এর মান নির্ণয় করো।\n\nখ) সরল করো: $\\frac{\\sin^2 \\frac{\\pi}{3} + \\sin \\frac{\\pi}{3} \\cos \\frac{\\pi}{3} + \\cos^2 \\frac{\\pi}{3}}{\\sin \\frac{\\pi}{3} + \\cos \\frac{\\pi}{3}} - \\frac{\\sin^2 \\frac{\\pi}{3} - \\sin \\frac{\\pi}{3} \\cos \\frac{\\pi}{3} + \\cos^2 \\frac{\\pi}{3}}{\\sin \\frac{\\pi}{3} - \\cos \\frac{\\pi}{3}}$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. $7\\sin^2 \\theta + 3\\cos^2 \\theta = 4$ হলে, প্রমাণ করো যে, $\\tan \\theta = \\pm \\frac{1}{\\sqrt{3}}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_192_1",
+      "caption": null,
+      "box_2d": [
+        75,
+        608,
+        240,
+        895
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 206,
+  "pdf_page_no": 211,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "খ) $\\frac{a^{3} + a^{-3} + 1}{a^{\\frac{3}{2}} + a^{-\\frac{3}{2}} + 1} = a^{\\frac{3}{2}} + a^{-\\frac{3}{2}} - 1$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৫",
+      "section_title": "সরল করো:",
+      "chunk_type": "theory",
+      "content_markdown": "৫. সরল করো:\n\nক) $\\frac{\\left(\\frac{a+b}{b}\\right)^{\\frac{a}{a-b}} \\times \\left(\\frac{a-b}{a}\\right)^{\\frac{a}{a-b}}}{\\left(\\frac{a+b}{b}\\right)^{\\frac{b}{a-b}} \\times \\left(\\frac{a-b}{a}\\right)^{\\frac{b}{a-b}}}$\n\nখ) $\\frac{a^{\\frac{3}{2}} + ab}{ab - b^{3}} - \\frac{\\sqrt{a}}{\\sqrt{a} - b}$\n\nগ) $\\frac{1}{1 + a^{-m}b^{n} + a^{-m}c^{p}} + \\frac{1}{1 + b^{-n}c^{p} + b^{-n}a^{m}} + \\frac{1}{1 + c^{-p}a^{m} + c^{-p}b^{n}}$\n\nঘ) $\\sqrt[bc]{\\frac{x^{\\frac{c}{a}}}{x^{\\frac{a}{b}}}} \\times \\sqrt[ca]{\\frac{x^{\\frac{a}{b}}}{x^{\\frac{b}{c}}}} \\times \\sqrt[ab]{\\frac{x^{\\frac{b}{c}}}{x^{\\frac{c}{a}}}}$\n\nঙ) $\\frac{(a^{2} - b^{-2})^{a}(a - b^{-1})^{b-a}}{(b^{2} - a^{-2})^{b}(b + a^{-1})^{a-b}}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৬",
+      "section_title": "দেখাও যে,",
+      "chunk_type": "theory",
+      "content_markdown": "৬. দেখাও যে,\n\nক) যদি $x = a^{q+r}b^{p}$, $y = a^{r+p}b^{q}$, $z = a^{p+q}b^{r}$ হয়, তবে $x^{q-r} \\cdot y^{r-p} \\cdot z^{p-q} = 1$\n\nখ) যদি $a^{p} = b$, $b^{q} = c$ এবং $c^{r} = a$ হয়, তবে $pqr = 1$\n\nগ) যদি $a^{x} = p$, $a^{y} = q$ এবং $a^{z} = (p^{y}q^{x})^{z}$ হয়, তবে $xyz = 1$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৭",
+      "section_title": "দেখাও যে",
+      "chunk_type": "theory",
+      "content_markdown": "৭. ক) যদি $x\\sqrt[3]{a} + y\\sqrt[3]{b} + z\\sqrt[3]{c} = 0$ এবং $a^{2} = bc$ হয়, তবে দেখাও যে,\n$ax^{3} + by^{3} + cz^{3} = 3axyz$\n\nখ) যদি $x = (a+b)^{\\frac{1}{3}} + (a-b)^{\\frac{1}{3}}$ এবং $a^{2} - b^{2} = c^{3}$ হয়, তবে দেখাও যে,\n$x^{3} - 3cx - 2a = 0$\n\nগ) যদি $a^{2} + 2 = 3^{\\frac{2}{3}} + 3^{-\\frac{2}{3}}$ এবং $a \\ge 0$ হয়, তবে দেখাও যে, $3a^{3} + 9a = 8$\n\nঘ) যদি $a^{2} = b^{3}$ হয়, তবে দেখাও যে, $\\left(\\frac{a}{b}\\right)^{\\frac{3}{2}} + \\left(\\frac{b}{a}\\right)^{\\frac{2}{3}} = a^{\\frac{1}{2}} + b^{-\\frac{1}{3}}$\n\nঙ) যদি $b = 1 + 3^{\\frac{2}{3}} + 3^{\\frac{1}{3}}$ হয়, তবে দেখাও যে, $b^{3} - 3b^{2} - 6b - 4 = 0$\n\nচ) যদি $a + b + c = 0$ হয়, তবে দেখাও যে,\n$$\\frac{1}{x^{b} + x^{-c} + 1} + \\frac{1}{x^{c} + x^{-a} + 1} + \\frac{1}{x^{a} + x^{-b} + 1} = 1$$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

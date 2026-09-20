@@ -1,0 +1,110 @@
+{
+  "printed_page_no": 83,
+  "pdf_page_no": 88,
+  "chapter_no": 4,
+  "chapter_title": "জ্যামিতিক অঙ্কন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৪. আবার $B$ বিন্দুতে প্রদত্ত $\\angle x$ এর সমান করে $\\angle CBE$ অঙ্কন করি। $BE$ রেখাংশ $MN$ কে $A$ বিন্দুতে ছেদ করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৫. $A, C$ যোগ করি। তাহলে $\\triangle ABC$-ই উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $MN \\parallel BC$ (অঙ্কনানুসারে)। $\\therefore ABC$ এর উচ্চতা $BM = h$। আবার, $BC = a$ এবং $\\angle ABC = \\angle x$। $\\therefore \\triangle ABC$-ই উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশ্লেষণ: ভূমি ও ভূমিসংলগ্ন কোণ দেয়া আছে। সুতরাং একটি সরলরেখা থেকে ভূমির সমান অংশ কেটে নিয়ে তার এক প্রান্তে প্রদত্ত কোণের সমান কোণ আঁকতে হবে। অতপর ভূমির সঙ্গে নির্দিষ্ট কোণে আনত নতুন অঙ্কিত রেখার উপর এমন একটা বিন্দু নির্ণয় করতে হবে যেন ভূমি থেকে ঐ বিন্দুটির উচ্চতা ত্রিভুজের উচ্চতার সমান হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "২",
+      "section_title": "সম্পাদ্য ২",
+      "chunk_type": "theory",
+      "content_markdown": "ত্রিভুজের ভূমি, শিরঃকোণ ও অপর বাহুদ্বয়ের সমষ্টি দেওয়া আছে। ত্রিভুজটি অঙ্কন কর।",
+      "activity_tag": "সম্পাদ্য"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, একটি ত্রিভুজের ভূমি $a$, অপর বাহুদ্বয়ের সমষ্টি $s$ এবং শিরঃকোণ $x$ দেওয়া আছে। ত্রিভুজটি অঙ্কন করতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অঙ্কন:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ১. যেকোনো রেখা $DE$ থেকে $DB = s$ অংশ কেটে নিই।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ২. $DB$ রেখার $D$ বিন্দুতে $\\angle BDF = \\frac{1}{2}\\angle x$ অঙ্কন করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৩. $B$ কে কেন্দ্র করে ভূমি $a$ এর সমান ব্যাসার্ধ নিয়ে একটি বৃত্তচাপ অঙ্কন করি যা $DF$ কে $C$ ও $C'$ বিন্দুতে ছেদ করে। $B, C$ ও $B, C'$ যোগ করি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_4_1",
+      "caption": null,
+      "box_2d": [
+        182,
+        182,
+        313,
+        831
+      ]
+    },
+    {
+      "figure_id": "fig_4_2",
+      "caption": null,
+      "box_2d": [
+        549,
+        584,
+        686,
+        869
+      ]
+    },
+    {
+      "figure_id": "fig_4_3",
+      "caption": null,
+      "box_2d": [
+        831,
+        187,
+        868,
+        459
+      ]
+    }
+  ]
+}

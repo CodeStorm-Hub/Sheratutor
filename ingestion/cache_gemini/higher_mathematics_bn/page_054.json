@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 54,
+  "pdf_page_no": 59,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: প্রথম ভগ্নাংশ $= \\frac{(a + b - c)(a - b + c)}{(a + b + c)(a - b - c)} = \\frac{a + b - c}{a + b + c}$\n\nদ্বিতীয় ভগ্নাংশ $= \\frac{(a + b - c)(b - a + c)}{(a + b + c)(a + b - c)} = \\frac{b + c - a}{a + b + c}$\n\nতৃতীয় ভগ্নাংশ $= \\frac{(c + a - b)(c - a + b)}{(a + b + c)(b + c - a)} = \\frac{c + a - b}{a + b + c}$\n\n$\\therefore$ প্রদত্ত রাশি $\\frac{a + b - c}{a + b + c} + \\frac{b + c - a}{a + b + c} + \\frac{c + a - b}{a + b + c}$\n\n$= \\frac{a + b - c + b + c - a + c + a - b}{a + b + c} = \\frac{a + b + c}{a + b + c} = 1$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২১. সরল করো: $\\frac{(ax + 1)^2}{(x - y)(z - x)} + \\frac{(ay + 1)^2}{(x - y)(y - z)} + \\frac{(az + 1)^2}{(y - z)(z - x)}$\n\nসমাধান: প্রদত্ত রাশি $\\frac{(ax + 1)^2}{(x - y)(z - x)} + \\frac{(ay + 1)^2}{(x - y)(y - z)} + \\frac{(az + 1)^2}{(y - z)(z - x)}$\n\n$= \\frac{(ax + 1)^2(y - z) + (ay + 1)^2(z - x) + (az + 1)^2(x - y)}{(x - y)(y - z)(z - x)} \\dots \\dots (1)$\n\nএখানে (1) এর লব\n\n$(a^2x^2 + 2ax + 1)(y - z) + (a^2y^2 + 2ay + 1)(z - x) + (a^2z^2 + 2az + 1)(x - y)$\n\n$= a^2\\{x^2(y - z) + y^2(z - x) + z^2(x - y)\\} + 2a\\{x(y - z) + y(z - x) + z(x - y)\\}$\n\n$+ \\{(y - z) + (z - x) + (x - y)\\}$\n\nকিন্তু $x^2(y - z) + y^2(z - x) + z^2(x - y) = -(x - y)(y - z)(z - x)$,\n\nতদুপরি, $x(y - z) + y(z - x) + z(x - y) = 0$ এবং $(y - z) + (z - x) + (x - y) = 0$ ।\n\n$\\therefore$ (1) এর লব $-a^2(x - y)(y - z)(z - x)$ ।\n\nসুতরাং প্রদত্ত রাশি $= \\frac{-a^2(x - y)(y - z)(z - x)}{(x - y)(y - z)(z - x)} = -a^2$ ।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২২. সরল করো: $\\frac{1}{x + a} + \\frac{2x}{x^2 + a^2} + \\frac{4x^3}{x^4 + a^4} + \\frac{8x^7}{a^8 - x^8}$\n\nসমাধান: প্রদত্ত রাশির তৃতীয় ও চতুর্থ পদের যোগফল\n\n$= \\frac{4x^3}{x^4 + a^4} + \\frac{8x^7}{a^8 - x^8} = \\frac{4x^3}{x^4 + a^4} + \\frac{8x^7}{(x^4 + a^4)(a^4 - x^4)}$\n\n$= \\frac{4x^3}{x^4 + a^4} \\left(1 + \\frac{2x^4}{a^4 - x^4}\\right) = \\frac{4x^3}{x^4 + a^4} \\times \\frac{a^4 - x^4 + 2x^4}{a^4 - x^4}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

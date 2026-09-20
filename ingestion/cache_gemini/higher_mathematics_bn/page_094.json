@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 94,
+  "pdf_page_no": 99,
+  "chapter_no": 4,
+  "chapter_title": "জ্যামিতিক অঙ্কন",
+  "sections": [
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭। ক) সমকোণী ত্রিভুজের অতিভুজ ও অপর দুই বাহুর অন্তর দেওয়া আছে, ত্রিভুজটি আঁকো।\nখ) একটি ত্রিভুজের মধ্যমাদ্বয় দেওয়া আছে ত্রিভুজটি আঁকো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮। এমন একটি বৃত্ত অঙ্কন করো যা একটি নির্দিষ্ট সরলরেখাকে এর কোনো নির্দিষ্ট বিন্দুতে এবং অপর একটি বৃত্তকে স্পর্শ করে।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৯",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯। এমন একটি বৃত্ত অঙ্কন করো যা একটি নির্দিষ্ট বৃত্তকে এর কোনো নির্দিষ্ট বিন্দুতে এবং অপর একটি বৃত্তকে কোনো বিন্দুতে স্পর্শ করে।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১০",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০। এমন একটি বৃত্ত অঙ্কন করো যা একটি নির্দিষ্ট সরলরেখাকে কোনো বিন্দুতে এবং একটি নির্দিষ্ট বৃত্তকে এর কোনো নির্দিষ্ট বিন্দুতে স্পর্শ করে।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১১",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১। ভিন্ন ভিন্ন ব্যাসার্ধবিশিষ্ট এরূপ তিনটি বৃত্ত আঁক যেন তারা পরস্পরকে বহিঃস্পর্শ করে।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১২",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২। $O$ কেন্দ্রবিশিষ্ট কোনো বৃত্তের $AB$ জ্যা এর $P$ যেকোনো বিন্দু। $P$ বিন্দু দিয়ে অপর একটি জ্যা $CD$ অঙ্কন করতে হবে যেন $CP^2 = AP \\cdot PB$ হয়।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১৩",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৩। সমদ্বিবাহু ত্রিভুজের ভূমি $5$ সে.মি. এবং সমান সমান বাহুর দৈর্ঘ্য $6$ সে.মি।\nক) ত্রিভুজটি অঙ্কন করো।\nখ) ত্রিভুজটির পরিবৃত্ত অঙ্কন করে ব্যাসার্ধ নির্ণয় করো।\nগ) এমন একটি বৃত্ত অঙ্কন করো যা পূর্বে অঙ্কিত পরিবৃত্তের ব্যাসার্ধের সমান একটি বৃত্তকে $P$ বিন্দুতে স্পর্শ করে এবং বৃত্তের বহিঃস্থ কোন বিন্দু $Q$ দিয়ে যায়।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১৪",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৪। $O$ কেন্দ্র বিশিষ্ট বৃত্তের ব্যাসার্ধ $3$ সে.মি. এবং $O$ হতে $5$ সে.মি. দূরে $T$ বিন্দু অবস্থিত।\nক) তথ্যানুসারে চিত্র আঁকো।\nখ) $T$ হতে বৃত্তে দুটি স্পর্শক আঁকো। (অঙ্কনের চিহ্ন ও বিবরণ আবশ্যক)\nগ) পিথাগোরাসের উপপাদ্য ব্যবহার করে স্পর্শকদ্বয়ের দৈর্ঘ্যের সমষ্টি নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "নমুনা প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "নমুনা প্রশ্ন\nবহুনির্বাচনি প্রশ্ন\n১। $3.5$ সে.মি., $4.5$ সে.মি. এবং $5.5$ সে.মি. ব্যাসার্ধ বিশিষ্ট তিনটি বৃত্ত পরস্পরকে বহিঃস্পর্শ করলে কেন্দ্রত্রয় দ্বারা উৎপন্ন ত্রিভুজের পরিসীমা কত সে.মি.?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ক) $54$\nখ) $40.5$\nগ) $27$\nঘ) $13.5$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

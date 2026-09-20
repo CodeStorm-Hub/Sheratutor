@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 62,
+  "pdf_page_no": 67,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২. $P(x, y, z) = x^3 + y^3 + z^3 - 3xyz$ হলে\n(i) $P(x, y, z)$ চক্রক্রমিক রাশি\n(ii) $P(x, y, z)$ প্রতিসম রাশি\n(iii) $P(1, -2, 1) = 0$\n\nনিচের কোনটি সঠিক?\n(ক) $i, ii$ \n(খ) $i, iii$\n(গ) $ii, iii$\n(ঘ) $i, ii, iii$\n\n$P(x) = x^5 - x^4 + x^3 - x^2 + x - 1$\nউপপড়ের তথ্যের আলোকে ৩ নং ও ৪ নং প্রশ্নের উত্তর দাও-",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $P(x)$ এর একটি উৎপাদক নিচের কোনটি?\n(ক) $x + 1$ \n(খ) $x^2 - x - 1$\n(গ) $x^2 + x - 1$ \n(ঘ) $x - 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. $P(-2)$ এর মান নিচের কোনটি?\n(ক) $-63$ \n(খ) $-55$\n(গ) $-47$ \n(ঘ) $-31$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "সৃজনশীল প্রশ্ন\n৫. $P(a, b, c) = (a + b + c)(ab + bc + ca)$ এবং $Q = a^{-3} + b^{-3} + c^{-3} - 3a^{-1}b^{-1}c^{-1}$।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) $P(a, b, c)$ চক্রক্রমিক ও প্রতিসম রাশি কিনা তা কারণসহ উল্লেখ কর।\n(খ) $Q = 0$ হলে, প্রমাণ কর যে, $a = b = c$ অথবা $ab + bc + ca = 0$।\n(গ) $P(a, b, c) = abc$ হলে দেখাও যে, $\\frac{1}{(a + b + c)^7} = \\frac{1}{a^7} + \\frac{1}{b^7} + \\frac{1}{c^7}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৬. $P(x) = 18x^3 + bx^2 - x - 2$ এবং $Q(x) = 4x^4 + 12x^3 + 7x^2 - 3x - 2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) $\\frac{Q(x)}{P(x)}$ ভাগফলটির মাত্রা নির্ণয় কর।\n(খ) $3x + 2, P(x)$ এর একটি উৎপাদক হলে $b$ এর মান নির্ণয় কর।\n(গ) $\\frac{8x^2 - 2}{Q(x)}$ কে আংশিক ভগ্নাংশে প্রকাশ কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "সংক্ষিপ্ত-উত্তর প্রশ্ন\n৭. (ক) $x^4 - 5x^3 + 7x^2 - a$ বহুপদীর একটি উৎপাদক $x - 2$ হলে, দেখাও যে, $a = 4$।\n(খ) $4a^4 + 12a^3 + 7a^2 - 3a - 2$ কে উৎপাদকে বিশ্লেষণ কর।\n(গ) সরল কর: $\\frac{a^2}{(a - b)(a - c)} + \\frac{b^2}{(b - c)(b - a)} + \\frac{c^2}{(c - a)(c - b)}$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

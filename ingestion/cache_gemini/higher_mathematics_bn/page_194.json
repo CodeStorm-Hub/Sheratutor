@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 194,
+  "pdf_page_no": 199,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধরি $a$ একটি পূর্ণ সংখ্যা বা ভগ্নাংশ যা ধনাত্মক বা ঋণাত্মক হতে পারে এবং $n$ একটি ধনাত্মক পূর্ণসংখ্যা। তাহলে $a$ কে $n$ বার গুণ করলে গুণফলটিকে লিখা হয় $a^n = a \times a \times a \times \text{ ( } n \text{ বার)}$ এবং $a^n$ কে বলা হয় $a$ এর $n$ ঘাত। এরূপ ক্ষেত্রে $a$ কে বলা হয় নিধান বা ভিত্তি (base) এবং $n$ কে বলা হয় $a$ এর ঘাত বা সূচক (exponent)।\n\nসুতারং $3^4$ এর ক্ষেত্রে ভিত্তি $3$ এবং সূচক $4$।\n\nআবার $\\left(\\frac{2}{3}\\right)^4$ এর ক্ষেত্রে ভিত্তি $\\frac{2}{3}$ এর সূচক $4$।\n\nসংজ্ঞা: সকল $a \times R$ এর জন্য\n\n১. $a^1 = a$\n\n২. $a^n = a \times a \times a \times \text{ ( } n \text{ সংখ্যক উৎপাদক), যেখানে } n \times \\mathbb{N}, n > 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "অমূলদ সূচক",
+      "chunk_type": "theory",
+      "content_markdown": "অমূলদ সূচকের ক্ষেত্রে $a^x (a > 0)$ এর মান এমনভাবে নির্দিষ্ট করা হয় যে, $x$ এর মূলদ আসন্ন মান $p$ এর জন্য $a^p$ এর মান $a^x$ এর মানের আসন্ন হয়। উদাহরণস্বরূপ $3^{\\sqrt{5}}$ সংখ্যাটি বিবেচনা করি। আমরা জানি, $\\sqrt{5}$ একটি অমূলদ সংখ্যা এবং $\\sqrt{5} = 2.236067977 \times \times \times$ (এই মান ক্যালকুলেটর ব্যবহার করে পাওয়া গিয়েছে এবং দশমিক বিস্তার যে অনন্ত তা $\times \times \times$ দ্বারা নির্দেশ করা হয়েছে)। $\\sqrt{5}$ এর মান হিসেবে\n\n$p_1 = 2.23 \\quad p_2 = 2.236 \\quad p_3 = 2.2360 \\quad p_4 = 2.23606 \\quad p_5 = 2.236067$\n\n$p_6 = 2.2360679 \\quad p_7 = 2.23606797$\n\nবিবেচনা করে $3^{\\sqrt{5}}$ এর মান হিসেবে\n\n$q_1 = 3^{2.23} = 11.5872505 \\quad q_2 = 3^{2.236} = 11.6638822 \\quad q_3 = 3^{2.2360} = 11.6638822$\n\n$q_4 = 3^{2.23606} = 11.66465109 \\quad q_5 = 3^{2.236067} = 11.6647407$\n\n$q_6 = 3^{2.2360679} = 11.6647523 \\quad q_7 = 3^{2.23606797} = 11.6647532$\n\nপাওয়া যায় (এই মানগুলো ক্যালকুলেটর ব্যবহার করে পাওয়া গিয়েছে)।\n\nবাস্তবিক পক্ষে, $3^{\\sqrt{5}} = 11.6647533 \times \times \times$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সূচক সম্পর্কিত সূত্র",
+      "chunk_type": "theory",
+      "content_markdown": "সূত্র ১. $a \times \\mathbb{R}$ এবং $n \times \\mathbb{N}$ হলে $a^1 = a, a^{n+1} = a^n \times a$।\n\nপ্রমাণ: সংজ্ঞা অনুযায়ী $a^1 = a$ এবং $n \times \\mathbb{N}$ এর জন্য $a^{n+1} = \\overbrace{a \\times a \\times \\dots \\times a}^{n+1 \\text{ সংখ্যক}} = a^n \\times a$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

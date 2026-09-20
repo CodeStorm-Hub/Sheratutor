@@ -182,7 +182,8 @@ export async function POST(req: Request) {
 
   let subjectCode = rawSubjectCode;
   if (!subjectCode && subjectName) {
-    if (/math|গণিত/i.test(subjectName)) subjectCode = "SSC-MATH";
+    if (/higher\s*math|উচ্চতর\s*গণিত/i.test(subjectName)) subjectCode = "SSC-HMATH";
+    else if (/math|গণিত/i.test(subjectName)) subjectCode = "SSC-MATH";
     else if (/chem|রসায়ন/i.test(subjectName)) subjectCode = "SSC-CHEM";
     else if (/phys|পদার্থ/i.test(subjectName)) subjectCode = "SSC-PHY";
   }

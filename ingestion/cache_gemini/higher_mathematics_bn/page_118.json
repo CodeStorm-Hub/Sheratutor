@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 118,
+  "pdf_page_no": 123,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দেখা যায় যে লেখচিত্রটি $X$ অক্ষকে $(-0.4, 0)$ ও $(2.4, 0)$ বিন্দুতে ছেদ করেছে। সুতরাং, (1) নং এর সমাধান $x = -0.4$ (আসন্ন), $x = 2.4$ (আসন্ন)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩৬. $-x^2 + 3x - 2 = 0$ এর মূলদ্বয় লেখচিত্রের সাহায্যে নির্ণয় করো।\n\nসমাধান: প্রদত্ত সমীকরণ $-x^2 + 3x - 2 = 0 \text{ } \text{ } \text{ } (1)$ মনে করি, $y = -x^2 + 3x - 2 \text{ } \text{ } \text{ } (2)$\n\n$x$ এর কয়েকটি মানের জন্য $y$ এর মান নির্ণয় করে (2) নং এর লেখচিত্রের কয়েকটি বিন্দুর স্থানাঙ্ক নির্ণয় করি:",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $0$ | $0.5$ | $1$ | $1.5$ | $2$ | $2.5$ | $3$ |\n| --- | --- | --- | --- | --- | --- | --- | --- |\n| $y$ | $-2$ | $-0.75$ | $0$ | $0.25$ | $0$ | $-0.75$ | $-2$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রাপ্ত বিন্দুগুলো ছক কাগজে স্থাপন করে (2) নং এর লেখচিত্র অঙ্কন করি। দেখা যায় যে লেখচিত্রটি $X$ অক্ষের উপর $(1, 0)$ ও $(2, 0)$ বিন্দু দিয়ে গিয়েছে। সুতরাং (1) নং এর সমাধান $x = 1, x = 2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩৭. $x^2 + 4x = m$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_5_1",
+      "caption": null,
+      "box_2d": [
+        93,
+        334,
+        340,
+        663
+      ]
+    },
+    {
+      "figure_id": "fig_5_2",
+      "caption": null,
+      "box_2d": [
+        665,
+        294,
+        917,
+        705
+      ]
+    }
+  ]
+}

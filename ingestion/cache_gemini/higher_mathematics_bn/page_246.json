@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 246,
+  "pdf_page_no": 251,
+  "chapter_no": 11,
+  "chapter_title": "স্থানাঙ্ক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$AB$ বাহুর দৈর্ঘ্য $c$ ধরে\n$c = \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$ একক\n$BC$ বাহুর দৈর্ঘ্য $a$ ধরে\n$a = \\sqrt{(x_2 - x_3)^2 + (y_2 - y_3)^2}$ একক\n$AC$ বাহুর দৈর্ঘ্য $b$ ধরে\n$b = \\sqrt{(x_1 - x_3)^2 + (y_1 - y_3)^2}$ একক",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন ত্রিভুজটির পরিসীমা $2s$ ধরে\n\n$$2s = a + b + c \\text{ [পরিসীমা} = \\text{বাহু তিনটির দৈর্ঘ্যের সমষ্টি]}$$\n\nঅর্থাৎ $s = \\frac{1}{2}(a + b + c)$ একক, এখানে $s$ হলো ত্রিভুজের পরিসীমার অর্ধেক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আমরা $s$ এবং $a, b, c$ এর সাহায্যে সহজেই যেকোনো ত্রিভুজের ক্ষেত্রফল নির্ণয় করতে পারি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ত্রিভুজ ক্ষেত্রের ক্ষেত্রফল নির্ণয়ের সূত্র",
+      "chunk_type": "theory",
+      "content_markdown": "ত্রিভুজ $ABC$ এর $AB$ বাহুর দৈর্ঘ্য $c$, $BC$ বাহুর দৈর্ঘ্য $a$ এবং $CA$ বাহুর দৈর্ঘ্য $b$ এবং পরিসীমা $2s$ হলে $\\triangle ABC$ এর ক্ষেত্রফল $\\sqrt{s(s-a)(s-b)(s-c)}$ বর্গ একক [নবম-দশম শ্রেণির গণিত বই এর পরিমিতি অংশে প্রমাণ দেওয়া আছে। শিক্ষার্থীরা প্রমাণটি দেখে নেবে।]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "নিম্নোক্ত উদাহরণসমূহের মাধ্যমে সূত্রটির ব্যবহার সহজেই বোঝা যাবে।\n\nলক্ষণীয়: বিভিন্ন ত্রিভুজের ক্ষেত্রফল নির্ণয়ের বিভিন্ন সূত্র রয়েছে, কিন্তু একটি মাত্র সূত্রের সাহায্যে আমরা এখানে যেকোনো ত্রিভুজের ক্ষেত্রফল নির্ণয়ে সক্ষম হব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৬. একটি ত্রিভুজের তিনটি শীর্ষবিন্দু $A(2, 5)$, $B(-1, 1)$ ও $C(2, 1)$। ত্রিভুজটির একটি মোটামুটি চিত্র আঁক এবং পরিসীমা ও বাহুর দৈর্ঘ্যের মাধ্যমে ক্ষেত্রফল নির্ণয় করো। ত্রিভুজটি কোন ধরনের ত্রিভুজ চিত্র দেখে আন্দাজ করো এবং তার সপক্ষে যুক্তি দাও।\n\nসমাধান: চিত্রে ত্রিভুজটি দেখানো হলো।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_11_triangle",
+      "caption": null,
+      "box_2d": [
+        89,
+        549,
+        264,
+        874
+      ]
+    }
+  ]
+}

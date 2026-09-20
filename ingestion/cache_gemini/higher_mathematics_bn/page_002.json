@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 2,
+  "pdf_page_no": 7,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$S = \\{x : x, 100$ থেকে বড় নয় এমন পূর্ণবর্গ সংখ্যা$\\}$. এই পদ্ধতিকে সেট গঠন পদ্ধতি (Set builder method) বলা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: উপরের আলোচনায় ক) $S$ যে সেট তা ব্যাখ্যা করো। খ) $S$ কে অন্যভাবে প্রকাশ করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "সার্বিক সেট (Universal Set)",
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি\n$S = \\{x : x$ ধনাত্মক পূর্ণসংখ্যা এবং $5x \\le 16\\}$\n$T = \\{x : x$ ধনাত্মক পূর্ণসংখ্যা এবং $x^2 < 20\\}$\n$P = \\{x : x$ ধনাত্মক পূর্ণসংখ্যা এবং $\\sqrt{x} \\le 2\\}$\nএই সেট তিনটির উপাদানসমূহ $U = \\{x : x$ ধনাত্মক পূর্ণসংখ্যা$\\}$ সেটটির উপাদান নিয়ে গঠিত। $U$ কে $S, T, P$ সেটের জন্য সার্বিক সেট বিবেচনা করা যায়।\nসেটসংক্রান্ত কোনো আলোচনায় একটি নির্দিষ্ট সেটকে সার্বিক সেট বলা হয়, যদি আলোচনাধীন সকল সেটের উপাদানসমূহ ঐ নির্দিষ্ট সেটের অন্তর্ভুক্ত হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "কয়েকটি বিশেষ সংখ্যা সেট",
+      "chunk_type": "theory",
+      "content_markdown": "$N = \\{1, 2, 3, \\dots\\}$ অর্থাৎ সকল স্বাভাবিক সংখ্যা বা ধনাত্মক পূর্ণসংখ্যার সেট।\n$Z = \\{\\dots, -2, -1, 0, 1, 2, 3, \\dots\\}$ অর্থাৎ সকল পূর্ণসংখ্যার সেট।\n$Q = \\{x : x = \\frac{p}{q}$, যেখানে $p$ যেকোনো পূর্ণসংখ্যা এবং $q$ যেকোনো ধনাত্মক পূর্ণসংখ্যা$\\}$ অর্থাৎ সকল মূলদ সংখ্যার সেট।\n$R = \\{x : x$ বাস্তব সংখ্যা$\\}$ অর্থাৎ সকল বাস্তব সংখ্যার সেট।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "উপসেট (Subset)",
+      "chunk_type": "theory",
+      "content_markdown": "$A$ ও $B$ সেট হলে $A$ কে $B$ এর উপসেট বলা হয় যদি ও কেবল যদি $A$ এর প্রত্যেক উপাদান $B$ এর উপাদান হয় এবং একে $A \\subseteq B$ লিখে প্রকাশ করা হয়। যেমন $A = \\{2, 3\\}, B = \\{2, 3, 5, 7\\}$ এর উপসেট। $A, B$ এর উপসেট না হলে $A \\not\\subseteq B$ লেখা হয়। যেমন $A = \\{1, 3\\}, B = \\{2, 3, 5, 7\\}$ এর উপসেট নয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. যদি $A = \\{x : x$ ধনাত্মক পূর্ণসংখ্যা$\\}, B = \\{0\\}$ এবং $X = \\{x : x$ পূর্ণসংখ্যা$\\}$ হয়, তবে $A, B$ এবং $X$ এর মধ্যে সম্পর্ক কী?\n\nসমাধান: এখানে $A \\subseteq X, B \\subseteq X, B \\not\\subseteq A$।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

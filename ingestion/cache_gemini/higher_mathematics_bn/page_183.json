@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 183,
+  "pdf_page_no": 188,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\left(\\frac{3\\pi}{2} + \\theta\\right)$$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ $\\left(0 < \\theta < \\frac{\\pi}{2}\\right)$:\n\n$$\\left(\\frac{3\\pi}{2} + \\theta\\right)$$ কোণের জন্য $\\frac{3\\pi}{2} + \\theta = 2\\pi - \\left(\\frac{\\pi}{2} - \\theta\\right)$\n\n$$\\therefore \\sin\\left(\\frac{3\\pi}{2} + \\theta\\right) = \\sin\\left\\{2\\pi - \\left(\\frac{\\pi}{2} - \\theta\\right)\\right\\} = -\\sin\\left(\\frac{\\pi}{2} - \\theta\\right) = -\\cos\\theta$$\n\n$$\\cos\\left(\\frac{3\\pi}{2} + \\theta\\right) = \\cos\\left(\\frac{\\pi}{2} - \\theta\\right) = \\sin\\theta$$\n\n$$\\tan\\left(\\frac{3\\pi}{2} + \\theta\\right) = -\\tan\\left(\\frac{\\pi}{2} - \\theta\\right) = -\\cot\\theta$$\n\nঅনুরূপভাবে, $\\csc\\left(\\frac{3\\pi}{2} + \\theta\\right) = -\\sec\\theta$\n\n$\\sec\\left(\\frac{3\\pi}{2} + \\theta\\right) = \\csc\\theta$, $\\cot\\left(\\frac{3\\pi}{2} + \\theta\\right) = -\\tan\\theta$\n\n**মর্তব্য:** যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।\n\nযেকোনো কোণের অর্থাৎ, $\\left(n \\times \\frac{\\pi}{2} \\pm \\theta\\right)$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ নির্ণয়ের পদ্ধতি $\\left(0 < \\theta < \\frac{\\pi}{2}\\right)$:\n\nনিম্নোক্ত পদ্ধতিতে যেকোনো ত্রিকোণমিতিক কোণের অনুপাতসমূহ নির্ণয় করা যায়।\n\n**ধাপ ১.** প্রথমে প্রদত্ত কোণকে দুইভাগে ভাগ করতে হবে যার একটি অংশ $\\frac{\\pi}{2}$ বা $\\frac{\\pi}{2}$ এর $n$ গুণিতক এবং অপরটি সূক্ষ্মকোণ। অর্থাৎ প্রদত্ত কোণকে $\\left(n \\times \\frac{\\pi}{2} \\pm \\theta\\right)$ আকারে প্রকাশ করতে হবে।\n\n**ধাপ ২.** $n$ জোড় সংখ্যা হলে অনুপাতের ধরন একই থাকবে অর্থাৎ $\\text{sine}$ অনুপাত $\\text{sine}$ থাকবে, $\\text{cosine}$ অনুপাত $\\text{cosine}$ থাকবে ইত্যাদি।\n\n$n$ বিজোড় সংখ্যা হলে $\\text{sine}$, $\\text{tangent}$ ও $\\text{secant}$ অনুপাতগুলো যথাক্রমে $\\text{cosine}$, $\\text{cotangent}$ ও $\\text{cosecant}$ এ পরিবর্তিত হবে। একইভাবে, $\\text{cosine}$, $\\text{cotangent}$ ও $\\text{cosecant}$ যথাক্রমে $\\text{sine}$, $\\text{tangent}$ ও $\\text{secant}$ এ পরিবর্তিত হবে।\n\n**ধাপ ৩.** $\\left(n \\times \\frac{\\pi}{2} \\pm \\theta\\right)$ কোণের অবস্থান কোন চতুর্ভাগে সেটা জানার পর ঐ চতুর্ভাগে প্রদত্ত অনুপাতের যে চিহ্ন সেই চিহ্ন ধাপ ২ থেকে নিরূপিত অনুপাতের পূর্বে বসাতে হবে।\n\n**বিশেষ দ্রষ্টব্য:** এখানে বর্ণিত পদ্ধতির সাহায্যে যেকোনো ত্রিকোণমিতিক অনুপাত নির্ণয় সম্ভব বলে শিক্ষার্থীদের এই পদ্ধতিতে ত্রিকোণমিতিক অনুপাত নির্ণয়ের জন্য উপদেশ দেওয়া হলো।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 237,
+  "pdf_page_no": 242,
+  "chapter_no": 10,
+  "chapter_title": "দ্বিপদী বিস্তৃতি",
+  "sections": [
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৫. নিম্নোক্ত বিস্তৃতিসমূহের প্রথম চারটি পদ নির্ণয় করো।\nক) $(2 + 3x)^6$\nখ) $\\left(4 - \\frac{1}{2x}\\right)^5$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৬. $\\left(p - \\frac{1}{2x}\\right)^6 = r - 96x + sx^2 + \\cdots$ হলে, $p$, $r$ এবং $s$ এর মান নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৭. $x$ এর ঘাতের ঊর্ধ্বক্রম অনুসারে $\\left(2 + \\frac{x}{4}\\right)^6$ কে $x^3$ পর্যন্ত বিস্তৃত করো। উহার সাহায্যে $(1.9975)^6$ এর আসন্ন মান চার দশমিক স্থান পর্যন্ত নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৮. দ্বিপদী উপপাদ্য ব্যবহার করে $(1.99)^5$ এর মান চার দশমিক স্থান পর্যন্ত নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৯",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৯. $\\left(1 + \\frac{x}{4}\\right)^n$ এর বিস্তৃতির তৃতীয় পদের সহগ চতুর্থ পদের সহগের দ্বিগুণ। $n$ এর মান নির্ণয় করো। বিস্তৃতির পদসংখ্যা ও মধ্যপদ নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১০",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১০. $\\left(x^2 + \\frac{k}{x}\\right)^6$ এর বিস্তৃতিতে $x^3$ এর সহগ $160$ হলে $k$ এর মান নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১১",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১১. $(A + Bx)^n$ একটি বীজগণিতিক রাশি।\nক) $A = 1, B = 2$ এবং $n = 5$ হলে প্যাসকেলের ত্রিভুজ ব্যবহার করে রাশিটির বিস্তৃতি নির্ণয় করো।\nখ) $B = 3$ এবং $n = 7$ হলে রাশিটির বিস্তৃতির $x^4$ এর সহগ $22680$ হয়। $A$ এর মান নির্ণয় করো।\nগ) $A = 2$ এবং $B = 1$ হলে রাশিটির বিস্তৃতির পঞ্চম ও ষষ্ঠ পদের সহগ সমান হয়। $n$ এর মান নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১২",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১২. $a_1, a_2, a_3, a_4$ যদি $(1 + x)^n$ এর বিস্তৃতির চারটি ক্রমিক পদের সহগ হয়ে থাকে তাহলে প্রমাণ করো যে $\\frac{a_1}{a_1 + a_2} + \\frac{a_3}{a_3 + a_4} = \\frac{2a_2}{a_2 + a_3}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১৩",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১৩. কোনটি বড় $99^{50} + 100^{50}$ না $101^{50}$?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "নমুনা প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "নমুনা প্রশ্ন\nবহুনির্বাচনি প্রশ্ন\n১. $(1 - x)\\left(1 + \\frac{x}{2}\\right)^8$ -এর বিস্তৃতিতে $x$ এর সহগ\nক) $-1$\nখ) $\\frac{1}{2}$\nগ) $3$\nঘ) $-\\frac{1}{2}$",
+      "activity_tag": "বহুনির্বাচনি প্রশ্ন"
+    }
+  ],
+  "figures": []
+}

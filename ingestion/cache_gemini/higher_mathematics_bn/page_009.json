@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 9,
+  "pdf_page_no": 14,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: মনে করি, $x \notin A \\setminus B$। তাহলে, $x \notin A$ এবং $x \notin B$ $\\implies x \notin A$ এবং $x \notin B'$ $\\implies x \notin A \\cap B'$\n$\\therefore A \\setminus B \\subseteq A \\cap B'$\nআবার মনে করি, $x \notin A \\cap B'$। তাহলে, $x \notin A$ এবং $x \notin B'$ $\\implies x \notin A$ এবং $x \notin B$ $\\implies x \notin A \\setminus B$\n$\\therefore A \\cap B' \\subseteq A \\setminus B$\nসুতরাং, $A \\setminus B = A \\cap B'$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রতিজ্ঞা ৩. যেকোনো সেট $A, B, C$ এর জন্য\nক) $A \\times (B \\cap C) = (A \\times B) \\cap (A \\times C)$\nখ) $A \\times (B \\cup C) = (A \\times B) \\cup (A \\times C)$\n\nপ্রমাণ: (কেবল প্রথমটির প্রমাণ নিচে দেখানো হয়েছে। পরেরটির প্রমাণ নিজে কর।)\nক) সংজ্ঞাানুসারে, $A \\times (B \\cap C)$\n$= \\{(x, y) : x ∈ A, y ∈ B \\cap C\\}$\n$= \\{(x, y) : x ∈ A, y ∈ B \\text{ এবং } y \\u2208 C\\}$\n$= \\{(x, y) : x ∈ A, y ∈ B \\text{ এবং } x ∈ A, y \\u2208 C\\}$\n$= \\{(x, y) : (x, y) \\in A \\times B \\text{ এবং } (x, y) \\in A \\times C\\}$\n$= \\{(x, y) : (x, y) \\in (A \\times B) \\cap (A \\times C)\\}$\n$\\therefore A \\times (B \\cap C) \\subseteq (A \\times B) \\cap (A \\times C)$\nআবার, $(A \\times B) \\cap (A \\times C)$\n$= \\{(x, y) : (x, y) \\in A \\times B \\text{ এবং } (x, y) \\in A \\times C\\}$\n$= \\{(x, y) : x ∈ A, y ∈ B \\text{ এবং } x ∈ A, y \\u2208 C\\}$\n$= \\{(x, y) : x ∈ A, y ∈ B \\cap C\\}$\n$= \\{(x, y) : (x, y) \\in A \\times (B \\cap C)\\}$\n$\\therefore (A \\times B) \\cap (A \\times C) \\subseteq A \\times (B \\cap C)$\nসুতরাং, $A \\times (B \\cap C) = (A \\times B) \\cap (A \\times C)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সেট প্রক্রিয়া সংক্রান্ত আরও কতিপয় প্রতিজ্ঞা\nক) $A$ যেকোনো সেট হলে $A \\subseteq A$I\nখ) ফাঁকা সেট $\\emptyset$ যেকোনো সেট $A$ এর উপসেট।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 215,
+  "pdf_page_no": 220,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$(i) \\implies x > -a \\text{ এবং } a > x$$ \n $$\\implies -a < x \\text{ এবং } x < a$$ \n $$\\therefore \\text{ ডোমেন } = \\{x : -a < x\\} \\cap \\{x : x < a\\}$$ \n $$= (-a, \\infty) \\cap (-\\infty, a) = (-a, a)$$ \n $$(ii) \\implies x < -a \\text{ এবং } a < x$$ \n $$\\implies x < -a \\text{ এবং } x > a$$ \n $$\\therefore \\text{ ডোমেন } = \\{x : x < -a\\} \\cap \\{x : x > a\\} = \\emptyset$$ \n $$\\therefore \\text{ প্রদত্ত ফাংশনের ডোমেন } D_f = (i) \\text{ ও } (ii) \\text{ থেকে প্রাপ্ত ডোমেনের সংযোগ } (-a, a) \\cup \\emptyset = (-a, a)$$ \n \n রেন্জ: $y = f(x) = \\ln \\frac{a + x}{a - x} \\implies e^y = \\frac{a + x}{a - x}$ \n \n $$\\implies a + x = ae^y - xe^y$$ \n \n $$\\implies x + xe^y = ae^y - a$$ \n \n $$\\implies (1 + e^y)x = a(e^y - 1)$$ \n \n $$\\implies x = \\frac{a(e^y - 1)}{e^y + 1}$$ \n \n $y$ এর সকল বাস্তব মানের জন্য $x$ এর মান বাস্তব হয়। \n \n $$\\therefore \\text{ প্রদত্ত ফাংশনের রেন্জ } R_f = \\mathbb{R}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "কাজ: নিচের ফাংশনের ডোমেন ও রেন্জ নির্ণয় করো। \n \n ক) $y = \\ln \\frac{2 + x}{2 - x}$ \n \n খ) $y = \\ln \\frac{3 + x}{3 - x}$ \n \n গ) $y = \\ln \\frac{4 + x}{4 - x}$ \n \n ঘ) $y = \\ln \\frac{5 + x}{5 - x}$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "পরমমান",
+      "chunk_type": "theory",
+      "content_markdown": "নবম-দশম শ্রেণির গণিতে এ সম্পর্কে বিস্তারিত বর্ণনা করা হয়েছে। এখানে শুধুমাত্র পরমমানের সংজ্ঞা দেওয়া হলো। \n \n যেকোনো বাস্তব সংখ্যা $x$ এর মান শূন্য, ধনাত্মক বা ঋণাত্মক। কিন্তু $x$ এর পরমমান সবসময়ই শূন্য বা ধনাত্মক। $x$ এর পরমমানকে $|x|$ দ্বারা প্রকাশ করা হয় এবং পরমমান নিম্নলিখিতভাবে সংজ্ঞায়িত করা হয়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

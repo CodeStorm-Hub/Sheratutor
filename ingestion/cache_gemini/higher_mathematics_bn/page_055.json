@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 55,
+  "pdf_page_no": 60,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= \\frac{4x^3}{x^4 + a^4} \\times \\frac{a^4 + x^4}{a^4 - x^4} = \\frac{4x^3}{a^4 - x^4}$$\n\n$$\\therefore \\text{দ্বিতীয়, তৃতীয় এবং চতুর্থ পদের যোগফল}$$\n\n$$= \\frac{2x}{x^2 + a^2} + \\frac{4x^3}{a^4 - x^4} = \\frac{2x}{x^2 + a^2} \\left[1 + \\frac{2x^2}{a^2 - x^2}\\right]$$\n\n$$= \\frac{2x}{x^2 + a^2} \\times \\frac{a^2 - x^2 + 2x^2}{a^2 - x^2} = \\frac{2x}{x^2 + a^2} \\times \\frac{a^2 + x^2}{a^2 - x^2} = \\frac{2x}{a^2 - x^2}$$\n\n$$\\therefore \\text{প্রদত্ত রাশি} = \\frac{1}{x + a} + \\frac{2x}{a^2 - x^2} = \\frac{a - x + 2x}{a^2 - x^2} = \\frac{a + x}{a^2 - x^2} = \\frac{1}{a - x}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: সরল করো:\n\nক) $\\frac{b + c}{(a - b)(a - c)} + \\frac{c + a}{(b - c)(b - a)} + \\frac{a + b}{(c - a)(c - b)}$\n\nখ) $\\frac{a^3 - 1}{(a - b)(a - c)} + \\frac{b^3 - 1}{(b - c)(b - a)} + \\frac{c^3 - 1}{(c - a)(c - b)}$\n\nগ) $\\frac{bc(a + d)}{(a - b)(a - c)} + \\frac{ca(b + d)}{(b - c)(b - a)} + \\frac{ab(c + d)}{(c - a)(c - b)}$\n\nঘ) $\\frac{a^3 + a^2 + 1}{(a - b)(a - c)} + \\frac{b^3 + b^2 + 1}{(b - c)(b - a)} + \\frac{c^3 + c^2 + 1}{(c - a)(c - b)}$\n\nঙ) $\\frac{a^2 + bc}{(a - b)(a - c)} + \\frac{b^2 + ca}{(b - c)(b - a)} + \\frac{c^2 + ab}{(c - a)(c - b)}$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "আংশিক ভগ্নাংশ (Partial Fractions)",
+      "chunk_type": "theory",
+      "content_markdown": "যদি কোনো ভগ্নাংশকে একাধিক ভগ্নাংশের যোগফল রূপে প্রকাশ করা হয়, তবে শেষোক্ত ভগ্নাংশগুলোর প্রত্যেকটিকে প্রথমোক্ত ভগ্নাংশের আংশিক ভগ্নাংশ বলা হয়।\n\nযেমন, একটি ভগ্নাংশ $\\frac{3x - 8}{x^2 - 5x + 6}$ কে লেখা যায়:\n\n$$\\frac{3x - 8}{x^2 - 5x + 6} = \\frac{2(x - 3) + (x - 2)}{(x - 3)(x - 2)} = \\frac{2}{x - 2} + \\frac{1}{x - 3}$$\n\nএখানে প্রদত্ত ভগ্নাংশটিকে দুটি ভগ্নাংশের যোগফল রূপে প্রকাশ করা হয়েছে। অর্থাৎ, ভগ্নাংশটিকে দুটি আংশিক ভগ্নাংশে বিভক্ত করা হয়েছে।\n\nযদি $N(x)$ ও $D(x)$ উভয়ই $x$ চলকের বহুপদী এবং লব $N(x)$ এর মাত্রা হর $D(x)$ এর মাত্রা অপেক্ষা ছোটো হয়, তাহলে ভগ্নাংশটি প্রকৃত ভগ্নাংশ (proper fraction) বলা হয়। লব $N(x)$ এর মাত্রা হর $D(x)$ এর মাত্রার সমান অথবা বড়ো হলে ভগ্নাংশটিকে অপ্রকৃত ভগ্নাংশ (improper fraction)",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

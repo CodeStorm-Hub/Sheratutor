@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 27,
+  "pdf_page_no": 32,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে $F(-3) = \\sqrt{1 - (-3)} = \\sqrt{4} = 2$\n\n$$F(0) = \\sqrt{1 - 0} = \\sqrt{1} = 1$$\n\n$$F\\left(\\frac{1}{2}\\right) = \\sqrt{1 - \\frac{1}{2}} = \\sqrt{\\frac{1}{2}} = \\frac{1}{\\sqrt{2}}$$\n\n$$F(1) = \\sqrt{1 - 1} = 0$$\n\n$F(2)$ সংজ্ঞায়িত নয়, কেননা $2 \\notin \\text{ডোম } F$ ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "কাজ:\n\nক) নিচের কোন অন্বয়টি ফাংশন নয়? যুক্তি দাও।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $f : x \\to 4x + 2$ দ্বারা বর্ণিত ফাংশন যার ডোমেন $D = \\{-1, 3, 5\\}$। ফাংশনটির রেঞ্জ সেট নির্ণয় করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) প্রদত্ত $S$ অন্বয়টিকে তালিকা পদ্ধতিতে বর্ণনা কর এবং কোনগুলো ফাংশন তা নির্ধারণ করো। ডোম $S$ ও রেঞ্জ $S$ নির্ণয় করো, যেখানে $A = \\{-2, -1, 0, 1, 2\\}$।\n\n(১) $S = \\{(x, y) : x \\in A,\\ y \\in A \\text{ এবং } x + y = 1\\}$\n\n(২) $S = \\{(x, y) : x \\in A,\\ y \\in A \\text{ এবং } x - y = 1\\}$\n\n(৩) $S = \\{(x, y) : x \\in A,\\ y \\in A \\text{ এবং } y = x^2\\}$\n\n(৪) $S = \\{(x, y) : x \\in A,\\ y \\in A \\text{ এবং } y^2 = x\\}$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ঘ) $F(x) = 2x - 1$ দ্বারা বর্ণিত ফাংশনের জন্য\n\n(১) $F(-2), F(0),$ এবং $F(2)$ নির্ণয় করো।\n\n(২) $F\\left(\\frac{a + 1}{2}\\right)$ নির্ণয় করো, যেখানে $a \\in \\mathbb{R}$।\n\n(৩) $F(x) = 5$ হলে $x$ নির্ণয় করো।\n\n(৪) $F(x) = y$ হলে $x$ নির্ণয় করো, যেখানে $y \\in \\mathbb{R}$।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "এক-এক ফাংশন (One-One Function)",
+      "chunk_type": "theory",
+      "content_markdown": "নিচের ভেনচিত্রে $f$ ফাংশনের অধীনে ভিন্ন ভিন্ন সদস্যের প্রতিবিম্ব সর্বদা ভিন্ন।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_kaz_mapping",
+      "caption": "অন্বয় বা ফাংশন যাচাইয়ের জন্য ভেনচিত্রসমূহ",
+      "box_2d": [
+        368,
+        224,
+        451,
+        843
+      ]
+    }
+  ]
+}

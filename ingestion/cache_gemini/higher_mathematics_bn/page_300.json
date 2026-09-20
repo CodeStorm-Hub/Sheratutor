@@ -1,0 +1,34 @@
+{
+  "printed_page_no": 300,
+  "pdf_page_no": 305,
+  "chapter_no": 13,
+  "chapter_title": "ঘন জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: উপরের চিত্রে, কোণকের উচ্চতা $OA = h$ হেলানো উচ্চতা $AC = l$, ভূমির ব্যাসার্ধ $OC = r$ এবং অর্ধ শীর্ষকোণ $\\angle OAC = \\alpha$। সুতরাং, হেলানো উচ্চতা $l = \\sqrt{h^2 + r^2}$।\n\nচিত্র হতে দেখা যায় যে, $\\tan\\alpha = \\frac{r}{h}$\n\n$\\therefore r = h\\tan\\alpha$ বা, $h = \\frac{r}{\\tan\\alpha} = r\\cot\\alpha$\n\nক) $S = \\pi rl = \\pi r\\sqrt{h^2 + h^2\\tan^2\\alpha} = \\pi rh\\sqrt{1 + \\tan^2\\alpha} = \\pi rh\\sqrt{\\sec^2\\alpha} = \\pi rh\\sec\\alpha = \\pi(h\\tan\\alpha)h\\sec\\alpha = \\frac{\\pi h^2\\tan\\alpha}{\\cos\\alpha}$ বর্গ একক\n\nআবার, $S = \\pi rh\\sec\\alpha = \\frac{\\pi r}{\\cos\\alpha}r\\cot\\alpha = \\frac{\\pi r^2 \\cos\\alpha}{\\cos\\alpha \\sin\\alpha} = \\frac{\\pi r^2}{\\sin\\alpha}$ বর্গ একক\n\nখ) $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi(h\\tan\\alpha)^2 h = \\frac{1}{3}\\pi h^3 \\tan^2\\alpha = \\frac{1}{3}\\pi \\left(\\frac{r}{\\tan\\alpha}\\right)^3 \\tan^2\\alpha = \\frac{\\pi r^3}{3\\tan\\alpha}$ ঘন একক",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": "৭",
+      "section_title": "যৌগিক ঘনবস্তু (Compound solid)",
+      "chunk_type": "theory",
+      "content_markdown": "৭. যৌগিক ঘনবস্তু (Compound solid)\n\nদুটি ঘনবস্তুর সমন্বয়ে গঠিত ঘনবস্তুকে যৌগিক ঘনবস্তু বলে। নিম্নে যৌগিক ঘনবস্তুর কিছু উদাহরণ দেওয়া হলো:\n\nক) একটি আয়তাকার ঘনবস্তুর ওপরের তল যদি একটি খাড়া প্রিজমের কোনো একটি তলের সমান হয় তবে ঘনবস্তুর ওপর মিলিয়ে প্রিজমটি বসালে একটি যৌগিক ঘনবস্তু হয়।\n\nখ) একটি প্রিজমের ভূমি ও একটি চতুস্তলকের ভূমি সর্বসম হলে এবং চতুস্তলককে প্রিজমের ওপর বসালে একটি যৌগিক ঘনবস্তু হয়।\n\nগ) একটি অর্ধগোলকের ব্যাসার্ধ ও একটি সমবৃত্তভূমিক কোণকের ভূমির ব্যাসার্ধ সমান হলে এবং কোণকটিকে অর্ধগোলকের ওপর বসালে একটি নতুন ঘনবস্তু সৃষ্টি হয়।\n\nঘ) দুটি অর্ধগোলক ও একটি সমবৃত্তভূমিক সিলিন্ডারের সমন্বয়ে গঠিত যৌগিক ঘনবস্তুকে ক্যাপসুল বলা যেতে পারে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_cone_dimensions",
+      "caption": null,
+      "box_2d": [
+        98,
+        396,
+        285,
+        663
+      ]
+    }
+  ]
+}

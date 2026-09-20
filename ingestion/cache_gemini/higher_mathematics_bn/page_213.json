@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 213,
+  "pdf_page_no": 218,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$f(x) = 2^x$ এর লেখচিত্র অঙ্কন\n\n$y = 2^x$ ধরে $x$ এর কয়েকটি মানের জন্য $y$ এর সংশ্লিষ্ট মানগুলোর তালিকা প্রস্তুত করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $-3$ | $-2$ | $-1$ | $0$ | $1$ | $2$ |\n|---|---|---|---|---|---|---|\n| $y$ | $\\frac{1}{8}$ | $\\frac{1}{4}$ | $\\frac{1}{2}$ | $1$ | $2$ | $4$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ছক কাগজে $(x, y)$ এর মানগুলো স্থাপন করলে পাশের লেখচিত্র পাওয়া যায়।\nচিত্র লক্ষ করি:\n(i) $x$ ঋণাত্মক এবং $|x|$ যথেষ্ট বড়ো হলে $y$ এর মান $0$ (শূন্য) এর কাছাকাছি হয় যদিও কখনো শূন্য হয় না অর্থাৎ, $x \\to -\\infty$ হলে $y \\to 0$ হয়\n(ii) $x$ ধনাত্মক এবং $x$ যথেষ্ট বড়ো হলে $y$ এর মান যথেষ্ট বড়ো হয়। অর্থাৎ $x \\to \\infty$ হলে $y \\to \\infty$ ।\nএ থেকে বোঝা যায় $f(x) = 2^x$ ফাংশনের রেঞ্জ $(0, \\infty)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: লেখচিত্র অঙ্কন করো, যেখানে $-3 \\le x \\le 3$\nক) $y = 2^{-x}$\nখ) $y = 4^x$\nগ) $y = 2^{\\frac{x}{2}}$\nঘ) $y = \\left(\\frac{3}{2}\\right)^x$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "লগারিদমীয় ফাংশন",
+      "chunk_type": "theory",
+      "content_markdown": "লগারিদমীয় ফাংশন\n\nযেহেতু সূচক ফাংশন একটি এক-এক ও সার্বিক ফাংশন। সুতরাং এর বিপরীত ফাংশন আছে।\n\n$f(x) = y = a^x$ এর বিপরীত ফাংশন $f^{-1}(y) = x = \\log_a y$\n\nঅর্থাৎ $x$ হলো $y$ এর $a$ ভিত্তিক লগারিদম।\n\nসংজ্ঞা: লগারিদমিক ফাংশন $f(x) = \\log_a x$ দ্বারা সংজ্ঞায়িত, যেখানে $a > 0, a \\neq 1$ এবং $x > 0$\n\nযেমন, $f(x) = \\log_3 x, \\log_e x, \\log_{10} x$ ইত্যাদি লগারিদমীয় ফাংশন।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_exponential_graph",
+      "caption": null,
+      "box_2d": [
+        253,
+        584,
+        503,
+        874
+      ]
+    }
+  ]
+}

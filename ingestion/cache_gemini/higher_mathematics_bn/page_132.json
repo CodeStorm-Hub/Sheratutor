@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 132,
+  "pdf_page_no": 137,
+  "chapter_no": 6,
+  "chapter_title": "অসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এই লেখচিত্র রেখার ডান পাশে মূলবিন্দু অবস্থিত এবং মূলবিন্দুতে $x = 0$ যা $> -\\frac{5}{2}$।\n\nসুতরাং লেখচিত্র রেখার ডান পাশের সকল বিন্দুর স্থানাঙ্কই প্রদত্ত অসমতার সমাধান (লেখচিত্র রেখার বিন্দুগুলো বিবেচ্য নয়)। সমাধান সেটের লেখচিত্র উপরের চিত্রের চিহ্নিত অংশটুকু (যার মধ্যে লেখচিত্র রেখাটি অন্তর্ভুক্ত নয়)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২. $y \\le 2x$ অসমতার লেখচিত্র অঙ্কন করো।\n\nসমাধান: $y \\le 2x$ অসমতাটিকে $y - 2x \\le 0$ আকারে লেখা যায়।\n\nএখন $y - 2x = 0$ অর্থাৎ $y = 2x$ সমীকরণের লেখচিত্র অঙ্কন করি। সমীকরণটি থেকে পাই,",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "$$\\begin{array}{|c|c|c|c|}\n\\hline\nx & 0 & 2 & -2 \\\\\n\\hline\ny & 0 & 4 & -4 \\\\\n\\hline\n\\end{array}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্থানাঙ্কায়িত ছক কাগজের ক্ষুদ্রতম বর্গের দৈর্ঘ্যকে একক ধরে $(0, 0), (2, 4), (-2, -4)$ বিন্দুগুলোকে স্থাপন করে লেখচিত্র রেখাটি অঙ্কন করো হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$(1, 0)$ বিন্দুটি লেখচিত্র রেখার ডানের অংশে আছে। এই বিন্দুতে $y - 2x = 0 - 2 \\times 1 = -2 < 0$\n\nসুতরাং লেখচিত্র রেখাটি ও তার ডানের অংশ [অর্থাৎ যে অংশে $(1, 0)$ বিন্দুটি অবস্থিত] সমন্বয়ে গঠিত",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_132_1",
+      "caption": null,
+      "box_2d": [
+        91,
+        351,
+        233,
+        641
+      ]
+    },
+    {
+      "figure_id": "fig_132_2",
+      "caption": null,
+      "box_2d": [
+        587,
+        351,
+        860,
+        642
+      ]
+    }
+  ]
+}

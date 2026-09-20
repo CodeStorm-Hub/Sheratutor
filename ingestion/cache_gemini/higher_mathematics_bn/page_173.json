@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 173,
+  "pdf_page_no": 178,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: দেওয়া আছে, $7\\sin^2\\theta + 3\\cos^2\\theta = 4$\n\nবা, $7\\sin^2\\theta + 3(1 - \\sin^2\\theta) = 4$ [$\\because \\sin^2\\theta + \\cos^2\\theta = 1$]\n\nবা, $7\\sin^2\\theta + 3 - 3\\sin^2\\theta = 4 \\implies 4\\sin^2\\theta = 1 \\implies \\sin^2\\theta = \\frac{1}{4}$\n\nআবার, $\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\frac{1}{4} = \\frac{3}{4}$\n\n$\\therefore \\tan^2\\theta = \\frac{\\sin^2\\theta}{\\cos^2\\theta} = \\frac{\\frac{1}{4}}{\\frac{3}{4}} = \\frac{1}{3}$\n\n$\\therefore \\tan\\theta = \\pm\\frac{1}{\\sqrt{3}}$ (প্রমাণিত)।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৫। $15\\cos^2\\theta + 2\\sin\\theta = 7$ এবং $-\\frac{\\pi}{2} < \\theta < \\frac{\\pi}{2}$ হলে $\\cot\\theta$ এর মান নির্ণয় করো।\n\nসমাধান: দেওয়া আছে, $15\\cos^2\\theta + 2\\sin\\theta = 7$\n\nবা, $15(1 - \\sin^2\\theta) + 2\\sin\\theta = 7$ [$\\because \\sin^2\\theta + \\cos^2\\theta = 1$]\n\nবা, $15 - 15\\sin^2\\theta + 2\\sin\\theta = 7 \\implies 15\\sin^2\\theta - 2\\sin\\theta - 8 = 0$\n\nবা, $15\\sin^2\\theta - 12\\sin\\theta + 10\\sin\\theta - 8 = 0 \\implies (3\\sin\\theta + 2)(5\\sin\\theta - 4) = 0$\n\n$\\therefore \\sin\\theta = -\\frac{2}{3}$ বা, $\\sin\\theta = \\frac{4}{5}$\n\n$\\sin\\theta$ এর উভয় মান গ্রহণযোগ্য। কেননা $-\\frac{\\pi}{2} < \\theta < \\frac{\\pi}{2}$\n\n$\\sin\\theta = -\\frac{2}{3}$ হলে $\\cos\\theta = \\sqrt{1 - \\sin^2\\theta} = \\sqrt{1 - \\frac{4}{9}} = \\frac{\\sqrt{5}}{3}$\n\n$\\sin\\theta = \\frac{4}{5}$ হলে $\\cos\\theta = \\sqrt{1 - \\sin^2\\theta} = \\sqrt{1 - \\frac{16}{25}} = \\frac{3}{5}$\n\n$\\therefore \\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{\\frac{\\sqrt{5}}{3}}{-\\frac{2}{3}} = -\\frac{\\sqrt{5}}{2}$ [যখন $\\sin\\theta = -\\frac{2}{3}$]\n\nঅথবা $\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{\\frac{3}{5}}{\\frac{4}{5}} = \\frac{3}{4}$ [যখন $\\sin\\theta = \\frac{4}{5}$]\n\nনির্ণেয় মান $-\\frac{\\sqrt{5}}{2}$ বা, $\\frac{3}{4}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

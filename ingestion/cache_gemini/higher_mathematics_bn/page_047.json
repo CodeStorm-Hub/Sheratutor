@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 47,
+  "pdf_page_no": 52,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$a = -\frac{1}{2}$ হলে, $P\bigl(-\frac{1}{2}\bigr) = 18\biggl(-\frac{1}{8}\bigr) + 15\biggl(\frac{1}{4}\bigr) + \frac{1}{2} - 2 = 0 \\text{।}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সুতরাং $x + \frac{1}{2} = \frac{1}{2}(2x + 1)$ অর্থাৎ $(2x + 1)$, $P(x)$ এর একটি উৎপাদক \\text{।}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন, $18x^3 + 15x^2 - x - 2 = 18x^3 + 9x^2 + 6x^2 + 3x - 4x - 2$\n$$= 9x^2(2x + 1) + 3x(2x + 1) - 2(2x + 1) = (2x + 1)(9x^2 + 3x - 2) \\text{।}$$\nএবং $9x^2 + 3x - 2 = 9x^2 + 6x - 3x - 2 = 3x(3x + 2) - 1(3x + 2) = (3x + 2)(3x - 1) \\text{।}$\n$\\therefore P(x) = (2x + 1)(3x + 2)(3x - 1) \\text{।}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১৪.** $-3x^2 - 2xy + 8y^2 + 11x - 8y - 6$ কে উৎপাদকে বিশ্লেষণ কর \\text{।}",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**সমাধান:** কেবল $x$ সম্বলিত পদগুলো ও ধ্রুবক নিয়ে পাওয়া যায় $-3x^2 + 11x - 6 \\text{।}$\n$$-3x^2 + 11x - 6 ≡ (-3x + 2)(x - 3)$ অথবা $(3x - 2)(-x + 3) \\dots \\dots (1)$$\nআবার কেবল $y$ সম্বলিত পদগুলো ও ধ্রুবক নিয়ে পাওয়া যায় $8y^2 - 8y - 6 \\text{।}$\n$$8y^2 - 8y - 6 ≡ (4y + 2)(2y - 3)$ অথবা $(-4y - 2)(-2y + 3) \\dots \\dots (2)$$\nউপরের (1) ও (2) এর উৎপাদকগুলোকে সমন্বয় করে প্রদত্ত রাশির উৎপাদক পাওয়া যাবে, তবে ধ্রুবকগুলো $+2, -3$ অথবা $-2, +3$ উভয় সমীকরণে অবশ্যই একই হতে হবে ঠিক যেমনটি $x$ এবং $y$ এর সহগ।\n$\\therefore$ নির্ণেয় উৎপাদক $(-3x + 4y + 2)(x + 2y - 3)$ অথবা $(3x - 4y - 2)(-x - 2y + 3) \\text{।}$\nনির্ণীত উৎপাদক যে সঠিক সেটা যাচাই করার জন্য আমরা $xy$ এর সহগ $-3 \\cdot 2 + 4 \\cdot 1 = -2$ অথবা $3 \\cdot (-2) - 4 \n\\cdot (-1) = -2$ মিলিয়ে দেখতে পারি \\text{।}",
+      "activity_tag": "সমাধান"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**কাজ:**\n\nক) যদি $P(x) = 2x^4 - 6x^3 + 5x - 2$ হয়, তবে $P(x)$ কে নিম্নলিখিত বহুপদী দ্বারা ভাগ করে ভাগশেষ নির্ণয় কর \\text{।}\n(১) $x - 1$\n(২) $x - 2$\n(৩) $x + 2$\n(৪) $x + 3$\n(৫) $2x - 1$\n(৬) $2x + 1$\n\nখ) ভাগশেষ উপপাদ্যের সাহায্যে ভাগশেষ নির্ণয় কর \\text{।}\n(১) ভাজ্য: $4x^3 - 7x + 10$, ভাজক: $x - 2$\n(২) ভাজ্য: $5x^3 - 11x^2 - 3x + 4$, ভাজক: $x + 1$\n(৩) ভাজ্য: $2y^3 - y^2 - y - 4$, ভাজক: $y + 3$\n(৪) ভাজ্য: $2x^3 + x^2 - 18x + 10$, ভাজক: $2x + 1$",
+      "activity_tag": "কাজ"
+    }
+  ],
+  "figures": []
+}

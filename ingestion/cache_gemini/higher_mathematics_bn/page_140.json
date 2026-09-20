@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 140,
+  "pdf_page_no": 145,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) নিচের প্রতিটি ক্ষেত্রে একটি অসীম গুণোত্তর ধারার প্রথম পদ $a$ এবং সাধারণ অনুপাত $r$ দেওয়া আছে। ধারাটি লিখ এবং যদি এর অসীমস্তক সমষ্টি থাকে তাহাও নির্ণয় করো:\n(১) $a = 4, r = \\frac{1}{2}$\n(২) $a = 2, r = -\\frac{1}{3}$\n(৩) $a = \\frac{1}{3}, r = 3$\n(৪) $a = 5, r = \\frac{1}{10^2}$\n(৫) $a = 1, r = -\\frac{2}{7}$\n(৬) $a = 81, r = -\\frac{1}{3}$\n\nখ) তোমরা প্রত্যেকে একটি করে অসীম গুণোত্তর ধারা লেখো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. নিচের অসীম গুণোত্তর ধারার অসীমস্তক সমষ্টি (যদি থাকে) নির্ণয় করো।\n\nক) $\\frac{1}{3} + \\frac{1}{3^2} + \\frac{1}{3^3} + \\frac{1}{3^4} + \\dots$\n\nখ) $1 + 0.1 + 0.01 + 0.001 + \\dots$\n\nগ) $1 + \\frac{1}{\\sqrt{2}} + \\frac{1}{2} + \\frac{1}{2\\sqrt{2}} + \\frac{1}{4} + \\dots$\n\nসমাধান:\n\nক) এখানে, ধারার প্রথম পদ, $a = \\frac{1}{3}$ এবং সাধারণ অনুপাত $r = \\frac{1}{3^2} \\times \\frac{3}{1} = \\frac{1}{3} < 1$\n\n$$\\therefore \\text{ধারার অসীমস্তক সমষ্টি, } S_\\infty = \\frac{a}{1 - r} = \\frac{\\frac{1}{3}}{1 - \\frac{1}{3}} = \\frac{1}{3} \\times \\frac{3}{2} = \\frac{1}{2}$$\n\nখ) এখানে, ধারার প্রথম পদ $a = 1$ এবং সাধারণ অনুপাত $r = \\frac{0.1}{1} = \\frac{1}{10} < 1$\n\n$$\\therefore \\text{ধারার অসীমস্তক সমষ্টি, } S_\\infty = \\frac{a}{1 - r} = \\frac{1}{1 - \\frac{1}{10}} = \\frac{10}{9} = 1\\frac{1}{9}$$\n\nগ) এখানে, ধারার প্রথম পদ $a = 1$ এবং সাধারণ অনুপাত $r = \\frac{\\frac{1}{\\sqrt{2}}}{1} = \\frac{1}{\\sqrt{2}} < 1$\n\n$$\\therefore \\text{ধারার অসীমস্তক সমষ্টি, } S_\\infty = \\frac{a}{1 - r} = \\frac{1}{1 - \\frac{1}{\\sqrt{2}}} = \\frac{\\sqrt{2}}{\\sqrt{2} - 1} = 3.414 \\text{ (আসন্ন)}$$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "পৌর:পুনিক দশমিকের সাধারণ ভগ্নাংশে রূপান্তর\n\nউদাহরণ ৩. নিচের পৌনঃপুনিক দশমিক সংখ্যাসমূহকে সাধারণ ভগ্নাংশে রূপান্তর করো:\n\nক) $0.\\dot{5}$\nখ) $0.1\\dot{2}$\nগ) $1.2\\dot{3}1$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

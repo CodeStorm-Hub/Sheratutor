@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 109,
+  "pdf_page_no": 114,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$3 \\cdot 2y \\cdot y - 2y^2 = 4 \\text{ বা, } 4y^2 = 4 \\text{ বা, } y^2 = 1 \\text{ বা, } y = \\pm 1$$\n$$(4) \\text{ থেকে } x = 2 \\times (\\pm 1) = \\pm 2$$\n$$\\therefore \\text{ নির্ণেয় সমাধান } (x, y) = \\left(3, \\frac{1}{2}\\right), \\left(-3, -\\frac{1}{2}\\right), (2, 1), (-2, -1)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৩।** সমাধান করো: $\\frac{x + y}{x - y} + \\frac{x - y}{x + y} = \\frac{5}{2}, x^2 + y^2 = 90$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**সমাধান:** $\\frac{x + y}{x - y} + \\frac{x - y}{x + y} = \\frac{5}{2} \\dots (1)$\n$$x^2 + y^2 = 90 \\dots (2)$$\n(1) থেকে আমরা পাই,\n$$\\frac{(x + y)^2 + (x - y)^2}{(x + y)(x - y)} = \\frac{5}{2}$$\n$$\\text{বা, } \\frac{2(x^2 + y^2)}{x^2 - y^2} = \\frac{5}{2}$$\n$$\\text{বা, } \\frac{2 \\times 90}{x^2 - y^2} = \\frac{5}{2} \\text{ [(2) থেকে } x^2 + y^2 = 90 \\text{ বসিয়ে]}$$\n$$\\text{বা, } x^2 - y^2 = 72 \\dots (3)$$\n(2) + (3) নিয়ে, $2x^2 = 162 \\text{ বা, } x^2 = 81 \\text{ বা, } x = \\pm 9$\nএবং (2) - (3) নিয়ে, $2y^2 = 18 \\text{ বা, } y^2 = 9 \\text{ বা, } y = \\pm 3$\n$$\\therefore \\text{ নির্ণেয় সমাধান } (x, y) = (9, 3), (9, -3), (-9, 3), (-9, -3)$$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**কাজ:** উদাহরণ ২০ এবং ২১ এর সমাধান বিকল্প পদ্ধতিতে নির্ণয় করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৫.৪",
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান করো:\n১. $(2x + 3)(y - 1) = 14, (x - 3)(y - 2) = -1$\n২. $(x - 2)(y - 1) = 3, (x + 2)(2y - 5) = 15$\n৩. $x^2 = 7x + 6y, y^2 = 7y + 6x$\n৪. $x^2 = 3x + 2y, y^2 = 3y + 2x$\n৫. $x + \\frac{4}{y} = 1, y + \\frac{4}{x} = 25$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

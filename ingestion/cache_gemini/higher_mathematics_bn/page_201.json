@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 201,
+  "pdf_page_no": 206,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৯. সূচকীয় ও লগারিদমীয় ফাংশন ২০৩\n\nদ্রষ্টব্য: পূর্ণসংখ্যক সূচক ও মূলদ ভগ্নাংশ সূচকের সংজ্ঞা থেকে $a^r$ এর ব্যাখ্যা পাওয়া যায়, যেখানে $a > 0$ এবং $r \times Q$। উপরের আলোচনা থেকে দেখা যায়, $a > 0$ হলে, $r$ কে বিভিন্ন সমতুল ভগ্নাংশ আকারে প্রকাশ করা হলেও $a^r$ এর মানের কোনো তারতম্য হয় না।\n\nদ্রষ্টব্য: সূত্র ৬ এ বর্ণিত সূচক নিয়মগুলো সাধারণভাবে যেকোনো সূচকের জন্য সত্য হয়।\n\nসূত্র ১০. $a > 0, b > 0$ এবং $r, s \times Q$ হলে\n\nক) $a^r \times a^s = a^{r+s}$\n\nখ) $\\frac{a^r}{a^s} = a^{r-s}$\n\nগ) $(a^r)^s = a^{rs}$\n\nঘ) $(ab)^r = a^r b^r$\n\nঙ) $\\left(\\frac{a}{b}\\right)^r = \\frac{a^r}{b^r}$\n\n(ক) ও (ঘ) এর পুনঃপুন প্রয়োগের মাধ্যমে দেখা যায় যে,\n\nঅনুসিদ্ধান্ত ২. ক) $a > 0$ এবং $r_1, r_2, \\cdots, r_k \times Q$ হলে,\n\n$a^{r_1} \times a^{r_2} \times a^{r_3} \times \\cdots \times a^{r_k} = a^{r_1 + r_2 + r_3 + \\cdots + r_k}$.\n\nখ) $a_1 > 0, a_2 > 0, \\cdots, a_n > 0$ এবং $r \times Q$ হলে $(a_1 \times a_2 \times \\cdots \times a_n)^r = a_1^r \times a_2^r \times \\cdots \times a_n^r$.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. দেখাও যে, $a^{\\frac{m}{n}} \times a^{\\frac{p}{q}} = a^{\\frac{m}{n} + \\frac{p}{q}}$\n\nযেখানে, $a > 0; m, p \times Z; n, q \times N, n > 1, q > 1$।\n\nসমাধান: $\\frac{m}{n}$ ও $\\frac{p}{q}$ কে সমহরবিশিষ্ট ভগ্নাংশে পরিণত করে দেখা যায় যে,\n\n$a^{\\frac{m}{n}} \times a^{\\frac{p}{q}} = a^{\\frac{mq}{nq}} \times a^{\\frac{np}{nq}} = (a^{\\frac{1}{nq}})^{mq} (a^{\\frac{1}{nq}})^{np}$ [সংজ্ঞা ৬ ব্যবহার করে]\n\n$= (a^{\\frac{1}{nq}})^{mq+np}$ [সূত্র ৬]\n\n$= a^{\\frac{mq+np}{nq}}$\n\n$= a^{\\frac{mq}{nq} + \\frac{np}{nq}}$\n\n$= a^{\\frac{m}{n} + \\frac{p}{q}}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কয়েকটি প্রয়োজনীয় তথ্য:\n\n$(i)$ যদি $a^x = 1$ হয়, যেখানে $a > 0$ এবং $a \\neq 1$, তাহলে $x = 0$\n\n$(ii)$ যদি $a^x = 1$ হয়, যেখানে $a > 0$ এবং $x \\neq 0$, তাহলে $a = 1$\n\n$(iii)$ যদি $a^x = a^y$ হয়, যেখানে $a > 0$ এবং $a \\neq 1$, তাহলে $x = y$\n\n$(iv)$ যদি $a^x = b^x$ হয়, যেখানে $\\frac{a}{b} > 0$ এবং $x \\neq 0$, তাহলে $a = b$\n\nফর্মা-২৬, উচ্চতর গণিত, ৯ম-১০ম শ্রেণি",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

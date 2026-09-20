@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 104,
+  "pdf_page_no": 109,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বা, $3^{mx-2} = a^{mx-2}$\n\nবা, $\\left(\\frac{a}{3}\\right)^{mx-2} = 1 = \\left(\\frac{a}{3}\\right)^0$\n\nবা, $mx - 2 = 0$\n\nবা, $mx = 2$\n\nবা, $x = \\frac{2}{m}$\n\n$\\therefore$ নির্ণেয় সমাধান $x = \\frac{2}{m}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. সমাধান করো: $2^{3x-5} \\cdot a^{x-2} = 2^{x-3} \\cdot 2a^{1-x} \\left(a > 0 \\text{ এবং } a \\neq \\frac{1}{2}\\right)$\n\nসমাধান: $2^{3x-5} \\cdot a^{x-2} = 2^{x-3} \\cdot 2a^{1-x}$\n\nবা, $\\frac{a^{x-2}}{a^{1-x}} = \\frac{2^{x-3} \\cdot 2^1}{2^{3x-5}}$ বা, $a^{x-2-1+x} = 2^{x-3+1-3x+5}$\n\nবা, $a^{2x-3} = 2^{-2x+3}$ বা, $a^{2x-3} = 2^{-(2x-3)}$\n\nবা, $a^{2x-3} = \\frac{1}{2^{2x-3}}$ বা, $a^{2x-3} \\cdot 2^{2x-3} = 1$\n\nবা, $(2a)^{2x-3} = 1 = (2a)^0$\n\nবা, $2x - 3 = 0$ বা, $2x = 3$ বা, $x = \\frac{3}{2}$\n\n$\\therefore$ নির্ণেয় সমাধান $x = \\frac{3}{2}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৫. সমাধান করো: $a^{-x}(a^x + b^{-x}) = \\frac{a^2b^2 + 1}{a^2b^2} \\left(a > 0, b > 0, ab \\neq 1\\right)$\n\nসমাধান: $a^{-x}(a^x + b^{-x}) = 1 + \\frac{1}{a^2b^2}$\n\nবা, $a^{-x} \\cdot a^x + a^{-x} \\cdot b^{-x} = 1 + \\frac{1}{a^2b^2}$\n\nবা, $1 + (ab)^{-x} = 1 + (ab)^{-2}$\n\nবা, $(ab)^{-x} = (ab)^{-2}$\n\nবা, $-x = -2$\n\nবা, $x = 2$\n\n$\\therefore$ নির্ণেয় সমাধান $x = 2$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৬. সমাধান করো: $3^{x+5} = 3^{x+3} + \\frac{8}{3}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

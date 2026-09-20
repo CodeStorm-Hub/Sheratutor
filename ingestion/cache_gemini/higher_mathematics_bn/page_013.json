@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 13,
+  "pdf_page_no": 18,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গ) $(a, b] = \\{x \\in R : a < x \\le b\\}$ এবং $[a, b) = \\{x \\in R : a \\le x < b\\}$ কে যথাক্রমে খোলা-বন্ধ ও বন্ধ-খোলা ব্যবধি বলে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সান্ত ও অনন্ত সেট (Finite and Infinite Sets)",
+      "chunk_type": "theory",
+      "content_markdown": "$A = \\{15, 16, 17, 18, 19, 20, 21, 22\\}$ সেটটির সদস্যগুলো গণনা করে দেখা যায় যে, $A$ সেটের সদস্য সংখ্যা $8\\mid$ এই গণনার কাজ $A$ সেটের সঙ্গে $B = \\{1, 2, 3, 4, 5, 6, 7, 8\\}$ সেটের একটি এক-এক মিল স্থাপন করে সম্পন্ন করা হয়। যেমন, নিচের চিত্রে দেখানো হয়েছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সংজ্ঞা ৩ (সান্ত ও অনন্ত সেট):",
+      "chunk_type": "theory",
+      "content_markdown": "গণনা করে যে সকল সেটের সদস্য সংখ্যা নির্ধারণ করা যায়, এদের সান্ত সেট বলা হয়। কোনো সেট $A$ সান্ত সেট না হলে, একে অনন্ত সেট বলা হয়।\n\nক) ফাঁকা সেট $\\varnothing$ সান্ত সেট, এর সদস্য সংখ্যা $0\\mid$\n\nখ) যদি কোনো সেট $A$ এবং $J_m = \\{1, 2, 3, \\cdots, m\\}$ সমতুল হয়, যেখানে $m \\in N$, তবে $A$ একটি সান্ত সেট এবং $A$ এর সদস্য সংখ্যা $m\\mid$\n\nগ) $A$ কোনো সান্ত সেট হলে, $A$ এর সদস্য সংখ্যাকে $n(A)$ দ্বারা সূচিত করা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "দ্রষ্টব্য:",
+      "chunk_type": "theory",
+      "content_markdown": "ক) $J_1 = \\{1\\}$, $J_2 = \\{1, 2\\}$, $J_3 = \\{1, 2, 3\\}$ ইত্যাদি প্রত্যেককেই $N$ এর সান্ত উপসেট বলা হয় এবং $n(J_1) = 1$, $n(J_2) = 2$, $n(J_3) = 3$ ইত্যাদি। বাস্তব পক্ষে, $J_m \\sim J_m$ এবং $n(J_m) = m\\mid$\n\nখ) শুধুমাত্র সান্ত সেটেই সদস্য সংখ্যা নির্দিষ্ট করা যায়। $n(A)$ লিখলে বুঝতে হবে $A$ সান্ত সেট।\n\nগ) $A$ ও $B$ সমতুল সেট এবং এদের মধ্যে একটি সেট সান্ত হলে অপর সেটটিও সান্ত হবে এবং $n(A) = n(B)$ হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৬",
+      "section_title": "প্রতিজ্ঞা ৬",
+      "chunk_type": "theory",
+      "content_markdown": "যদি $A$ সান্ত সেট হয় এবং $B$, $A$ এর প্রকৃত উপসেট হয়, তবে $B$ সান্ত সেট এবং $n(B) < n(A)$ হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৭",
+      "section_title": "প্রতিজ্ঞা ৭",
+      "chunk_type": "theory",
+      "content_markdown": "$A$ অনন্ত সেট হবে যদি ও কেবল যদি $A$ ও $A$ এর একটি প্রকৃত উপসেট সমতুল হয়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1_1",
+      "caption": null,
+      "box_2d": [
+        267,
+        309,
+        483,
+        689
+      ]
+    }
+  ]
+}

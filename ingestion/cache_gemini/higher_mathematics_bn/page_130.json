@@ -1,0 +1,61 @@
+{
+  "printed_page_no": 130,
+  "pdf_page_no": 135,
+  "chapter_no": 6,
+  "chapter_title": "অসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$x + y - 3 > 0$ অসমতার লেখচিত্র অঙ্কনের জন্য উক্ত অসমতায় মূলবিন্দু $(0, 0)$ বসালে আমরা পাই $-3 > 0$ যা সত্য নয়। কাজেই, অসমতার ছায়াচিত্রম হবে $x + y - 3 = 0$ রেখার যে পাশে মূলবিন্দু রয়েছে তার বিপরীত পাশে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$x + y - 3 < 0$ অসমতার লেখচিত্র অঙ্কনের জন্য উক্ত অসমতায় মূলবিন্দু $(0, 0)$ বসালে পাওয়া যায় $-3 < 0$ যা অসমতাকে সিদ্ধ করে বা মান সত্য। কাজেই, এ অবস্থায় অসমতার ছায়াচিত্রম হবে রেখাটির যে পাশে মূলবিন্দু রয়েছে সে পাশে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১০.** $2x - 3y + 6 \to 0$ অসমতার সমাধান সেটের বর্ণনা দাও ও চিত্রিত করো।\n\n**সমাধান:** আমরা প্রথমে $2x - 3y + 6 = 0$ সমীকরণের লেখচিত্র অঙ্কন করি।\nসমীকরণটি থেকে পাওয়া যায়:",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_6_1",
+      "caption": null,
+      "box_2d": [
+        93,
+        385,
+        267,
+        614
+      ]
+    },
+    {
+      "figure_id": "fig_6_2",
+      "caption": null,
+      "box_2d": [
+        363,
+        370,
+        557,
+        630
+      ]
+    },
+    {
+      "figure_id": "fig_6_3",
+      "caption": null,
+      "box_2d": [
+        647,
+        370,
+        842,
+        631
+      ]
+    }
+  ]
+}

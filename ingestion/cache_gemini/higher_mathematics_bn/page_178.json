@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 178,
+  "pdf_page_no": 183,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দিকে ঘুরে $\\angle YOA' = -\\theta$ কোণ উৎপন্ন করে (নিচের চিত্র)।\n\nতাহলে, $\\angle XOA' = \\frac{\\pi}{2} + (-\\theta) = \\frac{\\pi}{2} - \\theta$\n\n$OP$ এবং $OQ$ সমান দূরত্ব ধরে $P$ ও $Q$ বিন্দুদ্বয় থেকে $OX$ এর উপর $PM$ ও $QN$ লম্বদ্বয় আঁকি। এখন $\\triangle POM$ ও $\\triangle QON$ সমকোণী ত্রিভুজদ্বয়ের $\\angle OMP = \\angle ONQ$, $\\angle POM = \\angle OQN$ এবং $OP = OQ$.\n\n$\\therefore$ ত্রিভুজদ্বয় সর্বসম।\n\n$\\therefore ON = PM$ এবং $QN = OM$\n\nএখন $P$ বিন্দুর স্থানাঙ্ক $(x, y)$ হলে\n$OM = x$, $PM = y$\n\n$\\therefore ON = y$, $QN = x$\n\n$\\therefore Q$ বিন্দুর স্থানাঙ্ক $(y, x)$\n\nতাহলে $\\triangle NOQ$ এর ক্ষেত্রে আমরা পাই,\n\n$$\\sin \\left(\\frac{\\pi}{2} - \\theta\\right) = \\frac{x}{r} = \\cos\\theta, \\cos \\left(\\frac{\\pi}{2} - \\theta\\right) = \\frac{y}{r} = \\sin\\theta$$\n\n$$\\tan \\left(\\frac{\\pi}{2} - \\theta\\right) = \\frac{x}{y} = \\cot\\theta$$\n\nএকইভাবে, $\\operatorname{cosec} \\left(\\frac{\\pi}{2} - \\theta\\right) = \\sec\\theta$, $\\sec \\left(\\frac{\\pi}{2} - \\theta\\right) = \\operatorname{cosec}\\theta$\n\n$\\cot \\left(\\frac{\\pi}{2} - \\theta\\right) = \\tan\\theta$\n\n**মন্তব্য:** যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১৮.** $\\sin \\left(\\frac{\\pi}{3}\\right) = \\sin \\left(\\frac{\\pi}{2} - \\frac{\\pi}{6}\right) = \\cos \\frac{\\pi}{6}$\n\n$$\\tan \\left(\\frac{\\pi}{6}\\right) = \\tan \\left(\\frac{\\pi}{2} - \\frac{\\pi}{3}\right) = \\cot \\frac{\\pi}{3}, \\sec \\left(\\frac{\\pi}{4}\\right) = \\sec \\left(\\frac{\\pi}{2} - \\frac{\\pi}{4}\right) = \\operatorname{cosec} \\frac{\\pi}{4}$$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**লক্ষণীয়:** $\\theta$ এবং $\\left(\\frac{\\pi}{2} - \\theta\\right)$ কোণ দুটি পরস্পর পূরক (Complement Angle)। এদের একটির sine অপরটির cosine, একটির tangent অপরটির cotangent এবং একটির secant অপরটির cosecant এর সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "$\\left(\\frac{\\pi}{2} + \\theta\\right)$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ $\\left(0 < \\theta < \\frac{\\pi}{2}\\right)$:",
+      "chunk_type": "theory",
+      "content_markdown": "ধরি, ঘূর্ণায়মান রশ্মি $OA$ এর আদি অবস্থান $OX$ থেকে ঘড়ির কাঁটার বিপরীত দিকে ঘুরে প্রথম চতুর্ভাগে $\\angle XOA = \\theta$ এবং একই দিকে আরও ঘুরে $\\angle AOA' = \\frac{\\pi}{2}$ কোণ উৎপন্ন করে (নিচের চিত্র)।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1",
+      "caption": null,
+      "box_2d": [
+        130,
+        470,
+        375,
+        880
+      ]
+    }
+  ]
+}

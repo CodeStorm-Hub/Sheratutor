@@ -74,7 +74,7 @@ export const evaluateRubricFlow = ai.defineFlow(
       `- If student used wrong formula or missed key formula: mistake_category = "FORMULA_RECALL"\n` +
       `- If student missed units or made unit conversion error (e.g. cm to m, km/h to m/s): mistake_category = "UNIT_CONVERSION"\n` +
       `- If formula was right but arithmetic/calculation was wrong: mistake_category = "CALCULATION_ERROR"\n` +
-      `- If student misunderstood core physics principle: mistake_category = "CONCEPTUAL_MISCONCEPTION"\n\n` +
+      `- If student misunderstood core mathematical/scientific principle, theorem, or concept: mistake_category = "CONCEPTUAL_MISCONCEPTION"\n\n` +
       `Verify all mathematical calculations step-by-step for exact numerical equality and set arithmetic_verified accordingly.\n\n` +
       `QUESTION (max ${maxMarks} marks): ${questionText}\n\n` +
       `OFFICIAL RUBRIC: ${JSON.stringify(rubricCriteria)}\n\n` +

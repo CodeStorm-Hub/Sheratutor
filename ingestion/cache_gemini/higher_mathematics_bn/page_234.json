@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 234,
+  "pdf_page_no": 239,
+  "chapter_no": 10,
+  "chapter_title": "দ্বিপদী বিস্তৃতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$ (1 + y)^n = 1 + ny + \\frac{n(n-1)}{1 \\cdot 2}y^2 + \\frac{n(n-1)(n-2)}{1 \\cdot 2 \\cdot 3}y^3 + \\cdots + y^n $$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবং একইভাবে,\n$$(x + y)^n = x^n + {^n}C_1 x^{n-1}y + {^n}C_2 x^{n-2}y^2 + {^n}C_3 x^{n-3}y^3 + \\cdots + {^n}C_r x^{n-r}y^r + \\cdots + {^n}C_n y^n$$\nবা $$(x + y)^n = x^n + nx^{n-1}y + \\frac{n(n-1)}{2!}x^{n-2}y^2 + \\frac{n(n-1)(n-2)}{3!}x^{n-3}y^3 + \\cdots + y^n$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$ (x + y)^n = x^n + nx^{n-1}y + \\frac{n(n-1)}{1 \\cdot 2}x^{n-2}y^2 + \\frac{n(n-1)(n-2)}{1 \\cdot 2 \\cdot 3}x^{n-3}y^3 + \\cdots + y^n $$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষনীয়: ধনাত্মক পূর্ণসংখ্যা $n$ এর জন্য\n\nদ্বিপদী বিস্তৃতি $(1 + y)^n$ এর সাধারণ পদ বা $(r + 1)$ তম পদ $T_{r+1} = \\binom{n}{r}y^r$ বা, ${^n}C_r y^r$\n\nএখানে, $\\binom{n}{r}$ বা ${^n}C_r$ দ্বিপদী সহগ।\n\n$$(x + y)^n = x^n + {^n}C_1 x^{n-1}y + {^n}C_2 x^{n-2}y^2 + {^n}C_3 x^{n-3}y^3 + \\cdots + {^n}C_n y^n$$\nবা $$(x + y)^n = x^n + nx^{n-1}y + \\frac{n(n-1)}{2!}x^{n-2}y^2 + \\frac{n(n-1)(n-2)}{3!}x^{n-3}y^3 + \\cdots + y^n$$\n\nসাধারণ পদ বা $(r + 1)$ তম পদ $T_{r+1} = \\binom{n}{r}x^{n-r}y^r$ বা ${^n}C_r x^{n-r}y^r$ যেখানে $\\binom{n}{r}$ বা ${^n}C_r$ দ্বিপদী সহগ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. $\\left(x - \\frac{1}{x^2}\\right)^5$ কে বিস্তৃত কর।\n\nসমাধান: দ্বিপদী উপপাদ্য ব্যবহার করে\n$$\\left(x - \\frac{1}{x^2}\\right)^5 = x^5 + {^5}C_1 x^{5-1}\\left(-\\frac{1}{x^2}\\right) + {^5}C_2 x^{5-2}\\left(-\\frac{1}{x^2}\\right)^2 + {^5}C_3 x^{5-3}\\left(-\\frac{1}{x^2}\\right)^3$$\n$$ + {^5}C_4 x^{5-4}\\left(-\\frac{1}{x^2}\\right)^4 + \\left(-\\frac{1}{x^2}\\right)^5$$\n$$= x^5 - 5x^4 \\cdot \\frac{1}{x^2} + \\frac{5 \\cdot 4}{1 \\cdot 2}x^3 \\frac{1}{x^4} - \\frac{5 \\cdot 4 \\cdot 3}{1 \\cdot 2 \\cdot 3}x^2 \\frac{1}{x^6} + \\frac{5 \\cdot 4 \\cdot 3 \\cdot 2}{1 \\cdot 2 \\cdot 3 \\cdot 4}x \\frac{1}{x^8} - \\frac{1}{x^{10}}$$\n$$= x^5 - 5x^2 + \\frac{10}{x} - \\frac{10}{x^4} + \\frac{5}{x^7} - \\frac{1}{x^{10}}$$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

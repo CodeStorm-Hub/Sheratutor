@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 231,
+  "pdf_page_no": 236,
+  "chapter_no": 10,
+  "chapter_title": "দ্বিপদী বিস্তৃতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$(x + y)^n = x^n + \binom{n}{1} x^{n-1}y + \binom{n}{2} x^{n-2}y^2 + \binom{n}{3} x^{n-3}y^3 + \bullet\bullet\bullet + y^n$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এটিই হচ্ছে দ্বিপদী উপপাদ্যের সাধারণ আকার। লক্ষণীয় এই বিস্তৃতি $(1 + y)^n$ এর অনুরূপ। এখানে $x$ এর ঘাত $n$ থেকে $0$ পর্যন্ত যোগ করা হয়েছে। আরো লক্ষণীয়, প্রতি পদে $x$ ও $y$ এর ঘাতের যোগফল দ্বিপদীর ঘাতের সমান। প্রথম পদে $x$ এর ঘাত $n$ থেকে শুরু হয়ে সর্বশেষ পদে শূন্য। ঠিক বিপরীতভাবে $y$ এর ঘাত প্রথম পদে শূন্য থেকে শুরু হয়ে শেষ পদে $n$ হয়েছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫. $(x + y)^5$ কে বিস্তৃত কর এবং উহা হইতে $(3 + 2x)^5$ এর বিস্তৃতি নির্ণয় কর।\n\nসমাধান: $(x + y)^5 = x^5 + \binom{5}{1} x^4y + \binom{5}{2} x^3y^2 + \binom{5}{3} x^2y^3 + \binom{5}{4} xy^4 + y^5$\n\n$= x^5 + 5x^4y + \frac{5 \bullet 4}{1 \bullet 2} x^3y^2 + \frac{5 \bullet 4 \bullet 3}{1 \bullet 2 \bullet 3} x^2y^3 + \frac{5 \bullet 4 \bullet 3 \bullet 2}{1 \bullet 2 \bullet 3 \bullet 4} xy^4 + y^5$\n\n$= x^5 + 5x^4y + 10x^3y^2 + 10x^2y^3 + 5xy^4 + y^5$\n\n$\\therefore$ নির্ণেয় বিস্তৃতি $(x + y)^5 = x^5 + 5x^4y + 10x^3y^2 + 10x^2y^3 + 5xy^4 + y^5$\n\nএখন $x = 3$ এবং $y = 2x$ বসাই\n\n$(3 + 2x)^5 = 3^5 + 5 \bullet 3^4(2x) + 10 \bullet 3^3(2x)^2 + 10 \bullet 3^2(2x)^3 + 5 \bullet 3(2x)^4 + (2x)^5$\n\n$= 243 + 810x + 1080x^2 + 720x^3 + 240x^4 + 32x^5$\n\n$\\therefore (3 + 2x)^5 = 243 + 810x + 1080x^2 + 720x^3 + 240x^4 + 32x^5$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৬. $\\left(x + \\frac{1}{x^2}\\right)^6$ কে $x$ এর ঘাতের অধঃক্রম অনুসারে চতুর্থ পদ পর্যন্ত বিস্তৃত কর এবং $x$ মুক্ত পদটি শনাক্ত কর।\n\nসমাধান: দ্বিপদী উপপাদ্য অনুসারে পাই,\n\n$\\left(x + \\frac{1}{x^2}\\right)^6 = x^6 + \binom{6}{1} x^5 \bgroup\begin{pmatrix}\frac{1}{x^2}\\\relax\bgroup\right) + \binom{6}{2} x^4 \bgroup\begin{pmatrix}\frac{1}{x^2}\\\relax\bgroup\right)^2 + \binom{6}{3} x^3 \bgroup\begin{pmatrix}\frac{1}{x^2}\\\relax\bgroup\right)^3 + \bullet\bullet\bullet$\n\n$= x^6 + 6x^3 + \frac{6 \bullet 5}{1 \bullet 2} x^4 \frac{1}{x^4} + \frac{6 \bullet 5 \bullet 4}{1 \bullet 2 \bullet 3} x^3 \frac{1}{x^6} + \bullet\bullet\bullet$\n\n$= x^6 + 6x^3 + 15 + 20 \frac{1}{x^3} + \bullet\bullet\bullet$\n\n$\\therefore$ নির্ণেয় বিস্তৃতি $x^6 + 6x^3 + 15 + 20 \frac{1}{x^3} + \bullet\bullet\bullet$ এবং $x$ মুক্ত পদ $15$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৭. $x$ এর ঘাতের ঊর্ধ্বক্রম অনুসারে $\\left(2 - \\frac{x}{2}\\right)^7$ এর বিস্তৃতির প্রথম চারটি পদ নির্ণয় কর। উক্ত বিস্তৃতির সাহায্যে $(1.995)^7$ এর মান চার দশমিক স্থান পর্যন্ত নির্ণয় কর।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,78 @@
+{
+  "printed_page_no": 84,
+  "pdf_page_no": 89,
+  "chapter_no": 4,
+  "chapter_title": "জ্যামিতিক অঙ্কন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "রেখা দুটি $BD$ কে যথাক্রমে $A$ ও $A'$ বিন্দুতে ছেদ করে। তাহলে $\triangle ABC$ ও $\triangle A'BC'$ ত্রিভুজদ্বয় উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৮. $C$ বিন্দুতে $\triangle BDF$ এর সমান $\triangle DCA$ ও $C'$ বিন্দুতে $\triangle BDF$ এর সমান $\triangle DC'A'$ অঙ্কন করি। $CA$ ও $C'A'$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: যেহেতু $\triangle ACD = \triangle ADC = \triangle A'C'D = \frac{1}{2}\triangle x$ (অঙ্কনানুসারে)\n$$\therefore \triangle BAC = \triangle ADC + \triangle ACD = \frac{1}{2}\triangle x + \frac{1}{2}\triangle x = \triangle x$$\n$$\therefore \triangle BA'C' = \triangle A'DC' + \triangle A'C'D = \frac{1}{2}\triangle x + \frac{1}{2}\triangle x = \triangle x$$\nএবং $AC = AD$, $A'C' = A'D$\n\n$ABC$ ত্রিভুজে,\n$$\triangle BAC = \triangle x, BC = a \text{ এবং } CA + AB = DA + AB = DB = s$$\n$$\therefore \triangle ABC\text{-ই উদ্দিষ্ট ত্রিভুজ।}$$\n\nআবার $A'BC'$ ত্রিভুজে,\n$$\triangle BA'C' = \triangle x, BC' = a \text{ এবং } C'A' + A'B = DA' + A'B = DB = s$$\n$$\therefore \triangle A'BC'\text{-ই অপর উদ্দিষ্ট ত্রিভুজ।}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৩",
+      "section_title": "ত্রিভুজের ভূমি, শিরঃকোণ ও অপর দুই বাহুর অন্তর দেওয়া আছে। ত্রিভুজটি অঙ্কন কর।",
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ৩. ত্রিভুজের ভূমি, শিরঃকোণ ও অপর দুই বাহুর অন্তর দেওয়া আছে। ত্রিভুজটি অঙ্কন কর।\n\n মনে করি, একটি ত্রিভুজের ভূমি $a$, অপর দুই বাহুর অন্তর $d$ এবং শিরঃকোণ $x$ দেওয়া আছে। ত্রিভুজটি অঙ্কন করতে হবে।\n\nঅঙ্কন:\n\nধাপ ১. যেকোনো রেখা $BD$ থেকে $BP = d$ ধাপ ২. $P$ বিন্দুতে $\triangle x$ এর সম্পূরক কোণের অংশ কেটে নিই। অর্ধেকের সমান $\triangle DPM$ অঙ্কন করি।",
+      "activity_tag": "সম্পাদ্য"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_4_1",
+      "caption": null,
+      "box_2d": [
+        98,
+        178,
+        237,
+        467
+      ]
+    },
+    {
+      "figure_id": "fig_4_2",
+      "caption": null,
+      "box_2d": [
+        108,
+        591,
+        317,
+        873
+      ]
+    },
+    {
+      "figure_id": "fig_4_3",
+      "caption": null,
+      "box_2d": [
+        718,
+        303,
+        759,
+        703
+      ]
+    },
+    {
+      "figure_id": "fig_4_4",
+      "caption": null,
+      "box_2d": [
+        811,
+        574,
+        866,
+        885
+      ]
+    }
+  ]
+}

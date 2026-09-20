@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 192,
+  "pdf_page_no": 197,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "নিচের চিত্রের আলোকে ৩ ও ৪ নং প্রশ্নের উত্তর দাও:",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৩",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $\\sin B + \\cos C = $ কত?\n\nক) $\\frac{2b}{a}$\n\nখ) $\\frac{2a}{b}$\n\nগ) $\\frac{a^2 + b^2}{ab}$\n\nঘ) $\\frac{ab}{a^2 + b^2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৪",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. $\\tan B$ এর মান কোনটি?\n\nক) $\\frac{a}{a^2 - b^2}$\n\nখ) $\\frac{b}{a^2 - b^2}$\n\nগ) $\\frac{a}{\\sqrt{a^2 - b^2}}$\n\nঘ) $\\frac{b}{\\sqrt{a^2 - b^2}}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "সৃজনশীল প্রশ্ন",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৫. $a \\cos\\theta - b \\sin\\theta = p$\n\n(ক) $A = \\frac{\\pi}{3}$ হলে দেখাও যে, $\\tan 2A = \\frac{2 \\tan A}{1 - \\tan^2 A}$\n\n(খ) প্রমাণ কর যে, $a \\sin\\theta + b \\cos\\theta = \\pm\\sqrt{a^2 + b^2 - p^2}$\n\n(গ) $a = \\sqrt{3}, b = 1$ এবং $p = 2$ হলে, উদ্দীপকের সমীকরণটি সমাধান কর।\nযেখানে, $0 < \\theta < 2\\pi$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৬. $p = \\tan\\theta, q = \\cot\\theta$\n\n(ক) $9$ টা $15$ মিনিটের সময় ঘণ্টা ও মিনিটের কাঁটার মধ্যবর্তী কোণের পরিমাণ নির্ণয় কর।\n\n(খ) $p + q = 2$ হলে দেখাও যে, $p^n + q^n = 2$\n\n(গ) $q = \\frac{3}{4}$ এবং $\\pi < \\theta < \\frac{3\\pi}{2}$ হলে, $\\frac{\\cot(-\\theta) + \\csc\\theta}{\\cos\\theta + \\sin(-\\theta)}$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. (ক) $0.9795$ রেডিয়ানকে ষাটমূলক পদ্ধতিতে প্রকাশ কর।\n\n(খ) $\\sec\\left(-\\frac{21\\pi}{2}\\right)$ এর মান নির্ণয় কর।\n\n(গ) $\\tan\\frac{\\pi}{12} \\tan\\frac{5\\pi}{12} \\tan\\frac{7\\pi}{12} \\tan\\frac{11\\pi}{12}$ এর মান নির্ণয় কর।\n\n(ঘ) $\\sin\\alpha = -\\frac{1}{2}, \\frac{\\pi}{2} < \\alpha < \\frac{3\\pi}{2}$ হলে, $\\alpha$ এর মান নির্ণয় কর।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_trig_triangle",
+      "caption": "সমকোণী ত্রিভুজ",
+      "box_2d": [
+        122,
+        439,
+        268,
+        602
+      ]
+    }
+  ]
+}

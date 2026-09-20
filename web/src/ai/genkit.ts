@@ -47,17 +47,18 @@ export const ai = genkit({
 
 /**
  * Standardized Model IDs:
- * - Primary reasoning, vision & paper: gemini-3.5-flash (multimodal, deep Bengali & LaTeX reasoning, higher quota)
- * - Fast & Fallback: gemini-3.5-flash-lite
+ * - Cost-efficient deep reasoning & multimodal vision: gemini-3.5-flash (94% cheaper than Pro, deep mathematical reasoning & handwriting verification)
+ * - Ultra-low token consumption for questions, chat & fast generation: gemini-3.5-flash-lite
  */
 export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "googleai/gemini-3.5-flash",
   reasoning: process.env.GENKIT_REASONING_MODEL ?? "googleai/gemini-3.5-flash",
   fast: process.env.GENKIT_FAST_MODEL ?? "googleai/gemini-3.5-flash-lite",
-  paper: process.env.GENKIT_PAPER_MODEL ?? "googleai/gemini-3.5-flash",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "googleai/gemini-3.5-flash-lite",
+  chat: process.env.GENKIT_CHAT_MODEL ?? "googleai/gemini-3.5-flash-lite",
 } as const;
 
-// Fallback reasoning model
+// Fallback reasoning model (cost-efficient and fast)
 export const FALLBACK_REASONING_MODEL =
   process.env.GENKIT_FALLBACK_REASONING_MODEL ?? "googleai/gemini-3.5-flash-lite";
 
@@ -217,7 +218,7 @@ export async function generateWithGeminiFallback(
   // 4. Direct REST failover across all keys using active Gemini models
   const fallbackModelName = targetModel.replace(/^googleai\//, "");
   for (const key of GEMINI_API_KEYS) {
-    for (const modelToTry of [fallbackModelName, "gemini-3.5-flash", "gemini-3.5-flash-lite", "gemini-2.5-flash"]) {
+    for (const modelToTry of [fallbackModelName, "gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-2.5-flash"]) {
       try {
         const res = await fetch(
           `https://generativelanguage.googleapis.com/v1beta/models/${modelToTry}:generateContent?key=${key}`,

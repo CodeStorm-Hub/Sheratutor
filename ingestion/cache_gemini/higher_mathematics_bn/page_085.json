@@ -1,0 +1,85 @@
+{
+  "printed_page_no": 85,
+  "pdf_page_no": 90,
+  "chapter_no": 4,
+  "chapter_title": "জ্যামিতিক অঙ্কন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৪. আবার $C$ বিন্দুতে $\\angle DPC = \\angle PCA$ কোণ অঙ্কন করি যেন $CA$ রেখাংশ $BD$ কে $A$ বিন্দুতে ছেদ করে। তাহলে $ABC$-ই উদ্দিষ্ট ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৩. $B$ কে কেন্দ্র করে $a$ এর সমান ব্যাসার্ধ নিয়ে অঙ্কিত বৃত্তচাপ $PM$ সরলরেখাকে $C$ বিন্দুতে ছেদ করে। $B$ ও $C$ যোগ করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $\\angle APC = \\angle ACP$\n\n$\\therefore AP = AC$\n\n$\\therefore AB - AC = AB - AP = d$\n\nআবার $\\angle APC = \\angle ACP = \\angle x$ এর সম্পূরক কোণের অর্দ্ধক।\n\n$\\therefore \\angle APC + \\angle ACP = \\angle x$ এর সম্পূরক = বহিঃস্থ $\\angle CAD = \\angle CAB$ এর সম্পূরক।\n\n$\\therefore \\angle A = \\angle CAB = \\angle x$\n\n$\\therefore ABC$-ই নির্ণেয় ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৮",
+      "section_title": "ত্রিভুজের উচ্চতা, ভূমির উপর মধ্যমা এবং ভূমিসংলগ্ন একটি কোণ দেওয়া আছে। ত্রিভুজটি অঙ্কন করতে হবে।",
+      "chunk_type": "theory",
+      "content_markdown": "সম্পাদ্য ৮. ত্রিভুজের উচ্চতা, ভূমির উপর মধ্যমা এবং ভূমিসংলগ্ন একটি কোণ দেওয়া আছে। ত্রিভুজটি অঙ্কন করতে হবে।",
+      "activity_tag": "সম্পাদ্য"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, ত্রিভুজের উচ্চতা $h$, ভূমির ওপর মধ্যমা $d$ এবং ভূমি সংলগ্ন একটি $\\angle x$ দেওয়া আছে। ত্রিভুজটি অঙ্কন করতে হবে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_85_1",
+      "caption": null,
+      "box_2d": [
+        98,
+        178,
+        240,
+        484
+      ]
+    },
+    {
+      "figure_id": "fig_85_2",
+      "caption": null,
+      "box_2d": [
+        199,
+        581,
+        313,
+        887
+      ]
+    },
+    {
+      "figure_id": "fig_85_3",
+      "caption": null,
+      "box_2d": [
+        337,
+        178,
+        480,
+        484
+      ]
+    },
+    {
+      "figure_id": "fig_85_4",
+      "caption": null,
+      "box_2d": [
+        830,
+        263,
+        882,
+        745
+      ]
+    }
+  ]
+}

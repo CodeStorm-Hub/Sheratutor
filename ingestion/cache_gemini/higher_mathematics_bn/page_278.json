@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 278,
+  "pdf_page_no": 283,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অন্যদিকে $\\overrightarrow{AG} = \\overrightarrow{AC} + \\overrightarrow{CE} + \\overrightarrow{EG} = 2\\underline{u} + 2\\underline{u} + 2\\underline{u} = 3(2\\underline{u})$\nএবং $\\overrightarrow{AG} = \\overrightarrow{AD} + \\overrightarrow{DG} = 3\\underline{u} + 3\\underline{u} = 2(3\\underline{u})$\n$\\therefore 2(3\\underline{u}) = 3(2\\underline{u}) = 2 \\times 3(\\underline{u})$\n\n**ড্রষ্টব্য:** দুটি ভেক্টরের ধারক রেখা অভিন্ন বা সমান্তরাল হলে, এদের একটিকে অপরটির সংখ্যা গুণিতক আকারে প্রকাশ করা যায়।\n\nবাস্তবে $AB \\parallel CD$ হলে, $\\overrightarrow{AB} = m\\overrightarrow{CD}$ যেখানে, $|m| = \\frac{|\\overrightarrow{AB}|}{|\\overrightarrow{CD}|} = \\frac{AB}{CD}$\n\nক) $m > 0$ হলে $\\overrightarrow{AB}$ ও $\\overrightarrow{CD}$ সমমুখী হয়,\nখ) $m < 0$ হলে $\\overrightarrow{AB}$ ও $\\overrightarrow{CD}$ বিপরীতমুখী হয়।\n\n**ভেক্টরের সাংখ্যগুণিতক সংক্রান্ত বণ্টন সূত্র**\n\n$m, n$ দুটি স্কেলার এবং $\\underline{u}, \\underline{v}$ দুটি ভেক্টর হলে,\n১. $(m + n)\\underline{u} = m\\underline{u} + n\\underline{u}$\n২. $m(\\underline{u} + \\underline{v}) = m\\underline{u} + m\\underline{v}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "সূত্র ১.",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সূত্র ১. $(m + n)\\underline{u} = m\\underline{u} + n\\underline{u}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**প্রমাণ:** $m$ বা $n$ শূন্য হলে সূত্রটি অবশ্যই খাটে।\n\nমনে করি, $m, n$ উভয়ে ধনাত্মক এবং $\\overrightarrow{AB} = m\\underline{u}$ $\\therefore |\\overrightarrow{AB}| = m|\\underline{u}|$\n\n$AB$ কে $C$ পর্যন্ত বর্ধিত করি যেন $|\\overrightarrow{BC}| = n|\\underline{u}|$ হয় $\\therefore \\overrightarrow{BC} = n\\underline{u}$\n\n$|\\overrightarrow{AC}| = |\\overrightarrow{AB}| + |\\overrightarrow{BC}| = m|\\underline{u}| + n|\\underline{u}| = (m + n)|\\underline{u}|$ $\\therefore \\overrightarrow{AC} = (m + n)\\underline{u}$\n\nकिन्तु $\\overrightarrow{AC} = \\overrightarrow{AB} + \\overrightarrow{BC}$ $\\therefore m\\underline{u} + n\\underline{u} = (m + n)\\underline{u}$\n\n$m, n$ উভয়ে ঋণাত্মক হলে $(m + n)\\underline{u}$ এর দৈর্ঘ্য হবে $|(m + n)||\\underline{u}|$ এবং দিক হবে $\\underline{u}$ এর দিকের বিপরীত দিক। তখন $m\\underline{u} + n\\underline{u}$ ভেক্টরটির দৈর্ঘ্য হবে $|m||\\underline{u}| + |n||\\underline{u}| = (|m| + |n|)|\\underline{u}|$ এবং দিক হবে $\\underline{u}$ এর বিপরীত দিক। কিন্তু $m < 0$ এবং $n < 0$ হলে $|m| + |n| = |m + n|$ হয়, সেক্ষেত্রে এক্ষেত্রে $(m + n)\\underline{u} = m\\underline{u} + n\\underline{u}$ পাওয়া গেল।\n\nসর্বশেষ $m$ এবং $n$ এর মধ্যে একটি $> 0$ এবং অপরটি $< 0$ হলে $(m + n)\\underline{u}$ এর দৈর্ঘ্য হবে $(|m| - |n|)|\\underline{u}|$ এবং দিক হবে $\\underline{u}$ এর দিকের সাথে একমুখী যখন $|m| > |n|$ এবং $\\underline{u}$ এর বিপরীত দিক যখন $|m| < |n|$। তখন $m\\underline{u} + n\\underline{u}$ ভেক্টরটিও দৈর্ঘ্যে ও দিকে $(m + n)\\underline{u}$ এর সাথে একমুখী হবে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_vector_distribution",
+      "caption": null,
+      "box_2d": [
+        531,
+        345,
+        608,
+        642
+      ]
+    }
+  ]
+}

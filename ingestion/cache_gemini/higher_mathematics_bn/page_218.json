@@ -1,0 +1,61 @@
+{
+  "printed_page_no": 218,
+  "pdf_page_no": 223,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ১. যখন $y$ এর ধনাত্মক মান ক্রমান্বয় বৃদ্ধি পেতে থাকে অর্থাৎ, $y \to \bar{\tau}$ হয় তখন $x$ এর মান শূন্যের দিকে ধাবিত হয় অর্থাৎ $x \to 0$\nধাপ ২. যেহেতু $a^0 = 1$ কাজেই $y = \text{log}_a 1 = 0$, সুতরাং রেখাটি $(1, 0)$ বিন্দুগামী।\nধাপ ৩. $y$ এর ঋণাত্মক মান অর্থাৎ $y$ এর মান মূলবিন্দুর নিচের দিকে ক্রমান্বয় বৃদ্ধি পেতে থাকে অর্থাৎ $y \to -\bar{\tau}$ হয় তাহলে $x$ এর মান ক্রমান্বয় বৃদ্ধি পেতে থাকে অর্থাৎ $x \to \bar{\tau}$\nএখন পাশের চিত্রে $y = \text{log}_a x, 0 < a < 1$ দেখানো হলো। এখানে $D_f = (0, \bar{\tau})$ এবং $R_f = (-\bar{\tau}, \bar{\tau})$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(ii) যখন $y = \text{log}_a x, a > 1$ তখন\nধাপ ১. যখন $a > 1, y$ এর সকল মানের জন্য $x$ এর মান ধনাত্মক এবং $y$ এর মানের ক্রমান্বয় বৃদ্ধির সাথে সাথে $x$ এর মান বৃদ্ধিপ্রাপ্ত হয়। অর্থাৎ $y \to \bar{\tau}$ হলে $x \to \bar{\tau}$\nধাপ ২. যেহেতু $a^0 = 1$ কাজেই $y = \text{log} 1 = 0$ সুতরাং, রেখাটি $(1, 0)$ বিন্দুগামী।\nধাপ ৩. $y$ এর ঋণাত্মক মানের জন্য $y$ এর মান ক্রমান্বয় বৃদ্ধি পেলে অর্থাৎ, $y \to -\bar{\tau}$ হলে $x$ এর মান ক্রমান্বয় শূন্যের দিকে ধাবিত হয় অর্থাৎ $x \to 0$ ।\nএখন $f(x) = \text{log}_a x, a > 1$ এর লেখচিত্র পাশের চিত্রে দেখানো হলো। এখানে $D_f = (0, \bar{\tau})$ এবং $R_f = (-\bar{\tau}, \bar{\tau})$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩৪. $f(x) = \text{log}_{10} x$ এর লেখচিত্র অঙ্কন করো।\nসমাধান: ধরি $y = f(x) = \text{log}_{10} x$\nযেহেতু $10^0 = 1$ কাজেই $y = \text{log}_{10} 1 = 0$ সুতরাং, রেখাটি $(1, 0)$ বিন্দুগামী। যখন $x \to 0$ তখন $y \to -\bar{\tau}$ । যখন $x \to \bar{\tau}$ তখন $y \to \bar{\tau}$ ।\n$\therefore y = \text{log}_{10} x$ রেখাটি ঊর্ধ্বগামী।\nনিচে রেখাটির লেখচিত্র অঙ্কন করা হলো।\nএখানে $D_f = (0, \bar{\tau})$ এবং $R_f = (-\bar{\tau}, \bar{\tau})$.",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_9_1",
+      "caption": null,
+      "box_2d": [
+        98,
+        590,
+        312,
+        874
+      ]
+    },
+    {
+      "figure_id": "fig_9_2",
+      "caption": null,
+      "box_2d": [
+        410,
+        590,
+        624,
+        874
+      ]
+    },
+    {
+      "figure_id": "fig_9_3",
+      "caption": null,
+      "box_2d": [
+        716,
+        590,
+        932,
+        874
+      ]
+    }
+  ]
+}

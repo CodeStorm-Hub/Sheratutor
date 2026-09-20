@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 210,
+  "pdf_page_no": 215,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবং $(a^q)^p = x^p$ বা $x^p = a^{pq}$\n\n$\\therefore x^p = y^q$ বা $x^{\\log_a y} = y^{\\log_a x}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৬.** দেখাও যে, $\\log_a p \\times \\log_p q \\times \\log_q r \\times \\log_r b = \\log_a b$\n\n**সমাধান:** বামপক্ষ $= \\log_a p \\times \\log_p q \\times \\log_q r \\times \\log_r b$\n\n$= (\\log_a p \\times \\log_p q) \\times (\\log_q r \\times \\log_r b)$\n\n$= \\log_a q \\times \\log_q b = \\log_a b = \\text{ডানপক্ষ}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৭.** দেখাও যে, $\\frac{1}{\\log_a(abc)} + \\frac{1}{\\log_b(abc)} + \\frac{1}{\\log_c(abc)} = 1$\n\n**সমাধান:** ধরি, $\\log_a(abc) = x$, $\\log_b(abc) = y$, $\\log_c(abc) = z$\n\nসুতারং, $a^x = abc$, $b^y = abc$, $c^z = abc$\n\n$\\therefore a = (abc)^{\\frac{1}{x}}$, $b = (abc)^{\\frac{1}{y}}$, $c = (abc)^{\\frac{1}{z}}$\n\nএখন, $(abc)^1 = abc = (abc)^{\\frac{1}{x}} (abc)^{\\frac{1}{y}} (abc)^{\\frac{1}{z}} = (abc)^{\\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z}}$\n\n$\\therefore \\frac{1}{x} + \\frac{1}{y} + \\frac{1}{z} = 1$\n\nঅর্থাৎ $\\frac{1}{\\log_a(abc)} + \\frac{1}{\\log_b(abc)} + \\frac{1}{\\log_c(abc)} = 1$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৮.** যদি $p = \\log_a(bc)$, $q = \\log_b(ca)$, $r = \\log_c(ab)$ হয় তবে দেখাও যে,\n\n$\\frac{1}{p + 1} + \\frac{1}{q + 1} + \\frac{1}{r + 1} = 1$\n\n**সমাধান:** $1 + p = 1 + \\log_a(bc) = \\log_a a + \\log_a(bc) = \\log_a(abc)$\n\nএকইভাবে $1 + q = \\log_b(abc)$ এবং $1 + r = \\log_c(abc)$\n\nপূর্ববর্তী উদাহরণে আমরা প্রমাণ করেছি, $\\frac{1}{\\log_a(abc)} + \\frac{1}{\\log_b(abc)} + \\frac{1}{\\log_c(abc)} = 1$\n\n$\\therefore \\frac{1}{p + 1} + \\frac{1}{q + 1} + \\frac{1}{r + 1} = 1$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৯.** যদি $\\frac{\\log a}{y - z} = \\frac{\\log b}{z - x} = \\frac{\\log c}{x - y}$ হয় তবে দেখাও যে, $a^x b^y c^z = 1$\n\n**সমাধান:** ধরি, $\\frac{\\log a}{y - z} = \\frac{\\log b}{z - x} = \\frac{\\log c}{x - y} = k$\n\nতাহলে, $\\log a = k(y - z)$, $\\log b = k(z - x)$, $\\log c = k(x - y)$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

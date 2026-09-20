@@ -1,0 +1,27 @@
+{
+  "printed_page_no": 163,
+  "pdf_page_no": 168,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$OX$ কে $\\theta$ কোণের আদিবাহু (initial side) এবং $OA$ কে প্রান্তিকবাহু (terminal side) বলা হয়। $OA$ প্রান্তিক বাহুর উপর $O$ বিন্দু ভিন্ন $P(x, y)$ একটি বিন্দু নিই। তাহলে $OX$ থেকে বিন্দুটির লম্ব দূরত্ব $y$, $OY$ থেকে এর লম্ব দূরত্ব $x$ এবং $\\angle OQP$ সমকোণ (আগের পৃষ্ঠার চিত্র)।\n\nসুতরাং পিথাগোরাসের সূত্র অনুসারে অতিভুজ $|OP| = r = \\sqrt{x^2 + y^2}$। তাহলে যে কোনো কোণ $\\theta$ এর জন্য ত্রিকোণমিতিক অনুপাতসমূহ হবে:\n\n$$\\sin\\theta = \\frac{\\text{লম্ব}}{\\text{অতিভুজ}} = \\frac{y}{r}$$\n\n$$\\cos\\theta = \\frac{\\text{ভূমি}}{\\text{অতিভুজ}} = \\frac{x}{r}$$\n\n$$\\tan\\theta = \\frac{\\text{লম্ব}}{\\text{ভূমি}} = \\frac{y}{x}, \\quad [x \\neq 0]$$\n\n$$\\sec\\theta = \\frac{\\text{অতিভুজ}}{\\text{ভূমি}} = \\frac{r}{x}, \\quad [x \\neq 0]$$\n\n$$\\cosec\\theta = \\frac{\\text{অতিভুজ}}{\\text{লম্ব}} = \\frac{r}{y}, \\quad [y \\neq 0]$$\n\n$$\\cot\\theta = \\frac{\\text{ভূমি}}{\\text{লম্ব}} = \\frac{x}{y}, \\quad [y \\neq 0]$$\n\nলক্ষ্যনীয় ১: $P$ এবং $O$ বিন্দু ভিন্ন হওয়ায় $r = |OP| > 0$ এবং $\\sin\\theta$ ও $\\cos\\theta$ সবসময়ই অর্থবহ। $OA$ প্রান্তিক বাহু $x$-অক্ষের উপর থাকলে $y = 0$ হয় বলে এরূপ কোণের জন্য $\\cosec\\theta$ ও $\\cot\\theta$ সংজ্ঞায়িত নয়।\n\nঅনুরূপভাবে, $OA$ প্রান্তিক বাহু $y$-অক্ষের উপর থাকলে $x = 0$ হয় এবং এরূপ কোণের জন্য $\\sec\\theta$ ও $\\tan\\theta$ সংজ্ঞায়িত হয় না।\n\nলক্ষ্যনীয় ২: প্রান্তিক বাহু $OA$ এর উপর $P(x, y)$ বিন্দু ভিন্ন অন্য কোনো বিন্দু $P_1(x_1, y_1)$ নিই (নিচের বামের চিত্র ও ডানের চিত্র)। $P(x, y)$ ও $P_1(x_1, y_1)$ বিন্দুদ্বয় থেকে $x$-অক্ষের উপর $PM$ ও $P_1M_1$ লম্ব আঁকি। তাহলে $\\triangle OPM$ এবং $\\triangle OP_1M_1$ সদৃশ।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_trig_1",
+      "caption": null,
+      "box_2d": [
+        757,
+        212,
+        943,
+        781
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 199,
+  "pdf_page_no": 204,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$(ii)$ যদি $a < 0$ এবং $n \bibitem{N} N, n > 1$ বিজোড় সংখ্যা হয়, তবে $a$ এর একটি মাত্র $n$ তম মূল আছে যা ঋণাত্মক। এই মূলকে $-\\sqrt[n]{a}$ দ্বারা সূচিত করা হয়। $n$ জোড় হলে এবং $a$ ঋণাত্মক হলে $a$ এর কোন $n$তম মূল নেই।\n\n$(iii)$ $0$ এর $n$তম মূল $\\sqrt[n]{0} = 0$\n\n**দ্রষ্টব্য:**\n\n১. $a > 0$ হলে $\\sqrt[n]{a} > 0$\n\n২. $a < 0$ এবং $n$ বিজোড় হলে, $\\sqrt[n]{a} = -\\sqrt[n]{|a|} < 0$ [যেখানে $|a|$ হচ্ছে $a$ এর পরমমান]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৬।** $\\sqrt{4} = 2, (\\sqrt{4} \\neq -2), \\sqrt[3]{-8} = -2 = -\\sqrt[3]{8}$,\n$$\\sqrt{a^2} = |a| = \\begin{cases} a, \\text{ যখন } a \\ge 0 \\\\ -a, \\text{ যখন } a < 0 \\end{cases}$$\n\n**সূত্র ৭।** $a < 0, n \\in N, n > 1$ এবং $n$ বিজোড় হলে দেখাও যে, $\\sqrt[n]{a} = -\\sqrt[n]{|a|}$\n\n**প্রমাণ:**\n\n$\\sqrt[n]{a} = \\sqrt[n]{-|a|}$ [$\\because a < 0$]\n\n$= \\sqrt[n]{(-1)^n|a|}$ [$\\because n$ বিজোড়]\n\n$= -\\sqrt[n]{|a|}$\n\nসুতরাং, $\\sqrt[n]{a} = -\\sqrt[n]{|a|}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৭।** $-\\sqrt[3]{27}$ এর মান নির্ণয় করো।\n\n**সমাধান:** $-\\sqrt[3]{27} = -\\sqrt[3]{(3)^3} = -3$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**সূত্র ৮।** $a > 0, m \\in \\mathbb{Z}$ এবং $n \\in \\mathbb{N}, n > 1$ হলে, $(\\sqrt[n]{a})^m = \\sqrt[n]{a^m}$\n\n**প্রমাণ:** মনে করি, $\\sqrt[n]{a} = x$ এবং $\\sqrt[n]{a^m} = y$\n\nতাহলে, $x^n = a$ এবং $y^n = a^m$\n\nবা, $y^n = a^m = (x^n)^m = (x^m)^n$\n\nযেহেতু $y > 0, x^m > 0$, সুতরাং মুখ্য $n$তম মূল বিবেচনা করে পাই, $y = x^m$\n\nবা, $\\sqrt[n]{a^m} = (\\sqrt[n]{a})^m$\n\nঅর্থাৎ, $(\\sqrt[n]{a})^m = \\sqrt[n]{a^m}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**সূত্র ৯।** যদি $a > 0$ এবং $\\frac{m}{n} = \\frac{p}{q}$ হয়, যেখানে $m, p \\in \\mathbb{Z}$ এবং $n, q \\in \\mathbb{N}, n > 1, q > 1$ তবে, $\\sqrt[n]{a^m} = \\sqrt[q]{a^p}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

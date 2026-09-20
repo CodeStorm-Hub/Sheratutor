@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 15,
+  "pdf_page_no": 20,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ফলে $A = (A \\setminus B) \\cup (A \\cap B)$ এবং $B = (B \\setminus A) \\cup (A \\cap B)$\nঅতঃপর $A \\cup B = (A \\setminus B) \\cup (A \\cap B) \\cup (B \\setminus A)$\n$\\therefore n(A) = n(A \\setminus B) + n(A \\cap B) \\dots \\dots (1)$\n$\\therefore n(B) = n(B \\setminus A) + n(A \\cap B) \\dots \\dots (2)$\n$n(A \\cup B) = n(A \\setminus B) + n(A \\cap B) + n(B \\setminus A) \\dots \\dots (3)$\nসুতরাং, (1) নং থেকে পাই, $n(A \\setminus B) = n(A) - n(A \\cap B)$\nএবং (2) নং থেকে পাই, $n(B \\setminus A) = n(B) - n(A \\cap B)$\nএখন, $n(A \\setminus B)$ এবং $n(B \\setminus A)$ (3) এ বসিয়ে পাই,\n$n(A \\cup B) = n(A) - n(A \\cap B) + n(B) - n(A \\cap B) + n(A \\cap B)$\n$\\therefore n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\nক) নিম্নোক্ত প্রত্যেক ক্ষেত্রে $A$ ও $B$ এর মধ্যে সম্ভাব্য সকল এক-এক মিল বর্ণনা করো:\n(১) $A = \\{a, b\\}$, $B = \\{1, 2\\}$ \n(২) $A = \\{a, b, c\\}$, $B = \\{a, b, c\\}$\nখ) ক নং প্রশ্নে বর্ণিত প্রত্যেক এক-এক মিলকরণের জন্য $F = \\{(x, y) : x \\in A, y \\in B\\}$ এবং $x \\leftrightarrow y$ সেটটি তালিকা পদ্ধতিতে বর্ণনা করো।\nগ) মনে করি $A = \\{a, b, c, d\\}$ এবং $B = \\{1, 2, 3, 4\\}$। $A \\times B$ এর একটি উপসেট $F$ বর্ণনা কর যার অন্তর্ভুক্ত ক্রমজোড়গুলোর প্রথম পদের সঙ্গে দ্বিতীয় পদের মিল করা হলে, $A$ ও $B$ এর একটি এক-এক মিল স্থাপিত হয় যেখানে, $a \\leftrightarrow 3$ ।\nঘ) দেখাও যে, $A = \\{1, 2, 3, \\dots, n\\}$ ও $B = \\{1, 2, 2^2, \\dots, 2^{n-1}\\}$ সেট দুটি সমতুল।\nঙ) দেখাও যে, $S = \\{3^n : n = 0$ অথবা $n \\in \\mathbb{N}\\}$ সেটটি $\\mathbb{N}$ এর সমতুল।\nচ) ঠিক উপরের প্রশ্নে বর্ণিত সেট $S$ এর একটি প্রকৃত উপসেট বর্ণনা কর যা $S$ এর সমতুল।\nছ) দেখাও যে, সকল বিজোড় স্বাভাবিক সংখ্যার সেট $A = \\{1, 3, 5, 7, \\dots\\}$ অনন্ত সেট।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "বাস্তব সমস্যা সমাধানে সেট",
+      "chunk_type": "theory",
+      "content_markdown": "বাস্তব সমস্যা সমাধানে সেট\nবাস্তব সমস্যা সমাধানে ভেনচিত্র ব্যবহার করা হয়। এখানে উল্লেখ্য যে, প্রতি সেটের উপাদান সংখ্যা ভেনচিত্রে লেখা হবে, তা কয়েকটি উদাহরণের মাধ্যমে দেখানো হলো।\nউদাহরণ ১৫. 50জন লোকের মধ্যে 35জন ইংরেজি বলতে পারে, 25জন ইংরেজি ও বাংলা বলতে পারে এবং প্রত্যেকেই দুটি ভাষার অন্তত একটি বলতে পারে। বাংলা বলতে পারে কতজন? কেবল মাত্র বাংলা বলতে পারে কতজন?",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

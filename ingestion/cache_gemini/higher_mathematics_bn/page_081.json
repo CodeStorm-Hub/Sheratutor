@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 81,
+  "pdf_page_no": 86,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. $\\triangle ABC$ এর ক্ষেত্রে নিচের কোনটি অ্যাপোলোনিয়াসের উপপাদ্যকে সমর্থন করে?\n\nক) $AB^2 + AC^2 = BC^2$\n\nখ) $AB^2 + AC^2 = 2(AD^2 + BD^2)$\n\nগ) $AB^2 + AC^2 = 2(AG^2 + GD^2)$\n\nঘ) $AB^2 + AC^2 = 2(BD^2 + CD^2)$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সৃজনশীল প্রশ্ন",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৫. নিচের চিত্রে $S, O$ যথাক্রমে $\\triangle ABC$ এর পরিকেন্দ্র ও লম্ববিন্দু। $AP$ মধ্যমা, $BC = a$, $AC = b$ এবং $AB = c$l",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) চিত্র অঙ্কন করে $BC$ এর উপর $BE$ এর লম্ব অভিক্ষেপ চিহ্নিত করো।\n\n(খ) দেখাও যে, $S, G, O$ একই সরলরেখায় অবস্থিত।\n\n(গ) $\\angle C$ সূক্ষ্মকোণ হলে $a \\cdot CD = b \\cdot CE$ সমীকরণটি প্রতিষ্ঠিত করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. (ক) কোনো ত্রিভুজের তিনটি বাহুর দৈর্ঘ্য $4$ সেমি, $5$ সেমি এবং $6$ সেমি হলে, ত্রিভুজটির মধ্যমাগুলোর বর্গের সমষ্টি নির্ণয় করো।\n\n(খ) কোনো সমকোণী ত্রিভুজের মধ্যমাগুলোর বর্গের সমষ্টি $37.5$ বর্গ একক হলে, ত্রিভুজটির অতিভুজের দৈর্ঘ্য নির্ণয় করো।\n\n(গ) কোনো সমবাহু ত্রিভুজের পরিবৃত্তের ব্যাসার্ধ $3$ সে.মি. হলে ঐ ত্রিভুজের বাহুর দৈর্ঘ্য নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_geom_5",
+      "caption": "ত্রিভুজ ABC এর পরিকেন্দ্র S, লম্ববিন্দু O এবং মধ্যমা AP",
+      "box_2d": [
+        290,
+        322,
+        498,
+        688
+      ]
+    }
+  ]
+}

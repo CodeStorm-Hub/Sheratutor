@@ -120,7 +120,7 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
       criteria_json = q.sub_questions.map((subq) => ({
         step_name: `Part (${subq.part})`,
         max_step_marks: subq.marks,
-        matching_rules: subq.rubric_step_rules || `Accurate scientific answer for part (${subq.part})`,
+        matching_rules: subq.rubric_step_rules || `Accurate answer and step-by-step mathematical/scientific derivation for part (${subq.part})`,
       }));
     } else if (q.question_type === "MCQ") {
       criteria_json = [

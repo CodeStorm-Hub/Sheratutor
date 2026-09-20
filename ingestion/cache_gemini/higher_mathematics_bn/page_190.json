@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 190,
+  "pdf_page_no": 195,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গ) $\\sin \\frac{7\\pi}{3} \\cos \\frac{13\\pi}{6} - \\cos \\frac{5\\pi}{3} \\sin \\frac{11\\pi}{6} = 1$\n\nঘ) $\\sin \\frac{13\\pi}{3} \\cos \\frac{13\\pi}{6} - \\sin \\frac{11\\pi}{6} \\cos \\left(-\\frac{5\\pi}{3}\\right) = 1$\n\nঙ) $\\tan\\theta = \\frac{3}{4}$ এবং $\\sin\\theta$ ঋণাত্মক হলে দেখাও যে, $\\frac{\\sin\\theta + \\cos\\theta}{\\sec\\theta + \\tan\\theta} = \\frac{14}{5}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৫. মান নির্ণয় করো:\n\nক) $\\cos \\frac{9\\pi}{4} + \\cos \\frac{5\\pi}{4} + \\sin \\frac{31\\pi}{36} - \\sin \\frac{5\\pi}{36}$\n\nখ) $\\cot \\frac{\\pi}{20} \\cot \\frac{3\\pi}{20} \\cot \\frac{5\\pi}{20} \\cot \\frac{7\\pi}{20} \\cot \\frac{9\\pi}{20}$\n\nগ) $\\sin^2 \\frac{\\pi}{4} + \\sin^2 \\frac{3\\pi}{4} + \\sin^2 \\frac{5\\pi}{4} + \\sin^2 \\frac{7\\pi}{4}$\n\nঘ) $\\cos^2 \\frac{\\pi}{8} + \\cos^2 \\frac{3\\pi}{8} + \\cos^2 \\frac{5\\pi}{8} + \\cos^2 \\frac{7\\pi}{8}$\n\nঙ) $\\sin^2 \\frac{17\\pi}{18} + \\sin^2 \\frac{5\\pi}{8} + \\cos^2 \\frac{37\\pi}{18} + \\cos^2 \\frac{3\\pi}{8}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৬. $\\theta = \\frac{\\pi}{3}$ হলে নিম্নোক্ত অভেদসমূহ যাচাই করো:\n\nক) $\\sin 2\\theta = 2\\sin\\theta \\cos\\theta = \\frac{2\\tan\\theta}{1 + \\tan^2\\theta}$ \n\nখ) $\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta$\n\nগ) $\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta$ \n\nঘ) $\\tan 2\\theta = \\frac{2\\tan\\theta}{1 - \\tan^2\\theta}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৭. প্রদত্ত শর্ত পূরণ করে $\\alpha$ (আলফা) এর মান নির্ণয় করো:\n\nক) $\\cot\\alpha = -\\sqrt{3}$, $\\frac{3\\pi}{2} < \\alpha < 2\\pi$\n\nখ) $\\cos\\alpha = -\\frac{1}{2}$, $\\frac{\\pi}{2} < \\alpha < \\frac{3\\pi}{2}$\n\nগ) $\\sin\\alpha = -\\frac{\\sqrt{3}}{2}$, $\\frac{\\pi}{2} < \\alpha < \\frac{3\\pi}{2}$\n\nঘ) $\\cot\\alpha = -1$, $\\pi < \\alpha < 2\\pi$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৮. সমাধান করো: (যখন $0 < \\theta < \\frac{\\pi}{2}$)\n\nক) $2\\cos^2\\theta = 1 + 2\\sin^2\\theta$\n\nখ) $2\\sin^2\\theta - 3\\cos\\theta = \\frac{0}{4}$\n\nগ) $6\\sin^2\\theta - 11\\sin\\theta + 4 = 0$\n\nঘ) $\\tan\\theta + \\cot\\theta = \\frac{1}{\\sqrt{3}}$\n\nঙ) $2\\sin^2\\theta + 3\\cos\\theta = 3$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৯. সমাধান করো: (যখন $0 < \\theta < 2\\pi$)\n\nক) $2\\sin^2\\theta + 3\\cos\\theta = 0$\n\nখ) $4(\\cos^2\\theta + \\sin\\theta) = 5$\n\nগ) $\\cot^2\\theta + \\csc^2\\theta = 3$\n\nঘ) $\\tan^2\\theta + \\cot^2\\theta = 2$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 284,
+  "pdf_page_no": 289,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $\\vec{AB} = \\underline{a}, \\vec{BC} = \\underline{b}, \\vec{CD} = \\underline{c}, \\vec{DA} = \\underline{d}$\nতাহলে, $\\vec{PQ} = \\vec{PB} + \\vec{BQ} = \\frac{1}{2}\\vec{AB} + \\frac{1}{2}\\vec{BC} = \\frac{1}{2}(\\underline{a} + \\underline{b})$\nঅনুরূপে, $\\vec{QR} = \\frac{1}{2}(\\underline{b} + \\underline{c}), \\vec{RS} = \\frac{1}{2}(\\underline{c} + \\underline{d})$ এবং $\\vec{SP} = \\frac{1}{2}(\\underline{d} + \\underline{a})$\nকিন্তু $(\\underline{a} + \\underline{b}) + (\\underline{c} + \\underline{d}) = \\vec{AC} + \\vec{CA} = \\vec{AC} - \\vec{AC} = \\underline{0}$\nঅর্থাৎ (\\underline{a} + \\underline{b}) = -(\\underline{c} + \\underline{d})\n$\\therefore \\vec{PQ} = \\frac{1}{2}(\\underline{a} + \\underline{b}) = -\\frac{1}{2}(\\underline{c} + \\underline{d}) = -\\vec{RS} = \\vec{SR}$\n$\\therefore \\vec{PQ}$ এবং $\\vec{SR}$ সমান ও সমান্তরাল।\nঅনুরূপে, $\\vec{QR}$ এবং $\\vec{PS}$ সমান ও সমান্তরাল।\n$\\therefore PQRS$ একটি সামান্তরিক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১২",
+      "section_title": "অনুশীলনী ১২",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১. দুটি ভেক্টর সমান্তরাল হলে\n(i) এদের যোগের ক্ষেত্রে সামান্তরিক বিধি প্রযোজ্য\n(ii) এদের যোগের ক্ষেত্রে ত্রিভুজবিধি প্রযোজ্য\n(iii) এদের দৈর্ঘ্য সর্বদা সমান\nওপরের তথ্যের আলোকে নিচের কোনটি সঠিক?\nক) i\nখ) ii\nগ) i ও ii\nঘ) i, ii ও iii",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১২",
+      "section_title": "অনুশীলনী ১২",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২. $AB = CD$ এবং $AB \\parallel CD$ হলে নিচের কোনটি সঠিক?\nক) $\\vec{AB} = \\vec{CD}$\nখ) $\\vec{AB} = m \\cdot \\vec{CD}$, যেখানে $m > 1$\nগ) $\\vec{AB} + \\vec{DC} < \\underline{0}$\nঘ) $\\vec{AB} + m\\vec{CD} = \\underline{0}$, যেখানে $m > 1$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১২",
+      "section_title": "অনুশীলনী ১২",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩. $\\triangle ABC$ এর ক্ষেত্রে কোনটি সঠিক?\nক) $\\vec{AB} + \\vec{BC} = \\vec{CA}$\nখ) $\\vec{AB} + \\vec{AC} = \\vec{BC}$\nগ) $\\vec{CB} + \\vec{BA} + \\vec{CA} = \\underline{0}$\nঘ) $\\vec{AB} + \\vec{BC} + \\vec{CA} = \\underline{0}$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12_1",
+      "caption": null,
+      "box_2d": [
+        66,
+        363,
+        222,
+        631
+      ]
+    }
+  ]
+}

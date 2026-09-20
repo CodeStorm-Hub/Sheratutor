@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 233,
+  "pdf_page_no": 238,
+  "chapter_no": 10,
+  "chapter_title": "দ্বিপদী বিস্তৃতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\binom{7}{4} = \frac{7 \times 6 \times 5 \times 4}{1 \times 2 \times 3 \times 4} = \frac{7 \times 6 \times 5 \times 4 \times 3 \times 2 \times 1}{(1 \times 2 \times 3 \times 4) \times (3 \times 2 \times 1)} = \frac{7!}{4! \times 3!} = \frac{7!}{4! \times (7-4)!}$$\n\n$$\\therefore \\text{ সাধারণভাবে আমরা বলতে পারি } \\binom{n}{r} = \frac{n!}{r!(n-r)!}$$\n\nডান পাশের ফ্যাক্টোরিয়ালসমূহকে যে প্রতীক দ্বারা প্রকাশ করা হয় তা হলো,\n$$\\binom{n}{r} = \frac{n!}{r!(n-r)!} = {^nC_r}$$\n\n$$\\therefore \\binom{7}{4} = \frac{7!}{4!(7-4)!} = {^7C_4} \\text{ এবং } \\binom{5}{3} = \frac{5!}{3!(5-3)!} = {^5C_3}$$\n\nসুতরাং, $\\binom{n}{r} = {^nC_r}$, অর্থাৎ, $\\binom{n}{r}$ ও ${^nC_r}$ এর মান এক।\n\n$$\\therefore \\binom{n}{1} = {^nC_1}, \\binom{n}{2} = {^nC_2}, \\binom{n}{3} = {^nC_3}, \\dots, \\binom{n}{n} = {^nC_n}$$\n\nআমারা জানি $\\binom{n}{n} = {^nC_n} = \frac{n!}{n!(n-n)!} = \frac{n!}{n!(0)!} = \frac{1}{0!}$\n\n$$\\therefore 1 = \frac{1}{0!}, \\text{ অর্থাৎ } 0! = 1$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "মনে রাখতে হবে",
+      "chunk_type": "theory",
+      "content_markdown": "মনে রাখতে হবে\n\n$$n! = n(n-1)(n-2) \\dots 3 \times 2 \times 1$$\n$$\\binom{n}{r} = {^nC_r}, \\; {^nC_n} = 1$$\n$$\\binom{n}{r} = {^nC_r} = \frac{n!}{r!(n-r)!}, \\; \\binom{n}{0} = {^nC_0} = 1$$\n$$\\binom{n}{n} = {^nC_n} = 1, \\; 0! = 1$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন দ্বিপদী উপপাদ্যতে $\\binom{n}{r}$ কে ${^nC_r}$ দ্বারা প্রকাশ করব।\n\n$$(1+y)^n = 1 + {^nC_1}y + {^nC_2}y^2 + {^nC_3}y^3 + \\dots + {^nC_r}y^r + \\dots + {^nC_n}y^n$$\n\nবা, $$(1+y)^n = 1 + ny + \frac{n(n-1)}{2!}y^2 + \frac{n(n-1)(n-2)}{3!}y^3 + \\dots + y^n$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

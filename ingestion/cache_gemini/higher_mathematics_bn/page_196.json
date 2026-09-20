@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 196,
+  "pdf_page_no": 201,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: সূত্রটি গাণিতিক আরওহ পদ্ধতিতে প্রমাণ কর [সূত্র ২ এর অনুরূপ]\n\nসূত্র ৪. $a \times R$ এবং $m, n \times N$ হলে $(a^m)^n = a^{mn}$\n\nসূত্র ৫. $a, b \times R$ এবং $n \times N$ হলে $(a \times b)^n = a^n \times b^n$\n\n[সূত্রদ্বয় আরওহ পদ্ধতিতে প্রমাণ কর]\n\nশূন্য ও ঋণাত্মক পূর্ণ সাংখ্যিক সূচক:\n\nসংজ্ঞা: $a \times R, a \neq 0$ হলে,\n\n৩. $a^0 = 1$\n\n৮. $a^{-n} = \frac{1}{a^n}$, যেখানে $n \times N$\n\nমন্তব্য: সূচকের ধারণা সম্প্রসারণের সময় লক্ষ রাখা হয়, যেন সূচকের মৌলিক সূত্র $a^m \times a^n = a^{m+n}$ সকল ক্ষেত্রেই বৈধ থাকে।\n\nসূত্রটি যদি $m = 0$ এর জন্য সত্য হয়, তবে $a^0 \times a^n = a^{0+n}$ অর্থাৎ, $a^0 = \frac{a^n}{a^n} = 1$ হতে হবে।\n\nএকইভাবে, সূত্রটি যদি $m = -n$ ($n \times N$) এর জন্য সত্য হতে হয়,\n\nতবে $a^{-n} \times a^n = a^{-n+n} = a^0 = 1$ অর্থাৎ, $a^{-n} = \frac{1}{a^n}$ হতে হবে। এদিকে লক্ষ রেখেই উপরের সংজ্ঞা বর্ণনা করা হয়েছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. ক) $2^5 \times 2^6 = 2^{5+6} = 2^{11}$\n\nখ) $\frac{3^5}{3^3} = 3^{5-3} = 3^2$\n\nগ) $\frac{3^3}{3^5} = \frac{1}{3^{5-3}} = \frac{1}{3^2}$\n\nঘ) $\\left(\\frac{5}{4}\\right)^3 = \\frac{5}{4} \\times \\frac{5}{4} \\times \\frac{5}{4} = \\frac{5 \\times 5 \\times 5}{4 \\times 4 \\times 4} = \\frac{5^3}{4^3}$\n\nঙ) $(4^2)^7 = 4^{2 \\times 7} = 4^{14}$\n\nচ) $(a^2b^3)^5 = (a^2)^5 \times (b^3)^5 = a^{2 \\times 5} \times b^{3 \\times 5} = a^{10}b^{15}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. ক) $6^0 = 1$\n\nখ) $(-6)^0 = 1$\n\nগ) $7^{-1} = \\frac{1}{7}$\n\nঘ) $7^{-2} = \\frac{1}{7^2} = \\frac{1}{49}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

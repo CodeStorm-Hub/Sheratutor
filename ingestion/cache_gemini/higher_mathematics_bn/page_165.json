@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 165,
+  "pdf_page_no": 170,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৮. ত্রিকোণমিতি ১৬৫\n\nঅর্থাৎ $\\cos\\theta = \\frac{1}{\\sec\\theta}$ এবং $\\sec\\theta = \\frac{1}{\\cos\\theta}$\n\nএকইভাবে, $\\tan\\theta = \\frac{1}{\\cot\\theta}$ এবং $\\cot\\theta = \\frac{1}{\\tan\\theta}$\n\nত্রিকোণমিতিক অনুপাতসংক্রান্ত কতিপয় সহজ অভেদাবলি (Identities):\n\n(i) $\\sin^2\\theta + \\cos^2\\theta = 1$\n\nপ্রমাণ: পাশের চিত্র থেকে আমরা দেখি,\n\n$\\cos\\theta = \\frac{\\text{ভূমি}}{\\text{অতিভুজ}} = \\frac{x}{r}$\n\n$\\sin\\theta = \\frac{\\text{লম্ব}}{\\text{অতিভুজ}} = \\frac{y}{r}$\n\nএবং $r^2 = x^2 + y^2$\n\n$\\therefore \\sin^2\\theta + \\cos^2\\theta = \\frac{x^2}{r^2} + \\frac{y^2}{r^2} = \\frac{x^2 + y^2}{r^2} = \\frac{r^2}{r^2} = 1$\n\n$\\therefore \\sin^2\\theta + \\cos^2\\theta = 1$ (প্রমাণিত)।\n\n(i) নং সূত্র থেকে আমরা পাই, $\\sin^2\\theta = 1 - \\cos^2\\theta$ বা, $\\cos^2\\theta = 1 - \\sin^2\\theta$\n\nঅনুরূপে প্রমাণ করা যায় যে,\n\n(ii) $1 + \\tan^2\\theta = \\sec^2\\theta$ বা, $\\sec^2\\theta - 1 = \\tan^2\\theta$\n\n(iii) $1 + \\cot^2\\theta = \\csc^2\\theta$ বা, $\\csc^2\\theta - 1 = \\cot^2\\theta$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: প্রমাণ করো যে, (চিত্রের সাহায্যে)\n\nক) $\\sec^2\\theta - \\tan^2\\theta = 1$\n\nখ) $\\csc^2\\theta - \\cot^2\\theta = 1$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিভিন্ন চতুর্ভাগে ত্রিকোণমিতিক অনুপাতসমূহের চিহ্ন\n\nপাশের চিত্রে কার্তেসীয় তলে $X'OX$ এবং $Y'OY$ অক্ষদ্বয় দ্বারা চারটি চতুর্ভাগ (Quadrant) যথাক্রমে $XOY$ (১ম চতুর্ভাগ), $YOX'$ (২য় চতুর্ভাগ), $X'OY'$ (৩য় চতুর্ভাগ) এবং $Y'OX$ (৪র্থ চতুর্ভাগ) এ বিভক্ত করা হয়েছে। আদি অবস্থান $OX$ থেকে একটি রশ্মি $OA$, ঘড়ির কাঁটার বিপরীত দিকে ঘূর্ণনের ফলে $OA$ এর প্রারম্ভিক অবস্থানের উপর নির্ভর করে বিভিন্ন কোণ উৎপন্ন হবে। ঘূর্ণায়মান রশ্মি $OA$ এর উপর যেকোনো বিন্দু $P(x,y)$ নিই। তাহলে $|OP| = r$। প্রারম্ভিক রশ্মি $OA$ এবং $P$ বিন্দুর বিভিন্ন চতুর্ভাগে অবস্থানের সঙ্গে সঙ্গে $x$ ও $y$ এর চিহ্ন পরিবর্তন হবে কিন্তু $r$ সবসময় ধনাত্মক থাকবে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_8_1",
+      "caption": null,
+      "box_2d": [
+        232,
+        679,
+        423,
+        894
+      ]
+    },
+    {
+      "figure_id": "fig_8_2",
+      "caption": null,
+      "box_2d": [
+        722,
+        599,
+        942,
+        887
+      ]
+    }
+  ]
+}

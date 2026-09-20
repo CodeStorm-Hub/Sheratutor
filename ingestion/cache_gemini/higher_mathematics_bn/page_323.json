@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 323,
+  "pdf_page_no": 328,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৭. ক) $\\frac{11\\pi}{6}$ খ) $\\frac{2\\pi}{3}, \\frac{4\\pi}{3}$ গ) $\\frac{4\\pi}{3}$ ঘ) $\\frac{7\\pi}{4}$\n\n৮. ক) $\\frac{\\pi}{6}$ খ) $\\frac{\\pi}{3}$ গ) $\\frac{\\pi}{6}$ ঘ) $\\frac{\\pi}{6}$ বা $\\frac{\\pi}{3}$ ঙ) $\\frac{\\pi}{3}$\n\n৯. ক) $\\frac{2\\pi}{3}, \\frac{4\\pi}{3}$ খ) $\\frac{\\pi}{6}, \\frac{5\\pi}{6}$ গ) $\\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\frac{5\\pi}{4}, \\frac{7\\pi}{4}$\nঘ) $\\frac{\\pi}{4}, \\frac{3\\pi}{4}, \\frac{5\\pi}{4}, \\frac{7\\pi}{4}$ ঙ) $\\frac{\\pi}{6}, \\frac{5\\pi}{6}, \\frac{7\\pi}{6}, \\frac{11\\pi}{6}$ চ) $\\frac{\\pi}{3}, \\frac{5\\pi}{3}$\nছ) $0, \\frac{\\pi}{3}, \\pi, \\frac{5\\pi}{3}, 2\\pi$\n\n১১. $\\frac{14\\sqrt{2}}{\\sqrt{3} - 1}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৯.১",
+      "section_title": "অনুশীলনী ৯.১",
+      "chunk_type": "theory",
+      "content_markdown": "৫. ক) $\\frac{a^2 - b^2}{ab}$ খ) $\\frac{\\sqrt{a}}{b}$ গ) $1$ ঘ) $1$ ঙ) $(\\frac{a}{b})^{a+b}$\n\n৮. ক) $0$ খ) $0$ গ) $\\frac{3}{2}$\n\n৯. ক) $x = 0$ খ) $x = 1, y = 1$ গ) $x = -2, y = -2$ ঘ) $x = -1, y = 1$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৯.২",
+      "section_title": "অনুশীলনী ৯.২",
+      "chunk_type": "theory",
+      "content_markdown": "৮. ক) $x = \\ln(1 - y)$ খ) $x = 10^y$ গ) $x = \\pm\\sqrt{y}$\n\n৫. $D_f = (-1, 1), R_f = \\mathbb{R}$\n\n৬. ক) $D_f = [-5, 5], R_f = [0, 5]$ খ) $D_f = [-2, 2], R_f = [0, 4]$\nগ) $D_f = \\mathbb{R}, R_f = \\{-1, 0, 1\\}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১০.১",
+      "section_title": "অনুশীলনী ১০.১",
+      "chunk_type": "theory",
+      "content_markdown": "১. $1 + 5y + 10y^2 + 10y^3 + 5y^4 + y^5$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 214,
+  "pdf_page_no": 219,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$y = \\log_2 x$ এর লেখচিত্র অঙ্কন\nযেহেতু $y = \\log_2 x$ ফলে $y = 2^x$ এর বিপরীত ফাংশন। $y = x$ রেখার সাপেক্ষে সূচক ফাংশনের প্রতিফলন লগারিদমীয় ফাংশন নির্ণয় করা হয়েছে যাহা $y = x$ রেখার সাপেক্ষে প্রতিসম।\nএখানে ডোমেন $R = (0, \\infty)$ এবং রেঞ্জ $D = (-\\infty, \\infty)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: নিচের ফাংশনগুলোর লেখচিত্র অঙ্কন করো এবং এদের বিপরীত ফাংশন নির্ণয় করো।\n\nক) $y = 3x + 2$\nখ) $y = x^2 + 3, x \\ge 0$\nগ) $y = x^3 - 1$\nঘ) $y = \\frac{4}{x}$\nঙ) $y = 3^x$\nচ) $y = \\frac{2x + 1}{x - 1}$\nছ) $y = 2^{-x}$\nজ) $y = 4^x$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩০. $f(x) = \\frac{x}{|x|}$, ফাংশনটির ডোমেন এবং রেঞ্জ নির্ণয় করো।\n\nসমাধান: $f(0) = \\frac{0}{|0|} = \\frac{0}{0}$ যা অসংজ্ঞায়িত।\n$\\therefore x = 0$ বিন্দুতে প্রদত্ত ফাংশনটি বিদ্যমান নয়। শূন্য ব্যতিত $x$ এর অন্য বাস্তব মানের জন্য প্রদত্ত ফাংশনটি বিদ্যমান।\n$\\therefore$ ফাংশনের ডোমেন $D_f = \\mathbb{R} - \\{0\\}$\n$$f(x) = \\frac{x}{|x|} = \\begin{cases} \\frac{x}{x} = 1, \\text{ যখন } x > 0 \\\\ \\frac{x}{-x} = -1, \\text{ যখন } x < 0 \\end{cases}$$\n$\\therefore$ ফাংশনের রেঞ্জ $R_f = \\{-1, 1\\}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩১. $y = f(x) = \\ln \\frac{a + x}{a - x}$, $a > 0$ এবং পূর্ণসংখ্যা, ফাংশনটির ডোমেন ও রেঞ্জ নির্ণয় করো।\n\nসমাধান: যেহেতু লগারিম শুধুমাত্র ধনাত্মক বাস্তব সংখ্যার জন্য সংজ্ঞায়িত হয়\n$$\\therefore \\frac{a + x}{a - x} > 0$ যदि\n(i) $a + x > 0$ এবং $a - x > 0$ হয় অথবা\n(ii) $a + x < 0$ এবং $a - x < 0$ হয়$$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_9_1",
+      "caption": "y = log_2 x এর লেখচিত্র",
+      "box_2d": [
+        75,
+        550,
+        329,
+        878
+      ]
+    },
+    {
+      "figure_id": "fig_9_2",
+      "caption": "Domain number line",
+      "box_2d": [
+        891,
+        552,
+        929,
+        878
+      ]
+    }
+  ]
+}

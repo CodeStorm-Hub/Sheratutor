@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 43,
+  "pdf_page_no": 48,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫. যদি $P(x) = ax^3 + bx + c$ হয়, তবে $P(x)$ কে $x - m$ দ্বারা ভাগ করে দেখাও যে, ভাগশেষ $P(m)$ এর সমান।\n\nসমাধান: $P(x)$ কে $x - m$ দ্বারা নিচের মতো ভাগ করি।\n\n$$x - m \\overline{) ax^3 + bx + c} \\,(ax^2 + amx + am^2 + b$$\n$$\\underline{ax^3 - amx^2}$$\n$$amx^2 + bx + c$$\n$$\\underline{amx^2 - am^2x}$$\n$$(am^2 + b)x + c$$\n$$\\underline{(am^2 + b)x - (am^2 + b)m}$$\n$$am^3 + bm + c$$\n\nএখানে ভাগশেষ $= am^3 + bm + c$l\nআবার, $P(m) = am^3 + bm + c$, সুতরাং ভাগশেষ $P(m)$ এর সমান।\nউপরের এই উদাহরণ দুটি থেকে নিচের প্রতিজ্ঞাটি সম্পর্কে ধারণা পাওয়া যায়।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": "প্রতিজ্ঞা ১ (ভাগশেষ উপপাদ্য)",
+      "chunk_type": "theory",
+      "content_markdown": "প্রতিজ্ঞা ১ (ভাগশেষ উপপাদ্য)। যদি $P(x)$ ধনাত্মক মাত্রার বহুপদী হয় এবং $a$ কোনো নির্দিষ্ট সংখ্যা হয়, তবে $P(x)$ কে $x - a$ দ্বারা ভাগ করলে ভাগশেষ $P(a)$ হবে।\n\nপ্রমাণ: $P(x)$ কে $x - a$ দ্বারা ভাগ করলে ভাগশেষ হয় $0$ অথবা অশূন্য ধ্রুবক হবে।\nমনে করি, ভাগশেষ $R$ এবং ভাগফল $Q(x)$; তাহলে, ভাগের নিয়মে, সকল $x$ এর জন্য\n$$P(x) = (x - a)Q(x) + R$$\n\nযাতে $x = a$ বসিয়ে পাই, $P(a) = 0 \\cdot Q(a) + R = R$l\nসুতরাং, $P(x)$ কে $x - a$ দ্বারা ভাগ করলে ভাগশেষ $P(a)$ হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৬. $P(x) = x^3 - 8x^2 + 6x + 60$ কে $x + 2$ দ্বারা ভাগ করলে, ভাগশেষ কত হবে?\n\nসমাধান: যেহেতু $x + 2 = x - (-2) = (x - a)$ যেখানে $a = -2$,\nসুতরাং, ভাগশেষ $= P(-2) = (-2)^3 - 8(-2)^2 + 6(-2) + 60 = 8$l",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রতিজ্ঞা ১ এর অনুকরণে নিচের প্রতিজ্ঞাটিও প্রমাণ করা যায়।\n\nপ্রতিজ্ঞা ২. যদি $P(x)$ ধনাত্মক মাত্রার বহুপদী হয় এবং $a \\neq 0$ হয়, তবে $P(x)$ কে $ax + b$ দ্বারা ভাগ করলে ভাগশেষ $P\\left(-\\frac{b}{a}\\right)$ হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৭. বহুপদী $P(x) = 36x^2 - 8x + 5$ কে $(2x - 1)$ দ্বারা ভাগ করলে ভাগশেষ কত হবে?\n\nসমাধান: নির্ণেয় ভাগশেষ $P\\left(\\frac{1}{2}\\right) = 36\\left(\\frac{1}{2}\\right)^2 - 8\\left(\\frac{1}{2}\\right) + 5 = 9 - 4 + 5 = 10$l",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

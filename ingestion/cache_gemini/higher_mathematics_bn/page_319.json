@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 319,
+  "pdf_page_no": 324,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": "৫.৪",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৫.৪\n\n১. $(2, 3), \n\n\t\t\t\t \t\t\t\t\\left(\\frac{15}{2}, \\frac{16}{9}\\right)$\t\t\t\t\t\t\t\t\t\t\t\t ২. $(3, 4), \\left(-6, \\frac{5}{8}\\right)$\n\n৩. $(0, 0), (13, 13), (3, -2), (-2, 3)$\t\t\t\t\t ৮. $(0, 0), (5, 5), (2, -1), (-1, 2)$\n\n৫. $\\left(\\frac{1}{5}, 5\\right), \\left(\\frac{4}{5}, 20\\right)$\t\t\t\t\t\t\t\t\t\t\t ৬. $\\left(3, -\\frac{5}{3}\\right), \\left(\\frac{16}{9}, -\\frac{3}{4}\\right)$\n\n৭. $(1, 2), (-1, -2)$\n\n৮. $(7, 5), (-7, -5), (\\sqrt{2}, -6\\sqrt{2}), (-\\sqrt{2}, 6\\sqrt{2})$\n\n৯. $(3, 4), (4, 3), (-3, -4), (-4, -3)$\t\t\t ১০. $(2, 1), (2, -1), (-2, 1), (-2, -1)$\n\n১১. $(1, -2), (2, -1), (-1, 2), (-2, 1)$\n\n১২. $(1, 3), (-1, -3), \\left(\\frac{13}{\\sqrt{21}}, \\frac{2}{\\sqrt{21}}\\right), \\left(-\\frac{13}{\\sqrt{21}}, -\\frac{2}{\\sqrt{21}}\\right)$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৫.৫",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৫.৫\n\n১. $16$ মিটার, $15$ মিটার\t\t\t\t\t\t\t\t\t\t\t ২. $13, 9$\n\n৩. দৈর্ঘ্য $8$ মিটার, প্রস্থ $6$ মিটার\t\t\t\t\t\t\t\t\t\t\t ৮. $19$\n\n৫. $(\\text{দৈর্ঘ্য, প্রস্থ}) = (6, 4)$ মিটার অথবা $\\left(16, 1\\frac{1}{2}\\right)$ মিটার\n\n৬. দৈর্ঘ্য $25$ মিটার, প্রস্থ $24$ মিটার\t\t\t\t\t\t\t\t\t ৯. দৈর্ঘ্য $8$ মিটার, প্রস্থ $6$ মিটার\n\n৮. $36$\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t ৯. $8\\sqrt{3}$ মিটার\n\n১০. দৈর্ঘ্য $20$ মিটার, প্রস্থ $15$ মিটার",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৫.৬",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৫.৬\n\n$(x, y)$ যথাক্রমে:\n\n১. $(2, 3)$\t\t\t\t\t\t\t\t\t\t\t ২. $(2, 1), \\left(-\\frac{1}{2}, -\\frac{1}{4}\\right)$\t\t\t\t\t ৩. $(4, 0)$\n\n৮. $(1, 2)$\t\t\t\t\t\t\t\t\t\t\t ৫. $(3, 3)$\t\t\t\t\t\t\t\t\t\t\t\t ৬. $(2, \\pm 2), \\left(-2, \\pm \\frac{1}{2}\\right)$\n\n৭. $(2, \\pm 2), \\left(-2, \\pm \\frac{1}{2}\\right)$\t\t\t\t\t\t\t\t ৮. $(1, 2), \\left(-\\frac{1}{3}, -\\frac{2}{3}\\right)$\t\t\t ৯. $(2, \\pm 2), \\left(-2, \\pm \\frac{1}{2}\\right)$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৫.৭",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৫.৭\n\n৯. অসম্ভব কারণ উভয় সংখ্যা $5$ এর গুণিতক হবে।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

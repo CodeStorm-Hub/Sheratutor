@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 44,
+  "pdf_page_no": 49,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. যদি $P(x) = 5x^3 + 6x^2 - ax + 6$ কে $x - 2$ দ্বারা ভাগ করলে ভাগশেষ $6$ হয়, তবে $a$ এর মান নির্ণয় কর।\n\nসমাধান: $P(x)$ কে $x - 2$ দ্বারা ভাগ করলে ভাগশেষ হবে,\n$$P(2) = 5(2)^3 + 6(2)^2 - a(2) + 6 = 40 + 24 - 2a + 6 = 70 - 2a \\text{।}$$\nশর্তানুসারে, $70 - 2a = 6$ বা, $2a = 70 - 6 = 64$ অর্থাৎ $a = 32 \\text{।}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯. যদি $P(x) = x^3 + 5x^2 + 6x + 8$ হয় এবং $P(x)$ কে $x - a$ এবং $x - b$ দ্বারা ভাগ করলে একই ভাগশেষ থাকে যেখানে $a \\neq b$, তবে দেখাও যে, $a^2 + b^2 + ab + 5a + 5b + 6 = 0 \\text{।}$\n\nসমাধান: $P(x)$ কে $x - a$ দ্বারা ভাগ করলে ভাগশেষ হবে $P(a) = a^3 + 5a^2 + 6a + 8$,\nএবং $P(x)$ কে $x - b$ দ্বারা ভাগ করলে ভাগশেষ হবে $P(b) = b^3 + 5b^2 + 6b + 8 \\text{।}$\nশর্তানুসারে, $a^3 + 5a^2 + 6a + 8 = b^3 + 5b^2 + 6b + 8$\nবা, $a^3 - b^3 + 5(a^2 - b^2) + 6(a - b) = 0$\nবা, $(a - b)(a^2 + b^2 + ab + 5a + 5b + 6) = 0$\n$\\therefore a^2 + b^2 + ab + 5a + 5b + 6 = 0$, যেহেতু $a \\neq b$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রতিজ্ঞা ৩ (উৎপাদক উপপাদ্য)। যদি $P(x)$ ধনাত্মক মাত্রার বহুপদী হয় এবং $P(a) = 0$ হয়, তবে $P(x)$ এর একটি উৎপাদক $x - a$ হবে।\n\nপ্রমাণ: $P(x)$ বহুপদীকে $x - a$ দ্বারা ভাগ করলে ভাগশেষ উপপাদ্য অনুযায়ী ভাগশেষ $= P(a)$, যা প্রদত্ত শর্ত অনুযায়ী $0 \\text{।}$ অর্থাৎ $P(x)$ বহুপদী $x - a$ দ্বারা বিভাজ্য।\n\n$\\therefore x - a$ হচ্ছে $P(x)$ এর একটি উৎপাদক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উৎপাদক উপপাদ্যের বিপরীত উপপাদ্য\n\nপ্রতিজ্ঞা ৪. $x - a$ যদি $P(x)$ বহুপদীর একটি উৎপাদক হয়, তবে $P(a) = 0$ হবে।\n\nপ্রমাণ: যেহেতু $x - a$, $P(x)$ বহুপদীর একটি উৎপাদক, সুতরাং আরেকটি বহুপদী $Q(x)$ পাওয়া যায় যেন $P(x) = (x - a)Q(x) \\text{।}$\nএখানে $x = a$ বসিয়ে দেখা যায় যে, $P(a) = (a - a)Q(a) = 0 \\cdot Q(a) = 0 \\text{।}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১০. দেখাও যে, $P(x) = ax^3 + bx^2 + cx + d$ বহুপদীর $x - 1$ একটি উৎপাদক হবে যদি ও কেবল যদি $a + b + c + d = 0$ হয়।\n\nসমাধান: মনে করি, $a + b + c + d = 0 \\text{।}$\nতাহলে, $P(1) = a + b + c + d = 0$ [শর্তানুসারে]।\nসুতরাং, $x - 1$, $P(x)$ এর একটি উৎপাদক [উৎপাদক উপপাদ্যের সাহায্যে]।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

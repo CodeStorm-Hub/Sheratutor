@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 180,
+  "pdf_page_no": 185,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$(\\pi + \\theta)$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ ($0 < \\theta < \\frac{\\pi}{2}$): \n\nধরি ঘূর্ণায়মান রশ্মি $OA$ আদি অবস্থান $OX$ থেকে ঘড়ির কাঁটার বিপরীত দিকে ঘুরে প্রথম চতুর্ভাগে $\\angle XOA = \\theta$ এবং একই দিকে আরও ঘুরে তৃতীয় চতুর্ভাগে $\\angle AOA' = \\pi$ কোণ উৎপন্ন করে (নিচের চিত্র)। তাহলে $\\angle XOA' = (\\pi + \\theta)$।\n\nএখন $OA$ রশ্মির উপর যেকোনো বিন্দু $P$ এবং $OA'$ এর উপর $Q$ বিন্দুটি এমনভাবে নিই যেন, $OP = OQ = r$ হয়। $P$ ও $Q$ হতে $x$-অক্ষের উপর $PM$ ও $QN$ লম্ব টানি।\n\n$\\triangle POM$ ও $\\triangle QON$ সমকোণী ত্রিভুজদ্বয়ের মধ্যে $\\angle OMP = \\angle ONQ$, $\\angle POM = \\angle QON$ এবং $OP = OQ = r$। সুতরাং ত্রিভুজদ্বয় সর্বসম।\n\n$\\therefore PM = QN$ এবং $OM = ON$\n\nএখন $P$ বিন্দুর স্থানাঙ্ক $(x, y)$ হলে, $ON = -x, NQ = -y$\n\n$\\therefore Q$ বিন্দুর স্থানাঙ্ক $(-x, -y)$\n\nঅর্থাৎ, $\\sin(\\pi + \\theta) = \\frac{-y}{r} = -\\frac{y}{r} = -\\sin\\theta$\n\n$\\cos(\\pi + \\theta) = \\frac{-x}{r} = -\\frac{x}{r} = -\\cos\\theta, \\tan(\\pi + \\theta) = \\frac{-y}{-x} = \\frac{y}{x} = \\tan\\theta$\n\nঅনুরূপভাবে, $\\cosec(\\pi + \\theta) = -\\cosec\\theta$\n\n$\\sec(\\pi + \\theta) = -\\sec\\theta, \\cot(\\pi + \\theta) = \\cot\\theta$\n\nমন্তব্য: যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২০. $\\sin\\left(\\frac{4\\pi}{3}\\right) = \\sin\\left(\\pi + \\frac{\\pi}{3}\\right) = -\\sin\\left(\\frac{\\pi}{3}\\right) = -\\frac{\\sqrt{3}}{2}$\n\n$\\cos\\left(\\frac{5\\pi}{4}\\right) = \\cos\\left(\\pi + \\frac{\\pi}{4}\\right) = -\\cos\\left(\\frac{\\pi}{4}\\right) = -\\frac{1}{\\sqrt{2}}$\n\n$\\tan\\left(\\frac{7\\pi}{6}\\right) = \\tan\\left(\\pi + \\frac{\\pi}{6}\\right) = \\tan\\left(\\frac{\\pi}{6}\\right) = \\frac{1}{\\sqrt{3}}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $\\sec\\left(\\frac{4\\pi}{3}\\right), \\cosec\\left(\\frac{5\\pi}{4}\\right), \\cot\\left(\\frac{7\\pi}{6}\\right)$ এর মান নির্ণয় করো।",
+      "activity_tag": "কাজ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_trig_pi_plus_theta",
+      "caption": null,
+      "box_2d": [
+        181,
+        552,
+        427,
+        880
+      ]
+    }
+  ]
+}

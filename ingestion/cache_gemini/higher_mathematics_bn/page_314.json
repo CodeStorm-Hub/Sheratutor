@@ -1,0 +1,100 @@
+{
+  "printed_page_no": 314,
+  "pdf_page_no": 319,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৭. Probability tree এর সাহায্যে নিচের ছকটি পূরণ করো:",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| মুদ্রা নিক্ষেপ | সকল সম্ভাব্য ফলাফল | সম্ভাবনা |\n| :--- | :--- | :--- |\n| একবার মুদ্রা নিক্ষেপ | | $P(T) =$ |\n| দুইবার মুদ্রা নিক্ষেপ | | $P(1H) =$ |\n| | | $P(HT) =$ |\n| তিনবার মুদ্রা নিক্ষেপ | | $P(HHT) =$ |\n| | | $P(2H) =$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৮. কোনো একজন লোকের ঢাকা হতে রাজশাহী ট্রেনে যাওয়ার সম্ভাবনা $\frac{5}{9}$ এবং রাজশাহী হতে দিনাজপুর বাসে যাওয়ার সম্ভাবনা $\frac{2}{7}$। Probability tree ব্যবহার করে --",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) লোকটি ঢাকা হতে রাজশাহী ট্রেনে নয় এবং রাজশাহী হতে দিনাজপুর বাসে যাওয়ার সম্ভাবনা কত বের করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) লোকটি রাজশাহী ট্রেনে কিন্তু দিনাজপুর বাসে না যাওয়ার সম্ভাবনা বের করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৯. একজন লোকের ঢাকা হতে চট্টগ্রাম ট্রেনে যাওয়ার সম্ভাবনা $\frac{2}{9}$, বাসে যাওয়ার সম্ভাবনা $\frac{3}{7}$, প্লেনে যাওয়ার সম্ভাবনা $\frac{1}{9}$। লোকটির চট্টগ্রাম হতে কক্সবাজার বাসে যাওয়ার সম্ভাবনা $\frac{2}{5}$ এবং গাড়িতে যাওয়ার সম্ভাবনা $\frac{3}{7}$। Probability tree ব্যবহার করে লোকটির চট্টগ্রাম ট্রেনে এবং কক্সবাজার বাসে যাওয়ার সম্ভাবনা বের করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১০. একটি দুই টাকার মুদ্রা চার বার নিক্ষেপ করা হলো। (এর শাপলার পিঠকে $L$ এবং প্রাথমিক শিক্ষার শিশুর পিঠকে $C$ বিবেচনা করো)",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) যদি মুদ্রাকে চারবারের পরিবর্তে দুইবার নিক্ষেপ করা হয় তবে একটি $L$ আসার সম্ভাবনা এবং একটি $C$ না আসার সম্ভাবনা কত?",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) সম্ভাব্য ঘটনার Probability tree অঙ্কন করো এবং নমুনাক্ষেত্রটি লেখো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) দেখাও যে, মুদ্রাটি $n$ সংখ্যক বার নিক্ষেপ করলে সংঘটিত ঘটনা সংখ্যা $2^n$ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "নমুনা প্রশ্ন\nবহুনির্বাচনি প্রশ্ন",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১. একটি ছক্কা নিক্ষেপ করলে 3 ওঠার সম্ভাবনা কোনটি?\nক) $\\frac{1}{6}$\nখ) $\\frac{1}{3}$\nগ) $\\frac{2}{3}$\nঘ) $\\frac{1}{2}$",
+      "activity_tag": "বহুনির্বাচনি প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২. দুটি মুদ্রা নিক্ষেপের ক্ষেত্রে --\n(i) বড়োজোর একটি $H$ পাওয়ার সম্ভাবনা = 0.75",
+      "activity_tag": "বহুনির্বাচনি প্রশ্ন"
+    }
+  ],
+  "figures": []
+}

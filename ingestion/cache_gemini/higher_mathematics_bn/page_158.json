@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 158,
+  "pdf_page_no": 163,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "আমরা জানি, $s = r\\theta$\n\n$$\\text{বা, } \\theta = \\frac{s}{r} = \\frac{11 \\text{ সে.মি.}}{7 \\text{ সে.মি.}}$$\n\n$$= 1.57 \\text{ রেডিয়ান (প্রায়)}$$\n\nনির্ণেয় কোণের পরিমাপ: $1.57$ রেডিয়ান (প্রায়)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮। এহসান সাইকেলে চড়ে বৃত্তাকার পথে 10 সেকেন্ডে একটি বৃত্তচাপ অতিক্রম করে। যদি চাপটি কেন্দ্রে $28^{\\circ}$ কোণ উৎপন্ন করে এবং বৃত্তের ব্যাস 180 মিটার হয়, তবে এহসানের গতিবেগ নির্ণয় করো।\n\nসমাধান: ধরি, এহসান $ABC$ বৃত্তের $B$ বিন্দু থেকে যাত্রা করে 10 সেকেন্ড পরে পরিধির উপর $A$ বিন্দুতে আসে।\n\nতাহলে $AB$ চাপ দ্বারা উৎপন্ন কেন্দ্রস্থ কোণ $\\angle AOB = 28^{\\circ}$\n\n$$OB = \\text{ব্যাসার্ধ} = \\frac{180}{2} \\text{ মিটার} = 90 \\text{ মিটার}$$\n\nধরি, চাপ $AB = s$ মিটার\n\nআমরা জানি,\n$s = r\\theta$\n\n$$= 90 \\times 28 \\times \\frac{\\pi}{180} \\text{ মিটার}$$\n\n$$= 14\\pi \\text{ মিটার}$$\n\n$$= 14 \\times 3.1416 \\text{ মিটার (প্রায়)}$$\n\n$$= 43.98 \\text{ মিটার (প্রায়)}$$\n\n$$\\therefore \\text{ এহসানের গতিবেগ} = \\frac{43.98}{10} \\text{ মিটার/সেকেন্ড} = 4.398 \\text{ মিটার/সেকেন্ড} = 4.4 \\text{ মিটার/সেকেন্ড (প্রায়)}$$\n\nনির্ণেয় গতিবেগ: $4.4$ মিটার/সেকেন্ড (প্রায়)",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯। 540 কিলোমিটার দূরে একটি বিন্দুতে কোনো পাহাড় $7'$ কোণ উৎপন্ন করে। পাহাড়টির উচ্চতা নির্ণয় করো।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1",
+      "caption": null,
+      "box_2d": [
+        58,
+        617,
+        301,
+        887
+      ]
+    },
+    {
+      "figure_id": "fig_2",
+      "caption": null,
+      "box_2d": [
+        444,
+        611,
+        597,
+        874
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 274,
+  "pdf_page_no": 279,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ভেক্টরের যোগের ত্রিভুজবিধি: উপরের চিত্রে $\\underline{u}$ ও $\\underline{v}$ সমান্তরাল না হলে $\\underline{u}, \\underline{v}$ এবং $\\underline{u} + \\underline{v}$ ভেক্টরত্রয় দ্বারা ত্রিভুজ উৎপন্ন হয় বলে উপরিউক্ত যোজন পদ্ধতিকে ত্রিভুজবিধি বলা হয়।\n\nভেক্টরের যোগের ত্রিভুজবিধির অনুসিন্দান্ত হিসেবে ভেক্টরের যোগের সামান্তরিক বিধি নিম্নরূপ:\n\nভেক্টরের যোগের সামান্তরিক বিধি: কোনো সামান্তরিকের দুটি সন্নিহিত বাহু দ্বারা দুইটি ভেক্টর $\\underline{u}$ ও $\\underline{v}$ এর মান ও দিক সূচিত হলে, ঐ সামান্তরিকের যে কর্ণ $\\underline{u}$ ও $\\underline{v}$ ভেক্টরদ্বয়ের ধারক রেখার ছেদবিন্দুগামী তা দ্বারা $\\underline{u} + \\underline{v}$ ভেক্টরের মান ও দিক সূচিত হয়। নিচে আমরা এটার প্রমাণ দেখব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: মনে করি, যেকোনো বিন্দু থেকে অঙ্কিত $\\underline{u}$ এবং $\\underline{v}$ ভেক্টরদ্বয় $\\overrightarrow{OA}$ এবং $\\overrightarrow{OB}$ দ্বারা সূচিত হয়েছে। $OACB$ সামান্তরিক ও তার $OC$ কর্ণ অঙ্কন করি। তাহলে ঐ সামান্তরিকের $\\overrightarrow{OC}$ কর্ণ দ্বারা $\\underline{u}$ এবং $\\underline{v}$ এর যোগফল সূচিত হবে। অর্থাৎ $\\overrightarrow{OC} = \\underline{u} + \\underline{v}$।\n\n$OACB$ সামান্তরিকের $OB$ ও $AC$ সমান ও সমান্তরাল। $\\therefore \\overrightarrow{AC} = \\overrightarrow{OB} = \\underline{v}$ [ভেক্টরের স্থানান্তর]\n\n$\\therefore$ ত্রিভুজবিধি কাজে লাগিয়ে $\\underline{u} + \\underline{v} = \\overrightarrow{OA} + \\overrightarrow{OB} = \\overrightarrow{OA} + \\overrightarrow{AC} = \\overrightarrow{OC}$ [প্রমাণিত]\n\n**দ্রষ্টব্য:** ক) দুই বা ততোধিক ভেক্টরের যোগফলকে তাদের লব্ধিও বলা হয়। বল বা বেগের লব্ধি নির্ণয়ের ক্ষেত্রে ভেক্টর যোগের পদ্ধতি অনুসরণ করতে হয়। খ) দুটি ভেক্টর সমান্তরাল হলে তাদের যোগের ক্ষেত্রে সামান্তরিক বিধি প্রযোজ্য নয়, কিন্তু ত্রিভুজবিধি সকল ক্ষেত্রে প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ভেক্টরের বিয়োগ",
+      "chunk_type": "theory",
+      "content_markdown": "$\\underline{u}$ এবং $\\underline{v}$ ভেক্টরদ্বয়ের বিয়োগফল $\\underline{u} - \\underline{v}$ বলতে $\\underline{u}$ এবং $-\\underline{v}$ (অর্থাৎ $\\underline{v}$ এর বিপরীত ভেক্টর) ভেক্টরদ্বয়ের যোগফল $\\underline{u} + (-\\underline{v})$ বোঝায়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12_1",
+      "caption": null,
+      "box_2d": [
+        75,
+        407,
+        215,
+        616
+      ]
+    },
+    {
+      "figure_id": "fig_12_2",
+      "caption": null,
+      "box_2d": [
+        420,
+        360,
+        558,
+        663
+      ]
+    }
+  ]
+}

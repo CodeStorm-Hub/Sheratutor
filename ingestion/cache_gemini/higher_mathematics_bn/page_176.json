@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 176,
+  "pdf_page_no": 181,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": "১১",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. মান নির্ণয় করো:\n\nক) $\\sin^2 \\frac{\\pi}{6} + \\cos^2 \\frac{\\pi}{4} + \\tan^2 \\frac{\\pi}{3} + \\cot^2 \\frac{\\pi}{6}$\n\nখ) $3\\tan^2 \\frac{\\pi}{4} - \\sin^2 \\frac{\\pi}{3} - \\frac{1}{2}\\cot^2 \\frac{\\pi}{6} + \\frac{1}{3}\\sec^2 \\frac{\\pi}{4}$\n\nগ) $\\tan^2 \\frac{\\pi}{4} - \\sin^2 \\frac{\\pi}{3}\\tan^2 \\frac{\\pi}{6}\\tan^2 \\frac{\\pi}{3}\\cos^2 \\frac{\\pi}{4}$\n\nঘ) $\\frac{\\tan \\frac{\\pi}{3} - \\tan \\frac{\\pi}{6}}{1 + \\tan \\frac{\\pi}{3} \\tan \\frac{\\pi}{6}} + \\cos \\frac{\\pi}{3} \\cos \\frac{\\pi}{6} + \\sin \\frac{\\pi}{3} \\sin \\frac{\\pi}{6}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১২",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১২. সরল করো:\n$$\\frac{1 - \\sin^2 \\frac{\\pi}{6}}{1 + \\sin^2 \\frac{\\pi}{4}} \\times \\frac{\\cos^2 \\frac{\\pi}{3} + \\cos^2 \\frac{\\pi}{6}}{\\operatorname{cosec}^2 \\frac{\\pi}{2} - \\cot^2 \\frac{\\pi}{2}} \\div \\left(\\sin \\frac{\\pi}{3}\\tan \\frac{\\pi}{6}\\right) + \\left(\\sec^2 \\frac{\\pi}{6} - \\tan^2 \\frac{\\pi}{6}\\right)$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "বিভিন্ন কোণের ত্রিকোণমিতিক অনুপাতসমূহ",
+      "chunk_type": "theory",
+      "content_markdown": "ত্রিকোণমিতিক আলোচনার দ্বিতীয় অংশে আমরা সূক্ষ্মকোণের $\\left(0 < \\theta < \\frac{\\pi}{2}\\right)$ অনুপাতসমূহ নির্ণয়ের কৌশল আলোচনা করেছি। অনুপাতসমূহের পারস্পরিক সম্পর্ক এবং এতদসংক্রান্ত কয়েকটি সহজ অভেদ প্রমাণ করা হয়েছে। বিভিন্ন চতুর্ভাগে অনুপাতসমূহের চিহ্ন নির্ধারণ, আদর্শ কোণসমূহের ত্রিকোণমিতিক অনুপাত এবং অনুপাতসমূহের সর্বনিম্ন ও সর্বোচ্চ মানের ধারণাও দেওয়া হয়েছে। আলোচনার এই অংশে প্রথমে ঋণাত্মক কোণ $(-\\theta)$ এর অনুপাতসমূহ নির্ণয় করা হবে। এর উপর ভিত্তি করে ধারাবাহিকভাবে $\\frac{\\pi}{2} - \\theta$, $\\frac{\\pi}{2} + \\theta$, $\\pi + \\theta$, $\\pi - \\theta$, $\\frac{3\\pi}{2} + \\theta$, $\\frac{3\\pi}{2} - \\theta$, $2\\pi + \\theta$, $2\\pi - \\theta$ এবং $\\frac{n\\pi}{2} + \\theta$ ও $\\frac{n\\pi}{2} - \\theta$ [যেখানে $n$ ধনাত্মক পূর্ণসংখ্যা এবং $0 < \\theta < \\frac{\\pi}{2}$] কোণসমূহের ত্রিকোণমিতিক আলোচনা অন্তর্ভুক্ত থাকবে।\n\n$(-\\theta)$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ $\\left(0 < \\theta < \\frac{\\pi}{2}\\right)$:\n\nমনে করি ঘূর্ণায়মান রশ্মি $OA$ এর আদি অবস্থান $OX$ থেকে ঘড়ির কাটার বিপরীত দিকে ঘুরে প্রথম চতুর্ভাগে $\\angle XOA = \\theta$ এবং ঘড়ির কাটার দিকে একই দূরত্ব ঘুরে চতুর্থ চতুর্ভাগে $\\angle XOA' = -\\theta$ কোণ উৎপন্ন করে (নিচের চিত্র)। $OA$ রশ্মির উপর যেকোনো বিন্দু $P(x, y)$ নিই। এখন $P(x, y)$ বিন্দু থেকে $OX$ এর ওপর $PN$ লম্ব আঁকি এবং $PN$ কে বর্ধিত করায় তা $OA'$ কে $Q$ বিন্দুতে ছেদ করে। তাহলে $QN$ রেখা $OX$ এর ওপর লম্ব। যেহেতু $P(x, y)$ বিন্দুর অবস্থান প্রথম চতুর্ভাগে সেহেতু $x > 0, y > 0$ এবং $ON = x, PN = y$।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

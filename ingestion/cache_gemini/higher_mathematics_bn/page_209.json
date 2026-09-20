@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 209,
+  "pdf_page_no": 214,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৯. সূচকীয় ও লগারিদমীয় ফাংশন \n২০৯\n\n(iii) যদি $0 < a < 1$ এবং $0 < x < 1$ হয় তবে $\\log_a x > 0$\n\n(iv) যদি $a > 1$ এবং $0 < x < 1$ তবে $\\log_a x < 0$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৩. $x$ এর মান নির্ণয় করো যখন\n\nক) $\\log_{\\sqrt{8}} x = 3\\frac{1}{3}$\n\nখ) $\\log_{10}[98 + \\sqrt{x^2 - 12x + 36}] = 2$\n\nসমাধান:\n\nক) $\\log_{\\sqrt{8}} x = 3\\frac{1}{3} = \\frac{10}{3}$\n\nবা, $x = (\\sqrt{8})^{\\frac{10}{3}} = (\\sqrt{2^3})^{\\frac{10}{3}}$\n\nবা, $x = 2^{\\frac{3}{2}\\cdot \\frac{10}{3}} = 2^5 = 32$\n\n$\\therefore x = 32$\n\nখ) যেহেতু $\\log_{10}[98 + \\sqrt{x^2 - 12x + 36}] = 2$\n\nবা, $98 + \\sqrt{x^2 - 12x + 36} = 10^2 = 100$\n\nবা, $\\sqrt{x^2 - 12x + 36} = 2$\n\nবা, $x^2 - 12x + 36 = 4$\n\nবা, $x^2 - 12x + 32 = 0$\n\nবা, $(x - 4)(x - 8) = 0$\n\n$\\therefore x = 4$ বা $x = 8$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৪. দেখাও যে, $a^{\\log_k b - \\log_k c} \\times b^{\\log_k c - \\log_k a} \\times c^{\\log_k a - \\log_k b} = 1$\n\nসমাধান: ধরি, $p = a^{\\log_k b - \\log_k c} \\times b^{\\log_k c - \\log_k a} \\times c^{\\log_k a - \\log_k b}$\n\nতাহলে, $\\log_k p = (\\log_k b - \\log_k c)\\log_k a + (\\log_k c - \\log_k a)\\log_k b + (\\log_k a - \\log_k b)\\log_k c$\n\nবা $\\log_k p = 0$ বা $p = k^0 = 1$\n\n$\\therefore a^{\\log_k b - \\log_k c} \\times b^{\\log_k c - \\log_k a} \\times c^{\\log_k a - \\log_k b} = 1$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৫. দেখাও যে, $x^{\\log_a y} = y^{\\log_a x}$\n\nসমাধান: ধরি $p = \\log_a y, q = \\log_a x$\n\nসুতারং $a^p = y, a^q = x$\n\n$\\therefore (a^p)^q = y^q$ বা $y^q = a^{pq}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

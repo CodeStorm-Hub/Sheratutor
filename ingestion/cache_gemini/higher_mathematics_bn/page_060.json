@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 60,
+  "pdf_page_no": 65,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বা, $1 \\equiv Ax^4 + 2Ax^2 + A + Bx^4 + Bx^2 + Cx^3 + Cx + Dx^2 + Ex \\cdots \\cdots$ (2)\n\n(2) নং এর উভয় পক্ষে $x^4, \\, x^3, \\, x^2, \\, x$ এর সহগ এবং ধ্রুবক পদ সমীকৃত করে পাই,\n\n$A + B = 0, \\, C = 0, \\, 2A + B + D = 0, \\, C + E = 0, \\, A = 1$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$C + E = 0$ তে $C = 0$ বসিয়ে পাই $E = 0$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$A + B = 0$ তে $A = 1$ বসিয়ে পাই $B = -1$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$2A + B + D = 0$ তে $A = 1$ এবং $B = -1$ বসিয়ে পাই $D = -1$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$\\therefore A = 1, \\, B = -1, \\, C = 0, \\, D = -1$ এবং $E = 0$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(1) নং এ $A, \\, B, \\, C, \\, D$ ও $E$ এর মান বসিয়ে পাই,\n$$\\frac{1}{x(x^2 + 1)^2} \\equiv \\frac{1}{x} - \\frac{x}{x^2 + 1} - \\frac{x}{(x^2 + 1)^2}$$, যা নির্ণেয় আংশিক ভগ্নাংশ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: আংশিক ভগ্নাংশে প্রকাশ কর:\n\nক) $\\frac{x^2 + x + 1}{x^3 + x^2 - 6x}$\n\nখ) $\\frac{x^2}{x^4 + x^2 - 2}$\n\nগ) $\\frac{x^3}{x^4 + 3x^2 + 2}$\n\nঘ) $\\frac{x^2}{(x - 1)^3(x - 2)}$\n\nঙ) $\\frac{1}{1 - x^3}$\n\nচ) $\\frac{2x}{(x + 1)(x^2 + 1)^2}$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ২",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ২\n\n১. মনে কর, $P(x) \\equiv ax^5 + bx^4 + cx^3 + cx^2 + bx + a$ যেখানে $a, \\, b, \\, c$ ধ্রুবক এবং $a \\neq 0$। দেখাও যে, $x - r$ যদি $P(x)$ এর একটি উৎপাদক হয়, তবে $P(x)$ এর আরেকটি উৎপাদক হবে $(rx - 1)$।\n\n২. উৎপাদকে বিশ্লেষণ কর:\n\nক) $x^4 + 7x^3 + 17x^2 + 17x + 6$\n\nখ) $x^3 + 2x^2 + 2x + 1$\n\nগ) $x(y^2 + z^2) + y(z^2 + x^2) + z(x^2 + y^2) + 3xyz$\n\nঘ) $(x + 1)^2(y - z) + (y + 1)^2(z - x) + (z + 1)^2(x - y)$\n\nঙ) $b^2c^2(b^2 - c^2) + c^2a^2(c^2 - a^2) + a^2b^2(a^2 - b^2)$\n\nচ) $15x^2 + 2xy - 24y^2 - x + 24y - 6$\n\nছ) $15x^2 - 24y^2 - 6z^2 + 2xy - xz + 24yz$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

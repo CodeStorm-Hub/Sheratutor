@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 182,
+  "pdf_page_no": 187,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$(\\frac{3\\pi}{2} - \\theta)$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ ($0 < \\theta < \\frac{\\pi}{2}$):\n\nপূর্ববর্তী আলোচনার সাপেক্ষে পাওয়া যায়:\n$$\\sin \\left(\\frac{3\\pi}{2} - \\theta\\right) = \\sin \\left\\{\\pi + \\left(\\frac{\\pi}{2} - \\theta\\right)\\right\\} = -\\sin \\left(\\frac{\\pi}{2} - \\theta\\right) = -\\cos\\theta$$\n$$\\cos \\left(\\frac{3\\pi}{2} - \\theta\\right) = \\cos \\left\\{\\pi + \\left(\\frac{\\pi}{2} - \\theta\\right)\\right\\} = -\\cos \\left(\\frac{\\pi}{2} - \\theta\\right) = -\\sin\\theta$$\n$$\\tan \\left(\\frac{3\\pi}{2} - \\theta\\right) = \\tan \\left\\{\\pi + \\left(\\frac{\\pi}{2} - \\theta\\right)\\right\\} = \\tan \\left(\\frac{\\pi}{2} - \\theta\\right) = \\cot\\theta$$\n\nঅনুরূপভাবে, $\\csc \\left(\\frac{3\\pi}{2} - \\theta\\right) = -\\sec\\theta$\n\n$\\sec \\left(\\frac{3\\pi}{2} - \\theta\\right) = -\\csc\\theta, \\cot \\left(\\frac{3\\pi}{2} - \\theta\\right) = \\tan\\theta$।\n\n**মন্তব্য:** যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$(2\\pi - \\theta)$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ ($0 < \\theta < \\frac{\\pi}{2}$):\n\nপ্রমিত বা আদর্শ অবস্থানে $(2\\pi - \\theta)$ কোণের অবস্থান চতুর্থ চতুর্ভাগে থাকে এবং $(-\\theta)$ কোণের সাথে মিলে যায়। তাই $(-\\theta)$ ও $(2\\pi - \\theta)$ কোণের ত্রিকোণমিতিক অনুপাত সমান।\n\n$\\therefore \\sin(2\\pi - \\theta) = \\sin(-\\theta) = -\\sin\\theta, \\cos(2\\pi - \\theta) = \\cos(-\\theta) = \\cos\\theta$\n\n$\\tan(2\\pi - \\theta) = \\tan(-\\theta) = -\\tan\\theta, \\csc(2\\pi - \\theta) = \\csc(-\\theta) = -\\csc\\theta$\n\n$\\sec(2\\pi - \\theta) = \\sec(-\\theta) = \\sec\\theta$ এবং $\\cot(2\\pi - \\theta) = \\cot(-\\theta) = -\\cot\\theta$\n\n**মন্তব্য:** যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$(2\\pi + \\theta)$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ ($0 < \\theta < \\frac{\\pi}{2}$):\n\nপ্রমিত বা আদর্শ অবস্থানে $(2\\pi + \\theta)$ কোণের অবস্থান প্রথম চতুর্ভাগে থাকায় $\\theta$ কোণের ও $(2\\pi + \\theta)$ কোণের অনুপাতসমূহ একই হবে।\n\n$\\therefore \\sin(2\\pi + \\theta) = \\sin\\theta, \\cos(2\\pi + \\theta) = \\cos\\theta$\n\n$\\tan(2\\pi + \\theta) = \\tan\\theta, \\csc(2\\pi + \\theta) = \\csc\\theta$\n\n$\\sec(2\\pi + \\theta) = \\sec\\theta, \\cot(2\\pi + \\theta) = \\cot\\theta$।\n\n**মন্তব্য:** যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

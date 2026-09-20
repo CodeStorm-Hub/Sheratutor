@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 322,
+  "pdf_page_no": 327,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৮. শর্ত $x < -2$ অথবা $x > 0$; সমষ্টি = $\\frac{1}{x}$\n\n৯. ক) $\\frac{3}{11}$ খ) $\\frac{41}{3330}$ গ) $3\\frac{403}{9990}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৮.১",
+      "section_title": "অনুশীলনী ৮.১",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৮.১\n\n১. ক) (i) $1.3177$ রেডিয়ান (প্রায়) (ii) $0.9759$ রেডিয়ান (প্রায়) (iii) $0.5824$ রেডিয়ান (প্রায়)\nখ) (i) $110^\\circ 46' 9.23''$ (ii) $75^\\circ 29' 54.5''$ (iii) $55^\\circ 54' 53.35''$\n\n৩. $12.7549$ মি. (প্রায়)\n৮. $57$ কিমি/ঘণ্টা (প্রায়)\n৫. $\\frac{\\pi}{5}$ রেডিয়ান, $\\frac{\\pi}{2}$ রেডিয়ান\n৬. $\\frac{2\\pi}{9}, \\frac{\\pi}{3}, \\frac{4\\pi}{9}$\n৭. $562$ কিমি (প্রায়)\n৮. $1, 135.3$ কিমি (প্রায়)\n৯. $4.78$ মি./সে. (প্রায়)\n১০. $1$ কিমি (প্রায়)\n১১. $1.833$ রেডিয়ান (প্রায়)\n১২. $114.59$ মিটার (প্রায়)\n১৩. $1745$ মি.(প্রায়) বা $1.75$ কিমি (প্রায়)",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৮.২",
+      "section_title": "অনুশীলনী ৮.২",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৮.২\n\n১. ক) $\\frac{1}{\\sqrt{6}}$\nখ) $2$\n২. $\\tan\\theta = \\frac{3}{4}, \\sin\\theta = -\\frac{3}{5}$\n৩. $\\cos A = -\\frac{1}{\\sqrt{5}}, \\tan A = -2$\n৮. $\\sin A = \\frac{\\sqrt{3}}{2}, \\tan A = \\sqrt{3}$\n৫. $\\sin A = -\\frac{5}{13}, \\cos A = \\frac{12}{13}$\n৯. $\\frac{x^2 + y^2}{x^2 - y^2}$\n১১. ক) $\\frac{27}{4}$\nখ) $\\frac{17}{12}$\nগ) $\\frac{5}{8}$\nঘ) $\\frac{5\\sqrt{3}}{6}$\n১২. $2$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৮.৩",
+      "section_title": "অনুশীলনী ৮.৩",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৮.৩\n\n৩. ক) $0$\nখ) $0$\nগ) অসংজ্ঞায়িত\nঘ) $\\frac{1}{\\sqrt{3}}$\nঙ) $\\frac{2}{\\sqrt{3}}$\nচ) অসংজ্ঞায়িত\nছ) $-\\frac{1}{2}$\nজ) $\\frac{\\sqrt{3}}{2}$\n৫. ক) $0$\nখ) $1$\nগ) $2$\nঘ) $2$\nঙ) $2$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

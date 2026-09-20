@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 14,
+  "pdf_page_no": 19,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: স্বাভাবিক সংখ্যার সেট $N$ একটি অননত সেট।\n\nসান্ত সেটের উপাদান সংখ্যা\nসান্ত সেট $A$ এর উপাদান সংখ্যা $n(A)$ দ্বারা সূচিত করা হয়েছে এবং $n(A)$ নির্ধারণের পদ্ধতি ব্যাখ্যা করা হয়েছে। এবার মনে করি, $n(A) = p > 0, \\; n(B) = q > 0$ যেখানে $A \\cap B = \\emptyset$ ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপরের চিত্রে বর্ণিত এক-এক মিল থেকে দেখা যায় যে, $A \\cup B \\sim J_{p+q}$ ।\nঅর্থাৎ, $n(A \\cup B) = p + q = n(A) + n(B)$ । এ থেকে নিচের প্রতিজ্ঞাটি বলা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "প্রতিজ্ঞা ৮",
+      "chunk_type": "theory",
+      "content_markdown": "যদি $A$ ও $B$ পরস্পর নিসছেদ সান্ত সেট হয়, তবে $n(A \\cup B) = n(A) + n(B)$ ।\nএই প্রতিজ্ঞাকে সম্প্রসারণ করে বলা যায় যে, $n(A \\cup B \\cup C) = n(A) + n(B) + n(C)$ ।\nএকইভাবে $n(A \\cup B \\cup C \\cup D) = n(A) + n(B) + n(C) + n(D)$ ইত্যাদি,\nযেখানে $A, B, C, D$ সেটগুলো পরস্পর নিসছেদ সান্ত সেট ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "প্রতিজ্ঞা ৯",
+      "chunk_type": "theory",
+      "content_markdown": "যেকোনো সান্ত সেট $A$ ও $B$ এর জন্য $n(A \\cup B) = n(A) + n(B) - n(A \\cap B)$ ।\n\nপ্রমাণ: এখানে, $A \\setminus B, \\; A \\cap B$ এবং $B \\setminus A$ সেট তিনটি পরস্পর নিসছেদ সেট [ভেস্নচিত্র দ্রষ্টব্য]।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1_1",
+      "caption": null,
+      "box_2d": [
+        230,
+        146,
+        452,
+        824
+      ]
+    },
+    {
+      "figure_id": "fig_1_2",
+      "caption": null,
+      "box_2d": [
+        739,
+        292,
+        948,
+        701
+      ]
+    }
+  ]
+}

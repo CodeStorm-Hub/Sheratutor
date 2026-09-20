@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 168,
+  "pdf_page_no": 169,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অর্থাৎ $\\frac{|x|}{|x_1|} = \\frac{|y|}{|y_1|} = \\frac{|OP|}{|OP_1|} = \\frac{r}{r_1}$\n\nএখানে, $OP = r$, $OP_1 = r_1$, $x$ ও $x_1$ এবং $y$ ও $y_1$ একই চিহ্নযুক্ত।\n\n$\\therefore \\frac{x}{x_1} = \\frac{y}{y_1} = \\frac{r}{r_1}$ অর্থাৎ, $\\frac{x}{r} = \\frac{x_1}{r_1}$ এবং $\\frac{y}{r} = \\frac{y_1}{r_1}$\n\nসুতরাং $\\sin\\theta = \\frac{y}{r} = \\frac{y_1}{r_1}$\n\n$\\cos\\theta = \\frac{x}{r} = \\frac{x_1}{r_1}, \\quad \\tan\\theta = \\frac{y}{x} = \\frac{y_1}{x_1}$ ইত্যাদি।\n\nসিদ্ধান্ত: ত্রিকোণমিতিক অনুপাতসমূহের মান প্রান্তিক রশ্মি $OA$ এর উপর নির্বাচিত বিন্দু $P$ এর উপর নির্ভর করে না।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষনীয় ৩: $\\theta$ সূক্ষ্মকোণ হলে প্রমিত বা আদর্শ অবস্থানে এর প্রান্তিক বাহু $OA$ প্রথম চতুর্ভাগে থাকে এবং $\\theta = \\angle XOA$ হয় (পাশের চিত্র)। $OA$ বাহুতে যেকোনো বিন্দু $P(x, y)$ নিয়ে এবং $P$ থেকে $OX$ এর উপর $PM$ লম্ব টেনে দেখা যায় যে, $OM = x$, $PM = y$ এবং $OP = r$ ধরে পূর্ববর্তী আলোচনার (ক) ও (খ) থেকে $\\theta$ কোণের অনুপাতগুলোর একই মান পাওয়া যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(গ) ত্রিকোণমিতিক অনুপাতগুলোর পারস্পরিক সম্পর্ক: ত্রিকোণমিতিক অনুপাতগুলোর সংজ্ঞা থেকে আমরা লক্ষ্য করি যে,\n\n$$\\sin\\theta = \\frac{\\text{লম্ব}}{\\text{অতিভুজ}}, \\quad \\text{cosec}\\theta = \\frac{\\text{অতিভুজ}}{\\text{লম্ব}} = \\frac{1}{\\frac{\\text{লম্ব}}{\\text{অতিভুজ}}} = \\frac{1}{\\sin\\theta}$$\n\n$$\\therefore \\sin\\theta = \\frac{1}{\\text{cosec}\\theta} \\text{ এবং } \\text{cosec}\\theta = \\frac{1}{\\sin\\theta}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুরূপভাবে, $\\cos\\theta = \\frac{\\text{ভূমি}}{\\text{অতিভুজ}}, \\quad \\text{sec}\\theta = \\frac{\\text{অতিভুজ}}{\\text{ভূমি}} = \\frac{1}{\\frac{\\text{ভূমি}}{\\text{অতিভুজ}}} = \\frac{1}{\\cos\\theta}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1",
+      "caption": null,
+      "box_2d": [
+        354,
+        626,
+        501,
+        879
+      ]
+    },
+    {
+      "figure_id": "fig_2",
+      "caption": null,
+      "box_2d": [
+        699,
+        381,
+        879,
+        613
+      ]
+    }
+  ]
+}

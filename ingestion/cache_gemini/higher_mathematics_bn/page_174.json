@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 174,
+  "pdf_page_no": 179,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৬. $A = \frac{\\pi}{3}$ ও $B = \\frac{\\pi}{6}$ হলে প্রমাণ করো যে,\n\n(ক) $\\sin(A + B) = \\sin A \\cos B + \\cos A \\sin B$\n\n(খ) $\\tan(A - B) = \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B}$\n\nসমাধান:\n\n(ক) বামপক্ষ $= \\sin(A + B) = \\sin(\\frac{\\pi}{3} + \\frac{\\pi}{6}) = \\sin \\frac{\\pi}{2} = 1$\n\nডানপক্ষ $= \\sin A \\cos B + \\cos A \\sin B = \\sin \\frac{\\pi}{3} \\cos \\frac{\\pi}{6} + \\cos \\frac{\\pi}{3} \\sin \\frac{\\pi}{6}$\n\n$= \\frac{\\sqrt{3}}{2} \\cdot \\frac{\\sqrt{3}}{2} + \\frac{1}{2} \\cdot \\frac{1}{2} = \\frac{3}{4} + \\frac{1}{4} = 1$\n\n$\\therefore$ বামপক্ষ $=$ ডানপক্ষ (প্রমাণিত)।\n\n(খ) বামপক্ষ $= \\tan(A - B) = \\tan(\\frac{\\pi}{3} - \\frac{\\pi}{6}) = \\tan \\frac{\\pi}{6} = \\frac{1}{\\sqrt{3}}$\n\nডানপক্ষ $= \\frac{\\tan A - \\tan B}{1 + \\tan A \\tan B} = \\frac{\\tan \\frac{\\pi}{3} - \\tan \\frac{\\pi}{6}}{1 + \\tan \\frac{\\pi}{3} \\tan \\frac{\\pi}{6}}$\n\n$= \\frac{\\sqrt{3} - \\frac{1}{\\sqrt{3}}}{1 + \\sqrt{3} \\cdot \\frac{1}{\\sqrt{3}}} = \\frac{\\frac{2}{\\sqrt{3}}}{2} \\times \\frac{1}{2} = \\frac{1}{\\sqrt{3}}$\n\n$\\therefore$ বামপক্ষ $=$ ডানপক্ষ (প্রমাণিত)।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $A = \\frac{\\pi}{3}$ ও $B = \\frac{\\pi}{6}$ এর জন্য নিম্নোক্ত অভেদসমূহ প্রমাণ করো:\n\n(ক) $\\sin(A - B) = \\sin A \\cos B - \\cos A \\sin B$\n\n(খ) $\\cos(A + B) = \\cos A \\cos B - \\sin A \\sin B$\n\n(গ) $\\cos(A - B) = \\cos A \\cos B + \\sin A \\sin B$\n\n(ঘ) $\\tan 2B = \\frac{2 \\tan B}{1 - \\tan^2 B}$",
+      "activity_tag": "কাজ"
+    }
+  ],
+  "figures": []
+}

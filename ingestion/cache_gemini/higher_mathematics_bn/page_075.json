@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 75,
+  "pdf_page_no": 80,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অর্থাৎ, $G$ বিন্দু $AP$ মধ্যমাকে $2 : 1$ অনুপাতে বিভক্ত করেছে।\n\n$\\therefore G$ বিন্দু $\\triangle ABC$ এর ভরকেন্দ্র। [প্রমাণিত]",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "দ্রষ্টব্য:",
+      "chunk_type": "theory",
+      "content_markdown": "**দ্রষ্টব্য:**\n\nক) নববিন্দুবৃত্ত (Nine Point Circle): কোনো ত্রিভুজের বাহুগুলোর মধ্যবিন্দুত্রয়, শীর্ষবিন্দুগুলো থেকে বিপরীত বাহুদ্বয়ের উপর অঙ্কিত লম্বত্রয়ের পাদবিন্দুত্রয় এবং শীর্ষবিন্দু ও লম্ববিন্দুর সংযোজক রেখাত্রয়ের মধ্যবিন্দুত্রয়, সর্বমোট এই নয়টি বিন্দু একই বৃত্তের উপর অবস্থান করে। এই বৃত্তকেই নববিন্দুবৃত্ত বলে।\n\nখ) ত্রিভুজের লম্ববিন্দু ও পরিকেত্র সংযোজককারী রেখাংশের মধ্যবিন্দুই নববিন্দু বৃত্তের কেন্দ্র।\n\nগ) নববিন্দু বৃত্তের ব্যাসার্ধ ত্রিভুজের পরিব্যাসার্ধের অর্ধেকের সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১১",
+      "section_title": "উপপাদ্য ১১",
+      "chunk_type": "theory",
+      "content_markdown": "**উপপাদ্য ১১ (ব্রহ্মগুপ্তের উপপাদ্য)।** বৃত্তে অন্তর্লিখিত কোনো চতুর্ভুজের কর্ণ দুটি যদি পরস্পর লম্ব হয়, তবে তাদের ছেদ বিন্দু হতে কোনো বাহুর উপর অঙ্কিত লম্ব বিপরীত বাহুকে সমদ্বিখণ্ডিত করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**বিশেষ নির্বচন:** মনে করি, বৃত্তে অন্তর্লিখিত $ABCD$ চতুর্ভুজের কর্ণদ্বয় $AC$ ও $BD$ পরস্পরকে লম্বভাবে $M$ বিন্দুতে ছেদ করে। $M$ হতে $BC$ বাহুর উপর $ME$ লম্ব এবং বর্ধিত $EM$ বিপরীত $AD$ বাহুকে $F$ বিন্দুতে ছেদ করে। প্রমাণ করতে হবে $AF = FD$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**প্রমাণ:** একই চাপ $CD$ এর উপর দণ্ডায়মান বলে $\\angle CBD = \\angle CAD$\n\nঅর্থাৎ, $\\angle CBM = \\angle MAF$\n\nআবার, $\\angle CBM = \\angle CME$ [উভয়ে একই $\\angle BME$ এর পূরক কোণ বলে]\n\nসুতরাং $\\angle MAF = \\angle FMA$ [$\\therefore \\angle CME = \\text{বিপ্রতীপ } \\angle FMA$]\n\nফলে $\\triangle AFM$ ত্রিভুজে $AF = FM$\n\nঅনুরূপভাবে দেখানো যায় যে, $\\angle FDM = \\angle BCM = \\angle BME = \\angle DMF$\n\nফলে, $\\triangle DFM$ ত্রিভুজে $FD = FM$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_3_11",
+      "caption": null,
+      "box_2d": [
+        508,
+        375,
+        718,
+        642
+      ]
+    }
+  ]
+}

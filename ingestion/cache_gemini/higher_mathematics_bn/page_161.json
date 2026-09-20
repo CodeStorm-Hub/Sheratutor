@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 161,
+  "pdf_page_no": 166,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এছাড়াও আদর্শ কোণসমূহের $\\left(0, \\frac{\\pi}{6}, \\frac{\\pi}{4}, \\frac{\\pi}{3}, \\frac{\\pi}{2}\\right)$ ত্রিকোণমিতিক অনুপাত এবং অনুপাতসমূহের সর্বোচ্চ বা সর্বনিম্ন মান অর্থাৎ মানের পরিধি সম্পর্কে আলোচনাও এই অংশে অন্তর্ভুক্ত থাকবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সূক্ষ্মকোণের ত্রিকোণমিতিক অনুপাতসমূহ (Trigonometric Ratios of Acute Angles)",
+      "chunk_type": "theory",
+      "content_markdown": "সূক্ষ্মকোণের ত্রিকোণমিতিক অনুপাতসমূহ নির্ণয় করার জন্য আমরা একটি সমকোণী ত্রিভুজ $\\triangle OPQ$ বিবেচনা করি। $\\triangle OPQ$ এ $\\angle OQP$ সমকোণ, $\\angle POQ$ এর সাপেক্ষে $OP$ ত্রিভুজের অতিভুজ (hypotenuse), $OQ$ ভূমি (adjacent side), $PQ$ লম্ব (opposite side) এবং $\\angle POQ = \\theta$ (সূক্ষ্মকোণ)। $OPQ$ সমকোণী ত্রিভুজে সূক্ষ্মকোণ $\\theta$ এর জন্য ছয়টি ত্রিকোণমিতিক অনুপাত (sine, cosine, tangent, secant, cosecant, cotangent) নিম্নরূপভাবে সংজ্ঞায়িত করা হয়:\n\n$$\\sin\\theta = \\frac{PQ}{OP} = \\frac{\\text{লম্ব}}{\\text{অতিভুজ}}$$\n\n$$\\cos\\theta = \\frac{OQ}{OP} = \\frac{\\text{ভূমি}}{\\text{অতিভুজ}}$$\n\n$$\\tan\\theta = \\frac{PQ}{OQ} = \\frac{\\text{লম্ব}}{\\text{ভূমি}}$$\n\n$$\\operatorname{cosec}\\theta = \\frac{OP}{PQ} = \\frac{\\text{অতিভুজ}}{\\text{লম্ব}}$$\n\n$$\\sec\\theta = \\frac{OP}{OQ} = \\frac{\\text{অতিভুজ}}{\\text{ভূমি}}$$\n\n$$\\cot\\theta = \\frac{OQ}{PQ} = \\frac{\\text{ভূমি}}{\\text{লম্ব}}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১০।** একটি সমকোণী ত্রিভুজের ক্ষেত্রে $\\tan\\theta = 3$ হলে অন্য ত্রিকোণমিতিক অনুপাতসমূহ নির্ণয় কর।\n\n**সমাধান:** ধরি, $ABC$ একটি সমকোণী ত্রিভুজ যেখানে অতিভুজ $= AC$, ভূমি $= AB$, লম্ব $= BC$ এবং $\\angle BAC = \\theta$\n\nদেওয়া আছে $\\tan\\theta = 3$\n\nবা, $\\tan\\theta = \\frac{\\text{লম্ব}}{\\text{ভূমি}} = \\frac{3}{1}$\n\n$\\therefore \\text{লম্ব } BC = 3 \\text{ একক এবং ভূমি } AB = 1 \\text{ একক।}\n\nপিথাগোরাসের উপপাদ্য অনুযায়ী\n$\\text{অতিভুজ } AC = \\sqrt{AB^2 + BC^2} = \\sqrt{1^2 + 3^2} = \\sqrt{10} \\text{ একক}$\n\n$\\therefore$ অন্য ত্রিকোণমিতিক অনুপাতসমূহ\n\n$$\\sin\\theta = \\frac{\\text{লম্ব}}{\\text{অতিভুজ}} = \\frac{3}{\\sqrt{10}}$$\n\n$$\\operatorname{cosec}\\theta = \\frac{\\text{অতিভুজ}}{\\text{লম্ব}} = \\frac{\\sqrt{10}}{3}$$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_trig_1",
+      "caption": null,
+      "box_2d": [
+        188,
+        630,
+        366,
+        878
+      ]
+    },
+    {
+      "figure_id": "fig_trig_2",
+      "caption": null,
+      "box_2d": [
+        695,
+        674,
+        882,
+        843
+      ]
+    }
+  ]
+}

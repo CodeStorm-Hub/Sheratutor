@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 186,
+  "pdf_page_no": 191,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$= \\sin\\frac{22}{180}\\pi + \\cos\\frac{6}{180}\\pi - \\sin\\frac{22}{180}\\pi - \\cos\\frac{6}{180}\\pi + \\cos\\frac{60}{180}\\pi$$\n$$= \\cos\\frac{\\pi}{3}$$\n$$= \\frac{1}{2}$$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: মান নির্ণয় করো:\n$$\\cos^2\\frac{\\pi}{15} + \\cos^2\\frac{13\\pi}{30} + \\cos^2\\frac{16\\pi}{15} + \\cos^2\\frac{47\\pi}{30}$$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৫. $\\tan\\theta = \\frac{5}{12}$ এবং $\\cos\\theta$ ঋণাত্মক হলে, প্রমাণ করো যে, $\\frac{\\sin\\theta + \\cos(-\\theta)}{\\sec(-\\theta) + \\tan\\theta} = \\frac{51}{26}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: $\\tan\\theta = \\frac{5}{12}$ এবং $\\cos\\theta$ ঋণাত্মক হওয়ায় $\\theta$ কোণের অবস্থান তৃতীয় চতুর্ভাগে।\nঅর্থাৎ, $\\tan\\theta = \\frac{5}{12} = \\frac{y}{x}$\n$\\therefore x = 12, y = 5$\n$\\therefore r = \\sqrt{(12)^2 + (5)^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13$\n$\\therefore \\sin\\theta = \\frac{-y}{r} = -\\frac{5}{13}$, $\\cos\\theta = \\frac{-x}{r} = \\frac{-12}{13}$ এবং $\\sec\\theta = \\frac{1}{\\cos\\theta} = -\\frac{13}{12}$\n$$\\therefore \\frac{\\sin\\theta + \\cos(-\\theta)}{\\sec(-\\theta) + \\tan\\theta} = \\frac{\\sin\\theta + \\cos\\theta}{\\sec\\theta + \\tan\\theta} \\quad [\\because \\cos(-\\theta) = \\cos\\theta, \\sec(-\\theta) = \\sec\\theta]$$\n$$= \\frac{-\\frac{5}{13} - \\frac{12}{13}}{-\\frac{13}{12} + \\frac{5}{12}} = \\frac{-\\frac{17}{13}}{-\\frac{8}{12}} = \\frac{17}{13} \\times \\frac{12}{8} = \\frac{51}{26} \\quad \\text{[প্রমাণিত]}$$",
+      "activity_tag": "সমাধান"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৬. $\\tan\\theta = -\\sqrt{3}$, $\\frac{\\pi}{2} < \\theta < 2\\pi$ হলে $\\theta$ এর মান কত?",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: $\\tan\\theta$ ঋণাত্মক হওয়ায় $\\theta$ এর অবস্থান দ্বিতীয় বা চতুর্থ চতুর্ভাগে থাকবে।\nদ্বিতীয় চতুর্ভাগে $\\tan\\theta = -\\sqrt{3} = \\tan\\left(\\pi - \\frac{\\pi}{3}\\right) = \\tan\\frac{2\\pi}{3}$\n$\\therefore \\theta = \\frac{2\\pi}{3}$\nএটি গ্রহণযোগ্য মান। কারণ $\\frac{\\pi}{2} < \\theta < 2\\pi$\nআবার, চতুর্থ চতুর্ভাগে $\\tan\\theta = -\\sqrt{3} = \\tan\\left(2\\pi - \\frac{\\pi}{3}\\right) = \\tan\\frac{5\\pi}{3}$",
+      "activity_tag": "সমাধান"
+    }
+  ],
+  "figures": []
+}

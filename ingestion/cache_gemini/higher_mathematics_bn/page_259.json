@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 259,
+  "pdf_page_no": 264,
+  "chapter_no": 11,
+  "chapter_title": "স্থানাঙ্ক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "চিত্র থেকে দেখা যায় যে, $AB$ রেখা $x$ অক্ষের সমান্তরাল এবং $AC$ রেখা $y$ অক্ষের সমান্তরাল।\n\n$AB$ রেখার ঢাল, $m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{2 - 2}{5 - 2} = \frac{0}{3} = 0$\n\n$AC$ রেখার ঢাল $m = \frac{y_2 - y_1}{x_2 - x_1}$ সূত্র দ্বারা নির্ণয় করা যাবে না, কারণ $x_1 = x_2 = 2$ এবং $x_2 - x_1 = 0$। যদি $x_1 = x_2$ হয় তবে রেখার ঢাল নির্ণয় করা যায় না কিন্তু রেখাটি $y$ অক্ষের সমান্তরাল হয়।\n\nসাধারণত কোনো সরলরেখা $A(x_1, y_1)$ ও $B(x_2, y_2)$ বিন্দু দিয়ে অতিক্রম করলে ঢাল,\n\n$$m = \frac{y_2 - y_1}{x_2 - x_1} \text{ বা, } m = \frac{y_1 - y_2}{x_1 - x_2} \text{ যদি } x_1 \neq x_2 \text{ হয়।}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষ করি: যদি $x_1 = x_2$ হয়, তাহলে রেখাটি $y$ অক্ষের সমান্তরাল অর্থাৎ $x$ অক্ষের উপর লম্ব হয়। এই রকম লম্ব রেখা বরাবর বা খাড়া রেখা বরাবর হাঁটা সম্ভব নয়। তাই ঢাল নির্ণয় করাও সম্ভব নয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্য: উপরের চিত্রে $AB$ রেখার যেকোনো বিন্দুতে কোটি অর্থাৎ $y = 2$ এবং $AC$ রেখার যেকোনো বিন্দুতে ভুজ অর্থাৎ $x = 2$ তাই $AB$ সরলরেখার সমীকরণ $y = 2$ এবং $AC$ সরলরেখার সমীকরণ $x = 2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৭. $A(-3, 2)$ এবং $B(3, -2)$ বিন্দু দিয়ে অতিক্রমকারী রেখার ঢাল নির্ণয় করো।\n\nসমাধান: $AB$ রেখার ঢাল $m$ হলে,\n\n$$m = \frac{y_2 - y_1}{x_2 - x_1} = \frac{2 - (-2)}{-3 - 3} = \frac{4}{-6} = \frac{2}{-3}$$\n\nঢাল ঋণাত্মক হওয়ায় রেখাটি $x$ অক্ষের ধনাত্মক দিকের সাথে স্থূলকোণ উৎপন্ন করেছে।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_11_1",
+      "caption": null,
+      "box_2d": [
+        104,
+        545,
+        356,
+        874
+      ]
+    },
+    {
+      "figure_id": "fig_11_2",
+      "caption": null,
+      "box_2d": [
+        706,
+        545,
+        955,
+        873
+      ]
+    }
+  ]
+}

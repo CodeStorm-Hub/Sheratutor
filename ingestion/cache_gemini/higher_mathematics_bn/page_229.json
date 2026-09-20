@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 229,
+  "pdf_page_no": 234,
+  "chapter_no": 10,
+  "chapter_title": "দ্বিপদী বিস্তৃতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. $(1 + \frac{2}{x})^8$ কে পঞ্চম পদ পর্যন্ত বিস্তৃত কর।\n\nসমাধান:\n\nদ্বিপদী বিস্তৃতি ব্যবহার করে $(1 + \frac{2}{x})^8$ এর পঞ্চম পদ পর্যন্ত বিস্তৃতি নিম্নরূপ:\n\n$$(1 + \frac{2}{x})^8 = \binom{8}{0}(\frac{2}{x})^0 + \binom{8}{1}(\frac{2}{x})^1 + \binom{8}{2}(\frac{2}{x})^2 + \binom{8}{3}(\frac{2}{x})^3 + \binom{8}{4}(\frac{2}{x})^4$$\n\n$$= 1 \times 1 + \frac{8}{1} \times \frac{2}{x} + \frac{8 \times 7}{1 \times 2} \times \frac{4}{x^2} + \frac{8 \times 7 \times 6}{1 \times 2 \times 3} \times \frac{8}{x^3} + \frac{8 \times 7 \times 6 \times 5}{1 \times 2 \times 3 \times 4} \times \frac{16}{x^4}$$\n\n$$= 1 + \frac{16}{x} + \frac{112}{x^2} + \frac{448}{x^3} + \frac{1120}{x^4}$$\n\n$$\therefore (1 + \frac{2}{x})^8 = 1 + \frac{16}{x} + \frac{112}{x^2} + \frac{448}{x^3} + \frac{1120}{x^4} \\text{ [পঞ্চম পদ পর্যন্ত বিস্তৃতি]}$$\n\n[প্যাসকেলের ত্রিভুজের সাহায্যে নিজে কর।]",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৪. $(1 - \frac{x^2}{4})^8$ এর বিস্তৃতির $x^3$ ও $x^6$ এর সহগ নির্ণয় কর।\n\nসমাধান: দ্বিপদী বিস্তৃতির সাহায্যে পাই,\n\n$$(1 - \frac{x^2}{4})^8 = \binom{8}{0}(-\frac{x^2}{4})^0 + \binom{8}{1}(-\frac{x^2}{4})^1 + \binom{8}{2}(-\frac{x^2}{4})^2 + \binom{8}{3}(-\frac{x^2}{4})^3 + \binom{8}{4}(-\frac{x^2}{4})^4 + \\cdots$$\n\n$$= 1 \times 1 + \frac{8}{1} \times (-\frac{x^2}{4}) + \frac{8 \times 7}{1 \times 2} \times (\frac{x^4}{16}) + \frac{8 \times 7 \times 6}{1 \times 2 \times 3} \times (-\frac{x^6}{64}) + \frac{8 \times 7 \times 6 \times 5}{1 \times 2 \times 3 \times 4} \times (\frac{x^8}{256}) + \\cdots$$\n\n$$= 1 - 2x^2 + \frac{7}{4}x^4 - \frac{7}{8}x^6 + \\cdots$$\n\n$(1 - \frac{x^2}{4})^8$ এর বিস্তৃতিতে দেখা যাচ্ছে $x^3$ বর্তমান নাই। অর্থাৎ $x^3$ এর সহগ $0$ এবং $x^6$ এর সহগ $-\frac{7}{8}$।\n\n$$\\therefore x^3 \\text{ এর সহগ } 0 \\text{ এবং } x^6 \\text{ এর সহগ } -\\frac{7}{8}$$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: প্যাসকেলের ত্রিভুজের সাহায্যে সত্যতা যাচাই কর।",
+      "activity_tag": "কাজ"
+    }
+  ],
+  "figures": []
+}

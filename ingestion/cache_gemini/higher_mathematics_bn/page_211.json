@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 211,
+  "pdf_page_no": 216,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore x \\log a + y \\log b + z \\log c = k(xy - zx + yz - xy + zx - yz) = 0$$\n$$\\text{বা, } \\log a^x + \\log b^y + \\log c^z = 0$$\n$$\\text{বা, } \\log(a^x b^y c^z) = 0$$\n$$\\text{বা, } \\log(a^x b^y c^z) = \\log 1 \\quad [\\because \\log 1 = 0]$$\n$$\\therefore a^x b^y c^z = 1$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**কাজ:**\n\nক) যদি $\\frac{\\log a}{b-c} = \\frac{\\log b}{c-a} = \\frac{\\log c}{a-b}$ হয়, তাহলে $a^a \\cdot b^b \\cdot c^c$ এর মান নির্ণয় করো।\n\nখ) যদি $a$, $b$, $c$ পরপর তিনটি ধনাত্মক অখণ্ড সংখ্যা হয়, তবে প্রমাণ করো যে,\n$$\\log(1 + ac) = 2 \\log b$$\n\nগ) যদি $a^2 + b^2 = 7ab$ হয়, তবে দেখাও যে,\n$$\\log\\left(\\frac{a+b}{3}\\right) = \\frac{1}{2}\\log(ab) = \\frac{1}{2}(\\log a + \\log b)$$\n\nঘ) যদি $\\log\\left(\\frac{x+y}{3}\\right) = \\frac{1}{2}(\\log x + \\log y)$ হয়, তবে দেখাও যে, $\\frac{x}{y} + \\frac{y}{x} = 7$\n\nঙ) যদি $x = 1 + \\log_a(bc)$, $y = 1 + \\log_b(ca)$ এবং $z = 1 + \\log_c(ab)$ হয়, তবে প্রমাণ করো যে, $xyz = xy + yz + zx$\n\nচ) যদি $2\\log_8(A) = p$, $2\\log_2(2A) = q$ এবং $q - p = 4$ হয়, তবে $A$ এর মান নির্ণয় করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "সূচকীয়, লগারিদমীয় ও পরমমান ফাংশন",
+      "chunk_type": "theory",
+      "content_markdown": "প্রথম অধ্যায়ে আমরা ফাংশন সম্পর্কে বিস্তারিত জেনেছি। এখানে সূচকীয়, লগারিদমীয় ও পরমমান ফাংশন সম্পর্কে আলোচনা করা হলো:\n\n**সূচকীয় ফাংশন**\nনিচের তিনটি সারণিতে বর্ণিতে $(x, y)$ ক্রমজোড়ের মানগুলো লক্ষ্য করি:\n\nসারণি ১\n\nসারণি ২",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "সারণি ১:\n| $x$ | $-2$ | $-1$ | $0$ | $1$ | $2$ | $3$ |\n|---|---|---|---|---|---|---|\n| $y$ | $-4$ | $-2$ | $0$ | $2$ | $4$ | $6$ |\n\nসারণি ২:\n| $x$ | $0$ | $1$ | $2$ | $3$ | $4$ | $5$ |\n|---|---|---|---|---|---|---|\n| $y$ | $0$ | $1$ | $4$ | $9$ | $16$ | $25$ |",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

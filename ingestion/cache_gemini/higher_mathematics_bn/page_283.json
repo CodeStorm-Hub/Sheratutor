@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 283,
+  "pdf_page_no": 288,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সুসুতরাং $\\vec{DE}$ ও $\\vec{BC}$ ভেক্টরদ্বয়ের ধারক রেখা একই বা সমান্তরাল। কিন্তু এখানে ধারক রেখা এক নয়। সুতরাং $\\vec{DE}$ ও $\\vec{BC}$ ভেক্টরদ্বয়ের ধারকদ্বয় অর্থাৎ $DE$ এবং $BC$ সমান্তরাল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. ভেক্টর পদ্ধতিতে প্রমাণ করো যে, সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে।\n\nসমাধান: মনে করি, $ABCD$ সামান্তরিকের কর্ণদ্বয় $AC$ ও $BD$ পরস্পর $O$ বিন্দুতে ছেদ করেছে।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "মনে করি, $\\vec{AO} = \\underline{a}$, $\\vec{BO} = \\underline{b}$, $\\vec{OC} = \\underline{c}$, $\\vec{OD} = \\underline{d}$\n\nপ্রমাণ করতে হবে যে, $|\\underline{a}| = |\\underline{c}|$, $|\\underline{b}| = |\\underline{d}|$\n\n$\\vec{AO} + \\vec{OD} = \\vec{AD}$ এবং $\\vec{BO} + \\vec{OC} = \\vec{BC}$\n\nযেহেতু সামান্তরিকের বিপরীত বাহুদ্বয় পরস্পর সমান ও সমান্তরাল, $\\vec{AD} = \\vec{BC}$\n\nঅর্থাৎ $\\vec{AO} + \\vec{OD} = \\vec{BO} + \\vec{OC}$\n\nবা, $\\underline{a} + \\underline{d} = \\underline{b} + \\underline{c}$\n\nবা, $\\underline{a} - \\underline{c} = \\underline{b} - \\underline{d}$ [উভয় পক্ষে $- \\underline{c} - \\underline{d}$ যোগ করে]\n\nএখানে $\\underline{a}$ ও $\\underline{c}$ এর ধারক $AC$, $\\therefore \\underline{a} - \\underline{c}$ এর ধারক $AC$I\n\n$\\underline{b}$ ও $\\underline{d}$ এর ধারক $BD$, $\\therefore \\underline{b} - \\underline{d}$ এর ধারক $BD$I\n\n$\\underline{a} - \\underline{c}$ ও $\\underline{b} - \\underline{d}$ দুটি সমান অশূন্য ভেক্টর হলে তাদের ধারক রেখা একই অথবা সমান্তরাল হবে। কিন্তু $AC, BD$ দুটিই পরস্পরচ্ছেদী অসমান্তরাল সরলরেখা। সুতরাং $\\underline{a} - \\underline{c}$ ও $\\underline{b} - \\underline{d}$ ভেক্টরদ্বয় অশূন্য হতে পারে না বিধায় এদের মান শূন্য হবে।\n\n$\\therefore \\underline{a} - \\underline{c} = 0$ বা $\\underline{a} = \\underline{c}$ এবং $\\underline{b} - \\underline{d} = 0$ বা $\\underline{b} = \\underline{d}$\n\n$\\therefore |\\underline{a}| = |\\underline{c}|$ এবং $|\\underline{b}| = |\\underline{d}|$\n\nঅর্থাৎ, সামান্তরিকের কর্ণদ্বয় পরস্পরকে সমদ্বিখণ্ডিত করে।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯. ভেক্টর পদ্ধতিতে প্রমাণ করো যে, কোনো চতুর্ভুজের সন্নিহিত বাহুগুলোর মধ্যবিন্দুর সংযোগ রেখসমূহ একটি সামান্তরিক উৎপন্ন করে।\n\nসমাধান: মনে করি, $ABCD$ চতুর্ভুজের বাহুগুলোর মধ্যবিন্দু $P, Q, R, S$I $P$ ও $Q, Q$ ও $R, R$ ও $S, S$ ও $P$ যোগ করি। প্রমাণ করতে হবে যে, $PQRS$ একটি সামান্তরিক।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_parallelogram_diagonals",
+      "caption": null,
+      "box_2d": [
+        253,
+        362,
+        351,
+        626
+      ]
+    }
+  ]
+}

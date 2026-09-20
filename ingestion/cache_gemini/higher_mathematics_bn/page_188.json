@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 188,
+  "pdf_page_no": 193,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $2(\\sin\\theta\\cos\\theta + \\sqrt{3}) = \\sqrt{3}\\cos\\theta + 4\\sin\\theta$ সমীকরণটি সমাধান কর, যেখানে $0 < \\theta < 2\\pi$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৯. $A = \\frac{\\cot\\theta + \\cosec\\theta - 1}{\\cot\\theta - \\cosec\\theta + 1}$ এবং $B = \\cot\\theta + \\cosec\\theta$\n\n(ক) $\\theta = \\frac{\\pi}{3}$ হলে দেখাও যে, $B = \\sqrt{3}$\n\n(খ) প্রমাণ কর যে, $A^2 - B^2 = 0$\n\n(গ) $B = \\frac{1}{\\sqrt{3}}$ এবং $0 < \\theta \\le 2\\pi$ হলে $\\theta$ এর সম্ভাব্য মান নির্ণয় কর।\n\nসমাধান:\n\n(ক) $B = \\cot\\theta + \\cosec\\theta = \\cot\\frac{\\pi}{3} + \\cosec\\frac{\\pi}{3}$ $\\left[\\because \\theta = \\frac{\\pi}{3}\\right]$\n\n$= \\frac{1}{\\sqrt{3}} + \\frac{2}{\\sqrt{3}} = \\frac{3}{\\sqrt{3}} = \\sqrt{3}$\n\n(খ) $A = \\frac{\\cot\\theta + \\cosec\\theta - 1}{\\cot\\theta - \\cosec\\theta + 1}$\n\n$= \\frac{\\cot\\theta + \\cosec\\theta - (\\cosec^2\\theta - \\cot^2\\theta)}{\\cot\\theta - \\cosec\\theta + 1}$ $\\left[\\because \\cosec^2\\theta - \\cot^2\\theta = 1\\right]$\n\n$= \\frac{\\cot\\theta + \\cosec\\theta - (\\cosec\\theta + \\cot\\theta)(\\cosec\\theta - \\cot\\theta)}{\\cot\\theta - \\cosec\\theta + 1}$\n\n$= \\frac{(\\cot\\theta + \\cosec\\theta)(1 - \\cosec\\theta + \\cot\\theta)}{\\cot\\theta - \\cosec\\theta + 1} = \\cot\\theta + \\cosec\\theta = B$\n\n$\\therefore A^2 = B^2$\n\n$\\therefore A^2 - B^2 = 0$\n\n(গ) $B = \\frac{1}{\\sqrt{3}}$\n\nবা, $\\cot\\theta + \\cosec\\theta = \\frac{1}{\\sqrt{3}} \\implies \\frac{\\cos\\theta}{\\sin\\theta} + \\frac{1}{\\sin\\theta} = \\frac{1}{\\sqrt{3}}$\n\nবা, $\\frac{\\cos\\theta + 1}{\\sin\\theta} = \\frac{1}{\\sqrt{3}} \\implies \\sqrt{3}(\\cos\\theta + 1) = \\sin\\theta$\n\nবা, $3(\\cos^2\\theta + 2\\cos\\theta + 1) = \\sin^2\\theta$ [বর্গ করে]\n\nবা, $3\\cos^2\\theta + 6\\cos\\theta + 3 = 1 - \\cos^2\\theta$\n\nবা, $4\\cos^2\\theta + 6\\cos\\theta + 2 = 0 \\implies 2\\cos^2\\theta + 3\\cos\\theta + 1 = 0$\n\nবা, $2\\cos^2\\theta + 2\\cos\\theta + \\cos\\theta + 1 = 0$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

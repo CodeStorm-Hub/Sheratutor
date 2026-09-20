@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 87,
+  "pdf_page_no": 92,
+  "chapter_no": 4,
+  "chapter_title": "জ্যামিতিক অঙ্কন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৩. $BY$ রেখা থেকে $BD = 7$ সে.মি. কেটে নিই।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৪. $C, D$ যোগ করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৫. $CD$ রেখার লম্বদ্বিখণ্ডক আঁকি যা $BD$ কে $A$ বিন্দুতে ছেদ করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৬. $A, C$ যোগ করি, তাহলে $\triangle ABC$-ই নির্ণেয় ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: যেহেতু $AL$, $CD$ এর লম্বদ্বিখণ্ডক, $AD = AC$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে $BD = BA + AD = BA + AC = 7$ সে.মি.।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. ত্রিভুজের ভূমির দৈর্ঘ্য $7.5$ সে.মি., ভূমিসংলগ্ন কোণ $45^\\circ$ এবং অপর দুই বাহুর অন্তর $2.5$ সে.মি. দেওয়া আছে। ত্রিভুজটি অঙ্কন করতে হবে।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: দেওয়া আছে ভূমি $BC = 7.5$ সে.মি., অপর দুই বাহুর অন্তর $AB - AC$ বা $AC - AB = 2.5$ সে.মি. এবং ভূমি সংলগ্ন কোণ $45^\\circ$। ত্রিভুজটি আঁকতে হবে। আমরা এখানে $AB - AC = 2.5$ সে.মি. এর ক্ষেত্রে অঙ্কনের ধাপসমূহ দেখব। [$AC - AB = 2.5$ সে.মি. ধরে ত্রিভুজটি নিজে অঙ্কন করো।]",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_4_1",
+      "caption": null,
+      "box_2d": [
+        356,
+        334,
+        617,
+        664
+      ]
+    }
+  ]
+}

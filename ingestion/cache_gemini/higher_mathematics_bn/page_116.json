@@ -1,0 +1,34 @@
+{
+  "printed_page_no": 116,
+  "pdf_page_no": 121,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$ \begin{aligned} 7. \\quad y^x &= 4 \\\\ y^2 &= 2^x \\\\ 9. \\quad 8y^x - y^{2x} &= 16 \\\\ 2^x &= y^2 \\\\ \text{৮.} \\quad 4^x &= 2^y \\\\ (27)^{xy} &= 9^{y+1} \\\\ \text{লেখচিত্রের সাহায্যে দ্বিঘাত সমীকরণের সমাধান} \notag \\\\ \text{দ্বিঘাত সমীকরণ } ax^2 + bx + c = 0 \text{ এর সমাধান আমরা ইতোপূর্বে বীজগণিতীয় পদ্ধতিতে শিখেছি। এখন লেখচিত্রের সাহায্যে ইহার সমাধান পদ্ধতি আলোচনা করা হবে।} \notag \\\\ \text{মনে করি } y = ax^2 + bx + c \text{। তাহলে } x \text{ এর যে সকল মানের জন্য } y = 0 \text{ হবে অর্থাৎ লেখচিত্রটি } x \text{-অক্ষকে ছেদ করবে, } x \text{ এর ঐ সকল মান-ই } ax^2 + bx + c = 0 \text{ সমীকরণটির সমাধান।} \notag \text{\\\\ \textbf{উদাহরণ ৩৩.} লেখচিত্রের সাহায্যে } x^2 - 5x + 4 = 0 \text{ এর সমাধান করো।} \notag \\\\ \textbf{সমাধান:} \text{প্রদত্ত সমীকরণ } x^2 - 5x + 4 = 0 \text{ ... (1) মনে করি, } y = x^2 - 5x + 4 \text{ ... (2)} \notag \text{\\\\ } x \text{ এর কয়েকটি মানের জন্য } y \text{ এর মান নির্ণয় করে (2) নং এর কয়েকটি বিন্দুর স্থানাঙ্ক নির্ণয় করি:} \notag \\\\\text{উপরের সারণিতে প্রদত্ত বিন্দুগুলো ছক কাগজে স্থাপন করে (2) নং এর লেখচিত্র অঙ্কন করি।} \notag \text{\\\\ देखा যায় যে লেখচিত্রটি } X \text{ অক্ষকে } (1, 0) \text{ ও } (4, 0) \text{ বিন্দুতে ছেদ করেছে।} \notag \text{\\\\ সুতরাং, (1) নং এর সমাধান } x = 1, \text{ } x = 4 \text{।} \notag \text{\\\\ \textbf{উদাহরণ ৩৪.} লেখচিত্রের সাহায্যে } x^2 - 4x + 4 = 0 \text{ এর সমাধান করো।} \notag \text{\\\\ \text{২০২৩}} \notag \frac{}{}\text{\\end{aligned} $$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "$$ \begin{array}{|c|c|c|c|c|c|c|c|} \\\\%hline x & 0 & 1 & 2 & 2.5 & 3 & 4 & 5 \\\\ \\hline y & 4 & 0 & -2 & -2.25 & -2 & 0 & 4 \\\\ \\hline \text{\\end{array}} $$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_5_1",
+      "caption": "লেখচিত্র: y = x^2 - 5x + 4",
+      "box_2d": [
+        606,
+        367,
+        867,
+        617
+      ]
+    }
+  ]
+}

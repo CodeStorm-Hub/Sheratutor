@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 220,
+  "pdf_page_no": 225,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "কাজ",
+      "chunk_type": "theory",
+      "content_markdown": "এখন $(i) \translates x < 4$ এবং $x > -4$\n$\\therefore$ ডোমেন $= \\{x \\in R : x < 4\\} \\cap \\{x \\in R : x > -4\\} = (-\\infty, 4) \\cap (-4, \\infty) = (-4, 4)$\nআবার, $(ii) \translates x > 4$ এবং $x < -4$\n$\\therefore$ ডোমেন $= \\{x \\in R : x > 4\\} \\cap \\{x \\in R : x < -4\\} = (4, \\infty) \\cap (-\\infty, 4) = \\emptyset$\n$\\therefore$ প্রদত্ত ফাংশনের ডোমেন $= (-4, 4) \\cup \\emptyset = (-4, 4)$\n\n**কাজ:**\n\nক) টেবিলে উল্লেখিত $x$ ও $y$ এর মান নিয়ে $y = \\log_{10} x$ এর লেখচিত্র অঙ্কন করো।\n\n$|x| 0.5 | 1 | 2 | 3 | 4 | 5 | 10 | 12 |$\n$|y| -0.3 | 0 | 0.3 | 0.5 | 0.6 | 0.7 | 1 | 1.07 |$\n\nখ) $y = \\log_e x$ এর লেখচিত্র অঙ্কনের জন্য (ক) এর ন্যায় $x$ ও $y$ এর মান নিয়ে টেবিল তৈরি করো ও লেখচিত্র আঁকো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": "৯.২",
+      "section_title": "অনুশীলনী ৯.২",
+      "chunk_type": "theory",
+      "content_markdown": "১। দেখাও যে,\n\nক) $\\log_k (ab) \\log_k \\left(\\frac{a}{b}\\right) + \\log_k (bc) \\log_k \\left(\\frac{b}{c}\\right) + \\log_k (ca) \\log_k \\left(\\frac{c}{a}\\right) = 0$\n\nখ) $\\log_{\\sqrt{a}} b \\times \\log_{\\sqrt{b}} c \\times \\log_{\\sqrt{c}} a = 8$\n\nগ) $\\log_a \\log_a \\log_a \\left(a^{a^{a^b}}\\right) = b$\n\n২। ক) যদি $\\frac{\\log_k a}{b - c} = \\frac{\\log_k b}{c - a} = \\frac{\\log_k c}{a - b}$ হয়, তবে দেখাও যে, $a^a b^b c^c = 1$\n\nখ) যদি $\\frac{\\log_k a}{y - z} = \\frac{\\log_k b}{z - x} = \\frac{\\log_k c}{x - y}$ হয়, তবে দেখাও যে,\n\n(১) $a^{y+z} b^{z+x} c^{x+y} = 1$\n\n(2) $a^{y^2+yz+z^2} \\cdot b^{z^2+zx+x^2} \\cdot c^{x^2+xy+y^2} = 1$\n\nগ) যদি $\\frac{\\log_k (1+x)}{\\log_k x} = 2$ হয়, তবে দেখাও যে, $x = \\frac{1+\\sqrt{5}}{2}$\n\nঘ) দেখাও যে, $\\log_k \\frac{x - \\sqrt{x^2 - 1}}{x + \\sqrt{x^2 - 1}} = 2 \\log_k (x - \\sqrt{x^2 - 1})$\n\n৩। যদি $a^{3-x} b^{5x} = a^{5+x} b^{3x}$ হয়, তবে দেখাও যে, $x \\log_k \\left(\\frac{b}{a}\\right) = \\log_k a$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

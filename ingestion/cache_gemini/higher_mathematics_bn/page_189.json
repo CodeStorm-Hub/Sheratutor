@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 189,
+  "pdf_page_no": 194,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "বা, $2\\cos\\theta(\\cos\\theta + 1) + 1(\\cos\\theta + 1) = 0 \\implies (\\cos\\theta + 1)(2\\cos\\theta + 1) = 0$\n\n$\\therefore \\cos\\theta + 1 = 0$ অথবা, $2\\cos\\theta + 1 = 0$\n\nঅর্থাৎ, $\\cos\\theta = -1$ অথবা, $\\cos\\theta = -\\frac{1}{2}$\n\nঅর্থাৎ, $\\cos\\theta = \\cos\\pi$ অথবা, $\\cos\\theta = \\cos\\left(\\pi - \\frac{\\pi}{3}\\right)$, $\\cos\\left(\\pi + \\frac{\\pi}{3}\\right)$\n\nঅর্থাৎ, $\\theta = \\pi$ অথবা, $\\frac{2\\pi}{3}, \\frac{4\\pi}{3}$; কিন্তু $\\theta = \\pi, \\frac{4\\pi}{3}$ দ্বারা সমীকরণটি সিদ্ধ হয় না।\n\n$\\therefore \\theta = \\frac{2\\pi}{3}$\n\nনির্ণেয় সমাধান: $\\theta = \\frac{2\\pi}{3}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৮.৩",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৮.৩\n\n১. $\\sin A = \\frac{1}{\\sqrt{2}}$ হলে $\\sin 2A$ এর মান কত?\n\nক) $\\frac{1}{\\sqrt{2}}$\n\nখ) $\\frac{1}{2}$\n\nগ) $1$\n\nঘ) $\\sqrt{2}$\n\n২. $\\sin\\theta + \\cos\\theta = 1$ হলে $\\theta$ এর মান হবে-\n\n(i) $0^\\circ$\n\n(ii) $30^\\circ$\n\n(iii) $90^\\circ$\n\nনিচের কোনটি সঠিক?\n\nক) $i$\n\nখ) $ii$\n\nগ) $i$ ও $ii$\n\nঘ) $i$ ও $iii$\n\n৩. মান নির্ণয় করো:\n\nক) $\\sin 7\\pi$\n\nখ) $\\cos\\frac{11\\pi}{2}$\n\nগ) $\\cot 11\\pi$\n\nঘ) $\\tan\\left(-\\frac{23\\pi}{6}\\right)$\n\nঙ) $\\csc\\frac{19\\pi}{3}$\n\nচ) $\\sec\\left(-\\frac{25\\pi}{2}\\right)$\n\nছ) $\\sin\\frac{31\\pi}{6}$\n\nজ) $\\cos\\left(-\\frac{25\\pi}{6}\\right)$\n\n৮. প্রমাণ করো: যে,\n\nক) $\\cos\\frac{17\\pi}{10} + \\cos\\frac{13\\pi}{10} + \\cos\\frac{9\\pi}{10} + \\cos\\frac{\\pi}{10} = 0$\n\nখ) $\\sin^2\\frac{\\pi}{7} + \\sin^2\\frac{5\\pi}{14} + \\sin^2\\frac{8\\pi}{7} + \\sin^2\\frac{9\\pi}{14} = 2$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

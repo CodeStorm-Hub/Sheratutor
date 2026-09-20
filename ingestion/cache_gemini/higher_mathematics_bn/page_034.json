@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 34,
+  "pdf_page_no": 39,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "এখানে $2x + 3 = 0$ হলে অর্থাৎ $x = -\\frac{3}{2}$ হলে, ফাংশনটি অসংজ্ঞায়িত হয়।\n\n$\\therefore x \\neq -\\frac{3}{2}$, সুতরাং ডোম $f = \\mathbb{R} \\setminus \\left\\{-\\frac{3}{2}\\right\\}$।\n\nधরি, $x_1 \\in \\text{ডোম } f$ এবং $x_2 \\in \\text{ডোম } f$\n\n$\\therefore f(x_1) = \\frac{2x_1 - 1}{2x_1 + 3}$ এবং $f(x_2) = \\frac{2x_2 - 1}{2x_2 + 3}$\n\nএখন $f(x_1) = f(x_2)$ হবে, যদি ও কেবল যদি\n\n$$\\frac{2x_1 - 1}{2x_1 + 3} = \\frac{2x_2 - 1}{2x_2 + 3} \\quad \\text{বা, } \\frac{2x_1 - 1}{2x_1 + 3} - 1 = \\frac{2x_2 - 1}{2x_2 + 3} - 1$$\n\n$$\\text{বা, } \\frac{2x_1 - 1 - 2x_1 - 3}{2x_1 + 3} = \\frac{2x_2 - 1 - 2x_2 - 3}{2x_2 + 3}$$\n\n$$\\text{বা, } \\frac{-4}{2x_1 + 3} = \\frac{-4}{2x_2 + 3} \\quad \\text{বা, } 2x_1 + 3 = 2x_2 + 3$$\n\n$$\\text{বা, } 2x_1 = 2x_2 \\quad \\text{বা, } x_1 = x_2 \\text{ হয়।}$$\n\n$\\therefore$ ফাংশনটি এক-এক ফাংশন।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "গ) দেওয়া আছে, $f : x \\to \\frac{2x - 1}{2x + 3}$, সুতরাং $f(x) = \\frac{2x - 1}{2x + 3}$\n\nধরি, $f(x) = y \\quad \\therefore x = f^{-1}(y)$\n\nএখন, $f(x) = \\frac{2x - 1}{2x + 3} \\quad \\text{বা, } y = \\frac{2x - 1}{2x + 3}$\n\nবা, $2xy + 3y = 2x - 1 \\quad \\text{বা, } 2xy - 2x = -3y - 1$\n\nবা, $-2x(1 - y) = -(1 + 3y)$\n\nবা, $x = \\frac{1 + 3y}{2(1 - y)}$\n\nবা, $f^{-1}(y) = \\frac{1 + 3y}{2(1 - y)} \\quad [\\because x = f^{-1}(y)]$\n\nবা, $f^{-1}(x) = \\frac{1 + 3x}{2(1 - x)} \\quad [\\text{চলক পরিবর্তন করে}]$\n\nবা, $2f^{-1}(x) = \\frac{1 + 3x}{1 - x}$\n\nবা, $x = \\frac{1 + 3x}{1 - x} \\quad [\\because 2f^{-1}(x) = x]$\n\nবা, $1 + 3x = x - x^2 \\quad \\text{বা, } x^2 + 3x - x + 1 = 0$\n\nবা, $x^2 + 2x + 1 = 0 \\quad \\text{বা, } (x + 1)^2 = 0$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

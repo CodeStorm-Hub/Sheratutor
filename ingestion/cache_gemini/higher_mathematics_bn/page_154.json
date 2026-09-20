@@ -1,0 +1,34 @@
+{
+  "printed_page_no": 154,
+  "pdf_page_no": 159,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি, $O$ কেন্দ্রবিশিষ্ট $ABC$ বৃত্তের ব্যাসার্ধ $OB = r$ একক, চাপ $AB = s$ একক এবং $AB$ চাপ দ্বারা উৎপন্ন কেন্দ্রস্থ $\\angle AOB = \\theta^c$ । প্রমাণ করতে হবে যে, $s = r\\theta$ ।\n\nঅঙ্কন: $B$ বিন্দুকে কেন্দ্র করে $OB$ এর সমান ব্যাসার্ধ বিশিষ্ট $BP$ চাপ আঁকি যেন তা $ABC$ বৃত্তের পরিধিকে $P$ বিন্দুতে ছেদ করে। $O, P$ যোগ করি।\n\nপ্রমাণ: অঙ্কন অনুসারে $\\angle POB = 1^c$\n\nআমরা জানি, কোনো বৃত্তচাপ দ্বারা উৎপন্ন কেন্দ্রস্থ কোণ ঐ বৃত্তচাপের সমানুপাতিক।\n\n$$\\frac{\\text{চাপ } AB}{\\text{চাপ } PB} = \\frac{\\angle AOB}{\\angle POB}$$\n\nবা, $\\frac{s \\text{ একক}}{r \\text{ একক}} = \\frac{\\theta^c}{1^c}$\n\nবা, $\\frac{s}{r} = \\theta$\n\n$\\therefore s = r\\theta$ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "কোণের ডিগ্রি পরিমাপ ও রেডিয়ান (বৃত্তীয়) পরিমাপের সম্পর্ক",
+      "chunk_type": "theory",
+      "content_markdown": "প্রতিত্জ্ঞা ৩ থেকে আমরা পাই,\n\n$1 \\text{ রেডিয়ান} = \\frac{2}{\\pi} \\text{ সমকোণ}$\n\nঅর্থাৎ, $1^c = \\frac{2}{\\pi} \\text{ সমকোণ} \\, [1 \\text{ রেডিয়ান} = 1^c]$\n\n$$\\therefore 1 \\text{ সমকোণ} = \\left(\\frac{\\pi}{2}\\right)^c$$\n\nবা, $90^0 = \\left(\\frac{\\pi}{2}\\right)^c$\n\n$$\\therefore 1^0 = \\left(\\frac{\\pi}{180}\\right)^c \\text{ এবং } 1^c = \\left(\\frac{180}{\\pi}\\right)^o$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_circle_arc",
+      "caption": null,
+      "box_2d": [
+        75,
+        385,
+        241,
+        613
+      ]
+    }
+  ]
+}

@@ -16,7 +16,7 @@ async function getCurriculumMetadata() {
   const { data: subjects } = await supabase
     .from('subjects')
     .select('id, name_en, name_bn, code')
-    .in('code', ['SSC-PHY', 'SSC-CHEM', 'SSC-MATH', 'SSC-ENG'])
+    .in('code', ['SSC-PHY', 'SSC-CHEM', 'SSC-MATH', 'SSC-HMATH', 'SSC-ENG'])
     .order('name_en');
   
   const subjectIds = (subjects ?? []).map((s) => s.id);

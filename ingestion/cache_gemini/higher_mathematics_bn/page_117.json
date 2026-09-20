@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 117,
+  "pdf_page_no": 122,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: প্রদত্ত সমীকরণ $x^2 - 4x + 4 = 0 \\cdots (1)$ মনে করি, $y = x^2 - 4x + 4 \\cdots (2)$\n\n$x$ এর কয়েকটি মানের জন্য $y$ এর মান নির্ণয় করে (2) নং এর কয়েকটি বিন্দুর স্থানাঙ্ক নির্ণয় করি:",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "$$\\begin{array}{|c|c|c|c|c|c|c|c|}\n\\hline\nx & 0 & 1 & 1.5 & 2 & 2.5 & 3 & 4 \\\\\n\\hline\ny & 4 & 1 & 0.25 & 0 & 0.25 & 1 & 4 \\\\\n\\hline\n\\end{array}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উপরের সারণি হতে প্রাপ্ত বিন্দুগুলো ছক কাগজে স্থাপন করে (2) নং এর লেখচিত্র অঙ্কন করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লেখচিত্রে দেখা যায় যে ইহা $X$ অক্ষকে $(2, 0)$ বিন্দুতে স্পর্শ করেছে। যেহেতু দ্বিঘাত সমীকরণের দুটি মূল থাকে, সেহেতু (1) নং এর সমাধান হবে $x = 2$, $x = 2$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৩৫.** লেখচিত্রের সাহায্যে $x^2 - 2x - 1 = 0$ এর সমাধান করো।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: প্রদত্ত সমীকরণ $x^2 - 2x - 1 = 0 \\cdots (1)$ মনে করি, $y = x^2 - 2x - 1 \\cdots (2)$\n\nসমীকরণটির লেখচিত্র অঙ্কনের জন্য $x$ এর কয়েকটি মান নিয়ে তাদের অনুরূপ $y$ এর মান নির্ণয় করি:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "$$\\begin{array}{|c|c|c|c|c|c|c|c|c|c|}\n\\hline\nx & -1 & -0.5 & 0 & 0.5 & 1 & 1.5 & 2 & 2.5 & 3 \\\\\n\\hline\ny & 2 & 0.25 & -1 & -1.75 & -2 & -1.75 & -1 & 0.25 & 2 \\\\\n\\hline\n\\end{array}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সারণিতে স্থাপিত বিন্দুগুলো ছক কাগজে স্থাপন করে (2) নং এর লেখচিত্র অঙ্কন করি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_5_1",
+      "caption": null,
+      "box_2d": [
+        386,
+        367,
+        563,
+        642
+      ]
+    }
+  ]
+}

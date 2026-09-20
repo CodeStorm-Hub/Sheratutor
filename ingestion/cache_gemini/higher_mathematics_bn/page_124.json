@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 124,
+  "pdf_page_no": 129,
+  "chapter_no": 6,
+  "chapter_title": "অসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$a + c > b + c \\text{ এবং } a - c > b - c$$\n\nগ) $a > b$ হলে যেকোনো $c$ এর জন্য\n$$ac > bc \\text{ এবং } \\frac{a}{c} > \\frac{b}{c} \\text{ যখন } c > 0$$\n$$ac < bc \\text{ এবং } \\frac{a}{c} < \\frac{b}{c} \\text{ যখন } c < 0$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. $x < 2$ হলে\n\nক) $x + 2 < 4$ [উভয়পক্ষে $2$ যোগ করে]\n\nখ) $x - 2 < 0$ [উভয়পক্ষে $2$ বিয়োগ করে]\n\nগ) $2x < 4$ [উভয়পক্ষকে $2$ দ্বারা গুণ করে]\n\nঘ) $-3x > -6$ [উভয়পক্ষকে $-3$ দ্বারা গুণ করে]",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে উল্লেখ্য যে,\n\n$a \\ge b$ এর অর্থ $a > b$ অথবা $a = b$\n\n$a \\le b$ এর অর্থ $a < b$ অথবা $a = b$\n\n$a < b < c$ এর অর্থ $a < b$ এবং $b < c$ যার অর্থ $a < c$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২. $3 \\ge 1$ সত্য যেহেতু $3 > 1$\n\n$2 \\le 4$ সত্য যেহেতু $2 < 4$\n\n$2 < 3 < 4$ সত্য যেহেতু $2 < 3$ এবং $3 < 4$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) তোমাদের শ্রেণির যে সকল ছাত্র-ছাত্রীর উচ্চতা $5$ ফুটের চেয়ে বেশি এবং $5$ ফুটের চেয়ে কম তাদের উচ্চতা অসমতার মাধ্যমে প্রকাশ করো।\n\nখ) কোনো পরীক্ষার মোট নম্বর $1000$ হলে, একজন পরীক্ষার্থীর প্রাপ্ত নম্বর অসমতার মাধ্যমে প্রকাশ করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. সমাধান করো ও সমাধান সেটটি সংখ্যারেখায় দেখাও: $4x + 4 > 16$\n\nসমাধান: দেওয়া আছে, $4x + 4 > 16$\n\nবা, $4x + 4 - 4 > 16 - 4$ [উভয়পক্ষ থেকে $4$ বিয়োগ করে]\n\nবা, $4x > 12$\n\nবা, $\\frac{4x}{4} > \\frac{12}{4}$ [উভয়পক্ষকে $4$ দ্বারা ভাগ করে]",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

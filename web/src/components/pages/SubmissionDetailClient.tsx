@@ -19,6 +19,7 @@ import { ExplainSimplyButton } from '@/components/explain-simply-button';
 import { useLanguage } from '@/context/LanguageContext';
 import { createClient } from '@/lib/supabase/client';
 import { cn } from '@/lib/utils';
+import { RenderMathText } from '@/components/render-math-text';
 
 export interface CriterionItem {
   name: string;
@@ -292,10 +293,12 @@ export function SubmissionDetailClient({
                 <div key={q.id} className="rounded-2xl border border-border bg-card px-5 py-5">
                   <div className="mb-2.5 flex flex-wrap items-center justify-between gap-3">
                     <b className="min-w-0 flex-1 text-[15px] text-foreground">
-                      {language === 'bn'
-                        ? `প্রশ্ন ${q.question_number || qIndex + 1}: `
-                        : `Question ${q.question_number || qIndex + 1}: `}
-                      {qText}
+                      <span className="mr-1.5 font-bold">
+                        {language === 'bn'
+                          ? `প্রশ্ন ${q.question_number || qIndex + 1}:`
+                          : `Question ${q.question_number || qIndex + 1}:`}
+                      </span>
+                      <RenderMathText text={qText} inline={true} />
                     </b>
                     <div className="flex flex-wrap items-center gap-2.5">
                       {q.mistake_category && q.mistake_category !== 'NONE' && (
@@ -344,7 +347,9 @@ export function SubmissionDetailClient({
                           </span>
                           <div>
                             <b className="block text-foreground">{obs.step}</b>
-                            <p className="text-muted-foreground">{obs.observation}</p>
+                            <div className="text-muted-foreground">
+                              <RenderMathText text={obs.observation} inline={true} />
+                            </div>
                           </div>
                         </div>
                       ))}

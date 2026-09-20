@@ -1,0 +1,72 @@
+{
+  "printed_page_no": 276,
+  "pdf_page_no": 281,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বলা হয় এবং $\\underline{0}$ দ্বারা সূচিত করা হয়। এটি একমাত্র ভেক্টর যার কোনো নির্দিষ্ট দিক বা ধারক রেখা নেই।\n\nশূন্য ভেক্টরের অবতারণার ফলে আমরা বলতে পারি যে, $\\underline{u} + (-\\underline{u}) = \\underline{0}$ এবং $\\underline{u} + \\underline{0} = \\underline{0} + \\underline{u} = \\underline{u}$ বস্তুত শূন্য ভেক্টরের সঙ্গে শেষোক্ত অভেদ নিহিত রয়েছে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ভেক্টরের যোগের বিধিহসমূহ",
+      "chunk_type": "theory",
+      "content_markdown": "পাটিগণিতের যোগের মতোই ভেক্টরের যোগে বিনিময়, সংযোগ, ও বর্জন বিধি ব্যবহার করা যায়।\n\n**ভেক্টরের যোগের বিনিময়বিধি (Commutative law):** যেকোনো $\\underline{u}, \\underline{v}$ ভেক্টরের জন্য $\\underline{u} + \\underline{v} = \\underline{v} + \\underline{u}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**প্রমাণ:** মনে করি, $\\overrightarrow{OA} = \\underline{u}$ এবং $\\overrightarrow{OB} = \\underline{v}$। $OACB$ সামান্তরিক ও তার কর্ণ $OC$ অঙ্কন করি। $OA$ ও $BC$ সমান ও সমান্তরাল এবং $OB$ ও $AC$ সমান ও সমান্তরাল।\n\n$\\therefore \\overrightarrow{OC} = \\overrightarrow{OA} + \\overrightarrow{AC} = \\underline{u} + \\underline{v}$। আবার, $\\overrightarrow{OC} = \\overrightarrow{OB} + \\overrightarrow{BC} = \\overrightarrow{OB} + \\overrightarrow{OA} = \\underline{v} + \\underline{u}$।\n\n$\\therefore \\underline{u} + \\underline{v} = \\underline{v} + \\underline{u}$। সুতরাং ভেক্টর যোগ বিনিময়বিধি সিদ্ধ করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ভেক্টরের যোগের সংযোগবিধি (Associative law):",
+      "chunk_type": "theory",
+      "content_markdown": "যেকোনো $\\underline{u}, \\underline{v}, \\underline{w}$ ভেক্টরের জন্য\n\n$$(\\underline{u} + \\underline{v}) + \\underline{w} = \\underline{u} + (\\underline{v} + \\underline{w})$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**প্রমাণ:** মনে করি, $\\overrightarrow{OA} = \\underline{u}$, $\\overrightarrow{AB} = \\underline{v}$, $\\overrightarrow{BC} = \\underline{w}$, অর্থাৎ $\\underline{u}$ এর প্রান্তবিন্দু থেকে $\\underline{v}$ এবং $\\underline{v}$ এর প্রান্তবিন্দু থেকে $\\underline{w}$ অঙ্কন করা হয়েছে। $O, C$; $O, B$ এবং $A, C$ যোগ করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে $(\\underline{u} + \\underline{v}) + \\underline{w} = (\\overrightarrow{OA} + \\overrightarrow{AB}) + \\overrightarrow{BC} = \\overrightarrow{OB} + \\overrightarrow{BC} = \\overrightarrow{OC}$\n\nআবার, $\\underline{u} + (\\underline{v} + \\underline{w}) = \\overrightarrow{OA} + (\\overrightarrow{AB} + \\overrightarrow{BC}) = \\overrightarrow{OA} + \\overrightarrow{AC} = \\overrightarrow{OC}$\n\n$\\therefore (\\underline{u} + \\underline{v}) + \\underline{w} = \\underline{u} + (\\underline{v} + \\underline{w})$। সুতরাং ভেক্টর যোগ সংযোগবিধি সিদ্ধ করে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12_comm_law",
+      "caption": null,
+      "box_2d": [
+        300,
+        383,
+        450,
+        617
+      ]
+    },
+    {
+      "figure_id": "fig_12_assoc_law",
+      "caption": null,
+      "box_2d": [
+        705,
+        383,
+        865,
+        617
+      ]
+    }
+  ]
+}

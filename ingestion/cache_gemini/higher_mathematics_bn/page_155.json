@@ -1,0 +1,16 @@
+{
+  "printed_page_no": 155,
+  "pdf_page_no": 160,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৮. ত্রিকোণমিতি \n ১৫৫ \n প্রতিজ্ঞা ৫. $1^\\circ = \\left(\\frac{\\pi}{180}\\right)^c$ এবং $1^c = \\left(\\frac{180}{\\pi}\\right)^\\circ$ \n\n লক্ষণীয়: \n (i) $90^\\circ = 1 \\text{ সমকোণ} = \\frac{\\pi}{2} \\text{ রেডিয়ান} = \\left(\\frac{\\pi}{2}\\right)^c$ \n অর্থাৎ, $180^\\circ = 2 \\text{ সমকোণ} = \\pi \\text{ রেডিয়ান} = \\pi^c$। \n (ii) ষাটমূলক ও বৃত্তীয় পদ্ধতিতে একটি কোণের পরিমাপ যথাক্রমে $D^\\circ$ ও $R^c$ হলে \n $D^\\circ = \\left(D \\times \\frac{\\pi}{180}\\right)^c = R^c$ \n অর্থাৎ, $D \\times \\frac{\\pi}{180} = R$ \n বা, $\\frac{D}{180} = \\frac{R}{\\pi}$ \n\n উপরিউক্ত আলোচনা থেকে বহুল ব্যবহৃত কোণসমূহের ডিগ্রি ও রেডিয়ানের সম্পর্ক দেওয়া হলো: \n (i) $1^\\circ = \\left(\\frac{\\pi}{180}\\right)^c$ \n (ii) $30^\\circ = \\left(30 \\times \\frac{\\pi}{180}\\right)^c = \\left(\\frac{\\pi}{6}\\right)^c$ \n (iii) $45^\\circ = \\left(45 \\times \\frac{\\pi}{180}\\right)^c = \\left(\\frac{\\pi}{4}\\right)^c$ \n (iv) $60^\\circ = \\left(60 \\times \\frac{\\pi}{180}\\right)^c = \\left(\\frac{\\pi}{3}\\right)^c$ \n (v) $90^\\circ = \\left(90 \\times \\frac{\\pi}{180}\\right)^c = \\left(\\frac{\\pi}{2}\\right)^c$ \n (vi) $180^\\circ = \\left(180 \\times \\frac{\\pi}{180}\\right)^c = \\pi^c$ \n (vii) $360^\\circ = \\left(360 \\times \\frac{\\pi}{180}\\right)^c = (2\\pi)^c$ \n\n ব্যবহারিক ক্ষেত্রে রেডিয়ান প্রতীক $(c)$ সাধারণত লেখা হয় না। সংক্ষেপে (রেডিয়ান প্রতীক উহ্য রেখে) \n $1^\\circ = \\frac{\\pi}{180}, 30^\\circ = \\frac{\\pi}{6}, 45^\\circ = \\frac{\\pi}{4}, 60^\\circ = \\frac{\\pi}{3}, 90^\\circ = \\frac{\\pi}{2}, 180^\\circ = \\pi, 360^\\circ = 2\\pi$ ইত্যাদি। \n\n দ্রষ্টব্য: $1^\\circ = \\left(\\frac{\\pi}{180}\\right)^c = 0.01745^c$ (আসন্ন পাঁচ দশমিক স্থান পর্যন্ত) \n $1^c = \\left(\\frac{180}{\\pi}\\right)^\\circ = 57.29578^\\circ$ (আসন্ন পাঁচ দশমিক স্থান পর্যন্ত) $= 57^\\circ 17^\\prime 44.81^{\\prime\\prime}$। \n\n এক্ষেত্রে $\\pi$ এর আসন্ন মান $3.1416$ ব্যবহার করা হয়েছে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

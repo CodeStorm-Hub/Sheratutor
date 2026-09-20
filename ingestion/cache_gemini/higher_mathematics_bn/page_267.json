@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 267,
+  "pdf_page_no": 272,
+  "chapter_no": 11,
+  "chapter_title": "স্থানাঙ্ক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ঢাল ধনাত্মক হওয়ায় রেখাটি $x$ অক্ষের ধনাত্মক দিকের সাথে সূক্ষ্মকোণ উৎপন্ন করে।\n\nখ) $PA = \\sqrt{(x - 3)^2 + (y - 4)^2}$ এবং $PB = \\sqrt{(x + 4)^2 + (y - 2)^2}$\n\n$P$ বিন্দু $A$ ও $B$ বিন্দু থেকে সমদূরবর্তী হওয়ায় $PA = PB$\n\n$\\therefore \\sqrt{(x - 3)^2 + (y - 4)^2} = \\sqrt{(x + 4)^2 + (y - 2)^2}$\n\nবা, $x^2 - 6x + 9 + y^2 - 8y + 16 = x^2 + 8x + 16 + y^2 - 4y + 4$\n\nবা, $-6x - 8y - 8x + 4y = 20 - 25$\n\nবা, $-14x - 4y = -5$\n\n$\\therefore 14x + 4y = 5$\n\nগ) $ABCD$ চতুর্ভুজ ক্ষেত্রের ক্ষেত্রফল = $\\frac{1}{2}\\begin{vmatrix} 3 & -4 & 6 & k & 3 \\\\ 4 & 2 & -1 & 3 & 4 \\end{vmatrix}$\n\n$= \\frac{1}{2}\\{6 + 4 + 18 + 4k - (-16 + 12 - k + 9)\\} = \\frac{1}{2}(28 + 4k - 5 + k) = \\frac{1}{2}(23 + 5k)$\n\n$ABC$ ত্রিভুজ ক্ষেত্রের ক্ষেত্রফল = $\\frac{1}{2}\\begin{vmatrix} 3 & -4 & 6 & 3 \\\\ 4 & 2 & -1 & 4 \\end{vmatrix}$\n\n$= \\frac{1}{2}\\{6 + 4 + 24 - (-16 + 12 - 3)\\} = \\frac{41}{2}$\n\nশর্তমতে, $\\frac{1}{2}(23 + 5k) = 3 \\times \\frac{41}{2}$\n\nবা, $23 + 5k = 123$\n\nবা, $5k = 100$ বা, $k = 20$\n\n$\\therefore k = 20$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১১.৮",
+      "section_title": "অনুশীলনী ১১.৮",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ১১.৮",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১. $\\sqrt{s(s - a)(s - b)(s - c)}$ এ $s$ দ্বারা বুঝায়\n\nক) ত্রিভুজের ক্ষেত্রফল\n\nখ) বৃত্তের ক্ষেত্রফল\n\nগ) ত্রিভুজের অর্ধ পরিসীমা\n\nঘ) বৃত্তের অর্ধ পরিধি",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "২",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২.\n\n$AB$ রেখার ঢাল\n\nক) $2$\n\nখ) $-2$\n\nগ) $0$\n\nঘ) $6$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_2",
+      "caption": null,
+      "box_2d": [
+        849,
+        163,
+        878,
+        399
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "printed_page_no": 219,
+  "pdf_page_no": 224,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩৫. $f(x) = \text{ln}x$ এর লেখচিত্র অঙ্কন কর।\n\n**সমাধান:** ধরি $y = f(x) = \text{ln}x$\nযেহেতু $e^0 = 1$ কাজেই $y = \text{ln}1 = 0$ সুতরাং, রেখাটি $(1, 0)$ বিন্দুগামী। যখন $x \to 0$ তখন $y \to -\textinfty$। যখন $x \to \textinfty$ তখন $y \to \textinfty$।\n$\therefore y = \text{ln}x$ রেখাটি ঊর্ধ্বগামী।\nপাশে রেখাটির লেখচিত্র অঙ্কন করা হলো।\nএখানে $D_f = (0, \textinfty)$ এবং $R_f = (-\textinfty, \textinfty)$।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩৬. $y = \frac{4 - x}{4 + x}$ একটি ফাংশন।\n\nক) ফাংশনটির ডোমেন নির্ণয় কর।\nখ) ফাংশনটির বিপরীত ফাংশন নির্ণয় কর।\nগ) $g(x) = \text{ln}y$ হলে, $g(x)$ এর ডোমেন নির্ণয় কর।\n\n**সমাধান:**\nক) দেওয়া আছে, $y = \frac{4 - x}{4 + x}$\nএখানে $4 + x = 0$ অর্থাৎ $x = -4$ হলে $y$ অসংজ্ঞায়িত হয়।\n$\therefore x \neq -4$\n$\therefore$ ফাংশনটির ডোমেন $= \text{R} - \\{-4\\}$\n\nখ) দেওয়া আছে, $y = \frac{4 - x}{4 + x}$\nধরি, $f(x) = y \therefore x = f^{-1}(y)$\nএখন, $y = \frac{4 - x}{4 + x}$\nবা, $4y + xy = 4 - x$\nবা, $xy + x = 4 - 4y$\n\nবা, $x(y + 1) = 4(1 - y)$\nবা, $x = \frac{4(1 - y)}{1 + y}$\nবা, $f^{-1}(y) = \frac{4(1 - y)}{1 + y} [\because x = f^{-1}(y)]$\n$\therefore f^{-1}(x) = \frac{4(1 - x)}{(1 + x)}$ [চলক পরিবর্তন করে]\n\nগ) দেওয়া আছে, $g(x) = \text{ln}(y)$\n$\therefore g(x) = \text{ln}\frac{4 - x}{4 + x} \big[\because y = \frac{4 - x}{4 + x}\big]$\n$\therefore g(x) \text{ R হবে যদি } \frac{4 - x}{4 + x} > 0 \text{ হয়।}$\nএখন $\frac{4 - x}{4 + x} > 0 \text{ হবে যদি}$\n(i) $4 - x > 0 \text{ এবং } 4 + x > 0 \text{ হয়, অথবা (ii) } 4 - x < 0 \text{ এবং } 4 + x < 0 \text{ হয়।}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_9_35",
+      "caption": "y = ln x এর লেখচিত্র",
+      "box_2d": [
+        75,
+        550,
+        335,
+        876
+      ]
+    }
+  ]
+}

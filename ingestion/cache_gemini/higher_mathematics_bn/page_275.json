@@ -1,0 +1,61 @@
+{
+  "printed_page_no": 275,
+  "pdf_page_no": 280,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ভেক্টর বিয়োগের ত্রিভুজবিধি: $\\underline{u}$ এবং $\\underline{v}$ এর আদিবিন্দু একই হলে $\\underline{u} - \\underline{v}$ সেই ভেক্টর, যার আদিবিন্দু হচ্ছে $\\underline{v}$ এর অন্তবিন্দু এবং যার অন্তবিন্দু হচ্ছে $\\underline{u}$ এর অন্তবিন্দু। সংক্ষেপে একই আদিবিন্দু বিশিষ্ট দুটি ভেক্টরের বিয়োগফল হচ্ছে অন্তবিন্দুদ্বয় দ্বারা বিপরীতক্রমে গঠিত ভেক্টর। সুতরাং $\\underline{u} = \\overrightarrow{AB}$, $\\underline{v} = \\overrightarrow{AC}$ হলে $\\underline{u} - \\underline{v} = \\overrightarrow{CB}$, অর্থাৎ, $\\overrightarrow{AB} - \\overrightarrow{AC} = \\overrightarrow{CB}$। নিচে আমরা এটা প্রমাণ করব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $CA$ রেখাংশকে এমনভাবে বর্ধিত করি যেন $AE = CA$ হয়। $AEFB$ সামান্তরিক গঠন করি। ভেক্টর যোগের সামান্তরিক বিধি অনুযায়ী, $\\overrightarrow{AE} + \\overrightarrow{AB} = \\overrightarrow{AF}$।\n\nআবার $AFBC$ একটি সামান্তরিক, কেননা $BF = AE = CA$ এবং $BF \\parallel AE$ বলে $BF \\parallel CA$।\n\n$\\therefore \\overrightarrow{AF} = \\overrightarrow{CB}$ (ভেক্টরের স্থানান্তর), কিন্তু $\\overrightarrow{AE} = -\\underline{v}$ এবং $\\overrightarrow{AB} = \\underline{u}$।\n\nসুতরাং $\\underline{u} - \\underline{v} = \\overrightarrow{CB}$ প্রমাণিত হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "শূন্য ভেক্টর",
+      "chunk_type": "theory",
+      "content_markdown": "যে ভেক্টরের মান শূন্য এবং যার দিক নির্ণয় করা যায় না তাকে শূন্য ভেক্টর বলে।\n\n$\\underline{u}$ যেকোনো ভেক্টর হলে $\\underline{u} + (-\\underline{u})$ কী হবে?\n\nধরি, $\\underline{u} = \\overrightarrow{AB}$ তখন $-\\underline{u} = \\overrightarrow{BA}$,\n\nফলে $\\underline{u} - \\underline{u} = \\overrightarrow{AB} + \\overrightarrow{BA} = \\overrightarrow{AA}$ [ত্রিভুজবিধি অনুযায়ী]\n\nকিন্তু $\\overrightarrow{AA}$ কী ধরনের ভেক্টর? এটি একটি বিন্দু ভেক্টর, অর্থাৎ এর আদিবিন্দু ও অন্তবিন্দু একই বিন্দু; সুতরাং দৈর্ঘ্য শূন্য। অর্থাৎ $\\overrightarrow{AA}$ দ্বারা $A$ বিন্দুকেই বুঝতে হবে। দৈর্ঘ্য শূন্য এরূপ ভেক্টরকে শূন্য ভেক্টর",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12_1",
+      "caption": null,
+      "box_2d": [
+        91,
+        392,
+        210,
+        608
+      ]
+    },
+    {
+      "figure_id": "fig_12_2",
+      "caption": null,
+      "box_2d": [
+        331,
+        350,
+        513,
+        650
+      ]
+    },
+    {
+      "figure_id": "fig_12_3",
+      "caption": null,
+      "box_2d": [
+        757,
+        309,
+        804,
+        689
+      ]
+    }
+  ]
+}

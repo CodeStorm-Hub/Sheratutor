@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 198,
+  "pdf_page_no": 203,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৩. $(a^m)^n = a^{mn}$\n\n৪. $(ab)^n = a^n b^n$\n\n৫. $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) গাণিতিক আরোহ পদ্ধতিতে দেখাও যে, $(a^m)^n = a^{mn}$, যেখানে $a \\in \\mathbb{R}$ এবং $n \\in \\mathbb{N}$\n\nখ) গাণিতিক আরোহ পদ্ধতিতে দেখাও যে, $(a \\cdot b)^n = a^n \\cdot b^n$, যেখানে $a, b \\in \\mathbb{R}$ এবং $n \\in \\mathbb{N}$\n\nগ) গাণিতিক আরোহ পদ্ধতিতে দেখাও যে, $\\left(\\frac{1}{a}\\right)^n = \\frac{1}{a^n}$, যেখানে, $a > 0$ এবং $n \\in \\mathbb{N}$\n\nঅতঃপর $(ab)^n = a^n b^n$ সূত্র ব্যবহার করে দেখাও যে, $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$, যেখানে $a, b \\in \\mathbb{R}, b > 0$ এবং $n \\in \\mathbb{N}$\n\nঘ) $a \\neq 0$ এবং $m, n \\in \\mathbb{Z}$ ধনাত্মক পূর্ণ সাংখ্যিক সূচকের জন্য $a^m \\cdot a^n = a^{m+n}$ সূত্রটির সত্যতা স্বীকার করে দেখাও যে, $a^m \\cdot a^n = a^{m+n}$ যখন (১) $m > 0$ এবং $n < 0$ (২) $m < 0$ এবং $n < 0$।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "মূল এর ব্যাখ্যা",
+      "chunk_type": "theory",
+      "content_markdown": "**মূল এর ব্যাখ্যা**\n\n**সংজ্ঞা:** $n \\in \\mathbb{N}, n > 1$ এবং $a \\in \\mathbb{R}$ হলে, যদি এমন $x \\in \\mathbb{R}$ থাকে যেন $x^n = a$ হয়, তবে সেই $x$ কে $a$ এর একটি $n$ তম মূল বলা হয়। $n = 2$ হলে মূলকে বর্গমূল এবং $n = 3$ হলে মূলকে ঘনমূল বলা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৫. ক) $2$ এবং $-2$ উভয়ই $16$-এর $4$তম মূল, কারণ $(2)^4 = 16$ এবং $(-2)^4 = 16$\n\nখ) $-27$ এর ঘনমূল $-3$, কারণ $(-3)^3 = -27$\n\nগ) $0$ এর $n$তম মূল $0$, কারণ সকল $n \\in \\mathbb{N}, n > 1$ এর জন্য $0^n = 0$\n\nঘ) $-9$ এর কোনো বর্গমূল নেই, কারণ যে কোনো বাস্তব সংখ্যার বর্গ ঋণাত্মক।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে উল্লেখ্য যে,\n\n(i) যদি $a > 0$ এবং $n \\in \\mathbb{N}, n > 1$ হয়, তবে $a$ এর একটি অনন্য ধনাত্মক $n$ তম মূল আছে। এই ধনাত্মক মূলকে $\\sqrt[n]{a}$ দ্বারা সূচিত করা হয় ($\\sqrt[3]{a}$ এর স্থলে $\\sqrt{a}$ লেখা হয়) এবং একে $a$ এর মুখ্য $n$তম মূল বলা হয়। $n$ জোড় সংখ্যা হলে এরূপ $a$ এর অপর একটি $n$ তম মূল আছে এবং তা হলো $-\\sqrt[n]{a}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

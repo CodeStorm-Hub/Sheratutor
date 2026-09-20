@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 74,
+  "pdf_page_no": 79,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে উল্লেখ্য, কোনো ত্রিভুজের লম্ববিন্দু থেকে শীর্ষের দূরত্ব ত্রিভুজের পরিকেন্দ্র থেকে ঐ শীর্ষের বিপরীত বাহুর লম্ব দূরত্বের দ্বিগুণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১০",
+      "section_title": "ত্রিভুজের পরিকেন্দ্র, ভরকেন্দ্র ও লম্ববিন্দু সমরেখ।",
+      "chunk_type": "theory",
+      "content_markdown": "**উপপাদ্য ১০.** ত্রিভুজের পরিকেন্দ্র, ভরকেন্দ্র ও লম্ববিন্দু সমরেখ।\n\n**বিশেষ নির্বচন:** মনে করি, $\\triangle ABC$ এর লম্ববিন্দু $O$, পরিকেন্দ্র $S$ এবং $AP$ একটি মধ্যমা। লম্ববিন্দু $O$ এবং পরিকেন্দ্র $S$ এর সংযোগ রেখা $AP$ মধ্যমাকে $G$ বিন্দুতে ছেদ করেছে। $S, P$ যোগ করলে $SP$ রেখা $BC$ এর উপর লম্ব। তাহলে, $G$ বিন্দুটি $\\triangle ABC$ এর ভরকেন্দ্র এটি প্রমাণ করাই যথেষ্ট।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**প্রমাণ:** $\\triangle ABC$ এর লম্ববিন্দু $O$ থেকে $A$ শীর্ষের দূরত্ব $OA$ এবং পরিকেন্দ্র $S$ থেকে $A$ শীর্ষের বিপরীত বাহু $BC$ এর দূরত্ব $SP$। $\\therefore OA = 2SP \\cdots\\cdots (1)$\n\nএখন যেহেতু $AD$ ও $SP$ উভয়ই $BC$ এর উপর লম্ব সেহেতু $AD \\parallel SP$। এখন $AD \\parallel SP$ এবং $AP$ এদের ছেদক। সুতরাং একান্তর কোণ হওয়ায় $\\angle PAD = \\angle APS$, অর্থাৎ, $\\angle OAG = \\angle SPG$I\n\nএখন $\\triangle AGO$ এবং $\\triangle PGS$ এর মধ্যে\n$$\\angle AGO = \\angle PGS \\quad [\\text{বিপ্রতীপ কোণ}]$$\n$$\\angle OAG = \\angle SPG \\quad [\\text{একান্তর কোণ}]$$\n$$\\therefore \\text{অবশিষ্ট } \\angle AOG = \\text{অবশিষ্ট } \\angle PSG$$\n$$\\therefore \\triangle AGO \\text{ এবং } \\triangle PGS \\text{ সদৃশকোণী।}$$\n$$\\text{সুতরাং, } \\frac{AG}{GP} = \\frac{OA}{SP} \\text{ অর্থাৎ, } \\frac{AG}{GP} = \\frac{2SP}{SP} \\quad [(1) \\text{ নং সমীকরণ হতে}]$$\n$$\\text{অতএব } \\frac{AG}{GP} = \\frac{2}{1} \\text{ বা, } AG : GP = 2 : 1$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_geom_10",
+      "caption": null,
+      "box_2d": [
+        292,
+        335,
+        532,
+        680
+      ]
+    }
+  ]
+}

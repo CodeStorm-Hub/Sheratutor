@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 59,
+  "pdf_page_no": 64,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন $A$, $B$ এবং $C$ এর মান (1) এ বসিয়ে পাই,\n$$\\frac{x}{(x - 1)^2(x - 2)} \\equiv \\frac{-2}{x - 1} + \\frac{-1}{(x - 1)^2} + \\frac{2}{x - 2}$$ যা নির্ণেয় আংশিক ভগ্নাংশ।\nঘ) যখন হরে বাস্তব ও দ্বিঘাতবিশিষ্ট উৎপাদক থাকে কিন্তু কোনো পুনরাবৃত্তি হয় না:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৮.** $\\frac{x}{(x - 1)(x^2 + 4)}$ কে আংশিক ভগ্নাংশে প্রকাশ করো।\n\n**সমাধান:** ধরি, $\\frac{x}{(x - 1)(x^2 + 4)} \\equiv \\frac{A}{x - 1} + \\frac{Bx + C}{x^2 + 4} \\cdots \\cdots (1)$\n\nউভয়পক্ষকে $(x - 1)(x^2 + 4)$ দ্বারা গুণ করে পাই,\n$$x \\equiv A(x^2 + 4) + (Bx + C)(x - 1) \\cdots \\cdots (2)$$\n\n(2) এ $x = 1$ বসিয়ে পাই,\n$$1 = A(5) \\implies A = \\frac{1}{5}$$\n\n$x^2$ ও $x$ এর সহগ সমীকৃত করে পাই,\n$$A + B = 0 \\cdots (3) \\text{ এবং } C - B = 1 \\cdots (4)$$\n\n(3) নং এ $A = \\frac{1}{5}$ বসিয়ে পাই, $B = -\\frac{1}{5}$ ।\n\n(4) নং এ $B = -\\frac{1}{5}$ বসিয়ে পাই, $C = \\frac{4}{5}$ ।\n\nএখন, $A$, $B$ ও $C$ এর মান (1) নং এ বসিয়ে পাই,\n$$\\frac{x}{(x - 1)(x^2 + 4)} \\equiv \\frac{\\frac{1}{5}}{x - 1} + \\frac{-\\frac{1}{5}x + \\frac{4}{5}}{x^2 + 4} = \\frac{1}{5(x - 1)} - \\frac{x - 4}{5(x^2 + 4)}$$\nযা নির্ণেয় আংশিক ভগ্নাংশ।\n\nঙ) যখন হরে বাস্তব ও দ্বিঘাতবিশিষ্ট উৎপাদক থাকে এবং সেগুলোর কয়েকটির পুনরাবৃত্তি ঘটে",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৯.** $\\frac{1}{x(x^2 + 1)^2}$ কে আংশিক ভগ্নাংশে প্রকাশ করো।\n\n**সমাধান:** ধরি, $\\frac{1}{x(x^2 + 1)^2} \\equiv \\frac{A}{x} + \\frac{Bx + C}{x^2 + 1} + \\frac{Dx + E}{(x^2 + 1)^2} \\cdots \\cdots (1)$\n\n(1) এর উভয়পক্ষে $x(x^2 + 1)^2$ দ্বারা গুণ করে পাই,\n$$1 \\equiv A(x^2 + 1)^2 + (Bx + C)(x^2 + 1)x + (Dx + E)x$$\n$$\\equiv A(x^4 + 2x^2 + 1) + (Bx + C)(x^3 + x) + Dx^2 + Ex$$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

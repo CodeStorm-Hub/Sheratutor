@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 57,
+  "pdf_page_no": 62,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ২. বীজগাণিতিক রাশি                                                                                                    ५१",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\text{ডানপক্ষ} = \\frac{2}{x - 1} + \\frac{3}{x - 2} = \\frac{2(x - 2) + 3(x - 1)}{(x - 1)(x - 2)} = \\frac{5x - 7}{(x - 1)(x - 2)} = \\text{বামপক্ষ}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৪. $\\frac{x + 5}{(x - 1)(x - 2)(x - 3)}$ কে আংশিক ভগ্নাংশে প্রকাশ করো।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: ধরি, $\\frac{x + 5}{(x - 1)(x - 2)(x - 3)} \\equiv \\frac{A}{x - 1} + \\frac{B}{x - 2} + \\frac{C}{x - 3} \\dots \\dots \\dots (1)$\n\n$(1)$ এর উভয়পক্ষকে $(x - 1)(x - 2)(x - 3)$ দ্বারা গুণ করে পাই,\n$x + 5 \\equiv A(x - 2)(x - 3) + B(x - 1)(x - 3) + C(x - 1)(x - 2) \\dots \\dots \\dots (2)$\n\n$(2)$ এর উভয়পক্ষ $x$ এর সকল মানের জন্য সত্য।\n\n$(2)$ এর উভয়পক্ষ $x = 1$ বসিয়ে পাই,\n$1 + 5 = A(-1)(-2) \\implies 6 = 2A \\implies A = 3 \\।$\n\nআবার $(2)$ এর উভয়পক্ষ $x = 2$ বসিয়ে পাই,\n$2 + 5 = B(1)(-1) \\implies 7 = -B, \\therefore B = -7 \\।$\n\nএবং $(2)$ এর উভয়পক্ষ $x = 3$ বসিয়ে পাই,\n$3 + 5 = C(2)(1)$ বা $8 = 2C$ বা $C = 4 \\।$\n\nএখন, $A$, $B$ এবং $C$ এর মান $(1)$ এ বসিয়ে পাই,\n$$\\frac{x + 5}{(x - 1)(x - 2)(x - 3)} \\equiv \\frac{3}{x - 1} - \\frac{7}{x - 2} + \\frac{4}{x - 3} \\।$$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "খ) যখন লবের ঘাত হরের ঘাত অপেক্ষা বৃহত্তর বা সমান হয়, তখন লবকে হর দ্বারা ভাগ করে লবের ঘাত অপেক্ষা ক্ষুদ্রতর করতে হয়",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৫. $\\frac{(x - 1)(x - 5)}{(x - 2)(x - 4)}$ কে আংশিক ভগ্নাংশে প্রকাশ করো।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: এখানে লবকে হর দ্বারা ভাগ করলে $1$ হয়।\n\nসুতরাং ধরি, $\\frac{(x - 1)(x - 5)}{(x - 2)(x - 4)} \\equiv 1 + \\frac{A}{x - 2} + \\frac{B}{x - 4} \\dots \\dots \\dots (1)$\n\n$(1)$ এর উভয়পক্ষকে $(x - 2)(x - 4)$ দ্বারা গুণ করে পাই,\n$(x - 1)(x - 5) \\equiv (x - 2)(x - 4) + A(x - 4) + B(x - 2) \\dots \\dots \\dots (2)$\n\n$(2)$ এর উভয়পক্ষে পর্যায়ক্রমে $x = 2, 4$ বসিয়ে পাই,\n$$(2 - 1)(2 - 5) = A(2 - 4) \\text{ বা, } A = \\frac{3}{2}$$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ফর্মা-৮, উচ্চতর গণিত, ৯ম-১০ম শ্রেণি",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

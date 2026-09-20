@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 53,
+  "pdf_page_no": 58,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ২. বীজগাণিতিক রাশি ৫৩",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: উৎপাদকে বিশ্লেষণ কর:\n\n(ক) (১) $a(b^2 - c^2) + b(c^2 - a^2) + c(a^2 - b^2)$\n\n(২) $a^2(b - c) + b^2(c - a) + c^2(a - b)$\n\n(৩) $a(b - c)^3 + b(c - a)^3 + c(a - b)^3$\n\n(৪) $bc(b^2 - c^2) + ca(c^2 - a^2) + ab(a^2 - b^2)$\n\n(৫) $a^4(b - c) + b^4(c - a) + c^4(a - b)$\n\n(৬) $a^2(b - c)^3 + b^2(c - a)^3 + c^2(a - b)^3$\n\n(৭) $x^4(y^2 - z^2) + y^4(z^2 - x^2) + z^4(x^2 - y^2)$\n\n(৮) $a^3(b - c) + b^3(c - a) + c^3(a - b)$\n\n(খ) যদি $\\frac{x^2 - yz}{a} = \\frac{y^2 - zx}{b} = \\frac{z^2 - xy}{c} \\neq 0$ হয়,\nতবে দেখাও যে, $(a + b + c)(x + y + z) = ax + by + cz$ ।\n\n(গ) যদি $(a + b + c)(ab + bc + ca) = abc$ হয়, তবে দেখাও যে, $(a + b + c)^3 = a^3 + b^3 + c^3$ ।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "মূলদ ভগ্নাংশ (Rational Fractions)",
+      "chunk_type": "theory",
+      "content_markdown": "একটি বহুপদীকে হর এবং একটি বহুপদীকে লব নিয়ে গঠিত ভগ্নাংশকে মূলদ ভগ্নাংশ বলা হয়। যেমন $\\frac{x}{(x - a)(x - b)}$ এবং $\\frac{a^2 + a + 1}{(a - b)(a - c)}$ মূলদ ভগ্নাংশ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৯. সরল কর: $\\frac{a}{(a - b)(a - c)} + \\frac{b}{(b - c)(b - a)} + \\frac{c}{(c - a)(c - b)}$\n\nসমাধান: $\\frac{a}{(a - b)(a - c)} + \\frac{b}{(b - c)(b - a)} + \\frac{c}{(c - a)(c - b)}$\n\n$= -\\frac{a}{(a - b)(c - a)} - \\frac{b}{(b - c)(a - b)} - \\frac{c}{(c - a)(b - c)}$\n\n$= \\frac{a(b - c) + b(c - a) + c(a - b)}{-(a - b)(b - c)(c - a)}$\n\n$= \\frac{0}{-(a - b)(b - c)(c - a)} = 0$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২০. সরল কর: $\\frac{a^2 - (b - c)^2}{(a + c)^2 - b^2} + \\frac{b^2 - (c - a)^2}{(a + b)^2 - c^2} + \\frac{c^2 - (a - b)^2}{(b + c)^2 - a^2}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

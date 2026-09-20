@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 36,
+  "pdf_page_no": 41,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গ) $F(x) = 5$ হলে, $x$ নির্ণয় করো।\n\nঘ) $F(x) = y$ হলে, $x$ নির্ণয় করো যেখানে $y \\ge 0$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৬. $F : R \\to R, F(x) = x^3$ ফাংশনের জন্য\n\nক) ডোম $F$ এবং রেঞ্জ $F$ নির্ণয় করো।\n\nখ) দেখাও যে, $F$ এক-এক ফাংশন।\n\nগ) $F^{-1}$ নির্ণয় করো।\n\nঘ) দেখাও যে, $F^{-1}$ একটি ফাংশন।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৭. ক) $f : R \\to R$ একটি ফাংশন যা $f(x) = ax + b; a, b \\in R, a \\neq 0$ দ্বারা সংজ্ঞায়িত হলে, দেখাও যে, $f$ এক-এক এবং সার্বিক।\n\nখ) $f : [0, 1] \\to [0, 1]$ ফাংশনটি $f(x) = \\sqrt{1 - x^2}$ দ্বারা সংজ্ঞায়িত হলে, দেখাও যে, $f$ এক-এক এবং সার্বিক।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৮. ক) যদি $f : R \\to R$ এবং $g : R \\to R$ ফাংশনদ্বয় $f(x) = x^3 + 5$ এবং $g(x) = (x - 5)^{\\frac{1}{3}}$ দ্বারা সংজ্ঞায়িত হয়, তবে দেখাও যে, $g = f^{-1}$।\n\nখ) যদি $f : R \\to R$ ফাংশনটি $f(x) = 5x - 4$ দ্বারা সংজ্ঞায়িত হয়, তবে, $y = f^{-1}(x)$ নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৯",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৯. $S$ অন্বয়ের লেখচিত্র অঙ্কন করো এবং অন্বয়টি ফাংশন কিনা তা লেখচিত্র থেকে নির্ণয় করো।\n\nক) $S = \\{(x, y) : 2x - y + 5 = 0\\}$\n\nখ) $S = \\{(x, y) : x + y = 1\\}$\n\nগ) $S = \\{(x, y) : 3x + y = 4\\}$\n\nঘ) $S = \\{(x, y) : x = -2\\}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১০",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১০. $S$ অন্বয়ের লেখচিত্র অঙ্কন করো এবং অন্বয়টি ফাংশন কিনা তা লেখচিত্র থেকে নির্ণয় করো।\n\nক) $S = \\{(x, y) : x^2 + y^2 = 25\\}$\n\nখ) $S = \\{(x, y) : x^2 + y^2 = 9\\}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১১",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১১. দেওয়া আছে, $F(x) = 2x - 1$।\n\nক) $F(x + 1)$ এবং $F\\left(\\frac{1}{2}\\right)$ এর মান নির্ণয় করো।\n\nখ) $F(x)$ ফাংশনটি এক-এক কিনা তা যাচাই করো, যখন $x, y \\in R$।\n\nগ) $F(x) = y$ হলে $x$ এর তিনটি পূর্ণ সাংখ্যিক মানের জন্য $y$ এর মান নির্ণয় করো এবং $y = 2x - 1$ সমীকরণটির লেখচিত্র অঙ্কন করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১২",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১২. $f : R \\to R$ এবং $g : R \\to R$ ফাংশন দুটি যথাক্রমে $f(x) = 3x + 3$ এবং $g(x) = \\frac{x - 3}{3}$ দ্বারা সংজ্ঞায়িত।\n\nক) $g^{-1}(-3)$ এর মান নির্ণয় করো।\n\nখ) $f(x)$ সার্বিক ফাংশন কিনা তা নির্ধারণ করো।\n\nগ) দেখাও যে, $g = f^{-1}$।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

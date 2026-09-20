@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 156,
+  "pdf_page_no": 161,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: নিচের সমস্ত উদাহরণ এবং সমস্ত সমস্যায় $\\pi$ এর আসন্ন মান চার দশমিক স্থান ($\\pi = 3.1416$) পর্যন্ত ব্যবহার করা হবে। $\\pi$ এর আসন্ন মান ব্যবহৃত হলে উত্তরে অবশ্যই 'প্রায়' কথাটি লিখতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩. ক) $30^{\\circ}12'36''$ কে রেডিয়ানে প্রকাশ কর। খ) $\\frac{3\\pi}{13}$ কে ডিগ্রি, মিনিট ও সেকেন্ডে প্রকাশ কর।\n\n**সমাধান:**\n\nক) $30^{\\circ}12'36'' = 30^{\\circ}\\left(12\\frac{36}{60}\\right)' = 30^{\\circ}\\left(12\\frac{3}{5}\\right)' = 30^{\\circ}\\left(\\frac{63}{5}\\right)'$\n\n$= \\left(30\\frac{63}{5 \\times 60}\\right)^{\\circ} = \\left(30\\frac{21}{100}\\right)^{\\circ} = \\left(\\frac{3021}{100}\\right)^{\\circ}$\n\n$= \\frac{3021}{100} \\times \\frac{\\pi}{180}$ রেডিয়ান $\\left[\\because 1^{\\circ} = \\frac{\\pi^c}{180}\\right]$\n\n$= \\frac{3021\\pi}{18000} = .5273$ রেডিয়ান (প্রায়)\n\n$\\therefore 30^{\\circ}12'36'' = .5273^c$ (প্রায়)\n\nখ) $\\frac{3\\pi}{13} = \\frac{3\\pi}{13} \\times \\frac{180}{\\pi}$ ডিগ্রি $\\left[\\because 1^c = \\left(\\frac{180}{\\pi}\\right)^{\\circ}\\right]$\n\n$= \\frac{540}{13}$ ডিগ্রি $= 41^{\\circ}32'18\\cdot46''$.\n\n$\\therefore \\frac{3\\pi}{13}$ রেডিয়ান $= 41^{\\circ}\\;32'\\;18\\cdot46''$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৪. একটি ত্রিভুজের তিনটি কোণের অনুপাত $3:4:5$, কোণ তিনটির বৃত্তীয় মান কত?\n\n**সমাধান:** ধরি, কোণ তিনটি যথাক্রমে $3x^c, 4x^c$ ও $5x^c$.\n\nপ্রশ্নমতে, $3x^c + 4x^c + 5x^c = \\pi^c$ [ত্রিভুজের তিন কোণের সমষ্টি $2$ সমকোণ $= \\pi^c$]\n\nবা, $12x^c = \\pi^c$\n\nবা, $x = \\frac{\\pi}{12}$\n\n$\\therefore$ কোণ তিনটি যথাক্রমে\n\n$3x^c = \\left(\\frac{3\\pi}{12}\\right)^c = \\left(\\frac{\\pi}{4}\\right)^c = \\frac{\\pi}{4}$\n\n$4x^c = \\left(\\frac{4\\pi}{12}\\right)^c = \\left(\\frac{\\pi}{3}\\right)^c = \\frac{\\pi}{3}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

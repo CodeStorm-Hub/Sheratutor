@@ -32,7 +32,7 @@ async function DashboardContent() {
     supabase
       .from('subjects')
       .select('id, name_en, name_bn, code, level, subject_group, chapters(id)')
-      .in('code', ['SSC-MATH', 'SSC-CHEM', 'SSC-PHY'])
+      .in('code', ['SSC-MATH', 'SSC-HMATH', 'SSC-CHEM', 'SSC-PHY'])
       .order('name_en'),
   ]);
 
@@ -111,8 +111,9 @@ async function DashboardContent() {
 
   const subjectOrder: Record<string, number> = {
     'SSC-MATH': 1,
-    'SSC-CHEM': 2,
-    'SSC-PHY': 3,
+    'SSC-HMATH': 2,
+    'SSC-CHEM': 3,
+    'SSC-PHY': 4,
   };
 
   const displaySubjects =
@@ -124,7 +125,14 @@ async function DashboardContent() {
             const subWeaknesses = (weaknesses || []).filter(
               (w) => w.chapters?.subjects?.id === sub.id
             );
-            let progress = sub.code === 'SSC-MATH' ? 85 : sub.code === 'SSC-CHEM' ? 80 : 78;
+            let progress =
+              sub.code === 'SSC-MATH'
+                ? 85
+                : sub.code === 'SSC-HMATH'
+                ? 82
+                : sub.code === 'SSC-CHEM'
+                ? 80
+                : 78;
             if (subWeaknesses.length > 0) {
               const avgWeakness =
                 subWeaknesses.reduce((a, b) => a + Number(b.weakness_score), 0) /
@@ -136,6 +144,8 @@ async function DashboardContent() {
                 ? sub.chapters.length
                 : sub.code === 'SSC-MATH'
                 ? 17
+                : sub.code === 'SSC-HMATH'
+                ? 14
                 : sub.code === 'SSC-CHEM'
                 ? 12
                 : 14;

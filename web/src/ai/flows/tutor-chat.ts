@@ -260,7 +260,7 @@ export const tutorChatFlow = ai.defineFlow(
       languagePreference,
     });
 
-    let text = await generateWithGeminiFallback(prompt, { temperature: 0.3 });
+    let text = await generateWithGeminiFallback(prompt, { temperature: 0.3, model: MODELS.chat });
 
     // Guarantee authentic diagram rendering: if official diagrams are available and not yet embedded, inject
     if (diagramUrls && diagramUrls.length > 0) {

@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 320,
+  "pdf_page_no": 325,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "১০. $x(x + 1) = 10n + 6$ যেখানে $n, x$ পূর্ণসংখ্যা $x$ এর শেষ অঙ্ক তাহলে সংখ্যাদ্বয়ের শেষ অঙ্ক হয় $2, 3$ অথবা $7, 8$ হবে। কিন্তু এরকম সংখ্যা কখনো পূর্ণবর্গ হয় না।\n১১. 11 বার \n১২. 22 বার",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৬.১",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৬.১\n\n১. $y < 8$\n২. $x < 4$\n৩. $x > 1$\n৪. $z \\le 6$\n৫. $x \\ge -3$\n৬. $x \\le 6$\n৭. $t \\ge 3$\n৮. $x > 1$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৬.২",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৬.২\n\n১. $3x + \\frac{x+2}{2} < 29, 0 < x < 8$\n\n২. $4x + (x - 3) \\le 40, 0 < x \\le \\frac{43}{5}$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_ex_6_1_1",
+      "caption": "অনুশীলনী ৬.১ এর চিত্রসমূহ",
+      "box_2d": [
+        277,
+        127,
+        773,
+        604
+      ]
+    }
+  ]
+}

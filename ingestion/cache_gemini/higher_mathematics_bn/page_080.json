@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 80,
+  "pdf_page_no": 85,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৭. $\\triangle ABC$ ত্রিভুজের $AC$ ও $AB$ বাহুর উপর যথাক্রমে $BE$ ও $CF$ লম্ব। দেখাও যে, $\\triangle ABC : \\triangle AEF = AB^2 : AE^2$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৮. $\\triangle PQR$ এ $PM, QN$ ও $RS$ মধ্যমাজ্রয় $O$ বিন্দুতে ছেদ করেছে।\n(ক) $O$ বিন্দুটির নাম কী? $O$ বিন্দু $PM$ কে কী অনুপাতে বিভক্ত করে?\n(খ) $\\triangle PQR$ হতে $PQ^2 + PR^2 = 2(PM^2 + QM^2)$ সম্পর্কটি প্রতিষ্ঠিত করো।\n(গ) দেখাও যে, $\\triangle PQR$ এর বাহু তিনটির বর্গের সমষ্টি $O$ বিন্দু হতে শীর্ষবিন্দু তিনটির দূরত্বের বর্গের সমষ্টির তিনগুণ।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "নমুনা প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "নমুনা প্রশ্ন\nবহুনির্বাচনি প্রশ্ন",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১. একটি সমবাহু ত্রিভুজের প্রতিটি মধ্যমার দৈর্ঘ্য $3$ সে.মি. হলে প্রতিটি বাহুর দৈর্ঘ্য কত?\n(ক) $4.5$ সে.মি.  \n(খ) $3.46$ সে.মি.  \n(গ) $3.35$ সে.মি.  \n(ঘ) $2.59$ সে.মি.",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২. $\\triangle ABC$ এর ক্ষেত্রে-\n(i) $\\angle ACB$ স্থূলকোণ হলে $AB^2 > AC^2 + BC^2$\n(ii) $\\angle ACB$ সমকোণ হলে $AB^2 = AC^2 + BC^2$\n(iii) $\\angle ACB$ সূক্ষ্মকোণ হলে $AB^2 < AC^2 + BC^2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উপরের চিত্রে $D, E, F$ যথাক্রমে $BC, AC$ ও $AB$ এর মধ্যবিন্দু। সেই আলোকে ৩-৪ নং প্রশ্নের উত্তর দাও:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩. $G$ বিন্দুর নাম কী?\n(ক) লম্ববিন্দু  \n(খ) অন্তঃকেন্দ্র  \n(গ) ভরকেন্দ্র  \n(ঘ) পরিকেন্দ্র",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_sample_geom",
+      "caption": "ত্রিভুজের মধ্যমা ও ভরকেন্দ্র সম্পর্কিত চিত্র",
+      "box_2d": [
+        595,
+        399,
+        815,
+        656
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 230,
+  "pdf_page_no": 235,
+  "chapter_no": 10,
+  "chapter_title": "দ্বিপদী বিস্তৃতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উচ্চতর গণিত\n\nঅনুশীলনী ১০.১\n\n১. প্যাসকেলের ত্রিভুজ বা দ্বিপদী বিস্তৃতি ব্যবহার করে $(1 + y)^5$ এর বিস্তৃতি নির্ণয় করো। উক্ত বিস্তৃতির সাহায্যে ক) $(1 - y)^5$ এবং খ) $(1 + 2x)^5$ এর বিস্তৃতি নির্ণয় করো।\n\n২. $x$ এর ঘাতের ঊর্ধ্বক্রম অনুসারে ক) $(1 + 4x)^6$ এবং খ) $(1 - 3x)^7$ এর প্রথম চার পদ পর্যন্ত বিস্তৃত করো।\n\n৩. $(1 + x^2)^8$ এর বিস্তৃতির প্রথম চারটি পদ নির্ণয় করো। উক্ত ফলাফল ব্যবহার করে $(1.01)^8$ এর মান নির্ণয় করো।\n\n৪. $x$ এর ঊর্ধ্বক্রম অনুসারে নিম্নোক্ত দ্বিপদীসমূহের প্রথম তিনটি পদ নির্ণয় করো।\n\nক) $(1 - 2x)^5$ খ) $(1 + 3x)^9$\n\n৫. নিম্নোক্ত বিস্তৃতিসমূহের প্রথম চারটি পদ নির্ণয় করো। [দ্বিপদী বিস্তৃতি বা প্যাসকেল ত্রিভুজ এর যেকোনো একটি ব্যবহার করে]\n\nক) $(1 - 2x^2)^7$ খ) $\\left(1 + \\frac{2}{x}\\right)^4$ গ) $\\left(1 - \\frac{1}{2x}\\right)^7$\n\n৬. $x^3$ পর্যন্ত ক) $(1 - x)^6$ এবং খ) $(1 + 2x)^6$ বিস্তৃত করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "$(x + y)^n$ দ্বিপদী এর বিস্তৃতি",
+      "chunk_type": "theory",
+      "content_markdown": "আমরা এ পর্যন্ত $(1 + y)^n$ এর বিস্তৃতি নিয়ে আলোচনা করেছি। এই পর্যায়ে আমরা দ্বিপদী বিস্তৃতির সাধারণ আকার $(x + y)^n$ নিয়ে আলোচনা করব যেখানে $n$ ধনাত্মক পূর্ণসংখ্যা। $(x + y)^n$ এর বিস্তৃতি সাধারণভাবেই দ্বিপদী উপপাদ্য নামে পরিচিত।\n\nআমরা জানি,\n\n$$(1 + y)^n = 1 + \\binom{n}{1}y + \\binom{n}{2}y^2 + \\binom{n}{3}y^3 + \\dots + \\binom{n}{r}y^r + \\dots + \\binom{n}{n}y^n$$\n\nএখন, $(x + y)^n = \\left[x\\left(1 + \\frac{y}{x}\\right)\\right]^n = x^n\\left(1 + \\frac{y}{x}\\right)^n$\n\n$\\therefore (x + y)^n = x^n\\left[1 + \\binom{n}{1}\\left(\\frac{y}{x}\\right) + \\binom{n}{2}\\left(\\frac{y}{x}\\right)^2 + \\binom{n}{3}\\left(\\frac{y}{x}\\right)^3 + \\dots + \\binom{n}{n}\\left(\\frac{y}{x}\\right)^n\\right]$\n\n$\\therefore (x + y)^n = x^n\\left[1 + \\binom{n}{1}\\frac{y}{x} + \\binom{n}{2}\\frac{y^2}{x^2} + \\binom{n}{3}\\frac{y^3}{x^3} + \\dots + \\frac{y^n}{x^n}\\right]$ $\\left[\\because \\binom{n}{n} = 1\\right]$\n\n$= x^n + \\binom{n}{1}\\left(x^n \\cdot \\frac{y}{x}\\right) + \\binom{n}{2}\\left(x^n \\cdot \\frac{y^2}{x^2}\\right) + \\binom{n}{3}\\left(x^n \\cdot \\frac{y^3}{x^3}\\right) + \\dots + x^n \\cdot \\frac{y^n}{x^n}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

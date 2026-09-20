@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 281,
+  "pdf_page_no": 286,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**কাজ:** তোমার খাতায় একটি বিন্দুকে মূলবিন্দু $O$ ধরে বিভিন্ন অবস্থানে আরও পাঁচটি বিন্দু নিয়ে $O$ বিন্দুর সাপেক্ষে এগুলো অবস্থান ভেক্টর চিহ্নিত কর।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "কতিপয় উদাহরণ",
+      "chunk_type": "theory",
+      "content_markdown": "কতিপয় উদাহরণ",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১.** দেখাও যে, \n\nক) $-(- Α) = Α$ \n\nখ) $-m(Α) = m(- Α) = -(mΑ)$ যেখানে $m$ একটি স্কেলার। \n\nগ) $\\frac{1}{|\\underline{a}|}\\underline{a}$ একটি একক ভেক্টর যার দিক ও $\\underline{a}$ এর দিক একই \n\n**সমাধান:** \n\nক) বিপরীত ভেক্টরের ধর্ম অনুযায়ী $\\underline{a} + (- \\underline{a}) = \\underline{0}$ \n\nআবার $(- \\underline{a}) + (-(- \\underline{a})) = \\underline{0}$ \n\n$\\therefore (- \\underline{a}) + (-(- \\underline{a})) = \\underline{a} + (- \\underline{a})$ \n\n$\\therefore (-(- \\underline{a})) = \\underline{a}$ [ভেক্টরের যোগের বর্জনবিধি] \n\nখ) $m\\underline{a} + (-m)\\underline{a} = [m + (-m)]\\underline{a} = 0\\underline{a} = \\underline{0}$ \n\n$\\therefore (-m)\\underline{a} = -m\\underline{a} \\dots \\dots \\dots (1)$ \n\nআবার $m\\underline{a} + m(-\\underline{a}) = m[\\underline{a} + (-\\underline{a})] = m\\underline{0} = \\underline{0}$ \n\n$\\therefore m(-\\underline{a}) = -m\\underline{a} \\dots \\dots \\dots (2)$ \n\n$(1)$ এবং $(2)$ থেকে $(-m)\\underline{a} = m(-\\underline{a}) = -m\\underline{a}$ \n\nগ) $\\underline{a} \\neq \\underline{0}$ হওয়ায় $|\\underline{a}| \\neq 0$ \n\nমনে করি, $\\hat{a} = \\frac{1}{|\\underline{a}|}\\underline{a}$ \n\nতাহলে $|\\hat{a}| = \\left|\\frac{1}{|\\underline{a}|}\\underline{a}\\right| = \\frac{1}{|\\underline{a}|} |\\underline{a}| = 1$ এবং $\\hat{a}$ এর দিক ও $\\underline{a}$ এর দিক একই। সুতরাং $\\hat{a}$ একটি একক ভেক্টর যার দিক $\\underline{a}$ মুখী।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২.** $ABCD$ একটি সামান্তরিক যার কর্ণদ্বয় $AC$ ও $BD$। \n\nক) $\\vec{AC}$ এবং $\\vec{BD}$ ভেক্টরদ্বয়কে $\\vec{AB}$ এবং $\\vec{AD}$ ভেক্টরদ্বয়ের মাধ্যমে প্রকাশ কর। \n\nখ) $\\vec{AB}$ এবং $\\vec{AD}$ ভেক্টরদ্বয়কে $\\vec{AC}$ এবং $\\vec{BD}$ ভেক্টরদ্বয়ের মাধ্যমে প্রকাশ কর।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

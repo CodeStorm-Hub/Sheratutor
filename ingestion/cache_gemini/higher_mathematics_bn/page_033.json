@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 33,
+  "pdf_page_no": 38,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ১. সেট ও ফাংশন \t ৩৩",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) নিচের প্রত্যেক ক্ষেত্রে প্রদত্ত সমীকরণ থেকে $y$ কে $x$ এর ফাংশন রূপে প্রকাশ করো।\n\n(১) $y - 2 = 3(x - 5)$\n\n(২) $y - 5 = -2(x + 1)$\n\n(৩) $y - 2 = \frac{1}{2}(x + 3)$\n\n(৪) $y - 5 = \frac{4}{3}(x - 3)$\n\nখ) লেখচিত্র অঙ্কন করো:\n\n(১) $y = 3x - 1$\n\n(২) $x + y = 3$\n\n(৩) $x^2 + y^2 = 9$\n\n(৪) $y = \frac{1}{3}x + 1$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩৬. দেওয়া আছে $f : x \to \frac{2x - 1}{2x + 3}$ ।\n\nক) $f\biggl(-\frac{1}{3}\biggr) = $ কত?\n\nখ) ফাংশনটি এক-এক কিনা তা নির্ধারণ করো।\n\nগ) $2f^{-1}(x) = x$ হলে $x$ এর মান নির্ধারণ করো।\n\nসমাধান:\n\nক) দেওয়া আছে, $f : x \to \frac{2x - 1}{2x + 3}$ , সুতরাং $f(x) = \frac{2x - 1}{2x + 3}$ ।\n\n$$f\biggl(-\frac{1}{3}\biggr) = \frac{2\biggl(-\frac{1}{3}\biggr) - 1}{2\biggl(-\frac{1}{3}\biggr) + 3} = \frac{-\frac{2}{3} - 1}{-\frac{2}{3} + 3} = \frac{-\frac{5}{3}}{\frac{7}{3}} = -\frac{5}{3} \times \frac{3}{7} = -\frac{5}{7}$$\n\nখ) দেওয়া আছে, $f : x \to \frac{2x - 1}{2x + 3}$ , সুতরাং $f(x) = \frac{2x - 1}{2x + 3}$ ।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ফর্মা-৫, উচ্চতর গণিত, ৯ম-১০ম শ্রেণি",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1_circle_graph",
+      "caption": null,
+      "box_2d": [
+        95,
+        349,
+        323,
+        646
+      ]
+    }
+  ]
+}

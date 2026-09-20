@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 20,
+  "pdf_page_no": 25,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": "১.১",
+      "section_title": "অনুশীলনী ১.১",
+      "chunk_type": "theory",
+      "content_markdown": "৯. দেখাও যে, ক) $A \\setminus A = \\emptyset$ খ) $A \\setminus (A \\setminus A) = A$।\n\n১০. দেখাও যে, $A \\times (B \\cup C) = (A \\times B) \\cup (A \\times C)$।\n\n১১. যদি $A \\subset B$ এবং $C \\subset D$ হয়, তবে দেখাও যে, $(A \\times C) \\subset (B \\times D)$।\n\n১২. দেখাও যে, $A = \\{1, 2, 3, \\cdots, n\\}$ এবং $B = \\{1, 2, 2^2, \\cdots, 2^{n-1}\\}$ সেট দুটি সমতুল।\n\n১৩. দেখাও যে, স্বাভাবিক সংখ্যাসমূহের বর্গের সেট $\\{1, 4, 9, 16, 25, 36, \\cdots\\}$ একটি অনন্ত সেট।\n\n১৪. প্রমাণ করো যে, $n(A) = p, n(B) = q$ এবং $A \\cap B = \\emptyset$ হলে, $n(A \\cup B) = p + q$।\n\n১৫. প্রমাণ করো যে, $A, B, C$ সসীম সেট হলে, $n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(B \\cap C) - n(C \\cap A) + n(A \\cap B \\cap C)$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১.১",
+      "section_title": "অনুশীলনী ১.১",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৬. $A = \\{a, b, x\\}$ এবং $B = \\{c, y\\}$ সার্বিক সেট $U = \\{a, b, c, x, y, z\\}$ এর উপসেট হলে,",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "১.১",
+      "section_title": "অনুশীলনী ১.১",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) যাচাই করো যে, (i) $A \\subset B'$ (ii) $A \\cup B' = B'$ (iii) $A' \\cap B = B$।\n\nখ) নির্ণয় করো $(A \\cap B) \\cup (A \\cap B')$।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "১.১",
+      "section_title": "অনুশীলনী ১.১",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৭. কোনো শ্রেণির $30$ জন শিক্ষার্থীর মধ্যে $19$ জন অর্থনীতি, $17$ জন ভূগোল, $11$ জন পৌরনীতি, $12$ জন অর্থনীতি ও ভূগোল, $4$ জন পৌরনীতি ও ভূগোল, $7$ জন অর্থনীতি ও পৌরনীতি এবং $3$ জন তিনটি বিষয়ই নিয়েছে। কতজন শিক্ষার্থী তিনটি বিষয়ের কোনটিই নেয়নি?",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "১.১",
+      "section_title": "অনুশীলনী ১.১",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৮. নিচের ভেনচিত্রে সংশ্লিষ্ট সেটের উপাদান সংখ্যা দেখানো হয়েছে, যেখানে সার্বিক সেট $U = A \\cup B \\cup C$।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "১.১",
+      "section_title": "অনুশীলনী ১.১",
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) যদি $n(A \\cap B) = n(B \\cap C)$ হয়, তবে $x$ এর মান নির্ণয় করো।\n\nখ) যদি $n(B \\cap C') = n(A' \\cap C)$ হয়, তবে $y$ এর মান নির্ণয় করো।\n\nগ) $n(U)$ এর মান নির্ণয় করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "১.১",
+      "section_title": "অনুশীলনী ১.১",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৯. নিচের ভেনচিত্রে $U = A \\cup B \\cup C$ এবং $n(U) = 50$।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_venn_1",
+      "caption": "ভেনচিত্র ১৮",
+      "box_2d": [
+        638,
+        298,
+        790,
+        723
+      ]
+    }
+  ]
+}

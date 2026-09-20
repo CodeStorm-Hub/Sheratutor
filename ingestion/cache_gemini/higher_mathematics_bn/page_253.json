@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 253,
+  "pdf_page_no": 258,
+  "chapter_no": 11,
+  "chapter_title": "স্থানাঙ্ক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সুতরাং আমরা পাই,\nত্রিভুজক্ষেত্র $ABC$ এর ক্ষেত্রফল = ট্রাপিজিয়ামক্ষেত্র $ABEF$ এর ক্ষেত্রফল + ট্রাপিজিয়ামক্ষেত্র $BCDE$ এর ক্ষেত্রফল - ট্রাপিজিয়ামক্ষেত্র $ACDF$ এর ক্ষেত্রফল।\n\n$\\therefore$ ত্রিভুজক্ষেত্র $ABC$ এর ক্ষেত্রফল\n$= \\frac{1}{2} \\times (BE + AF) \\times EF + \\frac{1}{2} \\times (CD + BE) \\times DE - \\frac{1}{2} \\times (CD + AF) \\times DF$\n\n$= \\frac{1}{2} \\times (y_2 + y_1) \\times (x_1 - x_2) + \\frac{1}{2} \\times (y_3 + y_2) \\times (x_2 - x_3) - \\frac{1}{2} \\times (y_3 + y_1) \\times (x_1 - x_3)$\n\n$= \\frac{1}{2} (x_1 y_2 + x_2 y_3 + x_3 y_1 - x_2 y_1 - x_3 y_2 - x_1 y_3)$\n\n$$\\begin{vmatrix} x_1 & x_2 & x_3 & x_1 \\\\ y_1 & y_2 & y_3 & y_1 \\end{vmatrix} \\text{ বর্গ একক}$$\n\nযেখানে গুণফলের দিক $\\searrow$ ধনাত্মক চিহ্ন হিসেবে নিয়ে পাওয়া গেছে $x_1 y_2 + x_2 y_3 + x_3 y_1$ এবং গুণফলের দিক $\\nearrow$ ঋণাত্মক চিহ্ন হিসেবে নিয়ে পাওয়া গেছে $-x_2 y_1 - x_3 y_2 - x_1 y_3$\n\n$$\\text{সুতরাং, } \\triangle ABC\\text{র ক্ষেত্রফল} = \\frac{1}{2} \\begin{vmatrix} x_1 & x_2 & x_3 & x_1 \\\\ y_1 & y_2 & y_3 & y_1 \\end{vmatrix} \\text{ বর্গ একক}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মমন্তব্য: মনে রাখা অত্যন্ত গুরুত্বপূর্ণ যে এ পদ্ধতিতে ক্ষেত্রফল নির্ণয়ের ক্ষেত্রে বিন্দুসমূহের স্থানাঙ্ক $\\begin{vmatrix} x_1 & x_2 & x_3 & x_1 \\\\ y_1 & y_2 & y_3 & y_1 \\end{vmatrix}$ অবশ্যই ঘড়ির কাঁটার বিপরীত দিকে নিতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২. $A(2,3), B(5,6)$ এবং $C(-1,4)$ শীর্ষবিশিষ্ট $ABC$ ত্রিভুজের ক্ষেত্রফল নির্ণয় কর।\n\nসমাধান: $A(2,3), B(5,6)$ এবং $C(-1,4)$ শীর্ষ তিনটিকে ঘড়ির কাঁটার বিপরীত দিকে নেওয়া হলো।\n\n$\\triangle ABC$ এর ক্ষেত্রফল\n$= \\frac{1}{2} \\begin{vmatrix} 2 & 5 & -1 & 2 \\\\ 3 & 6 & 4 & 3 \\end{vmatrix}$ বর্গ একক\n\n$= \\frac{1}{2} (12 + 20 - 3 - 15 + 6 - 8)$ বর্গ একক\n\n$= \\frac{1}{2} (12)$ বর্গ একক = $6$ বর্গ একক",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12",
+      "caption": null,
+      "box_2d": [
+        708,
+        545,
+        959,
+        876
+      ]
+    }
+  ]
+}

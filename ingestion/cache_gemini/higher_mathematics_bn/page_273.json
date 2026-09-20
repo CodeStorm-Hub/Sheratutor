@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 273,
+  "pdf_page_no": 278,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "খ) $\\underline{u}$ এর ধারক, $\\underline{v}$ এর ধারকের সঙ্গে অভিন্ন অথবা সমান্তরাল হয়\n\nগ) $\\underline{u}$ এর দিক $\\underline{v}$ এর দিকের সঙ্গে একইমুখী হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমতার এই সংজ্ঞা যে নিচের নিয়মগুলো মেনে চলে, তা সহজেই বোঝা যায়:\n\nক) $\\underline{u} = \\underline{u}$\n\nখ) $\\underline{u} = \\underline{v}$ হলে $\\underline{v} = \\underline{u}$\n\nগ) $\\underline{u} = \\underline{v}$ এবং $\\underline{v} = \\underline{w}$ হলে $\\underline{u} = \\underline{w}$\n\n$\\underline{u}$ এর ধারক এবং $\\underline{v}$ এর ধারক রেখাদ্বয় অভিন্ন বা সমান্তরাল হলে, আমরা সংক্ষেপে বলব $\\underline{u}$ এবং $\\underline{v}$ সমান্তরাল ভেক্টর।\n\n**দ্রষ্টব্য:** যেকোনো বিন্দু থেকে প্রদত্ত যেকোনো ভেক্টরের সমান করে একটি ভেক্টর টানা যায়। কেননা, বিন্দু $P$ এবং ভেক্টর $\\underline{u}$ দেওয়া থাকলে, আমরা $P$ বিন্দু দিয়ে $\\underline{u}$ এর ধারকের সমান্তরাল করে একটি সরলরেখা টানি, তারপর $P$ বিন্দু থেকে $\\underline{u}$ এর দিক বরাবর $|\\underline{u}|$ এর সমান করে $PQ$ রেখাংশ কেটে নিই। তাহলে অঙ্কন অনুযায়ী $\\overrightarrow{PQ} = \\underline{u}$ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**বিপরীত ভেক্টর:** $\\underline{v}$ কে $\\underline{u}$ এর বিপরীত ভেক্টর বলা হয়, যদি\n\nক) $|\\underline{v}| = |\\underline{u}|$\n\nখ) $\\underline{v}$ এর ধারক, $\\underline{u}$ এর ধারকের সঙ্গে অভিন্ন বা সমান্তরাল হয়\n\nগ) $\\underline{v}$ এর দিক $\\underline{u}$ এর দিকের বিপরীত হয়।\n\nযদি $\\underline{u}$ এর বিপরীত ভেক্টর হয়, তবে $\\underline{u}$ হবে $\\underline{v}$ এর বিপরীত ভেক্টর। সমতার সংজ্ঞা থেকে বোঝা যায় যে, $\\underline{v}$ এবং $\\underline{w}$ প্রত্যেকে $\\underline{u}$ এর বিপরীত ভেক্টর হলে $\\underline{v} = \\underline{w}$ হয়। $\\underline{u}$ এর বিপরীত ভেক্টরের বোঝাতে $-\\underline{u}$ লেখা হয়। $\\underline{u} = \\overrightarrow{AB}$ হলে $-\\underline{u} = \\overrightarrow{BA}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ভেক্টরের যোগ",
+      "chunk_type": "theory",
+      "content_markdown": "কোনো $\\underline{u}$ ভেক्टরের প্রান্তবিন্দু থেকে অপর একটি ভেক্টর $\\underline{v}$ আঁকা হলে $\\underline{u} + \\underline{v}$ দ্বারা এরূপ ভেক্টর বোঝায় যার আদিবিন্দু $\\underline{u}$ এর আদিবিন্দু এবং যার প্রান্তবিন্দু $\\underline{v}$ এর প্রান্তবিন্দু। মনে করি $\\overrightarrow{AB} = \\underline{u}$, $\\overrightarrow{BC} = \\underline{v}$ এরূপ দুটি ভেক্টর যে, $\\underline{u}$ এর প্রান্তবিন্দু $\\underline{v}$ এর আদিবিন্দু। তাহলে $\\underline{u}$ এর আদিবিন্দু এবং $\\underline{v}$ এর প্রান্তবিন্দু সংযোজক $\\overrightarrow{AC}$ ভেক্টরকে $\\underline{u}$ ও $\\underline{v}$ ভেক্টরের সমষ্টি বলা হয় এবং $\\underline{u} + \\underline{v}$ দ্বারা সূচিত হয়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12_1",
+      "caption": null,
+      "box_2d": [
+        171,
+        689,
+        213,
+        854
+      ]
+    },
+    {
+      "figure_id": "fig_12_2",
+      "caption": null,
+      "box_2d": [
+        207,
+        148,
+        239,
+        526
+      ]
+    }
+  ]
+}

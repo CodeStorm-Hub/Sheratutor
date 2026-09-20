@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 266,
+  "pdf_page_no": 271,
+  "chapter_no": 11,
+  "chapter_title": "স্থানাঙ্ক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: $AB$ রেখার সমীকরণ, $\\frac{y - 3}{x + 1} = \\frac{3 - 15}{-1 - 5}$\n\n$= \\frac{-12}{-6} = 2$\n\nবা, $y - 3 = 2x + 2$\n\nবা, $y = 2x + 5 \\dots (1)$\n\n$(1)$ হতে $P$ বিন্দুর স্থানাঙ্ক $\\left(-\\frac{5}{2}, 0\\right)$ এবং $Q$ বিন্দুর স্থানাঙ্ক $(0, 5)$\n\n$\\therefore PQ$ রেখার সমীকরণ, $\\frac{y - 0}{x + \\frac{5}{2}} = \\frac{0 - 5}{-5}{2} - 0$\n\nবা, $\\frac{2y}{2x + 5} = \\frac{10}{5} = \\frac{2}{1}$\n\nবা, $2y = 4x + 10$\n\nবা, $y = 2x + 5$\n\nমস্তব্য: $AB$ এবং $PQ$ একই সরলরেখা।\n\n$PQ$ এর দৈর্ঘ্য $= \\sqrt{\\left(-\\frac{5}{2} - 0\\right)^2 + (0 - 5)^2}$\n\n$= \\sqrt{\\frac{25}{4} + 25} = \\sqrt{\\frac{125}{4}} = \\frac{5\\sqrt{5}}{2}$ একক।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উদাহরণ ২৫। $A(3, 4)$, $B(-4, 2)$, $C(6, -1)$ এবং $D(k, 3)$ বিন্দু চারটি ঘড়ির কাঁটার বিপরীত দিকে আবর্তিত।\n\nক) দেখাও যে, $A$ ও $B$ বিন্দুর সংযোগ সরলরেখা $x$ অক্ষের সাথে সূক্ষ্মকোণ উৎপন্ন করে।\n\nখ) $P(x, y)$ বিন্দুটি $A$ ও $B$ থেকে সমদূরবর্তী হলে, দেখাও যে, $14x + 4y = 5$\n\nগ) $ABCD$ চতুর্ভুজক্ষেত্রের ক্ষেত্রফল $\\Delta ABC$ এর ক্ষেত্রফলের তিনগুণ হলে $k$ এর মান নির্ণয় করো।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\n\nক) $AB$ রেখার ঢাল $m$ হলে,\n\n$m = \\frac{2 - 4}{-4 - 3} = \\frac{-2}{-7} = \\frac{2}{7}$",
+      "activity_tag": "সমাধান"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_coordinate_lines",
+      "caption": null,
+      "box_2d": [
+        172,
+        566,
+        545,
+        878
+      ]
+    }
+  ]
+}

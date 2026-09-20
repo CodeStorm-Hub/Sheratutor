@@ -1,0 +1,62 @@
+{
+  "printed_page_no": 131,
+  "pdf_page_no": 136,
+  "chapter_no": 6,
+  "chapter_title": "অসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$2x - 3y + 6 = 0 \\text{ বা, } y = \\frac{2x}{3} + 2$$\n\nএ লেখচিত্রস্থিত কয়েকটি বিন্দুর স্থানাঙ্ক:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "| $x$ | $0$ | $-3$ | $3$ |\n| :---: | :---: | :---: | :---: |\n| $y$ | $2$ | $0$ | $4$ |",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "স্থানাঙ্কায়িত ছক কাগজে ক্ষুদ্রতম বর্গের বাহুর দৈর্ঘ্যকে একক ধরে $(0, 2), (-3, 0), (3, 4)$ বিন্দুগুলো স্থাপন করে সমীকরণটির লেখচিত্র অঙ্কন করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন মূলবিন্দু $(0, 0)$ তে $2x - 3y + 6$ রাশির মান $6$, যা ধনাত্মক। সুতরাং লেখচিত্র রেখাটির যে পার্শ্বে মূলবিন্দু রয়েছে সেই পাশের সকল বিন্দুর জন্যই $2x - 3y + 6 > 0$\n\nঅতএব, $2x - 3y + 6 \\geq 0$ অসমতার সমাধান সেট $2x - 3y + 6 = 0$ সমীকরণের লেখচিত্রস্থিত সকল বিন্দু এবং লেখচিত্রের যে পাশে মূলবিন্দু অবস্থিত সেই পাশের সকল বিন্দুর স্থানাঙ্ক সমন্বয়ে গঠিত।\n\nএই সমাধান সেটের লেখচিত্র উপরের চিত্রের চিহ্নিত অংশটুকু যার মধ্যে লেখচিত্র রেখাটিও অন্তর্ভুক্ত।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. $XY$ সমতলে $-2x < 5$ অসমতার লেখচিত্র অঙ্কন করো।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: $-2x < 5$ অসমতিটিকে এভাবে লেখা যায়।\n\n$$2x + 5 > 0 \\text{ বা, } 2x > -5 \\text{ বা, } x > -\\frac{5}{2}$$\n\nএখন স্থানাঙ্কায়িত $XY$ সমতলে $x = -\\frac{5}{2}$ সমীকরণের লেখচিত্র অঙ্কন করি। ছক কাগজের ক্ষুদ্রতম বর্গের বাহুর দৈর্ঘ্যকে একক ধরে $\\left(-\\frac{5}{2}, 0\\right)$ বিন্দু দিয়ে $Y$ অক্ষের সমান্তরাল করে লেখচিত্র রেখাটি অঙ্কন করা হলো।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_6_1",
+      "caption": null,
+      "box_2d": [
+        311,
+        335,
+        486,
+        659
+      ]
+    }
+  ]
+}

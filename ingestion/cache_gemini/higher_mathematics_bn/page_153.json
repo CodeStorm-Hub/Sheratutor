@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 153,
+  "pdf_page_no": 158,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= \\frac{2}{\\pi} \\text{ সমকোণ।}$$\n\nযেহেতু সমকোণ ও $\\pi$ ধ্রুবক সেহেতু $\\angle POB$ একটি ধ্রুব কোণ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "কোণের বৃত্তীয় পরিমাপ",
+      "chunk_type": "theory",
+      "content_markdown": "**সংজ্ঞা ১।** বৃত্তীয় পদ্ধতিতে (circular system) অর্থাৎ, রেডিয়ান এককে কোনো কোণের পরিমাপকে তার বৃত্তীয় পরিমাপ (circular measure) বলা হয়।\n\nমনে করি, $\\angle MON$ যেকোনো একটি কোণ যার বৃত্তীয় পরিমাপ নির্ণয় করতে হবে। $O$ বিন্দুকে কেন্দ্র করে $OA = r$ ব্যাসার্ধ নিয়ে একটি বৃত্ত অঙ্কন করি। বৃত্তটি $OM$ ও $ON$ কে যথাক্রমে $A$ ও $B$ বিন্দুতে ছেদ করে। তাহলে $AB$ চাপ দ্বারা উৎপন্ন কেন্দ্রস্থ কোণ $\\angle AOB$, ব্যাসার্ধ $r$ এর সমান করে $AP$ চাপ নিই (চাপ ও ব্যাসার্ধ একই এককে হতে হবে)।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে, $\\angle AOP = 1$ রেডিয়ান।\n\nধরি চাপ $AB = s$ |\n\nপ্রতিজ্ঞা ২ অনুযায়ী,\n$$\\frac{\\angle MON}{\\angle AOP} = \\frac{\\text{চাপ } AB}{\\text{চাপ } AP} = \\frac{\\text{চাপ } AB}{\\text{ব্যাসার্ধ } OA} = \\frac{s}{r}$$\n\n$$\\therefore \\angle MON = \\frac{s}{r} \\times \\angle AOP$$\n\n$$= \\frac{s}{r} \\times 1 \\text{ রেডিয়ান} = \\frac{s}{r} \\text{ রেডিয়ান}$$\n\n$\\therefore \\angle MON$ এর বৃত্তীয় পরিমাপ $\\frac{s}{r}$, যেখানে কোণটি তার শীর্ষবিন্দুকে কেন্দ্র করে এবং $r$ ব্যাসার্ধ নিয়ে অঙ্কিত বৃত্তে $s$ পরিমাণ চাপ খণ্ডিত করে।\n\n**প্রতিজ্ঞা ৪।** $r$ ব্যাসার্ধের কোনো বৃত্তে $s$ দৈর্ঘ্যের কোনো চাপ কেন্দ্রে $\\theta$ পরিমাণ কোণ উৎপন্ন করলে $s = r\\theta$ হবে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_8_1",
+      "caption": null,
+      "box_2d": [
+        409,
+        261,
+        546,
+        731
+      ]
+    }
+  ]
+}

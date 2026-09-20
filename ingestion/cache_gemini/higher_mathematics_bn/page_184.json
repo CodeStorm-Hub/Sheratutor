@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 184,
+  "pdf_page_no": 189,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২২. $\\sin\\left(\\frac{9\\pi}{2} + \\theta\\right)$ কোণের ক্ষেত্রে $n = 9$ একটি বিজোড় সংখ্যা তাই $\\sin$ পরিবর্তিত হয়ে $\\cos$ হবে। আবার, $\\left(\\frac{9\\pi}{2} + \\theta\\right)$ দশম বা দ্বিতীয় চতুর্ভাগে থাকে ফলে $\\sin$ এর চিহ্ন ধনাত্মক।\n\n$$\\therefore \\sin\\left(\\frac{9\\pi}{2} + \\theta\\right) = \\cos\\theta$$\n\n$\\sin\\left(\\frac{9\\pi}{2} - \\theta\\right)$ এর ক্ষেত্রে $n = 9$ বিজোড় এবং $\\left(\\frac{9\\pi}{2} - \\theta\\right)$ নবম বা প্রথম চতুর্ভাগে থাকায় $\\sin$ এর চিহ্ন ধনাত্মক।\n\n$$\\therefore \\sin\\left(\\frac{9\\pi}{2} - \\theta\\right) = \\cos\\theta$$\n\n$\\tan\\left(\\frac{9\\pi}{2} + \\theta\\right)$ এর ক্ষেত্রে $n = 9$ বিজোড় বলে $\\tan$ হবে $\\cot$ এবং $\\left(\\frac{9\\pi}{2} + \\theta\\right)$ দশম বা দ্বিতীয় চতুর্ভাগে থাকায় $\\tan$ এর চিহ্ন ঋণাত্মক।\n\n$$\\therefore \\tan\\left(\\frac{9\\pi}{2} + \\theta\\right) = -\\cot\\theta$$\n\nএকইভাবে, $\\tan\\left(\\frac{9\\pi}{2} - \\theta\\right) = \\cot\\theta$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $\\sin\\left(\\frac{11\\pi}{2} \\pm \\theta\\right)$, $\\cos\\left(11\\pi \\pm \\theta\\right)$, $\\tan\\left(\\frac{17\\pi}{2} \\pm \\theta\\right)$, $\\cot\\left(18\\pi \\pm \\theta\\right)$, $\\sec\\left(\\frac{19\\pi}{2} \\pm \\theta\\right)$ এবং $\\text{cosec}\\left(8\\pi \\pm \\theta\\right)$ অনুপাতসমূহকে $\\theta$ কোণের অনুপাতে প্রকাশ করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৩. মান নির্ণয় করো।\n\nক) $\\sin(10\\pi + \\theta)$\n\nখ) $\\cos\\left(\\frac{19\\pi}{3}\\right)$\n\nগ) $\\tan\\left(\\frac{11\\pi}{6}\\right)$\n\nঘ) $\\cot\\left(\\theta - \\frac{9\\pi}{2}\\right)$\n\nঙ) $\\sec\\left(-\\frac{17\\pi}{2}\\right)$\n\nসমাধান:\n\nক) $\\sin(10\\pi + \\theta) = \\sin\\left(20 \\times \\frac{\\pi}{2} + \\theta\\right)$\n\nএখানে $n = 20$ এবং $\\sin\\left(20 \\times \\frac{\\pi}{2} + \\theta\\right)$ কোণটি 21 তম বা প্রথম চতুর্ভাগে অবস্থিত।\n\n$$\\therefore \\sin(10\\pi + \\theta) = \\sin\\theta$$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 137,
+  "pdf_page_no": 142,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ক) $\\frac{1}{2}, \\frac{1}{2^2}, \\frac{1}{2^3}, \\frac{1}{2^4}, \\dots, \\frac{1}{2^n}, \\dots$\n\nখ) $3, 1, -1, -3, \\dots, (5 - 2n), \\dots$\n\nগ) $1, \\frac{2}{3}, \\frac{3}{5}, \\frac{4}{7}, \\dots, \\frac{n}{2n - 1}, \\dots$\n\nঘ) $\\frac{1}{2}, \\frac{1}{5}, \\frac{1}{10}, \\frac{1}{17}, \\dots, \\frac{1}{n^2 + 1}, \\dots$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) নিচের অনুক্রমগুলোর সাধারণ পদ নির্ণয় করো:\n(১) $\\frac{1}{2}, \\frac{2}{3}, \\frac{3}{4}, \\frac{4}{5}, \\dots$\n(২) $\\frac{1}{2}, \\frac{3}{4}, \\frac{5}{6}, \\frac{7}{8}, \\dots$\n(৩) $\\frac{1}{2}, \\frac{1}{2}, \\frac{3}{2^3}, \\frac{4}{2^4}, \\dots$\n(৪) $1, \\sqrt{2}, \\sqrt{3}, 2, \\dots$\n\nখ) প্রদত্ত সাধারণ পদ হতে অনুক্রমগুলো লেখো:\n(১) $1 + (-1)^n$\n(২) $1 - (-1)^n$\n(৩) $1 + \\left(-\\frac{1}{2}\\right)^n$\n(৪) $\\frac{n^2}{\\sqrt{\\pi}}$\n(৫) $\\frac{\\ln n}{n}$\n(৬) $\\cos\\left(\\frac{n\\pi}{2}\\right)$\n\nগ) তোমরা প্রত্যেকে একটি করে কোন অনুক্রমের সাধারণ পদ লিখে তারপর অনুক্রমটি লেখো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "ধারা",
+      "chunk_type": "theory",
+      "content_markdown": "কোনো অনুক্রমের পদগুলো পরপর যোগ চিহ্ন দ্বারা যুক্ত করলে একটি ধারা (series) পাওয়া যায়। যেমন, $1 + 4 + 9 + 16 + \\dots$ একটি ধারা। আবার $\\frac{1}{2} + \\frac{1}{4} + \\frac{1}{8} + \\frac{1}{16} + \\dots$ আরেকটি ধারা। এই পরের ধারাটির পরপর দুটি পদের অনুপাত সমান। এ রকম ধারাকে বলা হয় গুণোত্তর ধারা। যেকোনো ধারার পরপর দুটি পদের মধ্যে সম্পর্কের উপর নির্ভর করে ওই ধারাটির বৈশিষ্ট্য। যেমন সমান্তর ধারার ক্ষেত্রে পরপর দুটি পদের অন্তর বা বিয়োগফল সমান হয়।\n\nকোনো ধারার পদের সংখ্যার উপর নির্ভর করে ধারাকে নিম্নোক্ত দুইভাবে ভাগ করা যায়। ক) সসীম বা সান্ত ধারা (Finite series) খ) অসীম বা অনন্ত ধারা (Infinite series)। সসীম ধারা সম্পর্কে নবম-দশম শ্রেণির গণিতে আলোচনা করা হয়েছে। এখানে অসীম ধারা সম্পর্কে আলোচনা করা হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "অসীম ধারা (Infinite Series)",
+      "chunk_type": "theory",
+      "content_markdown": "বাস্তব সংখ্যার একটি অনুক্রম $u_1, u_2, u_3, \\dots, u_n, \\dots$ হলে $u_1 + u_2 + u_3 + \\dots + u_n + \\dots$ কে বাস্তব সংখ্যার একটি অসীম ধারা বলা হয়। এই ধারাটির $n$ তম পদ $u_n$ ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "অসীম ধারার আংশিক সমষ্টি (Partial Sum of Infinite Series)",
+      "chunk_type": "theory",
+      "content_markdown": "$u_1 + u_2 + u_3 + \\dots + u_n + \\dots$ অনন্ত ধারার",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

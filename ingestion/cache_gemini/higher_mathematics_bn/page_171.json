@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 171,
+  "pdf_page_no": 176,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিকল্প: আমরা জানি, $\\cos\\theta = \\frac{\\text{ভূমি}}{\\text{অতিভুজ}} = \\frac{4}{5}$ [দেওয়া আছে]\n\nপাশের চিত্রে সমকোণী ত্রিভুজ $POQ$ থেকে পাই,\n\n$PQ = \\sqrt{OP^2 - OQ^2} = \\sqrt{5^2 - 4^2}$\n\n$= \\sqrt{25 - 16} = \\sqrt{9} = 3$ একক\n\n$\\sin\\theta = \\frac{\\text{লম্ব}}{\\text{অতিভুজ}} = \\frac{PQ}{OP} = \\frac{3}{5}$\n\n$\\tan\\theta = \\frac{\\text{লম্ব}}{\\text{ভূমি}} = \\frac{PQ}{OQ} = \\frac{3}{4}$\n\n$\\sec\\theta = \\frac{\\text{অতিভুজ}}{\\text{ভূমি}} = \\frac{OP}{OQ} = \\frac{5}{4}$\n\n$\\operatorname{cosec}\\theta = \\frac{\\text{অতিভুজ}}{\\text{লম্ব}} = \\frac{OP}{PQ} = \\frac{5}{3}$\n\n$\\cot\\theta = \\frac{\\text{ভূমি}}{\\text{লম্ব}} = \\frac{OQ}{PQ} = \\frac{4}{3}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $\\theta$ স্থূলকোণ $\\left(\\frac{\\pi}{2} < \\theta < \\pi\\right)$ এবং $\\tan\\theta = -\\frac{1}{2}$ হলে, অপর ত্রিকোণমিতিক অনুপাতসমূহ সমকোণী ত্রিভুজ এবং ত্রিকোণমিতিক অভেদ এর সাহায্যে নির্ণয় করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২. $\\cos A = \\frac{4}{5}, \\sin B = \\frac{12}{13}$ এবং $A$ ও $B$ উভয়ই সূক্ষ্মকোণ হলে $\\frac{\\tan B - \\tan A}{1 + \\tan B \\cdot \\tan A}$ এর মান নির্ণয় করো।\n\nসমাধান: দেওয়া আছে, $\\cos A = \\frac{4}{5}$\n\nআমরা জানি, $\\sin^2 A + \\cos^2 A = 1$\n\nবা, $\\sin^2 A = 1 - \\cos^2 A = 1 - \\frac{16}{25} = \\frac{9}{25}$\n\n$\\therefore \\sin A = \\sqrt{\\frac{9}{25}} = \\frac{3}{5}$ [$A$ সূক্ষ্মকোণ]\n\n$\\tan A = \\frac{\\sin A}{\\cos A} = \\frac{\\frac{3}{5}}{\\frac{4}{5}} = \\frac{3}{4}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_trig_1",
+      "caption": null,
+      "box_2d": [
+        73,
+        620,
+        260,
+        901
+      ]
+    },
+    {
+      "figure_id": "fig_trig_2",
+      "caption": null,
+      "box_2d": [
+        801,
+        620,
+        953,
+        901
+      ]
+    }
+  ]
+}

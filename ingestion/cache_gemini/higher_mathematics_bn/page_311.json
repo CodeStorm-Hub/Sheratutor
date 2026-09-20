@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 311,
+  "pdf_page_no": 316,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সম্ভাবনা নির্ণয় করো ক) কেবল একটা টেল, খ) তিনটাই হেড, গ) কমপক্ষে একটা টেল পাওয়ার সম্ভাবনা বের করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: প্রথমে মুদ্রা তিনটিকে তিন ধাপ হিসেবে বিবেচনা করি এবং প্রতি ধাপে $2$ টি ফলাফল $H$ অথবা $T$ আসতে পারে। মোট ফলাফলকে probability tree এর সাহায্যে নিম্নভাবে দেখানো যায়:",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে নমুনাক্ষেত্রটি হবে: $\\{HHH, HHT, HTH, HTT, THH, THT, TTH, TTT\\}$ \nএখানে মোট নমুনা বিন্দু $8$ টি এবং এদের যেকোনো একটি ঘটনা ঘটার সম্ভাবনা $\\frac{1}{8}$ ।\n\nক) একটি টেল পাওয়ার অনুকূল ঘটনাগুলো $\\{THH, HHT, HTH\\} = 3$ টি ।\n$$\\therefore P(1T) = \\frac{3}{8}$ (কেননা প্রতিটি নমুনা বিন্দুর ঘটার সম্ভাবনা $\\frac{1}{8}$)\n\nখ) তিনটাই হেড $(H)$ পাওয়ার অনুকূল ঘটনা $\\{HHH\\} = 1$ টি ।\n$$\\therefore P(HHH) = \\frac{1}{8}$$\n\nগ) কমপক্ষে $1$ টি টেল $(T)$ পাওয়ার অনুকূল ঘটনাগুলো $HHH$ ছাড়া বাকি সবগুলো অর্থাৎ $\\{HHT, HTH, HTT, THH, THT, TTH, TTT\\} = 7$ টি ।\n$$\\therefore P[\\text{কমপক্ষে } 1T] = \\frac{7}{8}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. একটি নিরপেক্ষ ছক্কা ও একটি মুদ্রা একবার নিক্ষেপ করা হলো। Probability tree তৈরি করে নমুনাক্ষেত্রটি লিখ। ছক্কায় $5$ এবং মুদ্রায় $H$ আসার সম্ভাবনা বের করো ।\n\nসমাধান: একটি ছক্কা ও একটি মুদ্রা নিক্ষেপ পরীক্ষাকে দুই ধাপ হিসেবে বিবেচনা করি। প্রথম ধাপে ছক্কা নিক্ষেপে $6$ টি ফলাফল $\\{1, 2, 3, 4, 5, 6\\}$ আসতে পারে। দ্বিতীয় ধাপে মুদ্রা নিক্ষেপে $2$ টি ফলাফল $H$ অথবা $T$ আসতে পারে। তাই পরীক্ষায় মোট ফলাফলকে probability tree এর সাহায্যে নিম্নভাবে দেখানো যাবে।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_14_probability_tree",
+      "caption": "Probability tree for three coin tosses",
+      "box_2d": [
+        188,
+        222,
+        458,
+        874
+      ]
+    }
+  ]
+}

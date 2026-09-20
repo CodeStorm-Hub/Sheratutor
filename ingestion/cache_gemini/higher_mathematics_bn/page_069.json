@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 69,
+  "pdf_page_no": 74,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$AB^2 + AC^2 = 2AD^2 + BD^2 + CD^2 + 2 \\cdot BD \\cdot DE - 2 \\cdot CD \\cdot DE$$$$= 2AD^2 + 2BD^2 \\quad [\\because BD = CD]$$$$\\therefore AB^2 + AC^2 = 2(AD^2 + BD^2) \\quad \\text{[প্রমাণিত]}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অ্যাপোলোনিয়াসের উপপাদ্যের মাধ্যমে ত্রিভুজের বাহু ও মধ্যমার সম্পর্ক নির্ণয়।\n\nমনে করি, $\\triangle ABC$ এর $BC$, $CA$ ও $AB$ বাহুর দৈর্ঘ্য যথাক্রমে $a$, $b$ ও $c$। $BC$, $CA$ ও $AB$ বাহুর উপর অঙ্কিত মধ্যমা $AD$, $BE$ ও $CF$ এর দৈর্ঘ্য যথাক্রমে $d$, $e$ ও $f$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে, অ্যাপোলোনিয়াসের উপপাদ্য হতে পাই,\n\n$$AB^2 + AC^2 = 2(AD^2 + BD^2)$$\n\n$$\\text{বা, } c^2 + b^2 = 2\\left(d^2 + \\left(\\frac{1}{2}a\\right)^2\\right) \\quad \\left[\\because BD = \\frac{1}{2}a\\right]$$\n\n$$\\text{বা, } b^2 + c^2 = 2d^2 + 2 \\cdot \\frac{1}{4}a^2$$\n\n$$\\text{বা, } b^2 + c^2 = 2d^2 + \\frac{a^2}{2}$$\n\n$$\\text{বা, } d^2 = \\frac{2(b^2 + c^2) - a^2}{4}$$\n\nঅনুরূপভাবে পাওয়া যায়, $e^2 = \\frac{2(c^2 + a^2) - b^2}{4}$ এবং $f^2 = \\frac{2(a^2 + b^2) - c^2}{4}$\n\nসুতরাং বলা যায় কোনো ত্রিভুজের বাহুগুলোর দৈর্ঘ্য জানা থাকলে মধ্যমাসমূহের দৈর্ঘ্য জানা যায়।\n\nআবার, $d^2 + e^2 + f^2 = \\frac{2(b^2 + c^2) - a^2}{4} + \\frac{2(c^2 + a^2) - b^2}{4} + \\frac{2(a^2 + b^2) - c^2}{4}$\n\n$$\\text{অর্থাৎ, } d^2 + e^2 + f^2 = \\frac{3}{4}(a^2 + b^2 + c^2)$$\n\n$$\\therefore 3(a^2 + b^2 + c^2) = 4(d^2 + e^2 + f^2)$$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_3_1",
+      "caption": null,
+      "box_2d": [
+        272,
+        375,
+        461,
+        627
+      ]
+    }
+  ]
+}

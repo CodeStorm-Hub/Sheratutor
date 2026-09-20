@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 222,
+  "pdf_page_no": 227,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "নমুনা প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "নমুনা প্রশ্ন\nবহুনির্বাচনি প্রশ্ন\n১. $\\left\\{\\left(x^{\\frac{1}{a}}\\right)^{\\frac{a^2-b^2}{a-b}}\\right\\}^{\\frac{a}{a+b}}$ এর সরল মান কোনটি?\nক) $0$খ) $1$গ) $a$ঘ) $x$\n২. যদি $a, b, p > 0$ এবং $a \\neq 1, b \\neq 1$ হয়, তবে\n(i) $\\log_a P = \\log_b P \\times \\log_a b$\n(ii) $\\log_a \\sqrt{a} \\times \\log_b \\sqrt{b} \\times \\log_c \\sqrt{c} = 2$\n(iii) $x^{\\log_a y} = y^{\\log_a x}$\nউপরের তথ্যের আলোকে নিচের কোনটি সঠিক?\nক) $i$ ও $ii$খ) $ii$ ও $iii$গ) $i$ ও $iii$ঘ) $i, ii$ ও $iii$\n৩ ও ৪ নং প্রশ্নের উত্তর দাও যখন $x, y, z \\neq 0$ এবং $a^x = b^y = c^z$\n৩. কোনটি সঠিক?\nক) $a = b^{\\frac{y}{x}}$খ) $a = c^{\\frac{z}{y}}$গ) $a = c^{\\frac{z}{x}}$ঘ) $a \\neq \\frac{b^2}{c}$\n৪. $b^2 = ac$ হলে নিচের কোনটি সঠিক?\nক) $\\frac{1}{x} + \\frac{1}{z} = \\frac{2}{y}$খ) $\\frac{1}{x} + \\frac{1}{y} = \\frac{2}{z}$গ) $\\frac{1}{y} + \\frac{1}{z} = \\frac{2}{x}$ঘ) $\\frac{1}{x} + \\frac{1}{y} = \\frac{z}{2}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "সৃজনশীল প্রশ্ন\n৫. $f(x) = 3^{2x+2}$ এবং $g(x) = 27^{x+1}$",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $f(x)$ এর ডোমেন নির্ণয় করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $f(x) + g(x) = 36$ হলে, $x$ এর মান নির্ণয় করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $q(x) = \\frac{g(x)}{f(x)}$ হলে, $q(x)$ এর লেখচিত্র অঙ্কন করে লেখচিত্র থেকে ডোমেন এবং রেঞ্জ নির্ণয় করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "সংক্ষিপ্ত-উত্তর প্রশ্ন\n৬.\nক) $\\sqrt[16]{(m^{12})\\sqrt{(m^5)\\sqrt{m^6}}}$ এর মান নির্ণয় করো।\nখ) যদি $a = 2^{\\frac{1}{3}} + 2^{-\\frac{1}{3}}$ হয়, তবে দেখাও যে, $2a^3 - 6a = 5$\nগ) $f(x) = \\ln(x - 2)$ ফাংশনটির ডোমেন $D_f$ এবং রেঞ্জ $R_f$ নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

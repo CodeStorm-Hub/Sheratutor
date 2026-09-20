@@ -52,12 +52,21 @@ export const GeneratedQuestionSchema = z
   })
   .superRefine((data, ctx) => {
     if (data.question_type === "CQ") {
-      if (!data.sub_questions || data.sub_questions.length < 4) {
+      if (!data.sub_questions || data.sub_questions.length < 3) {
         ctx.addIssue({
           code: z.ZodIssueCode.custom,
-          message: "Every CQ MUST contain exactly 4 sub_questions: ক (1), খ (2), গ (3), ঘ (4)",
+          message: "Every CQ MUST contain at least 3 sub_questions: ক, খ, গ (Math: 2+4+4=10; Science: 1+2+3+4=10)",
           path: ["sub_questions"],
         });
+      } else {
+        const totalSubMarks = data.sub_questions.reduce((sum, sq) => sum + sq.marks, 0);
+        if (totalSubMarks !== 10) {
+          ctx.addIssue({
+            code: z.ZodIssueCode.custom,
+            message: `Sum of CQ sub_questions marks must equal 10 (got ${totalSubMarks})`,
+            path: ["sub_questions"],
+          });
+        }
       }
     } else if (data.question_type === "MCQ") {
       if (!data.mcq_options || data.mcq_options.length < 4) {
@@ -82,7 +91,7 @@ const CQOnlySchema = z.object({
       max_marks: z.number(),
       stimulus_bn: z.string().nullable().optional(),
       stimulus_en: z.string().nullable().optional(),
-      sub_questions: z.array(CQSubQuestionSchema).min(4),
+      sub_questions: z.array(CQSubQuestionSchema).min(3),
     })
   ),
 });
@@ -183,31 +192,24 @@ function buildCQPrompt({
     ? [
         {
           part: "ক",
-          text_bn: "অনুক্রম ও ধারার মধ্যে মূল পার্থক্য কী?",
-          text_en: "What is the primary difference between a sequence and a series?",
-          marks: 1,
-          rubric_step_rules: "অনুক্রম ও ধারার সঠিক সংজ্ঞার্থ পার্থক্যের জন্য ১ নম্বর।",
+          text_bn: "গুণোত্তর ধারাটির সাধারণ অনুপাত নির্ণয় করো।",
+          text_en: "Find the common ratio of the geometric series.",
+          marks: 2,
+          rubric_step_rules: "সূত্র প্রয়োগের জন্য ১ নম্বর, সঠিক সাধারণ অনুপাতের জন্য ১ নম্বর।",
         },
         {
           part: "খ",
-          text_bn: "উদ্দীপকের গুণোত্তর ধারাটির ৫ম পদ নির্ণয় করো।",
-          text_en: "Find the 5th term of the geometric series from the stimulus.",
-          marks: 2,
-          rubric_step_rules: "সূত্রে মান বসানোর জন্য ১ নম্বর, সঠিক উত্তরের জন্য ১ নম্বর।",
+          text_bn: "সমান্তর ধারাটির ১ম পদ ও সাধারণ অন্তর নির্ণয় করো।",
+          text_en: "Determine the first term and common difference of the arithmetic series.",
+          marks: 4,
+          rubric_step_rules: "শর্তানুসারে সমীকরণ গঠনের জন্য ১ নম্বর, সমীকরণ সমাধানের জন্য ২ নম্বর, ১ম পদ ও সাধারণ অন্তরের সঠিক মানের জন্য ১ নম্বর।",
         },
         {
           part: "গ",
-          text_bn: "সমান্তর ধারাটির ১ম পদ ও সাধারণ অন্তর নির্ণয় করে প্রথম ২৫টি পদের সমষ্টি বের করো।",
-          text_en: "Find the first term and common difference of the arithmetic series and calculate the sum of the first 25 terms.",
-          marks: 3,
-          rubric_step_rules: "সহসমীকরণ গঠন ও সমাধানের জন্য ১ নম্বর, সমষ্টির সূত্রে মান বসানোর জন্য ১ নম্বর, সঠিক উত্তরের জন্য ১ নম্বর।",
-        },
-        {
-          part: "ঘ",
-          text_bn: "সমান্তর ধারাটির কততম পদ $142$ হবে? গাণিতিকভাবে বিশ্লেষণ করো।",
-          text_en: "Which term of the arithmetic series will be 142? Analyze mathematically.",
+          text_bn: "সমান্তর ধারাটির প্রথম ৩০টি পদের সমষ্টি নির্ণয় করো।",
+          text_en: "Find the sum of the first 30 terms of the arithmetic series.",
           marks: 4,
-          rubric_step_rules: "শর্তমতে সমীকরণ গঠনের জন্য ১ নম্বর, ধাপভিত্তিক সমাধানের জন্য ২ নম্বর, চূড়ান্ত সিদ্ধান্তের জন্য ১ নম্বর।",
+          rubric_step_rules: "সমষ্টির সূত্র লেখার জন্য ১ নম্বর, সূত্রে সঠিক মান বসানোর জন্য ১ নম্বর, সঠিক উত্তরের জন্য ২ নম্বর।",
         },
       ]
     : [
@@ -241,22 +243,29 @@ function buildCQPrompt({
         },
       ];
 
-  return `You are a senior NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner. Write ${cqCount} authentic ${difficulty} Creative Questions (সৃজনশীল প্রশ্ন) in Bengali following NCTB 2025 board standards exactly.
+  const subQuestionInstructions = isMath
+    ? `MANDATORY: Generate EXACTLY ${cqCount} CQs.
+NCTB MATHEMATICS STANDARD: Each CQ = 10 marks, structured into EXACTLY 3 parts (ক, খ, গ):
+- Part (ক) = 2 marks: সহজ / প্রাথমিক সমস্যা (Basic calculation or independent small concept).
+- Part (খ) = 4 marks: মধ্যম / উদ্দীপকভিত্তিক প্রয়োগ (Application / step-by-step problem solving).
+- Part (গ) = 4 marks: কঠিন / উচ্চতর দক্ষতা (Higher order analysis / proof / complex mathematical determination).
+Total = 2 + 4 + 4 = 10 marks per CQ. Do NOT generate part (ঘ) for Mathematics.
 
-MANDATORY: Generate EXACTLY ${cqCount} CQs. Each CQ = 10 marks (1+2+3+4).
+RULE 2 — PART (ক) — 2 marks — সহজ / প্রাথমিক গাণিতিক রূপান্তর বা সংজ্ঞার্থ:
+• Short calculation, factorization, or formula application (e.g., $x + \\frac{1}{x}$-এর মান নির্ণয়, উৎপাদকে বিশ্লেষণ).
+• Rubric: "সূত্র বা প্রাথমিক ধাপের জন্য ১ নম্বর, সঠিক উত্তরের জন্য ১ নম্বর।"
 
-CURRICULUM CHAPTERS (use these IDs and topics):
-${chapterTitles}
+RULE 3 — PART (খ) — 4 marks — মধ্যম / প্রয়োগমূলক গাণিতিক সমাধান:
+• MUST directly use the stimulus data to solve, find, or prove.
+• Verbs: "নির্ণয় করো", "প্রমাণ করো", "সমাধান করো", "মান বের করো".
+• Rubric: "শর্তানুসারে সমীকরণ গঠনের জন্য ১ নম্বর, সমাধান ধাপের জন্য ২ নম্বর, সঠিক সিদ্ধান্তের জন্য ১ নম্বর।"
 
-══════════════════════════════════════════════════════
-CRITICAL RULES — Follow EXACTLY or the output is invalid
-══════════════════════════════════════════════════════
-
-RULE 1 — STIMULUS (উদ্দীপক) REQUIREMENTS:
-${stimulusGuidance}
-• ALL math, chemical symbols, formulas MUST be wrapped in $...$: use $x^2 + 5x + 6 = 0$, $H_2O$, $F = ma$
-• The stimulus must GROUND parts (গ) and (ঘ) — students must READ the stimulus to answer them.
-• Do NOT write a generic stimulus — it must have specific numbers or mathematical data.
+RULE 4 — PART (গ) — 4 marks — কঠিন / উচ্চতর দক্ষতামূলক সমস্যা বিশ্লেষণ:
+• Multi-step synthesis, geometric theorem proof, or complex algebraic/trigonometric deduction from stimulus.
+• Verbs: "প্রমাণ করো যে", "সত্যতা যাচাই করো", "বিশ্লেষণ করো", "সমাধান করে দেখাও যে".
+• Rubric: "প্রয়োজনীয় সূত্র বা উপপাদ্যের জন্য ১ নম্বর, গাণিতিক প্রতিপাদন/ধাপের জন্য ২ নম্বর, চূড়ান্ত প্রমাণের জন্য ১ নম্বর।"
+`
+    : `MANDATORY: Generate EXACTLY ${cqCount} CQs. Each CQ = 10 marks (1+2+3+4).
 
 RULE 2 — PART (ক) — 1 mark — জ্ঞানমূলক (Knowledge):
 • MUST be a simple definition question in exactly this pattern: "X কাকে বলে?" OR "X কী?"
@@ -281,6 +290,24 @@ RULE 5 — PART (ঘ) — 4 marks — উচ্চতর দক্ষতাম�
 • MUST reference the উদ্দীপক.
 • Rubric (MUST BE STEP-WISE, 4 separate steps):
   "নীতি/সূত্রের জন্য ১ নম্বর, তথ্যের প্রয়োগের জন্য ১ নম্বর, তুলনামূলক বিশ্লেষণের জন্য ১ নম্বর, সঠিক সিদ্ধান্তের জন্য ১ নম্বর।"
+`;
+
+  return `You are a senior NCTB SSC ${subjectNameEn} (${subjectNameBn}) board examiner. Write ${cqCount} authentic ${difficulty} Creative Questions (সৃজনশীল প্রশ্ন) in Bengali following NCTB 2025 board standards exactly.
+
+${subQuestionInstructions}
+
+CURRICULUM CHAPTERS (use these IDs and topics):
+${chapterTitles}
+
+══════════════════════════════════════════════════════
+CRITICAL RULES — Follow EXACTLY or the output is invalid
+══════════════════════════════════════════════════════
+
+RULE 1 — STIMULUS (উদ্দীপক) REQUIREMENTS:
+${stimulusGuidance}
+• ALL math, chemical symbols, formulas MUST be wrapped in $...$: use $x^2 + 5x + 6 = 0$, $H_2O$, $F = ma$
+• The stimulus must GROUND ${isMath ? "parts (খ) and (গ)" : "parts (গ) and (ঘ)"} — students must READ the stimulus to answer them.
+• Do NOT write a generic stimulus — it must have specific numbers or mathematical data.
 
 RULE 6 — LaTeX:
 • ALL mathematical expressions, equations, and symbols MUST be in $...$
@@ -304,7 +331,7 @@ OUTPUT FORMAT — Return ONLY this valid JSON (no markdown, no text outside JSON
   ]
 }
 
-Generate all ${cqCount} CQs now. Every CQ must follow RULES 1–7 strictly.`;
+Generate all ${cqCount} CQs now. Every CQ must follow the rules strictly.`;
 }
 
 // ─── Shared MCQ prompt ────────────────────────────────────────────────────────

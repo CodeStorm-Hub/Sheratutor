@@ -1,0 +1,76 @@
+{
+  "printed_page_no": 286,
+  "pdf_page_no": 291,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "চিত্রে, $P$ ও $Q$ যথাক্রমে $AB$ ও $DC$ এর মধ্যবিন্দু এবং $AD \rVert BC$। $A, B, C$ ও $D$ বিন্দুর অবস্থান ভেক্টর যথাক্রমে $\\underline{a}, \\underline{b}, \\underline{c}$ এবং $\\underline{d}$।\nউপরের তথ্যের আলোকে ৩ ও ৪ নং প্রশ্নের উত্তর দাও:",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "৩",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$P$ বিন্দুর অবস্থান ভেক্টর কোনটি?\n(ক) $\\frac{\\underline{a} + \\underline{b} - \\underline{c}}{2}$\n(খ) $\\frac{\\underline{a} - \\underline{b}}{2}$\n(গ) $\\frac{\\underline{b} - \\underline{a}}{2}$\n(ঘ) $\\frac{\\underline{a} + \\underline{b}}{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৪",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$\\vec{PQ} = \\text{কত?}$\n(ক) $\\frac{1}{2}(\\vec{AD} - \\vec{BC})$\n(খ) $\\frac{1}{2}(\\vec{BC} + \\vec{AD})$\n(গ) $(\\vec{AD} - \\vec{BC})$\n(ঘ) $(\\vec{BC} + \\vec{AD})$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "সৃজনশীল প্রশ্ন",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$\\triangle ABC$ এর $AB$ ও $AC$ বাহুর মধ্যবিন্দু যথাক্রমে $D$ ও $E$।\n(ক) $(\\vec{AD} + \\vec{DE})$ কে $\\vec{AC}$ ভেক্টরের মাধ্যমে প্রকাশ করো।\n(খ) ভেক্টরের সাহায্যে প্রমাণ করো যে, $BC \rVert DE$ এবং $DE = \\frac{1}{2}BC$\n(গ) $BCED$ ট্রাপিজিয়ামের কর্ণদ্বয়ের মধ্যবিন্দু $M$ ও $N$ হলে ভেক্টরের সাহায্যে প্রমাণ করো যে, $MN \rVert DE \rVert BC$ এবং $MN = \\frac{1}{2}(BC - DE)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$\\triangle ABC$ এর $BC, CA$ ও $AB$ বাহুর মধ্যবিন্দু যথাক্রমে $D, E, F$I\n(ক) $\\vec{AB}$ ভেক্টরকে $\\vec{BE}$ ও $\\vec{CF}$ ভেক্টরের মাধ্যমে প্রকাশ করো।\n(খ) প্রমাণ করো যে, $\\vec{AD} + \\vec{BE} + \\vec{CF} = \\underline{0}$\n(গ) ভেক্টরের সাহায্যে প্রমাণ করো যে, $F$ বিন্দু দিয়ে অঙ্কিত $BC$ এর সমান্তরাল রেখা অবশ্যই $E$ বিন্দুগামী হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) দেখাও যে $\\underline{a}, \\underline{b}$ প্রত্যেকে অশূন্য ভেক্টর হলে, $\\underline{a} = m\\underline{b}$ হতে পারে কেবলমাত্র যদি $\\underline{a}, \\underline{b}$ এর সমান্তরাল হয়।\n(খ) $A, B, C, D$ বিন্দুগুলোর অবস্থান ভেক্টর যথাক্রমে $\\underline{a}, \\underline{b}, \\underline{c}, \\underline{d}$ হলে দেখাও যে, $ABCD$ সামান্তরিক হবে যদি এবং কেবল যদি $\\underline{b} - \\underline{a} = \\underline{c} - \\underline{d}$ হয়।\n(গ) $\\triangle ABC$ এ $BC$ এর মধ্যবিন্দু $D$। দেখাও যে, $\\vec{AB} + \\vec{AC} = 2\\vec{AD}$\n(ঘ) কোন কোন শর্তে $\\underline{u}$ এবং $\\underline{v}$ কে বিপরীত ভেক্টর বলা যাবে?",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12_trig",
+      "caption": "চিত্র, P ও Q যথাক্রমে AB ও DC এর মধ্যবিন্দু এবং AD || BC",
+      "box_2d": [
+        90,
+        340,
+        179,
+        535
+      ]
+    }
+  ]
+}

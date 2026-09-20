@@ -1,0 +1,128 @@
+{
+  "printed_page_no": 144,
+  "pdf_page_no": 149,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৫. একটি অনুক্রমের $n$ তম পদ $u_n = \frac{1}{n}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $u_n < 10^{-5}$ হলে, $n$ এর মান কিরাপ হবে?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $u_n > 10^{-5}$ হলে, $n$ এর মান কিরাপ হবে?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $u_n$ এর প্রান্তীয় মান ($n$ যথেষ্ট বড় হলে) সম্পর্কে কী বলা যায়?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৬. প্রদত্ত অসীম গুণোত্তর ধারার (অসীমতমক) সমষ্টি যদি থাকে, তবে তা নির্ণয় করো:",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ক) $1 + \frac{1}{2} + \frac{1}{4} + \frac{1}{8} + \\dots$\n\nখ) $8 + 2 + \frac{1}{2} + \frac{1}{8} + \frac{1}{32} + \\dots$\n\nগ) $1 + 2 + 4 + 8 + 16 + \\dots$\n\nঘ) $\frac{1}{2} + \\left(-\\frac{1}{4}\\right) + \frac{1}{8} + \\left(-\\frac{1}{16}\\right) + \\dots$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৭. নিচের ধারাগুলোর প্রথম $n$ সংখ্যক পদের যোগফল নির্ণয় করো:\n\nক) $7 + 77 + 777 + \\dots$\n\nখ) $5 + 55 + 555 + \\dots$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৮. $x$-এর উপর কী শর্ত আরোপ করলে $\\frac{1}{x+1} + \frac{1}{(x+1)^2} + \frac{1}{(x+1)^3} + \\dots$ অসীম ধারাটির (অসীমতমক) সমষ্টি থাকবে এবং সেই সমষ্টি নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৯. প্রদত্ত পৌনঃপুনিক দশমিকগুলোকে মূলদীয় ভগ্নাংশে প্রকাশ করো:\n\nক) $0.\\dot{2}\\dot{7}$\n\nখ) $0.0\\dot{1}\\dot{2}\\dot{3}$\n\nগ) $3.040\\dot{3}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১০. একটি গুণোত্তর ধারার তিনটি ক্রমিক পদের সমষ্টি $24\\frac{4}{5}$ এবং গুণফল $64$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) উদ্দীপকের আলোকে দুটি সমীকরণ গঠন করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) ধারাটির প্রথম পদ ও সাধারণ অনুপাত নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) সাধারণ অনুপাত $\\frac{1}{5}$ হলে ধারাটির অসীমতমক সমষ্টি নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১১. চারটি কুকুর এক কিলোমিটার বাহুবিশিষ্ট একটি বর্গক্ষেত্রের চার কোণায় দাঁড়িয়ে আছে। এবার প্রতিটি কুকুর একই বেগে সরাসরি ডানের কুকুরের দিকে চোখ বন্ধ করে অর্ধেক দূরত্ব অতিক্রম করে। চোখ খুলেই আবার ডানে অবস্থিত কুকুরের দিকে একইভাবে অর্ধেক দূরত্ব দৌড়ায়।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) এভাবে দৌড়াতে থাকলে পরিশেষে কুকুরগুলোর অবস্থান কী হবে? তারা প্রত্যেকে কত দূরত্বই বা অতিক্রম করবে?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) অর্ধেক দূরত্ব পর দিক পরিবর্তন না করে যদি $k$ ভাগের একভাগ অতিক্রম করে দিক পরিবর্তন করে তাহলে ওপরের প্রশ্নের উত্তর দাও।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) ক্ষেত্রটি বর্গক্ষেত্র না হয়ে যদি সমবাহু ত্রিভুজ হতো তাহলে ওপরের প্রশ্নগুলোর উত্তর দাও।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

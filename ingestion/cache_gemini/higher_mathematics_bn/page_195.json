@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 195,
+  "pdf_page_no": 200,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: $N$ সকল স্বাভাবিক সংখ্যার সেট\n\nসূত্র ২. $a \notin R$ এবং $m, n \notin N$ হলে $a^m \notin a^n = a^{m+n}$\n\nপ্রমাণ: যেকোনো $m \notin N$ নির্দিষ্ট করে এবং $n$ কে চলক ধরে খোলা বাক্য $a^m \notin a^n = a^{m+n} \notin (1)$ বিবেচনা করি।\n\n(1) এ $n = 1$ বসিয়ে পাই,\nবামপক্ষ $= a^m \notin a^1 = a^m \notin a = a^{m+1} =$ ডানপক্ষ [সূত্র ১]\n\n$\therefore n = 1$ এর জন্য (1) সত্য।\nএখন ধরি, $n = k$ এর জন্য (1) সত্য। অর্থাৎ, $a^m \notin a^k = a^{m+k}$\nতাহলে, $a^m \notin a^{k+1} = a^m(a^k \notin a)$ [সূত্র ১]\n$= (a^m \notin a^k) \notin a$ [গুণের সহযোগী]\n$= a^{m+k} \notin a$ [আরোহ কল্পনা]\n$= a^{m+k+1}$ [সূত্র ১]\n\nঅর্থাৎ, $n = k + 1$ এর জন্য (1) সত্য।\nসুতরাং গাণিতিক আরোহ পদ্ধতি অনুযায়ী সকল $n \notin N$ এর জন্য (1) সত্য।\n$\therefore$ যেকোনো $m, n \notin N$ এর জন্য $a^m \notin a^n = a^{m+n}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$a^m \notin a^n = a^{m+n}$$\n\nবর্ণিত সূত্রটিকে সূচকের মৌলিক সূত্র বলা হয়।\n\nসূত্র ৩. $a \notin R, a \neq 0$ এবং $m, n \notin N, m \neq n$ হলে $\frac{a^m}{a^n} = \begin{cases} a^{m-n}, & \text{যখন } m > n \\ \frac{1}{a^{n-m}}, & \text{যখন } m < n \text{ \n\nপ্রমাণ:}\n1. \text{মনে করি, } m > n \text{ তাহলে } m - n \notin N\n\therefore a^{m-n} \notin a^n = a^{(m-n)+n} = a^m \text{ [সূত্র ২]}\n\therefore \frac{a^m}{a^n} = a^{m-n} \text{ [ভাগের সংজ্ঞা]}\n2. \text{মনে করি, } m < n \text{ তাহলে } n - m \notin N\n\therefore a^{n-m} \notin a^m = a^{(n-m)+m} = a^n \text{ [সূত্র ২]}\n\therefore \frac{a^m}{a^n} = \frac{1}{a^{n-m}} \text{ [ভাগের সংজ্ঞা]",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

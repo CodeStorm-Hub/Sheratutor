@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 61,
+  "pdf_page_no": 66,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ২. বীজগাণিতিক রাশি \t ৬১",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৩. যদি $\\frac{1}{a^3} + \\frac{1}{b^3} + \\frac{1}{c^3} = \\frac{3}{abc}$ হয়, তবে দেখাও যে, $bc + ca + ab = 0$ অথবা, $a = b = c$ ।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৪. যদি $x = b + c - a$, $y = c + a - b$, এবং $z = a + b - c$ হয়, তবে দেখাও যে, $x^3 + y^3 + z^3 - 3xyz = 4(a^3 + b^3 + c^3 - 3abc)$ ।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৫. সরল করো:\n\nক) $\\frac{(a+b)^2 - ab}{(b-c)(a-c)} + \\frac{(b+c)^2 - bc}{(c-a)(b-a)} + \\frac{(c+a)^2 - ca}{(a-b)(c-b)}$\n\nখ) $\\frac{a}{(a-b)(a-c)(x-a)} + \\frac{b}{(b-c)(b-a)(x-b)} + \\frac{c}{(c-a)(c-b)(x-c)}$\n\nগ) $\\frac{1}{(1+x)} + \\frac{2}{(1+x^2)} + \\frac{4}{(1+x^4)} + \\frac{8}{(1+x^8)} + \\frac{16}{(x^{16} - 1)}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৬. আংশিক ভগ্নাংশে প্রকাশ করো:\n\nক) $\\frac{5x + 4}{x(x + 2)}$ \n\nখ) $\\frac{x + 2}{x^2 - 7x + 12}$\n\nগ) $\\frac{x^2 - 9x - 6}{x(x - 2)(x + 3)}$\n\nঘ) $\\frac{x^2 - 4x - 7}{(x + 1)(x^2 + 4)}$\n\nঙ) $\\frac{x^2}{(2x + 1)(x + 3)^2}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৭. $x, y, z$ এর একটি বহুপদী, $F(x, y, z) = x^3 + y^3 + z^3 - 3xyz$ ।\n\nক) দেখাও যে, $F(x, y, z)$ হলো একটি চক্রক্রমিক রাশি।\n\nখ) $F(x, y, z)$ কে উৎপাদকে বিশ্লেষণ কর এবং যদি $F(x, y, z) = 0, (x + y + z) \\neq 0$ হয়, তবে দেখাও যে, $x^2 + y^2 + z^2 = xy + yz + zx$ ।\n\nগ) যদি $x = (b + c - a)$, $y = (c + a - b)$ এবং $z = (a + b - c)$ হয়, তবে দেখাও যে, $F(a, b, c) : F(x, y, z) = 1 : 4$ ।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৮. চলক $x$ এর দুটি বহুপদী $P(x) = 7x^2 - 3x + 4x^4 - a + 12x^3$ এবং $Q(x) = 6x^3 + x^2 - 9x + 26$ ।\n\nক) $P(x)$ কে আদর্শরূপে লিখে এর মুখ্যসহগ নির্ণয় করো।\n\nখ) $P(x)$ এর একটি উৎপাদক $(x + 2)$ হলে $a$ এর মান নির্ণয় করো।\n\nগ) দেখাও যে, $P(x)$ এবং $Q(x)$ এর একটি সাধারণ উৎপাদক বিদ্যমান।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "নমুনা প্রশ্ন\nবহুভিত্তিক প্রশ্ন\n১. নিচের কোন রাশিটি প্রতিসম?\n\nক) $a + b + c$\n\nখ) $xy - yz + zx$\n\nগ) $x^2 - y^2 + z^2$\n\nঘ) $2a^2 - 5bc - c^2$",
+      "activity_tag": "নমুনা প্রশ্ন"
+    }
+  ],
+  "figures": []
+}

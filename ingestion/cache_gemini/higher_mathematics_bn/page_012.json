@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 12,
+  "pdf_page_no": 17,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্য: আগের পৃষ্ঠায় চিত্রিত এক-এক মিলটিকে $A \\leftrightarrow B : k \\leftrightarrow 2k - 1, \\, k \\in A$ দ্বারা বর্ণনা করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. দেখাও যে, স্বাভাবিক সংখ্যার সেট $N$ এবং জোড় সংখ্যার সেট $A = \\{2, 4, 6, \\cdots, 2n, \\cdots\\}$ সমতুল।\n\nসমাধান: $N = \\{1, 2, 3, \\cdots, n, \\cdots\\}$ ও $A$ সমতুল সেট, কারণ $N$ এবং $A$ এর মধ্যে নিচের চিত্রের মতো একটি এক-এক মিল রয়েছে।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্য: উপরে চিত্রিত এক-এক মিলটিকে $N \\leftrightarrow A : n \\leftrightarrow 2n, n \\in N$ দ্বারা বর্ণনা করা যায়।\n\nড্রষ্টব্য: ফাঁকা সেট $\\emptyset$ কে নিজের সমতুল ধরা হয়। অর্থাৎ, $\\emptyset \\sim \\emptyset$।\n\nপ্রতিজ্ঞা ৪. প্রত্যেক সেট $A$ তার নিজের সমতুল। অর্থাৎ, $A \\sim A$।\n\nপ্রমাণ: $A = \\emptyset$ হলে, $A \\sim A$ ধরা হয়। আর $A \\neq \\emptyset$ হলে প্রত্যেক সদস্য $x$ এর সঙ্গে তার নিজেকে মিল করে এক-এক মিল $A \\leftrightarrow A : x \\leftrightarrow x, \\, x \\in A$ স্থাপিত হয়। সুতরাং $A \\sim A$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রতিজ্ঞা ৫. $A$ ও $B$ সমতুল সেট এবং $B$ ও $C$ সমতুল সেট হলে $A$ ও $C$ সমতুল সেট।\n\nপ্রমাণ: যেহেতু $A \\sim B$, সুতরাং $A$ এর প্রত্যেক সদস্য $x$ এর সঙ্গে $B$ এর একটি অনন্য সদস্য $y$ এর মিল করা যায়। আবার যেহেতু $B \\sim C$, সুতরাং $B$ এর এই সদস্য $y$ এর সঙ্গে $C$ এর একটি অনন্য সদস্য $z$ এর মিল করা যায়। এখন $A$ এর সদস্য $x$ এর সঙ্গে $C$ এর সদস্য $z$ এর মিল করা হলে, $A$ ও $C$ সেটের মধ্যে একটি এক-এক মিল স্থাপিত হয়। অর্থাৎ, $A \\sim C$ হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ব্যবধি (Interval)",
+      "chunk_type": "theory",
+      "content_markdown": "$a$ ও $b$ বাস্তব সংখ্যা এবং $a < b$ হলে\n\nক) $(a, b) = \\{x \\in R : a < x < b\\}$ কে খোলা ব্যবধি (open interval) বলে।\n\nখ) $[a, b] = \\{x \\in R : a \\le x \\le b\\}$ কে বন্ধ ব্যবধি (closed interval) বলে।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1_1",
+      "caption": null,
+      "box_2d": [
+        263,
+        309,
+        413,
+        689
+      ]
+    },
+    {
+      "figure_id": "fig_1_2",
+      "caption": null,
+      "box_2d": [
+        560,
+        325,
+        672,
+        673
+      ]
+    }
+  ]
+}

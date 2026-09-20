@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 114,
+  "pdf_page_no": 119,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বা, $x + 3y = 4x + 6$ বা, $3x - 3y + 6 = 0$\nবা, $x - y + 2 = 0 \text{ } \text{ } \text{ } (4)$\n(2) ও (4) থেকে আরগুণ পদ্ধতি অনুসারে, $\\frac{x}{-2 + 1} = \\frac{y}{1 - 4} = \\frac{1}{-2 + 1}$\nবা, $\\frac{x}{-1} = \\frac{y}{-3} = -1$\nবা, $x = 1, \\text{ } y = 3$\n$\\therefore$ নির্ণেয় সমাধান $(x, y) = (1, 3)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ২৯.** সমাধান করো: $x^y = y^x, \\text{ } x = 2y$\n\n**সমাধান:** $x^y = y^x \\text{ } \text{ } \text{ } (1)$,\n$x = 2y \\text{ } \text{ } \text{ } (2)$ যেখানে $x \\neq 0, y \\neq 0$\n(2) থেকে $x$ এর মান (1) এ বসিয়ে পাই, $(2y)^y = y^{2y}$ বা, $2^y \\cdot y^y = y^{2y}$\nবা, $\\frac{y^{2y}}{y^y} = 2^y$ বা, $y^y = 2^y$ $\\therefore y = 2$\n(2) থেকে, $x = 4$\n$\\therefore$ নির্ণেয় সমাধান $(x, y) = (4, 2)$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৩০.** সমাধান করো: $x^y = y^2, \\text{ } 2^{2y} = x^4$, যেখানে $x \\neq 1$\n\n**সমাধান:** $x^y = y^2 \\text{ } \text{ } \text{ } (1)$,\n$2^{2y} = x^4 \\text{ } \text{ } \text{ } (2)$\n(1) থেকে পাই, $(x^y)^y = (y^2)^y$ বা, $x^{y^2} = y^{2y} \\text{ } \text{ } \text{ } (3)$\n(3) ও (2) থেকে পাই, $x^{y^2} = x^4$\n$\\therefore y^2 = 4$ বা, $y = \\pm 2$\nএখন $y = 2$ হলে (1) থেকে পাই, $x^2 = 2^2 = 4$ বা, $x = \\pm 2$\nআবার, $y = -2$ হলে (1) থেকে পাই, $x^{-2} = (-2)^2 = 4$ বা, $x^2 = \\frac{1}{4}$ বা, $x = \\pm \\frac{1}{2}$\n$\\therefore$ নির্ণেয় সমাধান $(x, y) = (2, 2), (-2, 2), \\left(\\frac{1}{2}, -2\\right), \\left(-\\frac{1}{2}, -2\\right)$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৩১.** সমাধান করো: $8 \\cdot 2^{xy} = 4^y, \\text{ } 9^x \\cdot 3^{xy} = \\frac{1}{27}$\n\n**সমাধান:** $8 \\cdot 2^{xy} = 4^y \\text{ } \text{ } \text{ } (1)$,\n$9^x \\cdot 3^{xy} = \\frac{1}{27} \\text{ } \text{ } \text{ } (2)$\n(1) থেকে পাই, $2^3 \\cdot 2^{xy} = (2^2)^y$ বা, $2^{3+xy} = 2^{2y}$ বা, $3 + xy = 2y \\text{ } \text{ } \text{ } (3)$\n(2) থেকে পাই, $(3^2)^x \\cdot 3^{xy} = \\frac{1}{3^3}$ বা, $3^{2x+xy} = 3^{-3}$ বা, $2x + xy = -3 \\text{ } \text{ } \text{ } (4)$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

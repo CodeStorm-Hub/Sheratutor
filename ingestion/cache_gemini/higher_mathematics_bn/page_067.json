@@ -1,0 +1,34 @@
+{
+  "printed_page_no": 67,
+  "pdf_page_no": 72,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি, $\\triangle ABC$ ত্রিভুজের $\\angle ACB$ সূক্ষ্মকোণ এবং সূক্ষ্মকোণের বিপরীত বাহু $AB$। অপর দুই বাহু $AC$ ও $BC$। মনে করি, $BC$ বাহুর উপর (নিচের বাম পাশের চিত্র) এবং $CB$ বাহুর বর্ধিতাংশের উপর (নিচের ডান পাশের চিত্র) লম্ব $AD$। তাহলে উভয় ত্রিভুজের ক্ষেত্রে $BC$ বাহুর উপর $AC$ বাহুর লম্ব অভিক্ষেপ $CD$। প্রমাণ করতে হবে যে $AB^2 = AC^2 + BC^2 - 2 \\cdot BC \\cdot CD$।\n\n[উল্লেষ করা দরকার যে এখানে $A$ থেকে $BC$ এর উপর লম্ব টানা হয়েছে। কিন্তু $B$ বিন্দু থেকে $AC$ এর উপর লম্ব অঙ্কনের মাধ্যমেও একইভাবে উপপাদ্যটি প্রমাণ করা যায়।]\n\nপ্রমাণ: $\\triangle ADB$ সমকোণী ত্রিভুজ এবং $\\angle ADB$ সমকোণ।\n$$\\therefore \\text{পিথাগোরাসের উপপাদ্য অনুসারে } AB^2 = AD^2 + BD^2 \\cdots \\cdots (1)$$\nউপরের বামের চিত্রে $BD = BC - CD$।\n$$\\therefore BD^2 = (BC - CD)^2 = BC^2 + CD^2 - 2 \\cdot BC \\cdot CD$$\nউপরের ডানের চিত্রে $BD = CD - BC$।\n$$\\therefore BD^2 = (CD - BC)^2 = CD^2 + BC^2 - 2 \\cdot CD \\cdot BC$$\nসুতরাং উভয় চিত্রে $BD^2 = BC^2 + CD^2 - 2 \\cdot BC \\cdot CD \\cdots \\cdots (2)$\nএখন সমীকরণ (1) ও (2) হতে পাওয়া যায়,\n$$AB^2 = AD^2 + BC^2 + CD^2 - 2 \\cdot BC \\cdot CD$$\n$$\\text{বা, } AB^2 = AD^2 + CD^2 + BC^2 - 2 \\cdot BC \\cdot CD \\cdots \\cdots (3)$$\nআবার $\\triangle ADC$ সমকোণী ত্রিভুজ এবং $\\angle ADC$ সমকোণ।\n$$\\therefore \\text{পিথাগোরাসের উপপাদ্য অনুসারে } AC^2 = AD^2 + CD^2 \\cdots \\cdots (4)$$\nসমীকরণ (3) ও (4) হতে পাওয়া যায়,\n$$AB^2 = AC^2 + BC^2 - 2 \\cdot BC \\cdot CD \\quad [\\text{প্রমাণিত}]$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মন্তব্য:\n\n১. সমকোণী ত্রিভুজের ক্ষেত্রে সমকোণের সংলগ্ন বাহুদ্বয় পরস্পর লম্ব বিধায় তাদের প্রত্যেকটির উপর অপরটির লম্ব অভিক্ষেপ শূন্য। $\\angle ACB$ সমকোণ হলে $BC$ এর উপর $AC$ এর লম্ব অভিক্ষেপ $CD = 0$। সুতরাং $BC \\cdot CD = 0$, ফলে $AB^2 = AC^2 + BC^2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_3_67",
+      "caption": null,
+      "box_2d": [
+        251,
+        253,
+        407,
+        735
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 103,
+  "pdf_page_no": 108,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "করতে সূচকের নিম্নলিখিত ধর্মটি প্রায়ই ব্যবহার করা হয়:\n\n$a > 0, a \\neq 1$ হলে $a^x = a^m$ হবে যদি ও কেবল যদি $x = m$ হয়। এ জন্য প্রথমে সমীকরণের উভয় পক্ষকে একই সংখ্যার ঘাত রূপে প্রকাশ করা হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) $4096$ কে $\\frac{1}{2}$, $2$, $4$, $8$, $16$, $2\\sqrt{2}$ এবং $\\sqrt[3]{4}$ এর সূচকে প্রকাশ করো।\n\nখ) $729$ কে $3$, $9$, $27$, $16$ এবং $\\sqrt[5]{9}$ এর সূচকে লেখো।\n\nগ) $\\frac{64}{729}$ কে $\\frac{3}{2}$ এবং $\\sqrt[3]{\\frac{3}{2}}$ এর সূচকে প্রকাশ করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১১. সমাধান করো: $2^{x+7} = 4^{x+2}$\n\nসমাধান: $2^{x+7} = 4^{x+2}$\n\nবা, $2^{x+7} = (2^2)^{x+2}$\n\nবা, $2^{x+7} = 2^{2x+4}$\n\nবা, $x + 7 = 2x + 4$\n\nবা, $x = 3$\n\n$\\therefore$ নির্ণেয় সমাধান $x = 3$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১২. সমাধান করো: $3 \\cdot 27^x = 9^{x+4}$\n\nসমাধান: $3 \\cdot 27^x = 9^{x+4}$\n\nবা, $3 \\cdot (3^3)^x = (3^2)^{x+4}$\n\nবা, $3 \\cdot 3^{3x} = 3^{2(x+4)}$\n\nবা, $3^{3x+1} = 3^{2x+8}$\n\nবা, $3x + 1 = 2x + 8$\n\nবা, $x = 7$\n\n$\\therefore$ নির্ণেয় সমাধান $x = 7$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩. সমাধান করো: $3^{mx-1} = 3a^{mx-2}$ ($a > 0, a \\neq 3, m \\neq 0$)\n\nসমাধান: $3^{mx-1} = 3a^{mx-2}$\n\nবা, $\\frac{3^{mx-1}}{3} = a^{mx-2}$ [উভয় পক্ষকে $3$ দ্বারা ভাগ করে]",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

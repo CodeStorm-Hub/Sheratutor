@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 42,
+  "pdf_page_no": 47,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমতা সূত্র\n\nক) যদি সকল $x$ এর জন্য $ax + b = px + q$ হয়, তবে $x = 0$ ও $x = 1$ বসিয়ে পাই, $b = q$ এবং $a + b = p + q$ যা থেকে দেখা যায় যে, $a = p, b = q$\n\nখ) যদি সকল $x$ এর জন্য $ax^2 + bx + c = px^2 + qx + r$ হয়, তবে $x = 0, x = 1$ ও $x = -1$ বসিয়ে পাই, $c = r, a + b + c = p + q + r$ এবং $a - b + c = p - q + r$ যা থেকে দেখা যায় যে, $a = p, b = q, c = r$\n\nগ) সাধারণভাবে দেখা যায় যে, যদি সকল $x$ এর জন্য $a_0 x^n + a_1 x^{n-1} + a_2 x^{n-2} + \bullet \bullet \bullet + a_{n-1} x + a_n = p_0 x^n + p_1 x^{n-1} + p_2 x^{n-2} + \bullet \bullet \bullet + p_{n-1} x + p_n$ হয়, তবে, $a_0 = p_0, a_1 = p_1, \bullet \bullet \bullet, a_{n-1} = p_{n-1}, a_n = p_n$\n\nঅর্থাৎ, সমতা চিহ্নের উভয় পক্ষে $x$ এর একই ঘাতযুক্ত সহগদ্বয় পরস্পর সমান।\n\nমন্তব্য: $x$ চলকের $n$ মাত্রার বহুপদীর বর্ণনায় সহগগুলোকে $a_0$ ($a$ সাব-জিরো), $a_1$ ($a$ সাব-ওয়ান) ইত্যাদি নেওয়া সুবিধাজনক।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অভেদ (Identity)\n\nদুটি বহুপদী $P(x)$ ও $Q(x)$ সকল $x$ এর জন্য সমান হলে, এদের সমতাকে অভেদ বলা হয় এবং তা বুঝতে অনেক সময় $P(x) \ni Q(x)$ লেখা হয়। এক্ষেত্রে $P(x)$ ও $Q(x)$ বহুপদী দুটি অভিন্ন হয়। $\ni$ চিহ্নকে অভেদ চিহ্ন বলা হয়। সাধারণভাবে একই চলকসমূহের দুটি বীজগণিতীয় রাশির সমতাকে অভেদ (identity) বলা হয়, যদি রাশি দুটিতে প্রতিটি চলকের ডোমেন একই হয় এবং চলকসমূহের ডোমেনভুক্ত মানের জন্য রাশি দুটির মান সমান হয়। যেমন, $x(x + 2) = x^2 + 2x$, $(x + y)^2 = x^2 + 2xy + y^2$ উভয়ই অভেদ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ভাগশেষ ও উৎপাদক উপপাদ্য\n\nএই অনুচ্ছেদে শুধু $x$ চলকের বহুপদী বিবেচনা করা হবে। প্রথমে দুটি উদাহরণ বিবেচনা করি।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. যদি $P(x) = x^2 - 5x + 6$ হয়, তবে $P(x)$ কে $(x - 4)$ দ্বারা ভাগ কর এবং দেখাও যে, ভাগশেষ $P(4)$ এর সমান।\n\nসমাধান: $P(x)$ কে $(x - 4)$ দ্বারা নিচের মতো ভাগ করি।\n\n$$x - 4 \rvert x^2 - 5x + 6 \rvert x - 1$$\n$$x^2 - 4x$$\n$$\\hline$$\n$$-x + 6$$\n$$-x + 4$$\n$$\\hline$$$$\n2$$\n\nএখানে ভাগশেষ ২।\n\nযেহেতু $P(4) = 4^2 - 5(4) + 6 = 2$, সুতরাং, ভাগশেষ $P(4)$ এর সমান।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 197,
+  "pdf_page_no": 202,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "$$\text{ঙ)}\\ 10^{-1} = \\frac{1}{10} = 0.1$$\n$$\text{চ)}\\ 10^{-2} = \\frac{1}{10^2} = \\frac{1}{100}$$\n\n**উদাহরণ ৩.** $m, n \\in \\mathbb{N}$ হলে $(a^m)^n = a^{mn}$ সূত্রটির সত্যতা স্বীকার করে নিয়ে দেখাও যে, $(a^m)^n = a^{mn}$ যেখানে $a \\neq 0$ এবং $m \\in \\mathbb{N}$ এবং $n \\in \\mathbb{Z}$\n\n**সমাধান:** প্রমাণ করতে হবে, $(a^m)^n = a^{mn} \\dots (1)$\n\nযেখানে, $a \\neq 0$ এবং $m \\in \\mathbb{N}$ এবং $n \\in \\mathbb{Z}$\n\n**ধাপ ১.** প্রথমে মনে করি, $n > 0$, এক্ষেত্রে (1) এর সত্যতা স্বীকার করে নেওয়া হয়েছে।\n\n**ধাপ ২.** এখন মনে করি, $n = 0$ এক্ষেত্রে $(a^m)^n = (a^m)^0 = 1$\n\nএবং, $a^{mn} = a^0 = 1$ $[\because n = 0]$\n\n$\therefore$ (1) সত্য।\n\n**ধাপ ৩.** সবশেষে মনে করি, $n < 0$ এবং $n = -k$, যেখানে $k \\in \\mathbb{N}$\n\nএক্ষেত্রে $(a^m)^n = (a^m)^{-k} = \\frac{1}{(a^m)^k} = a^{-mk} = a^{m(-k)} = a^{mn}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ৪.** দেখাও যে, সকল $m, n \\in \\mathbb{N}$ এর জন্য $\\frac{a^m}{a^n} = a^{m-n}$, যেখানে $a \\neq 0$\n\n**সমাধান:** $m > n$ হলে, $\\frac{a^m}{a^n} = a^{m-n}$ [সূত্র ৩]\n\n$m < n$ হলে, $\\frac{a^m}{a^n} = \\frac{1}{a^{n-m}}$ [সূত্র ৩]\n\n$\\therefore \\frac{a^m}{a^n} = a^{-(n-m)}$ [সংজ্ঞা ৪]\n\n$= a^{m-n}$\n\n$m = n$ হলে, $\\frac{a^m}{a^n} = \\frac{a^n}{a^n} = 1 = a^0$ [সংজ্ঞা ৩]\n\n$= a^{m-m} = a^{m-n}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**দ্রষ্টব্য:** উপরে বর্ণিত সূচকের সংজ্ঞাগুলো থেকে যেকোনো $m \\in \\mathbb{Z}$ এর জন্য $a^m$ এর ব্যাখ্যা পাওয়া যায়, যেখানে $a \\neq 0$। সূচক ধনাত্মক অথবা শূন্য অথবা ঋণাত্মক ধরে সাধারণভাবে সকল পূর্ণ সাংখ্যিক সূচকের জন্য নিম্নোক্ত সূত্রটি প্রমাণ করা যায়।\n\n**সূত্র ৬.** $a \\neq 0$, $b \\neq 0$ এবং $m, n \\in \\mathbb{Z}$ হলে,\n\n১. $a^m \\cdot a^n = a^{m+n}$\n\n২. $\\frac{a^m}{a^n} = a^{m-n}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

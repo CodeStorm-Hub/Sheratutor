@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 181,
+  "pdf_page_no": 186,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$(\\pi - \\theta)$ কোণের ত্রিকোণমিতিক অনুপাতসমূহ $\\left(0 < \\theta < \\frac{\\pi}{2}\\right)$:\n\nধরি ঘূর্ণায়মান রশ্মি $OA$ আদি অবস্থান $OX$ থেকে ঘড়ির কাটার বিপরীত দিকে ঘুরে $\\angle XOA = \\theta$ কোণ উৎপন্ন করে। রশ্মিটি একই দিকে আরও ঘুরে $\\angle XOX' = \\pi$ কোণ উৎপন্ন করার পর $OX'$ থেকে ঘড়ির কাটার দিকে ঘুরে $\\angle X'OA' = -\\theta$ কোণ উৎপন্ন করে (নিচের চিত্র)। তাহলে $\\angle XOA' = \\pi + (-\\theta) = \\pi - \\theta$।\n\n$OA$ রশ্মির উপর $P$ যেকোনো বিন্দু এবং $OA'$ এর উপর $Q$ যেকোনো বিন্দু নিই যেন, $OP = OQ = r$ হয়।\nএখন $\\triangle OMP$ ও $\\triangle ONQ$ সমকোণী ত্রিভুজদ্বয়ের মধ্যে $\\angle OMP = \\angle ONQ$, $\\angle POM = \\angle QON$ এবং $OP = OQ = r$। সুতরাং ত্রিভুজদ্বয় সর্বসম এবং $ON = OM, QN = PM$।\nএখন $P$ বিন্দুর স্থানাঙ্ক $(x, y)$ হলে $OM = x$, $PM = y$\n$\\therefore ON = -x, NQ = y$\n$\\therefore Q$ বিন্দুর স্থানাঙ্ক $Q(-x, y)$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে, $\\sin(\\pi - \\theta) = \\frac{y}{r} = \\sin\\theta$, $\\cos(\\pi - \\theta) = \\frac{-x}{r} = -\\frac{x}{r} = -\\cos\\theta$\n\n$\\tan(\\pi - \\theta) = \\frac{y}{-x} = -\\frac{y}{x} = -\\tan\\theta$\n\nঅনুরূপভাবে, $\\csc(\\pi - \\theta) = \\csc\\theta$\n\n$\\sec(\\pi - \\theta) = -\\sec\\theta$, $\\cot(\\pi - \\theta) = -\\cot\\theta$\n\nমমন্তব্য: যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২১. $\\sin\\left(\\frac{2\\pi}{3}\\right) = \\sin\\left(\\pi - \\frac{\\pi}{3}\\right) = \\sin\\left(\\frac{\\pi}{3}\\right) = \\frac{\\sqrt{3}}{2}$\n\n$\\cos\\left(\\frac{3\\pi}{4}\\right) = \\cos\\left(\\pi - \\frac{\\pi}{4}\\right) = -\\cos\\left(\\frac{\\pi}{4}\\right) = -\\frac{1}{\\sqrt{2}}$\n\n$\\tan\\left(\\frac{5\\pi}{6}\\right) = \\tan\\left(\\pi - \\frac{\\pi}{6}\\right) = -\\tan\\left(\\frac{\\pi}{6}\\right) = -\\frac{1}{\\sqrt{3}}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $\\csc\\left(\\frac{3\\pi}{4}\\right), \\sec\\left(\\frac{5\\pi}{6}\\right), \\cot\\left(\\frac{2\\pi}{3}\\right)$ এর মান নির্ণয় করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লক্ষণীয: $\\theta$ এবং $(\\pi - \\theta)$ কোণ দুটি পরস্পর সম্পূরক। সম্পূরক কোণের sine ও cosecant সমান ও একই চিহ্নবিশিষ্ট। কিন্তু cosine, secant, tangent ও cotangent সমান ও বিপরীত চিহ্নবিশিষ্ট।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_trig_circle_181",
+      "caption": null,
+      "box_2d": [
+        260,
+        550,
+        425,
+        875
+      ]
+    }
+  ]
+}

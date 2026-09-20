@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 79,
+  "pdf_page_no": 84,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\angle PQF + \\angle FQR = \\angle PQF + \\angle QPF$$\n$$\\therefore \\angle FQR = \\angle QPF$$\n$\\triangle PQF$ এবং $\triangle QFR$ এ\n$$\\angle PFQ = \\angle QFR, \\angle QPF = \\angle FQR$$\nঅবশিষ্ট $\\angle PQF = $ অবশিষ্ট $\\angle FRQ$\n$$\\therefore \\triangle PQF \\text{ এবং } \\triangle QFR \\text{ সদৃশ}$$\n$$\\therefore \\frac{PQ}{QR} = \\frac{QF}{FR} = \\frac{PF}{FQ}$$\nঅর্থাং $\\frac{QF}{RF} = \\frac{PF}{QF}$\nবা, $QF^2 = PF \\cdot RF$ [প্রমাণিত]",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৩.২",
+      "section_title": "অনুশীলনী ৩.২",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৩.২",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১. $ABC$ ত্রিভুজের পরিবৃত্তস্থ যেকোনো বিন্দু $P$ থেকে $BC$ ও $CA$ এর উপর $PD$ ও $PE$ লম্ব অঙ্কন করা হয়েছে। যদি $ED$ রেখাংশ $AB$ কে $O$ বিন্দুতে ছেদ করে, তবে প্রমাণ করো যে, $PO$ রেখা $AB$ এর উপর লম্ব, অর্থাৎ $PO \\perp AB$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "২",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "২. $\\triangle ABC$ এর $\\angle C$ সমকোণ। $C$ থেকে অতিভুজের উপর অঙ্কিত লম্ব $CD$ হলে, প্রমাণ করো যে, $CD^2 = AD \\cdot BD$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৩",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৩. $\\triangle ABC$ এর শীর্ষত্রয় থেকে বিপরীত বাহুগুলোর উপর লম্ব $AD$, $BE$ ও $CF$ রেখাত্রয় $O$ বিন্দুতে ছেদ করে। প্রমাণ করো যে, $AO \\cdot OD = BO \\cdot OE = CO \\cdot OF$।\n[সংকেতঃ $\\triangle BOF$ এবং $\\triangle COE$ সদৃশ। $\\therefore BO : CO = OF : OE$]",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৪",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৪. $AB$ ব্যাসের উপর অঙ্কিত অর্ধবৃত্তের দুটি জ্যা $AC$ ও $BD$ পরস্পর $P$ বিন্দুতে ছেদ করে। প্রমাণ করো যে, $AB^2 = AC \\cdot AP + BD \\cdot BP$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $ABC$ সমদ্বিবাহু ত্রিভুজের শীর্ষবিন্দু $A$ হতে ভূমি $BC$ এর উপর অঙ্কিত লম্ব $AD$ এবং ত্রিভুজের পরিব্যাসার্ধ $R$ হলে প্রমাণ করো যে, $AB^2 = 2R \\cdot AD$।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $ABC$ ত্রিভুজের $\\angle A$ এর সমদ্বিখণ্ডক $BC$ কে $D$ বিন্দুতে এবং $ABC$ পরিবৃত্তকে $E$ বিন্দুতে ছেদ করেছে। দেখাও যে, $AD^2 = AB \\cdot AC - BD \\cdot DC$।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

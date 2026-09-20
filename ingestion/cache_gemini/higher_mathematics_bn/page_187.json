@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 187,
+  "pdf_page_no": 192,
+  "chapter_no": 8,
+  "chapter_title": "ত্রিকোণমিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\therefore \theta = \frac{5\nu}{3}$$\nএটিও গ্রহণযোগ্য মান। কারণ $\frac{\nu}{2} < \theta < 2\nu$\n$$\therefore \theta \text{ এর মান } \frac{2\nu}{3} \text{ ও } \frac{5\nu}{3}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৭. সমাধান করো: $0 < \theta < \frac{\nu}{2}$ হলে $\\sin\theta + \\cos\theta = \\sqrt{2}$\n\nসমাধান: $\\sin\theta + \\cos\theta = \\sqrt{2}$\nবা, $\\sin\theta = \\sqrt{2} - \\cos\theta \n\n\\implies \\sin^2\theta = 2 - 2\\sqrt{2}\\cos\theta + \\cos^2\theta$\nবা, $1 - \\cos^2\theta = 2 - 2\\sqrt{2}\\cos\theta + \\cos^2\theta$\nবা, $2\\cos^2\theta - 2\\sqrt{2}\\cos\theta + 1 = 0 \n\n\\implies (\\sqrt{2}\\cos\theta - 1)^2 = 0$\nবা, $\\sqrt{2}\\cos\theta - 1 = 0$\nবা, $\\cos\theta = \frac{1}{\\sqrt{2}} = \\cos\frac{\nu}{4}$\n$$\\therefore \theta = \frac{\nu}{4}$$\nনির্ণেয় সমাধান: $\theta = \frac{\nu}{4}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৮. $0 < \theta < 2\nu$ ব্যবধিতে সমীকরণটির সমাধান করো: $\\sin^2\theta - \\cos^2\theta = \\cos\theta$\n\nসমাধান: $\\sin^2\theta - \\cos^2\theta = \\cos\theta$\nবা, $1 - \\cos^2\theta - \\cos^2\theta = \\cos\theta$\nবা, $1 - 2\\cos^2\theta - \\cos\theta = 0 \n\n\\implies 2\\cos^2\theta + \\cos\theta - 1 = 0$\nবা, $(2\\cos\theta - 1)(\\cos\theta + 1) = 0$\n$$\\therefore 2\\cos\theta - 1 = 0 \text{ অথবা } \\cos\theta + 1 = 0$$\nঅর্থাৎ, $\\cos\theta = \frac{1}{2} \text{ অথবা } \\cos\theta = -1$\nঅর্থাৎ, $\\cos\theta = \\cos\frac{\nu}{3} \text{ অথবা } \\cos\theta = \\cos\nu$\n$$\\therefore \theta = \frac{\nu}{3}, \nu, \frac{5\nu}{3}$$\nনির্ণেয় সমাধান: $\theta = \frac{\nu}{3}, \nu, \frac{5\nu}{3}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

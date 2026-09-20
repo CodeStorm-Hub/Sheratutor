@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 106,
+  "pdf_page_no": 111,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বা, $(p - 1)(p - a^2) = 0$\nবা, $p = 1$ অথবা $p = a^2$\nবা, $a^x = 1 = a^0$ অথবা $a^x = a^2$\nবা, $x = 0$ অথবা $x = 2$\n$\therefore$ নির্ণেয় সমাধান $x = 0, 2$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৫.৩",
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান করো:\n\n১. $3^{x+2} = 81$\n\n২. $5^{3x-7} = 3^{3x-7}$\n\n৩. $2^{x-4} = 4a^{x-6}$ ($a > 0, a \neq 2$)\n\n৪. $(\\sqrt{3})^{x+5} = (\\sqrt[3]{3})^{2x+5}$\n\n৫. $(\\sqrt[5]{4})^{4x+7} = (\\sqrt[11]{64})^{2x+7}$\n\n৬. $\\frac{3^{3x-4} pa a^{2x-5}}{3^{x+1}} = a^{2x-5}$ ($a > 0$)\n\n৭. $\\frac{5^{2x} pa b^{x-3}}{5^{x+3}} = a^{x-3}$ ($a, b > 0, 5b \neq a$)\n\n৮. $4^{x+2} = 2^{2x+1} + 14$\n\n৯. $5^x + 5^{2-x} = 26$\n\n১০. $3(9^x - 4 pa 3^{x-1}) + 1 = 0$\n\n১১. $4^{1+x} + 4^{1-x} = 10$\n\n১২. $2^{2x} - 3 pa 2^{x+2} = -32$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "দুই চলকবিশিষ্ট দ্বিঘাত সমীকরণ জোট",
+      "chunk_type": "theory",
+      "content_markdown": "দুই চলকবিশিষ্ট দুটি একঘাত সমীকরণ অথবা একটি একঘাত ও একটি দ্বিঘাত সমীকরণ সমন্বয়ে গঠিত জোটের সমাধান নির্ণয় পদ্ধতি নবম-দশম শ্রেণির গণিত বইয়ে আলোচনা করা হয়েছে। এখানে এরূপ দুটি দ্বিঘাত সমীকরণ সমন্বয়ে গঠিত কতিপয় জোটের সমাধান নির্ণয় আলোচনা করা হলো।\n\nউল্লেখ্য যে, চলক দুইটি $x$ ও $y$ হলে $(x, y) = (a, b)$ এরূপ আকারে জোটের একটি সমাধান যদি সমীকরণ দুটিতে $x$ এর স্থলে $a$ এবং $y$ এর স্থলে $b$ বসালে তাদের উভয় পক্ষ সমান হয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৯. সমাধান করো: $x + \\frac{1}{y} = \\frac{3}{2}$, $y + \\frac{1}{x} = 3$\n\nসমাধান: $x + \\frac{1}{y} = \\frac{3}{2}$ ...(১)\n\n$y + \\frac{1}{x} = 3$ ...(২)",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

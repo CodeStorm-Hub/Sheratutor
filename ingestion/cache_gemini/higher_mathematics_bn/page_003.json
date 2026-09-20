@@ -1,0 +1,44 @@
+{
+  "printed_page_no": 3,
+  "pdf_page_no": 8,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: মনে করো $X = \\{x : x \\text{ পূর্ণসংখ্যা}\\}$।\nক) $X$ কে সার্বিক সেট ধরে, $X$ এর তিনটি উপসেট বর্ণনা করো।\nখ) $X$ এর দুটি উপসেট বর্ণনা করো যাদের কোনোটিই অপরটির উপসেট নয়।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "ফাঁকা সেট (Empty Set)",
+      "chunk_type": "theory",
+      "content_markdown": "অনেক সময় এরূপ সেট বিবেচনা করতে হয় যাতে কোনো উপাদান থাকে না। এরূপ সেটকে ফাঁকা সেট বলা হয় এবং $\\varnothing$ অথবা $\\{\\}$ লিখে প্রকাশ করা হয়।\nউদাহরণ ২. $\\{x : x \\text{ বাস্তব সংখ্যা এবং } x^2 < 0\\}$ একটি ফাঁকা সেট, কেননা কোনো বাস্তব সংখ্যার বর্গ ঋণাত্মক নয়।\nউদাহরণ ৩. $F = \\{x : x, 2014 \\text{ সাল পর্যন্ত ফুটবলের বিশ্বকাপ বিজয়ী আফ্রিকার দেশ}\\}$ একটি ফাঁকা সেট, কেননা আফ্রিকার কোনো দেশই 2014 সাল পর্যন্ত ফুটবলের বিশ্বকাপ জয় করতে পারেনি।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": "সেট সমতা (Equality of Sets)",
+      "chunk_type": "theory",
+      "content_markdown": "$A$ ও $B$ সেট যদি এমন হয় যে এদের উপাদানগুলো একই তবে $A$ ও $B$ একই সেট এবং তা $A = B$ লিখে প্রকাশ করা হয়। যেমন $A = \\{1, 2, 3, 4\\}$, $B = \\{1, 2, 2, 3, 4, 4, 4\\}$। লক্ষ কর কোনো সেটে একই উপাদান বার বার থাকলেও সেটা একবার থাকার মতই বিবেচনা করা হচ্ছে। $A = B$ হয় যদি ও কেবল যদি $A \\subseteq B$ এবং $B \\subseteq A$ হয়। সেট সমতা প্রমাণে এই তথ্য খুবই প্রয়োজনীয়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "প্রকৃত উপসেট (Proper Subset)",
+      "chunk_type": "theory",
+      "content_markdown": "$A$ কে $B$ এর প্রকৃত উপসেট বলা হয় যদি ও কেবল যদি $A \\subseteq B$ এবং $A \\neq B$। অর্থাৎ $A$ এর প্রত্যেক উপাদান $B$ এরও উপাদান এবং $B$ তে অন্তত একটি উপাদান আছে যা $A$ তে নেই। যেমন $A = \\{1, 2\\}$, $B = \\{1, 2, 3\\}$। $A, B$ এর প্রকৃত উপসেট বুঝতে $A \\subset B$ লেখা হয়।\nক) যেকোনো সেট $A$ এর জন্য $A \\subseteq A$। এর কারণ $x \\in A \\implies x \\in A$।\nখ) যেকোনো সেট $A$ এর জন্য $\\varnothing \\subseteq A$। এর কারণ $\\varnothing \\subseteq A$ না হলে $\\varnothing$ তে একটি উপাদান $x$ আছে যা $A$ তে নাই। কিন্তু ইহা কখনই সত্য নয় কারণ $\\varnothing$ ফাঁকা সেট। অতএব $\\varnothing \\subseteq A$। উল্লেখ্য ফাঁকা সেট বা $\\varnothing$ যেকোনো সেটের প্রকৃত উপসেট।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "সেটের অন্তর (Difference of Sets)",
+      "chunk_type": "theory",
+      "content_markdown": "$A$ ও $B$ সেট হলে $A \\setminus B$ সেতিটি হচ্ছে $\\{x : x \\in A \\text{ এবং } x \\notin B\\}$।\n$A \\setminus B$ কে $A$ বাদ $B$ সেট বলা হয় এবং $A$ এর যে সকল উপাদান $B$ তে আছে সেগুলো $A$ থেকে বর্জন করে $A \\setminus B$ গঠন করা হয়। $A \\setminus B \\subseteq A$।\nউদাহরণ ৮. $A = \\{0, 1, 2, 3, 4, 5, 6, 7, 8, 9\\}$ এবং $B = \\{0, 2, 4, 6, 8, 10\\}$ হলে $A \\setminus B = \\{1, 3, 5, 7, 9\\}$।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

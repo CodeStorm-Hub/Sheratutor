@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 217,
+  "pdf_page_no": 222,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ১. $x$ এর ধনাত্মক মানের জন্য $x$ এর মান বৃদ্ধির সাথে সাথে $f(x)$ এর মান বৃদ্ধি পায়।\nধাপ ২. যখন $x = 0$ তখন $y = a^0 = 1$, সুতরাং $(0, 1)$ রেখার উপর একটি বিন্দু।\nধাপ ৩. $x$ এর ঋণাত্মক মানের জন্য $x$ এর মান ক্রমাগত বৃদ্ধির সাথে সাথে $f(x)$ এর মান ক্রমাগত হ্রাস পাবে। অর্থাৎ $x \to -\boxtimes$ হলে $y \to 0$ হবে।\nএখানে $y = a^x, a > 1$ ফাংশনের লেখচিত্র পাশের চিত্রে দেখানো হলো। এখানে $D_f = (-\boxtimes, \boxtimes)$ এবং $R_f = (0, \boxtimes)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(ii) যখন $0 < a < 1$, $x$ এর মান ধনাত্মক বা ঋণাত্মক তখন $y = f(x) = a^x$ সর্বদাই ধনাত্মক।\nধাপ ১. লক্ষ করি, মূল বিন্দুর ডানদিকে $x$ এর মান ক্রমাগত বৃদ্ধি পেতে থাকলে অর্থাৎ $x \to \boxtimes$ হলে $y \to 0$ হবে।\nধাপ ২. যখন $x = 0$ তখন $y = a^0 = 1$ সুতরাং $(0, 1)$ বিন্দু রেখার উপর পড়ে।\nধাপ ৩. যখন $a < 1$ এবং $x$ ঋণাত্মক তখন $x$ এর মান মূল বিন্দুর বামদিকে ক্রমাগত বৃদ্ধির সাথে সাথে $y$ এর মান ক্রমাগত বৃদ্ধি পাবে অর্থাৎ $y \to \boxtimes$।\nধরি $a = \frac{1}{2} < 1, x = -2, -3, \boxtimes, -n$ তখন\n$y = f(x) = a^x = (\frac{1}{2})^{-2} = 2^2, y = 2^3, \boxtimes$,\n$y = 2^n$। যখন $n \to \boxtimes$ তখন $y \to \boxtimes$।\n$y = f(x) = a^x$ এর লেখচিত্র পাশের চিত্রে দেখানো হলো।\nএখানে $D_f = (-\boxtimes, \boxtimes)$ এবং $R_f = (0, \boxtimes)$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: নিচের ফাংশনগুলোর লেখচিত্র অঙ্কন কর এবং ডোমেন ও রেঞ্জ নির্ণয় করো।\n(ক) $f(x) = 2^x$\n(খ) $f(x) = (\frac{1}{2})^x$\n(গ) $f(x) = e^x, 2 < e < 3$\n(ঘ) $f(x) = e^{-x}, 2 < e < 3$\n(ঙ) $f(x) = 3^x$",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(2) $f(x) = \\log_a x$ এর লেখচিত্র অঙ্কন করো।\n(i) ধরি, $y = f(x) = \\log_a x$ যখন $0 < a < 1$। ফাংশনটিকে লেখা যায় $x = a^y$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_9_1",
+      "caption": "y = a^x (a > 1)",
+      "box_2d": [
+        89,
+        592,
+        332,
+        875
+      ]
+    },
+    {
+      "figure_id": "fig_9_2",
+      "caption": "y = a^x (0 < a < 1)",
+      "box_2d": [
+        468,
+        555,
+        712,
+        875
+      ]
+    }
+  ]
+}

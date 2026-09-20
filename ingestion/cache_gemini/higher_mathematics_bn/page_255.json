@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 255,
+  "pdf_page_no": 260,
+  "chapter_no": 11,
+  "chapter_title": "স্থানাঙ্ক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$= \\frac{1}{2} \\begin{vmatrix} x_1 & x_2 & x_3 & x_1 \\\\ y_1 & y_2 & y_3 & y_1 \\end{vmatrix} + \\frac{1}{2} \\begin{vmatrix} x_1 & x_3 & x_4 & x_1 \\\\ y_1 & y_3 & y_4 & y_1 \\end{vmatrix}$$\n\n$$= \\frac{1}{2} (x_1y_2 + x_2y_3 + x_3y_1 - x_2y_1 - x_3y_2 - x_1y_3) + \\frac{1}{2} (x_1y_3 + x_3y_4 + x_4y_1 - x_3y_1 - x_4y_3 - x_1y_4)$$\n\n$$= \\frac{1}{2} (x_1y_2 + x_2y_3 + x_3y_4 + x_4y_1 - x_2y_1 - x_3y_2 - x_4y_3 - x_1y_4)$$\n\nসুতরাং চতুর্ভুজক্ষেত্র এর ক্ষেত্রফল\n\n$$= \\frac{1}{2} \\begin{vmatrix} x_1 & x_2 & x_3 & x_4 & x_1 \\\\ y_1 & y_2 & y_3 & y_4 & y_1 \\end{vmatrix} \\text{ বর্গ একক}$$\n\nঅনুরূপভাবে একটি পঞ্চভুজ $ABCDE$ (নিচের চিত্র) এর শীর্ষবিন্দুগুলো যদি $A(x_1, y_1), B(x_2, y_2), C(x_3, y_3), D(x_4, y_4)$ ও $E(x_5, y_5)$ হয় এবং চিত্রের মতো শীর্ষগুলো যদি ঘড়ির কাঁটার বিপরীত দিকে হয়, তবে পঞ্চভুজ $ABCDE$ এর ক্ষেত্রফল তিনটি ত্রিভুজ ক্ষেত্র $ABC, ACD$ ও $ADE$ এর ক্ষেত্রফলের সমষ্টির সমান।\n\nত্রিভুজক্ষেত্র ও চতুর্ভুজক্ষেত্রের ঠিক অনুরূপভাবে পঞ্চভুজক্ষেত্র $ABCDE$ এর ক্ষেত্রফল\n\n$$= \\frac{1}{2} \\begin{vmatrix} x_1 & x_2 & x_3 & x_4 & x_5 & x_1 \\\\ y_1 & y_2 & y_3 & y_4 & y_5 & y_1 \\end{vmatrix} \\text{ বর্গ একক}$$\n\nএকইভাবে যেকোনো বহুভুজের শীর্ষবিন্দুসমূহের স্থানাঙ্ক জানা থাকলে সহজেই উপরোক্ত পদ্ধতিতে ক্ষেত্রফল নির্ণয় করা যায়।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: চতুর্ভুজক্ষেত্রের ক্ষেত্রফল নির্ণয়ের পদ্ধতির সাহায্যে ষড়ভুজ ক্ষেত্রের ক্ষেত্রফল নির্ণয়ের সূত্র প্রতিপাদন করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. $A(1, 4), B(-4, 3), C(1, -2)$ এবং $D(4, 0)$ শীর্ষবিশিষ্ট চতুর্ভুজক্ষেত্র $ABCD$ এর ক্ষেত্রফল নির্ণয় করো।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_pentagon_area",
+      "caption": "পঞ্চভুজ ক্ষেত্র ABCDE এর ক্ষেত্রফল",
+      "box_2d": [
+        561,
+        258,
+        808,
+        735
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 179,
+  "pdf_page_no": 184,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে, $\\angle XOA = \\angle YOA' = \\theta$ এবং $\\angle XOA' = \\frac{\\pi}{2} + \\theta$।\n\nমনে করি, $OA$ রশির উপর $P(x, y)$ যেকোনো বিন্দু। $OA'$ এর উপর $Q$ বিন্দুটি এমনভাবে নিই যেন $OP = OQ$ হয়। $P$ ও $Q$ বিন্দু থেকে $x$-অক্ষের উপর $PM$ ও $QN$ লম্ব টানি।\n$\\therefore \\angle NQO = \\angle YOQ = \\angle POM = \\theta$\nএখন সমকোণী ত্রিভুজ $\\triangle POM$ ও $\\triangle QON$ এর মধ্যে $\\angle POM = \\angle NQO$, $\\angle PMO = \\angle QNO$ এবং $OP = OQ = r$\n$\\therefore \\triangle POM$ ও $\\triangle QON$ সর্বসম।\n$\\therefore ON = PM, QN = OM$\nএখন $P$ বিন্দুর স্থানাঙ্ক $(x, y)$ হলে, $ON = -PM = -y$ এবং $QN = OM = x$\n$\\therefore Q$ বিন্দুর স্থানাঙ্ক $Q(-y, x)$\nতাহলে আমরা পাই,\n$$\\sin\\left(\\frac{\\pi}{2} + \\theta\\right) = \\frac{x}{r} = \\cos\\theta, \\cos\\left(\\frac{\\pi}{2} + \\theta\\right) = \\frac{-y}{r} = -\\frac{y}{r} = -\\sin\\theta$$\n$$\\tan\\left(\\frac{\\pi}{2} + \\theta\\right) = \\frac{x}{-y} = -\\frac{x}{y} = -\\cot\\theta$$\nএকইভাবে, $\\csc\\left(\\frac{\\pi}{2} + \\theta\\right) = \\sec\\theta$, $\\sec\\left(\\frac{\\pi}{2} + \\theta\\right) = -\\csc\\theta$\n$$\\cot\\left(\\frac{\\pi}{2} + \\theta\\right) = -\\tan\\theta$$\n\nমস্তব্য: যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৯. $\\sin\\left(\\frac{2\\pi}{3}\\right) = \\sin\\left(\\frac{\\pi}{2} + \\frac{\\pi}{6}\\right) = \\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}$\n\n$\\cos\\left(\\frac{3\\pi}{4}\\right) = \\cos\\left(\\frac{\\pi}{2} + \\frac{\\pi}{4}\\right) = -\\sin\\frac{\\pi}{4} = -\\frac{1}{\\sqrt{2}}$\n\n$\\tan\\left(\\frac{5\\pi}{6}\\right) = \\tan\\left(\\frac{\\pi}{2} + \\frac{\\pi}{3}\\right) = -\\cot\\frac{\\pi}{3} = -\\frac{1}{\\sqrt{3}}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $\\sec\\left(\\frac{3\\pi}{4}\\right)$, $\\csc\\left(\\frac{5\\pi}{6}\\right)$ এবং $\\cot\\left(\\frac{2\\pi}{3}\\right)$ এর মান নির্ণয় করো।",
+      "activity_tag": "কাজ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_8_1",
+      "caption": null,
+      "box_2d": [
+        182,
+        574,
+        335,
+        876
+      ]
+    }
+  ]
+}

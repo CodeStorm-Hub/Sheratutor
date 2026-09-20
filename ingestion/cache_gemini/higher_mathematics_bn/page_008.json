@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 8,
+  "pdf_page_no": 13,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $A = \\{a, b, c, d\\}, B = \\{b, c, f\\}$ এবং $C = \\{c, d, g\\}$।\n\nতাহলে, $B \\cup C = \\{b, c, f\\} \\cup \\{c, d, g\\} = \\{b, c, d, f, g\\}$\n\nএবং $A \\cup (B \\cup C) = \\{a, b, c, d\\} \\cup \\{b, c, d, f, g\\} = \\{a, b, c, d, f, g\\}$।\n\nআবার, $A \\cup B = \\{a, b, c, d\\} \\cup \\{b, c, f\\} = \\{a, b, c, d, f\\}$\n\nএবং $(A \\cup B) \\cup C = \\{a, b, c, d, f\\} \\cup \\{c, d, g\\} = \\{a, b, c, d, f, g\\}$।\n\nসুতরাং এক্ষেত্রে $(A \\cup B) \\cup C = A \\cup (B \\cup C)$।\n\nআবার, $B \\cap C = \\{b, c, f\\} \\cap \\{c, d, g\\} = \\{c\\}$\n\nএবং $A \\cap (B \\cap C) = \\{a, b, c, d\\} \\cap \\{c\\} = \\{c\\}$।\n\nআবার, $A \\cap B = \\{a, b, c, d\\} \\cap \\{b, c, f\\} = \\{b, c\\}$\n\nএবং $(A \\cap B) \\cap C = \\{b, c\\} \\cap \\{c, d, g\\} = \\{c\\}$।\n\nসুতরাং এক্ষেত্রে $A \\cap (B \\cap C) = (A \\cap B) \\cap C$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: বন্টনবিধির সূত্রটি যাচাই করো, যেখানে $A = \\{1, 2, 3, 6\\}, B = \\{2, 3, 4, 5\\}$ এবং $C = \\{3, 5, 6, 7\\}$। এই যাচাইকরণ ভেনচিত্রের মাধ্যমেও দেখাও।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: সেটের সংযোগ ও ছেদ প্রক্রিয়া দুটির প্রতিটি অপরটির প্রেক্ষিতে বন্টন নিয়ম মেনে চলে।\n\n**প্রতিজ্ঞা ১ (ডি মর্গ্যানের সূত্র)**। সার্বিক সেট $U$ এর যেকোনো উপসেট $A$ ও $B$ এর জন্য—\n\nক) $(A \\cup B)' = A' \\cap B'$\n\nখ) $(A \\cap B)' = A' \\cup B'$\n\n**প্রমাণ**: (কেবল প্রথমটির প্রমাণ নিচে দেখানো হয়েছে। পরেরটির প্রমাণ নিজে করো।)\n\n**ক)** মনে করি, $x \\in (A \\cup B)'$। তাহলে, $x \\notin A \\cup B$\n\n$$\\implies x \\notin A \\text{ এবং } x \\notin B \\implies x \\in A' \\text{ এবং } x \\in B' \\implies x \\in A' \\cap B'$$\n\n$$\\therefore (A \\cup B)' \\subseteq A' \\cap B'$$\n\nআবার মনে করি, $x \\in A' \\cap B'$। তাহলে, $x \\in A'$ এবং $x \\in B'$\n\n$$\\implies x \\notin A \\text{ এবং } x \\notin B \\implies x \\notin A \\cup B \\implies x \\in (A \\cup B)'$$\n\n$$\\therefore A' \\cap B' \\subseteq (A \\cup B)'$$\n\nসুতরাং $(A \\cup B)' = A' \\cap B'$।\n\n**প্রতিজ্ঞা ২**। সার্বিক সেট $U$ এর যেকোনো উপসেট $A$ ও $B$ এর জন্য $A \\setminus B = A \\cap B'$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

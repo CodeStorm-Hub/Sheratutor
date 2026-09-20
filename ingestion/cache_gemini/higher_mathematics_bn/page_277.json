@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 277,
+  "pdf_page_no": 282,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুসিদ্ধান্ত ১. কোনো ত্রিভুজের তিনটি বাহুর একই ক্রম দ্বারা সূচিত ভেক্টরত্রয়ের যোগফল শূন্য ভেক্টর। উপরের চিত্রে, $\\vec{OB} + \\vec{BA} + \\vec{AO} = \\vec{OA} + \\vec{AO} = -\\vec{AO} + \\vec{AO} = \\underline{0}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ভেক্টর যোগের বর্জনবিধি (Cancellation law): যেকোনো $\\underline{u}, \\underline{v}, \\underline{w}$ ভেক্টরের জন্য $\\underline{u} + \\underline{v} = \\underline{u} + \\underline{w}$ হলে $\\underline{v} = \\underline{w}$ হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: যেহেতু $\\underline{u} + \\underline{v} = \\underline{u} + \\underline{w}$\n$$\\therefore \\underline{u} + \\underline{v} + (-\\underline{u}) = \\underline{u} + \\underline{w} + (-\\underline{u}) \\quad [\\text{উভয়পক্ষে } -\\underline{u} \\text{ যোগ করে}]$$\nবা, $\\underline{u} - \\underline{u} + \\underline{v} = \\underline{u} - \\underline{u} + \\underline{w}$ অর্থাৎ $\\underline{v} = \\underline{w}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ভেক্টরের সংখ্যা গুণিতক বা স্কেলার গুণিতক (Scalar multiple of a vector)\n$\\underline{u}$ যেকোনো ভেক্টর এবং $m$ যেকোনো বাস্তব সংখ্যা হলে $m\\underline{u}$ দ্বারা কোন ভেক্টর বুঝায়, নিচে তা ব্যাখ্যা করা হলো।\n১. $m = 0$ হলে, $m\\underline{u} = \\underline{0}$ বা শূন্য ভেক্টর\n২. $m \\neq 0$ হলে, $m\\underline{u}$ এর দৈর্ঘ্য $\\underline{u}$ এর দৈর্ঘ্যের $|m|$ গুণ হবে, $m\\underline{u}$ এর ধারক $\\underline{u}$ এর ধারকের সাথে অভিন্ন হবে, এবং\nক) $m > 0$ হলে $m\\underline{u}$ এর দিক $\\underline{u}$ এর দিকের সঙ্গে একমুখী হবে\nখ) $m < 0$ হলে, $m\\underline{u}$ এর দিক $\\underline{u}$ এর দিকের বিপরীত হবে।\nদ্রষ্টব্য: ক) $m = 0$ অথবা $\\underline{u} = 0$ হলে $m\\underline{u} = \\underline{0}$ খ) $1\\underline{u} = \\underline{u}, (-1)\\underline{u} = -\\underline{u}$\nউপরোক্ত সংজ্ঞা হতে দেখা যায়, $m(n\\underline{u}) = n(m\\underline{u}) = (mn)(\\underline{u})$\n$m, n$ উভয়ে $> 0$, উভয়ে $< 0$, একটি $> 0$ এবং অপরটি $< 0$, একটি বা উভয় $0$, এ সকল ক্ষেত্রেও পৃথক পৃথকভাবে বিবেচনা করে সহজেই সূত্রের বাস্তব্যতা সম্পর্কে নিশ্চিত হওয়া যায়। নিচে এর একটি উদাহরণ দেওয়া হলো:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, $\\vec{AB} = \\vec{BC} = \\underline{u}$\n$AC$ কে $G$ পর্যন্ত এরূপে বর্ধিত করি যেন $CD = DE = EF = FG = AB$ হয়।\nতখন $\\vec{AG} = \\vec{AB} + \\vec{BC} + \\vec{CD} + \\vec{DE} + \\vec{EF} + \\vec{FG} = \\underline{u} + \\underline{u} + \\underline{u} + \\underline{u} + \\underline{u} + \\underline{u} = 6\\underline{u}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_vector_add",
+      "caption": null,
+      "box_2d": [
+        188,
+        362,
+        324,
+        637
+      ]
+    },
+    {
+      "figure_id": "fig_scalar_mult",
+      "caption": null,
+      "box_2d": [
+        785,
+        320,
+        847,
+        674
+      ]
+    }
+  ]
+}

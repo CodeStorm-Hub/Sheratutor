@@ -20,9 +20,10 @@ async function getSubjects() {
   // Order subjects so Mathematics (100% verified 17 chapters) appears first, followed by Chemistry and Physics
   const subjectPriority: Record<string, number> = {
     'SSC-MATH': 1,
-    'SSC-CHEM': 2,
-    'SSC-PHY': 3,
-    'SSC-ENG': 4,
+    'SSC-HMATH': 2,
+    'SSC-CHEM': 3,
+    'SSC-PHY': 4,
+    'SSC-ENG': 5,
   };
 
   return (subjects ?? []).slice().sort((a, b) => {

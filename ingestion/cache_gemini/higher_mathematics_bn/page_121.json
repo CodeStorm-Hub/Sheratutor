@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 121,
+  "pdf_page_no": 126,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৫. সমীকরণ \n ১২১",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$2^{px-1} = 2^{2px-2}$ এর সমাধান কোনটি?\n\nক) $\\frac{p}{2}$ \n\nখ) $p$ \n\nগ) $-\\frac{p}{2}$ \n\nঘ) $\\frac{1}{p}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "লেফচিত্রের সাহায্যে নিচের সমীকরণগুলোর সমাধান করো:\n\nক) $x^2 - 4x + 3 = 0$ \n\nখ) $x^2 + 2x - 3 = 0$ \n\nগ) $x^2 + 7x = 0$ \n\nঘ) $2x^2 - 7x + 3 = 0$ \n\nঙ) $2x^2 - 5x + 2 = 0$ \n\nচ) $x^2 + 8x + 16 = 0$ \n\nছ) $x^2 + x - 3 = 0$ \n\nজ) $x^2 = 8$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "একটি সংখ্যার বর্গের দ্বিগুণ সংখ্যাটির $5$ গুণ থেকে $3$ কম। কিন্তু ঐ সংখ্যাটির বর্গের $5$ গুণ সংখ্যাটির $2$ গুণ থেকে $3$ বেশি।\n\nক) উদ্দীপকের তথ্যগুলোর সাহায্যে সমীকরণ গঠন করো।\n\nখ) সূত্র প্রয়োগ করে ১য় সমীকরণটি সমাধান করো।\n\nগ) ২য় সমীকরণটি লেখচিত্রের সাহায্যে সমাধান করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "জনাব আশফাক আলীর আয়তাকার এক খণ্ড জমির ক্ষেত্রফল $0.12$ হেক্টর। জমির অর্ধপরিসীমা এর একটি কর্ণ অপেক্ষা $20$ মিটার বেশি। তিনি তাঁর জমি থেকে শ্যাম বাবুর নিকট আয়তাকার এক তৃতীয়াংশ বিক্রি করেন। শ্যাম বাবুর জমির দৈর্ঘ্য, প্রস্থ অপেক্ষা $5$ মিটার বেশি। [$1$ হেক্টর = $10,000$ বর্গমিটার]\n\nক) উদ্দীপকের আলোকে দুটি সমীকরণ গঠন করো।\n\nখ) আশফাক আলীর জমির দৈর্ঘ্য ও প্রস্থ নির্ণয় করো।\n\nগ) শ্যাম বাবুর জমির কর্ণের দৈর্ঘ্য ও পরিসীমা নির্ণয় করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": "৯",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "পাঁচটি ক্রমিক পূর্ণসংখ্যার অঙ্কগুলোর যোগফল কি পরবর্তী পাঁচটি ক্রমিক পূর্ণসংখ্যার অঙ্কগুলোর যোগফল দিয়ে গুণ করলে গুণফল $120635$ হতে পারে?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১০",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "একটি আয়তক্ষেত্রের দৈর্ঘ্য ও প্রস্থের ব্যবধান $1$ সেমি। তার ক্ষেত্রফলের শেষ অঙ্ক যদি $6$ হয় তাহলে তার কোনো বাহুর দৈর্ঘ্য পূর্ণবর্গ হতে পারে কি?",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১১",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ঘড়ির ঘণ্টা ও মিনিটের কাঁটা কতবার পরস্পর ঠিক বিপরীত দিকে বসে? সময়গুলো বের করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১২",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ঘড়ির ঘণ্টা ও মিনিটের কাঁটা কতবার ঠিক লম্বালম্বি হয়ে বসে? সময়গুলো বের করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ফর্মা-১৬, উচ্চতর গণিত, ৯ম-১০ম শ্রেণি",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

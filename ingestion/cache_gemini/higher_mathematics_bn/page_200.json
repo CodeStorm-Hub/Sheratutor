@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 200,
+  "pdf_page_no": 205,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: এখানে, $qm = pn$\n\nমনে করি, $\\sqrt[n]{a^m} = x$ তাহলে, $x^n = a^m$\n\nবা, $(x^n)^q = (a^m)^q$\n\nবা, $x^{nq} = a^{mq} = a^{pn}$\n\nবা, $(x^q)^n = (a^p)^n$\n\nবা, $x^q = a^p$ [মুখ্য $n$ তম মূল বিবেচনা করে]\n\nবা, $x = \\sqrt[n]{a^p}$\n\nঅর্থাৎ, $\\sqrt[n]{a^m} = \\sqrt[n]{a^p}$\n\nঅনুসিদ্ধান্ত ১. যদি $a > 0$ এবং $n, k \\in \\mathbb{N}$, $n > 1$ হয়, তবে, $\\sqrt[n]{a} = \\sqrt[nk]{a^k}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "মূলদ ভগ্নাংশ সূচক",
+      "chunk_type": "theory",
+      "content_markdown": "## মূলদ ভগ্নাংশ সূচক\n\n**সংজ্ঞা ৫:** $a \\in \\mathbb{R}$ এবং $n \\in \\mathbb{N}$, $n > 1$ হলে, $a^{\\frac{1}{n}} = \\sqrt[n]{a}$ যখন $a > 0$ অথবা $a < 0$ এবং $n$ বিজোড়।\n\n**মন্তব্য:** সূচক নিয়ম $(a^m)^n = a^{mn}$ [সূত্র ৬]\n\nযদি সকল ক্ষেত্রে সত্য হতে হয়, তবে $\\left(a^{\\frac{1}{n}}\\right)^n = a^{\\frac{n}{n}} = a^1 = a$ হতে হবে, অর্থাৎ $a^{\\frac{1}{n}}$ এর $n$ তম মূল হতে হবে। এজন্য একাধিক মূলের ক্ষেত্রে দ্ব্যর্থতা পরিহারের লক্ষ্যে উপরের সংজ্ঞা বর্ণনা করা হয়েছে।\n\n**মন্তব্য:** $a < 0$ এবং $n \\in \\mathbb{N}$, $n > 1$ বিজোড় হলে সূত্র ৭ থেকে দেখা যায় যে\n\n$$a^{\\frac{1}{n}} = \\sqrt[n]{a} = -\\sqrt[n]{|a|} = -|a|^{\\frac{1}{n}}$$\n\nএরূপ ক্ষেত্রে এই সূত্রের সাহায্যেই $a^{\\frac{1}{n}}$ এর মান নির্ণয় করা হয়।\n\n**মন্তব্য:** $a$ মূলদ সংখ্যা হলেও অধিকাংশ ক্ষেত্রে $a^{\\frac{1}{n}}$ অমূলদ সংখ্যা হয়। এরূপ ক্ষেত্রে $a^{\\frac{1}{n}}$ এর আসন্ন মান ব্যবহার করা হয়।\n\n**সংজ্ঞা ৬:** $a > 0, m \\in \\mathbb{Z}$ এবং $n \\in \\mathbb{N}, n > 1$ হলে $a^{\\frac{m}{n}} = (a^{\\frac{1}{n}})^m$\n\n**দ্রষ্টব্য:** সংজ্ঞা ৫ ও ৬ এবং সূত্র ৮ থেকে দেখা যায় যে,\n\n$$a^{\\frac{m}{n}} = (\\sqrt[n]{a})^m = \\sqrt[n]{a^m}$$ যেখানে, $a > 0, m \\in \\mathbb{Z}$ এবং $n \\in \\mathbb{N}, n > 1$\n\nসুতরাং, $p \\in \\mathbb{Z}$ এবং $q \\in \\mathbb{Z}, n > 1$ যদি এমন হয় যে, $\\frac{m}{n} = \\frac{p}{q}$ হয়, তবে সূত্র ৯ থেকে দেখা যায় যে, $a^{\\frac{m}{n}} = a^{\\frac{p}{q}}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

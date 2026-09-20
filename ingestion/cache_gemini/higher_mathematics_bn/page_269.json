@@ -1,0 +1,121 @@
+{
+  "printed_page_no": 269,
+  "pdf_page_no": 274,
+  "chapter_no": 11,
+  "chapter_title": "স্থানাঙ্ক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ১১. স্থানাঙ্ক জ্যামিতি ২৬৯",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১২. $(k^2, 2k)$ বিন্দুগামী এবং $\frac{1}{k}$ ঢালবিশিষ্ট রেখার সমীকরণ নির্ণয় করো। যদি রেখাটি $(-2, 1)$ বিন্দু দ্বারা অতিক্রম করে তবে $k$ এর সম্ভাব্য মান নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৩. একটি রেখা $A(-2, 3)$ বিন্দু দিয়ে যায় এবং যার ঢাল $\frac{1}{2}$। রেখাটি যদি $(3, k)$ বিন্দু দিয়েও যায় তবে $k$ এর মান কত?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৪. $3$ ঢালবিশিষ্ট একটি রেখা $A(-1, 6)$ বিন্দু দিয়ে যায় এবং $x$ অক্ষকে $B$ বিন্দুতে ছেদ করে। $A$ বিন্দুগামী অন্য একটি রেখা $x$ অক্ষকে $C(2, 0)$ বিন্দুতে ছেদ করে।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $AB$ ও $AC$ রেখার সমীকরণ নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $\triangle ABC$ এর ক্ষেত্রফল নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৫. দেখাও যে, $y - 2x + 4 = 0$ এবং $3y = 6x + 10$ রেখাদ্বয় পরস্পর ছেদ করে না। রেখাদ্বয়ের চিত্র এঁকে ব্যাখ্যা কর কেন সমীকরণ দুটির সমাধান নেই।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৬. $y = x + 5$, $y = -x + 5$, এবং $y = 2$ সমীকরণ তিনটি একটি ত্রিভুজের তিনটি বাহু নির্দেশ করে। ত্রিভুজটির চিত্র আঁকো এবং ক্ষেত্রফল নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৭. $y = 3x + 4$ এবং $3x + y = 10$ রেখাদ্বয়ের ছেদবিন্দুর স্থানাঙ্ক নির্ণয় করো। রেখাদ্বয়ের চিত্র আঁক এবং $x$ অক্ষ সমন্বয়ে গঠিত ত্রিভুজের ক্ষেত্রফল নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৮. প্রমাণ করো যে, $2y - x = 2$, $y + x = 7$ এবং $y = 2x - 5$ রেখা তিনটি সমবিন্দু (concurrent) অর্থাৎ একই বিন্দু দ্বারা অতিক্রম করে।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "১৯. $y = x + 3$, $y = x - 3$, $y = -x + 3$ এবং $y = -x - 3$ একটি চতুর্ভুজের চারটি বাহু নির্দেশ করে। চতুর্ভুজটি আঁকো এবং ক্ষেত্রফল তিনটি ভিন্ন পদ্ধতিতে নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২০. একটি চতুর্ভুজের চারটি শীর্ষ বিন্দু হলো $P(5, 2)$, $Q(-3, 2)$, $R(4, -1)$ এবং $S(-2, -1)$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $PS$ রেখার সমীকরণ নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "খ) $PQRS$ চতুর্ভুজের সমান ক্ষেত্রফল বিশিষ্ট বর্গের কর্ণের দৈর্ঘ্য নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $PQRS$ চতুর্ভুজের যে অংশ ২য় চতুর্ভাগে অবস্থান করে তার ক্ষেত্রফল নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "নমুনা প্রশ্ন\nবহুনির্বাচনি প্রশ্ন\n১. $x - 2y - 10 = 0$ এবং $2x + y - 3 = 0$ রেখাদ্বয়ের ঢালদ্বয়ের গুণফল\nক) $-2$\nখ) $2$\nগ) $1$\nঘ) $-1$",
+      "activity_tag": "নমুনা প্রশ্ন"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 102,
+  "pdf_page_no": 107,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বা, $x^2 - 6x + 13 = 8$ [$y$ এর মান বসিয়ে]\nবা, $x^2 - 6x + 5 = 0$ বা, $(x - 1)(x - 5) = 0$\n$\\therefore x = 1$ অথবা $5$।\nশুদ্ধি পরীক্ষা: $x = 1$ হলে, বামপক্ষ = $\\sqrt{10} - \\sqrt{8} =$ ডানপক্ষ\n$x = 5$ হলে, বামপক্ষ = $\\sqrt{10} - \\sqrt{8} =$ ডানপক্ষ\n$\\therefore$ নির্ণেয় সমাধান $x = 1, 5$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১০. সমাধান কর: $(1 + x)^{\\frac{1}{3}} + (1 - x)^{\\frac{1}{3}} = 2^{\\frac{1}{3}}$\n\nসমাধান: $(1 + x)^{\\frac{1}{3}} + (1 - x)^{\\frac{1}{3}} = 2^{\\frac{1}{3}}$\nবা, $1 + x + 1 - x + 3 \\cdot (1 + x)^{\\frac{1}{3}}(1 - x)^{\\frac{1}{3}}\\{(1 + x)^{\\frac{1}{3}} + (1 - x)^{\\frac{1}{3}}\\} = 2$ [ঘন করে]\nবা, $2 + 3 \\cdot (1 + x)^{\\frac{1}{3}}(1 - x)^{\\frac{1}{3}} \\cdot 2^{\\frac{1}{3}} = 2$\nবা, $3 \\cdot 2^{\\frac{1}{3}} \\cdot (1 + x)^{\\frac{1}{3}}(1 - x)^{\\frac{1}{3}} = 0$\nবা, $(1 + x)^{\\frac{1}{3}}(1 - x)^{\\frac{1}{3}} = 0$\nবা, $(1 + x)(1 - x) = 0$ [আবার ঘন করে]\n$x = 1$ এবং $x = -1$ উভয়ই সমীকরণটিকে সিদ্ধ করে।\n$\\therefore$ নির্ণেয় সমাধান $x = \\pm 1$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": "৫.২",
+      "section_title": "অনুশীলনী ৫.২",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৫.২\n\nসমাধান কর:\n১. $\\sqrt{x - 4} + 2 = \\sqrt{x + 12}$\n২. $\\sqrt{11x - 6} = \\sqrt{4x + 5} - \\sqrt{x - 1}$\n৩. $\\sqrt{2x + 7} + \\sqrt{3x - 18} = \\sqrt{7x + 1}$\n৪. $\\sqrt{x + 4} + \\sqrt{x + 11} = \\sqrt{8x + 9}$\n৫. $\\sqrt{11x - 6} = \\sqrt{4x + 5} + \\sqrt{x - 1}$\n৬. $\\sqrt{x^2 - 8} + \\sqrt{x^2 - 14} = 6$\n৭. $\\sqrt{x^2 - 6x + 9} - \\sqrt{x^2 - 6x + 6} = 1$\n৮. $\\sqrt{x - 2} - \\sqrt{x - 9} = 1$\n৯. $6\\sqrt{\\frac{2x}{x - 1}} + 5\\sqrt{\\frac{x - 1}{2x}} = 13$\n১০. $\\sqrt{\\frac{x - 1}{3x + 2}} + 2\\sqrt{\\frac{3x + 2}{x - 1}} = 3$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "সূচক সমীকরণ (Indicial Equation)",
+      "chunk_type": "theory",
+      "content_markdown": "সূচক সমীকরণ (Indicial Equation)\n\nযে সমীকরণে অজ্ঞাত চলক সূচকরূপে থাকে, তাকে সূচক সমীকরণ বলে। $2^x = 8, 16^x = 4^{x+2}, 2^{x+1} - 2^x - 8 = 0$ সমীকরণগুলো সূচক সমীকরণ যেখানে $x$ অজ্ঞাত চলক। সূচক সমীকরণ সমাধান",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

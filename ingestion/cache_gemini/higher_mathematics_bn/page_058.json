@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 58,
+  "pdf_page_no": 63,
+  "chapter_no": 2,
+  "chapter_title": "বীজগাণিতিক রাশি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এবং $(4 - 1)(4 - 5) = B(4 - 2)$ বা, $B = \frac{-3}{2}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন $A$ এবং $B$ এর মান (1) এ বসিয়ে পাই,\n$$\\frac{(x - 1)(x - 5)}{(x - 2)(x - 4)} \\equiv 1 + \\frac{3}{2(x - 2)} - \\frac{3}{2(x - 4)}$$, যা নির্ণেয় আংশিক ভগ্নাংশ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৬. $\\frac{2x^3}{(x - 1)(x - 2)(x - 3)}$ কে আংশিক ভগ্নাংশে প্রকাশ কর।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান: এখানে লবকে হর দ্বারা ভাগ করলে 2 হয়।\nসুতারং ধরি, $\\frac{2x^3}{(x - 1)(x - 2)(x - 3)} \\equiv 2 + \\frac{A}{x - 1} + \\frac{B}{x - 2} + \\frac{C}{x - 3} \\dots \\dots (1)$\n(1) এর উভয়পক্ষকে $(x - 1)(x - 2)(x - 3)$ দ্বারা গুণ করে পাই,\n$$2x^3 \\equiv 2(x - 1)(x - 2)(x - 3) + A(x - 2)(x - 3) + B(x - 1)(x - 3)$$\n$$+ C(x - 1)(x - 2) \\dots \\dots (2)$$\n(2) এর উভয়পক্ষে পর্যায়ক্রমে $x = 1, 2, 3$ বসিয়ে পাই,\n$2 = A(-1)(-2)$ বা, $A = 1$; $\\quad 16 = B(1)(-1)$ বা, $B = -16$\nএবং $54 = C(2)(1)$ বা, $C = \\frac{54}{2} = 27$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন $A$, $B$, $C$ এর মান (1) এ বসিয়ে পাই,\n$$\\frac{2x^3}{(x - 1)(x - 2)(x - 3)} \\equiv 2 + \\frac{1}{x - 1} - \\frac{16}{x - 2} + \\frac{27}{x - 3}$$ যা নির্ণেয় আংশিক ভগ্নাংশ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "গ) যখন হরে বাস্তব ও একঘাতবিশিষ্ট উৎপাদক থাকে এবং সেগুলোর কয়েকটির পুনরাবৃত্তি হয়",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৭. $\\frac{x}{(x - 1)^2(x - 2)}$ কে আংশিক ভগ্নাংশে প্রকাশ কর।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমাধান: ধরি $\\frac{x}{(x - 1)^2(x - 2)} \\equiv \\frac{A}{x - 1} + \\frac{B}{(x - 1)^2} + \\frac{C}{x - 2}$\n(1) এর উভয়পক্ষকে $(x - 1)^2(x - 2)$ দ্বারা গুণ করে পাই,\n$$x \\equiv A(x - 1)(x - 2) + B(x - 2) + C(x - 1)^2 \\dots \\dots (1)$\n(2) এর উভয়পক্ষে পর্যায়ক্রমে $x = 1, 2$ বসিয়ে পাই,\n$1 = B(1 - 2)$ বা, $B = -1$ এবং $2 = C(2 - 1)^2$ বা, $2 = C \\implies C = 2$\nআবার, (2) এ $x^2$ এর সহগ সমীকৃত করে পাই,\n$0 = A + C$ বা, $A = -C = -2$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

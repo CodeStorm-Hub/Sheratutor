@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 169,
+  "pdf_page_no": 174,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "table",
+      "content_markdown": "$$\\begin{array}{|c|c|c|c|c|c|} \\hline & 0^\\circ & \\frac{\\pi}{6} = 30^\\circ & \\frac{\\pi}{4} = 45^\\circ & \\frac{\\pi}{3} = 60^\\circ & \\frac{\\pi}{2} = 90^\\circ \\\\ \\hline \\sin\\theta & 0 & \\frac{1}{2} & \\frac{1}{\\sqrt{2}} & \\frac{\\sqrt{3}}{2} & 1 \\\\ \\hline \\cos\\theta & 1 & \\frac{\\sqrt{3}}{2} & \\frac{1}{\\sqrt{2}} & \\frac{1}{2} & 0 \\\\ \\hline \\tan\\theta & 0 & \\frac{1}{\\sqrt{3}} & 1 & \\sqrt{3} & \\text{অসংজ্ঞায়িত} \\\\ \\hline \\end{array}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "8. $|\\sin\\theta| \\le 1$, $|\\cos\\theta| \\le 1$\n\n**প্রমাণ:** আমরা জানি, $\\sin^2\\theta + \\cos^2\\theta = 1$\n\n$\\sin^2\\theta \\le 1$, $\\cos^2\\theta \\le 1$\n\nঅর্থাৎ $|\\sin\\theta| \\le 1$, $|\\cos\\theta| \\le 1$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৫. $\\theta$ এর বিভিন্ন মানের জন্য $\\sin\\theta$, $\\cos\\theta$ এবং $\\tan\\theta$ এর মান নিম্নরূপ:",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১১.** $\\theta$ সূক্ষ্মকোণ $\\left(0 < \\theta < \\frac{\\pi}{2}\\right)$ এবং $\\cos\\theta = \\frac{4}{5}$ হলে, অপর ত্রিকোণমিতিক অনুপাতসমূহের মান নির্ণয় করো।\n\n**সমাধান:** ত্রিকোণমিতিক অভেদ (Identities) ব্যবহার করে।\n\nআমরা জানি, $\\sin^2\\theta + \\cos^2\\theta = 1$\n\nবা, $\\sin^2\\theta = 1 - \\cos^2\\theta = 1 - \\left(\\frac{4}{5}\\right)^2 = 1 - \\frac{16}{25} = \\frac{25 - 16}{25} = \\frac{9}{25}$\n\n$\\therefore \\sin\\theta = \\pm\\sqrt{\\frac{9}{25}} = \\pm\\frac{3}{5}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_trig_quadrants",
+      "caption": "ত্রিকোণমিতিক অনুপাতসমূহের চিহ্ন",
+      "box_2d": [
+        94,
+        431,
+        212,
+        631
+      ]
+    }
+  ]
+}

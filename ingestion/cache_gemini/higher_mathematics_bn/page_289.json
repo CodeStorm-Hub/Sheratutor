@@ -1,0 +1,69 @@
+{
+  "printed_page_no": 289,
+  "pdf_page_no": 294,
+  "chapter_no": 13,
+  "chapter_title": "ঘন জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "নৈকতলীয় সরলরেখা বলা হয়। উপরের চিত্রে $AB$ ও $EF$ নৈকতলীয় রেখা। দুটি পেন্সিলকে একটির উপর আর একটি দিয়ে যোগ বা গুণচিহ্ন আকৃতির একটি বস্তু তৈরি করলেই দুইি নৈকতলীয় সরলরেখা উৎপন্ন হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৬",
+      "section_title": "সমান্তরাল সরলরেখা (Parallel lines)",
+      "chunk_type": "theory",
+      "content_markdown": "৬। সমান্তরাল সরলরেখা (Parallel lines): দুটি একতলীয় সরলরেখা যদি পরস্পর ছেদ না করে অর্থাৎ যদি তাদের কোনো সাধারণ বিন্দু না থাকে, তবে তাদের সমান্তরাল সরলরেখা বলা হয়। উপরের চিত্রে $AB$ ও $CD$ সমান্তরাল সরলরেখা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৭",
+      "section_title": "সমান্তরাল তল (Parallel planes)",
+      "chunk_type": "theory",
+      "content_markdown": "৭। সমান্তরাল তল (Parallel planes): দুটি সমতল যদি পরস্পর ছেদ না করে অর্থাৎ যদি তাদের কোনো সাধারণ রেখা না থাকে তবে ঐ তলদ্বয়কে সমান্তরাল তল বলা হয়। আগের পৃষ্ঠার চিত্রে $ABCD$ ও তার বিপরীত পাশে থাকা $EFG$ সমতল দুটি পরস্পরের সমান্তরাল তল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৮",
+      "section_title": "সমতলের সমান্তরাল রেখা (Parallel to a plane)",
+      "chunk_type": "theory",
+      "content_markdown": "৮। সমতলের সমান্তরাল রেখা (Parallel to a plane): একটি সরলরেখা ও একটি সমতলকে অনির্দিষ্টভাবে বর্ধিত করলেও যদি তারা পরস্পর ছেদ না করে, তবে ঐ সরলরেখাকে উক্ত তলের সমান্তরাল রেখা বলা হয়। উপরের চিত্রে $CD$ সরল রেখা $ABGF$ সমতলের সমান্তরাল।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৯",
+      "section_title": "তলের লম্ব রেখা (Normal or perpendicular to a plane)",
+      "chunk_type": "theory",
+      "content_markdown": "৯। তলের লম্ব রেখা (Normal or perpendicular to a plane): কোনো সরলরেখা একটি সমতলের উপরস্থ কোনো বিন্দু থেকে ঐ সমতলের উপর অঙ্কিত যেকোনো রেখার উপর লম্ব হলে, উক্ত সরলরেখাকে ঐ সমতলের উপর লম্ব বলা হয়। নিচের বামের চিত্রে $OP$ রেখা $QR$ সমতলের উপর লম্ব, কারণ $OP$ রেখা $QR$ সমতলে থাকা $AB$, $CD$, $EF$ প্রতিটি রেখার ওপরেই লম্ব।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১০",
+      "section_title": "তির্যক (Oblique) রেখা",
+      "chunk_type": "theory",
+      "content_markdown": "১০। তির্যক (Oblique) রেখা: কোনো সরলরেখা একটি সমতলের সাথে সমান্তরাল বা লম্ব না হলে, ঐ সরলরেখাকে সমতলের তির্যক রেখা বলা হয়। উপরের ডানের চিত্রে $MN$, $ST$ এর তির্যক রেখা।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১১",
+      "section_title": "উল্লম্ব (Vertical) রেখা বা তল",
+      "chunk_type": "theory",
+      "content_markdown": "১১। উল্লম্ব (Vertical) রেখা বা তল: স্থির অবস্থায় ঝুলন্ত ওলনের সূতার সঙ্গে সমান্তরাল কোনো রেখা বা তলকে খাড়া বা উল্লম্ব তল বলে। নিচের বামের চিত্রে $ABCD$ উল্লম্ব তল এবং $PR$ উল্লম্ব রেখা।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_13_geometric_planes",
+      "caption": null,
+      "box_2d": [
+        603,
+        287,
+        771,
+        801
+      ]
+    }
+  ]
+}

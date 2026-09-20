@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 162,
+  "pdf_page_no": 167,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$\\cos\theta = \frac{\text{ভূমি}}{\text{অতিভুজ}} = \frac{1}{\\sqrt{10}}, \tag{1} \n \\sec\theta = \frac{\text{অতিভুজ}}{\text{ভূমি}} = \frac{\\sqrt{10}}{1} = \\sqrt{10}$$\n\nএবং $\\cot\theta = \frac{\text{ভূমি}}{\text{লম্ব}} = \frac{1}{3}$\n\nলক্ষনীয়: যেহেতু অনুপাতের কোনো একক থাকে না এবং sine, cosine, tangent, secant, cosecant, cotangent এই ছয়টি ত্রিকোণমিতিক অনুপাত, তাই এদের কোনো একক নেই।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "কাজ: $ABC$ একটি সমকোণী ত্রিভুজ এবং $\\sin\theta = \frac{2}{\\sqrt{5}}$। অন্য ত্রিকোণমিতিক অনুপাতসমূহ নির্ণয় করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "দ্রষ্টব্য: ত্রিকোণমিতিক অনুপাতসমূহকে সংক্ষেপে লেখা হয়। যেমন:\n\n$\\text{sine}\theta = \text{sin}\theta, \\text{cosine}\theta = \text{cos}\theta, \\text{tangent}\theta = \text{tan}\theta,$\n\n$\\text{secant}\theta = \text{sec}\theta, \\text{cosecant}\theta = \text{cosec}\theta, \\text{cotangent}\theta = \text{cot}\theta$\n\n(খ) যেকোনো কোণের জন্য ত্রিকোণমিতিক অনুপাতসমূহ: এই অংশে আমরা যেকোনো কোণের জন্য ত্রিকোণমিতিক অনুপাতসমূহ নির্ণয় করব। সে জন্য আমাদের কোণটির প্রমিত বা আদর্শ অবস্থান (Standard position) জানা দরকার। কার্তেসীয় সমতলে মূলবিন্দু থেকে ডানদিকে অর্থাৎ ধনাত্মক $x$-অক্ষকে আদি রশ্মি ধরে কোণটি অঙ্কন করলেই এর আদর্শ অবস্থান পাওয়া যায়। এখানে $\theta$ কে আমরা ত্রিকোণমিতিক কোণ হিসেবে বিবেচনা করব অর্থাৎ $\theta$ কোণের পরিমাণ নির্দিষ্ট সীমার মধ্যে থাকবে না।\n\nমনে করি, কার্তেসীয় তলে $X'OX$ রেখা $x$-অক্ষ, $Y'OY$ রেখা $y$-অক্ষ এবং $O$ বিন্দু মূলবিন্দু। ঘূর্ণায়মান রশ্মি $OA$ ধনাত্মক $x$-অক্ষ অর্থাৎ $OX$ রশ্মি থেকে শুরু করে ঘড়ির কাঁটার বিপরীত দিকে (anticlockwise) ঘুরে $OA$ অবস্থানে $\theta$ কোণ উৎপন্ন করেছে (নিচের চিত্র)।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_coordinate_angle",
+      "caption": "ঘূর্ণায়মান রশ্মি $OA$ কর্তৃক উৎপন্ন $\theta$ কোণ",
+      "box_2d": [
+        676,
+        321,
+        918,
+        663
+      ]
+    }
+  ]
+}

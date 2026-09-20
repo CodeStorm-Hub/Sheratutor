@@ -66,7 +66,15 @@ export function expandBengaliPhysicsQuery(query: string): string {
 
 export function detectSubjectFromQuery(query: string): string {
   const q = query.toLowerCase();
-  // Mathematics signals
+  // Higher Mathematics signals
+  if (
+    /উচ্চতর\s*গণিত|ভেক্টর|দ্বিপদী|দ্বিপদী বিস্তার|স্থানাঙ্ক জ্যামিতি|সমতলীয় ভেক্টর|অসীম ধারা|সম্ভাবনা|binomial|vector|coordinate geometry|higher math/i.test(
+      q
+    )
+  ) {
+    return "SSC-HMATH";
+  }
+  // General Mathematics signals
   if (
     /সমীকরণ|উৎপাদক|সেট|ফাংশন|জ্যামিতি|উপপাদ্য|বৃত্ত|ত্রিকোণমিতি|কোণ|ধারা|পরিমিতি|পরিসংখ্যান|মধ্যক|প্রচুরক|লগ|লগারিদম|বাস্তব সংখ্যা|অমূলদ|মূলদ|ক্ষেত্রফল|ঘনক|সিলিন্ডার|বেলন|ত্রিভুজ|সমানুপাত|দ্বিঘাত|matrix|sin|cos|tan|cot|sec|cosec|sqrt/i.test(
       q

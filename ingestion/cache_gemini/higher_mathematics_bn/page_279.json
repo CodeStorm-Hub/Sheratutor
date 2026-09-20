@@ -1,0 +1,34 @@
+{
+  "printed_page_no": 279,
+  "pdf_page_no": 284,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ড্রষ্টব্য: তিনটি বিন্দু $A, B, C$ সমরেখ হবে যদি এবং কেবল যদি $\\vec{AC}, \\vec{AB}$ এর সাংখ্য গুণিতক হয়।\n\nমস্তব্য: ক) দুটি ভেক্টরের ধারক রেখা অভিন্ন অথবা সমান্তরাল হলে এবং তাদের দিক একই হলে, তাদের সদৃশ (similar) ভেক্টর বলা হয়। খ) যে ভেক্টরের দৈর্ঘ্য $1$ একক, তাকে (দিক নির্দেশক) একক ভেক্টর বলে।\n\n**সূত্র ২.** $m(\\underline{u} + \\underline{v}) = m\\underline{u} + m\\underline{v}$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**প্রমাণ:** মনে করি, $\\vec{OA} = \\underline{u}, \\vec{AB} = \\underline{v}$। তাহলে $\\vec{OB} = \\vec{OA} + \\vec{AB} = \\underline{u} + \\underline{v}$\n\n$OA$ কে $C$ পর্যন্ত বর্ধিত করি যেন $OC = m \\cdot OA$ হয়। উপরের বামের চিত্রে $m$ ধনাত্মক ও ডানের চিত্রে $m$ ঋণাত্মক। $C$ বিন্দু দিয়ে অঙ্কিত $AB$ এর সমান্তরাল $CD$ রেখা $OB$ এর বর্ধিতাংশকে $D$ বিন্দুতে ছেদ করে। যেহেতু $\\triangle OAB$ এবং $\\triangle OCD$ ত্রিভুজদ্বয় সদৃশ,\n\nসেহেতু $\\frac{|\\vec{OC}|}{|\\vec{OA}|} = \\frac{|\\vec{CD}|}{|\\vec{AB}|} = \\frac{|\\vec{OD}|}{|\\vec{OB}|} = m$\n\n$\\therefore OC = m \\cdot OA, CD = m \\cdot AB, OD = m \\cdot OB$\n\n$\\therefore \\vec{CD} = m\\vec{AB} = m\\underline{v}$\n\nএখানে, $\\vec{OC} + \\vec{CD} = \\vec{OD}$\n\nবা, $m(\\vec{OA}) + m(\\vec{AB}) = m(\\vec{OB})$\n\n$\\therefore m\\underline{u} + m\\underline{v} = m(\\underline{u} + \\underline{v})$\n\n**দ্রষ্টব্য:** $m$ এর সকল মানের জন্য উপরোক্ত সূত্র সত্য।\n\nব্যবহারের সুবিধার্থে ভেক্টর সম্পর্কিত নিয়মগুলো নিচে একত্রে লেখা হলো:\n\n১. $\\underline{u} + \\underline{v} = \\underline{v} + \\underline{u}$\n\n২. $(\\underline{u} + \\underline{v}) + \\underline{w} = \\underline{u} + (\\underline{v} + \\underline{w})$\n\n৩. $\\underline{u} + \\underline{0} = \\underline{0} + \\underline{u} = \\underline{u}$\n\n৪. $\\underline{u} + (-\\underline{u}) = (-\\underline{u}) + \\underline{u} = \\underline{0}$\n\n৫. $\\underline{u} + \\underline{v} = \\underline{u} + \\underline{w}$ হলে $\\underline{v} = \\underline{w}$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_vector_addition_scaling",
+      "caption": null,
+      "box_2d": [
+        245,
+        160,
+        407,
+        839
+      ]
+    }
+  ]
+}

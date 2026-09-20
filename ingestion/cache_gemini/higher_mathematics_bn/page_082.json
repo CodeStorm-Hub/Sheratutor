@@ -1,0 +1,82 @@
+{
+  "printed_page_no": 82,
+  "pdf_page_no": 87,
+  "chapter_no": 4,
+  "chapter_title": "জ্যামিতিক অঙ্কন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৪\n\nজ্যামিতিক অঙ্কন (Geometric Drawing)\n\nকম্পাস ও রুলার ব্যবহার করে দেওয়া নির্দিষ্ট শর্ত অনুযায়ী যে চিত্র অঙ্কন করা হয়, তাহাই জ্যামিতিক অঙ্কন। উপপাদ্য প্রমাণের জন্য যে চিত্র অঙ্কন করা হয় তা যথাযথ (accurate) হওয়া খুব জরুরি নয়। সম্পাদ্যের ক্ষেত্রে জ্যামিতিক চিত্র অঙ্কন যথাযথ হওয়া খুবই প্রয়োজন।\n\nএ অধ্যায় শেষে শিক্ষার্থীরা -\n- প্রদত্ত তথ্য ও উপাত্তের ভিত্তিতে ত্রিভুজ অঙ্কন এবং অঙ্কনের যর্থার্থতা যাচাই করতে পারবে;\n- প্রদত্ত তথ্য ও উপাত্তের ভিত্তিতে বৃত্ত অঙ্কন এবং অঙ্কনের যর্থার্থতা যাচাই করতে পারবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "ত্রিভুজসংক্রান্ত কতিপয় সম্পাদ্য",
+      "chunk_type": "theory",
+      "content_markdown": "ত্রিভুজসংক্রান্ত কতিপয় সম্পাদ্য\n\n**সম্পাদ্য ১.** ত্রিভুজের ভূমি, ভূমিসংলগ্ন একটি কোণ ও উচ্চতা দেওয়া আছে, ত্রিভুজটি অঙ্কন করো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "মনে করি, কোনো ত্রিভুজের ভূমি $a$, উচ্চতা $h$ এবং ভূমিসংলগ্ন একটি কোণ $x$ দেওয়া আছে। ত্রিভুজটি অঙ্কন করতে হবে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**অঙ্কন:**\n\nধাপ ১. যেকোনো রেখা $BD$ থেকে $BC = a$ অংশ কেটে নিই।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ২. $B$ বিন্দুতে $BC$ এর উপর লম্ব $BP$ আঁকি। $BP$ থেকে $BM = h$ কেটে নিই।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ৩. $M$ বিন্দুতে $MN \\parallel BC$ অঙ্কন করি।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_geom_1",
+      "caption": "ত্রিভুজ অঙ্কনের সাধারণ ও প্রাথমিক চিত্র",
+      "box_2d": [
+        583,
+        622,
+        722,
+        835
+      ]
+    },
+    {
+      "figure_id": "fig_geom_2",
+      "caption": "ধাপ ১ এর চিত্র",
+      "box_2d": [
+        811,
+        230,
+        881,
+        421
+      ]
+    },
+    {
+      "figure_id": "fig_geom_3",
+      "caption": "ধাপ ২ ও ৩ এর চিত্র",
+      "box_2d": [
+        794,
+        622,
+        946,
+        835
+      ]
+    }
+  ]
+}

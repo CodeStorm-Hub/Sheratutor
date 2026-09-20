@@ -1,0 +1,41 @@
+{
+  "printed_page_no": 76,
+  "pdf_page_no": 81,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সুতরাং $AF = FD$ [প্রমাণিত]",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১২",
+      "section_title": "টলেমির উপপাদ্য",
+      "chunk_type": "theory",
+      "content_markdown": "উপপাদ্য ১২ (টলেমির উপপাদ্য)। বৃত্তে অন্তর্লিখিত কোনো চতুর্ভুজের কর্ণদ্বয়ের অন্তর্গত আয়তক্ষেত্রের ক্ষেত্রফল ঐ চতুর্ভুজের বিপরীত বাহুদ্বয়ের অন্তর্গত আয়তক্ষেত্রদ্বয়ের ক্ষেত্রফলের সমষ্টির সমান।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ নির্বচন: মনে করি বৃত্তে অন্তর্লিখিত $ABCD$ চতুর্ভুজের বিপরীত বাহুগুলো যথাক্রমে $AB$ ও $CD$ এবং $BC$ ও $AD$। $AC$ এবং $BD$ চতুর্ভুজটির দুইটি কর্ণ। প্রমাণ করতে হবে যে, $AC \\cdot BD = AB \\cdot CD + BC \\cdot AD$।\n\nপ্রমাণ: $\\angle BAC$ কে $\\angle DAC$ থেকে ছোট ধরে নিয়ে $A$ বিন্দুতে $AD$ রেখাংশের সাথে $\\angle BAC$ এর সমান করে $\\angle DAP$ আঁকি যেন $AP$ রেখা $BD$ কর্ণকে $P$ বিন্দুতে ছেদ করে।\n\nঅঙ্কন অনুসারে $\\angle BAC = \\angle DAP$|\n\nউভয়পক্ষে $\\angle CAP$ যোগ করে পাই,\n$$\\angle BAC + \\angle CAP = \\angle DAP + \\angle CAP$$ অর্থাৎ, $\\angle BAP = \\label{angle} \\angle CAD$\n\nএখন $\\triangle ABP$ ও $\\triangle ACD$ এর মধ্যে\n$\\angle BAP = \\angle CAD$ এবং $\\angle ABD = \\angle ACD$ [একই বৃত্তাংশস্থিত কোণ সমান বলে]\nএবং অবশিষ্ট $\\angle APB = $ অবশিষ্ট $\\angle ADC$|\n\n$\\therefore \\triangle ABP$ ও $\\triangle ACD$ সদৃশকোণী।\n$$\\therefore \\frac{BP}{CD} = \\frac{AB}{AC}$$\nঅর্থাৎ, $AC \\cdot BP = AB \\cdot CD \\cdots \\cdots (1)$\n\nআবার, $\\triangle ABC$ ও $\\triangle APD$ এর মধ্যে\n$\\angle BAC = \\angle PAD$ [অঙ্কন অনুসারে]\n$\\angle ADP = \\angle ACB$ [একই বৃত্তাংশস্থিত কোণ সমান বলে]\nএবং অবশিষ্ট $\\angle ABC = $ অবশিষ্ট $\\angle APD$",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_circle_quadrilateral",
+      "caption": null,
+      "box_2d": [
+        183,
+        357,
+        401,
+        642
+      ]
+    }
+  ]
+}

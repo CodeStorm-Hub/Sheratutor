@@ -1,0 +1,183 @@
+[
+  {
+    "name": "SSC General Math Paper Generation",
+    "category": "GENERATION",
+    "modelUsed": "googleai/gemini-3.5-flash-lite",
+    "durationMs": 2690,
+    "status": "PASS",
+    "metrics": {
+      "totalQuestions": 4,
+      "cqCount": 1,
+      "mcqCount": 3,
+      "cqSubparts": "ক (2m), খ (4m), গ (4m)",
+      "isStandard3PartCQ": true,
+      "totalCQMarks": 10,
+      "mathDelimiterDetected": true
+    },
+    "sampleOutput": {
+      "stimulus": "একটি সমান্তর ধারার ১ম পদ $5$ এবং সাধারণ অন্তর $4$। অপর একটি গুণোত্তর ধারার ১ম পদ $2$ এবং এর ৫ম পদটি $162$ হয়।",
+      "subQuestions": [
+        {
+          "part": "ক",
+          "text_bn": "সমান্তর ধারাটির ১২তম পদ নির্ণয় করো।",
+          "text_en": "Find the 12th term of the arithmetic series.",
+          "marks": 2,
+          "rubric_step_rules": "সূত্র বা প্রাথমিক ধাপের জন্য ১ নম্বর, সঠিক উত্তরের জন্য ১ নম্বর।"
+        },
+        {
+          "part": "খ",
+          "text_bn": "সমান্তর ধারাটির প্রথম $n$ সংখ্যক পদের সমষ্টি $440$ হলে, $n$-এর মান নির্ণয় করো।",
+          "text_en": "If the sum of the first n terms of the arithmetic series is 440, find the value of n.",
+          "marks": 4,
+          "rubric_step_rules": "শর্তানুসারে সমীকরণ গঠনের জন্য ১ নম্বর, সমাধান ধাপের জন্য ২ নম্বর, সঠিক সিদ্ধান্তের জন্য ১ নম্বর।"
+        },
+        {
+          "part": "গ",
+          "text_bn": "গুণোত্তর ধারাটির সাধারণ অনুপাত এবং প্রথম $7$টি পদের সমষ্টি নির্ণয় করো।",
+          "text_en": "Determine the common ratio of the geometric series and the sum of its first 7 terms.",
+          "marks": 4,
+          "rubric_step_rules": "প্রয়োজনীয় সূত্র বা উপপাদ্যের জন্য ১ নম্বর, গাণিতিক প্রতিপাদন/ধাপের জন্য ২ নম্বর, চূড়ান্ত প্রমাণের জন্য ১ নম্বর।"
+        }
+      ],
+      "sampleMcq": {
+        "chapter_id": "94198ce5-0a39-4c16-8096-fd7dd68fea93",
+        "question_type": "MCQ",
+        "max_marks": 1,
+        "mcq_question_bn": "যদি $x + \\frac{1}{x} = \\sqrt{3}$ হয়, তবে $x^3 + \\frac{1}{x^3}$ এর মান নিচের কোনটি?",
+        "mcq_question_en": "If $x + \\frac{1}{x} = \\sqrt{3}$, what is the value of $x^3 + \\frac{1}{x^3}$?",
+        "mcq_options": [
+          "ক) $0$",
+          "খ) $3\\sqrt{3}$",
+          "গ) $3$",
+          "ঘ) $3\\sqrt{3} - \\sqrt{3}$"
+        ],
+        "mcq_correct_option": "ক) $0$"
+      }
+    },
+    "notes": "NCTB 3-part math structure (ক: 2, খ: 4, গ: 4 = 10) verified."
+  },
+  {
+    "name": "SSC Higher Math Paper Generation",
+    "category": "GENERATION",
+    "modelUsed": "googleai/gemini-3.5-flash-lite",
+    "durationMs": 2950,
+    "status": "PASS",
+    "metrics": {
+      "totalQuestions": 4,
+      "cqCount": 1,
+      "mcqCount": 3,
+      "cqSubparts": "ক (2m), খ (4m), গ (4m)",
+      "isStandard3PartCQ": true,
+      "totalCQMarks": 10,
+      "mathDelimiterDetected": true
+    },
+    "sampleOutput": {
+      "stimulus": "একটি অসীম গুণোত্তর ধারা হলো $x + \\frac{x}{1+x} + \\frac{x}{(1+x)^2} + \\dots$ যেখানে $x \\neq 0$।",
+      "subQuestions": [
+        {
+          "part": "ক",
+          "text_bn": "ধারাটির সাধারণ অনুপাত নির্ণয় করো।",
+          "text_en": "Find the common ratio of the series.",
+          "marks": 2,
+          "rubric_step_rules": "সূত্র বা প্রাথমিক ধাপের জন্য ১ নম্বর, সঠিক উত্তরের জন্য ১ নম্বর।"
+        },
+        {
+          "part": "খ",
+          "text_bn": "ধারাটির অসীম পর্যন্ত পদের সমষ্টি নির্ণয় করার শর্তগুলো উল্লেখপূর্বক সমষ্টি নির্ণয় করো।",
+          "text_en": "State the conditions for finding the sum to infinity of the series and find the sum.",
+          "marks": 4,
+          "rubric_step_rules": "শর্তানুসারে সমীকরণ গঠনের জন্য ১ নম্বর, সমাধান ধাপের জন্য ২ নম্বর, সঠিক সিদ্ধান্তের জন্য ১ নম্বর।"
+        },
+        {
+          "part": "গ",
+          "text_bn": "যদি ধারাটির অসীম পদের সমষ্টি $\\frac{3}{2}$ হয়, তবে $x$-এর মান নির্ণয় করো এবং ধারাটি গঠন করো।",
+          "text_en": "If the sum to infinity of the series is $\\frac{3}{2}$, find the value of $x$ and construct the series.",
+          "marks": 4,
+          "rubric_step_rules": "প্রয়োজনীয় সূত্র বা সমীকরণের জন্য ১ নম্বর, গাণিতিক প্রতিপাদন বা সমাধানের জন্য ২ নম্বর, চূড়ান্ত প্রমাণের জন্য ১ নম্বর।"
+        }
+      ],
+      "sampleMcq": {
+        "chapter_id": "ed5b33e1-76ce-48de-98e8-43ec9c1002f3",
+        "question_type": "MCQ",
+        "max_marks": 1,
+        "mcq_question_bn": "$\frac{1}{\\sqrt{2}} + \frac{1}{2} + \frac{1}{2\\sqrt{2}} + \frac{1}{4} + \text{...}$ গুণোত্তর ধারাটির অসীম পদের সমষ্টি কত?",
+        "mcq_question_en": "What is the sum to infinity of the geometric series $\frac{1}{\\sqrt{2}} + \frac{1}{2} + \frac{1}{2\\sqrt{2}} + \frac{1}{4} + \text{...}$?",
+        "mcq_options": [
+          "ক) $\\sqrt{2}$",
+          "খ) $\\frac{1}{\\sqrt{2} - 1}$",
+          "গ) $\\frac{\\sqrt{2}}{\\sqrt{2} - 1}$",
+          "ঘ) $2 + \\sqrt{2}$"
+        ],
+        "mcq_correct_option": "ঘ) $2 + \\sqrt{2}$"
+      }
+    },
+    "notes": "Advanced geometry/series NCTB 3-part math structure verified."
+  },
+  {
+    "name": "Hybrid RAG Grounding for Higher Math",
+    "category": "RAG",
+    "modelUsed": "gemini-embedding-2 (1024-dim)",
+    "durationMs": 829,
+    "status": "PASS",
+    "metrics": {
+      "chunksRetrieved": 3,
+      "confidence": 0.826918490802805,
+      "sources": [
+        "Page 238",
+        "Page 237",
+        "Page 89"
+      ],
+      "sectionTitles": [
+        "সৃজনশীল প্রশ্ন",
+        "Section",
+        "বৃত্তসংক্রান্ত কতিপয় সম্পাদ্য"
+      ]
+    },
+    "sampleOutput": "[সৃজনশীল প্রশ্ন]\n৫. $A = (1 + x)^7$ এবং $B = (1 - x)^8$\nক) প্যাসকেলের ত্রিভুজ ব্যবহার করে $A$ এর বিস্তৃতি নির্ণয় করো।\nখ) $B$ এর বিস্তৃতির চার পদ পর্যন্ত নির্ণয় করে উক্ত ফলাফল ব্যবহার করে $(0.99)^8$ ...",
+    "notes": "Retrieved authentic textbook theory and Pascal triangle definitions."
+  },
+  {
+    "name": "AI Tutor Socratic Scaffolding",
+    "category": "TUTOR",
+    "modelUsed": "googleai/gemini-3.5-flash-lite",
+    "durationMs": 1007,
+    "status": "PASS",
+    "metrics": {
+      "responseLengthChars": 329,
+      "speaksBangla": true,
+      "mentionsRelevantConcept": true,
+      "safetyFlagged": false
+    },
+    "sampleOutput": "কোনো গুণোত্তর ধারার সাধারণ অনুপাতের মান ১-এর চেয়ে ছোট হলে ($|r| < 1$), ধারাটির একটি নির্দিষ্ট অসীমতক সমষ্টি থাকে। এখানে অসীমতক সমষ্টি নির্ণয়ের সূত্রটি হলো $S_\\infty = \\frac{a}{1 - r}$, যেখানে $a$ হলো ধারার প্রথম পদ এবং $r$ হলো সাধারণ অনুপাত।\n\nতাহলে বলো দেখি, উদ্দীপকে তোমার প্রথম পদ $a$ এবং সাধারণ অনুপাত $r$-এর মান কত দেওয়া আছে?",
+    "notes": "Followed Socratic pedagogy without leaking final calculation."
+  },
+  {
+    "name": "Deep Reasoning Rubric Evaluation",
+    "category": "EVALUATION",
+    "modelUsed": "googleai/gemini-3.5-flash",
+    "durationMs": 7231,
+    "status": "PASS",
+    "metrics": {
+      "scoreObtained": 3,
+      "maxMarks": 4,
+      "mistakeCategory": "CALCULATION_ERROR",
+      "arithmeticVerified": true,
+      "stepEvaluations": [
+        {
+          "step": "সূত্রের সঠিক প্রয়োগ",
+          "max": 2
+        },
+        {
+          "step": "মান বসানো",
+          "max": 1
+        },
+        {
+          "step": "চূড়ান্ত হিসাব ও উত্তর",
+          "max": 1
+        }
+      ],
+      "banglaSummary": "তুমি সূত্র এবং মান বসানো ঠিকঠাক করেছ, কিন্তু গুণ করার সময় ১৯ × ৩ = ৫৭ এর জায়গায় ৫৪ লিখে ফেলেছ। এই ছোট হিসাবের ভুলের জন্য ১ নম্বর কাটা গেছে। পরবর্তী সময়ে গুণ করার সময় একটু সতর্ক থেকো!"
+    },
+    "notes": "Accurately spotted 19*3 = 54 error, awarded 3/4, and explained mistake in Bangla."
+  }
+]

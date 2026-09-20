@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 101,
+  "pdf_page_no": 106,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "শুদ্ধি পরীক্ষা: $x = 8$ হলে, বামপক্ষ $= 5 - 2 = 3$ এবং ডানপক্ষ $= 3$\n\nঅতএব, $x = 8$ প্রদত্ত সমীকরণের একটি মূল।\n\n$x = -5$ গ্রহণযোগ্য নয়, কেননা সমীকরণে $x = -5$ বসালে ঋণাত্মক সংখ্যার বর্গমূল আসে যা সংজ্ঞায়িত নয়।\n\n$\\therefore$ নির্ণেয় সমাধান $x = 8$\n\nমন্তব্য: এমনকি জটিল সংখ্যায় সমাধান বের করলেও $x = -5$ গ্রহণযোগ্য হয় না।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮। সমাধান কর: $\\sqrt{(x-1)(x-2)} + \\sqrt{(x-3)(x-4)} = \\sqrt{2}$\n\nসমাধান: $\\sqrt{(x-1)(x-2)} + \\sqrt{(x-3)(x-4)} = \\sqrt{2}$\n\nবা, $\\sqrt{x^2 - 3x + 2} - \\sqrt{2} = -\\sqrt{x^2 - 7x + 12}$\n\nবা, $x^2 - 3x + 2 - 2\\sqrt{2}\\sqrt{x^2 - 3x + 2} + 2 = x^2 - 7x + 12$ [বর্গ করে]\n\nবা, $\\sqrt{2x^2 - 6x + 4} = 2x - 4$\n\nবা, $2x^2 - 6x + 4 = (2x - 4)^2 = 4x^2 - 16x + 16$ [বর্গ করে]\n\nবা, $x^2 - 5x + 6 = 0$\n\nবা, $(x - 2)(x - 3) = 0$\n\n$\\therefore x = 2$ অথবা $x = 3$ ।\n\nশুদ্ধি পরীক্ষা: $x = 2$ হলে, বামপক্ষ $= \\sqrt{2} = $ ডানপক্ষ\n\n$x = 3$ হলে, বামপক্ষ $= \\sqrt{2} = $ ডানপক্ষ\n\n$\\therefore$ নির্ণেয় সমাধান $x = 2, 3$ ।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯। সমাধান কর: $\\sqrt{x^2 - 6x + 15} - \\sqrt{x^2 - 6x + 13} = \\sqrt{10} - \\sqrt{8}$\n\nসমাধান: $\\sqrt{x^2 - 6x + 15} - \\sqrt{x^2 - 6x + 13} = \\sqrt{10} - \\sqrt{8}$\n\nএখন $x^2 - 6x + 13 = y$ ধরলে প্রদত্ত সমীকরণ হবে\n\n$\\sqrt{y + 2} - \\sqrt{y} = \\sqrt{10} - \\sqrt{8}$\n\nবা, $\\sqrt{y + 2} + \\sqrt{8} = \\sqrt{y} + \\sqrt{10}$\n\nবা, $y + 2 + 8 + 2\\sqrt{8y + 16} = y + 10 + 2\\sqrt{10y}$ [বর্গ করে]\n\nবা, $\\sqrt{8y + 16} = \\sqrt{10y}$\n\nবা, $8y + 16 = 10y$ [বর্গ করে]\n\nবা, $2y = 16$ বা, $y = 8$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

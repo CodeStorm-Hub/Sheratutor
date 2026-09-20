@@ -1,0 +1,83 @@
+{
+  "printed_page_no": 21,
+  "pdf_page_no": 26,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "অধ্যায় ১. সেট ও ফাংশন ২১",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $x$ এর মান নির্ণয় কর।\nখ) $n(B \\cap C')$ এবং $n(A' \\cap B)$ এর মান নির্ণয় কর।\nগ) $n(A \\cap B \\cap C')$ এর মান নির্ণয় কর।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "২০. তিনটি সেট $A$, $B$ এবং $C$ এমনভাবে দেওয়া আছে যেন, $A \\cap B = \\emptyset$, $A \\cap C = \\emptyset$ এবং $C \\subset B$। ভেনচিত্র অঙ্কন করে সেটগুলোর ব্যাখ্যা দাও।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "২১. দেওয়া আছে, $A = \\{x : 2 < x \\le 5, x \\in \\mathbb{R}\\}$ এবং $B = \\{x : 1 \\le x < 3, x \\in \\mathbb{R}\\}$।\nনিম্নলিখিত সেটগুলো সেট গঠন পদ্ধতিতে প্রকাশ কর:\nক) $A \\cap B$\nখ) $A' \\cap B'$\nগ) $A' \\cup B$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "২২. দেওয়া আছে $U = \\{x : x < 10, x \\in \\mathbb{R}\\}$, $A = \\{x : 1 < x \\le 4\\}$ এবং $B = \\{x : 3 \\le x < 6\\}$। নিচের সেটগুলো সেট গঠন পদ্ধতিতে প্রকাশ কর:\nক) $A \\cap B$\nখ) $A' \\cap B$\nগ) $A \\cap B'$\nঘ) $A' \\cap B'$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৩. নিম্নে প্রতি ক্ষেত্রে $A$ ও $B$ সেট দেওয়া আছে, $A \\cup B$ নির্ণয় কর এবং যাচাই কর যে $A \\subset (A \\cup B)$ এবং $B \\subset (A \\cup B)$।\nক) $A = \\{-2, -1, 0, 1, 2\\}$ এবং $B = \\{-3, 0, 3\\}$\nখ) $A = \\{x : x \\in \\mathbb{N}, x < 10$ এবং $x, 2$ এর গুণিতক$\\}$ এবং $B = \\{x : x \\in \\mathbb{N}, x < 10$ এবং $x, 3$ এর গুণিতক$\\}$",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৪. নিম্নের প্রতি ক্ষেত্রে $A \\cap B$ নির্ণয় কর এবং যাচাই কর যে, $(A \\cap B) \\subset A$ এবং $(A \\cap B) \\subset B$।\nক) $A = \\{0, 1, 2, 3\\}$, $B = \\{-1, 0, 2\\}$\nখ) $A = \\{a, b, c, d\\}$, $B = \\{b, x, c, y\\}$",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "২৫. বেগম রোকেয়া কলেজের ছাত্রীদের মধ্যে বিচিত্রা, সন্ধানী ও পূর্বাণী পত্রিকার পাঠ্যাভ্যাস সম্পর্কে পরিচালিত এক সমীক্ষায় দেখা গেল $60\\%$ ছাত্রী বিচিত্রা, $50\\%$ ছাত্রী সন্ধানী, $50\\%$ ছাত্রী পূর্বাণী, $30\\%$ ছাত্রী বিচিত্রা ও সন্ধানী, $30\\%$ ছাত্রী বিচিত্রা ও পূর্বাণী, $20\\%$ ছাত্রী সন্ধানী ও পূর্বাণী এবং $10\\%$ ছাত্রী তিনটি পত্রিকাই পড়ে।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) শতকরা কতজন ছাত্রী উক্ত পত্রিকা তিনটির কোনটিই পড়ে না?\nখ) শতকরা কতজন ছাত্রী উক্ত পত্রিকাগুলোর মধ্যে কেবল দুটি পড়ে?",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_set_venn",
+      "caption": null,
+      "box_2d": [
+        71,
+        377,
+        287,
+        667
+      ]
+    }
+  ]
+}

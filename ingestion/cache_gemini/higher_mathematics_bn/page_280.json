@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 280,
+  "pdf_page_no": 285,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$6. \\quad m(n\\underline{u}) = n(m\\underline{u}) = (mn)(\\underline{u})$$\n$$7. \\quad 0\\underline{u} = \\underline{0}$$\n$$8. \\quad 1\\underline{u} = \\underline{u}$$\n$$9. \\quad (-1)\\underline{u} = -\\underline{u}$$\n$$10. \\quad (m+n)\\underline{u} = m\\underline{u} + n\\underline{u}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: $m$ ও $n$ এর বিভিন্ন প্রকার সাংখ্যিক মান নিয়ে $\\underline{u}$ ভেক্টরের জন্য $(m+n)\\underline{u} = m\\underline{u} + n\\underline{u}$ সূত্রটি যাচাই করো।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "অবস্থান ভেক্টর",
+      "chunk_type": "theory",
+      "content_markdown": "সমতলস্থ কোনো নির্দিষ্ট বিন্দু $O$ সাপেক্ষে ঐ সমতলের যেকোনো $P$ বিন্দুর অবস্থান $\\overrightarrow{OP}$ দ্বারা নির্দিষ্ট করা যায়। $\\overrightarrow{OP}$ কে $O$ বিন্দু সাপেক্ষে $P$ বিন্দুর অবস্থান ভেক্টর বলা হয় এবং $O$ বিন্দুকে ভেক্টরের মূলবিন্দু (origin) বলা হয়।\n\nমনে করি, কোনো সমতলে $O$ একটি নির্দিষ্ট বিন্দু এবং একই সমতলে $A$ অপর একটি বিন্দু। $O, A$ যোগ করলে উৎপন্ন $\\overrightarrow{OA}$ ভেক্টর $O$ বিন্দুর পরিপ্রেক্ষিতে $A$ বিন্দুর অবস্থান ভেক্টর বলা হয়। অনুরূপভাবে, একই $O$ বিন্দুর প্রেক্ষিতে একই সমতলে অপর $B$ বিন্দুর অবস্থান ভেক্টর $\\overrightarrow{OB}$।\n\n$A, B$ যোগ করি। মনে করি, $\\overrightarrow{OA} = \\underline{a}, \\overrightarrow{OB} = \\underline{b}$\nতাহলে $\\overrightarrow{OA} + \\overrightarrow{AB} = \\overrightarrow{OB}$ অর্থাৎ $\\underline{a} + \\overrightarrow{AB} = \\underline{b}$\n$\\therefore \\overrightarrow{AB} = \\underline{b} - \\underline{a}$\n\nসুতরাং, দুটি বিন্দুর অবস্থান ভেক্টর জানা থাকলে তাদের সংযোজক রেখাংশ দ্বারা সূচিত ভেক্টর ঐ ভেক্টরদ্বয়ের প্রান্তবিন্দুর অবস্থান ভেক্টর বিয়োগ করে পাওয়া যাবে।\n\n**ড্রষ্টব্য:** মূলবিন্দু ভিন্ন ভিন্ন অবস্থানে থাকলে একই বিন্দুর অবস্থান ভেক্টর ভিন্ন ভিন্ন হতে পারে। কোনো নির্দিষ্ট প্রতিপাদ্য বিষয়ের সমাধানে এ বিষয়ের বিবেচনাধীন সকল বিন্দুর অবস্থান ভেক্টর একই মূলবিন্দুর সাপেক্ষে ধরা হয়।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12_op",
+      "caption": null,
+      "box_2d": [
+        431,
+        390,
+        483,
+        608
+      ]
+    },
+    {
+      "figure_id": "fig_12_oab",
+      "caption": null,
+      "box_2d": [
+        588,
+        388,
+        686,
+        609
+      ]
+    }
+  ]
+}

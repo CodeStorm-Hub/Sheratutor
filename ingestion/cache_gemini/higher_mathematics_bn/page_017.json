@@ -1,0 +1,48 @@
+{
+  "printed_page_no": 17,
+  "pdf_page_no": 22,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\n\nক) ধরি, সেট $J =$ যারা দৌড় পছন্দ করে, $S =$ যারা সাঁতার পছন্দ করে, $D =$ যারা নাচ পছন্দ করে। নিচে তথ্যগুলো ভেনচিত্রে দেখানো হলো।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) ভেনচিত্র হতে $J' = \\{ \\text{যে সব বালিকা দৌড় পছন্দ করে না} \\}$।\n\nঅর্থাৎ $n(J') = 35 - 15 = 20$ বা, $2x + x + 2 = 20$ বা, $3x = 18$ বা $x = 6$।\n\nগ) যে সব বালিকা দৌড় ও নাচ পছন্দ করে কিন্তু সাঁতার পছন্দ করে না: $J \\cap D \\cap S'$।\n\nঘ) ভেনচিত্রে $n(J \\cap D \\cap S') = y$ এবং দেওয়া আছে $n(J) = 15$।\n\n$$\\therefore y + 4 + 7 + 2 = 15 \\text{ বা } y = 2$$\n\nশুধু $2$ জন বালিকা দৌড় এবং নাচ পছন্দ করে কিন্তু সাঁতার পছন্দ করে না।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "উদাহরণ ১৭. $24$ জন ছাত্রের $18$ জন বাস্কেটবল খেলা পছন্দ করে, $12$ জন ভলিবল খেলা পছন্দ করে। দেওয়া আছে, $U = \\text{শ্রেণির ছাত্রের সেট}$, $B = \\text{বাস্কেটবল খেলা পছন্দ করে এমন ছাত্রের সেট}$, $V = \\text{ভলিবল খেলা পছন্দ করে এমন ছাত্রের সেট}$। মনে কর $n(B \\cap V) = x$ এবং ভেনচিত্রে নিচের তথ্যগুলো ব্যাখ্যা করো:\n\nক) $B \\cup V$ সেটের বর্ণনা দাও এবং $n(B \\cup V)$ কে $x$ এর মাধ্যমে প্রকাশ করো।\n\nখ) $x$ এর সম্ভাব্য ন্যূনতম মান নির্ণয় করো।\n\nগ) $x$ এর সম্ভাব্য বৃহত্তম মান নির্ণয় করো।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\n\nক) $B \\cup V$ হলো এমন সব ছাত্রের সেট যারা বাস্কেটবল বা ভলিবল খেলা পছন্দ করে।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1_17",
+      "caption": "ভেনচিত্র",
+      "box_2d": [
+        183,
+        426,
+        342,
+        606
+      ]
+    }
+  ]
+}

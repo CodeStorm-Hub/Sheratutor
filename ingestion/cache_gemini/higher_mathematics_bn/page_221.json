@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 221,
+  "pdf_page_no": 226,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "চ) যদি $xy^{a-1} = p, xy^{b-1} = q, xy^{c-1} = r$ হয়, তবে দেখাও যে,\n$$(b-c)\\log_k p + (c-a)\\log_k q + (a-b)\\log_k r = 0$$\nছ) যদি $\\frac{ab\\log_k(ab)}{a+b} = \\frac{bc\\log_k(bc)}{b+c} = \\frac{ca\\log_k(ca)}{c+a}$ হয়, তবে দেখাও যে,\n$a^a = b^b = c^c$\nজ) যদি $\\frac{x(y+z-x)}{\\log_k x} = \\frac{y(z+x-y)}{\\log_k y} = \\frac{z(x+y-z)}{\\log_k z}$ হয়, তবে দেখাও যে,\n$x^y y^x = y^z z^y = z^x x^z$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৩",
+      "section_title": "লেখচিত্র অঙ্কন করো।",
+      "chunk_type": "theory",
+      "content_markdown": "৩। লেখচিত্র অঙ্কন করো।\nক) $y = 3^x$\nখ) $y = -3^x$\nগ) $y = 3^{x+1}$\nঘ) $y = -3^{x+1}$\nঙ) $y = 3^{-x+1}$\nচ) $y = 3^{x-1}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৪",
+      "section_title": "নিচের ফাংশনের বিপরীত ফাংশন লেখো এবং লেখচিত্র অঙ্কন করে ডোমেন ও রেঞ্জ নির্ণয় করো।",
+      "chunk_type": "theory",
+      "content_markdown": "৪। নিচের ফাংশনের বিপরীত ফাংশন লেখো এবং লেখচিত্র অঙ্কন করে ডোমেন ও রেঞ্জ নির্ণয় করো।\nক) $y = 1 - 2^x$\nখ) $y = \\log_{10} x$\nগ) $y = x^2, x > 0$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৫। $f(x) = \\ln\\frac{1-x}{1+x}$ ফাংশনটির ডোমেন এবং রেঞ্জ নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৬",
+      "section_title": "ডোমেন এবং রেঞ্জ উল্লেখসহ লেখচিত্র অঙ্কন করো।",
+      "chunk_type": "theory",
+      "content_markdown": "৬। ডোমেন এবং রেঞ্জ উল্লেখসহ লেখচিত্র অঙ্কন করো।\nক) $f(x) = |x|$, যখন $-5 \\le x \\le 5$\nখ) $f(x) = x + |x|$, যখন $-2 \\le x \\le 2$\nগ) $f(x) = \\begin{cases} \\frac{|x|}{x}, & \\text{যখন } x \\neq 0 \\\\ 0, & \\text{যখন } x = 0 \\end{cases}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৭। দেওয়া আছে, $2^{2x} \\cdot 2^{y-1} = 64 \\cdots (i)$ এবং $6^x \\cdot \\frac{6^y}{3}^2 = 72 \\cdots (ii)$\nক) $(i)$ ও $(ii)$ কে $x$ ও $y$ চলক বিশিষ্ট সরল সমীকরণে পরিণত করো।\nখ) সমীকরণদ্বয় সমাধান করে শুদ্ধতা যাচাই করো।\nগ) $x$ ও $y$ এর মান যদি কোনো চতুর্ভুজের সন্নিহিত বাহুর দৈর্ঘ্য হয় (যেখানে বাহুদ্বয়ের অন্তর্ভুক্ত কোণ $90^\\circ$) তবে চতুর্ভুজটি আয়ত না বর্গ উল্লেখ কর এবং এর ক্ষেত্রফল ও কর্ণের দৈর্ঘ্য নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৮",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "৮। দেওয়া আছে, $y = 2^x$\nক) প্রদত্ত ফাংশনটির ডোমেন এবং রেঞ্জ নির্ণয় করো।\nখ) ফাংশনটির লেখচিত্র অঙ্কন কর এবং এর বৈশিষ্ট্যগুলো লেখো।\nগ) ফাংশনটির বিপরীত ফাংশন নির্ণয় করে এটি এক-এক কিনা তা নির্ধারণ কর এবং বিপরীত ফাংশনটির লেখচিত্র আঁকো।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

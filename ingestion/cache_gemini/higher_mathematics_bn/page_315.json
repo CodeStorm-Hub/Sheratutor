@@ -1,0 +1,93 @@
+{
+  "printed_page_no": 315,
+  "pdf_page_no": 320,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "($ii$) কমপক্ষে একটি $H$ পাওয়ার সম্ভাবনা = $0.75$\n\n($iii$) $HH$ একটি নমুনা বিন্দু।\n\nনিচের কোনটি সঠিক?\n\nক) $i, ii$\n\nখ) $i, iii$\n\nগ) $ii, iii$\n\nঘ) $i, ii, iii$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "নিচের তথ্য থেকে ৩ ও ৪ নম্বর প্রশ্নের উত্তর দাও:\n\nএকটি থলিতে নীল বল $12$ টি, সাদা বল $16$ টি এবং কালো বল $20$ টি আছে। দৈবভাবে একটা বল নেওয়া হলো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৩",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বলটি নীল হওয়ার সম্ভাবনা কত?\n\nক) $\\frac{1}{16}$\n\nখ) $\\frac{1}{12}$\n\nগ) $\\frac{1}{8}$\n\nঘ) $\\frac{1}{4}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৪",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বলটি সাদা না হওয়ার সম্ভাবনা কত?\n\nক) $\\frac{1}{3}$\n\nখ) $\\frac{2}{3}$\n\nগ) $\\frac{1}{16}$\n\nঘ) $\\frac{1}{48}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "সৃজনশীল প্রশ্ন",
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "৫। একটি ঝুড়িতে $8$ টি লাল, $10$ টি সাদা ও $7$ টি কালো মার্বেল আছে। দৈবভাবে একটি মার্বেল নেওয়া হলো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) কোনো ঘটনা A হলে, প্রমাণ করো যে, $0 \\le P(A) \\le 1$",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(খ) মার্বেলটি ($1$) লাল হওয়ার সম্ভাবনা এবং ($2$) সাদা না হওয়ার সম্ভাবনা নির্ণয় করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(গ) যদি প্রতিস্থাপন না করে একটি করে পরপর চারটি মার্বেল তুলে নেওয়া হয় তবে সবগুলো মার্বেল সাদা হওয়ার সম্ভাবনা নির্ণয় করো।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": "সংক্ষিপ্ত-উত্তর প্রশ্ন",
+      "chunk_type": "theory",
+      "content_markdown": "৬। (ক) একটা ছক্কা একবার নিক্ষেপ করা হলে জোড় সংখ্যা অথবা তিন দ্বারা বিভাজ্য সংখ্যা ওঠার সম্ভাবনা কত?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(খ) একটি নিরপেক্ষ মুদ্রা তিনবার নিক্ষেপ করা হলো। মুদ্রা তিনটিতে বড়জোড় $2T$ আসার সম্ভাবনা নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(গ) একটি নিরপেক্ষ ছক্কা ও একটি মুদ্রা একবার নিক্ষেপ করা হলো। ছক্কায় $5$ এবং মুদ্রায় $H$ আসার সম্ভাবনা নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(ঘ) $20$ টি টিকিটে $1$ থেকে $20$ পর্যন্ত ক্রমিক নম্বর দেওয়া আছে। টিকিটগুলো ভালোভাবে মিশিয়ে একটি টিকিট দৈবভাবে নেওয়া হলো। টিকিটটির ক্রমিক নম্বর $20$ এর গুণনীয়ক হওয়ার সম্ভাবনা নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

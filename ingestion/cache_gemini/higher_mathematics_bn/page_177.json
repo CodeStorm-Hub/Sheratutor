@@ -1,0 +1,34 @@
+{
+  "printed_page_no": 177,
+  "pdf_page_no": 182,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখন $\\triangle OPN$ ও $\\triangle OQN$ সমকোণী ত্রিভুজদ্বয়ের $\\angle PON = \\angle QON$, $\\angle ONP = \\angle ONQ$ এবং $ON$ উভয় ত্রিভুজের সাধারণ বাহু। সুতরাং ত্রিভুজদ্বয় সর্বসম।\n\n$\\therefore PN = QN$ এবং $OP = OQ$.\n\n$Q$ বিন্দুর অবস্থান চতুর্থ চতুর্ভাগে হওয়ায় এর কোটি ঋণাত্মক। সুতরাং $Q$ বিন্দুর স্থানাঙ্ক $Q(x, -y)$. $OQN$ সমকোণী ত্রিভুজের ক্ষেত্রে $ON = \\text{ভূমি}$, $QN = \\text{লম্ব}$ এবং $OQ = \\text{অতিভুজ} = r$ (ধরি)।\n\nতাহলে পূর্ববর্তী আলোচনা থেকে আমরা পাই,\n$$\\sin(-\\theta) = \\frac{\\text{লম্ব}}{\\text{অতিভুজ}} = \\frac{QN}{OQ} = \\frac{-y}{r} = -\\frac{PN}{OP} = -\\sin\\theta$$\n$$\\cos(-\\theta) = \\frac{\\text{ভূমি}}{\\text{অতিভুজ}} = \\frac{ON}{OQ} = \\frac{x}{r} = \\frac{ON}{OP} = \\cos\\theta$$\n$$\\tan(-\\theta) = \\frac{\\text{লম্ব}}{\\text{ভূমি}} = \\frac{QN}{ON} = \\frac{-y}{x} = -\\frac{PN}{ON} = -\\tan\\theta$$\n\nএকইভাবে, $\\csc(-\\theta) = -\\csc\\theta$, $\\sec(-\\theta) = \\sec\\theta$, $\\cot(-\\theta) = -\\cot\\theta$\n\n**মন্ত্রণালয়:** যেকোনো কোণ $\\theta$ এর জন্য উপরিউক্ত সম্পর্কগুলো প্রযোজ্য।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "**উদাহরণ ১৭.**\n$\\sin\\left(-\\frac{\\pi}{6}\\right) = -\\sin\\left(\\frac{\\pi}{6}\\right)$, $\\cos\\left(-\\frac{\\pi}{4}\\right) = \\cos\\left(\\frac{\\pi}{4}\\right)$, $\\tan\\left(-\\frac{\\pi}{4}\\right) = -\\tan\\left(\\frac{\\pi}{4}\\right)$,\n$\\csc\\left(-\\frac{\\pi}{3}\\right) = -\\csc\\left(\\frac{\\pi}{3}\\right)$, $\\sec\\left(-\\frac{\\pi}{3}\\right) = \\sec\\left(\\frac{\\pi}{3}\\right)$, $\\cot\\left(-\\frac{\\pi}{6}\\right) = -\\cot\\left(\\frac{\\pi}{6}\\right)$.\n\n**$\\left(\\frac{\\pi}{2} - \\theta\\right)$ কোণ বা পূরক কোণের ত্রিকোণমিতিক অনুপাতসমূহ $\\left(0 < \\theta < \\frac{\\pi}{2}\\right)$:**\n\nধরি, কোনো ঘূর্ণায়মান রশ্মি $OA$ তার আদি অবস্থান $OX$ থেকে ঘড়ির কাঁটার বিপরীত দিকে ঘুরে প্রথম চতুর্ভাগে $\\angle XOA = \\theta$ কোণ উৎপন্ন করে। আবার অপর একটি রশ্মি $OA'$ আদি অবস্থান $OX$ থেকে একইদিকে ঘুরে $\\angle XOY = \\frac{\\pi}{2}$ কোণ উৎপন্ন করার পর $OY$ অবস্থান থেকে ঘড়ির কাঁটার দিকে ঘুরে...",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_trig_177",
+      "caption": null,
+      "box_2d": [
+        89,
+        340,
+        310,
+        661
+      ]
+    }
+  ]
+}

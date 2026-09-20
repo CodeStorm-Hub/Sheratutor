@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 282,
+  "pdf_page_no": 287,
+  "chapter_no": 12,
+  "chapter_title": "সমতলীয় ভেক্টর",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান:\n\n(ক) $\\vec{AC} = \\vec{AD} + \\vec{DC} = \\vec{AD} + \\vec{AB}$\n\nআবার, $\\vec{AB} + \\vec{BD} = \\vec{AD}$ বা, $\\vec{BD} = \\vec{AD} - \\vec{AB}$\n\n(খ) যেহেতু সামান্তরিকের কর্ণদ্বয় পরস্পর সমদ্বিখণ্ডিত হয়,\n$$\\vec{AB} = \\vec{AO} + \\vec{OB} = \\frac{1}{2}\\vec{AC} + \\frac{1}{2}\\vec{DB} = \\frac{1}{2}\\vec{AC} - \\frac{1}{2}\\vec{BD}$$\n\nএবং $\\vec{AD} = \\vec{AO} + \\vec{OD} = \\frac{1}{2}\\vec{AC} + \\frac{1}{2}\\vec{BD}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "উদাহরণ ৩. ভেকਟਰের সাহায্যে প্রমাণ করো যে, ত্রিভুজের যেকোনো দুই বাহুর মধ্যবিন্দুদ্বয়ের সংযোজক রেখাংশ ঐ ত্রিভুজের তৃতীয় বাহুর সমান্তরাল ও তার অর্ধেক।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: মনে করি, $ABC$ ত্রিভুজের $AB$ ও $AC$ বাহुদ্বয়ের মধ্যবিন্দু যথাক্রমে $D$ ও $E$। $D$ ও $E$ যোগ করি। প্রমাণ করতে হবে যে, $DE \\parallel BC$ এবং $DE = \\frac{1}{2}BC$।\n\nভেক্টর বিয়োগের ত্রিভুজবিধি অনুসারে, $\\vec{AE} - \\vec{AD} = \\vec{DE} \\dots\\dots (1)$\n\nএবং $\\vec{AC} - \\vec{AB} = \\vec{BC}$\n\nकिन्तु $\\vec{AC} = 2\\vec{AE}, \\vec{AB} = 2\\vec{AD}$ [ $\\because D, E$ বিন্দু যথাক্রমে $AB$ ও $AC$ এর মধ্যবিন্দু]\n\n$\\therefore \\vec{AC} - \\vec{AB} = \\vec{BC}$ থেকে পাই\n\n$2\\vec{AE} - 2\\vec{AD} = \\vec{BC}$, অর্থাৎ $2(\\vec{AE} - \\vec{AD}) = \\vec{BC}$\n\n$\\therefore 2\\vec{DE} = \\vec{BC}$ [(1) হতে]\n\n$\\therefore \\vec{DE} = \\frac{1}{2}\\vec{BC}$\n\nএবং $|\\vec{DE}| = \\frac{1}{2}|\\vec{BC}|$ বা $DE = \\frac{1}{2}BC$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_12_1",
+      "caption": null,
+      "box_2d": [
+        75,
+        361,
+        203,
+        633
+      ]
+    },
+    {
+      "figure_id": "fig_12_2",
+      "caption": null,
+      "box_2d": [
+        560,
+        390,
+        672,
+        608
+      ]
+    }
+  ]
+}

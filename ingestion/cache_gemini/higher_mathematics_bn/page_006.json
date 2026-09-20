@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 6,
+  "pdf_page_no": 11,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ: আগের পৃষ্ঠার উদাহরণের সেটগুলোকে ভেন চিত্রে দেখাও।",
+      "activity_tag": "কাজ"
+    },
+    {
+      "section_no": null,
+      "section_title": "নিশ্ছেদ সেট (Disjoint Set)",
+      "chunk_type": "theory",
+      "content_markdown": "নিশ্ছেদ সেট (Disjoint Set)\n\nযদি $A$ ও $B$ সেট এমন হয় যে $A \bigcap B = \text{Ø}$, তবে $A$ ও $B$ কে নিশ্ছেদ সেট বলা হয়।\n\nউদাহরণ ৯। $A = \\{x : x \text{ ধনাত্মক পূর্ণসংখ্যা}\\}$ এবং $B = \\{x : x \text{ ঋণাত্মক পূর্ণসংখ্যা}\\}$ হলে $A$ ও $B$ সেটদ্বয় নিশ্ছেদ, কেননা $A \bigcap B = \text{Ø}$।\n\nউদাহরণ ১০। $A = \\{x : x \ni \text{R এবং } 0 \neq x \neq 2\\}$ এবং $B = \\{x : x \ni N \text{ এবং } 0 \neq x \neq 2\\}$ হলে $B \ni A, A \bigcup B = A, A \bigcap B = B = \\{1, 2\\}$।\n\nউদাহরণ ১১। $A = \\{x : x \ni \text{R এবং } 1 \neq x \neq 2\\}$ এবং $B = \\{x : x \ni \text{R এবং } 0 < x < 1\\}$ হলে, $A \bigcup B = \\{x : x \ni \text{R এবং } 0 < x \neq 2\\}$ এবং $A \bigcap B = \text{Ø}$ অর্থাৎ $A$ ও $B$ নিশ্ছেদ।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": "কার্তেসীয় গুণজসেট (Cartesian Product Set)",
+      "chunk_type": "theory",
+      "content_markdown": "কার্তেসীয় গুণজসেট (Cartesian Product Set)\n\nদুটি সেট $A$ এবং $B$ এর কার্তেসীয় গুণজ $A \times B = \\{(x, y) : x \ni A \text{ এবং } y \ni B\\}$।\n\nউদাহরণ ১২। $A = \\{1, 2\\}, B = \\{a, b, c\\}$ দুটি সেট। সুতরাং এই দুটি সেটের কার্তেসীয় গুণজ সেট $A \times B = \\{(1, a), (1, b), (1, c), (2, a), (2, b), (2, c)\\}$।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": "সেট প্রক্রিয়ার কতিপয় প্রতিজ্ঞা",
+      "chunk_type": "theory",
+      "content_markdown": "সেট প্রক্রিয়ার কতিপয় প্রতিজ্ঞা\n\nএখানে প্রত্যেক ক্ষেত্রে $U$ সার্বিক সেট এবং $A, B, C$ সেটগুলো $U$ এর উপসেট।\n\nক) বিনিময়বিধি\n(১) $A \bigcup B = B \bigcup A$\n(২) $A \bigcap B = B \bigcap A$\n\nখ) সংযোগবিধি\n(১) $(A \bigcup B) \bigcup C = A \bigcup (B \bigcup C)$\n(২) $(A \bigcap B) \bigcap C = A \bigcap (B \bigcap C)$\n\nগ) বণ্টনবিধি\n(১) $A \bigcup (B \bigcap C) = (A \bigcup B) \bigcap (A \bigcup C)$\n(২) $A \bigcap (B \bigcup C) = (A \bigcap B) \bigcup (A \bigcap C)$\n\nঘ) ডি মরগ্যানের সূত্র\n(১) $(A \bigcup B)' = A' \bigcap B'$\n(২) $(A \bigcap B)' = A' \bigcup B'$\n\nঙ) অন্যান্য সূত্র\n(১) $A \bigcup A = A, A \bigcap A = A$\n(২) $A \bigcup \text{Ø} = A, A \bigcap \text{Ø} = \text{Ø}$\n(৩) $A \bigcup U = U, A \bigcap U = A$\n(৪) $A \ni B \rightrightarrows B' \ni A'$\n(৫) $A \ni B \rightrightarrows A \bigcup B = B$\n(৬) $A \ni B \rightrightarrows A \bigcap B = A$",
+      "activity_tag": null
+    }
+  ],
+  "figures": []
+}

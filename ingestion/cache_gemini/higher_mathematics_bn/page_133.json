@@ -1,0 +1,79 @@
+{
+  "printed_page_no": 133,
+  "pdf_page_no": 138,
+  "chapter_no": 6,
+  "chapter_title": "অসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "সমতলের অংশটুকুই প্রদত্ত অসমতার লেখচিত্র।",
+      "activity_tag": null
+    },
+    {
+      "section_no": "৬.৩",
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৬.৩",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "১",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$5x + 5 > 25$ অসমতাটির সমাধান সেট কোনটি?\n\n(ক) $S = \\{x \\in \\mathbb{R} : x > 4\\}$\n(খ) $S = \\{x \\in \\mathbb{R} : x < 4\\}$\n(গ) $S = \\{x \\in \\mathbb{R} : x \\le 4\\}$\n(ঘ) $S = \\{x \\in \\mathbb{R} : x \\ge 4\\$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "২",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "$x + y = -2$ সমীকরণটিতে $x$ এর কোন মানের জন্য $y = 0$ হবে?\n\n(ক) $2$\n(খ) $0$\n(গ) $4$\n(ঘ) $-2$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৩",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "নিচের প্রত্যেক অসমতার সমাধান সেটের লেখচিত্র অঙ্কন করো:\n\n(ক) $x - y > -10$\n(খ) $2x - y < 6$\n(গ) $3x - y \\ge 0$\n(ঘ) $3x - 2y \\le 12$\n(ঙ) $y < -2$\n(চ) $x \\ge 4$\n(ছ) $y > x + 2$\n(জ) $y < x + 2$\n(ঝ) $y \\ge 2x$\n(ঞ) $x + 3y < 0$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৪",
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "দুটি সংখ্যার ১ম সংখ্যাটির $3$ গুণ থেকে ২য় সংখ্যাটির $5$ গুণ বিয়োগ করলে $5$ অপেক্ষা বৃহত্তর হয়। আবার ১ম সংখ্যা থেকে ২য় সংখ্যার $3$ গুণ বিয়োগ করলে অনূর্ধ্ব $9$ হয়।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৪",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "(ক) উদ্দীপকের সমস্যাগুলোকে অসমতায় দেখাও।\n(খ) ১ম সংখ্যাটির $5$ গুণ, ১ম সংখ্যার দ্বিগুণ এবং $15$ এর সমষ্টি অপেক্ষা ছোটো হলে সংখ্যাটির সম্ভাব্য মান অসমতায় প্রকাশ করো।\n(গ) (ক) এ প্রাপ্ত অসমতা যুগলের সমাধান সেটের লেখচিত্র অঙ্কন করো।",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৫",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "একটি কলম, একটি রাবার ও একটি খাতার মূল্য $100$ টাকা। খাতার মূল্য দুটি কলমের মূল্যের থেকে বেশি। তিনটি কলমের মূল্য চারটি রাবারের থেকে বেশি এবং তিনটি রাবারের মূল্য একটি খাতার মূল্যের থেকে বেশি। যদি সকল মূল্যই পূর্ণ টাকায় হয় তাহলে প্রত্যেকটির মূল্য কত?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৬",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "তিনটি পূর্ণসংখ্যার গুণফল $720$ হলে সবচেয়ে ছোটো সংখ্যাটি কত বড়ো হতে পারে?",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": "৭",
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "একটি সমদ্বিবাহু ত্রিভুজের কোনো একটি কোণের সমদ্বিখণ্ডক দিয়ে ত্রিভুজকে দুটি সমদ্বিবাহু ত্রিভুজে বিভক্ত করা হলো। প্রথম সমদ্বিবাহু ত্রিভুজের একটি কোণ কত বড়ো হতে পারে? প্রথম সমদ্বিবাহু ত্রিভুজের একটি কোণ কত ছোটো হতে পারে?",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

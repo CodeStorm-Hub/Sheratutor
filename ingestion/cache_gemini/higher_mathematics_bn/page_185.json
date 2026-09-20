@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 185,
+  "pdf_page_no": 190,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "খ) $\\cos\\left(\\frac{19\\pi}{3}\\right) = \\cos\\left(6\\pi + \\frac{\\pi}{3}\\right) = \\cos\\left(12 \\times \\frac{\\pi}{2} + \\frac{\\pi}{3}\\right)$\n\nএখানে $n = 12$ এবং $\\frac{19\\pi}{3}$ প্রথম চতুর্ভাগে অবস্থিত।\n\n$\\therefore \\cos\\left(\\frac{19\\pi}{3}\\right) = \\cos\\frac{\\pi}{3} = \\frac{1}{2}$\n\nগ) $\\tan\\left(\\frac{11\\pi}{6}\\right) = \\tan\\left(2\\pi - \\frac{\\pi}{6}\\right) = \\tan\\left(4 \\times \\frac{\\pi}{2} - \\frac{\\pi}{6}\\right)$\n\nএখানে $n = 4$ এবং $\\frac{11\\pi}{6}$ চতুর্থ চতুর্ভাগে অবস্থিত।\n\n$\\therefore \\tan\\left(\\frac{11\\pi}{6}\\right) = -\\tan\\frac{\\pi}{6} = -\\frac{1}{\\sqrt{3}}$\n\nঘ) $\\cot\\left(\\theta - \\frac{9\\pi}{2}\\right) = \\cot\\left\\{-\\left(\\frac{9\\pi}{2} - \\theta\\right)\\right\\} = -\\cot\\left(9 \\times \\frac{\\pi}{2} - \\theta\\right)$\n\nএখানে $n = 9$ এবং $\\frac{9\\pi}{2} - \\theta$ প্রথম চতুর্ভাগে অবস্থিত।\n\n$\\therefore \\cot\\left(\\theta - \\frac{9\\pi}{2}\\right) = -(\\tan\\theta) = -\\tan\\theta$\n\nঙ) $\\sec\\left(-\\frac{17\\pi}{2}\\right) = \\sec\\left(\\frac{17\\pi}{2}\\right) \\quad [\\because \\sec(-\\theta) = \\sec\\theta]$\n\n$= \\sec\\left(17 \\times \\frac{\\pi}{2} + 0\\right)$\n\nএখানে $n = 17$ এবং $\\frac{17\\pi}{2}$, $y$ অক্ষের উপরে অবস্থিত।\n\n$\\therefore \\sec\\left(-\\frac{17\\pi}{2}\\right) = \\csc 0$, অসংজ্ঞায়িত",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ২৪. মান নির্ণয় করো:\n$$\\sin\\frac{11}{90}\\pi + \\cos\\frac{1}{30}\\pi + \\sin\\frac{101}{90}\\pi + \\cos\\frac{31}{30}\\pi + \\cos\\frac{5}{3}\\pi$$\n\nসমাধান:\n$$\\sin\\frac{11}{90}\\pi + \\cos\\frac{1}{30}\\pi + \\sin\\frac{101}{90}\\pi + \\cos\\frac{31}{30}\\pi + \\cos\\frac{5}{3}\\pi$$\n$$= \\sin\\frac{22}{180}\\pi + \\cos\\frac{6}{180}\\pi + \\sin\\frac{202}{180}\\pi + \\cos\\frac{186}{180}\\pi + \\cos\\frac{300}{180}\\pi$$\n$$= \\sin\\frac{22}{180}\\pi + \\cos\\frac{6}{180}\\pi + \\sin(\\pi + \\frac{22}{180}\\pi) + \\cos(\\pi + \\frac{6}{180}\\pi) + \\cos\\left(2\\pi - \\frac{60}{180}\\pi\\right)$$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

@@ -1,0 +1,34 @@
+{
+  "printed_page_no": 88,
+  "pdf_page_no": 93,
+  "chapter_no": 4,
+  "chapter_title": "জ্যামিতিক অঙ্কন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ধাপ ১. যেকোনো রেখা $BX$ থেকে $BC = 7.5$ সে.মি. কেটে নিই।\n\nধাপ ২. $\\angle YBC = 45^\\circ$ অঙ্কন করি।\n\nধাপ ৩. $BY$ রেখা থেকে $BD = 2.5$ সে.মি. কেটে নিই।\n\nধাপ ৪. $C, D$ যোগ করি।\n\nধাপ ৫. $CD$ এর ওপর $RS$ লম্বদ্বিখণ্ডক আঁকি যেন $BY$ কে $A$ বিন্দুতে ছেদ করে।\n\nধাপ ৬. $A$ ও $C$ যোগ করি। তাহলে $\\triangle ABC$-ই নির্ণেয় ত্রিভুজ।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\n\nক) একটি ত্রিভুজের পরিসীমা এবং ভূমিসংলগ্ন কোণদ্বয় দেওয়া আছে। ত্রিভুজটি অঙ্কন করো।\n\nখ) ত্রিভুজের ভূমি $BC = 4.6$ সে.মি., $\\angle B = 45^\\circ$ এবং $AB + CA = 8.2$ সে.মি. দেওয়া আছে। ত্রিভুজটি আঁকতে হবে।\n\nগ) সমকোণী ত্রিভুজের দুটি বাহুর দৈর্ঘ্য যথাক্রমে $3$ সে.মি. এবং $4$ সে.মি. দেওয়া আছে। অতিভুজ নির্ণয় করে ত্রিভুজটি আঁকতে হবে।\n\nঘ) $\\triangle ABC$ এর $BC = 4.5$ সে.মি., $\\angle B = 45^\\circ$ এবং $AB - AC = 2.5$ সে.মি. দেওয়া আছে। $\\triangle ABC$ টি অঙ্কন করতে হবে।\n\nঙ) $\\triangle ABC$ এর পরিসীমা $12$ সে.মি., $\\angle B = 60^\\circ$ এবং $\\angle C = 45^\\circ$ দেওয়া আছে। $\\triangle ABC$ টি আঁকতে হবে।",
+      "activity_tag": "কাজ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_4_1",
+      "caption": null,
+      "box_2d": [
+        75,
+        323,
+        362,
+        679
+      ]
+    }
+  ]
+}

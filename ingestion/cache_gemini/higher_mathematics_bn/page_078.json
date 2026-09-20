@@ -1,0 +1,51 @@
+{
+  "printed_page_no": 78,
+  "pdf_page_no": 83,
+  "chapter_no": 3,
+  "chapter_title": "জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $\\triangle PQE$ এ $\\angle PQE = 90^\\circ$ এবং $PE$ অতিভুজ\n\n$$\\therefore PE^2 = PQ^2 + QE^2 \\dots \\dots (1)$$\n\nআবার, $\\triangle PQR$ এ $\\angle PQR = 90^\\circ$ এবং $PR$ অতিভুজ\n\n$$\\therefore PR^2 = PQ^2 + QR^2$$\n\n$$\\text{বা, } PR^2 = PQ^2 + (QE + RE)^2$$\n\n$$\\text{বা, } PR^2 = PQ^2 + QE^2 + RE^2 + 2QE \\cdot RE$$\n\n$$\\text{বা, } PR^2 = PQ^2 + QE^2 + QE^2 + 2RE \\cdot RE \\; [\\because QE = RE]$$\n\n$$\\text{বা, } PR^2 = PE^2 + QE^2 + 2RE^2 \\; [(1) \\text{ নং এর সাহায্যে}]$$\n\n$$\\therefore PR^2 = PE^2 + QE^2 + 2RE^2 \\quad [\\text{প্রমাণিত}]$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "গ) $\\triangle PQR$ এ $\\angle PQR = 90^\\circ$ এবং $QF \\perp PR$। প্রমাণ করতে হবে যে, $QF^2 = PF \\cdot RF$।",
+      "activity_tag": "সৃজনশীল প্রশ্ন"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "প্রমাণ: $\\angle PQR = 90^\\circ$\n\n$$\\therefore \\angle PQF + \\angle FQR = 90^\\circ \\dots \\dots (1)$$\n\nআবার, $QF \\perp PR$ বলে $\\angle PFQ = \\angle QFR = 90^\\circ$\n\n$\\triangle PQF$ এ $\\angle PFQ + \\angle PQF + \\angle QPF = 180^\\circ$\n\n$$\\text{বা, } 90^\\circ + \\angle PQF + \\angle QPF = 180^\\circ$$\n\n$$\\therefore \\angle PQF + \\angle QPF = 90^\\circ \\dots \\dots (2)$$\n\n(1) নং এবং (2) নং হতে পাই",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_3_1",
+      "caption": null,
+      "box_2d": [
+        98,
+        351,
+        260,
+        715
+      ]
+    },
+    {
+      "figure_id": "fig_3_2",
+      "caption": null,
+      "box_2d": [
+        576,
+        356,
+        735,
+        703
+      ]
+    }
+  ]
+}

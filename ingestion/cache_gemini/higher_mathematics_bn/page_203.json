@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 203,
+  "pdf_page_no": 208,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "অধ্যায় ৯. সূচকীয় ও লগারিদমীয় ফাংশন \n\n২০৩\n\nএখন, $b^2 = ac$ বা, $b^2 = b^{\\frac{y}{x}} \\cdot b^{\\frac{y}{z}} = b^{\\frac{y}{x} + \\frac{y}{z}}$\n\nবা, $2 = \\frac{y}{x} + \\frac{y}{z}$\n\nবা, $\\frac{2}{y} = \\frac{1}{x} + \\frac{1}{z}$ [উভয়পক্ষকে $y$ দ্বারা ভাগ করে]\n\n$\\therefore \\frac{1}{x} + \\frac{1}{z} = \\frac{2}{y}$ (প্রমাণিত)",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৩. প্রমাণ কর যে, $\\left(\\frac{x^b}{x^c}\\right)^{b+c} \\times \\left(\\frac{x^c}{x^a}\\right)^{c+a} \\times \\left(\\frac{x^a}{x^b}\\right)^{a+b} = 1$.\n\nসমাধান: বামপক্ষ $= \\left(\\frac{x^b}{x^c}\\right)^{b+c} \\times \\left(\\frac{x^c}{x^a}\\right)^{c+a} \\times \\left(\\frac{x^a}{x^b}\\right)^{a+b}$\n\n$= (x^{b-c})^{b+c} \\times (x^{c-a})^{c+a} \\times (x^{a-b})^{a+b}$\n\n$= x^{b^2-c^2} \\times x^{c^2-a^2} \\times x^{a^2-b^2}$\n\n$= x^{b^2-c^2+c^2-a^2+a^2-b^2}$\n\n$= x^0 = 1 = \\text{ডানপক্ষ}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৪. যদি $a^{\\frac{1}{x}} = b^{\\frac{1}{y}} = c^{\\frac{1}{z}}$ এবং $abc = 1$ হয়, তবে দেখাও যে, $x + y + z = 0$.\n\nসমাধান: ধরি, $a^{\\frac{1}{x}} = b^{\\frac{1}{y}} = c^{\\frac{1}{z}} = k$\n\nতাহলে পাই, $a = k^x, b = k^y, c = k^z$\n\n$\\therefore abc = k^x \\cdot k^y \\cdot k^z = k^{x+y+z}$\n\nদেওয়া আছে, $abc = 1$\n\n$\\therefore k^{x+y+z} = 1 = k^0$\n\n$\\therefore x + y + z = 0$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১৫. সরল কর $\\frac{1}{1 + a^{y-z} + a^{y-x}} + \\frac{1}{1 + a^{z-x} + a^{z-y}} + \\frac{1}{1 + a^{x-y} + a^{x-z}}$\n\nসমাধান: এখানে, $\\frac{1}{1 + a^{y-z} + a^{y-x}} = \\frac{a^{-y}}{a^{-y}(1 + a^{y-z} + a^{y-x})} = \\frac{a^{-y}}{a^{-y} + a^{-z} + a^{-x}}$\n\nএকইভাবে, $\\frac{1}{1 + a^{z-x} + a^{z-y}} = \\frac{a^{-z}}{a^{-z}(1 + a^{z-x} + a^{z-y})} = \\frac{a^{-z}}{a^{-z} + a^{-x} + a^{-y}}$\n\nএবং $\\frac{1}{1 + a^{x-y} + a^{x-z}} = \\frac{a^{-x}}{a^{-x} + a^{-y} + a^{-z}}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

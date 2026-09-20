@@ -1,0 +1,55 @@
+{
+  "printed_page_no": 216,
+  "pdf_page_no": 221,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "$$|x| = \\begin{cases} x, \\text{ যখন } x \\ge 0 \\\\ -x, \\text{ যখন } x < 0 \\end{cases}$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩২. $|0| = 0, |3| = 3, |-3| = -(-3) = 3$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": "পরমমান ফাংশন (Absolute Value Function)",
+      "chunk_type": "theory",
+      "content_markdown": "পরমমান ফাংশন (Absolute Value Function)\nযদি $x \\in \\mathbb{R}$ হয় তবে \n$$y = f(x) = |x| = \\begin{cases} x \\text{ যখন } x \\ge 0 \\\\ -x \\text{ যখন } x < 0 \\end{cases}$$\nকে পরমমান ফাংশন বলা হয়।\n$$\\therefore \\text{ ডোমেন } D_f = \\mathbb{R} \\text{ এবং রেঞ্জ } R_f = [0, \\infty)$$",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৩৩. $f(x) = e^{\\frac{-|x|}{2}}$ যখন $-1 < x < 0$ এর ডোমেন ও রেঞ্জ নির্ণয় করো।\n\nসমাধান: $f(x) = e^{\\frac{-|x|}{2}}$, $-1 < x < 0$\n\n$x$ এর মান যেহেতু $-1$ থেকে $0$ এর মধ্যে নির্দিষ্ট।\n\nসুতরাং ডোমেন $D_f = (-1, 0)$\n\nআবার $-1 < x < 0$ ব্যবধিতে $f(x) \\in (e^{\\frac{-1}{2}}, 1)$\n\nসুতরাং রেঞ্জ $f = (e^{\\frac{-1}{2}}, 1)$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": "ফাংশনের লেখচিত্র",
+      "chunk_type": "theory",
+      "content_markdown": "ফাংশনের লেখচিত্র\n\nকোনো সমতলে কোনো ফাংশনকে জ্যামিতিকভাবে উপস্থাপন করা গেলে ঐ ফাংশনকে চেনা যায়। ফাংশনের জ্যামিতিকভাবে এই উপস্থাপনকে ফাংশনের লেখচিত্র অঙ্কন করা হয়েছে বলা হয়। এখানে সূচক, লগারিদম ও পরমমান ফাংশনের লেখচিত্রের অঙ্কন পদ্ধতি নিয়ে আলোচনা করা হলো।\n\n(1) $y = f(x) = a^x$ এর লেখচিত্র অঙ্কন করো:\n\n(i) যখন $a > 1$ এবং $x$ যেকোনো ধনাত্মক বা ঋণাত্মক পূর্ণসংখ্যা তখন ফাংশন $f(x) = a^x$ সর্বদা ধনাত্মক।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_abs_graph",
+      "caption": "y = |x| এর লেখচিত্র",
+      "box_2d": [
+        193,
+        545,
+        439,
+        882
+      ]
+    }
+  ]
+}

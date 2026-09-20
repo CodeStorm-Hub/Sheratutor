@@ -1,0 +1,71 @@
+{
+  "printed_page_no": 7,
+  "pdf_page_no": 12,
+  "chapter_no": 1,
+  "chapter_title": "সেট ও ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "(৭) $A \\\\\textsubseteq A \\\\cup B$\n(৮) $A \\\\cap B \\\\subseteq A$\n(৯) $A \\\\setminus B = A \\\\cap B'$\n\n**বিনিময়বিধির প্রতিজ্ঞা দুটি যাচাইকরণ**\n\nনিচের বামের চিত্রে গাঢ় অংশটুকু $A \\\\cup B$ এবং $B \\\\cup A$ উভয় সেটই নির্দেশ করে। সুতরাং এক্ষেত্রে দেখা যাচ্ছে $A \\\\cup B = B \\\\cup A$। নিচের ডানের চিত্রে গাঢ় অংশটুকু $A \\\\cap B$ এবং $B \\\\cap A$ উভয় সেটই নির্দেশ করে। সুতরাং এক্ষেত্রে দেখা যাচ্ছে $A \\\\cap B = B \\\\cap A$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উপরে ভেনচিত্রের সাহায্যে যাচাই করা হয়েছে। এবার সুনির্দিষ্ট উদাহরণ দিয়ে দেখা যাক।\nমনে করি, $A = \\\\{1, 2, 4\\\\}$ এবং $B = \\\\{2, 3, 5\\\\}$ দুটি সেট।\nতাহলে, $A \\\\cup B = \\\\{1, 2, 4\\\\} \\\\cup \\\\{2, 3, 5\\\\} = \\\\{1, 2, 3, 4, 5\\\\}$।\nআবার, $B \\\\cup A = \\\\{2, 3, 5\\\\} \\\\cup \\\\{1, 2, 4\\\\} = \\\\{1, 2, 3, 4, 5\\\\}$।\nসুতরাং এক্ষেত্রে $A \\\\cup B = B \\\\cup A$।\nঅন্যদিকে, $A \\\\cap B = \\\\{1, 2, 4\\\\} \\\\cap \\\\{2, 3, 5\\\\} = \\\\{2\\\\}$\nএবং $B \\\\cap A = \\\\{2, 3, 5\\\\} \\\\cap \\\\{1, 2, 4\\\\} = \\\\{2\\\\}$।\nসুতরাং এক্ষেত্রে $A \\\\cap B = B \\\\cap A$।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "**সংযোগবিধির প্রতিজ্ঞা দুটির যাচাইকরণ**\n\nনিচের বামের চিত্রে গাঢ় অংশটুকু $A \\\\cup (B \\\\cup C)$ এবং $(A \\\\cup B) \\\\cup C$ উভয় সেটই নির্দেশ করে। সুতরাং এক্ষেত্রে $A \\\\cup (B \\\\cup C) = (A \\\\cup B) \\\\cup C$। নিচের ডানের চিত্রে গাঢ় অংশটুকু $A \\\\cap (B \\\\cap C)$ এবং $(A \\\\cap B) \\\\cap C$ উভয় সেটই নির্দেশ করে। সুতরাং এক্ষেত্রে $(A \\\\cap B) \\\\cap C = A \\\\cap (B \\\\cap C)$।\n\nউপরে ভেনচিত্রের সাহায্যে যাচাই করা হয়েছে। এবার সুনির্দিষ্ট উদাহরণ দিয়ে দেখা যাক।",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_1_1",
+      "caption": null,
+      "box_2d": [
+        263,
+        102,
+        393,
+        426
+      ]
+    },
+    {
+      "figure_id": "fig_1_2",
+      "caption": null,
+      "box_2d": [
+        263,
+        468,
+        393,
+        742
+      ]
+    },
+    {
+      "figure_id": "fig_1_3",
+      "caption": null,
+      "box_2d": [
+        761,
+        102,
+        924,
+        375
+      ]
+    },
+    {
+      "figure_id": "fig_1_4",
+      "caption": null,
+      "box_2d": [
+        761,
+        468,
+        924,
+        740
+      ]
+    }
+  ]
+}

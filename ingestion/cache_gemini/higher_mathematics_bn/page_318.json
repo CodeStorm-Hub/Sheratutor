@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 318,
+  "pdf_page_no": 323,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৫.১",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৫.১\n\n১. $-3, -\frac{3}{2}$\n\n২. $-1 + \frac{\\sqrt{10}}{2}, -1 - \frac{\\sqrt{10}}{2}$\n\n৩. $2 - \\sqrt{3}, 2 + \\sqrt{3}$\n\n৪. $\\frac{1}{4}(5 - \\sqrt{33}), \frac{1}{4}(5 + \\sqrt{33})$\n\n৫. $\\frac{1}{6}(-7 - \\sqrt{37}), \frac{1}{6}(-7 + \\sqrt{37})$\n\n৬. $\\frac{1}{6}(9 - \\sqrt{105}), \frac{1}{6}(9 + \\sqrt{105})$\n\n৭. $4, 4$\n\n৮. $\\frac{1}{4}(-7 - \\sqrt{57}), \frac{1}{4}(-7 + \\sqrt{57})$\n\n৯. $\\frac{1}{3}, 2$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৫.২",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৫.২\n\n১. $13$\n\n২. $\\frac{6}{5}$\n\n৩. $9$\n\n৪. $5$\n\n৫. $5$\n\n৬. $\\frac{9}{2}, -\\frac{9}{2}$\n\n৭. $1, 5$\n\n৮. $18$\n\n৯. $\\frac{25}{7}, -\\frac{1}{7}$\n\n১০. $-\\frac{3}{2}, -\\frac{9}{11}$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": "অনুশীলনী ৫.৩",
+      "chunk_type": "theory",
+      "content_markdown": "অনুশীলনী ৫.৩\n\n১. $2$\n\n২. $\\frac{7}{3}$\n\n৩. $6$\n\n৪. $5$\n\n৫. $2$\n\n৬. $\\frac{5}{2}$\n\n৭. $3$\n\n৮. $0$\n\n৯. $0, 2$\n\n১০. $-1, 0$\n\n১১. $-\\frac{1}{2}, \\frac{1}{2}$\n\n১২. $2, 3$",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

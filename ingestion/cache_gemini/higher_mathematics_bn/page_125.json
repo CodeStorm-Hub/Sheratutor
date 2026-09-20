@@ -1,0 +1,58 @@
+{
+  "printed_page_no": 125,
+  "pdf_page_no": 130,
+  "chapter_no": 6,
+  "chapter_title": "অসমতা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বা, $x > 3$\n\n$\\therefore$ নির্ণেয় সমাধান $x > 3$\n\nএখানে সমাধান সেট, $S = \\{x \\in R : x > 3\\}$\n\nসমাধান সেটটি নিচে অঙ্কিত সংখ্যারেখায় দেখানো হলো।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৮. সমাধান করো এবং সমাধান সেট সংখ্যারেখায় দেখাও: $x - 9 > 3x + 1$\n\nসমাধান: দেওয়া আছে, $x - 9 > 3x + 1$\n\nবা, $x - 9 + 9 > 3x + 1 + 9$\n\nবা, $x > 3x + 10$\n\nবা, $x - 3x > 3x + 10 - 3x$\n\nবা, $-2x > 10$\n\nবা, $\\frac{-2x}{-2} < \\frac{10}{-2}$ [উভয়পক্ষকে $-2$ দ্বারা ভাগ করায় অসমতার দিক পাল্টে গেছে]\n\nবা, $x < -5$\n\n$\\therefore$ নির্ণেয় সমাধান $x < -5$\n\nসমাধান সেটটি নিচে অঙ্কিত সংখ্যারেখায় দেখানো হলো।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "বিশেষ দ্রষ্টব্য: সমীকরণের সমাধান যেমন একটি সমীকরণ (সমতা) দ্বারা প্রকাশ পায়, তেমনি অসমতার সমাধান একটি অসমতা দ্বারা প্রকাশ পায়। অসমতার সমাধান সেট (সাধারণত) বাস্তব সংখ্যার অসীম উপসেট।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯. সমাধান করো: $a(x + b) < c, [a \\neq 0]$\n\nসমাধান: $a$ ধনাত্মক হলে, $\\frac{a(x + b)}{a} < \\frac{c}{a}$ [উভয়পক্ষকে $a$ দ্বারা ভাগ করে]\n\nবা, $x + b < \\frac{c}{a}$ বা, $x < \\frac{c}{a} - b$\n\n$a$ ঋণাত্মক হলে একই প্রক্রিয়ায় পাই, $\\frac{a(x + b)}{a} > \\frac{c}{a}$\n\nবা, $x + b > \\frac{c}{a}$ বা, $x > \\frac{c}{a} - b$\n\n$\\therefore$ নির্ণেয় সমাধান: (i) $x < \\frac{c}{a} - b$ যদি $a > 0$ হয়, (ii) $x > \\frac{c}{a} - b$ যদি $a < 0$ হয়।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_number_line_1",
+      "caption": "সংখ্যালেখায় সমাধান সেটের প্রদর্শন (x > 3)",
+      "box_2d": [
+        212,
+        224,
+        250,
+        771
+      ]
+    },
+    {
+      "figure_id": "fig_number_line_2",
+      "caption": "সংখ্যালেখায় সমাধান সেটের প্রদর্শন (x < -5)",
+      "box_2d": [
+        577,
+        203,
+        616,
+        799
+      ]
+    }
+  ]
+}

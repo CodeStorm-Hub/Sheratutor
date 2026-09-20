@@ -1,0 +1,37 @@
+{
+  "printed_page_no": 202,
+  "pdf_page_no": 207,
+  "chapter_no": 9,
+  "chapter_title": "সূচকীয় ও লগারিদমীয় ফাংশন",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাাহরণ ৯. যদি $a^x = b, b^y = c$ এবং $c^z = a$ হয়, তবে দেখাও যে, $xyz = 1$.\n\nসমাধান: প্রদত্ত শর্ত হতে, $b = a^x, c = b^y$ এবং $a = c^z$\n\nএখন, $b = a^x = (c^z)^x = c^{zx} = (b^y)^{zx} = b^{xyz}$\n\nবা, $b = b^{xyz}$ বা, $b^1 = b^{xyz}$\n\n$\therefore xyz = 1$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাাহরণ ১০. যদি $a^b = b^a$ হয়, তবে দেখাও যে, $\\left(\\frac{a}{b}\\right)^{\\frac{a}{b}} = a^{\\frac{a}{b} - 1}$ এবং এ থেকে প্রমাণ করো যে, $a = 2b$ হলে, $b = 2$\n\nসমাধান: দেওয়া আছে, $a^b = b^a$\n\n$\\therefore b = (a^b)^{\\frac{1}{a}} = (a)^{\\frac{b}{a}}$\n\nবামপক্ষ = $\\left(\\frac{a}{b}\\right)^{\\frac{a}{b}} = \\left(\\frac{a}{a^{\\frac{b}{a}}}\\right)^{\\frac{a}{b}} = \\left(a^1 \\cdot a^{-\\frac{b}{a}}\\right)^{\\frac{a}{b}}$\n\n$= a^{\\frac{a}{b} \\cdot a^{-1}} = a^{\\frac{a}{b} - 1} =$ ডানপক্ষ (প্রমাণিত)\n\nপুনরায়, $a = 2b$ হলে\n\n$\\left(\\frac{2b}{b}\\right)^{\\frac{2b}{b}} = (2b)^{\\frac{2b}{b} - 1}$\n\nবা, $(2)^2 = (2b)^{2 - 1}$ বা, $4 = 2b$\n\n$\therefore b = 2$ (প্রমাণিত)",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাাহরণ ১১. যদি $x^{x\\sqrt{x}} = (x\\sqrt{x})^x$ হয়, তবে $x$ এর মান নির্ণয় করো।\n\nসমাধান: দেওয়া আছে, $x^{x\\sqrt{x}} = (x\\sqrt{x})^x$\n\nবা, $(x^x)^{\\sqrt{x}} = \\left(x \\cdot x^{\\frac{1}{2}}\\right)^x = \\left(x^{1+\\frac{1}{2}}\\right)^x = \\left(x^{\\frac{3}{2}}\\right)^x = (x^x)^{\\frac{3}{2}}$\n\n$\\therefore (x^x)^{\\sqrt{x}} = (x^x)^{\\frac{3}{2}}$\n\nবা, $\\sqrt{x} = \\frac{3}{2}$ বা, $x = \\left(\\frac{3}{2}\\right)^2 = \\frac{9}{4}$\n\n$\\therefore x = \\frac{9}{4}$",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাাহরণ ১২. যদি $a^x = b^y = c^z$ এবং $b^2 = ac$ হয়, তবে প্রমাণ করো যে, $\\frac{1}{x} + \\frac{1}{z} = \\frac{2}{y}$\n\nসমাধান: দেওয়া আছে, $a^x = b^y$ বা, $a = b^{\\frac{y}{x}}$\n\nআবার, $c^z = b^y$ বা, $c = b^{\\frac{y}{z}}$",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}

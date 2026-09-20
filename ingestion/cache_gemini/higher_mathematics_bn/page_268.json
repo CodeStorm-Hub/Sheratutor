@@ -1,0 +1,90 @@
+{
+  "printed_page_no": 268,
+  "pdf_page_no": 273,
+  "chapter_no": 11,
+  "chapter_title": "স্থানাঙ্ক জ্যামিতি",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_stimulus",
+      "content_markdown": "$$A$$\n$$3$$\n$$5$$\n$$B$$ $$C$$\nত্রিকোণমিতির ক্ষেত্রফল",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "ক) $12$ বর্গ একক \n খ) $15$ বর্গ একক \n গ) $6$ বর্গ একক \n ঘ) $60$ বর্গ একক",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. $y = \frac{x}{2} + 2$ এবং $5x - 10y + 20 = 0$ সমীকরণদ্বয়\nক) দুটি ভিন্ন রেখা নির্দেশ করে \n খ) একই রেখা নির্দেশ করে\nগ) রেখাদ্বয় সমান্তরাল \n ঘ) রেখাদ্বয় পরস্পরচ্ছেদী",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৫. $y = x - 3$ এবং $y = -x + 3$ এর ছেদবিন্দু\nক) $(0, 0)$ \n খ) $(0, 3)$ \n গ) $(3, 0)$ \n ঘ) $(-3, 3)",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৬. $x = 1, y = 1$ রেখাদ্বয় যে বিন্দুতে ছেদ করে তার স্থানাঙ্ক\nক) $(0, 1)$ \n খ) $(1, 0)$ \n গ) $(0, 0)$ \n ঘ) $(1, 1)",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৭. $x = 1, y = 1$ রেখাদ্বয় অক্ষদ্বয়ের সাথে যে ক্ষেত্রটি তৈরি করে তার ক্ষেত্রফল\nক) $\frac{1}{2}$ বর্গ একক \n খ) $1$ বর্গ একক \n গ) $2$ বর্গ একক \n ঘ) $4$ বর্গ একক",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৮. নিম্নোক্ত বিন্দুসমূহ দিয়ে অতিক্রমণ সরলরেখার সমীকরণ নির্ণয় করো।\nক) $A(1, 5), B(2, 4)$\nখ) $A(3, 0), B(0, -3)$\nগ) $A(a, 0), B(2a, 3a)$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "৯. নিম্নোক্ত প্রতিক্ষেত্রে সরলরেখার সমীকরণ নির্ণয় করো।\nক) ঢাল $3$ এবং $y$ ছেদক $5$\nখ) ঢাল $3$ এবং $y$ ছেদক $-5$\nগ) ঢাল $-3$ এবং $y$ ছেদক $5$\nঘ) ঢাল $-3$ এবং $y$ ছেদক $-5$\nউপরিউক্ত রেখা চারটি একই সমতলে এঁকে দেখাও [এই রেখাসমূহের মাধ্যমে বোঝা যাবে ঢাল এবং $y$ ছেদকের চিহ্নের জন্য রেখা কোন চতুর্ভাগে অবস্থান করবে]",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১০. নিম্নোক্ত রেখাসমূহ $x$ অক্ষকে ও $y$ অক্ষকে কোন বিন্দুতে ছেদ করে নির্ণয় করো। তারপর রেখাসমূহ এঁকে দেখাও।\nক) $y = 3x - 3$\nখ) $2y = 5x + 6$\nগ) $3x - 2y - 4 = 0$",
+      "activity_tag": "অনুশীলনী"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "cq_subquestion",
+      "content_markdown": "১১. $(k, 0)$ বিন্দুগামী ও $k$ ঢালবিশিষ্ট সরলরেখার সমীকরণ $k$ এর মাধ্যমে নির্ণয় করো। যদি রেখাটি $(5, 6)$ বিন্দুগামী হয় তবে $k$ এর মান নির্ণয় করো।",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_11_triangle",
+      "caption": "ত্রিভুজচিত্র",
+      "box_2d": [
+        89,
+        159,
+        229,
+        354
+      ]
+    }
+  ]
+}

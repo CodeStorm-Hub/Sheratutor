@@ -1,0 +1,47 @@
+{
+  "printed_page_no": 167,
+  "pdf_page_no": 172,
+  "chapter_no": 7,
+  "chapter_title": "অসীম ধারা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": "ত্রিকোণমিতিক অনুপাতসমূহ",
+      "chunk_type": "theory",
+      "content_markdown": "নবম-দশম শ্রেণির গণিতে সূক্ষ্মকোণের ত্রিকোণমিতিক অনুপাত সম্পর্কে আলোচনা করা হয়েছে। আমরা এখানে যেকোনো কোণের ত্রিকোণমিতিক অনুপাত সমূহ বর্ণনা করব।\n\nকোণের প্রমিত অবস্থান (Standard Position): কার্তেসীয় তলে মূল বিন্দু $O$ তে ধনাত্মক $x$-অক্ষকে আদি রশ্মি ধরে কোণ অঙ্কন করলে কোণটির প্রমিত অবস্থান পাওয়া যায়।\n\nঅনুপাতসমূহের সংজ্ঞা\n$\\theta$ যেকোনো কোণ। এর প্রমিত অবস্থানে ঘূর্ণায়মান রশ্মি $OZ$ এর উপর বিন্দু $P(x, y)$ নিই যেখানে $OP = r(> 0)$। তাহলে $\\theta$ কোণের\n$$\\text{sine অনুপাত, } \\sin\\theta = \\frac{y}{r}$$\n$$\\text{cosine অনুপাত, } \\cos\\theta = \\frac{x}{r}$$\n$$\\text{tangent অনুপাত, } \\tan\\theta = \\frac{y}{x} \\quad [\\text{যখন } x \\neq 0]$$\n$$\\text{cotangent অনুপাত, } \\cot\\theta = \\frac{x}{y} \\quad [\\text{যখন } y \\neq 0]$$\n$$\\text{secant অনুপাত, } \\sec\\theta = \\frac{r}{x} \\quad [\\text{যখন } x \\neq 0]$$\n$$\\text{cosecant অনুপাত, } \\csc\\theta = \\frac{r}{y} \\quad [\\text{যখন } y \\neq 0]$$\n\nলক্ষনীয় যে, রশ্মি $OZ$ এর ওপর $P(x, y)$, $P'(x', y')$ দুইটি বিন্দু যেখানে $OP = r(> 0)$, $OP' = r'(> 0)$; $x, x'$ এবং $y, y'$ একই চিহ্নযুক্ত। ফলে $\\triangle OPM$ ও $\\triangle OP'M'$ হতে পাই,\n$$\\frac{x}{r} = \\frac{x'}{r'}, \\frac{y}{r} = \\frac{y'}{r'} \\text{ ইত্যাদি।}$$\nফলে $\\theta$ কোণের অনুপাত সমূহের মান $OZ$ রশ্মিতে $P$ বিন্দুর অবস্থানের উপর নির্ভর করে না।\n\n$\\theta$ সূক্ষ্মকোণ হলে $\\triangle OPM$ সমকোণী ত্রিভুজে অতিভুজ $OP = r$, সন্নিহিত বাহু $OM = x$, বিপরীত বাহু $PM = y$।\nসুতারং,\n$$\\sin\\theta = \\frac{y}{r} = \\frac{\\text{বিপরীত বাহু}}{\\text{অতিভুজ}}$$\n$$\\cos\\theta = \\frac{x}{r} = \\frac{\\text{সন্নিহিত বাহু}}{\\text{অতিভুজ}}$$\n$$\\tan\\theta = \\frac{y}{x} = \\frac{\\text{বিপরীত বাহু}}{\\text{সন্নিহিত বাহু}}, \\text{ ইত্যাদি।}$$\nসুতারং সূক্ষ্মকোণের ক্ষেত্রে ত্রিকোণমিতিক অনুপাতের স্থানাঙ্ক ভিত্তিক সংজ্ঞা ও নবম-দশম শ্রেণির",
+      "activity_tag": null
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_167_1",
+      "caption": null,
+      "box_2d": [
+        326,
+        590,
+        487,
+        843
+      ]
+    },
+    {
+      "figure_id": "fig_167_2",
+      "caption": null,
+      "box_2d": [
+        517,
+        594,
+        694,
+        848
+      ]
+    },
+    {
+      "figure_id": "fig_167_3",
+      "caption": null,
+      "box_2d": [
+        734,
+        590,
+        899,
+        844
+      ]
+    }
+  ]
+}

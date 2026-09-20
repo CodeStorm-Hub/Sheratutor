@@ -1,0 +1,65 @@
+{
+  "printed_page_no": 312,
+  "pdf_page_no": 317,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "তাহলে নমুনাক্ষেত্রটি হবে: $\\{1H, 1T, 2H, 2T, 3H, 3T, 4H, 4T, 5H, 5T, 6H, 6T\\}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "এখানে মোট নমুনা বিন্দু $12$ টি। $\\therefore$ ছক্কায় $5$ এবং মুদ্রায় $H$ আসার সম্ভাবনা $P(5H) = \\frac{1}{12}$।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ৯। একজন লোকের ঢাকা হতে খুলনায় বাসে যাওয়ার সম্ভাবনা $\\frac{2}{5}$ এবং খুলনা হতে রাজশাহী ট্রেনে যাওয়ার সম্ভাবনা $\\frac{5}{8}$। লোকটি খুলনায় বাসে এবং রাজশাহী ট্রেনে না যাওয়ার সম্ভাবনা কত? Probability tree ব্যবহার করে দেখাও।",
+      "activity_tag": "উদাহরণ"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "সমাধান: সম্ভাবনার মাধ্যমে probability tree হবে\n\nসুতরাং লোকটির খুলনায় বাসে এবং রাজশাহীতে ট্রেনে না যাওয়ার সম্ভাবনা\n$$P[\\text{খুলনা বাস, রাজশাহী ট্রেনে নয়}] = \\frac{2}{5} \\times \\frac{3}{8} = \\frac{6}{40} = \\frac{3}{20}$$",
+      "activity_tag": "সমাধান"
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কাজ:\nক) Probability tree এর সাহায্যে তিনবার মুদ্রা নিক্ষেপে সকল সম্ভাব্য ফলাফল লিখ এবং নমুনাক্ষেত্রটি তৈরি কর। এখান হতে (i) মুদ্রা ৩টিতে একই ফলাফল (ii) কমপক্ষে $2T$ (iii) বড়োজোর $2T$ আসার সম্ভাবনা নির্ণয় করো।\nখ) 1টি ছক্কা ও 2টি মুদ্রা নিক্ষেপ ঘটনার probability tree তৈরি করো।",
+      "activity_tag": "কাজ"
+    }
+  ],
+  "figures": [
+    {
+      "figure_id": "fig_14_1",
+      "caption": null,
+      "box_2d": [
+        113,
+        105,
+        283,
+        903
+      ]
+    },
+    {
+      "figure_id": "fig_14_2",
+      "caption": null,
+      "box_2d": [
+        531,
+        239,
+        695,
+        759
+      ]
+    }
+  ]
+}

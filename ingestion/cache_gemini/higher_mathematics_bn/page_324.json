@@ -1,0 +1,23 @@
+{
+  "printed_page_no": 324,
+  "pdf_page_no": 329,
+  "chapter_no": 14,
+  "chapter_title": "সম্ভাবনা",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "ক) $1 - 5y + 10y^2 - 10y^3 + 5y^4 - y^5$\n\nখ) $1 + 10x + 40x^2 + 80x^3 + 80x^4 + 32x^5$\n\n২. ক) $1 + 24x + 240x^2 + 1280x^3 + \\cdots$\n\nখ) $1 - 21x + 189x^2 - 945x^3 + \\cdots$\n\n৩. $1 + 8x^2 + 28x^4 + 56x^6 + \\cdots$ এবং $1.082856$\n\n৪. ক) $1 - 10x + 40x^2 - \\cdots$\n\nখ) $1 + 27x + 324x^2 + \\cdots$\n\n৫. ক) $1 - 14x^2 + 84x^4 - 280x^6 + \\cdots$\n\nখ) $1 + \\frac{8}{x} + \\frac{24}{x^2} + \\frac{32}{x^3} + \\cdots$\n\nগ) $1 - \\frac{7}{2} \\cdot \\frac{1}{x} + \\frac{21}{4} \\cdot \\frac{1}{x^2} - \\frac{35}{8} \\cdot \\frac{1}{x^3} + \\cdots$\n\n৬. ক) $1 - 6x + 15x^2 - 20x^3 + \\cdots$\n\nখ) $1 + 12x + 60x^2 + 160x^3 + \\cdots$",
+      "activity_tag": null
+    },
+    {
+      "section_no": "১০.২",
+      "section_title": "অনুশীলনী ১০.২",
+      "chunk_type": "theory",
+      "content_markdown": "৮. ক) $32 + 80x^2 + 80x^4 + 40x^6 + 10x^8 + x^{10}$\n\nখ) $64 - \\frac{96}{x} + \\frac{60}{x^2} - \\frac{20}{x^3} + \\frac{15}{4x^4} - \\frac{3}{8x^5} + \\frac{1}{64x^6}$\n\n৫. ক) $64 + 576x + 2160x^2 + 4320x^3 + \\cdots$\n\nখ) $1024 - \\frac{640}{x} + \\frac{160}{x^2} - \\frac{20}{x^3} + \\cdots$\n\n৬. $p = 2, r = 64, s = 60$\n\n৯. $64 + 48x + 15x^2 + \\frac{5}{2}x^3 + \\cdots, 63.5215$\n\n৮. $31.2080$\n\n৯. $n = 8$, পদসংখ্যা $9$ ও মধ্যপদ $\\frac{35}{128}$\n\n১০. $k = 2$\n\n১৩. $101^{50}$ বড়ো",
+      "activity_tag": "অনুশীলনী"
+    }
+  ],
+  "figures": []
+}

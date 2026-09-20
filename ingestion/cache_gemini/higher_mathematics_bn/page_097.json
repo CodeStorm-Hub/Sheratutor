@@ -1,0 +1,30 @@
+{
+  "printed_page_no": 97,
+  "pdf_page_no": 102,
+  "chapter_no": 5,
+  "chapter_title": "সমীকরণ",
+  "sections": [
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "theory",
+      "content_markdown": "কিন্তু যেকোনো রাশিমালাকে সহজে উৎপাদকে বিশ্লেষণ করা যায় না। সে জন্য যেকোনো প্রকার দ্বিঘাত সমীকরণের সমাধানের জন্য নিম্নলিখিত পদ্ধতিটি ব্যবহার করা হয়।\n\nএক চলক সম্বলিত দ্বিঘাত সমীকরণের আদর্শরূপ $ax^2 + bx + c = 0$। এখানে $a, b, c$ বাস্তব সংখ্যা এবং $a \neq 0$। আমরা দ্বিঘাত সমীকরণটির সমাধান করি,\n\n$$ax^2 + bx + c = 0$$\n\nবা, $a^2x^2 + abx + ac = 0$ [উভয়পক্ষকে $a$ দ্বারা গুণ করে]\n\nবা, $(ax)^2 + 2(ax)\frac{b}{2} + \binom{b}{2}^2 - \binom{b}{2}^2 + ac = 0$\n\nবা, $\\left(ax + \\frac{b}{2}\\right)^2 = \\frac{b^2}{4} - ac$\n\nবা, $\\left(ax + \\frac{b}{2}\\right)^2 = \\frac{b^2 - 4ac}{4}$\n\nবা, $ax + \\frac{b}{2} = \\pm \\frac{\\sqrt{b^2 - 4ac}}{2}$ [উভয় পক্ষের বর্গমূল করে]\n\nবা, $ax = -\\frac{b}{2} \\pm \\frac{\\sqrt{b^2 - 4ac}}{2}$\n\nবা, $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} \\dots \\dots (1)$\n\nঅতএব, $x$ এর দুটি মান পাওয়া গেল এবং মান দুটি হচ্ছে\n\n$x_1 = \\frac{-b + \\sqrt{b^2 - 4ac}}{2a} \\dots \\dots (2)$ এবং $x_2 = \\frac{-b - \\sqrt{b^2 - 4ac}}{2a} \\dots \\dots (3)$\n\nউপরের (1) নং সমীকরণে $b^2 - 4ac$ কে দ্বিঘাত সমীকরণটির নিশ্চয়ক (Discriminant) বলে কারণ ইহা সমীকরণটির মূলদ্বয়ের ধরন ও প্রকৃতি নির্ণয় করে।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": "নিশ্চায়কের অবস্থাবেদে দ্বিঘাত সমীকরণের মূলদ্বয়ের ধরন ও প্রকৃতি",
+      "chunk_type": "theory",
+      "content_markdown": "ধরি $a, b, c$ বাস্তব সংখ্যা এবং $a \neq 0$। তাহলে\n\nক) $b^2 - 4ac > 0$ এবং পূর্ণবর্গ হলে সমীকরণটির মূলদ্বয় বাস্তব, অসমান ও মূলদ হবে।\n\nখ) $b^2 - 4ac > 0$ কিন্তু পূর্ণবর্গ না হলে সমীকরণটির মূলদ্বয় বাস্তব, অসমান ও অমূলদ হবে।\n\nগ) $b^2 - 4ac = 0$ হলে সমীকরণটির মূলদ্বয় বাস্তব ও পরস্পর সমান হবে, এক্ষেত্রে $x = -\\frac{b}{2a}, -\\frac{b}{2a}$।\n\nঘ) $b^2 - 4ac < 0$ অর্থাৎ ঋণাত্মক হলে সমীকরণটির বাস্তব মূল নাই।",
+      "activity_tag": null
+    },
+    {
+      "section_no": null,
+      "section_title": null,
+      "chunk_type": "worked_example",
+      "content_markdown": "উদাহরণ ১. $x^2 - 5x + 6 = 0$ এর সমাধান করো।",
+      "activity_tag": "উদাহরণ"
+    }
+  ],
+  "figures": []
+}
