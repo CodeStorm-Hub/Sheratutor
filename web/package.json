@@ -24,7 +24,7 @@
     "caniuse-lite": "^1.0.30001810",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "genkit": "^1.41.0",
+    "genkit": "^1.42.0",
     "genkitx-ollama": "^1.41.0",
     "katex": "^0.18.4",
     "lucide-react": "^1.33.0",
