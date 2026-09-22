@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, MODELS, generateWithGeminiFallback } from "@/ai/genkit";
+import { ai, MODELS, generateWithGeminiFallback, azureOpenAIClient } from "@/ai/genkit";
 
 const SELF_HARM_PATTERNS = [
   /suicid/i, /kill myself/i, /self.?harm/i, /want to die/i, /আত্মহত্যা/, /মরে যেতে/,
@@ -260,7 +260,25 @@ export const tutorChatFlow = ai.defineFlow(
       languagePreference,
     });
 
-    let text = await generateWithGeminiFallback(prompt, { temperature: 0.3, model: MODELS.chat });
+    let text = "";
+    if (azureOpenAIClient && process.env.AZURE_OPENAI_DEPLOYMENT_TUTOR) {
+      try {
+        const response = await azureOpenAIClient.chat.completions.create({
+          model: process.env.AZURE_OPENAI_DEPLOYMENT_TUTOR,
+          messages: [{ role: "user", content: prompt }],
+          temperature: 0.3,
+          max_completion_tokens: 1500,
+        });
+        text = response.choices[0]?.message?.content || "";
+      } catch (azureErr) {
+        // Fallback to Gemini if Azure deployment is not yet active or throttling
+        console.warn("[TutorChat] Azure OpenAI SFT fallback to Gemini:", azureErr);
+      }
+    }
+
+    if (!text) {
+      text = await generateWithGeminiFallback(prompt, { temperature: 0.3, model: MODELS.chat });
+    }
 
     // Guarantee authentic diagram rendering: if official diagrams are available and not yet embedded, inject
     if (diagramUrls && diagramUrls.length > 0) {
