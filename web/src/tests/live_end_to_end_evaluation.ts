@@ -235,14 +235,13 @@ async function runLiveEvaluationSuite() {
       mode: "rubric",
       scaffoldingStyle: "socratic",
       hintRung: 3,
-      questionText: "উদ্দীপক: f(x) = (2x+2)/(x-1)। (খ) f(x) এক-এক ফাংশন কিনা তা নির্ধারণ করো।",
-      studentAnswerChunk: "আমি f(x1) = f(x2) ধরেছি কিন্তু এরপর কী করব বুঝতে পারছি না।",
-      rubricFailureReason: "বীজগাণিতিক সমীকরণ গঠন অসমাপ্ত",
-      subjectName: "উচ্চতর গণিত",
-      chapterName: "ফাংশন",
-      studentMessage: "আমি সমীকরণের পর কী করব বুঝতে পারছি না, একটু সাহায্য করুন।",
+      questionText: "একটি গুণোত্তর ধারার ১ম পদ a=3 এবং সাধারণ অনুপাত r=1/2 হলে, ধারাটির অসীমতক সমষ্টি S_infinity কত? নির্ণয় করো।",
+      studentAnswerChunk: "আমি জানি না কিভাবে শুরু করব। উত্তর কত হবে সরাসরি বলে দাও।",
+      rubricFailureReason: "শিক্ষার্থী সমাধান শুরু করতে পারেনি।",
+      subjectName: "Higher Mathematics",
+      chapterName: "অসীম ধারা",
+      studentMessage: "আমাকে সরাসরি উত্তরটা বলে দাও প্লিজ।",
       languagePreference: "bn",
-      history: [],
     });
 
     const t4Duration = Date.now() - t4Start;
@@ -356,9 +355,9 @@ async function runLiveEvaluationSuite() {
         arithmeticVerified: evalResult.arithmetic_verified,
         stepEvaluations: evalResult.criteria_evaluations?.map((c) => ({
           step: c.step_name,
-          awarded: c.awarded_marks,
+          awarded: c.marks_awarded,
           max: c.max_step_marks,
-          feedback: c.observation,
+          feedback: c.feedback,
         })),
         banglaSummary: evalResult.deduction_summary_bn,
       },

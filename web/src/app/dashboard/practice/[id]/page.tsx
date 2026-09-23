@@ -9,6 +9,8 @@ import QuestionPaperViewerClient, {
 import DashboardLoading from '../../loading';
 
 async function getQuestionPaper(id: string) {
+  'use cache';
+  cacheLife('days');
   const supabase = createSupabaseClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!

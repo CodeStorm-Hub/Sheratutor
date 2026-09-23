@@ -3,25 +3,9 @@ import { genkit, z } from "genkit/beta";
 import { googleAI } from "@genkit-ai/google-genai";
 import { ollama } from "genkitx-ollama";
 
-import { AzureOpenAI } from "openai";
-
 if (typeof dns?.setDefaultResultOrder === "function") {
   dns.setDefaultResultOrder("ipv4first");
 }
-
-/**
- * Azure OpenAI Client for Fine-Tuned Model Inference (Azure AI Foundry SFT):
- * Used for specialized Socratic pedagogical tutoring and curriculum guidance.
- */
-export const azureOpenAIClient =
-  process.env.AZURE_OPENAI_API_KEY && process.env.AZURE_OPENAI_ENDPOINT
-    ? new AzureOpenAI({
-        endpoint: process.env.AZURE_OPENAI_ENDPOINT,
-        apiKey: process.env.AZURE_OPENAI_API_KEY,
-        apiVersion: "2025-04-01-preview",
-      })
-    : null;
-
 
 /**
  * Provider architecture (Google AI Studio Gemini API):
