@@ -127,7 +127,11 @@ print(tokenizer.decode(outputs[0][inputs.shape[1]:], skip_special_tokens=True))
 - **Quantized GGUF Version (Ollama / llama.cpp)**: [`syed181/sheratutor-qwen2.5-7b-gguf`](https://huggingface.co/syed181/sheratutor-qwen2.5-7b-gguf)
 
 ## Citation & Attribution
-Developed as part of the **SheraTutor** AI education project by Syed (CodeStorm Hub) for sovereign, equitable exam evaluation in Bangladesh.
+Developed for the **SheraTutor** AI education project by **Syed and Afsan (CodeStorm Hub)** for sovereign, equitable exam evaluation in Bangladesh.
+
+- **Website**: [https://www.sheratutor.tech](https://www.sheratutor.tech)
+- **Syed Salman Reza**: [https://syed-reza98.github.io](https://syed-reza98.github.io)
+- **Afsan Chowdhury**: [https://afsan123.github.io](https://afsan123.github.io)
 """
 
 README_GGUF = """---
@@ -218,7 +222,11 @@ print(response["message"]["content"])
 - **Full Merged 16-Bit Model (PyTorch / vLLM)**: [`syed181/sheratutor-qwen2.5-7b`](https://huggingface.co/syed181/sheratutor-qwen2.5-7b)
 
 ## Citation & Attribution
-Developed for the **SheraTutor** AI education project by Syed (CodeStorm Hub) for sovereign, equitable exam evaluation in Bangladesh.
+Developed for the **SheraTutor** AI education project by **Syed and Afsan (CodeStorm Hub)** for sovereign, equitable exam evaluation in Bangladesh.
+
+- **Website**: [https://www.sheratutor.tech](https://www.sheratutor.tech)
+- **Syed Salman Reza**: [https://syed-reza98.github.io](https://syed-reza98.github.io)
+- **Afsan Chowdhury**: [https://afsan123.github.io](https://afsan123.github.io)
 """
 
 print("[*] Uploading README.md to syed181/sheratutor-qwen2.5-7b...")
