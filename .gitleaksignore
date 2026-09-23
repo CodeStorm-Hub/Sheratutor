@@ -1,0 +1,15 @@
+# Gitleaks ignore list for historical commits already remediated or mock test data
+# 1. Mock UUID in unit test
+1fa0c13528aa055c00b6a477e12dd1b91711c638:web/src/lib/email/waitlist-email.test.ts:generic-api-key:6
+1fa0c13528aa055c00b6a477e12dd1b91711c638:web/src/lib/email/waitlist-email.test.ts:generic-api-key:23
+5e6381d73685e48110c04e32c9c2f610e5e94628:web/src/lib/email/waitlist-email.test.ts:generic-api-key:6
+5e6381d73685e48110c04e32c9c2f610e5e94628:web/src/lib/email/waitlist-email.test.ts:generic-api-key:23
+
+# 2. Remediated historical commits in git log
+e952a78eaaaf4a5d3ab149195dbf5979abb98302:supabase/migrations/00000000000027_activate_pg_cron_grading_queue.sql:generic-api-key:20
+e9206707549c40cb51b2bfce5d6e29ae1d95e6d4:web/src/app/layout.tsx:generic-api-key:36
+86505d0146e5bb96e7616b20dc22db140fc7d853:ingestion/kaggle/remote_ingest.py:jwt:75
+28496d232a58b409a44e4413fde202518176ae9c:ingestion/run_chemistry_bangla.py:generic-api-key:5
+28496d232a58b409a44e4413fde202518176ae9c:ingestion/nim_bangla_ingest.py:generic-api-key:24
+203e9d6bff5725b2ea93cbbf0e600459b3e2de7d:ingestion/refresh_all_flawed_pages.py:generic-api-key:42
+28496d232a58b409a44e4413fde202518176ae9c:ingestion/refresh_bangla_legacy_pages.py:generic-api-key:22

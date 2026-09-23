@@ -61,8 +61,8 @@ ensure_unsloth()
 from unsloth import FastLanguageModel, is_bfloat16_supported
 from unsloth.chat_templates import get_chat_template, train_on_responses_only
 from datasets import load_dataset, Dataset
-from trl import SFTTrainer, DataCollatorForSeq2Seq
-from transformers import TrainingArguments
+from trl import SFTTrainer
+from transformers import TrainingArguments, DataCollatorForSeq2Seq
 
 # ---------------------------------------------------------------------------
 # 3. Authentication & Configuration
@@ -72,13 +72,15 @@ HF_TOKEN = os.environ.get("HF_TOKEN", "")
 try:
     from kaggle_secrets import UserSecretsClient
     user_secrets = UserSecretsClient()
-    HF_TOKEN = user_secrets.get_secret("HF_TOKEN")
-    print("[*] HF_TOKEN retrieved from Kaggle Secrets.")
+    token = user_secrets.get_secret("HF_TOKEN")
+    if token:
+        HF_TOKEN = token
+        print("[*] HF_TOKEN retrieved from Kaggle Secrets.")
 except Exception:
     if HF_TOKEN:
-        print("[*] HF_TOKEN retrieved from environment variable.")
+        print("[*] HF_TOKEN active for Hugging Face upload.")
     else:
-        print("[!] HF_TOKEN not found in Kaggle Secrets. Remote push to Hub will be skipped.")
+        print("[!] HF_TOKEN not found. Remote push will be skipped.")
 
 # Target Hugging Face Repositories (Change 'YOUR_USERNAME' to your HF handle)
 HF_USERNAME = os.environ.get("HF_USERNAME", "syed181")
@@ -126,18 +128,19 @@ tokenizer = get_chat_template(
     chat_template = "qwen-2.5",
 )
 
-# Load dataset: from local file or generate fallback seed data
-dataset_path = "sheratutor_train_dataset.jsonl"
-if not os.path.exists(dataset_path):
-    # Try finding in parent directory or Kaggle input
-    for candidate in [
-        "/kaggle/input/sheratutor-dataset/sheratutor_train_dataset.jsonl",
-        "../dataset/sheratutor_train_dataset.jsonl",
-        "training/dataset/sheratutor_train_dataset.jsonl"
-    ]:
-        if os.path.exists(candidate):
-            dataset_path = candidate
-            break
+# Load dataset: prioritize rubric grading dataset
+dataset_path = "sheratutor_rubric_train.jsonl"
+for candidate in [
+    "/kaggle/input/sheratutor-rubric-dataset/sheratutor_rubric_train.jsonl",
+    "/kaggle/input/sheratutor-dataset/sheratutor_rubric_train.jsonl",
+    "sheratutor_rubric_train.jsonl",
+    "training/dataset/sheratutor_rubric_train.jsonl",
+    "../dataset/sheratutor_rubric_train.jsonl",
+    "sheratutor_train_dataset.jsonl",
+]:
+    if os.path.exists(candidate):
+        dataset_path = candidate
+        break
 
 if os.path.exists(dataset_path):
     print(f"[*] Loading dataset from: {dataset_path}")
@@ -215,17 +218,17 @@ print(f"[*] Training finished! Run time: {trainer_stats.metrics['train_runtime']
 # ---------------------------------------------------------------------------
 # 9. Verification & Fast Inference Test
 # ---------------------------------------------------------------------------
-print("\n[*] Testing Socratic Inference with fine-tuned model...")
+print("\n[*] Testing Rubric Grading Inference with fine-tuned model...")
 FastLanguageModel.for_inference(model)
 
 test_messages = [
     {
         "role": "system",
-        "content": "তুমি সেরাটিউটর — এসএসসি পর্যায়ের একজন সহানুভূতিশীল এআই শিক্ষক। সরাসরি উত্তর না দিয়ে শিক্ষার্থীকে ধাপে ধাপে সংকেত দাও এবং সমীকরণ LaTeX এ লেখ।"
+        "content": "You are an expert Bangladeshi SSC/HSC board examiner and AI grading engine for SheraTutor. Your task is to evaluate a student's transcribed exam answer against the provided NCTB rubric. Verify all mathematical derivations step-by-step for numerical accuracy. If a student makes an early calculation error but uses correct subsequent logic, award consequential partial credit (ধারাবাহিক গণনা). Write deduction_summary_bn in natural, encouraging Bengali suitable for high school students. Output ONLY a raw, valid JSON object conforming exactly to the RubricEvaluationSchema."
     },
     {
         "role": "user",
-        "content": "স্যার, সমবেগে চললে ত্বরণ কত হয়? বুঝতে পারছি না।"
+        "content": "QUESTION (max 3.0 marks): 5 kg ভরের একটি বস্তুর ওপর 10 N বল প্রয়োগ করলে ত্বরণ কত হবে?\n\nOFFICIAL RUBRIC: [{\"step_name\": \"Formula F = ma\", \"max_step_marks\": 1}, {\"step_name\": \"Calculation\", \"max_step_marks\": 1}, {\"step_name\": \"Unit m/s^2\", \"max_step_marks\": 1}]\n\nSTUDENT'S TRANSCRIBED ANSWER:\nআমরা জানি, F = ma\na = F/m = 10/5 = 3 m/s^2"
     }
 ]
 
@@ -238,9 +241,9 @@ inputs = tokenizer.apply_chat_template(
 
 outputs = model.generate(
     input_ids = inputs,
-    max_new_tokens = 256,
+    max_new_tokens = 512,
     use_cache = True,
-    temperature = 0.3,
+    temperature = 0.2,
 )
 response_text = tokenizer.batch_decode(outputs)
 print("\n=== Fine-Tuned Model Response ===")

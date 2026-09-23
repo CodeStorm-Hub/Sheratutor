@@ -69,6 +69,8 @@ export const gradeSubmissionFlow = ai.defineFlow(
     // Layer 1: transcribe every page concurrently to stay well within Vercel's 60s timeout.
     // Pages store private-bucket paths (or legacy http URLs); sign paths before vision.
     const allPages = pages ?? [];
+    const allDiagramFeatures: string[] = [];
+
     await Promise.all(
       allPages.map(async (page) => {
         const stored = page.processed_image_url ?? page.original_image_url;
@@ -81,6 +83,14 @@ export const gradeSubmissionFlow = ai.defineFlow(
           imageUrl,
           expectedLanguage: "mixed",
         });
+
+        if (transcription.diagram_descriptions?.length) {
+          allDiagramFeatures.push(
+            ...transcription.diagram_descriptions.map(
+              (d) => `[Page ${page.page_number}] ${d.description}`
+            )
+          );
+        }
 
         await supabase
           .from("submission_pages")
@@ -150,7 +160,7 @@ export const gradeSubmissionFlow = ai.defineFlow(
           matchCount: 5,
         });
 
-        // Layers 3+4: grounded rubric evaluation with image cross-check
+        // Layers 3+4: grounded rubric evaluation with image cross-check and diagram features
         const evaluation = await evaluateRubricFlow({
           questionId: question.id,
           questionText: question.question_text_bn ?? question.question_text_en ?? "",
@@ -163,6 +173,7 @@ export const gradeSubmissionFlow = ai.defineFlow(
           })),
           studentLanguagePreference: "bn",
           pageImageUrls: await pageImageUrlsForQuestion(question.id),
+          diagramFeatures: allDiagramFeatures.length ? allDiagramFeatures.join("\n") : undefined,
         });
 
         await supabase.from("grading_results").insert({

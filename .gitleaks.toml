@@ -1,0 +1,13 @@
+[extend]
+# Extends default gitleaks config
+
+[allowlist]
+description = "Global allowlist for documentation, tests, and mock keys"
+paths = [
+    '''docs/.*''',
+    '''web/src/lib/email/waitlist-email\.test\.ts''',
+]
+regexes = [
+    '''presence_penalty=0\.15''',
+    '''123e4567-e89b-12d3-a456-426614174000''',
+]

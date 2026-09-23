@@ -1,6 +1,7 @@
 import dns from "node:dns";
 import { genkit, z } from "genkit/beta";
 import { googleAI } from "@genkit-ai/google-genai";
+import { openAICompatible } from "@genkit-ai/compat-oai";
 import { ollama } from "genkitx-ollama";
 
 if (typeof dns?.setDefaultResultOrder === "function") {
@@ -8,12 +9,9 @@ if (typeof dns?.setDefaultResultOrder === "function") {
 }
 
 /**
- * Provider architecture (Google AI Studio Gemini API):
- * All reasoning, vision OCR, practice paper generation, and embedding pipelines
- * run on Google AI Studio's Gemini models via `@genkit-ai/google-genai`.
- *
- * Automated failover is supported across primary (GEMINI_API_KEY) and secondary
- * (GEMINI_API_KEY_SECONDARY) keys to seamlessly absorb daily free-tier quotas.
+ * Provider architecture:
+ * Primary: Google AI Studio Gemini API (Gemini 3.5 Flash / Flash-Lite with multi-key failover).
+ * Sovereign: Modal Labs Serverless vLLM Endpoint (Nvidia L4, scale-to-zero, $0 idle).
  */
 
 export const GEMINI_API_KEYS = [
@@ -33,10 +31,22 @@ export function getNextGeminiApiKey(): string {
   return key;
 }
 
+export const MODAL_CONFIG = {
+  enabled: process.env.ENABLE_MODAL_EVALUATOR === "true",
+  baseURL: process.env.MODAL_VLLM_BASE_URL || "https://syed-reza98--sheratutor-vllm-serve.modal.run/v1",
+  model: process.env.MODAL_MODEL_NAME || "modal/Qwen/Qwen2.5-7B-Instruct",
+  timeoutMs: 15000,
+};
+
 export const ai = genkit({
   plugins: [
     googleAI({
       apiKey: process.env.GEMINI_API_KEY || process.env.GCP_API_KEY,
+    }),
+    openAICompatible({
+      name: "modal",
+      apiKey: process.env.MODAL_API_KEY || "dummy",
+      baseURL: MODAL_CONFIG.baseURL,
     }),
     ollama({
       serverAddress: process.env.OLLAMA_BASE_URL ?? "http://127.0.0.1:11434",

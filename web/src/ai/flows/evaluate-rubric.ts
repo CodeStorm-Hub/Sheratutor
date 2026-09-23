@@ -1,5 +1,5 @@
 import { z } from "genkit";
-import { ai, MODELS, PROMPT_VERSION } from "@/ai/genkit";
+import { ai, MODELS, MODAL_CONFIG, PROMPT_VERSION } from "@/ai/genkit";
 import { RubricEvaluationSchema } from "@/ai/schemas/rubric";
 
 /**
@@ -8,12 +8,11 @@ import { RubricEvaluationSchema } from "@/ai/schemas/rubric";
  * structured JSON schema via Genkit's Zod output enforcement. The model
  * must cite which rubric rule backs each observation (NFR-REL-03).
  *
- * When `pageImageUrls` is provided (the question has pages mapped to it —
- * see grade-submission.ts's question-region mapping), grading runs against
- * the images as well as the transcript, and the model is asked to flag any
- * sign the transcript was silently "corrected" versus what's actually
- * written (docs/review §3 mitigation #3, scoped to whole-page cross-check
- * rather than a separate per-criterion image-crop pass).
+ * Resilience & Anti-Overcharge Circuit Breaker:
+ * - Attempts evaluation via Modal vLLM (Nvidia L4 serverless endpoint).
+ * - If Modal is disabled, times out (>15s), or encounters HTTP 402 (spend limit) / 429,
+ *   it seamlessly fails over to Google AI Studio's Gemini 3.5 Flash via rotating free keys.
+ * - Supports consequential marking (ধারাবাহিক গণনা) and structured STEM diagram features.
  */
 export const evaluateRubricFlow = ai.defineFlow(
   {
@@ -34,6 +33,7 @@ export const evaluateRubricFlow = ai.defineFlow(
         .describe("Retrieved NCTB curriculum chunks from Layer 2."),
       studentLanguagePreference: z.enum(["bn", "en"]).default("bn"),
       pageImageUrls: z.array(z.string()).optional(),
+      diagramFeatures: z.string().optional().describe("Structured description of student diagrams (circuits, ray optics, biology sketches)."),
     }),
     outputSchema: RubricEvaluationSchema,
   },
@@ -46,6 +46,7 @@ export const evaluateRubricFlow = ai.defineFlow(
     groundingChunks,
     studentLanguagePreference,
     pageImageUrls,
+    diagramFeatures,
   }) => {
     const groundingContext = groundingChunks
       .map((c, i) => `[Source ${i + 1}${c.source_book_page_ref ? ` — ${c.source_book_page_ref}` : ""}]\n${c.content_chunk}`)
@@ -60,15 +61,21 @@ export const evaluateRubricFlow = ai.defineFlow(
         `what the transcript claims.`
       : "";
 
+    const diagramContext = diagramFeatures
+      ? `\n\nSTUDENT'S DIAGRAM FEATURES (Circuits / Ray Optics / Biology):\n${diagramFeatures}\nEvaluate whether components, connections, arrow directions, and labels match NCTB requirements.`
+      : "";
+
     const promptText =
-      `You are a Bangladeshi SSC board examiner grading a student's answer. Grade strictly ` +
+      `You are an expert Bangladeshi SSC/HSC board examiner and AI grading engine for SheraTutor. Grade strictly ` +
       `against the official rubric — do not invent criteria not in the rubric, and every ` +
       `observation must cite which retrieved curriculum source or rubric rule supports it. ` +
       `If the retrieved context doesn't cover a claim you want to make, say so rather than ` +
-      `stating it as fact — set grounding_confidence low in that case.${imageCrossCheckInstruction}\n\n` +
-      `Write deduction_summary_bn in natural, conversational Bangla suitable for a 15-18 ` +
-      `year old (not a literal translation of the English summary), and deduction_summary_en ` +
-      `in plain English. The student's preferred language is ${studentLanguagePreference}.\n\n` +
+      `stating it as fact — set grounding_confidence low in that case.${imageCrossCheckInstruction}${diagramContext}\n\n` +
+      `Write deduction_summary_bn in natural, encouraging Bengali suitable for high school students (not a literal translation of the English summary), ` +
+      `and deduction_summary_en in plain English. The student's preferred language is ${studentLanguagePreference}.\n\n` +
+      `CONSEQUENTIAL MARKING (ধারাবাহিক গণনা):\n` +
+      `If a student makes an early calculation or substitution error but uses correct subsequent logic and procedures, ` +
+      `deduct marks ONLY for the calculation step. Award consequential partial credit for the subsequent steps.\n\n` +
       `MISTAKE TAXONOMY CLASSIFICATION:\n` +
       `- If no marks lost: mistake_category = "NONE"\n` +
       `- If student used wrong formula or missed key formula: mistake_category = "FORMULA_RECALL"\n` +
@@ -86,12 +93,41 @@ export const evaluateRubricFlow = ai.defineFlow(
       ? [{ text: promptText }, ...pageImageUrls.map((url) => ({ media: { url } }))]
       : promptText;
 
-    const { output } = await ai.generate({
-      model: pageImageUrls?.length ? MODELS.vision : MODELS.reasoning,
-      prompt,
-      output: { schema: RubricEvaluationSchema },
-      config: { temperature: 0.2 },
-    });
+    let output: z.infer<typeof RubricEvaluationSchema> | null = null;
+
+    // Attempt Modal vLLM first if enabled and text-only
+    if (MODAL_CONFIG.enabled && !pageImageUrls?.length) {
+      try {
+        const modalRes = await Promise.race([
+          ai.generate({
+            model: MODAL_CONFIG.model,
+            prompt,
+            output: { schema: RubricEvaluationSchema },
+            config: { temperature: 0.2 },
+          }),
+          new Promise<never>((_, reject) =>
+            setTimeout(() => reject(new Error("Modal vLLM timeout")), MODAL_CONFIG.timeoutMs)
+          ),
+        ]);
+        output = modalRes.output;
+      } catch (modalErr) {
+        console.warn(
+          "[SheraTutor] Modal evaluation unavailable or limit reached. Seamlessly failing over to Google AI Studio Gemini API:",
+          modalErr
+        );
+      }
+    }
+
+    // Failover or primary execution via Gemini 3.5 Flash
+    if (!output) {
+      const fallbackRes = await ai.generate({
+        model: pageImageUrls?.length ? MODELS.vision : MODELS.reasoning,
+        prompt,
+        output: { schema: RubricEvaluationSchema },
+        config: { temperature: 0.2 },
+      });
+      output = fallbackRes.output;
+    }
 
     if (!output) throw new Error("evaluateRubric: model returned no structured output");
     return { ...output, question_id: questionId };
