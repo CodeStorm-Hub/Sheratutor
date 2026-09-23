@@ -296,11 +296,25 @@ if HF_TOKEN:
     except Exception as e:
         print(f"[!] Warning uploading GGUF model: {e}")
 else:
-    print(f"[*] Saving LoRA weights and GGUF locally to {local_output_dir}...")
+    print(f"[*] HF_TOKEN not provided. Saving GGUF and LoRA locally using /tmp for intermediate storage...")
+    os.environ["UNSLOTH_DISK_PREFLIGHT"] = "0"
     os.makedirs(local_output_dir, exist_ok=True)
-    model.save_pretrained_merged(f"{local_output_dir}/merged_16bit", tokenizer, save_method="merged_16bit")
-    model.save_pretrained_gguf(f"{local_output_dir}/gguf", tokenizer, quantization_method="q4_k_m")
-    print(f"[OK] Local files saved at: {local_output_dir}")
+    
+    # Save GGUF using /tmp (which has 50GB+ free on Kaggle)
+    tmp_gguf_dir = "/tmp/sheratutor_gguf"
+    os.makedirs(tmp_gguf_dir, exist_ok=True)
+    model.save_pretrained_gguf(tmp_gguf_dir, tokenizer, quantization_method="q4_k_m")
+    
+    # Copy final .gguf file to /kaggle/working
+    import shutil
+    for f in os.listdir(tmp_gguf_dir):
+        if f.endswith(".gguf"):
+            src = os.path.join(tmp_gguf_dir, f)
+            dst = os.path.join(local_output_dir, f)
+            print(f"[*] Copying {f} ({os.path.getsize(src) / 1e9:.2f} GB) to {dst}...")
+            shutil.copy2(src, dst)
+            
+    print(f"[OK] Production GGUF model successfully saved to: {local_output_dir}")
 
 print("\n" + "=" * 60)
 print("[*] PIPELINE COMPLETE! Model is ready for production deployment.")
