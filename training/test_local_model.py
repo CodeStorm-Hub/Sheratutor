@@ -15,7 +15,7 @@ import time
 import requests
 from pathlib import Path
 
-MODEL_NAME = "hf.co/syed181/sheratutor-qwen2.5-7b-gguf"
+MODEL_NAME = "sheratutor-qwen2.5:7b"
 OLLAMA_API = "http://localhost:11434/api/chat"
 VAL_DATASET = Path(__file__).resolve().parent / "dataset/kaggle_dataset/sheratutor_rubric_val.jsonl"
 
@@ -50,7 +50,7 @@ def test_model(sample_idx=0):
     }
 
     try:
-        resp = requests.post(OLLAMA_API, json=payload, timeout=120)
+        resp = requests.post(OLLAMA_API, json=payload, timeout=300)
         elapsed = time.time() - start_time
         if resp.status_code != 200:
             print(f"[!] Error from Ollama: {resp.status_code} - {resp.text}")

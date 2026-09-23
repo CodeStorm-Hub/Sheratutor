@@ -129,20 +129,36 @@ tokenizer = get_chat_template(
 )
 
 # Load dataset: prioritize rubric grading dataset
-dataset_path = "sheratutor_rubric_train.jsonl"
-for candidate in [
-    "/kaggle/input/sheratutor-rubric-dataset/sheratutor_rubric_train.jsonl",
-    "/kaggle/input/sheratutor-dataset/sheratutor_rubric_train.jsonl",
-    "sheratutor_rubric_train.jsonl",
-    "training/dataset/sheratutor_rubric_train.jsonl",
-    "../dataset/sheratutor_rubric_train.jsonl",
-    "sheratutor_train_dataset.jsonl",
-]:
-    if os.path.exists(candidate):
-        dataset_path = candidate
-        break
+import glob
+dataset_path = None
+candidates = glob.glob("/kaggle/input/**/sheratutor_rubric_train.jsonl", recursive=True)
+if candidates:
+    dataset_path = candidates[0]
+else:
+    for cand in [
+        "sheratutor_rubric_train.jsonl",
+        "training/dataset/kaggle_dataset/sheratutor_rubric_train.jsonl",
+        "training/dataset/sheratutor_rubric_train.jsonl",
+        "../dataset/kaggle_dataset/sheratutor_rubric_train.jsonl",
+        "/kaggle/working/sheratutor_rubric_train.jsonl",
+    ]:
+        if os.path.exists(cand):
+            dataset_path = cand
+            break
 
-if os.path.exists(dataset_path):
+# Direct download fallback via GitHub raw if not found locally or in Kaggle mounts
+if not dataset_path or not os.path.exists(dataset_path):
+    print("[*] Fetching sheratutor_rubric_train.jsonl directly from GitHub raw...")
+    import urllib.request
+    remote_url = "https://raw.githubusercontent.com/CodeStorm-Hub/Sheratutor/fine-tuning-math-hmath-bn/training/dataset/kaggle_dataset/sheratutor_rubric_train.jsonl"
+    try:
+        urllib.request.urlretrieve(remote_url, "sheratutor_rubric_train.jsonl")
+        dataset_path = "sheratutor_rubric_train.jsonl"
+        print(f"[*] Successfully downloaded dataset ({os.path.getsize(dataset_path)} bytes).")
+    except Exception as e:
+        print(f"[!] Warning: Failed to download from GitHub: {e}")
+
+if dataset_path and os.path.exists(dataset_path):
     print(f"[*] Loading dataset from: {dataset_path}")
     raw_dataset = load_dataset("json", data_files=dataset_path, split="train")
 else:
@@ -150,9 +166,9 @@ else:
     raw_dataset = Dataset.from_list([
         {
             "messages": [
-                {"role": "system", "content": "তুমি সেরাটিউটর — এসএসসি পর্যায়ের বিজ্ঞান ও গণিত শিক্ষক।"},
-                {"role": "user", "content": "নিউটনের দ্বিতীয় সূত্রটি কি?"},
-                {"role": "assistant", "content": "নিউটনের দ্বিতীয় সূত্র: বস্তুর ভরবেগের পরিবর্তনের হার তার উপর প্রযুক্ত বলের সমানুপাতিক এবং বল যেদিকে ক্রিয়া করে ভরবেগের পরিবর্তনও সেদিকে ঘটে। অর্থাৎ \\( F = ma \\)।"}
+                {"role": "system", "content": "You are an expert Bangladeshi SSC/HSC board examiner and AI grading engine for SheraTutor. Output ONLY a raw, valid JSON object conforming exactly to the RubricEvaluationSchema."},
+                {"role": "user", "content": "QUESTION (max 1.0 marks): বলের SI একক কী?\n\nOFFICIAL RUBRIC: [{\"step_name\": \"Correct Option\", \"matching_rules\": \"Student must select খ) N\", \"max_step_marks\": 1}]\n\nSTUDENT'S TRANSCRIBED ANSWER:\nবলের SI একক হলো kg \\cdot m/s^2"},
+                {"role": "assistant", "content": "{\"question_id\": \"seed-001\", \"max_marks\": 1.0, \"score_obtained\": 0.0, \"criteria_evaluations\": [{\"step_name\": \"Correct Option\", \"max_step_marks\": 1.0, \"awarded_marks\": 0.0, \"status\": \"INCORRECT\", \"observation\": \"ছাত্র বলের মূল SI একক 'নিউটন' (N) এর পরিবর্তে এর মাত্রাভিত্তিক একক লিখেছে।\", \"cited_rubric_rule\": \"Student must select খ) N\"}], \"deduction_summary_bn\": \"বলের একক নিউটন (N), কিন্তু আপনি মাত্রাভিত্তিক একক লিখেছেন।\", \"deduction_summary_en\": \"The student wrote the dimensional unit instead of the standard SI unit Newton (N).\", \"grounding_confidence\": 0.95, \"transcript_mismatch_detected\": false, \"mistake_category\": \"CALCULATION_ERROR\", \"arithmetic_verified\": true}"}
             ]
         }
     ])
@@ -187,7 +203,7 @@ trainer = SFTTrainer(
         per_device_train_batch_size = 2,
         gradient_accumulation_steps = 4,
         warmup_steps = 5,
-        max_steps = 60,                 # Adjust based on dataset size (e.g., 60-300)
+        num_train_epochs = 3,           # Train 3 full epochs across all 208 samples (~78 steps)
         learning_rate = 2e-4,
         fp16 = not is_bfloat16_supported(),
         bf16 = is_bfloat16_supported(),
