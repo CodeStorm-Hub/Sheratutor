@@ -100,6 +100,9 @@ export const metadata: Metadata = {
   icons: {
     icon: '/icon.svg',
   },
+  other: {
+    'darkreader-lock': '',
+  },
 };
 
 export default function RootLayout({
@@ -113,6 +116,9 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`${baloo2.variable} ${balooDa2.variable} ${inter.variable} ${spaceMono.variable} ${notoSansBengali.variable}`}
     >
+      <head>
+        <meta name="darkreader-lock" />
+      </head>
       <body suppressHydrationWarning>
         <ThemeProvider>
           <LanguageProvider>
