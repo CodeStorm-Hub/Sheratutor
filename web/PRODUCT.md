@@ -30,6 +30,8 @@ Unlike generic AI tutors or Western-centric ed-tech platforms, SheraTutor is gro
   - Vision-powered OCR and grading for handwritten exam scripts (Creative Questions & Multiple Choice Questions).
   - Step-by-step mark breakdown explaining exactly where and why marks were deducted.
   - NCTB-grounded conversational AI tutor ("Explain it simply") with bilingual Bangla/English support.
+  - Gamified Interactive Study Playground (`/dashboard/playground`) transforming abstract NCTB concepts into visual micro-sandboxes, dynamic simulations, and timed Boss Rush challenges.
+  - NCTB Board Master & Problem Solver Guide with step-by-step model solutions, CQ ($2+4+4$) mark rubrics, examiner deduction traps, and 5-year board matrices.
   - Adaptive study planner dynamically targeting weak chapters based on performance analytics.
   - Board-standard mock exam and question paper generator.
 - **Constraints & Stack:**

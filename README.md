@@ -108,8 +108,11 @@ capture, email/Google auth, onboarding with an under-18 age gate, student
 dashboard (momentum score, weakness heatmap, quick wins), script upload with
 client-side downscaling, the full 4-layer Genkit grading pipeline with
 provenance tracking, evaluation breakdown UI, the "Explain it simply"
-tutor chat with a minor-safety pre-filter, and the golden-set schema + eval
-harness (`web/scripts/eval-golden-set.ts`, see `ingestion/README.md` "Golden
+tutor chat with a minor-safety pre-filter, the interactive **Study Material Playground**
+(`/dashboard/playground`) featuring gamified simulations, 60s Boss Rush battles, and
+the 5-pillar **NCTB Board Master & Problem Solver Guide** for Class 9–10 General Math
+(live for Chapter 1: Real Numbers and Chapter 2: Sets & Functions), and the golden-set
+schema + eval harness (`web/scripts/eval-golden-set.ts`, see `ingestion/README.md` "Golden
 dataset") for measuring transcription fidelity and grading agreement once
 real graded scripts are collected.
 

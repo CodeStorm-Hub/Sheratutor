@@ -13,6 +13,8 @@ import {
   Menu,
   Monitor,
   Moon,
+  PanelLeftClose,
+  PanelLeftOpen,
   Search,
   Sparkles,
   Sun,
@@ -48,6 +50,8 @@ interface NotificationItem {
 
 interface HeaderProps {
   onMenuClick: () => void;
+  onDesktopSidebarToggle?: () => void;
+  desktopSidebarOpen?: boolean;
   userInitials?: string;
   userName?: string;
   userSub?: string;
@@ -55,6 +59,8 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({
   onMenuClick,
+  onDesktopSidebarToggle,
+  desktopSidebarOpen = true,
   userInitials = 'ST',
   userName = 'Student',
   userSub = 'HSC · Science',
@@ -175,6 +181,19 @@ export const Header: React.FC<HeaderProps> = ({
         >
           <Menu className="size-5" />
         </Button>
+
+        {onDesktopSidebarToggle && (
+          <Button
+            variant="ghost"
+            size="icon"
+            className="hidden lg:flex"
+            onClick={onDesktopSidebarToggle}
+            aria-label={desktopSidebarOpen ? 'সাইডবার লুকান' : 'সাইডবার প্রসারিত করুন'}
+            title={desktopSidebarOpen ? 'সাইডবার লুকান (Collapse sidebar)' : 'সাইডবার প্রসারিত করুন (Expand sidebar)'}
+          >
+            {desktopSidebarOpen ? <PanelLeftClose className="size-5" /> : <PanelLeftOpen className="size-5" />}
+          </Button>
+        )}
 
         <div className="flex min-w-0 items-center gap-1.5 text-xs text-muted-foreground">
           <span className="hidden sm:inline">{t('common.workspace')}</span>

@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState, Suspense } from 'react';
+import { usePathname } from 'next/navigation';
+import { PanelLeftClose, PanelLeftOpen } from 'lucide-react';
 import { SidebarContent } from '@/components/Sidebar';
 import { Header } from '@/components/Header';
 import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet';
@@ -13,15 +15,42 @@ export const ClientShell: React.FC<{
   isAdmin?: boolean;
 }> = ({ children, userName, userSub, userInitials, isAdmin = false }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
+  const pathname = usePathname();
+  const isPlayground = pathname?.startsWith('/dashboard/playground');
 
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Desktop sidebar */}
-      <aside className="fixed inset-y-0 left-0 z-40 hidden w-64 border-r border-sidebar-border bg-sidebar lg:block">
+      <aside
+        className={`fixed inset-y-0 left-0 z-40 hidden w-64 border-r border-sidebar-border bg-sidebar transition-transform duration-300 ease-in-out lg:block ${
+          desktopSidebarOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
         <Suspense fallback={<div className="h-full w-full bg-sidebar" />}>
           <SidebarContent userName={userName} userSub={userSub} isAdmin={isAdmin} />
         </Suspense>
+
+        {/* Desktop collapse button at bottom edge */}
+        <button
+          onClick={() => setDesktopSidebarOpen(false)}
+          className="absolute -right-3.5 top-20 z-50 flex h-7 w-7 items-center justify-center rounded-full border border-sidebar-border bg-sidebar text-muted-foreground shadow-sm hover:text-foreground hover:bg-muted transition-colors"
+          title="ড্যাশবোর্ড সাইডবার লুকান (Collapse sidebar)"
+        >
+          <PanelLeftClose className="h-3.5 w-3.5" />
+        </button>
       </aside>
+
+      {/* Floating expand button when desktop sidebar is collapsed */}
+      {!desktopSidebarOpen && (
+        <button
+          onClick={() => setDesktopSidebarOpen(true)}
+          className="fixed left-3 top-20 z-50 hidden lg:flex h-8 w-8 items-center justify-center rounded-xl border border-border bg-card shadow-md hover:bg-muted text-primary transition-all animate-in fade-in"
+          title="ড্যাশবোর্ড সাইডবার খুলুন (Expand sidebar)"
+        >
+          <PanelLeftOpen className="h-4 w-4" />
+        </button>
+      )}
 
       {/* Mobile drawer */}
       <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
@@ -42,16 +71,28 @@ export const ClientShell: React.FC<{
         </SheetContent>
       </Sheet>
 
-      <div className="lg:pl-64">
+      <div
+        className={`transition-all duration-300 ${
+          desktopSidebarOpen ? 'lg:pl-64' : 'lg:pl-0'
+        }`}
+      >
         <Suspense fallback={<header className="sticky top-0 z-30 flex h-16 w-full items-center border-b border-border bg-background/85 px-4 backdrop-blur-md sm:px-6 lg:px-10" />}>
           <Header
             onMenuClick={() => setMobileOpen(true)}
+            onDesktopSidebarToggle={() => setDesktopSidebarOpen(!desktopSidebarOpen)}
+            desktopSidebarOpen={desktopSidebarOpen}
             userInitials={userInitials}
             userName={userName}
             userSub={userSub}
           />
         </Suspense>
-        <main className="mx-auto w-full max-w-[1400px] px-4 pt-6 pb-16 sm:px-6 lg:px-10">
+        <main
+          className={`mx-auto w-full pt-6 pb-16 transition-all duration-300 ${
+            isPlayground
+              ? 'max-w-[1720px] px-3 sm:px-6 lg:px-8'
+              : 'max-w-[1400px] px-4 pt-6 pb-16 sm:px-6 lg:px-10'
+          }`}
+        >
           {children}
         </main>
       </div>
