@@ -30,6 +30,16 @@ const nextConfig: NextConfig = {
     browserToTerminal: true,
   },
 
+  async redirects() {
+    return [
+      {
+        source: '/dashboard/playground/math/:id',
+        destination: '/dashboard/playground/v2/math/:id',
+        permanent: true,
+      },
+    ];
+  },
+
   experimental: {
     optimizePackageImports: ['lucide-react', 'recharts', 'katex'],
   },

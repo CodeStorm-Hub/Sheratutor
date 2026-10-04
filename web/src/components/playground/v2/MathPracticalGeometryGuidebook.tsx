@@ -2028,7 +2028,7 @@ export function MathPracticalGeometryGuidebook() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <Link
-              href="/dashboard/playground"
+              href="/dashboard/playground/v2"
               className="text-xs font-semibold text-muted-foreground hover:text-foreground flex items-center gap-1 transition-colors"
             >
               প্লেগ্রাউন্ড লাইব্রেরি

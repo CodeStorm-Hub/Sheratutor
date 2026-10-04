@@ -693,7 +693,7 @@ export function RealNumbersGuidebook() {
           </button>
 
           <Link
-            href="/dashboard/playground"
+            href="/dashboard/playground/v2"
             className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-primary transition-colors"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -803,7 +803,7 @@ export function RealNumbersGuidebook() {
 
             {/* Back to All Chapters */}
             <Link
-              href="/dashboard/playground"
+              href="/dashboard/playground/v2"
               className="inline-flex items-center gap-2 text-xs font-bold text-muted-foreground hover:text-foreground px-2 py-1 transition-colors"
             >
               <ArrowLeft className="h-3.5 w-3.5" />

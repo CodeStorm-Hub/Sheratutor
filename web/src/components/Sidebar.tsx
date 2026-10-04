@@ -52,7 +52,7 @@ export function SidebarContent({
   const items: NavEntry[] = [
     { label: t('nav.home'), href: '/dashboard', icon: Home },
     { group: true, label: t('nav.learning') },
-    { label: t('nav.playground'), href: '/dashboard/playground', icon: Gamepad2, isNew: true },
+    { label: t('nav.playground'), href: '/dashboard/playground/v2', icon: Gamepad2, isNew: true },
     { label: t('nav.tutor'), href: '/dashboard/tutor', icon: Sparkles },
     { label: t('nav.exams'), href: '/dashboard/practice', icon: BookOpen },
     { label: t('nav.simulator'), href: '/dashboard/board-simulator', icon: GraduationCap },

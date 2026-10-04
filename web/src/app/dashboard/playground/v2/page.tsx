@@ -2,7 +2,7 @@
 
 import React, { Suspense } from 'react';
 import Link from 'next/link';
-import { Gamepad2, ChevronRight } from 'lucide-react';
+import { ChevronRight, Sparkles, Home } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { GuidebookLibraryView } from '@/components/playground/v2/GuidebookLibraryView';
 
@@ -12,24 +12,20 @@ export default function PlaygroundV2HubPage() {
 
   return (
     <div className="min-h-screen bg-[#F8F9FC] dark:bg-[#0D0F16] text-foreground p-4 sm:p-6 lg:p-10 transition-colors">
-      <div className="mx-auto max-w-6xl space-y-10">
-        {/* Top Breadcrumb & Version Switcher Banner */}
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 border-b border-border/40 pb-5">
+      <div className="mx-auto max-w-6xl space-y-8">
+        {/* Top Breadcrumb */}
+        <div className="flex items-center justify-between border-b border-border/40 pb-4">
           <div className="flex items-center gap-2 text-xs font-semibold text-muted-foreground">
-            <Link href="/dashboard/playground" className="hover:text-primary transition-colors">
-              {isBn ? 'খেলার মাঠ' : 'Playground'}
+            <Link href="/dashboard" className="hover:text-primary transition-colors flex items-center gap-1">
+              <Home className="h-3.5 w-3.5" />
+              <span>{isBn ? 'ড্যাশবোর্ড' : 'Dashboard'}</span>
             </Link>
             <ChevronRight className="h-3.5 w-3.5" />
-            <span className="text-primary font-bold">{isBn ? 'সংস্করণ ২ (ভার্চুয়াল গাইডবুক)' : 'Version 2 (Guidebook)'}</span>
+            <span className="text-foreground font-bold flex items-center gap-1.5">
+              <Sparkles className="h-3.5 w-3.5 text-[#FF6B57]" />
+              <span>{isBn ? 'খেলার মাঠ (ইন্টারেক্টিভ ল্যাব ও গাইডবুক)' : 'Playground (Interactive Labs & Guidebooks)'}</span>
+            </span>
           </div>
-
-          <Link
-            href="/dashboard/playground"
-            className="inline-flex items-center gap-2 rounded-xl border border-primary/20 bg-background/80 hover:bg-primary/5 px-4 py-2 text-xs font-bold text-foreground transition-all shadow-sm"
-          >
-            <Gamepad2 className="h-4 w-4 text-[#FF6B57]" />
-            <span>{isBn ? '🎮 সংস্করণ ১ (কোয়েস্ট অ্যারেনা)-এ ফিরে যান' : '🎮 Switch to Version 1 (Quest Arena)'}</span>
-          </Link>
         </div>
 
         <Suspense fallback={<div className="h-64 flex items-center justify-center text-sm text-muted-foreground">লোড হচ্ছে...</div>}>
