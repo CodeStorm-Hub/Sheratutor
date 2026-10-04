@@ -129,7 +129,9 @@ export function MistakesPageClient({
 
       {allTags.length > 0 && (
         <div className="rounded-xl border border-border bg-card p-4 shadow-xs">
-          <h3 className="mb-3 text-sm font-semibold">Weakness Tags Aggregator</h3>
+          <h3 className="mb-3 text-sm font-semibold">
+            {language === 'bn' ? 'দুর্বলতার ট্যাগসমূহ' : 'Weakness Tags'}
+          </h3>
           <div className="flex flex-wrap gap-2">
             {allTags.map((tag) => (
               <Tag key={tag} color="sun">#{tag}</Tag>

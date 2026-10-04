@@ -33,6 +33,7 @@ import {
   Waves,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -233,56 +234,43 @@ export default function PhysicsLightRefractionGuidebook() {
       {/* ------------------------------------------------------------------------- */}
       {/* 1. TOP HEADER & NAVIGATION BAR                                            */}
       {/* ------------------------------------------------------------------------- */}
-      <header className="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0 z-40 px-4 lg:px-8 py-3.5">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-          {/* Breadcrumb & Title */}
-          <div className="flex items-center space-x-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="text-xs font-semibold px-2.5 py-1 bg-slate-800 text-slate-300 rounded-lg hover:bg-slate-700 transition"
-            >
-              পদার্থবিজ্ঞান
-            </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-            <span className="text-xs font-mono text-cyan-400 bg-cyan-950/60 border border-cyan-800/50 px-2 py-0.5 rounded">
-              অধ্যায় ০৯
-            </span>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-            <div className="flex items-center gap-2">
-              <Sun className="w-4 h-4 text-cyan-400 animate-pulse" />
-              <h1 className="text-sm font-bold text-slate-100 tracking-wide">
-                আলোর প্রতিসরণ (Refraction of Light)
-              </h1>
-            </div>
-          </div>
-
-          {/* 5-Step Learning Navigation */}
-          <div className="flex items-center bg-slate-950/80 border border-slate-800 rounded-xl p-1 gap-1">
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={9}
+        chapterTitleBn="আলোর প্রতিসরণ (Refraction of Light)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS[activeLesson - 1]?.title}
+        onOpenAi={() => setShowAiDrawer(true)}
+        aiButtonLabel="এআই টিউটর"
+        centerContent={
+          <div className="flex items-center bg-slate-950/80 border border-slate-800 rounded-xl p-1 gap-1 text-xs">
             <button
               onClick={() => setActiveTab('learn')}
-              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 text-xs font-medium rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'learn'
                   ? 'bg-cyan-500 text-slate-950 font-bold shadow-md shadow-cyan-500/20'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
               }`}
             >
               <Compass className="w-3.5 h-3.5" />
-              <span>১. ল্যাব ও কনসেপ্ট</span>
+              <span>১. কনসেপ্ট</span>
             </button>
             <button
               onClick={() => setActiveTab('example')}
-              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 text-xs font-medium rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'example'
                   ? 'bg-cyan-500 text-slate-950 font-bold shadow-md shadow-cyan-500/20'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
               }`}
             >
               <BookOpen className="w-3.5 h-3.5" />
-              <span>২. বোর্ড CQ</span>
+              <span>২. CQ</span>
             </button>
             <button
               onClick={() => setActiveTab('practice')}
-              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 text-xs font-medium rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'practice'
                   ? 'bg-cyan-500 text-slate-950 font-bold shadow-md shadow-cyan-500/20'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
@@ -293,18 +281,18 @@ export default function PhysicsLightRefractionGuidebook() {
             </button>
             <button
               onClick={() => setActiveTab('quiz')}
-              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 text-xs font-medium rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'quiz'
                   ? 'bg-cyan-500 text-slate-950 font-bold shadow-md shadow-cyan-500/20'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
               }`}
             >
               <Award className="w-3.5 h-3.5" />
-              <span>৪. MCQ কুইজ</span>
+              <span>৪. কুইজ</span>
             </button>
             <button
               onClick={() => setActiveTab('summary')}
-              className={`px-3 py-1.5 text-xs font-medium rounded-lg transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 text-xs font-medium rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'summary'
                   ? 'bg-amber-400 text-slate-950 font-bold shadow-md shadow-amber-400/20'
                   : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900'
@@ -313,18 +301,9 @@ export default function PhysicsLightRefractionGuidebook() {
               <Sparkles className="w-3.5 h-3.5" />
               <span>৫. সামারি</span>
             </button>
-
-            {/* Socratic AI Tutor Button */}
-            <button
-              onClick={() => setShowAiDrawer(true)}
-              className="ml-1 px-3 py-1.5 text-xs font-semibold rounded-lg bg-indigo-950/70 text-indigo-300 border border-indigo-700/60 hover:bg-indigo-900/80 transition flex items-center gap-1.5"
-            >
-              <MessageSquare className="w-3.5 h-3.5 text-indigo-400" />
-              <span>সক্রেটিক এআই টিউটর</span>
-            </button>
           </div>
-        </div>
-      </header>
+        }
+      />
 
       {/* ------------------------------------------------------------------------- */}
       {/* 2. MAIN WORKSPACE CONTAINER                                               */}

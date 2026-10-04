@@ -42,6 +42,7 @@ import {
   Share2,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -577,47 +578,30 @@ export default function PhysicsMagneticEffectsGuidebook() {
       {/* ------------------------------------------------------------------- */}
       {/* HEADER & CHAPTER BREADCRUMB */}
       {/* ------------------------------------------------------------------- */}
-      <header className="sticky top-0 z-40 border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="flex items-center space-x-2 text-slate-400 hover:text-emerald-400 transition-colors"
-            >
-              <Compass className="w-5 h-5 text-emerald-400" />
-              <span className="text-xs uppercase tracking-wider font-semibold">লাইব্রেরি</span>
-            </Link>
-            <ChevronRight className="w-4 h-4 text-slate-600" />
-            <div className="flex items-center space-x-2">
-              <span className="px-2 py-0.5 text-xs font-bold rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                অধ্যায় ১২
-              </span>
-              <h1 className="text-sm font-semibold text-slate-200 hidden sm:inline-block">
-                বিদ্যুতের চৌম্বক ক্রিয়া
-              </h1>
-            </div>
-          </div>
-
-          {/* Socratic AI Drawer Trigger */}
-          <div className="flex items-center space-x-3">
-            <button
-              onClick={() => setIsAiDrawerOpen(true)}
-              className="flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs font-medium transition-all shadow-sm shadow-emerald-950"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>শেরু এআই গাইড</span>
-            </button>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={12}
+        chapterTitleBn="বিদ্যুতের চৌম্বক ক্রিয়া (Magnetic Effects of Electric Current)"
+        activeLesson={activeLab}
+        activeLessonTitle={LAB_LESSONS[activeLab - 1]?.title}
+        onOpenAi={() => setIsAiDrawerOpen(true)}
+        aiButtonLabel="শেরু এআই গাইড"
+        rightExtras={
+          <div className="flex items-center gap-2">
             <Link
               href="/dashboard/playground/v2/physics/11"
-              className="text-xs text-slate-400 hover:text-slate-200 px-2 py-1 rounded bg-slate-900 border border-slate-800"
+              className="text-xs text-muted-foreground hover:text-foreground px-2.5 py-1 rounded-lg bg-card border border-border/80 transition-colors"
             >
-              পূর্ববর্তী: অধ্যায় ১১
+              পূর্ববর্তী: অধ্যায় ১১
             </Link>
           </div>
-        </div>
+        }
+      />
 
-        {/* 5-Step Learning Navigation Tabs */}
-        <div className="border-t border-slate-900 bg-slate-950/60 overflow-x-auto">
+      {/* 5-Step Learning Navigation Tabs */}
+      <div className="border-b border-slate-900 bg-slate-950/60 overflow-x-auto sticky top-[49px] z-30">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex space-x-1 sm:space-x-4">
             {[
               { id: 1, label: '১. মূল ধারণা ও ল্যাব', sub: '৫টি ইন্টারেক্টিভ সিমুলেটর' },
@@ -641,7 +625,6 @@ export default function PhysicsMagneticEffectsGuidebook() {
             ))}
           </div>
         </div>
-      </header>
 
       {/* ------------------------------------------------------------------- */}
       {/* MAIN CONTENT AREA */}

@@ -29,13 +29,16 @@ export function PlannerPageClient({
   planId,
   currentDay = 1,
   initialTasks = [],
-  recommendationTitle = 'Sharpen your trigonometry',
-  recommendationBody = 'Most recent mistakes are step-based errors.',
+  recommendationTitle,
+  recommendationBody,
   masteryPercent = 72,
 }: PlannerClientProps) {
   const [tasks, setTasks] = useState<Task[]>(initialTasks);
   const [isPending, startTransition] = useTransition();
   const { language, t } = useLanguage();
+
+  const displayRecTitle = recommendationTitle || (language === 'bn' ? 'ত্রিকোণমিতি ঝালিয়ে নাও' : 'Sharpen your trigonometry');
+  const displayRecBody = recommendationBody || (language === 'bn' ? 'সাম্প্রতিক অনুশীলনে ধাপ সংক্রান্ত ভুল বেশি হয়েছে।' : 'Most recent mistakes are step-based errors.');
 
   const days =
     language === 'bn'
@@ -134,8 +137,8 @@ export function PlannerPageClient({
 
         <aside className="rounded-2xl border border-border bg-ochre-soft p-5">
           <Tag color="coral">{t('planner.recommendation_badge')}</Tag>
-          <h3 className="mt-3.5 mb-2 font-heading text-xl leading-tight font-bold">{recommendationTitle}</h3>
-          <p className="text-xs leading-relaxed text-muted-foreground">{recommendationBody}</p>
+          <h3 className="mt-3.5 mb-2 font-heading text-xl leading-tight font-bold">{displayRecTitle}</h3>
+          <p className="text-xs leading-relaxed text-muted-foreground">{displayRecBody}</p>
           <button type="button" className="mt-1.5 flex items-center gap-1 py-1.5 text-xs font-semibold text-heading hover:text-cta">
             {language === 'bn' ? 'প্রস্তাবিত প্ল্যান দেখুন' : 'See recommended plan'}
             <ChevronRight size={15} />

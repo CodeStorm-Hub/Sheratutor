@@ -32,6 +32,7 @@ import {
   ChevronDown,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 type TabStep = 1 | 2 | 3 | 4 | 5;
 
@@ -256,53 +257,18 @@ export default function PhysicsForceGuidebook() {
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
-      {/* Top Header / Breadcrumb Bar */}
-      <header className="sticky top-0 z-40 w-full border-b border-border/80 bg-background/95 backdrop-blur-md px-4 sm:px-6 py-2.5 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            className="p-1.5 rounded-lg border border-border/80 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1.5 text-xs font-medium"
-            title="টগল পাঠ তালিকা"
-          >
-            <Layers className="h-4 w-4 text-primary" />
-            <span className="hidden sm:inline">
-              {isSidebarOpen ? 'পাঠ তালিকা লুকান' : 'পাঠ তালিকা দেখুন'}
-            </span>
-          </button>
-
-          <Link
-            href="/dashboard/playground/v2"
-            className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-primary transition-colors py-1 px-2.5 rounded-lg hover:bg-primary/10"
-          >
-            <ArrowLeft className="h-3.5 w-3.5" />
-            <span>লাইব্রেরিতে ফিরুন</span>
-          </Link>
-
-          <div className="hidden md:flex items-center gap-2 text-xs text-muted-foreground">
-            <span>/</span>
-            <span className="text-foreground font-semibold">পদার্থবিজ্ঞান</span>
-            <span>/</span>
-            <span className="text-primary font-bold">অধ্যায় ৩: বল (Force)</span>
-            <span>/</span>
-            <span className="text-xs text-muted-foreground">Lesson {activeLesson}</span>
-          </div>
-        </div>
-
-        {/* Right Badges */}
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => handleAskAi('নিউটনের ৩টি সূত্র সংক্ষেপে বুঝিয়ে দাও')}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 text-xs font-bold transition-all"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            <span>AI শিক্ষক</span>
-          </button>
-          <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-xs font-bold">
-            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>Version 2.0 • Virtual Guidebook</span>
-          </div>
-        </div>
-      </header>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={3}
+        chapterTitleBn="বল (Force)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS_META[activeLesson]?.titleBn}
+        isSidebarOpen={isSidebarOpen}
+        onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+        onOpenAi={() => handleAskAi('নিউটনের ৩টি সূত্র সংক্ষেপে বুঝিয়ে দাও')}
+      />
 
       {/* Main Layout Grid */}
       <div className="flex-1 flex w-full max-w-[1700px] mx-auto overflow-hidden">

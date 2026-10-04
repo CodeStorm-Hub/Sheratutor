@@ -40,6 +40,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 export type LearningStep = 'concept' | 'example' | 'try' | 'check' | 'summary';
 
@@ -375,58 +376,18 @@ export function PhysicsMotionGuidebook() {
 
   return (
     <div className="space-y-6">
-      {/* Top Breadcrumb & Switcher Navigation */}
-      <div className="flex flex-wrap items-center justify-between gap-3 border-b border-border/60 pb-3 text-xs">
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setIsSidebarOpen(!isSidebarOpen)}
-            className="p-1.5 rounded-lg bg-card border border-border hover:bg-muted text-muted-foreground flex items-center gap-1.5 transition-colors"
-            title={isSidebarOpen ? 'পাঠ তালিকা লুকান' : 'পাঠ তালিকা দেখুন'}
-          >
-            {isSidebarOpen ? (
-              <>
-                <PanelLeftClose className="h-4 w-4" />
-                <span className="hidden sm:inline">পাঠ তালিকা লুকান</span>
-              </>
-            ) : (
-              <>
-                <PanelLeftOpen className="h-4 w-4" />
-                <span className="hidden sm:inline">পাঠ তালিকা খুলুন</span>
-              </>
-            )}
-          </button>
-
-          <Link
-            href="/dashboard/playground/v2"
-            className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-lg bg-card border border-border text-foreground hover:bg-muted transition-colors font-semibold"
-          >
-            <ArrowLeft className="h-3.5 w-3.5" />
-            <span>লাইব্রেরিতে ফিরুন</span>
-          </Link>
-
-          <span className="text-muted-foreground">/</span>
-          <span className="font-semibold text-foreground">পদার্থবিজ্ঞান</span>
-          <span className="text-muted-foreground">/</span>
-          <span className="font-bold text-primary">অধ্যায় ২: গতি (Motion)</span>
-          <span className="text-muted-foreground">/</span>
-          <span className="text-xs text-muted-foreground">Lesson {activeLesson}</span>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setActiveModal('notes')}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary/10 border border-primary/20 text-primary font-bold hover:bg-primary/20 transition-all text-xs"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            <span>AI শিক্ষক</span>
-          </button>
-
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold border border-emerald-500/20 text-xs">
-            <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>Version 2.0 • Virtual Guidebook</span>
-          </div>
-        </div>
-      </div>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={2}
+        chapterTitleBn="গতি (Motion)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS_META[activeLesson]?.titleBn}
+        isSidebarOpen={isSidebarOpen}
+        onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+        onOpenAi={() => setActiveModal('notes')}
+      />
 
       {/* Main Container Layout */}
       <div className="flex flex-col lg:flex-row gap-6 items-start">

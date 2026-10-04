@@ -27,6 +27,7 @@ import {
   Compass,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 interface LessonContent {
   id: number;
@@ -377,103 +378,78 @@ export default function PhysicsHeatMatterGuidebook() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col font-sans selection:bg-rose-500/30 selection:text-rose-200">
-      {/* ------------------------------------------------------------------- */}
-      {/* HEADER BAR                                                          */}
-      {/* ------------------------------------------------------------------- */}
-      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur-md sticky top-0 z-40 px-4 lg:px-6 py-3 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setSidebarOpen(!sidebarOpen)}
-            className="p-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 transition-colors"
-            title="টগল লেসন সূচিপত্র"
-          >
-            <Layers className="w-5 h-5 text-rose-400" />
-          </button>
-          <div className="flex items-center gap-2">
-            <Link
-              href="/dashboard/playground/v2?subject=physics"
-              className="text-xs text-slate-400 hover:text-slate-200 flex items-center gap-1 transition-colors"
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={6}
+        chapterTitleBn="বস্তুর ওপর তাপের প্রভাব (Effect of Heat on Matter)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS[activeLesson - 1]?.title}
+        isSidebarOpen={sidebarOpen}
+        onToggleSidebar={() => setSidebarOpen(!sidebarOpen)}
+        onOpenAi={() => setAiTutorOpen(true)}
+        aiButtonLabel="এআই টিউটর"
+        centerContent={
+          <div className="flex items-center gap-1 bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs font-medium">
+            <button
+              onClick={() => setActiveStep('learn')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeStep === 'learn'
+                  ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
             >
-              <span>পদার্থবিজ্ঞান</span>
-              <ChevronRight className="w-3 h-3" />
-            </Link>
-            <span className="text-xs px-2 py-0.5 rounded-full bg-rose-500/10 text-rose-400 border border-rose-500/20 font-mono">
-              অধ্যায় ০৬
-            </span>
-            <h1 className="text-sm font-semibold text-slate-200 hidden sm:inline">
-              বস্তুর ওপর তাপের প্রভাব (Effect of Heat on Matter)
-            </h1>
+              <Thermometer className="w-3.5 h-3.5" />
+              <span>১. কনসেপ্ট</span>
+            </button>
+            <button
+              onClick={() => setActiveStep('example')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeStep === 'example'
+                  ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>২. CQ</span>
+            </button>
+            <button
+              onClick={() => setActiveStep('try')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeStep === 'try'
+                  ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Sliders className="w-3.5 h-3.5" />
+              <span>৩. প্র্যাকটিস</span>
+            </button>
+            <button
+              onClick={() => setActiveStep('quiz')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeStep === 'quiz'
+                  ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Award className="w-3.5 h-3.5" />
+              <span>৪. কুইজ</span>
+            </button>
+            <button
+              onClick={() => setActiveStep('summary')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeStep === 'summary'
+                  ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>৫. সামারি</span>
+            </button>
           </div>
-        </div>
-
-        {/* 5-Step Mode Switcher */}
-        <div className="flex items-center gap-1 bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs font-medium">
-          <button
-            onClick={() => setActiveStep('learn')}
-            className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
-              activeStep === 'learn'
-                ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <Thermometer className="w-3.5 h-3.5" />
-            <span>১. ল্যাব ও কনসেপ্ট</span>
-          </button>
-          <button
-            onClick={() => setActiveStep('example')}
-            className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
-              activeStep === 'example'
-                ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <BookOpen className="w-3.5 h-3.5" />
-            <span>২. বোর্ড CQ</span>
-          </button>
-          <button
-            onClick={() => setActiveStep('try')}
-            className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
-              activeStep === 'try'
-                ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <Sliders className="w-3.5 h-3.5" />
-            <span>৩. প্র্যাকটিস</span>
-          </button>
-          <button
-            onClick={() => setActiveStep('quiz')}
-            className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
-              activeStep === 'quiz'
-                ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <Award className="w-3.5 h-3.5" />
-            <span>৪. MCQ কুইজ</span>
-          </button>
-          <button
-            onClick={() => setActiveStep('summary')}
-            className={`px-3 py-1.5 rounded-lg transition-all flex items-center gap-1.5 ${
-              activeStep === 'summary'
-                ? 'bg-rose-600 text-white shadow-lg shadow-rose-600/30'
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>৫. সামারি</span>
-          </button>
-        </div>
-
-        {/* AI Tutor Button */}
-        <button
-          onClick={() => setAiTutorOpen(true)}
-          className="flex items-center gap-1.5 px-3 py-1.5 bg-gradient-to-r from-rose-500/20 to-orange-500/20 hover:from-rose-500/30 hover:to-orange-500/30 border border-rose-500/30 text-rose-300 rounded-lg text-xs font-medium transition-all"
-        >
-          <Sparkles className="w-3.5 h-3.5 text-rose-400 animate-pulse" />
-          <span className="hidden md:inline">সক্রেটিক এআই টিউটর</span>
-        </button>
-      </header>
+        }
+      />
 
       {/* ------------------------------------------------------------------- */}
       {/* MAIN WORKSPACE LAYOUT                                               */}

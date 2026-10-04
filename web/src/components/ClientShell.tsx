@@ -6,6 +6,7 @@ import { PanelLeftClose, PanelLeftOpen } from 'lucide-react';
 import { SidebarContent } from '@/components/Sidebar';
 import { Header } from '@/components/Header';
 import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet';
+import { useLanguage } from '@/context/LanguageContext';
 
 export const ClientShell: React.FC<{
   children: React.ReactNode;
@@ -14,6 +15,8 @@ export const ClientShell: React.FC<{
   userInitials?: string;
   isAdmin?: boolean;
 }> = ({ children, userName, userSub, userInitials, isAdmin = false }) => {
+  const { language } = useLanguage();
+  const isBn = language === 'bn';
   const [mobileOpen, setMobileOpen] = useState(false);
   const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
   const pathname = usePathname();
@@ -31,11 +34,12 @@ export const ClientShell: React.FC<{
           <SidebarContent userName={userName} userSub={userSub} isAdmin={isAdmin} />
         </Suspense>
 
-        {/* Desktop collapse button at bottom edge */}
+        {/* Desktop collapse button at header alignment edge */}
         <button
           onClick={() => setDesktopSidebarOpen(false)}
-          className="absolute -right-3.5 top-20 z-50 flex h-7 w-7 items-center justify-center rounded-full border border-sidebar-border bg-sidebar text-muted-foreground shadow-sm hover:text-foreground hover:bg-muted transition-colors"
-          title="ড্যাশবোর্ড সাইডবার লুকান (Collapse sidebar)"
+          className="absolute -right-3 top-5 z-50 flex h-6 w-6 items-center justify-center rounded-full border border-sidebar-border bg-sidebar text-muted-foreground shadow-xs hover:text-foreground hover:bg-surface-2 transition-all hover:scale-110 active:scale-95 focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
+          title={isBn ? 'ড্যাশবোর্ড সাইডবার লুকান' : 'Collapse sidebar'}
+          aria-label={isBn ? 'ড্যাশবোর্ড সাইডবার লুকান' : 'Collapse sidebar'}
         >
           <PanelLeftClose className="h-3.5 w-3.5" />
         </button>
@@ -45,8 +49,9 @@ export const ClientShell: React.FC<{
       {!desktopSidebarOpen && (
         <button
           onClick={() => setDesktopSidebarOpen(true)}
-          className="fixed left-3 top-20 z-50 hidden lg:flex h-8 w-8 items-center justify-center rounded-xl border border-border bg-card shadow-md hover:bg-muted text-primary transition-all animate-in fade-in"
-          title="ড্যাশবোর্ড সাইডবার খুলুন (Expand sidebar)"
+          className="fixed left-3 top-4 z-50 hidden lg:flex h-8 w-8 items-center justify-center rounded-xl border border-border bg-card shadow-sm hover:bg-surface-2 text-foreground hover:text-cta transition-all hover:scale-105 active:scale-95 animate-in fade-in focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring"
+          title={isBn ? 'ড্যাশবোর্ড সাইডবার খুলুন' : 'Expand sidebar'}
+          aria-label={isBn ? 'ড্যাশবোর্ড সাইডবার খুলুন' : 'Expand sidebar'}
         >
           <PanelLeftOpen className="h-4 w-4" />
         </button>

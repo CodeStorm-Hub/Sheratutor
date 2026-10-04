@@ -108,10 +108,14 @@ capture, email/Google auth, onboarding with an under-18 age gate, student
 dashboard (momentum score, weakness heatmap, quick wins), script upload with
 client-side downscaling, the full 4-layer Genkit grading pipeline with
 provenance tracking, evaluation breakdown UI, the "Explain it simply"
-tutor chat with a minor-safety pre-filter, the interactive **Study Material Playground**
-(`/dashboard/playground`) featuring gamified simulations, 60s Boss Rush battles, and
-the 5-pillar **NCTB Board Master & Problem Solver Guide** for Class 9–10 General Math
-(live for Chapter 1: Real Numbers and Chapter 2: Sets & Functions), and the golden-set
+tutor chat with a minor-safety pre-filter, the **Canonical Interactive Playground V2**
+(`/dashboard/playground/v2`) featuring all 17 Class 9–10 General Math chapters (100% complete),
+12 Physics chapters (86% complete), and all 12 Chemistry chapters (100% complete) with the 3-column pedagogical architecture,
+5-step learning framework, interactive SVG sandboxes, and NCTB Board Master rubrics, complete **Bilingual Textbook Ingestion**
+for Chemistry (both Bengali and English versions) into Supabase pgvector with Gemini embeddings, **Teen Student Typography System** (`Outfit`, `Plus Jakarta Sans`,
+`Baloo Da 2`, `Hind Siliguri`, `JetBrains Mono`), **Academic Daylight & Midnight Cosmic Study Themes**
+(glare-free warm porcelain `#F8FAFC` and Midnight Cosmic Obsidian `#0E1322`), **Tactile Side Navigation Rail & Top Command Palette (`⌘K` / `Ctrl K`)**,
+**100% Platform-Wide Bilingual Localization** (`বাংলা` / `ENG`), and the golden-set
 schema + eval harness (`web/scripts/eval-golden-set.ts`, see `ingestion/README.md` "Golden
 dataset") for measuring transcription fidelity and grading agreement once
 real graded scripts are collected.

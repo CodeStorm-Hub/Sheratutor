@@ -125,49 +125,48 @@
   --white: oklch(1 0 0);
   --black: oklch(0 0 0);
 
-  --slate-50:  oklch(0.984 0.003 265);
-  --slate-100: oklch(0.968 0.007 260);
-  --slate-200: oklch(0.929 0.012 261);
-  --slate-300: oklch(0.869 0.020 259);
-  --slate-400: oklch(0.704 0.032 257);
-  --slate-500: oklch(0.554 0.041 257);
-  --slate-600: oklch(0.446 0.037 258);
-  --slate-700: oklch(0.372 0.038 259);
-  --slate-800: oklch(0.279 0.038 260);
-  --slate-900: oklch(0.208 0.040 266);
-  --slate-950: oklch(0.204 0.040 277);
+  --slate-50:  oklch(0.985 0.005 250);
+  --slate-100: oklch(0.965 0.008 250);
+  --slate-200: oklch(0.920 0.012 250);
+  --slate-300: oklch(0.865 0.018 250);
+  --slate-400: oklch(0.705 0.030 250);
+  --slate-500: oklch(0.550 0.040 250);
+  --slate-600: oklch(0.440 0.035 250);
+  --slate-700: oklch(0.365 0.035 250);
+  --slate-800: oklch(0.265 0.035 255);
+  --slate-900: oklch(0.190 0.038 260);
+  --slate-950: oklch(0.130 0.035 265);
 
-  /* Brand-navy dark canvas ramp — the SheraTutor logo badge gradient
-     (#1E2761 → #14182B) resolved into a scale. Hue 278, real chroma so it
-     reads as deep indigo "cosmic study", not neutral graphite. ink-900 is
-     the page canvas; ink-850 the raised panel/card (≈ the badge navy). The
-     step between them is wide enough that cards lift off the page without a
-     heavy border. */
-  --ink-900: oklch(0.171 0.044 278);
-  --ink-850: oklch(0.223 0.055 278);
-  --ink-800: oklch(0.262 0.058 278);
-  --ink-750: oklch(0.303 0.055 278);
-  --ink-700: oklch(0.362 0.050 278);
+  /* Deep Cosmic Midnight Study ramp — refined from muddy violet (278) to
+     immersive Midnight Obsidian / Cosmic Slate (hue 262). Tuned specifically
+     for Gen Z / teenage late-night exam revision: zero eye fatigue, high-energy
+     neon-balanced accents, and distinct tactile card elevation. */
+  --ink-950: oklch(0.125 0.028 262);
+  --ink-900: oklch(0.142 0.032 262); /* Midnight study canvas */
+  --ink-850: oklch(0.188 0.038 262); /* Elevated cosmic card / panel */
+  --ink-800: oklch(0.230 0.042 262); /* Hovered card / secondary slot */
+  --ink-750: oklch(0.270 0.045 262); /* Recessed inputs / active chips */
+  --ink-700: oklch(0.320 0.045 262); /* Highlighted micro-borders */
 
-  --coral-300: oklch(0.820 0.090 33);
-  --coral-400: oklch(0.760 0.140 33);
-  --coral-500: oklch(0.706 0.164 33);
-  --coral-600: oklch(0.640 0.176 31);
-  --coral-700: oklch(0.560 0.160 30);
-  --coral-wash: oklch(0.970 0.017 40);
+  --coral-300: oklch(0.820 0.100 34);
+  --coral-400: oklch(0.730 0.200 34); /* Hyper Sunset Coral */
+  --coral-500: oklch(0.660 0.210 34); /* Energetic Coral Action */
+  --coral-600: oklch(0.600 0.215 32);
+  --coral-700: oklch(0.520 0.190 30);
+  --coral-wash: oklch(0.970 0.018 38);
 
-  --emerald-400: oklch(0.765 0.160 163);
-  --emerald-500: oklch(0.696 0.170 162);
-  --emerald-600: oklch(0.596 0.145 163);
-  --teal-400:    oklch(0.800 0.130 190);
+  --emerald-400: oklch(0.780 0.185 162); /* Cyber Mint / XP Reward */
+  --emerald-500: oklch(0.700 0.180 162);
+  --emerald-600: oklch(0.600 0.160 163);
+  --teal-400:    oklch(0.790 0.155 210); /* Electric Cyan / Vector */
 
-  --amber-400: oklch(0.828 0.150 78);
-  --amber-500: oklch(0.769 0.166 70);
+  --amber-400: oklch(0.825 0.175 78); /* Solar Gold Flame / Streak */
+  --amber-500: oklch(0.775 0.180 75);
 
-  --indigo-400: oklch(0.673 0.180 277);
-  --indigo-500: oklch(0.585 0.220 277);
+  --indigo-400: oklch(0.710 0.205 275); /* Electric Cosmic Indigo */
+  --indigo-500: oklch(0.585 0.220 275);
 
-  --red-400: oklch(0.704 0.191 22);
+  --red-400: oklch(0.705 0.210 25);
   --red-500: oklch(0.637 0.237 25);
   --red-600: oklch(0.577 0.245 27);
   --red-wash: oklch(0.958 0.023 20);
@@ -192,14 +191,14 @@
   --popover: var(--white);
   --popover-foreground: var(--slate-900);
 
-  /* Primary action = coral. Display type = brand navy (--heading), the
-     SheraTutor logo indigo (#1E2761 / #14182B) — not a neutral near-black. */
+  /* Primary action = energetic coral. Display type = brand navy (--heading),
+     the SheraTutor logo indigo (#1E2761 / #14182B) — deep and authoritative. */
   --primary: var(--coral-500);
   --primary-foreground: var(--white);
   --cta: var(--coral-500);
   --cta-foreground: var(--white);
-  --heading: oklch(0.27 0.10 273);
-  --navy: oklch(0.27 0.10 273);
+  --heading: oklch(0.240 0.085 268);
+  --navy: oklch(0.240 0.085 268);
 
   --secondary: var(--slate-100);
   --secondary-foreground: var(--slate-800);
@@ -207,7 +206,7 @@
   --muted: var(--slate-100);
   --muted-foreground: var(--slate-600);
 
-  /* true neutral hover slot (was a coral tint) */
+  /* true neutral hover slot */
   --accent: var(--slate-100);
   --accent-foreground: var(--slate-900);
 
@@ -236,7 +235,7 @@
   --mint: var(--emerald-500);
   --sun: var(--amber-500);
 
-  --sidebar: var(--white);
+  --sidebar: oklch(0.995 0.003 250);
   --sidebar-foreground: var(--slate-900);
   --sidebar-primary: var(--coral-500);
   --sidebar-primary-foreground: var(--white);
@@ -259,78 +258,78 @@
    ======================================================================== */
 .dark {
   --background: var(--ink-900);
-  --foreground: var(--slate-100);
+  --foreground: oklch(0.965 0.008 260);
 
   --surface-0: var(--ink-900);
   --surface-1: var(--ink-850);
-  --surface-2: var(--ink-750);
-  --surface-3: var(--ink-700);
+  --surface-2: var(--ink-800);
+  --surface-3: var(--ink-750);
 
   --card: var(--ink-850);
-  --card-foreground: var(--slate-100);
-  --popover: var(--ink-800);
-  --popover-foreground: var(--slate-100);
+  --card-foreground: oklch(0.965 0.008 260);
+  --popover: var(--ink-850);
+  --popover-foreground: oklch(0.965 0.008 260);
 
   --primary: var(--coral-400);
-  /* text on coral = deep brand navy, the SheraTutor colour pairing */
-  --primary-foreground: oklch(0.19 0.045 278);
+  /* text on coral = deep brand navy for maximum contrast and punch */
+  --primary-foreground: oklch(0.140 0.035 262);
   --cta: var(--coral-400);
-  --cta-foreground: oklch(0.19 0.045 278);
-  --heading: var(--slate-50);
-  /* brand badge navy (#1E2761), nudged brighter so it carries white text */
-  --navy: oklch(0.34 0.10 277);
+  --cta-foreground: oklch(0.140 0.035 262);
+  --heading: oklch(0.985 0.005 260);
+  /* brand badge navy (#1E2761), calibrated for dark background */
+  --navy: oklch(0.380 0.110 270);
 
-  --secondary: var(--ink-750);
-  --secondary-foreground: var(--slate-200);
+  --secondary: var(--ink-800);
+  --secondary-foreground: oklch(0.900 0.015 260);
 
   --muted: var(--ink-800);
-  --muted-foreground: oklch(0.72 0.035 278);
+  --muted-foreground: oklch(0.740 0.030 262);
 
-  --accent: var(--ink-750);
-  --accent-foreground: var(--slate-100);
+  --accent: var(--ink-800);
+  --accent-foreground: oklch(0.965 0.008 260);
 
   --accent2: var(--emerald-400);
 
   --success: var(--emerald-400);
-  --success-foreground: oklch(0.2 0.02 160);
+  --success-foreground: oklch(0.140 0.040 162);
   --warning: var(--amber-400);
-  --warning-foreground: oklch(0.2 0.02 70);
+  --warning-foreground: oklch(0.140 0.040 78);
 
   --destructive: var(--red-400);
-  --destructive-foreground: oklch(0.2 0.02 20);
+  --destructive-foreground: oklch(0.140 0.030 20);
 
   --mark-deduction: var(--red-400);
-  --mark-deduction-foreground: oklch(0.2 0.02 20);
+  --mark-deduction-foreground: oklch(0.140 0.030 20);
 
-  --border: oklch(0.9 0.03 278 / 12%);
-  --input: oklch(0.9 0.03 278 / 16%);
-  --ring: oklch(0.82 0.04 278);
+  --border: oklch(0.92 0.03 262 / 12%);
+  --input: oklch(0.92 0.03 262 / 16%);
+  --ring: var(--coral-400);
 
   --paper: var(--ink-900);
   --coral: var(--coral-400);
   --mint: var(--emerald-400);
   --sun: var(--amber-400);
 
-  --sidebar: var(--ink-850);
-  --sidebar-foreground: var(--slate-100);
+  --sidebar: var(--ink-900);
+  --sidebar-foreground: oklch(0.965 0.008 260);
   --sidebar-primary: var(--coral-400);
-  --sidebar-primary-foreground: oklch(0.19 0.045 278);
-  --sidebar-accent: var(--ink-750);
-  --sidebar-accent-foreground: var(--slate-100);
-  --sidebar-border: oklch(0.9 0.03 278 / 12%);
-  --sidebar-ring: oklch(0.82 0.04 278);
+  --sidebar-primary-foreground: oklch(0.140 0.035 262);
+  --sidebar-accent: var(--ink-800);
+  --sidebar-accent-foreground: oklch(0.965 0.008 260);
+  --sidebar-border: oklch(0.92 0.03 262 / 12%);
+  --sidebar-ring: var(--coral-400);
 
   --chart-1: var(--coral-400);
   --chart-2: var(--emerald-400);
   --chart-3: var(--amber-400);
   --chart-4: var(--indigo-400);
-  --chart-5: var(--slate-200);
+  --chart-5: oklch(0.850 0.020 260);
 
-  /* tint washes used by the legacy sheets — keep them subtle on dark */
-  --red-wash: oklch(0.30 0.06 22);
-  --coral-wash: oklch(0.30 0.05 40);
-  --success-wash: oklch(0.30 0.05 165);
-  --warning-wash: oklch(0.32 0.05 85);
+  /* tint washes used by legacy sheets */
+  --red-wash: oklch(0.24 0.06 22);
+  --coral-wash: oklch(0.24 0.05 40);
+  --success-wash: oklch(0.24 0.05 165);
+  --warning-wash: oklch(0.25 0.05 85);
 }
 
 @layer base {
@@ -351,7 +350,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    font-feature-settings: "liga" 1, "calt" 1;
   }
 
   html {
@@ -377,10 +376,13 @@
   :lang(bn) {
     --font-sans: var(--font-body-bn);
     --font-heading: var(--font-display-bn);
-    line-height: 1.65;
+    line-height: 1.68;
+    letter-spacing: 0.005em;
   }
   :lang(bn) h1, :lang(bn) h2, :lang(bn) h3, :lang(bn) h4 {
-    line-height: 1.4;
+    --font-heading: var(--font-display-bn);
+    line-height: 1.42;
+    letter-spacing: normal;
   }
 
   @media (prefers-reduced-motion: reduce) {

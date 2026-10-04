@@ -1,6 +1,6 @@
 # SheraTutor Brand Color Codes & Typography System
 
-> **Design Direction:** "Academic Daylight / Cosmic Study"  
+> **Design Direction:** "Academic Daylight / Midnight Cosmic Study"  
 > **Source of Truth:** `web/src/app/globals.css` · `web/src/app/layout.tsx` · `web/DESIGN.md`
 
 ---
@@ -11,12 +11,14 @@
 
 | Token Name | Color Role | HEX Code | OKLCH Value | Notes & Practical Usage |
 | :--- | :--- | :---: | :---: | :--- |
-| **Brand Coral** (`--primary`, `--cta`) | Primary Action Button | `#FF6B57` | `oklch(0.706 0.164 33)` | Main CTA buttons (*"Start Exam"*, *"Submit"*, active badges) |
-| **Brand Navy** (`--heading`, `--navy`) | Display Headlines | `#14182B` | `oklch(0.270 0.100 273)` | Prominent titles & logo anchor (`#1E2761`) |
-| **Canvas Light** (`--background`) | Light App Canvas | `#F8F9FC` | `oklch(0.984 0.003 265)` | Daylight porcelain workspace background |
-| **Card White** (`--card`, `--surface-1`) | Light Panels & Cards | `#FFFFFF` | `oklch(1.000 0.000 0)` | Raised cards, dialogs, question containers |
-| **Cosmic Navy** (`--background` dark) | Dark App Canvas | `#0D0F16` | `oklch(0.171 0.044 278)` | Deep late-night study background |
-| **Dark Card** (`--card` dark) | Dark Panels & Cards | `#141822` | `oklch(0.223 0.055 278)` | Raised panels in dark mode |
+| **Hyper Sunset Coral** (`--primary`, `--cta`) | Primary Action Button | `#FF5538` | `oklch(0.660 0.210 34)` | Main CTA buttons (*"Start Focus Session"*, *"Upload"*, active pills) |
+| **Brand Navy** (`--heading`, `--navy`) | Display Headlines | `#14182B` | `oklch(0.240 0.085 268)` | Prominent titles & logo anchor (`#1E2761`) |
+| **Canvas Light** (`--background`) | Light App Canvas | `#F8FAFC` | `oklch(0.985 0.005 250)` | Glare-free daylight porcelain workspace background |
+| **Card White** (`--card`, `--surface-1`) | Light Panels & Cards | `#FFFFFF` | `oklch(1.000 0.000 0)` | Pure white floating cards, dialogs, question containers |
+| **Midnight Obsidian** (`--background` dark) | Dark App Canvas | `#0E1322` | `oklch(0.142 0.032 262)` | Midnight cosmic study background (hue 262, zero eye fatigue) |
+| **Obsidian Card** (`--card` / `--surface-1` dark) | Dark Panels & Cards | `#161D31` | `oklch(0.188 0.038 262)` | Tier-1 elevated panels in dark mode |
+| **Obsidian Hover** (`--surface-2` dark) | Hovered / Active Slot | `#1E2642` | `oklch(0.230 0.042 262)` | Tier-2 active navigation pills & hover states |
+| **Obsidian Recessed** (`--surface-3` dark) | Inputs & Chips | `#273255` | `oklch(0.270 0.045 262)` | Tier-3 recessed inputs & active badges |
 
 ---
 
@@ -24,12 +26,15 @@
 
 | Role | Color Name | HEX Code | OKLCH Value | Usage Guidelines |
 | :--- | :--- | :---: | :---: | :--- |
-| **Success / Accent 2** | Emerald Green | `#10B981` | `oklch(0.696 0.170 162)` | Correct steps, earned marks, study streaks |
-| **Warning / Merit** | Solar Amber | `#F59E0B` | `oklch(0.769 0.166 70)` | Tips, hints, notices, boss rush countdown |
+| **Success / Cyber Mint** | Cyber Mint | `#10B981` | `oklch(0.700 0.180 162)` | Correct steps, earned marks, study streaks, active status pips |
+| **Warning / Solar Flame** | Solar Gold Flame | `#F59E0B` | `oklch(0.775 0.180 75)` | Tips, hints, notices, streaks, formula highlights |
+| **Electric Cyan** | Electric Cyan | `#06B6D4` | `oklch(0.790 0.155 210)` | Vector physics, formulas, simulator highlights |
+| **Electric Indigo** | Cosmic Indigo | `#6366F1` | `oklch(0.585 0.220 275)` | Logo badge gradient, secondary academic tags |
 | **General Error** | Alert Red | `#EF4444` | `oklch(0.637 0.237 25)` | Form input errors, network disconnections |
 | **Mark Deduction** | **Examiner Red** | `#DC2626` | `oklch(0.577 0.245 27)` | **Strictly Reserved:** Lost marks, missing steps |
-| **Borders (Light)** | Slate Border | `#E2E8F0` | `oklch(0.929 0.012 261)` | 1px dividers, card contours |
-| **Focus Ring** | Deep Contrast | `#0F172A` | `oklch(0.208 0.040 266)` | High-contrast focus outline around coral buttons |
+| **Borders (Light)** | Slate Border | `#E2E8F0` | `oklch(0.920 0.012 250)` | 1px dividers, card contours |
+| **Borders (Dark)** | Obsidian Border | — | `oklch(0.92 0.03 262 / 12%)` | 1px luminous borders in dark mode |
+| **Focus Ring** | Deep Contrast | `#0F172A` | `oklch(0.208 0.040 266)` | High-contrast focus outline around coral controls |
 
 > [!IMPORTANT]
 > **The Reserve Rule:** `--mark-deduction` (`#DC2626`) is strictly preserved for academic penalties (e.g., lost exam marks, examiner red ink, missing calculation steps in CQs). Generic application errors use `--destructive` (`#EF4444`).
@@ -44,28 +49,28 @@ All fonts are self-hosted via `next/font/google` with zero layout shift (`displa
 
 ```
 1. Display / Titles (English)
-   └─ Family: Baloo 2
-   └─ Weights: 600 (Semi-Bold), 700 (Bold)
+   └─ Family: Outfit
+   └─ Weights: 600 (Semi-Bold), 700 (Bold), 800 (Extra-Bold)
    └─ CSS Variable: --font-display
 
 2. Display / Titles (Bangla)
    └─ Family: Baloo Da 2
-   └─ Weights: 600 (Semi-Bold), 700 (Bold)
+   └─ Weights: 600 (Semi-Bold), 700 (Bold), 800 (Extra-Bold)
    └─ CSS Variable: --font-display-bn
 
 3. Body / Paragraphs (English)
-   └─ Family: Inter
-   └─ Weights: 400 (Regular), 500 (Medium), 600 (Semi-Bold)
+   └─ Family: Plus Jakarta Sans
+   └─ Weights: 400 (Regular), 500 (Medium), 600 (Semi-Bold), 700 (Bold), 800 (Extra-Bold)
    └─ CSS Variable: --font-body
 
 4. Body / Paragraphs (Bangla)
-   └─ Family: Noto Sans Bengali
-   └─ Weights: 400 (Regular), 600 (Semi-Bold), 700 (Bold)
+   └─ Family: Hind Siliguri
+   └─ Weights: 400 (Regular), 500 (Medium), 600 (Semi-Bold), 700 (Bold)
    └─ CSS Variable: --font-body-bn
 
-5. Eyebrows, Numbers & Timers (Monospace)
-   └─ Family: Space Mono
-   └─ Weights: 400 (Regular), 700 (Bold)
+5. Eyebrows, Numbers, Formulas & Timers (Monospace)
+   └─ Family: JetBrains Mono
+   └─ Weights: 400 (Regular), 500 (Medium), 600 (Semi-Bold), 700 (Bold)
    └─ CSS Variable: --font-mono-eyebrow
 ```
 
@@ -88,17 +93,20 @@ All fonts are self-hosted via `next/font/google` with zero layout shift (`displa
 
 ### Language-Specific Rule for Bengali (`:lang(bn)`)
 
-Bengali diacritics (*মাত্রা, কার, য-ফলা*) need extra vertical space to avoid text collision:
+Bengali diacritics (*মাত্রা, কার, য-ফলা*) need extra vertical space to avoid text collision, and positive letter spacing prevents conjunct (*যুক্তবর্ণ*) fracturing:
 
 ```css
 :lang(bn) {
-  --font-sans: var(--font-body-bn);       /* Noto Sans Bengali */
+  --font-sans: var(--font-body-bn);       /* Hind Siliguri */
   --font-heading: var(--font-display-bn); /* Baloo Da 2 */
-  line-height: 1.65;                      /* Elevated line-height */
+  line-height: 1.68;                      /* Elevated line-height */
+  letter-spacing: 0.005em;                /* Positive tracking for conjunct integrity */
 }
 
 :lang(bn) h1, :lang(bn) h2, :lang(bn) h3, :lang(bn) h4 {
-  line-height: 1.40;
+  --font-heading: var(--font-display-bn);
+  line-height: 1.42;
+  letter-spacing: normal;
 }
 ```
 
@@ -108,8 +116,8 @@ Bengali diacritics (*মাত্রা, কার, য-ফলা*) need extra v
 
 ```tsx
 // Primary Action Button
-<button className="bg-primary text-primary-foreground hover:bg-primary/90 px-5 py-2.5 rounded-xl font-bold text-sm shadow-md transition-all">
-  Start Challenge
+<button className="bg-cta text-cta-foreground hover:opacity-90 px-5 py-2.5 rounded-xl font-bold text-sm shadow-md transition-all active:scale-[0.98]">
+  Start Focus Session
 </button>
 
 // Display Title (Bilingual Safe)
@@ -119,7 +127,7 @@ Bengali diacritics (*মাত্রা, কার, য-ফলা*) need extra v
 
 // Monospace Stat / Timer Badge
 <span className="font-mono font-tabular text-xs font-bold text-muted-foreground uppercase tracking-wider">
-  ⏱️ 60s Boss Rush
+  ⏱️ 60s Timed Exam
 </span>
 
 // Examiner Mark Deduction Callout

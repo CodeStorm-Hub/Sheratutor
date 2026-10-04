@@ -33,9 +33,9 @@ import {
   Circle,
   ArrowRight,
   ShieldCheck,
-  HelpCircle,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -477,36 +477,23 @@ export function MathTrigonometryGuidebook() {
   return (
     <div className="min-h-screen bg-background text-foreground pb-20">
       {/* --------------------------------------------------------------------- */}
-      {/* HEADER / HERO SECTION                                                 */}
+      {/* HEADER SECTION (Top Navigation & Breadcrumb)                          */}
       {/* --------------------------------------------------------------------- */}
-      <header className="border-b border-border bg-card/60 backdrop-blur-md sticky top-0 z-30">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="p-2 rounded-xl bg-muted/60 hover:bg-muted text-muted-foreground hover:text-foreground transition-colors"
-              title="প্লেগ্রাউন্ড লাইব্রেরিতে ফিরুন"
-            >
-              <Triangle className="h-5 w-5" />
-            </Link>
-            <div>
-              <div className="flex items-center gap-2">
-                <span className="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-[#FF6B57]/10 text-primary border border-[#FF6B57]/20">
-                  সাধারণ গণিত • অধ্যায় ০৯
-                </span>
-                <span className="text-xs text-muted-foreground font-mono">NCTB নবম-দশম</span>
-              </div>
-              <h1 className="text-xl sm:text-2xl font-black text-foreground flex items-center gap-2 mt-0.5">
-                <span>ত্রিকোণমিতিক অনুপাত</span>
-                <span className="text-sm font-normal text-muted-foreground hidden sm:inline">
-                  — ৬টি অনুপাত, অভেদাবলি, মান ছক ও সমীকরণ সমাধান
-                </span>
-              </h1>
-            </div>
-          </div>
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={9}
+        chapterTitleBn="ত্রিকোণমিতিক অনুপাত (Trigonometric Ratios)"
+        activeLesson={activeLab}
+        activeLessonTitle={LAB_LESSONS[activeLab - 1]?.title}
+        onOpenAi={() => setIsTutorOpen(true)}
+        aiButtonLabel="শেরু এআই টিউটর"
+      />
 
-          {/* Navigation Tabs (5 Steps) */}
-          <div className="flex items-center gap-1.5 p-1 bg-muted/70 rounded-2xl border border-border overflow-x-auto">
+      {/* Navigation Tabs (5 Steps) Sub-Bar */}
+      <div className="border-b border-border bg-card/90 backdrop-blur-md sticky top-[49px] z-30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
+          <div className="flex items-center gap-1.5 p-1 bg-muted/70 rounded-2xl border border-border overflow-x-auto w-fit">
             <button
               onClick={() => setActiveTab('learn')}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all whitespace-nowrap ${
@@ -564,7 +551,7 @@ export function MathTrigonometryGuidebook() {
             </button>
           </div>
         </div>
-      </header>
+      </div>
 
       {/* --------------------------------------------------------------------- */}
       {/* TAB 1: LEARN CONCEPT (5 INTERACTIVE LABS)                             */}

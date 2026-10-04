@@ -34,6 +34,7 @@ import {
   Flame,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -424,98 +425,76 @@ export default function PhysicsWavesSoundGuidebook() {
       {/* ------------------------------------------------------------------- */}
       {/* TOP SUB-NAVBAR & NAVIGATION                                         */}
       {/* ------------------------------------------------------------------- */}
-      <header className="border-b border-slate-800 bg-slate-900/90 backdrop-blur sticky top-0 z-40 px-4 py-3">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="text-xs font-medium text-cyan-400 hover:text-cyan-300 flex items-center gap-1 transition"
-            >
-              <span>পদার্থবিজ্ঞান</span>
-              <ChevronRight className="w-3.5 h-3.5" />
-            </Link>
-            <span className="text-xs px-2 py-0.5 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 font-mono">
-              অধ্যায় ০৭
-            </span>
-            <h1 className="text-sm font-bold text-white flex items-center gap-2">
-              <Waves className="w-4 h-4 text-cyan-400" />
-              <span>তরঙ্গ ও শব্দ (Waves and Sound)</span>
-            </h1>
-          </div>
-
-          {/* 5-Step Learning Framework Badges */}
-          <div className="flex items-center gap-1.5 overflow-x-auto py-1">
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={7}
+        chapterTitleBn="তরঙ্গ ও শব্দ (Waves & Sound)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS[activeLesson - 1]?.title}
+        onOpenAi={() => setIsAiTutorOpen(!isAiTutorOpen)}
+        aiButtonLabel="এআই টিউটর"
+        centerContent={
+          <div className="flex items-center gap-1 bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs font-medium">
             <button
               onClick={() => setActiveStep('learn')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
                 activeStep === 'learn'
                   ? 'bg-cyan-600 text-white shadow-lg shadow-cyan-600/30'
-                  : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                  : 'text-slate-400 hover:text-slate-200'
               }`}
             >
               <Activity className="w-3.5 h-3.5" />
-              <span>১. ল্যাব ও কনসেপ্ট</span>
+              <span>১. কনসেপ্ট</span>
             </button>
-
             <button
               onClick={() => setActiveStep('example')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
                 activeStep === 'example'
                   ? 'bg-cyan-600 text-white shadow-lg shadow-cyan-600/30'
-                  : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                  : 'text-slate-400 hover:text-slate-200'
               }`}
             >
               <BookOpen className="w-3.5 h-3.5" />
-              <span>২. বোর্ড CQ</span>
+              <span>২. CQ</span>
             </button>
-
             <button
               onClick={() => setActiveStep('practice')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
                 activeStep === 'practice'
                   ? 'bg-cyan-600 text-white shadow-lg shadow-cyan-600/30'
-                  : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                  : 'text-slate-400 hover:text-slate-200'
               }`}
             >
               <Layers className="w-3.5 h-3.5" />
               <span>৩. প্র্যাকটিস</span>
             </button>
-
             <button
               onClick={() => setActiveStep('quiz')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
                 activeStep === 'quiz'
                   ? 'bg-cyan-600 text-white shadow-lg shadow-cyan-600/30'
-                  : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                  : 'text-slate-400 hover:text-slate-200'
               }`}
             >
               <Award className="w-3.5 h-3.5" />
-              <span>৪. MCQ কুইজ</span>
+              <span>৪. কুইজ</span>
             </button>
-
             <button
               onClick={() => setActiveStep('summary')}
-              className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
                 activeStep === 'summary'
                   ? 'bg-cyan-600 text-white shadow-lg shadow-cyan-600/30'
-                  : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+                  : 'text-slate-400 hover:text-slate-200'
               }`}
             >
               <Sparkles className="w-3.5 h-3.5" />
               <span>৫. সামারি</span>
             </button>
-
-            {/* Socratic AI Tutor Trigger */}
-            <button
-              onClick={() => setIsAiTutorOpen(!isAiTutorOpen)}
-              className="ml-2 px-3 py-1.5 rounded-lg text-xs font-medium bg-gradient-to-r from-cyan-600/20 to-teal-600/20 border border-cyan-500/40 text-cyan-300 hover:border-cyan-400 flex items-center gap-1.5 transition"
-            >
-              <MessageSquare className="w-3.5 h-3.5 text-cyan-400" />
-              <span className="hidden sm:inline">সক্রেটিক এআই টিউটর</span>
-            </button>
           </div>
-        </div>
-      </header>
+        }
+      />
 
       {/* ------------------------------------------------------------------- */}
       {/* MAIN CONTAINER WITH SIDEBAR & CONTENT AREA                          */}

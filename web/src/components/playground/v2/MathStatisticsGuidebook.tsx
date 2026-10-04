@@ -33,6 +33,8 @@ import {
   Grid,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { StepNavigationFooter } from '@/components/playground/v2/StepNavigationFooter';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -325,102 +327,76 @@ export default function MathStatisticsGuidebook() {
       {/* -------------------------------------------------------------------------
           HEADER & CHAPTER META
       ------------------------------------------------------------------------- */}
-      <header className="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-4 py-3">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 transition"
-              title="লাইব্রেরি ভিউতে ফিরে যান"
-            >
-              <RotateCcw className="w-5 h-5" />
-            </Link>
-            <div className="flex items-center gap-2">
-              <span className="px-2.5 py-1 text-xs font-bold rounded-md bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-                অধ্যায় ১৭
-              </span>
-              <div className="hidden sm:block">
-                <span className="text-xs text-slate-400">সাধারণ গণিত • NCTB নবম-দশম</span>
-              </div>
-            </div>
-            <span className="text-slate-300 dark:text-slate-700 hidden sm:inline">•</span>
-            <h1 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
-              <BarChart3 className="w-5 h-5 text-amber-600 dark:text-amber-400" />
-              পরিসংখ্যান
-              <span className="text-xs font-normal text-slate-400 hidden md:inline">
-                (Statistics: Mean, Median, Mode, Ogive & Histogram)
-              </span>
-            </h1>
-          </div>
-
-          {/* 5-Step Learning Framework Navigation */}
-          <nav className="flex items-center gap-1 sm:gap-2">
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={17}
+        chapterTitleBn="পরিসংখ্যান (Statistics)"
+        activeLesson={activeLab}
+        activeLessonTitle={LAB_LESSONS[activeLab - 1]?.title}
+        onOpenAi={() => setIsAiOpen(true)}
+        aiButtonLabel="শেরু এআই টিউটর"
+        centerContent={
+          <nav className="flex items-center gap-1 sm:gap-1.5 overflow-x-auto text-xs font-semibold">
             <button
               onClick={() => setActiveTab('learn')}
-              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'learn'
-                  ? 'bg-amber-600 text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+                  ? 'bg-amber-600 text-white shadow-xs'
+                  : 'text-muted-foreground hover:bg-muted'
               }`}
             >
-              <BookOpen className="w-4 h-4" />
-              <span className="hidden sm:inline">১.</span> কনসেপ্ট ল্যাব
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>১. কনসেপ্ট</span>
             </button>
             <button
               onClick={() => setActiveTab('example')}
-              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'example'
-                  ? 'bg-amber-600 text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+                  ? 'bg-amber-600 text-white shadow-xs'
+                  : 'text-muted-foreground hover:bg-muted'
               }`}
             >
-              <Eye className="w-4 h-4" />
-              <span className="hidden sm:inline">২.</span> উদাহরণ দেখুন
+              <Eye className="w-3.5 h-3.5" />
+              <span>২. উদাহরণ</span>
             </button>
             <button
               onClick={() => setActiveTab('try')}
-              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'try'
-                  ? 'bg-amber-600 text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+                  ? 'bg-amber-600 text-white shadow-xs'
+                  : 'text-muted-foreground hover:bg-muted'
               }`}
             >
-              <CheckSquare className="w-4 h-4" />
-              <span className="hidden sm:inline">৩.</span> নিজে চেষ্টা করুন
+              <CheckSquare className="w-3.5 h-3.5" />
+              <span>৩. নিজে করো</span>
             </button>
             <button
               onClick={() => setActiveTab('quiz')}
-              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'quiz'
-                  ? 'bg-amber-600 text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+                  ? 'bg-amber-600 text-white shadow-xs'
+                  : 'text-muted-foreground hover:bg-muted'
               }`}
             >
-              <Award className="w-4 h-4" />
-              <span className="hidden sm:inline">৪.</span> অনুধাবন যাচাই
+              <Award className="w-3.5 h-3.5" />
+              <span>৪. কুইজ</span>
             </button>
             <button
               onClick={() => setActiveTab('summary')}
-              className={`px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition flex items-center gap-1.5 ${
+              className={`px-2.5 py-1 rounded-lg transition flex items-center gap-1 ${
                 activeTab === 'summary'
-                  ? 'bg-amber-600 text-white shadow-sm'
-                  : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800'
+                  ? 'bg-amber-600 text-white shadow-xs'
+                  : 'text-muted-foreground hover:bg-muted'
               }`}
             >
-              <Layers className="w-4 h-4" />
-              <span className="hidden sm:inline">৫.</span> সারসংক্ষেপ
-            </button>
-            <button
-              onClick={() => setIsAiOpen(true)}
-              className="p-1.5 sm:px-3 sm:py-1.5 rounded-lg bg-gradient-to-r from-amber-600 to-orange-600 text-white text-xs sm:text-sm font-semibold shadow hover:opacity-95 transition flex items-center gap-1.5 ml-1"
-              title="শেরু এআই টিউটর খুলুন"
-            >
-              <Sparkles className="w-4 h-4" />
-              <span className="hidden md:inline">শেরু এআই টিউটর</span>
+              <Layers className="w-3.5 h-3.5" />
+              <span>৫. সারসংক্ষেপ</span>
             </button>
           </nav>
-        </div>
-      </header>
+        }
+      />
 
       {/* -------------------------------------------------------------------------
           MAIN CONTENT CONTAINER
@@ -2507,6 +2483,17 @@ export default function MathStatisticsGuidebook() {
             </div>
           </div>
         )}
+
+        {/* Continuous Step Navigation Footer */}
+        <StepNavigationFooter
+          currentStep={activeTab}
+          onStepChange={setActiveTab}
+          chapterNumberBn="অধ্যায় ১৭"
+          chapterNumberEn="Chapter 17"
+          chapterTitleBn="পরিসংখ্যান"
+          chapterTitleEn="Statistics"
+          subjectHref="/dashboard/playground/v2?subject=math"
+        />
       </main>
 
       {/* -------------------------------------------------------------------------

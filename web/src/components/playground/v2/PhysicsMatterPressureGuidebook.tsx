@@ -26,6 +26,7 @@ import {
   Compass,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 interface LessonContent {
   id: number;
@@ -247,40 +248,18 @@ export function PhysicsMatterPressureGuidebook() {
 
   return (
     <div className="min-h-screen bg-background text-foreground flex flex-col font-sans">
-      {/* Top Header */}
-      <header className="sticky top-0 z-40 border-b border-border/70 bg-card/80 backdrop-blur-md px-4 py-3 flex items-center justify-between shadow-xs">
-        <div className="flex items-center gap-3">
-          <Link
-            href="/dashboard/playground/v2"
-            className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Layers className="h-4 w-4 text-primary" />
-            <span>লাইব্রেরিতে ফিরুন</span>
-          </Link>
-          <span className="text-border">|</span>
-          <div className="flex items-center gap-2">
-            <span className="px-2 py-0.5 text-[11px] font-bold rounded-md bg-primary/10 text-primary border border-primary/20">
-              পদার্থবিজ্ঞান
-            </span>
-            <span className="text-xs font-bold text-foreground">
-              অধ্যায় ৫: পদার্থের অবস্থা ও চাপ (States of Matter & Pressure)
-            </span>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setIsTutorOpen(true)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-primary/20 bg-primary/10 text-primary text-xs font-bold hover:bg-primary/20 transition-colors shadow-xs"
-          >
-            <Sparkles className="h-4 w-4" />
-            <span>AI শিক্ষক</span>
-          </button>
-          <span className="px-2.5 py-1 text-[11px] font-bold rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20">
-            • Version 2.0 • Virtual Guidebook
-          </span>
-        </div>
-      </header>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={5}
+        chapterTitleBn="পদার্থের অবস্থা ও চাপ (States of Matter & Pressure)"
+        activeLesson={activeLessonId}
+        activeLessonTitle={activeLesson.title}
+        isSidebarOpen={isSidebarOpen}
+        onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+        onOpenAi={() => setIsTutorOpen(true)}
+      />
 
       {/* Main Container */}
       <div className="flex-1 flex overflow-hidden">

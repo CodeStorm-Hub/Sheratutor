@@ -27,6 +27,7 @@ import {
   RotateCcw,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -552,54 +553,33 @@ export function MathEquationsOneVariableGuidebook() {
 
   return (
     <div className="min-h-screen bg-background text-foreground pb-20">
-      {/* ------------------------------------------------------------- */}
-      {/* HEADER SECTION (Top Navigation & Progress) */}
-      {/* ------------------------------------------------------------- */}
-      <header className="sticky top-0 z-30 border-b border-border/60 bg-background/95 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            {/* Breadcrumb */}
-            <div className="flex items-center gap-2 text-sm text-muted-foreground">
-              <Link
-                href="/dashboard/playground/v2?subject=math"
-                className="hover:text-primary transition-colors flex items-center gap-1 font-medium"
-              >
-                <BookOpen className="h-4 w-4" />
-                <span>সাধারণ গণিত</span>
-              </Link>
-              <ChevronRight className="h-4 w-4" />
-              <span className="text-foreground font-semibold flex items-center gap-1.5">
-                <span className="h-2 w-2 rounded-full bg-primary" />
-                অধ্যায় ৫: এক চলকবিশিষ্ট সমীকরণ
-              </span>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={5}
+        chapterTitleBn="এক চলকবিশিষ্ট সমীকরণ (Equations in One Variable)"
+        activeLesson={activeLabId}
+        activeLessonTitle={LAB_LESSONS[activeLabId - 1]?.title}
+        onOpenAi={() => setIsSheruOpen(true)}
+        aiButtonLabel="শেরু সহকারী"
+        rightExtras={
+          <div className="hidden sm:flex items-center gap-2">
+            <span className="text-xs text-muted-foreground font-medium">প্রস্তুতি:</span>
+            <div className="w-20 bg-muted rounded-full h-2 overflow-hidden border border-border/40">
+              <div
+                className="bg-primary h-full transition-all duration-500 rounded-full"
+                style={{ width: `${progressPercent}%` }}
+              />
             </div>
-
-            {/* Quick Actions & Progress Tracker */}
-            <div className="flex items-center gap-4">
-              <div className="hidden sm:flex items-center gap-2">
-                <span className="text-xs text-muted-foreground font-medium">প্রস্তুতি অগ্রগতি:</span>
-                <div className="w-28 bg-muted rounded-full h-2 overflow-hidden border border-border/40">
-                  <div
-                    className="bg-primary h-full transition-all duration-500 rounded-full"
-                    style={{ width: `${progressPercent}%` }}
-                  />
-                </div>
-                <span className="text-xs font-bold text-primary font-mono">{progressPercent}%</span>
-              </div>
-
-              <button
-                onClick={() => setIsSheruOpen(true)}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 text-xs font-bold transition-colors"
-              >
-                <Sparkles className="h-3.5 w-3.5" />
-                <span>শেরু সহকারী</span>
-              </button>
-            </div>
+            <span className="text-xs font-bold text-primary font-mono">{progressPercent}%</span>
           </div>
-        </div>
+        }
+      />
 
-        {/* 5-Step Learning Framework Tab Bar */}
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-border/40">
+      {/* 5-Step Learning Framework Tab Bar */}
+      <div className="border-b border-border/60 bg-background/95 backdrop-blur-md sticky top-[49px] z-30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex space-x-1 sm:space-x-4 overflow-x-auto py-2 no-scrollbar">
             {[
               { id: 'learn', labelBn: '১. ধারণা শিখুন', labelEn: 'Learn Concept', icon: BookOpen },
@@ -635,7 +615,7 @@ export function MathEquationsOneVariableGuidebook() {
             })}
           </nav>
         </div>
-      </header>
+      </div>
 
       {/* ------------------------------------------------------------- */}
       {/* MAIN CONTAINER */}

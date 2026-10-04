@@ -49,14 +49,15 @@ The Hub serves as the central game lobby and study center:
 
 ### Key Hub Features:
 * **Subject Track Selector:**
-  * **General Math (Class 9–10)** — *Active (Chapter 1)*
-  * **Physics (Class 9–10)** — *Active (Chapter 1: ভৌত রাশি ও পরিমাপ, Chapter 2: গতি, Chapter 3: বল, Chapter 4: কাজ, ক্ষমতা ও শক্তি)*
+  * **General Math (Class 9–10)** — *100% Complete (All 17 Chapters Live in V2)*
+  * **Physics (Class 9–10)** — *86% Complete (Chapters 1 to 12 Live in V2)*
+  * **Chemistry (Class 9–10)** — *100% Complete (All 12 Chapters Live in V2)*
   * **Higher Math** — *Upcoming*
-  * **Chemistry** — *Upcoming*
   * **Biology** — *Upcoming*
-* **Playground v2 (Virtual Interactive Guidebook):**
+* **Playground v2 (Canonical Virtual Interactive Guidebook):**
   * Calm discovery with hideable sidebar, 5-Step Learning Framework (`1 Learn Concept`, `2 See Example`, `3 Try Yourself`, `4 Check Understanding`, `5 Summary`).
   * Direct route at `/dashboard/playground/v2` with drill-down subject cards and chapter selectors.
+  * Teenage Typography stack (`Outfit`, `Plus Jakarta Sans`, `Baloo Da 2`, `Hind Siliguri`, `JetBrains Mono`) and Academic Daylight / Midnight Cosmic Study Themes.
 * **Gamified Metric Trackers:**
   * **Stars Earned:** Dynamic counter across all quests (e.g., $12 / 48$ stars).
   * **Daily Study Streak:** Encourages daily interactive practice.
@@ -341,20 +342,50 @@ Present on every playground screen is **Sheru**, the SheraTutor AI mascot:
   * `web/scripts/e2e-physics-ch10-complete.mjs` (Physics Ch 10)
   * `web/scripts/e2e-physics-ch11-complete.mjs` (Physics Ch 11)
   * `web/scripts/e2e-physics-ch12-complete.mjs` (Physics Ch 12)
+  * `web/scripts/e2e-chemistry-ch4-12-complete.mjs` (Chemistry Ch 4–12 Guidebooks)
   * **Result:** 0 console errors, 100% test pass rate across all sandboxes and tabs.
 
 ---
 
-## 8. Remaining NCTB General Math Roadmap
+## 8. Complete NCTB General Math, Physics & Chemistry Curriculum Matrix
 
-The 17-chapter curriculum roadmap continues sequentially:
-* **Ch 5:** এক চলকবিশিষ্ট সমীকরণ (Equations in One Variable — Two-pan weight balance, Quadratic Discriminant collider, Extraneous Root detector)
-* **Ch 6:** রেখা, কোণ ও ত্রিভুজ (Lines, Angles & Triangles — Vertex bender locking sum at $180^\circ$)
-* **Ch 7:** ব্যবহারিক জ্যামিতি (Practical Geometry — Virtual compass and straightedge construction)
-* **Ch 8:** বৃত্ত (Circle Theorems — Theorem 20 dynamic central vs inscribed angle inspector)
-* **Ch 9 & 10:** ত্রিকোণমিতিক অনুপাত ও দূরত্ব (Trig Ratios & Elevation — Unit circle, Padma Bridge laser surveyor)
-* **Ch 11:** বীজগাণিতিক অনুপাত ও সমানুপাত (Ratio & Proportion — Scalable recipe discovering componendo-dividendo)
-* **Ch 12:** দুই চলকবিশিষ্ট সরল সহসমীকরণ (Simultaneous Equations — Dual laser intersection on coordinate plane)
-* **Ch 13:** সসীম ধারা (Finite Series — Gauss's staircase block builder)
-* **Ch 16:** পরিমিতি (Mensuration — 3D unfolding solids into 2D nets)
-* **Ch 17:** পরিসংখ্যান (Statistics — Dynamic histogram bar stretcher & Ogive curves)
+### General Mathematics (17 / 17 Chapters Completed — 100%)
+All 17 chapters of Class 9–10 General Mathematics are live, fully interactive, and verified in Canonical Playground V2 (`/dashboard/playground/v2/math/[1-17]`):
+1. **Chapter 1:** বাস্তব সংখ্যা (Real Numbers)
+2. **Chapter 2:** সেট ও ফাংশন (Sets & Functions)
+3. **Chapter 3:** বীজগাণিতিক রাশি (Algebraic Expressions)
+4. **Chapter 4:** সূচক ও লগারিদম (Exponents & Logarithms)
+5. **Chapter 5:** এক চলকবিশিষ্ট সমীকরণ (Equations in One Variable)
+6. **Chapter 6:** রেখা, কোণ ও ত্রিভুজ (Lines, Angles & Triangles)
+7. **Chapter 7:** ব্যবহারিক জ্যামিতি (Practical Geometry)
+8. **Chapter 8:** বৃত্ত (Circles)
+9. **Chapter 9:** ত্রিকোণমিতিক অনুপাত (Trigonometric Ratios)
+10. **Chapter 10:** দূরত্ব ও উচ্চতা (Distance & Elevation)
+11. **Chapter 11:** বীজগাণিতিক অনুপাত ও সমানুপাত (Algebraic Ratio & Proportion)
+12. **Chapter 12:** দুই চলকবিশিষ্ট সরল সহসমীকরণ (Simultaneous Linear Equations in Two Variables)
+13. **Chapter 13:** সসীম ধারা (Finite Series)
+14. **Chapter 14:** অনুপাত, সদৃশতা ও প্রতিসমতা (Ratio, Similarity & Symmetry)
+15. **Chapter 15:** ক্ষেত্রফল সম্পর্কিত উপপাদ্য ও সম্পাদ্য (Area Theorems & Constructions)
+16. **Chapter 16:** পরিমিতি (Mensuration)
+17. **Chapter 17:** পরিসংখ্যান (Statistics)
+
+### Physics (12 / 14 Chapters Completed — 86%)
+12 chapters of Class 9–10 Physics are live in Canonical Playground V2 (`/dashboard/playground/v2/physics/[1-12]`):
+- Chapters 1–12: Physical Quantities, Motion, Force, Work/Power/Energy, States of Matter, Heat, Waves/Sound, Reflection, Refraction, Static Electricity, Current Electricity, and Magnetic Effects of Current.
+- **Next in Pipeline:** Chapter 13 (*আধুনিক পদার্থবিজ্ঞান ও ইলেকট্রনিক্স*) and Chapter 14 (*জীবন বাঁচাতে পদার্থবিজ্ঞান*).
+
+### Chemistry (12 / 12 Chapters Completed — 100%)
+All 12 chapters of Class 9–10 Chemistry are live, fully interactive, and verified in Canonical Playground V2 (`/dashboard/playground/v2/chemistry/[1-12]`), featuring the standardized 3-column multi-lesson architecture, interactive labs, and board exam CQ solutions:
+1. **Chapter 1:** রসায়নের ধারণা (Concepts of Chemistry) — `ChemistryConceptsGuidebook.tsx` (Green)
+2. **Chapter 2:** পদার্থের অবস্থা (States of Matter) — `StatesOfMatterGuidebook.tsx` (Cyan)
+3. **Chapter 3:** পদার্থের গঠন (Structure of Matter) — `StructureOfMatterGuidebook.tsx` (Purple)
+4. **Chapter 4:** পর্যায় সারণি (Periodic Table) — `PeriodicTableGuidebook.tsx` (Cyan)
+5. **Chapter 5:** রাসায়নিক বন্ধন (Chemical Bonds) — `ChemicalBondsGuidebook.tsx` (Teal)
+6. **Chapter 6:** মোলের ধারণা ও রাসায়নিক গণনা (Concept of Mole & Calculations) — `MoleCalculationsGuidebook.tsx` (Emerald)
+7. **Chapter 7:** রাসায়নিক বিক্রিয়া (Chemical Reactions) — `ChemicalReactionsGuidebook.tsx` (Amber)
+8. **Chapter 8:** রসায়ন ও শক্তি (Chemistry & Energy) — `ChemistryEnergyGuidebook.tsx` (Blue)
+9. **Chapter 9:** এসিড-ক্ষার সমতা (Acid-Base Balance) — `AcidBaseBalanceGuidebook.tsx` (Emerald)
+10. **Chapter 10:** খনিজ সম্পদ: ধাতু ও অধাতু (Mineral Resources: Metals & Non-metals) — `MineralResourcesMetalsGuidebook.tsx` (Amber)
+11. **Chapter 11:** খনিজ সম্পদ: জীবাশ্ম (Mineral Resources: Fossils) — `MineralResourcesFossilsGuidebook.tsx` (Cyan)
+12. **Chapter 12:** আমাদের জীবনে রসায়ন (Chemistry in Our Lives) — `ChemistryInOurLivesGuidebook.tsx` (Purple)
+

@@ -41,6 +41,7 @@ import {
   Eye,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -575,42 +576,17 @@ export function MathAlgebraicExpressionsGuidebook() {
       {/* --------------------------------------------------------------------- */}
       {/* HEADER BAR */}
       {/* --------------------------------------------------------------------- */}
-      <header className="border-b border-slate-800 bg-slate-900/60 backdrop-blur-md sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center space-x-3">
-            <Link
-              href="/dashboard/playground/v2?subject=math"
-              className="p-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-slate-300 hover:text-white transition-colors border border-slate-700/50"
-            >
-              <RotateCcw className="w-4 h-4" />
-            </Link>
-            <div>
-              <div className="flex items-center space-x-2 text-[11px] font-mono text-[#FF6B57]">
-                <span>সাধারণ গণিত</span>
-                <ChevronRight className="w-3 h-3 text-slate-500" />
-                <span>অধ্যায় ০৩</span>
-              </div>
-              <h1 className="text-sm sm:text-base font-bold text-slate-100 flex items-center gap-2">
-                <span>বীজগাণিতিক রাশি</span>
-                <span className="text-[10px] font-normal px-2 py-0.5 rounded-full bg-[#FF6B57]/10 text-[#FF6B57] border border-[#FF6B57]/20">
-                  NCTB ৯ম-১০ম
-                </span>
-              </h1>
-            </div>
-          </div>
-
-          {/* Action buttons */}
-          <div className="flex items-center space-x-2">
-            <button
-              onClick={() => setIsAiDrawerOpen(true)}
-              className="flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-[#FF6B57]/10 hover:bg-[#FF6B57]/20 border border-[#FF6B57]/30 text-[#FF6B57] text-xs font-medium transition-all shadow-sm"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">শেরু এআই টিউটর</span>
-            </button>
-          </div>
-        </div>
-      </header>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={3}
+        chapterTitleBn="বীজগাণিতিক রাশি (Algebraic Expressions)"
+        activeLesson={activeLessonId}
+        activeLessonTitle={LAB_LESSONS[activeLessonId - 1]?.title}
+        onOpenAi={() => setIsAiDrawerOpen(true)}
+        aiButtonLabel="শেরু এআই টিউটর"
+      />
 
       {/* --------------------------------------------------------------------- */}
       {/* 5-STEP NAVIGATION BAR */}

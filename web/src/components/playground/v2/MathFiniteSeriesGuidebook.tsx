@@ -37,6 +37,7 @@ import {
   Binary,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -568,36 +569,22 @@ export function MathFiniteSeriesGuidebook() {
 
   return (
     <div className="min-h-screen bg-slate-50/50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 flex flex-col">
-      {/* Top Breadcrumb & Subject Header */}
-      <header className="sticky top-0 z-30 bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3 min-w-0">
-            <Link
-              href="/dashboard/playground/v2"
-              className="p-2 rounded-xl text-slate-500 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-              title="গাইডবুক লাইব্রেরিতে ফিরুন"
-            >
-              <RotateCcw className="w-4 h-4" />
-            </Link>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={13}
+        chapterTitleBn="সসীম ধারা (Finite Series)"
+        activeLesson={activeLabId}
+        activeLessonTitle={currentLab.title}
+        onOpenAi={() => setIsAiDrawerOpen(true)}
+        aiButtonLabel="শেরু এআই টিউটর"
+      />
 
-            <div className="w-9 h-9 rounded-xl bg-primary/10 text-primary flex items-center justify-center shrink-0">
-              <Hash className="w-5 h-5" />
-            </div>
-
-            <div className="min-w-0">
-              <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-                <span className="font-semibold text-primary">সাধারণ গণিত • অধ্যায় ১৩</span>
-                <span>•</span>
-                <span>NCTB নবম-দশম</span>
-              </div>
-              <h1 className="text-sm sm:text-base font-bold truncate text-slate-900 dark:text-white">
-                সসীম ধারা (Finite Series) — <span className="font-normal text-slate-600 dark:text-slate-400">সমান্তর, গুণোত্তর, গাউস ও বিশেষ ধারা ল্যাব</span>
-              </h1>
-            </div>
-          </div>
-
-          {/* 5-Step Progress Tabs */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-100 dark:bg-slate-800/60 p-1 rounded-xl text-xs font-medium">
+      {/* 5-Step Learning Framework Navigation Sub-Bar */}
+      <div className="border-b border-border bg-card/90 backdrop-blur-md sticky top-[49px] z-30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
+          <nav className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800/60 p-1 rounded-xl text-xs font-medium overflow-x-auto w-fit">
             <button
               onClick={() => setActiveStep(1)}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
@@ -655,7 +642,7 @@ export function MathFiniteSeriesGuidebook() {
             </button>
           </nav>
         </div>
-      </header>
+      </div>
 
       {/* Main Container */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 flex-1 w-full space-y-6">

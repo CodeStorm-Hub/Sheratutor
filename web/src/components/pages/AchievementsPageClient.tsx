@@ -62,7 +62,7 @@ export function AchievementsPageClient({ currentLevel, earnedXp, xpNeeded, progr
           onClick={handleShare}
           className="inline-flex shrink-0 items-center gap-2 rounded-lg border border-border bg-card px-3.5 py-2 text-xs font-semibold transition-colors hover:bg-accent"
         >
-          <Share2 size={16} /> Share
+          <Share2 size={16} /> {language === 'bn' ? 'শেয়ার করুন' : 'Share'}
         </button>
       </PageHeader>
 
@@ -81,7 +81,11 @@ export function AchievementsPageClient({ currentLevel, earnedXp, xpNeeded, progr
           <div className="mb-2 flex items-center justify-between text-sm font-semibold font-tabular">
             <span>{earnedXp} XP</span>
             <span className="text-muted-foreground">·</span>
-            <span>{xpNeeded} XP to Level {currentLevel + 1}</span>
+            <span>
+              {language === 'bn'
+                ? `লেভেল ${currentLevel + 1}-এ আরও ${xpNeeded} XP প্রয়োজন`
+                : `${xpNeeded} XP to Level ${currentLevel + 1}`}
+            </span>
           </div>
           <div className="h-2.5 overflow-hidden rounded-full bg-surface-2">
             <span

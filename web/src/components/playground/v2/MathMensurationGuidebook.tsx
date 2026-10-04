@@ -36,6 +36,7 @@ import {
   Compass,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -533,35 +534,22 @@ export function MathMensurationGuidebook() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
-      {/* --------------------------------------------------------------------- */}
-      {/* HEADER / NAVIGATION BAR */}
-      {/* --------------------------------------------------------------------- */}
-      <header className="sticky top-0 z-40 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 px-4 py-3 shadow-xs">
-        <div className="max-w-7xl mx-auto flex items-center justify-between gap-2">
-          {/* Back link & Title */}
-          <div className="flex items-center gap-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="p-1.5 rounded-lg text-slate-500 hover:text-slate-800 dark:hover:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
-              title="লাইব্রেরি ভিউতে ফিরে যান"
-            >
-              <RotateCcw className="w-4 h-4" />
-            </Link>
-            <div className="flex items-center gap-2 text-xs text-slate-500 dark:text-slate-400">
-              <span className="w-6 h-6 rounded-md bg-primary/10 text-primary flex items-center justify-center font-bold text-xs">
-                ১৬
-              </span>
-              <span>সাধারণ গণিত • অধ্যায় ১৬</span>
-              <span className="text-slate-300 dark:text-slate-700">•</span>
-              <span className="hidden sm:inline">NCTB নবম-দশম</span>
-            </div>
-            <h1 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white truncate max-w-xs sm:max-w-md">
-              পরিমিতি
-            </h1>
-          </div>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={16}
+        chapterTitleBn="পরিমিতি (Mensuration)"
+        activeLesson={activeLab}
+        activeLessonTitle={LAB_LESSONS[activeLab - 1]?.title}
+        onOpenAi={() => setIsAiDrawerOpen(true)}
+        aiButtonLabel="শেরু এআই টিউটর"
+      />
 
-          {/* 5-Step Progress Tabs */}
-          <nav className="hidden md:flex items-center gap-1 bg-slate-100 dark:bg-slate-800/60 p-1 rounded-xl text-xs font-medium">
+      {/* 5-Step Learning Framework Navigation Sub-Bar */}
+      <div className="border-b border-border bg-card/90 backdrop-blur-md sticky top-[49px] z-30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2.5">
+          <nav className="flex items-center gap-1 bg-slate-100 dark:bg-slate-800/60 p-1 rounded-xl text-xs font-medium overflow-x-auto w-fit">
             <button
               onClick={() => setActiveStep(1)}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
@@ -618,42 +606,8 @@ export function MathMensurationGuidebook() {
               <span>৫. সারসংক্ষেপ</span>
             </button>
           </nav>
-
-          {/* AI Companion Trigger */}
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setIsAiDrawerOpen(true)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-gradient-to-r from-primary to-indigo-600 text-white text-xs font-semibold hover:opacity-90 shadow-xs transition-opacity"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">শেরু এআই টিউটর</span>
-            </button>
-          </div>
         </div>
-
-        {/* Mobile Step Selectors */}
-        <div className="flex md:hidden items-center justify-around mt-2 pt-2 border-t border-slate-100 dark:border-slate-800 text-xs">
-          {[
-            { id: 1, label: '১. ল্যাব' },
-            { id: 2, label: '২. উদাহরণ' },
-            { id: 3, label: '৩. অনুশীলন' },
-            { id: 4, label: '৪. যাচাই' },
-            { id: 5, label: '৫. সংক্ষেপ' },
-          ].map((st) => (
-            <button
-              key={st.id}
-              onClick={() => setActiveStep(st.id)}
-              className={`px-2 py-1 rounded-md ${
-                activeStep === st.id
-                  ? 'bg-primary/10 text-primary font-bold'
-                  : 'text-slate-500'
-              }`}
-            >
-              {st.label}
-            </button>
-          ))}
-        </div>
-      </header>
+      </div>
 
       {/* --------------------------------------------------------------------- */}
       {/* MAIN CONTENT CONTAINER */}

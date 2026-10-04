@@ -1,11 +1,11 @@
 import type { Metadata } from 'next';
 import React from 'react';
 import {
-  Baloo_2,
+  Outfit,
+  Plus_Jakarta_Sans,
+  Hind_Siliguri,
   Baloo_Da_2,
-  Inter,
-  Space_Mono,
-  Noto_Sans_Bengali,
+  JetBrains_Mono,
 } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
@@ -14,38 +14,38 @@ import { Toaster } from '@/components/ui/sonner';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
-const baloo2 = Baloo_2({
+const outfit = Outfit({
   subsets: ['latin'],
-  weight: ['600', '700'],
+  weight: ['600', '700', '800'],
   variable: '--font-display',
   display: 'swap',
 });
 
-const balooDa2 = Baloo_Da_2({
-  subsets: ['bengali', 'latin'],
-  weight: ['600', '700'],
-  variable: '--font-display-bn',
-  display: 'swap',
-});
-
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700', '800'],
   variable: '--font-body',
   display: 'swap',
 });
 
-const spaceMono = Space_Mono({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-mono-eyebrow',
+const hindSiliguri = Hind_Siliguri({
+  subsets: ['bengali'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-body-bn',
   display: 'swap',
 });
 
-const notoSansBengali = Noto_Sans_Bengali({
+const balooDa2 = Baloo_Da_2({
   subsets: ['bengali'],
-  weight: ['400', '600', '700'],
-  variable: '--font-body-bn',
+  weight: ['600', '700', '800'],
+  variable: '--font-display-bn',
+  display: 'swap',
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-mono-eyebrow',
   display: 'swap',
 });
 
@@ -114,7 +114,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${baloo2.variable} ${balooDa2.variable} ${inter.variable} ${spaceMono.variable} ${notoSansBengali.variable}`}
+      className={`${outfit.variable} ${balooDa2.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} ${hindSiliguri.variable}`}
     >
       <head>
         <meta name="darkreader-lock" />

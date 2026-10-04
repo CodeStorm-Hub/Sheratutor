@@ -40,8 +40,10 @@ Mathematics, English — bn+en) — the descoped set from the review, not the
 hand-off guide's original 66-book target. PDFs are `.gitignore`d (large
 binaries); `textbooks/SOURCE_MANIFEST.tsv` + `download_gdrive.sh` re-fetch
 them. `textbooks/CHECKSUMS.sha256` pins what was actually ingested. All 8
-were downloaded and verified as valid PDFs; only `physics_en.pdf` pages
-42-47 have been OCR'd and loaded so far.
+were downloaded and verified as valid PDFs.
+- **Mathematics (`SSC-GMATH`):** 3,943 chunks (100% embedded).
+- **Chemistry (`SSC-CHEM`):** 1,072 chunks (100% embedded across all 12 chapters, both `chemistry_bn.pdf` and `chemistry_en.pdf`, with 519 authentic diagrams cropped and uploaded to `curriculum-assets` Supabase bucket).
+- **Physics (`SSC-PHY`):** 1,073 chunks embedded.
 
 **Licensing note:** these are pulled from a third-party mirror of NCTB's
 free, government-published PDFs, adequate for internal RAG-grounding during

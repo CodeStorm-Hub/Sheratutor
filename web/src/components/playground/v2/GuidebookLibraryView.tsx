@@ -14,6 +14,8 @@ import {
   Atom,
   Calculator,
   FlaskConical,
+  Droplets,
+  Hammer,
   Dna,
   Binary,
   Compass,
@@ -40,10 +42,40 @@ import {
   Shapes,
   Box,
   BarChart3,
+  Search,
+  X,
+  LayoutGrid,
+  List,
+  SlidersHorizontal,
+  Table,
+  Share2,
 } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 
 export type SubjectKey = 'all' | 'physics' | 'math' | 'chemistry' | 'higher-math' | 'biology';
+
+export interface DivisionFilter {
+  id: string;
+  labelBn: string;
+  labelEn: string;
+  chapterIds?: number[];
+}
+
+export const MATH_DIVISIONS: DivisionFilter[] = [
+  { id: 'all', labelBn: 'সকল অধ্যায় (১৭)', labelEn: 'All Chapters (17)' },
+  { id: 'algebra', labelBn: 'ক-বিভাগ: বীজগণিত (৮)', labelEn: 'Group A: Algebra (8)', chapterIds: [1, 2, 3, 4, 5, 11, 12, 13] },
+  { id: 'geometry', labelBn: 'খ-বিভাগ: জ্যামিতি (৫)', labelEn: 'Group B: Geometry (5)', chapterIds: [6, 7, 8, 14, 15] },
+  { id: 'trig_mensuration', labelBn: 'গ-বিভাগ: ত্রিকোণমিতি ও পরিমিতি (৩)', labelEn: 'Group C: Trig & Mensuration (3)', chapterIds: [9, 10, 16] },
+  { id: 'statistics', labelBn: 'ঘ-বিভাগ: পরিসংখ্যান (১)', labelEn: 'Group D: Statistics (1)', chapterIds: [17] },
+];
+
+export const PHYSICS_DIVISIONS: DivisionFilter[] = [
+  { id: 'all', labelBn: 'সকল অধ্যায় (১২)', labelEn: 'All Chapters (12)' },
+  { id: 'mechanics', labelBn: 'মেকানিক্স ও পরিমাপ (৪)', labelEn: 'Mechanics & Measurement (4)', chapterIds: [1, 2, 3, 4] },
+  { id: 'matter_thermal', labelBn: 'পদার্থের ধর্ম ও তাপ (২)', labelEn: 'States of Matter & Heat (2)', chapterIds: [5, 6] },
+  { id: 'waves_optics', labelBn: 'তরঙ্গ ও আলোকবিজ্ঞান (৩)', labelEn: 'Waves & Optics (3)', chapterIds: [7, 8, 9] },
+  { id: 'electricity_magnetism', labelBn: 'তড়িৎ ও চৌম্বকবিজ্ঞান (৩)', labelEn: 'Electricity & Magnetism (3)', chapterIds: [10, 11, 12] },
+];
 
 interface ChapterLesson {
   num: string;
@@ -113,12 +145,21 @@ export function GuidebookLibraryView() {
   const searchParams = useSearchParams();
 
   const [activeSubject, setActiveSubject] = useState<SubjectKey>('all');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedDivision, setSelectedDivision] = useState<string>('all');
+  const [viewMode, setViewMode] = useState<'detailed' | 'compact'>('detailed');
+
+  const handleSelectSubject = (sub: SubjectKey) => {
+    setActiveSubject(sub);
+    setSelectedDivision('all');
+  };
 
   // Read URL query parameter ?subject=... if present
   useEffect(() => {
     const sub = searchParams.get('subject');
     if (sub && ['physics', 'math', 'chemistry', 'higher-math', 'biology'].includes(sub)) {
       setActiveSubject(sub as SubjectKey);
+      setSelectedDivision('all');
     }
   }, [searchParams]);
 
@@ -1181,43 +1222,415 @@ export function GuidebookLibraryView() {
       nameEn: 'Chemistry',
       code: 'CHEM-137',
       icon: FlaskConical,
-      taglineBn: 'পরমাণুর মডেল, পর্যায় সারণি ও রাসায়নিক বন্ধন ল্যাব',
-      taglineEn: 'Atomic Models, Periodic Table & Chemical Bonds Lab',
-      activeCount: 0,
+      taglineBn: 'প্রাত্যহিক জীবনের রূপান্তর, ৮টি GHS প্রতীক ও রসায়ন ল্যাব',
+      taglineEn: 'Everyday Transformations, 8 GHS Hazard Symbols & Lab',
+      activeCount: 12,
       totalChaptersBn: '১২টি অধ্যায়',
       totalChaptersEn: '12 Chapters',
-      bgGlow: 'hover:border-violet-500/80 hover:bg-violet-500/5',
-      borderColor: 'border-violet-500/40',
-      badgeBg: 'bg-violet-500/10 text-violet-600 dark:text-violet-400 border-violet-500/20',
-      badgeText: 'text-violet-600 dark:text-violet-400',
-      accentBg: 'bg-violet-600 hover:bg-violet-700',
-      liveChapters: [],
-      upcomingChapters: [
+      bgGlow: 'hover:border-cyan-500/80 hover:bg-cyan-500/5',
+      borderColor: 'border-cyan-500/40',
+      badgeBg: 'bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-500/20',
+      badgeText: 'text-cyan-600 dark:text-cyan-400',
+      accentBg: 'bg-cyan-600 hover:bg-cyan-700',
+      liveChapters: [
         {
+          id: 1,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/1',
+          titleBn: 'রসায়নের ধারণা',
+          titleEn: 'Concepts of Chemistry',
+          chNumBn: 'অধ্যায় ০১',
+          chNumEn: 'Chapter 01',
+          timeBn: '১৫ মিনিট',
+          timeEn: '15 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'আম পাকা ও মরিচা ধরার লাইভ সিমুলেটর, ৮টি সার্বজনীন GHS ঝুঁকি প্রতীক স্ক্যানার এবং ৬-ধাপের গবেষণা অনুসন্ধান ল্যাব।',
+          descEn:
+            'Interactive mango ripening & rusting simulator, 8 universal GHS hazard symbol scanner, and 6-step scientific inquiry lab.',
+          lessons: [
+            { num: '০১', titleBn: 'রসায়ন পরিচিতি ও ইতিহাস', titleEn: 'History of Chemistry' },
+            { num: '০২', titleBn: 'প্রাত্যহিক জীবনের রসায়ন ল্যাব', titleEn: 'Everyday Chemistry Lab' },
+            { num: '০৩', titleBn: 'বিজ্ঞানের অন্যান্য শাখা ও গুরুত্ব', titleEn: 'Interdisciplinary Links' },
+            { num: '০৪', titleBn: 'অনুসন্ধান ও গবেষণার ৬ ধাপ', titleEn: '6 Research Steps' },
+            { num: '০৫', titleBn: '৮টি GHS প্রতীক ও ল্যাব নিরাপত্তা', titleEn: '8 GHS Hazard Symbols' },
+          ],
+          ctaBn: 'রসায়ন ল্যাব খুলুন',
+          ctaEn: 'Open Chemistry Lab',
+          ctaIcon: FlaskConical,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'আম পাকা, মরিচা ও GHS প্রতীক',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 2,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/2',
+          titleBn: 'পদার্থের অবস্থা',
+          titleEn: 'States of Matter',
+          chNumBn: 'অধ্যায় ০২',
+          chNumEn: 'Chapter 02',
+          timeBn: '১৮ মিনিট',
+          timeEn: '18 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'কণার গতিতত্ত্ব ৩D সিমুলেটর, NH₃ ও HCl কাচনল ব্যাপন ল্যাব, বরফের তাপীয় বক্ররেখা এবং ৬টি ঊর্ধ্বপাতিত উদ্বায়ী পদার্থ।',
+          descEn:
+            'Kinetic particle chamber, NH₃ vs HCl glass tube diffusion lab, ice heating curve latent heat plateaus, and sublimation chamber.',
+          lessons: [
+            { num: '০১', titleBn: 'পদার্থের ৩ অবস্থা ও গতিতত্ত্ব', titleEn: '3 States & Kinetic Theory' },
+            { num: '০২', titleBn: 'ব্যাপন বনাম নিঃসরণ ল্যাব', titleEn: 'Diffusion vs Effusion' },
+            { num: '০৩', titleBn: 'NH₃ ও HCl কাচনল ব্যাপন', titleEn: 'NH₃ & HCl Glass Tube Lab' },
+            { num: '০৪', titleBn: 'গলনাঙ্ক, স্ফুটনাঙ্ক ও তাপীয় বক্ররেখা', titleEn: 'Heating & Cooling Curves' },
+            { num: '০৫', titleBn: 'পাতন ও ঊর্ধ্বপাতন উদ্বায়ী ল্যাব', titleEn: 'Sublimation Substances' },
+          ],
+          ctaBn: 'পদার্থের অবস্থা ল্যাব খুলুন',
+          ctaEn: 'Open States of Matter Lab',
+          ctaIcon: Layers,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'কাচনলে ব্যাপন ও হিটিং কার্ভ',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 3,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/3',
+          titleBn: 'পদার্থের গঠন',
+          titleEn: 'Structure of Matter',
           chNumBn: 'অধ্যায় ০৩',
           chNumEn: 'Chapter 03',
-          titleBn: 'পদার্থের গঠন ও পরমাণু মডেল',
-          titleEn: 'Structure of Matter',
-          descBn: 'রাদারফোর্ড ও বোর মডেলের কক্ষপথ ইলেকট্রন ঘূর্ণন ৩D সিমুলেটর।',
-          descEn: 'Rutherford & Bohr orbit electron rotation 3D simulator.',
+          timeBn: '২২ মিনিট',
+          timeEn: '22 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'বোর পরমাণু মডেল ও কোয়ান্টাম জাম্প, আউফবাউ (n+l) শক্তিক্রম, ১-৩০ মৌলের ইলেকট্রন বিন্যাস (Cr, Cu ব্যতিক্রম) এবং ক্লোরিনের আইসোটোপ ল্যাব।',
+          descEn:
+            'Bohr model & quantum jump simulator, Aufbau (n+l) energy ladder, 1–30 electron configurator (Cr, Cu exceptions), and chlorine isotope lab.',
+          lessons: [
+            { num: '০১', titleBn: 'পরমাণুর মূল কণিকা ও প্রতীক', titleEn: 'Subatomic Particles & Symbols' },
+            { num: '০২', titleBn: 'রাদারফোর্ড ও বোর পরমাণু মডেল', titleEn: 'Rutherford & Bohr Models' },
+            { num: '০৩', titleBn: 'শক্তিস্তর ও আউফবাউ (n+l) নিয়ম', titleEn: 'Energy Levels & Aufbau (n+l)' },
+            { num: '০৪', titleBn: '১-৩০ মৌলের ইলেকট্রন বিন্যাস', titleEn: '1–30 Electron Configurations' },
+            { num: '০৫', titleBn: 'আইসোটোপ ও আপেক্ষিক পারমাণবিক ভর', titleEn: 'Isotopes & Atomic Mass' },
+          ],
+          ctaBn: 'পদার্থের গঠন ল্যাব খুলুন',
+          ctaEn: 'Open Structure of Matter Lab',
+          ctaIcon: Atom,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'বোর মডেল ও আউফবাউ নীতি',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
         },
         {
+          id: 4,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/4',
+          titleBn: 'পর্যায় সারণি (Periodic Table)',
+          titleEn: 'Periodic Table & Periodic Trends',
           chNumBn: 'অধ্যায় ০৪',
           chNumEn: 'Chapter 04',
-          titleBn: 'পর্যায় সারণি ল্যাব (Periodic Table)',
-          titleEn: 'Periodic Table Lab',
-          descBn: 'ইন্টারেক্টিভ ১১৮টি মৌল, ইলেকট্রন বিন্যাস ও পর্যায়বৃত্ত ধর্মের মানচিত্র।',
-          descEn: 'Interactive 118 elements, electron configuration & periodic trends.',
+          timeBn: '২৫ মিনিট',
+          timeEn: '25 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'আধুনিক পর্যায় সারণি গ্রিড, গ্রুপ ও পর্যায় নির্ণয়ের ৩টি মাস্টার নিয়ম, পারমাণবিক ব্যাসার্ধ ও আয়নীকরণ শক্তির অ্যানিমেটেড গ্রাফ এবং ক্ষার ধাতু ল্যাব।',
+          descEn:
+            'Modern 118-element grid, 3 master group/period prediction rules, animated atomic radius & ionization energy graphs, and alkali water reaction chamber.',
+          lessons: [
+            { num: '০১', titleBn: 'পর্যায় সারণির পটভূমি ও ক্রমবিকাশ', titleEn: 'History & Mendeleev Table' },
+            { num: '০২', titleBn: 'পর্যায় সারণির মূল বৈশিষ্ট্য ও কাঠামো', titleEn: '7 Periods & 18 Groups' },
+            { num: '০৩', titleBn: 'ইলেকট্রন বিন্যাস থেকে অবস্থান নির্ণয়', titleEn: 'Predicting Group & Period' },
+            { num: '০৪', titleBn: 'পর্যায়বৃত্ত ধর্ম (আকার, IE, EN, EA)', titleEn: 'Periodic Trends (Radius, IE, EN)' },
+            { num: '০৫', titleBn: 'মৌল পরিবার ও ক্ষার ধাতু ল্যাব', titleEn: 'Element Families & Alkali Lab' },
+          ],
+          ctaBn: 'পর্যায় সারণি ল্যাব খুলুন',
+          ctaEn: 'Open Periodic Table Lab',
+          ctaIcon: Table,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'মৌল এক্সপ্লোরার ও পর্যায়বৃত্ত ধর্ম',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
         },
         {
-          chNumBn: 'অধ্যায় ০৫',
-          chNumEn: 'Chapter 05',
+          id: 5,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/5',
           titleBn: 'রাসায়নিক বন্ধন',
           titleEn: 'Chemical Bonds',
-          descBn: 'আয়নিক ও সমযোজী বন্ধনের ইলেকট্রন শেয়ারিং অ্যানিমেশন।',
-          descEn: 'Ionic and covalent bonding electron sharing animation.',
+          chNumBn: 'অধ্যায় ০৫',
+          chNumEn: 'Chapter 05',
+          timeBn: '২৫ মিনিট',
+          timeEn: '25 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'আয়নিক ও সমযোজী বন্ধন বিল্ডার, মুক্তজোড় (LP) ও বন্ধনজোড় (BP) স্ক্যানার, সুপ্ত যোজনী ক্যালকুলেটর এবং জলীয় বিদ্যুৎ পরিবাহিতা সেল।',
+          descEn:
+            'Ionic & covalent bond builder, lone pair & bond pair molecular scanner, latent valency calculator, and electrical conductivity circuit lab.',
+          lessons: [
+            { num: '০১', titleBn: 'যোজ্যতা ইলেকট্রন, যোজনী ও সুপ্ত যোজনী', titleEn: 'Valence, Valency & Latent Valency' },
+            { num: '০২', titleBn: 'অষ্টক ও দুইয়ের নিয়ম', titleEn: 'Octet & Duplet Rules' },
+            { num: '০৩', titleBn: 'আয়নিক বন্ধন ও ক্রিস্টাল জালক', titleEn: 'Ionic Bonding & Crystal Lattice' },
+            { num: '০৪', titleBn: 'সমযোজী বন্ধন, মুক্তজোড় ও বন্ধনজোড়', titleEn: 'Covalent Bonds, Lone & Bond Pairs' },
+            { num: '০৫', titleBn: 'ধাতব বন্ধন, বিদ্যুৎ পরিবাহিতা ও দ্রাব্যতা', titleEn: 'Metallic Bond, Conductivity & Solubility' },
+          ],
+          ctaBn: 'রাসায়নিক বন্ধন ল্যাব খুলুন',
+          ctaEn: 'Open Chemical Bonds Lab',
+          ctaIcon: Share2,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'বন্ধন বিল্ডার ও মুক্তজোড় স্ক্যানার',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 6,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/6',
+          titleBn: 'মোলের ধারণা ও রাসায়নিক গণনা',
+          titleEn: 'Concept of Mole & Chemical Calculations',
+          chNumBn: 'অধ্যায় ০৬',
+          chNumEn: 'Chapter 06',
+          timeBn: '২৮ মিনিট',
+          timeEn: '28 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            '৪-মুখী মোল কনভার্টার চাকা, আয়তনিক ফ্লাস্কে মোলারিটি দ্রবণ প্রস্তুত (W = SVM/১০০০), শতকরা সংযুতি এবং লিমিটিং বিক্রিয়ক ল্যাব।',
+          descEn:
+            '4-way interactive mole wheel, volumetric flask molarity solution lab (W = SVM/1000), percent composition, and limiting reactant simulator.',
+          lessons: [
+            { num: '০১', titleBn: 'মোল ও অ্যাভোগাড্রো সংখ্যা', titleEn: 'Mole & Avogadro Constant' },
+            { num: '০২', titleBn: 'মোলার আয়তন ও প্রমাণ অবস্থা (STP)', titleEn: 'Molar Volume at STP' },
+            { num: '০৩', titleBn: 'মোলারিটি ও দ্রবণ প্রস্তুত (W = SVM/১০০০)', titleEn: 'Molarity & Solution Preparation' },
+            { num: '০৪', titleBn: 'শতকরা সংযুতি, স্থূল ও আণবিক সংকেত', titleEn: 'Percent Comp & Molecular Formula' },
+            { num: '০৫', titleBn: 'স্টয়কিওমেট্রি ও লিমিটিং বিক্রিয়ক ল্যাব', titleEn: 'Stoichiometry & Limiting Reactant' },
+          ],
+          ctaBn: 'মোল গণনা ল্যাব খুলুন',
+          ctaEn: 'Open Mole Calculations Lab',
+          ctaIcon: Calculator,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'মোল মেশিন ও মোলারিটি ফ্লাস্ক',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 7,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/7',
+          titleBn: 'রাসায়নিক বিক্রিয়া (Chemical Reactions)',
+          titleEn: 'Chemical Reactions & Dynamic Equilibrium',
+          chNumBn: 'অধ্যায় ০৭',
+          chNumEn: 'Chapter 07',
+          timeBn: '২৬ মিনিট',
+          timeEn: '26 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'রেডক্স ইলেকট্রন স্থানান্তর অ্যানিমেশন, জারণ-বিজারণ যুগপৎ ক্রিয়া, জারণ সংখ্যা সলভার এবং লা-শাতেলীয়ার সাম্যাবস্থা চেম্বার।',
+          descEn:
+            'Redox electron transfer animation, simultaneous oxidation-reduction proofs, oxidation state solver, and Le Chatelier equilibrium chamber.',
+          lessons: [
+            { num: '০১', titleBn: 'বিক্রিয়ার দিক ও তাপীয় পরিবর্তন', titleEn: 'Direction & Thermal Changes' },
+            { num: '০২', titleBn: 'রেডক্স ও ইলেকট্রন স্থানান্তর', titleEn: 'Redox & Electron Transfer' },
+            { num: '০৩', titleBn: 'জারণ-বিজারণ যুগপৎ ক্রিয়া ও অর্ধ-বিক্রিয়া', titleEn: 'Simultaneous Redox Reactions' },
+            { num: '০৪', titleBn: 'জারণ সংখ্যা নির্ণয় বীজগণিতীয় নিয়ম', titleEn: 'Oxidation Number Calculation' },
+            { num: '০৫', titleBn: 'লা-শাতেলীয়ার নীতি ও সাম্যাবস্থা ল্যাব', titleEn: 'Le Chatelier Principle Lab' },
+          ],
+          ctaBn: 'রাসায়নিক বিক্রিয়া ল্যাব খুলুন',
+          ctaEn: 'Open Chemical Reactions Lab',
+          ctaIcon: Flame,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'রেডক্স ট্রান্সফার ও লা-শাতেলীয়া',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 8,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/8',
+          titleBn: 'রসায়ন ও শক্তি (Chemistry & Energy)',
+          titleEn: 'Chemistry and Energy',
+          chNumBn: 'অধ্যায় ০৮',
+          chNumEn: 'Chapter 08',
+          timeBn: '২৫ মিনিট',
+          timeEn: '25 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'বন্ধন শক্তি ও এনথালপি পরিবর্তন (ΔH = B₁ - B₂) ক্যালকুলেটর, লবণ সেতুযুক্ত ড্যানিয়েল সেল (১.১০ V) ল্যাব, ড্রাই সেল ১.৫ V অ্যানাটমি এবং রূপার ইলেকট্রোপ্লেটিং।',
+          descEn:
+            'Bond energy & enthalpy change (ΔH = B₁ - B₂) calculator, salt-bridge Daniell cell (1.10 V) lab, dry cell 1.5V anatomy, and silver electroplating.',
+          lessons: [
+            { num: '০১', titleBn: 'রাসায়নিক বিক্রিয়ায় শক্তির পরিবর্তন ও প্রকারভেদ', titleEn: 'Energy Changes & Types' },
+            { num: '০২', titleBn: 'বন্ধন শক্তি ও রাসায়নিক সমীকরণ থেকে ΔH হিসাব', titleEn: 'Bond Energy & ΔH Calculations' },
+            { num: '০৩', titleBn: 'তড়িৎ পরিবাহী ও গ্যালভানিক ড্যানিয়েল সেল', titleEn: 'Galvanic Daniell Cell (1.10V)' },
+            { num: '০৪', titleBn: 'শুষ্ক কোষ (Dry Cell) গঠন ও বিক্রিয়া', titleEn: 'Dry Cell (1.5V) Structure' },
+            { num: '০৫', titleBn: 'তড়িৎ বিশ্লেষণ ও তড়িৎ প্রলেপন (Electroplating)', titleEn: 'Electrolysis & Electroplating' },
+          ],
+          ctaBn: 'শক্তি ও তড়িৎ কোষ ল্যাব খুলুন',
+          ctaEn: 'Open Energy & Cell Lab',
+          ctaIcon: Zap,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'ডেল্টা এইচ ও ড্যানিয়েল সেল',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 9,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/9',
+          titleBn: 'এসিড-ক্ষার সমতা (Acid-Base Balance)',
+          titleEn: 'Acid-Base Balance & Water Chemistry',
+          chNumBn: 'অধ্যায় ০৯',
+          chNumEn: 'Chapter 09',
+          timeBn: '২৬ মিনিট',
+          timeEn: '26 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'মাস্টার pH স্কেল ও ৪-নির্দেশক বর্ণালি ল্যাব, সক্রিয় ধাতু ও কার্বনেট গ্যাস নিঃসরণ চেম্বার, চুনের পানির টেস্ট এবং পানির খরতা দূরীকরণ।',
+          descEn:
+            'Master pH scale & 4-indicator spectrum, active metal & carbonate gas evolution chamber, limewater test, and water softening lab.',
+          lessons: [
+            { num: '০১', titleBn: 'এসিড ও ক্ষারকের মৌলিক ধর্ম ও বিক্রিয়া', titleEn: 'Acid & Base Properties' },
+            { num: '০২', titleBn: 'ক্ষারক বনাম ক্ষার (সকল ক্ষারই ক্ষারক)', titleEn: 'Alkalis vs Bases' },
+            { num: '০৩', titleBn: 'pH স্কেল ও ইউনিভার্সাল নির্দেশক বর্ণালি', titleEn: 'pH Scale & Indicators' },
+            { num: '০৪', titleBn: 'এসিড বৃষ্টি ও মাটির অম্লত্ব নিয়ন্ত্রণ', titleEn: 'Acid Rain & Liming' },
+            { num: '০৫', titleBn: 'পানির খরতা, বিশুদ্ধতার মানদণ্ড ও দূরীকরণ', titleEn: 'Water Hardness & Softening' },
+          ],
+          ctaBn: 'এসিড-ক্ষার সমতা ল্যাব খুলুন',
+          ctaEn: 'Open Acid-Base Lab',
+          ctaIcon: Droplets,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'pH বর্ণালি ও পানির খরতা',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 10,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/10',
+          titleBn: 'খনিজ সম্পদ: ধাতু ও অধাতু',
+          titleEn: 'Mineral Resources: Metals & Non-metals',
+          chNumBn: 'অধ্যায় ১০',
+          chNumEn: 'Chapter 10',
+          timeBn: '২৮ মিনিট',
+          timeEn: '28 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'ব্লাস্ট ফার্নেস ও রিটর্ট কার্বন বিজারণ, ধাতুর সক্রিয়তা সিরিজ নেভিগেটর, সংকর ধাতু ব্লেন্ডার (স্টেইনলেস স্টিল, কাঁসা, পিতল) ও স্পর্শ পদ্ধতিতে H₂SO₄ প্লান্ট।',
+          descEn:
+            'Blast furnace & retort carbon reduction, metal reactivity series navigator, alloy blender (stainless steel, bronze, brass), and Contact process H₂SO₄ plant.',
+          lessons: [
+            { num: '০১', titleBn: 'খনিজ ও আকরিক (বক্সাইট বনাম কাদা)', titleEn: 'Minerals vs Ores' },
+            { num: '০২', titleBn: 'ধাতু নিষ্কাশনের ৫টি প্রধান ধাপ', titleEn: '5 Extraction Steps' },
+            { num: '০৩', titleBn: 'ধাতুর সক্রিয়তা সিরিজ ও নিষ্কাশন পদ্ধতি', titleEn: 'Reactivity & Extraction' },
+            { num: '০৪', titleBn: 'সংকর ধাতু (স্টিল, পিতল, কাঁসা) ও মরিচা', titleEn: 'Alloys & Rust Prevention' },
+            { num: '০৫', titleBn: 'সালফার ও স্পর্শ পদ্ধতিতে H₂SO₄ উৎপাদন', titleEn: 'Sulfur & Contact Process' },
+          ],
+          ctaBn: 'ধাতু নিষ্কাশন ল্যাব খুলুন',
+          ctaEn: 'Open Metallurgy Lab',
+          ctaIcon: Hammer,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'ব্লাস্ট ফার্নেস ও সংকর ধাতু',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 11,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/11',
+          titleBn: 'খনিজ সম্পদ: জীবাশ্ম',
+          titleEn: 'Mineral Resources: Fossils & Hydrocarbons',
+          chNumBn: 'অধ্যায় ১১',
+          chNumEn: 'Chapter 11',
+          timeBn: '৩০ মিনিট',
+          timeEn: '30 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'পেট্রোলিয়াম আংশিক পাতন স্তম্ভ (৭টি ফ্র্যাকশন), ব্রোমিন ও বেয়ার অসম্পৃক্ততা টেস্টটিউব ল্যাব, অ্যালকেন-অ্যালকোহল রূপান্তর চক্র এবং পলিমারাইজেশন কারখানা।',
+          descEn:
+            'Petroleum fractional distillation column (7 fractions), bromine & Baeyer unsaturation test lab, organic conversion machine, and polymer factory.',
+          lessons: [
+            { num: '০১', titleBn: 'জীবাশ্ম জ্বালানি ও পেট্রোলিয়াম পাতন', titleEn: 'Fossil Fuels & Distillation' },
+            { num: '০২', titleBn: 'হাইড্রোকার্বন ও সমগোত্রীয় শ্রেণি', titleEn: 'Homologous Series' },
+            { num: '০৩', titleBn: 'অ্যালকেন, অ্যালকিন ও অ্যালকাইন প্রস্তুতি', titleEn: 'Hydrocarbon Reactions' },
+            { num: '০৪', titleBn: 'অসম্পৃক্ততার ব্রোমিন ও বেয়ার পরীক্ষা', titleEn: 'Unsaturation Tests' },
+            { num: '০৫', titleBn: 'জৈব রূপান্তর চক্র ও পলিমার রসায়ন', titleEn: 'Conversions & Polymers' },
+          ],
+          ctaBn: 'জীবাশ্ম ও হাইড্রোকার্বন ল্যাব খুলুন',
+          ctaEn: 'Open Fossils Lab',
+          ctaIcon: Flame,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'পেট্রোলিয়াম পাতন ও পলিমার',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
+        },
+        {
+          id: 12,
+          subjectKey: 'chemistry',
+          subjectNameBn: 'রসায়ন',
+          subjectNameEn: 'Chemistry',
+          href: '/dashboard/playground/v2/chemistry/12',
+          titleBn: 'আমাদের জীবনে রসায়ন',
+          titleEn: 'Chemistry in Our Daily Lives',
+          chNumBn: 'অধ্যায় ১২',
+          chNumEn: 'Chapter 12',
+          timeBn: '২৮ মিনিট',
+          timeEn: '28 min',
+          weightBn: '১০ নম্বর',
+          weightEn: '10 Marks',
+          descBn:
+            'বেকিং ওভেন ও পাউরুটি ফোলা ল্যাব, সাবানায়ন ও থ্রিডি মিসেল ময়লা পরিষ্কারক মেকানিজম, ব্লিচিং পাউডারের বিরঞ্জন ক্রিয়া এবং ত্বকের pH এসিড ম্যান্টল ল্যাব।',
+          descEn:
+            'Baking oven & cake rising chamber, soap saponification & 3D micelle cleaning mechanism, bleaching powder nascent oxygen, and skin pH acid mantle lab.',
+          lessons: [
+            { num: '০১', titleBn: 'খাদ্য ও গৃহস্থালির রসায়ন (বেকিং পাউডার)', titleEn: 'Domestic Food Chemistry' },
+            { num: '০২', titleBn: 'সাবান ও সাবানায়ন বিক্রিয়া (সল্টিং আউট)', titleEn: 'Soap & Saponification' },
+            { num: '০৩', titleBn: 'মিসেল (Micelle) ও ময়লা পরিষ্কারক কৌশল', titleEn: 'Micelle Cleaning Mechanics' },
+            { num: '০৪', titleBn: 'ব্লিচিং পাউডার ও বিরঞ্জন ক্রিয়া [O]', titleEn: 'Bleaching Powder Action' },
+            { num: '০৫', titleBn: 'প্রসাধনী রসায়ন ও ত্বকের pH (৫.৫)', titleEn: 'Cosmetics & Skin pH' },
+          ],
+          ctaBn: 'জীবনের রসায়ন ল্যাব খুলুন',
+          ctaEn: 'Open Everyday Chemistry Lab',
+          ctaIcon: Sparkles,
+          accentColor: 'text-cyan-600',
+          borderHover: 'hover:border-cyan-500',
+          badgeTextBn: 'বেকিং, সাবানায়ন ও মিসেল',
+          badgeSubBn: '৫-ধাপের সম্পূর্ণ প্রস্তুতি',
         },
       ],
+      upcomingChapters: [],
     },
     {
       id: 'biology',
@@ -1257,18 +1670,93 @@ export function GuidebookLibraryView() {
     },
   ];
 
+  // Filter chapters per subject based on division and search query
+  const getFilteredChapters = (sub: SubjectItem) => {
+    const q = searchQuery.trim().toLowerCase();
+
+    const live = sub.liveChapters.filter((ch) => {
+      // Division filter
+      if (selectedDivision !== 'all') {
+        if (sub.id === 'math') {
+          const div = MATH_DIVISIONS.find((d) => d.id === selectedDivision);
+          if (div?.chapterIds && !div.chapterIds.includes(ch.id)) return false;
+        } else if (sub.id === 'physics') {
+          const div = PHYSICS_DIVISIONS.find((d) => d.id === selectedDivision);
+          if (div?.chapterIds && !div.chapterIds.includes(ch.id)) return false;
+        }
+      }
+
+      // Search query filter
+      if (q) {
+        const titleBnMatch = ch.titleBn.toLowerCase().includes(q);
+        const titleEnMatch = ch.titleEn.toLowerCase().includes(q);
+        const chNumBnMatch = ch.chNumBn.toLowerCase().includes(q);
+        const chNumEnMatch = ch.chNumEn.toLowerCase().includes(q);
+        const descBnMatch = ch.descBn.toLowerCase().includes(q);
+        const descEnMatch = ch.descEn.toLowerCase().includes(q);
+        const idMatch = String(ch.id) === q || `ch${ch.id}` === q || `chapter ${ch.id}`.includes(q);
+        const lessonMatch = ch.lessons.some(
+          (l) => l.titleBn.toLowerCase().includes(q) || l.titleEn.toLowerCase().includes(q)
+        );
+
+        if (
+          !titleBnMatch &&
+          !titleEnMatch &&
+          !chNumBnMatch &&
+          !chNumEnMatch &&
+          !descBnMatch &&
+          !descEnMatch &&
+          !idMatch &&
+          !lessonMatch
+        ) {
+          return false;
+        }
+      }
+
+      return true;
+    });
+
+    const upcoming =
+      selectedDivision === 'all'
+        ? sub.upcomingChapters.filter((ch) => {
+            if (!q) return true;
+            return (
+              ch.titleBn.toLowerCase().includes(q) ||
+              ch.titleEn.toLowerCase().includes(q) ||
+              ch.chNumBn.toLowerCase().includes(q) ||
+              ch.chNumEn.toLowerCase().includes(q) ||
+              ch.descBn.toLowerCase().includes(q) ||
+              ch.descEn.toLowerCase().includes(q)
+            );
+          })
+        : [];
+
+    return { live, upcoming };
+  };
+
   // Filtered Subject Items based on selection
   const displayedSubjects =
     activeSubject === 'all' ? SUBJECTS : SUBJECTS.filter((s) => s.id === activeSubject);
 
   const totalLiveChapters = SUBJECTS.reduce((acc, curr) => acc + curr.activeCount, 0);
 
+  const subjectResults = displayedSubjects.map((sub) => ({
+    subject: sub,
+    ...getFilteredChapters(sub),
+  }));
+
+  const totalMatchingLive = subjectResults.reduce((acc, r) => acc + r.live.length, 0);
+  const totalMatchingUpcoming = subjectResults.reduce((acc, r) => acc + r.upcoming.length, 0);
+  const totalMatches = totalMatchingLive + totalMatchingUpcoming;
+  const isFiltered = searchQuery.trim() !== '' || selectedDivision !== 'all';
+
   return (
     <div className="space-y-12">
       {/* V2 Hero Header - Calm Editorial Style */}
-      <div className="relative overflow-hidden rounded-3xl border border-border/60 bg-card p-6 sm:p-10 shadow-sm">
-        <div className="space-y-4 max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-3.5 py-1 text-xs font-bold text-primary">
+      <div className="relative overflow-hidden rounded-3xl border border-border/70 bg-card p-6 sm:p-10 shadow-sm">
+        <div className="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-gradient-to-br from-primary/12 via-amber-500/8 to-transparent blur-3xl pointer-events-none" />
+        <div className="space-y-4 max-w-3xl relative">
+          <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-primary/10 px-3.5 py-1 text-xs font-bold text-primary">
             <BookOpen className="h-3.5 w-3.5" />
             <span>
               {isBn
@@ -1332,7 +1820,7 @@ export function GuidebookLibraryView() {
               <button
                 key={sub.id}
                 data-subject-card={sub.id}
-                onClick={() => setActiveSubject(sub.id)}
+                onClick={() => handleSelectSubject(sub.id)}
                 className={`group relative text-left p-4 rounded-2xl border-2 transition-all flex flex-col justify-between gap-4 ${
                   isSelected
                     ? 'border-[#FF6B57] bg-primary/5 shadow-md ring-2 ring-[#FF6B57]/20'
@@ -1396,7 +1884,7 @@ export function GuidebookLibraryView() {
         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pt-1 pb-2">
           <button
             data-subject-pill="all"
-            onClick={() => setActiveSubject('all')}
+            onClick={() => handleSelectSubject('all')}
             className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 ${
               activeSubject === 'all'
                 ? 'bg-foreground text-background shadow-xs'
@@ -1414,7 +1902,7 @@ export function GuidebookLibraryView() {
               <button
                 key={sub.id}
                 data-subject-pill={sub.id}
-                onClick={() => setActiveSubject(sub.id)}
+                onClick={() => handleSelectSubject(sub.id)}
                 className={`px-3.5 py-1.5 rounded-xl text-xs font-bold whitespace-nowrap transition-all flex items-center gap-1.5 ${
                   isSelected
                     ? 'bg-[#FF6B57] text-white shadow-xs'
@@ -1439,212 +1927,422 @@ export function GuidebookLibraryView() {
       </div>
 
       {/* ========================================================= */}
-      {/* 2. CHAPTERS PER SUBJECT (বিষয় অনুযায়ী অধ্যায়সমূহ) */}
+      {/* 2. SEARCH, DIVISION FILTERS & VIEW MODE CONTROL BAR */}
       {/* ========================================================= */}
-      <div className="space-y-12">
-        {displayedSubjects.map((sub) => {
-          const SubIcon = sub.icon;
-          const hasLive = sub.liveChapters.length > 0;
+      <div className="space-y-4 rounded-3xl border border-border/70 bg-card/60 p-4 sm:p-5 shadow-xs backdrop-blur-xs">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+          {/* Search Input */}
+          <div className="relative flex-1">
+            <Search className="absolute left-3.5 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={
+                isBn
+                  ? 'অধ্যায় বা টপিক খুঁজুন (যেমন: সূচক, ভেক্টর, ত্রিকোণমিতি, পিথাগোরাস, ওহম)...'
+                  : 'Search chapter or topic (e.g. Set, Vector, Ohm, Triangle)...'
+              }
+              className="w-full rounded-2xl border border-border/80 bg-background/80 pl-10 pr-10 py-2.5 text-xs sm:text-sm text-foreground placeholder:text-muted-foreground/70 focus:border-primary focus:outline-hidden focus:ring-2 focus:ring-primary/20 transition-all"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery('')}
+                className="absolute right-3 top-1/2 -translate-y-1/2 h-6 w-6 rounded-full hover:bg-muted flex items-center justify-center text-muted-foreground hover:text-foreground transition-colors"
+                title={isBn ? 'মুছে ফেলুন' : 'Clear search'}
+              >
+                <X className="h-3.5 w-3.5" />
+              </button>
+            )}
+          </div>
 
-          return (
-            <section
-              key={sub.id}
-              className="space-y-6 pt-6 border-t border-border/70 first:pt-0 first:border-0"
-            >
-              {/* Subject Header Banner */}
-              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-3xl bg-muted/30 border border-border/70">
-                <div className="flex items-center gap-3.5">
-                  <div className="h-12 w-12 rounded-2xl bg-card border border-border/80 flex items-center justify-center text-foreground shadow-xs shrink-0">
-                    <SubIcon className="h-6 w-6 text-[#FF6B57]" />
-                  </div>
-                  <div>
-                    <div className="flex items-center gap-2">
-                      <h3 className="text-xl sm:text-2xl font-black text-foreground font-heading">
-                        {isBn ? sub.nameBn : sub.nameEn}
-                      </h3>
-                      <span className="text-xs font-mono font-bold text-muted-foreground px-2 py-0.5 bg-muted rounded-md border border-border/50">
-                        {sub.code}
-                      </span>
+          {/* Result Count Badge & View Mode Toggle */}
+          <div className="flex items-center justify-between sm:justify-end gap-2 shrink-0">
+            {isFiltered && (
+              <span className="text-xs font-bold text-primary bg-primary/10 px-2.5 py-1.5 rounded-xl border border-primary/20">
+                {isBn
+                  ? `${totalMatchingLive}টি অধ্যায় পাওয়া গেছে`
+                  : `${totalMatchingLive} chapters found`}
+              </span>
+            )}
+
+            <div className="flex items-center rounded-xl border border-border/80 bg-muted/40 p-1">
+              <button
+                onClick={() => setViewMode('detailed')}
+                className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all ${
+                  viewMode === 'detailed'
+                    ? 'bg-background text-foreground shadow-xs'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+                title={isBn ? 'বিস্তারিত ভিউ (লেসন তালিকা সহ)' : 'Detailed View'}
+              >
+                <LayoutGrid className="h-3.5 w-3.5" />
+                <span className="hidden md:inline">{isBn ? 'বিস্তারিত' : 'Detailed'}</span>
+              </button>
+              <button
+                onClick={() => setViewMode('compact')}
+                className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-bold transition-all ${
+                  viewMode === 'compact'
+                    ? 'bg-background text-foreground shadow-xs'
+                    : 'text-muted-foreground hover:text-foreground'
+                }`}
+                title={isBn ? 'কমপ্যাক্ট দ্রুত ভিউ' : 'Compact Grid'}
+              >
+                <List className="h-3.5 w-3.5" />
+                <span className="hidden md:inline">{isBn ? 'কমপ্যাক্ট' : 'Compact'}</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Division Filter Chips (When Math or Physics is selected) */}
+        {(activeSubject === 'math' || activeSubject === 'physics') && (
+          <div className="pt-2 border-t border-border/50 flex items-center gap-2 overflow-x-auto no-scrollbar">
+            <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider flex items-center gap-1 shrink-0 mr-1">
+              <SlidersHorizontal className="h-3 w-3" />
+              <span>{isBn ? 'বিভাগ:' : 'Group:'}</span>
+            </span>
+            {(activeSubject === 'math' ? MATH_DIVISIONS : PHYSICS_DIVISIONS).map((div) => {
+              const isDivSelected = selectedDivision === div.id;
+              return (
+                <button
+                  key={div.id}
+                  data-division-filter={div.id}
+                  onClick={() => setSelectedDivision(div.id)}
+                  className={`px-3 py-1 rounded-xl text-xs font-bold whitespace-nowrap transition-all border ${
+                    isDivSelected
+                      ? activeSubject === 'physics'
+                        ? 'bg-emerald-600 text-white border-emerald-600 shadow-xs'
+                        : 'bg-[#FF6B57] text-white border-[#FF6B57] shadow-xs'
+                      : 'bg-muted/40 text-muted-foreground border-border/60 hover:bg-muted hover:text-foreground'
+                  }`}
+                >
+                  {isBn ? div.labelBn : div.labelEn}
+                </button>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* ========================================================= */}
+      {/* 3. CHAPTERS PER SUBJECT (বিষয় অনুযায়ী অধ্যায়সমূহ) */}
+      {/* ========================================================= */}
+      {totalMatches === 0 && isFiltered ? (
+        <div className="rounded-3xl border border-dashed border-border/80 bg-card p-10 sm:p-14 text-center space-y-4">
+          <div className="h-14 w-14 rounded-2xl bg-primary/10 text-primary mx-auto flex items-center justify-center">
+            <Search className="h-7 w-7" />
+          </div>
+          <div className="space-y-1">
+            <h4 className="text-lg font-bold text-foreground">
+              {isBn
+                ? searchQuery
+                  ? `"${searchQuery}" এর জন্য কোনো অধ্যায় পাওয়া যায়নি`
+                  : 'এই বিভাগে কোনো অধ্যায় পাওয়া যায়নি'
+                : searchQuery
+                ? `No chapters found for "${searchQuery}"`
+                : 'No chapters found in this group'}
+            </h4>
+            <p className="text-xs sm:text-sm text-muted-foreground max-w-md mx-auto">
+              {isBn
+                ? 'বানান পরীক্ষা করুন বা ফিল্টার রিসেট করে সম্পূর্ণ সিলেবাস ব্রাউজ করুন।'
+                : 'Check your spelling or reset filters to browse the entire syllabus.'}
+            </p>
+          </div>
+          <button
+            onClick={() => {
+              setSearchQuery('');
+              setSelectedDivision('all');
+            }}
+            className="inline-flex items-center gap-2 rounded-xl bg-primary px-4 py-2 text-xs font-bold text-primary-foreground shadow-sm hover:opacity-90 transition-opacity"
+          >
+            <RotateCcw className="h-3.5 w-3.5" />
+            <span>{isBn ? 'ফিল্টার রিসেট করুন' : 'Reset Filters'}</span>
+          </button>
+        </div>
+      ) : (
+        <div className="space-y-12">
+          {subjectResults
+            .filter((r) => r.live.length > 0 || r.upcoming.length > 0)
+            .map(({ subject: sub, live: liveChapters, upcoming: upcomingChapters }) => {
+              const SubIcon = sub.icon;
+              const hasLive = liveChapters.length > 0;
+
+              return (
+                <section
+                  key={sub.id}
+                  className="space-y-6 pt-6 border-t border-border/70 first:pt-0 first:border-0"
+                >
+                  {/* Subject Header Banner */}
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 p-5 rounded-3xl bg-muted/30 border border-border/70">
+                    <div className="flex items-center gap-3.5">
+                      <div className="h-12 w-12 rounded-2xl bg-card border border-border/80 flex items-center justify-center text-foreground shadow-xs shrink-0">
+                        <SubIcon className="h-6 w-6 text-[#FF6B57]" />
+                      </div>
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <h3 className="text-xl sm:text-2xl font-black text-foreground font-heading">
+                            {isBn ? sub.nameBn : sub.nameEn}
+                          </h3>
+                          <span className="text-xs font-mono font-bold text-muted-foreground px-2 py-0.5 bg-muted rounded-md border border-border/50">
+                            {sub.code}
+                          </span>
+                        </div>
+                        <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
+                          {isBn ? sub.taglineBn : sub.taglineEn} •{' '}
+                          {isBn ? `সিলেবাস: ${sub.totalChaptersBn}` : `Syllabus: ${sub.totalChaptersEn}`}
+                        </p>
+                      </div>
                     </div>
-                    <p className="text-xs sm:text-sm text-muted-foreground mt-0.5">
-                      {isBn ? sub.taglineBn : sub.taglineEn} •{' '}
-                      {isBn ? `সিলেবাস: ${sub.totalChaptersBn}` : `Syllabus: ${sub.totalChaptersEn}`}
-                    </p>
+
+                    <div className="flex items-center gap-2 self-start sm:self-center">
+                      {hasLive ? (
+                        <span className="text-xs font-bold text-emerald-600 bg-emerald-500/10 px-3 py-1 rounded-xl border border-emerald-500/20 flex items-center gap-1.5">
+                          <CheckCircle2 className="h-3.5 w-3.5" />
+                          <span>
+                            {isBn
+                              ? `${liveChapters.length}টি অধ্যায় সম্পূর্ণ প্রস্তুত`
+                              : `${liveChapters.length} Chapter Ready`}
+                          </span>
+                        </span>
+                      ) : (
+                        <span className="text-xs font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-xl border border-border">
+                          {isBn ? 'আসন্ন নতুন ল্যাব' : 'Coming Soon'}
+                        </span>
+                      )}
+                    </div>
                   </div>
-                </div>
 
-                <div className="flex items-center gap-2 self-start sm:self-center">
-                  {hasLive ? (
-                    <span className="text-xs font-bold text-emerald-600 bg-emerald-500/10 px-3 py-1 rounded-xl border border-emerald-500/20 flex items-center gap-1.5">
-                      <CheckCircle2 className="h-3.5 w-3.5" />
-                      <span>
-                        {isBn
-                          ? `${sub.liveChapters.length}টি অধ্যায় সম্পূর্ণ প্রস্তুত`
-                          : `${sub.liveChapters.length} Chapter Ready`}
-                      </span>
-                    </span>
-                  ) : (
-                    <span className="text-xs font-semibold text-muted-foreground bg-muted px-3 py-1 rounded-xl border border-border">
-                      {isBn ? 'আসন্ন নতুন ল্যাব' : 'Coming Soon'}
-                    </span>
-                  )}
-                </div>
-              </div>
+                  {/* LIVE CHAPTER CARDS UNDER THIS SUBJECT */}
+                  {hasLive && viewMode === 'detailed' && (
+                    <div className="space-y-6">
+                      {liveChapters.map((ch) => {
+                        const CtaIcon = ch.ctaIcon;
+                        return (
+                          <div
+                            key={ch.id}
+                            className={`group relative overflow-hidden rounded-3xl border-2 bg-card p-6 sm:p-8 transition-all hover:shadow-xl ${
+                              sub.id === 'physics'
+                                ? 'border-emerald-500/30 hover:border-emerald-500'
+                                : 'border-primary/30 hover:border-primary'
+                            }`}
+                          >
+                            <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
+                              {/* Left Details */}
+                              <div className="space-y-5 flex-1">
+                                <div className="flex flex-wrap items-center gap-2.5">
+                                  <span
+                                    className={`rounded-lg px-3 py-1 text-xs font-black flex items-center gap-1.5 border ${
+                                      sub.id === 'physics'
+                                        ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20'
+                                        : 'bg-primary/10 text-primary border-primary/20'
+                                    }`}
+                                  >
+                                    <SubIcon className="h-3.5 w-3.5" />
+                                    <span>{isBn ? `${ch.chNumBn} • ${sub.nameBn}` : `${ch.chNumEn} • ${sub.nameEn}`}</span>
+                                  </span>
 
-              {/* LIVE CHAPTER CARDS UNDER THIS SUBJECT */}
-              {sub.liveChapters.length > 0 && (
-                <div className="space-y-6">
-                  {sub.liveChapters.map((ch) => {
-                    const CtaIcon = ch.ctaIcon;
-                    return (
-                      <div
-                        key={ch.id}
-                        className={`group relative overflow-hidden rounded-3xl border-2 bg-card p-6 sm:p-8 transition-all hover:shadow-xl ${
-                          sub.id === 'physics'
-                            ? 'border-emerald-500/30 hover:border-emerald-500'
-                            : 'border-primary/30 hover:border-primary'
-                        }`}
-                      >
-                        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
-                          {/* Left Details */}
-                          <div className="space-y-5 flex-1">
-                            <div className="flex flex-wrap items-center gap-2.5">
-                              <span
-                                className={`rounded-lg px-3 py-1 text-xs font-black flex items-center gap-1.5 border ${
-                                  sub.id === 'physics'
-                                    ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20'
-                                    : 'bg-primary/10 text-primary border-primary/20'
-                                }`}
-                              >
-                                <SubIcon className="h-3.5 w-3.5" />
-                                <span>{isBn ? `${ch.chNumBn} • ${sub.nameBn}` : `${ch.chNumEn} • ${sub.nameEn}`}</span>
-                              </span>
+                                  <span className="rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-1 text-xs font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
+                                    <Clock className="h-3.5 w-3.5" />
+                                    <span>{isBn ? `পড়ার সময়: ${ch.timeBn}` : `Study Time: ${ch.timeEn}`}</span>
+                                  </span>
 
-                              <span className="rounded-lg bg-amber-500/10 border border-amber-500/20 px-3 py-1 text-xs font-bold text-amber-600 dark:text-amber-400 flex items-center gap-1.5">
-                                <Clock className="h-3.5 w-3.5" />
-                                <span>{isBn ? `পড়ার সময়: ${ch.timeBn}` : `Study Time: ${ch.timeEn}`}</span>
-                              </span>
+                                  <span className="rounded-lg bg-rose-500/10 border border-rose-500/20 px-3 py-1 text-xs font-bold text-rose-600 dark:text-rose-400 flex items-center gap-1.5">
+                                    <Award className="h-3.5 w-3.5" />
+                                    <span>{isBn ? `বোর্ড পরীক্ষায় মান: ${ch.weightBn}` : `Board Weight: ${ch.weightEn}`}</span>
+                                  </span>
+                                </div>
 
-                              <span className="rounded-lg bg-rose-500/10 border border-rose-500/20 px-3 py-1 text-xs font-bold text-rose-600 dark:text-rose-400 flex items-center gap-1.5">
-                                <Award className="h-3.5 w-3.5" />
-                                <span>{isBn ? `বোর্ড পরীক্ষায় মান: ${ch.weightBn}` : `Board Weight: ${ch.weightEn}`}</span>
-                              </span>
+                                <div>
+                                  <h4 className="text-2xl sm:text-3xl font-black text-foreground font-heading mb-2">
+                                    {isBn ? ch.titleBn : ch.titleEn}
+                                  </h4>
+                                  <p className="text-sm text-muted-foreground max-w-2xl leading-relaxed">
+                                    {isBn ? ch.descBn : ch.descEn}
+                                  </p>
+                                </div>
+
+                                {/* 5 Lessons Mini Pill List */}
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 pt-2">
+                                  {ch.lessons.map((lesson) => (
+                                    <div
+                                      key={lesson.num}
+                                      className="flex items-center gap-2 rounded-xl bg-muted/40 border border-border/50 px-3 py-2 text-xs font-semibold"
+                                    >
+                                      <span
+                                        className={`font-mono font-bold ${
+                                          sub.id === 'physics' ? 'text-emerald-600' : 'text-primary'
+                                        }`}
+                                      >
+                                        {lesson.num}
+                                      </span>
+                                      <span className="text-foreground">
+                                        {isBn ? lesson.titleBn : lesson.titleEn}
+                                      </span>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+
+                              {/* Right CTA Box */}
+                              <div className="flex flex-col sm:flex-row lg:flex-col items-stretch gap-3 lg:w-60">
+                                <Link
+                                  href={ch.href as any}
+                                  className={`flex items-center justify-center gap-2 rounded-2xl text-white px-6 py-4 text-sm font-extrabold shadow-lg transition-all hover:scale-[1.02] ${
+                                    sub.id === 'physics'
+                                      ? 'bg-emerald-600 hover:bg-emerald-700 shadow-emerald-600/20'
+                                      : 'bg-[#FF6B57] hover:bg-[#e05340] shadow-[#FF6B57]/20'
+                                  }`}
+                                >
+                                  <CtaIcon className="h-4 w-4" />
+                                  <span>{isBn ? ch.ctaBn : ch.ctaEn}</span>
+                                  <ArrowRight className="h-4 w-4" />
+                                </Link>
+
+                                <div className="rounded-2xl border border-border/60 bg-muted/30 p-3 text-center">
+                                  <div className="text-[11px] text-muted-foreground">
+                                    {isBn ? ch.badgeTextBn : 'Interactive Simulator'}
+                                  </div>
+                                  <div className="text-xs font-bold text-foreground mt-0.5">
+                                    {isBn ? ch.badgeSubBn : '5-Step Board Mastery'}
+                                  </div>
+                                </div>
+                              </div>
                             </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
 
-                            <div>
-                              <h4 className="text-2xl sm:text-3xl font-black text-foreground font-heading mb-2">
-                                {isBn ? ch.titleBn : ch.titleEn}
-                              </h4>
-                              <p className="text-sm text-muted-foreground max-w-2xl leading-relaxed">
+                  {/* LIVE CHAPTER CARDS COMPACT GRID */}
+                  {hasLive && viewMode === 'compact' && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                      {liveChapters.map((ch) => {
+                        return (
+                          <div
+                            key={ch.id}
+                            className={`group relative flex flex-col justify-between overflow-hidden rounded-2xl border-2 bg-card p-5 transition-all hover:shadow-lg ${
+                              sub.id === 'physics'
+                                ? 'border-emerald-500/20 hover:border-emerald-500/70 hover:bg-emerald-500/5'
+                                : 'border-primary/20 hover:border-primary/70 hover:bg-primary/5'
+                            }`}
+                          >
+                            <div className="space-y-3">
+                              {/* Chapter pill & Weight */}
+                              <div className="flex items-center justify-between gap-2">
+                                <span
+                                  className={`rounded-lg px-2.5 py-0.5 text-[11px] font-black flex items-center gap-1 border ${
+                                    sub.id === 'physics'
+                                      ? 'bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-500/20'
+                                      : 'bg-primary/10 text-primary border-primary/20'
+                                  }`}
+                                >
+                                  <SubIcon className="h-3 w-3" />
+                                  <span>{isBn ? ch.chNumBn : ch.chNumEn}</span>
+                                </span>
+
+                                <span className="rounded-md bg-rose-500/10 border border-rose-500/20 px-2 py-0.5 text-[10px] font-bold text-rose-600 dark:text-rose-400">
+                                  {isBn ? ch.weightBn : ch.weightEn}
+                                </span>
+                              </div>
+
+                              {/* Title & Subtitle */}
+                              <div>
+                                <h4 className="text-base font-extrabold text-foreground group-hover:text-primary transition-colors line-clamp-1">
+                                  {isBn ? ch.titleBn : ch.titleEn}
+                                </h4>
+                                <div className="text-[11px] font-semibold text-muted-foreground mt-0.5">
+                                  {isBn ? ch.titleEn : ch.titleBn}
+                                </div>
+                              </div>
+
+                              {/* Short description */}
+                              <p className="text-xs text-muted-foreground line-clamp-2 leading-relaxed">
                                 {isBn ? ch.descBn : ch.descEn}
                               </p>
                             </div>
 
-                            {/* 5 Lessons Mini Pill List */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5 pt-2">
-                              {ch.lessons.map((lesson) => (
-                                <div
-                                  key={lesson.num}
-                                  className="flex items-center gap-2 rounded-xl bg-muted/40 border border-border/50 px-3 py-2 text-xs font-semibold"
-                                >
-                                  <span
-                                    className={`font-mono font-bold ${
-                                      sub.id === 'physics' ? 'text-emerald-600' : 'text-primary'
-                                    }`}
-                                  >
-                                    {lesson.num}
-                                  </span>
-                                  <span className="text-foreground">
-                                    {isBn ? lesson.titleBn : lesson.titleEn}
-                                  </span>
-                                </div>
-                              ))}
+                            {/* Footer with time and CTA button */}
+                            <div className="pt-4 mt-3 border-t border-border/50 flex items-center justify-between gap-2">
+                              <span className="text-[11px] text-muted-foreground flex items-center gap-1 font-medium">
+                                <Clock className="h-3 w-3 text-amber-500" />
+                                <span>{isBn ? ch.timeBn : ch.timeEn}</span>
+                              </span>
+
+                              <Link
+                                href={ch.href as any}
+                                className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-1.5 text-xs font-black text-white transition-all hover:scale-105 shadow-xs ${
+                                  sub.id === 'physics'
+                                    ? 'bg-emerald-600 hover:bg-emerald-700 shadow-emerald-600/20'
+                                    : 'bg-[#FF6B57] hover:bg-[#e05340] shadow-[#FF6B57]/20'
+                                }`}
+                              >
+                                <span>{isBn ? 'ল্যাব শুরু' : 'Start Lab'}</span>
+                                <ArrowRight className="h-3 w-3" />
+                              </Link>
                             </div>
                           </div>
-
-                          {/* Right CTA Box */}
-                          <div className="flex flex-col sm:flex-row lg:flex-col items-stretch gap-3 lg:w-60">
-                            <Link
-                              href={ch.href as any}
-                              className={`flex items-center justify-center gap-2 rounded-2xl text-white px-6 py-4 text-sm font-extrabold shadow-lg transition-all hover:scale-[1.02] ${
-                                sub.id === 'physics'
-                                  ? 'bg-emerald-600 hover:bg-emerald-700 shadow-emerald-600/20'
-                                  : 'bg-[#FF6B57] hover:bg-[#e05340] shadow-[#FF6B57]/20'
-                              }`}
-                            >
-                              <CtaIcon className="h-4 w-4" />
-                              <span>{isBn ? ch.ctaBn : ch.ctaEn}</span>
-                              <ArrowRight className="h-4 w-4" />
-                            </Link>
-
-                            <div className="rounded-2xl border border-border/60 bg-muted/30 p-3 text-center">
-                              <div className="text-[11px] text-muted-foreground">
-                                {isBn ? ch.badgeTextBn : 'Interactive Simulator'}
-                              </div>
-                              <div className="text-xs font-bold text-foreground mt-0.5">
-                                {isBn ? ch.badgeSubBn : '5-Step Board Mastery'}
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    );
-                  })}
-                </div>
-              )}
-
-              {/* UPCOMING CHAPTERS UNDER THIS SUBJECT */}
-              <div className="space-y-3 pt-2">
-                <div className="flex items-center justify-between text-xs font-bold text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <Layers className="h-4 w-4 text-muted-foreground" />
-                    <span>
-                      {isBn
-                        ? `${sub.nameBn} এর আসন্ন ভার্চুয়াল অধ্যায়সমূহ`
-                        : `Upcoming Chapters for ${sub.nameEn}`}
-                    </span>
-                  </div>
-                  {activeSubject !== 'all' && (
-                    <button
-                      onClick={() => setActiveSubject('all')}
-                      className="text-primary hover:underline"
-                    >
-                      {isBn ? 'সব বিষয় দেখুন' : 'Show All Subjects'}
-                    </button>
-                  )}
-                </div>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
-                  {sub.upcomingChapters.map((item, idx) => (
-                    <div
-                      key={idx}
-                      className="rounded-2xl border border-dashed border-border/70 bg-card/50 p-4.5 space-y-2 opacity-80 hover:opacity-100 transition-opacity"
-                    >
-                      <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
-                        <span className="font-mono text-primary font-bold">
-                          {isBn ? item.chNumBn : item.chNumEn}
-                        </span>
-                        <span className="rounded-md bg-muted px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
-                          {item.tagBn || (isBn ? 'পরিকল্পিত' : 'Planned')}
-                        </span>
-                      </div>
-                      <h5 className="text-sm font-extrabold text-foreground">
-                        {isBn ? item.titleBn : item.titleEn}
-                      </h5>
-                      <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">
-                        {isBn ? item.descBn : item.descEn}
-                      </p>
+                        );
+                      })}
                     </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-          );
-        })}
-      </div>
+                  )}
+
+                  {/* UPCOMING CHAPTERS UNDER THIS SUBJECT */}
+                  {upcomingChapters.length > 0 && (
+                    <div className="space-y-3 pt-2">
+                      <div className="flex items-center justify-between text-xs font-bold text-muted-foreground">
+                        <div className="flex items-center gap-2">
+                          <Layers className="h-4 w-4 text-muted-foreground" />
+                          <span>
+                            {isBn
+                              ? `${sub.nameBn} এর আসন্ন ভার্চুয়াল অধ্যায়সমূহ`
+                              : `Upcoming Chapters for ${sub.nameEn}`}
+                          </span>
+                        </div>
+                        {activeSubject !== 'all' && (
+                          <button
+                            onClick={() => handleSelectSubject('all')}
+                            className="text-primary hover:underline"
+                          >
+                            {isBn ? 'সব বিষয় দেখুন' : 'Show All Subjects'}
+                          </button>
+                        )}
+                      </div>
+
+                      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5">
+                        {upcomingChapters.map((item, idx) => (
+                          <div
+                            key={idx}
+                            className="rounded-2xl border border-dashed border-border/70 bg-card/50 p-4.5 space-y-2 opacity-80 hover:opacity-100 transition-opacity"
+                          >
+                            <div className="flex items-center justify-between text-xs font-semibold text-muted-foreground">
+                              <span className="font-mono text-primary font-bold">
+                                {isBn ? item.chNumBn : item.chNumEn}
+                              </span>
+                              <span className="rounded-md bg-muted px-2 py-0.5 text-[10px] font-bold text-muted-foreground">
+                                {item.tagBn || (isBn ? 'পরিকল্পিত' : 'Planned')}
+                              </span>
+                            </div>
+                            <h5 className="text-sm font-extrabold text-foreground">
+                              {isBn ? item.titleBn : item.titleEn}
+                            </h5>
+                            <p className="text-xs text-muted-foreground leading-relaxed line-clamp-2">
+                              {isBn ? item.descBn : item.descEn}
+                            </p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </section>
+              );
+            })}
+        </div>
+      )}
 
       {/* ========================================================= */}
-      {/* 3. PEDAGOGICAL DESIGN MANIFESTO */}
+      {/* 4. PEDAGOGICAL DESIGN MANIFESTO */}
       {/* ========================================================= */}
       <div className="rounded-3xl border border-border/60 bg-gradient-to-br from-card via-card to-muted/30 p-6 sm:p-8 space-y-4">
         <div className="flex items-center gap-2 text-primary font-bold text-sm">

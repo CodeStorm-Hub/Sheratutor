@@ -30,10 +30,11 @@ Unlike generic AI tutors or Western-centric ed-tech platforms, SheraTutor is gro
   - Vision-powered OCR and grading for handwritten exam scripts (Creative Questions & Multiple Choice Questions).
   - Step-by-step mark breakdown explaining exactly where and why marks were deducted.
   - NCTB-grounded conversational AI tutor ("Explain it simply") with bilingual Bangla/English support.
-  - Gamified Interactive Study Playground (`/dashboard/playground`) transforming abstract NCTB concepts into visual micro-sandboxes, dynamic simulations, and timed Boss Rush challenges.
+  - Gamified Interactive Study Guidebook (`/dashboard/playground/v2`) transforming abstract NCTB concepts into 5-step visual micro-sandboxes, dynamic physical simulators, and board exam model answers across all 17 General Math chapters, 12 Physics chapters, and 12 Chemistry chapters.
   - NCTB Board Master & Problem Solver Guide with step-by-step model solutions, CQ ($2+4+4$) mark rubrics, examiner deduction traps, and 5-year board matrices.
   - Adaptive study planner dynamically targeting weak chapters based on performance analytics.
   - Board-standard mock exam and question paper generator.
+  - Tactile App Shell with Raycast-style Command Palette (`⌘K` / `Ctrl+K`), live grading notification radar pings, and bilingual language switching.
 - **Constraints & Stack:**
   - Next.js (App Router, React 19, Tailwind CSS v4, Radix UI / shadcn).
   - Supabase Auth, PostgreSQL, and `pgvector` for RAG vector embeddings.
@@ -44,13 +45,13 @@ Unlike generic AI tutors or Western-centric ed-tech platforms, SheraTutor is gro
 
 - **Name & Domain:** SheraTutor (`sheratutor.tech`), "Shera" meaning "best/top" in Bangla.
 - **Tagline:** "SheraTutor, for **Shera**Students"
-- **Visual Identity:** "Academic Daylight / Cosmic Study" — see `DESIGN.md` for the full token system.
-  - Light theme: crisp near-white canvas (`#F8F9FC`), white cards, navy display type (`#14182B`), 1px slate lines.
-  - Dark theme: calm, low-chroma deep slate (`#0D0F16`) — neutralised, not "cosmic blue", for long study sessions.
-  - Primary action: Brand Coral (`#FF6B57`), the single energetic accent — used for every primary CTA.
-  - Secondary accent: Emerald (`#10B981`) for progress, success, charts. Amber (`#F59E0B`) for warnings / merit.
-  - Reserved: disciplined red (`#DC2626` → `--mark-deduction`) only for marks lost, step gaps, and the margin rule.
-  - Typography: Baloo 2 (display, Latin), Baloo Da 2 (Bengali display), Inter (body), Noto Sans Bengali (Bengali body), Space Mono (labels & tabular stats). All self-hosted via `next/font`.
+- **Visual Identity:** "Academic Daylight / Midnight Cosmic Study" — see `DESIGN.md` for the full token system.
+  - Light theme: crisp porcelain canvas (`#F8FAFC`), pure white cards, navy display type (`#14182B`), 1px slate lines.
+  - Dark theme: Midnight Cosmic Obsidian (`#0E1322`, hue 262) with 4-tier card depth and neon accents, calibrated for zero eye fatigue.
+  - Primary action: Hyper Sunset Coral (`#FF5538`), the single energetic action accent used for every primary CTA.
+  - Secondary accents: Cyber Mint (`#10B981`) for mastery/progress, Solar Gold Flame (`#F59E0B`) for streaks, Electric Cyan (`#06B6D4`).
+  - Reserved: disciplined red (`#DC2626` → `--mark-deduction`) only for marks lost, step gaps, and the examiner margin rule.
+  - Typography: Outfit (display, Latin), Baloo Da 2 (Bengali display), Plus Jakarta Sans (body, Latin), Hind Siliguri (Bengali body), JetBrains Mono (labels, formulas, & tabular stats). All self-hosted via `next/font`.
   - Tokens are a 3-layer OKLCH system in `src/app/globals.css`; that file is the source of truth.
 - **Voice & Tone:** Warm, aspirational, energetic, encouraging, culturally rooted in Bangladeshi student life, avoiding generic corporate SaaS jargon.
 

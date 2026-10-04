@@ -31,6 +31,7 @@ import {
   XCircle,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -299,95 +300,76 @@ export default function PhysicsLightReflectionGuidebook() {
       {/* ------------------------------------------------------------------- */}
       {/* HEADER SECTION                                                      */}
       {/* ------------------------------------------------------------------- */}
-      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-30 px-4 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center gap-3">
-          <Link
-            href="/dashboard/playground/v2"
-            className="text-xs px-2.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 flex items-center gap-1.5 transition"
-          >
-            <span>পদার্থবিজ্ঞান</span>
-            <ChevronRight className="w-3.5 h-3.5" />
-            <span className="text-cyan-400 font-medium">অধ্যায় ০৮</span>
-          </Link>
-          <div className="h-4 w-px bg-slate-800 hidden sm:block" />
-          <h1 className="text-sm sm:text-base font-bold text-white flex items-center gap-2">
-            <Sun className="w-4 h-4 text-amber-400" />
-            <span>আলোর প্রতিফলন (Reflection of Light)</span>
-          </h1>
-        </div>
-
-        {/* 5-Step Mode Navigation Tabs */}
-        <div className="flex items-center gap-1 sm:gap-2">
-          <button
-            onClick={() => setActiveTab('learn')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
-              activeTab === 'learn'
-                ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
-                : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
-            }`}
-          >
-            <Sun className="w-3.5 h-3.5" />
-            <span>১. ল্যাব ও কনসেপ্ট</span>
-          </button>
-
-          <button
-            onClick={() => setActiveTab('example')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
-              activeTab === 'example'
-                ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
-                : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
-            }`}
-          >
-            <BookOpen className="w-3.5 h-3.5" />
-            <span>২. বোর্ড CQ</span>
-          </button>
-
-          <button
-            onClick={() => setActiveTab('practice')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
-              activeTab === 'practice'
-                ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
-                : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
-            }`}
-          >
-            <Layers className="w-3.5 h-3.5" />
-            <span>৩. প্র্যাকটিস</span>
-          </button>
-
-          <button
-            onClick={() => setActiveTab('quiz')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
-              activeTab === 'quiz'
-                ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
-                : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
-            }`}
-          >
-            <Award className="w-3.5 h-3.5" />
-            <span>৪. MCQ কুইজ</span>
-          </button>
-
-          <button
-            onClick={() => setActiveTab('summary')}
-            className={`px-3 py-1.5 rounded-lg text-xs font-medium flex items-center gap-1.5 transition-all ${
-              activeTab === 'summary'
-                ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
-                : 'bg-slate-800/80 text-slate-400 hover:bg-slate-800 hover:text-slate-200'
-            }`}
-          >
-            <Sparkles className="w-3.5 h-3.5" />
-            <span>৫. সামারি</span>
-          </button>
-
-          {/* Socratic AI Tutor Trigger */}
-          <button
-            onClick={() => setIsAiTutorOpen(!isAiTutorOpen)}
-            className="ml-2 px-3 py-1.5 rounded-lg text-xs font-medium bg-gradient-to-r from-amber-500/20 to-orange-500/20 border border-amber-500/40 text-amber-300 hover:border-amber-400 flex items-center gap-1.5 transition"
-          >
-            <MessageSquare className="w-3.5 h-3.5 text-amber-400" />
-            <span className="hidden sm:inline">সক্রেটিক এআই টিউটর</span>
-          </button>
-        </div>
-      </header>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={8}
+        chapterTitleBn="আলোর প্রতিফলন (Reflection of Light)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS[activeLesson - 1]?.title}
+        onOpenAi={() => setIsAiTutorOpen(!isAiTutorOpen)}
+        aiButtonLabel="এআই টিউটর"
+        centerContent={
+          <div className="flex items-center gap-1 bg-slate-950 p-1 rounded-xl border border-slate-800 text-xs font-medium">
+            <button
+              onClick={() => setActiveTab('learn')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeTab === 'learn'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Sun className="w-3.5 h-3.5" />
+              <span>১. কনসেপ্ট</span>
+            </button>
+            <button
+              onClick={() => setActiveTab('example')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeTab === 'example'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <BookOpen className="w-3.5 h-3.5" />
+              <span>২. CQ</span>
+            </button>
+            <button
+              onClick={() => setActiveTab('practice')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeTab === 'practice'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Layers className="w-3.5 h-3.5" />
+              <span>৩. প্র্যাকটিস</span>
+            </button>
+            <button
+              onClick={() => setActiveTab('quiz')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeTab === 'quiz'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Award className="w-3.5 h-3.5" />
+              <span>৪. কুইজ</span>
+            </button>
+            <button
+              onClick={() => setActiveTab('summary')}
+              className={`px-2.5 py-1 rounded-lg transition-all flex items-center gap-1 ${
+                activeTab === 'summary'
+                  ? 'bg-amber-500 text-slate-950 font-semibold shadow-lg shadow-amber-500/20'
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>৫. সামারি</span>
+            </button>
+          </div>
+        }
+      />
 
       {/* ------------------------------------------------------------------- */}
       {/* MAIN CONTAINER WITH SIDEBAR & CONTENT AREA                          */}

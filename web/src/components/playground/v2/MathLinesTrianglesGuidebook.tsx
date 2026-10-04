@@ -31,6 +31,7 @@ import {
   Minimize2,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -537,52 +538,29 @@ export function MathLinesTrianglesGuidebook() {
 
   return (
     <div className="min-h-screen bg-background text-foreground pb-20 selection:bg-primary/20">
-      {/* Top Header Breadcrumb & Status */}
-      <header className="sticky top-0 z-40 w-full border-b border-border/40 bg-background/90 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="text-xs font-semibold text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1"
-            >
-              <BookOpen className="h-4 w-4" />
-              <span>সাধারণ গণিত</span>
-            </Link>
-            <ChevronRight className="h-3.5 w-3.5 text-muted-foreground" />
-            <span className="text-xs font-bold text-primary flex items-center gap-1.5">
-              <span className="h-2 w-2 rounded-full bg-primary animate-pulse" />
-              অধ্যায় ৬: রেখা, কোণ ও ত্রিভুজ
-            </span>
-          </div>
-
-          <div className="flex items-center gap-4">
-            {/* Progress Bar */}
-            <div className="hidden sm:flex items-center gap-2">
-              <span className="text-[11px] font-bold text-muted-foreground">
-                প্রস্তুতি অগ্রগতি:
-              </span>
-              <div className="w-24 h-2 bg-muted/60 rounded-full overflow-hidden">
-                <div
-                  className="h-full bg-primary transition-all duration-500 rounded-full"
-                  style={{ width: `${progressPercent}%` }}
-                />
-              </div>
-              <span className="text-xs font-mono font-bold text-primary">
-                {progressPercent}%
-              </span>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={6}
+        chapterTitleBn="রেখা, কোণ ও ত্রিভুজ (Lines, Angles & Triangles)"
+        activeLesson={activeLabId}
+        activeLessonTitle={LAB_LESSONS[activeLabId - 1]?.title}
+        onOpenAi={() => setIsSheruOpen(true)}
+        aiButtonLabel="শেরু সহকারী"
+        rightExtras={
+          <div className="hidden sm:flex items-center gap-2">
+            <span className="text-xs text-muted-foreground font-medium">প্রস্তুতি:</span>
+            <div className="w-20 bg-muted rounded-full h-2 overflow-hidden border border-border/40">
+              <div
+                className="bg-primary h-full transition-all duration-500 rounded-full"
+                style={{ width: `${progressPercent}%` }}
+              />
             </div>
-
-            {/* Sheru Socratic Assistant Trigger */}
-            <button
-              onClick={() => setIsSheruOpen(true)}
-              className="px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary font-bold text-xs hover:bg-primary/20 transition-all flex items-center gap-1.5"
-            >
-              <Sparkles className="h-3.5 w-3.5" />
-              <span>শেরু সহকারী</span>
-            </button>
+            <span className="text-xs font-bold text-primary font-mono">{progressPercent}%</span>
           </div>
-        </div>
-      </header>
+        }
+      />
 
       {/* Main Container */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 pt-6 space-y-8">

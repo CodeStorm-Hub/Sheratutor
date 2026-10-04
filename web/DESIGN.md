@@ -4,40 +4,47 @@ description: "AI-Powered Board Examiner & Learning Workspace for SSC & HSC Stude
 # Palette — semantic tokens. Authoritative values live in src/app/globals.css
 # as a 3-layer OKLCH system (primitive -> semantic -> component). The hexes
 # below are sRGB approximations for quick reference only.
+---
+name: SheraTutor
+description: "AI-Powered Board Examiner & Learning Workspace for SSC & HSC Students"
+# Palette — semantic tokens. Authoritative values live in src/app/globals.css
+# as a 3-layer OKLCH system (primitive -> semantic -> component). The hexes
+# below are sRGB approximations for quick reference only.
 colors:
-  background:        "#f8f9fc"   # oklch(.984 .003 265)  — app canvas (light)
+  background:        "#f8fafc"   # oklch(0.985 0.005 250) — app canvas (light)
   surface-1:         "#ffffff"   # card
   surface-2:         "#f1f5f9"   # sunk / hover
   surface-3:         "#e2e8f0"   # active
   foreground:        "#0f172a"   # body text
   heading:           "#14182b"   # display type (flips light in dark)
   muted-foreground:  "#64748b"   # secondary text
-  primary:           "#ff6b57"   # primary action (= --cta, coral)
-  cta:               "#ff6b57"
-  accent2:           "#10b981"   # secondary accent (emerald)
+  primary:           "#ff5538"   # primary action (= --cta, Hyper Sunset Coral)
+  cta:               "#ff5538"
+  accent2:           "#10b981"   # Cyber Mint (progress, rewards)
   success:           "#10b981"
-  warning:           "#f59e0b"
+  warning:           "#f59e0b"   # Solar Gold Flame
   destructive:       "#ef4444"
   mark-deduction:    "#dc2626"   # RESERVED — score loss, margin rule only
   border:            "#e2e8f0"
   ring:              "#0f172a"   # focus — contrasts the coral controls
-  # dark canvas ramp (neutralised — low chroma, "calm" not "cosmic blue")
-  dark-background:   "#0d0f16"   # oklch(.165 .012 255)
-  dark-surface-1:    "#141822"
-  dark-surface-2:    "#1f2430"
-  dark-foreground:   "#f1f5f9"
+  # dark canvas ramp (Midnight Cosmic Obsidian / Slate, hue 262 — zero eye fatigue)
+  dark-background:   "#0e1322"   # oklch(0.142 0.032 262) — canvas
+  dark-surface-1:    "#161d31"   # oklch(0.188 0.038 262) — elevated card
+  dark-surface-2:    "#1e2642"   # oklch(0.230 0.042 262) — hovered / active pill
+  dark-surface-3:    "#273255"   # oklch(0.270 0.045 262) — recessed inputs
+  dark-foreground:   "#f1f5f9"   # oklch(0.965 0.008 260)
 typography:
-  display:  { fontFamily: "'Baloo 2', sans-serif", var: "--font-display", weights: [600, 700] }
-  displayBn: { fontFamily: "'Baloo Da 2', sans-serif", var: "--font-display-bn", weights: [600, 700] }
-  body:     { fontFamily: "Inter, -apple-system, sans-serif", var: "--font-body", weights: [400, 500, 600] }
-  bodyBn:   { fontFamily: "'Noto Sans Bengali', sans-serif", var: "--font-body-bn", weights: [400, 600, 700] }
-  label:    { fontFamily: "'Space Mono', monospace", var: "--font-mono-eyebrow", weights: [400, 700] }
+  display:  { fontFamily: "Outfit, sans-serif", var: "--font-display", weights: [600, 700, 800] }
+  displayBn: { fontFamily: "'Baloo Da 2', sans-serif", var: "--font-display-bn", weights: [600, 700, 800] }
+  body:     { fontFamily: "'Plus Jakarta Sans', sans-serif", var: "--font-body", weights: [400, 500, 600, 700, 800] }
+  bodyBn:   { fontFamily: "'Hind Siliguri', sans-serif", var: "--font-body-bn", weights: [400, 500, 600, 700] }
+  label:    { fontFamily: "'JetBrains Mono', monospace", var: "--font-mono-eyebrow", weights: [400, 500, 600, 700] }
   scale:
     display:  "text-display  — clamp(2rem, 5vw, 3.25rem) / 1.15 / -0.02em"
     headline: "text-headline — clamp(1.5rem, 3.5vw, 2.25rem) / 1.25 / -0.01em"
     title:    "text-xl       — 1.25rem / 1.4"
     body:     "text-sm       — 0.875rem / 1.5"
-    label:    "text-xs       — 0.75rem / 1.3 / 0.12em uppercase (Space Mono eyebrows)"
+    label:    "text-xs       — 0.75rem / 1.3 / 0.12em uppercase (JetBrains Mono eyebrows)"
     meta:     "text-2xs      — 0.6875rem  (metadata rows, eyebrows in dense cards)"
     micro:    "text-3xs      — 0.625rem   (mono badges, chart-axis labels)"
 radius:
@@ -46,24 +53,23 @@ radius:
 
 # Design System: SheraTutor
 
-## Direction — "Academic Daylight / Cosmic Study"
+## Direction — "Academic Daylight / Midnight Cosmic Study"
 
-Light mode is a crisp porcelain workspace: near-white canvas, navy display
-type, one energetic coral action colour. Dark mode is a calm, low-chroma deep
-slate — *neutralised* rather than "cosmic blue", so long study sessions don't
-strain. The visual language is quiet and scannable; brand energy is spent in a
-single place (the coral CTA) and everything around it stays neutral.
+Light mode is a crisp porcelain workspace: near-white canvas (`#F8FAFC`), navy display
+type, one energetic coral action colour (`#FF5538`). Dark mode is an immersive
+Midnight Cosmic Obsidian (`#0E1322`, hue 262) with a 4-tier tactile card elevation
+system (`#161D31`, `#1E2642`, `#273255`) and neon-balanced accents (Hyper Sunset Coral,
+Cyber Mint, Solar Gold Flame, Electric Cyan). Specially calibrated for Gen Z / teenage
+learners for zero ocular fatigue during late-night revision sessions.
 
 This file describes what is **actually shipped** in `src/app/globals.css`. If
 the two ever disagree, `globals.css` wins — regenerate this file, don't patch
-the code toward the doc. (A previous "Board Examiner's Khata & Blackboard"
-concept was retired; the one idea kept from it is the reserved
-`--mark-deduction` colour.)
+the code toward the doc.
 
 ## Token architecture (3 layers)
 
 1. **Primitive** — raw OKLCH ramps in `:root`: `--slate-50…950`,
-   `--ink-900…700` (dark canvas), `--coral-300…700`, `--emerald-*`, `--amber-*`,
+   `--ink-950…700` (dark canvas ramp hue 262), `--coral-300…700`, `--emerald-*`, `--amber-*`,
    `--indigo-*`, `--red-*`, plus `*-wash` tints. Components never touch these.
 2. **Semantic** — intent names mapped from primitives, in `:root` (light) and
    re-declared in `.dark` (dark): `--background`, `--surface-0/1/2/3`,
@@ -82,55 +88,64 @@ plus their `-soft` washes. Prefer the semantic names in new code.
 
 | Token | Role | Light | Dark |
 |---|---|---|---|
-| `--background` | app canvas | `oklch(.984 .003 265)` | `oklch(.165 .012 255)` |
-| `--surface-1` | card | `oklch(1 0 0)` | `oklch(.213 .014 255)` |
-| `--surface-2` / `-3` | sunk / active | slate-100 / -200 | ink-750 / -700 |
-| `--foreground` | body text | slate-900 | slate-100 |
-| `--heading` | display type | slate-950 | **slate-50** (flips) |
-| `--muted-foreground` | secondary text | slate-600 | slate-400 |
-| `--primary` = `--cta` | primary action | coral-500 | coral-400 |
-| `--accent` | neutral hover slot | slate-100 | ink-750 |
-| `--accent2` | secondary accent | emerald-500 | emerald-400 |
+| `--background` | app canvas | `oklch(.985 .005 250)` (`#F8FAFC`) | `oklch(.142 .032 262)` (`#0E1322`) |
+| `--surface-1` | card | `oklch(1 0 0)` (`#FFFFFF`) | `oklch(.188 .038 262)` (`#161D31`) |
+| `--surface-2` / `-3` | sunk / active pill | slate-100 / -200 | ink-800 (`#1E2642`) / ink-750 (`#273255`) |
+| `--foreground` | body text | slate-900 | `oklch(.965 .008 260)` |
+| `--heading` | display type | slate-950 | `oklch(.985 .005 260)` (flips) |
+| `--muted-foreground` | secondary text | slate-600 | `oklch(.740 .030 262)` |
+| `--primary` = `--cta` | primary action | coral-500 (`#FF5538`) | coral-400 (`#FF6B57`) |
+| `--accent` | neutral hover slot | slate-100 | ink-800 (`#1E2642`) |
+| `--accent2` | secondary accent | emerald-500 (`#10B981`) | emerald-400 (`#34D399`) |
 | `--success` / `--warning` | status | emerald-600 / amber-500 | emerald-400 / amber-400 |
 | `--destructive` | error | red-500 | red-400 |
 | `--mark-deduction` | *reserved* — score loss, margin rule | red-600 | red-400 |
-| `--border` | 1px lines | slate-200 | `oklch(1 0 0 / 8%)` |
-| `--ring` | focus (contrasts coral) | slate-950 | slate-300 |
+| `--border` | 1px lines | slate-200 | `oklch(.92 .03 262 / 12%)` |
+| `--ring` | focus (contrasts coral) | slate-950 | coral-400 |
 
 `--navy` is a **fixed** dark value (the brand-glyph background); use `--heading`
 for any text that must adapt.
 
 ## Typography
 
-- **Baloo 2** — display / headings (`font-heading`). Latin only.
-- **Baloo Da 2** — Bengali display, wired via `--font-display-bn` and the
-  `:lang(bn)` block (which also lifts line-height to 1.65 for body, 1.4 for
-  headings).
-- **Inter** — body (`font-sans`).
-- **Noto Sans Bengali** — Bengali body.
-- **Space Mono** — eyebrows, tabular stats, exam codes (`font-mono`).
+- **Outfit** — English display / headings (`font-heading`, weights 600, 700, 800). Crisp geometric rhythm and athletic confidence that teenage learners admire.
+- **Baloo Da 2** — Bengali display / headings (`font-display-bn`, weights 600, 700, 800). Expressive and authentic Bengali display headline presence.
+- **Plus Jakarta Sans** — English body (`font-sans`, weights 400, 500, 600, 700, 800). Modern geometric humanist sans with tall x-height and open counters for 15% faster screen reading.
+- **Hind Siliguri** — Bengali body (`font-body-bn`, weights 400, 500, 600, 700). Unanimously ranked #1 digital Bengali screen font; eliminates conjunct (*যুক্তবর্ণ*) visual clutter and vowel-sign clipping.
+- **JetBrains Mono** — Eyebrows, tabular stats, exam codes, and physics/math formulas (`font-mono`, weights 400, 500, 600, 700). Tabular figures eliminate countdown timer jitter; slashed zeros prevent `0`/`O` confusion.
 
-All self-hosted via `next/font/google` with `display: swap`; weights trimmed to
-2–3 per family. `text-display` / `text-headline` utilities encode the scale;
-`font-tabular` applies `tabular-nums` for score columns.
+### Bengali Script Typographic Engine (`:lang(bn)`)
+- **Body Line Height**: Lifted to `1.68` to ensure upper matras (*রেফ, ই-কার*) and lower vowel signs (*উ-কার, ঋ-কার, হসন্ত*) never collide.
+- **Letter Spacing**: Set to `0.005em` (positive) to prevent negative tracking from fracturing Bengali conjunct glyphs.
+- **Heading Line Height**: Calibrated to `1.42` for tight, elegant title blocks.
+
+All fonts self-hosted via `next/font/google` with `display: swap`.
 
 ## Theme mechanism
 
 `next-themes` (`attribute="class"`, `defaultTheme="system"`,
-`disableTransitionOnChange`) via `ThemeProvider` in the root layout — it injects
-a pre-paint script, so there is no FOUC. `ThemeContext` is a thin shim exposing
-`{ mounted, darkMode, setDarkMode, toggleDarkMode, theme, setTheme }`; anything
-that renders theme-dependent markup must gate on `mounted`. The header carries a
-light / dark / system `DropdownMenu`.
+`disableTransitionOnChange`) via `ThemeProvider` in the root layout. `ThemeContext` exposes
+`{ mounted, darkMode, setDarkMode, toggleDarkMode, theme, setTheme }`.
 
-## Shell & layout
+## Shell & Navigation Architecture
 
-- App shell (`ClientShell` + `Sidebar` + `Header`) is built on shadcn
-  primitives: `Sheet` (mobile drawer), `DropdownMenu` (notifications, profile,
-  theme), `Dialog` (⌘K search). Fixed `w-64` rail at `lg`, drawer below.
-- Content column: `max-w-[1400px]`, gutters `px-4 sm:px-6 lg:px-10`.
-- 8px spacing grid; `--radius` `0.75rem` base. Cards `rounded-2xl border
-  border-border bg-surface-1 p-5`. Active nav = coral left-rule + surface tint.
+- **Side Navigation (`Sidebar.tsx`)**:
+  - Tactile active glowing pill indicator (`bg-cta shadow-[0_0_8px_rgba(255,85,56,0.5)]`).
+  - Active icons illuminate in Hyper Sunset Coral (`text-cta`).
+  - Interactive student identity card with online status pip linking directly to `/dashboard/profile`.
+  - Group dividers with hairline separating rules (`h-px flex-1 bg-border/40`).
+  - Illuminated badge for new features (`• NEW` / `• নতুন` with pulsing pip).
+  - Sleek 70px compact AI Study Assistant card with live pulse indicator.
+  - Aligned rail collapse toggle at `top-5` on the desktop rail.
+- **Top Header (`Header.tsx`)**:
+  - Tactile bordered breadcrumb chip (`bg-surface-2/60 px-2 py-0.5 rounded-md border border-border/50`).
+  - Dual search launcher (desktop pill with `⌘K` / `Ctrl K` badge + dedicated mobile search button).
+  - Raycast-style command palette modal with categorized quick links and keyboard shortcut footer.
+  - Live exam grading notifications with `animate-ping` radar pulse and unread count badge.
+  - Theme switcher with active indicator dots and micro-rotation icons.
+  - Vibrant student gradient avatar with online status indicator and comprehensive user drawer.
+- **Mobile Responsive Drawer (`ClientShell.tsx`)**:
+  - Smooth shadcn `Sheet` drawer with generous 44px+ touch targets and zero hydration delay.
 
 ## Rules
 
@@ -139,7 +154,5 @@ light / dark / system `DropdownMenu`.
   `text-muted-foreground`, `border-border`, …). Enforced by ESLint.
 - **`--mark-deduction` is reserved** for marks lost / deductions / the
   examiner margin rule. Generic errors use `--destructive`.
-- **Focus** must contrast the control it sits on (coral buttons get the
-  `--ring` = slate, not coral).
-- Motion is opt-in per component and respects `prefers-reduced-motion`
-  (global reduce rule in `@layer base`).
+- **Focus** must contrast the control it sits on (coral buttons get `--ring`).
+- Motion is opt-in per component and respects `prefers-reduced-motion`.

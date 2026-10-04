@@ -154,8 +154,14 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
 
           {activeTab === 'learning' && (
             <>
-              <h2 className="font-heading text-lg font-bold">Academic Details</h2>
-              <p className="mt-1 text-sm text-muted-foreground">Update your exam preferences and targets.</p>
+              <h2 className="font-heading text-lg font-bold">
+                {language === 'bn' ? 'একাডেমিক তথ্য' : 'Academic Details'}
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                {language === 'bn'
+                  ? 'তোমার পরীক্ষার লক্ষ্য ও গ্রুপ আপডেট করো।'
+                  : 'Update your exam preferences and targets.'}
+              </p>
 
               <label className="mt-5 block text-sm font-medium">
                 {t('settings.exam_type')}
@@ -213,8 +219,14 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
 
           {activeTab === 'appearance' && (
             <>
-              <h2 className="font-heading text-lg font-bold">Appearance &amp; Language</h2>
-              <p className="mt-1 text-sm text-muted-foreground">Customize how SheraTutor looks for you.</p>
+              <h2 className="font-heading text-lg font-bold">
+                {language === 'bn' ? 'চেহারা ও ভাষা' : 'Appearance & Language'}
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                {language === 'bn'
+                  ? 'শেরাটউটর তোমার জন্য কাস্টমাইজ করো।'
+                  : 'Customize how SheraTutor looks for you.'}
+              </p>
 
               <div className="mt-5 flex items-center justify-between gap-4 rounded-xl border border-border p-4">
                 <div>
@@ -265,8 +277,14 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
 
           {activeTab === 'privacy' && (
             <>
-              <h2 className="font-heading text-lg font-bold">Privacy Settings</h2>
-              <p className="mt-1 text-sm text-muted-foreground">Manage your data sharing and consent.</p>
+              <h2 className="font-heading text-lg font-bold">
+                {language === 'bn' ? 'গোপনীয়তা সেটিংস' : 'Privacy Settings'}
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                {language === 'bn'
+                  ? 'তোমার ডেটা ও সম্মতি নিয়ন্ত্রণ করো।'
+                  : 'Manage your data sharing and consent.'}
+              </p>
 
               <label className="mt-5 flex cursor-pointer items-center gap-2.5 text-sm">
                 <input
@@ -284,9 +302,13 @@ export function SettingsPageClient({ profile }: { profile: ProfileData | null })
 
           {activeTab === 'notifications' && (
             <>
-              <h2 className="font-heading text-lg font-bold">Notifications</h2>
+              <h2 className="font-heading text-lg font-bold">
+                {language === 'bn' ? 'বিজ্ঞপ্তি' : 'Notifications'}
+              </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                We will add email and push notification preferences here soon.
+                {language === 'bn'
+                  ? 'শীঘ্রই ইমেইল ও পুশ নোটিফিকেশন সুবিধা যুক্ত হবে।'
+                  : 'We will add email and push notification preferences here soon.'}
               </p>
             </>
           )}

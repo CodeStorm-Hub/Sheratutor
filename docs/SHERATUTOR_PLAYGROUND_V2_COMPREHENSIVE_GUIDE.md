@@ -64,8 +64,8 @@ All Playground V2 pages reside under `/dashboard/playground/v2`:
 /dashboard/playground/v2                      -> Guidebook Library Hub (Subject Catalog)
 /dashboard/playground/v2/math/[1-17]          -> General Mathematics Chapters 1 to 17
 /dashboard/playground/v2/physics/[1-12]       -> Physics Chapters 1 to 12
+/dashboard/playground/v2/chemistry/[1-12]     -> Chemistry Chapters 1 to 12 (100% Complete)
 /dashboard/playground/v2/higher-math/...      -> Higher Mathematics (Upcoming)
-/dashboard/playground/v2/chemistry/...        -> Chemistry (Upcoming)
 /dashboard/playground/v2/biology/...          -> Biology (Upcoming)
 ```
 
@@ -74,8 +74,8 @@ The Library Hub serves as the central command portal for all secondary school su
 1. **Subject Summary Cards**:
    - **General Mathematics (`MATH-109`)**: **17 of 17 Chapters Active (100% Complete)**.
    - **Physics (`PHY-136`)**: **12 Chapters Active (86% Complete)**.
+   - **Chemistry (`CHEM-137`)**: **12 of 12 Chapters Active (100% Complete)**.
    - **Higher Mathematics (`HMATH-126`)**: Syllabus mapped (14 chapters).
-   - **Chemistry (`CHEM-137`)**: Syllabus mapped (12 chapters).
    - **Biology (`BIO-138`)**: Syllabus mapped (14 chapters).
 2. **Subject Quick Filters**: Interactive pill bar (`All Subjects`, `General Math`, `Physics`, etc.) for instant catalog narrowing.
 3. **Comprehensive Chapter Cards**:
@@ -136,7 +136,30 @@ Physics currently features **12 fully implemented chapters** (86% syllabus cover
 
 ---
 
-## 6. Technical Implementation & Engineering Patterns
+## 6. Chemistry: Complete 12-Chapter Catalog (100% Complete)
+
+Chemistry is **100% complete** across all 12 chapters of the NCTB Class 9–10 curriculum. Every chapter is built under the standardized 3-column pedagogical layout (`max-w-[1720px]`), featuring a hideable 5-lesson sidebar, 5-step horizontal tab workspace, interactive visual simulators, board exam CQ model solutions with copyable handnotes, and an integrated AI Chemistry Tutor drawer. Verified with 0 TypeScript errors and 0 browser console errors.
+
+### Chapter Directory & Interactive Lab Matrix
+
+| Ch # | Chapter Name (Bangla / English) | Component File | Key Interactive Labs & Pedagogical Features (Step 3) | Board CQ & Summary Focus (Steps 2 & 5) |
+| :---: | :--- | :--- | :--- | :--- |
+| **01** | **রসায়নের ধারণা**<br>*(Concepts of Chemistry)* | `ChemistryConceptsGuidebook.tsx` | Hazard symbol scanner, lab safety matrix, chemical inquiry scientific method simulator. | Model CQ on lab safety protocols; 1-click revision handnote vault. |
+| **02** | **পদার্থের অবস্থা**<br>*(States of Matter)* | `StatesOfMatterGuidebook.tsx` | Particle kinetic theory thermal agitator, diffusion rate collider ($r \propto 1/\sqrt{M}$), cooling curve phase change lab. | $NH_3$ vs $HCl$ diffusion tube board CQ; state change revision handnotes. |
+| **03** | **পদার্থের গঠন**<br>*(Structure of Matter)* | `StructureOfMatterGuidebook.tsx` | Bohr atomic orbital electron builder, isotopic relative atomic mass calculator, $(n+l)$ Aufbau orbital energy ladder. | Potassium ($K$) 19th electron $4s$ vs $3d$ board CQ; electron configuration cheat sheet. |
+| **04** | **পর্যায় সারণি**<br>*(Periodic Table)* | `PeriodicTableGuidebook.tsx` | 118-element periodic trends comparator, atomic radius vs ionization energy exceptions ($N > O, Be > B$), alkali metal reaction chamber. | Group & period prediction 3 golden rules CQ; full historical and periodic trends revision notes. |
+| **05** | **রাসায়নিক বন্ধন**<br>*(Chemical Bonds)* | `ChemicalBondsGuidebook.tsx` | Latent valency calculator, ionic crystal lattice builder ($NaCl, MgO$), covalent lone pair/bond pair scanner ($H_2O, NH_3$), electrical conductivity lab. | Variable valency & conductivity CQ; ionic vs covalent properties master summary. |
+| **06** | **মোলের ধারণা ও গণনা**<br>*(Mole Concept & Stoichiometry)* | `MoleCalculationsGuidebook.tsx` | 4-way mole conversion formula wheel ($n = W/M = V/22.4 = N/N_A = SMV/1000$), standard solution volumetric flask prep, limiting reagent stoichiometry simulator. | Limiting reactant yield percentage CQ; STP molar volume & molarity formula vault. |
+| **07** | **রাসায়নিক বিক্রিয়া**<br>*(Chemical Reactions)* | `ChemicalReactionsGuidebook.tsx` | 5 fundamental reaction classes explorer, simultaneous redox electron transfer visualizer, oxidation state calculator, Le Chatelier dynamic equilibrium chamber. | Haber-Bosch ammonia synthesis equilibrium shift CQ; redox identification rules handnotes. |
+| **08** | **রসায়ন ও শক্তি**<br>*(Chemistry & Energy)* | `ChemistryEnergyGuidebook.tsx` | Bond dissociation enthalpy calculator ($\Delta H = B_1 - B_2$), molten salt electrolysis downs cell, Daniell galvanic cell ($1.10\text{ V}$) with live salt bridge, silver electroplating lab. | Daniell cell half-reactions and salt bridge CQ; electrochemical cells summary. |
+| **09** | **এসিড-ক্ষার সমতা**<br>*(Acid-Base Balance)* | `AcidBaseBalanceGuidebook.tsx` | Master pH scale ($0\text{--}14$) with universal indicator spectrum, metal/carbonate gas evolution lab ($H_2, CO_2$), soil & acid rain environmental simulator, water softening lab. | Industrial acid rain formation & prevention CQ; pH calculations and water hardness cheat sheet. |
+| **10** | **খনিজ সম্পদ: ধাতু ও অধাতু**<br>*(Mineral Resources: Metals)* | `MineralResourcesMetalsGuidebook.tsx` | Metallurgical blast furnace carbon reduction simulator, 14-metal activity series ladder, corrosion-resistant alloy workshop, Contact process $H_2SO_4$ plant with $V_2O_5$ catalyst. | Bauxite Hall-Héroult smelting CQ; ores, metallurgy & alloy composition handnotes. |
+| **11** | **খনিজ সম্পদ: জীবাশ্ম**<br>*(Mineral Resources: Fossils)* | `MineralResourcesFossilsGuidebook.tsx` | Petroleum 7-fraction distillation column, alkane photochemical chlorination ($CH_4 \to CCl_4$), bromine water & Baeyer unsaturation test lab, addition polymerization reactor ($PE, PVC$). | Alcohol-aldehyde-carboxylic acid interconversion CQ; hydrocarbon classification cheat sheet. |
+| **12** | **আমাদের জীবনে রসায়ন**<br>*(Chemistry in Our Lives)* | `ChemistryInOurLivesGuidebook.tsx` | Baking soda ($NaHCO_3$) vs baking powder leavening lab, alkaline fat saponification & 3D micelle dirt cleaning lab, bleaching powder nascent $[O]$ disinfection, skin acid mantle (pH 5.5) protection. | Micelle dirt removal mechanism CQ; household cleaners and cosmetic pH cheat sheet. |
+
+---
+
+## 7. Technical Implementation & Engineering Patterns
 
 ### 1. Technology Stack
 - **Framework**: Next.js 16+ (App Router), React 19, Turbopack.
@@ -175,7 +198,7 @@ const isBn = language === 'bn';
 
 ---
 
-## 7. The Sheru Socratic AI Companion Integration
+## 8. The Sheru Socratic AI Companion Integration
 
 Embedded into every guidebook is **Sheru**, the Socratic AI companion:
 1. **Slide-Over Drawer**: Toggled via a floating button or top-bar button (`Sheru AI শিক্ষক`).
@@ -188,7 +211,7 @@ Embedded into every guidebook is **Sheru**, the Socratic AI companion:
 
 ---
 
-## 8. Quality Assurance & Verification Standards
+## 9. Quality Assurance & Verification Standards
 
 To guarantee enterprise-grade stability, every chapter must pass the **SheraTutor Production Gate**:
 
@@ -207,18 +230,19 @@ flowchart LR
 
 ---
 
-## 9. Current Status & Next Roadmap Deliverables
+## 10. Current Status & Next Roadmap Deliverables
 
 ### Current Delivery Status (October 2026)
 - **General Mathematics**: **17 of 17 Chapters Completed (100%)** 🎉
 - **Physics**: **12 of 14 Chapters Completed (86%)** 🚀
-- **Total Live Chapters Across System**: **29 Live Chapters**
+- **Chemistry**: **12 of 12 Chapters Completed (100%)** ⚗️
+- **Total Live Chapters Across System**: **41 Live Canonical Guidebooks**
 
 ### Next Engineering Deliverables in Pipeline
 1. **Physics Chapter 13**: *আধুনিক পদার্থবিজ্ঞান ও ইলেকট্রনিক্স (Modern Physics & Electronics)* — Radioactive decay, semiconductor diodes, logic gates.
 2. **Physics Chapter 14**: *জীবন বাঁচাতে পদার্থবিজ্ঞান (Physics for Saving Life)* — X-Ray, CT Scan, MRI, Ultrasound, ECG, Endoscopy.
 3. **Higher Mathematics Launch**: Commencing with Chapter 1 (*সেট ও অন্বয়*) and Chapter 8 (*ত্রিকোণমিতি*).
-4. **Chemistry Launch**: Commencing with Chapter 3 (*পদার্থের গঠন*) and Chapter 4 (*পর্যায় সারণি*).
+4. **Biology Launch**: Commencing with Chapter 1 (*জীবন পাঠ*) and Chapter 2 (*জীবকোষ ও টিস্যু*).
 
 ---
 

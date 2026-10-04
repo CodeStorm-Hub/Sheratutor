@@ -3,15 +3,15 @@
 import React from 'react';
 import type { Route } from 'next';
 import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import {
   BookOpen,
   Calendar,
+  ChevronRight,
   ClipboardCheck,
   FileCheck2,
   Gamepad2,
   GraduationCap,
-  HelpCircle,
   Home,
   LineChart,
   Settings,
@@ -41,7 +41,6 @@ export function SidebarContent({
   onNavigate,
 }: SidebarContentProps) {
   const pathname = usePathname();
-  const router = useRouter();
   const { language, t } = useLanguage();
 
   const isActive = (href: string) => {
@@ -64,8 +63,8 @@ export function SidebarContent({
     { label: t('nav.planner'), href: '/dashboard/study-plan', icon: Calendar },
     ...(isAdmin
       ? [
-          { group: true as const, label: 'ADMINISTRATION' },
-          { label: 'Waitlist Ops', href: '/dashboard/admin/waitlist', icon: Users },
+          { group: true as const, label: language === 'bn' ? 'প্রশাসন' : 'ADMINISTRATION' },
+          { label: language === 'bn' ? 'ওয়েটলিস্ট কার্যক্রম' : 'Waitlist Ops', href: '/dashboard/admin/waitlist', icon: Users },
         ]
       : []),
   ];
@@ -75,94 +74,177 @@ export function SidebarContent({
     { label: t('nav.settings'), href: '/dashboard/profile', icon: Settings },
   ];
 
-  const linkClass = (href: string) =>
-    cn(
-      'group flex items-center gap-3 rounded-lg border-l-2 border-transparent px-3 py-2 text-sm font-medium transition-colors',
-      isActive(href)
-        ? 'border-l-cta bg-sidebar-accent text-foreground'
-        : 'text-sidebar-foreground/70 hover:bg-sidebar-accent hover:text-foreground',
-    );
+  const displayUserSub = language === 'bn'
+    ? userSub
+        .replace('Science', 'বিজ্ঞান')
+        .replace('Humanities', 'মানবিক')
+        .replace('Business Studies', 'ব্যবসায় শিক্ষা')
+        .replace('Board', 'বোর্ড')
+        .replace('HSC', 'এইচএসসি')
+        .replace('SSC', 'এসএসসি')
+    : userSub;
 
   return (
-    <div className="flex h-full flex-col gap-1 p-3">
-      <Link
-        href="/dashboard"
-        onClick={onNavigate}
-        className="flex items-center gap-2 px-2 pt-1 pb-3"
-      >
-        <LogoMark className="size-8 flex-none" />
-        <span className="font-heading text-lg font-bold tracking-tight">
-          Shera<span className="text-coral">Tutor</span>
+    <div className="flex h-full flex-col p-3">
+      {/* Brand Header */}
+      <div className="flex items-center justify-between px-2 pt-1 pb-3">
+        <Link
+          href="/dashboard"
+          onClick={onNavigate}
+          className="group flex items-center gap-2.5 transition-transform active:scale-[0.98]"
+        >
+          <div className="relative flex-none">
+            <LogoMark className="size-8 transition-transform group-hover:scale-105 duration-200" />
+            <span className="absolute -bottom-0.5 -right-0.5 size-2 rounded-full bg-emerald-500 ring-2 ring-sidebar" />
+          </div>
+          <div className="flex flex-col">
+            <span className="font-heading text-lg font-bold tracking-tight leading-none text-foreground">
+              Shera<span className="text-coral">Tutor</span>
+            </span>
+            <span className="font-mono text-[9.5px] font-bold tracking-wider text-muted-foreground uppercase leading-tight mt-0.5">
+              {language === 'bn' ? 'স্মার্ট বোর্ড লার্নিং' : 'Smart Board Prep'}
+            </span>
+          </div>
+        </Link>
+        <span className="rounded-md border border-border/60 bg-surface-2/60 px-1.5 py-0.5 font-mono text-[10px] font-semibold text-muted-foreground">
+          {language === 'bn' ? 'এইচএসসি · এসএসসি' : 'HSC · SSC'}
         </span>
-      </Link>
-
-      <div className="mb-2 flex items-center gap-2.5 rounded-xl bg-background px-2.5 py-2">
-        <span className="grid size-8 flex-none place-items-center rounded-lg bg-sun text-sm font-extrabold text-slate-950">
-          {userName.charAt(0)}
-        </span>
-        <div className="min-w-0 flex-1">
-          <p className="truncate text-xs font-semibold">{userName}</p>
-          <p className="truncate text-xs text-muted-foreground">{userSub}</p>
-        </div>
       </div>
 
-      <nav className="-mx-1 flex-1 overflow-y-auto px-1">
-        {items.map((item, i) =>
-          item.group ? (
-            <p
-              key={`g-${i}`}
-              className="mt-4 mb-1.5 px-2.5 font-mono text-2xs font-bold tracking-[0.09em] text-muted-foreground uppercase first:mt-1"
-            >
-              {item.label}
-            </p>
-          ) : (
+      {/* Interactive Student Identity Card */}
+      <Link
+        href="/dashboard/profile"
+        onClick={onNavigate}
+        className="group mb-2.5 flex items-center gap-2.5 rounded-xl border border-border/70 bg-surface-1/70 p-2 transition-all hover:bg-surface-2 hover:border-border hover:shadow-xs active:scale-[0.985]"
+        title={language === 'bn' ? 'প্রোফাইল ও বোর্ড সেটিংস দেখুন' : 'View profile & board settings'}
+      >
+        <div className="relative flex-none">
+          <span className="grid size-8 place-items-center rounded-lg bg-gradient-to-br from-[#FF6B57] to-amber-500 text-sm font-extrabold text-white shadow-xs transition-transform group-hover:scale-105">
+            {userName.charAt(0).toUpperCase()}
+          </span>
+          <span className="absolute -bottom-0.5 -right-0.5 size-2.5 rounded-full bg-emerald-500 ring-2 ring-surface-1" />
+        </div>
+        <div className="min-w-0 flex-1">
+          <p className="truncate text-xs font-semibold text-foreground group-hover:text-cta transition-colors">
+            {userName}
+          </p>
+          <p className="truncate text-[11px] text-muted-foreground">{displayUserSub}</p>
+        </div>
+        <ChevronRight className="size-3.5 flex-none text-muted-foreground/60 transition-transform group-hover:translate-x-0.5 group-hover:text-foreground" />
+      </Link>
+
+      {/* Navigation List */}
+      <nav className="-mx-1 flex-1 overflow-y-auto px-1 pr-1.5 space-y-0.5 scrollbar-thin">
+        {items.map((item, i) => {
+          if (item.group) {
+            return (
+              <div
+                key={`g-${i}`}
+                className="pt-3.5 pb-1 px-2.5 first:pt-1 flex items-center gap-2"
+              >
+                <span className="font-mono text-3xs font-bold tracking-[0.11em] text-muted-foreground/80 uppercase">
+                  {item.label}
+                </span>
+                <span className="h-px flex-1 bg-border/40" />
+              </div>
+            );
+          }
+
+          const active = isActive(item.href);
+          const Icon = item.icon;
+
+          return (
             <Link
               key={item.href}
               href={item.href as Route}
               onClick={onNavigate}
-              aria-current={isActive(item.href) ? 'page' : undefined}
-              className={linkClass(item.href)}
+              aria-current={active ? 'page' : undefined}
+              className={cn(
+                'group relative flex items-center gap-2.5 rounded-xl px-2.5 py-2 text-xs sm:text-sm font-medium transition-all duration-150',
+                'focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1',
+                active
+                  ? 'bg-surface-2 dark:bg-surface-2 text-foreground font-semibold shadow-xs'
+                  : 'text-sidebar-foreground/75 hover:bg-surface-2/60 hover:text-foreground active:scale-[0.985]',
+              )}
             >
-              <item.icon className="size-[18px] flex-none" />
-              <span className="flex-1">{item.label}</span>
+              {active && (
+                <span className="absolute left-1 top-2 bottom-2 w-1 rounded-full bg-cta shadow-[0_0_8px_rgba(255,85,56,0.5)]" />
+              )}
+              <Icon
+                className={cn(
+                  'size-[18px] flex-none transition-transform duration-150 group-hover:scale-110',
+                  active ? 'text-cta' : 'text-muted-foreground group-hover:text-foreground',
+                )}
+              />
+              <span className="flex-1 truncate">{item.label}</span>
               {item.isNew && (
-                <span className="rounded-md bg-cta/15 px-1.5 py-0.5 font-mono text-3xs font-bold tracking-wide text-cta uppercase">
-                  {language === 'bn' ? 'নতুন' : 'New'}
+                <span className="inline-flex items-center gap-1 rounded-full border border-coral/30 bg-coral/15 px-1.5 py-0.5 font-mono text-3xs font-bold text-coral uppercase tracking-wide">
+                  <span className="size-1 rounded-full bg-coral animate-pulse" />
+                  {language === 'bn' ? 'নতুন' : 'NEW'}
                 </span>
               )}
             </Link>
-          ),
-        )}
+          );
+        })}
       </nav>
 
-      <div className="mt-auto flex flex-col gap-0.5 pt-3">
-        {bottom.map((item) =>
-          item.group ? null : (
+      {/* Bottom Area: Achievements, Settings & AI Tutor Mini-Card */}
+      <div className="mt-auto flex flex-col gap-0.5 pt-2 border-t border-border/40">
+        {bottom.map((item) => {
+          if (item.group) return null;
+          const active = isActive(item.href);
+          const Icon = item.icon;
+
+          return (
             <Link
               key={item.href}
               href={item.href as Route}
               onClick={onNavigate}
-              aria-current={isActive(item.href) ? 'page' : undefined}
-              className={linkClass(item.href)}
+              aria-current={active ? 'page' : undefined}
+              className={cn(
+                'group relative flex items-center gap-2.5 rounded-xl px-2.5 py-2 text-xs sm:text-sm font-medium transition-all duration-150',
+                'focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-1',
+                active
+                  ? 'bg-surface-2 dark:bg-surface-2 text-foreground font-semibold shadow-xs'
+                  : 'text-sidebar-foreground/75 hover:bg-surface-2/60 hover:text-foreground active:scale-[0.985]',
+              )}
             >
-              <item.icon className="size-[18px] flex-none" />
-              <span>{item.label}</span>
+              {active && (
+                <span className="absolute left-1 top-2 bottom-2 w-1 rounded-full bg-cta shadow-[0_0_8px_rgba(255,85,56,0.5)]" />
+              )}
+              <Icon
+                className={cn(
+                  'size-[18px] flex-none transition-transform duration-150 group-hover:scale-110',
+                  active ? 'text-cta' : 'text-muted-foreground group-hover:text-foreground',
+                )}
+              />
+              <span className="flex-1 truncate">{item.label}</span>
             </Link>
-          ),
-        )}
+          );
+        })}
 
-        <div className="mt-3 rounded-xl bg-cta/10 p-3.5">
-          <span className="grid size-7 place-items-center rounded-lg bg-sun text-slate-950">
-            <HelpCircle className="size-[18px]" />
-          </span>
-          <p className="mt-2 text-xs font-semibold">{t('nav.help_title')}</p>
-          <p className="mt-0.5 text-xs text-muted-foreground">{t('nav.help_desc')}</p>
+        {/* Compact AI Study Assistant Mini-Card */}
+        <div className="mt-2 relative overflow-hidden rounded-xl border border-border/70 bg-surface-1/80 p-2.5 shadow-xs transition-all hover:border-cta/40 hover:bg-surface-1 group">
+          <div className="absolute -top-6 -right-6 size-14 rounded-full bg-cta/15 blur-lg pointer-events-none" />
+          <div className="flex items-center gap-2">
+            <span className="grid size-6 flex-none place-items-center rounded-lg bg-gradient-to-br from-amber-400 to-orange-500 text-slate-950 shadow-xs">
+              <Sparkles className="size-3.5" />
+            </span>
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-1.5">
+                <p className="truncate text-xs font-bold text-foreground">{t('nav.help_title')}</p>
+                <span className="size-1.5 rounded-full bg-emerald-500 animate-pulse" />
+              </div>
+              <p className="truncate text-[10.5px] text-muted-foreground">{t('nav.help_desc')}</p>
+            </div>
+          </div>
           <Link
             href="/dashboard/tutor"
             onClick={onNavigate}
-            className="mt-2 font-mono text-2xs font-semibold inline-block text-heading hover:text-cta"
+            className="mt-2 flex w-full items-center justify-center gap-1 rounded-lg bg-surface-2 px-2 py-1.5 text-xs font-semibold text-cta transition-all hover:bg-cta hover:text-white active:scale-[0.98]"
           >
-            {t('nav.help_btn')} →
+            <span>{t('nav.help_btn')}</span>
+            <span className="transition-transform group-hover:translate-x-0.5">→</span>
           </Link>
         </div>
       </div>

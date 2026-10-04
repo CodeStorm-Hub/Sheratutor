@@ -35,6 +35,7 @@ import {
   Atom,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -318,57 +319,21 @@ export default function PhysicsStaticElectricityGuidebook() {
       {/* ------------------------------------------------------------------------- */}
       {/* 1. TOP HEADER & NAVIGATION BAR                                            */}
       {/* ------------------------------------------------------------------------- */}
-      <header className="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md sticky top-0 z-40 px-4 lg:px-8 py-3.5">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-          {/* Breadcrumb & Title */}
-          <div className="flex items-center space-x-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="text-xs font-semibold px-2.5 py-1 bg-slate-800 text-slate-300 rounded-lg hover:bg-slate-700 transition"
-            >
-              পদার্থবিজ্ঞান
-            </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-            <span className="text-xs font-mono text-amber-400 bg-amber-950/60 border border-amber-800/50 px-2 py-0.5 rounded">
-              অধ্যায় ১০
-            </span>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-500" />
-            <div className="flex items-center space-x-2">
-              <Zap className="w-4 h-4 text-amber-400" />
-              <h1 className="text-sm font-bold tracking-tight text-slate-100">
-                স্থির তড়িৎ (Static Electricity)
-              </h1>
-            </div>
-          </div>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={10}
+        chapterTitleBn="স্থির তড়িৎ (Static Electricity)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS[activeLesson - 1]?.title}
+        onOpenAi={() => setShowAiDrawer(true)}
+        aiButtonLabel="সক্রেটিক শিক্ষক"
+      />
 
-          {/* Quick Actions */}
-          <div className="flex items-center space-x-2.5">
-            <button
-              onClick={() => setShowAiDrawer(true)}
-              className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-amber-500/15 border border-amber-500/30 text-amber-300 hover:bg-amber-500/25 text-xs font-medium transition shadow-sm shadow-amber-500/10"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-              <span>সক্রেটিক এআই শিক্ষক</span>
-            </button>
-            <button
-              onClick={() => {
-                setRubCount(4);
-                setElectroscopeState('neutral');
-                setBringingRod('positive');
-                setQ1MicroC(5);
-                setQ2MicroC(-4);
-                setDistRMetres(0.5);
-              }}
-              title="রিসেট প্যারামিটার"
-              className="p-1.5 rounded-lg bg-slate-800 text-slate-400 hover:text-slate-200 hover:bg-slate-700 transition"
-            >
-              <RotateCcw className="w-3.5 h-3.5" />
-            </button>
-          </div>
-        </div>
-
-        {/* 5-Step Tab Switcher */}
-        <div className="max-w-7xl mx-auto mt-3 flex items-center overflow-x-auto space-x-1 border-t border-slate-800/60 pt-2.5 scrollbar-none">
+      {/* 5-Step Tab Switcher Bar */}
+      <div className="border-b border-slate-800/80 bg-slate-900/60 backdrop-blur-md px-4 lg:px-8 py-2 sticky top-[49px] z-30">
+        <div className="max-w-7xl mx-auto flex items-center overflow-x-auto space-x-1 scrollbar-none">
           {[
             { key: 'learn', label: '১. ধারণা ও সিমুলেটর', icon: Atom },
             { key: 'example', label: '২. বোর্ড সৃজনশীল ও রুব্রিক', icon: BookOpen },
@@ -394,7 +359,7 @@ export default function PhysicsStaticElectricityGuidebook() {
             );
           })}
         </div>
-      </header>
+      </div>
 
       {/* ------------------------------------------------------------------------- */}
       {/* MAIN CONTENT AREA                                                         */}

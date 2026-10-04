@@ -45,6 +45,7 @@ import {
   Battery,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -534,34 +535,17 @@ export default function PhysicsCurrentElectricityGuidebook() {
       {/* ------------------------------------------------------------------- */}
       {/* TOP HEADER & BREADCRUMB                                             */}
       {/* ------------------------------------------------------------------- */}
-      <header className="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-40 px-4 lg:px-8 py-3">
-        <div className="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="text-xs text-slate-400 hover:text-emerald-400 flex items-center gap-1 transition-colors"
-            >
-              <Layers className="w-3.5 h-3.5" />
-              <span>লাইব্রেরি</span>
-            </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-slate-600" />
-            <span className="text-xs text-emerald-400 font-medium px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20">
-              পদার্থবিজ্ঞান · অধ্যায় ১১
-            </span>
-            <span className="text-xs text-slate-400 hidden sm:inline">চল তড়িৎ (Current Electricity)</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <button
-              onClick={() => setIsTutorOpen(true)}
-              className="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-300 hover:bg-amber-500/20 text-xs font-medium transition-colors shadow-sm shadow-amber-500/10"
-            >
-              <Sparkles className="w-3.5 h-3.5" />
-              <span>শেরু এআই টিউটর</span>
-            </button>
-          </div>
-        </div>
-      </header>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={11}
+        chapterTitleBn="চল তড়িৎ (Current Electricity)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS[activeLesson - 1]?.title}
+        onOpenAi={() => setIsTutorOpen(true)}
+        aiButtonLabel="শেরু এআই টিউটর"
+      />
 
       {/* ------------------------------------------------------------------- */}
       {/* 5-STEP WORKFLOW STEP BAR                                            */}

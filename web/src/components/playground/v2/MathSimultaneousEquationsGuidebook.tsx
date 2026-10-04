@@ -37,6 +37,7 @@ import {
   Compass,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -557,44 +558,23 @@ export function MathSimultaneousEquationsGuidebook() {
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 flex flex-col font-sans transition-colors duration-200">
       {/* -------------------------------------------------------------------- */}
-      {/* HEADER SECTION */}
+      {/* HEADER SECTION (Top Navigation & Breadcrumb) */}
       {/* -------------------------------------------------------------------- */}
-      <header className="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-xs">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
-          <div className="flex items-center space-x-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="p-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-500 hover:text-slate-700 dark:text-slate-400 dark:hover:text-slate-200 transition-colors"
-              title="লাইব্রেরিতে ফিরে যান"
-            >
-              <RotateCcw className="w-5 h-5" />
-            </Link>
-            <div className="h-6 w-px bg-slate-200 dark:bg-slate-800" />
-            <div className="flex items-center gap-2">
-              <span className="p-1.5 rounded-lg bg-primary/10 text-primary">
-                <Grid className="w-5 h-5" />
-              </span>
-              <div>
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold px-2 py-0.5 rounded-full bg-primary/10 text-primary">
-                    সাধারণ গণিত • অধ্যায় ১২
-                  </span>
-                  <span className="text-xs text-slate-500 dark:text-slate-400 hidden sm:inline">
-                    NCTB নবম-দশম
-                  </span>
-                </div>
-                <h1 className="text-lg font-bold text-slate-900 dark:text-white leading-tight">
-                  দুই চলকবিশিষ্ট সরল সহসমীকরণ{' '}
-                  <span className="text-sm font-normal text-slate-500 dark:text-slate-400 hidden md:inline">
-                    — প্রতিস্থাপন, অপনয়ন, আড়গুণন, লেখচিত্র ও নৌকা-স্রোত ল্যাব
-                  </span>
-                </h1>
-              </div>
-            </div>
-          </div>
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={12}
+        chapterTitleBn="দুই চলকবিশিষ্ট সরল সহসমীকরণ (Simultaneous Linear Equations)"
+        activeLesson={activeLabId}
+        activeLessonTitle={LAB_LESSONS.find((l) => l.id === activeLabId)?.title}
+        onOpenAi={() => setIsAiDrawerOpen(true)}
+        aiButtonLabel="শেরু এআই টিউটর"
+      />
 
-          {/* 5-Step Learning Framework Navigation */}
-          <nav className="flex items-center bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl text-xs font-medium border border-slate-200 dark:border-slate-700/60 overflow-x-auto">
+      {/* 5-Step Learning Framework Navigation Sub-Bar */}
+      <div className="border-b border-border bg-card/90 backdrop-blur-md sticky top-[49px] z-30">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5">
+          <nav className="flex items-center bg-slate-100 dark:bg-slate-800/80 p-1 rounded-xl text-xs font-medium border border-slate-200 dark:border-slate-700/60 overflow-x-auto w-fit">
             <button
               onClick={() => setActiveStep(1)}
               className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg transition-all ${
@@ -652,7 +632,7 @@ export function MathSimultaneousEquationsGuidebook() {
             </button>
           </nav>
         </div>
-      </header>
+      </div>
 
       {/* -------------------------------------------------------------------- */}
       {/* MAIN CONTAINER */}

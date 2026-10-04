@@ -33,6 +33,7 @@ import {
   Compass,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 type TabStep = 1 | 2 | 3 | 4 | 5;
 
@@ -278,40 +279,18 @@ export default function PhysicsWorkEnergyGuidebook() {
 
   return (
     <div className="flex h-screen w-full flex-col bg-background text-foreground overflow-hidden font-sans">
-      {/* 1. TOP HEADER / TITLE BAR */}
-      <header className="h-16 border-b border-border bg-card/60 backdrop-blur-md px-4 sm:px-6 flex items-center justify-between z-20 shrink-0">
-        <div className="flex items-center gap-3">
-          <Link
-            href="/dashboard/playground/v2"
-            className="flex items-center gap-1.5 text-xs sm:text-sm font-bold text-muted-foreground hover:text-foreground transition-colors py-1.5 px-2.5 rounded-xl hover:bg-muted/50"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            <span>লাইব্রেরিতে ফিরুন</span>
-          </Link>
-          <div className="h-4 w-px bg-border/80 hidden sm:block" />
-          <nav className="hidden md:flex items-center gap-1.5 text-xs text-muted-foreground">
-            <span>পদার্থবিজ্ঞান</span>
-            <ChevronRight className="h-3 w-3" />
-            <span className="text-foreground font-semibold">অধ্যায় ৪: কাজ, ক্ষমতা ও শক্তি (Work, Power & Energy)</span>
-            <ChevronRight className="h-3 w-3" />
-            <span className="text-primary font-bold">Lesson {activeLesson}</span>
-          </nav>
-        </div>
-
-        <div className="flex items-center gap-2.5">
-          <button
-            onClick={() => setIsAiTutorOpen(true)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-primary/10 hover:bg-primary/20 text-primary border border-primary/20 text-xs font-bold transition-all shadow-xs"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
-            <span>AI শিক্ষক</span>
-          </button>
-          <div className="hidden sm:flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border border-emerald-500/20 text-[11px] font-bold">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
-            <span>Version 2.0 • Virtual Guidebook</span>
-          </div>
-        </div>
-      </header>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={4}
+        chapterTitleBn="কাজ, ক্ষমতা ও শক্তি (Work, Power & Energy)"
+        activeLesson={activeLesson}
+        activeLessonTitle={currentLessonMeta.titleBn}
+        isSidebarOpen={isSidebarOpen}
+        onToggleSidebar={() => setIsSidebarOpen(!isSidebarOpen)}
+        onOpenAi={() => setIsAiTutorOpen(true)}
+      />
 
       {/* 2. MAIN LAYOUT: HIDEABLE SIDEBAR + CENTER CONTENT + AI TUTOR DRAWER */}
       <div className="flex-1 flex overflow-hidden relative">

@@ -85,9 +85,9 @@ export function DashboardPageClient({
         </div>
         <Link
           href="/dashboard/practice"
-          className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-cta px-4 py-2.5 text-xs font-semibold text-cta-foreground shadow-xs transition-colors hover:opacity-90"
+          className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-gradient-to-r from-[#FF6B57] to-[#FF5538] px-4 py-2.5 text-xs font-bold text-white shadow-sm shadow-cta/25 transition-all hover:shadow-md hover:shadow-cta/35 hover:scale-[1.02] active:scale-[0.98]"
         >
-          <Play size={16} fill="currentColor" />
+          <Play size={15} fill="currentColor" />
           <span>{t('dashboard.focus_btn')}</span>
         </Link>
       </section>
@@ -305,7 +305,7 @@ export function DashboardPageClient({
             </div>
             <Link
               href="/dashboard/upload"
-              className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-cta px-3 py-1.5 text-xs font-semibold text-cta-foreground transition-colors hover:opacity-90"
+              className="inline-flex shrink-0 items-center gap-1.5 rounded-lg bg-cta px-3 py-1.5 text-xs font-semibold text-cta-foreground shadow-xs transition-all hover:opacity-95 hover:scale-[1.02] active:scale-[0.98]"
             >
               <FileCheck2 size={14} /> {language === 'bn' ? 'খাতা জমা' : 'Upload'}
             </Link>

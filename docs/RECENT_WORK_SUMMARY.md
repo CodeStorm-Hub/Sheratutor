@@ -590,78 +590,256 @@ Built, deployed, and 100% verified the comprehensive interactive guidebook for N
 
 ---
 
+## 22. General Mathematics Chapters 5–17 Canonical Guidebook Completions (100% Curriculum Live)
+
+- **Milestone:** All 17 chapters of NCTB Class 9–10 General Mathematics are now fully implemented in Canonical Playground V2 under `/dashboard/playground/v2/math/[1-17]`.
+- **Chapters Live:**
+  - Ch 5: এক চলকবিশিষ্ট সমীকরণ (Equations in One Variable) — `MathEquationsOneVariableGuidebook.tsx`
+  - Ch 6: রেখা, কোণ ও ত্রিভুজ (Lines, Angles & Triangles) — `MathLinesTrianglesGuidebook.tsx`
+  - Ch 7: ব্যবহারিক জ্যামিতি (Practical Geometry) — `MathPracticalGeometryGuidebook.tsx`
+  - Ch 8: বৃত্ত (Circles) — `MathCircleGuidebook.tsx`
+  - Ch 9: ত্রিকোণমিতিক অনুপাত (Trigonometric Ratios) — `MathTrigonometryGuidebook.tsx`
+  - Ch 10: দূরত্ব ও উচ্চতা (Distance & Elevation) — `MathDistanceElevationGuidebook.tsx`
+  - Ch 11: বীজগাণিতিক অনুপাত ও সমানুপাত (Algebraic Ratio & Proportion) — `MathAlgebraicRatioProportionGuidebook.tsx`
+  - Ch 12: দুই চলকবিশিষ্ট সরল সহসমীকরণ (Simultaneous Linear Equations) — `MathSimultaneousEquationsGuidebook.tsx`
+  - Ch 13: সসীম ধারা (Finite Series) — `MathFiniteSeriesGuidebook.tsx`
+  - Ch 14: অনুপাত, সদৃশতা ও প্রতিসমতা (Ratio, Similarity & Symmetry) — `MathRatioSimilarityGuidebook.tsx`
+  - Ch 15: ক্ষেত্রফল সম্পর্কিত উপপাদ্য ও সম্পাদ্য (Area Theorems & Constructions) — `MathAreaTheoremsGuidebook.tsx`
+  - Ch 16: পরিমিতি (Mensuration) — `MathMensurationGuidebook.tsx`
+  - Ch 17: পরিসংখ্যান (Statistics) — `MathStatisticsGuidebook.tsx`
+- **Pedagogical Features:** Canonical 5-Step Learning Framework (`১. কনসেপ্ট ল্যাব`, `২. উদাহরণ দেখুন`, `৩. নিজে চেষ্টা করুন`, `৪. অনুধাবন যাচাই`, `৫. সারসংক্ষেপ`), 3 Worked Board CQs with step rubrics and examiner secrets, 3 interactive numeric challenges, 5 Board MCQs with KaTeX explanations, formula cheat sheet, and Sheru Socratic AI Companion drawer.
+
+---
+
+## 23. Teenage Student Typography System Research & Implementation
+
+- **Research Foundation:** Detailed comparative and psycholinguistic research documented in `docs/TEEN_STUDENT_EDTECH_UX_ANALYSIS_AND_BLUEPRINT.md` and `TEEN_STUDENT_TYPOGRAPHY_RESEARCH_AND_IMPLEMENTATION.md`.
+- **Font Stack Configuration (`web/src/app/layout.tsx`):**
+  - **Outfit** (`--font-display`): High-geometry Latin display headings that resonate with teen learners (dynamic, friendly, non-intimidating).
+  - **Plus Jakarta Sans** (`--font-body`): Clean humanist Latin body with high x-height, wide apertures, and fatigue-free reading during long study sessions.
+  - **Baloo Da 2** (`--font-display-bn`): Balanced geometric Bengali display headings designed specifically for clear digital displays.
+  - **Hind Siliguri** (`--font-body-bn`): Clear humanist Bengali body with generous letterform counters and pristine rendering of complex conjuncts (*যুক্তাক্ষর*).
+  - **JetBrains Mono** (`--font-mono-eyebrow`): Monospace figures with distinct zeros (`0`), ones (`1`), and operational operators for formulas, timers, and step tags.
+- **Typographic Engine (`web/src/app/globals.css`):**
+  - Explicit `:lang(bn)` rules setting `line-height: 1.68` and `letter-spacing: 0.005em` to prevent matra clipping and conjunct collisions in complex Bengali script.
+  - CSS variable bindings `--font-display`, `--font-body`, `--font-display-bn`, `--font-body-bn`, and `--font-mono-eyebrow` integrated into Tailwind v4 `@theme inline`.
+
+---
+
+## 24. Academic Daylight & Midnight Cosmic Study Theme System Overhaul
+
+- **Research & Ergonomic Principles:**
+  - Daytime study requires high clarity without blinding harshness (reducing white `#FFFFFF` glare).
+  - Late-night study (SSC/HSC exam cramming) requires deep contrast without pitch-black OLED black smearing.
+- **Color Token Architecture (`web/src/app/globals.css`):**
+  - **Academic Daylight (Light Mode):**
+    - Canvas: `#F8FAFC` (warm porcelain canvas preventing eye strain).
+    - Card Surface: `#FFFFFF` with soft slate borders (`#E2E8F0`).
+    - Primary Text: `#0F172A` (deep slate for maximum legibility).
+  - **Midnight Cosmic Obsidian (Dark Mode):**
+    - Canvas: `#0E1322` (deep blue-violet cosmic base, hue 262, lightness 14.2%).
+    - Card Elevation Level 1: `#161D31` (lightness 18.8%).
+    - Hover / Pill Level 2: `#1E2642` (lightness 23.0%).
+    - Active / Popover Level 3: `#273255` (lightness 27.5%).
+  - **Teenage Action & Semantic Accents:**
+    - Primary Action / CTA: Hyper Sunset Coral `#FF5538` (`oklch(0.660 0.210 34)`).
+    - Success / Mastery: Cyber Mint `#10B981` (`oklch(0.720 0.170 162)`).
+    - Warning / Pitfall: Solar Gold Flame `#F59E0B` (`oklch(0.750 0.160 70)`).
+    - AI / Interactive Accent: Electric Cyan `#06B6D4` (`oklch(0.720 0.140 215)`).
+
+---
+
+## 25. Tactile Side Navigation Rail & Ergonomics Upgrade
+
+- **Component:** `web/src/components/Sidebar.tsx` & `web/src/components/ClientShell.tsx`
+- **Key Ergonomic Refinements:**
+  - **Tactile Active Glowing Pill:** Active navigation items feature a 3px glowing pill indicator (`bg-cta shadow-[0_0_8px_rgba(255,85,56,0.6)]`) with coral icons (`text-cta`) and subtle tinted background (`bg-surface-active`).
+  - **Student Profile Identity Card:** Bottom of sidebar displays an interactive student card with avatar, student name, and a pulsing green status pip ("Active Learner" / "নিয়মিত শিক্ষার্থী") linking to `/dashboard/profile`.
+  - **Structural Group Dividers:** Clear categorization between Study Workspaces, Self-Study tools, Analytics, and Profile Settings.
+  - **Feature Badges:** Animated `• NEW` pulsing badges highlighting live features.
+  - **Compact AI Assistant Card:** Streamlined 70px card linking to `/dashboard/tutor` without dominating vertical scroll real estate.
+  - **Collapse Toggle Ergonomics:** Rail collapse button re-aligned to `top-5` for natural thumb/mouse alignment.
+  - **Responsive Mobile Drawer Parity:** Identical visual styling and touch targets across desktop rail and mobile slide-out drawer.
+
+---
+
+## 26. Top Header & Raycast-Style Command Palette Architecture
+
+- **Component:** `web/src/components/Header.tsx`
+- **Key Interactive Features:**
+  - **Tactile Breadcrumb Chip:** Bordered interactive pill indicating the active route context.
+  - **Raycast/Linear Command Palette Modal (`⌘K` / `Ctrl K`):** Global search launcher with fuzzy search filtering across all 17 Math chapters, 12 Physics chapters, practice exams, and AI tools, complete with keyboard shortcuts footer (`↑↓ Navigate`, `↵ Select`, `Esc Close`).
+  - **Dedicated Mobile Search Trigger:** Touch-friendly search button on mobile screens opening the unified command palette.
+  - **Live Exam Grading Radar Bell:** Notification bell with animated radar pulse (`animate-ping`) and counter badge for pending/graded submissions.
+  - **Active Theme Indicator Dropdown:** Dropdown menu with active indicator dots (`bg-cta`) for Light, Dark, and System theme preferences.
+  - **User Profile Quick Menu:** Gradient avatar menu with one-click access to settings, profile, and logout.
+
+---
+
+## 27. Platform-Wide Global Language Localization (Bangla বাংলা vs English ENG)
+
+- **Architecture:** `LanguageContext` persisting language selection via `localStorage` (`sheratutor_lang`), browser cookie (`SameSite=Lax`), and HTML `lang` attribute.
+- **Bilingual Guidebook Navigation Engine:** `GuidebookHeaderNav.tsx` and `StepNavigationFooter.tsx` provide automated chapter/subject translations, progress ring (`ধাপ ১/৫` vs `Step 1/5`), back buttons, and lesson toggles.
+  - **Complete App Shell & Page Audit:** 100% localized across all pages: Landing, Login, Signup, Onboarding, Dashboard, Profile, Study Planner, Mistakes, Achievements, Upload, Tutor, and Canonical Guidebooks.
+- **Verification:** Automated tests (`test-language-toggle.mjs`) verified zero un-translated text leaks across both languages.
+
+---
+
+## 28. Bilingual Chemistry Textbook Vector Ingestion (NCTB Class 9–10 BN & EN)
+
+- **Source Corpora:** `ingestion/textbooks/chemistry_bn.pdf` (304 pages) and `ingestion/textbooks/chemistry_en.pdf` (304 pages) covering all 12 NCTB Chemistry chapters.
+- **Multimodal Pipeline:**
+  - Extracted 1,072 semantic chunks (304 Bengali curriculum chunks and 768 English fine-grained section chunks: `theory`, `worked_example`, `cq_stimulus`, `cq_subquestion`, `table`).
+  - Cropped and linked 519 authentic textbook diagrams (130 BN, 389 EN) with public CDN asset URLs in the `curriculum-assets` Supabase Storage bucket.
+  - Resolved parent-child stimulus hierarchy for Creative Questions (`CQ`) and linked subquestions `(a)` Knowledge, `(b)` Comprehension, `(c)` Application, and `(d)` Higher Order Thinking.
+- **Vector Embeddings:**
+  - 100% of chunks embedded with Google Gemini `gemini-embedding-2` (1024-dimension Matryoshka representation) into Supabase PostgreSQL table `chunk_embeddings`.
+  - Backed by HNSW cosine distance indexing (`vector_cosine_ops`) for real-time bilingual RAG grounding in the Socratic tutor and rubric grader.
+- **Ingestion Verification:** Tested live vector search via MCP SQL execution, confirming sub-50ms bilingual retrieval with exact cosine distance ranking.
+
+---
+
+## 29. Chemistry Canonical Playground V2 Full Rollout & Architecture Upgrade (Chapters 1–12)
+
+- **Pedagogical Alignment:** Upgraded all 12 Chemistry Guidebooks (`ChemistryConceptsGuidebook.tsx` through `ChemistryInOurLivesGuidebook.tsx`) to strictly adhere to the Canonical 3-Column Design Pattern established in Chapters 1–3:
+  1. **Column 1 — Collapsible Left Lesson Navigation Sidebar (`isLeftSidebarOpen`):**
+     - 5 clickable syllabus lessons (`CHAPTER_X_LESSONS`) with active lesson glow, duration pill, and completed indicators.
+     - Dynamic progress bar, NCTB syllabus badge (`NCTB রসায়ন`), and Grade selector pill (`Class 9–10 · SSC`).
+  2. **Column 2 — Center Interactive Learning Workspace:**
+     - Lesson Header Banner with breadcrumb trail, chapter title, lesson objective, and Board Exam Tip callout.
+     - 5 Canonical Tab Stages with keyboard shortcuts (`1`–`5`):
+       - `tab === 'concept'` (**Concept Lab**): Core theory card, key formula/reaction banner, atomic/molecular diagrams, and common student pitfall alert.
+       - `tab === 'cq'` (**Board CQ Master**): Authentic Board CQ stimulus, collapsible parts `(ক)`–`(ঘ)` with marks allocation (`[১]`, `[২]`, `[৩]`, `[৪]`), marking criteria, and model solution.
+       - `tab === 'simulation'` (**Try Yourself**): Preserved 100% bespoke SVG/interactive chemical simulators (e.g., Hazard Symbol Explorer, Sublimation Chamber, Rutherford Scattering Sandbox, Periodic Trends Explorer, Ionic/Covalent Bond Builder, Avogadro Mole Calculator, Collision Theory Reactor, Galvanic Cell Simulator, pH Neutralization Titration, Blast Furnace Smelter, Fractional Distillation Column, and Soap Saponification Micelle Lab).
+       - `tab === 'quiz'` (**Check MCQ**): Interactive multiple-choice question with instant feedback, option selection pills, explanation reveal, and score tracking.
+       - `tab === 'summary'` (**Summary Vault**): Quick revision points, key formulas/equations, and 1-click "Copy Revision Handnote" button with clipboard confirmation.
+     - Unified `StepNavigationFooter` with circular step ring (`ধাপ ১/৫` / `Step 1/5`), Previous/Next buttons, and keyboard navigation (`1`–`5`).
+  3. **Column 3 — Collapsible Right AI Chemistry Tutor Drawer (`isRightSidebarOpen`):**
+     - Socratic dialogue interface with streaming API response, 8-rung hint ladder, chapter-specific quick question chips, and loading skeleton.
+- **Full 12-Chapter Chemistry Catalog:**
+  - **Ch 1:** Concepts of Chemistry (`/dashboard/playground/v2/chemistry/1`) — Lab safety, hazard pictograms.
+  - **Ch 2:** States of Matter (`/dashboard/playground/v2/chemistry/2`) — Kinetic theory, diffusion rates, heating curves.
+  - **Ch 3:** Structure of Matter (`/dashboard/playground/v2/chemistry/3`) — Rutherford/Bohr models, electron configuration $2n^2$, isotopes.
+  - **Ch 4:** Periodic Table (`/dashboard/playground/v2/chemistry/4`) — Periodic trends, atomic radius, ionization energy.
+  - **Ch 5:** Chemical Bonds (`/dashboard/playground/v2/chemistry/5`) — Octet/duet rules, ionic vs covalent lattice, metallic bonding.
+  - **Ch 6:** Concept of Mole & Calculations (`/dashboard/playground/v2/chemistry/6`) — $n = W/M = V/22.4 = N/N_A$, molarity $S = 1000W/(MV)$, limiting reactant.
+  - **Ch 7:** Chemical Reactions (`/dashboard/playground/v2/chemistry/7`) — Reaction classification, redox oxidation numbers, Le Chatelier principle.
+  - **Ch 8:** Chemistry & Energy (`/dashboard/playground/v2/chemistry/8`) — $\Delta H = \Sigma B_{reactants} - \Sigma B_{products}$, electrochemical & galvanic cells.
+  - **Ch 9:** Acid-Base Balance (`/dashboard/playground/v2/chemistry/9`) — $\text{pH} = -\log[H^+]$, neutralization titration, acid rain.
+  - **Ch 10:** Mineral Resources: Metals & Non-metals (`/dashboard/playground/v2/chemistry/10`) — Reactivity series, blast furnace iron extraction, corrosion prevention.
+  - **Ch 11:** Mineral Resources: Fossils (`/dashboard/playground/v2/chemistry/11`) — Fractional distillation of crude oil, alkane/alkene/alkyne, polymers.
+  - **Ch 12:** Chemistry in Our Lives (`/dashboard/playground/v2/chemistry/12`) — Saponification micelle mechanism, bleaching powder, fertilizers, food preservatives.
+- **Verification Gate:**
+  - TypeScript compilation: `npx tsc --noEmit` exited with **0 errors**.
+  - Headless Chromium E2E verification: `node web/scripts/e2e-chemistry-ch4-12-complete.mjs` executed against all routes `/dashboard/playground/v2/chemistry/1` through `12` with **100% PASS** and 0 console errors.
+
+---
+
+## 30. Full Backend & Database Integration for Playground & AI Tutor (RAG Grounding & Progress Persistence)
+
+- **Unified Grounded AI Tutor Endpoint (`/api/tutor/chat` & `/api/playground/chat`):**
+  - Resolved missing endpoint that previously caused 404s when chatting in Chemistry and Physics guidebooks.
+  - Implemented dynamic subject code mapping (`SSC-CHEM`, `SSC-PHY`, `SSC-MATH`, `SSC-HMATH`) and numeric chapter extraction.
+  - Connected directly to Supabase `subjects` and `chapters` tables to retrieve chapter IDs and curriculum metadata.
+  - Integrated `retrieveGroundingFlow` to query Supabase `curriculum_chunks` and `chunk_embeddings` via pgvector HNSW cosine search, retrieving authentic NCTB textbook passages and cropped diagram CDN URLs.
+  - Persisted multi-turn chat sessions in `tutor_chat_sessions` (`mode = 'general'`, title: `Playground: [Subject] Ch [No]`) and conversation turns in `tutor_chat_messages` in Supabase PostgreSQL.
+  - Integrated minor safety pre-filter (`preFilterSafety`) with automatic escalation logging to `audit_log`.
+- **Database Progress Persistence (`/api/playground/progress`):**
+  - **GET**: Retrieves persisted lesson completions directly from the student's active `study_plans` row (`completed_tasks_json`) and overall momentum score from `student_profiles`.
+  - **POST**: Persists completed lesson arrays and active lesson state into `study_plans.completed_tasks_json` (`playground_${subject}_ch${chapter}`) and dynamically updates `student_profiles.overall_momentum_score`.
+- **Comprehensive E2E Verification Suite (`web/scripts/e2e-backend-database-full-verification.mjs`):**
+  - Automated headless Chromium testing verified 8 sequential stages with 0 console errors:
+    1. Supabase Auth authentication and session cookie resolution.
+    2. Real database connection on Dashboard (Student profile: anam chowdhury, Dhaka Board, Science group).
+    3. Chemistry Chapter 1 Guidebook AI Drawer query sending to `/api/tutor/chat` with live RAG diagram grounding.
+    4. Chemistry Chapter 4 Periodic Table interactive simulator tab.
+    5. Physics Guidebook progress loading and persistence.
+    6. Mathematics Guidebook lesson switcher.
+    7. Mock Practice Exams and Board Simulator live database fetches (`question_papers` and `questions`).
+    8. Mistake Analysis and Weakness Logs tracking (`weakness_logs` and `chapters`).
+  - Verified live database records: confirmed `tutor_chat_sessions` and `tutor_chat_messages` rows written to Supabase in real-time.
+
+---
+
 ## Key Files Created & Modified
 
 ### Components & App Routes:
 - `web/src/lib/playground-config.ts`: Central feature flag for dual / v1-only / v2-only mode.
 - `web/src/app/dashboard/playground/page.tsx`: Playground Hub with version switcher tabs (`🎮 সংস্করণ ১` vs `📖 সংস্করণ ২`).
 - `web/src/app/dashboard/playground/v2/page.tsx`: Dedicated Version 2 Guidebook library hub.
-- `web/src/app/dashboard/playground/v2/math/1/page.tsx`: Dedicated General Math Chapter 1 Guidebook route.
-- `web/src/app/dashboard/playground/v2/math/2/page.tsx`: Dedicated General Math Chapter 2 Guidebook route.
-- `web/src/app/dashboard/playground/v2/math/3/page.tsx`: Dedicated General Math Chapter 3 Guidebook route.
-- `web/src/app/dashboard/playground/v2/math/4/page.tsx`: Dedicated General Math Chapter 4 Guidebook route.
-- `web/src/app/dashboard/playground/v2/math/5/page.tsx`: Dedicated General Math Chapter 5 Guidebook route.
-- `web/src/components/playground/v2/RealNumbersGuidebook.tsx`: Chapter 1 General Math Guidebook.
-- `web/src/components/playground/v2/MathSetsFunctionsGuidebook.tsx`: Chapter 2 General Math Guidebook.
-- `web/src/components/playground/v2/MathAlgebraicExpressionsGuidebook.tsx`: Chapter 3 General Math Guidebook.
-- `web/src/components/playground/v2/MathExponentsLogarithmsGuidebook.tsx`: Chapter 4 General Math Guidebook.
-- `web/src/components/playground/v2/MathEquationsOneVariableGuidebook.tsx`: Chapter 5 General Math Guidebook.
-- `web/src/app/dashboard/playground/v2/physics/1/page.tsx`: Dedicated Physics Chapter 1 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/2/page.tsx`: Dedicated Physics Chapter 2 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/3/page.tsx`: Dedicated Physics Chapter 3 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/4/page.tsx`: Dedicated Physics Chapter 4 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/5/page.tsx`: Dedicated Physics Chapter 5 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/6/page.tsx`: Dedicated Physics Chapter 6 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/7/page.tsx`: Dedicated Physics Chapter 7 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/8/page.tsx`: Dedicated Physics Chapter 8 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/9/page.tsx`: Dedicated Physics Chapter 9 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/10/page.tsx`: Dedicated Physics Chapter 10 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/11/page.tsx`: Dedicated Physics Chapter 11 Guidebook route.
-- `web/src/app/dashboard/playground/v2/physics/12/page.tsx`: Dedicated Physics Chapter 12 Guidebook route.
-- `web/src/components/playground/v2/PhysicsMeasurementGuidebook.tsx`: Chapter 1 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsMotionGuidebook.tsx`: Chapter 2 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsForceGuidebook.tsx`: Chapter 3 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsWorkEnergyGuidebook.tsx`: Chapter 4 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsMatterPressureGuidebook.tsx`: Chapter 5 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsHeatMatterGuidebook.tsx`: Chapter 6 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsWavesSoundGuidebook.tsx`: Chapter 7 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsLightReflectionGuidebook.tsx`: Chapter 8 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsLightRefractionGuidebook.tsx`: Chapter 9 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsStaticElectricityGuidebook.tsx`: Chapter 10 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsCurrentElectricityGuidebook.tsx`: Chapter 11 Physics Guidebook.
-- `web/src/components/playground/v2/PhysicsMagneticEffectsGuidebook.tsx`: Chapter 12 Physics Guidebook.
-- `web/src/app/dashboard/playground/v2/math/6/page.tsx`: Dedicated Math Chapter 6 Guidebook route.
-- `web/src/components/playground/v2/MathLinesAnglesTrianglesGuidebook.tsx`: Chapter 6 Math Guidebook (Lines, Angles & Triangles).
-- `web/src/app/dashboard/playground/v2/math/7/page.tsx`: Dedicated Math Chapter 7 Guidebook route.
-- `web/src/components/playground/v2/MathPracticalGeometryGuidebook.tsx`: Chapter 7 Math Guidebook (Practical Geometry).
--`web/src/app/dashboard/playground/v2/math/8/page.tsx`: Dedicated Math Chapter 8 Guidebook route.
-- `web/src/components/playground/v2/MathCircleGuidebook.tsx`: Chapter 8 Math Guidebook (Circle).
-- `web/src/app/dashboard/playground/v2/math/9/page.tsx`: Dedicated Math Chapter 9 Guidebook route.
-- `web/src/components/playground/v2/MathTrigonometryGuidebook.tsx`: Chapter 9 Math Guidebook (Trigonometric Ratios).
-- `web/src/components/playground/v2/GuidebookLibraryView.tsx`: Subject-to-chapter hierarchy library view (Physics activeCount: 12, Math activeCount: 9, total live chapters: 21).
+- `web/src/components/playground/v2/GuidebookHeaderNav.tsx`: Bilingual guidebook top navigation bar with back buttons, chapter switcher, and lesson drawer toggle.
+- `web/src/components/playground/v2/StepNavigationFooter.tsx`: Canonical 5-step footer with circular progress ring, prev/next buttons, and keyboard shortcuts (`1`–`5`).
+- `web/src/components/Sidebar.tsx`: Tactile side navigation with glowing pill indicators, profile card, group dividers, and compact AI card.
+- `web/src/components/Header.tsx`: Top header with tactile breadcrumbs, `⌘K` command palette modal, mobile search trigger, and radar notification bell.
+- `web/src/components/ClientShell.tsx`: Responsive layout shell with synced mobile drawer and desktop rail collapse controls at `top-5`.
+- `web/src/app/globals.css`: 3-layer OKLCH token system, Midnight Cosmic Obsidian theme, and Bengali script typographic rendering rules.
+- `web/src/app/layout.tsx`: Teenage typography loader (`Outfit`, `Plus Jakarta Sans`, `Baloo Da 2`, `Hind Siliguri`, `JetBrains Mono`).
 
-### Test Automation Scripts:
-- `web/scripts/e2e-math-ch9-complete.mjs`: E2E suite for General Math Chapter 9 (20 sequential screenshots verified, 0 errors).
-- `web/scripts/e2e-math-ch8-complete.mjs`: E2E suite for General Math Chapter 8 (20 sequential screenshots verified, 0 errors).
-- `web/scripts/e2e-math-ch7-complete.mjs`: E2E suite for General Math Chapter 7 (20 sequential screenshots verified, 0 errors).
-- `web/scripts/e2e-math-ch6-complete.mjs`: E2E suite for General Math Chapter 6 (19 sequential screenshots verified, 0 errors).
-- `web/scripts/e2e-math-ch5-complete.mjs`: E2E suite for General Math Chapter 5 (19 sequential screenshots verified, 0 errors).
-- `web/scripts/e2e-math-ch4-complete.mjs`: E2E suite for General Math Chapter 4 (19 sequential screenshots verified, 0 errors).
-- `web/scripts/e2e-math-ch3-complete.mjs`: E2E suite for General Math Chapter 3 (19 sequential screenshots verified, 0 errors).
-- `web/scripts/e2e-math-ch2-complete.mjs`: E2E suite for General Math Chapter 2 (19 sequential screenshots verified, 0 errors).
-- `web/scripts/e2e-physics-v2-complete.mjs`: E2E suite for Physics Chapter 1.
-- `web/scripts/e2e-physics-ch2-complete.mjs`: E2E suite for Physics Chapter 2.
-- `web/scripts/e2e-physics-ch3-complete.mjs`: E2E suite for Physics Chapter 3.
-- `web/scripts/e2e-physics-ch4-complete.mjs`: E2E suite for Physics Chapter 4.
-- `web/scripts/e2e-physics-ch5-complete.mjs`: E2E suite for Physics Chapter 5.
-- `web/scripts/e2e-physics-ch6-complete.mjs`: E2E suite for Physics Chapter 6.
-- `web/scripts/e2e-physics-ch7-complete.mjs`: E2E suite for Physics Chapter 7.
-- `web/scripts/e2e-physics-ch8-complete.mjs`: E2E suite for Physics Chapter 8.
-- `web/scripts/e2e-physics-ch9-complete.mjs`: E2E suite for Physics Chapter 9.
-- `web/scripts/e2e-physics-ch10-complete.mjs`: E2E suite for Physics Chapter 10.
-- `web/scripts/e2e-physics-ch11-complete.mjs`: E2E suite for Physics Chapter 11.
-- `web/scripts/e2e-physics-ch12-complete.mjs`: E2E suite for Physics Chapter 12.
-- `web/scripts/e2e-subjects-hierarchy.mjs`: E2E test for subject hierarchy navigation.
+### Mathematics V2 Guidebooks (All 17 Chapters Live):
+- `web/src/components/playground/v2/RealNumbersGuidebook.tsx`: Chapter 1 (বাস্তব সংখ্যা / Real Numbers).
+- `web/src/components/playground/v2/MathSetsFunctionsGuidebook.tsx`: Chapter 2 (সেট ও ফাংশন / Sets & Functions).
+- `web/src/components/playground/v2/MathAlgebraicExpressionsGuidebook.tsx`: Chapter 3 (বীজগাণিতিক রাশি / Algebraic Expressions).
+- `web/src/components/playground/v2/MathExponentsLogarithmsGuidebook.tsx`: Chapter 4 (সূচক ও লগারিদম / Exponents & Logarithms).
+- `web/src/components/playground/v2/MathEquationsOneVariableGuidebook.tsx`: Chapter 5 (এক চলকবিশিষ্ট সমীকরণ / Equations in One Variable).
+- `web/src/components/playground/v2/MathLinesTrianglesGuidebook.tsx`: Chapter 6 (রেখা, কোণ ও ত্রিভুজ / Lines, Angles & Triangles).
+- `web/src/components/playground/v2/MathPracticalGeometryGuidebook.tsx`: Chapter 7 (ব্যবহারিক জ্যামিতি / Practical Geometry).
+- `web/src/components/playground/v2/MathCircleGuidebook.tsx`: Chapter 8 (বৃত্ত / Circles).
+- `web/src/components/playground/v2/MathTrigonometryGuidebook.tsx`: Chapter 9 (ত্রিকোণমিতিক অনুপাত / Trigonometric Ratios).
+- `web/src/components/playground/v2/MathDistanceElevationGuidebook.tsx`: Chapter 10 (দূরত্ব ও উচ্চতা / Distance & Elevation).
+- `web/src/components/playground/v2/MathAlgebraicRatioProportionGuidebook.tsx`: Chapter 11 (বীজগাণিতিক অনুপাত ও সমানুপাত / Algebraic Ratio & Proportion).
+- `web/src/components/playground/v2/MathSimultaneousEquationsGuidebook.tsx`: Chapter 12 (দুই চলকবিশিষ্ট সরল সহসমীকরণ / Simultaneous Linear Equations).
+- `web/src/components/playground/v2/MathFiniteSeriesGuidebook.tsx`: Chapter 13 (সসীম ধারা / Finite Series).
+- `web/src/components/playground/v2/MathRatioSimilarityGuidebook.tsx`: Chapter 14 (অনুপাত, সদৃশতা ও প্রতিসমতা / Ratio, Similarity & Symmetry).
+- `web/src/components/playground/v2/MathAreaTheoremsGuidebook.tsx`: Chapter 15 (ক্ষেত্রফল সম্পর্কিত উপপাদ্য ও সম্পাদ্য / Area Theorems & Constructions).
+- `web/src/components/playground/v2/MathMensurationGuidebook.tsx`: Chapter 16 (পরিমিতি / Mensuration).
+- `web/src/components/playground/v2/MathStatisticsGuidebook.tsx`: Chapter 17 (পরিসংখ্যান / Statistics).
+
+### Physics V2 Guidebooks (12 Chapters Live):
+- `web/src/components/playground/v2/PhysicsMeasurementGuidebook.tsx`: Chapter 1 (ভৌত রাশি ও পরিমাপ / Physical Quantities & Measurement).
+- `web/src/components/playground/v2/PhysicsMotionGuidebook.tsx`: Chapter 2 (গতি / Motion).
+- `web/src/components/playground/v2/PhysicsForceGuidebook.tsx`: Chapter 3 (বল / Force).
+- `web/src/components/playground/v2/PhysicsWorkEnergyGuidebook.tsx`: Chapter 4 (কাজ, ক্ষমতা ও শক্তি / Work, Power & Energy).
+- `web/src/components/playground/v2/PhysicsMatterPressureGuidebook.tsx`: Chapter 5 (পদার্থের অবস্থা ও চাপ / States of Matter & Pressure).
+- `web/src/components/playground/v2/PhysicsHeatMatterGuidebook.tsx`: Chapter 6 (বস্তুর ওপর তাপের প্রভাব / Effect of Heat on Matter).
+- `web/src/components/playground/v2/PhysicsWavesSoundGuidebook.tsx`: Chapter 7 (তরঙ্গ ও শব্দ / Waves & Sound).
+- `web/src/components/playground/v2/PhysicsLightReflectionGuidebook.tsx`: Chapter 8 (আলোর প্রতিফলন / Reflection of Light).
+- `web/src/components/playground/v2/PhysicsLightRefractionGuidebook.tsx`: Chapter 9 (আলোর প্রতিসরণ / Refraction of Light).
+- `web/src/components/playground/v2/PhysicsStaticElectricityGuidebook.tsx`: Chapter 10 (স্থির তড়িৎ / Static Electricity).
+- `web/src/components/playground/v2/PhysicsCurrentElectricityGuidebook.tsx`: Chapter 11 (চল তড়িৎ / Current Electricity).
+- `web/src/components/playground/v2/PhysicsMagneticEffectsGuidebook.tsx`: Chapter 12 (বিদ্যুতের চৌম্বক ক্রিয়া / Magnetic Effects of Current).
+
+### Chemistry V2 Guidebooks (All 12 Chapters Live):
+- `web/src/components/playground/v2/ChemistryConceptsGuidebook.tsx`: Chapter 1 (রসায়নের ধারণা / Concepts of Chemistry).
+- `web/src/components/playground/v2/StatesOfMatterGuidebook.tsx`: Chapter 2 (পদার্থের অবস্থা / States of Matter).
+- `web/src/components/playground/v2/StructureOfMatterGuidebook.tsx`: Chapter 3 (পদার্থের গঠন / Structure of Matter).
+- `web/src/components/playground/v2/PeriodicTableGuidebook.tsx`: Chapter 4 (পর্যায় সারণি / Periodic Table).
+- `web/src/components/playground/v2/ChemicalBondsGuidebook.tsx`: Chapter 5 (রাসায়নিক বন্ধন / Chemical Bonds).
+- `web/src/components/playground/v2/MoleCalculationsGuidebook.tsx`: Chapter 6 (মোলের ধারণা ও রাসায়নিক গণনা / Concept of Mole & Chemical Calculations).
+- `web/src/components/playground/v2/ChemicalReactionsGuidebook.tsx`: Chapter 7 (রাসায়নিক বিক্রিয়া / Chemical Reactions).
+- `web/src/components/playground/v2/ChemistryEnergyGuidebook.tsx`: Chapter 8 (রসায়ন ও শক্তি / Chemistry & Energy).
+- `web/src/components/playground/v2/AcidBaseBalanceGuidebook.tsx`: Chapter 9 (এসিড-ক্ষার সমতা / Acid-Base Balance).
+- `web/src/components/playground/v2/MineralResourcesMetalsGuidebook.tsx`: Chapter 10 (খনিজ সম্পদ: ধাতু ও অধাতু / Mineral Resources: Metals & Non-metals).
+- `web/src/components/playground/v2/MineralResourcesFossilsGuidebook.tsx`: Chapter 11 (খনিজ সম্পদ: জীবাশ্ম / Mineral Resources: Fossils).
+- `web/src/components/playground/v2/ChemistryInOurLivesGuidebook.tsx`: Chapter 12 (আমাদের জীবনে রসায়ন / Chemistry in Our Lives).
+
+### Backend API Routes & Database Services:
+- `web/src/app/api/tutor/chat/route.ts`: Unified AI Tutor chat endpoint supporting all 41 Guidebooks with Supabase chapter lookup, pgvector RAG grounding (`retrieveGroundingFlow`), and session persistence in `tutor_chat_sessions` & `tutor_chat_messages`.
+- `web/src/app/api/playground/chat/route.ts`: Playground chat route delegating to the unified grounded AI Tutor handler.
+- `web/src/app/api/playground/progress/route.ts`: Chapter and lesson progress persistence reading and writing directly to Supabase `study_plans.completed_tasks_json` and `student_profiles.overall_momentum_score`.
+
+### Test Automation & Research Scripts:
+- `web/scripts/e2e-backend-database-full-verification.mjs`: Automated full-suite E2E test verifying live Supabase auth, real database queries across Dashboard, Practice Exams, Board Simulator, Mistake Analysis, and real-time pgvector RAG grounding in the Playground AI Tutor.
+- `web/scripts/e2e-chemistry-ch4-12-complete.mjs`: Automated E2E verification of all 12 Chemistry V2 guidebooks validating 3-column layout, 5-tab lifecycle, interactive simulators, MCQ quiz scoring, and AI tutor drawers.
+- `web/scripts/test-teen-ux-features.mjs`: E2E verification of teenage UX features (topic search, density toggle, keyboard shortcuts).
+- `web/scripts/capture-font-research-screenshots.mjs`: Automated font rendering comparison across English & Bangla scripts in light and dark modes.
+- `web/scripts/capture-theme-screenshots.mjs`: Automated capture of Academic Daylight and Midnight Cosmic Obsidian theme states.
+- `web/scripts/test-sidebar-research-upgrade.mjs`: E2E verification of tactile sidebar glowing pills, profile cards, and mobile drawers.
+- `web/scripts/test-header-research-upgrade.mjs`: E2E verification of command palette modal, mobile search trigger, and radar notification bell.
+- `web/scripts/test-language-toggle.mjs`: Automated verification of 100% bilingual localization across all dashboard pages.
+- `web/scripts/test-all-guidebook-navs.mjs`: Verification of guidebook header navigation and step footers across all chapters.
+
+
+
 
 
 

@@ -33,6 +33,7 @@ import {
   Square,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 // ---------------------------------------------------------------------------
 // TYPES & DATA DEFINITIONS
@@ -2023,36 +2024,17 @@ export function MathPracticalGeometryGuidebook() {
 
   return (
     <div className="min-h-screen bg-background text-foreground pb-20 selection:bg-primary/20">
-      {/* HEADER / BREADCRUMB */}
-      <header className="sticky top-0 z-40 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Link
-              href="/dashboard/playground/v2"
-              className="text-xs font-semibold text-muted-foreground hover:text-foreground flex items-center gap-1 transition-colors"
-            >
-              প্লেগ্রাউন্ড লাইব্রেরি
-            </Link>
-            <ChevronRight className="w-3.5 h-3.5 text-muted-foreground" />
-            <span className="text-xs font-bold text-primary">সাধারণ গণিত</span>
-            <ChevronRight className="w-3.5 h-3.5 text-muted-foreground" />
-            <h1 className="text-sm font-black tracking-tight flex items-center gap-2">
-              <Compass className="w-4 h-4 text-primary" />
-              অধ্যায় ৭: ব্যবহারিক জ্যামিতি
-            </h1>
-          </div>
-
-          <div className="flex items-center gap-3">
-            <button
-              onClick={() => setIsSheruOpen(true)}
-              className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 hover:bg-primary/20 border border-primary/30 text-xs font-bold text-primary transition-all shadow-sm"
-            >
-              <Sparkles className="w-3.5 h-3.5 animate-spin" />
-              <span>শেরু এআই টিউটর</span>
-            </button>
-          </div>
-        </div>
-      </header>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={7}
+        chapterTitleBn="ব্যবহারিক জ্যামিতি (Practical Geometry)"
+        activeLesson={activeLab}
+        activeLessonTitle={LAB_LESSONS[activeLab - 1]?.title}
+        onOpenAi={() => setIsSheruOpen(true)}
+        aiButtonLabel="শেরু এআই টিউটর"
+      />
 
       {/* HERO SECTION */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-6">

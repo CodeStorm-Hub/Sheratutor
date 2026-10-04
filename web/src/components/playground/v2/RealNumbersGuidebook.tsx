@@ -42,6 +42,8 @@ import {
   AlertTriangle,
 } from 'lucide-react';
 import { RenderMathText } from '@/components/render-math-text';
+import { StepNavigationFooter } from '@/components/playground/v2/StepNavigationFooter';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 type LearningStep = 'concept' | 'example' | 'try' | 'check' | 'summary';
 
@@ -666,75 +668,18 @@ export function RealNumbersGuidebook() {
 
   return (
     <div className="min-h-screen bg-[#F3F5F9] dark:bg-[#0D0F16] text-foreground font-sans transition-colors pb-12">
-      {/* Top Header Bar with Version Toggle, Sidebar Toggle & Breadcrumbs */}
-      <div className="border-b border-border/60 bg-card/90 backdrop-blur-md px-3 sm:px-6 lg:px-8 py-2.5 sticky top-0 z-30 flex items-center justify-between gap-3">
-        <div className="flex items-center gap-2 sm:gap-3">
-          {/* Toggle Left Lesson Sidebar Button */}
-          <button
-            onClick={() => setIsLeftSidebarOpen(!isLeftSidebarOpen)}
-            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-bold transition-all shadow-2xs ${
-              isLeftSidebarOpen
-                ? 'bg-card border-border/80 hover:bg-muted text-foreground'
-                : 'bg-primary/10 border-primary/30 text-primary hover:bg-primary/20'
-            }`}
-            title={isLeftSidebarOpen ? 'পাঠ তালিকা লুকান' : 'পাঠ তালিকা দেখুন'}
-          >
-            {isLeftSidebarOpen ? (
-              <>
-                <PanelLeftClose className="h-4 w-4 text-primary" />
-                <span className="hidden sm:inline">পাঠ তালিকা লুকান</span>
-              </>
-            ) : (
-              <>
-                <PanelLeftOpen className="h-4 w-4 text-primary" />
-                <span>পাঠ তালিকা দেখুন</span>
-              </>
-            )}
-          </button>
-
-          <Link
-            href="/dashboard/playground/v2"
-            className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-primary transition-colors"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            <span className="hidden sm:inline">খেলার মাঠে ফিরুন</span>
-          </Link>
-          <span className="text-border hidden sm:inline">|</span>
-          <div className="flex items-center gap-1.5 text-xs text-muted-foreground font-medium">
-            <span className="hidden md:inline">{selectedSubject}</span>
-            <ChevronRight className="h-3 w-3 hidden md:inline" />
-            <span className="hidden md:inline">Chapter 1</span>
-            <ChevronRight className="h-3 w-3 hidden md:inline" />
-            <span className="text-[#FF6B57] font-bold">Lesson {activeLesson}</span>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2">
-          {/* Toggle AI Sidebar Button */}
-          <button
-            onClick={() => setIsAiSidebarOpen(!isAiSidebarOpen)}
-            className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl border text-xs font-bold transition-all shadow-2xs ${
-              isAiSidebarOpen
-                ? 'bg-indigo-500/10 border-indigo-500/30 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500/20'
-                : 'bg-card border-border/80 text-muted-foreground hover:text-foreground'
-            }`}
-            title={isAiSidebarOpen ? 'AI শিক্ষক লুকান' : 'AI শিক্ষক দেখুন'}
-          >
-            <Bot className="h-4 w-4" />
-            <span className="hidden md:inline">AI শিক্ষক</span>
-          </button>
-
-          <span className="hidden lg:inline-flex rounded-full bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
-            Version 2.0 • Virtual Guidebook
-          </span>
-          <Link
-            href="/dashboard/playground/math/1"
-            className="text-xs font-bold text-muted-foreground hover:text-foreground bg-muted/60 px-3 py-1.5 rounded-xl border border-border/50 transition-colors"
-          >
-            🎮 v1 (Quest Arena)
-          </Link>
-        </div>
-      </div>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="math"
+        subjectNameBn="সাধারণ গণিত"
+        chapterNum={1}
+        chapterTitleBn="বাস্তব সংখ্যা (Real Numbers)"
+        activeLesson={activeLesson}
+        activeLessonTitle={CHAPTER_1_LESSONS[activeLesson - 1]?.titleBn}
+        isSidebarOpen={isLeftSidebarOpen}
+        onToggleSidebar={() => setIsLeftSidebarOpen(!isLeftSidebarOpen)}
+        onOpenAi={() => setIsAiSidebarOpen(!isAiSidebarOpen)}
+      />
 
       {/* Main Responsive Workspace Grid */}
       <div className="mx-auto max-w-[1720px] px-3 sm:px-6 lg:px-8 pt-5">
@@ -2746,36 +2691,19 @@ export function RealNumbersGuidebook() {
                   </div>
                 </div>
 
-                {/* Universal Bottom Navigation Footer for Step 5 */}
-                <div className="flex items-center justify-between p-4 rounded-2xl bg-card border border-border/70 shadow-xs">
-                  <button
-                    onClick={() => {
-                      setActiveStep('check');
-                      window.scrollTo({ top: 0, behavior: 'smooth' });
-                    }}
-                    className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-border bg-card text-muted-foreground hover:text-foreground font-bold text-xs sm:text-sm shadow-2xs transition-all"
-                  >
-                    <ArrowLeft className="h-4 w-4" />
-                    <span>পূর্ববর্তী ধাপ: Check Understanding</span>
-                  </button>
-                  <button
-                    onClick={() => {
-                      setIsChapterFinished(true);
-                      markLessonComplete(1);
-                      markLessonComplete(2);
-                      markLessonComplete(3);
-                      markLessonComplete(4);
-                      markLessonComplete(5);
-                    }}
-                    className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs sm:text-sm shadow-xs transition-all"
-                  >
-                    <CheckCircle2 className="h-4 w-4" />
-                    <span>{isChapterFinished ? 'অধ্যায় ১ সম্পূর্ণ হয়েছে! ✓' : 'অধ্যায় ১ সম্পূর্ণ হিসেবে চিহ্নিত করুন 🎉'}</span>
-                  </button>
-                </div>
               </div>
             )}
 
+            {/* Continuous Step Navigation Footer */}
+            <StepNavigationFooter
+              currentStep={activeStep}
+              onStepChange={setActiveStep}
+              chapterNumberBn="অধ্যায় ০১"
+              chapterNumberEn="Chapter 01"
+              chapterTitleBn="বাস্তব সংখ্যা"
+              chapterTitleEn="Real Numbers"
+              subjectHref="/dashboard/playground/v2?subject=math"
+            />
           </div>
 
           {/* ========================================================= */}

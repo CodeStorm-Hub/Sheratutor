@@ -38,6 +38,7 @@ import {
 } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { RenderMathText } from '@/components/render-math-text';
+import { GuidebookHeaderNav } from './GuidebookHeaderNav';
 
 export type LearningStep = 'concept' | 'example' | 'try' | 'check' | 'summary';
 
@@ -596,53 +597,18 @@ export function PhysicsMeasurementGuidebook() {
 
   return (
     <div className="min-h-screen bg-[#F8FAFC] dark:bg-[#0B0D13] text-foreground flex flex-col transition-colors selection:bg-[#FF6B57]/20">
-      {/* Top Breadcrumb & Switcher Header */}
-      <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-md px-4 sm:px-6 py-2.5 flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <button
-            onClick={() => setIsLeftSidebarOpen(!isLeftSidebarOpen)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-border bg-card hover:bg-muted text-xs font-bold text-foreground transition-all shadow-2xs"
-            title={isLeftSidebarOpen ? 'পাঠ তালিকা লুকান' : 'পাঠ তালিকা দেখান'}
-          >
-            {isLeftSidebarOpen ? <PanelLeftClose className="h-4 w-4 text-[#FF6B57]" /> : <PanelLeftOpen className="h-4 w-4 text-[#FF6B57]" />}
-            <span className="hidden sm:inline">{isLeftSidebarOpen ? 'পাঠ তালিকা লুকান' : 'পাঠ তালিকা দেখান'}</span>
-          </button>
-
-          <Link
-            href="/dashboard/playground/v2"
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-border/60 bg-muted/40 hover:bg-muted text-xs font-bold text-muted-foreground hover:text-foreground transition-all"
-          >
-            <ArrowLeft className="h-3.5 w-3.5" />
-            <span>লাইব্রেরিতে ফিরুন</span>
-          </Link>
-
-          <div className="hidden md:flex items-center gap-2 text-xs font-semibold text-muted-foreground ml-2">
-            <span>পদার্থবিজ্ঞান</span>
-            <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/60" />
-            <span className="text-foreground font-bold">অধ্যায় ১: ভৌত রাশি ও পরিমাপ</span>
-            <ChevronRight className="h-3.5 w-3.5 text-muted-foreground/60" />
-            <span className="text-[#FF6B57] font-bold">Lesson {activeLesson}</span>
-          </div>
-        </div>
-
-        <div className="flex items-center gap-2.5">
-          <button
-            onClick={() => setIsRightSidebarOpen(!isRightSidebarOpen)}
-            className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold border transition-all ${
-              isRightSidebarOpen
-                ? 'bg-primary/10 text-primary border-primary/20'
-                : 'bg-card text-muted-foreground border-border hover:text-foreground'
-            }`}
-          >
-            <Sparkles className="h-3.5 w-3.5 text-primary" />
-            <span>AI শিক্ষক</span>
-          </button>
-
-          <div className="hidden sm:flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 text-xs font-bold border border-emerald-500/20">
-            <span>Version 2.0 • Virtual Guidebook</span>
-          </div>
-        </div>
-      </header>
+      {/* Modern High-Contrast Top Navigation & Breadcrumb Bar */}
+      <GuidebookHeaderNav
+        subjectKey="physics"
+        subjectNameBn="পদার্থবিজ্ঞান"
+        chapterNum={1}
+        chapterTitleBn="ভৌত রাশি ও পরিমাপ (Physical Quantities & Measurement)"
+        activeLesson={activeLesson}
+        activeLessonTitle={LESSONS_META[activeLesson]?.titleBn}
+        isSidebarOpen={isLeftSidebarOpen}
+        onToggleSidebar={() => setIsLeftSidebarOpen(!isLeftSidebarOpen)}
+        onOpenAi={() => setIsRightSidebarOpen(!isRightSidebarOpen)}
+      />
 
       {/* Main 3-Column Workspace */}
       <div className="flex-1 flex w-full max-w-[1720px] mx-auto p-3 sm:p-4 lg:p-6 gap-5 items-start">
