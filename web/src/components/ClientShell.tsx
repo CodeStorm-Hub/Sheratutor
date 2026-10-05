@@ -8,6 +8,23 @@ import { Header } from '@/components/Header';
 import { Sheet, SheetContent, SheetTitle } from '@/components/ui/sheet';
 import { useLanguage } from '@/context/LanguageContext';
 
+function MainContent({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const isPlayground = pathname?.startsWith('/dashboard/playground');
+
+  return (
+    <main
+      className={`mx-auto w-full pt-6 pb-16 transition-all duration-300 ${
+        isPlayground
+          ? 'max-w-[1720px] px-3 sm:px-6 lg:px-8'
+          : 'max-w-[1400px] px-4 pt-6 pb-16 sm:px-6 lg:px-10'
+      }`}
+    >
+      {children}
+    </main>
+  );
+}
+
 export const ClientShell: React.FC<{
   children: React.ReactNode;
   userName?: string;
@@ -19,8 +36,6 @@ export const ClientShell: React.FC<{
   const isBn = language === 'bn';
   const [mobileOpen, setMobileOpen] = useState(false);
   const [desktopSidebarOpen, setDesktopSidebarOpen] = useState(true);
-  const pathname = usePathname();
-  const isPlayground = pathname?.startsWith('/dashboard/playground');
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -91,15 +106,15 @@ export const ClientShell: React.FC<{
             userSub={userSub}
           />
         </Suspense>
-        <main
-          className={`mx-auto w-full pt-6 pb-16 transition-all duration-300 ${
-            isPlayground
-              ? 'max-w-[1720px] px-3 sm:px-6 lg:px-8'
-              : 'max-w-[1400px] px-4 pt-6 pb-16 sm:px-6 lg:px-10'
-          }`}
+        <Suspense
+          fallback={
+            <main className="mx-auto w-full max-w-[1400px] px-4 pt-6 pb-16 sm:px-6 lg:px-10 transition-all duration-300">
+              {children}
+            </main>
+          }
         >
-          {children}
-        </main>
+          <MainContent>{children}</MainContent>
+        </Suspense>
       </div>
     </div>
   );
