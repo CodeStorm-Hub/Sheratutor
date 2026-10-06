@@ -19,6 +19,10 @@ import { KinematicsMotionSimulator } from '../simulators/KinematicsMotionSimulat
 import { MomentumCollisionSimulator } from '../simulators/MomentumCollisionSimulator';
 import { EnergyConservationSimulator } from '../simulators/EnergyConservationSimulator';
 import { HydraulicPressureSimulator } from '../simulators/HydraulicPressureSimulator';
+import { ThermalExpansionSimulator } from '../simulators/ThermalExpansionSimulator';
+import { WaveEchoSimulator } from '../simulators/WaveEchoSimulator';
+import { MirrorRaySimulator } from '../simulators/MirrorRaySimulator';
+import { RefractionRaySimulator } from '../simulators/RefractionRaySimulator';
 
 interface StepSimulationHostProps {
   data: Step2SandboxData;
@@ -41,6 +45,14 @@ export function StepSimulationHost({ data, chapterNo }: StepSimulationHostProps)
         return <EnergyConservationSimulator />;
       case 'pressure':
         return <HydraulicPressureSimulator />;
+      case 'thermal':
+        return <ThermalExpansionSimulator />;
+      case 'wave':
+        return <WaveEchoSimulator />;
+      case 'reflection':
+        return <MirrorRaySimulator />;
+      case 'refraction':
+        return <RefractionRaySimulator />;
       default:
         // Generic Parameter Sandbox fallback for chapters in progression
         return (

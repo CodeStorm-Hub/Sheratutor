@@ -98,8 +98,60 @@ describe('Physics Playground Domain & Registry', () => {
     expect(ch5.step5.quizzes.length).toBeGreaterThanOrEqual(3);
   });
 
-  it('provides baseline fallback data for upcoming chapters 6-14 without failing', () => {
-    for (let c = 6; c <= 14; c++) {
+  it('loads rich chapter 6 (Heat) data with thermal expansion simulator', () => {
+    const ch6 = getPhysicsChapterData(6);
+    expect(ch6).not.toBeNull();
+    if (!ch6) return;
+
+    expect(ch6.chapterNo).toBe(6);
+    expect(ch6.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch6.step2.simulatorType).toBe('thermal');
+    expect(ch6.step3.coreFormulaLatex).toContain('\\Delta L');
+    expect(ch6.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch6.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('loads rich chapter 7 (Waves) data with wave echo simulator', () => {
+    const ch7 = getPhysicsChapterData(7);
+    expect(ch7).not.toBeNull();
+    if (!ch7) return;
+
+    expect(ch7.chapterNo).toBe(7);
+    expect(ch7.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch7.step2.simulatorType).toBe('wave');
+    expect(ch7.step3.coreFormulaLatex).toContain('v = f\\lambda');
+    expect(ch7.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch7.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('loads rich chapter 8 (Reflection) data with mirror ray simulator', () => {
+    const ch8 = getPhysicsChapterData(8);
+    expect(ch8).not.toBeNull();
+    if (!ch8) return;
+
+    expect(ch8.chapterNo).toBe(8);
+    expect(ch8.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch8.step2.simulatorType).toBe('reflection');
+    expect(ch8.step3.coreFormulaLatex).toContain('\\frac{1}{u}');
+    expect(ch8.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch8.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('loads rich chapter 9 (Refraction) data with refraction ray simulator', () => {
+    const ch9 = getPhysicsChapterData(9);
+    expect(ch9).not.toBeNull();
+    if (!ch9) return;
+
+    expect(ch9.chapterNo).toBe(9);
+    expect(ch9.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch9.step2.simulatorType).toBe('refraction');
+    expect(ch9.step3.coreFormulaLatex).toContain('\\sin i');
+    expect(ch9.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch9.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('provides baseline fallback data for upcoming chapters 10-14 without failing', () => {
+    for (let c = 10; c <= 14; c++) {
       const data = getPhysicsChapterData(c);
       expect(data).not.toBeNull();
       expect(data?.chapterNo).toBe(c);

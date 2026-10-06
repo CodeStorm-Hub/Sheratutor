@@ -5,6 +5,10 @@ import { CH02_MOTION_DATA } from './ch02-motion';
 import { CH03_FORCE_DATA } from './ch03-force';
 import { CH04_ENERGY_DATA } from './ch04-energy';
 import { CH05_PRESSURE_DATA } from './ch05-pressure';
+import { CH06_HEAT_DATA } from './ch06-heat';
+import { CH07_WAVES_DATA } from './ch07-waves';
+import { CH08_REFLECTION_DATA } from './ch08-reflection';
+import { CH09_REFRACTION_DATA } from './ch09-refraction';
 
 /**
  * Chapter data registry loader.
@@ -16,12 +20,16 @@ export function getPhysicsChapterData(chapterNo: number): PhysicsChapterFullData
   if (chapterNo === 3) return CH03_FORCE_DATA;
   if (chapterNo === 4) return CH04_ENERGY_DATA;
   if (chapterNo === 5) return CH05_PRESSURE_DATA;
+  if (chapterNo === 6) return CH06_HEAT_DATA;
+  if (chapterNo === 7) return CH07_WAVES_DATA;
+  if (chapterNo === 8) return CH08_REFLECTION_DATA;
+  if (chapterNo === 9) return CH09_REFRACTION_DATA;
 
-  // Find metadata from registry for chapters 6..14
+  // Find metadata from registry for chapters 10..14
   const meta = PHYSICS_CHAPTERS_REGISTRY.find((c) => c.chapterNo === chapterNo);
   if (!meta) return null;
 
-  // Baseline data generator for chapters 3 to 14
+  // Baseline data generator for chapters 10 to 14
   return generateBaselineChapterData(meta);
 }
 
