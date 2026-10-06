@@ -5,6 +5,16 @@ interface WaitlistVerificationTemplateOptions {
   targetExamYear?: number | null;
 }
 
+/** Escape user-supplied text before interpolating into the HTML email body. */
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 export function renderWaitlistVerificationEmail({
   fullName,
   verifyUrl,
@@ -12,6 +22,10 @@ export function renderWaitlistVerificationEmail({
   targetExamYear = 2026,
 }: WaitlistVerificationTemplateOptions) {
   const subject = 'Confirm your SheraTutor priority waitlist spot | সেরাটিউটর ওয়েটলিস্ট নিশ্চিত করুন';
+  const safeName = escapeHtml(fullName || '');
+  // Only allow http(s) verification URLs in href attributes (defense in depth —
+  // a javascript: URL here would execute in the recipient's mail client).
+  const safeVerifyUrl = /^https?:\/\//i.test(verifyUrl) ? verifyUrl : '#';
 
   // 'ADMISSION' aspirants have no board exam; keep the target line readable.
   const targetLabel =
@@ -136,7 +150,7 @@ export function renderWaitlistVerificationEmail({
       <br />
       <div class="badge">Early Access Verification · আর্লি অ্যাক্সেস যাচাইকরণ</div>
       
-      <h1>প্রিয় ${fullName || 'শিক্ষার্থী/অভিভাবক'},</h1>
+      <h1>প্রিয় ${safeName || 'শিক্ষার্থী/অভিভাবক'},</h1>
       
       <p>
         SheraTutor-এর অগ্রাধিকার ওয়েটলিস্টে যোগ দেওয়ার জন্য ধন্যবাদ! আমরা বাংলাদেশের প্রতিটি SSC ও HSC শিক্ষার্থীর হাতে বোর্ডের মানসম্মত নিখুঁত এআই মূল্যায়ন ও পার্সোনালাইজড টিউটরিং পৌঁছে দিতে কাজ করছি।
@@ -151,7 +165,7 @@ export function renderWaitlistVerificationEmail({
       </div>
 
       <div class="btn-wrap">
-        <a href="${verifyUrl}" class="cta-btn" target="_blank" rel="noopener noreferrer">
+        <a href="${safeVerifyUrl}" class="cta-btn" target="_blank" rel="noopener noreferrer">
           Confirm My Waitlist Spot &rarr;
         </a>
       </div>
@@ -162,7 +176,7 @@ export function renderWaitlistVerificationEmail({
 
       <div class="alt-link">
         বাটন কাজ না করলে এই লিঙ্কটি ব্রাউজারে পেস্ট করুন:<br />
-        <a href="${verifyUrl}">${verifyUrl}</a>
+        <a href="${safeVerifyUrl}">${escapeHtml(verifyUrl)}</a>
       </div>
     </div>
 
@@ -178,7 +192,7 @@ export function renderWaitlistVerificationEmail({
   const text = `
 SheraTutor — Confirm your priority waitlist spot
 
-Hello ${fullName || 'there'},
+Hello ${safeName || 'there'},
 
 Thank you for requesting early access to SheraTutor (${targetLabel}).
 
