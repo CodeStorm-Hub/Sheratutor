@@ -25,7 +25,7 @@ export async function POST(_request: Request, { params }: { params: Promise<{ id
     .select("id")
     .maybeSingle();
 
-  if (error) return apiError(500, error.message);
+  if (error) return apiError(500, "failed to flag page", { internal: error });
   if (!updated) return apiError(404, "not found");
 
   const service = getServiceRoleClient();

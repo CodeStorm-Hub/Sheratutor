@@ -33,7 +33,7 @@ export async function GET(_request: Request, { params }: { params: Promise<{ ses
     .select("id, role, content, created_at")
     .eq("session_id", sessionId)
     .order("created_at", { ascending: true });
-  if (error) return apiError(500, error.message);
+  if (error) return apiError(500, "failed to load messages", { internal: error });
 
   return NextResponse.json({ session, messages: messages ?? [] });
 }
