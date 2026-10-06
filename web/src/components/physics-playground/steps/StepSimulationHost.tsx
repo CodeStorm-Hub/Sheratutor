@@ -26,6 +26,8 @@ import { RefractionRaySimulator } from '../simulators/RefractionRaySimulator';
 import { CoulombElectricFieldSimulator } from '../simulators/CoulombElectricFieldSimulator';
 import { CircuitOhmBuilderSimulator } from '../simulators/CircuitOhmBuilderSimulator';
 import { ElectromagnetTransformerSimulator } from '../simulators/ElectromagnetTransformerSimulator';
+import { ElectronicsHalfLifeSimulator } from '../simulators/ElectronicsHalfLifeSimulator';
+import { BiomedicalDiagnosticSimulator } from '../simulators/BiomedicalDiagnosticSimulator';
 
 interface StepSimulationHostProps {
   data: Step2SandboxData;
@@ -62,6 +64,10 @@ export function StepSimulationHost({ data, chapterNo }: StepSimulationHostProps)
         return <CircuitOhmBuilderSimulator />;
       case 'magnetism':
         return <ElectromagnetTransformerSimulator />;
+      case 'electronics':
+        return <ElectronicsHalfLifeSimulator />;
+      case 'biomedical':
+        return <BiomedicalDiagnosticSimulator />;
       default:
         // Generic Parameter Sandbox fallback for chapters in progression
         return (

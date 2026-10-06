@@ -189,13 +189,42 @@ describe('Physics Playground Domain & Registry', () => {
     expect(ch12.step5.quizzes.length).toBeGreaterThanOrEqual(3);
   });
 
-  it('provides baseline fallback data for upcoming chapters 13-14 without failing', () => {
-    for (let c = 13; c <= 14; c++) {
+  it('loads rich chapter 13 (Modern Physics) data with electronics simulator', () => {
+    const ch13 = getPhysicsChapterData(13);
+    expect(ch13).not.toBeNull();
+    if (!ch13) return;
+
+    expect(ch13.chapterNo).toBe(13);
+    expect(ch13.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch13.step2.simulatorType).toBe('electronics');
+    expect(ch13.step3.coreFormulaLatex).toContain('T_{1/2}');
+    expect(ch13.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch13.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('loads rich chapter 14 (Biomedical Physics) data with medical diagnostics simulator', () => {
+    const ch14 = getPhysicsChapterData(14);
+    expect(ch14).not.toBeNull();
+    if (!ch14) return;
+
+    expect(ch14.chapterNo).toBe(14);
+    expect(ch14.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch14.step2.simulatorType).toBe('biomedical');
+    expect(ch14.step3.coreFormulaLatex).toContain('\\lambda_{\\min}');
+    expect(ch14.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch14.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('verifies all 14 chapters have rich curriculum data and valid simulator types', () => {
+    for (let c = 1; c <= 14; c++) {
       const data = getPhysicsChapterData(c);
       expect(data).not.toBeNull();
       expect(data?.chapterNo).toBe(c);
-      expect(data?.step1.nodes.length).toBeGreaterThan(0);
-      expect(data?.step5.quizzes.length).toBeGreaterThan(0);
+      expect(data?.step1.nodes.length).toBeGreaterThanOrEqual(4);
+      expect(data?.step2.simulatorType).toBeTruthy();
+      expect(data?.step3.coreFormulaLatex).toBeTruthy();
+      expect(data?.step4.traps.length).toBeGreaterThanOrEqual(3);
+      expect(data?.step5.quizzes.length).toBeGreaterThanOrEqual(3);
     }
   });
 

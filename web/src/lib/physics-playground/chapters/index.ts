@@ -12,6 +12,8 @@ import { CH09_REFRACTION_DATA } from './ch09-refraction';
 import { CH10_STATIC_ELEC_DATA } from './ch10-static-elec';
 import { CH11_CURRENT_ELEC_DATA } from './ch11-current-elec';
 import { CH12_MAGNETISM_DATA } from './ch12-magnetism';
+import { CH13_MODERN_PHYSICS_DATA } from './ch13-modern-physics';
+import { CH14_BIOMEDICAL_DATA } from './ch14-biomedical';
 
 /**
  * Chapter data registry loader.
@@ -30,13 +32,11 @@ export function getPhysicsChapterData(chapterNo: number): PhysicsChapterFullData
   if (chapterNo === 10) return CH10_STATIC_ELEC_DATA;
   if (chapterNo === 11) return CH11_CURRENT_ELEC_DATA;
   if (chapterNo === 12) return CH12_MAGNETISM_DATA;
+  if (chapterNo === 13) return CH13_MODERN_PHYSICS_DATA;
+  if (chapterNo === 14) return CH14_BIOMEDICAL_DATA;
 
-  // Find metadata from registry for chapters 13..14
-  const meta = PHYSICS_CHAPTERS_REGISTRY.find((c) => c.chapterNo === chapterNo);
-  if (!meta) return null;
-
-  // Baseline data generator for chapters 13 to 14
-  return generateBaselineChapterData(meta);
+  // Invalid chapter number
+  return null;
 }
 
 function generateBaselineChapterData(meta: PhysicsChapterMetadata): PhysicsChapterFullData {

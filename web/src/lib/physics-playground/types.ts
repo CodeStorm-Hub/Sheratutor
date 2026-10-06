@@ -62,7 +62,8 @@ export type SimulatorType =
   | 'static_elec'
   | 'current_elec'
   | 'magnetism'
-  | 'electronics';
+  | 'electronics'
+  | 'biomedical';
 
 export interface SimulatorControlParameter {
   key: string;
