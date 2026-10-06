@@ -81,3 +81,6 @@ src/plugins/impeccable-live.client.ts
 *mcp*.json
 .mcp.json
 
+
+# e2e test artifacts (screenshots, regenerable)
+/test-artifacts/

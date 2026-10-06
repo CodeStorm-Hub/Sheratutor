@@ -13,7 +13,10 @@
     "test:chat": "tsx --env-file=.env.local scripts/test-tutor-chat.ts",
     "test:grounding": "tsx --env-file=.env.local scripts/test-general-chat.ts",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "verify:playground-v2": "node scripts/verify-playground-v2-only.mjs",
+    "e2e:login": "node scripts/e2e-login-test.mjs",
+    "e2e:all-features": "node scripts/e2e-all-features-test.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

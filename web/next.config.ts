@@ -30,6 +30,36 @@ const nextConfig: NextConfig = {
     browserToTerminal: true,
   },
 
+  // Security headers. Note: script-src is intentionally left out of the CSP —
+  // a nonce-based CSP requires proxy.ts wiring (Next.js 16 renamed middleware
+  // to proxy); the baseline below still blocks framing, plugins and base-tag
+  // hijacking without breaking Next.js inline scripts.
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'X-Frame-Options', value: 'DENY' },
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          {
+            key: 'Permissions-Policy',
+            value: 'camera=(), microphone=(), geolocation=(), payment=()',
+          },
+          {
+            key: 'Strict-Transport-Security',
+            value: 'max-age=63072000; includeSubDomains; preload',
+          },
+          {
+            key: 'Content-Security-Policy',
+            value:
+              "frame-ancestors 'none'; object-src 'none'; base-uri 'self'; form-action 'self'",
+          },
+        ],
+      },
+    ];
+  },
+
   async redirects() {
     return [
       {
@@ -41,7 +71,8 @@ const nextConfig: NextConfig = {
   },
 
   experimental: {
-    optimizePackageImports: ['lucide-react', 'recharts', 'katex'],
+    // recharts was removed: zero imports in src (was dead weight in the bundle).
+    optimizePackageImports: ['lucide-react', 'katex'],
   },
 };
 
