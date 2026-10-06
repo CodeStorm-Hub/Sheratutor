@@ -23,6 +23,9 @@ import { ThermalExpansionSimulator } from '../simulators/ThermalExpansionSimulat
 import { WaveEchoSimulator } from '../simulators/WaveEchoSimulator';
 import { MirrorRaySimulator } from '../simulators/MirrorRaySimulator';
 import { RefractionRaySimulator } from '../simulators/RefractionRaySimulator';
+import { CoulombElectricFieldSimulator } from '../simulators/CoulombElectricFieldSimulator';
+import { CircuitOhmBuilderSimulator } from '../simulators/CircuitOhmBuilderSimulator';
+import { ElectromagnetTransformerSimulator } from '../simulators/ElectromagnetTransformerSimulator';
 
 interface StepSimulationHostProps {
   data: Step2SandboxData;
@@ -53,6 +56,12 @@ export function StepSimulationHost({ data, chapterNo }: StepSimulationHostProps)
         return <MirrorRaySimulator />;
       case 'refraction':
         return <RefractionRaySimulator />;
+      case 'static_elec':
+        return <CoulombElectricFieldSimulator />;
+      case 'current_elec':
+        return <CircuitOhmBuilderSimulator />;
+      case 'magnetism':
+        return <ElectromagnetTransformerSimulator />;
       default:
         // Generic Parameter Sandbox fallback for chapters in progression
         return (

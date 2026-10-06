@@ -150,8 +150,47 @@ describe('Physics Playground Domain & Registry', () => {
     expect(ch9.step5.quizzes.length).toBeGreaterThanOrEqual(3);
   });
 
-  it('provides baseline fallback data for upcoming chapters 10-14 without failing', () => {
-    for (let c = 10; c <= 14; c++) {
+  it('loads rich chapter 10 (Static Electricity) data with Coulomb simulator', () => {
+    const ch10 = getPhysicsChapterData(10);
+    expect(ch10).not.toBeNull();
+    if (!ch10) return;
+
+    expect(ch10.chapterNo).toBe(10);
+    expect(ch10.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch10.step2.simulatorType).toBe('static_elec');
+    expect(ch10.step3.coreFormulaLatex).toContain('q_1 q_2');
+    expect(ch10.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch10.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('loads rich chapter 11 (Current Electricity) data with DC circuit builder simulator', () => {
+    const ch11 = getPhysicsChapterData(11);
+    expect(ch11).not.toBeNull();
+    if (!ch11) return;
+
+    expect(ch11.chapterNo).toBe(11);
+    expect(ch11.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch11.step2.simulatorType).toBe('current_elec');
+    expect(ch11.step3.coreFormulaLatex).toContain('R_{\\text{eq}}');
+    expect(ch11.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch11.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('loads rich chapter 12 (Magnetic Effect) data with transformer simulator', () => {
+    const ch12 = getPhysicsChapterData(12);
+    expect(ch12).not.toBeNull();
+    if (!ch12) return;
+
+    expect(ch12.chapterNo).toBe(12);
+    expect(ch12.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch12.step2.simulatorType).toBe('magnetism');
+    expect(ch12.step3.coreFormulaLatex).toContain('V_p');
+    expect(ch12.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch12.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('provides baseline fallback data for upcoming chapters 13-14 without failing', () => {
+    for (let c = 13; c <= 14; c++) {
       const data = getPhysicsChapterData(c);
       expect(data).not.toBeNull();
       expect(data?.chapterNo).toBe(c);
