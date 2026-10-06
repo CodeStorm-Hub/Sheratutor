@@ -119,6 +119,10 @@ export const retrieveGroundingFlow = ai.defineFlow(
     outputSchema: z.object({
       chunks: z.array(GroundingChunkSchema),
       groundingConfidence: z.number().min(0).max(1),
+      // Explicit retrieval health flag. NEVER treat chunks as grounded when this
+      // is false — e.g. the embedder failed and no legitimate fallback produced
+      // content. Callers must check this, not just chunks.length.
+      grounded: z.boolean(),
     }),
   },
   async ({ queryText, chapterId, subjectCode, languageTag = "bn", matchCount = 4 }) => {
@@ -132,8 +136,12 @@ export const retrieveGroundingFlow = ai.defineFlow(
     try {
       embedding = await embedWithGeminiFallback(enrichedQuery, 1024);
     } catch (embedErr) {
-      console.warn("retrieveGrounding: embedding failed or quota exhausted, falling back to sparse FTS / direct search:", embedErr);
-      embedding = new Array(1024).fill(0);
+      // Fail CLOSED: never query pgvector with a zero vector — nearest-to-zero
+      // chunks would be treated as legitimate grounding downstream. Skip the
+      // vector RPC entirely and rely on the direct-chapter fallback below; if
+      // that also yields nothing, return grounded:false explicitly.
+      console.error("retrieveGrounding: embedding failed, skipping vector search:", embedErr);
+      embedding = null;
     }
 
     const supabase = getServiceRoleClient();
@@ -160,15 +168,25 @@ export const retrieveGroundingFlow = ai.defineFlow(
             query_text: enrichedQuery,
           });
 
-    let { data, error } = await runRpc(effectiveLanguageTag);
-    // Fallback: If 0 chunks retrieved and language was en, retry with bn
-    if ((!data || data.length === 0) && effectiveLanguageTag !== "bn") {
-      const fallbackRes = await runRpc("bn");
-      if (fallbackRes.data && fallbackRes.data.length > 0) {
-        data = fallbackRes.data;
-        error = fallbackRes.error;
+    // 2. Execute Hybrid Search via RPC (Chapter-specific or Global).
+    // Skipped entirely when the embedder failed (fail closed — see above).
+    let rpcData: Array<Record<string, unknown>> | null = null;
+    let rpcError: { message?: string } | null = null;
+    if (embedding) {
+      const rpcRes = await runRpc(effectiveLanguageTag);
+      rpcData = (rpcRes.data ?? null) as Array<Record<string, unknown>> | null;
+      rpcError = rpcRes.error;
+      // Fallback: If 0 chunks retrieved and language was en, retry with bn
+      if ((!rpcData || rpcData.length === 0) && effectiveLanguageTag !== "bn") {
+        const fallbackRes = await runRpc("bn");
+        if (fallbackRes.data && fallbackRes.data.length > 0) {
+          rpcData = fallbackRes.data as Array<Record<string, unknown>>;
+          rpcError = fallbackRes.error;
+        }
       }
     }
+    let data = rpcData;
+    let error = rpcError;
 
     // Direct Chapter Fallback: If still 0 chunks and chapterId is known, query directly
     if ((!data || data.length === 0) && isUuid(chapterId)) {
@@ -288,6 +306,8 @@ export const retrieveGroundingFlow = ai.defineFlow(
 
     const groundingConfidence = chunks.length > 0 ? Math.max(...chunks.map((c) => c.similarity)) : 0;
 
-    return { chunks, groundingConfidence };
+    // grounded:false only when no legitimate retrieval path produced content —
+    // callers must not treat the response as textbook-grounded in that case.
+    return { chunks, groundingConfidence, grounded: chunks.length > 0 };
   }
 );

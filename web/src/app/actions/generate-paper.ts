@@ -110,7 +110,10 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
     })
     .select("id")
     .single();
-  if (paperErr || !paper) return { status: "error", message: paperErr?.message ?? "Failed to save paper." };
+  if (paperErr || !paper) {
+    console.error("Failed to insert question_papers row:", paperErr);
+    return { status: "error", message: "Failed to save paper. Please try again." };
+  }
 
   // Bulk-insert rubrics then questions (2 round-trips, not 2·N) so the whole
   // action stays inside Vercel's 60s function limit for large MCQ papers.
@@ -134,11 +137,40 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
     return { chapter_id: q.chapter_id, title: `${title} — Q${i + 1}`, criteria_json, is_active: true, created_by: user.id };
   });
 
+  // Auto-supersede (#16): retire this author's previously-active rubrics for the
+  // same chapters AFTER the fresh ones are safely inserted, so `is_active`
+  // rubrics don't accumulate unboundedly (one paper per chapter keeps exactly
+  // one active set). Superseding after a successful insert avoids leaving the
+  // author with zero active rubrics if the insert fails.
+  // Existing papers are unaffected — questions reference rubrics by id.
+  const supersedeChapterIds = [
+    ...new Set(rubricRows.map((r) => r.chapter_id).filter(Boolean)),
+  ];
+
   const { data: rubrics, error: rubricErr } = await supabase.from("rubrics").insert(rubricRows).select("id");
   if (rubricErr || !rubrics || rubrics.length !== generated.questions.length) {
     console.error("Failed to insert rubrics:", rubricErr);
+    // Clean up everything this action created so a platform timeout/kill can't
+    // leave an orphan paper or orphan rubric rows behind.
+    if (rubrics && rubrics.length > 0) {
+      await supabase.from("rubrics").delete().in("id", rubrics.map((r) => r.id));
+    }
     await supabase.from("question_papers").delete().eq("id", paper.id);
-    return { status: "error", message: rubricErr?.message ?? "Failed to save rubrics." };
+    return { status: "error", message: "Failed to save rubrics. Please try again." };
+  }
+
+  if (supersedeChapterIds.length > 0) {
+    const { error: supersedeErr } = await supabase
+      .from("rubrics")
+      .update({ is_active: false })
+      .eq("created_by", user.id)
+      .eq("is_active", true)
+      .in("chapter_id", supersedeChapterIds)
+      // Don't deactivate the rubrics we just inserted.
+      .not("id", "in", `(${rubrics.map((r) => r.id).join(",")})`);
+    if (supersedeErr) {
+      console.warn("Rubric auto-supersede failed (non-fatal):", supersedeErr);
+    }
   }
 
   const questionRows = generated.questions.map((q, i) => ({
@@ -160,8 +192,11 @@ export async function generatePaper(_prev: GeneratePaperState, formData: FormDat
   const { error: questionErr } = await supabase.from("questions").insert(questionRows);
   if (questionErr) {
     console.error("Failed to insert questions:", questionErr);
+    // Roll back the paper AND its rubrics — rubrics aren't keyed to the paper,
+    // so deleting only the paper would orphan them.
+    await supabase.from("rubrics").delete().in("id", rubrics.map((r) => r.id));
     await supabase.from("question_papers").delete().eq("id", paper.id);
-    return { status: "error", message: questionErr.message };
+    return { status: "error", message: "Failed to save questions. Please try again." };
   }
 
   // Redirect to Question Paper Viewer

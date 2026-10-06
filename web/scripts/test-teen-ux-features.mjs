@@ -4,7 +4,8 @@ import path from 'path';
 
 const BASE_URL = 'http://localhost:3000';
 const CHROME_PATH = '/usr/bin/chromium';
-const ARTIFACT_DIR = '/home/kratzer/.gemini/antigravity/brain/f1d2842d-b69e-4506-aff3-154dc57a7b62';
+// Artifacts dir: override with E2E_ARTIFACTS_DIR; defaults to web/test-artifacts/e2e
+const ARTIFACT_DIR = process.env.E2E_ARTIFACTS_DIR || 'test-artifacts/e2e';
 
 async function main() {
   console.log('🧪 Testing Teen UX Features (Search, Division Filters, Compact Grid)...');
