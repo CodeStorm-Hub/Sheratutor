@@ -64,7 +64,7 @@ export const MODELS = {
   vision: process.env.GENKIT_VISION_MODEL ?? "googleai/gemini-3.5-flash",
   reasoning: process.env.GENKIT_REASONING_MODEL ?? "googleai/gemini-3.5-flash",
   fast: process.env.GENKIT_FAST_MODEL ?? "googleai/gemini-3.5-flash-lite",
-  paper: process.env.GENKIT_PAPER_MODEL ?? "googleai/gemini-3.5-flash-lite",
+  paper: process.env.GENKIT_PAPER_MODEL ?? "googleai/gemini-3.5-flash",
   chat: process.env.GENKIT_CHAT_MODEL ?? "googleai/gemini-3.5-flash-lite",
 } as const;
 
