@@ -297,6 +297,7 @@ export function GuidebookHeaderNav({
                 : 'bg-primary/10 border-primary/30 text-primary hover:bg-primary/20'
             }`}
             title={currentSidebarLabel}
+            aria-label={currentSidebarLabel}
           >
             <Layers className="h-3.5 w-3.5 text-primary" />
             <span className="hidden sm:inline">
@@ -406,6 +407,7 @@ export function GuidebookHeaderNav({
             onClick={onOpenAi}
             className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-gradient-to-r from-primary/15 to-primary/5 hover:from-primary/25 hover:to-primary/15 text-primary border border-primary/25 text-xs font-bold transition-all shadow-2xs hover:shadow-xs active:scale-95"
             title={isBn ? 'SheraTutor AI শিক্ষক সহায়তা' : 'SheraTutor AI Tutor Support'}
+            aria-label={isBn ? 'SheraTutor AI শিক্ষক সহায়তা' : 'SheraTutor AI Tutor Support'}
           >
             <Sparkles className="h-3.5 w-3.5 text-primary" />
             <span className="hidden sm:inline">{aiLabel}</span>
