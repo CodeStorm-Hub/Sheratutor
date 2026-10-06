@@ -126,8 +126,6 @@ export const Header: React.FC<HeaderProps> = ({
 
   const routeTitles: Record<string, string> = {
     '/dashboard': t('nav.home'),
-    '/dashboard/playground/v2': language === 'bn' ? 'খেলার মাঠ (Playground V2)' : 'Playground V2',
-    '/dashboard/playground': language === 'bn' ? 'খেলার মাঠ (Playground V2)' : 'Playground V2',
     '/dashboard/tutor': t('nav.tutor'),
     '/dashboard/practice': t('nav.exams'),
     '/dashboard/practice/generate': language === 'bn' ? 'প্রশ্নপত্র জেনারেটর' : 'Question Generator',
@@ -142,7 +140,6 @@ export const Header: React.FC<HeaderProps> = ({
   };
 
   const quickLinks = [
-    { label: t('nav.playground'), href: '/dashboard/playground/v2', icon: Sparkles, desc: language === 'bn' ? 'ভার্চুয়াল ল্যাব ও সিমুলেশন' : 'Virtual labs & interactive simulations' },
     { label: t('nav.tutor'), href: '/dashboard/tutor', icon: Sparkles, desc: language === 'bn' ? 'প্রশ্ন জিজ্ঞাসা করো ও ধারণা বোঝো' : 'Ask questions & learn concepts' },
     { label: t('nav.grading'), href: '/dashboard/upload', icon: User, desc: language === 'bn' ? 'হাতে লেখা খাতা জমা দাও' : 'Submit written answer scripts' },
     { label: t('nav.exams'), href: '/dashboard/practice', icon: LineChart, desc: language === 'bn' ? 'বোর্ড স্ট্যান্ডার্ড প্রশ্ন অনুশীলন' : 'Practice board question papers' },
