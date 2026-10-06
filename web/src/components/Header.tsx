@@ -5,6 +5,7 @@ import type { Route } from 'next';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import {
+  Atom,
   Bell,
   Calendar,
   ChevronRight,
@@ -127,6 +128,7 @@ export const Header: React.FC<HeaderProps> = ({
   const routeTitles: Record<string, string> = {
     '/dashboard': t('nav.home'),
     '/dashboard/tutor': t('nav.tutor'),
+    '/dashboard/playground/physics': t('nav.physics_lab'),
     '/dashboard/practice': t('nav.exams'),
     '/dashboard/practice/generate': language === 'bn' ? 'প্রশ্নপত্র জেনারেটর' : 'Question Generator',
     '/dashboard/board-simulator': t('nav.simulator'),
@@ -141,6 +143,7 @@ export const Header: React.FC<HeaderProps> = ({
 
   const quickLinks = [
     { label: t('nav.tutor'), href: '/dashboard/tutor', icon: Sparkles, desc: language === 'bn' ? 'প্রশ্ন জিজ্ঞাসা করো ও ধারণা বোঝো' : 'Ask questions & learn concepts' },
+    { label: t('nav.physics_lab'), href: '/dashboard/playground/physics', icon: Atom, desc: language === 'bn' ? 'পদার্থবিজ্ঞান ল্যাব ও সিমুলেশন' : 'Interactive physics lab & simulations' },
     { label: t('nav.grading'), href: '/dashboard/upload', icon: User, desc: language === 'bn' ? 'হাতে লেখা খাতা জমা দাও' : 'Submit written answer scripts' },
     { label: t('nav.exams'), href: '/dashboard/practice', icon: LineChart, desc: language === 'bn' ? 'বোর্ড স্ট্যান্ডার্ড প্রশ্ন অনুশীলন' : 'Practice board question papers' },
     { label: t('nav.simulator'), href: '/dashboard/board-simulator', icon: Trophy, desc: language === 'bn' ? 'টাইমারযুক্ত পূর্ণাঙ্গ বোর্ড পরীক্ষা' : 'Full timed board exam simulation' },

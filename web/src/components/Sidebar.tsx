@@ -5,6 +5,7 @@ import type { Route } from 'next';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import {
+  Atom,
   BookOpen,
   Calendar,
   ChevronRight,
@@ -51,6 +52,7 @@ export function SidebarContent({
     { label: t('nav.home'), href: '/dashboard', icon: Home },
     { group: true, label: t('nav.learning') },
     { label: t('nav.tutor'), href: '/dashboard/tutor', icon: Sparkles },
+    { label: t('nav.physics_lab'), href: '/dashboard/playground/physics', icon: Atom, isNew: true },
     { label: t('nav.exams'), href: '/dashboard/practice', icon: BookOpen },
     { label: t('nav.simulator'), href: '/dashboard/board-simulator', icon: GraduationCap },
     { group: true, label: t('nav.assessment') },
