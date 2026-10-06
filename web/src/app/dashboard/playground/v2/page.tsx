@@ -11,7 +11,7 @@ export default function PlaygroundV2HubPage() {
   const isBn = language === 'bn';
 
   return (
-    <div className="min-h-screen bg-[#F8F9FC] dark:bg-[#0D0F16] text-foreground p-4 sm:p-6 lg:p-10 transition-colors">
+    <div className="min-h-screen bg-background text-foreground p-4 sm:p-6 lg:p-10 transition-colors">
       <div className="mx-auto max-w-6xl space-y-8">
         {/* Top Breadcrumb */}
         <div className="flex items-center justify-between border-b border-border/40 pb-4">
@@ -22,7 +22,7 @@ export default function PlaygroundV2HubPage() {
             </Link>
             <ChevronRight className="h-3.5 w-3.5" />
             <span className="text-foreground font-bold flex items-center gap-1.5">
-              <Sparkles className="h-3.5 w-3.5 text-[#FF6B57]" />
+              <Sparkles className="h-3.5 w-3.5 text-cta" />
               <span>{isBn ? 'খেলার মাঠ (ইন্টারেক্টিভ ল্যাব ও গাইডবুক)' : 'Playground (Interactive Labs & Guidebooks)'}</span>
             </span>
           </div>

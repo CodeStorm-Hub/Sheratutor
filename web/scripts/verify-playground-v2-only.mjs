@@ -1,7 +1,7 @@
 import puppeteer from 'puppeteer-core';
 
-const BASE_URL = 'http://localhost:3000';
-const CHROME_PATH = '/usr/bin/chromium';
+const BASE_URL = process.env.E2E_BASE_URL || 'http://localhost:3000';
+const CHROME_PATH = process.env.CHROME_PATH || '/usr/bin/chromium';
 
 async function main() {
   console.log('🚀 Verifying Playground V2-Only Migration...');
@@ -15,6 +15,13 @@ async function main() {
   await page.setViewport({ width: 1440, height: 900 });
 
   const errors = [];
+  // Check failures (redirects, V1 remnants). Unlike console errors, these are
+  // collected separately so the script can exit non-zero and fail CI.
+  const failures = [];
+  const fail = (msg) => {
+    console.error(`    ❌ ${msg}`);
+    failures.push(msg);
+  };
   page.on('console', (msg) => {
     if (msg.type() === 'error') {
       const text = msg.text();
@@ -46,7 +53,7 @@ async function main() {
   if (currentUrl.includes('/dashboard/playground/v2')) {
     console.log('    ✅ /dashboard/playground redirected to /dashboard/playground/v2 successfully!');
   } else {
-    console.error('    ❌ Redirect failed, remained on: ' + currentUrl);
+    fail('Redirect failed, remained on: ' + currentUrl);
   }
 
   // 3. Visit legacy /dashboard/playground/math/1 (should redirect to /dashboard/playground/v2/math/1)
@@ -57,7 +64,7 @@ async function main() {
   if (mathUrl.includes('/dashboard/playground/v2/math/1')) {
     console.log('    ✅ /dashboard/playground/math/1 redirected to /dashboard/playground/v2/math/1 successfully!');
   } else {
-    console.error('    ❌ Legacy redirect failed, remained on: ' + mathUrl);
+    fail('Legacy redirect failed, remained on: ' + mathUrl);
   }
 
   // 4. Check that no V1 switcher button exists on Playground V2 Hub
@@ -71,7 +78,7 @@ async function main() {
   if (!hasV1Button) {
     console.log('    ✅ Confirmed: No Version 1 switcher banner found on Playground V2 Hub!');
   } else {
-    console.warn('    ⚠️ Version 1 text was found on the page.');
+    fail('Version 1 switcher text was found on the Playground V2 Hub.');
   }
 
   // 5. Check Sidebar link
@@ -87,10 +94,14 @@ async function main() {
 
   await browser.close();
 
-  if (errors.length === 0) {
+  const totalProblems = errors.length + failures.length;
+  if (totalProblems === 0) {
     console.log('\n🎉 ALL CHECKS PASSED: Playground V1 completely removed, V2 is the sole active platform!');
   } else {
-    console.log(`\n⚠️ Finished with ${errors.length} console errors.`);
+    console.log(`\n❌ VERIFY FAILED: ${failures.length} check failure(s), ${errors.length} console error(s).`);
+    for (const f of failures) console.log(`   - ${f}`);
+    // Exit non-zero so CI / npm scripts actually fail on a broken migration.
+    process.exit(1);
   }
 }
 

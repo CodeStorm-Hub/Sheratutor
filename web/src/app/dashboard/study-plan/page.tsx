@@ -40,8 +40,35 @@ async function StudyPlanContent() {
   const schedule = plan?.daily_schedule_json as { cycleDays: number; days: ScheduleDay[] } | undefined;
   const completedTasks = (plan?.completed_tasks_json as Record<string, boolean>) || {};
 
-  // For this exercise, assume today is day 1 of the cycle. In a real app, calculate offset from start_date.
-  const currentDay = 1;
+  // Derive the current cycle day from the plan's start_date instead of
+  // hardcoding day 1: day N = N-1 full days since the plan started, clamped to
+  // the cycle length.
+  const cycleDays = schedule?.cycleDays && schedule.cycleDays > 0 ? schedule.cycleDays : 7;
+  let currentDay = 1;
+  if (plan?.start_date) {
+    const start = new Date(`${plan.start_date}T00:00:00`);
+    if (!Number.isNaN(start.getTime())) {
+      // Intentional: this async Server Component runs per-request, so reading
+      // the current date here is correct (not a render-purity violation).
+      // eslint-disable-next-line react-hooks/purity
+      const diffDays = Math.floor((Date.now() - start.getTime()) / 86_400_000);
+      currentDay = Math.min(cycleDays, Math.max(1, diffDays + 1));
+    }
+  }
+
+  // Real streak: consecutive cycle days (through today, or yesterday if today
+  // has no completions yet) with at least one completed plan task. Task keys
+  // are `${day}-${taskId}` (see togglePlanTask).
+  const dayHasCompletion = (day: number) =>
+    Object.keys(completedTasks).some((k) => k.startsWith(`${day}-`));
+  let streakCount = 0;
+  {
+    let day = dayHasCompletion(currentDay) ? currentDay : currentDay - 1;
+    while (day >= 1 && dayHasCompletion(day)) {
+      streakCount += 1;
+      day -= 1;
+    }
+  }
 
   let dynamicTasks = [
     {
@@ -110,6 +137,7 @@ async function StudyPlanContent() {
     <PlannerPageClient
       planId={plan?.id}
       currentDay={currentDay}
+      streakCount={streakCount}
       initialTasks={dynamicTasks}
       recommendationTitle={recTitle}
       recommendationBody={recBody}

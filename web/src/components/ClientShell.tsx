@@ -108,8 +108,20 @@ export const ClientShell: React.FC<{
         </Suspense>
         <Suspense
           fallback={
-            <main className="mx-auto w-full max-w-[1400px] px-4 pt-6 pb-16 sm:px-6 lg:px-10 transition-all duration-300">
-              {children}
+            <main
+              aria-busy="true"
+              aria-label="Loading content"
+              className="mx-auto w-full max-w-[1400px] px-4 pt-6 pb-16 sm:px-6 lg:px-10"
+            >
+              <div className="animate-pulse space-y-4">
+                <div className="h-8 w-1/3 rounded-lg bg-muted" />
+                <div className="h-4 w-2/3 rounded bg-muted" />
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                  <div className="h-40 rounded-xl bg-muted" />
+                  <div className="h-40 rounded-xl bg-muted" />
+                  <div className="h-40 rounded-xl bg-muted" />
+                </div>
+              </div>
             </main>
           }
         >

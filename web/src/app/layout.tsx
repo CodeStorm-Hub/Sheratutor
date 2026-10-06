@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { cookies } from 'next/headers';
 import React from 'react';
 import {
   Outfit,
@@ -105,14 +106,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // Read the language cookie server-side so <html lang> (and the :lang(bn)
+  // typographic engine) is correct on first paint — previously this was
+  // hardcoded "en" and only fixed post-hydration, flashing Latin font stacks
+  // for Bengali users. The client LanguageProvider keeps the cookie in sync.
+  const cookieStore = await cookies();
+  const langCookie = cookieStore.get("sheratutor_lang")?.value;
+  const htmlLang = langCookie === "bn" ? "bn" : "en";
+
   return (
     <html
-      lang="en"
+      lang={htmlLang}
       suppressHydrationWarning
       className={`${outfit.variable} ${balooDa2.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} ${hindSiliguri.variable}`}
     >

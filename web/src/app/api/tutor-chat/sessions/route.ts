@@ -32,7 +32,7 @@ export async function GET(request: Request) {
       .eq("mode", "general")
       .order("updated_at", { ascending: false })
       .limit(50);
-    if (error) return apiError(500, error.message);
+    if (error) return apiError(500, "failed to load sessions", { internal: error });
     return NextResponse.json({ sessions: sessions ?? [] });
   }
 
@@ -57,7 +57,7 @@ export async function GET(request: Request) {
     .eq("rubric_step_index", stepIndex)
     .eq("mode", "rubric")
     .maybeSingle();
-  if (error) return apiError(500, error.message);
+  if (error) return apiError(500, "failed to load session", { internal: error });
 
   return NextResponse.json({ session: session ?? null });
 }

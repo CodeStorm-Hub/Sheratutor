@@ -9,10 +9,38 @@ function normalizeSubjectKey(sub?: string | null): string {
   return 'math';
 }
 
+/** Parse a positive int within [1, max]; falls back when missing/NaN. */
+function toBoundedInt(value: unknown, fallback: number, max: number): number {
+  const n = typeof value === 'number' ? value : parseInt(String(value ?? ''), 10);
+  if (!Number.isFinite(n)) return fallback;
+  return Math.min(max, Math.max(1, Math.floor(n)));
+}
+
+/**
+ * Validate the client-supplied lesson list. Clients must not be able to inflate
+ * their own progress with arbitrary values: entries must be positive lesson
+ * numbers, deduped, and bounded.
+ */
+function sanitizeCompletedLessons(value: unknown): number[] {
+  if (!Array.isArray(value)) return [1];
+  const cleaned = value
+    .map((v) => (typeof v === 'number' ? v : parseInt(String(v ?? ''), 10)))
+    .filter((n) => Number.isFinite(n) && n >= 1 && n <= 200)
+    .map((n) => Math.floor(n));
+  const deduped = [...new Set(cleaned)].slice(0, 50);
+  return deduped.length > 0 ? deduped : [1];
+}
+
+/** Clamp a percent to [0, 100]. */
+function clampPercent(n: number): number {
+  if (!Number.isFinite(n)) return 0;
+  return Math.min(100, Math.max(0, Math.round(n)));
+}
+
 export async function GET(req: Request) {
   try {
     const { searchParams } = new URL(req.url);
-    const chapter = parseInt(searchParams.get('chapter') || '1', 10);
+    const chapter = toBoundedInt(searchParams.get('chapter'), 1, 50);
     const subject = normalizeSubjectKey(searchParams.get('subject'));
 
     const supabase = await createClient();
@@ -92,13 +120,13 @@ export async function GET(req: Request) {
 export async function POST(req: Request) {
   try {
     const body = await req.json();
-    const chapter = parseInt(body?.chapter || '1', 10);
+    const chapter = toBoundedInt(body?.chapter, 1, 50);
     const subject = normalizeSubjectKey(body?.subject);
-    const completedLessons = Array.isArray(body?.completedLessons) && body.completedLessons.length > 0
-      ? body.completedLessons
-      : [1];
-    const currentLesson = parseInt(body?.currentLesson || '1', 10);
-    const percent = Math.min(100, Math.round((completedLessons.length / 5) * 100));
+    // Client-supplied progress is untrusted: sanitize lesson numbers and derive
+    // percent server-side instead of accepting a client-computed value.
+    const completedLessons = sanitizeCompletedLessons(body?.completedLessons);
+    const currentLesson = toBoundedInt(body?.currentLesson, 1, 200);
+    const percent = clampPercent(Math.round((completedLessons.length / 5) * 100));
 
     const supabase = await createClient();
     const {

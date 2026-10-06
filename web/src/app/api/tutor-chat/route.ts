@@ -7,6 +7,7 @@ import {
   SAFE_ESCALATION_MESSAGE_BN,
   sanitizeTutorReply,
   tutorChatFlow,
+  isLowEffortTutorReply,
 } from "@/ai/flows/tutor-chat";
 import { retrieveGroundingFlow } from "@/ai/flows/retrieve-grounding";
 
@@ -373,6 +374,9 @@ export async function POST(req: Request) {
           languageTag: languagePreference,
           matchCount: 3,
         }).then((g) => {
+          // Respect the flow's explicit health flag: never treat an ungrounded
+          // response as textbook context, even if chunks were somehow present.
+          if (!g.grounded) return { context: "", diagrams: [] };
           const diagrams = g.chunks
             .flatMap((c) => c.diagram_image_urls ?? [])
             .filter((u): u is string => Boolean(u));
@@ -400,23 +404,77 @@ export async function POST(req: Request) {
   let reply = "";
   let toolRequest: { name?: string; input?: unknown } | undefined;
 
+  // Server-side timeout: a stalled model key must not consume the whole 60s
+  // maxDuration. Vercel kills the function on timeout and the graceful fallback
+  // below only fires on *thrown* errors — so race the flow against 45s and let
+  // the catch produce the localized fallback reply instead of a dead request.
+  const GENERATION_TIMEOUT_MS = 45_000;
+  const withTimeout = <T>(p: Promise<T>, ms: number, label: string): Promise<T> =>
+    Promise.race([
+      p,
+      new Promise<never>((_, reject) =>
+        setTimeout(() => reject(new Error(`${label} timed out after ${ms}ms`)), ms)
+      ),
+    ]);
+
   try {
-    const out = await tutorChatFlow({
-      mode,
-      scaffoldingStyle,
-      hintRung: isNaN(hintRung) ? 3 : hintRung,
-      questionText: questionText as string | undefined,
-      studentAnswerChunk: studentAnswerChunk as string | undefined,
-      rubricFailureReason: rubricFailureReason as string | undefined,
-      subjectName: subjectName as string | undefined,
-      chapterName: chapterName as string | undefined,
-      groundedContext: groundedContext || undefined,
-      diagramUrls: diagramUrls.length > 0 ? diagramUrls : undefined,
-      history,
-      studentMessage: rawText,
-      languagePreference,
-    });
+    const out = await withTimeout(
+      tutorChatFlow({
+        mode,
+        scaffoldingStyle,
+        hintRung: isNaN(hintRung) ? 3 : hintRung,
+        questionText: questionText as string | undefined,
+        studentAnswerChunk: studentAnswerChunk as string | undefined,
+        rubricFailureReason: rubricFailureReason as string | undefined,
+        subjectName: subjectName as string | undefined,
+        chapterName: chapterName as string | undefined,
+        groundedContext: groundedContext || undefined,
+        diagramUrls: diagramUrls.length > 0 ? diagramUrls : undefined,
+        history,
+        studentMessage: rawText,
+        languagePreference,
+      }),
+      GENERATION_TIMEOUT_MS,
+      "tutorChatFlow"
+    );
     reply = sanitizeTutorReply(out.reply);
+
+    // Quality guard: a low-effort stub ("the answer is 5", <120 chars) is a
+    // known failure mode of the tutor. Retry once with an explicit nudge toward
+    // the Socratic format instead of serving the stub.
+    if (isLowEffortTutorReply(reply)) {
+      console.warn("tutor-chat: low-effort reply detected, retrying once");
+      try {
+        const retry = await withTimeout(
+          tutorChatFlow({
+            mode,
+            scaffoldingStyle,
+            hintRung: isNaN(hintRung) ? 3 : hintRung,
+            questionText: questionText as string | undefined,
+            studentAnswerChunk: studentAnswerChunk as string | undefined,
+            rubricFailureReason: rubricFailureReason as string | undefined,
+            subjectName: subjectName as string | undefined,
+            chapterName: chapterName as string | undefined,
+            groundedContext: groundedContext || undefined,
+            diagramUrls: diagramUrls.length > 0 ? diagramUrls : undefined,
+            history,
+            studentMessage:
+              `${rawText}\n\n[SYSTEM NUDGE: your previous reply was too short. ` +
+              `Give 2-3 short paragraphs that guide without revealing the final answer, ` +
+              `and end with one guiding question.]`,
+            languagePreference,
+          }),
+          GENERATION_TIMEOUT_MS,
+          "tutorChatFlow-retry"
+        );
+        const retryReply = sanitizeTutorReply(retry.reply);
+        if (!isLowEffortTutorReply(retryReply)) {
+          reply = retryReply;
+        }
+      } catch (retryErr) {
+        console.error("tutor-chat: low-effort retry failed:", retryErr);
+      }
+    }
   } catch (genErr) {
     console.error("tutor-chat: tutorChatFlow failed:", genErr);
   }
@@ -483,6 +541,8 @@ export async function POST(req: Request) {
 
 /**
  * Snapshot lookup / resumption endpoint.
+ * Auth-gated: snapshots are scoped to the caller's own student profile so one
+ * student can never read another student's chat history (IDOR fix).
  */
 export async function GET(req: Request) {
   const url = new URL(req.url);
@@ -493,14 +553,45 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "sessionId or snapshotId required" }, { status: 400 });
   }
 
+  const supabase = await createClient();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    return NextResponse.json({ error: "unauthorized" }, { status: 401 });
+  }
+
+  const { data: profile } = await supabase
+    .from("student_profiles")
+    .select("id")
+    .eq("user_id", user.id)
+    .maybeSingle();
+
+  if (!profile) {
+    return NextResponse.json({ error: "complete onboarding first" }, { status: 400 });
+  }
+
   try {
     const snapshot = await tutorAgent.getSnapshotData({
       sessionId: sessionId ?? undefined,
       snapshotId: snapshotId ?? undefined,
     });
+
+    if (!snapshot) {
+      return NextResponse.json({ error: "snapshot not found" }, { status: 404 });
+    }
+
+    // Ownership check: the snapshot must belong to the caller's student profile.
+    // (404 rather than 403 to avoid leaking the existence of other students' sessions.)
+    const ownerId = (snapshot.state as { custom?: { studentId?: string } } | undefined)?.custom?.studentId;
+    if (ownerId !== profile.id) {
+      return NextResponse.json({ error: "snapshot not found" }, { status: 404 });
+    }
+
     return NextResponse.json({ result: snapshot });
   } catch (err: unknown) {
-    const message = err instanceof Error ? err.message : "Failed to retrieve snapshot";
-    return NextResponse.json({ error: message }, { status: 500 });
+    console.error("Tutor chat snapshot lookup failed:", err);
+    return NextResponse.json({ error: "Failed to retrieve snapshot" }, { status: 500 });
   }
 }

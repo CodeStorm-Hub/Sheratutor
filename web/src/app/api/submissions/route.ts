@@ -112,7 +112,7 @@ export async function POST(request: Request) {
     .single();
 
   if (subErr || !submission) {
-    return apiError(500, subErr?.message ?? "failed to create submission");
+    return apiError(500, "failed to create submission", { internal: subErr });
   }
 
   // Persist private-bucket paths; OCR resolves signed URLs at grading time.
@@ -125,7 +125,7 @@ export async function POST(request: Request) {
 
   const { error: pagesErr } = await supabase.from("submission_pages").insert(pageRows);
   if (pagesErr) {
-    return apiError(500, pagesErr.message);
+    return apiError(500, "failed to save submission pages", { internal: pagesErr });
   }
 
   const { error: enqueueErr } = await getServiceRoleClient().rpc("enqueue_grading_job", {

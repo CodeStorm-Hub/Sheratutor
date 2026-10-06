@@ -19,6 +19,28 @@ import {
  * message for an already-COMPLETED submission (e.g. the worker crashed after
  * finishing but before archiving the queue message) is a safe no-op.
  */
+
+/**
+ * Derive a question's medium of instruction from its stored text. Generated
+ * papers populate both bn/en fields; English-medium papers leave the bn field
+ * empty. Bengali wins ties (matches historical behavior for the majority).
+ */
+function questionLanguage(question: {
+  question_text_bn?: string | null;
+  question_text_en?: string | null;
+}): "bn" | "en" {
+  const bn = (question.question_text_bn ?? "").trim();
+  const en = (question.question_text_en ?? "").trim();
+  // If both fields are populated (e.g. generated papers backfill both),
+  // detect the actual script: Bengali Unicode block U+0980–U+09FF indicates
+  // genuine Bengali content. Otherwise prefer the populated field.
+  const hasBengaliScript = /[\u0980-\u09FF]/.test(bn);
+  if (bn && hasBengaliScript) return "bn";
+  if (en) return "en";
+  if (bn) return "bn";
+  return "bn";
+}
+
 export const gradeSubmissionFlow = ai.defineFlow(
   {
     name: "gradeSubmission",
@@ -152,11 +174,14 @@ export const gradeSubmissionFlow = ai.defineFlow(
       (questions ?? []).map(async (question) => {
         const transcribedAnswer = transcriptForQuestion(question.id);
 
-        // Layer 2: RAG grounding, scoped to this question's chapter + the paper's language
+        // Layer 2: RAG grounding, scoped to this question's chapter + the question's
+        // language (was hardcoded "bn": English-medium papers were grounded and
+        // explained in Bengali).
+        const qLang = questionLanguage(question);
         const grounding = await retrieveGroundingFlow({
           queryText: `${question.question_text_bn ?? question.question_text_en}\n\n${transcribedAnswer}`,
           chapterId: question.chapter_id,
-          languageTag: "bn",
+          languageTag: qLang,
           matchCount: 5,
         });
 
@@ -171,30 +196,42 @@ export const gradeSubmissionFlow = ai.defineFlow(
             content_chunk: c.content_chunk,
             source_book_page_ref: c.source_book_page_ref,
           })),
-          studentLanguagePreference: "bn",
+          studentLanguagePreference: qLang,
           pageImageUrls: await pageImageUrlsForQuestion(question.id),
           diagramFeatures: allDiagramFeatures.length ? allDiagramFeatures.join("\n") : undefined,
         });
 
-        await supabase.from("grading_results").insert({
-          submission_id: submissionId,
-          question_id: question.id,
-          institution_id: submission.institution_id,
-          score_obtained: evaluation.score_obtained,
-          max_marks: evaluation.max_marks,
-          rubric_breakdown_json: evaluation.criteria_evaluations,
-          explanation_summary_bn: evaluation.deduction_summary_bn,
-          explanation_summary_en: evaluation.deduction_summary_en,
-          model_name: MODELS.reasoning,
-          model_version: "unpinned",
-          prompt_version: PROMPT_VERSION,
-          rubric_version_id: question.rubrics?.id ?? null,
-          pipeline_version: PIPELINE_VERSION,
-          transcript_mismatch_detected: evaluation.transcript_mismatch_detected,
-          transcript_mismatch_note: evaluation.transcript_mismatch_note,
-          mistake_category: evaluation.mistake_category,
-          arithmetic_verified: evaluation.arithmetic_verified,
-        });
+        // Idempotent write: a worker attempt killed mid-flight (e.g. Vercel 60s
+        // kill, where the route's catch never runs) redelivers via pgmq and
+        // re-grades from scratch. A plain insert would then throw a 23505
+        // unique violation on the first already-graded question and poison all
+        // retries into a terminal FAILED. Upsert on the
+        // unique(submission_id, question_id) constraint instead.
+        const { error: upsertError } = await supabase.from("grading_results").upsert(
+          {
+            submission_id: submissionId,
+            question_id: question.id,
+            institution_id: submission.institution_id,
+            score_obtained: evaluation.score_obtained,
+            max_marks: evaluation.max_marks,
+            rubric_breakdown_json: evaluation.criteria_evaluations,
+            explanation_summary_bn: evaluation.deduction_summary_bn,
+            explanation_summary_en: evaluation.deduction_summary_en,
+            model_name: MODELS.reasoning,
+            model_version: "unpinned",
+            prompt_version: PROMPT_VERSION,
+            rubric_version_id: question.rubrics?.id ?? null,
+            pipeline_version: PIPELINE_VERSION,
+            transcript_mismatch_detected: evaluation.transcript_mismatch_detected,
+            transcript_mismatch_note: evaluation.transcript_mismatch_note,
+            mistake_category: evaluation.mistake_category,
+            arithmetic_verified: evaluation.arithmetic_verified,
+          },
+          { onConflict: "submission_id,question_id" }
+        );
+        if (upsertError) {
+          throw new Error(`grading_results upsert failed: ${upsertError.message}`);
+        }
 
         return {
           score_obtained: evaluation.score_obtained,

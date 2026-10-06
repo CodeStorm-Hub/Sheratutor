@@ -19,6 +19,7 @@ interface Task {
 interface PlannerClientProps {
   planId?: string;
   currentDay?: number;
+  streakCount?: number;
   initialTasks?: Task[];
   recommendationTitle?: string;
   recommendationBody?: string;
@@ -28,6 +29,7 @@ interface PlannerClientProps {
 export function PlannerPageClient({
   planId,
   currentDay = 1,
+  streakCount = 0,
   initialTasks = [],
   recommendationTitle,
   recommendationBody,
@@ -45,6 +47,19 @@ export function PlannerPageClient({
       ? ['সোম', 'মঙ্গল', 'বুধ', 'বৃহঃ', 'শুক্র', 'শনি', 'রবি']
       : ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
 
+  // Real calendar strip: the current Mon–Sun week with actual day-of-month
+  // numbers (was hardcoded 17..23). Days within the streak window render
+  // "done", today is highlighted, future days are muted.
+  const now = new Date();
+  const todayIdx = (now.getDay() + 6) % 7; // Monday-first index of today
+  const monday = new Date(now);
+  monday.setDate(now.getDate() - todayIdx);
+  const weekDates = Array.from({ length: 7 }, (_, i) => {
+    const d = new Date(monday);
+    d.setDate(monday.getDate() + i);
+    return d.getDate();
+  });
+
   const handleToggleTask = (index: number) => {
     const task = tasks[index];
     const newChecked = !task.checked;
@@ -61,8 +76,6 @@ export function PlannerPageClient({
       });
     }
   };
-
-  const streakCount = 7;
 
   return (
     <>
@@ -88,22 +101,26 @@ export function PlannerPageClient({
           </div>
         </div>
         <div className="flex gap-1.5 overflow-x-auto pb-0.5">
-          {days.map((d, i) => (
-            <span
-              key={`day-${i}`}
-              className={cn(
-                'grid h-11 w-[38px] flex-none place-items-center rounded-lg font-mono text-3xs',
-                i === 3
-                  ? 'bg-foreground text-cta-foreground'
-                  : i < 3
-                    ? 'bg-surface-2 text-green'
-                    : 'text-muted-foreground',
-              )}
-            >
-              <small>{d}</small>
-              <b className="text-xs">{17 + i}</b>
-            </span>
-          ))}
+          {days.map((d, i) => {
+            const isToday = i === todayIdx;
+            const inStreak = i < todayIdx && todayIdx - i <= streakCount;
+            return (
+              <span
+                key={`day-${i}`}
+                className={cn(
+                  'grid h-11 w-[38px] flex-none place-items-center rounded-lg font-mono text-3xs',
+                  isToday
+                    ? 'bg-foreground text-cta-foreground'
+                    : inStreak
+                      ? 'bg-surface-2 text-green'
+                      : 'text-muted-foreground'
+                )}
+              >
+                <small>{d}</small>
+                <b className="text-xs">{weekDates[i]}</b>
+              </span>
+            );
+          })}
         </div>
       </div>
 
