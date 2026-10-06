@@ -59,8 +59,47 @@ describe('Physics Playground Domain & Registry', () => {
     });
   });
 
-  it('provides baseline fallback data for upcoming chapters without failing', () => {
-    for (let c = 3; c <= 14; c++) {
+  it('loads rich chapter 3 (Force) data with collision simulator', () => {
+    const ch3 = getPhysicsChapterData(3);
+    expect(ch3).not.toBeNull();
+    if (!ch3) return;
+
+    expect(ch3.chapterNo).toBe(3);
+    expect(ch3.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch3.step2.simulatorType).toBe('force');
+    expect(ch3.step3.coreFormulaLatex).toContain('m_1u_1');
+    expect(ch3.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch3.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('loads rich chapter 4 (Energy) data with energy conservation simulator', () => {
+    const ch4 = getPhysicsChapterData(4);
+    expect(ch4).not.toBeNull();
+    if (!ch4) return;
+
+    expect(ch4.chapterNo).toBe(4);
+    expect(ch4.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch4.step2.simulatorType).toBe('energy');
+    expect(ch4.step3.coreFormulaLatex).toContain('mgh');
+    expect(ch4.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch4.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('loads rich chapter 5 (Pressure) data with hydraulic pressure simulator', () => {
+    const ch5 = getPhysicsChapterData(5);
+    expect(ch5).not.toBeNull();
+    if (!ch5) return;
+
+    expect(ch5.chapterNo).toBe(5);
+    expect(ch5.step1.nodes.length).toBeGreaterThanOrEqual(4);
+    expect(ch5.step2.simulatorType).toBe('pressure');
+    expect(ch5.step3.coreFormulaLatex).toContain('F_2');
+    expect(ch5.step4.traps.length).toBeGreaterThanOrEqual(3);
+    expect(ch5.step5.quizzes.length).toBeGreaterThanOrEqual(3);
+  });
+
+  it('provides baseline fallback data for upcoming chapters 6-14 without failing', () => {
+    for (let c = 6; c <= 14; c++) {
       const data = getPhysicsChapterData(c);
       expect(data).not.toBeNull();
       expect(data?.chapterNo).toBe(c);

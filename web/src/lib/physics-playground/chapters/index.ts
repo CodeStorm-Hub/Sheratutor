@@ -2,6 +2,9 @@ import { PhysicsChapterFullData, PhysicsChapterMetadata } from '../types';
 import { PHYSICS_CHAPTERS_REGISTRY } from '../registry';
 import { CH01_MEASUREMENT_DATA } from './ch01-measurement';
 import { CH02_MOTION_DATA } from './ch02-motion';
+import { CH03_FORCE_DATA } from './ch03-force';
+import { CH04_ENERGY_DATA } from './ch04-energy';
+import { CH05_PRESSURE_DATA } from './ch05-pressure';
 
 /**
  * Chapter data registry loader.
@@ -10,8 +13,11 @@ import { CH02_MOTION_DATA } from './ch02-motion';
 export function getPhysicsChapterData(chapterNo: number): PhysicsChapterFullData | null {
   if (chapterNo === 1) return CH01_MEASUREMENT_DATA;
   if (chapterNo === 2) return CH02_MOTION_DATA;
+  if (chapterNo === 3) return CH03_FORCE_DATA;
+  if (chapterNo === 4) return CH04_ENERGY_DATA;
+  if (chapterNo === 5) return CH05_PRESSURE_DATA;
 
-  // Find metadata from registry for chapters 3..14
+  // Find metadata from registry for chapters 6..14
   const meta = PHYSICS_CHAPTERS_REGISTRY.find((c) => c.chapterNo === chapterNo);
   if (!meta) return null;
 

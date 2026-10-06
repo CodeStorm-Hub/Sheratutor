@@ -16,6 +16,9 @@ import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { VernierCaliperSimulator } from '../simulators/VernierCaliperSimulator';
 import { KinematicsMotionSimulator } from '../simulators/KinematicsMotionSimulator';
+import { MomentumCollisionSimulator } from '../simulators/MomentumCollisionSimulator';
+import { EnergyConservationSimulator } from '../simulators/EnergyConservationSimulator';
+import { HydraulicPressureSimulator } from '../simulators/HydraulicPressureSimulator';
 
 interface StepSimulationHostProps {
   data: Step2SandboxData;
@@ -32,6 +35,12 @@ export function StepSimulationHost({ data, chapterNo }: StepSimulationHostProps)
         return <VernierCaliperSimulator />;
       case 'motion':
         return <KinematicsMotionSimulator />;
+      case 'force':
+        return <MomentumCollisionSimulator />;
+      case 'energy':
+        return <EnergyConservationSimulator />;
+      case 'pressure':
+        return <HydraulicPressureSimulator />;
       default:
         // Generic Parameter Sandbox fallback for chapters in progression
         return (
