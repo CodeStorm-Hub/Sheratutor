@@ -3,7 +3,8 @@ import fs from 'fs';
 import path from 'path';
 
 const BASE_URL = process.env.TEST_URL || 'http://localhost:3000';
-const ARTIFACTS_DIR = path.resolve('/home/kratzer/.gemini/antigravity/brain/f1d2842d-b69e-4506-aff3-154dc57a7b62');
+// Artifacts dir: override with E2E_ARTIFACTS_DIR; defaults to web/test-artifacts/e2e
+const ARTIFACTS_DIR = path.resolve(process.env.E2E_ARTIFACTS_DIR || 'test-artifacts/e2e');
 
 async function runPhysicsCh11E2ETest() {
   console.log('🚀 Running E2E Test: Physics Chapter 11 (চল তড়িৎ / Current Electricity) Playground V2...\n');
