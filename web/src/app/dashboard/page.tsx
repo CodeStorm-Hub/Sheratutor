@@ -206,7 +206,7 @@ async function DashboardContent() {
   const targetExamBoard = studentProfile?.education_board
     ? `${studentProfile.education_board.charAt(0) + studentProfile.education_board.slice(1).toLowerCase()} Board`
     : 'Dhaka Board';
-  const examType = studentProfile?.exam_type || 'HSC';
+  const examType = studentProfile?.exam_type || 'SSC';
 
   return (
     <DashboardPageClient
