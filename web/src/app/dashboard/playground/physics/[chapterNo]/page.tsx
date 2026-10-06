@@ -1,8 +1,10 @@
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { PHYSICS_CHAPTERS_REGISTRY } from '@/lib/physics-playground/registry';
 import { getPhysicsChapterData } from '@/lib/physics-playground/chapters';
 import { PhysicsGuidebookShell } from '@/components/physics-playground/PhysicsGuidebookShell';
+import DashboardLoading from '@/app/dashboard/loading';
 
 interface ChapterPageProps {
   params: Promise<{
@@ -33,7 +35,7 @@ export async function generateMetadata({ params }: ChapterPageProps): Promise<Me
   };
 }
 
-export default async function PhysicsChapterGuidebookPage({ params }: ChapterPageProps) {
+async function ChapterGuidebookContent({ params }: ChapterPageProps) {
   const { chapterNo } = await params;
   const num = parseInt(chapterNo, 10);
 
@@ -48,4 +50,12 @@ export default async function PhysicsChapterGuidebookPage({ params }: ChapterPag
   }
 
   return <PhysicsGuidebookShell chapterData={chapterData} />;
+}
+
+export default function PhysicsChapterGuidebookPage({ params }: ChapterPageProps) {
+  return (
+    <Suspense fallback={<DashboardLoading />}>
+      <ChapterGuidebookContent params={params} />
+    </Suspense>
+  );
 }
